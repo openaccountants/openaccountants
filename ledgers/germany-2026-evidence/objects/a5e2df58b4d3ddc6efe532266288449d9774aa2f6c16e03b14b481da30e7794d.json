@@ -1,0 +1,11 @@
+{
+  "id": "Ufecb1f1e1eb6a0e8",
+  "url": "https://www.gesetze-im-internet.de/svev/__1.html",
+  "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/svev-1-20261024.html",
+  "raw_sha256": "dd09050791c50af13998ddb3ce6b186eb33f00e14a9a61b03bb1c3a6721171ad",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ufecb1f1e1eb6a0e8.reader.txt",
+  "reader_sha256": "a5316e3b7b259ce366fc814c3304c278923e12e3fa7e2dbc6b21485c48029e8c",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "prior cached body",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

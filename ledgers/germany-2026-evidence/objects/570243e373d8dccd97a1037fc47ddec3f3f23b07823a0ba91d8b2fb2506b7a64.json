@@ -1,0 +1,74 @@
+[
+  {
+    "finding": "version",
+    "before": "version: 0.2",
+    "after": "version: 0.3",
+    "before_native_LF": 4
+  },
+  {
+    "finding": "R58",
+    "before": "| § 43b EU parent | At least 10% direct holding; held without break for 12 months | 2026 | https://www.gesetze-im-internet.de/estg/__43b.html |",
+    "after": "| § 43b EU parent | At least 10% direct holding; held without break for 12 months | 2026 | https://www.gesetze-im-internet.de/estg/__43b.html |",
+    "before_native_LF": 53
+  },
+  {
+    "finding": "R58",
+    "before": "| § 50g EU Interest and Royalties Directive | EU company (Anlage 3 form, subject to a listed tax and not exempt) that is the beneficial owner, and associated by at least 25% directly; Swiss companies count too (§ 50g(6)) | No Kapitalertragsteuer on interest and no § 50a tax on royalties | Exemption certificate or refund; refunds carry interest (§ 50c(4)) |",
+    "after": "| § 50g EU Interest and Royalties Directive | Beneficially entitled EU company meeting the full § 50g(3) no. 5 definition: Anlage 3 form, EU residence/unlimited or comparable taxation, no treaty residence outside the EU, listed or qualifying identical/substantially similar tax without exemption. Actual direct 25% association may be either direction or through a qualifying common direct 25% parent. For Swiss entities apply the restricted § 50g(6) form, Swiss residence/no treaty residence outside the EU or Switzerland, and unlimited Swiss corporate taxation without exemption; incorporation alone is insufficient | No Kapitalertragsteuer on interest and no § 50a tax on royalties | Exemption certificate or refund; refunds carry interest (§ 50c(4)) |",
+    "before_native_LF": 93
+  },
+  {
+    "finding": "R59",
+    "before": "**Portfolio holdings below 15% (§ 50j).** Where a treaty cuts German tax on dividends below 15% for a shareholder that is not a company holding at least 10% (for example the US pension fund at 0%, or the Dutch pension fund and UK pension scheme at 10%), the refund needs the recipient to have been the beneficial owner for 45 days within 45 days either side of the due date, carrying at least 70% of the risk of a fall in value, and not to pass the dividend on (§ 50j EStG). The tests in § 50j(1)–(3) do not apply if, at receipt, the recipient has been the economic owner of the shares or participation certificates continuously for at least one year (§ 50j(4) sentence 2); the FIFO rule in § 50j(2) sentence 2 still applies.",
+    "after": "**Portfolio relief below 15% (§ 50j).** For the stated § 43(1) no. 1a/corresponding foreign-custody income where the treaty tax is below 15%, the § 50j(4) corporate exclusion requires a limited-liability foreign capital company directly holding at least one tenth of nominal capital in the specified unlimited-taxable German capital company, subject at home to income/profit tax without exemption; not every company with 10% qualifies. Otherwise test continuous economic ownership for 45 days within 45 days before/after the due date, at least 70% net downside risk including offsetting claims and related-person hedges, and no obligation to compensate another person wholly or predominantly, directly or indirectly, for the capital income. A voluntary distribution is not by itself that obligation. The tests in § 50j(1)–(3) do not apply if, at receipt, the recipient has been the economic owner of the shares or participation certificates continuously for at least one year (§ 50j(4) sentence 2); the FIFO rule in § 50j(2) sentence 2 still applies. Actual below-15% treaty entitlement and all other refund gates remain separate.",
+    "before_native_LF": 96
+  },
+  {
+    "finding": "R57-R60",
+    "before": "**Refund amount on a treaty dividend.** Refund = tax withheld − treaty limit × gross dividend. For a 15% treaty: 26.375% − 15% = 11.375% of the gross. This holds where the treaty's covered taxes include the solidarity surcharge. Austria, Luxembourg, the Netherlands, Spain, the UK, Ireland and Poland list German taxes \"including the supplements levied thereon\" (art. 2); Switzerland and France cover taxes levied \"also in the form of surcharges\" (art. 2(1), art. 1(2)). Italy and the US do not expressly name supplements; their later-similar-tax clauses are Italy art. 2(4) and US art. 2(2). Czech Republic art. 2(3)(a) expressly names the corporation-tax Ergänzungsabgabe; whether the current solidarity surcharge falls within that wording or the later-similar-tax clause in art. 2(5) is not separately established here.",
+    "after": "**Refund amount on a treaty dividend.** Once actual tax remittance and every entitlement/procedure gate are established, refund = tax withheld/remitted minus treaty limit × gross dividend. For a 15% treaty with combined tax/surcharge coverage: 26.375% − 15% = 11.375% of gross. Austria, Luxembourg, the Netherlands, Spain, the UK, Ireland and Poland expressly include supplements, and Switzerland/France cover surcharge forms as stated in their tax articles. **Selected combined-text interpretation for Italy, the US and Czech Republic:** their income/corporation-tax and later identical or substantially similar additional/replacement-tax clauses cover the current surcharge on that income/corporation tax, so apply the treaty cap to core tax plus Soli together. Italy art. 2(4) and US art. 2(2) give the later-tax clauses; Czech art. 2(3)(a) expressly includes the corporation-tax Ergänzungsabgabe and art. 2(5) covers later similar additional/replacement taxes. SolzG § 3(1) nos. 5/6 ties current Soli to the same capital/§ 50a tax. This is a labelled own-primary interpretation, not a separately retained BZSt country-practice confirmation; the Czech comparison below uses it.",
+    "before_native_LF": 100
+  },
+  {
+    "finding": "R60",
+    "before": "| Payer's certificate to the recipient | Tax certificate for Kapitalertragsteuer (§ 45a); § 50a certificate on request (§ 50a(5) sentence 7). Both are needed for a refund |",
+    "after": "| Payer's certificate to the recipient | Tax certificate for Kapitalertragsteuer (§ 45a); § 50a certificate on request (§ 50a(5) sentence 7). For a positive refund, evidence actual tax payment to the authority: withholding/declaration alone is insufficient. § 50c(3) covers tax withheld and remitted or paid under a liability/recovery assessment; the certificate does not replace that remittance gate |",
+    "before_native_LF": 117
+  },
+  {
+    "finding": "R60 example1",
+    "before": "Petra lives in Graz. In 2026 a German AG pays her a dividend of EUR 10,000 gross. She holds the shares privately. The custodian withholds Kapitalertragsteuer and surcharge. (Invented case.)",
+    "after": "Petra lives in Graz. In 2026 a German AG pays her a dividend of EUR 10,000 gross. She holds the shares privately. The custodian withholds Kapitalertragsteuer and surcharge. The fictional custodian actually remits the withheld tax and surcharge to the authority and the refund evidence establishes it. (Invented case.)",
+    "before_native_LF": 143
+  },
+  {
+    "finding": "R58-R60 example2",
+    "before": "A German GmbH pays EUR 200,000 of royalties in 2026 for a patent licence to its Czech shareholder, a společnost s ručením omezeným (s.r.o.) that holds 30% of the GmbH directly. The s.r.o. is subject to Czech corporate income tax, is the beneficial owner, runs its own development business, and the royalty is at arm's length. (Invented case.)",
+    "after": "A German GmbH pays EUR 200,000 of royalties in 2026 for a patent licence to its Czech shareholder, a společnost s ručením omezeným (s.r.o.) that holds 30% of the GmbH directly. The s.r.o. is subject to Czech corporate income tax, is the beneficial owner, runs its own development business, and the royalty is at arm's length. For this fictional company-only worksheet, it is actually Czech-tax-resident, not treaty-resident outside the EU, meets the applicable listed-form/non-exempt listed-tax definitions, and all remaining association/anti-abuse gates are stipulated met. If the withholding/refund alternative is used, the GmbH actually remits the withheld tax/surcharge and evidence establishes it. PE cases require their own § 43b(2a)/§ 50g(3) gates and are not substituted by this company worksheet. (Invented case.)",
+    "before_native_LF": 176
+  },
+  {
+    "finding": "R57 example2",
+    "before": "- Treaty only (Czech Republic art. 12(2)): German tax at most 5% of gross, EUR 10,000.",
+    "after": "- Treaty only (Czech Republic art. 12(2)): under the selected combined-text surcharge interpretation above, German core tax plus surcharge together are at most 5% of gross, EUR 10,000.",
+    "before_native_LF": 179
+  },
+  {
+    "finding": "R57 saving",
+    "before": "- Saving against the treaty alone: EUR 10,000.",
+    "after": "- Saving against the treaty alone: EUR 10,000 under that labelled combined-tax interpretation.",
+    "before_native_LF": 182
+  },
+  {
+    "finding": "R57 reservation",
+    "before": "Not yet confirmed: whether the BZSt in practice applies the Italian, US and Czech limits to tax and surcharge together (Italy and the US do not expressly name supplements; the Czech treaty names the corporation-tax Ergänzungsabgabe, but application to the current solidarity surcharge is not separately established; the refund formula assumes current surcharge coverage); the late-filing surcharge on withholding returns; the StAbwG rates; any BZSt country table of residual rates (the BZSt table found covers foreign tax credited to German residents, not German tax on payments abroad, so it was not used for the rates above).",
+    "after": "Not yet separately retained: a BZSt country-practice confirmation for the labelled Italian, US and Czech combined-tax interpretation supplied above; that administrative observation is distinct from the source-derived ordinary legal method and its explicit interpretation label. Other limits remain: the late-filing surcharge on withholding returns; the StAbwG rates; any BZSt country table of residual rates (the table found covers foreign tax credited to German residents, not German tax on payments abroad, so it was not used for the rates above).",
+    "before_native_LF": 249
+  },
+  {
+    "finding": "R57-R60 sources",
+    "before": "## Sources",
+    "after": "## Sources\n\nSelected operative clauses actually read on 29 October 2026: treaty covered/later-tax clauses for the labelled Italy/US/Czech interpretation; full § 43b/Anlage 2 and § 50g(3)/(6) population gates; § 50j; § 50c(3) and actual BZSt remittance condition. Italian art. 2(4) was also visually compared with physical page 3 of the retained official scan. Exact quotes/identities/native scopes remain in the accompanying writer source ledger; no portal execution is claimed.",
+    "before_native_LF": 220
+  }
+]

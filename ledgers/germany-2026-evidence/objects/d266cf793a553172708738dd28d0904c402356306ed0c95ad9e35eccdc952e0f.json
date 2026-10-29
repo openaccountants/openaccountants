@@ -1,0 +1,11 @@
+{
+  "trigger": "R122 exact-quote containment assertion failed before any new quotation index was written.",
+  "cause": "Python splitlines splits PDF formfeeds as well as LF; joining those display lines omitted an internal formfeed and could mislabel native-LF coordinates.",
+  "repair": "Use exact raw-reader substring offsets from splitlines(keepends=True); retain all internal page breaks; compute true LF coordinates by counting newline characters. Keep original display coordinates explicitly for read provenance.",
+  "prior_118_quote_index": "Preserved byte exact; regenerate all anchors, not just the failed court excerpt.",
+  "failed_source_id": "RNT02",
+  "failed_display_lines": [
+    223,
+    247
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "old": "version: 0.3",
+    "new": "version: 0.4",
+    "reason": "Monotonic content version, date already29October"
+  },
+  {
+    "old": "\n## Deadlines and filing\n",
+    "new": "\n9. **Corporate-tax assessment rounding.** Round each individual assessed corporate-tax amount in the taxpayer's favour to whole euros ([§ 31(1) sentence 2 KStG](https://www.gesetze-im-internet.de/kstg_1977/__31.html)). For an ordinary positive amount this means rounding down: stipulated taxable income of EUR 10,001 at 15% gives EUR 1,500.15 before rounding and assessed KSt of EUR 1,500. This is the assessed KSt step; underlying bases and surcharges retain their own rules.\n\n## Deadlines and filing\n",
+    "reason": "DE-R09 exact assessment rule/positive separator outside original examples"
+  }
+]

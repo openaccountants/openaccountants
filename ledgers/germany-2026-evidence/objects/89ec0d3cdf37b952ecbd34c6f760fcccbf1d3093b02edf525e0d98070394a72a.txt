@@ -1,0 +1,1003 @@
+POSTANSCHRIFT      Bundesministerium der Finanzen, 11016 Berlin
+
+                                                                                                                                                 HAUSANSCHRIFT
+                   Nur per E-Mail
+                                                                                                                                                           TEL
+                   Oberste Finanzbehörden                                                                                                                  FAX
+                   der Länder                                                                                                                           E-MAIL
+
+                                                                                                                                                        DATUM    3. Dezember 2020
+                   nachrichtlich:
+
+                   Bundeszentralamt für Steuern
+
+                   Bundesfinanzakademie im
+                   Bundesministerium der Finanzen
+
+
+
+
+     BETREFF       Verwaltungsgrundsätze 2020
+
+          GZ       IV B 5 - S 1341/19/10018 :001
+         DOK       2020/1174240
+                       (bei Antwort bitte GZ und DOK angeben)
+
+
+
+
+                Unter Bezugnahme auf das Ergebnis der Erörterung mit den Vertretern der obersten
+                Finanzbehörden der Länder gilt für die Prüfung der Einkunftsabgrenzung zwischen
+                international verbundenen Unternehmen in Bezug auf Mitwirkungspflichten sowie Schätzung
+                von Besteuerungsgrundlagen und Zuschlägen Folgendes:
+
+
+
+
+                Inhalt
+                1. Mitwirkungspflichten der Beteiligten (§ 90 AO) ............................................................... 2
+                                                1.1 Allgemeines zu den Mitwirkungspflichten ..................................................................... 2
+                                                1.2 Erhöhte Mitwirkungspflichten bei Auslandssachverhalten (§ 90 Abs. 2 AO) .............. 3
+                                                1.3 Besondere Mitwirkungspflichten (§ 90 Abs. 3 AO)........................................................ 8
+                                                                                1.3.1 Grundsätze der Aufzeichnungspflicht (§ 90 Abs. 3 Satz 1 AO) ............................... 8
+                                                                                1.3.2 Sachverhalts- und Angemessenheitsdokumentation (§ 90 Abs. 3 Satz 2 AO)........ 11
+                                                                                1.3.2.1. Sachverhaltsdokumentation ................................................................................. 11
+                                                                                1.3.2.2. Angemessenheitsdokumentation ......................................................................... 13
+
+
+                                                                                                                                                                                    www.bundesfinanzministerium.de
+                Postanschrift Berlin: Bundesministerium der Finanzen, 11016 Berlin
+
+
+
+
+                                                                                                                                                                                            www.eu2020finance.de
+Seite 2          1.3.3 Stammdokumentation (§ 90 Abs. 3 Satz 3-4 AO) ................................................... 16
+                 1.3.4 Vorlageverlangen (§ 90 Abs. 3 Satz 5-6 AO, § 2 Abs. 6 GAufzV) ........................ 17
+                 1.3.5 Vorlagefrist und Verlängerung (§ 90 Abs. 3 Sätze 7 und 9 AO) ............................ 18
+                 1.3.6 Ergänzung auf Anforderung (§ 90 Abs. 3 Satz 10 AO) .......................................... 18
+          2. Schätzung von Besteuerungsgrundlagen und Zuschläge (§ 162 AO) ............................ 18
+              2.1 Allgemeines .................................................................................................................... 18
+              2.2 Schätzungen nach § 162 Abs. 1 AO .............................................................................. 20
+              2.3 Schätzungen nach § 162 Abs. 2 AO .............................................................................. 20
+              2.4 Schätzungen nach § 162 Abs. 3 AO und Zuschlag nach § 162 Abs. 4 AO ................. 21
+          3. Aufhebung von Verwaltungsregelungen .......................................................................... 25
+
+
+
+          1. Mitwirkungspflichten der Beteiligten (§ 90 AO)
+
+          1.1 Allgemeines zu den Mitwirkungspflichten
+
+
+          1          Die Amtsermittlungspflicht der Finanzbehörde und die Mitwirkungspflicht der
+                     Beteiligten stehen nebeneinander (BFH-Urteil vom 15.2.1989, X R 16/86, BStBl II
+                     S. 462). Die Pflicht des Beteiligten zur Mitwirkung an der Sachverhaltsaufklärung
+                     hängt nicht davon ab, dass die Finanzbehörde diesen zur Mitwirkung auffordert.
+
+          2          Die allgemeine Mitwirkungspflicht des § 90 Abs. 1 Satz 1 AO betrifft die Ermittlung
+                     des Sachverhalts und wird für bestimmte Sachverhaltskonstellationen in § 90 Abs. 2
+                     und Abs. 3 AO erweitert. Die Mitwirkungspflicht wird zudem durch gesonderte
+                     verfahrensrechtliche (z. B. in §§ 93 bis 100, 140 ff., 149, 150, 153, 154, 160, 200,
+                     210 ff. AO) und einzelsteuergesetzliche Regelungen (z. B. in §§ 16, 17 AStG; §§ 33,
+                     34 ErbStG; §§ 18, 19 GrEStG und § 22 UStG) ausgestaltet.
+
+          3          § 200 AO tritt im Rahmen der Außenprüfung neben § 90 AO und ergänzt und
+                     erweitert die gemäß §§ 90 ff. AO bereits bestehenden allgemeinen Mitwirkungs-
+                     pflichten für die Außenprüfung (BFH-Urteil vom 6.6.2012, I R 99/10, BStBl II 2013
+                     S. 196; BFH-Urteil vom 4.11.2003, VII R 28/01, BStBl II 2004 S. 1032). Auch die
+                     Pflichten des Steuerpflichtigen mit Bezug zum Datenzugriff gemäß § 147 Abs. 6 AO
+                     werden durch § 200 Abs. 1 Satz 2 AO erweitert. Die Vorlagepflicht gemäß § 200
+                     Abs. 1 Satz 2 AO erfasst ferner auch solche Urkunden, für welche den Steuer-
+                     pflichtigen zwar keine gesetzliche Aufbewahrungspflicht gemäß § 147 Abs. 1 AO
+Seite 3         trifft, diese Urkunden aber vorhanden sind und folglich vorgelegt werden können
+                (BFH-Urteil vom 28.10.2009, VIII R 78/05, BStBl II 2010 S. 455).
+
+          4     Hinsichtlich des durch § 393 AO geregelten Verhältnisses des Strafverfahrens zum
+                Besteuerungsverfahren und den damit einhergehenden Pflichten zur Mitwirkung des
+                Steuerpflichtigen, vgl. Nr. 16 der AStBV (St) 2020.
+
+          5     Der Umfang der Mitwirkungspflicht richtet sich nach den Umständen des Einzelfalls.
+                Die Verantwortung des Beteiligten für die Aufklärung des Sachverhalts ist umso
+                größer, je mehr Tatsachen und Beweismittel der von ihm beherrschten Informations-
+                oder Tätigkeitssphäre angehören (BFH-Urteil vom 15.2.1989, X R 16/86, BStBl II
+                S. 462). Der Umfang der allgemeinen Mitwirkungspflicht wird durch den
+                Verhältnismäßigkeitsgrundsatz begrenzt.
+
+          6     Ist ein Bevollmächtigter bestellt, so soll sich die Finanzbehörde an ihn wenden. Nur
+                bei Vorliegen besonderer Gründe soll sich die Finanzbehörde an den Beteiligten selbst
+                wenden, z. B. um ihn um Auskünfte zu bitten, die nur er selbst als Wissensträger
+                geben kann. In diesem Fall ist der Bevollmächtigte zu unterrichten (vgl. AEAO zu
+                § 80).
+
+          7     Ein Mitwirkungsverweigerungsrecht für Beteiligte besteht nicht. Ein Mitwirkungs-
+                verweigerungsrecht steht nach §§ 101 bis 106 AO nur Dritten zu.
+
+          8     Die Möglichkeit der Durchführung eines Verständigungsverfahrens nach den DBA,
+                der EU-Schiedskonvention (EWG/90/463; ABl. L 225 vom 20.8.1990, S. 10) oder
+                dem Streitbeilegungsgesetz (12.12.2019, BGBl. I S. 2103) oder der Antrag auf
+                Eröffnung oder die tatsächliche Eröffnung eines Verständigungs- oder Schieds-
+                verfahrens im Laufe einer Außenprüfung entbindet die Beteiligten nicht von ihren
+                Mitwirkungspflichten gemäß § 90 AO.
+
+          1.2 Erhöhte Mitwirkungspflichten bei Auslandssachverhalten (§ 90 Abs. 2 AO)
+
+          9     § 90 Abs. 2 AO bestimmt eine gegenüber § 90 Abs. 1 AO erhöhte Mitwirkungs- und
+                Aufklärungspflicht bei Sachverhalten mit Auslandsbezug (Auslandssachverhalte).
+                § 90 Abs. 2 AO soll insbesondere verhindern, dass die Aufklärung von Auslands-
+                sachverhalten an der Beschränkung der Hoheitsrechte der deutschen Gerichte und
+                Behörden auf das Inland scheitert oder durch sie erschwert wird. Der Beteiligte hat
+                den Auslandssachverhalt aufzuklären und die erforderlichen Beweismittel zu
+                beschaffen (BFH-Urteil vom 16.4.1980, I R 75/78, BStBl II 1981 S. 492). Dies
+                verlangt eine vollständige und wahrheitsgemäße Darstellung des gesamten
+Seite 4        besteuerungsrelevanten Sachverhalts, und zwar unabhängig davon, ob sich die
+               einzelnen Umstände und Tatsachen zugunsten oder zuungunsten des Beteiligten
+               auswirken. Die Erforderlichkeit eines Beweismittels hängt vom jeweiligen Einzelfall
+               ab (BFH-Urteil vom 3.6.1987, III R 205/81, BStBl II S. 675; BFH-Urteil vom
+               2.12.2004, III R 49/03, BStBl II 2005 S. 483).
+
+          10   Der Beteiligte ist bei Auslandssachverhalten insbesondere zur Sachverhaltsaufklärung,
+               Beweismittelbeschaffung und Beweisvorsorge verpflichtet. Im Verfahren vor den
+               Finanzgerichten gelten diese Pflichten nach § 76 Abs. 1 Satz 4 FGO sinngemäß.
+
+          11   Der Beteiligte muss deshalb unter anderem zum Zweck der Beweisvorsorge im
+               Rahmen seiner rechtlichen und tatsächlichen Möglichkeiten (§ 90 Abs. 2 Satz 2 AO)
+               sicherstellen, dass Aufzeichnungen, Unterlagen und Daten einer ausländischen
+               nahestehenden Person, welche für seine Besteuerung relevant sind, nicht vor Ablauf
+               der inländischen Aufbewahrungsfristen vernichtet werden.
+
+          12   Bei der Sachverhaltsaufklärung und Beweismittelbeschaffung genügt es nicht, wenn
+               der Beteiligte solche im Ausland befindlichen bzw. verfügbaren Beweismittel nur
+               benennt. Der Beteiligte hat alle für ihn bestehenden rechtlichen und tatsächlichen
+               Möglichkeiten auszuschöpfen. Danach hat der Beteiligte den zur Aufklärung des
+               Auslandssachverhalts und Beschaffung der erforderlichen Beweismittel im jeweiligen
+               Einzelfall zumutbaren Aufwand zu betreiben. Die erhöhte Mitwirkungspflicht bei der
+               Aufklärung von Auslandssachverhalten unterliegt dem Grundsatz der Verhältnis-
+               mäßigkeit.
+
+          13   Zu den Beweismitteln gehören auch die Bücher, Aufzeichnungen, Geschäftspapiere
+               oder andere Unterlagen sowie Daten ausländischer nahestehender Personen, ohne die
+               eine vollständige Ermittlung des Sachverhalts nicht möglich ist. Dies gilt auch für die
+               Unterlagen und Daten nahestehender Personen, die der Finanzbehörde unabhängig
+               von der vom Beteiligten angewandten Methode eine Verprobung der Angemessenheit
+               der Preise bzw. Ergebnisse von Geschäftsvorfällen ermöglichen. Die Vorlagepflicht
+               gilt auch für Gutachten und Stellungnahmen zu Verrechnungspreisen (vgl. § 1 Abs. 1
+               Satz 1 AStG), soweit sie für die Festsetzung von Verrechnungspreisen oder für die
+               Einkünfteermittlung in Zusammenhang mit Verrechnungspreisen für bedeutsam
+               erachtet werden, sowie für E-Mails, Messengerdienstnachrichten oder Nachrichten
+               mittels anderer elektronischer Kommunikationsmedien, soweit diese geschäftliche
+               Inhalte mit steuerlichem Bezug aufweisen und damit insbesondere als Handels- oder
+               Geschäftsbrief anzusehen sind.
+Seite 5   14   Bei Auslandssachverhalten hat der Beteiligte Beweisvorsorge zu treffen, damit er
+               seine erhöhte Mitwirkungspflicht erfüllen kann. Er kann sich daher nicht darauf
+               berufen, einen entsprechenden Sachverhalt nicht aufklären oder Beweismittel nicht
+               beschaffen zu können, wenn er sich bei der Gestaltung seiner Verhältnisse die
+               Möglichkeit dazu hätte einräumen lassen können (§ 90 Abs. 2 Satz 4 AO). Der
+               Beteiligte ist während und nach der Verwirklichung eines Auslandssachverhalts
+               verpflichtet, alle Möglichkeiten auszuschöpfen, um im Verwaltungsverfahren seiner
+               erhöhten Mitwirkungspflicht nachkommen zu können (BFH-Urteil vom 14.5.1982,
+               VI R 266/80, BStBl II S. 772). Die Verpflichtung zur Beweismittelvorsorge
+               beschränkt sich auf das im Einzelfall für den Beteiligten zumutbare Maß sowie die
+               rechtliche und tatsächliche Möglichkeit der Vorsorge. Der Beteiligte muss daher
+               z. B. schon bei Abschluss eines Vertrages durch entsprechende vertragliche Rege-
+               lungen dafür Sorge tragen, dass er auch später auf die im Ausland befindlichen
+               Beweismittel zugreifen kann, um diese der Finanzbehörde vorlegen zu können. Dies
+               gilt insbesondere dann, wenn Geschäftsbeziehungen zwischen nahestehenden
+               Personen vereinbart werden, da die Vorlage der im Ausland befindlichen Beweismittel
+               eine notwendige Voraussetzung dafür ist, die Angemessenheit der der Geschäfts-
+               beziehung zugrunde liegenden Verrechnungspreise zu prüfen und eine derartige
+               Beweisvorsorge auch für die Beteiligten rechtlich und tatsächlich möglich ist. Der
+               Beteiligte kann im Einzelfall zur Vorlage derjenigen Unterlagen eines Dritten
+               verpflichtet sein, auf deren Überlassung er zwar keinen Anspruch hat, welche er sich
+               aber tatsächlich mit zumutbarem Aufwand beschaffen kann. Ein ordentlicher
+               Geschäftsleiter würde sich beispielsweise in folgenden Fällen eine Vorlage der
+               Unterlagen vertraglich vorbehalten:
+
+               a. Nachweise über Abgabepreise einer nahestehenden Vertriebsgesellschaft gegenüber
+                  fremden Dritten bei Anwendung der Wiederverkaufspreismethode,
+               b. Kalkulationsunterlagen einer ausländischen Dienstleistungsgesellschaft bei
+                  Anwendung der Kostenaufschlagsmethode,
+               c. Nachweise über die geleisteten Beiträge der zusammenwirkenden Unternehmen bei
+                  Beteiligung an einer Kostenumlagevereinbarung,
+               d. Nachweise über die vom Lizenznehmer mit diesen Werten erwirtschafteten
+                  Umsatzerlöse bei Überlassung von immateriellen Werten gegen umsatzabhängige
+                  Lizenzgebühren oder
+               e. Unterlagen über den Gesamtgewinn bzw. -verlust sowie den Aufteilungsschlüssel
+                  bei Anwendung der geschäftsvorfallbezogenen Gewinnaufteilungsmethode.
+
+          15   Ist der Beteiligte unmittelbar oder mittelbar Mehrheitsgesellschafter einer Gesellschaft
+               oder kontrolliert er die Mehrheit der Stimmrechte einer Gesellschaft, ist davon
+               auszugehen, dass er über (gesellschafts-)rechtliche Möglichkeiten der Informations-
+Seite 6        und Beweismittelbeschaffung von dieser ihm nahestehenden Gesellschaft verfügt. Er
+               kann sich in diesen Fällen nicht mit Erfolg auf eine Verweigerung der Mitwirkung der
+               ihm nahestehenden Gesellschaft berufen.
+
+          16   Beruft sich ein Beteiligter darauf, dass er Informationen nicht erteilen oder
+               Beweismittel nicht vorlegen kann, weil ausschließlich eine nahestehende Person
+               darüber verfügt und diese die Herausgabe verweigert, liegt nur insoweit kein Verstoß
+               des Beteiligten gegen seine Mitwirkungspflichten vor, als er weder rechtlich
+               (z. B. gesellschaftsrechtlich) noch tatsächlich die Möglichkeiten hat, die Infor-
+               mationen oder Unterlagen bei dem Nahestehenden zu beschaffen und ihm auch eine
+               Beweisvorsorge nicht möglich oder nicht zumutbar war. Die Verweigerung der
+               Mitwirkung einer nahestehenden Person kann durch Vorlage des entsprechenden
+               Schriftverkehrs glaubhaft gemacht werden. Verweigert eine nahestehende Person
+               nachweislich ihre Mitwirkung, hat der Steuerpflichtige seine erhöhten Mitwirkungs-
+               pflichten dennoch zu erfüllen, soweit ihm dies möglich ist. Die Möglichkeiten der
+               internationalen Rechts- und Amtshilfe bleiben davon unberührt.
+
+          17   Sind in einer inländischen Gesellschaft und einer ihr nahestehenden ausländischen
+               Gesellschaft, zwischen denen Geschäftsbeziehungen bestehen, dieselben natürlichen
+               Personen als Geschäftsführer tätig (Personalunion), kann davon ausgegangen werden,
+               dass diese Personen über tatsächliche Möglichkeiten zur Auskunftserteilung und zur
+               Nachweisbeschaffung verfügen. Ist in solchen Fällen eine Prüfungsanordnung nicht
+               nur gegen die inländische Gesellschaft, sondern auch gegen die ausländische Gesell-
+               schaft erlassen worden, können die inländische Gesellschaft und die ausländische
+               Gesellschaft jeweils in ihren eigenen Steuerangelegenheiten (einschließlich der
+               steuerlichen Aspekte der Geschäftsbeziehung zur jeweils anderen Gesellschaft) als
+               Beteiligte nach § 93 Abs. 1 Satz 1 AO um Auskunft ersucht werden; dabei ist
+               unerheblich, ob die beiden Gesellschaften durch dieselbe Person als Geschäftsführer
+               vertreten werden.
+
+          18   Ist die Erteilung bestimmter Auskünfte an die Behörden nach den Vorschriften anderer
+               Staaten unzulässig oder sogar strafbewehrt, entbindet dieses Verbot den Beteiligten
+               nicht von seiner Mitwirkungspflicht nach § 90 Abs. 2 AO (BFH-Urteil vom
+               16.4.1980, I R 75/78, BStBl II 1981 S. 492; BFH-Urteil vom 31.5.2006, II R 66/04,
+               BStBl II 2007 S. 49). Die den Beteiligten treffende Pflichtenkollision ist von der
+               Finanzbehörde im Rahmen der Schätzung nach § 162 Abs. 1 AO zu berücksichtigen.
+
+          19   Die Berücksichtigung des ausländischen Rechts sowie die Auslegung von Verträgen
+               oder ähnlichen Dokumenten und deren Würdigung obliegen der Finanzbehörde. Das
+               ausländische Recht ist dabei so anzuwenden, wie es der ausländische Staat auslegt und
+Seite 7        anwendet. Die erhöhte Mitwirkungspflicht gemäß § 90 Abs. 2 AO trifft den
+               Beteiligten aber insoweit, als er nachzuweisen hat, dass er die Voraussetzungen der
+               ausländischen Rechtsnorm erfüllt oder aber nicht.
+
+          20   § 90 Abs. 2 AO bezieht sich auf sämtliche Sachverhalte, die für die Festsetzung von
+               Steuern oder steuerlichen Nebenleistungen im Sinne des § 3 AO relevant sind. Dass
+               ein für die Anwendung einer steuerlichen Norm maßgeblicher Sachverhalt nur zum
+               Teil Auslandsbezug hat, ist für die Anwendung von § 90 Abs. 2 AO ohne Bedeutung.
+
+          21   Die Finanzbehörde hat dem Beteiligten für die Sachverhaltsaufklärung und die
+               Nachweisbeschaffung eine angemessene Frist einzuräumen.
+
+          22   Die Finanzbehörde kann Dokumente in fremder Sprache entgegennehmen. Auf
+               Anforderung sind diese unabhängig von ihrer Form in die deutsche Sprache zu
+               übersetzen. Ein Übersetzungsverlangen ist auf das notwendige Maß zu beschränken.
+               Ist bei umfangreichen Dokumenten eine Übersetzung ins Deutsche tatsächlich
+               notwendig, ist eine Anforderung von Übersetzungen regelmäßig auf die wesentlichen
+               Teile zu beschränken.
+
+               Wurden Dokumente nur teilweise übersetzt, führt dies nicht dazu, dass der
+               Finanzbehörde Informationen aus den nicht übersetzten Teilen der vorgelegten
+               Unterlagen als bekannt gelten müssen.
+
+               In begründeten Fällen kann die Vorlage einer beglaubigten oder von einem öffentlich
+               bestellten oder vereidigten Dolmetscher oder Übersetzer angefertigte Übersetzung
+               verlangt werden. Wird eine angeforderte und für die Prüfung notwendige Übersetzung
+               nicht unverzüglich vorgelegt, kann die Finanzbehörde eine Übersetzung auf Kosten
+               des Beteiligten anfertigen lassen (§ 87 Abs. 2 Satz 3 AO) oder die Unterlagen als
+               unbeachtlich behandeln. Die Finanzbehörde soll den Beteiligten vorher auf diese
+               Folgen hinweisen.
+
+               Die Amtssprache ist Deutsch. Die Finanzbehörde äußert sich gegenüber ausländischen
+               Beteiligten oder deren Bevollmächtigten oder Beiständen grundsätzlich nicht in einer
+               anderen Sprache. Die Finanzbehörde zieht bei Verhandlungen mit dem Beteiligten
+               deshalb auch keinen Dolmetscher auf eigene Kosten hinzu.
+
+          23   Verletzt ein Steuerpflichtiger seine Pflichten gemäß § 90 Abs. 2 AO und ist der
+               Sachverhalt nicht anderweitig aufklärbar, so kann zu seinem Nachteil von einem
+               Sachverhalt ausgegangen werden, für den unter Berücksichtigung der Beweisnähe des
+               Steuerpflichtigen und seiner Verantwortung für die Aufklärung des Sachverhalts eine
+Seite 8          gewisse Wahrscheinlichkeit spricht. Insbesondere dann, wenn die Mitwirkungspflicht
+                 sich auf Tatsachen und Beweismittel aus dem alleinigen Verantwortungsbereich des
+                 Steuerpflichtigen bezieht, können aus seiner Pflichtverletzung für ihn nachteilige
+                 Schlussfolgerungen gezogen werden. Siehe insbesondere § 162 Abs. 2 AO zur
+                 Schätzung (vgl. AEAO zu § 162).
+
+          24     Bei Nichterfüllung der Mitwirkungspflicht können Zwangsmittel (§ 328 AO) oder ein
+                 Verzögerungsgeld (§ 146 Abs. 2b AO) festgesetzt werden.
+
+          1.3 Besondere Mitwirkungspflichten (§ 90 Abs. 3 AO)
+
+          1.3.1 Grundsätze der Aufzeichnungspflicht (§ 90 Abs. 3 Satz 1 AO)
+
+
+          25     Die Verordnung zu Art, Inhalt und Umfang von Aufzeichnungen im Sinne des § 90
+                 Absatz 3 der Abgabenordnung (Gewinnabgrenzungsaufzeichnungs-Verordnung -
+                 GAufzV; 12.7.2017, BGBl. I S. 2367) bestimmt Art, Inhalt und Umfang der zu
+                 erstellenden Aufzeichnungen. Ergänzend hierzu enthalten die Anhänge I und II zu
+                 Kapitel V der OECD-Verrechnungspreisleitlinien für multinationale Unternehmen
+                 Steuerverwaltungen 2017 (OECD-Verrechnungspreisleitlinien 2017) eine Auflistung
+                 von Informationen, die regelmäßig in der Verrechnungspreisdokumentation enthalten
+                 sein sollten.
+
+          26     Die Aufzeichnungspflicht als besondere Ausprägung der allgemeinen Mitwirkungs-
+                 pflichten zielt insbesondere darauf ab (vgl. auch Tz. 5.5 ff. OECD-Verrechnungspreis-
+                 leitlinien 2017), dass
+
+                 a. sichergestellt wird, dass der Steuerpflichtige die Anforderungen des
+                    Fremdvergleichsgrundsatzes berücksichtigt,
+                 b. die Steuerverwaltung die notwendigen Informationen erhält, um eine sach-
+                    verständige Risikobeurteilung vornehmen zu können und
+                 c. die Steuerverwaltung die steuerlich relevanten Informationen erhält, die sie bei der
+                    Durchführung einer Prüfung der grenzüberschreitenden Geschäftsbeziehungen
+                    zwischen einander nahestehenden Personen (Verrechnungspreisprüfungen)
+                    benötigt.
+
+                 Demzufolge tragen die Aufzeichnungen gemäß § 90 Abs. 3 AO (sog. Verrech-
+                 nungspreisdokumentation) dazu bei, dass es einem sachverständigen Dritten
+                 ermöglicht wird, innerhalb einer angemessenen Frist festzustellen, welche
+Seite 9        Sachverhalte der Steuerpflichtige im Zusammenhang mit seinen Geschäfts-
+               beziehungen tatsächlich verwirklicht hat und ob und inwieweit er dabei den
+               Fremdvergleichsgrundsatz beachtet hat (siehe auch BT-Drs. 15/119, S. 52).
+
+          27   Die Aufzeichnungspflicht ist mit dem Unionsrecht vereinbar (BFH-Urteil vom
+               10.4.2013, I R 45/11, BStBl II S. 771).
+
+          28   Unter § 90 Abs. 3 AO fallen die Geschäftsbeziehungen im Sinne des § 1 Abs. 4 AStG
+               eines Steuerpflichtigen. Im Einklang mit § 1 AStG ist ein Steuerpflichtiger in diesem
+               Sinne auch eine Personengesellschaft oder eine Mitunternehmerschaft.
+
+          29   Gesellschaftsvertragliche Vereinbarungen (z. B. Vermögenseinlagen) gehören nicht zu
+               den Geschäftsbeziehungen. Damit die Finanzbehörde prüfen kann, ob ein Vorgang als
+               gesellschaftsrechtliche Vereinbarung oder als Geschäftsbeziehung anzusehen ist, hat
+               der Steuerpflichtige entsprechende Unterlagen aller Beteiligten (z. B. Bilanzen)
+               vorzulegen.
+
+          30   Die Aufzeichnungspflichten gelten auch für anzunehmende schuldrechtliche
+               Beziehungen zwischen einer Betriebsstätte und dem übrigen Unternehmen gemäß § 1
+               Abs. 4 Nr. 2 AStG.
+
+          31   Die Aufzeichnungspflicht nach § 90 Abs. 3 AO ersetzt nicht die Pflicht zu Erstellung
+               einer Hilfs- und Nebenrechnung gemäß § 3 Betriebsstättengewinnaufteilungs-
+               verordnung (BsGaV; 13.10.2014, BGBl. I S. 1603, die zuletzt durch Artikel 5 der
+               Verordnung vom 12.7.2017, BGBl. I S. 2360 geändert worden ist) und umgekehrt.
+
+          32   Auf grenzüberschreitende Geschäftsbeziehungen einer Personengesellschaft oder
+               Mitunternehmerschaft mit ihr nahestehenden Personen ist der Fremdvergleichs-
+               grundsatz anzuwenden; entsprechend sind Aufzeichnungen im Sinne des § 90 Abs. 3
+               AO und der GAufzV vorzulegen. Dies gilt für grenzüberschreitende Beziehungen im
+               Bereich des Sonderbetriebsvermögens gleichermaßen.
+
+          33   Für Geschäftsbeziehungen einer nicht buchführungspflichtigen Personengesellschaft
+               ist auch die Personengesellschaft oder Mitunternehmerschaft selbst aufzeichnungs-
+               pflichtig. Ist für die inländischen Gesellschafter der Personengesellschaft ein Treu-
+               händer oder ein anderer Vertreter bestellt, reicht es aus, wenn die Aufzeichnungen von
+               dieser Person erstellt werden und der inländische Gesellschafter die fristgerechte
+               Vorlage sicherstellt.
+Seite 10   34   Aufzeichnungen sind grundsätzlich in deutscher Sprache vorzulegen. Auf Antrag des
+                Steuerpflichtigen kann die Finanzbehörde die Vorlage der Aufzeichnungen in einer
+                anderen lebenden Sprache (insbesondere in englischer Sprache) zulassen, wenn ein
+                sachgerechtes Verständnis innerhalb eines angemessenen Zeitraums sichergestellt
+                werden kann. Bei Aufzeichnungen gemäß § 90 Abs. 3 Satz 3 AO (Stamm-
+                dokumentation - master file) gilt dies im Besonderen.
+
+                Einem solchen Antrag ist jedoch nur unter der Bedingung zu entsprechen, dass von
+                einer Finanzbehörde später angeforderte Übersetzungen innerhalb einer angemessenen
+                Frist vorgelegt werden. Über den Antrag hat die im Zeitpunkt des Eingangs des
+                Antrags für die Festsetzung oder Feststellung der Einkünfte, auf die der Antrag sich
+                bezieht, örtlich und sachlich zuständige Finanzbehörde unverzüglich zu entscheiden.
+                Wird der Antrag nach Bekanntgabe der Prüfungsanordnung gestellt, entscheidet die
+                für die Prüfung zuständige Finanzbehörde. Wird dem Antrag entsprochen, befreit dies
+                den Steuerpflichtigen nicht davon, in einem etwaigen finanzgerichtlichen Verfahren
+                die Aufzeichnungen in deutscher Sprache vorzulegen; § 52 Abs. 1 FGO, § 184 GVG.
+
+                Der Antrag kann bereits vor der Anfertigung der Aufzeichnungen gestellt werden. Er
+                ist vom Steuerpflichtigen spätestens unverzüglich nach der Anforderung von
+                Aufzeichnungen durch die Finanzbehörde zu stellen. Die Antragstellung hat keine
+                Auswirkung auf den Fristlauf des § 90 Abs. 3 Satz 7 und 8 AO.
+
+                Bei der Anforderung von Übersetzungen ist der Grundsatz der Verhältnismäßigkeit zu
+                beachten. Aufzeichnungen, die in fremder Sprache vorgelegt werden, können unver-
+                wertbar sein. So ist z. B. eine Verrechnungspreisdokumentation im Wesentlichen
+                unverwertbar, wenn die Aufzeichnungen ohne Zustimmung der Finanzbehörde in
+                fremder Sprache vorgelegt werden und der Steuerpflichtige diese trotz Aufforderung
+                nicht übersetzt.
+
+           35   Für die Erstellung der Aufzeichnungen sind die wirtschaftlichen und rechtlichen
+                Verhältnisse in dem Zeitpunkt maßgeblich, in dem der Vertrag (Verpflichtungs-
+                geschäft) für den Geschäftsvorfall abgeschlossen worden ist bzw. in dem sich die
+                wirtschaftlichen Bedingungen ggf. so wesentlich geändert haben, dass fremde Dritte
+                eine Anpassung der Geschäftsbedingungen vereinbart oder den Vertrag gekündigt
+                hätten. Hierbei ist unerheblich, ob der Vertrag mündlich, schriftlich oder durch
+                konkludentes Handeln geschlossen wurde.
+Seite 11   36      Die Aufzeichnungen gemäß § 90 Abs. 3 AO müssen das ernsthafte Bemühen des
+                   Steuerpflichtigen belegen, seine Geschäftsbeziehungen unter Beachtung des
+                   Fremdvergleichsgrundsatzes zu gestalten (§ 2 Abs. 1 GAufzV). Das ernsthafte
+                   Bemühen ist anhand objektivierter Umstände glaubhaft zu machen.
+
+           37      Hinsichtlich der Folgen der Verletzung der Aufzeichnungspflicht wird auf § 162
+                   Abs. 3 und 4 AO verwiesen (Rn. 80 ff.).
+
+           38      Die Erleichterungen des § 6 Abs. 1 GAufzV bestehen in erster Linie darin, dass die
+                   Verpflichtung zur Vorlage von Aufzeichnungen auch dadurch erfüllt werden kann,
+                   fristgerecht (§ 90 Abs. 3 Satz 7 AO) mündliche Auskünfte zu erteilen und bereits
+                   vorhandene Unterlagen vorzulegen. § 93 Abs. 4 Satz 2 AO bleibt davon unberührt.
+
+
+           39      Bei der Prüfung, ob die Betragsgrenzen im Sinne des § 6 Abs. 2 GAufzV überschritten
+                   werden, sind die Entgelte für die von ausländischen nahestehenden Personen empfan-
+                   genen und für die an sie erbrachten Lieferungen bzw. Leistungen aller zusammen-
+                   hängenden inländischen Unternehmen im Sinne der §§ 13, 18 und 19 der allgemeinen
+                   Verwaltungsvorschrift für die Betriebsprüfung – Betriebsprüfungsordnung (BpO 2000
+                   vom 15.3.2000, BStBl I S. 368, zuletzt geändert durch die allgemeine Verwaltungs-
+                   vorschrift vom 20.7.2011, BStBl I S. 710) zusammenzurechnen. Güter und Waren im
+                   Sinne der Vorschrift können alle materiellen Wirtschaftsgüter und immateriellen
+                   Werte sein. Geschäftsbeziehungen zu inländischen nahestehenden Personen bleiben
+                   bei der Berechnung unberücksichtigt.
+
+           1.3.2 Sachverhalts- und Angemessenheitsdokumentation (§ 90 Abs. 3 Satz 2 AO)
+
+           1.3.2.1. Sachverhaltsdokumentation
+
+
+           40      Für die Sachverhaltsdokumentation hat der Steuerpflichtige Aufzeichnungen über Art,
+                   Inhalt und Umfang seiner Geschäftsbeziehungen zu nahestehenden Personen sowie
+                   über die wirtschaftlichen und rechtlichen Rahmenbedingungen zu erstellen (vgl. § 1
+                   Abs. 2 und § 4 GAufzV).
+
+           41      Zum Beispiel können folgende Informationen in Abhängigkeit von der Art der
+                   Geschäftsbeziehung von besonderer Bedeutung sein:
+                Aktivität             Funktionen             Eingesetzte                Risiken
+                                                             Vermögenswerte
+
+                Forschung und         Grundlagenforschung,   Patente, Lizenzen,         Fehlgeschlagene Forschung,
+                Entwicklung           Produktentwicklung,    wesentliche immaterielle   Marktvorteile aus
+                (als eigenständige    Produktdesign,         Werte                      erfolgreicher Forschung,
+                Aktivität)            Lizenzierung,                                     Chance auf Lizenzeinnahme
+Seite 12                                 Patententwicklung,                                     Substitutionsrisiko,
+                                         Kontrolle und                                          Marktrisiko, Patentrisiken
+                                         Management der Risiken
+
+                Herstellung von          Design, Forschung und        Lizenzen, Produkt-        Investitionsrisiko,
+                Produkten                Entwicklung,                 und/oder Prozess-Know-    Kapazitäts- oder
+                                         Produktmanagement,           how, Marken,              Auslastungsrisiko,
+                                         Produktionsplanung,          Grundstücke,              Qualitätsrisiken,
+                                         Einkauf Rohstoffe etc.,      Fertigungsanlagen,        Umweltrisiken,
+                                         Lagerhaltung Rohstoffe       Abnahmegarantien          Produkthaftungsrisiken,
+                                         etc., Fertigung,                                       Risiko staatlicher Eingriffe
+                                         Verpackung, Montage,                                   (z. B. Umweltschutz-
+                                         Qualitätssicherung,                                    bestimmungen,
+                                         Beschaffung, Lagerhaltung                              Mindestlöhne),
+                                         Produkte, Logistik, ggf.                               Gewährleistungsrisiko
+                                         Vertrieb, Verwaltung,
+                                         Kontrolle und
+                                         Management der Risiken
+
+                Vertrieb                 Lagerhaltung, Werbung,       Vertriebsrecht,           Absatzrisiko (Änderung des
+                                         Vertrieb, Finanzierung,      Markenrecht,              Publikumsgeschmacks,
+                                         Transport, Verzollung,       Kundenstamm, Fahrzeuge,   Konjunkturschwäche),
+                                         Montage, technische          Lagervorrichtung          Chance auf einen
+                                         Unterstützung,                                         Reingewinn aus Handels-
+                                         Kundendienst,                                          bzw. Vertriebstätigkeit,
+                                         Preisgestaltung, Kontrolle                             Marktpreisrisiko,
+                                         und Management der                                     Inkassorisiko,
+                                         Risiken                                                Wechselkursrisiko,
+                                                                                                Transportrisiko, Lagerrisiko
+
+                Unternehmensverwaltung   Leitung, Koordination,       spezifische Software,     Geschäftsrisiko,
+                                         Strategieentwicklung,                                  Liquiditätsrisiko
+                                                                      Know-how, Grundstücke,
+                                         Controlling, Finanzierung,
+                                                                      Gebäude
+                                         Rechnungslegung,
+                                         Mitarbeitersuche
+                                         und -schulung, Kontrolle
+                                         und Management der
+                                         Risiken
+
+                Finanzierung             Kreditgeschäft,              Sicherungsübereignete     Wechselkursrisiko,
+                                         Diskontgeschäft,             Vermögenswerte, Know-     Fristentransformationsrisiko,
+                                         Garantiegeschäft,            how                       Liquiditätsrisiko,
+                                         Kryptoverwahrgeschäft,                                 Debitorenrisiko
+                                         Factoring, Leasing,
+                                         Kontrolle und
+                                         Management der Risiken
+
+                Versicherung             Absicherung Risiken,         -                         Risikotransfer,
+                                         Vermittlung, Kontrolle                                 versicherungstechnisches
+                                         und Management der                                     Risiko
+                                         Risiken
+
+
+           42      Die Aufzeichnungen müssen einem sachverständigen Dritten in angemessener Zeit ein
+                   grundlegendes Verständnis der Wertschöpfung innerhalb der Unternehmensgruppe
+                   (vgl. Tz. 1.51 OECD-Verrechnungspreisleitlinien 2017) bzw. innerhalb des einheit-
+Seite 13         lichen Unternehmens (Rn. 30), des Geschäftsmodells und des Funktions- und Risiko-
+                 profils der Transaktionspartner vermitteln. Nur dann ist eine Beurteilung der Ange-
+                 messenheit des Verrechnungspreises möglich.
+
+           43    Die mit den einzelnen nahestehenden Personen abgewickelten Geschäftsbeziehungen
+                 sind in einer Übersicht hinsichtlich ihrer Art und des betragsmäßigen Umfangs der
+                 Entgelte darzustellen (Transaktionsübersicht). Bei Darlehensverhältnissen ist auch die
+                 Darlehenssumme aufzuzeichnen. Die Vorlage der zugrunde liegenden Verträge ist zur
+                 Beurteilung grundsätzlich erforderlich.
+
+           1.3.2.2. Angemessenheitsdokumentation
+
+           44    Daneben sind Aufzeichnungen über die Angemessenheit der Verrechnungspreise zu
+                 erstellen (Angemessenheitsdokumentation; vgl. § 1 Abs. 3 und § 4 GAufzV). Diese
+                 beziehen sich auf die wirtschaftlichen und rechtlichen Grundlagen, aus denen sich
+                 ergibt, dass der Steuerpflichtige den Fremdvergleichsgrundsatz beachtet hat.
+
+                 Die Angemessenheitsdokumentation muss das ernsthafte Bemühen des Steuer-
+                 pflichtigen belegen, für Zwecke der steuerlichen Einkünfteermittlung den Fremd-
+                 vergleichsgrundsatz zu beachten. Die Aufzeichnungen haben die angestellten
+                 Überlegungen widerzuspiegeln und für einen sachverständigen Dritten innerhalb einer
+                 angemessenen Frist nachvollziehbar zu machen.
+
+           45    Hierfür muss der Steuerpflichtige die Eignung der tatsächlich angewendeten
+                 Verrechnungspreismethode bzw. des hypothetischen Fremdvergleichs sowie die
+                 Angemessenheit der steuerlich zugrunde gelegten Preise bzw. des Ergebnisses
+                 begründen (§ 4 Abs. 1 Nr. 4 Buchstabe d GAufzV). Der Steuerpflichtige ist daher
+                 verpflichtet, aufzuzeichnen, weshalb er die von ihm jeweils angewandte Verrech-
+                 nungspreismethode für die am besten geeignete Methode hält bzw. weshalb der
+                 hypothetische Fremdvergleich anzuwenden ist. Zu einer Verprobung seiner Ergebnisse
+                 nach anderen Methoden ist der Steuerpflichtige nicht verpflichtet.
+
+           46    Die Finanzbehörden wählen die richtige Verrechnungspreismethode selbst aus,
+                 und zwar diejenige, die sich als geeignetste Methode erweist. Verwendet die
+                 Finanzbehörde bei ihrer Prüfung eine andere Methode als der Steuerpflichtige, kann
+                 dies nur zu einer Berichtigung führen, wenn die Ergebnisse der Alternativmethode
+                 wahrscheinlicher sind. Die hierfür erforderlichen Informationen sind vom Steuer-
+                 pflichtigen der Finanzbehörde gegenüber vorzulegen. Können beispielsweise
+                 Unsicherheiten über die Vergleichbarkeit von Daten im Zuge einer Außenprüfung
+                 nicht beseitigt werden, kann die Finanzbehörde ihrerseits Verprobungsrechnungen
+Seite 14        durchführen, um zu beurteilen, ob das Ergebnis des Steuerpflichtigen anzuerkennen
+                oder zu verwerfen ist. Die Zulässigkeit und das Erfordernis, die Ergebnisse einer
+                Methode mit Hilfe des Einsatzes einer anderen Methode zu ermitteln, zu konkre-
+                tisieren bzw. zu verproben, ergibt sich auch aus der ständigen Rechtsprechung
+                (BFH-Urteil vom 17.10.2001, I R 103/00, BStBl 2004 II S. 171; BFH-Urteil vom
+                6.4.2005, I R 22/04, BStBl 2007 II S. 658).
+
+           47   Bei der Anwendung des hypothetischen Fremdvergleichs ist aufgrund der Bedeutung
+                der zugrunde gelegten Annahmen und Bewertungsparameter eine sachgerechte
+                Beurteilung der Bewertung nur dann möglich, wenn alle bei der Erstellung des
+                Bewertungsmodells zugrunde gelegten relevanten Annahmen genau dargelegt und die
+                Basis für die Auswahl der Bewertungsparameter beschrieben werden. Die Angemes-
+                senheit dieser Annahmen und Bewertungsparameter für den konkreten Geschäfts-
+                vorfall ist darzulegen. Darüber hinaus sollten Sensitivitätsanalysen Aufschluss darüber
+                geben, wie sich der ermittelte Wert des Bewertungsobjekts verändert, wenn für das
+                Modell alternative Annahmen und Parameter gewählt werden (siehe auch Tz. 6.160
+                OECD-Verrechnungspreisleitlinien 2017).
+
+           48   Die Angemessenheitsdokumentation hat sich auf die tatsächlich abgeschlossene und
+                durchgeführte Vereinbarung des Steuerpflichtigen mit der ihm nahestehenden Person
+                zu beziehen. Hat der Steuerpflichtige beispielsweise einen anderen als den zivil-
+                rechtlich vereinbarten Preis der Besteuerung zugrunde gelegt, müssen die Aufzeich-
+                nungen den für die Besteuerung angesetzten Verrechnungspreis darstellen. Hat der
+                Steuerpflichtige Verträge geschlossen, diese aber nicht entsprechend dem Verein-
+                barten durchgeführt, haben sich die Aufzeichnungen auf die tatsächlichen Verhältnisse
+                und damit die tatsächlich durchgeführte Geschäftsbeziehung zu beziehen.
+
+           49   Maßgebender Zeitpunkt für den Fremdvergleich ist grundsätzlich der Abschluss des
+                Vertrages, nicht der Erfüllungszeitpunkt (BFH-Urteil vom 9.3.1983, I R 182/78,
+                BStBl II S. 744). Abzustellen ist daher auf die Verhältnisse zum Zeitpunkt der
+                Vereinbarung des Geschäftsvorfalls. Der Steuerpflichtige kann sich auf nachträglich
+                bekannt gewordene externe Fremdvergleichsdaten stützen, soweit sich diese auf den
+                Zeitpunkt der Vereinbarung des Geschäftsvorfalls beziehen. Maßgebend bleiben daher
+                die Verhältnisse zum Zeitpunkt der Vereinbarung des Geschäftsvorfalls. Entsprechend
+                soll die Angabe über den Zeitpunkt der Verrechnungspreisbestimmung der Finanz-
+                verwaltung die Möglichkeit eröffnen, eine bessere Einschätzung vornehmen zu
+                können, mit welcher zeitlichen Distanz die tatsächlich durchgeführten Geschäfts-
+                beziehungen auf ihre Fremdüblichkeit hin überprüft wurden.
+Seite 15   50   Eine Angemessenheitsdokumentation, welche auf Planrechnungen zurückgreift, ist
+                soweit wie möglich auf Vergleichsdaten, wie fremdübliche Gewinnaufschläge oder
+                eine marktübliche Kapitalverzinsung, zu stützen. Die zugrunde gelegten Plan-
+                annahmen sind anhand der Erfahrungen aus bereits abgelaufenen Zeiträumen und auf
+                Basis kaufmännischer, betriebswirtschaftlich fundierter, vorsichtiger Prognosen im
+                Einzelnen zu begründen (BFH-Urteil vom 17.2.1993, I R 3/92, BStBl II S. 457). Der
+                Steuerpflichtige hat regelmäßig einen Abgleich zwischen den Planzahlen und den
+                tatsächlichen Zahlen durchzuführen, um rechtzeitig auf einen geänderten Geschäfts-
+                verlauf reagieren zu können. Dazu getroffene Maßnahmen sind zu begründen und
+                aufzuzeichnen. Weicht die tatsächlich eingetretene Entwicklung erheblich von der
+                erstellten Prognose ab, hat der Steuerpflichtige die Abweichungen aufzuzeichnen und
+                darzulegen, dass diese auf unerwarteten Umständen (z. B. außergewöhnlichen Kosten,
+                Wirtschaftskrisen, Naturkatastrophen) beruhen, die er in seiner vorsichtigen kauf-
+                männischen Prognose nicht berücksichtigen konnte.
+
+           51   Für die Durchführung der Angemessenheitsprüfung sind die steuerlich relevanten
+                Unterlagen und Bilanzen aller Beteiligten unter Einschluss der konsolidierungsfähigen
+                Einzelabschlüsse (sog. Handelsbilanzen II) vorzulegen.
+
+           52   Verrechnungspreisrichtlinien des Steuerpflichtigen und der Unternehmensgruppe, zu
+                der dieser gehört, sind Bestandteil der Aufzeichnungen (§ 2 Abs. 3 Satz 5 GAufzV).
+                Für sie gelten die entsprechenden Anforderungen. Weicht der Steuerpflichtige im
+                Einzelfall von der Verrechnungspreisrichtlinie ab, muss er die Abweichung begründen
+                und die Gründe bezogen auf den jeweiligen Geschäftsvorfall aufzeichnen und die
+                Angemessenheit der abweichenden Preisbestimmung darlegen.
+
+           53   Werden Informationen aus Datenbanken herangezogen, ist Voraussetzung für eine
+                Prüfung durch die Finanzbehörde, dass der in einer Datenbank vorgenommene
+                Suchprozess im Rahmen des technisch Möglichen nachvollziehbar und prüfbar ist. Es
+                muss der Finanzbehörde ermöglicht werden, auf Basis der vom Steuerpflichtigen
+                genutzten Daten selbständig Alternativrechnungen vornehmen und feststellen zu
+                können, ob der Steuerpflichtige alle relevanten Informationen unter Verwendung
+                verschiedener, angemessener Suchkriterien berücksichtigt hat. Da Ergebnisse eines
+                reinen Datenbankscreenings für die Prüfung der Vergleichbarkeit der Sachverhalte
+                und somit der Angemessenheitsdokumentation regelmäßig nicht ausreichen, sind
+                ergänzende Suchschritte und Auswahlverfahren entsprechend aufzuzeichnen und zu
+                dokumentieren (vgl. § 4 Abs. 3 GAufzV). Die hierzu vom Steuerpflichtigen erstellten
+                und zusammengetragenen Daten sind der Finanzbehörde im Rahmen des § 147 Abs. 5
+                und 6 AO in elektronischer Form zugänglich zu machen.
+Seite 16   1.3.3 Stammdokumentation (§ 90 Abs. 3 Satz 3-4 AO)
+
+           54    Im Rahmen der Verrechnungspreisdokumentation hat der Steuerpflichtige nach § 90
+                 Abs. 3 Satz 3 AO unter bestimmten Voraussetzungen eine sog. Stammdokumentation
+                 („master file“) für ein Unternehmen zu erstellen. Mit dieser Regelung hat Deutschland
+                 die Empfehlungen des OECD/G20-Abschlussberichtes zu Aktionspunkt 13 des BEPS-
+                 Projekts vom 5. Oktober 2015 in nationales Recht umgesetzt. Die Inhalte dieses
+                 Abschlussberichtes wurden in das Kapitel V und den Anhang I zu Kapitel V der
+                 OECD-Verrechnungspreisleitlinien 2017 übernommen. Das Ziel und der Zweck der
+                 Stammdokumentation besteht darin, den Steuerverwaltungen einen Überblick über die
+                 Art der weltweiten Geschäftstätigkeit und über die Systematik der Verrechnungspreis-
+                 bestimmung der multinationalen Unternehmensgruppe zu geben.
+
+           55    Für die Voraussetzungen zur Erstellung der Stammdokumentation gilt Folgendes:
+
+                 a.   Das Unternehmen ist Teil einer multinationalen Unternehmensgruppe.
+                 b.   Als Unternehmen im Sinne dieser Vorschrift sind Betriebe zu verstehen, die
+                      Einkünfte aus Gewerbebetrieb gemäß § 15 Abs. 1 Satz 1 Nr. 1 EStG erzielen.
+                 c.   Der Umsatz des Unternehmens betrug im vorangegangenen Wirtschaftsjahr
+                      mindestens 100 Millionen Euro. Der Umsatzbegriff richtet sich nach § 277
+                      Abs. 1 HGB. Maßgeblich sind die nicht-konsolidierten Inlands- und Auslands-
+                      umsätze des Unternehmens mit fremden Dritten sowie mit nahestehenden
+                      Personen im Sinne des § 1 Abs. 2 AStG. Innenumsätze zwischen dem Unter-
+                      nehmen und seiner Betriebsstätte sind nicht einzubeziehen. Für die Über-
+                      schreitung der Umsatzgrenze von 100 Millionen Euro ist es unerheblich, wie hoch
+                      der Anteil der Auslandsumsätze an den Gesamtumsätzen ist. Eine Stamm-
+                      dokumentation ist auch zu erstellen, wenn die Auslandsumsätze nur einen
+                      geringfügigen Teil der relevanten Gesamtumsätze ausmachen.
+
+           56    Der Umfang der Stammdokumentation ist in § 5 Abs. 1 Satz 1 GAufzV und der
+                 Anlage zu § 5 GAufzV geregelt. Die Anlage listet die vorzulegenden Aufzeichnungen
+                 und Unterlagen im Einzelnen auf. Die Liste ist abschließend, § 90 Abs. 3 Satz 10 AO
+                 (Rn. 66) und § 2 Abs. 5 GAufzV sind dennoch zu beachten.
+
+           57    Nach § 5 Abs. 2 GAufzV soll das Ziel der Stammdokumentation mit angemessenem
+                 Aufwand für den Steuerpflichtigen erreicht werden können (Verhältnismäßigkeits-
+                 grundsatz). Der Überblickscharakter der Stammdokumentation soll gewahrt werden.
+                 Unterlagen, die im Rahmen der Stammdokumentation gefordert sind, den Finanz-
+                 behörden aber bereits vorliegen, müssen vom Steuerpflichtigen daher nicht erneut
+Seite 17          eingereicht werden (z. B. der Konzernabschluss); ein entsprechender Verweis in der
+                  Stammdokumentation genügt.
+
+           58     Der in Satz 2 der Anlage zu § 5 GAufzV eingeräumte Beurteilungsspielraum bei der
+                  Auslegung der unbestimmten Rechtsbegriffe, die in der Anlage enthalten sind, soll
+                  sich an den Empfehlungen des OECD/G20 Abschlussberichtes zu Aktionspunkt 13
+                  des BEPS-Projekts und Kapitel V der OECD-Verrechnungspreisleitlinien 2017
+                  orientieren. Dadurch wird eine international einheitliche Umsetzung der Stamm-
+                  dokumentation gewährleistet.
+
+           59     Die Stammdokumentation nach § 90 Abs. 3 Satz 3 AO ergänzt zwar inhaltlich die
+                  landesspezifische unternehmensbezogene Verrechnungspreisdokumentation nach § 90
+                  Abs. 3 Satz 1 und Satz 2 AO. Für die Stammdokumentation nach § 90 Abs. 3
+                  Satz 3 AO ist aber ein gesonderter Bericht oder Berichtsteil zu erstellen, in welchem
+                  ggf. auf die länderspezifische, unternehmensbezogene Verrechnungspreisdokumen-
+                  tation und bei der Finanzbehörde bereits vorliegende Unterlagen verwiesen werden
+                  kann.
+
+           60     Bei Nichterfüllung der Aufzeichnungspflicht gemäß § 90 Abs. 3 Satz 3 AO können
+                  Zwangsmittel (§ 328 AO) oder ein Verzögerungsgeld (§ 146 Abs. 2b AO) festgesetzt
+                  werden.
+
+
+           1.3.4 Vorlageverlangen (§ 90 Abs. 3 Satz 5-6 AO, § 2 Abs. 6 GAufzV)
+
+
+           61     Nach § 90 Abs. 3 Satz 5 AO in Verbindung mit § 2 Abs. 6 GAufzV liegt es im
+                  Ermessen der Finanzbehörde, ob und wann sie die Vorlage der Aufzeichnungen
+                  verlangt. In der Regel soll dies nur für die Durchführung einer Außenprüfung
+                  erfolgen. In begründeten Einzelfällen können die Aufzeichnungen auch außerhalb der
+                  Außenprüfung angefordert werden. So kann die Durchführung eines Verständigungs-
+                  verfahrens Anlass sein, im Sinne von § 90 Abs. 3 Satz 5 AO die Vorlage von Auf-
+                  zeichnungen auch außerhalb einer Außenprüfung zu verlangen.
+
+           62     Zur Beschleunigung eines etwaigen Verständigungsverfahrens, kann der Steuer-
+                  pflichtige der hierfür zuständigen Behörde bereits vorab mitteilen, dass bei einer
+                  nahestehenden Person oder einer Betriebsstätte im Ausland eine Einkünftekorrektur
+                  vorgenommen wurde. Es ist seitens dieser Behörde dann anzuregen, dass der Steuer-
+                  pflichtige alle erforderlichen Unterlagen (§ 90 Abs. 2 AO) vorlegt und Aufzeich-
+                  nungen nach § 90 Abs. 3 AO auch außerhalb einer Außenprüfung erstellt.
+Seite 18   1.3.5 Vorlagefrist und Verlängerung (§ 90 Abs. 3 Sätze 7 und 9 AO)
+
+           63     Die Vorlagefrist beginnt mit der Bekanntgabe der Anforderung, nicht mit dem
+                  Prüfungsbeginn im Unternehmen des Steuerpflichtigen. Die Finanzbehörde kann die
+                  Vorlage auch dann innerhalb der Frist verlangen, wenn die Außenprüfung auf Antrag
+                  des Steuerpflichtigen verschoben wird.
+
+           64     Es obliegt dem Steuerpflichtigen, die erforderlichen Vorkehrungen zu treffen, um die
+                  Vorlagefrist einhalten zu können. Die Finanzbehörde geht davon aus, dass der
+                  Steuerpflichtige die für die Verrechnungspreisbestimmung wesentlichen Daten und
+                  Fakten regelmäßig und zeitnah sammelt sowie sachgerecht und geordnet verfügbar
+                  hält.
+
+           65     Zeichnen sich im konkreten Fall bei den Bemühungen des Steuerpflichtigen, sich auf
+                  die Erfüllung der Aufzeichnungspflichten vorzubereiten, erhebliche Schwierigkeiten
+                  ab, können diese im Vorhinein mit der für die Außenprüfung zuständigen Finanz-
+                  behörde erörtert werden. Eine Anerkennung der vom Steuerpflichtigen angesetzten
+                  Verrechnungspreise ist damit nicht verbunden.
+
+           1.3.6 Ergänzung auf Anforderung (§ 90 Abs. 3 Satz 10 AO)
+
+
+           66     Die Finanzbehörde kann den Steuerpflichtigen gemäß § 90 Abs. 3 Satz 10 AO dazu
+                  auffordern, die vorgelegten Aufzeichnungen innerhalb einer angemessenen Frist um
+                  detailliertere oder weitere Unterlagen zu ergänzen. Eine Ergänzung ist insbesondere
+                  dann notwendig, wenn sich aus Sicht der Finanzbehörde aufgrund der bereits
+                  vorgelegten Aufzeichnungen Anhaltspunkte für weitere Nachfragen ergeben.
+
+
+           2. Schätzung von Besteuerungsgrundlagen und Zuschläge (§ 162 AO)
+
+           2.1 Allgemeines
+
+
+           67     Die Mitwirkungspflichten nach §§ 90 Abs. 1 bis 3 Satz 1 und 2, 200 AO sind
+                  insbesondere verletzt, wenn ein Beteiligter Tatsachen, die ausschließlich oder
+                  überwiegend seiner Wissenssphäre zugehören, nicht gegenüber der Finanzbehörde
+                  offenlegt. Die Finanzbehörde ist dann befugt zu schätzen. Der „Beweisverderber“ soll
+                  aus seinem Verhalten keinen Vorteil ziehen (BFH-Urteil vom 15.2.1989, X R 16/86,
+                  BStBl II S. 462).
+Seite 19   68   Grundsätzlich trägt die Finanzbehörde die Feststellungslast für diejenigen Tatsachen,
+                die einen Steueranspruch begründen bzw. erhöhen. Die Frage der Feststellungslast
+                stellt sich, wenn ein entscheidungserheblicher Sachverhalt trotz Ausschöpfung aller
+                zugänglichen und zumutbaren Ermittlungsmöglichkeiten nicht vollständig aufgeklärt
+                werden kann. Aus der gemeinsamen Verantwortung des Steuerpflichtigen einerseits
+                und der Finanzbehörde andererseits für die vollständige Sachaufklärung folgt u. a.,
+                dass sich dann, wenn ein Steuerpflichtiger ihm obliegende allgemeine oder besondere
+                Mitwirkungs-, Informations- oder Nachweispflichten verletzt, grundsätzlich die
+                Ermittlungspflicht der Finanzbehörde entsprechend reduziert. Kriterien und Ausmaß
+                der Reduzierung von Sachaufklärungspflicht und Beweismaß lassen sich nicht gene-
+                rell festlegen, sondern nur im Einzelfall bestimmen. Die Verletzung der Mitwirkungs-
+                pflichten kann insbesondere dann, wenn sie Tatsachen oder Beweismittel aus dem
+                alleinigen Verantwortungsbereich des Steuerpflichtigen betrifft, dazu führen, dass aus
+                seinem Verhalten für ihn nachteilige Schlüsse gezogen werden. Besondere Bedeutung
+                kommt in diesem Zusammenhang dem Gedanken der Beweisnähe zu: Die Verant-
+                wortung des Steuerpflichtigen für die Aufklärung des Sachverhalts ist umso größer, je
+                mehr Tatsachen oder Beweismittel der von ihm beherrschten Informations- und/oder
+                Tätigkeitssphäre angehören (BFH-Urteil vom 15.2.1989, X R 16/86, BStBl II S. 462).
+                Die Finanzbehörde hat dennoch auch in diesen Fällen den Sachverhalt aufzuklären,
+                soweit ihr dies zumutbar ist.
+
+           69   Wirkt sich die Verletzung der Mitwirkungspflichten auf mehrere Tatbestands-
+                merkmale einer Einkünftekorrekturvorschrift aus, tritt eine Beweismaßreduzierung für
+                alle betroffenen Tatbestandsmerkmale der Berichtigungsvorschrift ein.
+
+           70   Grundlage der Schätzung ist es, in einem Akt wertenden Schlussfolgerns (BFH-Urteil
+                vom 26.2.2002, X R 59/98, BStBl II S. 450) von dem Sachverhalt auszugehen, der der
+                Wirklichkeit am nächsten kommt. Das Schätzungsergebnis soll dem wahren Sach-
+                verhalt möglichst nahekommen (BFH-Urteil vom 11.3.1999, V R 78/98, BFHE 188
+                S. 160). Die Schätzergebnisse müssen daher schlüssig, wirtschaftlich möglich und
+                vernünftig sein (BFH-Urteil vom 20.3.2017, X R 11/16, BStBl II S. 992). Unschärfen
+                aufgrund der Schätzung gehen zulasten des Steuerpflichtigen.
+
+           71   Für die Überprüfung des tatsächlich vereinbarten Verrechnungspreises und als
+                Grundlage für die Schätzung nach § 162 Abs. 1 AO kann im konkreten Einzelfall der
+                Fremdvergleichspreis mittels einer geeigneten Verrechnungspreismethode mit der
+                größtmöglichen Wahrscheinlichkeit der Richtigkeit ermittelt werden (BFH-Urteil vom
+                17.10.2001, I R 103/00, BStBl II 2004 S. 171).
+Seite 20   72    Datenbankstudien sind eine zulässige Schätzungsmethode im Sinne des § 162 AO. Bei
+                 Vergleichsunternehmen handelt es sich um einzeln festzustellende Grundlagen.
+                 Schätzungen müssen insoweit insgesamt in sich schlüssig sein.
+
+           73    Die Vorlage verwertbarer Aufzeichnungen schließt Einkünfteberichtigungen nicht aus.
+                 Die Finanzbehörde kann über solche Aufzeichnungen hinaus weitere Auskünfte und
+                 Unterlagen anfordern (§ 88 AO) und Verprobungen nach anderen Methoden vor-
+                 nehmen. Dabei kann die Finanzbehörde die Verprobung im Einklang mit Rn. 49 auch
+                 auf nachträglich bekannt gewordene externe Fremdvergleichsdaten stützen. Verwert-
+                 bare Aufzeichnungen sind lediglich Ausgangspunkt für die Prüfung. Die Vorlage
+                 verwertbarer Aufzeichnungen schließt daher auch die Schätzungsbefugnis der Finanz-
+                 behörde gemäß § 162 Abs. 1 und 2 AO nicht aus. Für eine Einkünfteberichtigung
+                 reichen allein Mängel in der Begründung für deren Angemessenheit seitens des
+                 Steuerpflichtigen nicht aus. Voraussetzung einer Einkünfteberichtigung ist vielmehr,
+                 dass die vom Steuerpflichtigen angewandten Verrechnungspreise mit hoher Wahr-
+                 scheinlichkeit nicht dem Fremdvergleich entsprechen und dass der von der Finanz-
+                 behörde ermittelte Verrechnungspreis zumindest wahrscheinlicher ist.
+
+           74    Die Finanzverwaltung des Staates, die die Erstkorrektur vornimmt, trägt die Fest-
+                 stellungslast im Verständigungsverfahren (vgl. Tz. 4.17 OECD-Verrechnungs-
+                 preisleitlinien 2017).
+
+           2.2 Schätzungen nach § 162 Abs. 1 AO
+
+           75    Eine Schätzung ist nicht schon deswegen unrechtmäßig, weil sie nicht den tatsäch-
+                 lichen Verhältnissen entspricht. Abweichungen von den tatsächlichen Verhältnissen
+                 sind nicht zu vermeiden, weil die volle Kenntnis der wahren Gegebenheiten fehlt. Eine
+                 Schätzung ist erst dann rechtswidrig, wenn der Schätzungsrahmen überschritten wird,
+                 der durch die Kenntnisse der Finanzbehörde über den Fall vorgegeben ist. Schätzt die
+                 Finanzbehörde bewusst und willkürlich zum Nachteil des Steuerpflichtigen
+                 (Strafschätzung), kann dies zur Nichtigkeit des Schätzungsbescheides führen (BFH-
+                 Urteil vom 1.10.1992, IV R 34/90, BStBl 1993 II S. 259; BFH-Urteil vom 20.12.2000,
+                 I R 50/00, BStBl 2001 II S. 381).
+
+           2.3 Schätzungen nach § 162 Abs. 2 AO
+
+           76    Hat es der Steuerpflichtige zu vertreten, dass die Besteuerungsgrundlagen geschätzt
+                 werden müssen, weil er z. B. seine Mitwirkungspflichten nach § 90 Abs. 2 AO
+                 verletzt, gehen Unsicherheiten zu seinen Lasten (gemindertes Beweismaß). Bei groben
+                 Verstößen des Steuerpflichtigen, die erhebliche Änderungen gegenüber seinen
+Seite 21         Angaben in der Steuererklärung notwendig machen, ist die Finanzbehörde im
+                 Allgemeinen berechtigt und verpflichtet, die Besteuerungsgrundlagen nach dem für
+                 den Steuerpflichtigen ungünstigsten, aber noch möglichen Sachverhalt festzustellen
+                 (BFH-Urteil vom 9.3.1967, IV 184/63, BStBl II S. 349). Strafschätzungen sind auch in
+                 diesen Fällen nicht zulässig.
+
+           77    In Verrechnungspreisfällen soll eine Schätzung nach § 162 Abs. 2 AO zur
+                 Besteuerung des Gewinns führen, der erzielt worden wäre, wenn dem Fremdvergleich
+                 entsprechende Verrechnungspreise angesetzt worden wären. An die Nachweise, die
+                 von der Finanzbehörde dafür zu erbringen sind, dürfen keine überspitzten Anforde-
+                 rungen gestellt werden (BFH-Urteil vom 23.6.1993, I R 72/92, BStBl II S. 801).
+
+           78    Sind die Voraussetzungen für eine Schätzung nach § 162 Abs. 2 AO erfüllt, dürfen die
+                 Besteuerungsgrundlagen nach Methoden und aufgrund von Daten geschätzt werden,
+                 deren Beweiswert außerhalb einer solchen Schätzung nicht für eine Einkünfte-
+                 berichtigung ausreicht (z. B. Richtsatzvergleich, Branchendurchschnittswerte).
+
+           79    Die Berechtigung zur Vornahme einer Schätzung ist nicht davon abhängig, dass die
+                 Finanzbehörde vorher die internationale Rechts- und Amtshilfe in Anspruch
+                 genommen hat.
+
+           2.4 Schätzungen nach § 162 Abs. 3 AO und Zuschlag nach § 162 Abs. 4 AO
+
+           80    Verstößt der Steuerpflichtige dadurch gegen seine Aufzeichnungspflichten nach § 90
+                 Abs. 3 AO, dass er
+
+                 a. trotz Anforderung durch die Finanzbehörde keine Aufzeichnungen oder im
+                    Wesentlichen unverwertbare Aufzeichnungen vorlegt oder
+                 b. verwertbare Aufzeichnungen für außergewöhnliche Geschäftsvorfälle nicht
+                    zeitnah (§ 3 GAufzV) erstellt hat,
+
+                 wird nach § 162 Abs. 3 Satz 1 AO widerlegbar vermutet, dass die Einkünfte aus
+                 Geschäftsbeziehungen im Sinne des § 1 Abs. 4 AStG durch eine nicht fremdübliche
+                 Gestaltung gemindert worden sind. In diesen Fällen trifft den Steuerpflichtigen die
+                 Beweisführungslast, dass es zu keiner Einkünfteminderung gekommen ist.
+
+           81    Im Fall der verspäteten Erstellung von Aufzeichnungen für außergewöhnliche
+                 Geschäftsvorfälle ist deren Beweiswert unter Berücksichtigung der Tatsache der
+                 Verspätung (Indiz) zu würdigen.
+Seite 22   82   Im Wesentlichen unverwertbar sind die Aufzeichnungen dann, wenn sie es einem
+                sachverständigen Dritten innerhalb eines angemessenen Zeitraums nicht ermöglichen,
+                festzustellen und zu prüfen, welchen Sachverhalt der Steuerpflichtige verwirklicht und
+                ob er dabei den Fremdvergleichsgrundsatz beachtet hat. Die Frage der Verwertbarkeit
+                bezieht sich damit sowohl auf die Sachverhalts- als auch auf die Angemessenheits-
+                dokumentation. Die Maßstäbe für eine ordnungsmäßige Buchführung (vgl. AEAO zu
+                § 158) gelten entsprechend. Unverwertbar sind die Aufzeichnungen insbesondere
+                dann, wenn
+
+                a.   eine Sachverhaltsdokumentation fehlt oder ein unzutreffender Sachverhalt dar-
+                     gestellt wird (verbunden mit erheblichen Auswirkungen auf das Funktions- und
+                     Risikoprofil, z. B. Entrepreneur wird als Routineunternehmen beschrieben,
+                     Beschreibung der vertraglichen Situation anstelle des tatsächlich abweichend
+                     Verwirklichten),
+                b.   eine Angemessenheitsdokumentation fehlt oder die vorgelegten Fremddaten nicht
+                     zum Funktions- und Risikoprofil passen,
+                c.   die Angemessenheitsanalyse keine hinreichende Begründung der Vergleichbarkeit
+                     der verwendeten Fremddaten (z. B. Fremdpreise oder Fremdunternehmen) enthält
+                     (Vergleichbarkeitsanalyse, Tz. 3.1 ff. OECD-Verrechnungspreisleitlinien 2017),
+                     oder
+                d.   die Anwendung der gewählten Verrechnungspreismethode nicht dargestellt wird.
+
+                Aufzeichnungen sind nicht deshalb in jedem Fall im Wesentlichen unverwertbar, weil
+                sich die Angemessenheitsdokumentation auf eine geringe Anzahl von Fremd-
+                vergleichsdaten stützt. Für die Entscheidung im Allgemeinen kommt es nicht auf die
+                Quantität der vorgelegten Aufzeichnungen, sondern auf ihre Qualität an. Die Unvoll-
+                ständigkeit oder Fehlerhaftigkeit von Aufzeichnungen in einzelnen Punkten allein
+                führt regelmäßig nicht dazu, dass Aufzeichnungen im Wesentlichen unverwertbar
+                sind.
+
+           83   Von einer Entscheidung über die Verwertbarkeit bestimmter Aufzeichnungen sind die
+                Aufzeichnungen zu anderen Prüfungsgegenständen nicht betroffen.
+
+           84   Stellt die Finanzbehörde fest, dass Aufzeichnungen im Wesentlichen unverwertbar
+                sind, hat sie den Steuerpflichtigen unverzüglich darauf hinzuweisen und ihm
+                Gelegenheit zur Nachbesserung zu geben. Unabhängig davon ist im Einzelfall zu
+                prüfen, ob es der Finanzbehörde möglich und zumutbar ist, die Verwertbarkeit ohne
+                weitere Mitwirkung des Steuerpflichtigen herbeizuführen, um Steuerzuschläge zu
+                vermeiden oder so gering wie möglich zu halten (Verhältnismäßigkeitsgrundsatz).
+Seite 23   85   Die Rechtsfolgen der Verletzung der Aufzeichnungspflicht nach § 90 Abs. 3 Satz 1
+                und 2 AO treten gemäß § 162 Abs. 3 und 4 AO geschäftsvorfallbezogen ein. Damit
+                lösen die nicht zeitnah erfolgte Aufzeichnung eines außergewöhnlichen Geschäfts-
+                vorfalls, die Nichtvorlage von Aufzeichnungen oder die Unverwertbarkeit von
+                Aufzeichnungen über einen Geschäftsvorfall keine Rechtsfolgen bezüglich anderer
+                Geschäftsvorfälle aus. Die grundsätzlich zulässige Zusammenfassung von Geschäfts-
+                vorfällen ist zu beachten (§ 3 GAufzV). Kommt der Steuerpflichtige dem Ergänzungs-
+                verlangen der Finanzbehörde entsprechend § 90 Abs. 3 Satz 10 AO (Rn. 66) nicht
+                nach oder sind die dann vorgelegten Aufzeichnungen im Wesentlichen unverwertbar,
+                greifen § 162 Abs. 3 und 4 AO ebenfalls geschäftsvorfallbezogen. § 162 Abs. 3 und
+                4 AO gelten nicht für die Aufzeichnungspflicht nach § 90 Abs. 3 Satz 3 AO.
+
+           86   Wird wegen der in § 162 Abs. 3 Satz 1 AO genannten Verstöße des Steuerpflichtigen
+                eine Schätzung nach § 162 Abs. 3 Satz 2 AO notwendig und hat die Finanzbehörde
+                einen Schätzungsrahmen festgestellt, kann sie diesen Rahmen zu Lasten des Steuer-
+                pflichtigen ausschöpfen.
+
+           87   Eine Schätzung kann in einem sich anschließenden Verständigungs- oder Schieds-
+                verfahren (EU) überprüft und berichtigt werden. Dem Steuerpflichtigen obliegt es
+                dabei jedoch, durch die Darlegung seiner Verhältnisse, Bezeichnung und ggf.
+                Beibringung seiner Beweisunterlagen zu dem Verfahren beizutragen.
+
+           88   § 162 Abs. 3 und 4 sind auch anwendbar, wenn der Steuerpflichtige die Voraus-
+                setzungen des § 6 GAufzV erfüllt, aber seine hieraus resultierenden Pflichten verletzt.
+
+           89   Bei der Festsetzung und der rechtlichen Beurteilung des Zuschlags ist Folgendes zu
+                beachten:
+
+                a. Der Zuschlag ist eine steuerliche Nebenleistung gemäß § 3 Abs. 4 AO, der auf die
+                   Einkommen- bzw. Körperschaftsteuer entfällt. Er ist nicht abzugsfähig
+                   (§ 12 Nr. 3 EStG und § 10 Nr. 2 KStG).
+                b. Die Festsetzung eines Zuschlags nach § 162 Abs. 4 AO schließt weder die Fest-
+                   setzung eines Verspätungszuschlags (§ 152 AO) noch die Durchführung eines
+                   Straf- oder Ordnungswidrigkeitsverfahrens (§§ 369 ff. AO) aus.
+                c. Der Zuschlag kann gegen jeden durch § 90 Abs. 3 AO Verpflichteten festgesetzt
+                   werden, von dem die Finanzbehörde die Vorlage der Aufzeichnungen verlangt hat,
+                   auf die sich § 162 Abs. 4 Satz 1 AO bezieht, nicht aber für denselben Sachverhalt
+                   doppelt, z. B. gegen eine Personengesellschaft und gegen die an ihr beteiligten
+                   Gesellschafter, wenn Aufzeichnungen für denselben Sachverhalt sowohl von der
+Seite 24           Personengesellschaft als auch von deren Gesellschaftern angefordert worden sind.
+                   In solchen Fällen besteht ein Gesamtschuldverhältnis im Sinne des § 44 AO.
+                d. Der Zuschlag ist einheitlich für jeden Veranlagungszeitraum, für den Aufzeich-
+                   nungen angefordert wurden, festzusetzen. Die Anforderung kann sich z. B. auf
+                   Aufzeichnungen für das von der Finanzbehörde ausgewählte Prüfungsfeld und
+                   letztlich auf Aufzeichnungen für einen einzelnen (z. B. außergewöhnlichen)
+                   Geschäftsvorfall beziehen. Die grundsätzlich zulässige Zusammenfassung von
+                   Geschäftsvorfällen ist zu beachten (§ 3 GAufzV). Deswegen kann der Zuschlag
+                   nebeneinander und jeweils in Bezug zu verschiedenen Anforderungen der Finanz-
+                   behörde auf mehreren Pflichtverletzungen beruhen: auf der Nichtvorlage von
+                   Aufzeichnungen, auf der Vorlage unverwertbarer Aufzeichnungen, auf der
+                   verspäteten Vorlage verwertbarer Aufzeichnungen. Die Zusammensetzung des
+                   Zuschlags ist bei der Festsetzung jeweils im Einzelnen darzulegen. Die Ermessens-
+                   ausübung ist jeweils zu begründen. Dabei sind vor allem das Verschulden des
+                   Steuerpflichtigen, die Dauer der Fristüberschreitung und insbesondere die vom
+                   Steuerpflichtigen gezogenen Vorteile zu berücksichtigen.
+                e. Soweit ein nach § 162 Abs. 4 Satz 1 und 2 AO festgesetzter Zuschlag darauf
+                   beruht, dass der Steuerpflichtige in einer Außenprüfung keine bzw. nur im Wesent-
+                   lichen unverwertbare Aufzeichnungen vorgelegt hat und dass eine Einkünfte-
+                   erhöhung aufgrund einer rechtmäßigen Schätzung nach § 162 Abs. 3 AO vorge-
+                   nommen wurde, können im Rahmen der §§ 130 ff. AO Änderungen des Zuschlags
+                   möglich sein, wenn die betreffenden Einkünfte in einem Rechtsbehelfsverfahren, in
+                   einem Verständigungsverfahren oder in einem Schiedsverfahren (EU) niedriger
+                   angesetzt werden als aufgrund der Außenprüfung. Eine Änderung des Zuschlags
+                   (Neuberechnung) kommt in diesen Fällen nur in Betracht, soweit der Steuer-
+                   pflichtige verwertbare Aufzeichnungen vorlegt. Werden in den genannten
+                   Verfahren nachträglich verwertbare Aufzeichnungen vorgelegt, ist der Zuschlag als
+                   solcher aufgrund des § 162 Abs. 4 Satz 3 und 4 AO wegen verspäteter Vorlage neu
+                   zu berechnen, wenn im Rahmen der §§ 130 ff. AO Änderungen des Zuschlags
+                   möglich sind.
+                f. Der Zuschlag nach § 162 Abs. 4 Satz 3 AO wegen verspäteter Vorlage kann höher
+                   sein als der Zuschlag nach § 162 Abs. 4 Satz 1 AO bei einer Nichtvorlage oder
+                   einer Vorlage im Wesentlichen unverwertbarer Unterlagen.
+
+           90   § 162 Abs. 4 Satz 1 bis 3 AO sind nicht anwendbar, wenn die Nichterfüllung der
+                Pflichten nach § 90 Abs. 3 AO entschuldbar erscheint oder nur ein geringfügiges
+                Verschulden vorliegt. Ein solcher Fall kann z. B. vorliegen, wenn Aufzeichnungen
+                deswegen erst nach Ablauf der 60-Tage-Frist in deutscher Sprache vorgelegt werden,
+                weil die Finanzbehörde nach Anforderung der Aufzeichnungen nicht unverzüglich
+Seite 25          über einen Antrag auf Erstellung und Vorlage in fremder Sprache entschieden hat oder
+                  höhere Gewalt es dem Steuerpflichtigen unmöglich gemacht hat, seine Pflichten
+                  rechtzeitig zu erfüllen.
+
+
+           3. Aufhebung von Verwaltungsregelungen
+
+           91     Das BMF-Schreiben vom 12. April 2005 (IV B 4 - S 1341 - 1/05; BStBl 2005 I
+                  S. 570) ist weiterhin anzuwenden, soweit nicht Fragen der Anwendung der §§ 90
+                  und 162 AO betroffen sind. Dies gilt insbesondere bezüglich der Textziffern
+                  a. 1 (entsprechende Anwendung des BMF-Schreibens auf Betriebsstätten),
+                  b. 2 (Pflichten der Finanzbehörden),
+                  c. 3.4.10.2 (Unternehmenscharakterisierung und Verrechnungspreisbildung),
+                  d. 3.4.10.3 (Verrechnungspreismethoden),
+                  e. 3.4.12.5 (Bandbreiten und ihre Einengung),
+                  f. 3.4.12.7 (Vergleichbarkeit),
+                  g. 3.4.12.8 (Nachträgliche Preisfestlegungen bzw. -anpassungen),
+                  h. 3.4.12.9 (Mehrjahresanalysen),
+                  i. 5 (Durchführung von Berichtigungen und ihre steuerliche Behandlung),
+                  j. 6 (Abwicklung von Verrechnungspreisberichtigungen und Verständigungs- bzw.
+                     Schiedsverfahren) und
+                  k. 7 (Aufhebung von Verwaltungsregelungen).
+
+           Dieses Schreiben wird im Bundessteuerblatt Teil I veröffentlicht. Es steht ab sofort auf den
+           Internetseiten des Bundesministeriums der Finanzen zum Herunterladen bereit.
+
+           Im Auftrag
+

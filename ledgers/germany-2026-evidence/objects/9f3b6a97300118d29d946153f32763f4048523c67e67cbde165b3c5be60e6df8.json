@@ -1,0 +1,26 @@
+[
+  {
+    "before": "version: 1.3\n",
+    "after": "version: 1.4\n"
+  },
+  {
+    "before": "Rules are as for 2026, except the commuting allowance, which rose for 2026 (check the 2025 rate).",
+    "after": "Rules are as for 2026, except the commuting allowance: if a first place of activity applies, the 2025 rate was EUR 0.30 per full one-way kilometre for the first 20 km and EUR 0.38 for each further kilometre (2025 instructions); from 2026 it is EUR 0.38 from the first kilometre."
+  },
+  {
+    "before": "The ELSTER instructions for 2026 were empty when read on 24 October 2026.",
+    "after": "The ELSTER 2026 instructions route returned no substantive content in the recorded 24 October 2026 check; this does not establish whether the instructions were published."
+  },
+  {
+    "before": "Check the 2026 form when published.",
+    "after": "Confirm the relevant 2026 form before using these line numbers."
+  },
+  {
+    "before": "the 2026 Anlage V form and instructions (not published on 24 October 2026; line numbers are from 2025); any BMF update to the letter of 8 October 2004 after the 2024 handbook (the 2025 handbook was not online on 24 October 2026);",
+    "after": "the 2026 Anlage V form and instructions (the recorded route returned no substantive content; line numbers are from 2025); any BMF update to the letter of 8 October 2004 after the retained 2024 handbook (the checked 2025 handbook route remained inaccessible);"
+  },
+  {
+    "before": "heirs under § 23(1) sentence 3; the 2025 commuting allowance rate; treaty treatment",
+    "after": "heirs under § 23(1) sentence 3; treaty treatment"
+  }
+]

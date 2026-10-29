@@ -1,0 +1,1764 @@
+[
+  {
+    "id": "001",
+    "prior_row_id": 1,
+    "prior_native_LF": [
+      3,
+      3
+    ],
+    "native_LF": [
+      3,
+      3
+    ],
+    "section": "Scope/metadata",
+    "wording": "description: \"German payroll benefits for 2026: how an employer values and taxes benefits in kind on the payslip. Covers the EUR 50 monthly limit for benefits in kind and vouchers, company cars (1% rule, 0.03% commute charge, a quarter or a half of the list price for electric and plug-in hybrid cars, the EUR 100,000 price cap, the logbook method, user charges), meals and lodging at the 2026 official values, the 30% flat tax of § 37b EStG and the 15%, 20% and 25% flat taxes of §§ 40 and 40b, tax-free items (public transport tickets, childcare, health promotion, bikes, charging, devices, employee shares), employer pensions (8% and 4% limits, the § 100 subsidy, salary sacrifice and the 15% top-up), and the social insurance status of managing directors with the DRV status procedure. Trigger on: Sachbezug, geldwerter Vorteil, Dienstwagen, 1%-Regelung, Fahrtenbuch, Sachbezugswerte 2026, 37b, Pauschalsteuer, Jobticket, bAV, Entgeltumwandlung, Gesellschafter-Geschäftsführer, Statusfeststellung. Out of scope: the wage tax and contribution run itself (de-payroll), the employee's annual return (de-employee-income-tax), self-employed contributions (de-social-contributions).\"",
+    "source_quote_ids": [
+      "B.PB.market-and-special",
+      "B.PB.cars",
+      "B.PB.lowearner",
+      "B.PB.salarysacrifice"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "002",
+    "prior_row_id": 2,
+    "prior_native_LF": [
+      23,
+      23
+    ],
+    "native_LF": [
+      23,
+      23
+    ],
+    "section": "Who this applies to",
+    "wording": "- **In.** Any employer that runs German payroll (wage tax under § 38 EStG) and gives employees anything other than cash pay: goods, services, vouchers, a car, meals, lodging, gifts, event costs, pension contributions. It also covers the employer's choice to pay a flat tax on a benefit instead of taxing it through the employee's tax class.",
+    "source_quote_ids": [
+      "B.PB.wagetax",
+      "B.PB.market-and-special"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "003",
+    "prior_row_id": 3,
+    "prior_native_LF": [
+      24,
+      24
+    ],
+    "native_LF": [
+      24,
+      24
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Benefits in kind are pay.** Income includes everything received in money or money's worth (§ 8(1) EStG). Non-cash income is valued at the usual end price at the place of supply, less usual discounts (§ 8(2) sentence 1 EStG), unless a special rule below applies.",
+    "source_quote_ids": [
+      "B.PB.income",
+      "B.PB.market-and-special"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "004",
+    "prior_row_id": 4,
+    "prior_native_LF": [
+      25,
+      25
+    ],
+    "native_LF": [
+      25,
+      25
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Social insurance follows tax, with exceptions.** The social insurance value of a benefit is set by the Sozialversicherungsentgeltverordnung (SvEV). Many tax-free or flat-taxed items are also free of contributions, but only if the payroll leaves them tax-free or flat-taxed in the pay period they belong to (§ 1(1) last sentences SvEV).",
+    "source_quote_ids": [
+      "B.PB.sv-taxfree",
+      "B.PB.sv-period"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "005",
+    "prior_row_id": 5,
+    "prior_native_LF": [
+      26,
+      26
+    ],
+    "native_LF": [
+      26,
+      26
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Managing directors.** A GmbH managing director is an employee for wage tax. Whether they are also an insured employee for social insurance depends on the status test in § 7(1) SGB IV, covered below.",
+    "source_quote_ids": [
+      "B.PB.wagetax",
+      "B.PB.employment"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "006",
+    "prior_row_id": 6,
+    "prior_native_LF": [
+      27,
+      27
+    ],
+    "native_LF": [
+      27,
+      27
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Out.** Gifts to non-employees are in only as far as § 37b EStG lets the giver pay a flat tax on them. Pensions in payment, severance pay and share option plans of listed groups are not covered.",
+    "source_quote_ids": [
+      "B.PB.37b"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "007",
+    "prior_row_id": 7,
+    "prior_native_LF": [
+      33,
+      33
+    ],
+    "native_LF": [
+      33,
+      33
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Benefits in kind valued at market price: tax-free if the total net benefit is not more than this a month (a cliff, not an allowance); vouchers count only if given on top of pay owed (EStG § 8(2) sentence 11) | EUR 50 a month | 2026 | https://www.gesetze-im-internet.de/estg/__8.html |",
+    "source_quote_ids": [
+      "B.PB.market-and-special",
+      "B.PB.additional"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "008",
+    "prior_row_id": 8,
+    "prior_native_LF": [
+      34,
+      34
+    ],
+    "native_LF": [
+      34,
+      34
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Qualifying staff discount under § 8(3): goods/services not predominantly produced, distributed or provided for staff and not flat-taxed under § 40; applicable public end price less 4%, less employee payment, then remaining annual allowance | 4% markdown; EUR 1,080 a year in aggregate | 2026 | https://www.gesetze-im-internet.de/estg/__8.html |",
+    "source_quote_ids": [
+      "B.PB.staffdiscount",
+      "R79.staffdiscount"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "009",
+    "prior_row_id": 9,
+    "prior_native_LF": [
+      35,
+      35
+    ],
+    "native_LF": [
+      35,
+      35
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Company car, private use (EStG § 8(2) sentence 2 with § 6(1) no. 4 sentence 2) | 1% of the gross list price a month | 2026 | https://www.gesetze-im-internet.de/estg/__6.html |",
+    "source_quote_ids": [
+      "B.PB.cars",
+      "B.PB.market-and-special"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "010",
+    "prior_row_id": 10,
+    "prior_native_LF": [
+      36,
+      36
+    ],
+    "native_LF": [
+      36,
+      36
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Company car, home to first place of work (EStG § 8(2) sentence 3) | 0.03% of the list price per km of one-way distance a month | 2026 | https://www.gesetze-im-internet.de/estg/__8.html |",
+    "source_quote_ids": [
+      "B.PB.market-and-special"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "011",
+    "prior_row_id": 11,
+    "prior_native_LF": [
+      37,
+      37
+    ],
+    "native_LF": [
+      37,
+      37
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Company car, home trips in a double household for which the deduction specified in § 9(1) no. 5 sentences 5 and 6 would not be available; the deductible-trip exception and corresponding logbook alternative apply (EStG § 8(2) sentence 5) | 0.002% of the list price per km per trip | 2026 | https://www.gesetze-im-internet.de/estg/__8.html |",
+    "source_quote_ids": [
+      "B.PB.market-and-special",
+      "R78.car"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "012",
+    "prior_row_id": 12,
+    "prior_native_LF": [
+      38,
+      38
+    ],
+    "native_LF": [
+      38,
+      38
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Electric car with zero CO2, bought 1 Jan 2019 to 31 Dec 2030, gross list price not over the cap: list price counted at (EStG § 6(1) no. 4 sentence 2 no. 3) | one quarter | 2026 | https://www.gesetze-im-internet.de/estg/__6.html |",
+    "source_quote_ids": [
+      "B.PB.cars"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "013",
+    "prior_row_id": 13,
+    "prior_native_LF": [
+      39,
+      39
+    ],
+    "native_LF": [
+      39,
+      39
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Price cap for the quarter rate: cars bought after 30 June 2025 (EStG § 6(1) no. 4 sentence 2 no. 3; § 52(12) sentence 6) | EUR 100,000 | 2026 | https://www.gesetze-im-internet.de/estg/__52.html |",
+    "source_quote_ids": [
+      "B.PB.cardates",
+      "B.PB.cars"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "014",
+    "prior_row_id": 14,
+    "prior_native_LF": [
+      40,
+      40
+    ],
+    "native_LF": [
+      40,
+      40
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Price cap for the quarter rate: cars bought 1 Jan 2024 to 30 June 2025 (Wachstumschancengesetz art. 3; § 52(12) sentence 5) | EUR 70,000 | 2026 | https://www.recht.bund.de/bgbl/1/2024/108/VO.html |",
+    "source_quote_ids": [
+      "B.PB.car70enacted",
+      "B.PB.cardates"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "015",
+    "prior_row_id": 15,
+    "prior_native_LF": [
+      41,
+      41
+    ],
+    "native_LF": [
+      41,
+      41
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Price cap for the quarter rate: cars bought 1 Jan 2019 to 31 Dec 2023 (EStG § 52(12) sentence 4; BMF letter of 5 November 2021, BStBl I p. 2205, Rn. 11) | EUR 60,000 | 2026 | https://lsth.bundesfinanzministerium.de/lsth/2026/B-Anhaenge/Anhang-24/IV/IV-6/anhang-24-IV-6.html |",
+    "source_quote_ids": [
+      "B.PB.oldcarcaps"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "016",
+    "prior_row_id": 16,
+    "prior_native_LF": [
+      42,
+      42
+    ],
+    "native_LF": [
+      42,
+      42
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Electric car over the cap, or plug-in hybrid with at most 50 g CO2/km or at least 80 km electric range, bought 1 Jan 2025 to 31 Dec 2030 (EStG § 6(1) no. 4 sentence 2 no. 5) | one half | 2026 | https://www.gesetze-im-internet.de/estg/__6.html |",
+    "source_quote_ids": [
+      "B.PB.cars"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "017",
+    "prior_row_id": 17,
+    "prior_native_LF": [
+      43,
+      43
+    ],
+    "native_LF": [
+      43,
+      43
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Electric car over the cap, or plug-in hybrid with at most 50 g CO2/km or at least 60 km range, bought 1 Jan 2022 to 31 Dec 2024 (EStG § 6(1) no. 4 sentence 2 no. 4) | one half | 2026 | https://www.gesetze-im-internet.de/estg/__6.html |",
+    "source_quote_ids": [
+      "B.PB.cars"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "018",
+    "prior_row_id": 18,
+    "prior_native_LF": [
+      44,
+      44
+    ],
+    "native_LF": [
+      44,
+      44
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Electric car over the cap, or plug-in hybrid with at most 50 g CO2/km or at least 40 km range, bought 1 Jan 2019 to 31 Dec 2021 (EStG § 6(1) no. 4 sentence 2 no. 2 with § 3(2) EmoG; BMF letter of 5 November 2021, Rn. 11) | one half | 2026 | https://www.gesetze-im-internet.de/estg/__6.html |",
+    "source_quote_ids": [
+      "B.PB.oldcar40",
+      "B.PB.cars"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "019",
+    "prior_row_id": 19,
+    "prior_native_LF": [
+      45,
+      45
+    ],
+    "native_LF": [
+      45,
+      45
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| List price for the 1%, 0.03% and 0.002% rules: rounded down to the full EUR 100, after any quarter or half is applied (R 8.1(9) no. 1 sentence 6 LStR; BMF letter of 5 November 2021, Rn. 12) | full EUR 100 | 2026 | https://lsth.bundesfinanzministerium.de/lsth/2026/A-Einkommensteuergesetz/II-Einkommen-2-24b/4-Ueberschuss-d-Einnahmen-ueber-die-Werbungsk-8-9a/Paragraf-8/r-8-1-9.html |",
+    "source_quote_ids": [
+      "B.PB.caradmin",
+      "B.PB.oldcarcaps"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "020",
+    "prior_row_id": 20,
+    "prior_native_LF": [
+      46,
+      46
+    ],
+    "native_LF": [
+      46,
+      46
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Meals provided as benefit in kind, monthly (SvEV § 2(1)) | EUR 345: breakfast 71, lunch 137, dinner 137 | 2026 | https://www.gesetze-im-internet.de/svev/__2.html |",
+    "source_quote_ids": [
+      "B.PB.meals"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "021",
+    "prior_row_id": 21,
+    "prior_native_LF": [
+      47,
+      47
+    ],
+    "native_LF": [
+      47,
+      47
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Single meal (one thirtieth of the monthly value, rounded to the cent, SvEV § 2(6)) | breakfast EUR 2.37; lunch or dinner EUR 4.57 | 2026 | https://www.gesetze-im-internet.de/svev/__2.html |",
+    "source_quote_ids": [
+      "B.PB.meals",
+      "B.PB.lodging"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "022",
+    "prior_row_id": 22,
+    "prior_native_LF": [
+      48,
+      48
+    ],
+    "native_LF": [
+      48,
+      48
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Lodging, unreduced full month; apply the statutory reductions/daily rule below (SvEV § 2(3)); exceptional dwelling proxy only where finding local rent presents extraordinary difficulties (SvEV § 2(4)) | EUR 285; EUR 5.01 per m2 (EUR 4.10 basic) | 2026 | https://www.gesetze-im-internet.de/svev/__2.html |",
+    "source_quote_ids": [
+      "B.PB.lodging",
+      "R80.lodging"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "023",
+    "prior_row_id": 23,
+    "prior_native_LF": [
+      49,
+      49
+    ],
+    "native_LF": [
+      49,
+      49
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Meal on a business trip valued at the official value if its price is not over (EStG § 8(2) sentence 8) | EUR 60 | 2026 | https://www.gesetze-im-internet.de/estg/__8.html |",
+    "source_quote_ids": [
+      "B.PB.market-and-special"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "024",
+    "prior_row_id": 24,
+    "prior_native_LF": [
+      50,
+      50
+    ],
+    "native_LF": [
+      50,
+      50
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Employer-provided flat: no benefit if the rent paid is at least two thirds of local rent and local rent is not over (EStG § 8(2) sentence 12) | EUR 25 per m2 | 2026 | https://www.gesetze-im-internet.de/estg/__8.html |",
+    "source_quote_ids": [
+      "B.PB.market-and-special"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "025",
+    "prior_row_id": 25,
+    "prior_native_LF": [
+      51,
+      51
+    ],
+    "native_LF": [
+      51,
+      51
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Flat tax on non-cash gifts and incentives (EStG § 37b(1), (2)); capped at EUR 10,000 per recipient a year, excluded for a single gift over EUR 10,000 | 30% | 2026 | https://www.gesetze-im-internet.de/estg/__37b.html |",
+    "source_quote_ids": [
+      "B.PB.37b",
+      "B.PB.37bcaps"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "026",
+    "prior_row_id": 26,
+    "prior_native_LF": [
+      52,
+      52
+    ],
+    "native_LF": [
+      52,
+      52
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Subject to the precise gates below: flat tax on canteen meals, trip meals, staff events, recreation grants, devices, chargers, bikes given outright (EStG § 40(2) sentence 1) | 25% | 2026 | https://www.gesetze-im-internet.de/estg/__40.html |",
+    "source_quote_ids": [
+      "B.PB.40benefits",
+      "R82.40",
+      "R82.events"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "027",
+    "prior_row_id": 27,
+    "prior_native_LF": [
+      53,
+      53
+    ],
+    "native_LF": [
+      53,
+      53
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Recreation grants, flat tax limit a year (EStG § 40(2) sentence 1 no. 3) | EUR 156 employee, EUR 104 spouse, EUR 52 per child | 2026 | https://www.gesetze-im-internet.de/estg/__40.html |",
+    "source_quote_ids": [
+      "B.PB.40benefits"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "028",
+    "prior_row_id": 28,
+    "prior_native_LF": [
+      54,
+      54
+    ],
+    "native_LF": [
+      54,
+      54
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Commuting subsidies or car commute benefit (EStG § 40(2) sentence 2 no. 1); public transport instead of tax-free (no. 2) | 15%; 25% | 2026 | https://www.gesetze-im-internet.de/estg/__40.html |",
+    "source_quote_ids": [
+      "B.PB.40benefits"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "029",
+    "prior_row_id": 29,
+    "prior_native_LF": [
+      55,
+      55
+    ],
+    "native_LF": [
+      55,
+      55
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Flat tax on a larger number of one-off payments at an average rate, on application; excluded above (EStG § 40(1)) | EUR 1,000 per employee a year | 2026 | https://www.gesetze-im-internet.de/estg/__40.html |",
+    "source_quote_ids": [
+      "B.PB.40average"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "030",
+    "prior_row_id": 30,
+    "prior_native_LF": [
+      56,
+      56
+    ],
+    "native_LF": [
+      56,
+      56
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Staff event: allowance per event and attending employee (companions' share included), for up to two events a year, if open to all staff of the business or a business unit (EStG § 19(1) no. 1a) | EUR 110 | 2026 | https://www.gesetze-im-internet.de/estg/__19.html |",
+    "source_quote_ids": [
+      "B.PB.events",
+      "R82.40",
+      "R82.events"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "031",
+    "prior_row_id": 31,
+    "prior_native_LF": [
+      57,
+      57
+    ],
+    "native_LF": [
+      57,
+      57
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Solidarity surcharge on flat wage tax (SolzG §§ 3, 4) | 5.5% | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__4.html |",
+    "source_quote_ids": [
+      "B.Soli.rate"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "032",
+    "prior_row_id": 32,
+    "prior_native_LF": [
+      58,
+      58
+    ],
+    "native_LF": [
+      58,
+      58
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Tax-free: health promotion meeting SGB V §§ 20, 20b (EStG § 3 no. 34) | EUR 600 a year | 2026 | https://www.gesetze-im-internet.de/estg/__3.html |",
+    "source_quote_ids": [
+      "B.PB.childcare-health"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "033",
+    "prior_row_id": 33,
+    "prior_native_LF": [
+      59,
+      59
+    ],
+    "native_LF": [
+      59,
+      59
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Tax-free: employee shares in the employer (EStG § 3 no. 39) | EUR 2,000 a year | 2026 | https://www.gesetze-im-internet.de/estg/__3.html |",
+    "source_quote_ids": [
+      "B.PB.employeeshares"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "034",
+    "prior_row_id": 34,
+    "prior_native_LF": [
+      60,
+      60
+    ],
+    "native_LF": [
+      60,
+      60
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Pension ceiling (general pension insurance), base for the bAV limits (SVBezGrV 2026 § 4(1) no. 1) | EUR 101,400 a year | 2026 | https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3 |",
+    "source_quote_ids": [
+      "B.PB.pensionceiling"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "035",
+    "prior_row_id": 35,
+    "prior_native_LF": [
+      61,
+      61
+    ],
+    "native_LF": [
+      61,
+      61
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| bAV: qualifying ordinary annual first-employment contributions, subject to the payout/election and special-route conditions below; employer contributions to Pensionsfonds, Pensionskasse or Direktversicherung tax-free (EStG § 3 no. 63) | 8% of the ceiling = EUR 8,112 | 2026 | https://www.gesetze-im-internet.de/estg/__3.html |",
+    "source_quote_ids": [
+      "B.PB.pensiontaxfree",
+      "B.PB.pensionceiling",
+      "R84.63",
+      "R84.56"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "036",
+    "prior_row_id": 36,
+    "prior_native_LF": [
+      62,
+      62
+    ],
+    "native_LF": [
+      62,
+      62
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| bAV: contribution-free part of those contributions (SvEV § 1(1) no. 9) | 4% of the ceiling = EUR 4,056 | 2026 | https://www.gesetze-im-internet.de/svev/__1.html |",
+    "source_quote_ids": [
+      "B.PB.sv-pension",
+      "B.PB.pensionceiling"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "037",
+    "prior_row_id": 37,
+    "prior_native_LF": [
+      63,
+      63
+    ],
+    "native_LF": [
+      63,
+      64
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| bAV: qualifying ordinary annual first-employment unfunded Pensionskasse, tax-free (EStG § 3 no. 56), less amounts exempt under § 3 no. 63 sentences 1, 3 or 4 | 4% of the ceiling = EUR 4,056 | 2026 | https://www.gesetze-im-internet.de/estg/__3.html |\n| bAV: ordinary individual first-employment Pensionskasse flat-tax limit, subject to the pooled/special termination rules below (EStG § 40b(1), (2)) | 20%; EUR 1,752 a year | 2026 | https://www.gesetze-im-internet.de/estg/__40b.html |",
+    "source_quote_ids": [
+      "B.PB.unfunded",
+      "B.PB.pensionceiling",
+      "R84.63",
+      "R84.56",
+      "R84.40b"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "038",
+    "prior_row_id": 38,
+    "prior_native_LF": [
+      64,
+      64
+    ],
+    "native_LF": [
+      63,
+      64
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| bAV: qualifying ordinary annual first-employment unfunded Pensionskasse, tax-free (EStG § 3 no. 56), less amounts exempt under § 3 no. 63 sentences 1, 3 or 4 | 4% of the ceiling = EUR 4,056 | 2026 | https://www.gesetze-im-internet.de/estg/__3.html |\n| bAV: ordinary individual first-employment Pensionskasse flat-tax limit, subject to the pooled/special termination rules below (EStG § 40b(1), (2)) | 20%; EUR 1,752 a year | 2026 | https://www.gesetze-im-internet.de/estg/__40b.html |",
+    "source_quote_ids": [
+      "B.PB.40b",
+      "R84.63",
+      "R84.56",
+      "R84.40b"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "039",
+    "prior_row_id": 39,
+    "prior_native_LF": [
+      65,
+      65
+    ],
+    "native_LF": [
+      65,
+      65
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| bAV subsidy for low earners: 30% of the employer's extra contribution of at least EUR 240, capped (EStG § 100(2), (3)) | max EUR 288 a year | 2026 | https://www.gesetze-im-internet.de/estg/__100.html |",
+    "source_quote_ids": [
+      "B.PB.lowearner"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "040",
+    "prior_row_id": 40,
+    "prior_native_LF": [
+      66,
+      66
+    ],
+    "native_LF": [
+      66,
+      66
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 100 pay limit at the time of the contribution (EStG § 100(3) no. 3) | EUR 2,575 a month; EUR 30,900 a year | 2026 | https://www.gesetze-im-internet.de/estg/__100.html |",
+    "source_quote_ids": [
+      "B.PB.lowearner"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "041",
+    "prior_row_id": 41,
+    "prior_native_LF": [
+      67,
+      67
+    ],
+    "native_LF": [
+      67,
+      67
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 100 contribution tax-free up to (EStG § 100(6)) | EUR 960 a year | 2026 | https://www.gesetze-im-internet.de/estg/__100.html |",
+    "source_quote_ids": [
+      "B.PB.lowearnerexempt"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "042",
+    "prior_row_id": 42,
+    "prior_native_LF": [
+      68,
+      68
+    ],
+    "native_LF": [
+      68,
+      68
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 100 from 1 January 2027: subsidy max EUR 360, tax-free up to EUR 1,200, pay limit 3% of the monthly pension ceiling (Zweites Betriebsrentenstärkungsgesetz, BGBl. 2026 I No. 14, art. 2 no. 2, art. 18(4)) | EUR 360; EUR 1,200 | 2027 | https://www.recht.bund.de/bgbl/1/2026/14/VO.html |",
+    "source_quote_ids": [
+      "B.PB.subsidy2027",
+      "B.PB.subsidycommencement"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "043",
+    "prior_row_id": 43,
+    "prior_native_LF": [
+      69,
+      69
+    ],
+    "native_LF": [
+      69,
+      69
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Salary sacrifice: employee right up to 4% of the ceiling; employer top-up where it saves contributions (BetrAVG § 1a(1), (1a)) | 4% = EUR 4,056; top-up 15% | 2026 | https://www.gesetze-im-internet.de/betravg/__1a.html |",
+    "source_quote_ids": [
+      "B.PB.salarysacrifice",
+      "B.PB.pensionceiling"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "044",
+    "prior_row_id": 44,
+    "prior_native_LF": [
+      73,
+      73
+    ],
+    "native_LF": [
+      73,
+      73
+    ],
+    "section": "The taxable base",
+    "wording": "**The EUR 50 limit.** Benefits valued at market price under § 8(2) sentence 1 EStG stay out of pay if the total net benefit in the month is not over EUR 50. It is a cliff: at EUR 50.01 the whole amount is taxable. Benefits valued by a special rule (company car, official meal values, staff discounts under § 8(3)) do not count toward it and cannot use it. Vouchers and cash cards that only buy goods or services and meet the payment-services criteria count as benefits in kind, but only if given on top of the pay already owed (§ 8(1) sentence 3 and § 8(2) sentence 11 EStG). \"On top of pay owed\" means no offset against pay, no pay cut in exchange, not instead of an agreed raise, and no pay rise if the benefit stops (§ 8(4) EStG). The same EUR 50 limit applies for contributions (§ 3(1) SvEV).",
+    "source_quote_ids": [
+      "B.PB.market-and-special",
+      "B.PB.additional",
+      "B.PB.sv-otherbenefits"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "045",
+    "prior_row_id": 45,
+    "prior_native_LF": [
+      76,
+      76
+    ],
+    "native_LF": [
+      78,
+      78
+    ],
+    "section": "The taxable base",
+    "wording": "- **1% rule.** Private use is 1% of the domestic gross list price at first registration, plus factory extras, including VAT, each month (§ 6(1) no. 4 sentence 2 with § 8(2) sentence 2 EStG). The list price is used even for a used or leased car. It is rounded down to the full EUR 100; a car phone and a second set of tyres are left out. The full monthly amounts apply even if the car is available for only part of the month or not used (R 8.1(9) no. 1 sentences 4 and 6 LStR).",
+    "source_quote_ids": [
+      "B.PB.cars",
+      "B.PB.caradmin"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "046",
+    "prior_row_id": 46,
+    "prior_native_LF": [
+      77,
+      77
+    ],
+    "native_LF": [
+      79,
+      79
+    ],
+    "section": "The taxable base",
+    "wording": "- **Commute.** If the car can also be used between home and the first place of work, add 0.03% of the list price per km of one-way distance each month (§ 8(2) sentence 3 EStG). The tax authority accepts, instead, 0.002% per km for each actual commuting day, for at most 180 days a year, if the employee declares the dates each month in writing; the employer keeps the declarations with the payroll records (BMF letter of 3 March 2022, BStBl I p. 232).",
+    "source_quote_ids": [
+      "B.PB.market-and-special",
+      "B.PB.carcommute"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "047",
+    "prior_row_id": 47,
+    "prior_native_LF": [
+      78,
+      78
+    ],
+    "native_LF": [
+      80,
+      80
+    ],
+    "section": "The taxable base",
+    "wording": "- **Electric and hybrid cars.** For a zero-emission electric car bought from 2019 to 2030 with a gross list price not over the cap, only a quarter of the list price is used. The cap is EUR 100,000 for cars bought after 30 June 2025, EUR 70,000 for cars bought in 2024 up to 30 June 2025, and EUR 60,000 for cars bought from 2019 to 2023. Above the cap, and for qualifying plug-in hybrids, half the list price is used. A plug-in hybrid bought from 2025 to 2030 qualifies with at most 50 g CO2/km or at least 80 km of electric range; one bought from 2022 to 2024 needs 50 g or 60 km; one bought from 2019 to 2021 needs 50 g or 40 km (§ 6(1) no. 4 sentence 2 nos. 2 to 5 EStG; BMF letter of 5 November 2021, BStBl I p. 2205). The quarter or half is applied first, then the result is rounded down to the full EUR 100 (same letter, Rn. 12). The reduced list price also drives the 0.03% and 0.002% amounts, because those rules refer to the same list price.",
+    "source_quote_ids": [
+      "B.PB.cars",
+      "B.PB.cardates",
+      "B.PB.oldcarcaps",
+      "B.PB.oldcar40"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "048",
+    "prior_row_id": 48,
+    "prior_native_LF": [
+      79,
+      79
+    ],
+    "native_LF": [
+      81,
+      81
+    ],
+    "section": "The taxable base",
+    "wording": "- **Logbook method.** Instead, the benefit can be the share of total car costs that falls on private and commuting trips, if the total costs are shown by receipts and the split by a proper logbook (Fahrtenbuch) (§ 8(2) sentence 4 EStG). For qualifying electric and hybrid cars the purchase cost (or similar cost) enters total costs at a quarter or a half (§ 6(1) no. 4 sentence 3 EStG).",
+    "source_quote_ids": [
+      "B.PB.market-and-special",
+      "B.PB.cars"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "049",
+    "prior_row_id": 49,
+    "prior_native_LF": [
+      80,
+      80
+    ],
+    "native_LF": [
+      82,
+      82
+    ],
+    "section": "The taxable base",
+    "wording": "- **User charges.** A fixed or per-km charge the employee pays reduces the benefit, down to zero but not below. Giving up cash pay in a salary sacrifice is not a user charge (BMF letter of 3 March 2022).",
+    "source_quote_ids": [
+      "B.PB.usercharge"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "050",
+    "prior_row_id": 50,
+    "prior_native_LF": [
+      81,
+      81
+    ],
+    "native_LF": [
+      83,
+      83
+    ],
+    "section": "The taxable base",
+    "wording": "- **Charging and bikes.** Charging an electric or hybrid car at the employer's site, and lending a charger for private use, is tax-free if given on top of pay owed (§ 3 no. 46 EStG; applies to periods ending before 1 January 2031 under § 52(4) sentence 21). Lending a bicycle that is not a motor vehicle is tax-free on the same condition (§ 3 no. 37 EStG; also for pay periods ending before 1 January 2031 under § 52(4) sentence 12).",
+    "source_quote_ids": [
+      "B.PB.devices-charge",
+      "B.PB.bike",
+      "B.PB.exemptiondates-bike",
+      "B.PB.exemptiondates-charge"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "051",
+    "prior_row_id": 51,
+    "prior_native_LF": [
+      83,
+      83
+    ],
+    "native_LF": [
+      85,
+      85
+    ],
+    "section": "The taxable base",
+    "wording": "**Meals and lodging.** Meals and lodging use the SvEV values for both tax and contributions (§ 8(2) sentences 6 and 7 EStG). For 2026: EUR 345 a month for full board, EUR 2.37 per breakfast and EUR 4.57 per lunch or dinner, EUR 285 a month for lodging (§ 2 SvEV). The taxable amount is the official value less what the employee pays. Canteen meals, and meals on business trips valued at the official value, can be taxed at a 25% flat rate (§ 40(2) sentence 1 nos. 1 and 1a EStG). A trip meal costing up to EUR 60 is not taxed at all where the employee could claim the travel meal allowance (§ 8(2) sentences 8 and 9 EStG). Travel meal allowances paid above the tax-free flat rates can be taxed at 25% up to the same amount again (§ 40(2) sentence 1 no. 4 EStG). Lodging is distinct from a dwelling. Apply each relevant § 2(3) reduction to the EUR 285 lodging value: 15% for admission to the employer's household or community lodging; 15% for under-18s or apprentices; and 40% for two employees sharing, 50% for three, or 60% for more than three. Two otherwise ordinary adult occupants give EUR 171 each for a full month before payments. Where the ordinary lodging value is inequitable in the actual case, use the statutory local-rent alternative. A dwelling normally uses local rent, taking account of impairment from its location relative to the business and applicable statutory rent limits, with § 8(2) sentence 12 EStG applied correspondingly. Only if local rent is extraordinarily difficult to establish may the statutory EUR 5.01/m² monthly proxy apply, or EUR 4.10/m² for basic equipment without central heating or without a bath/shower. Value energy, water and other ancillary costs at the usual local price. For shorter periods use 1/30 per day, applying the relevant percentage reductions to the daily value; perform calculations at two decimal places, rounding up where the third digit is 5–9 (§ 2(3)–(6) SvEV).",
+    "source_quote_ids": [
+      "B.PB.market-and-special",
+      "B.PB.meals",
+      "B.PB.lodging",
+      "B.PB.40benefits",
+      "R80.lodging"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "052",
+    "prior_row_id": 52,
+    "prior_native_LF": [
+      86,
+      86
+    ],
+    "native_LF": [
+      88,
+      89
+    ],
+    "section": "The taxable base",
+    "wording": "- **§ 37b, 30%.** The employer may pay 30% income tax on all non-cash benefits granted in a business year on top of pay owed (to employees) or on top of the agreed service (to customers and business partners). The base is the giver's cost including VAT; for employees of affiliated companies, it is at least the value under § 8(3) sentence 1 EStG. Costs per recipient a year count only up to EUR 10,000; the excess is taxed normally. A single gift costing more than EUR 10,000 is excluded in full (§ 37b(1) sentence 3 EStG; BMF letter of 19 May 2015, Rn. 21). It does not apply to company cars, official meal values, staff discounts, items under § 40(2) or shares (§ 37b(2) sentence 2). The choice is made once for the business year, but separately for third parties and for own employees; for own employees the calendar year counts (BMF letter of 19 May 2015, BStBl I p. 468, Rn. 4). Items costing up to EUR 10 are treated as promotional giveaways and can be left out (same letter). The recipient is told the tax was paid and leaves the item out of income (§ 37b(3) EStG). For own employees the item stays subject to contributions: the third-party employee exclusion from social-insurance pay applies only where those employees are not employed by a company affiliated with the giver; affiliation does not itself establish a separate identical social assessment (§ 1(1) no. 14 SvEV).\n- **§ 40(2), 25% and 15%.** Canteen meals, trip meals, staff events beyond the EUR 110 allowance, recreation grants within the limits, data-processing devices and internet subsidies, chargers and bikes given outright: 25%. Commuting subsidies and the car commute benefit, up to what the employee could claim as commuting costs: 15%. Public transport benefits can also be taxed at 25% instead of being tax-free, so the employee's commuting deduction is not reduced (§ 40(2) EStG). Items taxed under § 40(2) are free of contributions (§ 1(1) no. 3 SvEV). Apply the actual branch conditions: canteen meals must not be agreed wage components; for recreation grants, the employer must ensure recreational use and aggregate the earlier grants in the same year against the employee/spouse/child caps. Transfers of data-processing devices/accessories/internet access, internet-use subsidies, charger transfers/subsidies and outright transfers of non-motor bicycles require additionality to pay already owed. The 15% cash commuting subsidy also requires additionality, and amounts taxed under that 15% route reduce the employee's commuting deduction. The alternative 25% public-transport election instead covers all relevant § 3 no. 15 benefits of that calendar year uniformly, may apply without additionality, and does not reduce the commuting deduction. Staff-event allowance and the stated 25% route require access for all staff of the business or a business unit.",
+    "source_quote_ids": [
+      "B.PB.37b",
+      "B.PB.37belections",
+      "B.PB.giveaways",
+      "B.PB.37bcaps",
+      "B.PB.sv-third",
+      "R81.37b",
+      "R81.admin",
+      "R81.third",
+      "R82.40",
+      "R82.events"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "053",
+    "prior_row_id": 53,
+    "prior_native_LF": [
+      87,
+      87
+    ],
+    "native_LF": [
+      88,
+      89
+    ],
+    "section": "The taxable base",
+    "wording": "- **§ 37b, 30%.** The employer may pay 30% income tax on all non-cash benefits granted in a business year on top of pay owed (to employees) or on top of the agreed service (to customers and business partners). The base is the giver's cost including VAT; for employees of affiliated companies, it is at least the value under § 8(3) sentence 1 EStG. Costs per recipient a year count only up to EUR 10,000; the excess is taxed normally. A single gift costing more than EUR 10,000 is excluded in full (§ 37b(1) sentence 3 EStG; BMF letter of 19 May 2015, Rn. 21). It does not apply to company cars, official meal values, staff discounts, items under § 40(2) or shares (§ 37b(2) sentence 2). The choice is made once for the business year, but separately for third parties and for own employees; for own employees the calendar year counts (BMF letter of 19 May 2015, BStBl I p. 468, Rn. 4). Items costing up to EUR 10 are treated as promotional giveaways and can be left out (same letter). The recipient is told the tax was paid and leaves the item out of income (§ 37b(3) EStG). For own employees the item stays subject to contributions: the third-party employee exclusion from social-insurance pay applies only where those employees are not employed by a company affiliated with the giver; affiliation does not itself establish a separate identical social assessment (§ 1(1) no. 14 SvEV).\n- **§ 40(2), 25% and 15%.** Canteen meals, trip meals, staff events beyond the EUR 110 allowance, recreation grants within the limits, data-processing devices and internet subsidies, chargers and bikes given outright: 25%. Commuting subsidies and the car commute benefit, up to what the employee could claim as commuting costs: 15%. Public transport benefits can also be taxed at 25% instead of being tax-free, so the employee's commuting deduction is not reduced (§ 40(2) EStG). Items taxed under § 40(2) are free of contributions (§ 1(1) no. 3 SvEV). Apply the actual branch conditions: canteen meals must not be agreed wage components; for recreation grants, the employer must ensure recreational use and aggregate the earlier grants in the same year against the employee/spouse/child caps. Transfers of data-processing devices/accessories/internet access, internet-use subsidies, charger transfers/subsidies and outright transfers of non-motor bicycles require additionality to pay already owed. The 15% cash commuting subsidy also requires additionality, and amounts taxed under that 15% route reduce the employee's commuting deduction. The alternative 25% public-transport election instead covers all relevant § 3 no. 15 benefits of that calendar year uniformly, may apply without additionality, and does not reduce the commuting deduction. Staff-event allowance and the stated 25% route require access for all staff of the business or a business unit.",
+    "source_quote_ids": [
+      "B.PB.40benefits",
+      "B.PB.sv-taxfree",
+      "R81.37b",
+      "R81.admin",
+      "R81.third",
+      "R82.40",
+      "R82.events"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "054",
+    "prior_row_id": 54,
+    "prior_native_LF": [
+      88,
+      88
+    ],
+    "native_LF": [
+      90,
+      90
+    ],
+    "section": "The taxable base",
+    "wording": "- **§ 40(1), average rate.** On application, the tax office can allow a flat rate worked out from the employees' average tax, for one-off payments to a larger number of employees, up to EUR 1,000 per employee a year, or for wage tax collected after an audit (§ 40(1) EStG). The rate is a net rate, since the employer bears the tax.",
+    "source_quote_ids": [
+      "B.PB.40average"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "055",
+    "prior_row_id": 55,
+    "prior_native_LF": [
+      89,
+      89
+    ],
+    "native_LF": [
+      91,
+      91
+    ],
+    "section": "The taxable base",
+    "wording": "- **Who bears it.** The employer owes the flat tax. If it is passed on to the employee, the amount passed on is still pay and does not reduce the base. Flat-taxed pay and the flat tax are left out of the employee's own return (§ 40(3) EStG; § 37b(3) applies it). The solidarity surcharge is 5.5% of the flat tax (§§ 3, 4 SolzG). Church tax on flat tax follows state decrees (see Not yet confirmed).",
+    "source_quote_ids": [
+      "B.PB.40election",
+      "B.PB.37b",
+      "B.Soli.rate"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "056",
+    "prior_row_id": 56,
+    "prior_native_LF": [
+      92,
+      92
+    ],
+    "native_LF": [
+      94,
+      94
+    ],
+    "section": "The taxable base",
+    "wording": "- Public transport between home and work, and local public transport in general, given as a ticket or a subsidy (Jobticket), on top of pay owed. It reduces the employee's commuting deduction (§ 3 no. 15 EStG).",
+    "source_quote_ids": [
+      "B.PB.jobticket"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "057",
+    "prior_row_id": 57,
+    "prior_native_LF": [
+      93,
+      93
+    ],
+    "native_LF": [
+      95,
+      95
+    ],
+    "section": "The taxable base",
+    "wording": "- Care of children not yet of school age in kindergartens or similar, on top of pay owed, with no cap in the law (§ 3 no. 33 EStG).",
+    "source_quote_ids": [
+      "B.PB.childcare-health"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "058",
+    "prior_row_id": 58,
+    "prior_native_LF": [
+      94,
+      94
+    ],
+    "native_LF": [
+      96,
+      96
+    ],
+    "section": "The taxable base",
+    "wording": "- Health promotion meeting the SGB V §§ 20 and 20b standards, on top of pay owed, up to EUR 600 a year (§ 3 no. 34 EStG).",
+    "source_quote_ids": [
+      "B.PB.childcare-health"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "059",
+    "prior_row_id": 59,
+    "prior_native_LF": [
+      95,
+      95
+    ],
+    "native_LF": [
+      97,
+      97
+    ],
+    "section": "The taxable base",
+    "wording": "- Private use of the employer's computers, phones, accessories and software (§ 3 no. 45 EStG).",
+    "source_quote_ids": [
+      "B.PB.devices-charge"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "060",
+    "prior_row_id": 60,
+    "prior_native_LF": [
+      96,
+      96
+    ],
+    "native_LF": [
+      98,
+      99
+    ],
+    "section": "The taxable base",
+    "wording": "- Employee shares in the employer's company up to EUR 2,000 a year if open to all staff with one year's service (§ 3 no. 39 EStG). For § 19a deferral, the permitted employer-company holdings must be transferred free or below value in addition to pay already owed, and the employee must consent in payroll. Apply the actual incorporated § 19a(3) SME test: double the referenced Article 2(1) financial thresholds and four times its headcount threshold, determined under Articles 4 and 5 of that Recommendation, at transfer or in one of the six prior calendar years; formation must be no more than 20 years earlier. Do not replace that incorporated test with an unverified simple turnover/balance-sheet Boolean. For a qualifying group-company holding, aggregate the thresholds across all group companies and no group company may be older than 20 years. The deferred benefit becomes taxable on any whole or partial paid or unpaid transfer, including the specified § 17/§ 20 events or a contribution to business assets, or after 15 years, or on leaving the employer (§ 19a(1)–(4)). An irrevocable employer liability declaration made by the wage tax return following the relevant event postpones the 15-year/leaving triggers to that transfer event, not merely a sale (§ 19a(4a)). For a qualifying business-related decline, if actual fair value less the employee's original payment is below the deferred benefit, only that lower amount is taxed; on leaving and buyback by the employer, an employer shareholder or a group company, the paid consideration replaces fair value. The reduction does not apply to non-business-related declines or corporate measures such as distributions/capital repayments. With deferred benefit EUR 8,000, qualifying fair value EUR 5,000 and original employee payment EUR 1,000, taxable benefit is EUR 4,000. Deferred share benefits remain subject to contributions (§ 1(1) no. 1 SvEV); tax deferral alone is not contribution relief.\n- Staff events: if open to all staff of the business or a business unit, costs up to EUR 110 per event and attending employee are not pay, for up to two events a year. The cost is all the employer's costs including VAT, shared over the attendees, and the share of an employee's companions counts as the employee's (§ 19(1) no. 1a EStG). Only the excess is pay, which can be taxed at 25% (§ 40(2) sentence 1 no. 2 EStG).",
+    "source_quote_ids": [
+      "B.PB.employeeshares",
+      "B.PB.sharesdeferral",
+      "B.PB.sv-taxfree",
+      "R82.40",
+      "R82.events",
+      "R85.shares"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "061",
+    "prior_row_id": 61,
+    "prior_native_LF": [
+      97,
+      97
+    ],
+    "native_LF": [
+      98,
+      99
+    ],
+    "section": "The taxable base",
+    "wording": "- Employee shares in the employer's company up to EUR 2,000 a year if open to all staff with one year's service (§ 3 no. 39 EStG). For § 19a deferral, the permitted employer-company holdings must be transferred free or below value in addition to pay already owed, and the employee must consent in payroll. Apply the actual incorporated § 19a(3) SME test: double the referenced Article 2(1) financial thresholds and four times its headcount threshold, determined under Articles 4 and 5 of that Recommendation, at transfer or in one of the six prior calendar years; formation must be no more than 20 years earlier. Do not replace that incorporated test with an unverified simple turnover/balance-sheet Boolean. For a qualifying group-company holding, aggregate the thresholds across all group companies and no group company may be older than 20 years. The deferred benefit becomes taxable on any whole or partial paid or unpaid transfer, including the specified § 17/§ 20 events or a contribution to business assets, or after 15 years, or on leaving the employer (§ 19a(1)–(4)). An irrevocable employer liability declaration made by the wage tax return following the relevant event postpones the 15-year/leaving triggers to that transfer event, not merely a sale (§ 19a(4a)). For a qualifying business-related decline, if actual fair value less the employee's original payment is below the deferred benefit, only that lower amount is taxed; on leaving and buyback by the employer, an employer shareholder or a group company, the paid consideration replaces fair value. The reduction does not apply to non-business-related declines or corporate measures such as distributions/capital repayments. With deferred benefit EUR 8,000, qualifying fair value EUR 5,000 and original employee payment EUR 1,000, taxable benefit is EUR 4,000. Deferred share benefits remain subject to contributions (§ 1(1) no. 1 SvEV); tax deferral alone is not contribution relief.\n- Staff events: if open to all staff of the business or a business unit, costs up to EUR 110 per event and attending employee are not pay, for up to two events a year. The cost is all the employer's costs including VAT, shared over the attendees, and the share of an employee's companions counts as the employee's (§ 19(1) no. 1a EStG). Only the excess is pay, which can be taxed at 25% (§ 40(2) sentence 1 no. 2 EStG).",
+    "source_quote_ids": [
+      "B.PB.events",
+      "B.PB.40benefits",
+      "R82.40",
+      "R82.events",
+      "R85.shares"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "062",
+    "prior_row_id": 62,
+    "prior_native_LF": [
+      100,
+      100
+    ],
+    "native_LF": [
+      102,
+      102
+    ],
+    "section": "The taxable base",
+    "wording": "- **Tax.** Employer contributions from the first employment to a Pensionsfonds, Pensionskasse or Direktversicherung are tax-free up to 8% of the pension ceiling: EUR 8,112 in 2026 (§ 3 no. 63 EStG; ceiling from SVBezGrV 2026). This includes amounts the employee converts from pay (Entgeltumwandlung). The promised pension/disability/survivor payout must meet § 82(2) sentence 2, and § 3 no. 63 does not apply to the extent the employee has made the § 1a(3) BetrAVG election for § 10a/section XI support. Separately conditioned termination contributions under sentence 3 have a tax ceiling of 4% of the pension ceiling × calendar years of employment with that employer, at most ten years. Qualifying catch-up contributions for years when the first employment was suspended and no German taxable wage was received from that employer have the sentence 4 ceiling of 8% × number of those years, at most ten. Two qualifying termination years therefore give EUR 8,112 under that route. Do not add distinct routes without checking their actual interaction; these special tax rules do not establish an extra social-insurance exemption.",
+    "source_quote_ids": [
+      "B.PB.pensiontaxfree",
+      "B.PB.pensionceiling",
+      "R84.63",
+      "R84.56"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "063",
+    "prior_row_id": 63,
+    "prior_native_LF": [
+      101,
+      101
+    ],
+    "native_LF": [
+      103,
+      103
+    ],
+    "section": "The taxable base",
+    "wording": "- **Contributions.** Only up to 4% of the ceiling, EUR 4,056 in 2026, is free of social insurance, including converted pay (§ 1(1) no. 9 SvEV). The excess over 4% up to 8% is tax-free but contribution-liable.",
+    "source_quote_ids": [
+      "B.PB.sv-pension",
+      "B.PB.pensionceiling"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "064",
+    "prior_row_id": 64,
+    "prior_native_LF": [
+      102,
+      102
+    ],
+    "native_LF": [
+      104,
+      104
+    ],
+    "section": "The taxable base",
+    "wording": "- **Salary sacrifice.** The employee can demand conversion of up to 4% of the ceiling (§ 1a(1) BetrAVG). The employer must add 15% of the converted amount to the pension vehicle as far as it saves contributions by the conversion (§ 1a(1a) BetrAVG). For pay above the ceilings the saving, and so the top-up, can be smaller or nil.",
+    "source_quote_ids": [
+      "B.PB.salarysacrifice"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "065",
+    "prior_row_id": 65,
+    "prior_native_LF": [
+      103,
+      103
+    ],
+    "native_LF": [
+      105,
+      106
+    ],
+    "section": "The taxable base",
+    "wording": "- **Low-earner subsidy (§ 100).** If the employee's current pay is not over EUR 2,575 a month (EUR 30,900 a year) when the contribution is made, and the employer pays at least EUR 240 a year on top of pay owed, the employer deducts 30% of that contribution, at most EUR 288, from the wage tax it pays over. The employer contribution under § 100 is tax-free up to EUR 960 a year, in addition to § 3 no. 63 (§ 100 EStG). This requires the first employment, an eligible Pensionsfonds/Pensionskasse/Direktversicherung with the payout arrangement required by § 82(2) sentence 2, German wage-tax treatment in the contribution period, and the same percentage distribution-cost charge on each contribution (a permitted recalculation cannot exceed the original percentage). Test the pay limit at the contribution date; later changes ordinarily do not alter entitlement. If this employer already made an additional contribution in 2016, cap the subsidy at the amount paid above that 2016 contribution: for qualifying current EUR 700 and 2016 EUR 600, min(EUR 210, EUR 288, EUR 100) gives EUR 100. If a funded entitlement later lapses and money returns to the employer, repay the subsidy to the extent attributable to that repayment by adding it to wage tax in the return for the receipt period (§ 100(1)–(4)).\n- **Old contracts.** Unfunded Pensionskasse contributions are tax-free up to 4% of the ceiling, less amounts exempt under § 3 no. 63 sentences 1, 3 or 4 (§ 3 no. 56 EStG), and can be flat-taxed at 20% up to EUR 1,752 a year (§ 40b EStG). Direktversicherung and Pensionskasse contracts where at least one contribution was flat-taxed under the pre-2005 § 40b before 1 January 2018 keep that 20% flat tax, and those amounts reduce the § 3 no. 63 limit (§ 52(4) sentence 23 and § 52(40) EStG). The § 3 no. 56 route also requires first employment and the specified § 82(2) sentence 2 payout arrangement. For § 40b(2), EUR 1,752 is the ordinary individual first-employment limit: the pooled rule uses the average contribution per eligible worker, excluding workers with contributions above EUR 2,148. For contributions on termination, the EUR 1,752 limit is multiplied by calendar years with that employer, without the pooled rule, then reduced by the relevant § 40b(1) flat-taxed contributions in the termination year and six preceding years. These actual conditions qualify the ordinary annual shortcuts; the separate preserved pre-2005-contract gate remains.",
+    "source_quote_ids": [
+      "B.PB.lowearner",
+      "B.PB.lowearnerexempt",
+      "R83.lowearner",
+      "R84.40b",
+      "R84.56",
+      "R84.63"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "066",
+    "prior_row_id": 66,
+    "prior_native_LF": [
+      104,
+      104
+    ],
+    "native_LF": [
+      105,
+      106
+    ],
+    "section": "The taxable base",
+    "wording": "- **Low-earner subsidy (§ 100).** If the employee's current pay is not over EUR 2,575 a month (EUR 30,900 a year) when the contribution is made, and the employer pays at least EUR 240 a year on top of pay owed, the employer deducts 30% of that contribution, at most EUR 288, from the wage tax it pays over. The employer contribution under § 100 is tax-free up to EUR 960 a year, in addition to § 3 no. 63 (§ 100 EStG). This requires the first employment, an eligible Pensionsfonds/Pensionskasse/Direktversicherung with the payout arrangement required by § 82(2) sentence 2, German wage-tax treatment in the contribution period, and the same percentage distribution-cost charge on each contribution (a permitted recalculation cannot exceed the original percentage). Test the pay limit at the contribution date; later changes ordinarily do not alter entitlement. If this employer already made an additional contribution in 2016, cap the subsidy at the amount paid above that 2016 contribution: for qualifying current EUR 700 and 2016 EUR 600, min(EUR 210, EUR 288, EUR 100) gives EUR 100. If a funded entitlement later lapses and money returns to the employer, repay the subsidy to the extent attributable to that repayment by adding it to wage tax in the return for the receipt period (§ 100(1)–(4)).\n- **Old contracts.** Unfunded Pensionskasse contributions are tax-free up to 4% of the ceiling, less amounts exempt under § 3 no. 63 sentences 1, 3 or 4 (§ 3 no. 56 EStG), and can be flat-taxed at 20% up to EUR 1,752 a year (§ 40b EStG). Direktversicherung and Pensionskasse contracts where at least one contribution was flat-taxed under the pre-2005 § 40b before 1 January 2018 keep that 20% flat tax, and those amounts reduce the § 3 no. 63 limit (§ 52(4) sentence 23 and § 52(40) EStG). The § 3 no. 56 route also requires first employment and the specified § 82(2) sentence 2 payout arrangement. For § 40b(2), EUR 1,752 is the ordinary individual first-employment limit: the pooled rule uses the average contribution per eligible worker, excluding workers with contributions above EUR 2,148. For contributions on termination, the EUR 1,752 limit is multiplied by calendar years with that employer, without the pooled rule, then reduced by the relevant § 40b(1) flat-taxed contributions in the termination year and six preceding years. These actual conditions qualify the ordinary annual shortcuts; the separate preserved pre-2005-contract gate remains.",
+    "source_quote_ids": [
+      "B.PB.unfunded",
+      "B.PB.40b",
+      "B.PB.exemptiondates-charge",
+      "B.PB.oldpension",
+      "R83.lowearner",
+      "R84.40b",
+      "R84.56",
+      "R84.63"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "067",
+    "prior_row_id": 67,
+    "prior_native_LF": [
+      105,
+      105
+    ],
+    "native_LF": [
+      107,
+      107
+    ],
+    "section": "The taxable base",
+    "wording": "- **Direct promise and Unterstützungskasse.** Converted pay used for these routes stays out of contributions only up to 4% of the pension ceiling (§ 14(1) sentence 2 SGB IV). Their wage tax treatment is not covered here.",
+    "source_quote_ids": [
+      "B.PB.directpromise",
+      "B.PB.pensionceiling"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "068",
+    "prior_row_id": 68,
+    "prior_native_LF": [
+      106,
+      106
+    ],
+    "native_LF": [
+      108,
+      108
+    ],
+    "section": "The taxable base",
+    "wording": "- **From 2027.** The § 100 subsidy rises to at most EUR 360, the tax-free amount to EUR 1,200, and the pay limit becomes 3% of the monthly pension ceiling (Zweites Betriebsrentenstärkungsgesetz, BGBl. 2026 I No. 14, in force 1 January 2027 under art. 18(4)). For 2026 the figures above apply.",
+    "source_quote_ids": [
+      "B.PB.subsidy2027",
+      "B.PB.subsidycommencement"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "069",
+    "prior_row_id": 69,
+    "prior_native_LF": [
+      109,
+      109
+    ],
+    "native_LF": [
+      111,
+      111
+    ],
+    "section": "The taxable base",
+    "wording": "- **The test.** Employment is non-self-employed work, especially in an employment relationship; the signs are working under instructions and being integrated into the organisation (§ 7(1) SGB IV).",
+    "source_quote_ids": [
+      "B.PB.employment"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "070",
+    "prior_row_id": 70,
+    "prior_native_LF": [
+      110,
+      110
+    ],
+    "native_LF": [
+      112,
+      112
+    ],
+    "section": "The taxable base",
+    "wording": "- **The share rule.** A managing director with no share in the capital is always employed. The Federal Social Court holds that a shareholder managing director is self-employed by reason of the shareholding only with at least 50% of the share capital, or, with less, a \"real\" blocking minority in the articles that covers all company business, not just listed matters. Agreements outside the articles (voting pacts, options) do not count (BSG, 14 March 2018, B 12 KR 13/17 R). On 23 July 2026 the court held that two 50% shareholder directors were employed because a casting-vote clause in the articles meant neither could always block resolutions (BSG, B 12 BA 10/24 R, hearing report).",
+    "source_quote_ids": [
+      "B.PB.director2018",
+      "B.PB.director2026"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "071",
+    "prior_row_id": 71,
+    "prior_native_LF": [
+      111,
+      111
+    ],
+    "native_LF": [
+      113,
+      113
+    ],
+    "section": "The taxable base",
+    "wording": "- **Status procedure.** Either party can ask Deutsche Rentenversicherung Bund (DRV Bund) to decide employed or self-employed status (§ 7a(1) SGB IV). The collecting health fund must apply itself when the employer's registration shows the person is the employer's spouse, partner or descendant, or a managing shareholder of a GmbH (§ 7a(1) sentence 2 SGB IV); the registration under § 28a SGB IV carries this flag. Other insurers are bound by the DRV decision (§ 7a(2) SGB IV).",
+    "source_quote_ids": [
+      "B.PB.status"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "072",
+    "prior_row_id": 72,
+    "prior_native_LF": [
+      112,
+      112
+    ],
+    "native_LF": [
+      114,
+      114
+    ],
+    "section": "The taxable base",
+    "wording": "- **Effect.** If the decision is \"self-employed\", the director's pay remains wage income for wage tax, but that classification does not create employment-based social-insurance contributions. It is not a universal exemption from all social insurance: determine separate health cover, any compulsory self-employed pension category and other status-specific duties under [de-social-contributions](de-social-contributions.md). No particular director's alternative duty is assumed solely from this classification.",
+    "source_quote_ids": [
+      "B.PB.wagetax",
+      "B.PB.employment",
+      "R87.employment",
+      "R87.pension"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "073",
+    "prior_row_id": 73,
+    "prior_native_LF": [
+      116,
+      116
+    ],
+    "native_LF": [
+      118,
+      118
+    ],
+    "section": "Deadlines and filing",
+    "wording": "- **Through the payroll.** Benefits are pay of the period they are given in. Wage tax and contributions on them are filed and paid with the normal monthly run: the wage tax return (Lohnsteuer-Anmeldung) by the 10th after the period, contributions by the third-last bank working day of the month. Dates and penalties for the run: [de-payroll](de-payroll.md).",
+    "source_quote_ids": [
+      "B.PB.wagefiling",
+      "B.PB.svdue",
+      "B.PB.wagetax"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "074",
+    "prior_row_id": 74,
+    "prior_native_LF": [
+      117,
+      117
+    ],
+    "native_LF": [
+      119,
+      119
+    ],
+    "section": "Deadlines and filing",
+    "wording": "- **Flat taxes.** The § 40 and § 40b flat taxes are declared in the wage tax return; the choice to flat-tax is made by filing a return that shows the flat tax, or, for an audited period, by a declaration to the tax office until the audit assessments are final (§ 40(4) EStG; § 40b(5)). The § 37b tax counts as wage tax, goes in the wage tax return of the employer's payroll office, and is due by the 10th after the return period (§ 37b(4) EStG).",
+    "source_quote_ids": [
+      "B.PB.40election",
+      "B.PB.40b",
+      "B.PB.37b"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "075",
+    "prior_row_id": 75,
+    "prior_native_LF": [
+      118,
+      118
+    ],
+    "native_LF": [
+      120,
+      120
+    ],
+    "section": "Deadlines and filing",
+    "wording": "- **§ 100 subsidy.** Taken by deducting it in the next wage tax return (§ 100(1) EStG).",
+    "source_quote_ids": [
+      "B.PB.lowearner"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "076",
+    "prior_row_id": 76,
+    "prior_native_LF": [
+      119,
+      119
+    ],
+    "native_LF": [
+      121,
+      121
+    ],
+    "section": "Deadlines and filing",
+    "wording": "- **§ 19a deferral.** Applied in payroll only with the employee's consent; it cannot be claimed later in the employee's return. The employer records the untaxed value in the payroll account (§ 19a(2), (6) EStG).",
+    "source_quote_ids": [
+      "B.PB.sharesdeferral"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "077",
+    "prior_row_id": 77,
+    "prior_native_LF": [
+      120,
+      120
+    ],
+    "native_LF": [
+      122,
+      122
+    ],
+    "section": "Deadlines and filing",
+    "wording": "- **Status procedure.** Apply to DRV Bund in writing or electronically (§ 7a(1) SGB IV). If the application is made within one month of the work starting and employment is found, insurance starts only on the day the decision is notified, if the worker agrees and had comparable health and pension cover in between (§ 7a(5) SGB IV). Contributions then fall due only when the decision is final. An objection or claim against the decision delays its effect (§ 7a(6) SGB IV). A decision before work starts is possible on application (§ 7a(4a) SGB IV; this rule runs until 30 June 2027 under § 7a(7)).",
+    "source_quote_ids": [
+      "B.PB.status"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "078",
+    "prior_row_id": 78,
+    "prior_native_LF": [
+      124,
+      124
+    ],
+    "native_LF": [
+      126,
+      126
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Employer liability.** The employer is liable for wage tax it should have withheld on a benefit (§ 42d(1) EStG). Tax collected after an audit for many employees can be flat-taxed at a net rate under § 40(1) no. 2 EStG, which raises the cost.",
+    "source_quote_ids": [
+      "B.PB.liability",
+      "B.PB.40average"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "079",
+    "prior_row_id": 79,
+    "prior_native_LF": [
+      125,
+      125
+    ],
+    "native_LF": [
+      127,
+      127
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Late payment.** 1% of the tax due, rounded down to a multiple of EUR 50, for each month started (§ 240(1) AO). Late contributions: 1% a month on arrears rounded down to EUR 50 (§ 24(1) SGB IV). Details in [de-payroll](de-payroll.md).",
+    "source_quote_ids": [
+      "B.AO240.surcharge",
+      "B.PB.svlate"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "080",
+    "prior_row_id": 80,
+    "prior_native_LF": [
+      126,
+      126
+    ],
+    "native_LF": [
+      128,
+      128
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Lost contribution-free treatment.** Items that are only contribution-free when left tax-free or flat-taxed in the period's payroll become contribution-liable if the payroll misses that (§ 1(1) last sentences SvEV).",
+    "source_quote_ids": [
+      "B.PB.sv-period"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "081",
+    "prior_row_id": 81,
+    "prior_native_LF": [
+      127,
+      127
+    ],
+    "native_LF": [
+      129,
+      129
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Managing directors.** If a director treated as self-employed is later found employed, ordinary contributions can reach the whole period, subject to limitation, unless the actual individual § 7a(5) or qualifying group-opinion § 7a(4c) protection applies as explained in de-social-contributions; the procedures are not automatic protection. Retrospective late-payment surcharges are separately excluded to the extent credible no-fault lack of knowledge is shown under § 24(2) SGB IV (§ 7a SGB IV). The July 2026 BSG case shows the size: EUR 127,833.77 in contributions and levies claimed after an audit.",
+    "source_quote_ids": [
+      "B.PB.status",
+      "B.PB.director2026",
+      "R87.status",
+      "R87.late"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "082",
+    "prior_row_id": 82,
+    "prior_native_LF": [
+      131,
+      131
+    ],
+    "native_LF": [
+      133,
+      133
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Tax.** Benefits are part of employment income and follow the same rules as cash pay for German wage tax and for treaty allocation; see [de-non-resident-tax](de-non-resident-tax.md) and [de-payroll](de-payroll.md).",
+    "source_quote_ids": [
+      "B.PB.wagetax"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "083",
+    "prior_row_id": 83,
+    "prior_native_LF": [
+      132,
+      132
+    ],
+    "native_LF": [
+      134,
+      134
+    ],
+    "section": "Cross-border points",
+    "wording": "- **§ 37b and foreign givers.** A foreign business that opts for § 37b must flat-tax uniformly all gifts to recipients taxable in Germany (BMF letter of 19 May 2015).",
+    "source_quote_ids": [
+      "B.PB.37belections"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "084",
+    "prior_row_id": 84,
+    "prior_native_LF": [
+      133,
+      133
+    ],
+    "native_LF": [
+      135,
+      135
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Company cars.** The list price is the German domestic list price (§ 6(1) no. 4 sentence 2 EStG), also for cars bought abroad.",
+    "source_quote_ids": [
+      "B.PB.cars"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "085",
+    "prior_row_id": 85,
+    "prior_native_LF": [
+      134,
+      134
+    ],
+    "native_LF": [
+      136,
+      136
+    ],
+    "section": "Cross-border points",
+    "wording": "- **bAV.** § 3 no. 63 applies only to contributions from the first employment; the § 100 subsidy needs the pay to be subject to German wage tax in that period (§ 100(3) no. 1 EStG).",
+    "source_quote_ids": [
+      "B.PB.pensiontaxfree",
+      "B.PB.lowearner"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "086",
+    "prior_row_id": 86,
+    "prior_native_LF": [
+      135,
+      135
+    ],
+    "native_LF": [
+      137,
+      137
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Social insurance.** An A1 certificate identifies which state's social-insurance law applies. While a valid binding certificate establishes another state's law, there are no additional German contributions on that basis. A German-law A1 for an outgoing posting instead documents continuation of German law: apply the German benefit valuation/contribution rules as applicable, rather than treating the benefit as contribution-free merely because there is an A1. The certificate binds until invalidated or withdrawn by the issuer ([DVKA applicable-law guidance](https://www.dvka.de/de/arbeitgeber-erwerbstaetige/faq/)). The status test for directors applies where German social-insurance law applies.",
+    "source_quote_ids": [
+      "B.PB.employment",
+      "B.PB.A1",
+      "R86.A1"
+    ],
+    "disposition": "Bounded R78–87 own-source condition / metadata successor"
+  },
+  {
+    "id": "087",
+    "prior_row_id": 87,
+    "prior_native_LF": [
+      139,
+      164
+    ],
+    "native_LF": [
+      141,
+      166
+    ],
+    "section": "Worked examples",
+    "wording": "**Example 1: company car, combustion versus electric.** An employee has a company car for private use and the commute. One-way distance 18 km. Option A: a petrol car with a gross list price of EUR 48,700. Option B: a fully electric car bought in February 2026 with a gross list price of EUR 64,050 (under the EUR 100,000 cap, so a quarter applies), and the employee pays a user charge of EUR 50 a month.\n\nOption A: 1% of 48,700 is EUR 487.00; 0.03% x 18 km x 48,700 is EUR 262.98; monthly benefit EUR 749.98. Option B: a quarter of 64,050 is EUR 16,012.50, rounded down to the full EUR 100: EUR 16,000. 1% is EUR 160.00; 0.03% x 18 x 16,000 is EUR 86.40; total EUR 246.40; less the user charge of EUR 50, taxable benefit EUR 196.40 a month. The benefit is added to gross pay for wage tax and contributions.\n\n```oa-check\nname: DE 2026 company car, petrol vs electric, 18 km commute\ninputs:\n  list_petrol: 48700\n  list_ev: 64050\n  km: 18\n  user_charge: 50\nsteps:\n  - petrol_private: list_petrol * 0.01\n  - petrol_commute: list_petrol * 0.0003 * km\n  - petrol_total: petrol_private + petrol_commute\n  - ev_base: floor(list_ev / 4 / 100) * 100\n  - ev_private: ev_base * 0.01\n  - ev_commute: ev_base * 0.0003 * km\n  - ev_total: ev_private + ev_commute\n  - ev_taxable: max(0, ev_total - user_charge)\nexpected:\n  petrol_total: 749.98\n  ev_base: 16000\n  ev_total: 246.40\n  ev_taxable: 196.40\n```",
+    "source_quote_ids": [
+      "B.PB.cars",
+      "B.PB.cardates",
+      "B.PB.caradmin",
+      "B.PB.oldcarcaps",
+      "B.PB.usercharge"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "088",
+    "prior_row_id": 88,
+    "prior_native_LF": [
+      166,
+      197
+    ],
+    "native_LF": [
+      168,
+      199
+    ],
+    "section": "Worked examples",
+    "wording": "**Example 2: salary sacrifice inside the 4% line, plus canteen lunches.** Pay EUR 4,000 a month, under all ceilings. The employee converts EUR 290 a month into a Direktversicherung. Because the conversion saves contributions, the employer adds 15%, EUR 43.50. Total contributions EUR 333.50 a month, EUR 4,002 a year. All of it is tax-free (under EUR 8,112) and contribution-free (under EUR 4,056), leaving EUR 54 of contribution-free room. Anything above EUR 4,056 would be tax-free but subject to contributions, and the 15% top-up is owed only as far as the employer actually saves contributions. The employee also takes 20 canteen lunches a month and pays EUR 2.50 for each. The 2026 value is EUR 4.57 (137 / 30 rounded to the cent), so the benefit is EUR 2.07 a lunch, EUR 41.40 a month. The employer flat-taxes it at 25% (EUR 10.35) plus 5.5% solidarity surcharge (EUR 0.56, fractions of a cent dropped), and the meals are then free of contributions.\n\n```oa-check\nname: DE 2026 bAV salary sacrifice 290 a month with 15% top-up, plus canteen lunches\ninputs:\n  sacrifice_month: 290\n  ceiling: 101400\n  lunches: 20\n  paid_per_lunch: 2.50\n  lunch_month_value: 137\nsteps:\n  - topup_month: sacrifice_month * 0.15\n  - total_year: (sacrifice_month + topup_month) * 12\n  - tax_free_cap: ceiling * 0.08\n  - sv_free_cap: ceiling * 0.04\n  - tax_free: min(total_year, tax_free_cap)\n  - sv_free: min(total_year, sv_free_cap)\n  - sv_liable: total_year - sv_free\n  - lunch_value: round(lunch_month_value / 30, 2)\n  - meal_benefit: (lunch_value - paid_per_lunch) * lunches\n  - flat_tax: meal_benefit * 0.25\n  - soli: floor(flat_tax * 0.055 * 100) / 100\nexpected:\n  total_year: 4002\n  tax_free: 4002\n  sv_free: 4002\n  sv_liable: 0\n  lunch_value: 4.57\n  meal_benefit: 41.40\n  flat_tax: 10.35\n  soli: 0.56\n```",
+    "source_quote_ids": [
+      "B.PB.salarysacrifice",
+      "B.PB.pensionceiling",
+      "B.PB.pensiontaxfree",
+      "B.PB.sv-pension",
+      "B.PB.meals",
+      "B.PB.lodging",
+      "B.PB.40benefits",
+      "B.Soli.rate"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "089",
+    "prior_row_id": 89,
+    "prior_native_LF": [
+      201,
+      206
+    ],
+    "native_LF": [
+      203,
+      208
+    ],
+    "section": "Ask the client first",
+    "wording": "1. For each car: gross list price at first registration, purchase date, drive type (petrol or diesel, electric, plug-in hybrid with CO2 and electric range from the certificate of conformity), commute distance, and whether a logbook is kept.\n2. Is each benefit given on top of pay already owed, or does it replace pay (salary sacrifice)? This decides the EUR 50 limit for vouchers and most tax-free items.\n3. Which benefits have been flat-taxed so far in the year, and has the business already chosen § 37b for employees or for third parties this business year?\n4. For employer pensions: the vehicle (Direktversicherung, Pensionskasse, Pensionsfonds, Unterstützungskasse, direct promise), employer and converted amounts, and whether this is the employee's first employment.\n5. For each managing director: share of capital, voting rules and any casting-vote or blocking clause in the articles, and whether a DRV status decision exists.\n6. Church membership of employees, if flat taxes are used (church tax on flat tax).",
+    "source_quote_ids": [
+      "B.PB.cars",
+      "B.PB.additional",
+      "B.PB.37b",
+      "B.PB.salarysacrifice",
+      "B.PB.status"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "090",
+    "prior_row_id": 90,
+    "prior_native_LF": [
+      237,
+      237
+    ],
+    "native_LF": [
+      239,
+      239
+    ],
+    "section": "Sources",
+    "wording": "Not yet confirmed: the administrative car rules in R 8.1(9) LStR beyond the list-price rounding and part-month rule; the EUR 60 meal limit and staff-event rules in the wage tax guidelines beyond the statute; church tax rates on flat taxes (for § 37b the BMF letter, Rn. 36, points to the state decrees of 28 and 29 December 2006; the rates themselves were not read); whether a collective agreement can set aside the 15% top-up; whether a bAV top-up is owed where pay exceeds the ceilings (depends on the saving actually made); the written reasons of the 23 July 2026 BSG decision (only the hearing report was read); the wage tax treatment of the Unterstützungskasse and direct-promise routes of bAV, which is not covered here.",
+    "source_quote_ids": [
+      "B.PB.caradmin",
+      "B.PB.market-and-special",
+      "B.PB.salarysacrifice",
+      "B.PB.director2026"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "091",
+    "prior_row_id": null,
+    "native_LF": [
+      75,
+      75
+    ],
+    "section": "R78–87 actual ordinary condition / source-read statement",
+    "wording": "**Qualifying staff discounts.** Under § 8(3), use the end price offered to unrelated final consumers in ordinary commerce by the employer or the customer nearest the place of supply, reduced by 4%. The goods/services must not be predominantly produced, distributed or provided for employees and must not be taxed under § 40. Subtract the employee's payment, then the unused part of the EUR 1,080 annual allowance for benefits from that employment: taxable benefit = max(0, 96% of that applicable public end price − employee payment − remaining annual allowance). Track annual aggregation; do not also use the monthly EUR 50 cliff. At public price EUR 2,000/payment EUR 500, benefit before allowance is EUR 1,420; with the full annual allowance remaining, taxable benefit is EUR 340.",
+    "source_quote_ids": [
+      "R79.staffdiscount"
+    ],
+    "disposition": "New finite source-supported sibling condition, not a new broad payroll audit"
+  }
+]

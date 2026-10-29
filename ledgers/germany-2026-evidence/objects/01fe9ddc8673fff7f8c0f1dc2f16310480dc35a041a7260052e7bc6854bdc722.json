@@ -1,0 +1,11 @@
+{
+  "id": "U11f3cb107b7d240f",
+  "url": "https://www.gesetze-im-internet.de/ao_1977/__13.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U11f3cb107b7d240f.body",
+  "raw_sha256": "7bf95bbfb6b1066ef248de2f6f0d41892418ef49e9440e8d61e3e5e89ce74440",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U11f3cb107b7d240f.reader.txt",
+  "reader_sha256": "7d952cf2449286f4d58cfda806d1c52996efc0564f48c8799ac0f77ae25ee8d1",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

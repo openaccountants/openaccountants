@@ -1,0 +1,120 @@
+{
+  "status": "writer successor, independent review pending",
+  "artifacts": [
+    {
+      "path": "after/germany-tax-optimization.md",
+      "sha256": "45b98bb40ee1749c47a231894efa9d643177939b66fb9b051b61264c63abcde0",
+      "bytes": 49736
+    },
+    {
+      "path": "attributed-prior-old-origin-check.json",
+      "sha256": "b0b9bb0ca1a1c2691cc190c597b78146c493eefa04f4e785560a1157f28defd8",
+      "bytes": 524
+    },
+    {
+      "path": "before/germany-tax-optimization.md",
+      "sha256": "fa5036e6c87c3c778fcd65270a5a151ec007dd37e46d536ab3ff44ee6178c403",
+      "bytes": 44775
+    },
+    {
+      "path": "build-ledger.py",
+      "sha256": "449bc1ff6e58159062877805ed341c94ec594578c9af44c37b3f13c29441e7a5",
+      "bytes": 10412
+    },
+    {
+      "path": "check-and-seal.py",
+      "sha256": "60e8e291cdfdc91b068036a6b5366f392204f62f09dcaf45fb597b537009d0d4",
+      "bytes": 12654
+    },
+    {
+      "path": "check-history.json",
+      "sha256": "45270a99ae24fb17a98b51f87e0c79de60c4e5b3941aad1b068541e9b2f58c61",
+      "bytes": 223
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "64ed3a66588174e0fb22534f9256a06ad87d7816d594e5888b178b9331360481",
+      "bytes": 13821
+    },
+    {
+      "path": "historical-author.py",
+      "sha256": "71986f491624486aadf133259666b3570f41133f55dce0c912c8b1046efd591c",
+      "bytes": 14920
+    },
+    {
+      "path": "ledgers/germany-tax-optimization.md",
+      "sha256": "7c49b980b05727f102d8ae5a8dcfcc92390c01db9a06c893e835c8cfe7718562",
+      "bytes": 292806
+    },
+    {
+      "path": "old-origin-review-reference.json",
+      "sha256": "a9f2bf41cd988d0338d73492eb244e1b4e310cbade983e0b8c5f0f0bb652b384",
+      "bytes": 583
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "86b6f9109dcd98751c74f3b78eb7ad9372ba4b8c1a9384ac42eb0c0b92726d83",
+      "bytes": 2705
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "d6803523074549331e83239eb29c36277058a327147408ddb0ac68bf642a3298",
+      "bytes": 50097
+    },
+    {
+      "path": "pre-refresh-route-index.json",
+      "sha256": "59ce51f522424511f4c6bc00246ac32727fe85696f6b623948f15265b3bd8b82",
+      "bytes": 360150
+    },
+    {
+      "path": "pre-refresh-routes.py",
+      "sha256": "79a1c8dea81938878fbd36bdd15a3ddef7017bba6ad72551c5df73fa896cde89",
+      "bytes": 13532
+    },
+    {
+      "path": "preservation-proof.json",
+      "sha256": "3797c05ec7d96f34273d0ae7944c9527edd2dfabd8c04da569f431615a1e6043",
+      "bytes": 557
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "90e6a5b94c309033b0ed08ae6c7107f78ca62aaf0c1377cb89c465cd641493d2",
+      "bytes": 319881
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "4d84ce140de00c7a28f29e70e5cc962e35d7eea72993a3007c50ed507e9fe537",
+      "bytes": 197839
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "d1be86027a56c404420c101ae11cc21bb09e33bcb70827ab9c18abc35f64dec2",
+      "bytes": 700
+    },
+    {
+      "path": "support/germany-tax-optimization/old-topic-destinations.json",
+      "sha256": "191e714bd040e4869fe935cfe8b0b7b125ea38a2e2001263d2b4b377dd919281",
+      "bytes": 645105
+    },
+    {
+      "path": "support/germany-tax-optimization/rows.json",
+      "sha256": "953f0e5f1ab4330d40d68b5de1275d4f528d6bda468cda59ece67c73184e9009",
+      "bytes": 163659
+    },
+    {
+      "path": "support/line-map.json",
+      "sha256": "3d59c859027c2b3e6b66e2071aaa59dd5c9e18d3a534ce6b2ee54c6ecabdc001",
+      "bytes": 28393
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "bce3e1510d0aa1a0063e17988955c6a0cd0c0cb545775dad9643abd4c085c885",
+      "bytes": 32262
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "19cc91d1f6680c68db5d1693cf3a9c96aa76e42a48d38084f12b34a2e4e5af84",
+      "bytes": 2048
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "U27262e24f0ec8bd0",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Spanien/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U27262e24f0ec8bd0.body",
+  "raw_sha256": "6442bcd677c6669caa73baf24ff504fb23b83f622cbfdacf538a247f5dc11c56",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U27262e24f0ec8bd0.reader.txt",
+  "reader_sha256": "756ad08f52cd8dbf5c6fbc5a10847de28b1771b8a985a0e02244674068f36f4e",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

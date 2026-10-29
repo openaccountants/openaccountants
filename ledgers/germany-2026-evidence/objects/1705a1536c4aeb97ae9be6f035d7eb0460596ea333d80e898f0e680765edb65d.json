@@ -1,0 +1,11 @@
+{
+  "id": "Uc4a706c312c85258",
+  "url": "https://www.gesetze-im-internet.de/gewstg/__8.html",
+  "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-8-20261024.html",
+  "raw_sha256": "a846887cce2d12a7250a8771e5f173e4ddc85ead112d6b468bf5860437423990",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc4a706c312c85258.reader.txt",
+  "reader_sha256": "0be4dce9b7938aa0f2aee07fbbaaf44921df55cb499d9fb4cce572bb88ca36ae",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "prior cached body",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

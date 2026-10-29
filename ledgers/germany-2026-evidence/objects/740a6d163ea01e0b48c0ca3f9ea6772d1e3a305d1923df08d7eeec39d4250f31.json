@@ -1,0 +1,167 @@
+[
+  {
+    "label": "example1 profit",
+    "actual": "60080",
+    "expected": "60080"
+  },
+  {
+    "label": "example1 taxable",
+    "actual": "49844",
+    "expected": "49844"
+  },
+  {
+    "label": "example1 tariff",
+    "actual": "10493",
+    "expected": "10493"
+  },
+  {
+    "label": "example1 balance",
+    "actual": "493",
+    "expected": "493"
+  },
+  {
+    "label": "example2 Messbetrag",
+    "actual": "4935/2",
+    "expected": "4935/2"
+  },
+  {
+    "label": "example2 trade tax",
+    "actual": "8883",
+    "expected": "8883"
+  },
+  {
+    "label": "example2 taxable",
+    "actual": "79964",
+    "expected": "79964"
+  },
+  {
+    "label": "example2 tariff",
+    "actual": "22449",
+    "expected": "22449"
+  },
+  {
+    "label": "example2 credit",
+    "actual": "8883",
+    "expected": "8883"
+  },
+  {
+    "label": "example2 income tax",
+    "actual": "13566",
+    "expected": "13566"
+  },
+  {
+    "label": "example2 church tax",
+    "actual": "202041/100",
+    "expected": "202041/100"
+  },
+  {
+    "label": "example2 unused credit",
+    "actual": "987",
+    "expected": "987"
+  },
+  {
+    "label": "pension2026 cap",
+    "actual": "30826",
+    "expected": "30826"
+  },
+  {
+    "label": "pension2026 joint cap",
+    "actual": "61652",
+    "expected": "61652"
+  },
+  {
+    "label": "pool five years",
+    "actual": "1",
+    "expected": "1"
+  },
+  {
+    "label": "electric schedule",
+    "actual": "100",
+    "expected": "100"
+  },
+  {
+    "label": "2026 unadvised Saturday",
+    "actual": "5",
+    "expected": "5"
+  },
+  {
+    "label": "2026 nextworkday",
+    "actual": "0",
+    "expected": "0"
+  },
+  {
+    "label": "2026 advised leapday",
+    "actual": "1",
+    "expected": "1"
+  },
+  {
+    "label": "DE-L06 loss2025",
+    "actual": "50000",
+    "expected": "50000"
+  },
+  {
+    "label": "DE-L06 loss2024",
+    "actual": "100000",
+    "expected": "100000"
+  },
+  {
+    "label": "DE-L07 firstyear adjustment",
+    "actual": "600",
+    "expected": "600"
+  },
+  {
+    "label": "B04net threshold",
+    "actual": "800",
+    "expected": "800"
+  },
+  {
+    "label": "B04KU actual expense",
+    "actual": "952",
+    "expected": "952"
+  },
+  {
+    "label": "B04recoverable actual expense",
+    "actual": "800",
+    "expected": "800"
+  },
+  {
+    "label": "tariff actual boundary 12348",
+    "actual": 0,
+    "method": "own exactFraction implementation of quoted32a, rounded down; not an official example"
+  },
+  {
+    "label": "tariff actual boundary 12349",
+    "actual": 0,
+    "method": "own exactFraction implementation of quoted32a, rounded down; not an official example"
+  },
+  {
+    "label": "tariff actual boundary 17799",
+    "actual": 1034,
+    "method": "own exactFraction implementation of quoted32a, rounded down; not an official example"
+  },
+  {
+    "label": "tariff actual boundary 17800",
+    "actual": 1035,
+    "method": "own exactFraction implementation of quoted32a, rounded down; not an official example"
+  },
+  {
+    "label": "tariff actual boundary 69878",
+    "actual": 18213,
+    "method": "own exactFraction implementation of quoted32a, rounded down; not an official example"
+  },
+  {
+    "label": "tariff actual boundary 69879",
+    "actual": 18213,
+    "method": "own exactFraction implementation of quoted32a, rounded down; not an official example"
+  },
+  {
+    "label": "tariff actual boundary 277825",
+    "actual": 105550,
+    "method": "own exactFraction implementation of quoted32a, rounded down; not an official example"
+  },
+  {
+    "label": "tariff actual boundary 277826",
+    "actual": 105551,
+    "method": "own exactFraction implementation of quoted32a, rounded down; not an official example"
+  }
+]

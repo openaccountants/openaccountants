@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201510044?type=1646225765",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "scope": "failed acquisition is not a legal finding"
+  },
+  {
+    "url": "https://grsth.bundesfinanzministerium.de/esth/2025/A-Einkommensteuergesetz/II-Einkommen-2-24b/8-Die-einzelnen-Einkunftsarten-13-24b/b-Gewerbebetrieb-15-17/Paragraf-15/paragraf-15.html",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "scope": "failed acquisition is not a legal finding"
+  }
+]

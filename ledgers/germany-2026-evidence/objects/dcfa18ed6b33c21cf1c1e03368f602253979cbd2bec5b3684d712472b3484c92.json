@@ -1,0 +1,11 @@
+{
+  "id": "U5730681ad89820ee",
+  "url": "https://www.gesetze-im-internet.de/aufag/__1.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5730681ad89820ee.body",
+  "raw_sha256": "998158da2a7be970b8d5590e45c476389998e90ba6124061ea466fd211c9cb21",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5730681ad89820ee.reader.txt",
+  "reader_sha256": "00dd58a282392aa79f26edac255b36a6998988bb38eb59f81882bf4bbf03a507",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

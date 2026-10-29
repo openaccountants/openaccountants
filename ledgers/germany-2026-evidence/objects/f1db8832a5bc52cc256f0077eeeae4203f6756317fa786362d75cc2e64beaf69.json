@@ -1,0 +1,33 @@
+{
+  "all_actual_origin_count": 527,
+  "mismatches": 0,
+  "semantic_spots": [
+    1,
+    10,
+    25,
+    45,
+    70,
+    100,
+    125,
+    150,
+    175,
+    200,
+    225,
+    250,
+    275,
+    300,
+    527
+  ],
+  "scope": "All actual Git origin exact identities; named spots printed for actual semantic reading against complete current Guide already read. No blanket new law reading from old-map identities.",
+  "additional_targeted_spots": [
+    64,
+    148,
+    142,
+    430,
+    111,
+    13,
+    48,
+    402
+  ],
+  "total_distinct_semantic_spots": 23
+}

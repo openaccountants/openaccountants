@@ -1,0 +1,227 @@
+{
+  "status": "PASS bounded exact R11\u201317 successors; no country completeness verdict",
+  "manifest_members_rehashed": 54,
+  "pairs": {
+    "leaving-germany-exit-tax": {
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/leaving-germany-exit-tax.md",
+      "Guide_sha256": "af2fa313362b1a41d77c68ca1454e8fdb87290b6c96ccabc533ac154d2b4689d",
+      "bytes": 26518,
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R11-R12-writer-successor-2026-10-29/ledgers/leaving-germany-exit-tax.md",
+      "ledger_sha256": "e2c6e7382ebe53e66822c927f2c85ea1d7a88fda49e3780bae701e76b042a2be",
+      "current_rows": 114,
+      "prior_current_rows": 112,
+      "old_topics": 112,
+      "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/leaving-germany-exit-tax.md",
+      "prior_ledger_sha256": "1cf8d1b6a38a752e6cbb9457020c8bd8dc1b75fbc8cef4c3d64322fb9ff3ddac",
+      "operations": 7,
+      "rows_verified": 114,
+      "full_inverse": true,
+      "original_oa_exact": 0
+    },
+    "de-trade-tax": {
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-trade-tax.md",
+      "Guide_sha256": "41138a1e3f25dd1bbcd831ffa2110a80edf06d021505c5ae84794380ef07e953",
+      "bytes": 42917,
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R11-R12-writer-successor-2026-10-29/ledgers/de-trade-tax.md",
+      "ledger_sha256": "7e2c5b77e2bd393690fe4ac3c1bdfdeb0585bcd238adc51c2b357ce071bcabc0",
+      "current_rows": 104,
+      "prior_current_rows": 102,
+      "old_topics": 120,
+      "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R09-corporate-rounding-writer-successor-2026-10-29/ledgers/de-trade-tax.md",
+      "prior_ledger_sha256": "ff116f30defd925575a8561955441923343237649757c4ad4a35f8b602cc4834",
+      "operations": 7,
+      "rows_verified": 104,
+      "full_inverse": true,
+      "original_oa_exact": 2
+    },
+    "de-corporate-tax": {
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-corporate-tax.md",
+      "Guide_sha256": "926723924c9092e0ab651796b78a84164ee10a5ea92015fa1c5a98afeebf4378",
+      "bytes": 42561,
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R11-R12-writer-successor-2026-10-29/ledgers/de-corporate-tax.md",
+      "ledger_sha256": "f87125b4aed3972529c99ea72b0f2a1c09c9917db830b2c60b56dae0e2fb5859",
+      "current_rows": 233,
+      "prior_current_rows": 232,
+      "old_topics": 228,
+      "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R09-corporate-rounding-writer-successor-2026-10-29/ledgers/de-corporate-tax.md",
+      "prior_ledger_sha256": "c7018e24f13c32de67faa572f922b9e6304a693154a1c7b1d31de597549569b5",
+      "operations": 3,
+      "rows_verified": 233,
+      "full_inverse": true,
+      "original_oa_exact": 2
+    },
+    "de-einkommensteuer-freelancer": {
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-einkommensteuer-freelancer.md",
+      "Guide_sha256": "424a96380e879606f6e7b35211b32c99290361c805ad19c7b6c24babd84a9d19",
+      "bytes": 40915,
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R11-R12-writer-successor-2026-10-29/ledgers/de-einkommensteuer-freelancer.md",
+      "ledger_sha256": "313a3e33037fcad6822dbf5df4b6f4071efe07a88b47dc89622bfe25bdcc0f1d",
+      "current_rows": 137,
+      "prior_current_rows": 137,
+      "old_topics": 146,
+      "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/ledgers/de-einkommensteuer-freelancer.md",
+      "prior_ledger_sha256": "c0b11fa391cc52c9ea7eb9271437a4fb8d89018be447870ad6c2e3403bc47287",
+      "operations": 3,
+      "rows_verified": 137,
+      "full_inverse": true,
+      "original_oa_exact": 3
+    }
+  },
+  "sources": [
+    {
+      "id": "R11.shares",
+      "native_LF": [
+        1,
+        1
+      ],
+      "reader_sha256": "5c6ab032ca00df977d9d14f42650e41e4b24c680a59b501f2a5c43e8d60f0fbe",
+      "quote_sha256": "87861609436ab6552fccbb5575b10c3a155077b5eb4690de44ad8a4d9e031415",
+      "actual_read": "Exact selected quotation directly read; prior own full source scopes also retained. Full9records including R15/R16 reread after overlong whole-source output truncated."
+    },
+    {
+      "id": "R11.exit-incorporation",
+      "native_LF": [
+        1,
+        1
+      ],
+      "reader_sha256": "55ec071c00832187d167284ad17c7669ec423a6e85b7ef961a4ac5690aa28ae3",
+      "quote_sha256": "60556b18080892f19d81c162437f3d63b4b09ab5d6aa51a5b5ced8144096a849",
+      "actual_read": "Exact selected quotation directly read; prior own full source scopes also retained. Full9records including R15/R16 reread after overlong whole-source output truncated."
+    },
+    {
+      "id": "R11.separate-residence-test",
+      "native_LF": [
+        2,
+        2
+      ],
+      "reader_sha256": "55ec071c00832187d167284ad17c7669ec423a6e85b7ef961a4ac5690aa28ae3",
+      "quote_sha256": "efd800d01d7ef45fc97adbff514dc31dd128c48928be16ff0f8f2c695ba293f5",
+      "actual_read": "Exact selected quotation directly read; prior own full source scopes also retained. Full9records including R15/R16 reread after overlong whole-source output truncated."
+    },
+    {
+      "id": "R12.qualifying-wages",
+      "native_LF": [
+        7,
+        11
+      ],
+      "reader_sha256": "2f305a64620e8172d7d6a3a2e56110d809ce1669d14bff861f0687697b90bd3b",
+      "quote_sha256": "93691cad1debf948c346e5f162c9f19c04787bf04ed4269646ff1a12864aef58",
+      "actual_read": "Exact selected quotation directly read; prior own full source scopes also retained. Full9records including R15/R16 reread after overlong whole-source output truncated."
+    },
+    {
+      "id": "R13.grace",
+      "native_LF": [
+        7,
+        9
+      ],
+      "reader_sha256": "2cfa86cfaac164f5f98e3dc6a02b04d67165a70fc4439631021fe7a3ae0bf631",
+      "quote_sha256": "f20ea796307bad487b7f932e6480970f58db6fb65a0e23dcb2c86e1d69111f80",
+      "actual_read": "Exact selected quotation directly read; prior own full source scopes also retained. Full9records including R15/R16 reread after overlong whole-source output truncated."
+    },
+    {
+      "id": "R13.method",
+      "native_LF": [
+        7,
+        13
+      ],
+      "reader_sha256": "d0b8f9648ceb978be2ed418912b741a3e5840f2512e6d916d605ac4f3b98d62f",
+      "quote_sha256": "779ed6652fd259f5b87bf214890d25e81eecee35bd9283c0d2c437282febcfaf",
+      "actual_read": "Exact selected quotation directly read; prior own full source scopes also retained. Full9records including R15/R16 reread after overlong whole-source output truncated."
+    },
+    {
+      "id": "R14.use-or-letting",
+      "native_LF": [
+        7,
+        22
+      ],
+      "reader_sha256": "859ac461ec65fe96438195a0605e0981a06e5b3ef2849a872236ab00f7c5f841",
+      "quote_sha256": "43a658b398bf873ee0ebbd40ea60271de49f9fd20aa40c712f7fe77555eb8863",
+      "actual_read": "Exact selected quotation directly read; prior own full source scopes also retained. Full9records including R15/R16 reread after overlong whole-source output truncated."
+    },
+    {
+      "id": "R15.filing",
+      "native_LF": [
+        7,
+        21
+      ],
+      "reader_sha256": "dbb29495b02df477985d87eead52d0bfc21a0a4f4bfa44f9ece1af6c58d94829",
+      "quote_sha256": "5a5476d188d85527f9ee3db515a3947eb3d03f96de270fc4a14e3781dd8a2db7",
+      "actual_read": "Exact selected quotation directly read; prior own full source scopes also retained. Full9records including R15/R16 reread after overlong whole-source output truncated."
+    },
+    {
+      "id": "R16.employee-410",
+      "native_LF": [
+        41,
+        41
+      ],
+      "reader_sha256": "4f1e49286a87ec81f6d872ddd07080cf0b65c71fa15b9ab5ada9da83dcd42d9c",
+      "quote_sha256": "7d308f8a75fffad07b29f23fe7b3dd0046f66cca9617644fd1f6030e0241749f",
+      "actual_read": "Exact selected quotation directly read; prior own full source scopes also retained. Full9records including R15/R16 reread after overlong whole-source output truncated."
+    }
+  ],
+  "grouped_old_topic_rows_read": 14,
+  "old_components_read_and_current_coordinate_verified": 45,
+  "scope_precision": "All45 exact old component words and declared current destinations actually read; current full substantive bodies already read in whole-pair review. First whole source-quotes/R17 markdown emissions truncated and are not credited as full reading; the9selected records and45compact components were subsequently read explicitly.",
+  "own_controls": [
+    {
+      "name": "R11 personal0.5plusqualifyingpredecessor cannot autofail",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "R12Acap",
+      "actual": "50000",
+      "expected": "50000"
+    },
+    {
+      "name": "R12Bcap",
+      "actual": "50000",
+      "expected": "50000"
+    },
+    {
+      "name": "R12Aallocated",
+      "actual": "500",
+      "expected": "500"
+    },
+    {
+      "name": "R12Ballocated",
+      "actual": "500",
+      "expected": "500"
+    },
+    {
+      "name": "R13within3 transfer grace",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "R13authoritycash no grace",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "R14letting separate alternative",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "R15otherbody6000passes",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "R15exact5000failsamountlimb",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "R16eligible400less100",
+      "actual": "300",
+      "expected": "300"
+    },
+    {
+      "name": "R16eligible400noreduction",
+      "actual": "400",
+      "expected": "400"
+    }
+  ]
+}

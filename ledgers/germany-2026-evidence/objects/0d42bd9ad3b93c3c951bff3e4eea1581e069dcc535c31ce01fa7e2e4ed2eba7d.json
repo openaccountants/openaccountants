@@ -1,0 +1,11 @@
+{
+  "id": "U6829be140a616ad1",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2026-01-07-stand-DBA-1-januar-2026.pdf?__blob=publicationFile&v=2",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6829be140a616ad1.body",
+  "raw_sha256": "c83ff59f43ec10d85bcbdaad6d2f953db2e1262b78c1c1b4b2efbe46c5d65ab9",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6829be140a616ad1.reader.txt",
+  "reader_sha256": "3f7eeac8deab16e144a7f96a61a907fc1465a2a58654e51ea72c65a6f36172a1",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

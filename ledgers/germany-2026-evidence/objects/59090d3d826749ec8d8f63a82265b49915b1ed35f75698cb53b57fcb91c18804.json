@@ -1,0 +1,205 @@
+{
+  "R11.shares": {
+    "id": "R11.shares",
+    "url": "https://www.gesetze-im-internet.de/estg/__17.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-17-20261026.html",
+    "raw_sha256": "fe27f81e022dea91a42b345d41676df4f7f90b06f3f9207db44501034afcd55b",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/E17.paragraphs.txt",
+    "reader_sha256": "5c6ab032ca00df977d9d14f42650e41e4b24c680a59b501f2a5c43e8d60f0fbe",
+    "paragraphs": 9,
+    "extraction": "HTML jurAbsatz content; decoded declared charset, HTML entities decoded and whitespace collapsed in derived reader only. Raw body untouched.",
+    "acquisition": "prior cached body",
+    "article": "EStG § 17(1) sentences 1–4",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "P001: (1) 1Zu den Einkünften aus Gewerbebetrieb gehört auch der Gewinn aus der Veräußerung von Anteilen an einer Kapitalgesellschaft, wenn der Veräußerer innerhalb der letzten fünf Jahre am Kapital der Gesellschaft unmittelbar oder mittelbar zu mindestens 1 Prozent beteiligt war. 2Die verdeckte Einlage von Anteilen an einer Kapitalgesellschaft in eine Kapitalgesellschaft steht der Veräußerung der Anteile gleich. 3Anteile an einer Kapitalgesellschaft sind Aktien, Anteile an einer Gesellschaft mit beschränkter Haftung, Genussscheine oder ähnliche Beteiligungen und Anwartschaften auf solche Beteiligungen sowie Anteile an einer optierenden Gesellschaft im Sinne des § 1a des Körperschaftsteuergesetzes. 4Hat der Veräußerer den veräußerten Anteil innerhalb der letzten fünf Jahre vor der Veräußerung unentgeltlich erworben, so gilt Satz 1 entsprechend, wenn der Veräußerer zwar nicht selbst, aber der Rechtsvorgänger oder, sofern der Anteil nacheinander unentgeltlich übertragen worden ist, einer der Rechtsvorgänger innerhalb der letzten fünf Jahre im Sinne von Satz 1 beteiligt war.",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected actual paragraph read. P001/P002 are derivative reader paragraph locators, not enacted words. Exit/predecessor incorporation is expressly a combined-primary-text interpretation; the separate residence aggregation is not a substitute for the share test."
+  },
+  "R11.exit-incorporation": {
+    "id": "R11.exit-incorporation",
+    "url": "https://www.gesetze-im-internet.de/astg/__6.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/astg-6-20261026.html",
+    "raw_sha256": "f0f931afd93ee0c1ba04ef2ec47d803a709daf63df1a0e242dddbf91018a43df",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/A6.paragraphs.txt",
+    "reader_sha256": "55ec071c00832187d167284ad17c7669ec423a6e85b7ef961a4ac5690aa28ae3",
+    "paragraphs": 6,
+    "extraction": "HTML jurAbsatz content; decoded declared charset, HTML entities decoded and whitespace collapsed in derived reader only. Raw body untouched.",
+    "acquisition": "prior cached body",
+    "article": "AStG § 6(1)",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "P001: (1) Vorbehaltlich der Vorschriften des Einkommensteuergesetzes, Körperschaftsteuergesetzes und Umwandlungssteuergesetzes stehen bei unbeschränkt Steuerpflichtigen der Veräußerung von Anteilen im Sinne des § 17 Absatz 1 Satz 1 des Einkommensteuergesetzes zum gemeinen Wert gleich 1. die Beendigung der unbeschränkten Steuerpflicht infolge der Aufgabe des Wohnsitzes oder des gewöhnlichen Aufenthalts, 2. die unentgeltliche Übertragung auf eine nicht unbeschränkt steuerpflichtige Person sowie, 3. vorbehaltlich der Nummern 1 und 2, der Ausschluss oder die Beschränkung des Besteuerungsrechts der Bundesrepublik Deutschland hinsichtlich des Gewinns aus der Veräußerung der Anteile.Die Veräußerung im Sinne des Satzes 1 erfolgt im Fall des 1. Satzes 1 Nummer 1 im Zeitpunkt der Beendigung der unbeschränkten Steuerpflicht, 2. Satzes 1 Nummer 2 im Zeitpunkt der Übertragung, 3. Satzes 1 Nummer 3 unmittelbar vor dem Zeitpunkt, zu dem der Ausschluss oder die Beschränkung des Besteuerungsrechts eintritt.Im Fall des Satzes 1 gelten die Anteile vom Steuerpflichtigen oder, bei unentgeltlicher Übertragung, von dessen Rechtsnachfolger als zum gemeinen Wert erworben, soweit die auf den Veräußerungsgewinn entfallende Steuer entrichtet worden ist; andernfalls gelten diese weiterhin als zu den ursprünglichen Anschaffungskosten erworben.",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected actual paragraph read. P001/P002 are derivative reader paragraph locators, not enacted words. Exit/predecessor incorporation is expressly a combined-primary-text interpretation; the separate residence aggregation is not a substitute for the share test."
+  },
+  "R11.separate-residence-test": {
+    "id": "R11.separate-residence-test",
+    "url": "https://www.gesetze-im-internet.de/astg/__6.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/astg-6-20261026.html",
+    "raw_sha256": "f0f931afd93ee0c1ba04ef2ec47d803a709daf63df1a0e242dddbf91018a43df",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/A6.paragraphs.txt",
+    "reader_sha256": "55ec071c00832187d167284ad17c7669ec423a6e85b7ef961a4ac5690aa28ae3",
+    "paragraphs": 6,
+    "extraction": "HTML jurAbsatz content; decoded declared charset, HTML entities decoded and whitespace collapsed in derived reader only. Raw body untouched.",
+    "acquisition": "prior cached body",
+    "article": "AStG § 6(2)",
+    "native_LF": [
+      2,
+      2
+    ],
+    "exact_quote": "P002: (2) Unbeschränkt Steuerpflichtige im Sinne des Absatzes 1 sind natürliche Personen, die innerhalb der letzten zwölf Jahre vor den in Absatz 1 Satz 1 Nummer 1 bis 3 genannten Tatbeständen insgesamt mindestens sieben Jahre unbeschränkt steuerpflichtig im Sinne des § 1 Absatz 1 des Einkommensteuergesetzes gewesen sind. Bei unentgeltlichem Erwerb von Anteilen ist für die Berechnung der nach Satz 1 maßgebenden Dauer der Steuerpflicht auch die unbeschränkte Steuerpflicht des Rechtsvorgängers oder, sofern der betreffende Anteil nacheinander unentgeltlich übertragen wurde, auch die unbeschränkte Steuerpflicht des jeweiligen Rechtsvorgängers einzubeziehen. Zeiträume, in denen die natürliche Person und der oder die Rechtsvorgänger gleichzeitig unbeschränkt steuerpflichtig waren, werden dabei nur einmal angesetzt. Entfällt der Steueranspruch nach Absatz 3 in der jeweils geltenden Fassung oder einer bis zum 30. Juni 2021 geltenden Fassung, gelten der Steuerpflichtige sowie dessen unmittelbarer oder mittelbarer Rechtsnachfolger abweichend von den Sätzen 1 bis 3 als unbeschränkt Steuerpflichtige im Sinne des Absatzes 1.",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected actual paragraph read. P001/P002 are derivative reader paragraph locators, not enacted words. Exit/predecessor incorporation is expressly a combined-primary-text interpretation; the separate residence aggregation is not a substitute for the share test."
+  },
+  "R12.qualifying-wages": {
+    "source_id": "DEB146",
+    "act_article": "GewStG31",
+    "official_url": "https://www.gesetze-im-internet.de/gewstg/__31.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-31-20261024.html",
+    "raw_sha256": "0f6d168a6c7f008c77e883ecab48356c3471a0f73c59c46bb268fc74bb992d82",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB146.txt",
+    "reader_sha256": "2f305a64620e8172d7d6a3a2e56110d809ce1669d14bff861f0687697b90bd3b",
+    "native_LF": [
+      7,
+      11
+    ],
+    "exact_quote": "(1) 1Arbeitslöhne sind vorbehaltlich der Absätze 2 bis 5 die Vergütungen im Sinne des § 19 Abs. 1 Nr. 1 des Einkommensteuergesetzes, soweit sie nicht durch andere Rechtsvorschriften von der Einkommensteuer befreit sind. 2Zuschläge für Mehrarbeit und für Sonntags-, Feiertags- und Nachtarbeit gehören unbeschadet der einkommensteuerlichen Behandlung zu den Arbeitslöhnen.\n(2) Zu den Arbeitslöhnen gehören nicht Vergütungen, die an Personen gezahlt worden sind, die zu ihrer Berufsausbildung beschäftigt werden.\n(3) In Fällen einer Befreiung von der Gewerbesteuer bleiben die Vergütungen an solche Arbeitnehmer außer Ansatz, die nicht ausschließlich oder überwiegend in dem steuerpflichtigen Betrieb oder Teil des Betriebs tätig sind.\n(4) 1Nach dem Gewinn berechnete einmalige Vergütungen (z. B. Tantiemen, Gratifikationen) sind nicht anzusetzen. 2Das Gleiche gilt für sonstige Vergütungen, soweit sie bei dem einzelnen Arbeitnehmer 50.000 Euro übersteigen.\n(5) Bei Unternehmen, die nicht von einer juristischen Person betrieben werden, sind für die im Betrieb tätigen Unternehmer (Mitunternehmer) insgesamt 25.000 Euro jährlich anzusetzen.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": [
+      [
+        7,
+        11
+      ]
+    ],
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R12.qualifying-wages",
+    "article": "GewStG § 31(1)–(5)",
+    "qualification": "Own full retained five operative paragraphs actually read in this repair phase, not inferred from prior writer/reviewer verdict."
+  },
+  "R13.grace": {
+    "id": "R13.grace",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-240-20261024.html",
+    "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee7f672101b3d3dd.reader.txt",
+    "reader_sha256": "2cfa86cfaac164f5f98e3dc6a02b04d67165a70fc4439631021fe7a3ae0bf631",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "AO § 240(1)–(3)",
+    "native_LF": [
+      7,
+      9
+    ],
+    "exact_quote": "(1) Wird eine Steuer nicht bis zum Ablauf des Fälligkeitstages entrichtet, so ist für jeden angefangenen Monat der Säumnis ein Säumniszuschlag von 1 Prozent des abgerundeten rückständigen Steuerbetrags zu entrichten; abzurunden ist auf den nächsten durch 50 Euro teilbaren Betrag. Das Gleiche gilt für zurückzuzahlende Steuervergütungen und Haftungsschulden, soweit sich die Haftung auf Steuern und zurückzuzahlende Steuervergütungen erstreckt. Die Säumnis nach Satz 1 tritt nicht ein, bevor die Steuer festgesetzt oder angemeldet worden ist. Wird die Festsetzung einer Steuer oder Steuervergütung aufgehoben, geändert oder nach § 129 berichtigt, so bleiben die bis dahin verwirkten Säumniszuschläge unberührt; das Gleiche gilt, wenn ein Haftungsbescheid zurückgenommen, widerrufen oder nach § 129 berichtigt wird. Erlischt der Anspruch durch Aufrechnung, bleiben Säumniszuschläge unberührt, die bis zur Fälligkeit der Schuld des Aufrechnenden entstanden sind.\n(2) Säumniszuschläge entstehen nicht bei steuerlichen Nebenleistungen.\n(3) Ein Säumniszuschlag wird bei einer Säumnis bis zu drei Tagen nicht erhoben. Dies gilt nicht bei Zahlung nach § 224 Absatz 2 Nummer 1.",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected retained statutory text read. Three-day noncollection grace is separate from effective payment/deemed cheque timing; only the actual224(2)no1 category is excluded, not all payments involving cash through bank accounts."
+  },
+  "R13.method": {
+    "id": "R13.method",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__224.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-224-20261024.html",
+    "raw_sha256": "a3d09dc43f6c7e7209a1fa636313afcfcaca668b5430dc85decfa0a8fde30d5f",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud818a09838515be4.reader.txt",
+    "reader_sha256": "d0b8f9648ceb978be2ed418912b741a3e5840f2512e6d916d605ac4f3b98d62f",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "AO § 224(1)–(2)",
+    "native_LF": [
+      7,
+      13
+    ],
+    "exact_quote": "(1) Zahlungen an Finanzbehörden sind an die zuständige Kasse zu entrichten. Außerhalb des Kassenraums können Zahlungsmittel nur einem Amtsträger übergeben werden, der zur Annahme von Zahlungsmitteln außerhalb des Kassenraums besonders ermächtigt worden ist und sich hierüber ausweisen kann.\n(2) Eine wirksam geleistete Zahlung gilt als entrichtet: 1.\nbei Übergabe oder Übersendung von Zahlungsmitteln am Tag des Eingangs, bei Hingabe oder Übersendung von Schecks jedoch drei Tage nach dem Tag des Eingangs,\n2.\nbei Überweisung oder Einzahlung auf ein Konto der Finanzbehörde und bei Einzahlung mit Zahlschein an dem Tag, an dem der Betrag der Finanzbehörde gutgeschrieben wird,\n3.\nbei Vorliegen eines SEPA-Lastschriftmandats am Fälligkeitstag.",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected retained statutory text read. Three-day noncollection grace is separate from effective payment/deemed cheque timing; only the actual224(2)no1 category is excluded, not all payments involving cash through bank accounts."
+  },
+  "R14.use-or-letting": {
+    "source_id": "DEB033",
+    "act_article": "EStG7g(1)–(6)",
+    "official_url": "https://www.gesetze-im-internet.de/estg/__7g.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-7g-20261026.html",
+    "raw_sha256": "3723132d1cdfb871abc22e3729c63f79ddc7e09c6b2750f66f92aca73ed39348",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB033.txt",
+    "reader_sha256": "859ac461ec65fe96438195a0605e0981a06e5b3ef2849a872236ab00f7c5f841",
+    "native_LF": [
+      7,
+      22
+    ],
+    "exact_quote": "(1) 1Steuerpflichtige können für die künftige Anschaffung oder Herstellung von abnutzbaren beweglichen Wirtschaftsgütern des Anlagevermögens, die mindestens bis zum Ende des dem Wirtschaftsjahr der Anschaffung oder Herstellung folgenden Wirtschaftsjahres vermietet oder in einer inländischen Betriebsstätte des Betriebes ausschließlich oder fast ausschließlich betrieblich genutzt werden, bis zu 50 Prozent der voraussichtlichen Anschaffungs- oder Herstellungskosten gewinnmindernd abziehen (Investitionsabzugsbeträge). 2Investitionsabzugsbeträge können nur in Anspruch genommen werden, wenn 1.\nder Gewinn a)\nnach § 4 oder § 5 ermittelt wird;\nb)\nim Wirtschaftsjahr, in dem die Abzüge vorgenommen werden sollen, ohne Berücksichtigung der Investitionsabzugsbeträge nach Satz 1 und der Hinzurechnungen nach Absatz 2 200 000 Euro nicht überschreitet und\n2.\nder Steuerpflichtige die Summen der Abzugsbeträge und der nach den Absätzen 2 bis 4 hinzuzurechnenden oder rückgängig zu machenden Beträge nach amtlich vorgeschriebenen Datensätzen durch Datenfernübertragung übermittelt. 2Auf Antrag kann die Finanzbehörde zur Vermeidung unbilliger Härten auf eine elektronische Übermittlung verzichten; § 150 Absatz 8 der Abgabenordnung gilt entsprechend. 3In den Fällen des Satzes 2 müssen sich die Summen der Abzugsbeträge und der nach den Absätzen 2 bis 4 hinzuzurechnenden oder rückgängig zu machenden Beträge aus den beim Finanzamt einzureichenden Unterlagen ergeben.\n3Abzugsbeträge können auch dann in Anspruch genommen werden, wenn dadurch ein Verlust entsteht oder sich erhöht. 4Die Summe der Beträge, die im Wirtschaftsjahr des Abzugs und in den drei vorangegangenen Wirtschaftsjahren nach Satz 1 insgesamt abgezogen und nicht nach Absatz 2 hinzugerechnet oder nach den Absätzen 3 oder 4 rückgängig gemacht wurden, darf je Betrieb 200 000 Euro nicht übersteigen.\n(2) 1Im Wirtschaftsjahr der Anschaffung oder Herstellung eines begünstigten Wirtschaftsguts im Sinne von Absatz 1 Satz 1 können bis zu 50 Prozent der Anschaffungs- oder Herstellungskosten gewinnerhöhend hinzugerechnet werden; die Hinzurechnung darf die Summe der nach Absatz 1 abgezogenen und noch nicht nach den Absätzen 2 bis 4 hinzugerechneten oder rückgängig gemachten Abzugsbeträge nicht übersteigen. 2Bei nach Eintritt der Unanfechtbarkeit der erstmaligen Steuerfestsetzung oder der erstmaligen gesonderten Feststellung nach Absatz 1 in Anspruch genommenen Investitionsabzugsbeträgen setzt die Hinzurechnung nach Satz 1 voraus, dass das begünstigte Wirtschaftsgut zum Zeitpunkt der Inanspruchnahme der Investitionsabzugsbeträge noch nicht angeschafft oder hergestellt worden ist. 3Die Anschaffungs- oder Herstellungskosten des Wirtschaftsguts können in dem in Satz 1 genannten Wirtschaftsjahr um bis zu 50 Prozent, höchstens jedoch um die Hinzurechnung nach Satz 1, gewinnmindernd herabgesetzt werden; die Bemessungsgrundlage für die Absetzungen für Abnutzung, erhöhten Absetzungen und Sonderabschreibungen sowie die Anschaffungs- oder Herstellungskosten im Sinne von § 6 Absatz 2 und 2a verringern sich entsprechend.\n(3) 1Soweit in Anspruch genommene Investitionsabzugsbeträge nicht bis zum Ende des dritten auf das Wirtschaftsjahr des jeweiligen Abzugs folgenden Wirtschaftsjahres nach Absatz 2 Satz 1 hinzugerechnet wurden, sind die Abzüge nach Absatz 1 rückgängig zu machen; die vorzeitige Rückgängigmachung von Investitionsabzugsbeträgen vor Ablauf der Investitionsfrist ist zulässig. 2Wurde der Gewinn des maßgebenden Wirtschaftsjahres bereits einer Steuerfestsetzung oder einer gesonderten Feststellung zugrunde gelegt, ist der entsprechende Steuer- oder Feststellungsbescheid insoweit zu ändern. 3Das gilt auch dann, wenn der Steuer- oder Feststellungsbescheid bestandskräftig geworden ist; die Festsetzungsfrist endet insoweit nicht, bevor die Festsetzungsfrist für den Veranlagungszeitraum abgelaufen ist, in dem das dritte auf das Wirtschaftsjahr des Abzugs folgende Wirtschaftsjahr endet. 4§ 233a Absatz 2a der Abgabenordnung ist nicht anzuwenden.\n(4) 1Wird in den Fällen des Absatzes 2 ein begünstigtes Wirtschaftsgut nicht bis zum Ende des dem Wirtschaftsjahr der Anschaffung oder Herstellung folgenden Wirtschaftsjahres vermietet oder in einer inländischen Betriebsstätte des Betriebes ausschließlich oder fast ausschließlich betrieblich genutzt, sind die Herabsetzung der Anschaffungs- oder Herstellungskosten, die Verringerung der Bemessungsgrundlage und die Hinzurechnung nach Absatz 2 rückgängig zu machen. 2Wurden die Gewinne der maßgebenden Wirtschaftsjahre bereits Steuerfestsetzungen oder gesonderten Feststellungen zugrunde gelegt, sind die entsprechenden Steuer- oder Feststellungsbescheide insoweit zu ändern. 3Das gilt auch dann, wenn die Steuer- oder Feststellungsbescheide bestandskräftig geworden sind; die Festsetzungsfristen enden insoweit nicht, bevor die Festsetzungsfrist für den Veranlagungszeitraum abgelaufen ist, in dem die Voraussetzungen des Absatzes 1 Satz 1 erstmals nicht mehr vorliegen. 4§ 233a Absatz 2a der Abgabenordnung ist nicht anzuwenden.\n(5) Bei abnutzbaren beweglichen Wirtschaftsgütern des Anlagevermögens können unter den Voraussetzungen des Absatzes 6 im Jahr der Anschaffung oder Herstellung und in den vier folgenden Jahren neben den Absetzungen für Abnutzung nach § 7 Absatz 1 oder Absatz 2 Sonderabschreibungen bis zu insgesamt 40 Prozent der Anschaffungs- oder Herstellungskosten in Anspruch genommen werden.\n(6) Die Sonderabschreibungen nach Absatz 5 können nur in Anspruch genommen werden, wenn 1.\nder Betrieb im Wirtschaftsjahr, das der Anschaffung oder Herstellung vorangeht, die Gewinngrenze des Absatzes 1 Satz 2 Nummer 1 nicht überschreitet, und\n2.\ndas Wirtschaftsgut im Jahr der Anschaffung oder Herstellung und im darauf folgenden Wirtschaftsjahr vermietet oder in einer inländischen Betriebsstätte des Betriebs des Steuerpflichtigen ausschließlich oder fast ausschließlich betrieblich genutzt wird; Absatz 4 gilt entsprechend.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": [
+      [
+        7,
+        22
+      ]
+    ],
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R14.use-or-letting",
+    "article": "EStG7g(1)–(6)",
+    "qualification": "Own full selected retained operative clauses actually read; existing main-method branches/conditions are retained; no particular foreign leasing or new exempt-body entitlement inferred."
+  },
+  "R15.filing": {
+    "source_id": "DEB148",
+    "act_article": "GewStDV25",
+    "official_url": "https://www.gesetze-im-internet.de/gewstdv_1955/__25.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstdv-25-20261024.html",
+    "raw_sha256": "7fa141e157520695e52b700e2d5afe81f0a949c9c0f5a14f8b31183749f81e89",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB148.txt",
+    "reader_sha256": "dbb29495b02df477985d87eead52d0bfc21a0a4f4bfa44f9ece1af6c58d94829",
+    "native_LF": [
+      7,
+      21
+    ],
+    "exact_quote": "(1) Eine Gewerbesteuererklärung ist abzugeben 1.\nfür alle gewerbesteuerpflichtigen Unternehmen, deren Gewerbeertrag im Erhebungszeitraum den Betrag von 24 500 Euro überstiegen hat;\n2.\nfür Kapitalgesellschaften (Aktiengesellschaften, Kommanditgesellschaften auf Aktien, Gesellschaften mit beschränkter Haftung), wenn sie nicht von der Gewerbesteuer befreit sind;\n3.\nfür Genossenschaften einschließlich Europäischer Genossenschaften und für Versicherungsvereine auf Gegenseitigkeit, wenn sie nicht von der Gewerbesteuer befreit sind. Für sonstige juristische Personen des privaten Rechts und für Vereine ohne Rechtspersönlichkeit ist eine Gewerbesteuererklärung nur abzugeben, soweit diese Unternehmen einen wirtschaftlichen Geschäftsbetrieb - ausgenommen Land- und Forstwirtschaft - unterhalten, dessen Gewerbeertrag im Erhebungszeitraum den Betrag von 5 000 Euro überstiegen hat;\n4.\nfür Unternehmen von juristischen Personen des öffentlichen Rechts, wenn sie als stehende Gewerbebetriebe anzusehen sind und ihr Gewerbeertrag im Erhebungszeitraum den Betrag von 5 000 Euro überstiegen hat;\n5.\nfür Unternehmen im Sinne des § 3 Nr. 5, 6, 8, 9, 15, 17, 21, 26, 27, 28, und 29 des Gesetzes nur, wenn sie neben der von der Gewerbesteuer befreiten Tätigkeit auch eine der Gewerbesteuer unterliegende Tätigkeit ausgeübt haben und ihr steuerpflichtiger Gewerbeertrag im Erhebungszeitraum den Betrag von 5 000 Euro überstiegen hat;\n6.\nfür Unternehmen, für die zum Schluss des vorangegangenen Erhebungszeitraums vortragsfähige Fehlbeträge gesondert festgestellt worden sind;\n7.\nfür alle gewerbesteuerpflichtigen Unternehmen, für die vom Finanzamt eine Gewerbesteuererklärung besonders verlangt wird.\n(2) 1Die Steuererklärung ist spätestens an dem von den obersten Finanzbehörden der Länder bestimmten Zeitpunkt abzugeben. 2Das Recht des Finanzamts, schon vor diesem Zeitpunkt Angaben zu verlangen, die für die Besteuerung von Bedeutung sind, bleibt unberührt.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": [
+      [
+        7,
+        21
+      ]
+    ],
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R15.filing",
+    "article": "GewStDV25",
+    "qualification": "Own full selected retained operative clauses actually read; existing main-method branches/conditions are retained; no particular foreign leasing or new exempt-body entitlement inferred."
+  },
+  "R16.employee-410": {
+    "source_id": "DEB038",
+    "act_article": "EStG46(3)",
+    "official_url": "https://www.gesetze-im-internet.de/estg/__46.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-46-20261024.html",
+    "raw_sha256": "c27dd4e778fb62fb6a389453e29b68329e447cff65925995d8941825c1fc3750",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB038.txt",
+    "reader_sha256": "4f1e49286a87ec81f6d872ddd07080cf0b65c71fa15b9ab5ada9da83dcd42d9c",
+    "native_LF": [
+      41,
+      41
+    ],
+    "exact_quote": "(3) 1In den Fällen des Absatzes 2 ist ein Betrag in Höhe der einkommensteuerpflichtigen Einkünfte, von denen der Steuerabzug vom Arbeitslohn nicht vorgenommen worden ist und die nicht nach § 32d Absatz 6 der tariflichen Einkommensteuer unterworfen wurden, vom Einkommen abzuziehen, wenn diese Einkünfte insgesamt nicht mehr als 410 Euro betragen. 2Der Betrag nach Satz 1 vermindert sich um den Altersentlastungsbetrag, soweit dieser den unter Verwendung des nach § 24a Satz 5 maßgebenden Prozentsatzes zu ermittelnden Anteil des Arbeitslohns mit Ausnahme der Versorgungsbezüge im Sinne des § 19 Absatz 2 übersteigt, und um den nach § 13 Absatz 3 zu berücksichtigenden Betrag.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": [
+      [
+        7,
+        9
+      ],
+      [
+        38,
+        43
+      ]
+    ],
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R16.employee-410",
+    "article": "EStG § 46(3)",
+    "qualification": "Own full retained native LF41 actually read; deduction eligibility and stated reductions only, no wider hardship/age-relief algorithm invented."
+  }
+}

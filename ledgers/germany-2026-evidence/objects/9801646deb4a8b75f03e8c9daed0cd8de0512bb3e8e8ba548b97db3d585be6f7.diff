@@ -1,0 +1,11 @@
+--- 00c8caae931032bf67aeb7ff735c1603108e52ec/skills/international/germany/de-payroll.md
++++ 62b7639a5a68324a83a96bb0190fff8b7c76f8c5/skills/international/germany/de-payroll.md
+@@ -4,7 +4,7 @@
+ version: 1.1
+ jurisdiction: DE
+ tax_year: 2026
+-last_updated: 2026-10-24
++last_updated: 2026-10-26
+ authored_by: Michael Cutajar and the OpenAccountants team
+ review_status: pending_review
+ trust_label: Built by Michael Cutajar and the OpenAccountants team

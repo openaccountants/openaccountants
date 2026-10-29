@@ -1,0 +1,2043 @@
+[
+  {
+    "id": "001",
+    "prior_row_id": "leaving-germany-exit-tax:16",
+    "prior_native_LF": [
+      16,
+      16
+    ],
+    "native_LF": [
+      17,
+      17
+    ],
+    "section": "Leaving Germany: exit tax on company shares (Wegzugsteuer)",
+    "wording": "Figures are for tax year 2026. This Guide covers the German side only: the exit tax on company shares under § 6 of the Foreign Tax Act (Außensteuergesetz, AStG) and the extended limited tax liability under § 2 AStG that can follow a move to a low-tax country. It reads the current consolidated text on gesetze-im-internet.de, which applies to income tax from the 2022 assessment year onwards (§ 21(1) AStG). Departures before 1 January 2022 follow the old wording of § 6 (§ 21(3) AStG) and are out of scope. This is a working paper for review, not a filed return.",
+    "source_quote_ids": [
+      "EXIT.entry",
+      "EXIT.old"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "002",
+    "prior_row_id": "leaving-germany-exit-tax:18",
+    "prior_native_LF": [
+      18,
+      18
+    ],
+    "native_LF": [
+      19,
+      19
+    ],
+    "section": "Leaving Germany: exit tax on company shares (Wegzugsteuer)",
+    "wording": "The rules of the arrival country must be checked separately. For a move to the United Arab Emirates, see `ae-tax-residency`. For a move to Switzerland, use `germany-to-switzerland-cross-border-tax`, which covers the Swiss side and the German rules for commuters and weekly stayers; this Guide stops at its edge. For a German sale of shares while still resident, see `de-capital-gains`. For a comparison of exit taxes in several countries, see `exit-taxes-when-a-family-moves`. For general German tax planning, see `germany-tax-optimization`.",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "003",
+    "prior_row_id": "leaving-germany-exit-tax:22",
+    "prior_native_LF": [
+      22,
+      22
+    ],
+    "native_LF": [
+      23,
+      23
+    ],
+    "section": "The method, step by step",
+    "wording": "1. Test the shares. § 6 AStG refers to shares within § 17(1) sentence 1 EStG. Test the holder's own direct or indirect minimum participation within the last five years, and the recent free-acquisition/predecessor exception below. This uses the combined-source reading of § 6(1) AStG with § 17(1) sentence 4 EStG described under \"Which shares\". The test concerns the company's capital, so shares in a German GmbH and in a foreign company both count. See [§ 17 EStG](https://www.gesetze-im-internet.de/estg/__17.html).",
+    "source_quote_ids": [
+      "EXIT.trigger",
+      "EXIT.shares",
+      "R11.shares",
+      "R11.exit-incorporation",
+      "R11.separate-residence-test"
+    ],
+    "disposition": "Bounded source/condition successor"
+  },
+  {
+    "id": "004",
+    "prior_row_id": "leaving-germany-exit-tax:23",
+    "prior_native_LF": [
+      23,
+      23
+    ],
+    "native_LF": [
+      24,
+      24
+    ],
+    "section": "The method, step by step",
+    "wording": "2. Test the person. § 6 applies only to a natural person who was fully taxable in Germany (unbeschränkt steuerpflichtig under § 1(1) EStG) for at least seven years in total within the twelve years before the triggering event. For shares received free of charge (gift or inheritance), the periods of the giver count too, and overlapping periods count once. See [§ 6(2) AStG](https://www.gesetze-im-internet.de/astg/__6.html).",
+    "source_quote_ids": [
+      "EXIT.person"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "005",
+    "prior_row_id": "leaving-germany-exit-tax:24",
+    "prior_native_LF": [
+      24,
+      24
+    ],
+    "native_LF": [
+      25,
+      25
+    ],
+    "section": "The method, step by step",
+    "wording": "3. Identify the trigger and its date. There are three triggers in § 6(1) AStG: the end of full tax liability because the person gives up the German residence or habitual abode (taxed at the moment liability ends); a free transfer of the shares to a person who is not fully taxable in Germany (taxed at the moment of transfer); and any other exclusion or restriction of Germany's right to tax the gain on the shares (taxed immediately before that happens). See [§ 6(1) AStG](https://www.gesetze-im-internet.de/astg/__6.html).",
+    "source_quote_ids": [
+      "EXIT.trigger"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "006",
+    "prior_row_id": "leaving-germany-exit-tax:25",
+    "prior_native_LF": [
+      25,
+      25
+    ],
+    "native_LF": [
+      26,
+      26
+    ],
+    "section": "The method, step by step",
+    "wording": "4. Compute the deemed gain. The trigger counts as a sale of the shares at their fair market value (gemeiner Wert). The gain is that value less sale costs less acquisition cost (§ 17(2) EStG), and it is business income (§ 17(1) EStG). Apply the partial-income method: the exempt share in the § 3 table below (§ 3 no. 40 letter c EStG); sale costs and the acquisition cost just used to compute the gain are themselves deductible only at the share in the § 3c table below, because § 3c(2) EStG's second half-sentence extends the same limit to acquisition cost taken into account in determining income. Then apply the § 17(3) allowance, which is scaled to the share sold and shrinks as the gain grows. See [§ 17 EStG](https://www.gesetze-im-internet.de/estg/__17.html), [§ 3 EStG](https://www.gesetze-im-internet.de/estg/__3.html) and [§ 3c EStG](https://www.gesetze-im-internet.de/estg/__3c.html).",
+    "source_quote_ids": [
+      "EXIT.trigger",
+      "EXIT.gain",
+      "EXIT.forty",
+      "EXIT.forty-c",
+      "EXIT.cost60",
+      "EXIT.allowance"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "007",
+    "prior_row_id": "leaving-germany-exit-tax:26",
+    "prior_native_LF": [
+      26,
+      26
+    ],
+    "native_LF": [
+      27,
+      27
+    ],
+    "section": "The method, step by step",
+    "wording": "5. Decide on instalments. On application, the tax on the deemed gain can be paid in seven equal yearly instalments, without interest, normally only against security. See [§ 6(4) AStG](https://www.gesetze-im-internet.de/astg/__6.html).",
+    "source_quote_ids": [
+      "EXIT.instalments"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "008",
+    "prior_row_id": "leaving-germany-exit-tax:27",
+    "prior_native_LF": [
+      27,
+      27
+    ],
+    "native_LF": [
+      28,
+      28
+    ],
+    "section": "The method, step by step",
+    "wording": "6. If the move may be temporary, test the return rule. The tax lapses if the person becomes fully taxable again within seven years and the conditions in \"Coming back\" below are met. See [§ 6(3) AStG](https://www.gesetze-im-internet.de/astg/__6.html).",
+    "source_quote_ids": [
+      "EXIT.return"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "009",
+    "prior_row_id": "leaving-germany-exit-tax:28",
+    "prior_native_LF": [
+      28,
+      28
+    ],
+    "native_LF": [
+      29,
+      29
+    ],
+    "section": "The method, step by step",
+    "wording": "7. Diary the reporting duties after leaving: an electronic notice within one month of any event that makes the remaining tax due, and a yearly confirmation of address and ownership by 31 July. See [§ 6(5) AStG](https://www.gesetze-im-internet.de/astg/__6.html).",
+    "source_quote_ids": [
+      "EXIT.reports"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "010",
+    "prior_row_id": "leaving-germany-exit-tax:29",
+    "prior_native_LF": [
+      29,
+      29
+    ],
+    "native_LF": [
+      30,
+      30
+    ],
+    "section": "The method, step by step",
+    "wording": "8. Test the extended limited tax liability for the ten years after the year of departure: a German citizen moving to a low-tax country (or to no country) while keeping substantial economic interests in Germany. See [§ 2 AStG](https://www.gesetze-im-internet.de/astg/__2.html).",
+    "source_quote_ids": [
+      "EXIT.extended-person",
+      "EXIT.low",
+      "EXIT.interests"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "011",
+    "prior_row_id": "leaving-germany-exit-tax:33",
+    "prior_native_LF": [
+      33,
+      33
+    ],
+    "native_LF": [
+      34,
+      34
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "| Item | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "012",
+    "prior_row_id": "leaving-germany-exit-tax:35",
+    "prior_native_LF": [
+      35,
+      35
+    ],
+    "native_LF": [
+      36,
+      36
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/astg/__6.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "013",
+    "prior_row_id": "leaving-germany-exit-tax:36",
+    "prior_native_LF": [
+      36,
+      36
+    ],
+    "native_LF": [
+      37,
+      37
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "| Prior period of full tax liability | at least seven years in total within the last twelve years before the trigger | \"innerhalb der letzten zwölf Jahre vor den in Absatz 1 Satz 1 Nummer 1 bis 3 genannten Tatbeständen insgesamt mindestens sieben Jahre unbeschränkt steuerpflichtig\" |",
+    "source_quote_ids": [
+      "EXIT.person"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "014",
+    "prior_row_id": "leaving-germany-exit-tax:37",
+    "prior_native_LF": [
+      37,
+      37
+    ],
+    "native_LF": [
+      38,
+      38
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "| Instalments | seven equal yearly instalments, on application | \"kann auf Antrag des Steuerpflichtigen in sieben gleichen Jahresraten entrichtet werden\" |",
+    "source_quote_ids": [
+      "EXIT.instalments"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "015",
+    "prior_row_id": "leaving-germany-exit-tax:38",
+    "prior_native_LF": [
+      38,
+      38
+    ],
+    "native_LF": [
+      39,
+      39
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "| Return window | seven years from the end of full tax liability | \"innerhalb von sieben Jahren seit Beendigung der unbeschränkten Steuerpflicht wieder unbeschränkt steuerpflichtig\" |",
+    "source_quote_ids": [
+      "EXIT.return"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "016",
+    "prior_row_id": "leaving-germany-exit-tax:39",
+    "prior_native_LF": [
+      39,
+      39
+    ],
+    "native_LF": [
+      40,
+      40
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "| Extension of the return window | at most five years in total, on application | \"insgesamt um höchstens fünf Jahre verlängern, wenn die Absicht zur Rückkehr unverändert fortbesteht\" |",
+    "source_quote_ids": [
+      "EXIT.return"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "017",
+    "prior_row_id": "leaving-germany-exit-tax:40",
+    "prior_native_LF": [
+      40,
+      40
+    ],
+    "native_LF": [
+      41,
+      41
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "| Distribution limit | more than one quarter of the value at exit | \"deren gemeiner Wert insgesamt mehr als ein Viertel des Werts im Sinne des Absatzes 1 beträgt\" |",
+    "source_quote_ids": [
+      "EXIT.return",
+      "EXIT.accelerate"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "018",
+    "prior_row_id": "leaving-germany-exit-tax:42",
+    "prior_native_LF": [
+      42,
+      42
+    ],
+    "native_LF": [
+      43,
+      43
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "**Who.** Only natural persons. The seven-year test counts years of full tax liability under § 1(1) EStG, in total, not in a row. Where the shares were received free of charge, the full tax liability of the giver (and of each earlier giver in a chain of free transfers) is added, and years in which both were fully taxable count only once. A person whose earlier exit tax lapsed because they came back is treated as covered without the seven-year test, and so is their direct or indirect successor (§ 6(2) sentence 4 AStG).",
+    "source_quote_ids": [
+      "EXIT.person"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "019",
+    "prior_row_id": "leaving-germany-exit-tax:44",
+    "prior_native_LF": [
+      44,
+      44
+    ],
+    "native_LF": [
+      45,
+      45
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "**Which shares.** Shares within § 17(1) sentence 1 EStG. § 17(1) sentence 3 defines them: shares (Aktien), GmbH shares, profit participation rights (Genussscheine) and similar participations, rights to acquire such shares, and shares in a company that opted to be taxed as a corporation under § 1a KStG. Shares in a cooperative also count (§ 17(7) EStG). § 6(1) AStG applies subject to the rules of the Income Tax Act, the Corporation Tax Act and the Reorganisation Tax Act, so shares held as business assets need a separate check (see \"When to refuse or refer\").",
+    "source_quote_ids": [
+      "EXIT.trigger",
+      "EXIT.shares",
+      "EXIT.cooperative",
+      "R11.shares",
+      "R11.exit-incorporation",
+      "R11.separate-residence-test"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "020",
+    "prior_row_id": "leaving-germany-exit-tax:46",
+    "prior_native_LF": [
+      46,
+      46
+    ],
+    "native_LF": [
+      49,
+      49
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "| Item | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "021",
+    "prior_row_id": "leaving-germany-exit-tax:48",
+    "prior_native_LF": [
+      48,
+      48
+    ],
+    "native_LF": [
+      51,
+      51
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/estg/__17.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "022",
+    "prior_row_id": "leaving-germany-exit-tax:49",
+    "prior_native_LF": [
+      49,
+      49
+    ],
+    "native_LF": [
+      52,
+      52
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "| Ordinary personal minimum shareholding, directly or indirectly, at any time within the last five years; recent free acquisitions also use the predecessor rule above | 1% | \"innerhalb der letzten fünf Jahre am Kapital der Gesellschaft unmittelbar oder mittelbar zu mindestens 1 Prozent beteiligt war\" |",
+    "source_quote_ids": [
+      "EXIT.shares",
+      "R11.shares",
+      "R11.exit-incorporation",
+      "R11.separate-residence-test"
+    ],
+    "disposition": "Bounded source/condition successor"
+  },
+  {
+    "id": "023",
+    "prior_row_id": "leaving-germany-exit-tax:50",
+    "prior_native_LF": [
+      50,
+      50
+    ],
+    "native_LF": [
+      53,
+      53
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "| Allowance against the gain, the part matching the share sold | EUR 9,060 | \"soweit er den Teil von 9 060 Euro übersteigt, der dem veräußerten Anteil\" |",
+    "source_quote_ids": [
+      "EXIT.allowance"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "024",
+    "prior_row_id": "leaving-germany-exit-tax:51",
+    "prior_native_LF": [
+      51,
+      51
+    ],
+    "native_LF": [
+      54,
+      54
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "| The allowance is reduced by the amount by which the gain exceeds the part matching the share sold of | EUR 36,100 | \"um den der Veräußerungsgewinn den Teil von 36 100 Euro übersteigt\" |",
+    "source_quote_ids": [
+      "EXIT.allowance"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "025",
+    "prior_row_id": "leaving-germany-exit-tax:53",
+    "prior_native_LF": [
+      53,
+      53
+    ],
+    "native_LF": [
+      56,
+      56
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "**The triggers (§ 6(1) AStG).** Each of these counts as a sale of the shares at fair market value:",
+    "source_quote_ids": [
+      "EXIT.trigger"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "026",
+    "prior_row_id": "leaving-germany-exit-tax:55",
+    "prior_native_LF": [
+      55,
+      55
+    ],
+    "native_LF": [
+      58,
+      58
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "- the end of full tax liability because the person gives up the residence (Wohnsitz) or habitual abode (gewöhnlicher Aufenthalt) in Germany;",
+    "source_quote_ids": [
+      "EXIT.trigger"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "027",
+    "prior_row_id": "leaving-germany-exit-tax:56",
+    "prior_native_LF": [
+      56,
+      56
+    ],
+    "native_LF": [
+      59,
+      59
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "- a free transfer (gift, or transfer on death) to a person who is not fully taxable in Germany;",
+    "source_quote_ids": [
+      "EXIT.trigger"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "028",
+    "prior_row_id": "leaving-germany-exit-tax:57",
+    "prior_native_LF": [
+      57,
+      57
+    ],
+    "native_LF": [
+      60,
+      60
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "- subject to the first two, any exclusion or restriction of Germany's right to tax the gain on the sale of the shares. The page does not limit this to a move abroad.",
+    "source_quote_ids": [
+      "EXIT.trigger"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "029",
+    "prior_row_id": "leaving-germany-exit-tax:59",
+    "prior_native_LF": [
+      59,
+      59
+    ],
+    "native_LF": [
+      62,
+      62
+    ],
+    "section": "Who and what § 6 AStG covers",
+    "wording": "After the event, the shares count as acquired at fair market value by the person (or, after a free transfer, by the successor) only to the extent the tax on the gain has been paid; otherwise they keep the original acquisition cost (§ 6(1) last sentence AStG).",
+    "source_quote_ids": [
+      "EXIT.trigger"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "030",
+    "prior_row_id": "leaving-germany-exit-tax:63",
+    "prior_native_LF": [
+      63,
+      63
+    ],
+    "native_LF": [
+      66,
+      66
+    ],
+    "section": "How the deemed gain is taxed",
+    "wording": "The deemed sale is a sale under § 17(1) EStG, and § 17(1) sentence 1 makes that gain income from business (Einkünfte aus Gewerbebetrieb). The gain is the amount by which the sale price, after sale costs, exceeds the acquisition cost (§ 17(2) sentence 1 EStG); for § 6 AStG the sale price is the fair market value. Acquisition cost includes incidental costs and later costs such as open or hidden capital contributions (§ 17(2a) EStG). Under § 3c(2) EStG, this acquisition cost is itself deductible only at the share in the § 3c table below, not in full: its second half-sentence reaches \"die Anschaffungs- oder Herstellungskosten ... mindernd zu berücksichtigen sind\", not only sale costs.",
+    "source_quote_ids": [
+      "EXIT.trigger",
+      "EXIT.shares",
+      "EXIT.gain",
+      "EXIT.cost",
+      "EXIT.cost60"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "031",
+    "prior_row_id": "leaving-germany-exit-tax:65",
+    "prior_native_LF": [
+      65,
+      65
+    ],
+    "native_LF": [
+      68,
+      68
+    ],
+    "section": "How the deemed gain is taxed",
+    "wording": "| Item | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "032",
+    "prior_row_id": "leaving-germany-exit-tax:67",
+    "prior_native_LF": [
+      67,
+      67
+    ],
+    "native_LF": [
+      70,
+      70
+    ],
+    "section": "How the deemed gain is taxed",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/estg/__3.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "033",
+    "prior_row_id": "leaving-germany-exit-tax:68",
+    "prior_native_LF": [
+      68,
+      68
+    ],
+    "native_LF": [
+      71,
+      71
+    ],
+    "section": "How the deemed gain is taxed",
+    "wording": "| Tax-free share of the sale price or fair market value within § 17(2) EStG (partial-income method, § 3 no. 40 letter c) | 40% | \"40 Prozent a) der Betriebsvermögensmehrungen oder Einnahmen aus der Veräußerung\"; letter c: \"des Veräußerungspreises oder des gemeinen Werts im Sinne des § 17 Absatz 2\" |",
+    "source_quote_ids": [
+      "EXIT.forty",
+      "EXIT.forty-c"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "034",
+    "prior_row_id": "leaving-germany-exit-tax:70",
+    "prior_native_LF": [
+      70,
+      70
+    ],
+    "native_LF": [
+      73,
+      73
+    ],
+    "section": "How the deemed gain is taxed",
+    "wording": "| Item | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "035",
+    "prior_row_id": "leaving-germany-exit-tax:72",
+    "prior_native_LF": [
+      72,
+      72
+    ],
+    "native_LF": [
+      75,
+      75
+    ],
+    "section": "How the deemed gain is taxed",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/estg/__3c.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "036",
+    "prior_row_id": "leaving-germany-exit-tax:73",
+    "prior_native_LF": [
+      73,
+      73
+    ],
+    "native_LF": [
+      76,
+      76
+    ],
+    "section": "How the deemed gain is taxed",
+    "wording": "| Share at which sale costs, other linked costs, and the acquisition cost used to compute the gain may be deducted (§ 3c(2) sentence 1) | 60% | \"bei der Ermittlung der Einkünfte nur zu 60 Prozent abgezogen werden; Entsprechendes gilt, wenn bei der Ermittlung der Einkünfte der Wert des Betriebsvermögens oder des Anteils am Betriebsvermögen oder die Anschaffungs- oder Herstellungskosten oder der an deren Stelle tretende Wert mindernd zu berücksichtigen sind.\" |",
+    "source_quote_ids": [
+      "EXIT.cost60"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "037",
+    "prior_row_id": "leaving-germany-exit-tax:75",
+    "prior_native_LF": [
+      75,
+      75
+    ],
+    "native_LF": [
+      78,
+      78
+    ],
+    "section": "How the deemed gain is taxed",
+    "wording": "The allowance in the § 17 table above is not a flat amount. It is the part of that amount that matches the share of the company being taxed, and it falls by the excess of the gain over the matching part of the taper amount, so for a large holding it is usually gone. Tax rates and the solidarity surcharge are not repeated here; see `de-einkommensteuer-freelancer` for the tariff.",
+    "source_quote_ids": [
+      "EXIT.allowance"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "038",
+    "prior_row_id": "leaving-germany-exit-tax:79",
+    "prior_native_LF": [
+      79,
+      79
+    ],
+    "native_LF": [
+      82,
+      82
+    ],
+    "section": "Paying in instalments (§ 6(4) AStG)",
+    "wording": "- The person may apply to pay the tax on the deemed gain in seven equal yearly instalments (see the § 6 table above). This applies to every destination; the current text has no separate rule for moves within the EU.",
+    "source_quote_ids": [
+      "EXIT.instalments"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "039",
+    "prior_row_id": "leaving-germany-exit-tax:80",
+    "prior_native_LF": [
+      80,
+      80
+    ],
+    "native_LF": [
+      83,
+      83
+    ],
+    "section": "Paying in instalments (§ 6(4) AStG)",
+    "wording": "- The application is normally granted only against security (Sicherheitsleistung).",
+    "source_quote_ids": [
+      "EXIT.instalments"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "040",
+    "prior_row_id": "leaving-germany-exit-tax:81",
+    "prior_native_LF": [
+      81,
+      81
+    ],
+    "native_LF": [
+      84,
+      84
+    ],
+    "section": "Paying in instalments (§ 6(4) AStG)",
+    "wording": "- The first instalment is due within one month after the tax assessment is notified. The others are due on 31 July of each following year.",
+    "source_quote_ids": [
+      "EXIT.instalments"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "041",
+    "prior_row_id": "leaving-germany-exit-tax:82",
+    "prior_native_LF": [
+      82,
+      82
+    ],
+    "native_LF": [
+      85,
+      85
+    ],
+    "section": "Paying in instalments (§ 6(4) AStG)",
+    "wording": "- The instalments carry no interest.",
+    "source_quote_ids": [
+      "EXIT.instalments"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "042",
+    "prior_row_id": "leaving-germany-exit-tax:84",
+    "prior_native_LF": [
+      84,
+      84
+    ],
+    "native_LF": [
+      87,
+      87
+    ],
+    "section": "Paying in instalments (§ 6(4) AStG)",
+    "wording": "**Events that make the rest due at once.** The tax not yet paid falls due within one month after any of these:",
+    "source_quote_ids": [
+      "EXIT.accelerate"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "043",
+    "prior_row_id": "leaving-germany-exit-tax:86",
+    "prior_native_LF": [
+      86,
+      86
+    ],
+    "native_LF": [
+      89,
+      89
+    ],
+    "section": "Paying in instalments (§ 6(4) AStG)",
+    "wording": "1. an instalment is not paid on time;",
+    "source_quote_ids": [
+      "EXIT.accelerate"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "044",
+    "prior_row_id": "leaving-germany-exit-tax:87",
+    "prior_native_LF": [
+      87,
+      87
+    ],
+    "native_LF": [
+      90,
+      90
+    ],
+    "section": "Paying in instalments (§ 6(4) AStG)",
+    "wording": "2. the person does not meet the reporting duties in § 6(5) (below);",
+    "source_quote_ids": [
+      "EXIT.accelerate"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "045",
+    "prior_row_id": "leaving-germany-exit-tax:88",
+    "prior_native_LF": [
+      88,
+      88
+    ],
+    "native_LF": [
+      91,
+      91
+    ],
+    "section": "Paying in instalments (§ 6(4) AStG)",
+    "wording": "3. the person files for insolvency;",
+    "source_quote_ids": [
+      "EXIT.accelerate"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "046",
+    "prior_row_id": "leaving-germany-exit-tax:89",
+    "prior_native_LF": [
+      89,
+      89
+    ],
+    "native_LF": [
+      92,
+      92
+    ],
+    "section": "Paying in instalments (§ 6(4) AStG)",
+    "wording": "4. to the extent the shares are sold or transferred. A free transfer on death to a natural person does not count; the heir then steps into the test;",
+    "source_quote_ids": [
+      "EXIT.accelerate",
+      "EXIT.death"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "047",
+    "prior_row_id": "leaving-germany-exit-tax:90",
+    "prior_native_LF": [
+      90,
+      90
+    ],
+    "native_LF": [
+      93,
+      93
+    ],
+    "section": "Paying in instalments (§ 6(4) AStG)",
+    "wording": "5. to the extent profit distributions or returns of capital (Einlagenrückgewähr) are made and their total fair market value is more than one quarter of the value at exit (see the § 6 table above).",
+    "source_quote_ids": [
+      "EXIT.accelerate"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "048",
+    "prior_row_id": "leaving-germany-exit-tax:92",
+    "prior_native_LF": [
+      92,
+      92
+    ],
+    "native_LF": [
+      95,
+      95
+    ],
+    "section": "Paying in instalments (§ 6(4) AStG)",
+    "wording": "The quarter test is a total, not a yearly test. A GmbH owner who plans to take large dividends after leaving should check it before the first payout.",
+    "source_quote_ids": [
+      "EXIT.accelerate"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "049",
+    "prior_row_id": "leaving-germany-exit-tax:96",
+    "prior_native_LF": [
+      96,
+      96
+    ],
+    "native_LF": [
+      99,
+      99
+    ],
+    "section": "Coming back (§ 6(3) AStG)",
+    "wording": "If the end of full tax liability rests on an absence that is only temporary, and the person becomes fully taxable in Germany again within seven years of leaving, the exit tax lapses. It lapses only to the extent that all three of these hold:",
+    "source_quote_ids": [
+      "EXIT.return"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "050",
+    "prior_row_id": "leaving-germany-exit-tax:98",
+    "prior_native_LF": [
+      98,
+      98
+    ],
+    "native_LF": [
+      101,
+      101
+    ],
+    "section": "Coming back (§ 6(3) AStG)",
+    "wording": "1. in the meantime the shares were not sold, transferred, or put into business assets;",
+    "source_quote_ids": [
+      "EXIT.return"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "051",
+    "prior_row_id": "leaving-germany-exit-tax:99",
+    "prior_native_LF": [
+      99,
+      99
+    ],
+    "native_LF": [
+      102,
+      102
+    ],
+    "section": "Coming back (§ 6(3) AStG)",
+    "wording": "2. there were no profit distributions or returns of capital whose total fair market value is more than one quarter of the value at exit; and",
+    "source_quote_ids": [
+      "EXIT.return"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "052",
+    "prior_row_id": "leaving-germany-exit-tax:100",
+    "prior_native_LF": [
+      100,
+      100
+    ],
+    "native_LF": [
+      103,
+      103
+    ],
+    "section": "Coming back (§ 6(3) AStG)",
+    "wording": "3. Germany's right to tax the gain on the shares is restored at least to the extent it existed when the person left.",
+    "source_quote_ids": [
+      "EXIT.return"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "053",
+    "prior_row_id": "leaving-germany-exit-tax:102",
+    "prior_native_LF": [
+      102,
+      102
+    ],
+    "native_LF": [
+      105,
+      105
+    ],
+    "section": "Coming back (§ 6(3) AStG)",
+    "wording": "A transfer on death to a natural person does not break condition 1, if that person (or a later heir by death) meets the conditions. The tax office that was competent when the person left (§ 19 AO) may extend the seven years, on application, by at most five years in total, if the intention to return still exists. The same rules apply where the trigger was a restriction of Germany's taxing right caused by a temporary absence, and where shares were given to a natural person who becomes fully taxable in Germany within seven years of the gift.",
+    "source_quote_ids": [
+      "EXIT.return"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "054",
+    "prior_row_id": "leaving-germany-exit-tax:104",
+    "prior_native_LF": [
+      104,
+      104
+    ],
+    "native_LF": [
+      107,
+      107
+    ],
+    "section": "Coming back (§ 6(3) AStG)",
+    "wording": "**Payment in return cases.** Where a return is planned, the tax is deferred for the period the tax office grants. On application, no instalments are collected. Beyond the five events above, the tax falls due within one month after an event that means the tax can no longer lapse, or after the person tells the tax office they no longer intend to return. If the tax does not lapse and the person chose not to pay instalments, interest is charged for the deferral period under § 234 AO (§ 6(4) last sentences AStG).",
+    "source_quote_ids": [
+      "EXIT.return-defer"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "055",
+    "prior_row_id": "leaving-germany-exit-tax:108",
+    "prior_native_LF": [
+      108,
+      108
+    ],
+    "native_LF": [
+      111,
+      111
+    ],
+    "section": "Reporting after leaving (§ 6(5) AStG)",
+    "wording": "- The person (or their universal successor) must notify the tax office that was competent at the time of the trigger (§ 19 AO) of any event that makes the remaining tax due (§ 6(4) sentences 5 or 7 AStG). The notice is due within one month after the event and is filed electronically in the official data format.",
+    "source_quote_ids": [
+      "EXIT.reports"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "056",
+    "prior_row_id": "leaving-germany-exit-tax:109",
+    "prior_native_LF": [
+      109,
+      109
+    ],
+    "native_LF": [
+      112,
+      112
+    ],
+    "section": "Reporting after leaving (§ 6(5) AStG)",
+    "wording": "- Every year by 31 July, the person must send the same office their current address and confirm that the shares are still attributed to them (or to the successor after a free transfer), electronically in the official data format.",
+    "source_quote_ids": [
+      "EXIT.reports"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "057",
+    "prior_row_id": "leaving-germany-exit-tax:110",
+    "prior_native_LF": [
+      110,
+      110
+    ],
+    "native_LF": [
+      113,
+      113
+    ],
+    "section": "Reporting after leaving (§ 6(5) AStG)",
+    "wording": "- On application, to avoid undue hardship, the tax office may accept a paper form signed by hand instead.",
+    "source_quote_ids": [
+      "EXIT.reports"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "058",
+    "prior_row_id": "leaving-germany-exit-tax:111",
+    "prior_native_LF": [
+      111,
+      111
+    ],
+    "native_LF": [
+      114,
+      114
+    ],
+    "section": "Reporting after leaving (§ 6(5) AStG)",
+    "wording": "- This version of § 6(5) applies from the 2025 assessment year (§ 21(7) AStG). Failing these duties makes the whole remaining tax due (event 2 above).",
+    "source_quote_ids": [
+      "EXIT.report-year",
+      "EXIT.accelerate"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "059",
+    "prior_row_id": "leaving-germany-exit-tax:115",
+    "prior_native_LF": [
+      115,
+      115
+    ],
+    "native_LF": [
+      118,
+      118
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "| Item | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "060",
+    "prior_row_id": "leaving-germany-exit-tax:117",
+    "prior_native_LF": [
+      117,
+      117
+    ],
+    "native_LF": [
+      120,
+      120
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/astg/__2.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "061",
+    "prior_row_id": "leaving-germany-exit-tax:118",
+    "prior_native_LF": [
+      118,
+      118
+    ],
+    "native_LF": [
+      121,
+      121
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "| Applies only in years when the income caught by § 2 is in total more than | EUR 16,500 | \"insgesamt beschränkt steuerpflichtigen Einkünfte mehr als 16 500 Euro betragen\" |",
+    "source_quote_ids": [
+      "EXIT.extended-person"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "062",
+    "prior_row_id": "leaving-germany-exit-tax:119",
+    "prior_native_LF": [
+      119,
+      119
+    ],
+    "native_LF": [
+      122,
+      122
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "| Low-tax test: model taxable income of an unmarried resident of the other territory | EUR 77,000 | \"die ein steuerpflichtiges Einkommen von 77 000 Euro bezieht, um mehr als ein Drittel geringer\" |",
+    "source_quote_ids": [
+      "EXIT.low"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "063",
+    "prior_row_id": "leaving-germany-exit-tax:120",
+    "prior_native_LF": [
+      120,
+      120
+    ],
+    "native_LF": [
+      123,
+      123
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "| Substantial interest: limited partner's share of the partnership's income, more than | 25% | \"mehr als 25 Prozent der Einkünfte im Sinne des § 15 Abs. 1 Satz 1 Nr. 2\" |",
+    "source_quote_ids": [
+      "EXIT.interests"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "064",
+    "prior_row_id": "leaving-germany-exit-tax:121",
+    "prior_native_LF": [
+      121,
+      121
+    ],
+    "native_LF": [
+      124,
+      124
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "| Substantial interest: German-source income as a share of all income, more than | 30% | \"im Veranlagungszeitraum mehr als 30 Prozent ihrer sämtlichen Einkünfte betragen oder 62 000 Euro übersteigen\" |",
+    "source_quote_ids": [
+      "EXIT.interests"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "065",
+    "prior_row_id": "leaving-germany-exit-tax:122",
+    "prior_native_LF": [
+      122,
+      122
+    ],
+    "native_LF": [
+      125,
+      125
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "| Substantial interest: German-source income exceeds | EUR 62,000 | \"mehr als 30 Prozent ihrer sämtlichen Einkünfte betragen oder 62 000 Euro übersteigen\" |",
+    "source_quote_ids": [
+      "EXIT.interests"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "066",
+    "prior_row_id": "leaving-germany-exit-tax:123",
+    "prior_native_LF": [
+      123,
+      123
+    ],
+    "native_LF": [
+      126,
+      126
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "| Substantial interest: German-source assets as a share of all assets, more than | 30% | \"mehr als 30 Prozent ihres Gesamtvermögens beträgt oder 154 000 Euro übersteigt\" |",
+    "source_quote_ids": [
+      "EXIT.interests"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "067",
+    "prior_row_id": "leaving-germany-exit-tax:124",
+    "prior_native_LF": [
+      124,
+      124
+    ],
+    "native_LF": [
+      127,
+      127
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "| Substantial interest: German-source assets exceed | EUR 154,000 | \"mehr als 30 Prozent ihres Gesamtvermögens beträgt oder 154 000 Euro übersteigt\" |",
+    "source_quote_ids": [
+      "EXIT.interests"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "068",
+    "prior_row_id": "leaving-germany-exit-tax:126",
+    "prior_native_LF": [
+      126,
+      126
+    ],
+    "native_LF": [
+      129,
+      129
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "**Who (§ 2(1) AStG).** A natural person who, in the ten years before their full tax liability ended, was fully taxable in Germany as a German (als Deutscher) for at least five years in total, AND who:",
+    "source_quote_ids": [
+      "EXIT.extended-person"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "069",
+    "prior_row_id": "leaving-germany-exit-tax:128",
+    "prior_native_LF": [
+      128,
+      128
+    ],
+    "native_LF": [
+      131,
+      131
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "1. is resident in a foreign territory where their income is taxed only at a low level, or is resident in no foreign territory; and",
+    "source_quote_ids": [
+      "EXIT.extended-person"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "070",
+    "prior_row_id": "leaving-germany-exit-tax:129",
+    "prior_native_LF": [
+      129,
+      129
+    ],
+    "native_LF": [
+      132,
+      132
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "2. has substantial economic interests in Germany.",
+    "source_quote_ids": [
+      "EXIT.extended-person"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "071",
+    "prior_row_id": "leaving-germany-exit-tax:131",
+    "prior_native_LF": [
+      131,
+      131
+    ],
+    "native_LF": [
+      134,
+      134
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "A person who was not German during those years is not caught by the wording.",
+    "source_quote_ids": [
+      "EXIT.extended-person"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "072",
+    "prior_row_id": "leaving-germany-exit-tax:133",
+    "prior_native_LF": [
+      133,
+      133
+    ],
+    "native_LF": [
+      136,
+      136
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "**Low tax (§ 2(2) AStG).** Either test is enough:",
+    "source_quote_ids": [
+      "EXIT.low"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "073",
+    "prior_row_id": "leaving-germany-exit-tax:135",
+    "prior_native_LF": [
+      135,
+      135
+    ],
+    "native_LF": [
+      138,
+      138
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "- the foreign income tax on an unmarried resident of that territory with the taxable income in the table above is more than one third lower than German income tax on the same income; OR",
+    "source_quote_ids": [
+      "EXIT.low"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "074",
+    "prior_row_id": "leaving-germany-exit-tax:136",
+    "prior_native_LF": [
+      136,
+      136
+    ],
+    "native_LF": [
+      139,
+      139
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "- the person's foreign income tax can be cut substantially by a preferential regime compared with normal taxation.",
+    "source_quote_ids": [
+      "EXIT.low"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "075",
+    "prior_row_id": "leaving-germany-exit-tax:138",
+    "prior_native_LF": [
+      138,
+      138
+    ],
+    "native_LF": [
+      141,
+      141
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "Under both tests, the person escapes the low-tax finding by proving that the taxes they pay on their total income are at least two thirds of the income tax they would owe if fully taxable in Germany.",
+    "source_quote_ids": [
+      "EXIT.low"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "076",
+    "prior_row_id": "leaving-germany-exit-tax:140",
+    "prior_native_LF": [
+      140,
+      140
+    ],
+    "native_LF": [
+      143,
+      143
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "**Substantial economic interests (§ 2(3) AStG).** Any one of these is enough:",
+    "source_quote_ids": [
+      "EXIT.interests"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "077",
+    "prior_row_id": "leaving-germany-exit-tax:142",
+    "prior_native_LF": [
+      142,
+      142
+    ],
+    "native_LF": [
+      145,
+      145
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "1. at the start of the assessment year the person is an owner or co-owner (Unternehmer or Mitunternehmer) of a business in Germany, or, as a limited partner, gets more than the share in the table above of the partnership's income, or owns a § 17(1) EStG shareholding in a German corporation (inländische Kapitalgesellschaft);",
+    "source_quote_ids": [
+      "EXIT.interests"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "078",
+    "prior_row_id": "leaving-germany-exit-tax:143",
+    "prior_native_LF": [
+      143,
+      143
+    ],
+    "native_LF": [
+      146,
+      146
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "2. their income that would not be foreign income under § 34d EStG is, in the assessment year, more than the share of all income in the table above OR exceeds the amount in the table above;",
+    "source_quote_ids": [
+      "EXIT.interests"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "079",
+    "prior_row_id": "leaving-germany-exit-tax:144",
+    "prior_native_LF": [
+      144,
+      144
+    ],
+    "native_LF": [
+      147,
+      147
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "3. at the start of the assessment year, their assets whose yields would not be foreign income under § 34d EStG are more than the share of total assets in the table above OR exceed the amount in the table above.",
+    "source_quote_ids": [
+      "EXIT.interests"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "080",
+    "prior_row_id": "leaving-germany-exit-tax:146",
+    "prior_native_LF": [
+      146,
+      146
+    ],
+    "native_LF": [
+      149,
+      149
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "Interests held through a foreign company within § 5 AStG count in proportion to the holding (§ 2(4) AStG).",
+    "source_quote_ids": [
+      "EXIT.indirect"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "081",
+    "prior_row_id": "leaving-germany-exit-tax:148",
+    "prior_native_LF": [
+      148,
+      148
+    ],
+    "native_LF": [
+      151,
+      151
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "**How long.** Until ten years have passed after the end of the year in which full tax liability ended.",
+    "source_quote_ids": [
+      "EXIT.extended-person"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "082",
+    "prior_row_id": "leaving-germany-exit-tax:150",
+    "prior_native_LF": [
+      150,
+      150
+    ],
+    "native_LF": [
+      153,
+      153
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "**Which income.** Beyond normal limited tax liability, all income under § 2(1) sentence 1 first half-sentence EStG that would not be foreign income under § 34d EStG if the person were fully taxable. Income not earned through a foreign permanent establishment or a permanent representative abroad is treated as belonging to a deemed German place of management. The whole § 2 rule applies only in years when that income is in total more than the amount in the table above.",
+    "source_quote_ids": [
+      "EXIT.extended-person"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "083",
+    "prior_row_id": "leaving-germany-exit-tax:152",
+    "prior_native_LF": [
+      152,
+      152
+    ],
+    "native_LF": [
+      155,
+      155
+    ],
+    "section": "Extended limited tax liability after a move to a low-tax country (§ 2 AStG)",
+    "wording": "**Rate and cap.** The tax rate is the rate on all the person's income worldwide, leaving out investment income taxed at the separate flat rate of § 32d(1) EStG (§ 2(5) AStG). If the person proves that § 2 leads to more German tax than they would owe if fully taxable and living only in Germany, the excess is not collected (§ 2(6) AStG).",
+    "source_quote_ids": [
+      "EXIT.rate",
+      "EXIT.cap"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "084",
+    "prior_row_id": "leaving-germany-exit-tax:156",
+    "prior_native_LF": [
+      156,
+      156
+    ],
+    "native_LF": [
+      159,
+      159
+    ],
+    "section": "Worked framing: a GmbH owner moving to the UAE (hypothetical)",
+    "wording": "All facts here are hypothetical. Anna is a German citizen. She has lived in Germany all her life and owns all the shares in a German GmbH, which she founded with a hypothetical capital contribution of 25,000 euros. In 2026 she gives up her German home and moves to Dubai. A valuation puts the shares at a hypothetical fair market value of 2,000,000 euros on the day she leaves.",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "085",
+    "prior_row_id": "leaving-germany-exit-tax:158",
+    "prior_native_LF": [
+      158,
+      158
+    ],
+    "native_LF": [
+      161,
+      161
+    ],
+    "section": "Worked framing: a GmbH owner moving to the UAE (hypothetical)",
+    "wording": "1. Shares: she holds all the capital, so the § 17 threshold in the table above is met. § 6 can apply.",
+    "source_quote_ids": [
+      "EXIT.trigger",
+      "EXIT.shares"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "086",
+    "prior_row_id": "leaving-germany-exit-tax:159",
+    "prior_native_LF": [
+      159,
+      159
+    ],
+    "native_LF": [
+      162,
+      162
+    ],
+    "section": "Worked framing: a GmbH owner moving to the UAE (hypothetical)",
+    "wording": "2. Person: she was fully taxable for far more than seven of the last twelve years. She is covered.",
+    "source_quote_ids": [
+      "EXIT.person"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "087",
+    "prior_row_id": "leaving-germany-exit-tax:160",
+    "prior_native_LF": [
+      160,
+      160
+    ],
+    "native_LF": [
+      163,
+      163
+    ],
+    "section": "Worked framing: a GmbH owner moving to the UAE (hypothetical)",
+    "wording": "3. Trigger: the end of her full tax liability when she gives up her German residence and habitual abode. The deemed sale happens at that moment.",
+    "source_quote_ids": [
+      "EXIT.trigger"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "088",
+    "prior_row_id": "leaving-germany-exit-tax:161",
+    "prior_native_LF": [
+      161,
+      161
+    ],
+    "native_LF": [
+      164,
+      164
+    ],
+    "section": "Worked framing: a GmbH owner moving to the UAE (hypothetical)",
+    "wording": "4. Deemed gain: 2,000,000 less 25,000 is a hypothetical gain of 1,975,000 euros, before sale costs. Under the partial-income method, 40% of the 2,000,000 fair market value is exempt, and the 25,000 acquisition cost is itself only 60% deductible against the taxable 60% (§ 3c(2) EStG), so, ignoring sale costs, the taxable amount before the allowance is 60% of 1,975,000, a hypothetical 1,185,000 euros. At this size the § 17(3) allowance is gone. The tax itself is computed with the normal tariff; this Guide does not compute it.",
+    "source_quote_ids": [
+      "EXIT.gain",
+      "EXIT.forty",
+      "EXIT.forty-c",
+      "EXIT.cost60",
+      "EXIT.allowance"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "089",
+    "prior_row_id": "leaving-germany-exit-tax:162",
+    "prior_native_LF": [
+      162,
+      162
+    ],
+    "native_LF": [
+      165,
+      165
+    ],
+    "section": "Worked framing: a GmbH owner moving to the UAE (hypothetical)",
+    "wording": "5. Payment: she can apply for seven yearly instalments, without interest, normally against security. If she later sells the GmbH, or takes distributions above one quarter of the exit value in total, the rest falls due within one month.",
+    "source_quote_ids": [
+      "EXIT.instalments",
+      "EXIT.accelerate"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "090",
+    "prior_row_id": "leaving-germany-exit-tax:163",
+    "prior_native_LF": [
+      163,
+      163
+    ],
+    "native_LF": [
+      166,
+      166
+    ],
+    "section": "Worked framing: a GmbH owner moving to the UAE (hypothetical)",
+    "wording": "6. Reporting: every year by 31 July she confirms her address and that she still owns the shares; any event that makes the tax due is reported within one month.",
+    "source_quote_ids": [
+      "EXIT.reports"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "091",
+    "prior_row_id": "leaving-germany-exit-tax:164",
+    "prior_native_LF": [
+      164,
+      164
+    ],
+    "native_LF": [
+      167,
+      167
+    ],
+    "section": "Worked framing: a GmbH owner moving to the UAE (hypothetical)",
+    "wording": "7. Return: if her absence is only temporary and she becomes fully taxable again within seven years (extendable on application by up to five more), and the three conditions in \"Coming back\" hold, the tax lapses.",
+    "source_quote_ids": [
+      "EXIT.return"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "092",
+    "prior_row_id": "leaving-germany-exit-tax:165",
+    "prior_native_LF": [
+      165,
+      165
+    ],
+    "native_LF": [
+      168,
+      168
+    ],
+    "section": "Worked framing: a GmbH owner moving to the UAE (hypothetical)",
+    "wording": "8. Extended limited tax liability: as a German citizen with at least five years of full tax liability in the last ten, who still owns a § 17 shareholding in a German GmbH, she meets § 2(3) no. 1 at the start of each year she keeps the shares. Whether the UAE is a low-tax territory is tested under § 2(2); see `ae-tax-residency` for the UAE side. If both hold, her income that would not be foreign income under § 34d EStG is taxed under § 2 for the ten years after 2026, in each year it is in total above the § 2 threshold in the table above.",
+    "source_quote_ids": [
+      "EXIT.extended-person",
+      "EXIT.interests",
+      "EXIT.low"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "093",
+    "prior_row_id": "leaving-germany-exit-tax:169",
+    "prior_native_LF": [
+      169,
+      169
+    ],
+    "native_LF": [
+      172,
+      172
+    ],
+    "section": "Ask the client first",
+    "wording": "- In how many of the last twelve years were you fully taxable in Germany, and did you receive any of the shares as a gift or inheritance?",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "094",
+    "prior_row_id": "leaving-germany-exit-tax:170",
+    "prior_native_LF": [
+      170,
+      170
+    ],
+    "native_LF": [
+      173,
+      173
+    ],
+    "section": "Ask the client first",
+    "wording": "- Which company shares do you hold, what percentage of each company's capital, and what are your estimates of their value today and of what you paid for them? What were the highest direct or indirect holdings in the last five years? For a recent gift or inheritance, obtain exact acquisition/transfer dates and the relevant predecessor holdings and dates, including any chain of free transfers.",
+    "source_quote_ids": [
+      "R11.shares",
+      "R11.exit-incorporation",
+      "R11.separate-residence-test"
+    ],
+    "disposition": "Bounded source/condition successor"
+  },
+  {
+    "id": "095",
+    "prior_row_id": "leaving-germany-exit-tax:171",
+    "prior_native_LF": [
+      171,
+      171
+    ],
+    "native_LF": [
+      174,
+      174
+    ],
+    "section": "Ask the client first",
+    "wording": "- Which country are you moving to, and on what date will you give up your German home and habitual abode?",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "096",
+    "prior_row_id": "leaving-germany-exit-tax:172",
+    "prior_native_LF": [
+      172,
+      172
+    ],
+    "native_LF": [
+      175,
+      175
+    ],
+    "section": "Ask the client first",
+    "wording": "- Will you keep German income, a German home, a German business or the shares in a German company after you leave?",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "097",
+    "prior_row_id": "leaving-germany-exit-tax:173",
+    "prior_native_LF": [
+      173,
+      173
+    ],
+    "native_LF": [
+      176,
+      176
+    ],
+    "section": "Ask the client first",
+    "wording": "- Might you come back to Germany within seven years, and will the company pay dividends or return capital in the meantime?",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "098",
+    "prior_row_id": "leaving-germany-exit-tax:174",
+    "prior_native_LF": [
+      174,
+      174
+    ],
+    "native_LF": [
+      177,
+      177
+    ],
+    "section": "Ask the client first",
+    "wording": "- Are you a German citizen?",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "099",
+    "prior_row_id": "leaving-germany-exit-tax:178",
+    "prior_native_LF": [
+      178,
+      178
+    ],
+    "native_LF": [
+      181,
+      181
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Departures or transfers before 1 January 2022: the old wording of § 6 applies (§ 21(3) AStG). Refer.",
+    "source_quote_ids": [
+      "EXIT.old"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "100",
+    "prior_row_id": "leaving-germany-exit-tax:179",
+    "prior_native_LF": [
+      179,
+      179
+    ],
+    "native_LF": [
+      182,
+      182
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Shares held as business assets, shares received in a reorganisation (§ 17(6) EStG), or a company moving its seat or management abroad (§ 17(5) EStG): other rules apply first. Refer.",
+    "source_quote_ids": [
+      "EXIT.reorg",
+      "EXIT.companymove",
+      "EXIT.trigger"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "101",
+    "prior_row_id": "leaving-germany-exit-tax:180",
+    "prior_native_LF": [
+      180,
+      180
+    ],
+    "native_LF": [
+      183,
+      183
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- The third trigger (Germany's taxing right restricted without a move, for example through a tax treaty): the page states the rule but not when a treaty restricts it. Refer to an adviser who can read the treaty.",
+    "source_quote_ids": [
+      "EXIT.trigger"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "102",
+    "prior_row_id": "leaving-germany-exit-tax:181",
+    "prior_native_LF": [
+      181,
+      181
+    ],
+    "native_LF": [
+      184,
+      184
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Valuation of the shares at fair market value: this Guide gives no valuation method. Refer.",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "103",
+    "prior_row_id": "leaving-germany-exit-tax:182",
+    "prior_native_LF": [
+      182,
+      182
+    ],
+    "native_LF": [
+      185,
+      185
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- The arrival country's tax: not covered here. For the UAE see `ae-tax-residency`; for Switzerland see `germany-to-switzerland-cross-border-tax`.",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "104",
+    "prior_row_id": "leaving-germany-exit-tax:183",
+    "prior_native_LF": [
+      183,
+      183
+    ],
+    "native_LF": [
+      186,
+      186
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Inheritance and gift tax after leaving, and trade tax: not covered.",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "105",
+    "prior_row_id": "leaving-germany-exit-tax:184",
+    "prior_native_LF": [
+      184,
+      184
+    ],
+    "native_LF": [
+      187,
+      187
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Do not state a combined or effective rate. No allowed page prints one.",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "106",
+    "prior_row_id": "leaving-germany-exit-tax:185",
+    "prior_native_LF": [
+      185,
+      185
+    ],
+    "native_LF": [
+      188,
+      188
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Whether the § 3 no. 40 exemption and the § 17(3) allowance apply to a § 6 AStG deemed gain rests on § 6(1)'s own wording treating the trigger as a sale \"im Sinne des § 17 Absatz 1 Satz 1\" EStG; no AStG or EStG page states the chain in one sentence. Confirm before relying on it for a large gain.",
+    "source_quote_ids": [
+      "EXIT.trigger",
+      "EXIT.forty",
+      "EXIT.forty-c",
+      "EXIT.cost60",
+      "EXIT.allowance"
+    ],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "107",
+    "prior_row_id": "leaving-germany-exit-tax:189",
+    "prior_native_LF": [
+      189,
+      189
+    ],
+    "native_LF": [
+      192,
+      192
+    ],
+    "section": "Sources",
+    "wording": "- [§ 6 AStG, Besteuerung des Vermögenszuwachses](https://www.gesetze-im-internet.de/astg/__6.html)",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "108",
+    "prior_row_id": "leaving-germany-exit-tax:190",
+    "prior_native_LF": [
+      190,
+      190
+    ],
+    "native_LF": [
+      193,
+      193
+    ],
+    "section": "Sources",
+    "wording": "- [§ 2 AStG, Einkommensteuer](https://www.gesetze-im-internet.de/astg/__2.html)",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "109",
+    "prior_row_id": "leaving-germany-exit-tax:191",
+    "prior_native_LF": [
+      191,
+      191
+    ],
+    "native_LF": [
+      194,
+      194
+    ],
+    "section": "Sources",
+    "wording": "- [§ 21 AStG, Anwendungsvorschriften](https://www.gesetze-im-internet.de/astg/__21.html)",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "110",
+    "prior_row_id": "leaving-germany-exit-tax:192",
+    "prior_native_LF": [
+      192,
+      192
+    ],
+    "native_LF": [
+      195,
+      195
+    ],
+    "section": "Sources",
+    "wording": "- [§ 17 EStG, Veräußerung von Anteilen an Kapitalgesellschaften](https://www.gesetze-im-internet.de/estg/__17.html)",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "111",
+    "prior_row_id": "leaving-germany-exit-tax:193",
+    "prior_native_LF": [
+      193,
+      193
+    ],
+    "native_LF": [
+      196,
+      196
+    ],
+    "section": "Sources",
+    "wording": "- [§ 3 EStG, steuerfreie Einnahmen (no. 40)](https://www.gesetze-im-internet.de/estg/__3.html)",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "112",
+    "prior_row_id": "leaving-germany-exit-tax:194",
+    "prior_native_LF": [
+      194,
+      194
+    ],
+    "native_LF": [
+      197,
+      197
+    ],
+    "section": "Sources",
+    "wording": "- [§ 3c EStG, Anteilige Abzüge](https://www.gesetze-im-internet.de/estg/__3c.html)",
+    "source_quote_ids": [],
+    "disposition": "Exact predecessor current unit, native coordinates rebound"
+  },
+  {
+    "id": "113",
+    "prior_row_id": null,
+    "prior_native_LF": null,
+    "native_LF": [
+      47,
+      47
+    ],
+    "section": "R11–17 new ordinary condition / computed separator / actual source read",
+    "wording": "**Recent free acquisition: combined-source interpretation.** Read § 6(1) AStG's reference to § 17(1) sentence 1 EStG together with § 17(1) sentence 4, which expressly applies sentence 1 to the following predecessor case. If the relevant share was acquired free of charge within the five years before the deemed disposal, a holder who did not personally meet the 1% test must still be tested where the predecessor, or an earlier predecessor in a chain of free transfers, met that participation test within the relevant five-year period under sentence 1. Record the acquisition and each relevant transfer date, direct/indirect holdings and the predecessor's qualifying holding dates. A recent gift or inheritance of a 0.5% share therefore does not fail solely because the current holder never reached 1%, if the qualifying predecessor test is met. This is a separate shareholding rule from the residence-period aggregation in § 6(2) AStG; all other person, trigger and tax-chain conditions still apply.",
+    "source_quote_ids": [
+      "R11.shares",
+      "R11.exit-incorporation",
+      "R11.separate-residence-test"
+    ],
+    "disposition": "New bounded ordinary correction; any fixture amounts explicitly stipulated/computed"
+  },
+  {
+    "id": "114",
+    "prior_row_id": null,
+    "prior_native_LF": null,
+    "native_LF": [
+      199,
+      199
+    ],
+    "section": "R11–17 new ordinary condition / computed separator / actual source read",
+    "wording": "Selected § 6(1)–(2) AStG and § 17(1) EStG clauses re-read on 29 October 2026 for the predecessor share test and its distinct residence-period conditions; the combined-source interpretation is labelled above.",
+    "source_quote_ids": [
+      "R11.shares",
+      "R11.exit-incorporation",
+      "R11.separate-residence-test"
+    ],
+    "disposition": "New bounded ordinary correction; any fixture amounts explicitly stipulated/computed"
+  }
+]

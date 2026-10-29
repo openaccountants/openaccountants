@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-29",
+  "status": "Writer ledger complete with precise retained limits; ready for different country review, not independent PASS.",
+  "current_guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e",
+  "current_units": 289,
+  "exact_quotes": 135,
+  "source_identities": 46,
+  "old_topic_origins": 550,
+  "unclassified": 0,
+  "writer_controls": 49,
+  "actual_read_scope_index": "actual-read-scopes.json",
+  "quote_checks": "quote-binding-checks.json"
+}

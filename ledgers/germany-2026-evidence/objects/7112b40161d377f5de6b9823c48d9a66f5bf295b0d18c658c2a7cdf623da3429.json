@@ -1,0 +1,16 @@
+{
+  "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-trade-tax.md",
+  "before_Guide_sha256": "d8ca2561b7b20f54a376ef3469679521ecbe0623944c34e1ef57e27709ea74d4",
+  "after_Guide_sha256": "7ba930a0417d470d9fe2baaeb87ef835891383270ce931a4377535380bac6e56",
+  "bytes": 40351,
+  "ledger_sha256": "ff116f30defd925575a8561955441923343237649757c4ad4a35f8b602cc4834",
+  "current_rows": 102,
+  "full_inverse": true,
+  "only_obsolete_clause_and_version_changed": true,
+  "both_original_oa_and_full_example_prose_exact": true,
+  "all_original_URL_occurrences_exact": true,
+  "protected_metadata_except_version_exact": true,
+  "CTA_attribution_exact": true,
+  "remaining_form_and_Munich_reservations_exact": true,
+  "native_LF_unchanged": true
+}

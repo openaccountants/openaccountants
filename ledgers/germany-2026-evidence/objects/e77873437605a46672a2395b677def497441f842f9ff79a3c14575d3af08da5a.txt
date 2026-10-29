@@ -1,0 +1,521 @@
+Bundesfinanzministerium - Fragen und Antworten zur Einführung der obligatorischen (verpflichtenden) E-Rechnung zum 1. Januar 2025
+Einwilligung in Reichweitenanalyse
+Helfen Sie mit, unsere Website zu verbessern!
+Wenn Sie auf „Einwilligen“ klicken, können wir statistische Informationen erfassen und besser verstehen, wie Besucherinnen und Besucher unsere Website nutzen.
+Das passiert ✓ anonym und ohne personenbezogene Daten, ✓ ohne Cookies, ✓ auf Servern in Deutschland ✓ und ohne Übermittlung an Dritte.
+Außerdem können Sie Ihre Einwilligung jederzeit auf der Datenschutzseite widerrufen.
+Einwilligen
+Ablehnen
+mehr Informationen
+Dienst:
+Matomo
+Beschreibung:
+Erfassung von Kennzahlen zur Webanalyse
+Speicherung von/Zugriff auf Informationen auf Ihrem Endgerät:
+Nach Ihrer Einwilligung wird das Skript „matomo.js“ ausgeführt. Folgende Geräteinformationen werden ausgelesen: Gerätetyp, Gerätemarke, Gerätemodell (in den meisten Fällen nicht für Desktopgeräte), Bildschirmauflösung, Betriebssystem-Version, Browser/Browser-Engines und Browser-Plugins.
+Es werden keine Matomo-Cookies auf Ihrem Endgerät gespeichert.
+Welche Daten werden erhoben?
+Neben den genannten Geräteinformationen werden Daten zu Ihren Nutzungsaktivitäten gespeichert: Ihre gekürzte/verfremdete IP-Adresse; aufgerufene URLs; die Website, von der auf die aufgerufene Seite gelangt wurde (Referrer-Site); Verweildauer; heruntergeladene PDFs; eingegebene Suchbegriffe. Die Rohdaten werden 30 Tage gespeichert und danach automatisiert gelöscht.
+Schutz personenbezogener Daten:
+Ihre IP-Adresse wird nicht vollständig gespeichert, die letzten beiden Oktettes werden zum frühestmöglichen Zeitpunkt weggelassen/verfremdet (Beispiel: 183.172.xxx.xxx). Auch weitere personenbezogene Daten werden nicht erhoben.
+Zweck der Datenerhebung und Rechtsgrundlage:
+Die Verwendung von Matomo hilft uns, die Nutzerfreundlichkeit unserer Website stetig zu verbessern. Eine Profilbildung findet nicht statt. Die Verarbeitung Ihrer Daten dient dazu, eine zielgerichtete Information der Öffentlichkeit über die Tätigkeit des Ministeriums sicherzustellen und basiert auf § 3 Absatz 1 E-Government-Gesetz in Verbindung mit § 3 BDSG. Durch die frühestmögliche Verfremdung der IP-Adresse wird dem Interesse der Nutzerinnen und Nutzer an dem Schutz ihrer personenbezogenen Daten hinreichend Rechnung getragen. Der Zugriff auf Ihre Gerätedaten erfolgt aufgrund Ihrer Einwilligung gemäß Art. 25 Abs. 1 TTDSG.
+Ort der Verarbeitung:
+Matomo wird lokal auf den Servern unseres Dienstleisters in Deutschland betrieben. Es findet keine Datenübermittlung an Matomo oder sonstige Dritte statt.
+Weitere Informationen:
+Weitere Angaben zu Ihren Rechten, zum Datenschutzverantwortlichen sowie Kontaktdaten finden Sie auf unserer Datenschutzseite.
+Navigation überspringen
+Navigation anspringen
+Suche anspringen
+Navigation
+Bundesministerium der Finanzen
+Federal Ministry of Finance
+Unsere Meilensteine
+Kopfzeile
+Kontakt
+Schriftgröße
+Schalter öffnen
+Schalter schließen
+A
+A
+Gebärdensprache
+Gebärdensprache
+Einfache Sprache
+Leichte Sprache
+English
+Menü
+Menü
+Schließen
+Hauptmenü
+Zurück
+Themen
+Weiter
+Zurück
+Top-Themen
+Weiter
+Überblick
+Bundeshaushalt 2027
+Sondervermögen für Infrastruktur und Klimaneutralität
+Reform der Einkommensteuer
+Frühstartrente
+Aktivrente
+Aktionsplan gegen Steuerkriminalität
+Aktionsplan gegen Organisierte Kriminalität
+Zurück
+Steuern
+Weiter
+Überblick
+Wachstumsbooster
+Steuerarten
+Internationales Steuerrecht
+Steuerschätzung & Steuereinnahmen
+Steuerverwaltung & Steuerrecht
+Steuerliche Themengebiete
+Formulare
+Zurück
+Öffentliche Finanzen
+Weiter
+Überblick
+Bundeshaushalt
+Sondervermögen für Infrastruktur und Klimaneutralität
+Stabilitätspolitik
+Föderale Finanzbeziehungen
+Nachhaltigkeitsstrategie
+Wiedergutmachung
+Daten und Berichte
+Zurück
+Europa
+Weiter
+Überblick
+Krieg in der Ukraine
+Eurogruppe & ECOFIN
+Der Euro
+EU-Haushalt
+Deutscher Aufbau- und Resilienzplan (DARP)
+Deutsch-Französische Zusammenarbeit
+Zurück
+Internationales/Finanzmarkt
+Weiter
+Überblick
+Internationale Zusammenarbeit
+Förderung der privaten Altersvorsorge
+Start-up-Standort stärken
+Finanzmarktpolitik
+Finanzkriminalität bekämpfen
+Finanzielle Bildung
+Zurück
+Bundesvermögen
+Weiter
+Überblick
+Beteiligungspolitik
+Privatisierungspolitik
+Zurück
+Zoll
+Weiter
+Überblick
+Post und Reise
+Aufgaben und Struktur des Zolls
+Finanzkontrolle Schwarzarbeit
+Zurück
+Briefmarken & Sammlermünzen
+Weiter
+Überblick
+Briefmarken
+Sammlermünzen
+Öffentliche Finanzen
+Deutschlandkarte zum Sondervermögen – Hier wirken Investitionen
+Öffentliche Finanzen
+Monitoring-Dashboard zum Sondervermögen für Infrastruktur und Klimaneutralität
+Schließen
+Schließen
+Zurück
+Ministerium
+Weiter
+Minister und Hausleitung
+Ostbeauftragte der Bundesregierung
+Arbeiten und Ausbildung
+Abteilungen
+Bundesfinanzakademie
+Beiräte
+BMF-Geschäftsbereich
+Veranstaltungen
+Geschichte
+Ministerium
+DRH 360° – das Online-Erlebnis des Detlev-Rohwedder-Hauses
+Ministerium
+Veranstaltungen des Bun­des­fi­nanz­mi­nis­te­ri­ums
+Monatsbericht
+BMF-Monatsbericht September 2026
+Ministerium
+Investitions- und Innovationsbeirat
+Schließen
+Schließen
+Zurück
+Service
+Weiter
+Newsletter
+Social Media Newsroom
+Publikationen
+Gesetze und Gesetzesvorhaben
+Rechner
+FAQ und Glossar
+Themenportale
+Transparenzinitiativen
+Hinweisgeberschutz im BMF
+Steuern
+Kfz-Steu­er-Rech­ner
+Steuern
+Lohn- und Einkommensteuerrechner
+Service
+Warnungen vor Betrugsversuchen im Namen des Bun­des­fi­nanz­mi­nis­te­ri­ums
+Ministerium
+FAQ: Antworten zu vielen Fragen aus dem Finanzbereich
+Schließen
+Schließen
+Zurück
+Presse
+Weiter
+Pressemitteilungen
+Termine
+Reden, Interviews und Namensartikel
+Pressekontakt
+Pressefotos
+Ministerium
+Social Media Newsroom
+Ministerium
+Reden und Interviews des Bundesfinanzministers
+Schließen
+Schließen
+Zurück
+Mediathek
+Weiter
+Übersicht
+BMFpresents
+#Finanzisch
+Livestream
+Bundeshaushalt
+Lars Klingbeil stellt den Haushaltsentwurf für 2027 vor
+Öffentliche Finanzen
+Infografiken zum Sondervermögen für Infrastruktur und Klimaneutralität
+Schließen
+Schließen
+Kontakt
+Schriftgröße
+Schalter öffnen
+Schalter schließen
+A
+A
+Gebärdensprache
+Gebärdensprache
+Einfache Sprache
+Leichte Sprache
+English
+zur Suche
+Suche
+Suche
+Suchbegriff(e) eingeben
+Suchen
+Suche
+Ergebnisse für:
+Beliebte Inhalte
+Kfz-Steuer-Rechner
+Aktivrente
+Reisekosten
+Kaufpreisaufteilung
+E-Rechnung
+Formulare
+Umrechnungskurse
+Sie sind hier:
+Startseite
+Weiter
+Aktuelle Seite
+Service
+Menü öffnen
+Menü schließen
+SeiteAendern
+Newsletter
+Social Media Newsroom
+Publikationen
+Gesetze und Gesetzesvorhaben
+Rechner
+FAQ und Glossar
+Themenportale
+Transparenzinitiativen
+Hinweisgeberschutz im BMF
+Service
+Weiter
+Aktuelle Seite
+FAQ und Glossar
+Menü öffnen
+Menü schließen
+SeiteAendern
+Link (intern)
+FAQ
+Glossar
+FAQ und Glossar
+Weiter
+FAQ
+23.03.2026
+Steuern
+Fragen und Antworten zur Einführung der obligatorischen (verpflichtenden) E-Rechnung zum 1. Januar 2025
+Stand: März 2026
+Mit dem Wachstumschancengesetz sind die Regelungen zur Ausstellung von Rechnungen nach § 14 UStG für nach dem 31. Dezember 2024 ausgeführte Umsätze neu gefasst worden. Ab dem 1. Januar 2025 ist bei Umsätzen zwischen inländischen Unternehmern regelmäßig eine elektronische Rechnung (E-Rechnung) zu verwenden. Bei der Einführung dieser obligatorischen (verpflichtenden) E-Rechnung gelten Übergangsregelungen. Insbesondere private Endverbraucher sind von diesen Regelungen nicht betroffen.
+In unseren FAQ erhalten Sie Antworten auf die am häufigsten gestellten Fragen zur E-Rechnung. Die detaillierte Verwaltungsauffassung kann den BMF-Schreiben vom 15. Oktober 2024 und 15. Oktober 2025 entnommen werden.
+Das BMF ist dabei ausschließlich für steuerliche Fragen von grundsätzlicher Bedeutung zur E-Rechnung zuständig und kann daher keine Auskünfte zur technischen Umsetzung (siehe hierzu die Fragen 7, 15 und 16), zur Anwendung der E-Rechnung im B2G-Bereich (siehe hierzu Frage 4a) oder zu zivilrechtlichen beziehungsweise steuerlichen Einzelfragen erteilen.
+Zoomlink
+BildVergroessern
+Schließen
+Schließen
+FAQ – Fragen und Antworten
+{0} ({1}, {2}, {3})
+Hochauflösendes Bild (PNG, 76KB)
+Inhalt
+1. Warum wird die verpflichtende E‑Rechnung eingeführt?
+2. Wie ändern sich die Regelungen zu elektronischen Rechnungen?
+3. Was ist ein „inländisches Unternehmen“?
+4. Gibt es Ausnahmen von der verpflichtenden E-Rechnung?
+4a. Wie ist das Verhältnis zwischen den Vorschriften im B2B- und im B2G-Bereich?
+5. Fallen auch Vereine unter die Regelungen zur verpflichtenden E‑Rechnung?
+6. Brauchen Unternehmen eine Leitweg‑ID?
+7. Welche Formate sind für eine E-Rechnung zulässig?
+7a. Welche Angaben müssen im strukturierten Teil einer E-Rechnung enthalten sein?
+7b. Was gilt in bestimmten Einzelfällen?
+8. Wie kann eine E-Rechnung übermittelt und empfangen werden?
+9. In welchem Umfang muss eine E‑Rechnung eine elektronische Verarbeitung ermöglichen?
+10. Müssen E‑Rechnungen auch für Barkäufe ausgestellt werden?
+11. Welche Übergangsregelungen gelten für die Ausstellung einer E‑Rechnung?
+12. Gibt es Ausnahmen für den Empfang von E‑Rechnungen?
+12a. Welche Möglichkeiten bestehen, eine empfangene E-Rechnung für das menschliche Auge lesbar darzustellen?
+13. Wie muss eine E-Rechnung aufbewahrt werden?
+14. Wie kann eine E‑Rechnung beim Finanzamt eingereicht werden?
+15. Wohin kann ich mich bei Fragen zur Norm EN 16931 wenden oder Hinweise für deren Überarbeitung melden?
+16. Wo finde ich weitere Informationen zur E-Rechnung?
+1. Warum wird die verpflichtende E‑Rechnung eingeführt?
+Durch die E‑Rechnung soll die Digitalisierung der deutschen Wirtschaft gefördert werden. Insbesondere im Rechnungswesen können Prozesse vereinfacht werden. So müssen zukünftig z. B. die Rechnungsdaten beim Empfänger nicht nochmals erfasst werden. Dadurch werden doppelte Arbeitsgänge und hierbei entstehende Fehler vermieden.
+Für die Rechnungsaussteller und -empfänger ergeben sich erhebliche Einsparpotentiale, wenn ein großer Teil von Buchungsbelegen nur noch in strukturierter elektronischer Form vorliegt, die medienbruchfrei weiterverarbeitet werden können.
+Eng verbunden mit der Einführung der obligatorischen E-Rechnung ist die zu einem späteren Zeitpunkt vorgesehene Einführung eines Meldesystems zur zeitnahen und transaktionsbezogenen elektronischen Meldung von bestimmten Rechnungsangaben an die Finanzverwaltung. Für das Meldesystem ist es technisch erforderlich, dass bestimmte Rechnungsdaten elektronisch auf den dann vorgesehenen Übertragungswegen übermittelt werden. Die E-Rechnung bereitet das Meldesystem daher vor, wodurch auch technische und organisatorische Anpassungen in den Unternehmen zeitlich entzerrt werden. Die für das Meldesystem erforderlichen gesetzlichen Änderungen wird die Bundesregierung zu gegebener Zeit dem Gesetzgeber vorschlagen.
+Die folgenden, aktuell gültigen Regelungen werden zu gegebener Zeit noch im Hinblick auf die dann bestehenden Anforderungen des Meldesystems überprüft und gegebenenfalls angepasst.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+2. Wie ändern sich die Regelungen zu elektronischen Rechnungen?
+Für einen bis zum 31. Dezember 2024 ausgeführten Umsatz gilt als elektronische Rechnung eine Rechnung, die in einem elektronischen Format ausgestellt und empfangen wird. Unter diese Definition fällt z. B. auch ein per E‑Mail versandtes einfaches PDF-Dokument.
+Seit dem 1. Januar 2025 liegt eine E‑Rechnung nur noch dann vor, wenn die Rechnung in einem strukturierten elektronischen Format ausgestellt, übermittelt und empfangen wird und eine elektronische Verarbeitung ermöglicht. Beispielsweise ein einfaches PDF‑Dokument fällt dann nicht mehr unter diese Definition, da es kein strukturiertes Format hat.
+Rechnungen, die die Voraussetzungen für eine E‑Rechnung nicht erfüllen, fallen seit dem 1. Januar 2025 unter die Bezeichnung „sonstige Rechnung“. Insbesondere Rechnungen auf Papier oder in einem unstrukturierten elektronischen Format (z. B. einfaches PDF‑Dokument) stellen eine sonstige Rechnung dar.
+Entscheidend ist der Zeitpunkt des Umsatzes. Wurde der Umsatz vor dem 1. Januar 2025 ausgeführt, kann eine Rechnung auch dann noch nach den alten Regelungen ausgestellt werden, wenn sie erst später gestellt wird.
+Außerdem gelten Übergangsregelungen, bis tatsächlich alle Unternehmen eine E‑Rechnung ausstellen müssen (siehe hierzu Frage 11). Solange eine sonstige Rechnung ausgestellt werden darf, gilt eine solche Rechnung für den Vorsteuerabzug weiterhin als ordnungsmäßige Rechnung.
+Zum Empfang einer E‑Rechnung siehe Frage 12.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+3. Was ist ein „inländisches Unternehmen“?
+Als Unternehmer gilt, wer eine gewerbliche oder berufliche Tätigkeit selbständig ausübt (§ 2 UStG). Darunter fallen z. B. auch Freiberufler oder Personen, die selbst ausschließlich steuerfreie Umsätze erbringen, wie etwa Vermieter von Wohnungen, Kleinunternehmer oder Ärzte.
+Als inländisches Unternehmen gilt eines, das seinen Sitz, seine Geschäftsleitung oder eine am Umsatz beteiligte Betriebsstätte im Gebiet der Bundesrepublik Deutschland hat. Besteht kein Sitz, gelten der Wohnsitz oder gewöhnliche Aufenthaltsort des Unternehmers.
+Ausländische Unternehmer, die in Deutschland umsatzsteuerlich registriert sind, hier aber keine feste Niederlassung haben, können auf diesen Umstand in ihrer Rechnung hinweisen, um zu begründen, warum sie keine E‑Rechnung stellen. Ein Rechnungsempfänger kann sich bei Beachtung der Sorgfalt eines ordentlichen Kaufmanns auf eine solche Angabe verlassen.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+4. Gibt es Ausnahmen von der verpflichtenden E-Rechnung?
+Die Regelungen zur verpflichtenden E‑Rechnung gelten nur, wenn überhaupt eine umsatzsteuerliche Pflicht zur Ausstellung einer Rechnung besteht. Daher gelten die Regelungen nicht
+bei Rechnungen an Endverbraucher (sogenannte B2C-Umsätze) und
+für viele steuerfreie Umsätze (solche nach § 4 Nummer 8 bis 29 UStG, z. B. steuerfreie Finanzdienstleistungen, steuerfreie Grundstücksvermietungen).
+In diesen Fällen ist die Ausstellung einer Rechnung aus umsatzsteuerlicher Sicht regelmäßig freiwillig.
+Auch wenn eine umsatzsteuerliche Verpflichtung besteht, eine Rechnung auszustellen, braucht diese nicht als E‑Rechnung ausgestellt zu werden bei
+Kleinbeträgen (bis 250 Euro Bruttobetrag, § 33 UStDV),
+Fahrausweisen, die als Rechnung gelten (§ 34 UStDV),
+Leistungen, die von Kleinunternehmern erbracht werden (§ 34a UStDV),
+Leistungen an juristische Personen, die nicht Unternehmer sind (z. B. viele Vereine – siehe auch Frage 5 – oder staatliche Einrichtungen), und
+bestimmten Leistungen an Endverbraucher im Zusammenhang mit einem Grundstück.
+In diesen Fällen kann auch eine sonstige Rechnung ausgestellt werden. Wechselt ein Kleinunternehmer zur Regelbesteuerung, ist er unter den übrigen Voraussetzungen ab diesem Zeitpunkt auch zur Ausstellung von E-Rechnungen verpflichtet.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+4a. Wie ist das Verhältnis zwischen den Vorschriften im B2B- und im B2G-Bereich?
+Rechnungen an die öffentliche Verwaltung (sogenannte B2G-Umsätze) fallen nicht unter die umsatzsteuerlichen Regelungen für die verpflichtende E‑Rechnung, wenn die Verwaltung nicht als Unternehmer handelt. Allerdings sind Lieferanten und Dienstleister auch zur elektronischen Rechnungsstellung gegenüber öffentlichen Auftraggebern verpflichtet, z. B. seit dem 27. November 2020 auf Grundlage der E‑Rechnungsverordnung des Bundes (ERechV). Diese Regelungen sind neben den umsatzsteuerlichen Verpflichtungen zu beachten.
+Es besteht kein Rangverhältnis zwischen dem UStG und der ERechV. Beide Vorschriften sind nebeneinander für ihren jeweiligen Geltungsbereich zu beachten. Dies kann dazu führen, dass ein Sachverhalt nach der einen Vorschrift ein Wahlrecht zulässt, die andere Vorschrift diese Wahlfreiheit aber faktisch einschränkt.
+Beispiele hierfür sind die unterschiedlichen Grenzwerte für die Verwendung einer E‑Rechnung (UStG: über 250 Euro, ERechV: ab 1.000 Euro) oder unterschiedliche Übermittlungswege (UStG: verschiedene Möglichkeiten – siehe auch Frage 8; ERechV: Verwendung von OZG-RE).
+Weitere Informationen zum Thema E‑Rechnung an den Bund finden Sie auf der Internetseite www.e-rechnung-bund.de, die vom Beschaffungsamt des Bundesministeriums des Inneren zur Verfügung gestellt wird.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+5. Fallen auch Vereine unter die Regelungen zur verpflichtenden E‑Rechnung?
+Vereine können sowohl eine nichtunternehmerische als auch eine unternehmerische Tätigkeit ausüben. Soweit der Verein unternehmerisch tätig ist, sind die allgemeinen Regelungen für die verpflichtende E‑Rechnung anzuwenden. Das bedeutet: Der Verein muss dann E‑Rechnungen empfangen können. Darüber hinaus muss der Verein selbst E-Rechnungen ausstellen, sofern keine der unter Frage 4 genannten Ausnahmen vorliegt oder die Übergangsfristen (siehe Frage 11) genutzt werden.
+Betreffen Leistungen den nichtunternehmerischen Bereich des Vereins, muss der Verein weder E-Rechnungen empfangen können noch selbst E‑Rechnungen ausstellen. Zwar besteht auch für Umsätze an eine juristische Person, die kein Unternehmer ist (also z. B. an einen nichtunternehmerisch tätigen Verein), eine Pflicht zur Ausstellung einer Rechnung. Diese kann aber auch als sonstige Rechnung ausgestellt und übermittelt werden.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+6. Brauchen Unternehmen eine Leitweg‑ID?
+Für die Erstellung von E-Rechnungen zwischen Unternehmen (B2B-Bereich) wird grundsätzlich keine sogenannte Leitweg-ID benötigt. Eine Leitweg-ID ist nur erforderlich, wenn eine E-Rechnung an eine Behörde gestellt werden soll (sogenannter B2G-Bereich, siehe auch Frage 4a). Nur dann benötigt der Rechnungssteller die Leitweg-ID der rechnungsempfangenden Behörde, da so eine eindeutige elektronische Adressierung und Weiterleitung der E-Rechnung an den öffentlichen Auftraggeber ermöglicht wird. Einzelheiten zur Leitweg-ID finden Sie auch unter www.e-rechnung-bund.de/faq/leitweg-id/.
+In der Norm EN 16931 (siehe Frage 7) kann im Feld „BT-10 (Buyer reference)“ ein vom Erwerber zugewiesener und für interne Lenkungszwecke benutzter Bezeichner angegeben werden, um die Verarbeitung der Rechnung in seinem System zu vereinfachen (z. B. durch eine Lieferantennummer). Im B2G-Bereich dient dieses Feld der Angabe der Leitweg-ID. Daher ist in manchen Formaten eine Angabe verpflichtend vorgesehen. Da im B2B-Bereich keine Leitweg-ID erforderlich ist, ist in diesen Fällen umsatzsteuerlich bereits die Angabe eines Platzhalters (z. B. „-“) ausreichend. Ob der Rechnungsempfänger für dieses Feld einen eingangs erwähnten Bezeichner festlegt, ist seine betriebsinterne Entscheidung.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+7. Welche Formate sind für eine E-Rechnung zulässig?
+Eine E‑Rechnung liegt insbesondere dann vor, wenn sie die Vorgaben der europäischen Normenreihe EN 16931 erfüllt (siehe dazu auch Frage 15), die ein strukturiertes, auf einer XML-Datei basierendes Format vorgibt. Dies bedeutet, dass die Inhalte der Rechnung automatisch elektronisch weiterverarbeitet werden können.
+Das BMF ist dabei für die steuerlichen Vorgaben und Rahmenbedingungen zuständig, nicht jedoch für
+die in der Normenreihe EN 16931 enthaltenen Anforderungen beziehungsweise deren technische Umsetzung oder
+die Überarbeitung (Ergänzung oder Anpassung von Inhalten) in der Normenreihe EN 16931.
+Hierzu wird auf Frage 15 hingewiesen.
+Insbesondere die in Deutschland üblichen Formate XRechnung und ZUGFeRD ab Version 2.0.1 (mit Ausnahme der Profile MINIMUM und BASIC-WL) erfüllen die umsatzsteuerlichen Voraussetzungen für eine E‑Rechnung.
+Ob eine Rechnungsdatei die technischen Formatvorgaben der Norm EN 16931 und die geltenden Geschäftsregeln – mit denen die enthaltenen Angaben auf logische Fehler kontrolliert werden können – erfüllt, kann durch eine Validierung überprüft werden. Eine Validierung ist zwar keine unmittelbare Voraussetzung für die steuerliche Anerkennung der Rechnung (z. B. hinsichtlich des Vorsteuerabzugs). Sie kann aber dabei helfen, Fehler zu vermeiden, indem sie z. B. auf fehlende oder unlogische Pflichtangaben hinweist. Dadurch wird ein Unternehmer bei der Erfüllung seiner rechtlichen Pflichten unterstützt. Eine Validierung ist daher sinnvoll. Es wird empfohlen, diese bereits bei Erstellung und Versand einer E‑Rechnung durchzuführen. Aus Gründen der Gleichbehandlung aller Wirtschaftsbeteiligten kann das BMF aber keine bestimmte Validierungsanwendung empfehlen.
+Weiterhin kann das Format einer E‑Rechnung auch zwischen Rechnungsaussteller und Rechnungsempfänger vereinbart werden. Voraussetzung für eine solche Vereinbarung ist, dass das verwendete Format die richtige und vollständige Extraktion der nach dem UStG erforderlichen Angaben aus der E-Rechnung ermöglicht. Sofern diese Voraussetzungen erfüllt sind, können dadurch z. B. EDI-Verfahren wie EDIFACT weiter für E‑Rechnungen genutzt werden.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+7a. Welche Angaben müssen im strukturierten Teil einer E-Rechnung enthalten sein?
+Voraussetzung für eine E-Rechnung ist u. a., dass sie eine elektronische Verarbeitung ermöglicht (§ 14 Absatz 1 Satz 3 UStG). Dies bedeutet, dass für eine ordnungsmäßige Rechnung alle umsatzsteuerrechtlichen Pflichtangaben im strukturierten Teil der E-Rechnung enthalten sein müssen. Denn nur dann ist eine automatisierte Weiterverarbeitung der Daten möglich und die gesetzliche Anforderung erfüllt. Ein bloßer Verweis in den strukturierten Daten auf eine (z. B. leistungsbeschreibende) Anlage, in der die Rechnungspflichtangaben in unstrukturierter Form enthalten sind, genügt nicht, da dann keine vollständige elektronische Verarbeitung möglich ist.
+Hinsichtlich der Leistungsbeschreibung gilt, dass die im strukturierten Teil der E-Rechnung enthaltenen Angaben eine eindeutige und leicht nachprüfbare Feststellung der Leistung ermöglichen müssen. Ergänzende Angaben können jedoch in einem in der E-Rechnung enthaltenen Anhang aufgenommen werden (z. B. eine Aufschlüsselung von Stundennachweisen in einer PDF-Datei).
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+7b. Was gilt in bestimmten Einzelfällen?
+Sammelrechnung: Auch in einer E-Rechnung ist es rechtlich zulässig, den Kalendermonat als Leistungszeitpunkt anzugeben (§ 31 Absatz 4 UStDV). Somit können mehrere in einem Monat erfolgte Leistungen in einer einzigen E-Rechnung zusammengefasst werden („Sammelrechnung“).
+Berichtigung: Sofern eine Pflicht zur Ausstellung einer E-Rechnung besteht, hat auch die Berichtigung (§ 31 Absatz 5 UStDV) als E-Rechnung (unter Verwendung des Rechnungstyps für eine Berichtigung) zu erfolgen. Während der Übergangsfristen kann aber eine Rechnungsberichtigung weiterhin auch ohne Verwendung einer E-Rechnung vorgenommen werden (zu den Übergangsfristen und zum Zustimmungserfordernis bei anderen elektronischen Formaten siehe Frage 11). Zudem ist es rechtlich zulässig, die Berichtigung von (einzelnen) Positionen in einer folgenden E-Rechnung vorzunehmen, solange sich das Berichtigungsdokument spezifisch und eindeutig auf die ursprüngliche E-Rechnung bezieht.
+Bauleistung: Bei einer E-Rechnung über eine Bauleistung ist es jedenfalls derzeit ausreichend, wenn im strukturierten Teil als Leistungsbeschreibung nur die einzelnen Gewerke mit den entsprechenden Summen enthalten sind. In diesem Fall muss in einer – menschenlesbaren – Anlage eine detaillierte Aufschlüsselung nach dem Leistungsverzeichnis enthalten sein, auf die im strukturierten Teil eindeutig hinzuweisen ist. Eine solche Anlage stellt dann eine ergänzende Angabe (siehe auch Frage 7a) dar.
+Anzahlungs-, Voraus- und Abschlagsrechnungen, die vor dem Stichtag für die verpflichtende Ausstellung einer E-Rechnung (siehe Frage 11) erteilt werden, müssen nicht als E-Rechnung übermittelt werden, auch wenn Leistungserbringung und Zahlung erst nach diesem Stichtag erfolgen.
+Endrechnung: In einer Endrechnung in Form einer E-Rechnung kann die Absetzung der vereinnahmten Teilentgelte (§ 14 Absatz 5 UStG) in einem beigefügten, unstrukturierten Anhang erfolgen, wenn im strukturierten Teil der E-Rechnung ausdrücklich auf diese Anlage hingewiesen wird. Diese bereits in Rn. 48 des BMF-Schreibens vom 15. Oktober 2024, BStBl I S. 1320, enthaltene Regelung kann auch über den 31. Dezember 2027 hinaus angewandt werden.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+8. Wie kann eine E-Rechnung übermittelt und empfangen werden?
+Um den Austausch von E‑Rechnungen möglichst unkompliziert zu gestalten, sieht das Gesetz keinen bestimmten Weg vor, über den eine E‑Rechnung übermittelt werden muss. Dadurch wird die notwendige Flexibilität für verschiedene Lösungen in der Praxis erreicht. Daher kommen z. B. der Versand per E‑Mail, die Bereitstellung der Daten mittels einer elektronischen Schnittstelle, der gemeinsame Zugriff auf einen zentralen Speicherort innerhalb eines Konzernverbundes, die Übergabe z. B. auf einem USB‑Stick oder der Download über ein Internetportal in Betracht. Der Übermittlungsweg der E‑Rechnung im konkreten Einzelfall kann nur zivilrechtlich zwischen den Vertragsparteien geklärt werden.
+Allerdings muss ein Unternehmen seit dem 1. Januar 2025 den Empfang einer E-Rechnung sicherstellen. Dazu reicht bereits ein E‑Mail‑Postfach aus.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+9. In welchem Umfang muss eine E‑Rechnung eine elektronische Verarbeitung ermöglichen?
+Aus der Definition, dass eine E‑Rechnung eine elektronische Verarbeitung ermöglichen muss, ergeben sich keine weitergehenden Verpflichtungen. Der Rechnungsempfänger ist nicht verpflichtet, tatsächlich eine weitergehende elektronische Verarbeitung durchzuführen, als dies ohnehin schon durch die Regelungen zur Aufbewahrung erforderlich ist (siehe hierzu Frage 13). Er kann durch eine elektronische Verarbeitung die Chancen der Digitalisierung nutzen, ist dazu aber nicht verpflichtet.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+10. Müssen E‑Rechnungen auch für Barkäufe ausgestellt werden?
+Für Leistungen, die bar bezahlt werden, gelten keine besonderen Regelungen. Daher ist z. B. auch für ein Geschäftsessen in einem Restaurant oder für einen Materialeinkauf eines Unternehmers in einem Baumarkt eine E‑Rechnung auszustellen, wenn der Rechnungsbetrag über 250 Euro liegt und der Rechnungsaussteller keinen Gebrauch von den Übergangsregelungen machen kann oder möchte.
+Es bietet sich in derartigen Fällen gegebenenfalls an, dass zunächst vor Ort eine sonstige Rechnung (z. B. in Form eines Kassenbelegs) ausgestellt wird, die nachträglich durch eine E-Rechnung berichtigt wird. Die E‑Mail‑Adresse des Rechnungsempfängers kann bei Leistungserbringung erfragt und später eine E‑Rechnung per E‑Mail versandt werden. Den Beteiligten steht allerdings frei, die für sie optimale Lösung zu wählen.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+11. Welche Übergangsregelungen gelten für die Ausstellung einer E‑Rechnung?
+In dem Zeitraum vom 1. Januar 2025 bis zum 31. Dezember 2026 können sich alle Rechnungsaussteller dafür entscheiden, statt einer E‑Rechnung eine sonstige Rechnung auszustellen. Dabei kann eine Papierrechnung immer verwendet werden. Eine sonstige Rechnung in einem anderen elektronischen Format als eine E‑Rechnung (z. B. E-Mail mit einer PDF‑Datei) kann – wie bisher – nur verwendet werden, wenn der Empfänger diesem Format zustimmt. Hintergrund ist, dass dem Empfänger nicht zugemutet werden kann, ein ihm gänzlich unbekanntes elektronisches Format zu akzeptieren.
+Bei einem Vorjahresumsatz des Rechnungsausstellers bis 800.000 Euro verlängert sich diese Frist noch bis zum Ablauf des Jahres 2027.
+Schließlich kann ein EDI‑Verfahren, das nicht ohnehin die Voraussetzungen an eine E‑Rechnung erfüllt, noch bis zum Ablauf des Jahres 2027 verwendet werden.
+Erst nach Ablauf dieser Übergangsfristen ist bei Umsätzen zwischen inländischen Unternehmen die Verwendung einer E‑Rechnung tatsächlich verpflichtend.
+Auch wenn die Entscheidung über die Nutzung der Übergangsregelungen dem Rechnungsaussteller zusteht, ermöglichen es diese Regelungen auch einem Rechnungsempfänger, einen Vertragspartner auszuwählen, der zunächst z. B. noch Papierrechnungen ausstellt.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+12. Gibt es Ausnahmen für den Empfang von E‑Rechnungen?
+Seit dem 1. Januar 2025 besteht für inländische Unternehmen (siehe hierzu Frage 3) die Notwendigkeit, eine E‑Rechnung empfangen zu können. Das gesetzgeberische Ziel (siehe hierzu Frage 1) kann nur bei einer möglichst flächendeckenden Verwendung der E‑Rechnung erreicht werden. Es sind keine Ausnahmen vorgesehen, da solche immer auch zu Abgrenzungsproblemen und damit einer Verkomplizierung des Steuerrechts führen.
+Kleinunternehmer sind zwar von der Ausstellung einer E-Rechnung ausgenommen (siehe Frage 4), müssen aber dennoch in der Lage sein, E‑Rechnungen zu empfangen.
+Für den Empfang einer elektronischen Rechnung genügt bereits ein E‑Mail‑Postfach (vergleiche Frage 8).
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+12a. Welche Möglichkeiten bestehen, eine empfangene E-Rechnung für das menschliche Auge lesbar darzustellen?
+Bisher ging bei einem hybriden Format (z. B. ZUGFeRD) – im Falle einer Abweichung zwischen elektronischer Information und dem lesbaren Bildteil – der Bildteil vor. Mit Einführung der obligatorischen E-Rechnung hat sich dieses Verhältnis umgekehrt. Bei hybriden E-Rechnungen bilden nunmehr die im strukturierten Teil (z. B. XML) vorliegenden Rechnungsdaten den führenden Teil. Unterscheidet sich der strukturierte Rechnungsteil vom Bildteil, sind nunmehr die Daten des strukturierten Teils maßgebend. Daher empfiehlt es sich, den übermittelten XML-Teil selbstständig zu visualisieren. Hierzu sind – z. T. auch kostenfreie – Tools von privaten Anbietern verfügbar.
+Im Gegensatz zu E-Rechnungen im Format ZUGFeRD beinhalten XRechnungen keine zusätzliche Rechnungsdarstellung in Form einer PDF-Datei. Unternehmen benötigen insofern eine zusätzliche Software zur Visualisierung der XML-Datei (sogenannte Viewer). Zu diesem Zweck sind am Markt bereits jetzt eine Vielzahl kostenfreier Angebote verfügbar.
+Über das ELSTER-Portal besteht nunmehr eine weitere Möglichkeit, E-Rechnungen im Format XRechnung oder ZUGFeRD für das menschliche Auge lesbar darzustellen. Der E-Rechnungsviewer der Finanzverwaltung ist unter www.e-rechnung.elster.de erreichbar.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+13. Wie muss eine E-Rechnung aufbewahrt werden?
+Umsatzsteuerlich gilt nach § 14b Absatz 1 UStG, dass ein Unternehmer ein Doppel jeder ein- und ausgehenden Rechnung acht Jahre aufzubewahren hat. Bei einer E‑Rechnung ist zumindest deren strukturierter Teil so aufzubewahren, dass er unversehrt in seiner ursprünglichen Form vorliegt. Für Zwecke der Umsatzsteuer gilt, dass alleine wegen einer Speicherung und Archivierung von E‑Rechnungen außerhalb eines GoBD-konformen Datenverarbeitungssystems regelmäßig kein Verstoß gegen § 14b Absatz 1 UStG und die Unversehrtheit des Inhalts vorliegt.
+Ergänzend wird auf das BMF-Schreiben vom 28. November 2019, BStBl I S. 1269, zuletzt geändert durch BMF-Schreiben vom 14. Juli 2025, BStBl I S. 1502, zu den Grundsätzen zur ordnungsmäßigen Führung und Aufbewahrung von Büchern, Aufzeichnungen und Unterlagen in elektronischer Form sowie zum Datenzugriff (GoBD) hingewiesen.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+14. Wie kann eine E‑Rechnung beim Finanzamt eingereicht werden?
+Steuerpflichtige können auf Anforderung (z. B. für das Veranlagungsverfahren) E-Rechnungen über ELSTER an die Finanzverwaltung einreichen. Hierfür kann die Funktion „Belegnachreichung zur Steuererklärung“ genutzt werden (www.elster.de/eportal/formulare-leistungen/alleformulare/belegnachreichung) und die E-Rechnung dort unter „5 - Anhänge“ hochgeladen werden.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+15. Wohin kann ich mich bei Fragen zur Norm EN 16931 wenden oder Hinweise für deren Überarbeitung melden?
+Die Formatvorgaben für die E‑Rechnung beruhen auf unionsrechtlichen Vorgaben. Diese wurden ursprünglich für die Rechnungsstellung an die öffentliche Verwaltung (B2G‑Bereich) erarbeitet. Die Vorgaben wurden von dem Europäischen Komitee für Normung (Comité Européen de Normalisation – CEN) mit der europäischen Normenreihe EN 16931 technisch umgesetzt. Die Vorgaben gelten nunmehr auch für den B2B‑Bereich.
+Die Normenreihe EN 16931 ist bereits heute geeignet, um die meisten Geschäftsvorfälle auch im B2B‑Bereich darzustellen. Sie wird zudem laufend weiterentwickelt.
+Trotzdem kann es dazu kommen, dass spezielle Geschäftsvorfälle noch nicht umfassend abgebildet werden können. Wenn Hinweise für eine Weiterentwicklung der Normenreihe erforderlich sein sollten, können diese - über die Wirtschaftsverbände - an den für die Spiegelung der europäischen Arbeiten (CEN/TC 434) zuständigen Arbeitsausschuss NA 043‑03‑03 AA im DIN-Normenausschuss Informationstechnik und Anwendungen (NIA) gerichtet werden (www.din.de/de/mitwirken/normenausschuesse/nia/nationale-gremien/wdc-grem:din21:54777168). Sektorspezifische Erweiterungen, die über das Kernmodell der EN 16931-1 hinausgehen, müssen jedoch in Eigenverantwortung der jeweiligen Branchen unter Berücksichtigung der CEN-Regularien entwickelt und dauerhaft betrieben werden.
+Zum Seitenanfang
+Nach oben
+Zum Seitenanfang
+16. Wo finde ich weitere Informationen zur E-Rechnung?
+Die Europäische Kommission stellt unter https://ec.europa.eu/digital-building-blocks/sites/spaces/DIGITAL/pages/467108660/Services ein Informationsangebot zur E‑Rechnung zur Verfügung.
+Der Standard XRechnung (siehe Frage 7) wird von der Koordinierungsstelle für IT-Standards (KoSIT) entwickelt und über https://xeinkauf.de/ veröffentlicht. Zudem werden unterstützende Open‑Source‑Komponenten zur Implementierung (u. a. Validator, Testsuite) zur Verfügung gestellt. FAQ der KoSIT zu technischen Fragen der E-Rechnung können Sie unter https://xeinkauf.de/faq/xrechnung finden.
+Das ZUGFeRD-Format (siehe Frage 7) wird von dem Forum elektronische Rechnung Deutschland (FeRD) (als Teil des – von der Wirtschaft getragenen – AWV – Arbeitsgemeinschaft für wirtschaftliche Verwaltung e.V.) entwickelt. Informationen zur E-Rechnung stellt der AWV unter https://www.ferd-net.de/ zur Verfügung.
+KoSIT und FeRD haben gemeinsam als Hilfestellung eine Tabelle erstellt, aus der sich die Datenfelder (BT-Felder) zu bestimmten Rechnungspflichtangaben ergeben. Diese Tabelle können Sie unter folgenden Links finden:
+KoSIT: https://xeinkauf.de/aktuelles/xrechnung/pflichtangaben-nach-ustg-en16931/
+FeRD: https://www.ferd-net.de/publikationen-produkte/publikationen/detailseite/pflichtangaben-in-einer-e-rechnung
+Weitere branchen- beziehungsweise praxisorientierte Informationen und Handlungsempfehlungen zur E-Rechnung werden durch verschiedene Wirtschaftsverbände auf den jeweiligen Internetseiten zur Verfügung gestellt. So bietet beispielsweise auch der Bundesverband Software und Digitalisierung im Bauwesen unter www.bvbs.de/erechnung/ eine unverbindliche Übersicht zur einheitlichen Interpretation und Anwendung der sogenannten Business Terms (BT-Felder).
+Weitere Informationen zum Thema Rechnungsaustausch mit öffentlichen Verwaltungen des Bundes (siehe Frage 4a) finden Sie auf der Internetseite www.e-rechnung-bund.de, die vom Beschaffungsamt des Bundesministeriums des Inneren zur Verfügung gestellt wird.
+Die aktuelle Seite in Ihren Sozialen Netzwerken teilen.
+Teilen
+Bei Verwendung des Links kann Facebook den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Facebook teilen. Link öffnet sich in neuem Browserfenster.
+Facebook
+Bei Verwendung des Links kann Twitter den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Twitter teilen. Link öffnet sich in neuem Browserfenster.
+X/Twitter
+Bei Verwendung des Links kann LinkedIn den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über LinkedIn teilen. Link öffnet sich in neuem Browserfenster.
+LinkedIn
+Bei Verwendung des Links kann Xing den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Xing teilen. Link öffnet sich in neuem Browserfenster.
+Xing
+Drucken
+Die aktuelle Seite drucken oder als PDF herunterladen.
+Inhaltübersicht
+Folgen Sie dem Ministerium
+Instagram
+Instagram
+X/Twitter
+X/Twitter
+Facebook
+Facebook
+LinkedIn
+LinkedIn
+YouTube
+YouTube
+Folgen Sie dem Minister
+Instagram
+Instagram
+TikTok
+Facebook
+Facebook
+Beliebte Inhalte
+Link (intern)
+Kfz-Steuer-Rechner
+Link (intern)
+Lohn- und Einkommensteuerrechner
+Link (intern)
+FAQ
+Link (intern)
+Newsletter
+Link (intern)
+BMF-Schreiben
+Link (intern)
+Monatsbericht
+Link (intern)
+Umsatzsteuer-Umrechnungskurse
+Link (intern)
+AfA-Tabellen
+Themenportale
+Externer Link
+Bundeshaushalt
+Externer Link
+DRH 360°
+Externer Link
+Ostbeauftragte der Bundesregierung
+Externer Link
+Mit Geld & Verstand
+Externer Link
+Amtliche Handbücher
+Externer Link
+Ausschuss für Finanzstabilität
+Externer Link
+Datenportal
+Fußzeile
+Impressum
+Datenschutz
+Erklärung zur Barrierefreiheit
+© Bundesministerium der Finanzen
+Nach oben
+Zum Seitenanfang
+Schließen
+Glossar-Hilfe
+...
+Schließen
+Schließen
+Tabelle

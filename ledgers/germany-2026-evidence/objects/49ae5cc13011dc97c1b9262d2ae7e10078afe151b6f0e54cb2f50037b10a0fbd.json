@@ -1,0 +1,11 @@
+{
+  "id": "U14abeb78d3aba3ad",
+  "url": "https://www.gesetze-im-internet.de/milog/__2.html",
+  "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/milog-2-20261024.html",
+  "raw_sha256": "696df1ee4f0b1d307432a3559d5bfbeec6baa8b202360bce34867885b8be7d8d",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U14abeb78d3aba3ad.reader.txt",
+  "reader_sha256": "76d5b99dffa0dc5e3420f485fa475d9f5987115939d74177e099996854c519bc",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "prior cached body",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

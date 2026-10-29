@@ -1,0 +1,12 @@
+{
+  "slug": "de-treaty-withholding-rates",
+  "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-treaty-withholding-rates.md",
+  "Guide_sha256": "c00779b73dc6a31a1d8d5bfe153800399bf7a332c9be77159953aeb05f4813e8",
+  "bytes": 32880,
+  "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R58-R59-treaty-gate-precision-2026-10-29/ledgers/de-treaty-withholding-rates.md",
+  "ledger_sha256": "a598de312ae0f0d3fde454a7a73b3fc0fbb4a7b8afd914e4ae191a3a58dc6df1",
+  "rows": 166,
+  "old_topics": 329,
+  "prior_manifest": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R57-R60-treaty-writer-successor-2026-10-29/artifact-manifest.json",
+  "prior_manifest_sha256": "c3e31c3a766748c8853898c7e70e4ac0b744fd2e0e32d90997cfce0869ce8684"
+}

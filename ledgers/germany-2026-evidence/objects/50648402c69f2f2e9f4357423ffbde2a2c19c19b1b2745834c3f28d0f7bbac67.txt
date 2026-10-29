@@ -1,0 +1,77 @@
+§ 17b UStDV - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Umsatzsteuer-Durchführungsverordnung (UStDV)
+§ 17b Gelangensnachweis bei innergemeinschaftlichen Lieferungen in Beförderungs- und Versendungsfällen
+(1) Besteht keine Vermutung nach § 17a Absatz 1, hat der Unternehmer bei innergemeinschaftlichen Lieferungen (§ 6a Absatz 1 des Gesetzes) im Geltungsbereich des Gesetzes durch Belege nachzuweisen, dass er oder der Abnehmer den Gegenstand der Lieferung in das übrige Gemeinschaftsgebiet befördert oder versendet hat. Die Voraussetzung muss sich aus den Belegen eindeutig und leicht nachprüfbar ergeben.
+(2) Als eindeutig und leicht nachprüfbar nach Absatz 1 gilt insbesondere ein Nachweis, der wie folgt geführt wird: 1.
+durch das Doppel der Rechnung (§§ 14 und 14a des Gesetzes) und
+2.
+durch eine Bestätigung des Abnehmers, dass der Gegenstand der Lieferung in das übrige Gemeinschaftsgebiet gelangt ist (Gelangensbestätigung), die folgende Angaben zu enthalten hat: a)
+den Namen und die Anschrift des Abnehmers,
+b)
+die Menge des Gegenstands der Lieferung und die handelsübliche Bezeichnung einschließlich der Fahrzeug-Identifikationsnummer bei Fahrzeugen im Sinne des § 1b Absatz 2 des Gesetzes,
+c)
+im Fall der Beförderung oder Versendung durch den Unternehmer oder im Fall der Versendung durch den Abnehmer den Ort und den Monat des Erhalts des Gegenstands im übrigen Gemeinschaftsgebiet und im Fall der Beförderung des Gegenstands durch den Abnehmer den Ort und den Monat des Endes der Beförderung des Gegenstands im übrigen Gemeinschaftsgebiet,
+d)
+das Ausstellungsdatum der Bestätigung sowie
+e)
+die Unterschrift des Abnehmers oder eines von ihm zur Abnahme Beauftragten. Bei einer elektronischen Übermittlung der Gelangensbestätigung ist eine Unterschrift nicht erforderlich, sofern erkennbar ist, dass die elektronische Übermittlung im Verfügungsbereich des Abnehmers oder des Beauftragten begonnen hat.
+Die Gelangensbestätigung kann als Sammelbestätigung ausgestellt werden. In der Sammelbestätigung können Umsätze aus bis zu einem Quartal zusammengefasst werden. Die Gelangensbestätigung kann in jeder die erforderlichen Angaben enthaltenden Form erbracht werden; sie kann auch aus mehreren Dokumenten bestehen, aus denen sich die geforderten Angaben insgesamt ergeben.
+(3) In folgenden Fällen kann der Unternehmer den Nachweis auch durch folgende andere Belege als die in Absatz 2 Nummer 2 genannte Gelangensbestätigung führen: 1.
+bei der Versendung des Gegenstands der Lieferung durch den Unternehmer oder Abnehmer: a)
+durch einen Versendungsbeleg, insbesondere durch aa)
+einen handelsrechtlichen Frachtbrief, der vom Auftraggeber des Frachtführers unterzeichnet ist und die Unterschrift des Empfängers als Bestätigung des Erhalts des Gegenstands der Lieferung enthält,
+bb)
+ein Konnossement oder
+cc)
+Doppelstücke des Frachtbriefs oder Konnossements,
+b)
+durch einen anderen handelsüblichen Beleg als den Belegen nach Buchstabe a, insbesondere mit einer Bescheinigung des beauftragten Spediteurs, der folgende Angaben zu enthalten hat: aa)
+den Namen und die Anschrift des mit der Beförderung beauftragten Unternehmers sowie das Ausstellungsdatum,
+bb)
+den Namen und die Anschrift des liefernden Unternehmers sowie des Auftraggebers der Versendung,
+cc)
+die Menge des Gegenstands der Lieferung und dessen handelsübliche Bezeichnung,
+dd)
+den Empfänger des Gegenstands der Lieferung und den Bestimmungsort im übrigen Gemeinschaftsgebiet,
+ee)
+den Monat, in dem die Beförderung des Gegenstands der Lieferung im übrigen Gemeinschaftsgebiet geendet hat,
+ff)
+eine Versicherung des mit der Beförderung beauftragten Unternehmers, dass die Angaben in dem Beleg auf Grund von Geschäftsunterlagen gemacht wurden, die im Gemeinschaftsgebiet nachprüfbar sind, sowie
+gg)
+die Unterschrift des mit der Beförderung beauftragten Unternehmers.
+Bei einer elektronischen Übermittlung des Belegs an den liefernden Unternehmer ist eine Unterschrift des mit der Beförderung beauftragten Unternehmers nicht erforderlich, sofern erkennbar ist, dass die elektronische Übermittlung im Verfügungsbereich des mit der Beförderung beauftragten Unternehmers begonnen hat,
+c)
+durch eine schriftliche oder elektronische Auftragserteilung und ein von dem mit der Beförderung Beauftragten erstelltes Protokoll, das den Transport lückenlos bis zur Ablieferung beim Empfänger nachweist, oder
+d)
+in den Fällen von Postsendungen, in denen eine Belegnachweisführung nach Buchstabe c nicht möglich ist: durch eine Empfangsbescheinigung eines Postdienstleisters über die Entgegennahme der an den Abnehmer adressierten Postsendung und den Nachweis über die Bezahlung der Lieferung;
+2.
+bei der Versendung des Gegenstands der Lieferung durch den Abnehmer durch einen Nachweis über die Entrichtung der Gegenleistung für die Lieferung des Gegenstands von einem Bankkonto des Abnehmers sowie durch eine Bescheinigung des beauftragten Spediteurs, die folgende Angaben zu enthalten hat: a)
+den Namen und die Anschrift des mit der Beförderung beauftragten Unternehmers sowie das Ausstellungsdatum,
+b)
+den Namen und die Anschrift des liefernden Unternehmers sowie des Auftraggebers der Versendung,
+c)
+die Menge des Gegenstands der Lieferung und die handelsübliche Bezeichnung,
+d)
+den Empfänger des Gegenstands der Lieferung und den Bestimmungsort im übrigen Gemeinschaftsgebiet,
+e)
+eine Versicherung des mit der Beförderung beauftragten Unternehmers, den Gegenstand der Lieferung an den Bestimmungsort im übrigen Gemeinschaftsgebiet zu befördern, sowie
+f)
+die Unterschrift des mit der Beförderung beauftragten Unternehmers;
+3.
+bei der Beförderung im Unionsversandverfahren in das übrige Gemeinschaftsgebiet durch eine Bestätigung der Abgangsstelle über die innergemeinschaftliche Lieferung, die nach Eingang des Beendigungsnachweises für das Versandverfahren erteilt wird, sofern sich daraus die Lieferung in das übrige Gemeinschaftsgebiet ergibt;
+4.
+bei der Lieferung verbrauchsteuerpflichtiger Waren: a)
+bei der Beförderung verbrauchsteuerpflichtiger Waren unter Steueraussetzung und Verwendung des IT-Verfahrens EMCS (Excise Movement and Control System – EDV-gestütztes Beförderungs- und Kontrollsystem für verbrauchsteuerpflichtige Waren) durch die von der zuständigen Behörde des anderen Mitgliedstaates validierte EMCS-Eingangsmeldung,
+b)
+bei der Beförderung verbrauchsteuerpflichtiger Waren des steuerrechtlich freien Verkehrs durch die dritte Ausfertigung des vereinfachten Begleitdokuments, das dem zuständigen Hauptzollamt für Zwecke der Verbrauchsteuerentlastung vorzulegen ist;
+5.
+bei der Lieferung von Fahrzeugen, die durch den Abnehmer befördert werden und für die eine Zulassung für den Straßenverkehr erforderlich ist, durch einen Nachweis über die Zulassung des Fahrzeugs auf den Erwerber im Bestimmungsmitgliedstaat der Lieferung.
+Der Beleg nach Satz 1 muss bei der Lieferung eines Fahrzeugs im Sinne des § 1b Absatz 2 des Gesetzes zusätzlich dessen Fahrzeug-Identifikationsnummer enthalten. In den Fällen von Satz 1 Nummer 1 gilt Absatz 2 Nummer 2 Satz 2 bis 4 entsprechend. Bestehen in den Fällen des Satzes 1 Nummer 2 begründete Zweifel, dass der Liefergegenstand tatsächlich in das übrige Gemeinschaftsgebiet gelangt ist, hat der Unternehmer den Nachweis nach Absatz 1 oder mit den übrigen Belegen nach den Absätzen 2 oder 3 zu führen.
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

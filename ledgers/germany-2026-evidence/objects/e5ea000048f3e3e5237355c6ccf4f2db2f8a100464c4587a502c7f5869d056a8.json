@@ -1,0 +1,46 @@
+{
+  "three_exact_ops_inverse": true,
+  "changed_rows": [
+    "046",
+    "049"
+  ],
+  "own_selected_read_records": 3,
+  "prior21_members_unchanged": true,
+  "original2oa_exact_and_pass": true,
+  "all_old_URLs_exact": true,
+  "no_other_tax_rule_amount_case_change": true,
+  "all166_current_and329_old_identities_preserved": true,
+  "schema_errors": [],
+  "schema_warnings": [],
+  "diff_returncode": 0,
+  "controls": [
+    {
+      "EU_resident": true,
+      "third_country_treaty_resident": false,
+      "no_option_taxed": true,
+      "not_exempt": true,
+      "all_additional_definition_gates": true
+    },
+    {
+      "EU_resident": true,
+      "third_country_treaty_resident": true,
+      "no_option_taxed": true,
+      "not_exempt": true,
+      "all_additional_definition_gates": false
+    },
+    {
+      "EU_resident": true,
+      "third_country_treaty_resident": false,
+      "no_option_taxed": false,
+      "not_exempt": true,
+      "all_additional_definition_gates": false
+    },
+    {
+      "EU_resident": true,
+      "third_country_treaty_resident": false,
+      "no_option_taxed": true,
+      "not_exempt": false,
+      "all_additional_definition_gates": false
+    }
+  ]
+}

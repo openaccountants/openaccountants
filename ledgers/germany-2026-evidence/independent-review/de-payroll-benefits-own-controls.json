@@ -1,0 +1,300 @@
+{
+  "count": 49,
+  "controls": [
+    {
+      "name": "petrolprivate",
+      "actual": "487",
+      "expected": "487",
+      "pass": true
+    },
+    {
+      "name": "petrolcommute",
+      "actual": "13149/50",
+      "expected": "13149/50",
+      "pass": true
+    },
+    {
+      "name": "petroltotal",
+      "actual": "37499/50",
+      "expected": "37499/50",
+      "pass": true
+    },
+    {
+      "name": "EVquarterunrounded",
+      "actual": "32025/2",
+      "expected": "32025/2",
+      "pass": true
+    },
+    {
+      "name": "EVfloor100",
+      "actual": "16000",
+      "expected": "16000",
+      "pass": true
+    },
+    {
+      "name": "EVprivate",
+      "actual": "160",
+      "expected": "160",
+      "pass": true
+    },
+    {
+      "name": "EVcommute",
+      "actual": "432/5",
+      "expected": "432/5",
+      "pass": true
+    },
+    {
+      "name": "EVtotal",
+      "actual": "1232/5",
+      "expected": "1232/5",
+      "pass": true
+    },
+    {
+      "name": "EVnetusercharge",
+      "actual": "982/5",
+      "expected": "982/5",
+      "pass": true
+    },
+    {
+      "name": "EVnoNegative",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "oldEV64000samebase",
+      "actual": "16000",
+      "expected": "16000",
+      "pass": true
+    },
+    {
+      "name": "topup290",
+      "actual": "87/2",
+      "expected": "87/2",
+      "pass": true
+    },
+    {
+      "name": "annual290withtopup",
+      "actual": "4002",
+      "expected": "4002",
+      "pass": true
+    },
+    {
+      "name": "pensiontaxcap8",
+      "actual": "8112",
+      "expected": "8112",
+      "pass": true
+    },
+    {
+      "name": "pensionSVcap4",
+      "actual": "4056",
+      "expected": "4056",
+      "pass": true
+    },
+    {
+      "name": "remainingSVroom",
+      "actual": "54",
+      "expected": "54",
+      "pass": true
+    },
+    {
+      "name": "old300plus45annual",
+      "actual": "4140",
+      "expected": "4140",
+      "pass": true
+    },
+    {
+      "name": "oldconditionalSVover4",
+      "actual": "84",
+      "expected": "84",
+      "pass": true
+    },
+    {
+      "name": "lunchdaily",
+      "actual": "4.57",
+      "expected": "4.57",
+      "pass": true
+    },
+    {
+      "name": "lunchbenefit",
+      "actual": "207/100",
+      "expected": "207/100",
+      "pass": true
+    },
+    {
+      "name": "20lunches",
+      "actual": "207/5",
+      "expected": "207/5",
+      "pass": true
+    },
+    {
+      "name": "lunchflattax25",
+      "actual": "207/20",
+      "expected": "207/20",
+      "pass": true
+    },
+    {
+      "name": "lunchSoliCentDrop",
+      "actual": "14/25",
+      "expected": "14/25",
+      "pass": true
+    },
+    {
+      "name": "50exactbenefitcliff",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "50.01failscliff",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "staff2000net500",
+      "actual": "1420",
+      "expected": "1420",
+      "pass": true
+    },
+    {
+      "name": "stafftaxablefullallowance",
+      "actual": "340",
+      "expected": "340",
+      "pass": true
+    },
+    {
+      "name": "2personlodging",
+      "actual": "171",
+      "expected": "171",
+      "pass": true
+    },
+    {
+      "name": "apprenticelodging15pct",
+      "actual": "969/4",
+      "expected": "969/4",
+      "pass": true
+    },
+    {
+      "name": "partial10daysunreduced",
+      "actual": "95",
+      "expected": "95",
+      "pass": true
+    },
+    {
+      "name": "home100kmnonqualifyingtrip",
+      "actual": "100",
+      "expected": "100",
+      "pass": true
+    },
+    {
+      "name": "affiliated37bminimum960not600",
+      "actual": "288",
+      "expected": "288",
+      "pass": true
+    },
+    {
+      "name": "lowearner240",
+      "actual": "72",
+      "expected": "72",
+      "pass": true
+    },
+    {
+      "name": "lowearner960cap288",
+      "actual": "288",
+      "expected": "288",
+      "pass": true
+    },
+    {
+      "name": "lowearner2016cap",
+      "actual": "100",
+      "expected": "100",
+      "pass": true
+    },
+    {
+      "name": "19aqualifyingbusinessdecline",
+      "actual": "4000",
+      "expected": "4000",
+      "pass": true
+    },
+    {
+      "name": "gifttransfernotrequiresale",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "2031no2026taxfreebikevintageextension",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "100kEVinclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "100000.01failsquartercap",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "hybrid80kminclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "hybridCO250inclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "twoeventallowances",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "thirdnolimitallowance",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "two100euroeventcosttaxzero",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "120eventexcess10",
+      "actual": "10",
+      "expected": "10",
+      "pass": true
+    },
+    {
+      "name": "37b3x4000annualonly10k",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "37bwhole15000giftexcluded",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "37b8000othergiftswith12000excluded",
+      "actual": "8000",
+      "expected": "8000",
+      "pass": true
+    }
+  ],
+  "scope": "Original two current executable cases, actual earliest64000EV and conditional300/45/4140pension arithmetic, and meaningful benefits/eligibility/rate/date/base thresholds. No proof of arbitrary actual contribution saving, individual insurance classification or state-church rate."
+}

@@ -1,0 +1,266 @@
+{
+  "scope": "Both original executable fixtures recomputed;52 independent arithmetic/eligibility/classification/boundary controls. Counterfactual Czech combined cap explicitly rests on the recommended labelled treaty incorporation interpretation. No client evidence or portal execution claimed.",
+  "controls": [
+    {
+      "name": "case1Kest",
+      "actual": "2500",
+      "expected": "2500"
+    },
+    {
+      "name": "case1Soli",
+      "actual": "275/2",
+      "expected": "275/2"
+    },
+    {
+      "name": "case1withheld",
+      "actual": "5275/2",
+      "expected": "5275/2"
+    },
+    {
+      "name": "case1treaty",
+      "actual": "1500",
+      "expected": "1500"
+    },
+    {
+      "name": "case1refund",
+      "actual": "2275/2",
+      "expected": "2275/2"
+    },
+    {
+      "name": "case1refundpercentage",
+      "actual": "91/8",
+      "expected": "91/8"
+    },
+    {
+      "name": "case2royalty",
+      "actual": "30000",
+      "expected": "30000"
+    },
+    {
+      "name": "case2Soli",
+      "actual": "1650",
+      "expected": "1650"
+    },
+    {
+      "name": "case2grosswithholding",
+      "actual": "31650",
+      "expected": "31650"
+    },
+    {
+      "name": "case2treatyunderlabelledcombinedinterpretation",
+      "actual": "10000",
+      "expected": "10000"
+    },
+    {
+      "name": "case2holdingmargin",
+      "actual": "5",
+      "expected": "5"
+    },
+    {
+      "name": "case2qualified50g",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "case2refundactualremittanceassumed",
+      "actual": "31650",
+      "expected": "31650"
+    },
+    {
+      "name": "case2savingunderlabelledcombinedinterpretation",
+      "actual": "10000",
+      "expected": "10000"
+    },
+    {
+      "name": "grossdividend26point375percent",
+      "actual": "211/8",
+      "expected": "211/8"
+    },
+    {
+      "name": "grossroyalty15point825",
+      "actual": "633/40",
+      "expected": "633/40"
+    },
+    {
+      "name": "44a9twofifthsKest2500",
+      "actual": "1000",
+      "expected": "1000"
+    },
+    {
+      "name": "44a9twofifthsSoli137point5",
+      "actual": "55",
+      "expected": "55"
+    },
+    {
+      "name": "44a9residualcombined",
+      "actual": "3165/2",
+      "expected": "3165/2"
+    },
+    {
+      "name": "smallroyalty10000inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "smallroyalty10000point01fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "priorroyalty9000plus1001fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "parent10inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "parent12monthsneeded",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "parentlater12monthsrefundroute",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "EUassociated25inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "EUassociated24point99fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "EUindirectnotdirectselector",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "Swissformtaxresidencegatesallneeded",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "50j45daysinclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "50j44fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "50jrisk70inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "50jrisk69point99fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "50jhedged31retains69fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "50jvoluntarypassonnotidenticalobligation",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "50j10aloneinsufficientexemptforeigncompany",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "50joneyearownershipexception",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "Swiss365not364",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "US80votesinclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "US80withoutLOBnotzero",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "Italy10dividendnotGermanoutbound",
+      "actual": "1500",
+      "expected": "1500"
+    },
+    {
+      "name": "Italyordinaryinterest10",
+      "actual": "1000",
+      "expected": "1000"
+    },
+    {
+      "name": "Italyroyalty5",
+      "actual": "500",
+      "expected": "500"
+    },
+    {
+      "name": "Polandordinaryinterest5",
+      "actual": "500",
+      "expected": "500"
+    },
+    {
+      "name": "Luxroyalty5",
+      "actual": "500",
+      "expected": "500"
+    },
+    {
+      "name": "CZholding25inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "refund2026fouryearend",
+      "actual": "2030-12-31",
+      "expected": "2030-12-31"
+    },
+    {
+      "name": "50ginterest1000onefullmonth",
+      "actual": "5",
+      "expected": "5"
+    },
+    {
+      "name": "non233ainterestnotpoint15",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "actualtaxpaymentrequirednotmerewithholding",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "latepaymentrounded549to500onepercent",
+      "actual": "5",
+      "expected": "5"
+    },
+    {
+      "name": "treatycapnotpermissionforuntaxedordinaryinterest",
+      "actual": "False",
+      "expected": "False"
+    }
+  ],
+  "number": 52
+}

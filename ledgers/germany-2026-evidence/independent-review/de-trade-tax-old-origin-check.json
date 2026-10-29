@@ -1,0 +1,33 @@
+{
+  "current_main_origins": 53,
+  "pre_refresh_origins": 67,
+  "all120_actual_old_origin_hashes_match": true,
+  "pre_refresh_actual_git_sha256": "bae6defedbe946ad303e077e9fbf316a532f7170f9840e8aa86be7767cd31763",
+  "semantic_spots_actually_read": {
+    "current_main_rows": [
+      9,
+      22,
+      31,
+      45
+    ],
+    "pre_refresh_rows": [
+      6,
+      13,
+      19,
+      26,
+      35,
+      47,
+      58,
+      65
+    ]
+  },
+  "scope": "Named18 actual old-block destination spots, some presentation units explicitly visible, not every120 destination fresh semantic reading.",
+  "additional_actual_pre_refresh_samples": [
+    10,
+    15,
+    21,
+    27,
+    33,
+    40
+  ]
+}

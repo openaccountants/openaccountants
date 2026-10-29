@@ -1,0 +1,194 @@
+Startseite | E-Rechnung in der Bundesverwaltung
+Zum Inhalt springen
+Offizielle Website – Bundesrepublik Deutschland
+E-Rechnung in der Bundesverwaltung
+Service-Navigation Kopfbereich
+English
+Leichte Sprache
+Gebärdensprache
+Hauptnavigation
+Menü öffnen
+Start
+Rechnungs­steller
+Behörden und Einrichtungen
+ERP-Hersteller
+Verbände
+E-Rechnung
+Was ist eine E-Rechnung?
+E‑Rechnung A‑Z
+Merksätze zur E‑Rechnung
+Unterschied Papier-, PDF- und E-Rechnung
+E-Rechnung in den Bundesländern
+E-Rechnung zwischen Unternehmen (B2B)
+Übertragungs­kanäle
+Weberfassung
+Upload
+Peppol
+E-Mail
+Mediathek
+Tutorials
+Dokumente
+Aktuelles
+FAQ
+Kontakt
+Hauptnavigation
+Start
+Rechnungs­steller
+Behörden und Einrichtungen
+ERP-Hersteller
+Verbände
+E-Rechnung
+Was ist eine E-Rechnung?
+E‑Rechnung A‑Z
+Merksätze zur E‑Rechnung
+Unterschied Papier-, PDF- und E-Rechnung
+E-Rechnung in den Bundesländern
+E-Rechnung zwischen Unternehmen (B2B)
+Übertragungs­kanäle
+Weberfassung
+Upload
+Peppol
+E-Mail
+Mediathek
+Tutorials
+Dokumente
+Aktuelles
+FAQ
+Kontakt
+Sie sind hier:
+Startseite
+Die E-Rechnung in der Bundes­verwaltung
+Herzlich willkommen auf der Informationsseite für den elektronischen Rechnungsaustausch mit der Bundesverwaltung. Hier finden Sie Infomaterial für Rechnungssteller, Softwarehersteller und Behörden.
+Was ist eine E-Rechnung
+Wer? Wie? Was? Warum?
+In unserer FAQ‑Sektion finden Sie die wichtigsten Fragen und Antworten zum Rechnungsaustausch mit der Bundesverwaltung und zur E‑Rechnung im Allgemeinen.
+FAQs entdecken
+Ein Jahr nach der Konsolidierung von ZRE und OZG-RE
+Ein Jahr nach der Konsolidierung von ZRE und OZG-RE zeigt sich, welche Vorteile diese für Verwaltung und Wirtschaft gebracht hat.
+Mehr erfahren
+Rechnungssteller
+Weiterführende Informationen für Selbstständige und Unternehmen.
+Behörden und Einrichtungen
+Weiterführende Informationen für Behörden und ihre Lieferanten.
+ERP-Hersteller
+Weiterführende Informationen für Softwareentwickler zu Format und Schnittstellen.
+Verbände
+Weiterführende Informationen für Verbände und ihre Mitglieder.
+Was ist eine E‑Rechnung?
+Eine E-Rechnung stellt Rechnungsinhalte – anstelle auf Papier oder in einer Bilddatei wie z. B. als PDF – in einem strukturierten, maschinenlesbaren XML-Datensatz dar. Dies gewährleistet, dass Informationen, die in dieser Form vom Rechnungssteller ausgestellt werden, elektronisch übermittelt und empfangen, sowie medienbruchfrei und automatisiert weiterverarbeitet und zur Auszahlung gebracht werden können.
+Was ist eine E-Rechnung? Erklärvideo über die fünf Schritte zum Versand einer elektronischen Rechnung.
+Text zum Video: 5 Schritte zur Übermittlung einer E-Rechnung
+Herzlich Willkommen. Dieses Video wird Ihnen vom Verfahren E-Rechnung in der Bundesverwaltung als Informationsangebot bereitgestellt. In dem folgenden Video zeigen wir Ihnen in fünf Schritten, was Sie bei der Übermittlung einer elektronischen Rechnung an öffentliche Auftraggeber des Bundes beachten sollten. Das Video richtet sich primär an Rechnungssteller oder Nutzer, die sich grundsätzlich mit der E-Rechnung auseinandersetzen möchten. Weiterführende Informationen zur elektronischen Rechnungsstellung in der Bundesverwaltung finden Sie unter www.e-rechnung-bund.de.
+Was ist eine elektronische Rechnung?
+Doch erstmal vorab: Was ist eine elektronische Rechnung (E-Rechnung)?
+Eine E-Rechnung im Sinne der EU-Norm ist im Unterschied zu einer eingescannten Papier- oder PDF-Rechnung eine in einem strukturierten Format ausgestellte Rechnung, die elektronisch übermittelt und empfangen wird sowie eine automatische Verarbeitung ohne Medienbrüche ermöglicht.
+Die E-Rechnung basiert dabei auf einem XML-Datenformat, das in erster Linie der maschinellen Verarbeitung dient und sich nicht ohne Weiteres für eine manuelle Sichtprüfung eignet.
+Die elektronische Rechnungsstellung kann über verschiedene Standards bzw. Spezifikationen ermöglicht werden, darunter zum Beispiel im Standard XRechnung.
+Für wen ist die elektronische Rechnungsstellung verpflichtend?
+Seit dem 27.11.2020 sind alle Lieferanten des Bundes laut der E-Rechnungsverordnung verpflichtet, bei Direktaufträgen ab einem Beitrag von 1.000 Euro netto Rechnungen in elektronischer Form einzureichen. Weitere Ausnahmen von der Verpflichtung sind in der Verordnung geregelt.
+Was muss bei der Übermittlung einer E-Rechnung beachtet werden?
+Mit der Onlinezugangsgesetz-konformen Rechnungseingangsplattform (OZG-RE), steht Ihnen eine Plattform zur Verfügung, über die Rechnungen an die unmittelbare und Teile der mittelbaren Bundesverwaltung sowie einige Länder übermittelt werden können.
+Ist eine Registrierung an der OZG-RE erforderlich?
+Zur Verwendung der OZG-RE ist eine einmalige Registrierung erforderlich. Die Registrierung ist kostenfrei und muss unabhängig vom genutzten Übertragungsweg durchgeführt werden. Nach erfolgreicher Registrierung kann mit dem Einreichen der Rechnungen begonnen werden. Tiefergehende Informationen zur Registrierung und Verwaltung des Benutzerkontos finden Sie in den Tutorials zur Nutzung der Rechnungseingangsplattform OZG-RE auf der E-Rechnungswebseite des Bundes.
+Welche Optionen stehen zum Übermitteln einer elektronischen Rechnung an öffentliche Auftraggeber des Bundes zur Verfügung
+Bevor Sie eine E-Rechnung an öffentliche Auftraggeber des Bundes versenden, sollten Sie den für Sie am besten geeigneten Übertragungsweg wählen.
+Sofern Sie keine Software zur Erstellung elektronischer Rechnungen haben, können Sie Ihre Rechnungsdaten über die Weberfassung direkt eingeben und als elektronische Rechnung einreichen.
+Wenn Sie wenige elektronische Rechnungen einreichen, können Sie vorab erzeugte elektronische Rechnungen an der Rechnungseingangsplattform hochladen.
+Bei hohem Rechnungsvolumen bieten sich die Übertragungswege via Peppol und E-Mail an.
+Weitere Informationen zu den Übertragungskanälen finden Sie in unseren FAQs und den Tutorials zur OZG-RE.
+Was geschieht nach der Übermittlung einer E-Rechnung?
+Nach Einreichung Ihrer E-Rechnung auf der Rechnungseingangsplattform findet eine sogenannte Validierung statt. Hierbei wird Ihre E-Rechnung auf die Erfüllung der formalen Anforderungen geprüft.
+Sofern die Prüfung erfolgreich durchgeführt wurde, wird Ihre Rechnung dem Empfänger bereitgestellt.
+Nach Bereitstellung der E-Rechnung kann der Status bis zur Abholung durch den Rechnungsempfänger über die Plattformen eingesehen werden. Bei Bedarf kann eine automatische E-Mail-Benachrichtigung bei Statuswechsel eingerichtet werden.
+Für weitere Fragen wenden Sie sich bitte an den Sendersupport der Bundesdruckerei.
+Vorteile für Rechnungssteller
+Vereinfachte Rechnungsstellung
+Verkürzte Durchlaufzeiten
+Schnellere Bearbeitung und pünktlichere Zahlung
+Einsparpotenziale im Rechnungsversand durch Einsparen von Papier und Porto
+Steigerung der Prozessqualität durch automatische Erstellung und Validierung von Rechnungen
+Flexibles Arbeiten durch ortsunabhängige Rechnungsstellung
+Vorteile für Rechnungsempfänger
+Optimierung der Rechnungsverarbeitung durch automatisiertes Einlesen der Rechnungsdaten
+Steigerung der Datenqualität durch verringerte Fehleranfälligkeit
+Einsparpotenziale in der Rechnungsverarbeitung
+Ermöglichen einer dezentralen Rechnungsbearbeitung
+Flexibles Arbeiten durch ortsunabhängige Rechnungsstellung
+1. Bin ich zur elektronischen Rechnungsstellung verpflichtet?
+Zunächst ist zu prüfen, ob eine Verpflichtung zur elektronischen Rechnungsstellung vorliegt. Ausnahmen von der Verpflichtung sind in der E‑Rechnungsverordnung des Bundes geregelt. Zudem sind vertragliche Vereinbarungen mit dem Auftraggeber zu berücksichtigen.
+Zur E-Rechnungsverordnung (nicht barrierefrei) [PDF, 46 KB]
+2. Auf welcher Plattform kann ich meine E‑Rechnung an öffentliche Auftraggeber des Bundes einreichen?
+Mit der OZG-RE steht eine Rechnungseingangsplattform zur Verfügung, über die Rechnungen an die unmittelbare sowie Teile der mittelbaren Bundesverwaltung und einige Länder übermittelt werden können.
+Vor der Übermittlung einer Rechnung ist sicherzustellen, dass die Plattform verwendet werden kann. Dies wird grundsätzlich im Zuge der Beauftragung mitgeteilt oder ist beim Auftraggeber zu erfragen. Als Orientierung kann die Übersichten mit den an der OZG-RE angebundenen Einrichtungen dienen.
+Zur OZG-RE
+3. Muss ich mich bei der Rechnungs­eingangs­plattform registrieren?
+Zur Verwendung der Plattform OZG-RE ist eine einmalige Registrierung erforderlich. Die Registrierung ist kostenfrei und muss unabhängig vom genutzten Übertragungsweg durchgeführt werden.
+Tiefergehende Informationen zur Registrierung und Verwaltung des Benutzerkontos finden Sie in den Tutorials zur Nutzung der Rechnungseingangsplattform OZG-RE auf der E-Rechnungs-webseite des Bundes.
+Zur den Tutorials
+4. Welche Optionen stehen zum Übermitteln einer E‑Rechnung an öffentliche Auftrag­geber des Bundes zur Verfügung?
+Sofern Sie keine Software zur Erstellung elektronischer Rechnungen haben können Sie Ihre Rechnungsdaten über die Weberfassung direkt eingeben und als elektronische Rechnung einreichen. Wenn Sie wenige elektronische Rechnungen einreichen, können Sie vorab erzeugte elektronische Rechnungen an der Rechnungseingangsplattform via manuellen Upload hochladen. Bei hohem Rechnungsvolumen bieten sich die Übertragungswege Webservice via Peppol und E-Mail an.
+Zu den Übertragungskanälen
+5. Was geschieht nach der Übermittlung meiner E‑Rechnung?
+Nach der Übermittlung Ihrer E-Rechnung kann der Verarbeitungsstatus bis zur Abholung durch Rechnungsempfänger über die Plattform eingesehen werden. Die Plattform prüft jede eingereichte Rechnung auf Konformität zur Spezifikation XRechnung oder anderer in der EU zugelassener Standards in Syntax und Semantik wie z.B. ZUGFeRD 2.2.0. Bei erfolgreicher Prüfung wird die Rechnung automatisch an den Empfänger weitergeleitet. Bei Bedarf kann eine automatische E-Mail-Benachrichtigung bei Statuswechsel eingerichtet werden.
+Öffne Beschreibung
+Beschreibung
+Schließen
+Prozess zur Übermittlung einer E-Rechnung
+Aktuelle Informationen zur E-Rechnung
+Ein Jahr nach der Zusammenführung von ZRE und OZG-RE: Bilanz einer erfolgreichen Konsolidierung
+Veröffentlicht am: 25. Juni 2026
+Seit September 2025 empfängt die Bundesverwaltung elektronische Rechnungen über eine zentrale Plattform: die OZG-RE. Ein Jahr nach der Zusammenführung von ZRE und OZG-RE zeigt sich, welche Vorteile die Konsolidierung für Verwaltung und Wirtschaft gebracht hat.
+Mehr Erfahren
+Modernisierungsagenda Bund: Projekt „D-Easi“ startet zur automatisierten E‑Rechnungs­eingangs­verarbeitung
+Veröffentlicht am: 7. April 2026
+Im Rahmen der Modernisierungsagenda für Staat und Verwaltung (Bund) ist das Projekt „D-Easi – E‑Rechnungseingang automatisiert, sicher, integriert“ gestartet, mit dem Ziel, die Rechnungsbearbeitung in der unmittelbaren Bundesverwaltung zu automatisieren und effizienter zu gestalten.
+Mehr Erfahren
+5 Jahre Lieferantenverpflichtung – einheitliche Prozesse helfen, Potenzial der E-Rechnung voll auszuschöpfen
+Veröffentlicht am: 27. November 2025
+Am 27. November 2020 trat die Verpflichtung zur elektronischen Rechnungsstellung an die Bundesverwaltung in Kraft. Seither hat sich im Bereich der öffentlichen Beschaffung viel auf Seiten der Rechnungsempfänger aber auch der Rechnungssteller bewegt. Zeit für eine kurze Bilanz.
+Mehr Erfahren
+Weiterführende Informationen
+Hier erhalten Sie weiterführende Informationen rund um das Thema E‑Rechnung in der Bundesverwaltung.
+Merksätze zur E-Rechnung
+E-Rechnung von A-Z
+E-Rechnung in den Bundesländern
+FAQ zur E-Rechnung
+Unterschied Papier-, PDF und E-Rechnung
+Gesetze und Verordnungen
+Aktuelle Gesetze und Verordnungen zur E-Rechnung in Deutschland
+Dokumente
+Alle wichtigen Dokumente für Rechnungssteller, ERP-Hersteller, Behörden und Einrichtungen sowie Verbände zur E-Rechnung
+Tutorials
+Hier finden Sie Videotutorials zur Nutzung der Rechnungs­eingangs­plattform OZG-RE
+Servicebereich
+Kontakt & Support
+03025984436
+Mo - Fr 8:00-16:00
+ausgenommen Feiertage
+Informationen für
+Rechnungssteller
+ERP-Hersteller
+Behörden und Einrichtungen
+Verbände
+Externe Links
+OZG-RE
+Peppol
+Standard XRechnung
+Gesetze & Verordnungen
+E-Rechnungsverordnung (E-RechV)
+Richtlinie 2014/55/EU
+Richtlinie 2010/45/EU
+Zeitstrahl zur Umsetzung der E‑Rechnung
+© 2026
+Beschaffungsamt des BMI
+Service-Navigation Fußbereich
+Impressum
+Datenschutz
+Barriere­freiheits­erklärung
+Sitemap
+Meldestelle Hinweisgeber
+Die Digitale Dachmarke kennzeichnet digitale Angebote von Bund, Ländern und Kommunen als staatliche Leistungen.
+Digitalwappen Bund Länder Kommunen
+Cookies
+Schließen
+Zum Glossar

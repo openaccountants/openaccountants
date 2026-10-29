@@ -1,0 +1,30 @@
+[
+  {
+    "source_id": "RNT03",
+    "official_url": "https://nrwe.justiz.nrw.de/fgs/muenster/j2019/2_K_2497_17_E_Urteil_20191210.html",
+    "final_url": "https://nrwe.justiz.nrw.de/fgs/muenster/j2019/2_K_2497_17_E_Urteil_20191210.html",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT03.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT03.txt",
+    "sha256": "8e14f195aee81799d0ea9b2ed530fff0246393c9025a69052843fa48f03c1b6c",
+    "reader_sha256": "670224e28314be9a6104348649bb801a789a107a7a1e7bb7f23df9e3788eea6a",
+    "bytes": 59787,
+    "extraction": "HTMLParser block text; collapsed within-block whitespace",
+    "acquired_at": "2026-10-29T17:11:20.581820+00:00"
+  },
+  {
+    "source_id": "RNT04",
+    "official_url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE202150209?type=1646225765",
+    "final_url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE202150209?type=1646225765",
+    "status": 200,
+    "content_type": "application/pdf",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT04.pdf",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT04.txt",
+    "sha256": "d3fed848583ba48aa7355aee842dcb9597eb9deb7988d500bb277fc56b47a1b4",
+    "reader_sha256": "aef18a47bbc14e1ecbf6b5bc2c22df71607d23fa6adc914c2253e8344fff3843",
+    "bytes": 67197,
+    "extraction": "pdftotext-layout",
+    "acquired_at": "2026-10-29T17:11:21.337292+00:00"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "de-payroll-benefits": {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-payroll-benefits.md",
+    "before_sha256": "6490866ed01c76228acd389426527eecc10b5c835a082799868ed9a5fe8aa62a",
+    "after_sha256": "5cfe787fc72884808d51928252fb2a8a42c3442a50da315c846fffc3ea2f24eb",
+    "bytes": 45831,
+    "ops": 21,
+    "full_inverse": true,
+    "actual_original_oa_blocks": 2,
+    "original_examples_and_complete_worked_section_exact": true,
+    "old_URL_order_exact": true
+  }
+}

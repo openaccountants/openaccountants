@@ -1,0 +1,760 @@
+{
+  "role": "writer, independent recheck pending",
+  "controls": [
+    {
+      "id": "R26.placepropertyNone",
+      "actual": "DE",
+      "expected": "DE",
+      "premise": "Actual category/receiving establishment independently established; catering not on-board EUtransport, hire within actual90water/30othercontinuousdaylimits. Remaining3a/3b/3e exceptions independently excluded; place does not settle rate/foreign filing/13b entitlement.",
+      "pass": true
+    },
+    {
+      "id": "R26.placegeneral-consultancyNone",
+      "actual": "FR",
+      "expected": "FR",
+      "premise": "Actual category/receiving establishment independently established; catering not on-board EUtransport, hire within actual90water/30othercontinuousdaylimits. Remaining3a/3b/3e exceptions independently excluded; place does not settle rate/foreign filing/13b entitlement.",
+      "pass": true
+    },
+    {
+      "id": "R26.placegeneral-consultancyDE",
+      "actual": "DE",
+      "expected": "DE",
+      "premise": "Actual category/receiving establishment independently established; catering not on-board EUtransport, hire within actual90water/30othercontinuousdaylimits. Remaining3a/3b/3e exceptions independently excluded; place does not settle rate/foreign filing/13b entitlement.",
+      "pass": true
+    },
+    {
+      "id": "R26.placephysical-admissionNone",
+      "actual": "DE",
+      "expected": "DE",
+      "premise": "Actual category/receiving establishment independently established; catering not on-board EUtransport, hire within actual90water/30othercontinuousdaylimits. Remaining3a/3b/3e exceptions independently excluded; place does not settle rate/foreign filing/13b entitlement.",
+      "pass": true
+    },
+    {
+      "id": "R26.placevirtual-admissionNone",
+      "actual": "FR",
+      "expected": "FR",
+      "premise": "Actual category/receiving establishment independently established; catering not on-board EUtransport, hire within actual90water/30othercontinuousdaylimits. Remaining3a/3b/3e exceptions independently excluded; place does not settle rate/foreign filing/13b entitlement.",
+      "pass": true
+    },
+    {
+      "id": "R26.placeonsite-cateringNone",
+      "actual": "DE",
+      "expected": "DE",
+      "premise": "Actual category/receiving establishment independently established; catering not on-board EUtransport, hire within actual90water/30othercontinuousdaylimits. Remaining3a/3b/3e exceptions independently excluded; place does not settle rate/foreign filing/13b entitlement.",
+      "pass": true
+    },
+    {
+      "id": "R26.placeshort-hireNone",
+      "actual": "DE",
+      "expected": "DE",
+      "premise": "Actual category/receiving establishment independently established; catering not on-board EUtransport, hire within actual90water/30othercontinuousdaylimits. Remaining3a/3b/3e exceptions independently excluded; place does not settle rate/foreign filing/13b entitlement.",
+      "pass": true
+    },
+    {
+      "id": "R26.short-hire(30, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Continuous hire duration only; longhire follows its actual different rule, not inferred here.",
+      "pass": true
+    },
+    {
+      "id": "R26.short-hire(31, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Continuous hire duration only; longhire follows its actual different rule, not inferred here.",
+      "pass": true
+    },
+    {
+      "id": "R26.short-hire(90, True)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Continuous hire duration only; longhire follows its actual different rule, not inferred here.",
+      "pass": true
+    },
+    {
+      "id": "R26.short-hire(91, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Continuous hire duration only; longhire follows its actual different rule, not inferred here.",
+      "pass": true
+    },
+    {
+      "id": "R27.solar(True, True)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Qualifying statutory goods/components/storage; installation flag is actual conditions or applicable30kWp statutory presumption. Independent reseller fails recipient limb; no default alternative rate invented.",
+      "pass": true
+    },
+    {
+      "id": "R27.solar(False, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Qualifying statutory goods/components/storage; installation flag is actual conditions or applicable30kWp statutory presumption. Independent reseller fails recipient limb; no default alternative rate invented.",
+      "pass": true
+    },
+    {
+      "id": "R27.solar(True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Qualifying statutory goods/components/storage; installation flag is actual conditions or applicable30kWp statutory presumption. Independent reseller fails recipient limb; no default alternative rate invented.",
+      "pass": true
+    },
+    {
+      "id": "R27.watermains",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual listed water category established; only Annex2no34 eligibility tested, not a broad goods tariff library.",
+      "pass": true
+    },
+    {
+      "id": "R27.waterconsumer-prepackaged-drinking",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual listed water category established; only Annex2no34 eligibility tested, not a broad goods tariff library.",
+      "pass": true
+    },
+    {
+      "id": "R27.waterconsumer-prepackaged-spring",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual listed water category established; only Annex2no34 eligibility tested, not a broad goods tariff library.",
+      "pass": true
+    },
+    {
+      "id": "R27.waterconsumer-prepackaged-table",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual listed water category established; only Annex2no34 eligibility tested, not a broad goods tariff library.",
+      "pass": true
+    },
+    {
+      "id": "R27.watermedicinal",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual listed water category established; only Annex2no34 eligibility tested, not a broad goods tariff library.",
+      "pass": true
+    },
+    {
+      "id": "R27.watersteam",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual listed water category established; only Annex2no34 eligibility tested, not a broad goods tariff library.",
+      "pass": true
+    },
+    {
+      "id": "R28.custody-input",
+      "actual": "19.00",
+      "expected": "19",
+      "premise": "Actual taxable custody invoice, lawfullycharged19VAT, otherwise all15invoice/business/allocationconditions satisfied. Bank identity does not deny input.",
+      "pass": true
+    },
+    {
+      "id": "R28.exempt-credit-input",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Actually exempt credit transaction, no legallychargedVAT; no invented other bankfeeclassification.",
+      "pass": true
+    },
+    {
+      "id": "R29.documents(0, 2, True, True, False, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Numbers are actual17a(2)documentclasses; certificate means statutory customer arrival confirmation by tenthday. Actual documents independently confirm movement; other6a/4gates separately established. Failedpresumption does not decide17bfallback or permanentdenial.",
+      "pass": true
+    },
+    {
+      "id": "R29.documents(1, 1, True, True, False, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Numbers are actual17a(2)documentclasses; certificate means statutory customer arrival confirmation by tenthday. Actual documents independently confirm movement; other6a/4gates separately established. Failedpresumption does not decide17bfallback or permanentdenial.",
+      "pass": true
+    },
+    {
+      "id": "R29.documents(2, 0, True, True, False, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Numbers are actual17a(2)documentclasses; certificate means statutory customer arrival confirmation by tenthday. Actual documents independently confirm movement; other6a/4gates separately established. Failedpresumption does not decide17bfallback or permanentdenial.",
+      "pass": true
+    },
+    {
+      "id": "R29.documents(1, 1, False, True, False, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Numbers are actual17a(2)documentclasses; certificate means statutory customer arrival confirmation by tenthday. Actual documents independently confirm movement; other6a/4gates separately established. Failedpresumption does not decide17bfallback or permanentdenial.",
+      "pass": true
+    },
+    {
+      "id": "R29.documents(1, 1, True, False, False, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Numbers are actual17a(2)documentclasses; certificate means statutory customer arrival confirmation by tenthday. Actual documents independently confirm movement; other6a/4gates separately established. Failedpresumption does not decide17bfallback or permanentdenial.",
+      "pass": true
+    },
+    {
+      "id": "R29.documents(1, 1, True, True, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Numbers are actual17a(2)documentclasses; certificate means statutory customer arrival confirmation by tenthday. Actual documents independently confirm movement; other6a/4gates separately established. Failedpresumption does not decide17bfallback or permanentdenial.",
+      "pass": true
+    },
+    {
+      "id": "R29.documents(1, 1, True, True, True, True)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Numbers are actual17a(2)documentclasses; certificate means statutory customer arrival confirmation by tenthday. Actual documents independently confirm movement; other6a/4gates separately established. Failedpresumption does not decide17bfallback or permanentdenial.",
+      "pass": true
+    },
+    {
+      "id": "R29.ordinary-exemptionFalse",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Allactual6aordinaryeligibilityandproofgatesindependentlymet; correctZM flag means actuallyfiled/accurateforthissupply. Missingstatement not silentlycured; no latercureoutcomeinferred.",
+      "pass": true
+    },
+    {
+      "id": "R29.ordinary-exemptionTrue",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Allactual6aordinaryeligibilityandproofgatesindependentlymet; correctZM flag means actuallyfiled/accurateforthissupply. Missingstatement not silentlycured; no latercureoutcomeinferred.",
+      "pass": true
+    },
+    {
+      "id": "R30.no-German-input20",
+      "actual": "0",
+      "expected": "0",
+      "premise": "ForeignVATamountoninvoice; noGerman-actVAT. Foreignlegality/refundeligibility/accountingrecoverability are not established by Germanreturninstructions or this zeroGermaninputcontrol.",
+      "pass": true
+    },
+    {
+      "id": "R30.no-German-input19",
+      "actual": "0",
+      "expected": "0",
+      "premise": "ForeignVATamountoninvoice; noGerman-actVAT. Foreignlegality/refundeligibility/accountingrecoverability are not established by Germanreturninstructions or this zeroGermaninputcontrol.",
+      "pass": true
+    },
+    {
+      "id": "R31.complete-branch",
+      "actual": "[30, 40]",
+      "expected": "[30, 40]",
+      "premise": "Evidence completeness only, no new Guideformula or automatic discretionary penalty amount.",
+      "pass": true
+    }
+  ],
+  "control_count": 34,
+  "own_selected_read_count": 9,
+  "source_checks": [
+    {
+      "id": "R26.place",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": true
+    },
+    {
+      "id": "R27.solar",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": true
+    },
+    {
+      "id": "R27.water",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": true
+    },
+    {
+      "id": "R28.finance",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": true
+    },
+    {
+      "id": "R29.exemption-ZM",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": true
+    },
+    {
+      "id": "R29.ICS",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": true
+    },
+    {
+      "id": "R29.presumption",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": true
+    },
+    {
+      "id": "R30.foreign-input",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": true
+    },
+    {
+      "id": "R31.late-filing-exclusion",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": true
+    },
+    {
+      "id": "OLD.VAT.annualpenalty",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.exempt-exports",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.inputlimits",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.goods-self",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.arrivalfallback",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.RCinvoice",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.prepay",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.invoice",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.prepayprocedure",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.package30",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.input",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.smallinvoice",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO238.rate",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.penaltycap",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.Annex-flowers",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.restaurant-act",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.taxed",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.filing",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.Annex-food",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.form-bottom",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.einvoicesmall",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.business",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.formforeign",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.formamounts",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.OSS-separate",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.KU",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.ZM",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.paymentdate",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO240.surcharge",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Exact first sentence literal prefix of native LF7",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.formprepay",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.formcorrection",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.place",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO238.rounding",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.rates",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO108.weekend",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.distance",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.NewYear",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.extension",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.einvoicereceive",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.exempt-finance",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.ICS",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.arrivalpresumption",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.use-self",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.refundroute",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.reducedservices",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.Annex-books",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.selfbase",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.restaurant-date",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.netbase",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.currency",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.solar",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.form-input",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.exempt-insurance",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.correction",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO149.general",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.exempt-rent",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.invoicedetails",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.form-output1",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.PR.latefilingformula",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.gifts-entertainment",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.einvoicetransition",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO240.grace",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO233a.interest",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.Annex-water",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.RC",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.farm",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.form-output2",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.prepay-example",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.PR.latefiling",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.vehicleinput",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.package15",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.VAT.ZMannual",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO149.adviser",
+      "literal_native_and_hashes_exact": true,
+      "quote_scope": "Full recorded LF literal",
+      "new_own_read": false
+    }
+  ],
+  "all116_prior_current_identities_and335_old_topics_retained": true,
+  "current_native_rows_and_full_inverse_exact": true,
+  "prior_B_seal": {
+    "manifest_sha256": "61130a4ac7b8618cfc6ecb29771c5fd925e49d8b925c770f6489a43f6ab11004",
+    "members_rehashed_unchanged": 515
+  },
+  "original_oa_cases": {
+    "count": 2,
+    "failures": [],
+    "whole_worked_section_exact": true
+  },
+  "schema": {
+    "errors": [],
+    "warnings": [],
+    "stdout": "checked 1 guides (0 non-guide .md files skipped)\n"
+  },
+  "scoped_diff_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

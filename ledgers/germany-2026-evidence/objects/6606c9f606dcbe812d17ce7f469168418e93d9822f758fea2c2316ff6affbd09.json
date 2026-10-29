@@ -1,0 +1,256 @@
+{
+  "R37.complete-offences": {
+    "id": "R37.complete-offences",
+    "url": "https://www.gesetze-im-internet.de/ustg_1980/__26a.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaa34b9ace5183c69.body",
+    "raw_sha256": "e046d9bdd2da18c1b5fe02a5c63390dec6a4956bad2d35d8d43ead931302a796",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaa34b9ace5183c69.reader.txt",
+    "reader_sha256": "2851c3ba314c95f3ae87ec842c252bd9c6119cab4cdbad881b8662cb07854019",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "UStG § 26a(1)–(3)",
+    "native_LF": [
+      7,
+      28
+    ],
+    "exact_quote": "(1) Ordnungswidrig handelt, wer entgegen § 18 Absatz 1 Satz 4, Absatz 4 Satz 1 oder 2, Absatz 4c Satz 2, Absatz 4e Satz 4 oder Absatz 5a Satz 4, § 18i Absatz 3 Satz 3, § 18j Absatz 4 Satz 3 oder § 18k Absatz 4 Satz 3 eine Vorauszahlung, einen Unterschiedsbetrag oder eine festgesetzte Steuer nicht, nicht vollständig oder nicht rechtzeitig entrichtet.\n(2) Ordnungswidrig handelt, wer vorsätzlich oder leichtfertig 1.\nentgegen § 14 Absatz 2 Satz 2 eine Rechnung nicht oder nicht rechtzeitig ausstellt,\n2.\nentgegen § 14b Abs. 1 Satz 1, auch in Verbindung mit Satz 4, ein dort bezeichnetes Doppel oder eine dort bezeichnete Rechnung nicht oder nicht mindestens acht Jahre aufbewahrt,\n3.\nentgegen § 14b Abs. 1 Satz 5 eine dort bezeichnete Rechnung, einen Zahlungsbeleg oder eine andere beweiskräftige Unterlage nicht oder nicht mindestens zwei Jahre aufbewahrt,\n4.\nentgegen § 18 Abs. 12 Satz 3 die dort bezeichnete Bescheinigung nicht oder nicht rechtzeitig vorlegt,\n5.\nentgegen § 18a Absatz 1 bis 3 in Verbindung mit Absatz 7 Satz 1, Absatz 8 oder Absatz 9 eine Zusammenfassende Meldung nicht, nicht richtig, nicht vollständig oder nicht rechtzeitig abgibt oder entgegen § 18a Absatz 10 eine Zusammenfassende Meldung nicht oder nicht rechtzeitig berichtigt,\n6.\neiner Rechtsverordnung nach § 18c zuwiderhandelt, soweit sie für einen bestimmten Tatbestand auf die Bußgeldvorschrift verweist,\n7.\nentgegen § 18d Satz 3 die dort bezeichneten Unterlagen nicht, nicht vollständig oder nicht rechtzeitig vorlegt,\n8.\nentgegen § 22g Absatz 4 Satz 1 eine Information nicht, nicht richtig, nicht vollständig oder nicht rechtzeitig übermittelt,\n9.\nentgegen § 22g Absatz 5 eine Angabe nicht oder nicht rechtzeitig berichtigt und nicht oder nicht rechtzeitig vervollständigt oder\n10.\nentgegen § 22g Absatz 6 eine Aufzeichnung nicht oder nicht mindestens drei Kalenderjahre aufbewahrt.\n(3) Die Ordnungswidrigkeit kann in den Fällen des Absatzes 1 mit einer Geldbuße bis zu dreißigtausend Euro, in den Fällen des Absatzes 2 Nummer 3 mit einer Geldbuße bis zu tausend Euro, in den übrigen Fällen des Absatzes 2 mit einer Geldbuße bis zu fünftausend Euro geahndet werden.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native range actually read in this phase; full UStAE noncontiguous page scopes explicitly separate. Raw unchanged; acquisition is not whole-source reading."
+  },
+  "R38.portal": {
+    "id": "R38.portal",
+    "url": "https://www.gesetze-im-internet.de/erechv/__4.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U57e14599b517305c.body",
+    "raw_sha256": "efb85c7500684e0ca57b5b162399ba2a4e21cedd43749ca0041d491c68704b18",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U57e14599b517305c.reader.txt",
+    "reader_sha256": "020c3e65557f86b5d42d4e7a66b200375eef60424aafff79158fedd9ce69a033",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "ERechV § 4(1)–(5)",
+    "native_LF": [
+      7,
+      11
+    ],
+    "exact_quote": "(1) Für die Ausstellung von elektronischen Rechnungen haben Rechnungssteller und Rechnungssender grundsätzlich den Datenaustauschstandard XRechnung vom 29. September 2017 (BAnz AT 10.10.2017 B1) in der jeweils aktuellen Fassung zu verwenden. Es kann auch ein anderer Datenaustauschstandard verwendet werden, wenn er den Anforderungen der europäischen Norm für die elektronische Rechnungsstellung entspricht.\n(2) Änderungen des Datenaustauschstandards XRechnung werden vom Bundesministerium des Innern, für Bau und Heimat im Bundesanzeiger bekannt gemacht. Bei jeder Änderung/Bekanntmachung ist das Herausgabedatum der Änderung/Bekanntmachung anzugeben und das Datum, ab dem der geänderte Datenaustauschstandard XRechnung anzuwenden ist.\n(3) Für die Übermittlung von elektronischen Rechnungen haben Rechnungssteller und Rechnungssender ein Verwaltungsportal des Bundes im Sinne von § 2 Absatz 2 des Onlinezugangsgesetzes zu nutzen. Voraussetzung für die Übermittlung einer elektronischen Rechnung ist, dass der Rechnungssteller oder Rechnungssender sich zuvor mit einem Nutzerkonto im Sinne von § 2 Absatz 5 des Onlinezugangsgesetzes registriert. Elektronische Rechnungen, die über das Verwaltungsportal übermittelt werden, sind automationsunterstützt auf ihre formale Fehlerlosigkeit zu prüfen. Sobald die ordnungsgemäße Übermittlung einer elektronischen Rechnung festgestellt ist, ist der Rechnungssteller oder der Rechnungssender automationsunterstützt davon zu benachrichtigen. Eine formal fehlerhafte elektronische Rechnung ist automationsunterstützt abzulehnen. In diesem Fall ist der Rechnungssteller oder der Rechnungssender über die Ablehnung zu informieren.\n(4) Erhält ein Rechnungsempfänger eine elektronische Rechnung, die keinem Nutzerkonto zugeordnet werden kann, so hat der Rechnungsempfänger die elektronische Rechnung abzulehnen. In diesem Fall erhalten die Rechnungssteller oder die Rechnungssender keine Information über die Ablehnung.\n(5) Die Verpflichtungen nach den Absätzen 1 bis 4 gelten nicht für die Übermittlung von elektronischen Rechnungen, die in Verfahren der Organleihe nach § 159 Absatz 1 Nummer 5 des Gesetzes gegen Wettbewerbsbeschränkungen auszustellen sind.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native range actually read in this phase; full UStAE noncontiguous page scopes explicitly separate. Raw unchanged; acquisition is not whole-source reading."
+  },
+  "R39.default-and-consent": {
+    "id": "R39.default-and-consent",
+    "url": "https://www.gesetze-im-internet.de/ustg_1980/__14.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-14-20261024.html",
+    "raw_sha256": "ea479e0e6088f5f12a8453eceb145c1a59ef9861803a2c2eea12775d44360eb7",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U07132459484f876d.reader.txt",
+    "reader_sha256": "51f058c1b9e8785699a47d29e92bdc5fafc8b451c50c5cfd205018ae11a7e670",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "UStG § 14(1)–(3), default invoice/consent/duty context",
+    "native_LF": [
+      7,
+      18
+    ],
+    "exact_quote": "(1) Rechnung ist jedes Dokument, mit dem über eine Lieferung oder sonstige Leistung abgerechnet wird, gleichgültig, wie dieses Dokument im Geschäftsverkehr bezeichnet wird. Eine Rechnung kann als elektronische Rechnung oder vorbehaltlich des Absatzes 2 als sonstige Rechnung übermittelt werden. Eine elektronische Rechnung ist eine Rechnung, die in einem strukturierten elektronischen Format ausgestellt, übermittelt und empfangen wird und eine elektronische Verarbeitung ermöglicht. Eine sonstige Rechnung ist eine Rechnung, die in einem anderen elektronischen Format oder auf Papier übermittelt wird. Die Übermittlung einer elektronischen Rechnung oder einer sonstigen Rechnung in einem elektronischen Format bedarf der Zustimmung des Empfängers, soweit keine Verpflichtung nach Absatz 2 Satz 2 Nummer 1 besteht. Das strukturierte elektronische Format einer elektronischen Rechnung 1.\nmuss der europäischen Norm für die elektronische Rechnungsstellung und der Liste der entsprechenden Syntaxen gemäß der Richtlinie 2014/55/EU des Europäischen Parlaments und des Rates vom 16. April 2014 über die elektronische Rechnungsstellung bei öffentlichen Aufträgen (ABl. L 133 vom 6.5.2014, S. 1) entsprechen oder\n2.\nkann zwischen Rechnungsaussteller und Rechnungsempfänger vereinbart werden. Voraussetzung ist, dass das Format die richtige und vollständige Extraktion der nach diesem Gesetz erforderlichen Angaben aus der elektronischen Rechnung in ein Format ermöglicht, das der Norm nach Nummer 1 entspricht oder mit dieser interoperabel ist.\n(2) Führt der Unternehmer eine Lieferung oder eine sonstige Leistung nach § 1 Absatz 1 Nummer 1 aus, ist er berechtigt, eine Rechnung auszustellen. In den folgenden Fällen ist er zur Ausstellung einer Rechnung innerhalb von sechs Monaten nach Ausführung der Leistung verpflichtet, wenn der Umsatz nicht nach § 4 Nummer 8 bis 29 steuerfrei ist: 1.\nfür eine Leistung an einen anderen Unternehmer für dessen Unternehmen; die Rechnung ist als elektronische Rechnung nach Absatz 1 Satz 3 und 6 auszustellen, wenn der leistende Unternehmer und der Leistungsempfänger im Inland oder in einem der in § 1 Absatz 3 bezeichneten Gebiete ansässig sind;\n2.\nfür eine Leistung an eine juristische Person, die nicht Unternehmer ist;\n3.\nfür eine steuerpflichtige Werklieferung (§ 3 Absatz 4 Satz 1) oder sonstige Leistung im Zusammenhang mit einem Grundstück an einen anderen als in den Nummern 1 oder 2 genannten Empfänger.\nEin im Inland oder in einem der in § 1 Absatz 3 bezeichneten Gebiete ansässiger Unternehmer ist ein Unternehmer, der in einem dieser Gebiete seinen Sitz, seine Geschäftsleitung, eine Betriebsstätte, die an dem Umsatz beteiligt ist, oder in Ermangelung eines Sitzes seinen Wohnsitz oder gewöhnlichen Aufenthalt hat. § 14a bleibt unberührt. Unbeschadet der Verpflichtungen nach Satz 2 kann eine Rechnung von einem in Satz 2 Nummer 1 oder 2 bezeichneten Leistungsempfänger für eine Lieferung oder sonstige Leistung des Unternehmers ausgestellt werden, sofern dies vorher vereinbart wurde (Gutschrift). Die Gutschrift verliert die Wirkung einer Rechnung, sobald der Empfänger der Gutschrift dem ihm übermittelten Dokument widerspricht. Eine Rechnung kann im Namen und für Rechnung des Unternehmers oder eines in Satz 2 Nummer 1 oder 2 bezeichneten Leistungsempfängers von einem Dritten ausgestellt werden.\n(3) Die Echtheit der Herkunft der Rechnung, die Unversehrtheit ihres Inhalts und ihre Lesbarkeit müssen gewährleistet werden. Echtheit der Herkunft bedeutet die Sicherheit der Identität des Rechnungsausstellers. Unversehrtheit des Inhalts bedeutet, dass die nach diesem Gesetz erforderlichen Angaben nicht geändert wurden. Jeder Unternehmer legt fest, in welcher Weise die Echtheit der Herkunft, die Unversehrtheit des Inhalts und die Lesbarkeit der Rechnung gewährleistet werden. Dies kann durch jegliche innerbetriebliche Kontrollverfahren erreicht werden, die einen verlässlichen Prüfpfad zwischen Rechnung und Leistung schaffen können. Unbeschadet anderer zulässiger Verfahren gelten bei einer elektronischen Rechnung die Echtheit der Herkunft und die Unversehrtheit des Inhalts als gewährleistet durch 1.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native range actually read in this phase; full UStAE noncontiguous page scopes explicitly separate. Raw unchanged; acquisition is not whole-source reading."
+  },
+  "R39.transition": {
+    "id": "R39.transition",
+    "url": "https://www.gesetze-im-internet.de/ustg_1980/__27.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-27-20261024.html",
+    "raw_sha256": "58f8018d2dc7512cea52ca14847700b68fe07c8bfa3bc4e4aebc29c5f7451ee0",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue97e872a75e26a99.reader.txt",
+    "reader_sha256": "07dbb451d4da7ca6d39ae7f8154504e6fdaeaa8541ab72cdb24c89d6fed75c3d",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "UStG § 27(38)",
+    "native_LF": [
+      59,
+      65
+    ],
+    "exact_quote": "(38) Abweichend von § 14 Absatz 1 und 2 kann eine Rechnung 1.\nbis zum 31. Dezember 2026 für einen nach dem 31. Dezember 2024 und vor dem 1. Januar 2027 ausgeführten Umsatz auf Papier oder vorbehaltlich der Zustimmung des Empfängers in einem elektronischen Format, das nicht § 14 Absatz 1 Satz 6 entspricht, übermittelt werden;\n2.\nbis zum 31. Dezember 2027 für einen nach dem 31. Dezember 2026 und vor dem 1. Januar 2028 ausgeführten Umsatz auf Papier oder vorbehaltlich der Zustimmung des Empfängers in einem elektronischen Format, das nicht § 14 Absatz 1 Satz 6 entspricht, übermittelt werden, wenn der Gesamtumsatz (§ 19 Absatz 2) des die Rechnung ausstellenden Unternehmers im vorangegangenen Kalenderjahr nicht mehr als 800 000 Euro betragen hat;\n3.\nbis zum 31. Dezember 2027 für einen nach dem 31. Dezember 2026 und vor dem 1. Januar 2028 ausgeführten Umsatz vorbehaltlich der Zustimmung des Empfängers in einem elektronischen Format, das nicht § 14 Absatz 1 Satz 6 entspricht, ausgestellt werden, wenn diese mittels elektronischem Datenaustausch (EDI) nach Artikel 2 der Empfehlung 94/820/EG der Kommission vom 19. Oktober 1994 über die rechtlichen Aspekte des elektronischen Datenaustausches (ABl. L 338 vom 28.12.1994, S. 98) übermittelt wird.\nDie Absätze 15 und 18 bleiben unberührt.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native range actually read in this phase; full UStAE noncontiguous page scopes explicitly separate. Raw unchanged; acquisition is not whole-source reading."
+  },
+  "R39.effect": {
+    "id": "R39.effect",
+    "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+    "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+    "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+    "extraction": "PDF pdftotext-layout; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "BMF 15 October 2025, application after 2024",
+    "native_LF": [
+      1541,
+      1545
+    ],
+    "exact_quote": "Die Grundsätze dieses Schreibens sind auf alle Umsätze anzuwenden, die nach dem 31. Dezember\n2024 ausgeführt werden, wobei die Übergangsregelungen bis zum 31. Dezember 2027 zu beach-\nten sind (vgl. BMF-Schreiben vom 15. Oktober 2024, BStBl I S. 1320, Rn. 62 bis 65). Für zuvor aus-\ngeführte Umsätze ist der Umsatzsteuer-Anwendungserlass in seiner am 31. Dezember 2024 gülti-\ngen Fassung anzuwenden.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native range actually read in this phase; full UStAE noncontiguous page scopes explicitly separate. Raw unchanged; acquisition is not whole-source reading."
+  },
+  "R40.consent": {
+    "id": "R40.consent",
+    "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+    "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+    "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+    "extraction": "PDF pdftotext-layout; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "BMF 15 October 2025, UStAE14.1(6)/(7)",
+    "native_LF": [
+      415,
+      454
+    ],
+    "exact_quote": "          „(6) 1Ein Verstoß gegen die Verpflichtung zur Ausstellung einer E-Rechnung wird\n         beim Rechnungsaussteller nicht beanstandet, solange er keine Kenntnis davon hatte\n         und auch nicht mit der Sorgfalt eines ordentlichen Kaufmanns erkennen konnte, dass\n\fSeite 10 von 33\n\n         seine Leistung an einen anderen Unternehmer für dessen Unternehmen erbracht\n         wurde. 2Die Verwendung der USt-IdNr. oder der W-IdNr. kann ein Indiz dafür sein,\n         dass der Leistungsempfänger als Unternehmer handelt. 3Ist mindestens einer der am\n         Umsatz beteiligten Unternehmer nicht im Inland oder einem der in § 1 Abs. 3 UStG\n         bezeichneten Gebiete ansässig, besteht keine Pflicht zur Ausstellung einer\n         E-Rechnung; in diesen Fällen kann die gemäß § 14 Abs. 2 Satz 2 Nr. 1, erster Halbsatz\n         UStG auszustellende Rechnung als Rechnung in Papierform oder mit Zustimmung des\n         Rechnungsempfängers als E-Rechnung oder sonstige Rechnung in einem anderen\n         elektronischen Format ausgestellt werden (§ 14 Abs. 1 Satz 5 UStG).\n         4\n           Kleinbetragsrechnungen nach § 33 UStDV (vgl. Abschnitt 14.6), Fahrausweise nach\n         § 34 UStDV (vgl. Abschnitt 14.7) und Rechnungen eines Kleinunternehmers nach § 34a\n         UStDV (vgl. Abschnitt 14.7a) können immer als sonstige Rechnung ausgestellt und\n         übermittelt werden; verwendet der Rechnungsaussteller in diesen Fällen dennoch\n         eine E-Rechnung, ist dies bei Umsätzen zwischen inländischen Unternehmern ohne\n         Zustimmung des Rechnungsempfängers möglich. 5Für Umsätze, bei denen trotz\n         fehlender Verpflichtung zur Ausstellung (z. B. bei Umsätzen, die nach § 4 Nr. 8 bis 29\n         UStG steuerfrei sind, oder an private Endverbraucher) eine Rechnung ausgestellt wird,\n         kann eine E-Rechnung nur bei Zustimmung des Rechnungsempfängers verwendet\n         werden (§ 14 Abs. 1 Satz 5 UStG).\n            (7) 1Sofern keine Pflicht zur Verwendung einer E-Rechnung (nach § 14 Abs. 2 Satz 2\n         Nr. 1, zweiter Halbsatz UStG) besteht, ist die Verwendung einer sonstigen Rechnung in\n         Papierform immer zulässig. 2Auch in diesen Fällen kann eine E-Rechnung oder eine\n         sonstige Rechnung in einem anderen elektronischen Format verwendet werden, dies\n         bedarf aber der Zustimmung des Rechnungsempfängers (§ 14 Abs. 1 Satz 5 UStG). 3Zum\n         Zustimmungserfordernis bei Kleinbetragsrechnungen, Fahrausweisen und\n         Rechnungen eines Kleinunternehmers siehe Absatz 6. 4Die Zustimmung bedarf dabei\n         keiner besonderen Form und kann auch konkludent (z. B. durch eine\n         widerspruchslose Annahme) erfolgen. 5Es muss lediglich Einvernehmen zwischen\n         Rechnungsaussteller und Rechnungsempfänger darüber bestehen, dass die Rechnung\n         elektronisch übermittelt werden soll. 6Die Zustimmung kann z. B. in Form einer\n         Rahmenvereinbarung (z. B. in den Allgemeinen Geschäftsbedingungen) erklärt\n         werden. 7Sie kann auch nachträglich erklärt werden. 8Es genügt aber auch, dass die\n         Beteiligten diese Verfahrensweise tatsächlich praktizieren und damit stillschweigend\n         billigen.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native range actually read in this phase; full UStAE noncontiguous page scopes explicitly separate. Raw unchanged; acquisition is not whole-source reading."
+  },
+  "R41.amendment-input": {
+    "id": "R41.amendment-input",
+    "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+    "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+    "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+    "extraction": "PDF pdftotext-layout; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "BMF 15 October 2025, UStAE15.2a(1) invoice principle",
+    "native_LF": [
+      1365,
+      1371
+    ],
+    "exact_quote": "             „3Sofern für einen Umsatz nach § 14 Abs. 2 Satz 2 in Verbindung mit § 27 Abs. 38\n             UStG eine Verpflichtung zur Ausstellung einer E-Rechnung besteht, erfüllt nur\n             eine solche dem Grunde nach die Anforderungen der §§ 14, 14a UStG. 4Wird in\n             einem solchen Fall stattdessen eine sonstige Rechnung ausgestellt, handelt es sich\n             nicht um eine ordnungsmäßige Rechnung im Sinne von §§ 14, 14a UStG, so dass\n             diese Rechnung dem Grunde nach nicht zum Vorsteuerabzug berechtigt (vgl. aber\n             Absatz 1a).“",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native range actually read in this phase; full UStAE noncontiguous page scopes explicitly separate. Raw unchanged; acquisition is not whole-source reading."
+  },
+  "R41.amendment-fallback": {
+    "id": "R41.amendment-fallback",
+    "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+    "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+    "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+    "extraction": "PDF pdftotext-layout; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "BMF 15 October 2025, UStAE15.2a(1a) sentences12–14",
+    "native_LF": [
+      1390,
+      1397
+    ],
+    "exact_quote": "         „12Die vorstehenden Grundsätze gelten auch dann, wenn für einen Umsatz nach § 14\n         Abs. 2 Satz 2 in Verbindung mit § 27 Abs. 38 UStG eine Verpflichtung zur Ausstellung\n         einer E-Rechnung bestand, aber stattdessen eine sonstige Rechnung ausgestellt wurde\n         und auch keine Rechnungsberichtigung durch nachträgliches Ausstellen einer\n         E-Rechnung erfolgt ist (vgl. Absatz 7). 13In solchen Fällen werden bei einer inhaltlich\n         richtigen und vollständigen sonstigen Rechnung die genannten Voraussetzungen\n         regelmäßig erfüllt sein. 14Zu Einzelheiten siehe BMF-Schreiben vom 15.10.2024, BStBl I\n         S. 1320.“",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native range actually read in this phase; full UStAE noncontiguous page scopes explicitly separate. Raw unchanged; acquisition is not whole-source reading."
+  },
+  "R41.full-fallback-conditions": {
+    "id": "R41.full-fallback-conditions",
+    "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.body",
+    "raw_sha256": "f546602c2b7919aeb660c3a95ef6ec7b9d31e68ae4cc57d4aa1d84bf6b2bac0f",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.reader.txt",
+    "reader_sha256": "20c3385e52442415812a5211a9e944fca275ccadb7b4c7938f1515df1eabccd0",
+    "extraction": "PDF pdftotext-layout; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "Full UStAE15.2a(1a)sentences1–12, first page",
+    "native_LF": [
+      31069,
+      31094
+    ],
+    "exact_quote": "               (1a) Das Recht auf Vorsteuerabzug kann ausnahmsweise auch geltend gemacht werden, wenn der Unternehmer\n                     1\n\n            im Besitz einer Rechnung ist, die nicht alle formellen Voraussetzungen erfüllt und die auch nicht berichtigt wurde\n            (vgl. Absatz 7). 2Der Vorsteuerabzug ist unter Anwendung eines strengen Maßstabes auch zu gewähren, wenn die\n            Finanzverwaltung über sämtliche Angaben verfügt, um die materiellen Voraussetzungen zu überprüfen (vgl.\n            EuGH-Urteil vom 15.09.2016, C-516/14, Barlis 06). 3Der Unternehmer kann daher durch objektive Nachweise\n            belegen, dass ihm andere Unternehmer auf einer vorausgehenden Umsatzstufe tatsächlich Gegenstände oder\n            Dienstleistungen geliefert bzw. erbracht haben, die seinen der Umsatzsteuer unterliegenden Umsätzen dienten und\n            für die er die Umsatzsteuer tatsächlich entrichtet hat. 4Aus dieser Rechtsprechung folgt aber insbesondere nicht,\n            dass ein Vorsteuerabzug gänzlich ohne Rechnung geltend gemacht werden kann (vgl. Rz. 39 ff des BFH-Urteils\n            vom 15.10.2019 – V R 14/18, BStBl II 2020 S. 596). 5Der Nachweis über die tatsächliche Entrichtung der Steuer\n            kann nämlich nur über eine Rechnung oder deren Kopie (vgl. Abschnitt 15.11. Abs. 1 Satz 4) mit offen\n            ausgewiesener Umsatzsteuer erfolgen. 6Ohne diesen Ausweis verbleiben Zweifel, ob und in welcher Höhe die\n            Steuer in dem Zahlbetrag enthalten ist und damit, ob die Steuer tatsächlich entrichtet worden ist. 7Entscheidend\n            ist, dass die vorgelegten Beweismittel eine leichte und zweifelsfreie Feststellung der Voraussetzungen durch die\n            Finanzbehörden ermöglichen (vgl. BFH-Urteil vom 12.03.2020 – V R 48/17, BStBl II S. 604), anderenfalls ist die\n            Kontrollfunktion nicht erfüllt. 8Der Leistungszeitpunkt kann sich im Einzelfall aus dem Rechnungsdatum ergeben,\n            wenn keine Zweifel bestehen, dass die Leistung in dem Monat der Rechnungsstellung ausgeführt wurde (vgl.\n            BFH-Urteile vom 01.03.2018 – V R 18/17, BStBl II 2021 S. 644, und vom 15.10.2019 – V R 29/19 (V R 44/16),\n            BStBl II 2021 S. 646). 9Solche Zweifel bestehen insbesondere, wenn das Zusammenfallen von Rechnungs- und\n            Leistungsdatum nicht branchenüblich ist, der Rechnungsaussteller eine zeitnahe Abrechnung nicht regelmäßig\n            durchführt oder bei der konkreten Leistung sonstige Zweifel am Zusammenfallen der Daten bestehen. 10Es besteht\n            keine Pflicht der Finanzbehörden, fehlende Informationen selbst von Amts wegen zu ermitteln. 11Zweifel und\n            Unklarheiten wirken zu Lasten des Unternehmers (vgl. Abschnitt 15.11. Abs. 3 Satz 1). 12Die vorstehenden\n            Grundsätze gelten auch dann, wenn für einen Umsatz nach § 14 Abs. 2 Satz 2 in Verbindung mit § 27",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native range actually read in this phase; full UStAE noncontiguous page scopes explicitly separate. Raw unchanged; acquisition is not whole-source reading."
+  },
+  "R41.full-fallback-completion": {
+    "id": "R41.full-fallback-completion",
+    "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.body",
+    "raw_sha256": "f546602c2b7919aeb660c3a95ef6ec7b9d31e68ae4cc57d4aa1d84bf6b2bac0f",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.reader.txt",
+    "reader_sha256": "20c3385e52442415812a5211a9e944fca275ccadb7b4c7938f1515df1eabccd0",
+    "extraction": "PDF pdftotext-layout; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "Full UStAE15.2a(1a)sentences12–14, continuation after page notes",
+    "native_LF": [
+      31120,
+      31124
+    ],
+    "exact_quote": "\fSeite 584   Abs. 38 UStG eine Verpflichtung zur Ausstellung einer E-Rechnung bestand, aber stattdessen eine sonstige\n            Rechnung ausgestellt wurde und auch keine Rechnungsberichtigung durch nachträgliches Ausstellen einer\n            E-Rechnung erfolgt ist (vgl. Absatz 7). 13In solchen Fällen werden bei einer inhaltlich richtigen und\n            vollständigen sonstigen Rechnung die genannten Voraussetzungen regelmäßig erfüllt sein. 14Zu\n            Einzelheiten siehe BMF-Schreiben vom 15.10.2024, BStBl I S. 1320. 336                      335F",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native range actually read in this phase; full UStAE noncontiguous page scopes explicitly separate. Raw unchanged; acquisition is not whole-source reading."
+  },
+  "R42.outgoing-waiver": {
+    "id": "R42.outgoing-waiver",
+    "url": "https://usth.bundesfinanzministerium.de/ao/2026/Anhaenge/BMF-Schreiben-und-gleichlautende-Laendererlasse/Anhang-33/inhalt.html",
+    "act_article": "GoBD75/76, full-content/highest-evaluability and conditional outgoing waiver",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/gobd-2026/official-annex.raw.html",
+    "raw_sha256": "5987f8c5108eee225bb64aa3f91507465b1e72e9ef933c22d12ada9e380b4378",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/gobd-2026/official-annex.reader.txt",
+    "reader_sha256": "a9d917866136d75b8b46deebbc1e9db790301dbb2d0e56451cc399dd07f2a076",
+    "native_LF": [
+      254,
+      265
+    ],
+    "exact_quote": "4.3 Erfassungsgerechte Aufbereitung der Buchungsbelege\n75\nEine erfassungsgerechte Aufbereitung der Buchungsbelege in Papierform oder die entsprechende Übernahme von Beleginformationen aus elektronischen Belegen (Daten, Datensätze, elektronische Dokumente und elektronische Unterlagen) ist sicherzustellen. Diese Aufbereitung der Belege ist insbesondere bei Fremdbelegen von Bedeutung, da der Steuerpflichtige im Allgemeinen keinen Einfluss auf die Gestaltung der ihm zugesandten Handels- und Geschäftsbriefe (z. B. Eingangsrechnungen) hat.\n76\nWerden neben bildhaften Urschriften auch elektronische Meldungen bzw. Datensätze ausgestellt (identische Mehrstücke derselben Belegart), ist die Aufbewahrung der tatsächlich weiterverarbeiteten Formate (buchungsbegründende Belege) ausreichend,\nsofern diese über die höchste maschinelle Auswertbarkeit verfügen. In diesem Fall erfüllt das Format mit der höchsten maschinellen Auswertbarkeit mit dessen vollständigem Dateninhalt die Belegfunktion und muss mit dessen vollständigem Inhalt gespeichert werden. Andernfalls sind beide Formate aufzubewahren. Dies gilt entsprechend, wenn mehrere elektronische Meldungen bzw. mehrere Datensätze ohne bildhafte Urschrift ausgestellt werden. Dies gilt auch für elektronische Meldungen bzw. Datensätze (strukturierte Daten, wie z. B. ein monatlicher Kontoauszug im CSV-Format oder als XML-Datei, strukturierter Teil einer E-Rechnung), für die inhaltsgleiche bildhafte Dokumente zusätzlich bereitgestellt werden. Eine zusätzliche Archivierung der inhaltsgleichen Dateien im PDF-Format oder papierhaften Belegen kann bei Erfüllung der Belegfunktion durch die strukturierten Dateien entfallen.\nBei Einsatz eines Fakturierungsprogramms muss unter Berücksichtigung der vorgenannten Voraussetzungen keine bildhafte Kopie der Ausgangsrechnung (z. B. in Form einer PDF-Datei oder des PDF-Teils eines hybriden Rechnungsformats) ab Erstellung gespeichert bzw. aufbewahrt werden, wenn jederzeit auf Anforderung ein inhaltlich identisches Mehrstück der Ausgangsrechnung erstellt werden kann.\nHierfür sind u. a. folgende Voraussetzungen zu beachten:\nEntsprechende Stammdaten (z. B. Debitoren, Warenwirtschaft etc.) werden laufend historisiert\nAGB werden ebenfalls historisiert und aus der Verfahrensdokumentation ist ersichtlich, welche AGB bei Erstellung der Originalrechnung verwendet wurden\nOriginallayout des verwendeten Geschäftsbogens wird als Muster (Layer) gespeichert und bei Änderungen historisiert. Zudem ist aus der Verfahrensdokumentation ersichtlich, welches Format bei Erstellung der Originalrechnung verwendet wurde (idealerweise kann bei Ausdruck oder Lesbarmachung des Rechnungsdoppels dieses Originallayout verwendet werden).\nWeiterhin sind die Daten des Fakturierungsprogramms in maschinell auswertbarer Form und unveränderbar aufzubewahren.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Whole selected current official BMF2026annex range actually read by this writer; C acquired the retained raw body. No whole-GoBD reading or implementation certification claimed."
+  },
+  "R43.conversion": {
+    "id": "R43.conversion",
+    "url": "https://usth.bundesfinanzministerium.de/ao/2026/Anhaenge/BMF-Schreiben-und-gleichlautende-Laendererlasse/Anhang-33/inhalt.html",
+    "act_article": "GoBD135, dual-copy default and actual conditional converted-only exception",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/gobd-2026/official-annex.raw.html",
+    "raw_sha256": "5987f8c5108eee225bb64aa3f91507465b1e72e9ef933c22d12ada9e380b4378",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/gobd-2026/official-annex.reader.txt",
+    "reader_sha256": "a9d917866136d75b8b46deebbc1e9db790301dbb2d0e56451cc399dd07f2a076",
+    "native_LF": [
+      492,
+      499
+    ],
+    "exact_quote": "135\nBei Umwandlung (Konvertierung) aufbewahrungspflichtiger Unterlagen in ein unternehmenseigenes Format (sog. Inhouse-Format) sind beide Versionen zu archivieren, derselben Aufzeichnung zuzuordnen und mit demselben Index zu verwalten sowie die konvertierte Version als solche zu kennzeichnen.\nDie Aufbewahrung beider Versionen ist bei Beachtung folgender Anforderungen nicht erforderlich, sondern es ist die Aufbewahrung der konvertierten Fassung ausreichend:\nEs wird keine bildliche oder inhaltliche Veränderung vorgenommen.\nBei der Konvertierung gehen keine sonstigen aufbewahrungspflichtigen Informationen verloren.\nDie ordnungsgemäße und verlustfreie Konvertierung wird dokumentiert (Verfahrensdokumentation).\nDie maschinelle Auswertbarkeit und der Datenzugriff durch die Finanzbehörde werden nicht eingeschränkt; dabei ist es zulässig, wenn bei der Konvertierung Zwischenaggregationsstufen nicht gespeichert, aber in der Verfahrensdokumentation so dargestellt werden, dass die retrograde und progressive Prüfbarkeit sichergestellt ist.\nNicht aufbewahrungspflichtig sind die während der maschinellen Verarbeitung durch das Buchführungssystem erzeugten Dateien, sofern diese ausschließlich einer temporären Zwischenspeicherung von Verarbeitungsergebnissen dienen und deren Inhalte im Laufe des weiteren Verarbeitungsprozesses vollständig Eingang in die Buchführungsdaten finden. Voraussetzung ist jedoch, dass bei der weiteren Verarbeitung keinerlei „Verdichtung“ aufzeichnungs- und aufbewahrungspflichtiger Daten (vgl. Rzn. 3 bis 5) vorgenommen wird.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Whole selected current official BMF2026annex range actually read by this writer; C acquired the retained raw body. No whole-GoBD reading or implementation certification claimed."
+  },
+  "R43.documentation": {
+    "id": "R43.documentation",
+    "url": "https://usth.bundesfinanzministerium.de/ao/2026/Anhaenge/BMF-Schreiben-und-gleichlautende-Laendererlasse/Anhang-33/inhalt.html",
+    "act_article": "GoBD150–155, process documentation and no-automatic-rejection qualification",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/gobd-2026/official-annex.raw.html",
+    "raw_sha256": "5987f8c5108eee225bb64aa3f91507465b1e72e9ef933c22d12ada9e380b4378",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/gobd-2026/official-annex.reader.txt",
+    "reader_sha256": "a9d917866136d75b8b46deebbc1e9db790301dbb2d0e56451cc399dd07f2a076",
+    "native_LF": [
+      545,
+      557
+    ],
+    "exact_quote": "150\nFür die Prüfung ist eine aussagefähige und aktuelle Verfahrensdokumentation notwendig, die alle System- bzw. Verfahrensänderungen inhaltlich und zeitlich lückenlos dokumentiert.\n10.1 Verfahrensdokumentation\n151\nDa sich die Ordnungsmäßigkeit neben den elektronischen Büchern und sonst erforderlichen Aufzeichnungen auch auf die damit in Zusammenhang stehenden Verfahren und Bereiche des DV-Systems bezieht (siehe unter 3.), muss für jedes DV-System eine übersichtlich gegliederte Verfahrensdokumentation vorhanden sein, aus der Inhalt, Aufbau, Ablauf und Ergebnisse des DV-Verfahrens vollständig und schlüssig ersichtlich sind. Der Umfang der im Einzelfall erforderlichen Dokumentation wird dadurch bestimmt, was zum Verständnis des DV-Verfahrens, der Bücher und Aufzeichnungen sowie der aufbewahrten Unterlagen notwendig ist. Die Verfahrensdokumentation muss verständlich und damit für einen sachverständigen Dritten in angemessener Zeit nachprüfbar sein. Die konkrete Ausgestaltung der Verfahrensdokumentation ist abhängig von der Komplexität und Diversifikation der Geschäftstätigkeit und der Organisationsstruktur sowie des eingesetzten DV-Systems.\n152\nDie Verfahrensdokumentation beschreibt den organisatorisch und technisch gewollten Prozess, z. B. bei elektronischen Dokumenten von der Entstehung der Informationen über die Indizierung, Verarbeitung und Speicherung, dem eindeutigen Wiederfinden und der maschinellen Auswertbarkeit, der Absicherung gegen Verlust und Verfälschung und der Reproduktion.\n153\nDie Verfahrensdokumentation besteht in der Regel aus einer allgemeinen Beschreibung, einer Anwenderdokumentation, einer technischen Systemdokumentation und einer Betriebsdokumentation.\n154\nFür den Zeitraum der Aufbewahrungsfrist muss gewährleistet und nachgewiesen sein, dass das in der Dokumentation beschriebene Verfahren dem in der Praxis eingesetzten Verfahren voll entspricht. Dies gilt insbesondere für die eingesetzten Versionen der Programme (Programmidentität). Änderungen einer Verfahrensdokumentation müssen historisch nachvollziehbar sein. Dem wird genügt, wenn die Änderungen versioniert sind und eine nachvollziehbare Änderungshistorie vorgehalten wird. Aus der Verfahrensdokumentation muss sich ergeben, wie die Ordnungsvorschriften (z. B. §§ 145 ff. AO, §§ 238 ff. HGB) und damit die in diesem Schreiben enthaltenen Anforderungen beachtet werden. Die Aufbewahrungsfrist für die Verfahrensdokumentation läuft nicht ab, soweit und solange die Aufbewahrungsfrist für die Unterlagen noch nicht abgelaufen ist, zu deren Verständnis sie erforderlich ist.\n155\nSoweit eine fehlende oder ungenügende Verfahrensdokumentation die Nachvollziehbarkeit und Nachprüfbarkeit nicht beeinträchtigt, liegt kein formeller Mangel mit sachlichem Gewicht vor, der zum Verwerfen der Buchführung führen kann.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Whole selected current official BMF2026annex range actually read by this writer; C acquired the retained raw body. No whole-GoBD reading or implementation certification claimed."
+  },
+  "R43.effective": {
+    "id": "R43.effective",
+    "url": "https://usth.bundesfinanzministerium.de/ao/2026/Anhaenge/BMF-Schreiben-und-gleichlautende-Laendererlasse/Anhang-33/inhalt.html",
+    "act_article": "GoBD182–185, own2025effect despite older heading",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/gobd-2026/official-annex.raw.html",
+    "raw_sha256": "5987f8c5108eee225bb64aa3f91507465b1e72e9ef933c22d12ada9e380b4378",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/gobd-2026/official-annex.reader.txt",
+    "reader_sha256": "a9d917866136d75b8b46deebbc1e9db790301dbb2d0e56451cc399dd07f2a076",
+    "native_LF": [
+      630,
+      639
+    ],
+    "exact_quote": "13. Anwendungsregelung\n182\nDie GoBD in der Fassung vom 28. November 2019 treten mit Wirkung vom 1. Januar 2020 an die Stelle des BMF-Schreibens vom 14. November 2014 - IV A 4 - S 0316/13/10003 -, BStBl I S. 1450.\n183\nDie GoBD in der Fassung vom 28. November 2019 sind auf Besteuerungszeiträume anzuwenden, die nach dem 31. Dezember 2019 beginnen. Es wird nicht beanstandet, wenn der Steuerpflichtige diese Grundsätze auf Besteuerungszeiträume anwendet, die vor dem 1. Januar 2020 enden.\n184\nDie GoBD in der Fassung vom 11. März 2024 gelten ab dem 1. April 2024.\n185\nDie GoBD in der Fassung vom 14. Juli 2025 sind mit Wirkung vom 14. Juli 2025 anzuwenden.\nAnlage 1",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Whole selected current official BMF2026annex range actually read by this writer; C acquired the retained raw body. No whole-GoBD reading or implementation certification claimed."
+  }
+}

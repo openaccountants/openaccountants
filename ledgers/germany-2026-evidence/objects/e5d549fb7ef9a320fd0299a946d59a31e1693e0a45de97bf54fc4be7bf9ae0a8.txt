@@ -1,0 +1,861 @@
+BZSt - Fragen & Antworten
+Hinweis zur Verwendung von Cookies
+Wir möchten zur Verbesserung unserer Website das Nutzungsverhalten analysieren und Zugriffsstatistiken erstellen. Dafür werden mit der Webanalyse-Software Matomo statistische Informationen erfasst und ausgewertet. Ausschließlich mit Ihrer Einwilligung speichern wir dafür ein Statistik-Cookie auf Ihrem Endgerät und greifen auf für diesen Zweck erforderliche Geräteinformationen Ihres Endgerätes zu. Zu keiner Zeit werden diese Daten mit persönlichen Daten in Verbindung gebracht oder an Dritte weitergegeben. Weitere Informationen finden Sie in unserer Datenschutzerklärung. Dort ist auch jederzeit der Widerruf Ihrer Einwilligung möglich.
+Einverstanden
+Springe direkt zu:
+Inhalt
+Hauptmenü
+Suche
+BZSt Online.Portal
+Kontakt
+English
+Leichte Sprache
+Gebärdensprache
+Bundeszentralamt für Steuern (Link zur Startseite)
+Dieses Dokument bestimmt, ob ein Zusatzlogo ausgegeben wird.
+Ein im Feld Wert eingehängtes Logo wird als Zusatzlogo ausgegeben.
+Ist das Feld Wert leer, so wird kein Zusatzlogo ausgegeben.
+Ablageoptionen:
+Wird dieses Dokument unterhalb des globalen Verzeichnisses "_config" abgelegt, so wird das Zusatzlogo auf allen Seiten ausgegeben.
+Um das Logo nur für bestimmte Bereiche auszugeben, kann das Konfigurationsdokument zusätzlich pfadabhängig abgelegt werden.
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Karriere
+Website durchsuchen
+Suchtext
+Suchtext
+Startseite
+Unternehmen
+Internationaler Informationsaustausch
+Country-by-Country Reporting
+Fragen & Antworten
+Vorlesen
+Fragen und Antworten (CbCR)
+Der Umgang mit CbCR ist häufig mit vielen Fragen verbunden. Damit diese schnell und transparent beantwortet werden, haben wir die häufigsten Anliegen für Sie gesammelt.
+Verfahren
+Bis wann müssen die Daten an das BZSt gemeldet werden?
+Die Meldungen sind bis spätestens ein Jahr nach Ablauf des Wirtschaftsjahres, für das der länderbezogene Bericht zu erstellen ist, zu übermitteln. Erstmalig für Wirtschaftsjahre, die nach dem 31. Dezember 2015 beginnen.
+Ausnahme: Die Übermittlung von unvollständigen Meldungen i. S. d. § 138a Abs. 4 AO ist erstmalig für Wirtschaftsjahre anzuwenden, die nach dem 31. Dezember 2016 beginnen (vgl. § 31 Einführungsgesetz zur Abgabenordnung).
+Ist eine Korrektur der gelieferten Daten möglich?
+Ja, wenn Sie feststellen, dass unrichtige oder unvollständige Angaben im übermittelten länderbezogenen Bericht enthalten sind.
+Eine Korrektur des fehlerhaften länderbezogenen Berichtes kann auf zwei verschiedenen Wegen erfolgen:
+1. Möglichkeit:
+Es wird eine Löschung eingereicht. Im Anschluss daran erfolgt die Übermittlung einer neuen initialen Lieferung (insgesamt 2 Lieferungen)
+2. Möglichkeit:
+Es wird eine Korrekturlieferung übermittelt (1 Lieferung).
+Die Korrekturmeldungen müssen entsprechend als "correction message" gekennzeichnet werden.
+Im Kapitel VII des User Guide für das CbCR XML Schema Version 2.0 finden Sie zum Thema Korrekturen eine entsprechende Anleitung.
+Der User Guide ist unter dem Thema Vorschriften verfügbar.
+Wer muss den länderbezogenen Bericht abgeben?
+Der länderbezogene Bericht ist von einer inländischen Konzernobergesellschaft mit Sitz oder Geschäftsleitung im Inland abzugeben. Diese inländische Konzernobergesellschaft muss mindestens ein ausländisches Unternehmen oder eine ausländische Betriebsstätte umfassen.
+Bei einer Konzernobergesellschaft handelt es sich um eine Gesellschaft, die als Konzernspitze Anteile an anderen Unternehmen (Tochtergesellschaften) hält und auf diese wirtschaftlichen Einfluss ausüben kann, ohne dass diese Unternehmen ihre rechtliche Selbständigkeit verlieren.
+Muss jedes deutsche Unternehmen, mit Sitz oder Geschäftsleitung im Inland einen länderbezogenen Bericht abgeben?
+Der länderbezogene Bericht muss nur von Unternehmen abgegeben werden, die inländische Konzernobergesellschaften sind und die mindestens ein ausländisches Unternehmen oder eine ausländische Betriebsstätte umfassen und darüber hinaus konsolidierte Umsatzerlöse von mindestens 750 Millionen Euro im vorangegangenen Wirtschaftsjahr erzielt haben.
+Ausnahmen:
+Das Unternehmen ist eine beauftrage Gesellschaft i. S. d. § 138a Abs. 3 AO oder das Unternehmen wird zur Abgabe i. S. d. § 138a Abs. 4 AO aufgefordert.
+Auf welcher Grundlage findet der Datenaustausch statt?
+Die Abgabeverpflichtung des deutschen multinationalen Unternehmens ergibt sich aus § 138a AO. Der Austausch mit EU-Ländern erfolgt auf Grundlage des EU-Amtshilfegesetzes sowie auf Grundlage der EU-Amtshilferichtlinie vom 25. Mai 2016. Mit Drittstaaten werden länderbezogene Berichte auf Grundlage der am 27. Januar 2016 unterzeichneten mehrseitigen Vereinbarung (MCAA CbC) ausgetauscht.
+BGBl 2016 Teil I Nr. 63 S. 3000 - 30015
+Gesetz zur Umsetzung der Änderungen der EU-Amtshilferichtlinie und von weiteren Maßnahmen gegen Gewinnkürzungen und -verlagerungen (BGBl 2016 Teil I Nr. 63 S. 3000 - 3015)
+Was passiert, wenn eine ausländische Konzernobergesellschaft ihrer Verpflichtung zur Abgabe des CbC-Reports nicht nachkommt?
+Falls das BZSt von der ausländischen Steuerbehörde keinen länderbezogenen Bericht einer ausländischen Konzernobergesellschaft erhalten hat, ist jede einbezogene inländische Konzerngesellschaft zur Übermittlung eines länderbezogenen Berichts für diesen Konzern verpflichtet.
+Wird von einer dieser inländischen Konzerngesellschaften ein länderbezogener Bericht an das BZSt übermittelt, entfällt die Verpflichtung für alle weiteren Konzerngesellschaften, die in den Bericht einbezogen wurden.
+Technisch
+In welchem Format erfolgt der Datenaustausch?
+Der länderbezogene Bericht hat in einem amtlich vorgeschriebenen Datensatz entsprechend dem XML Schema zu erfolgen. Er orientiert sich an dem Musterformblatt für länderbezogene Berichte der OECD.
+Die OECD stellt auf ihrer Internetseite einen User Guide für das XML Schema zur Verfügung. Dieser enthält sowohl inhaltliche als auch technische Vorgaben zur Erstellung des länderbezogenen Berichts.
+Kann der länderbezogene Bericht im Excel, Word oder PDF-Format versandt werden?
+Nein, der länderbezogene Bericht muss in einem amtlich vorgeschriebenen Datensatz im XML Format versandt werden.
+Welche Registrierung ist für die Datenübermittlung erforderlich?
+Zur Übermittlung von Daten an das BZSt können Sie sich im neuen BZSt online.portal entweder mit einem Elster-Zertifikat oder mit dem BZSt-Zertifikat anmelden.
+Zur Übermittlung von Massendaten muss (auch bei bereits erfolgter CbCR-Übermittlung in den Vorjahren) in jedem Fall eine Freischaltung zur Nutzung der Massendatenschnittstelle (DIP) erfolgen. Der Antrag kann im neuen BZSt online.portal gestellt werden.
+Zudem ist zur Übermittlung von CbCR-Daten eine BZ-Nummer erforderlich.
+In welcher Sprache ist das XML-Schema zu befüllen?
+Das XML-Schema sollte bevorzugt in Englisch übermittelt werden. Bitte beachten Sie, dass die in Tabelle 3 enthaltenen Informationen oder Erläuterungen verpflichtend in englischer Sprache zu übermitteln sind. Dies ergibt sich aus Artikel 2b der Durchführungsverordnung (EU) 2015/2378 (eingefügt durch die Durchführungsverordnung (EU) 2016/1963 vom 9. November 2016 (ABl. EU L 303/4)).
+Welche Rückmeldung erhalte ich nach erfolgter Übermittlung?
+Nach der Übermittlung eines länderbezogenen Berichts erfolgt zunächst eine Prüfung der Datei auf Ebene der DIP-Massendatenschnittstelle und anschließend eine verfahrensspezifische Prüfung auf Ebene des Fachverfahrens.
+Daraufhin wird ein DIP-Protokoll erstellt, welches das Ergebnis der zweistufigen Prüfung in einem Gesamtstatus innerhalb des Attributes processStatus zusammenfasst.
+Ein eventueller Fehler aus der DIP-Validierung ist im Element dipResult aufgeführt.
+Das Ergebnis der fachlichen Prüfung wird gesondert innerhalb des Elementes payloadResult ausgewiesen.
+Hinsichtlich der verschiedenen Status, die das Protokoll enthalten kann, wird auf das KHB CbCR und das KHB DIP-Standard verwiesen.
+Erst wenn das Protokoll eine erfolgreiche Übermittlung bestätigt, gilt der länderbezogene Bericht als erfolgreich übermittelt.
+Sonstiges
+Wie lange werden die länderbezogenen Berichte beim BZSt gespeichert?
+Das BZSt ist verpflichtet die länderbezogenen Berichte 15 Jahre zu speichern (vgl. § 138a Abs. 7 AO).
+Gibt es ein Glossar für Begriffsbestimmungen?
+Ja, die OECD hat einen Glossar veröffentlicht.
+Es ist veröffentlicht unter:
+OECD CbCR Glossar
+Muss dem BZSt vorab mitgeteilt werden, welches Unternehmen der Konzerngruppe den länderbezogenen Bericht (Country-by-Country Report) abgeben wird?
+Nein, in den Steuererklärungsvordrucken sind ab dem Jahr 2017 Angaben über das berichterstattende Unternehmen zu machen. Es ist daher nicht erforderlich dem BZSt vorab mitzuteilen, welches Unternehmen der Konzerngruppe den länderbezogenen Bericht (Country-by-Country Report) abgeben wird.
+Wo finde ich Informationen zu fachlichen Fragen?
+Die OECD veröffentlicht in regelmäßigen Abständen Leitlinien und Informationen zu Auslegungsfragen auf ihrer Internetseite und in den Leitlinien zur Umsetzung.
+OECD
+Leitlinien und Informationen zu Auslegungsfragen für den automatischen Informationsaustausch
+Ist es verpflichtend, dass der länderbezogene Bericht vom meldepflichtigen Unternehmen selbst über die neue DIP-Schnittstelle oder den Dateiupload an das BZSt versendet wird?
+Nein, im Rahmen der Vertretungsvollmacht gemäß § 80 AO kann der länderbezogene Bericht auch von einem Vertreter/einer Vertreterin versendet werden. In diesem Fall ist dem BZSt eine Vollmacht zu übermitteln, aus der sich die Daten des vertretenen Unternehmens (Name, Anschrift, Steuernummer) ergeben. Sofern sich diese Angaben nicht oder nicht vollständig aus der Vollmacht entnehmen lassen, sind diese Daten in einem separaten Schreiben ergänzend aufzuführen. Zusätzlich ist dem Fachbereich mitzuteilen, um welche Art von Vollmacht (Übermittlungs- und/oder Bekanntgabevollmacht) es sich handelt.
+Erfolgt die Übermittlung über die neue DIP-Schnittstelle, ist die Vollmacht separat einzureichen.
+Werden die Berichte durch das BZSt überprüft?
+Ja, die Berichte werden stichprobenartig überprüft, um eine gute Datenqualität zu gewährleisten.
+Kann es im Einzelfall zu bußgeldrechtlichen Konsequenzen kommen?
+Wenn ein länderbezogener Bericht nicht, nicht vollständig oder nicht rechtzeitig eingereicht wird, könnte gemäß § 379 Abs. 2 Nr. 1 Buchstabe c) Abgabenordnung (AO) eine Steuerordnungswidrigkeit vorliegen. Nach § 379 Abs. 5 AO können derartige Verstöße gegen die Berichtspflicht mit einer Geldbuße von bis zu 10.000 Euro geahndet werden.
+Die Zuständigkeit für das Bußgeldverfahren obliegt der sachlich und örtlich zuständigen Landesfinanzbehörde.
+Bei Rückfragen in derartigen Fällen wenden Sie sich bitte an das sachlich und örtlich zuständige Finanzamt.
+Datenaustausch
+Mit welchen Teilnehmerstaaten erfolgte der Informationsaustausch für das Wirtschaftsjahr 2016?
+LandVersand durch DEUErhalt durch DEU
+ArgentinienJaJa
+AustralienJaJa
+BelgienJaJa
+BermudaKein Versand an BermudaJa
+BrasilienJaJa
+BulgarienJaJa
+Cayman-InselnKein Versand an Cayman-InselnJa
+DänemarkJaJa
+EstlandJaJa
+FinnlandJaJa
+FrankreichJaJa
+GibraltarJaJa
+GriechenlandJaJa
+Guernsey (Kanalinseln)JaJa
+IndienJaJa
+IndonesienJaJa
+Insel ManJaJa
+IrlandJaJa
+IslandJaJa
+ItalienJaJa
+JapanJaJa
+Jersey (Kanalinseln)JaJa
+KanadaJaJa
+KasachstanJaJa
+KolumbienJaJa
+Korea, Republik (Südkorea)JaJa
+KroatienJaJa
+LettlandJaJa
+LiechtensteinJaJa
+LitauenJaJa
+LuxemburgJaJa
+MalaysoaJaJa
+MaltaJaJa
+MauritiusJaJa
+MexikoJaJa
+NeuseelnadJaJa
+NiederlandeJaJa
+NorwegenJaJa
+ÖsterreichJaJa
+PakistanJaJa
+PolenJaJa
+PortugalJaJa
+RumänienJaJa
+Russische FörderationVersand wurde ab 2022 ausgesetztJa
+SchwedenJaJa
+SchweizJaJa
+SingapurJaJa
+SlowakeiJaJa
+SlowenienJaJa
+SpanienJaJa
+SüdafrikaJaJa
+Tschechische RepublikJaJa
+UngarnJaJa
+Vereinigte Staaten von AmerikaJaJa
+Vereinigtes Königreich Großbritannien und NordirlandJaJa
+ZypernJaJa
+Mit welchen Teilnehmerstaaten erfolgte der Informationsaustausch für das Wirtschaftsjahr 2017?
+LandVersand durch DEUErhalt durch DEU
+ArgentinienJaJa
+AustralienJaJa
+BelgienJaJa
+BermudaKein Versand an BermudaJa
+BrasilienJaJa
+BulgarienJaJa
+Cayman-InselnKein Versand an Cayman-InselnJa
+ChileJaJa
+China, VolksrepublikJaJa
+Costa RicaKein Versand an Costa RicaJa
+DänemarkJaJa
+EstlandJaJa
+FinnlandJaJa
+FrankreichJaJa
+GibraltarJaJa
+GriechenlandJaJa
+Guernsey (Kanalinseln)JaJa
+IndienJaJa
+IndonesienJaJa
+Insel ManJaJa
+IrlandJaJa
+IslandJaJa
+ItalienJaJa
+JapanJaJa
+Jersey (Kanalinseln)JaJa
+KanadaJaJa
+KasachstanJaJa
+KolumbienJaJa
+Korea, Republik (Südkorea)JaJa
+KroatienJaJa
+LettlandJaJa
+LiechtensteinJaJa
+LitauenJaJa
+LuxemburgJaJa
+MalaysoaJaJa
+MaltaJaJa
+MauritiusJaJa
+MexikoJaJa
+NeuseelnadJaJa
+NiederlandeJaJa
+NorwegenJaJa
+ÖsterreichJaJa
+PakistanJaJa
+PeruJaJa
+PolenJaJa
+PortugalJaJa
+RumänienJaJa
+Russische FörderationVersand wurde ab 2022 ausgesetztJa
+SchwedenJaJa
+SchweizJaJa
+SingapurJaJa
+SlowakeiJaJa
+SlowenienJaJa
+SpanienJaJa
+SüdafrikaJaJa
+Tschechische RepublikJaJa
+UngarnJaJa
+UruguayJaJa
+Vereinigte Staaten von AmerikaJaJa
+Vereinigtes Königreich Großbritannien und NordirlandJaJa
+ZypernJaJa
+Mit welchen Teilnehmerstaaten erfolgte der Informationsaustausch für das Wirtschaftsjahr 2018?
+LandVersand durch DEUErhalt durch DEU
+AndorraJaJa
+ArgentinienJaJa
+AustralienJaJa
+BelgienJaJa
+BermudaKein Versand an BermudaJa
+Bonaire, Sint Eustatius und SabaJaJa
+BrasilienJaJa
+Britische JungferninselnKein Versand an Britische JungferninselnJa
+BulgarienJaJa
+Cayman-InselnKein Versand an Cayman-InselnJa
+ChileJaJa
+China, VolksrepublikJaJa
+Costa RicaKein Versand an Costa RicaJa
+CuracaoKein Versand an CuracaoJa
+DänemarkJaJa
+EstlandJaJa
+FinnlandJaJa
+FrankreichJaJa
+GibraltarJaJa
+GriechenlandJaJa
+Guernsey (Kanalinseln)JaJa
+IndienJaJa
+IndonesienJaJa
+Insel ManJaJa
+IrlandJaJa
+IslandJaJa
+ItalienJaJa
+JapanJaJa
+Jersey (Kanalinseln)JaJa
+KanadaJaJa
+KasachstanJaJa
+KatarKein Versand an KatarJa
+KolumbienJaJa
+Korea, Republik (Südkorea)JaJa
+KroatienJaJa
+LettlandJaJa
+LiechtensteinJaJa
+LitauenJaJa
+LuxemburgJaJa
+MalaysoaJaJa
+MaltaJaJa
+MauritiusJaJa
+MexikoJaJa
+MonacoJaJa
+NeuseelnadJaJa
+NiederlandeJaJa
+NigeriaJaJa
+NorwegenJaJa
+ÖsterreichJaJa
+PakistanJaJa
+PanamaJaJa
+PeruJaJa
+PolenJaJa
+PortugalJaJa
+RumänienJaJa
+Russische FörderationVersand wurde ab 2022 ausgesetztJa
+Saudi-ArabienJaJa
+SchwedenJaJa
+SchweizJaJa
+SingapurJaJa
+SlowakeiJaJa
+SlowenienJaJa
+SpanienJaJa
+SüdafrikaJaJa
+Tschechische RepublikJaJa
+UngarnJaJa
+UruguayJaJa
+Vereinigte Staaten von AmerikaJaJa
+Vereinigtes Königreich Großbritannien und NordirlandJaJa
+ZypernJaJa
+UngarnJaJa
+UruguayJaJa
+Vereinigte Arabische EmirateKein Versand an Vereinigte Arabische EmirateJa
+Vereinigte Staaten von AmerikaJaJa
+Vereinigtes Königreich Großbritannien und NordirlandJaJa
+ZypernJaJa
+Mit welchen Teilnehmerstaaten erfolgte der Informationsaustausch für das Wirtschaftsjahr 2019?
+LandVersand durch DEUErhalt durch DEU
+AndorraJaJa
+AnguillaKein Versand an AnguillaJa
+ArgentinienJaJa
+ArubaKein Versand an ArubaJa
+AustralienJaJa
+BelgienJaJa
+BermudaKein Versand an BermudaJa
+Bonaire, Sint Eustatius und SabaJaJa
+BrasilienJaJa
+Britische JungferninselnKein Versand an Britische JungferninselnJa
+BulgarienJaJa
+Cayman-InselnKein Versand an Cayman-InselnJa
+ChileJaJa
+China, VolksrepublikJaJa
+Costa RicaKein Versand an Costa RicaJa
+CuracaoKein Versand an CuracaoJa
+DänemarkJaJa
+EstlandJaJa
+FinnlandJaJa
+FrankreichJaJa
+GibraltarJaJa
+GriechenlandJaJa
+Guernsey (Kanalinseln)JaJa
+Hong KongJaJa
+IndienJaJa
+IndonesienJaJa
+Insel ManJaJa
+IrlandJaJa
+IslandJaJa
+ItalienJaJa
+JapanJaJa
+Jersey (Kanalinseln)JaJa
+KanadaJaJa
+KasachstanJaJa
+KatarKein Versand an KatarJa
+KolumbienJaJa
+Korea, Republik (Südkorea)JaJa
+KroatienJaJa
+LettlandJaJa
+LiechtensteinJaJa
+LitauenJaJa
+LuxemburgJaJa
+MalaysoaJaJa
+MaltaJaJa
+MauritiusJaJa
+MexikoJaJa
+MonacoJaJa
+NeuseelnadJaJa
+NiederlandeJaJa
+NigeriaJaJa
+NorwegenJaJa
+ÖsterreichJaJa
+PakistanJaJa
+PanamaJaJa
+PeruJaJa
+PolenJaJa
+PortugalJaJa
+RumänienJaJa
+Russische FörderationVersand wurde ab 2022 ausgesetztJa
+San MarinoJaJa
+Saudi-ArabienJaJa
+SchwedenJaJa
+SchweizJaJa
+SingapurJaJa
+SlowakeiJaJa
+SlowenienJaJa
+SpanienJaJa
+SüdafrikaJaJa
+Tschechische RepublikJaJa
+TürkeiJaJa
+UngarnJaJa
+UruguayJaJa
+Vereinigte Arabische EmirateKein Versand an Vereinigte Arabische EmirateJa
+Vereinigte Staaten von AmerikaJaJa
+Vereinigtes Königreich Großbritannien und NordirlandJaJa
+ZypernJaJa
+Mit welchen Teilnehmerstaaten erfolgte der Informationsaustausch für das Wirtschaftsjahr 2020?
+LandVersand durch DEUErhalt durch DEU
+AndorraJaJa
+AnguillaKein Versand an AnguillaJa
+ArgentinienJaJa
+ArubaKein Versand an ArubaJa
+AserbaidschanJaJa
+AustralienJaJa
+BahamasJaJa
+BelgienJaJa
+BelizeKein Versand an BelizeJa
+BermudaKein Versand an BermudaJa
+Bonaire, Sint Eustatius und SabaJaJa
+BrasilienJaJa
+Britische JungferninselnKein Versand an Britische JungferninselnJa
+BulgarienJaJa
+Cayman-InselnKein Versand an Cayman-InselnJa
+ChileJaJa
+China, VolksrepublikJaJa
+Costa RicaKein Versand an Costa RicaJa
+CuracaoKein Versand an CuracaoJa
+DänemarkJaJa
+EstlandJaJa
+FinnlandJaJa
+FrankreichJaJa
+GibraltarJaJa
+GriechenlandJaJa
+Guernsey (Kanalinseln)JaJa
+Hong KongJaJa
+IndienJaJa
+IndonesienJaJa
+Insel ManJaJa
+IrlandJaJa
+IslandJaJa
+ItalienJaJa
+JapanJaJa
+Jersey (Kanalinseln)JaJa
+KanadaJaJa
+KasachstanJaJa
+KatarKein Versand an KatarJa
+KolumbienJaJa
+Korea, Republik (Südkorea)JaJa
+KroatienJaJa
+LettlandJaJa
+LiechtensteinJaJa
+LitauenJaJa
+LuxemburgJaJa
+MalaysoaJaJa
+MaltaJaJa
+MauritiusJaJa
+MexikoJaJa
+MonacoJaJa
+NeuseelnadJaJa
+NiederlandeJaJa
+NigeriaJaJa
+NorwegenJaJa
+OmanKein Versand an OmanJa
+ÖsterreichJaJa
+PakistanJaJa
+PanamaJaJa
+PeruJaJa
+PolenJaJa
+PortugalJaJa
+RumänienJaJa
+Russische FörderationVersand wurde ab 2022 ausgesetztJa
+San MarinoJaJa
+Saudi-ArabienJaJa
+SchwedenJaJa
+SchweizJaJa
+SeychellenKein Versand an SeychellenJa
+SingapurJaJa
+SlowakeiJaJa
+SlowenienJaJa
+SpanienJaJa
+SüdafrikaJaJa
+Tschechische RepublikJaJa
+TunesienKein Versand an TunesienJa
+TürkeiJaJa
+Turks- und CaicosinselnKein Versand an Turks- und CaicosinselnJa
+UngarnJaJa
+UruguayJaJa
+Vereinigte Arabische EmirateKein Versand an Vereinigte Arabische EmirateJa
+Vereinigte Staaten von AmerikaJaJa
+Vereinigtes Königreich Großbritannien und NordirlandJaJa
+ZypernJaJa
+Mit welchen Teilnehmerstaaten erfolgte der Informationsaustausch für das Wirtschaftsjahr 2021?
+LandVersand durch DEUErhalt durch DEU
+AndorraJaJa
+AnguillaKein Versand an AnguillaJa
+ArgentinienJaJa
+ArubaKein Versand an ArubaJa
+AserbaidschanJaJa
+AustralienJaJa
+BahamasJaJa
+BahrainKein Versand an BahrainJa
+BarbadosJaJa
+BelgienJaJa
+BelizeKein Versand an BelizeJa
+BermudaKein Versand an BermudaJa
+Bonaire, Sint Eustatius und SabaJaJa
+BrasilienJaJa
+Britische JungferninselnKein Versand an Britische JungferninselnJa
+BulgarienJaJa
+Cayman-InselnKein Versand an Cayman-InselnJa
+ChileJaJa
+China, VolksrepublikJaJa
+Costa RicaKein Versand an Costa RicaJa
+CuracaoKein Versand an CuracaoJa
+DänemarkJaJa
+EstlandJaJa
+FinnlandJaJa
+FrankreichJaJa
+GibraltarJaJa
+GriechenlandJaJa
+Guernsey (Kanalinseln)JaJa
+Hong KongJaJa
+IndienJaJa
+IndonesienJaJa
+Insel ManJaJa
+IrlandJaJa
+IslandJaJa
+IsraelJaJa
+ItalienJaJa
+JapanJaJa
+Jersey (Kanalinseln)JaJa
+KanadaJaJa
+KasachstanJaJa
+KatarKein Versand an KatarJa
+KolumbienJaJa
+Korea, Republik (Südkorea)JaJa
+KroatienJaJa
+LettlandJaJa
+LiechtensteinJaJa
+LitauenJaJa
+LuxemburgJaJa
+MalaysoaJaJa
+MaltaJaJa
+MauritiusJaJa
+MexikoJaJa
+MonacoJaJa
+NeuseelnadJaJa
+NiederlandeJaJa
+NigeriaJaJa
+NorwegenJaJa
+OmanKein Versand an OmanJa
+ÖsterreichJaJa
+PakistanJaJa
+PanamaJaJa
+PeruJaJa
+PolenJaJa
+PortugalJaJa
+RumänienJaJa
+Russische FörderationVersand wurde ab 2022 ausgesetztJa
+San MarinoJaJa
+Saudi-ArabienJaJa
+SchwedenJaJa
+SchweizJaJa
+SeychellenKein Versand an SeychellenJa
+SingapurJaJa
+SlowakeiJaJa
+SlowenienJaJa
+SpanienJaJa
+SüdafrikaJaJa
+Thailandkein Versand an ThailandJa
+Tschechische RepublikJaJa
+TunesienKein Versand an TunesienJa
+TürkeiJaJa
+Turks- und CaicosinselnKein Versand an Turks- und CaicosinselnJa
+UngarnJaJa
+UruguayJaJa
+Vereinigte Arabische EmirateKein Versand an Vereinigte Arabische EmirateJa
+Vereinigte Staaten von AmerikaJaJa
+Vereinigtes Königreich Großbritannien und NordirlandJaJa
+ZypernJaJa
+Mit welchen Teilnehmerstaaten erfolgte der Informationsaustausch für das Wirtschaftsjahr 2022?
+LandVersand durch DEUErhalt durch DEU
+ArgentinienJaJa
+AustralienJaJa
+BelgienJaJa
+BermudaKein Versand an BermudaJa
+BrasilienJaJa
+BulgarienJaJa
+Cayman-InselnKein Versand an Cayman-InselnJa
+ChileJaJa
+China, VolksrepublikJaJa
+Costa RicaKein Versand an Costa RicaJa
+DänemarkJaJa
+EstlandJaJa
+FinnlandJaJa
+FrankreichJaJa
+GibraltarJaJa
+GriechenlandJaJa
+Guernsey (Kanalinseln)JaJa
+IndienJaJa
+IndonesienJaJa
+Insel ManJaJa
+IrlandJaJa
+IslandJaJa
+ItalienJaJa
+JapanJaJa
+Jersey (Kanalinseln)JaJa
+KanadaJaJa
+KasachstanJaJa
+KolumbienJaJa
+Korea, Republik (Südkorea)JaJa
+KroatienJaJa
+LettlandJaJa
+LiechtensteinJaJa
+LitauenJaJa
+LuxemburgJaJa
+MalaysoaJaJa
+MaltaJaJa
+MauritiusJaJa
+MexikoJaJa
+NeuseelnadJaJa
+NiederlandeJaJa
+NorwegenJaJa
+ÖsterreichJaJa
+PakistanJaJa
+PeruJaJa
+PolenJaJa
+PortugalJaJa
+RumänienJaJa
+Russische FörderationVersand wurde ab 2022 ausgesetztJa
+SchwedenJaJa
+SchweizJaJa
+SingapurJaJa
+SlowakeiJaJa
+SlowenienJaJa
+SpanienJaJa
+SüdafrikaJaJa
+Tschechische RepublikJaJa
+UngarnJaJa
+UruguayJaJa
+Vereinigte Staaten von AmerikaJaJa
+Vereinigtes Königreich Großbritannien und NordirlandJaJa
+ZypernJaJa
+Mit welchen Teilnehmerstaaten erfolgte der Informationsaustausch für das Wirtschaftsjahr 2023?
+LandVersand durch DEUErhalt durch DEU
+AndorraJaJa
+AnguillaKein Versand an AnguillaJa
+ArgentinienJaJa
+ArubaKein Versand an ArubaJa
+AserbaidschanJaJa
+AustralienJaJa
+BahamasJaJa
+BahrainKein Versand an BahrainJa
+BarbadosJaJa
+BelgienJaJa
+BelizeKein Versand an BelizeJa
+BermudaKein Versand an BermudaJa
+Bonaire, Sint Eustatius und SabaJaJa
+BrasilienJaJa
+Britische JungferninselnKein Versand an Britische JungferninselnJa
+BulgarienJaJa
+Cayman-InselnKein Versand an Cayman-InselnJa
+ChileJaJa
+China, VolksrepublikJaJa
+Costa RicaKein Versand an Costa RicaJa
+CuracaoKein Versand an CuracaoJa
+DänemarkJaJa
+EstlandJaJa
+FinnlandJaJa
+FrankreichJaJa
+GibraltarJaJa
+GriechenlandJaJa
+Guernsey (Kanalinseln)JaJa
+Hong KongJaJa
+IndienJaJa
+IndonesienJaJa
+Insel ManJaJa
+IrlandJaJa
+IslandJaJa
+IsraelJaJa
+ItalienJaJa
+JapanJaJa
+Jersey (Kanalinseln)JaJa
+KanadaJaJa
+KasachstanJaJa
+KatarKein Versand an KatarJa
+KolumbienJaJa
+Korea, Republik (Südkorea)JaJa
+KroatienJaJa
+LettlandJaJa
+LiechtensteinJaJa
+LitauenJaJa
+LuxemburgJaJa
+MalaysoaJaJa
+MaltaJaJa
+MauritiusJaJa
+MexikoJaJa
+MonacoJaJa
+NeuseelnadJaJa
+NiederlandeJaJa
+NigeriaJaJa
+NorwegenJaJa
+OmanKein Versand an OmanJa
+ÖsterreichJaJa
+PakistanJaJa
+PanamaJaJa
+PeruJaJa
+PolenJaJa
+PortugalJaJa
+RumänienJaJa
+Russische FörderationVersand wurde ab 2022 ausgesetztJa
+San MarinoJaJa
+Saudi-ArabienJaJa
+SchwedenJaJa
+SchweizJaJa
+SeychellenKein Versand an SeychellenJa
+SingapurJaJa
+SlowakeiJaJa
+SlowenienJaJa
+SpanienJaJa
+SüdafrikaJaJa
+Thailandkein Versand an ThailandJa
+Tschechische RepublikJaJa
+TunesienKein Versand an TunesienJa
+TürkeiJaJa
+Turks- und CaicosinselnKein Versand an Turks- und CaicosinselnJa
+UngarnJaJa
+UruguayJaJa
+Vereinigte Arabische EmirateKein Versand an Vereinigte Arabische EmirateJa
+Vereinigte Staaten von AmerikaJaJa
+Vereinigtes Königreich Großbritannien und NordirlandJaJa
+ZypernJaJa
+Mit welchen Teilnehmerstaaten erfolgte der Informationsaustausch für das Wirtschaftsjahr 2024?
+LandVersand durch DEUErhalt durch DEU
+AndorraJaJa
+AnguillaKein Versand an AnguillaJa
+ArgentinienJaJa
+ArubaJaJa
+AserbaidschanJaJa
+AustralienJaJa
+BahamasJaJa
+BahrainKein Versand an BahrainJa
+BarbadosJaJa
+BelgienJaJa
+BelizeKein Versand an BelizeJa
+BermudaKein Versand an BermudaJa
+Bonaire, Sint Eustatius und SabaJaJa
+BrasilienJaJa
+Britische JungferninselnKein Versand an Britische JungferninselnJa
+BulgarienJaJa
+Cayman-InselnKein Versand an Cayman-InselnJa
+ChileJaJa
+China, VolksrepublikJaJa
+Costa RicaJaJa
+CuracaoKein Versand an CuracaoJa
+DänemarkJaJa
+EstlandJaJa
+FäröerJaJa
+FinnlandJaJa
+FrankreichJaJa
+GibraltarJaJa
+GriechenlandJaJa
+Guernsey (Kanalinseln)JaJa
+Hong KongJaJa
+IndienJaJa
+IndonesienJaJa
+Insel ManJaJa
+IrlandJaJa
+IslandJaJa
+IsraelJaJa
+ItalienJaJa
+JapanJaJa
+Jersey (Kanalinseln)JaJa
+KanadaJaJa
+KasachstanJaJa
+KatarKein Versand an KatarJa
+KeniaJaJa
+KolumbienJaJa
+Korea, Republik (Südkorea)JaJa
+KroatienJaJa
+LettlandJaJa
+LiberiaKein Versand an LiberiaJa
+LiechtensteinJaJa
+LitauenJaJa
+LuxemburgJaJa
+MacauKein Versand an MacauJa
+MalaysiaJaJa
+MaltaJaJa
+MauritiusJaJa
+MexikoJaJa
+MonacoJaJa
+MontserratKein Versand an MontserratJa
+NeuseelandJaJa
+NiederlandeJaJa
+NigeriaJaJa
+NorwegenJaJa
+OmanKein Versand an OmanJa
+ÖsterreichJaJa
+PakistanJaJa
+PanamaJaJa
+Papua-NeuguineaKein Versand an Papua-NeuguineaJa
+PeruJaJa
+PolenJaJa
+PortugalJaJa
+RumänienJaJa
+Russische FörderationVersand wurde ab 2022 ausgesetztJa
+San MarinoJaJa
+Saudi-ArabienJaJa
+SchwedenJaJa
+SchweizJaJa
+SeychellenKein Versand an SeychellenJa
+SingapurJaJa
+SlowakeiJaJa
+SlowenienJaJa
+SpanienJaJa
+SüdafrikaJaJa
+ThailandJaJa
+Tschechische RepublikJaJa
+TunesienKein Versand an TunesienJa
+TürkeiJaJa
+Turks- und CaicosinselnKein Versand an Turks- und CaicosinselnJa
+UngarnJaJa
+UruguayJaJa
+Vereinigte Arabische EmirateKein Versand an Vereinigte Arabische EmirateJa
+Vereinigte Staaten von AmerikaJaJa
+Vereinigtes Königreich Großbritannien und NordirlandJaJa
+ZypernJaJa
+Kontakt
+Bundeszentralamt für Steuern
+Referat St I A 2
+An der Küppe 1
+53225 Bonn
+Telefon:
++49 228/406-2340
+Mo, Di, Do:
+09.00 bis 12.00 Uhr
+12.30 bis 15.00 Uhr
+Fr:
+09.00 bis 12.00 Uhr
+Zuständigkeitsbereich:
+Country by Country Reporting
+Nachricht schreiben
+Verwandte Themen
+Das Verfahren CbCR
+CbCR hat das Ziel, Finanzbehörden zusätzliche Informationen zu grenzüberschreitenden Konzernstrukturen an die Hand zu geben. Das BZSt ist in Deutschland die zentrale Stelle für den Austausch von …
+Teilnehmende Staaten
+Am Verfahren CbCR nehmen zahlreiche Staaten teil. Auf der folgenden Seite erhalten Sie eine Liste sämtlicher Teilnehmer.
+Elektronische Datenübermittlung über die neue DIP-Schnittstelle
+Meldungen deutscher Unternehmen, die einen Country-by-Country Report abgeben, sind nach amtlich vorgeschriebenem Datensatz und auf elektronischem Weg an das BZSt zu übermitteln.
+Handbücher
+Auf dieser Seite finden Sie sowohl alle Kapitel des zum CbCR gehörenden Kommunikationshandbuchs sowie die entsprechenden Downloads.
+Vorschriften
+Auf dieser Seite finden Sie die rechtlichen Grundlagen zum Verfahren CbCR.
+Angaben in Steuererklärungen
+Um die Vorschriften zu erfüllen müssen Unternehmer entsprechende Angaben in ihren Erklärungen machen. Im Folgenden sind die notwendigen Eintragungen beschrieben.
+Gesteigerte Mitwirkungspflicht nach § 12 StAbwG
+Aus § 12 des Steueroasenabwehrgesetzes (StAbwG) geht eine gegenüber § 90 der Abgabenordnung (AO) gesteigerte Mitwirkungspflicht hervor. Demnach sind Aufzeichnungen über bestimmte Geschäftsvorfälle in …
+Newsletter
+Das Bundeszentralamt für Steuern veröffentlicht in unregelmäßigen Abständen Newsletter zum Thema CbCR. In diesen finden Sie aktuelle Informationen und sonstige Ankündigungen.
+Seite empfehlen
+Unternavigation aller Website-Bereiche
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Themen A-Z
+Karriere
+Presse
+Newsletter
+Haben Sie Fragen?
+Anrufen
+Nachricht schreiben
+Zentrale Behördennummer
+Für alle Fragen zu Behörden in Deutschland
+Montag bis Freitag 08:00-18:00 Uhr
+115
+Mehr erfahren
+© Bundeszentralamt für Steuern
+Inhaltsverzeichnis
+Erklärung zur Barrierefreiheit
+Impressum
+Datenschutz

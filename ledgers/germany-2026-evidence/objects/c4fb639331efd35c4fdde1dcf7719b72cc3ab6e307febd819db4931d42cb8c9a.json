@@ -1,0 +1,159 @@
+{
+  "all_actual_old_origins": 550,
+  "all_actual_git_body_hashes_and_origins_match": true,
+  "semantic_spots": {
+    "pre_refresh_rows": [
+      {
+        "old_native_LF": 3,
+        "destination": [
+          3
+        ]
+      },
+      {
+        "old_native_LF": 45,
+        "destination": [
+          24,
+          25
+        ]
+      },
+      {
+        "old_native_LF": 70,
+        "destination": [
+          44,
+          98
+        ]
+      },
+      {
+        "old_native_LF": 91,
+        "destination": [
+          69
+        ]
+      },
+      {
+        "old_native_LF": 118,
+        "destination": [
+          103
+        ]
+      },
+      {
+        "old_native_LF": 151,
+        "destination": [
+          130,
+          135,
+          141
+        ]
+      },
+      {
+        "old_native_LF": 177,
+        "destination": [
+          169
+        ]
+      },
+      {
+        "old_native_LF": 204,
+        "destination": [
+          173
+        ]
+      },
+      {
+        "old_native_LF": 234,
+        "destination": [
+          268
+        ]
+      },
+      {
+        "old_native_LF": 267,
+        "destination": [
+          30
+        ]
+      },
+      {
+        "old_native_LF": 296,
+        "destination": [
+          205
+        ]
+      },
+      {
+        "old_native_LF": 341,
+        "destination": [
+          357
+        ]
+      }
+    ],
+    "main_baseline_rows": [
+      {
+        "old_native_LF": 3,
+        "destination": [
+          3
+        ]
+      },
+      {
+        "old_native_LF": 43,
+        "destination": [
+          43
+        ]
+      },
+      {
+        "old_native_LF": 59,
+        "destination": [
+          59
+        ]
+      },
+      {
+        "old_native_LF": 87,
+        "destination": [
+          87
+        ]
+      },
+      {
+        "old_native_LF": 112,
+        "destination": [
+          112
+        ]
+      },
+      {
+        "old_native_LF": 137,
+        "destination": [
+          137
+        ]
+      },
+      {
+        "old_native_LF": 158,
+        "destination": [
+          158
+        ]
+      },
+      {
+        "old_native_LF": 190,
+        "destination": [
+          190
+        ]
+      },
+      {
+        "old_native_LF": 216,
+        "destination": [
+          216
+        ]
+      },
+      {
+        "old_native_LF": 306,
+        "destination": [
+          306
+        ]
+      },
+      {
+        "old_native_LF": 327,
+        "destination": [
+          327
+        ]
+      },
+      {
+        "old_native_LF": 357,
+        "destination": [
+          357
+        ]
+      }
+    ]
+  },
+  "no_unmapped_writer_units": 0
+}

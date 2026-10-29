@@ -1,0 +1,198 @@
+{
+  "scope": "Guide/ledger identity verification only, not independent legal review",
+  "pairs": 16,
+  "items": [
+    {
+      "slug": "leaving-germany-exit-tax",
+      "kind": "guide",
+      "sha256": "07a1281e07643bd5beee21a7c190692b5205f287f0b01662cf4478f28cadc100",
+      "matches": true
+    },
+    {
+      "slug": "leaving-germany-exit-tax",
+      "kind": "ledger",
+      "sha256": "1cf8d1b6a38a752e6cbb9457020c8bd8dc1b75fbc8cef4c3d64322fb9ff3ddac",
+      "matches": true
+    },
+    {
+      "slug": "germany-transfer-pricing",
+      "kind": "guide",
+      "sha256": "6484533ed7d6864dee6ccdd2c67e04a9478abf59c7d362bfcdecd172aef120cb",
+      "matches": true
+    },
+    {
+      "slug": "germany-transfer-pricing",
+      "kind": "ledger",
+      "sha256": "c806f7fdc09984616d06150dfc7ce6db6ad3554d6cd2f7ada5949a1c444b4895",
+      "matches": true
+    },
+    {
+      "slug": "de-corporate-tax",
+      "kind": "guide",
+      "sha256": "eb70e6984dd86812a26e6bf380b38e2c504cc1c3eb7055a5f5d956d6944b3141",
+      "matches": true
+    },
+    {
+      "slug": "de-corporate-tax",
+      "kind": "ledger",
+      "sha256": "5aaa6fa7ed8f47d74cc01e8223d6702951657db9b7a760ffb624c4e95a2bab92",
+      "matches": true
+    },
+    {
+      "slug": "de-uk-employer-first-hire",
+      "kind": "guide",
+      "sha256": "7f2bb0b78a274a979c60708a8d2967859daed0a46618ed2b76e6e2787fd7f0ff",
+      "matches": true
+    },
+    {
+      "slug": "de-uk-employer-first-hire",
+      "kind": "ledger",
+      "sha256": "50e05f26a2529421c0ce3c81f69228cd3ee16116f1d5bedcdd37abe93fd7f8b4",
+      "matches": true
+    },
+    {
+      "slug": "de-crypto-tax",
+      "kind": "guide",
+      "sha256": "70aea2e9373458a904f6cef335c15302b9de48a6bc845c5e14e7144b5e99e35a",
+      "matches": true
+    },
+    {
+      "slug": "de-crypto-tax",
+      "kind": "ledger",
+      "sha256": "2cd88f0ee8ee90180afe4783f2657216aed7a8f26e3c80ee4df7d3cdc67c76bf",
+      "matches": true
+    },
+    {
+      "slug": "de-income-tax",
+      "kind": "guide",
+      "sha256": "2f4e335bbdaa39f04d46874ae1d114460d8f8b5da55238ef2555071b9c7d47dd",
+      "matches": true
+    },
+    {
+      "slug": "de-income-tax",
+      "kind": "ledger",
+      "sha256": "b9e9a854c73ff04be8882a25e11f1cabfe17bce51f6457248dc4285fd537c2a2",
+      "matches": true
+    },
+    {
+      "slug": "de-employee-income-tax",
+      "kind": "guide",
+      "sha256": "6cbb6da4bc3bf6f54b987da6e415a7ef8f797aae3c02af05dbb05c7c8690c3ee",
+      "matches": true
+    },
+    {
+      "slug": "de-employee-income-tax",
+      "kind": "ledger",
+      "sha256": "b9c69b23763f131944f97be8e40b60a8134168de8d1e0a1fd4506491b599149a",
+      "matches": true
+    },
+    {
+      "slug": "de-partners-and-part-year",
+      "kind": "guide",
+      "sha256": "4461747b0cfdabd2666425c03c0660b57ca431a6d193b8253a48b62a97b28eb0",
+      "matches": true
+    },
+    {
+      "slug": "de-partners-and-part-year",
+      "kind": "ledger",
+      "sha256": "7e36359e8ea2e366918bb3f90d57f26fceb6eb6cd4e0d5acfa502d8f22107548",
+      "matches": true
+    },
+    {
+      "slug": "de-self-employed-income-tax",
+      "kind": "guide",
+      "sha256": "7f38fa2dce9edf71f200125f8595a885cce73bd96efc52485ae9cba26436ca47",
+      "matches": true
+    },
+    {
+      "slug": "de-self-employed-income-tax",
+      "kind": "ledger",
+      "sha256": "3aa296157e882b041ed054906aa7a6fab93c766954a317b0ce9b84a50144b2e0",
+      "matches": true
+    },
+    {
+      "slug": "de-non-resident-tax",
+      "kind": "guide",
+      "sha256": "2771446fffdebcafb42c3f4875418d5c66839a2cdcce4473b2c5bd426b7d290c",
+      "matches": true
+    },
+    {
+      "slug": "de-non-resident-tax",
+      "kind": "ledger",
+      "sha256": "0d2f798a1e3fde4bf457e6621f65c9972b15864cbb1ed3e33f8a1b80041b1bdb",
+      "matches": true
+    },
+    {
+      "slug": "de-vat-annual-and-special-schemes",
+      "kind": "guide",
+      "sha256": "51433fb5a8203b3d7466cfd1378ee2b28dc7bfd76f2e423cdf420cd714677867",
+      "matches": true
+    },
+    {
+      "slug": "de-vat-annual-and-special-schemes",
+      "kind": "ledger",
+      "sha256": "bffbf9a62569d8a2e27a6e6dee0c21f4d66238c603974e327e6bde93feea923f",
+      "matches": true
+    },
+    {
+      "slug": "de-treaty-withholding-rates",
+      "kind": "guide",
+      "sha256": "98b7a3ed15a0ff174004be9b2975f1c920b1a6ad752b7bb38ba05038c21eb7a1",
+      "matches": true
+    },
+    {
+      "slug": "de-treaty-withholding-rates",
+      "kind": "ledger",
+      "sha256": "27879d881a0944119d17f2688303da1548a27e448382e3f5adeb07ed01a178cb",
+      "matches": true
+    },
+    {
+      "slug": "germany-to-switzerland-cross-border-tax",
+      "kind": "guide",
+      "sha256": "49bb497e26ed61b20ad31b474a7503f6eaae113e5a5c20dc7e0b0b604041a6d4",
+      "matches": true
+    },
+    {
+      "slug": "germany-to-switzerland-cross-border-tax",
+      "kind": "ledger",
+      "sha256": "226a6bc71ffed829a3a0c72625742fa96e1e0d1505612c9e02091b8b7942c7f2",
+      "matches": true
+    },
+    {
+      "slug": "germany-einvoice",
+      "kind": "guide",
+      "sha256": "f11973431a1c837ca473eeea4884817dd31faa5b3f327775ad80f451a399d835",
+      "matches": true
+    },
+    {
+      "slug": "germany-einvoice",
+      "kind": "ledger",
+      "sha256": "b21d9c6cbdb1b6725af38ff2285922729fd07a00c62b67e7425fddbaccef6ed2",
+      "matches": true
+    },
+    {
+      "slug": "germany-payroll",
+      "kind": "guide",
+      "sha256": "5a2eec995028a0fa55991eda2600a92904c6f7d11b9e8220a6e55d4a85942564",
+      "matches": true
+    },
+    {
+      "slug": "germany-payroll",
+      "kind": "ledger",
+      "sha256": "903e61acde1a27b3106b7695838c1815fa528605ee6eb65d0fb4fca4b6f7a2a9",
+      "matches": true
+    },
+    {
+      "slug": "germany-tax-optimization",
+      "kind": "guide",
+      "sha256": "fa5036e6c87c3c778fcd65270a5a151ec007dd37e46d536ab3ff44ee6178c403",
+      "matches": true
+    },
+    {
+      "slug": "germany-tax-optimization",
+      "kind": "ledger",
+      "sha256": "5076731b21b731ad6f6312725ddf7bd933dd04abb84f78c1b414706582970b0e",
+      "matches": true
+    }
+  ]
+}

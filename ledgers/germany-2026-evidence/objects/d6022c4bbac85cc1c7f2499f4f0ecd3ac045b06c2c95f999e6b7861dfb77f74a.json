@@ -1,0 +1,140 @@
+{
+  "status": "Writer successors, different review pending",
+  "artifacts": [
+    {
+      "path": "R10-exact-operations.json",
+      "sha256": "6fcffd2bad81349c0cf8c5ae45c381bd7f710dd3f9b70b5824d85335af409105",
+      "bytes": 768
+    },
+    {
+      "path": "R10-options-and-selection.md",
+      "sha256": "9ca032e72a3abca27eb41b475909a0a06b59d6bb5e010850cfb444b771b1e5b7",
+      "bytes": 969
+    },
+    {
+      "path": "R10-proof-and-inventory.json",
+      "sha256": "7112b40161d377f5de6b9823c48d9a66f5bf295b0d18c658c2a7cdf623da3429",
+      "bytes": 806
+    },
+    {
+      "path": "R10-writer-script.py",
+      "sha256": "7260fe3f12a975fd54058e0e2e6debb0b51ef99a3f31e0b58e5467e35db1bf40",
+      "bytes": 6543
+    },
+    {
+      "path": "after/de-corporate-tax.md",
+      "sha256": "c784531df91701c4a7e70a217c06eb7e11587bbf0c7a8dfe9fe1c8429c94e195",
+      "bytes": 42297
+    },
+    {
+      "path": "after/de-trade-tax.md",
+      "sha256": "7ba930a0417d470d9fe2baaeb87ef835891383270ce931a4377535380bac6e56",
+      "bytes": 40351
+    },
+    {
+      "path": "before/de-corporate-tax.md",
+      "sha256": "87aaeab2154e651a0dc94832e825030a1a7e2d164881181245393e3d8b5ded1f",
+      "bytes": 41818
+    },
+    {
+      "path": "before/de-trade-tax.md",
+      "sha256": "d8ca2561b7b20f54a376ef3469679521ecbe0623944c34e1ef57e27709ea74d4",
+      "bytes": 40445
+    },
+    {
+      "path": "check_and_seal.py",
+      "sha256": "ff1ee12c6d28819f1f6ffe199e67a530c217165c0031536f64ab842db1d0e9fd",
+      "bytes": 7711
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "c7be3705a6407cfb8026804c9bd171a69423826f6da399b5061ab5b6325d31bc",
+      "bytes": 795
+    },
+    {
+      "path": "ledgers/de-corporate-tax.md",
+      "sha256": "c7018e24f13c32de67faa572f922b9e6304a693154a1c7b1d31de597549569b5",
+      "bytes": 364922
+    },
+    {
+      "path": "ledgers/de-trade-tax.md",
+      "sha256": "ff116f30defd925575a8561955441923343237649757c4ad4a35f8b602cc4834",
+      "bytes": 129593
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "1f0964a099d307988b0be779af710d3a23c764abb019a01cacf853e14210a2a9",
+      "bytes": 987
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "200b0b00ce1e9fce8e84d11817c0e2cc359eb39f52675a7ad0998d220f7d72a1",
+      "bytes": 1882
+    },
+    {
+      "path": "proof-and-inventory.json",
+      "sha256": "4e780edaf8f8c795b7ecb8d2f0566ccc81d43def60e88a37e14b4ce8e43fbae2",
+      "bytes": 1102
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "a77b9902f4e66249feeb4a4b52e716b822d3be151616cb6f7828d2db90b48583",
+      "bytes": 1047
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "0c2e395648217066c2ba7d4a63cd1158f7f7de9faadfdb3f473f919bc0ec8d82",
+      "bytes": 885
+    },
+    {
+      "path": "support/Guide.diff",
+      "sha256": "d534f53433ea673680ec9b573715bcf3b99393be94b6b98ca68bc5320bfe0928",
+      "bytes": 3362
+    },
+    {
+      "path": "support/native-line-map.json",
+      "sha256": "2e657fae35669680324616f950a5301691cff5b45fa6d51e34937441b5617d36",
+      "bytes": 15069
+    },
+    {
+      "path": "support/old-topic-destinations.json",
+      "sha256": "657df3750f8fce64d80b99db796950207e79ada7977758808e15d96f5c0e3f41",
+      "bytes": 131066
+    },
+    {
+      "path": "support/rows.json",
+      "sha256": "2e191e70d56b5ae32d530d3a8645daa9046bd7d3bf2ff676370484becac2190a",
+      "bytes": 195346
+    },
+    {
+      "path": "support/trade-old-topic-destinations.json",
+      "sha256": "c9009c942bbeba906947562c4de4f76e5d7f2f644cc75c804e8318dae4eb4242",
+      "bytes": 98258
+    },
+    {
+      "path": "support/trade-rows.json",
+      "sha256": "a97154b41bce82ccd8b207e9dd53d4467490e3e57a1669b07485a0339791afac",
+      "bytes": 91049
+    },
+    {
+      "path": "support/trade.diff",
+      "sha256": "5b5222ac2088f77153936f1ed242d109eb99a28040c30f36d47baa495fdd2547",
+      "bytes": 2259
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "798678a69ebbceeffdc58967750cb1e0b00e0821f9730df065018a411dd63aa7",
+      "bytes": 1908
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "9815900f9ab16a3ab67f8fc279591ca2b75310f74d34cdc24cc6a169fec283fd",
+      "bytes": 1906
+    },
+    {
+      "path": "writer-script.py",
+      "sha256": "d2e0c54ae84c9c525624575eace881addd059d99bce022dc45173136d7a01ee1",
+      "bytes": 9160
+    }
+  ]
+}

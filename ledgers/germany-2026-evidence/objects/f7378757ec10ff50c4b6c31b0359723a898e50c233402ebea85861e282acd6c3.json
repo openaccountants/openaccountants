@@ -1,0 +1,6650 @@
+[
+  {
+    "id": "001",
+    "prior_row_id": 1,
+    "prior_native_LF": [
+      22,
+      22
+    ],
+    "native_LF": [
+      22,
+      22
+    ],
+    "section": "Scope",
+    "wording": "For employers, payroll clerks and employees checking a German payslip for pay periods in 2026. This is the full-cycle payroll skill: besides the rules shared with `de-payroll`, it covers the payslip, the minimum wage duties, tax-free night, Sunday and holiday surcharges, sick pay and the maternity top-up paid through payroll, and the accident insurance annual report. Covered: wage tax (Lohnsteuer) by tax class and ELStAM through the finance ministry's program flow (PAP), solidarity surcharge and church tax, the new exemption for employees past the standard retirement age; the four social insurance branches (RV, KV, PV, AV) with shares and ceilings; Minijobs and the transition band; the wage tax return, contribution and DEÜV deadlines, year-end and late surcharges; and a short section for 2025 pay still being corrected.",
+    "source_quote_ids": [
+      "R62-70.NIGHT",
+      "R62-70.NIGHTSV",
+      "R62-70.UVREPORT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "002",
+    "prior_row_id": 2,
+    "prior_native_LF": [
+      24,
+      24
+    ],
+    "native_LF": [
+      24,
+      24
+    ],
+    "section": "Scope",
+    "wording": "The year: the 2026 PAP covers pay periods \"die nach dem 31. Dezember 2025, aber vor dem 1. Januar 2027 enden\" and one-time payments received in 2026 ([PAP 2026, Anlage 1](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2)). Social insurance values apply from 1 January 2026.",
+    "source_quote_ids": [
+      "A.PAPYEAR",
+      "A.PAPVALUES"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "003",
+    "prior_row_id": 3,
+    "prior_native_LF": [
+      26,
+      26
+    ],
+    "native_LF": [
+      26,
+      26
+    ],
+    "section": "Scope",
+    "wording": "Not covered, see \"When to refuse or refer\": the self-employed (use `de-freelance-intake`), cross-border and treaty cases, managing directors whose insurance status is open, employer pensions (Versorgungsbezüge), benefits in kind and flat-rate taxes under § 37b and § 40 EStG, the miners' pension scheme, and the exact Midijob formulas. Also out of scope: annual leave entitlements, parental leave and Elterngeld, Krankengeld and Mutterschaftsgeld paid by the health fund, and the employee's own income tax return.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "004",
+    "prior_row_id": 4,
+    "prior_native_LF": [
+      28,
+      28
+    ],
+    "native_LF": [
+      28,
+      28
+    ],
+    "section": "Scope",
+    "wording": "The employee owes the wage tax; the employer must withhold it at every wage payment ([§ 38 EStG](https://www.gesetze-im-internet.de/estg/__38.html)) and is liable for it ([§ 42d(1) EStG](https://www.gesetze-im-internet.de/estg/__42d.html)). The employer pays the total social insurance contribution and ordinarily recovers the employee's share by deduction from pay, subject to the § 28g exceptions stated below ([§ 28e SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28e.html), [§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html)).",
+    "source_quote_ids": [
+      "A.TAXDUTY",
+      "A.LIABILITY",
+      "A.TOTALSV",
+      "A.RECOVER",
+      "R62-70.RECOVER"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "005",
+    "prior_row_id": 5,
+    "prior_native_LF": [
+      32,
+      32
+    ],
+    "native_LF": [
+      32,
+      32
+    ],
+    "section": "Ask the client first",
+    "wording": "- **ELStAM:** tax class, child counters, church, allowance or factor; first or further job?",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "006",
+    "prior_row_id": 6,
+    "prior_native_LF": [
+      33,
+      33
+    ],
+    "native_LF": [
+      33,
+      33
+    ],
+    "section": "Ask the client first",
+    "wording": "- **Health insurance:** which fund and its own additional rate; or private, or voluntary member?",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "007",
+    "prior_row_id": 7,
+    "prior_native_LF": [
+      34,
+      34
+    ],
+    "native_LF": [
+      34,
+      34
+    ],
+    "section": "Ask the client first",
+    "wording": "- **Children and age:** children under 25, proof given, employee 23 or older?",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "008",
+    "prior_row_id": 8,
+    "prior_native_LF": [
+      35,
+      35
+    ],
+    "native_LF": [
+      35,
+      35
+    ],
+    "section": "Ask the client first",
+    "wording": "- **State of the place of employment** (church tax rate, Saxony rule).",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "009",
+    "prior_row_id": 9,
+    "prior_native_LF": [
+      36,
+      36
+    ],
+    "native_LF": [
+      36,
+      36
+    ],
+    "section": "Ask the client first",
+    "wording": "- **Regular monthly pay and any other jobs or Minijobs.**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "010",
+    "prior_row_id": 10,
+    "prior_native_LF": [
+      37,
+      37
+    ],
+    "native_LF": [
+      37,
+      37
+    ],
+    "section": "Ask the client first",
+    "wording": "- **Standard retirement age** reached before this month?",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "011",
+    "prior_row_id": 11,
+    "prior_native_LF": [
+      38,
+      38
+    ],
+    "native_LF": [
+      38,
+      38
+    ],
+    "section": "Ask the client first",
+    "wording": "- **One-time payments** in this run?",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "012",
+    "prior_row_id": 12,
+    "prior_native_LF": [
+      39,
+      39
+    ],
+    "native_LF": [
+      39,
+      39
+    ],
+    "section": "Ask the client first",
+    "wording": "- **Hours and surcharges:** hours worked, hourly pay, and any night, Sunday or public holiday work?",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "013",
+    "prior_row_id": 13,
+    "prior_native_LF": [
+      40,
+      40
+    ],
+    "native_LF": [
+      40,
+      40
+    ],
+    "section": "Ask the client first",
+    "wording": "- **Absence:** sick days (and since when, same illness before?) or a maternity protection period?",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "014",
+    "prior_row_id": 14,
+    "prior_native_LF": [
+      41,
+      41
+    ],
+    "native_LF": [
+      41,
+      41
+    ],
+    "section": "Ask the client first",
+    "wording": "- **Sector** with the immediate-report duty (step 3)?",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "015",
+    "prior_row_id": 15,
+    "prior_native_LF": [
+      42,
+      42
+    ],
+    "native_LF": [
+      42,
+      42
+    ],
+    "section": "Ask the client first",
+    "wording": "- **Wage tax paid over for 2025** (sets the filing period).",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "016",
+    "prior_row_id": 16,
+    "prior_native_LF": [
+      44,
+      44
+    ],
+    "native_LF": [
+      44,
+      44
+    ],
+    "section": "Ask the client first",
+    "wording": "Defaults when an answer is missing, for an estimate only: unknown class, estimate in class I, but real payroll uses class VI while the employee is at fault for missing data ([§ 39c EStG](https://www.gesetze-im-internet.de/estg/__39c.html)); unknown church, none; unknown children, childless surcharge if 23 or older; unknown Saxony flag, outside Saxony; unknown insurance markers, insured in all branches; unknown additional rate, the average rate (never for a real payslip).",
+    "source_quote_ids": [
+      "A.MISSING",
+      "A.CAREPROOF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "017",
+    "prior_row_id": 17,
+    "prior_native_LF": [
+      48,
+      48
+    ],
+    "native_LF": [
+      48,
+      48
+    ],
+    "section": "The method, step by step",
+    "wording": "**Before the first payday**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "018",
+    "prior_row_id": 18,
+    "prior_native_LF": [
+      50,
+      50
+    ],
+    "native_LF": [
+      50,
+      50
+    ],
+    "section": "The method, step by step",
+    "wording": "1. **Employer number.** Before the first registration, apply electronically to the Federal Employment Agency (its Betriebsnummern-Service) for a Betriebsnummer for each place of employment; separate numbers for different activities or municipalities ([§ 18i SGB IV](https://www.gesetze-im-internet.de/sgb_4/__18i.html)).",
+    "source_quote_ids": [
+      "A.NUMBER"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "019",
+    "prior_row_id": 19,
+    "prior_native_LF": [
+      51,
+      51
+    ],
+    "native_LF": [
+      51,
+      51
+    ],
+    "section": "The method, step by step",
+    "wording": "2. **Status.** Decide Minijob, short-term job, transition band, normal employment, or pay above the compulsory health insurance threshold. Add up several jobs as [§ 8(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html) and [§ 20(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__20.html) say.",
+    "source_quote_ids": [
+      "A.MINI",
+      "A.MIDI"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "020",
+    "prior_row_id": 20,
+    "prior_native_LF": [
+      52,
+      52
+    ],
+    "native_LF": [
+      52,
+      52
+    ],
+    "section": "The method, step by step",
+    "wording": "3. **Immediate report in listed sectors.** Construction, hospitality, passenger transport, haulage and logistics (including platform delivery), fairground work, building cleaning, trade-fair construction, meat industry (not the butchers' trade, \"mit Ausnahme des Fleischerhandwerks\"), prostitution, security, hairdressing and cosmetics: report the start day to the pension insurers' data office \"spätestens bei dessen Aufnahme\" ([§ 28a(4) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28a.html)). It does not replace the registration in step 6.",
+    "source_quote_ids": [
+      "A.IMMEDIATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "021",
+    "prior_row_id": 21,
+    "prior_native_LF": [
+      53,
+      53
+    ],
+    "native_LF": [
+      53,
+      53
+    ],
+    "section": "The method, step by step",
+    "wording": "4. **Wage tax data.** Take the tax ID, date of birth, and whether this is the first or a further job; retrieve the ELStAM, enter them in the payroll account, and call up changes \"monatlich\" ([§ 39e(5) EStG](https://www.gesetze-im-internet.de/estg/__39e.html)). Missing data by the employee's fault: class VI. A technical fault or a reason the employee is not responsible for: the expected class for at most three calendar months ([§ 39c(1) EStG](https://www.gesetze-im-internet.de/estg/__39c.html)).",
+    "source_quote_ids": [
+      "A.ELSTAM",
+      "A.MISSING"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "022",
+    "prior_row_id": 22,
+    "prior_native_LF": [
+      54,
+      54
+    ],
+    "native_LF": [
+      54,
+      54
+    ],
+    "section": "The method, step by step",
+    "wording": "5. **Payroll account.** One Lohnkonto per employee and year at the place of business, recording pay (tax-free pay included) and tax withheld at every payment; keep it to the end of the sixth calendar year after the last entry ([§ 41(1) EStG](https://www.gesetze-im-internet.de/estg/__41.html)). For social insurance, keep pay records per employee and year in Germany and in German until the end of the calendar year after the last audit; an employer without a seat in Germany appoints an authorised person there ([§ 28f(1), (1b) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28f.html)).",
+    "source_quote_ids": [
+      "A.TAXACCOUNT",
+      "A.SVACCOUNT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "023",
+    "prior_row_id": 23,
+    "prior_native_LF": [
+      55,
+      55
+    ],
+    "native_LF": [
+      55,
+      55
+    ],
+    "section": "The method, step by step",
+    "wording": "6. **Registration** with the collecting office: the employee's health fund, or the Minijob-Zentrale for a Minijob ([§ 28i SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28i.html)). Deadlines for this and every later report are in \"Filing and payment\".",
+    "source_quote_ids": [
+      "A.FUND"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "024",
+    "prior_row_id": 24,
+    "prior_native_LF": [
+      57,
+      57
+    ],
+    "native_LF": [
+      57,
+      57
+    ],
+    "section": "The method, step by step",
+    "wording": "**Every pay period**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "025",
+    "prior_row_id": 25,
+    "prior_native_LF": [
+      59,
+      59
+    ],
+    "native_LF": [
+      59,
+      59
+    ],
+    "section": "The method, step by step",
+    "wording": "7. **Wage tax.** Take out tax-free pay first (such as the Aktivrente). Run the 2026 PAP on the rest, then the surcharge and, for church members, church tax on the base BK. One-time payments use the annual method.",
+    "source_quote_ids": [
+      "A.AKT",
+      "A.WITHHOLD",
+      "A.CHILDBASE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "026",
+    "prior_row_id": 26,
+    "prior_native_LF": [
+      60,
+      60
+    ],
+    "native_LF": [
+      60,
+      60
+    ],
+    "section": "The method, step by step",
+    "wording": "8. **Contributions.** Cap pay at each branch's monthly ceiling, apply the shares, deduct the employee's. Under § 28g SGB IV the ordinary claim is recovered by deduction from pay. A missed deduction can ordinarily be recovered at the next three payments, and later if the employer was not at fault. The deduction-only and three-payment restrictions do not apply where the employee intentionally or grossly negligently breaches § 28o(1), bears the entire total social contribution, or receives only benefits in kind. ([§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html)).",
+    "source_quote_ids": [
+      "A.RECOVER",
+      "A.CEILING",
+      "A.RVCEILING",
+      "R62-70.RECOVER"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "027",
+    "prior_row_id": 27,
+    "prior_native_LF": [
+      61,
+      61
+    ],
+    "native_LF": [
+      61,
+      61
+    ],
+    "section": "The method, step by step",
+    "wording": "9. **Employer-only levies.** U1 and U2 at the fund's rates, the insolvency levy, accident insurance.",
+    "source_quote_ids": [
+      "A.AAG",
+      "A.INSOLVENCY"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "028",
+    "prior_row_id": 28,
+    "prior_native_LF": [
+      62,
+      62
+    ],
+    "native_LF": [
+      62,
+      62
+    ],
+    "section": "The method, step by step",
+    "wording": "10. **Minimum wage and absences.** Check pay per hour worked against the minimum wage, keep working-time records where § 17 MiLoG requires them, and pay sick pay, surcharges and the maternity top-up as set out in \"Full cycle\"; claim U1 or U2 refunds.",
+    "source_quote_ids": [
+      "A.MINWAGE",
+      "A.TIMERECORD",
+      "A.NIGHT",
+      "A.SICK",
+      "A.MATERNITY",
+      "R62-70.AAGBASE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "029",
+    "prior_row_id": 29,
+    "prior_native_LF": [
+      63,
+      63
+    ],
+    "native_LF": [
+      63,
+      63
+    ],
+    "section": "The method, step by step",
+    "wording": "11. **Payslip.** Give the employee a pay statement in text form with the § 1 EBV contents (\"Full cycle\").",
+    "source_quote_ids": [
+      "A.PAYSLIP",
+      "A.EBV"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "030",
+    "prior_row_id": 30,
+    "prior_native_LF": [
+      64,
+      64
+    ],
+    "native_LF": [
+      64,
+      64
+    ],
+    "section": "The method, step by step",
+    "wording": "12. **Contribution statement and payment** to each collecting office, then the **wage tax return and payment** to the tax office, by the deadlines in \"Filing and payment\".",
+    "source_quote_ids": [
+      "A.FILING",
+      "A.SVDUE",
+      "A.SVACCOUNT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "031",
+    "prior_row_id": 31,
+    "prior_native_LF": [
+      66,
+      66
+    ],
+    "native_LF": [
+      66,
+      66
+    ],
+    "section": "The method, step by step",
+    "wording": "**Changes and year-end**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "032",
+    "prior_row_id": 32,
+    "prior_native_LF": [
+      68,
+      68
+    ],
+    "native_LF": [
+      68,
+      68
+    ],
+    "section": "The method, step by step",
+    "wording": "13. **Change reports and the annual report** (DEÜV), and the accident insurance annual report.",
+    "source_quote_ids": [
+      "A.CHANGE",
+      "A.ANNUAL",
+      "A.UVREPORT",
+      "R62-70.UVREPORT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "033",
+    "prior_row_id": 33,
+    "prior_native_LF": [
+      69,
+      69
+    ],
+    "native_LF": [
+      69,
+      69
+    ],
+    "section": "The method, step by step",
+    "wording": "14. **Wage tax certificate**: close the payroll account, send it electronically, give the employee a copy.",
+    "source_quote_ids": [
+      "A.CERT",
+      "A.CERTCOPY",
+      "A.CERTDUE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "034",
+    "prior_row_id": 34,
+    "prior_native_LF": [
+      70,
+      70
+    ],
+    "native_LF": [
+      70,
+      70
+    ],
+    "section": "The method, step by step",
+    "wording": "15. **Annual adjustment** where compulsory and not barred (boundary table).",
+    "source_quote_ids": [
+      "A.ADJUST"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "035",
+    "prior_row_id": 35,
+    "prior_native_LF": [
+      72,
+      72
+    ],
+    "native_LF": [
+      72,
+      72
+    ],
+    "section": "The method, step by step",
+    "wording": "What breaks when the order is wrong: without wage tax data the tax runs in class VI and is corrected later; a missed employee deduction cannot ordinarily be recovered after the next three payments unless the employer-nonfault or other § 28g exception above applies; a late contribution statement lets the fund estimate the pay ([§ 28f(3) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28f.html)).",
+    "source_quote_ids": [
+      "A.MISSING",
+      "A.RECOVER",
+      "A.SVACCOUNT",
+      "R62-70.RECOVER"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "036",
+    "prior_row_id": 36,
+    "prior_native_LF": [
+      76,
+      76
+    ],
+    "native_LF": [
+      76,
+      76
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "All amounts are yearly unless the row says otherwise. The employer uses them through the PAP, which annualises the period's pay and divides the tax back.",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "037",
+    "prior_row_id": 37,
+    "prior_native_LF": [
+      78,
+      78
+    ],
+    "native_LF": [
+      78,
+      78
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| What | 2026 value | Source |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "038",
+    "prior_row_id": 38,
+    "prior_native_LF": [
+      80,
+      80
+    ],
+    "native_LF": [
+      80,
+      80
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Basic allowance: no tax on a taxable amount up to | EUR 12,348 | [§ 32a(1) EStG](https://www.gesetze-im-internet.de/estg/__32a.html) |",
+    "source_quote_ids": [
+      "A.TARIFF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "039",
+    "prior_row_id": 39,
+    "prior_native_LF": [
+      81,
+      81
+    ],
+    "native_LF": [
+      81,
+      81
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| First progressive zone | EUR 12,349 to EUR 17,799 | Same |",
+    "source_quote_ids": [
+      "A.TARIFF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "040",
+    "prior_row_id": 40,
+    "prior_native_LF": [
+      82,
+      82
+    ],
+    "native_LF": [
+      82,
+      82
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Second progressive zone | EUR 17,800 to EUR 69,878 | Same |",
+    "source_quote_ids": [
+      "A.TARIFF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "041",
+    "prior_row_id": 41,
+    "prior_native_LF": [
+      83,
+      83
+    ],
+    "native_LF": [
+      83,
+      83
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Third zone: factor 0.42 less a fixed amount | EUR 69,879 to EUR 277,825 | Same |",
+    "source_quote_ids": [
+      "A.TARIFF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "042",
+    "prior_row_id": 42,
+    "prior_native_LF": [
+      84,
+      84
+    ],
+    "native_LF": [
+      84,
+      84
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Top zone: factor 0.45 less a fixed amount | from EUR 277,826 | Same |",
+    "source_quote_ids": [
+      "A.TARIFF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "043",
+    "prior_row_id": 43,
+    "prior_native_LF": [
+      85,
+      85
+    ],
+    "native_LF": [
+      85,
+      85
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Employee lump sum (ANP), classes I to V | EUR 1,230 | [§ 9a EStG](https://www.gesetze-im-internet.de/estg/__9a.html) |",
+    "source_quote_ids": [
+      "A.EMPLOYEE1230"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "044",
+    "prior_row_id": 44,
+    "prior_native_LF": [
+      86,
+      86
+    ],
+    "native_LF": [
+      86,
+      86
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Special expenses lump sum (SAP), classes I to V | EUR 36 | [§ 10c EStG](https://www.gesetze-im-internet.de/estg/__10c.html) |",
+    "source_quote_ids": [
+      "A.LUMPSUM"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "045",
+    "prior_row_id": 45,
+    "prior_native_LF": [
+      87,
+      87
+    ],
+    "native_LF": [
+      87,
+      87
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Single parent relief (EFA), class II, one child | EUR 4,260 | [§ 24b(2) EStG](https://www.gesetze-im-internet.de/estg/__24b.html) |",
+    "source_quote_ids": [
+      "A.SINGLE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "046",
+    "prior_row_id": 46,
+    "prior_native_LF": [
+      88,
+      88
+    ],
+    "native_LF": [
+      88,
+      88
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Child allowances per counter, classes I to III (only for the surcharge and church tax base) | EUR 9,756 | [PAP 2026](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2) |",
+    "source_quote_ids": [
+      "A.CHILDPAP",
+      "A.CHILDBASE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "047",
+    "prior_row_id": 47,
+    "prior_native_LF": [
+      89,
+      89
+    ],
+    "native_LF": [
+      89,
+      89
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Child allowances per counter, class IV | EUR 4,878 | Same sentence |",
+    "source_quote_ids": [
+      "A.CHILDPAP",
+      "A.CHILDBASE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "048",
+    "prior_row_id": 48,
+    "prior_native_LF": [
+      90,
+      90
+    ],
+    "native_LF": [
+      90,
+      90
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Classes V and VI: minimum tax as a share of the taxable amount | 14% | [§ 39b(2) sentence 7 EStG](https://www.gesetze-im-internet.de/estg/__39b.html) |",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "049",
+    "prior_row_id": 49,
+    "prior_native_LF": [
+      91,
+      91
+    ],
+    "native_LF": [
+      91,
+      91
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Classes V and VI: at most this share above EUR 14,071; exactly this share above EUR 34,939 | 42% | Same |",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "050",
+    "prior_row_id": 50,
+    "prior_native_LF": [
+      92,
+      92
+    ],
+    "native_LF": [
+      92,
+      92
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Classes V and VI: share above EUR 222,260 | 45% | Same |",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "051",
+    "prior_row_id": 51,
+    "prior_native_LF": [
+      93,
+      93
+    ],
+    "native_LF": [
+      93,
+      93
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Solidarity surcharge on the wage tax | 5.5% | [§ 4 SolzG](https://www.gesetze-im-internet.de/solzg_1995/__4.html) |",
+    "source_quote_ids": [
+      "A.SoliRate"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "052",
+    "prior_row_id": 52,
+    "prior_native_LF": [
+      94,
+      94
+    ],
+    "native_LF": [
+      94,
+      94
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Surcharge at most this share of the excess over the limit | 11.9% | Same |",
+    "source_quote_ids": [
+      "A.SoliRate"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "053",
+    "prior_row_id": 53,
+    "prior_native_LF": [
+      95,
+      95
+    ],
+    "native_LF": [
+      95,
+      95
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Surcharge exemption limit, classes other than III | EUR 20,350 | [§ 3(3) SolzG](https://www.gesetze-im-internet.de/solzg_1995/__3.html) |",
+    "source_quote_ids": [
+      "A.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "054",
+    "prior_row_id": 54,
+    "prior_native_LF": [
+      96,
+      96
+    ],
+    "native_LF": [
+      96,
+      96
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Surcharge exemption limit, class III | EUR 40,700 | Same |",
+    "source_quote_ids": [
+      "A.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "055",
+    "prior_row_id": 55,
+    "prior_native_LF": [
+      97,
+      97
+    ],
+    "native_LF": [
+      97,
+      97
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Church tax on the church tax base, by state | 8% or 9% | [Finance ministry booklet](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9) |",
+    "source_quote_ids": [
+      "A.CHURCHRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "056",
+    "prior_row_id": 56,
+    "prior_native_LF": [
+      98,
+      98
+    ],
+    "native_LF": [
+      98,
+      98
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Vorsorgepauschale: the unemployment part counts only so far as it and the health and care parts together do not exceed | EUR 1,900 | [§ 39b(2) sentence 5 no. 3(e) EStG](https://www.gesetze-im-internet.de/estg/__39b.html) |",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "057",
+    "prior_row_id": 57,
+    "prior_native_LF": [
+      99,
+      99
+    ],
+    "native_LF": [
+      99,
+      99
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Reduced health rate used for the Vorsorgepauschale (full rate) | 14.0% | [§ 243 SGB V](https://www.gesetze-im-internet.de/sgb_5/__243.html) |",
+    "source_quote_ids": [
+      "A.REDUCEDKV"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "058",
+    "prior_row_id": 58,
+    "prior_native_LF": [
+      100,
+      100
+    ],
+    "native_LF": [
+      100,
+      100
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| Tax-free pay past the standard retirement age (Aktivrente), per year | EUR 24,000 | [§ 3 no. 21 EStG](https://www.gesetze-im-internet.de/estg/__3.html) |",
+    "source_quote_ids": [
+      "A.AKT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "059",
+    "prior_row_id": 59,
+    "prior_native_LF": [
+      101,
+      101
+    ],
+    "native_LF": [
+      101,
+      101
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "| The same, per month in payroll | EUR 2,000 | [Finance ministry FAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/FAQ-zur-Aktivrente.html) |",
+    "source_quote_ids": [
+      "A.AKTHOW"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "060",
+    "prior_row_id": 60,
+    "prior_native_LF": [
+      103,
+      103
+    ],
+    "native_LF": [
+      103,
+      103
+    ],
+    "section": "Figures for 2026: wage tax",
+    "wording": "Which states charge the lower church tax rate is state law and is not printed on an allowed federal page; the common reading is Bavaria and Baden-Württemberg at the lower rate and the other states at the higher one (check with the state's church tax law).",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "061",
+    "prior_row_id": 61,
+    "prior_native_LF": [
+      109,
+      109
+    ],
+    "native_LF": [
+      109,
+      109
+    ],
+    "section": "Tax classes",
+    "wording": "| Class | Who ([§ 38b EStG](https://www.gesetze-im-internet.de/estg/__38b.html)) | What the PAP builds in |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "062",
+    "prior_row_id": 62,
+    "prior_native_LF": [
+      111,
+      111
+    ],
+    "native_LF": [
+      111,
+      111
+    ],
+    "section": "Tax classes",
+    "wording": "| I | Single; married, widowed or divorced people who do not meet III or IV; people with limited tax liability | Basic tariff, ANP, SAP, Vorsorgepauschale |",
+    "source_quote_ids": [
+      "A.CLASS",
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "063",
+    "prior_row_id": 63,
+    "prior_native_LF": [
+      112,
+      112
+    ],
+    "native_LF": [
+      112,
+      112
+    ],
+    "section": "Tax classes",
+    "wording": "| II | As I, when the single parent relief applies | As I plus EFA for one child |",
+    "source_quote_ids": [
+      "A.CLASS",
+      "A.SINGLE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "064",
+    "prior_row_id": 64,
+    "prior_native_LF": [
+      113,
+      113
+    ],
+    "native_LF": [
+      113,
+      113
+    ],
+    "section": "Tax classes",
+    "wording": "| III | Married, both resident, not permanently separated, and the spouse is in V on joint application; also the widowed in the year after the death | Splitting: tax on half the amount, doubled |",
+    "source_quote_ids": [
+      "A.CLASS",
+      "A.SPLIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "065",
+    "prior_row_id": 65,
+    "prior_native_LF": [
+      114,
+      114
+    ],
+    "native_LF": [
+      114,
+      114
+    ],
+    "section": "Tax classes",
+    "wording": "| IV | Married, both resident, not permanently separated, the default for couples; on application with a factor ([§ 39f EStG](https://www.gesetze-im-internet.de/estg/__39f.html)) | Basic tariff; with the factor the tax is multiplied by it |",
+    "source_quote_ids": [
+      "A.CLASS",
+      "A.FACTOR"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "066",
+    "prior_row_id": 66,
+    "prior_native_LF": [
+      115,
+      115
+    ],
+    "native_LF": [
+      115,
+      115
+    ],
+    "section": "Tax classes",
+    "wording": "| V | The spouse of a class III employee | Special method for V and VI, with ANP, SAP |",
+    "source_quote_ids": [
+      "A.CLASS",
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "067",
+    "prior_row_id": 67,
+    "prior_native_LF": [
+      116,
+      116
+    ],
+    "native_LF": [
+      116,
+      116
+    ],
+    "section": "Tax classes",
+    "wording": "| VI | Second and further jobs; missing wage tax data by the employee's fault | Special method, no ANP, no SAP, no child allowance |",
+    "source_quote_ids": [
+      "A.CLASS",
+      "A.MISSING",
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "068",
+    "prior_row_id": 68,
+    "prior_native_LF": [
+      118,
+      118
+    ],
+    "native_LF": [
+      118,
+      118
+    ],
+    "section": "Tax classes",
+    "wording": "Extra child amounts for single parents with more than one child, and other allowances, reach payroll only as an allowance in the ELStAM ([§ 39a EStG](https://www.gesetze-im-internet.de/estg/__39a.html)).",
+    "source_quote_ids": [
+      "A.SINGLE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "069",
+    "prior_row_id": 69,
+    "prior_native_LF": [
+      122,
+      122
+    ],
+    "native_LF": [
+      122,
+      122
+    ],
+    "section": "The order of the calculation",
+    "wording": "1. **Annualise.** Monthly pay times 12; weekly pay times 360/7; daily pay times 360 ([§ 39b(2) EStG](https://www.gesetze-im-internet.de/estg/__39b.html)).",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "070",
+    "prior_row_id": 70,
+    "prior_native_LF": [
+      123,
+      123
+    ],
+    "native_LF": [
+      123,
+      123
+    ],
+    "section": "The order of the calculation",
+    "wording": "2. **Taxable amount.** Deduct any pension allowance and old-age relief, deduct or add the ELStAM allowance or added amount, deduct the fixed amounts of the class (ANP, SAP, EFA), deduct the Vorsorgepauschale. Round down to whole euros.",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "071",
+    "prior_row_id": 71,
+    "prior_native_LF": [
+      124,
+      124
+    ],
+    "native_LF": [
+      124,
+      124
+    ],
+    "section": "The order of the calculation",
+    "wording": "3. **Tariff.** Classes I, II and IV: tariff below. Class III: tariff on half, doubled. Classes V and VI: special method.",
+    "source_quote_ids": [
+      "A.WITHHOLD",
+      "A.TARIFF",
+      "A.SPLIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "072",
+    "prior_row_id": 72,
+    "prior_native_LF": [
+      125,
+      125
+    ],
+    "native_LF": [
+      125,
+      125
+    ],
+    "section": "The order of the calculation",
+    "wording": "4. **Back to the period.** Take 1/12, 7/360 or 1/360 of the yearly tax; drop parts of a cent.",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "073",
+    "prior_row_id": 73,
+    "prior_native_LF": [
+      126,
+      126
+    ],
+    "native_LF": [
+      126,
+      126
+    ],
+    "section": "The order of the calculation",
+    "wording": "5. **Surcharge and church tax.** Run the calculation again with the child allowances deducted. That second tax (JBMG) is the base for the surcharge and for church tax (BK). The wage tax itself does not fall because of children ([§ 51a(2a) EStG](https://www.gesetze-im-internet.de/estg/__51a.html)).",
+    "source_quote_ids": [
+      "A.CHILDBASE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "074",
+    "prior_row_id": 74,
+    "prior_native_LF": [
+      128,
+      128
+    ],
+    "native_LF": [
+      128,
+      128
+    ],
+    "section": "The order of the calculation",
+    "wording": "PAP inputs that change the result most often (2026 PAP, section 3.1):",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "075",
+    "prior_row_id": 75,
+    "prior_native_LF": [
+      130,
+      130
+    ],
+    "native_LF": [
+      130,
+      130
+    ],
+    "section": "The order of the calculation",
+    "wording": "| Input | Meaning |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "076",
+    "prior_row_id": 76,
+    "prior_native_LF": [
+      132,
+      132
+    ],
+    "native_LF": [
+      132,
+      132
+    ],
+    "section": "The order of the calculation",
+    "wording": "| KRV | 0 = in the statutory pension scheme (or a professional scheme); 1 = otherwise |",
+    "source_quote_ids": [
+      "A.KRV"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "077",
+    "prior_row_id": 77,
+    "prior_native_LF": [
+      133,
+      133
+    ],
+    "native_LF": [
+      133,
+      133
+    ],
+    "section": "The order of the calculation",
+    "wording": "| ALV | New in 2026: 0 = in unemployment insurance; 1 = otherwise |",
+    "source_quote_ids": [
+      "A.ALV"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "078",
+    "prior_row_id": 78,
+    "prior_native_LF": [
+      134,
+      134
+    ],
+    "native_LF": [
+      134,
+      134
+    ],
+    "section": "The order of the calculation",
+    "wording": "| PKV | 0 = statutory health insurance; 1 = private only (the value 2 no longer exists) |",
+    "source_quote_ids": [
+      "A.PVMARK"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "079",
+    "prior_row_id": 79,
+    "prior_native_LF": [
+      135,
+      135
+    ],
+    "native_LF": [
+      135,
+      135
+    ],
+    "section": "The order of the calculation",
+    "wording": "| KVZ | Full additional rate of the employee's own fund, two decimals; the PAP halves it |",
+    "source_quote_ids": [
+      "A.KRV",
+      "A.PAPKVZ"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "080",
+    "prior_row_id": 80,
+    "prior_native_LF": [
+      136,
+      136
+    ],
+    "native_LF": [
+      136,
+      136
+    ],
+    "section": "The order of the calculation",
+    "wording": "| PVZ / PVA | PVZ = 1: childless surcharge; PVA = number of reductions (0 to 4) for children two to five |",
+    "source_quote_ids": [
+      "A.PVMARK"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "081",
+    "prior_row_id": 81,
+    "prior_native_LF": [
+      137,
+      137
+    ],
+    "native_LF": [
+      137,
+      137
+    ],
+    "section": "The order of the calculation",
+    "wording": "| PVS | 1 = place of employment in Saxony |",
+    "source_quote_ids": [
+      "A.PVMARK"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "082",
+    "prior_row_id": 82,
+    "prior_native_LF": [
+      141,
+      141
+    ],
+    "native_LF": [
+      141,
+      141
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "~~~",
+    "source_quote_ids": [
+      "A.TARIFF",
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "083",
+    "prior_row_id": 83,
+    "prior_native_LF": [
+      142,
+      142
+    ],
+    "native_LF": [
+      142,
+      142
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "X = taxable amount, rounded down to whole euros (class III: half of it)",
+    "source_quote_ids": [
+      "A.TARIFF",
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "084",
+    "prior_row_id": 84,
+    "prior_native_LF": [
+      143,
+      143
+    ],
+    "native_LF": [
+      143,
+      143
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "X up to 12348:            ST = 0",
+    "source_quote_ids": [
+      "A.TARIFF",
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "085",
+    "prior_row_id": 85,
+    "prior_native_LF": [
+      144,
+      144
+    ],
+    "native_LF": [
+      144,
+      144
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "X up to 17799:            Y = (X - 12348) / 10000;  ST = (914.51 * Y + 1400) * Y",
+    "source_quote_ids": [
+      "A.TARIFF",
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "086",
+    "prior_row_id": 86,
+    "prior_native_LF": [
+      145,
+      145
+    ],
+    "native_LF": [
+      145,
+      145
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "X up to 69878:            Z = (X - 17799) / 10000;  ST = (173.10 * Z + 2397) * Z + 1034.87",
+    "source_quote_ids": [
+      "A.TARIFF",
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "087",
+    "prior_row_id": 87,
+    "prior_native_LF": [
+      146,
+      146
+    ],
+    "native_LF": [
+      146,
+      146
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "X up to 277825:           ST = 0.42 * X - 11135.63",
+    "source_quote_ids": [
+      "A.TARIFF",
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "088",
+    "prior_row_id": 88,
+    "prior_native_LF": [
+      147,
+      147
+    ],
+    "native_LF": [
+      147,
+      147
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "above:                    ST = 0.45 * X - 19470.38",
+    "source_quote_ids": [
+      "A.TARIFF",
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "089",
+    "prior_row_id": 89,
+    "prior_native_LF": [
+      148,
+      148
+    ],
+    "native_LF": [
+      148,
+      148
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "ST is rounded down to whole euros; class III: ST times 2",
+    "source_quote_ids": [
+      "A.TARIFF",
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "090",
+    "prior_row_id": 90,
+    "prior_native_LF": [
+      149,
+      149
+    ],
+    "native_LF": [
+      149,
+      149
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "~~~",
+    "source_quote_ids": [
+      "A.TARIFF",
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "091",
+    "prior_row_id": 91,
+    "prior_native_LF": [
+      151,
+      151
+    ],
+    "native_LF": [
+      151,
+      151
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "Classes V and VI ([§ 39b(2) sentence 7 EStG](https://www.gesetze-im-internet.de/estg/__39b.html); 2026 PAP, W1STKL5 = 14071, W2STKL5 = 34939, W3STKL5 = 222260). Never apply the plain tariff to V or VI.",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "092",
+    "prior_row_id": 92,
+    "prior_native_LF": [
+      153,
+      153
+    ],
+    "native_LF": [
+      153,
+      153
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "~~~",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "093",
+    "prior_row_id": 93,
+    "prior_native_LF": [
+      154,
+      154
+    ],
+    "native_LF": [
+      154,
+      154
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "UP5-6(Z):  ST = 2 * (tariff(floor(Z * 1.25)) - tariff(floor(Z * 0.75)))",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "094",
+    "prior_row_id": 94,
+    "prior_native_LF": [
+      155,
+      155
+    ],
+    "native_LF": [
+      155,
+      155
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "           ST = the higher of ST and floor(Z * 0.14)",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "095",
+    "prior_row_id": 95,
+    "prior_native_LF": [
+      156,
+      156
+    ],
+    "native_LF": [
+      156,
+      156
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "MST5-6(X): if X > W2STKL5:",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "096",
+    "prior_row_id": 96,
+    "prior_native_LF": [
+      157,
+      157
+    ],
+    "native_LF": [
+      157,
+      157
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "               ST = UP5-6(W2STKL5)",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "097",
+    "prior_row_id": 97,
+    "prior_native_LF": [
+      158,
+      158
+    ],
+    "native_LF": [
+      158,
+      158
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "               if X > W3STKL5: ST = ST + floor((W3STKL5 - W2STKL5) * 0.42) + floor((X - W3STKL5) * 0.45)",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "098",
+    "prior_row_id": 98,
+    "prior_native_LF": [
+      159,
+      159
+    ],
+    "native_LF": [
+      159,
+      159
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "               else:           ST = ST + floor((X - W2STKL5) * 0.42)",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "099",
+    "prior_row_id": 99,
+    "prior_native_LF": [
+      160,
+      160
+    ],
+    "native_LF": [
+      160,
+      160
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "           else:",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "100",
+    "prior_row_id": 100,
+    "prior_native_LF": [
+      161,
+      161
+    ],
+    "native_LF": [
+      161,
+      161
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "               ST = UP5-6(X)",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "101",
+    "prior_row_id": 101,
+    "prior_native_LF": [
+      162,
+      162
+    ],
+    "native_LF": [
+      162,
+      162
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "               if X > W1STKL5: ST = the lower of ST and UP5-6(W1STKL5) + floor((X - W1STKL5) * 0.42)",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "102",
+    "prior_row_id": 102,
+    "prior_native_LF": [
+      163,
+      163
+    ],
+    "native_LF": [
+      163,
+      163
+    ],
+    "section": "Tariff formula 2026 (UPTAB26)",
+    "wording": "~~~",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "103",
+    "prior_row_id": 103,
+    "prior_native_LF": [
+      167,
+      167
+    ],
+    "native_LF": [
+      167,
+      167
+    ],
+    "section": "Vorsorgepauschale (insurance deduction inside the tax)",
+    "wording": "It stands for the employee's own contributions. The 2026 text has five parts ([§ 39b(2) sentence 5 no. 3 EStG](https://www.gesetze-im-internet.de/estg/__39b.html)):",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "104",
+    "prior_row_id": 104,
+    "prior_native_LF": [
+      169,
+      169
+    ],
+    "native_LF": [
+      169,
+      169
+    ],
+    "section": "Vorsorgepauschale (insurance deduction inside the tax)",
+    "wording": "- **Pension:** pay up to the pension ceiling times the employee pension share, unless the employee is not in the statutory scheme (PAP marker KRV = 1).",
+    "source_quote_ids": [
+      "A.WITHHOLD",
+      "A.PENSIONSHARE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "105",
+    "prior_row_id": 105,
+    "prior_native_LF": [
+      170,
+      170
+    ],
+    "native_LF": [
+      170,
+      170
+    ],
+    "section": "Vorsorgepauschale (insurance deduction inside the tax)",
+    "wording": "- **Health:** pay up to the health ceiling times half the reduced health rate plus half the fund's own additional rate. The PAP writes it as \"KVSATZAN = KVZ/2/100 + 0,07\". It is not the rate the employee pays, which is built on the general rate.",
+    "source_quote_ids": [
+      "A.WITHHOLD",
+      "A.PAPKVZ",
+      "A.REDUCEDKV"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "106",
+    "prior_row_id": 106,
+    "prior_native_LF": [
+      171,
+      171
+    ],
+    "native_LF": [
+      171,
+      171
+    ],
+    "section": "Vorsorgepauschale (insurance deduction inside the tax)",
+    "wording": "- **Care:** pay up to the health ceiling times the employee care share from the social insurance table.",
+    "source_quote_ids": [
+      "A.WITHHOLD",
+      "A.CAREPROOF",
+      "A.CARESHARE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "107",
+    "prior_row_id": 107,
+    "prior_native_LF": [
+      172,
+      172
+    ],
+    "native_LF": [
+      172,
+      172
+    ],
+    "section": "Vorsorgepauschale (insurance deduction inside the tax)",
+    "wording": "- **Private insurance:** instead of health and care, the monthly private premiums from the ELStAM less the tax-free employer subsidy (classes I to V only).",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "108",
+    "prior_row_id": 108,
+    "prior_native_LF": [
+      173,
+      173
+    ],
+    "native_LF": [
+      173,
+      173
+    ],
+    "section": "Vorsorgepauschale (insurance deduction inside the tax)",
+    "wording": "- **Unemployment:** pay up to the pension ceiling times the employee share, only if insured (ALV = 0) and not in class VI, and only so far as it and the health and care parts together do not pass the cap in the table. Once health and care alone exceed the cap, the unemployment part adds nothing; health and care still count in full.",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "109",
+    "prior_row_id": 109,
+    "prior_native_LF": [
+      175,
+      175
+    ],
+    "native_LF": [
+      175,
+      175
+    ],
+    "section": "Vorsorgepauschale (insurance deduction inside the tax)",
+    "wording": "There is no minimum Vorsorgepauschale in 2026. The PAP rounds the Vorsorgepauschale up to whole euros. The additional rate entered is the full rate of the employee's own fund: \"Der durchschnittliche Zusatzbeitragssatz ist unmaßgeblich\", except for the groups of § 242(3) SGB V, where the average rate counts (the 2026 PAP). Severance within § 24 no. 1 EStG is left out of the insurance parts.",
+    "source_quote_ids": [
+      "A.WITHHOLD",
+      "A.PAPKVZ",
+      "A.PAPVSP"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "110",
+    "prior_row_id": 110,
+    "prior_native_LF": [
+      179,
+      179
+    ],
+    "native_LF": [
+      179,
+      179
+    ],
+    "section": "Solidarity surcharge and church tax",
+    "wording": "- No surcharge while the yearly base does not exceed the exemption limit. Above it, the surcharge is the lower of the full rate on the base and the mitigation share of the excess, so it phases in ([§ 4 SolzG](https://www.gesetze-im-internet.de/solzg_1995/__4.html)).",
+    "source_quote_ids": [
+      "A.SoliRate",
+      "A.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "111",
+    "prior_row_id": 111,
+    "prior_native_LF": [
+      180,
+      180
+    ],
+    "native_LF": [
+      180,
+      180
+    ],
+    "section": "Solidarity surcharge and church tax",
+    "wording": "- The period limit is the matching fraction of the yearly one: 1/12, 7/360 or 1/360 ([§ 3(4) SolzG](https://www.gesetze-im-internet.de/solzg_1995/__3.html)).",
+    "source_quote_ids": [
+      "A.SOLIPERIOD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "112",
+    "prior_row_id": 112,
+    "prior_native_LF": [
+      181,
+      181
+    ],
+    "native_LF": [
+      181,
+      181
+    ],
+    "section": "Solidarity surcharge and church tax",
+    "wording": "- One-time payments: surcharge only if the year's tax with the payment, worked out with child allowances, exceeds the limit; then the full rate, with no mitigation ([§ 3(4a) SolzG](https://www.gesetze-im-internet.de/solzg_1995/__3.html), [§ 4 SolzG](https://www.gesetze-im-internet.de/solzg_1995/__4.html)).",
+    "source_quote_ids": [
+      "A.SOLIPERIOD",
+      "A.SoliRate"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "113",
+    "prior_row_id": 113,
+    "prior_native_LF": [
+      182,
+      182
+    ],
+    "native_LF": [
+      182,
+      182
+    ],
+    "section": "Solidarity surcharge and church tax",
+    "wording": "- Church tax only for members of a church that levies it (PAP input R above 0), at the state rate on BK. Caps and mixed-faith couples are state law.",
+    "source_quote_ids": [
+      "A.CHURCHRATE",
+      "A.CHILDBASE",
+      "A.PVMARK"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "114",
+    "prior_row_id": 114,
+    "prior_native_LF": [
+      186,
+      186
+    ],
+    "native_LF": [
+      186,
+      186
+    ],
+    "section": "One-time payments (sonstige Bezüge)",
+    "wording": "Bonuses, holiday and Christmas pay, back pay for earlier years and severance are taxed by the annual method of [§ 39b(3) EStG](https://www.gesetze-im-internet.de/estg/__39b.html):",
+    "source_quote_ids": [
+      "A.BONUS"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "115",
+    "prior_row_id": 115,
+    "prior_native_LF": [
+      188,
+      188
+    ],
+    "native_LF": [
+      188,
+      188
+    ],
+    "section": "One-time payments (sonstige Bezüge)",
+    "wording": "1. Yearly tax on the expected annual pay without the payment.",
+    "source_quote_ids": [
+      "A.BONUS"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "116",
+    "prior_row_id": 116,
+    "prior_native_LF": [
+      189,
+      189
+    ],
+    "native_LF": [
+      189,
+      189
+    ],
+    "section": "One-time payments (sonstige Bezüge)",
+    "wording": "2. Yearly tax on that pay plus the payment.",
+    "source_quote_ids": [
+      "A.BONUS"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "117",
+    "prior_row_id": 117,
+    "prior_native_LF": [
+      190,
+      190
+    ],
+    "native_LF": [
+      190,
+      190
+    ],
+    "section": "One-time payments (sonstige Bezüge)",
+    "wording": "3. Withhold the difference.",
+    "source_quote_ids": [
+      "A.BONUS"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "118",
+    "prior_row_id": 118,
+    "prior_native_LF": [
+      192,
+      192
+    ],
+    "native_LF": [
+      192,
+      192
+    ],
+    "section": "One-time payments (sonstige Bezüge)",
+    "wording": "If the employee has not handed in the certificates of earlier employers this year, scale the current pay up for those months, mark the payroll account with the capital letter S, and the employee must then file a return ([§ 46(2) no. 5a EStG](https://www.gesetze-im-internet.de/estg/__46.html)). The one-fifth relief of § 34 EStG for severance is not applied in payroll since 2025; the 2026 PAP covers only \"§ 39b Absatz 3 Satz 1 bis 8 EStG\". The employee claims it, if due, in the income tax return ([§ 34 EStG](https://www.gesetze-im-internet.de/estg/__34.html)).",
+    "source_quote_ids": [
+      "A.BONUS",
+      "A.FILE5a"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "119",
+    "prior_row_id": 119,
+    "prior_native_LF": [
+      196,
+      196
+    ],
+    "native_LF": [
+      196,
+      196
+    ],
+    "section": "Tax-free pay past the standard retirement age (Aktivrente), new in 2026",
+    "wording": "- **Who.** Employees in a job under § 19(1) no. 1 EStG, from the month after they reach the standard retirement age of § 35 or § 235 SGB VI, where the employer owes pension contributions for that work ([§ 3 no. 21 EStG](https://www.gesetze-im-internet.de/estg/__3.html)). A pension need not be drawn. Minijobs, self-employment and civil service pay are not covered ([finance ministry FAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/FAQ-zur-Aktivrente.html)).",
+    "source_quote_ids": [
+      "A.AKT",
+      "A.AKTWHO"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "120",
+    "prior_row_id": 120,
+    "prior_native_LF": [
+      197,
+      197
+    ],
+    "native_LF": [
+      197,
+      197
+    ],
+    "section": "Tax-free pay past the standard retirement age (Aktivrente), new in 2026",
+    "wording": "- **How much.** Up to the monthly amount in the table; the yearly amount falls by one twelfth for each month the conditions are not met. Unused room does not move to another month; one-time payments are exempt only within the month's room; severance as a rule is not covered. Pay for periods before the qualifying month is never covered, whenever it is paid. Pay already tax-free under another rule does not use it (§ 3 no. 21 sentence 2).",
+    "source_quote_ids": [
+      "A.AKT",
+      "A.AKTHOW",
+      "A.AKTPART"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "121",
+    "prior_row_id": 121,
+    "prior_native_LF": [
+      198,
+      198
+    ],
+    "native_LF": [
+      198,
+      198
+    ],
+    "section": "Tax-free pay past the standard retirement age (Aktivrente), new in 2026",
+    "wording": "- **Payroll.** The employer must apply it and leave the exempt pay out of the wage tax. Class VI only with the employee's confirmation that no other job uses it, kept in the payroll account. When a job ends or the employer changes mid-month, the amount is apportioned by days on a 30-day month; a new job started mid-month gets the full amount if the employee confirms in writing that no Aktivrente was used that month. Contributions are unchanged. See Case 5.",
+    "source_quote_ids": [
+      "A.AKTPART",
+      "A.AKTPAYROLL"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "122",
+    "prior_row_id": 122,
+    "prior_native_LF": [
+      204,
+      204
+    ],
+    "native_LF": [
+      204,
+      204
+    ],
+    "section": "Rates",
+    "wording": "| What | 2026 value | Source |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "123",
+    "prior_row_id": 123,
+    "prior_native_LF": [
+      206,
+      206
+    ],
+    "native_LF": [
+      206,
+      206
+    ],
+    "section": "Rates",
+    "wording": "| Pension insurance, full rate | 18.6% | [RVBeitrSBek 2026](https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html) |",
+    "source_quote_ids": [
+      "A.PENSIONRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "124",
+    "prior_row_id": 124,
+    "prior_native_LF": [
+      207,
+      207
+    ],
+    "native_LF": [
+      207,
+      207
+    ],
+    "section": "Rates",
+    "wording": "| Pension, employee share (employer the same, \"je zur Hälfte\", [§ 168(1) no. 1 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__168.html)) | 9.3% | [PAP 2026](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2) |",
+    "source_quote_ids": [
+      "A.PENSIONSHARE",
+      "A.PENSIONRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "125",
+    "prior_row_id": 125,
+    "prior_native_LF": [
+      208,
+      208
+    ],
+    "native_LF": [
+      208,
+      208
+    ],
+    "section": "Rates",
+    "wording": "| Unemployment insurance, full rate | 2.6% | [§ 341(2) SGB III](https://www.gesetze-im-internet.de/sgb_3/__341.html) |",
+    "source_quote_ids": [
+      "A.AVRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "126",
+    "prior_row_id": 126,
+    "prior_native_LF": [
+      209,
+      209
+    ],
+    "native_LF": [
+      209,
+      209
+    ],
+    "section": "Rates",
+    "wording": "| Unemployment, employee share (employer the same, [§ 346(1) SGB III](https://www.gesetze-im-internet.de/sgb_3/__346.html)) | 1.3% | PAP 2026 |",
+    "source_quote_ids": [
+      "A.AVSHARE",
+      "A.AVRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "127",
+    "prior_row_id": 127,
+    "prior_native_LF": [
+      210,
+      210
+    ],
+    "native_LF": [
+      210,
+      210
+    ],
+    "section": "Rates",
+    "wording": "| Health insurance, general rate, without the fund's additional rate | 14.6% | [§ 241 SGB V](https://www.gesetze-im-internet.de/sgb_5/__241.html) |",
+    "source_quote_ids": [
+      "A.HRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "128",
+    "prior_row_id": 128,
+    "prior_native_LF": [
+      211,
+      211
+    ],
+    "native_LF": [
+      211,
+      211
+    ],
+    "section": "Rates",
+    "wording": "| Health: the fund's own additional rate on top; employer and employee each bear half of general and additional rate | fund's own rate | [§ 249(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__249.html) |",
+    "source_quote_ids": [
+      "A.HSHARE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "129",
+    "prior_row_id": 129,
+    "prior_native_LF": [
+      212,
+      212
+    ],
+    "native_LF": [
+      212,
+      212
+    ],
+    "section": "Rates",
+    "wording": "| Average additional rate for 2026, where legally required for the § 242(3) SGB V groups; ordinary payroll uses the employee fund's actual rate | 2.9% | [BMG published 2026 contributions guidance](https://www.bundesgesundheitsministerium.de/beitraege/seite); earlier [Finance ministry monthly report](https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-3-sollbericht-2026.html) is an estimate source |",
+    "source_quote_ids": [
+      "A.AVERAGE",
+      "R67.BMG-rate"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "130",
+    "prior_row_id": 130,
+    "prior_native_LF": [
+      213,
+      213
+    ],
+    "native_LF": [
+      213,
+      213
+    ],
+    "section": "Rates",
+    "wording": "| Care insurance, full rate | 3.6% | [§ 1 PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html) |",
+    "source_quote_ids": [
+      "A.CARERATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "131",
+    "prior_row_id": 131,
+    "prior_native_LF": [
+      214,
+      214
+    ],
+    "native_LF": [
+      214,
+      214
+    ],
+    "section": "Rates",
+    "wording": "| Care, employee share outside Saxony, with one child (and employer share outside Saxony) | 1.8% | PAP 2026; [§ 58(1) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html) |",
+    "source_quote_ids": [
+      "A.CARESHARE",
+      "A.CARERATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "132",
+    "prior_row_id": 132,
+    "prior_native_LF": [
+      215,
+      215
+    ],
+    "native_LF": [
+      215,
+      215
+    ],
+    "section": "Rates",
+    "wording": "| Childless surcharge, employee only, from the month after turning 23 | 0.6 points | [§ 55(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html) |",
+    "source_quote_ids": [
+      "A.CAREPROOF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "133",
+    "prior_row_id": 133,
+    "prior_native_LF": [
+      216,
+      216
+    ],
+    "native_LF": [
+      216,
+      216
+    ],
+    "section": "Rates",
+    "wording": "| Reduction per child from the second to the fifth, while under 25, employee share only | 0.25 points | Same |",
+    "source_quote_ids": [
+      "A.CAREPROOF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "134",
+    "prior_row_id": 134,
+    "prior_native_LF": [
+      217,
+      217
+    ],
+    "native_LF": [
+      217,
+      217
+    ],
+    "section": "Rates",
+    "wording": "| Care, employee share in Saxony, with one child | 2.3% | PAP 2026; [§ 58(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html): employees bear \"1 vom Hundert allein\" |",
+    "source_quote_ids": [
+      "A.CARESHARE",
+      "A.CARERATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "135",
+    "prior_row_id": 135,
+    "prior_native_LF": [
+      219,
+      219
+    ],
+    "native_LF": [
+      219,
+      219
+    ],
+    "section": "Rates",
+    "wording": "The retained BMG administrative guidance expressly publishes 2.9% for 2026. Use it where the average rate is legally required; ordinary employees use their fund-specific additional rate. This is an actual current official administrative publication, not a separately retained Federal Gazette announcement. The earlier finance ministry estimate is preserved as history, not the sole current-rate evidence.",
+    "source_quote_ids": [
+      "A.AVERAGE",
+      "R67.BMG-rate"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "136",
+    "prior_row_id": 136,
+    "prior_native_LF": [
+      221,
+      221
+    ],
+    "native_LF": [
+      221,
+      221
+    ],
+    "section": "Rates",
+    "wording": "**Employee care share by children (derived from the rows above)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "137",
+    "prior_row_id": 137,
+    "prior_native_LF": [
+      223,
+      223
+    ],
+    "native_LF": [
+      223,
+      223
+    ],
+    "section": "Rates",
+    "wording": "| Children | Outside Saxony: employee | Outside Saxony: employer | Saxony: employee | Saxony: employer |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "138",
+    "prior_row_id": 138,
+    "prior_native_LF": [
+      225,
+      225
+    ],
+    "native_LF": [
+      225,
+      225
+    ],
+    "section": "Rates",
+    "wording": "| None, employee 23 or older | 2.4% | 1.8% | 2.9% | 1.3% |",
+    "source_quote_ids": [
+      "A.CARERATE",
+      "A.CARESHARE",
+      "A.CAREPROOF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "139",
+    "prior_row_id": 139,
+    "prior_native_LF": [
+      226,
+      226
+    ],
+    "native_LF": [
+      226,
+      226
+    ],
+    "section": "Rates",
+    "wording": "| One child (at any age); or childless and under 23 | 1.8% | 1.8% | 2.3% | 1.3% |",
+    "source_quote_ids": [
+      "A.CARERATE",
+      "A.CARESHARE",
+      "A.CAREPROOF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "140",
+    "prior_row_id": 140,
+    "prior_native_LF": [
+      227,
+      227
+    ],
+    "native_LF": [
+      227,
+      227
+    ],
+    "section": "Rates",
+    "wording": "| Two under 25 | 1.55% | 1.8% | 2.05% | 1.3% |",
+    "source_quote_ids": [
+      "A.CARERATE",
+      "A.CARESHARE",
+      "A.CAREPROOF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "141",
+    "prior_row_id": 141,
+    "prior_native_LF": [
+      228,
+      228
+    ],
+    "native_LF": [
+      228,
+      228
+    ],
+    "section": "Rates",
+    "wording": "| Three under 25 | 1.3% | 1.8% | 1.8% | 1.3% |",
+    "source_quote_ids": [
+      "A.CARERATE",
+      "A.CARESHARE",
+      "A.CAREPROOF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "142",
+    "prior_row_id": 142,
+    "prior_native_LF": [
+      229,
+      229
+    ],
+    "native_LF": [
+      229,
+      229
+    ],
+    "section": "Rates",
+    "wording": "| Four under 25 | 1.05% | 1.8% | 1.55% | 1.3% |",
+    "source_quote_ids": [
+      "A.CARERATE",
+      "A.CARESHARE",
+      "A.CAREPROOF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "143",
+    "prior_row_id": 143,
+    "prior_native_LF": [
+      230,
+      230
+    ],
+    "native_LF": [
+      230,
+      230
+    ],
+    "section": "Rates",
+    "wording": "| Five or more under 25 | 0.8% | 1.8% | 1.3% | 1.3% |",
+    "source_quote_ids": [
+      "A.CARERATE",
+      "A.CARESHARE",
+      "A.CAREPROOF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "144",
+    "prior_row_id": 144,
+    "prior_native_LF": [
+      231,
+      231
+    ],
+    "native_LF": [
+      231,
+      231
+    ],
+    "section": "Rates",
+    "wording": "| Source | [§ 55(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html), [§ 58 SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html), PAP 2026 | | | |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "145",
+    "prior_row_id": 145,
+    "prior_native_LF": [
+      233,
+      233
+    ],
+    "native_LF": [
+      233,
+      233
+    ],
+    "section": "Rates",
+    "wording": "- **What counts.** Children who have turned 25 do not count toward the reductions; the reduction for a child ends at the end of the month it turns 25. Parents, at any age of the child, do not pay the surcharge. The surcharge does not apply to people born before 1 January 1940, to people doing military or civilian service, or to recipients of basic income support ([§ 55(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html)).",
+    "source_quote_ids": [
+      "A.CAREPROOF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "146",
+    "prior_row_id": 146,
+    "prior_native_LF": [
+      234,
+      234
+    ],
+    "native_LF": [
+      234,
+      234
+    ],
+    "section": "Rates",
+    "wording": "- **Proof.** Parenthood and the number of children under 25 must be proven to the employer unless already known. Proof through the automated procedure, or other proof given within six months of the birth, counts from the month of birth; later proof counts from the month after it is given ([§ 55(3a) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html)).",
+    "source_quote_ids": [
+      "A.CAREPROOF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "147",
+    "prior_row_id": 147,
+    "prior_native_LF": [
+      235,
+      235
+    ],
+    "native_LF": [
+      235,
+      235
+    ],
+    "section": "Rates",
+    "wording": "- **Saxony.** The test is the place of employment, not where the employee lives ([§ 58(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html)).",
+    "source_quote_ids": [
+      "A.CARESHARE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "148",
+    "prior_row_id": 148,
+    "prior_native_LF": [
+      236,
+      236
+    ],
+    "native_LF": [
+      236,
+      236
+    ],
+    "section": "Rates",
+    "wording": "- **Do not read the rate from § 55(1) SGB XI.** The statute page still prints the older rate \"3,4 Prozent\"; the current rate was set by regulation (PBAV 2025).",
+    "source_quote_ids": [
+      "A.CARERATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "149",
+    "prior_row_id": 149,
+    "prior_native_LF": [
+      240,
+      240
+    ],
+    "native_LF": [
+      240,
+      240
+    ],
+    "section": "Ceilings and thresholds",
+    "wording": "| What | 2026 per year | 2026 per month | Source |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "150",
+    "prior_row_id": 150,
+    "prior_native_LF": [
+      242,
+      242
+    ],
+    "native_LF": [
+      242,
+      242
+    ],
+    "section": "Ceilings and thresholds",
+    "wording": "| Pension and unemployment ceiling (BBG RV/AV) | EUR 101,400 | EUR 8,450 | [SVBezGrV 2026 § 4](https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3); AV uses the pension ceiling, [§ 341(4) SGB III](https://www.gesetze-im-internet.de/sgb_3/__341.html) |",
+    "source_quote_ids": [
+      "A.RVCEILING",
+      "A.AVRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "151",
+    "prior_row_id": 151,
+    "prior_native_LF": [
+      243,
+      243
+    ],
+    "native_LF": [
+      243,
+      243
+    ],
+    "section": "Ceilings and thresholds",
+    "wording": "| Health and care ceiling (BBG KV/PV), equal to the special threshold of § 6(7) SGB V | EUR 69,750 | EUR 5,812.50 | SVBezGrV 2026 § 2(2); [§ 55(2) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html) ties the care ceiling to it; [BMG actual 2026 contribution-ceiling guidance](https://www.bundesgesundheitsministerium.de/beitraege/seite) expressly states these amounts; the special-JAEG reference alone is not treated as the whole 2026 contribution-ceiling proof |",
+    "source_quote_ids": [
+      "A.CEILING",
+      "A.CARECAP",
+      "R67.BMG-ceiling",
+      "R62-70.PAPVALUES"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "152",
+    "prior_row_id": 152,
+    "prior_native_LF": [
+      244,
+      244
+    ],
+    "native_LF": [
+      244,
+      244
+    ],
+    "section": "Ceilings and thresholds",
+    "wording": "| General compulsory health insurance threshold (JAEG) | EUR 77,400 | EUR 6,450 | SVBezGrV 2026 § 2(1) |",
+    "source_quote_ids": [
+      "A.CEILING"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "153",
+    "prior_row_id": 153,
+    "prior_native_LF": [
+      245,
+      245
+    ],
+    "native_LF": [
+      245,
+      245
+    ],
+    "section": "Ceilings and thresholds",
+    "wording": "| Special threshold, only for people privately insured on 31 December 2002 because of pay above the then threshold | EUR 69,750 | EUR 5,812.50 | SVBezGrV 2026 § 2(2) |",
+    "source_quote_ids": [
+      "A.CEILING",
+      "A.SPECIALJAEG"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "154",
+    "prior_row_id": 154,
+    "prior_native_LF": [
+      247,
+      247
+    ],
+    "native_LF": [
+      247,
+      247
+    ],
+    "section": "Ceilings and thresholds",
+    "wording": "- **Ceilings cap contributions.** Pay above a branch's ceiling carries no contribution in that branch. One value for the whole country.",
+    "source_quote_ids": [
+      "A.RVCEILING",
+      "A.CEILING",
+      "A.KV2027"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "155",
+    "prior_row_id": 155,
+    "prior_native_LF": [
+      248,
+      248
+    ],
+    "native_LF": [
+      248,
+      248
+    ],
+    "section": "Ceilings and thresholds",
+    "wording": "- **The threshold decides who may leave statutory health insurance.** When pay rises above the JAEG, compulsory insurance ends only at the end of that calendar year, and only if pay also exceeds the threshold for the next year ([§ 6(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__6.html)).",
+    "source_quote_ids": [
+      "A.JAEG"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "156",
+    "prior_row_id": 156,
+    "prior_native_LF": [
+      249,
+      249
+    ],
+    "native_LF": [
+      249,
+      249
+    ],
+    "section": "Ceilings and thresholds",
+    "wording": "- **2027 change already enacted.** From 2027 the health ceiling will be the special threshold plus EUR 3,600 ([§ 223(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__223.html): \"entspricht der um 3 600 Euro erhöhten Jahresarbeitsentgeltgrenze nach § 6 Absatz 7 im Jahr 2027\"). The 2027 amounts are set by regulation in late 2026 (check).",
+    "source_quote_ids": [
+      "A.KV2027"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "157",
+    "prior_row_id": 157,
+    "prior_native_LF": [
+      253,
+      253
+    ],
+    "native_LF": [
+      253,
+      253
+    ],
+    "section": "Contributions in practice",
+    "wording": "- **Base.** For each branch: pay for the period, capped at that branch's monthly ceiling. Apply the employee and employer shares from the tables. Round each amount to the cent.",
+    "source_quote_ids": [
+      "A.RVCEILING",
+      "A.CEILING",
+      "A.HSHARE",
+      "A.PENSIONSHARE",
+      "A.AVSHARE",
+      "A.CARESHARE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "158",
+    "prior_row_id": 158,
+    "prior_native_LF": [
+      254,
+      254
+    ],
+    "native_LF": [
+      254,
+      254
+    ],
+    "section": "Contributions in practice",
+    "wording": "- **Several jobs.** If pay from several insured jobs together passes a ceiling, each pay is first cut to the ceiling and then reduced in proportion so that together they reach the ceiling ([§ 22(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__22.html)). The second employer does not stop paying.",
+    "source_quote_ids": [
+      "A.SEVERAL"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "159",
+    "prior_row_id": 159,
+    "prior_native_LF": [
+      255,
+      255
+    ],
+    "native_LF": [
+      255,
+      255
+    ],
+    "section": "Contributions in practice",
+    "wording": "- **One-time payments.** They belong to the period in which they are paid and carry contributions only as far as pay so far in the year has not used up the pro-rata yearly ceiling. A payment from 1 January to 31 March that would pass that ceiling goes to the last period of the previous year, if the same employer employed the person then. For those compulsorily insured in health insurance the health ceiling is the test ([§ 23a SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23a.html)).",
+    "source_quote_ids": [
+      "A.SVMARCH"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "160",
+    "prior_row_id": 160,
+    "prior_native_LF": [
+      256,
+      256
+    ],
+    "native_LF": [
+      256,
+      256
+    ],
+    "section": "Contributions in practice",
+    "wording": "- **Employees past the standard retirement age.** Drawing a full old-age pension after reaching that age makes the job pension-free, but the employer still pays its half ([§ 172(1) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__172.html)); unemployment insurance works the same way after that age ([§ 346(3) SGB III](https://www.gesetze-im-internet.de/sgb_3/__346.html)). Where no employer pension contribution is due, the Aktivrente does not apply.",
+    "source_quote_ids": [
+      "A.RVOLD",
+      "A.AVOLD",
+      "A.AKT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "161",
+    "prior_row_id": 161,
+    "prior_native_LF": [
+      260,
+      260
+    ],
+    "native_LF": [
+      260,
+      260
+    ],
+    "section": "Employer-only levies",
+    "wording": "| Levy | Rate | Base and rule |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "162",
+    "prior_row_id": 162,
+    "prior_native_LF": [
+      262,
+      262
+    ],
+    "native_LF": [
+      262,
+      262
+    ],
+    "section": "Employer-only levies",
+    "wording": "| U1 (continued sick pay) | Set by each health fund | Only employers with, as a rule, not more than 30 employees, apprentices not counted; the statute refunds 80% of continued pay ([§ 1(1) AAG](https://www.gesetze-im-internet.de/aufag/__1.html)) |",
+    "source_quote_ids": [
+      "A.AAG",
+      "R62-70.AAGBASE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "163",
+    "prior_row_id": 163,
+    "prior_native_LF": [
+      263,
+      263
+    ],
+    "native_LF": [
+      263,
+      263
+    ],
+    "section": "Employer-only levies",
+    "wording": "| U2 (maternity costs) | Set by each health fund | All employers, no size limit ([§ 1(2) AAG](https://www.gesetze-im-internet.de/aufag/__1.html)) |",
+    "source_quote_ids": [
+      "A.AAG"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "164",
+    "prior_row_id": 164,
+    "prior_native_LF": [
+      264,
+      264
+    ],
+    "native_LF": [
+      264,
+      264
+    ],
+    "section": "Employer-only levies",
+    "wording": "| Insolvency levy | 0.15% | [§ 360 SGB III](https://www.gesetze-im-internet.de/sgb_3/__360.html); not for private households or public bodies ([§ 358 SGB III](https://www.gesetze-im-internet.de/sgb_3/__358.html)) |",
+    "source_quote_ids": [
+      "A.INSOLVENCY",
+      "A.INSOLVBASE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "165",
+    "prior_row_id": 165,
+    "prior_native_LF": [
+      265,
+      265
+    ],
+    "native_LF": [
+      265,
+      265
+    ],
+    "section": "Employer-only levies",
+    "wording": "| Accident insurance | Billed by the Berufsgenossenschaft after the year | Total pay, hazard class and the insurer's own factor |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "166",
+    "prior_row_id": 166,
+    "prior_native_LF": [
+      267,
+      267
+    ],
+    "native_LF": [
+      267,
+      267
+    ],
+    "section": "Employer-only levies",
+    "wording": "U1, U2 and the insolvency levy are charged on the pay on which pension contributions are worked out ([§ 7(2) AAG](https://www.gesetze-im-internet.de/aufag/__7.html), [§ 358(2) SGB III](https://www.gesetze-im-internet.de/sgb_3/__358.html)). For U1, exclude one-time pay under § 23a SGB IV and pay for employment lasting no longer than four weeks where the nature of the job prevents sickness-pay entitlement under § 3(3) EntgFG. Do not transfer that U1 exclusion to U2 or the insolvency levy. During short-time allowance, AAG levies use actual earned pay up to the pension ceiling (§ 7(2) AAG).",
+    "source_quote_ids": [
+      "A.AAGBASE",
+      "A.INSOLVBASE",
+      "R62-70.AAGBASE"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "167",
+    "prior_row_id": 167,
+    "prior_native_LF": [
+      271,
+      271
+    ],
+    "native_LF": [
+      271,
+      271
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| What | 2026 value | Source |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "168",
+    "prior_row_id": 168,
+    "prior_native_LF": [
+      273,
+      273
+    ],
+    "native_LF": [
+      273,
+      273
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Minimum wage per hour from 1 January 2026 | EUR 13.90 | [MiLoV5](https://www.gesetze-im-internet.de/milov5/__1.html) |",
+    "source_quote_ids": [
+      "A.MINWAGE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "169",
+    "prior_row_id": 169,
+    "prior_native_LF": [
+      274,
+      274
+    ],
+    "native_LF": [
+      274,
+      274
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Minijob limit per month: minimum wage times 130, divided by 3 (EUR 602.33), rounded up to whole euros | EUR 603 | [§ 8(1a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html); the finance ministry names the band as \"603,01 € - 2.000 €\" ([FAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/FAQ-zur-Aktivrente.html)) |",
+    "source_quote_ids": [
+      "A.MINI",
+      "A.MINWAGE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "170",
+    "prior_row_id": 170,
+    "prior_native_LF": [
+      275,
+      275
+    ],
+    "native_LF": [
+      275,
+      275
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Minimum wage from 1 January 2027 | EUR 14.60 | MiLoV5 |",
+    "source_quote_ids": [
+      "A.MINWAGE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "171",
+    "prior_row_id": 171,
+    "prior_native_LF": [
+      276,
+      276
+    ],
+    "native_LF": [
+      276,
+      276
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Employer's flat health contribution, commercial Minijob, if the Minijobber is in statutory health insurance | 13% | [§ 249b SGB V](https://www.gesetze-im-internet.de/sgb_5/__249b.html) |",
+    "source_quote_ids": [
+      "A.MINIKV"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "172",
+    "prior_row_id": 172,
+    "prior_native_LF": [
+      277,
+      277
+    ],
+    "native_LF": [
+      277,
+      277
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Employer's flat pension contribution, commercial Minijob | 15% | [§ 172(3) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__172.html) |",
+    "source_quote_ids": [
+      "A.RVOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "173",
+    "prior_row_id": 173,
+    "prior_native_LF": [
+      278,
+      278
+    ],
+    "native_LF": [
+      278,
+      278
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Minijobber's own pension share (full rate less the employer's flat share) | 3.6% | Derived: 18.6% less 15% |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.RVOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "174",
+    "prior_row_id": 174,
+    "prior_native_LF": [
+      279,
+      279
+    ],
+    "native_LF": [
+      279,
+      279
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Private household Minijob: employer's flat health and pension contributions, each | 5% | § 249b SGB V and § 172(3a) SGB VI |",
+    "source_quote_ids": [
+      "A.MINIKV",
+      "A.RVOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "175",
+    "prior_row_id": 175,
+    "prior_native_LF": [
+      280,
+      280
+    ],
+    "native_LF": [
+      280,
+      280
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Uniform flat tax where flat or Minijob pension contributions are paid (covers wage tax, surcharge and church tax) | 2% | [§ 40a(2) EStG](https://www.gesetze-im-internet.de/estg/__40a.html) |",
+    "source_quote_ids": [
+      "A.FLATTAX"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "176",
+    "prior_row_id": 176,
+    "prior_native_LF": [
+      281,
+      281
+    ],
+    "native_LF": [
+      281,
+      281
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Flat tax on a Minijob without those contributions | 20% | § 40a(2a) EStG |",
+    "source_quote_ids": [
+      "A.FLATTAX"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "177",
+    "prior_row_id": 177,
+    "prior_native_LF": [
+      282,
+      282
+    ],
+    "native_LF": [
+      282,
+      282
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Flat tax for short-term staff | 25% | § 40a(1) EStG |",
+    "source_quote_ids": [
+      "A.FLATTAX"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "178",
+    "prior_row_id": 178,
+    "prior_native_LF": [
+      283,
+      283
+    ],
+    "native_LF": [
+      283,
+      283
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Short-term flat tax: work only occasional, not regularly recurring (\"gelegentlich, nicht regelmäßig wiederkehrend\"), not longer than 18 consecutive working days, and pay per working day on average not above | EUR 150 | § 40a(1) EStG (or the job is needed at once at an unforeseeable time) |",
+    "source_quote_ids": [
+      "A.FLATTAX"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "179",
+    "prior_row_id": 179,
+    "prior_native_LF": [
+      284,
+      284
+    ],
+    "native_LF": [
+      284,
+      284
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| No 25% (or farm 5%) flat tax if average pay per hour is above | EUR 19 | § 40a(4) no. 1 EStG; also barred where the same employer pays the person other wages taxed by the ELStAM (§ 40a(4) no. 2) |",
+    "source_quote_ids": [
+      "A.FLATTAX"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "180",
+    "prior_row_id": 180,
+    "prior_native_LF": [
+      285,
+      285
+    ],
+    "native_LF": [
+      285,
+      285
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Upper limit of the transition band, regular pay per month (all jobs together) | EUR 2,000 | [§ 20(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__20.html) |",
+    "source_quote_ids": [
+      "A.MIDI"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "181",
+    "prior_row_id": 181,
+    "prior_native_LF": [
+      286,
+      286
+    ],
+    "native_LF": [
+      286,
+      286
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Factor F is this value divided by the total contribution rate | 28% | § 20(2a) SGB IV |",
+    "source_quote_ids": [
+      "A.MIDI"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "182",
+    "prior_row_id": 182,
+    "prior_native_LF": [
+      287,
+      287
+    ],
+    "native_LF": [
+      287,
+      288
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Total contribution rate 2026: 18.6 + 3.6 + 2.6 + 14.6 + 2.9 | 42.3% | Derived from the rates table; § 20(2a) defines the sum |\n| Factor F 2026: 28 / 42.3 | 0.6619 | Derived from 28 / 42.3 = 0.6619385…, rounded to four decimals; § 20(2a) SGB IV requires four-decimal rounding. No separate Gazette acquisition is claimed |",
+    "source_quote_ids": [
+      "A.MIDI",
+      "A.PENSIONRATE",
+      "A.CARERATE",
+      "A.AVRATE",
+      "A.HRATE",
+      "A.AVERAGE",
+      "R67.BMG-rate"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "183",
+    "prior_row_id": 183,
+    "prior_native_LF": [
+      288,
+      288
+    ],
+    "native_LF": [
+      287,
+      288
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Total contribution rate 2026: 18.6 + 3.6 + 2.6 + 14.6 + 2.9 | 42.3% | Derived from the rates table; § 20(2a) defines the sum |\n| Factor F 2026: 28 / 42.3 | 0.6619 | Derived from 28 / 42.3 = 0.6619385…, rounded to four decimals; § 20(2a) SGB IV requires four-decimal rounding. No separate Gazette acquisition is claimed |",
+    "source_quote_ids": [
+      "A.MIDI",
+      "A.AVERAGE",
+      "R67.BMG-rate"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "184",
+    "prior_row_id": 184,
+    "prior_native_LF": [
+      289,
+      289
+    ],
+    "native_LF": [
+      289,
+      289
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "| Apprentices: employer bears the whole contribution if monthly pay is not above | EUR 325 | § 20(3) SGB IV |",
+    "source_quote_ids": [
+      "A.MIDI"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "185",
+    "prior_row_id": 185,
+    "prior_native_LF": [
+      291,
+      291
+    ],
+    "native_LF": [
+      291,
+      291
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "**Minijob rules**",
+    "source_quote_ids": [
+      "R62-70.MINI"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "186",
+    "prior_row_id": 186,
+    "prior_native_LF": [
+      293,
+      293
+    ],
+    "native_LF": [
+      293,
+      293
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "- **Regular pay.** The limit is on regular monthly pay. An unforeseeable overrun in not more than two calendar months within a twelve-month period, each time by up to the limit itself, does not end the Minijob ([§ 8(1b) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)).",
+    "source_quote_ids": [
+      "A.MINI"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "187",
+    "prior_row_id": 187,
+    "prior_native_LF": [
+      294,
+      294
+    ],
+    "native_LF": [
+      294,
+      294
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "- **Several jobs.** Several Minijobs are added together. One Minijob beside a main insured job stays separate; every further Minijob is added to the main job ([§ 8(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). If aggregation shows that the minor-employment conditions fail, insurance begins on the day the competent insurance decision is notified under § 8(2) SGB IV, unless the employer intentionally or grossly negligently failed to investigate the facts needed to assess insurance status. This is the specific aggregation rule, not a universal bar on retroactive insurance.",
+    "source_quote_ids": [
+      "A.MINI",
+      "R62-70.MINI"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "188",
+    "prior_row_id": 188,
+    "prior_native_LF": [
+      295,
+      295
+    ],
+    "native_LF": [
+      295,
+      295
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "- **Pension duty is the rule.** A Minijobber is compulsorily insured in pension insurance and pays the own share unless they apply, in writing or electronically, to be released ([§ 6(1b) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__6.html)). If released, the employer still pays its flat share.",
+    "source_quote_ids": [
+      "A.MINIRELEASE",
+      "A.RVOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "189",
+    "prior_row_id": 189,
+    "prior_native_LF": [
+      296,
+      296
+    ],
+    "native_LF": [
+      296,
+      296
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "- **Flat tax is an option.** The employer may instead tax the pay by the ELStAM. The 2% flat tax is collected by Deutsche Rentenversicherung Knappschaft-Bahn-See, the Minijob-Zentrale ([§ 40a(6) EStG](https://www.gesetze-im-internet.de/estg/__40a.html)); the 20% and 25% flat taxes are declared with the wage tax return.",
+    "source_quote_ids": [
+      "A.FLATTAX"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "190",
+    "prior_row_id": 190,
+    "prior_native_LF": [
+      297,
+      297
+    ],
+    "native_LF": [
+      297,
+      297
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "- **Short-term jobs.** A job limited in advance to three months or 70 working days in a calendar year, or 15 weeks or 90 working days for employment in an agricultural business is contribution-free unless done as a profession with pay above the Minijob limit ([§ 8(1) no. 2 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). The social insurance test and the 25% tax test are different tests.",
+    "source_quote_ids": [
+      "A.MINI",
+      "A.FLATTAX",
+      "R62-70.MINI"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "191",
+    "prior_row_id": 191,
+    "prior_native_LF": [
+      298,
+      298
+    ],
+    "native_LF": [
+      298,
+      298
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "- **No Aktivrente on a Minijob.**",
+    "source_quote_ids": [
+      "A.AKTWHO"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "192",
+    "prior_row_id": 192,
+    "prior_native_LF": [
+      300,
+      300
+    ],
+    "native_LF": [
+      300,
+      300
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "**Transition band (Midijob)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "193",
+    "prior_row_id": 193,
+    "prior_native_LF": [
+      302,
+      302
+    ],
+    "native_LF": [
+      302,
+      302
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "- Regular monthly pay above EUR 603 and not above EUR 2,000; with several jobs the total counts ([§ 20(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__20.html)).",
+    "source_quote_ids": [
+      "A.MINI",
+      "A.MIDI"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "194",
+    "prior_row_id": 194,
+    "prior_native_LF": [
+      303,
+      303
+    ],
+    "native_LF": [
+      303,
+      303
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "- Normal wage tax by the ELStAM.",
+    "source_quote_ids": [
+      "A.WITHHOLD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "195",
+    "prior_row_id": 195,
+    "prior_native_LF": [
+      304,
+      304
+    ],
+    "native_LF": [
+      304,
+      304
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "- Contributions are worked out on reduced bases by two formulas in § 20(2a) SGB IV: one for the total contribution, one for the employee's share, which is half of the contribution on the second base. The employer bears the rest ([§ 249(3) SGB V](https://www.gesetze-im-internet.de/sgb_5/__249.html), [§ 346(1a) SGB III](https://www.gesetze-im-internet.de/sgb_3/__346.html)). The statute page prints the formulas as images; take them from there or from payroll software, not from memory.",
+    "source_quote_ids": [
+      "A.MIDI",
+      "A.HSHARE",
+      "A.AVSHARE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "196",
+    "prior_row_id": 196,
+    "prior_native_LF": [
+      305,
+      305
+    ],
+    "native_LF": [
+      305,
+      305
+    ],
+    "section": "Minijobs, short-term jobs and the transition band",
+    "wording": "- Not for apprentices.",
+    "source_quote_ids": [
+      "A.MIDI"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "197",
+    "prior_row_id": 197,
+    "prior_native_LF": [
+      311,
+      311
+    ],
+    "native_LF": [
+      311,
+      311
+    ],
+    "section": "Payslip",
+    "wording": "- **Duty.** At every payment the employee gets a statement in text form showing at least the pay period and how pay is made up: kind and amount of surcharges, allowances, other pay, deductions, part payments and advances. None is needed if nothing has changed since the last proper one ([§ 108(1), (2) GewO](https://www.gesetze-im-internet.de/gewo/__108.html)).",
+    "source_quote_ids": [
+      "A.PAYSLIP"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "198",
+    "prior_row_id": 198,
+    "prior_native_LF": [
+      312,
+      312
+    ],
+    "native_LF": [
+      312,
+      312
+    ],
+    "section": "Payslip",
+    "wording": "- **Contents** of the pay certificate for every pay period ([§ 1 EBV](https://www.gesetze-im-internet.de/entgbv/__1.html), [§ 2 EBV](https://www.gesetze-im-internet.de/entgbv/__2.html)): employer name and address; employee name, address, date of birth and pension insurance number; start date (and end date on the last one); pay period with tax days and social insurance days; tax class and factor, child allowances, church tax data, any allowance or added amount, tax ID; contribution group key and collecting office; care code (0 childless, 1 to 5 children counted, a code for proven parenthood); transition band or multiple jobs where so; every item of pay and deduction by name and amount, regular or one-off, and whether it counts for taxable pay, social insurance gross and total gross; taxable pay, social insurance gross, total gross and flat-taxed pay by legal basis; wage tax, church tax and surcharge, and the employee's contributions, split regular and one-off; net pay; employer subsidies to voluntary or private insurance; other deductions such as advances or garnishments; the amount paid out. The employee may black out the church tax data.",
+    "source_quote_ids": [
+      "A.EBV",
+      "A.EBV2"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "199",
+    "prior_row_id": 199,
+    "prior_native_LF": [
+      316,
+      316
+    ],
+    "native_LF": [
+      316,
+      316
+    ],
+    "section": "Minimum wage",
+    "wording": "| What | 2026 | Source |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "200",
+    "prior_row_id": 200,
+    "prior_native_LF": [
+      318,
+      318
+    ],
+    "native_LF": [
+      318,
+      318
+    ],
+    "section": "Minimum wage",
+    "wording": "| Minimum wage per hour worked | EUR 13.90 | [MiLoV5](https://www.gesetze-im-internet.de/milov5/__1.html) |",
+    "source_quote_ids": [
+      "A.MINWAGE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "201",
+    "prior_row_id": 201,
+    "prior_native_LF": [
+      319,
+      319
+    ],
+    "native_LF": [
+      319,
+      319
+    ],
+    "section": "Minimum wage",
+    "wording": "| Paid at the agreed date, and at the latest | last bank working day (Frankfurt am Main) of the month after the work | [§ 2(1) MiLoG](https://www.gesetze-im-internet.de/milog/__2.html) |",
+    "source_quote_ids": [
+      "A.WAGEDUE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "202",
+    "prior_row_id": 202,
+    "prior_native_LF": [
+      320,
+      320
+    ],
+    "native_LF": [
+      320,
+      320
+    ],
+    "section": "Minimum wage",
+    "wording": "| Hours on a written working-time account, per month at most | 50% of contractual hours, balanced within twelve months | § 2(2) MiLoG |",
+    "source_quote_ids": [
+      "A.WAGEDUE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "203",
+    "prior_row_id": 203,
+    "prior_native_LF": [
+      321,
+      321
+    ],
+    "native_LF": [
+      321,
+      321
+    ],
+    "section": "Minimum wage",
+    "wording": "| Working-time records for Minijobs, short-term jobs and § 2a SchwarzArbG sectors | start, end and length by the seventh day after the work; keep at least two years | [§ 17(1) MiLoG](https://www.gesetze-im-internet.de/milog/__17.html) |",
+    "source_quote_ids": [
+      "A.TIMERECORD"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "204",
+    "prior_row_id": 204,
+    "prior_native_LF": [
+      323,
+      323
+    ],
+    "native_LF": [
+      323,
+      323
+    ],
+    "section": "Minimum wage",
+    "wording": "Not covered by the minimum wage ([§ 22 MiLoG](https://www.gesetze-im-internet.de/milog/__22.html)): under-18s without completed vocational training; apprentices; volunteers; compulsory internships, and orientation internships of up to three months and training- or study-accompanying internships of up to three months only if no such prior internship with the same trainer/employer existed; formerly long-term unemployed people in their first six months. Sector minimum wages can be higher.",
+    "source_quote_ids": [
+      "A.MINEXCEPT",
+      "R62-70.MINEXCEPT"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "205",
+    "prior_row_id": 205,
+    "prior_native_LF": [
+      327,
+      327
+    ],
+    "native_LF": [
+      327,
+      327
+    ],
+    "section": "Tax-free night, Sunday and holiday surcharges",
+    "wording": "| Surcharge on basic pay, for work actually done, paid on top of basic pay | Tax-free up to | Source |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "206",
+    "prior_row_id": 206,
+    "prior_native_LF": [
+      329,
+      329
+    ],
+    "native_LF": [
+      329,
+      329
+    ],
+    "section": "Tax-free night, Sunday and holiday surcharges",
+    "wording": "| Night work, 20:00 to 06:00 | 25% | [§ 3b EStG](https://www.gesetze-im-internet.de/estg/__3b.html) |",
+    "source_quote_ids": [
+      "A.NIGHT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "207",
+    "prior_row_id": 207,
+    "prior_native_LF": [
+      330,
+      330
+    ],
+    "native_LF": [
+      330,
+      330
+    ],
+    "section": "Tax-free night, Sunday and holiday surcharges",
+    "wording": "| Night work 00:00 to 04:00, if the shift began before midnight | 40% | § 3b(3) EStG |",
+    "source_quote_ids": [
+      "A.NIGHT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "208",
+    "prior_row_id": 208,
+    "prior_native_LF": [
+      331,
+      331
+    ],
+    "native_LF": [
+      331,
+      331
+    ],
+    "section": "Tax-free night, Sunday and holiday surcharges",
+    "wording": "| Sunday work | 50% | § 3b(1) EStG |",
+    "source_quote_ids": [
+      "A.NIGHT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "209",
+    "prior_row_id": 209,
+    "prior_native_LF": [
+      332,
+      332
+    ],
+    "native_LF": [
+      332,
+      332
+    ],
+    "section": "Tax-free night, Sunday and holiday surcharges",
+    "wording": "| Public holidays, and 31 December from 14:00 | 125% | § 3b(1) EStG |",
+    "source_quote_ids": [
+      "A.NIGHT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "210",
+    "prior_row_id": 210,
+    "prior_native_LF": [
+      333,
+      333
+    ],
+    "native_LF": [
+      333,
+      333
+    ],
+    "section": "Tax-free night, Sunday and holiday surcharges",
+    "wording": "| 24 December from 14:00, 25 and 26 December, 1 May | 150% | § 3b(1) EStG |",
+    "source_quote_ids": [
+      "A.NIGHT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "211",
+    "prior_row_id": 211,
+    "prior_native_LF": [
+      334,
+      334
+    ],
+    "native_LF": [
+      334,
+      334
+    ],
+    "section": "Tax-free night, Sunday and holiday surcharges",
+    "wording": "| Hourly basic pay counted for the tax exemption, at most | EUR 50 | § 3b(2) EStG |",
+    "source_quote_ids": [
+      "A.NIGHT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "212",
+    "prior_row_id": 212,
+    "prior_native_LF": [
+      335,
+      335
+    ],
+    "native_LF": [
+      335,
+      335
+    ],
+    "section": "Tax-free night, Sunday and holiday surcharges",
+    "wording": "| Contribution exemption for an otherwise qualifying tax-free surcharge: applies to the part based on hourly basic pay up to this amount; the excess part remains contributory | EUR 25 | [§ 1(1) no. 1 SvEV](https://www.gesetze-im-internet.de/svev/__1.html) |",
+    "source_quote_ids": [
+      "A.NIGHTSV",
+      "R62-70.NIGHT",
+      "R62-70.NIGHTSV"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "213",
+    "prior_row_id": 213,
+    "prior_native_LF": [
+      337,
+      337
+    ],
+    "native_LF": [
+      337,
+      337
+    ],
+    "section": "Tax-free night, Sunday and holiday surcharges",
+    "wording": "The two caps differ: a surcharge can be tax-free and still carry contributions. Public holidays are those at the place of work. Sunday and holiday work also includes 00:00–04:00 on the following day if the night work began before midnight (§ 3b(3) no. 2 EStG). With EUR 30 hourly basic pay and an otherwise qualifying 25% night premium, EUR 7.50 is tax-free within the EUR 50 tax ceiling; EUR 6.25 is contribution-free and EUR 1.25 remains contributory. Actual work, additional payment and applicable statutory percentage gates still apply.",
+    "source_quote_ids": [
+      "A.NIGHT",
+      "A.NIGHTSV",
+      "R62-70.NIGHT",
+      "R62-70.NIGHTSV"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "214",
+    "prior_row_id": 214,
+    "prior_native_LF": [
+      341,
+      341
+    ],
+    "native_LF": [
+      341,
+      341
+    ],
+    "section": "Sick pay and the maternity top-up",
+    "wording": "- **Continued pay in sickness.** For incapacity due to sickness without employee fault, up to six weeks per incapacity, at the pay for regular working time without overtime pay, once the job has lasted four weeks without a break. The same illness again gives a new six weeks only after six months without incapacity from it, or twelve months after the first incapacity from it began ([§ 3 EntgFG](https://www.gesetze-im-internet.de/entgfg/__3.html), [§ 4 EntgFG](https://www.gesetze-im-internet.de/entgfg/__4.html)). Small employers in U1 get part of it back (80% under the statute). Under § 4(1a) EntgFG, additional overtime pay is excluded, as are expense reimbursements contingent on actual expenses that do not arise during incapacity. For performance-related remuneration, use the average earnings achievable during the employee's applicable regular working time.",
+    "source_quote_ids": [
+      "A.SICK",
+      "A.SICKPAY",
+      "A.AAG",
+      "R62-70.SICK",
+      "R62-70.SICKPAY"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "215",
+    "prior_row_id": 215,
+    "prior_native_LF": [
+      342,
+      342
+    ],
+    "native_LF": [
+      342,
+      342
+    ],
+    "section": "Sick pay and the maternity top-up",
+    "wording": "- **Maternity top-up.** For the protection periods before and after the birth and the day of birth, the employer pays the difference between EUR 13 and the average net pay per calendar day of the last three settled months before the protection period ([§ 20(1) MuSchG](https://www.gesetze-im-internet.de/muschg_2018/__20.html)). With several employers, each pays its share. U2 refunds it in full ([§ 1(2) AAG](https://www.gesetze-im-internet.de/aufag/__1.html)).",
+    "source_quote_ids": [
+      "A.MATERNITY",
+      "A.AAG"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "216",
+    "prior_row_id": 216,
+    "prior_native_LF": [
+      346,
+      346
+    ],
+    "native_LF": [
+      346,
+      346
+    ],
+    "section": "Boundaries and exceptions",
+    "wording": "| Situation | Rule | Source |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "217",
+    "prior_row_id": 217,
+    "prior_native_LF": [
+      348,
+      348
+    ],
+    "native_LF": [
+      348,
+      348
+    ],
+    "section": "Boundaries and exceptions",
+    "wording": "| Monthly pay exactly EUR 603 | Minijob (\"nicht übersteigt\"); from EUR 603.01 transition band | § 8(1) no. 1 and § 20(2) SGB IV |",
+    "source_quote_ids": [
+      "A.MINI",
+      "A.MIDI"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "218",
+    "prior_row_id": 218,
+    "prior_native_LF": [
+      349,
+      349
+    ],
+    "native_LF": [
+      349,
+      349
+    ],
+    "section": "Boundaries and exceptions",
+    "wording": "| Monthly pay exactly EUR 2,000 | Still transition band (\"nicht übersteigen\") | § 20(2) SGB IV |",
+    "source_quote_ids": [
+      "A.MIDI"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "219",
+    "prior_row_id": 219,
+    "prior_native_LF": [
+      350,
+      350
+    ],
+    "native_LF": [
+      350,
+      350
+    ],
+    "section": "Boundaries and exceptions",
+    "wording": "| Wage tax for the previous year exactly EUR 1,080 | Yearly return; above it quarterly | § 41a(2) EStG |",
+    "source_quote_ids": [
+      "A.FILING"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "220",
+    "prior_row_id": 220,
+    "prior_native_LF": [
+      351,
+      351
+    ],
+    "native_LF": [
+      351,
+      351
+    ],
+    "section": "Boundaries and exceptions",
+    "wording": "| Wage tax for the previous year exactly EUR 5,000 | Quarterly return; above it monthly | § 41a(2) EStG |",
+    "source_quote_ids": [
+      "A.FILING"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "221",
+    "prior_row_id": 221,
+    "prior_native_LF": [
+      352,
+      352
+    ],
+    "native_LF": [
+      352,
+      352
+    ],
+    "section": "Boundaries and exceptions",
+    "wording": "| Business did not exist all last year | Convert last year's wage tax to a full year; a new business uses the first full month times 12 | § 41a(2) EStG |",
+    "source_quote_ids": [
+      "A.FILING"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "222",
+    "prior_row_id": 222,
+    "prior_native_LF": [
+      353,
+      353
+    ],
+    "native_LF": [
+      353,
+      353
+    ],
+    "section": "Boundaries and exceptions",
+    "wording": "| Surcharge base exactly at the limit | No surcharge (\"übersteigt\") | § 3(3) SolzG |",
+    "source_quote_ids": [
+      "A.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "223",
+    "prior_row_id": 223,
+    "prior_native_LF": [
+      354,
+      354
+    ],
+    "native_LF": [
+      354,
+      354
+    ],
+    "section": "Boundaries and exceptions",
+    "wording": "| Employee turns 23 in the month | Surcharge from the month after | § 55(3) SGB XI |",
+    "source_quote_ids": [
+      "A.CAREPROOF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "224",
+    "prior_row_id": 224,
+    "prior_native_LF": [
+      355,
+      355
+    ],
+    "native_LF": [
+      355,
+      355
+    ],
+    "section": "Boundaries and exceptions",
+    "wording": "| Child turns 25 in the month | Reduction until the end of that month | § 55(3) SGB XI |",
+    "source_quote_ids": [
+      "A.CAREPROOF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "225",
+    "prior_row_id": 225,
+    "prior_native_LF": [
+      356,
+      356
+    ],
+    "native_LF": [
+      356,
+      356
+    ],
+    "section": "Boundaries and exceptions",
+    "wording": "| Standard retirement age reached in April | Aktivrente from May | § 3 no. 21 EStG |",
+    "source_quote_ids": [
+      "A.AKT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "226",
+    "prior_row_id": 226,
+    "prior_native_LF": [
+      357,
+      357
+    ],
+    "native_LF": [
+      357,
+      357
+    ],
+    "section": "Boundaries and exceptions",
+    "wording": "| Employer with exactly 30 employees | Still in U1 (\"nicht mehr als 30\") | § 1(1) AAG |",
+    "source_quote_ids": [
+      "A.AAG"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "227",
+    "prior_row_id": 227,
+    "prior_native_LF": [
+      358,
+      358
+    ],
+    "native_LF": [
+      358,
+      358
+    ],
+    "section": "Boundaries and exceptions",
+    "wording": "| Employer with ten or more employees on 31 December | Annual adjustment compulsory, unless barred | § 42b(1) EStG |",
+    "source_quote_ids": [
+      "A.ADJUST"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "228",
+    "prior_row_id": 228,
+    "prior_native_LF": [
+      359,
+      359
+    ],
+    "native_LF": [
+      359,
+      359
+    ],
+    "section": "Boundaries and exceptions",
+    "wording": "| Annual adjustment allowed and barred | Only for employees employed by this employer for the whole year. Barred (§ 42b(1) sentence 3 nos. 1 to 6): the employee applies against it; classes V or VI in the year; II, III or IV for only part of the year; an allowance or added amount; the factor method; in the year short-time pay, qualification pay, a maternity pay top-up, compensation under the Infection Protection Act, § 3 no. 21 pay, or § 3 no. 28 or 28a top-ups; at least one capital letter U; Vorsorgepauschale parts only for part of the year, or a change of the additional rate; different care insurance reductions in the year; foreign employment income without German wage tax | [§ 42b(1) EStG](https://www.gesetze-im-internet.de/estg/__42b.html) |",
+    "source_quote_ids": [
+      "A.ADJUST"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "229",
+    "prior_row_id": 229,
+    "prior_native_LF": [
+      360,
+      360
+    ],
+    "native_LF": [
+      360,
+      360
+    ],
+    "section": "Boundaries and exceptions",
+    "wording": "| Late payment of wage tax by up to three days | No late-payment surcharge, except for payment in cash or by cheque (§ 224(2) no. 1 AO) | § 240(3) AO |",
+    "source_quote_ids": [
+      "A.AO240-1"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "230",
+    "prior_row_id": 230,
+    "prior_native_LF": [
+      361,
+      361
+    ],
+    "native_LF": [
+      361,
+      361
+    ],
+    "section": "Boundaries and exceptions",
+    "wording": "| Deadline falls on a Saturday, Sunday or public holiday | Moves to the next working day | [§ 108(3) AO](https://www.gesetze-im-internet.de/ao_1977/__108.html) |",
+    "source_quote_ids": [
+      "A.AO108"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "231",
+    "prior_row_id": 231,
+    "prior_native_LF": [
+      365,
+      365
+    ],
+    "native_LF": [
+      365,
+      365
+    ],
+    "section": "Worked cases",
+    "wording": "Assumed inputs are labelled. Every other number comes from the tables above. Contributions are rounded to the cent.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "232",
+    "prior_row_id": 232,
+    "prior_native_LF": [
+      369,
+      369
+    ],
+    "native_LF": [
+      369,
+      369
+    ],
+    "section": "Case 1: class I, EUR 5,000 a month, childless, outside Saxony",
+    "wording": "| Item | Working | Amount |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.PAPTABLE60",
+      "A.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "233",
+    "prior_row_id": 233,
+    "prior_native_LF": [
+      371,
+      371
+    ],
+    "native_LF": [
+      371,
+      371
+    ],
+    "section": "Case 1: class I, EUR 5,000 a month, childless, outside Saxony",
+    "wording": "| Assumed inputs | age 30, no church, no children, place of employment in Hesse, fund additional rate 2.9%, EUR 60,000 for the year, no one-time payments | |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.PAPTABLE60",
+      "A.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "234",
+    "prior_row_id": 234,
+    "prior_native_LF": [
+      372,
+      372
+    ],
+    "native_LF": [
+      372,
+      372
+    ],
+    "section": "Case 1: class I, EUR 5,000 a month, childless, outside Saxony",
+    "wording": "| Wage tax for the year | [PAP 2026 test table](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2), class I at EUR 60,000 (built with the same inputs); withhold one twelfth a month | EUR 9,389 |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.PAPTABLE60",
+      "A.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "235",
+    "prior_row_id": 235,
+    "prior_native_LF": [
+      373,
+      373
+    ],
+    "native_LF": [
+      373,
+      373
+    ],
+    "section": "Case 1: class I, EUR 5,000 a month, childless, outside Saxony",
+    "wording": "| Solidarity surcharge | Wage tax below EUR 20,350 | none |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.PAPTABLE60",
+      "A.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "236",
+    "prior_row_id": 236,
+    "prior_native_LF": [
+      374,
+      374
+    ],
+    "native_LF": [
+      374,
+      374
+    ],
+    "section": "Case 1: class I, EUR 5,000 a month, childless, outside Saxony",
+    "wording": "| Base, all branches | Below both monthly ceilings | EUR 5,000 |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.PAPTABLE60",
+      "A.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "237",
+    "prior_row_id": 237,
+    "prior_native_LF": [
+      375,
+      375
+    ],
+    "native_LF": [
+      375,
+      375
+    ],
+    "section": "Case 1: class I, EUR 5,000 a month, childless, outside Saxony",
+    "wording": "| Employee pension | 9.3% | EUR 465.00 |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.PAPTABLE60",
+      "A.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "238",
+    "prior_row_id": 238,
+    "prior_native_LF": [
+      376,
+      376
+    ],
+    "native_LF": [
+      376,
+      376
+    ],
+    "section": "Case 1: class I, EUR 5,000 a month, childless, outside Saxony",
+    "wording": "| Employee unemployment | 1.3% | EUR 65.00 |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.PAPTABLE60",
+      "A.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "239",
+    "prior_row_id": 239,
+    "prior_native_LF": [
+      377,
+      377
+    ],
+    "native_LF": [
+      377,
+      377
+    ],
+    "section": "Case 1: class I, EUR 5,000 a month, childless, outside Saxony",
+    "wording": "| Employee health | (14.6% + 2.9%) / 2 = 8.75% | EUR 437.50 |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.PAPTABLE60",
+      "A.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "240",
+    "prior_row_id": 240,
+    "prior_native_LF": [
+      378,
+      378
+    ],
+    "native_LF": [
+      378,
+      378
+    ],
+    "section": "Case 1: class I, EUR 5,000 a month, childless, outside Saxony",
+    "wording": "| Employee care | Childless, 2.4% | EUR 120.00 |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.PAPTABLE60",
+      "A.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "241",
+    "prior_row_id": 241,
+    "prior_native_LF": [
+      379,
+      379
+    ],
+    "native_LF": [
+      379,
+      379
+    ],
+    "section": "Case 1: class I, EUR 5,000 a month, childless, outside Saxony",
+    "wording": "| Employee total | Sum of the four | EUR 1,087.50 |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.PAPTABLE60",
+      "A.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "242",
+    "prior_row_id": 242,
+    "prior_native_LF": [
+      380,
+      380
+    ],
+    "native_LF": [
+      380,
+      380
+    ],
+    "section": "Case 1: class I, EUR 5,000 a month, childless, outside Saxony",
+    "wording": "| Employer | Pension EUR 465.00, unemployment EUR 65.00, health EUR 437.50, care 1.8% = EUR 90.00, insolvency levy 0.15% | EUR 7.50 levy, plus U1 and U2 at the fund's rates |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.PAPTABLE60",
+      "A.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "243",
+    "prior_row_id": 243,
+    "prior_native_LF": [
+      384,
+      384
+    ],
+    "native_LF": [
+      384,
+      384
+    ],
+    "section": "Case 2: class III, EUR 9,000 a month, two children, Bavaria, church member",
+    "wording": "| Item | Working ([SVBezGrV 2026](https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3) ceilings) | Amount |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.KVVOL",
+      "A.CHILDBASE",
+      "A.CHURCHRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "244",
+    "prior_row_id": 244,
+    "prior_native_LF": [
+      386,
+      386
+    ],
+    "native_LF": [
+      386,
+      386
+    ],
+    "section": "Case 2: class III, EUR 9,000 a month, two children, Bavaria, church member",
+    "wording": "| Assumed inputs | spouse in class V, children aged 8 and 12, place of employment Munich, fund additional rate 2.5%. Pay is above the JAEG of EUR 6,450 a month, so the employee is assumed to be a voluntary member of a statutory fund; the employee owes the whole health contribution to the fund and the employer pays, as a subsidy, what it would bear under compulsory insurance ([§ 257(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__257.html)); the net shares below are the same | |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.KVVOL",
+      "A.CHILDBASE",
+      "A.CHURCHRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "245",
+    "prior_row_id": 245,
+    "prior_native_LF": [
+      387,
+      387
+    ],
+    "native_LF": [
+      387,
+      387
+    ],
+    "section": "Case 2: class III, EUR 9,000 a month, two children, Bavaria, church member",
+    "wording": "| Employee pension | Capped at EUR 8,450; 9.3% | EUR 785.85 |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.KVVOL",
+      "A.CHILDBASE",
+      "A.CHURCHRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "246",
+    "prior_row_id": 246,
+    "prior_native_LF": [
+      388,
+      388
+    ],
+    "native_LF": [
+      388,
+      388
+    ],
+    "section": "Case 2: class III, EUR 9,000 a month, two children, Bavaria, church member",
+    "wording": "| Employee unemployment | EUR 8,450 at 1.3% | EUR 109.85 |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.KVVOL",
+      "A.CHILDBASE",
+      "A.CHURCHRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "247",
+    "prior_row_id": 247,
+    "prior_native_LF": [
+      389,
+      389
+    ],
+    "native_LF": [
+      389,
+      389
+    ],
+    "section": "Case 2: class III, EUR 9,000 a month, two children, Bavaria, church member",
+    "wording": "| Employee health | Capped at EUR 5,812.50; (14.6% + 2.5%) / 2 = 8.55% | EUR 496.97 |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.KVVOL",
+      "A.CHILDBASE",
+      "A.CHURCHRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "248",
+    "prior_row_id": 248,
+    "prior_native_LF": [
+      390,
+      390
+    ],
+    "native_LF": [
+      390,
+      390
+    ],
+    "section": "Case 2: class III, EUR 9,000 a month, two children, Bavaria, church member",
+    "wording": "| Employee care | EUR 5,812.50 at 1.55% (two children under 25) | EUR 90.09 |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.KVVOL",
+      "A.CHILDBASE",
+      "A.CHURCHRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "249",
+    "prior_row_id": 249,
+    "prior_native_LF": [
+      391,
+      391
+    ],
+    "native_LF": [
+      391,
+      391
+    ],
+    "section": "Case 2: class III, EUR 9,000 a month, two children, Bavaria, church member",
+    "wording": "| Employer | Pension EUR 785.85, unemployment EUR 109.85, health EUR 496.97; care EUR 5,812.50 at 1.8% | EUR 104.63 care |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.KVVOL",
+      "A.CHILDBASE",
+      "A.CHURCHRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "250",
+    "prior_row_id": 250,
+    "prior_native_LF": [
+      392,
+      392
+    ],
+    "native_LF": [
+      392,
+      392
+    ],
+    "section": "Case 2: class III, EUR 9,000 a month, two children, Bavaria, church member",
+    "wording": "| Wage tax | Splitting through the PAP; the two counters (EUR 9,756 each) lower only the surcharge and church tax base; church tax at the Bavarian rate (8%, check) on BK. The test table does not fit: it assumes the childless surcharge | run the PAP |",
+    "source_quote_ids": [
+      "A.PENSIONRATE",
+      "A.PENSIONSHARE",
+      "A.HRATE",
+      "A.HSHARE",
+      "A.CARERATE",
+      "A.CAREPROOF",
+      "A.CARESHARE",
+      "A.AVRATE",
+      "A.AVSHARE",
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.INSOLVENCY",
+      "A.KVVOL",
+      "A.CHILDBASE",
+      "A.CHURCHRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "251",
+    "prior_row_id": 251,
+    "prior_native_LF": [
+      396,
+      396
+    ],
+    "native_LF": [
+      396,
+      396
+    ],
+    "section": "Case 3: commercial Minijob at the limit",
+    "wording": "| Item | Working ([§ 249b SGB V](https://www.gesetze-im-internet.de/sgb_5/__249b.html), [§ 172(3) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__172.html), [§ 40a(2) EStG](https://www.gesetze-im-internet.de/estg/__40a.html)) | Amount |",
+    "source_quote_ids": [
+      "A.MINI",
+      "A.MINIKV",
+      "A.RVOLD",
+      "A.FLATTAX",
+      "A.PENSIONRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "252",
+    "prior_row_id": 252,
+    "prior_native_LF": [
+      398,
+      398
+    ],
+    "native_LF": [
+      398,
+      398
+    ],
+    "section": "Case 3: commercial Minijob at the limit",
+    "wording": "| Assumed inputs | EUR 603 a month, statutory health insurance, no release from pension insurance, 2% flat tax | |",
+    "source_quote_ids": [
+      "A.MINI",
+      "A.MINIKV",
+      "A.RVOLD",
+      "A.FLATTAX",
+      "A.PENSIONRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "253",
+    "prior_row_id": 253,
+    "prior_native_LF": [
+      399,
+      399
+    ],
+    "native_LF": [
+      399,
+      399
+    ],
+    "section": "Case 3: commercial Minijob at the limit",
+    "wording": "| Employer health | 13% of EUR 603 | EUR 78.39 |",
+    "source_quote_ids": [
+      "A.MINI",
+      "A.MINIKV",
+      "A.RVOLD",
+      "A.FLATTAX",
+      "A.PENSIONRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "254",
+    "prior_row_id": 254,
+    "prior_native_LF": [
+      400,
+      400
+    ],
+    "native_LF": [
+      400,
+      400
+    ],
+    "section": "Case 3: commercial Minijob at the limit",
+    "wording": "| Employer pension | 15% | EUR 90.45 |",
+    "source_quote_ids": [
+      "A.MINI",
+      "A.MINIKV",
+      "A.RVOLD",
+      "A.FLATTAX",
+      "A.PENSIONRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "255",
+    "prior_row_id": 255,
+    "prior_native_LF": [
+      401,
+      401
+    ],
+    "native_LF": [
+      401,
+      401
+    ],
+    "section": "Case 3: commercial Minijob at the limit",
+    "wording": "| Employer flat tax | 2% | EUR 12.06 |",
+    "source_quote_ids": [
+      "A.MINI",
+      "A.MINIKV",
+      "A.RVOLD",
+      "A.FLATTAX",
+      "A.PENSIONRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "256",
+    "prior_row_id": 256,
+    "prior_native_LF": [
+      402,
+      402
+    ],
+    "native_LF": [
+      402,
+      402
+    ],
+    "section": "Case 3: commercial Minijob at the limit",
+    "wording": "| Minijobber's pension share, deducted | 3.6% | EUR 21.71 |",
+    "source_quote_ids": [
+      "A.MINI",
+      "A.MINIKV",
+      "A.RVOLD",
+      "A.FLATTAX",
+      "A.PENSIONRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "257",
+    "prior_row_id": 257,
+    "prior_native_LF": [
+      403,
+      403
+    ],
+    "native_LF": [
+      403,
+      403
+    ],
+    "section": "Case 3: commercial Minijob at the limit",
+    "wording": "| At EUR 603.01 | Transition band: normal wage tax by the ELStAM, reduced contributions under § 20(2a) SGB IV | n/a |",
+    "source_quote_ids": [
+      "A.MINI",
+      "A.MINIKV",
+      "A.RVOLD",
+      "A.FLATTAX",
+      "A.PENSIONRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "258",
+    "prior_row_id": 258,
+    "prior_native_LF": [
+      407,
+      407
+    ],
+    "native_LF": [
+      407,
+      407
+    ],
+    "section": "Case 4: second job in class VI, and the ministry's test table",
+    "wording": "| Annual gross pay ([PAP 2026, \"Prüftabelle\"](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2)) | Class I (= IV) | Class II | Class III | Class V | Class VI |",
+    "source_quote_ids": [
+      "A.PAPTABLE20",
+      "A.PAPTABLE60",
+      "A.PAPTABLE100",
+      "A.FILE2",
+      "A.SEVERAL",
+      "A.CHILDBASE",
+      "A.SoliRate"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "259",
+    "prior_row_id": 259,
+    "prior_native_LF": [
+      409,
+      409
+    ],
+    "native_LF": [
+      409,
+      409
+    ],
+    "section": "Case 4: second job in class VI, and the ministry's test table",
+    "wording": "| EUR 20,000 | EUR 380 | EUR 0 | EUR 0 | EUR 2,234 | EUR 2,766 |",
+    "source_quote_ids": [
+      "A.PAPTABLE20",
+      "A.PAPTABLE60",
+      "A.PAPTABLE100",
+      "A.FILE2",
+      "A.SEVERAL",
+      "A.CHILDBASE",
+      "A.SoliRate"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "260",
+    "prior_row_id": 260,
+    "prior_native_LF": [
+      410,
+      410
+    ],
+    "native_LF": [
+      410,
+      410
+    ],
+    "section": "Case 4: second job in class VI, and the ministry's test table",
+    "wording": "| EUR 60,000 | EUR 9,389 | EUR 8,091 | EUR 4,822 | EUR 15,364 | EUR 15,895 |",
+    "source_quote_ids": [
+      "A.PAPTABLE20",
+      "A.PAPTABLE60",
+      "A.PAPTABLE100",
+      "A.FILE2",
+      "A.SEVERAL",
+      "A.CHILDBASE",
+      "A.SoliRate"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "261",
+    "prior_row_id": 261,
+    "prior_native_LF": [
+      411,
+      411
+    ],
+    "native_LF": [
+      411,
+      411
+    ],
+    "section": "Case 4: second job in class VI, and the ministry's test table",
+    "wording": "| EUR 100,000 | EUR 23,248 | EUR 21,634 | EUR 15,012 | EUR 30,157 | EUR 30,689 |",
+    "source_quote_ids": [
+      "A.PAPTABLE20",
+      "A.PAPTABLE60",
+      "A.PAPTABLE100",
+      "A.FILE2",
+      "A.SEVERAL",
+      "A.CHILDBASE",
+      "A.SoliRate"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "262",
+    "prior_row_id": 262,
+    "prior_native_LF": [
+      413,
+      413
+    ],
+    "native_LF": [
+      413,
+      413
+    ],
+    "section": "Case 4: second job in class VI, and the ministry's test table",
+    "wording": "The table is built with ALV, KRV and PKV = 0, KVZ = 2,90 and the childless surcharge (class II without it). Software implementing the [2026 PAP](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2) must reproduce it, and should also pass these checks: the wage tax is the same with and without child counters, while the surcharge and BK never rise with them; the class V tax is never below 14% of the taxable amount and is above class I in every row; pay above both ceilings changes no contribution; a surcharge base just above the limit gives 11.9% of the excess, below 5.5% of the base, and nothing at or below the limit.",
+    "source_quote_ids": [
+      "A.PAPTABLE20",
+      "A.PAPTABLE60",
+      "A.PAPTABLE100",
+      "A.FILE2",
+      "A.SEVERAL",
+      "A.CHILDBASE",
+      "A.SoliRate"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "263",
+    "prior_row_id": 263,
+    "prior_native_LF": [
+      415,
+      415
+    ],
+    "native_LF": [
+      415,
+      415
+    ],
+    "section": "Case 4: second job in class VI, and the ministry's test table",
+    "wording": "Second job (assumed: main job elsewhere, EUR 20,000 a year here): the table row gives the class VI tax against the class I tax at the same pay. Wages from two employers at once oblige the employee to file a return ([§ 46(2) no. 2 EStG](https://www.gesetze-im-internet.de/estg/__46.html)). If both jobs together pass a ceiling, both pays are reduced in proportion ([§ 22(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__22.html)).",
+    "source_quote_ids": [
+      "A.PAPTABLE20",
+      "A.PAPTABLE60",
+      "A.PAPTABLE100",
+      "A.FILE2",
+      "A.SEVERAL",
+      "A.CHILDBASE",
+      "A.SoliRate"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "264",
+    "prior_row_id": 264,
+    "prior_native_LF": [
+      419,
+      419
+    ],
+    "native_LF": [
+      419,
+      419
+    ],
+    "section": "Case 5: Aktivrente from May 2026",
+    "wording": "| Item | Working ([§ 3 no. 21 EStG](https://www.gesetze-im-internet.de/estg/__3.html), [ministry FAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/FAQ-zur-Aktivrente.html)) | Amount |",
+    "source_quote_ids": [
+      "A.AKT",
+      "A.AKTPART",
+      "A.AKTHOW",
+      "A.AKTPAYROLL"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "265",
+    "prior_row_id": 265,
+    "prior_native_LF": [
+      421,
+      421
+    ],
+    "native_LF": [
+      421,
+      421
+    ],
+    "section": "Case 5: Aktivrente from May 2026",
+    "wording": "| Assumed inputs | standard retirement age reached in April 2026; works on at EUR 2,500 a month; the employer owes pension contributions for the job | |",
+    "source_quote_ids": [
+      "A.AKT",
+      "A.AKTPART",
+      "A.AKTHOW",
+      "A.AKTPAYROLL"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "266",
+    "prior_row_id": 266,
+    "prior_native_LF": [
+      422,
+      422
+    ],
+    "native_LF": [
+      422,
+      422
+    ],
+    "section": "Case 5: Aktivrente from May 2026",
+    "wording": "| January to April | Normal wage tax on EUR 2,500 | taxed |",
+    "source_quote_ids": [
+      "A.AKT",
+      "A.AKTPART",
+      "A.AKTHOW",
+      "A.AKTPAYROLL"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "267",
+    "prior_row_id": 267,
+    "prior_native_LF": [
+      423,
+      423
+    ],
+    "native_LF": [
+      423,
+      423
+    ],
+    "section": "Case 5: Aktivrente from May 2026",
+    "wording": "| May to December, tax-free per month | Up to EUR 2,000 | EUR 2,000 |",
+    "source_quote_ids": [
+      "A.AKT",
+      "A.AKTPART",
+      "A.AKTHOW",
+      "A.AKTPAYROLL"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "268",
+    "prior_row_id": 268,
+    "prior_native_LF": [
+      424,
+      424
+    ],
+    "native_LF": [
+      424,
+      424
+    ],
+    "section": "Case 5: Aktivrente from May 2026",
+    "wording": "| May to December, taxed per month | EUR 2,500 less EUR 2,000 | EUR 500 |",
+    "source_quote_ids": [
+      "A.AKT",
+      "A.AKTPART",
+      "A.AKTHOW",
+      "A.AKTPAYROLL"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "269",
+    "prior_row_id": 269,
+    "prior_native_LF": [
+      425,
+      425
+    ],
+    "native_LF": [
+      425,
+      425
+    ],
+    "section": "Case 5: Aktivrente from May 2026",
+    "wording": "| Yearly room | EUR 24,000 less four twelfths | EUR 16,000 |",
+    "source_quote_ids": [
+      "A.AKT",
+      "A.AKTPART",
+      "A.AKTHOW",
+      "A.AKTPAYROLL"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "270",
+    "prior_row_id": 270,
+    "prior_native_LF": [
+      426,
+      426
+    ],
+    "native_LF": [
+      426,
+      426
+    ],
+    "section": "Case 5: Aktivrente from May 2026",
+    "wording": "| FAQ variant: pay EUR 1,500, December bonus EUR 800 | Tax-free part of the bonus: EUR 2,000 less EUR 1,500 | EUR 500 |",
+    "source_quote_ids": [
+      "A.AKT",
+      "A.AKTPART",
+      "A.AKTHOW",
+      "A.AKTPAYROLL"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "271",
+    "prior_row_id": 271,
+    "prior_native_LF": [
+      427,
+      427
+    ],
+    "native_LF": [
+      427,
+      427
+    ],
+    "section": "Case 5: Aktivrente from May 2026",
+    "wording": "| FAQ variant: taxed part of the bonus | EUR 1,500 + EUR 800 less EUR 2,000 | EUR 300 |",
+    "source_quote_ids": [
+      "A.AKT",
+      "A.AKTPART",
+      "A.AKTHOW",
+      "A.AKTPAYROLL"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "272",
+    "prior_row_id": 272,
+    "prior_native_LF": [
+      428,
+      428
+    ],
+    "native_LF": [
+      428,
+      428
+    ],
+    "section": "Case 5: Aktivrente from May 2026",
+    "wording": "| Contributions | Due in full; the exemption is for tax only | unchanged |",
+    "source_quote_ids": [
+      "A.AKT",
+      "A.AKTPART",
+      "A.AKTHOW",
+      "A.AKTPAYROLL"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "273",
+    "prior_row_id": 273,
+    "prior_native_LF": [
+      432,
+      432
+    ],
+    "native_LF": [
+      432,
+      432
+    ],
+    "section": "Case 6: filing period, deadlines and late payment",
+    "wording": "| Item | Working | Amount or date |",
+    "source_quote_ids": [
+      "A.FILING",
+      "A.AO108",
+      "A.AO240-1",
+      "A.SVLATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "274",
+    "prior_row_id": 274,
+    "prior_native_LF": [
+      434,
+      434
+    ],
+    "native_LF": [
+      434,
+      434
+    ],
+    "section": "Case 6: filing period, deadlines and late payment",
+    "wording": "| Assumed inputs | wage tax paid over for 2025 was EUR 4,200; EUR 1,275 of third-quarter wage tax paid on 30 October 2026; EUR 3,480 of contributions paid late | |",
+    "source_quote_ids": [
+      "A.FILING",
+      "A.AO108",
+      "A.AO240-1",
+      "A.SVLATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "275",
+    "prior_row_id": 275,
+    "prior_native_LF": [
+      435,
+      435
+    ],
+    "native_LF": [
+      435,
+      435
+    ],
+    "section": "Case 6: filing period, deadlines and late payment",
+    "wording": "| Filing period 2026 | More than EUR 1,080, not more than EUR 5,000 ([§ 41a(2) EStG](https://www.gesetze-im-internet.de/estg/__41a.html)) | quarterly |",
+    "source_quote_ids": [
+      "A.FILING",
+      "A.AO108",
+      "A.AO240-1",
+      "A.SVLATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "276",
+    "prior_row_id": 276,
+    "prior_native_LF": [
+      436,
+      436
+    ],
+    "native_LF": [
+      436,
+      436
+    ],
+    "section": "Case 6: filing period, deadlines and late payment",
+    "wording": "| Third-quarter deadline | 10 October 2026 is a Saturday ([§ 108(3) AO](https://www.gesetze-im-internet.de/ao_1977/__108.html)) | Monday 12 October 2026 |",
+    "source_quote_ids": [
+      "A.FILING",
+      "A.AO108",
+      "A.AO240-1",
+      "A.SVLATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "277",
+    "prior_row_id": 277,
+    "prior_native_LF": [
+      437,
+      437
+    ],
+    "native_LF": [
+      437,
+      437
+    ],
+    "section": "Case 6: filing period, deadlines and late payment",
+    "wording": "| Late-payment surcharge on wage tax | More than three days late, one month started; 1% of EUR 1,250 ([§ 240 AO](https://www.gesetze-im-internet.de/ao_1977/__240.html)) | EUR 12.50 |",
+    "source_quote_ids": [
+      "A.FILING",
+      "A.AO108",
+      "A.AO240-1",
+      "A.SVLATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "278",
+    "prior_row_id": 278,
+    "prior_native_LF": [
+      438,
+      438
+    ],
+    "native_LF": [
+      438,
+      438
+    ],
+    "section": "Case 6: filing period, deadlines and late payment",
+    "wording": "| Late-payment surcharge on contributions, per month started | 1% of EUR 3,450 ([§ 24(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__24.html)) | EUR 34.50 |",
+    "source_quote_ids": [
+      "A.FILING",
+      "A.AO108",
+      "A.AO240-1",
+      "A.SVLATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "279",
+    "prior_row_id": 279,
+    "prior_native_LF": [
+      442,
+      442
+    ],
+    "native_LF": [
+      442,
+      442
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- **Self-employed and freelancers.** Not payroll; use `de-freelance-intake`, and `de-social-contributions` for their own contributions.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "280",
+    "prior_row_id": 280,
+    "prior_native_LF": [
+      443,
+      443
+    ],
+    "native_LF": [
+      443,
+      443
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- **Students and working students**, whose insurance rules differ, and **apprentices** paid up to the apprentice limit beyond the rule in the Minijob table.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "281",
+    "prior_row_id": 281,
+    "prior_native_LF": [
+      444,
+      444
+    ],
+    "native_LF": [
+      444,
+      444
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- **Part-month pay periods** and part-month ceilings.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "282",
+    "prior_row_id": 282,
+    "prior_native_LF": [
+      445,
+      445
+    ],
+    "native_LF": [
+      445,
+      445
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- **Cross-border work**, postings into or out of Germany, treaty relief (the ministry publishes a separate treaty routine), and foreign social security certificates.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "283",
+    "prior_row_id": 283,
+    "prior_native_LF": [
+      446,
+      446
+    ],
+    "native_LF": [
+      446,
+      446
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- **Managing directors and shareholder-directors** of a GmbH or UG, and family members, until the insurance status has been decided (status procedure).",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "284",
+    "prior_row_id": 284,
+    "prior_native_LF": [
+      447,
+      447
+    ],
+    "native_LF": [
+      447,
+      447
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- **Employer pensions** (Versorgungsbezüge) and the old-age relief; company pension schemes.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "285",
+    "prior_row_id": 285,
+    "prior_native_LF": [
+      448,
+      448
+    ],
+    "native_LF": [
+      448,
+      448
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- **Benefits in kind**, company cars, flat-rate wage tax under § 37b and § 40 EStG, tax-free allowances other than the Aktivrente and the § 3b surcharges.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "286",
+    "prior_row_id": 286,
+    "prior_native_LF": [
+      449,
+      449
+    ],
+    "native_LF": [
+      449,
+      449
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- **Short-time pay, Krankengeld, Mutterschaftsgeld and parental leave**, beyond the employer's own sick pay, maternity top-up and reporting duties.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "287",
+    "prior_row_id": 287,
+    "prior_native_LF": [
+      450,
+      450
+    ],
+    "native_LF": [
+      450,
+      450
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- **Midijob amounts.** This skill gives the band and the factor, not the formulas.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "288",
+    "prior_row_id": 288,
+    "prior_native_LF": [
+      451,
+      451
+    ],
+    "native_LF": [
+      451,
+      451
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- **Miners' pension scheme, civil servants,** and employees exempt from a branch.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "289",
+    "prior_row_id": 289,
+    "prior_native_LF": [
+      452,
+      452
+    ],
+    "native_LF": [
+      452,
+      452
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- **Exact church tax** (state caps, mixed-faith couples).",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "290",
+    "prior_row_id": 290,
+    "prior_native_LF": [
+      453,
+      453
+    ],
+    "native_LF": [
+      453,
+      453
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- **Private household Minijobs** beyond the rates in the table (the household cheque procedure).",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "291",
+    "prior_row_id": 291,
+    "prior_native_LF": [
+      454,
+      454
+    ],
+    "native_LF": [
+      454,
+      454
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- **Sign-off.** Results are working papers. Payroll software that implements the PAP and a Steuerberater or payroll accountant (Lohnbuchhalter) should confirm them before use.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "292",
+    "prior_row_id": 292,
+    "prior_native_LF": [
+      458,
+      458
+    ],
+    "native_LF": [
+      458,
+      458
+    ],
+    "section": "Filing and payment",
+    "wording": "| Duty | Deadline | Source |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "293",
+    "prior_row_id": 293,
+    "prior_native_LF": [
+      460,
+      460
+    ],
+    "native_LF": [
+      460,
+      460
+    ],
+    "section": "Filing and payment",
+    "wording": "| Wage tax return and payment, monthly filer (previous year's wage tax above EUR 5,000) | 10th of the next month | [§ 41a EStG](https://www.gesetze-im-internet.de/estg/__41a.html) |",
+    "source_quote_ids": [
+      "A.FILING"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "294",
+    "prior_row_id": 294,
+    "prior_native_LF": [
+      461,
+      461
+    ],
+    "native_LF": [
+      461,
+      461
+    ],
+    "section": "Filing and payment",
+    "wording": "| Quarterly filer (above EUR 1,080 and not above EUR 5,000) | 10 April, 10 July, 10 October, 10 January | § 41a EStG |",
+    "source_quote_ids": [
+      "A.FILING"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "295",
+    "prior_row_id": 295,
+    "prior_native_LF": [
+      462,
+      462
+    ],
+    "native_LF": [
+      462,
+      462
+    ],
+    "section": "Filing and payment",
+    "wording": "| Yearly filer (not above EUR 1,080) | 10 January of the next year | § 41a EStG |",
+    "source_quote_ids": [
+      "A.FILING"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "296",
+    "prior_row_id": 296,
+    "prior_native_LF": [
+      463,
+      463
+    ],
+    "native_LF": [
+      463,
+      463
+    ],
+    "section": "Filing and payment",
+    "wording": "| Deadline on a weekend or public holiday | Next working day | [§ 108(3) AO](https://www.gesetze-im-internet.de/ao_1977/__108.html) |",
+    "source_quote_ids": [
+      "A.AO108"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "297",
+    "prior_row_id": 297,
+    "prior_native_LF": [
+      464,
+      464
+    ],
+    "native_LF": [
+      464,
+      464
+    ],
+    "section": "Filing and payment",
+    "wording": "| Contribution statement | Two working days before the due date | [§ 28f(3) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28f.html) |",
+    "source_quote_ids": [
+      "A.SVACCOUNT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "298",
+    "prior_row_id": 298,
+    "prior_native_LF": [
+      465,
+      465
+    ],
+    "native_LF": [
+      465,
+      465
+    ],
+    "section": "Filing and payment",
+    "wording": "| Contributions | Third-last bank working day of the month worked; remainder the third-last bank working day of the next month | [§ 23(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23.html) |",
+    "source_quote_ids": [
+      "A.SVDUE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "299",
+    "prior_row_id": 299,
+    "prior_native_LF": [
+      466,
+      466
+    ],
+    "native_LF": [
+      466,
+      466
+    ],
+    "section": "Filing and payment",
+    "wording": "| Immediate report (listed sectors) | At the latest when work starts | [§ 28a(4) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28a.html) |",
+    "source_quote_ids": [
+      "A.IMMEDIATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "300",
+    "prior_row_id": 300,
+    "prior_native_LF": [
+      467,
+      467
+    ],
+    "native_LF": [
+      467,
+      467
+    ],
+    "section": "Filing and payment",
+    "wording": "| Registration / de-registration | Next payroll run, at the latest six weeks after start or end | [§ 6](https://www.gesetze-im-internet.de/de_v/__6.html), [§ 8 DEÜV](https://www.gesetze-im-internet.de/de_v/__8.html) |",
+    "source_quote_ids": [
+      "A.REG",
+      "A.DEREG"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "301",
+    "prior_row_id": 301,
+    "prior_native_LF": [
+      468,
+      468
+    ],
+    "native_LF": [
+      468,
+      468
+    ],
+    "section": "Filing and payment",
+    "wording": "| Interruption report, only when pay stops for at least a full calendar month and the employee draws a listed benefit (for example sick pay from the fund), takes parental leave or does military service | Two weeks after the end of the first calendar month | [§ 9 DEÜV](https://www.gesetze-im-internet.de/de_v/__9.html) |",
+    "source_quote_ids": [
+      "A.INTERRUPT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "302",
+    "prior_row_id": 302,
+    "prior_native_LF": [
+      469,
+      469
+    ],
+    "native_LF": [
+      469,
+      469
+    ],
+    "section": "Filing and payment",
+    "wording": "| Change of health fund, contribution group or person group key | De-registration and new registration within six weeks | [§ 12 DEÜV](https://www.gesetze-im-internet.de/de_v/__12.html) |",
+    "source_quote_ids": [
+      "A.CHANGE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "303",
+    "prior_row_id": 303,
+    "prior_native_LF": [
+      470,
+      470
+    ],
+    "native_LF": [
+      470,
+      470
+    ],
+    "section": "Filing and payment",
+    "wording": "| Annual report for 2026 | First payroll run of 2027, at the latest 15 February 2027 | [§ 10 DEÜV](https://www.gesetze-im-internet.de/de_v/__10.html) |",
+    "source_quote_ids": [
+      "A.ANNUAL"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "304",
+    "prior_row_id": 304,
+    "prior_native_LF": [
+      471,
+      471
+    ],
+    "native_LF": [
+      471,
+      471
+    ],
+    "section": "Filing and payment",
+    "wording": "| Special annual report to accident insurance for everyone employed and insured in 2026 | Ordinarily 16 February 2027 (\"zum 16. Februar des Folgejahres\"). On insolvency, definitive business closure or end of all employment: next payroll, at latest six weeks. The statutory agricultural-BG exception applies only where the work value is not used for contribution calculation | [§ 28a(2a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28a.html) |",
+    "source_quote_ids": [
+      "A.UVREPORT",
+      "R62-70.UVREPORT"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "305",
+    "prior_row_id": 305,
+    "prior_native_LF": [
+      472,
+      472
+    ],
+    "native_LF": [
+      472,
+      472
+    ],
+    "section": "Filing and payment",
+    "wording": "| Minimum wage paid | At the latest the last bank working day of the month after the work | [§ 2 MiLoG](https://www.gesetze-im-internet.de/milog/__2.html) |",
+    "source_quote_ids": [
+      "A.WAGEDUE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "306",
+    "prior_row_id": 306,
+    "prior_native_LF": [
+      473,
+      473
+    ],
+    "native_LF": [
+      473,
+      473
+    ],
+    "section": "Filing and payment",
+    "wording": "| Wage tax certificate for 2026 | Last day of February 2027; 28 February 2027 is a Sunday, so Monday 1 March 2027 under § 108(3) AO (check with the tax office) | [§ 41b(1) EStG](https://www.gesetze-im-internet.de/estg/__41b.html) |",
+    "source_quote_ids": [
+      "A.CERT",
+      "A.CERTDUE",
+      "A.AO108"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "307",
+    "prior_row_id": 307,
+    "prior_native_LF": [
+      475,
+      475
+    ],
+    "native_LF": [
+      475,
+      475
+    ],
+    "section": "Filing and payment",
+    "wording": "**Surcharges and liability**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "308",
+    "prior_row_id": 308,
+    "prior_native_LF": [
+      477,
+      477
+    ],
+    "native_LF": [
+      477,
+      477
+    ],
+    "section": "Filing and payment",
+    "wording": "- **Late payment of wage tax:** 1% of the amount due, rounded down to a multiple of EUR 50, for each month started; not for a delay of up to three days ([§ 240 AO](https://www.gesetze-im-internet.de/ao_1977/__240.html)).",
+    "source_quote_ids": [
+      "A.AO240-1"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "309",
+    "prior_row_id": 309,
+    "prior_native_LF": [
+      478,
+      478
+    ],
+    "native_LF": [
+      478,
+      478
+    ],
+    "section": "Filing and payment",
+    "wording": "- **Late filing of the wage tax return:** a late-filing surcharge is at the tax office's discretion; the compulsory amounts of § 152(5) AO do not apply to monthly, quarterly or yearly wage tax returns ([§ 152(8) AO](https://www.gesetze-im-internet.de/ao_1977/__152.html)).",
+    "source_quote_ids": [
+      "A.AO152-1",
+      "A.AO152-8"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "310",
+    "prior_row_id": 310,
+    "prior_native_LF": [
+      479,
+      479
+    ],
+    "native_LF": [
+      479,
+      479
+    ],
+    "section": "Filing and payment",
+    "wording": "- **Late contributions:** 1% of the arrears, rounded down to EUR 50, for each month started; not charged separately on arrears under EUR 150 ([§ 24(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__24.html)).",
+    "source_quote_ids": [
+      "A.SVLATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "311",
+    "prior_row_id": 311,
+    "prior_native_LF": [
+      480,
+      480
+    ],
+    "native_LF": [
+      480,
+      480
+    ],
+    "section": "Filing and payment",
+    "wording": "- **Liability:** the employer is liable for wage tax it should have withheld and paid over ([§ 42d(1) EStG](https://www.gesetze-im-internet.de/estg/__42d.html)).",
+    "source_quote_ids": [
+      "A.LIABILITY"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "312",
+    "prior_row_id": 312,
+    "prior_native_LF": [
+      484,
+      484
+    ],
+    "native_LF": [
+      484,
+      484
+    ],
+    "section": "2025 pay still being corrected",
+    "wording": "Pay for periods ending in 2025 is taxed with the amended 2025 PAP of 22 January 2025, which covers periods \"die nach dem 31. Dezember 2024, aber vor dem 1. Januar 2026 enden\" ([amended PAP 2025](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-01-22-geaenderte-PAP-2025-anlage-1.pdf?__blob=publicationFile&v=2)). Do not use 2026 values for 2025 corrections.",
+    "source_quote_ids": [
+      "A.PAP2025YEAR"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "313",
+    "prior_row_id": 313,
+    "prior_native_LF": [
+      486,
+      486
+    ],
+    "native_LF": [
+      486,
+      486
+    ],
+    "section": "2025 pay still being corrected",
+    "wording": "| 2025 value | Amount | Source |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "314",
+    "prior_row_id": 314,
+    "prior_native_LF": [
+      488,
+      488
+    ],
+    "native_LF": [
+      488,
+      488
+    ],
+    "section": "2025 pay still being corrected",
+    "wording": "| Basic allowance | EUR 12,096 | Amended PAP 2025 |",
+    "source_quote_ids": [
+      "A.PAP2025VALUES"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "315",
+    "prior_row_id": 315,
+    "prior_native_LF": [
+      489,
+      489
+    ],
+    "native_LF": [
+      489,
+      489
+    ],
+    "section": "2025 pay still being corrected",
+    "wording": "| Surcharge exemption limit (not class III) | EUR 19,950 | Same |",
+    "source_quote_ids": [
+      "A.PAP2025VALUES"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "316",
+    "prior_row_id": 316,
+    "prior_native_LF": [
+      490,
+      490
+    ],
+    "native_LF": [
+      490,
+      490
+    ],
+    "section": "2025 pay still being corrected",
+    "wording": "| Pension and unemployment ceiling, per year | EUR 96,600 | Same |",
+    "source_quote_ids": [
+      "A.PAP2025VALUES"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "317",
+    "prior_row_id": 317,
+    "prior_native_LF": [
+      491,
+      491
+    ],
+    "native_LF": [
+      491,
+      491
+    ],
+    "section": "2025 pay still being corrected",
+    "wording": "| Health and care ceiling, per year | EUR 66,150 | Same |",
+    "source_quote_ids": [
+      "A.PAP2025VALUES",
+      "R67.BMG-ceiling",
+      "R62-70.PAPVALUES"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "318",
+    "prior_row_id": 318,
+    "prior_native_LF": [
+      492,
+      492
+    ],
+    "native_LF": [
+      492,
+      492
+    ],
+    "section": "2025 pay still being corrected",
+    "wording": "| Minimum wage 2025 | EUR 12.82 | [MiLoV4](https://www.gesetze-im-internet.de/milov4/__1.html) |",
+    "source_quote_ids": [
+      "A.WAGE2025"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "319",
+    "prior_row_id": 319,
+    "prior_native_LF": [
+      493,
+      493
+    ],
+    "native_LF": [
+      493,
+      493
+    ],
+    "section": "2025 pay still being corrected",
+    "wording": "| Minijob limit 2025: 12.82 x 130 / 3 = EUR 555.53, rounded up | EUR 556 | [§ 8(1a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html) |",
+    "source_quote_ids": [
+      "A.WAGE2025",
+      "A.MINI"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "320",
+    "prior_row_id": 320,
+    "prior_native_LF": [
+      495,
+      495
+    ],
+    "native_LF": [
+      495,
+      495
+    ],
+    "section": "2025 pay still being corrected",
+    "wording": "The 2025 annual report was due by Monday 16 February 2026: nominal 15 February was a Sunday, so § 26(3) SGB X moves the ordinary deadline to the next working day. This does not override an authority notice expressly fixing the day under that provision or an authority-set appointment under § 26(5). The [actual social-procedure rule](https://www.gesetze-im-internet.de/sgb_10/__26.html) supplies this adjustment; AO § 108 is not its authority. The 2025 wage tax certificates were due by the last day of February 2026 (2 March 2026, as 28 February 2026 was a Saturday). A late or corrected certificate is still sent electronically. Employees with wages from two employers at once in 2025 must file a 2025 return ([§ 46(2) no. 2 EStG](https://www.gesetze-im-internet.de/estg/__46.html)).",
+    "source_quote_ids": [
+      "A.ANNUAL",
+      "A.CERTDUE",
+      "A.AO108",
+      "A.FILE2",
+      "R69.SGBX26",
+      "R69.ANNUAL"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "321",
+    "prior_row_id": 321,
+    "prior_native_LF": [
+      499,
+      499
+    ],
+    "native_LF": [
+      499,
+      499
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] Status of each job decided (Minijob, short-term, transition band, normal, above the JAEG); several jobs added up.",
+    "source_quote_ids": [
+      "A.MINI",
+      "A.MIDI"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "322",
+    "prior_row_id": 322,
+    "prior_native_LF": [
+      500,
+      500
+    ],
+    "native_LF": [
+      500,
+      500
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] Immediate report sent where the sector requires it; registration within six weeks.",
+    "source_quote_ids": [
+      "A.IMMEDIATE",
+      "A.REG"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "323",
+    "prior_row_id": 323,
+    "prior_native_LF": [
+      501,
+      501
+    ],
+    "native_LF": [
+      501,
+      501
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] Pay per hour checked against the minimum wage; working-time records kept where required; § 3b surcharges within both caps.",
+    "source_quote_ids": [
+      "A.MINWAGE",
+      "A.TIMERECORD",
+      "A.NIGHT",
+      "A.NIGHTSV"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "324",
+    "prior_row_id": 324,
+    "prior_native_LF": [
+      502,
+      502
+    ],
+    "native_LF": [
+      502,
+      502
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] Sick pay and maternity top-up paid and U1/U2 refunds claimed; payslip with the EBV contents issued.",
+    "source_quote_ids": [
+      "A.SICK",
+      "A.MATERNITY",
+      "A.AAG",
+      "A.EBV",
+      "R62-70.AAGBASE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "325",
+    "prior_row_id": 325,
+    "prior_native_LF": [
+      503,
+      503
+    ],
+    "native_LF": [
+      503,
+      503
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] Accident insurance annual report by 16 February; social insurance pay records kept in Germany.",
+    "source_quote_ids": [
+      "A.UVREPORT",
+      "A.SVACCOUNT"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "326",
+    "prior_row_id": 326,
+    "prior_native_LF": [
+      504,
+      504
+    ],
+    "native_LF": [
+      504,
+      504
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] ELStAM retrieved and changes called up monthly; class VI only where the law requires it.",
+    "source_quote_ids": [
+      "A.ELSTAM",
+      "A.MISSING"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "327",
+    "prior_row_id": 327,
+    "prior_native_LF": [
+      505,
+      505
+    ],
+    "native_LF": [
+      505,
+      505
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] Aktivrente applied for employees from the month after the standard retirement age (not on Minijobs; class VI only with the written confirmation).",
+    "source_quote_ids": [
+      "A.AKT",
+      "A.AKTWHO"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "328",
+    "prior_row_id": 328,
+    "prior_native_LF": [
+      506,
+      506
+    ],
+    "native_LF": [
+      506,
+      506
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] Wage tax run through software implementing the 2026 PAP; test-table rows reproduced.",
+    "source_quote_ids": [
+      "A.PAPTABLE20",
+      "A.PAPTABLE60",
+      "A.PAPTABLE100"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "329",
+    "prior_row_id": 329,
+    "prior_native_LF": [
+      507,
+      507
+    ],
+    "native_LF": [
+      507,
+      507
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] Surcharge and church tax on the base with child allowances; church rate by the place of employment's state.",
+    "source_quote_ids": [
+      "A.CHILDBASE",
+      "A.CHURCHRATE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "330",
+    "prior_row_id": 330,
+    "prior_native_LF": [
+      508,
+      508
+    ],
+    "native_LF": [
+      508,
+      508
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] Each branch capped at its own 2026 ceiling; care share set by children under 25, age and Saxony; proof of children on file.",
+    "source_quote_ids": [
+      "A.CEILING",
+      "A.RVCEILING",
+      "A.CAREPROOF"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "331",
+    "prior_row_id": 331,
+    "prior_native_LF": [
+      509,
+      509
+    ],
+    "native_LF": [
+      509,
+      509
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] Health share built on the fund's own additional rate, not the average.",
+    "source_quote_ids": [
+      "A.HSHARE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "332",
+    "prior_row_id": 332,
+    "prior_native_LF": [
+      510,
+      510
+    ],
+    "native_LF": [
+      510,
+      510
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] One-time payments by the annual method; the March rule for contributions checked.",
+    "source_quote_ids": [
+      "A.BONUS",
+      "A.SVMARCH"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "333",
+    "prior_row_id": 333,
+    "prior_native_LF": [
+      511,
+      511
+    ],
+    "native_LF": [
+      511,
+      511
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] Contribution statement two working days before the due date; payment by the third-last bank working day.",
+    "source_quote_ids": [
+      "A.SVACCOUNT",
+      "A.SVDUE"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "334",
+    "prior_row_id": 334,
+    "prior_native_LF": [
+      512,
+      512
+    ],
+    "native_LF": [
+      512,
+      512
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] Wage tax return and payment by the tenth after each period; filing period set from 2025 wage tax.",
+    "source_quote_ids": [
+      "A.FILING"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "335",
+    "prior_row_id": 335,
+    "prior_native_LF": [
+      513,
+      513
+    ],
+    "native_LF": [
+      513,
+      513
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] Year-end: annual report by 15 February, certificates by the end of February, annual adjustment where compulsory and not barred.",
+    "source_quote_ids": [
+      "A.ANNUAL",
+      "A.CERTDUE",
+      "A.ADJUST"
+    ],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "336",
+    "prior_row_id": 336,
+    "prior_native_LF": [
+      514,
+      514
+    ],
+    "native_LF": [
+      514,
+      514
+    ],
+    "section": "Completion checklist",
+    "wording": "- [ ] Apply the employee fund's actual additional rate, or the published 2.9% average where legally required; use the sourced four-decimal F and confirm the actual church-tax state selector.",
+    "source_quote_ids": [
+      "A.AVERAGE",
+      "A.MIDI",
+      "A.CHURCHRATE",
+      "R67.BMG-rate"
+    ],
+    "disposition": "Bounded R62–70 own-source condition / metadata successor"
+  },
+  {
+    "id": "337",
+    "prior_row_id": 337,
+    "prior_native_LF": [
+      518,
+      518
+    ],
+    "native_LF": [
+      518,
+      518
+    ],
+    "section": "Sources",
+    "wording": "- Income Tax Act (EStG) §§ 3, 9a, 10c, 24b, 32a, 38, 38b, 39a to 39f, 40a, 41 to 42d, 46, 51a: https://www.gesetze-im-internet.de/estg/",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "338",
+    "prior_row_id": 338,
+    "prior_native_LF": [
+      519,
+      519
+    ],
+    "native_LF": [
+      519,
+      519
+    ],
+    "section": "Sources",
+    "wording": "- Solidarity Surcharge Act §§ 3, 4: https://www.gesetze-im-internet.de/solzg_1995/",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "339",
+    "prior_row_id": 339,
+    "prior_native_LF": [
+      520,
+      520
+    ],
+    "native_LF": [
+      520,
+      520
+    ],
+    "section": "Sources",
+    "wording": "- Fiscal Code (AO) §§ 108, 152, 240: https://www.gesetze-im-internet.de/ao_1977/",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "340",
+    "prior_row_id": 340,
+    "prior_native_LF": [
+      521,
+      521
+    ],
+    "native_LF": [
+      521,
+      521
+    ],
+    "section": "Sources",
+    "wording": "- Social Code IV §§ 8, 20, 22, 23, 23a, 24, 28a, 28e to 28i; DEÜV §§ 6, 8, 9, 10, 12: https://www.gesetze-im-internet.de/sgb_4/ and https://www.gesetze-im-internet.de/de_v/",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "341",
+    "prior_row_id": 341,
+    "prior_native_LF": [
+      522,
+      522
+    ],
+    "native_LF": [
+      522,
+      522
+    ],
+    "section": "Sources",
+    "wording": "- Social Code V §§ 6, 223, 241, 243, 249, 249b; VI §§ 6, 168, 172; XI §§ 55, 58; III §§ 341, 346, 358, 360; AAG §§ 1, 7: https://www.gesetze-im-internet.de/",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "342",
+    "prior_row_id": 342,
+    "prior_native_LF": [
+      523,
+      523
+    ],
+    "native_LF": [
+      523,
+      523
+    ],
+    "section": "Sources",
+    "wording": "- Pension rate notice 2026 (RVBeitrSBek 2026), care rate regulation (PBAV 2025), minimum wage regulations (MiLoV4, MiLoV5): https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html and https://www.gesetze-im-internet.de/pbav_2025/__1.html and https://www.gesetze-im-internet.de/milov5/__1.html",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "343",
+    "prior_row_id": 343,
+    "prior_native_LF": [
+      524,
+      524
+    ],
+    "native_LF": [
+      524,
+      524
+    ],
+    "section": "Sources",
+    "wording": "- Social insurance values regulation 2026 (SVBezGrV 2026), Federal Law Gazette 2025 I No. 278: https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "344",
+    "prior_row_id": 344,
+    "prior_native_LF": [
+      525,
+      525
+    ],
+    "native_LF": [
+      525,
+      525
+    ],
+    "section": "Sources",
+    "wording": "- Finance ministry, PAP 2026 overview: https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026.html",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "345",
+    "prior_row_id": 345,
+    "prior_native_LF": [
+      526,
+      526
+    ],
+    "native_LF": [
+      526,
+      526
+    ],
+    "section": "Sources",
+    "wording": "- Finance ministry, Aktivrente FAQ: https://www.bundesfinanzministerium.de/Content/DE/FAQ/FAQ-zur-Aktivrente.html",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  },
+  {
+    "id": "346",
+    "prior_row_id": 346,
+    "prior_native_LF": [
+      528,
+      528
+    ],
+    "native_LF": [
+      528,
+      528
+    ],
+    "section": "Sources",
+    "wording": "This skill is general information for 2026 and not tax, legal or payroll advice.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit, native coordinates rebound"
+  }
+]

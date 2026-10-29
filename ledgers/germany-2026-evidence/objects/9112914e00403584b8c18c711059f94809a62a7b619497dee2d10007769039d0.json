@@ -1,0 +1,16 @@
+{
+  "schema": {
+    "errors": [],
+    "warnings": []
+  },
+  "examples": {
+    "exit_code": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  "diff": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

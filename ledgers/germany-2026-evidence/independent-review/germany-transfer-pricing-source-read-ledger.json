@@ -1,0 +1,2024 @@
+{
+  "all_frozen_current_units_read": 316,
+  "claim_read_batches": [
+    [
+      1,
+      75
+    ],
+    [
+      76,
+      150
+    ],
+    [
+      151,
+      225
+    ],
+    [
+      226,
+      316
+    ]
+  ],
+  "selected_quote_records": [
+    {
+      "row": 1,
+      "id": "a1-1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "8b3225f2e03033c1f27f02e2437c0a0642067a77ffe6cff84801385516052926",
+      "reader_sha256": "3120d358cf8415a23db07653361ad486788453ca60e9ac00c1c29f81a2296850",
+      "quote_sha256": "e5b088a0bd7cd09eb248843649e15c01e1bcf5a067f222fc1f1951fef16ef56c",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__1.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 2,
+      "id": "a1-2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.reader.txt",
+      "native_LF": [
+        8,
+        24
+      ],
+      "raw_sha256": "8b3225f2e03033c1f27f02e2437c0a0642067a77ffe6cff84801385516052926",
+      "reader_sha256": "3120d358cf8415a23db07653361ad486788453ca60e9ac00c1c29f81a2296850",
+      "quote_sha256": "5e15d41f2e87083406807b24708eff28f46e392fa9f498842b6da8670f481f62",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__1.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 3,
+      "id": "a1-3",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.reader.txt",
+      "native_LF": [
+        25,
+        25
+      ],
+      "raw_sha256": "8b3225f2e03033c1f27f02e2437c0a0642067a77ffe6cff84801385516052926",
+      "reader_sha256": "3120d358cf8415a23db07653361ad486788453ca60e9ac00c1c29f81a2296850",
+      "quote_sha256": "ef5b0a9b7fc8ab9803feeb6391813c8bccf4f5f6eaa7819006819c8bcb4917bb",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__1.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 4,
+      "id": "a1-3a",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.reader.txt",
+      "native_LF": [
+        26,
+        26
+      ],
+      "raw_sha256": "8b3225f2e03033c1f27f02e2437c0a0642067a77ffe6cff84801385516052926",
+      "reader_sha256": "3120d358cf8415a23db07653361ad486788453ca60e9ac00c1c29f81a2296850",
+      "quote_sha256": "6f4cac2918f9892aa35a5124b771571137f58abbcd8fffae8061726ede016bc1",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__1.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 5,
+      "id": "a1-3b",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.reader.txt",
+      "native_LF": [
+        27,
+        27
+      ],
+      "raw_sha256": "8b3225f2e03033c1f27f02e2437c0a0642067a77ffe6cff84801385516052926",
+      "reader_sha256": "3120d358cf8415a23db07653361ad486788453ca60e9ac00c1c29f81a2296850",
+      "quote_sha256": "f53fee3c7d26b0a6139c285d5ccc9b9f847f80cf51fdf85eb36687249140ddbc",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__1.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 6,
+      "id": "a1-3c",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.reader.txt",
+      "native_LF": [
+        28,
+        34
+      ],
+      "raw_sha256": "8b3225f2e03033c1f27f02e2437c0a0642067a77ffe6cff84801385516052926",
+      "reader_sha256": "3120d358cf8415a23db07653361ad486788453ca60e9ac00c1c29f81a2296850",
+      "quote_sha256": "6043ff0fa02c746ea8c2bf26e2f6bab26213ae955394e7c0d2d61ab3192406e0",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__1.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 7,
+      "id": "a1-3d",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.reader.txt",
+      "native_LF": [
+        35,
+        42
+      ],
+      "raw_sha256": "8b3225f2e03033c1f27f02e2437c0a0642067a77ffe6cff84801385516052926",
+      "reader_sha256": "3120d358cf8415a23db07653361ad486788453ca60e9ac00c1c29f81a2296850",
+      "quote_sha256": "66f18d9aa4dad9bd57795766db1944939bdd39b639b40208c0b82d03f39c7ee7",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__1.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 8,
+      "id": "a1-3e",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.reader.txt",
+      "native_LF": [
+        43,
+        47
+      ],
+      "raw_sha256": "8b3225f2e03033c1f27f02e2437c0a0642067a77ffe6cff84801385516052926",
+      "reader_sha256": "3120d358cf8415a23db07653361ad486788453ca60e9ac00c1c29f81a2296850",
+      "quote_sha256": "67b2a33f57144f23901a64b421c94647e8bbbd791410b7622d9294b6326f0482",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__1.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 9,
+      "id": "a1-4",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.reader.txt",
+      "native_LF": [
+        48,
+        55
+      ],
+      "raw_sha256": "8b3225f2e03033c1f27f02e2437c0a0642067a77ffe6cff84801385516052926",
+      "reader_sha256": "3120d358cf8415a23db07653361ad486788453ca60e9ac00c1c29f81a2296850",
+      "quote_sha256": "81d55e7eafb43cd6f8b7cbb71e6540f73c6549356921fe7ae9c6de6b638d07ff",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__1.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 10,
+      "id": "a1-5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2326adf0b537438c.reader.txt",
+      "native_LF": [
+        56,
+        64
+      ],
+      "raw_sha256": "8b3225f2e03033c1f27f02e2437c0a0642067a77ffe6cff84801385516052926",
+      "reader_sha256": "3120d358cf8415a23db07653361ad486788453ca60e9ac00c1c29f81a2296850",
+      "quote_sha256": "55f8b27175f1ea0ca60a98b10a720581817dd11a2495aa7cbd8137fb68cbc84e",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__1.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 11,
+      "id": "ao90-1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6a28ca7a568b265.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6a28ca7a568b265.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "8c82aaf411b473869409e3f6a587121ff8b044d7069bc5b81198273402385438",
+      "reader_sha256": "a553c3a6f779f9d1d2cbe8ab0cacabe54bf12cb6231e8aa6038ea84bf7461d6c",
+      "quote_sha256": "ed20dc9379b52954a56a4b1e26679ab19a211a5ad46cba11304703e1274707e2",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__90.html",
+      "actual_read_bridge": {
+        "guide": "de-crypto-tax",
+        "quote_row": 83,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 12,
+      "id": "ao90-2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6a28ca7a568b265.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6a28ca7a568b265.reader.txt",
+      "native_LF": [
+        8,
+        8
+      ],
+      "raw_sha256": "8c82aaf411b473869409e3f6a587121ff8b044d7069bc5b81198273402385438",
+      "reader_sha256": "a553c3a6f779f9d1d2cbe8ab0cacabe54bf12cb6231e8aa6038ea84bf7461d6c",
+      "quote_sha256": "3f2d8f80e0fe73a279e04b7e73fe126accebe34f6b34db39ff20765da3446941",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__90.html",
+      "actual_read_bridge": {
+        "guide": "de-crypto-tax",
+        "quote_row": 83,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 13,
+      "id": "ao90-3",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6a28ca7a568b265.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6a28ca7a568b265.reader.txt",
+      "native_LF": [
+        9,
+        15
+      ],
+      "raw_sha256": "8c82aaf411b473869409e3f6a587121ff8b044d7069bc5b81198273402385438",
+      "reader_sha256": "a553c3a6f779f9d1d2cbe8ab0cacabe54bf12cb6231e8aa6038ea84bf7461d6c",
+      "quote_sha256": "2ec5cc88ae71b1e056abd99032e7e4544aad61136201b06934c93a4d039e8140",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__90.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 14,
+      "id": "ao90-4",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6a28ca7a568b265.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6a28ca7a568b265.reader.txt",
+      "native_LF": [
+        16,
+        16
+      ],
+      "raw_sha256": "8c82aaf411b473869409e3f6a587121ff8b044d7069bc5b81198273402385438",
+      "reader_sha256": "a553c3a6f779f9d1d2cbe8ab0cacabe54bf12cb6231e8aa6038ea84bf7461d6c",
+      "quote_sha256": "0502f6edb5e7ee42e5cabb422a286bd2d497593ca71cb7b01ee96a733ae99855",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__90.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 15,
+      "id": "g1-1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua93a9e58d3cbbf9f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua93a9e58d3cbbf9f.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "84c9e22f11fd10c66f833016dbe0cd801cd6d2d7f58de97e9e78278d6b087d9b",
+      "reader_sha256": "38848e7d759f97cba4d9981885d715e1e2c2f13f525773fb5ff7f3f804fff24f",
+      "quote_sha256": "5111d662bff3f828f1d780a8fa96273e3d462db4e20e6544df09329ef2338d28",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__1.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 16,
+      "id": "g2-1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U921644cfc5ac7460.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U921644cfc5ac7460.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "2d4eee370e72a618a576929b414df16a2fee544921d2a342b143235a878720d4",
+      "reader_sha256": "3e570714626cd1b23d05854e9fea273a377d41ffaceffeb939735beaee1f6c43",
+      "quote_sha256": "be0c9a0984227ab56eed274903e75ce3efedb065992df39afd9213d773bbe44d",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__2.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 17,
+      "id": "g2-2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U921644cfc5ac7460.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U921644cfc5ac7460.reader.txt",
+      "native_LF": [
+        8,
+        8
+      ],
+      "raw_sha256": "2d4eee370e72a618a576929b414df16a2fee544921d2a342b143235a878720d4",
+      "reader_sha256": "3e570714626cd1b23d05854e9fea273a377d41ffaceffeb939735beaee1f6c43",
+      "quote_sha256": "a2ad664f6d8b8377ac63266598dd15a9645feb1b4780e8cdc35404534db09d5b",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__2.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 18,
+      "id": "g2-3",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U921644cfc5ac7460.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U921644cfc5ac7460.reader.txt",
+      "native_LF": [
+        9,
+        13
+      ],
+      "raw_sha256": "2d4eee370e72a618a576929b414df16a2fee544921d2a342b143235a878720d4",
+      "reader_sha256": "3e570714626cd1b23d05854e9fea273a377d41ffaceffeb939735beaee1f6c43",
+      "quote_sha256": "a4a154d2dafe70cb1ec5a66d5224aef91ffd44be412db10096cb1494e86a7d98",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__2.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 19,
+      "id": "g2-4",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U921644cfc5ac7460.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U921644cfc5ac7460.reader.txt",
+      "native_LF": [
+        14,
+        14
+      ],
+      "raw_sha256": "2d4eee370e72a618a576929b414df16a2fee544921d2a342b143235a878720d4",
+      "reader_sha256": "3e570714626cd1b23d05854e9fea273a377d41ffaceffeb939735beaee1f6c43",
+      "quote_sha256": "17061fc4151764f43923d162af4fcbacb20459e2b7773ebd0727b2e610673d0e",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__2.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 20,
+      "id": "g2-5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U921644cfc5ac7460.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U921644cfc5ac7460.reader.txt",
+      "native_LF": [
+        15,
+        15
+      ],
+      "raw_sha256": "2d4eee370e72a618a576929b414df16a2fee544921d2a342b143235a878720d4",
+      "reader_sha256": "3e570714626cd1b23d05854e9fea273a377d41ffaceffeb939735beaee1f6c43",
+      "quote_sha256": "7686f4f1b2a4486fb8daa69a2563f7f63d0252218cabd033edb5dc3db26b1f88",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__2.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 21,
+      "id": "g2-6",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U921644cfc5ac7460.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U921644cfc5ac7460.reader.txt",
+      "native_LF": [
+        16,
+        16
+      ],
+      "raw_sha256": "2d4eee370e72a618a576929b414df16a2fee544921d2a342b143235a878720d4",
+      "reader_sha256": "3e570714626cd1b23d05854e9fea273a377d41ffaceffeb939735beaee1f6c43",
+      "quote_sha256": "16c7433b9266f1a50abd25bb680c40e813b7e1b11bd159cc891aa75b4dafdb57",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__2.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 22,
+      "id": "g3-1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9fb17aa84a48ba4d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9fb17aa84a48ba4d.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "63da43b96502636fd8f37a423062e3d0614dadc922c6c639b136f0b4655fb1df",
+      "reader_sha256": "d9eaffaba308ea602dba33d3abfc3e65c57baa89f84b1d94e583484d2d8b57ac",
+      "quote_sha256": "3a0b4bb7f5e27854ac5bc85ceb460b1f96cf00b19a59f016ab5ebf0912adfd4c",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__3.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 23,
+      "id": "g3-2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9fb17aa84a48ba4d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9fb17aa84a48ba4d.reader.txt",
+      "native_LF": [
+        8,
+        17
+      ],
+      "raw_sha256": "63da43b96502636fd8f37a423062e3d0614dadc922c6c639b136f0b4655fb1df",
+      "reader_sha256": "d9eaffaba308ea602dba33d3abfc3e65c57baa89f84b1d94e583484d2d8b57ac",
+      "quote_sha256": "ed23353ab1604f08a029e3d0f5c5147f632e9dec85b07b8aa3d18e242f6e6322",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__3.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 24,
+      "id": "g4-1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8353b35d10b5f3f7.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8353b35d10b5f3f7.reader.txt",
+      "native_LF": [
+        7,
+        49
+      ],
+      "raw_sha256": "e2c799f3cc5c269a7f103a75f6945643ed26d643129fda459c3cc735ff0f040b",
+      "reader_sha256": "07a71941f39fa81f14ddb628d3799f20addf8fd707262372175e842ae5b5f689",
+      "quote_sha256": "5c26120fa55f5d0a708a4fe07c5cee74cfef3e1993e1e3fbcf920d8d588beee6",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__4.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 25,
+      "id": "g4-2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8353b35d10b5f3f7.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8353b35d10b5f3f7.reader.txt",
+      "native_LF": [
+        50,
+        61
+      ],
+      "raw_sha256": "e2c799f3cc5c269a7f103a75f6945643ed26d643129fda459c3cc735ff0f040b",
+      "reader_sha256": "07a71941f39fa81f14ddb628d3799f20addf8fd707262372175e842ae5b5f689",
+      "quote_sha256": "ce735fd5c9ae658e95e0599b8ef4614c392e67466268ef08f388b5725fb29341",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__4.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 26,
+      "id": "g4-3",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8353b35d10b5f3f7.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8353b35d10b5f3f7.reader.txt",
+      "native_LF": [
+        62,
+        62
+      ],
+      "raw_sha256": "e2c799f3cc5c269a7f103a75f6945643ed26d643129fda459c3cc735ff0f040b",
+      "reader_sha256": "07a71941f39fa81f14ddb628d3799f20addf8fd707262372175e842ae5b5f689",
+      "quote_sha256": "f2c143fbf62e88aa637ca3d7b7bd0f9262f2478d059d66154e2c67f24822ab8d",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__4.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 27,
+      "id": "g5-1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef46f8eacbe29c55.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef46f8eacbe29c55.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "66755b2449ba772161acfb56050526a1a14af448c2c43aac695d0c3a32090ca3",
+      "reader_sha256": "1a7a577fe7a7bd4d03fe9f27e78f8bcb4720b22db0ef8f033120d9e528998a92",
+      "quote_sha256": "7d6a0fcfb91aa6cf533ffa2de32d0163588832820861130eb14f5c8c09f29606",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__5.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 28,
+      "id": "g5-2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef46f8eacbe29c55.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef46f8eacbe29c55.reader.txt",
+      "native_LF": [
+        8,
+        8
+      ],
+      "raw_sha256": "66755b2449ba772161acfb56050526a1a14af448c2c43aac695d0c3a32090ca3",
+      "reader_sha256": "1a7a577fe7a7bd4d03fe9f27e78f8bcb4720b22db0ef8f033120d9e528998a92",
+      "quote_sha256": "2e40a7d8f7707e48d37923f4bd2ea0ebffbe5e5e082274fff42ad1a678c086a1",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__5.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 29,
+      "id": "g6-1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9022e5d1ce5ddb70.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9022e5d1ce5ddb70.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "216645795f074fe5ef9ddf6b717dad00cf1b29ad8e0ff5c2a3b5959b30e1ccef",
+      "reader_sha256": "366bb2e93c07988c4dc4251632898d7a17af426d016e4c4bb8b5b4821f7b9581",
+      "quote_sha256": "77c89d6665734b449dded276918be2ed418f2385d4c58f544b7f10354be88c1d",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__6.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 30,
+      "id": "g6-2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9022e5d1ce5ddb70.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9022e5d1ce5ddb70.reader.txt",
+      "native_LF": [
+        8,
+        12
+      ],
+      "raw_sha256": "216645795f074fe5ef9ddf6b717dad00cf1b29ad8e0ff5c2a3b5959b30e1ccef",
+      "reader_sha256": "366bb2e93c07988c4dc4251632898d7a17af426d016e4c4bb8b5b4821f7b9581",
+      "quote_sha256": "0b83029f4c94dfa7c47347241ce769b86be5d6fedf89c818255ace28bf8705a3",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__6.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 31,
+      "id": "g6-3",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9022e5d1ce5ddb70.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9022e5d1ce5ddb70.reader.txt",
+      "native_LF": [
+        13,
+        13
+      ],
+      "raw_sha256": "216645795f074fe5ef9ddf6b717dad00cf1b29ad8e0ff5c2a3b5959b30e1ccef",
+      "reader_sha256": "366bb2e93c07988c4dc4251632898d7a17af426d016e4c4bb8b5b4821f7b9581",
+      "quote_sha256": "287cf4842643680707d92d3e6eeb3550b64f4b4e52af4ed085beae438cf1513a",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__6.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 32,
+      "id": "cb-1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.reader.txt",
+      "native_LF": [
+        7,
+        11
+      ],
+      "raw_sha256": "ab3e9238a92b67156cc3d0c50b994057a5635b857641ff0fa76f085c3e5dfa7e",
+      "reader_sha256": "96bac0c232697de930aadaf031a5def0b170ff1f7d03806ab8730cf74a699305",
+      "quote_sha256": "afd6379f79a72fb1eeee2f5916ba2053e692c06b897b0362e0c87281e3b1dd0a",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__138a.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 33,
+      "id": "cb-2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.reader.txt",
+      "native_LF": [
+        12,
+        36
+      ],
+      "raw_sha256": "ab3e9238a92b67156cc3d0c50b994057a5635b857641ff0fa76f085c3e5dfa7e",
+      "reader_sha256": "96bac0c232697de930aadaf031a5def0b170ff1f7d03806ab8730cf74a699305",
+      "quote_sha256": "9959eca78c166beaa5526c991da8500717369ff60496549ed107abfa58379f10",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__138a.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 34,
+      "id": "cb-3",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.reader.txt",
+      "native_LF": [
+        37,
+        37
+      ],
+      "raw_sha256": "ab3e9238a92b67156cc3d0c50b994057a5635b857641ff0fa76f085c3e5dfa7e",
+      "reader_sha256": "96bac0c232697de930aadaf031a5def0b170ff1f7d03806ab8730cf74a699305",
+      "quote_sha256": "77299a70fbbfb5672945c7ef20816e400a8ee3275c7aeabaf26bd9e7c3409e2b",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__138a.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 35,
+      "id": "cb-4",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.reader.txt",
+      "native_LF": [
+        38,
+        38
+      ],
+      "raw_sha256": "ab3e9238a92b67156cc3d0c50b994057a5635b857641ff0fa76f085c3e5dfa7e",
+      "reader_sha256": "96bac0c232697de930aadaf031a5def0b170ff1f7d03806ab8730cf74a699305",
+      "quote_sha256": "bd8074f80968846efd24c047bf3c8c7deaeea3ff0cc523aa68b328fe16ba3c5f",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__138a.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 36,
+      "id": "cb-5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.reader.txt",
+      "native_LF": [
+        39,
+        45
+      ],
+      "raw_sha256": "ab3e9238a92b67156cc3d0c50b994057a5635b857641ff0fa76f085c3e5dfa7e",
+      "reader_sha256": "96bac0c232697de930aadaf031a5def0b170ff1f7d03806ab8730cf74a699305",
+      "quote_sha256": "fedda95f56a9d47255a8cad0802edf3051ba77ffdc38b415174b9f7ca23f8f9d",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__138a.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 37,
+      "id": "cb-6",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.reader.txt",
+      "native_LF": [
+        46,
+        46
+      ],
+      "raw_sha256": "ab3e9238a92b67156cc3d0c50b994057a5635b857641ff0fa76f085c3e5dfa7e",
+      "reader_sha256": "96bac0c232697de930aadaf031a5def0b170ff1f7d03806ab8730cf74a699305",
+      "quote_sha256": "b6911198ae6e1278df3e4c7bbabbbcf5bc52c1f4af5201416a334d826a64a8f5",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__138a.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 38,
+      "id": "cb-7",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.reader.txt",
+      "native_LF": [
+        47,
+        47
+      ],
+      "raw_sha256": "ab3e9238a92b67156cc3d0c50b994057a5635b857641ff0fa76f085c3e5dfa7e",
+      "reader_sha256": "96bac0c232697de930aadaf031a5def0b170ff1f7d03806ab8730cf74a699305",
+      "quote_sha256": "38ecc6ac27b27e3d797e470bd21111cbbafb15ca71e959252d3e1dcd0b205881",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__138a.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 39,
+      "id": "ao162-3",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee2258b31aab48c3.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee2258b31aab48c3.reader.txt",
+      "native_LF": [
+        12,
+        12
+      ],
+      "raw_sha256": "e1f4f36f69b7da9b1b43ec740a7ea31cf0b8de79f267e35416c342bd36f4698e",
+      "reader_sha256": "916c1f78f3467487cb481a341dfba8f8447fe94b487a80deb6d0a2bd15bff54d",
+      "quote_sha256": "07d3080d8379a99b5b010dc575786cc722f1c0382302b745ff0c26fefddc5afd",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__162.html",
+      "actual_read_bridge": {
+        "guide": "germany-einvoice",
+        "quote_row": 28,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 40,
+      "id": "ao162-4",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee2258b31aab48c3.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee2258b31aab48c3.reader.txt",
+      "native_LF": [
+        13,
+        13
+      ],
+      "raw_sha256": "e1f4f36f69b7da9b1b43ec740a7ea31cf0b8de79f267e35416c342bd36f4698e",
+      "reader_sha256": "916c1f78f3467487cb481a341dfba8f8447fe94b487a80deb6d0a2bd15bff54d",
+      "quote_sha256": "c38dc4d5b832674ba78e35edc7c8646e194d5c15dd8d57869214226d13841a5c",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__162.html",
+      "actual_read_bridge": {
+        "guide": "germany-einvoice",
+        "quote_row": 28,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 41,
+      "id": "ao162-4a",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee2258b31aab48c3.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee2258b31aab48c3.reader.txt",
+      "native_LF": [
+        14,
+        14
+      ],
+      "raw_sha256": "e1f4f36f69b7da9b1b43ec740a7ea31cf0b8de79f267e35416c342bd36f4698e",
+      "reader_sha256": "916c1f78f3467487cb481a341dfba8f8447fe94b487a80deb6d0a2bd15bff54d",
+      "quote_sha256": "7722c932de468533e4ec53f68e4a92fd3237c4f49b5ef2cf8b9b85f035a9ae6b",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__162.html",
+      "actual_read_bridge": {
+        "guide": "germany-einvoice",
+        "quote_row": 28,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 42,
+      "id": "apa-1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4912c7b237929b37.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4912c7b237929b37.reader.txt",
+      "native_LF": [
+        7,
+        14
+      ],
+      "raw_sha256": "f6ae52a29378b0eff503b891a327cf0d55646a1a528a2d86788593236e50df48",
+      "reader_sha256": "973339a3e2dc129149b449b414e2a6224cc5bb84e4f9d3043dd8731187bd1d09",
+      "quote_sha256": "fe1ec4e6a56477dcfff6c223215e308a8d85d22386d845d4c920a2ee8c503983",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__89a.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 43,
+      "id": "apa-3",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4912c7b237929b37.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4912c7b237929b37.reader.txt",
+      "native_LF": [
+        30,
+        34
+      ],
+      "raw_sha256": "f6ae52a29378b0eff503b891a327cf0d55646a1a528a2d86788593236e50df48",
+      "reader_sha256": "973339a3e2dc129149b449b414e2a6224cc5bb84e4f9d3043dd8731187bd1d09",
+      "quote_sha256": "4e97158b3ee8156dc9d9fa7326a26d84f29b82e8f2a62ecec6d5aa451dc9a61d",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__89a.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 44,
+      "id": "apa-4",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4912c7b237929b37.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4912c7b237929b37.reader.txt",
+      "native_LF": [
+        35,
+        41
+      ],
+      "raw_sha256": "f6ae52a29378b0eff503b891a327cf0d55646a1a528a2d86788593236e50df48",
+      "reader_sha256": "973339a3e2dc129149b449b414e2a6224cc5bb84e4f9d3043dd8731187bd1d09",
+      "quote_sha256": "3547a6fca0ed98df34f4e14b431b406e418d4cc2e823ecf9cc0627e25b2e1745",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__89a.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 45,
+      "id": "apa-6",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4912c7b237929b37.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4912c7b237929b37.reader.txt",
+      "native_LF": [
+        43,
+        43
+      ],
+      "raw_sha256": "f6ae52a29378b0eff503b891a327cf0d55646a1a528a2d86788593236e50df48",
+      "reader_sha256": "973339a3e2dc129149b449b414e2a6224cc5bb84e4f9d3043dd8731187bd1d09",
+      "quote_sha256": "d2b61ef6257700f987ab63845781f0dc2f5c6fce551589891dd05ce88edd2d26",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__89a.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 46,
+      "id": "apa-7",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4912c7b237929b37.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4912c7b237929b37.reader.txt",
+      "native_LF": [
+        44,
+        44
+      ],
+      "raw_sha256": "f6ae52a29378b0eff503b891a327cf0d55646a1a528a2d86788593236e50df48",
+      "reader_sha256": "973339a3e2dc129149b449b414e2a6224cc5bb84e4f9d3043dd8731187bd1d09",
+      "quote_sha256": "51bafa69ebf26a236dbcc4a95f997e821ec72f65e4e5e4892b95e83b19ec1e23",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__89a.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 47,
+      "id": "apa-8",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4912c7b237929b37.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4912c7b237929b37.reader.txt",
+      "native_LF": [
+        45,
+        45
+      ],
+      "raw_sha256": "f6ae52a29378b0eff503b891a327cf0d55646a1a528a2d86788593236e50df48",
+      "reader_sha256": "973339a3e2dc129149b449b414e2a6224cc5bb84e4f9d3043dd8731187bd1d09",
+      "quote_sha256": "7b5e08d096090808c96b44327c47b6ff283415d52c95f23732662e3e41747d0a",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__89a.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 48,
+      "id": "eg37-2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubce83584837ebc71.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubce83584837ebc71.reader.txt",
+      "native_LF": [
+        8,
+        8
+      ],
+      "raw_sha256": "f3f17cacdec1d64f43a8db517148f91929747951d285bb46e506f91c6093d61c",
+      "reader_sha256": "f3508187da7267929e817cfd92d84035854e63c06acb77f213730d5d61bb62fa",
+      "quote_sha256": "933ab0163157439f5f8f2692b6371a0da61c8a2aac48a7ab2603059b3046f517",
+      "official_url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__37.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 49,
+      "id": "eg37-3",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubce83584837ebc71.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubce83584837ebc71.reader.txt",
+      "native_LF": [
+        9,
+        9
+      ],
+      "raw_sha256": "f3f17cacdec1d64f43a8db517148f91929747951d285bb46e506f91c6093d61c",
+      "reader_sha256": "f3508187da7267929e817cfd92d84035854e63c06acb77f213730d5d61bb62fa",
+      "quote_sha256": "c6a152a05d7b38b63c7107bde57bc9e97cc9c5f6d91c297e5b72ad27109e0517",
+      "official_url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__37.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 50,
+      "id": "eg37-5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubce83584837ebc71.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubce83584837ebc71.reader.txt",
+      "native_LF": [
+        11,
+        11
+      ],
+      "raw_sha256": "f3f17cacdec1d64f43a8db517148f91929747951d285bb46e506f91c6093d61c",
+      "reader_sha256": "f3508187da7267929e817cfd92d84035854e63c06acb77f213730d5d61bb62fa",
+      "quote_sha256": "9789f573e7d17f5a91ef2575abfc7b561d25ad48e16ed6a60631b2c02b0f8225",
+      "official_url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__37.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 51,
+      "id": "g7",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uf6fafa23261f0018.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uf6fafa23261f0018.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "cee49176c0285740c85d3f9363fecfa55944ae69c1c3490b76c3dbd9d9dffcc3",
+      "reader_sha256": "a034cc539f004ca8f70cedc2f5c2b75866d99806d11009a77a31ea6dd89a2aed",
+      "quote_sha256": "7bd341779b4c93318ef27b687eca7fe199e475fc2ef8b3af578555ad68c3ba95",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/__7.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 52,
+      "id": "eg31",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua1563fa313d548a8.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua1563fa313d548a8.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "a877eb01ae44caae13dc562819434e728970007411395d5c03567cc47070e142",
+      "reader_sha256": "123e97b245d7cf09fad8384cecd2bfb690228316bdf6eba4ff9cd854016ac308",
+      "quote_sha256": "e14adbbef9642ae779cd7b65050fd74c5e13072ce7a6a5788958556d42b976cd",
+      "official_url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__31.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 53,
+      "id": "deadline7",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+      "native_LF": [
+        8,
+        8
+      ],
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "quote_sha256": "23bfcd02fb0c2941fc041c97a34697e13aa3cded0205b93b1457275608e72e3c",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 12,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 54,
+      "id": "deadlineadvised",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+      "native_LF": [
+        9,
+        24
+      ],
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "quote_sha256": "6c30b5f8a481a8a540ee5accf795306fd4f15483c21ddb7be22c303f2afd1e5f",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "actual_read_bridge": {
+        "guide": "de-crypto-tax",
+        "quote_row": 96,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 55,
+      "id": "fineintent",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uec60fb30d6850f63.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uec60fb30d6850f63.reader.txt",
+      "native_LF": [
+        24,
+        24
+      ],
+      "raw_sha256": "f55988fb45754f4d56af2480fbc6aaabd9c2b0ea05231811a8c2a439bf765fa6",
+      "reader_sha256": "93659c1c227a5c253cc8ba7d186671f7eb400c64fa5ed24a103e67b7483d127c",
+      "quote_sha256": "77e278cf443488bbb3d78b3984e454abed296cd9aed18ed19b378f3d9f190cb1",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__379.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 56,
+      "id": "finebreach",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uec60fb30d6850f63.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uec60fb30d6850f63.reader.txt",
+      "native_LF": [
+        30,
+        31
+      ],
+      "raw_sha256": "f55988fb45754f4d56af2480fbc6aaabd9c2b0ea05231811a8c2a439bf765fa6",
+      "reader_sha256": "93659c1c227a5c253cc8ba7d186671f7eb400c64fa5ed24a103e67b7483d127c",
+      "quote_sha256": "ff7bb9828a5546ad325d9c56d9ca5a0d6b9be5be3e172a474137af857b73ea44",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__379.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 57,
+      "id": "fineamount",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uec60fb30d6850f63.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uec60fb30d6850f63.reader.txt",
+      "native_LF": [
+        48,
+        48
+      ],
+      "raw_sha256": "f55988fb45754f4d56af2480fbc6aaabd9c2b0ea05231811a8c2a439bf765fa6",
+      "reader_sha256": "93659c1c227a5c253cc8ba7d186671f7eb400c64fa5ed24a103e67b7483d127c",
+      "quote_sha256": "7606abfa24378e1475f7fd7a08d8e73755723108525dc14b9cddaa03f76689f2",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__379.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 58,
+      "id": "transmit",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8b8e2bf28bca907c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8b8e2bf28bca907c.reader.txt",
+      "native_LF": [
+        37,
+        45
+      ],
+      "raw_sha256": "e8b18183b21eb045f8daf38a1a1dd597a02c2435cb400dda84016ddd9de3ded2",
+      "reader_sha256": "c1f88e235c1ef189e334816d2f2087244047a59f00ef20d38ded72628b6d7e47",
+      "quote_sha256": "bf4792a853b6f76703150f59f7ff74680bf4d860e5d1082bf52f46d51f1f9824",
+      "official_url": "https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/ElektronischeDatenuebermittlung/elektronische_Datenuebermittlung.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 59,
+      "id": "taxreturn",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U89f95c957e4927d3.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U89f95c957e4927d3.reader.txt",
+      "native_LF": [
+        39,
+        46
+      ],
+      "raw_sha256": "aab2d0d33744a284bde6201e6bb85592e02d32feca364dd0ebf124db29eab189",
+      "reader_sha256": "046f748014641d4ab994afc39452bd274fbae0058b905911a7cfe8893a78ac29",
+      "quote_sha256": "c6c68af9049094e37a8d50e0dd9cf9a6feabadcd12520768a4c7bf35b3495ccb",
+      "official_url": "https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/Steuererklaerungen/steuererklaerungen_node.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 60,
+      "id": "faqnotice",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U86fc0388e3db84e2.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U86fc0388e3db84e2.reader.txt",
+      "native_LF": [
+        92,
+        93
+      ],
+      "raw_sha256": "337d6dcef2f3347223bc170ef6784e27ebbe0d932aa5f1d990a42156dad6863d",
+      "reader_sha256": "e5d549fb7ef9a320fd0299a946d59a31e1693e0a45de97bf54fc4be7bf9ae0a8",
+      "quote_sha256": "943b75a58b84d9f1f555e74e949775d313fac0415d2dbf2d4a6810f0255a66b0",
+      "official_url": "https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/FAQ/FAQ_node.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 61,
+      "id": "faqfine",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U86fc0388e3db84e2.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U86fc0388e3db84e2.reader.txt",
+      "native_LF": [
+        103,
+        105
+      ],
+      "raw_sha256": "337d6dcef2f3347223bc170ef6784e27ebbe0d932aa5f1d990a42156dad6863d",
+      "reader_sha256": "e5d549fb7ef9a320fd0299a946d59a31e1693e0a45de97bf54fc4be7bf9ae0a8",
+      "quote_sha256": "cdc4db0c6edf8edb5d3d31190efe3a0c57dab88b4cc62c8a27750432120f06c0",
+      "official_url": "https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/FAQ/FAQ_node.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 62,
+      "id": "service",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U03a6dc0ca5c0f130.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U03a6dc0ca5c0f130.reader.txt",
+      "native_LF": [
+        35,
+        47
+      ],
+      "raw_sha256": "ea8589910dfed8052b9fd5f896e15273835b084a91d7073c6d7ae6b63e637706",
+      "reader_sha256": "dfb0cd6cc90cbc97dd08a29eb845f12ccc681b62b0bff2117dcc93264bdd6f9b",
+      "quote_sha256": "e6f2bc61d62ffac180d1f9324a91a6f2b54189609b7f28f736c538b82fec1cf9",
+      "official_url": "https://online.portal.bzst.de/SharedDocs/Leistungsbeschreibung/DE/vorabverstaendigungsverfahren_in_verrechnungspreisfaellen.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 63,
+      "id": "minimum",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0085cf8336d322b7.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0085cf8336d322b7.reader.txt",
+      "native_LF": [
+        6,
+        7
+      ],
+      "raw_sha256": "98b5d025647310cfee89a82d45c43959c4794a97b67093cf49b45a0be7706373",
+      "reader_sha256": "5781cc627e4a232a99d9d7b8d073a7686346b17ac2906239d921636c6a6de718",
+      "quote_sha256": "dc8da1b675bf2406ca2e7b3eb110f00ab08b46296102b254d43abb5d9ad54fea",
+      "official_url": "https://www.gesetze-im-internet.de/minstg/__101.html",
+      "actual_read_bridge": {
+        "guide": "de-corporate-tax",
+        "quote_row": 93,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 64,
+      "id": "public",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U64cf9e0c4b718812.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U64cf9e0c4b718812.reader.txt",
+      "native_LF": [
+        6,
+        13
+      ],
+      "raw_sha256": "f4467378d90e26a02dd19a981113628ead792cdba735019dd671e92c4d03c08c",
+      "reader_sha256": "62f6a39120733c7f41f38ffd45209dedbad990eed8187470e7247e8a5c9a6e89",
+      "quote_sha256": "ac5b65e45ff3fc01fe201197eb77944cabfde9f9642f9b4ec4ed28fac31d797e",
+      "official_url": "https://www.gesetze-im-internet.de/hgb/__342b.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 65,
+      "id": "e4j",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U299b3fbe59cb42d3.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U299b3fbe59cb42d3.reader.txt",
+      "native_LF": [
+        6,
+        6
+      ],
+      "raw_sha256": "4f76daa631befc31b997b4295ac9c520f857bd7db4cb8b2b619bc799b8fadb46",
+      "reader_sha256": "d377e12d932d17188a3c7804a118f5cf77534c601edd482b1b157c2f9d8edf4a",
+      "quote_sha256": "9c21ea9319c15e74a0faedeb4fbb79fea166eb00a3bb7608264ebeb07fb4737a",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__4j.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 66,
+      "id": "e52",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-52-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc569ed131070949c.reader.txt",
+      "native_LF": [
+        22,
+        22
+      ],
+      "raw_sha256": "bec6241b5340b28eb111acc63168aaa37356253f714334f69786379dd8edbfd5",
+      "reader_sha256": "93f5e25556cf28a80e3d2347b80fce6403a3c51fea9a46caf2e3caf0aec4ecce",
+      "quote_sha256": "24c7f678e9576c5ced1178602c58ca0c2d7e63697cf42a249ae8c3962c0d85a3",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__52.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 67,
+      "id": "a1a",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U732515333ac6badf.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U732515333ac6badf.reader.txt",
+      "native_LF": [
+        6,
+        12
+      ],
+      "raw_sha256": "8b28a3eeb0c86d4dd47b396298a0094a5f00178efd89326429027f92c26f6c19",
+      "reader_sha256": "b656a1eb1c8544d71516be521dd727a611c8c23a8959329aeafdd75919f5dc64",
+      "quote_sha256": "bd9c871a97dfec49e8da204b948347100b487420d193f11a300302b900ecbf1e",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__1a.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 68,
+      "id": "ann1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        9,
+        9
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "1b8b63dcaf1a3e105efd67f7c6de947745db185ed2ea35a1db844876033283ca",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 69,
+      "id": "ann2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        11,
+        11
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "16c7cd63389d75216c1b99eb1894f1c8610f0f84efad93aeded0d7875cda12b1",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 70,
+      "id": "ann3",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        13,
+        13
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "d52bb3132cc51d257815cc888b420c0e359f3c00c02536277d4ab212c4950476",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 71,
+      "id": "ann4",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        15,
+        15
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "e4980082be688cd109747ef04fd5ec8a8117abfae31d5788573ec57d6afbae72",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 72,
+      "id": "ann5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        17,
+        17
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "d66b3782cd31a1410d2a733fee15478bc67e6a8b3c8611accc1639d15afbc4ff",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 73,
+      "id": "ann6",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        19,
+        19
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "2ba27303214d2756770f495a665c01c384b8f59761aaffeb0a5f56ca29b13300",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 74,
+      "id": "ann7",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        21,
+        21
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "f9bd6b56f08c14e1f6f290b897bd33d83c163df8f0b874e70c4ab6e589fa3caa",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 75,
+      "id": "ann8",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        23,
+        23
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "5c2bbc3fdfc6e8daa9def2a30cad9a61168959a84f3d3e1d093b3ee6b5c9ea9e",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 76,
+      "id": "ann9",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        25,
+        25
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "68b5241088a27e10f09baa9d5c70adea40dc0ae26d4128340fbf14349232619f",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 77,
+      "id": "ann10",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        27,
+        27
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "c6810587723692a927a05fd8e0ac3e70b6f7b1c9dee55156fb194b981e3ae11c",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 78,
+      "id": "ann11",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        29,
+        29
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "c67c441b7e4aa89ffb96f6cf992aa38f2c4afdfbc2e996b89e5e3f368360bb66",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 79,
+      "id": "ann12",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        31,
+        31
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "e451c50c0c4f707338221f3e79e0ba65c66130497d0e74c6da08f62db8afac58",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 80,
+      "id": "ann13",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        33,
+        33
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "022911a523817f5f9d3ab64c0ddfeb10adab53c3aef1db65b0486822e2d9e9ed",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 81,
+      "id": "ann14",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        35,
+        35
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "bc85e8795be3c462354fcc9cda06377cf036a552cd9e2c06cf4340afd62f56d3",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 82,
+      "id": "ann15",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        37,
+        37
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "82e6cd180436311d7cd0f701b5062e9197b340980159bc0dabef65391e198019",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 83,
+      "id": "ann16",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        39,
+        39
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "e0e30cdb3eb01d3369a0461ad486c68952bd6469aa6086991ed925d86ffa4c1b",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 84,
+      "id": "ann17",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        41,
+        41
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "3c1c2e33d81dccf3a28482a1a5c4ace7cb8ded905861cd0e133388cbd3965fe5",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 85,
+      "id": "ann18",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        43,
+        43
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "609c5e99d45682598e045f44d98e58633de667a467593465e5a1c45c8e4ba364",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 86,
+      "id": "ann-open",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+      "native_LF": [
+        44,
+        44
+      ],
+      "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+      "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+      "quote_sha256": "6935df2aa8a3564d2711a66dccfd4c55146304258a574f0154aae7f010503128",
+      "official_url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 87,
+      "id": "matrix-def",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.reader.txt",
+      "native_LF": [
+        62,
+        65
+      ],
+      "raw_sha256": "7d293974c423a4b62431fc79374a54c57e7015b3984c8394c4571588ee01140e",
+      "reader_sha256": "c35340e6bffc1aa43b8a84ef667bdd0c1e5d4df75c3ce9762ad6172e47fd62b7",
+      "quote_sha256": "3d79fbe218263831a9f2cc24444996ab8bda4d778ccacbb5f287a46d34232d7f",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2025-04-02-merkblatt-zur-transaktionsmatrix.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 88,
+      "id": "matrix-content",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.reader.txt",
+      "native_LF": [
+        68,
+        90
+      ],
+      "raw_sha256": "7d293974c423a4b62431fc79374a54c57e7015b3984c8394c4571588ee01140e",
+      "reader_sha256": "c35340e6bffc1aa43b8a84ef667bdd0c1e5d4df75c3ce9762ad6172e47fd62b7",
+      "quote_sha256": "d4e7b62536327a6658ca1ffe90cd8d91aacdb30d0e5d7c0bdec199b4263c83f8",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2025-04-02-merkblatt-zur-transaktionsmatrix.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 89,
+      "id": "matrix-format",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.reader.txt",
+      "native_LF": [
+        91,
+        99
+      ],
+      "raw_sha256": "7d293974c423a4b62431fc79374a54c57e7015b3984c8394c4571588ee01140e",
+      "reader_sha256": "c35340e6bffc1aa43b8a84ef667bdd0c1e5d4df75c3ce9762ad6172e47fd62b7",
+      "quote_sha256": "6109920cfa7935bbb3760ded84d350365e8f9921db7dbcb4d8d47f622bd98e87",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2025-04-02-merkblatt-zur-transaktionsmatrix.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 90,
+      "id": "matrix-before",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.reader.txt",
+      "native_LF": [
+        102,
+        127
+      ],
+      "raw_sha256": "7d293974c423a4b62431fc79374a54c57e7015b3984c8394c4571588ee01140e",
+      "reader_sha256": "c35340e6bffc1aa43b8a84ef667bdd0c1e5d4df75c3ce9762ad6172e47fd62b7",
+      "quote_sha256": "82f919c64025f8a2a05887506cef6173ae6d0f1c859f423fc110460f9b4f6f33",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2025-04-02-merkblatt-zur-transaktionsmatrix.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 91,
+      "id": "matrix-other",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.reader.txt",
+      "native_LF": [
+        128,
+        133
+      ],
+      "raw_sha256": "7d293974c423a4b62431fc79374a54c57e7015b3984c8394c4571588ee01140e",
+      "reader_sha256": "c35340e6bffc1aa43b8a84ef667bdd0c1e5d4df75c3ce9762ad6172e47fd62b7",
+      "quote_sha256": "ef8c6c9b146fac5ef7896b8abc8f8ce961e79d1e0e78a40a2b290236ffa5aedb",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2025-04-02-merkblatt-zur-transaktionsmatrix.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 92,
+      "id": "matrix-fine",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.reader.txt",
+      "native_LF": [
+        135,
+        137
+      ],
+      "raw_sha256": "7d293974c423a4b62431fc79374a54c57e7015b3984c8394c4571588ee01140e",
+      "reader_sha256": "c35340e6bffc1aa43b8a84ef667bdd0c1e5d4df75c3ce9762ad6172e47fd62b7",
+      "quote_sha256": "62053afc71386071a4f79a65adce9322be4a3f657395bb801c938bbe0702a7b6",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2025-04-02-merkblatt-zur-transaktionsmatrix.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 93,
+      "id": "b24-1.1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        196,
+        210
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "718de163a423ebe66e0056454e02599da254808a1e1918838c1437fb89aed29f",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 94,
+      "id": "b24-2.2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        549,
+        556
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "957d2381aa82021262c088a4fdb567901451c1587e096e39397f22850912043c",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 95,
+      "id": "b24-3.9",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        657,
+        667
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "507ae3293d6cb9272490d4e87e930611f7fa8591a68c3508959c389b07a3054e",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 96,
+      "id": "b24-3.10",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        668,
+        670
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "e6f88e34ba3926fda261e2f37de55a709f4f2c143ca4154e6c3e809a20dec059",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 97,
+      "id": "b24-3.12",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        684,
+        691
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "b0c3624f7c2145889fe2223eac5c6f77dc480bff4ba80c1ce428bd800cca34fe",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 98,
+      "id": "b24-3.13",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        697,
+        703
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "329d732618d54a355998163450d5b9021ae43acdc8526240eb5b3d3a9f68e6a3",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 99,
+      "id": "b24-3.30",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        866,
+        869
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "9ccc0d777d3a2f5e0100d77d5afa0f4c0a7b570e37fc37555de68ca1e586cbdc",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 100,
+      "id": "b24-3.63a",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        1167,
+        1173
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "7f6cf0339bb11a8f1d9185b79b82c22587ed4a20a1cb617d79197376dfcc3874",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 101,
+      "id": "b24-3.74",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        1241,
+        1246
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "705971fe8ebc14b11fbe1338bd19ce1263c74ec38fa23f649ac9f604a23da01e",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 102,
+      "id": "b24-3.75",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        1247,
+        1257
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "9eb20e4d7a77971a54be4b7157a48ecb70ded0562b6dd710ea4dfca06689641a",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 103,
+      "id": "b24-3.76",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        1258,
+        1262
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "522f1019aaf9353f95f3d1931fe3d6f80edf6434d6bf7e4fdfc7e36dd00de6c1",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 104,
+      "id": "b24-3.77",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        1263,
+        1269
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "34e00c504db907782ea0c8c1a328a4589fdb8d489e3b2b9ce2f43cf1517a42ad",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 105,
+      "id": "b24-3.133",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        1860,
+        1866
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "884bbd5226f2ca0a0c7a2500dafea5c3b70044911db744ec09d3e90adb759542",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 106,
+      "id": "b24-3.136",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        1884,
+        1891
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "2542924abd5c8f8982a60f96d151fb30c57153334d53cfa84ab2bbb0887a9016",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 107,
+      "id": "b24-3.152",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        2170,
+        2177
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "8794019c7df2ed18c8f79196767c23881c2dfd329fd196c24f6f42c80667ce51",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 108,
+      "id": "b24-4.7",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        2315,
+        2320
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "6bd8cb271e13b56054a4de5f9fbc3470abdc9b830e5aa2f6001f1a35ce10f7d4",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 109,
+      "id": "b24-4.8",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        2321,
+        2326
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "738bb19f498ccadd27395082baa0126b09ca8d69d0cc9d0a23ce4796a521929d",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 110,
+      "id": "b24-6.2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        2343,
+        2349
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "eb2acca43b299aa32f64baa14b4e187d192589fa9805521912b7371c0b48a0c2",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 111,
+      "id": "b20-34",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.reader.txt",
+      "native_LF": [
+        368,
+        379
+      ],
+      "raw_sha256": "1ba2e74e68b7fef3cf22922507c5f7f334f3602f397d9df89d76ad960cf1b4d1",
+      "reader_sha256": "89ec0d3cdf37b952ecbd34c6f760fcccbf1d3093b02edf525e0d98070394a72a",
+      "quote_sha256": "9f0a1d23c8f784f8212f43795e4c50980817b4079deecfdf051419b50f2c324b",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2020-12-03-Verwaltungsgrundsaetze-2020.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 112,
+      "id": "b20-38",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.reader.txt",
+      "native_LF": [
+        412,
+        415
+      ],
+      "raw_sha256": "1ba2e74e68b7fef3cf22922507c5f7f334f3602f397d9df89d76ad960cf1b4d1",
+      "reader_sha256": "89ec0d3cdf37b952ecbd34c6f760fcccbf1d3093b02edf525e0d98070394a72a",
+      "quote_sha256": "4b3752c5ecc5ac2945a1ba04d81c5ee9c362e5bfeb7e5fb2e95e1482a2a0b2ef",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2020-12-03-Verwaltungsgrundsaetze-2020.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 113,
+      "id": "b20-39",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.reader.txt",
+      "native_LF": [
+        418,
+        427
+      ],
+      "raw_sha256": "1ba2e74e68b7fef3cf22922507c5f7f334f3602f397d9df89d76ad960cf1b4d1",
+      "reader_sha256": "89ec0d3cdf37b952ecbd34c6f760fcccbf1d3093b02edf525e0d98070394a72a",
+      "quote_sha256": "27a3ff14ef44c9f35de5758ca984f43fc3f2659d6b7d342bc98b9f36871ea840",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2020-12-03-Verwaltungsgrundsaetze-2020.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 114,
+      "id": "b20-55",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.reader.txt",
+      "native_LF": [
+        636,
+        651
+      ],
+      "raw_sha256": "1ba2e74e68b7fef3cf22922507c5f7f334f3602f397d9df89d76ad960cf1b4d1",
+      "reader_sha256": "89ec0d3cdf37b952ecbd34c6f760fcccbf1d3093b02edf525e0d98070394a72a",
+      "quote_sha256": "79ad9dd65b3aabf80095d92ae041d65f28b100ee8cd81cd2f23ad9aee60d8ba1",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2020-12-03-Verwaltungsgrundsaetze-2020.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 115,
+      "id": "b20-56",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.reader.txt",
+      "native_LF": [
+        652,
+        656
+      ],
+      "raw_sha256": "1ba2e74e68b7fef3cf22922507c5f7f334f3602f397d9df89d76ad960cf1b4d1",
+      "reader_sha256": "89ec0d3cdf37b952ecbd34c6f760fcccbf1d3093b02edf525e0d98070394a72a",
+      "quote_sha256": "1f1fa328088ec5d758b5d3e6da75fe3363672662f27be99e2517bebdaafef60b",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2020-12-03-Verwaltungsgrundsaetze-2020.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 116,
+      "id": "b20-88",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.reader.txt",
+      "native_LF": [
+        920,
+        921
+      ],
+      "raw_sha256": "1ba2e74e68b7fef3cf22922507c5f7f334f3602f397d9df89d76ad960cf1b4d1",
+      "reader_sha256": "89ec0d3cdf37b952ecbd34c6f760fcccbf1d3093b02edf525e0d98070394a72a",
+      "quote_sha256": "f5a5ff1d8bca9ae3e6e04126dc7145643d9dc48eea23ca571e51872ef756c3ea",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2020-12-03-Verwaltungsgrundsaetze-2020.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 117,
+      "id": "b20-89",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.reader.txt",
+      "native_LF": [
+        923,
+        931
+      ],
+      "raw_sha256": "1ba2e74e68b7fef3cf22922507c5f7f334f3602f397d9df89d76ad960cf1b4d1",
+      "reader_sha256": "89ec0d3cdf37b952ecbd34c6f760fcccbf1d3093b02edf525e0d98070394a72a",
+      "quote_sha256": "eeb72a27be2a746431082aa815e49fe3c758cc371b2aa53abf29deb4f8117454",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2020-12-03-Verwaltungsgrundsaetze-2020.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 118,
+      "id": "bapa-1.1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.reader.txt",
+      "native_LF": [
+        59,
+        67
+      ],
+      "raw_sha256": "f28f8bc6b7686a34d508ed4c0f417e232454cdcdfe38cf05d42e7b71e8349c0a",
+      "reader_sha256": "f2c227d76497451513221976e0f50d3bad9a6e11de1ec0c653dde2a6b58025a2",
+      "quote_sha256": "7db31e7206ae01ca0aa4a58f7c975b43b9829b35e107c9265daae91f2f1de1a3",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-06-26-aenderung-aeao-89-89a.pdf?__blob=publicationFile&v=6",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 119,
+      "id": "bapa-1.3",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.reader.txt",
+      "native_LF": [
+        75,
+        83
+      ],
+      "raw_sha256": "f28f8bc6b7686a34d508ed4c0f417e232454cdcdfe38cf05d42e7b71e8349c0a",
+      "reader_sha256": "f2c227d76497451513221976e0f50d3bad9a6e11de1ec0c653dde2a6b58025a2",
+      "quote_sha256": "9d7e5d97615a89939bd684b7927c9270ca14735c2a1dd80c0092cfca50add229",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-06-26-aenderung-aeao-89-89a.pdf?__blob=publicationFile&v=6",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 120,
+      "id": "bapa-1.5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.reader.txt",
+      "native_LF": [
+        93,
+        99
+      ],
+      "raw_sha256": "f28f8bc6b7686a34d508ed4c0f417e232454cdcdfe38cf05d42e7b71e8349c0a",
+      "reader_sha256": "f2c227d76497451513221976e0f50d3bad9a6e11de1ec0c653dde2a6b58025a2",
+      "quote_sha256": "25a0f15ebe4061d24adf2b54d0ed084bec4e11d60a7966cd77b1641ecf3a0109",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-06-26-aenderung-aeao-89-89a.pdf?__blob=publicationFile&v=6",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 121,
+      "id": "bapa-1.8",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.reader.txt",
+      "native_LF": [
+        112,
+        125
+      ],
+      "raw_sha256": "f28f8bc6b7686a34d508ed4c0f417e232454cdcdfe38cf05d42e7b71e8349c0a",
+      "reader_sha256": "f2c227d76497451513221976e0f50d3bad9a6e11de1ec0c653dde2a6b58025a2",
+      "quote_sha256": "8d4f868d4f9d47b9e9867e3be6a6b20a6b67e2f0aaaffab8e01a90ee7baa75dd",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-06-26-aenderung-aeao-89-89a.pdf?__blob=publicationFile&v=6",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 122,
+      "id": "bapa-1.18",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.reader.txt",
+      "native_LF": [
+        230,
+        239
+      ],
+      "raw_sha256": "f28f8bc6b7686a34d508ed4c0f417e232454cdcdfe38cf05d42e7b71e8349c0a",
+      "reader_sha256": "f2c227d76497451513221976e0f50d3bad9a6e11de1ec0c653dde2a6b58025a2",
+      "quote_sha256": "840f1b9688c44d8854076f17db04a1c385a959926da53c13ad3c70d690cd0889",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-06-26-aenderung-aeao-89-89a.pdf?__blob=publicationFile&v=6",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 123,
+      "id": "bapa-4.2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.reader.txt",
+      "native_LF": [
+        416,
+        429
+      ],
+      "raw_sha256": "f28f8bc6b7686a34d508ed4c0f417e232454cdcdfe38cf05d42e7b71e8349c0a",
+      "reader_sha256": "f2c227d76497451513221976e0f50d3bad9a6e11de1ec0c653dde2a6b58025a2",
+      "quote_sha256": "5c515faac96697f87dfd43352bd4b1cded2aa3c3a9add80a0996c31163e3b67a",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-06-26-aenderung-aeao-89-89a.pdf?__blob=publicationFile&v=6",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 124,
+      "id": "a21entry",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/A21.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/A21.paragraphs.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "ba32a54b3abcc0b448b10f997810744c8ff0a316225a5b6d21fe328c2f2685d1",
+      "reader_sha256": "89011910b49fd158b61ad5fe7edbbb88a559a0c7c9d60f39d34cb6b8fb22ead4",
+      "quote_sha256": "86a4913eff0de0985fcc3f7e8e9fe465acf3d0c6ed0314470759b9ff9ec6a82c",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__21.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 125,
+      "id": "a21finance",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/A21.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/A21.paragraphs.txt",
+      "native_LF": [
+        2,
+        2
+      ],
+      "raw_sha256": "ba32a54b3abcc0b448b10f997810744c8ff0a316225a5b6d21fe328c2f2685d1",
+      "reader_sha256": "89011910b49fd158b61ad5fe7edbbb88a559a0c7c9d60f39d34cb6b8fb22ead4",
+      "quote_sha256": "e61d112b3b666434f346e8a9fca7d401385f29fae97c94c495397a5216528e30",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__21.html",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 126,
+      "id": "date24",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        8,
+        8
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "dfe96b987515c41ab18ef8f8743ee97308a251c23a00f8ca5a5b828ecccbef56",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 127,
+      "id": "date20",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ef48f669ff464bb.reader.txt",
+      "native_LF": [
+        9,
+        9
+      ],
+      "raw_sha256": "1ba2e74e68b7fef3cf22922507c5f7f334f3602f397d9df89d76ad960cf1b4d1",
+      "reader_sha256": "89ec0d3cdf37b952ecbd34c6f760fcccbf1d3093b02edf525e0d98070394a72a",
+      "quote_sha256": "0e0c872555e262b603ec7ba8ad86fcfd584cbdd5dac22d837f7a6360a68420a7",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2020-12-03-Verwaltungsgrundsaetze-2020.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 128,
+      "id": "datematrix",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.reader.txt",
+      "native_LF": [
+        8,
+        8
+      ],
+      "raw_sha256": "7d293974c423a4b62431fc79374a54c57e7015b3984c8394c4571588ee01140e",
+      "reader_sha256": "c35340e6bffc1aa43b8a84ef667bdd0c1e5d4df75c3ce9762ad6172e47fd62b7",
+      "quote_sha256": "a823a694f22523209fc83e703055a41b8bb0ce388cb188695ec5d9f4333d537f",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2025-04-02-merkblatt-zur-transaktionsmatrix.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 129,
+      "id": "dateapa",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.reader.txt",
+      "native_LF": [
+        8,
+        8
+      ],
+      "raw_sha256": "f28f8bc6b7686a34d508ed4c0f417e232454cdcdfe38cf05d42e7b71e8349c0a",
+      "reader_sha256": "f2c227d76497451513221976e0f50d3bad9a6e11de1ec0c653dde2a6b58025a2",
+      "quote_sha256": "23743e22212ada93fce9a3c29e92223a4eaf0a3d882ac2e376ea3fd366580c44",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-06-26-aenderung-aeao-89-89a.pdf?__blob=publicationFile&v=6",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 130,
+      "id": "aparepeal",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4e7898fbc57f02f9.reader.txt",
+      "native_LF": [
+        594,
+        605
+      ],
+      "raw_sha256": "f28f8bc6b7686a34d508ed4c0f417e232454cdcdfe38cf05d42e7b71e8349c0a",
+      "reader_sha256": "f2c227d76497451513221976e0f50d3bad9a6e11de1ec0c653dde2a6b58025a2",
+      "quote_sha256": "cd178e7051b7d48718e86511834b23576249c239959ba359b8ff49484d58fede",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-06-26-aenderung-aeao-89-89a.pdf?__blob=publicationFile&v=6",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 131,
+      "id": "b24-doc",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+      "native_LF": [
+        1019,
+        1021
+      ],
+      "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+      "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+      "quote_sha256": "3ef9ba4a0b1e0b0bff8f4c31141d4cace2d0737dcfeb1bdca242390e13961090",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All123 new subset quotations actually read in bounded batches1\u201310/11\u201323/24\u201338/39\u201351/52\u201365/66\u201384/85\u2013100/101\u2013113/114\u2013123, with original row mapped here. No complete rawbody reading claim."
+    }
+  ],
+  "direct_new_quotes": 123,
+  "prior_exact_actual_read_bridges": 8,
+  "precise_findings": "R61 missing no-fault CbCR catch-up deadline; own exact old/new quantity and rule reading complete. Existing small-business matrix statutory/regulation bridge remains precise, not inventively resolved.",
+  "no_portal_or_validator_execution": true
+}

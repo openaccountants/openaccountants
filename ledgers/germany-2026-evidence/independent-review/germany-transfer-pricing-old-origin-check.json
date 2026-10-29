@@ -1,0 +1,33 @@
+{
+  "actual_Git_origin_count": 398,
+  "origin_mismatches": 0,
+  "actual_refs": [
+    "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "62b7639a5a68324a83a96bb0190fff8b7c76f8c5"
+  ],
+  "semantic_spots_actually_read": [
+    3,
+    8,
+    10,
+    14,
+    20,
+    21,
+    23,
+    29,
+    35,
+    36,
+    45,
+    46,
+    47,
+    55,
+    56,
+    59,
+    64,
+    70,
+    76,
+    87,
+    91,
+    93
+  ],
+  "scope": "All398 actual Git origins verified;22 selected substantive old wording/destinations read. Unsupported prior OECD/CUP/group-turnover/notification claims are correction destinations, not false unchanged/current assertions."
+}

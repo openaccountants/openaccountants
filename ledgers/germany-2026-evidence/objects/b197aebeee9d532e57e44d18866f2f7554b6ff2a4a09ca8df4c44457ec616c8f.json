@@ -1,0 +1,40 @@
+{
+  "finding": "DE-B03: statutory profit-limit measure excludes both investment deductions and §7g(2) add-backs; Guide says only before deduction and a blanket200001cliff",
+  "Guide_sha256": "0b2d478cb4a3d256c84407c56dce518eae89a4f16f34f9280c507c13cbc1658e",
+  "exact_before": {
+    "84": "| § 7g profit limit: profit before the deduction not more than | EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |",
+    "159": "- **§ 7g investment deduction ([§ 7g EStG](https://www.gesetze-im-internet.de/estg/__7g.html)).** Up to 50% of a planned movable asset's expected cost comes off profit in advance. The EUR 200,000 profit limit is a cliff (EUR 200,001 means no deduction that year); the EUR 200,000 cap on open deductions is a different rule with the same number. A deduction may create a loss. Not bought by the end of the third year after: it is undone in the year taken (§ 7g(3)). In the year bought, up to the same share of the real cost is added back (not more than the open deductions) and the cost may be cut by as much (§ 7g(2)). The asset must be let or used only or almost only (at least 90%) in a German establishment until the end of the year after purchase (§ 7g(4)). Special depreciation of up to 40% also needs the profit limit met in the year before purchase (§ 7g(5), (6))."
+  },
+  "source": {
+    "official_url": "https://www.gesetze-im-internet.de/estg/__7g.html",
+    "act_article": "EStG7g(1)sentence2no1(b)",
+    "native_LF": [
+      7,
+      14
+    ],
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-7g-20261026.html",
+    "raw_sha256": "3723132d1cdfb871abc22e3729c63f79ddc7e09c6b2750f66f92aca73ed39348",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB033.txt",
+    "reader_sha256": "859ac461ec65fe96438195a0605e0981a06e5b3ef2849a872236ab00f7c5f841",
+    "exact_quote": "im Wirtschaftsjahr, in dem die Abzüge vorgenommen werden sollen, ohne Berücksichtigung der Investitionsabzugsbeträge nach Satz 1 und der Hinzurechnungen nach Absatz 2 200 000 Euro nicht überschreitet und",
+    "read_date": "2026-10-29",
+    "actual_read_LF": [
+      5,
+      27
+    ]
+  },
+  "options": {
+    "A_recommended": "At table84 use \"profit before investment deductions and §7g(2) add-backs\". In159 use \"Test the EUR 200,000 profit limit before both investment deductions and §7g(2) add-backs; a tested profit of EUR 200,001 fails for that year.\" Preserve the separate open-deduction cap and every other sentence.",
+    "B": "Retain existing short wording but immediately define the tested profit as calculated without §7g deductions or the acquisition-year add-backs under §7g(2), and label the200001separator as that adjusted tested profit."
+  },
+  "separating_control": {
+    "profit_without_IAB_and_addback": 199000,
+    "prior_IAB_acquisition_year_addback": 5000,
+    "profit_before_new_deduction_with_addback": 204000,
+    "new_expected_asset_cost": 20000,
+    "statutory_tested_profit": 199000,
+    "allowed_new_IAB_if_other_gates_satisfied": 10000,
+    "literal_unadjusted_guide_threshold_would_deny": true
+  },
+  "scope": "Own primary measurement correction, not a new speculative special-regime method. No Guide edit by writer."
+}

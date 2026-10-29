@@ -1,0 +1,13 @@
+{
+  "slug": "de-capital-gains",
+  "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-capital-gains.md",
+  "Guide_sha256": "5ec577aa8062f1fdc8a1af2fcc8fba597962776896c9ec0d5d50dea661280229",
+  "bytes": 36610,
+  "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R32-R36-capital-gains-writer-successor-2026-10-29/ledgers/de-capital-gains.md",
+  "ledger_sha256": "f08a37bc0bc0ecd6331a2e4ce591f21775bc51afc40eb5a6087e56c77f2b3226",
+  "current_rows": 88,
+  "prior_current_rows": 83,
+  "old_topics": 129,
+  "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/de-capital-gains.md",
+  "prior_ledger_sha256": "81aea5fed2ec144a698bb7fc3e0dc5b9989b533b2d5eb71e00efc61b73be1b94"
+}

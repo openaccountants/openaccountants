@@ -1,0 +1,11 @@
+{
+  "id": "E3",
+  "url": "https://www.gesetze-im-internet.de/estg/__3.html",
+  "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-3-20261024.html",
+  "raw_sha256": "85b9a2a8ff330e68a0df9f7e4e38d9dc515f1bce2635706bc14642de47c1c2b3",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/E3.paragraphs.txt",
+  "reader_sha256": "224a7bf142afa0d96056e2dd72367f02104b02b8638a75ee0b4a05ecff9d35b7",
+  "paragraphs": 2,
+  "extraction": "HTML jurAbsatz content; decoded declared charset, HTML entities decoded and whitespace collapsed in derived reader only. Raw body untouched.",
+  "acquisition": "prior cached body"
+}

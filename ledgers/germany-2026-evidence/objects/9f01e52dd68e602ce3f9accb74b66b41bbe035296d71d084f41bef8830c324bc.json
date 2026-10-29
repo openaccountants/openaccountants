@@ -1,0 +1,115 @@
+{
+  "status": "writer successor, different independent recheck pending",
+  "artifacts": [
+    {
+      "path": "after/germany-vat-return.md",
+      "sha256": "b0aac8b240ca637a881daa19ff6fd3eee0eee13bb111ce92d6dee3a49ddf4261",
+      "bytes": 44371
+    },
+    {
+      "path": "before/germany-vat-return.md",
+      "sha256": "0648208e05e68321e55227681b1351328ac36a5d503b8d6d81cb6ea9f6d24ef7",
+      "bytes": 40083
+    },
+    {
+      "path": "build-ledger.py",
+      "sha256": "413340cb939cba04666d220b212841b5eca760c850cb56ecffa545e251227e6a",
+      "bytes": 8163
+    },
+    {
+      "path": "check-and-seal.py",
+      "sha256": "e306699f2a829cf204e7a6cd5820ec980c88925320d6ca2500e5e26f55f31a7c",
+      "bytes": 11082
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "aa65612ab6aa0122fd76bd5f8390efc68ccd861a593262087fff325937ba4e55",
+      "bytes": 11526
+    },
+    {
+      "path": "first-check-failure.json",
+      "sha256": "fe5bbcf23876ce64d5aa14ee740bc950a7733864bff59bdc04392702138026c7",
+      "bytes": 228
+    },
+    {
+      "path": "historical-apply.py",
+      "sha256": "72ec6e5a5007f957b6e30cbee54ccbfb81da60cedfb600bb86c3da7ff81e4944",
+      "bytes": 14458
+    },
+    {
+      "path": "ledgers/germany-vat-return.md",
+      "sha256": "2baab2cd67a2b2883eb3245e49ce69dc0c9033acbfc6ce7bd7cc9701efe094aa",
+      "bytes": 197288
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "775d2ab13937f725276bfee123f2d63107f791c9357de4790e6c44b2ddd7dd46",
+      "bytes": 2838
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "bbae9c6089b91d57b531cd74ab581880f15b170f2ca8e9b71990778a187cab8a",
+      "bytes": 25929
+    },
+    {
+      "path": "preservation-proof.json",
+      "sha256": "41d6bff2f33deab3a22a957b5bc083d8f3bf9225dc276f87b3e1c0e0b5dc8b7f",
+      "bytes": 461
+    },
+    {
+      "path": "second-check-failure.json",
+      "sha256": "968d178803e62acb968c0380ec0aef28a28d00cc237df11d8b9c450099a63c7e",
+      "bytes": 641
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "d8058f194d77796ad4b9481fc2dac1e705c460e984d91f3d1b7c84aee506441d",
+      "bytes": 235709
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "cde923031bc87c3326d6ec7a769e9d02cb10baa33819378cf204e1607c8d8d8d",
+      "bytes": 166141
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "06eef9896301e5418c0baa332e189ace5260a57cacb7285caeef43d3aaa875b6",
+      "bytes": 887
+    },
+    {
+      "path": "support/germany-vat-return/old-topic-destinations.json",
+      "sha256": "d00176d3d2124eb848cef4e4944ff6409d14a4e97317cd121756efaadabdd07b",
+      "bytes": 210883
+    },
+    {
+      "path": "support/germany-vat-return/rows.json",
+      "sha256": "b042f403693e6c7b8b6cd8a331b33c5af038c53a87f1dba7f56930aa9db58e64",
+      "bytes": 83139
+    },
+    {
+      "path": "support/guide.diff",
+      "sha256": "e3c8203f177915c9499df57a82a26f821bfdb8a0dd6426f4a5a81cb2995dda0e",
+      "bytes": 21369
+    },
+    {
+      "path": "support/line-map.json",
+      "sha256": "542f6f7634ff08a6d1f4e0e56beb85a1df0a8b6ffc0487363cc4aa61c274ff28",
+      "bytes": 23005
+    },
+    {
+      "path": "third-check-failure.json",
+      "sha256": "b58535d38e2f76f9e3744dd1aa50d7f3d76f92636802e453ffda8a8249587f58",
+      "bytes": 215
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "92e1bb63dff75ff90b4344693e830a86ae12f8a7a1f58d1a230ea7cbc4c03bc3",
+      "bytes": 26214
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "89ea7a4d118c242d03edc7a4d9f94a0d7004553efa3d718fccb982b4ce2724f1",
+      "bytes": 2559
+    }
+  ]
+}

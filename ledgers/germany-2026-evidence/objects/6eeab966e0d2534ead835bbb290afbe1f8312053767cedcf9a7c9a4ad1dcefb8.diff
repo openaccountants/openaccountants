@@ -1,0 +1,26 @@
+--- before
++++ after
+@@ -1,7 +1,7 @@
+ ---
+ name: de-rental-income
+ description: "German income from letting property held privately (Einkünfte aus Vermietung und Verpachtung, § 21 EStG), tax year 2026. Covers what counts as rent and Werbungskosten (§ 9 EStG), building depreciation at 2%, 2.5% or 3% (§ 7(4)), the 5% declining-balance AfA for new housing (§ 7(5a)) and § 7b special depreciation for new rental flats, maintenance versus acquisition-related production cost (the 15% three-year rule) and § 82b EStDV spreading, cheap lets to relatives (the 50% and 66% rules), holiday and short-term lets and the intention to make a surplus, losses, the ten-year rule on a sale (§ 23), Anlage V and deadlines. Trigger on: Mieteinnahmen, Vermietung, Anlage V, AfA Gebäude, Werbungskosten Vermietung, anschaffungsnahe Herstellungskosten, verbilligte Vermietung, Ferienwohnung, Spekulationsfrist, rental income Germany. Out of scope: property in a business or a trade in property (de-trade-tax), the tariff (de-einkommensteuer-freelancer), non-resident landlords (de-non-resident-tax), sales beyond the ten-year test (de-capital-gains), VAT returns (germany-vat-return)."
+-version: 1.5
++version: 1.6
+ jurisdiction: DE
+ tax_year: 2026
+ last_updated: 2026-10-29
+@@ -216,12 +216,12 @@
+ - **Late-filing surcharge** ([§ 152 AO](https://www.gesetze-im-internet.de/ao_1977/__152.html)). Compulsory if the return is not filed "binnen 14 Monaten nach Ablauf des Kalenderjahrs" (§ 152(2) no. 1), advised or not. For 2026 the 14 months end on 29 February 2028, the same day as the advised deadline, so for an advised return it bites from the day after that deadline. Also compulsory if a return the office called in early is not filed by the date set (no. 3). The 19-month period in no. 2 is only for farmers with a non-calendar financial year. Amount: 0.25% a month of the tax less prepayments and withheld tax, at least EUR 25 for each started month (§ 152(5)), rounded down to full euros and capped at EUR 25,000 (§ 152(10)). Not compulsory, though still possible at discretion, if the deadline was extended, the tax is nil or negative, or the tax does not exceed prepayments and withheld tax (§ 152(3)). For an unadvised 2025 return filed now the surcharge is discretionary until the 14 months run out at the end of February 2027.
+ - **Interest** ([§ 233a AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html)): back tax and refunds carry interest of 0.15% a month ([§ 238(1a) AO](https://www.gesetze-im-internet.de/ao_1977/__238.html)) starting 15 months after the end of the tax year, so from 1 April 2028 for 2026.
+ - **§ 7b claw-back**: assessments are reopened even if final; the assessment period restarts at the end of the year of the triggering event, and § 233a(2a) AO does not apply (§ 7b(4)), so interest runs from the normal date.
+-- **Under-declaration** (wrong deductions, unreported rent): the tax office corrects the assessment with interest; deliberate cases are tax offences. Refer.
++- **Under-declaration** (wrong deductions, unreported rent): refer for the appropriate return or assessment correction. Apply § 233a interest only where its conditions and statutory interest period are met. Deliberate false or incomplete tax facts that shorten tax can constitute tax offences under § 370 AO; refer.
+ 
+ ## Cross-border points
+ 
+ - **Non-resident landlords** with German property are taxed on the rent ([§ 49(1) no. 6 EStG](https://www.gesetze-im-internet.de/estg/__49.html)). They deduct only Werbungskosten linked to the German income ([§ 50(1) EStG](https://www.gesetze-im-internet.de/estg/__50.html)), and their tariff is applied with the basic allowance added back unless an option applies. Compute the rental result here; liability, the § 1(3) and § 1a options, and filing are in `de-non-resident-tax`.
+-- **German residents with property abroad**: report it; treaties usually leave rent to the state where the property is. Treaty exemption, progression and Anlage AUS: refer.
++- **German residents with property abroad**: report the rental income and determine the treatment from the actual treaty for the property country. Treaty exemption, credit, progression and Anlage AUS: refer.
+ - **AfA for property elsewhere in the EU or EEA**: § 7(5a) and § 7b reach buildings in the EU or EEA (and for § 7b, states giving administrative help), which matters for a resident's foreign property only where Germany taxes it. Refer.
+ - **Moving in or out during the year**: `de-partners-and-part-year`.
+ 

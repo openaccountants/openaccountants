@@ -1,0 +1,33 @@
+{
+  "headRefOid": "2e232d255055a9c5d25176b15126dfff69af4c5c",
+  "mergeCommit": {
+    "oid": "08ed44c5ae12909de8ddea8bcdd6207b699b3032"
+  },
+  "mergedAt": "2026-10-27T16:42:54Z",
+  "number": 903,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "[DE] Restore rules lost in earlier rewrites",
+  "url": "https://github.com/openaccountants/openaccountants/pull/903",
+  "independent_review_comments": [
+    {
+      "id": "IC_kwDOR-KM1s8AAAABgFGufA",
+      "author": {
+        "login": "michaelcutajar1995"
+      },
+      "authorAssociation": "MEMBER",
+      "body": "Independent review (Claude): 43 figures checked (actual count) against gesetze-im-internet.de (UStG §§ 3c, 12, 13b, 15, 18a, 24; UStDV §§ 17a, 33; EStG §§ 4, 17, 20, 23, 43a, 44, 52; InvStG §§ 16, 18, 20), the 2026 USt 1 A form and the BMF letter of 22 Dec 2025. Lost content restored: 23. All 4 restored worked examples in de-capital-gains recomputed by hand and check-examples passes (0 failures, both files). No protected frontmatter and nothing after the CTA block changed.\nFixed: (1) germany-vat-return said breakfast with a room stays at 19%: wrong for 2026; breakfast food is now 7% under § 12(2) no. 15 (drinks 19%), and the package share is 15% under UStAE 12.16(12) as amended by BMF 22 Dec 2025. (2) The entry-certificate rule cited § 17a UStDV but misstated it; rewritten to the actual presumption (two independent documents; plus the Gelangensbestätigung by the 10th of the next month where the customer transports). (3) § 24 row omitted the 19% average rate for sawmill products and drinks. (4) Vorabpauschale step 6 had no citation; added § 16(1) no. 2 and § 20(1) InvStG and § 44(1), (1b) EStG. (5) The 'while facts are missing' defaults are labelled as working practice, not law.\nStill not confirmed: EUR 50 gift limit counted by calendar year for VAT; machine-produced signed entertainment receipt (both already on Not yet confirmed).\nReview head: 2e232d255055a9c5d25176b15126dfff69af4c5c",
+      "createdAt": "2026-10-27T16:42:00Z",
+      "includesCreatedEdit": false,
+      "isMinimized": false,
+      "minimizedReason": "",
+      "reactionGroups": [],
+      "url": "https://github.com/openaccountants/openaccountants/pull/903#issuecomment-6447804028",
+      "viewerDidAuthor": true
+    }
+  ],
+  "recorded_review_heads": [
+    "2e232d255055a9c5d25176b15126dfff69af4c5c"
+  ],
+  "review_head_matches_final_head": true
+}

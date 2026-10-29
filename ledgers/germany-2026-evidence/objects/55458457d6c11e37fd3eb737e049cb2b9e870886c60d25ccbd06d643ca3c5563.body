@@ -1,0 +1,2316 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<title>FAQ - GKV-Spitzenverband, DVKA</title>
+<meta name="keywords" content="FAQ, h&auml;ufige Fragen, Leistungsanspruch, Formulare, Vordrucke, Anspruchsbescheinigung" />
+<meta property="md_title" content="FAQ" />
+<meta property="md_archive" content="true" />
+<meta property="md_date" content="2015-10-26T14:45:59Z" />
+<meta property="md_sourceOfLaw" content="keine Rechtsquelle" />
+<meta property="md_targetGroup" content="Arbeitgeber, Arbeitnehmer, Familienangehörige, Rentner, Selbstständige, Studenten, Urlauber" />
+<meta property="md_targetGroup_id" content="967, 968, 969, 970, 971, 972, 973" />
+<meta property="md_theme" content="Versicherungsrecht, Leistungsrecht" />
+<meta property="md_theme_id" content="833, 906" />
+<meta property="md_country" content="Zypern, Vereinigtes Königreich, USA, Uruguay, Ungarn, Türkei, Tunesien, Tschechien, Spanien, Slowenien, Slowakei, Serbien, Schweiz, Schweden, Rumänien, Kanada-Quebec, Portugal, Polen, Österreich, Norwegen, Niederlande, Montenegro, Nordmazedonien, Marokko, Malta, Luxemburg, Litauen, Liechtenstein, Lettland, Kroatien, Korea, Kanada, Japan, Italien, Israel, Island, Irland, Indien, Griechenland, Frankreich, Finnland, Estland, Deutschland, Dänemark, China, Chile, Bulgarien, Brasilien, Bosnien und Herzegowina (Republik Srpska), Bosnien und Herzegowina (Föderationsgebiet), Belgien, Australien, Kosovo, Abkommensstaaten, EU/EWR, EU/EWR Schweiz, EU" />
+<meta property="md_country_id" content="468, 467, 466, 465, 464, 462, 461, 460, 459, 458, 457, 456, 455, 454, 452, 451, 450, 449, 418, 417, 416, 415, 414, 413, 412, 411, 410, 409, 408, 407, 406, 405, 404, 403, 402, 401, 400, 399, 398, 397, 396, 395, 394, 393, 392, 391, 390, 389, 388, 387, 386, 385, 5824, 515, 514, 513, 512" />
+<!-- breadCrumb metadata -->
+<meta property="md_path" content="de | de | Arbeitgeber &amp; Erwerbst&auml;tige | H&auml;ufig gestellte Fragen" />
+<!-- breadCrumb metadata -->
+<meta name="author" content="GKV-Spitzenverband, DVKA" />
+<meta name="dcterms.publisher" content="GKV-Spitzenverband, DVKA" />
+<meta name="dcterms.rightsHolder" content="GKV-Spitzenverband, DVKA" />
+<meta name="revisit-after" content="14 days" />
+<meta name="robots" content="index,follow" />
+<link rel="image_src" href="https://www.dvka.de/media/bilder/bilder-rebranding/logo-dvka.svg" />
+<link rel="icon" type="image/png" href="https://www.dvka.de/media/global/img/layout/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://www.dvka.de/media/global/img/layout/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="https://www.dvka.de/media/global/img/layout/favicongif.gif" type="image/gif" />
+<link rel="shortcut icon" href="https://www.dvka.de/media/global/img/layout/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://www.dvka.de/media/global/css/index.css?v=1791281999489" media="screen,print" />
+<script defer type="text/javascript" type="module" src="https://www.dvka.de/media/global/js/main.js?v=1791281999489"></script>
+<script type="text/javascript" src="https://www.dvka.de/de/global/global_text.jsp"></script>
+<script>
+function clearCookies() {
+document.cookie.split(";").forEach(function(c) {
+if (c !== "") {
+document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/;SameSite=Lax;");
+}
+});
+localStorage.clear();
+console.log("Cookies cleared");
+}
+if (localStorage.getItem("cookie-consent") === null ) { window.clearCookies(); }
+</script>
+<!-- Piwik -->
+<script type="text/javascript">
+var _paq = window._paq = window._paq || [];
+// require consent
+_paq.push(["requireConsent"]);
+_paq.push(["trackPageView"]);
+_paq.push(["enableLinkTracking"]);
+(function() {
+var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webtracker.gkv-spitzenverband.de/";
+_paq.push(["setTrackerUrl", u+"matomo.php"]);
+_paq.push(["setSiteId", "24"]);
+var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+g.defer=true; g.async=true; g.src=u+"matomo.js"; s.parentNode.insertBefore(g,s);
+})();
+</script>
+<!-- Piwik Image Tracker -->
+<noscript>
+<img src="https://webtracker.gkv-spitzenverband.de/piwik.php?idsite=24&amp;rec=1" style="border:0" alt="" />
+</noscript>
+<!-- End Piwik -->
+</head>
+<body>
+<header class="header fixed top-0 right-0 left-0 z-nav transition-[top] ease-in-out duration-300 lg:sticky lg:top-[-42px]">
+<div class="bg-white shadow-xl lg:pt-md">
+<a id="skip-nav" href="#main"class="block h-0 w-0 overflow-hidden">Navigation überspringen</a>
+<div class="container bg-white">
+<nav class="header__menu__lg__meta hidden lg:block" aria-label="Desktop navigation items">
+<ul class=" flex justify-end gap-sm">
+
+<li>
+<div class="nav-item-meta grid-cols-1
+nav-item-meta__lg hidden relative lg:grid
+">
+<a class="group link inline-flex cursor-pointer btn gap-xs nav-item-meta__button lg:py-0 !text-grey"
+aria-label="Leichte Sprache" aria-expanded="false" href="https://www.dvka.de/de/global/leichte-sprache/">
+<span class="flex items-center">
+<svg style="height:16px; width:16px;">
+<use href="https://www.dvka.de/media/global/sprach-icons/icon-leichte-sprache.svg#img"></use>
+</svg>
+</span>
+<span class="flex flex-col menu-small">
+<span class="flex items-center flex-1 group-focus:underline group-hover:underline">Leichte Sprache</span>
+</span>
+</a>
+</div>
+</li>
+<li>
+<div class="nav-item-meta grid-cols-1
+nav-item-meta__lg hidden relative lg:grid
+">
+<a class="group link inline-flex cursor-pointer btn gap-xs nav-item-meta__button lg:py-0 !text-grey"
+aria-label="Gebärdensprache" aria-expanded="false" href="https://www.dvka.de/de/global/gebaerdenvideos/">
+<span class="flex items-center">
+<svg style="height:16px; width:16px;">
+<use href="https://www.dvka.de/media/global/sprach-icons/icon-gebaerdensprache.svg#img"></use>
+</svg>
+</span>
+<span class="flex flex-co menu-small">
+<span class="flex items-center flex-1 group-focus:underline group-hover:underline">Gebärdensprache</span>
+</span>
+</a>
+</div>
+</li>
+<li>
+<div class="nav-item-meta grid-cols-1
+nav-item-meta__lg hidden relative lg:grid
+">
+<button class="nav-item-meta__button hidden lg:block py-xxs lg:py-0 menu-small !text-grey"
+aria-label="Sprachen Menü öffnen" aria-controls="nav-item-meta__lvl2-3" aria-expanded="false">
+<span class="menu-small flex items-center gap-1">
+<svg style="height:16px; width:16px;">
+<use href="https://www.dvka.de/media/global/sprach-icons/globus-icon.svg#img"></use>
+</svg>
+Sprachen
+</span>
+</button>
+<div class="nav-item-meta__lvl2 lg:overflow-visible lg:transition-none lg:max-h-none lg:absolute lg:z-popup lg:top-[100%] lg:left-0 lg:w-max lg:pt-xxxs lg:hidden"
+id="nav-item-meta__lvl2-3">
+<ul class="grid grid-cols-1 bg-white p-1">
+<li>
+<a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue menu-small !text-grey hover py-xxs"
+aria-label="Deutsch" aria-expanded="false" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/faq/">
+<span class="flex items-center">
+<img src="https://www.dvka.de/media/global/sprach-icons/country-flag-de.svg" alt="Deutsch language flag symbol" height="16" width="auto">
+</span>
+<span class="flex flex-col">
+<span class="flex items-center flex-1 group-focus:underline group-hover:underline">Deutsch</span>
+</span>
+</a>
+</li>
+<li>
+<a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue menu-small !text-grey hover py-xxs"
+aria-label="English" aria-expanded="false" href="https://www.dvka.de/en/arbeitgeber-erwerbstaetige/faq/">
+<span class="flex items-center">
+<img src="https://www.dvka.de/media/global/sprach-icons/country-flag-en.svg" alt="English language flag symbol" height="16" width="auto">
+</span>
+<span class="flex flex-col">
+<span class="flex items-center flex-1 group-focus:underline group-hover:underline">English</span>
+</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</nav>
+<nav class="h-auto lg:flex lg:justify-between lg:items-end lg:gap-sm lg:h-[80px] lg:pb-md">
+<div class="h-[50px] py-sm flex justify-between items-center lg:h-auto lg:py-0">
+<a class="flex flex-col justify-center" aria-label="Link to homepage" href="https://www.dvka.de/de/" title="Zur Startseite des Webauftritts der DVKA">
+<div class="lg:w-[150px] nav-logo w-[83px] h-auto lg:w-[150px] lg:h-auto lg:transition-all lg:duration-300">
+<img class="w-full h-full" src="https://www.dvka.de/media/bilder/bilder-rebranding/logo-dvka.svg" >
+</div>
+</a>
+<div class="lg:hidden">
+<button type="button" role="button" class="menu-toggle w-[44px] h-[44px] relative"
+aria-label="Open mobile menu" aria-controls="header__menu" aria-expanded="false">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+class="transition-all ease-in-out duration-300 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-base absolute"
+color="#3c5466" style="color: rgb(60, 84, 102);" height="32" width="32"
+xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+</svg>
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+class="transition-all ease-in-out duration-300 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-label absolute opacity-0"
+color="#3c5466" style="color: rgb(60, 84, 102);" height="32" width="32"
+xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0V0z"></path>
+<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path>
+</svg>
+</button>
+</div>
+</div>
+<div id="header__menu"
+class="header__menu flex origin-top flex-col overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden max-h-screen"
+role="dialog" aria-modal="true" aria-label="Mobile menu modal">
+<div class="flex h-[calc(100vh-54px)] flex-col overflow-y-auto">
+<ul class="mb-xxl mt-sm divide-y divide-grey-lighter" aria-label="Mobile navigation items">
+<li>
+<div class="nav-item grid grid-cols-1 lg:hidden">
+<div class="flex justify-between items-center min-h-[46px] lg:justify-center lg:min-h-fit">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-blue-darkest menu py-xs lg:p-0"
+aria-label="Follow link" aria-controls="nav-item__lvl2-0" aria-expanded="false title=""
+href="https://www.dvka.de/de/versicherte/">Versicherte</a>
+<button type="button" role="button"
+class="nav-lvl2-toggle w-[44px] h-[44px] flex justify-center items-center"
+aria-label="Toggle layer 2 links" aria-controls="nav-item__lvl2-1"
+aria-expanded="false">
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+stroke-linecap="round" stroke-linejoin="round"
+class="origin-center transition-all ease-in-out duration-300"
+color="#3c5466" style="color: rgb(60, 84, 102);" height="32" width="32"
+xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</button>
+</div>
+<div class="nav-item__lvl2 transition-[max-height] origin-top ease-in-out duration-300 max-h-0 overflow-hidden hidden lg:overflow-visible lg:transition-none lg:max-h-none lg:pt-[40px] lg:absolute lg:z-popup lg:top-[100%] lg:left-1/2 lg:-translate-x-1/2"
+id="nav-item__lvl2-1">
+<ul class="bg-blue grid grid-cols-1 divide-y divide-grey-lighter px-sm lg:bg-white lg:shadow-lg lg:w-max">
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/versicherte/touristen/">Touristen</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/versicherte/rentner/">Rentner/-innen</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/versicherte/grenzgaenger/">Grenzg&auml;nger</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/versicherte/studierende-und-praktikanten/">Studierende und Praktikanten</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/versicherte/geringfuegig-beschaeftigte-personen/">Geringf&uuml;gig besch&auml;ftigte Personen</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/versicherte/faq/">H&auml;ufig gestellte Fragen</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<div class="nav-item grid grid-cols-1 lg:hidden">
+<div class="flex justify-between items-center min-h-[46px] lg:justify-center lg:min-h-fit">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-blue-darkest menu py-xs lg:p-0"
+aria-label="Follow link" aria-controls="nav-item__lvl2-1" aria-expanded="false title=""
+href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/">Arbeitgeber &amp; Erwerbst&auml;tige</a>
+<button type="button" role="button"
+class="nav-lvl2-toggle w-[44px] h-[44px] flex justify-center items-center"
+aria-label="Toggle layer 2 links" aria-controls="nav-item__lvl2-1"
+aria-expanded="false">
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+stroke-linecap="round" stroke-linejoin="round"
+class="origin-center transition-all ease-in-out duration-300"
+color="#3c5466" style="color: rgb(60, 84, 102);" height="32" width="32"
+xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</button>
+</div>
+<div class="nav-item__lvl2 transition-[max-height] origin-top ease-in-out duration-300 max-h-0 overflow-hidden hidden lg:overflow-visible lg:transition-none lg:max-h-none lg:pt-[40px] lg:absolute lg:z-popup lg:top-[100%] lg:left-1/2 lg:-translate-x-1/2"
+id="nav-item__lvl2-1">
+<ul class="bg-blue grid grid-cols-1 divide-y divide-grey-lighter px-sm lg:bg-white lg:shadow-lg lg:w-max">
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/antraege-finden/">Antrags- und Bescheinigungsverfahren</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/antragstellung-im-sv-meldeportal/">Antragstellung im SV-Meldeportal</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/laenderspezifische-informationen/">L&auml;nderspezifische Informationen</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/geltungsbereiche/">Geltungsbereiche im internationalen Sozialrecht</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/faq/">H&auml;ufig gestellte Fragen</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<div class="nav-item grid grid-cols-1 lg:hidden">
+<div class="flex justify-between items-center min-h-[46px] lg:justify-center lg:min-h-fit">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-blue-darkest menu py-xs lg:p-0"
+aria-label="Follow link" aria-controls="nav-item__lvl2-2" aria-expanded="false title=""
+href="https://www.dvka.de/de/leistungserbringer/">Leistungserbringer</a>
+<button type="button" role="button"
+class="nav-lvl2-toggle w-[44px] h-[44px] flex justify-center items-center"
+aria-label="Toggle layer 2 links" aria-controls="nav-item__lvl2-1"
+aria-expanded="false">
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+stroke-linecap="round" stroke-linejoin="round"
+class="origin-center transition-all ease-in-out duration-300"
+color="#3c5466" style="color: rgb(60, 84, 102);" height="32" width="32"
+xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</button>
+</div>
+<div class="nav-item__lvl2 transition-[max-height] origin-top ease-in-out duration-300 max-h-0 overflow-hidden hidden lg:overflow-visible lg:transition-none lg:max-h-none lg:pt-[40px] lg:absolute lg:z-popup lg:top-[100%] lg:left-1/2 lg:-translate-x-1/2"
+id="nav-item__lvl2-1">
+<ul class="bg-blue grid grid-cols-1 divide-y divide-grey-lighter px-sm lg:bg-white lg:shadow-lg lg:w-max">
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/leistungserbringer/vertragsaerztliche-versorgung/">Vertrags&auml;rztliche Versorgung</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/leistungserbringer/vertragszahnaerztliche-versorgung/">Vertragszahn&auml;rztliche Versorgung</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/leistungserbringer/stationaere-versorgung/">Station&auml;re Versorgung</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/leistungserbringer/informationsportal-ehic-peb/">Informationsportal EHIC/PEB</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/leistungserbringer/leistungsumfang/">Leistungsumfang EHIC/PEB</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/leistungserbringer/brexit/">Brexit</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<div class="nav-item grid grid-cols-1 lg:hidden">
+<div class="flex justify-between items-center min-h-[46px] lg:justify-center lg:min-h-fit">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-blue-darkest menu py-xs lg:p-0"
+aria-label="Follow link" aria-controls="nav-item__lvl2-3" aria-expanded="false title=""
+href="https://www.dvka.de/de/die-dvka/">Die DVKA</a>
+<button type="button" role="button"
+class="nav-lvl2-toggle w-[44px] h-[44px] flex justify-center items-center"
+aria-label="Toggle layer 2 links" aria-controls="nav-item__lvl2-1"
+aria-expanded="false">
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+stroke-linecap="round" stroke-linejoin="round"
+class="origin-center transition-all ease-in-out duration-300"
+color="#3c5466" style="color: rgb(60, 84, 102);" height="32" width="32"
+xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</button>
+</div>
+<div class="nav-item__lvl2 transition-[max-height] origin-top ease-in-out duration-300 max-h-0 overflow-hidden hidden lg:overflow-visible lg:transition-none lg:max-h-none lg:pt-[40px] lg:absolute lg:z-popup lg:top-[100%] lg:left-1/2 lg:-translate-x-1/2"
+id="nav-item__lvl2-1">
+<ul class="bg-blue grid grid-cols-1 divide-y divide-grey-lighter px-sm lg:bg-white lg:shadow-lg lg:w-max">
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/die-dvka/wir-ueber-uns/">Wir &uuml;ber uns</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/die-dvka/ausschreibungen/">Ausschreibungen</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/die-dvka/merkblaetter/">Merkbl&auml;tter</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/die-dvka/so-erreichen-sie-uns/">So erreichen Sie uns</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/die-dvka/karriere/">Karriere</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/die-dvka/rechtliche-hinweise-zum-datenschutz/">Rechtliche Hinweise zum Datenschutz</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<div class="nav-item grid grid-cols-1 lg:hidden">
+<div class="flex justify-between items-center min-h-[46px] lg:justify-center lg:min-h-fit">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-blue-darkest menu py-xs lg:p-0"
+aria-label="Follow link" aria-controls="nav-item__lvl2-4" aria-expanded="false title=""
+href="https://www.dvka.de/de/informationen/">Informationen</a>
+<button type="button" role="button"
+class="nav-lvl2-toggle w-[44px] h-[44px] flex justify-center items-center"
+aria-label="Toggle layer 2 links" aria-controls="nav-item__lvl2-1"
+aria-expanded="false">
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+stroke-linecap="round" stroke-linejoin="round"
+class="origin-center transition-all ease-in-out duration-300"
+color="#3c5466" style="color: rgb(60, 84, 102);" height="32" width="32"
+xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</button>
+</div>
+<div class="nav-item__lvl2 transition-[max-height] origin-top ease-in-out duration-300 max-h-0 overflow-hidden hidden lg:overflow-visible lg:transition-none lg:max-h-none lg:pt-[40px] lg:absolute lg:z-popup lg:top-[100%] lg:left-1/2 lg:-translate-x-1/2"
+id="nav-item__lvl2-1">
+<ul class="bg-blue grid grid-cols-1 divide-y divide-grey-lighter px-sm lg:bg-white lg:shadow-lg lg:w-max">
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/auskunftstellen/">Auskunftstellen</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/brexit/">Brexit</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/europaeisches-netzwerk/">Europ&auml;isches Netzwerk</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/glossar/">Glossar</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/institution-repository/">Institution Repository</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/rechtsquellen/">Rechtsquellen</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/situation-israel/">Situation in Israel</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/umrechnungskurse/">Umrechnungskurse</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+<ul class="header__menu__meta flex flex-1 flex-col pb-md" aria-label="Desktop navigation items">
+
+<li>
+<div class="nav-item-meta grid-cols-1
+grid lg:hidden
+">
+<a class="group link inline-flex cursor-pointer btn gap-xs nav-item-meta__button lg:py-0 !text-grey"
+aria-label="Leichte Sprache" aria-expanded="false" href="https://www.dvka.de/de/global/leichte-sprache/">
+<span class="flex items-center">
+<svg style="height:16px; width:16px;">
+<use href="https://www.dvka.de/media/global/sprach-icons/icon-leichte-sprache.svg#img"></use>
+</svg>
+</span>
+<span class="flex flex-col menu-small">
+<span class="flex items-center flex-1 group-focus:underline group-hover:underline">Leichte Sprache</span>
+</span>
+</a>
+</div>
+</li>
+<li>
+<div class="nav-item-meta grid-cols-1
+grid lg:hidden
+">
+<a class="group link inline-flex cursor-pointer btn gap-xs nav-item-meta__button lg:py-0 !text-grey"
+aria-label="Gebärdensprache" aria-expanded="false" href="https://www.dvka.de/de/global/gebaerdenvideos/">
+<span class="flex items-center">
+<svg style="height:16px; width:16px;">
+<use href="https://www.dvka.de/media/global/sprach-icons/icon-gebaerdensprache.svg#img"></use>
+</svg>
+</span>
+<span class="flex flex-co menu-small">
+<span class="flex items-center flex-1 group-focus:underline group-hover:underline">Gebärdensprache</span>
+</span>
+</a>
+</div>
+</li>
+<li class="flex flex-1 flex-col">
+<ul class="flex flex-col gap-sm" aria-label="Mobile meta navigation items">
+<li>
+<div class="nav-item-meta grid-cols-1
+grid lg:hidden
+">
+<button class="nav-item-meta__button hidden lg:block py-xxs lg:py-0 menu-small !text-grey"
+aria-label="Sprachen Menü öffnen" aria-controls="nav-item-meta__lvl2-3" aria-expanded="false">
+<span class="menu-small flex items-center gap-1">
+<svg style="height:16px; width:16px;">
+<use href="https://www.dvka.de/media/global/sprach-icons/globus-icon.svg#img"></use>
+</svg>
+Sprachen
+</span>
+</button>
+<div class="nav-item-meta__lvl2 lg:overflow-visible lg:transition-none lg:max-h-none lg:absolute lg:z-popup lg:top-[100%] lg:left-0 lg:w-max lg:pt-xxxs lg:hidden"
+id="nav-item-meta__lvl2-3">
+<ul class="grid grid-cols-1 bg-white p-1">
+<li>
+<a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue menu-small !text-grey hover py-xxs"
+aria-label="Deutsch" aria-expanded="false" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/faq/">
+<span class="flex items-center">
+<img src="https://www.dvka.de/media/global/sprach-icons/country-flag-de.svg" alt="Deutsch language flag symbol" height="16" width="auto">
+</span>
+<span class="flex flex-col">
+<span class="flex items-center flex-1 group-focus:underline group-hover:underline">Deutsch</span>
+</span>
+</a>
+</li>
+<li>
+<a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue menu-small !text-grey hover py-xxs"
+aria-label="English" aria-expanded="false" href="https://www.dvka.de/en/arbeitgeber-erwerbstaetige/faq/">
+<span class="flex items-center">
+<img src="https://www.dvka.de/media/global/sprach-icons/country-flag-en.svg" alt="English language flag symbol" height="16" width="auto">
+</span>
+<span class="flex flex-col">
+<span class="flex items-center flex-1 group-focus:underline group-hover:underline">English</span>
+</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="header__menu__lg hidden lg:flex lg:flex-col lg:justify-between lg:gap-md">
+<ul class="lg:flex lg:gap-md">
+<li class="mb-[-5px]">
+<div class="nav-item nav-item__lg hidden grid-cols-1 relative lg:grid">
+<div class="flex justify-between items-center min-h-[46px] lg:justify-center lg:min-h-fit">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-blue-darkest menu py-xs lg:p-0"
+aria-label="Follow link" aria-controls="nav-item__lg__lvl2-0" aria-expanded="false" title=""
+href="https://www.dvka.de/de/versicherte/">Versicherte</a>
+</div>
+<div class="nav-item__lvl2 transition-[max-height] origin-top ease-in-out duration-300 max-h-0 overflow-hidden hidden lg:overflow-visible lg:transition-none lg:max-h-none lg:pt-[40px] lg:absolute lg:z-popup lg:top-[100%] lg:left-1/2 lg:-translate-x-1/2"
+id="nav-item__lg__lvl2-1">
+<ul class="bg-blue grid grid-cols-1 divide-y divide-grey-lighter px-sm lg:bg-white lg:shadow-lg lg:w-max">
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/versicherte/touristen/">Touristen</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/versicherte/rentner/">Rentner/-innen</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/versicherte/grenzgaenger/">Grenzg&auml;nger</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/versicherte/studierende-und-praktikanten/">Studierende und Praktikanten</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/versicherte/geringfuegig-beschaeftigte-personen/">Geringf&uuml;gig besch&auml;ftigte Personen</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/versicherte/faq/">H&auml;ufig gestellte Fragen</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="mb-[-5px]">
+<div class="nav-item nav-item__lg hidden grid-cols-1 relative lg:grid">
+<div class="flex justify-between items-center min-h-[46px] lg:justify-center lg:min-h-fit">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-blue-darkest menu py-xs lg:p-0"
+aria-label="Follow link" aria-controls="nav-item__lg__lvl2-1" aria-expanded="false" title=""
+href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/">Arbeitgeber &amp; Erwerbst&auml;tige</a>
+</div>
+<div class="nav-item__lvl2 transition-[max-height] origin-top ease-in-out duration-300 max-h-0 overflow-hidden hidden lg:overflow-visible lg:transition-none lg:max-h-none lg:pt-[40px] lg:absolute lg:z-popup lg:top-[100%] lg:left-1/2 lg:-translate-x-1/2"
+id="nav-item__lg__lvl2-1">
+<ul class="bg-blue grid grid-cols-1 divide-y divide-grey-lighter px-sm lg:bg-white lg:shadow-lg lg:w-max">
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/antraege-finden/">Antrags- und Bescheinigungsverfahren</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/antragstellung-im-sv-meldeportal/">Antragstellung im SV-Meldeportal</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/laenderspezifische-informationen/">L&auml;nderspezifische Informationen</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/geltungsbereiche/">Geltungsbereiche im internationalen Sozialrecht</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/faq/">H&auml;ufig gestellte Fragen</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="mb-[-5px]">
+<div class="nav-item nav-item__lg hidden grid-cols-1 relative lg:grid">
+<div class="flex justify-between items-center min-h-[46px] lg:justify-center lg:min-h-fit">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-blue-darkest menu py-xs lg:p-0"
+aria-label="Follow link" aria-controls="nav-item__lg__lvl2-2" aria-expanded="false" title=""
+href="https://www.dvka.de/de/leistungserbringer/">Leistungserbringer</a>
+</div>
+<div class="nav-item__lvl2 transition-[max-height] origin-top ease-in-out duration-300 max-h-0 overflow-hidden hidden lg:overflow-visible lg:transition-none lg:max-h-none lg:pt-[40px] lg:absolute lg:z-popup lg:top-[100%] lg:left-1/2 lg:-translate-x-1/2"
+id="nav-item__lg__lvl2-1">
+<ul class="bg-blue grid grid-cols-1 divide-y divide-grey-lighter px-sm lg:bg-white lg:shadow-lg lg:w-max">
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/leistungserbringer/vertragsaerztliche-versorgung/">Vertrags&auml;rztliche Versorgung</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/leistungserbringer/vertragszahnaerztliche-versorgung/">Vertragszahn&auml;rztliche Versorgung</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/leistungserbringer/stationaere-versorgung/">Station&auml;re Versorgung</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/leistungserbringer/informationsportal-ehic-peb/">Informationsportal EHIC/PEB</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/leistungserbringer/leistungsumfang/">Leistungsumfang EHIC/PEB</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/leistungserbringer/brexit/">Brexit</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="mb-[-5px]">
+<div class="nav-item nav-item__lg hidden grid-cols-1 relative lg:grid">
+<div class="flex justify-between items-center min-h-[46px] lg:justify-center lg:min-h-fit">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-blue-darkest menu py-xs lg:p-0"
+aria-label="Follow link" aria-controls="nav-item__lg__lvl2-3" aria-expanded="false" title=""
+href="https://www.dvka.de/de/die-dvka/">Die DVKA</a>
+</div>
+<div class="nav-item__lvl2 transition-[max-height] origin-top ease-in-out duration-300 max-h-0 overflow-hidden hidden lg:overflow-visible lg:transition-none lg:max-h-none lg:pt-[40px] lg:absolute lg:z-popup lg:top-[100%] lg:left-1/2 lg:-translate-x-1/2"
+id="nav-item__lg__lvl2-1">
+<ul class="bg-blue grid grid-cols-1 divide-y divide-grey-lighter px-sm lg:bg-white lg:shadow-lg lg:w-max">
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/die-dvka/wir-ueber-uns/">Wir &uuml;ber uns</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/die-dvka/ausschreibungen/">Ausschreibungen</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/die-dvka/merkblaetter/">Merkbl&auml;tter</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/die-dvka/so-erreichen-sie-uns/">So erreichen Sie uns</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/die-dvka/karriere/">Karriere</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/die-dvka/rechtliche-hinweise-zum-datenschutz/">Rechtliche Hinweise zum Datenschutz</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="mb-[-5px]">
+<div class="nav-item nav-item__lg hidden grid-cols-1 relative lg:grid">
+<div class="flex justify-between items-center min-h-[46px] lg:justify-center lg:min-h-fit">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-blue-darkest menu py-xs lg:p-0"
+aria-label="Follow link" aria-controls="nav-item__lg__lvl2-4" aria-expanded="false" title=""
+href="https://www.dvka.de/de/informationen/">Informationen</a>
+</div>
+<div class="nav-item__lvl2 transition-[max-height] origin-top ease-in-out duration-300 max-h-0 overflow-hidden hidden lg:overflow-visible lg:transition-none lg:max-h-none lg:pt-[40px] lg:absolute lg:z-popup lg:top-[100%] lg:left-1/2 lg:-translate-x-1/2"
+id="nav-item__lg__lvl2-1">
+<ul class="bg-blue grid grid-cols-1 divide-y divide-grey-lighter px-sm lg:bg-white lg:shadow-lg lg:w-max">
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/auskunftstellen/">Auskunftstellen</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/brexit/">Brexit</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/europaeisches-netzwerk/">Europ&auml;isches Netzwerk</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/glossar/">Glossar</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/institution-repository/">Institution Repository</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/rechtsquellen/">Rechtsquellen</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/situation-israel/">Situation in Israel</a>
+</li>
+<li class="min-h-[46px] lg:min-h-[35px]">
+<a class="nav-link w-auto cursor-pointer line-clamp-2 focus:underline hover:underline hover:text-blue text-white hover:text-white menu py-xs lg:text-blue-darkest lg:hover:text-blue lg:w-fit lg:max-w-[200px]"
+aria-label="Follow link" aria-expanded="false" title="" href="https://www.dvka.de/de/informationen/umrechnungskurse/">Umrechnungskurse</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="scroll-progress w-full h-xxxs">
+<div class="scroll-progress__bar w-0 h-full bg-red" style="width: 0%;"></div>
+</div>
+</div>
+<div class="absolute right-0 bottom-[-44px] md:bottom-[-74px] z-backdrop">
+<a class="btn-overlay btn-overlay--extranet group relative bg-transparent pl-[43.5px] text-white z-btnOverlay focus:underline hover:underline focus:before:underline hover:before:underline hover:before:bg-blue-darker md:pl-[73.5px] before:bg-blue before:absolute before:left-0 before:top-0 before:h-[44px] before:w-[44px] before:clip-path-ascending-wedge-left before:z-backdrop md:before:h-[74px] md:before:w-[74px] btn-overlay--extranet--logged-in undefined block"
+aria-label="Extranet login" href="https://www.dvka.de/de/extranet/">
+<div class="bg-blue py-xxs pr-sm pl-xxxs text-[14px] text-right group-hover:bg-blue-darker h-[44px] md:h-[74px] md:py-md md:pl-lg md:pr-xl md:text-btn-tablet lg:text-btn-desktop">
+<div class="flex items-center gap-xs"><span class="pt-[1px] md:pt-0">Extranet</span></div>
+</div>
+</a>
+</div>
+</header>
+<button type="button" aria-label="Suche öffnen" aria-controls="overlay-search" aria-expanded="false"
+class="btn-overlay btn-overlay--search group fixed bottom-0 left-0 bg-transparent pr-[43.5px] text-white z-btnOverlay focus:underline hover:underline focus:before:underline hover:before:underline hover:before:bg-blue-darker md:pr-[73.5px] before:bg-blue before:absolute before:right-0 before:top-0 before:h-[44px] before:w-[44px] before:clip-path-falling-wedge-right before:z-backdrop md:before:h-[74px] md:before:w-[74px] undefined">
+<div class="bg-blue py-xxs pl-sm pr-xxxs text-[14px] text-right group-hover:bg-blue-darker h-[44px] md:h-[74px] md:py-md md:pr-lg md:pl-xl md:text-btn-tablet lg:text-btn-desktop">
+<div class="btn-overlay--closed flex items-center gap-xs">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24" width="24"
+xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+</svg>
+<span class="pt-[1px] md:pt-0">Suche</span>
+</div>
+<div class="btn-overlay--open flex items-center gap-xs hidden">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24" width="24"
+xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+</svg>
+<span class="pt-[1px] md:pt-0">Schlie&szlig;en</span>
+</div>
+</div>
+</button>
+<div id="overlay-search" class="overlay overlay--search fixed z-overlay top-[54px] right-0 bottom-0 left-0 bg-blue transition-opacity duration-150 overflow-x-hidden lg:top-[126px] opacity-0 hidden">
+<div class="py-[72px] pb-[96px] h-full overflow-y-auto md:pt-[120px] md:pb-[123px] xl:py-xxl">
+<div class="container">
+<h2 class="h2-strong mb-md md:mb-lg text-white text-center" >Suche</h2>
+<div class="app-search"
+data-props='{
+"searchInput":{
+"btnSubmit":{
+"ariaLabel":"Submit search"
+},
+"input":{
+"ariaLabel":"Search page",
+"ariaControls":"search-suggestions",
+"placeholder":"Was m&ouml;chten Sie suchen?",
+"ariaExpanded":false,
+"name":"searchStr"
+}
+},
+"autoSuggestUrl":"/auto-suggest/de",
+"searchResultsUrl":"https://www.dvka.de/de/global/suchseite.html"
+}'>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 bg-blue h-[44px] md:h-[74px] shadow-infinity-scroll-top-sm"></div>
+</div>
+</div>
+<div class="text-blue-darkest font-bold mt-32" >
+<div class="container">
+<h1 class="text-md text-blue my-md lg:my-xs" >
+H&auml;ufig gestellte Fragen
+</h1>
+<p >
+&nbsp;
+</p>
+</div>
+</div>
+<main>
+<div class="container space-y-xl">
+<section >
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">Entsendung</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+</p>
+<ul class="list-disc">
+<li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-entsendung/" title="Link zur Seite &quot;Was versteht man unter einer Entsendung?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Was versteht man unter einer Entsendung? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-entsendung/entsendung-2.html" title="Link zur Seite &quot;Wer hilft mir bei Fragen zur Entsendung weiter?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Wer hilft mir bei Fragen zur Entsendung weiter? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-entsendung/entsendung-3.html" title="Link zur Seite &quot;Unter welchen Voraussetzungen gelten f&uuml;r mich w&auml;hrend der Entsendung die deutschen Rechtsvorschriften?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Unter welchen Voraussetzungen gelten f&uuml;r mich w&auml;hrend der Entsendung die deutschen Rechtsvorschriften? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-entsendung/entsendung-4.html" title="Link zur Seite &quot;Kann eine Entsendung vorliegen, wenn die Initiative f&uuml;r den Auslandsaufenthalt von mir und nicht von meinem Arbeitgeber ausgeht?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Kann eine Entsendung vorliegen, wenn die Initiative f&uuml;r den Auslandsaufenthalt von mir und nicht von meinem Arbeitgeber ausgeht? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-entsendung/entsendung-5.html" title="Link zur Seite &quot;Wie und bei welcher Stelle beantrage ich eine Bescheinigung, mit der ich bei einer Entsendung nachweisen kann, dass ich weiter in Deutschland versichert bin?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Wie und bei welcher Stelle beantrage ich eine Bescheinigung, mit der ich bei einer Entsendung nachweisen kann, dass ich weiter in Deutschland versichert bin? </span> </span> </a></li>
+</ul>
+<p>
+</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">Gewöhnliche Erwerbstätigkeit in mehreren Mitgliedstaaten</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+</p>
+<ul class="list-disc">
+<li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/" title="Link zur Seite &quot;Wann &uuml;be ich eine Erwerbst&auml;tigkeit gew&ouml;hnlich in mehreren Mitgliedstaaten aus?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Wann &uuml;be ich eine Erwerbst&auml;tigkeit gew&ouml;hnlich in mehreren Mitgliedstaaten aus? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-2.html" title="Link zur Seite &quot;Ich bin im Rahmen nur einer Erwerbst&auml;tigkeit in mehreren Mitgliedstaaten eingesetzt. Welche zeitlichen Voraussetzungen m&uuml;ssen erf&uuml;llt sein?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Ich bin im Rahmen nur einer Erwerbst&auml;tigkeit in mehreren Mitgliedstaaten eingesetzt. Welche zeitlichen Voraussetzungen m&uuml;ssen erf&uuml;llt sein? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-26.html" title="" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Wie wird der Anteil der Arbeitszeit und/oder des Arbeitsentgeltes berechnet? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-3.html" title="Link zur Seite &quot;Ich habe zwei voneinander unabh&auml;ngige Erwerbst&auml;tigkeiten, die ich in verschiedenen Mitgliedstaaten aus&uuml;be. Was ist zu beachten?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Ich habe zwei voneinander unabh&auml;ngige Erwerbst&auml;tigkeiten, die ich in verschiedenen Mitgliedstaaten aus&uuml;be. Was ist zu beachten? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-4.html" title="Link zur Seite &quot;Wo muss ich eine A1-Bescheinigung beantragen, wenn ich meine Erwerbst&auml;tigkeit gew&ouml;hnlich in mehreren Mitgliedstaaten aus&uuml;be?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Wo muss ich eine A1-Bescheinigung beantragen, wenn ich meine Erwerbst&auml;tigkeit gew&ouml;hnlich in mehreren Mitgliedstaaten aus&uuml;be? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-5.html" title="Link zur Seite &quot;Wann liegt keine gew&ouml;hnliche Erwerbst&auml;tigkeit in mehreren Mitgliedsstaaten, sondern ein Entsendung vor?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Wann liegt keine gew&ouml;hnliche Erwerbst&auml;tigkeit in mehreren Mitgliedsstaaten, sondern eine Entsendung vor? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-6.html" title="Link zur Seite &quot;F&uuml;r welche Staaten ben&ouml;tige ich die A1-Bescheinigung?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> F&uuml;r welche Staaten ben&ouml;tige ich die A1-Bescheinigung? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-8.html" title="Link zur Seite &quot;Ich habe den Antrag mit der Bitte um Ausstellung einer A1-Bescheinigung an den GKV-Spitzenverband, DVKA gesandt. Wie geht es weiter?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Ich habe den Antrag mit der Bitte um Ausstellung einer A1-Bescheinigung an den GKV-Spitzenverband, DVKA gesandt. Wie geht es weiter? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-9.html" title="Link zur Seite &quot;F&uuml;r welchen Zeitraum kann mir eine A1-Bescheinigung l&auml;ngstens ausgestellt werden, wenn ich gew&ouml;hnlich in mehreren Mitgliedstaaten erwerbst&auml;tig bin?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> F&uuml;r welchen Zeitraum kann mir eine A1-Bescheinigung l&auml;ngstens ausgestellt werden, wenn ich gew&ouml;hnlich in mehreren Mitgliedstaaten erwerbst&auml;tig bin? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-10.html" title="Link zur Seite &quot;Was muss ich tun, wenn der G&uuml;ltigkeitszeitraum meiner A1-Bescheinigung abgelaufen ist und ich eine Verl&auml;ngerung ben&ouml;tige?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Was muss ich tun, wenn der G&uuml;ltigkeitszeitraum meiner A1-Bescheinigung abgelaufen ist und ich eine Verl&auml;ngerung ben&ouml;tige? </span> </span> </a> </li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-11.html" title="Link zur Seite &quot;Muss eine A1-Bescheinigung auch r&uuml;ckwirkend beantragt werden?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Muss eine A1-Bescheinigung auch r&uuml;ckwirkend beantragt werden? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-12.html" title="Link zur Seite &quot;Was habe ich zu beachten, wenn ich in Deutschland geringf&uuml;gig besch&auml;ftigt bin und nun regelm&auml;&szlig;ig einen Teil dieser Besch&auml;ftigung in anderen Mitgliedstaaten aus&uuml;be?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Was habe ich zu beachten, wenn ich in Deutschland geringf&uuml;gig besch&auml;ftigt bin und nun regelm&auml;&szlig;ig einen Teil dieser Besch&auml;ftigung in anderen Mitgliedstaaten aus&uuml;be? </span> </span> </a> </li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-13.html" title="Link zur Seite &quot;Ich wohne in Deutschland und arbeite als Grenzg&auml;nger in einem anderen Mitgliedstaat. Nun m&ouml;chte ich in Deutschland zus&auml;tzlich einen (Mini-)Job aufnehmen. Bleibe ich im anderen Mitgliedstaat versichert?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Ich wohne in Deutschland und arbeite als Grenzg&auml;nger in einem anderen Mitgliedstaat. Nun m&ouml;chte ich in Deutschland zus&auml;tzlich einen (Mini-)Job aufnehmen. Bleibe ich im anderen Mitgliedstaat versichert? </span> </span> </a> </li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-14.html" title="Link zur Seite &quot;Ich m&ouml;chte neben meiner Besch&auml;ftigung in Deutschland eine selbstst&auml;ndige T&auml;tigkeit in einem anderen Mitgliedstaat aus&uuml;ben. Hat dies Auswirkungen auf meine Sozialversicherung in Deutschland?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Ich m&ouml;chte neben meiner Besch&auml;ftigung in Deutschland eine selbstst&auml;ndige T&auml;tigkeit in einem anderen Mitgliedstaat aus&uuml;ben. Hat dies Auswirkungen auf meine Sozialversicherung in Deutschland? </span> </span> </a> </li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-15.html" title="Link zur Seite &quot;Ich wohne in Deutschland und bin als Grenzg&auml;nger in einem anderen Mitgliedstaat besch&auml;ftigt. Nun m&ouml;chte ich in Deutschland zus&auml;tzlich eine selbstst&auml;ndige T&auml;tigkeit aus&uuml;ben. Bleibe ich im anderen Mitgliedstaat versichert?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Ich wohne in Deutschland und bin als Grenzg&auml;nger in einem anderen Mitgliedstaat besch&auml;ftigt. Nun m&ouml;chte ich in Deutschland zus&auml;tzlich eine selbstst&auml;ndige T&auml;tigkeit aus&uuml;ben. Bleibe ich im anderen Mitgliedstaat versichert? </span> </span> </a> </li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-16.html" title="Link zur Seite &quot;Im Rahmen meiner Besch&auml;ftigung als Grenzg&auml;nger in einem anderen Mitgliedstaat werde ich ab Beginn des kommenden Monats regelm&auml;&szlig;ig an einem Tag in der Woche von meinem Homeoffice in Deutschland aus arbeiten. Bleibe ich in dem anderen Mitgliedstaat versichert, oder gelten f&uuml;r mich dann die deutschen Rechtsvorschriften &uuml;ber soziale Sicherheit?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Im Rahmen meiner Besch&auml;ftigung als Grenzg&auml;nger in einem anderen Mitgliedstaat werde ich ab Beginn des kommenden Monats regelm&auml;&szlig;ig an einem Tag in der Woche von meinem Homeoffice in Deutschland aus arbeiten. Bleibe ich in dem anderen Mitgliedstaat versichert, oder gelten f&uuml;r mich dann die deutschen Rechtsvorschriften &uuml;ber soziale Sicherheit? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-17.html" title="Link zur Seite &quot;Ich beziehe Arbeitslosengeld in Deutschland und m&ouml;chte einen Nebenerwerb in einem anderen Mitgliedstaaten annehmen. Brauche ich eine A1-Bescheinigung?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Ich beziehe Arbeitslosengeld in Deutschland und m&ouml;chte einen Nebenerwerb in einem anderen Mitgliedstaaten annehmen. Brauche ich eine A1-Bescheinigung? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-18.html" title="Link zur Seite &quot;Ich &uuml;be meine selbstst&auml;ndige T&auml;tigkeit in Deutschland und in anderen Mitgliedstaaten aus. Ben&ouml;tige ich eine A1-Bescheinigung?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Ich &uuml;be meine selbstst&auml;ndige T&auml;tigkeit in Deutschland und in anderen Mitgliedstaaten aus. Ben&ouml;tige ich eine A1-Bescheinigung? </span> </span> </a> </li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-19.html" title="Link zur Seite &quot;Auf welcher Grundlage wird &uuml;ber meinen Status als Arbeitnehmer oder Selbstst&auml;ndiger entschieden?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Auf welcher Grundlage wird &uuml;ber meinen Status als Arbeitnehmer oder Selbstst&auml;ndiger entschieden? </span> </span> </a> </li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-20.html" title="Link zur Seite &quot;Ich soll in einem anderen Staat Sozialversicherungsbeitr&auml;ge zahlen, obwohl ich dort nicht tats&auml;chlich arbeite. Was kann ich tun?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Ich soll in einem anderen Staat Sozialversicherungsbeitr&auml;ge zahlen, obwohl ich dort nicht tats&auml;chlich arbeite. Was kann ich tun? </span> </span> </a> </li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-21.html" title="Link zur Seite &quot;Wann z&auml;hle ich zu den Beamten im Sinne des Europ&auml;ischen Gemeinschaftsrechts?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Wann z&auml;hle ich zu den Beamten im Sinne des Europ&auml;ischen Gemeinschaftsrechts? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-22.html" title="Link zur Seite &quot;Was muss ich beachten, wenn ich neben meiner T&auml;tigkeit als Beamter in Deutschland in einem anderen Mitgliedstaat eine Erwerbst&auml;tigkeit aus&uuml;be?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Was muss ich beachten, wenn ich neben meiner T&auml;tigkeit als Beamter in Deutschland in einem anderen Mitgliedstaat eine Erwerbst&auml;tigkeit aus&uuml;be? </span> </span> </a> </li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-23.html" title="Link zur Seite &quot;Was bedeutet, dass die Rechtsvorschriften &uuml;ber soziale Sicherheit nur eines Mitgliedstaats anzuwenden sind?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Was bedeutet, dass die Rechtsvorschriften &uuml;ber soziale Sicherheit nur eines Mitgliedstaats anzuwenden sind? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-24.html" title="Link zur Seite &quot;Mein Arbeitgeber hat f&uuml;r mich Sozialversicherungsbeitr&auml;ge in einen anderen Mitgliedstaat zu zahlen. Wo finde ich Informationen und wie kann ich ihn unterst&uuml;tzen?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mein Arbeitgeber hat f&uuml;r mich Sozialversicherungsbeitr&auml;ge in einen anderen Mitgliedstaat zu zahlen. Wo finde ich Informationen und wie kann ich ihn unterst&uuml;tzen? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-gme/frage-gme-25.html" title="Link zur Seite &quot;K&ouml;nnen Sie mir in steuerrechtlichen Fragen zum Auslandseinsatz weiterhelfen?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> K&ouml;nnen Sie mir in steuerrechtlichen Fragen zum Auslandseinsatz weiterhelfen? </span> </span> </a></li>
+</ul>
+<p>
+</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">Beamte oder gleichgestellte Personen</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Welches Sozialversicherungsrecht gilt f&uuml;r Beamte und ihnen gleichgestellte Personen?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Beamte unterliegen den Rechtsvorschriften &uuml;ber soziale Sicherheit des Mitgliedstaats, dem die sie besch&auml;ftigende Verwaltungseinheit angeh&ouml;rt. Dies gilt auch f&uuml;r Beamte, die in einem anderen Mitgliedstaat entsandt werden oder die f&uuml;r die sie besch&auml;ftigende Verwaltungseinheit gew&ouml;hnlich in mehreren Mitgliedstaaten arbeiten. </p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Wer gilt als Beamter?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Beamte im Sinne der EG-Verordnung 883/2004 sind Personen, die nach nationalem Recht der besch&auml;ftigenden Beh&ouml;rde als solche oder als Gleichgestellte gelten. In Deutschland gelten vor allem die in der gesetzlichen Rentenversicherung nachzuversichernden Personen gem&auml;&szlig; &sect; 5 Absatz 1 SGB VI als Beamte im Sinne der EG-Verordnung 883/2004. Dies sind in Deutschland insbesondere Beamte und Richter auf Lebenszeit, auf Zeit oder auf Probe, Berufssoldaten und Soldaten auf Zeit, Beamte auf Wiederruf im Vorbereitungsdienst etc.. </p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Wer gilt als den Beamten gleichgestellte Person?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Hierunter sind Besch&auml;ftigte des Bundes, der L&auml;nder, der Gemeinden und der Gemeindeverb&auml;nde sowie der K&ouml;rperschaften, Anstalten und Stiftungen des &ouml;ffentlichen Rechts zu verstehen, sofern f&uuml;r sie unmittelbar vor der Besch&auml;ftigung im anderen Mitgliedstaat die deutschen Rechtsvorschriften &uuml;ber soziale Sicherheit gegolten haben.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Wo finde ich einen Fragebogen f&uuml;r die Ausstellung einer A1-Bescheinigung?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Den Fragebogen f&uuml;r die Ausstellung einer &bdquo;Bescheinigung &uuml;ber die anzuwendenden Rechtsvorschriften&ldquo; (A1-Bescheinigung) finden Sie <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/antraege-finden/beamte/" title="" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> hier </span> </span> </a>.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">Ausnahmevereinbarung</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+</p>
+<ul class="list-disc">
+<li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-ausnahme/" title="Link zur Seite &quot;Wozu dient eine Ausnahmevereinbarung?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Wozu dient eine Ausnahmevereinbarung? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-ausnahme/ausnahme-2.html" title="Link zur Seite &quot;Mit welchen Staaten k&ouml;nnen Ausnahmevereinbarungen geschlossen werden?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mit welchen Staaten k&ouml;nnen Ausnahmevereinbarungen geschlossen werden? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-ausnahme/ausnahme-3.html" title="Link zur Seite &quot;Wer ist f&uuml;r den Abschluss von Ausnahmevereinbarungen zust&auml;ndig?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Wer ist f&uuml;r den Abschluss von Ausnahmevereinbarungen zust&auml;ndig? </span> </span> </a> </li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-ausnahme/ausnahme-4.html" title="Link zur Seite &quot;F&uuml;r welche Sozialversicherungszweige gilt eine Ausnahmevereinbarung?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> F&uuml;r welche Sozialversicherungszweige gilt eine Ausnahmevereinbarung? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-ausnahme/ausnahme-5.html" title="Link zur Seite &quot;Wann ben&ouml;tige ich eine Ausnahmevereinbarung?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Wann ben&ouml;tige ich eine Ausnahmevereinbarung? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-ausnahme/ausnahme-6.html" title="Link zur Seite &quot;Unter welchen Voraussetzungen kann eine Ausnahmevereinbarung f&uuml;r mich geschlossen werden?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Unter welchen Voraussetzungen kann eine Ausnahmevereinbarung f&uuml;r mich geschlossen werden? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-ausnahme/ausnahme-7.html" title="Link zur Seite &quot;F&uuml;r welchen Zeitraum kann eine Ausnahmevereinbarung geschlossen werden?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> F&uuml;r welchen Zeitraum kann eine Ausnahmevereinbarung geschlossen werden? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-ausnahme/ausnahme-8.html" title="Link zur Seite &quot;Was passiert mit der f&uuml;r mich geschlossenen Ausnahmevereinbarung, wenn ich meine T&auml;tigkeit im Ausland unterbreche?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Was passiert mit der f&uuml;r mich geschlossenen Ausnahmevereinbarung, wenn ich meine T&auml;tigkeit im Ausland unterbreche? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-ausnahme/ausnahme-9.html" title="Link zur Seite &quot;Werden Entsendezeitr&auml;ume, f&uuml;r die ich eine &bdquo;Bescheinigung &uuml;ber die Weitergeltung der deutschen Rechtsvorschriften &uuml;ber soziale Sicherheit&ldquo; (z. B. A1-Bescheinigung) erhalten habe, beim Abschluss einer Ausnahmevereinbarung ber&uuml;cksichtigt?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Werden Entsendezeitr&auml;ume, f&uuml;r die ich eine &bdquo;Bescheinigung &uuml;ber die Weitergeltung der deutschen Rechtsvorschriften &uuml;ber soziale Sicherheit&ldquo; (z. B. A1-Bescheinigung) erhalten habe, beim Abschluss einer Ausnahmevereinbarung ber&uuml;cksichtigt? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-ausnahme/ausnahme-10.html" title="Link zur Seite &quot;Wie kann ich den Abschluss einer Ausnahmevereinbarung beantragen?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Wie kann ich den Abschluss einer Ausnahmevereinbarung beantragen? </span> </span> </a></li><li><a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/faq/fragen-ausnahme/ausnahme-11.html" title="Link zur Seite &quot;Welche Stelle stellt mir eine Bescheinigung &uuml;ber die Weitergeltung der deutschen Rechtsvorschriften &uuml;ber soziale Sicherheit aus?&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Welche Stelle stellt mir eine Bescheinigung &uuml;ber die Weitergeltung der deutschen Rechtsvorschriften &uuml;ber soziale Sicherheit aus? </span> </span> </a></li>
+</ul>
+<p>
+</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">A1-Bescheinigung</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Was ist eine A1-Bescheinigung?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Die A1-Bescheinigung hei&szlig;t offiziell &bdquo;Bescheinigung &uuml;ber die Rechtsvorschriften der sozialen Sicherheit, die auf den/die Inhaber/in anzuwenden sind&ldquo;. Sie dokumentiert, welches Sozialversicherungsrecht f&uuml;r eine Person gilt.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>F&uuml;r welche Staaten ben&ouml;tige ich eine A1-Bescheinigung?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Eine A1-Bescheinigung ben&ouml;tigen Sie grunds&auml;tzlich f&uuml;r die <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaaten </span> </span> </a> der Europ&auml;ischen Union, des Europ&auml;ischen Wirtschaftsraums und die Schweiz.</p>
+<p>
+F&uuml;r jeden Staat, mit dem Deutschland ein Sozialversicherungsabkommen geschlossen hat, gibt es eine vergleichbare Bescheinigung. Hinweise hierzu finden Sie in unseren <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/laenderspezifische-informationen/" title="" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> &bdquo;l&auml;nderspezifischen Informationen&ldquo; </span> </span> </a>.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Wann ben&ouml;tige ich eine A1-Bescheinigung?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Das Europ&auml;ische Gemeinschaftsrecht geht von dem Grundsatz aus, dass f&uuml;r eine erwerbst&auml;tige Person die Rechtsvorschriften &uuml;ber soziale Sicherheit des <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaats </span> </span> </a> gelten, in dem sie ihre Erwerbst&auml;tigkeit aus&uuml;bt. Wenn von diesem Grundsatz abgewichen wird, kann dies mit einer A1-Bescheinigung dokumentiert werden. Beispiele hierf&uuml;r sind:</p>
+<p>
+- Entsendung in einen anderen <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaat </span> </span> </a>,</p>
+<p>
+- gew&ouml;hnliche Erwerbst&auml;tigkeit in mehreren <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaaten </span> </span> </a>,</p>
+<p>
+- abweichendes Recht auf Grund einer Ausnahmevereinbarung. </p>
+<p>
+Dies gilt f&uuml;r alle erwerbst&auml;tigen Personen. Es gibt keine Ausnahmen z. B. f&uuml;r bestimmte Berufsgruppen.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Wer stellt mir in Deutschland eine A1-Bescheinigung aus?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Hier ist zu unterscheiden, ob Sie eine A1-Bescheinigung ben&ouml;tigen, weil Sie</p>
+<p>
+- in einen anderen <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaat </span> </span> </a> entsandt werden,</p>
+<p>
+- eine <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/antraege-finden/gewoehnliche-erwerbstaetigkeit-in-mehreren-mitgliedstaaten/" title="" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> gew&ouml;hnliche Erwerbst&auml;tigkeit in mehreren Mitgliedstaaten </span> </span> </a> aus&uuml;ben oder</p>
+<p>
+- auf der Grundlage einer f&uuml;r Sie geschlossenen <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/antraege-finden/abschluss-einer-ausnahmevereinbarung/" title="" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Ausnahmevereinbarung </span> </span> </a> den deutschen Rechtsvorschriften &uuml;ber soziale Sicherheit unterliegen.</p>
+<p>
+Den auf Ihren Sachverhalt zutreffenden Fragebogen, mit dem Sie eine A1-Bescheinigung beantragen k&ouml;nnen, finden Sie <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/antraege-finden/" title="" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> hier </span> </span> </a>. </p>
+<p>
+<strong>Entsendung</strong></p>
+<p>
+Werden Sie im Rahmen einer in Deutschland ausge&uuml;bten Besch&auml;ftigung in einen anderen <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaat </span> </span> </a> entsandt, stellt Ihnen die gesetzliche Krankenkasse, bei der Sie versichert sind, die A1-Bescheinigung aus. Dies gilt unabh&auml;ngig davon, ob Sie in Deutschland auf Grund einer Besch&auml;ftigung, als Student oder Rentner versichert sind, freiwilliges Mitglied Ihrer Krankenkasse sind oder dort als Familienangeh&ouml;riger versichert sind.</p>
+<p>
+Sind Sie nicht bei einer gesetzlichen Krankenkasse versichert und auch nicht Mitglied einer berufsst&auml;ndischen Versorgungseinrichtung, stellt Ihnen bei einer Entsendung in einen anderen <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaat </span> </span> </a> der zust&auml;ndige Rentenversicherungstr&auml;ger die A1-Bescheinigung aus.</p>
+<p>
+Sind sie nicht bei einer gesetzlichen Krankenkasse versichert und Mitglied einer berufsst&auml;ndischen Versorgungseinrichtung, stellt Ihnen bei einer Entsendung in einen anderen <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaat </span> </span> </a> die Arbeitsgemeinschaft Berufsst&auml;ndischer Versorgungeinrichtungen die A1-Bescheinigung aus.</p>
+<p>
+<strong>Gew&ouml;hnliche Erwerbst&auml;tigkeit in mehreren Mitgliedstaaten</strong></p>
+<p>
+Sofern Sie Ihre Erwerbst&auml;tigkeit gew&ouml;hnlich in mehreren <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaaten </span> </span> </a> aus&uuml;ben und in Deutschland wohnen, ist der GKV-Spitzenverband, DVKA f&uuml;r die Feststellung des anwendbaren Rechts zust&auml;ndig. Soweit die deutschen Rechtsvorschriften gelten, stellt er in diesen F&auml;llen die A1-Bescheinigung aus.</p>
+<p>
+Wohnen Sie in einem anderen <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaat </span> </span> </a>(z. B. in den Niederlanden) und hat der zust&auml;ndige Tr&auml;ger Ihres <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Wohnstaats </span> </span> </a> (z. B. in den Niederlanden die Sociale Verzekeringsbank - SVB) festgestellt, dass f&uuml;r Sie die deutschen Rechtsvorschriften gelten, informiert dieser Tr&auml;ger die Deutsche Rentenversicherung Bund, die die Ausstellung der A1-Bescheinigung veranlasst. Detaillierte Informationen dazu finden Sie hier auf dieser Seite unter. &bdquo;Gew&ouml;hnliche Erwerbst&auml;tigkeit in mehreren Mitgliedstaaten&ldquo;</p>
+<p>
+<strong>Ausnahmevereinbarung</strong></p>
+<p>
+Gelten f&uuml;r Sie die deutschen Rechtsvorschriften auf der Grundlage einer Ausnahmevereinbarung, stellt Ihnen der GKV-Spitzenverband, DVKA die A1-Bescheinigung aus.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>F&uuml;r mich gelten die Rechtsvorschriften eines anderen Mitgliedstaats. Wie kann ich dort eine A1-Bescheinigung beantragen?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Die <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaaten </span> </span> </a>regeln das Verfahren f&uuml;r die Ausstellung der A1-Bescheinigung in eigener Zust&auml;ndigkeit, so dass an dieser Stelle nur an den jeweils zust&auml;ndigen Tr&auml;ger verwiesen werden kann. Die Anschrift finden Sie <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/institution-repository/" title="" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> hier </span> </span> </a>.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Wie kann ich in Deutschland eine A1-Bescheinigung beantragen?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Den auf Ihren Sachverhalt zutreffenden Fragebogen, mit dem Sie eine A1-Bescheinigung beantragen k&ouml;nnen, finden Sie <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/antraege-finden/" title="" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> hier </span> </span> </a>.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Ist die f&uuml;r mich ausgestellte A1-Bescheinigung in allen Mitgliedstaaten rechtlich verbindlich?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Die von einem Tr&auml;ger eines <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaats </span> </span> </a> ausgestellte A1-Bescheinigung ist f&uuml;r alle Tr&auml;ger und Gerichte der &uuml;brigen <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaaten </span> </span> </a> verbindlich, solange sie vom ausstellenden Tr&auml;ger nicht f&uuml;r ung&uuml;ltig erkl&auml;rt oder zur&uuml;ckgezogen worden ist. Mit der Bescheinigung wird dokumentiert, welche Rechtsvorschriften &uuml;ber soziale Sicherheit f&uuml;r Sie gelten und dass Sie nicht verpflichtet sind, zus&auml;tzlich in einem anderen <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaat </span> </span> </a> Sozialversicherungsbeitr&auml;ge zu entrichten.</p>
+<p>
+Die von der Europ&auml;ischen Kommission ver&ouml;ffentlichte A1-Bescheinigung ist in allen Amtssprachen deckungsgleich angeordnet, so dass sie problemlos in allen <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaaten </span> </span> </a> verwendbar ist.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Hat die Europ&auml;ische Kommission Hinweise zur A1-Bescheinigung gegeben?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Ja, die Europ&auml;ische Kommission hat allgemeine Informationen zur A1-Bescheinigung und zu ihrer Verwendung herausgegeben. Diese finden Sie <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/media/dokumente/verschiedene/anwendunga1.pdf" title="" target="_blank"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> hier </span> </span> </a>.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">Erwerbstätigkeit in Deutschland</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Gelten f&uuml;r mich die deutschen Rechtsvorschriften, wenn ich meine Erwerbst&auml;tigkeit in Deutschland aus&uuml;be?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Das deutsche Sozialversicherungsrecht geht von dem Grundsatz aus, dass f&uuml;r Sie die deutschen Rechtsvorschriften &uuml;ber die Sozialversicherung gelten, wenn Sie Ihre Erwerbst&auml;tigkeit in Deutschland aus&uuml;ben. Das gilt auch, wenn Sie in einem anderen Staat wohnen und/oder Ihr Arbeitgeber in einem anderen Staat ans&auml;ssig ist. Auch auf Ihre Staatsangeh&ouml;rigkeit kommt es nicht an. </p>
+<p>
+Als Nachweis, dass auf Sie die deutschen Rechtsvorschriften &uuml;ber soziale Sicherheit anzuwenden sind, k&ouml;nnen Sie die Ausstellung einer A1-Bescheinigung beantragen. Einen Antrag hierzu finden Sie <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/antraege-finden/" title="Link zur Seite &quot;&bdquo;Antr&auml;ge finden&quot;&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> hier </span> </span> </a>. </p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Muss mein in einem anderen Staat ans&auml;ssiger Arbeitgeber Sozialversicherungsbeitr&auml;ge in Deutschland zahlen, wenn ich hier f&uuml;r ihn arbeite? </strong></li>
+</ul>
+<p>
+</p>
+<p>
+Ja, denn eine Person, die ausschlie&szlig;lich in Deutschland t&auml;tig ist, unterliegt dem deutschen Sozialversicherungsrecht. Dies gilt unabh&auml;ngig davon, wo Ihr Arbeitgeber seinen Sitz hat. Somit ist auch ein Unternehmen mit Sitz im Ausland verpflichtet, Sozialversicherungsbeitr&auml;ge f&uuml;r Sie in Deutschland zu entrichten.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>An welche Stelle/n muss mein im Ausland ans&auml;ssiger Arbeitgeber Sozialversicherungsbeitr&auml;ge in Deutschland zahlen?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+In Deutschland sind die Beitr&auml;ge zur Kranken-, Pflege-, Renten- und Arbeitslosenversicherung grunds&auml;tzlich an die gesetzliche Krankenkasse zu entrichten, bei der Sie versichert sind. Sie k&ouml;nnen diese gesetzliche Krankenkasse w&auml;hlen. Einen &Uuml;berblick &uuml;ber die gesetzlichen Krankenkassen in Deutschland finden Sie <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.gkv-spitzenverband.de/service/krankenkassenliste/krankenkassen.jsp " title="" target="_blank"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> hier </span> </span> </a>.</p>
+<p>
+Die Beitr&auml;ge zur Unfallversicherung hat Ihr Arbeitgeber an den zust&auml;ndigen <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="http://www.dguv.de/de/internationales/info_ausland/index.jsp" title="" target="_blank"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Unfallversicherungstr&auml;ger </span> </span> </a> zu zahlen.</p>
+<p>
+&Uuml;ben Sie in Deutschland eine geringf&uuml;gige Besch&auml;ftigung aus, wenden Sie bzw. Ihr Arbeitgeber sich bitte an die <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.minijob-zentrale.de/DE/00_home/node.html" title="" target="_blank"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Minijobzentrale </span> </span> </a>.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Wie kann mich mein im Ausland ans&auml;ssiger Arbeitgeber zur Sozialversicherung in Deutschland anmelden?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+F&uuml;r die Zahlung von Sozialversicherungsbeitr&auml;gen muss Ihr Arbeitgeber Sie zur Sozialversicherung anmelden. Wenn Ihr Arbeitgeber selbst keinen Sitz im Inland hat, muss er zu diesem Zwecke einen in Deutschland ans&auml;ssigen Bevollm&auml;chtigten bestellen. Diesem obliegt die Verpflichtung, die Meldungen zur Sozialversicherung vorzunehmen und die entsprechenden Entgeltunterlagen in deutscher Sprache zu f&uuml;hren und aufzubewahren. </p>
+<p>
+Einzelheiten zum Meldeverfahren finden Sie <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.informationsportal.de/exterritoriale-arbeitgeber-mit-firmensitz-nur-im-ausland/" title="" target="_blank"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> hier </span> </span> </a>. Auch die von Ihnen gew&auml;hlte Einzugsstelle (gesetzliche Krankenkasse) wird Ihnen gerne weiterhelfen.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Kann ich mit meinem Arbeitgeber vereinbaren, dass ich die Beitr&auml;ge zur Sozialversicherung einzahle? </strong></li>
+</ul>
+<p>
+</p>
+<p>
+Das Europ&auml;ische Gemeinschaftsrecht sieht eine solche M&ouml;glichkeit ausdr&uuml;cklich vor. Eine solche Vereinbarung m&uuml;ssen Sie schriftlich mit Ihrem Arbeitgeber schlie&szlig;en und den Einzugsstellen vorlegen. Das Muster f&uuml;r eine solche Vereinbarung finden Sie <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/media/dokumente/antraege_av_gme/vereinbarung_art21.pdf" title="" target="_blank"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> hier </span> </span> </a>.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Wo kann ich mir einen &Uuml;berblick &uuml;ber das deutsche Sozialversicherungsrecht verschaffen?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Als erste Anlaufstelle f&uuml;r Arbeitgeber empfiehlt sich das <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.informationsportal.de" title="" target="_blank"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> &bdquo;Arbeitgeberportal Sozialversicherung&ldquo; </span> </span> </a>. Dort erhalten Sie Informationen rund um das Melde- und Beitragsrecht zur Sozialversicherung.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Ich &uuml;be in Deutschland einen Minijob aus, wohne aber in einem anderen Staat. Wo sind f&uuml;r mich Sozialversicherungsbeitr&auml;ge zu zahlen?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Wenn Sie ausschlie&szlig;lich in Deutschland arbeiten (und in Ihrem <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Wohnstaat </span> </span> </a> auch keine Entgeltersatzleistungen beziehen), gilt f&uuml;r Sie das deutsche Sozialversicherungsrecht. Es spielt keine Rolle, dass Sie nicht in Deutschland wohnen. </p>
+<p>
+Wenn Sie einen sogenannten Minijob aus&uuml;ben, f&uuml;hrt Ihr Arbeitgeber die Beitr&auml;ge an die Minijobzentrale ab. Hinsichtlich Ihres Krankenversicherungsschutzes wenden Sie sich bitte an Ihre &ndash; ggf. noch zu w&auml;hlende &ndash; gesetzliche Krankenversicherung in Deutschland.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Wo kann ich mich beraten lassen?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Die Beratung von Versicherten ist eine Serviceaufgabe der gesetzlichen Krankenkassen. Bitte haben Sie Verst&auml;ndnis daf&uuml;r, dass wir als GKV-Spitzenverband, DVKA, keine Fragen zu Ihrer konkreten Leistungs- oder Beitragssituation beantworten k&ouml;nnen. Bitte wenden Sie sich direkt an Ihre &ndash; ggf. noch zu w&auml;hlende - Krankenkasse.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">Erwerbstätigkeit im Ausland</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Gelten f&uuml;r mich die deutschen Rechtsvorschriften, wenn ich meine Erwerbst&auml;tigkeit im Ausland aus&uuml;be?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Das deutsche Sozialversicherungsrecht geht von dem Grundsatz aus, dass f&uuml;r Sie die deutschen Rechtsvorschriften &uuml;ber die Sozialversicherung nur gelten, wenn Sie Ihre Erwerbst&auml;tigkeit in Deutschland aus&uuml;ben. Das gilt auch, wenn Sie in einem anderen Staat arbeiten und/oder Ihr Arbeitgeber in einem anderen Staat ans&auml;ssig ist. Auch auf Ihre Staatsangeh&ouml;rigkeit kommt es nicht an. </p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Was geschieht mit meiner Sozialversicherung in Deutschland, wenn ich in einen anderen Staat auswandere und von dort aus (z. B. via Internet) weiterhin f&uuml;r meinen in Deutschland ans&auml;ssigen Arbeitgeber arbeite?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Wenn Sie in einen anderen Staat ausgewandert sind, gelten auf Grund der Besch&auml;ftigung grunds&auml;tzlich nicht mehr die deutschen Rechtsvorschriften &uuml;ber die Versicherungspflicht und die freiwillige Versicherung. Bitte wenden Sie sich insbesondere an Ihre Kranken- und Pflegekasse, die Agentur f&uuml;r Arbeit sowie eine Auskunfts- und Beratungsstelle der Rentenversicherung, um sich &uuml;ber die M&ouml;glichkeiten einer freiwilligen Versicherung beraten zu lassen.</p>
+<p>
+Ob und ggf. in welchen Bereichen der sozialen Sicherheit Sie in Ihrer neuen Heimat gesch&uuml;tzt sind, richtet sich nach den dort geltenden Regelungen. Bitte lassen Sie sich hier&uuml;ber vor Ort beraten.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Wo bin ich versichert, wenn ich in Deutschland wohne und ausschlie&szlig;lich in einem anderen Staat arbeite? </strong></li>
+</ul>
+<p>
+</p>
+<p>
+Sofern die Besch&auml;ftigung ausschlie&szlig;lich diesem ausl&auml;ndischen Staat ausge&uuml;bt wird und in Deutschland auch keine andere Erwerbst&auml;tigkeit ausge&uuml;bt oder Entgeltersatzleistung (z. B. Krankengeld) bezogen wird, gilt das Sozialversicherungsrecht des Staates, in dem Sie tats&auml;chlich arbeiten. Dies gilt unabh&auml;ngig davon, in welchem Staat Ihr Arbeitgeber ans&auml;ssig ist.</p>
+<p>
+Etwas anderes gilt, wenn Sie nicht ausschlie&szlig;lich in einem anderen Staat arbeiten, sondern gew&ouml;hnlich auch in Deutschland. Weitere Informationen hierzu finden Sie <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/antraege-finden/gewoehnliche-erwerbstaetigkeit-in-mehreren-mitgliedstaaten/" title="" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> hier </span> </span> </a>.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Ich werde k&uuml;nftig f&uuml;r einen in Deutschland ans&auml;ssigen Arbeitgeber arbeiten, aber diese T&auml;tigkeit ausschlie&szlig;lich in einem anderen Staat aus&uuml;ben. Muss mein Arbeitgeber mich in Deutschland zur Sozialversicherung anmelden?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Sofern Sie ausschlie&szlig;lich in einem Staat au&szlig;erhalb Deutschlands arbeiten, gilt f&uuml;r Sie das deutsche Sozialversicherungsrecht nicht, so dass in Deutschland keine Beitrags- und Meldepflichten zu erf&uuml;llen sind. Es gilt das Sozialversicherungsrecht Ihres Besch&auml;ftigungsstaates. Weitere Information hierzu finden Sie hier auf dieser Seite unter &bdquo;Was hat mein Arbeitgeber zu beachten, wenn f&uuml;r mich das Sozialversicherungsrecht eines anderen Staates gilt?&ldquo;.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Was hat mein Arbeitgeber zu beachten, wenn f&uuml;r mich das Sozialversicherungsrecht eines anderen Staates gilt?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Sie und Ihr Arbeitgeber m&uuml;ssen die melde- und beitragsrechtlichen Bestimmungen des Staates beachten, dessen Rechtsvorschriften f&uuml;r Sie gelten. Informationen hierzu erhalten Sie bei den zust&auml;ndigen Stellen dieses Staates. Die deutschen Rechtsvorschriften &uuml;ber die Versicherungs- und Beitragspflicht gelten insoweit nicht mehr.</p>
+<p>
+</p>
+<ul class="list-disc">
+<li><strong>Kann ich mit meinem Arbeitgeber vereinbaren, dass ich die Melde- und Beitragspflichten zur Sozialversicherung &uuml;bernehme?</strong></li>
+</ul>
+<p>
+</p>
+<p>
+Gelten f&uuml;r Sie die Rechtsvorschriften eines anderen <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Glossar&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Mitgliedstaates </span> </span> </a>, k&ouml;nnen mit Ihrem Arbeitgeber vereinbaren, dass Sie selbst die Beitragspflichten wahrnehmen. Hierbei handelt es sich um eine administrative Regelung, die nichts an der grunds&auml;tzlichen Zahlungspflicht Ihres Arbeitgebers &auml;ndert. Der zust&auml;ndige Sozialversicherungstr&auml;ger muss &uuml;ber die Vereinbarung informiert werden.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</section>
+<a id="text_bild_modul_3" name="text_bild_modul_3"></a>
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"> Leistungsansprüche bei Wohnort im Ausland </h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+</div>
+</div>
+</div><section >
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">Ich bin Rentner und verziehe in einen anderen europäischen Staat. Bleibe ich in Deutschland kranken- und pflegeversichert?</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+Eine Fortsetzung der Versicherung in Deutschland ist an einige Voraussetzungen gekn&uuml;pft. N&auml;here Einzelheiten hierzu finden Sie in unseren Merkbl&auml;ttern f&uuml;r Rentnerinnen und Rentner:</p>
+</div>
+</div>
+</div>
+<!-- Link-Listen-Modul -->
+<div class="clearfix module linkListModule {itemsPerPage:10}">
+<ul class="clearfix linkList">
+<li>
+<a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" aria-label="Download file" aria-expanded="false" desc=" In der folgenden Merkblättern erhalten Sie Informationen darüber, welche Auswirkungen eine Wohnortverlegung auf Ihre Kranken- und Pflegeversicherung hat. "href="https://www.dvka.de/de/versicherte/rentner/" title="Link zur Seite &quot;Merkbl&auml;tter f&uuml;r Rentnerinnen und Rentner&quot;" target="_self"><span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18 2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 2v16H6V8.83L10.83 4H18z"></path><path d="M16 13l-4 4-4-4 1.41-1.41L11 13.17V9.02L13 9v4.17l1.59-1.59L16 13z"></path></svg></span>
+<span class="flex flex-col">
+<span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold">
+Merkbl&auml;tter f&uuml;r Rentnerinnen und Rentner
+</span>
+<span class="block"> In der folgenden Merkblättern erhalten Sie Informationen darüber, welche Auswirkungen eine Wohnortverlegung auf Ihre Kranken- und Pflegeversicherung hat. </span>
+</span>
+</a>
+</li>
+</ul>
+<script class="templatePager" type="text/x-jquery-tmpl">
+{{if pages.length > 1}}
+<div class="clearfix pagingModule pagingModuleLinkList">
+<div class="clearfix pager">
+<a title="erste Seite" href="#" class="icons pagerStart0 start"><span class="ubar">erste Seite</span></a>
+<a title="zur&uuml;ck" href="#" class="icons pagerLeft1 previous"><span class="ubar">zur&uuml;ck</span></a>
+<ul class="page">
+{{each pages}}
+<li page="{{= page }}">
+<span class="active">{{= title }}</span>
+<a href="{{= href }}" title="">{{= title }}</a>
+</li>
+{{/each}}
+</ul>
+<a href="#" title="vor" class="icons pagerRight1 next"><span class="ubar">vor</span></a>
+<a href="#" title="letzte Seite" class="icons pagerEnd0 end"><span class="ubar">letzte Seite</span></a>
+</div>
+</div>
+{{/if}}
+</script>
+</div>
+<!-- /Link-Listen-Modul -->
+</div>
+</details>
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">Ich bin in Deutschland familienversichert und verziehe in einen anderen europäischen Staat. Wie wirkt sich dies auf meine Kranken- und Pflegeversicherung aus?</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+Ob Sie in Deutschland weiterhin kranken- und pflegeversichert sein k&ouml;nnen, ist davon abh&auml;ngig, was Sie im anderen europ&auml;ischen Staat machen (z. B. Schule), ob dort auch ein Familienangeh&ouml;riger (z. B. Vater oder Mutter) wohnt und im dortigen gesetzlichen System versichert ist. Je nachdem wie sich dies in Ihrem Fall darstellt kann es daher sein, dass Sie in Deutschland oder im neuen Wohnstaat familienversichert sind oder sich dort selbst versichern m&uuml;ssen. Wir empfehlen Ihnen daher sich rechtzeitig vor dem Wohnsitzwechsel mit Ihrer gesetzlichen Krankenkasse in Deutschland in Verbindung zu setzen und sich dort individuell beraten zu lassen.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</section>
+<a id="text_bild_modul_2" name="text_bild_modul_2"></a>
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"> Leistungsansprüche bei einem vorübergehenden Aufenthalt im Ausland (z. B. Urlaub, Studium usw.) </h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+</div>
+</div>
+</div><section >
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">Ich studiere für einige Semester in einem anderen Mitgliedstaat. Wie wirkt sich dies auf meine gesetzliche Krankenversicherung in Deutschland aus?</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+Wenn Sie derzeit in Deutschland gesetzlich (z. B. im Rahmen der Familienversicherung oder der studentischen Krankenversicherung) versichert sind, bleiben Sie dies auch, solange die Voraussetzungen (z. B. hinsichtlich der Altersgrenze) hierf&uuml;r nach deutschem Recht erf&uuml;llt sind und Sie im anderen Mitgliedstaat nicht vorrangig (z. B. aufgrund einer Besch&auml;ftigung oder selbstst&auml;ndigen T&auml;tigkeit) versichert werden. Bleibt die Versicherung in Deutschland bestehen, erhalten Sie im anderen Mitgliedstaat Leistungen wie ein dort gesetzlich Versicherter soweit diese unter Ber&uuml;cksichtigung Ihrer Aufenthaltsdauer medizinisch notwendig sind. Die Leistungen k&ouml;nnen Sie &uuml;ber Ihre Europ&auml;ische Krankenversichertenkarte zu Lasten Ihrer deutschen Krankenkasse unmittelbar beim Leistungserbringer in Anspruch nehmen. Das Verfahren entspricht dem, welches auch f&uuml;r Urlauber gilt. N&auml;here Informationen finden Sie daher in unseren <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/versicherte/touristen/" title="Link zur Seite &quot;Merkbl&auml;tter &bdquo;Urlaub in&hellip;&ldquo;&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Merkbl&auml;tter &bdquo;Urlaub in&hellip;&ldquo; </span> </span> </a>. Ob die Voraussetzungen f&uuml;r einen Fortbestand des Versicherungsschutzes in Deutschland in Ihrem Fall erf&uuml;llt sind, pr&uuml;ft Ihre deutsche Krankenkasse. Wir empfehlen Ihnen daher sich rechtzeitig vor dem Studium im Ausland mit Ihrer gesetzlichen Krankenkasse in Deutschland in Verbindung zu setzen und sich dort individuell beraten zu lassen.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">Ich bin als Student/in in Deutschland immatrikuliert und in der Krankenversicherung der Studenten (KVdS) bzw. über meinen Vater (Mutter) in der Familienversicherung bei einer gesetzlichen Krankenkasse versichert. Ich gehe für 2 Auslandssemester in einen anderen Mitgliedstaat und muss regelmäßig Medikamente einnehmen. Muss ich mich für die Zeit im Ausland privat absichern oder bleibt die KVdS / Familienversicherung weiterhin bestehen? Welchen Nachweis benötige ich, damit ich im Falle einer Erkrankung/Behandlung zum Arzt gehen kann?</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+Solange Sie im anderen Mitgliedstaat keine Besch&auml;ftigung aufnehmen, bleibt Ihre deutsche Krankenversicherung grds. bestehen. &Uuml;ber Einzelheiten und Ausnahmen ber&auml;t Sie ihre Krankenkasse.</p>
+<p>
+Bleibt Ihr Versicherungsschutz in Deutschland bestehen, erhalten Sie Leistungen bei Krankheit und Mutterschaft im anderen Mitgliedstaat mit Ihrer Europ&auml;ischen Krankenversicherungskarte (EHIC). Die Anspr&uuml;che entsprechen im Wesentlichen denen f&uuml;r Urlauber. N&auml;here Informationen hierzu finden Sie in unseren Merkbl&auml;ttern &bdquo;Urlaub in &hellip;&ldquo; hier auf unserer Website. </p>
+<p>
+Bitte bedenken Sie, dass Sie &uuml;ber die Europ&auml;ische Krankenversicherungskarte (EHIC) nur Anspruch auf die unter Ber&uuml;cksichtigung Ihrer Aufenthaltsdauer medizinisch notwendigen Leistungen haben und nur in dem Umfang und in der Art und Weise (z. B. als Kostenerstattung), wie er f&uuml;r gesetzlich im Aufenthaltsstaat Versicherte besteht. Kosten eines R&uuml;cktransports nach Deutschland und Leistungen, die nicht zum Leistungsumfang der gesetzlichen Kranken- und Pflegeversicherung im Aufenthaltsstaat geh&ouml;ren, sind &uuml;ber einen ggf. in Deutschland fortbestehenden gesetzlichen Krankenversicherungsschutz generell ausgeschlossen. Wir raten Ihnen daher sich auch &uuml;ber ein ad&auml;quates Angebot f&uuml;r einen privaten Krankenversicherungsschutz beraten zu lassen.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</section>
+<a id="text_bild_modul_1" name="text_bild_modul_1"></a>
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"> Anspruchsbescheinigung/Formulare </h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+</div>
+</div>
+</div><section >
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">Bei Wohnort im anderen europäischen Staat benötige ich besondere Anspruchsbescheinigungen (E 106, E 109, E 120 oder E 121). Welche Institution stellt diese zur Verfügung?</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+Bitte wenden Sie sich direkt an Ihre Krankenkasse.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">Ich habe einen Rentenantrag in Deutschland gestellt. Mein Versicherungsverlauf weist Lücken auf, da ich auch in anderen EU-Staaten gearbeitet habe. Wie können die fehlenden Zeiten nachgewiesen werden?</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+Bitte lassen Sie sich von der jeweiligen Krankenkasse des Mitgliedstaats, in dem Sie versichert waren, eine Bescheinigung E 104 bzw. SED S041 &uuml;ber die dort zur&uuml;ckgelegten Versicherungszeiten ausstellen und an Ihre deutsche Krankenkasse senden. Die deutsche Krankenkasse kann die Ausstellung eines Nachweises dieser Zeiten &uuml;ber den Vordruck E 104 bzw. SED S041 auch f&uuml;r Sie bei der Krankenkasse im anderen Mitgliedstaat anfordern. Alternativ sind andersweitige Nachweise wie z. B. Arbeitsvertr&auml;ge bzw. Verdienstbescheinigungen, Steuerbescheide, Nachweis von Lohnersatzleistungen (z. B. Arbeitslosengeld), Nachweis &uuml;ber den Wohnsitz (bei Staaten mit Nationalem Gesundheitsdienst), Studienbescheinigungen zu ber&uuml;cksichtigen. Im anderen Mitgliedstaat zur&uuml;ckgelegte Versicherungszeiten bei einem gesetzlichen Krankenversicherungstr&auml;ger sind den gesetzlichen Versicherungszeiten in Deutschland im Regelfall gleichgestellt und k&ouml;nnen daher z.B. zur Erf&uuml;llung der Vorversicherungszeit bei der Pr&uuml;fung der Krankenversicherung der Rentner oder der freiwilligen Versicherung ber&uuml;cksichtigt werden.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</section>
+<a id="text_bild_modul_4" name="text_bild_modul_4"></a>
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"> Leistungen bei Aufenthalt in Deutschland </h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+</div>
+</div>
+</div><section >
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">Ich benötige ärztliche/zahnärztliche Hilfe und der Arzt/Zahnarzt akzeptiert meine Europäische Krankenversicherungskarte (EHIC) nicht. An wen kann ich mich wenden?</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+Mit der Europ&auml;ischen Krankenversicherungskarte (EHIC), der Global Health Insurance Card (GHIC) bzw. einer entsprechenden &bdquo;Provisorischen Ersatzbescheinigung&ldquo; (PEB) erhalten Sie bei allen Vertrags&auml;rzten in Deutschland alle <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/informationen/glossar/" title="Link zur Seite &quot;Zu den Begriffserl&auml;uterungen&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Sachleistungen </span> </span> </a> nach deutschem Recht, die unter Ber&uuml;cksichtigung Ihrer Aufenthaltsdauer in Deutschland medizinisch notwendig werden. Sollte es bei der Inanspruchnahme von Leistungen zu Fragen oder Problemen kommen, wenden Sie sich bitte an die von Ihnen gew&auml;hlte deutsche aushelfende Krankenkasse. Detaillierte Informationen, wie Sie im Krankheitsfall medizinische Leistungen in Deutschland erhalten, finden Sie in unseren Brosch&uuml;ren &bdquo;Urlaub in Deutschland&ldquo;. Mit Ihrer Europ&auml;ischen Krankenversicherungskarte (EHIC), der Global Health Insurance Card (GHIC) bzw. einer entsprechenden &bdquo;Provisorischen Ersatzbescheinigung&ldquo; (PEB) besteht kein Anspruch auf Leistungen, wenn Sie zur Behandlung/Entbindung nach Deutschland eingereist sind sowie f&uuml;r solche Leistungen, die nicht vom gesetzlichen Leistungsumfang erfasst werden.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">Der behandelnde Arzt teilte mir mit, dass ich - trotz vorgelegter Europäischer Krankenversicherungskarte (EHIC) - zunächst eine Privatrechnung erhalte, die ich dann bei meiner Krankenkasse zur Kostenerstattung einreichen soll. Ist dies korrekt?</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+Mit der Europ&auml;ischen Krankenversicherungskarte (EHIC), einer Global Health Insurance Card (GHIC) bzw. einer entsprechenden &bdquo;Provisorischen Ersatzbescheinigung&ldquo; (PEB) erhalten Sie bei allen Vertrags&auml;rzten in Deutschland alle Sachleistungen nach deutschem Recht, die unter Ber&uuml;cksichtigung Ihrer Aufenthaltsdauer medizinisch notwendig sind. Die Ausstellung einer Privatrechnung f&uuml;r diese Leistungen durch die Arzt/Zahnarztpraxis ist unzul&auml;ssig. Nehmen Sie Leistungen in Anspruch, die unter Ber&uuml;cksichtigung Ihrer Aufenthaltsdauer medizinisch nicht notwendig sind oder, die nicht zum Leistungskatalog der gesetzlichen Krankenversicherung geh&ouml;ren oder zu deren Behandlung Sie eingereist sind, gehen diese komplett zu Ihren Lasten. Ob eine Leistung medizinisch notwendig ist, entscheidet der behandelnde Arzt ggf. nach R&uuml;cksprache mit der von Ihnen gew&auml;hlten deutschen Krankenkasse. Sollte es bei der Inanspruchnahme von Leistungen zu Fragen oder Problemen kommen, wenden Sie sich bitte an die von Ihnen gew&auml;hlte deutsche aushelfende Krankenkasse. Detaillierte Informationen, wie Sie im Krankheitsfall medizinische Leistungen in Deutschland erhalten, finden Sie in unseren Brosch&uuml;ren &bdquo;Urlaub in Deutschland&ldquo;.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">In unserer Praxis möchte sich ein in einem anderen Mitgliedstaat Versicherter behandeln lassen. Was müssen wir beachten?</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+Der Patient/die Patientin muss eine g&uuml;ltige Anspruchsbescheinigung (Europ&auml;ische Krankenversichertenkarte - EHIC, Global Health Insurance Card - GHIC oder &bdquo;Provisorische Ersatzbescheinigung" - PEB) und einen Identit&auml;tsnachweis vorlegen. Mit der &bdquo;Patientenerkl&auml;rung Europ&auml;ische Krankenversicherung" w&auml;hlt der Patient/die Patientin eine deutsche gesetzliche Krankenkasse. Sie k&ouml;nnen dann mit dieser Krankenkasse die, abgestellt auf die Aufenthaltsdauer, medizinisch notwendigen Sachleistungen im Ersatzverfahren &uuml;ber die Kassen&auml;rztliche/Kassenzahn&auml;rztliche Vereinigung abrechnen. Der Patient/die Patientin zahlt die gesetzliche Zuzahlung und ggf. gew&uuml;nschte Privatleistungen. Nicht abgedeckt &uuml;ber die EHIC, GHIC oder PEB sind alle Leistungen, zu deren Inanspruchnahme der Patient/die Patientin eingereist ist (z.B. Einreise zur Entbindung, Operation). Sollte es bei der Inanspruchnahme von Leistungen zu Fragen oder Problemen kommen, wenden Sie sich bitte an die gew&auml;hlte deutsche aushelfende Krankenkasse. Detaillierte Informationen sowie Muster der erforderlichen Anspruchsbescheinigungen zu dem o.g. Verfahren finden Sie auf unserer Website unter den Informationen f&uuml;r <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/leistungserbringer/" title="Link zur Seite &quot;Informationen f&uuml;r Leistungserbringer&quot;" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> &bdquo;Leistungserbringer" </span> </span> </a>.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="accordion my-sm legacy_umrechnungskurse">
+<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-blue text-white focus-within:bg-blue-darker hover:bg-blue-darker">
+<span class="w-[95%]">In unserer Praxis möchte sich ein aus dem Mitgliedstaat stammender Patient behandeln lassen. Dieser hat keine Anspruchsbescheinigung dabei. Was muss ich beachten?</span>
+<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+class="chevron origin-center text-current transition-all duration-300 ease-out"
+height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<path d="M6 9l6 6l6 -6"></path>
+</svg>
+</summary>
+<div class="accordion-body p-md border border-blue">
+<div class="module textImage">
+<p class="!mb-0 text-base text-blue"></p>
+<h3 class="h3 mt-0 font-bold text-blue-darkest"></h3>
+<div class="imageTextWrapper grid gap-sm md:grid-cols-none">
+<div class="text text-blue-darkest ">
+<p>
+Lassen Sie sich bitte vom Patienten/von der Patientin die &bdquo;Patientenerkl&auml;rung Europ&auml;ische Krankenversicherung" ausf&uuml;llen. Der Patient/die Patientin muss dort u.a. eine deutsche Krankenkasse w&auml;hlen. Anschlie&szlig;end kann der Patient/die Patientin entweder selbst eine PEB beim zust&auml;ndigen Tr&auml;ger im Heimatstaat anfordern oder die PEB durch die gew&auml;hlte deutsche gesetzliche Krankenkasse anfordern lassen.</p>
+<p>
+Im &Uuml;brigen gilt Folgendes: Legt der im Ausland versicherte Patient/die im Ausland versicherte Patientin keine EHIC, GHIC oder PEB und/oder keinen Identit&auml;tsnachweis vor, so sind Sie als Arzt/&Auml;rztin bzw. Zahnarzt/Zahn&auml;rztin berechtigt und verpflichtet, von diesem/dieser eine Verg&uuml;tung nach GOA bzw. GOZ zu fordern. Wird eine solche private Verg&uuml;tung gefordert, d&uuml;rfen auch Arznei-, Heil- und Hilfsmittel nur auf Privatrezept verordnet werden.</p>
+<p>
+Das Honorar ist zu erstatten, wenn eine g&uuml;ltige PEB (sowie ggf. der Identit&auml;tsnachweis) bis Ende des Quartals (&auml;rztliche Behandlung) bzw. innerhalb von 10 Tagen nach der ersten Inanspruchnahme (zahn&auml;rztliche Behandlung) nachgereicht wird (werden). Die Nachreichung einer EHIC bzw. GHIC ist aber nur zu akzeptieren, wenn sie noch am Behandlungstag oder am folgenden Arbeitstag nachgereicht wird. Rechnen Sie dann die Kosten bitte im Rahmen des Ersatzverfahrens &uuml;ber die Kassen&auml;rztliche/Kassenzahn&auml;rztliche Vereinigung mit der in Deutschland gew&auml;hlten Krankenkasse ab. </p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</section>
+<div class="link-list text-blue-dark" >
+<h6 class="h6"> Merkblätter „Urlaub in Deutschland" </h6>
+<ul class="link-list__list flex flex-col gap-xs pl-sm">
+<ul class="link-list__list flex flex-col gap-xs pl-sm" >
+<!--
+list size: 6
+-->
+<!-- 236084 -->
+<li>
+<a
+class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue"
+aria-label="Download file"
+aria-expanded="false"
+href="https://www.dvka.de/media/dokumente/merkblaetter/urlaub-in-deutschland/ehic_dt_spanisch.pdf"
+target="_blank"
+>
+<span>
+<svg
+stroke="currentColor"
+fill="currentColor"
+stroke-width="0"
+viewBox="0 0 24 24"
+height="24"
+width="24"
+xmlns="http://www.w3.org/2000/svg"
+>
+<path fill="none" d="M0 0h24v24H0V0z"></path>
+<path d="M18 2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 2v16H6V8.83L10.83 4H18z"></path>
+<path d="M16 13l-4 4-4-4 1.41-1.41L11 13.17V9.02L13 9v4.17l1.59-1.59L16 13z"></path>
+</svg>
+</span>
+<span class="flex flex-col">
+<span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold">
+Con la Tarjeta Sanitaria Europea (TSE) en Alemania  (PDF, 498 KB)
+</span>
+<span class="block">Hoja informativa sobre prestaciones del seguro de enfermedad para turistas, trabajadores desplazados y estudiantes de un estado de la UE/EEE, de Suiza o del Reino Unido (&Uacute;ltima atualizaci&oacute;n: 01/2025).</span>
+</span>
+</a>
+</li>
+<!-- 236083 -->
+<li>
+<a
+class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue"
+aria-label="Download file"
+aria-expanded="false"
+href="https://www.dvka.de/media/dokumente/merkblaetter/urlaub-in-deutschland/ehic_dt_polnisch.pdf"
+target="_blank"
+>
+<span>
+<svg
+stroke="currentColor"
+fill="currentColor"
+stroke-width="0"
+viewBox="0 0 24 24"
+height="24"
+width="24"
+xmlns="http://www.w3.org/2000/svg"
+>
+<path fill="none" d="M0 0h24v24H0V0z"></path>
+<path d="M18 2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 2v16H6V8.83L10.83 4H18z"></path>
+<path d="M16 13l-4 4-4-4 1.41-1.41L11 13.17V9.02L13 9v4.17l1.59-1.59L16 13z"></path>
+</svg>
+</span>
+<span class="flex flex-col">
+<span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold">
+Z Europejską Kartę Ubezpieczenia Zdrowotnego (EKUZ) w Niemczech  (PDF, 495 KB)
+</span>
+<span class="block">Informator o świadczeniach z tytułu ubezpieczenia zdrowotnego dla turyst&oacute;w, pracownik&oacute;w delegowanych i student&oacute;w z państw UE/EOG, Szwajcarii lub ze Zjednoczonego Kr&oacute;lestwa Wielkiej Brytanii i Irlandii P&oacute;łnocnej (Stan na dzień: 01/2025)</span>
+</span>
+</a>
+</li>
+<!-- 236082 -->
+<li>
+<a
+class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue"
+aria-label="Download file"
+aria-expanded="false"
+href="https://www.dvka.de/media/dokumente/merkblaetter/urlaub-in-deutschland/ehic_dt_italienisch.pdf"
+target="_blank"
+>
+<span>
+<svg
+stroke="currentColor"
+fill="currentColor"
+stroke-width="0"
+viewBox="0 0 24 24"
+height="24"
+width="24"
+xmlns="http://www.w3.org/2000/svg"
+>
+<path fill="none" d="M0 0h24v24H0V0z"></path>
+<path d="M18 2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 2v16H6V8.83L10.83 4H18z"></path>
+<path d="M16 13l-4 4-4-4 1.41-1.41L11 13.17V9.02L13 9v4.17l1.59-1.59L16 13z"></path>
+</svg>
+</span>
+<span class="flex flex-col">
+<span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold">
+Come utilizzare la Tessera Europea Assistenza Malattia (TEAM) in Germania  (PDF, 501 KB)
+</span>
+<span class="block">Foglio d&lsquo;istruzioni per accedere alle prestazioni dell&lsquo;assicurazione malattia tedesca per turisti, lavoratori distaccati e studenti provenienti da uno stato membro dell'UE/del SEE, dalla Svizzera o dal Regno Unito (Aggiornato il 01/2025).</span>
+</span>
+</a>
+</li>
+<!-- 236081 -->
+<li>
+<a
+class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue"
+aria-label="Download file"
+aria-expanded="false"
+href="https://www.dvka.de/media/dokumente/merkblaetter/urlaub-in-deutschland/ehic_dt_franzoesisch.pdf"
+target="_blank"
+>
+<span>
+<svg
+stroke="currentColor"
+fill="currentColor"
+stroke-width="0"
+viewBox="0 0 24 24"
+height="24"
+width="24"
+xmlns="http://www.w3.org/2000/svg"
+>
+<path fill="none" d="M0 0h24v24H0V0z"></path>
+<path d="M18 2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 2v16H6V8.83L10.83 4H18z"></path>
+<path d="M16 13l-4 4-4-4 1.41-1.41L11 13.17V9.02L13 9v4.17l1.59-1.59L16 13z"></path>
+</svg>
+</span>
+<span class="flex flex-col">
+<span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold">
+Avec la Carte Europ&eacute;enne d&rsquo;Assurance Maladie (CEAM) en Allemagne  (PDF, 512 KB)
+</span>
+<span class="block">Feuille d&rsquo;informations sur les prestations de l&rsquo;assurance maladie pour les touristes, les travailleurs d&eacute;tach&eacute;s et les &eacute;tudiants d&rsquo;un &eacute;tat de l&rsquo;UE/EEE, de la Suisse ou du Royaume-Uni (Mise &agrave; jour au 01.01.2025).</span>
+</span>
+</a>
+</li>
+<!-- 236080 -->
+<li>
+<a
+class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue"
+aria-label="Download file"
+aria-expanded="false"
+href="https://www.dvka.de/media/dokumente/merkblaetter/urlaub-in-deutschland/ehic_dt_englisch.pdf"
+target="_blank"
+>
+<span>
+<svg
+stroke="currentColor"
+fill="currentColor"
+stroke-width="0"
+viewBox="0 0 24 24"
+height="24"
+width="24"
+xmlns="http://www.w3.org/2000/svg"
+>
+<path fill="none" d="M0 0h24v24H0V0z"></path>
+<path d="M18 2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 2v16H6V8.83L10.83 4H18z"></path>
+<path d="M16 13l-4 4-4-4 1.41-1.41L11 13.17V9.02L13 9v4.17l1.59-1.59L16 13z"></path>
+</svg>
+</span>
+<span class="flex flex-col">
+<span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold">
+Going to Germany with your European Health Insurance Card (EHIC)  (PDF, 498 KB)
+</span>
+<span class="block">Information leaflet on health insurance benefits for tourists, posted workersand students from an EU/EEA State, Switzerland or the United Kingdom (Updated on 01/2025).</span>
+</span>
+</a>
+</li>
+<!-- 236079 -->
+<li>
+<a
+class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue"
+aria-label="Download file"
+aria-expanded="false"
+href="https://www.dvka.de/media/dokumente/merkblaetter/urlaub-in-deutschland/ehic_dt_deutsch.pdf"
+target="_blank"
+>
+<span>
+<svg
+stroke="currentColor"
+fill="currentColor"
+stroke-width="0"
+viewBox="0 0 24 24"
+height="24"
+width="24"
+xmlns="http://www.w3.org/2000/svg"
+>
+<path fill="none" d="M0 0h24v24H0V0z"></path>
+<path d="M18 2h-8L4 8v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 2v16H6V8.83L10.83 4H18z"></path>
+<path d="M16 13l-4 4-4-4 1.41-1.41L11 13.17V9.02L13 9v4.17l1.59-1.59L16 13z"></path>
+</svg>
+</span>
+<span class="flex flex-col">
+<span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold">
+Mit der Europ&auml;ischen Krankenversicherungskarte (EHIC) in Deutschland  (PDF, 499 KB)
+</span>
+<span class="block">Merkblatt &uuml;ber Leistungen der Krankenversicherung f&uuml;r Touristen, entsandte Arbeitnehmer und Studierende aus einem EU/EWR-Staat, der Schweiz oder dem Vereinigten K&ouml;nigreich (Stand: 01.01.2025).</span>
+</span>
+</a>
+</li>
+</ul>
+</ul>
+</div>
+</div>
+</main>
+	<section class="cb-banner fixed bottom-0 z-[1000] max-h-[90%] w-full overflow-y-auto bg-grey-lighter p-lg is-shortbody">
+	    <div class="container w-full">
+	        <form class="cb-form">
+	            <div class="flex flex-col">
+	                <h2 class="mb-sm">Wir verwenden Cookies</h2>
+	                <div>
+  <p>
+Wir setzen Cookies ein, um die Nutzung unseres Webauftritts f&uuml;r Sie komfortabler zu gestalten. Wir m&ouml;chten zudem Ihr Nutzungsverhalten besser verstehen, um Inhalte und Funktionen kontinuierlich zu verbessern. Bitte stimmen Sie daher der Nutzung folgender Cookies zu. N&auml;here Informationen zu den von uns gespeicherten Daten finden Sie in unserer <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/global/datenschutzbestimmungen.html" title="" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Datenschutzerkl&auml;rung </span> </span> </a>.</p>
+	                </div>
+	            </div>
+	            <div class="my-sm flex flex-wrap items-center gap-md">
+	                <div>
+	                    <div class="relative flex flex-row-reverse justify-end gap-xs">
+	                        <label id="option_required-label" for="option_required"class="pt-px text-blue-darkest cursor-not-allowed self-center rounded-none bg-transparent">
+	                        	Notwendig
+	                        </label>
+	                        <input aria-labelledby="option_required-label" type="checkbox" id="option_required" name="option_required" disabled checked
+	                               class="undefined border-blue h-6 w-6 cursor-not-allowed flex-shrink-0 appearance-none rounded-none border bg-transparent">
+	                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="h-6 w-6 checkbox pointer-events-none absolute text-blue" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+	                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"></path>
+	                        </svg>
+	                    </div>
+	                    <div class="ml-1 mt-2 grid-cols-[auto,_1fr] gap-1 text-red hidden" data-error="true"><p>*</p></div>
+	                </div>
+	                <div>
+	                    <div class="relative flex flex-row-reverse justify-end gap-xs">
+	                        <label id="option_statistic-label" for="option_statistic" class="pt-px text-blue-darkest cursor-pointer self-center rounded-none bg-transparent">
+	                        	Statistik
+	                        </label>
+	                        <input aria-labelledby="option_statistic-label" type="checkbox" id="option_statistic" name="option_statistic" class="undefined border-blue h-6 w-6 cursor-pointer flex-shrink-0 appearance-none rounded-none border bg-transparent">
+	                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="h-6 w-6 checkbox pointer-events-none absolute text-blue hidden" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+	                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"></path>
+	                        </svg>
+	                    </div>
+	                    <div class="ml-1 mt-2 grid-cols-[auto,_1fr] gap-1 text-red hidden" data-error="true"><p>*</p></div>
+	                </div>
+	                <button type="button" aria-label="Details anzeigen" aria-controls="cb-faq" aria-expanded="false"
+	                 class="btn min-h-[44px] py-xxs px-sm flex justify-center items-center focus:underline hover:underline bg-transparent border border-1 border-blue text-blue-darkest hover:border-blue-darkest cb-details-toggle"
+	                >
+	                	<span>Details anzeigen</span>
+	                	<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="24" width="24"
+	                	 class="cb-details-toggle__icon origin-center text-current transition-all duration-300 ease-out" xmlns="http://www.w3.org/2000/svg"
+	                	>
+	                		<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+	                		<path d="M6 9l6 6l6 -6"></path>
+	                	</svg>
+	                </button>
+	                <button id="cb-accept-selection" type="submit" aria-label="Auswahl akzeptieren" class="btn min-h-[44px] py-xxs px-sm flex justify-center items-center focus:underline hover:underline bg-transparent border border-1 border-blue text-blue-darkest hover:border-blue-darkest">
+	                	Auswahl akzeptieren
+	                </button>
+	                <button id="cb-acceptall" type="button" aria-label="Alle Cookies akzeptieren" class="btn min-h-[44px] py-xxs px-sm flex justify-center items-center focus:underline hover:underline bg-blue text-white hover:bg-blue-darker">
+	                	Alle Cookies akzeptieren
+	                </button>
+	            </div>
+	        </form>
+	        <div id="cb-faq" class="cb-faq">
+		        	<details class="accordion group my-sm">
+	<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-white text-blue-darker">
+		<span>Was sind Cookies? </span>
+		<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+			class="chevron origin-center text-current transition-all duration-300 ease-out" height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+			<path d="M6 9l6 6l6 -6"></path>
+		</svg>
+	</summary>
+	<div class="accordion-body p-md">
+  <p>
+Cookies sind kleine Textdateien, die eine Webseite auf Ihrem Computer bzw. Endger&auml;t speichert, um einzelne Funktionen und Webanwendungen wie die Suche und Formulare nutzerfreundlicher gestalten zu k&ouml;nnen. Cookies werden in der Regel im Internetbrowser-Ordner bzw. vom Internetbrowser auf dem Betriebssystem Ihres Computers gespeichert.</p>
+  <p>
+Unsere Webseiten unterscheiden zwischen notwendigen Cookies, ohne die die Webseite nicht funktionieren w&uuml;rde, und Statistik-Cookies, mit deren Hilfe wir das Nutzerverhalten unserer Zielgruppen besser verstehen lernen und unsere Webseiten kontinuierlich verbessern k&ouml;nnen. Notwendige Cookies k&ouml;nnen wir laut Gesetz auf Ihrem Computer speichern. F&uuml;r die Statistik-Cookies ben&ouml;tigen wir Ihre Zustimmung.</p>
+  <p>
+Sie k&ouml;nnen Ihre Einwilligung zur Cookie-Erkl&auml;rung jederzeit auf unserer Website &auml;ndern oder widerrufen. Mehr dazu erfahren Sie in unserer <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/global/datenschutzbestimmungen.html" title="" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Datenschutzerkl&auml;rung </span> </span> </a>.</p>
+	</div>
+</details>
+
+		        	<details class="accordion group my-sm">
+	<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-white text-blue-darker">
+		<span>Was sind notwendige Cookies?</span>
+		<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+			class="chevron origin-center text-current transition-all duration-300 ease-out" height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+			<path d="M6 9l6 6l6 -6"></path>
+		</svg>
+	</summary>
+	<div class="accordion-body p-md">
+  <p>
+Notwendige Cookies sorgen daf&uuml;r, dass unsere Webseiten korrekt funktionieren. Sie werden beispielsweise f&uuml;r die Navigation, die Suchfunktion und f&uuml;r einzelne Formulare ben&ouml;tigt. Folgende Cookies werden beim Besuch unserer Webseiten auf Ihrem Computer gespeichert:</p>
+  <p>
+<strong>BIGipServerDVKA-DVKA-PR-HTTPs_Pool (GKV-Spitzenverband)</strong><br />Dieser Cookie speichert die Information, &uuml;ber welchen unserer Server die Webseite besucht wird.<br /><strong>Ablauf:</strong> nach Schlie&szlig;en des Browserfensters/-tabs</p>
+  <p>
+<strong>creaseFont</strong> (GKV-Spizenverband)<br />Dieser Cookie speichert die bevorzugte Schriftgr&ouml;&szlig;e. Dieser Cookie wird nur gesetzt, wenn die Besucherin / der Besucher f&uuml;r diese Website eine andere Schriftgr&ouml;&szlig;e als die Standard-Schriftgr&ouml;&szlig;e gew&auml;hlt hat.<br /><strong>Ablauf:</strong> 60 Tage</p>
+  <p>
+<strong>JSESSIONID (GKV-Spitzenverband)</strong><br />Dieser Cookie speichert eine anonyme ID, die w&auml;hrend des Besuchs unserer Webseite f&uuml;r bestimmte Funktionen ben&ouml;tigt wird.<br /><strong>Ablauf:</strong> nach Schlie&szlig;en des Browserfensters/-tabs</p>
+	</div>
+</details>
+
+		        	<details class="accordion group my-sm">
+	<summary class="summary btn-strong w-full cursor-pointer list-none min-h-[46px] p-xs pl-md flex items-center justify-between gap-sm bg-white text-blue-darker">
+		<span>Was sind  Statistik-Cookies?</span>
+		<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+			class="chevron origin-center text-current transition-all duration-300 ease-out" height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+			<path d="M6 9l6 6l6 -6"></path>
+		</svg>
+	</summary>
+	<div class="accordion-body p-md">
+  <p>
+Diese Cookies speichern Informationen zur Nutzung w&auml;hrend Ihres Besuchs unserer Webseiten. Die gespeicherten Informationen geben uns Auskunft &uuml;ber die Reichweite unseres Webauftritts und das Nutzungsverhalten unserer Besucherinnen und Besucher. Auf dieser Basis k&ouml;nnen wir unser Webangebot kontinuierlich f&uuml;r Sie verbessern. </p>
+  <p>
+S&auml;mtliche Informationen werden anonym erfasst und ausgewertet. Wir nutzen daf&uuml;r die Open-Source-Software Matomo, die auf unseren Servern installiert ist. N&auml;heres dazu k&ouml;nnen Sie in unserer <a class="group link inline-flex cursor-pointer gap-xs text-blue-darkest hover:text-blue" href="https://www.dvka.de/de/global/datenschutzbestimmungen.html" title="" target="_self"> <span class="flex flex-col"> <span class="flex items-center flex-1 group-focus:underline group-hover:underline font-bold"> Datenschutzerkl&auml;rung </span> </span> </a> nachlesen.</p>
+  <p>
+<strong>_pk_ses (GKV-Spitzenverband / Matomo)</strong><br /><strong>Ablauf:</strong> 30 Minuten</p>
+  <p>
+<strong>_pk_id (GKV-Spitzenverband / Matomo)</strong><br /><strong>Ablauf:</strong> 13 Monate</p>
+	</div>
+</details>
+
+			</div>
+	    </div>
+	</section>
+
+<footer class="footer text-blue-darkest">
+<div class="container">
+<div class="grid grid-cols-1 gap-y-xxl border-t-[1px] border-grey-lighter py-xxl">
+<div class="flex flex-col items-start gap-md md:flex-row md:gap-lg">
+<div class="min-w-fit w-auto h-[60px]">
+<a href="
+https://www.gkv-spitzenverband.de
+">
+<img class="w-full h-full" src="https://www.dvka.de/media/bilder/startseite/gkv_1.png" >
+</a>
+</div>
+<div class=" md:mt-[-8px]">
+<h6 class="h6">GKV-Spitzenverband</h6>
+<p>
+Die DVKA ist eine Abteilung des GKV-Spitzenverbandes. Der GKV-Spitzenverband ist die zentrale Interessenvertretung der gesetzlichen Kranken- und Pflegekassen in Deutschland.</p>
+</div>
+</div>
+<nav class="footer__nav" aria-label="Footer main navigation">
+<ul class="grid grid-cols-1 gap-y-xxl gap-x-md md:grid-cols-3">
+<li>
+<div class="link-list text-blue-darkest">
+<h6 class="h6">Versicherte</h6>
+<ul class="link-list__list flex flex-col gap-xs pl-sm">
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/versicherte/touristen/" title="Touristen" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Touristen</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/versicherte/rentner/" title="Rentner" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Rentner</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/versicherte/grenzgaenger/" title="Grenzgänger" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Grenzgänger</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/versicherte/studierende-und-praktikanten/" title="Studierende und Praktikanten" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Studierende und Praktikanten</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/versicherte/faq/" title="Häufig gestellte Fragen" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Häufig gestellte Fragen</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="link-list text-blue-darkest">
+<h6 class="h6">Arbeitgeber &amp; Erwerbst&auml;tige</h6>
+<ul class="link-list__list flex flex-col gap-xs pl-sm">
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/antraege-finden/" title="Antrags- und Bescheinigungsverfahren - allgemein" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Antrags- und Bescheinigungsverfahren</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/antragstellung-im-sv-meldeportal/" title="Antragstellung im SV-Meldeportal - Tätigkeit in mehreren Staaten" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Antragstellung im SV-Meldeportal</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/laenderspezifische-informationen/" title="Länderspezifische Informationen" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Länderspezifische Informationen</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/arbeitgeber-erwerbstaetige/geltungsbereiche/" title="Geltungsbereiche im internationalen Sozialrecht" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Geltungsbereiche im internationalen Sozialrecht</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/versicherte/faq/" title="Häufig gestellte Fragen" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Häufig gestellte Fragen</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="link-list text-blue-darkest">
+<h6 class="h6">Leistungserbringer</h6>
+<ul class="link-list__list flex flex-col gap-xs pl-sm">
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/leistungserbringer/vertragsaerztliche-versorgung/" title="Vertragsärztliche Versorgung " target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Vertragsärztliche Versorgung </span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/leistungserbringer/vertragszahnaerztliche-versorgung/" title="Vertragszahnärztliche Versorgung " target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Vertragszahnärztliche Versorgung </span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/leistungserbringer/stationaere-versorgung/" title="Stationäre Versorgung " target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Stationäre Versorgung </span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/leistungserbringer/leistungsumfang/" title="Leistungsumfang EHIC/PEB" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Leistungsumfang EHIC/PEB</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/leistungserbringer/informationsportal-ehic-peb/" title="Informationsportal EHIC/PEB" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Informationsportal EHIC/PEB</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="link-list text-blue-darkest">
+<h6 class="h6">Die DVKA</h6>
+<ul class="link-list__list flex flex-col gap-xs pl-sm">
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/die-dvka/wir-ueber-uns/" title="Wir über uns" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Wir über uns</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/die-dvka/ausschreibungen/" title="Ausschreibungen" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Ausschreibungen</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/die-dvka/merkblaetter/" title="Merkblätter" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Merkblätter</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/die-dvka/so-erreichen-sie-uns/" title="So erreichen Sie uns" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">So erreichen Sie uns</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/die-dvka/karriere/" title="Karriere" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Karriere</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/global/datenschutz_rechtl_hinweise.html" title="Rechtliche Hinweise zum Datenschutz" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Rechtliche Hinweise zum Datenschutz</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="link-list text-blue-darkest">
+<h6 class="h6">Informationen</h6>
+<ul class="link-list__list flex flex-col gap-xs pl-sm">
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/informationen/auskunftstellen/" title="Auskunftstellen" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Auskunftstellen</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/informationen/glossar/" title="Glossar" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Glossar</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/informationen/rechtsquellen/" title="Rechtsquellen" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Rechtsquellen</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/informationen/institution-repository/" title="Institution Repository" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Institution Repository</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/informationen/umrechnungskurse/" title="Umrechnungskurse" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Umrechnungskurse</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/informationen/brexit/" title="Brexit" target="_self">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Brexit</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</nav>
+<div>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Seite drucken" aria-expanded="false" href="javascript:window.print()">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24"
+width="24" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" d="M0 0h24v24H0V0z"></path>
+<path d="M19 8h-1V3H6v5H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zM8 5h8v3H8V5zm8 14H8v-4h8v4zm2-4v-2H6v2H4v-4c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v4h-2z"></path>
+<circle cx="18" cy="11.5" r="1"></circle>
+</svg>
+<span class="flex items-center flex-1 focus:underline hover:underline">Drucken</span>
+</a>
+</div>
+<small class="flex flex-col gap-lg md:flex-row md:justify-between"><p>© GKV-Spitzenverband DVKA</p>
+<p>Zuletzt aktualisiert: 26.05.2026</p>
+</small>
+<nav class="footer__nav-bottom" aria-label="Footer secondary navigation">
+<ul class="flex flex-wrap gap-lg">
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/global/impressum.html" title="Impressum" target="_self">
+<span class="flex items-center flex-1 focus:underline hover:underline">Impressum</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/global/datenschutz_rechtl_hinweise.html" title="Datenschutz " target="_self">
+<span class="flex items-center flex-1 focus:underline hover:underline">Datenschutz </span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/die-dvka/so-erreichen-sie-uns/" title="Kontakt " target="_self">
+<span class="flex items-center flex-1 focus:underline hover:underline">Kontakt </span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/global/suchseite.html" title="Suche " target="_self">
+<span class="flex items-center flex-1 focus:underline hover:underline">Suche </span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/informationen/" title="Informationen" target="_self">
+<span class="flex items-center flex-1 focus:underline hover:underline">Informationen</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/global/erklaerung-zur-barrierefreiheit.html" title="Erklärung zur Barrierefreiheit" target="_self">
+<span class="flex items-center flex-1 focus:underline hover:underline">Erklärung zur Barrierefreiheit</span>
+</a>
+</li>
+<li>
+<a class="link text-blue-darkest w-auto cursor-pointer gap-xs flex hover:text-blue"
+aria-label="Follow link" aria-expanded="false" href="https://www.dvka.de/de/global/interne-meldestelle.html" title="Interne Meldestelle" target="_self">
+<span class="flex items-center flex-1 focus:underline hover:underline">Interne Meldestelle</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</footer>
+<!-- 5.2.231107.f91f23c | 2026-10-28 16:29 | standardpage | 234896 -->
+</body>
+</html>

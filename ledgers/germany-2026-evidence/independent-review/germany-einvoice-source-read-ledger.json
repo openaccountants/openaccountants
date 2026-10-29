@@ -1,0 +1,2190 @@
+{
+  "all_frozen_current_units_read": 365,
+  "claim_read_batches": [
+    [
+      1,
+      70
+    ],
+    [
+      71,
+      140
+    ],
+    [
+      141,
+      210
+    ],
+    [
+      211,
+      280
+    ],
+    [
+      281,
+      365
+    ]
+  ],
+  "selected_quote_records": [
+    {
+      "row": 1,
+      "id": "CASH",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+      "native_LF": [
+        13,
+        13
+      ],
+      "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+      "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+      "quote_sha256": "fafd7d22f8503b2db8017db3bca0630f4dc952212982b00830b4c1c151625fd4",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__4.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 35,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 2,
+      "id": "CASHTIME",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-11-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ufbf7361c0eb0696a.reader.txt",
+      "native_LF": [
+        7,
+        8
+      ],
+      "raw_sha256": "fa07a7805b96905289274c0181192e53bff996059b6ac1e854afdcdb33653e02",
+      "reader_sha256": "b239c9ca998d62964ce7f7d79ee0532ce07bfdc78f2ca3c186bb6b463bf3266f",
+      "quote_sha256": "510fcf1c97c2a595ba97210c23e99c5af9808168e554cb35bd8a051d136064cb",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__11.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 73,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 3,
+      "id": "CRIME",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-370-20261027.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U40b1b56d09dec21a.reader.txt",
+      "native_LF": [
+        7,
+        13
+      ],
+      "raw_sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+      "reader_sha256": "4059b3eeb14a28f929ae1583a4a7cb78525c6d828ff66a88b41ec68ad01724e6",
+      "quote_sha256": "00d4f1772314e6b733cb3b10d925e8fb4f29c82cfd26ceeab0621f5983752257",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__370.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 81,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 4,
+      "id": "KU",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-19-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ueb043bd52ca19a0a.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "bcee10874715ec2bb3a0ed1867ef4f512bee0093e4eed85e57bae7addc777bfc",
+      "reader_sha256": "ae56f5ede8b771215419ba19792d931837bbcf69fc6116512c3c95ac4f8cf5f3",
+      "quote_sha256": "e6985df8aa5192bfe293c70af2dd2c9cdf45edeb91ed66a9ebc160a35e09b799",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__19.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 49,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 5,
+      "id": "DEFINITION",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-14-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U07132459484f876d.reader.txt",
+      "native_LF": [
+        7,
+        10
+      ],
+      "raw_sha256": "ea479e0e6088f5f12a8453eceb145c1a59ef9861803a2c2eea12775d44360eb7",
+      "reader_sha256": "51f058c1b9e8785699a47d29e92bdc5fafc8b451c50c5cfd205018ae11a7e670",
+      "quote_sha256": "75e3179ec88f38c569c0f0501814aa98c0f57a0a3d85fc0ebd9abca44059b951",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__14.html",
+      "actual_read_bridge": {
+        "guide": "germany-vat-return",
+        "quote_row": 56,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 6,
+      "id": "DUTY",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-14-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U07132459484f876d.reader.txt",
+      "native_LF": [
+        11,
+        17
+      ],
+      "raw_sha256": "ea479e0e6088f5f12a8453eceb145c1a59ef9861803a2c2eea12775d44360eb7",
+      "reader_sha256": "51f058c1b9e8785699a47d29e92bdc5fafc8b451c50c5cfd205018ae11a7e670",
+      "quote_sha256": "ff99616907532f1b5356012fa6b7936bf9f31952158d8b6972b2f640655500d4",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__14.html",
+      "actual_read_bridge": {
+        "guide": "germany-vat-return",
+        "quote_row": 56,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 7,
+      "id": "INTEGRITY",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-14-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U07132459484f876d.reader.txt",
+      "native_LF": [
+        18,
+        21
+      ],
+      "raw_sha256": "ea479e0e6088f5f12a8453eceb145c1a59ef9861803a2c2eea12775d44360eb7",
+      "reader_sha256": "51f058c1b9e8785699a47d29e92bdc5fafc8b451c50c5cfd205018ae11a7e670",
+      "quote_sha256": "80c80f4531971666d7ffb25cf555ba58af8975c060495dd3f3d1d69488464550",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__14.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 8,
+      "id": "FIELDS",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-14-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U07132459484f876d.reader.txt",
+      "native_LF": [
+        22,
+        41
+      ],
+      "raw_sha256": "ea479e0e6088f5f12a8453eceb145c1a59ef9861803a2c2eea12775d44360eb7",
+      "reader_sha256": "51f058c1b9e8785699a47d29e92bdc5fafc8b451c50c5cfd205018ae11a7e670",
+      "quote_sha256": "465cf87341f2e09419cdbd1957e53e5b0242f3d5ca2eb7638cb5b583946d62da",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__14.html",
+      "actual_read_bridge": {
+        "guide": "germany-vat-return",
+        "quote_row": 42,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 9,
+      "id": "ADVANCE",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-14-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U07132459484f876d.reader.txt",
+      "native_LF": [
+        43,
+        43
+      ],
+      "raw_sha256": "ea479e0e6088f5f12a8453eceb145c1a59ef9861803a2c2eea12775d44360eb7",
+      "reader_sha256": "51f058c1b9e8785699a47d29e92bdc5fafc8b451c50c5cfd205018ae11a7e670",
+      "quote_sha256": "e0a7cd3ffdda5359d34bee9827653306cb44300bb6665cd94d93649f0cfcae4e",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__14.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 10,
+      "id": "OTHERSTATE",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-14-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U07132459484f876d.reader.txt",
+      "native_LF": [
+        55,
+        55
+      ],
+      "raw_sha256": "ea479e0e6088f5f12a8453eceb145c1a59ef9861803a2c2eea12775d44360eb7",
+      "reader_sha256": "51f058c1b9e8785699a47d29e92bdc5fafc8b451c50c5cfd205018ae11a7e670",
+      "quote_sha256": "695f01b86eefe9baef99ebbf22633f241016182a30dcca0dd0a0b290f0ba15f8",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__14.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 11,
+      "id": "NEXT15",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U09467f028dd495b9.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U09467f028dd495b9.reader.txt",
+      "native_LF": [
+        7,
+        13
+      ],
+      "raw_sha256": "c099718db71fc1a192e3d3911448f6a25661696bae8a3ca66293f02fb4f922c1",
+      "reader_sha256": "3bbd577c0c76e83137c246e953c8742b8fb84586a60608e095f8440abab0f83c",
+      "quote_sha256": "3bbe8bae74c90188aa0ee7b76aee6c8c4f24c6f84d92a6207f628d0527d0f465",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__14a.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 12,
+      "id": "SMALL",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud6736f28fab2cf5e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud6736f28fab2cf5e.reader.txt",
+      "native_LF": [
+        84,
+        85
+      ],
+      "raw_sha256": "25479639b2d67ffaec3cdf0cb39521fa91aeb98a0e1cb5bb1b82f86647fd4f85",
+      "reader_sha256": "3c0ac01abe33710a0854fa6d174a2372f2777821ecefdd28f5d12344624a3809",
+      "quote_sha256": "4005e3799bb7f84e9159f01a3722a37ab38e98f38976f7922031aefb9e9132a8",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-03-11-aenderung-gobd.pdf?__blob=publicationFile&v=4",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 13,
+      "id": "SMALL250",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustdv-33-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud9f80ce546477f0f.reader.txt",
+      "native_LF": [
+        7,
+        15
+      ],
+      "raw_sha256": "aa5ec6111492b06c7bbc4c23053b7e5c3e969a807d84bbc69a641548e8ff0558",
+      "reader_sha256": "f55fdd4deefae8149d0076b18418cb98bdb7c63fc001eaaa4b9c6928b09c89f5",
+      "quote_sha256": "9d68f8237f737e7ed65c9f727f2d68678e159314a3f2beb06f155667243dd419",
+      "official_url": "https://www.gesetze-im-internet.de/ustdv_1980/__33.html",
+      "actual_read_bridge": {
+        "guide": "germany-vat-return",
+        "quote_row": 17,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 14,
+      "id": "TICKET",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7f05a7cd48e3d4c3.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7f05a7cd48e3d4c3.reader.txt",
+      "native_LF": [
+        7,
+        19
+      ],
+      "raw_sha256": "716630f86743dc5a741f472b6da706f890683cc0df40d20db9931402001dc910",
+      "reader_sha256": "e3e27874a854b5faf44fc15ec9770d4bb84f52997cb8de754b033e47c34447c3",
+      "quote_sha256": "108f161003fc6d2fc3d7c4a932ec0e6bcac9e29f5b4fdc11e97158892557e3e8",
+      "official_url": "https://www.gesetze-im-internet.de/ustdv_1980/__34.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 15,
+      "id": "KUFIELDS",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ufbfdc6744657b2b1.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ufbfdc6744657b2b1.reader.txt",
+      "native_LF": [
+        7,
+        19
+      ],
+      "raw_sha256": "f3f2f3f4b4057d1a04ff0d022b0ed7be0919ba7174196b8c8dc7552284954e2f",
+      "reader_sha256": "ce16f9227c47b068c0699d60df796995a9aa56992526deaab46005f5949afc0d",
+      "quote_sha256": "db6560e0828204fc4313c033ead416f65d3a85b421d95d636155426995278ab7",
+      "official_url": "https://www.gesetze-im-internet.de/ustdv_1980/__34a.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 16,
+      "id": "MONTH",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue29d031b3111a2dc.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue29d031b3111a2dc.reader.txt",
+      "native_LF": [
+        7,
+        15
+      ],
+      "raw_sha256": "3349333f60dfc040493908fdc8cdc50d20855cd6e93d4cac27cfce9aa49b444d",
+      "reader_sha256": "81faef4dd6ad06335fac8ecde6a1f3c60fca0406a48cbad1a88eb4e425c24bff",
+      "quote_sha256": "fa916b051c8868ce5372ab3e62af680b9e6f46b89c7aec95702791f9d74b8fbd",
+      "official_url": "https://www.gesetze-im-internet.de/ustdv_1980/__31.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 17,
+      "id": "FEDERAL",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U491a55b0b78cb35d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U491a55b0b78cb35d.reader.txt",
+      "native_LF": [
+        7,
+        14
+      ],
+      "raw_sha256": "4fac81e1f34bf7a10a1c7b956bfa4bc142aa324e3b492f006df35ca9b9933df0",
+      "reader_sha256": "abb75f210af05db6bd54ec00b6ab72a8204c53b4af7647534f44f7d5e2c84ca6",
+      "quote_sha256": "7d30fcf9796c7edcf8eb3c751df60ea14af723bd14302bcbeca4dc847e7bc8eb",
+      "official_url": "https://www.gesetze-im-internet.de/erechv/__3.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 18,
+      "id": "PORTAL",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U57e14599b517305c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U57e14599b517305c.reader.txt",
+      "native_LF": [
+        7,
+        11
+      ],
+      "raw_sha256": "efb85c7500684e0ca57b5b162399ba2a4e21cedd43749ca0041d491c68704b18",
+      "reader_sha256": "020c3e65557f86b5d42d4e7a66b200375eef60424aafff79158fedd9ce69a033",
+      "quote_sha256": "7a161a457784c65216ed4b8c82d83c6edcd0bc261de0dbbe21222ee0b9d20b3c",
+      "official_url": "https://www.gesetze-im-internet.de/erechv/__4.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 19,
+      "id": "FEDFIELDS",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4b1a5e5d48307725.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4b1a5e5d48307725.reader.txt",
+      "native_LF": [
+        7,
+        19
+      ],
+      "raw_sha256": "b04f5f346778b525e678f20326fce706e502e38af70f25fdf47726d1bb626f8e",
+      "reader_sha256": "a0628c4e99e4434351f011d520c4678a2798c48d95026b6b4fd307303007ef71",
+      "quote_sha256": "b18696f617d7324532223b68e14b8a32cfa953c0682ec8cadfdb50d9fe883222",
+      "official_url": "https://www.gesetze-im-internet.de/erechv/__5.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 20,
+      "id": "FEDENTRY",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uff9a6e906742ca3d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uff9a6e906742ca3d.reader.txt",
+      "native_LF": [
+        7,
+        8
+      ],
+      "raw_sha256": "82444b5cd42f6eaf1bd4b82361fa021ff83e31e8341a2840e04f26182f3f4637",
+      "reader_sha256": "ab1b0171d6c41a3424f76039718f43621545cf31e7a9f255a9b03eb7d4efd767",
+      "quote_sha256": "460b2009d375228ea597de6fae56c06bc7db9f9eb471193580664ee7a18d92f1",
+      "official_url": "https://www.gesetze-im-internet.de/erechv/__11.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 21,
+      "id": "TRANSITION",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-27-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue97e872a75e26a99.reader.txt",
+      "native_LF": [
+        59,
+        73
+      ],
+      "raw_sha256": "58f8018d2dc7512cea52ca14847700b68fe07c8bfa3bc4e4aebc29c5f7451ee0",
+      "reader_sha256": "07dbb451d4da7ca6d39ae7f8154504e6fdaeaa8541ab72cdb24c89d6fed75c3d",
+      "quote_sha256": "b1122cc4c8a50243e461dde35e369d9b1d123afe432c49414446de47bfe341f2",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__27.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 22,
+      "id": "RATE19",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-12-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6614807cebd670d7.reader.txt",
+      "native_LF": [
+        7,
+        9
+      ],
+      "raw_sha256": "e8753b36595e445e776716ce43ec8d01633d9c548aec77d776105ae9484d09d0",
+      "reader_sha256": "f0f9a4d727981094aa001b41d96a3fa3fda7e9692ab888c4d004384b3a8ba259",
+      "quote_sha256": "af46e84a0255d2f8a6d20bfc330965c5c00c28e3268cb6b865494da86caed9ec",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__12.html",
+      "actual_read_bridge": {
+        "guide": "de-vat-annual-and-special-schemes",
+        "quote_row": 38,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 23,
+      "id": "SOLAR",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-12-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6614807cebd670d7.reader.txt",
+      "native_LF": [
+        64,
+        71
+      ],
+      "raw_sha256": "e8753b36595e445e776716ce43ec8d01633d9c548aec77d776105ae9484d09d0",
+      "reader_sha256": "f0f9a4d727981094aa001b41d96a3fa3fda7e9692ab888c4d004384b3a8ba259",
+      "quote_sha256": "fc529b1b82206a4e86bb1e55db5cc89e918d6131c720b97a23892bde2126c402",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__12.html",
+      "actual_read_bridge": {
+        "guide": "germany-vat-return",
+        "quote_row": 12,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 24,
+      "id": "FINES",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaa34b9ace5183c69.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaa34b9ace5183c69.reader.txt",
+      "native_LF": [
+        15,
+        28
+      ],
+      "raw_sha256": "e046d9bdd2da18c1b5fe02a5c63390dec6a4956bad2d35d8d43ead931302a796",
+      "reader_sha256": "2851c3ba314c95f3ae87ec842c252bd9c6119cab4cdbad881b8662cb07854019",
+      "quote_sha256": "7e83956f211482ae18b8571d6ac3f85f2984b5a7c098f30e2788d94857cbe2c0",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__26a.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 25,
+      "id": "KEEP",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U97ed3af563abe3ad.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U97ed3af563abe3ad.reader.txt",
+      "native_LF": [
+        7,
+        20
+      ],
+      "raw_sha256": "2896a210ff04461a971004b99a56f224c5dc42a9f82b2522c25a6a65b6a758f3",
+      "reader_sha256": "fab52aedc33d8812a1aa80bd1ddece2e1f57599959ba15aee6b648f3985208b1",
+      "quote_sha256": "765a5d112660983382a5ef3e921d7ed6ed70e6c579cb4d82ce6b1535c60f0727",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__14b.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 26,
+      "id": "AOBOOK",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee4363f26003cdd8.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee4363f26003cdd8.reader.txt",
+      "native_LF": [
+        7,
+        39
+      ],
+      "raw_sha256": "b734f5b8cab157b7cf177d9fd9ccab3aad0bfb08fc8e47a4a81323a6aeedff40",
+      "reader_sha256": "cbff5937f67af0e51bd5a7e44ae7d05aa38433b4ba0dfdd9dbc0d821e396346f",
+      "quote_sha256": "c8be65fe673cc13f44018dffe302a7578df41beeb87fa2ee971ad3ab15fcd3f0",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__147.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 27,
+      "id": "AOLOCATION",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua428ef33b0724b28.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua428ef33b0724b28.reader.txt",
+      "native_LF": [
+        7,
+        23
+      ],
+      "raw_sha256": "cf7f8e902493e7946f8a3f725631058848ed1f7c4bc3a558711cca29bd4cbdb0",
+      "reader_sha256": "773adfdb6500036a5a03cc40d8a4888bdd4f610ae9237d8256326c87503d9c30",
+      "quote_sha256": "60d0c88fa0460cf9c74d654e9c4f29c16fa7a02c08b4dfb772033648a0b88f85",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__146.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 28,
+      "id": "ESTIMATE",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee2258b31aab48c3.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee2258b31aab48c3.reader.txt",
+      "native_LF": [
+        7,
+        15
+      ],
+      "raw_sha256": "e1f4f36f69b7da9b1b43ec740a7ea31cf0b8de79f267e35416c342bd36f4698e",
+      "reader_sha256": "916c1f78f3467487cb481a341dfba8f8447fe94b487a80deb6d0a2bd15bff54d",
+      "quote_sha256": "ff04506850f6068bd9da3fd5572d7c1ab59030ce3bf06570463278c229dcef92",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__162.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 29,
+      "id": "PRESUMPTION",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5fde3db49b5d5bae.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5fde3db49b5d5bae.reader.txt",
+      "native_LF": [
+        7,
+        11
+      ],
+      "raw_sha256": "bcad2a605b8ef5e582fcee8e370ee6e6b612e2c12c946155dc1d37d8e70b97e1",
+      "reader_sha256": "dea75c3ac9baa651c06b855e5a4264485c519a3e547dd176fc503aa2684ece69",
+      "quote_sha256": "3d92d9c4adfbf2419d5a92dd6b37113571b2a56c9f33bad12bd9cb52696fdb72",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__158.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 30,
+      "id": "ACCRUAL",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ub292e11ab0db3b84.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ub292e11ab0db3b84.reader.txt",
+      "native_LF": [
+        7,
+        19
+      ],
+      "raw_sha256": "22e8cfd6665e3693e220a6dc49cf6b2a8b3e89e23da225061bc75b807e86958b",
+      "reader_sha256": "f03e2f325b5a1cbb318d13997f1c33155dec81079ebd51dd9fd26ecb204faeac",
+      "quote_sha256": "7dda3f2459e61b3de7a8b6fbe94d4082aeba7708706e7c49dda350444c487919",
+      "official_url": "https://www.gesetze-im-internet.de/hgb/__252.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 31,
+      "id": "VIEWER",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud9d81d326deb678c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud9d81d326deb678c.reader.txt",
+      "native_LF": [
+        29,
+        32
+      ],
+      "raw_sha256": "3dc02fdf28d51db7f3389ab56241bc541c070bc83674ca356b124636dc22c7ec",
+      "reader_sha256": "501860c103746d84c260419039b25f06310818414c4ce570fb2f941f3e8072c6",
+      "quote_sha256": "0eb69c6bbbd8676d695a5e3202dcc36fb4dc266e1d3a0b90ad614bf6dac285a1",
+      "official_url": "https://www.elster.de/eportal/e-rechnung",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 32,
+      "id": "VERSION",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue436ae32ec538d5b.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue436ae32ec538d5b.reader.txt",
+      "native_LF": [
+        22,
+        24
+      ],
+      "raw_sha256": "abd8959ba4dec8a03782789c026c2971e049c121bbdf37cf113a6ceebb80249e",
+      "reader_sha256": "1c7d98b9888332478fc047d310b96676f902f0b1c65a15ecfecffa4b6cfb550d",
+      "quote_sha256": "b636dd403f1e988ee53819c52f8ed5d9ac758056f3319631487589a4d33487fe",
+      "official_url": "https://xeinkauf.de/xrechnung/versionen-und-bundles/",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 33,
+      "id": "BUNDLE",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue436ae32ec538d5b.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue436ae32ec538d5b.reader.txt",
+      "native_LF": [
+        31,
+        72
+      ],
+      "raw_sha256": "abd8959ba4dec8a03782789c026c2971e049c121bbdf37cf113a6ceebb80249e",
+      "reader_sha256": "1c7d98b9888332478fc047d310b96676f902f0b1c65a15ecfecffa4b6cfb550d",
+      "quote_sha256": "a369612bed0b41d28a6817048f02a74d51cecd4a544f666181c0f21ec20a246c",
+      "official_url": "https://xeinkauf.de/xrechnung/versionen-und-bundles/",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 34,
+      "id": "PEPPOL",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U036f5f0e88219562.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U036f5f0e88219562.reader.txt",
+      "native_LF": [
+        61,
+        103
+      ],
+      "raw_sha256": "d2ab8e2582001392d5b8af7a7f9a91b9fff8e50475b8d83f0dbee1dd4d4dd98b",
+      "reader_sha256": "305eb403fee4d1fbe47217d267c010bab03983f07a09f5b1f9a93648f34da113",
+      "quote_sha256": "c05719c819a2ba2a402070d0fa61e339ee2a7c72a9eb12943f5a69b3f639c0b6",
+      "official_url": "https://xeinkauf.de/peppol/",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 35,
+      "id": "SCHEME",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        3744,
+        3751
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "a636ff91666a6a781ccd6192748d157ef6fe72883f76a4155d212e4d96e2d4a2",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 36,
+      "id": "UTF8",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        902,
+        911
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "b735a6789cae17f9d4f605ad9ce6012c454885b97fedf697b2777286282fceb9",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 37,
+      "id": "BTCORE",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        1718,
+        1764
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "89bb6a38f37bebf3a34aa555540035d4b69b73b60d04438f2bfa003d4b56a3b7",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 38,
+      "id": "BTDUE",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        1803,
+        1825
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "0c76988c3918118f8d6bcfbe7386198508aac35d4c5659fbcce9ec238aa01ba0",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 39,
+      "id": "BT20",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        1851,
+        1855
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "a88ee1bc45b36edb07cec3774841f83eefcbd179f75743430318e58787917084",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 40,
+      "id": "BUYER",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        2025,
+        2071
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "ca9b2470ba7995e6e8a73ca110d1da525da9fdffd5a7217161e022a1c3160f95",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 41,
+      "id": "BUYCOUNTRY",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        2148,
+        2158
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "1ffd29746e3d773af370c407141fdf0d111a1166323cff473064d95a0f418273",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 42,
+      "id": "SELLER",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        3214,
+        3275
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "c8d6290522c2a3029e49c3f0da57f8bbfcf390aab04800de11f71d0c50fa8d61",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 43,
+      "id": "SELLCOUNTRY",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        3338,
+        3348
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "1d78e9ead9901a20dd0c3c1702e4b44c41706ffca1ffe6a846d4108dfead10c2",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 44,
+      "id": "PROCESS",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        3173,
+        3196
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "c4a92c19ea507021e00d029df82c19497136dccdbdbb3f9570fdc7559b4669e3",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 45,
+      "id": "PAYMENT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        3033,
+        3047
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "61f66bed8fd53b38c88028d69f825138515af822fd8cd66900e83c87df2aa60a",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 46,
+      "id": "SEPA",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        2187,
+        2199
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "39e0f87a7bdf51f81462110880366a4cf2dcddb78883a136e03b45d74e4538f2",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 47,
+      "id": "RULEDE",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        4683,
+        4701
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "06c76e39cd134b542d07a78ea5e58b23a4190c02b013420b1f240c771458dec8",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 48,
+      "id": "CODETYPE",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        4797,
+        4805
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "d60a0b552e6523d3e02e22c3674485801fbebad880443eecc6df7d61e8f0784f",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 49,
+      "id": "BR53",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        3725,
+        3729
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "96801ff897ba5e3da35cc6a641513055e1c4881b2aa361dd7d3567f2f58099a4",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 50,
+      "id": "ROUND",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        3841,
+        3848
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "e9d703e46134cef8a8309062d87c9dc6794d858090ca4de51ba0b7d11ac94cd2",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 51,
+      "id": "DUEOR",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        3872,
+        3875
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "0a16c875bae554ede4a6420b385f61970014ddac5baadbb6bdb87fb16db4520b",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 52,
+      "id": "RATESPLIT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        3928,
+        3949
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "2b48cb48a308f3e24fc6ababd94e2613e48b69328ca2a599ec37eb4d638190d1",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 53,
+      "id": "ZERO",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        4033,
+        4036
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "aba3825167e0409ea6779ab7592eb492abe9b672a08861874765681b48fbcf50",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 54,
+      "id": "EXEMPT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        4100,
+        4107
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "1d1eba0aa5e4aa65f16758fa4466dbacfec6d534c7d63c4107a076195f266c62",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 55,
+      "id": "REVERSE",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        4175,
+        4182
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "83aec2e36f20f0117a8676b06cd04e29098509fce5b05482fe83d0bbb7cc553b",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 56,
+      "id": "EXPORT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        4328,
+        4336
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "b7ecb549a42d47a84c3c8bfeff29bdc64893ecacbca090a5d6337643e5be0ecd",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 57,
+      "id": "OUTSCOPE",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        4395,
+        4407
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "9331421b98d0bc23d18a580cad2a3e081813ca4d167a72fe129a42984df32d43",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 58,
+      "id": "GOBD2024",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud6736f28fab2cf5e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud6736f28fab2cf5e.reader.txt",
+      "native_LF": [
+        94,
+        124
+      ],
+      "raw_sha256": "25479639b2d67ffaec3cdf0cb39521fa91aeb98a0e1cb5bb1b82f86647fd4f85",
+      "reader_sha256": "3c0ac01abe33710a0854fa6d174a2372f2777821ecefdd28f5d12344624a3809",
+      "quote_sha256": "c73ef81f911ee19403b61778c4f7765f07127d9b2fc1af5b9947ee113e6658a3",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-03-11-aenderung-gobd.pdf?__blob=publicationFile&v=4",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 59,
+      "id": "GOBDOUT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4aec57e56e3b824d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4aec57e56e3b824d.reader.txt",
+      "native_LF": [
+        50,
+        73
+      ],
+      "raw_sha256": "142386fb87ac9c090cf6f678b612f7188a3850b410c53947da92fb3295a81e0b",
+      "reader_sha256": "ee29c3fa4245a0a63561e691bf0467b7ae247e08d4bced4585cdfaac8415b9cf",
+      "quote_sha256": "09c4fdf60bf31b1c8f9853a04ce7f7ca07310568506393bcf9a08a11970398fb",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2025-07-14-GoBD-2-aenderung.pdf?__blob=publicationFile&v=4",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 60,
+      "id": "GOBDXML",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4aec57e56e3b824d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4aec57e56e3b824d.reader.txt",
+      "native_LF": [
+        91,
+        105
+      ],
+      "raw_sha256": "142386fb87ac9c090cf6f678b612f7188a3850b410c53947da92fb3295a81e0b",
+      "reader_sha256": "ee29c3fa4245a0a63561e691bf0467b7ae247e08d4bced4585cdfaac8415b9cf",
+      "quote_sha256": "d65555e819fe5675f5931b66da985d926a57a881801f08e5dae71ef63fd56e4b",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2025-07-14-GoBD-2-aenderung.pdf?__blob=publicationFile&v=4",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 61,
+      "id": "GOBDFORMAT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4aec57e56e3b824d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4aec57e56e3b824d.reader.txt",
+      "native_LF": [
+        122,
+        137
+      ],
+      "raw_sha256": "142386fb87ac9c090cf6f678b612f7188a3850b410c53947da92fb3295a81e0b",
+      "reader_sha256": "ee29c3fa4245a0a63561e691bf0467b7ae247e08d4bced4585cdfaac8415b9cf",
+      "quote_sha256": "2c3a9da08319784f2669169aa438f5ba27aae7f3e7fb82d4d5d0232208c35a3e",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2025-07-14-GoBD-2-aenderung.pdf?__blob=publicationFile&v=4",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 62,
+      "id": "GOBDZ2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4aec57e56e3b824d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4aec57e56e3b824d.reader.txt",
+      "native_LF": [
+        148,
+        156
+      ],
+      "raw_sha256": "142386fb87ac9c090cf6f678b612f7188a3850b410c53947da92fb3295a81e0b",
+      "reader_sha256": "ee29c3fa4245a0a63561e691bf0467b7ae247e08d4bced4585cdfaac8415b9cf",
+      "quote_sha256": "a4b0272289d6a24ec8067965e84abf5adb4cdaaf2ea93bd9bbdc2fc5cedd43ca",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2025-07-14-GoBD-2-aenderung.pdf?__blob=publicationFile&v=4",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 63,
+      "id": "FAQREPORT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.reader.txt",
+      "native_LF": [
+        293,
+        306
+      ],
+      "raw_sha256": "9ca6fb9be039c1ded8633d709d0f29fbb21a7153b5e42dcc59e26ca14c76ea99",
+      "reader_sha256": "e77873437605a46672a2395b677def497441f842f9ff79a3c14575d3af08da5a",
+      "quote_sha256": "da0bd075c9a97f9dd19a559b3d0747f77818a4dd7e543c2a9dd2b70c35861e93",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 64,
+      "id": "FAQSCOPE",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.reader.txt",
+      "native_LF": [
+        312,
+        337
+      ],
+      "raw_sha256": "9ca6fb9be039c1ded8633d709d0f29fbb21a7153b5e42dcc59e26ca14c76ea99",
+      "reader_sha256": "e77873437605a46672a2395b677def497441f842f9ff79a3c14575d3af08da5a",
+      "quote_sha256": "a4f8b249a45eb4eef1cee4e44891793c9237d297c3c3d4a6310559e2e4cea41f",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 65,
+      "id": "FAQREF",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.reader.txt",
+      "native_LF": [
+        348,
+        367
+      ],
+      "raw_sha256": "9ca6fb9be039c1ded8633d709d0f29fbb21a7153b5e42dcc59e26ca14c76ea99",
+      "reader_sha256": "e77873437605a46672a2395b677def497441f842f9ff79a3c14575d3af08da5a",
+      "quote_sha256": "0391de35c6d020df8e25388cb3e8331e8cfff427293f0fa0892072e906f8e528",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 66,
+      "id": "FAQBUILD",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.reader.txt",
+      "native_LF": [
+        372,
+        376
+      ],
+      "raw_sha256": "9ca6fb9be039c1ded8633d709d0f29fbb21a7153b5e42dcc59e26ca14c76ea99",
+      "reader_sha256": "e77873437605a46672a2395b677def497441f842f9ff79a3c14575d3af08da5a",
+      "quote_sha256": "c304d19cbd64e68c39fd04455fcf64cdb7a9b187f5e78af0da8a5d65323aa794",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 67,
+      "id": "FAQCHANNEL",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.reader.txt",
+      "native_LF": [
+        381,
+        387
+      ],
+      "raw_sha256": "9ca6fb9be039c1ded8633d709d0f29fbb21a7153b5e42dcc59e26ca14c76ea99",
+      "reader_sha256": "e77873437605a46672a2395b677def497441f842f9ff79a3c14575d3af08da5a",
+      "quote_sha256": "3d6c7028cbb379ebb81f087ae6671140b2e37871ecaeca2bea0039bc869b6939",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 68,
+      "id": "FAQCASH",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.reader.txt",
+      "native_LF": [
+        392,
+        402
+      ],
+      "raw_sha256": "9ca6fb9be039c1ded8633d709d0f29fbb21a7153b5e42dcc59e26ca14c76ea99",
+      "reader_sha256": "e77873437605a46672a2395b677def497441f842f9ff79a3c14575d3af08da5a",
+      "quote_sha256": "803a1417486a35c272c4c0acb1a95b2e0c6f1e89b150c6cc8fd4ac49d02109da",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 69,
+      "id": "FAQRECEIVE",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.reader.txt",
+      "native_LF": [
+        407,
+        422
+      ],
+      "raw_sha256": "9ca6fb9be039c1ded8633d709d0f29fbb21a7153b5e42dcc59e26ca14c76ea99",
+      "reader_sha256": "e77873437605a46672a2395b677def497441f842f9ff79a3c14575d3af08da5a",
+      "quote_sha256": "c370371c68557c3ad4f4915596fc5b889c6505cb0ab1e7057b850942d94fdae3",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 70,
+      "id": "FAQUPLOAD",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.reader.txt",
+      "native_LF": [
+        427,
+        427
+      ],
+      "raw_sha256": "9ca6fb9be039c1ded8633d709d0f29fbb21a7153b5e42dcc59e26ca14c76ea99",
+      "reader_sha256": "e77873437605a46672a2395b677def497441f842f9ff79a3c14575d3af08da5a",
+      "quote_sha256": "cf1916fcfba4553c7ff1edb2b16455fbc370f30acd16d30381ba6d14b978f5f1",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 71,
+      "id": "FORMATERR",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        38,
+        57
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "1077b169654891344519a08c77c94f7ffe4d33342b9dac76ac867f83e269f4ae",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 72,
+      "id": "SPECIAL",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        59,
+        80
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "2e4dce799011230c10ac7ee252b5b5665f85f9ad293525fccc76e0c32646368b",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 73,
+      "id": "BMFSMALL",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        84,
+        96
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "9b2e89b3c663baf0eafc0db48d03ab3f42a9ecd28553cb459a40bcee08b0febf",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 74,
+      "id": "STRUCTURED",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        114,
+        144
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "0e172a42235c09a0159347229ae0c5d8495cc7a13b6b7a39c6a28135285eb25c",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 75,
+      "id": "PRICE",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        146,
+        158
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "1ff97db422f6ca457cc4b1e3869bcde1c4842a7d4a6b28e749fa0afa304a8a52",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 76,
+      "id": "BMKEEP",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        160,
+        167
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "08c068fc426b6f41524046e46d39fd70ea10a3a2063db515e99d42093bc2f200",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 77,
+      "id": "INTERNAL",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        268,
+        281
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "8a3b2a0ec9e0dc6d0effd2d708d99c9074573f20a405fa95e70f3ccdb3e1108e",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 78,
+      "id": "BMFDEF",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        289,
+        328
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "ec993ec3f963223127dcae493aa2a7ea2443abce2d6f24e2a79c73a95475562a",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 79,
+      "id": "BMF6MONTH",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        336,
+        370
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "882e856d73c8f58eae471e3c4d86a118975e22ca6f24ea2d950b17816278d374",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 80,
+      "id": "BMFEST",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        371,
+        401
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "d1710da7ffcb68da84c753bcb8b1d4dc69229a1c84e4e28915a4708b26c148e8",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 81,
+      "id": "RECEIVE",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        402,
+        411
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "c0519764f1ab803acc880f647ec11d9a5c993d12678bc5c50a4fb21269103c26",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read_bridge": {
+        "guide": "germany-vat-return",
+        "quote_row": 64,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 82,
+      "id": "CARE",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        415,
+        439
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "05b88a0f64be9081b1d45c37807b7cae562cc0af38ed0bc8669d22f608598614",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 83,
+      "id": "CONSENT",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        440,
+        454
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "0b4c3689037c16c2a8a47269c634c781f4010484ef164fb4cf18bd0e186258de",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 84,
+      "id": "MIXED",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        455,
+        466
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "f932281ad8bc80cd34bfe8fad7febe2ea566ada5029df12932ca2e3fc93aa145",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 85,
+      "id": "STANDARD",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        517,
+        578
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "0de86c382cf6ef792a15968ca47052a06ba5b8ae9a79057f1ad84d9d3515fafe",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 86,
+      "id": "ZUGFERD",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        579,
+        585
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "c7d3348990c61fe5e579a64d53f422e24ce4ddddf157e0ba496460240a08c63c",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 87,
+      "id": "EDI",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        586,
+        600
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "0ff0bfd65d30409697deb0b711e70c54e995b239a30613e171d9ee14b7f47210",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 88,
+      "id": "BANK",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        602,
+        609
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "088dc6f8df84f9dd8c0617b36b55342ecabe57e493adc808ea897512a6627a8b",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 89,
+      "id": "CONTRACT",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        610,
+        617
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "132a0a7074ff39d5604f8f9c9765ea3cf5dc6e6e6d15a720a73105c720c3791a",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 90,
+      "id": "RENT",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        630,
+        644
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "a9f8b71a63f840d364fe7f17abc8e98d322c1cee70fc32ea7f428634401b6373",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 91,
+      "id": "SELFBILL",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        692,
+        694
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "b778681a5d0b795621493fc58ec6d7afccdea57bcaa73a61b4b6875202ffca0c",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 92,
+      "id": "SEPARATE",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        726,
+        728
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "5c08fd43fe0742ebfc329af5aa0fd28078dd8288b48b1cc5bfcb4e9439752b14",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 93,
+      "id": "XML",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        748,
+        783
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "54984951273c9ffbb2aee6b088b243ae52cfe51848d76f4837b23ae713288cde",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 94,
+      "id": "VALIDATE",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        843,
+        872
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "4553d143e60442313e1e02409a6403478915989fee513c0d3b089f6cd4824c5e",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 95,
+      "id": "TAXID",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        907,
+        908
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "bb726a899326f55b5443fe54480120b38e4aa3f32a1ccbc185c37b51c0f93821",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 96,
+      "id": "NUMBER",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        912,
+        920
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "6f95b6ec732da0cd53119131381dda1cb7bee4e992d6d73606d11997548f85d9",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 97,
+      "id": "NOSMALLNUM",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        928,
+        930
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "5ee27565c93918fe1379807fba1b1e69b3579b80644b0958f84b0a57a5e9baed",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 98,
+      "id": "DETAIL",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        936,
+        944
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "1fcf9501c548c038d97fcda841afa03d766970adee9529ac0e65d181d82fb4b0",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 99,
+      "id": "DATE",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        954,
+        968
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "5faeed5fd62946fe754bd44952d3c798898e239684a87bc7bdab893b86a93bdb",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 100,
+      "id": "RENTCHANGE",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        989,
+        996
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "8830ce3792b24698296c1db301887eabc3d6710937256d8326173b0251c60511",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 101,
+      "id": "DISCOUNT",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1000,
+        1021
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "c70126bb52273c6d01ec9b84196074cfaa5daef5f019b97d910a78c93e459940",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 102,
+      "id": "GROSS250",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1040,
+        1053
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "3c24be3b1101c9656402adc96aa9c44620103999018ee7dd0f0583bf470cffcc",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 103,
+      "id": "BMTICKET",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1062,
+        1068
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "bfcc145b651a8c2ab6afa537598a3356c23169c4a83c431db78deb5aadf69a18",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 104,
+      "id": "BMKU",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1074,
+        1080
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "25c39f61d93d992097a7100e82af296779833e91c6b24cab3c063e45888ab864",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 105,
+      "id": "CORRECT",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1124,
+        1130
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "437d220967187a0f09983b02759eb6118a8684a194ea0fc912bff2f86bc44ffe",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 106,
+      "id": "PRICELATER",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1172,
+        1180
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "e57054ffd735ac19cd9f0e4e193260e54cfed149ed7f052a4455308156b41f55",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 107,
+      "id": "ORIGINAL",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1216,
+        1225
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "fdca2d662cbcdd8ed1cc475bb291dbaeb9c2034d5e96a5a67eac7fb343178080",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 108,
+      "id": "MACHINE",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1259,
+        1262
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "835e663d69fc841ea58a25d0625ceeffe81ee034a706c371ad3665f2e3ae6de5",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 109,
+      "id": "SIGNATURE",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1269,
+        1280
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "2a941affc56b30ae4393bed051dd42e1e3b2a69c3976ff0b9913dab0ceab08b0",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 110,
+      "id": "DUPLICATE",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1316,
+        1318
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "ef4713329321d9020792776a1b6e54184d460b2551dbd4437bd3e64366073e81",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 111,
+      "id": "HYBRID",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1327,
+        1339
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "da391fb380dd08f6cc77a29faf5d034f28a9f714c18106382a6e1f19d0447737",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 112,
+      "id": "INPUT",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1365,
+        1371
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "3e35af683601c25cc17ed85e27ec5e6bebaf249cf63e73fec44aa476030a6cff",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 113,
+      "id": "EXCEPTIONINPUT",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1390,
+        1397
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "f29c23db2edfdc122ab01595e50bbcd2cdf71a1a92719fd6e3e88ffa95f23a0f",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 114,
+      "id": "COMMUNITY",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1435,
+        1438
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "14305156d04517e8f7a0e13c3c801c7b45429970d912f399dc2a88122abd7c42",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 115,
+      "id": "VALIDATOR",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1449,
+        1451
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "aa8eff346720cade9e8202feed46b92418f9de5e89d8dd261b39859344616658",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 116,
+      "id": "CURE",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1459,
+        1471
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "197522a282499c8d99cd080f83414797ac0e0acfa6fd582410ebc64e6cef2c9e",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 117,
+      "id": "PRICE2",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1524,
+        1532
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "dcb792ca085b3b892ee8325be89ec5ce7ecd5f7b4143a9453c8871f25ebe068d",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 118,
+      "id": "EFFECT",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef182ecec5cd5b11.reader.txt",
+      "native_LF": [
+        1541,
+        1545
+      ],
+      "raw_sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "7db40ca51f42e95a6ac7750ea4ded55f7bf7bc097c909159dea097d15fbedb15",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 119,
+      "id": "UBLROOT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8e1c38b16e84539c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/UBL-Invoice-2.1-native-XML.reader.txt",
+      "native_LF": [
+        10,
+        16
+      ],
+      "raw_sha256": "40fae8cb436f3a9506d7acce65ba162caef3b0bed4d5cbc0992b2153ded4edf4",
+      "reader_sha256": "40fae8cb436f3a9506d7acce65ba162caef3b0bed4d5cbc0992b2153ded4edf4",
+      "quote_sha256": "90ea7905650390d057a1cea38175f99fd2565da8d6626fdc2b8452e59896c000",
+      "official_url": "https://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 120,
+      "id": "CIIROOT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_CII_SCHEMA.member.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_CII_SCHEMA.reader.txt",
+      "native_LF": [
+        15,
+        15
+      ],
+      "raw_sha256": "3baf143b90f289d62c5dfb086aa51fa183490a2d0b38a40c6b31dcae0760f2ba",
+      "reader_sha256": "b9798aafcba039d0630f0015ffae5092a1758bf924d19d97b6bf0bf9d95f22a0",
+      "quote_sha256": "fe4c2e8f2de3c7f167637493bd1275f4183468d51e5bf9d293a460c91d016fe5",
+      "official_url": "https://projekte.kosit.org/api/v4/projects/356/packages/maven/de/xeinkauf/xrechnung-3.0.2-bundle/2026-08-31/xrechnung-3.0.2-bundle-2026-08-31.zip",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 121,
+      "id": "JAVA",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_BUNDLE_README.member.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_BUNDLE_README.reader.txt",
+      "native_LF": [
+        48,
+        52
+      ],
+      "raw_sha256": "ac837f0b0274c759829d85d183615f24c3143926611be5c672e41aa0a85a6f11",
+      "reader_sha256": "0188924248b12a6c81bad2d050532eccb679fd40fbed3870ca1e325b709a9d09",
+      "quote_sha256": "c295a790a7d5d6dd9e42073db4eae2ca2d311c956499b254a544c24f0421ce68",
+      "official_url": "https://projekte.kosit.org/api/v4/projects/356/packages/maven/de/xeinkauf/xrechnung-3.0.2-bundle/2026-08-31/xrechnung-3.0.2-bundle-2026-08-31.zip",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 122,
+      "id": "LAYERS",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_CONFIG_README.member.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_CONFIG_README.reader.txt",
+      "native_LF": [
+        11,
+        18
+      ],
+      "raw_sha256": "5be65e76f189eba5a66ebf80e39a86c64f20f905afece10ece42f2b9c42a787f",
+      "reader_sha256": "5be65e76f189eba5a66ebf80e39a86c64f20f905afece10ece42f2b9c42a787f",
+      "quote_sha256": "b79c920ffe3e17486d28dac2c5399773a86817c1ee4fd7067a4742856b558690",
+      "official_url": "https://projekte.kosit.org/api/v4/projects/356/packages/maven/de/xeinkauf/xrechnung-3.0.2-bundle/2026-08-31/xrechnung-3.0.2-bundle-2026-08-31.zip",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 123,
+      "id": "VALIDATORCURRENT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_BUNDLE_README.member.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_BUNDLE_README.reader.txt",
+      "native_LF": [
+        94,
+        108
+      ],
+      "raw_sha256": "ac837f0b0274c759829d85d183615f24c3143926611be5c672e41aa0a85a6f11",
+      "reader_sha256": "0188924248b12a6c81bad2d050532eccb679fd40fbed3870ca1e325b709a9d09",
+      "quote_sha256": "50dea957c0e5729b8c5630d8bade3fcacacc3833a8e03ecd8b051c6c9e807110",
+      "official_url": "https://projekte.kosit.org/api/v4/projects/356/packages/maven/de/xeinkauf/xrechnung-3.0.2-bundle/2026-08-31/xrechnung-3.0.2-bundle-2026-08-31.zip",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 124,
+      "id": "OPENMAP",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.reader.txt",
+      "native_LF": [
+        438,
+        444
+      ],
+      "raw_sha256": "9ca6fb9be039c1ded8633d709d0f29fbb21a7153b5e42dcc59e26ca14c76ea99",
+      "reader_sha256": "e77873437605a46672a2395b677def497441f842f9ff79a3c14575d3af08da5a",
+      "quote_sha256": "5006032ed70e74911a88a0b442e6cf23ff8b91f5926d5f714ce44aecd59c772c",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 125,
+      "id": "IDS",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua4408fbc7d6a5539.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua4408fbc7d6a5539.reader.txt",
+      "native_LF": [
+        63,
+        73
+      ],
+      "raw_sha256": "c13d14916a40e094b40ffee2259de98ad73718eea714c8cf9a9de5e85ad8f6d2",
+      "reader_sha256": "780453a213869df836b610c3ef4cf51249d8d905be3642813e881c96de08082e",
+      "quote_sha256": "a2e5f45cfc8a5491860fb22e003ebca4c4f72314941ca67b5191cbaf4277dd25",
+      "official_url": "https://xeinkauf.de/app/uploads/2025/01/2025-01-02_Germany_Identifier_v.1.1_eng.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 126,
+      "id": "IDRECOMMEND",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua4408fbc7d6a5539.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua4408fbc7d6a5539.reader.txt",
+      "native_LF": [
+        83,
+        95
+      ],
+      "raw_sha256": "c13d14916a40e094b40ffee2259de98ad73718eea714c8cf9a9de5e85ad8f6d2",
+      "reader_sha256": "780453a213869df836b610c3ef4cf51249d8d905be3642813e881c96de08082e",
+      "quote_sha256": "8ee8db3919313d6037157157bc8bd326d783348660767c2f1e67b460ab8f14ba",
+      "official_url": "https://xeinkauf.de/app/uploads/2025/01/2025-01-02_Germany_Identifier_v.1.1_eng.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 127,
+      "id": "IDTABLE",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua4408fbc7d6a5539.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua4408fbc7d6a5539.reader.txt",
+      "native_LF": [
+        129,
+        139
+      ],
+      "raw_sha256": "c13d14916a40e094b40ffee2259de98ad73718eea714c8cf9a9de5e85ad8f6d2",
+      "reader_sha256": "780453a213869df836b610c3ef4cf51249d8d905be3642813e881c96de08082e",
+      "quote_sha256": "6201838a89d05aa1d9675f6affaef860f3c933f724cfc5c847d47b70881b3393",
+      "official_url": "https://xeinkauf.de/app/uploads/2025/01/2025-01-02_Germany_Identifier_v.1.1_eng.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 128,
+      "id": "PROFILEFULL",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U563c4f81bda43d40.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U563c4f81bda43d40.reader.txt",
+      "native_LF": [
+        102,
+        104
+      ],
+      "raw_sha256": "f8d34c9577e870c47b9e3008f59661bc122ab894c926c25c8f70d3147b0b4847",
+      "reader_sha256": "ff32633e31a6046f70cb7d7a7eaf269225132158246ca7d82c3d26945ba86e69",
+      "quote_sha256": "8960d167d39d19ac0396fc8c09d65f17b0f9b363fa2e24bb53ca7253ad9125c9",
+      "official_url": "https://www.ferd-net.de/standards/zugferd-faq",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 129,
+      "id": "COMFORT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U563c4f81bda43d40.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U563c4f81bda43d40.reader.txt",
+      "native_LF": [
+        109,
+        112
+      ],
+      "raw_sha256": "f8d34c9577e870c47b9e3008f59661bc122ab894c926c25c8f70d3147b0b4847",
+      "reader_sha256": "ff32633e31a6046f70cb7d7a7eaf269225132158246ca7d82c3d26945ba86e69",
+      "quote_sha256": "bfef081b214de4f254d4c01e3bd6660ceddfbc9532612fd04258657e2df8584c",
+      "official_url": "https://www.ferd-net.de/standards/zugferd-faq",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 130,
+      "id": "EXTENDED",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U563c4f81bda43d40.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U563c4f81bda43d40.reader.txt",
+      "native_LF": [
+        113,
+        116
+      ],
+      "raw_sha256": "f8d34c9577e870c47b9e3008f59661bc122ab894c926c25c8f70d3147b0b4847",
+      "reader_sha256": "ff32633e31a6046f70cb7d7a7eaf269225132158246ca7d82c3d26945ba86e69",
+      "quote_sha256": "f8da8c9a2d5873e1c047264e9427661a462528bbec9ee592dd3db78eb800c953",
+      "official_url": "https://www.ferd-net.de/standards/zugferd-faq",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 131,
+      "id": "BASIC",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U563c4f81bda43d40.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U563c4f81bda43d40.reader.txt",
+      "native_LF": [
+        117,
+        120
+      ],
+      "raw_sha256": "f8d34c9577e870c47b9e3008f59661bc122ab894c926c25c8f70d3147b0b4847",
+      "reader_sha256": "ff32633e31a6046f70cb7d7a7eaf269225132158246ca7d82c3d26945ba86e69",
+      "quote_sha256": "43998f4a2061f31685c8bfc68cb260192ae15717dbd10f5aebbaa082631a1b01",
+      "official_url": "https://www.ferd-net.de/standards/zugferd-faq",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 132,
+      "id": "PROFILEEXCLUSIONS",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U563c4f81bda43d40.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U563c4f81bda43d40.reader.txt",
+      "native_LF": [
+        121,
+        136
+      ],
+      "raw_sha256": "f8d34c9577e870c47b9e3008f59661bc122ab894c926c25c8f70d3147b0b4847",
+      "reader_sha256": "ff32633e31a6046f70cb7d7a7eaf269225132158246ca7d82c3d26945ba86e69",
+      "quote_sha256": "25df5b8ef6dda583a641e23d758359b3d8bb0fe1c02dc66697fb98a5ec52fe2b",
+      "official_url": "https://www.ferd-net.de/standards/zugferd-faq",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 133,
+      "id": "FEDCHANNELS",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua50d42befbfed924.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua50d42befbfed924.reader.txt",
+      "native_LF": [
+        121,
+        132
+      ],
+      "raw_sha256": "9be016afd0ddfa6f4acfe374c85ce615e93b9b85749533c39f82ba4f1ee33fee",
+      "reader_sha256": "4c5bbb72c76223b588824026a44667edcedbd0891770f751313255d144ce51ed",
+      "quote_sha256": "58086a133b7467bcdb86885a323da365bfbd5314a452eea8681fc48e5ad1bddc",
+      "official_url": "https://e-rechnung-bund.de/",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 134,
+      "id": "CONSOLIDATION",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua50d42befbfed924.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua50d42befbfed924.reader.txt",
+      "native_LF": [
+        138,
+        140
+      ],
+      "raw_sha256": "9be016afd0ddfa6f4acfe374c85ce615e93b9b85749533c39f82ba4f1ee33fee",
+      "reader_sha256": "4c5bbb72c76223b588824026a44667edcedbd0891770f751313255d144ce51ed",
+      "quote_sha256": "9915846a6cfcf44dbbae5ecacaa335793738f47404da083a6e99c00f12731191",
+      "official_url": "https://e-rechnung-bund.de/",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 135,
+      "id": "UPLOAD",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U295a96f29d041112.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U295a96f29d041112.reader.txt",
+      "native_LF": [
+        63,
+        72
+      ],
+      "raw_sha256": "58453d4017b9d411357615131743f1d85b8a11cfa6069a14057d173abef81178",
+      "reader_sha256": "9944f8943b18f6b0981e93899ad22b97a75ccae2022d4301b774178f091c8485",
+      "quote_sha256": "187ff3edb6bec3e932f644256407be2aa7f8c91404a674b39d38fd1b7744596b",
+      "official_url": "https://e-rechnung-bund.de/ubertragungskanale/upload/",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 136,
+      "id": "EMAIL",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8be16320b48f3193.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8be16320b48f3193.reader.txt",
+      "native_LF": [
+        78,
+        89
+      ],
+      "raw_sha256": "2a4254581e2f5e02296c29b5b627d54aa5bb3b03557ab2db1e90744f3194465c",
+      "reader_sha256": "9346fda71b4e2821a4dc47a5fd3ded612469a09953d00ae8150f5603728fbac4",
+      "quote_sha256": "7cd13cef6817adbdca2c11483c07569574d7f210e182acaf29305b1eaf21345f",
+      "official_url": "https://e-rechnung-bund.de/ubertragungskanale/e-mail/",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 137,
+      "id": "AMOUNT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        1078,
+        1088
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "4261f44dd1d7f7cd7e4b8784bf9f4123be7c778751a2ba848a182dd67921a89e",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 138,
+      "id": "LINENET",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        2591,
+        2593
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "1628c63153c19ff9562a3ee0394d57b5f906a6d57d016379fda29b12fcbba493",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 139,
+      "id": "R120",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3904a2a23525c04a.reader.txt",
+      "native_LF": [
+        4651,
+        4666
+      ],
+      "raw_sha256": "2e10f3330e79bcd34a4084f2cb3e40e5011403f5df02eb6ecbfb9a5a70658220",
+      "reader_sha256": "fae2ad626b56c4243a9644513312d154ab937a42e2744bb63f6998ff548dc4ac",
+      "quote_sha256": "3ebfc6f79597283c8d8b0569f6277a1705d46c08b6ded4436757b509d0e0e5f9",
+      "official_url": "https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 140,
+      "id": "CODELIST",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_EN_UBL_RULES.member.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_EN_UBL_RULES.reader.txt",
+      "native_LF": [
+        12628,
+        12634
+      ],
+      "raw_sha256": "759f2d2e830c7fd1d5a6e8b4f61e5dbafc7a7805862c4ae1c749eeac6adde698",
+      "reader_sha256": "759f2d2e830c7fd1d5a6e8b4f61e5dbafc7a7805862c4ae1c749eeac6adde698",
+      "quote_sha256": "aa070113de0ee134e6f372fd9353b25550f764a38da4950c41c44ae4261390ba",
+      "official_url": "https://projekte.kosit.org/api/v4/projects/356/packages/maven/de/xeinkauf/xrechnung-3.0.2-bundle/2026-08-31/xrechnung-3.0.2-bundle-2026-08-31.zip",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 141,
+      "id": "ITALIANB",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_EN_UBL_RULES.member.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_EN_UBL_RULES.reader.txt",
+      "native_LF": [
+        1352,
+        1358
+      ],
+      "raw_sha256": "759f2d2e830c7fd1d5a6e8b4f61e5dbafc7a7805862c4ae1c749eeac6adde698",
+      "reader_sha256": "759f2d2e830c7fd1d5a6e8b4f61e5dbafc7a7805862c4ae1c749eeac6adde698",
+      "quote_sha256": "e24c1cd4ecfe322fabe225c757f2d3c2b559ef4384cc6b18a823bfd4fa850a5e",
+      "official_url": "https://projekte.kosit.org/api/v4/projects/356/packages/maven/de/xeinkauf/xrechnung-3.0.2-bundle/2026-08-31/xrechnung-3.0.2-bundle-2026-08-31.zip",
+      "actual_read": "All130 new subset quotations actually read in bounded batches1\u201312/13\u201324/25\u201336/37\u201350/51\u201364/65\u201378/79\u201392/93\u2013106/107\u2013118/119\u2013130, with original row mapped here. No complete rawbody reading claim."
+    }
+  ],
+  "direct_new_quotes": 130,
+  "prior_exact_actual_read_bridges": 11,
+  "precise_findings": "R37\u201343; extra fullUStAE and newly acquired GoBD selected scopes separately recorded, not covertly counted as original selected quotes.",
+  "no_portal_or_validator_execution": true
+}

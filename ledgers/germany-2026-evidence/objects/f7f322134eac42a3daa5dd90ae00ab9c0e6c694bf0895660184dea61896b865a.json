@@ -1,0 +1,45 @@
+{
+  "status": "writer scope successor, independent review pending",
+  "artifacts": [
+    {
+      "path": "after/README.md",
+      "sha256": "239811b9f927464f96e8adc06efd9d01c6602bff44bee848d8b13a5b4d4379cb",
+      "bytes": 7846
+    },
+    {
+      "path": "before/README.md",
+      "sha256": "9a5d36d017a780727a82a1235c3f351a4e5a8ca5b2135e4be9cb04a5dc6ebcc4",
+      "bytes": 5093
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "b903271de262f4deecbc4e3986136b05106c37295b1fc43050a1cba9a676858f",
+      "bytes": 10553
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "1501624ae25e2ce04334e1f1ca815890d09e47cf7264aa2bb9d4d662bb5be019",
+      "bytes": 1432
+    },
+    {
+      "path": "source-read-scope-bindings.json",
+      "sha256": "4b90ab0916e4aa462f9e3aa5984ff0707d3685d664e119f3996f090905f25721",
+      "bytes": 28409
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "3fbe58c58f136aeb174cd9e9250a5acd92db12825daf43be39b588efd5cd59f2",
+      "bytes": 439
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "ce859f573c89da0d0a81c12f1798fca61538c1a9afa61ccf89dda21db2e78e1f",
+      "bytes": 578
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "18c51db4b816dd37fad324055b71984270e6be9697359488c418a93fadd8150a",
+      "bytes": 1416
+    }
+  ]
+}

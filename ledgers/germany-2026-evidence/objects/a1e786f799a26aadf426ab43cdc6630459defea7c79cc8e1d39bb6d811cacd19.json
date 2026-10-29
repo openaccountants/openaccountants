@@ -1,0 +1,24 @@
+{
+  "slug": "germany-to-switzerland-cross-border-tax",
+  "expected_before_sha256": "701f9d2a48e988d2de8999a07c5d89f211c71ab7cdb621b629061d4c1b3a734e",
+  "operations": [
+    {
+      "before": "3. Regular return: commuting days ÷ agreed working days, net of leave and sick days, at least 20%?",
+      "after": "3. Regular return: commuting days ÷ agreed working days must be at least 20%. As explained above, the protocol excludes leave and sickness from the working days for the non-return test but does not expressly extend that exclusion to this denominator; calculate both denominators and retain the stated source uncertainty where the result differs."
+    },
+    {
+      "before": "version: 0.1\n",
+      "after": "version: 0.2\n"
+    },
+    {
+      "before": "last_updated: 2026-10-23\n",
+      "after": "last_updated: 2026-10-29\n"
+    }
+  ],
+  "after_sha256": "49bb497e26ed61b20ad31b474a7503f6eaae113e5a5c20dc7e0b0b604041a6d4",
+  "original_oa_blocks": 2,
+  "original_oa_exact": true,
+  "ordered_URLs_exact": true,
+  "protected_metadata_exact": true,
+  "inverse_exact": true
+}

@@ -1,0 +1,344 @@
+{
+  "Guide_sha256": "24b5037c53e61ddfe3fbabce6ec11fbd53cde225ff07c70abaa36587376f9e20",
+  "ledger_sha256": "241405d4e7a5d1cddabe010ae530098d200e27e33da67ce1e99924356ed52c5d",
+  "row_count": 135,
+  "literal_actual_quote_checks": 98,
+  "original_oa_blocks": 3,
+  "oa_failures": [],
+  "fresh_numeric_date_controls": [
+    {
+      "name": "original translator day cost",
+      "actual": "900",
+      "expected": "900"
+    },
+    {
+      "name": "translator profit",
+      "actual": "59100",
+      "expected": "59100"
+    },
+    {
+      "name": "translator taxable",
+      "actual": "50000",
+      "expected": "50000"
+    },
+    {
+      "name": "translator tax",
+      "actual": "10548",
+      "expected": "10548"
+    },
+    {
+      "name": "translator Soli",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "translator church9 stipulated",
+      "actual": "949.32",
+      "expected": "949.32"
+    },
+    {
+      "name": "consultant IAB",
+      "actual": "10000.0",
+      "expected": "10000"
+    },
+    {
+      "name": "consultant profit",
+      "actual": "90000",
+      "expected": "90000"
+    },
+    {
+      "name": "consultant taxable",
+      "actual": "80300",
+      "expected": "80300"
+    },
+    {
+      "name": "consultant tax",
+      "actual": "22590",
+      "expected": "22590"
+    },
+    {
+      "name": "consultant fullSoli",
+      "actual": "1242.450",
+      "expected": "1242.45"
+    },
+    {
+      "name": "consultant Soli",
+      "actual": "266.56",
+      "expected": "266.56"
+    },
+    {
+      "name": "trader tariff",
+      "actual": "30864",
+      "expected": "30864"
+    },
+    {
+      "name": "trader Messbetrag",
+      "actual": "2992.500",
+      "expected": "2992.50"
+    },
+    {
+      "name": "trader GT",
+      "actual": "11970.000",
+      "expected": "11970"
+    },
+    {
+      "name": "trader credit",
+      "actual": "11970.000",
+      "expected": "11970"
+    },
+    {
+      "name": "trader netIT",
+      "actual": "18894.000",
+      "expected": "18894"
+    },
+    {
+      "name": "trader Soli aftercredit",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "trader church beforecredit",
+      "actual": "2777.76",
+      "expected": "2777.76"
+    },
+    {
+      "name": "joint original100k splitting",
+      "actual": "21096",
+      "expected": "21096"
+    },
+    {
+      "name": "joint Soli",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "original advance",
+      "actual": "2637",
+      "expected": "2637"
+    },
+    {
+      "name": "original corrected KU chair eligible cost",
+      "actual": "8E+2",
+      "expected": "800"
+    },
+    {
+      "name": "corrected KU expense",
+      "actual": "952",
+      "expected": "952"
+    },
+    {
+      "name": "fullcredit expense",
+      "actual": "800",
+      "expected": "800"
+    },
+    {
+      "name": "fullcredit VAT",
+      "actual": "152",
+      "expected": "152"
+    },
+    {
+      "name": "original late4startedmonths",
+      "actual": "100",
+      "expected": "100"
+    },
+    {
+      "name": "tariff boundary 12348",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "tariff boundary 12349",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "tariff boundary 17799",
+      "actual": "1034",
+      "expected": "1034"
+    },
+    {
+      "name": "tariff boundary 17800",
+      "actual": "1035",
+      "expected": "1035"
+    },
+    {
+      "name": "tariff boundary 69878",
+      "actual": "18213",
+      "expected": "18213"
+    },
+    {
+      "name": "tariff boundary 69879",
+      "actual": "18213",
+      "expected": "18213"
+    },
+    {
+      "name": "tariff boundary 277825",
+      "actual": "105550",
+      "expected": "105550"
+    },
+    {
+      "name": "tariff boundary 277826",
+      "actual": "105551",
+      "expected": "105551"
+    },
+    {
+      "name": "floor taxable cents",
+      "actual": "10548",
+      "expected": "10548"
+    },
+    {
+      "name": "Soli exact20350",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "Soli20351 truncatedcent",
+      "actual": "0.11",
+      "expected": "0.11"
+    },
+    {
+      "name": "Soli highfull",
+      "actual": "2200",
+      "expected": "2200"
+    },
+    {
+      "name": "daycap210",
+      "actual": "1260",
+      "expected": "1260"
+    },
+    {
+      "name": "daycap211",
+      "actual": "1260",
+      "expected": "1260"
+    },
+    {
+      "name": "miners raw",
+      "actual": "30825.600",
+      "expected": "30825.600"
+    },
+    {
+      "name": "miners ceil",
+      "actual": "30826",
+      "expected": "30826"
+    },
+    {
+      "name": "jointpensioncap",
+      "actual": "61652",
+      "expected": "61652"
+    },
+    {
+      "name": "health sickpay reduction",
+      "actual": "960.00",
+      "expected": "960"
+    },
+    {
+      "name": "insurancebasic exceedcap",
+      "actual": "4000",
+      "expected": "4000"
+    },
+    {
+      "name": "lossCF2026 excess",
+      "actual": "1350000.0",
+      "expected": "1350000"
+    },
+    {
+      "name": "lossCF2028 excess",
+      "actual": "1300000.0",
+      "expected": "1300000"
+    },
+    {
+      "name": "credit tariffshare binding",
+      "actual": "2000",
+      "expected": "2000"
+    },
+    {
+      "name": "credit actualGT binding",
+      "actual": "3000",
+      "expected": "3000"
+    },
+    {
+      "name": "IAB testedprofit excludesoldaddback",
+      "actual": "199000",
+      "expected": "199000"
+    },
+    {
+      "name": "IAB eligible199k",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "IAB200001 cliff",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "IAB opencap separate",
+      "actual": "5000",
+      "expected": "5000"
+    },
+    {
+      "name": "IAB thirdyear2026",
+      "actual": "2029",
+      "expected": "2029"
+    },
+    {
+      "name": "prepay399 fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "prepay400 passes",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "2026selfSaturday",
+      "actual": "5",
+      "expected": "5"
+    },
+    {
+      "name": "2026adviserTuesday",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "2025adviserSunday",
+      "actual": "6",
+      "expected": "6"
+    }
+  ],
+  "original_cases": {
+    "1": "Translator original/current oa1 recomputed.",
+    "2": "Consultant original/current oa2 recomputed.",
+    "3": "Trader original/current oa3 recomputed.",
+    "4": "Joint100k splitting recomputed.",
+    "5": "10548/4prepayment recomputed.",
+    "6": "Old KU chair answer corrected DE-B04; original incorrect result preserved as history.",
+    "7": "Four startedmonths100 recomputed."
+  },
+  "root_binding_proofs": [
+    {
+      "proof": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-DE-B03-L19-2026-10-29/de-einkommensteuer-freelancer.root-proof.json",
+      "proof_sha256": "5979504dd22dbd12039ea7665e5eabb99170ec543d4eb435770b6b92d99bbdc9",
+      "before_sha256": "0b2d478cb4a3d256c84407c56dce518eae89a4f16f34f9280c507c13cbc1658e",
+      "reproduced_after_sha256": "c80a3678a2bd6edd3461fc56b35c09496980a857079c7386b259927f44764987",
+      "inverse_exact": true
+    },
+    {
+      "proof": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-DE-B04-2026-10-29/de-einkommensteuer-freelancer.root-proof.json",
+      "proof_sha256": "d91dc48c5e8f49b1b2584481b94e2475d89b1956ece9b21f8fc3afaf9aae6d77",
+      "before_sha256": "c80a3678a2bd6edd3461fc56b35c09496980a857079c7386b259927f44764987",
+      "reproduced_after_sha256": "24b5037c53e61ddfe3fbabce6ec11fbd53cde225ff07c70abaa36587376f9e20",
+      "inverse_exact": true
+    }
+  ],
+  "original_oa_exact": true,
+  "old_URL_order_preserved": true,
+  "writer_only_not_independent": true,
+  "retained_limits": [
+    "2026 ELSTER coordinate/name release not established;2025 names labelled.",
+    "Client state church-law rate/rounding not established by federal8/9booklet.",
+    "Underlying6April2023flatcostletter notread; actual2026EÜR instructions read.",
+    "Linked2010GWG ruling503 acquisition failure preserved; combined current own statutory reading is labelled, not express ruling."
+  ]
+}

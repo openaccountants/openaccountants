@@ -1,0 +1,17 @@
+df78d3d5 2026-10-28 sync: 189 files updated from openaccountants.com (2026-10-28)
+7c44c6f5 2026-10-27 [DE] Restore rules dropped in the estimated-tax and freelancer rewrites (#883)
+fb647dbc 2026-10-27 [DE] Restore rules dropped in the estimated-tax and freelancer rewrites
+832c9bb5 2026-10-27 [DE] Self-employed income tax (de-einkommensteuer-freelancer): 2026 nine-section shape (#869)
+b5ebe27e 2026-10-26 Review fixes for de-einkommensteuer-freelancer
+de38edd6 2026-10-26 [DE] Self-employed income tax: 2026 nine-section shape with checked examples
+40f2a637 2026-10-25 sync: 423 files updated from openaccountants.com (2026-10-25)
+67a75397 2026-10-22 Germany: the 70% loss share reverts to 60% from 2028 (#548)
+4d26c15a 2026-10-17 sync: 1577 files updated from openaccountants.com (2026-10-17)
+98bb52df 2026-10-07 sync: 1767 files updated from openaccountants.com (2026-10-07)
+324d47d1 2026-10-04 sync: 1809 files updated from openaccountants.com (2026-10-04)
+ada1faee 2026-09-28 sync: 128 files updated from openaccountants.com (2026-09-28)
+fff6179a 2026-09-20 sync: 35 files updated from openaccountants.com (2026-09-20)
+037f3d41 2026-08-02 sync: 6129 files updated from openaccountants.com (2026-08-02)
+bca875f4 2026-08-01 sync: 7374 files updated from openaccountants.com (2026-08-01)
+93b4deef 2026-07-07 fix(guides): add required tier + last_updated frontmatter to the 579 synced guides
+6ffc5dfc 2026-07-07 sync: publish 579 DB guides to the open-source repo

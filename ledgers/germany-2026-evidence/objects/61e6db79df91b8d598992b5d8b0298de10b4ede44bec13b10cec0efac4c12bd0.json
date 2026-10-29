@@ -1,0 +1,107 @@
+[
+  {
+    "label": "small250inclusive",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "small250.01excluded",
+    "actual": "False",
+    "expected": "False"
+  },
+  {
+    "label": "issuer800000inclusive",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "issuer800001excluded",
+    "actual": "False",
+    "expected": "False"
+  },
+  {
+    "label": "KUprior25000",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "KUprior25001",
+    "actual": "False",
+    "expected": "False"
+  },
+  {
+    "label": "KUcurrent100000",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "KUcurrent100001",
+    "actual": "False",
+    "expected": "False"
+  },
+  {
+    "label": "standardVAT",
+    "actual": "19",
+    "expected": "19"
+  },
+  {
+    "label": "reducedVAT",
+    "actual": "7",
+    "expected": "7"
+  },
+  {
+    "label": "separaterates",
+    "actual": "26",
+    "expected": "26"
+  },
+  {
+    "label": "invoicegross",
+    "actual": "226",
+    "expected": "226"
+  },
+  {
+    "label": "2026retentionend",
+    "actual": "2034",
+    "expected": "2034"
+  },
+  {
+    "label": "private2years",
+    "actual": "2028",
+    "expected": "2028"
+  },
+  {
+    "label": "paymentfineisnotretention",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "dueORterms",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "noDueAndNoTerms",
+    "actual": "False",
+    "expected": "False"
+  },
+  {
+    "label": "R120base3pluschargeslessallowances",
+    "actual": "503",
+    "expected": "503"
+  },
+  {
+    "label": "oldshortcutseparates",
+    "actual": "1500",
+    "expected": "1500"
+  },
+  {
+    "label": "R120simplebase1noadjustments",
+    "actual": "1500",
+    "expected": "1500"
+  },
+  {
+    "label": "R121positivebase",
+    "actual": "True",
+    "expected": "True"
+  }
+]

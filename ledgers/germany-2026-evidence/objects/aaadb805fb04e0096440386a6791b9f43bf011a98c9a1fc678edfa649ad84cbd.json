@@ -1,0 +1,2424 @@
+[
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 22,
+    "section": "Section 1 -- Quick Reference",
+    "wording": "**Section 1 -- Quick Reference**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 24,
+    "section": "Section 1 -- Quick Reference",
+    "wording": "| Field | Value |",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 26,
+    "section": "Section 1 -- Quick Reference",
+    "wording": "| Country | Germany (Bundesrepublik Deutschland) |",
+    "destination": "Germany scope retained; currentLF20"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 27,
+    "section": "Section 1 -- Quick Reference",
+    "wording": "| Tax | Einkommensteuer (Income Tax) on crypto gains |",
+    "destination": "Private resident income-tax scope retained; currentLF20"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 28,
+    "section": "Section 1 -- Quick Reference",
+    "wording": "| Currency | EUR only |",
+    "destination": "Euro computation retained; currentLF46"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 29,
+    "section": "Section 1 -- Quick Reference",
+    "wording": "| Tax year | Calendar year (1 January -- 31 December) |",
+    "destination": "Current2026 plus dated2025 route retained; currentLF22"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 30,
+    "section": "Section 1 -- Quick Reference",
+    "wording": "| Primary legislation | Einkommensteuergesetz (EStG) §23, §22 Nr. 3, §15 |",
+    "destination": "Current own EStG23/22/15 classification chain at41–49; currentLF41"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 31,
+    "section": "Section 1 -- Quick Reference",
+    "wording": "| Key guidance | BMF-Schreiben vom 10.05.2022 (Gz. IV C 1 - S 2256/19/10003 :001) |",
+    "destination": "Corrected from2022to actual2025 successor; currentLF22"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 32,
+    "section": "Section 1 -- Quick Reference",
+    "wording": "| Supporting legislation | Jahressteuergesetz 2022 (Freigrenze-Erhöhung ab VZ 2024) |",
+    "destination": "Historical JStG2022 attribution not established; current threshold/source retained, no false enactment claim; currentLF57"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 33,
+    "section": "Section 1 -- Quick Reference",
+    "wording": "| Tax authority | Bundeszentralamt für Steuern (BZSt) / local Finanzamt |",
+    "destination": "Private-tax assessment notice at234; BZSt platform-report receipt separately163, not a blanket BZSt private-assessment role; currentLF234"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 34,
+    "section": "Section 1 -- Quick Reference",
+    "wording": "| Filing portal | ELSTER (elster.de) |",
+    "destination": "Retained ELSTER/AnlageSO route; currentLF232"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 35,
+    "section": "Section 1 -- Quick Reference",
+    "wording": "| Filing deadline | July 31 following year (without Steuerberater); Feb 28 of second following year (with Steuerberater) |",
+    "destination": "Year-specific actual deadlines retained at238–243; historical generic28February wording narrowed for weekends/leapyears; currentLF238"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 36,
+    "section": "Section 1 -- Quick Reference",
+    "wording": "| Validated by | Pending — requires sign-off by a German Steuerberater |",
+    "destination": "Protected draft/disclaimer; no independent attestation claimed; currentLF262"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 37,
+    "section": "Section 1 -- Quick Reference",
+    "wording": "| Skill version | 1.0 |",
+    "destination": "Presentation metadata, not a substantive tax figure; currentLF22"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 41,
+    "section": "Core Rules Summary",
+    "wording": "**Core Rules Summary**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 43,
+    "section": "Core Rules Summary",
+    "wording": "| Rule | Detail |",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 45,
+    "section": "Core Rules Summary",
+    "wording": "| Legal classification | \"Anderes Wirtschaftsgut\" (other economic asset) per BMF 2022 |",
+    "destination": "Retained under actual2025 BMF; currentLF70"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 46,
+    "section": "Core Rules Summary",
+    "wording": "| Taxable event | Sale, exchange, or use of crypto within 1-year Haltefrist |",
+    "destination": "Retained; currentLF71"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 47,
+    "section": "Core Rules Summary",
+    "wording": "| Holding period (Haltefrist) | >1 year → completely tax-free (§23 Abs. 1 S. 1 Nr. 2 EStG) |",
+    "destination": "Retained strict date gate; currentLF45"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 48,
+    "section": "Core Rules Summary",
+    "wording": "| Freigrenze (§23 Abs. 3 S. 5) | €1,000/year total from ALL private sales (since VZ 2024; previously €600) |",
+    "destination": "Retained cliff; currentLF56"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 49,
+    "section": "Core Rules Summary",
+    "wording": "| Freigrenze behavior | If exceeded, ENTIRE gain is taxable (not just excess) |",
+    "destination": "Corrected exact-at-limit is taxable too; currentLF174"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 50,
+    "section": "Core Rules Summary",
+    "wording": "| Tax rate | Personal income tax rate (0%--45%) + Solidaritätszuschlag (5.5% of tax) + Kirchensteuer (8%/9%) |",
+    "destination": "Tariff/surcharge/church topic handed to income-tax Guide; historical2025 numeric bands not relabelled2026; currentLF66"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 51,
+    "section": "Core Rules Summary",
+    "wording": "| Method | FIFO (First In, First Out) -- per BMF Schreiben |",
+    "destination": "Corrected mandatoryFIFO blanket to identification/holdingFIFO/average value orFIFO simplification; currentLF83"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 52,
+    "section": "Core Rules Summary",
+    "wording": "| Staking/Lending income | Sonstige Einkünfte §22 Nr. 3 EStG |",
+    "destination": "Substantive topic mapped to current LF41–49. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 53,
+    "section": "Core Rules Summary",
+    "wording": "| Mining (commercial) | Gewerbliche Einkünfte §15 EStG |",
+    "destination": "Substantive topic mapped to current LF41–49. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 54,
+    "section": "Core Rules Summary",
+    "wording": "| NO Abgeltungsteuer | Crypto is NOT subject to 25% flat capital gains tax |",
+    "destination": "Narrowed to currency tokens; security token referral retained; currentLF64"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 55,
+    "section": "Core Rules Summary",
+    "wording": "| Holding period extension | NOT extended by staking/lending (BMF 2022 confirmed) |",
+    "destination": "Narrowed no-extension to currency tokens; currentLF107"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 59,
+    "section": "German Income Tax Rates 2025",
+    "wording": "**German Income Tax Rates 2025**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 61,
+    "section": "German Income Tax Rates 2025",
+    "wording": "| Taxable Income (EUR) | Rate |",
+    "destination": "Substantive topic mapped to current LF66–66. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 63,
+    "section": "German Income Tax Rates 2025",
+    "wording": "| 0 -- 12,096 | 0% (Grundfreibetrag) |",
+    "destination": "Substantive topic mapped to current LF66–66. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 64,
+    "section": "German Income Tax Rates 2025",
+    "wording": "| 12,097 -- 17,443 | 14% -- 23.97% (progressive zone 1) |",
+    "destination": "Substantive topic mapped to current LF66–66. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 65,
+    "section": "German Income Tax Rates 2025",
+    "wording": "| 17,444 -- 66,760 | 23.97% -- 42% (progressive zone 2) |",
+    "destination": "Substantive topic mapped to current LF66–66. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 66,
+    "section": "German Income Tax Rates 2025",
+    "wording": "| 66,761 -- 277,825 | 42% |",
+    "destination": "Substantive topic mapped to current LF66–66. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 67,
+    "section": "German Income Tax Rates 2025",
+    "wording": "| 277,826+ | 45% (Reichensteuer) |",
+    "destination": "Substantive topic mapped to current LF66–66. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 69,
+    "section": "German Income Tax Rates 2025",
+    "wording": "- **Solidaritätszuschlag threshold** — Plus: Solidaritätszuschlag 5.5% on income tax (if tax > Freigrenze of €18,130/€36,260)",
+    "destination": "Substantive topic mapped to current LF66–66. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 70,
+    "section": "German Income Tax Rates 2025",
+    "wording": "- **Kirchensteuer rate** — Plus: Kirchensteuer 8% (Bayern, Baden-Württemberg) or 9% (all other Länder) if church member",
+    "destination": "Substantive topic mapped to current LF66–66. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 74,
+    "section": "Conservative Defaults",
+    "wording": "**Conservative Defaults**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 76,
+    "section": "Conservative Defaults",
+    "wording": "| Ambiguity | Default |",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 78,
+    "section": "Conservative Defaults",
+    "wording": "| Unknown acquisition date | Assume <1 year (taxable) |",
+    "destination": "Not yet confirmed: historical automatic short-holding presumption unsupported; obtain records/actual estimation instead; currentLF151"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 79,
+    "section": "Conservative Defaults",
+    "wording": "| Unknown acquisition cost | Use €0 (maximises gain -- conservative) |",
+    "destination": "Corrected: no automatic punitive zero; actual-fact estimation required; currentLF155"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 80,
+    "section": "Conservative Defaults",
+    "wording": "| Unknown wallet attribution | STOP -- cannot determine Haltefrist without wallet history |",
+    "destination": "Retained identification/records gate; currentLF83"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 81,
+    "section": "Conservative Defaults",
+    "wording": "| FIFO vs LIFO | FIFO mandatory per BMF Schreiben |",
+    "destination": "Corrected FIFO-only blanket; currentLF84"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 82,
+    "section": "Conservative Defaults",
+    "wording": "| Mixed wallet (staked + unstaked) | Separate tracking required |",
+    "destination": "Reward/underlying lot tracking retained; no unsupported universal separate wallet rule; currentLF103"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 83,
+    "section": "Conservative Defaults",
+    "wording": "| Airdrop cost basis | €0 at receipt (income = FMV at receipt under §22) |",
+    "destination": "Corrected automaticzero to service-value basis; zero only if market unavailable at122; currentLF123"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 89,
+    "section": "2.1 Private Veräußerungsgeschäfte (§23 EStG)",
+    "wording": "- **Definition of private sale and gain formula** — Crypto sold/exchanged within 1 year of acquisition is a private sale. Gain = sale price - acquisition cost - directly related expenses (Werbungskosten).  _(§23 EStG)_",
+    "destination": "Substantive topic mapped to current LF70–95. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 91,
+    "section": "2.1 Private Veräußerungsgeschäfte (§23 EStG)",
+    "wording": "**Taxable events:**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 92,
+    "section": "2.1 Private Veräußerungsgeschäfte (§23 EStG)",
+    "wording": "- Selling crypto for EUR/fiat",
+    "destination": "Substantive topic mapped to current LF70–95. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 93,
+    "section": "2.1 Private Veräußerungsgeschäfte (§23 EStG)",
+    "wording": "- Exchanging crypto for another crypto (e.g., BTC → ETH)",
+    "destination": "Substantive topic mapped to current LF70–95. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 94,
+    "section": "2.1 Private Veräußerungsgeschäfte (§23 EStG)",
+    "wording": "- Paying for goods/services with crypto",
+    "destination": "Substantive topic mapped to current LF70–95. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 95,
+    "section": "2.1 Private Veräußerungsgeschäfte (§23 EStG)",
+    "wording": "- Providing crypto as collateral that is liquidated",
+    "destination": "Substantive topic mapped to current LF70–95. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 97,
+    "section": "2.1 Private Veräußerungsgeschäfte (§23 EStG)",
+    "wording": "**Non-taxable events:**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 98,
+    "section": "2.1 Private Veräußerungsgeschäfte (§23 EStG)",
+    "wording": "- Transferring between own wallets",
+    "destination": "Substantive topic mapped to current LF70–95. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 99,
+    "section": "2.1 Private Veräußerungsgeschäfte (§23 EStG)",
+    "wording": "- Buying crypto with fiat (acquisition, not disposal)",
+    "destination": "Substantive topic mapped to current LF70–95. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 100,
+    "section": "2.1 Private Veräußerungsgeschäfte (§23 EStG)",
+    "wording": "- Holding >1 year then selling (steuerfrei)",
+    "destination": "Substantive topic mapped to current LF70–95. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 101,
+    "section": "2.1 Private Veräußerungsgeschäfte (§23 EStG)",
+    "wording": "- Gift (but recipient inherits acquisition date + cost)",
+    "destination": "Substantive topic mapped to current LF70–95. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 105,
+    "section": "2.2 Staking as Sonstige Einkünfte (§22 Nr. 3 EStG)",
+    "wording": "**Staking treatment table**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 107,
+    "section": "2.2 Staking as Sonstige Einkünfte (§22 Nr. 3 EStG)",
+    "wording": "| Aspect | Treatment |",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 109,
+    "section": "2.2 Staking as Sonstige Einkünfte (§22 Nr. 3 EStG)",
+    "wording": "| Classification | Sonstige Einkünfte (miscellaneous income) |",
+    "destination": "Staking/lending own22no3 classification; mining tests separate112–115; currentLF101"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 110,
+    "section": "2.2 Staking as Sonstige Einkünfte (§22 Nr. 3 EStG)",
+    "wording": "| Taxable event | Receipt of staking rewards |",
+    "destination": "Retained; currentLF71"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 111,
+    "section": "2.2 Staking as Sonstige Einkünfte (§22 Nr. 3 EStG)",
+    "wording": "| Taxable amount | Fair market value (EUR) at time of receipt (Zufluss) |",
+    "destination": "Actual reward receipt/claiming values; costs before cliff; currentLF103"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 112,
+    "section": "2.2 Staking as Sonstige Einkünfte (§22 Nr. 3 EStG)",
+    "wording": "| Freigrenze | €256/year for ALL sonstige Einkünfte combined (§22 Nr. 3 S. 2) |",
+    "destination": "Substantive topic mapped to current LF101–108. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 113,
+    "section": "2.2 Staking as Sonstige Einkünfte (§22 Nr. 3 EStG)",
+    "wording": "| Freigrenze behavior | If exceeded, entire amount taxable |",
+    "destination": "Corrected exact-at-limit is taxable too; currentLF174"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 114,
+    "section": "2.2 Staking as Sonstige Einkünfte (§22 Nr. 3 EStG)",
+    "wording": "| Holding period of rewards | Starts fresh from receipt date -- 1 year to tax-free sale |",
+    "destination": "Substantive topic mapped to current LF101–108. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 115,
+    "section": "2.2 Staking as Sonstige Einkünfte (§22 Nr. 3 EStG)",
+    "wording": "| Haltefrist extension | NO extension for staked coins (BMF 2022, Rz. 87) |",
+    "destination": "Substantive topic mapped to current LF101–108. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 119,
+    "section": "2.3 Mining",
+    "wording": "**Mining classification table**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 121,
+    "section": "2.3 Mining",
+    "wording": "| Scenario | Classification |",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 123,
+    "section": "2.3 Mining",
+    "wording": "| Hobby mining (occasional, small scale) | §22 Nr. 3 EStG (sonstige Einkünfte) |",
+    "destination": "Substantive topic mapped to current LF112–115. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 124,
+    "section": "2.3 Mining",
+    "wording": "| Commercial mining (sustained, profit intent, significant hardware) | §15 EStG (Gewerbebetrieb) |",
+    "destination": "Substantive topic mapped to current LF112–115. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 125,
+    "section": "2.3 Mining",
+    "wording": "| Pool mining | Same rules -- proportional share of block reward |",
+    "destination": "Corrected blanket pool treatment: contractual partnership assessment underRn40; currentLF113"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 127,
+    "section": "2.3 Mining",
+    "wording": "**Commercial mining triggers:**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 128,
+    "section": "2.3 Mining",
+    "wording": "- Gewerbesteuer obligation (municipal trade tax)",
+    "destination": "Substantive topic mapped to current LF112–115. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 129,
+    "section": "2.3 Mining",
+    "wording": "- Gewerbeanmeldung required",
+    "destination": "Not yet confirmed: historical registration/membership claim is not repeated or source-verified in this private-investor Guide; business referral retained at currentLF218."
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 130,
+    "section": "2.3 Mining",
+    "wording": "- IHK membership",
+    "destination": "Not yet confirmed: historical registration/membership claim is not repeated or source-verified in this private-investor Guide; business referral retained at currentLF218."
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 131,
+    "section": "2.3 Mining",
+    "wording": "- Full income tax on mining income at progressive rates",
+    "destination": "Substantive topic mapped to current LF112–115. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 132,
+    "section": "2.3 Mining",
+    "wording": "- Depreciation (AfA) allowed on mining hardware",
+    "destination": "Substantive topic mapped to current LF112–115. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 134,
+    "section": "2.3 Mining",
+    "wording": "**Hobby mining (§22 Nr. 3):**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 135,
+    "section": "2.3 Mining",
+    "wording": "- €256 Freigrenze applies",
+    "destination": "Substantive topic mapped to current LF112–115. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 136,
+    "section": "2.3 Mining",
+    "wording": "- Hardware costs deductible as Werbungskosten",
+    "destination": "Substantive topic mapped to current LF112–115. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 137,
+    "section": "2.3 Mining",
+    "wording": "- No Gewerbesteuer",
+    "destination": "Substantive topic mapped to current LF112–115. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 141,
+    "section": "2.4 Lending (Crypto Lending / DeFi Lending)",
+    "wording": "**Lending treatment table**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 143,
+    "section": "2.4 Lending (Crypto Lending / DeFi Lending)",
+    "wording": "| Aspect | Treatment |",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 145,
+    "section": "2.4 Lending (Crypto Lending / DeFi Lending)",
+    "wording": "| Interest received | §22 Nr. 3 EStG (sonstige Einkünfte) |",
+    "destination": "Substantive topic mapped to current LF102–108. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 146,
+    "section": "2.4 Lending (Crypto Lending / DeFi Lending)",
+    "wording": "| Taxable amount | FMV in EUR at receipt |",
+    "destination": "Actual reward receipt/claiming values; costs before cliff; currentLF103"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 147,
+    "section": "2.4 Lending (Crypto Lending / DeFi Lending)",
+    "wording": "| Freigrenze | €256/year (shared with staking and other §22 Nr. 3 income) |",
+    "destination": "Substantive topic mapped to current LF102–108. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 148,
+    "section": "2.4 Lending (Crypto Lending / DeFi Lending)",
+    "wording": "| Holding period of original coins | NOT extended by lending (BMF 2022) |",
+    "destination": "Substantive topic mapped to current LF102–108. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 149,
+    "section": "2.4 Lending (Crypto Lending / DeFi Lending)",
+    "wording": "| Return of lent coins | Not a taxable event |",
+    "destination": "Not yet confirmed: historical automatic nontaxable return unsupported by selected letter; currentLF108"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 153,
+    "section": "2.5 DeFi Specific Treatments",
+    "wording": "**DeFi activity classification table**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 155,
+    "section": "2.5 DeFi Specific Treatments",
+    "wording": "| DeFi Activity | Classification | Notes |",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 157,
+    "section": "2.5 DeFi Specific Treatments",
+    "wording": "| Token swap on DEX | §23 EStG disposal + acquisition | Same as centralised exchange trade |",
+    "destination": "Substantive topic mapped to current LF119–143. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. Not yet confirmed: historical wider/special event presumptions remain explicit referrals/boundaries rather than invented allowances."
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 158,
+    "section": "2.5 DeFi Specific Treatments",
+    "wording": "| Liquidity provision (LP) | Disposal of tokens into pool = §23 event | Acquisition of LP tokens |",
+    "destination": "Not yet confirmed: historical automatic LP disposal method not established; precise referral retained; currentLF143"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 159,
+    "section": "2.5 DeFi Specific Treatments",
+    "wording": "| LP token removal | Disposal of LP token = §23 event | Reacquisition of underlying |",
+    "destination": "Not yet confirmed: historical automatic LP removal method not established; currentLF143"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 160,
+    "section": "2.5 DeFi Specific Treatments",
+    "wording": "| Yield farming rewards | §22 Nr. 3 (sonstige Einkünfte) | FMV at receipt |",
+    "destination": "Not yet confirmed: historical automatic classification not established; currentLF143"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 161,
+    "section": "2.5 DeFi Specific Treatments",
+    "wording": "| Airdrops | §22 Nr. 3 at FMV on receipt | Cost basis = FMV at receipt for future sale |",
+    "destination": "Corrected: service/chance/no-service/value gates,119–123; currentLF119"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 162,
+    "section": "2.5 DeFi Specific Treatments",
+    "wording": "| Hard forks (new coins) | Cost basis €0; acquisition date = fork date | Taxable on sale within 1 year |",
+    "destination": "Corrected zero/forkdate to original-date and relative-market basis,127–129; currentLF127"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 163,
+    "section": "2.5 DeFi Specific Treatments",
+    "wording": "| Wrapped tokens (e.g., WETH) | Potentially §23 event (exchange) | Conservative: treat as disposal |",
+    "destination": "Not yet confirmed: historical conservative disposal assumption unsupported; currentLF143"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 164,
+    "section": "2.5 DeFi Specific Treatments",
+    "wording": "| NFT sale | §23 EStG (same as any crypto asset) | 1-year Haltefrist applies |",
+    "destination": "Not yet confirmed: ministry excludesNFT; no automatic §23 confirmation; currentLF139"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 165,
+    "section": "2.5 DeFi Specific Treatments",
+    "wording": "| Governance token rewards | §22 Nr. 3 at FMV | Same as staking rewards |",
+    "destination": "Not yet confirmed: historical automatic reward rule unsupported; currentLF143"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 169,
+    "section": "2.6 FIFO Method (Mandatory)",
+    "wording": "- **FIFO application rules** — FIFO applies per wallet/exchange account (walletbezogen). Alternatively, taxpayer may apply FIFO across ALL wallets (universal FIFO) if consistently applied. Once chosen, method must be maintained consistently. LIFO, HIFO, and other methods are NOT permitted.  _(BMF-Schreiben Rz. 59--63)_",
+    "destination": "Substantive topic mapped to current LF83–89. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 171,
+    "section": "2.6 FIFO Method (Mandatory)",
+    "wording": "**Per-wallet FIFO example:**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 172,
+    "section": "2.6 FIFO Method (Mandatory)",
+    "wording": "- Wallet A: bought 1 BTC on 01.01.2024, bought 1 BTC on 01.06.2024",
+    "destination": "Substantive topic mapped to current LF83–89. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 173,
+    "section": "2.6 FIFO Method (Mandatory)",
+    "wording": "- Wallet A: sold 1 BTC on 15.03.2025",
+    "destination": "Substantive topic mapped to current LF83–89. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 174,
+    "section": "2.6 FIFO Method (Mandatory)",
+    "wording": "- FIFO: the 01.01.2024 BTC is sold → held >1 year → tax-free",
+    "destination": "Substantive topic mapped to current LF83–89. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 180,
+    "section": "3.1 Gain Calculation (§23)",
+    "wording": "- **Veräußerungsgewinn formula** — Veräußerungsgewinn = Veräußerungspreis - Anschaffungskosten - Werbungskosten (directly attributable costs) Where: - Veräußerungspreis = EUR value at time of sale/exchange - Anschaffungskosten = EUR value at time of acquisition (FIFO) - Werbungskosten = exchange fees, network fees (gas), directly related costs  _(§23 EStG)_",
+    "destination": "Substantive topic mapped to current LF46–74. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 184,
+    "section": "3.2 Annual Aggregation",
+    "wording": "- **Annual aggregation steps** — Step 1: Calculate gain/loss on each individual disposal within Haltefrist Step 2: Sum all gains and losses from §23 transactions for the year Step 3: Check net result against €1,000 Freigrenze - Net gain < €1,000 → entirely tax-free - Net gain ≥ €1,000 → entire net gain is taxable Step 4: If taxable, add to other taxable income in Einkommensteuererklärung Step 5: Apply personal income tax rate (Anlage SO)",
+    "destination": "Substantive topic mapped to current LF47–66. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 188,
+    "section": "3.3 Loss Treatment (§23 Abs. 3)",
+    "wording": "**Loss treatment table**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 190,
+    "section": "3.3 Loss Treatment (§23 Abs. 3)",
+    "wording": "| Rule | Detail |",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 192,
+    "section": "3.3 Loss Treatment (§23 Abs. 3)",
+    "wording": "| Offsetting within year | §23 losses offset §23 gains in same year |",
+    "destination": "Substantive topic mapped to current LF93–95. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 193,
+    "section": "3.3 Loss Treatment (§23 Abs. 3)",
+    "wording": "| Cannot offset against other income | §23 losses ONLY offset §23 gains (horizontal Verlustausgleich prohibited) |",
+    "destination": "Substantive topic mapped to current LF93–95. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 194,
+    "section": "3.3 Loss Treatment (§23 Abs. 3)",
+    "wording": "| Carry-back | 1 year carry-back to prior year §23 gains (§10d Abs. 1) |",
+    "destination": "Substantive topic mapped to current LF93–95. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 195,
+    "section": "3.3 Loss Treatment (§23 Abs. 3)",
+    "wording": "| Carry-forward | Unlimited carry-forward to future §23 gains |",
+    "destination": "Substantive topic mapped to current LF93–95. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 196,
+    "section": "3.3 Loss Treatment (§23 Abs. 3)",
+    "wording": "| Verlustvortrag application | Automatically applied by Finanzamt if declared |",
+    "destination": "Reconciled formal loss determination and reporting, not automatic unqualified deduction; currentLF94"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 200,
+    "section": "3.4 Staking/Mining Income Computation",
+    "wording": "- **Staking/Mining income steps** — Staking/Mining Income (§22 Nr. 3): Step 1: Record FMV in EUR of each reward at time of receipt Step 2: Sum all §22 Nr. 3 income for the year (includes staking, lending interest, mining hobby, airdrops) Step 3: Check against €256 Freigrenze - Total < €256 → entirely tax-free - Total ≥ €256 → entire amount taxable Step 4: Deduct directly related Werbungskosten (e.g., validator costs) Step 5: Net amount added to taxable income",
+    "destination": "Substantive topic mapped to current LF48–105. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 206,
+    "section": "4.1 ELSTER Forms",
+    "wording": "**ELSTER forms table**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 208,
+    "section": "4.1 ELSTER Forms",
+    "wording": "| Form | Purpose |",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 210,
+    "section": "4.1 ELSTER Forms",
+    "wording": "| Anlage SO (Sonstige Einkünfte) | Report §23 gains and §22 Nr. 3 income |",
+    "destination": "Substantive topic mapped to current LF231–233. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 211,
+    "section": "4.1 ELSTER Forms",
+    "wording": "| Zeile 41--48 (Anlage SO) | Private Veräußerungsgeschäfte |",
+    "destination": "Substantive topic mapped to current LF231–233. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 212,
+    "section": "4.1 ELSTER Forms",
+    "wording": "| Zeile 8--15 (Anlage SO) | Sonstige Einkünfte (staking, lending) |",
+    "destination": "Substantive topic mapped to current LF231–233. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 213,
+    "section": "4.1 ELSTER Forms",
+    "wording": "| Anlage G (Gewerbeeinkünfte) | Commercial mining only |",
+    "destination": "Substantive topic mapped to current LF231–233. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 214,
+    "section": "4.1 ELSTER Forms",
+    "wording": "| Anlage EÜR | Einnahmen-Überschussrechnung for Gewerbe |",
+    "destination": "Substantive topic mapped to current LF231–233. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 218,
+    "section": "4.2 Documentation Requirements",
+    "wording": "**Documentation requirements table**  _(§147 AO)_",
+    "destination": "Substantive topic mapped to current LF147–156. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 220,
+    "section": "4.2 Documentation Requirements",
+    "wording": "| Document | Retention Period |",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 222,
+    "section": "4.2 Documentation Requirements",
+    "wording": "| Trade history (all exchanges) | 10 years (§147 AO) |",
+    "destination": "Corrected historical blanket10year retention; currentLF156 gives private147a sixyears/threshold and separately4/5/10year assessment periods. Old tenyear blanket is not silently retained."
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 223,
+    "section": "4.2 Documentation Requirements",
+    "wording": "| Wallet transaction records | 10 years |",
+    "destination": "Corrected historical blanket10year retention; currentLF156 gives private147a sixyears/threshold and separately4/5/10year assessment periods. Old tenyear blanket is not silently retained."
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 224,
+    "section": "4.2 Documentation Requirements",
+    "wording": "| Cost basis calculations | 10 years |",
+    "destination": "Corrected historical blanket10year retention; currentLF156 gives private147a sixyears/threshold and separately4/5/10year assessment periods. Old tenyear blanket is not silently retained."
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 225,
+    "section": "4.2 Documentation Requirements",
+    "wording": "| Staking reward records with timestamps | 10 years |",
+    "destination": "Corrected historical blanket10year retention; currentLF156 gives private147a sixyears/threshold and separately4/5/10year assessment periods. Old tenyear blanket is not silently retained."
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 226,
+    "section": "4.2 Documentation Requirements",
+    "wording": "| Exchange confirmations / screenshots | 10 years |",
+    "destination": "Corrected historical blanket10year retention; currentLF156 gives private147a sixyears/threshold and separately4/5/10year assessment periods. Old tenyear blanket is not silently retained."
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 227,
+    "section": "4.2 Documentation Requirements",
+    "wording": "| FIFO calculation spreadsheet | 10 years |",
+    "destination": "Corrected historical blanket10year retention; currentLF156 gives private147a sixyears/threshold and separately4/5/10year assessment periods. Old tenyear blanket is not silently retained."
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 231,
+    "section": "4.3 Filing Deadlines",
+    "wording": "**Filing deadlines table**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 233,
+    "section": "4.3 Filing Deadlines",
+    "wording": "| Scenario | Deadline |",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 235,
+    "section": "4.3 Filing Deadlines",
+    "wording": "| Without Steuerberater | July 31 of following year |",
+    "destination": "Substantive topic mapped to current LF226–243. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 236,
+    "section": "4.3 Filing Deadlines",
+    "wording": "| With Steuerberater | Last day of February, second following year |",
+    "destination": "Substantive topic mapped to current LF226–243. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 237,
+    "section": "4.3 Filing Deadlines",
+    "wording": "| Voluntary filing (Antragsveranlagung) | Up to 4 years |",
+    "destination": "Assessment-limitation context retained; no new blanket elective filing entitlement asserted; currentLF156"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 238,
+    "section": "4.3 Filing Deadlines",
+    "wording": "| Amended return (Berichtigung) | Before Steuerbescheid becomes bestandskräftig |",
+    "destination": "Corrected finality-only cutoff to actual §153 assessment-limitation duty; currentLF226"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 244,
+    "section": "5.1 Crypto-to-Crypto Exchanges",
+    "wording": "- **Crypto-to-crypto exchange treatment** — Every crypto-to-crypto exchange (e.g., BTC → ETH) is TWO events: 1. Disposal of BTC (realises gain/loss under §23 if <1 year held) 2. Acquisition of ETH (new Anschaffungskosten = FMV at time of exchange) The exchange rate used must be documented (e.g., CoinMarketCap, exchange order fill price).  _(§23 EStG)_",
+    "destination": "Substantive topic mapped to current LF72–74. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 248,
+    "section": "5.2 Gifts and Inheritance",
+    "wording": "**Gifts and inheritance table**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 250,
+    "section": "5.2 Gifts and Inheritance",
+    "wording": "| Scenario | Rule |",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 252,
+    "section": "5.2 Gifts and Inheritance",
+    "wording": "| Gift (Schenkung) | Recipient inherits acquisition date AND cost basis of donor |",
+    "destination": "Substantive topic mapped to current LF76–182. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 253,
+    "section": "5.2 Gifts and Inheritance",
+    "wording": "| Inheritance (Erbschaft) | Heir inherits acquisition date AND cost basis of deceased |",
+    "destination": "Current Guide retains source boundary; new actual2025form corroborates carryover, not silently rewritten; currentLF182"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 254,
+    "section": "5.2 Gifts and Inheritance",
+    "wording": "| Implication | If donor held >1 year, recipient can sell immediately tax-free |",
+    "destination": "Substantive topic mapped to current LF76–182. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 255,
+    "section": "5.2 Gifts and Inheritance",
+    "wording": "| Schenkungsteuer | Separate gift tax may apply (Freibeträge: €500,000 spouse, €400,000 child) |",
+    "destination": "Gift-tax topic retained as explicit referral; historical500k/400k allowances not verified for this private crypto scope; currentLF224"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 259,
+    "section": "5.3 Stablecoins",
+    "wording": "- **Stablecoin treatment** — Stablecoins (USDT, USDC, DAI) are \"andere Wirtschaftsgüter\" -- same rules apply. Exchange gains from EUR→stablecoin→EUR within 1 year are taxable. FX movement on stablecoin denominated in USD is a §23 event.",
+    "destination": "Substantive topic mapped to current LF143–220. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. Not yet confirmed: historical wider/special event presumptions remain explicit referrals/boundaries rather than invented allowances."
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 263,
+    "section": "5.4 Lost/Stolen Crypto",
+    "wording": "- **Lost/stolen crypto treatment** — If provably lost (e.g., lost private key, verified hack), may claim as Verlust under §23. Finanzamt may require proof (police report, blockchain evidence). Scam losses: deductible as §23 Verlust if disposal can be demonstrated.",
+    "destination": "Substantive topic mapped to current LF143–227. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. Not yet confirmed: historical wider/special event presumptions remain explicit referrals/boundaries rather than invented allowances."
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 267,
+    "section": "5.5 ICO / Token Sales",
+    "wording": "- **ICO/token sale treatment** — Acquisition of ICO tokens: Anschaffungskosten = EUR paid. Sale within 1 year: §23 gain/loss. Worthless tokens: may realise loss by provable abandonment or sell for minimal amount.",
+    "destination": "Substantive topic mapped to current LF135–223. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. Not yet confirmed: historical wider/special event presumptions remain explicit referrals/boundaries rather than invented allowances."
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 271,
+    "section": "5.6 Fork Coins",
+    "wording": "- **Fork coin treatment** — New coins received from hard fork: Anschaffungskosten = €0. Acquisition date = date of fork. Sale within 1 year of fork: gain = full proceeds (minus fees). Sale after 1 year from fork: tax-free.",
+    "destination": "Substantive topic mapped to current LF127–129. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 275,
+    "section": "5.7 Margin/Futures Trading",
+    "wording": "- **Margin/futures trading treatment** — Gains from crypto futures/CFDs: typically §20 EStG (Kapitalerträge) -- 25% Abgeltungsteuer. Gains from leveraged spot trading: §23 EStG (same as normal trading). BFH case law developing -- document approach taken.",
+    "destination": "Substantive topic mapped to current LF134–221. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. Not yet confirmed: historical wider/special event presumptions remain explicit referrals/boundaries rather than invented allowances."
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 281,
+    "section": "Example 1 -- Simple Sale Within Haltefrist",
+    "wording": "Bought 2 BTC on 15.03.2025 for €50,000 total (€25,000 each).",
+    "destination": "Substantive topic mapped to current LF194–198. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 282,
+    "section": "Example 1 -- Simple Sale Within Haltefrist",
+    "wording": "Sold 1 BTC on 01.08.2025 for €35,000. Exchange fee: €50.",
+    "destination": "Substantive topic mapped to current LF194–198. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 284,
+    "section": "Example 1 -- Simple Sale Within Haltefrist",
+    "wording": "Gain = €35,000 - €25,000 - €50 = €9,950",
+    "destination": "Substantive topic mapped to current LF194–198. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 285,
+    "section": "Example 1 -- Simple Sale Within Haltefrist",
+    "wording": "Held < 1 year → taxable under §23.",
+    "destination": "Substantive topic mapped to current LF194–198. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 286,
+    "section": "Example 1 -- Simple Sale Within Haltefrist",
+    "wording": "€9,950 > €1,000 Freigrenze → entire €9,950 is taxable income.",
+    "destination": "Substantive topic mapped to current LF194–198. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 290,
+    "section": "Example 2 -- Sale After Haltefrist",
+    "wording": "Bought 1 ETH on 01.01.2024 for €2,000.",
+    "destination": "Substantive topic mapped to current LF172–173. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 291,
+    "section": "Example 2 -- Sale After Haltefrist",
+    "wording": "Sold 1 ETH on 15.01.2025 for €4,000.",
+    "destination": "Substantive topic mapped to current LF172–173. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 293,
+    "section": "Example 2 -- Sale After Haltefrist",
+    "wording": "Held > 1 year → completely tax-free. No reporting obligation.",
+    "destination": "Substantive topic mapped to current LF172–173. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 297,
+    "section": "Example 3 -- Staking Rewards",
+    "wording": "Received 0.5 ETH staking rewards throughout 2025.",
+    "destination": "Substantive topic mapped to current LF202–204. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 298,
+    "section": "Example 3 -- Staking Rewards",
+    "wording": "Total FMV at each receipt: €1,800.",
+    "destination": "Substantive topic mapped to current LF202–204. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 299,
+    "section": "Example 3 -- Staking Rewards",
+    "wording": "No other §22 Nr. 3 income.",
+    "destination": "Substantive topic mapped to current LF202–204. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 301,
+    "section": "Example 3 -- Staking Rewards",
+    "wording": "€1,800 > €256 Freigrenze → entire €1,800 is taxable as sonstige Einkünfte.",
+    "destination": "Substantive topic mapped to current LF202–204. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 302,
+    "section": "Example 3 -- Staking Rewards",
+    "wording": "Added to personal income; taxed at marginal rate.",
+    "destination": "Substantive topic mapped to current LF202–204. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 306,
+    "section": "Example 4 -- Under Freigrenze",
+    "wording": "Total §23 gains in 2025: €900.",
+    "destination": "Substantive topic mapped to current LF200–204. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 307,
+    "section": "Example 4 -- Under Freigrenze",
+    "wording": "Total §22 Nr. 3 income (staking): €200.",
+    "destination": "Substantive topic mapped to current LF200–204. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 309,
+    "section": "Example 4 -- Under Freigrenze",
+    "wording": "§23: €900 < €1,000 → tax-free.",
+    "destination": "Substantive topic mapped to current LF200–204. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 310,
+    "section": "Example 4 -- Under Freigrenze",
+    "wording": "§22 Nr. 3: €200 < €256 → tax-free.",
+    "destination": "Substantive topic mapped to current LF200–204. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 311,
+    "section": "Example 4 -- Under Freigrenze",
+    "wording": "No tax obligation and no reporting required.",
+    "destination": "Substantive topic mapped to current LF200–204. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 315,
+    "section": "Section 7 -- Common Mistakes",
+    "wording": "**Common mistakes table**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 317,
+    "section": "Section 7 -- Common Mistakes",
+    "wording": "| Mistake | Correction |",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 319,
+    "section": "Section 7 -- Common Mistakes",
+    "wording": "| Applying 25% Abgeltungsteuer | WRONG -- crypto is §23, not §20. Personal rate applies. |",
+    "destination": "Substantive topic mapped to current LF247–256. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 320,
+    "section": "Section 7 -- Common Mistakes",
+    "wording": "| Using LIFO instead of FIFO | WRONG -- only FIFO allowed per BMF Schreiben |",
+    "destination": "Substantive topic mapped to current LF247–256. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 321,
+    "section": "Section 7 -- Common Mistakes",
+    "wording": "| Ignoring crypto-to-crypto trades | Each swap is a taxable disposal + new acquisition |",
+    "destination": "Substantive topic mapped to current LF247–256. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 322,
+    "section": "Section 7 -- Common Mistakes",
+    "wording": "| Not tracking staking rewards separately | Each reward has its own acquisition date and cost basis |",
+    "destination": "Substantive topic mapped to current LF247–256. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 323,
+    "section": "Section 7 -- Common Mistakes",
+    "wording": "| Assuming Haltefrist extends with staking | WRONG -- BMF 2022 confirmed NO extension |",
+    "destination": "Substantive topic mapped to current LF247–256. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 324,
+    "section": "Section 7 -- Common Mistakes",
+    "wording": "| Treating Freigrenze as Freibetrag | WRONG -- Freigrenze means if exceeded, ALL is taxable |",
+    "destination": "Substantive topic mapped to current LF247–256. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 325,
+    "section": "Section 7 -- Common Mistakes",
+    "wording": "| Not reporting because \"exchange didn't report\" | Doesn't matter -- taxpayer has Erklärungspflicht |",
+    "destination": "Substantive topic mapped to current LF247–256. Historical numerical case/year/rate or broader formulation is not asserted byte-exact; apply the actual quoted current gates. "
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 329,
+    "section": "Section 8 -- Reference Material",
+    "wording": "**Reference material table**",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 331,
+    "section": "Section 8 -- Reference Material",
+    "wording": "| Topic | Reference |",
+    "destination": "Presentation heading/table labels; matching substantive section mapped below"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 333,
+    "section": "Section 8 -- Reference Material",
+    "wording": "| Private sales | §23 Abs. 1 S. 1 Nr. 2 EStG |",
+    "destination": "Own23/BMF53 private-sale gate; currentLF70"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 334,
+    "section": "Section 8 -- Reference Material",
+    "wording": "| Freigrenze (€1,000) | §23 Abs. 3 S. 5 EStG (amended by JStG 2022, effective VZ 2024) |",
+    "destination": "Current own23cliff; old JStG2022 enactment attribution not established; currentLF56"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 335,
+    "section": "Section 8 -- Reference Material",
+    "wording": "| Miscellaneous income | §22 Nr. 3 EStG |",
+    "destination": "Own22no3 service classification/costs/cliff; currentLF104"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 336,
+    "section": "Section 8 -- Reference Material",
+    "wording": "| Commercial income | §15 EStG |",
+    "destination": "Own15(2)/BMF35–39 tests; currentLF113"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 337,
+    "section": "Section 8 -- Reference Material",
+    "wording": "| BMF crypto guidance | BMF-Schreiben 10.05.2022, IV C 1 - S 2256/19/10003 :001 |",
+    "destination": "Source-corrected to2025supersession; currentLF22"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 338,
+    "section": "Section 8 -- Reference Material",
+    "wording": "| FIFO requirement | BMF-Schreiben Rz. 59--63 |",
+    "destination": "Corrected mandatory-only claim: identification/FIFOholding/average-orFIFOvalue at83–89; currentLF83"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 339,
+    "section": "Section 8 -- Reference Material",
+    "wording": "| No Haltefrist extension | BMF-Schreiben Rz. 87 |",
+    "destination": "Narrowed to currency tokens; noncurrency boundary retained; currentLF107"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 340,
+    "section": "Section 8 -- Reference Material",
+    "wording": "| Staking classification | BMF-Schreiben Rz. 78--92 |",
+    "destination": "Actual2025 Rn48/48a, no fabricated2022 paragraph numbers; currentLF101"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 341,
+    "section": "Section 8 -- Reference Material",
+    "wording": "| Loss offsetting | §23 Abs. 3 S. 7, 8 EStG; §10d EStG |",
+    "destination": "Actual23loss box and immediately preceding-year carryback94; currentLF93"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 342,
+    "section": "Section 8 -- Reference Material",
+    "wording": "| Filing obligation | §25 Abs. 3 EStG; §46 EStG |",
+    "destination": "ActualEStDV56/46 gates retained; currentLF231"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 343,
+    "section": "Section 8 -- Reference Material",
+    "wording": "| Record retention | §147 AO (10 years) |",
+    "destination": "Corrected blanket10years to actualprivate147a sixyears/threshold; assessment periods distinct; currentLF156"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 344,
+    "section": "Section 8 -- Reference Material",
+    "wording": "| Grundfreibetrag 2025 | €12,096 (Inflationsausgleichsgesetz) |",
+    "destination": "Historical2025 value not relabelled2026; current tariff delegated to named income-tax Guide; currentLF66"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 345,
+    "section": "Section 8 -- Reference Material",
+    "wording": "| Solidaritätszuschlag | §3 SolZG |",
+    "destination": "Tariff/surcharge handoff retained; historical individual thresholds not restated as current; currentLF66"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 346,
+    "section": "Section 8 -- Reference Material",
+    "wording": "| BFH case law | BFH IX R 3/22 (crypto as Wirtschaftsgut confirmed) |",
+    "destination": "Own actual2025 BMF quotation of14Feb2023 case retained; currentLF70"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 350,
+    "section": "Disclaimer",
+    "wording": "This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Steuerberater, Wirtschaftsprüfer, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.",
+    "destination": "Protected disclaimer/platform routing; not a substantive tax allowance"
+  },
+  {
+    "ref": "7dc926e3c7c7befd1f5c7cb533f1669b861a344b",
+    "old_lf": 352,
+    "section": "Disclaimer",
+    "wording": "The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.",
+    "destination": "Protected disclaimer/platform routing; not a substantive tax allowance"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 20,
+    "section": "Crypto tax in Germany",
+    "wording": "How Germany taxes an individual who is fully liable to German income tax and holds crypto assets (Kryptowerte) privately, not in a business. It covers selling and swapping (private sales under § 23 EStG), which units count as sold, staking and lending income (§ 22 Nr. 3 EStG), mining and forging, airdrops, hard forks, NFTs, the records the tax office expects, and the new platform reporting (DAC8 / CARF) that starts with 2026.",
+    "destination": "Exact wording retained; current LF20, Crypto tax in Germany"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 22,
+    "section": "Crypto tax in Germany",
+    "wording": "**Primary year: 2026 (calendar year).** A dated section covers the 2025 return being filed now. The statute figures come from the consolidated federal law on gesetze-im-internet.de. The rules on how to apply them come from the finance ministry's letter of 6 March 2025, \"Einzelfragen zur ertragsteuerrechtlichen Behandlung bestimmter Kryptowerte\" (GZ IV C 1 - S 2256/00042/064/043), which replaced the letter of 10 May 2022. Paragraph numbers (Rn) below all point into that letter: [BMF letter of 6 March 2025](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2). Do not use the paragraph numbers of the 2022 letter.",
+    "destination": "Exact wording retained; current LF22, Crypto tax in Germany"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 24,
+    "section": "Crypto tax in Germany",
+    "wording": "**Not covered:** business holdings, wages in crypto, non-residents, treaties, VAT, gift and inheritance tax.",
+    "destination": "Exact wording retained; current LF24, Crypto tax in Germany"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 26,
+    "section": "Crypto tax in Germany",
+    "wording": "**How the letter sorts tokens (Rn 2 to 4)**, by function whatever the name: currency or payment tokens (means of exchange or speculation; the letter names Bitcoin and Ether), utility tokens (a right to use a network or obtain a product), security tokens (work like securities), and hybrids. A utility token used as a means of exchange is treated like a currency token when used that way.",
+    "destination": "Exact wording retained; current LF26, Crypto tax in Germany"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 30,
+    "section": "Ask the client first",
+    "wording": "- Held privately, or in a business or company? Any wages paid in crypto? Fully liable to German tax all year?",
+    "destination": "Exact wording retained; current LF30, Ask the client first"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 31,
+    "section": "Ask the client first",
+    "wording": "- Which wallets and platforms (any foreign or decentralised)? Complete exports for every year you held coins?",
+    "destination": "Exact wording retained; current LF31, Ask the client first"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 32,
+    "section": "Ask the client first",
+    "wording": "- For each sale, swap or crypto payment: coin, units, wallet, date bought, date sold, and for what? Can you show which units were sold, and which lot method did you use before for that coin in that wallet?",
+    "destination": "Exact wording retained; current LF32, Ask the client first"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 33,
+    "section": "Ask the client first",
+    "wording": "- Any staking, lending, mining, forging, airdrops or forks? For an airdrop: did you have to post, upload or hand over personal data?",
+    "destination": "Exact wording retained; current LF33, Ask the client first"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 34,
+    "section": "Ask the client first",
+    "wording": "- Did you stake or lend a token that is NOT a currency token?",
+    "destination": "Exact wording retained; current LF34, Ask the client first"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 35,
+    "section": "Ask the client first",
+    "wording": "- Any NFTs, derivatives, leveraged trading, liquidity pools or security tokens?",
+    "destination": "Exact wording retained; current LF35, Ask the client first"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 36,
+    "section": "Ask the client first",
+    "wording": "- Which tax report tool, price source and settings?",
+    "destination": "Exact wording retained; current LF36, Ask the client first"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 37,
+    "section": "Ask the client first",
+    "wording": "- Wages, other private sales in the same year, joint assessment, losses carried forward? Were earlier returns complete?",
+    "destination": "Exact wording retained; current LF37, Ask the client first"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 41,
+    "section": "The method, step by step",
+    "wording": "1. **Sort each asset** by function (Rn 2 to 4). Security tokens, NFTs and anything held in a business leave this skill.",
+    "destination": "Exact wording retained; current LF41, The method, step by step"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 42,
+    "section": "The method, step by step",
+    "wording": "2. **Sort each event.** Sale, swap or paying with crypto: private sale, § 23 EStG (Rn 54). Passive staking and lending: § 22 Nr. 3 EStG (Rn 48, 65). Mining or forging: test [§ 15(2) EStG](https://www.gesetze-im-internet.de/estg/__15.html) first (Rn 35 to 39). Moving coins between own wallets: no sale (Rn 54).",
+    "destination": "Exact wording retained; current LF42, The method, step by step"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 43,
+    "section": "The method, step by step",
+    "wording": "3. **Fix the dates.** Central platform: the times it recorded. Direct trades, for example on a decentralised platform: as a rule the wallet times. A client who wants the contract date to count must prove it (Rn 55).",
+    "destination": "Exact wording retained; current LF43, The method, step by step"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 44,
+    "section": "The method, step by step",
+    "wording": "4. **Pick the units sold** under Rn 61 and 62 (below), per wallet and per coin, and write the method down.",
+    "destination": "Exact wording retained; current LF44, The method, step by step"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 45,
+    "section": "The method, step by step",
+    "wording": "5. **Test the holding period.** A sale is taxable only if the time between purchase and sale is \"nicht mehr als ein Jahr\", not more than one year ([§ 23(1) sentence 1 no. 2 EStG](https://www.gesetze-im-internet.de/estg/__23.html)). Each swap starts a new period for the coin received (Rn 55).",
+    "destination": "Exact wording retained; current LF45, The method, step by step"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 46,
+    "section": "The method, step by step",
+    "wording": "6. **Compute each taxable gain or loss:** sale price less purchase cost less costs of the sale (§ 23(3) sentence 1 EStG; Rn 57 to 60).",
+    "destination": "Exact wording retained; current LF46, The method, step by step"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 47,
+    "section": "The method, step by step",
+    "wording": "7. **Add up all private sales of the year per person**, crypto and non-crypto together, and test the total against the Freigrenze. A total below the limit is tax-free; at or above it, the whole total is taxed.",
+    "destination": "Exact wording retained; current LF47, The method, step by step"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 48,
+    "section": "The method, step by step",
+    "wording": "8. **Compute § 22 Nr. 3 income:** every reward at its euro market price when received, less the related costs, added to all other income from services of the year. Test the result against its own Freigrenze.",
+    "destination": "Exact wording retained; current LF48, The method, step by step"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 49,
+    "section": "The method, step by step",
+    "wording": "9. **Keep losses in their box:** § 23 losses only against § 23 gains, § 22 Nr. 3 losses only against § 22 Nr. 3 income, one year back and later years forward.",
+    "destination": "Exact wording retained; current LF49, The method, step by step"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 50,
+    "section": "The method, step by step",
+    "wording": "10. **Report** in Anlage SO of the income tax return through ELSTER (business mining: Anlage G and the profit statement). File on time (Filing and payment below), and keep the records listed in \"Records and duties to cooperate\".",
+    "destination": "Exact wording retained; current LF50, The method, step by step"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 54,
+    "section": "Figures for 2026 and 2025",
+    "wording": "| Figure | 2026 | 2025 | Source |",
+    "destination": "Exact wording retained; current LF54, Figures for 2026 and 2025"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 56,
+    "section": "Figures for 2026 and 2025",
+    "wording": "| Freigrenze for all private sales of the year (a cliff: the total must be BELOW it) | EUR 1,000 | EUR 1,000 | [§ 23(3) sentence 5 EStG](https://www.gesetze-im-internet.de/estg/__23.html): \"weniger als 1 000 Euro\"; Rn 53 |",
+    "destination": "Exact wording retained; current LF56, Figures for 2026 and 2025"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 57,
+    "section": "Figures for 2026 and 2025",
+    "wording": "| Same limit for years up to and including 2023 (late or corrected returns only) | n/a | n/a | Rn 53: \"bis Veranlagungszeitraum 2023: 600 €\" |",
+    "destination": "Exact wording retained; current LF57, Figures for 2026 and 2025"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 58,
+    "section": "Figures for 2026 and 2025",
+    "wording": "| Freigrenze for all income from services (§ 22 Nr. 3), tested after costs; a cliff | EUR 256 | EUR 256 | [§ 22 Nr. 3 sentence 2 EStG](https://www.gesetze-im-internet.de/estg/__22.html): \"weniger als 256 Euro im Kalenderjahr\" |",
+    "destination": "Exact wording retained; current LF58, Figures for 2026 and 2025"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 59,
+    "section": "Figures for 2026 and 2025",
+    "wording": "| Employees: untaxed side income that forces an assessment if MORE than | EUR 410 | EUR 410 | [§ 46(2) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__46.html) |",
+    "destination": "Exact wording retained; current LF59, Figures for 2026 and 2025"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 60,
+    "section": "Figures for 2026 and 2025",
+    "wording": "| Employees who are assessed: side income is deducted again if NOT MORE than | EUR 410 | EUR 410 | § 46(3) EStG |",
+    "destination": "Exact wording retained; current LF60, Figures for 2026 and 2025"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 61,
+    "section": "Figures for 2026 and 2025",
+    "wording": "| Record retention of six years applies if positive surplus income is MORE than | EUR 500,000 | EUR 500,000 | [§ 147a AO](https://www.gesetze-im-internet.de/ao_1977/__147a.html); Rn 105 |",
+    "destination": "Exact wording retained; current LF61, Figures for 2026 and 2025"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 62,
+    "section": "Figures for 2026 and 2025",
+    "wording": "| The same threshold from 1 January 2027 | EUR 750,000 from 2027 | n/a | § 147a AO footnote; Rn 105 |",
+    "destination": "Exact wording retained; current LF62, Figures for 2026 and 2025"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 63,
+    "section": "Figures for 2026 and 2025",
+    "wording": "| Late-filing surcharge per started month (tax less prepayments and withholding) | 0.25%, at least EUR 25 | same | [§ 152(5) AO](https://www.gesetze-im-internet.de/ao_1977/__152.html) |",
+    "destination": "Exact wording retained; current LF63, Figures for 2026 and 2025"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 64,
+    "section": "Figures for 2026 and 2025",
+    "wording": "| Flat tax on investment income, for contrast only: it does NOT apply to currency-token gains | 25% | 25% | [§ 32d(1) EStG](https://www.gesetze-im-internet.de/estg/__32d.html) |",
+    "destination": "Exact wording retained; current LF64, Figures for 2026 and 2025"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 66,
+    "section": "Figures for 2026 and 2025",
+    "wording": "The two Freigrenzen are separate tests. They are never added together, and using one does not use up the other. Taxable crypto gains and income are added to the client's other income and taxed at the personal progressive rate, plus solidarity surcharge and, for members, church tax. The tariff is in [§ 32a EStG](https://www.gesetze-im-internet.de/estg/__32a.html) and in the German income tax skill, `de-einkommensteuer-freelancer`; this skill does not compute a rate.",
+    "destination": "Exact wording retained; current LF66, Figures for 2026 and 2025"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 70,
+    "section": "Private sales: selling, swapping and paying with crypto (§ 23 EStG)",
+    "wording": "- **What is taxed.** Crypto held privately is an \"anderes Wirtschaftsgut\". A gain on a sale is taxable income from a private sale if not more than one year lies between purchase and sale (Rn 53, citing the Federal Fiscal Court judgment of 14 February 2023, IX R 3/22). The intention to make a profit is not tested (Rn 53).",
+    "destination": "Exact wording retained; current LF70, Private sales: selling, swapping and paying with crypto (§ 23 EStG)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 71,
+    "section": "Private sales: selling, swapping and paying with crypto (§ 23 EStG)",
+    "wording": "- **A purchase and a sale are both needed (Rn 54).** A purchase is getting the coin from a third party for something in return: for euro, goods, services or other coins, and also coins received from mining or forging, lending, passive staking, and, where it applies, an ICO or an airdrop. A sale is the mirror image: a swap into euro, goods, services or other coins.",
+    "destination": "Exact wording retained; current LF71, Private sales: selling, swapping and paying with crypto (§ 23 EStG)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 72,
+    "section": "Private sales: selling, swapping and paying with crypto (§ 23 EStG)",
+    "wording": "- **Swaps.** Coin for coin is a sale of the coin given up and a purchase of the coin received. The sale price is the market price of the coin RECEIVED at the time of the swap; if that cannot be found, the market price of the coin given up is accepted (Rn 58). That market price, plus incidental purchase costs, is also the purchase cost of the coin received (Rn 59). \"Die Veräußerungsfristen ... beginnen nach jedem Tausch neu\" (Rn 55).",
+    "destination": "DE-L04 source correction; currentLF72 separately identifies given-asset basis and received-asset disposal proceeds. Original words preserved here."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 73,
+    "section": "Private sales: selling, swapping and paying with crypto (§ 23 EStG)",
+    "wording": "- **Paying for goods or services.** The sale price is the euro price agreed; if none was stated, the market price of the coin given up (Rn 60). This includes a crypto card that sells coins at the till; the card statement is normally enough as a record (Rn 103).",
+    "destination": "Exact wording retained; current LF73, Private sales: selling, swapping and paying with crypto (§ 23 EStG)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 74,
+    "section": "Private sales: selling, swapping and paying with crypto (§ 23 EStG)",
+    "wording": "- **Costs.** Transaction fees on the sale are deductible (Rn 59). Costs must be split between taxable sales and sales that are not taxable, such as sales after more than one year (Rn 57).",
+    "destination": "Exact wording retained; current LF74, Private sales: selling, swapping and paying with crypto (§ 23 EStG)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 75,
+    "section": "Private sales: selling, swapping and paying with crypto (§ 23 EStG)",
+    "wording": "- **Change outputs.** For coins on the UTXO model, the \"change\" that flows back to the client's own key keeps the original purchase data (Rn 56).",
+    "destination": "Exact wording retained; current LF75, Private sales: selling, swapping and paying with crypto (§ 23 EStG)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 76,
+    "section": "Private sales: selling, swapping and paying with crypto (§ 23 EStG)",
+    "wording": "- **Gifts.** A gift is not a sale by the giver. The recipient takes over the giver's purchase ([§ 23(1) sentence 3 EStG](https://www.gesetze-im-internet.de/estg/__23.html); Rn 75), so the giver's purchase date counts for the one-year test.",
+    "destination": "Exact wording retained; current LF76, Private sales: selling, swapping and paying with crypto (§ 23 EStG)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 77,
+    "section": "Private sales: selling, swapping and paying with crypto (§ 23 EStG)",
+    "wording": "- **Market price.** The price on a trading platform or a web price list (Rn 43). A documented daily price is accepted \"bis auf Weiteres\" if applied evenly: one source and one method for cost and sale price (Rn 91).",
+    "destination": "Exact wording retained; current LF77, Private sales: selling, swapping and paying with crypto (§ 23 EStG)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 81,
+    "section": "Which units were sold (Rn 61 and 62)",
+    "wording": "This matches de-capital-gains.",
+    "destination": "Exact wording retained; current LF81, Which units were sold (Rn 61 and 62)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 83,
+    "section": "Which units were sold (Rn 61 and 62)",
+    "wording": "- **Individual identification first (Einzelbetrachtung).** Where the client can show which units were sold, those units count.",
+    "destination": "Exact wording retained; current LF83, Which units were sold (Rn 61 and 62)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 84,
+    "section": "Which units were sold (Rn 61 and 62)",
+    "wording": "- **If that is not possible:** for the HOLDING PERIOD, the first-bought units of that coin (for example Bitcoin or Ether) count as sold first; for the VALUE, the average-cost method (Durchschnittsmethode) applies. As a simplification, first in, first out may be used for the value as well.",
+    "destination": "Exact wording retained; current LF84, Which units were sold (Rn 61 and 62)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 85,
+    "section": "Which units were sold (Rn 61 and 62)",
+    "wording": "- **Per wallet:** \"Es gilt eine walletbezogene Betrachtung.\" There is no single queue across all wallets.",
+    "destination": "Exact wording retained; current LF85, Which units were sold (Rn 61 and 62)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 86,
+    "section": "Which units were sold (Rn 61 and 62)",
+    "wording": "- **Per coin:** each coin name in a wallet carries its own choice.",
+    "destination": "Exact wording retained; current LF86, Which units were sold (Rn 61 and 62)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 87,
+    "section": "Which units were sold (Rn 61 and 62)",
+    "wording": "- **Keep it.** Inside a wallet, the chosen method stays until every unit of that coin in that wallet has been sold. After a full sale and a new purchase, the method may be changed.",
+    "destination": "Exact wording retained; current LF87, Which units were sold (Rn 61 and 62)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 88,
+    "section": "Which units were sold (Rn 61 and 62)",
+    "wording": "- **Document it:** the method per wallet and coin, and reallocations within wallets (Rn 103).",
+    "destination": "Exact wording retained; current LF88, Which units were sold (Rn 61 and 62)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 89,
+    "section": "Which units were sold (Rn 61 and 62)",
+    "wording": "- LIFO and \"highest in, first out\" are not among the methods the letter offers.",
+    "destination": "Exact wording retained; current LF89, Which units were sold (Rn 61 and 62)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 93,
+    "section": "Losses from private sales",
+    "wording": "- Losses from private sales offset only gains from private sales of the same year, up to those gains. They cannot be set against wages, business income, investment income or § 22 Nr. 3 income ([§ 23(3) sentence 7 EStG](https://www.gesetze-im-internet.de/estg/__23.html)).",
+    "destination": "Exact wording retained; current LF93, Losses from private sales"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 94,
+    "section": "Losses from private sales",
+    "wording": "- What is left reduces private-sales gains of the year before or of later years, under the rules of § 10d EStG; the remaining loss is formally determined (§ 23(3) sentence 8 EStG). On application the carry-back is waived altogether; the law allows no partial waiver (\"insgesamt abzusehen\", [§ 10d(1) sentence 6 EStG](https://www.gesetze-im-internet.de/estg/__10d.html)). Declare losses even in a year with no tax, so the loss is recorded.",
+    "destination": "Exact wording retained; current LF94, Losses from private sales"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 95,
+    "section": "Losses from private sales",
+    "wording": "- Is the Freigrenze tested before or after losses carried in from other years? The law tests the \"Gesamtgewinn\" of the year; how carried-in losses interact with the limit is a \"check\" point for a Steuerberater.",
+    "destination": "Exact wording retained; current LF95, Losses from private sales"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 101,
+    "section": "Staking and lending (§ 22 Nr. 3 EStG)",
+    "wording": "- **Passive staking** (a staking pool or platform staking, without creating blocks oneself) is \"in der Regel\" income from services under § 22 Nr. 3 EStG (Rn 48). Running a masternode or creating blocks oneself (forging) follows the mining rules below (Rn 50).",
+    "destination": "Exact wording retained; current LF101, Staking and lending (§ 22 Nr. 3 EStG)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 102,
+    "section": "Staking and lending (§ 22 Nr. 3 EStG)",
+    "wording": "- **Lending** income is § 22 Nr. 3 income (Rn 65): coins are let out for a time for a fee.",
+    "destination": "Exact wording retained; current LF102, Staking and lending (§ 22 Nr. 3 EStG)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 103,
+    "section": "Staking and lending (§ 22 Nr. 3 EStG)",
+    "wording": "- **Value.** Each reward is taken at its euro market price when received (Rn 48, 65), or at a consistent daily price (Rn 91). Simplification: during the year the time the reward is booked into the wallet on claiming may be used; rewards not yet claimed count at the latest at the end of the calendar year (Rn 48a).",
+    "destination": "Exact wording retained; current LF103, Staking and lending (§ 22 Nr. 3 EStG)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 104,
+    "section": "Staking and lending (§ 22 Nr. 3 EStG)",
+    "wording": "- **Freigrenze.** Income from services is untaxed if it is \"weniger als 256 Euro im Kalenderjahr\" (§ 22 Nr. 3 sentence 2 EStG). It covers ALL § 22 Nr. 3 income of the person together: staking, lending, private mining, airdrops received for a service, and non-crypto income such as occasional commissions. It is tested on income after costs (receipts less Werbungskosten), and at or above the limit the whole amount is taxed.",
+    "destination": "Exact wording retained; current LF104, Staking and lending (§ 22 Nr. 3 EStG)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 105,
+    "section": "Staking and lending (§ 22 Nr. 3 EStG)",
+    "wording": "- **Losses** from services cannot be set against other income; they reduce § 22 Nr. 3 income of the year before or of later years under § 10d EStG (§ 22 Nr. 3 sentences 3 and 4).",
+    "destination": "Exact wording retained; current LF105, Staking and lending (§ 22 Nr. 3 EStG)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 106,
+    "section": "Staking and lending (§ 22 Nr. 3 EStG)",
+    "wording": "- **The rewards themselves.** Each reward counts as purchased (Rn 54, 65), so each starts its own one-year period, and a later sale within that period is a private sale.",
+    "destination": "Exact wording retained; current LF106, Staking and lending (§ 22 Nr. 3 EStG)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 107,
+    "section": "Staking and lending (§ 22 Nr. 3 EStG)",
+    "wording": "- **The staked or lent coins.** For currency tokens the one-year period is NOT extended to ten years (Rn 63). The statute extends the period to ten years for other assets \"aus deren Nutzung als Einkunftsquelle zumindest in einem Kalenderjahr Einkünfte erzielt werden\" ([§ 23(1) sentence 1 no. 2 sentence 4 EStG](https://www.gesetze-im-internet.de/estg/__23.html)). The letter excludes only currency tokens from that rule, so a staked or lent utility token or other non-currency token can fall under the ten-year period. Refer.",
+    "destination": "Exact wording retained; current LF107, Staking and lending (§ 22 Nr. 3 EStG)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 108,
+    "section": "Staking and lending (§ 22 Nr. 3 EStG)",
+    "wording": "- **Lent coins coming back.** The letter does not say whether the return of lent coins is a sale (Rn 26, 65). \"Check\".",
+    "destination": "Exact wording retained; current LF108, Staking and lending (§ 22 Nr. 3 EStG)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 112,
+    "section": "Mining and forging (block creation)",
+    "wording": "- **Mining and forging are purchases**: block reward and transaction fees are both received in exchange for a service (Rn 33, 34, 42).",
+    "destination": "Exact wording retained; current LF112, Mining and forging (block creation)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 113,
+    "section": "Mining and forging (block creation)",
+    "wording": "- **Business or not.** Block creation is a business under [§ 15(2) EStG](https://www.gesetze-im-internet.de/estg/__15.html) when independent, lasting (set up to be repeated, Rn 36), able to make a profit over time (Rn 37) and taking part in general trade, which offering computing power to the network already is (Rn 38). It is not private asset management (Rn 39). A mining pool can be a partnership depending on the contract; a staking pool is as a rule not one (Rn 40).",
+    "destination": "Exact wording retained; current LF113, Mining and forging (block creation)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 114,
+    "section": "Mining and forging (block creation)",
+    "wording": "- **As a business:** coins received are valued at market price when received (Rn 43). With a cash-basis profit statement the receipt is business income, and the coins' cost is deducted only when they are sold or withdrawn (Rn 44). Trade tax and bookkeeping follow; refer to a business skill.",
+    "destination": "Exact wording retained; current LF114, Mining and forging (block creation)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 115,
+    "section": "Mining and forging (block creation)",
+    "wording": "- **Not a business**, for example because it is not lasting: § 22 Nr. 3 income ([Rn 45](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2)), valued at market price when received. Hardware and software (by depreciation where needed) and electricity are deductible costs (Rn 47). The EUR 256 limit above applies together with all other income from services (Rn 45).",
+    "destination": "Exact wording retained; current LF115, Mining and forging (block creation)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 119,
+    "section": "Airdrops (Rn 70 to 75)",
+    "wording": "- **Income only for a service.** An airdrop is § 22 Nr. 3 income where the client has to do something for it: for example naming the airdrop or the project in social media posts, uploading own pictures or videos (Rn 70), or handing over personal data beyond what the technical transfer needs; the public key alone is enough for a transfer (Rn 71).",
+    "destination": "Exact wording retained; current LF119, Airdrops (Rn 70 to 75)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 120,
+    "section": "Airdrops (Rn 70 to 75)",
+    "wording": "- **Chance.** Where chance also decides who receives, the link between service and reward is broken or overlaid (Rn 72).",
+    "destination": "Exact wording retained; current LF120, Airdrops (Rn 70 to 75)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 121,
+    "section": "Airdrops (Rn 70 to 75)",
+    "wording": "- **No service at all:** a gift may be possible, and the gift tax rules must be considered (Rn 74). Refer.",
+    "destination": "Exact wording retained; current LF121, Airdrops (Rn 70 to 75)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 122,
+    "section": "Airdrops (Rn 70 to 75)",
+    "wording": "- **Value:** market price when received; if no market price can be found yet, a value of zero is accepted (Rn 73).",
+    "destination": "Exact wording retained; current LF122, Airdrops (Rn 70 to 75)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 123,
+    "section": "Airdrops (Rn 70 to 75)",
+    "wording": "- **Cost for a later sale.** An airdrop received for a service is also a purchase. Its cost is the value of the data or action given, presumed (rebuttably) to equal the market price of the tokens (Rn 75).",
+    "destination": "Exact wording retained; current LF123, Airdrops (Rn 70 to 75)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 127,
+    "section": "Hard forks (Rn 67 and 68)",
+    "wording": "- A hard fork does NOT create § 22 Nr. 3 income (Rn 68).",
+    "destination": "Exact wording retained; current LF127, Hard forks (Rn 67 and 68)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 128,
+    "section": "Hard forks (Rn 67 and 68)",
+    "wording": "- Buying coins always includes a purchase of the coins a later fork creates. The cost of the original coins is split between old and new coins in the ratio of their market prices at the time of the fork. If the new coins have no value, all the cost stays with the old coins (Rn 67).",
+    "destination": "Exact wording retained; current LF128, Hard forks (Rn 67 and 68)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 129,
+    "section": "Hard forks (Rn 67 and 68)",
+    "wording": "- The new coins take the purchase date of the original coins. A sale of the new coins is a private sale only if not more than one year lies between the purchase of the ORIGINAL coins and the sale (Rn 68). New coins from long-held originals can therefore be sold outside § 23 at once.",
+    "destination": "Exact wording retained; current LF129, Hard forks (Rn 67 and 68)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 133,
+    "section": "Utility tokens, security tokens and ICOs",
+    "wording": "- **Utility tokens.** Redeeming a token for the product or service it stands for is not a sale (Rn 79). Selling a purchased utility token can be a private sale, also where it is used as a means of exchange (Rn 80).",
+    "destination": "Exact wording retained; current LF133, Utility tokens, security tokens and ICOs"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 134,
+    "section": "Utility tokens, security tokens and ICOs",
+    "wording": "- **Security tokens** can be securities or other financial instruments; current income and gains can then be investment income under § 20 EStG at the flat rate, depending on the token's terms (Rn 81 to 86). Refer; see de-capital-gains.",
+    "destination": "Exact wording retained; current LF134, Utility tokens, security tokens and ICOs"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 135,
+    "section": "Utility tokens, security tokens and ICOs",
+    "wording": "- **ICO.** Tokens bought in an ICO for euro or other coins are purchased (Rn 54); cost is what was given (Rn 59). The issuer's side is outside this skill (Rn 76).",
+    "destination": "Exact wording retained; current LF135, Utility tokens, security tokens and ICOs"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 139,
+    "section": "NFTs",
+    "wording": "The letter says: \"Auf die Besonderheiten nicht-fungibler Kryptowerte (sog. Non-Fungible-Token, NFT) wird in der vorliegenden Fassung des BMF-Schreibens nicht eingegangen\" (Rn 5). The ministry's notice page for the letter also says NFTs and liquidity mining are not yet covered and that the letter will be added to over time. The law is therefore unsettled: the private-sales rule for \"other assets\" in § 23 EStG is the obvious starting point for an NFT bought and sold privately, but the ministry has not confirmed it, and income from creating or licensing NFTs may be business or other income. Refer, and check the ministry's site for a newer version of the letter.",
+    "destination": "Exact wording retained; current LF139, NFTs"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 143,
+    "section": "Other points the letter does not settle",
+    "wording": "Liquidity pools and liquidity mining, yield farming, wrapped tokens, governance rewards, stablecoins as such, derivatives and leveraged trading, and lost, stolen or scammed coins have no rule in the letter. A § 23 loss needs a sale, a transfer to a third party for something in return (Rn 54, 57); the letter mentions hacks only as a records risk that falls on the client (Rn 89). Do not tell a client that a lost key, a hack or a scam gives a deductible loss. Refer all of these.",
+    "destination": "Exact wording retained; current LF143, Other points the letter does not settle"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 147,
+    "section": "Records and duties to cooperate (Rn 87 to 105)",
+    "wording": "For crypto held privately the general duties of Rn 87 to 92 apply (Rn 100).",
+    "destination": "Exact wording retained; current LF147, Records and duties to cooperate (Rn 87 to 105)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 149,
+    "section": "Records and duties to cooperate (Rn 87 to 105)",
+    "wording": "- **Truth and cooperation.** Returns must be made truthfully to the best of the client's knowledge ([§ 150(2) AO](https://www.gesetze-im-internet.de/ao_1977/__150.html)); the client must help establish the facts ([§ 90 AO](https://www.gesetze-im-internet.de/ao_1977/__90.html)) (Rn 88).",
+    "destination": "Exact wording retained; current LF149, Records and duties to cooperate (Rn 87 to 105)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 150,
+    "section": "Records and duties to cooperate (Rn 87 to 105)",
+    "wording": "- **Blockchain data is the client's burden:** a public key alone is not evidence (Rn 87).",
+    "destination": "Exact wording retained; current LF150, Records and duties to cooperate (Rn 87 to 105)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 151,
+    "section": "Records and duties to cooperate (Rn 87 to 105)",
+    "wording": "- **Extended duty for foreign and decentralised platforms.** Trading on a central platform run from abroad triggers the extended duty of § 90(2) AO: the client must clear up the facts and obtain the evidence, in particular by downloading the platforms' transaction overviews regularly and in full. Missing records and lost data, for example after a platform's insolvency or a hack, count against the client. The same applies as a rule to decentralised platforms (Rn 89).",
+    "destination": "Exact wording retained; current LF151, Records and duties to cooperate (Rn 87 to 105)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 152,
+    "section": "Records and duties to cooperate (Rn 87 to 105)",
+    "wording": "- **Tax reports.** A report from a private provider can be the basis of the assessment if it looks plausible: nothing obviously missing (costs, wallets, platforms), consistent in itself, and not at odds with what the office knows. As a rule the report settings (prices, lot method such as first in, first out) and the tax reasoning must be shown; manual changes must be marked and explained (Rn 90). The office can ask for the files behind the report (Rn 101).",
+    "destination": "Exact wording retained; current LF152, Records and duties to cooperate (Rn 87 to 105)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 153,
+    "section": "Records and duties to cooperate (Rn 87 to 105)",
+    "wording": "- **Minimum per sale.** Records should let each private sale be traced on its own: coin name or ticker, number of units, the gain with cost and sale price (or times and prices of purchase and sale), and the holding period (Rn 102). For lending and other services: start, end, object, fee and terms (Rn 102).",
+    "destination": "Exact wording retained; current LF153, Records and duties to cooperate (Rn 87 to 105)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 154,
+    "section": "Records and duties to cooperate (Rn 87 to 105)",
+    "wording": "- **What the office may ask for (Rn 101, 103, 104):** for each purchase and sale the time, amount, type, platform, euro values and price source; the lot method per wallet and coin and reallocations within wallets; records of reward income (for an airdrop, its conditions); and in a single case the source of funds, wallet balances at 31 December of the year and the year before, wallet addresses, transaction hashes, platform account details, and screenshots once the office has used its own means such as a block explorer.",
+    "destination": "Exact wording retained; current LF154, Records and duties to cooperate (Rn 87 to 105)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 155,
+    "section": "Records and duties to cooperate (Rn 87 to 105)",
+    "wording": "- **Estimation.** Where the office cannot work out the figures it estimates them under [§ 162 AO](https://www.gesetze-im-internet.de/ao_1977/__162.html). The estimate must aim at the real facts and must not be used as a penalty (Rn 92).",
+    "destination": "Exact wording retained; current LF155, Records and duties to cooperate (Rn 87 to 105)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 156,
+    "section": "Records and duties to cooperate (Rn 87 to 105)",
+    "wording": "- **How long to keep records.** A private investor whose positive surplus income (wages, investment income, letting and § 22 income, which includes private sales) is more than the § 147a AO threshold in the figures table in a calendar year must keep the records on those receipts and costs for six years ([§ 147a AO](https://www.gesetze-im-internet.de/ao_1977/__147a.html); Rn 105). For spouses assessed jointly, each spouse's own sum counts. Below the threshold no fixed period is printed, but the purchase record is needed whenever a unit is sold, however long ago it was bought (Rn 102), and assessments stay open for four years as a rule, ten where tax was evaded and five where it was reduced through gross negligence ([§ 169(2) AO](https://www.gesetze-im-internet.de/ao_1977/__169.html)).",
+    "destination": "Exact wording retained; current LF156, Records and duties to cooperate (Rn 87 to 105)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 160,
+    "section": "Platform reporting from 2026 (DAC8 / CARF)",
+    "wording": "The enacted Kryptowerte-Steuertransparenz-Gesetz (KStTG) implements DAC8 and the OECD's CARF.",
+    "destination": "Exact wording retained; current LF160, Platform reporting from 2026 (DAC8 / CARF)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 162,
+    "section": "Platform reporting from 2026 (DAC8 / CARF)",
+    "wording": "- **From 2026.** Providers' duties to identify and report users apply \"erstmals für das Kalenderjahr 2026\" ([§ 21 KStTG](https://www.gesetze-im-internet.de/ksttg/__21.html)). The reporting period is the calendar year ([§ 10 KStTG](https://www.gesetze-im-internet.de/ksttg/__10.html)).",
+    "destination": "Exact wording retained; current LF162, Platform reporting from 2026 (DAC8 / CARF)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 163,
+    "section": "Platform reporting from 2026 (DAC8 / CARF)",
+    "wording": "- **When.** Providers report to the Federal Central Tax Office (BZSt) by 31 July for the previous reporting period ([§ 9 KStTG](https://www.gesetze-im-internet.de/ksttg/__9.html)), so the first reports for 2026 are due by 31 July 2027.",
+    "destination": "Exact wording retained; current LF163, Platform reporting from 2026 (DAC8 / CARF)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 164,
+    "section": "Platform reporting from 2026 (DAC8 / CARF)",
+    "wording": "- **What.** Identity data, and per crypto asset the aggregated amounts, units and number of transactions by type, such as sales for fiat money and swaps ([§ 11 KStTG](https://www.gesetze-im-internet.de/ksttg/__11.html)).",
+    "destination": "Exact wording retained; current LF164, Platform reporting from 2026 (DAC8 / CARF)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 165,
+    "section": "Platform reporting from 2026 (DAC8 / CARF)",
+    "wording": "- **Customers who do not cooperate.** A provider must remind, then warn, a user who does not supply the requested information. For a customer relationship begun by 31 December 2025, the provider must then block reportable transactions at the latest 90 days, but not before 60 days, after the original request ([§ 8 KStTG](https://www.gesetze-im-internet.de/ksttg/__8.html)).",
+    "destination": "Exact wording retained; current LF165, Platform reporting from 2026 (DAC8 / CARF)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 166,
+    "section": "Platform reporting from 2026 (DAC8 / CARF)",
+    "wording": "- The client must still declare every taxable sale and reward (Rn 88).",
+    "destination": "Exact wording retained; current LF166, Platform reporting from 2026 (DAC8 / CARF)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 170,
+    "section": "Boundary and exception table",
+    "wording": "| Situation | Treatment | Source |",
+    "destination": "Exact wording retained; current LF170, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 172,
+    "section": "Boundary and exception table",
+    "wording": "| Currency token sold after MORE than one year | Outside § 23, not taxed | § 23(1) s. 1 no. 2 EStG; Rn 53 |",
+    "destination": "Exact wording retained; current LF172, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 173,
+    "section": "Boundary and exception table",
+    "wording": "| Sold on the same calendar date one year after purchase | Still \"nicht mehr als ein Jahr\": taxable. The day after that date is outside | § 23 EStG; [§ 108(1) AO](https://www.gesetze-im-internet.de/ao_1977/__108.html) (periods follow the Civil Code) |",
+    "destination": "Exact wording retained; current LF173, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 174,
+    "section": "Boundary and exception table",
+    "wording": "| Private-sales total, or § 22 Nr. 3 income after costs, exactly at its limit | The WHOLE amount is taxed (\"weniger als\") | § 23(3) s. 5; § 22 Nr. 3 s. 2 EStG |",
+    "destination": "Exact wording retained; current LF174, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 175,
+    "section": "Boundary and exception table",
+    "wording": "| Currency token staked or lent | No ten-year extension | Rn 63 |",
+    "destination": "Exact wording retained; current LF175, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 176,
+    "section": "Boundary and exception table",
+    "wording": "| Non-currency token staked or lent | Ten-year period may apply. Refer | § 23(1) s. 1 no. 2 s. 4 EStG |",
+    "destination": "Exact wording retained; current LF176, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 177,
+    "section": "Boundary and exception table",
+    "wording": "| Move between own wallets | Not a sale; document it | Rn 54, 62, 104 |",
+    "destination": "Exact wording retained; current LF177, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 178,
+    "section": "Boundary and exception table",
+    "wording": "| Swap coin for coin | Sale and new purchase; new one-year period | Rn 54, 55, 58, 59 |",
+    "destination": "Exact wording retained; current LF178, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 179,
+    "section": "Boundary and exception table",
+    "wording": "| Lot cannot be identified | First in, first out for holding period; average cost for value (or first in, first out) | Rn 61 |",
+    "destination": "Exact wording retained; current LF179, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 180,
+    "section": "Boundary and exception table",
+    "wording": "| Same coin in two wallets | Separate lots and methods per wallet | Rn 62 |",
+    "destination": "Exact wording retained; current LF180, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 181,
+    "section": "Boundary and exception table",
+    "wording": "| Gift received | Giver's purchase date and cost carry over | § 23(1) s. 3 EStG; Rn 75 |",
+    "destination": "Exact wording retained; current LF181, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 182,
+    "section": "Boundary and exception table",
+    "wording": "| Inherited coins | \"Check\" as a whole: § 23(1) s. 3 names only the single successor (Einzelrechtsnachfolger, a gift), not an heir. Refer | § 23(1) s. 3 EStG |",
+    "destination": "Exact wording retained; current LF182, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 183,
+    "section": "Boundary and exception table",
+    "wording": "| Hard fork coins | No income; cost split by market prices; original purchase date | Rn 67, 68 |",
+    "destination": "Exact wording retained; current LF183, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 184,
+    "section": "Boundary and exception table",
+    "wording": "| Airdrop with no service | No § 22 Nr. 3 income; gift tax may apply. Refer | Rn 74 |",
+    "destination": "Exact wording retained; current LF184, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 185,
+    "section": "Boundary and exception table",
+    "wording": "| Airdrop with no market price at receipt | Value zero accepted | Rn 73 |",
+    "destination": "Exact wording retained; current LF185, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 186,
+    "section": "Boundary and exception table",
+    "wording": "| Unclaimed staking rewards at 31 December | Count at the latest at year end | Rn 48a |",
+    "destination": "Exact wording retained; current LF186, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 187,
+    "section": "Boundary and exception table",
+    "wording": "| Redeeming a utility token for its product | Not a sale | Rn 79 |",
+    "destination": "Exact wording retained; current LF187, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 188,
+    "section": "Boundary and exception table",
+    "wording": "| Spouses assessed jointly | Each spouse's own sales and services are tested against the limits; the allowed official sources for this skill do not print that sentence. \"Check\" | § 23(3) s. 5; § 22 Nr. 3 EStG |",
+    "destination": "Exact wording retained; current LF188, Boundary and exception table"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 192,
+    "section": "Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))",
+    "wording": "Amounts below are example inputs, not official figures. Fees are ignored unless stated.",
+    "destination": "Exact wording retained; current LF192, Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 194,
+    "section": "Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))",
+    "wording": "**Case 1: two lots in one wallet, lot not identifiable (2026).** Wallet A holds two Bitcoin: one bought 10 January 2025 for EUR 40,000, one bought 1 September 2025 for EUR 60,000. The client sells one Bitcoin on 5 March 2026 for EUR 70,000 and cannot show which unit it was.",
+    "destination": "Exact wording retained; current LF194, Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 195,
+    "section": "Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))",
+    "wording": "- Holding period: first in, first out, so the January 2025 unit counts as sold. Held more than one year: outside § 23, not taxed (Rn 61).",
+    "destination": "Exact wording retained; current LF195, Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 196,
+    "section": "Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))",
+    "wording": "- The client sells the second Bitcoin on 1 August 2026 for EUR 65,000. The unit left for the holding period is the September 2025 one: held not more than one year, so the sale is taxable.",
+    "destination": "Exact wording retained; current LF196, Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 197,
+    "section": "Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))",
+    "wording": "- Value with the average method: cost is the average of both units, EUR 50,000, so the gain is EUR 15,000. With the first-in-first-out simplification for value, the cost is EUR 60,000 and the gain is EUR 5,000. The client must use the same method throughout for Bitcoin in Wallet A until it is empty (Rn 62), and document it (Rn 103).",
+    "destination": "Exact wording retained; current LF197, Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 198,
+    "section": "Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))",
+    "wording": "- Either gain is at or above the private-sales limit, so the whole gain is taxed at the personal rate.",
+    "destination": "Exact wording retained; current LF198, Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 200,
+    "section": "Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))",
+    "wording": "**Case 2: the cliff (2026).** The client's only private sale in 2026 is a coin held eight months, gain EUR 999: below EUR 1,000, tax-free. If the client also sold gold within a year at a gain of EUR 200, the total is EUR 1,199 and the whole EUR 1,199 is taxed, not just the part above the limit ([§ 23(3) sentence 5 EStG](https://www.gesetze-im-internet.de/estg/__23.html)). Losses from other private sales of the same year are set off first (§ 23(3) sentence 7).",
+    "destination": "Exact wording retained; current LF200, Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 202,
+    "section": "Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))",
+    "wording": "**Case 3: staking rewards and the EUR 256 limit (2026).** Passive staking rewards worth EUR 300 at receipt; platform fees for the staking of EUR 60; no other § 22 Nr. 3 income. Income after costs is EUR 240: below the limit, not taxed. If the fees had been EUR 40, income would be EUR 260 and all EUR 260 is taxed. Each reward still starts its own one-year period for a later sale (Rn 48, 54; [§ 22 Nr. 3 EStG](https://www.gesetze-im-internet.de/estg/__22.html)).",
+    "destination": "Exact wording retained; current LF202, Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 204,
+    "section": "Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))",
+    "wording": "**Case 4: an airdrop for personal data plus staking (2026).** The client had to give an email address and date of birth to receive airdropped tokens worth EUR 150 at receipt, and also received staking rewards worth EUR 200, with no costs. The airdrop is § 22 Nr. 3 income (Rn 71). Total income from services EUR 350: at or above the limit, all EUR 350 is taxed. The airdropped tokens have a cost of EUR 150 for a later sale (Rn 75).",
+    "destination": "Exact wording retained; current LF204, Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 206,
+    "section": "Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))",
+    "wording": "**Case 5: hard fork (2026).** Coins bought 1 February 2026 for EUR 10,000. A hard fork on 1 May 2026 creates new coins. At the fork, the old coins are worth EUR 18,000 and the new coins EUR 2,000, together EUR 20,000. Cost split: old coins EUR 9,000, new coins EUR 1,000 (Rn 67). No income at the fork (Rn 68). The new coins are sold on 1 July 2026 for EUR 2,500: not more than one year after the purchase of the ORIGINAL coins, so a private sale with a gain of EUR 1,500. At or above the limit: taxed. Had the original coins been bought in 2024, the sale would be outside § 23.",
+    "destination": "Exact wording retained; current LF206, Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 208,
+    "section": "Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))",
+    "wording": "**Case 6: late 2025 return with crypto gains.** A client filing without an adviser has taxable 2025 crypto gains and has not filed. The deadline was 31 July 2026: file now. A surcharge of 0.25% of the tax less prepayments and withheld tax per started month, at least EUR 25 per month, may be charged; it is compulsory after 14 months from the year end unless the deadline was extended, the tax is zero or negative, or the tax does not exceed the prepayments and withheld tax ([§ 152 AO](https://www.gesetze-im-internet.de/ao_1977/__152.html)).",
+    "destination": "Exact wording retained; current LF208, Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 212,
+    "section": "Tax year 2025 (returns being filed now)",
+    "wording": "- **Same rules.** The Freigrenze was EUR 1,000 and the § 22 Nr. 3 limit EUR 256 in 2025 as in 2026 ([§ 23](https://www.gesetze-im-internet.de/estg/__23.html), [§ 22](https://www.gesetze-im-internet.de/estg/__22.html)). The one-year period, the lot rules and the staking, lending, mining, airdrop and fork rules above apply to 2025.",
+    "destination": "Exact wording retained; current LF212, Tax year 2025 (returns being filed now)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 213,
+    "section": "Tax year 2025 (returns being filed now)",
+    "wording": "- **Which letter.** The letter of 6 March 2025 applies from its publication in the Federal Tax Gazette to all open cases. Price determinations under the rules of the 2022 letter, and records that do not follow Rn 87 and following, are not objected to for assessment periods up to and including 2024 (Rn 106). So for 2025 returns the new record and price rules apply in full.",
+    "destination": "Exact wording retained; current LF213, Tax year 2025 (returns being filed now)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 214,
+    "section": "Tax year 2025 (returns being filed now)",
+    "wording": "- **Forms and deadlines.** Use the 2025 Anlage SO; deadlines are in \"Filing and payment\".",
+    "destination": "Exact wording retained; current LF214, Tax year 2025 (returns being filed now)"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 218,
+    "section": "When to refuse or refer",
+    "wording": "- Crypto held in a business or a company, commercial mining or forging, or trading so frequent it may be a business (Rn 35 to 44, 52). Token issuers (Rn 76).",
+    "destination": "Exact wording retained; current LF218, When to refuse or refer"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 219,
+    "section": "When to refuse or refer",
+    "wording": "- Wages or bonuses paid in crypto; the letter leaves employment income out.",
+    "destination": "Exact wording retained; current LF219, When to refuse or refer"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 220,
+    "section": "When to refuse or refer",
+    "wording": "- NFTs, liquidity pools and liquidity mining, yield farming, wrapped tokens, governance rewards, stablecoin questions: no rule in the letter.",
+    "destination": "Exact wording retained; current LF220, When to refuse or refer"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 221,
+    "section": "When to refuse or refer",
+    "wording": "- Security tokens (Rn 81 to 86). Derivatives, futures, contracts for difference and leveraged trading, which the letter does not cover. See de-capital-gains.",
+    "destination": "Exact wording retained; current LF221, When to refuse or refer"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 222,
+    "section": "When to refuse or refer",
+    "wording": "- A non-currency token that was staked or lent (possible ten-year period).",
+    "destination": "Exact wording retained; current LF222, When to refuse or refer"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 223,
+    "section": "When to refuse or refer",
+    "wording": "- Lost, stolen or scammed coins, and worthless tokens.",
+    "destination": "Exact wording retained; current LF223, When to refuse or refer"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 224,
+    "section": "When to refuse or refer",
+    "wording": "- Airdrops with no service (possible gift tax), gifts and inheritances beyond the carry-over of purchase data.",
+    "destination": "Exact wording retained; current LF224, When to refuse or refer"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 225,
+    "section": "When to refuse or refer",
+    "wording": "- Clients not fully liable to German tax for the whole year, moves into or out of Germany, and treaty questions.",
+    "destination": "Exact wording retained; current LF225, When to refuse or refer"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 226,
+    "section": "When to refuse or refer",
+    "wording": "- Past years with undeclared crypto income. A client who finds before the assessment period ends that a return was wrong or incomplete and that tax was or may be underpaid must report it without delay and correct it ([§ 153(1) AO](https://www.gesetze-im-internet.de/ao_1977/__153.html)). Voluntary disclosure and any penalty question go to a Steuerberater or lawyer.",
+    "destination": "Exact wording retained; current LF226, When to refuse or refer"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 227,
+    "section": "When to refuse or refer",
+    "wording": "- No usable records: the office may estimate (§ 162 AO; Rn 92).",
+    "destination": "Exact wording retained; current LF227, When to refuse or refer"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 231,
+    "section": "Filing and payment",
+    "wording": "- **Who must file.** A person with no wages must file if total income is above the basic allowance (twice that for spouses assessed jointly) ([§ 56 EStDV](https://www.gesetze-im-internet.de/estdv_1955/__56.html)). A return is also compulsory if a remaining loss deduction was formally determined at the end of the previous year, for example a private-sales loss carried forward (§ 56 sentence 2 EStDV). An employee must be assessed if untaxed side income, such as taxable crypto gains or staking income, is more than the § 46(2) no. 1 EStG amount in the figures table; for an employee who is assessed, such income is deducted again if it is not more than that amount in total, and above it a regulation softens the step up to full taxation (§ 46(3) and (5), [§ 46 EStG](https://www.gesetze-im-internet.de/estg/__46.html)).",
+    "destination": "Exact wording retained; current LF231, Filing and payment"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 232,
+    "section": "Filing and payment",
+    "wording": "- **Where.** Anlage SO of the income tax return, filed through ELSTER: the \"Leistungen\" block for staking, lending, private mining and airdrops, the private-sales block for sales and swaps. Business mining goes on Anlage G with the profit statement. Follow the labels of the form for the year.",
+    "destination": "Exact wording retained; current LF232, Filing and payment"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 233,
+    "section": "Filing and payment",
+    "wording": "- **Gains below the limits and losses.** Declare losses from private sales so they can be carried; whether gains below the limits must be entered is set by the form instructions for each year (\"check\" on the current form).",
+    "destination": "Exact wording retained; current LF233, Filing and payment"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 234,
+    "section": "Filing and payment",
+    "wording": "- **Payment.** The tax on private crypto sales and rewards is set in the income tax assessment notice and paid as that notice says.",
+    "destination": "Exact wording retained; current LF234, Filing and payment"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 236,
+    "section": "Filing and payment",
+    "wording": "| Return | Deadline | Source |",
+    "destination": "Exact wording retained; current LF236, Filing and payment"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 238,
+    "section": "Filing and payment",
+    "wording": "| 2025 return, filed by the client | 31 July 2026, already passed. File now | [§ 149(2) AO](https://www.gesetze-im-internet.de/ao_1977/__149.html) |",
+    "destination": "Exact wording retained; current LF238, Filing and payment"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 239,
+    "section": "Filing and payment",
+    "wording": "| 2025 return, prepared by a Steuerberater | Last day of February 2027: 28 February 2027 is a Sunday, so Monday 1 March 2027 | § 149(3) AO; [§ 108(3) AO](https://www.gesetze-im-internet.de/ao_1977/__108.html) |",
+    "destination": "Exact wording retained; current LF239, Filing and payment"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 240,
+    "section": "Filing and payment",
+    "wording": "| 2026 return, filed by the client | 31 July 2027 is a Saturday, so Monday 2 August 2027 | § 149(2) AO; § 108(3) AO |",
+    "destination": "Exact wording retained; current LF240, Filing and payment"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 241,
+    "section": "Filing and payment",
+    "wording": "| 2026 return, prepared by a Steuerberater | Tuesday 29 February 2028 | § 149(3) AO |",
+    "destination": "Exact wording retained; current LF241, Filing and payment"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 243,
+    "section": "Filing and payment",
+    "wording": "The office can ask for an adviser-prepared return earlier (§ 149(4) AO). Late filing: surcharge of 0.25% of the tax less prepayments and withheld tax per started month, at least EUR 25 per month; compulsory if the return is not in within 14 months of the year end, unless the deadline was extended, the tax is zero or negative, or the tax \"die Summe der festgesetzten Vorauszahlungen und der anzurechnenden Steuerabzugsbeträge nicht übersteigt\" (§ 152(3) nos. 1 to 3, [§ 152 AO](https://www.gesetze-im-internet.de/ao_1977/__152.html)).",
+    "destination": "Exact wording retained; current LF243, Filing and payment"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 247,
+    "section": "Completion checklist",
+    "wording": "- [ ] Assets sorted by function; NFTs, security tokens and business holdings referred.",
+    "destination": "Exact wording retained; current LF247, Completion checklist"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 248,
+    "section": "Completion checklist",
+    "wording": "- [ ] Complete exports from every platform and wallet (Rn 89); every sale, swap and payment listed with coin, units, dates, euro values and price source (Rn 102, 103).",
+    "destination": "Exact wording retained; current LF248, Completion checklist"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 249,
+    "section": "Completion checklist",
+    "wording": "- [ ] Lot method recorded per wallet and coin and kept (Rn 61, 62); holding period tested per lot.",
+    "destination": "Exact wording retained; current LF249, Completion checklist"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 250,
+    "section": "Completion checklist",
+    "wording": "- [ ] Private-sales total per person tested against the EUR 1,000 limit ([§ 23](https://www.gesetze-im-internet.de/estg/__23.html)); losses set off within the box.",
+    "destination": "Exact wording retained; current LF250, Completion checklist"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 251,
+    "section": "Completion checklist",
+    "wording": "- [ ] § 22 Nr. 3 income after costs per person tested against the EUR 256 limit ([§ 22](https://www.gesetze-im-internet.de/estg/__22.html)), with all non-crypto income from services included.",
+    "destination": "Exact wording retained; current LF251, Completion checklist"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 252,
+    "section": "Completion checklist",
+    "wording": "- [ ] Staked or lent non-currency tokens flagged for the ten-year rule.",
+    "destination": "Exact wording retained; current LF252, Completion checklist"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 253,
+    "section": "Completion checklist",
+    "wording": "- [ ] Forks and airdrops handled under Rn 67 to 75.",
+    "destination": "Exact wording retained; current LF253, Completion checklist"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 254,
+    "section": "Completion checklist",
+    "wording": "- [ ] Tax report settings and manual changes documented (Rn 90).",
+    "destination": "Exact wording retained; current LF254, Completion checklist"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 255,
+    "section": "Completion checklist",
+    "wording": "- [ ] Filing duty and deadline checked; late-filing surcharge considered; earlier years checked for § 153 AO corrections.",
+    "destination": "Exact wording retained; current LF255, Completion checklist"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 256,
+    "section": "Completion checklist",
+    "wording": "- [ ] § 147a AO retention checked; records kept for as long as any unit bought is still held.",
+    "destination": "Exact wording retained; current LF256, Completion checklist"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 260,
+    "section": "Sources",
+    "wording": "- BMF letter of 6 March 2025 on crypto assets ([PDF](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2)).- EStG, EStDV, AO and KStTG sections on gesetze-im-internet.de, each linked where it is used above.",
+    "destination": "Exact wording retained; current LF260, Sources"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "old_lf": 262,
+    "section": "Sources",
+    "wording": "This skill is general information, not tax advice. Have a Steuerberater check a return before it is filed.",
+    "destination": "Exact wording retained; current LF262, Sources"
+  }
+]

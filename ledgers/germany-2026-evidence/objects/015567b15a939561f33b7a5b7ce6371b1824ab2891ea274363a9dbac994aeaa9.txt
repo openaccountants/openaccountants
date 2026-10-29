@@ -1,0 +1,1347 @@
+[
+  [
+    1,
+    12,
+    "--- name: germany-vat-return description: Use this skill whenever asked to prepare, review, or classify transactions for a German VAT return (Umsatzsteuer-Voran"
+  ],
+  [
+    14,
+    14,
+    "# German VAT return: the Umsatzsteuer-Voranmeldung"
+  ],
+  [
+    16,
+    20,
+    "How to read a German bank statement, classify each line for VAT and fill in the advance VAT return (Umsatzsteuer-Voranmeldung, UStVA, form USt 1 A) for a self-e"
+  ],
+  [
+    22,
+    22,
+    "## Section 1: Quick reference"
+  ],
+  [
+    24,
+    24,
+    "**Quick reference field table**"
+  ],
+  [
+    26,
+    37,
+    "| Field | Value | | --- | --- | | Country | Germany (Federal Republic of Germany) | | Return form | Umsatzsteuer-Voranmeldung, form USt 1 A, with form USt 1 H f"
+  ],
+  [
+    39,
+    39,
+    "**VAT rates on the 2026 return**"
+  ],
+  [
+    41,
+    46,
+    "| What | Rate | Note | | --- | --- | --- | | Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/"
+  ],
+  [
+    48,
+    49,
+    "The rates are set by § 12 UStG: https://www.gesetze-im-internet.de/ustg_1980/__12.html The zero rate is a rate, not an exemption, so the supplier keeps full inp"
+  ],
+  [
+    51,
+    51,
+    "**Average rates for farming and forestry businesses (§ 24 UStG), outside the scope of this Guide**"
+  ],
+  [
+    53,
+    57,
+    "| What | Rate | Note | | --- | --- | --- | | Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__24.html | | Forestry products other tha"
+  ],
+  [
+    59,
+    59,
+    "These rates are reviewed yearly and may be changed by regulation (§ 24(5) UStG)."
+  ],
+  [
+    61,
+    61,
+    "**Key UStVA Kennzahlen for 2026**"
+  ],
+  [
+    63,
+    63,
+    "Kennzahlen move between years. These are read off the 2026 form and its instructions."
+  ],
+  [
+    65,
+    100,
+    "| Line | Kz | What goes in it | | --- | --- | --- | | Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Ste"
+  ],
+  [
+    102,
+    102,
+    "**Conservative defaults**"
+  ],
+  [
+    104,
+    114,
+    "| Ambiguity | Default | | --- | --- | | Unknown rate on a sale | The standard rate | | Unknown VAT status of a purchase | Not deductible (no Vorsteuerabzug) | |"
+  ],
+  [
+    116,
+    116,
+    "**Red flag thresholds**"
+  ],
+  [
+    118,
+    119,
+    "Review prompts for the preparer, not rules of law. Set the money figures with the client and the reviewer, in proportion to the size of the business."
+  ],
+  [
+    121,
+    127,
+    "| Flag | Raise it when | | --- | --- | | HIGH single-transaction size | One line is large next to the period's turnover | | HIGH tax-delta on a single conservat"
+  ],
+  [
+    129,
+    129,
+    "## Section 2: Required inputs and refusal catalogue"
+  ],
+  [
+    131,
+    131,
+    "### Required inputs"
+  ],
+  [
+    133,
+    133,
+    "**Minimum viable.** The bank statement (Kontoauszug) for the period as CSV, PDF or pasted text, covering the whole filing period. Any German or international bu"
+  ],
+  [
+    135,
+    135,
+    "**Recommended.** Sales invoices for the period, especially for intra-EU services and tax-free supplies; purchase invoices for every input VAT claim, since the s"
+  ],
+  [
+    137,
+    137,
+    "**Ideal.** A complete invoice register, the EUeR or BWA, the previous period's UStVA, the Dauerfristverlaengerung status and the Sondervorauszahlung amount."
+  ],
+  [
+    139,
+    139,
+    "**Refusal policy if the minimum is missing: SOFT WARN.** With no bank statement at all, stop. With a statement but no invoices, proceed and record in the review"
+  ],
+  [
+    141,
+    141,
+    "### Germany-specific refusal catalogue"
+  ],
+  [
+    143,
+    143,
+    "These sit on top of the EU-wide refusals in `eu-vat-directive` Section 13. R-DE-2 and R-DE-3 are refusals: if one fires, stop, give the message verbatim and end"
+  ],
+  [
+    145,
+    149,
+    "- **R-DE-1: Kleinunternehmer § 19 UStG (pointer, not a refusal).** Trigger: the client is a Kleinunternehmer, or prior-year turnover was within EUR 25,000 and c"
+  ],
+  [
+    151,
+    151,
+    "## Section 3: Supplier pattern library (the lookup table)"
+  ],
+  [
+    153,
+    153,
+    "The deterministic pre-classifier. Where a counterparty matches a pattern, apply the treatment directly: the table is authoritative for the patterns it covers, w"
+  ],
+  [
+    155,
+    155,
+    "**How to read it.** Match case-insensitively on the counterparty name in the Kontoauszug. Where several patterns match, take the most specific. Where none match"
+  ],
+  [
+    157,
+    157,
+    "### 3.1 German banks (fees exempt: exclude)"
+  ],
+  [
+    159,
+    159,
+    "**3.1 German banks table**"
+  ],
+  [
+    161,
+    174,
+    "| Pattern | Treatment | Notes | | --- | --- | --- | | DEUTSCHE BANK | EXCLUDE | Exempt financial service, § 4 Nr. 8 UStG | | SPARKASSE, SPK, KREISSPARKASSE, STA"
+  ],
+  [
+    176,
+    176,
+    "### 3.2 German government, regulators, and statutory bodies (exclude entirely)"
+  ],
+  [
+    178,
+    178,
+    "**3.2 German government table**"
+  ],
+  [
+    180,
+    189,
+    "| Pattern | Treatment | Notes | | --- | --- | --- | | FINANZAMT, FA | EXCLUDE | Tax payment, not a supply | | BUNDESKASSE, BUNDESZENTRALAMT | EXCLUDE | Federal "
+  ],
+  [
+    191,
+    191,
+    "### 3.3 German utilities"
+  ],
+  [
+    193,
+    193,
+    "**3.3 German utilities table**"
+  ],
+  [
+    195,
+    203,
+    "| Pattern | Treatment | Kz | Notes | | --- | --- | --- | --- | | STADTWERKE | Domestic 19% | 66 | Electricity, gas, water | | TELEKOM, DEUTSCHE TELEKOM, T-MOBIL"
+  ],
+  [
+    205,
+    205,
+    "### 3.4 German insurance (exempt: exclude)"
+  ],
+  [
+    207,
+    207,
+    "**3.4 German insurance table**"
+  ],
+  [
+    209,
+    216,
+    "| Pattern | Treatment | Notes | | --- | --- | --- | | ALLIANZ | EXCLUDE | Exempt insurance, § 4 Nr. 10 UStG | | HUK-COBURG, HUK COBURG | EXCLUDE | Same | | DEVK"
+  ],
+  [
+    218,
+    218,
+    "### 3.5 German transport"
+  ],
+  [
+    220,
+    220,
+    "**3.5 German transport table**"
+  ],
+  [
+    222,
+    230,
+    "| Pattern | Treatment | Kz | Notes | | --- | --- | --- | --- | | DB, DEUTSCHE BAHN | Reduced rate for rail tickets | 66 | Rail: reduced-rated with no distance l"
+  ],
+  [
+    232,
+    232,
+    "### 3.6 German food/supermarkets (blocked unless hospitality)"
+  ],
+  [
+    234,
+    234,
+    "**3.6 German food/supermarkets table**"
+  ],
+  [
+    236,
+    244,
+    "| Pattern | Treatment | Notes | | --- | --- | --- | | ALDI, ALDI SUED, ALDI NORD | Default BLOCK input VAT | Personal provisioning. Deductible only where food i"
+  ],
+  [
+    246,
+    246,
+    "### 3.7 German rent"
+  ],
+  [
+    248,
+    248,
+    "**3.7 German rent table**"
+  ],
+  [
+    250,
+    255,
+    "| Pattern | Treatment | Kz | Notes | | --- | --- | --- | --- | | MIETE (commercial, landlord opted to charge VAT under § 9 UStG) | Domestic 19% | 66 | Landlord "
+  ],
+  [
+    257,
+    257,
+    "### 3.8 SaaS EU suppliers (reverse charge, Kz 46/47)"
+  ],
+  [
+    259,
+    259,
+    "Billed from entities in the rest of the EU, usually Ireland or Luxembourg, so § 13b(1) UStG applies to a § 3a(2) service. Self-assess the tax in Kz 46 and 47 an"
+  ],
+  [
+    261,
+    261,
+    "**3.8 SaaS EU suppliers table**"
+  ],
+  [
+    263,
+    275,
+    "| Pattern | Billing entity | Kz (base/output/input) | Notes | | --- | --- | --- | --- | | GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | 46/47/67 | "
+  ],
+  [
+    277,
+    277,
+    "### 3.9 SaaS non-EU suppliers (reverse charge, Kz 84 and 85)"
+  ],
+  [
+    279,
+    279,
+    "**3.9 SaaS non-EU suppliers table**"
+  ],
+  [
+    281,
+    291,
+    "| Pattern | Billing entity | Kz (base/output/input) | Notes | | --- | --- | --- | --- | | AWS | AWS EMEA SARL (LU), an EU entity | 46/47/67 | Established in the"
+  ],
+  [
+    293,
+    293,
+    "- **EU and non-EU foreign suppliers use DIFFERENT boxes.** A § 3a(2) service from a business established in the rest of the EU is § 13b(1) UStG, line 30: Kz 46 "
+  ],
+  [
+    295,
+    295,
+    "### 3.10 Payment processors"
+  ],
+  [
+    297,
+    297,
+    "**3.10 Payment processors table**"
+  ],
+  [
+    299,
+    305,
+    "| Pattern | Treatment | Notes | | --- | --- | --- | | STRIPE (transaction fees) | EXCLUDE (exempt) | Exempt financial service, § 4 Nr. 8 UStG | | PAYPAL (transa"
+  ],
+  [
+    307,
+    307,
+    "### 3.11 Professional services (Germany)"
+  ],
+  [
+    309,
+    309,
+    "**3.11 Professional services table**"
+  ],
+  [
+    311,
+    318,
+    "| Pattern | Treatment | Kz | Notes | | --- | --- | --- | --- | | STEUERBERATER, STEUERKANZLEI, TAX ADVISOR | Domestic 19% | 66 | Deductible overhead | | RECHTSA"
+  ],
+  [
+    320,
+    320,
+    "### 3.12 Payroll and social security contributions (exclude entirely)"
+  ],
+  [
+    322,
+    322,
+    "**3.12 Payroll and social security table**"
+  ],
+  [
+    324,
+    332,
+    "| Pattern | Treatment | Notes | | --- | --- | --- | | KRANKENVERSICHERUNG (statutory: AOK, TK, BARMER, DAK, IKK) | EXCLUDE | Statutory health insurance | | RENT"
+  ],
+  [
+    334,
+    334,
+    "### 3.13 Internal transfers and exclusions"
+  ],
+  [
+    336,
+    336,
+    "**3.13 Internal transfers table**"
+  ],
+  [
+    338,
+    347,
+    "| Pattern | Treatment | Notes | | --- | --- | --- | | UMBUCHUNG, EIGENE UEBERWEISUNG, KONTOÜBERTRAG | EXCLUDE | Between own accounts | | DAUERAUFTRAG (to own ac"
+  ],
+  [
+    349,
+    349,
+    "## Section 4: Worked examples"
+  ],
+  [
+    351,
+    351,
+    "Six worked classifications from a hypothetical Kontoauszug of a German self-employed IT consultant. The amounts are invented and carry no authority; only the tr"
+  ],
+  [
+    353,
+    353,
+    "### Example 1: Non-EU SaaS reverse charge (OpenAI)"
+  ],
+  [
+    355,
+    361,
+    "**Input line (Sparkasse Kontoauszug format):** ``` Buchungstag: 05.04.2026 Buchungstext: SEPA-Basislastschrift Verwendungszweck: OPENAI *CHATGPT PLUS 4973857 SA"
+  ],
+  [
+    363,
+    363,
+    "**Reasoning.** OpenAI Inc is a US entity (Section 3.9), no VAT on the invoice. The place of supply is Germany under § 3a(2) UStG. The supplier is established ab"
+  ],
+  [
+    365,
+    365,
+    "**Example 1 output table**"
+  ],
+  [
+    367,
+    369,
+    "| Date | Counterparty | Gross | Net | VAT | Rate | Kz (base) | Kz (output) | Kz (input) | Default? | Question? | Excluded? | | --- | --- | --- | --- | --- | ---"
+  ],
+  [
+    371,
+    371,
+    "### Example 2: EU service, reverse charge (Google Ads)"
+  ],
+  [
+    373,
+    380,
+    "**Input line:** ``` Buchungstag: 10.04.2026 Buchungstext: SEPA-Basislastschrift Verwendungszweck: GOOGLE IRELAND LTD GOOGLE ADS CID:123-456-7890 IBAN: IE29AIBK9"
+  ],
+  [
+    382,
+    382,
+    "**Reasoning.** Google Ireland Limited is an IE entity (the IBAN confirms it). A § 3a(2) service from a business established in the rest of the EU, so § 13b(1) U"
+  ],
+  [
+    384,
+    384,
+    "**Example 2 output table**"
+  ],
+  [
+    386,
+    388,
+    "| Date | Counterparty | Gross | Net | VAT | Rate | Kz (base) | Kz (output) | Kz (input) | Default? | Question? | Excluded? | | --- | --- | --- | --- | --- | ---"
+  ],
+  [
+    390,
+    390,
+    "### Example 3: Bewirtung (business entertainment), fully recoverable"
+  ],
+  [
+    392,
+    398,
+    "**Input line:** ``` Buchungstag: 15.04.2026 Buchungstext: Kartenzahlung Verwendungszweck: RESTAURANT ZUM GOLDENEN HIRSCH MUENCHEN Betrag: -285,60 ```"
+  ],
+  [
+    400,
+    400,
+    "**Reasoning.** A restaurant bill. The input VAT on business entertainment is fully recoverable under § 15(1) Nr. 1 UStG if documented: see rule 5.3. From 2026 t"
+  ],
+  [
+    402,
+    402,
+    "**Example 3 output table** _(\"Bewirtung: do you have a properly completed Bewirtungsbeleg? If yes, the Vorsteuer in this row is recoverable via Kz 66.\")_"
+  ],
+  [
+    404,
+    406,
+    "| Date | Counterparty | Gross | Net | VAT | Rate | Kz (input) | Default? | Question? | Excluded? | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"
+  ],
+  [
+    408,
+    408,
+    "### Example 4: Domestic purchase, standard 19%"
+  ],
+  [
+    410,
+    416,
+    "**Input line:** ``` Buchungstag: 18.04.2026 Buchungstext: SEPA-Basislastschrift Verwendungszweck: DEUTSCHE TELEKOM AG RECHNUNG APRIL 2026 KD-NR 12345 Betrag: -5"
+  ],
+  [
+    418,
+    418,
+    "**Reasoning.** Deutsche Telekom is a domestic supplier (Section 3.3), telecoms at the standard rate. The statement shows the gross; the net and the tax below ar"
+  ],
+  [
+    420,
+    420,
+    "**Example 4 output table**"
+  ],
+  [
+    422,
+    424,
+    "| Date | Counterparty | Gross | Net | VAT | Rate | Kz (input) | Default? | Question? | Excluded? | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"
+  ],
+  [
+    426,
+    426,
+    "### Example 5: EU B2B service sale (IT consulting to Austrian client)"
+  ],
+  [
+    428,
+    435,
+    "**Input line:** ``` Buchungstag: 22.04.2026 Buchungstext: SEPA-Gutschrift Verwendungszweck: KREATIV DIGITAL GMBH WIEN RE-2026-042 IT BERATUNG MAERZ IBAN: AT6119"
+  ],
+  [
+    437,
+    437,
+    "**Reasoning.** An incoming payment from an Austrian company (AT IBAN) for consulting supplied to a business. The place of supply under § 3a(2) UStG is Austria. "
+  ],
+  [
+    439,
+    439,
+    "**Example 5 output table** _(\"Verify Austrian USt-IdNr (ATU format)\")_"
+  ],
+  [
+    441,
+    443,
+    "| Date | Counterparty | Gross | Net | VAT | Rate | Kz | Default? | Question? | Excluded? | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | 22.04"
+  ],
+  [
+    445,
+    445,
+    "### Example 6: Bank fee and insurance (excluded)"
+  ],
+  [
+    447,
+    458,
+    "**Input line:** ``` Buchungstag: 30.04.2026 Buchungstext: Abschluss Verwendungszweck: KONTOFÜHRUNGSGEBÜHR Q2/2026 Betrag: -12,90 Buchungstag: 30.04.2026 Buchung"
+  ],
+  [
+    460,
+    460,
+    "**Reasoning.** The bank fee is an exempt financial service (§ 4 Nr. 8 UStG, Section 3.1) and the premium is exempt insurance (§ 4 Nr. 10 UStG, Section 3.4). Nei"
+  ],
+  [
+    462,
+    462,
+    "**Example 6 output table**"
+  ],
+  [
+    464,
+    467,
+    "| Date | Counterparty | Gross | Net | VAT | Rate | Kz | Default? | Question? | Excluded? | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | 30.04"
+  ],
+  [
+    469,
+    469,
+    "## Section 5: Tier 1 classification rules (compressed)"
+  ],
+  [
+    471,
+    471,
+    "Each rule gives its source and its Kennzahl. Apply it silently where the data is clear."
+  ],
+  [
+    473,
+    473,
+    "### 5.1 Standard rate 19% (ss12(1) UStG)"
+  ],
+  [
+    475,
+    475,
+    "- **Standard rate default.** The rate for any taxable supply unless a reduced rate, the zero rate or an exemption applies. Sales: Kz 81, net base. Purchases: Kz"
+  ],
+  [
+    477,
+    477,
+    "### 5.2 Reduced rate 7% (ss12(2) UStG)"
+  ],
+  [
+    479,
+    479,
+    "- **Reduced rate scope.** The list is § 12(2) UStG with its Annex 2: food and the other Annex 2 goods, books, newspapers and their electronic editions, water, c"
+  ],
+  [
+    481,
+    481,
+    "### 5.3 Bewirtung (business entertainment): VAT fully recoverable"
+  ],
+  [
+    483,
+    483,
+    "- **Bewirtung VAT recovery rules.** Unlike Malta and Ireland, where entertainment VAT is blocked, in Germany the input VAT on REASONABLE and EVIDENCED entertain"
+  ],
+  [
+    485,
+    485,
+    "### 5.4 Tax-free with input deduction, and supplies not taxable in Germany"
+  ],
+  [
+    487,
+    487,
+    "- **Tax-free with input deduction, and not taxable at all: two different things.** Exports outside the EU: Kz 43, tax-free with input deduction, needs the custo"
+  ],
+  [
+    489,
+    489,
+    "### 5.5 Exempt without input deduction (ss4 Nr.8-29 UStG)"
+  ],
+  [
+    491,
+    491,
+    "- **Exempt supplies list.** Financial services, insurance, residential rent, healthcare, education, social welfare, the universal postal service. They go in Kz "
+  ],
+  [
+    493,
+    493,
+    "### 5.6 Reverse charge: foreign suppliers (§ 13b(1) and § 13b(2) Nr. 1 UStG)"
+  ],
+  [
+    495,
+    495,
+    "- **Foreign supplier reverse charge: two boxes, not one.** § 13b(1) UStG covers ONLY a § 3a(2) service from a business established in the rest of the EU: base K"
+  ],
+  [
+    497,
+    497,
+    "### 5.7 Reverse charge: the domestic categories of § 13b(2) UStG"
+  ],
+  [
+    499,
+    499,
+    "- **Domestic reverse charge categories.** Construction services, building cleaning, scrap metal (Annex 3), gold, gas and electricity from a supplier abroad, and"
+  ],
+  [
+    501,
+    501,
+    "### 5.8 Intra-Community acquisition of goods (ss1a UStG)"
+  ],
+  [
+    503,
+    503,
+    "- **Intra-Community acquisition of goods.** A business purchase of goods dispatched from another member state to Germany. Net base in Kz 89 at the standard rate"
+  ],
+  [
+    505,
+    505,
+    "### 5.9 Import VAT (Einfuhrumsatzsteuer / EUSt)"
+  ],
+  [
+    507,
+    507,
+    "- **Import VAT treatment.** Physical goods imported from outside the EU. The Einfuhrumsatzsteuer is assessed by Zoll at the border and is not self-assessed on t"
+  ],
+  [
+    509,
+    509,
+    "### 5.10 Blocked input VAT"
+  ],
+  [
+    511,
+    511,
+    "- **Blocked input VAT categories.** § 15(1a) UStG blocks the input VAT on the costs caught by § 4(5) sentence 1 Nr. 1 to 4 and Nr. 7 EStG and by § 12 Nr. 1 EStG"
+  ],
+  [
+    513,
+    513,
+    "### 5.11 Private use deemed supply (unentgeltliche Wertabgabe)"
+  ],
+  [
+    515,
+    515,
+    "- **Private use deemed supply.** If the client uses a business asset privately, output VAT arises on the private share as a deemed supply under § 3(1b) UStG for"
+  ],
+  [
+    517,
+    517,
+    "### 5.12 Photovoltaic installations at 0% (ss12(3) UStG)"
+  ],
+  [
+    519,
+    519,
+    "- **Photovoltaic installations at the zero rate.** Supply, intra-Community acquisition, import and installation of solar modules, their essential components and"
+  ],
+  [
+    521,
+    521,
+    "### 5.13 Credit notes and corrections"
+  ],
+  [
+    523,
+    523,
+    "- **Credit notes and corrections.** A Gutschrift under § 14 UStG is self-billing by the buyer and creates output tax for the supplier. A Stornorechnung or Rechn"
+  ],
+  [
+    525,
+    525,
+    "### 5.14 Sales: cross-border B2C"
+  ],
+  [
+    527,
+    527,
+    "- **Cross-border sales to consumers.** § 3c(4) UStG keeps the place of supply in Germany while cross-border distance sales of goods AND telecom, broadcasting an"
+  ],
+  [
+    529,
+    529,
+    "### 5.15 Dauerfristverlaengerung and Sondervorauszahlung"
+  ],
+  [
+    531,
+    531,
+    "- **Dauerfristverlaengerung mechanics.** On application the tax office must extend the filing AND the payment deadline by one month, unless the tax claim appear"
+  ],
+  [
+    533,
+    533,
+    "## Section 6: Tier 2 catalogue (compressed)"
+  ],
+  [
+    535,
+    535,
+    "For each ambiguity: the pattern, why the statement is not enough, the conservative default and the question to ask."
+  ],
+  [
+    537,
+    537,
+    "### 6.1 Vehicle costs"
+  ],
+  [
+    539,
+    539,
+    "- **Vehicle costs ambiguity.** Pattern: ARAL, SHELL, TOTAL, ESSO, JET, AGIP, STAR, Tankstelle, ADAC Pannenhilfe, TÜV. Why insufficient: the vehicle and the busi"
+  ],
+  [
+    541,
+    541,
+    "### 6.2 Bewirtungskosten"
+  ],
+  [
+    543,
+    543,
+    "- **Bewirtungskosten ambiguity.** Pattern: any named restaurant, Gaststätte, Imbiss or hotel. Why insufficient: the Bewirtungsbeleg status is unknown, and from "
+  ],
+  [
+    545,
+    545,
+    "### 6.3 Home office (Arbeitszimmer)"
+  ],
+  [
+    547,
+    547,
+    "- **Home office ambiguity.** Pattern: Miete, Strom, Internet that could relate to a home office. Why insufficient: the day flat rate for working at home is an I"
+  ],
+  [
+    549,
+    549,
+    "### 6.4 Cash withdrawals (Bargeldabhebung)"
+  ],
+  [
+    551,
+    551,
+    "- **Cash withdrawals ambiguity.** Pattern: ATM, Geldautomat, Bargeldabhebung. Why insufficient: what the cash bought is unknown. Default: exclude as an owner dr"
+  ],
+  [
+    553,
+    553,
+    "### 6.5 Mixed SaaS billing entity"
+  ],
+  [
+    555,
+    555,
+    "- **Mixed SaaS billing ambiguity.** Pattern: Google, Microsoft, Adobe, Meta, Slack, Zoom, LinkedIn, Apple, Amazon, Dropbox, Atlassian, Stripe, PayPal where the "
+  ],
+  [
+    557,
+    557,
+    "### 6.6 Round-number transfers (Gesellschaftereinlage or Umsatz?)"
+  ],
+  [
+    559,
+    559,
+    "- **Round-number transfers ambiguity.** Pattern: a large round credit from the client's own name or a family member. Why insufficient: it could be a sale, an ow"
+  ],
+  [
+    561,
+    561,
+    "### 6.7 Amazon purchases"
+  ],
+  [
+    563,
+    563,
+    "- **Amazon purchases ambiguity.** Pattern: AMAZON, AMAZON PAYMENTS, AMAZON EU SARL, AMZN MKTP. Why insufficient: an Amazon purchase may be a business supply, de"
+  ],
+  [
+    565,
+    565,
+    "## Section 7: Excel working paper template (Germany-specific)"
+  ],
+  [
+    567,
+    567,
+    "Base specification: `vat-workflow-base` Section 3. This is the Germany overlay."
+  ],
+  [
+    569,
+    569,
+    "### Sheet \"Transactions\""
+  ],
+  [
+    571,
+    576,
+    "Columns A to L per the base. Column H (\"Kz code\") takes only Kennzahl codes from the table in Section 1, and is blank for an excluded transaction. For a reverse"
+  ],
+  [
+    578,
+    578,
+    "### Sheet \"Kz Summary\""
+  ],
+  [
+    580,
+    580,
+    "**Kz Summary mandatory rows**"
+  ],
+  [
+    582,
+    582,
+    "Output side:"
+  ],
+  [
+    584,
+    604,
+    "~~~ 81 Taxable supplies, standard rate (net) =SUMIFS(Transactions!E:E, Transactions!H:H, \"81\") T81 Tax on Kz 81 =C[81_row]*0.19 86 Taxable supplies, reduced rat"
+  ],
+  [
+    606,
+    606,
+    "Input side and the bottom line:"
+  ],
+  [
+    608,
+    617,
+    "~~~ 66 Input VAT from invoices =SUMIFS(Transactions!F:F, Transactions!H:H, \"66\") 61 Input VAT on IC acquisitions =C[T89_row]+C[T93_row] 62 Import VAT assessed b"
+  ],
+  [
+    619,
+    621,
+    "Kz 83 is the amount to pay or reclaim, not a subtotal of output tax, and Kz 65 is the change-of-method box, not the net result. Swapping those two is the most c"
+  ],
+  [
+    623,
+    623,
+    "### Sheet \"Return Form\""
+  ],
+  [
+    625,
+    628,
+    "- **Return Form final figures logic.** Line 37 is output VAT, lines 38 to 44 the deductible input tax, line 45 the difference. Lines 46 and 47 add the other tax"
+  ],
+  [
+    630,
+    630,
+    "### Color and formatting conventions"
+  ],
+  [
+    632,
+    634,
+    "Per the spreadsheet conventions: blue for hardcoded statement values (column D of Transactions), black for formulas, green for cross-sheet references, yellow ba"
+  ],
+  [
+    636,
+    636,
+    "### Mandatory recalc step"
+  ],
+  [
+    638,
+    638,
+    "After building the workbook, run:"
+  ],
+  [
+    640,
+    642,
+    "```bash python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/germany-vat-working-paper.xlsx ```"
+  ],
+  [
+    644,
+    644,
+    "Check the JSON output. If `status` is `errors_found`, fix the formulas and run it again."
+  ],
+  [
+    646,
+    646,
+    "## Section 8: German bank statement reading guide"
+  ],
+  [
+    648,
+    648,
+    "Follow the exclusion rules in `vat-workflow-base` Step 6, plus these German patterns."
+  ],
+  [
+    650,
+    650,
+    "### Kontoauszug format conventions"
+  ],
+  [
+    652,
+    652,
+    "**Kontoauszug field table**"
+  ],
+  [
+    654,
+    664,
+    "| Field | Meaning | Notes | | --- | --- | --- | | Buchungstag | Booking date | The transaction date for the return. DD.MM.YYYY | | Wertstellung / Valuta | Value"
+  ],
+  [
+    666,
+    667,
+    "A statement is not an invoice: it fixes the cash date, not the tax point. Under Soll-Versteuerung the tax point is the supply, not the payment."
+  ],
+  [
+    669,
+    669,
+    "### IBAN country prefixes"
+  ],
+  [
+    671,
+    671,
+    "**IBAN prefixes table**"
+  ],
+  [
+    673,
+    677,
+    "| Prefix | Country | VAT treatment | | --- | --- | --- | | DE | Germany | Domestic | | AT, BE, BG, CY, CZ, DK, EE, ES, FI, FR, GR, HR, HU, IE, IT, LT, LU, LV, M"
+  ],
+  [
+    679,
+    680,
+    "The IBAN is a clue, not proof. What counts is where the SUPPLIER is established, which the invoice states and a payment account does not."
+  ],
+  [
+    682,
+    682,
+    "### Common Buchungstext codes"
+  ],
+  [
+    684,
+    684,
+    "**Buchungstext codes table**"
+  ],
+  [
+    686,
+    695,
+    "| Code | Meaning | Typical treatment | | --- | --- | --- | | SEPA-Ueberweisung | Outgoing transfer | Supplier payment: classify by counterparty | | SEPA-Gutschr"
+  ],
+  [
+    697,
+    697,
+    "### German-language transaction descriptions"
+  ],
+  [
+    699,
+    699,
+    "**German terms table**"
+  ],
+  [
+    701,
+    714,
+    "| German | English | Classification hint | | --- | --- | --- | | Rechnung, Rg., RE | Invoice | Purchase or sale with an invoice reference | | Miete | Rent | See"
+  ],
+  [
+    716,
+    716,
+    "### Internal transfers and exclusions"
+  ],
+  [
+    718,
+    719,
+    "- **Internal transfers exclusion.** Transfers between the client's own accounts, labelled \"Umbuchung\", \"eigene Ueberweisung\" or \"Kontoübertrag\". Always exclude."
+  ],
+  [
+    721,
+    721,
+    "### Foreign currency transactions"
+  ],
+  [
+    723,
+    726,
+    "- **Foreign currency conversion.** Convert to euro at the average rate the Federal Ministry of Finance publishes for the month of the supply under § 16(6) UStG."
+  ],
+  [
+    728,
+    728,
+    "### Cryptic descriptions"
+  ],
+  [
+    730,
+    731,
+    "Card purchases with only a terminal ID, direct debits with only a Mandatsreferenz. Ask the client. Do not classify an unidentified transaction."
+  ],
+  [
+    733,
+    733,
+    "## Section 9: Onboarding fallback (only when inference fails)"
+  ],
+  [
+    735,
+    736,
+    "`vat-workflow-base` Section 1 infers the client profile from the data first. Ask only what the data could not answer."
+  ],
+  [
+    738,
+    738,
+    "### 9.1 Entity type and trading name"
+  ],
+  [
+    740,
+    741,
+    "- Inference: a sole trader's name usually matches the account holder; a company name ends in GmbH, UG, GbR, OHG, KG, AG or e.K. Ask: \"Sole trader, GmbH, UG, or "
+  ],
+  [
+    743,
+    743,
+    "### 9.2 VAT registration status"
+  ],
+  [
+    745,
+    747,
+    "- Inference: a client asking for a UStVA is on Regelbesteuerung. No VAT on sales suggests a Kleinunternehmer, which triggers the R-DE-1 pointer. Ask: \"Are you o"
+  ],
+  [
+    749,
+    749,
+    "### 9.3 USt-IdNr and Steuernummer"
+  ],
+  [
+    751,
+    752,
+    "- Inference: the USt-IdNr (DE and nine digits) sometimes appears in EU payment references; the Steuernummer is on Finanzamt letters. Ask: \"Your USt-IdNr and Ste"
+  ],
+  [
+    754,
+    754,
+    "### 9.4 Filing period and frequency"
+  ],
+  [
+    756,
+    757,
+    "- Inference: the first and last transaction dates give the period; the rhythm follows the previous year's VAT against the thresholds tables. Ask: \"Which period,"
+  ],
+  [
+    759,
+    759,
+    "### 9.5 Industry and sector"
+  ],
+  [
+    761,
+    761,
+    "- Inference: the counterparty mix and the sales descriptions. Ask: \"What does the business do?\""
+  ],
+  [
+    763,
+    763,
+    "### 9.6 Employees"
+  ],
+  [
+    765,
+    765,
+    "- Inference: Gehalt, Lohn and Sozialversicherung payments to non-owners. Ask: \"Any employees?\""
+  ],
+  [
+    767,
+    767,
+    "### 9.7 Exempt supplies"
+  ],
+  [
+    769,
+    770,
+    "- Inference: medical, financial, educational or residential letting income. Ask: \"Any VAT-exempt sales?\" If yes and not trivial, follow the R-DE-4 pointer."
+  ],
+  [
+    772,
+    772,
+    "### 9.8 Soll- or Ist-Versteuerung"
+  ],
+  [
+    774,
+    777,
+    "- Inference: most small businesses are on Soll. Ist-Versteuerung needs the tax office's permission and, on the turnover ground, turnover within the limit in the"
+  ],
+  [
+    779,
+    779,
+    "### 9.9 Dauerfristverlaengerung"
+  ],
+  [
+    781,
+    782,
+    "- Inference: not visible in one period's statement. Ask: \"Do you have a Dauerfristverlaengerung, and was a Sondervorauszahlung declared and paid this year?\""
+  ],
+  [
+    784,
+    784,
+    "### 9.10 Cross-border customers"
+  ],
+  [
+    786,
+    787,
+    "- Inference: foreign IBANs, foreign currency, foreign customer names. Ask: \"Customers outside Germany? In the EU or outside it? Businesses with a USt-IdNr, or c"
+  ],
+  [
+    789,
+    789,
+    "### Validation status"
+  ],
+  [
+    791,
+    793,
+    "No accountant stands behind this Guide yet. Every rate, amount and box number was checked against the pages listed under Sources on 19 September 2026, and anyth"
+  ],
+  [
+    795,
+    795,
+    "## The method, step by step"
+  ],
+  [
+    797,
+    823,
+    "1. Fix the period and the rhythm. Quarterly is the default. Monthly is compulsory when the VAT for the previous calendar year was above the limit in the return "
+  ],
+  [
+    827,
+    841,
+    "- Are you on the normal scheme, or a Kleinunternehmer under § 19 UStG? If the latter, have you given that status up, and from which year? - Monthly or quarterly"
+  ],
+  [
+    843,
+    843,
+    "## When to refuse or refer"
+  ],
+  [
+    845,
+    855,
+    "- A refusal in Section 2 fires: Organschaft or Differenzbesteuerung. Kleinunternehmer, partial exemption and Ist-Versteuerung go to de-vat-annual-and-special-sc"
+  ],
+  [
+    857,
+    857,
+    "### Key thresholds summary"
+  ],
+  [
+    859,
+    859,
+    "**Small business (Kleinunternehmer), § 19 UStG**"
+  ],
+  [
+    861,
+    866,
+    "| What | Value | Note | | --- | --- | --- | | Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__19.html | | Total turnover of the PREV"
+  ],
+  [
+    868,
+    869,
+    "The two German limits are joined by AND. Total turnover is the receipts-based figure of § 19(2) UStG, without sales of fixed assets. The status is lost during t"
+  ],
+  [
+    871,
+    871,
+    "**Small business: the start-up year and the receipt that crosses the limit**"
+  ],
+  [
+    873,
+    876,
+    "| What | Value | Note | | --- | --- | --- | | Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten"
+  ],
+  [
+    878,
+    879,
+    "The same instructions say the very receipt that crosses the limit is already taxed under the normal rules, and that receipts taken in before that point stay exe"
+  ],
+  [
+    881,
+    881,
+    "**Return rhythm and release, § 18 UStG**"
+  ],
+  [
+    883,
+    888,
+    "| What | Value | Note | | --- | --- | --- | | Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__18.html | | Monthly is compulsory if t"
+  ],
+  [
+    890,
+    890,
+    "The test is the VAT, not the turnover. The release is discretionary and the annual return stays."
+  ],
+  [
+    892,
+    892,
+    "**Cash accounting (Ist-Versteuerung), § 20 UStG**"
+  ],
+  [
+    894,
+    897,
+    "| What | Value | Note | | --- | --- | --- | | Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__20.html | | Total turnover of the prev"
+  ],
+  [
+    899,
+    900,
+    "Alternative grounds, joined by OR: release from the duty to keep books, or income from a liberal profession, where there is no turnover limit. It always needs t"
+  ],
+  [
+    902,
+    902,
+    "**Small-amount invoices, § 33 UStDV**"
+  ],
+  [
+    904,
+    907,
+    "| What | Value | Note | | --- | --- | --- | | Source | all figures below | https://www.gesetze-im-internet.de/ustdv_1980/__33.html | | Invoice total (gross) up "
+  ],
+  [
+    909,
+    911,
+    "Not available for distance sales (§ 3c UStG), intra-Community supplies (§ 6a UStG) or reverse-charge supplies (§ 13b UStG). Above it the full § 14 UStG details "
+  ],
+  [
+    913,
+    913,
+    "**Domestic reverse charge on mobile phones, tablets, games consoles and integrated circuits, and Annex 4 metals**"
+  ],
+  [
+    915,
+    918,
+    "| What | Value | Note | | --- | --- | --- | | Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__13b.html | | Fees invoiced in one econ"
+  ],
+  [
+    920,
+    920,
+    "**Distance selling to consumers in other member states, § 3c UStG**"
+  ],
+  [
+    922,
+    925,
+    "| What | Value | Note | | --- | --- | --- | | Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__3c.html | | Distance sales of goods PL"
+  ],
+  [
+    927,
+    927,
+    "One EU-wide total, not one per country, and not a limit on German domestic sales. A waiver binds for two calendar years."
+  ],
+  [
+    929,
+    929,
+    "**Recapitulative statement (Zusammenfassende Meldung), § 18a UStG**"
+  ],
+  [
+    931,
+    936,
+    "| What | Value | Note | | --- | --- | --- | | Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__18a.html | | Quarterly filing allowed "
+  ],
+  [
+    938,
+    939,
+    "Monthly is the default for intra-Community supplies of goods, by the twenty-fifth day after the month. Services under § 3a(2) UStG are reported quarterly in any"
+  ],
+  [
+    941,
+    941,
+    "**Input tax: minimum business use, § 15(1) UStG**"
+  ],
+  [
+    943,
+    946,
+    "| What | Value | Note | | --- | --- | --- | | Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__15.html | | Below this share of busine"
+  ],
+  [
+    948,
+    948,
+    "**Business gifts and entertainment, § 4(5) EStG read with § 15(1a) UStG**"
+  ],
+  [
+    950,
+    954,
+    "| What | Value | Note | | --- | --- | --- | | Source | all figures below | https://www.gesetze-im-internet.de/estg/__4.html | | Gifts to a person who is not you"
+  ],
+  [
+    956,
+    956,
+    "**E-invoicing: the turnover limit for the 2027 relief, § 27(38) UStG**"
+  ],
+  [
+    958,
+    961,
+    "| What | Value | Note | | --- | --- | --- | | Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__27.html | | Issuer's total turnover of"
+  ],
+  [
+    963,
+    968,
+    "Since 1 January 2025 every business in Germany must be able to RECEIVE an e-invoice, a Kleinunternehmer included. For supplies made in 2025 and 2026 an issuer m"
+  ],
+  [
+    970,
+    970,
+    "**Late filing and late payment**"
+  ],
+  [
+    972,
+    976,
+    "| What | Value | Note | | --- | --- | --- | | Source | all figures below | https://www.gesetze-im-internet.de/ao_1977/__240.html | | Late payment surcharge per "
+  ],
+  [
+    978,
+    980,
+    "The late FILING surcharge formula of § 152(5) AO does NOT apply to a monthly or quarterly VAT advance return or to the Sondervorauszahlung declaration. § 152(8)"
+  ],
+  [
+    982,
+    982,
+    "### Known gaps"
+  ],
+  [
+    984,
+    992,
+    "1. The supplier library covers the common counterparties, not every regional name. 2. The worked examples come from one hypothetical IT consultant, not from eve"
+  ],
+  [
+    994,
+    994,
+    "### Change log"
+  ],
+  [
+    996,
+    1003,
+    "- **2026 refresh.** Every figure re-checked against the statute and the 2026 form. Kennzahlen rebuilt from that form: Kz 83 is the bottom line, Kz 65 the change"
+  ],
+  [
+    1005,
+    1005,
+    "### Self-check (v2.0 of this document)"
+  ],
+  [
+    1007,
+    1013,
+    "1. Quick reference, Kennzahl table and conservative defaults at the top: yes, Section 1. 2. Supplier library, worked examples, Tier 1 and Tier 2: yes, Sections "
+  ],
+  [
+    1015,
+    1015,
+    "## End of the Germany VAT return Guide"
+  ],
+  [
+    1017,
+    1018,
+    "Use this Guide with `vat-workflow-base` (workflow) and `eu-vat-directive` (EU directive content). Load all three before producing a UStVA."
+  ],
+  [
+    1022,
+    1031,
+    "- UStG: § 3a https://www.gesetze-im-internet.de/ustg_1980/__3a.html · § 3c https://www.gesetze-im-internet.de/ustg_1980/__3c.html · § 4 https://www.gesetze-im-i"
+  ],
+  [
+    1033,
+    1033,
+    "## Disclaimer"
+  ],
+  [
+    1035,
+    1039,
+    "This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountant"
+  ],
+  [
+    1043,
+    1043,
+    "> Contributed by Ryan Duguid."
+  ]
+]

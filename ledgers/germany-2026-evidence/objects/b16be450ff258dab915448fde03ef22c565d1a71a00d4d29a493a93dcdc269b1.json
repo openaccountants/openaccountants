@@ -1,0 +1,11 @@
+{
+  "id": "U996c3fb78a450a00",
+  "url": "https://www.gesetze-im-internet.de/kstg_1977/__14.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U996c3fb78a450a00.body",
+  "raw_sha256": "d500a2040fb199e149e5b0036f1c4823caffaba1d0fa13525143961dcd2f0477",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U996c3fb78a450a00.reader.txt",
+  "reader_sha256": "2a06c0d5894ac5e7d000a287df2d219e8c99d13145ab80083cf7119177950a7a",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

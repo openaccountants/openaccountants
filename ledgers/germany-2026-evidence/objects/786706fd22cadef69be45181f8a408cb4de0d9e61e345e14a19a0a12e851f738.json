@@ -1,0 +1,26 @@
+[
+  {
+    "source_id": "RNT06",
+    "official_url": "https://www.gesetze-im-internet.de/ao_1977/__370.html",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT06.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT06.txt",
+    "sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+    "reader_sha256": "60aecd47e48aef8708433f3c54f7733c4f499fc5d273986845c875cea77a85a0",
+    "bytes": 8329,
+    "encoding_from_document": "iso-8859-1",
+    "extraction": "HTMLParser block text; collapsed within-block whitespace",
+    "repair": "Decode original retained raw using its declared ISO8859-1; no refetch or raw-byte mutation. Original UTF8 failure preserved in prior acquisition JSON."
+  },
+  {
+    "source_id": "RNT07",
+    "official_url": "https://www.gesetze-im-internet.de/ao_1977/__39.html",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT07.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT07.txt",
+    "sha256": "f86add62d1f4ba2697bd13619999a41ef0fe7a0756cedbff3d4119f7fa65ede1",
+    "reader_sha256": "33f25209c8cd687ff8f3fde2038718da67447676e376b1b56475a8736cd459cb",
+    "bytes": 4679,
+    "encoding_from_document": "iso-8859-1",
+    "extraction": "HTMLParser block text; collapsed within-block whitespace",
+    "repair": "Decode original retained raw using its declared ISO8859-1; no refetch or raw-byte mutation. Original UTF8 failure preserved in prior acquisition JSON."
+  }
+]

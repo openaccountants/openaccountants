@@ -1,0 +1,11 @@
+{
+  "id": "U89f95c957e4927d3",
+  "url": "https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/Steuererklaerungen/steuererklaerungen_node.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U89f95c957e4927d3.body",
+  "raw_sha256": "aab2d0d33744a284bde6201e6bb85592e02d32feca364dd0ebf124db29eab189",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U89f95c957e4927d3.reader.txt",
+  "reader_sha256": "046f748014641d4ab994afc39452bd274fbae0058b905911a7cfe8893a78ac29",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

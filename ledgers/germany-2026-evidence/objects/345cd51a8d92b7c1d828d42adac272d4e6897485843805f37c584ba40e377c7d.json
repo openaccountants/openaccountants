@@ -1,0 +1,130 @@
+{
+  "status": "writer successor, independent review pending",
+  "artifacts": [
+    {
+      "path": "after/de-payroll.md",
+      "sha256": "11679ea5289f51dbaac24b7547c80f4f00505622205d2b4da7d0acd71db05765",
+      "bytes": 55438
+    },
+    {
+      "path": "after/germany-payroll.md",
+      "sha256": "9a8ed7d2d018e23e3644d6eb951d050765935dcff6bc8770bbde1832e5ee505e",
+      "bytes": 63097
+    },
+    {
+      "path": "before/de-payroll.md",
+      "sha256": "f7864d22ecb5e51e67d65e1c799dd335abe3dc120be7e556779c84ac2df80382",
+      "bytes": 52385
+    },
+    {
+      "path": "before/germany-payroll.md",
+      "sha256": "5a2eec995028a0fa55991eda2600a92904c6f7d11b9e8220a6e55d4a85942564",
+      "bytes": 59531
+    },
+    {
+      "path": "build-ledgers.py",
+      "sha256": "0201eab10e9dc73aef072959e235bdf579d2f860b36f55a9b29e0294b9e92b7d",
+      "bytes": 8873
+    },
+    {
+      "path": "builder-check-history.md",
+      "sha256": "c366e95032116b5e1fdcddb83ea0061394653418ea7ea2b25f0a9e2e10968f82",
+      "bytes": 599
+    },
+    {
+      "path": "check-and-seal.py",
+      "sha256": "c0125311eafd5dff7ef058ac1318958c5edd2db7166b86baf7514e1f07b3da31",
+      "bytes": 12406
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "1914e9c15da4cb6bf62314b6a2254b6ddeb860302deea82ebc02e4ebf434befd",
+      "bytes": 30641
+    },
+    {
+      "path": "historical-author.py",
+      "sha256": "633ad81397b82625717c1b460562eddfdd06e63c3b81ce2b0c49c9e4b368f2d0",
+      "bytes": 18560
+    },
+    {
+      "path": "ledgers/de-payroll.md",
+      "sha256": "d5886b1a06a64e662efde14798cf5e8343cdf9700d8bead49a63be0705878070",
+      "bytes": 157175
+    },
+    {
+      "path": "ledgers/germany-payroll.md",
+      "sha256": "0fb4685ccd3295679b6ca70b6b58f9ca3b70c849251bcb6fb31afcb808374cac",
+      "bytes": 349468
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "ad109068f5e0eb85eb6ef600850502464f62e05f0ffb4c9a686194d86d091364",
+      "bytes": 2980
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "90720a7dcdc53c108c0bedd56df98fa0c89454efb527d918863fc6dde76cabd0",
+      "bytes": 35567
+    },
+    {
+      "path": "preservation-proof.json",
+      "sha256": "f527130ce728263e90dca6787621af855ac7d6b55278b59f43dc3f7568a96994",
+      "bytes": 1069
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "4c7395795cd0224efb201fc5d58f570924c2090ae71af0475845aaac3122854c",
+      "bytes": 635319
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "cba1866ff2d6a44df57d254c50892a3b1a05903641d551d1b798dc497a4bac48",
+      "bytes": 408898
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "affe1c1b8fb82fae5b65d6c14e5e1818e917880a49e3cfba12c7c8362290d98d",
+      "bytes": 1755
+    },
+    {
+      "path": "support/de-payroll/line-map.json",
+      "sha256": "40be651b48a0492b4f61dcc3cbd137d74d3c111ece5f02d3d015f2323a678f26",
+      "bytes": 17907
+    },
+    {
+      "path": "support/de-payroll/old-topic-destinations.json",
+      "sha256": "105530939c21e4a9827b26cf758861de84464c457d19851027c1caea318da8e7",
+      "bytes": 113132
+    },
+    {
+      "path": "support/de-payroll/rows.json",
+      "sha256": "cc3355bda026fb9722d183c6eeed13518a88f7c2c6e01833b21ff14d9199999c",
+      "bytes": 101122
+    },
+    {
+      "path": "support/germany-payroll/line-map.json",
+      "sha256": "1a41f826ffd6666e52f91ed9ca597a6aaf74003ff8ef98474a7a0ce9bac485c1",
+      "bytes": 26482
+    },
+    {
+      "path": "support/germany-payroll/old-topic-destinations.json",
+      "sha256": "ad4aaa40e31dd6b9f75c7e0418aec1264150f9b365f28f085cd0269233f8a664",
+      "bytes": 351136
+    },
+    {
+      "path": "support/germany-payroll/rows.json",
+      "sha256": "f7378757ec10ff50c4b6c31b0359723a898e50c233402ebea85861e282acd6c3",
+      "bytes": 188071
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "aa0773cb7c38a32478a23ba1534ff3213c51ec08c28be8140030c9cd81e8d215",
+      "bytes": 56565
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "1069d9a88cc160347c1ca2d4e4d97f38d29f4afbb470970ea3b006d5502971a1",
+      "bytes": 2429
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+Bundesfinanzministerium - Einzelfragen zur ertragsteuerrechtlichen Behandlung bestimmter Kryptowerte
+Einwilligung in Reichweitenanalyse
+Helfen Sie mit, unsere Website zu verbessern!
+Wenn Sie auf „Einwilligen“ klicken, können wir statistische Informationen erfassen und besser verstehen, wie Besucherinnen und Besucher unsere Website nutzen.
+Das passiert ✓ anonym und ohne personenbezogene Daten, ✓ ohne Cookies, ✓ auf Servern in Deutschland ✓ und ohne Übermittlung an Dritte.
+Außerdem können Sie Ihre Einwilligung jederzeit auf der Datenschutzseite widerrufen.
+Einwilligen
+Ablehnen
+mehr Informationen
+Dienst:
+Matomo
+Beschreibung:
+Erfassung von Kennzahlen zur Webanalyse
+Speicherung von/Zugriff auf Informationen auf Ihrem Endgerät:
+Nach Ihrer Einwilligung wird das Skript „matomo.js“ ausgeführt. Folgende Geräteinformationen werden ausgelesen: Gerätetyp, Gerätemarke, Gerätemodell (in den meisten Fällen nicht für Desktopgeräte), Bildschirmauflösung, Betriebssystem-Version, Browser/Browser-Engines und Browser-Plugins.
+Es werden keine Matomo-Cookies auf Ihrem Endgerät gespeichert.
+Welche Daten werden erhoben?
+Neben den genannten Geräteinformationen werden Daten zu Ihren Nutzungsaktivitäten gespeichert: Ihre gekürzte/verfremdete IP-Adresse; aufgerufene URLs; die Website, von der auf die aufgerufene Seite gelangt wurde (Referrer-Site); Verweildauer; heruntergeladene PDFs; eingegebene Suchbegriffe. Die Rohdaten werden 30 Tage gespeichert und danach automatisiert gelöscht.
+Schutz personenbezogener Daten:
+Ihre IP-Adresse wird nicht vollständig gespeichert, die letzten beiden Oktettes werden zum frühestmöglichen Zeitpunkt weggelassen/verfremdet (Beispiel: 183.172.xxx.xxx). Auch weitere personenbezogene Daten werden nicht erhoben.
+Zweck der Datenerhebung und Rechtsgrundlage:
+Die Verwendung von Matomo hilft uns, die Nutzerfreundlichkeit unserer Website stetig zu verbessern. Eine Profilbildung findet nicht statt. Die Verarbeitung Ihrer Daten dient dazu, eine zielgerichtete Information der Öffentlichkeit über die Tätigkeit des Ministeriums sicherzustellen und basiert auf § 3 Absatz 1 E-Government-Gesetz in Verbindung mit § 3 BDSG. Durch die frühestmögliche Verfremdung der IP-Adresse wird dem Interesse der Nutzerinnen und Nutzer an dem Schutz ihrer personenbezogenen Daten hinreichend Rechnung getragen. Der Zugriff auf Ihre Gerätedaten erfolgt aufgrund Ihrer Einwilligung gemäß Art. 25 Abs. 1 TTDSG.
+Ort der Verarbeitung:
+Matomo wird lokal auf den Servern unseres Dienstleisters in Deutschland betrieben. Es findet keine Datenübermittlung an Matomo oder sonstige Dritte statt.
+Weitere Informationen:
+Weitere Angaben zu Ihren Rechten, zum Datenschutzverantwortlichen sowie Kontaktdaten finden Sie auf unserer Datenschutzseite.
+Navigation überspringen
+Navigation anspringen
+Suche anspringen
+Navigation
+Bundesministerium der Finanzen
+Federal Ministry of Finance
+Unsere Meilensteine
+Kopfzeile
+Kontakt
+Schriftgröße
+Schalter öffnen
+Schalter schließen
+A
+A
+Gebärdensprache
+Gebärdensprache
+Einfache Sprache
+Leichte Sprache
+English
+Menü
+Menü
+Schließen
+Hauptmenü
+Zurück
+Themen
+Weiter
+Zurück
+Top-Themen
+Weiter
+Überblick
+Bundeshaushalt 2027
+Sondervermögen für Infrastruktur und Klimaneutralität
+Reform der Einkommensteuer
+Frühstartrente
+Aktivrente
+Aktionsplan gegen Steuerkriminalität
+Aktionsplan gegen Organisierte Kriminalität
+Zurück
+Steuern
+Weiter
+Überblick
+Wachstumsbooster
+Steuerarten
+Internationales Steuerrecht
+Steuerschätzung & Steuereinnahmen
+Steuerverwaltung & Steuerrecht
+Steuerliche Themengebiete
+Formulare
+Zurück
+Öffentliche Finanzen
+Weiter
+Überblick
+Bundeshaushalt
+Sondervermögen für Infrastruktur und Klimaneutralität
+Stabilitätspolitik
+Föderale Finanzbeziehungen
+Nachhaltigkeitsstrategie
+Wiedergutmachung
+Daten und Berichte
+Zurück
+Europa
+Weiter
+Überblick
+Krieg in der Ukraine
+Eurogruppe & ECOFIN
+Der Euro
+EU-Haushalt
+Deutscher Aufbau- und Resilienzplan (DARP)
+Deutsch-Französische Zusammenarbeit
+Zurück
+Internationales/Finanzmarkt
+Weiter
+Überblick
+Internationale Zusammenarbeit
+Förderung der privaten Altersvorsorge
+Start-up-Standort stärken
+Finanzmarktpolitik
+Finanzkriminalität bekämpfen
+Finanzielle Bildung
+Zurück
+Bundesvermögen
+Weiter
+Überblick
+Beteiligungspolitik
+Privatisierungspolitik
+Zurück
+Zoll
+Weiter
+Überblick
+Post und Reise
+Aufgaben und Struktur des Zolls
+Finanzkontrolle Schwarzarbeit
+Zurück
+Briefmarken & Sammlermünzen
+Weiter
+Überblick
+Briefmarken
+Sammlermünzen
+Öffentliche Finanzen
+Deutschlandkarte zum Sondervermögen – Hier wirken Investitionen
+Öffentliche Finanzen
+Monitoring-Dashboard zum Sondervermögen für Infrastruktur und Klimaneutralität
+Schließen
+Schließen
+Zurück
+Ministerium
+Weiter
+Minister und Hausleitung
+Ostbeauftragte der Bundesregierung
+Arbeiten und Ausbildung
+Abteilungen
+Bundesfinanzakademie
+Beiräte
+BMF-Geschäftsbereich
+Veranstaltungen
+Geschichte
+Ministerium
+DRH 360° – das Online-Erlebnis des Detlev-Rohwedder-Hauses
+Ministerium
+Veranstaltungen des Bun­des­fi­nanz­mi­nis­te­ri­ums
+Monatsbericht
+BMF-Monatsbericht September 2026
+Ministerium
+Investitions- und Innovationsbeirat
+Schließen
+Schließen
+Zurück
+Service
+Weiter
+Newsletter
+Social Media Newsroom
+Publikationen
+Gesetze und Gesetzesvorhaben
+Rechner
+FAQ und Glossar
+Themenportale
+Transparenzinitiativen
+Hinweisgeberschutz im BMF
+Steuern
+Kfz-Steu­er-Rech­ner
+Steuern
+Lohn- und Einkommensteuerrechner
+Service
+Warnungen vor Betrugsversuchen im Namen des Bun­des­fi­nanz­mi­nis­te­ri­ums
+Ministerium
+FAQ: Antworten zu vielen Fragen aus dem Finanzbereich
+Schließen
+Schließen
+Zurück
+Presse
+Weiter
+Pressemitteilungen
+Termine
+Reden, Interviews und Namensartikel
+Pressekontakt
+Pressefotos
+Ministerium
+Social Media Newsroom
+Ministerium
+Reden und Interviews des Bundesfinanzministers
+Schließen
+Schließen
+Zurück
+Mediathek
+Weiter
+Übersicht
+BMFpresents
+#Finanzisch
+Livestream
+Bundeshaushalt
+Lars Klingbeil stellt den Haushaltsentwurf für 2027 vor
+Öffentliche Finanzen
+Infografiken zum Sondervermögen für Infrastruktur und Klimaneutralität
+Schließen
+Schließen
+Kontakt
+Schriftgröße
+Schalter öffnen
+Schalter schließen
+A
+A
+Gebärdensprache
+Gebärdensprache
+Einfache Sprache
+Leichte Sprache
+English
+zur Suche
+Suche
+Suche
+Suchbegriff(e) eingeben
+Suchen
+Suche
+Ergebnisse für:
+Beliebte Inhalte
+Kfz-Steuer-Rechner
+Aktivrente
+Reisekosten
+Kaufpreisaufteilung
+E-Rechnung
+Formulare
+Umrechnungskurse
+Sie sind hier:
+Startseite
+Weiter
+Aktuelle Seite
+Service
+Menü öffnen
+Menü schließen
+SeiteAendern
+Newsletter
+Social Media Newsroom
+Publikationen
+Gesetze und Gesetzesvorhaben
+Rechner
+FAQ und Glossar
+Themenportale
+Transparenzinitiativen
+Hinweisgeberschutz im BMF
+Service
+Weiter
+Aktuelle Seite
+Publikationen
+Menü öffnen
+Menü schließen
+SeiteAendern
+Broschüren / Bestellservice
+Monatsbericht
+Link (intern)
+BMF-Schreiben
+Umsatzsteuer-Umrechnungskurse
+Amtliche Handbücher
+BFH-Entscheidungen
+Ausschreibungen
+Publikationen
+Weiter
+BMF-Schreiben
+06.03.2025
+Einzelfragen zur ertragsteuerrechtlichen Behandlung bestimmter Kryptowerte
+Das Bundesministerium der Finanzen hat mit den Bundesländern Vorgaben zu den ertragsteuerrechtlichen Mitwirkungs- und Aufzeichnungspflichten bei Kryptowerten wie Bitcoin erarbeitet. Damit erhalten die Steuerpflichtigen eine Hilfestellung bei der Dokumentation und Erklärung ihrer Einkünfte und die Finanzämter Hinweise zur Prüfung und Veranlagung entsprechender Steuererklärungen.
+Die Vorgaben ersetzen das bisherige BMF-Schreiben vom 10. Mai 2022, das hierfür unter dem Titel „Einzelfragen der ertragsteuerrechtlichen Behandlung bestimmter Kryptowerte“ neu veröffentlicht wird. Zu diesem Anlass wurde die bisher genutzte Formulierung „virtuelle Währungen und sonstige Token“ in Anlehnung an die Weiterentwicklung insbesondere der aufsichtsrechtlichen Terminologie durch die Bezeichnung „Kryptowerte“ ersetzt.
+Neben der ausführlichen Darstellung der Mitwirkungs- und Aufzeichnungspflichten ab Randnummer 87 wurden einzelne Sachverhaltsdarstellungen und Regelungen in den Kapiteln des bestehenden BMF-Schreibens ergänzt. Dies betrifft insbesondere die sogenannten Steuerreports (Randnummer 29b), aber etwa auch das Claiming von Kryptowerten (Randnummern 13, 48a) und den Ansatz von sekundengenauen und Tageskursen (Randnummern 43, 58 und 91).
+Aufgrund des grenzüberschreitenden Charakters der behandelten Sachverhalte wird eine rechtsunverbindliche Übersetzung bereitgestellt.
+Non Fungible Token (NFT) und das sogenannte Liquidity Mining sind noch nicht Gegenstand des BMF-Schreibens. Das Bundesministerium der Finanzen wird sich weiterhin in enger Abstimmung mit den obersten Finanzbehörden der Länder und unter Einbindung der Verbände mit den entsprechenden ertragsteuerrechtlichen Fragen rund um Kryptowerte befassen und das BMF-Schreiben sukzessive ergänzen.
+Die aktuelle Seite in Ihren Sozialen Netzwerken teilen.
+Teilen
+Bei Verwendung des Links kann Facebook den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Facebook teilen. Link öffnet sich in neuem Browserfenster.
+Facebook
+Bei Verwendung des Links kann Twitter den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Twitter teilen. Link öffnet sich in neuem Browserfenster.
+X/Twitter
+Bei Verwendung des Links kann LinkedIn den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über LinkedIn teilen. Link öffnet sich in neuem Browserfenster.
+LinkedIn
+Bei Verwendung des Links kann Xing den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Xing teilen. Link öffnet sich in neuem Browserfenster.
+Xing
+Drucken
+Die aktuelle Seite drucken oder als PDF herunterladen.
+Downloads
+Einzelfragen zur ertragsteuerrechtlichen Behandlung bestimmter Kryptowerte
+PDF|402KB
+Download
+English version - courtesy translation - Questions regarding the income tax treatment of specific crypto-assets in Germany
+PDF|360KB
+Download
+Inhaltübersicht
+Folgen Sie dem Ministerium
+Instagram
+Instagram
+X/Twitter
+X/Twitter
+Facebook
+Facebook
+LinkedIn
+LinkedIn
+YouTube
+YouTube
+Folgen Sie dem Minister
+Instagram
+Instagram
+TikTok
+Facebook
+Facebook
+Beliebte Inhalte
+Link (intern)
+Kfz-Steuer-Rechner
+Link (intern)
+Lohn- und Einkommensteuerrechner
+Link (intern)
+FAQ
+Link (intern)
+Newsletter
+Link (intern)
+BMF-Schreiben
+Link (intern)
+Monatsbericht
+Link (intern)
+Umsatzsteuer-Umrechnungskurse
+Link (intern)
+AfA-Tabellen
+Themenportale
+Externer Link
+Bundeshaushalt
+Externer Link
+DRH 360°
+Externer Link
+Ostbeauftragte der Bundesregierung
+Externer Link
+Mit Geld & Verstand
+Externer Link
+Amtliche Handbücher
+Externer Link
+Ausschuss für Finanzstabilität
+Externer Link
+Datenportal
+Fußzeile
+Impressum
+Datenschutz
+Erklärung zur Barrierefreiheit
+© Bundesministerium der Finanzen
+Nach oben
+Zum Seitenanfang
+Schließen
+Glossar-Hilfe
+...
+Schließen
+Schließen
+Tabelle

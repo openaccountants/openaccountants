@@ -1,0 +1,17 @@
+{
+  "guide_sha256": "5d5f9d8e80b08e2299130e2fe59328714838a89f40a54800eac2e46368e4c382",
+  "ledger_sha256": "9815ac60fe69ff6db8af9e53f2702f82a5d6703b6f6718e1b84c6305f25bbe54",
+  "current_units": 133,
+  "quote_anchors": 52,
+  "source_artifacts": 25,
+  "old_topic_units": 459,
+  "unclassified": [],
+  "retained_reader_quote_anchors": 50,
+  "official_web_observations": 2,
+  "quotes_exact": "50 retained-reader strings checked;2 official rendered observations explicitly distinguished",
+  "raw_reader_hashes_pass": true,
+  "Guide_body_changed": "DE-L08 one dated interest correction plus DE-L10 five original qualitative scenarios restored; evidence retained",
+  "independent_review": "pending, not writer PASS",
+  "source_bound_current_rows": 54,
+  "derived_or_explicit_nonrule_units": 79
+}

@@ -1,0 +1,396 @@
+{
+  "scope": "All6currentnarrativecases checked; zerooriginaloa. ExactFractionPAPimplementation reproduces15officialtestvectors; classIIIcase2 and delegatedemployee55k/72k/18k independentlycalculated. Church8percentinMunich remains explicitlystipulatedalgebra/unverifiedstatelaw, notfreshstateattestation. F0.6619derivedrounding arithmetic, notclaimactualGazettenoticeread. PrecisesiblingMidijob/statechurch/partmonth boundaries remain forcountryassessment.",
+  "number": 78,
+  "controls": [
+    {
+      "name": "officialPAP20000class1",
+      "actual": "380",
+      "expected": "380"
+    },
+    {
+      "name": "officialPAP20000class2",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "officialPAP20000class3",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "officialPAP20000class5",
+      "actual": "2234",
+      "expected": "2234"
+    },
+    {
+      "name": "officialPAP20000class6",
+      "actual": "2766",
+      "expected": "2766"
+    },
+    {
+      "name": "officialPAP60000class1",
+      "actual": "9389",
+      "expected": "9389"
+    },
+    {
+      "name": "officialPAP60000class2",
+      "actual": "8091",
+      "expected": "8091"
+    },
+    {
+      "name": "officialPAP60000class3",
+      "actual": "4822",
+      "expected": "4822"
+    },
+    {
+      "name": "officialPAP60000class5",
+      "actual": "15364",
+      "expected": "15364"
+    },
+    {
+      "name": "officialPAP60000class6",
+      "actual": "15895",
+      "expected": "15895"
+    },
+    {
+      "name": "officialPAP100000class1",
+      "actual": "23248",
+      "expected": "23248"
+    },
+    {
+      "name": "officialPAP100000class2",
+      "actual": "21634",
+      "expected": "21634"
+    },
+    {
+      "name": "officialPAP100000class3",
+      "actual": "15012",
+      "expected": "15012"
+    },
+    {
+      "name": "officialPAP100000class5",
+      "actual": "30157",
+      "expected": "30157"
+    },
+    {
+      "name": "officialPAP100000class6",
+      "actual": "30689",
+      "expected": "30689"
+    },
+    {
+      "name": "case1wageannual",
+      "actual": "9389",
+      "expected": "9389"
+    },
+    {
+      "name": "case1RV",
+      "actual": "465",
+      "expected": "465"
+    },
+    {
+      "name": "case1AV",
+      "actual": "65",
+      "expected": "65"
+    },
+    {
+      "name": "case1KV",
+      "actual": "875/2",
+      "expected": "875/2"
+    },
+    {
+      "name": "case1PV",
+      "actual": "120",
+      "expected": "120"
+    },
+    {
+      "name": "case1employee",
+      "actual": "2175/2",
+      "expected": "2175/2"
+    },
+    {
+      "name": "case1employerPV",
+      "actual": "90",
+      "expected": "90"
+    },
+    {
+      "name": "case1insolvency",
+      "actual": "15/2",
+      "expected": "15/2"
+    },
+    {
+      "name": "case1Soli0",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "case1monthlyLSTtrunc",
+      "actual": "78241",
+      "expected": "78241"
+    },
+    {
+      "name": "case2RV",
+      "actual": "15717/20",
+      "expected": "15717/20"
+    },
+    {
+      "name": "case2AV",
+      "actual": "2197/20",
+      "expected": "2197/20"
+    },
+    {
+      "name": "case2KVcent",
+      "actual": "496.97",
+      "expected": "496.97"
+    },
+    {
+      "name": "case2PVcent",
+      "actual": "90.09",
+      "expected": "90.09"
+    },
+    {
+      "name": "case2employerPVcent",
+      "actual": "104.63",
+      "expected": "104.63"
+    },
+    {
+      "name": "case2annualPAPfullnarrativerun",
+      "actual": "17826",
+      "expected": "17826"
+    },
+    {
+      "name": "case2PAPchildbaseannual",
+      "actual": "11626",
+      "expected": "11626"
+    },
+    {
+      "name": "case2Soli0childbase",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "case2church8stipulatedrateannualalgebra",
+      "actual": "23252/25",
+      "expected": "23252/25"
+    },
+    {
+      "name": "case3employerKVcent",
+      "actual": "78.39",
+      "expected": "78.39"
+    },
+    {
+      "name": "case3employerRVcent",
+      "actual": "90.45",
+      "expected": "90.45"
+    },
+    {
+      "name": "case3flattaxcent",
+      "actual": "12.06",
+      "expected": "12.06"
+    },
+    {
+      "name": "case3employeeRVcent",
+      "actual": "21.71",
+      "expected": "21.71"
+    },
+    {
+      "name": "case3mini603inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "case3midi603point01",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "case4secondjob20000classVI",
+      "actual": "2766",
+      "expected": "2766"
+    },
+    {
+      "name": "case4classIcomparison",
+      "actual": "380",
+      "expected": "380"
+    },
+    {
+      "name": "case4childcountersdoNotChangeLST",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "case5MaytoDecmonths",
+      "actual": "8",
+      "expected": "8"
+    },
+    {
+      "name": "case5room",
+      "actual": "16000",
+      "expected": "16000"
+    },
+    {
+      "name": "case5taxed",
+      "actual": "500",
+      "expected": "500"
+    },
+    {
+      "name": "case5bonusfree",
+      "actual": "500",
+      "expected": "500"
+    },
+    {
+      "name": "case5bonustaxed",
+      "actual": "300",
+      "expected": "300"
+    },
+    {
+      "name": "case5noSVexemption",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "case6filer4200quarterly",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "case6Oct10Saturday",
+      "actual": "5",
+      "expected": "5"
+    },
+    {
+      "name": "case6nextMonday",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "case6oneStartedMonth",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "case6taxlate",
+      "actual": "25/2",
+      "expected": "25/2"
+    },
+    {
+      "name": "case6SVlate",
+      "actual": "69/2",
+      "expected": "69/2"
+    },
+    {
+      "name": "2026miniwageformula",
+      "actual": "1807/3",
+      "expected": "1807/3"
+    },
+    {
+      "name": "2026miniwageroundup",
+      "actual": "603",
+      "expected": "603"
+    },
+    {
+      "name": "2025miniwagelimit",
+      "actual": "556",
+      "expected": "556"
+    },
+    {
+      "name": "2026averagepublished",
+      "actual": "29/10",
+      "expected": "29/10"
+    },
+    {
+      "name": "2026totalrate",
+      "actual": "423/10",
+      "expected": "423/10"
+    },
+    {
+      "name": "2026Fderivedfourdecimal",
+      "actual": "0.6619",
+      "expected": "0.6619"
+    },
+    {
+      "name": "night30hour25percenttaxfree",
+      "actual": "15/2",
+      "expected": "15/2"
+    },
+    {
+      "name": "nightSVexemptportion",
+      "actual": "25/4",
+      "expected": "25/4"
+    },
+    {
+      "name": "nightSVcontributoryexcess",
+      "actual": "5/4",
+      "expected": "5/4"
+    },
+    {
+      "name": "U1basebonusExcluded",
+      "actual": "5000",
+      "expected": "5000"
+    },
+    {
+      "name": "repeatstudyinternnotautomaticexempt",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "agriculture90notgeneral70",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "2025annualreportnominalSunday",
+      "actual": "6",
+      "expected": "6"
+    },
+    {
+      "name": "2025annualreportordinaryMonday",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "2026certnextMonday1March2027",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "2025certnextMonday2March2026",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "employeeLenaactualPAP55k",
+      "actual": "8060",
+      "expected": "8060"
+    },
+    {
+      "name": "employeeJonas72kparentclassIII",
+      "actual": "7564",
+      "expected": "7564"
+    },
+    {
+      "name": "employeeMia18kparentclassV",
+      "actual": "1842",
+      "expected": "1842"
+    },
+    {
+      "name": "MiaKVcare1845plusALVroom55",
+      "actual": "3574",
+      "expected": "3574"
+    },
+    {
+      "name": "employeecombinedreference",
+      "actual": "9406",
+      "expected": "9406"
+    },
+    {
+      "name": "employeeexistingcertificatebalance1910retained",
+      "actual": "1910",
+      "expected": "1910"
+    },
+    {
+      "name": "employeecomputedreferencebalance1918",
+      "actual": "1918",
+      "expected": "1918"
+    }
+  ]
+}

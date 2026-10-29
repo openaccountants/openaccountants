@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="de-de">
+<head>
+    <meta charset="utf-8">
+
+<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2026 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+
+<link rel="icon" href="/favicon_ferd.svg" type="image/svg+xml">
+<title>Zu ZUGFeRD</title>
+<meta name="generator" content="TYPO3 CMS">
+<meta name="robots" content="index,follow">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="author" content="AWV e.V.">
+<meta name="twitter:card" content="summary">
+<meta name="web_author" content="Die Medialen GmbH">
+
+
+<link rel="stylesheet" href="/typo3temp/assets/compressed/merged-77a64f05922cecbba02707079394cef0-39423dc13a51dead2e0dde927f23f43b.css?1791375947" media="all">
+
+
+<script src="/_assets/7a11b16595e634d830c59359e09f8e61/JS/jquery-3.6.1.min.js?1788357680"></script>
+
+
+
+<link rel="canonical" href="https://www.ferd-net.de/standards/zugferd-faq">
+</head>
+<body>
+	<!-- header with nav -->
+    <header class="h-14 md:h-27 w-full bg-white border-b border-black-200 fixed z-50 top-0 left-0 flex items-center">
+		<div class="container flex justify-between items-center xl:items-end w-full">
+		  <div class="flex items-end">
+			
+					<a href="/"><img alt="FeRD-Logo" class="xl:hidden h-8 md:h-20 w-auto shrink-0" src="/_assets/7a11b16595e634d830c59359e09f8e61/Icons/FeRD_Logo.png" width="401" height="146" /></a>
+					<a href="/"><img alt="FeRD-Logo" class="hidden xl:block h-20 w-auto shrink-0" src="/_assets/7a11b16595e634d830c59359e09f8e61/Icons/FeRD_Logo-unterzeile.svg" width="361" height="45" /></a>
+				
+		  </div>
+		  <div class="flex items-end gap-4 md:gap-8">
+			<div>
+  
+    
+      <a class="active-element border-r-2 border-black-400 pr-1 text-black-400 font-semibold hover:text-black-900 active-element:text-black-900 hover:underline active-element:underline"
+        href="/standards/zugferd-faq">DE</a>
+    
+      <a class="text-black-400 font-semibold hover:text-black-900 active-element:text-black-900 hover:underline active-element:underline"
+        href="">EN</a>
+    
+  
+</div>
+<a class="flex flex-col items-center gap-2 cursor-pointer mdmax:w-8" href="/suche">
+  <img alt="Suche" class="w-7 shrink-0" src="/_assets/7a11b16595e634d830c59359e09f8e61/Icons/suche.svg" width="27" height="25" />
+  <p class="hidden md:block mb-0 text-sm font-semibold">
+    Suche
+  </p>
+</a>
+<a class="flex flex-col items-center gap-2 mdmax:w-8" target="_blank" href="https://www.awv-net.de/awv-forum">
+  <img alt="AWV-Forum" class="cursor-pointer w-7 shrink-0" src="/_assets/7a11b16595e634d830c59359e09f8e61/Icons/user.svg" width="27" height="27" />
+  <p class="mb-0 text-sm font-semibold hidden md:block">
+    AWV-Forum
+  </p>
+</a>
+<button class="flex flex-col items-center gap-2 cursor-pointer group" data-toggle-burger-menu>
+  <img data-close-burger-menu="" alt="Menü schließen" class="hidden w-9" src="/_assets/7a11b16595e634d830c59359e09f8e61/Icons/close-menu.svg" width="34" height="21" />
+  <span class="w-9 -ml-1.5 flex flex-col gap-1" data-burger-menu>
+    <span class="w-7 h-1 bg-turquoise-300 group-hover:ml-2 transition-all duration-300"></span>
+    <span class="w-9 h-1 bg-blue"></span>
+    <span class="w-7 h-1 bg-blue-800 group-hover:ml-2 transition-all duration-300"></span>
+  </span>
+  <span class="hidden md:block mb-0 text-sm font-semibold">
+    Menü
+  </span>
+</button>
+		  </div>
+		</div>
+	  </header>
+	  <nav
+  class="hidden w-full bg-black-800 fixed inset-0 z-40 h-full max-h-max overflow-auto"
+  data-main-menu
+  aria-label="Menü"
+>
+    <div class="pt-27 xl:pt-36 pb-12 bg-white">
+        <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-8 container">
+            <!-- first level -->
+            
+                <ul class="text-base text-blue-800 hover:text-black col-span-1 ">
+                    <li class="group flex flex-col gap-3" data-menu-first-level>
+                        
+                                
+                                        <div class="border-b-2 border-blue-800 mr-2 mb-4">
+    <div class="flex gap-1 justify-between">
+        <a href="/ueber-uns" class="font-semibold ml-2 ">Über uns </a>
+        <button
+            class="flex xl:hidden justify-center items-center w-9 group-expanded:hidden"
+            data-first-level-button-closed
+        >
+            <svg viewBox="0 0 15.546 9.187" aria-label="open second level" class="text-blue-800 w-4 h-auto cursor-pointer">
+              <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+        </button>
+        <button
+            class="justify-center items-center w-9 hidden group-expanded:flex xl:hidden"
+            data-first-level-button-open
+        >
+            <svg viewBox="0 0 15.546 9.187" aria-label="close second level" class="text-blue-800 w-4 h-auto rotate-180 cursor-pointer">
+              <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+        </button>
+    </div>
+</div>
+    <!-- second level -->
+    
+        <ul class="text-sm text-blue hover:text-blue-800 gap-4 hidden group-expanded:flex flex-col" data-menu-second-level>
+            <li class="inline">
+                
+                        <div class="flex gap-1 justify-between mr-2">
+                            <a href="/ueber-uns/ferd-und-competence-center" class="font-semibold flex items-center ml-2 ">FeRD und Competence Center </a>
+                            <button class="flex justify-center items-center w-9 shrink-0" data-second-level-button-closed>
+                                <svg viewBox="0 0 15.546 9.187" aria-label="open third level" class="text-blue w-4 h-auto cursor-pointer">
+                                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </button>
+                            <button class="hidden flex justify-center items-center w-9 shrink-0" data-second-level-button-open>
+                                <svg viewBox="0 0 15.546 9.187" aria-label="close third level" class="text-blue w-4 h-auto rotate-180 cursor-pointer">
+                                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </button>
+                        </div>
+                            <!-- third level -->
+                            <ul class="hidden flex flex-col bg-blue-100 text-sm text-blue gap-4 p-2 mt-2 mr-2 mb-2" data-menu-third-level>
+                                
+                                    <li class="flex gap-1 justify-between">
+                                        <a href="/ueber-uns/ferd-und-competence-center/cc1" class="font-semibold hover:text-blue-800 ">CC1 </a>
+                                    </li>
+                                
+                                    <li class="flex gap-1 justify-between">
+                                        <a href="/ueber-uns/ferd-und-competence-center/cc2" class="font-semibold hover:text-blue-800 ">CC2 </a>
+                                    </li>
+                                
+                                    <li class="flex gap-1 justify-between">
+                                        <a href="/ueber-uns/ferd-und-competence-center/cc3" class="font-semibold hover:text-blue-800 ">CC3 </a>
+                                    </li>
+                                
+                            </ul>
+                    
+
+            </li>
+        </ul>
+    
+        <ul class="text-sm text-blue hover:text-blue-800 gap-4 hidden group-expanded:flex flex-col" data-menu-second-level>
+            <li class="inline">
+                
+                        <div class="flex gap-1 justify-between mr-2">
+                            <a href="/ueber-uns/ferd-und-competence-center/ferd-mitglieder" class="font-semibold flex items-center ml-2 mr-10.5 ">FeRD Mitglieder </a>
+                        </div>
+                    
+
+            </li>
+        </ul>
+    
+        <ul class="text-sm text-blue hover:text-blue-800 gap-4 hidden group-expanded:flex flex-col" data-menu-second-level>
+            <li class="inline">
+                
+                        <div class="flex gap-1 justify-between mr-2">
+                            <a href="/ueber-uns/ferd-und-competence-center/europaeische-vernetzung/standard-titel" class="font-semibold flex items-center ml-2 mr-10.5 ">Deutsch-Französische Partnerschaft </a>
+                        </div>
+                    
+
+            </li>
+        </ul>
+    
+        <ul class="text-sm text-blue hover:text-blue-800 gap-4 hidden group-expanded:flex flex-col" data-menu-second-level>
+            <li class="inline">
+                
+                        <div class="flex gap-1 justify-between mr-2">
+                            <a href="/ueber-uns/ferd-und-competence-center/mitwirken-im-ferd" class="font-semibold flex items-center ml-2 mr-10.5 ">Mitwirken im FeRD </a>
+                        </div>
+                    
+
+            </li>
+        </ul>
+    
+        <ul class="text-sm text-blue hover:text-blue-800 gap-4 hidden group-expanded:flex flex-col" data-menu-second-level>
+            <li class="inline">
+                
+                        <div class="flex gap-1 justify-between mr-2">
+                            <a href="/ueber-uns/ferd-und-competence-center/ansprechpersonen" class="font-semibold flex items-center ml-2 mr-10.5 ">Ansprechpersonen </a>
+                        </div>
+                    
+
+            </li>
+        </ul>
+    
+
+                                    
+                            
+                    </li>
+                </ul>
+            
+                <ul class="text-base text-blue-800 hover:text-black col-span-1 ">
+                    <li class="group flex flex-col gap-3" data-menu-first-level>
+                        
+                                
+                                        <div class="border-b-2 border-blue-800 mr-2 mb-4">
+    <div class="flex gap-1 justify-between">
+        <a href="/aktuelles" class="font-semibold ml-2 ">Aktuelles </a>
+        <button
+            class="flex xl:hidden justify-center items-center w-9 group-expanded:hidden"
+            data-first-level-button-closed
+        >
+            <svg viewBox="0 0 15.546 9.187" aria-label="open second level" class="text-blue-800 w-4 h-auto cursor-pointer">
+              <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+        </button>
+        <button
+            class="justify-center items-center w-9 hidden group-expanded:flex xl:hidden"
+            data-first-level-button-open
+        >
+            <svg viewBox="0 0 15.546 9.187" aria-label="close second level" class="text-blue-800 w-4 h-auto rotate-180 cursor-pointer">
+              <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+        </button>
+    </div>
+</div>
+    <!-- second level -->
+    
+        <ul class="text-sm text-blue hover:text-blue-800 gap-4 hidden group-expanded:flex flex-col" data-menu-second-level>
+            <li class="inline">
+                
+                        <div class="flex gap-1 justify-between mr-2">
+                            <a href="/aktuelles/gesetzliche-rahmenbedingungen" class="font-semibold flex items-center ml-2 mr-10.5 ">Rechtliche Rahmenbedingungen </a>
+                        </div>
+                    
+
+            </li>
+        </ul>
+    
+        <ul class="text-sm text-blue hover:text-blue-800 gap-4 hidden group-expanded:flex flex-col" data-menu-second-level>
+            <li class="inline">
+                
+                        <div class="flex gap-1 justify-between mr-2">
+                            <a href="/aktuelles-veranstaltungen/veranstaltungen" class="font-semibold flex items-center ml-2 mr-10.5 ">Veranstaltungen </a>
+                        </div>
+                    
+
+            </li>
+        </ul>
+    
+        <ul class="text-sm text-blue hover:text-blue-800 gap-4 hidden group-expanded:flex flex-col" data-menu-second-level>
+            <li class="inline">
+                
+                        <div class="flex gap-1 justify-between mr-2">
+                            <a href="/aktuelles/meldungen" class="font-semibold flex items-center ml-2 mr-10.5 ">Meldungen </a>
+                        </div>
+                    
+
+            </li>
+        </ul>
+    
+        <ul class="text-sm text-blue hover:text-blue-800 gap-4 hidden group-expanded:flex flex-col" data-menu-second-level>
+            <li class="inline">
+                
+                        <div class="flex gap-1 justify-between mr-2">
+                            <a href="/aktuelles/newsletter" class="font-semibold flex items-center ml-2 mr-10.5 ">Newsletter </a>
+                        </div>
+                    
+
+            </li>
+        </ul>
+    
+
+                                    
+                            
+                    </li>
+                </ul>
+            
+                <ul class="text-base text-blue-800 hover:text-black col-span-1 ">
+                    <li class="group flex flex-col gap-3" data-menu-first-level>
+                        
+                                
+                                        <div class="border-b-2 border-blue-800 mr-2 mb-4">
+    <div class="flex gap-1 justify-between">
+        <a href="/standards" class="font-semibold ml-2 text-black">Standards und FAQs </a>
+        <button
+            class="flex xl:hidden justify-center items-center w-9 group-expanded:hidden"
+            data-first-level-button-closed
+        >
+            <svg viewBox="0 0 15.546 9.187" aria-label="open second level" class="text-blue-800 w-4 h-auto cursor-pointer">
+              <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+        </button>
+        <button
+            class="justify-center items-center w-9 hidden group-expanded:flex xl:hidden"
+            data-first-level-button-open
+        >
+            <svg viewBox="0 0 15.546 9.187" aria-label="close second level" class="text-blue-800 w-4 h-auto rotate-180 cursor-pointer">
+              <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+        </button>
+    </div>
+</div>
+    <!-- second level -->
+    
+        <ul class="text-sm text-blue hover:text-blue-800 gap-4 hidden group-expanded:flex flex-col" data-menu-second-level>
+            <li class="inline">
+                
+                        <div class="flex gap-1 justify-between mr-2">
+                            <a href="/standards/order-x" class="font-semibold flex items-center ml-2 mr-10.5 ">Order-X </a>
+                        </div>
+                    
+
+            </li>
+        </ul>
+    
+        <ul class="text-sm text-blue hover:text-blue-800 gap-4 hidden group-expanded:flex flex-col" data-menu-second-level>
+            <li class="inline">
+                
+                        <div class="flex gap-1 justify-between mr-2">
+                            <a href="/standards/zugferd" class="font-semibold flex items-center ml-2 mr-10.5 ">ZUGFeRD/Factur-X </a>
+                        </div>
+                    
+
+            </li>
+        </ul>
+    
+        <ul class="text-sm text-blue hover:text-blue-800 gap-4 hidden group-expanded:flex flex-col" data-menu-second-level>
+            <li class="inline">
+                
+                        <div class="flex gap-1 justify-between mr-2">
+                            <a href="/faqs" class="font-semibold flex items-center ml-2 text-blue-800">FAQs </a>
+                            <button class="flex justify-center items-center w-9 shrink-0" data-second-level-button-closed>
+                                <svg viewBox="0 0 15.546 9.187" aria-label="open third level" class="text-blue w-4 h-auto cursor-pointer">
+                                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </button>
+                            <button class="hidden flex justify-center items-center w-9 shrink-0" data-second-level-button-open>
+                                <svg viewBox="0 0 15.546 9.187" aria-label="close third level" class="text-blue w-4 h-auto rotate-180 cursor-pointer">
+                                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </button>
+                        </div>
+                            <!-- third level -->
+                            <ul class="hidden flex flex-col bg-blue-100 text-sm text-blue gap-4 p-2 mt-2 mr-2 mb-2" data-menu-third-level>
+                                
+                                    <li class="flex gap-1 justify-between">
+                                        <a href="/faqs/technisches-zur-e-rechnung" class="font-semibold hover:text-blue-800 ">Technisches zur E-Rechnung </a>
+                                    </li>
+                                
+                                    <li class="flex gap-1 justify-between">
+                                        <a href="/faqs/pflichtangaben-in-e-rechnungen" class="font-semibold hover:text-blue-800 ">Pflichtangaben in E-Rechnungen </a>
+                                    </li>
+                                
+                                    <li class="flex gap-1 justify-between">
+                                        <a href="/standards/zugferd-faq" class="font-semibold hover:text-blue-800 text-blue-800">Zu ZUGFeRD </a>
+                                    </li>
+                                
+                                    <li class="flex gap-1 justify-between">
+                                        <a href="/faqs/zugferd-beispielrechnungen" class="font-semibold hover:text-blue-800 ">ZUGFeRD-Beispielrechnungen </a>
+                                    </li>
+                                
+                            </ul>
+                    
+
+            </li>
+        </ul>
+    
+
+                                    
+                            
+                    </li>
+                </ul>
+            
+                <ul class="text-base text-blue-800 hover:text-black col-span-1 ">
+                    <li class="group flex flex-col gap-3" data-menu-first-level>
+                        
+                                
+                                        <div class="border-b-2 border-blue-800 mr-2 mb-4">
+    <div class="flex gap-1 justify-between">
+        <a href="/downloads" class="font-semibold ml-2 ">Downloads </a>
+        <button
+            class="flex xl:hidden justify-center items-center w-9 group-expanded:hidden"
+            data-first-level-button-closed
+        >
+            <svg viewBox="0 0 15.546 9.187" aria-label="open second level" class="text-blue-800 w-4 h-auto cursor-pointer">
+              <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+        </button>
+        <button
+            class="justify-center items-center w-9 hidden group-expanded:flex xl:hidden"
+            data-first-level-button-open
+        >
+            <svg viewBox="0 0 15.546 9.187" aria-label="close second level" class="text-blue-800 w-4 h-auto rotate-180 cursor-pointer">
+              <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+        </button>
+    </div>
+</div>
+    <!-- second level -->
+    
+        <ul class="text-sm text-blue hover:text-blue-800 gap-4 hidden group-expanded:flex flex-col" data-menu-second-level>
+            <li class="inline">
+                
+                        <div class="flex gap-1 justify-between mr-2">
+                            <a href="/downloads/veroeffentlichungen" class="font-semibold flex items-center ml-2 mr-10.5 ">Veröffentlichungen </a>
+                        </div>
+                    
+
+            </li>
+        </ul>
+    
+        <ul class="text-sm text-blue hover:text-blue-800 gap-4 hidden group-expanded:flex flex-col" data-menu-second-level>
+            <li class="inline">
+                
+                        <div class="flex gap-1 justify-between mr-2">
+                            <a href="/downloads/zugferd-logo" class="font-semibold flex items-center ml-2 mr-10.5 ">ZUGFeRD-Logo </a>
+                        </div>
+                    
+
+            </li>
+        </ul>
+    
+
+                                    
+                            
+                    </li>
+                </ul>
+            
+        </div>
+    </div>
+    <div class="bg-black-100 w-full">
+        <div class="container">
+          <p class="md:hidden mb-0 uppercase font-semibold text-sm col-span-12 pb-4 pt-8 md:w-max">Direkt zu</p>
+          <div class="flex gap-4 xs:gap-8 sm:gap-16 items-center pb-8 md:py-6">
+            <p class="hidden md:flex mb-0 uppercase font-semibold text-sm md:h-10 items-center justify-center">Direkt zu</p>
+            
+                    <a target="_blank" href="https://www.awv-net.de/"><img alt="AWV Logo" class="h-7 sm:h-10 w-auto" src="/_assets/7a11b16595e634d830c59359e09f8e61/Icons/AWV_Logo.svg" width="148" height="49" /></a>
+                    <a target="_blank" href="https://www.extra-standard.de/"><img alt="Extra Logo" class="h-7 sm:h-10 w-auto" src="/_assets/7a11b16595e634d830c59359e09f8e61/Icons/extra-logo.svg" width="113" height="37" /></a>
+                    <a target="_blank" href="https://www.awv-net.de/awv-forum"><img alt="AWV Forum Logo" class="h-7 sm:h-10 w-auto" src="/_assets/7a11b16595e634d830c59359e09f8e61/Icons/AWV_FORUM_Logo.svg" width="135" height="46" /></a>
+                
+
+          </div>
+        </div>
+      </div>
+</nav>
+	  <!-- sidenav -->
+<div class="fixed top-36 right-0 z-30 hidden md:flex justify-end h-full w-0">
+    <div class="translate-x-closed transition-all duration-300 h-max" data-sidenav>
+        <div class="flex">
+            <div class="flex flex-col">
+                
+                    <button class="w-16 h-16 bg-turquoise-300 flex justify-center items-center border-t-2 border-l-2 border-r-2 border-white " data-sidenav-button>
+                        <img alt="Newsletter" class="w-12 h-auto" src="/fileadmin/user_upload/Icons/Newsletter_hover.svg" width="46" height="38" />
+                    </button>
+                
+                    <button class="w-16 h-16 bg-blue flex justify-center items-center border-t-2 border-l-2 border-r-2 border-white " data-sidenav-button>
+                        <img alt="Newsletter" class="w-12 h-auto" src="/fileadmin/user_upload/Icons/Mitarbeit_02.svg" width="400" height="400" />
+                    </button>
+                
+                    <button class="w-16 h-16 bg-blue-800 flex justify-center items-center border-t-2 border-l-2 border-r-2 border-white border-b-2" data-sidenav-button>
+                        <img alt="Newsletter" class="w-12 h-auto" src="/fileadmin/user_upload/Icons/Cloud_Download.svg" width="399" height="400" />
+                    </button>
+                
+            </div>
+            
+                <div class=" w-108 bg-white pt-10 pb-10 pl-10 flex items-start shadow-2xl" data-sidenav-content>
+                    <div class="w-80">
+                        <h2 class="text-xl font-bold mb-3">Bleiben Sie informiert!</h2>
+                        <div class="mb-3"><p>Erfahren Sie Neuigkeiten über Fachthemen und Veranstaltungen.</p></div>
+                        <a href="/aktuelles/newsletter" class="flex gap-2 text-base text-blue hover:text-blue-800 font-semibold group">zum Newsletter anmelden 
+                            <svg viewBox="0 0 15.546 9.187" aria-label="closed" class="text-blue group-hover:text-blue-800 w-4 h-auto cursor-pointer -rotate-90 shrink-0">                            
+                                  <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <svg viewBox="0 0 15.546 9.187" aria-label="closed" class="text-blue group-hover:text-blue-800 w-4 h-auto cursor-pointer -rotate-90 -ml-4 opacity-0 group-hover:opacity-100 transition-all duration-300 shrink-0">
+                                  <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="w-12 h-auto ml-1">
+                        <f:image src="EXT:awv_sitepackage/Resources/Public/Icons/close-menu.svg" alt="Menü schließen" class="2xl:hidden" data-close-sidenav />
+                    </button>
+                </div>
+            
+                <div class="hidden w-108 bg-white pt-10 pb-10 pl-10 flex items-start shadow-2xl" data-sidenav-content>
+                    <div class="w-80">
+                        <h2 class="text-xl font-bold mb-3">Seien Sie dabei!</h2>
+                        <div class="mb-3"><p>Ihnen gefällt, wofür sich das Forum elektronische Rechnung Deutschland einsetzt?</p></div>
+                        <a href="/ueber-uns/ferd-und-competence-center/mitwirken-im-ferd" class="flex gap-2 text-base text-blue hover:text-blue-800 font-semibold group">mitwirken und vernetzen 
+                            <svg viewBox="0 0 15.546 9.187" aria-label="closed" class="text-blue group-hover:text-blue-800 w-4 h-auto cursor-pointer -rotate-90 shrink-0">                            
+                                  <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <svg viewBox="0 0 15.546 9.187" aria-label="closed" class="text-blue group-hover:text-blue-800 w-4 h-auto cursor-pointer -rotate-90 -ml-4 opacity-0 group-hover:opacity-100 transition-all duration-300 shrink-0">
+                                  <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="w-12 h-auto ml-1">
+                        <f:image src="EXT:awv_sitepackage/Resources/Public/Icons/close-menu.svg" alt="Menü schließen" class="2xl:hidden" data-close-sidenav />
+                    </button>
+                </div>
+            
+                <div class="hidden w-108 bg-white pt-10 pb-10 pl-10 flex items-start shadow-2xl" data-sidenav-content>
+                    <div class="w-80">
+                        <h2 class="text-xl font-bold mb-3">Erfahren Sie mehr!</h2>
+                        <div class="mb-3"><p>Wir entwickeln Lösungen für die gesamte supply chain.</p></div>
+                        <a href="/standards" class="flex gap-2 text-base text-blue hover:text-blue-800 font-semibold group">direkt zu unseren Standards 
+                            <svg viewBox="0 0 15.546 9.187" aria-label="closed" class="text-blue group-hover:text-blue-800 w-4 h-auto cursor-pointer -rotate-90 shrink-0">                            
+                                  <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <svg viewBox="0 0 15.546 9.187" aria-label="closed" class="text-blue group-hover:text-blue-800 w-4 h-auto cursor-pointer -rotate-90 -ml-4 opacity-0 group-hover:opacity-100 transition-all duration-300 shrink-0">
+                                  <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="w-12 h-auto ml-1">
+                        <f:image src="EXT:awv_sitepackage/Resources/Public/Icons/close-menu.svg" alt="Menü schließen" class="2xl:hidden" data-close-sidenav />
+                    </button>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+	<!-- header slider -->
+	<section class="section section-full">
+		<div class="w-full">
+			
+        <div class="section section-full bg-blue-100 w-full h-fit">
+            <div
+              class="md:-ml-14 md:mr-32 md:w-fit text-white py-4 md:pl-14 md:pt-8 md:pb-8 xl:pt-12 xl:pb-12 md:-skew-x-20 flex items-center bg-gradient-to-r from-turquoise-300 from-10% via-blue via-60% to-blue-800 to-90%"
+            >
+              <h1 class="container-01 md:skew-x-20 mb-0 smmax:hyphens-auto smmax:break-words">
+                Zu ZUGFeRD
+              </h1>
+            </div>
+          </div>
+     
+
+		</div>
+	</section>
+	<nav class="section my-2 xl:my-3">
+		<ul class="container flex flex-wrap gap-y-2 gap-x-4">
+    
+        
+                <li class="relative text-xs xl:text-sm text-blue">
+                    <a
+                        href="/"
+                        class="font-semibold after:bg-blue after:absolute after:top-2.5 after:-right-2.5 after:w-1 after:h-1 after:border after:border-blue after:rounded"
+                        >FeRD</a
+                    >
+                </li>
+            
+    
+        
+                <li class="relative text-xs xl:text-sm text-blue">
+                    <a
+                        href="/standards"
+                        class="font-semibold after:bg-blue after:absolute after:top-2.5 after:-right-2.5 after:w-1 after:h-1 after:border after:border-blue after:rounded"
+                        >Standards und FAQs</a
+                    >
+                </li>
+            
+    
+        
+                <li class="relative text-xs xl:text-sm text-blue">
+                    <a
+                        href="/faqs"
+                        class="font-semibold after:bg-blue after:absolute after:top-2.5 after:-right-2.5 after:w-1 after:h-1 after:border after:border-blue after:rounded"
+                        >FAQs</a
+                    >
+                </li>
+            
+    
+        
+                <li class="text-xs xl:text-sm font-semibold">Zu ZUGFeRD</li>
+            
+    
+</ul>
+  
+	</nav>
+	
+			<main class="relative mt-14 xl:mt-20">
+				<div class="section with-sidebar">
+					<aside class="with-sidebar__aside sidebar" id="sidebar">
+						<div class="bg-blue-100 p-4 mb-7">
+    <h2 class="text-base xl:text-2lg font-semibold mb-6">FAQs</h2>
+    
+        <a href="/faqs/technisches-zur-e-rechnung"
+            class=" active-element:text-black-900 relative flex text-sm pl-4 w-full  hover:text-black-900 font-semibold border-b-2 last:border-0 border-b-black-200 pb-3 last:pb-0 mb-3 last:mb-0 before:shrink-0 before:absolute before:top-0 before:left-0 before:content-arrow-tiny-light before:hover:content-arrow-tiny-dark before:active-element:content-arrow-tiny-dark before:-mt-0.5">Technisches zur E-Rechnung</a>
+    
+        <a href="/faqs/pflichtangaben-in-e-rechnungen"
+            class=" active-element:text-black-900 relative flex text-sm pl-4 w-full  hover:text-black-900 font-semibold border-b-2 last:border-0 border-b-black-200 pb-3 last:pb-0 mb-3 last:mb-0 before:shrink-0 before:absolute before:top-0 before:left-0 before:content-arrow-tiny-light before:hover:content-arrow-tiny-dark before:active-element:content-arrow-tiny-dark before:-mt-0.5">Pflichtangaben in E-Rechnungen</a>
+    
+        <a href="/standards/zugferd-faq"
+            class="active-element active-element:text-black-900 relative flex text-sm pl-4 w-full  hover:text-black-900 font-semibold border-b-2 last:border-0 border-b-black-200 pb-3 last:pb-0 mb-3 last:mb-0 before:shrink-0 before:absolute before:top-0 before:left-0 before:content-arrow-tiny-light before:hover:content-arrow-tiny-dark before:active-element:content-arrow-tiny-dark before:-mt-0.5">Zu ZUGFeRD</a>
+    
+        <a href="/faqs/zugferd-beispielrechnungen"
+            class=" active-element:text-black-900 relative flex text-sm pl-4 w-full  hover:text-black-900 font-semibold border-b-2 last:border-0 border-b-black-200 pb-3 last:pb-0 mb-3 last:mb-0 before:shrink-0 before:absolute before:top-0 before:left-0 before:content-arrow-tiny-light before:hover:content-arrow-tiny-dark before:active-element:content-arrow-tiny-dark before:-mt-0.5">ZUGFeRD-Beispielrechnungen</a>
+    
+</div>
+						
+					</aside>
+					<div class="with-sidebar__content content">
+						<section class="section mb-14 xl:mb-20 frame-space-after-large">
+  <div class="container">
+    <header>
+      <h2 class="mb-5 xl:mb-7">Zu ZUGFeRD</h2>
+    </header>
+    <div data-accordion>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Was genau ist ZUGFeRD/Factur-X?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <p>ZUGFeRD/Factur-X ist ein branchenübergreifendes, hybrides Datenformat für den elektronischen Rechnungsaustausch, das sich aus einer PDF/A-3-Datei (Sichtformat) und einer eingebetteten XML-Datei (maschinenlesbar) zusammensetzt. So lässt sich die Rechnungsverarbeitung automatisieren, während dem Empfänger gleichzeitig die Möglichkeit eingeräumt wird, die Rechnung manuell zu erfassen.&nbsp;</p>
+<p>Das „Forum elektronische Rechnung Deutschland“ (FeRD) entwickelt dieses Format zusammen mit dem „Französischen Nationalen Forum für Elektronische Rechnung sowie der Öffentlichen Elektronischen Märkte“ (<a href="https://fnfe-mpe.org/" target="_blank" rel="noreferrer">FNFE-MPE</a>) seit 2014 kontinuierlich weiter. Ab der Version 2.0 vom 24.03.2020 sind Factur-X und ZUGFeRD deckungsgleich.&nbsp;</p>
+<p>Das hybride Rechnungsformat lässt sich vielfältig einsetzen. Sowohl im B2B-, im B2C- als auch in Deutschland im B2G-Geschäftsverkehr kann ZUGFeRD eingesetzt werden. Solche Vielseitigkeit erstreckt sich auch über eine große Bandbreite an Geschäftsvorfällen. Um dem Anwender die Verwendung von ZUGFeRD/Factur-X zu erleichtern, hat man fünf sogenannte „Profile“ entwickelt, wovon drei nach deutschem Recht als Rechnung gelten (EN 16931, EXTENDED, BASIC). Die Profile stellen einen, der jeweiligen Unternehmensgröße und -komplexität entsprechenden Satz an Pflicht- und Wahlelementen für die Erstellung einer ordnungsgemäßen E-Rechnung gemäß der EU-Norm EN16931. Dies ist sinnvoll, denn ein Bäcker mit drei Angestellten wird deutlich einfachere Buchhaltungsprozesse haben als ein internationaler Konzern mit mehreren Standorten. Für letzteren werden in seiner Rechnung deutlich mehr Elemente erforderlich sein, wie Anschrift des Hauptsitzes, Rechnungs- bzw. Postanschrift usw. Die Strukturierung dieser Profile basiert auf den Grundsätzen von ZUGFeRD/Factur-X und wird demgemäß vom FeRD und FNFE-MPE verantwortet.&nbsp;</p>
+<p>Darüber hinaus wurde 2022 ein Referenzprofil definiert, bei dem lediglich die Methode der Einbindung einer normkonformen XML-Datei beschrieben wird. Damit ist es möglich, länderspezifische Ausprägungen der EU-Norm (sog. CIUS, <i>Core Invoice Usage Specification</i>) wie den Standard XRechnung im Format ZUGFeRD/Factur-X zu berücksichtigen. Das deutsche ZUGFeRD-Referenzprofil heißt daher auch „Referenzprofil XRECHNUNG“.</p>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Was ist ein hybrides Rechnungsformat?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <p>Ein hybrides Rechnungsformat kombiniert eine menschenlesbare PDF/A‑Darstellung mit eingebetteten XML‑strukturierten Daten für die&nbsp;maschinelle Weiterverarbeitung. Der strukturierte Datensatz gilt dabei als führender Teil; der Sichtteil ist eine bildhafte Repräsentanz derselben Rechnung.</p>
+<p>Hybride Formate schließen die Lücke zwischen klassischem Belegbild und automatisierbarer E‑Rechnung, indem sie Lesbarkeit und Prozessfähigkeit in einer Datei vereinen.</p>
+<h3 style="margin-left:0cm;">Aufbau und Technik</h3>
+<p>Technisch dient meist ein PDF/A‑3 als Container; die Rechnungsdaten werden als XML in das PDF eingebettet und können automatisiert ausgelesen werden.</p>
+<p>Entscheidend ist die inhaltliche Identität beider Teile; Abweichungen sind fachlich wie steuerlich riskant. Für Zwecke der Umsatzsteuer wird in Deutschland faktenbasiert auf den strukturierten Rechnungsteil abgestellt (führender Teil); der Bildteil ist dann nur ein inhaltlich identisches Mehrstück.</p><figure class="image image-block"><p><img data-htmlarea-file-uid="1536" data-htmlarea-file-table="sys_file" width="490" height="102" title="Grafik Aufbau E-Rechnung" alt="Abbildung: Grafik; Aufbau einer E-Rechnung" src="/fileadmin/user_upload/FeRD/f%C3%BCr_FeRD-Meldungen/Grafik_Aufbau_Technik_ERechnung.jpg" data-title-override="true" data-alt-override="true" data-quality="retina"></p></figure><h3 style="margin-left:0cm;"><br>Vorteile und Herausforderungen</h3>
+<p>Vorteile sind eine hohe Automatisierbarkeit (Import der strukturierten Daten in ERP/Buchhaltung), belastbare Archivierung durch PDF/A‑Konformität und gleichzeitig unmittelbare Lesbarkeit für Prüfer und Fachbereiche.</p>
+<p>Herausforderungen liegen im zusätzlichen Erstellungs‑ und Validierungsaufwand sowie im Risiko inkonsistenter Inhalte zwischen Sicht‑ und Datenteil, weshalb Kontrollmechanismen zur Sicherung identischer Inhalte (PDF/XML) empfehlenswert sind.</p>
+<h3 style="margin-left:0cm;">Bedeutung in der Praxis</h3>
+<p>In der Praxis erleichtern hybride Rechnungsformate die Einführung standardisierter E‑Rechnungsprozesse, weil sie einen lesbaren Beleg mit einem führenden, automatisierbaren Datensatz verbinden.</p>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Welche Anforderungen gibt es bei ZUGFeRD/Factur-X an das PDF-Format (Stichwort: hybrider Beleg)?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <h3>Anforderung an das PDF</h3>
+<p>Die PDF-Datei sollte dem PDF/A-3 Format entsprechen, das ist eine Version des Portable Document Formats zur Langzeitarchivierung. Es wurde von der International Organization for Standardization (ISO) im Standard ISO-19005-3 genormt.</p>
+<p>Die Spezifikation von PDF/A-3 schränkt die technischen Möglichkeiten von PDF&nbsp;1.7 ein und erfordert beispielsweise, dass alle im sichtbaren Teil des PDF enthaltenen Schriftarten zusätzlich in die PDF-Datei eingebettet werden müssen, damit Texte auch nach vielen Jahren noch korrekt angezeigt werden können.</p>
+<h3>Anforderung an das eingebettete XML</h3>
+<p>Das E-Rechnungs-XML muss eine gültigen E-Rechnungsprofilen entsprechen, z.B. EN16931, EXTENDED oder XRechnung in der Syntax UN/CEFACT CII.</p>
+<p>In der aktuellen Version des ZUGFeRD/Factur-X-Standards ist pro PDF/A-3-Dokument die Referenzierung auf jeweils nur ein Rechnungsdatendokument zulässig (bezeichnet mit „factur-x.xml“ bzw. „xrechnung.xml“).</p>
+<h3>Hinweis aus Spezifikation von ZUGFeRD/Factur-X</h3>
+<p>Ab dem 01.01.2025 ist in Deutschland das in das Hybriddokument eingebettete XML die Rechnung. Wenn das XML gültig ist (erfolgreiche Validierung aller Geschäftsregeln, die für die nationale Anforderungen in Deutschland gelten) und aus dem PDF extrahiert werden kann, handelt es sich um eine gültige E-Rechnung. Technische Fehler in Bezug auf den PDF/A-Standard sind lediglich als Warnung zu beachten und sind keine schwerwiegenden Fehler. Dennoch KANN der Empfänger der Rechnung den Absender auffordern, eine aktualisierte und korrigierte Version zu liefern, die dem PDF/A-Standard entspricht.</p>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Ist ZUGFeRD/Factur-X eine Softwareanwendung?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <h3>Einordnung</h3>
+<p>In der Praxis werden E‑Rechnungsstandards häufig mit den Softwareprodukten verwechselt, die sie technisch umsetzen.</p>
+<h3>Klare Antwort</h3>
+<p>Nein: ZUGFeRD/Factur‑X ist keine Softwareanwendung, sondern ein (hybrides) Rechnungsformat bzw. eine Spezifikation, die vom Forum elektronische Rechnung Deutschland (FeRD) veröffentlicht und koordiniert wird in Zusammenarbeit mit dem französischen Partnerforum für E-Rechnungen <a href="https://fnfe-mpe.org/" target="_blank" rel="noreferrer">FNFE-MPE</a>.</p>
+<h3>Begründung</h3>
+<p>ZUGFeRD/Factur‑X definiert den Dokumentenaufbau einer Rechnung als PDF/A‑3 mit eingebettetem XML‑Datensatz mit strukturierten Daten: Das PDF ist die visuelle, menschenlesbare Repräsentanz, das XML dient der maschinellen Weiterverarbeitung; beide Teile müssen inhaltlich zusammenpassen.</p>
+<p>Erzeugen, Versenden, Empfangen, Validieren und Verarbeiten erledigt hingegen Software, die das Format implementiert; vergleichbar beschreibt der von Koordinierungsstelle für IT-Standards (KoSIT) betriebene Standard XRechnung ausdrücklich den Empfang und die Weiterverarbeitung durch unterschiedliche Softwaresysteme.</p>
+<h3>Praxisvermerk</h3>
+<p>Rechtlich verlangt u.a. die Europäische Union im B2G‑Kontext (Richtlinie 2014/55/EU), dass öffentliche Stellen EN‑16931‑konforme E‑Rechnungen empfangen und verarbeiten können, sowie das <a href="https://www.recht.bund.de/bgbl/1/2024/108/VO.html" target="_blank" rel="noreferrer">Wachstumschancengesetz</a> in Deutschland im B2B-Kontext – ohne eine bestimmte Software vorzuschreiben; deshalb existieren viele Implementierungen, während ZUGFeRD/Factur‑X selbst „nur“ das Format festlegt.</p>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Wie viele Profile gibt es von ZUGFeRD/Factur-X?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <h3>Einordnung</h3>
+<p>Bei ZUGFeRD/Factur‑X steuern „Profile“ den Datenumfang des strukturierten XML‑Teils und damit, wie weit Prozesse automatisiert werden können.</p>
+<h3>Anzahl und offizielle Bezeichnungen</h3>
+<p>Im Kernstandard gibt es fünf Datenprofile mit den offiziellen Bezeichnungen:</p><ul class="list-disc" style="margin-left:8px;"><li data-list-item-id="e9b30683579daf3499178863e90b0d156">MINIMUM</li><li data-list-item-id="e2ee7f938cff547d910a183fc1f7136b7">BASIC WL</li><li data-list-item-id="e56056a419116893a1754f369cd9fbae8">BASIC</li><li data-list-item-id="e78ae779595a222039dc68d2cd1e30107">EN 16931 (COMFORT) und</li><li data-list-item-id="edb8825d9c061d6c7c82e1095839a172b">EXTENDED</li><li data-list-item-id="e1a9af81569a26304da7dd8507a81f3ec">Zusätzlich existiert ein Referenzprofil XRECHNUNG.<br>Das Forum elektronische Rechnung Deutschland (FeRD) bezeichnet es ausdrücklich als „sechstes Profil“ (eingeführt ab ZUGFeRD Version 2.1.1).&nbsp;</li></ul><p>Damit lautet die exakte Antwort je nach Zählweise: 5 (nur Datenprofile) bzw. 6 (inkl. Referenzprofil XRECHNUNG).</p>
+<h3>EN 16931‑Konformität und Referenzprofil</h3>
+<p>Als EN‑16931‑konform im Sinne der vollständigen Abbildung wird das Profil EN&nbsp;16931 (COMFORT) beschrieben; EXTENDED baut darauf auf und erweitert den Umfang.</p>
+<p>Das Referenzprofil XRECHNUNG ist an die jeweils gültige XRechnung‑Spezifikation angebunden, die von Koordinierungsstelle für IT-Standards (KoSIT) veröffentlicht wird. Im ZUGFeRD‑Referenzprofil ist dabei nur die XML‑Syntax&nbsp;CII zulässig (XRechnung erlaubt CII und UBL).</p>
+<h3>Praxis-Hinweis</h3>
+<p>Die Profile unterscheiden sich primär durch Detailtiefe (von MINIMUM/BASIC WL bis EN 16931/EXTENDED). Für interoperable EU‑Szenarien wird üblicherweise EN 16931 bzw. XRECHNUNG verlangt oder vereinbart.</p>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Welche ZUGFeRD/Factur-X-Profile gibt es?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <p>Es gibt sechs ZUGFeRD/Factur-X-Profile, die sich im Umfang der standardisierten Daten und in Bezug auf die Rechnungskonformität gemäß dem Umsatzsteuer­gesetz (UStG) unterscheiden. Um EU-konforme elektronische Rechnungen zu erstellen, ist die Rechnungsstellung mit dem ZUGFeRD-Profil EN 16931 zu empfehlen.</p><figure class="image image-block"><p><img data-htmlarea-file-uid="1537" data-htmlarea-file-table="sys_file" width="591" height="297" title="Abbildung: Grafik; Übersicht über die ZUGFeRD-Profile" alt="Übersicht über die ZUGFeRD-Profile" src="/fileadmin/user_upload/FeRD/f%C3%BCr_FeRD-Meldungen/Grafik_Profile_ZUGFeRD.jpg" data-title-override="true" data-alt-override="true" data-quality="retina"></p></figure><p>&nbsp;</p><ul class="list-disc"><li data-list-item-id="e2dfb9b3a9630ccb3e4e1904d16027042">Profil: <strong>EN 16931 (COMFORT)</strong>&nbsp;<br>Das EN 16931 (COMFORT)-Profil bildet die EN 16931-1 vollständig ab und fokussiert auf Kernelemente einer elektronischen Rechnung.<br>In Deutschland nach UStG als vollständige Rechnung anerkannt: Ja<br>Empfang und Verarbeitung der Rechnung beim Käufer: Pflicht.</li><li data-list-item-id="e97f446ca192698b90ce9f1067a858d32">Profil: <strong>EXTENDED</strong><br>Das Profil EXTENDED ist eine Erweiterung der EN 16931-1 zur Unterstützung komplexerer Geschäftsprozesse (Rechnungen, in denen über mehrere Lieferungen/Lieferorte abgerechnet wird, strukturierte Zahlungsbedingungen, weitere Angaben auf Positionsebene zur Unterstützung der Lagerhaltung etc.)<br>In Deutschland nach UStG als vollständige Rechnung anerkannt: Ja<br>Empfang und Verarbeitung der Rechnung beim Käufer: bilaterale Vereinbarung.</li><li data-list-item-id="e0e0c51cb2d2127bbf73ddc0b43d0de7a">Profil: <strong>BASIC</strong><br>Das Profil BASIC stellt eine Untermenge der EN 16931-1 dar und kann für einfache UStG-konforme Rechnungen genutzt werden.<br>In Deutschland nach UStG als vollständige Rechnung anerkannt: Ja<br>Empfang und Verarbeitung der Rechnung beim Käufer: bilaterale Vereinbarung.</li><li data-list-item-id="ec260d588e373785d8e3eaeefa6b0592e">Profil: <strong>BASIC WL</strong>&nbsp;<br>Das Profil BASIC WL beinhaltet keine Rechnungspositionen und kann somit keine UStG-konformen Rechnungen abbilden. Es enthält jedoch auf Dokumentenebene alle Informationen, die zur Buchung der Rechnung benötigt werden. Es stellt somit eine Buchungshilfe dar.<br>In Deutschland nach UStG als vollständige Rechnung anerkannt: Nein.</li><li data-list-item-id="e88168dda7a8c05ff442e80804b1880b2">Profil: <strong>MINIMUM</strong><br>Das Profil MINIMUM enthält die wesentlichen Angaben zu Käufer und Verkäufer, den Gesamtrechnungsbetrag und die Gesamtumsatzsteuer. Auf Positionsebene kann nur die Referenz des Käufers angegeben werden. Eine Aufschlüsselung der Umsatzsteuer wird nicht unterstützt. Es stellt somit eine Buchungshilfe dar.&nbsp;<br>In Deutschland nach UStG als vollständige Rechnung anerkannt: Nein.</li><li data-list-item-id="ebc6945daed4c2227cee71a3fa2127e7f">Referenzprofil: <strong>XRECHNUNG</strong>&nbsp;<br>Ein neuer Profiltyp wurde zum ursprünglichen Konzept von ZUGFeRD/Factur-X hinzugefügt, das sogenannte „Referenzprofil“. Damit lassen sich externe XML-Strukturen in ein PDF einbinden, so wie beispielsweise die des von der Koordinierungsstelle für IT-Standards (KoSIT) verantworteten deutschen Standards XRechnung. (Darauf wird im ZUGFeRD-Referenzprofil durch die Bezeichnung als „Referenzprofil XRECHNUNG“ Bezug genommen.)&nbsp;<br>In Deutschland nach UStG als vollständige Rechnung anerkannt: Ja<br>Empfang und Verarbeitung der Rechnung beim Käufer: Pflicht.</li></ul>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Kann ich ZUGFeRD Version 1.0 weiterverwenden?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <p>Der Gesetzgeber schreibt vor, dass ZUGFeRD-Dateien nur ab der Version 2.01 (mit Ausnahme der Profile MINIMUM und BASIC‑WL) als E-Rechnung gemäß <a href="https://www.recht.bund.de/bgbl/1/2024/108/VO.html" target="_blank" rel="noreferrer">Wachstumschancengesetz</a> anerkannt werden.</p>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Wie lange sind ältere ZUGFeRD-Versionen einsetzbar?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <p>Der ZUGFeRD-Standard wird, genau wie die XRechnung der Koordinierungsstelle für IT-Standards (KoSIT) auch, stetig weiterentwickelt.&nbsp;</p>
+<p><strong>Aber anders als bei XRechnung, wo nur die aktuelle veröffentliche Version eingesetzt werden darf, haben die ZUGFeRD Spezifikationen kein Ablaufdatum.</strong></p>
+<p>(<strong>Ausnahme</strong> ist das Profil XRECHNUNG, da müssen Form und Inhalt der <strong>gültigen</strong> Spezifikation entsprechen).<sup>1</sup></p>
+<p><sup>1</sup>Beitrag „<a href="https://www.ferd-net.de/aktuelles-veranstaltungen/aktuelles/news/aenderungen-im-zugferd-versionsmanagement" target="_blank">Änderungen im ZUGFeRD-Versionsmanagement</a>“ vom 22.07.2022</p>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Wo kann ich Skonto in ZUGFeRD abbilden?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <p>Skonto kann im BT-20: „Zahlungsbedingungen“ angegeben werden, dabei stehen je nach genutztem ZUGFERD/Factur-X-Profil unterschiedliche Möglichkeiten zur Verfügung:</p>
+<p>In den Profilen „BASIC“ und „EN16931“ gibt es keine Möglichkeit einer strukturierten Angabe, es kann nur als Klartext übermittelt werden.</p>
+<p>&lt;ram:SpecifiedTradePaymentTerms&gt;<br>&nbsp; &nbsp;&lt;ram:Description&gt;<br>&nbsp; &nbsp; &nbsp;Bei Zahlung innerhalb 14 Tagen gewähren wir 2,0% Skonto.<br>&nbsp; &nbsp;&lt;/ram:Description&gt;</p>
+<p>Im Profil „EXTENDED“ können die dafür vorgesehenen Felder des Cross IndustryInvoice XML-Formats genutzt werden (strukturierte Angabe).<br>&lt;ram:SpecifiedTradePaymentTerms&gt;<br>&nbsp; &nbsp; &lt;ram:Description&gt;<br>&nbsp; &nbsp; &nbsp;Bei Zahlung innerhalb 14 Tagen gewähren wir 2,0% Skonto.<br>&nbsp; &nbsp;&lt;/ram:Description&gt;</p>
+<p>&nbsp; &nbsp;&lt;ram:ApplicableTradePaymentDiscountTerms&gt;<br>&nbsp; &nbsp; &nbsp; &lt;ram:BasisPeriodMeasure&nbsp;unitCode="DAY"&gt;14&lt;/ram:BasisPeriodMeasure&gt;<br>&nbsp; &nbsp; &nbsp; &lt;ram:BasisAmount&gt;285&lt;/ram:BasisAmount&gt;<br>&nbsp; &nbsp; &nbsp; &lt;ram:CalculationPercent&gt;2.00&lt;/ram:CalculationPercent&gt;<br>&nbsp; &nbsp;&lt;/ram:ApplicableTradePaymentDiscountTerms&gt;</p>
+<p>&lt;/ram:SpecifiedTradePaymentTerms&gt;</p>
+<p><br>Darüber hinaus gibt es im Referenzprofil „XRECHNUNG“ die Möglichkeit, die auf der E-Rechnungsseite des Bundes beschriebene Notation zu verwenden.</p>
+<p>&lt;ram:SpecifiedTradePaymentTerms&gt;<br>&nbsp; &nbsp;&lt;ram:Description&gt;&nbsp;<br>&nbsp; &nbsp; #SKONTO#TAGE=14#PROZENT=2.00#<br>&nbsp; &lt;/ram:Description&gt;</p>
+<p>&nbsp;</p>
+<hr>
+<h4>&nbsp;<br><br>Quelle:</h4><ul class="list-disc"><li data-list-item-id="e915b84349133573b26ab8b6566b7f1ee"><strong>Allgemeine Dokumente zur elektronischen Rechnungsstellung auf der Internetseite des Beschaffungsamts des BMI: </strong><a href="https://e-rechnung-bund.de/mediathek/dokumente/" target="_blank" rel="noreferrer">https://e-rechnung-bund.de/mediathek/dokumente/</a><br>(dort Hinweis 6 in PDF-Dokument „05 Hinweise zur Rechnungsstellung“)</li><li data-list-item-id="ea8678821eadba34e543ade58c46c55fd"><p style="margin-left:0cm;">Alternativ:<strong> Beschaffungsamt des BMI: Sieben Hinweise für den reibungslosen elektronischen Rechnungsaustausch mit der Bundesverwaltung&nbsp;</strong><br>(<a href="https://e-rechnung-bund.de/app/uploads/2025/09/Hinweise-zur-Rechnungsstellung_092025.pdf" target="_blank" rel="noreferrer">https://e-rechnung-bund.de/app/uploads/2025/09/Hinweise-zur-Rechnungsstellung_092025.pdf</a>)</p></li></ul><p>(Stand vom 07.09.2026)&nbsp;</p>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Wie kann ich rechnungsbegründende Unterlagen mitschicken?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <p>Rechnungsbegleitende Unterlagen <strong>müssen</strong> (Base64 codiert) in die ZUGFeRD/Factur-X.xml-Datei eingebettet sein.</p>
+<p>Solche Unterlagen können nur in den Profilen „EN16931“ und „EXTENDED“ verwendet werden.</p>
+<p>Optional können diese als weiterer Anhang in die PDF-Datei eingebunden werden (in allen Profilen verfügbar).</p>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              So viele Belegarten für E-Rechnungen, wohin fließt das Geld?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <p>In der ZUGFeRD/Factur-X-Dokumentation (Stand: ZUGFeRD 2.3/Factur-X 1.0.07) sind über 50 zulässige Codes als Rechnungstypen (BT-3) aufgelistet. In der Grafik unten sind die gebräuchlichsten davon dargestellt mit der Richtungsangabe des Geldflusses in Abhängigkeit vom positiven oder negativen Rechnungsgesamtbetrag (BT-112).</p><figure class="image image-block"><p><img data-htmlarea-file-uid="1539" data-htmlarea-file-table="sys_file" width="560" height="280" title="Grafik: Übersicht über die Belegarten einer E-Rechnung" alt="Grafik: Übersicht über die Belegarten einer E-Rechnung" src="/fileadmin/user_upload/FeRD/f%C3%BCr_FeRD-Meldungen/Grafik_Belegarten_einer_E-Rechnung.jpg" data-title-override="true" data-alt-override="true" data-quality="retina"></p></figure>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Wie wird eine ZUGFeRD/Factur-X-Rechnung versandt?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <p>Die Art des Versandes einer ZUGFeRD-Rechnung ist nicht festgelegt. Aktuell werden Rechnungen häufig als E-Mail-Anhang versandt, aber auch andere Sendemethoden, wie z.B. ein Datei-Upload, eine Übertragung via USB-Stick oder über Rechnungsportale sind möglich. Die Nutzung von Übertragungsnetzwerke wie beispielsweise Peppol ist auch möglich.</p>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Sollte eine ZUGFeRD/Factur-X Rechnung validiert werden?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <p>Eine gesetzliche Pflicht zur Validierung gibt es nicht.</p>
+<p>Das <a href="https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html" target="_blank" rel="noreferrer"><u>Bundesministerium der Finanzen (BMF) hält jedoch in seinen FAQ</u></a><u> </u>(Frage 7) fest:<i> „[…] Eine Validierung ist daher [weil sie z.B. auf fehlende oder unlogische Pflichtangaben hinweist, Anm. d. Red.] sinnvoll. Es wird empfohlen, diese bereits bei Erstellung und Versand einer E-Rechnung durchzuführen […].“&nbsp;</i></p>
+<p>Zudem heißt es im <a href="https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&amp;v=3" target="_blank" rel="noreferrer"><u>BMF-Schreiben vom 15.10.2025 (RZ. 35a)</u></a>: <i>„[…] Ein Unternehmer kann sich bei Beachtung der Sorgfaltspflichten eines ordentlichen Kaufmanns auf das technische Ergebnis einer Validierung (hinsichtlich des Formats und der Geschäftsregeln) durch eine geeignete Validierungsanwendung verlassen. Zum Nachweis bietet es sich an, den Validierungsbericht aufzubewahren.“</i></p>
+<p>Aus Gründen der Gleichbehandlung aller Marktteilnehmer spricht das BMF jedoch keine Empfehlung für eine bestimmte Validierungssoftware aus.</p>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Wie kann eine ZUGFeRD/Factur-X-Rechnung validiert werden?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <p>Das FeRD stellt für jede neue ZUGFeRD/Factur-X-Version ein kostenfreies Infopaket bereit, das alle notwendigen Informationen und technischen Unterlagen (wie Schema- und XSLT-Dateien sowie Codelisten) für die Validierung enthält.</p>
+<p>Softwareanbieter können auf dieser Basis eigene Lösungen zur Validierung entwickeln.</p>
+<p>Es existieren aber bereits verschiedene freie und kommerzielle Angebote, die eine Validierung ermöglichen.</p>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Wo gibt es weitere Informationen zur E-Rechnung im B2B-Bereich in Deutschland?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <p>(Stand vom: 07.09.2026)</p><ul class="list-disc"><li data-list-item-id="e92f5b5aa2c85a744f13429e30b602608"><strong>Beschaffungsamt des Bundesministeriums des Innern:</strong><br><a href="https://www.e-rechnung-bund.de/e-rechnung/e-rechnung-zwischen-unternehmen-b2b" target="_blank" rel="noreferrer">https://www.e-rechnung-bund.de/e-rechnung/e-rechnung-zwischen-unternehmen-b2b</a><br>&nbsp;</li><li data-list-item-id="e065b798a3a19556646589ae89b822bfd"><strong>Internetseite des Bundesministeriums der Finanzen:</strong><br><a href="https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.htm" target="_blank" rel="noreferrer">https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.htm</a><br>&nbsp;</li><li data-list-item-id="e3e4fd0f8ac819b3286931718b2c13042"><strong>BMF-Schreiben vom 15.10.2024:</strong><br><a href="/fileadmin/user_upload/FeRD/Downloads/2024-10-15_BMF_Einfuehrung-E-Rechnung.pdf">„Ausstellung von Rechnungen nach § 14 UStG; Einführung der obligatorischen elektronischen Rechnung bei Umsätzen zwischen inländischen Unternehmern ab dem 1. Januar 2025“</a><br>&nbsp;</li><li data-list-item-id="e8d775e40db5afcd25b2862ef73d70d6c"><strong>BMF-Schreiben vom 15.10.2025:</strong><br>„Einführung der obligatorischen elektronischen Rechnung bei Umsätzen zwischen inländischen Unternehmern ab dem 1. Januar 2025“<br><a href="https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?" target="_blank" rel="noreferrer">https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf</a><br>&nbsp;</li><li class="ck-list-marker-bold" data-list-item-id="ef99614c21856ed9c7d32ee33e67717b4"><strong>Weitere Informationen finden Sie auch auf den Seiten der </strong><a href="/ueber-uns/ferd-und-competence-center/ferd-mitglieder"><strong>FeRD-Mitglieder</strong></a><strong>.</strong></li></ul>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Was passiert bei Widersprüchen zwischen PDF und XML bei ZUGFeRD?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <p>Bei ZUGFeRD/Factur-X als hybridem Format kann es vorkommen, dass die Darstellung im PDF und die Daten im XML-Teil nicht übereinstimmen.</p>
+<p><strong>Wichtig: Der strukturierte Teil (XML) ist führend!</strong></p>
+<p>Nach der ZUGFeRD-Spezifikation und den gesetzlichen Vorgaben gilt seit dem <strong>1. Januar 2025:</strong></p><ul class="list-disc"><li data-list-item-id="ef350f4414818b8b40d0a5da3dd947f98">Das eingebettete XML stellt die eigentliche E-Rechnung dar</li><li data-list-item-id="ee875d096932c75d49c39953db08db486">Das PDF dient ausschließlich der menschlichen Lesbarkeit</li><li data-list-item-id="ef742b919bf2f0aaf0493391637299862">Bei Widersprüchen ist das XML maßgeblich für die Buchhaltung</li></ul><p><strong>Hintergrund der Regelungsänderung:</strong> Bis zum 31. Dezember 2024 ging bei einem hybriden Format im Falle einer Abweichung zwischen elektronischer Information und dem lesbaren Bildteil der Bildteil vor. Mit Einführung der obligatorischen E-Rechnung hat sich dieses Verhältnis umgekehrt. Bei hybriden E-Rechnungen bilden nunmehr die im strukturierten Teil (XML) vorliegenden Rechnungsdaten den führenden Teil.</p>
+<p><strong>Empfehlung:</strong></p><ul class="list-disc"><li data-list-item-id="eafd148347cd52222445c5699b54929f4"><strong>Rechnungsaussteller:</strong><br>Sorgfältige Prüfung vor dem Versand, ob PDF und XML identische Inhalte aufweisen&nbsp;</li><li data-list-item-id="e86a33fadb198fa10e55b420635937bbc"><strong>Rechnungsempfänger:</strong><br>Es empfiehlt sich, den übermittelten XML-Teil zu visualisieren, validieren und zu verarbeiten. Bei relevanten Abweichungen zwischen PDF und XML sollte Klärung mit dem Aussteller erfolgen.</li></ul>
+            </div>
+          </div>
+        </article>
+      
+        <article class="border-b-2 border-b-blue group">
+          <header class="flex justify-between select-none cursor-pointer py-2 group-expanded:xl:pb-8"
+            aria-controls="panel-c101">
+            <h4 class="flex items-center lg:group-hover:text-blue-800 group-expanded:text-blue-800 mb-0">
+              Ist ZUGFeRD EXTENDED EN 16931-konform und rechtlich im Sinne einer E-Rechnung zulässig?
+            </h4>
+            <div class="accordion-indicator ml-4"></div>
+          </header>
+          <div class="hidden group-expanded:block" id="panel-c101">
+            <div class="mb-7 mr-9">
+              <p>Das Forum elektronische Rechnung Deutschland (FeRD) weist darauf hin, dass ZUGFeRD EXTENDED ein zulässiges Format für elektronische Rechnungen nach § 14 UStG ist.</p>
+<p>ZUGFeRD EXTENDED basiert auf dem Datenmodell der EN 16931 und erweitert dieses um zusätzliche strukturierte Informationen und Geschäftsszenarien. <strong>„EXTENDED“ bedeutet daher nicht „außerhalb der EN 16931“.</strong> Vielmehr können die Anforderungen der EN 16931 (wie im Profil ZUGFeRD EN 16931) vollständig abgebildet und gleichzeitig zusätzliche Geschäftsinformationen strukturiert übertragen werden.</p>
+<h4>Die Rechtslage ist eindeutig</h4>
+<p>Nach <strong>§ 14 UStG</strong> muss eine E-Rechnung in einem strukturierten elektronischen Format ausgestellt, übermittelt und empfangen werden, dass eine elektronische Verarbeitung ermöglicht. Das <strong>Bundesministerium der Finanzen (BMF)</strong> stellt hierzu ausdrücklich fest:</p>
+<p><a href="https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.html" target="_blank" rel="noreferrer"><i>„Insbesondere das hybride Format ZUGFeRD ab der Version 2.0.1 – ausgenommen die Profile MINIMUM und BASIC-WL – […] fällt somit unter die zulässigen E-Rechnungs-Formate.“&nbsp;</i></a></p>
+<h4>ZUGFeRD EXTENDED ist von diesen Ausnahmen nicht betroffen.</h4>
+<p>Damit ist die Verwendung von <strong>ZUGFeRD EXTENDED nach geltender Rechtslage grundsätzlich zulässig</strong>.</p>
+<h4>ZUGFeRD EXTENDED ist nicht XRechnung</h4>
+<p>Das europäische Datenmodell EN 16931, das Rechnungsformat ZUGFeRD und der Rechnungsstandard <a href="https://xeinkauf.de/xrechnung" target="_blank" rel="noreferrer">XRechnung der KoSIT</a> dürfen bei der Validierung nicht gleichgesetzt werden.</p>
+<p>XRechnung enthält zusätzliche nationale Vorgaben und Validierungsregeln. Diese sind nicht automatisch auf eine ZUGFeRD EXTENDED-Rechnung anzuwenden.</p>
+<p>Eine valide ZUGFeRD EN16931 oder ZUGFeRD EXTENDED-Rechnung kann deshalb bei einer ausschließlichen Prüfung nach XRechnungsregeln Fehlermeldungen erzeugen, ohne dass die Rechnung deshalb fehlerhaft oder rechtlich unzulässig ist.</p>
+<h4>Das verwendete Rechnungsformat muss mit dem dafür vorgesehenen Regelwerk validiert werden.</h4>
+<p>FeRD empfiehlt Rechnungsempfängern und E-Rechnungs-Dienstleistern daher sicherzustellen, dass ihre Systeme neben XRechnung auch <strong>ZUGFeRD EN16931</strong> und <strong>ZUGFeRD EXTENDED</strong> korrekt erkennen und validieren können.</p>
+<p>Bitte beachten: Beim Austausch von ZUGFeRD EXTENDED-Rechnungen muss dieser vorher zwischen Rechnungssteller und Rechnungsempfänger vereinbart werden. Alle anderen ZUGFeRD-Profile können ohne vorherige Absprache versendet werden.</p>
+<h4>&nbsp;</h4>
+<h4>Weitere Informationen</h4>
+<p><a href="https://www.ferd-net.de/download-zugferd?utm_source=chatgpt.com" target="_blank">ZUGFeRD – Spezifikationen und Downloads des FeRD</a></p>
+<p><a href="https://www.gesetze-im-internet.de/ustg_1980/__14.html?utm_source=chatgpt.com" target="_blank" rel="noreferrer">§ 14 UStG – Gesetze im Internet</a></p>
+<p><a href="https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html?utm_source=chatgpt.com" target="_blank" rel="noreferrer">BMF – Fragen und Antworten zur E-Rechnung</a></p>
+<p><a href="https://xeinkauf.de/xrechnung/versionen-und-bundles/?utm_source=chatgpt.com" target="_blank" rel="noreferrer">XRechnung – Versionen und Bundles</a></p>
+            </div>
+          </div>
+        </article>
+      
+    </div>
+  </div>
+</section><section
+    class="section section-narrow mb-14 xl:mb-20 frame-layout-0 frame-space-after-">
+    <div class="container">
+        
+        
+            
+    
+
+            <div id="c2502" class="frame frame-default frame-type-shortcut frame-layout-0">
+                
+                
+                    
+
+
+
+                
+                
+                
+
+    
+    
+
+            <div id="c2499" class="frame frame-default frame-type-textmedia frame-layout-0">
+                
+                
+                    
+
+
+
+                
+                
+
+    
+        
+
+
+
+    
+
+
+                
+
+    <div class="ce-textpic ce-center ce-above">
+        
+            
+
+
+
+        
+
+        
+                <div class="ce-bodytext">
+                    
+                    <p class="lead">Die Antwort auf Ihre Fragen war nicht dabei?&nbsp;</p>
+<p>Wenden Sie sich gerne an unser <a href="/faqs/help-center">→ Help Center</a>.</p>
+                </div>
+            
+
+        
+    </div>
+
+
+                
+                    
+
+
+
+                
+                
+                    
+
+
+
+                
+            </div>
+
+        
+
+
+
+
+                
+                    
+
+
+
+                
+                
+                    
+
+
+
+                
+            </div>
+
+        
+
+
+        
+    </div>
+</section>
+					</div>
+				</div>
+				<div class="section">
+					
+				</div>
+			</main>
+		
+
+
+
+	<!-- scroll to top Button -->
+	<div
+	id="scroll-to-top-button"
+	class="group fixed bottom-2 right-2 opacity-0 pointer-events-none translate-y-28 z-30 flex gap-2 items-center 2xlmax:bg-white mb-8"
+	>
+	<p class="mb-0 text-blue group-hover:text-blue-800 text-sm font-semibold pl-1">Nach oben</p>
+	<button class="bg-blue group-hover:bg-blue-800 w-10 h-10 flex flex-col items-center justify-center">
+		<svg viewBox="0 0 15.546 9.187" aria-label="closed" class="text-white w-3 h-auto cursor-pointer rotate-180">
+			  <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+		</svg>
+		<svg viewBox="0 0 15.546 9.187"	aria-label="closed"	class="text-white w-3 h-auto cursor-pointer rotate-180 opacity-0 group-hover:opacity-100 -mt-0.5 transition-all duration-300">
+			  <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+	  </svg>
+	</button>
+	</div>
+
+	<!-- Footer -->
+	<footer class="w-full bg-black-100">
+		<div class="section container grid grid-cols-1 xl:grid-cols-12">
+			
+					<a class="max-h-72 w-auto xl:col-span-5" href="https://www.awv-net.de/"><img alt="Footer Logo" class="max-h-72 w-auto xl:col-span-5" src="/_assets/7a11b16595e634d830c59359e09f8e61/Images/footer_logo.svg" width="583" height="291" /></a>
+				
+			<div class="grid grid-cols-1 xs:grid-cols-2 my-9 2xl:my-14 justify-between xl:col-span-7 2xl:ml-48 gap-y-8 xs:gap-4">
+				<!-- menu block 1 -->
+<div>
+    <h2 class="text-base uppercase xl:text-2lg font-semibold mb-5">Service</h2>
+    <ul class="flex flex-col gap-3">
+        
+            <li>
+                <a href="/kontakt" class="font-semibold flex items-center gap-2 group"
+                >Kontakt
+                <div class="flex">
+                    <svg
+                    viewBox="0 0 15.546 9.187"
+                    aria-label="closed"
+                    class="text-black-900 w-3 h-auto cursor-pointer -rotate-90"
+                    >
+                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <svg
+                    viewBox="0 0 15.546 9.187"
+                    aria-label="closed"
+                    class="text-black-900 w-3 h-auto cursor-pointer -rotate-90 -ml-1.5 opacity-0 group-hover:opacity-100 transition-all duration-300"
+                    >
+                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/impressum" class="font-semibold flex items-center gap-2 group"
+                >Impressum
+                <div class="flex">
+                    <svg
+                    viewBox="0 0 15.546 9.187"
+                    aria-label="closed"
+                    class="text-black-900 w-3 h-auto cursor-pointer -rotate-90"
+                    >
+                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <svg
+                    viewBox="0 0 15.546 9.187"
+                    aria-label="closed"
+                    class="text-black-900 w-3 h-auto cursor-pointer -rotate-90 -ml-1.5 opacity-0 group-hover:opacity-100 transition-all duration-300"
+                    >
+                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/datenschutz" class="font-semibold flex items-center gap-2 group"
+                >Datenschutz
+                <div class="flex">
+                    <svg
+                    viewBox="0 0 15.546 9.187"
+                    aria-label="closed"
+                    class="text-black-900 w-3 h-auto cursor-pointer -rotate-90"
+                    >
+                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <svg
+                    viewBox="0 0 15.546 9.187"
+                    aria-label="closed"
+                    class="text-black-900 w-3 h-auto cursor-pointer -rotate-90 -ml-1.5 opacity-0 group-hover:opacity-100 transition-all duration-300"
+                    >
+                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/barrierefreiheit" class="font-semibold flex items-center gap-2 group"
+                >Barrierefreiheit
+                <div class="flex">
+                    <svg
+                    viewBox="0 0 15.546 9.187"
+                    aria-label="closed"
+                    class="text-black-900 w-3 h-auto cursor-pointer -rotate-90"
+                    >
+                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <svg
+                    viewBox="0 0 15.546 9.187"
+                    aria-label="closed"
+                    class="text-black-900 w-3 h-auto cursor-pointer -rotate-90 -ml-1.5 opacity-0 group-hover:opacity-100 transition-all duration-300"
+                    >
+                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                </a>
+            </li>
+        
+
+    </ul>
+</div>
+<!-- menu block 2 -->
+<div>
+    <h2 class="text-base uppercase xl:text-2lg font-semibold mb-5">Direkt zu</h2>
+    <ul class="flex flex-col gap-3">
+        
+            <li>
+                <a href="/download-order-x" class="font-semibold flex items-center gap-2 group"
+                >Download Order-X
+                <div class="flex">
+                    <svg
+                    viewBox="0 0 15.546 9.187"
+                    aria-label="closed"
+                    class="text-black-900 w-3 h-auto cursor-pointer -rotate-90"
+                    >
+                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <svg
+                    viewBox="0 0 15.546 9.187"
+                    aria-label="closed"
+                    class="text-black-900 w-3 h-auto cursor-pointer -rotate-90 -ml-1.5 opacity-0 group-hover:opacity-100 transition-all duration-300"
+                    >
+                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/download-zugferd" class="font-semibold flex items-center gap-2 group"
+                >Download ZUGFeRD
+                <div class="flex">
+                    <svg
+                    viewBox="0 0 15.546 9.187"
+                    aria-label="closed"
+                    class="text-black-900 w-3 h-auto cursor-pointer -rotate-90"
+                    >
+                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <svg
+                    viewBox="0 0 15.546 9.187"
+                    aria-label="closed"
+                    class="text-black-900 w-3 h-auto cursor-pointer -rotate-90 -ml-1.5 opacity-0 group-hover:opacity-100 transition-all duration-300"
+                    >
+                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                </a>
+            </li>
+        
+            <li>
+                <a href="/aktuelles/newsletter" class="font-semibold flex items-center gap-2 group"
+                >FeRD Newsletter
+                <div class="flex">
+                    <svg
+                    viewBox="0 0 15.546 9.187"
+                    aria-label="closed"
+                    class="text-black-900 w-3 h-auto cursor-pointer -rotate-90"
+                    >
+                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <svg
+                    viewBox="0 0 15.546 9.187"
+                    aria-label="closed"
+                    class="text-black-900 w-3 h-auto cursor-pointer -rotate-90 -ml-1.5 opacity-0 group-hover:opacity-100 transition-all duration-300"
+                    >
+                      <path id="Pfad_32353" data-name="Pfad 32353" d="M906.374,169.918l7.066,7.066,7.066-7.066" transform="translate(-905.667 -169.211)" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+			</div>
+		</div>
+	<!-- padding bottom for scroll-to-top-button -->
+	<div class="bg-white text-black-400 pt-1 px-1 pb-14 xl:pt-2 xl:px-2">
+		<p class="section container mb-0 text-tiny text-right"><a class="pr-5" onclick="resetCC()" href="javascript:void(0);">Cookie-Einwilligungen widerrufen</a> &copy; 2026 AWV e.V.</p>
+	</div>
+	</footer>
+<script src="/typo3temp/assets/compressed/merged-18ab35c93a1119657765ac0faf9d22fc-874c8f34ae70db01414e2a865a4673b1.js?1791375942"></script>
+<script src="/typo3temp/assets/compressed/merged-ce12a471470f8a892fbf9674155dc948-1e1e42702dbc120b78c42a8378fe7d97.js?1791375942"></script>
+
+
+</body>
+</html>

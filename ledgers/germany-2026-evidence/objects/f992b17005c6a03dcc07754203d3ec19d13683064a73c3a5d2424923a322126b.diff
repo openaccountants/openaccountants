@@ -1,0 +1,28 @@
+--- before
++++ after
+@@ -1,7 +1,7 @@
+ ---
+ name: de-corporate-tax
+ description: "German corporate income tax (Körperschaftsteuer, KSt) for tax year 2026: GmbH, UG, AG and other companies resident in Germany, and German permanent establishments of foreign companies. Covers the 15% rate under § 23 KStG and the enacted cuts from 2028, the 5.5% solidarity surcharge, how trade tax adds to the burden, the taxable base, the § 8b participation exemption, loss carry-forward (EUR 1m plus 70% for 2024 to 2027, 60% from 2028) and carry-back, § 8c share changes, Organschaft, the interest barrier, prepayments, filing deadlines, late filing surcharges, interest, and Kapitalertragsteuer on outbound dividends. Trigger on: Körperschaftsteuer, KSt, GmbH tax Germany, German corporate tax rate, Soli on KSt, § 8b KStG, § 8c KStG, Organschaft, Zinsschranke, Verlustvortrag GmbH, Mindestbesteuerung, KSt-Vorauszahlungen, Kapitalertragsteuer Dividende. Out of scope: trade tax detail (de-trade-tax), transfer pricing (germany-transfer-pricing), individual shareholders (de-income-tax, de-capital-gains), shareholder exit tax (leaving-germany-exit-tax), VAT (germany-vat-return)."
+-version: 0.4
++version: 0.5
+ jurisdiction: DE
+ tax_year: 2026
+ last_updated: 2026-10-29
+@@ -105,7 +105,7 @@
+ | When the surcharge is compulsory | If the annual return is not filed within 14 months after the year end (for 2026: by 29 February 2028), or by a date the tax office ordered. Before that it is discretionary. Not compulsory if the tax is nil or negative, or does not exceed prepayments and withholding | [§ 152(2), (3) AO](https://www.gesetze-im-internet.de/ao_1977/__152.html) |
+ | Trade tax return late | EUR 25 per month or part month | [§ 152(6) AO](https://www.gesetze-im-internet.de/ao_1977/__152.html) |
+ | Interest on assessed differences (Nachzahlungszinsen / Erstattungszinsen) | 0.15% a month (1.8% a year), starting 15 months after the end of the tax year (for 2026: from 1 April 2028). Full months only; the amount is rounded down to the next EUR 50. Applies both ways | [§ 233a(1)-(3) AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html); [§ 238(1), (1a), (2) AO](https://www.gesetze-im-internet.de/ao_1977/__238.html) |
+-| Late payment surcharge (Säumniszuschlag) | 1% a month or part month of the overdue tax, rounded down to the next EUR 50. Not charged if payment is up to three days late (except for cheque payment) | [§ 240(1), (3) AO](https://www.gesetze-im-internet.de/ao_1977/__240.html) |
++| Late payment surcharge (Säumniszuschlag) | 1% a month or part month of the overdue tax, rounded down to the next EUR 50. Not charged if payment is up to three days late (except payments within § 224(2) no. 1 AO, including cash or cheques handed or sent to the tax authority) | [§ 240(1), (3) AO](https://www.gesetze-im-internet.de/ao_1977/__240.html) |
+ 
+ ## Cross-border points
+ 
+@@ -291,6 +291,7 @@
+ | BZSt, exemption procedure under § 50c(2) EStG | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Freistellungsverfahren_50c/freistellungsverfahren_50c_node.html | 2026-10-22 |
+ | EStG § 4h(1)–(2), carry generation/use and escape restrictions; KStG § 8a(1) corporate-income incorporation | https://www.gesetze-im-internet.de/estg/__4h.html | 2026-10-29 |
+ | EStG §§ 44a(9), 50c(2)–(5), 50d(3), refund/relief population and procedure; KStG § 2 no. 1 | https://www.gesetze-im-internet.de/estg/__50c.html | 2026-10-29 |
++| AO § 240(3) and § 224(2) no. 1 (three-day grace payment-method exception), selected operative clauses re-read | https://www.gesetze-im-internet.de/ao_1977/__224.html | 2026-10-29 |
+ 
+ Not yet confirmed: the ELSTER form set for tax year 2026. ELSTER's 2026 instructions page was empty on 2026-10-22, so the skill names the 2025 set (KSt 1 and annexes).
+ 

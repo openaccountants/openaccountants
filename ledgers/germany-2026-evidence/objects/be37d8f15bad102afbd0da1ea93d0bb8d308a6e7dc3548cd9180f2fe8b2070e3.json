@@ -1,0 +1,1002 @@
+{
+  "role": "writer, not independent review",
+  "controls": [
+    {
+      "id": "R57.royaltywithholding",
+      "actual": "31650.00000",
+      "expected": "31650",
+      "premise": "Originalfictionalroyaltyamount/flatwithholdingplusSoli;actualremittancestipulatedwhenrefundalternativeused.",
+      "pass": true
+    },
+    {
+      "id": "R57.combinedcap",
+      "actual": "10000.00",
+      "expected": "10000",
+      "premise": "Selectedcombined-primaryinterpretationputsactualcoretaxplusSoliinsameCzechtreatycap;notseparateBZStpracticeconfirmation.",
+      "pass": true
+    },
+    {
+      "id": "R57.treatyrefund",
+      "actual": "21650",
+      "expected": "21650",
+      "premise": "Conditionalarithmeticonly, allactualtreaty/procedure/remittancegates independentlyestablished.",
+      "pass": true
+    },
+    {
+      "id": "R57.directive-saving",
+      "actual": "10000",
+      "expected": "10000",
+      "premise": "Actualfictional50gcompanyeligibilitystipulated;selectedcombinedtaxinterpretation,notextra550invented.",
+      "pass": true
+    },
+    {
+      "id": "R58.parentqualifies",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actualparent-companyexemptionworksheetonly, taxdue-date/resolutionselectorsandeligibleGerman subsidiary/antiabuse/procedure independently established inotherflag;shortperiodmayhaveseparatelaterrefundroute,notautomaticdenialforever.",
+      "pass": true
+    },
+    {
+      "id": "R58.parentoutside-treaty",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actualparent-companyexemptionworksheetonly, taxdue-date/resolutionselectorsandeligibleGerman subsidiary/antiabuse/procedure independently established inotherflag;shortperiodmayhaveseparatelaterrefundroute,notautomaticdenialforever.",
+      "pass": true
+    },
+    {
+      "id": "R58.parentexempt",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actualparent-companyexemptionworksheetonly, taxdue-date/resolutionselectorsandeligibleGerman subsidiary/antiabuse/procedure independently established inotherflag;shortperiodmayhaveseparatelaterrefundroute,notautomaticdenialforever.",
+      "pass": true
+    },
+    {
+      "id": "R58.parentoption-tax",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actualparent-companyexemptionworksheetonly, taxdue-date/resolutionselectorsandeligibleGerman subsidiary/antiabuse/procedure independently established inotherflag;shortperiodmayhaveseparatelaterrefundroute,notautomaticdenialforever.",
+      "pass": true
+    },
+    {
+      "id": "R58.parenttoo-small",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actualparent-companyexemptionworksheetonly, taxdue-date/resolutionselectorsandeligibleGerman subsidiary/antiabuse/procedure independently established inotherflag;shortperiodmayhaveseparatelaterrefundroute,notautomaticdenialforever.",
+      "pass": true
+    },
+    {
+      "id": "R58.parentshort-certificate",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actualparent-companyexemptionworksheetonly, taxdue-date/resolutionselectorsandeligibleGerman subsidiary/antiabuse/procedure independently established inotherflag;shortperiodmayhaveseparatelaterrefundroute,notautomaticdenialforever.",
+      "pass": true
+    },
+    {
+      "id": "R58.EUdefinition(True, False, True, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual50g3companyform/beneficialownership/associationseparatelymet;onlyresidence/taxpopulationselectors tested.",
+      "pass": true
+    },
+    {
+      "id": "R58.EUdefinition(False, False, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual50g3companyform/beneficialownership/associationseparatelymet;onlyresidence/taxpopulationselectors tested.",
+      "pass": true
+    },
+    {
+      "id": "R58.EUdefinition(True, True, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual50g3companyform/beneficialownership/associationseparatelymet;onlyresidence/taxpopulationselectors tested.",
+      "pass": true
+    },
+    {
+      "id": "R58.EUdefinition(True, False, True, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual50g3companyform/beneficialownership/associationseparatelymet;onlyresidence/taxpopulationselectors tested.",
+      "pass": true
+    },
+    {
+      "id": "R58.Swissdefinition(True, True, False, True, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Formmeansactualrestricted50g6form;outside=outsideEUorSwiss treatyresidence. Allotherstatutoryconditionsseparate;noholdingminimuminventedfromparagraph6.",
+      "pass": true
+    },
+    {
+      "id": "R58.Swissdefinition(True, True, False, False, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Formmeansactualrestricted50g6form;outside=outsideEUorSwiss treatyresidence. Allotherstatutoryconditionsseparate;noholdingminimuminventedfromparagraph6.",
+      "pass": true
+    },
+    {
+      "id": "R58.Swissdefinition(True, True, True, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Formmeansactualrestricted50g6form;outside=outsideEUorSwiss treatyresidence. Allotherstatutoryconditionsseparate;noholdingminimuminventedfromparagraph6.",
+      "pass": true
+    },
+    {
+      "id": "R58.Swissdefinition(False, True, False, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Formmeansactualrestricted50g6form;outside=outsideEUorSwiss treatyresidence. Allotherstatutoryconditionsseparate;noholdingminimuminventedfromparagraph6.",
+      "pass": true
+    },
+    {
+      "id": "R58.association('.25', '0', '0')",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actualdirectstatutorycompanyassociation; commoninputmeans qualifyingparentdirectpercentinBOTHentities,not oneholdingorindirectsubstitution;other50gdefinitionsseparate.",
+      "pass": true
+    },
+    {
+      "id": "R58.association('0', '.25', '0')",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actualdirectstatutorycompanyassociation; commoninputmeans qualifyingparentdirectpercentinBOTHentities,not oneholdingorindirectsubstitution;other50gdefinitionsseparate.",
+      "pass": true
+    },
+    {
+      "id": "R58.association('0', '0', '.25')",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actualdirectstatutorycompanyassociation; commoninputmeans qualifyingparentdirectpercentinBOTHentities,not oneholdingorindirectsubstitution;other50gdefinitionsseparate.",
+      "pass": true
+    },
+    {
+      "id": "R58.association('.2499', '0', '0')",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actualdirectstatutorycompanyassociation; commoninputmeans qualifyingparentdirectpercentinBOTHentities,not oneholdingorindirectsubstitution;other50gdefinitionsseparate.",
+      "pass": true
+    },
+    {
+      "id": "R59.corp-exclusion(True, '.1', True, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "ActualspecifiedunlimitedGermanKStG1(1)no1payer/directnominalcapital;foreigncapmeansactualforeignlimited-liabilitycapitalcompany,notanycompany. Exclusiononly50j123,notallrefundgates.",
+      "pass": true
+    },
+    {
+      "id": "R59.corp-exclusion(False, '.1', True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "ActualspecifiedunlimitedGermanKStG1(1)no1payer/directnominalcapital;foreigncapmeansactualforeignlimited-liabilitycapitalcompany,notanycompany. Exclusiononly50j123,notallrefundgates.",
+      "pass": true
+    },
+    {
+      "id": "R59.corp-exclusion(True, '.0999', True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "ActualspecifiedunlimitedGermanKStG1(1)no1payer/directnominalcapital;foreigncapmeansactualforeignlimited-liabilitycapitalcompany,notanycompany. Exclusiononly50j123,notallrefundgates.",
+      "pass": true
+    },
+    {
+      "id": "R59.corp-exclusion(True, '.1', False, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "ActualspecifiedunlimitedGermanKStG1(1)no1payer/directnominalcapital;foreigncapmeansactualforeignlimited-liabilitycapitalcompany,notanycompany. Exclusiononly50j123,notallrefundgates.",
+      "pass": true
+    },
+    {
+      "id": "R59.corp-exclusion(True, '.1', True, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "ActualspecifiedunlimitedGermanKStG1(1)no1payer/directnominalcapital;foreigncapmeansactualforeignlimited-liabilitycapitalcompany,notanycompany. Exclusiononly50j123,notallrefundgates.",
+      "pass": true
+    },
+    {
+      "id": "R59.netrisk70",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actualnetdownsideriskalreadyincludesalloffsetclaims/relatedpersonhedges;65fixturecanresultfromindependentlyestablishednonoverlapping35riskreduction,notgrossrisk.",
+      "pass": true
+    },
+    {
+      "id": "R59.netrisk69.99",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actualnetdownsideriskalreadyincludesalloffsetclaims/relatedpersonhedges;65fixturecanresultfromindependentlyestablishednonoverlapping35riskreduction,notgrossrisk.",
+      "pass": true
+    },
+    {
+      "id": "R59.netrisk65",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actualnetdownsideriskalreadyincludesalloffsetclaims/relatedpersonhedges;65fixturecanresultfromindependentlyestablishednonoverlapping35riskreduction,notgrossrisk.",
+      "pass": true
+    },
+    {
+      "id": "R59.passon(True, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Other50jconditionsindependentlymet; actualcompensationobligationwholly/predominantlydirect/indirectbarslimb,voluntarydistributionalone notthatobligation. Noautomaticrefundgrant.",
+      "pass": true
+    },
+    {
+      "id": "R59.passon(False, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Other50jconditionsindependentlymet; actualcompensationobligationwholly/predominantlydirect/indirectbarslimb,voluntarydistributionalone notthatobligation. Noautomaticrefundgrant.",
+      "pass": true
+    },
+    {
+      "id": "R60.remittanceTrue",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actualotherwiseeligiblefullcomputedrefundclaim;remittedflagmeansclaimedtaxactuallypaidtoauthoritythroughstatutoryroute,evidenced. Certificate/withholding/banklabelalone notsubstitute;unprovenfullclaimnotdeemedautomaticzeroentitlement.",
+      "pass": true
+    },
+    {
+      "id": "R60.remittanceFalse",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actualotherwiseeligiblefullcomputedrefundclaim;remittedflagmeansclaimedtaxactuallypaidtoauthoritythroughstatutoryroute,evidenced. Certificate/withholding/banklabelalone notsubstitute;unprovenfullclaimnotdeemedautomaticzeroentitlement.",
+      "pass": true
+    }
+  ],
+  "control_count": 34,
+  "own_selected_native_ranges": 13,
+  "exact_source_checks": [
+    {
+      "id": "R57-60.WHTSOLI",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R57-60.PARENT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R57-60.EUGATES",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R57-60.SWISS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R57-60.PORTFOLIO",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R57-60.PROCESS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R57-60.USTAX",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R57-60.CZTAX",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R57-60.CZLATER",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R57-60.IT9",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R58.company-forms",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R58.residence-tax",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R60.remitted-statute",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "TW.SoliRate",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.AO238-1a",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.AO240-1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.NR",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.COMPANYNR",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.GROSS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.NET",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.PAYWHT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.WHTSOLI",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.KWHT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.REFUND40",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.EXEMPT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.REFUND",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.ELECTREFUND",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.GERMANDIV",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.GERMANINTEREST",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.GERMANRENT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.ANTISHOP",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.AO152-1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.AO238-1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.KAPCATEGORIES",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.REMIT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.TAXDATE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.LIABLE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.CERT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.PARENT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.EUINTEREST",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.EUGATES",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.SWISS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.EXCLUSIONS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.FORMS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.TAXFORM",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.PORTFOLIO",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.REFINTEREST",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.PROCESS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.BEFORE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.NEWPORTAL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.STABW",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.ATD",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.ATI",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.ATR",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.ATPE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.ATTAX",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.CHD",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.CHI",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.CHR",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.CHTAX",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.NLD",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.NLI",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.NLR",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.NLPROFIT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.NLTAX",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.FRD",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.FRQUAL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.FR5",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.FR365",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.FREFFECT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.FRI",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.FRR",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.FRPROFIT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.FRTAX",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.ESD",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.ES365",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.ESEFFECT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.ESI",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.ESR",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.ESTAX",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.UKD",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.UKI",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.UKR",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.UKTAX",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.UKCURRENT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.IED",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.IEI",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.IER",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.IEPROFIT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.IETAX",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.LUD",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.LUI",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.LUEFFECT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.USD",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.USZERO",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.USFUNDS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.USPROFIT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.USI",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.USR",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.USTAX",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.CZD",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.CZI",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.CZR",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.CZTAX",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.CZLATER",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.LUDATE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.IT1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.IT2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.IT3",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.IT4",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.IT5",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.IT6",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.IT7",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.IT8",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.IT9",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.PL1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.PL2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.PL3",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.PL4",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.PL5",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.LU1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TW.LU2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    }
+  ],
+  "prior_A_manifest": {
+    "sha256": "caa546e677e15366d0530b1eb757fe4cfba54d87b9993d717c4d261de5282b24",
+    "members_rehashed": 610,
+    "mismatches": 0
+  },
+  "full_inverse_and_all_native_rows": true,
+  "all_prior165_current_units_and329_old_topics_retained": true,
+  "original_examples": {
+    "blocks": 2,
+    "failures": [],
+    "original_blocks_and_all_case_algebra_amounts_exact": true,
+    "worked_changes": "Onlystipulatedgates/remittancefacts andlabel,notnumericblocks"
+  },
+  "schema": {
+    "errors": [],
+    "warnings": [],
+    "stdout": "checked 1 guides (0 non-guide .md files skipped)\n"
+  },
+  "diff_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,273 @@
+Urteil vom 06. Februar 2018, IX R 14/17
+Ortsübliche Marktmiete i.S. des § 21 Abs. 2 EStG für möblierte oder teilmöblierte Wohnungen - Möblierungszuschlag -
+Berücksichtigung einer überlassenen Einbauküche
+
+ECLI:DE:BFH:2018:U.060218.IXR14.17.0
+
+BFH IX. Senat
+
+EStG § 9 Abs 1 S 1, EStG § 9 Abs 1 S 2, EStG § 21 Abs 1 S 1 Nr 1, EStG § 9, EStG § 21 Abs 2, EStG § 21, EStG VZ 2006 ,
+EStG VZ 2007 , EStG VZ 2008 , EStG VZ 2009 , EStG VZ 2010
+
+vorgehend FG Düsseldorf, 02. November 2016, Az: 11 K 3115/14 E
+
+Leitsätze
+1. Bezieht sich ein Mietspiegel nicht auf möbliert oder teilmöbliert vermietete Wohnungen, ist für die Möblierung im
+Rahmen der Ermittlung der ortsüblichen Marktmiete i.S. des § 21 Abs. 2 EStG ein Zuschlag zu berücksichtigen, soweit
+sich auf dem örtlichen Mietmarkt für möblierte Wohnungen hierfür ein Zuschlag ermitteln lässt .
+
+2. Ein solcher Möblierungszuschlag kann nicht aus dem Monatsbetrag der linearen AfA für die überlassenen Möbel und
+Einrichtungsgegenstände abgeleitet werden. Der Ansatz eines prozentualen Mietrenditeaufschlags ist nicht zulässig .
+
+
+Tenor
+Auf die Revision der Kläger wird das Urteil des Finanzgerichts Düsseldorf vom 3. November 2016 11 K 3115/14 E
+aufgehoben.
+
+Die Sache wird an das Finanzgericht Düsseldorf zurückverwiesen.
+
+Diesem wird die Entscheidung über die Kosten des Revisionsverfahrens übertragen.
+
+
+Tatbestand
+I.
+
+1    Streitig ist, ob bei den Einkünften aus Vermietung und Verpachtung geltend gemachte Werbungskosten wegen
+     verbilligter Vermietung (§ 21 Abs. 2 des Einkommensteuergesetzes in der maßgebenden Fassung der Streitjahre
+     2006 bis 2010 ‑‑EStG a.F.‑‑) anteilig zu kürzen sind.
+
+2    Die Kläger und Revisionskläger (Kläger) werden als Eheleute in den Streitjahren zusammen zur Einkommensteuer
+     veranlagt. In ihren Einkommensteuererklärungen für diese Jahre erklärten sie ungekürzte
+     Werbungskostenüberschüsse aus einer an ihren Sohn vermieteten Eigentumswohnung in A. Das im Jahr 1955
+     errichtete Objekt befindet sich in einem Mehrfamilienhaus. Die Kläger vermieteten dem Sohn die 80 qm große
+     Wohnung ab dem 1. August 2006 zu einer Kaltmiete von 324,19 € zuzüglich einer Nebenkostenvorauszahlung in
+     Höhe von 155 €. Nach den Bestimmungen des Mietvertrages war die Wohnung mit einer neuen Einbauküche
+     ausgestattet; zudem wurden dem Sohn laut Vertrag eine Waschmaschine und ein Trockner zur Nutzung überlassen.
+     Der von den Klägern gezahlte Kaufpreis für die Küche betrug 8.620 € zuzüglich 1.005 € für deren Montage. Die
+     Anschaffungskosten für den Trockner betrugen 685 €. Die gebrauchte Waschmaschine setzten die Kläger zu Beginn
+     des Mietverhältnisses mit einem Restwert von 604 € an. Sie ließen für den Anschluss des Trockners und der
+     Waschmaschine zwei Steckdosen verlegen; die Kosten hierfür betrugen 322 €.
+
+3    In ihren Einkommensteuererklärungen machten die Kläger Absetzungen für Abnutzung (AfA) für die Einbauküche,
+     die Waschmaschine und den Trockner in Höhe von 119 € pro Monat geltend. Die für die Bemessung der (Teil-
+
+                                                                                                                 Seite 1 von 5
+    )Entgeltlichkeitsquote zu ermittelnde ortsübliche Vergleichsmiete berechneten sie auf der Grundlage des
+    Mietspiegels der Stadt A von 2005. Dieser sieht für ein Gebäude der Baujahre 1948 bis 1974 eine Mietspanne pro
+    Quadratmeter und Monat von 5,60 € bis 5,75 € vor. Der Mietspiegel berücksichtigt aus der Vielzahl der möglichen
+    Ausstattungsmerkmale nur die "wesentlichen Einflussgrößen"; insbesondere sieht er bei den
+    Ausstattungsmerkmalen Zu- und Abschläge für "Heizung, Fassade, Treppenhaus, Fenster, Elektroanschlüsse,
+    Warmwasserversorgung, Sanitäreinrichtungen, Wandfliesen und Fußbodenbeläge" vor. Für eine mittlere Wohnlage
+    setzten die Kläger bei der Ermittlung der ortsüblichen Miete einen Faktor von 1,00, für die Ausstattung sowie die
+    sonstigen Gegebenheiten einen Faktor von 0,95 an. Sie unterließen es, für die mitvermieteten Bestandteile der
+    Wohnung in Form der Einbauküche, des Trockners und der Waschmaschine die ortsübliche Vergleichsmiete
+    gesondert zu erhöhen, berücksichtigten die überlassenen Geräte jedoch nach dem Punktesystem des Mietspiegels
+    unter den sonstigen Einflüssen. So hätte sich ohne Berücksichtigung der Geräte nach Berechnung der Kläger ein
+    Ausstattungsfaktor von 0,92 anstatt von 0,95 ergeben. Nach der Berechnung der Kläger ergab sich eine ortsübliche
+    monatliche Vergleichsmiete von 5,39 € pro Quadratmeter. Hieraus errechneten sie für die vermietete Wohnfläche
+    eine monatliche Kaltmiete von "430,92 €" (= 5,39 € x 80 qm; rechnerisch richtig wäre 431,20 €).
+
+4   Der Beklagte und Revisionsbeklagte (das Finanzamt ‑‑FA‑‑) erkannte die Werbungskostenüberschüsse zunächst in
+    Höhe von 6.030 € (2006), 5.336 € (2007), 4.214 € (2008), 4.940 € (2009) und 4.994 € (2010) an. Die entsprechenden
+    Einkommensteuerbescheide enthielten hinsichtlich der Einkünfteerzielungsabsicht aus der Vermietung des Objekts
+    einen Vorläufigkeitsvermerk. Am 18. Februar 2014 erließ das FA Änderungsbescheide zur Einkommensteuer für
+    2006 bis 2010, in denen es keine Werbungskostenüberschüsse aus der Vermietung dieser Wohnung mehr
+    anerkannte.
+
+5   Die Kläger legten hiergegen Einsprüche ein. Das FA erließ am 23. Juni 2014 zunächst weitere Änderungsbescheide
+    zur Einkommensteuer für 2006 bis 2010, in denen es einen Teil der erklärten Werbungskostenüberschüsse aus
+    Vermietung und Verpachtung anerkannte. Dabei ging das FA von einer ortsüblichen Vergleichsmiete von 5,60 € als
+    unterstem Wert für eine vergleichbare Wohnung aus und errechnete eine Entgeltlichkeitsquote in Höhe von
+    67,49 %. Mit Schreiben vom 5. August 2014 setzte das FA die Kläger sodann von einer beabsichtigten Verböserung
+    in Kenntnis. Es wies darauf hin, dass die Kläger die Aufwendungen für die Einbauküche, die Waschmaschine und
+    den Trockner ab dem Jahr 2007 als auf fünf Jahre zu verteilende Erhaltungsaufwendungen in Höhe von 10.440 €
+    geltend gemacht hatten, obwohl bereits für das Jahr 2006 durch Einspruchsentscheidung vom 23. April 2009
+    entschieden worden sei, dass diese Kosten nur im Rahmen der AfA zu berücksichtigen seien. Unter verbösender
+    Änderung der Einkommensteuerfestsetzungen 2006 bis 2010 wies das FA die Einsprüche durch
+    Einspruchsentscheidung vom 29. August 2014 als unbegründet zurück. Das FA erkannte
+    Werbungskostenüberschüsse nur noch in Höhe von 3.403 € (2006), 4.880 € (2007), 638 € (2008), 1.223 € (2009) und
+    1.196 € (2010) an. Es ging insoweit von einer verbilligten Vermietung aus, da die ortsübliche Vergleichsmiete unter
+    Einbeziehung eines Möblierungszuschlags zu bestimmen sei. Den Möblierungszuschlag setzte es in Höhe der
+    monatlichen AfA ohne Berücksichtigung eines Gewinnaufschlags an. Zur Bestimmung der monatlichen AfA
+    berücksichtigte das FA neben dem Kaufpreis und den Montagekosten für die Einbauküche und den Kaufpreisen von
+    Trockner und Waschmaschine auch die Kosten für die beiden zusätzlichen Steckdosen in Höhe von 322 €. Da die
+    Überschussprognose negativ ausfalle, seien die Werbungskosten anteilig zu kürzen.
+
+6   Die Kläger haben hiergegen Klage erhoben und zur Begründung im Wesentlichen ausgeführt, seit dem Beginn der
+    Vermietung an den Sohn überschreite der vereinbarte Mietzins die Schwelle von 75 % der ortsüblichen Marktmiete.
+
+7   Die Klage hatte überwiegend keinen Erfolg. Das Finanzgericht (FG) entschied mit seinem in Entscheidungen der
+    Finanzgerichte (EFG) 2017, 1277 veröffentlichten Urteil vom 3. November 2016 11 K 3115/14 E, für die anteilige
+    Kürzung des Werbungskostenabzugs sei eine Entgeltlichkeitsquote in Höhe von 72,43 % (= tatsächliche Zahlung in
+    Höhe von 479,19 €/ortsübliche Marktmiete in Höhe von 661,59 €) anstelle von 67,49 % zugrunde zu legen. Bei
+    deren Ermittlung sei die Kaltmiete um einen Möblierungszuschlag für die Einbauküche und die
+    Nutzungsmöglichkeit von Waschmaschine und Trockner in Höhe der monatlichen AfA von 90,95 € zuzüglich eines
+    Gewinnaufschlags von 4 % zu erhöhen. Die Montagekosten der Einbauküche stellten als Aufwendungen zur
+    erstmaligen Herstellung der Betriebsbereitschaft abschreibungsfähige Anschaffungskosten dar; die Aufwendungen
+    für die Steckdosen seien dagegen der bestimmungsgemäßen Nutzung der Wohnung zuzuordnen. Der
+    Möblierungszuschlag sei nicht in den Ausstattungsmerkmalen des Mietspiegels der Stadt A für 2005 berücksichtigt.
+    Der Ausstattungsfaktor der Wohnung ohne Berücksichtigung der mitvermieteten Gegenstände sei mit 0,92
+    anzusetzen. Die unterhalb eines Entgeltlichkeitsanteils von 75 % erforderliche Überschussprognose falle negativ
+    aus.
+
+
+                                                                                                              Seite 2 von 5
+8     Mit ihrer Revision rügen die Kläger die Verletzung materiellen (§ 21 Abs. 2 EStG) und formellen Rechts (Verletzung
+      der Sachverhaltsaufklärungspflicht; die Schätzung der Instandhaltungskosten verletze Denk- und Erfahrungssätze).
+
+9     Nach Ergehen des angefochtenen Urteils hat das FA am 22. Dezember 2016 geänderte Einkommensteuerbescheide
+      für die Streitjahre erlassen. Der Streitstoff des vorliegenden Verfahrens wird dadurch nicht berührt, weil die
+      Besteuerungsgrundlagen in den Bescheiden vom 22. Dezember 2016 denen entsprechen, die bereits in den von den
+      Klägern ursprünglich angefochtenen Änderungsbescheiden angesetzt waren.
+
+10 Die Kläger beantragen sinngemäß,
+   das Urteil des FG sowie alle Änderungsbescheide zur Einkommensteuer für 2006 bis 2010 vom 18. Februar 2014
+   und 23. Juni 2014 jeweils in Gestalt der Einspruchsentscheidung vom 29. August 2014 sowie vom 22. Dezember
+   2016 aufzuheben.
+
+11 Das FA beantragt,
+   die Revision als unbegründet zurückzuweisen.
+
+
+Entscheidungsgründe
+II.
+
+12 Die Revision ist begründet. Sie führt zur Aufhebung des Urteils des FG und zur Zurückverweisung der Sache zur
+   anderweitigen Verhandlung und Entscheidung (§ 126 Abs. 3 Satz 1 Nr. 2 der Finanzgerichtsordnung ‑‑FGO‑‑). Die
+   finanzgerichtlichen Feststellungen tragen den Ansatz des gewählten Möblierungszuschlags für die Einbauküche
+   und die Nutzungsmöglichkeit von Waschmaschine und Trockner ‑‑in Höhe der AfA der überlassenen Gegenstände
+   einschließlich eines Gewinnaufschlags‑‑ und dessen Berücksichtigung bei der Berechnung der Entgeltlichkeitsquote
+   im Rahmen des § 21 Abs. 2 EStG nicht.
+
+13 1. Macht der Steuerpflichtige Werbungskosten (§ 9 Abs. 1 EStG) aus der verbilligten ‑‑d.h. nicht marktgerechten‑‑
+   Vermietung von Wohnraum geltend, kann sich mit Blick auf § 21 Abs. 2 EStG a.F. eine anteilige Kürzung seiner
+   Werbungskosten ergeben.
+
+14 a) Einkünfte aus Vermietung und Verpachtung gemäß § 21 Abs. 1 Satz 1 Nr. 1 EStG erzielt, wer ein Grundstück,
+   Gebäude oder Gebäudeteil gegen Entgelt zur Nutzung überlässt und beabsichtigt, daraus auf Dauer der Nutzung ein
+   positives Ergebnis zu erzielen (z.B. Urteile des Bundesfinanzhofs ‑‑BFH‑‑ vom 19. Dezember 2007 IX R 30/07,
+   BFH/NV 2008, 1300; vom 9. Oktober 2013 IX R 2/13, BFHE 244, 247, BStBl II 2014, 527; vom 11. Juli 2017
+   IX R 42/15, BFH/NV 2017, 1422). Bei einer langfristigen Vermietung ist grundsätzlich vom Vorliegen einer
+   Einkünfteerzielungsabsicht auszugehen, solange nach der in den Streitjahren zugrunde zu legenden Rechtslage der
+   Mietzins nicht weniger als 75 % der ortsüblichen Marktmiete beträgt (BFH-Urteil vom 5. November 2002
+   IX R 48/01, BFHE 201, 46, BStBl II 2003, 646). Beträgt der Mietzins 56 % und mehr, jedoch weniger als 75 % der
+   ortsüblichen Marktmiete, so ist die Einkünfteerzielungsabsicht nach Maßgabe der Senatsrechtsprechung zu § 21
+   Abs. 2 EStG a.F. anhand einer Überschussprognose zu prüfen. Ist die Überschussprognose positiv, sind die mit der
+   verbilligten Vermietung zusammenhängenden Werbungskosten in voller Höhe abziehbar. Ist die
+   Überschussprognose negativ, ist die Vermietungstätigkeit in einen entgeltlichen und einen unentgeltlichen Teil
+   aufzuteilen; die anteilig auf den entgeltlichen Teil entfallenden Werbungskosten sind abziehbar (BFH-Urteil in
+   BFHE 201, 46, BStBl II 2003, 646). Beträgt das Entgelt für die Überlassung einer Wohnung zu Wohnzwecken weniger
+   als 56 % der ortsüblichen Marktmiete, so ist die Nutzungsüberlassung schon von Gesetzes wegen ‑‑unabhängig von
+   einer Überschussprognose‑‑ in einen entgeltlichen und einen unentgeltlichen Teil aufzuteilen (§ 21 Abs. 2 EStG
+   a.F.).
+
+15 b) Maßstab für die Berechnung der Entgeltlichkeitsquote im Rahmen des § 21 Abs. 2 EStG a.F. ist die ortsübliche
+   Marktmiete. Darunter ist die ortsübliche Kaltmiete für Wohnungen vergleichbarer Art, Lage und Ausstattung unter
+   Einbeziehung der Spannen des örtlichen Mietspiegels zuzüglich der nach der Betriebskostenverordnung vom
+   25. November 2003 (BGBl I 2003, 2346) umlagefähigen Kosten zu verstehen (ständige Rechtsprechung, siehe
+   zuletzt BFH-Urteil vom 10. Mai 2016 IX R 44/15, BFHE 254, 31, BStBl II 2016, 835, Rz 11).
+
+16 Da die Überlassung von möblierten oder ‑‑wie im Streitfall‑‑ teilmöblierten Wohnungen regelmäßig mit einem
+   gesteigerten Nutzungswert verbunden ist, der sich häufig auch in einer höheren ortsüblichen Miete niederschlägt,
+   ist für die Überlassung solcher Wohnungen grundsätzlich ein Möblierungszuschlag anzusetzen, der am Markt zu
+
+                                                                                                                Seite 3 von 5
+    realisieren ist (insoweit gleicher Ansicht FG Baden-Württemberg, Urteil vom 7. September 2002 11 K 126/98, EFG
+    2003, 156 ‑‑rechtskräftig‑‑ für Einbauküche, Einbauschränke und Badezimmermöbel; Niedersächsisches FG vom
+    7. Dezember 2010 3 K 251/08, EFG 2011, 628 ‑‑rechtskräftig‑‑; FG München, Urteil vom 25. Mai 2011 1 K 4079/09,
+    EFG 2012, 1058, die Revision wurde nachgehend durch BFH-Urteil vom 11. Dezember 2012 IX R 14/12, BFHE 239,
+    453, BStBl II 2013, 279 als unbegründet zurückgewiesen; Pfirrmann in Herrmann/ Heuer/Raupach, § 21 EStG
+    Rz 206; Schmidt/Kulosa, EStG, 36. Aufl., § 21 Rz 159; vgl. auch BFH-Urteil vom 27. Juni 1995 IX R 90/93, BFH/NV
+    1996, 29). Der Vermieter räumt dem Mieter durch die Möblierung sachlich einen Mehrwert an
+    Gebrauchsmöglichkeiten ein. Durch die Überlassung erspart der Mieter eigene Aufwendungen für Möbel und
+    Einrichtungsgegenstände, die, soweit ihnen ein erheblicher Wert beizumessen ist, am Markt unter fremden Dritten
+    regelmäßig durch eine Erhöhung der ortsüblichen Kaltmiete abgebildet werden. Dabei ist es unerheblich, ob sich
+    die überlassenen Möbel oder Gegenstände in den vermieteten Wohnräumen, dem mitvermieteten Keller oder
+    Räumlichkeiten des Gemeinschaftseigentums befinden.
+
+17 c) Die ortsübliche Miete für Wohnungen vergleichbarer Art, Lage und Ausstattung sowie gegebenenfalls der
+   marktübliche Gebrauchswert der überlassenen Möblierung sind vom FG als Tatsacheninstanz festzustellen (vgl.
+   BFH-Urteil vom 17. August 2005 IX R 10/05, BFHE 211, 151, BStBl II 2006, 71, unter II.1.b, Rz 15, betreffend eine
+   unmöblierte Wohnung). Diese Feststellung ist als Frage der Tatsachen- und Beweiswürdigung vom Revisionsgericht
+   nur daraufhin zu prüfen, ob das FG im Rahmen der Gesamtwürdigung von zutreffenden Kriterien ausgegangen ist,
+   alle maßgeblichen Beweisanzeichen in seine Beurteilung einbezogen und dabei nicht gegen Denkgesetze oder
+   Erfahrungssätze verstoßen hat.
+
+18 d) Zur Ermittlung der Höhe der ortsüblichen Miete kann grundsätzlich der örtliche Mietspiegel herangezogen
+   werden (vgl. BFH-Urteil in BFHE 211, 151, BStBl II 2006, 71, unter II.1.b, Rz 15; Blümich/Schallmoser, § 21 EStG
+   Rz 543). Soweit nicht etwas anderes festgelegt ist, bezieht sich der Mietspiegel auf nicht möblierte Wohnungen
+   (Emmerich in Staudinger, Bürgerliches Gesetzbuch, § 558 BGB Rz 33). Einbauküche und Einbauschränke stellen
+   insoweit keine Möblierung dar; sind sie vorhanden und werden sie im Rahmen eines Mietverhältnisses ohne
+   zusätzliches Entgelt zur Nutzung überlassen, ist die im Mietspiegel ausgewiesene ortsübliche Miete für unmöblierte
+   Wohnungen in geeigneter Weise zu erhöhen: Soweit der Mietspiegel für eine überlassene Einbauküche mit Herd,
+   Spüle, Kühlschrank sowie Schränken oder für andere Gegenstände, beispielsweise einen prozentualen Zuschlag
+   oder eine Erhöhung des Ausstattungsfaktors über das Punktesystem vorsieht, ist diese Erhöhung als marktüblich
+   anzusehen. In solchen Fällen darf ein darüber hinausgehender Möblierungszuschlag nicht angesetzt werden.
+
+19 Demgegenüber ist ein am Markt realisierbarer Möblierungszuschlag zu berücksichtigen, wenn sich im Einzelfall der
+   Gebrauchswert von im Rahmen eines Mietverhältnisses ohne zusätzliches Entgelt zur Nutzung überlassener
+   Einrichtungsgegenstände aus dem Mietspiegel nicht entnehmen lässt. Ein gegebenenfalls erforderlicher Zuschlag
+   ist dann vom FG auf der in den Entscheidungsgründen darzulegenden Grundlage des örtlichen Mietmarkts für
+   möblierte Wohnungen zu ermitteln. Wenn das Gericht nicht über die erforderliche eigene Sachkunde über den auf
+   dem Mietmarkt üblichen Gebrauchswert der überlassenen Gegenstände verfügt, drängt sich die Einholung eines
+   Sachverständigengutachtens auf (vgl. Blümich/Schallmoser, a.a.O.). Unter Umständen kann das FG aber auch auf
+   aktuellere Entwicklungen auf dem maßgebenden Mietmarkt oder auf Neuauflagen des örtlichen Mietspiegels
+   zurückgreifen, wenn es sich im Rahmen der Gesamtwürdigung des Sachverhalts davon überzeugen kann, dass diese
+   auf die Beurteilung der Marktsituation im jeweiligen Streitjahr zurückübertragen werden können.
+
+20 e) Ist ein marktüblicher Gebrauchswert für die überlassenen Möbel nicht zu ermitteln, kommt ein
+   Möblierungszuschlag nicht in Betracht. Insbesondere kann der Möblierungszuschlag nicht aus dem Monatsbetrag
+   der linearen AfA für die überlassenen Möbel und Einrichtungsgegenstände zuzüglich eines typisierten
+   Mietrenditeaufschlags von 4 % abgeleitet werden (insoweit unzutreffend Niedersächsisches FG in EFG 2011, 628,
+   rechtskräftig), weil eine solche Typisierung den vom Gesetz in § 21 Abs. 2 EStG geforderten Maßstab des örtlichen
+   Mietmarkts außer Acht lässt.
+
+21 2. Nach diesen Grundsätzen kann die Entscheidung des FG keinen Bestand haben.
+
+22 a) Schon die Annahme des FG, die Kaltmiete sei um einen typisierten Möblierungszuschlag für die Einbauküche und
+   die Nutzungsmöglichkeit von Waschmaschine und Trockner in Höhe der monatlichen AfA auf die überlassenen
+   Gegenstände zuzüglich eines Gewinnaufschlags von 4 % zu erhöhen, ist rechtsfehlerhaft. Denn ein solcher Ansatz
+   beachtet die Umstände des ortsüblichen Mietmarkts nicht und verletzt daher aus den unter II.1.e der
+   Entscheidungsgründe genannten Erwägungen § 21 Abs. 2 EStG a.F.
+
+23 b) Unzutreffend ist das FG überdies davon ausgegangen, dass der Möblierungszuschlag schon deshalb nicht über
+                                                                                                             Seite 4 von 5
+    die Ausstattungsmerkmale des Mietspiegels 2005 der Stadt A zu berücksichtigen sei, weil sich aus diesem eine
+    Berücksichtigung von Möblierung oder einer anderweitigen Einrichtung nicht entnehmen lasse. Die im Mietspiegel
+    enthaltene Aufzählung von Ausstattungsmerkmalen (Heizung, Fassade, Treppenhaus, Fenster, Elektroanschlüsse,
+    Warmwasserversorgung, Sanitäreinrichtungen, Wandfliesen und Fußbodenbeläge) sei, so das FG, zwar nicht
+    abschließend, allerdings seien die dort aufgeführten Ausstattungsmerkmale sämtlich gebäudebezogen. Der
+    Mietspiegel der Stadt A wolle zur Typisierung mit seinem Punktesystem nur die wesentlichen
+    Ausstattungsmerkmale erfassen.
+
+24 Für diese vom FG gezogenen Folgerungen fehlt es an einer tragfähigen Tatsachengrundlage. Die Annahme, dass
+   sich dem Mietspiegel die Berücksichtigung einer überlassenen Einbauküche nicht ausdrücklich entnehmen lasse,
+   erfüllt das Gebot der Nachvollziehbarkeit der Beweiswürdigung jedenfalls dann nicht, wenn der Mietspiegel darauf
+   hinweist, dass die darin enthaltene Aufzählung von Ausstattungsmerkmalen gerade nicht abschließend ist. Das
+   Gericht hat in einem solchen Fall konkrete Feststellungen dazu zu treffen, ob die Überlassung einer Einbauküche zu
+   den zu berücksichtigenden, aber nicht explizit aufgelisteten Ausstattungsmerkmalen gehört. Da das Urteil des FG
+   insoweit lückenhaft ist, kann es auch aus diesem Grund keine Bindungswirkung i.S. des § 118 Abs. 2 FGO entfalten.
+
+25 3. Das Urteil des FG ist aufzuheben. Die Sache ist nicht spruchreif. Das FG hat keine (ausreichenden) Feststellungen
+   dazu getroffen, ob der Mietspiegel 2005 der Stadt A die überlassene Einbauküche über die Ausstattungsmerkmale
+   der Wohnung berücksichtigt und gegebenenfalls in welcher Höhe der Gebrauchswert für die überlassene
+   Möblierung in Form eines Möblierungszuschlags nach Maßgabe des in den Streitjahren zugrunde zu legenden
+   örtlichen Mietmarkts für möblierte Wohnungen anzusetzen ist. Dies hat es unter Beachtung der unter II.1.
+   genannten Grundsätze im zweiten Rechtsgang nachzuholen.
+
+26 Ohne Bindung für die Entscheidung im zweiten Rechtszug weist der Senat darauf hin, dass der aktuelle Mietspiegel
+   der Stadt A für Objekte, die einschließlich einer Einbauküche vermietet werden, eine Erhöhung des
+   Ausstattungsfaktors um 0,03 Punkte vorsieht.
+
+27 4. Da die Revision bereits in der Sache Erfolg hat, kommt es auf die geltend gemachten Verfahrensrügen nicht an.
+
+28 5. Die Kostenentscheidung beruht auf § 143 Abs. 2 FGO.
+
+
+Quelle: www.bundesfinanzhof.de
+
+
+
+
+                                                                                                               Seite 5 von 5
+

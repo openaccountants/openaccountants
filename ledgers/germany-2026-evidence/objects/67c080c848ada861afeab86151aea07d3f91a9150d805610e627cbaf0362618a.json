@@ -1,0 +1,383 @@
+{
+  "Guide_sha256": "f7864d22ecb5e51e67d65e1c799dd335abe3dc120be7e556779c84ac2df80382",
+  "ledger_sha256": "c45ff60d57c437829d766218667ff3f7f9ac6ed20aea5c2d72d330dc7ad2f604",
+  "fresh_controls": [
+    {
+      "name": "actualPAPoriginaltable 20000 class1",
+      "actual": "380",
+      "expected": "380"
+    },
+    {
+      "name": "actualPAPoriginaltable 20000 class2",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "actualPAPoriginaltable 20000 class3",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "actualPAPoriginaltable 20000 class5",
+      "actual": "2234",
+      "expected": "2234"
+    },
+    {
+      "name": "actualPAPoriginaltable 20000 class6",
+      "actual": "2766",
+      "expected": "2766"
+    },
+    {
+      "name": "actualPAPoriginaltable 60000 class1",
+      "actual": "9389",
+      "expected": "9389"
+    },
+    {
+      "name": "actualPAPoriginaltable 60000 class2",
+      "actual": "8091",
+      "expected": "8091"
+    },
+    {
+      "name": "actualPAPoriginaltable 60000 class3",
+      "actual": "4822",
+      "expected": "4822"
+    },
+    {
+      "name": "actualPAPoriginaltable 60000 class5",
+      "actual": "15364",
+      "expected": "15364"
+    },
+    {
+      "name": "actualPAPoriginaltable 60000 class6",
+      "actual": "15895",
+      "expected": "15895"
+    },
+    {
+      "name": "actualPAPoriginaltable 100000 class1",
+      "actual": "23248",
+      "expected": "23248"
+    },
+    {
+      "name": "actualPAPoriginaltable 100000 class2",
+      "actual": "21634",
+      "expected": "21634"
+    },
+    {
+      "name": "actualPAPoriginaltable 100000 class3",
+      "actual": "15012",
+      "expected": "15012"
+    },
+    {
+      "name": "actualPAPoriginaltable 100000 class5",
+      "actual": "30157",
+      "expected": "30157"
+    },
+    {
+      "name": "actualPAPoriginaltable 100000 class6",
+      "actual": "30689",
+      "expected": "30689"
+    },
+    {
+      "name": "oa1VSP",
+      "actual": "12090",
+      "expected": "12090"
+    },
+    {
+      "name": "oa1ZVE",
+      "actual": "46644",
+      "expected": "46644"
+    },
+    {
+      "name": "oa1monthlytax",
+      "actual": "782.41",
+      "expected": "782.41"
+    },
+    {
+      "name": "oa1EE",
+      "actual": "1087.5",
+      "expected": "1087.50"
+    },
+    {
+      "name": "oa1net",
+      "actual": "3130.09",
+      "expected": "3130.09"
+    },
+    {
+      "name": "oa2VSP",
+      "actual": "16266",
+      "expected": "16266"
+    },
+    {
+      "name": "oa2ZVE",
+      "actual": "90468",
+      "expected": "90468"
+    },
+    {
+      "name": "oa2annual",
+      "actual": "17826",
+      "expected": "17826"
+    },
+    {
+      "name": "oa2month",
+      "actual": "1485.5",
+      "expected": "1485.50"
+    },
+    {
+      "name": "oa2childbase",
+      "actual": "11626",
+      "expected": "11626"
+    },
+    {
+      "name": "oa2church",
+      "actual": "930.08",
+      "expected": "930.08"
+    },
+    {
+      "name": "oa2EE",
+      "actual": "1482.76",
+      "expected": "1482.76"
+    },
+    {
+      "name": "oa2ERcare",
+      "actual": "104.63",
+      "expected": "104.63"
+    },
+    {
+      "name": "care0outside",
+      "actual": "0.024",
+      "expected": "0.024"
+    },
+    {
+      "name": "care0Saxony",
+      "actual": "0.029",
+      "expected": "0.029"
+    },
+    {
+      "name": "care1outside",
+      "actual": "0.0180",
+      "expected": "0.018"
+    },
+    {
+      "name": "care1Saxony",
+      "actual": "0.0230",
+      "expected": "0.023"
+    },
+    {
+      "name": "care2outside",
+      "actual": "0.0155",
+      "expected": "0.0155"
+    },
+    {
+      "name": "care2Saxony",
+      "actual": "0.0205",
+      "expected": "0.0205"
+    },
+    {
+      "name": "care3outside",
+      "actual": "0.0130",
+      "expected": "0.013"
+    },
+    {
+      "name": "care3Saxony",
+      "actual": "0.0180",
+      "expected": "0.018"
+    },
+    {
+      "name": "care4outside",
+      "actual": "0.0105",
+      "expected": "0.0105"
+    },
+    {
+      "name": "care4Saxony",
+      "actual": "0.0155",
+      "expected": "0.0155"
+    },
+    {
+      "name": "care5outside",
+      "actual": "0.0080",
+      "expected": "0.008"
+    },
+    {
+      "name": "care5Saxony",
+      "actual": "0.0130",
+      "expected": "0.013"
+    },
+    {
+      "name": "minimum603",
+      "actual": "603",
+      "expected": "603"
+    },
+    {
+      "name": "old556",
+      "actual": "556",
+      "expected": "556"
+    },
+    {
+      "name": "minijobhealth",
+      "actual": "78.39",
+      "expected": "78.39"
+    },
+    {
+      "name": "minijobpension",
+      "actual": "90.45",
+      "expected": "90.45"
+    },
+    {
+      "name": "minijobtax",
+      "actual": "12.06",
+      "expected": "12.06"
+    },
+    {
+      "name": "minijobemployee",
+      "actual": "21.71",
+      "expected": "21.71"
+    },
+    {
+      "name": "midijobtotalbase",
+      "actual": "854.06",
+      "expected": "854.06"
+    },
+    {
+      "name": "midijobEEbase",
+      "actual": "568.36",
+      "expected": "568.36"
+    },
+    {
+      "name": "DE-B11childlesscorrect",
+      "actual": "5.12",
+      "expected": "5.12"
+    },
+    {
+      "name": "DE-B11wrongsecondbase",
+      "actual": "3.41",
+      "expected": "3.41"
+    },
+    {
+      "name": "DE-B11difference",
+      "actual": "1.71",
+      "expected": "1.71"
+    },
+    {
+      "name": "DE-B10professionalKRV0VSP",
+      "actual": "12090",
+      "expected": "12090"
+    },
+    {
+      "name": "DE-B10incorrectKRV1VSP",
+      "actual": "6510",
+      "expected": "6510"
+    },
+    {
+      "name": "DE-B10taxseparator",
+      "actual": "1948",
+      "expected": "1948"
+    },
+    {
+      "name": "AktivMayroom",
+      "actual": "16000",
+      "expected": "16000"
+    },
+    {
+      "name": "Aktiv500taxed",
+      "actual": "500",
+      "expected": "500"
+    },
+    {
+      "name": "oldbonus500exempt",
+      "actual": "500",
+      "expected": "500"
+    },
+    {
+      "name": "oldbonus300taxed",
+      "actual": "300",
+      "expected": "300"
+    },
+    {
+      "name": "lateTax",
+      "actual": "12.50",
+      "expected": "12.5"
+    },
+    {
+      "name": "lateSV",
+      "actual": "34.50",
+      "expected": "34.5"
+    },
+    {
+      "name": "10OctSat",
+      "actual": "5",
+      "expected": "5"
+    },
+    {
+      "name": "12OctMon",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "2027Feb28Sunday",
+      "actual": "6",
+      "expected": "6"
+    },
+    {
+      "name": "2026Feb28Saturday",
+      "actual": "5",
+      "expected": "5"
+    },
+    {
+      "name": "B09 post-age fullFalse waiverFalse:RV",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "B09 post-age fullTrue waiverFalse:RV",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "B09 post-age fullTrue waiverTrue:RV",
+      "actual": "True",
+      "expected": "True"
+    }
+  ],
+  "original_oa_blocks": 2,
+  "oa_failures": [],
+  "own_quote_hash_literal_checks": 120,
+  "all_three_corrections_exact_composition_and_inverse": true,
+  "original_oa_URL_H2_CTA_preservation": "Each correction exactproof retained; complete inverse recovers original baseline.",
+  "schema_errors": [],
+  "schema_warnings": [],
+  "scoped_diff": "",
+  "visual_PAP_reads": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/support/de-payroll/PAP-visual/page-26.png",
+      "sha256": "23ee217e75eab1b544b00bc023d41bb04db64dfdce04ab52f79610477075a946",
+      "actual_visual_read_on": "2026-10-29"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/support/de-payroll/PAP-visual/page-27.png",
+      "sha256": "a7ba290d56831638d01f3b171c0938984a81a367a4b82b4f6fce95b1e3f87855",
+      "actual_visual_read_on": "2026-10-29"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/support/de-payroll/PAP-visual/page-28.png",
+      "sha256": "379633485886811b1017327329b1c529696ded36cffdd2b70a0cd0dd388217a7",
+      "actual_visual_read_on": "2026-10-29"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/support/de-payroll/PAP-visual/page-29.png",
+      "sha256": "5b44661f1fece42d2b3a407f15837cdaa1ed8ecd7a3afaa042bb44b9103cf00e",
+      "actual_visual_read_on": "2026-10-29"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/support/de-payroll/PAP-visual/page-30.png",
+      "sha256": "fb8c4db4d31b315b45a7edf82252d818d59526db59fc6166bc66fba8186d8efe",
+      "actual_visual_read_on": "2026-10-29"
+    }
+  ],
+  "precise_limits": [
+    "Saxony transition allocation is excluded from the generic half-rate worksheet; ordinary published F federalGazette notice itself unread; statechurchrateallocation/2027healthvalue/certificateSundaymove remain explicitcurrentGuide reservations.",
+    "BVV wrong /bvv route404 preserved; successful /beitrvv sources acquired/read separately.",
+    "Initial Reader helper lacked __file__; corrected only helper namespace, no raw or Guide change."
+  ],
+  "not_independent_review": true,
+  "actual_control_development_failure": "Initial separately stipulated DE-B10 tax-difference expectation1950 was wrong; actual own tariff computation1948 reproduced. Expectedfixturecorrectedonly; no Guide calculation changed."
+}

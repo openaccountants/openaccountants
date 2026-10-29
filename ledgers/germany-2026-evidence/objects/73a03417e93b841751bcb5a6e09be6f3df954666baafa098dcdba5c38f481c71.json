@@ -1,0 +1,173 @@
+{
+  "status": "PASS bounded exact R18\u201322 successor; whole frozen203rows/78quotes and original cases previously independently reviewed. No whole-country verdict.",
+  "pair": {
+    "slug": "de-non-resident-tax",
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-non-resident-tax.md",
+    "Guide_sha256": "2240579d7a85e98bbc9f6994ccd0a9a2d99025d4f1fa8c6ed94b18c7e7a25174",
+    "bytes": 37995,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R18-R22-non-resident-writer-successor-2026-10-29/ledgers/de-non-resident-tax.md",
+    "ledger_sha256": "3ee8e1cb8adb832f2953b24c0d54ae44c99c6733c8947f72a40a487e59213349",
+    "current_rows": 207,
+    "prior_current_rows": 203,
+    "old_topics": 404,
+    "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/de-non-resident-tax.md",
+    "prior_ledger_sha256": "0d2f798a1e3fde4bf457e6621f65c9972b15864cbb1ed3e33f8a1b80041b1bdb"
+  },
+  "manifest_members_rehashed": 20,
+  "operations": 13,
+  "full_inverse": true,
+  "native_rows_verified": 207,
+  "original_oa_exact": 2,
+  "whole_example_section_exact": true,
+  "protected_metadata_CTA_URLs": true,
+  "sources": [
+    {
+      "id": "R18.rate",
+      "native_LF": [
+        7,
+        7
+      ],
+      "reader_sha256": "219a2aa1409e999b209ed2402a91d3618b9ec3c19ebf85c10122087d7fa3845a",
+      "quote_sha256": "b8eb2b65618c2dace32c77221fa8bae9a16f130bd5e24bfc421e1426bef2e793",
+      "actual_read": "Full selected quotation read in two bounded four-record batches; original own source reads also retained."
+    },
+    {
+      "id": "R18.base-and-threshold",
+      "native_LF": [
+        7,
+        33
+      ],
+      "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+      "quote_sha256": "de799540fcd985d2ecfec59e8035ec1dca5edcbed5db1fb880aab2b54f1d2ff5",
+      "actual_read": "Full selected quotation read in two bounded four-record batches; original own source reads also retained."
+    },
+    {
+      "id": "R19.refund",
+      "native_LF": [
+        51,
+        51
+      ],
+      "reader_sha256": "6b231e67dcfa9e5f8b8f4c3a9441d242d9fa211fbd37e0191070b5620c1db7f8",
+      "quote_sha256": "6b283cb2718dee18e9bf9e55db44c661f6d15ec89a17ebd30847377fddc88446",
+      "actual_read": "Full selected quotation read in two bounded four-record batches; original own source reads also retained."
+    },
+    {
+      "id": "R19.anti-abuse",
+      "native_LF": [
+        10,
+        14
+      ],
+      "reader_sha256": "05fc41a45e6dc460030534c73b751375029212123e882f7cf0f5a37fe5a35878",
+      "quote_sha256": "840c6c581e472fc21c3ba225eb0d896d8fb6bf149a4781f2255210c6aa30664e",
+      "actual_read": "Full selected quotation read in two bounded four-record batches; original own source reads also retained."
+    },
+    {
+      "id": "R20.assessment-exceptions",
+      "native_LF": [
+        13,
+        34
+      ],
+      "reader_sha256": "34181f9545634ae26e814db06c4f0f23c3d58e85577c46cac58a89a800709223",
+      "quote_sha256": "14d19e3678b45c595a3eec7fa03dc6f919e973571ab034b854333de7ac6a4aca",
+      "actual_read": "Full selected quotation read in two bounded four-record batches; original own source reads also retained."
+    },
+    {
+      "id": "R21.business-rights",
+      "native_LF": [
+        25,
+        30
+      ],
+      "reader_sha256": "56cbe0597b599138f1fdbd55e4ceaa376e3b79a25e0067de8d313a8798ea3240",
+      "quote_sha256": "369a8c9c97348773022f964011106057bd0bdb98c83e51c230b7acbe18407014",
+      "actual_read": "Full selected quotation read in two bounded four-record batches; original own source reads also retained."
+    },
+    {
+      "id": "R21.private-rights",
+      "native_LF": [
+        70,
+        71
+      ],
+      "reader_sha256": "56cbe0597b599138f1fdbd55e4ceaa376e3b79a25e0067de8d313a8798ea3240",
+      "quote_sha256": "3070eef7af54804728a2147cf83d4285f9a96d1a291f70fd7e95c54b50ff9460",
+      "actual_read": "Full selected quotation read in two bounded four-record batches; original own source reads also retained."
+    },
+    {
+      "id": "R22.share-source",
+      "native_LF": [
+        18,
+        24
+      ],
+      "reader_sha256": "56cbe0597b599138f1fdbd55e4ceaa376e3b79a25e0067de8d313a8798ea3240",
+      "quote_sha256": "d1ce088d4ec2c18fccb1701ae52748a794ec1d8c3f7d758c5b515a54dc1cc541",
+      "actual_read": "Full selected quotation read in two bounded four-record batches; original own source reads also retained."
+    }
+  ],
+  "own_controls": [
+    {
+      "name": "Soli ordinary 20350",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "Soli ordinary 20400",
+      "actual": "119/20",
+      "expected": "119/20"
+    },
+    {
+      "name": "Soli ordinary 30000",
+      "actual": "22967/20",
+      "expected": "22967/20"
+    },
+    {
+      "name": "Soli ordinary 100000",
+      "actual": "5500",
+      "expected": "5500"
+    },
+    {
+      "name": "R19bothdenialconditions",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "R19oneconditioninsufficient",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "R19actualmainpurpose rebuttal overrides denial",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "R20no4dnotgenericEUgate",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "R21unrelatedregistryonlyexception",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "R21differentdomesticlinkdoesnotautomaticallyexempt",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "R22book40fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "R22book60passesratio",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "R22exact50fails",
+      "actual": "False",
+      "expected": "False"
+    }
+  ],
+  "helper_failures": "Initial display helper assumed reason/old keys, stopped; corrected to actual finding/before/after schema. One rows-path assumption also stopped before completion; corrected to the actual nested support path. No failed check promoted to PASS."
+}

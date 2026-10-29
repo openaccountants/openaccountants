@@ -1,0 +1,4 @@
+P001: (1) Für die Dauer einer gewährten Stundung von Ansprüchen aus dem Steuerschuldverhältnis werden Zinsen erhoben; für Haftungsansprüche gilt dies nur, soweit sich die Haftung auf Steuern und zurückzuzahlende Steuervergütungen erstreckt. Wird der Steuer- oder Haftungsbescheid nach Ablauf der Stundung aufgehoben, geändert oder nach § 129 berichtigt, so bleiben die bis dahin entstandenen Zinsen unberührt.
+P002: (2) Auf die Zinsen kann ganz oder teilweise verzichtet werden, wenn ihre Erhebung nach Lage des einzelnen Falls unbillig wäre.
+P003: (3) Zinsen nach § 233a, die für denselben Zeitraum festgesetzt wurden, sind anzurechnen.
+P004: (+++ § 234: Zur Geltung vgl. Art. 97 § 15 Abs. 6 EGAO +++)

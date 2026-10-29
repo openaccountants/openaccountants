@@ -1,0 +1,176 @@
+{
+  "R109-111.R17": {
+    "id": "R17",
+    "source_id": "DEB122",
+    "act_article": "EStG §7a(9)",
+    "official_url": "https://www.gesetze-im-internet.de/estg/__7a.html",
+    "exact_original_language_quote": "(9) Sind für ein Wirtschaftsgut Sonderabschreibungen vorgenommen worden, so bemessen sich nach Ablauf des maßgebenden Begünstigungszeitraums die Absetzungen für Abnutzung bei Gebäuden und bei Wirtschaftsgütern im Sinne des § 7 Absatz 5b nach dem Restwert und dem nach § 7 Absatz 4 unter Berücksichtigung der Restnutzungsdauer maßgebenden Prozentsatz oder dem nach § 7 Absatz 5a maßgebenden Prozentsatz, bei anderen Wirtschaftsgütern nach dem Restwert und der Restnutzungsdauer.",
+    "reader_native_LF": [
+      15,
+      15
+    ],
+    "selected_reader_display_lines": [
+      15,
+      15
+    ],
+    "read_on": "2026-10-29",
+    "source_sha256": "e6fbfc4dfb0657c489fb402cc40e70ac305b106ff21982a7dd01e946717e0868",
+    "reader_sha256": "93c4af46c9c000e6716bf5759b4124f8e4b9c5b725605f23c740e6edb5394356",
+    "source_kind": "retained official raw body and derived reader",
+    "note": "",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-7a-20261024.html",
+    "raw_sha256": "e6fbfc4dfb0657c489fb402cc40e70ac305b106ff21982a7dd01e946717e0868",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB122.txt",
+    "native_LF": [
+      15,
+      15
+    ],
+    "exact_quote": "(9) Sind für ein Wirtschaftsgut Sonderabschreibungen vorgenommen worden, so bemessen sich nach Ablauf des maßgebenden Begünstigungszeitraums die Absetzungen für Abnutzung bei Gebäuden und bei Wirtschaftsgütern im Sinne des § 7 Absatz 5b nach dem Restwert und dem nach § 7 Absatz 4 unter Berücksichtigung der Restnutzungsdauer maßgebenden Prozentsatz oder dem nach § 7 Absatz 5a maßgebenden Prozentsatz, bei anderen Wirtschaftsgütern nach dem Restwert und der Restnutzungsdauer.",
+    "actual_read_scope": "Own selected nativeLF read in full after C handover; no whole-body reading claim."
+  },
+  "R109-111.R34": {
+    "id": "R34",
+    "source_id": "DEB185",
+    "act_article": "ELSTER 2025 AnlageV instructions: Werbungskosten",
+    "official_url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+    "exact_original_language_quote": "Sie haben Aufwendungen, die im Zusammenhang mit einer Wohnung oder einzelnen Räumen anfallen?\nDann können Sie diese nur als Werbungskosten bei den Einkünften aus Vermietung und Verpachtung geltend machen, wenn Sie aus der Wohnung oder den Räumen entsprechende Einnahmen erzielen oder in Zukunft erzielen wollen.\nSie haben Aufwendungen, die im Zusammenhang mit einer eigengenutzten oder unentgeltlich an Dritte überlassenen Wohnung anfallen?\nDann können Sie diese Aufwendungen nicht als Werbungskosten geltend machen.\nSie haben Aufwendungen, die im Zusammenhang mit Räumen anfallen, die Sie zu eigenen beruflichen oder gewerblichen Zwecken nutzen?\nDann können Sie diese Aufwendungen nicht als Werbungskosten bei den Einkünften aus Vermietung und Verpachtung geltend machen. Sie können diese Aufwendungen nur als Werbungskosten oder Betriebsausgaben bei den Einnahmen abziehen, die Sie im Zusammenhang mit der Nutzung dieser Räume erzielen.\nSind die Aufwendungen nur teilweise Werbungskosten bei Ihren Einkünften aus Vermietung und Verpachtung, tragen Sie bitte den direkt zuordenbaren Anteil (zum Beispiel Badrenovierung) in die Zeilen \"durch direkte Zuordnung ermittelt\" ein. Können Sie Aufwendungen nicht direkt zuordnen (zum Beispiel bei einer Dachreparatur) und haben Sie diese in anderer Weise den Wohnungen zugeordnet (zum Beispiel nach dem errechneten Verhältnis der Nutzflächen in Prozent), dann füllen Sie bitte die Zeilen \"durch verhältnismäßige Zuordnung ermittelt\" aus. Haben Sie die Aufwendungen zum ersten Mal verhältnismäßig aufgeteilt, dann erläutern Sie bitte den Aufteilungsmaßstab sowie die Zuordnung in einer gesonderten Aufstellung.\nBeträgt die vereinbarte und gezahlte Miete einschließlich gezahlter Umlagen für eine überlassene Wohnung weniger als 50 % der ortsüblichen Marktmiete einschließlich umlagefähiger Kosten (zum Beispiel bei verbilligter Überlassung), können die auf diese Wohnung entfallenden Aufwendungen nur anteilig als Werbungskosten berücksichtigt werden. Im Falle der verbilligten Überlassung tragen Sie bitte die entsprechenden Aufwendungen in die Zeilen 33 bis 84 stets in voller Höhe ein. Hinsichtlich der vorzunehmenden Kürzung verwenden Sie bitte ausschließlich die Eintragungsmöglichkeiten in den Zeilen 87 und 88 und beachten Sie die entsprechenden Erläuterungen hierzu.",
+    "reader_native_LF": [
+      2580,
+      2587
+    ],
+    "selected_reader_display_lines": [
+      2580,
+      2587
+    ],
+    "read_on": "2026-10-29",
+    "source_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+    "reader_sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+    "source_kind": "retained official raw body and derived reader",
+    "note": "Dated 2025 form and practice instructions; no assertion of published2026 line numbers.",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2025-20261024.html",
+    "raw_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+    "native_LF": [
+      2580,
+      2587
+    ],
+    "exact_quote": "Sie haben Aufwendungen, die im Zusammenhang mit einer Wohnung oder einzelnen Räumen anfallen?\nDann können Sie diese nur als Werbungskosten bei den Einkünften aus Vermietung und Verpachtung geltend machen, wenn Sie aus der Wohnung oder den Räumen entsprechende Einnahmen erzielen oder in Zukunft erzielen wollen.\nSie haben Aufwendungen, die im Zusammenhang mit einer eigengenutzten oder unentgeltlich an Dritte überlassenen Wohnung anfallen?\nDann können Sie diese Aufwendungen nicht als Werbungskosten geltend machen.\nSie haben Aufwendungen, die im Zusammenhang mit Räumen anfallen, die Sie zu eigenen beruflichen oder gewerblichen Zwecken nutzen?\nDann können Sie diese Aufwendungen nicht als Werbungskosten bei den Einkünften aus Vermietung und Verpachtung geltend machen. Sie können diese Aufwendungen nur als Werbungskosten oder Betriebsausgaben bei den Einnahmen abziehen, die Sie im Zusammenhang mit der Nutzung dieser Räume erzielen.\nSind die Aufwendungen nur teilweise Werbungskosten bei Ihren Einkünften aus Vermietung und Verpachtung, tragen Sie bitte den direkt zuordenbaren Anteil (zum Beispiel Badrenovierung) in die Zeilen \"durch direkte Zuordnung ermittelt\" ein. Können Sie Aufwendungen nicht direkt zuordnen (zum Beispiel bei einer Dachreparatur) und haben Sie diese in anderer Weise den Wohnungen zugeordnet (zum Beispiel nach dem errechneten Verhältnis der Nutzflächen in Prozent), dann füllen Sie bitte die Zeilen \"durch verhältnismäßige Zuordnung ermittelt\" aus. Haben Sie die Aufwendungen zum ersten Mal verhältnismäßig aufgeteilt, dann erläutern Sie bitte den Aufteilungsmaßstab sowie die Zuordnung in einer gesonderten Aufstellung.\nBeträgt die vereinbarte und gezahlte Miete einschließlich gezahlter Umlagen für eine überlassene Wohnung weniger als 50 % der ortsüblichen Marktmiete einschließlich umlagefähiger Kosten (zum Beispiel bei verbilligter Überlassung), können die auf diese Wohnung entfallenden Aufwendungen nur anteilig als Werbungskosten berücksichtigt werden. Im Falle der verbilligten Überlassung tragen Sie bitte die entsprechenden Aufwendungen in die Zeilen 33 bis 84 stets in voller Höhe ein. Hinsichtlich der vorzunehmenden Kürzung verwenden Sie bitte ausschließlich die Eintragungsmöglichkeiten in den Zeilen 87 und 88 und beachten Sie die entsprechenden Erläuterungen hierzu.",
+    "actual_read_scope": "Own selected nativeLF read in full after C handover; no whole-body reading claim."
+  },
+  "R109-111.R42": {
+    "id": "R42",
+    "source_id": "DEB185",
+    "act_article": "ELSTER 2025 AnlageV lines87–88: cheap-let ratio/forecast/cut",
+    "official_url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+    "exact_original_language_quote": "Zeile 87 bis 88\nBeträgt die vereinbarte und gezahlte Miete einschließlich gezahlter Umlagen für eine überlassene Wohnung weniger als 50 % der ortsüblichen Marktmiete einschließlich umlagefähiger Kosten (zum Beispiel bei verbilligter Überlassung), müssen Sie die auf diese Wohnung entfallenden Aufwendungen im Verhältnis der ortsüblichen Marktmiete zur vereinbarten Miete aufteilen.\nSie müssen die Aufwendungen nicht aufteilen, wenn\ndas Entgelt mindestens 50 %, jedoch weniger als 66 % der ortsüblichen Marktmiete einschließlich umlagefähiger Kosten beträgt und\nim Zeitraum der Vermietung voraussichtlich kein Verlust erwirtschaftet wird (Überschussprognose vergleiche Randnummer 33 und folgende des Schreibens des Bundesministeriums der Finanzen vom 8. Oktober 2004, BStBl I Seite 933).\nSie müssen die Aufwendungen ebenfalls nicht aufteilen, wenn das Entgelt mindestens 66 % der ortsüblichen Marktmiete einschließlich umlagefähiger Kosten beträgt.\nSofern nach den vorstehenden Ausführungen für das gesamte verbilligt vermietete Objekt eine Aufteilung erforderlich ist, tragen Sie bitte in Zeile 87 den Prozentsatz ein, um den die Werbungskosten zu kürzen sind.\nWird nur ein Teil des Objekts verbilligt vermietet, nehmen Sie bitte eine betragsmäßige Kürzung der Werbungskosten in Zeile 88 vor.",
+    "reader_native_LF": [
+      2737,
+      2744
+    ],
+    "selected_reader_display_lines": [
+      2737,
+      2744
+    ],
+    "read_on": "2026-10-29",
+    "source_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+    "reader_sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+    "source_kind": "retained official raw body and derived reader",
+    "note": "",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2025-20261024.html",
+    "raw_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+    "native_LF": [
+      2737,
+      2744
+    ],
+    "exact_quote": "Zeile 87 bis 88\nBeträgt die vereinbarte und gezahlte Miete einschließlich gezahlter Umlagen für eine überlassene Wohnung weniger als 50 % der ortsüblichen Marktmiete einschließlich umlagefähiger Kosten (zum Beispiel bei verbilligter Überlassung), müssen Sie die auf diese Wohnung entfallenden Aufwendungen im Verhältnis der ortsüblichen Marktmiete zur vereinbarten Miete aufteilen.\nSie müssen die Aufwendungen nicht aufteilen, wenn\ndas Entgelt mindestens 50 %, jedoch weniger als 66 % der ortsüblichen Marktmiete einschließlich umlagefähiger Kosten beträgt und\nim Zeitraum der Vermietung voraussichtlich kein Verlust erwirtschaftet wird (Überschussprognose vergleiche Randnummer 33 und folgende des Schreibens des Bundesministeriums der Finanzen vom 8. Oktober 2004, BStBl I Seite 933).\nSie müssen die Aufwendungen ebenfalls nicht aufteilen, wenn das Entgelt mindestens 66 % der ortsüblichen Marktmiete einschließlich umlagefähiger Kosten beträgt.\nSofern nach den vorstehenden Ausführungen für das gesamte verbilligt vermietete Objekt eine Aufteilung erforderlich ist, tragen Sie bitte in Zeile 87 den Prozentsatz ein, um den die Werbungskosten zu kürzen sind.\nWird nur ein Teil des Objekts verbilligt vermietet, nehmen Sie bitte eine betragsmäßige Kürzung der Werbungskosten in Zeile 88 vor.",
+    "actual_read_scope": "Own selected nativeLF read in full after C handover; no whole-body reading claim."
+  },
+  "R109-111.R89": {
+    "id": "R89",
+    "source_id": "DEB212",
+    "act_article": "BMF21May2025 para16 example1:2024 buyer last2026 claim/fourth lost",
+    "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-05-21-anwendungsschreiben-7b-estg-neu.pdf?__blob=publicationFile&v=5",
+    "exact_original_language_quote": "     Ein Mehrfamilienhaus wird im Jahr 2024 aufgrund eines im Jahr 2021 gestellten Bauantrags fertig-\n     gestellt. Zum 1. Dezember 2024 geht das Eigentum auf einen Erwerber über, der die Wohnungen ab\n     diesem Zeitpunkt vermietet.\n\n     Der Erwerber kann für die Jahre 2024, 2025 und 2026 jährlich bis zu 5 % der förderfähigen Anschaf-\n     fungskosten geltend machen. Das vierte Jahr des Begünstigungszeitraums für die Inanspruchnahme\n     der Sonderabschreibung nach § 7b EStG entfällt aufgrund der Begrenzung des Förderzeitraums auf\n     den Veranlagungszeitraum 2026 (§ 52 Absatz 15a Satz 1 EStG). Die lineare AfA wird im Jahr 2027\n     gegenüber den Vorjahren unverändert berücksichtigt. Erst ab dem 5. Jahr, also nach Ablauf des vier-\n     jährigen Förderzeitraums, dem Jahr 2028, erfolgt die AfA nach § 7a Absatz 9 EStG (vgl. Rn. 66 ff.).",
+    "reader_native_LF": [
+      266,
+      275
+    ],
+    "selected_reader_display_lines": [
+      273,
+      282
+    ],
+    "read_on": "2026-10-29",
+    "source_sha256": "783f9ff673b948361845c2446bcfc6ce6f93cc57c35a804f747b490155ac13cb",
+    "reader_sha256": "29a3d4613e39ceb1bd54754c59faacc60b46507cd900f9d359c549ce56261e72",
+    "source_kind": "retained official raw body and derived reader",
+    "note": "",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-7b-20250521.pdf",
+    "raw_sha256": "783f9ff673b948361845c2446bcfc6ce6f93cc57c35a804f747b490155ac13cb",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB212.txt",
+    "native_LF": [
+      266,
+      275
+    ],
+    "exact_quote": "     Ein Mehrfamilienhaus wird im Jahr 2024 aufgrund eines im Jahr 2021 gestellten Bauantrags fertig-\n     gestellt. Zum 1. Dezember 2024 geht das Eigentum auf einen Erwerber über, der die Wohnungen ab\n     diesem Zeitpunkt vermietet.\n\n     Der Erwerber kann für die Jahre 2024, 2025 und 2026 jährlich bis zu 5 % der förderfähigen Anschaf-\n     fungskosten geltend machen. Das vierte Jahr des Begünstigungszeitraums für die Inanspruchnahme\n     der Sonderabschreibung nach § 7b EStG entfällt aufgrund der Begrenzung des Förderzeitraums auf\n     den Veranlagungszeitraum 2026 (§ 52 Absatz 15a Satz 1 EStG). Die lineare AfA wird im Jahr 2027\n     gegenüber den Vorjahren unverändert berücksichtigt. Erst ab dem 5. Jahr, also nach Ablauf des vier-\n     jährigen Förderzeitraums, dem Jahr 2028, erfolgt die AfA nach § 7a Absatz 9 EStG (vgl. Rn. 66 ff.).",
+    "actual_read_scope": "Own selected nativeLF read in full after C handover; no whole-body reading claim."
+  },
+  "R109-111.R92": {
+    "id": "R92",
+    "source_id": "DEB212",
+    "act_article": "BMF21May2025 para66:restvalue after fouryear benefit period",
+    "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-05-21-anwendungsschreiben-7b-estg-neu.pdf?__blob=publicationFile&v=5",
+    "exact_original_language_quote": "66   Nach Ablauf des Begünstigungszeitraums der Sonderabschreibung nach § 7b EStG von vier Jah-\n     ren bemisst sich die weitere reguläre AfA nach § 7a Absatz 9 EStG. Danach ermittelt sich die wei-\n     tere Abschreibung bei Gebäuden nach dem Restwert nach Ablauf des Begünstigungszeitraums\n     und dem nach § 7 Absatz 4 EStG unter Berücksichtigung der rechnerischen Restnutzungsdauer\n     oder dem nach § 7 Absatz 5a EStG maßgebenden Prozentsatz. Die Begrenzung des Förderzeit-\n     raums (Rn. 16) führt nicht zu einer Verkürzung des Begünstigungszeitraums.",
+    "reader_native_LF": [
+      727,
+      732
+    ],
+    "selected_reader_display_lines": [
+      746,
+      751
+    ],
+    "read_on": "2026-10-29",
+    "source_sha256": "783f9ff673b948361845c2446bcfc6ce6f93cc57c35a804f747b490155ac13cb",
+    "reader_sha256": "29a3d4613e39ceb1bd54754c59faacc60b46507cd900f9d359c549ce56261e72",
+    "source_kind": "retained official raw body and derived reader",
+    "note": "",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-7b-20250521.pdf",
+    "raw_sha256": "783f9ff673b948361845c2446bcfc6ce6f93cc57c35a804f747b490155ac13cb",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB212.txt",
+    "native_LF": [
+      727,
+      732
+    ],
+    "exact_quote": "66   Nach Ablauf des Begünstigungszeitraums der Sonderabschreibung nach § 7b EStG von vier Jah-\n     ren bemisst sich die weitere reguläre AfA nach § 7a Absatz 9 EStG. Danach ermittelt sich die wei-\n     tere Abschreibung bei Gebäuden nach dem Restwert nach Ablauf des Begünstigungszeitraums\n     und dem nach § 7 Absatz 4 EStG unter Berücksichtigung der rechnerischen Restnutzungsdauer\n     oder dem nach § 7 Absatz 5a EStG maßgebenden Prozentsatz. Die Begrenzung des Förderzeit-\n     raums (Rn. 16) führt nicht zu einer Verkürzung des Begünstigungszeitraums.",
+    "actual_read_scope": "Own selected nativeLF read in full after C handover; no whole-body reading claim."
+  },
+  "R109-111.R120": {
+    "id": "R120",
+    "source_id": "DEB185",
+    "act_article": "ELSTER2025 AnlageV/V-FeWo/V-Sonstige/AnlageAUS scope",
+    "official_url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+    "exact_original_language_quote": "Anlage V\nAllgemeines\nFür Einkünfte aus Vermietung und Verpachtung verwenden Sie bitte die folgenden Anlagen:\nAnlage V für Einkünfte aus\neinem vermieteten und/oder verpachteten bebauten Grundstück (zum Beispiel Haus, Eigentumswohnung),\neinem selbst genutzten eigenen Haus oder einer selbst genutzten Eigentumswohnung, wenn Sie nur einzelne Räume vermieten und/oder verpachten sowie\nkurzfristiger Vermietung (zum Beispiel über Internet-Plattformen, Ferienwohnung).\nWenn Sie Einkünfte aus weiteren bebauten Grundstücken erzielt haben, dann müssen Sie für jedes Grundstück eine eigene Anlage V einreichen.\nBei Einkünften aus der Vermietung und/oder Verpachtung von Ferienwohnungen und/oder kurzfristiger Vermietung reichen Sie bitte zusätzlich zur Anlage V die Anlage V-FeWo ein.\nAnlage V-Sonstige für\nEinkünfte aus Beteiligungen, zum Beispiel Grundstücks- oder Erbengemeinschaften (Zeilen 4 bis 29 und 39 der Anlage V-Sonstige),\nEinkünfte aus Untervermietung von gemieteten Räumen (Zeile 31 der Anlage V-Sonstige),\nEinkünfte aus unbebauten Grundstücken (zum Beispiel Parkplatz), anderem unbeweglichen Vermögen (zum Beispiel Schiffe) und Sachinbegriffen (zum Beispiel Geschäftseinrichtung) sowie aus Überlassung von Rechten, zum Beispiel Erbbaurechte, Urheberrechte, Kiesausbeuterechte (Zeile 32 bis 36 der Anlage V-Sonstige)\nvereinnahmte Prozess- und Verzugszinsen, die mit der Vermietungs- oder Verpachtungstätigkeit zusammenhängen, z. B. wenn Sie einen Mietzahlungs- oder Schadenersatzanspruch gegen Ihren Mieter erfolgreich eingeklagt haben oder Sie aufgrund des Verzugs von Mietzahlungen Zinsen erhalten haben (Zeile 37 der Anlage V-Sonstige) und\nEinkünfte für die die ermäßigte Besteuerung nach § 34 Absatz 1 des Einkommensteuergesetzes (EStG) anzuwenden ist (Zeile 38 der Anlage V-Sonstige).\nErzielen Sie diese Einkünfte im Ausland, reichen Sie bitte zusätzlich die Anlage AUS ein.\nFür ausschließlich zu eigenen Wohnzwecken oder eigenen betrieblichen/beruflichen Zwecken genutzte Gebäude und Gebäudeteile ist keine Anlage V auszufüllen.",
+    "reader_native_LF": [
+      2504,
+      2520
+    ],
+    "selected_reader_display_lines": [
+      2504,
+      2520
+    ],
+    "read_on": "2026-10-29",
+    "source_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+    "reader_sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+    "source_kind": "retained official raw body and derived reader",
+    "note": "",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2025-20261024.html",
+    "raw_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+    "native_LF": [
+      2504,
+      2520
+    ],
+    "exact_quote": "Anlage V\nAllgemeines\nFür Einkünfte aus Vermietung und Verpachtung verwenden Sie bitte die folgenden Anlagen:\nAnlage V für Einkünfte aus\neinem vermieteten und/oder verpachteten bebauten Grundstück (zum Beispiel Haus, Eigentumswohnung),\neinem selbst genutzten eigenen Haus oder einer selbst genutzten Eigentumswohnung, wenn Sie nur einzelne Räume vermieten und/oder verpachten sowie\nkurzfristiger Vermietung (zum Beispiel über Internet-Plattformen, Ferienwohnung).\nWenn Sie Einkünfte aus weiteren bebauten Grundstücken erzielt haben, dann müssen Sie für jedes Grundstück eine eigene Anlage V einreichen.\nBei Einkünften aus der Vermietung und/oder Verpachtung von Ferienwohnungen und/oder kurzfristiger Vermietung reichen Sie bitte zusätzlich zur Anlage V die Anlage V-FeWo ein.\nAnlage V-Sonstige für\nEinkünfte aus Beteiligungen, zum Beispiel Grundstücks- oder Erbengemeinschaften (Zeilen 4 bis 29 und 39 der Anlage V-Sonstige),\nEinkünfte aus Untervermietung von gemieteten Räumen (Zeile 31 der Anlage V-Sonstige),\nEinkünfte aus unbebauten Grundstücken (zum Beispiel Parkplatz), anderem unbeweglichen Vermögen (zum Beispiel Schiffe) und Sachinbegriffen (zum Beispiel Geschäftseinrichtung) sowie aus Überlassung von Rechten, zum Beispiel Erbbaurechte, Urheberrechte, Kiesausbeuterechte (Zeile 32 bis 36 der Anlage V-Sonstige)\nvereinnahmte Prozess- und Verzugszinsen, die mit der Vermietungs- oder Verpachtungstätigkeit zusammenhängen, z. B. wenn Sie einen Mietzahlungs- oder Schadenersatzanspruch gegen Ihren Mieter erfolgreich eingeklagt haben oder Sie aufgrund des Verzugs von Mietzahlungen Zinsen erhalten haben (Zeile 37 der Anlage V-Sonstige) und\nEinkünfte für die die ermäßigte Besteuerung nach § 34 Absatz 1 des Einkommensteuergesetzes (EStG) anzuwenden ist (Zeile 38 der Anlage V-Sonstige).\nErzielen Sie diese Einkünfte im Ausland, reichen Sie bitte zusätzlich die Anlage AUS ein.\nFür ausschließlich zu eigenen Wohnzwecken oder eigenen betrieblichen/beruflichen Zwecken genutzte Gebäude und Gebäudeteile ist keine Anlage V auszufüllen.",
+    "actual_read_scope": "Own selected nativeLF read in full after C handover; no whole-body reading claim."
+  }
+}

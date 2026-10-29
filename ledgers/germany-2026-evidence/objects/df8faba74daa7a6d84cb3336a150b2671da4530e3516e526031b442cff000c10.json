@@ -1,0 +1,12 @@
+{
+  "before_sha256": "6480fbe746eeeb14f7726a6771f264b54e4884b0cfb386b4a3a8b52d031bae22",
+  "after_sha256": "f11973431a1c837ca473eeea4884817dd31faa5b3f327775ad80f451a399d835",
+  "operations": 27,
+  "exact_inverse": true,
+  "old_URL_order": true,
+  "protected_frontmatter_except_version_date": true,
+  "CTA_exact": true,
+  "all_original_oa_exact": true,
+  "original_oa_count": 0,
+  "read_date": "2026-10-29"
+}

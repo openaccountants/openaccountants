@@ -1,0 +1,5 @@
+{
+  "ref": "313e3d2e512984e69d4cd53651993c2360cea164",
+  "stderr": "fatal: path 'skills/international/germany/de-uk-employer-first-hire.md' exists on disk, but not in '313e3d2e512984e69d4cd53651993c2360cea164'\n",
+  "returncode": 128
+}

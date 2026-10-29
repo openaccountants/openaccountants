@@ -1,0 +1,11 @@
+{
+  "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R112-crypto-source-scope-writer-successor-2026-10-29",
+  "manifest_sha256": "0310a18118bad76f4b4dfbed243091ad16c7fa5f889337406ce61b7a340dba44",
+  "freeze_sha256": "14f281d64ade8abe07717479836e6b77b89715de0ff35879cab61e66f7a32f07",
+  "original_R44_source_quotes_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R44-R46-crypto-writer-successor-2026-10-29/source-quotes.md",
+  "source_quote_sha256": "51242db1ca2a86785f0a525232d06dcc45589e520489c57c13e67542c1c863d2",
+  "canonical_rows_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R112-crypto-source-scope-writer-successor-2026-10-29/support/rows.json",
+  "rows_sha256": "23050080d5243c176139909efe919b936f3437273f03eef899575a69d20373b6",
+  "canonical_old_topics_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R112-crypto-source-scope-writer-successor-2026-10-29/support/old-topic-destinations.json",
+  "old_topics_sha256": "1c9502b078547a249dc12ae6ef3ef932ab47e1606900064992a2b5b7d0ea0a4f"
+}

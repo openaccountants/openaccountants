@@ -1,0 +1,69 @@
+{
+  "artifacts": [
+    {
+      "path": "after/de-treaty-withholding-rates.md",
+      "sha256": "c00779b73dc6a31a1d8d5bfe153800399bf7a332c9be77159953aeb05f4813e8",
+      "bytes": 32880
+    },
+    {
+      "path": "before/de-treaty-withholding-rates.md",
+      "sha256": "e0af931443833336734547a462ee47978d568c247571d2691fad966c5b0e5ecf",
+      "bytes": 32636
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "25861d7ab2799f1f236d602c41720825b1b7e61fb4ffa17a3b25ab3539ea65ab",
+      "bytes": 674
+    },
+    {
+      "path": "historical-apply-and-check.py",
+      "sha256": "7ff5eddfcc25a408d0ff6a39b7256de1b936fd49be8ce29f2757d6a2c8eb687a",
+      "bytes": 10364
+    },
+    {
+      "path": "ledgers/de-treaty-withholding-rates.md",
+      "sha256": "a598de312ae0f0d3fde454a7a73b3fc0fbb4a7b8afd914e4ae191a3a58dc6df1",
+      "bytes": 177251
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "a54f075d4674e1a68b48390554924476861d21669baad4d68423707780644629",
+      "bytes": 1234
+    },
+    {
+      "path": "own-read-receipt.json",
+      "sha256": "bdfda9ed35f2003eae5d4481b84fbbc320a2361b472bbe1d670dfe9ef276f000",
+      "bytes": 8434
+    },
+    {
+      "path": "source-index-reference.json",
+      "sha256": "e0ce158b6fe46aebf6fb20df96f6397cb3132241b1505a4eb37dd3c7af4518e1",
+      "bytes": 297
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "ee7e969347377939859f0a3c221482974099039bdac62c3001343b91d30099d6",
+      "bytes": 886
+    },
+    {
+      "path": "support/de-treaty-withholding-rates/old-topic-destinations.json",
+      "sha256": "a21b846013c85108f4b1c2e4354b47b5192a48468f7761b98371588e7b9561db",
+      "bytes": 249564
+    },
+    {
+      "path": "support/de-treaty-withholding-rates/rows.json",
+      "sha256": "11192f6a8ad13b65cd6a2f9bcac9fe0d32cb52af1c2a31c79d0255d3dffa4601",
+      "bytes": 144634
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "e5ea000048f3e3e5237355c6ccf4f2db2f8a100464c4587a502c7f5869d056a8",
+      "bytes": 1181
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "580fb95e03fe524482b00f1c548fae1149be3d9a727fab139b580525404ea33a",
+      "bytes": 1159
+    }
+  ]
+}

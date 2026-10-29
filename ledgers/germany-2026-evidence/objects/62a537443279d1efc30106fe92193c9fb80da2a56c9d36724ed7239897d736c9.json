@@ -1,0 +1,121 @@
+{
+  "R32.extended-period": {
+    "id": "R32.extended-period",
+    "source_id": "DEB004",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-23-20261024.html",
+    "raw_sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB004.txt",
+    "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+    "url": "https://www.gesetze-im-internet.de/estg/__23.html",
+    "act_article": "EStG § 23(1) no. 2 sentence 4 and ordinary scope",
+    "native_LF": [
+      7,
+      10
+    ],
+    "exact_quote": "(1) 1Private Veräußerungsgeschäfte (§ 22 Nummer 2) sind 1.\nVeräußerungsgeschäfte bei Grundstücken und Rechten, die den Vorschriften des bürgerlichen Rechts über Grundstücke unterliegen (z. B. Erbbaurecht, Mineralgewinnungsrecht), bei denen der Zeitraum zwischen Anschaffung und Veräußerung nicht mehr als zehn Jahre beträgt. 2Gebäude und Außenanlagen sind einzubeziehen, soweit sie innerhalb dieses Zeitraums errichtet, ausgebaut oder erweitert werden; dies gilt entsprechend für Gebäudeteile, die selbständige unbewegliche Wirtschaftsgüter sind, sowie für Eigentumswohnungen und im Teileigentum stehende Räume. 3Ausgenommen sind Wirtschaftsgüter, die im Zeitraum zwischen Anschaffung oder Fertigstellung und Veräußerung ausschließlich zu eigenen Wohnzwecken oder im Jahr der Veräußerung und in den beiden vorangegangenen Jahren zu eigenen Wohnzwecken genutzt wurden;\n2.\nVeräußerungsgeschäfte bei anderen Wirtschaftsgütern, bei denen der Zeitraum zwischen Anschaffung und Veräußerung nicht mehr als ein Jahr beträgt. 2Ausgenommen sind Veräußerungen von Gegenständen des täglichen Gebrauchs. 3Bei Anschaffung und Veräußerung mehrerer gleichartiger Fremdwährungsbeträge ist zu unterstellen, dass die zuerst angeschafften Beträge zuerst veräußert wurden. 4Bei Wirtschaftsgütern im Sinne von Satz 1, aus deren Nutzung als Einkunftsquelle zumindest in einem Kalenderjahr Einkünfte erzielt werden, erhöht sich der Zeitraum auf zehn Jahre;",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native scope actually read in this finite phase; acquisition is not a claim of whole-source reading."
+  },
+  "R32.token-exception": {
+    "id": "R32.token-exception",
+    "source_id": "DEB176",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf",
+    "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB176.txt",
+    "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+    "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+    "act_article": "BMF 6 March 2025 paragraph 63, Currency/Payment Tokens",
+    "native_LF": [
+      785,
+      788
+    ],
+    "exact_quote": "     cc) Keine Verlängerung der Veräußerungsfrist auf zehn Jahre\n63   Bei Currency oder Payment Token (vgl. Randnummer 3) kommt die Verlängerung der\n     Veräußerungsfrist nach § 23 Absatz 1 Satz 1 Nummer 2 Satz 4 EStG nicht zur\n     Anwendung.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native scope actually read in this finite phase; acquisition is not a claim of whole-source reading."
+  },
+  "R33.complete-certificate": {
+    "id": "R33.complete-certificate",
+    "source_id": "DEB005",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-43a-20261026.html",
+    "raw_sha256": "25cdf208dc378a1c3685a2318f5304fb342b2c73aedd89f7ca952cf13ed03687",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB005.txt",
+    "reader_sha256": "8d7aa2e671377cab047bfd620fb39005ff69f940f972c372b57656e414e5d9b2",
+    "url": "https://www.gesetze-im-internet.de/estg/__43a.html",
+    "act_article": "EStG § 43a(3), complete December/current-year receipt deadline",
+    "native_LF": [
+      19,
+      19
+    ],
+    "exact_quote": "(3) 1Die auszahlende Stelle hat ausländische Steuern auf Kapitalerträge nach Maßgabe des § 32d Absatz 5 zu berücksichtigen. 2Sie hat unter Berücksichtigung des § 20 Absatz 6 Satz 4 im Kalenderjahr negative Kapitalerträge einschließlich gezahlter Stückzinsen bis zur Höhe der positiven Kapitalerträge auszugleichen; liegt ein gemeinsamer Freistellungsauftrag im Sinne des § 44a Absatz 2 Satz 1 Nummer 1 in Verbindung mit § 20 Absatz 9 Satz 2 vor, erfolgt ein gemeinsamer Ausgleich. 3Der nicht ausgeglichene Verlust ist auf das nächste Kalenderjahr zu übertragen. 4Auf Verlangen des Gläubigers der Kapitalerträge hat sie über die Höhe eines nicht ausgeglichenen Verlusts eine Bescheinigung nach amtlich vorgeschriebenem Muster zu erteilen; der Verlustübertrag entfällt in diesem Fall. 5Der unwiderrufliche Antrag auf Erteilung der Bescheinigung muss bis zum 15. Dezember des laufenden Jahres der auszahlenden Stelle zugehen. 6Überträgt der Gläubiger der Kapitalerträge seine im Depot befindlichen Wirtschaftsgüter vollständig auf ein anderes Depot, hat die abgebende auszahlende Stelle der übernehmenden auszahlenden Stelle auf Verlangen des Gläubigers der Kapitalerträge die Höhe des nicht ausgeglichenen Verlusts mitzuteilen; eine Bescheinigung nach Satz 4 darf in diesem Fall nicht erteilt werden. 7Erfährt die auszahlende Stelle nach Ablauf des Kalenderjahres von der Veränderung einer Bemessungsgrundlage oder einer zu erhebenden Kapitalertragsteuer, hat sie die entsprechende Korrektur erst zum Zeitpunkt ihrer Kenntnisnahme vorzunehmen; § 44 Absatz 5 bleibt unberührt. 8Die vorstehenden Sätze gelten nicht in den Fällen des § 20 Absatz 8 und des § 44 Absatz 1 Satz 4 Nummer 1 Buchstabe a Doppelbuchstabe bb sowie bei Körperschaften, Personenvereinigungen oder Vermögensmassen.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native scope actually read in this finite phase; acquisition is not a claim of whole-source reading."
+  },
+  "R34.mandatory-financing": {
+    "id": "R34.mandatory-financing",
+    "source_id": "DEB002",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32d-20261026.html",
+    "raw_sha256": "2e31697f9d0ec13e81ddac8ebe78237a46bef83054e577e8b57c8a45f30a06a7",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB002.txt",
+    "reader_sha256": "8cc16e1ec4460eabab60ae8ddea900b95d35022860c4f88bd4ef3981fce3dfae",
+    "url": "https://www.gesetze-im-internet.de/estg/__32d.html",
+    "act_article": "EStG § 32d(1)/(2) no. 1, complete(a)/(b)/(c) and consequence",
+    "native_LF": [
+      7,
+      28
+    ],
+    "exact_quote": "(1) 1Die Einkommensteuer für Einkünfte aus Kapitalvermögen, die nicht unter § 20 Absatz 8 fallen, beträgt 25 Prozent. 2Die Steuer nach Satz 1 vermindert sich um die nach Maßgabe des Absatzes 5 anrechenbaren ausländischen Steuern. 3Im Fall der Kirchensteuerpflicht ermäßigt sich die Steuer nach den Sätzen 1 und 2 um 25 Prozent der auf die Kapitalerträge entfallenden Kirchensteuer. 4Die Einkommensteuer beträgt damit\ne – 4q\n4 +k.\n5Dabei sind „e“ die nach den Vorschriften des § 20 ermittelten Einkünfte, „q“ die nach Maßgabe des Absatzes 5 anrechenbare ausländische Steuer und „k“ der für die Kirchensteuer erhebende Religionsgesellschaft (Religionsgemeinschaft) geltende Kirchensteuersatz.\n(2) Absatz 1 gilt nicht 1.\nfür Kapitalerträge im Sinne des § 20 Absatz 1 Nummer 4 und 7 sowie Absatz 2 Satz 1 Nummer 4 und 7, a)\nwenn Gläubiger und Schuldner einander nahe stehende Personen sind, soweit die den Kapitalerträgen entsprechenden Aufwendungen beim Schuldner Betriebsausgaben oder Werbungskosten im Zusammenhang mit Einkünften sind, die der inländischen Besteuerung unterliegen und § 20 Absatz 9 Satz 1 zweiter Halbsatz keine Anwendung findet,\nb)\nwenn sie von einer Kapitalgesellschaft oder Genossenschaft an einen Anteilseigner gezahlt werden, der zu mindestens 10 Prozent an der Gesellschaft oder Genossenschaft beteiligt ist, soweit die den Kapitalerträgen entsprechenden Aufwendungen beim Schuldner Betriebsausgaben oder Werbungskosten im Zusammenhang mit Einkünften sind, die der inländischen Besteuerung unterliegen und § 20 Absatz 9 Satz 1 zweiter Halbsatz keine Anwendung findet. 2Dies gilt auch, wenn der Gläubiger der Kapitalerträge eine dem Anteilseigner nahe stehende Person ist, oder\nc)\nsoweit ein Dritter die Kapitalerträge schuldet und diese Kapitalanlage im Zusammenhang mit einer Kapitalüberlassung an einen Betrieb des Gläubigers steht. 2Dies gilt entsprechend, wenn Kapital überlassen wird aa)\nan eine dem Gläubiger der Kapitalerträge nahestehende Person oder\nbb)\nan eine Personengesellschaft, bei der der Gläubiger der Kapitalerträge oder eine diesem nahestehende Person als Mitunternehmer beteiligt ist oder\ncc)\nan eine Kapitalgesellschaft oder Genossenschaft, an der der Gläubiger der Kapitalerträge oder eine diesem nahestehende Person zu mindestens 10 Prozent beteiligt ist,\nsofern der Dritte auf den Gläubiger oder eine diesem nahestehende Person zurückgreifen kann. 3Ein Zusammenhang ist anzunehmen, wenn die Kapitalanlage und die Kapitalüberlassung auf einem einheitlichen Plan beruhen. 4Hiervon ist insbesondere dann auszugehen, wenn die Kapitalüberlassung in engem zeitlichen Zusammenhang mit einer Kapitalanlage steht oder die jeweiligen Zinsvereinbarungen miteinander verknüpft sind. 5Von einem Zusammenhang ist jedoch nicht auszugehen, wenn die Zinsvereinbarungen marktüblich sind oder die Anwendung des Absatzes 1 beim Steuerpflichtigen zu keinem Belastungsvorteil führt. 6Die Sätze 1 bis 5 gelten sinngemäß, wenn das überlassene Kapital vom Gläubiger der Kapitalerträge für die Erzielung von Einkünften im Sinne des § 2 Absatz 1 Satz 1 Nummer 4, 6 und 7 eingesetzt wird.\n2Insoweit findet § 20 Absatz 6 und 9 keine Anwendung;\n2.\nfür Kapitalerträge im Sinne des § 20 Absatz 1 Nummer 6 Satz 2. 2Insoweit findet § 20 Absatz 6 keine Anwendung;\n3.\nauf Antrag für Kapitalerträge im Sinne des § 20 Absatz 1 Nummer 1 und 2 aus einer Beteiligung an einer Kapitalgesellschaft, wenn der Steuerpflichtige im Veranlagungszeitraum, für den der Antrag erstmals gestellt wird, unmittelbar oder mittelbar a)",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native scope actually read in this finite phase; acquisition is not a claim of whole-source reading."
+  },
+  "R34.finality": {
+    "id": "R34.finality",
+    "source_id": "DEB281",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-43-20261026.html",
+    "raw_sha256": "952d3b3fe3fd433ab08ba994e224d36c08459e478c92b83b88e43fda41a33c77",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB281.txt",
+    "reader_sha256": "d53d558fa43c9b55aa62394b068bcc7f64afaa5ec1721d019bc32e7c0fd651b5",
+    "url": "https://www.gesetze-im-internet.de/estg/__43.html",
+    "act_article": "EStG § 43(5)",
+    "native_LF": [
+      81,
+      81
+    ],
+    "exact_quote": "(5) 1Für Kapitalerträge im Sinne des § 20, soweit sie der Kapitalertragsteuer unterlegen haben, ist die Einkommensteuer mit dem Steuerabzug abgegolten; die Abgeltungswirkung des Steuerabzugs tritt nicht ein, wenn der Gläubiger nach § 44 Absatz 1 Satz 10 und 11 und Absatz 5 in Anspruch genommen werden kann. 2Dies gilt nicht in Fällen des § 32d Absatz 2 und für Kapitalerträge, die zu den Einkünften aus Land- und Forstwirtschaft, aus Gewerbebetrieb, aus selbständiger Arbeit oder aus Vermietung und Verpachtung gehören. 3Auf Antrag des Gläubigers werden Kapitalerträge im Sinne des Satzes 1 in die besondere Besteuerung von Kapitalerträgen nach § 32d einbezogen. 4Eine vorläufige Festsetzung der Einkommensteuer im Sinne des § 165 Absatz 1 Satz 2 Nummer 2 bis 4 der Abgabenordnung umfasst auch Einkünfte im Sinne des Satzes 1, für die der Antrag nach Satz 3 nicht gestellt worden ist.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native scope actually read in this finite phase; acquisition is not a claim of whole-source reading."
+  },
+  "R35.recent-gift": {
+    "id": "R35.recent-gift",
+    "source_id": "DEB003",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-17-20261026.html",
+    "raw_sha256": "fe27f81e022dea91a42b345d41676df4f7f90b06f3f9207db44501034afcd55b",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB003.txt",
+    "reader_sha256": "7bb0daec1aa36da5cdd8598cd60d6ad89291c220d134e8bf6d136786d8c274c4",
+    "url": "https://www.gesetze-im-internet.de/estg/__17.html",
+    "act_article": "EStG § 17(1) sentence 4",
+    "native_LF": [
+      7,
+      7
+    ],
+    "exact_quote": "(1) 1Zu den Einkünften aus Gewerbebetrieb gehört auch der Gewinn aus der Veräußerung von Anteilen an einer Kapitalgesellschaft, wenn der Veräußerer innerhalb der letzten fünf Jahre am Kapital der Gesellschaft unmittelbar oder mittelbar zu mindestens 1 Prozent beteiligt war. 2Die verdeckte Einlage von Anteilen an einer Kapitalgesellschaft in eine Kapitalgesellschaft steht der Veräußerung der Anteile gleich. 3Anteile an einer Kapitalgesellschaft sind Aktien, Anteile an einer Gesellschaft mit beschränkter Haftung, Genussscheine oder ähnliche Beteiligungen und Anwartschaften auf solche Beteiligungen sowie Anteile an einer optierenden Gesellschaft im Sinne des § 1a des Körperschaftsteuergesetzes. 4Hat der Veräußerer den veräußerten Anteil innerhalb der letzten fünf Jahre vor der Veräußerung unentgeltlich erworben, so gilt Satz 1 entsprechend, wenn der Veräußerer zwar nicht selbst, aber der Rechtsvorgänger oder, sofern der Anteil nacheinander unentgeltlich übertragen worden ist, einer der Rechtsvorgänger innerhalb der letzten fünf Jahre im Sinne von Satz 1 beteiligt war.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native scope actually read in this finite phase; acquisition is not a claim of whole-source reading."
+  },
+  "R36.full-assessed-prepayments": {
+    "id": "R36.full-assessed-prepayments",
+    "source_id": "DEB174",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-19-20261026.html",
+    "raw_sha256": "766e08ce3f2365ef447650776d7cf05fad96c2a571082e8a532bd9d15350d2f2",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB174.txt",
+    "reader_sha256": "42efc20b8ad863a9ebf7d5c174b81dfcd6b788e4e4a8efe2b275137a739b600b",
+    "url": "https://www.gesetze-im-internet.de/invstg_2018/__19.html",
+    "act_article": "InvStG § 19(1)",
+    "native_LF": [
+      7,
+      7
+    ],
+    "exact_quote": "(1) Für die Ermittlung des Gewinns aus der Veräußerung von Investmentanteilen, die nicht zu einem Betriebsvermögen gehören, ist § 20 Absatz 4 des Einkommensteuergesetzes entsprechend anzuwenden. § 20 Absatz 4a des Einkommensteuergesetzes ist nicht anzuwenden. Der Gewinn ist um die während der Besitzzeit angesetzten Vorabpauschalen zu vermindern. Die angesetzten Vorabpauschalen sind ungeachtet einer möglichen Teilfreistellung nach § 20 in voller Höhe zu berücksichtigen.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native scope actually read in this finite phase; acquisition is not a claim of whole-source reading."
+  }
+}

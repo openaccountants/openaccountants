@@ -1,0 +1,2040 @@
+{
+  "Guide_sha256": "1a5978cfb309aacdf73dfe49aa3455c6d470fba4145542b53be2e78fec6dc11f",
+  "pre_refresh_revision": "2702ad25^",
+  "pre_refresh_sha256": "a051c5a76a9995095489bbe27c368d30e6781ddddc2cfda213b00beb72826168",
+  "earliest_body_reference": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/current-and-pre-refresh-identities.json",
+  "pre_refresh_rows": [
+    {
+      "old_native_LF": [
+        1,
+        16
+      ],
+      "old_unit_sha256": "3a493aa16d7a6012c61cef0ccb54b7c9700fdce3766031c3e078e7bdf369dc26",
+      "old_exact_opening": "--- name: de-social-contributions description: Use this skill whenever asked about German social insurance contributions (Sozialversicherungsbeitraege) for self-employed individuals, freelancers (Freiberufler), or sole proprietors",
+      "current_destination": "1–16",
+      "disposition": "Platform fields retained; description expanded and2.0→2.1. RootDE-B06/07 if applied tracked separately."
+    },
+    {
+      "old_native_LF": [
+        18,
+        18
+      ],
+      "old_unit_sha256": "4e9e59133085d2d17629315a159c2a4230c4f33202631c779eabd53c67309088",
+      "old_exact_opening": "# Social insurance contributions in Germany: who is insured and what they pay (2026)",
+      "current_destination": "18",
+      "disposition": "Title same topic expanded."
+    },
+    {
+      "old_native_LF": [
+        20,
+        20
+      ],
+      "old_unit_sha256": "06f13eceae24bd0eb87002e30400999346da1ac5f0f9e44ba02101ab01d1f6a3",
+      "old_exact_opening": "## Scope",
+      "current_destination": "24",
+      "disposition": "Scope heading."
+    },
+    {
+      "old_native_LF": [
+        22,
+        22
+      ],
+      "old_unit_sha256": "c2903496e30f85ff2c3bed1bc8f756f7d7eee9bd9fec74db6e1c7e5a11368e9f",
+      "old_exact_opening": "German social insurance for calendar year 2026 (law in force on 25 September 2026): health and long-term care (charged on the same base), pension, unemployment, and accident insurance paid by the business. For employees and the se",
+      "current_destination": "26",
+      "disposition": "Territory and2026scope retained; current explicit3territorialanchor."
+    },
+    {
+      "old_native_LF": [
+        24,
+        27
+      ],
+      "old_unit_sha256": "64604980e30083ea2f4a350802753d869c6ba4a7e2ecf1dd5b60c038ea99497a",
+      "old_exact_opening": "- **Employees:** who is insured, the compulsory-insurance threshold (Jahresarbeitsentgeltgrenze, JAEG) and how each branch is shared. Payroll steps (withholding, reports, Minijob flat rates, the transition band, employer levies) a",
+      "current_destination": "28–30/22/67",
+      "disposition": "All old populations and companion/status scopes retained."
+    },
+    {
+      "old_native_LF": [
+        29,
+        29
+      ],
+      "old_unit_sha256": "ec5f6cadce559e128e369417d58831a6d0fd094a26b6f2c8fc9782aa3e37f9e4",
+      "old_exact_opening": "Amounts that depend on the average additional health rate are marked \"check\": each fund sets its own rate, and the fund's notice decides.",
+      "current_destination": "78/334",
+      "disposition": "Fund-specific rate versus average-check caveat retained."
+    },
+    {
+      "old_native_LF": [
+        31,
+        31
+      ],
+      "old_unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "old_exact_opening": "## Ask the client first",
+      "current_destination": "387–387",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        33,
+        41
+      ],
+      "old_unit_sha256": "c13b58ae9eb1e833d8ff10e9a0cf83762fbf5204b4d0ed13d58d45ef99700f8a",
+      "old_exact_opening": "- Employed, self-employed, or both? If both, which is the main occupation, and do you employ anyone above the Minijob level? - If employed: regular yearly pay, and were you privately insured on 31 December 2002 because your pay wa",
+      "current_destination": "389–397",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        43,
+        43
+      ],
+      "old_unit_sha256": "e6898fcf2842cd2ef41957dac3ba9d4c6e9e4c64f7b58641d5a57190035c1291",
+      "old_exact_opening": "## The method, step by step",
+      "current_destination": "32",
+      "disposition": "Method heading."
+    },
+    {
+      "old_native_LF": [
+        45,
+        54
+      ],
+      "old_unit_sha256": "667e8d07a3d657c4e5af105b15290981b94e14440f35a0f018fc1961cec04d66",
+      "old_exact_opening": "1. **Settle the status.** Work under instructions and inside the client's organisation points to employment ([§ 7(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__7.html)). If unclear, use the status procedure below. 2. **Emp",
+      "current_destination": "34–43",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        56,
+        57
+      ],
+      "old_unit_sha256": "b25a1f5ab3b490f5892a09210e8cf40a1d7ce66d11a1b601a178422d4fe9591c",
+      "old_exact_opening": "The three-month windows (pension registration and exemptions, unemployment insurance) and the one-month window of the status procedure all run from the first day of the work. ## Figures for 2026",
+      "current_destination": "45/76",
+      "disposition": "Windows retained; old universal exemption-start wording is actual DE-B06 correction history. Figures heading76."
+    },
+    {
+      "old_native_LF": [
+        59,
+        59
+      ],
+      "old_unit_sha256": "4fc9c019e52d75ed14420001957ed3e5397e0e40d1c7f27be41bab29e0c569df",
+      "old_exact_opening": "**Rates**",
+      "current_destination": "80–80",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        61,
+        71
+      ],
+      "old_unit_sha256": "93b71e9530b44253ebc031230c7674d8979679ff6f78d78b8f01c45296cb1742",
+      "old_exact_opening": "| What | 2026 | Source | | --- | --- | --- | | Health, general rate (members with a sick pay claim) | 14.6% | [§ 241 SGB V](https://www.gesetze-im-internet.de/sgb_5/__241.html) | | Health, reduced rate (no sick pay claim: the norm",
+      "current_destination": "82–92",
+      "disposition": "Every rate retained; average now directlyBMG instead of BMF while BMF retained for2025difference."
+    },
+    {
+      "old_native_LF": [
+        73,
+        73
+      ],
+      "old_unit_sha256": "fef88ebe3a090735038f562592f20c4a655a93264b78e8ed2bc1710e8ef98c4a",
+      "old_exact_opening": "**Full care rate of a member who pays alone, by children** (derived from [PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html) and [§ 55(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html)): no children, 2",
+      "current_destination": "94–94",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        75,
+        75
+      ],
+      "old_unit_sha256": "0b7c8547e1060608debc5e07f2bce05f05d32d1ca3fd13837118b706ee4f502c",
+      "old_exact_opening": "**Reference values and ceilings** ([SVBezGrV 2026](https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3))",
+      "current_destination": "96–96",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        77,
+        83
+      ],
+      "old_unit_sha256": "fd15cb1f9b4cd7e0d4f0b7ee729d57ccbc1e766b2f48b5c3484afc5fc204ebe5",
+      "old_exact_opening": "| What | Per year | Per month | | --- | --- | --- | | Reference amount (Bezugsgröße), [§ 1 SVBezGrV 2026](https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3) | EUR 47,460 | EUR 3,955 | | General",
+      "current_destination": "98–104",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        85,
+        85
+      ],
+      "old_unit_sha256": "1d3425907d31550151bf7245073d65656f83efe568c2a54950e5a445c505f1e2",
+      "old_exact_opening": "**Worked-out amounts**",
+      "current_destination": "106–106",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        87,
+        98
+      ],
+      "old_unit_sha256": "5d52c5517761e6c7a8072d87ebfe8f1252760a4a1ad9555b616a94661110ab89",
+      "old_exact_opening": "| What | 2026 | Working | | --- | --- | --- | | Minijob limit, per month | EUR 603 | EUR 13.90 minimum wage x 130 / 3 = EUR 602.33, rounded up ([§ 8(1a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html), [MiLoV5](https://",
+      "current_destination": "108–119",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        100,
+        100
+      ],
+      "old_unit_sha256": "99f3b2e448f5b742c80f9946f24db738caa2b49f8d1c243da5d5e3684884a7cb",
+      "old_exact_opening": "## Employees: who is insured and how the burden is shared",
+      "current_destination": "47",
+      "disposition": "Employee heading."
+    },
+    {
+      "old_native_LF": [
+        102,
+        102
+      ],
+      "old_unit_sha256": "606d5e25d29d729e73069d4aabcf72bac1766ce41cd2a8f63061861f5b686814",
+      "old_exact_opening": "Employees working for pay are insured by law in health ([§ 5(1) no. 1 SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html)), care ([§ 20(1) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__20.html)), pension ([§ 1 SGB VI](",
+      "current_destination": "49–49",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        104,
+        110
+      ],
+      "old_unit_sha256": "b55c8c9880d6101f33c8952dedc3bd6a2cbb95ed2d6a3f0c8e805366c172e9b8",
+      "old_exact_opening": "| Branch | Employee | Employer | Rule | | --- | --- | --- | --- | | Pension | 9.3% | 9.3% | Half each ([§ 168(1) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__168.html)) | | Unemployment | 1.3% | 1.3% | Half each ([§ 346(1) S",
+      "current_destination": "51–57",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        112,
+        116
+      ],
+      "old_unit_sha256": "89118da5cf2d0219634a8ea41d3383673c514554335ce0ab3bed02610bb77073",
+      "old_exact_opening": "- **Saxony:** the employee bears one more point of care alone ([§ 58(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html)); use the shares in `de-payroll`. - **Ceilings:** pension and unemployment stop at EUR 8,450 a mo",
+      "current_destination": "59–63",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        118,
+        118
+      ],
+      "old_unit_sha256": "6d91e16c575abe0ba4db9eb5ad3a0c737a6410dcc6feb3ba3c9a1136294c9f92",
+      "old_exact_opening": "## Self-employed: health and care insurance",
+      "current_destination": "149",
+      "disposition": "Health/care heading."
+    },
+    {
+      "old_native_LF": [
+        120,
+        120
+      ],
+      "old_unit_sha256": "e7f719457a0fd404ed8a74dff911181d2d6993c03cc2b0cfe9715f423839d0ea",
+      "old_exact_opening": "**Who is in which system.**",
+      "current_destination": "151–151",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        122,
+        126
+      ],
+      "old_unit_sha256": "5c3a6bfed495498c85b229b9d91bc269d8d9f77caf111a83b6e235a053e2c105",
+      "old_exact_opening": "- A main-occupation self-employed person is not compulsorily insured as an employee ([§ 5(5) SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html)); KSK members are the exception. - When compulsory or family insurance ends, co",
+      "current_destination": "153–157",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        128,
+        128
+      ],
+      "old_unit_sha256": "b00e35d4bbbd39d22935b24c9bd177f7c51e043775a7e17d42c1326e1dec5f4a",
+      "old_exact_opening": "**What a voluntary member pays** ([§ 240 SGB V](https://www.gesetze-im-internet.de/sgb_5/__240.html)).",
+      "current_destination": "159–159",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        130,
+        132
+      ],
+      "old_unit_sha256": "f3bbf1f9db15c7bf05dbb82b0e98fc00037259392d3a011e58954547ebc855a2",
+      "old_exact_opening": "- **Base:** the member's whole economic capacity, not only profit: capital and letting income count too. The base is at least EUR 1,318.33 a month and at most the ceiling of EUR 5,812.50 ([§ 223(3) SGB V](https://www.gesetze-im-in",
+      "current_destination": "161–163",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        134,
+        134
+      ],
+      "old_unit_sha256": "6dcf93f6cb1fc6573ed607d87668e66b076bb981b5515019028d0f3374d47890",
+      "old_exact_opening": "**Provisional and final assessment** (§ 240(1) and (4a) SGB V).",
+      "current_destination": "165–165",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        136,
+        140
+      ],
+      "old_unit_sha256": "02500524e5daabb9d28002a5c2915b427d057c68ee3a3fd218d0f8fae723afe4",
+      "old_exact_opening": "- **Provisional:** set from the latest income tax notice, from the month after it was issued. At the start of self-employment, set from the proven expected income. - **Final:** set from the year's actual income once that year's ta",
+      "current_destination": "167–171",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        142,
+        142
+      ],
+      "old_unit_sha256": "28e9a89361f0f5f16302dde0745f50f4996ccbe8de5bd7a1b2be4553a693ce8c",
+      "old_exact_opening": "## Self-employed: pension insurance",
+      "current_destination": "175",
+      "disposition": "Self-employed pension heading."
+    },
+    {
+      "old_native_LF": [
+        144,
+        144
+      ],
+      "old_unit_sha256": "3d4096f447d27078252b5c735b8726adab1ad7b6cccc67c03a2ecb898a59cefe",
+      "old_exact_opening": "**Who must be insured** ([§ 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__2.html)). Most self-employed people are not. These are:",
+      "current_destination": "177–177",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        146,
+        154
+      ],
+      "old_unit_sha256": "a05630a36a40d16aea30ad5aa4e2c112c69303a42a0350bf24dc5aaf4c1facd4",
+      "old_exact_opening": "1. Teachers and educators who regularly employ no employee subject to insurance in the work. 2. Carers in sick, maternity, infant or child care, on the same condition. 3. Midwives. 4. Sea pilots. 5. Artists and publicists under th",
+      "current_destination": "179–187",
+      "disposition": "All9 groups retained; partnership employees explicitly added under current own2finalcondition."
+    },
+    {
+      "old_native_LF": [
+        156,
+        156
+      ],
+      "old_unit_sha256": "d6574229917c5d61f44ac870dcd9c2027639a825d232184799240348cf267a77",
+      "old_exact_opening": "For groups 1, 2, 7 and 9, apprentices count as employees and Minijobbers do not.",
+      "current_destination": "189–189",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        158,
+        161
+      ],
+      "old_unit_sha256": "7678615231f9840aa6746edb349d1bc29f3cbd2bda365364a9cb338660579d79",
+      "old_exact_opening": "- **Marginal work is free.** Self-employed work whose income is regularly not above the Minijob limit is insurance-free in that work ([§ 5(2) no. 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__5.html), [§ 8(3) SGB IV](https:",
+      "current_destination": "191–194",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        163,
+        163
+      ],
+      "old_unit_sha256": "14a19b0a447731b96229fd0115e680a8dbd90ee02219598ac442d512ee58913a",
+      "old_exact_opening": "**Contribution base** ([§ 165 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__165.html)).",
+      "current_destination": "196–196",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        165,
+        169
+      ],
+      "old_unit_sha256": "942c6eea4ce411bbf0264a0468ae434135313647905613ace6fbeaac213cd329",
+      "old_exact_opening": "- **Default:** the reference amount, which gives the standard contribution of EUR 735.63 a month. - **Proven income:** if lower or higher income is proven, that income is used, but at least twelve times the Minijob limit a year. T",
+      "current_destination": "198–202",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        171,
+        171
+      ],
+      "old_unit_sha256": "891b1a84c7cc9badf36d4b9be500081cf9907347a8a8bf5f82f2f69b2b8ed898",
+      "old_exact_opening": "**Exemptions on application** ([§ 6 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__6.html)).",
+      "current_destination": "204–204",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        173,
+        176
+      ],
+      "old_unit_sha256": "1227128c550aa70b33b826e01e2c82806b5f442116ecae56ac5cb572c368712f",
+      "old_exact_opening": "- **Craftspeople:** after at least 18 years of compulsory contributions. - **Group 9 (one client):** for three years after first taking up such work, and again for a second such activity. Also a person first liable under group 9 a",
+      "current_destination": "206–209",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        178,
+        178
+      ],
+      "old_unit_sha256": "fd86871076d67a40e2ff9c467004f8d36b24b064528b8d669f65f7e777a3e3c2",
+      "old_exact_opening": "**No duty: voluntary or on application.**",
+      "current_destination": "211–211",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        180,
+        181
+      ],
+      "old_unit_sha256": "660f86e76a6c6d394e93d602d4f2b505bdac972e006a6b25336f5c5cc9653a49",
+      "old_exact_opening": "- **Voluntary contributions:** anyone not compulsorily insured, from age 16, may pay any amount from EUR 112.16 to EUR 1,571.70 a month ([§ 7](https://www.gesetze-im-internet.de/sgb_6/__7.html), [§ 161(2) SGB VI](https://www.geset",
+      "current_destination": "213–214",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        183,
+        183
+      ],
+      "old_unit_sha256": "42d95b55f34b644e0d8679d659f1181301f757c8a50ba26a0926881996cf3d1f",
+      "old_exact_opening": "## Artists and publicists: the Künstlersozialkasse",
+      "current_destination": "216–216",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        185,
+        185
+      ],
+      "old_unit_sha256": "0fc0e4c0744cff036b07acbb4e444bc6df1b689ecb019a204f744ccb3f17dcbb",
+      "old_exact_opening": "**Who is insured** ([§ 1 KSVG](https://www.gesetze-im-internet.de/ksvg/__1.html)). A self-employed artist or publicist is insured in pension, health and care when both conditions are met:",
+      "current_destination": "218–218",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        187,
+        188
+      ],
+      "old_unit_sha256": "3a89123ce836a1c6dfe2a6c315ca1e6d5ddb9e7f0af54d760160730d7cfbee22",
+      "old_exact_opening": "- the work is done for a living and not just for a short time; - the person employs no more than one employee in that work (apprentices and Minijobbers do not count).",
+      "current_destination": "220–221",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        190,
+        190
+      ],
+      "old_unit_sha256": "f3b9b76a373e97e70f5b2ae4dac1fcb8adce283d6c97a3ed317bf9f1300ecbff",
+      "old_exact_opening": "The KSK decides whether work is artistic or publicist.",
+      "current_destination": "223–223",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        192,
+        196
+      ],
+      "old_unit_sha256": "93bf3427ab6527fbc163972e3039691863812f75768270d914e7419a12570074",
+      "old_exact_opening": "| Rule | Value | Source | | --- | --- | --- | | Not insured if expected yearly income from the work does not exceed | EUR 3,900 | [§ 3(1) KSVG](https://www.gesetze-im-internet.de/ksvg/__3.html) | | Pension base: expected yearly in",
+      "current_destination": "123–127",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        198,
+        198
+      ],
+      "old_unit_sha256": "7c06cb49a3af63b30cf12b621c7643763c910ccd987cb672059b1a06d4ac828f",
+      "old_exact_opening": "- **When the income limit bites:** it is lowered pro rata for part-year work and does not apply in the first three years after the work was first taken up. Cover also stays in place so long as income falls to the limit or below no",
+      "current_destination": "227–227",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        200,
+        200
+      ],
+      "old_unit_sha256": "56a18fef66edddca57c0d50582bfa8e9c189fe62942b669e7f2158924d63aaa4",
+      "old_exact_opening": "**Member's shares.** The member pays half of each contribution to the KSK.",
+      "current_destination": "229–229",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        202,
+        207
+      ],
+      "old_unit_sha256": "a85524f1457d0c9bc251a361202e1e9ff0a3d760d2fe17e681e1f7d7e8090798",
+      "old_exact_opening": "- **Pension:** half ([§ 15 KSVG](https://www.gesetze-im-internet.de/ksvg/__15.html)). - **Health:** half at the general rate plus half the fund's additional rate. Without a sick pay claim the reduced rate is used ([§ 16(1) KSVG](h",
+      "current_destination": "231–236",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        209,
+        209
+      ],
+      "old_unit_sha256": "40e34791a010526fe6247e36a03e08bb7e3fda9b6f2d8aa034ecb8e5f41e1c9e",
+      "old_exact_opening": "**The artists' levy (Künstlersozialabgabe)** ([§ 24 KSVG](https://www.gesetze-im-internet.de/ksvg/__24.html)).",
+      "current_destination": "238–238",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        211,
+        216
+      ],
+      "old_unit_sha256": "2b9f0c3ca292ce1032562b9ba099ac6e445a324a7d5b9a45e8bb1ad85fd9851e",
+      "old_exact_opening": "- **Typical users** always owe it: publishers, theatres, orchestras, broadcasters, galleries, advertising or PR for third parties, training schools for artistic work and similar. - **Other businesses** owe it when they commission ",
+      "current_destination": "240–245",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        218,
+        218
+      ],
+      "old_unit_sha256": "5eb769e86a8b78b34dda44c69ac7898f20d3ad575301df93e54d85694b4be43b",
+      "old_exact_opening": "## Self-employed: accident and unemployment insurance",
+      "current_destination": "251",
+      "disposition": "Accident/unemployment heading."
+    },
+    {
+      "old_native_LF": [
+        220,
+        220
+      ],
+      "old_unit_sha256": "e5a0abb622af165a0356652377fc9f06407cd4a2627a1e43146cae3f0f15d9d3",
+      "old_exact_opening": "**Accident insurance.**",
+      "current_destination": "253–253",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        222,
+        224
+      ],
+      "old_unit_sha256": "fe17b8ac7cc6470750448cdc830d8d10ee918ac1a4280e58db4583907d9a92df",
+      "old_exact_opening": "- **Notify:** tell the competent accident insurer within one week of starting; a trade registration within that week counts. Changes to the type of business are reported within four weeks ([§ 192 SGB VII](https://www.gesetze-im-in",
+      "current_destination": "255–257",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        226,
+        226
+      ],
+      "old_unit_sha256": "1e33c1049ed8d713a8c3aedbe7466fccdb7bed605eb02f6efedc5b4637edd774",
+      "old_exact_opening": "**Unemployment insurance on application** ([§ 28a SGB III](https://www.gesetze-im-internet.de/sgb_3/__28a.html)).",
+      "current_destination": "259–259",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        228,
+        235
+      ],
+      "old_unit_sha256": "7e83de889cd0e240dc452f7e6a462650b77d8c43bf948c794216d42a2616bd17",
+      "old_exact_opening": "- **Who:** a person starting self-employed work of at least 15 hours a week who either: - had 12 months of compulsory unemployment insurance in the 30 months before starting, or - had a claim to a wage replacement benefit under SG",
+      "current_destination": "261–268",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        237,
+        237
+      ],
+      "old_unit_sha256": "093c0daefbefd9b8cf692ade7bb8cd59550d206e356f10ff136363ba7428b6f8",
+      "old_exact_opening": "## Status determination (Statusfeststellung)",
+      "current_destination": "67–67",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        239,
+        244
+      ],
+      "old_unit_sha256": "c25ae18783cd3c85a92a42cdfe20602d182f5597ffa9741e70da8406a369fb54",
+      "old_exact_opening": "- **Who decides.** The parties to a contract can ask the Deutsche Rentenversicherung Bund, in writing or electronically, whether it is employment or self-employment. This is not possible once a health fund or another insurer has a",
+      "current_destination": "69–74",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        246,
+        246
+      ],
+      "old_unit_sha256": "763dd92c54b7ff1d3e0e663d6efad4c642c7c9ba4f168156dc0ed294ce3398f6",
+      "old_exact_opening": "## Boundaries and exceptions",
+      "current_destination": "270–270",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        248,
+        255
+      ],
+      "old_unit_sha256": "565d240cbbe70880dbd96cce91638df7529dca18f9e6521ff0ffe6512f2dcc9d",
+      "old_exact_opening": "| Situation | Rule | Source | | --- | --- | --- | | Employed with a side business | Health follows the job unless self-employment is the main occupation. If the job is the main occupation, the freelance income carries no health or",
+      "current_destination": "272–279",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        257,
+        257
+      ],
+      "old_unit_sha256": "13553a4d81793d4eb28bdef6a259906163c7624435353bd8bdf2bfbde894bef5",
+      "old_exact_opening": "## Worked cases",
+      "current_destination": "334",
+      "disposition": "Workedcases heading."
+    },
+    {
+      "old_native_LF": [
+        259,
+        259
+      ],
+      "old_unit_sha256": "7806a31e373a99b6daf1c5009d2bdf25609136ee3fba9421f8f836616bee5635",
+      "old_exact_opening": "Each case uses 2026 figures from the tables above. Where a fund's additional rate is needed, the case states the rate it assumes; a real calculation uses the fund's own rate and the fund's notice.",
+      "current_destination": "336",
+      "disposition": "Stipulated fund-rate caveat retained."
+    },
+    {
+      "old_native_LF": [
+        261,
+        261
+      ],
+      "old_unit_sha256": "8aaa4276b30e1afd472cce5562c81dbea60979d9bde34e1057a564c055363ae4",
+      "old_exact_opening": "**Case 1: self-employed consultant, middle income.** Profit EUR 48,000 in the latest tax notice (EUR 4,000 a month), voluntary member, no sick pay, childless, age 35, the fund's additional rate assumed 2.9%, no single client ([§ 2",
+      "current_destination": "338",
+      "disposition": "Original consultant48000/age35/no-singleclient facts retained in current oa1."
+    },
+    {
+      "old_native_LF": [
+        263,
+        268
+      ],
+      "old_unit_sha256": "d6eb1dcf0c569731d1f2640904d36afbf796e411d87b220ab834423720a2d801",
+      "old_exact_opening": "| Item | Working | Monthly | | --- | --- | --- | | Health ([§ 243 SGB V](https://www.gesetze-im-internet.de/sgb_5/__243.html)) | EUR 4,000 x (14.0% + 2.9%) = EUR 4,000 x 16.9% | EUR 676.00 | | Care | EUR 4,000 x 4.2% (childless) |",
+      "current_destination": "338–358",
+      "disposition": "All original consultant676/168/844 outputs retained; pension-duty assessment still based on2list."
+    },
+    {
+      "old_native_LF": [
+        270,
+        270
+      ],
+      "old_unit_sha256": "e4fa16c9e0a93af286c641fbf3544aea2c5dfeab477cd9d0d28c7546d24fec0b",
+      "old_exact_opening": "**Case 2: low income, one child.** Profit EUR 9,600 a year (EUR 800 a month), one child aged 10, voluntary member, no sick pay, the fund's additional rate assumed 2.9% ([§ 240(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__2",
+      "current_destination": "111/113/115/360–385 + writer controls",
+      "disposition": "Original800profitcase not the same as current1000yogacase; lower-than-minimum method remains and exactold222.80/47.46/270.26 recomputed privately."
+    },
+    {
+      "old_native_LF": [
+        272,
+        272
+      ],
+      "old_unit_sha256": "eb23dae3bd6a2210e1f9823ff679e04168495356f955f7175f48c79de44bdd03",
+      "old_exact_opening": "**Case 3: high income, sick pay, two children.** Profit EUR 90,000, sick pay elected, two children under 25, the fund's additional rate assumed 2.5%. The base is capped at EUR 5,812.50 ([§ 223(3) SGB V](https://www.gesetze-im-inte",
+      "current_destination": "173",
+      "disposition": "Original high-income90000/twochildren/2.5% case retained."
+    },
+    {
+      "old_native_LF": [
+        274,
+        277
+      ],
+      "old_unit_sha256": "598b08989a52c41b784f9be1f20443071146b3238c8b9530abaf58023cbdd684",
+      "old_exact_opening": "| Item | Working | Monthly | | --- | --- | --- | | Health ([§ 241 SGB V](https://www.gesetze-im-internet.de/sgb_5/__241.html)) | EUR 5,812.50 x (14.6% + 2.5%) = EUR 5,812.50 x 17.1% | EUR 993.94 | | Care | EUR 5,812.50 x 3.35% (tw",
+      "current_destination": "173",
+      "disposition": "All993.94/194.72 outputs retained."
+    },
+    {
+      "old_native_LF": [
+        279,
+        279
+      ],
+      "old_unit_sha256": "d5e29f8c077951291d52bc75353e31967eba746093599f2e1a984e72d6a63ede",
+      "old_exact_opening": "**Case 4: self-employed yoga teacher, first year.** Starts on 1 March 2026 teaching classes, profit about EUR 2,000 a month, no insured staff ([§ 2 no. 1 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__2.html)).",
+      "current_destination": "360–385 + writer controls",
+      "disposition": "Original yoga2000profit case replaced by1000 to exercise combinedminimums. Old2000profit pension367.82/health338/care72 at stipulatedonechild and no-sickpay separately recomputed; no byte-exact narrative claim."
+    },
+    {
+      "old_native_LF": [
+        281,
+        284
+      ],
+      "old_unit_sha256": "ce7d89450ecaf736543dd5e4757b05d0db58a1fd2ae3beff691922fc02d2cc1b",
+      "old_exact_opening": "- The income is above EUR 603 a month, so the work is not marginal: compulsory pension insurance. - Register with the pension insurer within three months, that is by the end of May 2026 ([§ 190a SGB VI](https://www.gesetze-im-inte",
+      "current_destination": "191/192/202/360",
+      "disposition": "Marginality/registration/2029startphase/fulloption all retained; current lowincomecase adds care assumption explicit."
+    },
+    {
+      "old_native_LF": [
+        286,
+        286
+      ],
+      "old_unit_sha256": "33df38cf49594ff5f200d1343ecf854b87ee0f41338f43d8049ae5f9724e6edb",
+      "old_exact_opening": "**Case 5: KSK member.** Graphic designer, expected income for 2026 reported as EUR 30,000 (EUR 2,500 a month), childless, age 28, sick pay claim, the fund's additional rate assumed 2.9% ([§ 15, § 16, § 16a KSVG](https://www.gesetz",
+      "current_destination": "247",
+      "disposition": "Original KSK30000case retained."
+    },
+    {
+      "old_native_LF": [
+        288,
+        293
+      ],
+      "old_unit_sha256": "f7d452d0dbb3f4c10dc22924a9065c06c15eec20d2d2d3c6900af178ba49699b",
+      "old_exact_opening": "| Item | Working | Monthly | | --- | --- | --- | | Pension share ([§ 15 KSVG](https://www.gesetze-im-internet.de/ksvg/__15.html)) | EUR 2,500 x 18.6% / 2 | EUR 232.50 | | Health share | EUR 2,500 x (14.6% + 2.9%) / 2 | EUR 218.75 ",
+      "current_destination": "247",
+      "disposition": "All232.50/218.75/60/511.25 outputs and fifth-day retained."
+    },
+    {
+      "old_native_LF": [
+        295,
+        295
+      ],
+      "old_unit_sha256": "05b377b6b1ea97c8d5bcc5ffdb8fabd520117794edbb1e3a1284b78c5625b6fd",
+      "old_exact_opening": "**Case 6: the artists' levy.** An advertising agency (a typical user under § 24(1) KSVG) paid EUR 20,000 net of VAT in 2026 to freelance designers. Levy EUR 20,000 x 4.9% = EUR 980.00, reported by 31 March 2027 ([§ 27 KSVG](https:",
+      "current_destination": "249",
+      "disposition": "Both original agency20000→980 and bakery800→zero cases retained."
+    },
+    {
+      "old_native_LF": [
+        297,
+        297
+      ],
+      "old_unit_sha256": "d865887838a18d2f117efd6a7be7fa060e514c7407fde2e051bfb50ad587ffc5",
+      "old_exact_opening": "**Case 7: employee above the JAEG.** New employee hired on 1 January 2026 at EUR 7,000 a month (EUR 84,000 a year), childless, age 40 ([§ 6 SGB V](https://www.gesetze-im-internet.de/sgb_5/__6.html)). The regular yearly pay exceeds",
+      "current_destination": "65",
+      "disposition": "Original employee84000/JAEG/pension651/unemployment91 retained."
+    },
+    {
+      "old_native_LF": [
+        299,
+        299
+      ],
+      "old_unit_sha256": "a691d33414c522ae428949269a10e0c50fe62c2e198e1f22115cdda95012801c",
+      "old_exact_opening": "## When to refuse or refer",
+      "current_destination": "399",
+      "disposition": "Referral heading."
+    },
+    {
+      "old_native_LF": [
+        301,
+        312
+      ],
+      "old_unit_sha256": "88bd7745018ba892c0d6851ae121a686fd257d293fce9dea20fd24a95e1c223f",
+      "old_exact_opening": "- Private health and care premiums, and any advice to move between private and statutory cover: the law makes the way back narrow (§ 6(3a), § 9 SGB V). Refer. - Whether a contract is employment (status procedure) or whether the cl",
+      "current_destination": "401–412",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        314,
+        314
+      ],
+      "old_unit_sha256": "d4072aba64834048b4a4d45c60ba071f17a946e8fe090c509f8799b276b63949",
+      "old_exact_opening": "## Filing and payment",
+      "current_destination": "281",
+      "disposition": "Filing/payment heading."
+    },
+    {
+      "old_native_LF": [
+        316,
+        316
+      ],
+      "old_unit_sha256": "8b128beb3f51c64623444cf7ce36ffd028646b5e9ae1fae6f5b1f9d5d0118d42",
+      "old_exact_opening": "**Due dates.**",
+      "current_destination": "285–285",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        318,
+        325
+      ],
+      "old_unit_sha256": "4f032dbece8b9671641cc640d386262959d0c84a410d41c783b5736bbcfe81ee",
+      "old_exact_opening": "| Contribution | Due | Source | | --- | --- | --- | | Voluntary health and care member | Under the fund's statute and the funds' association's rules; ordinarily by the 15th of the month after the contribution month (check the noti",
+      "current_destination": "287–294",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        327,
+        327
+      ],
+      "old_unit_sha256": "78b32110ba5d2db9821f5d7f949ac032d42c9253d9909b9459ffa7733d158cba",
+      "old_exact_opening": "**Income tax deduction** ([§ 10 EStG](https://www.gesetze-im-internet.de/estg/__10.html)). The owner's own contributions are private, not business expenses. They are claimed in the income tax return (filed through ELSTER).",
+      "current_destination": "296–296",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        329,
+        334
+      ],
+      "old_unit_sha256": "a908184c8f3aa8fbd0b3790fd943831fddb02b0a3d9cf23ee53570cf54608e5e",
+      "old_exact_opening": "| Contribution | Treatment | Value | | --- | --- | --- | | Pension (statutory, KSK share, voluntary, professional funds, certain annuities) | Up to the yearly cap ([§ 10(3) EStG](https://www.gesetze-im-internet.de/estg/__10.html))",
+      "current_destination": "298–303",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        336,
+        336
+      ],
+      "old_unit_sha256": "04c6feb7583214084ea6c73889504158681fa8f27ecb30f6b815c9b902141387",
+      "old_exact_opening": "Whether the owner's own accident contribution can be a business expense instead is not settled by the statute pages read here: flag it for review.",
+      "current_destination": "305–305",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        338,
+        338
+      ],
+      "old_unit_sha256": "871d6c7bff1fe63b5ce484dce03dfe68f53df8f958870e55de741900f706e677",
+      "old_exact_opening": "**Bank debits.**",
+      "current_destination": "307–307",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        340,
+        348
+      ],
+      "old_unit_sha256": "79958b82a3b8258f62d4d9da45a4b1e7625768162e1948afeaa3de04f4ab6143",
+      "old_exact_opening": "| Debit from | Treatment | | --- | --- | | Statutory health fund | Owner's health and care: private, § 10 EStG. In a business with staff it may be the employees' total contribution: payroll | | Private insurer | Private premium; o",
+      "current_destination": "309–317",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        350,
+        350
+      ],
+      "old_unit_sha256": "fce2813015f6aa95c20029d6810bcaa2f22cae5b85b4601e6f7b6dddcf547097",
+      "old_exact_opening": "## Previous year (2025) figures still in use",
+      "current_destination": "129",
+      "disposition": "2025heading moved before methods."
+    },
+    {
+      "old_native_LF": [
+        352,
+        352
+      ],
+      "old_unit_sha256": "6d282b97e49929e4daa90170b5e795d9f9263bc31697464d6eec0e38f8e85e09",
+      "old_exact_opening": "Used now for the final health assessment of 2025 when the 2025 tax notice arrives, and for the artists' levy report on fees paid in 2025 (due 31 March 2026).",
+      "current_destination": "131–131",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        354,
+        361
+      ],
+      "old_unit_sha256": "2078783ae573ef7acd963a6144bd3782f20b3f3de8c8ad777d204a2410b2e93f",
+      "old_exact_opening": "| What | 2025 value | Source | | --- | --- | --- | | Reference amount, per month | EUR 3,745 | [§ 1 SVBezGrV 2025](https://www.gesetze-im-internet.de/svbezgrv_2025/__1.html) | | Health and care minimum base of a voluntary member, ",
+      "current_destination": "133–140",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        363,
+        364
+      ],
+      "old_unit_sha256": "ed39b8c10f45a77ceeb316f2e3dbd8245602abda7aff1b61846d8366530556ed",
+      "old_exact_opening": "- The care base rate of 3.6% applied throughout 2025 as well ([§ 1 PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html)). - The levy rate for 2025 fees was set by the Künstlersozialabgabe-Verordnung 2024, which expire",
+      "current_destination": "142–143",
+      "disposition": "Care2025still3.6 retained; incorrect oldclaim2024ordinance set2025rate corrected. Actual2024scope/expiry and exact2025sourcegap retained."
+    },
+    {
+      "old_native_LF": [
+        366,
+        366
+      ],
+      "old_unit_sha256": "cabe34cd5aacc0d516403037e09c7418cdef5b027c7b5dd2f710be1dc595b9ad",
+      "old_exact_opening": "**Already enacted for 2027.** The health and care ceiling will be the special JAEG plus EUR 3,600 ([§ 223(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__223.html)). The 2027 amounts come in the next ordinance, expected in la",
+      "current_destination": "145–145",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        368,
+        368
+      ],
+      "old_unit_sha256": "74e3c99fcc880eb3180c4951fcdc3cde00b52029fd2ae10ad32e53f84a4ed9a7",
+      "old_exact_opening": "## Completion checklist",
+      "current_destination": "414",
+      "disposition": "Completion heading."
+    },
+    {
+      "old_native_LF": [
+        370,
+        379
+      ],
+      "old_unit_sha256": "4f05b3542bf08470ddb9705561b4bddf135784fc84b8d82825e010863c6beca2",
+      "old_exact_opening": "- [ ] Status settled: employee, self-employed, or both; status procedure considered for one-client or client-integrated work. - [ ] Health system known (statutory compulsory, statutory voluntary, private); sick pay election known.",
+      "current_destination": "416–425",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        381,
+        381
+      ],
+      "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "old_exact_opening": "## Sources",
+      "current_destination": "427–427",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        383,
+        383
+      ],
+      "old_unit_sha256": "75d2256d7b0d321b3862f9e62f5bd1ada49e9fa2a3d2294c1d9bb9efe72115a7",
+      "old_exact_opening": "All on gesetze-im-internet.de unless stated: SGB IV § 7, § 7a, § 8, § 20, § 23, § 24, § 28h; SGB V § 5, § 6, § 9, § 44, § 188, § 223, § 234, § 240-243, § 249, § 250, § 257; SGB VI § 1, § 2, § 4-7, § 161, § 165, § 167-169, § 190a, ",
+      "current_destination": "429–445",
+      "disposition": "Every original source family and URL preserved or explicitly attributed through table; no claim priorreader automatically read by writer."
+    },
+    {
+      "old_native_LF": [
+        385,
+        385
+      ],
+      "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "old_exact_opening": "<!-- openaccountants-cta-block -->",
+      "current_destination": "449–449",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        387,
+        387
+      ],
+      "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "old_exact_opening": "---",
+      "current_destination": "1–1",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        389,
+        389
+      ],
+      "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "old_exact_opening": "## Talk to a verified accountant",
+      "current_destination": "453–453",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        391,
+        394
+      ],
+      "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "old_exact_opening": "This guide is maintained by the OpenAccountants network — accountants who put their name behind the tax answers AI gives people. The live, always-current version (and the professional behind it) is at [openaccountants.com](https:/",
+      "current_destination": "455–458",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        396,
+        397
+      ],
+      "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "old_exact_opening": "- Use it in your AI: https://www.openaccountants.com/connect - Meet the accountants: https://www.openaccountants.com/network",
+      "current_destination": "460–461",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        399,
+        401
+      ],
+      "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+      "old_exact_opening": "> **General reference only.** This document does not constitute tax, legal, or > financial advice. Verify figures against the cited primary sources or with a > licensed professional before relying on them.",
+      "current_destination": "463–465",
+      "disposition": "Exact topic block retained, including every table/list member."
+    }
+  ],
+  "current_main_rows": [
+    {
+      "old_native_LF": [
+        1,
+        16
+      ],
+      "old_unit_sha256": "e13dc1c75cbaa0edfefb5f1746e48b3a47f3201429a0d3f532152998a199e743",
+      "old_exact_opening": "--- name: de-social-contributions description: \"German social insurance contributions for 2026, written for the self-employed and voluntary members. Covers voluntary statutory health insurance (minimum base EUR 1,318.33, ceiling E",
+      "current_destination": "1–16",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        18,
+        18
+      ],
+      "old_unit_sha256": "f73cd21885ee6c69f1281fd494c5c0b99b0dc6facbf33d6a1376449f4789f46a",
+      "old_exact_opening": "# Social insurance contributions in Germany 2026: the self-employed, voluntary members and a short employee summary",
+      "current_destination": "18–18",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        20,
+        20
+      ],
+      "old_unit_sha256": "06f484724435604cf992f6ba24b7885251491f730eb911226829cc9adf06bb0e",
+      "old_exact_opening": "> **General reference only.** This skill is general reference material for AI-assisted work. The health fund's, pension insurer's or KSK's notice sets the amount owed. A Steuerberater or social insurance adviser should confirm a r",
+      "current_destination": "20–20",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        22,
+        22
+      ],
+      "old_unit_sha256": "0c403884a35f758c0f8f8a2905d76c14f9c7036d2f0e2b4af29ab043ed9b618c",
+      "old_exact_opening": "**Sibling skills.** The monthly payroll run for employees (withholding, reports, Minijob flat rates, the Midijob band, employer levies, due dates): [de-payroll](de-payroll.md). Benefits in kind, employer pensions and managing dire",
+      "current_destination": "22–22",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        24,
+        24
+      ],
+      "old_unit_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "old_exact_opening": "## Who this applies to",
+      "current_destination": "24–24",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        26,
+        26
+      ],
+      "old_unit_sha256": "4883b96ea50ccd522433b373dd4b5e19722f4b04edfb76c15302fcab82a6d040",
+      "old_exact_opening": "German social insurance for calendar year 2026: health and long-term care (charged on the same base), pension, unemployment, and accident insurance paid by the business. The insurance rules apply to everyone employed or self-emplo",
+      "current_destination": "26–26",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        28,
+        30
+      ],
+      "old_unit_sha256": "9e71ec83193191a51a005b6c143ba089df26f0abd322e08fd3097d93bcb7ea5b",
+      "old_exact_opening": "- **The self-employed and voluntary members** are the focus: voluntary or private health cover, compulsory pension insurance for the groups in § 2 SGB VI, the Künstlersozialkasse (KSK), voluntary and on-application insurance, acci",
+      "current_destination": "28–30",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        32,
+        32
+      ],
+      "old_unit_sha256": "2235e1618b8dc4a076249b51f3a6d67556f9782f42f2967aa119f4c5f9c6f108",
+      "old_exact_opening": "**The method, step by step.**",
+      "current_destination": "32–32",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        34,
+        43
+      ],
+      "old_unit_sha256": "667e8d07a3d657c4e5af105b15290981b94e14440f35a0f018fc1961cec04d66",
+      "old_exact_opening": "1. **Settle the status.** Work under instructions and inside the client's organisation points to employment ([§ 7(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__7.html)). If unclear, use the status procedure below. 2. **Emp",
+      "current_destination": "34–43",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        45,
+        45
+      ],
+      "old_unit_sha256": "870889a5cbd82be97e2596b779e4b905af70c70e160d57f96e022ded7ad6e090",
+      "old_exact_opening": "The three-month windows (pension registration and exemptions, unemployment insurance) and the one-month window of the status procedure all run from the first day of the work.",
+      "current_destination": "45–45",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        47,
+        47
+      ],
+      "old_unit_sha256": "40908b2c1cb6252369e095d2cc004b41a288d60ab9a7ad585b99524c1218caa7",
+      "old_exact_opening": "### Employees: a short summary",
+      "current_destination": "47–47",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        49,
+        49
+      ],
+      "old_unit_sha256": "606d5e25d29d729e73069d4aabcf72bac1766ce41cd2a8f63061861f5b686814",
+      "old_exact_opening": "Employees working for pay are insured by law in health ([§ 5(1) no. 1 SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html)), care ([§ 20(1) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__20.html)), pension ([§ 1 SGB VI](",
+      "current_destination": "49–49",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        51,
+        57
+      ],
+      "old_unit_sha256": "b55c8c9880d6101f33c8952dedc3bd6a2cbb95ed2d6a3f0c8e805366c172e9b8",
+      "old_exact_opening": "| Branch | Employee | Employer | Rule | | --- | --- | --- | --- | | Pension | 9.3% | 9.3% | Half each ([§ 168(1) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__168.html)) | | Unemployment | 1.3% | 1.3% | Half each ([§ 346(1) S",
+      "current_destination": "51–57",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        59,
+        63
+      ],
+      "old_unit_sha256": "89118da5cf2d0219634a8ea41d3383673c514554335ce0ab3bed02610bb77073",
+      "old_exact_opening": "- **Saxony:** the employee bears one more point of care alone ([§ 58(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html)); use the shares in `de-payroll`. - **Ceilings:** pension and unemployment stop at EUR 8,450 a mo",
+      "current_destination": "59–63",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        65,
+        65
+      ],
+      "old_unit_sha256": "ca155ad03ac4f1ffb06d33a404435cf8569c66944204bfb7b0d7745da69ba5cb",
+      "old_exact_opening": "**Case: employee above the JAEG.** Hired 1 January 2026 at EUR 7,000 a month (EUR 84,000 a year), childless, age 40. Pay exceeds EUR 77,400, so the employee is free of compulsory health insurance and may stay as a voluntary member",
+      "current_destination": "65–65",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        67,
+        67
+      ],
+      "old_unit_sha256": "17007ea52c477f8a10e5abff2010797143161d12beedda3f846f8e4357fdb772",
+      "old_exact_opening": "### Status determination (Statusfeststellung)",
+      "current_destination": "67–67",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        69,
+        74
+      ],
+      "old_unit_sha256": "c25ae18783cd3c85a92a42cdfe20602d182f5597ffa9741e70da8406a369fb54",
+      "old_exact_opening": "- **Who decides.** The parties to a contract can ask the Deutsche Rentenversicherung Bund, in writing or electronically, whether it is employment or self-employment. This is not possible once a health fund or another insurer has a",
+      "current_destination": "69–74",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        76,
+        76
+      ],
+      "old_unit_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "old_exact_opening": "## Rates, bands and thresholds",
+      "current_destination": "76–76",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        78,
+        78
+      ],
+      "old_unit_sha256": "4085ff1cf8821b0ea5490dc2be55dfe946f32ab449dc594dd3f3701cc520525e",
+      "old_exact_opening": "All figures are for 2026 unless the row says otherwise. Amounts marked \"check\" use the average additional health rate; each fund sets its own rate and the fund's notice decides. The 2.9% average for 2026 is announced by the Federa",
+      "current_destination": "78–78",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        80,
+        80
+      ],
+      "old_unit_sha256": "4fc9c019e52d75ed14420001957ed3e5397e0e40d1c7f27be41bab29e0c569df",
+      "old_exact_opening": "**Rates**",
+      "current_destination": "80–80",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        82,
+        92
+      ],
+      "old_unit_sha256": "a87857f05eafbe624edd43c12ba1f1abd344ff0f0ee585394c66ef2d6a56d9a1",
+      "old_exact_opening": "| What | 2026 | Source | | --- | --- | --- | | Health, general rate (members with a sick pay claim) | 14.6% | [§ 241 SGB V](https://www.gesetze-im-internet.de/sgb_5/__241.html) | | Health, reduced rate (no sick pay claim: the norm",
+      "current_destination": "82–92",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        94,
+        94
+      ],
+      "old_unit_sha256": "fef88ebe3a090735038f562592f20c4a655a93264b78e8ed2bc1710e8ef98c4a",
+      "old_exact_opening": "**Full care rate of a member who pays alone, by children** (derived from [PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html) and [§ 55(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html)): no children, 2",
+      "current_destination": "94–94",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        96,
+        96
+      ],
+      "old_unit_sha256": "0b7c8547e1060608debc5e07f2bce05f05d32d1ca3fd13837118b706ee4f502c",
+      "old_exact_opening": "**Reference values and ceilings** ([SVBezGrV 2026](https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3))",
+      "current_destination": "96–96",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        98,
+        104
+      ],
+      "old_unit_sha256": "fd15cb1f9b4cd7e0d4f0b7ee729d57ccbc1e766b2f48b5c3484afc5fc204ebe5",
+      "old_exact_opening": "| What | Per year | Per month | | --- | --- | --- | | Reference amount (Bezugsgröße), [§ 1 SVBezGrV 2026](https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3) | EUR 47,460 | EUR 3,955 | | General",
+      "current_destination": "98–104",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        106,
+        106
+      ],
+      "old_unit_sha256": "1d3425907d31550151bf7245073d65656f83efe568c2a54950e5a445c505f1e2",
+      "old_exact_opening": "**Worked-out amounts**",
+      "current_destination": "106–106",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        108,
+        119
+      ],
+      "old_unit_sha256": "5d52c5517761e6c7a8072d87ebfe8f1252760a4a1ad9555b616a94661110ab89",
+      "old_exact_opening": "| What | 2026 | Working | | --- | --- | --- | | Minijob limit, per month | EUR 603 | EUR 13.90 minimum wage x 130 / 3 = EUR 602.33, rounded up ([§ 8(1a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html), [MiLoV5](https://",
+      "current_destination": "108–119",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        121,
+        121
+      ],
+      "old_unit_sha256": "17fdc94c3474dccc01c03d8a4ae2c0f4af13687ea542c8fd5d7cdefe1b043365",
+      "old_exact_opening": "**KSK thresholds**",
+      "current_destination": "121–121",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        123,
+        127
+      ],
+      "old_unit_sha256": "93bf3427ab6527fbc163972e3039691863812f75768270d914e7419a12570074",
+      "old_exact_opening": "| Rule | Value | Source | | --- | --- | --- | | Not insured if expected yearly income from the work does not exceed | EUR 3,900 | [§ 3(1) KSVG](https://www.gesetze-im-internet.de/ksvg/__3.html) | | Pension base: expected yearly in",
+      "current_destination": "123–127",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        129,
+        129
+      ],
+      "old_unit_sha256": "6a13f0a5500a3a9a3eb1118326f7162982ca9e77727e11ae78062a6cb809cdc2",
+      "old_exact_opening": "**Previous year (2025) figures still in use**",
+      "current_destination": "129–129",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        131,
+        131
+      ],
+      "old_unit_sha256": "6d282b97e49929e4daa90170b5e795d9f9263bc31697464d6eec0e38f8e85e09",
+      "old_exact_opening": "Used now for the final health assessment of 2025 when the 2025 tax notice arrives, and for the artists' levy report on fees paid in 2025 (due 31 March 2026).",
+      "current_destination": "131–131",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        133,
+        140
+      ],
+      "old_unit_sha256": "2078783ae573ef7acd963a6144bd3782f20b3f3de8c8ad777d204a2410b2e93f",
+      "old_exact_opening": "| What | 2025 value | Source | | --- | --- | --- | | Reference amount, per month | EUR 3,745 | [§ 1 SVBezGrV 2025](https://www.gesetze-im-internet.de/svbezgrv_2025/__1.html) | | Health and care minimum base of a voluntary member, ",
+      "current_destination": "133–140",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        142,
+        143
+      ],
+      "old_unit_sha256": "893cb930b0a382a126c2136c4439c2bdcc021a6d921ecb77c9009dc0cac205f7",
+      "old_exact_opening": "- The care base rate of 3.6% applied throughout 2025 as well ([§ 1 PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html)). - The levy rate for 2025 fees: the Künstlersozialabgabe-Verordnung 2024 (BGBl. 2023 I Nr. 240) ",
+      "current_destination": "142–143",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        145,
+        145
+      ],
+      "old_unit_sha256": "cabe34cd5aacc0d516403037e09c7418cdef5b027c7b5dd2f710be1dc595b9ad",
+      "old_exact_opening": "**Already enacted for 2027.** The health and care ceiling will be the special JAEG plus EUR 3,600 ([§ 223(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__223.html)). The 2027 amounts come in the next ordinance, expected in la",
+      "current_destination": "145–145",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        147,
+        147
+      ],
+      "old_unit_sha256": "1922c5897a17fa48bb320a158b52f374f76325b7c4d357ef1fa639f050317119",
+      "old_exact_opening": "## The taxable base",
+      "current_destination": "147–147",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        149,
+        149
+      ],
+      "old_unit_sha256": "4760bb3b77458f991a117fc30527f905212f148be94f6178b7937314151f1852",
+      "old_exact_opening": "### Voluntary and private health and care cover",
+      "current_destination": "149–149",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        151,
+        151
+      ],
+      "old_unit_sha256": "e7f719457a0fd404ed8a74dff911181d2d6993c03cc2b0cfe9715f423839d0ea",
+      "old_exact_opening": "**Who is in which system.**",
+      "current_destination": "151–151",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        153,
+        157
+      ],
+      "old_unit_sha256": "5c3a6bfed495498c85b229b9d91bc269d8d9f77caf111a83b6e235a053e2c105",
+      "old_exact_opening": "- A main-occupation self-employed person is not compulsorily insured as an employee ([§ 5(5) SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html)); KSK members are the exception. - When compulsory or family insurance ends, co",
+      "current_destination": "153–157",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        159,
+        159
+      ],
+      "old_unit_sha256": "b00e35d4bbbd39d22935b24c9bd177f7c51e043775a7e17d42c1326e1dec5f4a",
+      "old_exact_opening": "**What a voluntary member pays** ([§ 240 SGB V](https://www.gesetze-im-internet.de/sgb_5/__240.html)).",
+      "current_destination": "159–159",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        161,
+        163
+      ],
+      "old_unit_sha256": "f3bbf1f9db15c7bf05dbb82b0e98fc00037259392d3a011e58954547ebc855a2",
+      "old_exact_opening": "- **Base:** the member's whole economic capacity, not only profit: capital and letting income count too. The base is at least EUR 1,318.33 a month and at most the ceiling of EUR 5,812.50 ([§ 223(3) SGB V](https://www.gesetze-im-in",
+      "current_destination": "161–163",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        165,
+        165
+      ],
+      "old_unit_sha256": "6dcf93f6cb1fc6573ed607d87668e66b076bb981b5515019028d0f3374d47890",
+      "old_exact_opening": "**Provisional and final assessment** (§ 240(1) and (4a) SGB V).",
+      "current_destination": "165–165",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        167,
+        171
+      ],
+      "old_unit_sha256": "02500524e5daabb9d28002a5c2915b427d057c68ee3a3fd218d0f8fae723afe4",
+      "old_exact_opening": "- **Provisional:** set from the latest income tax notice, from the month after it was issued. At the start of self-employment, set from the proven expected income. - **Final:** set from the year's actual income once that year's ta",
+      "current_destination": "167–171",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        173,
+        173
+      ],
+      "old_unit_sha256": "c3ba506e00edf4bfa71b37a8c32092355ba096acbbe3bf78333d580001ef853b",
+      "old_exact_opening": "**Case: high income, sick pay, two children.** Profit EUR 90,000, sick pay elected, two children under 25, the fund's additional rate assumed 2.5%. The base is capped at EUR 5,812.50. Health EUR 5,812.50 x 17.1% = EUR 993.94; care",
+      "current_destination": "173–173",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        175,
+        175
+      ],
+      "old_unit_sha256": "5a3ea16a6aee3421dbc6b173e9e69e9453c8e5916800a84c3d7dce7bed73acc5",
+      "old_exact_opening": "### Pension insurance of the self-employed",
+      "current_destination": "175–175",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        177,
+        177
+      ],
+      "old_unit_sha256": "3d4096f447d27078252b5c735b8726adab1ad7b6cccc67c03a2ecb898a59cefe",
+      "old_exact_opening": "**Who must be insured** ([§ 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__2.html)). Most self-employed people are not. These are:",
+      "current_destination": "177–177",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        179,
+        187
+      ],
+      "old_unit_sha256": "9ad77ff48cd400791ae042a09d3a8b93c20efa347a1829a89ffd32fb130df2ba",
+      "old_exact_opening": "1. Teachers and educators who regularly employ no employee subject to insurance in the work. 2. Carers in sick, maternity, infant or child care, on the same condition. 3. Midwives. 4. Sea pilots. 5. Artists and publicists under th",
+      "current_destination": "179–187",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        189,
+        189
+      ],
+      "old_unit_sha256": "d6574229917c5d61f44ac870dcd9c2027639a825d232184799240348cf267a77",
+      "old_exact_opening": "For groups 1, 2, 7 and 9, apprentices count as employees and Minijobbers do not.",
+      "current_destination": "189–189",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        191,
+        194
+      ],
+      "old_unit_sha256": "7678615231f9840aa6746edb349d1bc29f3cbd2bda365364a9cb338660579d79",
+      "old_exact_opening": "- **Marginal work is free.** Self-employed work whose income is regularly not above the Minijob limit is insurance-free in that work ([§ 5(2) no. 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__5.html), [§ 8(3) SGB IV](https:",
+      "current_destination": "191–194",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        196,
+        196
+      ],
+      "old_unit_sha256": "14a19b0a447731b96229fd0115e680a8dbd90ee02219598ac442d512ee58913a",
+      "old_exact_opening": "**Contribution base** ([§ 165 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__165.html)).",
+      "current_destination": "196–196",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        198,
+        202
+      ],
+      "old_unit_sha256": "942c6eea4ce411bbf0264a0468ae434135313647905613ace6fbeaac213cd329",
+      "old_exact_opening": "- **Default:** the reference amount, which gives the standard contribution of EUR 735.63 a month. - **Proven income:** if lower or higher income is proven, that income is used, but at least twelve times the Minijob limit a year. T",
+      "current_destination": "198–202",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        204,
+        204
+      ],
+      "old_unit_sha256": "891b1a84c7cc9badf36d4b9be500081cf9907347a8a8bf5f82f2f69b2b8ed898",
+      "old_exact_opening": "**Exemptions on application** ([§ 6 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__6.html)).",
+      "current_destination": "204–204",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        206,
+        209
+      ],
+      "old_unit_sha256": "1227128c550aa70b33b826e01e2c82806b5f442116ecae56ac5cb572c368712f",
+      "old_exact_opening": "- **Craftspeople:** after at least 18 years of compulsory contributions. - **Group 9 (one client):** for three years after first taking up such work, and again for a second such activity. Also a person first liable under group 9 a",
+      "current_destination": "206–209",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        211,
+        211
+      ],
+      "old_unit_sha256": "fd86871076d67a40e2ff9c467004f8d36b24b064528b8d669f65f7e777a3e3c2",
+      "old_exact_opening": "**No duty: voluntary or on application.**",
+      "current_destination": "211–211",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        213,
+        214
+      ],
+      "old_unit_sha256": "660f86e76a6c6d394e93d602d4f2b505bdac972e006a6b25336f5c5cc9653a49",
+      "old_exact_opening": "- **Voluntary contributions:** anyone not compulsorily insured, from age 16, may pay any amount from EUR 112.16 to EUR 1,571.70 a month ([§ 7](https://www.gesetze-im-internet.de/sgb_6/__7.html), [§ 161(2) SGB VI](https://www.geset",
+      "current_destination": "213–214",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        216,
+        216
+      ],
+      "old_unit_sha256": "3582c6d961f68912eb51ca00e48efdab6a2df58a6564874a991e633e7e8c2b88",
+      "old_exact_opening": "### Artists and publicists: the Künstlersozialkasse",
+      "current_destination": "216–216",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        218,
+        218
+      ],
+      "old_unit_sha256": "0fc0e4c0744cff036b07acbb4e444bc6df1b689ecb019a204f744ccb3f17dcbb",
+      "old_exact_opening": "**Who is insured** ([§ 1 KSVG](https://www.gesetze-im-internet.de/ksvg/__1.html)). A self-employed artist or publicist is insured in pension, health and care when both conditions are met:",
+      "current_destination": "218–218",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        220,
+        221
+      ],
+      "old_unit_sha256": "3a89123ce836a1c6dfe2a6c315ca1e6d5ddb9e7f0af54d760160730d7cfbee22",
+      "old_exact_opening": "- the work is done for a living and not just for a short time; - the person employs no more than one employee in that work (apprentices and Minijobbers do not count).",
+      "current_destination": "220–221",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        223,
+        223
+      ],
+      "old_unit_sha256": "f3b9b76a373e97e70f5b2ae4dac1fcb8adce283d6c97a3ed317bf9f1300ecbff",
+      "old_exact_opening": "The KSK decides whether work is artistic or publicist.",
+      "current_destination": "223–223",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        225,
+        225
+      ],
+      "old_unit_sha256": "430e3afbf1d60c05cb1b074ae0d7669c0df52a222e1b1a0fc42be34d7f463a83",
+      "old_exact_opening": "(The income thresholds are in the rates table above.)",
+      "current_destination": "225–225",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        227,
+        227
+      ],
+      "old_unit_sha256": "7c06cb49a3af63b30cf12b621c7643763c910ccd987cb672059b1a06d4ac828f",
+      "old_exact_opening": "- **When the income limit bites:** it is lowered pro rata for part-year work and does not apply in the first three years after the work was first taken up. Cover also stays in place so long as income falls to the limit or below no",
+      "current_destination": "227–227",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        229,
+        229
+      ],
+      "old_unit_sha256": "56a18fef66edddca57c0d50582bfa8e9c189fe62942b669e7f2158924d63aaa4",
+      "old_exact_opening": "**Member's shares.** The member pays half of each contribution to the KSK.",
+      "current_destination": "229–229",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        231,
+        236
+      ],
+      "old_unit_sha256": "a85524f1457d0c9bc251a361202e1e9ff0a3d760d2fe17e681e1f7d7e8090798",
+      "old_exact_opening": "- **Pension:** half ([§ 15 KSVG](https://www.gesetze-im-internet.de/ksvg/__15.html)). - **Health:** half at the general rate plus half the fund's additional rate. Without a sick pay claim the reduced rate is used ([§ 16(1) KSVG](h",
+      "current_destination": "231–236",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        238,
+        238
+      ],
+      "old_unit_sha256": "40e34791a010526fe6247e36a03e08bb7e3fda9b6f2d8aa034ecb8e5f41e1c9e",
+      "old_exact_opening": "**The artists' levy (Künstlersozialabgabe)** ([§ 24 KSVG](https://www.gesetze-im-internet.de/ksvg/__24.html)).",
+      "current_destination": "238–238",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        240,
+        245
+      ],
+      "old_unit_sha256": "2b9f0c3ca292ce1032562b9ba099ac6e445a324a7d5b9a45e8bb1ad85fd9851e",
+      "old_exact_opening": "- **Typical users** always owe it: publishers, theatres, orchestras, broadcasters, galleries, advertising or PR for third parties, training schools for artistic work and similar. - **Other businesses** owe it when they commission ",
+      "current_destination": "240–245",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        247,
+        247
+      ],
+      "old_unit_sha256": "bbfd1d1e78fc414762eef278c537a9872891cc1b64c5ce48b5a1fb6a19831f41",
+      "old_exact_opening": "**Case: KSK member.** Graphic designer, expected 2026 income reported as EUR 30,000 (EUR 2,500 a month), childless, age 28, sick pay claim, additional rate assumed 2.9%. Pension share EUR 2,500 x 18.6% / 2 = EUR 232.50; health sha",
+      "current_destination": "247–247",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        249,
+        249
+      ],
+      "old_unit_sha256": "cf6a52b47f2afa2df902ac2c91e002906126b67ae85d46bb72a782cac1f20ff7",
+      "old_exact_opening": "**Case: the artists' levy.** An advertising agency (a typical user under § 24(1) KSVG) paid EUR 20,000 net of VAT in 2026 to freelance designers: levy EUR 980.00, reported by 31 March 2027. A bakery that paid EUR 800 in 2026 for a",
+      "current_destination": "249–249",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        251,
+        251
+      ],
+      "old_unit_sha256": "6cb0cd5cfc85ed1be6c4a1032d5496b531ac6983efff5341dd47934b89fc721b",
+      "old_exact_opening": "### Accident and unemployment insurance",
+      "current_destination": "251–251",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        253,
+        253
+      ],
+      "old_unit_sha256": "e5a0abb622af165a0356652377fc9f06407cd4a2627a1e43146cae3f0f15d9d3",
+      "old_exact_opening": "**Accident insurance.**",
+      "current_destination": "253–253",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        255,
+        257
+      ],
+      "old_unit_sha256": "fe17b8ac7cc6470750448cdc830d8d10ee918ac1a4280e58db4583907d9a92df",
+      "old_exact_opening": "- **Notify:** tell the competent accident insurer within one week of starting; a trade registration within that week counts. Changes to the type of business are reported within four weeks ([§ 192 SGB VII](https://www.gesetze-im-in",
+      "current_destination": "255–257",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        259,
+        259
+      ],
+      "old_unit_sha256": "1e33c1049ed8d713a8c3aedbe7466fccdb7bed605eb02f6efedc5b4637edd774",
+      "old_exact_opening": "**Unemployment insurance on application** ([§ 28a SGB III](https://www.gesetze-im-internet.de/sgb_3/__28a.html)).",
+      "current_destination": "259–259",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        261,
+        268
+      ],
+      "old_unit_sha256": "7e83de889cd0e240dc452f7e6a462650b77d8c43bf948c794216d42a2616bd17",
+      "old_exact_opening": "- **Who:** a person starting self-employed work of at least 15 hours a week who either: - had 12 months of compulsory unemployment insurance in the 30 months before starting, or - had a claim to a wage replacement benefit under SG",
+      "current_destination": "261–268",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        270,
+        270
+      ],
+      "old_unit_sha256": "b283586805afbac6de7b670c00d2960e4fbfc6a186f02e5a507f0ddb714ef105",
+      "old_exact_opening": "### Boundaries and exceptions",
+      "current_destination": "270–270",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        272,
+        279
+      ],
+      "old_unit_sha256": "565d240cbbe70880dbd96cce91638df7529dca18f9e6521ff0ffe6512f2dcc9d",
+      "old_exact_opening": "| Situation | Rule | Source | | --- | --- | --- | | Employed with a side business | Health follows the job unless self-employment is the main occupation. If the job is the main occupation, the freelance income carries no health or",
+      "current_destination": "272–279",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        281,
+        281
+      ],
+      "old_unit_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "old_exact_opening": "## Deadlines and filing",
+      "current_destination": "281–281",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        283,
+        283
+      ],
+      "old_unit_sha256": "ac887e3a7ef7a8aae41e33a3170ab06414176ec2f8a1932eec96af5ceceea817",
+      "old_exact_opening": "Registration windows: pension registration and exemptions, and unemployment insurance on application, within three months of starting; the accident insurer within one week; the status procedure within one month for its protection;",
+      "current_destination": "283–283",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        285,
+        285
+      ],
+      "old_unit_sha256": "8b128beb3f51c64623444cf7ce36ffd028646b5e9ae1fae6f5b1f9d5d0118d42",
+      "old_exact_opening": "**Due dates.**",
+      "current_destination": "285–285",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        287,
+        294
+      ],
+      "old_unit_sha256": "4f032dbece8b9671641cc640d386262959d0c84a410d41c783b5736bbcfe81ee",
+      "old_exact_opening": "| Contribution | Due | Source | | --- | --- | --- | | Voluntary health and care member | Under the fund's statute and the funds' association's rules; ordinarily by the 15th of the month after the contribution month (check the noti",
+      "current_destination": "287–294",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        296,
+        296
+      ],
+      "old_unit_sha256": "78b32110ba5d2db9821f5d7f949ac032d42c9253d9909b9459ffa7733d158cba",
+      "old_exact_opening": "**Income tax deduction** ([§ 10 EStG](https://www.gesetze-im-internet.de/estg/__10.html)). The owner's own contributions are private, not business expenses. They are claimed in the income tax return (filed through ELSTER).",
+      "current_destination": "296–296",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        298,
+        303
+      ],
+      "old_unit_sha256": "a908184c8f3aa8fbd0b3790fd943831fddb02b0a3d9cf23ee53570cf54608e5e",
+      "old_exact_opening": "| Contribution | Treatment | Value | | --- | --- | --- | | Pension (statutory, KSK share, voluntary, professional funds, certain annuities) | Up to the yearly cap ([§ 10(3) EStG](https://www.gesetze-im-internet.de/estg/__10.html))",
+      "current_destination": "298–303",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        305,
+        305
+      ],
+      "old_unit_sha256": "04c6feb7583214084ea6c73889504158681fa8f27ecb30f6b815c9b902141387",
+      "old_exact_opening": "Whether the owner's own accident contribution can be a business expense instead is not settled by the statute pages read here: flag it for review.",
+      "current_destination": "305–305",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        307,
+        307
+      ],
+      "old_unit_sha256": "871d6c7bff1fe63b5ce484dce03dfe68f53df8f958870e55de741900f706e677",
+      "old_exact_opening": "**Bank debits.**",
+      "current_destination": "307–307",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        309,
+        317
+      ],
+      "old_unit_sha256": "79958b82a3b8258f62d4d9da45a4b1e7625768162e1948afeaa3de04f4ab6143",
+      "old_exact_opening": "| Debit from | Treatment | | --- | --- | | Statutory health fund | Owner's health and care: private, § 10 EStG. In a business with staff it may be the employees' total contribution: payroll | | Private insurer | Private premium; o",
+      "current_destination": "309–317",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        319,
+        319
+      ],
+      "old_unit_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "old_exact_opening": "## Penalties and interest",
+      "current_destination": "319–319",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        321,
+        325
+      ],
+      "old_unit_sha256": "40289763dba5c57cc7442b54910e043d6f549a5d0990325bddda8c0d1428e6eb",
+      "old_exact_opening": "- **Late statutory contributions:** a late-payment surcharge of 1% for each month or part month started, on the arrears rounded down to the nearest EUR 50; not charged separately if under EUR 150 ([§ 24(1) SGB IV](https://www.gese",
+      "current_destination": "321–325",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        327,
+        327
+      ],
+      "old_unit_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "old_exact_opening": "## Cross-border points",
+      "current_destination": "327–327",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        329,
+        332
+      ],
+      "old_unit_sha256": "97574876b744626fbd24c76be140f81a285ae79db8a69985ec54283a78c094ef",
+      "old_exact_opening": "- **Territory:** German insurance duty follows work in Germany, and the rules that need no work follow residence ([§ 3 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__3.html)). - **Posting out and in:** a self-employed person w",
+      "current_destination": "329–332",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        334,
+        334
+      ],
+      "old_unit_sha256": "24306288984cfa636de0ac24a9833561c7e6c3cb47df7023c1903f57c3720a9b",
+      "old_exact_opening": "## Worked examples",
+      "current_destination": "334–334",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        336,
+        336
+      ],
+      "old_unit_sha256": "7481cda1d6e36e9390c1d844861586b275428e1dbccbd40f2466cc2b06f80315",
+      "old_exact_opening": "Each example uses 2026 figures from the rates table. The fund's additional rate is assumed at the 2.9% average; a real case uses the fund's own rate and its notice.",
+      "current_destination": "336–336",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        338,
+        338
+      ],
+      "old_unit_sha256": "ebc66a4142d14729bf906bd8a679ad25cc2740a29750182dcb6e2360419f3c58",
+      "old_exact_opening": "**Example 1: self-employed consultant, middle income.** Profit EUR 48,000 in the latest tax notice (EUR 4,000 a month), voluntary member, no sick pay, childless, age 35, no single client. The base of EUR 4,000 lies between the min",
+      "current_destination": "338–338",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        340,
+        358
+      ],
+      "old_unit_sha256": "b2e5cbad89730895a8a22213dbd0d1d7ffa2f9d030483fe92e47658b07a22a9d",
+      "old_exact_opening": "```oa-check name: DE 2026 voluntary member, profit 48,000, childless, no sick pay inputs: profit_year: 48000 reference_month: 3955 ceiling_month: 5812.50 extra_rate: 2.9 steps: - min_base: reference_month / 3 - base: clamp(profit_",
+      "current_destination": "340–358",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        360,
+        360
+      ],
+      "old_unit_sha256": "cbeb0339dca95cf2abdb9dfe7310929d75475a18d85901359f726497048afe95",
+      "old_exact_opening": "**Example 2: yoga teacher in the first year, low income, one child.** Starts teaching on 1 March 2026, profit about EUR 1,000 a month, no insured staff, one child aged 10, voluntary health member without sick pay. Health: the base",
+      "current_destination": "360–360",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        362,
+        385
+      ],
+      "old_unit_sha256": "368073b5d4ec9330981c120702c40db5c9233f2d22887c72116603802aeeb6f7",
+      "old_exact_opening": "```oa-check name: DE 2026 yoga teacher start phase, profit 1,000 a month, one child inputs: profit_month: 1000 reference_month: 3955 ceiling_month: 5812.50 minijob: 603 extra_rate: 2.9 steps: - min_base: reference_month / 3 - base",
+      "current_destination": "362–385",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        387,
+        387
+      ],
+      "old_unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "old_exact_opening": "## Ask the client first",
+      "current_destination": "387–387",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        389,
+        397
+      ],
+      "old_unit_sha256": "c13b58ae9eb1e833d8ff10e9a0cf83762fbf5204b4d0ed13d58d45ef99700f8a",
+      "old_exact_opening": "- Employed, self-employed, or both? If both, which is the main occupation, and do you employ anyone above the Minijob level? - If employed: regular yearly pay, and were you privately insured on 31 December 2002 because your pay wa",
+      "current_destination": "389–397",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        399,
+        399
+      ],
+      "old_unit_sha256": "e66e65a01192f8b9ba45bf15ab222d6c02662ef904b4ccbbf584a61e8690e68a",
+      "old_exact_opening": "**When to refuse or refer**",
+      "current_destination": "399–399",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        401,
+        412
+      ],
+      "old_unit_sha256": "88bd7745018ba892c0d6851ae121a686fd257d293fce9dea20fd24a95e1c223f",
+      "old_exact_opening": "- Private health and care premiums, and any advice to move between private and statutory cover: the law makes the way back narrow (§ 6(3a), § 9 SGB V). Refer. - Whether a contract is employment (status procedure) or whether the cl",
+      "current_destination": "401–412",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        414,
+        414
+      ],
+      "old_unit_sha256": "3a2b9bfbfaa7d0ad5da43f1969688822198bba5c30ad34b83642e5fc5f0c6398",
+      "old_exact_opening": "**Completion checklist**",
+      "current_destination": "414–414",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        416,
+        425
+      ],
+      "old_unit_sha256": "4f05b3542bf08470ddb9705561b4bddf135784fc84b8d82825e010863c6beca2",
+      "old_exact_opening": "- [ ] Status settled: employee, self-employed, or both; status procedure considered for one-client or client-integrated work. - [ ] Health system known (statutory compulsory, statutory voluntary, private); sick pay election known.",
+      "current_destination": "416–425",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        427,
+        427
+      ],
+      "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "old_exact_opening": "## Sources",
+      "current_destination": "427–427",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        429,
+        445
+      ],
+      "old_unit_sha256": "eaaea6334acd43ca507591251fcb5b0f96a9c230c6b004c82ea7119c385ff1da",
+      "old_exact_opening": "| Source | URL | Read on | |---|---|---| | SGB IV (§§ 3-8, 7a, 20, 23, 24, 28h) | https://www.gesetze-im-internet.de/sgb_4/ | 2026-10-26 | | SGB V (§§ 5, 6, 9, 44, 188, 223, 226, 234, 240-243, 249, 250, 257) | https://www.gesetze-",
+      "current_destination": "429–445",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        447,
+        447
+      ],
+      "old_unit_sha256": "aef59b6fb65e5c9a861a954acf3db6c6cdc32b80f637e5a965481035979734bd",
+      "old_exact_opening": "Not yet confirmed: the 2025 artists' levy rate (the ordinance setting it was not found; take it from the KSK notice); the due date of a voluntary health member's contribution (fund statute; ordinarily the 15th of the next month); ",
+      "current_destination": "447–447",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        449,
+        449
+      ],
+      "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "old_exact_opening": "<!-- openaccountants-cta-block -->",
+      "current_destination": "449–449",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        451,
+        451
+      ],
+      "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "old_exact_opening": "---",
+      "current_destination": "1–1",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        453,
+        453
+      ],
+      "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "old_exact_opening": "## Talk to a verified accountant",
+      "current_destination": "453–453",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        455,
+        458
+      ],
+      "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "old_exact_opening": "This guide is maintained by the OpenAccountants network — accountants who put their name behind the tax answers AI gives people. The live, always-current version (and the professional behind it) is at [openaccountants.com](https:/",
+      "current_destination": "455–458",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        460,
+        461
+      ],
+      "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "old_exact_opening": "- Use it in your AI: https://www.openaccountants.com/connect - Meet the accountants: https://www.openaccountants.com/network",
+      "current_destination": "460–461",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        463,
+        465
+      ],
+      "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+      "old_exact_opening": "> **General reference only.** This document does not constitute tax, legal, or > financial advice. Verify figures against the cited primary sources or with a > licensed professional before relying on them.",
+      "current_destination": "463–465",
+      "disposition": "Exact topic block retained, including every table/list member."
+    }
+  ]
+}

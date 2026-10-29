@@ -1,0 +1,198 @@
+{
+  "count": 32,
+  "controls": [
+    {
+      "name": "limitedbase1",
+      "actual": "36348",
+      "expected": "36348",
+      "pass": true
+    },
+    {
+      "name": "limitedtax1",
+      "actual": "6076",
+      "expected": "6076",
+      "pass": true
+    },
+    {
+      "name": "Germanincomeratio1",
+      "actual": "12/13",
+      "expected": "12/13",
+      "pass": true
+    },
+    {
+      "name": "optiontaxable1",
+      "actual": "23964",
+      "expected": "23964",
+      "pass": true
+    },
+    {
+      "name": "progbase1",
+      "actual": "25964",
+      "expected": "25964",
+      "pass": true
+    },
+    {
+      "name": "progtax1",
+      "actual": "3107",
+      "expected": "3107",
+      "pass": true
+    },
+    {
+      "name": "optiontax1",
+      "actual": "2867",
+      "expected": "2867",
+      "pass": true
+    },
+    {
+      "name": "saving1",
+      "actual": "3209",
+      "expected": "3209",
+      "pass": true
+    },
+    {
+      "name": "foreignpaid2",
+      "actual": "1500",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "capitaltaxbefore2",
+      "actual": "2250",
+      "expected": "2250",
+      "pass": true
+    },
+    {
+      "name": "credited2",
+      "actual": "1500",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "flattax2",
+      "actual": "750",
+      "expected": "750",
+      "pass": true
+    },
+    {
+      "name": "Soli2",
+      "actual": "165/4",
+      "expected": "165/4",
+      "pass": true
+    },
+    {
+      "name": "total2",
+      "actual": "3165/4",
+      "expected": "3165/4",
+      "pass": true
+    },
+    {
+      "name": "refundableforeignexcessnotcredit",
+      "actual": "1500",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "eligible3000norefundGermancreditcap",
+      "actual": "2250",
+      "expected": "2250",
+      "pass": true
+    },
+    {
+      "name": "tariffforeigncap60k10k",
+      "actual": "14233/6",
+      "expected": "14233/6",
+      "pass": true
+    },
+    {
+      "name": "group75pct",
+      "actual": "9261",
+      "expected": "9261",
+      "pass": true
+    },
+    {
+      "name": "grouphalf",
+      "actual": "6174",
+      "expected": "6174",
+      "pass": true
+    },
+    {
+      "name": "groupquarter",
+      "actual": "3087",
+      "expected": "3087",
+      "pass": true
+    },
+    {
+      "name": "jointGFB",
+      "actual": "24696",
+      "expected": "24696",
+      "pass": true
+    },
+    {
+      "name": "90pctinclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "below90pct",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "profpension10k Germany20k foreign30k",
+      "actual": "4000",
+      "expected": "4000",
+      "pass": true
+    },
+    {
+      "name": "profpensioncapGermanincome1k",
+      "actual": "1000",
+      "expected": "1000",
+      "pass": true
+    },
+    {
+      "name": "artistgross10000",
+      "actual": "1500",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "artistnetEU10000cost8000",
+      "actual": "600",
+      "expected": "600",
+      "pass": true
+    },
+    {
+      "name": "royaltynono3netroute",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "R18assessmentSoli20400",
+      "actual": "119/20",
+      "expected": "119/20",
+      "pass": true
+    },
+    {
+      "name": "R22book40of100fails",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "R22book60of100passes",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "R21unrelatedregistryonlynotGermanbythatbranch",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    }
+  ],
+  "scope": "Both original executable examples and supplementary credit narration recomputed; declared progression-rounding boundary retained. No ruling on foreign-capital1(3)test or every actual treaty."
+}

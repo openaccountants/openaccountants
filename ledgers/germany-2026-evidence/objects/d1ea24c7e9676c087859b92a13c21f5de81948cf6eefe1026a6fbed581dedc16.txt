@@ -1,0 +1,53 @@
+§ 93c AO - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Abgabenordnung (AO)
+§ 93c Datenübermittlung durch Dritte
+(1) Sind steuerliche Daten eines Steuerpflichtigen auf Grund gesetzlicher Vorschriften von einem Dritten (mitteilungspflichtige Stelle) an Finanzbehörden elektronisch zu übermitteln, so gilt vorbehaltlich abweichender Bestimmungen in den Steuergesetzen Folgendes: 1.
+Die mitteilungspflichtige Stelle muss die Daten nach Ablauf des Besteuerungszeitraums bis zum letzten Tag des Monats Februar des folgenden Jahres nach amtlich vorgeschriebenem Datensatz durch Datenfernübertragung über die amtlich bestimmte Schnittstelle übermitteln; bezieht sich die Übermittlungspflicht auf einen Besteuerungszeitpunkt, sind die Daten bis zum Ablauf des zweiten Kalendermonats nach Ablauf des Monats zu übermitteln, in dem der Besteuerungszeitpunkt liegt.
+2.
+Der Datensatz muss folgende Angaben enthalten: a)
+den Namen, die Anschrift, das Ordnungsmerkmal und die Kontaktdaten der mitteilungspflichtigen Stelle sowie ihr Identifikationsmerkmal nach den §§ 139a bis 139c oder, soweit dieses nicht vergeben wurde, ihre Steuernummer;
+b)
+hat die mitteilungspflichtige Stelle einen Auftragnehmer im Sinne des § 87d mit der Datenübermittlung beauftragt, so sind zusätzlich zu den Angaben nach Buchstabe a der Name, die Anschrift und die Kontaktdaten des Auftragnehmers sowie dessen Identifikationsmerkmal nach den §§ 139a bis 139c oder, wenn dieses nicht vergeben wurde, dessen Steuernummer anzugeben;
+c)
+den Familiennamen, den Vornamen, den Tag der Geburt, die Anschrift des Steuerpflichtigen und dessen Identifikationsnummer nach § 139b;
+d)
+handelt es sich bei dem Steuerpflichtigen nicht um eine natürliche Person, so sind dessen Firma oder Name, Anschrift und Wirtschafts-Identifikationsnummer nach § 139c oder, wenn diese noch nicht vergeben wurde, dessen Steuernummer anzugeben;
+e)
+den Zeitpunkt der Erstellung des Datensatzes oder eines anderen Ereignisses, anhand dessen die Daten in der zeitlichen Reihenfolge geordnet werden können, die Art der Mitteilung, den betroffenen Besteuerungszeitraum oder Besteuerungszeitpunkt und die Angabe, ob es sich um eine erstmalige, korrigierte oder stornierende Mitteilung handelt.
+3.
+Die mitteilungspflichtige Stelle hat den Steuerpflichtigen darüber zu informieren, welche für seine Besteuerung relevanten Daten sie an die Finanzbehörden übermittelt hat oder übermitteln wird. Diese Information hat in geeigneter Weise, mit Zustimmung des Steuerpflichtigen elektronisch, und binnen angemessener Frist zu erfolgen. Auskunftspflichten nach anderen Gesetzen bleiben unberührt.
+4.
+Die mitteilungspflichtige Stelle hat die übermittelten Daten aufzuzeichnen und diese Aufzeichnungen sowie die der Mitteilung zugrunde liegenden Unterlagen bis zum Ablauf des siebten auf den Besteuerungszeitraum oder Besteuerungszeitpunkt folgenden Kalenderjahres aufzubewahren; die §§ 146 und 147 Absatz 2, 5 und 6 gelten entsprechend.
+(2) Die mitteilungspflichtige Stelle soll Daten nicht übermitteln, wenn sie erst nach Ablauf des siebten auf den Besteuerungszeitraum oder Besteuerungszeitpunkt folgenden Kalenderjahres erkennt, dass sie zur Datenübermittlung verpflichtet war.
+(3) Stellt die mitteilungspflichtige Stelle bis zum Ablauf des siebten auf den Besteuerungszeitraum oder Besteuerungszeitpunkt folgenden Kalenderjahres fest, dass 1.
+die nach Maßgabe des Absatzes 1 übermittelten Daten unzutreffend waren oder
+2.
+ein Datensatz übermittelt wurde, obwohl die Voraussetzungen hierfür nicht vorlagen,
+so hat die mitteilungspflichtige Stelle dies vorbehaltlich abweichender Bestimmungen in den Steuergesetzen unverzüglich durch Übermittlung eines weiteren Datensatzes zu korrigieren oder zu stornieren. Absatz 1 Nummer 2 bis 4 gilt entsprechend.
+(4) Die nach den Steuergesetzen zuständige Finanzbehörde kann ermitteln, ob die mitteilungspflichtige Stelle 1.
+ihre Pflichten nach Absatz 1 Nummer 1, 2 und 4 und Absatz 3 erfüllt und
+2.
+den Inhalt des Datensatzes nach den Vorgaben des jeweiligen Steuergesetzes bestimmt hat.
+Die Rechte und Pflichten der für die Besteuerung des Steuerpflichtigen zuständigen Finanzbehörde hinsichtlich der Ermittlung des Sachverhalts bleiben unberührt.
+(5) Soweit gesetzlich nichts anderes bestimmt ist, ist die nach den Steuergesetzen für die Entgegennahme der Daten zuständige Finanzbehörde auch für die Anwendung des Absatzes 4 und des § 72a Absatz 4 zuständig.
+(6) Die Finanzbehörden dürfen von den mitteilungspflichtigen Stellen mitgeteilte Daten im Sinne der Absätze 1 und 3 verarbeiten, wenn dies zur Erfüllung der ihnen obliegenden Aufgaben oder in Ausübung öffentlicher Gewalt, die ihnen übertragen wurde, erforderlich ist.
+(7) Soweit gesetzlich nichts anderes bestimmt ist, darf die mitteilungspflichtige Stelle die ausschließlich zum Zweck der Übermittlung erhobenen und gespeicherten Daten des Steuerpflichtigen nur für diesen Zweck verwenden.
+(8) Die Absätze 1 bis 7 sind nicht anzuwenden auf 1.
+Datenübermittlungspflichten nach § 51a Absatz 2c oder Abschnitt XI des Einkommensteuergesetzes,
+2.
+Datenübermittlungspflichten gegenüber den Zollbehörden,
+3.
+Datenübermittlungen zwischen Finanzbehörden und
+4.
+Datenübermittlungspflichten ausländischer öffentlicher Stellen.
+Fußnote
+(+++ § 93c: Zur Anwendung vgl. Art. 97 §§ 1 u. 27 EGAO +++)
+(+++ § 93c Abs. 3: Zur Anwendung vgl. § 45b Abs. 8 Nr. 1 EStG +++)
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

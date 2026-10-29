@@ -1,0 +1,11 @@
+{
+  "id": "Ue2f80ac3e41ed5d3",
+  "url": "https://www.gesetze-im-internet.de/erbstg_1974/__2.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue2f80ac3e41ed5d3.body",
+  "raw_sha256": "f6c668fb1a2242539cc8248c35965cd27f706c2bab4b35554fcc3d0845fedc6b",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue2f80ac3e41ed5d3.reader.txt",
+  "reader_sha256": "a6a2319815c436cc70d260f3cc2745afbf62b333d959d0bc07560b61d7a4cf0b",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

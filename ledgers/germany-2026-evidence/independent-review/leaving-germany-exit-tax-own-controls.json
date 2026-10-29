@@ -1,0 +1,114 @@
+{
+  "count": 18,
+  "controls": [
+    {
+      "name": "fictional fair value minusbasis",
+      "actual": "1975000",
+      "expected": "1975000",
+      "pass": true
+    },
+    {
+      "name": "60pcttaxablegain",
+      "actual": "1185000",
+      "expected": "1185000",
+      "pass": true
+    },
+    {
+      "name": "same result partialreceipts lesspartialbasis",
+      "actual": "1185000",
+      "expected": "1185000",
+      "pass": true
+    },
+    {
+      "name": "fullholdingallowancegone",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "distribution exceedsquarter500000",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "distribution exceedsquarter50000001/100",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "personalsharethreshold99/100",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "personalsharethreshold1",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "coveredyears6",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "coveredyears7",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "extendedincome16500",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "extendedincome16501",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "absoluteincomeinterest62000",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "absoluteincomeinterest62001",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "end10yearsafter2026",
+      "actual": "2036",
+      "expected": "2036",
+      "pass": true
+    },
+    {
+      "name": "netcostpartialsale10k",
+      "actual": "6000",
+      "expected": "6000",
+      "pass": true
+    },
+    {
+      "name": "two thirds escape equality",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "below2thirds noescape",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    }
+  ],
+  "scope": "Original hypothetical narrative recomputed, not a printed full exit-tax liability example; no original oa blocks. Actual date/amount/personal gates, recent free-transfer exception pendingDE-R11."
+}

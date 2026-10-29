@@ -1,0 +1,275 @@
+{
+  "status": "Writer successors, different independent review pending",
+  "artifacts": [
+    {
+      "path": "R11-options-and-selection.md",
+      "sha256": "ed8f9665419a8c899b981e7d40fc900f7875bd8b268ceee93b195bfe842cad6b",
+      "bytes": 1592
+    },
+    {
+      "path": "R11-writer-script.py",
+      "sha256": "f7c7957e53da3e1c7b39805ccfb305bfc7b5fc3e607ea33b4003877e0be1f06d",
+      "bytes": 8492
+    },
+    {
+      "path": "R12-R13-options-and-selection.md",
+      "sha256": "2c5d5c25038f4c6f2d6e69961db5d659c95c71cad116e79336a37d24853011bb",
+      "bytes": 1545
+    },
+    {
+      "path": "R12-R13-writer-script.py",
+      "sha256": "fb11300dd0fda2165b1062b8255b42786a4d031ea1821ce447ff1420ac5aa8f6",
+      "bytes": 9534
+    },
+    {
+      "path": "R14-R15-options-and-selection.md",
+      "sha256": "0e1589f68193c197f38351e9df72221bdf6a223d64125828f182adc2f26fc3be",
+      "bytes": 1678
+    },
+    {
+      "path": "R14-R15-writer-script.py",
+      "sha256": "2be0a947829a68dda71a5be1eb7f2938bf295eba9c07d5e1d7dd07d6c6b99e82",
+      "bytes": 7588
+    },
+    {
+      "path": "R16-options-and-selection.md",
+      "sha256": "111df83858f7b094f0f71d0852a9118d39bed53f1ff5973c86cd8bc1b1aae23c",
+      "bytes": 917
+    },
+    {
+      "path": "R16-writer-script.py",
+      "sha256": "e6ad964ea1d3b9e9650595027d98dd0aa4217760542d72d17dab5c0449eb4e1c",
+      "bytes": 4336
+    },
+    {
+      "path": "R17-actual-selected-reading.json",
+      "sha256": "19afe19cf7f57aeff5a82cecd5ddd84d759b061339cac3bc047fbf7358ef4f33",
+      "bytes": 38516
+    },
+    {
+      "path": "R17-component-reading.md",
+      "sha256": "76e8719eaab7a8c89bdba9b612c81a480c70e969c3f288c37a1f68e320733f22",
+      "bytes": 50000
+    },
+    {
+      "path": "R17-components.py",
+      "sha256": "73367a8ffe1c945420780da4cd3cc71e5aae2e5b8c62b34d5ad950db5d06f1b3",
+      "bytes": 4269
+    },
+    {
+      "path": "R17-grouped-unit-assessment.json",
+      "sha256": "942799c38fbd7794333b25cc03d007de0c14587a0679a34b5a34793c175c1553",
+      "bytes": 83995
+    },
+    {
+      "path": "R17-options-and-selection.md",
+      "sha256": "6819756e1c15968b328afd21bc2c47a084038cf1e271963fa33c62a42096b012",
+      "bytes": 1017
+    },
+    {
+      "path": "after/de-corporate-tax.md",
+      "sha256": "926723924c9092e0ab651796b78a84164ee10a5ea92015fa1c5a98afeebf4378",
+      "bytes": 42561
+    },
+    {
+      "path": "after/de-einkommensteuer-freelancer.md",
+      "sha256": "424a96380e879606f6e7b35211b32c99290361c805ad19c7b6c24babd84a9d19",
+      "bytes": 40915
+    },
+    {
+      "path": "after/de-trade-tax.md",
+      "sha256": "41138a1e3f25dd1bbcd831ffa2110a80edf06d021505c5ae84794380ef07e953",
+      "bytes": 42917
+    },
+    {
+      "path": "after/leaving-germany-exit-tax.md",
+      "sha256": "af2fa313362b1a41d77c68ca1454e8fdb87290b6c96ccabc533ac154d2b4689d",
+      "bytes": 26518
+    },
+    {
+      "path": "before/de-corporate-tax.md",
+      "sha256": "c784531df91701c4a7e70a217c06eb7e11587bbf0c7a8dfe9fe1c8429c94e195",
+      "bytes": 42297
+    },
+    {
+      "path": "before/de-einkommensteuer-freelancer.md",
+      "sha256": "fa101a2a0e450dcd0481d440b5aa5d647c8dab2bf3d9c95dd809dc5989507aa2",
+      "bytes": 40291
+    },
+    {
+      "path": "before/de-trade-tax.md",
+      "sha256": "7ba930a0417d470d9fe2baaeb87ef835891383270ce931a4377535380bac6e56",
+      "bytes": 40351
+    },
+    {
+      "path": "before/leaving-germany-exit-tax.md",
+      "sha256": "07a1281e07643bd5beee21a7c190692b5205f287f0b01662cf4478f28cadc100",
+      "bytes": 24926
+    },
+    {
+      "path": "build_ledgers.py",
+      "sha256": "df97f6040ccd71077601d70531dd1b17fb4a64c5f9d10aeff898cfc81bf0389c",
+      "bytes": 10389
+    },
+    {
+      "path": "check_and_seal.py",
+      "sha256": "c2da63c8a8428743a64b7f41a92a79e10dc80f0b54010c6153e9298e3a169509",
+      "bytes": 13469
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "a17695c92397df16c26ab5510deb53333089902ebd0ca683c66135a6eed31ebf",
+      "bytes": 39932
+    },
+    {
+      "path": "ledgers/de-corporate-tax.md",
+      "sha256": "f87125b4aed3972529c99ea72b0f2a1c09c9917db830b2c60b56dae0e2fb5859",
+      "bytes": 378361
+    },
+    {
+      "path": "ledgers/de-einkommensteuer-freelancer.md",
+      "sha256": "313a3e33037fcad6822dbf5df4b6f4071efe07a88b47dc89622bfe25bdcc0f1d",
+      "bytes": 169021
+    },
+    {
+      "path": "ledgers/de-trade-tax.md",
+      "sha256": "7e2c5b77e2bd393690fe4ac3c1bdfdeb0585bcd238adc51c2b357ce071bcabc0",
+      "bytes": 139213
+    },
+    {
+      "path": "ledgers/leaving-germany-exit-tax.md",
+      "sha256": "e2c6e7382ebe53e66822c927f2c85ea1d7a88fda49e3780bae701e76b042a2be",
+      "bytes": 89365
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "59090d3d826749ec8d8f63a82265b49915b1ed35f75698cb53b57fcb91c18804",
+      "bytes": 26457
+    },
+    {
+      "path": "preservation-proof.json",
+      "sha256": "a257824cc5698ce55fd20410b09d02b50374764cdfca706adf71373a08c1d011",
+      "bytes": 2829
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "db9a15f4f3b239700e0be3987ff4ea698b27554535c0ec5c3dd28211846ed9d6",
+      "bytes": 76945
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "1edff50ce459a46ecf277c345198d699de1c6b51f891b9bdff73492acde79c59",
+      "bytes": 48562
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "baa1476723e1d8bf119910c1fb35df12e8e601aa5d26fe0c517fa47a0c4e5013",
+      "bytes": 3664
+    },
+    {
+      "path": "support/R17-before-old-topic-map.json",
+      "sha256": "374aa7134f1512a0d08456d2775e8807c20f4b1b680e81fe7f3067a03d0e8293",
+      "bytes": 125112
+    },
+    {
+      "path": "support/de-corporate-tax/old-topic-destinations.json",
+      "sha256": "5af7cef299e360cd0034e8d1262d94042bcf074ebf0a485a10f69e0ecf5a0e15",
+      "bytes": 131199
+    },
+    {
+      "path": "support/de-corporate-tax/rows.json",
+      "sha256": "6ab87505eefb741ec598c2b15516f25ee97b73daaefa67ce28e4b337f9e787dd",
+      "bytes": 157983
+    },
+    {
+      "path": "support/de-corporate-tax.diff",
+      "sha256": "f992b17005c6a03dcc07754203d3ec19d13683064a73c3a5d2424923a322126b",
+      "bytes": 3857
+    },
+    {
+      "path": "support/de-corporate-tax.line-map.json",
+      "sha256": "c57467d0a2cb3ec03054acfd9fb0688c9080a34280750e7c2c500171a8a2cd1d",
+      "bytes": 29399
+    },
+    {
+      "path": "support/de-einkommensteuer-freelancer/old-topic-destinations.json",
+      "sha256": "b95341fb1f33de40ec7058b604296d114a6ad5e891ee0bec7e5511f0f1699bce",
+      "bytes": 210113
+    },
+    {
+      "path": "support/de-einkommensteuer-freelancer/rows.json",
+      "sha256": "34067e9a64f4bcb1c96a900485845c1947ae38fb5b8a19cc863df220ec366805",
+      "bytes": 89345
+    },
+    {
+      "path": "support/de-einkommensteuer-freelancer.diff",
+      "sha256": "d4ef4096abd7c0a2d3a882c8d0cd583ddbcf34dbed712cb04df5c3217d44cbc4",
+      "bytes": 4249
+    },
+    {
+      "path": "support/de-einkommensteuer-freelancer.line-map.json",
+      "sha256": "980893cada9066756bd470925ab432525ef0d960032d1462ef10a7f9e042a0ea",
+      "bytes": 33740
+    },
+    {
+      "path": "support/de-trade-tax/old-topic-destinations.json",
+      "sha256": "e9d311d3d18c9207b438096ae2b750c3eab0104c134f3b3f2e9d7b9e2f222c9a",
+      "bytes": 105194
+    },
+    {
+      "path": "support/de-trade-tax/rows.json",
+      "sha256": "90661f23a6f74ca5f2736b7072a98940d14465bcd6724f077af8d5128a731b4e",
+      "bytes": 75775
+    },
+    {
+      "path": "support/de-trade-tax.diff",
+      "sha256": "18f40117e7d5e5da221ed9a3944f2b81a9f8ce033392054899452215ccfb0176",
+      "bytes": 11464
+    },
+    {
+      "path": "support/de-trade-tax.line-map.json",
+      "sha256": "44f71ba788878e3690c2be13497412eb372feefceccbbf2ee6499ea188ffbed0",
+      "bytes": 29047
+    },
+    {
+      "path": "support/exit.diff",
+      "sha256": "50759d8acb8a39c11a2df93099b6caa1696ddd1cad648a338477d97e9819fa42",
+      "bytes": 7829
+    },
+    {
+      "path": "support/leaving-germany-exit-tax/old-topic-destinations.json",
+      "sha256": "80d67b19ed305402adb0156b0a432823134c7f9f93161f24857b59a919f4bdb9",
+      "bytes": 60424
+    },
+    {
+      "path": "support/leaving-germany-exit-tax/rows.json",
+      "sha256": "a5d2f45c98af84268c0942722f183d8d1a4b0c80ddd01d57ba802b9ab776fa07",
+      "bytes": 69276
+    },
+    {
+      "path": "support/leaving-germany-exit-tax.diff",
+      "sha256": "50759d8acb8a39c11a2df93099b6caa1696ddd1cad648a338477d97e9819fa42",
+      "bytes": 7829
+    },
+    {
+      "path": "support/leaving-germany-exit-tax.line-map.json",
+      "sha256": "1a4cde156c1a713a7dfe60fe71861daab1407312a512ed38df6e5755180105dd",
+      "bytes": 19741
+    },
+    {
+      "path": "support/ledger-build-summary.json",
+      "sha256": "baa1476723e1d8bf119910c1fb35df12e8e601aa5d26fe0c517fa47a0c4e5013",
+      "bytes": 3664
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "078b12491884334cc5405677fd99f6f4bf9f895f577549f4b749db8f1d2b93df",
+      "bytes": 13553
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "c9c7245222fcc11c739a705c3130721d68b1b4debc5476dd29465c54c887f0cb",
+      "bytes": 3024
+    }
+  ]
+}

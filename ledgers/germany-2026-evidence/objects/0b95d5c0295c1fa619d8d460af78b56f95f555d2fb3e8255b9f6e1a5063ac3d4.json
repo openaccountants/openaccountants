@@ -1,0 +1,176 @@
+{
+  "successor_folder": "germany-DE-R109-R111-rental-writer-successor-2026-10-29",
+  "manifest_members_rehashed": 19,
+  "pairs": [
+    {
+      "pair": {
+        "slug": "de-rental-income",
+        "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-rental-income.md",
+        "Guide_sha256": "6f97644830c828129f0e7343809d7d42022297e444ff4e840a2f35594f36715e",
+        "Guide_bytes": 51133,
+        "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R109-R111-rental-writer-successor-2026-10-29/ledgers/de-rental-income.md",
+        "ledger_sha256": "2302bb3ddb1e1197523d20d77c817624b8134644cc77ddce1eae4628f537a838",
+        "rows": 290,
+        "prior_rows": 289,
+        "old_origins": 550,
+        "own_selected_quotes": 6,
+        "ops": 8
+      },
+      "before_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e",
+      "operations": 8,
+      "full_inverse": true,
+      "all_native_current_rows": 290,
+      "original_oa_byteexact": 2,
+      "protected_metadata_CTA_oldURLorder": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "R17",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB122.txt",
+      "raw_sha256": "e6fbfc4dfb0657c489fb402cc40e70ac305b106ff21982a7dd01e946717e0868",
+      "reader_sha256": "93c4af46c9c000e6716bf5759b4124f8e4b9c5b725605f23c740e6edb5394356",
+      "native_LF": [
+        15,
+        15
+      ],
+      "quote_sha256": "100c96e5fb4188a1e6bcc776b7583ecf3ef6b109e106a60a9bd7bc6c6ee21c75",
+      "exact_prior_read_bridge": [
+        "DE-R109-R111-selected-source-read-ledger.json"
+      ]
+    },
+    {
+      "id": "R34",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+      "raw_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+      "reader_sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+      "native_LF": [
+        2580,
+        2587
+      ],
+      "quote_sha256": "1f23f0e92aed2214ff2a1c54fda82f02a084082809a05f410ce999ddc875a110",
+      "exact_prior_read_bridge": [
+        "DE-R109-R111-selected-source-read-ledger.json"
+      ]
+    },
+    {
+      "id": "R42",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+      "raw_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+      "reader_sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+      "native_LF": [
+        2737,
+        2744
+      ],
+      "quote_sha256": "e5c1607013d84f29bcf65e0342a393f35c7c0fb71b75bc6d24970100391c3faa",
+      "exact_prior_read_bridge": [
+        "DE-R109-R111-selected-source-read-ledger.json"
+      ]
+    },
+    {
+      "id": "R89",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB212.txt",
+      "raw_sha256": "783f9ff673b948361845c2446bcfc6ce6f93cc57c35a804f747b490155ac13cb",
+      "reader_sha256": "29a3d4613e39ceb1bd54754c59faacc60b46507cd900f9d359c549ce56261e72",
+      "native_LF": [
+        266,
+        275
+      ],
+      "quote_sha256": "a31bf6fc963d26fb311a4831ce210f18899c836a67e678f07a971e2a89c9aa19",
+      "exact_prior_read_bridge": [
+        "DE-R109-R111-selected-source-read-ledger.json"
+      ]
+    },
+    {
+      "id": "R92",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB212.txt",
+      "raw_sha256": "783f9ff673b948361845c2446bcfc6ce6f93cc57c35a804f747b490155ac13cb",
+      "reader_sha256": "29a3d4613e39ceb1bd54754c59faacc60b46507cd900f9d359c549ce56261e72",
+      "native_LF": [
+        727,
+        732
+      ],
+      "quote_sha256": "2a5a62663db6a030bf4ae58904fd94a6c014f57f035c7850791eaa342c840c8b",
+      "exact_prior_read_bridge": [
+        "DE-R109-R111-selected-source-read-ledger.json"
+      ]
+    },
+    {
+      "id": "R120",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+      "raw_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+      "reader_sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+      "native_LF": [
+        2504,
+        2520
+      ],
+      "quote_sha256": "b7f3fa3f53aa4452c3e7194bca9726b519ab5632d1456d5fa478fcec1e2ed32e",
+      "exact_prior_read_bridge": [
+        "DE-R109-R111-selected-source-read-ledger.json"
+      ]
+    }
+  ],
+  "status": "PASS exact bounded R109\u2013111 successor, no countrycompleteness claim.",
+  "actual_delta_reading": "All8 actual operations read in full. Six entire own quotations bridge to actually read frozen rental source IDsR17/R34/R42/R89/R92/R120 with identical raw/reader/quote identities; actual2025 instruction versus olderBMFpositive wording expressly retained.",
+  "all_original550_old_identity_records_exact": true,
+  "bothoriginaloa_andwholeworkedsection_byteexact": true,
+  "new_original_illustration_scope": "Postfour follow-on added outside originalworkedsection; exactJanuaryfull-year facts, mathematical remaining life and displayrounding only, not actual assessmentrounding. Mixedroom20%isdocumentedfixture not universalfloorarea mandate.",
+  "independent_controls": [
+    {
+      "name": "noforecastlosszero",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "negativeforecastrequirescut",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "fourfullyearscombined",
+      "actual": "112000",
+      "expected": "112000"
+    },
+    {
+      "name": "remaining",
+      "actual": "288000",
+      "expected": "288000"
+    },
+    {
+      "name": "remainingmathematicallife",
+      "actual": "88/3",
+      "expected": "88/3"
+    },
+    {
+      "name": "postfourunrounded",
+      "actual": "108000/11",
+      "expected": "108000/11"
+    },
+    {
+      "name": "postfourdisplay",
+      "actual": "490909/50",
+      "expected": "490909/50"
+    },
+    {
+      "name": "5aresidual5percent",
+      "actual": "14400",
+      "expected": "14400"
+    },
+    {
+      "name": "rentedroomdirectshared",
+      "actual": "3000",
+      "expected": "3000"
+    },
+    {
+      "name": "privateshareexcluded",
+      "actual": "8000",
+      "expected": "8000"
+    },
+    {
+      "name": "oldsunsetdoesnotshorten4yearperiod",
+      "actual": "2028",
+      "expected": "2028"
+    }
+  ],
+  "reviewer_adapter_failures": "Generic checker first expected bytes instead of Guide_bytes, then per-slug rows instead of root rental support/current-rule-rows. Correct actual schemas inspected; no source/Guide edits or failed legal check concealed."
+}

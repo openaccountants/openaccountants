@@ -1,0 +1,51 @@
+{
+  "writer_only": true,
+  "no_independent_PASS": true,
+  "control_count": 53,
+  "own_selected_source_anchor_count": 28,
+  "examples": {
+    "de-income-tax": {
+      "original_blocks": 2,
+      "failures": []
+    },
+    "de-self-employed-income-tax": {
+      "original_blocks": 2,
+      "failures": []
+    },
+    "de-einkommensteuer-freelancer": {
+      "original_blocks": 3,
+      "failures": []
+    },
+    "de-employee-income-tax": {
+      "original_blocks": 2,
+      "failures": []
+    },
+    "de-partners-and-part-year": {
+      "original_blocks": 2,
+      "failures": []
+    },
+    "de-trade-tax": {
+      "original_blocks": 2,
+      "failures": []
+    },
+    "de-corporate-tax": {
+      "original_blocks": 2,
+      "failures": []
+    }
+  },
+  "original_block_count": 15,
+  "canonical_scoped_schema": {
+    "files": 7,
+    "errors": [],
+    "warnings": [],
+    "stdout": "checked 7 guides (0 non-guide .md files skipped)\n"
+  },
+  "scoped_diff_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "all_original_current_rows_rebound": true,
+  "all_current_row_wording_native_exact": true,
+  "all_successor_current_Guide_ledger_hashes_match": true
+}

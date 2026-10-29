@@ -1,0 +1,117 @@
+[
+  {
+    "label": "dividend tax",
+    "actual": "2500",
+    "expected": "2500"
+  },
+  {
+    "label": "dividend surcharge",
+    "actual": "275/2",
+    "expected": "275/2"
+  },
+  {
+    "label": "withheld",
+    "actual": "5275/2",
+    "expected": "5275/2"
+  },
+  {
+    "label": "AT15percent",
+    "actual": "1500",
+    "expected": "1500"
+  },
+  {
+    "label": "ATrefund",
+    "actual": "2275/2",
+    "expected": "2275/2"
+  },
+  {
+    "label": "refundpercent",
+    "actual": "91/8",
+    "expected": "91/8"
+  },
+  {
+    "label": "royalty",
+    "actual": "30000",
+    "expected": "30000"
+  },
+  {
+    "label": "royaltysoli",
+    "actual": "1650",
+    "expected": "1650"
+  },
+  {
+    "label": "royaltytotal",
+    "actual": "31650",
+    "expected": "31650"
+  },
+  {
+    "label": "Czechcap",
+    "actual": "10000",
+    "expected": "10000"
+  },
+  {
+    "label": "holdingmargin",
+    "actual": "5",
+    "expected": "5"
+  },
+  {
+    "label": "eligible50gzero",
+    "actual": "0",
+    "expected": "0"
+  },
+  {
+    "label": "refundifwithheld",
+    "actual": "31650",
+    "expected": "31650"
+  },
+  {
+    "label": "savingvstreaty",
+    "actual": "10000",
+    "expected": "10000"
+  },
+  {
+    "label": "companyrefundKap",
+    "actual": "1000",
+    "expected": "1000"
+  },
+  {
+    "label": "companyrefundSoli",
+    "actual": "55",
+    "expected": "55"
+  },
+  {
+    "label": "smallroyaltylimit",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "smallroyaltyoneeuroover",
+    "actual": "False",
+    "expected": "False"
+  },
+  {
+    "label": "ATgeneralvscompany15and5",
+    "actual": "1000",
+    "expected": "1000"
+  },
+  {
+    "label": "US80votesvs10voteshigherthreshold",
+    "actual": "70",
+    "expected": "70"
+  },
+  {
+    "label": "daywindowlength45eachside",
+    "actual": "90",
+    "expected": "90"
+  },
+  {
+    "label": "oneyearexception18monthholding",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "smallroyaltyreturnstillrequired",
+    "actual": "True",
+    "expected": "True"
+  }
+]

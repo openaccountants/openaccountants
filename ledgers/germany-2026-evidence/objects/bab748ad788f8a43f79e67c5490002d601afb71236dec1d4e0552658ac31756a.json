@@ -1,0 +1,246 @@
+{
+  "count": 40,
+  "controls": [
+    {
+      "name": "example1 prepayments",
+      "actual": "8250",
+      "expected": "8250",
+      "pass": true
+    },
+    {
+      "name": "example1 annual output",
+      "actual": "39900",
+      "expected": "39900",
+      "pass": true
+    },
+    {
+      "name": "example1 annualnet",
+      "actual": "10150",
+      "expected": "10150",
+      "pass": true
+    },
+    {
+      "name": "example1 closing",
+      "actual": "1900",
+      "expected": "1900",
+      "pass": true
+    },
+    {
+      "name": "example1 paymentpenalty",
+      "actual": "38",
+      "expected": "38",
+      "pass": true
+    },
+    {
+      "name": "example1 filingmonthlyminimum",
+      "actual": "25",
+      "expected": "25",
+      "pass": true
+    },
+    {
+      "name": "example1 three months",
+      "actual": "75",
+      "expected": "75",
+      "pass": true
+    },
+    {
+      "name": "example2 excessprev25k",
+      "actual": "6200",
+      "expected": "6200",
+      "pass": true
+    },
+    {
+      "name": "example2 cashheadroom",
+      "actual": "768800",
+      "expected": "768800",
+      "pass": true
+    },
+    {
+      "name": "example2 net2026",
+      "actual": "7500",
+      "expected": "7500",
+      "pass": true
+    },
+    {
+      "name": "example2 output2026",
+      "actual": "1425",
+      "expected": "1425",
+      "pass": true
+    },
+    {
+      "name": "example2 oldsuppliedjob exempt",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "example2 advance exact",
+      "actual": "38000/119",
+      "expected": "38000/119",
+      "pass": true
+    },
+    {
+      "name": "example2 closing roundedcents",
+      "actual": "1364.33",
+      "expected": "1364.33",
+      "pass": true
+    },
+    {
+      "name": "KU priorequality25000",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "KU prior25000.01fails",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "KU current100000equality",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "KU currentcrossingentiresupply",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "newbusiness25000not100000",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "adv9000quarterlydefault",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "adv9000.01monthly",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "release2000inclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "specialprepayment11k",
+      "actual": "1000",
+      "expected": "1000",
+      "pass": true
+    },
+    {
+      "name": "partialyear3months11k annualizedspecial",
+      "actual": "4000",
+      "expected": "4000",
+      "pass": true
+    },
+    {
+      "name": "input1000inclusive noadjust",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "input1000.01outside",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "change10pp outside less10",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "change9pp 10000input onefifth180",
+      "actual": "180",
+      "expected": "180",
+      "pass": true
+    },
+    {
+      "name": "change9pp 100000input override1800",
+      "actual": "1800",
+      "expected": "1800",
+      "pass": true
+    },
+    {
+      "name": "annual6000inclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "RC5000inclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "RC4999.99fails",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "EUdistance10000notcross",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "R23priorGerman30000fails",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "31July2027Saturday",
+      "actual": "5",
+      "expected": "5",
+      "pass": true
+    },
+    {
+      "name": "2August2027Monday",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "29February2028Tuesday",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "name": "14June2027Monday",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "10April2026Friday",
+      "actual": "4",
+      "expected": "4",
+      "pass": true
+    },
+    {
+      "name": "31January2027Sunday",
+      "actual": "6",
+      "expected": "6",
+      "pass": true
+    }
+  ],
+  "scope": "Both original executable examples plus threshold/date/input-correction separators. OSS weekend explicitly remains an existing question; no invented extension."
+}

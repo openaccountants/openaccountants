@@ -1,0 +1,14 @@
+{
+  "id": "KOSIT_BUNDLE_README",
+  "url": "https://projekte.kosit.org/api/v4/projects/356/packages/maven/de/xeinkauf/xrechnung-3.0.2-bundle/2026-08-31/xrechnung-3.0.2-bundle-2026-08-31.zip",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_BUNDLE_README.member.body",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_BUNDLE_README.reader.txt",
+  "raw_sha256": "ac837f0b0274c759829d85d183615f24c3143926611be5c672e41aa0a85a6f11",
+  "reader_sha256": "0188924248b12a6c81bad2d050532eccb679fd40fbed3870ca1e325b709a9d09",
+  "official_bundle_sha256": "5f5426741a03e0b9abc7de83acd97309c09498241d132fc035f9c830be7203de",
+  "member_path": "README.md",
+  "inner_zip_path": "",
+  "inner_zip_sha256": null,
+  "extraction": "Exact ZIP member bytes as raw; derived UTF-8 LF reader, no XML tag stripping",
+  "scope": "Selected member acquisition only; actual native-LF reads recorded separately"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "U765fe003a1a24fad",
+  "url": "https://www.estv.admin.ch/de/verrechnungssteuer",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U765fe003a1a24fad.body",
+  "raw_sha256": "e081d3799c1803477ac7924f295e7111b5f20b98e41956f0161818318ec2c749",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U765fe003a1a24fad.reader.txt",
+  "reader_sha256": "2cb20b7ba0d81c854b182ff92c0107ccf36bc50aa417edd85b41bc76a9ec4a3f",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

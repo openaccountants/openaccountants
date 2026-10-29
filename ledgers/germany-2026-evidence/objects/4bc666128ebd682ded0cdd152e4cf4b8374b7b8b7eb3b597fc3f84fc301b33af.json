@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "de-capital-gains",
+    "before_sha256": "8739e06c7291dafc25004de547c97ec9e90f6d11bb8d432444be7fb2805b851b",
+    "after_sha256": "f885debb400b79ed4af848415fa8c82e5e9e59bcd2df1f433a11091d5853b8f9",
+    "delta": "One additional actually-read AO149(4) source anchor in existing call-in row; no Guide or law claim change."
+  },
+  {
+    "slug": "de-trade-tax",
+    "before_sha256": "fff177694603b6ecf4fb70f7a994838d6d014fdf9ea6b7b1aaf493825098403e",
+    "after_sha256": "a57cd70d8495d767b1be6bc19a9715aac3b17c8b8a2aaeb0cc9972fcbde16eed",
+    "delta": "One additional actually-read AO149(4) source anchor in existing call-in row; no Guide or law claim change."
+  }
+]

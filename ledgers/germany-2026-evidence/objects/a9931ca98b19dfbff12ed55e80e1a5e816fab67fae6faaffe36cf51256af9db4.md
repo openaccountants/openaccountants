@@ -1,0 +1,5 @@
+# Bounded acquisition history
+
+Default sandbox urllib retrieval of BGBl. I 2026 no.228 first failed DNS (`nodename nor servname provided, or not known`). The web-tool PDF route then returned403; its actual tool response is retained. Read-only network escalation retrieved the actual PDF successfully,733,897 bytes, with verified TLS. `BStabG2026.receipt.json` pins it; actual selected enacted paragraphs are quoted separately. The failures establish no legal proposition. BMG's two official pages were then retained via verified-TLS urllib, with separate raw/derived-reader identities. No paid API, model change, client/private case, credential or remote mutation was used.
+
+`prepare_*.py` files record the original preparation steps and selected ranges; do not rerun preparation against an applied worktree because the exact preimages are already pinned. The canonical idempotent Guide application is `apply_repairs.py` using `exact-operations.json`; `build_successor_ledgers.py` and `check_repairs.py` reproduce the ledger/check successors from those pinned inputs. No prior sealed writer bundle or country freeze is overwritten.

@@ -1,0 +1,56 @@
+§ 15 UStG - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Umsatzsteuergesetz (UStG)
+§ 15 Vorsteuerabzug
+(1) Der Unternehmer kann die folgenden Vorsteuerbeträge abziehen: 1.
+die gesetzlich geschuldete Steuer für Lieferungen und sonstige Leistungen, die von einem anderen Unternehmer für sein Unternehmen ausgeführt worden sind. Die Ausübung des Vorsteuerabzugs setzt voraus, dass der Unternehmer eine nach den §§ 14, 14a ausgestellte Rechnung besitzt. Soweit der gesondert ausgewiesene Steuerbetrag auf eine Zahlung vor Ausführung dieser Umsätze entfällt, ist er bereits abziehbar, wenn die Rechnung vorliegt und die Zahlung geleistet worden ist;
+2.
+die entstandene Einfuhrumsatzsteuer für Gegenstände, die für sein Unternehmen nach § 1 Absatz 1 Nummer 4 eingeführt worden sind;
+3.
+die Steuer für den innergemeinschaftlichen Erwerb von Gegenständen für sein Unternehmen, wenn der innergemeinschaftliche Erwerb nach § 3d Satz 1 im Inland bewirkt wird;
+4.
+die Steuer für Leistungen im Sinne des § 13b Absatz 1 und 2, die für sein Unternehmen ausgeführt worden sind. Soweit die Steuer auf eine Zahlung vor Ausführung dieser Leistungen entfällt, ist sie abziehbar, wenn die Zahlung geleistet worden ist.
+Nicht als für das Unternehmen ausgeführt gilt die Lieferung, die Einfuhr oder der innergemeinschaftliche Erwerb eines Gegenstands, den der Unternehmer zu weniger als 10 Prozent für sein Unternehmen nutzt.
+(1a) Nicht abziehbar sind Vorsteuerbeträge, die auf Aufwendungen, für die das Abzugsverbot des § 4 Abs. 5 Satz 1 Nr. 1 bis 4, 7 oder des § 12 Nr. 1 des Einkommensteuergesetzes gilt, entfallen. Dies gilt nicht für Bewirtungsaufwendungen, soweit § 4 Abs. 5 Satz 1 Nr. 2 des Einkommensteuergesetzes einen Abzug angemessener und nachgewiesener Aufwendungen ausschließt.
+(1b) Verwendet der Unternehmer ein Grundstück sowohl für Zwecke seines Unternehmens als auch für Zwecke, die außerhalb des Unternehmens liegen, oder für den privaten Bedarf seines Personals, ist die Steuer für die Lieferungen, die Einfuhr und den innergemeinschaftlichen Erwerb sowie für die sonstigen Leistungen im Zusammenhang mit diesem Grundstück vom Vorsteuerabzug ausgeschlossen, soweit sie nicht auf die Verwendung des Grundstücks für Zwecke des Unternehmens entfällt. Bei Berechtigungen, für die die Vorschriften des bürgerlichen Rechts über Grundstücke gelten, und bei Gebäuden auf fremdem Grund und Boden ist Satz 1 entsprechend anzuwenden.
+(2) Vom Vorsteuerabzug ausgeschlossen ist die Steuer für die Lieferungen, die Einfuhr und den innergemeinschaftlichen Erwerb von Gegenständen sowie für die sonstigen Leistungen, die der Unternehmer zur Ausführung folgender Umsätze verwendet: 1.
+steuerfreie Umsätze;
+2.
+Umsätze im Ausland, die steuerfrei wären, wenn sie im Inland ausgeführt würden;
+3.
+Umsätze im übrigen Gemeinschaftsgebiet, die auf Grund der Sonderregelung für Kleinunternehmer des jeweiligen Mitgliedstaates steuerfrei sind.
+Gegenstände oder sonstige Leistungen, die der Unternehmer zur Ausführung einer Einfuhr oder eines innergemeinschaftlichen Erwerbs verwendet, sind den Umsätzen zuzuordnen, für die der eingeführte oder innergemeinschaftlich erworbene Gegenstand verwendet wird.
+(3) Der Ausschluss vom Vorsteuerabzug nach Absatz 2 tritt nicht ein, wenn die Umsätze 1.
+in den Fällen des Absatzes 2 Satz 1 Nr. 1a)
+nach § 4 Nr. 1 bis 7, § 25 Abs. 2 oder nach den in § 26 Abs. 5 bezeichneten Vorschriften steuerfrei sind oder
+b)
+nach § 4 Nummer 8 Buchstabe a bis g, Nummer 10 oder Nummer 11 steuerfrei sind und sich unmittelbar auf Gegenstände beziehen, die in das Drittlandsgebiet ausgeführt werden;
+2.
+in den Fällen des Absatzes 2 Satz 1 Nr. 2a)
+nach § 4 Nr. 1 bis 7, § 25 Abs. 2 oder nach den in § 26 Abs. 5 bezeichneten Vorschriften steuerfrei wären oder
+b)
+nach § 4 Nummer 8 Buchstabe a bis g, Nummer 10 oder Nummer 11 steuerfrei wären und der Leistungsempfänger im Drittlandsgebiet ansässig ist oder diese Umsätze sich unmittelbar auf Gegenstände beziehen, die in das Drittlandsgebiet ausgeführt werden.
+Satz 1 gilt nicht für Umsätze, die auch unter Absatz 2 Satz 1 Nummer 3 oder § 19 fallen.
+(4) Verwendet der Unternehmer einen für sein Unternehmen gelieferten, eingeführten oder innergemeinschaftlich erworbenen Gegenstand oder eine von ihm in Anspruch genommene sonstige Leistung nur zum Teil zur Ausführung von Umsätzen, die den Vorsteuerabzug ausschließen, so ist der Teil der jeweiligen Vorsteuerbeträge nicht abziehbar, der den zum Ausschluss vom Vorsteuerabzug führenden Umsätzen wirtschaftlich zuzuordnen ist. Der Unternehmer kann die nicht abziehbaren Teilbeträge im Wege einer sachgerechten Schätzung ermitteln. Eine Ermittlung des nicht abziehbaren Teils der Vorsteuerbeträge nach dem Verhältnis der Umsätze, die den Vorsteuerabzug ausschließen, zu den Gesamtumsätzen ist nur zulässig, wenn keine andere, präzisere wirtschaftliche Zuordnung möglich ist. Für Grundstücke ist dabei eine Aufteilung nach dem Verhältnis der Nutzflächen vorzunehmen, es sei denn, eine andere Methode führt zu einer demgegenüber präziseren wirtschaftlichen Zuordnung. In den Fällen des Absatzes 1b gelten die Sätze 1 bis 4 entsprechend.
+(4a) Für Fahrzeuglieferer (§ 2a) gelten folgende Einschränkungen des Vorsteuerabzugs: 1.
+Abziehbar ist nur die auf die Lieferung, die Einfuhr oder den innergemeinschaftlichen Erwerb des neuen Fahrzeugs entfallende Steuer.
+2.
+Die Steuer kann nur bis zu dem Betrag abgezogen werden, der für die Lieferung des neuen Fahrzeugs geschuldet würde, wenn die Lieferung nicht steuerfrei wäre.
+3.
+Die Steuer kann erst in dem Zeitpunkt abgezogen werden, in dem der Fahrzeuglieferer die innergemeinschaftliche Lieferung des neuen Fahrzeugs ausführt.
+(4b) Für Unternehmer, die nicht im Gemeinschaftsgebiet ansässig sind und die nur Steuer nach § 13b Absatz 5, nur Steuer nach § 13b Absatz 5 und § 13a Absatz 1 Nummer 1 in Verbindung mit § 14c Absatz 1 oder nur Steuer nach § 13b Absatz 5 und § 13a Absatz 1 Nummer 4 schulden, gelten die Einschränkungen des § 18 Absatz 9 Satz 5 und 6 entsprechend.
+(5) Das Bundesministerium der Finanzen kann mit Zustimmung des Bundesrates durch Rechtsverordnung nähere Bestimmungen darüber treffen, 1.
+in welchen Fällen und unter welchen Voraussetzungen zur Vereinfachung des Besteuerungsverfahrens für den Vorsteuerabzug auf eine Rechnung im Sinne des § 14 oder auf einzelne Angaben in der Rechnung verzichtet werden kann,
+2.
+unter welchen Voraussetzungen, für welchen Besteuerungszeitraum und in welchem Umfang zur Vereinfachung oder zur Vermeidung von Härten in den Fällen, in denen ein anderer als der Leistungsempfänger ein Entgelt gewährt (§ 10 Abs. 1 Satz 3), der andere den Vorsteuerabzug in Anspruch nehmen kann, und
+3.
+wann in Fällen von geringer steuerlicher Bedeutung zur Vereinfachung oder zur Vermeidung von Härten bei der Aufteilung der Vorsteuerbeträge (Absatz 4) Umsätze, die den Vorsteuerabzug ausschließen, unberücksichtigt bleiben können oder von der Zuordnung von Vorsteuerbeträgen zu diesen Umsätzen abgesehen werden kann.
+Fußnote
+(+++ § 15: Zur Anwendung vgl. § 27 +++)
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

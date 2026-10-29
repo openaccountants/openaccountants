@@ -1,0 +1,13 @@
+{
+  "slug": "de-non-resident-tax",
+  "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-non-resident-tax.md",
+  "Guide_sha256": "2240579d7a85e98bbc9f6994ccd0a9a2d99025d4f1fa8c6ed94b18c7e7a25174",
+  "bytes": 37995,
+  "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R18-R22-non-resident-writer-successor-2026-10-29/ledgers/de-non-resident-tax.md",
+  "ledger_sha256": "3ee8e1cb8adb832f2953b24c0d54ae44c99c6733c8947f72a40a487e59213349",
+  "current_rows": 207,
+  "prior_current_rows": 203,
+  "old_topics": 404,
+  "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/de-non-resident-tax.md",
+  "prior_ledger_sha256": "0d2f798a1e3fde4bf457e6621f65c9972b15864cbb1ed3e33f8a1b80041b1bdb"
+}

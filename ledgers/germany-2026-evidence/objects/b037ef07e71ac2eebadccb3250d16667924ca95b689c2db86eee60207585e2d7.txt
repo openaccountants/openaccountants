@@ -1,0 +1,42 @@
+§ 32a EStG - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Einkommensteuergesetz (EStG)
+§ 32a Einkommensteuertarif
+(1) 1Die tarifliche Einkommensteuer bemisst sich nach dem auf volle Euro abgerundeten zu versteuernden Einkommen. 2Sie beträgt ab dem Veranlagungszeitraum 2026 vorbehaltlich der §§ 32b, 32d, 34, 34a, 34b und 34c jeweils in Euro für zu versteuernde Einkommen 1.
+bis 12 348 Euro (Grundfreibetrag):
+0;
+2.
+von 12 349 Euro bis 17 799 Euro:
+(914,51 • y + 1 400) • y;
+3.
+von 17 800 Euro bis 69 878 Euro:
+(173,10 • z + 2 397) • z + 1 034,87;
+4.
+von 69 879 Euro bis 277 825 Euro:
+0,42 • x – 11 135,63;
+5.
+von 277 826 Euro an:
+0,45 • x – 19 470,38.
+3Die Größe „y“ ist ein Zehntausendstel des den Grundfreibetrag übersteigenden Teils des auf einen vollen Euro-Betrag abgerundeten zu versteuernden Einkommens. 4Die Größe „z“ ist ein Zehntausendstel des 17 799 Euro übersteigenden Teils des auf einen vollen Euro-Betrag abgerundeten zu versteuernden Einkommens. 5Die Größe „x“ ist das auf einen vollen Euro-Betrag abgerundete zu versteuernde Einkommen. 6Der sich ergebende Steuerbetrag ist auf den nächsten vollen Euro-Betrag abzurunden.
+(2) bis (4) (weggefallen)
+(5) Bei Ehegatten, die nach den §§ 26, 26b zusammen zur Einkommensteuer veranlagt werden, beträgt die tarifliche Einkommensteuer vorbehaltlich der §§ 32b, 32d, 34, 34a, 34b und 34c das Zweifache des Steuerbetrags, der sich für die Hälfte ihres gemeinsam zu versteuernden Einkommens nach Absatz 1 ergibt (Splitting-Verfahren).
+(6) 1Das Verfahren nach Absatz 5 ist auch anzuwenden zur Berechnung der tariflichen Einkommensteuer für das zu versteuernde Einkommen 1.
+bei einem verwitweten Steuerpflichtigen für den Veranlagungszeitraum, der dem Kalenderjahr folgt, in dem der Ehegatte verstorben ist, wenn der Steuerpflichtige und sein verstorbener Ehegatte im Zeitpunkt seines Todes die Voraussetzungen des § 26 Absatz 1 Satz 1 erfüllt haben,
+2.
+bei einem Steuerpflichtigen, dessen Ehe in dem Kalenderjahr, in dem er sein Einkommen bezogen hat, aufgelöst worden ist, wenn in diesem Kalenderjahr a)
+der Steuerpflichtige und sein bisheriger Ehegatte die Voraussetzungen des § 26 Absatz 1 Satz 1 erfüllt haben,
+b)
+der bisherige Ehegatte wieder geheiratet hat und
+c)
+der bisherige Ehegatte und dessen neuer Ehegatte ebenfalls die Voraussetzungen des § 26 Absatz 1 Satz 1 erfüllen.
+2Voraussetzung für die Anwendung des Satzes 1 ist, dass der Steuerpflichtige nicht nach den §§ 26, 26a einzeln zur Einkommensteuer veranlagt wird.
+Fußnote
+(+++ § 32a: Zur Anwendung vgl. § 52 +++)
+§ 32a Abs. 5 (F. 23.10.2000 u. ff. F.): Nach Maßgabe der Entscheidungsformel mit Art. 3 Abs. 1 GG unvereinbar gem. BVerfGE v. 7.5.2013 I 1647 (2 BvR 909/06, 2 BvR 1981/06, 2 BvR 288/07); zur Umsetzung der Anforderungen des BVerfG vgl. G v. 15.7.2013 I 2397 mWv 19.7.2013
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

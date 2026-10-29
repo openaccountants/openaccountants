@@ -1,0 +1,98 @@
+[
+  {
+    "finding": "version",
+    "before": "version: 1.3",
+    "after": "version: 1.4",
+    "before_native_LF": 4
+  },
+  {
+    "finding": "R34",
+    "before": "| Flat tax (Abgeltungsteuer) | Interest, dividends, gains on shares, bonds, funds and ETFs, derivatives | 25% plus solidarity surcharge and church tax, normally withheld by the German bank | [§ 20](https://www.gesetze-im-internet.de/estg/__20.html), [§ 32d EStG](https://www.gesetze-im-internet.de/estg/__32d.html) |",
+    "after": "| Flat tax (Abgeltungsteuer) | Interest, dividends, gains on shares, bonds, funds and ETFs, derivatives, subject to the mandatory § 32d(2) exceptions below | 25% plus solidarity surcharge and church tax, normally withheld by the German bank | [§ 20](https://www.gesetze-im-internet.de/estg/__20.html), [§ 32d EStG](https://www.gesetze-im-internet.de/estg/__32d.html) |",
+    "before_native_LF": 28
+  },
+  {
+    "finding": "R35",
+    "before": "| Large shareholding | Shares in a company where the seller held at least 1% at any time in the last five years | Partial-income method at the normal progressive rate | [§ 17 EStG](https://www.gesetze-im-internet.de/estg/__17.html) |",
+    "after": "| Large shareholding | Shares personally meeting the 1%/five-year test, or a qualifying recent free acquisition under § 17(1) sentence 4 with the actual predecessor/chain holding test | Partial-income method at the normal progressive rate | [§ 17 EStG](https://www.gesetze-im-internet.de/estg/__17.html) |",
+    "before_native_LF": 29
+  },
+  {
+    "finding": "R32",
+    "before": "| Private sales | Crypto and other assets sold within one year; land and buildings sold within ten years | Normal progressive rate, nothing withheld | [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html) |",
+    "after": "| Private sales | Other private assets within one year, extended to ten years for the statutory income-producing use; Currency/Payment Tokens retain the specific BMF exception. Land/buildings: ten years | Normal progressive rate, nothing withheld | [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html) |",
+    "before_native_LF": 30
+  },
+  {
+    "finding": "R35",
+    "before": "| Large-holding threshold, any time in the last five years | 1% |",
+    "after": "| Personal large-holding threshold, any time in the last five years; recent free acquisitions also test the predecessor/chain rule below | 1% |",
+    "before_native_LF": 44
+  },
+  {
+    "finding": "R32",
+    "before": "| Private sales of other assets taxable if held | one year or less |",
+    "after": "| Other private assets: ordinary disposal period, subject to the statutory ten-year income-producing branch and specific Currency/Payment Token exception | one year or less; qualifying income-producing assets ten years or less |",
+    "before_native_LF": 49
+  },
+  {
+    "finding": "R34",
+    "before": "**Flat-tax income.** Interest, dividends and gains on shares, bonds, funds and derivatives ([§ 20(1) and (2) EStG](https://www.gesetze-im-internet.de/estg/__20.html)). Gain = sale proceeds, less costs directly tied to the sale, less purchase cost. Foreign-currency amounts are converted at the date of each transaction. For securities of one kind in one custody account, the first bought count as the first sold (§ 20(4) EStG).",
+    "after": "**Flat-tax income.** Interest, dividends and gains on shares, bonds, funds and derivatives ([§ 20(1) and (2) EStG](https://www.gesetze-im-internet.de/estg/__20.html)). Gain = sale proceeds, less costs directly tied to the sale, less purchase cost. Foreign-currency amounts are converted at the date of each transaction. For securities of one kind in one custody account, the first bought count as the first sold (§ 20(4) EStG).\n\n**Mandatory financing exceptions (§ 32d(2) no. 1).** Before applying 25%, test income within § 20(1) nos. 4 and 7 and § 20(2) sentence 1 nos. 4 and 7. Under (a), creditor and debtor must be related within the statutory test, and the corresponding debtor expenses must be business expenses or income-related costs connected with income subject to German tax, without the § 20(9) sentence 1 second-half expense bar applying. Under (b), the same debtor-expense/German-tax conditions apply to payments by a corporation or cooperative to a shareholder holding at least 10%, or to a person related to that shareholder. Exactly 10% meets the ownership limb; 9.99% does not meet that limb alone, and (a)/(c) still require testing. Do not establish statutory relatedness from family membership alone.\n\nUnder (c), test third-party capital income connected with capital made available to the creditor's business; the stated extension covers a related person, a partnership in which the creditor/related person is a co-entrepreneur, or a corporation/cooperative in which either holds at least 10%, subject to the third party's recourse condition. A common plan, particularly close timing or linked interest agreements, is relevant; the statutory connection is absent where interest terms are market-standard or the flat-tax treatment gives no tax-burden advantage. The clauses apply correspondingly where the capital finances income under § 2(1) sentence 1 nos. 4, 6 or 7. Establish those actual financing/recourse/terms facts rather than treating every owner or family loan alike.\n\nFor an actually qualifying no. 1 case, the ordinary tariff applies and § 20(6)/(9) does not apply: use eligible actual costs rather than the Sparer-Pauschbetrag method. Stipulated qualifying interest of EUR 10,000 less EUR 2,000 eligible actual costs gives EUR 8,000 ordinary-rate income, rather than EUR 9,000 from an assumed EUR 1,000 allowance; final tax depends on the other tariff inputs. This mandatory route is distinct from the optional dividend partial-income election.",
+    "before_native_LF": 60
+  },
+  {
+    "finding": "R36",
+    "before": "7. On a sale, lump sums already taxed are deducted from the gain ([§ 19(1) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__19.html)). With a foreign broker the client tracks them.",
+    "after": "7. On a sale, deduct the full Vorabpauschalen assessed during ownership from the gain before applying the actual partial exemption ([§ 19(1) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__19.html)). Use the full assessed amount regardless of partial exemption or whether allowances prevented cash withholding, not merely its taxable fraction; do not deduct unassessed estimates. A stipulated gain of EUR 10,000 less EUR 1,120 full prior assessed Vorabpauschalen leaves EUR 8,880; a 30% equity-fund exemption then leaves EUR 6,216. Deducting only EUR 784 would wrongly leave EUR 6,451.20. Obtain actual broker history, including with a foreign broker.",
+    "before_native_LF": 87
+  },
+  {
+    "finding": "R35",
+    "before": "**Large holdings (§ 17 EStG).** A sale of shares in any company, German or foreign, is business income if the seller held at least 1%, directly or indirectly, at any time in the five years before the sale ([§ 17(1)](https://www.gesetze-im-internet.de/estg/__17.html): \"zu mindestens 1 Prozent beteiligt war\"). A holding cut below 1% still counts, and gifted shares count if the giver met the test. Liquidation and capital repayments count as a sale (§ 17(4)). Under the partial-income method (Teileinkünfteverfahren), 60% of the price less 60% of cost and selling costs is taxable ([§ 3 no. 40 c](https://www.gesetze-im-internet.de/estg/__3.html), [§ 3c(2)](https://www.gesetze-im-internet.de/estg/__3c.html)), less the allowance: the share sold of EUR 9,060, cut by the gain above the same share of EUR 36,100. The result joins other income at the normal rate. A loss is 60% deductible and can offset other income, but is barred in part for shares received free or not in a qualifying holding for the full five years (§ 17(2)).",
+    "after": "**Large holdings (§ 17 EStG).** A sale of shares in any company, German or foreign, is business income if the seller held at least 1%, directly or indirectly, at any time in the five years before the sale ([§ 17(1)](https://www.gesetze-im-internet.de/estg/__17.html): \"zu mindestens 1 Prozent beteiligt war\"). A holding cut below 1% still counts. If the seller acquired the disposed share free within the five years before disposal, § 17(1) sentence 4 applies sentence 1 correspondingly where the seller did not personally meet the test but a predecessor, or an earlier predecessor in a chain of free transfers, held the statutory participation within the relevant five-year period. Record the actual acquisition and predecessor holding dates; a free acquisition outside that recent-acquisition window does not enter this exception solely because its giver currently owns 1%. This share test is separate from AStG residence aggregation. Liquidation and capital repayments count as a sale (§ 17(4)). Under the partial-income method (Teileinkünfteverfahren), 60% of the price less 60% of cost and selling costs is taxable ([§ 3 no. 40 c](https://www.gesetze-im-internet.de/estg/__3.html), [§ 3c(2)](https://www.gesetze-im-internet.de/estg/__3c.html)), less the allowance: the share sold of EUR 9,060, cut by the gain above the same share of EUR 36,100. The result joins other income at the normal rate. A loss is 60% deductible and can offset other income, but is barred in part for shares received free or not in a qualifying holding for the full five years (§ 17(2)).",
+    "before_native_LF": 89
+  },
+  {
+    "finding": "R32",
+    "before": "- Land and buildings sold \"nicht mehr als zehn Jahre\" after purchase; other assets (crypto, gold, foreign currency, collectibles) sold \"nicht mehr als ein Jahr\" after purchase ([§ 23(1)](https://www.gesetze-im-internet.de/estg/__23.html)). Exactly one year is still taxable.",
+    "after": "- Land and buildings sold \"nicht mehr als zehn Jahre\" after purchase; other assets (crypto, gold, foreign currency, collectibles) sold \"nicht mehr als ein Jahr\" after purchase ([§ 23(1)](https://www.gesetze-im-internet.de/estg/__23.html)). Exactly one year is still taxable. For other private assets used as an income source with income in at least one calendar year, § 23(1) no. 2 sentence 4 extends the period to ten years. The BMF's 6 March 2025 letter, paragraph 63, specifically does not apply that extension to Currency or Payment Tokens; do not extend that administrative exception to every other private asset or token classification. An independently qualifying income-producing non-token asset sold after two years is not exempt merely because one year passed.",
+    "before_native_LF": 95
+  },
+  {
+    "finding": "R34",
+    "before": "- **Bank withholding settles the tax** where all income was taxed by German banks correctly. The bank pays withheld tax to its tax office by the tenth of the following month ([§ 44(1) EStG](https://www.gesetze-im-internet.de/estg/__44.html)).",
+    "after": "- **Bank withholding settles the tax** where the final-withholding conditions hold and no § 32d(2) or business-income exception under § 43(5) applies; correct bank withholding alone does not make a mandatory exception final. The bank pays withheld tax to its tax office by the tenth of the following month ([§ 44(1) EStG](https://www.gesetze-im-internet.de/estg/__44.html)).",
+    "before_native_LF": 106
+  },
+  {
+    "finding": "R34",
+    "before": "- **A return is required** for investment income with no German withholding, such as a foreign broker account ([§ 32d(3) EStG](https://www.gesetze-im-internet.de/estg/__32d.html)), and for any § 17 or § 23 gain. A return is worth filing to use an unused allowance, offset losses across banks, credit foreign tax, settle church tax or apply the Günstigerprüfung (§ 32d(4) and (6)).",
+    "after": "- **A return is required** for investment income with no German withholding, such as a foreign broker account ([§ 32d(3) EStG](https://www.gesetze-im-internet.de/estg/__32d.html)), for the mandatory § 32d(2) no. 1 assessment route above even where tax was withheld, and for any § 17 or § 23 gain. A return is worth filing to use an unused allowance, offset losses across banks, credit foreign tax, settle church tax or apply the Günstigerprüfung (§ 32d(4) and (6)).",
+    "before_native_LF": 107
+  },
+  {
+    "finding": "R35",
+    "before": "- Do you hold, or did you hold in the last five years, 1% or more of any company? Do you work for it?",
+    "after": "- Do you hold, or did you hold in the last five years, 1% or more of any company? Any free acquisition within the five years before disposal, including a chain: actual acquisition dates and each predecessor's participation/holding dates? Do you work for the company?",
+    "before_native_LF": 256
+  },
+  {
+    "finding": "R32-R36 intake",
+    "before": "- For each fund: its type and the price on 1 January. For crypto, gold and property: purchase and sale dates, and whether you lived in the property.",
+    "after": "- For each fund: its type, price on 1 January and full assessed Vorabpauschalen during ownership, including amounts with no cash withholding. For crypto, gold and property: actual asset/token classification, purchase/sale dates, any income-producing use in a calendar year, and whether you lived in the property.",
+    "before_native_LF": 257
+  },
+  {
+    "finding": "R34 intake",
+    "before": "- Do you have losses carried forward or bank loss certificates, and are you planning to leave Germany?",
+    "after": "- Do you have losses carried forward or bank loss certificates, and are you planning to leave Germany?\n- For financing income: actual borrower/shareholder/related-person relationships and percentages, domestic-tax/expense use, linked deposits/loans and common plan, recourse and market interest terms, plus eligible actual costs.",
+    "before_native_LF": 258
+  },
+  {
+    "finding": "R32-R36 sources",
+    "before": "| Wachstumschancengesetz, BGBl. 2024 I Nr. 108 (Art. 2 no. 5, Art. 35(4)) | https://www.recht.bund.de/bgbl/1/2024/108/VO.html | 2026-10-26 |",
+    "after": "| Wachstumschancengesetz, BGBl. 2024 I Nr. 108 (Art. 2 no. 5, Art. 35(4)) | https://www.recht.bund.de/bgbl/1/2024/108/VO.html | 2026-10-26 |\n| EStG §§ 23(1) no. 2 sentence 4, 43a(3) full deadline, 32d(2) no. 1, 43(5), 17(1) sentence 4; InvStG § 19(1); BMF 6 March 2025 paragraph 63: selected operative clauses actually read | https://www.gesetze-im-internet.de/estg/__32d.html | 2026-10-29 |",
+    "before_native_LF": 282
+  }
+]

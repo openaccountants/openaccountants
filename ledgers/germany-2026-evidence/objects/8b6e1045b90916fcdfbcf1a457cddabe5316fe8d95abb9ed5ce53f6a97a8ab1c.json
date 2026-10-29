@@ -1,0 +1,18 @@
+[
+  {
+    "before": "- Past the standard retirement age: drawing a full old-age pension, or reaching that age, frees the employee from pension and unemployment contributions, but the employer still pays its half ([§ 172(1) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__172.html), [§ 346(3) SGB III](https://www.gesetze-im-internet.de/sgb_3/__346.html)).",
+    "after": "- **Past the standard retirement age.** Pension and unemployment have different exemption tests. Under [§ 5(4) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__5.html), an ordinarily insured employee drawing a full old-age pension is pension-insurance-free after the end of the month of reaching standard retirement age, unless they waive that exemption; reaching the age alone does not generally end an existing pension-insurance duty. Under [§ 28(1) no. 1 SGB III](https://www.gesetze-im-internet.de/sgb_3/__28.html), unemployment insurance ends at the end of the month of reaching the applicable retirement age. The employer still pays the statutory half contribution for an employee exempt on these grounds ([§ 172(1) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__172.html), [§ 346(3) SGB III](https://www.gesetze-im-internet.de/sgb_3/__346.html))."
+  },
+  {
+    "before": "version: 1.1\n",
+    "after": "version: 1.2\n"
+  },
+  {
+    "before": "last_updated: 2026-10-26\n",
+    "after": "last_updated: 2026-10-29\n"
+  },
+  {
+    "before": "| Minimum wage regulation MiLoV4 § 1 (2025) | https://www.gesetze-im-internet.de/milov4/__1.html | 2026-10-24 |",
+    "after": "| Minimum wage regulation MiLoV4 § 1 (2025) | https://www.gesetze-im-internet.de/milov4/__1.html | 2026-10-24 |\n| Retirement-age pension and unemployment distinction: SGB VI § 5(4), § 172(1); SGB III § 28(1) no. 1, § 346(3) | https://www.gesetze-im-internet.de/sgb_6/__5.html ; https://www.gesetze-im-internet.de/sgb_3/__28.html ; https://www.gesetze-im-internet.de/sgb_6/__172.html ; https://www.gesetze-im-internet.de/sgb_3/__346.html | 2026-10-29 |"
+  }
+]

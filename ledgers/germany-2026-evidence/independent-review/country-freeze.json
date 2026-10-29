@@ -1,0 +1,268 @@
+{
+  "as_of_utc": "2026-10-29T17:45:53.395811+00:00",
+  "status": "All25WRITERpairs exact, frozen for different independent country review; no independent PASS",
+  "worktree": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany",
+  "writer_baseline": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+  "fetched_origin_main": "e9da317f",
+  "main_delta": "Only Germanycapital-gains last_updated27→28, no France change; final main reconciliation not yet applied.",
+  "pairs": [
+    {
+      "slug": "leaving-germany-exit-tax",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/leaving-germany-exit-tax.md",
+      "Guide_sha256": "07a1281e07643bd5beee21a7c190692b5205f287f0b01662cf4478f28cadc100",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/leaving-germany-exit-tax.md",
+      "ledger_sha256": "1cf8d1b6a38a752e6cbb9457020c8bd8dc1b75fbc8cef4c3d64322fb9ff3ddac",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "germany-transfer-pricing",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-transfer-pricing.md",
+      "Guide_sha256": "6484533ed7d6864dee6ccdd2c67e04a9478abf59c7d362bfcdecd172aef120cb",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/germany-transfer-pricing.md",
+      "ledger_sha256": "c806f7fdc09984616d06150dfc7ce6db6ad3554d6cd2f7ada5949a1c444b4895",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "de-corporate-tax",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-corporate-tax.md",
+      "Guide_sha256": "eb70e6984dd86812a26e6bf380b38e2c504cc1c3eb7055a5f5d956d6944b3141",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/de-corporate-tax.md",
+      "ledger_sha256": "5aaa6fa7ed8f47d74cc01e8223d6702951657db9b7a760ffb624c4e95a2bab92",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "de-uk-employer-first-hire",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-uk-employer-first-hire.md",
+      "Guide_sha256": "7f2bb0b78a274a979c60708a8d2967859daed0a46618ed2b76e6e2787fd7f0ff",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/de-uk-employer-first-hire.md",
+      "ledger_sha256": "50e05f26a2529421c0ce3c81f69228cd3ee16116f1d5bedcdd37abe93fd7f8b4",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "de-crypto-tax",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-crypto-tax.md",
+      "Guide_sha256": "70aea2e9373458a904f6cef335c15302b9de48a6bc845c5e14e7144b5e99e35a",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/de-crypto-tax.md",
+      "ledger_sha256": "2cd88f0ee8ee90180afe4783f2657216aed7a8f26e3c80ee4df7d3cdc67c76bf",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "de-income-tax",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-income-tax.md",
+      "Guide_sha256": "2f4e335bbdaa39f04d46874ae1d114460d8f8b5da55238ef2555071b9c7d47dd",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/de-income-tax.md",
+      "ledger_sha256": "b9e9a854c73ff04be8882a25e11f1cabfe17bce51f6457248dc4285fd537c2a2",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "de-employee-income-tax",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-employee-income-tax.md",
+      "Guide_sha256": "6cbb6da4bc3bf6f54b987da6e415a7ef8f797aae3c02af05dbb05c7c8690c3ee",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/de-employee-income-tax.md",
+      "ledger_sha256": "b9c69b23763f131944f97be8e40b60a8134168de8d1e0a1fd4506491b599149a",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "de-partners-and-part-year",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-partners-and-part-year.md",
+      "Guide_sha256": "4461747b0cfdabd2666425c03c0660b57ca431a6d193b8253a48b62a97b28eb0",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/de-partners-and-part-year.md",
+      "ledger_sha256": "7e36359e8ea2e366918bb3f90d57f26fceb6eb6cd4e0d5acfa502d8f22107548",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "de-self-employed-income-tax",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-self-employed-income-tax.md",
+      "Guide_sha256": "7f38fa2dce9edf71f200125f8595a885cce73bd96efc52485ae9cba26436ca47",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/de-self-employed-income-tax.md",
+      "ledger_sha256": "3aa296157e882b041ed054906aa7a6fab93c766954a317b0ce9b84a50144b2e0",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "de-non-resident-tax",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-non-resident-tax.md",
+      "Guide_sha256": "2771446fffdebcafb42c3f4875418d5c66839a2cdcce4473b2c5bd426b7d290c",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/de-non-resident-tax.md",
+      "ledger_sha256": "0d2f798a1e3fde4bf457e6621f65c9972b15864cbb1ed3e33f8a1b80041b1bdb",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "de-vat-annual-and-special-schemes",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-vat-annual-and-special-schemes.md",
+      "Guide_sha256": "51433fb5a8203b3d7466cfd1378ee2b28dc7bfd76f2e423cdf420cd714677867",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/de-vat-annual-and-special-schemes.md",
+      "ledger_sha256": "bffbf9a62569d8a2e27a6e6dee0c21f4d66238c603974e327e6bde93feea923f",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "de-treaty-withholding-rates",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-treaty-withholding-rates.md",
+      "Guide_sha256": "98b7a3ed15a0ff174004be9b2975f1c920b1a6ad752b7bb38ba05038c21eb7a1",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/de-treaty-withholding-rates.md",
+      "ledger_sha256": "27879d881a0944119d17f2688303da1548a27e448382e3f5adeb07ed01a178cb",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "germany-to-switzerland-cross-border-tax",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-to-switzerland-cross-border-tax.md",
+      "Guide_sha256": "49bb497e26ed61b20ad31b474a7503f6eaae113e5a5c20dc7e0b0b604041a6d4",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/germany-to-switzerland-cross-border-tax.md",
+      "ledger_sha256": "226a6bc71ffed829a3a0c72625742fa96e1e0d1505612c9e02091b8b7942c7f2",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "germany-einvoice",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-einvoice.md",
+      "Guide_sha256": "f11973431a1c837ca473eeea4884817dd31faa5b3f327775ad80f451a399d835",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/germany-einvoice.md",
+      "ledger_sha256": "b21d9c6cbdb1b6725af38ff2285922729fd07a00c62b67e7425fddbaccef6ed2",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "germany-payroll",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-payroll.md",
+      "Guide_sha256": "5a2eec995028a0fa55991eda2600a92904c6f7d11b9e8220a6e55d4a85942564",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/germany-payroll.md",
+      "ledger_sha256": "903e61acde1a27b3106b7695838c1815fa528605ee6eb65d0fb4fca4b6f7a2a9",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "germany-tax-optimization",
+      "writer": "A",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-tax-optimization.md",
+      "Guide_sha256": "fa5036e6c87c3c778fcd65270a5a151ec007dd37e46d536ab3ff44ee6178c403",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/germany-tax-optimization.md",
+      "ledger_sha256": "5076731b21b731ad6f6312725ddf7bd933dd04abb84f78c1b414706582970b0e",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-final-inventory.json"
+    },
+    {
+      "slug": "de-capital-gains",
+      "writer": "B",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-capital-gains.md",
+      "Guide_sha256": "d6ad76e43de497f0374419344e03cef72fdba5c3e06ba80b13adbb8acdbd7322",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/de-capital-gains.md",
+      "ledger_sha256": "81aea5fed2ec144a698bb7fc3e0dc5b9989b533b2d5eb71e00efc61b73be1b94",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/seven-pair-inventory.json"
+    },
+    {
+      "slug": "de-trade-tax",
+      "writer": "B",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-trade-tax.md",
+      "Guide_sha256": "626bcf76590a68fcd9951f6b2b509aa39fa3a4ef38314b1ae0a4ab9ed2a3575a",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/de-trade-tax.md",
+      "ledger_sha256": "a57cd70d8495d767b1be6bc19a9715aac3b17c8b8a2aaeb0cc9972fcbde16eed",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/seven-pair-inventory.json"
+    },
+    {
+      "slug": "de-einkommensteuer-freelancer",
+      "writer": "B",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-einkommensteuer-freelancer.md",
+      "Guide_sha256": "24b5037c53e61ddfe3fbabce6ec11fbd53cde225ff07c70abaa36587376f9e20",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/de-einkommensteuer-freelancer.md",
+      "ledger_sha256": "241405d4e7a5d1cddabe010ae530098d200e27e33da67ce1e99924356ed52c5d",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/seven-pair-inventory.json"
+    },
+    {
+      "slug": "de-payroll-benefits",
+      "writer": "B",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-payroll-benefits.md",
+      "Guide_sha256": "6490866ed01c76228acd389426527eecc10b5c835a082799868ed9a5fe8aa62a",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/de-payroll-benefits.md",
+      "ledger_sha256": "aa9f0b91d7357436b2a877fe83cd8897f1b38d6341cf53553994eceb1736f0f2",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/seven-pair-inventory.json"
+    },
+    {
+      "slug": "de-social-contributions",
+      "writer": "B",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-social-contributions.md",
+      "Guide_sha256": "440c63cff96c29ab6ba597bc1d96e7e0183665c6aeb547b0c2b184658cf22f5d",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/de-social-contributions.md",
+      "ledger_sha256": "1c182cd096cf1c45b4f53be07448dac608c0a23c5e4ad1db410acbddb45eccfe",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/seven-pair-inventory.json"
+    },
+    {
+      "slug": "de-payroll",
+      "writer": "B",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-payroll.md",
+      "Guide_sha256": "f7864d22ecb5e51e67d65e1c799dd335abe3dc120be7e556779c84ac2df80382",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/de-payroll.md",
+      "ledger_sha256": "c45ff60d57c437829d766218667ff3f7f9ac6ed20aea5c2d72d330dc7ad2f604",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/seven-pair-inventory.json"
+    },
+    {
+      "slug": "germany-vat-return",
+      "writer": "B",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-vat-return.md",
+      "Guide_sha256": "0648208e05e68321e55227681b1351328ac36a5d503b8d6d81cb6ea9f6d24ef7",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/germany-vat-return.md",
+      "ledger_sha256": "24e84680057f956e6d71f5397e9ab8e558d1d03c6dac0f3b57826771cb8a5292",
+      "writer_inventory": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/seven-pair-inventory.json"
+    },
+    {
+      "slug": "de-estimated-tax",
+      "writer": "root",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-estimated-tax.md",
+      "Guide_sha256": "5d5f9d8e80b08e2299130e2fe59328714838a89f40a54800eac2e46368e4c382",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/de-estimated-tax.md",
+      "ledger_sha256": "9815ac60fe69ff6db8af9e53f2702f82a5d6703b6f6718e1b84c6305f25bbe54",
+      "writer_freeze": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/freeze.json"
+    },
+    {
+      "slug": "de-rental-income",
+      "writer": "root",
+      "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-rental-income.md",
+      "Guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e",
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/de-rental-income.md",
+      "ledger_sha256": "800b72f58da4095cebb2c9b2a15d89b421fcbedb7ffa63eb433f260014914a83",
+      "writer_freeze": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/freeze.json"
+    }
+  ],
+  "preserved_companions": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/README.md",
+      "sha256": "9a5d36d017a780727a82a1235c3f351a4e5a8ca5b2135e4be9cb04a5dc6ebcc4",
+      "unchanged_from_writer_baseline": true,
+      "scope": "Preserved companion/README/reference, not a new25-Guide tax-ledger pair; inspect routing, summary consistency and truth labels, do not infer fresh accounting/company-formation legal attestation."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-bookkeeping.md",
+      "sha256": "0ed2aceb7063d9f5ce2ed536ba2f647e74fcbf84d86e53eb7e3617ab3526efae",
+      "unchanged_from_writer_baseline": true,
+      "scope": "Preserved companion/README/reference, not a new25-Guide tax-ledger pair; inspect routing, summary consistency and truth labels, do not infer fresh accounting/company-formation legal attestation."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-financial-statements.md",
+      "sha256": "72b604b3dc422f4b2f9e3af09342a64aed00a176ecccc1875978df8a931fffbf",
+      "unchanged_from_writer_baseline": true,
+      "scope": "Preserved companion/README/reference, not a new25-Guide tax-ledger pair; inspect routing, summary consistency and truth labels, do not infer fresh accounting/company-formation legal attestation."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-formation.md",
+      "sha256": "3cb9d734f539ebffa8836dd49114792a4433d609aab12a32aa303448dea73da3",
+      "unchanged_from_writer_baseline": true,
+      "scope": "Preserved companion/README/reference, not a new25-Guide tax-ledger pair; inspect routing, summary consistency and truth labels, do not infer fresh accounting/company-formation legal attestation."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/references.md",
+      "sha256": "1ad2b9b85a14e53ca662e3b3da639a60ad3450c78a9b76e04a516099040dbd87",
+      "unchanged_from_writer_baseline": true,
+      "scope": "Preserved companion/README/reference, not a new25-Guide tax-ledger pair; inspect routing, summary consistency and truth labels, do not infer fresh accounting/company-formation legal attestation."
+    }
+  ],
+  "review_scope": "Verify every ledger rule/quote/source/year/condition; spot-check old-topic preservation; recompute original and meaningful boundary cases; check sibling and README consistency; disclose ordinary coverage limits. Different reviewerC has no German writer edits."
+}

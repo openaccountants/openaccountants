@@ -1,0 +1,11 @@
+{
+  "id": "Uc0fac2518009754c",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2023-04-25-konsultationsvereinbarung-zu-artikel-15-absatz-4-des-deutsch-schweizerischen-DBA.pdf?__blob=publicationFile&v=1",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc0fac2518009754c.body",
+  "raw_sha256": "197ac67df6fd582c68a51b13dc0d767916d3d0efa5f1e748989fb21c60b4670d",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc0fac2518009754c.reader.txt",
+  "reader_sha256": "0c9f3120a2245742c895dbd177f1461b7e3fd2f0f81bb57b022587cf397f20bf",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

@@ -1,0 +1,909 @@
+{
+  "all_current_units_read": 133,
+  "batches": [
+    [
+      1,
+      65
+    ],
+    [
+      66,
+      133
+    ]
+  ],
+  "quotes_direct_new": 19,
+  "exact_previous_reading_bridges": 31,
+  "official_observation_anchors": 2,
+  "record_count": 52,
+  "sources": [
+    {
+      "row": 1,
+      "id": "DATES",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.reader.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "quote_sha256": "d2f52c08efb92c40ee4c7a1fcbdc4254fdbbc9e1be648aa244bb8faa88dc3f30",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 28,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 2,
+      "id": "ARISE",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.reader.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "quote_sha256": "bb0a9ffda6940e7a4eedbbb54ceedafd5119fc25c79dec3584bd34c2c9ba72ed",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 28,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 3,
+      "id": "NOTICE",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.reader.txt",
+      "native_LF": [
+        3,
+        3
+      ],
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "quote_sha256": "b29dc98ce787688d7a5440327b0b9085d3a36d251e22a5669b420724b8216198",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 29,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 4,
+      "id": "BASE",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.reader.txt",
+      "native_LF": [
+        3,
+        3
+      ],
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "quote_sha256": "d28ae3fb457328e4a41f393473cb59eda1219d1f2c426aaac09456cc10f6b68b",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 29,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 5,
+      "id": "ADJUST",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.reader.txt",
+      "native_LF": [
+        3,
+        3
+      ],
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "quote_sha256": "3fe7d8ccf7c9c073aedf61565e9de21b6af3eef63e9caf93cb377acd92540749",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 29,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 6,
+      "id": "SMALL",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.reader.txt",
+      "native_LF": [
+        3,
+        3
+      ],
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "quote_sha256": "0294ef686552d09487c791799be0ddb2670ebd3a5c06ea57524499f9f20038d5",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 29,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 7,
+      "id": "IGNORE",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.reader.txt",
+      "native_LF": [
+        3,
+        3
+      ],
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "quote_sha256": "904ec1f78fbf1f7c99e655bc3e1bed3741b88fd919f744e3c0fbfb18d121a018",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 29,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 8,
+      "id": "CHILD",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.reader.txt",
+      "native_LF": [
+        3,
+        3
+      ],
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "quote_sha256": "db04e46dbabff4b2a41ad372fd54427ce4a1200da5c08a4c6293db4a0434be77",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 29,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 9,
+      "id": "RENT",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.reader.txt",
+      "native_LF": [
+        3,
+        3
+      ],
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "quote_sha256": "6ba52962135f2c8e27fb6b9eb0494203e62ed76c1923383fd7053c36559f9952",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 29,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 10,
+      "id": "LATER",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.reader.txt",
+      "native_LF": [
+        4,
+        4
+      ],
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "quote_sha256": "15713bd63109efecfbd3491d571b8ea77f287c3a2d0201ff6120d637411c7e99",
+      "actual_read_bridge": {
+        "guide": "de-einkommensteuer-freelancer",
+        "quote_row": 6,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 11,
+      "id": "MIN",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-37.reader.txt",
+      "native_LF": [
+        5,
+        5
+      ],
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "quote_sha256": "39e03f1aa6048b913730312d4aa84dd52edf49c9e6b7ec1b292a69d415556991",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 30,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 12,
+      "id": "SOLI_BASE",
+      "official_url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/solzg-3.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/solzg-3.reader.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "reader_sha256": "6729e7e8479df5c552f9764a7266d120bfeac9a913e9efb92d6839d34b6f0510",
+      "quote_sha256": "6683ec130677074fa6e580e18ae4fd4fa10df42c617ee1a6b6cb33e862689c9b",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 11,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 13,
+      "id": "SOLI_LIMIT",
+      "official_url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/solzg-3.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/solzg-3.reader.txt",
+      "native_LF": [
+        4,
+        4
+      ],
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "reader_sha256": "6729e7e8479df5c552f9764a7266d120bfeac9a913e9efb92d6839d34b6f0510",
+      "quote_sha256": "03bc76e0d63fee16c65538eba134ea1b3b164a0391291cef2b664c77d4b5a316",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 14,
+      "id": "SOLI_RATE",
+      "official_url": "https://www.gesetze-im-internet.de/solzg_1995/__4.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/solzg-4.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/solzg-4.reader.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "dd28933ed36da19cae72de5a054f9edbea5c5919cb2aeac6efc257afe9fab058",
+      "reader_sha256": "2b0005826a19694e780f86c03a0cff4ac1f2b8c8052088adc296b558d0740f2f",
+      "quote_sha256": "b8eb2b65618c2dace32c77221fa8bae9a16f130bd5e24bfc421e1426bef2e793",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 10,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 15,
+      "id": "SOLI_YEAR",
+      "official_url": "https://www.gesetze-im-internet.de/solzg_1995/__6.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/solzg-6.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/solzg-6.reader.txt",
+      "native_LF": [
+        27,
+        27
+      ],
+      "raw_sha256": "440b164ab35a89eff28cda416931ac803718f92526b81a0c2f28974b5b04d2f1",
+      "reader_sha256": "014447c744e895cceac341acd65437c833bc90f0855ba27cb6a0574604667ca4",
+      "quote_sha256": "f5ab00517b6fa92aefc22610c682e42fbefffbc387e691daf7abb6a28dd6b1b9",
+      "actual_read_bridge": {
+        "guide": "de-einkommensteuer-freelancer",
+        "quote_row": 27,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 16,
+      "id": "CHURCH_PRE",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__51a.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-51a.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-51a.reader.txt",
+      "native_LF": [
+        9,
+        9
+      ],
+      "raw_sha256": "02bf2ed03b59ac334e8201d01a4294c694363cf10bca8158d100bfde3c667b11",
+      "reader_sha256": "81eefdcf0f0a556b9674ac32b4cf5ea2d6a6e322a440b941c30c0fd4285959c3",
+      "quote_sha256": "958583052d124dcc3ecd547c4a176258867fd9f4e1f9070d2dc5eabd2db1ee16",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 17,
+      "id": "CHURCH_STATE",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__51a.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-51a.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-51a.reader.txt",
+      "native_LF": [
+        11,
+        11
+      ],
+      "raw_sha256": "02bf2ed03b59ac334e8201d01a4294c694363cf10bca8158d100bfde3c667b11",
+      "reader_sha256": "81eefdcf0f0a556b9674ac32b4cf5ea2d6a6e322a440b941c30c0fd4285959c3",
+      "quote_sha256": "2a7a3d478e12788985c0ddcc980b8e9c5066660b8a5cd2132a17bc9cc3aeb866",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 18,
+      "id": "CHURCH_RATE",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/bmf-steuern-a-z.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/bmf-steuern-a-z.reader.txt",
+      "native_LF": [
+        2967,
+        2967
+      ],
+      "raw_sha256": "c36ca62b6c89e5524682fcc124a68548aec918813761dbbf866f010f741d52fb",
+      "reader_sha256": "2d05ce2568efd71d46184329c032e3190ad2a35348b1e16e405da272f0f33696",
+      "quote_sha256": "62406512f1966c3189bbdfc801ed1f4290fef63b0a5502ad0293b3d12fb9386a",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 19,
+      "id": "CHURCH_SPECIAL",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__10.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-10.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-10.reader.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "f970952c77597337017ee213013219bd490a91f1f0b7048bbd8cb697d1d9befd",
+      "reader_sha256": "a0fd6ad345cb518cb58a37fdf63186576c8cbf0cc2a2ac9b7b4fde0dcf6882fd",
+      "quote_sha256": "e2baae4982772835ee6024bac278334412aed51b25a29672c013aeb39104449e",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 77,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 20,
+      "id": "CREDIT",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__36.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-36.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-36.reader.txt",
+      "native_LF": [
+        2,
+        2
+      ],
+      "raw_sha256": "5dd46a731f12aada297b6c739e3ac1f8039097f226afc44cb42fad1b626d4d51",
+      "reader_sha256": "a59b98722ed8e2f94d161a7fdc6d3cb83ba52b08f946e4e424e98d5767789f1d",
+      "quote_sha256": "a56e63b99c37ab4bb5c4fff92d3960e290f9b34c7a10ace639fd0c096623f2d8",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 21,
+      "id": "BALANCE",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__36.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-36.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-36.reader.txt",
+      "native_LF": [
+        4,
+        4
+      ],
+      "raw_sha256": "5dd46a731f12aada297b6c739e3ac1f8039097f226afc44cb42fad1b626d4d51",
+      "reader_sha256": "a59b98722ed8e2f94d161a7fdc6d3cb83ba52b08f946e4e424e98d5767789f1d",
+      "quote_sha256": "d60a7b0e97438da3e2374c143bfcf9847c661b5d13b2ee3f17171fe930153b32",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 31,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 22,
+      "id": "NOT_EXPENSE",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__12.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-12.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-12.reader.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "2f2a2749f2f5ec64b89f9ffe5f657575e60bd4a6ef74217332842658f9056282",
+      "reader_sha256": "95d130beec6fcfcfa5007b929b887cc92f029469e5960e3cbeb46c952517f63c",
+      "quote_sha256": "56f75d27577ad2f1d60ce79626ce1f13e34520b729d872336e421a273863a773",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 74,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 23,
+      "id": "ANCILLARY",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__3.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-3.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-3.reader.txt",
+      "native_LF": [
+        4,
+        4
+      ],
+      "raw_sha256": "e7921833e74989a31048f1b4271b12ca92dffce537778d9ae788369cfe17f257",
+      "reader_sha256": "0c6956c4076d4094dc527133fb63fdfbdb40960b216449987495ac5576442b9b",
+      "quote_sha256": "bd6134f244d70886c0a82d84c1785729199ebf8d86bbc7a33d2ed0f8bc41cd45",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 24,
+      "id": "WEEKENDS",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-108.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-108.reader.txt",
+      "native_LF": [
+        3,
+        3
+      ],
+      "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+      "reader_sha256": "ab2dc42bbe74ee81b7926cdebe2a22466276c8c7a59d1e411b12634b34530fb3",
+      "quote_sha256": "6d22b5c1a15f4b1a75caa5aa3b16dcb5e5ffcf4f80488918ed5261c136d40df4",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 15,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 25,
+      "id": "PAYMENT",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__224.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-224.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-224.reader.txt",
+      "native_LF": [
+        2,
+        2
+      ],
+      "raw_sha256": "a3d09dc43f6c7e7209a1fa636313afcfcaca668b5430dc85decfa0a8fde30d5f",
+      "reader_sha256": "550a20cbb1bda29cc87249d01fef74384e351c666ceef0fc8e7f21a9b9bbb144",
+      "quote_sha256": "fabb9ff77740bde2cbce68ae4f907e986e8c97f5cd3e06d6e78f2427b1eb1711",
+      "actual_read_bridge": {
+        "guide": "germany-vat-return",
+        "quote_row": 26,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 26,
+      "id": "CHANGE",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__164.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-164.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-164.reader.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "d7a2d7c6e3aff32ba8ae76a4e8791db643056d73b7ed67fd93bf6acf1e92dc5f",
+      "reader_sha256": "43c763c554932d66ddbbd717f7b51e1b7430bbeab934196fc7c2b4d2838ee69e",
+      "quote_sha256": "d4ddbd7a99f14b061697a55a0c313d307ad0aac3ae895e2cc67a1fc8f9b7170b",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 27,
+      "id": "APPLY",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__164.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-164.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-164.reader.txt",
+      "native_LF": [
+        2,
+        2
+      ],
+      "raw_sha256": "d7a2d7c6e3aff32ba8ae76a4e8791db643056d73b7ed67fd93bf6acf1e92dc5f",
+      "reader_sha256": "43c763c554932d66ddbbd717f7b51e1b7430bbeab934196fc7c2b4d2838ee69e",
+      "quote_sha256": "1c64e1a529902b21fe73e96e62df676f5f4f9dfc32063e3b8cdb6d0ea1fc0f3a",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 28,
+      "id": "VALID",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__124.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-124.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-124.reader.txt",
+      "native_LF": [
+        2,
+        2
+      ],
+      "raw_sha256": "37e4a374b64d32a2f4b42d3ddd72e36b5cbe3755a7741bf8a7a481b7b1ac2234",
+      "reader_sha256": "fb2374d6e2cdd910f99f60347c394639162e9b9eacf7e314219701c02be44685",
+      "quote_sha256": "eeb1889472a65a813157772ea7549d2bf2ca2e47918319ed471c2916ad4d9626",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 29,
+      "id": "REGISTER",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__138.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-138.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-138.reader.txt",
+      "native_LF": [
+        3,
+        3
+      ],
+      "raw_sha256": "843b5720d9bc7f89ef230b4779c3b23c43e2ded3c0f3bb36036d606086787987",
+      "reader_sha256": "e8cf5cf24aec1db4afa201e68cd307425289a89c3cef798cec592f20c45d1838",
+      "quote_sha256": "69d5d93f59d74b1f07c706815271fe9dc6440deac35cbec83794f83dcfd6693d",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 79,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 30,
+      "id": "REGISTER_MONTH",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__138.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-138.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-138.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "843b5720d9bc7f89ef230b4779c3b23c43e2ded3c0f3bb36036d606086787987",
+      "reader_sha256": "e8cf5cf24aec1db4afa201e68cd307425289a89c3cef798cec592f20c45d1838",
+      "quote_sha256": "f1ca35b1a1419e31829cbbce55ea3b241fda6f1f704a8ff0b8c619c6ccd157e9",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 80,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 31,
+      "id": "LATE",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-240.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-240.reader.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "reader_sha256": "de5abf16cae7369f1c3ce79fd9dc06628e2f09f617e635eae23721672949edb6",
+      "quote_sha256": "9656165dbd550290acfc92eb06aa385b8e6343a05d95e4a601f549d974ba0b38",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 27,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 32,
+      "id": "LATE_ANCILLARY",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-240.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-240.reader.txt",
+      "native_LF": [
+        2,
+        2
+      ],
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "reader_sha256": "de5abf16cae7369f1c3ce79fd9dc06628e2f09f617e635eae23721672949edb6",
+      "quote_sha256": "bf93593a25b8f999194f48d43530c0ccb935f395231ac389d66f1a83697de186",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 33,
+      "id": "GRACE",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-240.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-240.reader.txt",
+      "native_LF": [
+        3,
+        3
+      ],
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "reader_sha256": "de5abf16cae7369f1c3ce79fd9dc06628e2f09f617e635eae23721672949edb6",
+      "quote_sha256": "460071f67cf6751d02a5cc067c85cc25a6b1e8d4b8244665cc6452c9ded61cde",
+      "actual_read_bridge": {
+        "guide": "de-corporate-tax",
+        "quote_row": 61,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 34,
+      "id": "INTEREST_SCOPE",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-233a.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-233a.reader.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+      "quote_sha256": "f55ba87a48ebe37e4f1edad31ddaa01a10b86a287ec99dec3c72e77c4f3134e6",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 21,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 35,
+      "id": "INTEREST_PERIOD",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-233a.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-233a.reader.txt",
+      "native_LF": [
+        2,
+        2
+      ],
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+      "quote_sha256": "40bc24f8e325fe8dbd60bef3d828d8206af4839ec8728bdf9d0f2d5b755159c8",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 22,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 36,
+      "id": "INTEREST_BASE",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-233a.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-233a.reader.txt",
+      "native_LF": [
+        4,
+        4
+      ],
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+      "quote_sha256": "ceff8000d11e57ff74ae6754e51de46b08f985e99bee7f28cd1f4d4d1fc95d78",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 23,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 37,
+      "id": "VOLUNTARY",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-233a.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-233a.reader.txt",
+      "native_LF": [
+        9,
+        9
+      ],
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+      "quote_sha256": "af4a51d3d35be05232f6e37a2a8d96ae6c409079165c84e09050eaf408f7267c",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 38,
+      "id": "INTEREST_RATE",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-238.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-238.reader.txt",
+      "native_LF": [
+        2,
+        2
+      ],
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "reader_sha256": "b498560da681c999714264f8e70d8e691a277da18f088ddfb51316b8bb61e908",
+      "quote_sha256": "a6b73dc49fd492f5b9253b5ec6af37b0567d4d7420ed821f8b93d52030492b09",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 25,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 39,
+      "id": "FULL_MONTH",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-238.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-238.reader.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "reader_sha256": "b498560da681c999714264f8e70d8e691a277da18f088ddfb51316b8bb61e908",
+      "quote_sha256": "d2b4a065359f29d0a79bb0c86afac79b934163863b2c795041b8890b777e487c",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 24,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 40,
+      "id": "ROUND",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-238.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-238.reader.txt",
+      "native_LF": [
+        5,
+        5
+      ],
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "reader_sha256": "b498560da681c999714264f8e70d8e691a277da18f088ddfb51316b8bb61e908",
+      "quote_sha256": "ada786a8d9039f2799b326f22542763932b5f359422963b37b8331181a91344f",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 26,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 41,
+      "id": "HIST_2019",
+      "official_url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/egao-97-36.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/egao-97-36.reader.txt",
+      "native_LF": [
+        2,
+        2
+      ],
+      "raw_sha256": "473093a055687b4f1080906450a53bfa4454856afe4a25599e1907757d5436bc",
+      "reader_sha256": "33675804855e15b5ce79c16826df9dbd4f7392841e458dda172ad4f9e38f28a4",
+      "quote_sha256": "dab9a48b52ff8a7a497a18297f7479206bcfeb043319f173c90e87021d1ae29d",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 42,
+      "id": "HIST_2020_2024",
+      "official_url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/egao-97-36.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/egao-97-36.reader.txt",
+      "native_LF": [
+        3,
+        3
+      ],
+      "raw_sha256": "473093a055687b4f1080906450a53bfa4454856afe4a25599e1907757d5436bc",
+      "reader_sha256": "33675804855e15b5ce79c16826df9dbd4f7392841e458dda172ad4f9e38f28a4",
+      "quote_sha256": "fe2dad40800ac3cb2e51d359adf40f985deec63975b69c37e3e2e6af1a2a7651",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 43,
+      "id": "OLD_ADJUST",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__52.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-52.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-52.reader.txt",
+      "native_LF": [
+        64,
+        64
+      ],
+      "raw_sha256": "bec6241b5340b28eb111acc63168aaa37356253f714334f69786379dd8edbfd5",
+      "reader_sha256": "1a03d9af193ec9637744ad730f30cf0fd7964ee9a3f00d79b6904010745a0b7b",
+      "quote_sha256": "534d24a8f022ffe1703bb8afb693208d609fcdcead2cf96b2d31929cf1b972a7",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 44,
+      "id": "FALSE",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__370.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-370.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-370.reader.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+      "reader_sha256": "7d674859807e5233b7b0fd3fed683b2a7270223555628b3ff4f89e3375eb426f",
+      "quote_sha256": "1637fbbf9aa72a73b7c01b54c856956586b2ee30a598b004e97ff2152cbe6698",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 45,
+      "id": "ATTEMPT",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__370.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-370.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-370.reader.txt",
+      "native_LF": [
+        2,
+        2
+      ],
+      "raw_sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+      "reader_sha256": "7d674859807e5233b7b0fd3fed683b2a7270223555628b3ff4f89e3375eb426f",
+      "quote_sha256": "ebf5ec4fb950af8874c5537d470d327c2f79da1dd36657d21c6eac565334951e",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 46,
+      "id": "DEFERRAL",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__222.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-222.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-222.reader.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "8fb40b4ba01fe464f7bad592659de781e924468510f4fe633daff5cf97aa9be6",
+      "reader_sha256": "0027a626de01e00a7fd8d0e082f7fa2b5cf325281247ebaa5879feb0b474398e",
+      "quote_sha256": "db311da6991a61f8f227cbcd003b2e91a8ad2cbe3a7425232a38727244d9ab60",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 47,
+      "id": "DEF_INTEREST",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__234.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-234.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-234.reader.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "9e5bb5fe1311894b46b3490d9070453c493eb467763e34bd9dc641f40bbaf1c8",
+      "reader_sha256": "b7ca17a8f1e07e0a61e04a0ca9cdaf3bef6f082622afaf93844218a7afdf89ce",
+      "quote_sha256": "92bf6d7c620b05d76f2b74e700dda713cec63a0d9b4a495164b58e723aebee9c",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 48,
+      "id": "DEF_CREDIT",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__234.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-234.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/ao-234.reader.txt",
+      "native_LF": [
+        3,
+        3
+      ],
+      "raw_sha256": "9e5bb5fe1311894b46b3490d9070453c493eb467763e34bd9dc641f40bbaf1c8",
+      "reader_sha256": "b7ca17a8f1e07e0a61e04a0ca9cdaf3bef6f082622afaf93844218a7afdf89ce",
+      "quote_sha256": "45a18c0a9d3b6c8042089de95e7a97cdd8b64caa6bf655f104ba11c7aaaa8a2f",
+      "actual_read": "All19new literal quotations actually read in two bounded batches:pending subset1\u201311/12\u201319; no whole rawbody reading implied. Paragraph PNNN readers preserve nativeLF with explicit prefixes."
+    },
+    {
+      "row": 49,
+      "id": "PERSON",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__1.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-1.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-1.reader.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "aa3116bd65c47709867eaba213a4f5a482aabe7075b4e0ae7b31fb8f2830d6ca",
+      "reader_sha256": "de759e13cf094ca682c262e335d66fc24cd924de04499b73810aa81116e1206d",
+      "quote_sha256": "d38fce6f394db2a66e7bb5b97ad2a463a14851ff5d67c3a0e23c3f64b6a76317",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 32,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 50,
+      "id": "PARTNERS",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__15.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-15.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/sources/estg-15.reader.txt",
+      "native_LF": [
+        1,
+        1
+      ],
+      "raw_sha256": "9c66144e9197fbf44d69007269443432cc8e67aa92b3c7fb1d2c732e3315cbb4",
+      "reader_sha256": "9831a4177d2a34a5d89e6f69b1dd9e8d04d4a63eb22621fe5ecda6f716882cfe",
+      "quote_sha256": "46df668c931fbc241be430859591f7e322d0ead207ee8450e69a35baf1b3ce8a",
+      "actual_read_bridge": {
+        "guide": "de-partners-and-part-year",
+        "quote_row": 35,
+        "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+      }
+    },
+    {
+      "row": 51,
+      "id": "ELSTER",
+      "official_url": "https://www.elster.de/eportal/formulare-leistungen/alleformulare/eingvorauszlg",
+      "actual_observation_check": "ELSTER heading35 directly independently opened in official webtool response; municipal root-observed sentence independently completed from retained official whole GewStG reader78\u201383 after single-provision web route timed out. No fabricated rawhash, no authenticated submission.",
+      "evidence": "new-primary-checks/estimated-official-observations.json and de-estimated-tax-municipal-source-completion.json"
+    },
+    {
+      "row": 52,
+      "id": "MUNICIPAL",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__1.html",
+      "actual_observation_check": "ELSTER heading35 directly independently opened in official webtool response; municipal root-observed sentence independently completed from retained official whole GewStG reader78\u201383 after single-provision web route timed out. No fabricated rawhash, no authenticated submission.",
+      "evidence": "new-primary-checks/estimated-official-observations.json and de-estimated-tax-municipal-source-completion.json"
+    }
+  ],
+  "additional_selected_actual_read": "Full root SolzG3 reader8paragraphs actually read to distinguish wage-period rules from prepayment/annual base; no source-wide law research beyond8paragraphs.",
+  "findings": "R55voluntary-interest actual-credit condition;R56precise old-topic destinations. Bothpending exactsuccessor."
+}

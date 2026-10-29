@@ -1,0 +1,101 @@
+{
+  "status": "PASS exact bounded R55\u201356 successor; no country verdict.",
+  "pair": {
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-estimated-tax.md",
+    "Guide_sha256": "27bd4da330db7fb8428c569af3f3e6a208d64623cda58343c02590a36b2ee454",
+    "Guide_bytes": 24560,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R55-R56-estimated-writer-successor-2026-10-29/de-estimated-tax.md",
+    "ledger_sha256": "88bc5239d4b429169e93bc23ec9975ef9156e5868e6dd702262d935024d31efb",
+    "current_rows": 133,
+    "old_topics": 459,
+    "source_index_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R55-R56-estimated-writer-successor-2026-10-29/source-quote-index.json",
+    "source_index_sha256": "3f523f0e8ce688e02e3bb247933733ddbcbdbdfa3dd74fadfff94b5aa061a745"
+  },
+  "manifest_members_rehashed": 20,
+  "operations": 2,
+  "full_inverse": true,
+  "current_native_rows_verified": 133,
+  "all459_old_identities_unchanged": true,
+  "all108_changed_oldtopics_and_destinations_actually_read": true,
+  "actual_current_selected_reread": [
+    [
+      19,
+      94
+    ],
+    [
+      147,
+      166
+    ]
+  ],
+  "original_oa_exact": 2,
+  "whole_worked_section_exact": true,
+  "metadata_URL_CTA_preserved": true,
+  "sources": [
+    {
+      "id": "R55.extent",
+      "native_LF": [
+        9,
+        9
+      ],
+      "quote_sha256": "af4a51d3d35be05232f6e37a2a8d96ae6c409079165c84e09050eaf408f7267c",
+      "actual_read": "Both full paragraphs independently read with all108 changed old-text/destination pairs in three36-record bounded batches; current19\u201394/147\u2013166 actual reread. Earlier wholepair legal reading retained."
+    },
+    {
+      "id": "R55.period-order",
+      "native_LF": [
+        4,
+        4
+      ],
+      "quote_sha256": "ceff8000d11e57ff74ae6754e51de46b08f985e99bee7f28cd1f4d4d1fc95d78",
+      "actual_read": "Both full paragraphs independently read with all108 changed old-text/destination pairs in three36-record bounded batches; current19\u201394/147\u2013166 actual reread. Earlier wholepair legal reading retained."
+    }
+  ],
+  "own_controls": [
+    {
+      "name": "qualifiedpartdoesnotcoverwholebalance",
+      "actual": "2000",
+      "expected": "2000"
+    },
+    {
+      "name": "uncoveredamount",
+      "actual": "3000",
+      "expected": "3000"
+    },
+    {
+      "name": "onefullmonthuncoveredinterest",
+      "actual": "9/2",
+      "expected": "9/2"
+    },
+    {
+      "name": "qualified2kportionmonthly",
+      "actual": "3",
+      "expected": "3"
+    },
+    {
+      "name": "bankdebitnotacceptedcredited",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "laterassessedreductionremainingtax1000limits2000payment",
+      "actual": "1000",
+      "expected": "1000"
+    },
+    {
+      "name": "youngestfirst2000thenolder1000",
+      "actual": "2000",
+      "expected": "2000"
+    },
+    {
+      "name": "remainingolderportion",
+      "actual": "500",
+      "expected": "500"
+    },
+    {
+      "name": "bothminimum400and100inclusive",
+      "actual": "True",
+      "expected": "True"
+    }
+  ],
+  "prior_frozen_wholepair": "de-estimated-tax-source-read-ledger.json/old-origin-check.json/own-controls.json remain unchanged: all133 current rows/52 prepared anchors/459 old origins,39 own controls."
+}

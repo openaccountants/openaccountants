@@ -1,0 +1,81 @@
+BZSt - Kapitalertragsteuerentlastung
+Hinweis zur Verwendung von Cookies
+Wir möchten zur Verbesserung unserer Website das Nutzungsverhalten analysieren und Zugriffsstatistiken erstellen. Dafür werden mit der Webanalyse-Software Matomo statistische Informationen erfasst und ausgewertet. Ausschließlich mit Ihrer Einwilligung speichern wir dafür ein Statistik-Cookie auf Ihrem Endgerät und greifen auf für diesen Zweck erforderliche Geräteinformationen Ihres Endgerätes zu. Zu keiner Zeit werden diese Daten mit persönlichen Daten in Verbindung gebracht oder an Dritte weitergegeben. Weitere Informationen finden Sie in unserer Datenschutzerklärung. Dort ist auch jederzeit der Widerruf Ihrer Einwilligung möglich.
+Einverstanden
+Springe direkt zu:
+Inhalt
+Hauptmenü
+Suche
+BZSt Online.Portal
+Kontakt
+English
+Leichte Sprache
+Gebärdensprache
+Bundeszentralamt für Steuern (Link zur Startseite)
+Dieses Dokument bestimmt, ob ein Zusatzlogo ausgegeben wird.
+Ein im Feld Wert eingehängtes Logo wird als Zusatzlogo ausgegeben.
+Ist das Feld Wert leer, so wird kein Zusatzlogo ausgegeben.
+Ablageoptionen:
+Wird dieses Dokument unterhalb des globalen Verzeichnisses "_config" abgelegt, so wird das Zusatzlogo auf allen Seiten ausgegeben.
+Um das Logo nur für bestimmte Bereiche auszugeben, kann das Konfigurationsdokument zusätzlich pfadabhängig abgelegt werden.
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Karriere
+Website durchsuchen
+Suchtext
+Suchtext
+Startseite
+Unternehmen
+Kapitalerträge und Entlastung
+Kapitalertragsteuerentlastung
+Vorlesen
+Kapitalertragsteuerentlastung
+Kapitalerträge unterliegen in Deutschland einem Steuerabzug in Höhe von 25 Prozent zuzüglich Solidaritätszuschlag in Höhe von 5,5 Prozent der Kapitalertragsteuer, unabhängig davon, ob die inländischen Erträge einem im Inland oder im Ausland ansässigen Empfänger zufließen.
+Im Ausland ansässige Empfänger können im schriftlichen Antragsverfahren durch Freistellung vom Steuerabzug oder Erstattung bereits einbehaltener und abgeführter Kapitalertragsteuer entlastet werden.
+Mehr erfahren Sie in der Rubrik Themenbereiche.
+Hinweis
+Aufgrund der Vielzahl der eingehenden Anträge, kann es im Bereich der Erstattung zu Bearbeitungszeiten von über 20 Monaten kommen.
+Die Anträge werden grundsätzlich in der zeitlichen Reihenfolge ihres Eingangs bearbeitet.
+Ein Antrag kann erst abschließend bearbeitet werden, wenn alle Unterlagen vollständig vorliegen. Welche Nachweise einzureichen sind, ist im Antragsformular und den dazugehörigen Erläuterungen aufgeführt. Bitte reichen Sie Anlagen ausschließlich über das BZSt-Online-Portal ein und nicht per Post oder E-Mail. Soweit im Einzelfall darüber hinaus Nachweise oder Angaben erforderlich sind, werden diese im Zuge der Bearbeitung angefordert.
+Aktuelle Meldungen
+Blätterfunktion
+Kapitalertragsteuerentlastung – Hinweise zur Prüfung von Disregarded Entities
+Datum06.10.2026
+Kapitalertragsteuer - Aktualisierung der Dokumente
+Datum06.08.2026
+Themenbereiche
+Elektronisches Antragsverfahren
+Hier erhalten Sie Informationen zum verpflichtenden elektronischen Antragsverfahren zur Entlastung von der Steuer auf Kapitalerträge nach § 50c Absatz 3 EStG / § 44a Absatz 9 EStG und § 50c Absatz 2 …
+Sonderkonstellation
+Hier erhalten Sie Informationen zum Antragsverfahren für die Entlastungsverfahren nach § 11 InvStG, § 32 Absatz 5 KStG und wegen vermeintlicher Verletzung der Kapitalverkehrsfreiheit (Art. 63 AEUV).
+Vorschriften
+Für die Kapitalertragsteuerentlastung bilden diverse Gesetze und BMF-Schreiben die rechtlichen Grundlagen. Hier sind die relevanten Rechtsgrundlagen aufgeführt.
+BZSt-Online-Portal
+Hier erhalten Sie Informationen zur Registrierung und Anmeldung im BZSt-Online-Portal für das Entlastungsverfahren von der Steuer auf Kapitalerträge.
+Seite empfehlen
+Unternavigation aller Website-Bereiche
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Themen A-Z
+Karriere
+Presse
+Newsletter
+Haben Sie Fragen?
+Anrufen
+Nachricht schreiben
+Zentrale Behördennummer
+Für alle Fragen zu Behörden in Deutschland
+Montag bis Freitag 08:00-18:00 Uhr
+115
+Mehr erfahren
+© Bundeszentralamt für Steuern
+Inhaltsverzeichnis
+Erklärung zur Barrierefreiheit
+Impressum
+Datenschutz

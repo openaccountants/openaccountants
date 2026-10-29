@@ -1,0 +1,13 @@
+[
+  "16646404427054680bc1b738efe3e45d9b077cfa\tf92ae0b7157000e79b6caba1a6c77df9b373d311\t2026-10-23\t[DE] Self-employed income tax: 2026 refresh (#613)",
+  "d5823cbf852b2a5e4522f6d5105f2e0f33d43633\t8158848e750e3d1f9697ac8a6594c1a520258744\t2026-10-23\tCorrect figures found in the DE, FR and GB pack audit (#590)",
+  "3244ccd6e8445aba16e6cea2747261a2e9336588\t3ad5ae99321268fa497a87d80e378f38f83fc541\t2026-07-04\tComplete frontmatter metadata on all 1,007 Guides + strict CI",
+  "1c626f5f4dc19bb21c80d70d08e533504f8af047\ta2566a20ade7eb3998ffff80fad008ec0f2206bd\t2026-06-12\tAdd reliance disclaimers across the repo",
+  "5ec07f8c9055c6a1d569afc67e136ef6dcef2b3a\t476d5159a93415aceb2d220cb91fe641f3edb7df\t2026-06-07\tFix broken links: non-www openaccountants.com 404s on every path",
+  "8530598b32a903045d1d3d0175ecd37f9470d854\t03ca5561e99fa9f82fad7b27dcd253b416f20470\t2026-05-26\tFrontmatter cleanup: UK/Germany/Portugal",
+  "c10fc33debd38a147a4d98764ab2f99f41edd819\te301b9166cb10f96a1207cf745bc5eb98b51d4d3\t2026-04-12\tRewrite all 34 income tax skills to v2.0 with transaction pattern libraries",
+  "5687a800ad962f4472546d8b03ca65b20203f7b0\tc76f68a1b7fdcdf35c59d4c61facf807cc4755ec\t2026-04-12\tRewrite 27 skills to Malta v2.0 structure + fill remaining stubs",
+  "caa19fbbe786d1e07249943012c1284f93bcd19c\t85fd4138fcd0b7b5dbcaa8f68366f18dd011c46f\t2026-04-11\tUpdate all disclaimers: point to openaccountants.com for verified versions",
+  "2dc1cafc8ec856027755dfe9b05ff7e821f9dcd1\t869208a6903614dca45f38df6a97190ede5857f3\t2026-04-11\tAdd 10 income tax skills for 8 countries (Q2)",
+  "2fd1cb444929cad842cfd9d5b59b75b6c88ef112\t\t2026-04-11\t349 tax skills across 134+ countries — initial commit"
+]

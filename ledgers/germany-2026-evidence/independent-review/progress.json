@@ -1,0 +1,325 @@
+{
+  "scope": "All25frozen wholepair current/source/oldorigin reading and final exact reviewed repairs complete. README final scope binding separately pending. Six real partial domains retained, not universalordinarycountrycomplete.",
+  "read_convention": "literal LF, reader.split(\"\\n\"); acquisition/hash checks are not substantive reading",
+  "initial_failed_emission": {
+    "path": "writer-A/ledgers/de-income-tax.md",
+    "requested": "1\u2013100",
+    "result": "truncated48,588tokens; NOT credited as complete actual row/source reading"
+  },
+  "actual_read_before_compaction": {
+    "instructions": [
+      "root user AGENTS",
+      "worktree AGENTS entire90lines",
+      "docs/skill-template.md1\u201375",
+      "dispatch.md",
+      "country-freeze.json all25pairs+5companions"
+    ],
+    "writer_reports": [
+      "A writer-A-handover-report.md complete",
+      "B writer-handover.md complete",
+      "root estimated report.md complete",
+      "root rental report.md complete"
+    ],
+    "de-income-tax": {
+      "compact_claim_rows": [
+        [
+          1,
+          192
+        ]
+      ],
+      "source_quote_rows": [
+        [
+          1,
+          96
+        ]
+      ],
+      "source_identity_and_literal_membership_checked_with_each_quote": true,
+      "not_yet_read": {
+        "claims": [],
+        "quotes": [],
+        "remaining_work": [
+          "old-topic source spotchecks",
+          "independent example/boundary calculations",
+          "final evidence and precise row dispositions; two concrete findings sent"
+        ]
+      }
+    }
+  },
+  "pending": "FinalREADMEsixpartial exactsuccessor and final report/manifest/pathpackaging only. No new law/source/body reading required absent a changed or failed claim.",
+  "review_progress": {
+    "de-income-tax": {
+      "current_rows_read": 192,
+      "quotes_direct_read": 96,
+      "old_origins": 519,
+      "old_semantic_spots": 14,
+      "own_controls": 39,
+      "status": "Completed original frozenwholepair actualreading plus applicable exact R01\u201308 successor independentlyPASS; final scope matrix retains realordinarylimits.",
+      "accepted_guide_sha256": "afcb21f5552d8db8463ed4d9c7ce8782227dc3c6fd573bb77bc673af4cd596c6",
+      "accepted_ledger_sha256": "a2356f7fa65dd60d659c8a7fea9ebf0d3fc70a7857d2a1a8e055bba79abdea0a"
+    },
+    "de-self-employed-income-tax": {
+      "current_rows": 193,
+      "exact_read_bridge_to_income": 192,
+      "new_attribution_direct": 1,
+      "quotes_exact_bridge": 96,
+      "old_origins": 385,
+      "old_semantic_spots": 7,
+      "same_original_cases_recomputed_via_exact_bridge": 2,
+      "status": "Completed original frozenwholepair actualreading plus applicable exact R01\u201308 successor independentlyPASS; final scope matrix retains realordinarylimits.",
+      "accepted_guide_sha256": "2280d3e51b479079e099ff054b5d9dc83c8d390fb3b63e86a4db5ea124a74ebe",
+      "accepted_ledger_sha256": "7a119380b2018ccdb73c495e90625f0f22616d57652c2437558f63a8410714c5"
+    },
+    "de-employee-income-tax": {
+      "current_rows_read": 218,
+      "quotes_direct_read": 52,
+      "quotes_exact_bridge": 44,
+      "old_origins": 435,
+      "old_semantic_spots": 8,
+      "own_controls": 32,
+      "status": "Frozenwholepair plus exact bounded R57\u201396 chain independently PASS; genuine precise ordinary limits retained.",
+      "accepted_guide_sha256": "32b10213e3bc5d405ac89a1479b3a9ab07133a62320100c5788195a667764f3c",
+      "accepted_ledger_sha256": "035e5e2442882e2f59530447502138bae2e89c6ea31af109166626fd1ee2b6ce"
+    },
+    "de-partners-and-part-year": {
+      "current_rows_read": 177,
+      "quotes_direct_read": 32,
+      "quotes_exact_bridge": 35,
+      "old_origins": 353,
+      "old_semantic_spots": 13,
+      "own_controls": 29,
+      "status": "Completed original frozenwholepair actualreading plus applicable exact R01\u201308 successor independentlyPASS; final scope matrix retains realordinarylimits.",
+      "accepted_guide_sha256": "0839172b17872bebeed72749eb57e3353d83c4a6132dbb8e02f04ec0ceefb245",
+      "accepted_ledger_sha256": "4a7e259948d408fc21fe01cf1f4e61231c0d65e1a159a333948e68b774527dc3"
+    },
+    "de-corporate-tax": {
+      "current_rows_read": 229,
+      "quotes_direct_read": 95,
+      "quotes_exact_or_subscope_bridge": 25,
+      "old_origins": 228,
+      "old_semantic_spots": 14,
+      "own_controls": 33,
+      "status": "Frozen whole pair + exact R01\u201317 applicable successors independently supported; ordinary-limit disposition later.",
+      "accepted_guide_sha256": "926723924c9092e0ab651796b78a84164ee10a5ea92015fa1c5a98afeebf4378",
+      "accepted_ledger_sha256": "f87125b4aed3972529c99ea72b0f2a1c09c9917db830b2c60b56dae0e2fb5859"
+    },
+    "leaving-germany-exit-tax": {
+      "current_units_read": 112,
+      "all_selected_quotes_direct_read": 27,
+      "old_origins": 112,
+      "old_semantic_spots": 8,
+      "own_controls": 18,
+      "status": "Frozen whole pair + exact R01\u201317 applicable successors independently supported; ordinary-limit disposition later.",
+      "accepted_guide_sha256": "af2fa313362b1a41d77c68ca1454e8fdb87290b6c96ccabc533ac154d2b4689d",
+      "accepted_ledger_sha256": "e2c6e7382ebe53e66822c927f2c85ea1d7a88fda49e3780bae701e76b042a2be"
+    },
+    "de-trade-tax": {
+      "all_frozen_current_rows_read": 97,
+      "all_quotes_direct_read": 62,
+      "actual_old_origins": 120,
+      "semantic_spots": 12,
+      "own_controls": 32,
+      "status": "Frozen whole pair + exact R01\u201317 applicable successors independently supported; ordinary-limit disposition later.",
+      "accepted_guide_sha256": "41138a1e3f25dd1bbcd831ffa2110a80edf06d021505c5ae84794380ef07e953",
+      "accepted_ledger_sha256": "7e2c5b77e2bd393690fe4ac3c1bdfdeb0585bcd238adc51c2b357ce071bcabc0"
+    },
+    "de-einkommensteuer-freelancer": {
+      "all_frozen_current_rows_read": 135,
+      "quotes_direct_read": 44,
+      "same_raw_quotation_word_bridges": 54,
+      "old_origins": 146,
+      "old_semantic_spots": 16,
+      "own_controls": 33,
+      "status": "Frozen whole pair + exact R01\u201317 applicable successors independently supported; ordinary-limit disposition later.",
+      "accepted_guide_sha256": "424a96380e879606f6e7b35211b32c99290361c805ad19c7b6c24babd84a9d19",
+      "accepted_ledger_sha256": "313a3e33037fcad6822dbf5df4b6f4071efe07a88b47dc89622bfe25bdcc0f1d"
+    },
+    "de-uk-employer-first-hire": {
+      "current_rows_read": 31,
+      "all_source_quotes_direct_read": 29,
+      "old_origins": 62,
+      "old_semantic_spots": 7,
+      "own_decision_controls": 11,
+      "status": "Frozenwholepair complete and no repair finding; Germany-only local-hire scope preserved, no UKtax/immigrationattestation.",
+      "accepted_guide_sha256": "7f2bb0b78a274a979c60708a8d2967859daed0a46618ed2b76e6e2787fd7f0ff",
+      "accepted_ledger_sha256": "50e05f26a2529421c0ce3c81f69228cd3ee16116f1d5bedcdd37abe93fd7f8b4"
+    },
+    "de-non-resident-tax": {
+      "all_current_units_read": 203,
+      "new_source_quotes_actually_read": 38,
+      "same_raw_exact_words_prior_bridges": 40,
+      "old_actual_origins": 404,
+      "old_semantic_spots": 12,
+      "own_controls": 32,
+      "status": "Frozen whole-pair + exact R18\u201322 independently supported; pre-existing ordinary source reservations retained for final country assessment.",
+      "accepted_guide_sha256": "2240579d7a85e98bbc9f6994ccd0a9a2d99025d4f1fa8c6ed94b18c7e7a25174",
+      "accepted_ledger_sha256": "3ee8e1cb8adb832f2953b24c0d54ae44c99c6733c8947f72a40a487e59213349"
+    },
+    "de-vat-annual-and-special-schemes": {
+      "all_current_units_read": 174,
+      "new_source_quotes_actually_read": 47,
+      "same_raw_exact_words_prior_bridges": 20,
+      "old_actual_origins": 347,
+      "old_semantic_spots": 12,
+      "own_controls": 40,
+      "status": "Frozen whole pair + exact R23\u201325/terminology successor independently supported; existing OSS weekend question retained.",
+      "accepted_guide_sha256": "c9af14ff3cd68fa52372d444ff37c917860ae5bd6fa8ff645c08cdee03397d71",
+      "accepted_ledger_sha256": "d22dd5268409a71a0124e6888da0912266991291b7e6ad4e5576480f631951ed"
+    },
+    "germany-vat-return": {
+      "all_frozen_current_rows_read": 116,
+      "quotes_direct_read": 58,
+      "same_raw_quotation_word_bridges": 15,
+      "old_origins": 335,
+      "old_semantic_spots": 16,
+      "own_controls": 36,
+      "status": "Frozen whole pair + exact R26\u201331 independently supported; existing gift/receipt/foreign-office/whole-euro-base boundaries retained for finite country assessment.",
+      "accepted_guide_sha256": "b0aac8b240ca637a881daa19ff6fd3eee0eee13bb111ce92d6dee3a49ddf4261",
+      "accepted_ledger_sha256": "2baab2cd67a2b2883eb3245e49ce69dc0c9033acbfc6ce7bd7cc9701efe094aa"
+    },
+    "de-capital-gains": {
+      "all_frozen_current_rows_read": 83,
+      "quotes_direct_read": 44,
+      "same_raw_quotation_word_bridges": 27,
+      "old_origins": 129,
+      "old_semantic_spots": 16,
+      "own_controls": 41,
+      "status": "Frozen whole pair + exact R32\u201336 independently supported; genuine inherited statechurch/unreadBMFbody boundaries retained for finite country assessment.",
+      "accepted_guide_sha256": "5ec577aa8062f1fdc8a1af2fcc8fba597962776896c9ec0d5d50dea661280229",
+      "accepted_ledger_sha256": "f08a37bc0bc0ecd6331a2e4ce591f21775bc51afc40eb5a6087e56c77f2b3226"
+    },
+    "germany-einvoice": {
+      "all_frozen_current_units_read": 365,
+      "direct_new_quotes": 130,
+      "exact_prior_actual_read_bridges": 11,
+      "old_actual_origins": 527,
+      "old_semantic_spots": 23,
+      "own_controls": 41,
+      "status": "Frozen whole pair + exact R37\u201343 independently supported; actual technical portal checks and wrong-format fine interpretation retained for finite country assessment.",
+      "accepted_guide_sha256": "d2017d1ab2cce52ae1d416036f9d18f331b35f1aa7e9221ab24307d126b3bddb",
+      "accepted_ledger_sha256": "bcb1f8a134389aad3c5e7ac93511450b4cb4486bb3bbd194f32e0b87ef136f99"
+    },
+    "de-crypto-tax": {
+      "all_frozen_current_units_read": 156,
+      "direct_new_quotes": 87,
+      "exact_prior_actual_read_bridges": 15,
+      "old_actual_origins": 346,
+      "old_semantic_spots": 16,
+      "own_controls": 52,
+      "status": "Wholepair+R44\u201346+R112 source-scope/header successor independentlyPASS; absence of ministry-specificNFTguidance not equated to universallyunsettledlaw.",
+      "accepted_guide_sha256": "63a6ef182271bbf75f149139f08aa8184aa266dab06a266638aec5cecb853699",
+      "accepted_ledger_sha256": "6c7d1d95447bd117bc0bac1a15ea3e182beacde3c7593a961b2f230d9d390230"
+    },
+    "germany-to-switzerland-cross-border-tax": {
+      "all_frozen_current_units_read": 160,
+      "direct_new_quotes": 39,
+      "exact_prior_actual_read_bridges": 25,
+      "old_actual_origins": 281,
+      "old_semantic_spots": 14,
+      "own_controls": 51,
+      "status": "Frozenwholepair+exactR47\u201354 independentlysupported; ordinary salary183/proof/tail/pension/dividend/source/extensiongates supplied. Existing20percent/homeoffice/currency/ordinancequestions retained for finitecountryassessment.",
+      "accepted_guide_sha256": "796c662a90d1493b7b63a1bc83093175168016bfc5a5a7f312f8759471f838b5",
+      "accepted_ledger_sha256": "e5bcb494932847ff0e36d63f35d35078e6c1de0717c3207baac9e6252e6024be"
+    },
+    "de-estimated-tax": {
+      "all_current_units_read": 133,
+      "quotes_direct_new": 19,
+      "exact_prior_actual_read_bridges": 31,
+      "official_observation_anchors_checked": 2,
+      "old_actual_origins": 459,
+      "old_semantic_spots": 16,
+      "own_controls": 39,
+      "status": "Frozenwholepair plus exact R55\u201356 independently supported; source-qualified voluntary payment extent/order and precise108oldroutes. Existing actual church and bankpattern boundaries retained.",
+      "accepted_guide_sha256": "27bd4da330db7fb8428c569af3f3e6a208d64623cda58343c02590a36b2ee454",
+      "accepted_ledger_sha256": "88bc5239d4b429169e93bc23ec9975ef9156e5868e6dd702262d935024d31efb"
+    },
+    "de-treaty-withholding-rates": {
+      "all_frozen_current_units_read": 165,
+      "direct_new_quotes": 85,
+      "exact_prior_actual_read_bridges": 24,
+      "old_actual_origins": 329,
+      "old_semantic_spots": 17,
+      "own_controls": 52,
+      "status": "Frozenwholepair plus exact bounded R57\u201396 chain independently PASS; genuine precise ordinary limits retained.",
+      "accepted_guide_sha256": "c00779b73dc6a31a1d8d5bfe153800399bf7a332c9be77159953aeb05f4813e8",
+      "accepted_ledger_sha256": "a598de312ae0f0d3fde454a7a73b3fc0fbb4a7b8afd914e4ae191a3a58dc6df1"
+    },
+    "germany-transfer-pricing": {
+      "all_frozen_current_units_read": 316,
+      "direct_new_quotes": 123,
+      "exact_prior_actual_read_bridges": 8,
+      "old_actual_origins": 398,
+      "old_semantic_spots": 22,
+      "own_controls": 44,
+      "status": "Frozenwholepair plus exact bounded R57\u201396 chain independently PASS; genuine precise ordinary limits retained.",
+      "accepted_guide_sha256": "e0fb36c2e05112e253ac55ce2bd1079fe537dfaac9638c662e7f7fca68fe5783",
+      "accepted_ledger_sha256": "3236c3f7e39e66871cab14dac6c67fd45e75eb016c5967d0a566b52d6f36441d"
+    },
+    "germany-payroll": {
+      "all_frozen_current_units_read": 346,
+      "direct_new_quotes": 78,
+      "exact_prior_actual_read_bridges": 29,
+      "old_actual_origins": 512,
+      "old_semantic_spots": 20,
+      "own_controls": 78,
+      "status": "Frozenwholepair plus exact bounded R57\u201396 chain independently PASS; genuine precise ordinary limits retained.",
+      "accepted_guide_sha256": "16b1a73defe4c7e4971d7982ccea5713766875abb49b8ac7edb902545d2ff075",
+      "accepted_ledger_sha256": "cff96dcbe2b4bb4af5b13b8bc21afbccd5384c1d545a118b80bea622248418db"
+    },
+    "de-social-contributions": {
+      "all_frozen_current_rows_read": 187,
+      "quotes_direct_read": 75,
+      "same_raw_quotation_word_bridges": 21,
+      "old_origins": 203,
+      "old_semantic_spots": 20,
+      "own_controls": 48,
+      "status": "Frozenwholepair plus exact bounded R57\u201396 chain independently PASS; genuine precise ordinary limits retained.",
+      "accepted_guide_sha256": "ebce79a0f32c40dfd3c2ee10589761c1332f2f94954a51ffd6c908bd9c8c8fad",
+      "accepted_ledger_sha256": "ed4a3d521d8f2c494ffb1b608be4fd6bab72772fd32a831eccad80f0cad09611"
+    },
+    "de-payroll-benefits": {
+      "all_frozen_current_rows_read": 90,
+      "quotes_direct_read": 52,
+      "same_raw_quotation_word_bridges": 6,
+      "old_origins": 73,
+      "old_semantic_spots": 20,
+      "own_controls": 49,
+      "status": "Frozenwholepair plus exact bounded R57\u201396 chain independently PASS; genuine precise ordinary limits retained.",
+      "accepted_guide_sha256": "5cfe787fc72884808d51928252fb2a8a42c3442a50da315c846fffc3ea2f24eb",
+      "accepted_ledger_sha256": "b8248d2ab2ca1824382ef665520998565775c5f1c77d7ecaa0e057787f59c0ec"
+    },
+    "de-payroll": {
+      "all_frozen_current_rows_read": 136,
+      "quotes_direct_read": 46,
+      "same_raw_quotation_word_bridges": 74,
+      "old_origins": 175,
+      "old_semantic_spots": 20,
+      "own_controls": 71,
+      "status": "Frozenwholepair plus exact bounded R57\u201396 chain independently PASS; genuine precise ordinary limits retained.",
+      "accepted_guide_sha256": "7a318a63c5364e3d0e95c06f1a8ebd9aae02e0355d93562e97918102395e56d5",
+      "accepted_ledger_sha256": "4e7983d13a1bd95585ffedfdb2aeec4f57134b2c29ca90c84195ea32a6cff1bf"
+    },
+    "germany-tax-optimization": {
+      "all_frozen_current_units_read": 322,
+      "direct_new_quotes": 17,
+      "exact_prior_actual_read_bridges": 100,
+      "old_actual_origins": 455,
+      "old_semantic_spots": 20,
+      "all_pre_refresh_routes_read": 134,
+      "own_controls": 40,
+      "status": "Frozenwholepair+exact R97\u2013108/R113\u2013114 independentlyPASS. Positive ordinaryRiesterrestored; exactoldroute/productscope preserved.",
+      "accepted_guide_sha256": "4f360c9f88fcfa601cba004d4764aa2089e3d493582745fcb6b06c330be5f9ce",
+      "accepted_ledger_sha256": "a2f35f1b515aecdb84c5f268c4dc7bd0d85c470d5825f6c13f751157eef9c867"
+    },
+    "de-rental-income": {
+      "frozen_current_units_actually_read": 289,
+      "direct_quotes_read": 92,
+      "exact_prior_read_bridges": 43,
+      "actual_old_origins": 550,
+      "old_semantic_spots": 24,
+      "own_controls": 54,
+      "status": "Frozenwholepair+exact R109\u2013111 independently PASS. Actual remainingtravel/salemonth/shorter-life-source/treaty/procedural limits kept precise.",
+      "accepted_guide_sha256": "6f97644830c828129f0e7343809d7d42022297e444ff4e840a2f35594f36715e",
+      "accepted_ledger_sha256": "2302bb3ddb1e1197523d20d77c817624b8134644cc77ddce1eae4628f537a838"
+    }
+  }
+}

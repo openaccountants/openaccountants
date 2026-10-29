@@ -1,0 +1,13 @@
+{
+  "slug": "de-vat-annual-and-special-schemes",
+  "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-vat-annual-and-special-schemes.md",
+  "Guide_sha256": "6efaea2e7187a02ef34952cf07803f8fb80516c8def1df3fe6b7158c2e7fe196",
+  "bytes": 35216,
+  "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R23-R25-annual-VAT-writer-successor-2026-10-29/ledgers/de-vat-annual-and-special-schemes.md",
+  "ledger_sha256": "785e75dafb9ec0abcec8b42cc4a5d4ae93f19ce276dde550e27a31856a71ef48",
+  "current_rows": 177,
+  "prior_current_rows": 174,
+  "old_topics": 347,
+  "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/de-vat-annual-and-special-schemes.md",
+  "prior_ledger_sha256": "bffbf9a62569d8a2e27a6e6dee0c21f4d66238c603974e327e6bde93feea923f"
+}

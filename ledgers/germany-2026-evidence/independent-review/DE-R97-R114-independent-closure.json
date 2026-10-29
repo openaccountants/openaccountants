@@ -1,0 +1,561 @@
+{
+  "status": "PASS exact final R97\u2013108 plus R113\u2013114 planning successor; no universal product ranking/countrycompleteclaim.",
+  "final_pair": {
+    "slug": "germany-tax-optimization",
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-tax-optimization.md",
+    "Guide_sha256": "4f360c9f88fcfa601cba004d4764aa2089e3d493582745fcb6b06c330be5f9ce",
+    "Guide_bytes": 52238,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R113-R114-planning-writer-successor-2026-10-29/ledgers/germany-tax-optimization.md",
+    "ledger_sha256": "a2f35f1b515aecdb84c5f268c4dc7bd0d85c470d5825f6c13f751157eef9c867",
+    "rows": 323,
+    "prior_rows": 323,
+    "old_origins": 455,
+    "own_selected_quotes": 5,
+    "ops": 3
+  },
+  "stages": [
+    {
+      "successor_folder": "germany-DE-R97-R108-planning-writer-successor-2026-10-29",
+      "manifest_members_rehashed": 23,
+      "pairs": [
+        {
+          "pair": {
+            "slug": "germany-tax-optimization",
+            "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-tax-optimization.md",
+            "Guide_sha256": "45b98bb40ee1749c47a231894efa9d643177939b66fb9b051b61264c63abcde0",
+            "bytes": 49736,
+            "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R97-R108-planning-writer-successor-2026-10-29/ledgers/germany-tax-optimization.md",
+            "ledger_sha256": "7c49b980b05727f102d8ae5a8dcfcc92390c01db9a06c893e835c8cfe7718562",
+            "rows": 323,
+            "prior_rows": 322,
+            "old_topics": 455,
+            "pre_refresh_semantic_routes": 134,
+            "current_main_origins": 321
+          },
+          "before_sha256": "fa5036e6c87c3c778fcd65270a5a151ec007dd37e46d536ab3ff44ee6178c403",
+          "operations": 22,
+          "full_inverse": true,
+          "all_native_current_rows": 323,
+          "original_oa_byteexact": 0,
+          "protected_metadata_CTA_oldURLorder": true
+        }
+      ],
+      "sources": [
+        {
+          "id": "R97-108.E6-2",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud09e7e216c8b5621.reader.txt",
+          "raw_sha256": "7888cea55ee179f051c84a3dd9cee5d48871e33b3789d28e0fa18a509e40e40f",
+          "reader_sha256": "f4d5425829ef0a78a20634206218b78092ff602e0379ff9a56fa173685e8cf2b",
+          "native_LF": [
+            84,
+            84
+          ],
+          "quote_sha256": "4787b45ec28e9c96253b2fddaa8e25808a1e554b6692b0ff496d162adbcd1778",
+          "exact_prior_read_bridge": [
+            "de-einkommensteuer-freelancer-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.AO149-2",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+          "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+          "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+          "native_LF": [
+            8,
+            8
+          ],
+          "quote_sha256": "23bfcd02fb0c2941fc041c97a34697e13aa3cded0205b93b1457275608e72e3c",
+          "exact_prior_read_bridge": [
+            "de-crypto-tax-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.AO108",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3859bf32d53897c9.reader.txt",
+          "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+          "reader_sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9",
+          "native_LF": [
+            9,
+            9
+          ],
+          "quote_sha256": "6d22b5c1a15f4b1a75caa5aa3b16dcb5e5ffcf4f80488918ed5261c136d40df4",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.TARIFF",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2aee0a9326f9185f.reader.txt",
+          "raw_sha256": "053bfcfc2ba961a3013eb631921957ce8a50ec3e4347bb6f0c2befaf765e0f50",
+          "reader_sha256": "b037ef07e71ac2eebadccb3250d16667924ca95b689c2db86eee60207585e2d7",
+          "native_LF": [
+            7,
+            22
+          ],
+          "quote_sha256": "39078d68e2cd9a89a80c87d536b9df274b6e0798c5001c89905eb3cb569f6e71",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.GIFTS",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+          "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+          "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+          "native_LF": [
+            16,
+            17
+          ],
+          "quote_sha256": "09ac58f68c5c4f463c96f076aaafe6ad207a77c8f62e39c1e60017dff09ca737",
+          "exact_prior_read_bridge": [
+            "germany-vat-return-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.DAY",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+          "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+          "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+          "native_LF": [
+            32,
+            33
+          ],
+          "quote_sha256": "431a581c01db0bf7a6d59712a3328d5f9cc7087605eb9310bfd3c40e6f1db0d5",
+          "exact_prior_read_bridge": [
+            "de-einkommensteuer-freelancer-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.ROOM",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+          "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+          "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+          "native_LF": [
+            30,
+            31
+          ],
+          "quote_sha256": "ef65e1e7ba75e629c874153fef4a866fac92797d643bbe350caea4c68afb6c2a",
+          "exact_prior_read_bridge": [
+            "de-einkommensteuer-freelancer-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.COMMUTEBRIDGE",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+          "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+          "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+          "native_LF": [
+            26,
+            27
+          ],
+          "quote_sha256": "f577660e62bca3e3114baa982c66a55344a519b48d71adf85d4571f121ee70b3",
+          "exact_prior_read_bridge": [
+            "de-einkommensteuer-freelancer-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.COMMUTE",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5d05d24ddb446c3d.reader.txt",
+          "raw_sha256": "82ce506e5bebc2a7b9964e715fa898bc06d4eba0602e62d24606b2e6b49e23bb",
+          "reader_sha256": "c5ad161d9234d437d840469dd3defee8b76019704a0b7de9562fb13d88b6b971",
+          "native_LF": [
+            13,
+            14
+          ],
+          "quote_sha256": "763492e27446b5126817dd45dacc779bd7017d975f882b52ff8706860f4e269e",
+          "exact_prior_read_bridge": [
+            "germany-tax-optimization-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.MEALS",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5d05d24ddb446c3d.reader.txt",
+          "raw_sha256": "82ce506e5bebc2a7b9964e715fa898bc06d4eba0602e62d24606b2e6b49e23bb",
+          "reader_sha256": "c5ad161d9234d437d840469dd3defee8b76019704a0b7de9562fb13d88b6b971",
+          "native_LF": [
+            38,
+            48
+          ],
+          "quote_sha256": "2b9d8d175dd07bf8c3141cc9eed11dfede3ce815d050ecd6eb41424c24b272f5",
+          "exact_prior_read_bridge": [
+            "germany-tax-optimization-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.POOL",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud09e7e216c8b5621.reader.txt",
+          "raw_sha256": "7888cea55ee179f051c84a3dd9cee5d48871e33b3789d28e0fa18a509e40e40f",
+          "reader_sha256": "f4d5425829ef0a78a20634206218b78092ff602e0379ff9a56fa173685e8cf2b",
+          "native_LF": [
+            85,
+            85
+          ],
+          "quote_sha256": "0bd04adb3278b7bbb6c334cee1574e63a20f0ac398d97f04dcbf3e56f4935781",
+          "exact_prior_read_bridge": [
+            "de-einkommensteuer-freelancer-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.PENSIONELIG",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f1b9a0058651caf.reader.txt",
+          "raw_sha256": "f970952c77597337017ee213013219bd490a91f1f0b7048bbd8cb697d1d9befd",
+          "reader_sha256": "77f1ca70d5a033d9ba5ce1e113f80de73523cc992760cda326d209379357818e",
+          "native_LF": [
+            13,
+            21
+          ],
+          "quote_sha256": "deeea4ceaeaf0000b0581e46c32cd610cfaa74f45a1916557b4f39f6947917f7",
+          "exact_prior_read_bridge": [
+            "de-einkommensteuer-freelancer-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.PENSIONCAP",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f1b9a0058651caf.reader.txt",
+          "raw_sha256": "f970952c77597337017ee213013219bd490a91f1f0b7048bbd8cb697d1d9befd",
+          "reader_sha256": "77f1ca70d5a033d9ba5ce1e113f80de73523cc992760cda326d209379357818e",
+          "native_LF": [
+            81,
+            88
+          ],
+          "quote_sha256": "017384acb91aca8fba9b10855147989650b3d72806a8754d27f3b6795757754a",
+          "exact_prior_read_bridge": [
+            "de-social-contributions-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.INPUTVAT",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9587b12f47ebdc37.reader.txt",
+          "raw_sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+          "reader_sha256": "e819ae2c4a6a65834fee9861adf1ec100b520126163e240fe08fe6a6d1e80d74",
+          "native_LF": [
+            16,
+            16
+          ],
+          "quote_sha256": "b93c0fb2c42cf1c3954ce18de5349594f3cf8a7922dc9ce21eba44eea57d504d",
+          "exact_prior_read_bridge": [
+            "de-rental-income-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.INPUTRULE",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9587b12f47ebdc37.reader.txt",
+          "raw_sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+          "reader_sha256": "e819ae2c4a6a65834fee9861adf1ec100b520126163e240fe08fe6a6d1e80d74",
+          "native_LF": [
+            7,
+            8
+          ],
+          "quote_sha256": "d4c6eaea64a6e8aa54bd23cd3ab9215efdbd8baf4670a6b210284cb7caae6931",
+          "exact_prior_read_bridge": [
+            "de-rental-income-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.MODELLOSS",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc0941f6152850d36.reader.txt",
+          "raw_sha256": "e96b5fd42e3c47c38cf75ae34f34bbfffaf7ad0d237993079f2db9e131db3011",
+          "reader_sha256": "86e0c764ba6420834b543d6492f2f22c91520c90e4620609d399ab7d394a03da",
+          "native_LF": [
+            7,
+            9
+          ],
+          "quote_sha256": "75a8524892fc39e890a2d0ec34a59b02bd52d1ce79ce917ecefd073ecb9f2222",
+          "exact_prior_read_bridge": [
+            "germany-tax-optimization-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.VATCASH",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaaaefc3c6d8e6109.reader.txt",
+          "raw_sha256": "b9bde56785a4fbd9d730441b9f0d155b0715a29e2e3191916db5b14cb58d7f2f",
+          "reader_sha256": "5fe7450c4aa74b69b8c61fbb322e9c03e367160b145e9edcf6c4e5df19e5d583",
+          "native_LF": [
+            7,
+            15
+          ],
+          "quote_sha256": "73fc23da0a235cdac0650f52abb4453191b5506142aea257f9d6d74f56ed3f8a",
+          "exact_prior_read_bridge": [
+            "de-vat-annual-and-special-schemes-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R97-108.VATSUPPLY",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5410aa1779126db8.reader.txt",
+          "raw_sha256": "651a989b51b160c85addf12be5cceabf2e668b8f945fcdd6aca64e5baa867967",
+          "reader_sha256": "f6e9f249c3c65e9b7ff053a32dde082358a2c8b87c92d51c85b082948746e6aa",
+          "native_LF": [
+            7,
+            9
+          ],
+          "quote_sha256": "a192f42d236bc7b1576d3a902ae59f26c7d81e2f33275096a535243a08ce2e76",
+          "exact_prior_read_bridge": [
+            "de-vat-annual-and-special-schemes-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R106.business-training",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+          "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+          "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+          "native_LF": [
+            56,
+            56
+          ],
+          "quote_sha256": "88488133cf64aac3bbf7eaea73cf6819bd06b51bd48a78cbda36edf2cd2c3a07",
+          "exact_prior_read_bridge": [],
+          "actual_read_resolution": "R106actual4(9)native56 and fullR26place7\u201335 directly reread in current bounded closure; exact retained raw/reader/quote identities. Remaining19quotes and5Riesterquotes explicit genuine wholeplanning/sourcefindings reading bridges."
+        },
+        {
+          "id": "R26.planning-bridge",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB165.txt",
+          "raw_sha256": "f0fec2764f7e3fa8439972db8c9980a9dab6740d22b3d055015d2d01093f3f5b",
+          "reader_sha256": "a0c5cd471a10d34683a0bbbec2f257871f079e0e6e3b159fa15154a387990a59",
+          "native_LF": [
+            7,
+            35
+          ],
+          "quote_sha256": "cb45d12b96c105c81de580fce499ee6d400eb63680f9f4a203a746945a031299",
+          "exact_prior_read_bridge": [],
+          "actual_read_resolution": "R106actual4(9)native56 and fullR26place7\u201335 directly reread in current bounded closure; exact retained raw/reader/quote identities. Remaining19quotes and5Riesterquotes explicit genuine wholeplanning/sourcefindings reading bridges."
+        }
+      ],
+      "status": "PASS final composed planning chain, read subject to final R113/114 successor. Initial23member target remains historical with R113/114 findings, not retroactively complete."
+    },
+    {
+      "successor_folder": "germany-DE-R113-R114-planning-writer-successor-2026-10-29",
+      "manifest_members_rehashed": 17,
+      "pairs": [
+        {
+          "pair": {
+            "slug": "germany-tax-optimization",
+            "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-tax-optimization.md",
+            "Guide_sha256": "4f360c9f88fcfa601cba004d4764aa2089e3d493582745fcb6b06c330be5f9ce",
+            "Guide_bytes": 52238,
+            "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R113-R114-planning-writer-successor-2026-10-29/ledgers/germany-tax-optimization.md",
+            "ledger_sha256": "a2f35f1b515aecdb84c5f268c4dc7bd0d85c470d5825f6c13f751157eef9c867",
+            "rows": 323,
+            "prior_rows": 323,
+            "old_origins": 455,
+            "own_selected_quotes": 5,
+            "ops": 3
+          },
+          "before_sha256": "45b98bb40ee1749c47a231894efa9d643177939b66fb9b051b61264c63abcde0",
+          "operations": 3,
+          "full_inverse": true,
+          "all_native_current_rows": 323,
+          "original_oa_byteexact": 0,
+          "protected_metadata_CTA_oldURLorder": true
+        }
+      ],
+      "sources": [
+        {
+          "id": "OPT.RIESTER",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e9c51969bc671dd.reader.txt",
+          "raw_sha256": "f826f1a860a00fe79b1fe1bb1cb921f4e59b02be61cbefd4d8baea151cd68926",
+          "reader_sha256": "27137a2a852ac0fd8840d155543d6239451746f1e2422e4d3ef832a24b944014",
+          "native_LF": [
+            7,
+            8
+          ],
+          "quote_sha256": "63ca12f99b1a1e77a3d70b9a99d170e0a4fcd8033239e36f80f8e00bec738b34",
+          "exact_prior_read_bridge": [
+            "germany-tax-optimization-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "OPT.RIESTERTEST",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e9c51969bc671dd.reader.txt",
+          "raw_sha256": "f826f1a860a00fe79b1fe1bb1cb921f4e59b02be61cbefd4d8baea151cd68926",
+          "reader_sha256": "27137a2a852ac0fd8840d155543d6239451746f1e2422e4d3ef832a24b944014",
+          "native_LF": [
+            24,
+            24
+          ],
+          "quote_sha256": "c27e29532fa15e5b5b2d5def98c9a580b21f5885982402dc3ffe2b45a063da9c",
+          "exact_prior_read_bridge": [
+            "germany-tax-optimization-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "OPT.RIESTERBASE",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uf3aa8c5476b5b879.reader.txt",
+          "raw_sha256": "fecf21749928d47aa284cc5113f0093969f20bf9bb2dac2d7fdf6503398bb9fa",
+          "reader_sha256": "b011507e0d1f07bb42d561a179ac5414658b98d851f28b3a96f5e949fb3b7ecd",
+          "native_LF": [
+            7,
+            7
+          ],
+          "quote_sha256": "e6ca946718038ff5ccae8258cc76930f8fd19c94f8e5228449679669b0d330c7",
+          "exact_prior_read_bridge": [
+            "germany-tax-optimization-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "OPT.RIESTERCHILD",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4bf6f04b5fd62730.reader.txt",
+          "raw_sha256": "197e1823c7ae1f6c6a555f25f2c8251641d258c15ec8c6f3e555dbc66dabb3d0",
+          "reader_sha256": "4bccf970ebd0ac6117c12c86c577f459d3ed3a5e42465821af2be7fb07c47214",
+          "native_LF": [
+            7,
+            8
+          ],
+          "quote_sha256": "a8bc03806fe56c7c9961861ad8d84ea23b78b3379f91e049cbdcbd78df3efde9",
+          "exact_prior_read_bridge": [
+            "germany-tax-optimization-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "OPT.RIESTERMIND",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud6c709ee8fb1a0bb.reader.txt",
+          "raw_sha256": "b500402e4ace5a18d413adb7146a3702499cb87db60b87eb6507fa8bc78cce15",
+          "reader_sha256": "e2c3d48be407db079ea173ddb5e9f06bb44dd4516f595dd4b8631234e38cb0c5",
+          "native_LF": [
+            7,
+            15
+          ],
+          "quote_sha256": "20fd1d3c63915ef9b3b4b8f0d696ac1ec287642371960d8c5532fc214acb964a",
+          "exact_prior_read_bridge": [
+            "germany-tax-optimization-quote-reuse-plan.json"
+          ]
+        }
+      ],
+      "status": "PASS final composed planning chain, read subject to final R113/114 successor. Initial23member target remains historical with R113/114 findings, not retroactively complete."
+    }
+  ],
+  "all25operations_actually_read": true,
+  "all134_new_route_associations_read": {
+    "batches": [
+      [
+        1,
+        45
+      ],
+      [
+        46,
+        90
+      ],
+      [
+        91,
+        134
+      ]
+    ],
+    "scope": "All134 route associations/dispositions read using current-coordinate/opening diagnostics; all complete current destination clauses independently previously read in full frozen body or complete actual22+3 operations; exact fulltext/hash membership checked. Old134 origin clauses already actually read from realGit in original planning scope. Final two Riester routes separately bind new actual numeric clause."
+  },
+  "all455_original_origin_identities_exact": true,
+  "fiveoriginalqualitativeparagraphs_exact": true,
+  "original_actual_oa": 0,
+  "independent_controls": [
+    {
+      "name": "R99carcapexception70km",
+      "actual": "5320",
+      "expected": "5320"
+    },
+    {
+      "name": "R100room8months",
+      "actual": "840",
+      "expected": "840"
+    },
+    {
+      "name": "R104exact10not",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "R10410.01yes",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "R105employeeaggregate",
+      "actual": "33000",
+      "expected": "33000"
+    },
+    {
+      "name": "R105capERsubtract",
+      "actual": "21826",
+      "expected": "21826"
+    },
+    {
+      "name": "R114prior20k4",
+      "actual": "800",
+      "expected": "800"
+    },
+    {
+      "name": "R114minimum625",
+      "actual": "625",
+      "expected": "625"
+    },
+    {
+      "name": "R114halfcontributionratio",
+      "actual": "1/2",
+      "expected": "1/2"
+    },
+    {
+      "name": "R114halfallowance",
+      "actual": "175/2",
+      "expected": "175/2"
+    },
+    {
+      "name": "R114highincome1925",
+      "actual": "1925",
+      "expected": "1925"
+    },
+    {
+      "name": "R114floor60",
+      "actual": "60",
+      "expected": "60"
+    },
+    {
+      "name": "R1142007child185",
+      "actual": "185",
+      "expected": "185"
+    },
+    {
+      "name": "R1142008child300",
+      "actual": "300",
+      "expected": "300"
+    },
+    {
+      "name": "R114qualchild2010own",
+      "actual": "325",
+      "expected": "325"
+    },
+    {
+      "name": "R114below25oneoff200",
+      "actual": "375",
+      "expected": "375"
+    },
+    {
+      "name": "R114exact25noenhancement",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "R114totaldeductionownplusallowance",
+      "actual": "800",
+      "expected": "800"
+    },
+    {
+      "name": "R114notfull2100deductionfor800",
+      "actual": "800",
+      "expected": "800"
+    },
+    {
+      "name": "R114taxaddbackexample400benefitless175net",
+      "actual": "225",
+      "expected": "225"
+    },
+    {
+      "name": "R114reducedallowanceabovefullnot",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "R101eligiblegiftnamealonebarfalse",
+      "actual": "False",
+      "expected": "False"
+    }
+  ],
+  "prior_wholepair": "322current/117quotes/455actualoldorigins/40owncontrols remain preserved. Final323units contain all originalIDs and complete declared new methods.",
+  "remaining_scope": "Actualpension/insuranceproductchoice, corporateconversion/abusecasefacts and unsupportedhistoricalassumed-ratefixtures retained as precise referrals/history; no valid sourced fictional computation rejected merely for lack of identical printed numbers."
+}

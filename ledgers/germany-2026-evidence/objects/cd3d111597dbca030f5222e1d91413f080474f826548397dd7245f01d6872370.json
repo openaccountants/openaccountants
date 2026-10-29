@@ -1,0 +1,872 @@
+{
+  "role": "writer, not independent review",
+  "controls": [
+    {
+      "id": "ordinary2025report",
+      "actual": "2026-12-31",
+      "expected": "2026-12-31",
+      "premise": "One year after stipulated calendar financial year; no special deadline adjustment facts.",
+      "pass": true
+    },
+    {
+      "id": "qualifyinglateknowledge",
+      "actual": "2027-03-15",
+      "expected": "2027-03-15",
+      "premise": "Stipulated justified expectation, no fault, actual knowledge15February; no weekend/holiday/notice adjustment needed for this fixture.",
+      "pass": true
+    },
+    {
+      "id": "culpablefailure",
+      "actual": "None",
+      "expected": "None",
+      "premise": "No-fault limb fails; this exception supplies no automatic new deadline.",
+      "pass": true
+    },
+    {
+      "id": "unjustifiedexpectation",
+      "actual": "None",
+      "expected": "None",
+      "premise": "Without justified expectation, do not apply this catch-up exception.",
+      "pass": true
+    },
+    {
+      "id": "specifiedPE",
+      "actual": "2027-03-15",
+      "expected": "2027-03-15",
+      "premise": "Actual paragraph4sentence5specifiedPE independently established; same conditional catch-up.",
+      "pass": true
+    },
+    {
+      "id": "noticealternative",
+      "actual": "2027-03-15",
+      "expected": "2027-03-15",
+      "premise": "Where report cannot be procured/created, statutory sentence3 notice and available data rather than fictional report; same qualifying deadline.",
+      "pass": true
+    }
+  ],
+  "control_count": 6,
+  "own_selected_native_ranges": 2,
+  "exact_source_checks": [
+    {
+      "id": "R61.cb-4",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R61.cb-6",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "TP.a1-1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.a1-2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.a1-3",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.a1-3a",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.a1-3b",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.a1-3c",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.a1-3d",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.a1-3e",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.a1-4",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.a1-5",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ao90-1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ao90-2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ao90-3",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ao90-4",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g1-1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g2-1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g2-2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g2-3",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g2-4",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g2-5",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g2-6",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g3-1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g3-2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g4-1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g4-2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g4-3",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g5-1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g5-2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g6-1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g6-2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g6-3",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.cb-1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.cb-2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.cb-3",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.cb-4",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.cb-5",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.cb-6",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.cb-7",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ao162-3",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ao162-4",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ao162-4a",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.apa-1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.apa-3",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.apa-4",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.apa-6",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.apa-7",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.apa-8",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.eg37-2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.eg37-3",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.eg37-5",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.g7",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.eg31",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.deadline7",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.deadlineadvised",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.fineintent",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.finebreach",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.fineamount",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.transmit",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.taxreturn",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.faqnotice",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.faqfine",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.service",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.minimum",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.public",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.e4j",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.e52",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.a1a",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann3",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann4",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann5",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann6",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann7",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann8",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann9",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann10",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann11",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann12",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann13",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann14",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann15",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann16",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann17",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann18",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.ann-open",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.matrix-def",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.matrix-content",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.matrix-format",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.matrix-before",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.matrix-other",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.matrix-fine",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-1.1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-2.2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-3.9",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-3.10",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-3.12",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-3.13",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-3.30",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-3.63a",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-3.74",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-3.75",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-3.76",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-3.77",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-3.133",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-3.136",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-3.152",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-4.7",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-4.8",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-6.2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b20-34",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b20-38",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b20-39",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b20-55",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b20-56",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b20-88",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b20-89",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.bapa-1.1",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.bapa-1.3",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.bapa-1.5",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.bapa-1.8",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.bapa-1.18",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.bapa-4.2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.a21entry",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.a21finance",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.date24",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.date20",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.datematrix",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.dateapa",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.aparepeal",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "TP.b24-doc",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Exact selected operative quotation within declared nativeLF",
+      "own_new_selected_read": false
+    }
+  ],
+  "prior_A_manifest": {
+    "sha256": "caa546e677e15366d0530b1eb757fe4cfba54d87b9993d717c4d261de5282b24",
+    "members_rehashed": 610,
+    "mismatches": 0
+  },
+  "full_inverse_and_all_native_rows": true,
+  "all_prior316_current_units_and398_old_topics_retained": true,
+  "original_examples": {
+    "blocks": 2,
+    "failures": [],
+    "original_blocks_and_all_case_algebra_amounts_exact": true,
+    "worked_changes": "Onlystipulatedgates/remittancefacts andlabel,notnumericblocks"
+  },
+  "schema": {
+    "errors": [],
+    "warnings": [],
+    "stdout": "checked 1 guides (0 non-guide .md files skipped)\n"
+  },
+  "diff_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-treaty-withholding-rates.md",
+  "before_sha256": "98b7a3ed15a0ff174004be9b2975f1c920b1a6ad752b7bb38ba05038c21eb7a1",
+  "after_sha256": "e0af931443833336734547a462ee47978d568c247571d2691fad966c5b0e5ecf",
+  "bytes": 32636,
+  "operations": 12,
+  "full_inverse_exact": true,
+  "original_oa_blocks": 2,
+  "all_original_algebra_case_amounts_oa_URL_order_protected_metadata_CTA_exact": true,
+  "worked_case_changes": "Only explicitly stipulated qualification/remittance facts and interpretation label, no numeric/algebra change."
+}

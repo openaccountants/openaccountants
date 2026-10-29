@@ -1,0 +1,11 @@
+{
+  "id": "U16b4f9dee74b3444",
+  "url": "https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U16b4f9dee74b3444.body",
+  "raw_sha256": "4606f632c28d4d09c48d0de13f0fb47f1f169398b3b59a4b4a2c67a92b9f0e7a",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U16b4f9dee74b3444.reader.txt",
+  "reader_sha256": "6b37a203e1940e1de77f302da466d450dcb5f6f259639c6f0751c0ea5c6434bb",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

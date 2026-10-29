@@ -1,0 +1,112 @@
+[
+  {
+    "label": "case1 average cost",
+    "actual": "50000",
+    "expected": "50000"
+  },
+  {
+    "label": "case1 average gain",
+    "actual": "15000",
+    "expected": "15000"
+  },
+  {
+    "label": "case1 FIFO gain",
+    "actual": "5000",
+    "expected": "5000"
+  },
+  {
+    "label": "case1 firstlot beyond anniversary",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "case1 secondlot before anniversary",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "case2 combined",
+    "actual": "1199",
+    "expected": "1199"
+  },
+  {
+    "label": "case2 justundercliff",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "case2 total taxable",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "case3 net1",
+    "actual": "240",
+    "expected": "240"
+  },
+  {
+    "label": "case3 net2",
+    "actual": "260",
+    "expected": "260"
+  },
+  {
+    "label": "case3 untaxed",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "case3 taxable",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "case4 total",
+    "actual": "350",
+    "expected": "350"
+  },
+  {
+    "label": "case5 oldcost",
+    "actual": "9000",
+    "expected": "9000"
+  },
+  {
+    "label": "case5 newcost",
+    "actual": "1000",
+    "expected": "1000"
+  },
+  {
+    "label": "case5 gain",
+    "actual": "1500",
+    "expected": "1500"
+  },
+  {
+    "label": "case6 unadvised date",
+    "actual": "4",
+    "expected": "4"
+  },
+  {
+    "label": "2025advised weekend",
+    "actual": "6",
+    "expected": "6"
+  },
+  {
+    "label": "2025advised next Monday",
+    "actual": "0",
+    "expected": "0"
+  },
+  {
+    "label": "2026unadvised weekend",
+    "actual": "5",
+    "expected": "5"
+  },
+  {
+    "label": "2026advised leapday Tuesday",
+    "actual": "1",
+    "expected": "1"
+  },
+  {
+    "label": "DE-L04 given basis plus costs",
+    "actual": "10020",
+    "expected": "10020"
+  }
+]

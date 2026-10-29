@@ -1,0 +1,26 @@
+# DE-R44–46: finite crypto corrections
+
+All156 frozen current units and102 selected quotations checked (87 newly read in bounded batches,15 exact earlier reading bridges). Three finite points below; no broad new research. Actual source identities/nativeLF/exact original-language quotations/read date29October2026 in `DE-R44-R46-crypto-selected-source-read-ledger.json`. No whole-country PASS.
+
+**DE-R44: §46(3) employee hardship deduction conditions (Guide60/231).** The Guide states untaxed side income≤410 is deducted again, without the actual §46(3) exclusions/reductions. E46relief full native41–43 expressly excludes income subjected to the tariff under§32d(6) and reduces the deduction for the specified excess Altersentlastungsbetrag and§13(3) amount. This is the same finite qualification already independently closed for freelancer R16; no broader exemption is established by an employee's crypto income being≤410.
+
+- Option A (recommended): qualify the table/prose to eligible non-withheld income excluding§32d(6), and the two actual reductions. Route the410–820 computation to the now source-checked freelancer hardship method/§70EStDV, or reproduce only its exact actual gates. Preserve the separate256/1000Freigrenzen and all original worked cases.
+- Option B: make the table an explicit gross eligibility threshold with a direct qualified sibling referral for the final deduction; remove the unconditional full deduction promise.
+
+Separator: eligible side income400 with a stipulated statutory100 reduction gives a300 deduction, not400. Ordinary400 with neither reduction remains400. An optional§32d(6) tariff inclusion is not automatically added to this eligible amount.
+
+**DE-R45: inheritance/per-person limits are expressly addressed in the retained official source.** Guide182 says inherited coins are a 'check as a whole' because§23(1)sentence3 names Einzelrechtsnachfolger. Guide188 says the allowed official sources do not print the each-spouse sentence. Actual Form2025sales native2440 expressly says 'Bei unentgeltlichem Erwerb (zum Beispiel Erbschaft, Schenkung) rechnet Ihr Finanzamt dem Rechtsnachfolger die Anschaffung durch den Rechtsvorgänger zu' and 'Bei einer Zusammenveranlagung gilt die Freigrenze i. H. v.1.000 € für jede Person.' Actual Form2025services/native2404 likewise prints256 for each person. Rn75 supplies the general administrative predecessor-acquisition route. Do not preserve a claim of source absence contradicted by the retained source.
+
+- Option A (recommended): supply the ordinary inherited-acquisition and per-person routes, expressly identify that the printed administrative help is for2025 and statutory256/1000 remain the Guide's independently sourced2026 figures. For the2026 ordinary branch, label the unchanged-statute/admin-method continuation precisely, not a read2026form. Obtain predecessor acquisition date/cost and ownership records; do not reset the one-year clock merely at death, grant a market-value basis merely at death, or pool two spouses' separate thresholds. Retain separate estate division, consideration-paid heir-share acquisition, disputed records and other inheritance-tax issues as distinct facts/specialist limits.
+- Option B: print the express positive2025 administrative route and separately state the exact2026 continued-law interpretation and any narrow uncertainty. Remove the false 'sources do not print' sentence and the blanket absence-based referral regardless.
+
+Separators: two spouses each private-sales900 remain each below1000, while one person's1800 is not exempt by a fictitious pooled2000limit. Two spouses each service-income200 are separately below256; one400 is not exempt by pooling512. For a simple inherited purchased currency token, use the actual predecessor acquisition date to test one year; a six-month inherited date does not itself restart that clock. No determination of a contested estate allocation is implied.
+
+**DE-R46: actual2025 form instructions answer the below-limit entry question (Guide233).** The Guide labels whether gains below thresholds must be entered as a 'check on the current form'. The retained actual2025 services/native2404 and sales/native2440–2441 expressly say income<256/private-sales gains<1000 need not be entered in AnlageSO; losses within scope should be entered. It remains correct not to claim a future2026form was read.
+
+- Option A (recommended): add the explicit2025 answer in the existing dated2025/filing scope. Keep actual2026 form-layout instructions conditional on the form released for that period; unchanged tax thresholds are not form evidence. Keep loss declaration, overall filing duties, other income and§153corrections separate.
+- Option B: replace the generic current-form question with an exact2025 citation and a precise future-form boundary.
+
+Separators:2025 service income255.99 need not be entered under the cited instruction;256 is outside that non-entry statement. Private-sales999.99 vs1000 separates likewise. A taxable loss is not assigned to the non-entry exception merely because there is no positive tax that year.
+
+The NFT/liquidity/fork/protocol classifications and actual loan-return questions retain their precise current-source limits; no generic no-tax conclusion follows from absence in the letter. No new source acquisition or source-body change for these findings.

@@ -1,0 +1,6 @@
+P001: (1) Die Zinsen betragen für jeden Monat einhalb Prozent. Sie sind von dem Tag an, an dem der Zinslauf beginnt, nur für volle Monate zu zahlen; angefangene Monate bleiben außer Ansatz. Erlischt der zu verzinsende Anspruch durch Aufrechnung, gilt der Tag, an dem die Schuld des Aufrechnenden fällig wird, als Tag der Zahlung.
+P002: (1a) In den Fällen des § 233a betragen die Zinsen abweichend von Absatz 1 Satz 1 ab dem 1. Januar 2019 0,15 Prozent für jeden Monat, das heißt 1,8 Prozent für jedes Jahr.
+P003: (1b) Sind für einen Zinslauf unterschiedliche Zinssätze maßgeblich, ist der Zinslauf in Teilverzinsungszeiträume aufzuteilen. Die Zinsen für die Teilverzinsungszeiträume sind jeweils tageweise zu berechnen. Hierbei wird jeder Kalendermonat unabhängig von der tatsächlichen Anzahl der Kalendertage mit 30 Zinstagen und jedes Kalenderjahr mit 360 Tagen gerechnet.
+P004: (1c) Die Angemessenheit des Zinssatzes nach Absatz 1a ist unter Berücksichtigung der Entwicklung des Basiszinssatzes nach § 247 des Bürgerlichen Gesetzbuchs wenigstens alle zwei Jahre zu evaluieren. Die erste Evaluierung erfolgt spätestens zum 1. Januar 2024.
+P005: (2) Für die Berechnung der Zinsen wird der zu verzinsende Betrag jeder Steuerart auf den nächsten durch 50 Euro teilbaren Betrag abgerundet.
+P006: (+++ § 238 Abs. 2: Zur Geltung vgl. Art. 97 § 15 Abs. 10 EGAO +++)

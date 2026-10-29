@@ -1,0 +1,3 @@
+P001: (1) Ein Verwaltungsakt wird gegenüber demjenigen, für den er bestimmt ist oder der von ihm betroffen wird, in dem Zeitpunkt wirksam, in dem er ihm bekannt gegeben wird. Der Verwaltungsakt wird mit dem Inhalt wirksam, mit dem er bekannt gegeben wird.
+P002: (2) Ein Verwaltungsakt bleibt wirksam, solange und soweit er nicht zurückgenommen, widerrufen, anderweitig aufgehoben oder durch Zeitablauf oder auf andere Weise erledigt ist.
+P003: (3) Ein nichtiger Verwaltungsakt ist unwirksam.

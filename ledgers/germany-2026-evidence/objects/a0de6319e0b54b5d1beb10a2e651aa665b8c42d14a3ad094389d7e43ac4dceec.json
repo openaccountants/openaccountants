@@ -1,0 +1,11 @@
+{
+  "id": "U100fab999856c001",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-01-22-geaenderte-PAP-2025-anlage-1.pdf?__blob=publicationFile&v=2",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U100fab999856c001.body",
+  "raw_sha256": "092de325b1e3258cff16a617b1963f923a82e98952e53c345ba7403ddbd45a53",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U100fab999856c001.reader.txt",
+  "reader_sha256": "a34af7149d3140b3622355b829e125e6af1d46ec54fd424f39c40794267dc3b2",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

@@ -1,0 +1,32 @@
+{
+  "before_sha256": "9c616a7d2c76e59388e271688b190baa7d276381440c7aaaabc9d5b17fa7a106",
+  "after_sha256": "893fc494dfb97283d3a9c500b33bee11f5f8869f607afa783bb8fae9c95284ad",
+  "operations": [
+    {
+      "name": "2024 interest period and precise limb",
+      "before": "20 for 2022, 18 for 2023 and 16 for 2024 ([Art. 97 § 36(2) and (3) EGAO]",
+      "after": "20 for 2022, 18 for 2023 and 17 for 2024 (the 2024 interest period is Art. 97 § 36(3) number 7(d), distinct from the 16-month § 152 late-filing rule in number 5(d); [Art. 97 § 36(2) and (3) EGAO]"
+    },
+    {
+      "name": "version",
+      "before": "version: 2.3\n",
+      "after": "version: 2.4\n"
+    },
+    {
+      "name": "date",
+      "before": "last_updated: 2026-10-27\n",
+      "after": "last_updated: 2026-10-29\n"
+    },
+    {
+      "name": "scoped reread note",
+      "before": "| EGAO Art. 97 § 36 (2019 to 2024 interest periods) | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-24 |",
+      "after": "| EGAO Art. 97 § 36 (2019 to 2024 interest periods) | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-24 |\n| EGAO Art. 97 § 36(3), numbers 5(d) and 7(d): distinguish 2024 late-filing and interest periods; selected text reread | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-29 |"
+    }
+  ],
+  "inverse_exact": true,
+  "original_oa_blocks_exact": true,
+  "status": "writer correction; independent country review pending",
+  "source": "sources/egao-97-36.reader.txt nativeLF3",
+  "root_actual_read_on": "2026-10-29",
+  "current_law_corroboration": "Live official webpage opened and actually read, including numbers5(d)/7(d); no new raw-download assertion"
+}

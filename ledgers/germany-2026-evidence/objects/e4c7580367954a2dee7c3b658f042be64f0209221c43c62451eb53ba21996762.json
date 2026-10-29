@@ -1,0 +1,25 @@
+[
+  {
+    "case": "local indefinite Germany-only hire; no evidenced exception",
+    "insurance": "German ordinary route",
+    "withholding": "separate §38 fact test, not inferred from insurance"
+  },
+  {
+    "case": "all §38 domestic/host/leasing triggers expressly absent on documented facts",
+    "insurance": "unchanged German route",
+    "withholding": "no employer §38 duty; employee income-tax/advances assessment remains"
+  },
+  {
+    "case": "German host should economically bear assignment remuneration; invoice omitted",
+    "withholding": "no-invoice fact alone does not defeat §38(1) sentence2"
+  },
+  {
+    "case": "old temporary coverage certificate; indefinite new arrangement",
+    "result": "fresh competent-institution assessment; no assumed extension or automatic invalidation of the certificate"
+  },
+  {
+    "case": "first payroll after six weeks; listed immediate-report sector",
+    "ordinary_report": "cannot postpone beyond six weeks",
+    "immediate_report": "start-of-work deadline separate; does not replace ordinary registration"
+  }
+]

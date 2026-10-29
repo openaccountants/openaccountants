@@ -1,0 +1,1003 @@
+[
+  {
+    "row": 1,
+    "LF_start": 3,
+    "LF_end": 3,
+    "section": "Scope/metadata",
+    "wording": "description: \"German tax on private investment income and gains for a resident individual, tax year 2026. Covers the 25% flat tax (Abgeltungsteuer) with the 5.5% solidarity surcharge and the church-tax formula, bank withholding (Kapitalertragsteuer), the Sparer-Pauschbetrag of EUR 1,000 or EUR 2,000, the share-loss pot and the general pot, loss certificates, funds and ETFs (Teilfreistellung, Vorabpauschale, Basiszins), large holdings of 1% or more under § 17 with the partial-income method, private sales under § 23 (one-year and ten-year rules, the EUR 1,000 Freigrenze), the Günstigerprüfung and Anlage KAP. Trigger on: Abgeltungsteuer, Kapitalertragsteuer, Sparer-Pauschbetrag, Freistellungsauftrag, Verlustbescheinigung, Teilfreistellung, Vorabpauschale, Spekulationsfrist, sell shares Germany, German capital gains. Out of scope: crypto detail (de-crypto-tax), the exit tax (leaving-germany-exit-tax), non-residents (de-non-resident-tax), treaty withholding (de-treaty-withholding-rates), assets in a business (de-einkommensteuer-freelancer).\"",
+    "source_quote_ids": [
+      "CG.rate",
+      "CG.large-threshold",
+      "CG.private1year",
+      "CG.private10year-home",
+      "CG.fund-prepayment"
+    ],
+    "classification": "Description/routing summarises the detailed rows below."
+  },
+  {
+    "row": 2,
+    "LF_start": 22,
+    "LF_end": 22,
+    "section": "Who this applies to",
+    "wording": "An individual fully liable to German tax (home or habitual abode in Germany) who holds investments privately, not in a business. Tax year 2026 is the calendar year. Figures are read from the consolidated federal law on gesetze-im-internet.de and from finance ministry (BMF) letters.",
+    "source_quote_ids": [
+      "CG.resident",
+      "CG.calendar",
+      "CG.asset-income",
+      "CG.large-threshold",
+      "CG.private1year"
+    ],
+    "classification": "Resident/private-asset scope; named companions retain business/nonresident topics."
+  },
+  {
+    "row": 3,
+    "LF_start": 24,
+    "LF_end": 24,
+    "section": "Who this applies to",
+    "wording": "Sort every asset into one of three regimes first. They do not mix: flat-tax losses cannot offset private-sales gains, and the other way round.",
+    "source_quote_ids": [
+      "CG.loss",
+      "CG.privategain-cliff"
+    ],
+    "classification": "Separate legal regimes; this is not a general cross-regime loss pool."
+  },
+  {
+    "row": 4,
+    "LF_start": 28,
+    "LF_end": 28,
+    "section": "Who this applies to",
+    "wording": "| Flat tax (Abgeltungsteuer) | Interest, dividends, gains on shares, bonds, funds and ETFs, derivatives | 25% plus solidarity surcharge and church tax, normally withheld by the German bank | [§ 20](https://www.gesetze-im-internet.de/estg/__20.html), [§ 32d EStG](https://www.gesetze-im-internet.de/estg/__32d.html) |",
+    "source_quote_ids": [
+      "CG.dividends",
+      "CG.interest",
+      "CG.asset-income",
+      "CG.rate"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 5,
+    "LF_start": 29,
+    "LF_end": 29,
+    "section": "Who this applies to",
+    "wording": "| Large shareholding | Shares in a company where the seller held at least 1% at any time in the last five years | Partial-income method at the normal progressive rate | [§ 17 EStG](https://www.gesetze-im-internet.de/estg/__17.html) |",
+    "source_quote_ids": [
+      "CG.large-threshold",
+      "CG.partial40-scope",
+      "CG.partial60"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 6,
+    "LF_start": 30,
+    "LF_end": 30,
+    "section": "Who this applies to",
+    "wording": "| Private sales | Crypto and other assets sold within one year; land and buildings sold within ten years | Normal progressive rate, nothing withheld | [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html) |",
+    "source_quote_ids": [
+      "CG.private1year",
+      "CG.private10year-home"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 7,
+    "LF_start": 38,
+    "LF_end": 38,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Flat tax on private investment income | 25% | 2026 | https://www.gesetze-im-internet.de/estg/__32d.html |",
+    "source_quote_ids": [
+      "CG.rate"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 8,
+    "LF_start": 39,
+    "LF_end": 39,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Bank withholding (Kapitalertragsteuer) | 25% of the income | 2026 | https://www.gesetze-im-internet.de/estg/__43a.html |",
+    "source_quote_ids": [
+      "CG.withholding"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 9,
+    "LF_start": 40,
+    "LF_end": 40,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Solidarity surcharge, on the tax | 5.5% | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__4.html |",
+    "source_quote_ids": [
+      "Soli.rate"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 10,
+    "LF_start": 41,
+    "LF_end": 41,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Church tax: flat tax becomes (e - 4q) / (4 + k), k = state church-tax rate | formula | 2026 | https://www.gesetze-im-internet.de/estg/__32d.html |",
+    "source_quote_ids": [
+      "CG.rate"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 11,
+    "LF_start": 42,
+    "LF_end": 42,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Sparer-Pauschbetrag, single | EUR 1,000 | 2026 | https://www.gesetze-im-internet.de/estg/__20.html |",
+    "source_quote_ids": [
+      "CG.allowance"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 12,
+    "LF_start": 43,
+    "LF_end": 43,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Sparer-Pauschbetrag, jointly assessed couple | EUR 2,000 | 2026 | https://www.gesetze-im-internet.de/estg/__20.html |",
+    "source_quote_ids": [
+      "CG.allowance"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 13,
+    "LF_start": 44,
+    "LF_end": 44,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Large-holding threshold, any time in the last five years | 1% | 2026 | https://www.gesetze-im-internet.de/estg/__17.html |",
+    "source_quote_ids": [
+      "CG.large-threshold"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 14,
+    "LF_start": 45,
+    "LF_end": 45,
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 17: tax-free share of sale price (partial-income method) | 40% | 2026 | https://www.gesetze-im-internet.de/estg/__3.html |",
+    "source_quote_ids": [
+      "CG.partial40-percent",
+      "CG.partial40-scope"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 15,
+    "LF_start": 46,
+    "LF_end": 46,
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 17: deductible share of cost and selling costs | 60% | 2026 | https://www.gesetze-im-internet.de/estg/__3c.html |",
+    "source_quote_ids": [
+      "CG.partial60"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 16,
+    "LF_start": 47,
+    "LF_end": 47,
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 17 allowance, scaled to the share sold | EUR 9,060 | 2026 | https://www.gesetze-im-internet.de/estg/__17.html |",
+    "source_quote_ids": [
+      "CG.large-allowance"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 17,
+    "LF_start": 48,
+    "LF_end": 48,
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 17 allowance falls by the gain above (scaled) | EUR 36,100 | 2026 | https://www.gesetze-im-internet.de/estg/__17.html |",
+    "source_quote_ids": [
+      "CG.large-allowance"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 18,
+    "LF_start": 49,
+    "LF_end": 49,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Private sales of other assets taxable if held | one year or less | 2026 | https://www.gesetze-im-internet.de/estg/__23.html |",
+    "source_quote_ids": [
+      "CG.private1year"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 19,
+    "LF_start": 50,
+    "LF_end": 50,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Private sales of land taxable if held | ten years or less | 2026 | https://www.gesetze-im-internet.de/estg/__23.html |",
+    "source_quote_ids": [
+      "CG.private10year-home"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 20,
+    "LF_start": 51,
+    "LF_end": 51,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Private sales Freigrenze (total yearly gain tax-free if below) | EUR 1,000 | 2026 | https://www.gesetze-im-internet.de/estg/__23.html |",
+    "source_quote_ids": [
+      "CG.privategain-cliff"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 21,
+    "LF_start": 52,
+    "LF_end": 52,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Teilfreistellung: equity fund / mixed fund | 30% / 15% | 2026 | https://www.gesetze-im-internet.de/invstg_2018/__20.html |",
+    "source_quote_ids": [
+      "CG.fund-partial"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 22,
+    "LF_start": 53,
+    "LF_end": 53,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Teilfreistellung: property fund / foreign property fund | 60% / 80% | 2026 | https://www.gesetze-im-internet.de/invstg_2018/__20.html |",
+    "source_quote_ids": [
+      "CG.fund-partial"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 23,
+    "LF_start": 54,
+    "LF_end": 54,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Vorabpauschale base return: start price x 70% of Basiszins | 70% | 2026 | https://www.gesetze-im-internet.de/invstg_2018/__18.html |",
+    "source_quote_ids": [
+      "CG.fund-prepayment"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 24,
+    "LF_start": 55,
+    "LF_end": 55,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Basiszins 2026 / 2025 | 3.20% / 2.53% | 2026, 2025 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Investmentsteuer/2026-01-13-basiszins-berechnung-vorabpauschale.pdf?__blob=publicationFile&v=3 |",
+    "source_quote_ids": [
+      "CG.basis2026",
+      "CG.basis2025"
+    ],
+    "classification": "Statutory rates/formula; combined 26.375% and year/date results are computed, not separate statutory rates."
+  },
+  {
+    "row": 25,
+    "LF_start": 56,
+    "LF_end": 56,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Fund units bought before 2009: allowance on post-2017 growth | EUR 100,000 | 2026 | https://www.gesetze-im-internet.de/invstg_2018/__56.html |",
+    "source_quote_ids": [
+      "CG.fund-old"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 26,
+    "LF_start": 60,
+    "LF_end": 60,
+    "section": "The taxable base",
+    "wording": "**Flat-tax income.** Interest, dividends and gains on shares, bonds, funds and derivatives ([§ 20(1) and (2) EStG](https://www.gesetze-im-internet.de/estg/__20.html)). Gain = sale proceeds, less costs directly tied to the sale, less purchase cost. Foreign-currency amounts are converted at the date of each transaction. For securities of one kind in one custody account, the first bought count as the first sold (§ 20(4) EStG).",
+    "source_quote_ids": [
+      "CG.gain",
+      "CG.FIFO"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 27,
+    "LF_start": 62,
+    "LF_end": 62,
+    "section": "The taxable base",
+    "wording": "- **Sparer-Pauschbetrag.** EUR 1,000, or EUR 2,000 for a jointly assessed couple, deducted from all investment income together. It replaces actual costs: \"der Abzug der tatsächlichen Werbungskosten ist ausgeschlossen\" (§ 20(9)). Custody fees and loan interest are not deductible; purchase and sale costs still reduce the gain. A couple's allowance is split half each, and an unused half moves to the other spouse. It cannot create a loss and lapses at year end.",
+    "source_quote_ids": [
+      "CG.allowance"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 28,
+    "LF_start": 63,
+    "LF_end": 63,
+    "section": "The taxable base",
+    "wording": "- **Freistellungsauftrag.** The client tells each German bank how much of the allowance to use there. It needs the client's tax identification number ([§ 44a EStG](https://www.gesetze-im-internet.de/estg/__44a.html)).",
+    "source_quote_ids": [
+      "CG.allowance-order"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 29,
+    "LF_start": 64,
+    "LF_end": 64,
+    "section": "The taxable base",
+    "wording": "- **Church tax.** For a church member the flat tax is reduced by 25% of the church tax, which gives tax = (e - 4q) / (4 + k), where e is the income, q the creditable foreign tax and k the church-tax rate ([§ 32d(1) EStG](https://www.gesetze-im-internet.de/estg/__32d.html)). The rate k is set by state law; confirm it for the client's state. Banks withhold church tax unless the client blocked the data transfer, in which case the client declares it ([§ 51a EStG](https://www.gesetze-im-internet.de/estg/__51a.html)).",
+    "source_quote_ids": [
+      "CG.rate"
+    ],
+    "classification": "Statutory rates/formula; combined 26.375% and year/date results are computed, not separate statutory rates."
+  },
+  {
+    "row": 30,
+    "LF_start": 65,
+    "LF_end": 65,
+    "section": "The taxable base",
+    "wording": "- **Solidarity surcharge.** 5.5% of the flat tax. The exemption threshold that frees most salary earners does not help: on bank withholding the threshold test in [§ 3(3) SolzG](https://www.gesetze-im-internet.de/solzg_1995/__3.html) leaves out tax under § 32d(3) and (4) EStG, so the 5.5% ([§ 4 SolzG](https://www.gesetze-im-internet.de/solzg_1995/__4.html)) is charged on the flat tax in full.",
+    "source_quote_ids": [
+      "Soli.rate",
+      "CG.soli-exclusion"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 31,
+    "LF_start": 66,
+    "LF_end": 66,
+    "section": "The taxable base",
+    "wording": "- **Foreign withholding tax** is credited against the flat tax, capped per item of income (§ 32d(5) EStG). Treaty refund cases go to de-treaty-withholding-rates.",
+    "source_quote_ids": [
+      "CG.foreigncredit"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 32,
+    "LF_start": 67,
+    "LF_end": 67,
+    "section": "The taxable base",
+    "wording": "- **Bought before 2009.** Gains on shares bought before 1 January 2009 are outside the flat tax unless § 17 applies ([§ 52(28) EStG](https://www.gesetze-im-internet.de/estg/__52.html)). Derivatives and other securities have their own start dates in the same paragraph: for a Termingeschäft the right must have been acquired after 31 December 2008 (§ 52(28) sentence 12 EStG). Fund units bought before 2009 and held privately: growth to 31 December 2017 is tax-free; later growth is taxable only above a one-time EUR 100,000 allowance ([§ 56(6) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__56.html)).",
+    "source_quote_ids": [
+      "CG.pre2009"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 33,
+    "LF_start": 71,
+    "LF_end": 71,
+    "section": "The taxable base",
+    "wording": "- Investment losses never offset salary, business or rental income, and are not carried back. They carry forward without time limit.",
+    "source_quote_ids": [
+      "CG.loss"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 34,
+    "LF_start": 72,
+    "LF_end": 72,
+    "section": "The taxable base",
+    "wording": "- **Share pot.** Losses from selling shares only offset gains from selling shares (§ 20(6) sentence 4).",
+    "source_quote_ids": [
+      "CG.loss"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 35,
+    "LF_start": 73,
+    "LF_end": 73,
+    "section": "The taxable base",
+    "wording": "- **General pot.** Other investment losses (bonds, funds, derivatives, worthless securities, bad debts) offset any investment income.",
+    "source_quote_ids": [
+      "CG.loss"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 36,
+    "LF_start": 74,
+    "LF_end": 74,
+    "section": "The taxable base",
+    "wording": "- **Derivative and bad-debt caps removed.** A 2020 law capped yearly offsets of losses from Termingeschäfte and from worthless assets. Both caps are no longer in § 20(6), and the repeal applies to all open years (§ 52(28) sentences 25 and 26 EStG). Older material still quotes the caps. If an open assessment applied them, ask for a correction.",
+    "source_quote_ids": [
+      "CG.loss-repeal"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 37,
+    "LF_start": 75,
+    "LF_end": 75,
+    "section": "The taxable base",
+    "wording": "- **Loss certificate (Verlustbescheinigung).** A bank offsets losses inside the bank and carries the rest forward there. To use them at another bank, the client asks for a certificate; the irrevocable request must reach the bank \"bis zum 15. Dezember des laufenden Jahres\" ([§ 43a(3) EStG](https://www.gesetze-im-internet.de/estg/__43a.html)). Withheld-tax losses can only be used in the return with that certificate (§ 20(6) sentence 5).",
+    "source_quote_ids": [
+      "CG.loss-certificate"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 38,
+    "LF_start": 77,
+    "LF_end": 77,
+    "section": "The taxable base",
+    "wording": "**Funds and ETFs.** Fund income has three parts: distributions, the Vorabpauschale and the gain on sale ([§ 16 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__16.html)). The partial-income method never applies to funds. The Teilfreistellung makes a share tax-free: 30% for an equity fund (fund terms require over 50% of assets continuously in equities, [§ 2(6) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__2.html)), 15% for a mixed fund (at least 25%, § 2(7) InvStG; half the equity-fund rate), 60% for a property fund and 80% for a foreign property fund ([§ 20 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__20.html)). The same share of costs and losses is not deductible ([§ 21 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__21.html)). A fund that in fact stayed above the equity quota can get the share on proof in the return (§ 20(4) InvStG).",
+    "source_quote_ids": [
+      "CG.fund-income",
+      "CG.fund-definition",
+      "CG.fund-partial",
+      "CG.fund-actualquota",
+      "CG.fund-cost"
+    ],
+    "classification": "Current operative fund row; DE-B01 flags missing preserved property-fund quota wording. Quoted current law also records that original threshold; no Guide fix by this writer."
+  },
+  {
+    "row": 39,
+    "LF_start": 81,
+    "LF_end": 81,
+    "section": "The taxable base",
+    "wording": "1. Base return = redemption price at the start of the year x 70% of the Basiszins.",
+    "source_quote_ids": [
+      "CG.fund-prepayment",
+      "CG.basis2026"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 40,
+    "LF_start": 82,
+    "LF_end": 82,
+    "section": "The taxable base",
+    "wording": "2. Capped at the year's price rise plus distributions. No rise, no lump sum.",
+    "source_quote_ids": [
+      "CG.fund-prepayment"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 41,
+    "LF_start": 83,
+    "LF_end": 83,
+    "section": "The taxable base",
+    "wording": "3. Lump sum = base return less the year's distributions, never below zero.",
+    "source_quote_ids": [
+      "CG.fund-prepayment"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 42,
+    "LF_start": 84,
+    "LF_end": 84,
+    "section": "The taxable base",
+    "wording": "4. In the year of purchase, cut by one twelfth for each full month before the month of purchase.",
+    "source_quote_ids": [
+      "CG.fund-prepayment"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 43,
+    "LF_start": 85,
+    "LF_end": 85,
+    "section": "The taxable base",
+    "wording": "5. It counts as received on the first working day of the next year. The 2026 lump sum (Basiszins 3.20%) is taxed in 2027; the 2025 lump sum (2.53%) was taxed in 2026.",
+    "source_quote_ids": [
+      "CG.fund-prepayment"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 44,
+    "LF_start": 86,
+    "LF_end": 86,
+    "section": "The taxable base",
+    "wording": "6. The fund's Teilfreistellung applies to the lump sum, as it is part of the fund's income ([§ 16(1) no. 2](https://www.gesetze-im-internet.de/invstg_2018/__16.html) and [§ 20(1) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__20.html)). A German bank that holds the units collects the tax from the client's account or sets it against the allowance ([§ 44(1) and (1b) EStG](https://www.gesetze-im-internet.de/estg/__44.html)).",
+    "source_quote_ids": [
+      "CG.fund-partial"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 45,
+    "LF_start": 87,
+    "LF_end": 87,
+    "section": "The taxable base",
+    "wording": "7. On a sale, lump sums already taxed are deducted from the gain ([§ 19(1) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__19.html)). With a foreign broker the client tracks them.",
+    "source_quote_ids": [
+      "CG.fund-sale",
+      "CG.fund-bank-withdrawal"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 46,
+    "LF_start": 89,
+    "LF_end": 89,
+    "section": "The taxable base",
+    "wording": "**Large holdings (§ 17 EStG).** A sale of shares in any company, German or foreign, is business income if the seller held at least 1%, directly or indirectly, at any time in the five years before the sale ([§ 17(1)](https://www.gesetze-im-internet.de/estg/__17.html): \"zu mindestens 1 Prozent beteiligt war\"). A holding cut below 1% still counts, and gifted shares count if the giver met the test. Liquidation and capital repayments count as a sale (§ 17(4)). Under the partial-income method (Teileinkünfteverfahren), 60% of the price less 60% of cost and selling costs is taxable ([§ 3 no. 40 c](https://www.gesetze-im-internet.de/estg/__3.html), [§ 3c(2)](https://www.gesetze-im-internet.de/estg/__3c.html)), less the allowance: the share sold of EUR 9,060, cut by the gain above the same share of EUR 36,100. The result joins other income at the normal rate. A loss is 60% deductible and can offset other income, but is barred in part for shares received free or not in a qualifying holding for the full five years (§ 17(2)).",
+    "source_quote_ids": [
+      "CG.large-threshold",
+      "CG.large-loss",
+      "CG.partial40-scope",
+      "CG.partial60",
+      "CG.large-allowance",
+      "CG.large-liquidation"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 47,
+    "LF_start": 91,
+    "LF_end": 91,
+    "section": "The taxable base",
+    "wording": "- **Dividends from a large holding** stay in the flat tax by default. On application, a holder of at least 25%, or of at least 1% who works for the company with significant influence, can use the partial-income method instead ([§ 32d(2) no. 3 EStG](https://www.gesetze-im-internet.de/estg/__32d.html)). The application is made with the return at the latest, runs for four more years unless revoked, and cannot be made again for that holding after revocation. Financing costs then become 60% deductible.",
+    "source_quote_ids": [
+      "CG.option",
+      "CG.partial60"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 48,
+    "LF_start": 95,
+    "LF_end": 95,
+    "section": "The taxable base",
+    "wording": "- Land and buildings sold \"nicht mehr als zehn Jahre\" after purchase; other assets (crypto, gold, foreign currency, collectibles) sold \"nicht mehr als ein Jahr\" after purchase ([§ 23(1)](https://www.gesetze-im-internet.de/estg/__23.html)). Exactly one year is still taxable.",
+    "source_quote_ids": [
+      "CG.private1year",
+      "CG.private10year-home"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 49,
+    "LF_start": 96,
+    "LF_end": 96,
+    "section": "The taxable base",
+    "wording": "- Property is outside § 23 if the owner lived in it exclusively between purchase and sale, or in the year of sale and the two years before (§ 23(1) no. 1 sentence 3: \"ausschließlich zu eigenen Wohnzwecken oder im Jahr der Veräußerung und in den beiden vorangegangenen Jahren\"). Letting it out at any point breaks the first test; the second test looks only at the three calendar years ending with the sale. Everyday objects (\"Gegenstände des täglichen Gebrauchs\") are outside § 23 (§ 23(1) no. 2 sentence 2).",
+    "source_quote_ids": [
+      "CG.private10year-home"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 50,
+    "LF_start": 97,
+    "LF_end": 97,
+    "section": "The taxable base",
+    "wording": "- Gain = price less cost and sale costs; for a let property, cost is reduced by depreciation claimed (§ 23(3)).",
+    "source_quote_ids": [
+      "CG.privategain-cliff"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 51,
+    "LF_start": 98,
+    "LF_end": 98,
+    "section": "The taxable base",
+    "wording": "- **Freigrenze.** Gains stay tax-free if the total private-sales gain in the calendar year is \"weniger als 1 000 Euro\" (§ 23(3) sentence 5). It is a cliff: at EUR 1,000 or more the whole gain is taxed. The EUR 1,000 limit applies from 2024 ([Wachstumschancengesetz, BGBl. 2024 I Nr. 108](https://www.recht.bund.de/bgbl/1/2024/108/VO.html), Art. 2 no. 5, in force from 1 January 2024 under Art. 35(4)); for 2023 and earlier the gain had to be below EUR 600.",
+    "source_quote_ids": [
+      "CG.privategain-cliff",
+      "CG.private-cliff-history",
+      "CG.private-cliff-date"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 52,
+    "LF_start": 99,
+    "LF_end": 99,
+    "section": "The taxable base",
+    "wording": "- Losses only offset private-sales gains of the same year, the year before or later years.",
+    "source_quote_ids": [
+      "CG.privategain-cliff"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 53,
+    "LF_start": 100,
+    "LF_end": 100,
+    "section": "The taxable base",
+    "wording": "- **Crypto pointer.** The [BMF ruling of 6 March 2025](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2) treats a coin-to-coin swap as a sale and new purchase (new one-year period), does not extend the period to ten years for lent or staked currency tokens, and sets lot rules per wallet and coin (paragraphs 61 and 62: where lots cannot be identified one by one, first in, first out for the holding period, and average cost or, as a simplification, FIFO for the value). Detail is in de-crypto-tax.",
+    "source_quote_ids": [
+      "CG.crypto-swap",
+      "CG.crypto-lots",
+      "CG.crypto-lending"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 54,
+    "LF_start": 102,
+    "LF_end": 102,
+    "section": "The taxable base",
+    "wording": "**Günstigerprüfung.** On request, investment income is added to other income and taxed at the normal rate \"wenn dies zu einer niedrigeren Einkommensteuer einschließlich Zuschlagsteuern führt\" ([§ 32d(6) EStG](https://www.gesetze-im-internet.de/estg/__32d.html)). It covers all investment income for the year, and both spouses if jointly assessed. The allowance still applies; actual costs are still not deductible. It pays where the client's marginal rate is below 25%.",
+    "source_quote_ids": [
+      "CG.favourable",
+      "CG.allowance"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 55,
+    "LF_start": 106,
+    "LF_end": 106,
+    "section": "Deadlines and filing",
+    "wording": "- **Bank withholding settles the tax** where all income was taxed by German banks correctly. The bank pays withheld tax to its tax office by the tenth of the following month ([§ 44(1) EStG](https://www.gesetze-im-internet.de/estg/__44.html)).",
+    "source_quote_ids": [
+      "CG.bank-finality",
+      "CG.bank-monthly"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 56,
+    "LF_start": 107,
+    "LF_end": 107,
+    "section": "Deadlines and filing",
+    "wording": "- **A return is required** for investment income with no German withholding, such as a foreign broker account ([§ 32d(3) EStG](https://www.gesetze-im-internet.de/estg/__32d.html)), and for any § 17 or § 23 gain. A return is worth filing to use an unused allowance, offset losses across banks, credit foreign tax, settle church tax or apply the Günstigerprüfung (§ 32d(4) and (6)).",
+    "source_quote_ids": [
+      "CG.declare",
+      "CG.large-threshold",
+      "CG.privategain-cliff"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 57,
+    "LF_start": 108,
+    "LF_end": 108,
+    "section": "Deadlines and filing",
+    "wording": "- **Forms.** Anlage KAP for investment income (Anlage KAP-INV for funds at a foreign broker), Anlage SO for private sales, Anlage G for a § 17 sale. Filed through ELSTER; use the form version for the year.",
+    "source_quote_ids": [
+      "CG.formKAP",
+      "CG.formKAPINV",
+      "CG.formSO",
+      "CG.formG",
+      "CG.large-threshold"
+    ],
+    "classification": "Official2025 form names/purposes read; no2026 field-coordinate claim. AnlageG route combines official business-income form purpose with own17 classification."
+  },
+  {
+    "row": 58,
+    "LF_start": 109,
+    "LF_end": 109,
+    "section": "Deadlines and filing",
+    "wording": "- **With the bank, not the tax office:** the Freistellungsauftrag before income arrives; the loss certificate request by 15 December ([§ 43a(3) EStG](https://www.gesetze-im-internet.de/estg/__43a.html)).",
+    "source_quote_ids": [
+      "CG.allowance-order",
+      "CG.loss-certificate"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 59,
+    "LF_start": 110,
+    "LF_end": 110,
+    "section": "Deadlines and filing",
+    "wording": "- **Guidance on bank withholding:** [BMF letter \"Einzelfragen zur Abgeltungsteuer\" of 14 May 2025](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Abgeltungsteuer/2025-05-14-einzelfragen-zur-abgeltungsteuer.html).",
+    "source_quote_ids": [
+      "CG.guidance-title"
+    ],
+    "classification": "Actual official landing-page title/date pointer only; full linked BMF letter is expressly not claimed read."
+  },
+  {
+    "row": 60,
+    "LF_start": 114,
+    "LF_end": 114,
+    "section": "Deadlines and filing",
+    "wording": "| 2025 return, filed by the client | 31 July 2026, passed. File now | [§ 149(2) AO](https://www.gesetze-im-internet.de/ao_1977/__149.html) |",
+    "source_quote_ids": [
+      "AO149.general",
+      "CG.corona-scope"
+    ],
+    "classification": "Calendar deadlines computed from own AO rules; EGAO exceptional years end2024. Source-vintage note preserves2025Vorabpauschale received2026."
+  },
+  {
+    "row": 61,
+    "LF_start": 115,
+    "LF_end": 115,
+    "section": "Deadlines and filing",
+    "wording": "| 2025 return, prepared by a Steuerberater | 28 February 2027 is a Sunday, so Monday 1 March 2027 | § 149(3) AO; [§ 108(3) AO](https://www.gesetze-im-internet.de/ao_1977/__108.html) |",
+    "source_quote_ids": [
+      "AO149.adviser",
+      "AO108.weekend",
+      "CG.corona-scope"
+    ],
+    "classification": "Calendar deadlines computed from own AO rules; EGAO exceptional years end2024. Source-vintage note preserves2025Vorabpauschale received2026."
+  },
+  {
+    "row": 62,
+    "LF_start": 116,
+    "LF_end": 116,
+    "section": "Deadlines and filing",
+    "wording": "| 2026 return, filed by the client | 31 July 2027 is a Saturday, so Monday 2 August 2027 | § 149(2) AO; § 108(3) AO |",
+    "source_quote_ids": [
+      "AO149.general",
+      "AO108.weekend"
+    ],
+    "classification": "Calendar deadlines computed from own AO rules; EGAO exceptional years end2024. Source-vintage note preserves2025Vorabpauschale received2026."
+  },
+  {
+    "row": 63,
+    "LF_start": 117,
+    "LF_end": 117,
+    "section": "Deadlines and filing",
+    "wording": "| 2026 return, prepared by a Steuerberater | Tuesday 29 February 2028 | § 149(3) AO |",
+    "source_quote_ids": [
+      "AO149.adviser"
+    ],
+    "classification": "Calendar deadlines computed from own AO rules; EGAO exceptional years end2024. Source-vintage note preserves2025Vorabpauschale received2026."
+  },
+  {
+    "row": 64,
+    "LF_start": 119,
+    "LF_end": 119,
+    "section": "Deadlines and filing",
+    "wording": "The tax office can ask for an adviser-prepared return earlier (§ 149(4) AO). For the 2025 return the rules are the same, except that the 2025 Vorabpauschale (2.53%) belongs in the 2026 return, and the lump sum on the 2025 bank certificate is the one for 2024.",
+    "source_quote_ids": [
+      "AO149.adviser",
+      "AO149.callin",
+      "CG.basis2025"
+    ],
+    "classification": "Calendar deadlines computed from own AO rules; EGAO exceptional years end2024. Source-vintage note preserves2025Vorabpauschale received2026."
+  },
+  {
+    "row": 65,
+    "LF_start": 125,
+    "LF_end": 125,
+    "section": "Penalties and interest",
+    "wording": "| Late-filing surcharge (Verspätungszuschlag) | 0.25% of the assessed tax less prepayments and withheld tax, per started month, at least EUR 25 per month | [§ 152(5) AO](https://www.gesetze-im-internet.de/ao_1977/__152.html) |",
+    "source_quote_ids": [
+      "AO152.surcharge"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 66,
+    "LF_start": 126,
+    "LF_end": 126,
+    "section": "Penalties and interest",
+    "wording": "| Interest on back tax or refunds (§ 233a) | 0.15% per month (1.8% a year), starting 15 months after the end of the tax year | [§ 233a AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html), [§ 238(1a) AO](https://www.gesetze-im-internet.de/ao_1977/__238.html) |",
+    "source_quote_ids": [
+      "AO233a.interest",
+      "AO238.rate",
+      "CG.corona-scope"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 67,
+    "LF_start": 127,
+    "LF_end": 127,
+    "section": "Penalties and interest",
+    "wording": "| Late-payment surcharge (Säumniszuschlag) | 1% per started month of the unpaid tax, rounded down to EUR 50 | [§ 240 AO](https://www.gesetze-im-internet.de/ao_1977/__240.html) |",
+    "source_quote_ids": [
+      "AO240.surcharge"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 68,
+    "LF_start": 129,
+    "LF_end": 129,
+    "section": "Penalties and interest",
+    "wording": "Failing to declare foreign-broker income is under-declaration; the back tax carries § 233a interest.",
+    "source_quote_ids": [
+      "CG.declare",
+      "AO233a.interest"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 69,
+    "LF_start": 133,
+    "LF_end": 133,
+    "section": "Cross-border points",
+    "wording": "- **Foreign brokers** withhold no German tax. The client declares the income on Anlage KAP and tracks Vorabpauschalen and loss pots.",
+    "source_quote_ids": [
+      "CG.declare",
+      "CG.formKAPINV",
+      "CG.fund-prepayment",
+      "CG.loss"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 70,
+    "LF_start": 134,
+    "LF_end": 134,
+    "section": "Cross-border points",
+    "wording": "- **Foreign withholding** is credited per item against the 25%, capped at the German tax on that item (§ 32d(5) EStG). Reclaims above the treaty rate are made in the source country.",
+    "source_quote_ids": [
+      "CG.foreigncredit"
+    ],
+    "classification": "Operative rule; exact own-law quotations above, with separate received/acquired dates where stated."
+  },
+  {
+    "row": 71,
+    "LF_start": 135,
+    "LF_end": 135,
+    "section": "Cross-border points",
+    "wording": "- **Non-residents** are taxed in Germany only on German-source income: see de-non-resident-tax. Dividends paid abroad: de-treaty-withholding-rates.",
+    "source_quote_ids": [
+      "CG.resident"
+    ],
+    "classification": "Companion routing only, not a new complete nonresident/treaty method; named Guides must determine their own liability."
+  },
+  {
+    "row": 72,
+    "LF_start": 136,
+    "LF_end": 136,
+    "section": "Cross-border points",
+    "wording": "- **Exit tax.** A client fully liable for at least seven of the last twelve years who holds § 17 shares faces a deemed sale on moving abroad, or on giving the shares to someone not liable in Germany ([§ 6 AStG](https://www.gesetze-im-internet.de/astg/__6.html)). Payment can be spread over seven yearly instalments on application; there is no open-ended EU/EEA deferral for triggers from 2022, and the tax falls away on return within seven years if conditions are met. Fund units are caught at 1% of a fund or a cost of EUR 500,000 ([§ 19(3) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__19.html)). Full detail: leaving-germany-exit-tax.",
+    "source_quote_ids": [
+      "Exit.scope",
+      "Exit.residence",
+      "Exit.instalments",
+      "Exit.return",
+      "CG.fund-exit"
+    ],
+    "classification": "Exit-method summary and named companion routing. DE-B02 preserves the omitted express fund positive-gain/lookback/trigger-date conditions pending root correction."
+  },
+  {
+    "row": 73,
+    "LF_start": 142,
+    "LF_end": 160,
+    "section": "Worked examples",
+    "wording": "**Example 1: single investor, German bank, no church tax.** In 2026 the client received dividends of EUR 1,500 and sold shares bought in 2020 for a gain of EUR 2,500. The Freistellungsauftrag covers the full EUR 1,000. Taxable: EUR 4,000 less EUR 1,000 = EUR 3,000. Flat tax at 25% = EUR 750. Surcharge at 5.5% of EUR 750 = EUR 41.25. The bank withholds EUR 791.25 in total. No return is needed for this income unless the client wants the Günstigerprüfung.\n\n```oa-check\nname: DE 2026 flat tax, single, no church tax\ninputs:\n  dividends: 1500\n  share_gain: 2500\n  allowance: 1000\nsteps:\n  - taxable: dividends + share_gain - allowance\n  - flat_tax: taxable * 0.25\n  - soli: flat_tax * 0.055\n  - total: flat_tax + soli\nexpected:\n  taxable: 3000\n  flat_tax: 750\n  soli: 41.25\n  total: 791.25\n```",
+    "source_quote_ids": [
+      "CG.allowance",
+      "CG.rate",
+      "Soli.rate",
+      "CG.bank-finality"
+    ],
+    "classification": "Stipulated1500/2500 inputs and computed3000/750/41.25/791.25; original executable example1, not official facts."
+  },
+  {
+    "row": 74,
+    "LF_start": 162,
+    "LF_end": 189,
+    "section": "Worked examples",
+    "wording": "**Example 2: church member, share losses and a foreign broker.** The client is single, a church member in a state with a church-tax rate of 8% (assumed for the example; confirm the state rate). In 2026: interest of EUR 1,200 and dividends of EUR 2,800 at a foreign broker (no German tax withheld, no foreign tax), plus a share gain of EUR 2,000 and a share loss of EUR 2,500 at a German bank that issued a loss certificate. The share loss can only offset the share gain, so EUR 500 of loss carries forward to future share gains; it does not reduce the interest or dividends. Taxable: EUR 4,000 less the EUR 1,000 allowance = EUR 3,000. Flat tax = 3,000 / (4 + 0.08) = EUR 735.29. Church tax = 8% of that = EUR 58.82. Surcharge = 5.5% = EUR 40.44. Total EUR 834.55, against EUR 791.25 without church tax.\n\n```oa-check\nname: DE 2026 church-tax formula with share-loss pot\ninputs:\n  interest: 1200\n  dividends: 2800\n  share_gain: 2000\n  share_loss: 2500\n  allowance: 1000\n  k: 0.08\nsteps:\n  - share_net: max(share_gain - share_loss, 0)\n  - loss_carried: max(share_loss - share_gain, 0)\n  - taxable: interest + dividends + share_net - allowance\n  - flat_tax: round(taxable / (4 + k), 2)\n  - church: round(flat_tax * k, 2)\n  - soli: round(flat_tax * 0.055, 2)\n  - total: flat_tax + church + soli\nexpected:\n  share_net: 0\n  loss_carried: 500\n  taxable: 3000\n  flat_tax: 735.29\n  church: 58.82\n  soli: 40.44\n  total: 834.55\n```",
+    "source_quote_ids": [
+      "CG.loss",
+      "CG.allowance",
+      "CG.rate",
+      "Soli.rate"
+    ],
+    "classification": "Stipulated4000investment income,2000sharegain/2500shareloss and8%church assumption; computed500carry/735.29/58.82/40.44/834.55. State8%is an express case assumption, not verified state law."
+  },
+  {
+    "row": 75,
+    "LF_start": 191,
+    "LF_end": 191,
+    "section": "Worked examples",
+    "wording": "**Example 3: losses at two banks.** In 2026 the client lost EUR 3,000 selling shares at bank A and gained EUR 5,000 selling shares at bank B. Bank B withholds on the EUR 5,000 (less any allowance used there). The client asks bank A for a loss certificate by 15 December 2026 and files Anlage KAP; the tax office sets the EUR 3,000 against the share gain at bank B and refunds the excess tax ([§ 43a(3) EStG](https://www.gesetze-im-internet.de/estg/__43a.html), § 20(6) sentence 5). Without the certificate the loss stays at bank A and is carried into 2027 there.",
+    "source_quote_ids": [
+      "CG.loss",
+      "CG.loss-certificate",
+      "CG.allowance"
+    ],
+    "classification": "Stipulated two-bank3000loss/5000gain; computed2000netsharegain before any remaining allowance; no fixed net tax is stated without allowance facts."
+  },
+  {
+    "row": 76,
+    "LF_start": 193,
+    "LF_end": 210,
+    "section": "Worked examples",
+    "wording": "**Example 4: Vorabpauschale on an equity ETF.** An accumulating equity ETF was worth EUR 50,000 on 1 January 2026 and rose by more than EUR 1,120 over 2026, with no distributions. Base return: EUR 50,000 x 70% x 3.20% = EUR 1,120. Teilfreistellung 30%, so EUR 784 is taxable. It counts as received on the first working day of 2027 ([§ 18 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__18.html), [§ 20 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__20.html)). The same holding for 2025 gave EUR 50,000 x 70% x 2.53% = EUR 885.50, received early in 2026.\n\n```oa-check\nname: DE Vorabpauschale 2026 and 2025, equity ETF\ninputs:\n  start_value: 50000\n  basiszins_2026: 0.032\n  basiszins_2025: 0.0253\n  teilfreistellung: 0.30\nsteps:\n  - base_2026: start_value * 0.70 * basiszins_2026\n  - taxable_2026: base_2026 * (1 - teilfreistellung)\n  - base_2025: start_value * 0.70 * basiszins_2025\nexpected:\n  base_2026: 1120\n  taxable_2026: 784\n  base_2025: 885.50\n```",
+    "source_quote_ids": [
+      "CG.fund-prepayment",
+      "CG.fund-partial",
+      "CG.basis2026",
+      "Soli.rate",
+      "CG.rate"
+    ],
+    "classification": "Stipulated50000fund and sufficient actualgain; computed1120base/784taxable and2025base885.50. Firstworkingday2027 deemedreceipt is own18rule, not2026cash tax or an assumed2027rate."
+  },
+  {
+    "row": 77,
+    "LF_start": 212,
+    "LF_end": 212,
+    "section": "Worked examples",
+    "wording": "**Example 5: crypto and the Freigrenze cliff.** Bitcoin bought 1 March 2025 for EUR 10,000 and sold 15 February 2026 for EUR 10,900: a gain of EUR 900 within one year. With no other private sales the total is below EUR 1,000, so it is tax-free. If the client also sold gold within a year at a EUR 200 gain, the total is EUR 1,100 and the whole EUR 1,100 is taxed at the normal rate. Sold on 2 March 2026, more than one year after purchase, the Bitcoin would be outside § 23 ([§ 23(1) no. 2 and (3) EStG](https://www.gesetze-im-internet.de/estg/__23.html)).",
+    "source_quote_ids": [
+      "CG.privategain-cliff",
+      "CG.private1year"
+    ],
+    "classification": "Stipulated10k purchase/10.9k or11.1k proceeds; computed900excluded/1100whollytaxable and holding dates."
+  },
+  {
+    "row": 78,
+    "LF_start": 214,
+    "LF_end": 234,
+    "section": "Worked examples",
+    "wording": "**Example 6: selling a 2% stake.** The client sells a whole 2% holding in a GmbH for EUR 100,000; cost EUR 40,000, no selling costs. Taxable: 60% of EUR 100,000 less 60% of EUR 40,000 = EUR 36,000. The allowance for 2% is 2% of EUR 9,060 = EUR 181.20, cut by the amount the gain exceeds 2% of EUR 36,100 (EUR 722), so it is nil. EUR 36,000 joins the client's other income ([§ 17(3) EStG](https://www.gesetze-im-internet.de/estg/__17.html), [§ 3 no. 40 c](https://www.gesetze-im-internet.de/estg/__3.html), [§ 3c(2)](https://www.gesetze-im-internet.de/estg/__3c.html)).\n\n```oa-check\nname: DE § 17 sale of a 2% stake, allowance fully cut\ninputs:\n  price: 100000\n  cost: 40000\n  share: 0.02\nsteps:\n  - gain: price * 0.60 - cost * 0.60\n  - allowance_start: 9060 * share\n  - cut_threshold: 36100 * share\n  - allowance: max(allowance_start - max(gain - cut_threshold, 0), 0)\n  - taxable: gain - allowance\nexpected:\n  gain: 36000\n  allowance_start: 181.20\n  cut_threshold: 722\n  allowance: 0\n  taxable: 36000\n```",
+    "source_quote_ids": [
+      "CG.large-threshold",
+      "CG.partial40-scope",
+      "CG.partial60",
+      "CG.large-allowance"
+    ],
+    "classification": "Stipulated2%/100000/40000; computed60000gain/36000taxable,181.20allowance/722threshold, reducedallowance0, final36000. No assumed marginal rate."
+  },
+  {
+    "row": 79,
+    "LF_start": 236,
+    "LF_end": 236,
+    "section": "Worked examples",
+    "wording": "**Example 7: selling a flat.** A flat bought in 2018 was let until 2023 and lived in by the owner from January 2024 until its sale in June 2026. It was the owner's home in the year of sale and the two years before, so the gain is outside § 23 even though the sale is within ten years. Had it still been let at the sale, the whole gain would be taxed at the normal rate (§ 23(1) no. 1 sentence 3 EStG).",
+    "source_quote_ids": [
+      "CG.private10year-home"
+    ],
+    "classification": "Stipulated2018purchase/2024–2026ownuse; application of statutory three-calendar-year exception, no exact365dayfraction."
+  },
+  {
+    "row": 80,
+    "LF_start": 242,
+    "LF_end": 247,
+    "section": "When to refer",
+    "wording": "- The client is leaving Germany, or giving shares to someone abroad, with a holding of 1% or more or large fund holdings ([§ 6 AStG](https://www.gesetze-im-internet.de/astg/__6.html)); the exit tax needs a valuation and the holding history.\n- Assets are held in a business, a partnership or a company.\n- The case turns on a tax treaty, or on crediting foreign tax beyond the per-item cap.\n- Crypto goes beyond buying, selling and swapping: staking, lending, mining, DeFi, NFTs, or tokens that work like securities.\n- A § 17 sale involves a loss, shares received as a gift, a capital reduction or a liquidation.\n- The client wants the § 32d(2) no. 3 option, which runs for four more years unless revoked and cannot be made again after revocation.",
+    "source_quote_ids": [
+      "Exit.scope",
+      "CG.fund-exit",
+      "CG.foreigncredit",
+      "CG.large-loss",
+      "CG.option"
+    ],
+    "classification": "Explicit referral boundaries; no new specialist computation supplied."
+  },
+  {
+    "row": 81,
+    "LF_start": 249,
+    "LF_end": 249,
+    "section": "When to refer",
+    "wording": "Do not state a combined flat-tax rate with church tax without the client's state church-tax rate, and do not estimate a Vorabpauschale without the fund's actual prices.",
+    "source_quote_ids": [
+      "CG.rate",
+      "CG.fund-prepayment"
+    ],
+    "classification": "Precise existing source/input limitations: statechurchtaxrate and actualfundprices required."
+  },
+  {
+    "row": 82,
+    "LF_start": 253,
+    "LF_end": 258,
+    "section": "Ask the client first",
+    "wording": "- Are the assets held privately or in a business, and are you married and assessed jointly?\n- Which banks and brokers hold them, is any outside Germany, and how is the Freistellungsauftrag split?\n- Are you a church member, and in which federal state do you live?\n- Do you hold, or did you hold in the last five years, 1% or more of any company? Do you work for it?\n- For each fund: its type and the price on 1 January. For crypto, gold and property: purchase and sale dates, and whether you lived in the property.\n- Do you have losses carried forward or bank loss certificates, and are you planning to leave Germany?",
+    "source_quote_ids": [
+      "CG.resident",
+      "CG.allowance",
+      "CG.allowance-order",
+      "CG.large-threshold",
+      "CG.fund-prepayment",
+      "CG.private10year-home",
+      "Exit.scope"
+    ],
+    "classification": "Intake records for the supplied methods; no independent new monetary threshold."
+  },
+  {
+    "row": 83,
+    "LF_start": 284,
+    "LF_end": 284,
+    "section": "Sources",
+    "wording": "Not yet confirmed: the state church-tax rates (8% or 9%, set by state law, not on the federal pages); the body of the 14 May 2025 BMF letter was located but not read line by line.",
+    "source_quote_ids": [
+      "CG.guidance-title"
+    ],
+    "classification": "Original explicit source-read limitations retained: no invented state8/9%law or unperformed full-letter read."
+  }
+]

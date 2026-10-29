@@ -1,0 +1,10 @@
+{
+  "id": "BG108",
+  "url": "https://www.recht.bund.de/bgbl/1/2024/108/VO.html",
+  "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2024-I-108-20261024.pdf",
+  "raw_sha256": "b95ebec40902824eb7f0e9daabbfdeb628dde44aeaae9d7757231249c680ff3b",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/BG108.reader.txt",
+  "reader_sha256": "38ab8edac703a190bbc86b6e9c3f2d577f77a75503d6be4ce36dfd7fe640329e",
+  "extraction": "pdftotext-layout, literal LF coordinates; raw original unchanged",
+  "acquisition": "existing cached officialPDF located via prior independent reports/source identity inventory; not newly downloaded"
+}

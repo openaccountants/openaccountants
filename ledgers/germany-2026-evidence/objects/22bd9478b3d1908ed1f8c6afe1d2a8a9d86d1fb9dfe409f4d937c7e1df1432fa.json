@@ -1,0 +1,45 @@
+{
+  "finding": "DE-B06",
+  "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-social-contributions.md",
+  "Guide_sha256": "1a5978cfb309aacdf73dfe49aa3455c6d470fba4145542b53be2e78fec6dc11f",
+  "before": [
+    {
+      "native_LF": 45,
+      "exact_text": "The three-month windows (pension registration and exemptions, unemployment insurance) and the one-month window of the status procedure all run from the first day of the work."
+    },
+    {
+      "native_LF": 283,
+      "exact_text": "Registration windows: pension registration and exemptions, and unemployment insurance on application, within three months of starting; the accident insurer within one week; the status procedure within one month for its protection; the KSK income estimate by 1 December; the artists' levy report by 31 March of the next year."
+    }
+  ],
+  "source": {
+    "source_id": "DEB094",
+    "official_url": "https://www.gesetze-im-internet.de/sgb_6/__6.html",
+    "raw_sha256": "bd7ea0622914037969a3948d6ce39238ba15460c1714c780b380ab42b03d0242",
+    "reader_sha256": "0a59ebcb2788a0b411624ded1dae1cdaff1e76afccb7523850969b3fac27d18c",
+    "native_LF": [
+      33,
+      33
+    ],
+    "exact_original_quote": "(4) Die Befreiung wirkt vom Vorliegen der Befreiungsvoraussetzungen an, wenn sie innerhalb von drei Monaten beantragt wird, sonst vom Eingang des Antrags an. In den Fällen des Absatzes 1b wirkt die Befreiung bei Vorliegen der Befreiungsvoraussetzungen nach Eingang der Meldung des Arbeitgebers nach § 28a des Vierten Buches bei der zuständigen Einzugsstelle rückwirkend vom Beginn des Monats, in dem der Antrag des Beschäftigten dem Arbeitgeber zugegangen ist, wenn der Arbeitgeber den Befreiungsantrag der Einzugsstelle mit der ersten folgenden Entgeltabrechnung, spätestens aber innerhalb von sechs Wochen nach Zugang, gemeldet und die Einzugsstelle innerhalb eines Monats nach Eingang der Meldung des Arbeitgebers nicht widersprochen hat. Erfolgt die Meldung des Arbeitgebers später, wirkt die Befreiung vom Beginn des auf den Ablauf der Widerspruchsfrist nach Absatz 3 folgenden Monats. In den Fällen, in denen bei einer Mehrfachbeschäftigung die Befreiungsvoraussetzungen vorliegen, hat die Einzugsstelle die weiteren Arbeitgeber über den Zeitpunkt der Wirkung der Befreiung unverzüglich durch eine Meldung zu unterrichten.",
+    "act_article": "SGBVI6(4)",
+    "read_on": "2026-10-29"
+  },
+  "options": [
+    {
+      "label": "A — narrow the stated rule to its statutory scope (recommended)",
+      "exact_after": [
+        "The three-month windows (pension registration and unemployment insurance) and the one-month window of the status procedure run from the first day of the work. For a pension exemption under § 6(4) SGB VI, the three-month period instead runs from when the exemption conditions are met.",
+        "Registration windows: pension registration and unemployment insurance on application, within three months of starting; a § 6(4) SGB VI pension exemption within three months from when its conditions are met; the accident insurer within one week; the status procedure within one month for its protection; the KSK income estimate by 1 December; the artists' levy report by 31 March of the next year."
+      ]
+    },
+    {
+      "label": "B — keep summary short with an explicit detailed-rule qualification",
+      "proposed_wording": [
+        "Remove exemptions from the opening summary and refer expressly to the detailed Timing bullet at current209.",
+        "Use the same detailed Timing cross-reference in Registration windows rather than restating its clock."
+      ]
+    }
+  ],
+  "no_Guide_edit_by_writer": true
+}

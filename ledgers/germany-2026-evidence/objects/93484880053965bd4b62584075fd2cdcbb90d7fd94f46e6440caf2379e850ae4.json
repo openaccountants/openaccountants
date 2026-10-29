@@ -1,0 +1,11 @@
+{
+  "id": "U3544d056e9180805",
+  "url": "https://www.gesetze-im-internet.de/entgbv/__1.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3544d056e9180805.body",
+  "raw_sha256": "a84d5db88e19bb8c738900ec54a831d071289778bdeca85378e6c0b34874e771",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3544d056e9180805.reader.txt",
+  "reader_sha256": "27b6d2af71cb31faf06d54fa7ca2ea88a05f43987bd862a4f2887c1492486ac8",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

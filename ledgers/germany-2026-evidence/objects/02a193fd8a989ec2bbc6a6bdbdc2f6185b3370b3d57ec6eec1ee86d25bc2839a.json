@@ -1,0 +1,240 @@
+{
+  "method": "Independent Fraction tariff and computed boundary inputs; not writer expected-result replay",
+  "controls": [
+    {
+      "name": "Anna profit",
+      "actual": "60080",
+      "expected": "60080",
+      "pass": true
+    },
+    {
+      "name": "Anna taxable",
+      "actual": "49844",
+      "expected": "49844",
+      "pass": true
+    },
+    {
+      "name": "Anna tariff actual statute fractions",
+      "actual": "10493",
+      "expected": "10493",
+      "pass": true
+    },
+    {
+      "name": "Anna balance",
+      "actual": "493",
+      "expected": "493",
+      "pass": true
+    },
+    {
+      "name": "Bernd taxable",
+      "actual": "79964",
+      "expected": "79964",
+      "pass": true
+    },
+    {
+      "name": "Bernd tariff",
+      "actual": "22449",
+      "expected": "22449",
+      "pass": true
+    },
+    {
+      "name": "Bernd Messbetrag",
+      "actual": "4935/2",
+      "expected": "4935/2",
+      "pass": true
+    },
+    {
+      "name": "Bernd trade",
+      "actual": "8883",
+      "expected": "8883",
+      "pass": true
+    },
+    {
+      "name": "Bernd credit",
+      "actual": "8883",
+      "expected": "8883",
+      "pass": true
+    },
+    {
+      "name": "Bernd credit unused",
+      "actual": "987",
+      "expected": "987",
+      "pass": true
+    },
+    {
+      "name": "Bernd ESt",
+      "actual": "13566",
+      "expected": "13566",
+      "pass": true
+    },
+    {
+      "name": "Bernd church source-conditional9%",
+      "actual": "202041/100",
+      "expected": "202041/100",
+      "pass": true
+    },
+    {
+      "name": "Bernd noSoli after credit",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "tariffboundary12348",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "tariffboundary12349",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "tariffboundary17799",
+      "actual": "1034",
+      "expected": "1034",
+      "pass": true
+    },
+    {
+      "name": "tariffboundary17800",
+      "actual": "1035",
+      "expected": "1035",
+      "pass": true
+    },
+    {
+      "name": "tariffboundary69878",
+      "actual": "18213",
+      "expected": "18213",
+      "pass": true
+    },
+    {
+      "name": "tariffboundary69879",
+      "actual": "18213",
+      "expected": "18213",
+      "pass": true
+    },
+    {
+      "name": "tariffboundary277825",
+      "actual": "105550",
+      "expected": "105550",
+      "pass": true
+    },
+    {
+      "name": "tariffboundary277826",
+      "actual": "105551",
+      "expected": "105551",
+      "pass": true
+    },
+    {
+      "name": "miner pension cap before ceiling",
+      "actual": "154128/5",
+      "expected": "154128/5",
+      "pass": true
+    },
+    {
+      "name": "pension wholeEuro up",
+      "actual": "30826",
+      "expected": "30826",
+      "pass": true
+    },
+    {
+      "name": "joint cap",
+      "actual": "61652",
+      "expected": "61652",
+      "pass": true
+    },
+    {
+      "name": "gift equal50 all",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "gift50.01 none",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "pool250 excluded",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "pool1000 allowed",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "pool1000.01 excluded",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "commute list ordinary amount",
+      "actual": "2880",
+      "expected": "2880",
+      "pass": true
+    },
+    {
+      "name": "commute allowance",
+      "actual": "1520",
+      "expected": "1520",
+      "pass": true
+    },
+    {
+      "name": "positive addback DE-R01",
+      "actual": "1360",
+      "expected": "1360",
+      "pass": true
+    },
+    {
+      "name": "logbook costs1000 addback",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "logbook costs2000 addback",
+      "actual": "480",
+      "expected": "480",
+      "pass": true
+    },
+    {
+      "name": "single allowance0Soli",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "marginalSoli20351",
+      "actual": "11/100",
+      "expected": "11/100",
+      "pass": true
+    },
+    {
+      "name": "Soli at24000 marginal",
+      "actual": "8687/20",
+      "expected": "8687/20",
+      "pass": true
+    },
+    {
+      "name": "2026ownreturnweekday",
+      "actual": "5",
+      "expected": "5",
+      "pass": true
+    },
+    {
+      "name": "advisedleapdayweekday",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    }
+  ],
+  "count": 39
+}

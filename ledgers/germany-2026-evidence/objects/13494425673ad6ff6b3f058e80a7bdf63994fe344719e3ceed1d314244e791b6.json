@@ -1,0 +1,154 @@
+{
+  "R18.rate": {
+    "id": "R18.rate",
+    "url": "https://www.gesetze-im-internet.de/solzg_1995/__4.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-4-20261024.html",
+    "raw_sha256": "dd28933ed36da19cae72de5a054f9edbea5c5919cb2aeac6efc257afe9fab058",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud87f3fb176816839.reader.txt",
+    "reader_sha256": "219a2aa1409e999b209ed2402a91d3618b9ec3c19ebf85c10122087d7fa3845a",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "SolzG § 4",
+    "native_LF": [
+      7,
+      7
+    ],
+    "exact_quote": "Der Solidaritätszuschlag beträgt 5,5 Prozent der Bemessungsgrundlage. Er beträgt nicht mehr als 11,9 Prozent des Unterschiedsbetrages zwischen der Bemessungsgrundlage, vermindert um die Einkommensteuer nach § 32d Absatz 3 und 4 des Einkommensteuergesetzes, und der nach § 3 Absatz 3, 4 und 5 jeweils maßgebenden Freigrenze. Bruchteile eines Cents bleiben außer Ansatz. Der Solidaritätszuschlag auf die Einkommensteuer nach § 32d Absatz 3 und 4 des Einkommensteuergesetzes und auf die Lohnsteuer nach § 39b Absatz 3 des Einkommensteuergesetzes beträgt ungeachtet des Satzes 2 5,5 Prozent.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native LF actually read in this writer phase; retained body acquisition is not a whole-source read."
+  },
+  "R18.base-and-threshold": {
+    "id": "R18.base-and-threshold",
+    "url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-3-20261024.html",
+    "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc748242e6e54c746.reader.txt",
+    "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "SolzG § 3(1)–(3)",
+    "native_LF": [
+      7,
+      33
+    ],
+    "exact_quote": "(1) Der Solidaritätszuschlag bemisst sich vorbehaltlich der Absätze 2 bis 5, 1.\nsoweit eine Veranlagung zur Einkommensteuer oder Körperschaftsteuer vorzunehmen ist:\nnach der nach Absatz 2 berechneten Einkommensteuer oder der festgesetzten Körperschaftsteuer für Veranlagungszeiträume ab 1998, vermindert um die anzurechnende oder vergütete Körperschaftsteuer, wenn ein positiver Betrag verbleibt;\n2.\nsoweit Vorauszahlungen zur Einkommensteuer oder Körperschaftsteuer zu leisten sind:\nnach den Vorauszahlungen auf die Steuer für Veranlagungszeiträume ab 2002;\n3.\nsoweit Lohnsteuer zu erheben ist:\nnach der nach Absatz 2a berechneten Lohnsteuer füra)\nlaufenden Arbeitslohn, der für einen nach dem 31. Dezember 1997 endenden Lohnzahlungszeitraum gezahlt wird,\nb)\nsonstige Bezüge, die nach dem 31. Dezember 1997 zufließen;\n4.\nsoweit ein Lohnsteuer-Jahresausgleich durchzuführen ist, nach der nach Absatz 2a sich ergebenden Jahreslohnsteuer für Ausgleichsjahre ab 1998;\n5.\nsoweit Kapitalertragsteuer oder Zinsabschlag zu erheben ist außer in den Fällen des § 43b des Einkommensteuergesetzes:\nnach der ab 1. Januar 1998 zu erhebenden Kapitalertragsteuer oder dem ab diesem Zeitpunkt zu erhebenden Zinsabschlag;\n6.\nsoweit bei beschränkt Steuerpflichtigen ein Steuerabzugsbetrag nach § 50a des Einkommensteuergesetzes zu erheben ist:\nnach dem ab 1. Januar 1998 zu erhebenden Steuerabzugsbetrag.\n(2) Bei der Veranlagung zur Einkommensteuer ist Bemessungsgrundlage für den Solidaritätszuschlag die Einkommensteuer, die abweichend von § 2 Abs. 6 des Einkommensteuergesetzes unter Berücksichtigung von Freibeträgen nach § 32 Abs. 6 des Einkommensteuergesetzes in allen Fällen des § 32 des Einkommensteuergesetzes festzusetzen wäre.\n(2a) Vorbehaltlich des § 40a Absatz 2 des Einkommensteuergesetzes ist beim Steuerabzug vom Arbeitslohn Bemessungsgrundlage die Lohnsteuer; beim Steuerabzug vom laufenden Arbeitslohn und beim Jahresausgleich ist die Lohnsteuer maßgebend, die sich ergibt, wenn der nach § 39b Absatz 2 Satz 5 des Einkommensteuergesetzes zu versteuernde Jahresbetrag für die Steuerklassen I, II und III im Sinne des § 38b des Einkommensteuergesetzes um den doppelten Kinderfreibetrag sowie den doppelten Freibetrag für den Betreuungs- und Erziehungs- oder Ausbildungsbedarf und für die Steuerklasse IV im Sinne des § 38b des Einkommensteuergesetzes um den Kinderfreibetrag sowie den Freibetrag für den Betreuungs- und Erziehungs- oder Ausbildungsbedarf (§ 32 Absatz 6 Satz 1 des Einkommensteuergesetzes) für jedes Kind vermindert wird, für das eine Kürzung der Freibeträge für Kinder nach § 32 Absatz 6 Satz 4 des Einkommensteuergesetzes nicht in Betracht kommt. Bei der Anwendung des § 39b des Einkommensteuergesetzes für die Ermittlung des Solidaritätszuschlages ist die als Lohnsteuerabzugsmerkmal gebildete Zahl der Kinderfreibeträge maßgebend. Bei Anwendung des § 39f des Einkommensteuergesetzes ist beim Steuerabzug vom laufenden Arbeitslohn die Lohnsteuer maßgebend, die sich bei Anwendung des nach § 39f Abs. 1 des Einkommensteuergesetzes ermittelten Faktors auf den nach den Sätzen 1 und 2 ermittelten Betrag ergibt.\n(3) Der Solidaritätszuschlag ist von einkommensteuerpflichtigen Personen nur zu erheben, wenn die Bemessungsgrundlage nach Absatz 1 Nummer 1 und 2, vermindert um die Einkommensteuer nach § 32d Absatz 3 und 4 des Einkommensteuergesetzes, 1.\nin den Fällen des § 32a Absatz 5 und 6 des Einkommensteuergesetzes 40 700 Euro,\n2.\nin anderen Fällen 20 350 Euro\nübersteigt. Auf die Einkommensteuer nach § 32d Absatz 3 und 4 des Einkommensteuergesetzes ist der Solidaritätszuschlag ungeachtet des Satzes 1 zu erheben.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native LF actually read in this writer phase; retained body acquisition is not a whole-source read."
+  },
+  "R19.refund": {
+    "id": "R19.refund",
+    "url": "https://www.gesetze-im-internet.de/estg/__44a.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-44a-20261026.html",
+    "raw_sha256": "1589436abec915a0d49be85ff82d5319831789eb3873a391c983fef6726cf72d",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U26ee07b985228da2.reader.txt",
+    "reader_sha256": "6b231e67dcfa9e5f8b8f4c3a9441d242d9fa211fbd37e0191070b5620c1db7f8",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG § 44a(9)",
+    "native_LF": [
+      51,
+      51
+    ],
+    "exact_quote": "(9) 1Ist der Gläubiger der Kapitalerträge im Sinne des § 43 Absatz 1 eine beschränkt steuerpflichtige Körperschaft im Sinne des § 2 Nummer 1 des Körperschaftsteuergesetzes, so werden zwei Fünftel der einbehaltenen und abgeführten Kapitalertragsteuer erstattet. 2§ 50c Absatz 3 und 5 sowie § 50d Absatz 3 sind entsprechend anzuwenden. 3Weitergehende Ansprüche aus § 43b oder § 50g oder einem Abkommen zur Vermeidung der Doppelbesteuerung bleiben unberührt. 4Verfahren nach den vorstehenden Sätzen und nach § 50c Absatz 3 soll das Bundeszentralamt für Steuern verbinden.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native LF actually read in this writer phase; retained body acquisition is not a whole-source read."
+  },
+  "R19.anti-abuse": {
+    "id": "R19.anti-abuse",
+    "url": "https://www.gesetze-im-internet.de/estg/__50d.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U20a110d035f0b1ba.body",
+    "raw_sha256": "fd1ee264c4c5e8fc80f1663de4ea010fc7793242c574622dad8a2c05d7fb345a",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U20a110d035f0b1ba.reader.txt",
+    "reader_sha256": "05fc41a45e6dc460030534c73b751375029212123e882f7cf0f5a37fe5a35878",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG § 50d(3)",
+    "native_LF": [
+      10,
+      14
+    ],
+    "exact_quote": "(3) 1Eine Körperschaft, Personenvereinigung oder Vermögensmasse hat auf der Grundlage eines Abkommens zur Vermeidung der Doppelbesteuerung keinen Anspruch auf Entlastung von der Kapitalertragsteuer und vom Steuerabzug nach § 50a, soweit 1.\nPersonen an ihr beteiligt oder durch die Satzung, das Stiftungsgeschäft oder die sonstige Verfassung begünstigt sind, denen dieser Anspruch nicht zustünde, wenn sie die Einkünfte unmittelbar erzielten, und\n2.\ndie Einkunftsquelle keinen wesentlichen Zusammenhang mit einer Wirtschaftstätigkeit dieser Körperschaft, Personenvereinigung oder Vermögensmasse aufweist; das Erzielen der Einkünfte, deren Weiterleitung an beteiligte oder begünstigte Personen sowie eine Tätigkeit, soweit sie mit einem für den Geschäftszweck nicht angemessen eingerichteten Geschäftsbetrieb ausgeübt wird, gelten nicht als Wirtschaftstätigkeit.\n2Satz 1 findet keine Anwendung, soweit die Körperschaft, Personenvereinigung oder Vermögensmasse nachweist, dass keiner der Hauptzwecke ihrer Einschaltung die Erlangung eines steuerlichen Vorteils ist, oder wenn mit der Hauptgattung der Anteile an ihr ein wesentlicher und regelmäßiger Handel an einer anerkannten Börse stattfindet. 3§ 42 der Abgabenordnung bleibt unberührt.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native LF actually read in this writer phase; retained body acquisition is not a whole-source read."
+  },
+  "R20.assessment-exceptions": {
+    "id": "R20.assessment-exceptions",
+    "url": "https://www.gesetze-im-internet.de/estg/__50.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-50-20261024.html",
+    "raw_sha256": "63d1f168553262d258ff45cd2114914c946c6348fd7335ddaf60c645a7a10765",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0608abafb236b1f1.reader.txt",
+    "reader_sha256": "34181f9545634ae26e814db06c4f0f23c3d58e85577c46cac58a89a800709223",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG § 50(2)",
+    "native_LF": [
+      13,
+      34
+    ],
+    "exact_quote": "(2) 1Die Einkommensteuer für Einkünfte, die dem Steuerabzug vom Arbeitslohn oder vom Kapitalertrag oder dem Steuerabzug auf Grund des § 50a unterliegen, gilt bei beschränkt Steuerpflichtigen durch den Steuerabzug als abgegolten. 2Satz 1 gilt nicht 1.\nfür Einkünfte eines inländischen Betriebs;\n2.\nwenn nachträglich festgestellt wird, dass die Voraussetzungen der unbeschränkten Einkommensteuerpflicht im Sinne des § 1 Absatz 2 oder Absatz 3 oder des § 1a nicht vorgelegen haben; § 39 Absatz 7 ist sinngemäß anzuwenden;\n3.\nin Fällen des § 2 Absatz 7 Satz 3;\n4.\nfür Einkünfte aus nichtselbständiger Arbeit im Sinne des § 49 Absatz 1 Nummer 4, a)\nwenn als Lohnsteuerabzugsmerkmal ein Freibetrag nach § 39a Absatz 4 gebildet worden ist und der im Kalenderjahr insgesamt erzielte Arbeitslohn höher ist als die Summe aus dem Grundfreibetrag (§ 32a Absatz 1 Satz 2 Nummer 1), dem Arbeitnehmer-Pauschbetrag (§ 9a Satz 1 Nummer 1 Buchstabe a) und dem Sonderausgaben-Pauschbetrag (§ 10c Satz 1),\nb)\nwenn die Veranlagung zur Einkommensteuer beantragt wird (§ 46 Absatz 2 Nummer 8),\nc)\nin den Fällen des § 46 Absatz 2 Nummer 2, 5 und 5a,\nd)\nwenn außerordentliche Einkünfte im Sinne des § 34 Absatz 1 und 2 Nummer 2 und 4 bezogen worden sind und in diesem Zusammenhang die Veranlagung zur Einkommensteuer beantragt wird (§ 46 Absatz 2 Nummer 8) oder\ne)\nwenn die Anrechnung einer ausländischen Steuer nach § 50d Absatz 7 Satz 2 beantragt wird;\n5.\nfür Einkünfte im Sinne des § 50a Absatz 1 Nummer 1, 2 und 4, wenn die Veranlagung zur Einkommensteuer beantragt wird;\n6.\nfür Einkünfte aus Kapitalvermögen im Sinne des § 49 Absatz 1 Nummer 5 Satz 1 Buchstabe a, auf die § 20 Absatz 1 Nummer 6 Satz 2 anzuwenden ist, wenn die Veranlagung zur Einkommensteuer beantragt wird.\n3In den Fällen des Satzes 2 Nummer 4 erfolgt die Veranlagung durch das Betriebsstättenfinanzamt, das nach § 39 Absatz 2 Satz 2 oder Satz 4 für die Bildung und die Änderung der Lohnsteuerabzugsmerkmale zuständig ist. 4Bei mehreren Betriebsstättenfinanzämtern ist das Betriebsstättenfinanzamt zuständig, in dessen Bezirk der Arbeitnehmer zuletzt beschäftigt war. 5Bei Arbeitnehmern mit Steuerklasse VI ist das Betriebsstättenfinanzamt zuständig, in dessen Bezirk der Arbeitnehmer zuletzt unter Anwendung der Steuerklasse I beschäftigt war. 6Hat der Arbeitgeber für den Arbeitnehmer keine elektronischen Lohnsteuerabzugsmerkmale (§ 39e Absatz 4 Satz 2) abgerufen und wurde keine Bescheinigung für den Lohnsteuerabzug nach § 39 Absatz 3 oder § 39e Absatz 7 Satz 5 ausgestellt, ist das Betriebsstättenfinanzamt zuständig, in dessen Bezirk der Arbeitnehmer zuletzt beschäftigt war. 7Satz 2 Nummer 4 Buchstabe b und Nummer 5 gilt nur für Staatsangehörige eines Mitgliedstaats der Europäischen Union oder eines anderen Staates, auf den das Abkommen über den Europäischen Wirtschaftsraum Anwendung findet, die im Hoheitsgebiet eines dieser Staaten ihren Wohnsitz oder gewöhnlichen Aufenthalt haben. 8Satz 2 Nummer 4 Buchstabe b gilt darüber hinaus auch für Staatsangehörige eines Mitgliedstaates der Europäischen Union oder eines Staates, auf den das Abkommen über den Europäischen Wirtschaftsraum Anwendung findet, die in der Schweiz ihren Wohnsitz oder gewöhnlichen Aufenthalt haben, sowie für Staatsangehörige der Schweizerischen Eidgenossenschaft, die ihren Wohnsitz oder gewöhnlichen Aufenthalt im Hoheitsgebiet eines Mitgliedstaates der Europäischen Union oder der Schweiz haben. 9In den Fällen des Satzes 2 Nummer 5 erfolgt die Veranlagung durch das Bundeszentralamt für Steuern. 10In den Fällen des Satzes 2 Nummer 6 ist für die Besteuerung des Gläubigers nach dem Einkommen das Finanzamt zuständig, das auch für die Besteuerung des Schuldners nach dem Einkommen zuständig ist; bei mehreren Schuldnern ist das Finanzamt zuständig, das für den Schuldner, dessen Leistung dem Gläubiger im Veranlagungszeitraum zuerst zufloss, zuständig ist. 11Werden im Rahmen einer Veranlagung Einkünfte aus nichtselbständiger Arbeit im Sinne des § 49 Absatz 1 Nummer 4 bei der Ermittlung des zu versteuernden Einkommens berücksichtigt, gilt § 46 Absatz 3 und 5 entsprechend.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native LF actually read in this writer phase; retained body acquisition is not a whole-source read."
+  },
+  "R21.business-rights": {
+    "id": "R21.business-rights",
+    "url": "https://www.gesetze-im-internet.de/estg/__49.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-49-20261024.html",
+    "raw_sha256": "ab6d74634775a9a34966bdfd0058d8e93deb30043ab1c0ea3895586cbe6f423b",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U19bf916b6e83dcb6.reader.txt",
+    "reader_sha256": "56cbe0597b599138f1fdbd55e4ceaa376e3b79a25e0067de8d313a8798ea3240",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG § 49(1) no. 2(f)",
+    "native_LF": [
+      25,
+      30
+    ],
+    "exact_quote": "f)\ndie, soweit sie nicht zu den Einkünften im Sinne des Buchstaben a gehören, durch aa)\nVermietung und Verpachtung oder\nbb)\nVeräußerung\nvon inländischem unbeweglichem Vermögen, von Sachinbegriffen oder Rechten im Sinne des § 21 Absatz 1 Satz 1 Nummer 1 oder sonstigen Rechten, insbesondere Patentrechten, Markenrechten oder Sortenrechten, die im Inland belegen oder in ein inländisches öffentliches Buch oder Register eingetragen sind oder deren Verwertung in einer inländischen Betriebsstätte oder anderen Einrichtung erfolgt, erzielt werden. 2Bei sonstigen Rechten, bei denen Einkünfte nur auf Grund der Eintragung in ein inländisches öffentliches Buch oder Register vorliegen, liegen Einkünfte abweichend von Satz 1 nicht vor, wenn die Vermietung und Verpachtung oder die Veräußerung nicht zwischen nahestehenden Personen im Sinne des § 1 Absatz 2 des Außensteuergesetzes erfolgt oder der Besteuerung der Einkünfte die Bestimmungen eines Abkommens zur Vermeidung der Doppelbesteuerung unter Berücksichtigung der ihre Anwendung regelnden Vorschriften dieses Gesetzes entgegenstehen. 3§ 23 Absatz 1 Satz 4 gilt entsprechend. 4Als Einkünfte aus Gewerbebetrieb gelten auch die Einkünfte aus Tätigkeiten im Sinne dieses Buchstabens, die von einer Körperschaft im Sinne des § 2 Nummer 1 des Körperschaftsteuergesetzes erzielt werden, die mit einer Kapitalgesellschaft oder sonstigen juristischen Person im Sinne des § 1 Absatz 1 Nummer 1 bis 3 des Körperschaftsteuergesetzes vergleichbar ist. 5Zu den Einkünften aus der Veräußerung von inländischem unbeweglichem Vermögen im Sinne dieses Buchstabens gehören auch Wertveränderungen von Wirtschaftsgütern, die mit diesem Vermögen in wirtschaftlichem Zusammenhang stehen, oder",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native LF actually read in this writer phase; retained body acquisition is not a whole-source read."
+  },
+  "R21.private-rights": {
+    "id": "R21.private-rights",
+    "url": "https://www.gesetze-im-internet.de/estg/__49.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-49-20261024.html",
+    "raw_sha256": "ab6d74634775a9a34966bdfd0058d8e93deb30043ab1c0ea3895586cbe6f423b",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U19bf916b6e83dcb6.reader.txt",
+    "reader_sha256": "56cbe0597b599138f1fdbd55e4ceaa376e3b79a25e0067de8d313a8798ea3240",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG § 49(1) no. 6",
+    "native_LF": [
+      70,
+      71
+    ],
+    "exact_quote": "6.\nEinkünfte aus Vermietung und Verpachtung (§ 21), soweit sie nicht zu den Einkünften im Sinne der Nummern 1 bis 5 gehören, wenn das unbewegliche Vermögen, die Sachinbegriffe oder Rechte im Sinne des § 21 Absatz 1 Satz 1 Nummer 1 oder sonstige Rechte, insbesondere Patentrechte, Markenrechte oder Sortenrechte, im Inland belegen oder in ein inländisches öffentliches Buch oder Register eingetragen sind oder in einer inländischen Betriebsstätte oder in einer anderen Einrichtung verwertet werden. 2Bei sonstigen Rechten, bei denen Einkünfte nur auf Grund der Eintragung in ein inländisches öffentliches Buch oder Register vorliegen, liegen Einkünfte abweichend von Satz 1 nicht vor, wenn die Vermietung und Verpachtung nicht zwischen nahestehenden Personen im Sinne des § 1 Absatz 2 des Außensteuergesetzes erfolgt oder der Besteuerung der Einkünfte die Bestimmungen eines Abkommens zur Vermeidung der Doppelbesteuerung unter Berücksichtigung der ihre Anwendung regelnden Vorschriften dieses Gesetzes entgegenstehen;",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native LF actually read in this writer phase; retained body acquisition is not a whole-source read."
+  },
+  "R22.share-source": {
+    "id": "R22.share-source",
+    "url": "https://www.gesetze-im-internet.de/estg/__49.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-49-20261024.html",
+    "raw_sha256": "ab6d74634775a9a34966bdfd0058d8e93deb30043ab1c0ea3895586cbe6f423b",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U19bf916b6e83dcb6.reader.txt",
+    "reader_sha256": "56cbe0597b599138f1fdbd55e4ceaa376e3b79a25e0067de8d313a8798ea3240",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG § 49(1) no. 2(e)",
+    "native_LF": [
+      18,
+      24
+    ],
+    "exact_quote": "e)\ndie unter den Voraussetzungen des § 17 erzielt werden, wenn es sich um Anteile an einer Kapitalgesellschaft handelt, aa)\ndie ihren Sitz oder ihre Geschäftsleitung im Inland hat,\nbb)\nbei deren Erwerb auf Grund eines Antrags nach § 13 Absatz 2 oder § 21 Absatz 2 Satz 3 Nummer 2 des Umwandlungssteuergesetzes nicht der gemeine Wert der eingebrachten Anteile angesetzt worden ist oder auf die § 17 Absatz 5 Satz 2 anzuwenden war oder\ncc)\nderen Anteilswert zu irgendeinem Zeitpunkt während der 365 Tage vor der Veräußerung unmittelbar oder mittelbar zu mehr als 50 Prozent auf inländischem unbeweglichem Vermögen beruhte und die Anteile dem Veräußerer zu diesem Zeitpunkt zuzurechnen waren; für die Ermittlung dieser Quote sind die aktiven Wirtschaftsgüter des Betriebsvermögens mit den Buchwerten, die zu diesem Zeitpunkt anzusetzen gewesen wären, zugrunde zu legen,",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native LF actually read in this writer phase; retained body acquisition is not a whole-source read."
+  }
+}

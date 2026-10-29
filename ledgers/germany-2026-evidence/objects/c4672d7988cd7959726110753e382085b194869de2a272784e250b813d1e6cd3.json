@@ -1,0 +1,78 @@
+{
+  "R23.small-business": {
+    "id": "R23.small-business",
+    "url": "https://www.gesetze-im-internet.de/ustg_1980/__19.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-19-20261024.html",
+    "raw_sha256": "bcee10874715ec2bb3a0ed1867ef4f512bee0093e4eed85e57bae7addc777bfc",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ueb043bd52ca19a0a.reader.txt",
+    "reader_sha256": "ae56f5ede8b771215419ba19792d931837bbcf69fc6116512c3c95ac4f8cf5f3",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "UStG § 19(1)–(5)",
+    "native_LF": [
+      7,
+      18
+    ],
+    "exact_quote": "(1) Ein von einem im Inland oder in den in § 1 Absatz 3 bezeichneten Gebieten ansässigen Unternehmer bewirkter Umsatz im Sinne des § 1 Absatz 1 Nummer 1 ist steuerfrei, wenn der Gesamtumsatz nach Absatz 2 im vorangegangenen Kalenderjahr 25 000 Euro nicht überschritten hat und im laufenden Kalenderjahr 100 000 Euro nicht überschreitet. In den Fällen des Satzes 1 finden die Vorschriften über die Steuerbefreiung innergemeinschaftlicher Lieferungen (§ 4 Nummer 1 Buchstabe b, § 6a), über den Verzicht auf Steuerbefreiungen (§ 9), über die Angabe der Umsatzsteuer-Identifikationsnummern in einer Rechnung (§ 14a Absatz 1 Satz 3, Absatz 3 Satz 2 und Absatz 7 Satz 2) und über die Erklärungspflichten (§ 18 Absatz 1 bis 4) keine Anwendung; § 149 Absatz 1 Satz 2 der Abgabenordnung und § 18 Absatz 4a dieses Gesetzes bleiben unberührt.\n(2) Gesamtumsatz ist die nach vereinnahmten Entgelten berechnete Summe der vom Unternehmer ausgeführten steuerbaren Umsätze im Sinne des § 1 Absatz 1 Nummer 1 abzüglich folgender Umsätze: 1.\nUmsätze, die nach § 4 Nummer 8 Buchstabe i, Nummer 9 Buchstabe b und Nummer 11 bis 29 steuerfrei sind;\n2.\nUmsätze, die nach § 4 Nummer 8 Buchstabe a bis h, Nummer 9 Buchstabe a und Nummer 10 steuerfrei sind, wenn sie Hilfsumsätze sind.\nDie Umsätze mit Wirtschaftsgütern des Anlagevermögens eines Unternehmers bleiben bei der Ermittlung des Gesamtumsatzes nach Satz 1 außer Ansatz.\n(3) Ein Unternehmer nach Absatz 1 Satz 1 kann bis zum letzten Tag des Monats Februar des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres gegenüber dem Finanzamt unwiderruflich erklären, dass er auf die Anwendung des Absatzes 1 verzichtet. Der Verzicht wird von Beginn des Besteuerungszeitraums an, für den er gelten soll, wirksam. Der Verzicht bindet den Unternehmer mindestens für fünf Kalenderjahre. Der Unternehmer kann den Verzicht mit Wirkung von Beginn eines darauffolgenden Kalenderjahres an widerrufen.\n(4) Für im übrigen Gemeinschaftsgebiet ansässige Unternehmer gilt Absatz 1 entsprechend, wenn 1.\nder nach Artikel 288 der Richtlinie 2006/112/EG in der jeweils geltenden Fassung ermittelte Jahresumsatz im Gemeinschaftsgebiet im vorangegangenen Kalenderjahr 100 000 Euro nicht überschritten hat und im laufenden Kalenderjahr nicht überschreitet, und\n2.\ndem Unternehmer für die Steuerbefreiung nach Absatz 1 Satz 1 durch den Mitgliedstaat der Ansässigkeit die insoweit gültige Kleinunternehmer-Identifikationsnummer erteilt wurde.\n(5) Ein im übrigen Gemeinschaftsgebiet ansässiger Unternehmer kann gegenüber der zuständigen Finanzbehörde im Mitgliedstaat der Ansässigkeit erklären, dass er auf die Anwendung des Absatzes 4 verzichtet. Der Verzicht wird von Beginn des auf den Eingang der Verzichtserklärung folgenden Kalendervierteljahres an wirksam. Geht die Verzichtserklärung im letzten Monat eines Kalendervierteljahres ein, wird der Verzicht von Beginn des zweiten Monats des folgenden Kalendervierteljahres an wirksam. Der Verzicht bindet den Unternehmer mindestens für fünf Kalenderjahre. Der Unternehmer kann den Verzicht mit Wirkung von Beginn eines darauffolgenden Kalenderjahres an widerrufen.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native LF actually read in this writer phase, including all incorporated conditions shown; raw unchanged. Acquisition alone is not reading."
+  },
+  "R23.outgoing-procedure": {
+    "id": "R23.outgoing-procedure",
+    "url": "https://www.gesetze-im-internet.de/ustg_1980/__19a.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U475fd171437e5353.body",
+    "raw_sha256": "3f98a56af2b32292e688304e949792f43fef8cf812084c5cc3138bcfa4653c94",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U475fd171437e5353.reader.txt",
+    "reader_sha256": "1113ccf924ace22e74af7aa453cf9ac2d543a4bcec0f050b6efb6c28dbb4ea0b",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "UStG § 19a(1)–(4)",
+    "native_LF": [
+      7,
+      18
+    ],
+    "exact_quote": "(1) Beabsichtigt ein im Inland oder in den in § 1 Absatz 3 bezeichneten Gebieten ansässiger Unternehmer, die Steuerbefreiung für Kleinunternehmer in einem anderen Mitgliedstaat in Anspruch zu nehmen, muss er an dem besonderen Meldeverfahren für Kleinunternehmer teilnehmen. Das Bundeszentralamt für Steuern erteilt für die Teilnahme an dem besonderen Meldeverfahren eine Kleinunternehmer-Identifikationsnummer. Die Teilnahme am besonderen Meldeverfahren setzt weiter voraus, dass 1.\nder Unternehmer nach amtlich vorgeschriebenem Datensatz über die amtlich bestimmte Schnittstelle beim Bundeszentralamt für Steuern die Teilnahme am besonderen Meldeverfahren beantragt,\n2.\nder nach Artikel 288 der Richtlinie 2006/112/EG in der jeweils geltenden Fassung ermittelte Jahresumsatz des Unternehmers im Gemeinschaftsgebiet im vorangegangenen Kalenderjahr 100 000 Euro nicht überschritten hat und im laufenden Kalenderjahr nicht überschreitet,\n3.\nder Unternehmer die Voraussetzungen zur Inanspruchnahme der Steuerbefreiung für Kleinunternehmer des Mitgliedstaates, der die Steuerbefreiung gewährt, erfüllt und\n4.\nder Unternehmer in keinem anderen Mitgliedstaat zur Anwendung der Steuerbefreiung für Kleinunternehmer registriert ist.\nÄnderungen der im Antrag nach Satz 3 Nummer 1 gemachten Angaben hat der Unternehmer unverzüglich dem Bundeszentralamt für Steuern nach dem in Satz 3 Nummer 1 amtlich vorgeschriebenen Datensatz mitzuteilen.\n(2) Beabsichtigt der Unternehmer, die Steuerbefreiung für Kleinunternehmer in einem anderen Mitgliedstaat nicht mehr in Anspruch zu nehmen, hat er dies nach amtlich vorgeschriebenem Datensatz über die amtlich bestimmte Schnittstelle dem Bundeszentralamt für Steuern zu erklären. § 19 Absatz 5 Satz 2 und 3 gilt entsprechend.\n(3) Der Unternehmer hat für jedes Kalendervierteljahr eine Umsatzmeldung abzugeben. Der Unternehmer hat die Umsatzmeldung nach Satz 1 innerhalb eines Monats nach Ablauf des Kalendervierteljahres dem Bundeszentralamt für Steuern nach amtlich vorgeschriebenem Datensatz über die amtlich bestimmte Schnittstelle zu übermitteln. Auf die Umsatzmeldung sind mit Ausnahme von § 152 der Abgabenordnung ergänzend die für Steuererklärungen geltenden Vorschriften der Abgabenordnung entsprechend anzuwenden.\n(4) Überschreitet der nach Absatz 1 Satz 3 Nummer 2 ermittelte Jahresumsatz im Gemeinschaftsgebiet 100 000 Euro, hat der Unternehmer dies binnen 15 Werktagen nach amtlich vorgeschriebenem Datensatz über die amtlich bestimmte Schnittstelle dem Bundeszentralamt für Steuern anzuzeigen. Mit Überschreiten endet die Teilnahme am besonderen Meldeverfahren.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native LF actually read in this writer phase, including all incorporated conditions shown; raw unchanged. Acquisition alone is not reading."
+  },
+  "R25.disposal": {
+    "id": "R25.disposal",
+    "url": "https://www.gesetze-im-internet.de/ustg_1980/__15a.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1c827794c9be2ff8.body",
+    "raw_sha256": "0936dfcdc994d709e6e0961ebbb483be7c29b303fa1d1694275396072868253f",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1c827794c9be2ff8.reader.txt",
+    "reader_sha256": "fd80c34545ec2b27d925674fb7d0df07be0f8c6332f74b8ee2e5b72a1950985b",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "UStG § 15a(8)–(9)",
+    "native_LF": [
+      15,
+      16
+    ],
+    "exact_quote": "(8) Eine Änderung der Verhältnisse liegt auch vor, wenn das noch verwendungsfähige Wirtschaftsgut, das nicht nur einmalig zur Ausführung eines Umsatzes verwendet wird, vor Ablauf des nach den Absätzen 1 und 5 maßgeblichen Berichtigungszeitraums veräußert oder nach § 3 Abs. 1b geliefert wird und dieser Umsatz anders zu beurteilen ist als die für den ursprünglichen Vorsteuerabzug maßgebliche Verwendung. Dies gilt auch für Wirtschaftsgüter, für die der Vorsteuerabzug nach § 15 Absatz 1b teilweise ausgeschlossen war.\n(9) Die Berichtigung nach Absatz 8 ist so vorzunehmen, als wäre das Wirtschaftsgut in der Zeit von der Veräußerung oder Lieferung im Sinne des § 3 Abs. 1b bis zum Ablauf des maßgeblichen Berichtigungszeitraums unter entsprechend geänderten Verhältnissen weiterhin für das Unternehmen verwendet worden.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native LF actually read in this writer phase, including all incorporated conditions shown; raw unchanged. Acquisition alone is not reading."
+  },
+  "R25.simplifications": {
+    "id": "R25.simplifications",
+    "url": "https://www.gesetze-im-internet.de/ustdv_1980/__44.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U78b29dc5315f9a80.body",
+    "raw_sha256": "8bb6172c9ba291c2a0f1c649d987416baf5cb1f07bca1f030f61ddf6d1e959d3",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U78b29dc5315f9a80.reader.txt",
+    "reader_sha256": "b65339729213018968d351d7c118801fa897f301ac29d361aaa5ad58662e1f1c",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "UStDV § 44(1)–(3)",
+    "native_LF": [
+      7,
+      9
+    ],
+    "exact_quote": "(1) Eine Berichtigung des Vorsteuerabzugs nach § 15a des Gesetzes entfällt, wenn die auf die Anschaffungs- oder Herstellungskosten eines Wirtschaftsguts entfallende Vorsteuer 1 000 Euro nicht übersteigt.\n(2) Haben sich bei einem Wirtschaftsgut in einem Kalenderjahr die für den ursprünglichen Vorsteuerabzug maßgebenden Verhältnisse um weniger als zehn Prozentpunkte geändert, entfällt bei diesem Wirtschaftsgut für dieses Kalenderjahr die Berichtigung des Vorsteuerabzugs. Das gilt nicht, wenn der Betrag, um den der Vorsteuerabzug für dieses Kalenderjahr zu berichtigen ist, 1 000 Euro übersteigt.\n(3) Übersteigt der Betrag, um den der Vorsteuerabzug bei einem Wirtschaftsgut für das Kalenderjahr zu berichtigen ist, nicht 6 000 Euro, so ist die Berichtigung des Vorsteuerabzugs nach § 15a des Gesetzes abweichend von § 18 Abs. 1 und 2 des Gesetzes erst im Rahmen der Steuerfestsetzung für den Besteuerungszeitraum durchzuführen, in dem sich die für den ursprünglichen Vorsteuerabzug maßgebenden Verhältnisse geändert haben. Wird das Wirtschaftsgut während des maßgeblichen Berichtigungszeitraums veräußert oder nach § 3 Abs. 1b des Gesetzes geliefert, so ist die Berichtigung des Vorsteuerabzugs für das Kalenderjahr der Lieferung und die folgenden Kalenderjahre des Berichtigungszeitraums abweichend von Satz 1 bereits bei der Berechnung der Steuer für den Voranmeldungszeitraum (§ 18 Abs. 1 und 2 des Gesetzes) durchzuführen, in dem die Lieferung stattgefunden hat.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native LF actually read in this writer phase, including all incorporated conditions shown; raw unchanged. Acquisition alone is not reading."
+  }
+}

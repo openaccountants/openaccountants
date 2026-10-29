@@ -1,0 +1,15 @@
+{
+  "id": "VOLUNTARY",
+  "source": "ao-233a",
+  "act_article": "ao-233a",
+  "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+  "reader": "sources/ao-233a.reader.txt",
+  "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+  "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+  "native_LF": [
+    9,
+    9
+  ],
+  "exact_quote": "(8) Zinsen auf einen Unterschiedsbetrag zuungunsten des Steuerpflichtigen (Nachzahlungszinsen) sind entweder nicht festzusetzen oder zu erlassen, soweit Zahlungen oder andere Leistungen auf eine später wirksam gewordene Steuerfestsetzung erbracht wurden, die Finanzbehörde diese Leistungen angenommen und auf die festgesetzte und zu entrichtende Steuer angerechnet hat. Absatz 3 Satz 4 ist hierbei entsprechend anzuwenden. Soweit Nachzahlungszinsen aufgrund einer Aufhebung, Änderung oder Berichtigung der Steuerfestsetzung nach Absatz 5 Satz 3 zweiter Halbsatz entfallen, mindert sich der Zinsverzicht nach Satz 1 entsprechend. Die §§ 163 und 227 bleiben unberührt.",
+  "read_on": "2026-10-29"
+}

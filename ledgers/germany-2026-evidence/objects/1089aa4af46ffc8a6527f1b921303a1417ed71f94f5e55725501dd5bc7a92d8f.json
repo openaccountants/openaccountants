@@ -1,0 +1,30 @@
+[
+  {
+    "before": "version: 1.2",
+    "after": "version: 1.3"
+  },
+  {
+    "before": "## Germany Transfer Pricing Guide v1.2",
+    "after": "## Germany Transfer Pricing Guide v1.3"
+  },
+  {
+    "before": "Version 1.2 of this Guide",
+    "after": "Version 1.3 of this Guide"
+  },
+  {
+    "before": "| Guide version | 1.0 |",
+    "after": "| Guide version | 1.3 |"
+  },
+  {
+    "before": "| Fallback | If the BZSt has not received the report of a group with a foreign parent, an included German group company must as a rule file it. When one German company files, the others are free. A company that cannot get or make the report must tell the BZSt within the filing period and give all the data it has or can get (§ 138a(4) AO). The same duties apply to the German permanent establishment of a foreign business that is included in consolidated accounts as foreign group parent or as included foreign group company (§ 138a(4) sentence 5 AO) |",
+    "after": "| Fallback | If the BZSt has not received the report of a group with a foreign parent, an included German group company must as a rule file it. When one German company files, the others are free. A company that cannot get or make the report must tell the BZSt within the filing period and give all the data it has or can get (§ 138a(4) AO). The same duties apply to the German permanent establishment of a foreign business that is included in consolidated accounts as foreign group parent or as included foreign group company (§ 138a(4) sentence 5 AO) If that company could reasonably expect timely transmission and later learns that transmission failed without its fault, it must fulfil the report duty or the unavailable-report notice/data duty within one month after learning of the non-transmission (§ 138a(4) sentence 4 AO). This exception also extends to the specified German permanent establishment under sentence 5; it does not excuse a culpable failure. |"
+  },
+  {
+    "before": "| Filing deadline | At the latest one year after the end of the financial year that the report covers (§ 138a(6) AO) |",
+    "after": "| Filing deadline | Ordinarily at the latest one year after the end of the financial year that the report covers. For the justified-expectation, no-fault fallback in § 138a(4) sentence 4 AO, the deadline is instead one month after learning of the non-transmission, including the specified German permanent establishment (§ 138a(6) AO). It is not another twelve-month period. |"
+  },
+  {
+    "before": "| CbCR filing | At the latest one year after the end of the financial year | § 138a(6) AO, https://www.gesetze-im-internet.de/ao_1977/__138a.html |",
+    "after": "| CbCR filing | Ordinarily at the latest one year after the end of the financial year. For the qualifying justified-expectation, no-fault fallback, fulfil the report or unavailable-report notice/data duty within one month after learning of the non-transmission; the specified German permanent establishment is included | § 138a(4) sentences 3–5 and (6) AO, https://www.gesetze-im-internet.de/ao_1977/__138a.html |"
+  }
+]

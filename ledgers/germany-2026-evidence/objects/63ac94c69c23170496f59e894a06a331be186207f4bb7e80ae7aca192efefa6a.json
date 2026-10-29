@@ -1,0 +1,2461 @@
+{
+  "Guide_sha256": "7a318a63c5364e3d0e95c06f1a8ebd9aae02e0355d93562e97918102395e56d5",
+  "pre_refresh_revision": "f05ac5ba^",
+  "pre_refresh_sha256": "e14c185e89a540af02a5b7b49b37d035376a099b8e56d5e5e31f8af79a41251a",
+  "pre_refresh_rows": [
+    {
+      "old_native_LF": [
+        1,
+        16
+      ],
+      "old_unit_sha256": "98e4207ae5e6e12079dae103abc9364f6789754d85d53213b97ece87f8a43ab5",
+      "old_exact_opening": "--- name: de-payroll description: Use this skill whenever asked about German payroll tax (Lohnsteuer) computation for EMPLOYEES. Trigger on phrases like \"Lohnsteuer\", \"Gehaltsabrechnung\", \"payslip Germany\", \"Steuerklasse\", \"Brutto",
+      "current_destination": "1–16",
+      "disposition": "Protected platform metadata retained; monotonic version/date and precise description tracked.",
+      "prior_sealed_destination": "1–16",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "1–16",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        18,
+        18
+      ],
+      "old_unit_sha256": "6062083a6e9eb19fdbab76a30046e3d678f84055020c5b0186c008c93080d026",
+      "old_exact_opening": "# German payroll 2026: wage tax, social insurance, Minijobs and reporting",
+      "current_destination": "18–18",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "18–18",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "18–18",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        20,
+        20
+      ],
+      "old_unit_sha256": "06f13eceae24bd0eb87002e30400999346da1ac5f0f9e44ba02101ab01d1f6a3",
+      "old_exact_opening": "## Scope",
+      "current_destination": "26",
+      "disposition": "Scope reorganised.",
+      "prior_sealed_destination": "26",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "26",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        22,
+        22
+      ],
+      "old_unit_sha256": "1b9bbc157081a961c989df1553130950b7587be6c9ed3d2f9d0c1ef188dfd0e8",
+      "old_exact_opening": "For employers, payroll clerks and employees checking a German payslip for pay periods in 2026: wage tax (Lohnsteuer) by tax class and ELStAM through the finance ministry's program flow (PAP), solidarity surcharge and church tax, t",
+      "current_destination": "20–31",
+      "disposition": "All ordinary scope retained; specialist boundaries explicit.",
+      "prior_sealed_destination": "20–31",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "20–31",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        24,
+        24
+      ],
+      "old_unit_sha256": "5ffa4de944dbbc4e7c1007398e19ce5654d6cd7af74692dc94fa92b4d0a90b63",
+      "old_exact_opening": "The year: the 2026 PAP covers pay periods \"die nach dem 31. Dezember 2025, aber vor dem 1. Januar 2027 enden\" and one-time payments received in 2026 ([PAP 2026, Anlage 1](https://www.bundesfinanzministerium.de/Content/DE/Downloads",
+      "current_destination": "22/205",
+      "disposition": "Same2026window;2025correction route retained.",
+      "prior_sealed_destination": "22/201",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "22/202",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        26,
+        26
+      ],
+      "old_unit_sha256": "50d6f6faa1797007703d7dad1640fc188ebb55ba2ec705db69c87c0071c3236e",
+      "old_exact_opening": "Not covered, see \"When to refuse or refer\": the self-employed (use `de-freelance-intake`), cross-border and treaty cases, managing directors whose insurance status is open, employer pensions (Versorgungsbezüge), benefits in kind a",
+      "current_destination": "24/31",
+      "disposition": "All old referrals preserved, additional positive ordinary methods below.",
+      "prior_sealed_destination": "24/31",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "24/31",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        28,
+        28
+      ],
+      "old_unit_sha256": "c9c71869d33330d932fd88799779b499164bd4c8d6963345e181ab9f38ed838f",
+      "old_exact_opening": "The employee owes the wage tax; the employer must withhold it at every wage payment ([§ 38 EStG](https://www.gesetze-im-internet.de/estg/__38.html)) and is liable for it ([§ 42d(1) EStG](https://www.gesetze-im-internet.de/estg/__4",
+      "current_destination": "28–29",
+      "disposition": "Both employer withholding and collecting-office/employee-deduction duties retained.",
+      "prior_sealed_destination": "28–29",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "28–29",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        30,
+        30
+      ],
+      "old_unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "old_exact_opening": "## Ask the client first",
+      "current_destination": "315–315",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "311–311",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "312–312",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        32,
+        40
+      ],
+      "old_unit_sha256": "ab9b36698345102b78247871fea3c50c0d94927565891e652081c02e30e59058",
+      "old_exact_opening": "- **ELStAM:** tax class, child counters, church, allowance or factor; first or further job? - **Health insurance:** which fund and its own additional rate; or private, or voluntary member? - **Children and age:** children under 25",
+      "current_destination": "317–322",
+      "disposition": "All nine intake topics retained across six grouped questions; first/furtherjob and monthlydata in127/172.",
+      "prior_sealed_destination": "313–318",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "314–319",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        42,
+        42
+      ],
+      "old_unit_sha256": "607935bf76856629e87c68a5a30f53be11df379873567ce2bb47bea7a9ef78b2",
+      "old_exact_opening": "Defaults when an answer is missing, for an estimate only: unknown class, estimate in class I, but real payroll uses class VI while the employee is at fault for missing data ([§ 39c EStG](https://www.gesetze-im-internet.de/estg/__3",
+      "current_destination": "127/317/319–320",
+      "disposition": "Old estimate-only default assumptions were removed; legal classVI fault rule retained. No fiction that defaultI/nochurch/nochildren is a legal entitlement.",
+      "prior_sealed_destination": "127/313/315–316",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "127/314/316–317",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        44,
+        44
+      ],
+      "old_unit_sha256": "e6898fcf2842cd2ef41957dac3ba9d4c6e9e4c64f7b58641d5a57190035c1291",
+      "old_exact_opening": "## The method, step by step",
+      "current_destination": "116",
+      "disposition": "Method reorganised.",
+      "prior_sealed_destination": "116",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "116",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        46,
+        46
+      ],
+      "old_unit_sha256": "79437dfb1067582d5f75df70c9a163c400f84a209ef682d4ecd9652dd0895e5f",
+      "old_exact_opening": "**Before the first payday**",
+      "current_destination": "170–170",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "168–168",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "168–168",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        48,
+        53
+      ],
+      "old_unit_sha256": "01eeb6d06b6ddb1431c7b307564c620fd63cda92d1c0207322814836932eea00",
+      "old_exact_opening": "1. **Employer number.** Get a Betriebsnummer from the Federal Employment Agency for each place of employment; the social insurance reports need it. 2. **Status.** Decide Minijob, short-term job, transition band, normal employment,",
+      "current_destination": "172–175/30/158/317–322",
+      "disposition": "Employer number/status/data/proof/account retained separately.",
+      "prior_sealed_destination": "170–173/30/158/313–318",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "170–173/30/158/314–319",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        55,
+        55
+      ],
+      "old_unit_sha256": "92040027446a89e536052469c5d6c76c8dfccea4533ed6fabc4092c595131b78",
+      "old_exact_opening": "**Every pay period**",
+      "current_destination": "118/146/177",
+      "disposition": "Every-payperiod heading distributed to three operative methods.",
+      "prior_sealed_destination": "118/146/175",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "118/146/175",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        57,
+        60
+      ],
+      "old_unit_sha256": "baab72046286eeb3c0bf0275a1f4fd2f44302d1ac39c385ffde292b7b669d265",
+      "old_exact_opening": "7. **Wage tax.** Take out tax-free pay first (such as the Aktivrente). Run the 2026 PAP on the rest, then the surcharge and, for church members, church tax on the base BK. One-time payments use the annual method. 8. **Contribution",
+      "current_destination": "120–166/181–188/201",
+      "disposition": "All four processing/payment/payslip duties retained.",
+      "prior_sealed_destination": "120–164/179–186/197",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "120–164/179–186/198",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        62,
+        62
+      ],
+      "old_unit_sha256": "df9cbd7c3857f5853b58b63ba20429074c8c951f49a336cebbddc60cd348d2c9",
+      "old_exact_opening": "**Changes and year-end**",
+      "current_destination": "189–199",
+      "disposition": "Changes/yearend group retained.",
+      "prior_sealed_destination": "187–195",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "187–196",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        64,
+        66
+      ],
+      "old_unit_sha256": "8a75bce2ee81425196c12079b8a1d828d53d75609918b8b953ce05dd4aa50060",
+      "old_exact_opening": "11. **Change reports and the annual report** (DEÜV). 12. **Wage tax certificate**: close the payroll account, send it electronically, give the employee a copy. 13. **Annual adjustment** where compulsory and not barred (boundary ta",
+      "current_destination": "189–201",
+      "disposition": "All three reports/certificatecopy/annualadjust duties retained; copy source41b remains in ledger.",
+      "prior_sealed_destination": "187–197",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "187–198",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        68,
+        68
+      ],
+      "old_unit_sha256": "1e47d01367d0beebd300eb7838111d33cdc33d42d8306b5f1f8bb19a71e3f562",
+      "old_exact_opening": "What breaks when the order is wrong: without wage tax data the tax runs in class VI and is corrected later; a missed employee share is lost after three payments; a late contribution statement lets the fund estimate the pay ([§ 28f",
+      "current_destination": "127/212–213",
+      "disposition": "Failure consequences retained.",
+      "prior_sealed_destination": "127/208–209",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "127/209–210",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        70,
+        70
+      ],
+      "old_unit_sha256": "021d0f71febf4a14a79bf3b6de7b3134d5568c1191bd559bebde788bf423cf9c",
+      "old_exact_opening": "## Figures for 2026: wage tax",
+      "current_destination": "33/37",
+      "disposition": "Wage-tax figures heading merged.",
+      "prior_sealed_destination": "33/37",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "33/37",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        72,
+        72
+      ],
+      "old_unit_sha256": "3e7c61f6427cccd89a5c1cebb5c2d198549fac5240739953d2008f2a90d0c152",
+      "old_exact_opening": "All amounts are yearly unless the row says otherwise. The employer uses them through the PAP, which annualises the period's pay and divides the tax back.",
+      "current_destination": "35",
+      "disposition": "Same annual/period method.",
+      "prior_sealed_destination": "35",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "35",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        74,
+        97
+      ],
+      "old_unit_sha256": "d6e1c80cc0d3a3a30b538dec939a782ae3976b7fcc1cccbbbeee2a6bc9bff38b",
+      "old_exact_opening": "| What | 2026 value | Source | | --- | --- | --- | | Basic allowance: no tax on a taxable amount up to | EUR 12,348 | [§ 32a(1) EStG](https://www.gesetze-im-internet.de/estg/__32a.html) | | First progressive zone | EUR 12,349 to E",
+      "current_destination": "39–61",
+      "disposition": "All24original wage-tax figure rows retained; complete rate formulas explicitly added.",
+      "prior_sealed_destination": "39–61",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "39–61",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        99,
+        99
+      ],
+      "old_unit_sha256": "2f384eebe01a09e4d3a4d72fad39dee9d7357c48c4f2fbd70266b1cc2711db4a",
+      "old_exact_opening": "Which states charge the lower church tax rate is state law and is not printed on an allowed federal page; the common reading is Bavaria and Baden-Württemberg at the lower rate and the other states at the higher one (check with the",
+      "current_destination": "59/138/358",
+      "disposition": "Actual federal8/9quote preserved; namedstateallocation remains precise unverified boundary.",
+      "prior_sealed_destination": "59/138/353",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "59/138/355",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        101,
+        101
+      ],
+      "old_unit_sha256": "abe4adc677795dcc22150d3cba0c1c11a8434f09441883b84a02367fb853dafa",
+      "old_exact_opening": "## Wage tax: how the 2026 program works",
+      "current_destination": "116",
+      "disposition": "PAP method reorganised.",
+      "prior_sealed_destination": "116",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "116",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        103,
+        103
+      ],
+      "old_unit_sha256": "44666495b78023692c0942567dc6da85c35367a81853299d513d15ee6589dd4f",
+      "old_exact_opening": "### Tax classes",
+      "current_destination": "127",
+      "disposition": "Classes heading compressed with full population sentence.",
+      "prior_sealed_destination": "127",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "127",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        105,
+        112
+      ],
+      "old_unit_sha256": "4851a30cb877b2b37f78da0491aafe71395b1daeb74c5a9df504053a25799e06",
+      "old_exact_opening": "| Class | Who ([§ 38b EStG](https://www.gesetze-im-internet.de/estg/__38b.html)) | What the PAP builds in | | --- | --- | --- | | I | Single; married, widowed or divorced people who do not meet III or IV; people with limited tax l",
+      "current_destination": "46–52/127",
+      "disposition": "Every tax-class population/allowance branch retained, including IIIwidow/splitting/VI; professional KRV omission repaired DE-B10.",
+      "prior_sealed_destination": "46–52/127",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "46–52/127",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        114,
+        114
+      ],
+      "old_unit_sha256": "c48627295aa4bdf55bbec39af02abd263cae7ad2ffcc89255ec1a43816f7e598",
+      "old_exact_opening": "Extra child amounts for single parents with more than one child, and other allowances, reach payroll only as an allowance in the ELStAM ([§ 39a EStG](https://www.gesetze-im-internet.de/estg/__39a.html)).",
+      "current_destination": "48/122/127",
+      "disposition": "Furtherchild240 reaches payroll through ELStAM allowance; same condition.",
+      "prior_sealed_destination": "48/122/127",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "48/122/127",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        116,
+        116
+      ],
+      "old_unit_sha256": "07fa7880c1edcff729e0febe54d949ed42396f8ff7ee9f94d2b94440aedb5e6e",
+      "old_exact_opening": "### The order of the calculation",
+      "current_destination": "118",
+      "disposition": "Calculation heading.",
+      "prior_sealed_destination": "118",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "118",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        118,
+        122
+      ],
+      "old_unit_sha256": "fd0b3299af974ee98d41a32fcb8ede168736f54b495bb8ca52bace925c306fd8",
+      "old_exact_opening": "1. **Annualise.** Monthly pay times 12; weekly pay times 360/7; daily pay times 360 ([§ 39b(2) EStG](https://www.gesetze-im-internet.de/estg/__39b.html)). 2. **Taxable amount.** Deduct any pension allowance and old-age relief, ded",
+      "current_destination": "120–125/131–138",
+      "disposition": "Allfive calculation steps retained; excluded pensions/oldage still referral31.",
+      "prior_sealed_destination": "120–125/131–138",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "120–125/131–138",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        124,
+        124
+      ],
+      "old_unit_sha256": "ca5dbc08de2106c9cfe1469554bf2eae729f346eaa5e8f86d063ba549d5a63cb",
+      "old_exact_opening": "PAP inputs that change the result most often (2026 PAP, section 3.1):",
+      "current_destination": "136",
+      "disposition": "Input heading.",
+      "prior_sealed_destination": "136",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "136",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        126,
+        133
+      ],
+      "old_unit_sha256": "9c09547f00f4b903ead6d59db22f5d3ec53d51ab734b58cdf4c9b7623a7db977",
+      "old_exact_opening": "| Input | Meaning | | --- | --- | | KRV | 0 = in the statutory pension scheme (or a professional scheme); 1 = otherwise | | ALV | New in 2026: 0 = in unemployment insurance; 1 = otherwise | | PKV | 0 = statutory health insurance; ",
+      "current_destination": "136/131–134",
+      "disposition": "All KRV/ALV/PKV/KVZ/PVZ/PVA/PVS rows retained. DE-B10 explicitly restores professional-scheme KRV0.",
+      "prior_sealed_destination": "136/131–134",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "136/131–134",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        135,
+        135
+      ],
+      "old_unit_sha256": "8965d93ea790880cc355c092de377f13ec77a533b28b5b7963500fe8d11ea4aa",
+      "old_exact_opening": "### Tariff formula 2026 (UPTAB26)",
+      "current_destination": "41–45/123",
+      "disposition": "Tariff heading.",
+      "prior_sealed_destination": "41–45/123",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "41–45/123",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        137,
+        145
+      ],
+      "old_unit_sha256": "19cd7d46274f91248b925433329beba9f18d08731ab1b96efa4fac1d9a80ff79",
+      "old_exact_opening": "~~~ X = taxable amount, rounded down to whole euros (class III: half of it) X up to 12348: ST = 0 X up to 17799: Y = (X - 12348) / 10000; ST = (914.51 * Y + 1400) * Y X up to 69878: Z = (X - 17799) / 10000; ST = (173.10 * Z + 2397",
+      "current_destination": "41–45/123",
+      "disposition": "Every polynomial/coefficient/zone/floor retained in table+method, original pseudocode saved in actual preimage.",
+      "prior_sealed_destination": "41–45/123",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "41–45/123",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        147,
+        147
+      ],
+      "old_unit_sha256": "ace2f77815c43d31e5ad4e90fa2c39b67c73dde1177ee2a9ad1c6fbf541d18aa",
+      "old_exact_opening": "Classes V and VI ([§ 39b(2) sentence 7 EStG](https://www.gesetze-im-internet.de/estg/__39b.html); 2026 PAP, W1STKL5 = 14071, W2STKL5 = 34939, W3STKL5 = 222260). Never apply the plain tariff to V or VI.",
+      "current_destination": "51–52/123",
+      "disposition": "All V/VI thresholds and distinction retained.",
+      "prior_sealed_destination": "51–52/123",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "51–52/123",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        149,
+        159
+      ],
+      "old_unit_sha256": "c35fcc26e6b08ecaaded94aa5c45928e15cabf81e7b458342511e6bf5be133f2",
+      "old_exact_opening": "~~~ UP5-6(Z): ST = 2 * (tariff(floor(Z * 1.25)) - tariff(floor(Z * 0.75))) ST = the higher of ST and floor(Z * 0.14) MST5-6(X): if X > W2STKL5: ST = UP5-6(W2STKL5) if X > W3STKL5: ST = ST + floor((W3STKL5 - W2STKL5) * 0.42) + floo",
+      "current_destination": "51–52/123 + writer-controls VVI tests",
+      "disposition": "Every V/VI algorithm branch retained through ownPAP reference; own fresh numerical checks recompute oldfull15testtablecells.",
+      "prior_sealed_destination": "51–52/123 + writer-controls VVI tests",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "51–52/123 + writer-controls VVI tests",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        161,
+        161
+      ],
+      "old_unit_sha256": "a374394924341e8f83c130fcac79ef6f469ec77a6b8ab624453051cdffef13da",
+      "old_exact_opening": "### Vorsorgepauschale (insurance deduction inside the tax)",
+      "current_destination": "129",
+      "disposition": "VSP heading.",
+      "prior_sealed_destination": "129",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "129",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        163,
+        163
+      ],
+      "old_unit_sha256": "fb8a284364ec1101568ab649c23315708112ef5953c918c7cdc5f9e7e24f9146",
+      "old_exact_opening": "It stands for the employee's own contributions. The 2026 text has five parts ([§ 39b(2) sentence 5 no. 3 EStG](https://www.gesetze-im-internet.de/estg/__39b.html)):",
+      "current_destination": "131–134",
+      "disposition": "Five statutory components retained.",
+      "prior_sealed_destination": "131–134",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "131–134",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        165,
+        169
+      ],
+      "old_unit_sha256": "d046db195bb0faa27ccc5e722d70cedb8165775e5f2f8efe7da4e7b8cf299cfb",
+      "old_exact_opening": "- **Pension:** pay up to the pension ceiling times the employee pension share, unless the employee is not in the statutory scheme (PAP marker KRV = 1). - **Health:** pay up to the health ceiling times half the reduced health rate ",
+      "current_destination": "131–133",
+      "disposition": "Pension/health/care/private/unemployment retained; professional eligibility omission explicitly fixed DE-B10.",
+      "prior_sealed_destination": "131–133",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "131–133",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        171,
+        171
+      ],
+      "old_unit_sha256": "86f897262828c69373e884ddabd2631cd2306d857a4f810616492f521d92c6cd",
+      "old_exact_opening": "There is no minimum Vorsorgepauschale in 2026. The PAP rounds the Vorsorgepauschale up to whole euros. The additional rate entered is the full rate of the employee's own fund: \"Der durchschnittliche Zusatzbeitragssatz ist unmaßgeb",
+      "current_destination": "132–134",
+      "disposition": "No minimum, roundup, ownfundrate, severance exclusion retained.",
+      "prior_sealed_destination": "132–134",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "132–134",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        173,
+        173
+      ],
+      "old_unit_sha256": "d6c0ae5b4fe2c7513798036deeabeb6ac6ad60fa94081909aa22dc72da226f7f",
+      "old_exact_opening": "### Solidarity surcharge and church tax",
+      "current_destination": "138",
+      "disposition": "Surcharge heading.",
+      "prior_sealed_destination": "138",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "138",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        175,
+        178
+      ],
+      "old_unit_sha256": "7eadbacdccce77acd03d978441617c244938c7730fa0b915e24e81960de71c8f",
+      "old_exact_opening": "- No surcharge while the yearly base does not exceed the exemption limit. Above it, the surcharge is the lower of the full rate on the base and the mitigation share of the excess, so it phases in ([§ 4 SolzG](https://www.gesetze-i",
+      "current_destination": "125/138/140",
+      "disposition": "All threshold/period/cent/childbase/church/oneoff branches retained.",
+      "prior_sealed_destination": "125/138/140",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "125/138/140",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        180,
+        180
+      ],
+      "old_unit_sha256": "454d19fa6e3db47cf3e1d1446a59189748d1984dbf7c0c2142ab4ec15e9de500",
+      "old_exact_opening": "### One-time payments (sonstige Bezüge)",
+      "current_destination": "140",
+      "disposition": "Oneoff heading.",
+      "prior_sealed_destination": "140",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "140",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        182,
+        182
+      ],
+      "old_unit_sha256": "db6b2548da81e1a0f430bcbd0612621d7bfa67cf2ca9233540619fdf7945f1f0",
+      "old_exact_opening": "Bonuses, holiday and Christmas pay, back pay for earlier years and severance are taxed by the annual method of [§ 39b(3) EStG](https://www.gesetze-im-internet.de/estg/__39b.html):",
+      "current_destination": "140",
+      "disposition": "Annual method retained.",
+      "prior_sealed_destination": "140",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "140",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        184,
+        186
+      ],
+      "old_unit_sha256": "25e43a2dc9105a853d84bf06520911966059e507f3e26520e6aa84acf163036d",
+      "old_exact_opening": "1. Yearly tax on the expected annual pay without the payment. 2. Yearly tax on that pay plus the payment. 3. Withhold the difference.",
+      "current_destination": "140",
+      "disposition": "Taxwithminuswithout retained.",
+      "prior_sealed_destination": "140",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "140",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        188,
+        188
+      ],
+      "old_unit_sha256": "7eca15cec41ef2888126e51dbe9d0c5c35b1c0ae1ffc2d078a333f3df6c713ea",
+      "old_exact_opening": "If the employee has not handed in the certificates of earlier employers this year, scale the current pay up for those months, mark the payroll account with the capital letter S, and the employee must then file a return ([§ 46(2) n",
+      "current_destination": "140",
+      "disposition": "Missingearliercertificate/S/returnand no§34inpayroll retained.",
+      "prior_sealed_destination": "140",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "140",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        190,
+        190
+      ],
+      "old_unit_sha256": "5a99638b1414def4ef623369bd648bf6f50dfef434c34955419ec4d024500edb",
+      "old_exact_opening": "### Tax-free pay past the standard retirement age (Aktivrente), new in 2026",
+      "current_destination": "142",
+      "disposition": "Aktivheading.",
+      "prior_sealed_destination": "142",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "142",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        192,
+        194
+      ],
+      "old_unit_sha256": "efd07dfe46d99a3f8af7757bfee501a03a387abfe9cdffad363a1476b1fafee7",
+      "old_exact_opening": "- **Who.** Employees in a job under § 19(1) no. 1 EStG, from the month after they reach the standard retirement age of § 35 or § 235 SGB VI, where the employer owes pension contributions for that work ([§ 3 no. 21 EStG](https://ww",
+      "current_destination": "142",
+      "disposition": "Who/monthly/yearly/VI/noMinijob/salarySV retained; full pensionnotrequired belongsactualFAQ notnewexemption.",
+      "prior_sealed_destination": "142",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "142",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        196,
+        196
+      ],
+      "old_unit_sha256": "eec0793efbca0d28f92ffe635dc034cf98c36f5fc708f09846e362271fb2dce1",
+      "old_exact_opening": "## Figures for 2026: social insurance",
+      "current_destination": "63",
+      "disposition": "Socialheading.",
+      "prior_sealed_destination": "63",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "63",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        198,
+        198
+      ],
+      "old_unit_sha256": "fd90dcb1021adae3f2d54ecdb0bf49de9d62a8327ae8f48a37e58ee0d4225a61",
+      "old_exact_opening": "### Rates",
+      "current_destination": "63",
+      "disposition": "Rates heading merged.",
+      "prior_sealed_destination": "63",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "63",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        200,
+        213
+      ],
+      "old_unit_sha256": "3ba1ac5713c870a394741d6ef0ac91ec01b073159973fb54733bde979f0337fa",
+      "old_exact_opening": "| What | 2026 value | Source | | --- | --- | --- | | Pension insurance, full rate | 18.6% | [RVBeitrSBek 2026](https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html) | | Pension, employee share (employer the same,",
+      "current_destination": "65–82",
+      "disposition": "All socialrate/levy rows retained.",
+      "prior_sealed_destination": "65–82",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "65–82",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        215,
+        215
+      ],
+      "old_unit_sha256": "5754ad73173e1a6463dd58c54493a736d467e6d404f40af8e94c522689922e03",
+      "old_exact_opening": "The official notice of the average additional rate is published in the Federal Gazette, which is not an allowed source for this skill; the figure above is the finance ministry's reading of the estimate. Confirm it before using it ",
+      "current_destination": "71/113/358",
+      "disposition": "OwnBMG2.9source acquired/read; federalgazetteitself remains unacquired, neither arbitraryallowed-domain ban nor confirmation request retained.",
+      "prior_sealed_destination": "71/113/353",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "71/113/355",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        217,
+        217
+      ],
+      "old_unit_sha256": "e5dd03731623827aaf156dd385f3a085ab80f8c22568100e42e9754a48da30bd",
+      "old_exact_opening": "**Employee care share by children (derived from the rows above)**",
+      "current_destination": "84",
+      "disposition": "Careheading.",
+      "prior_sealed_destination": "84",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "84",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        219,
+        227
+      ],
+      "old_unit_sha256": "819549507f1ad8509b5453958bc4749771699b72c6b306183d859f6a1498db90",
+      "old_exact_opening": "| Children | Outside Saxony: employee | Outside Saxony: employer | Saxony: employee | Saxony: employer | | --- | --- | --- | --- | --- | | None, employee 23 or older | 2.4% | 1.8% | 2.9% | 1.3% | | One child (at any age); or child",
+      "current_destination": "86–93",
+      "disposition": "Allsixcarecategoriesandfourshares retained.",
+      "prior_sealed_destination": "86–93",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "86–93",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        229,
+        232
+      ],
+      "old_unit_sha256": "a66fcdbe11ece6a7cc5951eaaaa6973e660e0567c3cdf797031b6c23d10aa85b",
+      "old_exact_opening": "- **What counts.** Children who have turned 25 do not count toward the reductions; the reduction for a child ends at the end of the month it turns 25. Parents, at any age of the child, do not pay the surcharge. The surcharge does ",
+      "current_destination": "75–76/95/151",
+      "disposition": "All age/proof/parent/Saxony/date exceptions retained.",
+      "prior_sealed_destination": "75–76/95/151",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "75–76/95/151",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        234,
+        234
+      ],
+      "old_unit_sha256": "d27da47b8e676cd29b02a87dd0bce2dd019ef3743e1ce7979b6de254706de8ea",
+      "old_exact_opening": "### Ceilings and thresholds",
+      "current_destination": "77–80",
+      "disposition": "Ceilingheading.",
+      "prior_sealed_destination": "77–80",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "77–80",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        236,
+        241
+      ],
+      "old_unit_sha256": "92a1b73b20086a5e925d866e61a007c2cbfa6275f6c6d4ee3c260fb4fd08f7d0",
+      "old_exact_opening": "| What | 2026 per year | 2026 per month | Source | | --- | --- | --- | --- | | Pension and unemployment ceiling (BBG RV/AV) | EUR 101,400 | EUR 8,450 | [SVBezGrV 2026 § 4](https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pd",
+      "current_destination": "77–80",
+      "disposition": "Allfourannual/monthlyceilingsandthresholds retained.",
+      "prior_sealed_destination": "77–80",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "77–80",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        243,
+        245
+      ],
+      "old_unit_sha256": "cf9f28c9bc02e107b180e9ad71d97f18128d3130f933f1f725ef7efb0c1574d0",
+      "old_exact_opening": "- **Ceilings cap contributions.** Pay above a branch's ceiling carries no contribution in that branch. One value for the whole country. - **The threshold decides who may leave statutory health insurance.** When pay rises above the",
+      "current_destination": "95/148/152/156",
+      "disposition": "Contributioncap/JAEGyearend/2027changeandregulationrate retained.",
+      "prior_sealed_destination": "95/148/152/156",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "95/148/152/156",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        247,
+        247
+      ],
+      "old_unit_sha256": "4ca010ac0ed872e279bf4a4aee3aa6ff615f7b57c287bf9c8a7f238d6db3e158",
+      "old_exact_opening": "### Contributions in practice",
+      "current_destination": "146",
+      "disposition": "Contributionheading.",
+      "prior_sealed_destination": "146",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "146",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        249,
+        252
+      ],
+      "old_unit_sha256": "35db16f922f0d1839dbc1eeb3423e294fdf79ce32a8c1bff07016fbe0142d006",
+      "old_exact_opening": "- **Base.** For each branch: pay for the period, capped at that branch's monthly ceiling. Apply the employee and employer shares from the tables. Round each amount to the cent. - **Several jobs.** If pay from several insured jobs ",
+      "current_destination": "148–155",
+      "disposition": "Base/multijob/oneoff/retirement retained; old erroneous combined retirementOR precisely corrected DE-B09.",
+      "prior_sealed_destination": "148–154",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "148–155",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        254,
+        254
+      ],
+      "old_unit_sha256": "6d32b9fc0d09f53986826370c45cf54f235a982d8394a7e1f82017aa701ffc17",
+      "old_exact_opening": "### Employer-only levies",
+      "current_destination": "81–82/154–155",
+      "disposition": "Employerlevyheading.",
+      "prior_sealed_destination": "81–82/155",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "81–82/154–155",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        256,
+        261
+      ],
+      "old_unit_sha256": "7940fdcec15c38934ce86048746e610a1248bad7461ec8d31b699d23e76c3635",
+      "old_exact_opening": "| Levy | Rate | Base and rule | | --- | --- | --- | | U1 (continued sick pay) | Set by each health fund | Only employers with, as a rule, not more than 30 employees, apprentices not counted; the statute refunds 80% of continued pa",
+      "current_destination": "81–82/154–155",
+      "disposition": "Allfourlevies retained, fund/accidentamounts leftactual.",
+      "prior_sealed_destination": "81–82/155",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "81–82/154–155",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        263,
+        263
+      ],
+      "old_unit_sha256": "2e6b054d2b749d7a6f24f59e3900333918aa56227144a7abec81345c953b786e",
+      "old_exact_opening": "U1, U2 and the insolvency levy are charged on the pay on which pension contributions are worked out ([§ 7(2) AAG](https://www.gesetze-im-internet.de/aufag/__7.html), [§ 358(2) SGB III](https://www.gesetze-im-internet.de/sgb_3/__35",
+      "current_destination": "154–155",
+      "disposition": "Pensionbase retained.",
+      "prior_sealed_destination": "155",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "154–155",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        265,
+        265
+      ],
+      "old_unit_sha256": "7559fcc92fcd2e4a513f87475f0c308a6e000ec05349e4b0fd0b17fc8ec066c0",
+      "old_exact_opening": "## Minijobs, short-term jobs and the transition band",
+      "current_destination": "97",
+      "disposition": "Minijobheading.",
+      "prior_sealed_destination": "97",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "97",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        267,
+        285
+      ],
+      "old_unit_sha256": "c553aac3e51d4f2a710f5b37caf05a85f0a468076f7baf8084b1814cc3d577be",
+      "old_exact_opening": "| What | 2026 value | Source | | --- | --- | --- | | Minimum wage per hour from 1 January 2026 | EUR 13.90 | [MiLoV5](https://www.gesetze-im-internet.de/milov5/__1.html) | | Minijob limit per month: minimum wage times 130, divided",
+      "current_destination": "99–114",
+      "disposition": "Allminimum/minijob/shortterm/flat/transition/apprenticerows retained.",
+      "prior_sealed_destination": "99–114",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "99–114",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        287,
+        287
+      ],
+      "old_unit_sha256": "9f3af838c769ef6d8ad6d35dad1bd3fea8b47364842852530912d4d60d543b40",
+      "old_exact_opening": "**Minijob rules**",
+      "current_destination": "158",
+      "disposition": "Rulesheading.",
+      "prior_sealed_destination": "158",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "158",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        289,
+        294
+      ],
+      "old_unit_sha256": "6822e796a6f5c4d049262d2f4a320237632c63ccb2da3c5381a450c3bdc85db4",
+      "old_exact_opening": "- **Regular pay.** The limit is on regular monthly pay. An unforeseeable overrun in not more than two calendar months within a twelve-month period, each time by up to the limit itself, does not end the Minijob ([§ 8(1b) SGB IV](ht",
+      "current_destination": "158",
+      "disposition": "Allsixminijobbranches retained, including2overruns/release/collectortaxoption.",
+      "prior_sealed_destination": "158",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "158",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        296,
+        296
+      ],
+      "old_unit_sha256": "b6719fc4b26de870d1666c9ac8939650935b457e37b7442441122ffd38487ac7",
+      "old_exact_opening": "**Transition band (Midijob)**",
+      "current_destination": "162",
+      "disposition": "Transitionheading.",
+      "prior_sealed_destination": "160",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "160",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        298,
+        301
+      ],
+      "old_unit_sha256": "07dfa257513d283258e89af6ee78f9629a5cb2f9d157ba89707b7ab06151599e",
+      "old_exact_opening": "- Regular monthly pay above EUR 603 and not above EUR 2,000; with several jobs the total counts ([§ 20(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__20.html)). - Normal wage tax by the ELStAM. - Contributions are worked ou",
+      "current_destination": "112–113/162",
+      "disposition": "Allthreeoldtransitiontopics retained; actualtwoformulasnowpositive. DE-B11 corrects care surcharge to first base and reductions to second, with exact rounding; Saxony allocation explicitly unsupplied.",
+      "prior_sealed_destination": "112–113/160",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "112–113/160",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        303,
+        303
+      ],
+      "old_unit_sha256": "763dd92c54b7ff1d3e0e663d6efad4c642c7c9ba4f168156dc0ed294ce3398f6",
+      "old_exact_opening": "## Boundaries and exceptions",
+      "current_destination": "146–166/199",
+      "disposition": "Boundaries distributed.",
+      "prior_sealed_destination": "146–164/195",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "146–164/196",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        305,
+        320
+      ],
+      "old_unit_sha256": "1ac303e81480bfa50281427f31b3ac7195ae7bb438971a59489bad709152077a",
+      "old_exact_opening": "| Situation | Rule | Source | | --- | --- | --- | | Monthly pay exactly EUR 603 | Minijob (\"nicht übersteigt\"); from EUR 603.01 transition band | § 8(1) no. 1 and § 20(2) SGB IV | | Monthly pay exactly EUR 2,000 | Still transition",
+      "current_destination": "111–114/127/140/148–166/182–199",
+      "disposition": "Every boundary retained:603/2000/5000/1080/fault/retirement/release/oneoff/annualadjust. Invalid agealoneRVbranch corrected DE-B09.",
+      "prior_sealed_destination": "111–114/127/140/148–164/180–195",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "111–114/127/140/148–164/180–196",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        322,
+        322
+      ],
+      "old_unit_sha256": "13553a4d81793d4eb28bdef6a259906163c7624435353bd8bdf2bfbde894bef5",
+      "old_exact_opening": "## Worked cases",
+      "current_destination": "225",
+      "disposition": "Caseheading.",
+      "prior_sealed_destination": "221",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "222",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        324,
+        324
+      ],
+      "old_unit_sha256": "66e5878265c82b96e609aa3eb80cc36e4f78a87b74e8847e0b37b37e26ee9fb0",
+      "old_exact_opening": "Assumed inputs are labelled. Every other number comes from the tables above. Contributions are rounded to the cent.",
+      "current_destination": "227/229–313",
+      "disposition": "Stipulatedversusderived/cents retained.",
+      "prior_sealed_destination": "223/225–309",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "224/226–310",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        326,
+        326
+      ],
+      "old_unit_sha256": "54d775d2c4ec1ea9e4f88d469b6974826c55e86fba97c1cc54144549a05b3ab3",
+      "old_exact_opening": "### Case 1: class I, EUR 5,000 a month, childless, outside Saxony",
+      "current_destination": "229",
+      "disposition": "Case1heading.",
+      "prior_sealed_destination": "225",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "226",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        328,
+        339
+      ],
+      "old_unit_sha256": "27e9df394478fb993763f9ee0b60db3dd3cce7d9914f26a843dd774348d0d429",
+      "old_exact_opening": "| Item | Working | Amount | | --- | --- | --- | | Assumed inputs | age 30, no church, no children, place of employment in Hesse, fund additional rate 2.9%, EUR 60,000 for the year, no one-time payments | | | Wage tax for the year ",
+      "current_destination": "231–264",
+      "disposition": "Alloriginalcase1facts and amounts retained in oa1.",
+      "prior_sealed_destination": "227–260",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "228–261",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        341,
+        341
+      ],
+      "old_unit_sha256": "e959b9c7040dee8177a8870a59ba8193afcb76c93859c79ef7194f9b87d0de41",
+      "old_exact_opening": "### Case 2: class III, EUR 9,000 a month, two children, Bavaria, church member",
+      "current_destination": "266",
+      "disposition": "Case2heading.",
+      "prior_sealed_destination": "262",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "263",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        343,
+        351
+      ],
+      "old_unit_sha256": "efd04c5145d0c15128e930cdc8195072716cebb7ab7e68fbe89a4551b939b866",
+      "old_exact_opening": "| Item | Working ([SVBezGrV 2026](https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3) ceilings) | Amount | | --- | --- | --- | | Assumed inputs | spouse in class V, children aged 8 and 12, place",
+      "current_destination": "268–311",
+      "disposition": "Alloriginalcase2socialfigures retained, positive wage-taxPAPcalculation added. OriginalBavariachurch8 assumption remains labelledexample notverifiedstateprovision.",
+      "prior_sealed_destination": "264–307",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "265–308",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        353,
+        353
+      ],
+      "old_unit_sha256": "6d2f8dbec8e3ccb0a218253f56c4bc0368a95d4a3d40b9c06168b32b95d620db",
+      "old_exact_opening": "### Case 3: commercial Minijob at the limit",
+      "current_destination": "313",
+      "disposition": "Case3merged.",
+      "prior_sealed_destination": "309",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "310",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        355,
+        362
+      ],
+      "old_unit_sha256": "6fc1747dcbc36bd93bf4753e4f63fde11863e1aa3fd8c69078123cf7d5225c01",
+      "old_exact_opening": "| Item | Working ([§ 249b SGB V](https://www.gesetze-im-internet.de/sgb_5/__249b.html), [§ 172(3) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__172.html), [§ 40a(2) EStG](https://www.gesetze-im-internet.de/estg/__40a.html)) |",
+      "current_destination": "313/102–108/158/162",
+      "disposition": "AllMinijob603amounts and603.01boundary retained.",
+      "prior_sealed_destination": "309/102–108/158/160",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "310/102–108/158/160",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        364,
+        364
+      ],
+      "old_unit_sha256": "2229015f87a90b6e3a859e7d575ac147ec4e3f25c521ddfd7a13d6a0f018841d",
+      "old_exact_opening": "### Case 4: second job in class VI, and the ministry's test table",
+      "current_destination": "313",
+      "disposition": "Case4merged.",
+      "prior_sealed_destination": "309",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "310",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        366,
+        370
+      ],
+      "old_unit_sha256": "81d68104edf780904708355ebade6d206b9cbf89982c087e565ffb5fbac6028d",
+      "old_exact_opening": "| Annual gross pay ([PAP 2026, \"Prüftabelle\"](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2)) | Class I (=",
+      "current_destination": "313/227/PR.PAPtests + writer-controls",
+      "disposition": "Actualofficial3paylevels×5classes table preserved in sourcequote and owncomputedtestmatrix;currentbodydisplays20k3classesand60kI/100kIII.",
+      "prior_sealed_destination": "309/223/PR.PAPtests + writer-controls",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "310/224/PR.PAPtests + writer-controls",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        372,
+        372
+      ],
+      "old_unit_sha256": "051a94bfd98bdaae9cff5e47ba32afabd05642ee1a1ceec96103d7f1ebe8b23a",
+      "old_exact_opening": "The table is built with ALV, KRV and PKV = 0, KVZ = 2,90 and the childless surcharge (class II without it). Software implementing the [2026 PAP](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohns",
+      "current_destination": "313/125/131–138",
+      "disposition": "Alltestconditions/invariants retained.",
+      "prior_sealed_destination": "309/125/131–138",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "310/125/131–138",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        374,
+        374
+      ],
+      "old_unit_sha256": "222ac3e12342f49542a097b0f345b99e91d56efcabe34d97ec64dafb1049c07e",
+      "old_exact_opening": "Second job (assumed: main job elsewhere, EUR 20,000 a year here): the table row gives the class VI tax against the class I tax at the same pay. Wages from two employers at once oblige the employee to file a return ([§ 46(2) no. 2 ",
+      "current_destination": "313/149",
+      "disposition": "Second-jobreturn/multijobcap retained.",
+      "prior_sealed_destination": "309/149",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "310/149",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        376,
+        376
+      ],
+      "old_unit_sha256": "a4aab656e0ec23ca185d1fc9add6bd5af383ec6d6cf4723cc41f037ce415fdf5",
+      "old_exact_opening": "### Case 5: Aktivrente from May 2026",
+      "current_destination": "313",
+      "disposition": "Case5merged.",
+      "prior_sealed_destination": "309",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "310",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        378,
+        387
+      ],
+      "old_unit_sha256": "2f2d289d42eeb96696aa19b7234c190b92bd7558d8a037c060c01a07737ab5cc",
+      "old_exact_opening": "| Item | Working ([§ 3 no. 21 EStG](https://www.gesetze-im-internet.de/estg/__3.html), [ministry FAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/FAQ-zur-Aktivrente.html)) | Amount | | --- | --- | --- | | Assumed inputs ",
+      "current_destination": "142/313 + writer-controls",
+      "disposition": "All8-month16k/2000/500 and1500+800bonus500exempt300taxed branches retained through suppliedmonthlyroommethod;oldliteralfixture independently recalculated.",
+      "prior_sealed_destination": "142/309 + writer-controls",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "142/310 + writer-controls",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        389,
+        389
+      ],
+      "old_unit_sha256": "f1288a58ea6af6b7d4b814c9fa06d3bcd97feef2c241f1026b5b5f2ebd037eeb",
+      "old_exact_opening": "### Case 6: filing period, deadlines and late payment",
+      "current_destination": "313",
+      "disposition": "Case6merged.",
+      "prior_sealed_destination": "309",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "310",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        391,
+        397
+      ],
+      "old_unit_sha256": "d03f9b54011d6421f4614584615b8697a26ac1810b206a057de132539cf6980e",
+      "old_exact_opening": "| Item | Working | Amount or date | | --- | --- | --- | | Assumed inputs | wage tax paid over for 2025 was EUR 4,200; EUR 1,275 of third-quarter wage tax paid on 30 October 2026; EUR 3,480 of contributions paid late | | | Filing p",
+      "current_destination": "181–188/209–211/313",
+      "disposition": "Quarterthreshold/12Oct/12.50/34.50 retained.",
+      "prior_sealed_destination": "179–186/205–207/309",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "179–186/206–208/310",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        399,
+        399
+      ],
+      "old_unit_sha256": "a691d33414c522ae428949269a10e0c50fe62c2e198e1f22115cdda95012801c",
+      "old_exact_opening": "## When to refuse or refer",
+      "current_destination": "31",
+      "disposition": "Referralheading merged.",
+      "prior_sealed_destination": "31",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "31",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        401,
+        413
+      ],
+      "old_unit_sha256": "1f7cae38f6acec42ec95f569439fe127d431425637420a52e6593911a52a1c6e",
+      "old_exact_opening": "- **Self-employed and freelancers.** Not payroll; use `de-freelance-intake`, and `de-social-contributions` for their own contributions. - **Students and working students**, whose insurance rules differ, and **apprentices** paid up",
+      "current_destination": "24/31/127/142/158/162/166",
+      "disposition": "All13referrals retained or ordinarysubmethodpositivelysupplied; no unsupported universal specialistclosure.",
+      "prior_sealed_destination": "24/31/127/142/158/160/164",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "24/31/127/142/158/160/164",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        415,
+        415
+      ],
+      "old_unit_sha256": "d4072aba64834048b4a4d45c60ba071f17a946e8fe090c509f8799b276b63949",
+      "old_exact_opening": "## Filing and payment",
+      "current_destination": "168/177",
+      "disposition": "Filingheading.",
+      "prior_sealed_destination": "166/175",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "166/175",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        417,
+        430
+      ],
+      "old_unit_sha256": "fc565bdb8c42566f808d50156d0937963012909cea46a13b166d3b3f20e83715",
+      "old_exact_opening": "| Duty | Deadline | Source | | --- | --- | --- | | Wage tax return and payment, monthly filer (previous year's wage tax above EUR 5,000) | 10th of the next month | [§ 41a EStG](https://www.gesetze-im-internet.de/estg/__41a.html) |",
+      "current_destination": "179–197/358",
+      "disposition": "All12filingduties retained; deadlineSundaymove explicitcurrentreservation ratherthanoldunconfirmedpositive.",
+      "prior_sealed_destination": "177–193/353",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "177–194/355",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        432,
+        432
+      ],
+      "old_unit_sha256": "501592ec69753c940d1da7e4218dff01f630e44365be89929dcdf0fbb0f9e325",
+      "old_exact_opening": "**Surcharges and liability**",
+      "current_destination": "207",
+      "disposition": "Penaltyheading.",
+      "prior_sealed_destination": "203",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "204",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        434,
+        437
+      ],
+      "old_unit_sha256": "a92e7e76b9ffd1c7bd7bdd8ae208a1ddedcb3f190456037dc73b382f23b970f7",
+      "old_exact_opening": "- **Late payment of wage tax:** 1% of the amount due, rounded down to a multiple of EUR 50, for each month started; not for a delay of up to three days ([§ 240 AO](https://www.gesetze-im-internet.de/ao_1977/__240.html)). - **Late ",
+      "current_destination": "209–214",
+      "disposition": "Allfourpenalty/liabilitytopics retained, cheque/cash anddiscretion precision added.",
+      "prior_sealed_destination": "205–210",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "206–211",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        439,
+        439
+      ],
+      "old_unit_sha256": "4bdeb2265c3b8395c7a1195e48021464af8fbd8e9dfa38cf42bdd94357f95c7f",
+      "old_exact_opening": "### 2025 pay still being corrected",
+      "current_destination": "205",
+      "disposition": "2025headingmerged.",
+      "prior_sealed_destination": "201",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "202",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        441,
+        441
+      ],
+      "old_unit_sha256": "261ebf1155c55a49646471aa2b7774e97f4b157f6ba047f8bbeabc3369bcf348",
+      "old_exact_opening": "Pay for periods ending in 2025 is taxed with the amended 2025 PAP of 22 January 2025, which covers periods \"die nach dem 31. Dezember 2024, aber vor dem 1. Januar 2026 enden\" ([amended PAP 2025](https://www.bundesfinanzministerium",
+      "current_destination": "205",
+      "disposition": "Exact2025windowretained.",
+      "prior_sealed_destination": "201",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "202",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        443,
+        450
+      ],
+      "old_unit_sha256": "073005caef6db84379aa098eb02aa4d30d9da2db6196d5c787bbb3f343365b27",
+      "old_exact_opening": "| 2025 value | Amount | Source | | --- | --- | --- | | Basic allowance | EUR 12,096 | Amended PAP 2025 | | Surcharge exemption limit (not class III) | EUR 19,950 | Same | | Pension and unemployment ceiling, per year | EUR 96,600 |",
+      "current_destination": "205",
+      "disposition": "Allsix2025figuresretained.",
+      "prior_sealed_destination": "201",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "202",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        452,
+        452
+      ],
+      "old_unit_sha256": "482bdc47d6d23dcb4351ec78d16d7b3a502a4afe8cf274b05c98fdbe28264626",
+      "old_exact_opening": "The 2025 annual report was due by 15 February 2026 and the 2025 wage tax certificates by the last day of February 2026 (2 March 2026, as 28 February 2026 was a Saturday). A late or corrected certificate is still sent electronicall",
+      "current_destination": "189–197/205/AO108.weekend + writer-controls",
+      "disposition": "Prior2025report/certificate deadlinesderive same actualrules; owncalendar2026weekend fixtures retained, no separate filingruntimeclaim.",
+      "prior_sealed_destination": "187–192/201/AO108.weekend + writer-controls",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "187–193/202/AO108.weekend + writer-controls",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        454,
+        454
+      ],
+      "old_unit_sha256": "74e3c99fcc880eb3180c4951fcdc3cde00b52029fd2ae10ad32e53f84a4ed9a7",
+      "old_exact_opening": "## Completion checklist",
+      "current_destination": "317–322",
+      "disposition": "Checklist moved tointakeandoperativeprocess.",
+      "prior_sealed_destination": "313–318",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "314–319",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        456,
+        468
+      ],
+      "old_unit_sha256": "8751539572d9b2fe0fbf7768537a7a9bd0136659771d587f844c6c0478731c32",
+      "old_exact_opening": "- [ ] Status of each job decided (Minijob, short-term, transition band, normal, above the JAEG); several jobs added up. - [ ] Immediate report sent where the sector requires it; registration within six weeks. - [ ] ELStAM retrieve",
+      "current_destination": "120–223/317–322",
+      "disposition": "All13completionchecks covered byownoperative paragraphs; preciseunconfirmedfactor/statechurch reserved352.",
+      "prior_sealed_destination": "120–219/313–318",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "120–220/314–319",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        470,
+        470
+      ],
+      "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "old_exact_opening": "## Sources",
+      "current_destination": "324–324",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "320–320",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "321–321",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        472,
+        480
+      ],
+      "old_unit_sha256": "2e3fe8c7ecc2236776951dbb3b59feba2c5cac0ef9c6b08b43375c0df561c829",
+      "old_exact_opening": "- Income Tax Act (EStG) §§ 3, 9a, 10c, 24b, 32a, 38, 38b, 39a to 39f, 40a, 41 to 42d, 46, 51a: https://www.gesetze-im-internet.de/estg/ - Solidarity Surcharge Act §§ 3, 4: https://www.gesetze-im-internet.de/solzg_1995/ - Fiscal Co",
+      "current_destination": "328–356",
+      "disposition": "Every originalofficialsourcefamily retained; eacholdURLsemanticroute captured here, actualquoteindex recordswhichbodiesread.",
+      "prior_sealed_destination": "324–351",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "325–353",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        482,
+        482
+      ],
+      "old_unit_sha256": "325920a0335f29023f559c5de314714fc69ba9531501b7d5c9308db1a62086a7",
+      "old_exact_opening": "This skill is general information for 2026 and not tax, legal or payroll advice.",
+      "current_destination": "20/358–375",
+      "disposition": "Originalgeneralreference/trust/CTAqualification retained.",
+      "prior_sealed_destination": "20/353–370",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "20/355–372",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        484,
+        484
+      ],
+      "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "old_exact_opening": "<!-- openaccountants-cta-block -->",
+      "current_destination": "360–360",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "355–355",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "357–357",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        486,
+        486
+      ],
+      "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "old_exact_opening": "---",
+      "current_destination": "1–1",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "1–1",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "1–1",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        488,
+        488
+      ],
+      "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "old_exact_opening": "## Talk to a verified accountant",
+      "current_destination": "364–364",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "359–359",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "361–361",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        490,
+        493
+      ],
+      "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "old_exact_opening": "This guide is maintained by the OpenAccountants network — accountants who put their name behind the tax answers AI gives people. The live, always-current version (and the professional behind it) is at [openaccountants.com](https:/",
+      "current_destination": "366–369",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "361–364",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "363–366",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        495,
+        496
+      ],
+      "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "old_exact_opening": "- Use it in your AI: https://www.openaccountants.com/connect - Meet the accountants: https://www.openaccountants.com/network",
+      "current_destination": "371–372",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "366–367",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "368–369",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        498,
+        500
+      ],
+      "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+      "old_exact_opening": "> **General reference only.** This document does not constitute tax, legal, or > financial advice. Verify figures against the cited primary sources or with a > licensed professional before relying on them.",
+      "current_destination": "374–376",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "369–371",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "371–373",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    }
+  ],
+  "current_main_rows": [
+    {
+      "old_native_LF": [
+        1,
+        16
+      ],
+      "old_unit_sha256": "c9f8fccef20b59771d12526efcca64a9c020b645e3eeac9a43941da64a449daa",
+      "old_exact_opening": "--- name: de-payroll description: \"German payroll for employees for pay periods in 2026: wage tax (Lohnsteuer) by tax class I to VI through the finance ministry's 2026 program flow (PAP) with the EUR 12,348 basic allowance, the Vo",
+      "current_destination": "1–16",
+      "disposition": "DE-B09/10/11 authorized exact corrections/source row/version; all original wording retained in exact before/inverse evidence.",
+      "prior_sealed_destination": "1–16",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "1–16",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        18,
+        18
+      ],
+      "old_unit_sha256": "6062083a6e9eb19fdbab76a30046e3d678f84055020c5b0186c008c93080d026",
+      "old_exact_opening": "# German payroll 2026: wage tax, social insurance, Minijobs and reporting",
+      "current_destination": "18–18",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "18–18",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "18–18",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        20,
+        20
+      ],
+      "old_unit_sha256": "956f40ee6f03f0c0b0dbf1e799b8070547f8f00c5dc52faf6715f558853f212c",
+      "old_exact_opening": "> **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any specific employer's or employee's facts. Payroll software that implements the 2026 PAP, and a Steuer",
+      "current_destination": "20–20",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "20–20",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "20–20",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        22,
+        22
+      ],
+      "old_unit_sha256": "82d75a1f9708452203e39710bb16176ecbbe69d3946b407212c7e76460a15d44",
+      "old_exact_opening": "**The year.** The 2026 PAP applies to pay for periods \"die nach dem 31. Dezember 2025, aber vor dem 1. Januar 2027 enden\" and to one-time payments received in that window ([PAP 2026, Anlage 1](https://www.bundesfinanzministerium.d",
+      "current_destination": "22–22",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "22–22",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "22–22",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        24,
+        24
+      ],
+      "old_unit_sha256": "d019277c2335ffce66785838532f77f6b688364a1abb73c7967cc58933f5c5e5",
+      "old_exact_opening": "**Sibling skills.** The employee's own annual return: [de-employee-income-tax](de-employee-income-tax.md). Contributions of the self-employed: [de-social-contributions](de-social-contributions.md); their income tax: [de-self-emplo",
+      "current_destination": "24–24",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "24–24",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "24–24",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        26,
+        26
+      ],
+      "old_unit_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "old_exact_opening": "## Who this applies to",
+      "current_destination": "26–26",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "26–26",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "26–26",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        28,
+        31
+      ],
+      "old_unit_sha256": "b226bf3ffb019d00641be0faf6e866c029e70d7c4391e8ab541015ccc8cd28d9",
+      "old_exact_opening": "- **Employers in Germany.** Wage tax is collected by deduction from pay where the employer is a \"domestic employer\": it has a residence, seat, management, permanent establishment or permanent representative in Germany, or it is a ",
+      "current_destination": "28–31",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "28–31",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "28–31",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        33,
+        33
+      ],
+      "old_unit_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "old_exact_opening": "## Rates, bands and thresholds",
+      "current_destination": "33–33",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "33–33",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "33–33",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        35,
+        35
+      ],
+      "old_unit_sha256": "f1e6d691890a66569c9dc27dbe90e30d959bcc5d867937b8fbe7d084e9a29660",
+      "old_exact_opening": "All wage tax amounts are yearly. The PAP annualises the period's pay, computes the year's tax and divides it back.",
+      "current_destination": "35–35",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "35–35",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "35–35",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        37,
+        37
+      ],
+      "old_unit_sha256": "2f4629a348ae408bf10cbc87e570f262dd8edc6ee8d474233b1dc11261684b4a",
+      "old_exact_opening": "**Wage tax and surcharges**",
+      "current_destination": "37–37",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "37–37",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "37–37",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        39,
+        61
+      ],
+      "old_unit_sha256": "56fb9a49f266cf50605a6e0e8fb703c2e55813d5a77e1b5f0f982cd5126a0e9c",
+      "old_exact_opening": "| Item | Rate or amount | Year | Source | | --- | --- | --- | --- | | Basic allowance (Grundfreibetrag): no tax up to | EUR 12,348 | 2026 | [§ 32a(1) EStG](https://www.gesetze-im-internet.de/estg/__32a.html) | | First progressive ",
+      "current_destination": "39–61",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "39–61",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "39–61",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        63,
+        63
+      ],
+      "old_unit_sha256": "462d88be62551f26485b377695b608b2b331d383365e60c569e19d9aa6f3c309",
+      "old_exact_opening": "**Social insurance**",
+      "current_destination": "63–63",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "63–63",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "63–63",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        65,
+        82
+      ],
+      "old_unit_sha256": "6658a4ff54b02e50934e5199345be96cb5e809f7ce36e0ca3506aa91b5e5be49",
+      "old_exact_opening": "| Item | Rate or amount | Year | Source | | --- | --- | --- | --- | | Pension insurance, full rate (employer and employee 9.3% each) | 18.6% | 2026 | [RVBeitrSBek 2026](https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A",
+      "current_destination": "65–82",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "65–82",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "65–82",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        84,
+        84
+      ],
+      "old_unit_sha256": "cbd8e2363607f96f7b63693021cd88c3c7d58edac401b36ca0e756b46f0bca5a",
+      "old_exact_opening": "**Employee care share by children**, derived from the rows above:",
+      "current_destination": "84–84",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "84–84",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "84–84",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        86,
+        93
+      ],
+      "old_unit_sha256": "3f113db1c5745b8e67564b66a14fa11be90a507019b734af56be6eee9f3991dd",
+      "old_exact_opening": "| Children | Outside Saxony: employee | Outside Saxony: employer | Saxony: employee | Saxony: employer | | --- | --- | --- | --- | --- | | None, employee 23 or older | 2.4% | 1.8% | 2.9% | 1.3% | | One child (any age); or childles",
+      "current_destination": "86–93",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "86–93",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "86–93",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        95,
+        95
+      ],
+      "old_unit_sha256": "a640f3d284f2f1392c5f983377cb8ef636dc618967801bddb949b4df45392861",
+      "old_exact_opening": "Do not read the care rate from § 55(1) SGB XI: the statute still prints \"3,4 Prozent\"; the current 3.6% was set by regulation (PBAV 2025).",
+      "current_destination": "95–95",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "95–95",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "95–95",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        97,
+        97
+      ],
+      "old_unit_sha256": "268b3943fa4693360e9d9e4b1fc2e4b9ea64f53b0e72515f1f1c894df216f4a8",
+      "old_exact_opening": "**Minijobs, short-term jobs and the transition band**",
+      "current_destination": "97–97",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "97–97",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "97–97",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        99,
+        114
+      ],
+      "old_unit_sha256": "814ab7d60e34ce409ecb0b95644b5a9b9300a925d3004c8db2861bef2a359d3a",
+      "old_exact_opening": "| Item | Rate or amount | Year | Source | | --- | --- | --- | --- | | Minimum wage per hour | EUR 13.90 (EUR 14.60 from 1 January 2027) | 2026 | [MiLoV5 § 1](https://www.gesetze-im-internet.de/milov5/__1.html) | | Minijob limit pe",
+      "current_destination": "99–114",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "99–114",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "99–114",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        116,
+        116
+      ],
+      "old_unit_sha256": "1922c5897a17fa48bb320a158b52f374f76325b7c4d357ef1fa639f050317119",
+      "old_exact_opening": "## The taxable base",
+      "current_destination": "116–116",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "116–116",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "116–116",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        118,
+        118
+      ],
+      "old_unit_sha256": "0f4ed74d3e2080309680b55ac0e58a50d43f06d37849355d1ec612f507715f11",
+      "old_exact_opening": "**Wage tax, in the PAP's order** ([§ 39b(2) EStG](https://www.gesetze-im-internet.de/estg/__39b.html)):",
+      "current_destination": "118–118",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "118–118",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "118–118",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        120,
+        125
+      ],
+      "old_unit_sha256": "f6a10c50dac0b1c5a117b9d380a62d61c58fda51031da6419a2f0dd1df1c2e0a",
+      "old_exact_opening": "1. **Annualise.** Monthly pay x 12; weekly x 360/7; daily x 360. 2. **Take out tax-free pay first**, such as the Aktivrente and tax-free surcharges (below). 3. **Deduct** the ELStAM allowance (or add the added amount), the class a",
+      "current_destination": "120–125",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "120–125",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "120–125",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        127,
+        127
+      ],
+      "old_unit_sha256": "526b32bb67ea9e1f2845f7143fbfd0f0e61113c67f505574d8dff0a044ef7576",
+      "old_exact_opening": "**Tax classes** ([§ 38b EStG](https://www.gesetze-im-internet.de/estg/__38b.html)): I single, or married not meeting III or IV, or with limited tax liability; II as I with the single parent relief; III married, both resident, not ",
+      "current_destination": "127–127",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "127–127",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "127–127",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        129,
+        129
+      ],
+      "old_unit_sha256": "810c4026216e8d728ab1c0b331a6c965aabc3e870962525ba25e6d94f8609d43",
+      "old_exact_opening": "**Vorsorgepauschale** (the employee's insurance, inside the tax; [§ 39b(2) sentence 5 no. 3 EStG](https://www.gesetze-im-internet.de/estg/__39b.html), PAP 2026):",
+      "current_destination": "129–129",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "129–129",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "129–129",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        131,
+        134
+      ],
+      "old_unit_sha256": "f35dd7803f28fe17449e0a7570617c7d175d739e21fd0be4bbd228921fb4f46d",
+      "old_exact_opening": "- Pension: pay up to EUR 101,400 x 9.3%, unless not in the statutory scheme (PAP marker KRV = 1). - Health and care: pay up to EUR 69,750 x (half the fund's additional rate + 7.0% + the employee care rate). The PAP uses the full a",
+      "current_destination": "131–134",
+      "disposition": "DE-B09/10/11 authorized exact corrections/source row/version; all original wording retained in exact before/inverse evidence.",
+      "prior_sealed_destination": "131–134",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "131–134",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        136,
+        136
+      ],
+      "old_unit_sha256": "dde3ffab82a841176bcaa100ab7a9dd1a2d2ca62441ca4445185bb5a2bd5bfce",
+      "old_exact_opening": "**Other PAP inputs that change the result:** ALV (0 insured / 1 not), KRV, PKV (0 statutory, 1 private), KVZ (the fund's full additional rate), PVZ (1 = childless surcharge), PVA (number of reductions, 0 to 4), PVS (1 = place of e",
+      "current_destination": "136–136",
+      "disposition": "DE-B09/10/11 authorized exact corrections/source row/version; all original wording retained in exact before/inverse evidence.",
+      "prior_sealed_destination": "136–136",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "136–136",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        138,
+        138
+      ],
+      "old_unit_sha256": "e7b38f23e6f02c29884b58667c422c9b9095b63fd8dc12bb1c1a21c35f952589",
+      "old_exact_opening": "**Solidarity surcharge and church tax.** No surcharge while the yearly base does not exceed the exemption limit; above it, the lower of 5.5% of the base and 11.9% of the excess ([§ 4 SolzG](https://www.gesetze-im-internet.de/solzg",
+      "current_destination": "138–138",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "138–138",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "138–138",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        140,
+        140
+      ],
+      "old_unit_sha256": "3bef49b8a2961ac5fa78e6bd5aa90521f7ecc081d61794fd4b6e25aa3d7ca7a8",
+      "old_exact_opening": "**One-time payments** (bonuses, holiday and Christmas pay, back pay, severance) use the annual method of [§ 39b(3) EStG](https://www.gesetze-im-internet.de/estg/__39b.html): tax on the expected annual pay with the payment, less ta",
+      "current_destination": "140–140",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "140–140",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "140–140",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        142,
+        142
+      ],
+      "old_unit_sha256": "9120d177fe2bdffbf3854edf8af3e8cdff173cbe73982e39cf0728ccef5c53bd",
+      "old_exact_opening": "**Aktivrente, new in 2026** ([§ 3 no. 21 EStG](https://www.gesetze-im-internet.de/estg/__3.html), [finance ministry FAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/FAQ-zur-Aktivrente.html)): pay from an employment under",
+      "current_destination": "142–142",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "142–142",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "142–142",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        144,
+        144
+      ],
+      "old_unit_sha256": "a94427efefec52d4264dcff56b67e02018e1d410498aa539e278914e5c5e8264",
+      "old_exact_opening": "**Tax-free night, Sunday and holiday surcharges** ([§ 3b EStG](https://www.gesetze-im-internet.de/estg/__3b.html)), paid on top of basic pay for work actually done: night (20:00 to 06:00) 25%, rising to 40% for 00:00 to 04:00 if t",
+      "current_destination": "144–144",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "144–144",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "144–144",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        146,
+        146
+      ],
+      "old_unit_sha256": "b4f69548079463e9872aab96b7818cbf281e8d28b972fde8f8c1370e0fd9d0e9",
+      "old_exact_opening": "**Contribution base.**",
+      "current_destination": "146–146",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "146–146",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "146–146",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        148,
+        156
+      ],
+      "old_unit_sha256": "365a729d83b2170341c8f3ad1074572ef26d86b9847758b4fe63beff278e6cb8",
+      "old_exact_opening": "- Each branch: pay for the period, capped at that branch's monthly ceiling, times the shares; round each amount to the cent. - Several insured jobs together above a ceiling: each pay is reduced in proportion so that together they ",
+      "current_destination": "148–156",
+      "disposition": "DE-B09/10/11 authorized exact corrections/source row/version; all original wording retained in exact before/inverse evidence.",
+      "prior_sealed_destination": "148–156",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "148–156",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        158,
+        158
+      ],
+      "old_unit_sha256": "7c352712c33a2ed574d522b88bbaa55f430a347b852366d545430c5fbbdcdbc9",
+      "old_exact_opening": "**Minijob rules.** The limit is on regular monthly pay; an unforeseeable overrun in not more than two calendar months within the twelve months ending with the pay period, each by up to the limit itself, does not end the Minijob ([",
+      "current_destination": "158–158",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "158–158",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "158–158",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        160,
+        160
+      ],
+      "old_unit_sha256": "5f7eb4e9356634f2338d1ce1dd13bf8cddffb5b54c7c99daddad1de5198a601e",
+      "old_exact_opening": "**Transition band.** Normal wage tax by the ELStAM. Contributions are worked out on reduced bases by two formulas in [§ 20(2a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__20.html), with AE the monthly pay, G = EUR 603 and F",
+      "current_destination": "162–162",
+      "disposition": "DE-B09/10/11 authorized exact corrections/source row/version; all original wording retained in exact before/inverse evidence.",
+      "prior_sealed_destination": "160–160",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "160–160",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        162,
+        162
+      ],
+      "old_unit_sha256": "80f769dd07aa5295522377956390f413b6cd3ef525bec95d1b021c68b56b3ea0",
+      "old_exact_opening": "**Minimum wage.** EUR 13.90 per hour worked, paid at the agreed date and at the latest on the last bank working day (Frankfurt am Main) of the month after the work ([§ 2(1) MiLoG](https://www.gesetze-im-internet.de/milog/__2.html)",
+      "current_destination": "164–164",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "162–162",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "162–162",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        164,
+        164
+      ],
+      "old_unit_sha256": "7d29a39c3ca194a16b3c2db0068aff6fed67436ac0b15a6c1aeafb4b6896187f",
+      "old_exact_opening": "**Sick pay and the maternity top-up.** Continued pay for up to six weeks per incapacity, once the job has lasted four weeks without a break; the same illness again gives a new six weeks only after six months free of it, or twelve ",
+      "current_destination": "166–166",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "164–164",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "164–164",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        166,
+        166
+      ],
+      "old_unit_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "old_exact_opening": "## Deadlines and filing",
+      "current_destination": "168–168",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "166–166",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "166–166",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        168,
+        168
+      ],
+      "old_unit_sha256": "79437dfb1067582d5f75df70c9a163c400f84a209ef682d4ecd9652dd0895e5f",
+      "old_exact_opening": "**Before the first payday**",
+      "current_destination": "170–170",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "168–168",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "168–168",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        170,
+        173
+      ],
+      "old_unit_sha256": "390bce20e736b7a901c25bbf08efb003eaa2c88a34ec1716123e0c95669d01c5",
+      "old_exact_opening": "- **Employer number** (Betriebsnummer) from the Federal Employment Agency for each place of employment. - **Immediate report** in listed sectors, \"spätestens bei dessen Aufnahme\", to the pension insurers' data office: construction",
+      "current_destination": "172–175",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "170–173",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "170–173",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        175,
+        175
+      ],
+      "old_unit_sha256": "8aabbbeb5e5e3c5cd58f0406fd62e17c130dfe8e6ecf0c70ffa72a6f7f4cfd23",
+      "old_exact_opening": "**Filing and payment**",
+      "current_destination": "177–177",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "175–175",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "175–175",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        177,
+        193
+      ],
+      "old_unit_sha256": "c904b2457dc2d2a36c115afdf02e85acadd2690348ebf1e2fefa33ab94181ad2",
+      "old_exact_opening": "| Duty | Deadline | Source | | --- | --- | --- | | Wage tax return (Lohnsteuer-Anmeldung), electronic, and payment to the Betriebsstättenfinanzamt | 10th day after each filing period | [§ 41a(1) EStG](https://www.gesetze-im-intern",
+      "current_destination": "179–197",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "177–193",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "177–194",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        195,
+        195
+      ],
+      "old_unit_sha256": "1ef9a95c897292579159ddff30b23999270a892c8cb6a2789df98368977aa891",
+      "old_exact_opening": "The annual adjustment is barred (§ 42b(1) sentence 3) where the employee applies against it; was in class V or VI, or in II, III or IV for only part of the year; had an allowance or added amount, or the factor method; drew short-t",
+      "current_destination": "199–199",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "195–195",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "196–196",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        197,
+        197
+      ],
+      "old_unit_sha256": "27546d1ed803a7ec0daa57c66fe652446a82c39c781e183055f9231b7169f0fb",
+      "old_exact_opening": "**Payslip.** At every payment the employee gets a statement in text form showing at least the pay period and how pay is made up; none is needed if nothing changed ([§ 108(1), (2) GewO](https://www.gesetze-im-internet.de/gewo/__108",
+      "current_destination": "201–201",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "197–197",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "198–198",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        199,
+        199
+      ],
+      "old_unit_sha256": "fbc7b25581be92d752ea8bc79f27d14d779b8a469a41b128531821330bd3a4c0",
+      "old_exact_opening": "**Minimum wage records.** For Minijobs, short-term jobs and the § 2a SchwarzArbG sectors, record start, end and length of daily working time by the seventh day after the work and keep the records at least two years ([§ 17(1) MiLoG",
+      "current_destination": "203–203",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "199–199",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "200–200",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        201,
+        201
+      ],
+      "old_unit_sha256": "2ad76c0b0e41d847695870ab0f8ec50ed38db15d15df3d88cf6a0d0ce93bbb8b",
+      "old_exact_opening": "**2025 pay still being corrected.** Use the amended 2025 PAP of 22 January 2025, for periods \"die nach dem 31. Dezember 2024, aber vor dem 1. Januar 2026 enden\" ([amended PAP 2025](https://www.bundesfinanzministerium.de/Content/DE",
+      "current_destination": "205–205",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "201–201",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "202–202",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        203,
+        203
+      ],
+      "old_unit_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "old_exact_opening": "## Penalties and interest",
+      "current_destination": "207–207",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "203–203",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "204–204",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        205,
+        210
+      ],
+      "old_unit_sha256": "b0ac2fc0832c728e0d7173d70b3d899b1e10647e16e5924475e50b869ee62032",
+      "old_exact_opening": "- **Late payment of wage tax:** 1% of the amount due, rounded down to a multiple of EUR 50, for each month started. Not charged for a delay of up to three days, except for payment by cheque or in cash under § 224(2) no. 1 AO ([§ 2",
+      "current_destination": "209–214",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "205–210",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "206–211",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        212,
+        212
+      ],
+      "old_unit_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "old_exact_opening": "## Cross-border points",
+      "current_destination": "216–216",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "212–212",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "213–213",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        214,
+        219
+      ],
+      "old_unit_sha256": "d2fcf1ffbadffc08dc44d1e02b4462a5fa9b7d8e1d03e0b94c5d532cb64925b1",
+      "old_exact_opening": "- **Who must withhold.** A foreign company with no German establishment is not a domestic employer, but a German company receiving a seconded employee is the domestic employer when it bears the pay economically, or would have to a",
+      "current_destination": "218–223",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "214–219",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "215–220",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        221,
+        221
+      ],
+      "old_unit_sha256": "24306288984cfa636de0ac24a9833561c7e6c3cb47df7023c1903f57c3720a9b",
+      "old_exact_opening": "## Worked examples",
+      "current_destination": "225–225",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "221–221",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "222–222",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        223,
+        223
+      ],
+      "old_unit_sha256": "1aed86c0fc29076f46ce733eddf7d536cd810af1d4ddc8e41a9749a163da1fd2",
+      "old_exact_opening": "Every number comes from the tables above. Both examples recompute the 2026 PAP from the law and reproduce the finance ministry's own test table (class I EUR 9,389 at EUR 60,000; class III at EUR 100,000 gives EUR 15,012 with the s",
+      "current_destination": "227–227",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "223–223",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "224–224",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        225,
+        225
+      ],
+      "old_unit_sha256": "23fa2b6c95a22324f97f7094eb05d9f96e43841da5225c4f438a1828c85bd8ab",
+      "old_exact_opening": "### Example 1: class I, EUR 5,000 a month, childless, outside Saxony",
+      "current_destination": "229–229",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "225–225",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "226–226",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        227,
+        227
+      ],
+      "old_unit_sha256": "97ab0a608f428c271c8d3c2f23a9092b115541b89555b770972678133c7fc806",
+      "old_exact_opening": "An employee aged 30, no church, no children, place of employment in Hesse, statutory health fund with a 2.9% additional rate, EUR 5,000 a month, no one-time payments. Annual pay is EUR 60,000. The Vorsorgepauschale is pension EUR ",
+      "current_destination": "231–231",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "227–227",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "228–228",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        229,
+        259
+      ],
+      "old_unit_sha256": "3d9c506c51187bd655ad86349ed3f4a6c635328631d0ded4db29e5d96f89d60f",
+      "old_exact_opening": "```oa-check name: DE 2026 class I, EUR 5,000 a month, childless, fund rate 2.9% inputs: monthly_pay: 5000 fund_rate: 2.9 steps: - annual: monthly_pay * 12 - vsp_pension: min(annual, 101400) * 0.093 - vsp_health_care: min(annual, 6",
+      "current_destination": "233–263",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "229–259",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "230–260",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        261,
+        261
+      ],
+      "old_unit_sha256": "a15672a726c1c46c7baabc8b7072cf3e337607e38b96dc5c2874d869fcba98a5",
+      "old_exact_opening": "### Example 2: class III, EUR 9,000 a month, two children, church member, above the ceilings",
+      "current_destination": "265–265",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "261–261",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "262–262",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        263,
+        263
+      ],
+      "old_unit_sha256": "6d6de10fffcfd1cffe580b08c9787f6d209f25b8e935e32950bdf11d0f6ed8b2",
+      "old_exact_opening": "A married employee in class III (spouse in class V), two children aged 8 and 12 (two child counters), church member in a state with the 8% rate, place of employment outside Saxony, fund additional rate 2.5%, EUR 9,000 a month (EUR",
+      "current_destination": "267–267",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "263–263",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "264–264",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        265,
+        265
+      ],
+      "old_unit_sha256": "1c436f4562b4cc71244c4c1489be9d711fd8bd374cdd75d6c1a50c0cbb27fc39",
+      "old_exact_opening": "Edge points: pension and unemployment are capped at EUR 8,450 a month, health and care at EUR 5,812.50; the second child gives one 0.25-point care reduction (employee 1.55%). Vorsorgepauschale: pension 101,400 x 9.3% = EUR 9,430.2",
+      "current_destination": "269–269",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "265–265",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "266–266",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        267,
+        307
+      ],
+      "old_unit_sha256": "e176ade1b056fc5132c7583bdba07290f5b860b0aa0a0301f63a7314097574ec",
+      "old_exact_opening": "```oa-check name: DE 2026 class III, EUR 9,000 a month, two children, church 8%, capped inputs: monthly_pay: 9000 fund_rate: 2.5 child_counters: 2 church_rate: 8 steps: - annual: monthly_pay * 12 - care_ee_rate: 0.018 - (child_cou",
+      "current_destination": "271–311",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "267–307",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "268–308",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        309,
+        309
+      ],
+      "old_unit_sha256": "8bd52da7ad543ffa0c625fbaa07f206f4f358514e99fabd58eecb2cff9b14ebb",
+      "old_exact_opening": "Other cases, in short. A commercial Minijob at EUR 603: employer health 13% EUR 78.39, pension 15% EUR 90.45, flat tax 2% EUR 12.06; the Minijobber's 3.6% is EUR 21.71. Aktivrente from May 2026 at EUR 2,500 a month: EUR 2,000 tax-",
+      "current_destination": "313–313",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "309–309",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "310–310",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        311,
+        311
+      ],
+      "old_unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "old_exact_opening": "## Ask the client first",
+      "current_destination": "315–315",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "311–311",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "312–312",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        313,
+        318
+      ],
+      "old_unit_sha256": "4b49ff31c5dc4f119e0dad0577124ed4ade893dd88161a40db196fdced0b85a8",
+      "old_exact_opening": "- **ELStAM:** tax class, child counters, church, any allowance or factor; first or further job? Unknown data by the employee's fault means class VI. - **Health insurance:** which statutory fund and its own additional rate, or priv",
+      "current_destination": "317–322",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "313–318",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "314–319",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        320,
+        320
+      ],
+      "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "old_exact_opening": "## Sources",
+      "current_destination": "324–324",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "320–320",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "321–321",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        322,
+        348
+      ],
+      "old_unit_sha256": "1c8c1f5cc0b6fb3cfeefb866315a81cafb80c64d4588f7e65cdaace31f51000c",
+      "old_exact_opening": "| Source | URL | Read on | | --- | --- | --- | | EStG §§ 3, 3b, 9a, 10c, 24b, 32a, 38, 38b, 39, 39b, 39c, 39e, 39f, 40a, 41, 41a, 41b, 42b, 42d, 46, 51a | https://www.gesetze-im-internet.de/estg/ | 2026-10-24 | | Solidaritätszusch",
+      "current_destination": "326–353",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "322–348",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "323–350",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        350,
+        350
+      ],
+      "old_unit_sha256": "678640fbe4faa7820da96c37d59920d3fe365c0519a1e6a4cba9697ee60eac66",
+      "old_exact_opening": "Not yet confirmed: the Federal Gazette text of the labour ministry's 2026 factor F notice itself (0.6619 is taken from an official state circular that cites it, and equals 28 / 42.3); which states levy 8% and which 9% church tax (",
+      "current_destination": "358–358",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "353–353",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "355–355",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        352,
+        352
+      ],
+      "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "old_exact_opening": "<!-- openaccountants-cta-block -->",
+      "current_destination": "360–360",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "355–355",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "357–357",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        354,
+        354
+      ],
+      "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "old_exact_opening": "---",
+      "current_destination": "1–1",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "1–1",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "1–1",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        356,
+        356
+      ],
+      "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "old_exact_opening": "## Talk to a verified accountant",
+      "current_destination": "364–364",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "359–359",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "361–361",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        358,
+        361
+      ],
+      "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "old_exact_opening": "This guide is maintained by the OpenAccountants network — accountants who put their name behind the tax answers AI gives people. The live, always-current version (and the professional behind it) is at [openaccountants.com](https:/",
+      "current_destination": "366–369",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "361–364",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "363–366",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        363,
+        364
+      ],
+      "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "old_exact_opening": "- Use it in your AI: https://www.openaccountants.com/connect - Meet the accountants: https://www.openaccountants.com/network",
+      "current_destination": "371–372",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "366–367",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "368–369",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    },
+    {
+      "old_native_LF": [
+        366,
+        368
+      ],
+      "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+      "old_exact_opening": "> **General reference only.** This document does not constitute tax, legal, or > financial advice. Verify figures against the cited primary sources or with a > licensed professional before relying on them.",
+      "current_destination": "374–376",
+      "disposition": "Exact topic block retained, including every table/list member.",
+      "prior_sealed_destination": "369–371",
+      "bounded_successor_scope": "Same retained old topic; finite source exceptions add gates without removing the topic.",
+      "R88_immediate_predecessor_destination": "371–373",
+      "R88_scope": "Actual R88–96 same-method qualifications; earlier R62–70 conditions retained."
+    }
+  ],
+  "predecessor_Guide_sha256": "f7864d22ecb5e51e67d65e1c799dd335abe3dc120be7e556779c84ac2df80382",
+  "R88_immediate_predecessor_Guide_sha256": "11679ea5289f51dbaac24b7547c80f4f00505622205d2b4da7d0acd71db05765"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "KOSIT_CII_SCHEMA",
+  "url": "https://projekte.kosit.org/api/v4/projects/356/packages/maven/de/xeinkauf/xrechnung-3.0.2-bundle/2026-08-31/xrechnung-3.0.2-bundle-2026-08-31.zip",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_CII_SCHEMA.member.body",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_CII_SCHEMA.reader.txt",
+  "raw_sha256": "3baf143b90f289d62c5dfb086aa51fa183490a2d0b38a40c6b31dcae0760f2ba",
+  "reader_sha256": "b9798aafcba039d0630f0015ffae5092a1758bf924d19d97b6bf0bf9d95f22a0",
+  "official_bundle_sha256": "5f5426741a03e0b9abc7de83acd97309c09498241d132fc035f9c830be7203de",
+  "member_path": "resources/cii/16b/xsd/CrossIndustryInvoice_100pD16B.xsd",
+  "inner_zip_path": "xrechnung-3.0.2-validator-configuration-2026-08-31.zip",
+  "inner_zip_sha256": "2530cd107c414511c5d0462ec10f886910395abfca820db82e83d70bf01221a8",
+  "extraction": "Exact ZIP member bytes as raw; derived UTF-8 LF reader, no XML tag stripping",
+  "scope": "Selected member acquisition only; actual native-LF reads recorded separately"
+}

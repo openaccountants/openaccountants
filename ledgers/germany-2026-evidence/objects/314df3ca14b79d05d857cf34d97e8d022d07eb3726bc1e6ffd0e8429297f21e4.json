@@ -1,0 +1,222 @@
+[
+  {
+    "path": "build-inventory.py",
+    "sha256": "23c13e3fa2397d4474bd31acf2d06549469361a8f62f31369d6cb661155150c3",
+    "bytes": 13937
+  },
+  {
+    "path": "context-identities.json",
+    "sha256": "f4c003cc63d2ac20e104564ae842e83991c37f3f96cecec11f13207fd64161a9",
+    "bytes": 1431
+  },
+  {
+    "path": "existing-source-file-identities.json",
+    "sha256": "7cd1bbac7a501fd28edb6edc2c61c3d53539de00555d2143171b4f55f49eff92",
+    "bytes": 99970
+  },
+  {
+    "path": "guide-evidence-map.json",
+    "sha256": "53f1a089256a783868d2106786f611f6c33e78d42be1a035e98df554060d7d2f",
+    "bytes": 378579
+  },
+  {
+    "path": "inventory-summary.json",
+    "sha256": "68d208b4a3b46d431a087ba7fdca62f6bcc3c7f085596f23ebc52e4d98d38e1d",
+    "bytes": 853
+  },
+  {
+    "path": "preserved-PR903-evidence-extract.json",
+    "sha256": "8ad72dbd38e1ca293a68a593a45be76c717ef8e52b201341dad40bf45143ce66",
+    "bytes": 2418
+  },
+  {
+    "path": "preserved-country-register-DE-extract.json",
+    "sha256": "e9adcdd74ff94242978ad38cb5054122b70a59401f5a08aebadbf6e3b60da81a",
+    "bytes": 2138
+  },
+  {
+    "path": "preserved-report-identities.json",
+    "sha256": "4080f220bbfa7390fd12745293b087078a7d12cededd6af07d63e9b225187323",
+    "bytes": 6627
+  },
+  {
+    "path": "preserved-review-reports/DE-ben-rev.md",
+    "sha256": "ec4419fbddee7fad9749cb8fa6c7b32c6e2958c03eac32dde08d65c2cad63ca1",
+    "bytes": 4326
+  },
+  {
+    "path": "preserved-review-reports/DE-ben.md",
+    "sha256": "ad6aca7d4b1caa08ceacf7b4927cb450cc828662846939d7fb57a4ca1fe973c2",
+    "bytes": 1822
+  },
+  {
+    "path": "preserved-review-reports/DE-cg-rev.md",
+    "sha256": "3a5f63554dd8f2f12bbbbaea0b7dda7540eafa61c83561da97b04574c56ac4b3",
+    "bytes": 1153
+  },
+  {
+    "path": "preserved-review-reports/DE-cg.md",
+    "sha256": "b083b589d7da6b9b3c15da74822b39954b5bc34c50e4a46761553148d0b31936",
+    "bytes": 1319
+  },
+  {
+    "path": "preserved-review-reports/DE-est-rev.md",
+    "sha256": "1b6f55d7b12e0e0f054755bf19661adc7f0dba288c991a40f004389afdb5b20a",
+    "bytes": 1809
+  },
+  {
+    "path": "preserved-review-reports/DE-est.md",
+    "sha256": "b1406ce3ac297d7d7ebe860d685dc10ed98362e47035805f83b64cf542aab68e",
+    "bytes": 1233
+  },
+  {
+    "path": "preserved-review-reports/DE-free-rev2.md",
+    "sha256": "1faa513a3fa54d1e510bb4bdabfa5893b5f17cc68747f7d6b34c85bbb4497ab3",
+    "bytes": 853
+  },
+  {
+    "path": "preserved-review-reports/DE-free.md",
+    "sha256": "80a89d6821af5927aba9c088dfa39cb7256d1d61b8d8b868fe46749213bbcaeb",
+    "bytes": 1153
+  },
+  {
+    "path": "preserved-review-reports/DE-gewst-rev.md",
+    "sha256": "01c82c483737a604516fba3043c86ec84678834ca4d4bb358cacb9889d406d06",
+    "bytes": 2444
+  },
+  {
+    "path": "preserved-review-reports/DE-gewst.md",
+    "sha256": "7f7cc5b6d3592c681d43fd810b80af9bbd582c2b65e9111dc70fcbb715e5bf86",
+    "bytes": 2605
+  },
+  {
+    "path": "preserved-review-reports/DE-pr-independent-pap.py",
+    "sha256": "e5adb2fb62aa16482a15f27b68e402417f483124af876afdcff666ed271bfee2",
+    "bytes": 1067
+  },
+  {
+    "path": "preserved-review-reports/DE-pr-rev.md",
+    "sha256": "1f0ed48d214b90544f9625b4f2efe3e63e305dd1ef0ea69aeda57e1d112edec1",
+    "bytes": 2475
+  },
+  {
+    "path": "preserved-review-reports/DE-pr.md",
+    "sha256": "a46d8606e74a662ce93ddf3c794aabb87f2d55d326782c9b07c9ad00fb646d58",
+    "bytes": 1587
+  },
+  {
+    "path": "preserved-review-reports/DE-rent-rev.md",
+    "sha256": "3cdc2396d2106bf0085818e517fa21f5e6f6be0f4f416092e1ff28e7eca9a73e",
+    "bytes": 3042
+  },
+  {
+    "path": "preserved-review-reports/DE-rent.md",
+    "sha256": "be6596aaa00bde51831881ad0c0396c215fe3a19b4ccef8ec3c0d68e70ea9831",
+    "bytes": 2844
+  },
+  {
+    "path": "preserved-review-reports/DE-restore.md",
+    "sha256": "6f6fab40d5b4d62275237b612283c575504b89c5fb27db0095911ad3211e72ca",
+    "bytes": 2254
+  },
+  {
+    "path": "preserved-review-reports/DE-sc-rev.md",
+    "sha256": "3980b91813523e67e7674b7675e60e41ba7f0a606edf1aa6bd699e4e2479eb43",
+    "bytes": 915
+  },
+  {
+    "path": "preserved-review-reports/DE-sc.md",
+    "sha256": "2557fbec4bf27282688a06ce8932114b24d78d347fb92a68c4f4ee19d15a256b",
+    "bytes": 1324
+  },
+  {
+    "path": "preserved-review-reports/DE-vat-rev.md",
+    "sha256": "0a915614f5408c72a1b30acf0c71c0c76b1657ef2c4d3409a53f161c05faa0d8",
+    "bytes": 3874
+  },
+  {
+    "path": "preserved-review-reports/DE-vat.md",
+    "sha256": "dac7a6969c0ca3f8abb7243f635f3418d6e5ecbe29c1261e5fabeb919ba450fa",
+    "bytes": 2610
+  },
+  {
+    "path": "preserved-review-reports/noloss-A-rev.md",
+    "sha256": "abf823990bc0a1db0e1dfbec14e9050e69eb90f31eb75f268d11a6829ec0eb1f",
+    "bytes": 1813
+  },
+  {
+    "path": "preserved-review-reports/noloss-A.md",
+    "sha256": "14a91c71726977b3388ae07f7ef2d7648c31d26c03c0d1ab209c707ad5075a89",
+    "bytes": 1299
+  },
+  {
+    "path": "preserved-review-reports/restore-rev.md",
+    "sha256": "462254a9b4c3447bdc1b069fd7f0b6da01bb43b73a00a94de74bf5767028cf40",
+    "bytes": 4472
+  },
+  {
+    "path": "preserved-review-reports/shrink-audit.md",
+    "sha256": "dee6e05248f37c8b7e4fb8a2279e5db99cce227a8a6d31fd7d5d43af59b06d48",
+    "bytes": 19776
+  },
+  {
+    "path": "report.md",
+    "sha256": "071910da349606c67a104d79881113f707c80bf206b56399c05b40fd00a8ec46",
+    "bytes": 10485
+  },
+  {
+    "path": "review-pin-differences/de-capital-gains.diff",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "review-pin-differences/de-einkommensteuer-freelancer.diff",
+    "sha256": "3b8fc282f238fbbaf9446116d3389168cd88f8cd8ad70647626f6acc9dcc4d44",
+    "bytes": 1720
+  },
+  {
+    "path": "review-pin-differences/de-estimated-tax.diff",
+    "sha256": "94d56049188fab119214d47ee73321a289b59cd1dfb0f80e3120d26f970d6869",
+    "bytes": 1893
+  },
+  {
+    "path": "review-pin-differences/de-payroll-benefits.diff",
+    "sha256": "62660e5199904f6aaf4c7eb0d0c662f7fa75636084f6dedc5c7094e44f1ba71d",
+    "bytes": 2107
+  },
+  {
+    "path": "review-pin-differences/de-payroll.diff",
+    "sha256": "9801646deb4a8b75f03e8c9daed0cd8de0512bb3e8e8ba548b97db3d585be6f7",
+    "bytes": 450
+  },
+  {
+    "path": "review-pin-differences/de-rental-income.diff",
+    "sha256": "7e3c80e5b305c8ba9863f942b9d22aac0739e9794ebd20cccb2fb9106ba8dde6",
+    "bytes": 462
+  },
+  {
+    "path": "review-pin-differences/de-social-contributions.diff",
+    "sha256": "d88bcb7b9ccdab7d104487db843ad63457ee9f84fd0e21a006e340038f396160",
+    "bytes": 1587
+  },
+  {
+    "path": "review-pin-differences/de-trade-tax.diff",
+    "sha256": "62b200784f22d4495461fe15ae31dea2ec7153b78a448b494d233f14acf617e1",
+    "bytes": 454
+  },
+  {
+    "path": "review-pin-differences/germany-vat-return.diff",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "routing-and-exclusion-map.json",
+    "sha256": "20307ea64949682c101ef2f6c35866c78135d12b3c1a1f7f7bdd8318f79e4f0f",
+    "bytes": 20572
+  },
+  {
+    "path": "source-locator-augmentation.json",
+    "sha256": "1e224c0acff309ade73eb628efbc4ce0073efeaa05d46c6120c8f56bec292e36",
+    "bytes": 386
+  }
+]

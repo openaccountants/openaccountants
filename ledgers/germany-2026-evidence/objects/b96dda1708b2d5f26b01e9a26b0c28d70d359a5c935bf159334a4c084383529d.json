@@ -1,0 +1,252 @@
+{
+  "count": 41,
+  "controls": [
+    {
+      "name": "case1 taxable",
+      "actual": "3000",
+      "expected": "3000",
+      "pass": true
+    },
+    {
+      "name": "case1 tax",
+      "actual": "750",
+      "expected": "750",
+      "pass": true
+    },
+    {
+      "name": "case1 Soli",
+      "actual": "165/4",
+      "expected": "165/4",
+      "pass": true
+    },
+    {
+      "name": "case1 total",
+      "actual": "3165/4",
+      "expected": "3165/4",
+      "pass": true
+    },
+    {
+      "name": "case2 sharenet",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "case2 losscarry",
+      "actual": "500",
+      "expected": "500",
+      "pass": true
+    },
+    {
+      "name": "case2 taxable",
+      "actual": "3000",
+      "expected": "3000",
+      "pass": true
+    },
+    {
+      "name": "case2 flat",
+      "actual": "735.29",
+      "expected": "735.29",
+      "pass": true
+    },
+    {
+      "name": "case2 church stipulated8pct",
+      "actual": "58.82",
+      "expected": "58.82",
+      "pass": true
+    },
+    {
+      "name": "case2 Soli",
+      "actual": "40.44",
+      "expected": "40.44",
+      "pass": true
+    },
+    {
+      "name": "case2 total",
+      "actual": "834.55",
+      "expected": "834.55",
+      "pass": true
+    },
+    {
+      "name": "case3 netshareaftercertificate",
+      "actual": "2000",
+      "expected": "2000",
+      "pass": true
+    },
+    {
+      "name": "case3 stipulated fullBallowance taxable",
+      "actual": "1000",
+      "expected": "1000",
+      "pass": true
+    },
+    {
+      "name": "case3 stipulated refund includingSoli",
+      "actual": "3165/4",
+      "expected": "3165/4",
+      "pass": true
+    },
+    {
+      "name": "case4 base2026",
+      "actual": "1120",
+      "expected": "1120",
+      "pass": true
+    },
+    {
+      "name": "case4 taxable2026",
+      "actual": "784",
+      "expected": "784",
+      "pass": true
+    },
+    {
+      "name": "case4 base2025",
+      "actual": "1771/2",
+      "expected": "1771/2",
+      "pass": true
+    },
+    {
+      "name": "case5 gain900",
+      "actual": "900",
+      "expected": "900",
+      "pass": true
+    },
+    {
+      "name": "case5 900belowcliff",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "case5 addgoldwhole1100taxable",
+      "actual": "1100",
+      "expected": "1100",
+      "pass": true
+    },
+    {
+      "name": "case5 exact1000notfree",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "case5 salebeforeanniversary",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "case5 March2afteranniversary",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "case6 gain",
+      "actual": "36000",
+      "expected": "36000",
+      "pass": true
+    },
+    {
+      "name": "case6 allowancestart",
+      "actual": "906/5",
+      "expected": "906/5",
+      "pass": true
+    },
+    {
+      "name": "case6 cutthreshold",
+      "actual": "722",
+      "expected": "722",
+      "pass": true
+    },
+    {
+      "name": "case6 allowance",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "case6 taxable",
+      "actual": "36000",
+      "expected": "36000",
+      "pass": true
+    },
+    {
+      "name": "case7 homecalendar2024to2026",
+      "actual": "2",
+      "expected": "2",
+      "pass": true
+    },
+    {
+      "name": "case7 saleinside10yearsfrom2018",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "fund50pctnotEquityover50",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "fundmixed25inclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "fund60partial leaves40",
+      "actual": "2/5",
+      "expected": "2/5",
+      "pass": true
+    },
+    {
+      "name": "fund80partial leaves20",
+      "actual": "1/5",
+      "expected": "1/5",
+      "pass": true
+    },
+    {
+      "name": "fundJuly6fullmonthsreduction",
+      "actual": "560",
+      "expected": "560",
+      "pass": true
+    },
+    {
+      "name": "funddecliningpriceplusdistribution noVP",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "R36full1120thenTF",
+      "actual": "6216",
+      "expected": "6216",
+      "pass": true
+    },
+    {
+      "name": "R36wrong784thenTF",
+      "actual": "32256/5",
+      "expected": "32256/5",
+      "pass": true
+    },
+    {
+      "name": "R34qualifyinginterestactualcost",
+      "actual": "8000",
+      "expected": "8000",
+      "pass": true
+    },
+    {
+      "name": "R34owner10inclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "R34owner9.99failsalone",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    }
+  ],
+  "scope": "All4 original executable fixtures plus3 nonexecuted narrative examples and meaningful threshold/date/fund/financing separators. Example3 refund includes an explicit full allowance at bankB solely for that added control; no such unstated amount is attributed to the Guide. Church8pct is stipulated, no state-law approval."
+}

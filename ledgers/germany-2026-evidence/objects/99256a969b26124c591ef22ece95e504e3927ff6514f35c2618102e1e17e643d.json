@@ -1,0 +1,175 @@
+{
+  "Guide_sha256": "d6ad76e43de497f0374419344e03cef72fdba5c3e06ba80b13adbb8acdbd7322",
+  "actual_oa_blocks": 4,
+  "oa_failures": [],
+  "fresh_arithmetic_date_controls": [
+    {
+      "name": "original1tax",
+      "actual": "750.00",
+      "expected": "750"
+    },
+    {
+      "name": "original1Soli",
+      "actual": "41.250",
+      "expected": "41.25"
+    },
+    {
+      "name": "original1total",
+      "actual": "791.250",
+      "expected": "791.25"
+    },
+    {
+      "name": "original2tax",
+      "actual": "735.29",
+      "expected": "735.29"
+    },
+    {
+      "name": "original2church",
+      "actual": "58.82",
+      "expected": "58.82"
+    },
+    {
+      "name": "original2Soli",
+      "actual": "40.44",
+      "expected": "40.44"
+    },
+    {
+      "name": "original2total",
+      "actual": "834.55",
+      "expected": "834.55"
+    },
+    {
+      "name": "original2sharecarry",
+      "actual": "500",
+      "expected": "500"
+    },
+    {
+      "name": "original3twoBankBeforeAllowance",
+      "actual": "2000",
+      "expected": "2000"
+    },
+    {
+      "name": "original4base2026",
+      "actual": "1120.0000",
+      "expected": "1120"
+    },
+    {
+      "name": "original4taxable",
+      "actual": "784.0",
+      "expected": "784"
+    },
+    {
+      "name": "original4base2025",
+      "actual": "885.50000",
+      "expected": "885.5"
+    },
+    {
+      "name": "original5gain900",
+      "actual": "900",
+      "expected": "900"
+    },
+    {
+      "name": "original5gain1100",
+      "actual": "1100",
+      "expected": "1100"
+    },
+    {
+      "name": "Freigrenze999",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "Freigrenze1000",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "original6taxablegain",
+      "actual": "36000.0",
+      "expected": "36000"
+    },
+    {
+      "name": "original6initialallowance",
+      "actual": "181.20",
+      "expected": "181.20"
+    },
+    {
+      "name": "original6threshold",
+      "actual": "722.00",
+      "expected": "722"
+    },
+    {
+      "name": "original6remainingallowance",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "old0.9%below",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "old1%qualifies",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "propertyquota50notmore",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "propertyquota50.01",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "2025deadline31Jul2026weekday",
+      "actual": "4",
+      "expected": "4"
+    },
+    {
+      "name": "2025adviser28FebSunday",
+      "actual": "6",
+      "expected": "6"
+    },
+    {
+      "name": "2025adviser1MarMonday",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "2026deadline31JulSaturday",
+      "actual": "5",
+      "expected": "5"
+    },
+    {
+      "name": "2026deadline2AugMonday",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "2026adviser29FebTuesday",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "supplementaryflatcombinedrate",
+      "actual": "0.26375",
+      "expected": "0.26375"
+    },
+    {
+      "name": "original7ownUseCalendarYears",
+      "actual": "3",
+      "expected": "3"
+    }
+  ],
+  "used_actual_source_quote_hash_literal_checks": 71,
+  "no_Guide_write": true,
+  "not_independent_review": true,
+  "root_repaired_source_backed_findings": [
+    "DE-B01",
+    "DE-B02"
+  ],
+  "pending_source_backed_Guide_findings": []
+}

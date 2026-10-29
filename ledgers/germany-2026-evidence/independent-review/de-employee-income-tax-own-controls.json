@@ -1,0 +1,201 @@
+{
+  "count": 32,
+  "method": "Independent exact Fraction/date/threshold computations against actually read rules",
+  "controls": [
+    {
+      "name": "Lena WC",
+      "actual": "2218",
+      "expected": "2218",
+      "pass": true
+    },
+    {
+      "name": "Lena pension",
+      "actual": "5115",
+      "expected": "5115",
+      "pass": true
+    },
+    {
+      "name": "Lena health",
+      "actual": "4620",
+      "expected": "4620",
+      "pass": true
+    },
+    {
+      "name": "Lena care",
+      "actual": "1320",
+      "expected": "1320",
+      "pass": true
+    },
+    {
+      "name": "Lena Vorsorge",
+      "actual": "11055",
+      "expected": "11055",
+      "pass": true
+    },
+    {
+      "name": "Lena taxable",
+      "actual": "41691",
+      "expected": "41691",
+      "pass": true
+    },
+    {
+      "name": "Lena annual tax",
+      "actual": "7749",
+      "expected": "7749",
+      "pass": true
+    },
+    {
+      "name": "Lena refund vs stipulated8060",
+      "actual": "311",
+      "expected": "311",
+      "pass": true
+    },
+    {
+      "name": "Mia union dues separate",
+      "actual": "16570",
+      "expected": "16570",
+      "pass": true
+    },
+    {
+      "name": "joint totalincome",
+      "actual": "87340",
+      "expected": "87340",
+      "pass": true
+    },
+    {
+      "name": "joint pension",
+      "actual": "8370",
+      "expected": "8370",
+      "pass": true
+    },
+    {
+      "name": "joint basiccover",
+      "actual": "17901/2",
+      "expected": "17901/2",
+      "pass": true
+    },
+    {
+      "name": "joint Vorsorge",
+      "actual": "34641/2",
+      "expected": "34641/2",
+      "pass": true
+    },
+    {
+      "name": "joint taxable beforefloor",
+      "actual": "139895/2",
+      "expected": "139895/2",
+      "pass": true
+    },
+    {
+      "name": "joint taxable floor",
+      "actual": "69947",
+      "expected": "69947",
+      "pass": true
+    },
+    {
+      "name": "joint splitting",
+      "actual": "11324",
+      "expected": "11324",
+      "pass": true
+    },
+    {
+      "name": "joint tax with childallowance",
+      "actual": "8486",
+      "expected": "8486",
+      "pass": true
+    },
+    {
+      "name": "joint allowance advantage",
+      "actual": "2838",
+      "expected": "2838",
+      "pass": true
+    },
+    {
+      "name": "Kindergeld better",
+      "actual": "11324",
+      "expected": "11324",
+      "pass": true
+    },
+    {
+      "name": "joint balance vs stipulated9414",
+      "actual": "1910",
+      "expected": "1910",
+      "pass": true
+    },
+    {
+      "name": "equal410 not compulsory sideincome test",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "410.01 compulsory sideincome",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "employee1230 capped smallgross",
+      "actual": "1000",
+      "expected": "1000",
+      "pass": true
+    },
+    {
+      "name": "singleparent2childrenfull",
+      "actual": "4500",
+      "expected": "4500",
+      "pass": true
+    },
+    {
+      "name": "singleparent2children9months",
+      "actual": "3375",
+      "expected": "3375",
+      "pass": true
+    },
+    {
+      "name": "childallowance parent amount",
+      "actual": "4878",
+      "expected": "4878",
+      "pass": true
+    },
+    {
+      "name": "childallowance joint",
+      "actual": "9756",
+      "expected": "9756",
+      "pass": true
+    },
+    {
+      "name": "Kindergeld annual",
+      "actual": "3108",
+      "expected": "3108",
+      "pass": true
+    },
+    {
+      "name": "qualified childcare6000 80percentcap",
+      "actual": "4800",
+      "expected": "4800",
+      "pass": true
+    },
+    {
+      "name": "qualified childcare4000",
+      "actual": "3200",
+      "expected": "3200",
+      "pass": true
+    },
+    {
+      "name": "householdservicecap",
+      "actual": "4000",
+      "expected": "4000",
+      "pass": true
+    },
+    {
+      "name": "craftlabourcap",
+      "actual": "1200",
+      "expected": "1200",
+      "pass": true
+    }
+  ],
+  "pending_crossGuide_claims": [
+    "8060/classI and9414/classIII+V claimed withholding calculations to be recomputed in payroll source tranche; current annual refund computations treat certificate values as stipulated, not freshly approved payroll parity"
+  ]
+}

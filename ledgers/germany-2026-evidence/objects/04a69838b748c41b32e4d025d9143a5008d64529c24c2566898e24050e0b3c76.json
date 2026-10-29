@@ -1,0 +1,684 @@
+{
+  "scope": "Acquisition identities only, not actual selected reading or legal verification",
+  "sources": {
+    "https://www.gesetze-im-internet.de/estg/__21.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-21-20261024.html",
+      "sha256": "b028a7760b41dda06ae1b2ea4999c3fcb254c2c54dbb9bc161ff87645bfbd0b1",
+      "bytes": 5862,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__21.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB115",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB115.txt",
+      "reader_sha256": "9377e124062b78fae6076bcfda9594c9b2ec3e26a132e39b99ecd81da6ec283b",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 21 EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estg/__49.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-49-20261024.html",
+      "sha256": "ab6d74634775a9a34966bdfd0058d8e93deb30043ab1c0ea3895586cbe6f423b",
+      "bytes": 25776,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__49.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB116",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB116.txt",
+      "reader_sha256": "56cbe0597b599138f1fdbd55e4ceaa376e3b79a25e0067de8d313a8798ea3240",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 49 EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estg/__52.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-52-20261024.html",
+      "sha256": "bec6241b5340b28eb111acc63168aaa37356253f714334f69786379dd8edbfd5",
+      "bytes": 111324,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__52.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB012",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB012.txt",
+      "reader_sha256": "93f5e25556cf28a80e3d2347b80fce6403a3c51fea9a46caf2e3caf0aec4ecce",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 52 EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estg/__7.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-7-20261024.html",
+      "sha256": "6a9a7530293debb0ba9a1cdff44c86ea1c50bd1115b6850a0ed29edf23a352f4",
+      "bytes": 21792,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__7.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB032",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB032.txt",
+      "reader_sha256": "4142a47c78fa9e76d0eb0edc51a4b09397234d7c7200d73aa4ded9d62c976021",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 7 EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estg/__7b.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-7b-20261024.html",
+      "sha256": "97ead2bbbe842a7240132579766aa00911dbb6b4d244326f7b0226dab1bf36d4",
+      "bytes": 10346,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__7b.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB117",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB117.txt",
+      "reader_sha256": "b3478f5ce3895f8cc756167f519853a73e9aa85164a562662e66a807b850928c",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 7b EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estg/__6.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-6-20261024.html",
+      "sha256": "7888cea55ee179f051c84a3dd9cee5d48871e33b3789d28e0fa18a509e40e40f",
+      "bytes": 36268,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__6.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB031",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB031.txt",
+      "reader_sha256": "f4d5425829ef0a78a20634206218b78092ff602e0379ff9a56fa173685e8cf2b",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 6 EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estdv_1955/__82b.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estdv-82b-20261024.html",
+      "sha256": "690a2b2845fe79a46d413e5f49f70ff791ba8cc184381492682aba459fdf499f",
+      "bytes": 5119,
+      "official_url": "https://www.gesetze-im-internet.de/estdv_1955/__82b.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB118",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB118.txt",
+      "reader_sha256": "5e95d630f6aed4e0acadd42cd4f0525a3be3866b4c72caa89ec2340f22227388",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 82b EStDV 1955 - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/brkg_2005/__5.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/brkg-5-20261024.html",
+      "sha256": "9ffc3b6e205672e20208fbf7182ee79342820b2c610b746209af6217600b0a29",
+      "bytes": 5089,
+      "official_url": "https://www.gesetze-im-internet.de/brkg_2005/__5.html",
+      "identity_status": "Newly located retained candidate, header/text to be actually checked; not a prior read or verdict.",
+      "source_id": "DEB180",
+      "html_title": [
+        "&#167; 5 BRKG - Einzelnorm"
+      ],
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB180.txt",
+      "reader_sha256": "24503e2acb42c491fb2b50a2974541769b06a077dee8bfb23993115e3e4acef3",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read."
+    },
+    "https://www.gesetze-im-internet.de/estg/__9.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-9-20261024.html",
+      "sha256": "82ce506e5bebc2a7b9964e715fa898bc06d4eba0602e62d24606b2e6b49e23bb",
+      "bytes": 25050,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__9.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB030",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB030.txt",
+      "reader_sha256": "c5ad161d9234d437d840469dd3defee8b76019704a0b7de9562fb13d88b6b971",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 9 EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estg/__23.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-23-20261024.html",
+      "sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+      "bytes": 9828,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__23.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB004",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB004.txt",
+      "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 23 EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estg/__10d.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-10d-20261024.html",
+      "sha256": "4ecb27305f856990db5f9ecf9737a5f64b4ae16a73379a2827e961c8310d2b22",
+      "bytes": 8524,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__10d.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB035",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB035.txt",
+      "reader_sha256": "595e58f0c9c7b980d68a59d3190ff69d1f1608fd2204430103669dd934779c8d",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 10d EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estg/__10d.html;": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-10d-20261024.html",
+      "sha256": "4ecb27305f856990db5f9ecf9737a5f64b4ae16a73379a2827e961c8310d2b22",
+      "bytes": 8524,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__10d.html;",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB119",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB119.txt",
+      "reader_sha256": "595e58f0c9c7b980d68a59d3190ff69d1f1608fd2204430103669dd934779c8d",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 10d EStG - Einzelnorm"
+      ]
+    },
+    "https://www.recht.bund.de/bgbl/1/2024/108/regelungstext.pdf": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2024-I-108-20261024.pdf",
+      "sha256": "b95ebec40902824eb7f0e9daabbfdeb628dde44aeaae9d7757231249c680ff3b",
+      "bytes": 742758,
+      "official_url": "https://www.recht.bund.de/bgbl/1/2024/108/regelungstext.pdf",
+      "identity_status": "Newly located retained candidate, header/text to be actually checked; not a prior read or verdict.",
+      "source_id": "DEB211",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB211.txt",
+      "reader_sha256": "38ab8edac703a190bbc86b6e9c3f2d577f77a75503d6be4ce36dfd7fe640329e",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read."
+    },
+    "https://www.gesetze-im-internet.de/estg/__46.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-46-20261024.html",
+      "sha256": "c27dd4e778fb62fb6a389453e29b68329e447cff65925995d8941825c1fc3750",
+      "bytes": 12228,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__46.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB038",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB038.txt",
+      "reader_sha256": "4f1e49286a87ec81f6d872ddd07080cf0b65c71fa15b9ab5ada9da83dcd42d9c",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 46 EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estg/__37.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-37-20261024.html",
+      "sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "bytes": 8489,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB036",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB036.txt",
+      "reader_sha256": "782a3f377dc8f603590990e0ea2aac93844231f128dbb4a901925e7a6b289efb",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 37 EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/ustg_1980/__12.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-12-20261024.html",
+      "sha256": "e8753b36595e445e776716ce43ec8d01633d9c548aec77d776105ae9484d09d0",
+      "bytes": 15219,
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__12.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB044",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB044.txt",
+      "reader_sha256": "f0f9a4d727981094aa001b41d96a3fa3fda7e9692ab888c4d004384b3a8ba259",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 12 UStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/ao_1977/__152.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "bytes": 13469,
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB016",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB016.txt",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 152 AO - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/ao_1977/__233a.html;": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-233a-20261024.html",
+      "sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "bytes": 10154,
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html;",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB120",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB120.txt",
+      "reader_sha256": "707aa5c6d8b589d1ab3ea4e5c30d68d5121ad2a42c56fb9368e7ca2f69d4bd7d",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 233a AO - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/ao_1977/__238.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-238-20261024.html",
+      "sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "bytes": 5249,
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB018",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB018.txt",
+      "reader_sha256": "651db01a1f6c18060e1f1e63652986b0e4921fb1ce84da5d2a740ebea8ca0b48",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 238 AO - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estg/__11.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-11-20261024.html",
+      "sha256": "fa07a7805b96905289274c0181192e53bff996059b6ac1e854afdcdb33653e02",
+      "bytes": 5699,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__11.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB040",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB040.txt",
+      "reader_sha256": "b239c9ca998d62964ce7f7d79ee0532ce07bfdc78f2ca3c186bb6b463bf3266f",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 11 EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estg/__35c.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-35c-20261024.html",
+      "sha256": "d4c6ba1d6ee13e6f9ffc2535343fbb493a4095a2cc948176358c41ffec38692d",
+      "bytes": 10457,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__35c.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB121",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB121.txt",
+      "reader_sha256": "85af0a67c256554751dd9b51d8d6dd46db153425bb9a374782ab428f159d922c",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 35c EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/hgb/__255.html": {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/targeted-sources/hgb-255.html",
+      "sha256": "e976e365bba7c17ef8c6fd58778ace5785fa0a45de1f727dbfe6a69eb2401fe1",
+      "bytes": 6952,
+      "official_url": "https://www.gesetze-im-internet.de/hgb/__255.html",
+      "identity_status": "Fresh targeted official acquisition; selected actual reading not yet claimed.",
+      "source_id": "DEB237",
+      "html_title": [
+        "&#167; 255 HGB - Einzelnorm"
+      ],
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB237.txt",
+      "reader_sha256": "12f95f706815ef44cb84ade9662643bc75809cab07b4ee72c4a393c3c2219092",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read."
+    },
+    "https://www.gesetze-im-internet.de/estg/__7a.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-7a-20261024.html",
+      "sha256": "e6fbfc4dfb0657c489fb402cc40e70ac305b106ff21982a7dd01e946717e0868",
+      "bytes": 9072,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__7a.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB122",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB122.txt",
+      "reader_sha256": "93c4af46c9c000e6716bf5759b4124f8e4b9c5b725605f23c740e6edb5394356",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 7a EStG - Einzelnorm"
+      ]
+    },
+    "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-05-21-anwendungsschreiben-7b-estg-neu.pdf?__blob=publicationFile&v=5": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-7b-20250521.pdf",
+      "sha256": "783f9ff673b948361845c2446bcfc6ce6f93cc57c35a804f747b490155ac13cb",
+      "bytes": 503500,
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-05-21-anwendungsschreiben-7b-estg-neu.pdf?__blob=publicationFile&v=5",
+      "identity_status": "Newly located retained candidate, header/text to be actually checked; not a prior read or verdict.",
+      "source_id": "DEB212",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB212.txt",
+      "reader_sha256": "29a3d4613e39ceb1bd54754c59faacc60b46507cd900f9d359c549ce56261e72",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read."
+    },
+    "https://esth.bundesfinanzministerium.de/esth/2024/C-Anhaenge/Anhang-30/II/anhang-30-II.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/esth-2024-anh30-II-20261024.html",
+      "sha256": "ac454ce083febebac57dbf3c6ed2a861893dea26f3a6c8f09fdf56d335c7ec7a",
+      "bytes": 989776,
+      "official_url": "https://esth.bundesfinanzministerium.de/esth/2024/C-Anhaenge/Anhang-30/II/anhang-30-II.html",
+      "identity_status": "Newly located retained candidate, header/text to be actually checked; not a prior read or verdict.",
+      "source_id": "DEB213",
+      "html_title": [
+        "\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n    \n\n\n\n    \n    \n        EStH 2024\n         - \n        \n        Einkunftserzielung bei den Einkünften aus…\n    \n\n\n"
+      ],
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB213.txt",
+      "reader_sha256": "397fc789780c68cc237bf9957ec10fe34987edfcff179c8766cf2352880aea98",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read."
+    },
+    "https://www.gesetze-im-internet.de/ustg_1980/__4.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-4-20261024.html",
+      "sha256": "c60df9ce2bab1184ed7229d8f48c4024311b71d3f6d1d9d5f6a0834dbb6b2a87",
+      "bytes": 60884,
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__4.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB123",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB123.txt",
+      "reader_sha256": "ee88ed0e89798f5ca33348bef8f31c28b02c1069c283a1315189c7981e2e4976",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 4 UStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/ustg_1980/__9.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-9-20261024.html",
+      "sha256": "7a95d31e90cf2c4ad25b55cbde00237d82491920a39bf03a6920f827f044e24f",
+      "bytes": 4804,
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__9.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB124",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB124.txt",
+      "reader_sha256": "8cf2257ae5d6b00439064331e47e1280c9d7c70a595b34ff070b71cca4e5862c",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 9 UStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/ustg_1980/__27.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-27-20261024.html",
+      "sha256": "58f8018d2dc7512cea52ca14847700b68fe07c8bfa3bc4e4aebc29c5f7451ee0",
+      "bytes": 25529,
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__27.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB125",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB125.txt",
+      "reader_sha256": "07dbb451d4da7ca6d39ae7f8154504e6fdaeaa8541ab72cdb24c89d6fed75c3d",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 27 UStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/ao_1977/__149.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "bytes": 11871,
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB014",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB014.txt",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 149 AO - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/ao_1977/__108.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-108-20261024.html",
+      "sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+      "bytes": 4614,
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB015",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB015.txt",
+      "reader_sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 108 AO - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/egao-97-36-20261024.html",
+      "sha256": "473093a055687b4f1080906450a53bfa4454856afe4a25599e1907757d5436bc",
+      "bytes": 12474,
+      "official_url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html",
+      "identity_status": "Newly located retained candidate, header/text to be actually checked; not a prior read or verdict.",
+      "source_id": "DEB182",
+      "html_title": [
+        "Art 97 &#167; 36 EGAO - Einzelnorm"
+      ],
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB182.txt",
+      "reader_sha256": "45ffa494336b97fdb64a8261370a05f74e069dcab59dd97c0b9eb6d7a325ae24",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read."
+    },
+    "https://www.gesetze-im-internet.de/estg/__39a.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-39a-20261024.html",
+      "sha256": "5cc523af4a3d8ece922a704b278df79b1928009e8d46ac302e31b4ea67eabb59",
+      "bytes": 17211,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__39a.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB126",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB126.txt",
+      "reader_sha256": "9a28197fea9297fe909b50f926823ab9c46298a2c2841c10affc0db3d6ae8939",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 39a EStG - Einzelnorm"
+      ]
+    },
+    "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2025-20261024.html",
+      "sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+      "bytes": 1047509,
+      "official_url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "identity_status": "Newly located retained candidate, header/text to be actually checked; not a prior read or verdict.",
+      "source_id": "DEB185",
+      "html_title": [
+        "ELSTER - Hilfe"
+      ],
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+      "reader_sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read."
+    },
+    "https://www.gesetze-im-internet.de/ao_1977/__233a.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-233a-20261024.html",
+      "sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "bytes": 10154,
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB017",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB017.txt",
+      "reader_sha256": "707aa5c6d8b589d1ab3ea4e5c30d68d5121ad2a42c56fb9368e7ca2f69d4bd7d",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 233a AO - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estg/__50.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-50-20261024.html",
+      "sha256": "63d1f168553262d258ff45cd2114914c946c6348fd7335ddaf60c645a7a10765",
+      "bytes": 15285,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__50.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB127",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB127.txt",
+      "reader_sha256": "34181f9545634ae26e814db06c4f0f23c3d58e85577c46cac58a89a800709223",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 50 EStG - Einzelnorm"
+      ]
+    },
+    "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2026": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2026-20261024.html",
+      "sha256": "82ca8a6c766b158c6c69aadff1f645324fbcd1e68dc53076ab75c02742569001",
+      "bytes": 126804,
+      "official_url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2026",
+      "identity_status": "Newly located retained candidate, header/text to be actually checked; not a prior read or verdict.",
+      "source_id": "DEB214",
+      "html_title": [
+        "ELSTER - Hilfe"
+      ],
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB214.txt",
+      "reader_sha256": "0c9b18cf052d57a980c908d605167a3c648f77585f45943c3b1833b2cecc0c9d",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read."
+    },
+    "https://www.gesetze-im-internet.de/estg/__4.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+      "sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+      "bytes": 24217,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__4.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB029",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB029.txt",
+      "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 4 EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estg/__12.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-12-20261027.html",
+      "sha256": "2f2a2749f2f5ec64b89f9ffe5f657575e60bd4a6ef74217332842658f9056282",
+      "bytes": 5874,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__12.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB042",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB042.txt",
+      "reader_sha256": "26e40ce4be801d4cd3f931e030220feef7ddc49efffaed7dc60219988b099019",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 12 EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/ustg_1980/__15.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-15-20261024.html",
+      "sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+      "bytes": 13770,
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__15.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB043",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB043.txt",
+      "reader_sha256": "e819ae2c4a6a65834fee9861adf1ec100b520126163e240fe08fe6a6d1e80d74",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 15 UStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estg/__2.html": {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-2-20261024.html",
+      "sha256": "4ce8258e61a05e50348bfa2c149542d7b078c951ffa5b92b37a88b93d67f8848",
+      "bytes": 10109,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__2.html",
+      "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+      "source_id": "DEB045",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB045.txt",
+      "reader_sha256": "a776de83fcc1b5085502ca8844dc998fc060e70f2ff5ffc8eaff71edc4ae7403",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+      "html_title": [
+        "&#167; 2 EStG - Einzelnorm"
+      ]
+    },
+    "https://www.gesetze-im-internet.de/estg/__1.html": {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/targeted-sources/estg-1-20261029.html",
+      "sha256": "aa3116bd65c47709867eaba213a4f5a482aabe7075b4e0ae7b31fb8f2830d6ca",
+      "bytes": 9096,
+      "official_url": "https://www.gesetze-im-internet.de/estg/__1.html",
+      "identity_status": "Fresh targeted official acquisition; selected actual reading not yet claimed.",
+      "source_id": "DEB280",
+      "html_title": [
+        "&#167; 1 EStG - Einzelnorm"
+      ],
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB280.txt",
+      "reader_sha256": "c131d86c4bf7573c7ceb89484930ecd33f0df991d53b7f180bdd3640c66b9f18",
+      "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read."
+    },
+    "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201610254?type=1646225765": {
+      "source_id": "RNT01",
+      "official_url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201610254?type=1646225765",
+      "final_url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201610254?type=1646225765",
+      "status": 200,
+      "content_type": "application/pdf",
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT01.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT01.txt",
+      "sha256": "631cac44a85fef75be333d539ce259f7fc085c3998677645e52c5a9c5b9e5222",
+      "reader_sha256": "a5b47becd74b523371e3cc202f6b847e10d8b64e84f73f40c2dd69826b36ace9",
+      "bytes": 90754,
+      "extraction": "pdftotext-layout; selected actual reading separately recorded",
+      "acquired_at": "2026-10-29T17:06:47.913691+00:00"
+    },
+    "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE202010257?type=1646225765": {
+      "source_id": "RNT02",
+      "official_url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE202010257?type=1646225765",
+      "final_url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE202010257?type=1646225765",
+      "status": 200,
+      "content_type": "application/pdf",
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT02.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT02.txt",
+      "sha256": "01f4fb3f226059d163ec556949d9f4e22e48f326590ec41ad24bc6b67dc8b122",
+      "reader_sha256": "eff34e263c4542f9abf04e6afc36f387f9c9eb8196e37e50bc0ccb84486bb2b8",
+      "bytes": 82380,
+      "extraction": "pdftotext-layout; selected actual reading separately recorded",
+      "acquired_at": "2026-10-29T17:06:48.458471+00:00"
+    },
+    "https://nrwe.justiz.nrw.de/fgs/muenster/j2019/2_K_2497_17_E_Urteil_20191210.html": {
+      "source_id": "RNT03",
+      "official_url": "https://nrwe.justiz.nrw.de/fgs/muenster/j2019/2_K_2497_17_E_Urteil_20191210.html",
+      "final_url": "https://nrwe.justiz.nrw.de/fgs/muenster/j2019/2_K_2497_17_E_Urteil_20191210.html",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT03.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT03.txt",
+      "sha256": "8e14f195aee81799d0ea9b2ed530fff0246393c9025a69052843fa48f03c1b6c",
+      "reader_sha256": "670224e28314be9a6104348649bb801a789a107a7a1e7bb7f23df9e3788eea6a",
+      "bytes": 59787,
+      "extraction": "HTMLParser block text; collapsed within-block whitespace",
+      "acquired_at": "2026-10-29T17:11:20.581820+00:00"
+    },
+    "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE202150209?type=1646225765": {
+      "source_id": "RNT04",
+      "official_url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE202150209?type=1646225765",
+      "final_url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE202150209?type=1646225765",
+      "status": 200,
+      "content_type": "application/pdf",
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT04.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT04.txt",
+      "sha256": "d3fed848583ba48aa7355aee842dcb9597eb9deb7988d500bb277fc56b47a1b4",
+      "reader_sha256": "aef18a47bbc14e1ecbf6b5bc2c22df71607d23fa6adc914c2253e8344fff3843",
+      "bytes": 67197,
+      "extraction": "pdftotext-layout",
+      "acquired_at": "2026-10-29T17:11:21.337292+00:00"
+    },
+    "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201810105?type=1646225765": {
+      "source_id": "RNT05",
+      "official_url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201810105?type=1646225765",
+      "final_url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201810105?type=1646225765",
+      "status": 200,
+      "content_type": "application/pdf",
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT05.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT05.txt",
+      "sha256": "67815042bc7805d3e53baf55a03f873bef339556ec4200c50b952f113a0d7833",
+      "reader_sha256": "0b44d6ef5a7c80fd0b579f51432e3a3d9973390d124c47d61cfe2cd4eb77983c",
+      "bytes": 62216,
+      "extraction": "pdftotext-layout",
+      "acquired_at": "2026-10-29T17:32:57.450302+00:00"
+    },
+    "https://www.gesetze-im-internet.de/ao_1977/__370.html": {
+      "source_id": "RNT06",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__370.html",
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT06.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT06.txt",
+      "sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+      "reader_sha256": "60aecd47e48aef8708433f3c54f7733c4f499fc5d273986845c875cea77a85a0",
+      "bytes": 8329,
+      "encoding_from_document": "iso-8859-1",
+      "extraction": "HTMLParser block text; collapsed within-block whitespace",
+      "repair": "Decode original retained raw using its declared ISO8859-1; no refetch or raw-byte mutation. Original UTF8 failure preserved in prior acquisition JSON."
+    },
+    "https://www.gesetze-im-internet.de/ao_1977/__39.html": {
+      "source_id": "RNT07",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__39.html",
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT07.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT07.txt",
+      "sha256": "f86add62d1f4ba2697bd13619999a41ef0fe7a0756cedbff3d4119f7fa65ede1",
+      "reader_sha256": "33f25209c8cd687ff8f3fde2038718da67447676e376b1b56475a8736cd459cb",
+      "bytes": 4679,
+      "encoding_from_document": "iso-8859-1",
+      "extraction": "HTMLParser block text; collapsed within-block whitespace",
+      "repair": "Decode original retained raw using its declared ISO8859-1; no refetch or raw-byte mutation. Original UTF8 failure preserved in prior acquisition JSON."
+    },
+    "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Berechnung-Aufteilung-Grundstueckskaufpreis.html": {
+      "source_id": "RNT08",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Berechnung-Aufteilung-Grundstueckskaufpreis.html",
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/targeted-official-search-response.json",
+      "sha256": "24d99d612f0de511c524c9584134d99c1285463662fac28d998141f8a25d32c5",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT08-official-web-observation.txt",
+      "reader_sha256": "f2a6fab396b2b2cc4ddcb474feb010bc6323332929afe3b7df6c87fdb8f831b7",
+      "bytes": 14909,
+      "source_kind": "official-web-search-observation; not rawHTML",
+      "extraction": "Exact decoded text of retained web tool official search observation; original tool JSON preserved;503 body failures separate."
+    }
+  },
+  "unmatched_urls": [
+    "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Berechnung-Aufteilung-Grundstueckskaufpreis.html",
+    "https://www.openaccountants.com",
+    "https://www.openaccountants.com/connect",
+    "https://www.openaccountants.com/network"
+  ]
+}

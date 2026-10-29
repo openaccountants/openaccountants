@@ -1,0 +1,110 @@
+{
+  "status": "Writer successor, independent review pending",
+  "artifacts": [
+    {
+      "path": "after/de-treaty-withholding-rates.md",
+      "sha256": "e0af931443833336734547a462ee47978d568c247571d2691fad966c5b0e5ecf",
+      "bytes": 32636
+    },
+    {
+      "path": "before/de-treaty-withholding-rates.md",
+      "sha256": "98b7a3ed15a0ff174004be9b2975f1c920b1a6ad752b7bb38ba05038c21eb7a1",
+      "bytes": 30095
+    },
+    {
+      "path": "build-ledger.py",
+      "sha256": "06e6951ae90b0bf9ad785f1f439517967c2d30b67cc0337f0b69bdad7da902ce",
+      "bytes": 7601
+    },
+    {
+      "path": "builder-check-history.md",
+      "sha256": "2c0a1beeeb4e85200e4adf98ee2cd9c7bf1818440d5ff13a03a483f36a425e6e",
+      "bytes": 269
+    },
+    {
+      "path": "check-and-seal.py",
+      "sha256": "5d70b252c814b2960ddd6b04e72271f3a2bbca637f3be01fe441ff3da1c8ed22",
+      "bytes": 11786
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "570243e373d8dccd97a1037fc47ddec3f3f23b07823a0ba91d8b2fb2506b7a64",
+      "bytes": 10859
+    },
+    {
+      "path": "historical-apply.py",
+      "sha256": "822c32798e62f681276845c5ccb9277bf7ea1500790ff997177805334b4697b4",
+      "bytes": 14456
+    },
+    {
+      "path": "ledgers/de-treaty-withholding-rates.md",
+      "sha256": "913ed9fe8b178e2f406e99eaf454ce83fe0149f313c81cd65872a280fe949acc",
+      "bytes": 203213
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "9b4ff4de595600ab8f51cb52000a97637cdbbb0f8162eeeb6406e858441a232f",
+      "bytes": 1929
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "540c818ce6e2ebbfc0cee7a443301b629eae07153654612decd0d8cfa7a021a7",
+      "bytes": 36836
+    },
+    {
+      "path": "own-visual-read.json",
+      "sha256": "e4475ac6a73bea5d6739660990adfde9ec18ab691886311a0354114264d774e0",
+      "bytes": 559
+    },
+    {
+      "path": "preservation-proof.json",
+      "sha256": "c00f66e61da52b6f57f159c4e2307b04b51889ec5098ef6a135a316ee4d77526",
+      "bytes": 646
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "8d0c058bb774ad96a9712ba099ede918063025d1c99072b0b8ea60e8ac4137be",
+      "bytes": 288864
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "07aa1173b7737dcfad9ced9e11591d35a9978d42f58f22af637218b04103d567",
+      "bytes": 177440
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "b3537a8e6e8851bb13f976b63fa5066f28875c0547c97b1a2f43d50ff583abc5",
+      "bytes": 916
+    },
+    {
+      "path": "support/de-treaty-withholding-rates/old-topic-destinations.json",
+      "sha256": "1c4c499fd2689c13d1bf9d5835e1218bfc28a8b518ba11ba26e6bee4803fcc08",
+      "bytes": 205226
+    },
+    {
+      "path": "support/de-treaty-withholding-rates/rows.json",
+      "sha256": "29e4ebf957bf78700d3a4ae08712030a7c023a674b811587373292b55f9cf98a",
+      "bytes": 100791
+    },
+    {
+      "path": "support/guide.diff",
+      "sha256": "5cf04715f4524d0bea44f5486e08280c2beb4092cdbbd030d81e262311b88ca8",
+      "bytes": 14614
+    },
+    {
+      "path": "support/line-map.json",
+      "sha256": "27a076a650e187226a90395dbb872140ceffd98699f662af10f31076efc73652",
+      "bytes": 18599
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "be37d8f15bad102afbd0da1ea93d0bb8d308a6e7dc3548cd9180f2fe8b2070e3",
+      "bytes": 35977
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "0def27045c0d6a6c1999cc4903137c0f5a9d4baee0ce354aa232ae07a28d305b",
+      "bytes": 2514
+    }
+  ]
+}

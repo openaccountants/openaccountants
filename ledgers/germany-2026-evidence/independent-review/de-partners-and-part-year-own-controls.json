@@ -1,0 +1,180 @@
+{
+  "count": 29,
+  "controls": [
+    {
+      "name": "KGtradeincome",
+      "actual": "416000",
+      "expected": "416000",
+      "pass": true
+    },
+    {
+      "name": "KGMessbetrag",
+      "actual": "27405/2",
+      "expected": "27405/2",
+      "pass": true
+    },
+    {
+      "name": "KGtrade",
+      "actual": "104139/2",
+      "expected": "104139/2",
+      "pass": true
+    },
+    {
+      "name": "Anna ordinary income",
+      "actual": "296000",
+      "expected": "296000",
+      "pass": true
+    },
+    {
+      "name": "Anna key Messbetrag",
+      "actual": "16443/2",
+      "expected": "16443/2",
+      "pass": true
+    },
+    {
+      "name": "Anna key trade",
+      "actual": "312417/10",
+      "expected": "312417/10",
+      "pass": true
+    },
+    {
+      "name": "Anna taxable",
+      "actual": "280964",
+      "expected": "280964",
+      "pass": true
+    },
+    {
+      "name": "Anna tariff",
+      "actual": "106963",
+      "expected": "106963",
+      "pass": true
+    },
+    {
+      "name": "Anna credit",
+      "actual": "312417/10",
+      "expected": "312417/10",
+      "pass": true
+    },
+    {
+      "name": "Anna loss of4xpotentialcredit",
+      "actual": "16443/10",
+      "expected": "16443/10",
+      "pass": true
+    },
+    {
+      "name": "Anna income tax arithmetic",
+      "actual": "757213/10",
+      "expected": "757213/10",
+      "pass": true
+    },
+    {
+      "name": "Anna Soli centtruncated",
+      "actual": "416467/100",
+      "expected": "416467/100",
+      "pass": true
+    },
+    {
+      "name": "Clara taxable",
+      "actual": "29234",
+      "expected": "29234",
+      "pass": true
+    },
+    {
+      "name": "Clara ratebase",
+      "actual": "59234",
+      "expected": "59234",
+      "pass": true
+    },
+    {
+      "name": "Clara basetariff",
+      "actual": "13938",
+      "expected": "13938",
+      "pass": true
+    },
+    {
+      "name": "Clara rate fraction trunc",
+      "actual": "29413/125000",
+      "expected": "29413/125000",
+      "pass": true
+    },
+    {
+      "name": "Clara tax",
+      "actual": "6878",
+      "expected": "6878",
+      "pass": true
+    },
+    {
+      "name": "Clara absent progression",
+      "actual": "4002",
+      "expected": "4002",
+      "pass": true
+    },
+    {
+      "name": "foreign salary2300 no German use of1230",
+      "actual": "1070",
+      "expected": "1070",
+      "pass": true
+    },
+    {
+      "name": "foreign salary2300 German used full1230",
+      "actual": "2300",
+      "expected": "2300",
+      "pass": true
+    },
+    {
+      "name": "DE-R05 ownactivity 500000/15000",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "DE-R05 ownactivity 500000/1500001/100",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "DE-R05 ownactivity 1000000/24500",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "DE-R05 ownactivity 1000000/2450001/100",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "DE-R05 ownactivity 100000/3100",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "34a share10pct strictthreshold",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "34a share10k strictthreshold",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "34a share10000.01 qualifies threshold",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "latepartnership100k4months",
+      "actual": "250",
+      "expected": "250",
+      "pass": true
+    }
+  ],
+  "scope": "Independent exact Fraction computations; fixed original2cases plus source-based separating boundaries; statutory numerical arithmetic, no claim portal parity/unresolved state rounding"
+}

@@ -1,0 +1,105 @@
+{
+  "status": "writer successor, independent recheck pending",
+  "artifacts": [
+    {
+      "path": "after-Guide.md",
+      "sha256": "27bd4da330db7fb8428c569af3f3e6a208d64623cda58343c02590a36b2ee454",
+      "bytes": 24560
+    },
+    {
+      "path": "apply-and-build.py",
+      "sha256": "d65956261b53150e0ed19e9130f52452e40a95cad58a3cc17846d3cc2c1f5a13",
+      "bytes": 15186
+    },
+    {
+      "path": "before-Guide.md",
+      "sha256": "5d5f9d8e80b08e2299130e2fe59328714838a89f40a54800eac2e46368e4c382",
+      "bytes": 23897
+    },
+    {
+      "path": "check-and-seal.py",
+      "sha256": "5bd69d27e6f5490d04f0cb0b12af7cc963f93bc6bec4a3fd8901134d76e0e13b",
+      "bytes": 7978
+    },
+    {
+      "path": "current-rule-rows.json",
+      "sha256": "9d666759df42bda490b3113db8804d6bfe06c98e2b439fadf22fa9184e888710",
+      "bytes": 84713
+    },
+    {
+      "path": "de-estimated-tax.md",
+      "sha256": "88bc5239d4b429169e93bc23ec9975ef9156e5868e6dd702262d935024d31efb",
+      "bytes": 184061
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "77a206632712cf40ad56f6bfb5f01c57afafa7bdc2b254394346bd06d0514812",
+      "bytes": 961
+    },
+    {
+      "path": "guide.diff",
+      "sha256": "32b94dd825759dc47de2b5adc032140cba0aec54e8c1f9d6b450c261b0a70054",
+      "bytes": 5198
+    },
+    {
+      "path": "mapping-check-failure.md",
+      "sha256": "14f02440589d4bf09a207647581edf7b7e4e5ee5cbd8c4a53147b15c576e28fe",
+      "bytes": 417
+    },
+    {
+      "path": "old-topic-destinations.json",
+      "sha256": "512c3e8cc0b603a93111c51cc78ba6db3cc99cdee34c06041cae9a3d228a00e2",
+      "bytes": 236206
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "6f8473b6e0e4bc2bd11c13541a9a5c029507d83a5fce5c52eec15f8e42d72f2e",
+      "bytes": 1312
+    },
+    {
+      "path": "preservation-proof.json",
+      "sha256": "5aa3e8cb7ef14736a1cf0678b72e4b2595be454db7273da682a9c881aafb35b1",
+      "bytes": 344
+    },
+    {
+      "path": "route-check-failure.md",
+      "sha256": "0d913fc845ca426ed3ab491f5fc747a11ba850456cce9300f59348bb205b1a7a",
+      "bytes": 375
+    },
+    {
+      "path": "route-repair-index.json",
+      "sha256": "bd1821d92f6c75e55f3f17b65f98ad8dbd42208805d7c05195494c6af75bb153",
+      "bytes": 40631
+    },
+    {
+      "path": "second-route-check-failure.md",
+      "sha256": "3954592ecd0bc127e738d95a98bc1f33678275c8ad6b0514e383539bf7683111",
+      "bytes": 584
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "3f523f0e8ce688e02e3bb247933733ddbcbdbdfa3dd74fadfff94b5aa061a745",
+      "bytes": 72502
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "4e9bfc38e56ecfb2a337556393789a4887eef764347afd5050598d61cdfe8f03",
+      "bytes": 40152
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "87655a64f9e417be795f4bbd8e32e4005d76598b53af5aff3623871011c2cb00",
+      "bytes": 839
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "6a6d7e487a4d22385f91a89984cb271b9c0c454fae480f563c49f73b501d4849",
+      "bytes": 8138
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "70d84abfad85196e936caa554c658e383853c6d93d805452c4b9267bf8495924",
+      "bytes": 1985
+    }
+  ]
+}

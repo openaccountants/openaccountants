@@ -1,0 +1,11 @@
+{
+  "id": "U8824d3005e2e3619",
+  "url": "https://www.arbeitsagentur.de/unternehmen/betriebsnummern-service/alles-wichtige/beantragung",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8824d3005e2e3619.body",
+  "raw_sha256": "18a7278b6b516fb4b6a70f88e766a0573f84c16af4069c13de47fd96e869a996",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8824d3005e2e3619.reader.txt",
+  "reader_sha256": "f3167cd7f951f5378caf70626b421edf2ef8fd5ed5ea8b7d28168d705b712d0d",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

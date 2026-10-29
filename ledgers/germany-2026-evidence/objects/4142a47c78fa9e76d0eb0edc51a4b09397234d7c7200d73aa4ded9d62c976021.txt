@@ -1,0 +1,89 @@
+§ 7 EStG - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Einkommensteuergesetz (EStG)
+§ 7 Absetzung für Abnutzung oder Substanzverringerung
+(1) 1Bei Wirtschaftsgütern, deren Verwendung oder Nutzung durch den Steuerpflichtigen zur Erzielung von Einkünften sich erfahrungsgemäß auf einen Zeitraum von mehr als einem Jahr erstreckt, ist jeweils für ein Jahr der Teil der Anschaffungs- oder Herstellungskosten abzusetzen, der bei gleichmäßiger Verteilung dieser Kosten auf die Gesamtdauer der Verwendung oder Nutzung auf ein Jahr entfällt (Absetzung für Abnutzung in gleichen Jahresbeträgen). 2Die Absetzung bemisst sich hierbei nach der betriebsgewöhnlichen Nutzungsdauer des Wirtschaftsguts. 3Als betriebsgewöhnliche Nutzungsdauer des Geschäfts- oder Firmenwerts eines Gewerbebetriebs oder eines Betriebs der Land- und Forstwirtschaft gilt ein Zeitraum von 15 Jahren. 4Im Jahr der Anschaffung oder Herstellung des Wirtschaftsguts vermindert sich für dieses Jahr der Absetzungsbetrag nach Satz 1 um jeweils ein Zwölftel für jeden vollen Monat, der dem Monat der Anschaffung oder Herstellung vorangeht. 5Bei Wirtschaftsgütern, die nach einer Verwendung zur Erzielung von Einkünften im Sinne des § 2 Absatz 1 Satz 1 Nummer 4 bis 7 in ein Betriebsvermögen eingelegt worden sind, mindert sich der Einlagewert um die Absetzungen für Abnutzung oder Substanzverringerung, Sonderabschreibungen oder erhöhte Absetzungen, die bis zum Zeitpunkt der Einlage vorgenommen worden sind, höchstens jedoch bis zu den fortgeführten Anschaffungs- oder Herstellungskosten; ist der Einlagewert niedriger als dieser Wert, bemisst sich die weitere Absetzung für Abnutzung vom Einlagewert. 6Bei beweglichen Wirtschaftsgütern des Anlagevermögens, bei denen es wirtschaftlich begründet ist, die Absetzung für Abnutzung nach Maßgabe der Leistung des Wirtschaftsguts vorzunehmen, kann der Steuerpflichtige dieses Verfahren statt der Absetzung für Abnutzung in gleichen Jahresbeträgen anwenden, wenn er den auf das einzelne Jahr entfallenden Umfang der Leistung nachweist. 7Absetzungen für außergewöhnliche technische oder wirtschaftliche Abnutzung sind zulässig; soweit der Grund hierfür in späteren Wirtschaftsjahren entfällt, ist in den Fällen der Gewinnermittlung nach § 4 Absatz 1 oder nach § 5 eine entsprechende Zuschreibung vorzunehmen.
+(2) 1Bei beweglichen Wirtschaftsgütern des Anlagevermögens, die nach dem 30. Juni 2025 und vor dem 1. Januar 2028 angeschafft oder hergestellt worden sind, kann der Steuerpflichtige statt der Absetzung für Abnutzung in gleichen Jahresbeträgen die Absetzung für Abnutzung in fallenden Jahresbeträgen bemessen. 2Die Absetzung für Abnutzung in fallenden Jahresbeträgen kann nach einem unveränderlichen Prozentsatz vom jeweiligen Buchwert (Restwert) vorgenommen werden; der dabei anzuwendende Prozentsatz darf höchstens das Dreifache des bei der Absetzung für Abnutzung in gleichen Jahresbeträgen in Betracht kommenden Prozentsatzes betragen und 30 Prozent nicht übersteigen. 3Absatz 1 Satz 4 und § 7a Absatz 8 gelten entsprechend. 4Bei Wirtschaftsgütern, bei denen die Absetzung für Abnutzung in fallenden Jahresbeträgen bemessen wird, sind Absetzungen für außergewöhnliche technische oder wirtschaftliche Abnutzung nicht zulässig.
+(2a) 1Bei Elektrofahrzeugen nach § 9 Absatz 2 des Kraftfahrzeugsteuergesetzes, die zum Anlagevermögen gehören und nach dem 30. Juni 2025 und vor dem 1. Januar 2028 angeschafft worden sind, können abweichend von Absatz 1 oder 2 als Absetzung für Abnutzung die folgenden Beträge in Prozent der Anschaffungskosten abgezogen werden: im Jahr der Anschaffung 75 Prozent, im ersten darauf folgenden Jahr zehn Prozent, im zweiten und dritten darauf folgenden Jahr jeweils fünf Prozent, im vierten darauf folgenden Jahr drei Prozent und im fünften darauf folgenden Jahr zwei Prozent. 2Satz 1 kann nur angewendet werden, wenn der Steuerpflichtige keine Sonderabschreibungen für das Wirtschaftsgut in Anspruch genommen hat. 3Absatz 1 Satz 4 gilt nicht.
+(3) 1Der Übergang von der Absetzung für Abnutzung in fallenden Jahresbeträgen zur Absetzung für Abnutzung in gleichen Jahresbeträgen ist zulässig. 2In diesem Fall bemisst sich die Absetzung für Abnutzung vom Zeitpunkt des Übergangs an nach dem dann noch vorhandenen Restwert und der Restnutzungsdauer des einzelnen Wirtschaftsguts. 3Der Übergang von der Absetzung für Abnutzung in gleichen Jahresbeträgen zur Absetzung für Abnutzung in fallenden Jahresbeträgen ist nicht zulässig.
+(4) 1Bei Gebäuden sind abweichend von Absatz 1 als Absetzung für Abnutzung die folgenden Beträge bis zur vollen Absetzung abzuziehen: 1.
+bei Gebäuden, soweit sie zu einem Betriebsvermögen gehören und nicht Wohnzwecken dienen und für die der Bauantrag nach dem 31. März 1985 gestellt worden ist, jährlich 3 Prozent,
+2.
+bei Gebäuden, soweit sie die Voraussetzungen der Nummer 1 nicht erfüllen und die a)
+nach dem 31. Dezember 2022 fertiggestellt worden sind, jährlich 3 Prozent,
+b)
+vor dem 1. Januar 2023 und nach dem 31. Dezember 1924 fertiggestellt worden sind, jährlich 2 Prozent,
+c)
+vor dem 1. Januar 1925 fertiggestellt worden sind, jährlich 2,5 Prozent
+der Anschaffungs- oder Herstellungskosten; Absatz 1 Satz 5 gilt entsprechend. 2Beträgt die tatsächliche Nutzungsdauer eines Gebäudes in den Fällen des Satzes 1 Nummer 1 und 2 Buchstabe a weniger als 33 Jahre, in den Fällen des Satzes 1 Nummer 2 Buchstabe b weniger als 50 Jahre, in den Fällen des Satzes 1 Nummer 2 Buchstabe c weniger als 40 Jahre, so können anstelle der Absetzungen nach Satz 1 die der tatsächlichen Nutzungsdauer entsprechenden Absetzungen für Abnutzung vorgenommen werden. 3Absatz 1 letzter Satz bleibt unberührt. 4Bei Gebäuden im Sinne der Nummer 2 rechtfertigt die für Gebäude im Sinne der Nummer 1 geltende Regelung weder die Anwendung des Absatzes 1 letzter Satz noch den Ansatz des niedrigeren Teilwerts (§ 6 Absatz 1 Nummer 1 Satz 2).
+(5) 1Bei Gebäuden, die in einem Mitgliedstaat der Europäischen Union oder einem anderen Staat belegen sind, auf den das Abkommen über den Europäischen Wirtschaftsraum (EWR-Abkommen) angewendet wird, und die vom Steuerpflichtigen hergestellt oder bis zum Ende des Jahres der Fertigstellung angeschafft worden sind, können abweichend von Absatz 4 als Absetzung für Abnutzung die folgenden Beträge abgezogen werden: 1.
+bei Gebäuden im Sinne des Absatzes 4 Satz 1 Nummer 1, die vom Steuerpflichtigen auf Grund eines vor dem 1. Januar 1994 gestellten Bauantrags hergestellt oder auf Grund eines vor diesem Zeitpunkt rechtswirksam abgeschlossenen obligatorischen Vertrags angeschafft worden sind,
+–im Jahr der Fertigstellung und
+in den folgenden 3 Jahren
+jeweils 10 Prozent,
+–in den darauf folgenden
+3 Jahren
+jeweils 5 Prozent,
+–in den darauf folgenden
+18 Jahren
+jeweils 2,5 Prozent,
+2.
+bei Gebäuden im Sinne des Absatzes 4 Satz 1 Nummer 2, die vom Steuerpflichtigen auf Grund eines vor dem 1. Januar 1995 gestellten Bauantrags hergestellt oder auf Grund eines vor diesem Zeitpunkt rechtswirksam abgeschlossenen obligatorischen Vertrags angeschafft worden sind,
+–im Jahr der Fertigstellung
+und in den folgenden
+7 Jahren
+jeweils 5 Prozent,
+–in den darauf folgenden
+6 Jahren
+jeweils 2,5 Prozent,
+–in den darauf folgenden
+36 Jahren
+jeweils 1,25 Prozent,
+3.
+bei Gebäuden im Sinne des Absatzes 4 Satz 1 Nummer 2, soweit sie Wohnzwecken dienen, die vom Steuerpflichtigen a)
+auf Grund eines nach dem 28. Februar 1989 und vor dem 1. Januar 1996 gestellten Bauantrags hergestellt oder nach dem 28. Februar 1989 auf Grund eines nach dem 28. Februar 1989 und vor dem 1. Januar 1996 rechtswirksam abgeschlossenen obligatorischen Vertrags angeschafft worden sind,
+–im Jahr der Fertigstellung und
+in den folgenden 3 Jahren
+jeweils 7 Prozent,
+–in den darauf folgenden
+6 Jahren
+jeweils 5 Prozent,
+–in den darauf folgenden
+6 Jahren
+jeweils 2 Prozent,
+–in den darauf folgenden
+24 Jahren
+jeweils 1,25 Prozent,
+b)
+auf Grund eines nach dem 31. Dezember 1995 und vor dem 1. Januar 2004 gestellten Bauantrags hergestellt oder auf Grund eines nach dem 31. Dezember 1995 und vor dem 1. Januar 2004 rechtswirksam abgeschlossenen obligatorischen Vertrags angeschafft worden sind,
+–im Jahr der Fertigstellung
+und in den folgenden
+7 Jahrenjeweils 5 Prozent,
+–in den darauf folgenden
+6 Jahrenjeweils 2,5 Prozent,
+–in den darauf folgenden
+36 Jahrenjeweils 1,25 Prozent,
+c)
+auf Grund eines nach dem 31. Dezember 2003 und vor dem 1. Januar 2006 gestellten Bauantrags hergestellt oder auf Grund eines nach dem 31. Dezember 2003 und vor dem 1. Januar 2006 rechtswirksam abgeschlossenen obligatorischen Vertrags angeschafft worden sind,
+–im Jahr der Fertigstellung und
+in den folgenden 9 Jahren
+jeweils 4 Prozent,
+–in den darauf folgenden
+8 Jahren
+jeweils 2,5 Prozent,
+–in den darauf folgenden
+32 Jahren
+jeweils 1,25 Prozent,
+der Anschaffungs- oder Herstellungskosten. 2Im Fall der Anschaffung kann Satz 1 nur angewendet werden, wenn der Hersteller für das veräußerte Gebäude weder Absetzungen für Abnutzung nach Satz 1 vorgenommen noch erhöhte Absetzungen oder Sonderabschreibungen in Anspruch genommen hat. 3Absatz 1 Satz 4 gilt nicht.
+(5a) 1Bei Gebäuden, die in einem Mitgliedstaat der Europäischen Union oder einem anderen Staat belegen sind, auf den das Abkommen über den Europäischen Wirtschaftsraum (EWR-Abkommen) angewendet wird, soweit sie Wohnzwecken dienen und vom Steuerpflichtigen hergestellt oder bis zum Ende des Jahres der Fertigstellung angeschafft worden sind, kann statt der Absetzung für Abnutzung in gleichen Jahresbeträgen nach Absatz 4 Nummer 2 Buchstabe a die Absetzung für Abnutzung in fallenden Jahresbeträgen erfolgen, wenn mit der Herstellung nach dem 30. September 2023 und vor dem 1. Oktober 2029 begonnen wurde oder die Anschaffung auf Grund eines nach dem 30. September 2023 und vor dem 1. Oktober 2029 rechtswirksam abgeschlossenen obligatorischen Vertrags erfolgt. 2Als Beginn der Herstellung gilt das Datum in der nach den jeweiligen landesrechtlichen Vorschriften einzureichenden Baubeginnsanzeige. 3Sollten landesrechtlich im Einzelfall keine Baubeginnsanzeigen vorgeschrieben sein, hat der Steuerpflichtige zu erklären, dass er den Baubeginn gegenüber der zuständigen Baubehörde freiwillig angezeigt hat. 4Die Absetzung für Abnutzung in fallenden Jahresbeträgen kann nach einem unveränderlichen Prozentsatz in Höhe von 5 Prozent vom jeweiligen Buchwert (Restwert) vorgenommen werden. 5Absatz 1 Satz 4 gilt entsprechend. 6Bei Gebäuden, bei denen die Absetzung für Abnutzung in fallenden Jahresbeträgen bemessen wird, sind Absetzungen für außergewöhnliche technische oder wirtschaftliche Abnutzung nicht zulässig. 7Der Übergang von der Absetzung für Abnutzung in fallenden Jahresbeträgen zur Absetzung für Abnutzung in gleichen Jahresbeträgen ist zulässig. 8Die weitere Absetzung für Abnutzung bemisst sich nach dem Übergang zur Absetzung für Abnutzung im Sinne des Absatzes 4 vom Restwert und dem nach Absatz 4 unter Berücksichtigung der Restnutzungsdauer maßgebenden Prozentsatz.
+(5b) Die Absätze 4 bis 5a sind auf Gebäudeteile, die selbständige unbewegliche Wirtschaftsgüter sind, sowie auf Eigentumswohnungen und auf im Teileigentum stehende Räume entsprechend anzuwenden.
+(6) Bei Bergbauunternehmen, Steinbrüchen und anderen Betrieben, die einen Verbrauch der Substanz mit sich bringen, ist Absatz 1 entsprechend anzuwenden; dabei sind Absetzungen nach Maßgabe des Substanzverzehrs zulässig (Absetzung für Substanzverringerung).
+Fußnote
+(+++ § 7: Zur Anwendung vgl. § 52 +++)
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

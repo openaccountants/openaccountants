@@ -1,0 +1,6 @@
+{
+  "scope": "Added filename-based statute/article cache locators to each Guide map; no new source reading or acquisition",
+  "guides": 28,
+  "guides_with_artifact_locators": 27,
+  "warnings": "Potential reuse candidates only; official law body identity/read intervals are not inferred from filenames. Original builder captures initial inventory, not this later additive enrichment."
+}

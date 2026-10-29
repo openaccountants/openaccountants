@@ -1,0 +1,2274 @@
+[
+  {
+    "id": "001",
+    "prior_row_id": 1,
+    "prior_native_LF": [
+      3,
+      3
+    ],
+    "native_LF": [
+      3,
+      3
+    ],
+    "section": "Scope/metadata",
+    "wording": "description: \"German VAT for tax year 2026, centred on the monthly or quarterly advance return (Umsatzsteuer-Voranmeldung, form USt 1 A) under standard taxation. Covers the 19% and 7% rates, including the 7% rate on restaurant and catering services (drinks excluded) from 1 January 2026; the small business limits of § 19 UStG (EUR 25,000 and EUR 100,000); monthly or quarterly filing (EUR 9,000 and EUR 2,000), the 10th-day deadline, the one-month extension and the 1/11 special prepayment; the annual return deadline; reverse charge under § 13b; the recapitulative statement; e-invoices (receiving since 2025, issuing by 2027 or 2028); late filing and late payment surcharges and interest; and the 2026 box numbers. Trigger on: Umsatzsteuer-Voranmeldung, UStVA, Vorsteuer, Kennzahl, Dauerfristverlängerung, Zusammenfassende Meldung, E-Rechnung, Säumniszuschlag, German VAT return. Out of scope: the annual return in detail, § 19, § 20 cash basis, partial exemption and OSS (de-vat-annual-and-special-schemes), e-invoice formats (germany-einvoice), income tax (de-income-tax).\"",
+    "source_quote_ids": [
+      "OLD.VAT.filing",
+      "OLD.VAT.rates",
+      "OLD.VAT.KU",
+      "R31.late-filing-exclusion"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "002",
+    "prior_row_id": 2,
+    "prior_native_LF": [
+      19,
+      19
+    ],
+    "native_LF": [
+      19,
+      19
+    ],
+    "section": "Scope/metadata",
+    "wording": "This skill explains German VAT (Umsatzsteuer) for 2026 and how to fill in the advance return (Umsatzsteuer-Voranmeldung, form USt 1 A) for a business on standard taxation. It links to sibling skills rather than repeating them:",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "003",
+    "prior_row_id": 3,
+    "prior_native_LF": [
+      21,
+      21
+    ],
+    "native_LF": [
+      21,
+      21
+    ],
+    "section": "Scope/metadata",
+    "wording": "- [de-vat-annual-and-special-schemes](de-vat-annual-and-special-schemes.md): the annual return (form USt 2 A) and how it reconciles to the advance returns, the small business scheme in depth, cash accounting under § 20 UStG, partial exemption, § 15a corrections, the one-stop shop, fines.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "004",
+    "prior_row_id": 4,
+    "prior_native_LF": [
+      22,
+      22
+    ],
+    "native_LF": [
+      22,
+      22
+    ],
+    "section": "Scope/metadata",
+    "wording": "- [germany-einvoice](germany-einvoice.md): XRechnung, ZUGFeRD, Peppol and archiving.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "005",
+    "prior_row_id": 5,
+    "prior_native_LF": [
+      23,
+      23
+    ],
+    "native_LF": [
+      23,
+      23
+    ],
+    "section": "Scope/metadata",
+    "wording": "- [de-income-tax](de-income-tax.md) and [de-einkommensteuer-freelancer](de-einkommensteuer-freelancer.md): income tax.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "006",
+    "prior_row_id": 6,
+    "prior_native_LF": [
+      24,
+      24
+    ],
+    "native_LF": [
+      24,
+      24
+    ],
+    "section": "Scope/metadata",
+    "wording": "- `vat-workflow-base` (the workflow for preparing any VAT return) and `eu-vat-directive` (EU rules), when working a bank statement into a return.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "007",
+    "prior_row_id": 7,
+    "prior_native_LF": [
+      28,
+      28
+    ],
+    "native_LF": [
+      28,
+      28
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Every business (Unternehmer) making taxable supplies in Germany** charges VAT and files advance returns, unless it is a small business under § 19 UStG or the tax office has released it (see \"Deadlines and filing\"). A business is anyone who carries on a commercial or professional activity independently: sole traders, freelancers, partnerships, GmbHs.",
+    "source_quote_ids": [
+      "OLD.VAT.business",
+      "OLD.VAT.taxed",
+      "OLD.VAT.filing",
+      "OLD.VAT.KU"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "008",
+    "prior_row_id": 8,
+    "prior_native_LF": [
+      29,
+      29
+    ],
+    "native_LF": [
+      29,
+      29
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Small businesses (Kleinunternehmer).** A business based in Germany is exempt if its total turnover was not more than EUR 25,000 in the previous calendar year and does not exceed EUR 100,000 in the current year (§ 19(1) UStG). It charges no VAT, claims no input VAT, and the filing duties of § 18(1) to (4) UStG do not apply to it. It can waive the scheme; the waiver binds it for at least five calendar years (§ 19(3) UStG). The start-up year, the receipt that crosses the limit and the EU-wide scheme are in de-vat-annual-and-special-schemes.",
+    "source_quote_ids": [
+      "OLD.VAT.KU",
+      "OLD.VAT.inputlimits"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "009",
+    "prior_row_id": 9,
+    "prior_native_LF": [
+      30,
+      30
+    ],
+    "native_LF": [
+      30,
+      30
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Businesses established abroad** that make taxable supplies in Germany must register and file here unless the customer owes the tax under the reverse charge (§ 13b UStG) or the supplies go through the one-stop shop. See \"Cross-border points\".",
+    "source_quote_ids": [
+      "OLD.VAT.RC",
+      "OLD.VAT.filing"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "010",
+    "prior_row_id": 10,
+    "prior_native_LF": [
+      31,
+      31
+    ],
+    "native_LF": [
+      31,
+      31
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Customers who owe the tax.** A business (wherever it is established) or a legal person that receives a reverse-charge supply owes the VAT on it (§ 13b(5) UStG) and must file even if it makes no taxable supplies of its own (§ 18(4a) UStG).",
+    "source_quote_ids": [
+      "OLD.VAT.RC",
+      "OLD.VAT.filing"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "011",
+    "prior_row_id": 11,
+    "prior_native_LF": [
+      32,
+      32
+    ],
+    "native_LF": [
+      32,
+      32
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Out of scope here:** VAT groups (Organschaft), the margin schemes (§§ 25, 25a UStG), the flat rates for farmers and foresters (§ 24 UStG), and travel agents. Refer these.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "012",
+    "prior_row_id": 12,
+    "prior_native_LF": [
+      38,
+      38
+    ],
+    "native_LF": [
+      38,
+      38
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Standard rate | 19% | 2026 | § 12(1) UStG, https://www.gesetze-im-internet.de/ustg_1980/__12.html |",
+    "source_quote_ids": [
+      "OLD.VAT.rates"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "013",
+    "prior_row_id": 13,
+    "prior_native_LF": [
+      39,
+      39
+    ],
+    "native_LF": [
+      39,
+      39
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Reduced rate (Annex 2 goods, books, water, hotel rooms, local transport and the other § 12(2) items) | 7% | 2026 | § 12(2) UStG, https://www.gesetze-im-internet.de/ustg_1980/__12.html |",
+    "source_quote_ids": [
+      "OLD.VAT.rates",
+      "OLD.VAT.reducedservices"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "014",
+    "prior_row_id": 14,
+    "prior_native_LF": [
+      40,
+      40
+    ],
+    "native_LF": [
+      40,
+      40
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Restaurant and catering services, except the supply of drinks | 7% from 1 January 2026 | 2026 | § 12(2) no. 15 UStG, inserted by Art. 4 no. 2 of the Steueränderungsgesetz 2025 of 22 December 2025 (BGBl. 2025 I Nr. 363), in force 1 January 2026 (Art. 12(2)), https://www.recht.bund.de/bgbl/1/2025/363/VO.html ; BMF letter of 22 December 2025, https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-12-22-verpflegungsdienstleistungen.pdf?__blob=publicationFile&v=5 |",
+    "source_quote_ids": [
+      "OLD.VAT.restaurant-act",
+      "OLD.VAT.restaurant-date",
+      "OLD.VAT.reducedservices"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "015",
+    "prior_row_id": 15,
+    "prior_native_LF": [
+      41,
+      41
+    ],
+    "native_LF": [
+      41,
+      41
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Combined food and drinks price (buffet, all-inclusive): drinks share the tax office accepts | 30% of the package price | 2026 | UStAE 10.1(12), BMF letter of 22 December 2025 (same URL) |",
+    "source_quote_ids": [
+      "OLD.VAT.package30"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "016",
+    "prior_row_id": 16,
+    "prior_native_LF": [
+      42,
+      42
+    ],
+    "native_LF": [
+      42,
+      42
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Qualifying solar modules/components/storage supplied to the PV operator; qualifying acquisition, import or installation under § 12(3) | 0% | 2026 | § 12(3) UStG, https://www.gesetze-im-internet.de/ustg_1980/__12.html |",
+    "source_quote_ids": [
+      "OLD.VAT.solar",
+      "R27.solar"
+    ],
+    "disposition": "R26–31 bounded operative condition successor"
+  },
+  {
+    "id": "017",
+    "prior_row_id": 17,
+    "prior_native_LF": [
+      43,
+      43
+    ],
+    "native_LF": [
+      43,
+      43
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Solar: conditions treated as met where the registered gross output is not more than | 30 kilowatts peak | 2026 | § 12(3) no. 1 sentence 2 UStG, https://www.gesetze-im-internet.de/ustg_1980/__12.html |",
+    "source_quote_ids": [
+      "OLD.VAT.solar"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "018",
+    "prior_row_id": 18,
+    "prior_native_LF": [
+      44,
+      44
+    ],
+    "native_LF": [
+      44,
+      44
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Farmers' and foresters' average rates (§ 24, out of scope): forestry products other than sawmill products / sawmill products and drinks not in Annex 2 / all other supplies under the scheme | 5.5% / 19% / 7.8% | 2026 | § 24(1) UStG, https://www.gesetze-im-internet.de/ustg_1980/__24.html |",
+    "source_quote_ids": [
+      "OLD.VAT.farm"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "019",
+    "prior_row_id": 19,
+    "prior_native_LF": [
+      45,
+      45
+    ],
+    "native_LF": [
+      45,
+      45
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Small business: total turnover of the previous year, not exceeded | EUR 25,000 | 2026 (2025 turnover) | § 19(1) UStG, https://www.gesetze-im-internet.de/ustg_1980/__19.html |",
+    "source_quote_ids": [
+      "OLD.VAT.KU"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "020",
+    "prior_row_id": 20,
+    "prior_native_LF": [
+      46,
+      46
+    ],
+    "native_LF": [
+      46,
+      46
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Small business: total turnover of the current year, not exceeded | EUR 100,000 | 2026 | § 19(1) UStG, https://www.gesetze-im-internet.de/ustg_1980/__19.html |",
+    "source_quote_ids": [
+      "OLD.VAT.KU"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "021",
+    "prior_row_id": 21,
+    "prior_native_LF": [
+      47,
+      47
+    ],
+    "native_LF": [
+      47,
+      47
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Monthly advance returns if the previous year's VAT was more than | EUR 9,000 | 2026 | § 18(2) UStG, https://www.gesetze-im-internet.de/ustg_1980/__18.html |",
+    "source_quote_ids": [
+      "OLD.VAT.filing"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "022",
+    "prior_row_id": 22,
+    "prior_native_LF": [
+      48,
+      48
+    ],
+    "native_LF": [
+      48,
+      48
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Tax office may release from advance returns if the previous year's VAT was not more than | EUR 2,000 | 2026 | § 18(2) UStG, https://www.gesetze-im-internet.de/ustg_1980/__18.html |",
+    "source_quote_ids": [
+      "OLD.VAT.filing"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "023",
+    "prior_row_id": 23,
+    "prior_native_LF": [
+      49,
+      49
+    ],
+    "native_LF": [
+      49,
+      49
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Monthly filing may be chosen if the previous year ended with a surplus of more than | EUR 9,000 | 2026 | § 18(2a) UStG, https://www.gesetze-im-internet.de/ustg_1980/__18.html |",
+    "source_quote_ids": [
+      "OLD.VAT.filing"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "024",
+    "prior_row_id": 24,
+    "prior_native_LF": [
+      50,
+      50
+    ],
+    "native_LF": [
+      50,
+      50
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Special prepayment for monthly filers with the one-month extension | 1/11 of the previous year's advance payments | 2026 | § 47(1) UStDV, https://www.gesetze-im-internet.de/ustdv_1980/__47.html |",
+    "source_quote_ids": [
+      "OLD.VAT.prepay"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "025",
+    "prior_row_id": 25,
+    "prior_native_LF": [
+      51,
+      51
+    ],
+    "native_LF": [
+      51,
+      51
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Reverse charge on mobile phones, tablets, games consoles, chips and Annex 4 metals: fees in one transaction at least | EUR 5,000 | 2026 | § 13b(2) nos. 10 and 11 UStG, https://www.gesetze-im-internet.de/ustg_1980/__13b.html |",
+    "source_quote_ids": [
+      "OLD.VAT.RC"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "026",
+    "prior_row_id": 26,
+    "prior_native_LF": [
+      52,
+      52
+    ],
+    "native_LF": [
+      52,
+      52
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Recapitulative statement may be quarterly while intra-EU supplies of goods stay at or below this in the current and each of the four previous quarters | EUR 50,000 | 2026 | § 18a(1) UStG, https://www.gesetze-im-internet.de/ustg_1980/__18a.html |",
+    "source_quote_ids": [
+      "OLD.VAT.ZM"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "027",
+    "prior_row_id": 27,
+    "prior_native_LF": [
+      53,
+      53
+    ],
+    "native_LF": [
+      53,
+      53
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Distance sales and e-services to EU consumers, EU-wide, where the supplier is established only in Germany: limit for German VAT | EUR 10,000 (previous and current year) | 2026 | § 3c(4) UStG, https://www.gesetze-im-internet.de/ustg_1980/__3c.html |",
+    "source_quote_ids": [
+      "OLD.VAT.distance"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "028",
+    "prior_row_id": 28,
+    "prior_native_LF": [
+      54,
+      54
+    ],
+    "native_LF": [
+      54,
+      54
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Small-amount invoice (short details allowed; not for distance sales, intra-EU supplies or reverse-charge supplies) | Gross total up to EUR 250 | 2026 | § 33 UStDV, https://www.gesetze-im-internet.de/ustdv_1980/__33.html |",
+    "source_quote_ids": [
+      "OLD.VAT.smallinvoice"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "029",
+    "prior_row_id": 29,
+    "prior_native_LF": [
+      55,
+      55
+    ],
+    "native_LF": [
+      55,
+      55
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Recapitulative statement may be yearly (business released from advance returns, no new vehicles): all supplies in the previous year, and expected in the current year, not more than | EUR 200,000 | 2026 | § 18a(9) UStG, https://www.gesetze-im-internet.de/ustg_1980/__18a.html |",
+    "source_quote_ids": [
+      "OLD.VAT.ZMannual"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "030",
+    "prior_row_id": 30,
+    "prior_native_LF": [
+      56,
+      56
+    ],
+    "native_LF": [
+      56,
+      56
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| ... and intra-EU supplies of goods plus § 3a(2) services to EU businesses, previous and current year, not more than | EUR 15,000 | 2026 | § 18a(9) UStG, https://www.gesetze-im-internet.de/ustg_1980/__18a.html |",
+    "source_quote_ids": [
+      "OLD.VAT.ZMannual"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "031",
+    "prior_row_id": 31,
+    "prior_native_LF": [
+      57,
+      57
+    ],
+    "native_LF": [
+      57,
+      57
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Gifts to a non-employee: input VAT blocked on all of them once the cost of everything given to one recipient in the year exceeds | EUR 50 | 2026 | § 15(1a) UStG with § 4(5) sentence 1 no. 1 EStG, https://www.gesetze-im-internet.de/estg/__4.html |",
+    "source_quote_ids": [
+      "OLD.VAT.gifts-entertainment",
+      "OLD.VAT.input"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "032",
+    "prior_row_id": 32,
+    "prior_native_LF": [
+      58,
+      58
+    ],
+    "native_LF": [
+      58,
+      58
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Business entertainment: share of reasonable, evidenced cost deductible for INCOME TAX (does not cut the VAT claim) | 70% | 2026 | § 4(5) sentence 1 no. 2 EStG; § 15(1a) sentence 2 UStG, https://www.gesetze-im-internet.de/ustg_1980/__15.html |",
+    "source_quote_ids": [
+      "OLD.VAT.gifts-entertainment",
+      "OLD.VAT.input"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "033",
+    "prior_row_id": 33,
+    "prior_native_LF": [
+      59,
+      59
+    ],
+    "native_LF": [
+      59,
+      59
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| E-invoice relief for supplies made in 2027: issuer's previous-year total turnover not more than | EUR 800,000 | Supplies in 2027 | § 27(38) no. 2 UStG, https://www.gesetze-im-internet.de/ustg_1980/__27.html |",
+    "source_quote_ids": [
+      "OLD.VAT.einvoicetransition"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "034",
+    "prior_row_id": 34,
+    "prior_native_LF": [
+      60,
+      60
+    ],
+    "native_LF": [
+      60,
+      60
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Late filing surcharge, annual return | 0.25% of the tax less prepayments per started month, at least EUR 25 per month, at most EUR 25,000 | 2026 | § 152(5) and (10) AO, https://www.gesetze-im-internet.de/ao_1977/__152.html |",
+    "source_quote_ids": [
+      "OLD.VAT.annualpenalty",
+      "OLD.VAT.penaltycap"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "035",
+    "prior_row_id": 35,
+    "prior_native_LF": [
+      61,
+      61
+    ],
+    "native_LF": [
+      61,
+      61
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Late payment surcharge | 1% per started month of the overdue tax, rounded down to a multiple of EUR 50 | 2026 | § 240(1) AO, https://www.gesetze-im-internet.de/ao_1977/__240.html |",
+    "source_quote_ids": [
+      "OLD.AO240.surcharge"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "036",
+    "prior_row_id": 36,
+    "prior_native_LF": [
+      62,
+      62
+    ],
+    "native_LF": [
+      62,
+      62
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Grace period before the late payment surcharge (not for cash or cheque) | 3 days | 2026 | § 240(3) AO, https://www.gesetze-im-internet.de/ao_1977/__240.html |",
+    "source_quote_ids": [
+      "OLD.AO240.grace",
+      "OLD.VAT.paymentdate"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "037",
+    "prior_row_id": 37,
+    "prior_native_LF": [
+      63,
+      63
+    ],
+    "native_LF": [
+      63,
+      63
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Interest on an assessed difference (annual assessment) | 0.15% per full month (1.8% a year) | 2026 | § 233a AO, https://www.gesetze-im-internet.de/ao_1977/__233a.html ; § 238(1a) AO, https://www.gesetze-im-internet.de/ao_1977/__238.html |",
+    "source_quote_ids": [
+      "OLD.AO233a.interest",
+      "OLD.AO238.rate"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "038",
+    "prior_row_id": 38,
+    "prior_native_LF": [
+      67,
+      69
+    ],
+    "native_LF": [
+      67,
+      69
+    ],
+    "section": "The taxable base",
+    "wording": "**What is taxed.** Supplies of goods and services made in Germany for consideration by a business, intra-EU acquisitions of goods, imports, and private use of business assets (§ 3(1b) and (9a) UStG). The base is everything the customer pays, without the VAT itself.\n\n**Foreign currency.** Convert the tax base and input VAT to euros using the BMF average rate for the month of the supply, or the month an advance payment is received before supply. A business permitted to use § 20 cash accounting uses the receipt month. A daily rate evidenced by a bank statement or exchange-rate list can be used only with the tax office's permission (§ 16(6) UStG). This is the standard-return route; the separate OSS exchange-rate rule is outside this method.",
+    "source_quote_ids": [
+      "OLD.VAT.taxed",
+      "OLD.VAT.goods-self",
+      "OLD.VAT.use-self",
+      "OLD.VAT.netbase",
+      "OLD.VAT.currency"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "039",
+    "prior_row_id": 39,
+    "prior_native_LF": [
+      71,
+      71
+    ],
+    "native_LF": [
+      71,
+      71
+    ],
+    "section": "The taxable base",
+    "wording": "**Place of supply first, then the rate.** For a service acquired by a business for its business, § 3a(2) generally places it where the recipient operates its business; if supplied to a receiving permanent establishment, use that establishment instead. This is subject to § 3a(3)–(8), §§ 3b and 3e. Ordinary selectors include property-related services at the property (§ 3a(3) no. 1); on-site catering where performed, except the separate on-board EU passenger-transport branch (no. 3a(a)); short-term hire of transport where it is actually made available, with at most 90 continuous days for watercraft and 30 for other transport (no. 2); and physical event admission at the event, while virtual participation follows § 3a(2) (no. 5). Thus a service concerning German property is not placed in France merely because the customer has French headquarters. For an ordinary consultancy actually within § 3a(2), a German consultant's service to a French company is outside German VAT; a foreign supplier's service to a German receiving business is placed in Germany, then the § 13b supplier/transaction gates determine whether the customer owes the tax. Establish the actual service and receiving establishment before using the general Kz 21 or reverse-charge route.",
+    "source_quote_ids": [
+      "OLD.VAT.place",
+      "OLD.VAT.RC",
+      "R26.place"
+    ],
+    "disposition": "R26–31 bounded operative condition successor"
+  },
+  {
+    "id": "040",
+    "prior_row_id": 40,
+    "prior_native_LF": [
+      73,
+      73
+    ],
+    "native_LF": [
+      73,
+      73
+    ],
+    "section": "The taxable base",
+    "wording": "**Restaurant meals from 2026.** Food served in a restaurant or by a caterer is at 7% from 1 January 2026. Drinks stay at 19%. A bill must split the two. Where one price covers food and drinks (a buffet or all-inclusive deal), the tax office accepts 30% of the package price as the drinks share (UStAE 10.1(12)). For services in the night of 31 December 2025 to 1 January 2026, applying 19% is not challenged (BMF letter of 22 December 2025, no. 3).",
+    "source_quote_ids": [
+      "OLD.VAT.reducedservices",
+      "OLD.VAT.restaurant-act",
+      "OLD.VAT.restaurant-date",
+      "OLD.VAT.package30",
+      "OLD.VAT.NewYear"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "041",
+    "prior_row_id": 41,
+    "prior_native_LF": [
+      75,
+      75
+    ],
+    "native_LF": [
+      75,
+      75
+    ],
+    "section": "The taxable base",
+    "wording": "**What the 7% rate covers, beyond goods.** § 12(2) UStG with Annex 2: food and the other Annex 2 goods, books and newspapers and their electronic editions, qualifying water under Annex 2 no. 34 (excluding drinking water, including spring/table water, marketed in consumer-ready prepackages, medicinal water and steam), cut flowers and plants, dental technicians' work, admission to theatres, concerts, museums and zoos, and short-term letting of rooms and camping pitches. Services sold with a room that do not directly serve the letting (parking, internet) are not at the room rate (§ 12(2) no. 11 sentence 2). From 1 January 2026 breakfast food is a catering service at 7% under § 12(2) no. 15, with drinks at 19%. Where one package price covers the room and these services, the tax office accepts 15% of the package price as their share (UStAE 12.16(12) sentence 2, as amended by the BMF letter of 22 December 2025). Passenger transport is at 7% by rail without a distance limit, and by scheduled bus, taxi, cable car and ferry only within one municipality or where the journey is not more than 50 kilometres (§ 12(2) no. 10 UStG).",
+    "source_quote_ids": [
+      "OLD.VAT.reducedservices",
+      "OLD.VAT.Annex-food",
+      "OLD.VAT.Annex-flowers",
+      "OLD.VAT.Annex-water",
+      "OLD.VAT.Annex-books",
+      "OLD.VAT.package15",
+      "R27.water"
+    ],
+    "disposition": "R26–31 bounded operative condition successor"
+  },
+  {
+    "id": "042",
+    "prior_row_id": 42,
+    "prior_native_LF": [
+      77,
+      77
+    ],
+    "native_LF": [
+      77,
+      77
+    ],
+    "section": "The taxable base",
+    "wording": "**Solar at 0%.** The 0% rate is a rate, not an exemption, so the supplier keeps full input deduction. Under § 12(3) no. 1, qualifying modules, essential components and electricity-storage equipment must be supplied to the PV operator, with the statutory installation conditions for homes or public-benefit buildings. The registered installed gross capacity of not more than 30 kWp supplies the statutory presumption for the installation conditions; it does not remove the operator-recipient requirement or automatically zero-rate a sale to an independent reseller. Intra-EU acquisition and import under nos. 2 and 3 require the qualifying no. 1 goods/conditions; installation under no. 4 requires that the installed components' supply meet no. 1. Qualifying acquisitions at 0% go in Kz 90.",
+    "source_quote_ids": [
+      "OLD.VAT.solar",
+      "OLD.VAT.input",
+      "OLD.VAT.inputlimits",
+      "OLD.VAT.form-output2",
+      "R27.solar"
+    ],
+    "disposition": "R26–31 bounded operative condition successor"
+  },
+  {
+    "id": "043",
+    "prior_row_id": 43,
+    "prior_native_LF": [
+      79,
+      79
+    ],
+    "native_LF": [
+      79,
+      79
+    ],
+    "section": "The taxable base",
+    "wording": "**Private use of business assets.** Withdrawal of business goods under § 3(1b) UStG is a deemed supply only where the goods or their components entitled the business to full or partial input deduction. Private use of an allocated business asset under § 3(9a) no. 1 UStG requires that the asset entitled the business to full or partial input deduction. For asset use, the exclusions in § 3(9a) no. 1 for § 15(1b) and § 15a(6a) also apply. Other free services under § 3(9a) no. 2 have their own rule. Report a taxable deemed supply at the applicable rate, normally in Kz 81. For a goods withdrawal the base is the purchase price of the item or an equivalent item, plus incidental costs, or otherwise cost, at the withdrawal date (§ 10(4) no. 1). For asset use it is the expenses that entitled the business to input deduction; acquisition or production costs of at least EUR 500 are spread over the applicable § 15a correction period (§ 10(4) no. 2), rather than using the income-tax list-price figure. A motor vehicle is not blocked for VAT: allocation and business use decide the deduction, and below 10% business use there is none.",
+    "source_quote_ids": [
+      "OLD.VAT.goods-self",
+      "OLD.VAT.use-self",
+      "OLD.VAT.selfbase",
+      "OLD.VAT.input"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "044",
+    "prior_row_id": 44,
+    "prior_native_LF": [
+      81,
+      81
+    ],
+    "native_LF": [
+      81,
+      81
+    ],
+    "section": "The taxable base",
+    "wording": "**Input VAT (Vorsteuer).** A business deducts VAT charged by other businesses on an invoice that meets § 14 UStG, VAT on intra-EU acquisitions, import VAT that has arisen, and VAT it owes under the reverse charge (§ 15(1) UStG). No deduction for:",
+    "source_quote_ids": [
+      "OLD.VAT.input",
+      "OLD.VAT.invoicedetails"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "045",
+    "prior_row_id": 45,
+    "prior_native_LF": [
+      82,
+      82
+    ],
+    "native_LF": [
+      82,
+      82
+    ],
+    "section": "The taxable base",
+    "wording": "- costs linked to exempt supplies without input deduction, such as residential letting, insurance or financial services (§ 15(2) UStG). Mixed use needs apportionment: see de-vat-annual-and-special-schemes;",
+    "source_quote_ids": [
+      "OLD.VAT.inputlimits",
+      "OLD.VAT.exempt-rent",
+      "OLD.VAT.exempt-finance",
+      "OLD.VAT.exempt-insurance"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "046",
+    "prior_row_id": 46,
+    "prior_native_LF": [
+      83,
+      83
+    ],
+    "native_LF": [
+      83,
+      83
+    ],
+    "section": "The taxable base",
+    "wording": "- an item used less than 10% for business (§ 15(1) sentence 2 UStG);",
+    "source_quote_ids": [
+      "OLD.VAT.input"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "047",
+    "prior_row_id": 47,
+    "prior_native_LF": [
+      84,
+      84
+    ],
+    "native_LF": [
+      84,
+      84
+    ],
+    "section": "The taxable base",
+    "wording": "- costs blocked by § 15(1a) UStG: gifts to one non-employee recipient costing more than EUR 50 in total in the year (then all of them, not only the excess), hunting, yachts, private living costs. Reasonable, evidenced business entertainment is NOT blocked for VAT (§ 15(1a) sentence 2 UStG): the 70% income-tax cut in § 4(5) sentence 1 no. 2 EStG does not reduce the VAT claim. Evidence means a written record of place, date, guests, reason and amount; in a restaurant, the reason and guests with the restaurant's invoice attached (§ 4(5) sentence 1 no. 2 sentences 2 and 3 EStG). From 2026 the food and drinks on the bill carry different rates;",
+    "source_quote_ids": [
+      "OLD.VAT.input",
+      "OLD.VAT.gifts-entertainment",
+      "OLD.VAT.reducedservices"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "048",
+    "prior_row_id": 48,
+    "prior_native_LF": [
+      85,
+      85
+    ],
+    "native_LF": [
+      85,
+      85
+    ],
+    "section": "The taxable base",
+    "wording": "- foreign VAT wrongly charged by a supplier in another member state: no German input deduction; only VAT owed under the German act is deductible (2026 form instructions, lines 38 to 42). Ask the supplier to correct the invoice. The instructions point to the BZSt for information on foreign input-tax refunds; they do not establish that wrongly charged VAT is recoverable through that route. Establish whether foreign VAT was legally due and the actual foreign refund conditions before treating it as eligible foreign input tax. Determine cost or receivable treatment from actual recoverability, rather than automatically booking the disputed VAT as a cost or promising a refund;",
+    "source_quote_ids": [
+      "OLD.VAT.formforeign",
+      "OLD.VAT.input",
+      "R30.foreign-input"
+    ],
+    "disposition": "R26–31 bounded operative condition successor"
+  },
+  {
+    "id": "049",
+    "prior_row_id": 49,
+    "prior_native_LF": [
+      86,
+      86
+    ],
+    "native_LF": [
+      86,
+      86
+    ],
+    "section": "The taxable base",
+    "wording": "- a home office in a rented home: residential rent is exempt, so it carries no VAT to deduct;",
+    "source_quote_ids": [
+      "OLD.VAT.exempt-rent"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "050",
+    "prior_row_id": 50,
+    "prior_native_LF": [
+      87,
+      87
+    ],
+    "native_LF": [
+      87,
+      87
+    ],
+    "section": "The taxable base",
+    "wording": "- an invoice that is missing required details.",
+    "source_quote_ids": [
+      "OLD.VAT.input",
+      "OLD.VAT.invoicedetails"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "051",
+    "prior_row_id": 51,
+    "prior_native_LF": [
+      89,
+      89
+    ],
+    "native_LF": [
+      89,
+      89
+    ],
+    "section": "The taxable base",
+    "wording": "**The 2026 boxes (Kennzahlen, Kz) on form USt 1 A.** Tax bases go in whole euros; tax amounts include cents. Source: BMF letter of 29 December 2025 with the 2026 form and instructions.",
+    "source_quote_ids": [
+      "OLD.VAT.formamounts"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "052",
+    "prior_row_id": 52,
+    "prior_native_LF": [
+      93,
+      93
+    ],
+    "native_LF": [
+      93,
+      93
+    ],
+    "section": "The taxable base",
+    "wording": "| 13 | 81 | Taxable supplies at 19%, net base |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output1"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "053",
+    "prior_row_id": 53,
+    "prior_native_LF": [
+      94,
+      94
+    ],
+    "native_LF": [
+      94,
+      94
+    ],
+    "section": "The taxable base",
+    "wording": "| 14 | 86 | Taxable supplies at 7%, net base (including restaurant food from 2026) |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output1",
+      "OLD.VAT.reducedservices"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "054",
+    "prior_row_id": 54,
+    "prior_native_LF": [
+      95,
+      95
+    ],
+    "native_LF": [
+      95,
+      95
+    ],
+    "section": "The taxable base",
+    "wording": "| 15 | 87 | Supplies at 0% (solar, § 12(3) UStG) |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output1"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "055",
+    "prior_row_id": 55,
+    "prior_native_LF": [
+      96,
+      96
+    ],
+    "native_LF": [
+      96,
+      96
+    ],
+    "section": "The taxable base",
+    "wording": "| 16 | 35 (base), 36 (tax) | Supplies at other rates, tax entered by hand |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output1"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "056",
+    "prior_row_id": 56,
+    "prior_native_LF": [
+      97,
+      97
+    ],
+    "native_LF": [
+      97,
+      97
+    ],
+    "section": "The taxable base",
+    "wording": "| 20, 21 | 44, 49 | New vehicles to a customer without a VAT ID, and new vehicles supplied outside a business (§ 2a UStG) |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output1",
+      "OLD.VAT.form-output2"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "057",
+    "prior_row_id": 57,
+    "prior_native_LF": [
+      98,
+      98
+    ],
+    "native_LF": [
+      98,
+      98
+    ],
+    "section": "The taxable base",
+    "wording": "| 19 | 41 | Tax-free intra-EU supplies of goods to a customer with a VAT ID |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output1"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "058",
+    "prior_row_id": 58,
+    "prior_native_LF": [
+      99,
+      99
+    ],
+    "native_LF": [
+      99,
+      99
+    ],
+    "section": "The taxable base",
+    "wording": "| 22 | 43 | Other tax-free supplies with input deduction, such as exports |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output2",
+      "OLD.VAT.exempt-exports"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "059",
+    "prior_row_id": 59,
+    "prior_native_LF": [
+      100,
+      100
+    ],
+    "native_LF": [
+      100,
+      100
+    ],
+    "section": "The taxable base",
+    "wording": "| 23 | 48 | Tax-free supplies without input deduction (§ 4 nos. 8 to 29 UStG) and a small business's supplies |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output2",
+      "OLD.VAT.KU"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "060",
+    "prior_row_id": 60,
+    "prior_native_LF": [
+      101,
+      101
+    ],
+    "native_LF": [
+      101,
+      101
+    ],
+    "section": "The taxable base",
+    "wording": "| 24 | 91 | Tax-free intra-EU acquisitions (§§ 4b and 25c UStG) |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output2"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "061",
+    "prior_row_id": 61,
+    "prior_native_LF": [
+      102,
+      102
+    ],
+    "native_LF": [
+      102,
+      102
+    ],
+    "section": "The taxable base",
+    "wording": "| 25, 26 | 89, 93 | Intra-EU acquisitions at 19% and 7%, net base |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output2"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "062",
+    "prior_row_id": 62,
+    "prior_native_LF": [
+      103,
+      103
+    ],
+    "native_LF": [
+      103,
+      103
+    ],
+    "section": "The taxable base",
+    "wording": "| 27 | 90 | Intra-EU acquisitions at 0% (solar, § 12(3) UStG) |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output2"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "063",
+    "prior_row_id": 63,
+    "prior_native_LF": [
+      104,
+      104
+    ],
+    "native_LF": [
+      104,
+      104
+    ],
+    "section": "The taxable base",
+    "wording": "| 30 | 46 (base), 47 (tax) | Reverse charge on § 3a(2) services from a business in another EU state (§ 13b(1) UStG) |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output2",
+      "OLD.VAT.RC"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "064",
+    "prior_row_id": 64,
+    "prior_native_LF": [
+      105,
+      105
+    ],
+    "native_LF": [
+      105,
+      105
+    ],
+    "section": "The taxable base",
+    "wording": "| 31 | 73, 74 | Reverse charge on supplies under the real estate transfer tax act |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output2",
+      "OLD.VAT.RC"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "065",
+    "prior_row_id": 65,
+    "prior_native_LF": [
+      106,
+      106
+    ],
+    "native_LF": [
+      106,
+      106
+    ],
+    "section": "The taxable base",
+    "wording": "| 32 | 84 (base), 85 (tax) | Reverse charge, everything else: services and works supplies from a business established outside Germany that do not belong in line 30 (so non-EU suppliers), and the domestic categories (§ 13b(2) nos. 1, 2 and 4 to 12 UStG) |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output2",
+      "OLD.VAT.RC"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "066",
+    "prior_row_id": 66,
+    "prior_native_LF": [
+      107,
+      107
+    ],
+    "native_LF": [
+      107,
+      107
+    ],
+    "section": "The taxable base",
+    "wording": "| 33 | 42 | Your supplies as first customer in an intra-EU triangular transaction (§ 25b UStG) |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output2"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "067",
+    "prior_row_id": 67,
+    "prior_native_LF": [
+      108,
+      108
+    ],
+    "native_LF": [
+      108,
+      108
+    ],
+    "section": "The taxable base",
+    "wording": "| 34 | 60 | Your own supplies on which the customer owes the tax under § 13b(5) UStG |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output2"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "068",
+    "prior_row_id": 68,
+    "prior_native_LF": [
+      109,
+      109
+    ],
+    "native_LF": [
+      109,
+      109
+    ],
+    "section": "The taxable base",
+    "wording": "| 35 | 21 | Your § 3a(2) services to businesses in other EU states (also go in the recapitulative statement) |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output2",
+      "OLD.VAT.ZM"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "069",
+    "prior_row_id": 69,
+    "prior_native_LF": [
+      110,
+      110
+    ],
+    "native_LF": [
+      110,
+      110
+    ],
+    "section": "The taxable base",
+    "wording": "| 36 | 45 | Other supplies whose place of supply is not in Germany, including your distance sales and telecom, broadcasting and electronic services to consumers in other member states (even when declared through the one-stop shop) |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output2",
+      "OLD.VAT.formforeign"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "070",
+    "prior_row_id": 70,
+    "prior_native_LF": [
+      111,
+      111
+    ],
+    "native_LF": [
+      111,
+      111
+    ],
+    "section": "The taxable base",
+    "wording": "| 38 | 66 | Input VAT from other businesses' invoices |",
+    "source_quote_ids": [
+      "OLD.VAT.form-input"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "071",
+    "prior_row_id": 71,
+    "prior_native_LF": [
+      112,
+      112
+    ],
+    "native_LF": [
+      112,
+      112
+    ],
+    "section": "The taxable base",
+    "wording": "| 39 | 61 | Input VAT on intra-EU acquisitions |",
+    "source_quote_ids": [
+      "OLD.VAT.form-input"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "072",
+    "prior_row_id": 72,
+    "prior_native_LF": [
+      113,
+      113
+    ],
+    "native_LF": [
+      113,
+      113
+    ],
+    "section": "The taxable base",
+    "wording": "| 40 | 62 | Import VAT that has arisen |",
+    "source_quote_ids": [
+      "OLD.VAT.form-input"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "073",
+    "prior_row_id": 73,
+    "prior_native_LF": [
+      114,
+      114
+    ],
+    "native_LF": [
+      114,
+      114
+    ],
+    "section": "The taxable base",
+    "wording": "| 41 | 67 | Input VAT on reverse-charge supplies |",
+    "source_quote_ids": [
+      "OLD.VAT.form-input"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "074",
+    "prior_row_id": 74,
+    "prior_native_LF": [
+      115,
+      115
+    ],
+    "native_LF": [
+      115,
+      115
+    ],
+    "section": "The taxable base",
+    "wording": "| 42, 43 | 63, 59 | Input VAT by general average rates (§ 23a UStG); input VAT under § 15(4a) UStG (new vehicles) |",
+    "source_quote_ids": [
+      "OLD.VAT.form-input",
+      "OLD.VAT.vehicleinput"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "075",
+    "prior_row_id": 75,
+    "prior_native_LF": [
+      116,
+      116
+    ],
+    "native_LF": [
+      116,
+      116
+    ],
+    "section": "The taxable base",
+    "wording": "| 44 | 64 | Input VAT correction under § 15a UStG |",
+    "source_quote_ids": [
+      "OLD.VAT.form-input"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "076",
+    "prior_row_id": 76,
+    "prior_native_LF": [
+      117,
+      117
+    ],
+    "native_LF": [
+      117,
+      117
+    ],
+    "section": "The taxable base",
+    "wording": "| 46 | 65 | Tax from a change of taxation method, and extra tax on taxed prepayments after a rate change |",
+    "source_quote_ids": [
+      "OLD.VAT.form-bottom"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "077",
+    "prior_row_id": 77,
+    "prior_native_LF": [
+      118,
+      118
+    ],
+    "native_LF": [
+      118,
+      118
+    ],
+    "section": "The taxable base",
+    "wording": "| 47 | 69 | Tax shown wrongly on an invoice (§ 14c UStG) |",
+    "source_quote_ids": [
+      "OLD.VAT.form-bottom"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "078",
+    "prior_row_id": 78,
+    "prior_native_LF": [
+      119,
+      119
+    ],
+    "native_LF": [
+      119,
+      119
+    ],
+    "section": "The taxable base",
+    "wording": "| 49 | 39 | Special prepayment credit, normally only in the last return of the year |",
+    "source_quote_ids": [
+      "OLD.VAT.form-bottom",
+      "OLD.VAT.prepayprocedure",
+      "OLD.VAT.formprepay"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "079",
+    "prior_row_id": 79,
+    "prior_native_LF": [
+      120,
+      120
+    ],
+    "native_LF": [
+      120,
+      120
+    ],
+    "section": "The taxable base",
+    "wording": "| 50 | 83 | The amount to pay, or the surplus with a minus sign. Always filled in |",
+    "source_quote_ids": [
+      "OLD.VAT.form-bottom"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "080",
+    "prior_row_id": 80,
+    "prior_native_LF": [
+      122,
+      122
+    ],
+    "native_LF": [
+      122,
+      122
+    ],
+    "section": "The taxable base",
+    "wording": "Supplies taxable in Germany that are declared under the one-stop shop procedures (§§ 18i, 18j, 18k UStG) are not entered in lines 13 to 16 (2026 form instructions).",
+    "source_quote_ids": [
+      "OLD.VAT.OSS-separate"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "081",
+    "prior_row_id": 81,
+    "prior_native_LF": [
+      124,
+      124
+    ],
+    "native_LF": [
+      124,
+      124
+    ],
+    "section": "The taxable base",
+    "wording": "**Corrections and credit notes.** A Gutschrift (self-billing by the buyer, § 14(2) sentence 2 UStG) is an invoice and creates output tax for the supplier. A later change to the price (a discount, a cancellation, a credit note) is corrected in the period in which the change happens, not in the original period, by entering the change in the same box with a minus sign where it reduces the base (§ 17(1) UStG). Only where the fee has become uncollectible (§ 17(2) no. 1 UStG) is the reduction also shown in Kz 50 (line 51), or for input VAT in Kz 37 (line 52) (2026 form USt 1 A).",
+    "source_quote_ids": [
+      "OLD.VAT.invoice",
+      "OLD.VAT.correction",
+      "OLD.VAT.formcorrection",
+      "OLD.VAT.form-bottom"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "082",
+    "prior_row_id": 82,
+    "prior_native_LF": [
+      130,
+      130
+    ],
+    "native_LF": [
+      130,
+      130
+    ],
+    "section": "The taxable base",
+    "wording": "| Bank fees, interest, loans, insurance premiums | Classify the actual transaction, rather than the bank's identity. Qualifying exempt credit/financial and insurance transactions carry no input VAT. Debt collection is excluded from § 4 no. 8(c)'s exemption; securities custody/management is excluded from no. 8(e). For a legally taxed fee service, input deduction follows § 15 and the actual invoice/business-use conditions. Thus an otherwise eligible custody invoice of EUR 100 net plus EUR 19 legally charged VAT can give EUR 19 input; an exempt credit transaction has no such VAT. Other bank/advisory/card fees need their actual classification. |",
+    "source_quote_ids": [
+      "OLD.VAT.exempt-finance",
+      "OLD.VAT.exempt-insurance",
+      "R28.finance"
+    ],
+    "disposition": "R26–31 bounded operative condition successor"
+  },
+  {
+    "id": "083",
+    "prior_row_id": 83,
+    "prior_native_LF": [
+      131,
+      131
+    ],
+    "native_LF": [
+      131,
+      131
+    ],
+    "section": "The taxable base",
+    "wording": "| Tax office, customs duty, chambers (IHK, HWK), broadcasting levy, statutory insurance, payroll and social contributions | Not a supply: leave out. Import VAT on a customs notice goes in Kz 62 |",
+    "source_quote_ids": [
+      "OLD.VAT.taxed",
+      "OLD.VAT.form-input"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "084",
+    "prior_row_id": 84,
+    "prior_native_LF": [
+      132,
+      132
+    ],
+    "native_LF": [
+      132,
+      132
+    ],
+    "section": "The taxable base",
+    "wording": "| German utilities, telecoms, rent of business premises with VAT shown | Input VAT in Kz 66 |",
+    "source_quote_ids": [
+      "OLD.VAT.input",
+      "OLD.VAT.form-input"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "085",
+    "prior_row_id": 85,
+    "prior_native_LF": [
+      133,
+      133
+    ],
+    "native_LF": [
+      133,
+      133
+    ],
+    "section": "The taxable base",
+    "wording": "| Software or advertising billed by an EU entity (e.g. an Irish subsidiary) | Kz 46 and 47, input in Kz 67 |",
+    "source_quote_ids": [
+      "OLD.VAT.RC",
+      "OLD.VAT.form-output2",
+      "OLD.VAT.form-input"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "086",
+    "prior_row_id": 86,
+    "prior_native_LF": [
+      134,
+      134
+    ],
+    "native_LF": [
+      134,
+      134
+    ],
+    "section": "The taxable base",
+    "wording": "| Software or services billed by a non-EU entity | Kz 84 and 85, input in Kz 67 |",
+    "source_quote_ids": [
+      "OLD.VAT.RC",
+      "OLD.VAT.form-output2",
+      "OLD.VAT.form-input"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "087",
+    "prior_row_id": 87,
+    "prior_native_LF": [
+      135,
+      135
+    ],
+    "native_LF": [
+      135,
+      135
+    ],
+    "section": "The taxable base",
+    "wording": "| Goods bought from another EU state and shipped to Germany | Kz 89 or 93, input in Kz 61 |",
+    "source_quote_ids": [
+      "OLD.VAT.form-output2",
+      "OLD.VAT.form-input",
+      "OLD.VAT.input"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "088",
+    "prior_row_id": 88,
+    "prior_native_LF": [
+      136,
+      136
+    ],
+    "native_LF": [
+      136,
+      136
+    ],
+    "section": "The taxable base",
+    "wording": "| Owner's transfers, transfers between own accounts | Leave out |",
+    "source_quote_ids": [
+      "OLD.VAT.taxed"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "089",
+    "prior_row_id": 89,
+    "prior_native_LF": [
+      140,
+      140
+    ],
+    "native_LF": [
+      140,
+      140
+    ],
+    "section": "Deadlines and filing",
+    "wording": "**Advance returns.** Filed electronically through ELSTER (https://www.elster.de) by the 10th day after the end of each period; the payment is due the same day (§ 18(1) UStG). Paper only with the tax office's permission to avoid hardship. A deadline on a Saturday, Sunday or public holiday moves to the next working day (§ 108(3) AO).",
+    "source_quote_ids": [
+      "OLD.VAT.filing",
+      "OLD.AO108.weekend"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "090",
+    "prior_row_id": 90,
+    "prior_native_LF": [
+      143,
+      143
+    ],
+    "native_LF": [
+      143,
+      143
+    ],
+    "section": "Deadlines and filing",
+    "wording": "- Quarterly is the default (§ 18(2) UStG).",
+    "source_quote_ids": [
+      "OLD.VAT.filing"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "091",
+    "prior_row_id": 91,
+    "prior_native_LF": [
+      144,
+      144
+    ],
+    "native_LF": [
+      144,
+      144
+    ],
+    "section": "Deadlines and filing",
+    "wording": "- Monthly if the previous year's VAT was more than EUR 9,000.",
+    "source_quote_ids": [
+      "OLD.VAT.filing"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "092",
+    "prior_row_id": 92,
+    "prior_native_LF": [
+      145,
+      145
+    ],
+    "native_LF": [
+      145,
+      145
+    ],
+    "section": "Deadlines and filing",
+    "wording": "- The tax office may release a business from advance returns if the previous year's VAT was not more than EUR 2,000. The annual return is still due.",
+    "source_quote_ids": [
+      "OLD.VAT.filing"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "093",
+    "prior_row_id": 93,
+    "prior_native_LF": [
+      146,
+      146
+    ],
+    "native_LF": [
+      146,
+      146
+    ],
+    "section": "Deadlines and filing",
+    "wording": "- A business with a surplus of more than EUR 9,000 in the previous year may choose monthly by filing the January return by 10 February; the choice binds for the year (§ 18(2a) UStG).",
+    "source_quote_ids": [
+      "OLD.VAT.filing"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "094",
+    "prior_row_id": 94,
+    "prior_native_LF": [
+      147,
+      147
+    ],
+    "native_LF": [
+      147,
+      147
+    ],
+    "section": "Deadlines and filing",
+    "wording": "- New businesses: for tax years 2021 to 2026, a business that traded for only part of the previous year has that year's tax converted to a full-year figure, and a business starting in the current year uses its expected tax for this year (§ 18(2) last sentence UStG). The general rule of monthly filing in the first two years is set aside for these years. Shelf companies and bought dormant companies file monthly in the current and following year (§ 18(2) sentence 5 UStG).",
+    "source_quote_ids": [
+      "OLD.VAT.filing"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "095",
+    "prior_row_id": 95,
+    "prior_native_LF": [
+      149,
+      149
+    ],
+    "native_LF": [
+      149,
+      149
+    ],
+    "section": "Deadlines and filing",
+    "wording": "**One-month extension (Dauerfristverlängerung).** On application the tax office must extend the filing and payment deadline by one month, unless the tax looks at risk (§ 46 UStDV). Apply on form USt 1 H through ELSTER by the date the first affected return is due (§ 48(1) UStDV). A monthly filer must pay a special prepayment (Sondervorauszahlung) of 1/11 of the previous year's advance payments, by the due date of the first advance return of the year, 10 February (§ 47(1), § 48(2) UStDV). The base is the sum of the previous year's Kz 83 amounts plus the previous year's special prepayment credited in Kz 39 (2026 form instructions, lines 8 and 9). It is credited in Kz 39 of the last return of the year (§ 48(4) UStDV). A quarterly filer pays no special prepayment.",
+    "source_quote_ids": [
+      "OLD.VAT.extension",
+      "OLD.VAT.prepay",
+      "OLD.VAT.prepayprocedure",
+      "OLD.VAT.prepay-example"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "096",
+    "prior_row_id": 96,
+    "prior_native_LF": [
+      151,
+      151
+    ],
+    "native_LF": [
+      151,
+      151
+    ],
+    "section": "Deadlines and filing",
+    "wording": "**Annual return.** Every business on standard taxation files an annual return for the calendar year (§ 18(3) UStG). For 2026 it is due 31 July 2027 (§ 149(2) AO), which is a Saturday, so Monday 2 August 2027 (§ 108(3) AO); if a tax adviser prepares it, by 29 February 2028 (§ 149(3) no. 4 AO). Any balance is due one month after the return is filed (§ 18(4) UStG). Detail: de-vat-annual-and-special-schemes.",
+    "source_quote_ids": [
+      "OLD.VAT.filing",
+      "OLD.AO149.general",
+      "OLD.AO149.adviser",
+      "OLD.AO108.weekend"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "097",
+    "prior_row_id": 97,
+    "prior_native_LF": [
+      153,
+      153
+    ],
+    "native_LF": [
+      153,
+      153
+    ],
+    "section": "Deadlines and filing",
+    "wording": "**Recapitulative statement (Zusammenfassende Meldung).** Sent to the Bundeszentralamt für Steuern (https://www.bzst.de) by the 25th day after each month in which intra-EU supplies of goods were made; quarterly while those supplies stay at or below EUR 50,000 in the current and each of the four previous quarters (§ 18a(1) UStG). § 3a(2) services to EU businesses are reported by the 25th day after each quarter (§ 18a(2) UStG).",
+    "source_quote_ids": [
+      "OLD.VAT.ZM"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "098",
+    "prior_row_id": 98,
+    "prior_native_LF": [
+      156,
+      156
+    ],
+    "native_LF": [
+      156,
+      156
+    ],
+    "section": "Deadlines and filing",
+    "wording": "- Receiving: since 1 January 2025 every business in Germany must be able to receive an e-invoice (a structured format such as XRechnung or ZUGFeRD), small businesses included. Receiving by e-mail needs no separate inbox (UStAE 14.1(5), BMF letter of 15 October 2025).",
+    "source_quote_ids": [
+      "OLD.VAT.einvoicereceive",
+      "OLD.VAT.einvoicetransition"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "099",
+    "prior_row_id": 99,
+    "prior_native_LF": [
+      157,
+      157
+    ],
+    "native_LF": [
+      157,
+      157
+    ],
+    "section": "Deadlines and filing",
+    "wording": "- Issuing: an invoice for a supply to another business must be an e-invoice where both are established in Germany (§ 14(2) sentence 2 no. 1 UStG). Transition (§ 27(38) UStG): for supplies made in 2025 and 2026, paper or another electronic format (with the customer's consent) is allowed until 31 December 2026; for supplies made in 2027, only if the issuer's 2026 total turnover was not more than EUR 800,000, or by EDI. For supplies from 1 January 2028 there is no relief.",
+    "source_quote_ids": [
+      "OLD.VAT.invoice",
+      "OLD.VAT.einvoicetransition"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "100",
+    "prior_row_id": 100,
+    "prior_native_LF": [
+      158,
+      158
+    ],
+    "native_LF": [
+      158,
+      158
+    ],
+    "section": "Deadlines and filing",
+    "wording": "- Small-amount invoices up to EUR 250, travel tickets and small businesses' invoices may always be issued as ordinary invoices (BMF letter of 15 October 2025, no. 22).",
+    "source_quote_ids": [
+      "OLD.VAT.einvoicesmall",
+      "OLD.VAT.smallinvoice"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "101",
+    "prior_row_id": 101,
+    "prior_native_LF": [
+      162,
+      162
+    ],
+    "native_LF": [
+      162,
+      162
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Late advance return.** The tax office may set a late filing surcharge (§ 152(1) AO). The 0.25% formula does not apply to monthly or quarterly returns or to the special prepayment; the amount is set by judgement, looking at how late, how often and how much tax (§ 152(8) AO). The cap is EUR 25,000 (§ 152(10) AO).",
+    "source_quote_ids": [
+      "OLD.PR.latefiling",
+      "OLD.PR.latefilingformula",
+      "OLD.VAT.penaltycap",
+      "R31.late-filing-exclusion"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "102",
+    "prior_row_id": 102,
+    "prior_native_LF": [
+      163,
+      163
+    ],
+    "native_LF": [
+      163,
+      163
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Late annual return.** 0.25% of the assessed tax less prepayments for each started month late, at least EUR 25 a month, rounded down to whole euros, at most EUR 25,000 (§ 152(5) and (10) AO). The surcharge is compulsory if the return is not filed within 14 months after the year ends (for 2026, by 29 February 2028, which is also the tax-adviser deadline), unless the deadline was extended, the tax is nil or negative, or the tax does not exceed the prepayments (§ 152(2) and (3) AO).",
+    "source_quote_ids": [
+      "OLD.PR.latefiling",
+      "OLD.VAT.annualpenalty",
+      "OLD.VAT.penaltycap"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "103",
+    "prior_row_id": 103,
+    "prior_native_LF": [
+      164,
+      164
+    ],
+    "native_LF": [
+      164,
+      164
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Late payment (Säumniszuschlag).** 1% for each started month on the overdue tax rounded down to a multiple of EUR 50 (§ 240(1) AO). No surcharge if the payment is no more than 3 days late, except for payment in cash or by cheque (§ 240(3) AO with § 224(2) no. 1 AO). A bank transfer counts on the day the tax office's account is credited (§ 224(2) no. 2 AO). It runs on advance payments, the special prepayment and the annual balance.",
+    "source_quote_ids": [
+      "OLD.AO240.surcharge",
+      "OLD.AO240.grace",
+      "OLD.VAT.paymentdate",
+      "R31.late-filing-exclusion"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "104",
+    "prior_row_id": 104,
+    "prior_native_LF": [
+      165,
+      165
+    ],
+    "native_LF": [
+      165,
+      165
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Interest (§ 233a AO).** Where the annual assessment differs from the prepayments, the difference carries interest of 0.15% per full month, from 15 months after the year ends (for 2026, from 1 April 2028) until the assessment takes effect (§ 233a(2) AO, § 238(1a) AO). The amount is rounded down to a multiple of EUR 50 (§ 238(2) AO). Advance payments themselves carry no § 233a interest (§ 233a(1) sentence 2 AO).",
+    "source_quote_ids": [
+      "OLD.AO233a.interest",
+      "OLD.AO238.rate",
+      "OLD.AO238.rounding"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "105",
+    "prior_row_id": 105,
+    "prior_native_LF": [
+      166,
+      166
+    ],
+    "native_LF": [
+      166,
+      166
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Fines** for VAT not paid on time (§ 26a UStG) are covered in de-vat-annual-and-special-schemes.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "106",
+    "prior_row_id": 106,
+    "prior_native_LF": [
+      170,
+      170
+    ],
+    "native_LF": [
+      170,
+      170
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Services received from abroad.** A § 3a(2) service from an EU business: base Kz 46, tax Kz 47, input Kz 67; the tax arises at the end of the period in which the service was performed (§ 13b(1) UStG). Other services and works supplies from a business established abroad (including non-EU): Kz 84 and 85; the tax arises when the invoice is issued, at the latest at the end of the month after the supply (§ 13b(2) no. 1 UStG). A fully taxable business pays and deducts the same amount.",
+    "source_quote_ids": [
+      "OLD.VAT.RC",
+      "OLD.VAT.input",
+      "OLD.VAT.form-output2",
+      "OLD.VAT.form-input"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "107",
+    "prior_row_id": 107,
+    "prior_native_LF": [
+      171,
+      171
+    ],
+    "native_LF": [
+      171,
+      171
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Services supplied abroad.** A § 3a(2) service to a business in another EU state is not taxable in Germany: Kz 21, the recapitulative statement, and an invoice noting that the customer owes the tax. To a business outside the EU: Kz 45.",
+    "source_quote_ids": [
+      "OLD.VAT.place",
+      "OLD.VAT.RCinvoice",
+      "OLD.VAT.formforeign",
+      "OLD.VAT.ZM"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "108",
+    "prior_row_id": 108,
+    "prior_native_LF": [
+      172,
+      172
+    ],
+    "native_LF": [
+      172,
+      172
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Goods.** Before using the intra-EU exemption with input deduction (Kz 41), establish all § 6a conditions: actual transport/dispatch to another member state; the qualifying customer status and business acquisition (or the separate non-business legal-person/new-vehicle branch); acquisition subject to that other state's VAT provisions; and, for the § 6a(1) no. 2(a)/(b) customer, actual use toward the supplier of a valid VAT ID issued by another member state. § 4 no. 1(b) excludes exemption where the required recapitulative statement (ZM) was not filed, or is incorrect/incomplete for the supply. Do not assume an exemption or a particular later cure outcome from an unverified/missing statement; apply the actual proof and statutory conditions, including § 6a(4)'s specifically gated customer-misinformation protection where relevant. For the § 17a(1) transport presumption, the supplier needs consistent documents from different issuers independent of each other and both transaction parties: either at least two transport/dispatch documents under § 17a(2) no. 1, or one such document plus one supporting document under no. 2 confirming the transport/dispatch. Two insurance/bank support documents alone do not meet that pair test. For the customer-transport route the supplier additionally needs the customer's Gelangensbestätigung delivered by the tenth day of the month after the supply (§ 17a(1) UStDV, https://www.gesetze-im-internet.de/ustdv_1980/__17a.html). The tax office can rebut the presumption; otherwise the evidence rules of § 17b UStDV apply. Exports outside the EU go in Kz 43. Acquisitions from EU suppliers are self-assessed (Kz 89 or 93, input Kz 61). Import VAT is charged by customs and deducted in Kz 62.",
+    "source_quote_ids": [
+      "OLD.VAT.ICS",
+      "OLD.VAT.exempt-exports",
+      "OLD.VAT.inputlimits",
+      "OLD.VAT.arrivalpresumption",
+      "OLD.VAT.arrivalfallback",
+      "OLD.VAT.form-output2",
+      "OLD.VAT.form-input",
+      "R29.exemption-ZM",
+      "R29.ICS",
+      "R29.presumption"
+    ],
+    "disposition": "R26–31 bounded operative condition successor"
+  },
+  {
+    "id": "109",
+    "prior_row_id": 109,
+    "prior_native_LF": [
+      173,
+      173
+    ],
+    "native_LF": [
+      173,
+      173
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Domestic reverse charge.** Construction services (where the customer itself regularly supplies construction services), building cleaning, scrap metal, gold, mobile phones, tablets, consoles, chips and Annex 4 metals at EUR 5,000 or more per transaction, gas through the natural-gas network and electricity from a supplier abroad, emission allowances, and the other categories listed in § 13b(2) UStG: the business customer owes the tax. Building cleaning applies only where the customer itself supplies cleaning services. For the EUR 5,000 test a later reduction of the fee is ignored (§ 13b(2) no. 10 UStG) (§ 13b(2) and (5) UStG). The supplier reports the sale in Kz 60.",
+    "source_quote_ids": [
+      "OLD.VAT.RC"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "110",
+    "prior_row_id": 110,
+    "prior_native_LF": [
+      174,
+      174
+    ],
+    "native_LF": [
+      174,
+      174
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Distance sales to EU consumers.** For a supplier established in only one member state, Germany, up to EUR 10,000 a year EU-wide (goods and electronic services together, previous and current year), German VAT applies; above it, the customer's country's VAT, usually through the one-stop shop (§ 3c(4) UStG). One EU-wide total, not per country. A business may waive the limit; the waiver binds for at least two calendar years (§ 3c(4) UStG). See de-vat-annual-and-special-schemes.",
+    "source_quote_ids": [
+      "OLD.VAT.distance"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "111",
+    "prior_row_id": 111,
+    "prior_native_LF": [
+      175,
+      175
+    ],
+    "native_LF": [
+      175,
+      175
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Foreign businesses.** A business established abroad that makes taxable supplies in Germany not covered by the reverse charge registers and files like a German business. A foreign business with no German filing duty recovers German input VAT through the refund procedure (§ 18(9) UStG).",
+    "source_quote_ids": [
+      "OLD.VAT.taxed",
+      "OLD.VAT.filing",
+      "OLD.VAT.refundroute"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "112",
+    "prior_row_id": 112,
+    "prior_native_LF": [
+      179,
+      220
+    ],
+    "native_LF": [
+      179,
+      220
+    ],
+    "section": "Worked examples",
+    "wording": "### Example 1: An IT consultant's monthly return, with a late payment\n\nAnna is a freelance IT consultant in Berlin on standard taxation. Her 2025 VAT was above EUR 9,000, so she files monthly in 2026 without an extension. For March 2026 she has:\n- fees from German clients of EUR 20,000 net, at 19%: EUR 3,800 VAT, Kz 81;\n- fees from a French company of EUR 5,000 for consulting: not taxable in Germany, Kz 21 and the recapitulative statement, no VAT;\n- German purchase invoices showing EUR 1,140 VAT: Kz 66;\n- a US software subscription of EUR 200 billed by the US entity: Kz 84 EUR 200, Kz 85 EUR 38;\n- online advertising of EUR 1,000 billed by an Irish company: Kz 46 EUR 1,000, Kz 47 EUR 190.\n\nThe reverse-charge tax of EUR 228 is also her input VAT in Kz 67. Output VAT is EUR 4,028, input VAT EUR 1,368, so Kz 83 is EUR 2,660. The return and payment are due Friday 10 April 2026. Her transfer reaches the tax office on Tuesday 14 April, 4 days late, past the 3-day grace period. The surcharge is 1% of EUR 2,650 (EUR 2,660 rounded down to a multiple of 50) for one started month: EUR 26.50.\n\n```oa-check\nname: IT consultant, March 2026 advance return with reverse charge and a late payment\ninputs:\n  domestic_net: 20000\n  eu_service_sale: 5000\n  domestic_input_vat: 1140\n  non_eu_software: 200\n  eu_advertising: 1000\n  standard_rate: 19\n  months_late: 1\nsteps:\n  - kz81_tax: pct(domestic_net, standard_rate)\n  - kz85_tax: pct(non_eu_software, standard_rate)\n  - kz47_tax: pct(eu_advertising, standard_rate)\n  - output_vat_line37: kz81_tax + kz85_tax + kz47_tax\n  - kz67_input: kz85_tax + kz47_tax\n  - input_vat_total: domestic_input_vat + kz67_input\n  - kz83: output_vat_line37 - input_vat_total\n  - overdue_rounded: floor(kz83 / 50) * 50\n  - late_payment_surcharge: pct(overdue_rounded, 1) * months_late\nexpected:\n  kz81_tax: 3800\n  kz85_tax: 38\n  kz47_tax: 190\n  output_vat_line37: 4028\n  kz67_input: 228\n  input_vat_total: 1368\n  kz83: 2660\n  overdue_rounded: 2650\n  late_payment_surcharge: 26.50\n```",
+    "source_quote_ids": [
+      "OLD.VAT.rates",
+      "OLD.VAT.filing",
+      "OLD.VAT.place",
+      "OLD.VAT.RC",
+      "OLD.VAT.input",
+      "OLD.VAT.form-output1",
+      "OLD.VAT.form-output2",
+      "OLD.VAT.form-input",
+      "OLD.VAT.form-bottom",
+      "OLD.AO240.surcharge",
+      "OLD.AO240.grace",
+      "OLD.VAT.paymentdate",
+      "OLD.AO108.weekend"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "113",
+    "prior_row_id": 113,
+    "prior_native_LF": [
+      222,
+      262
+    ],
+    "native_LF": [
+      222,
+      262
+    ],
+    "section": "Worked examples",
+    "wording": "### Example 2: A restaurant's December return, buffet at two rates and the special prepayment\n\nA restaurant GmbH files monthly with the one-month extension. Its 2025 advance returns showed Kz 83 amounts of EUR 61,000 in total, and its 2025 special prepayment of EUR 5,000 was credited in December 2025. The base for 2026 is EUR 66,000, so the 2026 special prepayment is EUR 6,000, declared on form USt 1 H and paid by 10 February 2026.\n\nIn December 2026 it sells only buffet packages, food and drinks for one price, for EUR 127,330 gross. Using the 30% drinks share (UStAE 10.1(12)), EUR 38,199 is drinks at 19% (net EUR 32,100, VAT EUR 6,099, Kz 81) and EUR 89,131 is food at 7% (net EUR 83,300, VAT EUR 5,831, Kz 86). Output VAT is EUR 11,930. Input VAT on invoices is EUR 4,200 (Kz 66), leaving EUR 7,730 in line 48. December is the last period, so the EUR 6,000 special prepayment is credited in Kz 39, and Kz 83 is EUR 1,730. With the extension it is due 10 February 2027. Had the whole price been taxed at 19%, as before 2026, output VAT would have been EUR 20,330.\n\n```oa-check\nname: Restaurant, December 2026 return with a 30% drinks share and the special prepayment credit\ninputs:\n  kz83_2025_total: 61000\n  svz_2025: 5000\n  package_gross: 127330\n  drinks_share_pct: 30\n  input_vat: 4200\nsteps:\n  - svz_base: kz83_2025_total + svz_2025\n  - svz_2026: svz_base / 11\n  - drinks_gross: pct(package_gross, drinks_share_pct)\n  - food_gross: package_gross - drinks_gross\n  - drinks_net_kz81: drinks_gross * 100 / 119\n  - food_net_kz86: food_gross * 100 / 107\n  - drinks_vat: drinks_gross - drinks_net_kz81\n  - food_vat: food_gross - food_net_kz86\n  - output_vat: drinks_vat + food_vat\n  - line48: output_vat - input_vat\n  - kz83_december: line48 - svz_2026\n  - output_vat_all_at_19: package_gross * 19 / 119\nexpected:\n  svz_base: 66000\n  svz_2026: 6000\n  drinks_gross: 38199\n  food_gross: 89131\n  drinks_net_kz81: 32100\n  food_net_kz86: 83300\n  drinks_vat: 6099\n  food_vat: 5831\n  output_vat: 11930\n  line48: 7730\n  kz83_december: 1730\n  output_vat_all_at_19: 20330\n```",
+    "source_quote_ids": [
+      "OLD.VAT.package30",
+      "OLD.VAT.restaurant-date",
+      "OLD.VAT.reducedservices",
+      "OLD.VAT.prepay",
+      "OLD.VAT.prepayprocedure",
+      "OLD.VAT.prepay-example",
+      "OLD.VAT.formprepay",
+      "OLD.VAT.form-bottom"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "114",
+    "prior_row_id": 114,
+    "prior_native_LF": [
+      266,
+      271
+    ],
+    "native_LF": [
+      266,
+      271
+    ],
+    "section": "Ask the client first",
+    "wording": "1. Is the business on standard taxation, or a small business under § 19 UStG? What was total turnover in 2025, and what is it so far in 2026?\n2. Monthly or quarterly, and is there a one-month extension? If monthly with the extension, was the 2026 special prepayment declared and paid, and is this the last return of the year?\n3. For each foreign supplier: which legal entity issued the invoice, and where is it established? This decides Kz 46 and 47 against Kz 84 and 85.\n4. For each EU customer: is there a valid VAT ID, and was it checked with the Bundeszentralamt für Steuern?\n5. Any exempt income (residential rent, medical, education, insurance, financial services)? If so, input VAT needs apportioning.\n6. For restaurants and caterers: do the till and invoices split food from drinks, and are there package prices?",
+    "source_quote_ids": [
+      "OLD.VAT.KU",
+      "OLD.VAT.filing",
+      "OLD.VAT.prepay",
+      "OLD.VAT.RC",
+      "OLD.VAT.inputlimits",
+      "OLD.VAT.package30"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "115",
+    "prior_row_id": 115,
+    "prior_native_LF": [
+      273,
+      273
+    ],
+    "native_LF": [
+      274,
+      274
+    ],
+    "section": "Ask the client first",
+    "wording": "**While facts are missing (OpenAccountants working practice, not a legal rule).** Use these defaults and say so in the working paper: an unknown rate on a sale is 19%; an unknown VAT status of a purchase is not deductible; an EU customer with no confirmed VAT ID is a consumer; an unknown business share (vehicle, phone, home office) gives no deduction; a software or advertising supplier whose billing entity is unknown goes in Kz 84 and 85; entertainment without the written record is blocked. If only a bank statement was supplied, record for the reviewer that input VAT claims must be checked against invoices meeting § 14 UStG, that the § 33 UStDV small-amount relief was used only up to EUR 250, and that every reverse-charge line matches the supplier's invoice.",
+    "source_quote_ids": [
+      "OLD.VAT.input",
+      "OLD.VAT.invoicedetails",
+      "OLD.VAT.smallinvoice",
+      "OLD.VAT.RC",
+      "OLD.VAT.place",
+      "OLD.VAT.gifts-entertainment"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "116",
+    "prior_row_id": 116,
+    "prior_native_LF": [
+      310,
+      310
+    ],
+    "native_LF": [
+      313,
+      313
+    ],
+    "section": "Sources",
+    "wording": "Not yet confirmed: that the EUR 50 gift limit is counted by calendar year for VAT (UStAE 15.6(4) was not read for this version; the income-tax text counts by financial year); that the entertainment receipt must be machine-produced and signed by the host (an administrative rule, not in § 4(5) EStG); which tax office handles a foreign business, by country (the Umsatzsteuerzuständigkeitsverordnung was not read for this version); the rounding rule for whole-euro tax bases on the advance return (the 2026 instructions say whole euros but not whether to round or cut off the cents).",
+    "source_quote_ids": [
+      "OLD.VAT.gifts-entertainment",
+      "OLD.VAT.formamounts"
+    ],
+    "disposition": "Exact prior current wording with native coordinates rebound"
+  },
+  {
+    "id": "117",
+    "prior_row_id": null,
+    "native_LF": [
+      272,
+      272
+    ],
+    "section": "R26–31 sourced condition/intake/actual selected read",
+    "wording": "7. Actual service type and receiving establishment; solar recipient/operator and installation facts; water product/prepackaging; bank fee contract/invoice and foreign VAT legality/recoverability; EU acquisition/customer status, VAT ID actually used, accurate supply-specific ZM and each independent transport/support document class.",
+    "source_quote_ids": [
+      "R26.place",
+      "R27.solar",
+      "R27.water",
+      "R28.finance",
+      "R29.exemption-ZM",
+      "R29.ICS",
+      "R29.presumption",
+      "R30.foreign-input"
+    ],
+    "disposition": "New bounded source-backed correction; any fixture values explicitly stipulated/computed"
+  },
+  {
+    "id": "118",
+    "prior_row_id": null,
+    "native_LF": [
+      310,
+      310
+    ],
+    "section": "R26–31 sourced condition/intake/actual selected read",
+    "wording": "| UStG § 3a(2)/(3), § 12(3), Annex 2 no. 34, § 4 no. 8/1(b), § 6a; UStDV § 17a, selected classification and proof gates actually read | https://www.gesetze-im-internet.de/ustg_1980/__6a.html | 2026-10-29 |",
+    "source_quote_ids": [
+      "R26.place",
+      "R27.solar",
+      "R27.water",
+      "R28.finance",
+      "R29.exemption-ZM",
+      "R29.ICS",
+      "R29.presumption"
+    ],
+    "disposition": "New bounded source-backed correction; any fixture values explicitly stipulated/computed"
+  },
+  {
+    "id": "119",
+    "prior_row_id": null,
+    "native_LF": [
+      311,
+      311
+    ],
+    "section": "R26–31 sourced condition/intake/actual selected read",
+    "wording": "| AO § 152(8) full special-prepayment exclusion and closing discretionary factors; 2026 input instructions are an information route, not a foreign refund entitlement | https://www.gesetze-im-internet.de/ao_1977/__152.html | 2026-10-29 |",
+    "source_quote_ids": [
+      "R30.foreign-input",
+      "R31.late-filing-exclusion"
+    ],
+    "disposition": "New bounded source-backed correction; any fixture values explicitly stipulated/computed"
+  }
+]

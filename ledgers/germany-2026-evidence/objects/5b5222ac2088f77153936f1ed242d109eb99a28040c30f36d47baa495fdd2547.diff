@@ -1,0 +1,20 @@
+--- before
++++ after
+@@ -1,7 +1,7 @@
+ ---
+ name: de-trade-tax
+ description: "German trade tax (Gewerbesteuer, GewSt) for collection period 2026: who is liable (sole traders and partnerships with a commercial business, every GmbH, UG and AG; free professions excluded), trade income (Gewerbeertrag) with the § 8 add-backs (one quarter of financing items above EUR 200,000) and § 9 reductions (Grundsteuer, partnership shares, 15% participation exemption, donations), the EUR 24,500 allowance, the 3.5% base rate, the municipal multiplier (Hebesatz, at least 200% for 2026, 280% from 2027), the § 35 EStG income tax credit (four times the base amount, capped), loss carry-forward (EUR 1 million plus 60%), apportionment between municipalities (Zerlegung), the return, quarterly prepayments, surcharges and interest. Trigger on: Gewerbesteuer, GewSt, Hebesatz, Gewerbeertrag, Steuermessbetrag, Freibetrag 24.500, Hinzurechnungen, Kürzungen, § 35 EStG, Zerlegung, Gewerbesteuer-Vorauszahlung, trade tax Germany. Out of scope: income tax of the owner (de-self-employed-income-tax, de-income-tax), partners' income (de-partners-and-part-year), corporate income tax (de-corporate-tax), non-residents (de-non-resident-tax)."
+-version: 1.2
++version: 1.3
+ jurisdiction: DE
+ tax_year: 2026
+ last_updated: 2026-10-29
+@@ -290,7 +290,7 @@
+ | BFH VIII R 6/12, separability and inclusive net-receipt gates | https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201510044?type=1646225765 | 2026-10-29 |
+ | BFH IV R 42/19, B.III.3, threshold retained for both gains and losses | https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/STRE202210200/ | 2026-10-29 |
+ 
+-Not yet confirmed: the ELSTER form names GewSt 1 A and GewSt 1 D for 2026 (not read on ELSTER); any de minimis limit for Abfärbung under § 15(3) no. 1 EStG (case law, not in the statute); the Munich multiplier as a decision for 2026 specifically (the city page says "aktuell gültig" without a year).
++Not yet confirmed: the ELSTER form names GewSt 1 A and GewSt 1 D for 2026 (not read on ELSTER); the Munich multiplier as a decision for 2026 specifically (the city page says "aktuell gültig" without a year).
+ 
+ <!-- openaccountants-cta-block -->
+ 

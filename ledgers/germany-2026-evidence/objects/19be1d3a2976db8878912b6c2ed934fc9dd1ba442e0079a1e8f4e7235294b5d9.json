@@ -1,0 +1,657 @@
+{
+  "role": "writer, not independent review",
+  "controls": [
+    {
+      "id": "R18.base20350",
+      "actual": "0.00",
+      "expected": "0",
+      "premise": "Independently established ordinary single assessment base; no32d(3)/(4)component. Fractions of a cent dropped. Mixed/special withholding branches not run through this function.",
+      "pass": true
+    },
+    {
+      "id": "R18.base20400",
+      "actual": "5.95",
+      "expected": "5.95",
+      "premise": "Independently established ordinary single assessment base; no32d(3)/(4)component. Fractions of a cent dropped. Mixed/special withholding branches not run through this function.",
+      "pass": true
+    },
+    {
+      "id": "R18.base20350.05",
+      "actual": "0.00",
+      "expected": "0",
+      "premise": "Independently established ordinary single assessment base; no32d(3)/(4)component. Fractions of a cent dropped. Mixed/special withholding branches not run through this function.",
+      "pass": true
+    },
+    {
+      "id": "R18.base20400.05",
+      "actual": "5.95",
+      "expected": "5.95",
+      "premise": "Independently established ordinary single assessment base; no32d(3)/(4)component. Fractions of a cent dropped. Mixed/special withholding branches not run through this function.",
+      "pass": true
+    },
+    {
+      "id": "R18.base40000",
+      "actual": "2200.00",
+      "expected": "2200",
+      "premise": "Independently established ordinary single assessment base; no32d(3)/(4)component. Fractions of a cent dropped. Mixed/special withholding branches not run through this function.",
+      "pass": true
+    },
+    {
+      "id": "R18.separate32d",
+      "actual": "41.250",
+      "expected": "41.25",
+      "premise": "Preserved original32d(3)fixture, separate surcharge without ordinary threshold/cap.",
+      "pass": true
+    },
+    {
+      "id": "R19.refund-arithmetic",
+      "actual": "1000",
+      "expected": "1000",
+      "premise": "Actual capital tax withheld/remitted2500; amount only conditional on all independently established population/procedure/anti-abuse gates. No automatic entitlement or surcharge refund inferred.",
+      "pass": true
+    },
+    {
+      "id": "R19.denial(True, True, False, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual50d3conditional statutory denial only; independent42AO and other relief gates remain. Rebuttal/listing flags mean exact statutory proof/listedclassfacts, not assumed substance.",
+      "pass": true
+    },
+    {
+      "id": "R19.denial(False, True, False, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual50d3conditional statutory denial only; independent42AO and other relief gates remain. Rebuttal/listing flags mean exact statutory proof/listedclassfacts, not assumed substance.",
+      "pass": true
+    },
+    {
+      "id": "R19.denial(True, False, False, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual50d3conditional statutory denial only; independent42AO and other relief gates remain. Rebuttal/listing flags mean exact statutory proof/listedclassfacts, not assumed substance.",
+      "pass": true
+    },
+    {
+      "id": "R19.denial(True, True, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual50d3conditional statutory denial only; independent42AO and other relief gates remain. Rebuttal/listing flags mean exact statutory proof/listedclassfacts, not assumed substance.",
+      "pass": true
+    },
+    {
+      "id": "R19.denial(True, True, False, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual50d3conditional statutory denial only; independent42AO and other relief gates remain. Rebuttal/listing flags mean exact statutory proof/listedclassfacts, not assumed substance.",
+      "pass": true
+    },
+    {
+      "id": "R20.branch('4b', True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Branch-specific classification only. Substantive statutory application/income requirements independently established; nationality flag includes actual relevant permitted residence route. No special tariff/insurance/credit computation inferred.",
+      "pass": true
+    },
+    {
+      "id": "R20.branch('4d', True, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Branch-specific classification only. Substantive statutory application/income requirements independently established; nationality flag includes actual relevant permitted residence route. No special tariff/insurance/credit computation inferred.",
+      "pass": true
+    },
+    {
+      "id": "R20.branch('4e', True, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Branch-specific classification only. Substantive statutory application/income requirements independently established; nationality flag includes actual relevant permitted residence route. No special tariff/insurance/credit computation inferred.",
+      "pass": true
+    },
+    {
+      "id": "R20.branch('6', True, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Branch-specific classification only. Substantive statutory application/income requirements independently established; nationality flag includes actual relevant permitted residence route. No special tariff/insurance/credit computation inferred.",
+      "pass": true
+    },
+    {
+      "id": "R20.branch('5', True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Branch-specific classification only. Substantive statutory application/income requirements independently established; nationality flag includes actual relevant permitted residence route. No special tariff/insurance/credit computation inferred.",
+      "pass": true
+    },
+    {
+      "id": "R20.branch('4d', False, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Branch-specific classification only. Substantive statutory application/income requirements independently established; nationality flag includes actual relevant permitted residence route. No special tariff/insurance/credit computation inferred.",
+      "pass": true
+    },
+    {
+      "id": "R20.branch('4b', True, True)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Branch-specific classification only. Substantive statutory application/income requirements independently established; nationality flag includes actual relevant permitted residence route. No special tariff/insurance/credit computation inferred.",
+      "pass": true
+    },
+    {
+      "id": "R21.registry(True, False, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Other-right category established. If not sole registry, this exception does not settle another domestic source link; treaty flag incorporates actual applicable treaty-application rules.",
+      "pass": true
+    },
+    {
+      "id": "R21.registry(True, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Other-right category established. If not sole registry, this exception does not settle another domestic source link; treaty flag incorporates actual applicable treaty-application rules.",
+      "pass": true
+    },
+    {
+      "id": "R21.registry(True, True, True)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Other-right category established. If not sole registry, this exception does not settle another domestic source link; treaty flag incorporates actual applicable treaty-application rules.",
+      "pass": true
+    },
+    {
+      "id": "R21.registry(False, False, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Other-right category established. If not sole registry, this exception does not settle another domestic source link; treaty flag incorporates actual applicable treaty-application rules.",
+      "pass": true
+    },
+    {
+      "id": "R22.asset(40, 60, True, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Active business book values at an actual relevant test time; marketvalues irrelevant to this domestic percentage; within means actual365daywindow. Overall17/treaty/taxgates separate.",
+      "pass": true
+    },
+    {
+      "id": "R22.asset(60, 40, True, True)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Active business book values at an actual relevant test time; marketvalues irrelevant to this domestic percentage; within means actual365daywindow. Overall17/treaty/taxgates separate.",
+      "pass": true
+    },
+    {
+      "id": "R22.asset(50, 50, True, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Active business book values at an actual relevant test time; marketvalues irrelevant to this domestic percentage; within means actual365daywindow. Overall17/treaty/taxgates separate.",
+      "pass": true
+    },
+    {
+      "id": "R22.asset(60, 40, False, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Active business book values at an actual relevant test time; marketvalues irrelevant to this domestic percentage; within means actual365daywindow. Overall17/treaty/taxgates separate.",
+      "pass": true
+    },
+    {
+      "id": "R22.asset(60, 40, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Active business book values at an actual relevant test time; marketvalues irrelevant to this domestic percentage; within means actual365daywindow. Overall17/treaty/taxgates separate.",
+      "pass": true
+    }
+  ],
+  "control_count": 28,
+  "own_selected_native_ranges": 8,
+  "exact_source_checks": [
+    {
+      "id": "R18.rate",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R18.base-and-threshold",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R19.refund",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R19.anti-abuse",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R20.assessment-exceptions",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R21.business-rights",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R21.private-rights",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R22.share-source",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": true
+    },
+    {
+      "id": "NR.SoliRate",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.AO149-2",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.AO149-3",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.AO108",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.AO152-2",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.AO152-3",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.AO152-5",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.AO152-10",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.AO233a-1",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.AO233a-2",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.AO238-1a",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.AO240-1",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.RES",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.EFILE",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.TARIFF",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.SOLILIMIT",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.LUMPSUM",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.NRTRADE",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.NRPROF",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.PROGRESSION",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.PROGEXCEPTIONS",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.COUPLE",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.FILE7",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.FILE8",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.EMPLOYEE1230",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.ANNUAL",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.MOVEINCOME",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.PRORATE",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.HOME",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.ABODE",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.PUBLICABROAD",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.NR",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.OPTION13",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.SPOUSE",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.COMPANYNR",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.COMPFINAL",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.CORPRATE",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.NRBASE",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.PROFPENSION",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.FINAL",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.GROSS",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.NET",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.ORDER",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.PAYWHT",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.WHTSOLI",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.KWHT",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.REFUND40",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.EXEMPT",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.REFUND",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.ELECTREFUND",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.FLAT",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.DECLFLAT",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.FOREIGNFLAT",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.CREDITALL",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.CREDITTREATY",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.GERMANCAP",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.GERMANIMM",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.GERMANEMP",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.GERMANDIV",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.GERMANINTEREST",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.GERMANRENT",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.GERMANPENSION",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.GERMANSALE",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.COUNTRY",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.AUSTRIAHEAD",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.AUSTRIA",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.GROUPEFFECT",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.CLASSI",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.WAGEDATA",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.PROG5",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.CAPIGNORE",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.OFFICE",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.PENSIONOFFICE",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.NB",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.ANTISHOP",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.BZST",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.FOREIGNLIST",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    },
+    {
+      "id": "NR.SAVER",
+      "hashes_and_literal_quote": true,
+      "own_new_selected_read": false
+    }
+  ],
+  "prior_A_manifest": {
+    "sha256": "caa546e677e15366d0530b1eb757fe4cfba54d87b9993d717c4d261de5282b24",
+    "members_rehashed": 610,
+    "mismatches": 0
+  },
+  "full_inverse_and_all_native_rows": true,
+  "all_prior203_current_units_and404_old_topics_retained": true,
+  "original_examples": {
+    "blocks": 2,
+    "failures": [],
+    "whole_original_worked_section_exact": true
+  },
+  "schema": {
+    "errors": [],
+    "warnings": [],
+    "stdout": "checked 1 guides (0 non-guide .md files skipped)\n"
+  },
+  "diff_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

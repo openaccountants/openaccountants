@@ -1,0 +1,1886 @@
+{
+  "role": "writer only, different independent review pending",
+  "controls": [
+    {
+      "id": "R88.nominalSunday",
+      "actual": "6",
+      "expected": "6",
+      "scope": "Statutory41b/93cdeadlineSunday,ordinaryfilingdeadline—notfixedauthorityappointment.",
+      "pass": true
+    },
+    {
+      "id": "R88.nextworkingday",
+      "actual": "2027-03-01",
+      "expected": "2027-03-01",
+      "scope": "Combinedown108(3)ordinaryMondayadjustment;actualholiday/authorityfactsseparate,nofutureformclaim.",
+      "pass": true
+    },
+    {
+      "id": "R89.total100",
+      "actual": "32.55",
+      "expected": "32.55",
+      "scope": "IsolatedfullmonthinsuredcommercialMini/nootherjob/exemption/partmonthinteraction;actual1638minimum.",
+      "pass": true
+    },
+    {
+      "id": "R89.employer100",
+      "actual": "15.00",
+      "expected": "15",
+      "scope": "Employer15%ACTUALpay,not175floor.",
+      "pass": true
+    },
+    {
+      "id": "R89.employee100",
+      "actual": "17.55",
+      "expected": "17.55",
+      "scope": "BVV2minimum-baseemployeeREMAINDER,notuniversal3.6%actualpaybelow175.",
+      "pass": true
+    },
+    {
+      "id": "R89.total175",
+      "actual": "32.55",
+      "expected": "32.55",
+      "scope": "IsolatedfullmonthinsuredcommercialMini/nootherjob/exemption/partmonthinteraction;actual1638minimum.",
+      "pass": true
+    },
+    {
+      "id": "R89.employer175",
+      "actual": "26.25",
+      "expected": "26.25",
+      "scope": "Employer15%ACTUALpay,not175floor.",
+      "pass": true
+    },
+    {
+      "id": "R89.employee175",
+      "actual": "6.30",
+      "expected": "6.30",
+      "scope": "BVV2minimum-baseemployeeREMAINDER,notuniversal3.6%actualpaybelow175.",
+      "pass": true
+    },
+    {
+      "id": "R89.total603",
+      "actual": "112.16",
+      "expected": "112.16",
+      "scope": "IsolatedfullmonthinsuredcommercialMini/nootherjob/exemption/partmonthinteraction;actual1638minimum.",
+      "pass": true
+    },
+    {
+      "id": "R89.employer603",
+      "actual": "90.45",
+      "expected": "90.45",
+      "scope": "Employer15%ACTUALpay,not175floor.",
+      "pass": true
+    },
+    {
+      "id": "R89.employee603",
+      "actual": "21.71",
+      "expected": "21.71",
+      "scope": "BVV2minimum-baseemployeeREMAINDER,notuniversal3.6%actualpaybelow175.",
+      "pass": true
+    },
+    {
+      "id": "R89.scopeguard",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Anotherinsuredjob/partmonth/exemptioncaseisoutsidethisstatedordinaryminimumworksheet,notautomatic175perjob.",
+      "pass": true
+    },
+    {
+      "id": "R90.tariff.8",
+      "actual": "800.0",
+      "expected": "800",
+      "scope": "Stipulatedactualfundstatute/selectedtariffforeligiblecontinuedwage1000;employercontributionscope separate.",
+      "pass": true
+    },
+    {
+      "id": "R90.tariff.6",
+      "actual": "600.0",
+      "expected": "600",
+      "scope": "Stipulatedactualfundstatute/selectedtariffforeligiblecontinuedwage1000;employercontributionscope separate.",
+      "pass": true
+    },
+    {
+      "id": "R90.tariff.4",
+      "actual": "400.0",
+      "expected": "400",
+      "scope": "Stipulatedactualfundstatute/selectedtariffforeligiblecontinuedwage1000;employercontributionscope separate.",
+      "pass": true
+    },
+    {
+      "id": "R90.floor",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Fundstatuteauthorityrestricts80%defaultwithratesnotbelow40%;notguessingactualfundtariff.",
+      "pass": true
+    },
+    {
+      "id": "R91.precapfirst",
+      "actual": "8450",
+      "expected": "8450",
+      "scope": "Actualordinarypensionjobprecapbeforeproportion,notraw10000.",
+      "pass": true
+    },
+    {
+      "id": "R91.base1",
+      "actual": "1428050/209",
+      "expected": "1428050/209",
+      "scope": "Exactrationalintermediate,notprematurerounding.",
+      "pass": true
+    },
+    {
+      "id": "R91.base2",
+      "actual": "338000/209",
+      "expected": "338000/209",
+      "scope": "Exactrationalintermediate,notraw2000/12000allocation.",
+      "pass": true
+    },
+    {
+      "id": "R91.sum",
+      "actual": "8450",
+      "expected": "8450",
+      "scope": "Commonordinarypensionceilingconserved;minersseparate.",
+      "pass": true
+    },
+    {
+      "id": "R91.wrongraw1",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Separatesactualprecapfromuncapped2jobalgorithm.",
+      "pass": true
+    },
+    {
+      "id": "R92.sameemployer(True, True)",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Onlyactual40a4no2bar;allother25%/farm5%gatesindependentlymet. Differentemployerdoesnotautomaticallybarunderthisclause.",
+      "pass": true
+    },
+    {
+      "id": "R92.sameemployer(False, True)",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Onlyactual40a4no2bar;allother25%/farm5%gatesindependentlymet. Differentemployerdoesnotautomaticallybarunderthisclause.",
+      "pass": true
+    },
+    {
+      "id": "R92.sameemployer(True, False)",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Onlyactual40a4no2bar;allother25%/farm5%gatesindependentlymet. Differentemployerdoesnotautomaticallybarunderthisclause.",
+      "pass": true
+    },
+    {
+      "id": "R93.widow(True, True, True)",
+      "actual": "True",
+      "expected": "True",
+      "scope": "BothactualstatutoryunlimitedtaxcategoriesandnotpermanentlyseparatedATDEATH;followingcalendaryear,notresidencealone.",
+      "pass": true
+    },
+    {
+      "id": "R93.widow(False, True, True)",
+      "actual": "False",
+      "expected": "False",
+      "scope": "BothactualstatutoryunlimitedtaxcategoriesandnotpermanentlyseparatedATDEATH;followingcalendaryear,notresidencealone.",
+      "pass": true
+    },
+    {
+      "id": "R93.widow(True, False, True)",
+      "actual": "False",
+      "expected": "False",
+      "scope": "BothactualstatutoryunlimitedtaxcategoriesandnotpermanentlyseparatedATDEATH;followingcalendaryear,notresidencealone.",
+      "pass": true
+    },
+    {
+      "id": "R93.widow(True, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "scope": "BothactualstatutoryunlimitedtaxcategoriesandnotpermanentlyseparatedATDEATH;followingcalendaryear,notresidencealone.",
+      "pass": true
+    },
+    {
+      "id": "R93.retroVI(3, True)",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Actualtemporary-data/nofaultbranch;fixturebothID/DOBstillmissing. Do notautomaticallyimposeretroVIonpuretechnicalproblemwithactualdataprovided.",
+      "pass": true
+    },
+    {
+      "id": "R93.retroVI(4, True)",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Actualtemporary-data/nofaultbranch;fixturebothID/DOBstillmissing. Do notautomaticallyimposeretroVIonpuretechnicalproblemwithactualdataprovided.",
+      "pass": true
+    },
+    {
+      "id": "R93.retroVI(4, False)",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Actualtemporary-data/nofaultbranch;fixturebothID/DOBstillmissing. Do notautomaticallyimposeretroVIonpuretechnicalproblemwithactualdataprovided.",
+      "pass": true
+    },
+    {
+      "id": "R93.catchupdeduct",
+      "actual": "200",
+      "expected": "200",
+      "scope": "Stipulatedactualpriorrecalculation1200versus1000withheld;differenceinNEXTpayroll,notalwayszeroorreturnonly.",
+      "pass": true
+    },
+    {
+      "id": "R93.catchuprefund",
+      "actual": "-200",
+      "expected": "-200",
+      "scope": "Stipulatedcorrectprior800versus1000withheld;negativeadjustmentrefundinNEXTpayroll.",
+      "pass": true
+    },
+    {
+      "id": "R94.combined",
+      "actual": "100",
+      "expected": "100",
+      "scope": "Independentlyestablishednetdailyinputsfromlast3settledcalendarmonths;notinventedgrossnetconversion.",
+      "pass": true
+    },
+    {
+      "id": "R94.total",
+      "actual": "87",
+      "expected": "87",
+      "scope": "Subtract13onceacrossallrelevantemployers.",
+      "pass": true
+    },
+    {
+      "id": "R94.AG1",
+      "actual": "52.2",
+      "expected": "52.20",
+      "scope": "ProportionateactualAG1dailywage.",
+      "pass": true
+    },
+    {
+      "id": "R94.AG2",
+      "actual": "34.8",
+      "expected": "34.80",
+      "scope": "ProportionateactualAG2dailywage;notdeduct13again.",
+      "pass": true
+    },
+    {
+      "id": "R94.sum",
+      "actual": "87.0",
+      "expected": "87",
+      "scope": "Combinedtopupconserved;special20(3)/(4)selectorsseparate.",
+      "pass": true
+    },
+    {
+      "id": "R95.mandatory(True, 10)",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Allotheractual42bexclusionsabsent. Nine-staffcasecanbepermitted,justnotcompelledbysize;noobsoleteunlimitedtaxgateinvented.",
+      "pass": true
+    },
+    {
+      "id": "R95.mandatory(False, 10)",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Allotheractual42bexclusionsabsent. Nine-staffcasecanbepermitted,justnotcompelledbysize;noobsoleteunlimitedtaxgateinvented.",
+      "pass": true
+    },
+    {
+      "id": "R95.mandatory(True, 9)",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Allotheractual42bexclusionsabsent. Nine-staffcasecanbepermitted,justnotcompelledbysize;noobsoleteunlimitedtaxgateinvented.",
+      "pass": true
+    },
+    {
+      "id": "R96.UVonly",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Statutorysolelyaccident-datachangeexceptiontonotification,notallreportsexcepted.",
+      "pass": true
+    },
+    {
+      "id": "R96.terminationclock",
+      "actual": "immediately after last report",
+      "expected": "immediately after last report",
+      "scope": "Actualterminationcopyclock,notpostponedtonextannual30April;nofictionalportal/runtimeclaim.",
+      "pass": true
+    }
+  ],
+  "control_count": 43,
+  "own_selected_quote_records": 15,
+  "source_checks": [
+    {
+      "id": "R62-70.RECOVER",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R62-70.MINI",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R62-70.UVREPORT",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R62-70.AVERAGE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R62-70.CEILING",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R62-70.AAGBASE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R62-70.MINEXCEPT",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R62-70.NIGHT",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R62-70.NIGHTSV",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R62-70.SICK",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R62-70.SICKPAY",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R62-70.PAPVALUES",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R69.ANNUAL",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R67.BMG-rate",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R67.BMG-ceiling",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R69.SGBX26",
+      "identity_and_quote_pass": true,
+      "kind": "Faithful operative WebL13 in retained official web-tool response JSON, not rawHTML",
+      "own_new_selected": true
+    },
+    {
+      "id": "A.TARIFF",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.SPLIT",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.SOLILIMIT",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.SoliRate",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.CHURCHRATE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.EMPLOYEE1230",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.LUMPSUM",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.SINGLE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.PENSIONRATE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.PENSIONSHARE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.HRATE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.HSHARE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.CARERATE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.CARESHARE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.FILE2",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.FILE5a",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.AO108",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.AO240-1",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.AO152-1",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.SOLIPERIOD",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.TAXDUTY",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.LIABILITY",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.TOTALSV",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.RECOVER",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.MISSING",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.NUMBER",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.MINI",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.MIDI",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.IMMEDIATE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.UVREPORT",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.ELSTAM",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.TAXACCOUNT",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.SVACCOUNT",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.FUND",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.WITHHOLD",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.BONUS",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.CLASS",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.FACTOR",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.CHILDBASE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.AVRATE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.AVSHARE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.AVOLD",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.CARECAP",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.CAREPROOF",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.REDUCEDKV",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.AVERAGE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.CEILING",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.RVCEILING",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.JAEG",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.SPECIALJAEG",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.KV2027",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.SEVERAL",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.SVMARCH",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.RVOLD",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.AAG",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.AAGBASE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.INSOLVENCY",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.INSOLVBASE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.MINWAGE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.MINIKV",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.MINIRELEASE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.FLATTAX",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.PAYSLIP",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.EBV",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.EBV2",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.WAGEDUE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.TIMERECORD",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.MINEXCEPT",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.NIGHT",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.NIGHTSV",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.SICK",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.SICKPAY",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.MATERNITY",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.ADJUST",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.FILING",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.SVDUE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.SVLATE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.REG",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.DEREG",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.INTERRUPT",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.CHANGE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.ANNUAL",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.CERT",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.CERTCOPY",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.CERTDUE",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.KVVOL",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.WAGE2025",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.AKT",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.AKTWHO",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.AKTHOW",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.AKTPART",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.AKTPAYROLL",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.PAPYEAR",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.PAPVALUES",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.PAPKVZ",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.ALV",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.KRV",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.PVMARK",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.CHILDPAP",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.PAPTABLE20",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.PAPTABLE60",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.PAPTABLE100",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.PAPVSP",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.PAP2025YEAR",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.PAP2025VALUES",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "A.AO152-8",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.churchbase",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.2026JAEG",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.account",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.fundrate",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.V-VI-flow",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.average2026",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.contributioncalc",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.AO108.weekend",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.AO240.surcharge",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.PAPparams",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.Aktiv-bonus",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.SAP",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.healthallocation",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.deregister",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.employer",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.healthceiling",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.PAP-ALV",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.U1U2",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.payslip",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.employee",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.Soli-rate",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.insolvency",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.PAPscope",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.Aktiv-VI",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.accidentassessment",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.employernumber",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.rounding",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.postingin",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.annualreport",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.minimumdue",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.retirementAV",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.missingdata",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.sickamount",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.PAPtests",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.Aktiv-priorpay",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.wagetax",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.minimumwage",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.liability",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.statements",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.treatyELStAM",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.immediate",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.latefilingformula",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.classes",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.immediatenormal",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.sv-taxfree",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.transition",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.hours",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.minimumexclusions",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.latefiling",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.healthrate",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.PAP-PVA",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.unemploymentrate",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.carebase",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.overridinglaw",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.interrupt",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.factorF",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.night",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.twojobs",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.PAP-PKV",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.annualadjust",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.AO240.grace",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.PAPVSP",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.employeeformula",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.oldminimum",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.postingout",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.singleparent",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.pensionceiling",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.insolvencybase",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.carechildren",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.Aktiv-SV",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.minijob",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.sick",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.svlate",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.AVallocation",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.payslipexceptions",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.factor",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.multijob",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.PAPrate",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.deduct",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.certificate",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.reduced",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.miniflat",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.PAP-KRV",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.ELStAM",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.JAEGcontinue",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.PAP2025period",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.retirementRV",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.certificateend",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.A1",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.payslipfields",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.register",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.oneoff",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.bonus",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.healthmini",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.Aktiv-monthfraction",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.Soli-base",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.pensionallocation",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.Aktiv-months",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.careshare",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.svdue",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.pensionmini",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.maternity",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.Aktivrente",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.minirelease",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.change",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.GT.church-admin",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.Aktiv-eligibility",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.PAP2025params",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.collector",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.pensionhalf",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.totalformula",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.nonresidentoffice",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.wagefiling",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.bonusreturn",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.FR.miners-rate",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.Ulevy",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.careceiling",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PR.ANP",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.FR.tariff",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.SC.healthsubsidy",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "R89.employershare",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R92.flat",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R93.classes",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R93.missing",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R89.calculation",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R91.multijob",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R94.maternity",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R96.copy",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R88.weekend",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R88.certificate",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R88.deadline",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R95.adjust",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R89.minimum",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R90.tariff",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R91.rounding",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    }
+  ],
+  "pairs": [
+    {
+      "slug": "de-payroll",
+      "ops": 14,
+      "all_native_rows_full_inverse_old_identities": true,
+      "original_worked_section_and_oa_exact": true,
+      "oa_blocks": 2,
+      "oa_failures": [],
+      "schema_errors": [],
+      "schema_warnings": [],
+      "diff_returncode": 0,
+      "schema_stdout": "checked 1 guides (0 non-guide .md files skipped)\n"
+    },
+    {
+      "slug": "germany-payroll",
+      "ops": 14,
+      "all_native_rows_full_inverse_old_identities": true,
+      "original_worked_section_and_oa_exact": true,
+      "oa_blocks": 0,
+      "oa_failures": [],
+      "schema_errors": [],
+      "schema_warnings": [],
+      "diff_returncode": 0,
+      "schema_stdout": "checked 1 guides (0 non-guide .md files skipped)\n"
+    }
+  ],
+  "original_writer_manifests": [
+    {
+      "manifest": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R62-R70-payroll-writer-successor-2026-10-29/artifact-manifest.json",
+      "sha256": "345cd51a8d92b7c1d828d42adac272d4e6897485843805f37c584ba40e377c7d",
+      "members": 25,
+      "mismatches": 0
+    }
+  ]
+}

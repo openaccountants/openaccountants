@@ -1,0 +1,241 @@
+Zu ZUGFeRD
+DE
+EN
+Suche
+AWV-Forum
+Menü
+Über uns
+FeRD und Competence Center
+CC1
+CC2
+CC3
+FeRD Mitglieder
+Deutsch-Französische Partnerschaft
+Mitwirken im FeRD
+Ansprechpersonen
+Aktuelles
+Rechtliche Rahmenbedingungen
+Veranstaltungen
+Meldungen
+Newsletter
+Standards und FAQs
+Order-X
+ZUGFeRD/Factur-X
+FAQs
+Technisches zur E-Rechnung
+Pflichtangaben in E-Rechnungen
+Zu ZUGFeRD
+ZUGFeRD-Beispielrechnungen
+Downloads
+Veröffentlichungen
+ZUGFeRD-Logo
+Direkt zu
+Direkt zu
+Bleiben Sie informiert!
+Erfahren Sie Neuigkeiten über Fachthemen und Veranstaltungen.
+zum Newsletter anmelden
+Seien Sie dabei!
+Ihnen gefällt, wofür sich das Forum elektronische Rechnung Deutschland einsetzt?
+mitwirken und vernetzen
+Erfahren Sie mehr!
+Wir entwickeln Lösungen für die gesamte supply chain.
+direkt zu unseren Standards
+Zu ZUGFeRD
+FeRD
+Standards und FAQs
+FAQs
+Zu ZUGFeRD
+FAQs
+Technisches zur E-Rechnung
+Pflichtangaben in E-Rechnungen
+Zu ZUGFeRD
+ZUGFeRD-Beispielrechnungen
+Zu ZUGFeRD
+Was genau ist ZUGFeRD/Factur-X?
+ZUGFeRD/Factur-X ist ein branchenübergreifendes, hybrides Datenformat für den elektronischen Rechnungsaustausch, das sich aus einer PDF/A-3-Datei (Sichtformat) und einer eingebetteten XML-Datei (maschinenlesbar) zusammensetzt. So lässt sich die Rechnungsverarbeitung automatisieren, während dem Empfänger gleichzeitig die Möglichkeit eingeräumt wird, die Rechnung manuell zu erfassen.
+Das „Forum elektronische Rechnung Deutschland“ (FeRD) entwickelt dieses Format zusammen mit dem „Französischen Nationalen Forum für Elektronische Rechnung sowie der Öffentlichen Elektronischen Märkte“ (FNFE-MPE) seit 2014 kontinuierlich weiter. Ab der Version 2.0 vom 24.03.2020 sind Factur-X und ZUGFeRD deckungsgleich.
+Das hybride Rechnungsformat lässt sich vielfältig einsetzen. Sowohl im B2B-, im B2C- als auch in Deutschland im B2G-Geschäftsverkehr kann ZUGFeRD eingesetzt werden. Solche Vielseitigkeit erstreckt sich auch über eine große Bandbreite an Geschäftsvorfällen. Um dem Anwender die Verwendung von ZUGFeRD/Factur-X zu erleichtern, hat man fünf sogenannte „Profile“ entwickelt, wovon drei nach deutschem Recht als Rechnung gelten (EN 16931, EXTENDED, BASIC). Die Profile stellen einen, der jeweiligen Unternehmensgröße und -komplexität entsprechenden Satz an Pflicht- und Wahlelementen für die Erstellung einer ordnungsgemäßen E-Rechnung gemäß der EU-Norm EN16931. Dies ist sinnvoll, denn ein Bäcker mit drei Angestellten wird deutlich einfachere Buchhaltungsprozesse haben als ein internationaler Konzern mit mehreren Standorten. Für letzteren werden in seiner Rechnung deutlich mehr Elemente erforderlich sein, wie Anschrift des Hauptsitzes, Rechnungs- bzw. Postanschrift usw. Die Strukturierung dieser Profile basiert auf den Grundsätzen von ZUGFeRD/Factur-X und wird demgemäß vom FeRD und FNFE-MPE verantwortet.
+Darüber hinaus wurde 2022 ein Referenzprofil definiert, bei dem lediglich die Methode der Einbindung einer normkonformen XML-Datei beschrieben wird. Damit ist es möglich, länderspezifische Ausprägungen der EU-Norm (sog. CIUS, Core Invoice Usage Specification) wie den Standard XRechnung im Format ZUGFeRD/Factur-X zu berücksichtigen. Das deutsche ZUGFeRD-Referenzprofil heißt daher auch „Referenzprofil XRECHNUNG“.
+Was ist ein hybrides Rechnungsformat?
+Ein hybrides Rechnungsformat kombiniert eine menschenlesbare PDF/A‑Darstellung mit eingebetteten XML‑strukturierten Daten für die maschinelle Weiterverarbeitung. Der strukturierte Datensatz gilt dabei als führender Teil; der Sichtteil ist eine bildhafte Repräsentanz derselben Rechnung.
+Hybride Formate schließen die Lücke zwischen klassischem Belegbild und automatisierbarer E‑Rechnung, indem sie Lesbarkeit und Prozessfähigkeit in einer Datei vereinen.
+Aufbau und Technik
+Technisch dient meist ein PDF/A‑3 als Container; die Rechnungsdaten werden als XML in das PDF eingebettet und können automatisiert ausgelesen werden.
+Entscheidend ist die inhaltliche Identität beider Teile; Abweichungen sind fachlich wie steuerlich riskant. Für Zwecke der Umsatzsteuer wird in Deutschland faktenbasiert auf den strukturierten Rechnungsteil abgestellt (führender Teil); der Bildteil ist dann nur ein inhaltlich identisches Mehrstück.
+Vorteile und Herausforderungen
+Vorteile sind eine hohe Automatisierbarkeit (Import der strukturierten Daten in ERP/Buchhaltung), belastbare Archivierung durch PDF/A‑Konformität und gleichzeitig unmittelbare Lesbarkeit für Prüfer und Fachbereiche.
+Herausforderungen liegen im zusätzlichen Erstellungs‑ und Validierungsaufwand sowie im Risiko inkonsistenter Inhalte zwischen Sicht‑ und Datenteil, weshalb Kontrollmechanismen zur Sicherung identischer Inhalte (PDF/XML) empfehlenswert sind.
+Bedeutung in der Praxis
+In der Praxis erleichtern hybride Rechnungsformate die Einführung standardisierter E‑Rechnungsprozesse, weil sie einen lesbaren Beleg mit einem führenden, automatisierbaren Datensatz verbinden.
+Welche Anforderungen gibt es bei ZUGFeRD/Factur-X an das PDF-Format (Stichwort: hybrider Beleg)?
+Anforderung an das PDF
+Die PDF-Datei sollte dem PDF/A-3 Format entsprechen, das ist eine Version des Portable Document Formats zur Langzeitarchivierung. Es wurde von der International Organization for Standardization (ISO) im Standard ISO-19005-3 genormt.
+Die Spezifikation von PDF/A-3 schränkt die technischen Möglichkeiten von PDF 1.7 ein und erfordert beispielsweise, dass alle im sichtbaren Teil des PDF enthaltenen Schriftarten zusätzlich in die PDF-Datei eingebettet werden müssen, damit Texte auch nach vielen Jahren noch korrekt angezeigt werden können.
+Anforderung an das eingebettete XML
+Das E-Rechnungs-XML muss eine gültigen E-Rechnungsprofilen entsprechen, z.B. EN16931, EXTENDED oder XRechnung in der Syntax UN/CEFACT CII.
+In der aktuellen Version des ZUGFeRD/Factur-X-Standards ist pro PDF/A-3-Dokument die Referenzierung auf jeweils nur ein Rechnungsdatendokument zulässig (bezeichnet mit „factur-x.xml“ bzw. „xrechnung.xml“).
+Hinweis aus Spezifikation von ZUGFeRD/Factur-X
+Ab dem 01.01.2025 ist in Deutschland das in das Hybriddokument eingebettete XML die Rechnung. Wenn das XML gültig ist (erfolgreiche Validierung aller Geschäftsregeln, die für die nationale Anforderungen in Deutschland gelten) und aus dem PDF extrahiert werden kann, handelt es sich um eine gültige E-Rechnung. Technische Fehler in Bezug auf den PDF/A-Standard sind lediglich als Warnung zu beachten und sind keine schwerwiegenden Fehler. Dennoch KANN der Empfänger der Rechnung den Absender auffordern, eine aktualisierte und korrigierte Version zu liefern, die dem PDF/A-Standard entspricht.
+Ist ZUGFeRD/Factur-X eine Softwareanwendung?
+Einordnung
+In der Praxis werden E‑Rechnungsstandards häufig mit den Softwareprodukten verwechselt, die sie technisch umsetzen.
+Klare Antwort
+Nein: ZUGFeRD/Factur‑X ist keine Softwareanwendung, sondern ein (hybrides) Rechnungsformat bzw. eine Spezifikation, die vom Forum elektronische Rechnung Deutschland (FeRD) veröffentlicht und koordiniert wird in Zusammenarbeit mit dem französischen Partnerforum für E-Rechnungen FNFE-MPE.
+Begründung
+ZUGFeRD/Factur‑X definiert den Dokumentenaufbau einer Rechnung als PDF/A‑3 mit eingebettetem XML‑Datensatz mit strukturierten Daten: Das PDF ist die visuelle, menschenlesbare Repräsentanz, das XML dient der maschinellen Weiterverarbeitung; beide Teile müssen inhaltlich zusammenpassen.
+Erzeugen, Versenden, Empfangen, Validieren und Verarbeiten erledigt hingegen Software, die das Format implementiert; vergleichbar beschreibt der von Koordinierungsstelle für IT-Standards (KoSIT) betriebene Standard XRechnung ausdrücklich den Empfang und die Weiterverarbeitung durch unterschiedliche Softwaresysteme.
+Praxisvermerk
+Rechtlich verlangt u.a. die Europäische Union im B2G‑Kontext (Richtlinie 2014/55/EU), dass öffentliche Stellen EN‑16931‑konforme E‑Rechnungen empfangen und verarbeiten können, sowie das Wachstumschancengesetz in Deutschland im B2B-Kontext – ohne eine bestimmte Software vorzuschreiben; deshalb existieren viele Implementierungen, während ZUGFeRD/Factur‑X selbst „nur“ das Format festlegt.
+Wie viele Profile gibt es von ZUGFeRD/Factur-X?
+Einordnung
+Bei ZUGFeRD/Factur‑X steuern „Profile“ den Datenumfang des strukturierten XML‑Teils und damit, wie weit Prozesse automatisiert werden können.
+Anzahl und offizielle Bezeichnungen
+Im Kernstandard gibt es fünf Datenprofile mit den offiziellen Bezeichnungen:
+MINIMUM
+BASIC WL
+BASIC
+EN 16931 (COMFORT) und
+EXTENDED
+Zusätzlich existiert ein Referenzprofil XRECHNUNG.
+Das Forum elektronische Rechnung Deutschland (FeRD) bezeichnet es ausdrücklich als „sechstes Profil“ (eingeführt ab ZUGFeRD Version 2.1.1).
+Damit lautet die exakte Antwort je nach Zählweise: 5 (nur Datenprofile) bzw. 6 (inkl. Referenzprofil XRECHNUNG).
+EN 16931‑Konformität und Referenzprofil
+Als EN‑16931‑konform im Sinne der vollständigen Abbildung wird das Profil EN 16931 (COMFORT) beschrieben; EXTENDED baut darauf auf und erweitert den Umfang.
+Das Referenzprofil XRECHNUNG ist an die jeweils gültige XRechnung‑Spezifikation angebunden, die von Koordinierungsstelle für IT-Standards (KoSIT) veröffentlicht wird. Im ZUGFeRD‑Referenzprofil ist dabei nur die XML‑Syntax CII zulässig (XRechnung erlaubt CII und UBL).
+Praxis-Hinweis
+Die Profile unterscheiden sich primär durch Detailtiefe (von MINIMUM/BASIC WL bis EN 16931/EXTENDED). Für interoperable EU‑Szenarien wird üblicherweise EN 16931 bzw. XRECHNUNG verlangt oder vereinbart.
+Welche ZUGFeRD/Factur-X-Profile gibt es?
+Es gibt sechs ZUGFeRD/Factur-X-Profile, die sich im Umfang der standardisierten Daten und in Bezug auf die Rechnungskonformität gemäß dem Umsatzsteuer­gesetz (UStG) unterscheiden. Um EU-konforme elektronische Rechnungen zu erstellen, ist die Rechnungsstellung mit dem ZUGFeRD-Profil EN 16931 zu empfehlen.
+Profil: EN 16931 (COMFORT)
+Das EN 16931 (COMFORT)-Profil bildet die EN 16931-1 vollständig ab und fokussiert auf Kernelemente einer elektronischen Rechnung.
+In Deutschland nach UStG als vollständige Rechnung anerkannt: Ja
+Empfang und Verarbeitung der Rechnung beim Käufer: Pflicht.
+Profil: EXTENDED
+Das Profil EXTENDED ist eine Erweiterung der EN 16931-1 zur Unterstützung komplexerer Geschäftsprozesse (Rechnungen, in denen über mehrere Lieferungen/Lieferorte abgerechnet wird, strukturierte Zahlungsbedingungen, weitere Angaben auf Positionsebene zur Unterstützung der Lagerhaltung etc.)
+In Deutschland nach UStG als vollständige Rechnung anerkannt: Ja
+Empfang und Verarbeitung der Rechnung beim Käufer: bilaterale Vereinbarung.
+Profil: BASIC
+Das Profil BASIC stellt eine Untermenge der EN 16931-1 dar und kann für einfache UStG-konforme Rechnungen genutzt werden.
+In Deutschland nach UStG als vollständige Rechnung anerkannt: Ja
+Empfang und Verarbeitung der Rechnung beim Käufer: bilaterale Vereinbarung.
+Profil: BASIC WL
+Das Profil BASIC WL beinhaltet keine Rechnungspositionen und kann somit keine UStG-konformen Rechnungen abbilden. Es enthält jedoch auf Dokumentenebene alle Informationen, die zur Buchung der Rechnung benötigt werden. Es stellt somit eine Buchungshilfe dar.
+In Deutschland nach UStG als vollständige Rechnung anerkannt: Nein.
+Profil: MINIMUM
+Das Profil MINIMUM enthält die wesentlichen Angaben zu Käufer und Verkäufer, den Gesamtrechnungsbetrag und die Gesamtumsatzsteuer. Auf Positionsebene kann nur die Referenz des Käufers angegeben werden. Eine Aufschlüsselung der Umsatzsteuer wird nicht unterstützt. Es stellt somit eine Buchungshilfe dar.
+In Deutschland nach UStG als vollständige Rechnung anerkannt: Nein.
+Referenzprofil: XRECHNUNG
+Ein neuer Profiltyp wurde zum ursprünglichen Konzept von ZUGFeRD/Factur-X hinzugefügt, das sogenannte „Referenzprofil“. Damit lassen sich externe XML-Strukturen in ein PDF einbinden, so wie beispielsweise die des von der Koordinierungsstelle für IT-Standards (KoSIT) verantworteten deutschen Standards XRechnung. (Darauf wird im ZUGFeRD-Referenzprofil durch die Bezeichnung als „Referenzprofil XRECHNUNG“ Bezug genommen.)
+In Deutschland nach UStG als vollständige Rechnung anerkannt: Ja
+Empfang und Verarbeitung der Rechnung beim Käufer: Pflicht.
+Kann ich ZUGFeRD Version 1.0 weiterverwenden?
+Der Gesetzgeber schreibt vor, dass ZUGFeRD-Dateien nur ab der Version 2.01 (mit Ausnahme der Profile MINIMUM und BASIC‑WL) als E-Rechnung gemäß Wachstumschancengesetz anerkannt werden.
+Wie lange sind ältere ZUGFeRD-Versionen einsetzbar?
+Der ZUGFeRD-Standard wird, genau wie die XRechnung der Koordinierungsstelle für IT-Standards (KoSIT) auch, stetig weiterentwickelt.
+Aber anders als bei XRechnung, wo nur die aktuelle veröffentliche Version eingesetzt werden darf, haben die ZUGFeRD Spezifikationen kein Ablaufdatum.
+(Ausnahme ist das Profil XRECHNUNG, da müssen Form und Inhalt der gültigen Spezifikation entsprechen).1
+1Beitrag „Änderungen im ZUGFeRD-Versionsmanagement“ vom 22.07.2022
+Wo kann ich Skonto in ZUGFeRD abbilden?
+Skonto kann im BT-20: „Zahlungsbedingungen“ angegeben werden, dabei stehen je nach genutztem ZUGFERD/Factur-X-Profil unterschiedliche Möglichkeiten zur Verfügung:
+In den Profilen „BASIC“ und „EN16931“ gibt es keine Möglichkeit einer strukturierten Angabe, es kann nur als Klartext übermittelt werden.
+<ram:SpecifiedTradePaymentTerms>
+<ram:Description>
+Bei Zahlung innerhalb 14 Tagen gewähren wir 2,0% Skonto.
+</ram:Description>
+Im Profil „EXTENDED“ können die dafür vorgesehenen Felder des Cross IndustryInvoice XML-Formats genutzt werden (strukturierte Angabe).
+<ram:SpecifiedTradePaymentTerms>
+<ram:Description>
+Bei Zahlung innerhalb 14 Tagen gewähren wir 2,0% Skonto.
+</ram:Description>
+<ram:ApplicableTradePaymentDiscountTerms>
+<ram:BasisPeriodMeasure unitCode="DAY">14</ram:BasisPeriodMeasure>
+<ram:BasisAmount>285</ram:BasisAmount>
+<ram:CalculationPercent>2.00</ram:CalculationPercent>
+</ram:ApplicableTradePaymentDiscountTerms>
+</ram:SpecifiedTradePaymentTerms>
+Darüber hinaus gibt es im Referenzprofil „XRECHNUNG“ die Möglichkeit, die auf der E-Rechnungsseite des Bundes beschriebene Notation zu verwenden.
+<ram:SpecifiedTradePaymentTerms>
+<ram:Description>
+#SKONTO#TAGE=14#PROZENT=2.00#
+</ram:Description>
+Quelle:
+Allgemeine Dokumente zur elektronischen Rechnungsstellung auf der Internetseite des Beschaffungsamts des BMI: https://e-rechnung-bund.de/mediathek/dokumente/
+(dort Hinweis 6 in PDF-Dokument „05 Hinweise zur Rechnungsstellung“)
+Alternativ: Beschaffungsamt des BMI: Sieben Hinweise für den reibungslosen elektronischen Rechnungsaustausch mit der Bundesverwaltung
+(https://e-rechnung-bund.de/app/uploads/2025/09/Hinweise-zur-Rechnungsstellung_092025.pdf)
+(Stand vom 07.09.2026)
+Wie kann ich rechnungsbegründende Unterlagen mitschicken?
+Rechnungsbegleitende Unterlagen müssen (Base64 codiert) in die ZUGFeRD/Factur-X.xml-Datei eingebettet sein.
+Solche Unterlagen können nur in den Profilen „EN16931“ und „EXTENDED“ verwendet werden.
+Optional können diese als weiterer Anhang in die PDF-Datei eingebunden werden (in allen Profilen verfügbar).
+So viele Belegarten für E-Rechnungen, wohin fließt das Geld?
+In der ZUGFeRD/Factur-X-Dokumentation (Stand: ZUGFeRD 2.3/Factur-X 1.0.07) sind über 50 zulässige Codes als Rechnungstypen (BT-3) aufgelistet. In der Grafik unten sind die gebräuchlichsten davon dargestellt mit der Richtungsangabe des Geldflusses in Abhängigkeit vom positiven oder negativen Rechnungsgesamtbetrag (BT-112).
+Wie wird eine ZUGFeRD/Factur-X-Rechnung versandt?
+Die Art des Versandes einer ZUGFeRD-Rechnung ist nicht festgelegt. Aktuell werden Rechnungen häufig als E-Mail-Anhang versandt, aber auch andere Sendemethoden, wie z.B. ein Datei-Upload, eine Übertragung via USB-Stick oder über Rechnungsportale sind möglich. Die Nutzung von Übertragungsnetzwerke wie beispielsweise Peppol ist auch möglich.
+Sollte eine ZUGFeRD/Factur-X Rechnung validiert werden?
+Eine gesetzliche Pflicht zur Validierung gibt es nicht.
+Das Bundesministerium der Finanzen (BMF) hält jedoch in seinen FAQ (Frage 7) fest: „[…] Eine Validierung ist daher [weil sie z.B. auf fehlende oder unlogische Pflichtangaben hinweist, Anm. d. Red.] sinnvoll. Es wird empfohlen, diese bereits bei Erstellung und Versand einer E-Rechnung durchzuführen […].“
+Zudem heißt es im BMF-Schreiben vom 15.10.2025 (RZ. 35a): „[…] Ein Unternehmer kann sich bei Beachtung der Sorgfaltspflichten eines ordentlichen Kaufmanns auf das technische Ergebnis einer Validierung (hinsichtlich des Formats und der Geschäftsregeln) durch eine geeignete Validierungsanwendung verlassen. Zum Nachweis bietet es sich an, den Validierungsbericht aufzubewahren.“
+Aus Gründen der Gleichbehandlung aller Marktteilnehmer spricht das BMF jedoch keine Empfehlung für eine bestimmte Validierungssoftware aus.
+Wie kann eine ZUGFeRD/Factur-X-Rechnung validiert werden?
+Das FeRD stellt für jede neue ZUGFeRD/Factur-X-Version ein kostenfreies Infopaket bereit, das alle notwendigen Informationen und technischen Unterlagen (wie Schema- und XSLT-Dateien sowie Codelisten) für die Validierung enthält.
+Softwareanbieter können auf dieser Basis eigene Lösungen zur Validierung entwickeln.
+Es existieren aber bereits verschiedene freie und kommerzielle Angebote, die eine Validierung ermöglichen.
+Wo gibt es weitere Informationen zur E-Rechnung im B2B-Bereich in Deutschland?
+(Stand vom: 07.09.2026)
+Beschaffungsamt des Bundesministeriums des Innern:
+https://www.e-rechnung-bund.de/e-rechnung/e-rechnung-zwischen-unternehmen-b2b
+Internetseite des Bundesministeriums der Finanzen:
+https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.htm
+BMF-Schreiben vom 15.10.2024:
+„Ausstellung von Rechnungen nach § 14 UStG; Einführung der obligatorischen elektronischen Rechnung bei Umsätzen zwischen inländischen Unternehmern ab dem 1. Januar 2025“
+BMF-Schreiben vom 15.10.2025:
+„Einführung der obligatorischen elektronischen Rechnung bei Umsätzen zwischen inländischen Unternehmern ab dem 1. Januar 2025“
+https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf
+Weitere Informationen finden Sie auch auf den Seiten der FeRD-Mitglieder.
+Was passiert bei Widersprüchen zwischen PDF und XML bei ZUGFeRD?
+Bei ZUGFeRD/Factur-X als hybridem Format kann es vorkommen, dass die Darstellung im PDF und die Daten im XML-Teil nicht übereinstimmen.
+Wichtig: Der strukturierte Teil (XML) ist führend!
+Nach der ZUGFeRD-Spezifikation und den gesetzlichen Vorgaben gilt seit dem 1. Januar 2025:
+Das eingebettete XML stellt die eigentliche E-Rechnung dar
+Das PDF dient ausschließlich der menschlichen Lesbarkeit
+Bei Widersprüchen ist das XML maßgeblich für die Buchhaltung
+Hintergrund der Regelungsänderung: Bis zum 31. Dezember 2024 ging bei einem hybriden Format im Falle einer Abweichung zwischen elektronischer Information und dem lesbaren Bildteil der Bildteil vor. Mit Einführung der obligatorischen E-Rechnung hat sich dieses Verhältnis umgekehrt. Bei hybriden E-Rechnungen bilden nunmehr die im strukturierten Teil (XML) vorliegenden Rechnungsdaten den führenden Teil.
+Empfehlung:
+Rechnungsaussteller:
+Sorgfältige Prüfung vor dem Versand, ob PDF und XML identische Inhalte aufweisen
+Rechnungsempfänger:
+Es empfiehlt sich, den übermittelten XML-Teil zu visualisieren, validieren und zu verarbeiten. Bei relevanten Abweichungen zwischen PDF und XML sollte Klärung mit dem Aussteller erfolgen.
+Ist ZUGFeRD EXTENDED EN 16931-konform und rechtlich im Sinne einer E-Rechnung zulässig?
+Das Forum elektronische Rechnung Deutschland (FeRD) weist darauf hin, dass ZUGFeRD EXTENDED ein zulässiges Format für elektronische Rechnungen nach § 14 UStG ist.
+ZUGFeRD EXTENDED basiert auf dem Datenmodell der EN 16931 und erweitert dieses um zusätzliche strukturierte Informationen und Geschäftsszenarien. „EXTENDED“ bedeutet daher nicht „außerhalb der EN 16931“. Vielmehr können die Anforderungen der EN 16931 (wie im Profil ZUGFeRD EN 16931) vollständig abgebildet und gleichzeitig zusätzliche Geschäftsinformationen strukturiert übertragen werden.
+Die Rechtslage ist eindeutig
+Nach § 14 UStG muss eine E-Rechnung in einem strukturierten elektronischen Format ausgestellt, übermittelt und empfangen werden, dass eine elektronische Verarbeitung ermöglicht. Das Bundesministerium der Finanzen (BMF) stellt hierzu ausdrücklich fest:
+„Insbesondere das hybride Format ZUGFeRD ab der Version 2.0.1 – ausgenommen die Profile MINIMUM und BASIC-WL – […] fällt somit unter die zulässigen E-Rechnungs-Formate.“
+ZUGFeRD EXTENDED ist von diesen Ausnahmen nicht betroffen.
+Damit ist die Verwendung von ZUGFeRD EXTENDED nach geltender Rechtslage grundsätzlich zulässig.
+ZUGFeRD EXTENDED ist nicht XRechnung
+Das europäische Datenmodell EN 16931, das Rechnungsformat ZUGFeRD und der Rechnungsstandard XRechnung der KoSIT dürfen bei der Validierung nicht gleichgesetzt werden.
+XRechnung enthält zusätzliche nationale Vorgaben und Validierungsregeln. Diese sind nicht automatisch auf eine ZUGFeRD EXTENDED-Rechnung anzuwenden.
+Eine valide ZUGFeRD EN16931 oder ZUGFeRD EXTENDED-Rechnung kann deshalb bei einer ausschließlichen Prüfung nach XRechnungsregeln Fehlermeldungen erzeugen, ohne dass die Rechnung deshalb fehlerhaft oder rechtlich unzulässig ist.
+Das verwendete Rechnungsformat muss mit dem dafür vorgesehenen Regelwerk validiert werden.
+FeRD empfiehlt Rechnungsempfängern und E-Rechnungs-Dienstleistern daher sicherzustellen, dass ihre Systeme neben XRechnung auch ZUGFeRD EN16931 und ZUGFeRD EXTENDED korrekt erkennen und validieren können.
+Bitte beachten: Beim Austausch von ZUGFeRD EXTENDED-Rechnungen muss dieser vorher zwischen Rechnungssteller und Rechnungsempfänger vereinbart werden. Alle anderen ZUGFeRD-Profile können ohne vorherige Absprache versendet werden.
+Weitere Informationen
+ZUGFeRD – Spezifikationen und Downloads des FeRD
+§ 14 UStG – Gesetze im Internet
+BMF – Fragen und Antworten zur E-Rechnung
+XRechnung – Versionen und Bundles
+Die Antwort auf Ihre Fragen war nicht dabei?
+Wenden Sie sich gerne an unser → Help Center.
+Nach oben
+Service
+Kontakt
+Impressum
+Datenschutz
+Barrierefreiheit
+Direkt zu
+Download Order-X
+Download ZUGFeRD
+FeRD Newsletter
+Cookie-Einwilligungen widerrufen © 2026 AWV e.V.

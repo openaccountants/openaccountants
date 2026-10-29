@@ -1,0 +1,29 @@
+--- before
++++ after
+@@ -1,7 +1,7 @@
+ ---
+ name: de-rental-income
+ description: "German income from letting property held privately (Einkünfte aus Vermietung und Verpachtung, § 21 EStG), tax year 2026. Covers what counts as rent and Werbungskosten (§ 9 EStG), building depreciation at 2%, 2.5% or 3% (§ 7(4)), the 5% declining-balance AfA for new housing (§ 7(5a)) and § 7b special depreciation for new rental flats, maintenance versus acquisition-related production cost (the 15% three-year rule) and § 82b EStDV spreading, cheap lets to relatives (the 50% and 66% rules), holiday and short-term lets and the intention to make a surplus, losses, the ten-year rule on a sale (§ 23), Anlage V and deadlines. Trigger on: Mieteinnahmen, Vermietung, Anlage V, AfA Gebäude, Werbungskosten Vermietung, anschaffungsnahe Herstellungskosten, verbilligte Vermietung, Ferienwohnung, Spekulationsfrist, rental income Germany. Out of scope: property in a business or a trade in property (de-trade-tax), the tariff (de-einkommensteuer-freelancer), non-resident landlords (de-non-resident-tax), sales beyond the ten-year test (de-capital-gains), VAT returns (germany-vat-return)."
+-version: 1.4
++version: 1.5
+ jurisdiction: DE
+ tax_year: 2026
+ last_updated: 2026-10-29
+@@ -118,7 +118,7 @@
+ 
+ ### Furniture
+ 
+-A furniture surcharge is rent. Furniture and fitted kitchens are depreciated over their useful life (§ 7(1) EStG; lines 42 to 45). An item usable on its own costing not more than EUR 800 net may be deducted at once ([§ 6(2) EStG](https://www.gesetze-im-internet.de/estg/__6.html) through § 9(1) no. 7). How a furniture surcharge enters the cheap-let comparison is not on an official page read: refer.
++A furniture surcharge is rent. Furniture and fitted kitchens are depreciated over their useful life (§ 7(1) EStG; lines 42 to 45). An item usable on its own costing not more than EUR 800 net may be deducted at once ([§ 6(2) EStG](https://www.gesetze-im-internet.de/estg/__6.html) through § 9(1) no. 7). For the cheap-let comparison, use a furniture adjustment already provided by the local rent index without adding it twice. Otherwise add a surcharge only if it can be established from the local market for furnished lets; if no market value can be determined, no surcharge is added. Never derive it from monthly furniture AfA or a standard investment return ([BFH, 6 February 2018, IX R 14/17, paras. 18 to 20](https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201810105?type=1646225765)).
+ 
+ ### Cheap lets: the 50% and 66% rules ([§ 21(2) EStG](https://www.gesetze-im-internet.de/estg/__21.html))
+ 
+@@ -337,7 +337,7 @@
+ | ELSTER instructions to the 2025 return, Anlage V, V-FeWo, V-Sonstige | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025 | 2026-10-24 |
+ | ELSTER instructions to the 2026 return (page empty when read) | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2026 | 2026-10-24 |
+ 
+-Not yet confirmed: the 2026 Anlage V form and instructions (the recorded route returned no substantive content; line numbers are from 2025); any BMF update to the letter of 8 October 2004 after the retained 2024 handbook (the checked 2025 handbook route remained inaccessible); the BMF letter of 22 February 2023 on a shorter actual useful life; whether a let property can be a first place of activity for travel; how a furniture surcharge enters the cheap-let test; AfA in the month of sale; heirs under § 23(1) sentence 3; treaty treatment of foreign rental property; the BMF letter of 21 October 2026 on paid waiver of usufruct (Nießbrauch), not read.
++Not yet confirmed: the 2026 Anlage V form and instructions (the recorded route returned no substantive content; line numbers are from 2025); any BMF update to the letter of 8 October 2004 after the retained 2024 handbook (the checked 2025 handbook route remained inaccessible); the BMF letter of 22 February 2023 on a shorter actual useful life; whether a let property can be a first place of activity for travel; AfA in the month of sale; heirs under § 23(1) sentence 3; treaty treatment of foreign rental property; the BMF letter of 21 October 2026 on paid waiver of usufruct (Nießbrauch), not read.
+ 
+ <!-- openaccountants-cta-block -->
+ 

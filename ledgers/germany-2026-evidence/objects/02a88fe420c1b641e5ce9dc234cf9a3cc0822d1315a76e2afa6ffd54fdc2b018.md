@@ -1,0 +1,13 @@
+# DE-R07: corporate interest carry conditions and partnership scope
+
+Actual corporate claims1–229 have now been read; source quotation checks are continuing. These are finite direct own-source mismatches, not a corporate/country verdict.
+
+**LF74 EBITDA carry.** EStG4h(1)sentence3 expressly prevents generation of an EBITDA carry where interest expense does not exceed interest income or where an Absatz2 escape excludes the barrier. The current unqualified `Unused EBITDA capacity is carried forward five years` can create a carry in a normal under3m escape year. The same actual paragraph sentence7 says Absatz2 does not apply insofar as interest is increased through an old interest carry. LF75's under3m escape summary needs that carry qualification. Source https://www.gesetze-im-internet.de/estg/__4h.html, actual retained `U89fe99339c842942.reader.txt` SHA f345f02cfa04e9c59e94b465c5c9c8b24daeec6ac99ddede4ed50d97a9a71483 literalLF7, actually read in full;8–17 also read for the escapes. KStG8a(1), actual `Ucbc7a426779ae7c3.reader.txt` native7, supplies the corporate-income substitution.
+
+**Option A, recommended:** qualify generation/use of the two separate carries in the existing interest-barrier paragraph with these actual statutory conditions; use old EBITDA carries in chronological order within five years, and do not apply the exemption to old interest carried into the year. Preserve the two original cases. Separating simple generation fixture: taxEBITDA10m/current net interest2m with the under3m escape creates ZERO EBITDA carry, not the otherwise1m unused30% capacity. The same10mEBITDA/current net interest3m with no other escape gives zero residual capacity;4m net interest with no prior capacity gives1m interest carry. No new assertion about unresolved mixed-carry administrative ordering is implied.
+
+**Option B:** explicitly limit the paragraph to years without prior carries and with a binding barrier, and route carry use to a genuinely supplied own-source method. Do not say escape-year unused capacity itself becomes a carry.
+
+**Related bounded scope correction:** corporateLF27 says `A partnership does pay trade tax` without the commercial qualifier. Actual own GewStG2(1), retained `U7eebf57156097cab.reader.txt` native7–8 SHA b6396962d89d880e08aa62b7fb54e17d445fbfa3177dd088db9feae0c40f61d7, makes a commercial business the premise. The already supplied professional-partnership exclusion in partners/trade conflicts with the blanket claim. A narrow A is `A commercial partnership pays trade tax` with the existing partnership route; B remove the blanket trade-tax sentence and route classification to the dedicated Guide. This is not a new tax population.
+
+No Guide/ledger/Git edits by this independent reviewer.

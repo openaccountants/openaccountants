@@ -1,0 +1,11 @@
+{
+  "id": "U53fcc5bcae410092",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U53fcc5bcae410092.body",
+  "raw_sha256": "c36ca62b6c89e5524682fcc124a68548aec918813761dbbf866f010f741d52fb",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U53fcc5bcae410092.reader.txt",
+  "reader_sha256": "2d05ce2568efd71d46184329c032e3190ad2a35348b1e16e405da272f0f33696",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

@@ -1,0 +1,54 @@
+--- before/de-trade-tax
++++ after/de-trade-tax
+@@ -1,10 +1,10 @@
+ ---
+ name: de-trade-tax
+ description: "German trade tax (Gewerbesteuer, GewSt) for collection period 2026: who is liable (sole traders and partnerships with a commercial business, every GmbH, UG and AG; free professions excluded), trade income (Gewerbeertrag) with the § 8 add-backs (one quarter of financing items above EUR 200,000) and § 9 reductions (Grundsteuer, partnership shares, 15% participation exemption, donations), the EUR 24,500 allowance, the 3.5% base rate, the municipal multiplier (Hebesatz, at least 200% for 2026, 280% from 2027), the § 35 EStG income tax credit (four times the base amount, capped), loss carry-forward (EUR 1 million plus 60%), apportionment between municipalities (Zerlegung), the return, quarterly prepayments, surcharges and interest. Trigger on: Gewerbesteuer, GewSt, Hebesatz, Gewerbeertrag, Steuermessbetrag, Freibetrag 24.500, Hinzurechnungen, Kürzungen, § 35 EStG, Zerlegung, Gewerbesteuer-Vorauszahlung, trade tax Germany. Out of scope: income tax of the owner (de-self-employed-income-tax, de-income-tax), partners' income (de-partners-and-part-year), corporate income tax (de-corporate-tax), non-residents (de-non-resident-tax)."
+-version: 1.1
++version: 1.2
+ jurisdiction: DE
+ tax_year: 2026
+-last_updated: 2026-10-26
++last_updated: 2026-10-29
+ authored_by: Michael Cutajar and the OpenAccountants team
+ review_status: pending_review
+ trust_label: Built by Michael Cutajar and the OpenAccountants team
+@@ -33,7 +33,7 @@
+ | Capital companies (GmbH, UG, AG, KGaA, SE), cooperatives, mutual insurance and pension associations | Yes, "stets und in vollem Umfang" (always and in full), whatever they do. A GmbH of architects pays | [§ 2(2) GewStG](https://www.gesetze-im-internet.de/gewstg/__2.html) |
+ | A partnership that has opted to be taxed as a company (§ 1a KStG) | Yes, treated as a capital company | [§ 2(8) GewStG](https://www.gesetze-im-internet.de/gewstg/__2.html) |
+ | Other private-law legal persons and associations | Only as far as they run a commercial operation (wirtschaftlicher Geschäftsbetrieb), farming excepted | [§ 2(3) GewStG](https://www.gesetze-im-internet.de/gewstg/__2.html) |
+-| A partnership that also carries on any commercial activity of its own | Yes: the whole activity counts as commercial (Abfärbung). The statute prints no minimum amount | [§ 15(3) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__15.html) |
++| A partnership that also carries on a separable commercial activity of its own | The whole activity counts as commercial unless the BFH/BMF two-gate de minimis exception below applies; the commercial branch keeps its own classification | [§ 15(3) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__15.html) |
+ | A partnership whose only personally liable partners are companies and which only they or non-partners manage (gewerblich geprägt) | Yes, in full | [§ 15(3) no. 2 EStG](https://www.gesetze-im-internet.de/estg/__15.html) |
+ | A partnership with no commercial activity of its own that holds a share in a commercial partnership | For trade tax, the states' decree of 5 November 2025 applies the Federal Fiscal Court ruling of 6 June 2019 (IV R 30/16) "in allen offenen Fällen über den entschiedenen Einzelfall hinaus". Refer | [State decree, 5 Nov 2025](https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Steuerarten/Gewerbesteuer/2025-11-05-gle-aufhebung-gle-01-10-20-anl.pdf?__blob=publicationFile&v=3) |
+ | Travelling trade (Reisegewerbe, needs a Reisegewerbekarte) | Yes; the municipality at the centre of the activity levies it | [§ 35a GewStG](https://www.gesetze-im-internet.de/gewstg/__35a.html) |
+@@ -45,6 +45,10 @@
+ - **IT consultants and software developers** are not named in § 18 EStG. The facts decide; selling software or hardware points to a commercial business. Flag it.
+ - **Refer these cases:** a group with a profit-transfer agreement (Organschaft: the subsidiary counts as a permanent establishment of the parent, [§ 2(2) sentence 2 GewStG](https://www.gesetze-im-internet.de/gewstg/__2.html)); shipping, banks and insurers; and reclassification after an audit (a free profession treated as commercial for open years: the base amount and trade tax follow, and the § 35 credit follows those notices).
+ - **Abfärbung is a partnership rule.** § 15(3) no. 1 EStG names partnerships only. A sole trader with a free profession and a separate commercial side line has two activities, and only the commercial one pays trade tax.
++
++**Separable own commercial side activity: annual net-receipt test.** Under the BFH interpretation adopted in BMF EStH 2025 H 15.8(5), an otherwise noncommercial partnership's separable own commercial activity does not reclassify the rest if BOTH `commercial net receipts ≤ 0.03 × total partnership net receipts` AND `commercial net receipts ≤ EUR 24,500` for the assessment period. Total receipts include the commercial and noncommercial activities, excluding VAT. Apply the same test whether the commercial branch makes a profit or a loss. The branch remains commercial in its own right; an inseparably commercial overall activity does not become a free profession under this exception. This own-activity test does not apply to commercial income received through a participation in another partnership; keep that income-tax limb and its separate trade-tax treatment distinct.
++
++For an otherwise qualifying separable professional partnership, total net receipts of EUR 500,000 and commercial net receipts of EUR 15,000 pass both gates exactly; EUR 15,000.01 fails the 3% gate. At total net receipts of EUR 1,000,000, commercial receipts of EUR 24,500 pass both; EUR 24,500.01 fails the absolute gate although below 3%. These are receipts tests, not a profit allowance. The outcome under these two gates is unchanged if the commercial branch has a loss.
+ 
+ ## Rates, bands and thresholds
+ 
+@@ -235,7 +239,7 @@
+ 
+ ## Ask the client first
+ 
+-- What exactly does the business do, and is it run alone, in a partnership or through a company? Does any part involve selling goods or reselling others' products? (Decides liability.)
++- What exactly does the business do, and is it run alone, in a partnership or through a company? Does any part involve selling goods or reselling others' products? (Decides liability.) For a partnership, can its own commercial and noncommercial activities be separated, what are each activity's and total annual net receipts, and is any commercial income instead from another partnership?
+ - In which municipalities did it have premises in 2026, and did it move? Which multiplier is on the last trade tax notice? (Decides the multiplier and any apportionment.)
+ - What did it pay in the year for interest, annuities, silent partners, rent and leasing (movable and immovable separately) and licences? (Decides the § 8 add-back.)
+ - Does it own real property with Grundsteuer booked as an expense, hold shares in partnerships or companies (and what percentage at 1 January), or make donations? (Decides § 9.)
+@@ -282,6 +286,9 @@
+ | States' decree of 5 November 2025 (partnership holding a commercial share) | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Steuerarten/Gewerbesteuer/2025-11-05-gle-aufhebung-gle-01-10-20-anl.pdf?__blob=publicationFile&v=3 | 2026-10-24 |
+ | Destatis press release 369, October 2026 (average multiplier 2025: 410%) | https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_369_712.html | 2026-10-24 |
+ | City of Munich, Gewerbesteuer (multiplier 490%) | https://stadt.muenchen.de/service/info/gewerbesteuer/1074725/ | 2026-10-24 |
++| BMF EStH 2025 H 15.8(5), judicial two-gate de minimis interpretation, losses and separate participation-income limb | https://grsth.bundesfinanzministerium.de/esth/2025/A-Einkommensteuergesetz/II-Einkommen-2-24b/8-Die-einzelnen-Einkunftsarten-13-24b/b-Gewerbebetrieb-15-17/Paragraf-15/paragraf-15.html | 2026-10-29 |
++| BFH VIII R 6/12, separability and inclusive net-receipt gates | https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201510044?type=1646225765 | 2026-10-29 |
++| BFH IV R 42/19, B.III.3, threshold retained for both gains and losses | https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/STRE202210200/ | 2026-10-29 |
+ 
+ Not yet confirmed: the ELSTER form names GewSt 1 A and GewSt 1 D for 2026 (not read on ELSTER); any de minimis limit for Abfärbung under § 15(3) no. 1 EStG (case law, not in the statute); the Munich multiplier as a decision for 2026 specifically (the city page says "aktuell gültig" without a year).
+ 

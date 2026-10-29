@@ -1,0 +1,11 @@
+{
+  "id": "Ubc52031c54be79dc",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Niederlande/2026-05-18-Niederlande-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubc52031c54be79dc.body",
+  "raw_sha256": "7967c0245c14ef07bdc4bc85b5a1ce76652057e010d382db328591d7e0e90acc",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubc52031c54be79dc.reader.txt",
+  "reader_sha256": "bffb541ce5da23b142dd007964bae73f3fba4662f59163e8ac40a2a361ebd453",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

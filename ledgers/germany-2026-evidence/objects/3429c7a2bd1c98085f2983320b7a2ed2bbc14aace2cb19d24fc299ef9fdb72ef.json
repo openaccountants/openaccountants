@@ -1,0 +1,21 @@
+{
+  "slug": "de-income-tax",
+  "expected_before_sha256": "1c6d47d53101382347ac9b9c3bb34b8c23a7b67db0d00c9f6389b0042b966ce7",
+  "operations": [
+    {
+      "before": "| Low-value asset (GWG) | Expensed at once if cost net of deductible VAT is at most EUR 800; register if over EUR 250 | 2026 | Same, § 6(2) |",
+      "after": "| Low-value asset (GWG) | Expensed at once if cost reduced by contained input VAT for the eligibility test is at most EUR 800; the expense includes irrecoverable VAT; register if over EUR 250 | 2026 | Same, § 6(2) |"
+    },
+    {
+      "before": "version: 2.4\n",
+      "after": "version: 2.5\n"
+    }
+  ],
+  "after_sha256": "2f4e335bbdaa39f04d46874ae1d114460d8f8b5da55238ef2555071b9c7d47dd",
+  "original_oa_blocks": 2,
+  "original_oa_exact": true,
+  "old_URL_order_preserved": true,
+  "added_URLs": 0,
+  "protected_metadata_exact": true,
+  "inverse_exact": true
+}

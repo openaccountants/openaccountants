@@ -1,0 +1,14 @@
+{
+  "de-social-contributions": {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-social-contributions.md",
+    "before_sha256": "440c63cff96c29ab6ba597bc1d96e7e0183665c6aeb547b0c2b184658cf22f5d",
+    "after_sha256": "ebce79a0f32c40dfd3c2ee10589761c1332f2f94954a51ffd6c908bd9c8c8fad",
+    "bytes": 57839,
+    "ops": 12,
+    "full_inverse": true,
+    "actual_original_oa_blocks": 2,
+    "original_oa_blocks_and_all_case_amounts_algebra_exact": true,
+    "case_prose_change": "Only specified yoga calendar sentence; no falsewholeworkedsectionexactclaim",
+    "old_URL_order_exact": true
+  }
+}

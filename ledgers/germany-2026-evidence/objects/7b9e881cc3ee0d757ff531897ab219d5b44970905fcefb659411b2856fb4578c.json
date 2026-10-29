@@ -1,0 +1,28 @@
+{
+  "current_main_origin_count": 67,
+  "pre_refresh_origin_count": 79,
+  "all_actual_origins_checked": true,
+  "mismatches": 0,
+  "semantic_spots_actually_read": {
+    "current_main_rows": [
+      3,
+      10,
+      18,
+      32,
+      37,
+      46,
+      56,
+      67
+    ],
+    "pre_refresh_rows": [
+      3,
+      13,
+      23,
+      33,
+      46,
+      55,
+      67,
+      79
+    ]
+  }
+}

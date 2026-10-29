@@ -1,0 +1,208 @@
+BZSt - Steuererklärungen
+Hinweis zur Verwendung von Cookies
+Wir möchten zur Verbesserung unserer Website das Nutzungsverhalten analysieren und Zugriffsstatistiken erstellen. Dafür werden mit der Webanalyse-Software Matomo statistische Informationen erfasst und ausgewertet. Ausschließlich mit Ihrer Einwilligung speichern wir dafür ein Statistik-Cookie auf Ihrem Endgerät und greifen auf für diesen Zweck erforderliche Geräteinformationen Ihres Endgerätes zu. Zu keiner Zeit werden diese Daten mit persönlichen Daten in Verbindung gebracht oder an Dritte weitergegeben. Weitere Informationen finden Sie in unserer Datenschutzerklärung. Dort ist auch jederzeit der Widerruf Ihrer Einwilligung möglich.
+Einverstanden
+Springe direkt zu:
+Inhalt
+Hauptmenü
+Suche
+BZSt Online.Portal
+Kontakt
+English
+Leichte Sprache
+Gebärdensprache
+Bundeszentralamt für Steuern (Link zur Startseite)
+Dieses Dokument bestimmt, ob ein Zusatzlogo ausgegeben wird.
+Ein im Feld Wert eingehängtes Logo wird als Zusatzlogo ausgegeben.
+Ist das Feld Wert leer, so wird kein Zusatzlogo ausgegeben.
+Ablageoptionen:
+Wird dieses Dokument unterhalb des globalen Verzeichnisses "_config" abgelegt, so wird das Zusatzlogo auf allen Seiten ausgegeben.
+Um das Logo nur für bestimmte Bereiche auszugeben, kann das Konfigurationsdokument zusätzlich pfadabhängig abgelegt werden.
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Karriere
+Website durchsuchen
+Suchtext
+Suchtext
+Startseite
+Unternehmen
+Internationaler Informationsaustausch
+Country-by-Country Reporting
+Steuererklärungen
+Vorlesen
+Angaben in Steuererklärungen
+Unternehmer müssen für CbCR Angaben in ihren Steuererklärungen machen. Im Folgenden sind die notwendigen Eintragungen beschrieben.
+Allgemeines
+Ein inländisches Unternehmen hat für Wirtschaftsjahre, die nach dem 31. Dezember 2016 beginnen, in der Steuererklärung anzugeben, ob es
+eine inländische Konzernobergesellschaft im Sinne von § 138a Abs. 1 AO ist,
+eine beauftragte Gesellschaft (§ 138a Abs. 3 AO) ist oder
+eine einbezogene inländische Konzerngesellschaft eines Konzerns mit ausländischer Konzernobergesellschaft ist.
+Soweit der länderbezogene Bericht im Ausland abgegeben wird, ist auch anzugeben in welchem Land und von welchem Unternehmen der länderbezogene Bericht des Konzerns abgegeben wird. Fehlt diese Angabe, ist die einbezogene inländische Konzerngesellschaft im Regelfall selbst zur fristgerechten Übermittlung des länderbezogenen Berichts verpflichtet. Dies gilt entsprechend für die inländische Betriebsstätte eines ausländischen Unternehmens, das als ausländische Konzernobergesellschaft oder als einbezogene ausländische Konzerngesellschaft in einen Konzernabschluss einbezogen wird.
+Körperschaftssteuererklärung
+Die Eintragungen in der Körperschaftssteuererklärung haben in der Anlage WA in den Zeilen 27 bis 29 zu erfolgen.
+In der Zeile 29 ist die Eintragung eines Länderschlüssels des Staates erforderlich, an den der länderbezogene Bericht des Konzerns übermittelt wird. Die Eintragung des Länderschlüssels hat mit einer zweistelligen Buchstabenkombination entsprechend dem ISO-Code 3166 (ALPHA 2) zu erfolgen. Diese kann der untenstehenden Tabelle entnommen werden.
+Erklärung zur gesonderten und einheitlichen Feststellung von Grundlagen für die Einkommensteuererklärung
+In der Zeile 18 des Vordrucks ESt 1 B der Erklärung zur gesonderten und einheitlichen Feststellung von Grundlagen für die Einkommensteuererklärung (Feststellungserklärung) ist die Eintragung des Staates erforderlich an den der länderbezogene Bericht übermittelt wird. Die Eintragung des Länderschlüssels hat mit einer zweistelligen Buchstabenkombination entsprechend dem ISO-Code 3166 (ALPHA 2) zu erfolgen. Diese kann der untenstehenden Tabelle entnommen werden.
+In der elektronischen Feststellungserklärung ist jedoch bislang eine Felddefinition verwendet worden, die vorsieht, dass der Länderschlüssel nur numerisch eingegeben werden kann. Die entsprechenden zweistelligen Ländercodes finden Sie in der unten beigefügten Tabelle.
+Sollte der einzutragende Staat nicht in dieser Länderliste enthalten sein, ist "99" einzugeben.
+Länderschlüssel
+Länder (EU)Länderschlüssel
+(nummerisch)
+Belgien01
+Bulgarien02
+Dänemark03
+Deutschland04
+Estland05
+Finnland06
+Frankreich07
+Griechenland08
+Irland09
+Italien10
+Kroatien11
+Lettland12
+Litauen13
+Luxemburg14
+Malta15
+Niederlande16
+Österreich17
+Polen18
+Portugal19
+Rumänien20
+Schweden21
+Slowakische Republik22
+Slowenien23
+Spanien24
+Tschechische Republik25
+Ungarn26
+Vereinigtes Königreich (Großbritannien)27
+Zypern28
+Länder
+(Nicht EU-Staaten)Länderschlüssel
+(nummerisch)
+Afghanistan29
+Ägypten30
+Algerien31
+Argentinien32
+Australien33
+Bahamas34
+Bangladesch35
+Belize36
+Bermuda37
+Brasilien38
+Britische Jungferninseln39
+Cayman Inseln40
+Chile41
+Costa Rica42
+Curaçao43
+Gabun45
+Georgien46
+Gibraltar47
+Guernsey48
+Haiti49
+Hongkong50
+Indien51
+Indonesien52
+Irak53
+Iran54
+Island55
+Isle of Man56
+Israel57
+Japan58
+Jersey59
+Jordanien60
+Kamerun61
+Kanada62
+Katar63
+Kolumbien64
+Kongo, Demokratische Republik65
+Libanon66
+Liechtenstein67
+Macau68
+Madagaskar69
+Malaysia70
+Mauritius72
+Mexiko73
+Monaco74
+Neuseeland75
+Nigeria76
+Norwegen77
+Pakistan78
+Panama79
+Peru80
+Philippinen81
+Russland82
+Saudi-Arabien83
+Schweiz84
+Singapur85
+Sir Lanka86
+Südafrika87
+Sudan88
+Südkorea89
+Thailand90
+Türkei91
+Turks- und Caicosinseln92
+Uganda93
+Uruguay94
+Venezuela95
+Vereinigte Staaten96
+Vietnam97
+Volksrepublik China98
+Kontakt
+Bundeszentralamt für Steuern
+Referat St I A 2
+An der Küppe 1
+53225 Bonn
+Telefon:
++49 228/406-2340
+Mo, Di, Do:
+09.00 bis 12.00 Uhr
+12.30 bis 15.00 Uhr
+Fr:
+09.00 bis 12.00 Uhr
+Zuständigkeitsbereich:
+Country by Country Reporting
+Nachricht schreiben
+Verwandte Themen
+Das Verfahren CbCR
+CbCR hat das Ziel, Finanzbehörden zusätzliche Informationen zu grenzüberschreitenden Konzernstrukturen an die Hand zu geben. Das BZSt ist in Deutschland die zentrale Stelle für den Austausch von …
+Teilnehmende Staaten
+Am Verfahren CbCR nehmen zahlreiche Staaten teil. Auf der folgenden Seite erhalten Sie eine Liste sämtlicher Teilnehmer.
+Elektronische Datenübermittlung über die neue DIP-Schnittstelle
+Meldungen deutscher Unternehmen, die einen Country-by-Country Report abgeben, sind nach amtlich vorgeschriebenem Datensatz und auf elektronischem Weg an das BZSt zu übermitteln.
+Handbücher
+Auf dieser Seite finden Sie sowohl alle Kapitel des zum CbCR gehörenden Kommunikationshandbuchs sowie die entsprechenden Downloads.
+Vorschriften
+Auf dieser Seite finden Sie die rechtlichen Grundlagen zum Verfahren CbCR.
+Gesteigerte Mitwirkungspflicht nach § 12 StAbwG
+Aus § 12 des Steueroasenabwehrgesetzes (StAbwG) geht eine gegenüber § 90 der Abgabenordnung (AO) gesteigerte Mitwirkungspflicht hervor. Demnach sind Aufzeichnungen über bestimmte Geschäftsvorfälle in …
+Fragen & Antworten
+Der Umgang mit CbCR ist häufig mit vielen Fragen verbunden. Damit diese schnell und transparent beantwortet werden, haben wir die häufigsten Anliegen für Sie gesammelt.
+Newsletter
+Das Bundeszentralamt für Steuern veröffentlicht in unregelmäßigen Abständen Newsletter zum Thema CbCR. In diesen finden Sie aktuelle Informationen und sonstige Ankündigungen.
+Seite empfehlen
+Unternavigation aller Website-Bereiche
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Themen A-Z
+Karriere
+Presse
+Newsletter
+Haben Sie Fragen?
+Anrufen
+Nachricht schreiben
+Zentrale Behördennummer
+Für alle Fragen zu Behörden in Deutschland
+Montag bis Freitag 08:00-18:00 Uhr
+115
+Mehr erfahren
+© Bundeszentralamt für Steuern
+Inhaltsverzeichnis
+Erklärung zur Barrierefreiheit
+Impressum
+Datenschutz

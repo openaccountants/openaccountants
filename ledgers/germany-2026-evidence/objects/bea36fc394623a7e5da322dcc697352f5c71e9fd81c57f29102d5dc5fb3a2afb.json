@@ -1,0 +1,11 @@
+{
+  "id": "U9113d9f3546c4ba3",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2025-10-16-weiterfuehrung-konsultationsvereinb.pdf?__blob=publicationFile&v=3",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9113d9f3546c4ba3.body",
+  "raw_sha256": "2599ad5f7060359602fbd800121c943f3ffb540b29957ca47fb221c9f2cf1405",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9113d9f3546c4ba3.reader.txt",
+  "reader_sha256": "620e61b3ad793bd126311577d016a47ac3e49431dd21a9dcbc0b3dc169ade7b9",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

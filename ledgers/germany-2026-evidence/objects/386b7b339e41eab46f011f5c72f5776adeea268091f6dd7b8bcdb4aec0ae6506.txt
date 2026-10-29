@@ -1,0 +1,47 @@
+§ 11 KStTG - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Gesetz über die Meldepflicht von Anbietern und den automatischen Austausch von Informationen in Steuersachen bei Kryptowerte-Dienstleistungen (Kryptowerte-Steuertransparenz-Gesetz - KStTG)
+§ 11 Zu meldende Informationen
+(1) Gemäß § 9 Absatz 1 Satz 1 sind die folgenden Informationen zu melden: 1.
+zum Anbieter: a)
+sein Name und gegebenenfalls seine Firma,
+b)
+seine Anschrift,
+c)
+seine Steueridentifikationsnummer oder deren funktionale Entsprechung und
+d)
+falls vorhanden, die ihm nach § 17 Absatz 3 erteilte Registriernummer und die globale Rechtsträgerkennung,
+2.
+für jeden zu meldenden Nutzer sowie jede zu meldende beherrschende Person: a)
+die Informationen nach § 6 Absatz 1 Satz 1 Nummer 1 und 2 Buchstabe a bis d sowie den Geburtsort, sofern der Anbieter nach innerstaatlichem Recht verpflichtet ist, diesen zu beschaffen und zu melden, und
+b)
+für jede Art von einem zu meldenden Kryptowert, für den der Anbieter innerhalb des Meldezeitraums eine zu meldende Transaktion durchgeführt hat: aa)
+die vollständige Bezeichnung der Art des zu meldenden Kryptowerts,
+bb)
+bei Erwerben gegen eine Fiat-Währung den gezahlten aggregierten Gesamtbruttobetrag, die Anzahl der Einheiten und die Anzahl der zu meldenden Transaktionen,
+cc)
+bei Verkäufen gegen eine Fiat-Währung den erhaltenen aggregierten Gesamtbruttobetrag, die Anzahl der Einheiten und die Anzahl der zu meldenden Transaktionen,
+dd)
+bei Erwerben gegen andere zu meldende Kryptowerte den aggregierten beizulegenden Marktwert, die Anzahl der Einheiten und die Anzahl der zu meldenden Transaktionen,
+ee)
+bei Verkäufen gegen andere zu meldende Kryptowerte den aggregierten beizulegenden Marktwert, die Anzahl der Einheiten und die Anzahl der zu meldenden Transaktionen,
+ff)
+den aggregierten beizulegenden Marktwert, die Anzahl der Einheiten und die Anzahl der zu meldenden Massenzahlungstransaktionen,
+gg)
+bei nicht unter die Doppelbuchstaben bb und dd fallenden Übertragungen an den zu meldenden Nutzer den aggregierten beizulegenden Marktwert, die Anzahl der Einheiten und die Anzahl der zu meldenden Transaktionen, aufgeschlüsselt nach Übertragungsart, sofern diese dem Anbieter bekannt ist,
+hh)
+bei nicht unter die Doppelbuchstaben cc, ee und ff fallenden Übertragungen durch den zu meldenden Nutzer den aggregierten beizulegenden Marktwert, die Anzahl der Einheiten und die Anzahl der zu meldenden Transaktionen, aufgeschlüsselt nach Übertragungsart, sofern diese dem Anbieter bekannt ist, und
+ii)
+bei vom Anbieter durchgeführten Übertragungen an Kryptowert-Adressen, von denen dem Anbieter nicht bekannt ist, ob sie mit einem Anbieter von Kryptowerte-Dienstleistungen oder einem Finanzinstitut verbunden sind, den aggregierten beizulegenden Marktwert sowie die Anzahl der Einheiten und
+3.
+für jede zu meldende beherrschende Person die Funktion oder die Funktionen, aufgrund derer sie als beherrschende Person des Rechtsträgers anzusehen ist.
+(2) In den Fällen des Absatzes 1 Nummer 2 Buchstabe b Doppelbuchstabe bb und cc ist der erhaltene oder gezahlte Betrag in der Fiat-Währung zu melden, in der der Betrag erhalten oder die Zahlung getätigt wurde. In mehreren Fiat-Währungen erhaltene oder gezahlte Beträge sind in einer einzigen Fiat-Währung zu melden. Der Anbieter nimmt die für die Meldung nach Satz 2 erforderlichen Umrechnungen jeweils für den Zeitpunkt der jeweiligen zu meldenden Transaktion in einer durchgängig angewandten Art und Weise vor.
+(3) In den Fällen des Absatzes 1 Nummer 2 Buchstabe b Doppelbuchstabe dd bis ii ist der beizulegende Marktwert in einer einzigen Fiat-Währung zu bestimmen und zu melden. Die für die Meldung nach Satz 1 erforderlichen Umrechnungen sind vom Anbieter jeweils für den Zeitpunkt der jeweiligen zu meldenden Transaktion in einer durchgängig angewandten Art und Weise vorzunehmen.
+(4) In den Fällen des Absatzes 1 Nummer 2 Buchstabe b Doppelbuchstabe bb bis ii und der Absätze 2 und 3 ist die Fiat-Währung der Beträge anzugeben.
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

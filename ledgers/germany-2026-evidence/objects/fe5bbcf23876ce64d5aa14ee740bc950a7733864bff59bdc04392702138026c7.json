@@ -1,0 +1,5 @@
+{
+  "result": "SyntaxError before checks ran",
+  "reason": "Missing whitespace in check helper conditional expression: else30 instead of else 30",
+  "correction": "Check helper token only; Guide/ledger/source bytes unchanged"
+}

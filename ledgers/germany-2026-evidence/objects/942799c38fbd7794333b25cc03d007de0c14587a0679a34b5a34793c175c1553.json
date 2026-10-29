@@ -1,0 +1,990 @@
+{
+  "role": "Writer evidence precision, not new legal review",
+  "original_pre_refresh_revision": "de38edd6^",
+  "original_pre_refresh_sha256": "5ed0b2af30ac0a6e938104aa25a8fe726efef8f66fe4c7009b5e20842c984f94",
+  "all_grouped_units_with_multiple_per_line_definitions": 14,
+  "assessments": [
+    {
+      "pre_refresh_row": 5,
+      "old_native_LF": [
+        20,
+        22
+      ],
+      "old_unit_sha256": "a693baba91f7102b897d1156b5f186b7c61edebf8d8fc0d0897b190bf191c4f5",
+      "components": [
+        {
+          "old_component_LF": 20,
+          "exact_old_line": "- **Covers.** One individual resident in Germany with income from self-employed work (§ 18 EStG) or a trade (§ 15 EStG), assessed alone or jointly with a spouse. Tax office: the local Finanzamt; returns go through ELSTER.",
+          "original_per_line_destination": "22–25/34–35",
+          "original_per_line_disposition": "All original populations/companions retained.",
+          "current_destination": "22–25/34–35",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                22,
+                25
+              ],
+              "first_line": "- **In scope.** One individual resident in Germany with income from self-employed work (§ 18 EStG) or a trade (§ 15 EStG), assessed alone or jointly with a spouse. Tax office: the local Finanzamt; returns go through ELSTER.",
+              "last_line": "- **The split decides trade tax, registration and the bookkeeping duty, not the tariff.**"
+            },
+            {
+              "native_LF": [
+                34,
+                35
+              ],
+              "first_line": "- **Out of scope, with the skill to use.** Partnerships (GbR, OHG, KG, Partnerschaftsgesellschaft; for partnership commercial classification and the separable own-activity de minimis exception under § 15(3) no. 1 EStG, use `de-partners-and-part-year` and `de-trade-tax`): `de-partners-and-part-year`. Companies (GmbH, UG): `de-corporate-tax`. Wages only: `de-employee-income-tax`. Letting: `de-rental-income`. Legal form: `germany-formation`. VAT returns: `germany-vat-return` and `de-vat-annual-and-special-schemes`. Records, the GWG pool and the car logbook: `germany-bookkeeping`. Contributions: `de-social-contributions`. Prepayment planning: `de-estimated-tax`. Investments: `de-capital-gains`. Crypto: `de-crypto-tax`. Staff: `de-payroll`. Non-residents: `de-non-resident-tax`.",
+              "last_line": "- **Also refer.** Selling or closing the business, extraordinary income (§ 34), retained profits (§ 34a), the progression clause (§ 32b); electric and hybrid business cars and any dispute over private car use; the exact church tax rate and rounding for a client (state rules)."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 22,
+          "exact_old_line": "- **Not covered.** Partnerships, companies, employees with no business, and the cases under \"When to refuse or refer\".",
+          "original_per_line_destination": "18/35/217–222",
+          "original_per_line_disposition": "Full-year assumptions and exact source hierarchy preserved.",
+          "current_destination": "18/35/221–226",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                18,
+                18
+              ],
+              "first_line": "How Germany taxes the profit of one self-employed person in tax year 2026, the calendar year (§ 2(7) EStG). The tariff applies \"ab dem Veranlagungszeitraum 2026\" ([§ 32a EStG](https://www.gesetze-im-internet.de/estg/__32a.html)). A short table gives 2025 figures for returns being filed now. This skill is for information and computation only, not tax advice; a Steuerberater must review a real return before it is filed.",
+              "last_line": "How Germany taxes the profit of one self-employed person in tax year 2026, the calendar year (§ 2(7) EStG). The tariff applies \"ab dem Veranlagungszeitraum 2026\" ([§ 32a EStG](https://www.gesetze-im-internet.de/estg/__32a.html)). A short table gives 2025 figures for returns being filed now. This skill is for information and computation only, not tax advice; a Steuerberater must review a real return before it is filed."
+            },
+            {
+              "native_LF": [
+                35,
+                35
+              ],
+              "first_line": "- **Also refer.** Selling or closing the business, extraordinary income (§ 34), retained profits (§ 34a), the progression clause (§ 32b); electric and hybrid business cars and any dispute over private car use; the exact church tax rate and rounding for a client (state rules).",
+              "last_line": "- **Also refer.** Selling or closing the business, extraordinary income (§ 34), retained profits (§ 34a), the progression clause (§ 32b); electric and hybrid business cars and any dispute over private car use; the exact church tax rate and rounding for a client (state rules)."
+            },
+            {
+              "native_LF": [
+                221,
+                226
+              ],
+              "first_line": "- This skill assumes full German residence for the whole year. A move to or from Germany in the year: `de-partners-and-part-year`. Non-residents with German freelance income: `de-non-resident-tax`. Treaty withholding: `de-treaty-withholding-rates`. Leaving with large holdings: `leaving-germany-exit-tax`.",
+              "last_line": "- Selling to EU clients changes the VAT treatment, not the income tax: `germany-vat-return`."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pre_refresh_row": 12,
+      "old_native_LF": [
+        52,
+        53
+      ],
+      "old_unit_sha256": "80f05c461aaff34def2b2c8bfcf772627e579e7bda4e136f8868eb80ede4f90c",
+      "components": [
+        {
+          "old_component_LF": 52,
+          "exact_old_line": "- **Freiberufler ([§ 18(1) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__18.html)).** Self-employed scientific, artistic, writing, teaching or educational work, and the named professions (among them doctors, dentists, vets, lawyers, notaries, engineers, architects, auditors, tax advisers, Heilpraktiker, physiotherapists, journalists, interpreters, translators) \"und ähnlicher Berufe\". Qualified staff are allowed if the owner leads the work and answers for it with their own expertise. § 18(1) no. 3 adds other self-employed work such as executor or supervisory board fees.",
+          "original_per_line_destination": "23",
+          "original_per_line_disposition": "Profession list and staff supervision retained.",
+          "current_destination": "23",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                23,
+                23
+              ],
+              "first_line": "- **Freiberufler ([§ 18(1) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__18.html)).** Self-employed scientific, artistic, writing, teaching or educational work, and the named professions (among them doctors, dentists, vets, lawyers, notaries, engineers, architects, auditors, tax advisers, Heilpraktiker, physiotherapists, journalists, interpreters, translators) \"und ähnlicher Berufe\". Qualified staff are allowed if the owner leads the work and answers for it with their own expertise. § 18(1) no. 3 adds other self-employed work such as executor or supervisory board fees.",
+              "last_line": "- **Freiberufler ([§ 18(1) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__18.html)).** Self-employed scientific, artistic, writing, teaching or educational work, and the named professions (among them doctors, dentists, vets, lawyers, notaries, engineers, architects, auditors, tax advisers, Heilpraktiker, physiotherapists, journalists, interpreters, translators) \"und ähnlicher Berufe\". Qualified staff are allowed if the owner leads the work and answers for it with their own expertise. § 18(1) no. 3 adds other self-employed work such as executor or supervisory board fees."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 53,
+          "exact_old_line": "- **Trade ([§ 15(2) EStG](https://www.gesetze-im-internet.de/estg/__15.html)).** An independent, lasting activity for profit in general economic life that is not farming, a liberal profession or other self-employed work: what is left over. Whether an unnamed job is \"similar\" is decided case by case: refer it.",
+          "original_per_line_destination": "24",
+          "original_per_line_disposition": "Trade and unnamed-profession factual boundary retained.",
+          "current_destination": "24",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                24,
+                24
+              ],
+              "first_line": "- **Trade ([§ 15(2) EStG](https://www.gesetze-im-internet.de/estg/__15.html)).** An independent, lasting activity for profit in general economic life that is not farming, a liberal profession or other self-employed work: what is left over. Whether an unnamed job is \"similar\" is decided case by case: refer it to a Steuerberater, as is splitting one person's mixed freelance and trade work.",
+              "last_line": "- **Trade ([§ 15(2) EStG](https://www.gesetze-im-internet.de/estg/__15.html)).** An independent, lasting activity for profit in general economic life that is not farming, a liberal profession or other self-employed work: what is left over. Whether an unnamed job is \"similar\" is decided case by case: refer it to a Steuerberater, as is splitting one person's mixed freelance and trade work."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pre_refresh_row": 19,
+      "old_native_LF": [
+        81,
+        84
+      ],
+      "old_unit_sha256": "cf36f5b1a7cf5d8004d0c1bdda95f01c15b86b7dcbb13ad4d3ea577a5f7fc7db",
+      "components": [
+        {
+          "old_component_LF": 81,
+          "exact_old_line": "- **Year end.** Regularly recurring receipts and payments made a short time before or after the year end count in the year they belong to (§ 11 EStG).",
+          "original_per_line_destination": "134",
+          "original_per_line_disposition": "Recurring year-end items retained.",
+          "current_destination": "134",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                134,
+                134
+              ],
+              "first_line": "- **Year end.** Regularly recurring receipts and payments made a short time before or after the year end count in the year they belong to (§ 11 EStG).",
+              "last_line": "- **Year end.** Regularly recurring receipts and payments made a short time before or after the year end count in the year they belong to (§ 11 EStG)."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 82,
+          "exact_old_line": "- **Not pure cash** ([§ 4(3) EStG](https://www.gesetze-im-internet.de/estg/__4.html)). Depreciation and the low-value asset rules apply. Fixed assets that do not wear out, shares, securities, and land and buildings held as current assets count only when sold or withdrawn, and go into a running register. Money collected and paid out in another's name and for their account is left out.",
+          "original_per_line_destination": "135",
+          "original_per_line_disposition": "Noncash exceptions and registers retained.",
+          "current_destination": "135",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                135,
+                135
+              ],
+              "first_line": "- **Not pure cash** ([§ 4(3) EStG](https://www.gesetze-im-internet.de/estg/__4.html)). Depreciation and the low-value asset rules apply. Fixed assets that do not wear out, shares, securities, and land and buildings held as current assets count only when sold or withdrawn, and go into a running register. Money collected and paid out in another's name and for their account is left out.",
+              "last_line": "- **Not pure cash** ([§ 4(3) EStG](https://www.gesetze-im-internet.de/estg/__4.html)). Depreciation and the low-value asset rules apply. Fixed assets that do not wear out, shares, securities, and land and buildings held as current assets count only when sold or withdrawn, and go into a running register. Money collected and paid out in another's name and for their account is left out."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 83,
+          "exact_old_line": "- **Paper only in hardship cases** ([ministry letter of 1 September 2026 with the 2026 EÜR form and instructions](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2), cited below as \"EÜR instructions\").",
+          "original_per_line_destination": "136",
+          "original_per_line_disposition": "Hardship paper retained.",
+          "current_destination": "136",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                136,
+                136
+              ],
+              "first_line": "- **Paper EÜR only in hardship cases** (EÜR instructions 2026).",
+              "last_line": "- **Paper EÜR only in hardship cases** (EÜR instructions 2026)."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 84,
+          "exact_old_line": "- **Never deductible.** Income tax and other personal taxes ([§ 12 no. 3 EStG](https://www.gesetze-im-internet.de/estg/__12.html)) and trade tax (§ 4(5b) EStG).",
+          "original_per_line_destination": "137",
+          "original_per_line_disposition": "Personal/trade tax expense exclusions retained.",
+          "current_destination": "137",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                137,
+                137
+              ],
+              "first_line": "- **Never deductible.** Income tax and other personal taxes ([§ 12 no. 3 EStG](https://www.gesetze-im-internet.de/estg/__12.html)) and trade tax (§ 4(5b) EStG).",
+              "last_line": "- **Never deductible.** Income tax and other personal taxes ([§ 12 no. 3 EStG](https://www.gesetze-im-internet.de/estg/__12.html)) and trade tax (§ 4(5b) EStG)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pre_refresh_row": 23,
+      "old_native_LF": [
+        96,
+        99
+      ],
+      "old_unit_sha256": "50f4f7ea74778676b75a164ecb316b078e9c646b79e23598c14bef7af762c2c1",
+      "components": [
+        {
+          "old_component_LF": 96,
+          "exact_old_line": "- **Both limits must be met**; a turnover exactly at a limit is still inside. The receipt that crosses a limit in the current year is already taxed normally; earlier receipts stay exempt (EÜR instructions, line 12). Opting out binds for at least five calendar years (§ 19(3) UStG).",
+          "original_per_line_destination": "141",
+          "original_per_line_disposition": "Exact-limit/crossing-supply/5-year election retained.",
+          "current_destination": "141",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                141,
+                141
+              ],
+              "first_line": "- **Both limits must be met**; a turnover exactly at a limit is still inside. The receipt that crosses a limit in the current year is already taxed normally; earlier receipts stay exempt (EÜR instructions, line 12). Opting out binds for at least five calendar years (§ 19(3) UStG).",
+              "last_line": "- **Both limits must be met**; a turnover exactly at a limit is still inside. The receipt that crosses a limit in the current year is already taxed normally; earlier receipts stay exempt (EÜR instructions, line 12). Opting out binds for at least five calendar years (§ 19(3) UStG)."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 97,
+          "exact_old_line": "- **Kleinunternehmer.** Receipts go on line 12 at the gross amount received (\"mit dem tatsächlich vereinnahmten Gesamtbetrag\"). Its sales are exempt, so input VAT is not deductible ([§ 15(2) no. 1 UStG](https://www.gesetze-im-internet.de/ustg_1980/__15.html)): every cost counts gross.",
+          "original_per_line_destination": "142",
+          "original_per_line_disposition": "Gross Kleinunternehmer records retained.",
+          "current_destination": "142",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                142,
+                142
+              ],
+              "first_line": "- **Kleinunternehmer.** Receipts go on line 12 at the gross amount received. Its sales are exempt, so input VAT is not deductible ([§ 15(2) no. 1 UStG](https://www.gesetze-im-internet.de/ustg_1980/__15.html)): every cost counts gross.",
+              "last_line": "- **Kleinunternehmer.** Receipts go on line 12 at the gross amount received. Its sales are exempt, so input VAT is not deductible ([§ 15(2) no. 1 UStG](https://www.gesetze-im-internet.de/ustg_1980/__15.html)): every cost counts gross."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 98,
+          "exact_old_line": "- **Normal VAT scheme.** VAT collected and VAT refunded are receipts (form lines 17, 18); deductible input VAT and VAT paid to the office are expenses (lines 58, 59), with the ten-day rule of § 11(2) sentence 2 EStG at the year end.",
+          "original_per_line_destination": "143",
+          "original_per_line_disposition": "Normal VAT receipt/expense and10-day rule retained.",
+          "current_destination": "143",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                143,
+                143
+              ],
+              "first_line": "- **Normal VAT scheme.** VAT collected and VAT refunded are receipts (form lines 17, 18); deductible input VAT and VAT paid to the office are expenses (lines 58, 59), with the ten-day rule of § 11(2) sentence 2 EStG at the year end.",
+              "last_line": "- **Normal VAT scheme.** VAT collected and VAT refunded are receipts (form lines 17, 18); deductible input VAT and VAT paid to the office are expenses (lines 58, 59), with the ten-day rule of § 11(2) sentence 2 EStG at the year end."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 99,
+          "exact_old_line": "- **The EUR 800 low-value test** uses cost less deductible input VAT only ([§ 6(2) EStG](https://www.gesetze-im-internet.de/estg/__6.html): \"vermindert um einen darin enthaltenen Vorsteuerbetrag (§ 9b Absatz 1)\"), so a Kleinunternehmer tests the gross price.",
+          "original_per_line_destination": "144",
+          "original_per_line_disposition": "Original gross-price GWG eligibility error corrected under DE-B04; irrecoverableVAT remains in cost. Historical error not reinstated.",
+          "current_destination": "144",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical. DE-B04 expressly corrects old gross-price eligibility: test800 net of containedVAT; irrecoverableVAT remains in deductible cost, not the eligibility limit.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                144,
+                144
+              ],
+              "first_line": "- **The EUR 800 GWG test** uses cost reduced by the input VAT contained in the price (§ 6(2) EStG: \"vermindert um einen darin enthaltenen Vorsteuerbetrag\"), including where it is not recoverable. Keep eligibility separate from the deductible expense: [§ 9b(1) EStG](https://www.gesetze-im-internet.de/estg/__9b.html) excludes recoverable VAT from acquisition cost; irrecoverable VAT remains in cost. An otherwise eligible self-usable business chair at EUR 952 gross (EUR 800 plus 19% VAT, [§ 12(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html)) meets the EUR 800 test in both cases. A Kleinunternehmer can choose to expense the full EUR 952; a business entitled to full input-VAT credit expenses EUR 800 and claims the EUR 152 VAT separately.",
+              "last_line": "- **The EUR 800 GWG test** uses cost reduced by the input VAT contained in the price (§ 6(2) EStG: \"vermindert um einen darin enthaltenen Vorsteuerbetrag\"), including where it is not recoverable. Keep eligibility separate from the deductible expense: [§ 9b(1) EStG](https://www.gesetze-im-internet.de/estg/__9b.html) excludes recoverable VAT from acquisition cost; irrecoverable VAT remains in cost. An otherwise eligible self-usable business chair at EUR 952 gross (EUR 800 plus 19% VAT, [§ 12(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html)) meets the EUR 800 test in both cases. A Kleinunternehmer can choose to expense the full EUR 952; a business entitled to full input-VAT credit expenses EUR 800 and claims the EUR 152 VAT separately."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pre_refresh_row": 29,
+      "old_native_LF": [
+        117,
+        119
+      ],
+      "old_unit_sha256": "4c86d54f6d223a95beefd521a2d0af58de5b94784a3e8cefa2fb8cb59917283a",
+      "components": [
+        {
+          "old_component_LF": 117,
+          "exact_old_line": "- **x** is taxable income rounded down to a full euro; **y** is one ten-thousandth of x above the basic allowance; **z** is one ten-thousandth of x above EUR 17,799 (§ 32a(1) sentence 4). Round the tax down to a full euro. The statute prints a decimal comma and a space between thousands.",
+          "original_per_line_destination": "49",
+          "original_per_line_disposition": "Full-euro rounding retained.",
+          "current_destination": "49",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                49,
+                49
+              ],
+              "first_line": "- **x** is taxable income rounded down to a full euro; **y** is one ten-thousandth of x above the basic allowance; **z** is one ten-thousandth of x above EUR 17,799 (§ 32a(1) sentence 4). Round the tax down to a full euro. The statute prints a decimal comma and a space between thousands.",
+              "last_line": "- **x** is taxable income rounded down to a full euro; **y** is one ten-thousandth of x above the basic allowance; **z** is one ten-thousandth of x above EUR 17,799 (§ 32a(1) sentence 4). Round the tax down to a full euro. The statute prints a decimal comma and a space between thousands."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 118,
+          "exact_old_line": "- **Splitting.** Spouses assessed together pay twice the tax on half their joint taxable income (§ 32a(5)), if both are fully liable to German tax and do not live apart for good ([§ 26 EStG](https://www.gesetze-im-internet.de/estg/__26.html)); registered partners count as spouses (§ 2(8)). § 32a(6) extends it to a widowed person for the year after the death, and to some years in which a marriage ended.",
+          "original_per_line_destination": "50",
+          "original_per_line_disposition": "Splitting/registered partners/widow gates retained.",
+          "current_destination": "50",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                50,
+                50
+              ],
+              "first_line": "- **Splitting.** Spouses assessed together pay twice the tax on half their joint taxable income (§ 32a(5)), if both are fully liable to German tax and do not live apart for good ([§ 26 EStG](https://www.gesetze-im-internet.de/estg/__26.html)); registered partners count as spouses (§ 2(8)). § 32a(6) extends it to a widowed person for the year after the death, and to some years in which a marriage ended.",
+              "last_line": "- **Splitting.** Spouses assessed together pay twice the tax on half their joint taxable income (§ 32a(5)), if both are fully liable to German tax and do not live apart for good ([§ 26 EStG](https://www.gesetze-im-internet.de/estg/__26.html)); registered partners count as spouses (§ 2(8)). § 32a(6) extends it to a widowed person for the year after the death, and to some years in which a marriage ended."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 119,
+          "exact_old_line": "- **Outside this skill:** § 32b (progression clause), § 32d (investment income), § 34 (extraordinary income such as selling the business), § 34a (retained profits).",
+          "original_per_line_destination": "35",
+          "original_per_line_disposition": "Special tariff exclusions remain referrals.",
+          "current_destination": "35",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                35,
+                35
+              ],
+              "first_line": "- **Also refer.** Selling or closing the business, extraordinary income (§ 34), retained profits (§ 34a), the progression clause (§ 32b); electric and hybrid business cars and any dispute over private car use; the exact church tax rate and rounding for a client (state rules).",
+              "last_line": "- **Also refer.** Selling or closing the business, extraordinary income (§ 34), retained profits (§ 34a), the progression clause (§ 32b); electric and hybrid business cars and any dispute over private car use; the exact church tax rate and rounding for a client (state rules)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pre_refresh_row": 34,
+      "old_native_LF": [
+        139,
+        140
+      ],
+      "old_unit_sha256": "e4af6bf8483e40a685ee0abb4bd8cb9e7ef96a6d36ae2367a7f4b55d655d343d",
+      "components": [
+        {
+          "old_component_LF": 139,
+          "exact_old_line": "- **A limit with a sliding zone, not an allowance.** Up to the limit, no surcharge. Above it, the lower of the full rate on the whole tax and the cap on the excess. Fractions of a cent are dropped (§ 4 SolzG). The base is the assessed income tax worked out with child allowances; tax under § 32d(3) and (4) EStG is left out of the limit test. § 6(27) SolzG starts these limits in 2026 ([§ 6 SolzG](https://www.gesetze-im-internet.de/solzg_1995/__6.html)). Prepayments carry the surcharge too (§ 3(1) no. 2).",
+          "original_per_line_destination": "107",
+          "original_per_line_disposition": "Complete Soli sliding/childbase/investment exclusion retained.",
+          "current_destination": "107",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                107,
+                107
+              ],
+              "first_line": "- **A limit with a sliding zone, not an allowance.** Up to the limit, no surcharge. Above it, the lower of 5.5% on the whole tax and 11.9% of the excess. Fractions of a cent are dropped (§ 4 SolzG). The base is the assessed income tax worked out with child allowances; tax under § 32d(3) and (4) EStG is left out of the limit test. § 6(27) SolzG starts these limits in 2026 ([§ 6 SolzG](https://www.gesetze-im-internet.de/solzg_1995/__6.html)). Prepayments carry the surcharge too (§ 3(1) no. 2). Investment income at the flat rate carries its own surcharge: `de-capital-gains`.",
+              "last_line": "- **A limit with a sliding zone, not an allowance.** Up to the limit, no surcharge. Above it, the lower of 5.5% on the whole tax and 11.9% of the excess. Fractions of a cent are dropped (§ 4 SolzG). The base is the assessed income tax worked out with child allowances; tax under § 32d(3) and (4) EStG is left out of the limit test. § 6(27) SolzG starts these limits in 2026 ([§ 6 SolzG](https://www.gesetze-im-internet.de/solzg_1995/__6.html)). Prepayments carry the surcharge too (§ 3(1) no. 2). Investment income at the flat rate carries its own surcharge: `de-capital-gains`."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 140,
+          "exact_old_line": "- **Church tax.** The state and its church tax rules set the rate and rounding. Its base is the income tax worked out with child allowances in every case and without the § 35 credit ([§ 51a(2) EStG](https://www.gesetze-im-internet.de/estg/__51a.html): \"§ 35 ist ... nicht anzuwenden\"), so the credit does not lower a trader's church tax. Church tax paid is a special expense (§ 10(1) no. 4 EStG), except on flat-taxed investment income.",
+          "original_per_line_destination": "108",
+          "original_per_line_disposition": "Church state-rate and section35 exclusion retained.",
+          "current_destination": "108",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                108,
+                108
+              ],
+              "first_line": "- **Church tax.** The state and its church tax rules set the rate and rounding. Its base is the income tax worked out with child allowances in every case and without the § 35 credit ([§ 51a(2) EStG](https://www.gesetze-im-internet.de/estg/__51a.html): \"§ 35 ist ... nicht anzuwenden\"), so the credit does not lower a trader's church tax. Church tax paid is a special expense (§ 10(1) no. 4 EStG), except on flat-taxed investment income.",
+              "last_line": "- **Church tax.** The state and its church tax rules set the rate and rounding. Its base is the income tax worked out with child allowances in every case and without the § 35 credit ([§ 51a(2) EStG](https://www.gesetze-im-internet.de/estg/__51a.html): \"§ 35 ist ... nicht anzuwenden\"), so the credit does not lower a trader's church tax. Church tax paid is a special expense (§ 10(1) no. 4 EStG), except on flat-taxed investment income."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pre_refresh_row": 38,
+      "old_native_LF": [
+        158,
+        161
+      ],
+      "old_unit_sha256": "5a56fcfa0fd76f3fed51817479a4fdf274bd48e7cd3c1b9d57085bb9084acdb9",
+      "components": [
+        {
+          "old_component_LF": 158,
+          "exact_old_line": "- **Home office.** Room is the centre: actual costs or the flat amount, less one twelfth per full month it is not. Otherwise no room costs, only the day rate: for a day worked mainly at home without visiting a first place of work (also on a day away if no other workplace is available for good). One day rate per day, and none so far as room costs are deducted.",
+          "original_per_line_destination": "150",
+          "original_per_line_disposition": "Home room/day/month-overlap rules retained.",
+          "current_destination": "150",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                150,
+                150
+              ],
+              "first_line": "- **Home office.** Room is the centre of all work: actual costs or the EUR 1,260 flat amount, less one twelfth per full month it is not. Otherwise no room costs, only the EUR 6 day rate (§ 4(5) no. 6c): for a day worked mainly at home without visiting a first place of work (also on a day away if no other workplace is available for good). One day rate per day, and none so far as room costs are deducted.",
+              "last_line": "- **Home office.** Room is the centre of all work: actual costs or the EUR 1,260 flat amount, less one twelfth per full month it is not. Otherwise no room costs, only the EUR 6 day rate (§ 4(5) no. 6c): for a day worked mainly at home without visiting a first place of work (also on a day away if no other workplace is available for good). One day rate per day, and none so far as room costs are deducted."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 159,
+          "exact_old_line": "- **Commuting** to one's own premises uses the employee allowance (§ 4(5) no. 6): one rate from the first kilometre, one-way, not for flights. For a business car, the costs above the allowance are added back (sentence 3); list-price method and logbook: `germany-bookkeeping`.",
+          "original_per_line_destination": "151",
+          "original_per_line_disposition": "Commuting and business-car addback retained.",
+          "current_destination": "151–156",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical. DE-R01 now supplies the positive business-car commuting formula; old bare bookkeeping routing did not itself supply it.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                151,
+                156
+              ],
+              "first_line": "- **Commuting** to one's own premises uses the employee allowance rules of § 9 EStG through § 4(5) no. 6: EUR 0.38 from the first full kilometre, one way, not for flights. Apply the business-car adjustment below; the private-use amount is separate. The existing `germany-bookkeeping` record-keeping route does not replace this computation.",
+              "last_line": "- **Meals** on business trips (§ 4(5) no. 5 with § 9(4a)): flat amounts only; for a day without an overnight, nothing for eight hours or less. The EUR 14 arrival/departure branch instead requires an overnight away from home on that, preceding or following day; they stop after three months at one place; abroad, the country amounts in the ministry's letter of 5 December 2025, in force from 1 January 2026."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 160,
+          "exact_old_line": "- **Meals** on business trips (§ 4(5) no. 5): flat amounts only; nothing for eight hours or less; they stop after three months at one place; abroad, the ministry's country amounts.",
+          "original_per_line_destination": "152",
+          "original_per_line_disposition": "Meal8-hour/3-month/country rules retained.",
+          "current_destination": "151–156",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical. DE-R02 preserves the qualifying-overnight alternative; short non-overnight≤8h is separate.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                151,
+                156
+              ],
+              "first_line": "- **Commuting** to one's own premises uses the employee allowance rules of § 9 EStG through § 4(5) no. 6: EUR 0.38 from the first full kilometre, one way, not for flights. Apply the business-car adjustment below; the private-use amount is separate. The existing `germany-bookkeeping` record-keeping route does not replace this computation.",
+              "last_line": "- **Meals** on business trips (§ 4(5) no. 5 with § 9(4a)): flat amounts only; for a day without an overnight, nothing for eight hours or less. The EUR 14 arrival/departure branch instead requires an overnight away from home on that, preceding or following day; they stop after three months at one place; abroad, the country amounts in the ministry's letter of 5 December 2025, in force from 1 January 2026."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 161,
+          "exact_old_line": "- **Business trips** are not commuting: every kilometre counts. The per-km flat rate rests on the instructions; it matches the higher car rate of [§ 5(2) BRKG](https://www.gesetze-im-internet.de/brkg_2005/__5.html).",
+          "original_per_line_destination": "153",
+          "original_per_line_disposition": "Every business km distinction retained.",
+          "current_destination": "157",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                157,
+                157
+              ],
+              "first_line": "- **Business trips** are not commuting: every kilometre counts, at EUR 0.30 or the actual cost share.",
+              "last_line": "- **Business trips** are not commuting: every kilometre counts, at EUR 0.30 or the actual cost share."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pre_refresh_row": 40,
+      "old_native_LF": [
+        178,
+        180
+      ],
+      "old_unit_sha256": "fb375915199e599b330667a46c957990b6a32b9edce3904d9b77990d0b7aaf23",
+      "components": [
+        {
+          "old_component_LF": 178,
+          "exact_old_line": "- **GWG** is tested asset by asset and is a choice. § 6(2a) offers a yearly pool instead (`germany-bookkeeping`). Other assets are depreciated evenly over their useful life, by months in the year bought (§ 7(1)).",
+          "original_per_line_destination": "158",
+          "original_per_line_disposition": "GWG choice/pool/monthly depreciation retained.",
+          "current_destination": "162",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                162,
+                162
+              ],
+              "first_line": "- **GWG** is tested asset by asset and is a choice. § 6(2a) offers a yearly pool instead (`germany-bookkeeping`). Other assets are depreciated evenly over their useful life, by months in the year bought ([§ 7(1) EStG](https://www.gesetze-im-internet.de/estg/__7.html)), or by the 30% declining balance for movables bought 1 July 2025 to 31 December 2027 (§ 7(2)).",
+              "last_line": "- **GWG** is tested asset by asset and is a choice. § 6(2a) offers a yearly pool instead (`germany-bookkeeping`). Other assets are depreciated evenly over their useful life, by months in the year bought ([§ 7(1) EStG](https://www.gesetze-im-internet.de/estg/__7.html)), or by the 30% declining balance for movables bought 1 July 2025 to 31 December 2027 (§ 7(2))."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 179,
+          "exact_old_line": "- **§ 7g.** The profit limit is a cliff; the cap is a different rule with the same number. Not bought by the end of the third year after the deduction: it is undone in the year taken (§ 7g(3)). In the year bought, up to the same share of the real cost is added back (not more than the open deductions) and the cost may be cut by as much (§ 7g(2)). The asset must be let or used only or almost only in a German establishment until the end of the year after purchase (§ 7g(4)); special depreciation also needs the profit limit met in the year before purchase (§ 7g(6)). A deduction may create a loss.",
+          "original_per_line_destination": "159",
+          "original_per_line_disposition": "Complete IAB process retained; tested profit now expressly excludes both deductions and add-backs.",
+          "current_destination": "163",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                163,
+                163
+              ],
+              "first_line": "- **§ 7g investment deduction ([§ 7g EStG](https://www.gesetze-im-internet.de/estg/__7g.html)).** Up to 50% of a planned movable asset's expected cost comes off profit in advance. Test the EUR 200,000 profit limit without both investment deductions and § 7g(2) add-backs; a tested profit of EUR 200,001 fails for that year; the EUR 200,000 cap on open deductions is a different rule with the same number. A deduction may create a loss. Not bought by the end of the third year after: it is undone in the year taken (§ 7g(3)). In the year bought, up to the same share of the real cost is added back (not more than the open deductions) and the cost may be cut by as much (§ 7g(2)). The asset must be let or used only or almost only (at least 90%) in a German establishment until the end of the year after purchase (§ 7g(4)). Special depreciation of up to 40% also needs the profit limit met in the year before purchase (§ 7g(5), (6)).",
+              "last_line": "- **§ 7g investment deduction ([§ 7g EStG](https://www.gesetze-im-internet.de/estg/__7g.html)).** Up to 50% of a planned movable asset's expected cost comes off profit in advance. Test the EUR 200,000 profit limit without both investment deductions and § 7g(2) add-backs; a tested profit of EUR 200,001 fails for that year; the EUR 200,000 cap on open deductions is a different rule with the same number. A deduction may create a loss. Not bought by the end of the third year after: it is undone in the year taken (§ 7g(3)). In the year bought, up to the same share of the real cost is added back (not more than the open deductions) and the cost may be cut by as much (§ 7g(2)). The asset must be let or used only or almost only (at least 90%) in a German establishment until the end of the year after purchase (§ 7g(4)). Special depreciation of up to 40% also needs the profit limit met in the year before purchase (§ 7g(5), (6))."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 180,
+          "exact_old_line": "- **Flat shares** replace all actual expenses of that activity. They rest on a ministry letter of 6 April 2023 that the instructions cite, not on the statute.",
+          "original_per_line_destination": "154",
+          "original_per_line_disposition": "Administrative flat-expense replacement and actual2023letter limitation retained.",
+          "current_destination": "158",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                158,
+                158
+              ],
+              "first_line": "- **Flat expense shares** for writers, journalists, side-line teachers and examiners replace all actual expenses of that activity. They rest on a ministry letter of 6 April 2023 (BStBl I S. 671) that the 2026 EÜR instructions cite, not on the statute.",
+              "last_line": "- **Flat expense shares** for writers, journalists, side-line teachers and examiners replace all actual expenses of that activity. They rest on a ministry letter of 6 April 2023 (BStBl I S. 671) that the 2026 EÜR instructions cite, not on the statute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pre_refresh_row": 44,
+      "old_native_LF": [
+        197,
+        199
+      ],
+      "old_unit_sha256": "a18f6bb471d01d2fe1b9043801384f164c2496e23f56d15e56a92945e27bc8aa",
+      "components": [
+        {
+          "old_component_LF": 197,
+          "exact_old_line": "- **Pension contributions (§ 10(1) no. 2):** statutory insurance, professional schemes with comparable benefits, and a private contract paying only a lifelong monthly annuity not before age 62, with rights not inheritable, transferable, lendable against, saleable or payable as a lump sum. With a job as well, the employer's tax-free share is added before the cap and taken off after.",
+          "original_per_line_destination": "169",
+          "original_per_line_disposition": "Eligible pension terms/employer-share treatment retained.",
+          "current_destination": "173",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                173,
+                173
+              ],
+              "first_line": "- **Pension contributions (§ 10(1) no. 2):** statutory insurance, professional schemes with comparable benefits, and a private contract paying only a lifelong monthly annuity not before age 62, with rights not inheritable, transferable, lendable against, saleable or payable as a lump sum. With a job as well, the employer's tax-free share is added before the cap and taken off after.",
+              "last_line": "- **Pension contributions (§ 10(1) no. 2):** statutory insurance, professional schemes with comparable benefits, and a private contract paying only a lifelong monthly annuity not before age 62, with rights not inheritable, transferable, lendable against, saleable or payable as a lump sum. With a job as well, the employer's tax-free share is added before the cap and taken off after."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 198,
+          "exact_old_line": "- **Basic health and care cover is deductible in full**, even above the cap, leaving nothing for other insurance (§ 10(4) sentence 4); for private cover only the statutory-level part counts. Other insurance (no. 3a: unemployment, accident, liability, term life) counts only while the cap has room.",
+          "original_per_line_destination": "170",
+          "original_per_line_disposition": "Full basic coverage before other-insurance room retained.",
+          "current_destination": "174",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                174,
+                174
+              ],
+              "first_line": "- **Basic health and care cover is deductible in full**, even above the cap, leaving nothing for other insurance (§ 10(4) sentence 4); for private cover only the statutory-level part counts. Other insurance (no. 3a: unemployment, accident, liability, term life) counts only while the cap has room.",
+              "last_line": "- **Basic health and care cover is deductible in full**, even above the cap, leaving nothing for other insurance (§ 10(4) sentence 4); for private cover only the statutory-level part counts. Other insurance (no. 3a: unemployment, accident, liability, term life) counts only while the cap has room."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 199,
+          "exact_old_line": "- **Which cap.** Insured through the Künstlersozialkasse (§ 3 no. 57), or with a job and an employer health contribution (no. 62): the lower cap. Paying all cover alone with no claim to cover or refunds without own expense: the higher cap. Spouses assessed together add their own caps. Contribution rates: `de-social-contributions`.",
+          "original_per_line_destination": "171",
+          "original_per_line_disposition": "1900/2800 KSK/employer/individual joint caps retained.",
+          "current_destination": "175",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                175,
+                175
+              ],
+              "first_line": "- **Which cap.** Insured through the Künstlersozialkasse (§ 3 no. 57), or with a job and an employer health contribution (no. 62): EUR 1,900. Paying all cover alone with no claim to cover or refunds without own expense: EUR 2,800. Spouses assessed together add their own caps. Contribution rates: `de-social-contributions`.",
+              "last_line": "- **Which cap.** Insured through the Künstlersozialkasse (§ 3 no. 57), or with a job and an employer health contribution (no. 62): EUR 1,900. Paying all cover alone with no claim to cover or refunds without own expense: EUR 2,800. Spouses assessed together add their own caps. Contribution rates: `de-social-contributions`."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pre_refresh_row": 50,
+      "old_native_LF": [
+        219,
+        221
+      ],
+      "old_unit_sha256": "eeb9578bd61736d491d201cc7c765f01d652ce251d61e043d4534105e0b25213",
+      "components": [
+        {
+          "old_component_LF": 219,
+          "exact_old_line": "- **Due** 10 March, 10 June, 10 September and 10 December (§ 37(1)); both minimums must be met.",
+          "original_per_line_destination": "198",
+          "original_per_line_disposition": "Dates, quarter amounts,15-month adjustment, notice and firstyear forecast retained.",
+          "current_destination": "202",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                202,
+                202
+              ],
+              "first_line": "- **Prepayments (§ 37 EStG).** Due 10 March, 10 June, 10 September and 10 December (§ 37(1)); both minimums must be met. Set by notice, as a rule from the last assessment's tax less tax withheld. The office can adjust them until the end of the 15th calendar month after the year (§ 37(3)); a rise after the year end is added to the last prepayment and due one month after the notice (§ 37(4)). In the first year the office uses the tax it expects, so the profit estimate given at registration matters (`de-estimated-tax`). Example: last assessment EUR 10,548, nothing withheld: EUR 2,637 on each date.",
+              "last_line": "- **Prepayments (§ 37 EStG).** Due 10 March, 10 June, 10 September and 10 December (§ 37(1)); both minimums must be met. Set by notice, as a rule from the last assessment's tax less tax withheld. The office can adjust them until the end of the 15th calendar month after the year (§ 37(3)); a rise after the year end is added to the last prepayment and due one month after the notice (§ 37(4)). In the first year the office uses the tax it expects, so the profit estimate given at registration matters (`de-estimated-tax`). Example: last assessment EUR 10,548, nothing withheld: EUR 2,637 on each date."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 221,
+          "exact_old_line": "- **A late prepayment** carries the late payment surcharge ([§ 240 AO](https://www.gesetze-im-internet.de/ao_1977/__240.html)).",
+          "original_per_line_destination": "213",
+          "original_per_line_disposition": "Late-payment route retained.",
+          "current_destination": "217",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                217,
+                217
+              ],
+              "first_line": "- **Late payment** of a balance or a prepayment carries the late payment surcharge for each started month ([§ 240 AO](https://www.gesetze-im-internet.de/ao_1977/__240.html)).",
+              "last_line": "- **Late payment** of a balance or a prepayment carries the late payment surcharge for each started month ([§ 240 AO](https://www.gesetze-im-internet.de/ao_1977/__240.html))."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pre_refresh_row": 60,
+      "old_native_LF": [
+        253,
+        259
+      ],
+      "old_unit_sha256": "def829764dcf2f5682be8de538c28bed74543d06d8ad6c1ab0fd532ee1c99a2f",
+      "components": [
+        {
+          "old_component_LF": 253,
+          "exact_old_line": "1. **Translator, zone 3** ([§ 32a EStG](https://www.gesetze-im-internet.de/estg/__32a.html)). Taxable income EUR 50,000. z = (50,000 - 17,799) / 10,000 = 3.2201. Tax = (173.10 x 3.2201 + 2,397) x 3.2201 + 1,034.87 = 10,548.33, rounded down to EUR 10,548. Below EUR 20,350: no surcharge ([§ 3(3) SolzG](https://www.gesetze-im-internet.de/solzg_1995/__3.html)). Church tax at 9%: EUR 949.32.",
+          "original_per_line_destination": "226–249",
+          "original_per_line_disposition": "Translator example retained byte-exact originaloa.",
+          "current_destination": "230–253",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                230,
+                253
+              ],
+              "first_line": "**Example 1: translator (Freiberufler), zone 3, home office day rate.** A single translator, EÜR, Kleinunternehmer not used. Receipts EUR 72,000; other business expenses EUR 12,000; 150 days worked mainly at home, no centre-of-work room, so 150 x EUR 6 = EUR 900 day rates (under the EUR 1,260 cap). Profit EUR 59,100. Special expenses (pension and health) EUR 9,100, so taxable income EUR 50,000. Zone 3: z = (50,000 - 17,799) / 10,000 = 3.2201; tax = (173.10 x 3.2201 + 2,397) x 3.2201 + 1,034.87 = 10,548.33, rounded down to EUR 10,548. Below EUR 20,350: no surcharge. Church tax at 9%: EUR 949.32.",
+              "last_line": "```"
+            }
+          ]
+        },
+        {
+          "old_component_LF": 254,
+          "exact_old_line": "2. **Consultant in the sliding zone** ([§ 4 SolzG](https://www.gesetze-im-internet.de/solzg_1995/__4.html)). Taxable income EUR 80,300, zone 4: 0.42 x 80,300 - 11,135.63 = 22,590.37, so tax EUR 22,590. Surcharge: full rate 5.5% x 22,590 = EUR 1,242.45; cap 11.9% x (22,590 - 20,350) = EUR 266.56; the lower, EUR 266.56, applies.",
+          "original_per_line_destination": "251–275",
+          "original_per_line_disposition": "Consultant example retained byte-exact originaloa.",
+          "current_destination": "255–279",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                255,
+                279
+              ],
+              "first_line": "**Example 2: consultant with an Investitionsabzugsbetrag, surcharge sliding zone.** A single IT consultant plans to buy equipment costing EUR 20,000 next year. Profit before the deduction EUR 100,000, within the EUR 200,000 limit, so 50% x 20,000 = EUR 10,000 comes off: profit EUR 90,000. Special expenses EUR 9,700: taxable income EUR 80,300, zone 4. Tax 0.42 x 80,300 - 11,135.63 = 22,590.37, so EUR 22,590. Surcharge: 5.5% x 22,590 = EUR 1,242.45; cap 11.9% x (22,590 - 20,350) = EUR 266.56; the lower, EUR 266.56, applies. If the equipment is not bought by the end of the third year, the EUR 10,000 is undone in 2026 and interest follows.",
+              "last_line": "```"
+            }
+          ]
+        },
+        {
+          "old_component_LF": 255,
+          "exact_old_line": "3. **Trader with the § 35 credit** ([§ 35 EStG](https://www.gesetze-im-internet.de/estg/__35.html)). Trade profit EUR 110,000, the only income; taxable income EUR 100,000; assumed trade tax multiplier (Hebesatz) 400%. Tariff tax 0.42 x 100,000 - 11,135.63 = 30,864.37, so EUR 30,864. Trade tax base amount (110,000 - 24,500) x 3.5% = EUR 2,992.50 ([§ 11 GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html)); trade tax at 400% = EUR 11,970 (details in `de-trade-tax`). Credit 4 x 2,992.50 = EUR 11,970, within both caps. Income tax EUR 18,894: below EUR 20,350, so no surcharge. Church tax (9%) is on EUR 30,864, not on EUR 18,894: EUR 2,777.76 ([§ 51a(2) EStG](https://www.gesetze-im-internet.de/estg/__51a.html)).",
+          "original_per_line_destination": "277–303",
+          "original_per_line_disposition": "Trader example retained byte-exact originaloa.",
+          "current_destination": "281–307",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                281,
+                307
+              ],
+              "first_line": "**Example 3: sole trader with the § 35 credit, Hebesatz 400%.** A single online retailer (trade, § 15 EStG). Trade profit EUR 110,000, his only income; special expenses EUR 10,000, so taxable income EUR 100,000, zone 4. Tariff tax 0.42 x 100,000 - 11,135.63 = 30,864.37, so EUR 30,864. Trade tax: trade income EUR 110,000 (already a multiple of EUR 100) less the EUR 24,500 allowance = EUR 85,500; base amount 85,500 x 3.5% = EUR 2,992.50 ([§ 11 GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html)); at a 400% Hebesatz the municipality charges EUR 11,970. Credit: 4 x 2,992.50 = EUR 11,970. First cap: all his income is trade income, so the share of tariff tax on it is the full EUR 30,864. Second cap: trade tax payable EUR 11,970. The credit is EUR 11,970 ([§ 35(1) EStG](https://www.gesetze-im-internet.de/estg/__35.html)). Income tax EUR 18,894, below EUR 20,350, so no surcharge. Church tax at 9% is worked out on the tax before the § 35 credit ([§ 51a(2) EStG](https://www.gesetze-im-internet.de/estg/__51a.html)): 9% x 30,864 = EUR 2,777.76. Total income tax plus trade tax EUR 30,864: at a 400% Hebesatz 4 x the base amount equals the trade tax, so the credit absorbs it in full; above 400% the credit stops at 4 x the base amount and the rest of the trade tax is a real cost.",
+              "last_line": "```"
+            }
+          ]
+        },
+        {
+          "old_component_LF": 256,
+          "exact_old_line": "4. **Married couple, splitting** ([§ 32a(5) EStG](https://www.gesetze-im-internet.de/estg/__32a.html)). Joint taxable income EUR 100,000. Tax on half, EUR 50,000, is EUR 10,548 (case 1); doubled, EUR 21,096. The couple's limit of EUR 40,700 is not exceeded, so no surcharge. One person alone with EUR 100,000 would pay EUR 30,864.",
+          "original_per_line_destination": "305",
+          "original_per_line_disposition": "Joint splitting example retained.",
+          "current_destination": "309",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                309,
+                309
+              ],
+              "first_line": "A married couple with the same EUR 100,000 joint taxable income under splitting pays twice the tax on EUR 50,000: 2 x 10,548 = EUR 21,096, against EUR 30,864 for one single person; their EUR 40,700 surcharge limit is not exceeded.",
+              "last_line": "A married couple with the same EUR 100,000 joint taxable income under splitting pays twice the tax on EUR 50,000: 2 x 10,548 = EUR 21,096, against EUR 30,864 for one single person; their EUR 40,700 surcharge limit is not exceeded."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 257,
+          "exact_old_line": "5. **Prepayments** ([§ 37 EStG](https://www.gesetze-im-internet.de/estg/__37.html)). Last assessment: income tax EUR 10,548, nothing withheld. Prepayments EUR 2,637 on each of the four dates, above both minimums (EUR 400 a year, EUR 100 a date).",
+          "original_per_line_destination": "198",
+          "original_per_line_disposition": "Quarterprepayment2637 retained.",
+          "current_destination": "202",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                202,
+                202
+              ],
+              "first_line": "- **Prepayments (§ 37 EStG).** Due 10 March, 10 June, 10 September and 10 December (§ 37(1)); both minimums must be met. Set by notice, as a rule from the last assessment's tax less tax withheld. The office can adjust them until the end of the 15th calendar month after the year (§ 37(3)); a rise after the year end is added to the last prepayment and due one month after the notice (§ 37(4)). In the first year the office uses the tax it expects, so the profit estimate given at registration matters (`de-estimated-tax`). Example: last assessment EUR 10,548, nothing withheld: EUR 2,637 on each date.",
+              "last_line": "- **Prepayments (§ 37 EStG).** Due 10 March, 10 June, 10 September and 10 December (§ 37(1)); both minimums must be met. Set by notice, as a rule from the last assessment's tax less tax withheld. The office can adjust them until the end of the 15th calendar month after the year (§ 37(3)); a rise after the year end is added to the last prepayment and due one month after the notice (§ 37(4)). In the first year the office uses the tax it expects, so the profit estimate given at registration matters (`de-estimated-tax`). Example: last assessment EUR 10,548, nothing withheld: EUR 2,637 on each date."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 258,
+          "exact_old_line": "6. **Kleinunternehmer buying a chair** ([§ 6(2) EStG](https://www.gesetze-im-internet.de/estg/__6.html)). 2025 turnover EUR 22,000, 2026 expected EUR 24,000: both § 19 limits met. An office chair costs EUR 952 gross (EUR 800 plus 19% VAT, [§ 12(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html)). No input VAT is deductible, so the cost is EUR 952: above EUR 800, it is depreciated over its useful life or pooled. A business in the normal VAT scheme would record EUR 800 and could expense it in full.",
+          "original_per_line_destination": "144",
+          "original_per_line_disposition": "Original Kleinunternehmer chair eligibility result corrected DE-B04:800 test/952 expense. Full original example recomputed under corrected own law.",
+          "current_destination": "144",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical. DE-B04 expressly corrects old gross-price eligibility: test800 net of containedVAT; irrecoverableVAT remains in deductible cost, not the eligibility limit.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                144,
+                144
+              ],
+              "first_line": "- **The EUR 800 GWG test** uses cost reduced by the input VAT contained in the price (§ 6(2) EStG: \"vermindert um einen darin enthaltenen Vorsteuerbetrag\"), including where it is not recoverable. Keep eligibility separate from the deductible expense: [§ 9b(1) EStG](https://www.gesetze-im-internet.de/estg/__9b.html) excludes recoverable VAT from acquisition cost; irrecoverable VAT remains in cost. An otherwise eligible self-usable business chair at EUR 952 gross (EUR 800 plus 19% VAT, [§ 12(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html)) meets the EUR 800 test in both cases. A Kleinunternehmer can choose to expense the full EUR 952; a business entitled to full input-VAT credit expenses EUR 800 and claims the EUR 152 VAT separately.",
+              "last_line": "- **The EUR 800 GWG test** uses cost reduced by the input VAT contained in the price (§ 6(2) EStG: \"vermindert um einen darin enthaltenen Vorsteuerbetrag\"), including where it is not recoverable. Keep eligibility separate from the deductible expense: [§ 9b(1) EStG](https://www.gesetze-im-internet.de/estg/__9b.html) excludes recoverable VAT from acquisition cost; irrecoverable VAT remains in cost. An otherwise eligible self-usable business chair at EUR 952 gross (EUR 800 plus 19% VAT, [§ 12(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html)) meets the EUR 800 test in both cases. A Kleinunternehmer can choose to expense the full EUR 952; a business entitled to full input-VAT credit expenses EUR 800 and claims the EUR 152 VAT separately."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 259,
+          "exact_old_line": "7. **Late 2026 return** ([§ 152 AO](https://www.gesetze-im-internet.de/ao_1977/__152.html)). No adviser; filed three months and five days after Monday 2 August 2027. Tax less prepayments and tax withheld EUR 2,000. 0.25% x 2,000 = EUR 5 a month, below the EUR 25 minimum, so 4 started months x EUR 25 = EUR 100, if the office sets one (it may; it is not yet compulsory, as 14 months have not passed).",
+          "original_per_line_destination": "211",
+          "original_per_line_disposition": "Four-started-month late return100 retained.",
+          "current_destination": "215",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                215,
+                215
+              ],
+              "first_line": "- **Example.** A 2026 return without an adviser filed three months and five days after Monday 2 August 2027, balance EUR 2,000: 0.25% x 2,000 = EUR 5 a month, below the EUR 25 minimum, so 4 started months x EUR 25 = EUR 100, if the office sets one.",
+              "last_line": "- **Example.** A 2026 return without an adviser filed three months and five days after Monday 2 August 2027, balance EUR 2,000: 0.25% x 2,000 = EUR 5 a month, below the EUR 25 minimum, so 4 started months x EUR 25 = EUR 100, if the office sets one."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pre_refresh_row": 65,
+      "old_native_LF": [
+        276,
+        278
+      ],
+      "old_unit_sha256": "e877d264fb47a67ccf9171c07674fe12eab24dfe3c14c4af749d7886bc2ca323",
+      "components": [
+        {
+          "old_component_LF": 276,
+          "exact_old_line": "- **Who must file** ([§ 56 EStDV](https://www.gesetze-im-internet.de/estdv_1955/__56.html)): without wages, if total income exceeds the basic allowance (twice it for a joint assessment); also after a loss notice for the year before, and whenever the office asks (§ 149(1) AO).",
+          "original_per_line_destination": "185",
+          "original_per_line_disposition": "Filing thresholds/lossnotice/office request retained.",
+          "current_destination": "189",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                189,
+                189
+              ],
+              "first_line": "- **Who must file** ([§ 56 EStDV](https://www.gesetze-im-internet.de/estdv_1955/__56.html)): without wages, if total income exceeds the basic allowance (twice it for a joint assessment); also after a loss notice for the year before, and whenever the office asks (§ 149(1) AO).",
+              "last_line": "- **Who must file** ([§ 56 EStDV](https://www.gesetze-im-internet.de/estdv_1955/__56.html)): without wages, if total income exceeds the basic allowance (twice it for a joint assessment); also after a loss notice for the year before, and whenever the office asks (§ 149(1) AO)."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 277,
+          "exact_old_line": "- **Electronic filing is a duty** with business income ([§ 25(4) EStG](https://www.gesetze-im-internet.de/estg/__25.html)), except in the employee cases of § 46(2) nos. 2 to 8; the office can waive it for hardship.",
+          "original_per_line_destination": "186",
+          "original_per_line_disposition": "Electronic filing and employeeexceptions/hardship retained.",
+          "current_destination": "190",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                190,
+                190
+              ],
+              "first_line": "- **Electronic filing is a duty** with business income ([§ 25(4) EStG](https://www.gesetze-im-internet.de/estg/__25.html)), except in the employee cases of § 46(2) nos. 2 to 8; the office can waive it for hardship.",
+              "last_line": "- **Electronic filing is a duty** with business income ([§ 25(4) EStG](https://www.gesetze-im-internet.de/estg/__25.html)), except in the employee cases of § 46(2) nos. 2 to 8; the office can waive it for hardship."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 278,
+          "exact_old_line": "- **Side income next to a job** ([§ 46 EStG](https://www.gesetze-im-internet.de/estg/__46.html)): an employee must be assessed if income without wage tax is more than EUR 410 (\"jeweils mehr als 410 Euro\"); if such income is not more than EUR 410 in total it is taken off again (\"insgesamt nicht mehr als 410 Euro\"). Neither helps someone without wages.",
+          "original_per_line_destination": "187",
+          "original_per_line_disposition": "Employee410 threshold/deduction retained.",
+          "current_destination": "191",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical. DE-R16 limits the eligible410 deduction and applies statutory reduction inputs.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                191,
+                191
+              ],
+              "first_line": "- **Side income next to a job** ([§ 46 EStG](https://www.gesetze-im-internet.de/estg/__46.html)): an employee must be assessed if income without wage tax is more than EUR 410; the separate § 46(3) deduction covers eligible taxable non-wage income not assessed under § 32d(6), where that eligible income totals no more than EUR 410. Reduce the deduction by the part of the age-relief amount exceeding the wage-based component under § 24a sentence 5, using wages excluding § 19(2) pension remuneration, and by the § 13(3) amount (§ 46(3) sentence 2). Neither helps someone without wages.",
+              "last_line": "- **Side income next to a job** ([§ 46 EStG](https://www.gesetze-im-internet.de/estg/__46.html)): an employee must be assessed if income without wage tax is more than EUR 410; the separate § 46(3) deduction covers eligible taxable non-wage income not assessed under § 32d(6), where that eligible income totals no more than EUR 410. Reduce the deduction by the part of the age-relief amount exceeding the wage-based component under § 24a sentence 5, using wages excluding § 19(2) pension remuneration, and by the § 13(3) amount (§ 46(3) sentence 2). Neither helps someone without wages."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pre_refresh_row": 67,
+      "old_native_LF": [
+        286,
+        288
+      ],
+      "old_unit_sha256": "982011d3c178c169ab6ffac77d323d208b6196b664bbcf3a355df09d38dddccc",
+      "components": [
+        {
+          "old_component_LF": 286,
+          "exact_old_line": "- **One rule for every return.** The 14-month rule applies advised or not, so for an advised return it bites the day after the advised deadline unless that was extended; also when a return called in early (§ 149(4) AO, four months' notice, e.g. after a late return or a business start or close) misses its date (§ 152(2) no. 3).",
+          "original_per_line_destination": "193/195",
+          "original_per_line_disposition": "14-month and4-month early-call rules retained.",
+          "current_destination": "197/199",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                197,
+                197
+              ],
+              "first_line": "| Late-filing surcharge becomes compulsory: not filed within 14 months of the year end | After 29 February 2028 | After February 2027; an advised return filed by Monday 1 March 2027 is on time | [§ 152(2) no. 1 AO](https://www.gesetze-im-internet.de/ao_1977/__152.html) |",
+              "last_line": "| Late-filing surcharge becomes compulsory: not filed within 14 months of the year end | After 29 February 2028 | After February 2027; an advised return filed by Monday 1 March 2027 is on time | [§ 152(2) no. 1 AO](https://www.gesetze-im-internet.de/ao_1977/__152.html) |"
+            },
+            {
+              "native_LF": [
+                199,
+                199
+              ],
+              "first_line": "- **Called in early.** The office may call in a return early with four months' notice (§ 149(4) AO), for example after a late return or a business start or close.",
+              "last_line": "- **Called in early.** The office may call in a return early with four months' notice (§ 149(4) AO), for example after a late return or a business start or close."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 287,
+          "exact_old_line": "- **Extension** ([§ 109 AO](https://www.gesetze-im-internet.de/ao_1977/__109.html)): possible; for an advised return beyond February only if prevented through no fault of one's own.",
+          "original_per_line_destination": "196",
+          "original_per_line_disposition": "Extension/no-fault rule retained.",
+          "current_destination": "200",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                200,
+                200
+              ],
+              "first_line": "- **Extension** ([§ 109 AO](https://www.gesetze-im-internet.de/ao_1977/__109.html)): possible; for an advised return beyond February only if prevented through no fault of one's own.",
+              "last_line": "- **Extension** ([§ 109 AO](https://www.gesetze-im-internet.de/ao_1977/__109.html)): possible; for an advised return beyond February only if prevented through no fault of one's own."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 288,
+          "exact_old_line": "- **Pandemic extensions** ended with tax year 2024 ([Art. 97 § 36 EGAO](https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html)); they do not apply to 2025 or 2026.",
+          "original_per_line_destination": "197",
+          "original_per_line_disposition": "Pandemic expiry retained.",
+          "current_destination": "201",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                201,
+                201
+              ],
+              "first_line": "- **Pandemic extensions** ended with tax year 2024 ([Art. 97 § 36 EGAO](https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html)); they do not apply to 2025 or 2026.",
+              "last_line": "- **Pandemic extensions** ended with tax year 2024 ([Art. 97 § 36 EGAO](https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html)); they do not apply to 2025 or 2026."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pre_refresh_row": 69,
+      "old_native_LF": [
+        298,
+        300
+      ],
+      "old_unit_sha256": "444904b170eda01bf91de142f81e9c770c1c5f9f55da9081af77af5eab4f4f07",
+      "components": [
+        {
+          "old_component_LF": 298,
+          "exact_old_line": "- **May or must.** The surcharge may be set for any late return unless the delay is excusable (§ 152(1)). It is not compulsory if the deadline was extended, the tax is nil or below, or the tax is not above prepayments plus tax withheld (§ 152(3)).",
+          "original_per_line_destination": "210–211",
+          "original_per_line_disposition": "Discretionary/mandatory exceptions and100 example retained.",
+          "current_destination": "214–215",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                214,
+                215
+              ],
+              "first_line": "- **May or must.** The surcharge may be set for any late return unless the delay is excusable (§ 152(1)). It is compulsory after 14 months (or when a return called in early misses its date, § 152(2) no. 3), unless the deadline was extended, the tax is nil or below, or the tax is not above prepayments plus tax withheld (§ 152(3)); it then stays possible at discretion.",
+              "last_line": "- **Example.** A 2026 return without an adviser filed three months and five days after Monday 2 August 2027, balance EUR 2,000: 0.25% x 2,000 = EUR 5 a month, below the EUR 25 minimum, so 4 started months x EUR 25 = EUR 100, if the office sets one."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 299,
+          "exact_old_line": "- **Interest** starts 15 months after the end of the tax year and runs until the assessment takes effect ([§ 233a(2) AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html)); only full months count.",
+          "original_per_line_destination": "212",
+          "original_per_line_disposition": "15-month/full-month interest retained.",
+          "current_destination": "216",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                216,
+                216
+              ],
+              "first_line": "- **Interest** starts 15 months after the end of the tax year and runs until the assessment takes effect ([§ 233a(2) AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html)); only full months count.",
+              "last_line": "- **Interest** starts 15 months after the end of the tax year and runs until the assessment takes effect ([§ 233a(2) AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html)); only full months count."
+            }
+          ]
+        },
+        {
+          "old_component_LF": 300,
+          "exact_old_line": "- **Paying.** The balance is due within one month of the notice; the part matching overdue prepayments at once (§ 36(4) EStG). Late tax carries the late payment surcharge for each started month (§ 240 AO).",
+          "original_per_line_destination": "199",
+          "original_per_line_disposition": "Balance due notice month retained.",
+          "current_destination": "203",
+          "actual_current_scope_note": "Historical topic preserved at the actual current destination, with current source qualifications; no claim that old prose is byte-identical.",
+          "actual_current_destination_openings": [
+            {
+              "native_LF": [
+                203,
+                203
+              ],
+              "first_line": "- **Paying the balance.** Due within one month of the notice; the part matching overdue prepayments at once (§ 36(4) EStG).",
+              "last_line": "- **Paying the balance.** Due within one month of the notice; the part matching overdue prepayments at once (§ 36(4) EStG)."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

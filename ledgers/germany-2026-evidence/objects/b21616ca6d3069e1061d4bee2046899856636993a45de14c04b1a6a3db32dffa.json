@@ -1,0 +1,11 @@
+{
+  "id": "U5746efcd68c9eb95",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.body",
+  "raw_sha256": "1f272f14689c05293072a525f59df9c293718adb53df6c754b62724c35d20047",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.reader.txt",
+  "reader_sha256": "823277b8322cdd46240c8dcfeeaeda892825261c267ec2f2e862313a874b956e",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

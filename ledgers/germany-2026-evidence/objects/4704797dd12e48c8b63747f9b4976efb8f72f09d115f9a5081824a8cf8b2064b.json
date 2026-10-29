@@ -1,0 +1,20 @@
+[
+  "4d26c15a24d107afa14e2b0e461c1be62e2f5872\tb377c7fda609cfd412e46857ad3aa0f4c2429c79\t2026-10-17\tsync: 1577 files updated from openaccountants.com (2026-10-17)",
+  "98bb52dffcf60736fb6d60386d55ac1fb2c61dd1\t99399440f3449cfd5815287ee95bc7b3464b6227\t2026-10-07\tsync: 1767 files updated from openaccountants.com (2026-10-07)",
+  "324d47d1ad8b12536f50550992e0c604f55ea5c7\ta7d221c3c272c8bf8be940049d0208d3b8870d08\t2026-10-04\tsync: 1809 files updated from openaccountants.com (2026-10-04)",
+  "ada1faee45be23b0506caf9997c9ef7e652b23a4\t2338bb0caeb8709675203319bf1172bdb5727523\t2026-09-28\tsync: 128 files updated from openaccountants.com (2026-09-28)",
+  "fff6179a27e4e164f9cbe8e3307ba56812088bf7\t7dc926e3c7c7befd1f5c7cb533f1669b861a344b\t2026-09-20\tsync: 35 files updated from openaccountants.com (2026-09-20)",
+  "11eb01a426a98dc27b7318f82947506e7f1d7929\t28c603d87fe43702630ba3480da3fb107345c3d9\t2026-08-27\tsync: 3270 files updated from openaccountants.com (2026-08-27)",
+  "7782d74fd197bc66002760de13a81a5a60c82f9a\t7db2915b250b7c5085b52f66534ceac158847b65\t2026-08-25\tsync: 1256 files updated from openaccountants.com (2026-08-25)",
+  "f713b44271bbf1c491792e3ac001056452ef21a6\t895cbdbdf984ebc0f360648661ae5a56c3cb886d\t2026-08-22\tsync: 582 files updated from openaccountants.com (2026-08-22)",
+  "53ab8565b78fe1d10c62204c417fb305b81b9238\tc31bcf04a25467bb4183e0bdd90eeb85d82fa5f1\t2026-08-22\tfeat(australia): add 8 practice and subcontractor accounting skills (#127)",
+  "ee93d753e1122c1229634357c55ca63e959904aa\t7625b48f0080b23c45ed1dd85880eca071bb66ad\t2026-08-12\tsync: 777 files updated from openaccountants.com (2026-08-12)",
+  "1ecfbc4acc9ad4431193aceef098953a8e5eccc3\t0370542b5a357db6092af9b7a2eef169110f2b2e\t2026-08-10\tfix: repair YAML frontmatter that silently hid 565 guides from the MCP index",
+  "037f3d41878fe4e5b7b773c32d478a11c6034e8e\ta77a15abfe51c6b3ba9575bf700bab1425773daf\t2026-08-02\tsync: 6129 files updated from openaccountants.com (2026-08-02)",
+  "bca875f4e5db9dc0b133bf1120c07968451004d0\tc974f4f85641d7c3bee1857920122bc32cbbfadb\t2026-08-01\tsync: 7374 files updated from openaccountants.com (2026-08-01)",
+  "3244ccd6e8445aba16e6cea2747261a2e9336588\t3ad5ae99321268fa497a87d80e378f38f83fc541\t2026-07-04\tComplete frontmatter metadata on all 1,007 Guides + strict CI",
+  "1c626f5f4dc19bb21c80d70d08e533504f8af047\ta2566a20ade7eb3998ffff80fad008ec0f2206bd\t2026-06-12\tAdd reliance disclaimers across the repo",
+  "5ec07f8c9055c6a1d569afc67e136ef6dcef2b3a\t476d5159a93415aceb2d220cb91fe641f3edb7df\t2026-06-07\tFix broken links: non-www openaccountants.com 404s on every path",
+  "8530598b32a903045d1d3d0175ecd37f9470d854\t03ca5561e99fa9f82fad7b27dcd253b416f20470\t2026-05-26\tFrontmatter cleanup: UK/Germany/Portugal",
+  "2884db4bbfec51d531d561e8f9a96f607ba6652f\t75fa9a9fa2a825867a799514fbbdcaaa603da178\t2026-05-22\tAdd 7 accounting domains + cross-border orchestrator: 104 new skill files"
+]

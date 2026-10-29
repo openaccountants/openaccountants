@@ -1,0 +1,164 @@
+[
+  {
+    "selected_quote": {
+      "id": "Rn75",
+      "source": "Ua97d5c022850664d",
+      "article": "BMF6March2025 Rn75",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "LF_start": 905,
+      "LF_end": 917,
+      "exact_quote": "75   Erfolgt die Zuteilung von Kryptowerten aufgrund einer Leistung im Sinne des § 22\n     Nummer 3 EStG, liegt auch eine Anschaffung vor. Die Anschaffungskosten sind mit dem\n     Wert der hingegebenen Daten oder der vorgenommenen Handlung anzusetzen. Dabei\n     kann widerlegbar vermutet werden, dass der Wert der hingegebenen Daten oder der\n     vorgenommenen Handlung dem Marktkurs der Gegenleistung entspricht (vgl. zur\n     Ermittlung des Marktkurses und der Nichtbeanstandung eines Tageskurses\n     Randnummern 43 und 91 sowie zum Ansatz mit 0 € im Falle eines nicht ermittelbaren\n     Marktkurses Randnummer 73). Aufgrund der Anschaffung kann die spätere\n     Veräußerung der zugeteilten Kryptowerte der Besteuerung als privates\n     Veräußerungsgeschäft unterliegen (sofern nicht Einkünfte aus Kapitalvermögen\n     vorliegen); auf die Ausführungen der Randnummern 53 ff. wird verwiesen. Bei\n     unentgeltlichem Erwerb ist die Anschaffung des Rechtsvorgängers maßgebend (§ 23\n     Absatz 1 Satz 3 EStG).",
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "Ua97d5c022850664d",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "extraction": "PDF pdftotext-layout; raw unchanged",
+      "acquisition": "new targeted acquisition",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quote directly read in crypto batches or exact prior actual reading bridge; no whole body inference."
+  },
+  {
+    "selected_quote": {
+      "id": "E23gift",
+      "source": "U8d1717754b68da94",
+      "article": "EStG §23(1) sentence3",
+      "url": "https://www.gesetze-im-internet.de/estg/__23.html",
+      "LF_start": 13,
+      "LF_end": 13,
+      "exact_quote": "2Als Anschaffung gilt auch die Überführung eines Wirtschaftsguts in das Privatvermögen des Steuerpflichtigen durch Entnahme oder Betriebsaufgabe. 3Bei unentgeltlichem Erwerb ist dem Einzelrechtsnachfolger für Zwecke dieser Vorschrift die Anschaffung oder die Überführung des Wirtschaftsguts in das Privatvermögen durch den Rechtsvorgänger zuzurechnen. 4Die Anschaffung oder Veräußerung einer unmittelbaren oder mittelbaren Beteiligung an einer Personengesellschaft oder Gesamthandsgemeinschaft gilt als Anschaffung oder Veräußerung der anteiligen Wirtschaftsgüter. 5Als Veräußerung im Sinne des Satzes 1 Nummer 1 gilt auch 1.",
+      "raw_sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+      "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "U8d1717754b68da94",
+      "url": "https://www.gesetze-im-internet.de/estg/__23.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-23-20261024.html",
+      "raw_sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8d1717754b68da94.reader.txt",
+      "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+      "acquisition": "prior cached body",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quote directly read in crypto batches or exact prior actual reading bridge; no whole body inference."
+  },
+  {
+    "selected_quote": {
+      "id": "E23base",
+      "source": "U8d1717754b68da94",
+      "article": "EStG §23(3)",
+      "url": "https://www.gesetze-im-internet.de/estg/__23.html",
+      "LF_start": 18,
+      "LF_end": 18,
+      "exact_quote": "(3) 1Gewinn oder Verlust aus Veräußerungsgeschäften nach Absatz 1 ist der Unterschied zwischen Veräußerungspreis einerseits und den Anschaffungs- oder Herstellungskosten und den Werbungskosten andererseits. 2In den Fällen des Absatzes 1 Satz 5 Nummer 1 tritt an die Stelle des Veräußerungspreises der für den Zeitpunkt der Einlage nach § 6 Absatz 1 Nummer 5 angesetzte Wert, in den Fällen des Absatzes 1 Satz 5 Nummer 2 der gemeine Wert. 3In den Fällen des Absatzes 1 Satz 2 tritt an die Stelle der Anschaffungs- oder Herstellungskosten der nach § 6 Absatz 1 Nummer 4 oder § 16 Absatz 3 angesetzte Wert. 4Die Anschaffungs- oder Herstellungskosten mindern sich um Absetzungen für Abnutzung, erhöhte Absetzungen und Sonderabschreibungen, soweit sie bei der Ermittlung der Einkünfte im Sinne des § 2 Absatz 1 Satz 1 Nummer 4 bis 7 abgezogen worden sind. 5Gewinne bleiben steuerfrei, wenn der aus den privaten Veräußerungsgeschäften erzielte Gesamtgewinn im Kalenderjahr weniger als 1 000 Euro betragen hat. 6In den Fällen des Absatzes 1 Satz 5 Nummer 1 sind Gewinne oder Verluste für das Kalenderjahr, in dem der Preis für die Veräußerung aus dem Betriebsvermögen zugeflossen ist, in den Fällen des Absatzes 1 Satz 5 Nummer 2 für das Kalenderjahr der verdeckten Einlage anzusetzen. 7Verluste dürfen nur bis zur Höhe des Gewinns, den der Steuerpflichtige im gleichen Kalenderjahr aus privaten Veräußerungsgeschäften erzielt hat, ausgeglichen werden; sie dürfen nicht nach § 10d abgezogen werden. 8Die Verluste mindern jedoch nach Maßgabe des § 10d die Einkünfte, die der Steuerpflichtige in dem unmittelbar vorangegangenen Veranlagungszeitraum oder in den folgenden Veranlagungszeiträumen aus privaten Veräußerungsgeschäften nach Absatz 1 erzielt hat oder erzielt; § 10d Absatz 4 gilt entsprechend.",
+      "raw_sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+      "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "U8d1717754b68da94",
+      "url": "https://www.gesetze-im-internet.de/estg/__23.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-23-20261024.html",
+      "raw_sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8d1717754b68da94.reader.txt",
+      "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+      "acquisition": "prior cached body",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quote directly read in crypto batches or exact prior actual reading bridge; no whole body inference."
+  },
+  {
+    "selected_quote": {
+      "id": "E46relief",
+      "source": "Ucb9a939517193e9c",
+      "article": "EStG §46(3)/(5)",
+      "url": "https://www.gesetze-im-internet.de/estg/__46.html",
+      "LF_start": 41,
+      "LF_end": 43,
+      "exact_quote": "(3) 1In den Fällen des Absatzes 2 ist ein Betrag in Höhe der einkommensteuerpflichtigen Einkünfte, von denen der Steuerabzug vom Arbeitslohn nicht vorgenommen worden ist und die nicht nach § 32d Absatz 6 der tariflichen Einkommensteuer unterworfen wurden, vom Einkommen abzuziehen, wenn diese Einkünfte insgesamt nicht mehr als 410 Euro betragen. 2Der Betrag nach Satz 1 vermindert sich um den Altersentlastungsbetrag, soweit dieser den unter Verwendung des nach § 24a Satz 5 maßgebenden Prozentsatzes zu ermittelnden Anteil des Arbeitslohns mit Ausnahme der Versorgungsbezüge im Sinne des § 19 Absatz 2 übersteigt, und um den nach § 13 Absatz 3 zu berücksichtigenden Betrag.\n(4) 1Kommt nach Absatz 2 eine Veranlagung zur Einkommensteuer nicht in Betracht, so gilt die Einkommensteuer, die auf die Einkünfte aus nichtselbständiger Arbeit entfällt, für den Steuerpflichtigen durch den Lohnsteuerabzug als abgegolten, soweit er nicht für zuwenig erhobene Lohnsteuer in Anspruch genommen werden kann. 2§ 42b bleibt unberührt.\n(5) Durch Rechtsverordnung kann in den Fällen des Absatzes 2 Nummer 1, in denen die einkommensteuerpflichtigen Einkünfte, von denen der Steuerabzug vom Arbeitslohn nicht vorgenommen worden ist und die nicht nach § 32d Absatz 6 der tariflichen Einkommensteuer unterworfen wurden, den Betrag von 410 Euro übersteigen, die Besteuerung so gemildert werden, dass auf die volle Besteuerung dieser Einkünfte stufenweise übergeleitet wird.",
+      "raw_sha256": "c27dd4e778fb62fb6a389453e29b68329e447cff65925995d8941825c1fc3750",
+      "reader_sha256": "4f1e49286a87ec81f6d872ddd07080cf0b65c71fa15b9ab5ada9da83dcd42d9c",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "Ucb9a939517193e9c",
+      "url": "https://www.gesetze-im-internet.de/estg/__46.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-46-20261024.html",
+      "raw_sha256": "c27dd4e778fb62fb6a389453e29b68329e447cff65925995d8941825c1fc3750",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ucb9a939517193e9c.reader.txt",
+      "reader_sha256": "4f1e49286a87ec81f6d872ddd07080cf0b65c71fa15b9ab5ada9da83dcd42d9c",
+      "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+      "acquisition": "prior cached body",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quote directly read in crypto batches or exact prior actual reading bridge; no whole body inference."
+  },
+  {
+    "selected_quote": {
+      "id": "Form2025services",
+      "source": "U54529bde711afe19",
+      "article": "ELSTER actual2025 AnlageSO services; not a2026 form",
+      "url": "https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "LF_start": 2403,
+      "LF_end": 2404,
+      "exact_quote": "Zeilen 14 bis 21\nGeben Sie hier bitte Einkünfte aus Tätigkeiten im Zusammenhang mit Kryptowertten (zum Beispiel Mining, Forging, [passives] Staking, Lending und der Teilnahme an Airdrops oder ähnlichen Vorgängen) an, sofern sie keiner anderen Einkunftsart (zum Beispiel Einkünfte aus Gewerbebetrieb oder Kapitalvermögen) zuzurechnen sind. Weitere Einzelheiten entnehmen Sie bitte dem Schreiben des Bundesministeriums der Finanzen vom 06. März 2025, Bundessteuerblatt (BStBl) I Seite 658. Außerdem sind hier Einkünfte aus zum Beispiel gelegentlichen Vermittlungen oder aus der Vermietung beweglicher Gegenstände anzugeben. Tragen Sie hier bitte auch Geldprämien ein, die Sie von einem Kreditinstitut für einen Wechsel des Wertpapierdepots erhalten haben. Reichen Sie hierzu bitte eine gesonderte Aufstellung ein. Haben Sie im Jahr 2025 Einkünfte aus Leistungen von insgesamt weniger als 256 € (Freigrenze) erzielt? Dann müssen Sie diese in der Anlage SO nicht eintragen. Bei einer Zusammenveranlagung gilt die Freigrenze in Höhe von 256 € für jede Person. Wenn Sie im Jahr 2025 Verluste aus Leistungen erzielt haben, geben Sie diese bitte hier an.",
+      "raw_sha256": "867c70e0b3051a5bd9f657427d447ee76f331d00334392acf5f042d6d2b6583a",
+      "reader_sha256": "0a3e9904f19343eb724da9b68d406cf1f0cbfe9e563dccaa4965ef57ee0f76d0",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "U54529bde711afe19",
+      "url": "https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U54529bde711afe19.body",
+      "raw_sha256": "867c70e0b3051a5bd9f657427d447ee76f331d00334392acf5f042d6d2b6583a",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U54529bde711afe19.reader.txt",
+      "reader_sha256": "0a3e9904f19343eb724da9b68d406cf1f0cbfe9e563dccaa4965ef57ee0f76d0",
+      "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+      "acquisition": "new targeted acquisition",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quote directly read in crypto batches or exact prior actual reading bridge; no whole body inference."
+  },
+  {
+    "selected_quote": {
+      "id": "Form2025sales",
+      "source": "U54529bde711afe19",
+      "article": "ELSTER actual2025 AnlageSO private sales/gifts/inheritance/person limits",
+      "url": "https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "LF_start": 2430,
+      "LF_end": 2441,
+      "exact_quote": "Private Veräußerungsgeschäfte\nZeilen 34 bis 66\nPrivate Veräußerungsgeschäfte sind\nVeräußerungen von Grundstücken und Rechten, die den Vorschriften des bürgerlichen Rechts über Grundstücke unterliegen (grundstücksgleiche Rechte), bei denen der Zeitraum zwischen Anschaffung und Veräußerung nicht mehr als 10 Jahre beträgt (Zeile 34 bis 42),\nVeräußerungen von Kryptowerten, bei denen der Zeitraum zwischen Anschaffung und Veräußerung nicht mehr als ein Jahr beträgt (Zeile 43 bis 49 sowie 56 und 57),\nVeräußerungen von anderen Wirtschaftsgütern, bei denen der Zeitraum zwischen Anschaffung und Veräußerung nicht mehr als ein Jahr beträgt (Zeile 52 bis 57) und\nVeräußerungsgeschäfte, bei denen die Veräußerung früher erfolgt, als der Erwerb (Zeile 52 bis 57).\nAls Anschaffung gilt auch\ndie Überführung eines Wirtschaftsguts in das Privatvermögen durch Entnahme oder Betriebsaufgabe oder\nder Antrag nach § 21 Absatz 2 Satz 1 Nummer 1 des Umwandlungssteuergesetzes in der am 12. Dezember 2006 geltenden Fassung.\nBei unentgeltlichem Erwerb (zum Beispiel Erbschaft, Schenkung) rechnet Ihr Finanzamt dem Rechtsnachfolger die Anschaffung durch den Rechtsvorgänger zu. Die Anschaffung oder Veräußerung einer unmittelbaren oder mittelbaren Beteiligung an einer Personengesellschaft oder Gesamthandsgemeinschaft (z. B. Erbengemeinschaft) gilt als Anschaffung oder Veräußerung der anteiligen Wirtschaftsgüter. Haben Sie im Jahr 2025 Gewinne aus privaten Veräußerungsgeschäften von insgesamt weniger als 1.000 € (Freigrenze) erzielt? Dann müssen Sie diese in der Anlage SO nicht eintragen. Bei einer Zusammenveranlagung gilt die Freigrenze i. H. v. 1.000 € für jede Person.\nWenn Sie innerhalb der oben genannten Fristen Verluste aus privaten Veräußerungsgeschäften realisiert haben, geben Sie diese bitte hier an.",
+      "raw_sha256": "867c70e0b3051a5bd9f657427d447ee76f331d00334392acf5f042d6d2b6583a",
+      "reader_sha256": "0a3e9904f19343eb724da9b68d406cf1f0cbfe9e563dccaa4965ef57ee0f76d0",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "U54529bde711afe19",
+      "url": "https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U54529bde711afe19.body",
+      "raw_sha256": "867c70e0b3051a5bd9f657427d447ee76f331d00334392acf5f042d6d2b6583a",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U54529bde711afe19.reader.txt",
+      "reader_sha256": "0a3e9904f19343eb724da9b68d406cf1f0cbfe9e563dccaa4965ef57ee0f76d0",
+      "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+      "acquisition": "new targeted acquisition",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quote directly read in crypto batches or exact prior actual reading bridge; no whole body inference."
+  }
+]

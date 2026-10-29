@@ -1,0 +1,11 @@
+{
+  "id": "U64e69f9b8e5b8907",
+  "url": "https://www.gesetze-im-internet.de/minstg/__1.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U64e69f9b8e5b8907.body",
+  "raw_sha256": "c2f1ca423d2e669433e164e1dfec68dd521b4148f01cb3cb5854ddaa91edafe2",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U64e69f9b8e5b8907.reader.txt",
+  "reader_sha256": "ff3238fe38887b38033fbe228729ed49065bf92321f68e5b08c0aed53210727c",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

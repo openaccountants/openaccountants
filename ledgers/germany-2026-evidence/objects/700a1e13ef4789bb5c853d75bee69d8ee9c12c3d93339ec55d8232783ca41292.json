@@ -1,0 +1,142 @@
+[
+  {
+    "label": "Lena commuting",
+    "actual": "1368",
+    "expected": "1368"
+  },
+  {
+    "label": "Lena costs",
+    "actual": "2218",
+    "expected": "2218"
+  },
+  {
+    "label": "Lena pension",
+    "actual": "5115",
+    "expected": "5115"
+  },
+  {
+    "label": "Lena health",
+    "actual": "4620",
+    "expected": "4620"
+  },
+  {
+    "label": "Lena care",
+    "actual": "1320",
+    "expected": "1320"
+  },
+  {
+    "label": "Lena insurance",
+    "actual": "11055",
+    "expected": "11055"
+  },
+  {
+    "label": "Lena taxable",
+    "actual": "41691",
+    "expected": "41691"
+  },
+  {
+    "label": "Lena tax",
+    "actual": "7749",
+    "expected": "7749"
+  },
+  {
+    "label": "Lena refund",
+    "actual": "311",
+    "expected": "311"
+  },
+  {
+    "label": "Joint income",
+    "actual": "87340",
+    "expected": "87340"
+  },
+  {
+    "label": "Joint pension",
+    "actual": "8370",
+    "expected": "8370"
+  },
+  {
+    "label": "Joint basic health",
+    "actual": "7371",
+    "expected": "7371"
+  },
+  {
+    "label": "Joint care",
+    "actual": "3159/2",
+    "expected": "3159/2"
+  },
+  {
+    "label": "Joint insurance",
+    "actual": "34641/2",
+    "expected": "34641/2"
+  },
+  {
+    "label": "Joint taxable",
+    "actual": "69947",
+    "expected": "69947"
+  },
+  {
+    "label": "Joint tax",
+    "actual": "11324",
+    "expected": "11324"
+  },
+  {
+    "label": "Child route taxable",
+    "actual": "60191",
+    "expected": "60191"
+  },
+  {
+    "label": "Child route tax",
+    "actual": "8486",
+    "expected": "8486"
+  },
+  {
+    "label": "Child saving",
+    "actual": "2838",
+    "expected": "2838"
+  },
+  {
+    "label": "Joint selected annual tax",
+    "actual": "11324",
+    "expected": "11324"
+  },
+  {
+    "label": "Joint balance",
+    "actual": "1910",
+    "expected": "1910"
+  },
+  {
+    "label": "Child annual KG",
+    "actual": "3108",
+    "expected": "3108"
+  },
+  {
+    "label": "Child full allowances",
+    "actual": "9756",
+    "expected": "9756"
+  },
+  {
+    "label": "Pension cap",
+    "actual": "30826",
+    "expected": "30826"
+  },
+  {
+    "label": "2027 July31 Saturday",
+    "actual": "5",
+    "expected": "5"
+  },
+  {
+    "label": "2027 Aug2 Monday",
+    "actual": "0",
+    "expected": "0"
+  },
+  {
+    "label": "2028 February leapday",
+    "actual": "29",
+    "expected": "29"
+  },
+  {
+    "label": "ordinary two-year carryback",
+    "actual": "150000",
+    "expected": "150000"
+  }
+]

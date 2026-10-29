@@ -1,0 +1,24 @@
+§ 5 ERechV - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Verordnung über die elektronische Rechnungsstellung im öffentlichen Auftragswesen des Bundes (E-Rechnungsverordnung - ERechV)
+§ 5 Inhalt der elektronischen Rechnung
+(1) Die elektronische Rechnung hat neben den umsatzsteuerrechtlichen Rechnungsbestandteilen mindestens folgende Angaben zu enthalten: 1.
+eine Leitweg-Identifikationsnummer,
+2.
+die Bankverbindungsdaten,
+3.
+die Zahlungsbedingungen und
+4.
+die De-Mail-Adresse oder eine E-Mail-Adresse des Rechnungsstellers.
+(2) Die elektronische Rechnung hat zusätzlich zu den Angaben nach Absatz 1 folgende Angaben zu enthalten, wenn diese dem Rechnungssteller bereits bei Beauftragung übermittelt wurden: 1.
+die Lieferantennummer,
+2.
+eine Bestellnummer.
+(3) Die Vorgaben nach den Absätzen 1 und 2 gelten nicht für Rechnungen, die in Verfahren der Organleihe nach § 159 Absatz 1 Nummer 5 des Gesetzes gegen Wettbewerbsbeschränkungen auszustellen sind.
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

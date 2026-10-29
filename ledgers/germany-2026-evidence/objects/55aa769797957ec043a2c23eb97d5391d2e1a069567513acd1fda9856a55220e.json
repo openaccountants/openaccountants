@@ -1,0 +1,48 @@
+{
+  "finding": "DE-B01",
+  "scope": "Concrete old-topic preservation omission, not a new tax-rate error or a repudiation of the preserved finite review.",
+  "guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-capital-gains.md",
+  "guide_sha256": "b219cbd217a510b7f605539e4a101ddf1ad75e6141a760b47c77876d5f54c769",
+  "native_LF": 77,
+  "before_exact": "**Funds and ETFs.** Fund income has three parts: distributions, the Vorabpauschale and the gain on sale ([§ 16 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__16.html)). The partial-income method never applies to funds. The Teilfreistellung makes a share tax-free: 30% for an equity fund (fund terms require over 50% of assets continuously in equities, [§ 2(6) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__2.html)), 15% for a mixed fund (at least 25%, § 2(7) InvStG; half the equity-fund rate), 60% for a property fund and 80% for a foreign property fund ([§ 20 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__20.html)). The same share of costs and losses is not deductible ([§ 21 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__21.html)). A fund that in fact stayed above the equity quota can get the share on proof in the return (§ 20(4) InvStG).",
+  "pre_refresh_revision": "03c473a8^",
+  "pre_refresh_old_LF": [
+    109,
+    110
+  ],
+  "old_topic": "Both propertyfund classification >50% investmentterms quota tests. Current77 states60/80exemptions but onlyexplicitlystates equity/mixed quotas; noother current Germany Guide suppliespropertyfundquotas in boundedtextsearch.",
+  "source_quote_id": "CG.propertyfund-definition",
+  "source": {
+    "source_id": "DEB172",
+    "act_article": "InvStG2(9)sentences1–2",
+    "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__2.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-2-20261026.html",
+    "raw_sha256": "410fd7e93f2e02878bb7d44e79d0d0e1241979ac0f73c59304cff4b213e6e74c",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB172.txt",
+    "reader_sha256": "86ef2a5b8db5020e4055cf0d1c9139189c42fce018f4808cf0579d62e598391c",
+    "native_LF": [
+      36,
+      36
+    ],
+    "exact_quote": "(9) Immobilienfonds sind Investmentfonds, die gemäß den Anlagebedingungen fortlaufend mehr als 50 Prozent ihres Aktivvermögens in Immobilien und Immobilien-Gesellschaften anlegen (Immobilienfondsquote). Auslands-Immobilienfonds sind Investmentfonds, die gemäß den Anlagebedingungen fortlaufend mehr als 50 Prozent ihres Aktivvermögens in ausländische Immobilien und Auslands-Immobiliengesellschaften anlegen (Auslands-Immobilienfondsquote).",
+    "read_on": "2026-10-29",
+    "actual_read_scope": [
+      [
+        35,
+        48
+      ]
+    ],
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "Own2(9a)excluded-tax and2(9b)valuation context read; this quote identifies the classification gate, not an assertion that all apparent propertyassets qualify."
+  },
+  "options": {
+    "A_recommended_append_to_current77": "A property fund must, under its investment terms, continuously invest more than 50% of its assets in property and property companies; for a foreign property fund, more than 50% must be in foreign property and foreign property companies. Apply the classification, exclusions and asset-value rules in [§ 2(9)–(9b) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__2.html).",
+    "B_alternative_append_to_current77": "For the 60% and 80% exemptions, obtain the fund’s classification under [§ 2(9)–(9b) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__2.html): property funds require a continuous investment-terms quota of more than 50% in qualifying property/property companies, and foreign property funds more than 50% in the foreign equivalents. Exactly 50% does not meet either quota."
+  },
+  "controls": {
+    "exact50fails": true,
+    "over50passes_quota_only": true,
+    "other_statutory_eligibility_not_inferred": true
+  },
+  "writer_made_Guide_edits": false
+}

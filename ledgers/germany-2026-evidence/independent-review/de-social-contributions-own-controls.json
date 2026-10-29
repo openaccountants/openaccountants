@@ -1,0 +1,294 @@
+{
+  "count": 48,
+  "controls": [
+    {
+      "name": "case1base",
+      "actual": "4000",
+      "expected": "4000",
+      "pass": true
+    },
+    {
+      "name": "case1health",
+      "actual": "676.00",
+      "expected": "676.00",
+      "pass": true
+    },
+    {
+      "name": "case1care",
+      "actual": "168.00",
+      "expected": "168.00",
+      "pass": true
+    },
+    {
+      "name": "case1total",
+      "actual": "844.00",
+      "expected": "844.00",
+      "pass": true
+    },
+    {
+      "name": "case2base",
+      "actual": "1318.33",
+      "expected": "1318.33",
+      "pass": true
+    },
+    {
+      "name": "case2health",
+      "actual": "222.80",
+      "expected": "222.80",
+      "pass": true
+    },
+    {
+      "name": "case2care",
+      "actual": "47.46",
+      "expected": "47.46",
+      "pass": true
+    },
+    {
+      "name": "case2above603",
+      "actual": "397",
+      "expected": "397",
+      "pass": true
+    },
+    {
+      "name": "case2halfstandard",
+      "actual": "367.82",
+      "expected": "367.82",
+      "pass": true
+    },
+    {
+      "name": "case2fullstandard",
+      "actual": "735.63",
+      "expected": "735.63",
+      "pass": true
+    },
+    {
+      "name": "case2total rounded components",
+      "actual": "638.08",
+      "expected": "638.08",
+      "pass": true
+    },
+    {
+      "name": "case2phaseends",
+      "actual": "2029",
+      "expected": "2029",
+      "pass": true
+    },
+    {
+      "name": "case2nominalMay31Sunday",
+      "actual": "6",
+      "expected": "6",
+      "pass": true
+    },
+    {
+      "name": "case2ordinarynextworkingMonday",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "old800casebase",
+      "actual": "1318.33",
+      "expected": "1318.33",
+      "pass": true
+    },
+    {
+      "name": "old800casehealthcare",
+      "actual": "270.26",
+      "expected": "270.26",
+      "pass": true
+    },
+    {
+      "name": "voluntarypensionmin",
+      "actual": "112.16",
+      "expected": "112.16",
+      "pass": true
+    },
+    {
+      "name": "voluntarypensionmax",
+      "actual": "1571.70",
+      "expected": "1571.70",
+      "pass": true
+    },
+    {
+      "name": "AVapplicationfull",
+      "actual": "102.83",
+      "expected": "102.83",
+      "pass": true
+    },
+    {
+      "name": "AVapplicationstart",
+      "actual": "51.42",
+      "expected": "51.42",
+      "pass": true
+    },
+    {
+      "name": "job7kRV",
+      "actual": "651",
+      "expected": "651",
+      "pass": true
+    },
+    {
+      "name": "job7kAV",
+      "actual": "91",
+      "expected": "91",
+      "pass": true
+    },
+    {
+      "name": "highincomeKV",
+      "actual": "993.94",
+      "expected": "993.94",
+      "pass": true
+    },
+    {
+      "name": "highincomePV2children",
+      "actual": "194.72",
+      "expected": "194.72",
+      "pass": true
+    },
+    {
+      "name": "KSKRV2500",
+      "actual": "232.50",
+      "expected": "232.50",
+      "pass": true
+    },
+    {
+      "name": "KSKKV2500",
+      "actual": "218.75",
+      "expected": "218.75",
+      "pass": true
+    },
+    {
+      "name": "KSKPV2500childless",
+      "actual": "60.00",
+      "expected": "60.00",
+      "pass": true
+    },
+    {
+      "name": "KSKtotal",
+      "actual": "511.25",
+      "expected": "511.25",
+      "pass": true
+    },
+    {
+      "name": "agency20klevy",
+      "actual": "980",
+      "expected": "980",
+      "pass": true
+    },
+    {
+      "name": "bakery800below1000",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "partialprior6monthslevy",
+      "actual": "98",
+      "expected": "98",
+      "pass": true
+    },
+    {
+      "name": "wrongannualdenominator",
+      "actual": "49",
+      "expected": "49",
+      "pass": true
+    },
+    {
+      "name": "40exactnoadvance",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "40.01notexempt",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "marginal603exactexempt",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "marginal603.01notexempt",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "KSK3900exactbelowtest",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "KSK3900.01abovetest",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "foreignspousechild1/3ref",
+      "actual": "3955/3",
+      "expected": "3955/3",
+      "pass": true
+    },
+    {
+      "name": "historical2025min",
+      "actual": "1248.33",
+      "expected": "1248.33",
+      "pass": true
+    },
+    {
+      "name": "historical2025healthcap",
+      "actual": "11025/2",
+      "expected": "11025/2",
+      "pass": true
+    },
+    {
+      "name": "groupopinionwithin2yearsmayprotectwithout1month",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "groupopinionoutside2yearsfailsroute",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "private5000capinclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "private6000failscap",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "AVordinaryothermandatoryblocks",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "AVminijobexceptionnotbar",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "KSK2weektestaloneinsufficientwithoutdecision",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    }
+  ],
+  "scope": "Both original executable cases manually recomputed with exact fractions and per-component commercial cent rounding; four narrative illustrations and old800-profit case, rate/threshold/date/levy and eligibility separators. No claimed approval of individual fund notices or unresolved lower-income start-phase route."
+}

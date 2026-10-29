@@ -1,0 +1,161 @@
+BZSt - Freistellungsverfahren von der Steuer auf Kapitalerträge nach § 50c Absatz 2 Satz 1 Nr. 1 EStG
+Hinweis zur Verwendung von Cookies
+Wir möchten zur Verbesserung unserer Website das Nutzungsverhalten analysieren und Zugriffsstatistiken erstellen. Dafür werden mit der Webanalyse-Software Matomo statistische Informationen erfasst und ausgewertet. Ausschließlich mit Ihrer Einwilligung speichern wir dafür ein Statistik-Cookie auf Ihrem Endgerät und greifen auf für diesen Zweck erforderliche Geräteinformationen Ihres Endgerätes zu. Zu keiner Zeit werden diese Daten mit persönlichen Daten in Verbindung gebracht oder an Dritte weitergegeben. Weitere Informationen finden Sie in unserer Datenschutzerklärung. Dort ist auch jederzeit der Widerruf Ihrer Einwilligung möglich.
+Einverstanden
+Springe direkt zu:
+Inhalt
+Hauptmenü
+Suche
+BZSt Online.Portal
+Kontakt
+English
+Leichte Sprache
+Gebärdensprache
+Bundeszentralamt für Steuern (Link zur Startseite)
+Dieses Dokument bestimmt, ob ein Zusatzlogo ausgegeben wird.
+Ein im Feld Wert eingehängtes Logo wird als Zusatzlogo ausgegeben.
+Ist das Feld Wert leer, so wird kein Zusatzlogo ausgegeben.
+Ablageoptionen:
+Wird dieses Dokument unterhalb des globalen Verzeichnisses "_config" abgelegt, so wird das Zusatzlogo auf allen Seiten ausgegeben.
+Um das Logo nur für bestimmte Bereiche auszugeben, kann das Konfigurationsdokument zusätzlich pfadabhängig abgelegt werden.
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Karriere
+Website durchsuchen
+Suchtext
+Suchtext
+Startseite
+Unternehmen
+Kapitalerträge und Entlastung
+Kapitalertragsteuerentlastung
+Elektronisches Antragsverfahren
+Freistellungsverfahren von der Steuer auf Kapitalerträge nach § 50c Absatz 2 Satz 1 Nr. 1 EStG
+Vorlesen
+Freistellungsverfahren von der Steuer auf Kapitalerträge nach § 50c Absatz 2 Satz 1 Nr. 1 EStG
+Ausländische Empfänger (Gläubiger) von Kapitalerträgen können ganz oder teilweise durch Freistellung von der Kapitalertragsteuer (KapSt) entlastet werden. Hier erhalten Sie alle notwendigen Informationen zur Antragstellung.
+Allgemeines
+Das Freistellungsverfahren ist ein in die Zukunft gerichtetes Verfahren und kommt nur in Betracht, wenn die betreffenden Kapitalerträge der Gläubigerin noch nicht zugeflossen sind.
+Die durch das BZSt erteilte Freistellungsbescheinigung berechtigt die Schuldnerin der Kapitalerträge im Umfang der gewährten Freistellung auf die Einbehaltung und Abführung der Steuer (teilweise) zu verzichten. Die Pflicht zur Abgabe einer Steueranmeldung bleibt bestehen.
+Eine Freistellungsbescheinigung wird nur auf Antrag erteilt (Formulare siehe Rubrik “Formulare“).
+Antragsteller
+Antragsberechtigt ist die Gläubigerin der Kapitalerträge.
+Die Freistellung ist in folgenden Sachverhalten möglich:
+Entlastungsansprüche nach § 43b EStG auf Dividenden, die einer in der EU ansässigen Muttergesellschaft aus Ausschüttungen ihrer in Deutschland ansässigen Tochtergesellschaft zufließen
+Entlastungsansprüche nach DBA für Konzernbeteiligungen im Sinn des § 50c Abs. 2 Satz 5 EStG
+Entlastungsansprüche nach § 50g EStG bei Zahlung von Zinsen zwischen verbundenen Unternehmen verschiedener Mitgliedstaaten der EU
+Gültigkeit der Freistellung
+Die Freistellungsbescheinigung kann frühestens mit Wirkung ab dem Tag, an dem der Antrag beim BZSt eingeht, ausgestellt werden. Sie kann mit weiteren Nebenbestimmungen gemäß § 120 Absatz 2 der Abgabenordnung versehen werden. (vgl. § 50c Absatz 2 Satz 4).
+Sie wird für einen Zeitraum von höchstens fünf Jahren erteilt.
+Meldung freigestellter Kapitalerträge
+(MURI-Meldung)
+Die in den Freistellungsbescheinigungen gemäß § 50c Abs. 2 Satz 1 Nr. 1 EStG enthaltene Auflage, wonach Gläubiger von Kapitalerträgen dem BZSt jährlich bis zum 31. Mai des auf den Zufluss folgenden Kalenderjahres eine Meldung über jährlich zugeflossene Kapitalerträge vorzulegen haben (MURI-Meldung), wurde per Allgemeinverfügung aufgehoben. Die Meldung muss nicht mehr erfolgen.
+Dies gilt nicht für Bescheinigungen, in denen sich die Freistellung vom Steuerabzug auf Kapitalerträge aus sammel- oder sonderverwahrten Aktien bezieht, die bei der Clearstream Europe AG auf einem besonderen Unterkonto abgesetzt wurden (Fälle von sog. abgesetzten Beständen).
+Aufhebung der Auflage zur Abgabe der MURI-Meldung
+PDF, 169KB, Datei ist barrierefrei⁄barrierearm
+Allgemeinverfügung
+Formulare/Muster/Hinweise
+Merkblatt zur Entlastungsberechtigung nach § 50d Abs. 3 EStG
+PDF, 1.005KB, Datei ist nicht barrierefrei
+(deutsch)
+Merkblatt zur Entlastungsberechtigung nach § 50d Abs. 3 EStG
+PDF, 928KB, Datei ist nicht barrierefrei
+(englisch)
+Fragebogen § 50d Absatz 3 EStG
+PDF, 49KB, Datei ist nicht barrierefrei
+(deutsch)
+Fragebogen § 50d Absatz 3 EStG
+PDF, 2MB, Datei ist nicht barrierefrei
+(englisch)
+Muster Ansässigkeitsbescheinigung
+PDF, 181KB, Datei ist barrierefrei⁄barrierearm
+Vollmacht in Steuersachen für das Kapitalertragsteuerentlastungsverfahren / Power of Attorney for Tax Matters for the capital income tax relief procedure
+PDF, 24KB, Datei ist nicht barrierefrei
+Auf Deutsch und Englisch / In German and English
+Antrag auf Freistellung von der deutschen Steuer auf Kapitalerträge (de/en)
+Aufhebung der Auflage zur Abgabe der MURI-Meldung
+PDF, 169KB, Datei ist barrierefrei⁄barrierearm
+Allgemeinverfügung
+Fragen und Antworten
+Hinweis
+Bei dem nachfolgenden Fragen- und Antworten-Katalog (FAQ) handelt es sich lediglich um eine Orientierungshilfe. Er ist weder eine Verwaltungsanweisung noch ein BMF-Schreiben. Die Informationen haben keine Rechts- oder Bindungswirkung. Die Entscheidung im konkreten Einzelfall bleibt immer dem zuständigen Finanzamt vorbehalten.
+Fragen & Antworten
+Kann auch für natürliche Personen oder Personengesellschaften eine Freistellungsbescheinigung erteilt werden?
+Eine Freistellungsbescheinigung kann nur einer im Ausland ansässigen
+Kapitalgesellschaft, die zu mindestens 10 Prozent unmittelbar am Kapital einer unbeschränkt steuerpflichtigen Kapitalgesellschaft beteiligt ist (vgl. § 50c Absatz 2 Satz 5EStG)
+Muttergesellschaft die die in der Anlage 2 zu § 43b EStG bezeichneten Voraussetzungen erfüllt und mindestens zu 10 Prozent unmittelbar am Kapital der Tochtergesellschaft beteiligt ist.
+erteilt werden.
+Wo erhält die Gläubigerin die Bescheinigung über die steuerliche Ansässigkeit gemäß § 50c Absatz 5 EStG?
+Der Antragstellende hat durch eine Bestätigung der für ihn im Zeitpunkt des Zuflusses der Kapitalerträge zuständigen Steuerbehörde seine Ansässigkeit nachzuweisen.
+Auf der Ansässigkeitsbescheinigungen ist von der Steuerbehörde zu bestätigen, dass der Antragsteller zum Zeitpunkt des Zuflusses der Kapitalerträge den im Formular angegebenen Wohnsitz, gewöhnlichen Aufenthalt bzw. Sitz oder Ort der Geschäftsleitung hatte und daher nach dem maßgeblichen Abkommen abkommensberechtigt ist / den statuarischen Sitz hatte bzw. dem zulässigen Antragstellerkreis des § 43b EStG angehört.
+Dem Freistellungsantrag ist die Ansässigkeitsbescheinigung mittels Upload im BZSt-Online-Portal beizufügen. Es wird darauf hingewiesen, dass es in Einzelfällen zur Anforderung der Ansässigkeitsbescheinigung im Original kommen kann.
+Ab wann wird eine Freistellung erteilt?
+Eine Freistellungsbescheinigung kann frühestens ab dem Datum des Antragseingangs beim BZSt erteilt werden. Die Erteilung einer rückwirkenden Freistellungsbescheinigung ist nicht möglich (vgl. § 50c Absatz 2 Satz 4 EStG). Für vor dem Antragseingang liegende Zeiträume kann eine Entlastung von der einbehaltenen und abgeführten Kapitalertragsteuer nur im Erstattungsverfahren nach § 50c Abs. 3 EStG beantragt werden.
+Wie lange ist eine Freistellungsbescheinigung gültig?
+Die Geltungsdauer einer Freistellungsbescheinigung darf fünf Jahre nicht überschreiten (vgl. § 50c Absatz 2 Satz 4 EStG).
+Kann der Steuerabzug bereits dann unterbleiben, wenn ein Antrag auf Erteilung einer Freistellungsbescheinigung beim BZSt gestellt, aber noch nicht beschieden wurde?
+Solange keine Freistellungsbescheinigung vom BZSt erteilt wurde besteht für den Schuldner der Kapitalerträge weiterhin die gesetzliche Verpflichtung zur Einbehaltung, Anmeldung und Abführung der Steuer (§ 50c Abs. 1 Satz 1 EStG).
+Welche Verpflichtungen hat die Schuldnerin, wenn aufgrund der Freistellungsbescheinigung keine Steuern einzubehalten und abzuführen sind?
+Berechtigt die erteilte Freistellungsbescheinigung die Schuldnerin der Kapitalerträge, auf die Einbehaltung und Abführung der Kapitalertragsteuer vollständig zu verzichten, so bleibt die Verpflichtung zur Abgabe von Steueranmeldungen bei dem jeweils zuständigen Finanzamt (sogenannte Nullmeldungen) dennoch bestehen (§ 50c Abs. 2 Satz 2EStG).
+Gelten Besonderheiten hinsichtlich der Freistellung vom Steuerabzug bei girosammelverwahrten Aktien?
+Bei girosammelverwahrten inländischen Aktien nimmt nicht der Schuldner der Kapitalerträge den Steuerabzug vor, sondern die letzte inländische auszahlende Stelle (vgl. §§ 43 Abs. 1 Satz 1 Nr. 1a, 44 Abs. 1 Satz 3 EStG). Berechtigt zur Abstandnahme vom Steuerabzug ist jedoch nach dem Wortlaut des § 50c Abs. 2 EStG nur der Schuldner der Kapitalerträge.
+Um in den Fällen, in denen eine Schachtelbeteiligung nach § 43b EStG vorliegt, die Abstandnahme vom Steuerabzug zu gewährleisten, haben Kunden von Clearstream Banking die Möglichkeit, bei Clearstream verwahrte Bestände als sogenannte „abgesetzte Bestände“ behandeln zu lassen. Die Auszahlung erfolgt dann nicht durch oder über die Clearstream Banking AG, sondern direkt durch die Hauptzahlstelle der ausschüttenden Gesellschaft an die Gläubigerin der Kapitalerträge mit der Folge, dass die gültige Freistellungsbescheinigung ihre Entlastungswirkung entfalten konnte (siehe BMF-Schreiben vom 5. Juli 2013 – IV C 1 – S 2411/0:001, DOK 2013/0629404, BStBl. I 2013, 847
+Kann Kapitalertragsteuer nach § 50c Absatz 3 EStG durch das BZSt erstattet werden, obwohl für den Zuflusszeitraum bereits zum Zeitpunkt der Auszahlung eine Freistellungsbescheinigung nach §50c Absatz 2 Nr. 1 EStG vorlag?
+Macht der Schuldner der Kapitalerträge von der Möglichkeit der Abstandnahme vom Steuerabzug keinen Gebrauch, obwohl zum Zeitpunkt der Anmeldung und Abführung der Kapitalertragsteuer eine gültige Freistellungsbescheinigung vorhanden war, so ist die nachträgliche Änderung der Steueranmeldung nach § 50c Abs. 2 Satz 3 EStG ausgeschlossen. Eine Entlastung kann in diesem Fall nur im Erstattungsverfahren nach § 50c Abs. 3 EStG beantragt werden.
+Eine Änderung der Steueranmeldung und Erstattung einer zuvor abgeführten Kapitalertragsteuer ist nur in den Fällen möglich, in denen erst nach Anmeldung und Abführung der Kapitalertragsteuer eine Freistellungsbescheinigung mit einem rückwirkenden Gültigkeitszeitraum erteilt wird (§ 50 Abs. 2 Satz 3 EStG).
+Wer wird nach der Entscheidung über einen Freistellungsantrag nach § 50c Absatz 2 Satz 1 Nr. 1 EStG durch das BZSt benachrichtigt?
+Über die Entscheidung des BZSt wird neben der Gläubigerin der Kapitalerträge bzw. deren Empfangsbevollmächtigten, die Schuldnerin der Kapitalerträge sowie das für die Schuldnerin zuständige Betriebsstättenfinanzamt informiert.
+Was bedeuten die Begriffe "Reststeuer" bzw. "Reststeuersatz"?
+Die sogenannte Reststeuer ist die Steuer, die der Staat, aus dem die Vergütungen stammen (also der Quellenstaat), gemäß den Regelungen der jeweils einschlägigen Entlastungsnorm (z.B. DBA, § 44a Absatz 9 EStG, etc.) nicht erstatten muss. Maßgeblich für die Bestimmung des Reststeuersatzes ist insbesondere die Art des Kapitalertrags (Zinsen, Dividenden, etc.), die Höhe der Beteiligung und die Rechtsform des Gläubigers der Kapitalerträge.
+Kontakt
+Bundeszentralamt für Steuern
+Referat St I B 3
+An der Küppe 1
+53225 Bonn
+Zuständigkeitsbereich:
+Entlastung von der Kapitalertragsteuer
+Kapitalertragsteuer@steuerliches-info-center.de
+Nachricht schreiben
+E-Mail schreiben
+Vorschriften
+Vorschriften
+Für die Kapitalertragsteuerentlastung bilden diverse Gesetze und BMF-Schreiben die rechtlichen Grundlagen. Hier sind die relevanten Rechtsgrundlagen aufgeführt.
+Verwandte Themen
+Erstattungsverfahren von der Steuer auf Kapitalerträge nach § 50c Absatz 3 EStG / § 44a Absatz 9 EStG
+In den nachstehenden Rubriken erhalten Sie Informationen darüber, welche Formulare Sie zur Antragstellung benötigen, welche Fristen Sie einhalten müssen und welche Angaben bzw. Dokumente das …
+BZSt-Online-Portal
+Hier erhalten Sie Informationen zur Registrierung und Anmeldung im BZSt-Online-Portal für das Entlastungsverfahren von der Steuer auf Kapitalerträge.
+Härtefallregelung
+Hier erhalten Sie Informationen zur Härtefallregelung im elektronischen Entlastungverfahren von der Steuer auf Kapitalerträge.
+Massendatenschnittstelle im elektronischen Antragsverfahren
+Hier erhalten Sie Informationen zur geplanten Massendatenschnittstelle im elektronischen Entlastungsverfahren von der Steuer auf Kapitalerträge.
+Steuerliche Identifikationsnummer im Entlastungsverfahren
+Hier erhalten Sie Informationen zur steuerlichen Identifikationsnummer (IdNr) im Entlastungsverfahren von der Steuer auf Kapitalerträge nach § 50c Absatz 3 Einkommensteuergesetz (EStG) / § 44a Absatz …
+Erstattungsverfahren von der Steuer auf Kapitalerträge nach § 32 Absatz 6 KStG
+Gemeinnützige Organisationen können nach § 32 Absatz 6 KStG eine Reduzierung der Kapitalertragsteuer auf Null erhalten. In den nachstehenden Rubriken erhalten Sie Informationen darüber, wie Sie einen …
+Seite empfehlen
+Unternavigation aller Website-Bereiche
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Themen A-Z
+Karriere
+Presse
+Newsletter
+Haben Sie Fragen?
+Anrufen
+Nachricht schreiben
+Zentrale Behördennummer
+Für alle Fragen zu Behörden in Deutschland
+Montag bis Freitag 08:00-18:00 Uhr
+115
+Mehr erfahren
+© Bundeszentralamt für Steuern
+Inhaltsverzeichnis
+Erklärung zur Barrierefreiheit
+Impressum
+Datenschutz

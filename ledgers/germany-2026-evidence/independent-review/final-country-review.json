@@ -1,0 +1,26 @@
+{
+  "status": "PASS independent whole25pair review, all reported repair findings closed; SIX domains remain partial ordinary coverage. Source-cited draft country PR review-ready, not accountant attestation or universal ordinary completion.",
+  "reviewer_role": "Different independent reviewerC; no German writer Guide edits.",
+  "report": "report.md",
+  "report_sha256": "8e0eab2d02e98b258c7899df4960be76d17c1d3af0eed1983cb1973efce996e0",
+  "exact_pair_map": "final-25-pair-map.json",
+  "exact_pair_map_sha256": "486fea72e36d50afe738e7fad27f36db19bbcb11ff1fe927451e975b323353cb",
+  "README_sha256": "239811b9f927464f96e8adc06efd9d01c6602bff44bee848d8b13a5b4d4379cb",
+  "ordinary_scope_matrix": "ordinary-scope-disposition.json",
+  "ordinary_scope_matrix_sha256": "7b6e0a532e58512114cc1827f6af9db83d67dd01331b177e0ce9f4205314df69",
+  "all50_pair_hashes_verified": true,
+  "all25paired_review_complete": true,
+  "all41_original_oa_byteexact": true,
+  "original_grouped_current_units": 4625,
+  "prepared_selected_quote_records": 2212,
+  "actual_historical_origin_units": 7883,
+  "frozen_independent_controls": 995,
+  "original_writer_artifacts_rehashed": 1369,
+  "original_writer_artifact_mismatches": 0,
+  "pending_content_repair_findings": [],
+  "publication_conditions": [
+    "Root required repository validations",
+    "Separately bound packaging-only path/link successors if any"
+  ],
+  "four_accounting_formation_reference_companions": "Preserved byteexact; bounded presentation/routing check only, no full fresh legal review."
+}

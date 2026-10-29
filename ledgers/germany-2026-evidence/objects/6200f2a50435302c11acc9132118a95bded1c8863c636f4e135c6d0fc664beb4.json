@@ -1,0 +1,11 @@
+{
+  "id": "U15527adfa30c4074",
+  "url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+  "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-238-20261024.html",
+  "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U15527adfa30c4074.reader.txt",
+  "reader_sha256": "651db01a1f6c18060e1f1e63652986b0e4921fb1ce84da5d2a740ebea8ca0b48",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "prior cached body",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

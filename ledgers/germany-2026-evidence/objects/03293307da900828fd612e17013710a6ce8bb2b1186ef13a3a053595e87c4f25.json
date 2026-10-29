@@ -1,0 +1,164 @@
+[
+  {
+    "label": "monotonic version",
+    "LF": 4,
+    "before": "version: 1.0",
+    "after": "version: 1.1"
+  },
+  {
+    "label": "actualselectedread date",
+    "LF": 7,
+    "before": "last_updated: 2026-09-19",
+    "after": "last_updated: 2026-10-29"
+  },
+  {
+    "label": "ownversionversusviewer",
+    "LF": 32,
+    "before": "| Current XRechnung version | The tax administration's own e-invoice viewer at ELSTER says it uses \"die aktuell gültige XRechnung Version 3.0.1\". KoSIT publishes the versions. See Section 3 |",
+    "after": "| Current XRechnung version | KoSIT lists the current 3.0.2 bundle. ELSTER’s viewer still describes its own version as 3.0.1; that viewer label does not set the normative version. See Section 3 and Sources |"
+  },
+  {
+    "label": "scopedreadhistory",
+    "LF": 42,
+    "before": "| Guide version | Refreshed against the official pages on 19 September 2026 |",
+    "after": "| Guide version | Core tax clauses retain their recorded source history. The selected technical clauses and federal portal sources below were read on 29 October 2026 |"
+  },
+  {
+    "label": "actualnamespaceevidence",
+    "LF": 206,
+    "before": "The identifiers in this table come from KoSIT's XRechnung specification. KoSIT's site is not an allowed host for this Guide, so these values are carried over from the legacy Guide and were not checked on a page that can be linked here.",
+    "after": "The identifiers below are checked against KoSIT’s XRechnung 3.0.2 specification and the schemas in its bundle dated 31 August 2026. The UBL namespace is also in OASIS’s UBL 2.1 schema. These are technical source checks, not a validator execution; exact Sources and limits are below."
+  },
+  {
+    "label": "actualprofilescope",
+    "LF": 223,
+    "before": "The profile names come from FeRD, which publishes ZUGFeRD. Its site is not an allowed host. The one official statement is the ministry's: ZUGFeRD from version 2.0.1 is allowed, \"ausgenommen die Profile MINIMUM und BASIC-WL\".",
+    "after": "FeRD publishes the profile definitions below. Its current FAQ distinguishes the EN 16931 (COMFORT) profile, the BASIC subset and the EXTENDED profile, and the XRECHNUNG reference profile. The ministry allows ZUGFeRD from version 2.0.1, excluding MINIMUM and BASIC-WL. Acceptance under federal ERechV remains a separate condition."
+  },
+  {
+    "label": "profilecolumnprecision",
+    "LF": 225,
+    "before": "| Profile | EN 16931 Compliant | Use Case |",
+    "after": "| Profile | Source-backed format scope | Use Case |"
+  },
+  {
+    "label": "BASICactualsubset",
+    "LF": 229,
+    "before": "| Basic | Yes, per the legacy Guide (if fully populated) | Standard use |",
+    "after": "| Basic | A subset of EN 16931 for simple UStG-conforming invoices; BMF permits the profile | Standard use with the required invoice data |"
+  },
+  {
+    "label": "COMFORTscope",
+    "LF": 230,
+    "before": "| Comfort (EN 16931) | Yes, per the legacy Guide | Full compliance |",
+    "after": "| Comfort (EN 16931) | Fully represents EN 16931-1, according to FeRD | Full core invoice data |"
+  },
+  {
+    "label": "EXTENDEDscope",
+    "LF": 231,
+    "before": "| Extended | Yes, per the legacy Guide (superset) | Additional business information |",
+    "after": "| Extended | Extends EN 16931 with additional information; FeRD says to agree its exchange with the recipient | Additional business information |"
+  },
+  {
+    "label": "referenceprofilescope",
+    "LF": 232,
+    "before": "| XRechnung | Yes, per the legacy Guide | XRechnung rules inside a ZUGFeRD container |",
+    "after": "| XRechnung | Reference profile for an XML file conforming to the current XRechnung specification; FeRD permits CII only inside this reference profile | XRechnung XML inside a ZUGFeRD container |"
+  },
+  {
+    "label": "fieldandcodereadscope",
+    "LF": 249,
+    "before": "The field codes (BT numbers) come from the European standard and from KoSIT's specification. Neither is on an allowed host, so both are named, not linked. The \"Required\" columns were checked on 19 September 2026 against KoSIT's XRechnung specification, version 3. The scheme identifiers 0204 and 9930 and the Leitweg-ID pattern in the description cells were not checked.0.2. The ministry's questions and answers page (no. 16) says KoSIT and FeRD publish a joint table that maps the VAT details to the BT fields; use that table for the mapping.",
+    "after": "The field codes and cardinalities below are checked against KoSIT’s XRechnung 3.0.2 specification. The scheme examples 0204 and 9930 are checked against KoSIT’s identifier guidance dated 2 January 2025. The exact Leitweg-ID validation pattern is not supplied here: use the identifier assigned by the recipient under § 5 ERechV. The ministry’s FAQ no. 16 also points to the joint KoSIT/FeRD mapping of VAT details to BT fields."
+  },
+  {
+    "label": "portalactualsourcevsruntime",
+    "LF": 292,
+    "before": "The ERechV demands a federal administration portal and a user account set up before the first invoice (§ 4(3) ERechV, https://www.gesetze-im-internet.de/erechv/__4.html). A formally faulty invoice is rejected automatically and the sender is told. An invoice that cannot be matched to a user account is rejected without notice (§ 4(4) ERechV). The channels below are from the legacy Guide and from the federal e-invoicing information site named in the ministry's questions and answers page (e-rechnung-bund.de, run by the procurement office of the interior ministry). That site is not an allowed host for this Guide, so it is not linked, and the portal address in the legacy Guide was removed.",
+    "after": "The ERechV demands a federal administration portal and a user account set up before the first invoice (§ 4(3) ERechV, https://www.gesetze-im-internet.de/erechv/__4.html). A formally faulty invoice is rejected automatically and the sender is told. An invoice that cannot be matched to a user account is rejected without notice (§ 4(4) ERechV). The channels below are from the legacy Guide and from the federal e-invoicing information site named in the ministry's questions and answers page (e-rechnung-bund.de, run by the procurement office of the interior ministry). Its current upload and e-mail instructions and its September 2025 consolidation statement were read on 29 October 2026 and are linked in Sources. No user account was opened or invoice submitted."
+  },
+  {
+    "label": "Peppolsourceboundary",
+    "LF": 320,
+    "before": "These four points are carried over from the legacy Guide. They rest on Peppol and KoSIT material, which is not on an allowed host, and were not checked on an official page.",
+    "after": "KoSIT’s own Peppol explanation and identifier guidance support the four points below. The identifiers address the recipient; they do not prove that a particular recipient is currently connected or that an invoice was delivered."
+  },
+  {
+    "label": "actualvalidatorconfiguration",
+    "LF": 338,
+    "before": "The layer table is carried over from the legacy Guide and was not checked on an official page. The ministry's questions and answers page (no. 16) confirms only that KoSIT provides open source components, among them a validator and a test suite.",
+    "after": "The current KoSIT bundle describes its validator as a Java tool, with configuration resources for XML schemas, EN 16931 Schematron and XRechnung CIUS/extension Schematron. The layers below describe those supplied components; no particular invoice or validator run has been tested here."
+  },
+  {
+    "label": "currentfieldscope",
+    "LF": 353,
+    "before": "| Missing BT-23 (ProfileID) | Mandatory since XRechnung 3.0.1, per the legacy Guide. Always populate |",
+    "after": "| Missing BT-23 (ProfileID) | Mandatory in the checked XRechnung 3.0.2 specification. Populate the business-process identifier |"
+  },
+  {
+    "label": "currentfieldscope",
+    "LF": 354,
+    "before": "| Missing BT-34 / BT-49 (electronic addresses) | Mandatory since XRechnung 3.0.1, per the legacy Guide. Include with the correct scheme ID |",
+    "after": "| Missing BT-34 / BT-49 (electronic addresses) | Mandatory in the checked XRechnung 3.0.2 specification. Include each with its scheme ID |"
+  },
+  {
+    "label": "unsupportedpatternboundary",
+    "LF": 355,
+    "before": "| Invalid Leitweg-ID format | Must follow pattern: numeric segments separated by hyphens with check digit |",
+    "after": "| Invalid Leitweg-ID format | Use the exact identifier assigned by the recipient (§ 5 ERechV). Not yet confirmed here: the full validation pattern. The legacy numeric-only description is not a verified constraint |"
+  },
+  {
+    "label": "preciseportalboundary",
+    "LF": 363,
+    "before": "- Validates Leitweg-ID against the registered directory",
+    "after": "- **Not yet confirmed:** whether the platform validates a Leitweg-ID against a registered directory."
+  },
+  {
+    "label": "preciseportalboundary",
+    "LF": 364,
+    "before": "- Verifies that the recipient authority is connected and active",
+    "after": "- **Not yet confirmed:** whether the platform verifies that the recipient is currently connected and active."
+  },
+  {
+    "label": "preciseportalboundary",
+    "LF": 365,
+    "before": "- Returns structured error messages for rejected invoices",
+    "after": "- **Not yet confirmed:** the exact structured error-message format for rejected invoices."
+  },
+  {
+    "label": "formalcheckcitation",
+    "LF": 366,
+    "before": "- These three points are from the legacy Guide. The ERechV itself says only that invoices sent through the portal are checked automatically for formal correctness and that a faulty one is rejected with a notice to the sender (§ 4(3) ERechV)",
+    "after": "- These three retained technical topics are not established by the source clauses read. The ERechV itself says only that invoices sent through the portal are checked automatically for formal correctness and that a faulty one is rejected with a notice to the sender (§ 4(4) ERechV)"
+  },
+  {
+    "label": "lineformulasource",
+    "LF": 388,
+    "before": "These points describe the data format, not the tax law. The first point is carried over from the legacy Guide and was not checked. The others were checked on 19 September 2026 against KoSIT's XRechnung specification, version 3.0.2 (named, not linked). The specification of the format in use decides.",
+    "after": "These points describe the data format. The amount datatype and line-net formula are checked against XRechnung 3.0.2 sections 8.1 and 12.5 (PEPPOL-EN16931-R120); the tax-group rule is BR-CO-17. The specification of the format in use decides, and no rounding mode is inferred."
+  },
+  {
+    "label": "DE-L23fullR120formula",
+    "LF": 390,
+    "before": "- **Line-level rounding:** net amount = quantity × unit price, rounded to 2 decimal places",
+    "after": "- **Line net amount (BT-131):** quantity × (item net price / price-base quantity), plus line charges, less line allowances (PEPPOL-EN16931-R120). Amounts are expressed with two decimal places (section 8.1). Quantity × unit price alone describes only the case with a price-base quantity of one and no line charges or allowances."
+  },
+  {
+    "label": "ordinaryGermancodescope",
+    "LF": 399,
+    "before": "Carried over from the legacy Guide (data format, not checked on an official page), except where a law or KoSIT's specification is named.",
+    "after": "The following ordinary German invoice categories are checked against the named XRechnung rules and the current bundle’s code list. The list is not an exhaustive method for every foreign VAT system."
+  },
+  {
+    "label": "notgloballyexclusivecodelist",
+    "LF": 402,
+    "before": "- **Tax category codes:** KoSIT's XRechnung specification allows only S (Standard rate), Z (Zero rated goods), E (Exempt from tax), AE (VAT Reverse Charge), K (intra-Community supply), G (export, tax not charged), O (outside scope of tax), and L and M for the Canary Islands and for Ceuta and Melilla. The legacy Guide's code AA for the reduced rate is not in that list. A reduced-rate line carries S with its own rate: rule BR-S-5 asks only that the rate under S be greater than zero",
+    "after": "- **Tax category codes:** For ordinary German invoices, the codes are S (Standard rate), Z (Zero rated goods), E (Exempt from tax), AE (VAT Reverse Charge), K (intra-Community supply), G (export, tax not charged), O (outside scope of tax), and L and M for the Canary Islands and for Ceuta and Melilla. The current validator also recognises code B under its Italian-only conditions; that foreign method is outside this Guide. The legacy Guide's code AA for the reduced rate is not in that list. A reduced-rate line carries S with its own rate: rule BR-S-5 asks only that the rate under S be greater than zero"
+  },
+  {
+    "label": "specificnewsourceandboundaryreceipt",
+    "LF": 569,
+    "before": "- ELSTER, e-invoice viewer of the tax administration, and the document upload function: https://www.elster.de/eportal/e-rechnung and https://www.elster.de/eportal/formulare-leistungen/alleformulare/belegnachreichung",
+    "after": "- ELSTER, e-invoice viewer of the tax administration, and the document upload function: https://www.elster.de/eportal/e-rechnung and https://www.elster.de/eportal/formulare-leistungen/alleformulare/belegnachreichung\n- Technical sources read on 29 October 2026: [KoSIT XRechnung 3.0.2 specification](https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf), selected fields, amount datatype and PEPPOL-EN16931-R120; [current version list and bundle](https://xeinkauf.de/xrechnung/versionen-und-bundles/), whose selected schema and configuration members establish namespaces and validation layers. No full bundle execution is claimed.\n- [KoSIT identifier guidance, 2 January 2025](https://xeinkauf.de/app/uploads/2025/01/2025-01-02_Germany_Identifier_v.1.1_eng.pdf), selected 0204/9930 addressing clauses; [FeRD profile FAQ](https://www.ferd-net.de/standards/zugferd-faq), selected profile definitions. These are technical publisher statements, separate from the VAT law.\n- Federal procurement office: [current platform and consolidation explanation](https://e-rechnung-bund.de/), [upload instructions](https://e-rechnung-bund.de/ubertragungskanale/upload/) and [e-mail instructions](https://e-rechnung-bund.de/ubertragungskanale/e-mail/), selected operational clauses read on 29 October 2026. No registration, login or submission was used.\n- Not yet confirmed: the exact Leitweg-ID validation pattern and the three additional portal checks identified in Section 6; the earlier stated GoBD procedural-documentation and paragraph 135 details; the full conditions of UStAE 15.2a(1a) absent from the amendment letter; and whether wrong-format invoicing attracts the non-issue fine. These limits are not resolved by technical schema conformity."
+  }
+]

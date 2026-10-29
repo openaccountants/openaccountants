@@ -1,0 +1,24 @@
+266609c6 2026-10-27 sync: 119 files updated from openaccountants.com (2026-10-27)
+ced5adb4 2026-10-24 DE: de-rental-income in the deep-tax shape for 2026 (#823)
+3e241566 2026-10-24 DE: de-rental-income in the deep-tax shape for 2026
+4aac878b 2026-10-24 [DE] Give the self-employed income tax skill its own name (#798)
+fd9a5218 2026-10-24 [DE] Give the self-employed income tax skill its own name
+16646404 2026-10-23 [DE] Self-employed income tax: 2026 refresh (#613)
+67a75397 2026-10-22 Germany: the 70% loss share reverts to 60% from 2028 (#548)
+4d26c15a 2026-10-17 sync: 1577 files updated from openaccountants.com (2026-10-17)
+98bb52df 2026-10-07 sync: 1767 files updated from openaccountants.com (2026-10-07)
+324d47d1 2026-10-04 sync: 1809 files updated from openaccountants.com (2026-10-04)
+ada1faee 2026-09-28 sync: 128 files updated from openaccountants.com (2026-09-28)
+fff6179a 2026-09-20 sync: 35 files updated from openaccountants.com (2026-09-20)
+11eb01a4 2026-08-27 sync: 3270 files updated from openaccountants.com (2026-08-27)
+7782d74f 2026-08-25 sync: 1256 files updated from openaccountants.com (2026-08-25)
+f713b442 2026-08-22 sync: 582 files updated from openaccountants.com (2026-08-22)
+53ab8565 2026-08-22 feat(australia): add 8 practice and subcontractor accounting skills (#127)
+ee93d753 2026-08-12 sync: 777 files updated from openaccountants.com (2026-08-12)
+1ecfbc4a 2026-08-10 fix: repair YAML frontmatter that silently hid 565 guides from the MCP index
+037f3d41 2026-08-02 sync: 6129 files updated from openaccountants.com (2026-08-02)
+bca875f4 2026-08-01 sync: 7374 files updated from openaccountants.com (2026-08-01)
+3244ccd6 2026-07-04 Complete frontmatter metadata on all 1,007 Guides + strict CI
+1c626f5f 2026-06-12 Add reliance disclaimers across the repo
+5ec07f8c 2026-06-07 Fix broken links: non-www openaccountants.com 404s on every path
+75fa9a9f 2026-05-22 Repo depth expansion: 55 new skills, 5 templates, 14 orchestrators

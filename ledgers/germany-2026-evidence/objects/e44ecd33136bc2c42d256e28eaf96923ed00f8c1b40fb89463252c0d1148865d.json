@@ -1,0 +1,158 @@
+{
+  "role": "writer successor, independent review pending",
+  "controls": [
+    {
+      "id": "R109.('.5', 0)",
+      "actual": "1",
+      "expected": "1",
+      "scope": "Stipulated permanent residential let, full actual other conditions. Published2025 ELSTER no-loss selector on unchanged2026 statutory band; not alleged older BMF express equality wording.",
+      "pass": true
+    },
+    {
+      "id": "R109.('.65', 0)",
+      "actual": "1",
+      "expected": "1",
+      "scope": "Stipulated permanent residential let, full actual other conditions. Published2025 ELSTER no-loss selector on unchanged2026 statutory band; not alleged older BMF express equality wording.",
+      "pass": true
+    },
+    {
+      "id": "R109.('.65', -1)",
+      "actual": "0.65",
+      "expected": "0.65",
+      "scope": "Stipulated permanent residential let, full actual other conditions. Published2025 ELSTER no-loss selector on unchanged2026 statutory band; not alleged older BMF express equality wording.",
+      "pass": true
+    },
+    {
+      "id": "R109.('.49', 100)",
+      "actual": "0.49",
+      "expected": "0.49",
+      "scope": "Stipulated permanent residential let, full actual other conditions. Published2025 ELSTER no-loss selector on unchanged2026 statutory band; not alleged older BMF express equality wording.",
+      "pass": true
+    },
+    {
+      "id": "R109.('.66', -100)",
+      "actual": "1",
+      "expected": "1",
+      "scope": "Stipulated permanent residential let, full actual other conditions. Published2025 ELSTER no-loss selector on unchanged2026 statutory band; not alleged older BMF express equality wording.",
+      "pass": true
+    },
+    {
+      "id": "R109.zero_separator",
+      "actual": "10000",
+      "expected": "10000",
+      "scope": "Forecast exactlyzero means full expense, not6000 paid-share restriction under this administrative instruction.",
+      "pass": true
+    },
+    {
+      "id": "R109.loss_separator",
+      "actual": "6000.0",
+      "expected": "6000",
+      "scope": "Negative forecast retains expense splitting, no automatic all-cost deduction.",
+      "pass": true
+    },
+    {
+      "id": "R110.four_normal",
+      "actual": "48000",
+      "expected": "48000",
+      "scope": "Four full January years, current own3% branch.",
+      "pass": true
+    },
+    {
+      "id": "R110.four_special",
+      "actual": "64000",
+      "expected": "64000",
+      "scope": "Eligible320000 capped special base, four independently qualifying years through2029.",
+      "pass": true
+    },
+    {
+      "id": "R110.residual",
+      "actual": "288000",
+      "expected": "288000",
+      "scope": "Actual fixture cost less both normal/special deductions.",
+      "pass": true
+    },
+    {
+      "id": "R110.remaininglife",
+      "actual": "88/3",
+      "expected": "88/3",
+      "scope": "Mathematical3% life lessfour years, not rounded33years.",
+      "pass": true
+    },
+    {
+      "id": "R110.exact_afa",
+      "actual": "108000/11",
+      "expected": "108000/11",
+      "scope": "First following full year2030, exact rational before display.",
+      "pass": true
+    },
+    {
+      "id": "R110.display",
+      "actual": "9818.18",
+      "expected": "9818.18",
+      "scope": "Display only; not an assessment-rounding legal claim.",
+      "pass": true
+    },
+    {
+      "id": "R110.not_originalrate",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Remaining useful-life rate, not unadjusted3% of residual.",
+      "pass": true
+    },
+    {
+      "id": "R110.5a_alternative",
+      "actual": "14400",
+      "expected": "14400",
+      "scope": "Conditional independent §7(5a) alternative with this separately established residual, not the straight-line example itself.",
+      "pass": true
+    },
+    {
+      "id": "R110.sunset_wait",
+      "actual": "2028",
+      "expected": "2028",
+      "scope": "Own BMF example:2026 old-window sunset does not cut four-year benefit-period clock; regular2027 unchanged.",
+      "pass": true
+    },
+    {
+      "id": "R111.direct",
+      "actual": "1000",
+      "expected": "1000",
+      "scope": "Identifiable repair wholly rented-room related; private-only expense excluded.",
+      "pass": true
+    },
+    {
+      "id": "R111.shared",
+      "actual": "2000.0",
+      "expected": "2000",
+      "scope": "Independently supported20% usable-area allocation for shared roof cost; not a universally prescribed ratio.",
+      "pass": true
+    },
+    {
+      "id": "R111.total",
+      "actual": "3000.0",
+      "expected": "3000",
+      "scope": "Before any other actual expense/capitalisation/cheap-let limitation.",
+      "pass": true
+    },
+    {
+      "id": "R111.private_only",
+      "actual": "0",
+      "expected": "0",
+      "scope": "Identifiable private part expense remains excluded; room letting does not convert all household expense.",
+      "pass": true
+    }
+  ],
+  "control_count": 20,
+  "own_source_pairs_and_exact_native_quotes_checked": 6,
+  "original135_quotes_reused_by_attribution": true,
+  "rows": 290,
+  "old_origins": 550,
+  "full_inverse_ops": 8,
+  "original_two_oa_and_full_worked_section_exact": true,
+  "oa_blocks": 2,
+  "oa_failures": [],
+  "schema_errors": [],
+  "schema_warnings": [],
+  "diff_returncode": 0,
+  "original_root_manifest_members_unchanged": 163
+}

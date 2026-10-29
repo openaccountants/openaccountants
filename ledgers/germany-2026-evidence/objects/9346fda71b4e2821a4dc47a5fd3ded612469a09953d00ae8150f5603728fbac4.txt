@@ -1,0 +1,142 @@
+Der Über­tragungs­­kanal: E‑Mail | E-Rechnung in der Bundesverwaltung
+Zum Inhalt springen
+Offizielle Website – Bundesrepublik Deutschland
+Zur Startseite - E-Rechnung in der Bundesverwaltung
+Service-Navigation Kopfbereich
+English
+Leichte Sprache
+Gebärdensprache
+Hauptnavigation
+Menü öffnen
+Start
+Rechnungs­steller
+Behörden und Einrichtungen
+ERP-Hersteller
+Verbände
+E-Rechnung
+Was ist eine E-Rechnung?
+E‑Rechnung A‑Z
+Merksätze zur E‑Rechnung
+Unterschied Papier-, PDF- und E-Rechnung
+E-Rechnung in den Bundesländern
+E-Rechnung zwischen Unternehmen (B2B)
+Übertragungs­kanäle
+Weberfassung
+Upload
+Peppol
+E-Mail
+Mediathek
+Tutorials
+Dokumente
+Aktuelles
+FAQ
+Kontakt
+Hauptnavigation
+Start
+Rechnungs­steller
+Behörden und Einrichtungen
+ERP-Hersteller
+Verbände
+E-Rechnung
+Was ist eine E-Rechnung?
+E‑Rechnung A‑Z
+Merksätze zur E‑Rechnung
+Unterschied Papier-, PDF- und E-Rechnung
+E-Rechnung in den Bundesländern
+E-Rechnung zwischen Unternehmen (B2B)
+Übertragungs­kanäle
+Weberfassung
+Upload
+Peppol
+E-Mail
+Mediathek
+Tutorials
+Dokumente
+Aktuelles
+FAQ
+Kontakt
+Sie sind hier:
+Startseite
+Übertragungs­kanäle
+E-Mail
+Der Über­tragungs­­kanal: E‑Mail
+Hier erfahren Sie, was es bei der Nutzung des Übertragungskanals E-Mail an der Rechnungseingangsplattform OZG-RE des Bundes zu beachten gilt.
+Allgemeine Hinweise zum Übertragungskanal “E-Mail”
+An der Rechnungseingangsplattform OZG‑RE werden Rechnungssendern verschiedene Übertragungskanäle zur Übermittlung von E‑Rechnungen an die Rechnungsempfänger zur Verfügung gestellt.
+Wichtige Punkte bei der Übertragung per E‑Mail
+Es darf immer nur eine E‑Rechnung pro E‑Mail versendet werden.
+Sollte mehr als eine Rechnung in einer E‑Mail enthalten sein, wird die E-Mail inklusive der Anhänge verworfen. Die Rechnung kann dann nicht zugestellt werden.
+Sobald Anhänge versendet werden, die keine E-Rechnung im Sinne eines strukturierten Datensatzes (s. auch FAQ-Bereiche zu E-Rechnung und XRechnung) darstellen, wird die E-Mail inklusive der Anhänge verworfen. Die
+Rechnung kann dann nicht zugestellt werden.
+Es sollten keine „No Reply“-E‑Mail-Adressen verwendet werden.
+Betreff und Text sind für die Einsendung irrelevant und werden automatisch aus der E‑Mail gelöscht und nicht an den Rechnungsempfänger weitergeleitet; sie können auch leer bleiben.
+Anleitung zur Nutzung des Übertragungs­­kanals „E‑Mail“ an der OZG‑RE
+Öffne Beschreibung
+Beschreibung
+Schließen
+Abbildung: Anmeldung (Benutzeroberfläche OZG-RE)
+1. Schritt: Registrierung
+Um den Übertragungskanal „E‑Mail“ nutzen zu können, ist zunächst die Registrierung des Rechnungssenders an der OZG‑RE notwendig.
+Öffne Beschreibung
+Beschreibung
+Schließen
+Abbildung: Versand von E-Rechnungen per E-Mail (Benutzeroberfläche OZG-RE)
+2. Schritt: Versand von E‑Rechnungen per E‑Mail
+Auf der Startseite der OZG‑RE werden Ihnen die Funktionen der Rechnungseingangsplattform in Kacheln dargestellt. Scrollen Sie auf der Seite zu der Kachel „Extern erstellte XRechnung via E‑Mail senden“.
+Klicken Sie auf „E‑Mail senden“ und es öffnet sich Ihr E‑Mail-Programm, in dem bereits die Empfängeradresse zur OZG-RE für den Versand von E‑Rechnungen automatisch vorbefüllt wurde.
+Alternativ können Sie „E‑Mail-Adresse in Zwischenablage kopieren“ wählen, um die Empfängeradresse zum Versand von E‑Rechnungen an die OZG-RE zu kopieren, bspw. um diese in Ihr Adressbuch zu überführen.
+Die generisch erzeugte Empfängeradresse identifiziert Sie als Rechnungssteller eindeutig und kann fortan für den Versand Ihrer E‑Rechnungen an die OZG‑RE verwendet werden. Diese E‑Mail-Adresse bleibt für Ihr Konto immer gleich, Sie können diese E‑Mail-Adresse jederzeit wieder auf der Startseite abfragen. Die E‑Mail-Adresse des Absenders darf variieren. Wird die E‑Mail-Adresse genutzt, die mit dem Rechnungssenderkonto verknüpft ist, kann die E‑Rechnung dem Rechnungssenderkonto immer eindeutig zugeordnet werden.
+Hängen Sie der E‑Mail Ihre E‑Rechnung zum Versand an.
+Zusätzliche Informationen
+Auf der OZG‑RE können Sie in den persönlichen Einstellungen außerdem hinterlegen, ob Sie Benachrichtigungen zu Statuswechseln eingereichter E‑Rechnungen erhalten möchten. Sie haben die Möglichkeit, hier Benachrichtigungen bei allen Statuswechseln – also erfolgreich übermittelten E‑Rechnungen und fehlerhaften Statuswechseln – festzulegen. Alternativ können Sie einstellen, dass Sie lediglich bei fehlerhaften Statuswechseln eine Benachrichtigung per E‑Mail erhalten möchten.
+Testen und Einsenden von E-Rechnungen an die OZG-RE
+Sie möchten sich zunächst mit dem Einsenden von E‑Rechnungen an die OZG‑RE vertraut machen, bevor Sie E‑Rechnungen an Ihre Kunden bzw. Rechnungsempfänger versenden?
+Zum Testen der Funktionalitäten der Rechnungseingangsplattform OZG‑RE steht Ihnen eine Testumgebung zur Verfügung. Auch auf der Testumgebung ist zum Versand von E-Rechnungen per E‑Mail eine Registrierung notwendig.
+Sie können die Funktionen der OZG-RE wie das Einsenden von E-Rechnungen auf der Testumgebung erproben.
+Zur finalen Zusendung der E‑Rechnungen nutzen Sie die Produktivumgebung der OZG‑RE.
+Sie müssen sich jedoch an der Testumgebung sowie der Produktivumgebung der OZG-RE jeweils separat registrieren. Zusätzliche Informationen zur Nutzung der OZG-RE – und insbesondere zu den Übertragungskanälen – finden Sie in den Nutzungsbedingungen der OZG-RE.
+Weiterführende Informationen
+Hier erhalten Sie weiterführende Informationen rund um das Thema E‑Rechnung in der Bundesverwaltung.
+Merksätze zur E-Rechnung
+E-Rechnung von A-Z
+E-Rechnung in den Bundesländern
+FAQ zur E-Rechnung
+Unterschied Papier-, PDF und E-Rechnung
+Gesetze und Verordnungen
+Aktuelle Gesetze und Verordnungen zur E-Rechnung in Deutschland
+Dokumente
+Alle wichtigen Dokumente für Rechnungssteller, ERP-Hersteller, Behörden und Einrichtungen sowie Verbände zur E-Rechnung
+Tutorials
+Hier finden Sie Videotutorials zur Nutzung der Rechnungs­eingangs­plattform OZG-RE
+Servicebereich
+Kontakt & Support
+03025984436
+Mo - Fr 8:00-16:00
+ausgenommen Feiertage
+Informationen für
+Rechnungssteller
+ERP-Hersteller
+Behörden und Einrichtungen
+Verbände
+Externe Links
+OZG-RE
+Peppol
+Standard XRechnung
+Gesetze & Verordnungen
+E-Rechnungsverordnung (E-RechV)
+Richtlinie 2014/55/EU
+Richtlinie 2010/45/EU
+Zeitstrahl zur Umsetzung der E‑Rechnung
+© 2026
+Beschaffungsamt des BMI
+Service-Navigation Fußbereich
+Impressum
+Datenschutz
+Barriere­freiheits­erklärung
+Sitemap
+Meldestelle Hinweisgeber
+Die Digitale Dachmarke kennzeichnet digitale Angebote von Bund, Ländern und Kommunen als staatliche Leistungen.
+Digitalwappen Bund Länder Kommunen
+Cookies
+Schließen
+Zum Glossar

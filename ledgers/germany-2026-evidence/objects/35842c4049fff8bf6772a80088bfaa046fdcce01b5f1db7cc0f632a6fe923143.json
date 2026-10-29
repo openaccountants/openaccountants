@@ -1,0 +1,1647 @@
+[
+  {
+    "row": 1,
+    "source": {
+      "id": "DATES",
+      "source": "estg-37",
+      "act_article": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "native_LF": [
+        1,
+        1
+      ],
+      "exact_quote": "Der Steuerpflichtige hat am 10. M\u00e4rz, 10. Juni, 10. September und 10. Dezember Vorauszahlungen auf die Einkommensteuer zu entrichten, die er f\u00fcr den laufenden Veranlagungszeitraum voraussichtlich schulden wird.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw": "sources/estg-37.html",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "paragraph_count": 7,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 28,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 2,
+    "source": {
+      "id": "ARISE",
+      "source": "estg-37",
+      "act_article": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "native_LF": [
+        1,
+        1
+      ],
+      "exact_quote": "Die Einkommensteuer-Vorauszahlung entsteht jeweils mit Beginn des Kalendervierteljahres, in dem die Vorauszahlungen zu entrichten sind, oder, wenn die Steuerpflicht erst im Laufe des Kalendervierteljahres begr\u00fcndet wird, mit Begr\u00fcndung der Steuerpflicht.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw": "sources/estg-37.html",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "paragraph_count": 7,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 28,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 3,
+    "source": {
+      "id": "NOTICE",
+      "source": "estg-37",
+      "act_article": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "native_LF": [
+        3,
+        3
+      ],
+      "exact_quote": "Das Finanzamt setzt die Vorauszahlungen durch Vorauszahlungsbescheid fest.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw": "sources/estg-37.html",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "paragraph_count": 7,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 29,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 4,
+    "source": {
+      "id": "BASE",
+      "source": "estg-37",
+      "act_article": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "native_LF": [
+        3,
+        3
+      ],
+      "exact_quote": "Die Vorauszahlungen bemessen sich grunds\u00e4tzlich nach der Einkommensteuer, die sich nach Anrechnung der Steuerabzugsbetr\u00e4ge (\u00a7 36 Absatz 2 Nummer 2) bei der letzten Veranlagung ergeben hat.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw": "sources/estg-37.html",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "paragraph_count": 7,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 29,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 5,
+    "source": {
+      "id": "ADJUST",
+      "source": "estg-37",
+      "act_article": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "native_LF": [
+        3,
+        3
+      ],
+      "exact_quote": "Das Finanzamt kann bis zum Ablauf des auf den Veranlagungszeitraum folgenden 15. Kalendermonats die Vorauszahlungen an die Einkommensteuer anpassen, die sich f\u00fcr den Veranlagungszeitraum voraussichtlich ergeben wird; dieser Zeitraum verl\u00e4ngert sich auf 23 Monate, wenn die Eink\u00fcnfte aus Land- und Forstwirtschaft bei der erstmaligen Steuerfestsetzung die anderen Eink\u00fcnfte voraussichtlich \u00fcberwiegen werden.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw": "sources/estg-37.html",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "paragraph_count": 7,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 29,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 6,
+    "source": {
+      "id": "SMALL",
+      "source": "estg-37",
+      "act_article": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "native_LF": [
+        3,
+        3
+      ],
+      "exact_quote": "Bei der Anwendung der S\u00e4tze 2 und 3 bleiben Aufwendungen im Sinne des \u00a7 10 Absatz 1 Nummer 4, 5, 7 und 9 sowie Absatz 1a, der \u00a7\u00a7 10b und 33 sowie die abziehbaren Betr\u00e4ge nach \u00a7 33a, wenn die Aufwendungen und abziehbaren Betr\u00e4ge insgesamt 600 Euro nicht \u00fcbersteigen, au\u00dfer Ansatz.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw": "sources/estg-37.html",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "paragraph_count": 7,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 29,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 7,
+    "source": {
+      "id": "IGNORE",
+      "source": "estg-37",
+      "act_article": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "native_LF": [
+        3,
+        3
+      ],
+      "exact_quote": "Die Steuererm\u00e4\u00dfigung nach \u00a7 34a bleibt au\u00dfer Ansatz. 6Bei der Anwendung der S\u00e4tze 2 und 3 bleibt der Sonderausgabenabzug nach \u00a7 10a Absatz 1 au\u00dfer Ansatz.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw": "sources/estg-37.html",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "paragraph_count": 7,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 29,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 8,
+    "source": {
+      "id": "CHILD",
+      "source": "estg-37",
+      "act_article": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "native_LF": [
+        3,
+        3
+      ],
+      "exact_quote": "In den F\u00e4llen des \u00a7 31, in denen die gebotene steuerliche Freistellung eines Einkommensbetrags in H\u00f6he des Existenzminimums eines Kindes durch das Kindergeld nicht in vollem Umfang bewirkt wird, bleiben bei der Anwendung der S\u00e4tze 2 und 3 Freibetr\u00e4ge nach \u00a7 32 Absatz 6 und zu verrechnendes Kindergeld au\u00dfer Ansatz.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw": "sources/estg-37.html",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "paragraph_count": 7,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 29,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 9,
+    "source": {
+      "id": "RENT",
+      "source": "estg-37",
+      "act_article": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "native_LF": [
+        3,
+        3
+      ],
+      "exact_quote": "Negative Eink\u00fcnfte aus der Vermietung oder Verpachtung eines Geb\u00e4udes im Sinne des \u00a7 21 Absatz 1 Satz 1 Nummer 1 werden bei der Festsetzung der Vorauszahlungen nur f\u00fcr Kalenderjahre ber\u00fccksichtigt, die nach der Anschaffung oder Fertigstellung dieses Geb\u00e4udes beginnen. 9Wird ein Geb\u00e4ude vor dem Kalenderjahr seiner Fertigstellung angeschafft, tritt an die Stelle der Anschaffung die Fertigstellung. 10Satz 8 gilt nicht f\u00fcr negative Eink\u00fcnfte aus der Vermietung oder Verpachtung eines Geb\u00e4udes, f\u00fcr das Sonderabschreibungen nach \u00a7 7b dieses Gesetzes oder erh\u00f6hte Absetzungen nach den \u00a7\u00a7 14a, 14c oder 14d des Berlinf\u00f6rderungsgesetzes in Anspruch genommen werden. 11Satz 8 gilt f\u00fcr negative Eink\u00fcnfte aus der Vermietung oder Verpachtung eines anderen Verm\u00f6gensgegenstands im Sinne des \u00a7 21 Absatz 1 Satz 1 Nummer 1 bis 3 entsprechend mit der Ma\u00dfgabe, dass an die Stelle der Anschaffung oder Fertigstellung die Aufnahme der Nutzung durch den Steuerpflichtigen tritt.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw": "sources/estg-37.html",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "paragraph_count": 7,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 29,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 10,
+    "source": {
+      "id": "LATER",
+      "source": "estg-37",
+      "act_article": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "native_LF": [
+        4,
+        4
+      ],
+      "exact_quote": "(4) 1Bei einer nachtr\u00e4glichen Erh\u00f6hung der Vorauszahlungen ist die letzte Vorauszahlung f\u00fcr den Veranlagungszeitraum anzupassen. 2Der Erh\u00f6hungsbetrag ist innerhalb eines Monats nach Bekanntgabe des Vorauszahlungsbescheids zu entrichten.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw": "sources/estg-37.html",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "paragraph_count": 7,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-einkommensteuer-freelancer",
+      "quote_row": 6,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 11,
+    "source": {
+      "id": "MIN",
+      "source": "estg-37",
+      "act_article": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "native_LF": [
+        5,
+        5
+      ],
+      "exact_quote": "(5) 1Vorauszahlungen sind nur festzusetzen, wenn sie mindestens 400 Euro im Kalenderjahr und mindestens 100 Euro f\u00fcr einen Vorauszahlungszeitpunkt betragen. 2Festgesetzte Vorauszahlungen sind nur zu erh\u00f6hen, wenn sich der Erh\u00f6hungsbetrag im Fall des Absatzes 3 Satz 2 bis 5 f\u00fcr einen Vorauszahlungszeitpunkt auf mindestens 100 Euro, im Fall des Absatzes 4 auf mindestens 5 000 Euro bel\u00e4uft.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-37",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw": "sources/estg-37.html",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader": "sources/estg-37.reader.txt",
+      "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+      "paragraph_count": 7,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 30,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 12,
+    "source": {
+      "id": "SOLI_BASE",
+      "source": "solzg-3",
+      "act_article": "solzg-3",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "reader": "sources/solzg-3.reader.txt",
+      "reader_sha256": "6729e7e8479df5c552f9764a7266d120bfeac9a913e9efb92d6839d34b6f0510",
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "native_LF": [
+        1,
+        1
+      ],
+      "exact_quote": "soweit Vorauszahlungen zur Einkommensteuer oder K\u00f6rperschaftsteuer zu leisten sind: nach den Vorauszahlungen auf die Steuer f\u00fcr Veranlagungszeitr\u00e4ume ab 2002;",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "solzg-3",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "raw": "sources/solzg-3.html",
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "reader": "sources/solzg-3.reader.txt",
+      "reader_sha256": "6729e7e8479df5c552f9764a7266d120bfeac9a913e9efb92d6839d34b6f0510",
+      "paragraph_count": 8,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 11,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 13,
+    "source": {
+      "id": "SOLI_LIMIT",
+      "source": "solzg-3",
+      "act_article": "solzg-3",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "reader": "sources/solzg-3.reader.txt",
+      "reader_sha256": "6729e7e8479df5c552f9764a7266d120bfeac9a913e9efb92d6839d34b6f0510",
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "native_LF": [
+        4,
+        4
+      ],
+      "exact_quote": "(3) Der Solidarit\u00e4tszuschlag ist von einkommensteuerpflichtigen Personen nur zu erheben, wenn die Bemessungsgrundlage nach Absatz 1 Nummer 1 und 2, vermindert um die Einkommensteuer nach \u00a7 32d Absatz 3 und 4 des Einkommensteuergesetzes, 1. in den F\u00e4llen des \u00a7 32a Absatz 5 und 6 des Einkommensteuergesetzes 40 700 Euro, 2. in anderen F\u00e4llen 20 350 Euro\u00fcbersteigt. Auf die Einkommensteuer nach \u00a7 32d Absatz 3 und 4 des Einkommensteuergesetzes ist der Solidarit\u00e4tszuschlag ungeachtet des Satzes 1 zu erheben.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "solzg-3",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "raw": "sources/solzg-3.html",
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "reader": "sources/solzg-3.reader.txt",
+      "reader_sha256": "6729e7e8479df5c552f9764a7266d120bfeac9a913e9efb92d6839d34b6f0510",
+      "paragraph_count": 8,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 14,
+    "source": {
+      "id": "SOLI_RATE",
+      "source": "solzg-4",
+      "act_article": "solzg-4",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__4.html",
+      "reader": "sources/solzg-4.reader.txt",
+      "reader_sha256": "2b0005826a19694e780f86c03a0cff4ac1f2b8c8052088adc296b558d0740f2f",
+      "raw_sha256": "dd28933ed36da19cae72de5a054f9edbea5c5919cb2aeac6efc257afe9fab058",
+      "native_LF": [
+        1,
+        1
+      ],
+      "exact_quote": "Der Solidarit\u00e4tszuschlag betr\u00e4gt 5,5 Prozent der Bemessungsgrundlage. Er betr\u00e4gt nicht mehr als 11,9 Prozent des Unterschiedsbetrages zwischen der Bemessungsgrundlage, vermindert um die Einkommensteuer nach \u00a7 32d Absatz 3 und 4 des Einkommensteuergesetzes, und der nach \u00a7 3 Absatz 3, 4 und 5 jeweils ma\u00dfgebenden Freigrenze. Bruchteile eines Cents bleiben au\u00dfer Ansatz. Der Solidarit\u00e4tszuschlag auf die Einkommensteuer nach \u00a7 32d Absatz 3 und 4 des Einkommensteuergesetzes und auf die Lohnsteuer nach \u00a7 39b Absatz 3 des Einkommensteuergesetzes betr\u00e4gt ungeachtet des Satzes 2 5,5 Prozent.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "solzg-4",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__4.html",
+      "raw": "sources/solzg-4.html",
+      "raw_sha256": "dd28933ed36da19cae72de5a054f9edbea5c5919cb2aeac6efc257afe9fab058",
+      "reader": "sources/solzg-4.reader.txt",
+      "reader_sha256": "2b0005826a19694e780f86c03a0cff4ac1f2b8c8052088adc296b558d0740f2f",
+      "paragraph_count": 2,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 10,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 15,
+    "source": {
+      "id": "SOLI_YEAR",
+      "source": "solzg-6",
+      "act_article": "solzg-6",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__6.html",
+      "reader": "sources/solzg-6.reader.txt",
+      "reader_sha256": "014447c744e895cceac341acd65437c833bc90f0855ba27cb6a0574604667ca4",
+      "raw_sha256": "440b164ab35a89eff28cda416931ac803718f92526b81a0c2f28974b5b04d2f1",
+      "native_LF": [
+        27,
+        27
+      ],
+      "exact_quote": "(27) \u00a7 3 Absatz 3 in der Fassung des Artikels 4 des Gesetzes vom 23. Dezember 2024 (BGBl. 2024 I Nr. 449) ist erstmals im Veranlagungszeitraum 2026 anzuwenden.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "solzg-6",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__6.html",
+      "raw": "sources/solzg-6.html",
+      "raw_sha256": "440b164ab35a89eff28cda416931ac803718f92526b81a0c2f28974b5b04d2f1",
+      "reader": "sources/solzg-6.reader.txt",
+      "reader_sha256": "014447c744e895cceac341acd65437c833bc90f0855ba27cb6a0574604667ca4",
+      "paragraph_count": 27,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-einkommensteuer-freelancer",
+      "quote_row": 27,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 16,
+    "source": {
+      "id": "CHURCH_PRE",
+      "source": "estg-51a",
+      "act_article": "estg-51a",
+      "url": "https://www.gesetze-im-internet.de/estg/__51a.html",
+      "reader": "sources/estg-51a.reader.txt",
+      "reader_sha256": "81eefdcf0f0a556b9674ac32b4cf5ea2d6a6e322a440b941c30c0fd4285959c3",
+      "raw_sha256": "02bf2ed03b59ac334e8201d01a4294c694363cf10bca8158d100bfde3c667b11",
+      "native_LF": [
+        9,
+        9
+      ],
+      "exact_quote": "(4)1 Die Vorauszahlungen auf Zuschlagsteuern sind gleichzeitig mit den festgesetzten Vorauszahlungen auf die Einkommensteuer zu entrichten; \u00a7 37 Absatz 5 ist nicht anzuwenden. 2Solange ein Bescheid \u00fcber die Vorauszahlungen auf Zuschlagsteuern nicht erteilt worden ist, sind die Vorauszahlungen ohne besondere Aufforderung nach Ma\u00dfgabe der f\u00fcr die Zuschlagsteuern geltenden Vorschriften zu entrichten. 3\u00a7 240 Absatz 1 Satz 3 der Abgabenordnung ist insoweit nicht anzuwenden; \u00a7 254 Absatz 2 der Abgabenordnung gilt insoweit sinngem\u00e4\u00df.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-51a",
+      "url": "https://www.gesetze-im-internet.de/estg/__51a.html",
+      "raw": "sources/estg-51a.html",
+      "raw_sha256": "02bf2ed03b59ac334e8201d01a4294c694363cf10bca8158d100bfde3c667b11",
+      "reader": "sources/estg-51a.reader.txt",
+      "reader_sha256": "81eefdcf0f0a556b9674ac32b4cf5ea2d6a6e322a440b941c30c0fd4285959c3",
+      "paragraph_count": 12,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 17,
+    "source": {
+      "id": "CHURCH_STATE",
+      "source": "estg-51a",
+      "act_article": "estg-51a",
+      "url": "https://www.gesetze-im-internet.de/estg/__51a.html",
+      "reader": "sources/estg-51a.reader.txt",
+      "reader_sha256": "81eefdcf0f0a556b9674ac32b4cf5ea2d6a6e322a440b941c30c0fd4285959c3",
+      "raw_sha256": "02bf2ed03b59ac334e8201d01a4294c694363cf10bca8158d100bfde3c667b11",
+      "native_LF": [
+        11,
+        11
+      ],
+      "exact_quote": "(6) Die Abs\u00e4tze 1 bis 5 gelten f\u00fcr die Kirchensteuern nach Ma\u00dfgabe landesrechtlicher Vorschriften.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-51a",
+      "url": "https://www.gesetze-im-internet.de/estg/__51a.html",
+      "raw": "sources/estg-51a.html",
+      "raw_sha256": "02bf2ed03b59ac334e8201d01a4294c694363cf10bca8158d100bfde3c667b11",
+      "reader": "sources/estg-51a.reader.txt",
+      "reader_sha256": "81eefdcf0f0a556b9674ac32b4cf5ea2d6a6e322a440b941c30c0fd4285959c3",
+      "paragraph_count": 12,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 18,
+    "source": {
+      "id": "CHURCH_RATE",
+      "source": "bmf-steuern-a-z",
+      "act_article": "bmf-steuern-a-z",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf",
+      "reader": "sources/bmf-steuern-a-z.reader.txt",
+      "reader_sha256": "2d05ce2568efd71d46184329c032e3190ad2a35348b1e16e405da272f0f33696",
+      "raw_sha256": "c36ca62b6c89e5524682fcc124a68548aec918813761dbbf866f010f741d52fb",
+      "native_LF": [
+        2967,
+        2967
+      ],
+      "exact_quote": "             je nach Bundesland 8 oder 9 Prozent.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "bmf-steuern-a-z",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf",
+      "raw": "sources/bmf-steuern-a-z.pdf",
+      "raw_sha256": "c36ca62b6c89e5524682fcc124a68548aec918813761dbbf866f010f741d52fb",
+      "reader": "sources/bmf-steuern-a-z.reader.txt",
+      "reader_sha256": "2d05ce2568efd71d46184329c032e3190ad2a35348b1e16e405da272f0f33696",
+      "acquisition": "retained cached source body; actual reading recorded separately",
+      "extraction": "pdftotext -layout"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 19,
+    "source": {
+      "id": "CHURCH_SPECIAL",
+      "source": "estg-10",
+      "act_article": "estg-10",
+      "url": "https://www.gesetze-im-internet.de/estg/__10.html",
+      "reader": "sources/estg-10.reader.txt",
+      "reader_sha256": "a0fd6ad345cb518cb58a37fdf63186576c8cbf0cc2a2ac9b7b4fde0dcf6882fd",
+      "raw_sha256": "f970952c77597337017ee213013219bd490a91f1f0b7048bbd8cb697d1d9befd",
+      "native_LF": [
+        1,
+        1
+      ],
+      "exact_quote": "4. gezahlte Kirchensteuer; dies gilt nicht, soweit die Kirchensteuer als Zuschlag zur Kapitalertragsteuer oder als Zuschlag auf die nach dem gesonderten Tarif des \u00a7 32d Absatz 1 ermittelte Einkommensteuer gezahlt wurde;",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-10",
+      "url": "https://www.gesetze-im-internet.de/estg/__10.html",
+      "raw": "sources/estg-10.html",
+      "raw_sha256": "f970952c77597337017ee213013219bd490a91f1f0b7048bbd8cb697d1d9befd",
+      "reader": "sources/estg-10.reader.txt",
+      "reader_sha256": "a0fd6ad345cb518cb58a37fdf63186576c8cbf0cc2a2ac9b7b4fde0dcf6882fd",
+      "paragraph_count": 13,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 77,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 20,
+    "source": {
+      "id": "CREDIT",
+      "source": "estg-36",
+      "act_article": "estg-36",
+      "url": "https://www.gesetze-im-internet.de/estg/__36.html",
+      "reader": "sources/estg-36.reader.txt",
+      "reader_sha256": "a59b98722ed8e2f94d161a7fdc6d3cb83ba52b08f946e4e424e98d5767789f1d",
+      "raw_sha256": "5dd46a731f12aada297b6c739e3ac1f8039097f226afc44cb42fad1b626d4d51",
+      "native_LF": [
+        2,
+        2
+      ],
+      "exact_quote": "Auf die Einkommensteuer werden angerechnet: 1. die f\u00fcr den Veranlagungszeitraum entrichteten Einkommensteuer-Vorauszahlungen (\u00a7 37); 2. die durch Steuerabzug erhobene Einkommensteuer",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-36",
+      "url": "https://www.gesetze-im-internet.de/estg/__36.html",
+      "raw": "sources/estg-36.html",
+      "raw_sha256": "5dd46a731f12aada297b6c739e3ac1f8039097f226afc44cb42fad1b626d4d51",
+      "reader": "sources/estg-36.reader.txt",
+      "reader_sha256": "a59b98722ed8e2f94d161a7fdc6d3cb83ba52b08f946e4e424e98d5767789f1d",
+      "paragraph_count": 6,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 21,
+    "source": {
+      "id": "BALANCE",
+      "source": "estg-36",
+      "act_article": "estg-36",
+      "url": "https://www.gesetze-im-internet.de/estg/__36.html",
+      "reader": "sources/estg-36.reader.txt",
+      "reader_sha256": "a59b98722ed8e2f94d161a7fdc6d3cb83ba52b08f946e4e424e98d5767789f1d",
+      "raw_sha256": "5dd46a731f12aada297b6c739e3ac1f8039097f226afc44cb42fad1b626d4d51",
+      "native_LF": [
+        4,
+        4
+      ],
+      "exact_quote": "(4) 1Wenn sich nach der Abrechnung ein \u00dcberschuss zuungunsten des Steuerpflichtigen ergibt, hat der Steuerpflichtige (Steuerschuldner) diesen Betrag, soweit er den f\u00e4llig gewordenen, aber nicht entrichteten Einkommensteuer-Vorauszahlungen entspricht, sofort, im \u00dcbrigen innerhalb eines Monats nach Bekanntgabe des Steuerbescheids zu entrichten (Abschlusszahlung). 2Wenn sich nach der Abrechnung ein \u00dcberschuss zugunsten des Steuerpflichtigen ergibt, wird dieser dem Steuerpflichtigen nach Bekanntgabe des Steuerbescheids ausgezahlt. 3Bei Ehegatten, die nach den \u00a7\u00a7 26, 26b zusammen zur Einkommensteuer veranlagt worden sind, wirkt die Auszahlung an einen Ehegatten auch f\u00fcr und gegen den anderen Ehegatten.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-36",
+      "url": "https://www.gesetze-im-internet.de/estg/__36.html",
+      "raw": "sources/estg-36.html",
+      "raw_sha256": "5dd46a731f12aada297b6c739e3ac1f8039097f226afc44cb42fad1b626d4d51",
+      "reader": "sources/estg-36.reader.txt",
+      "reader_sha256": "a59b98722ed8e2f94d161a7fdc6d3cb83ba52b08f946e4e424e98d5767789f1d",
+      "paragraph_count": 6,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 31,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 22,
+    "source": {
+      "id": "NOT_EXPENSE",
+      "source": "estg-12",
+      "act_article": "estg-12",
+      "url": "https://www.gesetze-im-internet.de/estg/__12.html",
+      "reader": "sources/estg-12.reader.txt",
+      "reader_sha256": "95d130beec6fcfcfa5007b929b887cc92f029469e5960e3cbeb46c952517f63c",
+      "raw_sha256": "2f2a2749f2f5ec64b89f9ffe5f657575e60bd4a6ef74217332842658f9056282",
+      "native_LF": [
+        1,
+        1
+      ],
+      "exact_quote": "3. die Steuern vom Einkommen und sonstige Personensteuern sowie die Umsatzsteuer f\u00fcr Ums\u00e4tze, die Entnahmen sind, und die Vorsteuerbetr\u00e4ge auf Aufwendungen, f\u00fcr die das Abzugsverbot der Nummer 1 oder des \u00a7 4 Absatz 5 Satz 1 Nummer 1 bis 5, 7 oder Absatz 7 gilt; das gilt auch f\u00fcr die auf diese Steuern entfallenden Nebenleistungen;",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-12",
+      "url": "https://www.gesetze-im-internet.de/estg/__12.html",
+      "raw": "sources/estg-12.html",
+      "raw_sha256": "2f2a2749f2f5ec64b89f9ffe5f657575e60bd4a6ef74217332842658f9056282",
+      "reader": "sources/estg-12.reader.txt",
+      "reader_sha256": "95d130beec6fcfcfa5007b929b887cc92f029469e5960e3cbeb46c952517f63c",
+      "paragraph_count": 2,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 74,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 23,
+    "source": {
+      "id": "ANCILLARY",
+      "source": "ao-3",
+      "act_article": "ao-3",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__3.html",
+      "reader": "sources/ao-3.reader.txt",
+      "reader_sha256": "0c6956c4076d4094dc527133fb63fdfbdb40960b216449987495ac5576442b9b",
+      "raw_sha256": "e7921833e74989a31048f1b4271b12ca92dffce537778d9ae788369cfe17f257",
+      "native_LF": [
+        4,
+        4
+      ],
+      "exact_quote": "4. Zinsen nach den \u00a7\u00a7 233 bis 237 sowie Zinsen nach den Steuergesetzen, auf die die \u00a7\u00a7 238 und 239 anzuwenden sind, sowie Zinsen, die \u00fcber die \u00a7\u00a7 233 bis 237 und die Steuergesetze hinaus nach dem Recht der Europ\u00e4ischen Union auf zu erstattende Steuern zu leisten sind, 5. S\u00e4umniszuschl\u00e4ge nach \u00a7 240,",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-3",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__3.html",
+      "raw": "sources/ao-3.html",
+      "raw_sha256": "e7921833e74989a31048f1b4271b12ca92dffce537778d9ae788369cfe17f257",
+      "reader": "sources/ao-3.reader.txt",
+      "reader_sha256": "0c6956c4076d4094dc527133fb63fdfbdb40960b216449987495ac5576442b9b",
+      "paragraph_count": 6,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 24,
+    "source": {
+      "id": "WEEKENDS",
+      "source": "ao-108",
+      "act_article": "ao-108",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+      "reader": "sources/ao-108.reader.txt",
+      "reader_sha256": "ab2dc42bbe74ee81b7926cdebe2a22466276c8c7a59d1e411b12634b34530fb3",
+      "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+      "native_LF": [
+        3,
+        3
+      ],
+      "exact_quote": "(3) F\u00e4llt das Ende einer Frist auf einen Sonntag, einen gesetzlichen Feiertag oder einen Sonnabend, so endet die Frist mit dem Ablauf des n\u00e4chstfolgenden Werktags.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-108",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+      "raw": "sources/ao-108.html",
+      "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+      "reader": "sources/ao-108.reader.txt",
+      "reader_sha256": "ab2dc42bbe74ee81b7926cdebe2a22466276c8c7a59d1e411b12634b34530fb3",
+      "paragraph_count": 6,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 15,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 25,
+    "source": {
+      "id": "PAYMENT",
+      "source": "ao-224",
+      "act_article": "ao-224",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__224.html",
+      "reader": "sources/ao-224.reader.txt",
+      "reader_sha256": "550a20cbb1bda29cc87249d01fef74384e351c666ceef0fc8e7f21a9b9bbb144",
+      "raw_sha256": "a3d09dc43f6c7e7209a1fa636313afcfcaca668b5430dc85decfa0a8fde30d5f",
+      "native_LF": [
+        2,
+        2
+      ],
+      "exact_quote": "(2) Eine wirksam geleistete Zahlung gilt als entrichtet: 1. bei \u00dcbergabe oder \u00dcbersendung von Zahlungsmitteln am Tag des Eingangs, bei Hingabe oder \u00dcbersendung von Schecks jedoch drei Tage nach dem Tag des Eingangs, 2. bei \u00dcberweisung oder Einzahlung auf ein Konto der Finanzbeh\u00f6rde und bei Einzahlung mit Zahlschein an dem Tag, an dem der Betrag der Finanzbeh\u00f6rde gutgeschrieben wird, 3. bei Vorliegen eines SEPA-Lastschriftmandats am F\u00e4lligkeitstag.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-224",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__224.html",
+      "raw": "sources/ao-224.html",
+      "raw_sha256": "a3d09dc43f6c7e7209a1fa636313afcfcaca668b5430dc85decfa0a8fde30d5f",
+      "reader": "sources/ao-224.reader.txt",
+      "reader_sha256": "550a20cbb1bda29cc87249d01fef74384e351c666ceef0fc8e7f21a9b9bbb144",
+      "paragraph_count": 5,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "germany-vat-return",
+      "quote_row": 26,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 26,
+    "source": {
+      "id": "CHANGE",
+      "source": "ao-164",
+      "act_article": "ao-164",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__164.html",
+      "reader": "sources/ao-164.reader.txt",
+      "reader_sha256": "43c763c554932d66ddbbd717f7b51e1b7430bbeab934196fc7c2b4d2838ee69e",
+      "raw_sha256": "d7a2d7c6e3aff32ba8ae76a4e8791db643056d73b7ed67fd93bf6acf1e92dc5f",
+      "native_LF": [
+        1,
+        1
+      ],
+      "exact_quote": "(1) Die Steuern k\u00f6nnen, solange der Steuerfall nicht abschlie\u00dfend gepr\u00fcft ist, allgemein oder im Einzelfall unter dem Vorbehalt der Nachpr\u00fcfung festgesetzt werden, ohne dass dies einer Begr\u00fcndung bedarf. Die Festsetzung einer Vorauszahlung ist stets eine Steuerfestsetzung unter Vorbehalt der Nachpr\u00fcfung.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-164",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__164.html",
+      "raw": "sources/ao-164.html",
+      "raw_sha256": "d7a2d7c6e3aff32ba8ae76a4e8791db643056d73b7ed67fd93bf6acf1e92dc5f",
+      "reader": "sources/ao-164.reader.txt",
+      "reader_sha256": "43c763c554932d66ddbbd717f7b51e1b7430bbeab934196fc7c2b4d2838ee69e",
+      "paragraph_count": 5,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 27,
+    "source": {
+      "id": "APPLY",
+      "source": "ao-164",
+      "act_article": "ao-164",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__164.html",
+      "reader": "sources/ao-164.reader.txt",
+      "reader_sha256": "43c763c554932d66ddbbd717f7b51e1b7430bbeab934196fc7c2b4d2838ee69e",
+      "raw_sha256": "d7a2d7c6e3aff32ba8ae76a4e8791db643056d73b7ed67fd93bf6acf1e92dc5f",
+      "native_LF": [
+        2,
+        2
+      ],
+      "exact_quote": "(2) Solange der Vorbehalt wirksam ist, kann die Steuerfestsetzung aufgehoben oder ge\u00e4ndert werden. Der Steuerpflichtige kann die Aufhebung oder \u00c4nderung der Steuerfestsetzung jederzeit beantragen. Die Entscheidung hier\u00fcber kann jedoch bis zur abschlie\u00dfenden Pr\u00fcfung des Steuerfalls, die innerhalb angemessener Frist vorzunehmen ist, hinausgeschoben werden.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-164",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__164.html",
+      "raw": "sources/ao-164.html",
+      "raw_sha256": "d7a2d7c6e3aff32ba8ae76a4e8791db643056d73b7ed67fd93bf6acf1e92dc5f",
+      "reader": "sources/ao-164.reader.txt",
+      "reader_sha256": "43c763c554932d66ddbbd717f7b51e1b7430bbeab934196fc7c2b4d2838ee69e",
+      "paragraph_count": 5,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 28,
+    "source": {
+      "id": "VALID",
+      "source": "ao-124",
+      "act_article": "ao-124",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__124.html",
+      "reader": "sources/ao-124.reader.txt",
+      "reader_sha256": "fb2374d6e2cdd910f99f60347c394639162e9b9eacf7e314219701c02be44685",
+      "raw_sha256": "37e4a374b64d32a2f4b42d3ddd72e36b5cbe3755a7741bf8a7a481b7b1ac2234",
+      "native_LF": [
+        2,
+        2
+      ],
+      "exact_quote": "(2) Ein Verwaltungsakt bleibt wirksam, solange und soweit er nicht zur\u00fcckgenommen, widerrufen, anderweitig aufgehoben oder durch Zeitablauf oder auf andere Weise erledigt ist.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-124",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__124.html",
+      "raw": "sources/ao-124.html",
+      "raw_sha256": "37e4a374b64d32a2f4b42d3ddd72e36b5cbe3755a7741bf8a7a481b7b1ac2234",
+      "reader": "sources/ao-124.reader.txt",
+      "reader_sha256": "fb2374d6e2cdd910f99f60347c394639162e9b9eacf7e314219701c02be44685",
+      "paragraph_count": 3,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 29,
+    "source": {
+      "id": "REGISTER",
+      "source": "ao-138",
+      "act_article": "ao-138",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__138.html",
+      "reader": "sources/ao-138.reader.txt",
+      "reader_sha256": "e8cf5cf24aec1db4afa201e68cd307425289a89c3cef798cec592f20c45d1838",
+      "raw_sha256": "843b5720d9bc7f89ef230b4779c3b23c43e2ded3c0f3bb36036d606086787987",
+      "native_LF": [
+        3,
+        3
+      ],
+      "exact_quote": "(1b) Sofern Steuerpflichtige gem\u00e4\u00df Absatz 1 Satz 1 bis 3 verpflichtet sind, eine Betriebser\u00f6ffnung oder Aufnahme einer freiberuflichen T\u00e4tigkeit mitzuteilen, haben sie dem in Absatz 1 bezeichneten Finanzamt weitere Ausk\u00fcnfte \u00fcber die f\u00fcr die Besteuerung erheblichen rechtlichen und tats\u00e4chlichen Verh\u00e4ltnisse zu erteilen. Die Ausk\u00fcnfte im Sinne des Satzes 1 sind nach amtlich vorgeschriebenem Datensatz \u00fcber die amtlich bestimmte Schnittstelle zu \u00fcbermitteln. Auf Antrag kann das Finanzamt zur Vermeidung unbilliger H\u00e4rten auf eine \u00dcbermittlung gem\u00e4\u00df Satz 2 verzichten; in diesem Fall sind die Ausk\u00fcnfte im Sinne des Satzes 1 nach amtlich vorgeschriebenem Vordruck zu erteilen. Die S\u00e4tze 1 bis 3 gelten entsprechend f\u00fcr Steuerpflichtige im Sinne des \u00a7 137, die nicht nach Absatz 1 zur Anzeige verpflichtet sind.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-138",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__138.html",
+      "raw": "sources/ao-138.html",
+      "raw_sha256": "843b5720d9bc7f89ef230b4779c3b23c43e2ded3c0f3bb36036d606086787987",
+      "reader": "sources/ao-138.reader.txt",
+      "reader_sha256": "e8cf5cf24aec1db4afa201e68cd307425289a89c3cef798cec592f20c45d1838",
+      "paragraph_count": 9,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 79,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 30,
+    "source": {
+      "id": "REGISTER_MONTH",
+      "source": "ao-138",
+      "act_article": "ao-138",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__138.html",
+      "reader": "sources/ao-138.reader.txt",
+      "reader_sha256": "e8cf5cf24aec1db4afa201e68cd307425289a89c3cef798cec592f20c45d1838",
+      "raw_sha256": "843b5720d9bc7f89ef230b4779c3b23c43e2ded3c0f3bb36036d606086787987",
+      "native_LF": [
+        7,
+        7
+      ],
+      "exact_quote": "(4) Mitteilungen nach den Abs\u00e4tzen 1, 1a und 1b sind innerhalb eines Monats nach dem meldepflichtigen Ereignis zu erstatten.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-138",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__138.html",
+      "raw": "sources/ao-138.html",
+      "raw_sha256": "843b5720d9bc7f89ef230b4779c3b23c43e2ded3c0f3bb36036d606086787987",
+      "reader": "sources/ao-138.reader.txt",
+      "reader_sha256": "e8cf5cf24aec1db4afa201e68cd307425289a89c3cef798cec592f20c45d1838",
+      "paragraph_count": 9,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 80,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 31,
+    "source": {
+      "id": "LATE",
+      "source": "ao-240",
+      "act_article": "ao-240",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "reader": "sources/ao-240.reader.txt",
+      "reader_sha256": "de5abf16cae7369f1c3ce79fd9dc06628e2f09f617e635eae23721672949edb6",
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "native_LF": [
+        1,
+        1
+      ],
+      "exact_quote": "(1) Wird eine Steuer nicht bis zum Ablauf des F\u00e4lligkeitstages entrichtet, so ist f\u00fcr jeden angefangenen Monat der S\u00e4umnis ein S\u00e4umniszuschlag von 1 Prozent des abgerundeten r\u00fcckst\u00e4ndigen Steuerbetrags zu entrichten; abzurunden ist auf den n\u00e4chsten durch 50 Euro teilbaren Betrag. Das Gleiche gilt f\u00fcr zur\u00fcckzuzahlende Steuerverg\u00fctungen und Haftungsschulden, soweit sich die Haftung auf Steuern und zur\u00fcckzuzahlende Steuerverg\u00fctungen erstreckt. Die S\u00e4umnis nach Satz 1 tritt nicht ein, bevor die Steuer festgesetzt oder angemeldet worden ist. Wird die Festsetzung einer Steuer oder Steuerverg\u00fctung aufgehoben, ge\u00e4ndert oder nach \u00a7 129 berichtigt, so bleiben die bis dahin verwirkten S\u00e4umniszuschl\u00e4ge unber\u00fchrt; das Gleiche gilt, wenn ein Haftungsbescheid zur\u00fcckgenommen, widerrufen oder nach \u00a7 129 berichtigt wird. Erlischt der Anspruch durch Aufrechnung, bleiben S\u00e4umniszuschl\u00e4ge unber\u00fchrt, die bis zur F\u00e4lligkeit der Schuld des Aufrechnenden entstanden sind.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-240",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "raw": "sources/ao-240.html",
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "reader": "sources/ao-240.reader.txt",
+      "reader_sha256": "de5abf16cae7369f1c3ce79fd9dc06628e2f09f617e635eae23721672949edb6",
+      "paragraph_count": 5,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 27,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 32,
+    "source": {
+      "id": "LATE_ANCILLARY",
+      "source": "ao-240",
+      "act_article": "ao-240",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "reader": "sources/ao-240.reader.txt",
+      "reader_sha256": "de5abf16cae7369f1c3ce79fd9dc06628e2f09f617e635eae23721672949edb6",
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "native_LF": [
+        2,
+        2
+      ],
+      "exact_quote": "(2) S\u00e4umniszuschl\u00e4ge entstehen nicht bei steuerlichen Nebenleistungen.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-240",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "raw": "sources/ao-240.html",
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "reader": "sources/ao-240.reader.txt",
+      "reader_sha256": "de5abf16cae7369f1c3ce79fd9dc06628e2f09f617e635eae23721672949edb6",
+      "paragraph_count": 5,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 33,
+    "source": {
+      "id": "GRACE",
+      "source": "ao-240",
+      "act_article": "ao-240",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "reader": "sources/ao-240.reader.txt",
+      "reader_sha256": "de5abf16cae7369f1c3ce79fd9dc06628e2f09f617e635eae23721672949edb6",
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "native_LF": [
+        3,
+        3
+      ],
+      "exact_quote": "(3) Ein S\u00e4umniszuschlag wird bei einer S\u00e4umnis bis zu drei Tagen nicht erhoben. Dies gilt nicht bei Zahlung nach \u00a7 224 Absatz 2 Nummer 1.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-240",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "raw": "sources/ao-240.html",
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "reader": "sources/ao-240.reader.txt",
+      "reader_sha256": "de5abf16cae7369f1c3ce79fd9dc06628e2f09f617e635eae23721672949edb6",
+      "paragraph_count": 5,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-corporate-tax",
+      "quote_row": 61,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 34,
+    "source": {
+      "id": "INTEREST_SCOPE",
+      "source": "ao-233a",
+      "act_article": "ao-233a",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "reader": "sources/ao-233a.reader.txt",
+      "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "native_LF": [
+        1,
+        1
+      ],
+      "exact_quote": "(1) F\u00fchrt die Festsetzung der Einkommen-, K\u00f6rperschaft-, Verm\u00f6gen-, Umsatz- oder Gewerbesteuer zu einem Unterschiedsbetrag im Sinne des Absatzes 3, ist dieser zu verzinsen. Dies gilt nicht f\u00fcr die Festsetzung von Vorauszahlungen und Steuerabzugsbetr\u00e4gen.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-233a",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "raw": "sources/ao-233a.html",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader": "sources/ao-233a.reader.txt",
+      "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+      "paragraph_count": 10,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 21,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 35,
+    "source": {
+      "id": "INTEREST_PERIOD",
+      "source": "ao-233a",
+      "act_article": "ao-233a",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "reader": "sources/ao-233a.reader.txt",
+      "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "native_LF": [
+        2,
+        2
+      ],
+      "exact_quote": "(2) Der Zinslauf beginnt 15 Monate nach Ablauf des Kalenderjahrs, in dem die Steuer entstanden ist. Er beginnt f\u00fcr die Einkommen- und K\u00f6rperschaftsteuer 23 Monate nach diesem Zeitpunkt, wenn die Eink\u00fcnfte aus Land- und Forstwirtschaft bei der erstmaligen Steuerfestsetzung die anderen Eink\u00fcnfte \u00fcberwiegen; hierbei sind Kapitalertr\u00e4ge nach \u00a7 32d Absatz 1 und \u00a7 43 Absatz 5 des Einkommensteuergesetzes nicht zu ber\u00fccksichtigen. Er endet mit Ablauf des Tages, an dem die Steuerfestsetzung wirksam wird.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-233a",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "raw": "sources/ao-233a.html",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader": "sources/ao-233a.reader.txt",
+      "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+      "paragraph_count": 10,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 22,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 36,
+    "source": {
+      "id": "INTEREST_BASE",
+      "source": "ao-233a",
+      "act_article": "ao-233a",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "reader": "sources/ao-233a.reader.txt",
+      "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "native_LF": [
+        4,
+        4
+      ],
+      "exact_quote": "(3) Ma\u00dfgebend f\u00fcr die Zinsberechnung ist die festgesetzte Steuer, vermindert um die anzurechnenden Steuerabzugsbetr\u00e4ge, um die anzurechnende K\u00f6rperschaftsteuer und um die bis zum Beginn des Zinslaufs festgesetzten Vorauszahlungen (Unterschiedsbetrag). Bei der Verm\u00f6gensteuer ist als Unterschiedsbetrag f\u00fcr die Zinsberechnung die festgesetzte Steuer, vermindert um die festgesetzten Vorauszahlungen oder die bisher festgesetzte Jahressteuer, ma\u00dfgebend. Ein Unterschiedsbetrag zugunsten des Steuerpflichtigen ist nur bis zur H\u00f6he des zu erstattenden Betrags zu verzinsen; die Verzinsung beginnt fr\u00fchestens mit dem Tag der Zahlung. Besteht der Erstattungsbetrag aus mehreren Teil-Leistungen, richtet sich der Zinsberechnungszeitraum jeweils nach dem Zeitpunkt der einzelnen Leistung; die Leistungen sind in chronologischer Reihenfolge zu ber\u00fccksichtigen, beginnend mit der j\u00fcngsten Leistung.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-233a",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "raw": "sources/ao-233a.html",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader": "sources/ao-233a.reader.txt",
+      "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+      "paragraph_count": 10,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 23,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 37,
+    "source": {
+      "id": "VOLUNTARY",
+      "source": "ao-233a",
+      "act_article": "ao-233a",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "reader": "sources/ao-233a.reader.txt",
+      "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "native_LF": [
+        9,
+        9
+      ],
+      "exact_quote": "(8) Zinsen auf einen Unterschiedsbetrag zuungunsten des Steuerpflichtigen (Nachzahlungszinsen) sind entweder nicht festzusetzen oder zu erlassen, soweit Zahlungen oder andere Leistungen auf eine sp\u00e4ter wirksam gewordene Steuerfestsetzung erbracht wurden, die Finanzbeh\u00f6rde diese Leistungen angenommen und auf die festgesetzte und zu entrichtende Steuer angerechnet hat. Absatz 3 Satz 4 ist hierbei entsprechend anzuwenden. Soweit Nachzahlungszinsen aufgrund einer Aufhebung, \u00c4nderung oder Berichtigung der Steuerfestsetzung nach Absatz 5 Satz 3 zweiter Halbsatz entfallen, mindert sich der Zinsverzicht nach Satz 1 entsprechend. Die \u00a7\u00a7 163 und 227 bleiben unber\u00fchrt.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-233a",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "raw": "sources/ao-233a.html",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader": "sources/ao-233a.reader.txt",
+      "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+      "paragraph_count": 10,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 38,
+    "source": {
+      "id": "INTEREST_RATE",
+      "source": "ao-238",
+      "act_article": "ao-238",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "reader": "sources/ao-238.reader.txt",
+      "reader_sha256": "b498560da681c999714264f8e70d8e691a277da18f088ddfb51316b8bb61e908",
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "native_LF": [
+        2,
+        2
+      ],
+      "exact_quote": "(1a) In den F\u00e4llen des \u00a7 233a betragen die Zinsen abweichend von Absatz 1 Satz 1 ab dem 1. Januar 2019 0,15 Prozent f\u00fcr jeden Monat, das hei\u00dft 1,8 Prozent f\u00fcr jedes Jahr.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-238",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "raw": "sources/ao-238.html",
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "reader": "sources/ao-238.reader.txt",
+      "reader_sha256": "b498560da681c999714264f8e70d8e691a277da18f088ddfb51316b8bb61e908",
+      "paragraph_count": 6,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 25,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 39,
+    "source": {
+      "id": "FULL_MONTH",
+      "source": "ao-238",
+      "act_article": "ao-238",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "reader": "sources/ao-238.reader.txt",
+      "reader_sha256": "b498560da681c999714264f8e70d8e691a277da18f088ddfb51316b8bb61e908",
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "native_LF": [
+        1,
+        1
+      ],
+      "exact_quote": "(1) Die Zinsen betragen f\u00fcr jeden Monat einhalb Prozent. Sie sind von dem Tag an, an dem der Zinslauf beginnt, nur f\u00fcr volle Monate zu zahlen; angefangene Monate bleiben au\u00dfer Ansatz. Erlischt der zu verzinsende Anspruch durch Aufrechnung, gilt der Tag, an dem die Schuld des Aufrechnenden f\u00e4llig wird, als Tag der Zahlung.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-238",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "raw": "sources/ao-238.html",
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "reader": "sources/ao-238.reader.txt",
+      "reader_sha256": "b498560da681c999714264f8e70d8e691a277da18f088ddfb51316b8bb61e908",
+      "paragraph_count": 6,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 24,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 40,
+    "source": {
+      "id": "ROUND",
+      "source": "ao-238",
+      "act_article": "ao-238",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "reader": "sources/ao-238.reader.txt",
+      "reader_sha256": "b498560da681c999714264f8e70d8e691a277da18f088ddfb51316b8bb61e908",
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "native_LF": [
+        5,
+        5
+      ],
+      "exact_quote": "(2) F\u00fcr die Berechnung der Zinsen wird der zu verzinsende Betrag jeder Steuerart auf den n\u00e4chsten durch 50 Euro teilbaren Betrag abgerundet.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-238",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "raw": "sources/ao-238.html",
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "reader": "sources/ao-238.reader.txt",
+      "reader_sha256": "b498560da681c999714264f8e70d8e691a277da18f088ddfb51316b8bb61e908",
+      "paragraph_count": 6,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 26,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 41,
+    "source": {
+      "id": "HIST_2019",
+      "source": "egao-97-36",
+      "act_article": "egao-97-36",
+      "url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html",
+      "reader": "sources/egao-97-36.reader.txt",
+      "reader_sha256": "33675804855e15b5ce79c16826df9dbd4f7392841e458dda172ad4f9e38f28a4",
+      "raw_sha256": "473093a055687b4f1080906450a53bfa4454856afe4a25599e1907757d5436bc",
+      "native_LF": [
+        2,
+        2
+      ],
+      "exact_quote": "(2) Abweichend von \u00a7 233a Absatz 2 Satz 1 der Abgabenordnung in der am 19. Februar 2021 geltenden Fassung beginnt der Zinslauf f\u00fcr den Besteuerungszeitraum 2019 am 1. Oktober 2021. In den F\u00e4llen des \u00a7 233a Absatz 2 Satz 2 der Abgabenordnung in der am 19. Februar 2021 geltenden Fassung beginnt der Zinslauf f\u00fcr den Besteuerungszeitraum 2019 am 1. Mai 2022.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "egao-97-36",
+      "url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html",
+      "raw": "sources/egao-97-36.html",
+      "raw_sha256": "473093a055687b4f1080906450a53bfa4454856afe4a25599e1907757d5436bc",
+      "reader": "sources/egao-97-36.reader.txt",
+      "reader_sha256": "33675804855e15b5ce79c16826df9dbd4f7392841e458dda172ad4f9e38f28a4",
+      "acquisition": "retained cached source body; actual reading recorded separately",
+      "extraction": "operative jurAbsatz/entities, whitespace normalized only in derived reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 42,
+    "source": {
+      "id": "HIST_2020_2024",
+      "source": "egao-97-36",
+      "act_article": "egao-97-36",
+      "url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html",
+      "reader": "sources/egao-97-36.reader.txt",
+      "reader_sha256": "33675804855e15b5ce79c16826df9dbd4f7392841e458dda172ad4f9e38f28a4",
+      "raw_sha256": "473093a055687b4f1080906450a53bfa4454856afe4a25599e1907757d5436bc",
+      "native_LF": [
+        3,
+        3
+      ],
+      "exact_quote": "(3) F\u00fcr die Besteuerungszeitr\u00e4ume 2020 bis 2024 sind die \u00a7\u00a7 109, 149, 152 und 233a der Abgabenordnung in der am 23. Juni 2022 geltenden Fassung mit folgenden Ma\u00dfgaben anzuwenden: 1. In \u00a7 109 Absatz 2 Satz 1 Nummer 1 und \u00a7 149 Absatz 3 und 4 Satz 1 und 3 der Abgabenordnung tritt jeweils an die Stelle des letzten Tags des Monats Februar des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres a) f\u00fcr den Besteuerungszeitraum 2020 der 31. August 2022, b) f\u00fcr den Besteuerungszeitraum 2021 der 31. August 2023, c) f\u00fcr den Besteuerungszeitraum 2022 der 31. Juli 2024, d) f\u00fcr den Besteuerungszeitraum 2023 der 31. Mai 2025 und e) f\u00fcr den Besteuerungszeitraum 2024 der 30. April 2026. 2. In \u00a7 109 Absatz 2 Satz 2 und \u00a7 149 Absatz 3 und 4 Satz 5 der Abgabenordnung tritt jeweils an die Stelle des 31. Juli des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres a) f\u00fcr den Besteuerungszeitraum 2020 der 31. Januar 2023, b) f\u00fcr den Besteuerungszeitraum 2021 der 31. Januar 2024, c) f\u00fcr den Besteuerungszeitraum 2022 der 31. Dezember 2024, d) f\u00fcr den Besteuerungszeitraum 2023 der 31. Oktober 2025 und e) f\u00fcr den Besteuerungszeitraum 2024 der 30. September 2026. 3. In \u00a7 149 Absatz 2 Satz 1 der Abgabenordnung tritt an die Stelle der Angabe \u201esieben Monate\u201c a) f\u00fcr die Besteuerungszeitr\u00e4ume 2020 und 2021 die Angabe \u201ezehn Monate\u201c, b) f\u00fcr den Besteuerungszeitraum 2022 die Angabe \u201eneun Monate\u201c und c) f\u00fcr den Besteuerungszeitraum 2023 die Angabe \u201eacht Monate\u201c. 4. In \u00a7 149 Absatz 2 Satz 2 der Abgabenordnung tritt an die Stelle der Angabe \u201edes siebten Monats\u201c a) f\u00fcr die Besteuerungszeitr\u00e4ume 2020 und 2021 die Angabe \u201edes zehnten Monats\u201c, b) f\u00fcr den Besteuerungszeitraum 2022 die Angabe \u201edes neunten Monats\u201c und c) f\u00fcr den Besteuerungszeitraum 2023 die Angabe \u201edes achten Monats\u201c. 5. In \u00a7 152 Absatz 2 Nummer 1 der Abgabenordnung tritt an die Stelle der Angabe \u201e14 Monaten\u201c a) f\u00fcr die Besteuerungszeitr\u00e4ume 2020 und 2021 die Angabe \u201e20 Monaten\u201c, b) f\u00fcr den Besteuerungszeitraum 2022 die Angabe \u201e19 Monaten\u201c, c) f\u00fcr den Besteuerungszeitraum 2023 die Angabe \u201e17 Monaten\u201c und d) f\u00fcr den Besteuerungszeitraum 2024 die Angabe \u201e16 Monaten\u201c. 6. In \u00a7 152 Absatz 2 Nummer 2 der Abgabenordnung tritt an die Stelle der Angabe \u201e19 Monaten\u201c a) f\u00fcr die Besteuerungszeitr\u00e4ume 2020 und 2021 die Angabe \u201e25 Monaten\u201c, b) f\u00fcr den Besteuerungszeitraum 2022 die Angabe \u201e24 Monaten\u201c, c) f\u00fcr den Besteuerungszeitraum 2023 die Angabe \u201e22 Monaten\u201c und d) f\u00fcr den Besteuerungszeitraum 2024 die Angabe \u201e21 Monaten\u201c. 7. In \u00a7 233a Absatz 2 Satz 1 der Abgabenordnung tritt an die Stelle der Angabe \u201e15 Monate\u201c a) f\u00fcr die Besteuerungszeitr\u00e4ume 2020 und 2021 die Angabe \u201e21 Monate\u201c, b) f\u00fcr den Besteuerungszeitraum 2022 die Angabe \u201e20 Monate\u201c, c) f\u00fcr den Besteuerungszeitraum 2023 die Angabe \u201e18 Monate\u201c und d) f\u00fcr den Besteuerungszeitraum 2024 die Angabe \u201e17 Monate\u201c. 8. In \u00a7 233a Absatz 2 Satz 2 der Abgabenordnung tritt an die Stelle der Angabe \u201e23 Monate\u201c a) f\u00fcr die Besteuerungszeitr\u00e4ume 2020 und 2021 die Angabe \u201e29 Monate\u201c, b) f\u00fcr den Besteuerungszeitraum 2022 die Angabe \u201e28 Monate\u201c, c) f\u00fcr den Besteuerungszeitraum 2023 die Angabe \u201e26 Monate\u201c und d) f\u00fcr den Besteuerungszeitraum 2024 die Angabe \u201e25 Monate\u201c.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "egao-97-36",
+      "url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html",
+      "raw": "sources/egao-97-36.html",
+      "raw_sha256": "473093a055687b4f1080906450a53bfa4454856afe4a25599e1907757d5436bc",
+      "reader": "sources/egao-97-36.reader.txt",
+      "reader_sha256": "33675804855e15b5ce79c16826df9dbd4f7392841e458dda172ad4f9e38f28a4",
+      "acquisition": "retained cached source body; actual reading recorded separately",
+      "extraction": "operative jurAbsatz/entities, whitespace normalized only in derived reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 43,
+    "source": {
+      "id": "OLD_ADJUST",
+      "source": "estg-52",
+      "act_article": "estg-52",
+      "url": "https://www.gesetze-im-internet.de/estg/__52.html",
+      "reader": "sources/estg-52.reader.txt",
+      "reader_sha256": "1a03d9af193ec9637744ad730f30cf0fd7964ee9a3f00d79b6904010745a0b7b",
+      "raw_sha256": "bec6241b5340b28eb111acc63168aaa37356253f714334f69786379dd8edbfd5",
+      "native_LF": [
+        64,
+        64
+      ],
+      "exact_quote": "(35d) \u00a7 37 Absatz 3 Satz 3 ist auf Antrag des Steuerpflichtigen mit der Ma\u00dfgabe anzuwenden, dass 1. f\u00fcr den Veranlagungszeitraum 2019 an die Stelle des 15. Kalendermonats der 21. Kalendermonat und an die Stelle des 23. Kalendermonats der 28. Kalendermonat, 2. f\u00fcr die Veranlagungszeitr\u00e4ume 2020 und 2021 an die Stelle des 15. Kalendermonats der 21. Kalendermonat und an die Stelle des 23. Kalendermonats der 29. Kalendermonat, 3. f\u00fcr den Veranlagungszeitraum 2022 an die Stelle des 15. Kalendermonats der 20. Kalendermonat und an die Stelle des 23. Kalendermonats der 28. Kalendermonat, 4. f\u00fcr den Veranlagungszeitraum 2023 an die Stelle des 15. Kalendermonats der 18. Kalendermonat und an die Stelle des 23. Kalendermonats der 26. Kalendermonat und 5. f\u00fcr den Veranlagungszeitraum 2024 an die Stelle des 15. Kalendermonats der 17. Kalendermonat und an die Stelle des 23. Kalendermonats der 25. Kalendermonattritt.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-52",
+      "url": "https://www.gesetze-im-internet.de/estg/__52.html",
+      "raw": "sources/estg-52.html",
+      "raw_sha256": "bec6241b5340b28eb111acc63168aaa37356253f714334f69786379dd8edbfd5",
+      "reader": "sources/estg-52.reader.txt",
+      "reader_sha256": "1a03d9af193ec9637744ad730f30cf0fd7964ee9a3f00d79b6904010745a0b7b",
+      "paragraph_count": 100,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 44,
+    "source": {
+      "id": "FALSE",
+      "source": "ao-370",
+      "act_article": "ao-370",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__370.html",
+      "reader": "sources/ao-370.reader.txt",
+      "reader_sha256": "7d674859807e5233b7b0fd3fed683b2a7270223555628b3ff4f89e3375eb426f",
+      "raw_sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+      "native_LF": [
+        1,
+        1
+      ],
+      "exact_quote": "(1) Mit Freiheitsstrafe bis zu f\u00fcnf Jahren oder mit Geldstrafe wird bestraft, wer 1. den Finanzbeh\u00f6rden oder anderen Beh\u00f6rden \u00fcber steuerlich erhebliche Tatsachen unrichtige oder unvollst\u00e4ndige Angaben macht, 2. die Finanzbeh\u00f6rden pflichtwidrig \u00fcber steuerlich erhebliche Tatsachen in Unkenntnis l\u00e4sst oder 3. pflichtwidrig die Verwendung von Steuerzeichen oder Steuerstemplern unterl\u00e4sstund dadurch Steuern verk\u00fcrzt oder f\u00fcr sich oder einen anderen nicht gerechtfertigte Steuervorteile erlangt.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-370",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__370.html",
+      "raw": "sources/ao-370.html",
+      "raw_sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+      "reader": "sources/ao-370.reader.txt",
+      "reader_sha256": "7d674859807e5233b7b0fd3fed683b2a7270223555628b3ff4f89e3375eb426f",
+      "paragraph_count": 7,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 45,
+    "source": {
+      "id": "ATTEMPT",
+      "source": "ao-370",
+      "act_article": "ao-370",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__370.html",
+      "reader": "sources/ao-370.reader.txt",
+      "reader_sha256": "7d674859807e5233b7b0fd3fed683b2a7270223555628b3ff4f89e3375eb426f",
+      "raw_sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+      "native_LF": [
+        2,
+        2
+      ],
+      "exact_quote": "(2) Der Versuch ist strafbar.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-370",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__370.html",
+      "raw": "sources/ao-370.html",
+      "raw_sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+      "reader": "sources/ao-370.reader.txt",
+      "reader_sha256": "7d674859807e5233b7b0fd3fed683b2a7270223555628b3ff4f89e3375eb426f",
+      "paragraph_count": 7,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 46,
+    "source": {
+      "id": "DEFERRAL",
+      "source": "ao-222",
+      "act_article": "ao-222",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__222.html",
+      "reader": "sources/ao-222.reader.txt",
+      "reader_sha256": "0027a626de01e00a7fd8d0e082f7fa2b5cf325281247ebaa5879feb0b474398e",
+      "raw_sha256": "8fb40b4ba01fe464f7bad592659de781e924468510f4fe633daff5cf97aa9be6",
+      "native_LF": [
+        1,
+        1
+      ],
+      "exact_quote": "Die Finanzbeh\u00f6rden k\u00f6nnen Anspr\u00fcche aus dem Steuerschuldverh\u00e4ltnis ganz oder teilweise stunden, wenn die Einziehung bei F\u00e4lligkeit eine erhebliche H\u00e4rte f\u00fcr den Schuldner bedeuten w\u00fcrde und der Anspruch durch die Stundung nicht gef\u00e4hrdet erscheint. Die Stundung soll in der Regel nur auf Antrag und gegen Sicherheitsleistung gew\u00e4hrt werden. Steueranspr\u00fcche gegen den Steuerschuldner k\u00f6nnen nicht gestundet werden, soweit ein Dritter (Entrichtungspflichtiger) die Steuer f\u00fcr Rechnung des Steuerschuldners zu entrichten, insbesondere einzubehalten und abzuf\u00fchren hat. Die Stundung des Haftungsanspruchs gegen den Entrichtungspflichtigen ist ausgeschlossen, soweit er Steuerabzugsbetr\u00e4ge einbehalten oder Betr\u00e4ge, die eine Steuer enthalten, eingenommen hat.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-222",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__222.html",
+      "raw": "sources/ao-222.html",
+      "raw_sha256": "8fb40b4ba01fe464f7bad592659de781e924468510f4fe633daff5cf97aa9be6",
+      "reader": "sources/ao-222.reader.txt",
+      "reader_sha256": "0027a626de01e00a7fd8d0e082f7fa2b5cf325281247ebaa5879feb0b474398e",
+      "paragraph_count": 1,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 47,
+    "source": {
+      "id": "DEF_INTEREST",
+      "source": "ao-234",
+      "act_article": "ao-234",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__234.html",
+      "reader": "sources/ao-234.reader.txt",
+      "reader_sha256": "b7ca17a8f1e07e0a61e04a0ca9cdaf3bef6f082622afaf93844218a7afdf89ce",
+      "raw_sha256": "9e5bb5fe1311894b46b3490d9070453c493eb467763e34bd9dc641f40bbaf1c8",
+      "native_LF": [
+        1,
+        1
+      ],
+      "exact_quote": "(1) F\u00fcr die Dauer einer gew\u00e4hrten Stundung von Anspr\u00fcchen aus dem Steuerschuldverh\u00e4ltnis werden Zinsen erhoben; f\u00fcr Haftungsanspr\u00fcche gilt dies nur, soweit sich die Haftung auf Steuern und zur\u00fcckzuzahlende Steuerverg\u00fctungen erstreckt. Wird der Steuer- oder Haftungsbescheid nach Ablauf der Stundung aufgehoben, ge\u00e4ndert oder nach \u00a7 129 berichtigt, so bleiben die bis dahin entstandenen Zinsen unber\u00fchrt.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-234",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__234.html",
+      "raw": "sources/ao-234.html",
+      "raw_sha256": "9e5bb5fe1311894b46b3490d9070453c493eb467763e34bd9dc641f40bbaf1c8",
+      "reader": "sources/ao-234.reader.txt",
+      "reader_sha256": "b7ca17a8f1e07e0a61e04a0ca9cdaf3bef6f082622afaf93844218a7afdf89ce",
+      "paragraph_count": 4,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 48,
+    "source": {
+      "id": "DEF_CREDIT",
+      "source": "ao-234",
+      "act_article": "ao-234",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__234.html",
+      "reader": "sources/ao-234.reader.txt",
+      "reader_sha256": "b7ca17a8f1e07e0a61e04a0ca9cdaf3bef6f082622afaf93844218a7afdf89ce",
+      "raw_sha256": "9e5bb5fe1311894b46b3490d9070453c493eb467763e34bd9dc641f40bbaf1c8",
+      "native_LF": [
+        3,
+        3
+      ],
+      "exact_quote": "(3) Zinsen nach \u00a7 233a, die f\u00fcr denselben Zeitraum festgesetzt wurden, sind anzurechnen.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "ao-234",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__234.html",
+      "raw": "sources/ao-234.html",
+      "raw_sha256": "9e5bb5fe1311894b46b3490d9070453c493eb467763e34bd9dc641f40bbaf1c8",
+      "reader": "sources/ao-234.reader.txt",
+      "reader_sha256": "b7ca17a8f1e07e0a61e04a0ca9cdaf3bef6f082622afaf93844218a7afdf89ce",
+      "paragraph_count": 4,
+      "acquisition": "prior cached body; mechanical locator/hash verified; actual reading recorded separately",
+      "extraction": "Exact raw HTML retained; operative jurAbsatz text/entities decoded, whitespace normalized only in reader"
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 49,
+    "source": {
+      "id": "PERSON",
+      "source": "estg-1",
+      "act_article": "estg-1",
+      "url": "https://www.gesetze-im-internet.de/estg/__1.html",
+      "reader": "sources/estg-1.reader.txt",
+      "reader_sha256": "de759e13cf094ca682c262e335d66fc24cd924de04499b73810aa81116e1206d",
+      "raw_sha256": "aa3116bd65c47709867eaba213a4f5a482aabe7075b4e0ae7b31fb8f2830d6ca",
+      "native_LF": [
+        1,
+        1
+      ],
+      "exact_quote": "Nat\u00fcrliche Personen, die im Inland einen Wohnsitz oder ihren gew\u00f6hnlichen Aufenthalt haben, sind unbeschr\u00e4nkt einkommensteuerpflichtig.",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-1",
+      "url": "https://www.gesetze-im-internet.de/estg/__1.html",
+      "raw": "sources/estg-1.html",
+      "raw_sha256": "aa3116bd65c47709867eaba213a4f5a482aabe7075b4e0ae7b31fb8f2830d6ca",
+      "reader": "sources/estg-1.reader.txt",
+      "reader_sha256": "de759e13cf094ca682c262e335d66fc24cd924de04499b73810aa81116e1206d",
+      "extraction": "jurAbsatz/entities and whitespace normalized in derived reader only",
+      "acquisition": "prior retained official-body artifact; raw unchanged"
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 32,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 50,
+    "source": {
+      "id": "PARTNERS",
+      "source": "estg-15",
+      "act_article": "estg-15",
+      "url": "https://www.gesetze-im-internet.de/estg/__15.html",
+      "reader": "sources/estg-15.reader.txt",
+      "reader_sha256": "9831a4177d2a34a5d89e6f69b1dd9e8d04d4a63eb22621fe5ecda6f716882cfe",
+      "raw_sha256": "9c66144e9197fbf44d69007269443432cc8e67aa92b3c7fb1d2c732e3315cbb4",
+      "native_LF": [
+        1,
+        1
+      ],
+      "exact_quote": "die Gewinnanteile der Gesellschafter einer Offenen Handelsgesellschaft, einer Kommanditgesellschaft und einer anderen Gesellschaft, bei der der Gesellschafter als Unternehmer (Mitunternehmer) des Betriebs anzusehen ist,",
+      "read_on": "2026-10-29"
+    },
+    "identity": {
+      "id": "estg-15",
+      "url": "https://www.gesetze-im-internet.de/estg/__15.html",
+      "raw": "sources/estg-15.html",
+      "raw_sha256": "9c66144e9197fbf44d69007269443432cc8e67aa92b3c7fb1d2c732e3315cbb4",
+      "reader": "sources/estg-15.reader.txt",
+      "reader_sha256": "9831a4177d2a34a5d89e6f69b1dd9e8d04d4a63eb22621fe5ecda6f716882cfe",
+      "extraction": "jurAbsatz/entities and whitespace normalized in derived reader only",
+      "acquisition": "prior retained official-body artifact; raw unchanged"
+    },
+    "actual_read_bridge": {
+      "guide": "de-partners-and-part-year",
+      "quote_row": 35,
+      "scope": "Exact same raw/URL/complete selected quotation words with whitespace joining only; current paragraph-native membership independently checked. Not a source-wide reading or whole-rule PASS."
+    }
+  },
+  {
+    "row": 51,
+    "source": {
+      "id": "ELSTER",
+      "source": "live official webpage",
+      "act_article": "ELSTER published form name",
+      "url": "https://www.elster.de/eportal/formulare-leistungen/alleformulare/eingvorauszlg",
+      "exact_quote": "Antrag auf Anpassung von Vorauszahlungen",
+      "read_on": "2026-10-29",
+      "scope": "Actually opened rendered page title/heading. No authenticated form completion, version selection or source-body download asserted."
+    },
+    "pending_observation_read": true
+  },
+  {
+    "row": 52,
+    "source": {
+      "id": "MUNICIPAL",
+      "source": "live official webpage",
+      "act_article": "GewStG \u00a71",
+      "url": "https://www.gesetze-im-internet.de/gewstg/__1.html",
+      "exact_quote": "Die Gemeinden erheben eine Gewerbesteuer als Gemeindesteuer.",
+      "read_on": "2026-10-29",
+      "scope": "Actually opened official provision, exact displayed sentence; no new raw HTML acquisition claim."
+    },
+    "pending_observation_read": true
+  }
+]

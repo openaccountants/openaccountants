@@ -1,0 +1,105 @@
+{
+  "status": "Writer successor, independent review pending",
+  "artifacts": [
+    {
+      "path": "after/germany-to-switzerland-cross-border-tax.md",
+      "sha256": "796c662a90d1493b7b63a1bc83093175168016bfc5a5a7f312f8759471f838b5",
+      "bytes": 33849
+    },
+    {
+      "path": "before/germany-to-switzerland-cross-border-tax.md",
+      "sha256": "49bb497e26ed61b20ad31b474a7503f6eaae113e5a5c20dc7e0b0b604041a6d4",
+      "bytes": 28479
+    },
+    {
+      "path": "build-ledger.py",
+      "sha256": "eb42083a5675b8a2772b885fef6e5e532b0d1a5907e5b951c3d6be124be7d078",
+      "bytes": 8113
+    },
+    {
+      "path": "check-and-seal.py",
+      "sha256": "d402068bf6a14477086411728c5d502c3dec2d12ededce0eca797f35013f95b8",
+      "bytes": 11959
+    },
+    {
+      "path": "check-failure-history.md",
+      "sha256": "7f54f45a50881a5f8fcf8b2a3949d59a83022b2513656656afe876488f3d7abd",
+      "bytes": 472
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "747e5f3c67e7193d5759c2a8ad8c6c53823e90ffaa43e7aa3da0efd69992569a",
+      "bytes": 12862
+    },
+    {
+      "path": "historical-author.py",
+      "sha256": "b86161f558a002cd9ee4485200c36dc5875751b39f5db621004c69426331e0a5",
+      "bytes": 15625
+    },
+    {
+      "path": "ledgers/germany-to-switzerland-cross-border-tax.md",
+      "sha256": "e5bcb494932847ff0e36d63f35d35078e6c1de0717c3207baac9e6252e6024be",
+      "bytes": 185781
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "59dc0cac2426290f778e9beac30f9765c0ca4c03acd175f5a2e13fd5c279b492",
+      "bytes": 2601
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "05613eb51a9bf93412bf81c91c8eca8d005c2951d5efb9c3104f7ee6adf29340",
+      "bytes": 27067
+    },
+    {
+      "path": "preservation-proof.json",
+      "sha256": "559e3258c9b6891d027f329371f2127974a8da81227929c33c7a77c687a9259f",
+      "bytes": 549
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "65ced28f0ebb7ce71aa326cb52bfbe9eaf11baad0e7ede4748484dd1df030bd1",
+      "bytes": 163914
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "1b87e43a268ebe3c7481ed890ea4e8f6124315aee9785deea8242aa329a6650b",
+      "bytes": 100910
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "88dff161ec743bd1dcb33712d766718eedc8958a3da916dd29391d99fcdd4c51",
+      "bytes": 963
+    },
+    {
+      "path": "support/germany-to-switzerland-cross-border-tax/old-topic-destinations.json",
+      "sha256": "9393c5d7c54c11e2f9b4bfa906f62aae66ab7dfe67df45df3d09b448ef32edd7",
+      "bytes": 200025
+    },
+    {
+      "path": "support/germany-to-switzerland-cross-border-tax/rows.json",
+      "sha256": "7bf5677acad271767d6601c60fcd43f6dfdbf88786e7152d79d3bd61999e39c4",
+      "bytes": 99017
+    },
+    {
+      "path": "support/guide.diff",
+      "sha256": "1abd00043feced49c68861db8446adc747658535654cf21537c8fe4d0e56e387",
+      "bytes": 16856
+    },
+    {
+      "path": "support/line-map.json",
+      "sha256": "bb71077cedd58886711ec239c726a02200bac147e84140c806e6a448c5b026c8",
+      "bytes": 16711
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "1088d00c68a148b9559d89672ef339f5e1ea9ca811c4def3fb8cbcbe2ef53388",
+      "bytes": 26844
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "b2ed470d2c5eba5d11a046fddc271f408b84ff90422e205ac8a5ea9588005c20",
+      "bytes": 2832
+    }
+  ]
+}

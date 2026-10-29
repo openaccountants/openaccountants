@@ -1,0 +1,14 @@
+{
+  "root_selected": "Option A, explicit parent delegation2026-10-29; no concurrent root edits to sevenBGuides",
+  "before_sha256": "1f868882ad605e0f7342c5290329c32f491f614662ed685cf98c47a573f718ef",
+  "after_sha256": "c5c04619f56e19802ef8141885a11a4d3a555720bf8f95d2c988fd9aed84adb1",
+  "operations": 4,
+  "full_inverse_exact": true,
+  "original_oa_blocks": 2,
+  "oa_bytes_exact": true,
+  "old_URL_order_preserved": true,
+  "protected_metadata_exact": true,
+  "H2_order_exact": true,
+  "CTA_exact": true,
+  "writer_not_independent": true
+}

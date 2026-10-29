@@ -1,0 +1,21 @@
+{
+  "selected": "Option A for DE-B01 and DE-B02. Existing fund-exit source URL retained inline.",
+  "operations": [
+    {
+      "before": "**Funds and ETFs.** Fund income has three parts: distributions, the Vorabpauschale and the gain on sale ([§ 16 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__16.html)). The partial-income method never applies to funds. The Teilfreistellung makes a share tax-free: 30% for an equity fund (fund terms require over 50% of assets continuously in equities, [§ 2(6) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__2.html)), 15% for a mixed fund (at least 25%, § 2(7) InvStG; half the equity-fund rate), 60% for a property fund and 80% for a foreign property fund ([§ 20 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__20.html)). The same share of costs and losses is not deductible ([§ 21 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__21.html)). A fund that in fact stayed above the equity quota can get the share on proof in the return (§ 20(4) InvStG).",
+      "after": "**Funds and ETFs.** Fund income has three parts: distributions, the Vorabpauschale and the gain on sale ([§ 16 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__16.html)). The partial-income method never applies to funds. The Teilfreistellung makes a share tax-free: 30% for an equity fund (fund terms require over 50% of assets continuously in equities, [§ 2(6) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__2.html)), 15% for a mixed fund (at least 25%, § 2(7) InvStG; half the equity-fund rate), 60% for a property fund and 80% for a foreign property fund ([§ 20 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__20.html)). The same share of costs and losses is not deductible ([§ 21 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__21.html)). A fund that in fact stayed above the equity quota can get the share on proof in the return (§ 20(4) InvStG). A property fund must, under its investment terms, continuously invest more than 50% of its assets in property and property companies; for a foreign property fund, more than 50% must be in foreign property and foreign property companies. Apply the classification, exclusions and asset-value rules in [§ 2(9)–(9b) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__2.html)."
+    },
+    {
+      "before": "Fund units are caught at 1% of a fund or a cost of EUR 500,000 ([§ 19(3) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__19.html)).",
+      "after": "For private fund units, [§ 19(3) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__19.html) applies only if the aggregate taxable gains calculated under § 19(1), § 22 and § 56 are positive overall and the investor either held at least 1% of the fund’s issued units at some point in the preceding five years or holds units in that fund costing at least EUR 500,000 at the trigger date."
+    },
+    {
+      "before": "version: 1.2\n",
+      "after": "version: 1.3\n"
+    },
+    {
+      "before": "last_updated: 2026-10-27\n",
+      "after": "last_updated: 2026-10-29\n"
+    }
+  ]
+}

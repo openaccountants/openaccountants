@@ -1,0 +1,1260 @@
+{
+  "frozen_current_rows_actually_read": [
+    [
+      1,
+      45
+    ],
+    [
+      46,
+      83
+    ]
+  ],
+  "quotes_direct": 44,
+  "quotes_same_raw_exact_words_whitespace_only_bridge": 27,
+  "quotes": [
+    {
+      "row": 1,
+      "id": "CG.rate",
+      "article": "EStG32d(1)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__32d.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32d-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB002.txt",
+      "raw_sha256": "2e31697f9d0ec13e81ddac8ebe78237a46bef83054e577e8b57c8a45f30a06a7",
+      "reader_sha256": "8cc16e1ec4460eabab60ae8ddea900b95d35022860c4f88bd4ef3981fce3dfae",
+      "native_LF": [
+        7,
+        10
+      ],
+      "quote_sha256": "cf2c9594461f483fc4dbacf40823c6116f93baffe7f4010740a5e75567fd6ea4",
+      "actual_read_bridge": {
+        "guide": "de-non-resident-tax",
+        "quote_row": 51,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 2,
+      "id": "CG.large-threshold",
+      "article": "EStG17(1)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__17.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-17-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB003.txt",
+      "raw_sha256": "fe27f81e022dea91a42b345d41676df4f7f90b06f3f9207db44501034afcd55b",
+      "reader_sha256": "7bb0daec1aa36da5cdd8598cd60d6ad89291c220d134e8bf6d136786d8c274c4",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "c513dacb1ac168fbb51ec62bc56440cd7afcfce44175e0f967a740b6491b0934",
+      "actual_read_bridge": {
+        "guide": "leaving-germany-exit-tax",
+        "quote_row": 12,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 3,
+      "id": "CG.private1year",
+      "article": "EStG23(1)2",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__23.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-23-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB004.txt",
+      "raw_sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+      "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "native_LF": [
+        10,
+        10
+      ],
+      "quote_sha256": "950d21d55029550f1d1cb483403d2853cf74bfbffc464ea179a3f82d81e493e0",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 4,
+      "id": "CG.private10year-home",
+      "article": "EStG23(1)1",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__23.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-23-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB004.txt",
+      "raw_sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+      "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "native_LF": [
+        8,
+        8
+      ],
+      "quote_sha256": "a944a55f068b7c717707ce6abdee305751ac0366061d7720272bcb10a8edd513",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 5,
+      "id": "CG.fund-prepayment",
+      "article": "InvStG18",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__18.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-18-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB168.txt",
+      "raw_sha256": "6460797f0ff546a68e797a8c164fe9cefb5c70d676b56a0f82532390fbf748dd",
+      "reader_sha256": "49f3a51f8b128dc02b9c86a731652ff560002ee37605c410f329c40684b3ce87",
+      "native_LF": [
+        7,
+        10
+      ],
+      "quote_sha256": "0582b0f71fd52e07e6067c6335b49b8218143bfdcb2cfa51f077fc71329eb284",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 6,
+      "id": "CG.resident",
+      "article": "EStG1(1)sentence1",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__1.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/targeted-sources/estg-1-20261029.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB280.txt",
+      "raw_sha256": "aa3116bd65c47709867eaba213a4f5a482aabe7075b4e0ae7b31fb8f2830d6ca",
+      "reader_sha256": "c131d86c4bf7573c7ceb89484930ecd33f0df991d53b7f180bdd3640c66b9f18",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "08ea133385b4eda51b111fcb81e4ce15fe9eea7b39c0d1608439ae51d6af0a26",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 32,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 7,
+      "id": "CG.calendar",
+      "article": "EStG25(1)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__25.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uba73bdff2c6e289c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uba73bdff2c6e289c.reader.txt",
+      "raw_sha256": "e0d94cf6efeb8792dec0d855ec2a492964694a1d8b9af3945d0007455d0d8286",
+      "reader_sha256": "9d3c8d4b043a61e27df2f7fedfaa7ba9f1dc1efc49f3aa51f565e23a48bef29d",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "b5070ccb3a1df98e02f73c6be5b646e64086cefde71437e7439c171f511f128d",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 8,
+      "id": "CG.asset-income",
+      "article": "EStG20(2)1",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-20-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB001.txt",
+      "raw_sha256": "e77b03a7c6f4600978d136cbbf5b2e4b6b9f9699a521827bbd5f1941f6003b6c",
+      "reader_sha256": "53c639c844a9de7bc9e5031d44ad6059697666651d09993728cde069514d9989",
+      "native_LF": [
+        38,
+        39
+      ],
+      "quote_sha256": "1830a12aa48580cc9296a9d29bf3f41779b98adc0849315815fda191960032de",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 9,
+      "id": "CG.loss",
+      "article": "EStG20(6)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-20-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB001.txt",
+      "raw_sha256": "e77b03a7c6f4600978d136cbbf5b2e4b6b9f9699a521827bbd5f1941f6003b6c",
+      "reader_sha256": "53c639c844a9de7bc9e5031d44ad6059697666651d09993728cde069514d9989",
+      "native_LF": [
+        67,
+        67
+      ],
+      "quote_sha256": "869a14b840556e2ddad91053c9fdacb95ff6e7de97769ffc71126fa42f6dbb40",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 10,
+      "id": "CG.privategain-cliff",
+      "article": "EStG23(3)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__23.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-23-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB004.txt",
+      "raw_sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+      "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "native_LF": [
+        18,
+        18
+      ],
+      "quote_sha256": "bb4fca15fd4f5194333c745c4058e4c0a28aac654225bd5b79c7e9d27442a8cf",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 11,
+      "id": "CG.dividends",
+      "article": "EStG20(1)1",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-20-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB001.txt",
+      "raw_sha256": "e77b03a7c6f4600978d136cbbf5b2e4b6b9f9699a521827bbd5f1941f6003b6c",
+      "reader_sha256": "53c639c844a9de7bc9e5031d44ad6059697666651d09993728cde069514d9989",
+      "native_LF": [
+        7,
+        8
+      ],
+      "quote_sha256": "a1dc25dc37d86377474c2f6ebfaedfc3ec23bef93575b8f8e6fe13d80c549a93",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 12,
+      "id": "CG.interest",
+      "article": "EStG20(1)7",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-20-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB001.txt",
+      "raw_sha256": "e77b03a7c6f4600978d136cbbf5b2e4b6b9f9699a521827bbd5f1941f6003b6c",
+      "reader_sha256": "53c639c844a9de7bc9e5031d44ad6059697666651d09993728cde069514d9989",
+      "native_LF": [
+        25,
+        26
+      ],
+      "quote_sha256": "935da945c109f6a4de1ae6188344d9a119af5831cf6f7d852e6327e7d2cce605",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 13,
+      "id": "CG.partial40-scope",
+      "article": "EStG3no40(c)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__3.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-3-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB007.txt",
+      "raw_sha256": "85b9a2a8ff330e68a0df9f7e4e38d9dc515f1bce2635706bc14642de47c1c2b3",
+      "reader_sha256": "9be956cc7a2bab50aba6634347a5920b442fee7adcc3fe0e833928c6d5d849cc",
+      "native_LF": [
+        177,
+        177
+      ],
+      "quote_sha256": "1ea60bec874503c6e29d2e2b3b17eb7bb8b1567a38b2f9f55af5e886debc7c8a",
+      "actual_read_bridge": {
+        "guide": "leaving-germany-exit-tax",
+        "quote_row": 21,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 14,
+      "id": "CG.partial60",
+      "article": "EStG3c(2)sentence1",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__3c.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-3c-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB008.txt",
+      "raw_sha256": "bacf05969468e83a9a319cced4a36b186cc977a59deb5ecea8fab09605a31da2",
+      "reader_sha256": "a9706a0ec76c2eff5c1a73bc30590926fdc218542f9eb9da5580205c86757607",
+      "native_LF": [
+        8,
+        8
+      ],
+      "quote_sha256": "dbde2f6a22ffc68fa5f37e6844704d4695980dcf0ba5c6086dcef9fe399662e8",
+      "actual_read_bridge": {
+        "guide": "leaving-germany-exit-tax",
+        "quote_row": 19,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 15,
+      "id": "CG.withholding",
+      "article": "EStG43a(1)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__43a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-43a-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB005.txt",
+      "raw_sha256": "25cdf208dc378a1c3685a2318f5304fb342b2c73aedd89f7ca952cf13ed03687",
+      "reader_sha256": "8d7aa2e671377cab047bfd620fb39005ff69f940f972c372b57656e414e5d9b2",
+      "native_LF": [
+        7,
+        13
+      ],
+      "quote_sha256": "4ca7fe868d443562d83f2eaccf543a942f3bf7d3974b7548cbd1510bd143bb1b",
+      "actual_read_bridge": {
+        "guide": "de-corporate-tax",
+        "quote_row": 104,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 16,
+      "id": "Soli.rate",
+      "article": "SolzG4",
+      "official_url": "https://www.gesetze-im-internet.de/solzg_1995/__4.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-4-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB006.txt",
+      "raw_sha256": "dd28933ed36da19cae72de5a054f9edbea5c5919cb2aeac6efc257afe9fab058",
+      "reader_sha256": "219a2aa1409e999b209ed2402a91d3618b9ec3c19ebf85c10122087d7fa3845a",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "18adb7f1a62896d704249a9062cca6a9003f481b039d6847219dac4fa9f79945",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 10,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 17,
+      "id": "CG.allowance",
+      "article": "EStG20(9)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-20-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB001.txt",
+      "raw_sha256": "e77b03a7c6f4600978d136cbbf5b2e4b6b9f9699a521827bbd5f1941f6003b6c",
+      "reader_sha256": "53c639c844a9de7bc9e5031d44ad6059697666651d09993728cde069514d9989",
+      "native_LF": [
+        70,
+        70
+      ],
+      "quote_sha256": "9d2dcfd1a2eb9f2a919c31ccb83aa328848a1f5977155f310d41ea0f8f8e2b30",
+      "actual_read_bridge": {
+        "guide": "de-non-resident-tax",
+        "quote_row": 78,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 18,
+      "id": "CG.partial40-percent",
+      "article": "EStG3no40 introductory rate",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__3.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-3-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB007.txt",
+      "raw_sha256": "85b9a2a8ff330e68a0df9f7e4e38d9dc515f1bce2635706bc14642de47c1c2b3",
+      "reader_sha256": "9be956cc7a2bab50aba6634347a5920b442fee7adcc3fe0e833928c6d5d849cc",
+      "native_LF": [
+        172,
+        172
+      ],
+      "quote_sha256": "a7cdb6962c983b969b5a94bb0c84dfc3ae2296bb8d7debb48ce2047ada7ce300",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 19,
+      "id": "CG.large-allowance",
+      "article": "EStG17(3)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__17.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-17-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB003.txt",
+      "raw_sha256": "fe27f81e022dea91a42b345d41676df4f7f90b06f3f9207db44501034afcd55b",
+      "reader_sha256": "7bb0daec1aa36da5cdd8598cd60d6ad89291c220d134e8bf6d136786d8c274c4",
+      "native_LF": [
+        19,
+        19
+      ],
+      "quote_sha256": "52217d4d0f73192482cdddecfbe00ac185027be75088cffa84bc2dca21e807e3",
+      "actual_read_bridge": {
+        "guide": "leaving-germany-exit-tax",
+        "quote_row": 15,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 20,
+      "id": "CG.fund-partial",
+      "article": "InvStG20(1)\u2013(3)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-20-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB167.txt",
+      "raw_sha256": "7959133d1308cfcd1763695bfd43fc73590a185a3fb8b9d16607fb40fb5be28f",
+      "reader_sha256": "4b0e46adbf3ec9a530c342fc1fbf068b837f6fb763d4daafaa082e83ef03891c",
+      "native_LF": [
+        7,
+        13
+      ],
+      "quote_sha256": "3c6e30a0e01ef8bc1ff8ee29a76aed907cc7549d952c0ea81dfbce8ad6a290fb",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 21,
+      "id": "CG.basis2026",
+      "article": "BMF13January2026 Basiszins2026",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Investmentsteuer/2026-01-13-basiszins-berechnung-vorabpauschale.pdf?__blob=publicationFile&v=3",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/2026-01-13-basiszins-berechnung-vorabpauschale.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB169.txt",
+      "raw_sha256": "11245b8c1f4e326d851655fd7066e881731e6d7a664c66e0bf678603fa054bf9",
+      "reader_sha256": "ea3366e3fc4609e0fdf660c5027dbfc38fd17e54397d7e7ec0e0a53c392859b8",
+      "native_LF": [
+        26,
+        44
+      ],
+      "quote_sha256": "83a7b24d4f4c5f712cd769662b85311af8869be956c678c566922eec2160332e",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 22,
+      "id": "CG.basis2025",
+      "article": "BMF10January2025 Basiszins2025",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Investmentsteuer/2025-01-10-basiszins-vorabpauschale-zum-2-1-2025.pdf?__blob=publicationFile&v=6",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/2025-01-10-basiszins-vorabpauschale-zum-2-1-2025.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB178.txt",
+      "raw_sha256": "97919e95b02ebb988c56bfd06633453405d18167f5e87f8bd015f3e69e41d514",
+      "reader_sha256": "f33e5baf6f2cd89dabf5bafc30c33d80432d969a2e93016fee38ebce3ac34607",
+      "native_LF": [
+        27,
+        48
+      ],
+      "quote_sha256": "0b0b31dc960d7f26a3f95f6d254759ed22aea9f898b264000a4d926b10fa1e67",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 23,
+      "id": "CG.fund-old",
+      "article": "InvStG56(6)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__56.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-56-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB170.txt",
+      "raw_sha256": "c8ea53a6d059d5e9b0fbfab8c7ba51c1267cd6e80d0e2338546b08b2f600a869",
+      "reader_sha256": "441e27e960f87290340d2552c01b14285f75c0396fae3f0e3b5f7d2d37c0dc22",
+      "native_LF": [
+        18,
+        22
+      ],
+      "quote_sha256": "b41c58363bfafb3312b7ff86689a3729201009dfc59385879fd8ff078bdc84f3",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 24,
+      "id": "CG.gain",
+      "article": "EStG20(4)sentences1\u20132",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-20-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB001.txt",
+      "raw_sha256": "e77b03a7c6f4600978d136cbbf5b2e4b6b9f9699a521827bbd5f1941f6003b6c",
+      "reader_sha256": "53c639c844a9de7bc9e5031d44ad6059697666651d09993728cde069514d9989",
+      "native_LF": [
+        64,
+        64
+      ],
+      "quote_sha256": "f0944056d8887a3fcbd0d78cc69bdf3cd6abf90233cf677af9ed65ec57364c22",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 25,
+      "id": "CG.FIFO",
+      "article": "EStG20(4)sentence7",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-20-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB001.txt",
+      "raw_sha256": "e77b03a7c6f4600978d136cbbf5b2e4b6b9f9699a521827bbd5f1941f6003b6c",
+      "reader_sha256": "53c639c844a9de7bc9e5031d44ad6059697666651d09993728cde069514d9989",
+      "native_LF": [
+        64,
+        64
+      ],
+      "quote_sha256": "86dbe5e902536168867c010782708344934af52a0b05ba2822ef3a003ff9784d",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 26,
+      "id": "CG.allowance-order",
+      "article": "EStG44a(2)/(2a)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__44a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-44a-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB009.txt",
+      "raw_sha256": "1589436abec915a0d49be85ff82d5319831789eb3873a391c983fef6726cf72d",
+      "reader_sha256": "6b231e67dcfa9e5f8b8f4c3a9441d242d9fa211fbd37e0191070b5620c1db7f8",
+      "native_LF": [
+        14,
+        19
+      ],
+      "quote_sha256": "87bda118dfcc5c838228cf2fe9095747bd8453b930183e4f5990349e13016b83",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 27,
+      "id": "CG.soli-exclusion",
+      "article": "SolzG3(3)",
+      "official_url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-3-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB011.txt",
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+      "native_LF": [
+        29,
+        33
+      ],
+      "quote_sha256": "04731a15da9f8567e39f64f828d8bee38676bf404b5318ecbfb3d415755efb81",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 44,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 28,
+      "id": "CG.foreigncredit",
+      "article": "EStG32d(5)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__32d.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32d-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB002.txt",
+      "raw_sha256": "2e31697f9d0ec13e81ddac8ebe78237a46bef83054e577e8b57c8a45f30a06a7",
+      "reader_sha256": "8cc16e1ec4460eabab60ae8ddea900b95d35022860c4f88bd4ef3981fce3dfae",
+      "native_LF": [
+        37,
+        37
+      ],
+      "quote_sha256": "8d1276da2b434db7c737069799b99640eb67da1760eca060d6dac2bd9db9cd58",
+      "actual_read_bridge": {
+        "guide": "de-non-resident-tax",
+        "quote_row": 53,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 29,
+      "id": "CG.pre2009",
+      "article": "EStG52(28)sentences11\u201312",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__52.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-52-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB012.txt",
+      "raw_sha256": "bec6241b5340b28eb111acc63168aaa37356253f714334f69786379dd8edbfd5",
+      "reader_sha256": "93f5e25556cf28a80e3d2347b80fce6403a3c51fea9a46caf2e3caf0aec4ecce",
+      "native_LF": [
+        59,
+        59
+      ],
+      "quote_sha256": "28ebfe094328ebafc761a65d326cf745b3c1564432a44c90f2090507178cbb18",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 30,
+      "id": "CG.loss-repeal",
+      "article": "EStG52(28)sentences25\u201326",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__52.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-52-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB012.txt",
+      "raw_sha256": "bec6241b5340b28eb111acc63168aaa37356253f714334f69786379dd8edbfd5",
+      "reader_sha256": "93f5e25556cf28a80e3d2347b80fce6403a3c51fea9a46caf2e3caf0aec4ecce",
+      "native_LF": [
+        65,
+        65
+      ],
+      "quote_sha256": "8919b9bbf8fff46d18d8b99bc3f0952a66a6f8eca2b3c5ef7374719dd67f21c6",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 31,
+      "id": "CG.loss-certificate",
+      "article": "EStG43a(3)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__43a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-43a-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB005.txt",
+      "raw_sha256": "25cdf208dc378a1c3685a2318f5304fb342b2c73aedd89f7ca952cf13ed03687",
+      "reader_sha256": "8d7aa2e671377cab047bfd620fb39005ff69f940f972c372b57656e414e5d9b2",
+      "native_LF": [
+        19,
+        19
+      ],
+      "quote_sha256": "8d570d90ecd8b0a1947e2d3dafea986d8ef9f4cc7d6ef3cede0ffd82ff7b54f5",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 32,
+      "id": "CG.propertyfund-exclusions",
+      "article": "InvStG2(9a)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__2.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-2-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB172.txt",
+      "raw_sha256": "410fd7e93f2e02878bb7d44e79d0d0e1241979ac0f73c59304cff4b213e6e74c",
+      "reader_sha256": "86ef2a5b8db5020e4055cf0d1c9139189c42fce018f4808cf0579d62e598391c",
+      "native_LF": [
+        37,
+        37
+      ],
+      "quote_sha256": "d062a18a93eca1e1059ed0297b9a1eafb8836c98fd67daddb005b7e3a773340a",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 33,
+      "id": "CG.propertyfund-assetvalue",
+      "article": "InvStG2(9b)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__2.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-2-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB172.txt",
+      "raw_sha256": "410fd7e93f2e02878bb7d44e79d0d0e1241979ac0f73c59304cff4b213e6e74c",
+      "reader_sha256": "86ef2a5b8db5020e4055cf0d1c9139189c42fce018f4808cf0579d62e598391c",
+      "native_LF": [
+        38,
+        38
+      ],
+      "quote_sha256": "4c54ec80b172b4c1f8a11dbd834f78bbcacb8d5667dad98ea3b0e7db3e7e5228",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 34,
+      "id": "CG.propertyfund-definition",
+      "article": "InvStG2(9)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__2.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-2-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB172.txt",
+      "raw_sha256": "410fd7e93f2e02878bb7d44e79d0d0e1241979ac0f73c59304cff4b213e6e74c",
+      "reader_sha256": "86ef2a5b8db5020e4055cf0d1c9139189c42fce018f4808cf0579d62e598391c",
+      "native_LF": [
+        36,
+        36
+      ],
+      "quote_sha256": "f39c0bae698420992185fdaca3dcafbdb02c637acce6da54421eecd30b25a081",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 35,
+      "id": "CG.fund-income",
+      "article": "InvStG16(1)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__16.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-16-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB171.txt",
+      "raw_sha256": "71f93dd1028fc29e56b798560c984f484c9f0deff05fe5a5e830350c5b835550",
+      "reader_sha256": "b8c53d4a7a8be02cdebbe5bb182f376ab2ed55b6975f276dc782fe1a011677a2",
+      "native_LF": [
+        7,
+        12
+      ],
+      "quote_sha256": "1d29ecea8417c94cedf867923956196490001f45c602eceaebc8d0af0ae1fd55",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 36,
+      "id": "CG.fund-definition",
+      "article": "InvStG2(6)/(7)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__2.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-2-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB172.txt",
+      "raw_sha256": "410fd7e93f2e02878bb7d44e79d0d0e1241979ac0f73c59304cff4b213e6e74c",
+      "reader_sha256": "86ef2a5b8db5020e4055cf0d1c9139189c42fce018f4808cf0579d62e598391c",
+      "native_LF": [
+        12,
+        13
+      ],
+      "quote_sha256": "58c4da7ec1793a55231d3ad9a7464ee776857cba988b35c7a6e0c96a797d7dd3",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 37,
+      "id": "CG.fund-actualquota",
+      "article": "InvStG20(4)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-20-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB167.txt",
+      "raw_sha256": "7959133d1308cfcd1763695bfd43fc73590a185a3fb8b9d16607fb40fb5be28f",
+      "reader_sha256": "4b0e46adbf3ec9a530c342fc1fbf068b837f6fb763d4daafaa082e83ef03891c",
+      "native_LF": [
+        15,
+        15
+      ],
+      "quote_sha256": "271ad327861139183d09ae37247db9382f862cd75600f9a423881b5cccb36591",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 38,
+      "id": "CG.fund-cost",
+      "article": "InvStG21",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__21.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-21-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB173.txt",
+      "raw_sha256": "244089288aaaca01af757065b324dfeff66dbf9b3f9a175489ef7d0c68ac4189",
+      "reader_sha256": "22be84ac66242187b4ab107a29b800ef2c9e7c5a9ba3b10d5cf5d8d719aa3f46",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "898bdd6a641a9f6fb5cc5688cd7a0b5e82a0d21cc91aafd96954d2835a0ad2fe",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 39,
+      "id": "CG.fund-sale",
+      "article": "InvStG19(1)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__19.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-19-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB174.txt",
+      "raw_sha256": "766e08ce3f2365ef447650776d7cf05fad96c2a571082e8a532bd9d15350d2f2",
+      "reader_sha256": "42efc20b8ad863a9ebf7d5c174b81dfcd6b788e4e4a8efe2b275137a739b600b",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "11f505ad1f668ec94e63d7293753880440e2f00b4659f3e599adb5551d5bb1be",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 40,
+      "id": "CG.fund-bank-withdrawal",
+      "article": "EStG44(1b)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__44.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-44-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB013.txt",
+      "raw_sha256": "c031d39ffcda719f204213fdd59982e8c250af64f5e070dbf6b3f43481834e8c",
+      "reader_sha256": "3d53756534d3eb20475d9da3efd9ced99100f11a7003cdc508870d3be6fca61a",
+      "native_LF": [
+        54,
+        54
+      ],
+      "quote_sha256": "e031ddc342a8357731cecbfb0743fae5b04e23732035b02dc7746a6c275505e3",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 41,
+      "id": "CG.large-loss",
+      "article": "EStG17(2)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__17.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-17-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB003.txt",
+      "raw_sha256": "fe27f81e022dea91a42b345d41676df4f7f90b06f3f9207db44501034afcd55b",
+      "reader_sha256": "7bb0daec1aa36da5cdd8598cd60d6ad89291c220d134e8bf6d136786d8c274c4",
+      "native_LF": [
+        8,
+        11
+      ],
+      "quote_sha256": "2ad1b84cdc32b10458d89d19d8fd2a08f023ae3cee48fd4400ddfa692dcdb778",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 42,
+      "id": "CG.large-liquidation",
+      "article": "EStG17(4)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__17.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-17-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB003.txt",
+      "raw_sha256": "fe27f81e022dea91a42b345d41676df4f7f90b06f3f9207db44501034afcd55b",
+      "reader_sha256": "7bb0daec1aa36da5cdd8598cd60d6ad89291c220d134e8bf6d136786d8c274c4",
+      "native_LF": [
+        20,
+        20
+      ],
+      "quote_sha256": "4fd7f3997fc91df2f1a0bc5ce8aa102c8620303afcec02320827af2abb916126",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 43,
+      "id": "CG.option",
+      "article": "EStG32d(2)3",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__32d.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32d-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB002.txt",
+      "raw_sha256": "2e31697f9d0ec13e81ddac8ebe78237a46bef83054e577e8b57c8a45f30a06a7",
+      "reader_sha256": "8cc16e1ec4460eabab60ae8ddea900b95d35022860c4f88bd4ef3981fce3dfae",
+      "native_LF": [
+        28,
+        32
+      ],
+      "quote_sha256": "c90b9c750ae2bf6143e43a232bfb425ef5259c0bbdc72b6918c8ee128107687d",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 44,
+      "id": "CG.private-cliff-history",
+      "article": "Wachstumschancengesetz2024 Art2no5",
+      "official_url": "https://www.recht.bund.de/bgbl/1/2024/108/VO.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2024-I-108-20261024.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB175.txt",
+      "raw_sha256": "b95ebec40902824eb7f0e9daabbfdeb628dde44aeaae9d7757231249c680ff3b",
+      "reader_sha256": "38ab8edac703a190bbc86b6e9c3f2d577f77a75503d6be4ce36dfd7fe640329e",
+      "native_LF": [
+        314,
+        314
+      ],
+      "quote_sha256": "d787c39cd90ed4b9f278cf87930f6c0b3f789c2ceb3e9858377a6e4b35474cea",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 45,
+      "id": "CG.private-cliff-date",
+      "article": "Wachstumschancengesetz2024 Art35(4)",
+      "official_url": "https://www.recht.bund.de/bgbl/1/2024/108/VO.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2024-I-108-20261024.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB175.txt",
+      "raw_sha256": "b95ebec40902824eb7f0e9daabbfdeb628dde44aeaae9d7757231249c680ff3b",
+      "reader_sha256": "38ab8edac703a190bbc86b6e9c3f2d577f77a75503d6be4ce36dfd7fe640329e",
+      "native_LF": [
+        2008,
+        2008
+      ],
+      "quote_sha256": "2ba1526024a6186146e9f99f19efccba3f7c754ee67bf23cfbe2e103461c4fbd",
+      "actual_read_bridge": {
+        "guide": "de-corporate-tax",
+        "quote_row": 116,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 46,
+      "id": "CG.crypto-swap",
+      "article": "BMF6March2025 Rn54\u201355",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB176.txt",
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "native_LF": [
+        708,
+        718
+      ],
+      "quote_sha256": "ad9810c706dcf4fa32c4664cf14e5fe546860352d5187cb6ae72c71839a186d1",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 47,
+      "id": "CG.crypto-lots",
+      "article": "BMF6March2025 Rn61\u201362",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB176.txt",
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "native_LF": [
+        767,
+        783
+      ],
+      "quote_sha256": "c9cbaeac6148c744f28e896653bfaa62fdde506d1c6f6f5a713849bcebf10c0e",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 48,
+      "id": "CG.crypto-lending",
+      "article": "BMF6March2025 Rn63",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB176.txt",
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "native_LF": [
+        785,
+        788
+      ],
+      "quote_sha256": "68044ee0a268895a1925ff900e0579be6e8fd8323d257576a401876dbc7e4c55",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 49,
+      "id": "CG.favourable",
+      "article": "EStG32d(6)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__32d.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32d-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB002.txt",
+      "raw_sha256": "2e31697f9d0ec13e81ddac8ebe78237a46bef83054e577e8b57c8a45f30a06a7",
+      "reader_sha256": "8cc16e1ec4460eabab60ae8ddea900b95d35022860c4f88bd4ef3981fce3dfae",
+      "native_LF": [
+        38,
+        38
+      ],
+      "quote_sha256": "0b4a338aff9145c47097ad59b742a33926a7d5b906f49134468c7e9d78ece8f5",
+      "actual_read_bridge": {
+        "guide": "de-non-resident-tax",
+        "quote_row": 53,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 50,
+      "id": "CG.bank-finality",
+      "article": "EStG43(5)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__43.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-43-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB281.txt",
+      "raw_sha256": "952d3b3fe3fd433ab08ba994e224d36c08459e478c92b83b88e43fda41a33c77",
+      "reader_sha256": "d53d558fa43c9b55aa62394b068bcc7f64afaa5ec1721d019bc32e7c0fd651b5",
+      "native_LF": [
+        81,
+        81
+      ],
+      "quote_sha256": "e5d4dac905e1e445e369b6fd633abe603ed8ac0f799b684b3d117ceba1b1c9e4",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 51,
+      "id": "CG.bank-monthly",
+      "article": "EStG44(1)sentences5\u201310",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__44.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-44-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB013.txt",
+      "raw_sha256": "c031d39ffcda719f204213fdd59982e8c250af64f5e070dbf6b3f43481834e8c",
+      "reader_sha256": "3d53756534d3eb20475d9da3efd9ced99100f11a7003cdc508870d3be6fca61a",
+      "native_LF": [
+        40,
+        46
+      ],
+      "quote_sha256": "040fadbd56258d997f442710a3ffc8d52dca061100c62c12e35271127fe75615",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 52,
+      "id": "CG.declare",
+      "article": "EStG32d(3)/(4)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__32d.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32d-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB002.txt",
+      "raw_sha256": "2e31697f9d0ec13e81ddac8ebe78237a46bef83054e577e8b57c8a45f30a06a7",
+      "reader_sha256": "8cc16e1ec4460eabab60ae8ddea900b95d35022860c4f88bd4ef3981fce3dfae",
+      "native_LF": [
+        35,
+        36
+      ],
+      "quote_sha256": "1c51187b19bf3b954e5e56983144b1909f8d6daf427f7c37b388ee84c13cbb6d",
+      "actual_read_bridge": {
+        "guide": "de-non-resident-tax",
+        "quote_row": 52,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 53,
+      "id": "CG.formKAP",
+      "article": "Official ELSTER2025 instructions: AnlageKAP",
+      "official_url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2025-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+      "raw_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+      "reader_sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+      "native_LF": [
+        1361,
+        1375
+      ],
+      "quote_sha256": "b215a2ef42c8d9340e7e33d4fc5eb8d26d5fffb34ea8882e1989f997cbb7c3ec",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 54,
+      "id": "CG.formKAPINV",
+      "article": "Official ELSTER2025 instructions: AnlageKAP-INV",
+      "official_url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2025-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+      "raw_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+      "reader_sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+      "native_LF": [
+        1509,
+        1514
+      ],
+      "quote_sha256": "abc2bf7f14b17fb6e45e90a0c2f66c8897b327e69f376ea60c83ec2fd9e38bca",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 55,
+      "id": "CG.formSO",
+      "article": "Official ELSTER2025 instructions: AnlageSO",
+      "official_url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2025-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+      "raw_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+      "reader_sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+      "native_LF": [
+        2357,
+        2367
+      ],
+      "quote_sha256": "03866c2a5d1addba2770219264a12147e3a110ee3eb91531d4a5b58c6f1f88f6",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 56,
+      "id": "CG.formG",
+      "article": "Official ELSTER2025 instructions: AnlageG",
+      "official_url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2025-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+      "raw_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+      "reader_sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+      "native_LF": [
+        171,
+        172
+      ],
+      "quote_sha256": "63dbc423919072e966e6b23ae4cd339e2c138dcecc260e5689eb631f4835e237",
+      "actual_read_bridge": {
+        "guide": "de-einkommensteuer-freelancer",
+        "quote_row": 18,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 57,
+      "id": "CG.guidance-title",
+      "article": "BMF14May2025 official title/date pointer",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Abgeltungsteuer/2025-05-14-einzelfragen-zur-abgeltungsteuer.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-abgeltungsteuer-20250514.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB177.txt",
+      "raw_sha256": "33b6bd7dfd51fe6265556809e8ba2e1841031b24632250f4b57e2c7381097133",
+      "reader_sha256": "3dcba4754ad48eacd30989741fd1bd37676243b8d003036854b14b5a537fc664",
+      "native_LF": [
+        204,
+        205
+      ],
+      "quote_sha256": "bcbafd5d38e4995b78afaa8110b74531c975ebb155029d083241e315bcc22f7f",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 58,
+      "id": "AO149.general",
+      "article": "AO149(1)/(2)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB014.txt",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        7,
+        8
+      ],
+      "quote_sha256": "4f5d16eea6d13266cd6b9e21d632167ebf8b7631c79e1a72a2743ccfca9d1944",
+      "actual_read_bridge": {
+        "guide": "de-trade-tax",
+        "quote_row": 48,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 59,
+      "id": "CG.corona-scope",
+      "article": "EGAOArt97\u00a736(3) opening",
+      "official_url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/egao-97-36-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB182.txt",
+      "raw_sha256": "473093a055687b4f1080906450a53bfa4454856afe4a25599e1907757d5436bc",
+      "reader_sha256": "45ffa494336b97fdb64a8261370a05f74e069dcab59dd97c0b9eb6d7a325ae24",
+      "native_LF": [
+        9,
+        9
+      ],
+      "quote_sha256": "03594c64713a0480505d92da73f309b229036e6f2685ce0d7c20cff6039701cb",
+      "actual_read_bridge": {
+        "guide": "de-corporate-tax",
+        "quote_row": 97,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 60,
+      "id": "AO149.adviser",
+      "article": "AO149(3)/(4)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB014.txt",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        23,
+        24
+      ],
+      "quote_sha256": "71b2f774ab06e5ba98627795cc93fd0aab1f30f253c505dce23f58922aa8c6b1",
+      "actual_read_bridge": {
+        "guide": "de-trade-tax",
+        "quote_row": 50,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 61,
+      "id": "AO108.weekend",
+      "article": "AO108(3)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-108-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB015.txt",
+      "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+      "reader_sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9",
+      "native_LF": [
+        9,
+        9
+      ],
+      "quote_sha256": "6d22b5c1a15f4b1a75caa5aa3b16dcb5e5ffcf4f80488918ed5261c136d40df4",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 15,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 62,
+      "id": "AO149.callin",
+      "article": "AO149(4)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB014.txt",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        24,
+        43
+      ],
+      "quote_sha256": "29265532906f924b2118705e0b8f623a20211bf537d8ecb92b2527447e7030d7",
+      "actual_read_bridge": {
+        "guide": "de-trade-tax",
+        "quote_row": 51,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 63,
+      "id": "AO152.surcharge",
+      "article": "AO152(5)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB016.txt",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        27,
+        27
+      ],
+      "quote_sha256": "6a48e4d6be5216e9d4c32ab2ff2afe02127046b6347170a8ff4435009a9e850f",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 19,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 64,
+      "id": "AO233a.interest",
+      "article": "AO233a(1)/(2)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-233a-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB017.txt",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader_sha256": "707aa5c6d8b589d1ab3ea4e5c30d68d5121ad2a42c56fb9368e7ca2f69d4bd7d",
+      "native_LF": [
+        7,
+        8
+      ],
+      "quote_sha256": "adadc7e47e02a3359eb28135b4f6b7fe2793ac7bd91aa7e0a32d7cb3e7534160",
+      "actual_read_bridge": {
+        "guide": "de-trade-tax",
+        "quote_row": 59,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 65,
+      "id": "AO238.rate",
+      "article": "AO238(1a)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-238-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB018.txt",
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "reader_sha256": "651db01a1f6c18060e1f1e63652986b0e4921fb1ce84da5d2a740ebea8ca0b48",
+      "native_LF": [
+        8,
+        8
+      ],
+      "quote_sha256": "a6b73dc49fd492f5b9253b5ec6af37b0567d4d7420ed821f8b93d52030492b09",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 25,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 66,
+      "id": "AO240.surcharge",
+      "article": "AO240(1)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-240-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB019.txt",
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "reader_sha256": "2cfa86cfaac164f5f98e3dc6a02b04d67165a70fc4439631021fe7a3ae0bf631",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "089a6c89cde4a9003faed817b7487e09e5ba270a6bc03c51298a70f907518ace",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 27,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 67,
+      "id": "Exit.scope",
+      "article": "AStG6(1)",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__6.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/astg-6-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB020.txt",
+      "raw_sha256": "f0f931afd93ee0c1ba04ef2ec47d803a709daf63df1a0e242dddbf91018a43df",
+      "reader_sha256": "9f8b931a21ff5f60975194d1097a925a3290b315b3e38e5921cae418a7e3723f",
+      "native_LF": [
+        7,
+        12
+      ],
+      "quote_sha256": "57b250711ddec46dd55c0058d9736f2cbbf629e8f6849fc041ad7e451e89e29a",
+      "actual_read_bridge": {
+        "guide": "leaving-germany-exit-tax",
+        "quote_row": 4,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 68,
+      "id": "Exit.residence",
+      "article": "AStG6(2)",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__6.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/astg-6-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB020.txt",
+      "raw_sha256": "f0f931afd93ee0c1ba04ef2ec47d803a709daf63df1a0e242dddbf91018a43df",
+      "reader_sha256": "9f8b931a21ff5f60975194d1097a925a3290b315b3e38e5921cae418a7e3723f",
+      "native_LF": [
+        20,
+        20
+      ],
+      "quote_sha256": "51c18aea92865c6a1dcba7026995f4b1096c238b3566b1819c22e42269d3f103",
+      "actual_read_bridge": {
+        "guide": "leaving-germany-exit-tax",
+        "quote_row": 5,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 69,
+      "id": "Exit.instalments",
+      "article": "AStG6(4)",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__6.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/astg-6-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB020.txt",
+      "raw_sha256": "f0f931afd93ee0c1ba04ef2ec47d803a709daf63df1a0e242dddbf91018a43df",
+      "reader_sha256": "9f8b931a21ff5f60975194d1097a925a3290b315b3e38e5921cae418a7e3723f",
+      "native_LF": [
+        28,
+        28
+      ],
+      "quote_sha256": "5339c548c61a7a48fe92705e02e396483ba86feaa25b47e861a5102a0390cda5",
+      "actual_read_bridge": {
+        "guide": "leaving-germany-exit-tax",
+        "quote_row": 7,
+        "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+      }
+    },
+    {
+      "row": 70,
+      "id": "Exit.return",
+      "article": "AStG6(3)",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__6.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/astg-6-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB020.txt",
+      "raw_sha256": "f0f931afd93ee0c1ba04ef2ec47d803a709daf63df1a0e242dddbf91018a43df",
+      "reader_sha256": "9f8b931a21ff5f60975194d1097a925a3290b315b3e38e5921cae418a7e3723f",
+      "native_LF": [
+        21,
+        27
+      ],
+      "quote_sha256": "6e33a277aa7236d021408a23fd75611b1c170bd8f937f8030c619fc549f22ab8",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    },
+    {
+      "row": 71,
+      "id": "CG.fund-exit",
+      "article": "InvStG19(3)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__19.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-19-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB174.txt",
+      "raw_sha256": "766e08ce3f2365ef447650776d7cf05fad96c2a571082e8a532bd9d15350d2f2",
+      "reader_sha256": "42efc20b8ad863a9ebf7d5c174b81dfcd6b788e4e4a8efe2b275137a739b600b",
+      "native_LF": [
+        9,
+        22
+      ],
+      "quote_sha256": "4b3b3e1f5f2541d9b1dd28df1b2cf50237a7601e5c1af7d0539072e1094ed9eb",
+      "actual_read": "Selected entire quotation directly actually read in new-quote batches1\u201310/11\u201320/21\u201330/31\u201340/41\u201344; new-quote index refers to pending_direct_read subset, original full quote-row index retained separately."
+    }
+  ]
+}

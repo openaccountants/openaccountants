@@ -1,0 +1,30 @@
+[
+  {
+    "before": "**Private use of business assets.** Using a business asset privately is a deemed supply (§ 3(1b) and (9a) UStG), reported at the rate that applies, normally in Kz 81. For use of an asset the base is the costs that carried input VAT, including the purchase cost spread over the correction period (§ 10(4) no. 2 UStG), not the income-tax list-price figure. A motor vehicle is not blocked for VAT: the business share decides the deduction, and below 10% business use there is none.",
+    "after": "**Private use of business assets.** Withdrawal of business goods under § 3(1b) UStG, and private use of an allocated business asset under § 3(9a) no. 1 UStG, are deemed supplies only where the goods or relevant components entitled the business to full or partial input deduction. For asset use, the exclusions in § 3(9a) no. 1 for § 15(1b) and § 15a(6a) also apply. Other free services under § 3(9a) no. 2 have their own rule. Report a taxable deemed supply at the applicable rate, normally in Kz 81. For a goods withdrawal the base is the purchase price of the item or an equivalent item, plus incidental costs, or otherwise cost, at the withdrawal date (§ 10(4) no. 1). For asset use it is the expenses that entitled the business to input deduction; acquisition or production costs of at least EUR 500 are spread over the applicable § 15a correction period (§ 10(4) no. 2), rather than using the income-tax list-price figure. A motor vehicle is not blocked for VAT: the business share decides the deduction, and below 10% business use there is none."
+  },
+  {
+    "before": "| Distance sales and e-services to EU consumers, EU-wide, below which German VAT applies | EUR 10,000 (previous and current year) | 2026 | § 3c(4) UStG, https://www.gesetze-im-internet.de/ustg_1980/__3c.html |",
+    "after": "| Distance sales and e-services to EU consumers, EU-wide, where the supplier is established only in Germany: limit for German VAT | EUR 10,000 (previous and current year) | 2026 | § 3c(4) UStG, https://www.gesetze-im-internet.de/ustg_1980/__3c.html |"
+  },
+  {
+    "before": "- **Distance sales to EU consumers.** Up to EUR 10,000 a year EU-wide (goods and electronic services together, previous and current year), German VAT applies; above it, the customer's country's VAT, usually through the one-stop shop (§ 3c(4) UStG). One EU-wide total, not per country. A business may waive the limit; the waiver binds for at least two calendar years (§ 3c(4) UStG). See de-vat-annual-and-special-schemes.",
+    "after": "- **Distance sales to EU consumers.** For a supplier established in only one member state, Germany, up to EUR 10,000 a year EU-wide (goods and electronic services together, previous and current year), German VAT applies; above it, the customer's country's VAT, usually through the one-stop shop (§ 3c(4) UStG). One EU-wide total, not per country. A business may waive the limit; the waiver binds for at least two calendar years (§ 3c(4) UStG). See de-vat-annual-and-special-schemes."
+  },
+  {
+    "before": "**What is taxed.** Supplies of goods and services made in Germany for consideration by a business, intra-EU acquisitions of goods, imports, and private use of business assets (§ 3(1b) and (9a) UStG). The base is everything the customer pays, without the VAT itself.",
+    "after": "**What is taxed.** Supplies of goods and services made in Germany for consideration by a business, intra-EU acquisitions of goods, imports, and private use of business assets (§ 3(1b) and (9a) UStG). The base is everything the customer pays, without the VAT itself.\n\n**Foreign currency.** Convert the tax base and input VAT to euros using the BMF average rate for the month of the supply, or the month an advance payment is received before supply. A business permitted to use § 20 cash accounting uses the receipt month. A daily rate evidenced by a bank statement or exchange-rate list can be used only with the tax office's permission (§ 16(6) UStG). This is the standard-return route; the separate OSS exchange-rate rule is outside this method."
+  },
+  {
+    "before": "version: 2.2\n",
+    "after": "version: 2.3\n"
+  },
+  {
+    "before": "last_updated: 2026-10-27\n",
+    "after": "last_updated: 2026-10-29\n"
+  },
+  {
+    "before": "| BMF letter of 29 December 2025, 2026 advance return form USt 1 A, form USt 1 H and instructions | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-vordruckmuster-USt-voranmeldung-2026.pdf?__blob=publicationFile&v=2 | 2026-10-24 |",
+    "after": "| BMF letter of 29 December 2025, 2026 advance return form USt 1 A, form USt 1 H and instructions | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-vordruckmuster-USt-voranmeldung-2026.pdf?__blob=publicationFile&v=2 | 2026-10-24 |\n| Deemed supplies, acquisition-cost threshold and currency: UStG § 3(1b), (9a); § 10(4); § 16(6); distance-sale establishment gate § 3c(4) | https://www.gesetze-im-internet.de/ustg_1980/__3.html ; https://www.gesetze-im-internet.de/ustg_1980/__10.html ; https://www.gesetze-im-internet.de/ustg_1980/__16.html ; https://www.gesetze-im-internet.de/ustg_1980/__3c.html | 2026-10-29 |"
+  }
+]

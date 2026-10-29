@@ -1,0 +1,17 @@
+{
+  "Guide_before_sha256": "b219cbd217a510b7f605539e4a101ddf1ad75e6141a760b47c77876d5f54c769",
+  "Guide_after_sha256": "d6ad76e43de497f0374419344e03cef72fdba5c3e06ba80b13adbb8acdbd7322",
+  "ledger_before_sha256": "f885debb400b79ed4af848415fa8c82e5e9e59bcd2df1f433a11091d5853b8f9",
+  "ledger_after_sha256": "81aea5fed2ec144a698bb7fc3e0dc5b9989b533b2d5eb71e00efc61b73be1b94",
+  "root_proof_sha256": "183cea12fe94e4235aac21859df9ddda05c54dc67e6c2206ee8b94bf21d2f64a",
+  "own_inverse_exact": true,
+  "original_four_example_blocks_exact": true,
+  "old_URL_occurrences_order_preserved": true,
+  "own_actual_changed_reads": [
+    "currentGuide77",
+    "currentGuide136",
+    "InvStG2reader35\u201348",
+    "InvStG19reader9\u201323"
+  ],
+  "writer_evidence_not_independent_verdict": true
+}

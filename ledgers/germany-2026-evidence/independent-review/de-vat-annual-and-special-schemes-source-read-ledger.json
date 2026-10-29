@@ -1,0 +1,1172 @@
+{
+  "all174_current_units_actually_read": [
+    [
+      1,
+      65
+    ],
+    [
+      66,
+      125
+    ],
+    [
+      126,
+      174
+    ]
+  ],
+  "direct_new_quotes": 47,
+  "exact_quotation_word_same_raw_bridges": 20,
+  "quotes": [
+    {
+      "row": 1,
+      "id": "AO149-2",
+      "article": "AO149(2)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        8,
+        8
+      ],
+      "quote_sha256": "23bfcd02fb0c2941fc041c97a34697e13aa3cded0205b93b1457275608e72e3c",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 12,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 2,
+      "id": "AO149-3",
+      "article": "AO149(3)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        9,
+        23
+      ],
+      "quote_sha256": "d42d4452133e7963db27f96f19d2385a2165dde43b8f9f6194e94623ea97994f",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 13,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 3,
+      "id": "AO149-4",
+      "article": "AO149(4)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        24,
+        41
+      ],
+      "quote_sha256": "189aff23817b3e0d09375870b9babc6480abdb0dfb1598cc6007764fe7f29e06",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 14,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 4,
+      "id": "AO108",
+      "article": "AO \u00a7108(3)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-108-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3859bf32d53897c9.reader.txt",
+      "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+      "reader_sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9",
+      "native_LF": [
+        9,
+        9
+      ],
+      "quote_sha256": "6d22b5c1a15f4b1a75caa5aa3b16dcb5e5ffcf4f80488918ed5261c136d40df4",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 15,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 5,
+      "id": "AO152-1",
+      "article": "AO152(1)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "aa1e238067672f986535736184514f150e130adfabf066c886d839154cd1f437",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 16,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 6,
+      "id": "AO152-2",
+      "article": "AO152(2)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        8,
+        14
+      ],
+      "quote_sha256": "e17249ac587ad278ead480e2159e55da13d06f415cf5b0b0c7493636cd8fab15",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 17,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 7,
+      "id": "AO152-3",
+      "article": "AO152(3)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        15,
+        22
+      ],
+      "quote_sha256": "b0e5c6dcbc1290a96e13f49675e0a75eb976930ff62712412a0a60a3bd80ebb6",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 18,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 8,
+      "id": "AO152-5",
+      "article": "AO152(5)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        27,
+        27
+      ],
+      "quote_sha256": "dc6874b704e5a2b30963ac59d4a48d41083195497ab5e224b01fdacc48e0e19c",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 19,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 9,
+      "id": "AO152-10",
+      "article": "AO152(10)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        42,
+        42
+      ],
+      "quote_sha256": "92d524babd592c0d4af5b97179cec9227ba1f6adf7c6a0e97b784cd6f79f1d40",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 20,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 10,
+      "id": "AO233a-2",
+      "article": "AO233a(2)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-233a-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uda6051d17b67ca40.reader.txt",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader_sha256": "707aa5c6d8b589d1ab3ea4e5c30d68d5121ad2a42c56fb9368e7ca2f69d4bd7d",
+      "native_LF": [
+        8,
+        8
+      ],
+      "quote_sha256": "40bc24f8e325fe8dbd60bef3d828d8206af4839ec8728bdf9d0f2d5b755159c8",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 22,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 11,
+      "id": "AO238-1a",
+      "article": "AO238(1a)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-238-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U15527adfa30c4074.reader.txt",
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "reader_sha256": "651db01a1f6c18060e1f1e63652986b0e4921fb1ce84da5d2a740ebea8ca0b48",
+      "native_LF": [
+        8,
+        8
+      ],
+      "quote_sha256": "a6b73dc49fd492f5b9253b5ec6af37b0567d4d7420ed821f8b93d52030492b09",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 25,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 12,
+      "id": "AO240-1",
+      "article": "AO240(1)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-240-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee7f672101b3d3dd.reader.txt",
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "reader_sha256": "2cfa86cfaac164f5f98e3dc6a02b04d67165a70fc4439631021fe7a3ae0bf631",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "9656165dbd550290acfc92eb06aa385b8e6343a05d95e4a601f549d974ba0b38",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 27,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 13,
+      "id": "CASH",
+      "article": "EStG \u00a74(3)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__4.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+      "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+      "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+      "native_LF": [
+        13,
+        13
+      ],
+      "quote_sha256": "fafd7d22f8503b2db8017db3bca0630f4dc952212982b00830b4c1c151625fd4",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 35,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 14,
+      "id": "KU",
+      "article": "UStG \u00a719(1)/(2)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__19.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-19-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ueb043bd52ca19a0a.reader.txt",
+      "raw_sha256": "bcee10874715ec2bb3a0ed1867ef4f512bee0093e4eed85e57bae7addc777bfc",
+      "reader_sha256": "ae56f5ede8b771215419ba19792d931837bbcf69fc6116512c3c95ac4f8cf5f3",
+      "native_LF": [
+        7,
+        12
+      ],
+      "quote_sha256": "d2c20283ef53c4929819c376b9bc8e8f718c6919b29b00ce81c6dcb27f3b566a",
+      "actual_read_bridge": {
+        "guide": "de-einkommensteuer-freelancer",
+        "quote_row": 29,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 15,
+      "id": "CRIME",
+      "article": "AO \u00a7370(1)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__370.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-370-20261027.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U40b1b56d09dec21a.reader.txt",
+      "raw_sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+      "reader_sha256": "4059b3eeb14a28f929ae1583a4a7cb78525c6d828ff66a88b41ec68ad01724e6",
+      "native_LF": [
+        7,
+        13
+      ],
+      "quote_sha256": "00d4f1772314e6b733cb3b10d925e8fb4f29c82cfd26ceeab0621f5983752257",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 81,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 16,
+      "id": "EURVATIN",
+      "article": "BMF2026 E\u00dcR instructions17/18, cashVAT and10days",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-euer-2026-20261026.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bc145517400aa2b.reader.txt",
+      "raw_sha256": "03d3033acc5c5a126729e58743128596ae39193759c55b207872da9432b83a8f",
+      "reader_sha256": "c0af7243fc4b4a3d52b51838076f3283a209d8c023999148c5bd739e9f06d5e3",
+      "native_LF": [
+        1063,
+        1072
+      ],
+      "quote_sha256": "2bdaddda2f25d72ef62b45ca601fc438573954e6421c9b396c94944e8938447b",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 89,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 17,
+      "id": "EURVATOUT",
+      "article": "BMF2026 E\u00dcR instructions59",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-euer-2026-20261026.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bc145517400aa2b.reader.txt",
+      "raw_sha256": "03d3033acc5c5a126729e58743128596ae39193759c55b207872da9432b83a8f",
+      "reader_sha256": "c0af7243fc4b4a3d52b51838076f3283a209d8c023999148c5bd739e9f06d5e3",
+      "native_LF": [
+        1319,
+        1324
+      ],
+      "quote_sha256": "82fbf1c528e35fd9d898d7bc8670862ac12c3280f6a9e72232ddfffdec50b2b3",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 90,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 18,
+      "id": "ANNUAL",
+      "article": "UStG \u00a718(3)/(4)/(4a)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__18.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-18-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc0f722e6677b195a.reader.txt",
+      "raw_sha256": "17daf6ad5eedac838be45dc0c823ef631394a9346781545c7ddb5f35a34eb135",
+      "reader_sha256": "39ce08fa75e6d88e5177607b4c8c9b90d7ea3aa1446712e4fd98d454bf355a3e",
+      "native_LF": [
+        14,
+        16
+      ],
+      "quote_sha256": "6575af6efb7a4c0117729e8dfcbd352851718577ccb0845af7bd603e1827189f",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 19,
+      "id": "ADVANCE",
+      "article": "UStG \u00a718(1)\u2013(2a), incl2026 startup override",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__18.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-18-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc0f722e6677b195a.reader.txt",
+      "raw_sha256": "17daf6ad5eedac838be45dc0c823ef631394a9346781545c7ddb5f35a34eb135",
+      "reader_sha256": "39ce08fa75e6d88e5177607b4c8c9b90d7ea3aa1446712e4fd98d454bf355a3e",
+      "native_LF": [
+        7,
+        13
+      ],
+      "quote_sha256": "5af8d3054d74211d450b24a01a7c62907dcc6ee5ce68bfdd5699744b3c55ea00",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 20,
+      "id": "PERIOD",
+      "article": "UStG \u00a716(1)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__16.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-16-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc1b860a6bb8a10ee.reader.txt",
+      "raw_sha256": "b77aa0ec700d9733baff3a3e26ae1ff9da89f40ad2113a630a07c0aeea44a990",
+      "reader_sha256": "ddcef24a266e8741fa4428e93b6dc94fea9bd521a771644652adea3af98bd5dc",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "7669ff32d7e0caf76dc29cfcbb50e8d6618294f4fa3329776f33d4ebf37ffc2a",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 21,
+      "id": "COMPUTEVAT",
+      "article": "UStG \u00a716(2)/(3)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__16.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-16-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc1b860a6bb8a10ee.reader.txt",
+      "raw_sha256": "b77aa0ec700d9733baff3a3e26ae1ff9da89f40ad2113a630a07c0aeea44a990",
+      "reader_sha256": "ddcef24a266e8741fa4428e93b6dc94fea9bd521a771644652adea3af98bd5dc",
+      "native_LF": [
+        13,
+        14
+      ],
+      "quote_sha256": "12caf28d1eef496984a239bf4af6c18933b7a8707b4b95abe8f7416d0914f880",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 22,
+      "id": "ASSESS",
+      "article": "AO \u00a7168",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__168.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ub85816c5a3c9229a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ub85816c5a3c9229a.reader.txt",
+      "raw_sha256": "003ad22e434dbc3b0549244fe9cef82fd51593e2b55c70ca432da7e8d146d64b",
+      "reader_sha256": "a45ee3ee37893f14c1b6e394f9dd11547f5b48c9648f080cbed457b565338242",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "d617fa563bed9fbefa176f7a6ea2d94eba68f93a4cd0c5002197a8950d7bef4c",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 23,
+      "id": "REQUEST",
+      "article": "AO \u00a7149(1)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "6daa6f559a6a6d88b13d017bf85b8e32e910b5d6bc32fcd5640ac0f9e4dd9485",
+      "actual_read_bridge": {
+        "guide": "de-trade-tax",
+        "quote_row": 48,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 24,
+      "id": "WAIVE",
+      "article": "UStG \u00a719(3)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__19.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-19-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ueb043bd52ca19a0a.reader.txt",
+      "raw_sha256": "bcee10874715ec2bb3a0ed1867ef4f512bee0093e4eed85e57bae7addc777bfc",
+      "reader_sha256": "ae56f5ede8b771215419ba19792d931837bbcf69fc6116512c3c95ac4f8cf5f3",
+      "native_LF": [
+        13,
+        13
+      ],
+      "quote_sha256": "13310d0ade568aa9a8435ce62e7ba21c607aa529b77e6f2a200f0cd3b284e072",
+      "actual_read_bridge": {
+        "guide": "de-einkommensteuer-freelancer",
+        "quote_row": 29,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 25,
+      "id": "KUEU",
+      "article": "UStG \u00a719(4)/(5)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__19.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-19-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ueb043bd52ca19a0a.reader.txt",
+      "raw_sha256": "bcee10874715ec2bb3a0ed1867ef4f512bee0093e4eed85e57bae7addc777bfc",
+      "reader_sha256": "ae56f5ede8b771215419ba19792d931837bbcf69fc6116512c3c95ac4f8cf5f3",
+      "native_LF": [
+        14,
+        18
+      ],
+      "quote_sha256": "7666a43911be321658c8599ec0e7757344fde03c07fa7773c48386c1e679298b",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 26,
+      "id": "KUEUREG",
+      "article": "UStG \u00a719a(1)\u2013(4)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__19a.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U475fd171437e5353.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U475fd171437e5353.reader.txt",
+      "raw_sha256": "3f98a56af2b32292e688304e949792f43fef8cf812084c5cc3138bcfa4653c94",
+      "reader_sha256": "1113ccf924ace22e74af7aa453cf9ac2d543a4bcec0f050b6efb6c28dbb4ea0b",
+      "native_LF": [
+        7,
+        18
+      ],
+      "quote_sha256": "eb8163509d4a9fc3fa34fd310693429e3ebf7c69d3d30348c79cee61033a6ae7",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 27,
+      "id": "CASHVAT",
+      "article": "UStG \u00a720",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-20-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaaaefc3c6d8e6109.reader.txt",
+      "raw_sha256": "b9bde56785a4fbd9d730441b9f0d155b0715a29e2e3191916db5b14cb58d7f2f",
+      "reader_sha256": "5fe7450c4aa74b69b8c61fbb322e9c03e367160b145e9edcf6c4e5df19e5d583",
+      "native_LF": [
+        7,
+        15
+      ],
+      "quote_sha256": "73fc23da0a235cdac0650f52abb4453191b5506142aea257f9d6d74f56ed3f8a",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 28,
+      "id": "VATINPUT",
+      "article": "UStG \u00a715(1) no1",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__15.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-15-20261027.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9587b12f47ebdc37.reader.txt",
+      "raw_sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+      "reader_sha256": "e819ae2c4a6a65834fee9861adf1ec100b520126163e240fe08fe6a6d1e80d74",
+      "native_LF": [
+        7,
+        8
+      ],
+      "quote_sha256": "d4c6eaea64a6e8aa54bd23cd3ab9215efdbd8baf4670a6b210284cb7caae6931",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 29,
+      "id": "NOEXEMPTINPUT",
+      "article": "UStG \u00a715(2) nos1\u20133",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__15.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-15-20261027.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9587b12f47ebdc37.reader.txt",
+      "raw_sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+      "reader_sha256": "e819ae2c4a6a65834fee9861adf1ec100b520126163e240fe08fe6a6d1e80d74",
+      "native_LF": [
+        18,
+        23
+      ],
+      "quote_sha256": "5a8b245cd104e4b13f7cec15a48b208a6d7539a076c025415b1a847a947d0c7c",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 30,
+      "id": "PRORATA",
+      "article": "UStG \u00a715(4)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__15.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-15-20261027.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9587b12f47ebdc37.reader.txt",
+      "raw_sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+      "reader_sha256": "e819ae2c4a6a65834fee9861adf1ec100b520126163e240fe08fe6a6d1e80d74",
+      "native_LF": [
+        36,
+        36
+      ],
+      "quote_sha256": "349dd6cde548b9cde37c6c9680a6b0ca61949ebded2431f714b85785cb803507",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 31,
+      "id": "VATCORRECT",
+      "article": "UStG \u00a715a(1)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__15a.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1c827794c9be2ff8.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1c827794c9be2ff8.reader.txt",
+      "raw_sha256": "0936dfcdc994d709e6e0961ebbb483be7c29b303fa1d1694275396072868253f",
+      "reader_sha256": "fd80c34545ec2b27d925674fb7d0df07be0f8c6332f74b8ee2e5b72a1950985b",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "8738817b7f2f8d4bab5903b963ad9f5451e99c3c42387b2e5746c1007aed50ea",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 32,
+      "id": "VATFIFTH",
+      "article": "UStG \u00a715a(5)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__15a.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1c827794c9be2ff8.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1c827794c9be2ff8.reader.txt",
+      "raw_sha256": "0936dfcdc994d709e6e0961ebbb483be7c29b303fa1d1694275396072868253f",
+      "reader_sha256": "fd80c34545ec2b27d925674fb7d0df07be0f8c6332f74b8ee2e5b72a1950985b",
+      "native_LF": [
+        11,
+        11
+      ],
+      "quote_sha256": "85476683838bfb5a1097cab6b3865a8e9f79b2df8647f6598d173f13d4d1bfb8",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 33,
+      "id": "VATSALE",
+      "article": "UStG \u00a715a(8)/(9)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__15a.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1c827794c9be2ff8.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1c827794c9be2ff8.reader.txt",
+      "raw_sha256": "0936dfcdc994d709e6e0961ebbb483be7c29b303fa1d1694275396072868253f",
+      "reader_sha256": "fd80c34545ec2b27d925674fb7d0df07be0f8c6332f74b8ee2e5b72a1950985b",
+      "native_LF": [
+        15,
+        16
+      ],
+      "quote_sha256": "a6260e0cf05f9c35d6362804d998bfbb0e694dc72151e292478714731617785f",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 34,
+      "id": "SMALLCORRECT",
+      "article": "UStDV \u00a744(1)\u2013(3), disposal exception explicit",
+      "official_url": "https://www.gesetze-im-internet.de/ustdv_1980/__44.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U78b29dc5315f9a80.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U78b29dc5315f9a80.reader.txt",
+      "raw_sha256": "8bb6172c9ba291c2a0f1c649d987416baf5cb1f07bca1f030f61ddf6d1e959d3",
+      "reader_sha256": "b65339729213018968d351d7c118801fa897f301ac29d361aaa5ad58662e1f1c",
+      "native_LF": [
+        7,
+        9
+      ],
+      "quote_sha256": "e59828c11bb762eae474fbd86469a884cdd36804164558384e0f17cacb103a3d",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 35,
+      "id": "EXTEND",
+      "article": "UStDV \u00a746",
+      "official_url": "https://www.gesetze-im-internet.de/ustdv_1980/__46.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustdv-46-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U63f984ac340a6450.reader.txt",
+      "raw_sha256": "03e4fb4bab13a7b281c7f79722b7bb94ff94201c733fe433989bc45cc4d85c97",
+      "reader_sha256": "893d9df1f24805a7bfe6a6286addf8e52d4e060652122c9fb79ae8940ce2a890",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "d67184b6334eb497070cc5b529251f06314750702d47ecde97c81ab746f265a6",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 36,
+      "id": "ELEVENTH",
+      "article": "UStDV \u00a747(1)\u2013(3)",
+      "official_url": "https://www.gesetze-im-internet.de/ustdv_1980/__47.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustdv-47-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua93b2c7db129c17c.reader.txt",
+      "raw_sha256": "b78a891ebb4a5a546bf3e216ef179b36169fda42702f147dcdb0c107fcc70d9c",
+      "reader_sha256": "324f8f603e100e5b6208105d98c9513d50e5cdfd02b6f478e76e3fccd97a59be",
+      "native_LF": [
+        7,
+        9
+      ],
+      "quote_sha256": "0a3f4f7874bb742190e554ca79b0f1b9e6092346aab8183a2d8fc036ce8ef2d1",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 37,
+      "id": "EXTENDDUE",
+      "article": "UStDV \u00a748(1)\u2013(4)",
+      "official_url": "https://www.gesetze-im-internet.de/ustdv_1980/__48.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustdv-48-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2a2cd1f0609be82e.reader.txt",
+      "raw_sha256": "ee6a36bf9321f1a212ead44f4be6529210a2a0a0ee325ab51d105140c045c89c",
+      "reader_sha256": "d14e8391a946765ebafecb14a4d08724323f6c94450d952083dbf7500145a442",
+      "native_LF": [
+        7,
+        10
+      ],
+      "quote_sha256": "dbce603ed7b4fcb3de02cc90913a730f53db11881d9e9702bc7f4d2b070a78d9",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 38,
+      "id": "RATES",
+      "article": "UStG \u00a712(1)/(2) no1",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__12.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-12-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6614807cebd670d7.reader.txt",
+      "raw_sha256": "e8753b36595e445e776716ce43ec8d01633d9c548aec77d776105ae9484d09d0",
+      "reader_sha256": "f0f9a4d727981094aa001b41d96a3fa3fda7e9692ab888c4d004384b3a8ba259",
+      "native_LF": [
+        7,
+        9
+      ],
+      "quote_sha256": "af46e84a0255d2f8a6d20bfc330965c5c00c28e3268cb6b865494da86caed9ec",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 39,
+      "id": "INVOICETRANSITION",
+      "article": "UStG \u00a727(38)/(39)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__27.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-27-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue97e872a75e26a99.reader.txt",
+      "raw_sha256": "58f8018d2dc7512cea52ca14847700b68fe07c8bfa3bc4e4aebc29c5f7451ee0",
+      "reader_sha256": "07dbb451d4da7ca6d39ae7f8154504e6fdaeaa8541ab72cdb24c89d6fed75c3d",
+      "native_LF": [
+        59,
+        66
+      ],
+      "quote_sha256": "cf494e8ac6892a62c76179d86e9b8dde96b76749561837bb63e21568839b7765",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 40,
+      "id": "EURO10",
+      "article": "UStG \u00a73c(1)/(4)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__3c.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-3c-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U389082e12d3ec9bc.reader.txt",
+      "raw_sha256": "11f0492749fef609ff2815df9c1651ae25746a427f1be31640641687884ad2ae",
+      "reader_sha256": "8a53d822558fb41697f03cfa87fb113c0d2be86c15be5fd77f57d9bc1f9393ac",
+      "native_LF": [
+        7,
+        10
+      ],
+      "quote_sha256": "12b133f327d47b8c8969a27b489ba41fc8b25b6abd2d8bf98c94a26c2dde2b98",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 41,
+      "id": "OSS",
+      "article": "UStG \u00a718j(1)\u2013(4)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__18j.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7b157a50cc83ca5a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7b157a50cc83ca5a.reader.txt",
+      "raw_sha256": "313661bdf7f40dfa915775164a17ef3429aa09a297ad53aa8777ee480f905d0a",
+      "reader_sha256": "b761ea29e2dc65dd0c8d80cfac37773c768a8c92be9aa17d158762f6c6cd94ab",
+      "native_LF": [
+        7,
+        14
+      ],
+      "quote_sha256": "10e861460e1fba3507bcf0b9aaeb289c47d9e9d4a5c7ef0c454d3a009ab4c499",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 42,
+      "id": "OSSEXCLUDE",
+      "article": "UStG \u00a718j(6)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__18j.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7b157a50cc83ca5a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7b157a50cc83ca5a.reader.txt",
+      "raw_sha256": "313661bdf7f40dfa915775164a17ef3429aa09a297ad53aa8777ee480f905d0a",
+      "reader_sha256": "b761ea29e2dc65dd0c8d80cfac37773c768a8c92be9aa17d158762f6c6cd94ab",
+      "native_LF": [
+        16,
+        16
+      ],
+      "quote_sha256": "1f26f9454a897896661dc41e1aa8bbe31ae8501b7ae16fd766eb248c487b7af1",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 43,
+      "id": "OSSDEADLINES",
+      "article": "BZSt actual OSS quarter-end dates/null return/payment receipt",
+      "official_url": "https://www.bzst.de/DE/Unternehmen/Umsatzsteuer/One-Stop-Shop_EU/one_stop_shop_eu_node.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7ffe17cf27fa5eb7.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7ffe17cf27fa5eb7.reader.txt",
+      "raw_sha256": "c35570bb92b93b5ca4c46368afe80e9e87816942fa885a88404cf192dfabcf51",
+      "reader_sha256": "09335dee82d6f9c73550e06cf825223ab84129fb3c7e920d20eaba0fb620dbb8",
+      "native_LF": [
+        68,
+        80
+      ],
+      "quote_sha256": "0d76ffb5f10439d8911c0a2007494b4dbea8715ba8f206da9fc853fccd682740",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 44,
+      "id": "RCIN",
+      "article": "UStG \u00a713b(1)/(2) nos1\u20134",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__13b.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-13b-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ea725765e8cb8bb.reader.txt",
+      "raw_sha256": "edd8c2e8992e24eb771e5d261eea2c742740cf56f6463b6dd9d61a2b674da145",
+      "reader_sha256": "b4b1ee940bfc961b7035c2f5d303c9cc874220a9f57f6a27b0a82a3747c535d3",
+      "native_LF": [
+        7,
+        15
+      ],
+      "quote_sha256": "1f284e7b21e9cb169a895f7e3706922582eac901b82c0754ec26d0476f59f53a",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 45,
+      "id": "RC5000",
+      "article": "UStG \u00a713b(2) nos8\u201311",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__13b.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-13b-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ea725765e8cb8bb.reader.txt",
+      "raw_sha256": "edd8c2e8992e24eb771e5d261eea2c742740cf56f6463b6dd9d61a2b674da145",
+      "reader_sha256": "b4b1ee940bfc961b7035c2f5d303c9cc874220a9f57f6a27b0a82a3747c535d3",
+      "native_LF": [
+        25,
+        32
+      ],
+      "quote_sha256": "4391b48d1b5ef942cd0a3e72143037449cb27442b3d6acad9a3c8a081abdb97f",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 46,
+      "id": "RCWHO",
+      "article": "UStG \u00a713b(5), exact recipient gates",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__13b.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-13b-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ea725765e8cb8bb.reader.txt",
+      "raw_sha256": "edd8c2e8992e24eb771e5d261eea2c742740cf56f6463b6dd9d61a2b674da145",
+      "reader_sha256": "b4b1ee940bfc961b7035c2f5d303c9cc874220a9f57f6a27b0a82a3747c535d3",
+      "native_LF": [
+        37,
+        37
+      ],
+      "quote_sha256": "600f71229e33d9069f9ec15f00cce9432247aa666ebaa4ff99abcccecd0f356f",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 47,
+      "id": "VATFINE",
+      "article": "UStG \u00a726a(1)/(2) nos1\u20133",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__26a.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaa34b9ace5183c69.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaa34b9ace5183c69.reader.txt",
+      "raw_sha256": "e046d9bdd2da18c1b5fe02a5c63390dec6a4956bad2d35d8d43ead931302a796",
+      "reader_sha256": "2851c3ba314c95f3ae87ec842c252bd9c6119cab4cdbad881b8662cb07854019",
+      "native_LF": [
+        7,
+        13
+      ],
+      "quote_sha256": "bf93ff19678761fc5e58cecd25e8c351adce227a73a2318c9db2726d64d64c87",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 48,
+      "id": "VATFINEMAX",
+      "article": "UStG \u00a726a(3)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__26a.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaa34b9ace5183c69.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaa34b9ace5183c69.reader.txt",
+      "raw_sha256": "e046d9bdd2da18c1b5fe02a5c63390dec6a4956bad2d35d8d43ead931302a796",
+      "reader_sha256": "2851c3ba314c95f3ae87ec842c252bd9c6119cab4cdbad881b8662cb07854019",
+      "native_LF": [
+        28,
+        28
+      ],
+      "quote_sha256": "fc79145f0dba806d4f85929a7764c3b549e892378637ad364382743e45b36a04",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 49,
+      "id": "AUTH",
+      "article": "AO \u00a787a(6)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__87a.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2264927402f77607.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2264927402f77607.reader.txt",
+      "raw_sha256": "ffe49ea543ee97e8829eec6a353a9bdce808b4578c9fddbabbe47053807b8dba",
+      "reader_sha256": "54ae8742ccf51da3e14e7993b461e683543e498167f42af7e6c0e943df76f108",
+      "native_LF": [
+        13,
+        13
+      ],
+      "quote_sha256": "633e1d9e0402d471fd4b35b6c3785aeb723e7190aa7a08ce4a0f947c44391c13",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 50,
+      "id": "ADVISERSTOP",
+      "article": "AO \u00a7149(5)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        42,
+        42
+      ],
+      "quote_sha256": "54381b8e18db05e44e9690f23e7293059f4507d3318c2d95224b7ae15b682657",
+      "actual_read_bridge": {
+        "guide": "de-trade-tax",
+        "quote_row": 51,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 51,
+      "id": "VATADVLATE",
+      "article": "AO \u00a7152(8) no1",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        30,
+        31
+      ],
+      "quote_sha256": "1663f71241a6ed3dbc5cfc67c230f8cc66245b6d6bfd15afcf5fb8205513bfd8",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 52,
+      "id": "TAXPOINT",
+      "article": "UStG \u00a713(1) no1(a)/(b)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__13.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-13-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5410aa1779126db8.reader.txt",
+      "raw_sha256": "651a989b51b160c85addf12be5cceabf2e668b8f945fcdd6aca64e5baa867967",
+      "reader_sha256": "f6e9f249c3c65e9b7ff053a32dde082358a2c8b87c92d51c85b082948746e6aa",
+      "native_LF": [
+        7,
+        11
+      ],
+      "quote_sha256": "7fb2525c176226e4c8838c601d2c6678d9858b7bce31c632023ab775d9bdf071",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 53,
+      "id": "CORRECTBASE",
+      "article": "UStG \u00a717(1)",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__17.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-17-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9782b57d3498ef94.reader.txt",
+      "raw_sha256": "a2225062fe681e09ae188419fd29a3ed14598db343610689944a45e1b0ff0329",
+      "reader_sha256": "2ea2fd2f6fec865715fe2bad71fa3b67e397d0f1aed842f4335b840c0cb20eaa",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "ebc36f25a31f0e53579878702f728b8b31d7f9c89b3b41562891d8310a94f65f",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 54,
+      "id": "FORMTOTAL",
+      "article": "Official2026 USt2A lines124\u2013126/Kz816/820",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.reader.txt",
+      "raw_sha256": "6b1225efbfde4d23ce1dd86fe899a33caf443443d96057dcee379414a36eab25",
+      "reader_sha256": "17066e309c2fbde696038c95d3e83b8582bdd1b657a0072f96e6ec3b7cee1a64",
+      "native_LF": [
+        646,
+        660
+      ],
+      "quote_sha256": "0a961641b34fe19c0fcfe41d8597a979b5e1539bac9403f2945acf5f5730b814",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 55,
+      "id": "FORMPAY",
+      "article": "Official2026 USt2E Vorauszahlungssoll/closing balance/consent",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.reader.txt",
+      "raw_sha256": "6b1225efbfde4d23ce1dd86fe899a33caf443443d96057dcee379414a36eab25",
+      "reader_sha256": "17066e309c2fbde696038c95d3e83b8582bdd1b657a0072f96e6ec3b7cee1a64",
+      "native_LF": [
+        1737,
+        1753
+      ],
+      "quote_sha256": "be22e44e3901d3c0657913214ef8aa42e032ad1cae7fb39bc95b4fc94e8f92f1",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 56,
+      "id": "FORMADDRESS",
+      "article": "BMF29December2025 letter para4 foreign-address2026",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.reader.txt",
+      "raw_sha256": "6b1225efbfde4d23ce1dd86fe899a33caf443443d96057dcee379414a36eab25",
+      "reader_sha256": "17066e309c2fbde696038c95d3e83b8582bdd1b657a0072f96e6ec3b7cee1a64",
+      "native_LF": [
+        69,
+        70
+      ],
+      "quote_sha256": "03eb57da3ba32532c7317598515f3956f09b88cbf7739ed2606671223f346b7c",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 57,
+      "id": "FORMKU",
+      "article": "Official2026 USt2E line53 exemption/duty and startup25,000",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.reader.txt",
+      "raw_sha256": "6b1225efbfde4d23ce1dd86fe899a33caf443443d96057dcee379414a36eab25",
+      "reader_sha256": "17066e309c2fbde696038c95d3e83b8582bdd1b657a0072f96e6ec3b7cee1a64",
+      "native_LF": [
+        1182,
+        1200
+      ],
+      "quote_sha256": "2ba812ee9fef868dc697e2f9e70c9378d9e4b1c684ea2d18fd6546591fe261b5",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 58,
+      "id": "FORMCASHSWITCH",
+      "article": "Official2026 USt2E line21 unchanged cash supplies on later receipt",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.reader.txt",
+      "raw_sha256": "6b1225efbfde4d23ce1dd86fe899a33caf443443d96057dcee379414a36eab25",
+      "reader_sha256": "17066e309c2fbde696038c95d3e83b8582bdd1b657a0072f96e6ec3b7cee1a64",
+      "native_LF": [
+        922,
+        934
+      ],
+      "quote_sha256": "3f71a70b6fd6b8de666e07e06d212ade0c32259954cf34ca45f1cf865a27f2e2",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 59,
+      "id": "FORMAFTER",
+      "article": "Official2026 USt2E line39 tax on former-KU advances",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.reader.txt",
+      "raw_sha256": "6b1225efbfde4d23ce1dd86fe899a33caf443443d96057dcee379414a36eab25",
+      "reader_sha256": "17066e309c2fbde696038c95d3e83b8582bdd1b657a0072f96e6ec3b7cee1a64",
+      "native_LF": [
+        1077,
+        1083
+      ],
+      "quote_sha256": "8f90ba919844057f09e6d3ed796ea2f5cad442f7d5f0c3e98d8e7b13c6e845a4",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 60,
+      "id": "FORMADVAFTER",
+      "article": "Official2026 USt1E line46 tax on former-KU advances",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-vordruckmuster-USt-voranmeldung-2026.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-ustva-vordruck-2026-20251229.pdf",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Udc69dbdd94c3ff57.reader.txt",
+      "raw_sha256": "82e7d63a0faec542bb184acb438eaf4ce90a2d7db067bb47f92ae13b4b17613d",
+      "reader_sha256": "c4371c79f283a7dae1603285ad024bf716151f410c2607da1d5044f72ea097a9",
+      "native_LF": [
+        992,
+        1007
+      ],
+      "quote_sha256": "87fc5ebf20ad3a77b747cd755fa9e1026b96662fc5d6e15ad55dffeaf2c82fff",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 61,
+      "id": "FORMKUSWITCH",
+      "article": "Official2026 USt2A lines99\u2013102 change of circumstance",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.reader.txt",
+      "raw_sha256": "6b1225efbfde4d23ce1dd86fe899a33caf443443d96057dcee379414a36eab25",
+      "reader_sha256": "17066e309c2fbde696038c95d3e83b8582bdd1b657a0072f96e6ec3b7cee1a64",
+      "native_LF": [
+        578,
+        586
+      ],
+      "quote_sha256": "7b8ed295c0356be14eb17423ecc0a523c3c4619c85c5a1087823a5ed2258febe",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 62,
+      "id": "UAEKUDUTY",
+      "article": "UStAE19.1(1) current first3sentences,2025edition",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.reader.txt",
+      "raw_sha256": "f546602c2b7919aeb660c3a95ef6ec7b9d31e68ae4cc57d4aa1d84bf6b2bac0f",
+      "reader_sha256": "20c3385e52442415812a5211a9e944fca275ccadb7b4c7938f1515df1eabccd0",
+      "native_LF": [
+        40351,
+        40359
+      ],
+      "quote_sha256": "74bfa02538bc5c30fa4236c9c2f3c42417dd44e53ab11313c8d85582b329157c",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 63,
+      "id": "UAEKUTHRESHOLD",
+      "article": "UStAE19.1(2),2025edition",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.reader.txt",
+      "raw_sha256": "f546602c2b7919aeb660c3a95ef6ec7b9d31e68ae4cc57d4aa1d84bf6b2bac0f",
+      "reader_sha256": "20c3385e52442415812a5211a9e944fca275ccadb7b4c7938f1515df1eabccd0",
+      "native_LF": [
+        40430,
+        40439
+      ],
+      "quote_sha256": "70d2145d2e6a0eda68de8da3df4463763682825c74375622a5d02d5d126f8790",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 64,
+      "id": "UAESTARTUP",
+      "article": "UStAE19.1(3),2025edition",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.reader.txt",
+      "raw_sha256": "f546602c2b7919aeb660c3a95ef6ec7b9d31e68ae4cc57d4aa1d84bf6b2bac0f",
+      "reader_sha256": "20c3385e52442415812a5211a9e944fca275ccadb7b4c7938f1515df1eabccd0",
+      "native_LF": [
+        40453,
+        40459
+      ],
+      "quote_sha256": "afa923b96e3335b793292a2fe85e45dead5d88d2d18cb01955d36a0f66fbebbd",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 65,
+      "id": "UAETURNOVER",
+      "article": "UStAE19.2(1)/(2),2025edition",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.reader.txt",
+      "raw_sha256": "f546602c2b7919aeb660c3a95ef6ec7b9d31e68ae4cc57d4aa1d84bf6b2bac0f",
+      "reader_sha256": "20c3385e52442415812a5211a9e944fca275ccadb7b4c7938f1515df1eabccd0",
+      "native_LF": [
+        40487,
+        40497
+      ],
+      "quote_sha256": "38054f9b1687e654a02d561b6b0d8d13d71394c7ebb812de0d8813593138f7f1",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 66,
+      "id": "UAELATESUPPLY",
+      "article": "UStAE19.7(1),2025edition; excludes current-year threshold crossing",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.reader.txt",
+      "raw_sha256": "f546602c2b7919aeb660c3a95ef6ec7b9d31e68ae4cc57d4aa1d84bf6b2bac0f",
+      "reader_sha256": "20c3385e52442415812a5211a9e944fca275ccadb7b4c7938f1515df1eabccd0",
+      "native_LF": [
+        40794,
+        40798
+      ],
+      "quote_sha256": "2c0b2d4e11a9146949e7dafb0a91b7d9ea87c516740f102229457ae89f15cbc0",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    },
+    {
+      "row": 67,
+      "id": "RECEIVEE",
+      "article": "BMF e-invoice FAQ reception from2025",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.reader.txt",
+      "raw_sha256": "9ca6fb9be039c1ded8633d709d0f29fbb21a7153b5e42dcc59e26ca14c76ea99",
+      "reader_sha256": "e77873437605a46672a2395b677def497441f842f9ff79a3c14575d3af08da5a",
+      "native_LF": [
+        382,
+        382
+      ],
+      "quote_sha256": "449d91594ed07de37a2e4eb1e5d05f1c13fd37c66e51e13c9f52d0a1ffe49fd0",
+      "actual_read": "Full selected quotation directly read in bounded new-quote batches1\u201310/11\u201320/21\u201330/31\u201339/40\u201347; new index is subset index, original quote index retained here."
+    }
+  ]
+}

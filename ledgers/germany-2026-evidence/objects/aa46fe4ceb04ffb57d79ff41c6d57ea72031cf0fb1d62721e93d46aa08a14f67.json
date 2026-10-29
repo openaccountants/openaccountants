@@ -1,0 +1,13 @@
+{
+  "exact_offset_inverse": true,
+  "original_oa_blocks_byte_exact": 2,
+  "old_source_URL_order_exact": true,
+  "new_source_URLs": [
+    "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201810105?type=1646225765"
+  ],
+  "protected_metadata_CTA_exact": true,
+  "native_LF_count_unchanged": true,
+  "before_sha256": "5aa137d3c5c36e5cda3e2a3e5020e858c6d35f79a09d5c2e4289c45aac84cd54",
+  "after_sha256": "12ed4b694be25ce93605b525143497df24466df62f3f4289dd0c71b9c38afe6a",
+  "independent_country_review": "not yet performed"
+}

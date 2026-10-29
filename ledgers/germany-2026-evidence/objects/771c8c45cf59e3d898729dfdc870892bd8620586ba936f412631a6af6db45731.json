@@ -1,0 +1,44 @@
+[
+  {
+    "finding": "version",
+    "before": "version: 0.2",
+    "after": "version: 0.3",
+    "before_native_LF": 4
+  },
+  {
+    "finding": "R23",
+    "before": "**The EU small business scheme.** A German business that wants the small business exemption in another member state joins a special reporting procedure at the Bundeszentralamt für Steuern (BZSt), which issues a small-business identification number (§ 19a(1) UStG). Its EU-wide annual turnover must not exceed EUR 100,000 in the previous or the current year. It files a quarterly turnover report with the BZSt within one month after each quarter (§ 19a(3)). It must tell the BZSt within 15 working days if EU turnover passes EUR 100,000; participation ends at that point (§ 19a(4)). A business based elsewhere in the EU can use the German exemption on the same EUR 100,000 test with a small-business number from its home state (§ 19(4)).",
+    "after": "**The EU small business scheme.** A German business seeking the small business exemption in another member state must apply electronically for the special reporting procedure at the Bundeszentralamt für Steuern (BZSt), which issues a small-business identification number (§ 19a(1) UStG). Its EU-wide annual turnover must not exceed EUR 100,000 in either the previous or current year; it must also meet the actual exemption conditions of each host state and the no-duplicate-procedure-registration condition in § 19a(1) no. 4. A BZSt number and the EU turnover test alone do not establish host-state exemption. It files a quarterly turnover report with the BZSt within one month after each quarter (§ 19a(3)). It must tell the BZSt within 15 working days if EU turnover passes EUR 100,000; participation ends at that point (§ 19a(4)). A business based elsewhere in the EU can use Germany's exemption only if the incorporated German § 19(1) limits also hold: German total turnover under § 19(2) at most EUR 25,000 in the preceding year and at most EUR 100,000 in the current year. It additionally needs EU-wide annual turnover at most EUR 100,000 in both years and the home-state small-business number valid for that German exemption (§ 19(4)).",
+    "before_native_LF": 39
+  },
+  {
+    "finding": "R24",
+    "before": "**Small business: what counts.** Total turnover is the sum of taxable supplies counted on receipts, less exempt financial and insurance supplies and some others listed in § 19(2), and without sales of fixed assets. Supplies on which the customer owes the tax under § 13b count in; services the small business buys under § 13b do not (UStAE 19.2(2)). A small business still owes VAT on imports, intra-Community acquisitions and reverse-charge purchases (UStAE 19.1(1)).",
+    "after": "**Small business: what counts.** Total turnover is the sum of taxable supplies counted on receipts, less the two distinct exempt-supply categories in § 19(2): no. 1 subtracts supplies exempt under § 4 no. 8(i), no. 9(b) and nos. 11–29; no. 2 subtracts supplies exempt under § 4 no. 8(a)–(h), no. 9(a) and no. 10 only if they are ancillary supplies (Hilfsumsätze). Main financial or insurance activity in that second category is not automatically subtracted; establish ancillary status from the actual activity, without an invented numerical test. Sales of fixed assets are excluded separately. Supplies on which the customer owes the tax under § 13b count in; services the small business buys under § 13b do not (UStAE 19.2(2)). A small business still owes VAT on imports, intra-Community acquisitions and reverse-charge purchases (UStAE 19.1(1)).",
+    "before_native_LF": 86
+  },
+  {
+    "finding": "R25",
+    "before": "**Input tax correction (§ 15a UStG).** If the use of an asset changes within five years of first use (ten years for land and buildings), the input tax deducted on it is corrected by one fifth (or one tenth) a year for each year of change (§ 15a(1) and (5)). A sale or a private withdrawal during the period is also a change (§ 15a(8)). The UStDV simplifications are in the table: nothing below EUR 1,000 of input tax, nothing for a change under 10 points unless above EUR 1,000, and generally only in the annual return up to EUR 6,000. If the asset is sold or supplied under § 3(1b) during the correction period, § 44(3) sentence 2 instead requires the corrections for the disposal year and the remaining years in the advance return for the period of disposal, even when the amount is no more than EUR 6,000.",
+    "after": "**Input tax correction (§ 15a UStG).** If the use of an asset changes within five years of first use (ten years for land and buildings), the input tax deducted on it is corrected by one fifth (or one tenth) a year for each year of change (§ 15a(1) and (5)). For a still usable asset used more than once, a sale or deemed supply under § 3(1b) before the correction period ends is also a change if its VAT treatment differs from the use governing the original input-tax deduction (§ 15a(8)). A sale taxed on the same basis as the original fully taxable use does not trigger that disposal adjustment merely because the asset is sold. Under § 15a(9), a qualifying disposal is treated as continued business use on the corresponding changed basis for the remaining correction period. The UStDV simplifications are in the table: nothing where input tax on the acquisition or production cost is not more than EUR 1,000, nothing for a change under 10 points unless above EUR 1,000, and generally only in the annual return up to EUR 6,000. If the asset is sold or supplied under § 3(1b) during the correction period, § 44(3) sentence 2 instead requires the corrections for the disposal year and the remaining years in the advance return for the period of disposal, even when the amount is no more than EUR 6,000.",
+    "before_native_LF": 94
+  },
+  {
+    "finding": "R23",
+    "before": "- **EU businesses using the German small business exemption** need the small-business number from their home state and EU turnover within EUR 100,000 (§ 19(4)). They waive it in their home state, not in Germany (§ 19(5)).",
+    "after": "- **EU businesses using the German small business exemption** need the home-state small-business number valid for Germany, EU-wide annual turnover at most EUR 100,000 in both previous and current years, and the incorporated German § 19(1) total-turnover limits of EUR 25,000 in the preceding year and EUR 100,000 in the current year (§ 19(4)). For example, EU turnover of EUR 80,000 and German turnover of EUR 30,000 in 2025 fail the German prior-year limb for 2026 despite a valid number; German turnover of exactly EUR 25,000 passes that limb only, subject to all other conditions. They waive the German exemption through their home state, not in Germany (§ 19(5)).",
+    "before_native_LF": 129
+  },
+  {
+    "finding": "R23-R25 intake",
+    "before": "6. Sales to consumers in other EU states, and whether the business is registered for the one-stop shop or the EU small business scheme.",
+    "after": "6. Sales to consumers in other EU states, and whether the business is registered for the one-stop shop or the EU small business scheme.\n7. For the small business scheme, German and EU-wide turnover separately for both years, each actual host-state exemption condition and procedure-registration status; separately identify the § 19(2) exempt categories and actual ancillary status. For an asset disposal, obtain original-use and disposal VAT treatment, whether it is still usable, and input VAT on its acquisition or production cost.",
+    "before_native_LF": 213
+  },
+  {
+    "finding": "R23-R25 sources",
+    "before": "| ELSTER, the filing portal | https://www.elster.de | 2026-10-23 |",
+    "after": "| ELSTER, the filing portal | https://www.elster.de | 2026-10-23 |\n| UStG §§ 19(1)–(5), 19a(1)–(4), incorporated host-state gates and exact excluded turnover categories; selected operative clauses actually read | https://www.gesetze-im-internet.de/ustg_1980/__19.html | 2026-10-29 |\n| UStG § 15a(8)–(9) and UStDV § 44(1)–(3), disposal condition, inclusive simplification and timing; selected operative clauses actually read | https://www.gesetze-im-internet.de/ustg_1980/__15a.html | 2026-10-29 |",
+    "before_native_LF": 246
+  }
+]

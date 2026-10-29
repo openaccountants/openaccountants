@@ -1,0 +1,11 @@
+{
+  "id": "U5ff13411e4f1ce8a",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2023-12-07-ansaessigkeitsbescheinigungen-und-arbeitgeberbescheinigung-ueber-die-nichtrueckkehr.pdf?__blob=publicationFile&v=3",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5ff13411e4f1ce8a.body",
+  "raw_sha256": "0adc8f56319b44d9030ba84c6f32f84027da7dcac433095663e1c6ccec405bcd",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5ff13411e4f1ce8a.reader.txt",
+  "reader_sha256": "f80732f7f88fc88153cf9721b73f1c0ffb75731e1a44015d996e544a398c1792",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

@@ -1,0 +1,1613 @@
+{
+  "all_frozen_current_units_read": 156,
+  "claim_read_batches": [
+    [
+      1,
+      60
+    ],
+    [
+      61,
+      115
+    ],
+    [
+      116,
+      156
+    ]
+  ],
+  "selected_quote_records": [
+    {
+      "row": 1,
+      "id": "Rn2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        98,
+        101
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "9ac7a6f70b8e474bf8bb308bcd6d1df92f46f006e674f5e518e8d86c536436a1",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 2,
+      "id": "Rn3",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        104,
+        129
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "2d61e22147910ab8fa599a812b77f33a9f420c57b0182d9e21436fcbc080de81",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 3,
+      "id": "Rn4",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        132,
+        136
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "d6287830c16f541b446687cd03bad6fd68d6e9ad300587327189dbbf14a0b4b0",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 4,
+      "id": "Rn5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        139,
+        146
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "ae88204e13bf5dd6e0c1a9712ac87b620501eede73d727126ca077eb0c1bc03d",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 5,
+      "id": "Rn26",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        405,
+        405
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "52fcd158e07bcd8db76a40a96d1fcd488e72ff7fa01f85ab85929f2379501baa",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 6,
+      "id": "Rn31",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        491,
+        497
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "28b3bec1c659f91013c54aba685f4543f4c329d49e5281911af378cac1398cc4",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 7,
+      "id": "Rn33",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        511,
+        525
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "d7c4f75ff0c7e828d03d29c9374c07e72fe737cf12978394cbb98258df5216e6",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 8,
+      "id": "Rn34",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        528,
+        530
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "c917be66c6a1374e78d62c9a5e61ef1dada052cd27a3f25e0899b00dd97b30d9",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 9,
+      "id": "Rn35",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        534,
+        536
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "11c5c39d29d85dffb984260946fd033d21145a9ae9df55794dc0dab115744ffe",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 10,
+      "id": "Rn36",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        539,
+        540
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "3632fe76bc0572e2f42f6f55f21ad68178c5e67588ab25d146cfa7cfd0f32e50",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 11,
+      "id": "Rn37",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        543,
+        544
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "7287f146a23b9d9bfd83b15415eafea6434091d6af5dfdc88cac35ca070b1221",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 12,
+      "id": "Rn38",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        547,
+        552
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "0e45f9bd223e797ce43bb45048529dd5537603fd9d8a61ba09fb61e14ce2c917",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 13,
+      "id": "Rn39",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        555,
+        558
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "2d541a6681efd6fce43eefb9a086ac766f82f7a6f0fe715b970dbf4a1efd5154",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 14,
+      "id": "Rn40",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        561,
+        568
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "298318c2c18325596e84a1989832408c60318f9dbf6163ab47c2ca3031f4783d",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 15,
+      "id": "Rn42",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        584,
+        585
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "3dbb9b6c411096a4a369801a651ab95a4608814f3e6e39ae91181f85208a1bf1",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 16,
+      "id": "Rn43",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        588,
+        594
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "d0f900643223e6fccd0e357540cc49e2909b595acfbe88cb69032779236f1d2d",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 17,
+      "id": "Rn44",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        597,
+        604
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "dacfde9730786639f59a9211793c13ac01073c1b65ed70dfe8075a1bc02768c1",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 18,
+      "id": "Rn45",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        607,
+        612
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "9661e63647e3c5b8fadfb31c602eb6e6ebc2cee925397422c7b6892b90809092",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 19,
+      "id": "Rn46",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        615,
+        627
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "c326988c66d15907995f7e2f6acb9cf025891eddd1a027bfa506c4e1c784d352",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 20,
+      "id": "Rn47",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        630,
+        635
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "77f4d05dc325dcd9a4c0c886a1d3e1248963e0b41fb667ae6c6cd5f420574523",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 21,
+      "id": "Rn48",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        639,
+        648
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "59319c47a0f7ec403e0420cfff472761f88cf27472e896491ed95483ee839499",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 22,
+      "id": "Rn48a",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        651,
+        655
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "5bdf60f3598960e499c93dad315767b09dcdb3c097fa98f9d3d284631270a915",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 23,
+      "id": "Rn50",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        665,
+        667
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "b02be165bab51e05f6879083e84b9b5e1f1bf7a0bcf5cd94a09d9f8575c3b522",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 24,
+      "id": "Rn52",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        681,
+        685
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "66ee2d4032ee407c3315f36b374ac56db84d0069ce127c3254e63860b3cd5e16",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 25,
+      "id": "Rn53",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        689,
+        700
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "8a102c2a8dbd8eebceb5493361fcc104c6b4d07ccd494aaa2eb9a94148f94871",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 26,
+      "id": "Rn54",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        703,
+        714
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "738102575d4f9db6193559a412f5b056892e1460295c2801bbe87a83a2bacd35",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 27,
+      "id": "Rn55",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        717,
+        727
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "f3464ab2f00cb57e28e02f5a56346796903dbc25389f7a82e45ffe1dc09e2851",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 28,
+      "id": "Rn56",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        730,
+        734
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "a45fed33ade1aa8393275417cc56c4e40db260ad4d16625a7508f51716e4ed9a",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 29,
+      "id": "Rn57",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        738,
+        742
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "9933191aa3fec7126009f523834ad92af94fad1724f289c6176ff3d7de82703f",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 30,
+      "id": "Rn58",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        745,
+        751
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "b776666ab3c69944f0007288df307a3456720ff76b1717c51dc50a015488ec1c",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 31,
+      "id": "Rn59",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        754,
+        757
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "0a130ea5a8ba092a2d28184e0c04a7c693f585c84a82adbbf9ab5c7758d6afeb",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 32,
+      "id": "Rn60",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        760,
+        763
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "2407232876a45b5189f717cdd7c64005fd859dbcef9bd74cf5dd80319eaad034",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 33,
+      "id": "Rn61",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        767,
+        774
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "f888fb94a48a82d196ec36687a04f6564c30ee745712e86786ab375fc3466abd",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read_bridge": {
+        "guide": "de-capital-gains",
+        "quote_row": 47,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 34,
+      "id": "Rn62",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        777,
+        783
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "c016603e65f9ce8e4f1457a3e047162aaac961d9b7a25f0744806590d7ff06c2",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read_bridge": {
+        "guide": "de-capital-gains",
+        "quote_row": 47,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 35,
+      "id": "Rn63",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        786,
+        788
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "24328f6f3002830dce36d247da8e2860b266fa7d56a35a0a2855b5a4f415d782",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read_bridge": {
+        "guide": "de-capital-gains",
+        "quote_row": 48,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 36,
+      "id": "Rn65",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        802,
+        809
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "c4d4af76a83825fe1105635a367620633b7ae357683ab2c8d6308724a428377e",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 37,
+      "id": "Rn67",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        819,
+        831
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "42752be0cdf485c6c7d29f4dff96890d2a43191931c64a25a3accaada309b029",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 38,
+      "id": "Rn68",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        834,
+        845
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "8437919570812fa094aa14ea5414122804409d83e48ce7e6ee2741dcea9ce21b",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 39,
+      "id": "Rn70",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        861,
+        869
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "cafa224e04dbf74270216b3b8f8570cbf13125f85f2b2d69f192949d86bbba7e",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 40,
+      "id": "Rn71",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        872,
+        883
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "095cce6fb6d29cca37f09cee8e94067332133ccf940e315f5f29fb3e6cc14982",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 41,
+      "id": "Rn72",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        886,
+        889
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "839bd80e62700f686936fd5283945f7a6f3443733667030d8c6e439d84c6b860",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 42,
+      "id": "Rn73",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        892,
+        895
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "76b5697034d41db1dde4a048aae89814694722ee4be53fe9d72e5db800779ecb",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 43,
+      "id": "Rn74",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        898,
+        900
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "c735f13a7ba552df9b3986ad7f0b8c479406236e851d3faa1d0e1b05cfc93fdc",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 44,
+      "id": "Rn75",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        905,
+        917
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "ba6eaeeb40108b244314796ea475d942b21d61b4974b5b86a7f113b25bc7d9e1",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 45,
+      "id": "Rn76",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        921,
+        933
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "bb3d3e0fb748a90666f864ff518ff527b21351705b6a60ab4af23afb3c7ed11b",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 46,
+      "id": "Rn79",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        951,
+        956
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "3651ebdc7d7e74935e67b0ef2c34d1e06658e87c107f6c927706ec5ce362308a",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 47,
+      "id": "Rn80",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        959,
+        963
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "57fa3a6125b3295b4ea0e9aa33375092976bd6d0c0e6a490fcd2f1b9986dcec1",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 48,
+      "id": "Rn81",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        967,
+        968
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "45bab00cb2dcaa671a529f53f9b4925e0aae9e3d9f9d61917335efcdb851c146",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 49,
+      "id": "Rn82",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        971,
+        974
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "8a4185b5944c19eea6b168bca0dd0426df96916deb28f6ec14b1c2d6588fd36e",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 50,
+      "id": "Rn83",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        977,
+        980
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "09711907c337763174690a3f8d96f181fffa4bbdbce1a6b37f15bbca8c622d8d",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 51,
+      "id": "Rn84",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        983,
+        991
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "4108bf7bf3baf23d464146c491db6ea2226997692d367bbfbd0b8c20d02c52b7",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 52,
+      "id": "Rn85",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        994,
+        1002
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "9a7bfcb9a11918cb4f9d80945cd093329c132ee3d88792fe5137f57e3a26351c",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 53,
+      "id": "Rn86",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        1005,
+        1010
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "448c91b6e4bcb18aec41e28502aa0895a062f340f0ae021139c98409bb0aac66",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 54,
+      "id": "Rn87",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        1017,
+        1036
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "df781270ea531e7068742d4a3f28d2df46219e44ab3100f7473899f0d735208c",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 55,
+      "id": "Rn88",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        1039,
+        1045
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "372b3c9956586d6f911877deab2a20a169d789553d9c61818d39247c31f0f655",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 56,
+      "id": "Rn89",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        1048,
+        1062
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "e4000f2099a8dd25087aa0a6b242ac258cba6fef65b70c19edf2c30d32f553a5",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 57,
+      "id": "Rn90",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        1065,
+        1091
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "42d016b119a7a2528a5a736c8eb1e57e527faf3ede0d25231d1f0ffc4e60fd83",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 58,
+      "id": "Rn91",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        1093,
+        1112
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "725b36e02f8225ac55008d49ace5a4e4a7d4662ec76591c302f526a6aa97f408",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 59,
+      "id": "Rn92",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        1115,
+        1127
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "24c7aed3952e2d4a20ce94a8c084023895557ea2341a56c9c4f33a36c55d24da",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 60,
+      "id": "Rn100",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        1185,
+        1188
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "8d2faaa4a49e4b28f3ca0ca8d8c93b808705e9a490d3a9c11e54b04668801719",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 61,
+      "id": "Rn101",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        1191,
+        1199
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "a68b00e2a14aa116fd10d304568517d602c724af68dae67fd754794b689548af",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 62,
+      "id": "Rn102",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        1202,
+        1215
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "7f88f4c8d84493ab470e6f83effd3fa95df95b9543821e32d5f96fc325025d9c",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 63,
+      "id": "Rn103",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        1218,
+        1254
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "c0260d9e838b5822ed76ef994a4e65d51e274c7360fc712d82df4b974815c9ca",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 64,
+      "id": "Rn104",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        1257,
+        1262
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "d564dfffea2dba2f4b186deb3c9a96352e2802710e81ed1ce01b8c43219fc789",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 65,
+      "id": "Rn105",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        1265,
+        1276
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "fbbeca11c186f6090c230018bcd1b865f5fbaa3d234755e052b72e25fccbabbd",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 66,
+      "id": "Rn106",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        1280,
+        1287
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "77aa91ba4362931b03e208b87b712a6fcbc0a41ead0ce83025287f29ce6e1f95",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 67,
+      "id": "BMFdate",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        9,
+        9
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "d490cb4a24555442571ad28ab37677887572eec73f3757e36ae3d394f0e44eff",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 68,
+      "id": "BMFsupersedes",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua97d5c022850664d.reader.txt",
+      "native_LF": [
+        81,
+        85
+      ],
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "e079791edda9326e8d5ed1d225216f357be0d590057c9f34d6a6d0261a312a87",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 69,
+      "id": "E23hold",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-23-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8d1717754b68da94.reader.txt",
+      "native_LF": [
+        9,
+        10
+      ],
+      "raw_sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+      "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "quote_sha256": "2cfe3584d9dac1bbd7db3b1366bb2f5c3b12c2d24b3b20cd22c5b76f5dc6c02b",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__23.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 70,
+      "id": "E23gift",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-23-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8d1717754b68da94.reader.txt",
+      "native_LF": [
+        13,
+        13
+      ],
+      "raw_sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+      "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "quote_sha256": "24cb617290d6234639868c491d4d90a14fa2a8fd3ffce23c3ca1591800d42efd",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__23.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 71,
+      "id": "E23base",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-23-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8d1717754b68da94.reader.txt",
+      "native_LF": [
+        18,
+        18
+      ],
+      "raw_sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+      "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "quote_sha256": "bb4fca15fd4f5194333c745c4058e4c0a28aac654225bd5b79c7e9d27442a8cf",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__23.html",
+      "actual_read_bridge": {
+        "guide": "de-capital-gains",
+        "quote_row": 10,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 72,
+      "id": "E22",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U480df9d0873f26f2.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U480df9d0873f26f2.reader.txt",
+      "native_LF": [
+        129,
+        130
+      ],
+      "raw_sha256": "386264f877d3a3b57dcb3e1f82aa6679d0eef3391074ea057beb815897d0d0f3",
+      "reader_sha256": "77b939a4eceb8eaff62adbb6348ed25f4ae85c020ad990d9fd7b3c3a7978e086",
+      "quote_sha256": "5a1adccc6cf6d2ee31e64a9ccfd38e40755736a83b823c9069d394f8d121c903",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__22.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 73,
+      "id": "E15",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-15-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Udd3313a3d03caa2a.reader.txt",
+      "native_LF": [
+        15,
+        15
+      ],
+      "raw_sha256": "9c66144e9197fbf44d69007269443432cc8e67aa92b3c7fb1d2c732e3315cbb4",
+      "reader_sha256": "b8837a2eacafe010efbc888b8bdbb2fdb28e293691da768e14d348c42b41b9c9",
+      "quote_sha256": "1ef68b22b43ca2b84d93e2c0f33aa56fb492cc9b62d2ae7c7e1f560644afd2e3",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__15.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 34,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 74,
+      "id": "E46file",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-46-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ucb9a939517193e9c.reader.txt",
+      "native_LF": [
+        8,
+        9
+      ],
+      "raw_sha256": "c27dd4e778fb62fb6a389453e29b68329e447cff65925995d8941825c1fc3750",
+      "reader_sha256": "4f1e49286a87ec81f6d872ddd07080cf0b65c71fa15b9ab5ada9da83dcd42d9c",
+      "quote_sha256": "7d7c29fdb447ae83c210ae4adbfcfe3124848a8bd7c87bb017553bc7ce3b74ce",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__46.html",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 50,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 75,
+      "id": "E46relief",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-46-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ucb9a939517193e9c.reader.txt",
+      "native_LF": [
+        41,
+        43
+      ],
+      "raw_sha256": "c27dd4e778fb62fb6a389453e29b68329e447cff65925995d8941825c1fc3750",
+      "reader_sha256": "4f1e49286a87ec81f6d872ddd07080cf0b65c71fa15b9ab5ada9da83dcd42d9c",
+      "quote_sha256": "9da0d8f5eda0593f25373318b425eda2b9e560c3e344b036d70bdfd13dd0f5d2",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__46.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 76,
+      "id": "AO147a",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4bccbdce95e3311a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4bccbdce95e3311a.reader.txt",
+      "native_LF": [
+        7,
+        9
+      ],
+      "raw_sha256": "1f1919daf9503481b2e892ff8dc654af18067c1239fb05a20169c8f8bcfe8cb9",
+      "reader_sha256": "960aeb7d51a31c5263a91d043e5893f2a431ddd8527241fff185ab7273430c99",
+      "quote_sha256": "70a08b03b6a098b942c73911a2c4f1c8bdaf792a3289a0eccc571c3ebf3514e7",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__147a.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 77,
+      "id": "AO152",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+      "native_LF": [
+        7,
+        22
+      ],
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "quote_sha256": "f06923ac30fee7ad29815bd194454593f57ce96df6e5597bd6a5962f9675a2f4",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "actual_read_bridge": {
+        "guide": "germany-vat-return",
+        "quote_row": 66,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 78,
+      "id": "AO152amount",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+      "native_LF": [
+        27,
+        28
+      ],
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "quote_sha256": "c49e94150acfd290d1b917418c86ad76277b53eefe1ff16f26c1d6088f530d5a",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "actual_read_bridge": {
+        "guide": "de-partners-and-part-year",
+        "quote_row": 57,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 79,
+      "id": "E32d",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32d-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U09b52563e6886229.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "2e31697f9d0ec13e81ddac8ebe78237a46bef83054e577e8b57c8a45f30a06a7",
+      "reader_sha256": "8cc16e1ec4460eabab60ae8ddea900b95d35022860c4f88bd4ef3981fce3dfae",
+      "quote_sha256": "af3e98fa61137d7a52b2586c7f3c6efbbf196e931a093cf24b2ed8d478506008",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__32d.html",
+      "actual_read_bridge": {
+        "guide": "de-non-resident-tax",
+        "quote_row": 51,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 80,
+      "id": "E32a",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32a-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2aee0a9326f9185f.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "053bfcfc2ba961a3013eb631921957ce8a50ec3e4347bb6f0c2befaf765e0f50",
+      "reader_sha256": "b037ef07e71ac2eebadccb3250d16667924ca95b689c2db86eee60207585e2d7",
+      "quote_sha256": "176dc3f79fa457447a2a828563392c5d98ffffd144beffc12dc50a78ca7b7fd2",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__32a.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 42,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 81,
+      "id": "E10d",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-10d-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6954483d027c63ef.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "4ecb27305f856990db5f9ecf9737a5f64b4ae16a73379a2827e961c8310d2b22",
+      "reader_sha256": "595e58f0c9c7b980d68a59d3190ff69d1f1608fd2204430103669dd934779c8d",
+      "quote_sha256": "eb666fffdf2486c02158b4b387c22865c94695f13e29def4931b004eb25e11cf",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__10d.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 1,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 82,
+      "id": "AO150",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud62b087360a1371f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud62b087360a1371f.reader.txt",
+      "native_LF": [
+        16,
+        16
+      ],
+      "raw_sha256": "77bda66fb49291f4343c30b20f678198555618a578d3c81699e9df9cf113398a",
+      "reader_sha256": "6303c8bb8c0117ceb736d0f6e21a55a3459aa5df64a833b8cc8214ffa34fe6d8",
+      "quote_sha256": "a7d4b1493522101691497c940b5f5aa1aa9de63c0c48c3c91c69eaca2706e56e",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__150.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 83,
+      "id": "AO90",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6a28ca7a568b265.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6a28ca7a568b265.reader.txt",
+      "native_LF": [
+        7,
+        8
+      ],
+      "raw_sha256": "8c82aaf411b473869409e3f6a587121ff8b044d7069bc5b81198273402385438",
+      "reader_sha256": "a553c3a6f779f9d1d2cbe8ab0cacabe54bf12cb6231e8aa6038ea84bf7461d6c",
+      "quote_sha256": "3b5d2b5172ba78b8c3564ddfeb1e8bf3c9ee3705bec861193eaafbd6704f9d0f",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__90.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 84,
+      "id": "AO169",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud7c5abfc0fd31f60.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud7c5abfc0fd31f60.reader.txt",
+      "native_LF": [
+        14,
+        20
+      ],
+      "raw_sha256": "d4f5afe0d4f193c5a332091afe6ad07d59f5a9fd816e959eaa637d371d64f81e",
+      "reader_sha256": "b30f831d72e794940aa7c477d4fbd21294a8e2bad4ad699197ae95ed7bc91191",
+      "quote_sha256": "8c9637186e9ba6a674e4cf8a8ea6d4fdf395df2096f909629a673a2553a97283",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__169.html",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 96,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 85,
+      "id": "K21",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1db70f7b5e6ca0ae.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1db70f7b5e6ca0ae.reader.txt",
+      "native_LF": [
+        6,
+        6
+      ],
+      "raw_sha256": "86f28b0789691393507efebd35b762bd17ff069198f18ad656d6f02889415864",
+      "reader_sha256": "7ae4f0b12d07fb8f0382611742abd3e934820ed7d92ec5f51d7980452348a82d",
+      "quote_sha256": "1651dd9a87ca30ff7cba90fbf583757019bf8f50a8a091b90bdd19bd101b401a",
+      "official_url": "https://www.gesetze-im-internet.de/ksttg/__21.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 86,
+      "id": "K10",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U617aa10775901381.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U617aa10775901381.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "cc69c9f8c2ba53e633bc246fd3fb5b61659da823bd7b549616cc79b818a4c491",
+      "reader_sha256": "6266f20a6c1c28e8da9619e7c08df97cf3dec4bf9c14343e7f07509f0a7e59db",
+      "quote_sha256": "5f785072a4ffa6ae9cc7dd6f27eafa2bbcea1ea2528185fe2993c75c981c7f4f",
+      "official_url": "https://www.gesetze-im-internet.de/ksttg/__10.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 87,
+      "id": "K9",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U24e5bbe2a98ddd83.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U24e5bbe2a98ddd83.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "38f844743290738699c8219a7a1eca9d1b856b0f86a42c366734ebd3793c85d4",
+      "reader_sha256": "7ae7973f9713d65dbb7f8f727e364e193d1a50decfa3f7364b1c9a01b8f8eee9",
+      "quote_sha256": "bb786791ff099d9c34d3ee392958db5f50eac98e6bc99c2f008cafe4cd01ffaa",
+      "official_url": "https://www.gesetze-im-internet.de/ksttg/__9.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 88,
+      "id": "K11",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U68ca53712a473866.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U68ca53712a473866.reader.txt",
+      "native_LF": [
+        7,
+        29
+      ],
+      "raw_sha256": "9fac719977380343cc001330b7c38d641724a6cfc0e9219cb38f2cde152ca085",
+      "reader_sha256": "386b7b339e41eab46f011f5c72f5776adeea268091f6dd7b8bcdb4aec0ae6506",
+      "quote_sha256": "5ca4e1b4b428e5319a455d3a079a11c1da355927f97de9cd09479d4602065269",
+      "official_url": "https://www.gesetze-im-internet.de/ksttg/__11.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 89,
+      "id": "K8",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7202fc3a2a474ccf.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7202fc3a2a474ccf.reader.txt",
+      "native_LF": [
+        7,
+        9
+      ],
+      "raw_sha256": "5b1c56fab79a533f16073749ba55b8d62d1809500fa1813bd2edbd5d90d311dd",
+      "reader_sha256": "8e3b1c24657564c5c7e6cd59907d6b55a11e7a33dda484eeca1a650f43334ebc",
+      "quote_sha256": "ddd488b7f6097dc7cf008bb9edcc71670438787eaa2044c650341424908224b2",
+      "official_url": "https://www.gesetze-im-internet.de/ksttg/__8.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 90,
+      "id": "K1scope",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uccbd7729bf74b173.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uccbd7729bf74b173.reader.txt",
+      "native_LF": [
+        28,
+        28
+      ],
+      "raw_sha256": "b05f4537d729469d47d948d4e6015c0e37d4ab4cdaf01bd2b4edc3817cb1fdee",
+      "reader_sha256": "f31e677172e2f280cce391d73f7d45b363fa82e73ce53488eec7b6a50c6a7b90",
+      "quote_sha256": "148c3d869d52323501f43b6394f14bb0827a31fbdb727f5b22b44ad9ad5ec810",
+      "official_url": "https://www.gesetze-im-internet.de/ksttg/__1.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 91,
+      "id": "AO108",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-108-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3859bf32d53897c9.reader.txt",
+      "native_LF": [
+        7,
+        9
+      ],
+      "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+      "reader_sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9",
+      "quote_sha256": "97905ba1ac583bf47b2f1057b3ef5ab1251e84f1579995a3e56ad267c7705b34",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 92,
+      "id": "BGB187",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6e4682eb65f850ff.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6e4682eb65f850ff.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "8a1f3c70ceb349b44b3f995bf7d3ffc26d7a2b512ea77c384eb87c44cd961369",
+      "reader_sha256": "ec91312754fb51a933c683b6ea1c58c2d1f851a4b2bf0c1ead707fe5c0489ccf",
+      "quote_sha256": "3bd12d1ad890e4237768d75b6ee8c23ded068dc9e23878205b07a2cdbb306c85",
+      "official_url": "https://www.gesetze-im-internet.de/bgb/__187.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 93,
+      "id": "BGB188",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc8c2f5597028fb55.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc8c2f5597028fb55.reader.txt",
+      "native_LF": [
+        8,
+        9
+      ],
+      "raw_sha256": "b80b9e0feb801a7e7b984b5294e37bba247080a1122b7af59d4dab21ebbd807e",
+      "reader_sha256": "af204a150711ec11778b1466f1dda340d7ab780549696ecbb76cd9ec4e14f8e6",
+      "quote_sha256": "9e42f40e949f12ab6f58af4d34774363ef67f6f70da7d319bd09b2d6ba471423",
+      "official_url": "https://www.gesetze-im-internet.de/bgb/__188.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 94,
+      "id": "AO153",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uafb1869d4c01b7bf.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uafb1869d4c01b7bf.reader.txt",
+      "native_LF": [
+        7,
+        11
+      ],
+      "raw_sha256": "d21d59eda7e192f2b8e1719aa70378097e700621d6b89ef1fad5f55f51ecab3d",
+      "reader_sha256": "41389fdb0b9db858570359cdb757dcea50519433aa7da5ef5a9f29806d25f3ec",
+      "quote_sha256": "6295664dba50caf0995af381a13711fe1740ea9cfc71611590d6e66cf957a5ad",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__153.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 95,
+      "id": "D56",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estdv-56-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1ac28d3c84385243.reader.txt",
+      "native_LF": [
+        7,
+        17
+      ],
+      "raw_sha256": "447719f0018df44e05d36f96e03a510e65ca31b085f6787a465593787bd98b60",
+      "reader_sha256": "93ee8aabfa29f4967b3d282c76dcd78bd3618e745ed7834a9f251406f979c910",
+      "quote_sha256": "eb06204ea06c99b4df042f7a2f76be42f97ee7a1cb2603fca15e8a144c5474b0",
+      "official_url": "https://www.gesetze-im-internet.de/estdv_1955/__56.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 39,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 96,
+      "id": "AO149",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+      "native_LF": [
+        8,
+        24
+      ],
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "quote_sha256": "e61ec599b01fd9e13a643a0104750706f6124973614f7e407f20093afb57fdd9",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 97,
+      "id": "AO149early",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+      "native_LF": [
+        24,
+        41
+      ],
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "quote_sha256": "189aff23817b3e0d09375870b9babc6480abdb0dfb1598cc6007764fe7f29e06",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 14,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 98,
+      "id": "E36payment",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-36-20261027.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8bd6bf13c2143063.reader.txt",
+      "native_LF": [
+        21,
+        21
+      ],
+      "raw_sha256": "5dd46a731f12aada297b6c739e3ac1f8039097f226afc44cb42fad1b626d4d51",
+      "reader_sha256": "97d6383916c9613859576a8f24fc2d296ff7e005f8787d7808aa5437adbe3c35",
+      "quote_sha256": "d60a7b0e97438da3e2374c143bfcf9847c661b5d13b2ee3f17171fe930153b32",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__36.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 31,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 99,
+      "id": "Notice",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uda9ef94692cb48d2.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uda9ef94692cb48d2.reader.txt",
+      "native_LF": [
+        265,
+        269
+      ],
+      "raw_sha256": "4995af12fada89804b0aeadc3535e8a4ae58262537295b0545f992a3512205ee",
+      "reader_sha256": "8ce88537648543de7484bf6a892af4e3987f622cb29495ae2d03c79447d1e301",
+      "quote_sha256": "2f885a0a9f201c5222160aa6d05a6aa1ed3b3c05543ef96672eff79c9d0b896e",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte.html",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 100,
+      "id": "Form2025services",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U54529bde711afe19.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U54529bde711afe19.reader.txt",
+      "native_LF": [
+        2403,
+        2404
+      ],
+      "raw_sha256": "867c70e0b3051a5bd9f657427d447ee76f331d00334392acf5f042d6d2b6583a",
+      "reader_sha256": "0a3e9904f19343eb724da9b68d406cf1f0cbfe9e563dccaa4965ef57ee0f76d0",
+      "quote_sha256": "4ce373157ef323adef2042300fcde19ffcf1c917f61216856d2e9affbc016f8b",
+      "official_url": "https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 101,
+      "id": "Form2025sales",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U54529bde711afe19.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U54529bde711afe19.reader.txt",
+      "native_LF": [
+        2430,
+        2441
+      ],
+      "raw_sha256": "867c70e0b3051a5bd9f657427d447ee76f331d00334392acf5f042d6d2b6583a",
+      "reader_sha256": "0a3e9904f19343eb724da9b68d406cf1f0cbfe9e563dccaa4965ef57ee0f76d0",
+      "quote_sha256": "b2519dc23f2bc15e16a68fae6842b376c16f2b32d7991f6ea067da2a149c99bd",
+      "official_url": "https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 102,
+      "id": "Form2025business",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U54529bde711afe19.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U54529bde711afe19.reader.txt",
+      "native_LF": [
+        176,
+        177
+      ],
+      "raw_sha256": "867c70e0b3051a5bd9f657427d447ee76f331d00334392acf5f042d6d2b6583a",
+      "reader_sha256": "0a3e9904f19343eb724da9b68d406cf1f0cbfe9e563dccaa4965ef57ee0f76d0",
+      "quote_sha256": "63dbc423919072e966e6b23ae4cd339e2c138dcecc260e5689eb631f4835e237",
+      "official_url": "https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "actual_read": "All87 new subset quotations actually read in bounded batches1\u201315/16\u201330/31\u201345/46\u201360/61\u201373/74\u201380/81\u201387, with original row mapped here. No complete rawbody reading claim."
+    }
+  ],
+  "direct_new_quotes": 87,
+  "prior_exact_actual_read_bridges": 15,
+  "precise_findings": "R44\u201346; no new acquisition. Full selected retained2025ELSTER statements read as2025administrative help, not a2026form.",
+  "no_portal_or_validator_execution": true
+}

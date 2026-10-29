@@ -1,0 +1,20 @@
+[
+  {
+    "official_url": "https://www.gesetze-im-internet.de/estg/__9b.html",
+    "date": "2026-10-29",
+    "reason": "Specific GWG threshold claim may conflate eligibility with deductible-cost base; exact cited-law bridge only.",
+    "status": 200,
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/targeted-sources/estg-9b-20261029.html",
+    "raw_sha256": "ce949c27f771455664013bb563be7c14736e00e594ae69a01732529600ab0698",
+    "bytes": 4431
+  },
+  {
+    "official_url": "https://esth.bundesfinanzministerium.de/esth/2024/A-Einkommensteuergesetz/II-Einkommen-2-24b/3-Gewinn-4-7i/Paragraf-6/r-6-13.html",
+    "date": "2026-10-29",
+    "reason": "Specific GWG threshold claim may conflate eligibility with deductible-cost base; exact cited-law bridge only.",
+    "status": 200,
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/targeted-sources/esth2024-r6-13-20261029.html",
+    "raw_sha256": "185a822b0611a06c2e8317782a948e2e48f38b3e8a85639ae6e3f19335fe89f4",
+    "bytes": 919701
+  }
+]

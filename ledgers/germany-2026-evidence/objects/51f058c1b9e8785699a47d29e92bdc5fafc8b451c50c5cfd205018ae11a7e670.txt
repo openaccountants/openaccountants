@@ -1,0 +1,64 @@
+§ 14 UStG - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Umsatzsteuergesetz (UStG)
+§ 14 Ausstellung von Rechnungen
+(1) Rechnung ist jedes Dokument, mit dem über eine Lieferung oder sonstige Leistung abgerechnet wird, gleichgültig, wie dieses Dokument im Geschäftsverkehr bezeichnet wird. Eine Rechnung kann als elektronische Rechnung oder vorbehaltlich des Absatzes 2 als sonstige Rechnung übermittelt werden. Eine elektronische Rechnung ist eine Rechnung, die in einem strukturierten elektronischen Format ausgestellt, übermittelt und empfangen wird und eine elektronische Verarbeitung ermöglicht. Eine sonstige Rechnung ist eine Rechnung, die in einem anderen elektronischen Format oder auf Papier übermittelt wird. Die Übermittlung einer elektronischen Rechnung oder einer sonstigen Rechnung in einem elektronischen Format bedarf der Zustimmung des Empfängers, soweit keine Verpflichtung nach Absatz 2 Satz 2 Nummer 1 besteht. Das strukturierte elektronische Format einer elektronischen Rechnung 1.
+muss der europäischen Norm für die elektronische Rechnungsstellung und der Liste der entsprechenden Syntaxen gemäß der Richtlinie 2014/55/EU des Europäischen Parlaments und des Rates vom 16. April 2014 über die elektronische Rechnungsstellung bei öffentlichen Aufträgen (ABl. L 133 vom 6.5.2014, S. 1) entsprechen oder
+2.
+kann zwischen Rechnungsaussteller und Rechnungsempfänger vereinbart werden. Voraussetzung ist, dass das Format die richtige und vollständige Extraktion der nach diesem Gesetz erforderlichen Angaben aus der elektronischen Rechnung in ein Format ermöglicht, das der Norm nach Nummer 1 entspricht oder mit dieser interoperabel ist.
+(2) Führt der Unternehmer eine Lieferung oder eine sonstige Leistung nach § 1 Absatz 1 Nummer 1 aus, ist er berechtigt, eine Rechnung auszustellen. In den folgenden Fällen ist er zur Ausstellung einer Rechnung innerhalb von sechs Monaten nach Ausführung der Leistung verpflichtet, wenn der Umsatz nicht nach § 4 Nummer 8 bis 29 steuerfrei ist: 1.
+für eine Leistung an einen anderen Unternehmer für dessen Unternehmen; die Rechnung ist als elektronische Rechnung nach Absatz 1 Satz 3 und 6 auszustellen, wenn der leistende Unternehmer und der Leistungsempfänger im Inland oder in einem der in § 1 Absatz 3 bezeichneten Gebiete ansässig sind;
+2.
+für eine Leistung an eine juristische Person, die nicht Unternehmer ist;
+3.
+für eine steuerpflichtige Werklieferung (§ 3 Absatz 4 Satz 1) oder sonstige Leistung im Zusammenhang mit einem Grundstück an einen anderen als in den Nummern 1 oder 2 genannten Empfänger.
+Ein im Inland oder in einem der in § 1 Absatz 3 bezeichneten Gebiete ansässiger Unternehmer ist ein Unternehmer, der in einem dieser Gebiete seinen Sitz, seine Geschäftsleitung, eine Betriebsstätte, die an dem Umsatz beteiligt ist, oder in Ermangelung eines Sitzes seinen Wohnsitz oder gewöhnlichen Aufenthalt hat. § 14a bleibt unberührt. Unbeschadet der Verpflichtungen nach Satz 2 kann eine Rechnung von einem in Satz 2 Nummer 1 oder 2 bezeichneten Leistungsempfänger für eine Lieferung oder sonstige Leistung des Unternehmers ausgestellt werden, sofern dies vorher vereinbart wurde (Gutschrift). Die Gutschrift verliert die Wirkung einer Rechnung, sobald der Empfänger der Gutschrift dem ihm übermittelten Dokument widerspricht. Eine Rechnung kann im Namen und für Rechnung des Unternehmers oder eines in Satz 2 Nummer 1 oder 2 bezeichneten Leistungsempfängers von einem Dritten ausgestellt werden.
+(3) Die Echtheit der Herkunft der Rechnung, die Unversehrtheit ihres Inhalts und ihre Lesbarkeit müssen gewährleistet werden. Echtheit der Herkunft bedeutet die Sicherheit der Identität des Rechnungsausstellers. Unversehrtheit des Inhalts bedeutet, dass die nach diesem Gesetz erforderlichen Angaben nicht geändert wurden. Jeder Unternehmer legt fest, in welcher Weise die Echtheit der Herkunft, die Unversehrtheit des Inhalts und die Lesbarkeit der Rechnung gewährleistet werden. Dies kann durch jegliche innerbetriebliche Kontrollverfahren erreicht werden, die einen verlässlichen Prüfpfad zwischen Rechnung und Leistung schaffen können. Unbeschadet anderer zulässiger Verfahren gelten bei einer elektronischen Rechnung die Echtheit der Herkunft und die Unversehrtheit des Inhalts als gewährleistet durch 1.
+eine qualifizierte elektronische Signatur oder
+2.
+elektronischen Datenaustausch (EDI) nach Artikel 2 der Empfehlung 94/820/EG der Kommission vom 19. Oktober 1994 über die rechtlichen Aspekte des elektronischen Datenaustausches (ABl. L 338 vom 28.12.1994, S. 98), wenn in der Vereinbarung über diesen Datenaustausch der Einsatz von Verfahren vorgesehen ist, die die Echtheit der Herkunft und die Unversehrtheit der Daten gewährleisten.
+(4) Eine Rechnung muss folgende Angaben enthalten: 1.
+den vollständigen Namen und die vollständige Anschrift des leistenden Unternehmers und des Leistungsempfängers,
+2.
+die dem leistenden Unternehmer vom Finanzamt erteilte Steuernummer oder die ihm vom Bundeszentralamt für Steuern erteilte Umsatzsteuer-Identifikationsnummer,
+3.
+das Ausstellungsdatum,
+4.
+eine fortlaufende Nummer mit einer oder mehreren Zahlenreihen, die zur Identifizierung der Rechnung vom Rechnungsaussteller einmalig vergeben wird (Rechnungsnummer),
+5.
+die Menge und die Art (handelsübliche Bezeichnung) der gelieferten Gegenstände oder den Umfang und die Art der sonstigen Leistung,
+6.
+den Zeitpunkt der Lieferung oder sonstigen Leistung; in den Fällen des Absatzes 5 Satz 1 den Zeitpunkt der Vereinnahmung des Entgelts oder eines Teils des Entgelts, sofern der Zeitpunkt der Vereinnahmung feststeht und nicht mit dem Ausstellungsdatum der Rechnung übereinstimmt,
+7.
+das nach Steuersätzen und einzelnen Steuerbefreiungen aufgeschlüsselte Entgelt für die Lieferung oder sonstige Leistung (§ 10) sowie jede im Voraus vereinbarte Minderung des Entgelts, sofern sie nicht bereits im Entgelt berücksichtigt ist,
+8.
+den anzuwendenden Steuersatz sowie den auf das Entgelt entfallenden Steuerbetrag oder im Fall einer Steuerbefreiung einen Hinweis darauf, dass für die Lieferung oder sonstige Leistung eine Steuerbefreiung gilt,
+9.
+in den Fällen des § 14b Abs. 1 Satz 5 einen Hinweis auf die Aufbewahrungspflicht des Leistungsempfängers und
+10.
+in den Fällen der Ausstellung der Rechnung durch den Leistungsempfänger oder durch einen von ihm beauftragten Dritten gemäß Absatz 2 Satz 5 die Angabe „Gutschrift”.
+In den Fällen des § 10 Abs. 5 sind die Nummern 7 und 8 mit der Maßgabe anzuwenden, dass die Bemessungsgrundlage für die Leistung (§ 10 Abs. 4) und der darauf entfallende Steuerbetrag anzugeben sind. Unternehmer, die § 24 Abs. 1 bis 3 anwenden, sind jedoch auch in diesen Fällen nur zur Angabe des Entgelts und des darauf entfallenden Steuerbetrags berechtigt. Die Berichtigung einer Rechnung um fehlende oder unzutreffende Angaben ist kein rückwirkendes Ereignis im Sinne von § 175 Absatz 1 Satz 1 Nummer 2 und § 233a Absatz 2a der Abgabenordnung.
+(5) Vereinnahmt der Unternehmer das Entgelt oder einen Teil des Entgelts für eine noch nicht ausgeführte Lieferung oder sonstige Leistung, gelten die Absätze 1 bis 4 sinngemäß. Wird eine Endrechnung erteilt, sind in ihr die vor Ausführung der Lieferung oder sonstigen Leistung vereinnahmten Teilentgelte und die auf sie entfallenden Steuerbeträge abzusetzen, wenn über die Teilentgelte Rechnungen im Sinne der Absätze 1 bis 4 ausgestellt worden sind.
+(6) Das Bundesministerium der Finanzen kann mit Zustimmung des Bundesrates zur Vereinfachung des Besteuerungsverfahrens durch Rechtsverordnung bestimmen, in welchen Fällen und unter welchen Voraussetzungen 1.
+Dokumente als Rechnungen anerkannt werden können,
+2.
+die nach Absatz 4 erforderlichen Angaben in mehreren Dokumenten enthalten sein können,
+3.
+Rechnungen bestimmte Angaben nach Absatz 4 nicht enthalten müssen,
+4.
+eine Verpflichtung des Unternehmers zur Ausstellung von Rechnungen mit gesondertem Steuerausweis (Absatz 4) entfällt oder
+5.
+Rechnungen berichtigt werden können.
+Das Bundesministerium der Finanzen kann mit Zustimmung des Bundesrates zur Vereinfachung des Besteuerungsverfahrens durch Rechtsverordnung nähere Bestimmungen zur Ausgestaltung des strukturierten elektronischen Formats einer elektronischen Rechnung erlassen.
+(7) Führt der Unternehmer einen Umsatz im Inland aus, für den der Leistungsempfänger die Steuer nach § 13b schuldet, und hat der Unternehmer im Inland weder seinen Sitz noch seine Geschäftsleitung, eine Betriebsstätte, von der aus der Umsatz ausgeführt wird oder die an der Erbringung dieses Umsatzes beteiligt ist, oder in Ermangelung eines Sitzes seinen Wohnsitz oder gewöhnlichen Aufenthalt im Inland, so gelten abweichend von den Absätzen 1 bis 6 für die Rechnungserteilung die Vorschriften des Mitgliedstaats, in dem der Unternehmer seinen Sitz, seine Geschäftsleitung, eine Betriebsstätte, von der aus der Umsatz ausgeführt wird, oder in Ermangelung eines Sitzes seinen Wohnsitz oder gewöhnlichen Aufenthalt hat. Satz 1 gilt nicht, wenn eine Gutschrift gemäß Absatz 2 Satz 2 vereinbart worden ist. Nimmt der Unternehmer in einem anderen Mitgliedstaat an einem der besonderen Besteuerungsverfahren entsprechend Titel XII Kapitel 6 der Richtlinie 2006/112/EG des Rates vom 28. November 2006 über das gemeinsame Mehrwertsteuersystem (ABl. L 347 vom 11.12.2006, S. 1) in der jeweils gültigen Fassung teil, so gelten für die in den besonderen Besteuerungsverfahren zu erklärenden Umsätze abweichend von den Absätzen 1 bis 6 für die Rechnungserteilung die Vorschriften des Mitgliedstaates, in dem der Unternehmer seine Teilnahme anzeigt.
+Fußnote
+(+++ § 14 Abs. 1 und 3: Zur Anwendung vgl. § 27 Abs. 18 +++)
+(+++ § 14 Abs. 2 Satz 1 Nr. 2, Abs. 3 Nr. 2: Zur Anwendung vgl. § 27 Abs. 15 +++)
+(+++ § 14 Abs. 7 Satz 3: Zur Anwendung vgl. § 27 Abs. 24 Satz 1 +++)
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

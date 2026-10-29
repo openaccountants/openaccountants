@@ -1,0 +1,211 @@
+{
+  "scope": "No original oa or worked numerical fixtures in this Guide.41 own source-based amount/format/date/evidence separators. No rounding mode invented and no validator/portal execution. Rules requiring actual claimant or software facts remain conditional.",
+  "controls": [
+    {
+      "name": "linebasequantitymatters",
+      "actual": "61",
+      "expected": "61"
+    },
+    {
+      "name": "notrawqtyprice",
+      "actual": "120",
+      "expected": "120"
+    },
+    {
+      "name": "positivebasequantity",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "zerobasequantityinvalid",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "S19group100+200+charge10-allowance20",
+      "actual": "290",
+      "expected": "290"
+    },
+    {
+      "name": "S19grouptax",
+      "actual": "551/10",
+      "expected": "551/10"
+    },
+    {
+      "name": "S7separategroup100",
+      "actual": "7",
+      "expected": "7"
+    },
+    {
+      "name": "combinedVAT",
+      "actual": "621/10",
+      "expected": "621/10"
+    },
+    {
+      "name": "both7and19categorySdifferentrates",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "AAcodeunsupported",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "Zreasonforbidden",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "AEreasonrequired",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "OcannotmixotherbreakdownunderactualBR-O",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "BT6givenBT111required",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "positiveamountdueeither9or20",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "positiveamountduewithneithermissing",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "zeroamountduenoeither25requirement",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "250smallinclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "250point01notsmall",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "wholeinvoice300taxablepart100over250",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "issuer2027turnover800kqualifiesno2",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "800000point01failsno2",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "December26supplyJanuary27no1expired",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "December26not2027supplyforno2",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "January27supplyno2yeargate",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "domesticKUreceives2026",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "foreignvoluntaryeInvoiceconsent",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "domesticdutyconsentnotneeded",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "domesticsmallvoluntaryeInvoiceconsentnotneeded",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "otherPDFwhenpermittedrequiresconsent",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "2026issued8yearsend2034",
+      "actual": "2034",
+      "expected": "2034"
+    },
+    {
+      "name": "privatepropertyproof2yearsend2028",
+      "actual": "2028",
+      "expected": "2028"
+    },
+    {
+      "name": "businessinvoicefineceiling",
+      "actual": "5000",
+      "expected": "5000"
+    },
+    {
+      "name": "privateproofceiling",
+      "actual": "1000",
+      "expected": "1000"
+    },
+    {
+      "name": "paymentfine30000notinvoicefine",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "actualcompletePDF100net19paidtotal",
+      "actual": "119",
+      "expected": "119"
+    },
+    {
+      "name": "fallbackpossibleproofdoesnotzero19",
+      "actual": "19",
+      "expected": "19"
+    },
+    {
+      "name": "samecontentcopyalonewithoutrecordconditionsnotwaiver",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "135conversionallfourconditionsrequired",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "oneinformationloss135fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "convertedfileexceptionnotdeleteXMLpermission",
+      "actual": "False",
+      "expected": "False"
+    }
+  ],
+  "number": 41
+}

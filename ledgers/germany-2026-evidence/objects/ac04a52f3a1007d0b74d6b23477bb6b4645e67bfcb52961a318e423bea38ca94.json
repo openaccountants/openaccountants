@@ -1,0 +1,11 @@
+{
+  "id": "U3c63ebfe1ecaac17",
+  "url": "https://www.gesetze-im-internet.de/gewstg/__35b.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3c63ebfe1ecaac17.body",
+  "raw_sha256": "e4462591f804782a6e043bdb956d4a713e34aea73e9bc30b6830998bda07a26d",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3c63ebfe1ecaac17.reader.txt",
+  "reader_sha256": "7bc2907f162eff3a309927e702291ec998abbb7f6dbf20b496a6dee452666f77",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

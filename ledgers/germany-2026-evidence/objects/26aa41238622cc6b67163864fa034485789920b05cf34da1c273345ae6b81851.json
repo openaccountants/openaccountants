@@ -1,0 +1,18 @@
+[
+  {
+    "before": "- Pension: pay up to EUR 101,400 x 9.3%, unless not in the statutory scheme (PAP marker KRV = 1).",
+    "after": "- Pension: pay up to EUR 101,400 x 9.3% for employees compulsorily insured in the statutory pension scheme or exempt under § 6(1) no. 1 SGB VI for a professional pension scheme ([§ 39b(2) sentence 5 no. 3(a) EStG](https://www.gesetze-im-internet.de/estg/__39b.html)). Apply the PAP marker KRV: 0 for compulsory cover in the statutory or a professional pension scheme, or voluntary cover after exemption from compulsory insurance; 1 otherwise."
+  },
+  {
+    "before": "**Other PAP inputs that change the result:** ALV (0 insured / 1 not), KRV, PKV (0 statutory, 1 private), KVZ (the fund's full additional rate), PVZ (1 = childless surcharge), PVA (number of reductions, 0 to 4), PVS (1 = place of employment in Saxony).",
+    "after": "**Other PAP inputs that change the result:** ALV (0 insured / 1 not), KRV (0 for the qualifying pension-cover branches just described, 1 otherwise), PKV (0 statutory, 1 private), KVZ (the fund's full additional rate), PVZ (1 = childless surcharge), PVA (number of reductions, 0 to 4), PVS (1 = place of employment in Saxony)."
+  },
+  {
+    "before": "version: 1.2\n",
+    "after": "version: 1.3\n"
+  },
+  {
+    "before": "| Retirement-age pension and unemployment distinction: SGB VI § 5(4), § 172(1); SGB III § 28(1) no. 1, § 346(3) | https://www.gesetze-im-internet.de/sgb_6/__5.html ; https://www.gesetze-im-internet.de/sgb_3/__28.html ; https://www.gesetze-im-internet.de/sgb_6/__172.html ; https://www.gesetze-im-internet.de/sgb_3/__346.html | 2026-10-29 |",
+    "after": "| Retirement-age pension and unemployment distinction: SGB VI § 5(4), § 172(1); SGB III § 28(1) no. 1, § 346(3) | https://www.gesetze-im-internet.de/sgb_6/__5.html ; https://www.gesetze-im-internet.de/sgb_3/__28.html ; https://www.gesetze-im-internet.de/sgb_6/__172.html ; https://www.gesetze-im-internet.de/sgb_3/__346.html | 2026-10-29 |\n| Pension Vorsorgepauschale and professional schemes: EStG § 39b(2) sentence 5 no. 3(a); PAP 2026 KRV definition | https://www.gesetze-im-internet.de/estg/__39b.html ; https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2 | 2026-10-29 |"
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "status": "writer successor, different independent recheck pending",
+  "artifacts": [
+    {
+      "path": "after/de-capital-gains.md",
+      "sha256": "5ec577aa8062f1fdc8a1af2fcc8fba597962776896c9ec0d5d50dea661280229",
+      "bytes": 36610
+    },
+    {
+      "path": "before/de-capital-gains.md",
+      "sha256": "d6ad76e43de497f0374419344e03cef72fdba5c3e06ba80b13adbb8acdbd7322",
+      "bytes": 31552
+    },
+    {
+      "path": "build-ledger.py",
+      "sha256": "8c2e4e713104037f2392ce4ab77567ef60353025587bc8448313d905ab25a3c7",
+      "bytes": 8490
+    },
+    {
+      "path": "builder-check-history.md",
+      "sha256": "499d84303d528926a67e82c0ab88155138976f3e4ded837fea1456c0323cebe9",
+      "bytes": 466
+    },
+    {
+      "path": "check-and-seal.py",
+      "sha256": "9db4d1775ca5a29187117125ae8f887083036fbf38699378b338c3d398de5fe5",
+      "bytes": 10741
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "f0a8da6a7a83dd9d62973ea48eb354fcfc14c786a3b2574142ebbcd24c9fdf59",
+      "bytes": 14530
+    },
+    {
+      "path": "historical-apply.py",
+      "sha256": "2ed1e0b0a225b28a2ca83e40379315fd1bc4015f290300ad9c83d30978b1713f",
+      "bytes": 14762
+    },
+    {
+      "path": "ledgers/de-capital-gains.md",
+      "sha256": "f08a37bc0bc0ecd6331a2e4ce591f21775bc51afc40eb5a6087e56c77f2b3226",
+      "bytes": 105527
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "19dff4eb98de99118609bcfa96093bc88c40975212640dfc0d556c66a9fd1ff5",
+      "bytes": 2224
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "62a537443279d1efc30106fe92193c9fb80da2a56c9d36724ed7239897d736c9",
+      "bytes": 16029
+    },
+    {
+      "path": "preservation-proof.json",
+      "sha256": "16e37c212611938dccc75aed73abd6459b6a2299c703b325bb3a28789a77ffb0",
+      "bytes": 459
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "3ba2584ed87fdfbfa912522f175b70a6a52074b6e8d7cf6878354e9188ecda70",
+      "bytes": 167672
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "70802daabf261e7f500bd02033b3d4433ac113c3856f058ac3be8e0db8f67021",
+      "bytes": 101902
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "c2000b6ddee49ee21fc0f8c515c781dfb2aed43507d1101ee4c8727a0b68c726",
+      "bytes": 879
+    },
+    {
+      "path": "support/de-capital-gains/old-topic-destinations.json",
+      "sha256": "79e872fbd1fa8e0c9b4953438649008b00daf87f1ec79670a4064a038dd8aeb2",
+      "bytes": 74042
+    },
+    {
+      "path": "support/de-capital-gains/rows.json",
+      "sha256": "983878e17c9b6c28ac5a4f82762ef84155a97f7173221af995b03253895bb39a",
+      "bytes": 69063
+    },
+    {
+      "path": "support/guide.diff",
+      "sha256": "339bf473966f77f05abfa1bcefbe5306ea9c44898adbb079056aa2ef429c3988",
+      "bytes": 20742
+    },
+    {
+      "path": "support/line-map.json",
+      "sha256": "c187a09992361b7f0e97b8bc6e67e1fd5c4515c2a2f3bd2c54f8275d4f708889",
+      "bytes": 20927
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "12719f91ee7f42f7e1d31cf05ba15ffdfbb3337e889122180aa90935eec6912f",
+      "bytes": 26458
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "d5ad5573c46d5d7f0ba6422a9b36cefd18b79d3cd892a61b35d63ca1e4469b76",
+      "bytes": 2405
+    }
+  ]
+}

@@ -1,0 +1,1941 @@
+[
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/2025-01-10-basiszins-vorabpauschale-zum-2-1-2025.pdf",
+    "relative": "2025-01-10-basiszins-vorabpauschale-zum-2-1-2025.pdf",
+    "sha256": "97919e95b02ebb988c56bfd06633453405d18167f5e87f8bd015f3e69e41d514",
+    "bytes": 162697,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf",
+    "relative": "2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf",
+    "sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+    "bytes": 412133,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/2026-01-13-basiszins-berechnung-vorabpauschale.pdf",
+    "relative": "2026-01-13-basiszins-berechnung-vorabpauschale.pdf",
+    "sha256": "11245b8c1f4e326d851655fd7066e881731e6d7a664c66e0bf678603fa054bf9",
+    "bytes": 110075,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/aag-1-20261024.html",
+    "relative": "aag-1-20261024.html",
+    "sha256": "998158da2a7be970b8d5590e45c476389998e90ba6124061ea466fd211c9cb21",
+    "bytes": 6049,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/aag-7-20261024.html",
+    "relative": "aag-7-20261024.html",
+    "sha256": "07f8d41af7094275ff538c5ca581c13b4bd4f69fbb007f0d521d909d0d609e7a",
+    "bytes": 4813,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-1-20261024.html",
+    "relative": "ao-1-20261024.html",
+    "sha256": "bb6db3b17787fc1b82874cad6df4ee64bdb3c1ecba8f14519242d450330119dd",
+    "bytes": 5818,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-108-20261024.html",
+    "relative": "ao-108-20261024.html",
+    "sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+    "bytes": 4614,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-109-20261026.html",
+    "relative": "ao-109-20261026.html",
+    "sha256": "e4f644bd45dafb58975644cd0ab95f9bde4fac2fa47a646069290fd9c5f6c2bf",
+    "bytes": 5770,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-124-20261027.html",
+    "relative": "ao-124-20261027.html",
+    "sha256": "37e4a374b64d32a2f4b42d3ddd72e36b5cbe3755a7741bf8a7a481b7b1ac2234",
+    "bytes": 3903,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-138-20261024.html",
+    "relative": "ao-138-20261024.html",
+    "sha256": "843b5720d9bc7f89ef230b4779c3b23c43e2ded3c0f3bb36036d606086787987",
+    "bytes": 11855,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-141-20261026.html",
+    "relative": "ao-141-20261026.html",
+    "sha256": "bfbeb7e0dee14c4549b3895a44a72db51695f1b3994aba443449d5475d78dd2d",
+    "bytes": 5909,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+    "relative": "ao-149-20261024.html",
+    "sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+    "bytes": 11871,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+    "relative": "ao-152-20261024.html",
+    "sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+    "bytes": 13469,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-164-20261027.html",
+    "relative": "ao-164-20261027.html",
+    "sha256": "d7a2d7c6e3aff32ba8ae76a4e8791db643056d73b7ed67fd93bf6acf1e92dc5f",
+    "bytes": 5010,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-18-20261024.html",
+    "relative": "ao-18-20261024.html",
+    "sha256": "f1b364533aab4c920c0395f1d916ca81941775c8699db673a5f7e7845e9792fc",
+    "bytes": 7150,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-184-20261024.html",
+    "relative": "ao-184-20261024.html",
+    "sha256": "38bb787debc54afc5496d98045fa091cb82fd2dca9faed2b9abda1fabebdaf45",
+    "bytes": 5151,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-222-20261027.html",
+    "relative": "ao-222-20261027.html",
+    "sha256": "8fb40b4ba01fe464f7bad592659de781e924468510f4fe633daff5cf97aa9be6",
+    "bytes": 4170,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-224-20261024.html",
+    "relative": "ao-224-20261024.html",
+    "sha256": "a3d09dc43f6c7e7209a1fa636313afcfcaca668b5430dc85decfa0a8fde30d5f",
+    "bytes": 5818,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-233a-20261024.html",
+    "relative": "ao-233a-20261024.html",
+    "sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+    "bytes": 10154,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-234-20261027.html",
+    "relative": "ao-234-20261027.html",
+    "sha256": "9e5bb5fe1311894b46b3490d9070453c493eb467763e34bd9dc641f40bbaf1c8",
+    "bytes": 4390,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-235-20261024.html",
+    "relative": "ao-235-20261024.html",
+    "sha256": "06fdda141ba9e6a8c6d9a59a8411189c5fbc672e7a6b013eefadd8b7a20ad6db",
+    "bytes": 6629,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-238-20261024.html",
+    "relative": "ao-238-20261024.html",
+    "sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+    "bytes": 5249,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-240-20261024.html",
+    "relative": "ao-240-20261024.html",
+    "sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+    "bytes": 5752,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-3-20261027.html",
+    "relative": "ao-3-20261027.html",
+    "sha256": "e7921833e74989a31048f1b4271b12ca92dffce537778d9ae788369cfe17f257",
+    "bytes": 7690,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-370-20261027.html",
+    "relative": "ao-370-20261027.html",
+    "sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+    "bytes": 8329,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-93c-20261024.html",
+    "relative": "ao-93c-20261024.html",
+    "sha256": "a17b6c46401f533886d2f0a58c85fddf58b83038402bc512d3e5d95337ef1fe9",
+    "bytes": 11327,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/astg-6-20261026.html",
+    "relative": "astg-6-20261026.html",
+    "sha256": "f0f931afd93ee0c1ba04ef2ec47d803a709daf63df1a0e242dddbf91018a43df",
+    "bytes": 13674,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/berlin-rs-4330060-20261024.pdf",
+    "relative": "berlin-rs-4330060-20261024.pdf",
+    "sha256": "b01920244d57bdbdc98f12c56a5f48dfb7f3f3a1aebd5f3110dc4536a8c79c15",
+    "bytes": 78509,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/betravg-1a-20261024.html",
+    "relative": "betravg-1a-20261024.html",
+    "sha256": "290b53e20997345ffd05965b7e03f20935dfc8397ab89e8b6b46bdbab3e966ed",
+    "bytes": 6290,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2023-I-240-20261026.pdf",
+    "relative": "bgbl-2023-I-240-20261026.pdf",
+    "sha256": "232ec0436c0511357d71f66291e4b1b93aabe5756ff9273d2ca6a1b73ea778cf",
+    "bytes": 290778,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2024-I-108-20261024.html",
+    "relative": "bgbl-2024-I-108-20261024.html",
+    "sha256": "644749cc01297cc6088bbd201beeeac1e4e7451ca1f4b220c5d2f48a49bda130",
+    "bytes": 41163,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2024-I-108-20261024.pdf",
+    "relative": "bgbl-2024-I-108-20261024.pdf",
+    "sha256": "b95ebec40902824eb7f0e9daabbfdeb628dde44aeaae9d7757231249c680ff3b",
+    "bytes": 742758,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2025-I-363-20261024.html",
+    "relative": "bgbl-2025-I-363-20261024.html",
+    "sha256": "e2720faac67c36e14076eb3a87dc1f02c4d294319aaff23123044687cfcc302c",
+    "bytes": 40570,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2025-I-363-20261024.pdf",
+    "relative": "bgbl-2025-I-363-20261024.pdf",
+    "sha256": "881fa128d966200b75c207c4550959c55c27d7c202adf3b8f7d9e6485b342e35",
+    "bytes": 319098,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2026-I-14-20261024.html",
+    "relative": "bgbl-2026-I-14-20261024.html",
+    "sha256": "12ae452201fd79dfca45562383435d479ebf8e2605855cfcf1b84631c7c4a96b",
+    "bytes": 40925,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2026-I-14-20261024.pdf",
+    "relative": "bgbl-2026-I-14-20261024.pdf",
+    "sha256": "68e9b12468cf74a88a782cf10667bc1ad007d60d79db00fab17ec22ca2b7cef7",
+    "bytes": 420582,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2026-I-197-20261024.html",
+    "relative": "bgbl-2026-I-197-20261024.html",
+    "sha256": "f3c1a19de611674c3c2068b5a26ae001f4d2833adfb0c1a92614441515864b6b",
+    "bytes": 40869,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2026-I-197-20261024.pdf",
+    "relative": "bgbl-2026-I-197-20261024.pdf",
+    "sha256": "0ac9f7d5f47a69f15bb30645f3570d54dbea88ec359662c1a26f02db4c854462",
+    "bytes": 372086,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-7b-20250521.pdf",
+    "relative": "bmf-7b-20250521.pdf",
+    "sha256": "783f9ff673b948361845c2446bcfc6ce6f93cc57c35a804f747b490155ac13cb",
+    "bytes": 503500,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-abgelt-search-20261026.html",
+    "relative": "bmf-abgelt-search-20261026.html",
+    "sha256": "b050f437d0683048aa3a5e14b519dad3e2bba364bac633f51bf0a75a086fa4dc",
+    "bytes": 208331,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-abgeltungsteuer-20250514.html",
+    "relative": "bmf-abgeltungsteuer-20250514.html",
+    "sha256": "33b6bd7dfd51fe6265556809e8ba2e1841031b24632250f4b57e2c7381097133",
+    "bytes": 176695,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-aktivrente-faq-20261024.html",
+    "relative": "bmf-aktivrente-faq-20261024.html",
+    "sha256": "ee24e621aac62c04fd19e619fabda1c0378e37e627fd2b1f6d94e6ad154855dc",
+    "bytes": 215898,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-erechnung-20251015.pdf",
+    "relative": "bmf-erechnung-20251015.pdf",
+    "sha256": "b47bd1b6f3f8386774a3d37976a385b3443537bc2a2891b64d2eb58cfee16d7f",
+    "bytes": 365705,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-euer-2026-20261026.pdf",
+    "relative": "bmf-euer-2026-20261026.pdf",
+    "sha256": "03d3033acc5c5a126729e58743128596ae39193759c55b207872da9432b83a8f",
+    "bytes": 1181880,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-gle-20251105.pdf",
+    "relative": "bmf-gle-20251105.pdf",
+    "sha256": "dcfb24afd732063323bf8470f12f3a191766e8acbcb88f13e409c3e13cc5f38b",
+    "bytes": 109516,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-reisekosten-2026-20251205.pdf",
+    "relative": "bmf-reisekosten-2026-20251205.pdf",
+    "sha256": "0eacf14b6eedcc17d9147d374bd1bb76036d9c4b424b3f966040109984f9d760",
+    "bytes": 745588,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-steuern-a-z-20261024.pdf",
+    "relative": "bmf-steuern-a-z-20261024.pdf",
+    "sha256": "c36ca62b6c89e5524682fcc124a68548aec918813761dbbf866f010f741d52fb",
+    "bytes": 1061144,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-ustva-vordruck-2026-20251229.pdf",
+    "relative": "bmf-ustva-vordruck-2026-20251229.pdf",
+    "sha256": "82e7d63a0faec542bb184acb438eaf4ce90a2d7db067bb47f92ae13b4b17613d",
+    "bytes": 594737,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-verpflegung-20251222.pdf",
+    "relative": "bmf-verpflegung-20251222.pdf",
+    "sha256": "006c06d1316283637763fd3d7b9a6366629d265cff9ce6a7dd30f4641641adda",
+    "bytes": 112008,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmg-beitraege-20261024.html",
+    "relative": "bmg-beitraege-20261024.html",
+    "sha256": "2213a7d11f4c12536e8708a3f9f6e6029f98479ca20141c8d219c4338485c3e4",
+    "bytes": 453812,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmg-zusatzbeitrag-20261024.html",
+    "relative": "bmg-zusatzbeitrag-20261024.html",
+    "sha256": "ac15c38bb373245e2207eb922aefe90980efde9daf564bd5788f22696ed335da",
+    "bytes": 296616,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/brkg-5-20261024.html",
+    "relative": "brkg-5-20261024.html",
+    "sha256": "9ffc3b6e205672e20208fbf7182ee79342820b2c610b746209af6217600b0a29",
+    "bytes": 5089,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bsg-b12ba1024r-20261024.html",
+    "relative": "bsg-b12ba1024r-20261024.html",
+    "sha256": "135fa77e358579875def7ae515af0ad3eb079c82355477f6f0221fcc782e32d3",
+    "bytes": 33499,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bsg-b12ba1024r-20261024.txt",
+    "relative": "bsg-b12ba1024r-20261024.txt",
+    "sha256": "c40e471f24c961960c3ff96bbb5f3be90263485b76bebfde3e61e453a1dda33f",
+    "bytes": 9599,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bsg-b12kr1317r-20261024.html",
+    "relative": "bsg-b12kr1317r-20261024.html",
+    "sha256": "3e4d7f3f2ab86bf72e5a6d1e18fc693f5e4007fc47c7c07f911d4806b6b1dbf3",
+    "bytes": 59372,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bsg-b12kr1317r-20261024.txt",
+    "relative": "bsg-b12kr1317r-20261024.txt",
+    "sha256": "b3857afbd2df3a523d906b05375dff2db6bbc4617b78c970fa96ec7ceb450d10",
+    "bytes": 25874,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/destatis-pd26-369-20261024.html",
+    "relative": "destatis-pd26-369-20261024.html",
+    "sha256": "8aa4fdd7ff2e1b860dfe4a5f0ae7cade756c20532fe22f550d770d1b2d67efc5",
+    "bytes": 81729,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/deuev-10-20261024.html",
+    "relative": "deuev-10-20261024.html",
+    "sha256": "e6a0de687394af3cc8d279e1b86bc48ddcca02d9d850adf9fb97847e7a21dc13",
+    "bytes": 4078,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/deuev-12-20261024.html",
+    "relative": "deuev-12-20261024.html",
+    "sha256": "87291fc7f8629d772fdb2b79a8eac6423c9ce3535b66df2b100218c26860bba1",
+    "bytes": 5658,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/deuev-6-20261024.html",
+    "relative": "deuev-6-20261024.html",
+    "sha256": "2e5c5b2a6551f75e0f37ff82cb4b675d8136f3f29b9dcbb7d2f67908523669c6",
+    "bytes": 3652,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/deuev-8-20261024.html",
+    "relative": "deuev-8-20261024.html",
+    "sha256": "6a3217bd6801bdd250e12d182d89052769c27407c7c36de9624e424ebfeef0b4",
+    "bytes": 4103,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/deuev-9-20261024.html",
+    "relative": "deuev-9-20261024.html",
+    "sha256": "f66c9d3d0601bb096e3512fa3d9dd24f6835ff2779f9ce9d853dc1d2dc05c220",
+    "bytes": 4465,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/drv-260223-midijob-20261024.html",
+    "relative": "drv-260223-midijob-20261024.html",
+    "sha256": "ebf2849a23a230fe9d09d60ba4b5aeaadf327c8095cae53a2a8369f5b71b581a",
+    "bytes": 147345,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ebv-1-20261024.html",
+    "relative": "ebv-1-20261024.html",
+    "sha256": "a84d5db88e19bb8c738900ec54a831d071289778bdeca85378e6c0b34874e771",
+    "bytes": 13406,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ebv-2-20261024.html",
+    "relative": "ebv-2-20261024.html",
+    "sha256": "dd5bfa4739d3211b33480e44e9265bad5ba55bc9ab3823dc7114c2c5f4e1e66d",
+    "bytes": 4525,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/egao-97-36-20261024.html",
+    "relative": "egao-97-36-20261024.html",
+    "sha256": "473093a055687b4f1080906450a53bfa4454856afe4a25599e1907757d5436bc",
+    "bytes": 12474,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2025-20261024.html",
+    "relative": "elster-anlv-help-2025-20261024.html",
+    "sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+    "bytes": 1047509,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2026-20261024.html",
+    "relative": "elster-anlv-help-2026-20261024.html",
+    "sha256": "82ca8a6c766b158c6c69aadff1f645324fbcd1e68dc53076ab75c02742569001",
+    "bytes": 126804,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/entgfg-3-20261024.html",
+    "relative": "entgfg-3-20261024.html",
+    "sha256": "2e15c7293642f9d1b827168a0c96e440694e13144b7b21ecb157765b3dc8a0aa",
+    "bytes": 5330,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/entgfg-4-20261024.html",
+    "relative": "entgfg-4-20261024.html",
+    "sha256": "8e02e53b25fa39781b884c1fbe5b7c8c13644d23570c5a91d8e5494a9b48d084",
+    "bytes": 5604,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estdv-56-20261026.html",
+    "relative": "estdv-56-20261026.html",
+    "sha256": "447719f0018df44e05d36f96e03a510e65ca31b085f6787a465593787bd98b60",
+    "bytes": 6385,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estdv-60-20261026.html",
+    "relative": "estdv-60-20261026.html",
+    "sha256": "6327ac9c8f6937391463a260b2653f98240e36b2b2bca1f915dc066ff5191927",
+    "bytes": 5867,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estdv-82b-20261024.html",
+    "relative": "estdv-82b-20261024.html",
+    "sha256": "690a2b2845fe79a46d413e5f49f70ff791ba8cc184381492682aba459fdf499f",
+    "bytes": 5119,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-10-20261026.html",
+    "relative": "estg-10-20261026.html",
+    "sha256": "f970952c77597337017ee213013219bd490a91f1f0b7048bbd8cb697d1d9befd",
+    "bytes": 41300,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-100-20261024.html",
+    "relative": "estg-100-20261024.html",
+    "sha256": "199f7b523dbe4493a230bf9db790e7b64d1a799436e19b5046d36a7f987e69cc",
+    "bytes": 9514,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-10c-20261024.html",
+    "relative": "estg-10c-20261024.html",
+    "sha256": "4309f91a2ebb1b66ae0aef785c77d045069059514425b87f85b2f4671bd4734b",
+    "bytes": 3756,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-10d-20261024.html",
+    "relative": "estg-10d-20261024.html",
+    "sha256": "4ecb27305f856990db5f9ecf9737a5f64b4ae16a73379a2827e961c8310d2b22",
+    "bytes": 8524,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-11-20261024.html",
+    "relative": "estg-11-20261024.html",
+    "sha256": "fa07a7805b96905289274c0181192e53bff996059b6ac1e854afdcdb33653e02",
+    "bytes": 5699,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-12-20261027.html",
+    "relative": "estg-12-20261027.html",
+    "sha256": "2f2a2749f2f5ec64b89f9ffe5f657575e60bd4a6ef74217332842658f9056282",
+    "bytes": 5874,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-15-20261024.html",
+    "relative": "estg-15-20261024.html",
+    "sha256": "9c66144e9197fbf44d69007269443432cc8e67aa92b3c7fb1d2c732e3315cbb4",
+    "bytes": 12154,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-17-20261026.html",
+    "relative": "estg-17-20261026.html",
+    "sha256": "fe27f81e022dea91a42b345d41676df4f7f90b06f3f9207db44501034afcd55b",
+    "bytes": 13012,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-18-20261024.html",
+    "relative": "estg-18-20261024.html",
+    "sha256": "38ebdcd4278d97c1efcf7ed4f24a3e1deec084784e2afbec5e1c61b3d7539989",
+    "bytes": 7165,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-19-20261024.html",
+    "relative": "estg-19-20261024.html",
+    "sha256": "ca956522d97eb6b3e0d26daad6b181d6a42c15a10b093761c7050f5319a6dd2a",
+    "bytes": 41512,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-19a-20261024.html",
+    "relative": "estg-19a-20261024.html",
+    "sha256": "fe870df925166722433d08ae266e6187a9e73cfc57da779fd71fc2a86e5d0bc2",
+    "bytes": 10725,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-2-20261024.html",
+    "relative": "estg-2-20261024.html",
+    "sha256": "4ce8258e61a05e50348bfa2c149542d7b078c951ffa5b92b37a88b93d67f8848",
+    "bytes": 10109,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-20-20261026.html",
+    "relative": "estg-20-20261026.html",
+    "sha256": "e77b03a7c6f4600978d136cbbf5b2e4b6b9f9699a521827bbd5f1941f6003b6c",
+    "bytes": 32643,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-21-20261024.html",
+    "relative": "estg-21-20261024.html",
+    "sha256": "b028a7760b41dda06ae1b2ea4999c3fcb254c2c54dbb9bc161ff87645bfbd0b1",
+    "bytes": 5862,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-23-20261024.html",
+    "relative": "estg-23-20261024.html",
+    "sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+    "bytes": 9828,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-24b-20261024.html",
+    "relative": "estg-24b-20261024.html",
+    "sha256": "846e30e07cc05467bfbcc16f8929064f1a64d80c76fd9eaf6d2f84defded1bf8",
+    "bytes": 6405,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-26-20261026.html",
+    "relative": "estg-26-20261026.html",
+    "sha256": "8648bd3a60a0c011b3466c4482e159fe2cde1b6902a1751c51d2586a72ae648c",
+    "bytes": 6763,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-3-20261024.html",
+    "relative": "estg-3-20261024.html",
+    "sha256": "85b9a2a8ff330e68a0df9f7e4e38d9dc515f1bce2635706bc14642de47c1c2b3",
+    "bytes": 82219,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32a-20261024.html",
+    "relative": "estg-32a-20261024.html",
+    "sha256": "053bfcfc2ba961a3013eb631921957ce8a50ec3e4347bb6f0c2befaf765e0f50",
+    "bytes": 8032,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32d-20261026.html",
+    "relative": "estg-32d-20261026.html",
+    "sha256": "2e31697f9d0ec13e81ddac8ebe78237a46bef83054e577e8b57c8a45f30a06a7",
+    "bytes": 15122,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-35-20261024.html",
+    "relative": "estg-35-20261024.html",
+    "sha256": "19911da16168dff1054493928501346b305fd226a49e9e30917c72f80d08b661",
+    "bytes": 9082,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-35c-20261024.html",
+    "relative": "estg-35c-20261024.html",
+    "sha256": "d4c6ba1d6ee13e6f9ffc2535343fbb493a4095a2cc948176358c41ffec38692d",
+    "bytes": 10457,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-36-20261027.html",
+    "relative": "estg-36-20261027.html",
+    "sha256": "5dd46a731f12aada297b6c739e3ac1f8039097f226afc44cb42fad1b626d4d51",
+    "bytes": 12042,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-37-20261024.html",
+    "relative": "estg-37-20261024.html",
+    "sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+    "bytes": 8489,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-37b-20261024.html",
+    "relative": "estg-37b-20261024.html",
+    "sha256": "d81a1ff9cfda2ab060058c7a800e717730051ac1a9181797b5d0acbe7048d2de",
+    "bytes": 6872,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-38-20261024.html",
+    "relative": "estg-38-20261024.html",
+    "sha256": "06ed6d1067bf88ca40ff9070a8ba89b0c90daa5cb1c7b7306a5b409a1b4c1927",
+    "bytes": 9537,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-38b-20261024.html",
+    "relative": "estg-38b-20261024.html",
+    "sha256": "c97b7db9a18c84845688cf49f6963ca2b7e1b9ec7983499c399f1b369d3ad61b",
+    "bytes": 10692,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-39-20261024.html",
+    "relative": "estg-39-20261024.html",
+    "sha256": "e65c7fa81eaac5c11d363fdc4fb15124fd6ddb0e2705f9f304be074cee33a6b4",
+    "bytes": 14730,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-39a-20261024.html",
+    "relative": "estg-39a-20261024.html",
+    "sha256": "5cc523af4a3d8ece922a704b278df79b1928009e8d46ac302e31b4ea67eabb59",
+    "bytes": 17211,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-39b-20261024.html",
+    "relative": "estg-39b-20261024.html",
+    "sha256": "cbc9fd1bcceae68668abf399bd908e778b998713df9e904453801ba96b92bcf4",
+    "bytes": 17917,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-39c-20261024.html",
+    "relative": "estg-39c-20261024.html",
+    "sha256": "adcf3b9dc694033214f020218e90e8b7901e07324db96cfba7813a4416ab6fe3",
+    "bytes": 5900,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-39e-20261024.html",
+    "relative": "estg-39e-20261024.html",
+    "sha256": "99f5985e70ed955c8840a1f0f67e7a9f11a22b97a6dd78e4dafe2c5caf97b32f",
+    "bytes": 21328,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-39f-20261024.html",
+    "relative": "estg-39f-20261024.html",
+    "sha256": "04fb1fbd1288b9d94d9cee09438ad7c9bfb31f7a569ae888d616249adab33216",
+    "bytes": 7152,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-3b-20261024.html",
+    "relative": "estg-3b-20261024.html",
+    "sha256": "8f754d91583ea0301fb42b9511c569a7d126c5f10e78a40eeec3c14ae6b070ae",
+    "bytes": 5591,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-3c-20261024.html",
+    "relative": "estg-3c-20261024.html",
+    "sha256": "bacf05969468e83a9a319cced4a36b186cc977a59deb5ecea8fab09605a31da2",
+    "bytes": 9382,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+    "relative": "estg-4-20261024.html",
+    "sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+    "bytes": 24217,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-40-20261024.html",
+    "relative": "estg-40-20261024.html",
+    "sha256": "422498b4025f98afd93a4896a7fc67e39253d391bfb04c09390685af814e313a",
+    "bytes": 13376,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-40a-20261024.html",
+    "relative": "estg-40a-20261024.html",
+    "sha256": "5d0a4cf71c049dfe80f603d18e74968799302f153a365a35fcb41b4786f95bed",
+    "bytes": 10994,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-40b-20261024.html",
+    "relative": "estg-40b-20261024.html",
+    "sha256": "27a9dc7e5da14eee90ba2fce3e141a78654072f37ac74bc2bb2932a1948f36ae",
+    "bytes": 6044,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-41-20261024.html",
+    "relative": "estg-41-20261024.html",
+    "sha256": "16ff58d18ef4bfa619e4734cc78501a2d5eb87451d3c8f0795b2b63ed7ad3bd6",
+    "bytes": 7489,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-41a-20261024.html",
+    "relative": "estg-41a-20261024.html",
+    "sha256": "e03704951d7870b83d4b7a8562ba8307619b4fe9f9e00de8adaf1b7fe7606c69",
+    "bytes": 9510,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-41b-20261024.html",
+    "relative": "estg-41b-20261024.html",
+    "sha256": "e738d7a3ccd36867daeed0ce721a7c7dbe096c6a8b59a0dbabaf4189ad3e3042",
+    "bytes": 12217,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-42b-20261024.html",
+    "relative": "estg-42b-20261024.html",
+    "sha256": "c46046e376b0d8357f3ac08fae621317486d14587c8e76acd07ecfe003ebf0b8",
+    "bytes": 9704,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-42d-20261024.html",
+    "relative": "estg-42d-20261024.html",
+    "sha256": "79a4ff48dc4cac434fe613a8ea7ba1e2c5f90f20d4f20500696e47411e811652",
+    "bytes": 11491,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-43-20261026.html",
+    "relative": "estg-43-20261026.html",
+    "sha256": "952d3b3fe3fd433ab08ba994e224d36c08459e478c92b83b88e43fda41a33c77",
+    "bytes": 22980,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-43a-20261026.html",
+    "relative": "estg-43a-20261026.html",
+    "sha256": "25cdf208dc378a1c3685a2318f5304fb342b2c73aedd89f7ca952cf13ed03687",
+    "bytes": 13110,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-44-20261026.html",
+    "relative": "estg-44-20261026.html",
+    "sha256": "c031d39ffcda719f204213fdd59982e8c250af64f5e070dbf6b3f43481834e8c",
+    "bytes": 23590,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-44a-20261026.html",
+    "relative": "estg-44a-20261026.html",
+    "sha256": "1589436abec915a0d49be85ff82d5319831789eb3873a391c983fef6726cf72d",
+    "bytes": 25092,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-45-20261026.html",
+    "relative": "estg-45-20261026.html",
+    "sha256": "eea07cd3d2cea1c264bd6ca333347d606b4996e7cfb7dc34b790229b069ed032",
+    "bytes": 4355,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-46-20261024.html",
+    "relative": "estg-46-20261024.html",
+    "sha256": "c27dd4e778fb62fb6a389453e29b68329e447cff65925995d8941825c1fc3750",
+    "bytes": 12228,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-49-20261024.html",
+    "relative": "estg-49-20261024.html",
+    "sha256": "ab6d74634775a9a34966bdfd0058d8e93deb30043ab1c0ea3895586cbe6f423b",
+    "bytes": 25776,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-50-20261024.html",
+    "relative": "estg-50-20261024.html",
+    "sha256": "63d1f168553262d258ff45cd2114914c946c6348fd7335ddaf60c645a7a10765",
+    "bytes": 15285,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-51a-20261024.html",
+    "relative": "estg-51a-20261024.html",
+    "sha256": "02bf2ed03b59ac334e8201d01a4294c694363cf10bca8158d100bfde3c667b11",
+    "bytes": 18096,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-52-20261024.html",
+    "relative": "estg-52-20261024.html",
+    "sha256": "bec6241b5340b28eb111acc63168aaa37356253f714334f69786379dd8edbfd5",
+    "bytes": 111324,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-6-20261024.html",
+    "relative": "estg-6-20261024.html",
+    "sha256": "7888cea55ee179f051c84a3dd9cee5d48871e33b3789d28e0fa18a509e40e40f",
+    "bytes": 36268,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-7-20261024.html",
+    "relative": "estg-7-20261024.html",
+    "sha256": "6a9a7530293debb0ba9a1cdff44c86ea1c50bd1115b6850a0ed29edf23a352f4",
+    "bytes": 21792,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-7a-20261024.html",
+    "relative": "estg-7a-20261024.html",
+    "sha256": "e6fbfc4dfb0657c489fb402cc40e70ac305b106ff21982a7dd01e946717e0868",
+    "bytes": 9072,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-7b-20261024.html",
+    "relative": "estg-7b-20261024.html",
+    "sha256": "97ead2bbbe842a7240132579766aa00911dbb6b4d244326f7b0226dab1bf36d4",
+    "bytes": 10346,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-7g-20261026.html",
+    "relative": "estg-7g-20261026.html",
+    "sha256": "3723132d1cdfb871abc22e3729c63f79ddc7e09c6b2750f66f92aca73ed39348",
+    "bytes": 12299,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-8-20261024.html",
+    "relative": "estg-8-20261024.html",
+    "sha256": "efa9a34bec16738055ca9682b54ddb48e892ee74652b9abf1d1ab087c8ca3ea7",
+    "bytes": 11357,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-9-20261024.html",
+    "relative": "estg-9-20261024.html",
+    "sha256": "82ce506e5bebc2a7b9964e715fa898bc06d4eba0602e62d24606b2e6b49e23bb",
+    "bytes": 25050,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-9a-20261024.html",
+    "relative": "estg-9a-20261024.html",
+    "sha256": "d345f5dfd44a9478955ec391c63f6fca4f731021153e9e2b9a49edb0c8f9ddeb",
+    "bytes": 5513,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-BJNR-20261024.html",
+    "relative": "estg-BJNR-20261024.html",
+    "sha256": "2e30627c0e5f37f88ed1dc6fb52681557b7c05128d2ac90594d06d515487582a",
+    "bytes": 1811207,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-index-20261024.html",
+    "relative": "estg-index-20261024.html",
+    "sha256": "216d0b062840d7032d99dcdd99c376b47115109fc33da658f33e676179efe723",
+    "bytes": 57309,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/esth-2024-anh30-II-20261024.html",
+    "relative": "esth-2024-anh30-II-20261024.html",
+    "sha256": "ac454ce083febebac57dbf3c6ed2a861893dea26f3a6c8f09fdf56d335c7ec7a",
+    "bytes": 989776,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewo-108-20261024.html",
+    "relative": "gewo-108-20261024.html",
+    "sha256": "f8be85cd9181721d79f6232700ed0eefb9669ff5086f4a0a76a5b694f727bab7",
+    "bytes": 4685,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstdv-25-20261024.html",
+    "relative": "gewstdv-25-20261024.html",
+    "sha256": "7fa141e157520695e52b700e2d5afe81f0a949c9c0f5a14f8b31183749f81e89",
+    "bytes": 6362,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-10-20261024.html",
+    "relative": "gewstg-10-20261024.html",
+    "sha256": "bd17baa787ae2607af5cacc117e31c17beaaaaafb4f276f00247c55df50d18fe",
+    "bytes": 3874,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-10a-20261024.html",
+    "relative": "gewstg-10a-20261024.html",
+    "sha256": "24df3ff38ffc0adff4da697aa3d2c15255cf18c86f94d88286aaf4c0087ad340",
+    "bytes": 7717,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-11-20261024.html",
+    "relative": "gewstg-11-20261024.html",
+    "sha256": "46828d9b0262292dad64eac95bb490ca94daa2257a604ca5d674b1c0e3022598",
+    "bytes": 5547,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-14-20261024.html",
+    "relative": "gewstg-14-20261024.html",
+    "sha256": "e171e4bd34f0050058758b5b0517cf639e8d76c0b722fddeb400c554630cf9a0",
+    "bytes": 3767,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-14a-20261024.html",
+    "relative": "gewstg-14a-20261024.html",
+    "sha256": "e0c370d403b9c0fc1eac150a08c6a3e0acb5580b2db973c90117433c58a67404",
+    "bytes": 4365,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-14b-20261024.html",
+    "relative": "gewstg-14b-20261024.html",
+    "sha256": "6bd11d873174767352c950bee6de7070ef803f8709bbd9a8967280025b75d234",
+    "bytes": 4032,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-16-20261024.html",
+    "relative": "gewstg-16-20261024.html",
+    "sha256": "635cdef3ad63b9f6f06e352be12cf37051fea76a7a38ed5074d6f9ca6a3d5011",
+    "bytes": 5545,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-19-20261024.html",
+    "relative": "gewstg-19-20261024.html",
+    "sha256": "f89bc46265fbdb2798332ac5c120b1a1d6809297622e7ea4d2d1e1e72092b9bc",
+    "bytes": 5950,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-2-20261024.html",
+    "relative": "gewstg-2-20261024.html",
+    "sha256": "f309400c1595df013343d2b7ce996c79b615ed5c027a494f7696806097a84074",
+    "bytes": 9633,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-20-20261024.html",
+    "relative": "gewstg-20-20261024.html",
+    "sha256": "c370ea75b4da25442ed39b1bbbe4a00af83f53410611e34e66bd230a7c51739f",
+    "bytes": 4216,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-28-20261024.html",
+    "relative": "gewstg-28-20261024.html",
+    "sha256": "39a3c8a21ff0af6e909802c6441f1a5f26cb0b88970ac1446758eb46e9a5651c",
+    "bytes": 4984,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-29-20261024.html",
+    "relative": "gewstg-29-20261024.html",
+    "sha256": "a5a3086c8729abff2a76312a3b67ff65f29369c95f91362a84de92d54402a43e",
+    "bytes": 8092,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-3-20261024.html",
+    "relative": "gewstg-3-20261024.html",
+    "sha256": "9623be1fb11150467f13008e817706001eb7f8e9d4df4c0d892d7c666edfabd0",
+    "bytes": 22324,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-31-20261024.html",
+    "relative": "gewstg-31-20261024.html",
+    "sha256": "0f6d168a6c7f008c77e883ecab48356c3471a0f73c59c46bb268fc74bb992d82",
+    "bytes": 4861,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-35a-20261024.html",
+    "relative": "gewstg-35a-20261024.html",
+    "sha256": "cf6b7e50d272e970b004e520a15d49b57a9a1c1b65e2012d8500a10080e61197",
+    "bytes": 4367,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-36-20261024.html",
+    "relative": "gewstg-36-20261024.html",
+    "sha256": "2d686dad5c5e579b98fc1f16d116a55dee2f1771f01b705308ccf7e812934bc8",
+    "bytes": 9594,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-4-20261024.html",
+    "relative": "gewstg-4-20261024.html",
+    "sha256": "1675303b8996b252f154199ff9e6ec493d38bcfd67f21583f2ddd063b946834c",
+    "bytes": 4977,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-5-20261024.html",
+    "relative": "gewstg-5-20261024.html",
+    "sha256": "9b5c285b13608c5c4f17fc7f7b87f307ed1ee875b9cdc9f67ea1f292c885dfa7",
+    "bytes": 4384,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-7-20261024.html",
+    "relative": "gewstg-7-20261024.html",
+    "sha256": "3f924fa113fd2b3cad32d6b165dccc912a736b117dbf5e84cb640c3e68beb709",
+    "bytes": 7016,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-8-20261024.html",
+    "relative": "gewstg-8-20261024.html",
+    "sha256": "a846887cce2d12a7250a8771e5f173e4ddc85ead112d6b468bf5860437423990",
+    "bytes": 11793,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-9-20261024.html",
+    "relative": "gewstg-9-20261024.html",
+    "sha256": "5c93e3e838d08265da9818982c3174bec0bc317d973d2c15dbbd456c7e9d2ddd",
+    "bytes": 23077,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-16-20261026.html",
+    "relative": "invstg-16-20261026.html",
+    "sha256": "71f93dd1028fc29e56b798560c984f484c9f0deff05fe5a5e830350c5b835550",
+    "bytes": 6449,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-18-20261026.html",
+    "relative": "invstg-18-20261026.html",
+    "sha256": "6460797f0ff546a68e797a8c164fe9cefb5c70d676b56a0f82532390fbf748dd",
+    "bytes": 5004,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-19-20261026.html",
+    "relative": "invstg-19-20261026.html",
+    "sha256": "766e08ce3f2365ef447650776d7cf05fad96c2a571082e8a532bd9d15350d2f2",
+    "bytes": 7064,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-2-20261026.html",
+    "relative": "invstg-2-20261026.html",
+    "sha256": "410fd7e93f2e02878bb7d44e79d0d0e1241979ac0f73c59304cff4b213e6e74c",
+    "bytes": 16871,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-20-20261026.html",
+    "relative": "invstg-20-20261026.html",
+    "sha256": "7959133d1308cfcd1763695bfd43fc73590a185a3fb8b9d16607fb40fb5be28f",
+    "bytes": 8647,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-21-20261026.html",
+    "relative": "invstg-21-20261026.html",
+    "sha256": "244089288aaaca01af757065b324dfeff66dbf9b3f9a175489ef7d0c68ac4189",
+    "bytes": 4698,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-56-20261026.html",
+    "relative": "invstg-56-20261026.html",
+    "sha256": "c8ea53a6d059d5e9b0fbfab8c7ba51c1267cd6e80d0e2338546b08b2f600a869",
+    "bytes": 17739,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ksabg2026v-20261026.html",
+    "relative": "ksabg2026v-20261026.html",
+    "sha256": "2fc8f546cc4e82f4ed6f0457e82f521d83af8e306fc0eaaa7a1c3f85af78f9db",
+    "bytes": 5425,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ksvg-16-20261026.html",
+    "relative": "ksvg-16-20261026.html",
+    "sha256": "f56d6c7a9f8cb11377ca4df71b381c059d42b02d71207b2de8fd3d73416f93db",
+    "bytes": 5561,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ksvg-3-20261026.html",
+    "relative": "ksvg-3-20261026.html",
+    "sha256": "7371835a51fecb0aa9a2cf76c643338d2cd3c95c8d9e13fac0500d5f78198689",
+    "bytes": 4628,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/lsth2026-anh23a-20261024.html",
+    "relative": "lsth2026-anh23a-20261024.html",
+    "sha256": "4485eeaf733093c4cecc20b980a843b2facf7671a57d31ef804b06ccaf589495",
+    "bytes": 906005,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/lsth2026-anh23a-20261024.txt",
+    "relative": "lsth2026-anh23a-20261024.txt",
+    "sha256": "a3944539dcfa9fd994bfe49827274beff5f9f5265d0762d4a9f0d6f6608851e9",
+    "bytes": 64320,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/lsth2026-anh24-IV-1-20261024.html",
+    "relative": "lsth2026-anh24-IV-1-20261024.html",
+    "sha256": "93a4dcb5eac85ea2f6f9a41a2edb351ca7455b01612f0d7b398dcaa56438354d",
+    "bytes": 927522,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/lsth2026-anh24-IV-1-20261024.txt",
+    "relative": "lsth2026-anh24-IV-1-20261024.txt",
+    "sha256": "cff8f74b2dcd786ea698123763b034e43b92b624ca9cb16a5c693210cea74527",
+    "bytes": 86956,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/lsth2026-anh24-IV-6-20261024.html",
+    "relative": "lsth2026-anh24-IV-6-20261024.html",
+    "sha256": "6e063e4c29a5d63f755801370f0a99874d55e3891068c20b91b4b12194b5a9a0",
+    "bytes": 874117,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/lsth2026-p8-inhalt-20261024.html",
+    "relative": "lsth2026-p8-inhalt-20261024.html",
+    "sha256": "95d0cdd5c3f0b74e18061b578be56c6c02fd123b5d3c7d26668facaa5967f4ec",
+    "bytes": 968708,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/lsth2026-r8-1-9-20261024.html",
+    "relative": "lsth2026-r8-1-9-20261024.html",
+    "sha256": "5717f41764b292145ae684c52c13caecfe526f205002b92c567cde82b8122bce",
+    "bytes": 798014,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/milog-17-20261024.html",
+    "relative": "milog-17-20261024.html",
+    "sha256": "c8304cc0b3b97b6ffaedf1455a7767a11e8cb5a8feb07ef97eb1d0ec75ff8ab3",
+    "bytes": 12206,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/milog-2-20261024.html",
+    "relative": "milog-2-20261024.html",
+    "sha256": "696df1ee4f0b1d307432a3559d5bfbeec6baa8b202360bce34867885b8be7d8d",
+    "bytes": 5375,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/milog-22-20261024.html",
+    "relative": "milog-22-20261024.html",
+    "sha256": "36337bd18a86b17478418ef61523e6d51cd07f3edad32a08aba09b0da0f6ccd8",
+    "bytes": 6408,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/milov4-20261024.html",
+    "relative": "milov4-20261024.html",
+    "sha256": "039fcf1ab32526de2a87a109bf9ad8ed210c735fd809559d88e0f7580e7a2185",
+    "bytes": 4175,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/milov5-20261024.html",
+    "relative": "milov5-20261024.html",
+    "sha256": "486c1093af7fa7b7f0e66b75a0967f91c773aaafe38460d9e0810cc996a0a11b",
+    "bytes": 4080,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/mjz-home-20261024.html",
+    "relative": "mjz-home-20261024.html",
+    "sha256": "7d9f8a80fe77da34c9d371cf78b604fae70773f8e59a4af431376bd4d565dc46",
+    "bytes": 128561,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/mjz-midijob-20261024.html",
+    "relative": "mjz-midijob-20261024.html",
+    "sha256": "569729398662583a3d859db617b1aea483625cda31b336081d6080e59f12691d",
+    "bytes": 119013,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/mjz-verdienstgrenze-20261024.html",
+    "relative": "mjz-verdienstgrenze-20261024.html",
+    "sha256": "04038da3cf2cf0024015e5ba658e1fb6d14258697663abff7ae935357df7a2d9",
+    "bytes": 159736,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/muenchen-gewst-20261024.html",
+    "relative": "muenchen-gewst-20261024.html",
+    "sha256": "0d823efde93dbf84f31b0f3b3fc4be345f7d5cdb1ed4e5dd004eb0f356505e44",
+    "bytes": 154339,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/muschg-20-20261024.html",
+    "relative": "muschg-20-20261024.html",
+    "sha256": "f0089e3bbc148dc3635393c771f29b02a4866d0a0142456f70528f7eb9266762",
+    "bytes": 6289,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/pap-2025-geaendert-20261024.pdf",
+    "relative": "pap-2025-geaendert-20261024.pdf",
+    "sha256": "092de325b1e3258cff16a617b1963f923a82e98952e53c345ba7403ddbd45a53",
+    "bytes": 468186,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/pap-2025-geaendert-20261024.txt",
+    "relative": "pap-2025-geaendert-20261024.txt",
+    "sha256": "a34af7149d3140b3622355b829e125e6af1d46ec54fd424f39c40794267dc3b2",
+    "bytes": 97057,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/pap-2026-anlage1-20261024.pdf",
+    "relative": "pap-2026-anlage1-20261024.pdf",
+    "sha256": "5da38acd544868ddcb0bc7f43030bd7d6ee9aa455dff0f42ad59732634e33a48",
+    "bytes": 481972,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/pap-2026-anlage1-20261024.txt",
+    "relative": "pap-2026-anlage1-20261024.txt",
+    "sha256": "104f46ddb0f117a903d18079766f1c6ffffeb872e5fa4a26319b33c48cee538e",
+    "bytes": 97402,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/pbav-2025-20261024.html",
+    "relative": "pbav-2025-20261024.html",
+    "sha256": "2925d4e8caf1f67d264a172f0b2f731b42dfac838e934679c96dccee660fac09",
+    "bytes": 4490,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/rvbeitrsbek-2026-20261024.html",
+    "relative": "rvbeitrsbek-2026-20261024.html",
+    "sha256": "6105e8394e2a859705f933e3d4f0639f0f6ce56e918f898970ed63775937d75e",
+    "bytes": 4660,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb11-55-20261024.html",
+    "relative": "sgb11-55-20261024.html",
+    "sha256": "b8fc98b7a5d2724871a37d7a9e69e922b02907b4405cb8176c8c9c63aa4330d2",
+    "bytes": 10255,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb11-55-20261026.html",
+    "relative": "sgb11-55-20261026.html",
+    "sha256": "b8fc98b7a5d2724871a37d7a9e69e922b02907b4405cb8176c8c9c63aa4330d2",
+    "bytes": 10255,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb11-58-20261024.html",
+    "relative": "sgb11-58-20261024.html",
+    "sha256": "408a6e8f91d0299ebd08aef25a633874c276905c73358b44d7373d195d3551ad",
+    "bytes": 6052,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb3-341-20261024.html",
+    "relative": "sgb3-341-20261024.html",
+    "sha256": "eaf446ba529d56b7e3bf1e04a5c2dbbd6adf3519132347d57b947dd72f62baa4",
+    "bytes": 4423,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb3-346-20261024.html",
+    "relative": "sgb3-346-20261024.html",
+    "sha256": "63656d2f1f4d70c3887927ce9dfdda5b806545123b5371cdd14daaf6701f7826",
+    "bytes": 5642,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb3-358-20261024.html",
+    "relative": "sgb3-358-20261024.html",
+    "sha256": "bde1d7fa51e2015b16576782e95026ab59b7363664b6b1d49bc0b2df1dfc7b39",
+    "bytes": 5495,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb3-360-20261024.html",
+    "relative": "sgb3-360-20261024.html",
+    "sha256": "715b448f33581a44254e39a3dab41b8c83c597ce6d548f18cda65449e904f30b",
+    "bytes": 3984,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-111-20261024.html",
+    "relative": "sgb4-111-20261024.html",
+    "sha256": "15f98b22a3c3c4176bf6a594ccc0b996003d54efc89d12906a73a0754c5d3eba",
+    "bytes": 10110,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-14-20261024.html",
+    "relative": "sgb4-14-20261024.html",
+    "sha256": "ecd8c74ce2382dd5764470e899d4053976fbd4a5c471fb9e0df3272d9ba3337f",
+    "bytes": 4871,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-17-20261024.html",
+    "relative": "sgb4-17-20261024.html",
+    "sha256": "4f1ccb41b6227724b41fb94121b8bfe103b312ff7b388f79d9e153ebe3815f0e",
+    "bytes": 5464,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-20-20261024.html",
+    "relative": "sgb4-20-20261024.html",
+    "sha256": "8ce076cd78d68ecf241c0267c82b6141a749f99c3c71731fe672b11b6ddc25c7",
+    "bytes": 8217,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-20-j1988_0010-20261024.jpg",
+    "relative": "sgb4-20-j1988_0010-20261024.jpg",
+    "sha256": "a0e3028d2af137c2435a97f845eb6ca6114758b459a545e936f6e69f02b738f6",
+    "bytes": 13390,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-20-j1988_0020-20261024.jpg",
+    "relative": "sgb4-20-j1988_0020-20261024.jpg",
+    "sha256": "bd1d4b30170b16e2efe69d38bcb5db072217318f8eb7a2e9575df0b9f1f7950f",
+    "bytes": 10695,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-22-20261024.html",
+    "relative": "sgb4-22-20261024.html",
+    "sha256": "6429ed296b16880c9b62e06312d883350666397b75a3b0dfbad164f6476dc78e",
+    "bytes": 5235,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-23-20261024.html",
+    "relative": "sgb4-23-20261024.html",
+    "sha256": "83611c3344141257bc1fe57ef32189472a924090dcc4ad8508653dba67a5f8ec",
+    "bytes": 8782,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-23a-20261024.html",
+    "relative": "sgb4-23a-20261024.html",
+    "sha256": "f733c5573d7ddf3061d06b053b12f036ac00719318fbc990475a0a8f26ccd50e",
+    "bytes": 7326,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-24-20261024.html",
+    "relative": "sgb4-24-20261024.html",
+    "sha256": "14c6142a57375cda4474e646526344b5bcdf653d406be0eb562a20cccb678705",
+    "bytes": 5273,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-24b-20261026.html",
+    "relative": "sgb4-24b-20261026.html",
+    "sha256": "14c6142a57375cda4474e646526344b5bcdf653d406be0eb562a20cccb678705",
+    "bytes": 5273,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-28a-20261024.html",
+    "relative": "sgb4-28a-20261024.html",
+    "sha256": "a3bf381aee4e11a65cf6bff806f89e888f913e9f679beb459be843b817a21d2a",
+    "bytes": 35356,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-28e-20261024.html",
+    "relative": "sgb4-28e-20261024.html",
+    "sha256": "821d075650dba6b0556497eadd83abb82699445c11dacdd807a414bbd358f638",
+    "bytes": 12397,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-28f-20261024.html",
+    "relative": "sgb4-28f-20261024.html",
+    "sha256": "10231267d2a7b549ee971af39b684579ca57edd33c7aba30e5c86ab6178ee848",
+    "bytes": 8200,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-28g-20261024.html",
+    "relative": "sgb4-28g-20261024.html",
+    "sha256": "9e7a1c55ca4b5f93041a6eaeb9e6d480837d2abcfbbe1e921dcc21aca28ef3c6",
+    "bytes": 4379,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-28i-20261024.html",
+    "relative": "sgb4-28i-20261024.html",
+    "sha256": "98ac447d1ee0ce1bac215eec9a80cd884982dd8c4987174ffb87b21d2bf7e0ba",
+    "bytes": 4412,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-3-20261026.html",
+    "relative": "sgb4-3-20261026.html",
+    "sha256": "40d56a662e85529b822876a730d882b633dd2e0af82cb5335a970a688e5982b3",
+    "bytes": 4314,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-4-20261024.html",
+    "relative": "sgb4-4-20261024.html",
+    "sha256": "8e84d6b10f5be56560f6fba9ba7fec3ab50c95bd15d093c116de968c57f95489",
+    "bytes": 4071,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-5-20261024.html",
+    "relative": "sgb4-5-20261024.html",
+    "sha256": "64939ff573d5ce228670aa5b9b042b8ad7ae3a3f75fdbe631a4caa33cbea4a88",
+    "bytes": 4062,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-6-20261024.html",
+    "relative": "sgb4-6-20261024.html",
+    "sha256": "8592e345e5cf05f8a1421204ad2b5c739d29d34a842e3f785dc2b1514a74e655",
+    "bytes": 3576,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-7-20261024.html",
+    "relative": "sgb4-7-20261024.html",
+    "sha256": "df3eeea0848d8b1cc9835c869b8f1a1be339a45d04489ba534895af5d9f38f85",
+    "bytes": 7798,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-7a-20261024.html",
+    "relative": "sgb4-7a-20261024.html",
+    "sha256": "1e783da5b5ff4e22c36d583fe2bbd0e4ca4d2c3a69f2955191224dd50496de52",
+    "bytes": 10954,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-8-20261024.html",
+    "relative": "sgb4-8-20261024.html",
+    "sha256": "51043975307e6eef847ebfa5bbd2679f22c21122a58fa81fd2fe95a9823e6043",
+    "bytes": 7509,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-8a-20261024.html",
+    "relative": "sgb4-8a-20261024.html",
+    "sha256": "0cc394b73f58b36647a5a484eec243d4c8197b5a35ad488db41945c09130a623",
+    "bytes": 3867,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb5-223-20261024.html",
+    "relative": "sgb5-223-20261024.html",
+    "sha256": "a2f3f5a04b312fe4aa90a2434559e7a46471a60cea568b839b9ede19812d7d3a",
+    "bytes": 4604,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb5-240-20261026.html",
+    "relative": "sgb5-240-20261026.html",
+    "sha256": "f2cf9c11bf009ddf1c4c23815cc12ee6b8b4e38a9185cadc12cf5b21f91e3d71",
+    "bytes": 13203,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb5-241-20261024.html",
+    "relative": "sgb5-241-20261024.html",
+    "sha256": "fc3425fe626214608d19ae99bfee6acc7243f27b67c9c159a3232293072197ed",
+    "bytes": 3577,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb5-242-20261024.html",
+    "relative": "sgb5-242-20261024.html",
+    "sha256": "2a44d329da9b26907e62a074308ce2fcc8e72da278b2101ecc456f04dbfc48f0",
+    "bytes": 8193,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb5-243-20261024.html",
+    "relative": "sgb5-243-20261024.html",
+    "sha256": "daabd0c690b8f55481cc206e0d57a1de660b3da35e3030972cd68d15a0d7160c",
+    "bytes": 3778,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb5-249-20261024.html",
+    "relative": "sgb5-249-20261024.html",
+    "sha256": "fb9d6df036588f6de628148883bbb72d806ba8c8d73f8862d42f9afa12df66fd",
+    "bytes": 5034,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb5-249b-20261024.html",
+    "relative": "sgb5-249b-20261024.html",
+    "sha256": "c817475ec3e46075ad6c72c56aeb50f0d27346b44227aa6e9c1dc4e8642b37bf",
+    "bytes": 4302,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb5-257-20261024.html",
+    "relative": "sgb5-257-20261024.html",
+    "sha256": "a0eb568be4d4cac8a7632463c1c8dc55c755cfa69112cecd73d3c1820aef9cc0",
+    "bytes": 10650,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb5-6-20261024.html",
+    "relative": "sgb5-6-20261024.html",
+    "sha256": "47b18f1d37ff84f3055822f81ce33c91dcd2d8ec11ad73d43800478fce2f2e24",
+    "bytes": 11999,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb6-165-20261026.html",
+    "relative": "sgb6-165-20261026.html",
+    "sha256": "579dcc584325c3509397810aa02ad100951dda0bbfd83ecbc37a463db2ffd680",
+    "bytes": 9685,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb6-168-20261024.html",
+    "relative": "sgb6-168-20261024.html",
+    "sha256": "0046c1be59b1cf96269f6427ebd46c9736d4520bb629af9b69ffa28f5c14cf98",
+    "bytes": 10439,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb6-172-20261024.html",
+    "relative": "sgb6-172-20261024.html",
+    "sha256": "d8114a051906902184f1471c41c64af48ad042433018f2ad11f0fb8832b6977a",
+    "bytes": 6246,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb6-2-20261026.html",
+    "relative": "sgb6-2-20261026.html",
+    "sha256": "40d9ae6cb3debb95386adb0a4f7a6d610e9b12476b26c12e3419187635664fa0",
+    "bytes": 7233,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb6-6-20261024.html",
+    "relative": "sgb6-6-20261024.html",
+    "sha256": "bd7ea0622914037969a3948d6ce39238ba15460c1714c780b380ab42b03d0242",
+    "bytes": 15770,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-3-20261024.html",
+    "relative": "solzg-3-20261024.html",
+    "sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+    "bytes": 12343,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-4-20261024.html",
+    "relative": "solzg-4-20261024.html",
+    "sha256": "dd28933ed36da19cae72de5a054f9edbea5c5919cb2aeac6efc257afe9fab058",
+    "bytes": 4218,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-6-20261026.html",
+    "relative": "solzg-6-20261026.html",
+    "sha256": "440b164ab35a89eff28cda416931ac803718f92526b81a0c2f28974b5b04d2f1",
+    "bytes": 13819,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/svbezgrv-2026-20261024.pdf",
+    "relative": "svbezgrv-2026-20261024.pdf",
+    "sha256": "de050ad62d30ef31b580ae227ace25e27c4ed865658fb35c0ca5ddd88683957d",
+    "bytes": 260919,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/svbezgrv-2026-20261024.txt",
+    "relative": "svbezgrv-2026-20261024.txt",
+    "sha256": "509eb3d4b27d44f581a3ce35bc74ce334784ca007befc9b48f8785eb0eb0c69d",
+    "bytes": 4348,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/svev-1-20261024.html",
+    "relative": "svev-1-20261024.html",
+    "sha256": "dd09050791c50af13998ddb3ce6b186eb33f00e14a9a61b03bb1c3a6721171ad",
+    "bytes": 10728,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/svev-2-20261024.html",
+    "relative": "svev-2-20261024.html",
+    "sha256": "fbce133e83a370b4281ca90ac2ecbde87ebbe492aac5753dd8cb63dece5d31cc",
+    "bytes": 9106,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/svev-3-20261024.html",
+    "relative": "svev-3-20261024.html",
+    "sha256": "c951efcf63c57a3b5b03e1739da480cd82287ef4eb3cd36b0d98003b28290ff9",
+    "bytes": 5736,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/svev-4-20261024.html",
+    "relative": "svev-4-20261024.html",
+    "sha256": "ac18d6e22686005bfc5d4050198fe91b796a352130c84e7f58c1c4f6642d6334",
+    "bytes": 3275,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/svev-full-20261024.html",
+    "relative": "svev-full-20261024.html",
+    "sha256": "6b55f05c53dbf14d3c05fc60825dc2d64e08bb58469518c7cc78f569a8ae5ff6",
+    "bytes": 21099,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustdv-17a-20261027.html",
+    "relative": "ustdv-17a-20261027.html",
+    "sha256": "f3705ba5bb4f0f59073346c065f4a60e0144f5d02bd589b8f4395b1feb3f585c",
+    "bytes": 7832,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustdv-33-20261024.html",
+    "relative": "ustdv-33-20261024.html",
+    "sha256": "aa5ec6111492b06c7bbc4c23053b7e5c3e969a807d84bbc69a641548e8ff0558",
+    "bytes": 4853,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustdv-46-20261024.html",
+    "relative": "ustdv-46-20261024.html",
+    "sha256": "03e4fb4bab13a7b281c7f79722b7bb94ff94201c733fe433989bc45cc4d85c97",
+    "bytes": 3766,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustdv-47-20261024.html",
+    "relative": "ustdv-47-20261024.html",
+    "sha256": "b78a891ebb4a5a546bf3e216ef179b36169fda42702f147dcdb0c107fcc70d9c",
+    "bytes": 4325,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustdv-48-20261024.html",
+    "relative": "ustdv-48-20261024.html",
+    "sha256": "ee6a36bf9321f1a212ead44f4be6529210a2a0a0ee325ab51d105140c045c89c",
+    "bytes": 5296,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-10-20261027.html",
+    "relative": "ustg-10-20261027.html",
+    "sha256": "8b2a8368180cb6e03da54a55b7ad748e72ae84cc6ab03eef87c3f6198ba2f2bc",
+    "bytes": 9347,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-12-20261024.html",
+    "relative": "ustg-12-20261024.html",
+    "sha256": "e8753b36595e445e776716ce43ec8d01633d9c548aec77d776105ae9484d09d0",
+    "bytes": 15219,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-13-20261024.html",
+    "relative": "ustg-13-20261024.html",
+    "sha256": "651a989b51b160c85addf12be5cceabf2e668b8f945fcdd6aca64e5baa867967",
+    "bytes": 8347,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-13b-20261024.html",
+    "relative": "ustg-13b-20261024.html",
+    "sha256": "edd8c2e8992e24eb771e5d261eea2c742740cf56f6463b6dd9d61a2b674da145",
+    "bytes": 19680,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-14-20261024.html",
+    "relative": "ustg-14-20261024.html",
+    "sha256": "ea479e0e6088f5f12a8453eceb145c1a59ef9861803a2c2eea12775d44360eb7",
+    "bytes": 16509,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-15-20261024.html",
+    "relative": "ustg-15-20261024.html",
+    "sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+    "bytes": 13770,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-15-20261027.html",
+    "relative": "ustg-15-20261027.html",
+    "sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+    "bytes": 13770,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-16-20261024.html",
+    "relative": "ustg-16-20261024.html",
+    "sha256": "b77aa0ec700d9733baff3a3e26ae1ff9da89f40ad2113a630a07c0aeea44a990",
+    "bytes": 12838,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-17-20261024.html",
+    "relative": "ustg-17-20261024.html",
+    "sha256": "a2225062fe681e09ae188419fd29a3ed14598db343610689944a45e1b0ff0329",
+    "bytes": 7085,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-18-20261024.html",
+    "relative": "ustg-18-20261024.html",
+    "sha256": "17daf6ad5eedac838be45dc0c823ef631394a9346781545c7ddb5f35a34eb135",
+    "bytes": 38052,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-18a-20261024.html",
+    "relative": "ustg-18a-20261024.html",
+    "sha256": "5b0ab5f4cf793821558e35fbef4767fea35fc55d463a4688a46839f878d23dfe",
+    "bytes": 18667,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-18a-20261027.html",
+    "relative": "ustg-18a-20261027.html",
+    "sha256": "5b0ab5f4cf793821558e35fbef4767fea35fc55d463a4688a46839f878d23dfe",
+    "bytes": 18667,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-19-20261024.html",
+    "relative": "ustg-19-20261024.html",
+    "sha256": "bcee10874715ec2bb3a0ed1867ef4f512bee0093e4eed85e57bae7addc777bfc",
+    "bytes": 7625,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-20-20261024.html",
+    "relative": "ustg-20-20261024.html",
+    "sha256": "b9bde56785a4fbd9d730441b9f0d155b0715a29e2e3191916db5b14cb58d7f2f",
+    "bytes": 5188,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-24-20261027.html",
+    "relative": "ustg-24-20261027.html",
+    "sha256": "04b359a34fcd150bd48c71dda679014265c2b5930ab96204ae6aad2824763331",
+    "bytes": 8064,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-27-20261024.html",
+    "relative": "ustg-27-20261024.html",
+    "sha256": "58f8018d2dc7512cea52ca14847700b68fe07c8bfa3bc4e4aebc29c5f7451ee0",
+    "bytes": 25529,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-3a-20261024.html",
+    "relative": "ustg-3a-20261024.html",
+    "sha256": "f0fec2764f7e3fa8439972db8c9980a9dab6740d22b3d055015d2d01093f3f5b",
+    "bytes": 20447,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-3c-20261024.html",
+    "relative": "ustg-3c-20261024.html",
+    "sha256": "11f0492749fef609ff2815df9c1651ae25746a427f1be31640641687884ad2ae",
+    "bytes": 7975,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-4-20261024.html",
+    "relative": "ustg-4-20261024.html",
+    "sha256": "c60df9ce2bab1184ed7229d8f48c4024311b71d3f6d1d9d5f6a0834dbb6b2a87",
+    "bytes": 60884,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-9-20261024.html",
+    "relative": "ustg-9-20261024.html",
+    "sha256": "7a95d31e90cf2c4ad25b55cbde00237d82491920a39bf03a6920f827f044e24f",
+    "bytes": 4804,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-BJNR-20261024.html",
+    "relative": "ustg-BJNR-20261024.html",
+    "sha256": "7173642283fb86fce2e0dedd8b3711dbce252d182a9f80783fa1070cc4f1bb40",
+    "bytes": 623740,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-index-20261024.html",
+    "relative": "ustg-index-20261024.html",
+    "sha256": "38a084e1e917d608227fa3c443e2b7aa96444e00f6f32674ffb4cc994f3490d7",
+    "bytes": 23684,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/x",
+    "relative": "x",
+    "sha256": "c42a2d5411458c57bdcdbd287377f9549511692076ec573c456ca84d03e98b35",
+    "bytes": 172752,
+    "scope": "Existing acquired artifact only; no new primary-text reading or claim verification in this inventory"
+  }
+]

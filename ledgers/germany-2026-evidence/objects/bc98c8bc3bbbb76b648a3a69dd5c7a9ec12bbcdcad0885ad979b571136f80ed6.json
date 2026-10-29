@@ -1,0 +1,107 @@
+[
+  {
+    "label": "limited tariff base",
+    "actual": "36348",
+    "expected": "36348"
+  },
+  {
+    "label": "limited tax",
+    "actual": "6076",
+    "expected": "6076"
+  },
+  {
+    "label": "90percent option",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "option taxable",
+    "actual": "23964",
+    "expected": "23964"
+  },
+  {
+    "label": "option progression base",
+    "actual": "25964",
+    "expected": "25964"
+  },
+  {
+    "label": "option rate-base tax",
+    "actual": "3107",
+    "expected": "3107"
+  },
+  {
+    "label": "option tax unrounded fixture",
+    "actual": "2867",
+    "expected": "2867"
+  },
+  {
+    "label": "option saving",
+    "actual": "3209",
+    "expected": "3209"
+  },
+  {
+    "label": "foreign dividend after saver",
+    "actual": "9000",
+    "expected": "9000"
+  },
+  {
+    "label": "foreign dividend German precredit",
+    "actual": "2250",
+    "expected": "2250"
+  },
+  {
+    "label": "eligible credit15percent",
+    "actual": "1500",
+    "expected": "1500"
+  },
+  {
+    "label": "German remaining flat tax",
+    "actual": "750.0",
+    "expected": "750"
+  },
+  {
+    "label": "flat-tax solidarity",
+    "actual": "165/4",
+    "expected": "165/4"
+  },
+  {
+    "label": "German dividend total",
+    "actual": "3165/4",
+    "expected": "3165/4"
+  },
+  {
+    "label": "source dividend total percent",
+    "actual": "211/8",
+    "expected": "211/8"
+  },
+  {
+    "label": "two fifths of25",
+    "actual": "10",
+    "expected": "10"
+  },
+  {
+    "label": "couple threshold",
+    "actual": "24696",
+    "expected": "24696"
+  },
+  {
+    "label": "royalty gross10k standard tax",
+    "actual": "1500",
+    "expected": "1500"
+  },
+  {
+    "label": "performance net10k less8k individual",
+    "actual": "600",
+    "expected": "600"
+  },
+  {
+    "label": "DE-L11 refundable tax removed",
+    "actual": "1500",
+    "expected": "1500"
+  },
+  {
+    "label": "DE-L13 allocated mandatory contributions4k German20k/all40k",
+    "actual": "2000",
+    "expected": "2000"
+  }
+]

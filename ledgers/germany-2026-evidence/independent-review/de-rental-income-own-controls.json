@@ -1,0 +1,276 @@
+{
+  "count": 54,
+  "controls": [
+    {
+      "name": "case1income",
+      "actual": "13560",
+      "expected": "13560"
+    },
+    {
+      "name": "case1AfA",
+      "actual": "3600",
+      "expected": "3600"
+    },
+    {
+      "name": "case1travel",
+      "actual": "90",
+      "expected": "90"
+    },
+    {
+      "name": "case1cost",
+      "actual": "12150",
+      "expected": "12150"
+    },
+    {
+      "name": "case1surplus",
+      "actual": "1410",
+      "expected": "1410"
+    },
+    {
+      "name": "case2paid",
+      "actual": "420",
+      "expected": "420"
+    },
+    {
+      "name": "case2market",
+      "actual": "1050",
+      "expected": "1050"
+    },
+    {
+      "name": "case2ratio",
+      "actual": "2/5",
+      "expected": "2/5"
+    },
+    {
+      "name": "case2income",
+      "actual": "5040",
+      "expected": "5040"
+    },
+    {
+      "name": "case2fullcost",
+      "actual": "4920",
+      "expected": "4920"
+    },
+    {
+      "name": "case2precut",
+      "actual": "120",
+      "expected": "120"
+    },
+    {
+      "name": "case2costdeducted",
+      "actual": "1968",
+      "expected": "1968"
+    },
+    {
+      "name": "case2surplus",
+      "actual": "3072",
+      "expected": "3072"
+    },
+    {
+      "name": "case2perspouse",
+      "actual": "1536.0",
+      "expected": "1536"
+    },
+    {
+      "name": "66.67variant",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "57.14variant",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "new5first",
+      "actual": "11250",
+      "expected": "11250"
+    },
+    {
+      "name": "new5next",
+      "actual": "28875/2",
+      "expected": "28875/2"
+    },
+    {
+      "name": "new3first",
+      "actual": "6750",
+      "expected": "6750"
+    },
+    {
+      "name": "newincome",
+      "actual": "13050",
+      "expected": "13050"
+    },
+    {
+      "name": "newcosts",
+      "actual": "11850",
+      "expected": "11850"
+    },
+    {
+      "name": "new5loss",
+      "actual": "-10050",
+      "expected": "-10050"
+    },
+    {
+      "name": "new3loss",
+      "actual": "-5550",
+      "expected": "-5550"
+    },
+    {
+      "name": "specialcostsqm",
+      "actual": "5000",
+      "expected": "5000"
+    },
+    {
+      "name": "specialbase",
+      "actual": "320000",
+      "expected": "320000"
+    },
+    {
+      "name": "specialannual",
+      "actual": "16000",
+      "expected": "16000"
+    },
+    {
+      "name": "specialnormal",
+      "actual": "12000",
+      "expected": "12000"
+    },
+    {
+      "name": "cliff5250fails",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "exact5200passes",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "15limit",
+      "actual": "30000",
+      "expected": "30000"
+    },
+    {
+      "name": "over15all",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "exact15not",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "capitalised31kAfA",
+      "actual": "620",
+      "expected": "620"
+    },
+    {
+      "name": "saletotalAfA",
+      "actual": "33600",
+      "expected": "33600"
+    },
+    {
+      "name": "salereducedcost",
+      "actual": "266400",
+      "expected": "266400"
+    },
+    {
+      "name": "salegain",
+      "actual": "63600",
+      "expected": "63600"
+    },
+    {
+      "name": "7bpostfourremaining",
+      "actual": "288000",
+      "expected": "288000"
+    },
+    {
+      "name": "postfourlife",
+      "actual": "88/3",
+      "expected": "88/3"
+    },
+    {
+      "name": "postfournewannual",
+      "actual": "108000/11",
+      "expected": "108000/11"
+    },
+    {
+      "name": "mixedroomdirectplusratio",
+      "actual": "3000",
+      "expected": "3000"
+    },
+    {
+      "name": "forecastincome10",
+      "actual": "110000",
+      "expected": "110000"
+    },
+    {
+      "name": "forecastcostminus10",
+      "actual": "90000",
+      "expected": "90000"
+    },
+    {
+      "name": "30yavg",
+      "actual": "300000",
+      "expected": "300000"
+    },
+    {
+      "name": "vacancyown20let80vac100rental",
+      "actual": "160",
+      "expected": "160"
+    },
+    {
+      "name": "holiday25exact",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "rent50exactmiddle",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "rent66exactfull",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "maintenance5years",
+      "actual": "2000",
+      "expected": "2000"
+    },
+    {
+      "name": "spreadsaleunclaimed3of5",
+      "actual": "6000",
+      "expected": "6000"
+    },
+    {
+      "name": "2026filingJuly31Saturday",
+      "actual": "5",
+      "expected": "5"
+    },
+    {
+      "name": "2026filingAug2Monday",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "2025advisedFeb28Sunday",
+      "actual": "6",
+      "expected": "6"
+    },
+    {
+      "name": "2025advisedMarch1Monday",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "2026advisedFeb29Tuesday",
+      "actual": "1",
+      "expected": "1"
+    }
+  ],
+  "scope": "Both exact original executable cases and all current numerical illustrations; post7b and mixed-room controls are explicit new reviewer separators, not original case alterations. AfA sale-year800 remains stipulated and actual source boundary retained; no universal month-of-sale holding claimed."
+}

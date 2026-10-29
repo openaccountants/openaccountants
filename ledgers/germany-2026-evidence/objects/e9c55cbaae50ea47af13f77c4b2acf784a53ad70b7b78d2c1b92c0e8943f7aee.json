@@ -1,0 +1,180 @@
+{
+  "Guide_sha256": "e66f8174e2c96cc6accd4578279f3c374d7853c6b6a672b83ce92553ca7bee6f",
+  "read_on": "2026-10-29",
+  "findings": [
+    {
+      "id": "DE-B12",
+      "exact_before": "**Private use of business assets.** Using a business asset privately is a deemed supply (§ 3(1b) and (9a) UStG), reported at the rate that applies, normally in Kz 81. For use of an asset the base is the costs that carried input VAT, including the purchase cost spread over the correction period (§ 10(4) no. 2 UStG), not the income-tax list-price figure. A motor vehicle is not blocked for VAT: the business share decides the deduction, and below 10% business use there is none.",
+      "options": [
+        {
+          "label": "A recommended statutory gates and bases",
+          "exact_after": "**Private use of business assets.** Withdrawal of business goods under § 3(1b) UStG, and private use of an allocated business asset under § 3(9a) no. 1 UStG, are deemed supplies only where the goods or relevant components entitled the business to full or partial input deduction. For asset use, the exclusions in § 3(9a) no. 1 for § 15(1b) and § 15a(6a) also apply. Other free services under § 3(9a) no. 2 have their own rule. Report a taxable deemed supply at the applicable rate, normally in Kz 81. For a goods withdrawal the base is the purchase price of the item or an equivalent item, plus incidental costs, or otherwise cost, at the withdrawal date (§ 10(4) no. 1). For asset use it is the expenses that entitled the business to input deduction; acquisition or production costs of at least EUR 500 are spread over the applicable § 15a correction period (§ 10(4) no. 2), rather than using the income-tax list-price figure. A motor vehicle is not blocked for VAT: the business share decides the deduction, and below 10% business use there is none."
+        },
+        {
+          "label": "B withdraw private-use method",
+          "exact_after": "**Private use of business assets.** Refer deemed supplies for a separate determination under §§ 3 and 10 UStG."
+        }
+      ],
+      "source_quotes": [
+        {
+          "source_id": "DEB303",
+          "act_article": "UStG §3(1b)",
+          "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__3.html",
+          "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/targeted-sources/ustg-3-20261029.html",
+          "raw_sha256": "b01b323cdca3c8575a773842c535ca60b6dc6d85740e189383e48ca1282cc63c",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB303.txt",
+          "reader_sha256": "ff9f7ed9d32af8243ce4254a3085bd8099566858523b6e7899fafef74d009abc",
+          "native_LF": [
+            9,
+            15
+          ],
+          "exact_quote": "(1b) Einer Lieferung gegen Entgelt werden gleichgestellt 1.\ndie Entnahme eines Gegenstands durch einen Unternehmer aus seinem Unternehmen für Zwecke, die außerhalb des Unternehmens liegen;\n2.\ndie unentgeltliche Zuwendung eines Gegenstands durch einen Unternehmer an sein Personal für dessen privaten Bedarf, sofern keine Aufmerksamkeiten vorliegen;\n3.\njede andere unentgeltliche Zuwendung eines Gegenstands, ausgenommen Geschenke von geringem Wert und Warenmuster für Zwecke des Unternehmens.\nVoraussetzung ist, dass der Gegenstand oder seine Bestandteile zum vollen oder teilweisen Vorsteuerabzug berechtigt haben.",
+          "read_on": "2026-10-29",
+          "actual_read_scope": [
+            [
+              9,
+              15
+            ]
+          ],
+          "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+          "note": ""
+        },
+        {
+          "source_id": "DEB303",
+          "act_article": "UStG §3(9a)",
+          "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__3.html",
+          "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/targeted-sources/ustg-3-20261029.html",
+          "raw_sha256": "b01b323cdca3c8575a773842c535ca60b6dc6d85740e189383e48ca1282cc63c",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB303.txt",
+          "reader_sha256": "ff9f7ed9d32af8243ce4254a3085bd8099566858523b6e7899fafef74d009abc",
+          "native_LF": [
+            32,
+            35
+          ],
+          "exact_quote": "(9a) Einer sonstigen Leistung gegen Entgelt werden gleichgestellt 1.\ndie Verwendung eines dem Unternehmen zugeordneten Gegenstands, der zum vollen oder teilweisen Vorsteuerabzug berechtigt hat, durch einen Unternehmer für Zwecke, die außerhalb des Unternehmens liegen, oder für den privaten Bedarf seines Personals, sofern keine Aufmerksamkeiten vorliegen; dies gilt nicht, wenn der Vorsteuerabzug nach § 15 Absatz 1b ausgeschlossen oder wenn eine Vorsteuerberichtigung nach § 15a Absatz 6a durchzuführen ist;\n2.\ndie unentgeltliche Erbringung einer anderen sonstigen Leistung durch den Unternehmer für Zwecke, die außerhalb des Unternehmens liegen, oder für den privaten Bedarf seines Personals, sofern keine Aufmerksamkeiten vorliegen.",
+          "read_on": "2026-10-29",
+          "actual_read_scope": [
+            [
+              32,
+              35
+            ]
+          ],
+          "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+          "note": ""
+        },
+        {
+          "source_id": "DEB300",
+          "act_article": "UStG §10(4)",
+          "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__10.html",
+          "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-10-20261027.html",
+          "raw_sha256": "8b2a8368180cb6e03da54a55b7ad748e72ae84cc6ab03eef87c3f6198ba2f2bc",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB300.txt",
+          "reader_sha256": "a11bbd7d31625bcdfa8b9d246081e8cc83366810afa8bd0968b3b3e97c81dd24",
+          "native_LF": [
+            10,
+            16
+          ],
+          "exact_quote": "(4) Der Umsatz wird bemessen 1.\nbei dem Verbringen eines Gegenstands im Sinne des § 1a Abs. 2 und des § 3 Abs. 1a sowie bei Lieferungen im Sinne des § 3 Abs. 1b nach dem Einkaufspreis zuzüglich der Nebenkosten für den Gegenstand oder für einen gleichartigen Gegenstand oder mangels eines Einkaufspreises nach den Selbstkosten, jeweils zum Zeitpunkt des Umsatzes;\n2.\nbei sonstigen Leistungen im Sinne des § 3 Abs. 9a Nr. 1 nach den bei der Ausführung dieser Umsätze entstandenen Ausgaben, soweit sie zum vollen oder teilweisen Vorsteuerabzug berechtigt haben. Zu diesen Ausgaben gehören auch die Anschaffungs- oder Herstellungskosten eines Wirtschaftsguts, soweit das Wirtschaftsgut dem Unternehmen zugeordnet ist und für die Erbringung der sonstigen Leistung verwendet wird. Betragen die Anschaffungs- oder Herstellungskosten mindestens 500 Euro, sind sie gleichmäßig auf einen Zeitraum zu verteilen, der dem für das Wirtschaftsgut maßgeblichen Berichtigungszeitraum nach § 15a entspricht;\n3.\nbei sonstigen Leistungen im Sinne des § 3 Abs. 9a Nr. 2 nach den bei der Ausführung dieser Umsätze entstandenen Ausgaben. Satz 1 Nr. 2 Sätze 2 und 3 gilt entsprechend.\nDie Umsatzsteuer gehört nicht zur Bemessungsgrundlage.",
+          "read_on": "2026-10-29",
+          "actual_read_scope": [
+            [
+              10,
+              16
+            ]
+          ],
+          "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "DE-B13",
+      "exact_before": [
+        "| Distance sales and e-services to EU consumers, EU-wide, below which German VAT applies | EUR 10,000 (previous and current year) | 2026 | § 3c(4) UStG, https://www.gesetze-im-internet.de/ustg_1980/__3c.html |",
+        "- **Distance sales to EU consumers.** Up to EUR 10,000 a year EU-wide (goods and electronic services together, previous and current year), German VAT applies; above it, the customer's country's VAT, usually through the one-stop shop (§ 3c(4) UStG). One EU-wide total, not per country. A business may waive the limit; the waiver binds for at least two calendar years (§ 3c(4) UStG). See de-vat-annual-and-special-schemes."
+      ],
+      "options": [
+        {
+          "label": "A recommended narrow one-state gate",
+          "exact_after": [
+            "| Distance sales and e-services to EU consumers, EU-wide, where the supplier is established only in Germany: limit for German VAT | EUR 10,000 (previous and current year) | 2026 | § 3c(4) UStG, https://www.gesetze-im-internet.de/ustg_1980/__3c.html |",
+            "- **Distance sales to EU consumers.** For a supplier established in only one member state, Germany, up to EUR 10,000 a year EU-wide (goods and electronic services together, previous and current year), German VAT applies; above it, the customer's country's VAT, usually through the one-stop shop (§ 3c(4) UStG). One EU-wide total, not per country. A business may waive the limit; the waiver binds for at least two calendar years (§ 3c(4) UStG). See de-vat-annual-and-special-schemes."
+          ]
+        },
+        {
+          "label": "B remove10kmethod",
+          "exact_after": "Refer EU-consumer place of supply to the companion Guide."
+        }
+      ],
+      "source_quotes": [
+        {
+          "source_id": "DEB162",
+          "act_article": "UStG §3c(1)–(5)",
+          "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__3c.html",
+          "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-3c-20261024.html",
+          "raw_sha256": "11f0492749fef609ff2815df9c1651ae25746a427f1be31640641687884ad2ae",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB162.txt",
+          "reader_sha256": "8a53d822558fb41697f03cfa87fb113c0d2be86c15be5fd77f57d9bc1f9393ac",
+          "native_LF": [
+            7,
+            16
+          ],
+          "exact_quote": "(1) Als Ort der Lieferung eines innergemeinschaftlichen Fernverkaufs gilt der Ort, an dem sich der Gegenstand bei Beendigung der Beförderung oder Versendung an den Erwerber befindet. Ein innergemeinschaftlicher Fernverkauf ist die Lieferung eines Gegenstands, der durch den Lieferer oder für dessen Rechnung aus dem Gebiet eines Mitgliedstaates in das Gebiet eines anderen Mitgliedstaates oder aus dem übrigen Gemeinschaftsgebiet in die in § 1 Absatz 3 bezeichneten Gebiete an den Erwerber befördert oder versandt wird, einschließlich jener Lieferung, an deren Beförderung oder Versendung der Lieferer indirekt beteiligt ist. Erwerber im Sinne des Satzes 2 ist ein in § 3a Absatz 5 Satz 1 bezeichneter Empfänger oder eine in § 1a Absatz 3 Nummer 1 genannte Person, die weder die maßgebende Erwerbsschwelle überschreitet noch auf ihre Anwendung verzichtet; im Fall der Beendigung der Beförderung oder Versendung im Gebiet eines anderen Mitgliedstaates ist die von diesem Mitgliedstaat festgesetzte Erwerbsschwelle maßgebend.\n(2) Als Ort der Lieferung eines Fernverkaufs eines Gegenstands, der aus dem Drittlandsgebiet in einen anderen Mitgliedstaat als den, in dem die Beförderung oder Versendung des Gegenstands an den Erwerber endet, eingeführt wird, gilt der Ort, an dem sich der Gegenstand bei Beendigung der Beförderung oder Versendung an den Erwerber befindet. § 3 Absatz 3a Satz 4 und 5 gilt entsprechend.\n(3) Der Ort der Lieferung beim Fernverkauf eines Gegenstands, der aus dem Drittlandsgebiet in den Mitgliedstaat, in dem die Beförderung oder Versendung der Gegenstände an den Erwerber endet, eingeführt wird, gilt als in diesem Mitgliedstaat gelegen, sofern die Steuer auf diesen Gegenstand gemäß dem besonderen Besteuerungsverfahren nach § 18k zu erklären ist. § 3 Absatz 3a Satz 4 und 5 gilt entsprechend. Bei einem Fernverkauf nach § 3 Absatz 3a Satz 2 gilt Satz 1 für die Lieferung, der die Beförderung oder Versendung des Gegenstandes gemäß § 3 Absatz 6b zugeschrieben wird, entsprechend, auch wenn die Steuer auf diesen Gegenstand nicht gemäß dem besonderen Besteuerungsverfahren nach § 18k zu erklären ist und ein Unternehmer oder dessen Beauftragter Schuldner der Einfuhrumsatzsteuer für die Einfuhr des Gegenstands ist.\n(4) Absatz 1 ist nicht anzuwenden, wenn der leistende Unternehmer seinen Sitz, seine Geschäftsleitung, eine Betriebsstätte oder in Ermangelung eines Sitzes, einer Geschäftsleitung oder einer Betriebsstätte seinen Wohnsitz oder gewöhnlichen Aufenthalt in nur einem Mitgliedstaat hat und der Gesamtbetrag der Entgelte der in § 3a Absatz 5 Satz 2 bezeichneten sonstigen Leistungen an in § 3a Absatz 5 Satz 1 bezeichnete Empfänger mit Wohnsitz, gewöhnlichem Aufenthalt oder Sitz in anderen Mitgliedstaaten sowie der innergemeinschaftlichen Fernverkäufe nach Absatz 1 Satz 2 und 3 insgesamt 10 000 Euro im vorangegangenen Kalenderjahr nicht überschritten hat und im laufenden Kalenderjahr nicht überschreitet. Der leistende Unternehmer kann dem Finanzamt erklären, dass er auf die Anwendung des Satzes 1 verzichtet. Die Erklärung bindet den Unternehmer mindestens für zwei Kalenderjahre.\n(5) Die Absätze 1 bis 3 gelten nicht für 1.\ndie Lieferung neuer Fahrzeuge,\n2.\ndie Lieferung eines Gegenstands, der mit oder ohne probeweise Inbetriebnahme durch den Lieferer oder für dessen Rechnung montiert oder installiert geliefert wird, und für\n3.\ndie Lieferung eines Gegenstands, auf die die Differenzbesteuerung nach § 25a Absatz 1 oder 2 angewendet wird.",
+          "read_on": "2026-10-29",
+          "actual_read_scope": [
+            [
+              7,
+              16
+            ]
+          ],
+          "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "DE-B14",
+      "exact_before_anchor": "**What is taxed.** Supplies of goods and services made in Germany for consideration by a business, intra-EU acquisitions of goods, imports, and private use of business assets (§ 3(1b) and (9a) UStG). The base is everything the customer pays, without the VAT itself.",
+      "options": [
+        {
+          "label": "A recommended restore actual old foreign-currency method",
+          "addition": "**Foreign currency.** Convert the tax base and input VAT to euros using the BMF average rate for the month of the supply, or the month an advance payment is received before supply. A business permitted to use § 20 cash accounting uses the receipt month. A daily rate evidenced by a bank statement or exchange-rate list can be used only with the tax office's permission (§ 16(6) UStG). This is the standard-return route; the separate OSS exchange-rate rule is outside this method."
+        },
+        {
+          "label": "B ledger-history-only",
+          "addition": "No Guide addition; old ordinary currency method would remain absent."
+        }
+      ],
+      "source_quotes": [
+        {
+          "source_id": "DEB307",
+          "act_article": "UStG §16(6)",
+          "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__16.html",
+          "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-16-20261024.html",
+          "raw_sha256": "b77aa0ec700d9733baff3a3e26ae1ff9da89f40ad2113a630a07c0aeea44a990",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB307.txt",
+          "reader_sha256": "ddcef24a266e8741fa4428e93b6dc94fea9bd521a771644652adea3af98bd5dc",
+          "native_LF": [
+            20,
+            20
+          ],
+          "exact_quote": "(6) Werte in fremder Währung sind zur Berechnung der Steuer und der abziehbaren Vorsteuerbeträge auf Euro nach den Durchschnittskursen umzurechnen, die das Bundesministerium der Finanzen für den Monat öffentlich bekanntgibt, in dem die Leistung ausgeführt oder das Entgelt oder ein Teil des Entgelts vor Ausführung der Leistung (§ 13 Abs. 1 Nr. 1 Buchstabe a Satz 4) vereinnahmt wird. Ist dem leistenden Unternehmer die Berechnung der Steuer nach vereinnahmten Entgelten gestattet (§ 20), so sind die Entgelte nach den Durchschnittskursen des Monats umzurechnen, in dem sie vereinnahmt werden. Das Finanzamt kann die Umrechnung nach dem Tageskurs, der durch Bankmitteilung oder Kurszettel nachzuweisen ist, gestatten. Macht ein Unternehmer von § 18 Absatz 4c oder 4e oder den §§ 18i, 18j oder 18k Gebrauch, hat er zur Berechnung der Steuer Werte in fremder Währung nach den Kursen umzurechnen, die für den letzten Tag des Besteuerungszeitraums nach Absatz 1a Satz 1, Absatz 1b Satz 1, Absatz 1c Satz 1, Absatz 1d Satz 1 oder Absatz 1e Satz 1 von der Europäischen Zentralbank festgestellt worden sind. Sind für die in Satz 4 genannten Tage keine Umrechnungskurse festgestellt worden, hat der Unternehmer die Steuer nach den für den nächsten Tag nach Ablauf des Besteuerungszeitraums nach Absatz 1a Satz 1, Absatz 1b Satz 1, Absatz 1c Satz 1, Absatz 1d Satz 1 oder Absatz 1e Satz 1 von der Europäischen Zentralbank festgestellten Umrechnungskursen umzurechnen.",
+          "read_on": "2026-10-29",
+          "actual_read_scope": [
+            [
+              20,
+              20
+            ]
+          ],
+          "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+          "note": ""
+        }
+      ],
+      "old_topic_native_LF": [
+        723,
+        726
+      ]
+    }
+  ],
+  "authorization": "Parent standing authority2026-10-29: save two sourced options then recommended narrow A for confirmed findings. No independent verdict."
+}

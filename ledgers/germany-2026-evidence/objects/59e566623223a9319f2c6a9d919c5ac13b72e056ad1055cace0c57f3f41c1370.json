@@ -1,0 +1,107 @@
+[
+  {
+    "label": "KG trade base",
+    "actual": "416000",
+    "expected": "416000"
+  },
+  {
+    "label": "KG Messbetrag",
+    "actual": "27405/2",
+    "expected": "27405/2"
+  },
+  {
+    "label": "KG trade tax",
+    "actual": "104139/2",
+    "expected": "104139/2"
+  },
+  {
+    "label": "Anna income",
+    "actual": "296000",
+    "expected": "296000"
+  },
+  {
+    "label": "Anna Messbetrag",
+    "actual": "16443/2",
+    "expected": "16443/2"
+  },
+  {
+    "label": "Anna trade payable",
+    "actual": "312417/10",
+    "expected": "312417/10"
+  },
+  {
+    "label": "Anna taxable",
+    "actual": "280964",
+    "expected": "280964"
+  },
+  {
+    "label": "Anna tariff",
+    "actual": "106963",
+    "expected": "106963"
+  },
+  {
+    "label": "Anna credit",
+    "actual": "312417/10",
+    "expected": "312417/10"
+  },
+  {
+    "label": "Anna income tax",
+    "actual": "757213/10",
+    "expected": "757213/10"
+  },
+  {
+    "label": "Anna solidarity",
+    "actual": "4164.67",
+    "expected": "4164.67"
+  },
+  {
+    "label": "credit amount unused",
+    "actual": "16443/10",
+    "expected": "16443/10"
+  },
+  {
+    "label": "arrival taxable",
+    "actual": "29234",
+    "expected": "29234"
+  },
+  {
+    "label": "arrival rate base",
+    "actual": "59234",
+    "expected": "59234"
+  },
+  {
+    "label": "arrival base tax",
+    "actual": "13938",
+    "expected": "13938"
+  },
+  {
+    "label": "arrival rate",
+    "actual": "29413/125000",
+    "expected": "29413/125000"
+  },
+  {
+    "label": "arrival tax",
+    "actual": "6878",
+    "expected": "6878"
+  },
+  {
+    "label": "arrival plain tax",
+    "actual": "4002",
+    "expected": "4002"
+  },
+  {
+    "label": "official2025 rounding example",
+    "actual": "8581/125000",
+    "expected": "8581/125000"
+  },
+  {
+    "label": "limited loss positive capital10k/loss30k blocked",
+    "actual": "20000",
+    "expected": "20000"
+  },
+  {
+    "label": "partnership positive100k one month surcharge",
+    "actual": "125/2",
+    "expected": "125/2"
+  }
+]

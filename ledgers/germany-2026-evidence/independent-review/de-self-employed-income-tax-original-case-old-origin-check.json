@@ -1,0 +1,16 @@
+{
+  "oldunits": 385,
+  "old_origin_mismatches": 0,
+  "old_semantic_sample_1based": [
+    10,
+    50,
+    100,
+    150,
+    200,
+    250,
+    385
+  ],
+  "original_cases_exact_to_independently_recomputed_income_cases": true,
+  "case_count": 2,
+  "same39independent_controls_scope": "same2exactfixtures andsameactualruleconditions; no duplicated new39 tests asserted"
+}

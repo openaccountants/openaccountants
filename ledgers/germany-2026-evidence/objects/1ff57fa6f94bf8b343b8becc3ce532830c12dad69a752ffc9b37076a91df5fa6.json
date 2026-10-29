@@ -1,0 +1,27 @@
+{
+  "finding": "DE-B05",
+  "Guide": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-payroll-benefits.md",
+  "Guide_sha256": "0214cdbe20852e60ffb42cfde6a0a97d3927d737540ef2bbdc0e79fa676d9e64",
+  "native_LF": 60,
+  "exact_before": "| Pension ceiling (general pension insurance), base for the bAV limits (SVBezGrV 2026 § 3) | EUR 101,400 a year | 2026 | https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3 |",
+  "source_id": "DEB188",
+  "official_url": "https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3",
+  "source_native_LF": [
+    55,
+    65
+  ],
+  "short_exact_quote": "in der allgemeinen Rentenversicherung auf 101 400 Euro jährlich; umgerechnet auf den Monat ergeben sich",
+  "read_on": "2026-10-29",
+  "assessment": "Correct amount; wrong provision label. Actual enacted heading is §4, not §3. No amount or method change.",
+  "options": [
+    {
+      "label": "A — repair only the provision number (recommended)",
+      "after": "| Pension ceiling (general pension insurance), base for the bAV limits (SVBezGrV 2026 § 4) | EUR 101,400 a year | 2026 | https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3 |"
+    },
+    {
+      "label": "B — give paragraph-level coordinate",
+      "after": "| Pension ceiling (general pension insurance), base for the bAV limits (SVBezGrV 2026 § 4(1) no. 1) | EUR 101,400 a year | 2026 | https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3 |"
+    }
+  ],
+  "writer_did_not_edit_Guide": true
+}

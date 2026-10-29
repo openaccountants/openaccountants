@@ -1,0 +1,398 @@
+{
+  "R97-108.E6-2": {
+    "id": "R97-108.E6-2",
+    "source": "Ud09e7e216c8b5621",
+    "article": "E6(2)",
+    "url": "https://www.gesetze-im-internet.de/estg/__6.html",
+    "LF_start": 84,
+    "LF_end": 84,
+    "exact_quote": "(2) 1Die Anschaffungs- oder Herstellungskosten oder der nach Absatz 1 Nummer 5 bis 6 an deren Stelle tretende Wert von abnutzbaren beweglichen Wirtschaftsgütern des Anlagevermögens, die einer selbständigen Nutzung fähig sind, können im Wirtschaftsjahr der Anschaffung, Herstellung oder Einlage des Wirtschaftsguts oder der Eröffnung des Betriebs in voller Höhe als Betriebsausgaben abgezogen werden, wenn die Anschaffungs- oder Herstellungskosten, vermindert um einen darin enthaltenen Vorsteuerbetrag (§ 9b Absatz 1), oder der nach Absatz 1 Nummer 5 bis 6 an deren Stelle tretende Wert für das einzelne Wirtschaftsgut 800 Euro nicht übersteigen. 2Ein Wirtschaftsgut ist einer selbständigen Nutzung nicht fähig, wenn es nach seiner betrieblichen Zweckbestimmung nur zusammen mit anderen Wirtschaftsgütern des Anlagevermögens genutzt werden kann und die in den Nutzungszusammenhang eingefügten Wirtschaftsgüter technisch aufeinander abgestimmt sind. 3Das gilt auch, wenn das Wirtschaftsgut aus dem betrieblichen Nutzungszusammenhang gelöst und in einen anderen betrieblichen Nutzungszusammenhang eingefügt werden kann. 4Wirtschaftsgüter im Sinne des Satzes 1, deren Wert 250 Euro übersteigt, sind unter Angabe des Tages der Anschaffung, Herstellung oder Einlage des Wirtschaftsguts oder der Eröffnung des Betriebs und der Anschaffungs- oder Herstellungskosten oder des nach Absatz 1 Nummer 5 bis 6 an deren Stelle tretenden Werts in ein besonderes, laufend zu führendes Verzeichnis aufzunehmen. 5Das Verzeichnis braucht nicht geführt zu werden, wenn diese Angaben aus der Buchführung ersichtlich sind.",
+    "raw_sha256": "7888cea55ee179f051c84a3dd9cee5d48871e33b3789d28e0fa18a509e40e40f",
+    "reader_sha256": "f4d5425829ef0a78a20634206218b78092ff602e0379ff9a56fa173685e8cf2b",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-6-20261024.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud09e7e216c8b5621.reader.txt",
+    "native_LF": [
+      84,
+      84
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.AO149-2": {
+    "id": "R97-108.AO149-2",
+    "source": "U503bfe74d589da30",
+    "article": "AO149(2)",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+    "LF_start": 8,
+    "LF_end": 8,
+    "exact_quote": "(2) Soweit die Steuergesetze nichts anderes bestimmen, sind Steuererklärungen, die sich auf ein Kalenderjahr oder auf einen gesetzlich bestimmten Zeitpunkt beziehen, spätestens sieben Monate nach Ablauf des Kalenderjahres oder sieben Monate nach dem gesetzlich bestimmten Zeitpunkt abzugeben. Bei Steuerpflichtigen, die den Gewinn aus Land- und Forstwirtschaft nach einem vom Kalenderjahr abweichenden Wirtschaftsjahr ermitteln, endet die Frist nicht vor Ablauf des siebten Monats, der auf den Schluss des in dem Kalenderjahr begonnenen Wirtschaftsjahres folgt.",
+    "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+    "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+    "native_LF": [
+      8,
+      8
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.AO108": {
+    "id": "R97-108.AO108",
+    "source": "U3859bf32d53897c9",
+    "article": "AO §108(3)",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+    "LF_start": 9,
+    "LF_end": 9,
+    "exact_quote": "(3) Fällt das Ende einer Frist auf einen Sonntag, einen gesetzlichen Feiertag oder einen Sonnabend, so endet die Frist mit dem Ablauf des nächstfolgenden Werktags.",
+    "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+    "reader_sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-108-20261024.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3859bf32d53897c9.reader.txt",
+    "native_LF": [
+      9,
+      9
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.TARIFF": {
+    "id": "R97-108.TARIFF",
+    "source": "U2aee0a9326f9185f",
+    "article": "EStG §32a(1)2026 whole formula/rounding",
+    "url": "https://www.gesetze-im-internet.de/estg/__32a.html",
+    "LF_start": 7,
+    "LF_end": 22,
+    "exact_quote": "(1) 1Die tarifliche Einkommensteuer bemisst sich nach dem auf volle Euro abgerundeten zu versteuernden Einkommen. 2Sie beträgt ab dem Veranlagungszeitraum 2026 vorbehaltlich der §§ 32b, 32d, 34, 34a, 34b und 34c jeweils in Euro für zu versteuernde Einkommen 1.\nbis 12 348 Euro (Grundfreibetrag):\n0;\n2.\nvon 12 349 Euro bis 17 799 Euro:\n(914,51 • y + 1 400) • y;\n3.\nvon 17 800 Euro bis 69 878 Euro:\n(173,10 • z + 2 397) • z + 1 034,87;\n4.\nvon 69 879 Euro bis 277 825 Euro:\n0,42 • x – 11 135,63;\n5.\nvon 277 826 Euro an:\n0,45 • x – 19 470,38.\n3Die Größe „y“ ist ein Zehntausendstel des den Grundfreibetrag übersteigenden Teils des auf einen vollen Euro-Betrag abgerundeten zu versteuernden Einkommens. 4Die Größe „z“ ist ein Zehntausendstel des 17 799 Euro übersteigenden Teils des auf einen vollen Euro-Betrag abgerundeten zu versteuernden Einkommens. 5Die Größe „x“ ist das auf einen vollen Euro-Betrag abgerundete zu versteuernde Einkommen. 6Der sich ergebende Steuerbetrag ist auf den nächsten vollen Euro-Betrag abzurunden.",
+    "raw_sha256": "053bfcfc2ba961a3013eb631921957ce8a50ec3e4347bb6f0c2befaf765e0f50",
+    "reader_sha256": "b037ef07e71ac2eebadccb3250d16667924ca95b689c2db86eee60207585e2d7",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32a-20261024.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2aee0a9326f9185f.reader.txt",
+    "native_LF": [
+      7,
+      22
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.GIFTS": {
+    "id": "R97-108.GIFTS",
+    "source": "U7059a8b10a1f492b",
+    "article": "EStG §4(5) no1",
+    "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+    "LF_start": 16,
+    "LF_end": 17,
+    "exact_quote": "(5) 1Die folgenden Betriebsausgaben dürfen den Gewinn nicht mindern: 1.\nAufwendungen für Geschenke an Personen, die nicht Arbeitnehmer des Steuerpflichtigen sind. 2Satz 1 gilt nicht, wenn die Anschaffungs- oder Herstellungskosten der dem Empfänger im Wirtschaftsjahr zugewendeten Gegenstände insgesamt 50 Euro nicht übersteigen;",
+    "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+    "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+    "native_LF": [
+      16,
+      17
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.DAY": {
+    "id": "R97-108.DAY",
+    "source": "U7059a8b10a1f492b",
+    "article": "EStG §4(5) no6c",
+    "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+    "LF_start": 32,
+    "LF_end": 33,
+    "exact_quote": "6c.\nfür jeden Kalendertag, an dem die betriebliche oder berufliche Tätigkeit überwiegend in der häuslichen Wohnung ausgeübt und keine außerhalb der häuslichen Wohnung belegene erste Tätigkeitsstätte aufgesucht wird, kann für die gesamte betriebliche und berufliche Betätigung ein Betrag von 6 Euro (Tagespauschale), höchstens 1 260 Euro im Wirtschafts- oder Kalenderjahr, abgezogen werden. 2Steht für die betriebliche oder berufliche Tätigkeit dauerhaft kein anderer Arbeitsplatz zur Verfügung, ist ein Abzug der Tagespauschale zulässig, auch wenn die Tätigkeit am selben Kalendertag auswärts oder an der ersten Tätigkeitsstätte ausgeübt wird. 3Der Abzug der Tagespauschale ist nicht zulässig, soweit für die Wohnung Unterkunftskosten im Rahmen der Nummer 6a oder des § 9 Absatz 1 Satz 3 Nummer 5 abgezogen werden können oder soweit ein Abzug nach Nummer 6b vorgenommen wird;",
+    "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+    "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+    "native_LF": [
+      32,
+      33
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.ROOM": {
+    "id": "R97-108.ROOM",
+    "source": "U7059a8b10a1f492b",
+    "article": "EStG §4(5) no6b",
+    "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+    "LF_start": 30,
+    "LF_end": 31,
+    "exact_quote": "6b.\nAufwendungen für ein häusliches Arbeitszimmer sowie die Kosten der Ausstattung. 2Dies gilt nicht, wenn das Arbeitszimmer den Mittelpunkt der gesamten betrieblichen und beruflichen Betätigung bildet. 3Anstelle der Aufwendungen kann pauschal ein Betrag von 1 260 Euro (Jahrespauschale) für das Wirtschafts- oder Kalenderjahr abgezogen werden. 4Für jeden vollen Kalendermonat, in dem die Voraussetzungen nach Satz 2 nicht vorliegen, ermäßigt sich der Betrag von 1 260 Euro um ein Zwölftel;",
+    "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+    "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+    "native_LF": [
+      30,
+      31
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.COMMUTEBRIDGE": {
+    "id": "R97-108.COMMUTEBRIDGE",
+    "source": "U7059a8b10a1f492b",
+    "article": "EStG §4(5) no6",
+    "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+    "LF_start": 26,
+    "LF_end": 27,
+    "exact_quote": "6.\nAufwendungen für die Wege des Steuerpflichtigen zwischen Wohnung und Betriebsstätte und für Familienheimfahrten, soweit in den folgenden Sätzen nichts anderes bestimmt ist. 2Zur Abgeltung dieser Aufwendungen ist § 9 Absatz 1 Satz 3 Nummer 4 Satz 2 bis 6 und Nummer 5 Satz 5 bis 7 und Absatz 2 entsprechend anzuwenden. 3 Bei der Nutzung eines Kraftfahrzeugs dürfen die Aufwendungen in Höhe des positiven Unterschiedsbetrags zwischen 0,03 Prozent des inländischen Listenpreises im Sinne des § 6 Absatz 1 Nummer 4 Satz 2 des Kraftfahrzeugs im Zeitpunkt der Erstzulassung je Kalendermonat für jeden Entfernungskilometer und dem sich nach § 9 Absatz 1 Satz 3 Nummer 4 Satz 2 bis 6 oder Absatz 2 ergebenden Betrag sowie Aufwendungen für Familienheimfahrten in Höhe des positiven Unterschiedsbetrags zwischen 0,002 Prozent des inländischen Listenpreises im Sinne des § 6 Absatz 1 Nummer 4 Satz 2 für jeden Entfernungskilometer und dem sich nach § 9 Absatz 1 Satz 3 Nummer 5 Satz 5 bis 7 oder Absatz 2 ergebenden Betrag den Gewinn nicht mindern; ermittelt der Steuerpflichtige die private Nutzung des Kraftfahrzeugs nach § 6 Absatz 1 Nummer 4 Satz 1 oder Satz 3, treten an die Stelle des mit 0,03 oder 0,002 Prozent des inländischen Listenpreises ermittelten Betrags für Fahrten zwischen Wohnung und Betriebsstätte und für Familienheimfahrten die auf diese Fahrten entfallenden tatsächlichen Aufwendungen; § 6 Absatz 1 Nummer 4 Satz 3 zweiter Halbsatz gilt sinngemäß;",
+    "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+    "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+    "native_LF": [
+      26,
+      27
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.COMMUTE": {
+    "id": "R97-108.COMMUTE",
+    "source": "U5d05d24ddb446c3d",
+    "article": "EStG §9(1) no4",
+    "url": "https://www.gesetze-im-internet.de/estg/__9.html",
+    "LF_start": 13,
+    "LF_end": 14,
+    "exact_quote": "4.\nAufwendungen des Arbeitnehmers für die Wege zwischen Wohnung und erster Tätigkeitsstätte im Sinne des Absatzes 4. 2Zur Abgeltung dieser Aufwendungen ist für jeden Arbeitstag, an dem der Arbeitnehmer die erste Tätigkeitsstätte aufsucht eine Entfernungspauschale für jeden vollen Kilometer der Entfernung zwischen Wohnung und erster Tätigkeitsstätte von 0,38 Euro anzusetzen, höchstens jedoch 4 500 Euro im Kalenderjahr; ein höherer Betrag als 4 500 Euro ist anzusetzen, soweit der Arbeitnehmer einen eigenen oder ihm zur Nutzung überlassenen Kraftwagen benutzt. 3Die Entfernungspauschale gilt nicht für Flugstrecken und Strecken mit steuerfreier Sammelbeförderung nach § 3 Nummer 32. 4Für die Bestimmung der Entfernung ist die kürzeste Straßenverbindung zwischen Wohnung und erster Tätigkeitsstätte maßgebend; eine andere als die kürzeste Straßenverbindung kann zugrunde gelegt werden, wenn diese offensichtlich verkehrsgünstiger ist und vom Arbeitnehmer regelmäßig für die Wege zwischen Wohnung und erster Tätigkeitsstätte benutzt wird. 5Nach § 8 Absatz 2 Satz 11 oder Absatz 3 steuerfreie Sachbezüge für Fahrten zwischen Wohnung und erster Tätigkeitsstätte mindern den nach Satz 2 abziehbaren Betrag; ist der Arbeitgeber selbst der Verkehrsträger, ist der Preis anzusetzen, den ein dritter Arbeitgeber an den Verkehrsträger zu entrichten hätte. 6Hat ein Arbeitnehmer mehrere Wohnungen, so sind die Wege von einer Wohnung, die nicht der ersten Tätigkeitsstätte am nächsten liegt, nur zu berücksichtigen, wenn sie den Mittelpunkt der Lebensinteressen des Arbeitnehmers bildet und nicht nur gelegentlich aufgesucht wird. 7Nach § 3 Nummer 37 steuerfreie Sachbezüge mindern den nach Satz 2 abziehbaren Betrag nicht; § 3c Absatz 1 ist nicht anzuwenden.",
+    "raw_sha256": "82ce506e5bebc2a7b9964e715fa898bc06d4eba0602e62d24606b2e6b49e23bb",
+    "reader_sha256": "c5ad161d9234d437d840469dd3defee8b76019704a0b7de9562fb13d88b6b971",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-9-20261024.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5d05d24ddb446c3d.reader.txt",
+    "native_LF": [
+      13,
+      14
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.MEALS": {
+    "id": "R97-108.MEALS",
+    "source": "U5d05d24ddb446c3d",
+    "article": "EStG §9(4a), complete ordinary amount/conditions",
+    "url": "https://www.gesetze-im-internet.de/estg/__9.html",
+    "LF_start": 38,
+    "LF_end": 48,
+    "exact_quote": "(4a) 1Mehraufwendungen des Arbeitnehmers für die Verpflegung sind nur nach Maßgabe der folgenden Sätze als Werbungskosten abziehbar. 2Wird der Arbeitnehmer außerhalb seiner Wohnung und ersten Tätigkeitsstätte beruflich tätig (auswärtige berufliche Tätigkeit), ist zur Abgeltung der ihm tatsächlich entstandenen, beruflich veranlassten Mehraufwendungen eine Verpflegungspauschale anzusetzen. 3Diese beträgt 1.\n28 Euro für jeden Kalendertag, an dem der Arbeitnehmer 24 Stunden von seiner Wohnung und ersten Tätigkeitsstätte abwesend ist,\n2.\njeweils 14 Euro für den An- und Abreisetag, wenn der Arbeitnehmer an diesem, einem anschließenden oder vorhergehenden Tag außerhalb seiner Wohnung übernachtet,\n3.\n14 Euro für den Kalendertag, an dem der Arbeitnehmer ohne Übernachtung außerhalb seiner Wohnung mehr als 8 Stunden von seiner Wohnung und der ersten Tätigkeitsstätte abwesend ist; beginnt die auswärtige berufliche Tätigkeit an einem Kalendertag und endet am nachfolgenden Kalendertag ohne Übernachtung, werden 14 Euro für den Kalendertag gewährt, an dem der Arbeitnehmer den überwiegenden Teil der insgesamt mehr als 8 Stunden von seiner Wohnung und der ersten Tätigkeitsstätte abwesend ist.\n4Hat der Arbeitnehmer keine erste Tätigkeitsstätte, gelten die Sätze 2 und 3 entsprechend; Wohnung im Sinne der Sätze 2 und 3 ist der Hausstand, der den Mittelpunkt der Lebensinteressen des Arbeitnehmers bildet sowie eine Unterkunft am Ort der ersten Tätigkeitsstätte im Rahmen der doppelten Haushaltsführung. 5Bei einer Tätigkeit im Ausland treten an die Stelle der Pauschbeträge nach Satz 3 länderweise unterschiedliche Pauschbeträge, die für die Fälle der Nummer 1 mit 120 sowie der Nummern 2 und 3 mit 80 Prozent der Auslandstagegelder nach dem Bundesreisekostengesetz vom Bundesministerium der Finanzen im Einvernehmen mit den obersten Finanzbehörden der Länder aufgerundet auf volle Euro festgesetzt werden; dabei bestimmt sich der Pauschbetrag nach dem Ort, den der Arbeitnehmer vor 24 Uhr Ortszeit zuletzt erreicht, oder, wenn dieser Ort im Inland liegt, nach dem letzten Tätigkeitsort im Ausland. 6Der Abzug der Verpflegungspauschalen ist auf die ersten drei Monate einer längerfristigen beruflichen Tätigkeit an derselben Tätigkeitsstätte beschränkt. 7Eine Unterbrechung der beruflichen Tätigkeit an derselben Tätigkeitsstätte führt zu einem Neubeginn, wenn sie mindestens vier Wochen dauert. 8Wird dem Arbeitnehmer anlässlich oder während einer Tätigkeit außerhalb seiner ersten Tätigkeitsstätte vom Arbeitgeber oder auf dessen Veranlassung von einem Dritten eine Mahlzeit zur Verfügung gestellt, sind die nach den Sätzen 3 und 5 ermittelten Verpflegungspauschalen zu kürzen: 1.\nfür Frühstück um 20 Prozent,\n2.\nfür Mittag- und Abendessen um jeweils 40 Prozent,\nder nach Satz 3 Nummer 1 gegebenenfalls in Verbindung mit Satz 5 maßgebenden Verpflegungspauschale für einen vollen Kalendertag; die Kürzung darf die ermittelte Verpflegungspauschale nicht übersteigen. 9Satz 8 gilt auch, wenn Reisekostenvergütungen wegen der zur Verfügung gestellten Mahlzeiten einbehalten oder gekürzt werden oder die Mahlzeiten nach § 40 Absatz 2 Satz 1 Nummer 1a pauschal besteuert werden. 10Hat der Arbeitnehmer für die Mahlzeit ein Entgelt gezahlt, mindert dieser Betrag den Kürzungsbetrag nach Satz 8. 11Erhält der Arbeitnehmer steuerfreie Erstattungen für Verpflegung, ist ein Werbungskostenabzug insoweit ausgeschlossen. 12Die Verpflegungspauschalen nach den Sätzen 3 und 5, die Dreimonatsfrist nach den Sätzen 6 und 7 sowie die Kürzungsregelungen nach den Sätzen 8 bis 10 gelten entsprechend auch für den Abzug von Mehraufwendungen für Verpflegung, die bei einer beruflich veranlassten doppelten Haushaltsführung entstehen, soweit der Arbeitnehmer vom eigenen Hausstand im Sinne des § 9 Absatz 1 Satz 3 Nummer 5 abwesend ist; dabei ist für jeden Kalendertag innerhalb der Dreimonatsfrist, an dem gleichzeitig eine Tätigkeit im Sinne des Satzes 2 oder des Satzes 4 ausgeübt wird, nur der jeweils höchste in Betracht kommende Pauschbetrag abziehbar. 13Die Dauer einer Tätigkeit im Sinne des Satzes 2 an dem Tätigkeitsort, an dem die doppelte Haushaltsführung begründet wurde, ist auf die Dreimonatsfrist anzurechnen, wenn sie ihr unmittelbar vorausgegangen ist.",
+    "raw_sha256": "82ce506e5bebc2a7b9964e715fa898bc06d4eba0602e62d24606b2e6b49e23bb",
+    "reader_sha256": "c5ad161d9234d437d840469dd3defee8b76019704a0b7de9562fb13d88b6b971",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-9-20261024.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5d05d24ddb446c3d.reader.txt",
+    "native_LF": [
+      38,
+      48
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.POOL": {
+    "id": "R97-108.POOL",
+    "source": "Ud09e7e216c8b5621",
+    "article": "EStG §6(2a)",
+    "url": "https://www.gesetze-im-internet.de/estg/__6.html",
+    "LF_start": 85,
+    "LF_end": 85,
+    "exact_quote": "(2a) 1Abweichend von Absatz 2 Satz 1 kann für die abnutzbaren beweglichen Wirtschaftsgüter des Anlagevermögens, die einer selbständigen Nutzung fähig sind, im Wirtschaftsjahr der Anschaffung, Herstellung oder Einlage des Wirtschaftsguts oder der Eröffnung des Betriebs ein Sammelposten gebildet werden, wenn die Anschaffungs- oder Herstellungskosten, vermindert um einen darin enthaltenen Vorsteuerbetrag (§ 9b Absatz 1), oder der nach Absatz 1 Nummer 5 bis 6 an deren Stelle tretende Wert für das einzelne Wirtschaftsgut 250 Euro, aber nicht 1 000 Euro übersteigen. 2Der Sammelposten ist im Wirtschaftsjahr der Bildung und den folgenden vier Wirtschaftsjahren mit jeweils einem Fünftel gewinnmindernd aufzulösen. 3Scheidet ein Wirtschaftsgut im Sinne des Satzes 1 aus dem Betriebsvermögen aus, wird der Sammelposten nicht vermindert. 4Die Anschaffungs- oder Herstellungskosten oder der nach Absatz 1 Nummer 5 bis 6 an deren Stelle tretende Wert von abnutzbaren beweglichen Wirtschaftsgütern des Anlagevermögens, die einer selbständigen Nutzung fähig sind, können im Wirtschaftsjahr der Anschaffung, Herstellung oder Einlage des Wirtschaftsguts oder der Eröffnung des Betriebs in voller Höhe als Betriebsausgaben abgezogen werden, wenn die Anschaffungs- oder Herstellungskosten, vermindert um einen darin enthaltenen Vorsteuerbetrag (§ 9b Absatz 1), oder der nach Absatz 1 Nummer 5 bis 6 an deren Stelle tretende Wert für das einzelne Wirtschaftsgut 250 Euro nicht übersteigen. 5Die Sätze 1 bis 3 sind für alle in einem Wirtschaftsjahr angeschafften, hergestellten oder eingelegten Wirtschaftsgüter einheitlich anzuwenden.",
+    "raw_sha256": "7888cea55ee179f051c84a3dd9cee5d48871e33b3789d28e0fa18a509e40e40f",
+    "reader_sha256": "f4d5425829ef0a78a20634206218b78092ff602e0379ff9a56fa173685e8cf2b",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-6-20261024.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud09e7e216c8b5621.reader.txt",
+    "native_LF": [
+      85,
+      85
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.PENSIONELIG": {
+    "id": "R97-108.PENSIONELIG",
+    "source": "U9f1b9a0058651caf",
+    "article": "EStG §10(1) no2",
+    "url": "https://www.gesetze-im-internet.de/estg/__10.html",
+    "LF_start": 13,
+    "LF_end": 21,
+    "exact_quote": "2.\na)\nBeiträge zu den gesetzlichen Rentenversicherungen oder zur landwirtschaftlichen Alterskasse sowie zu berufsständischen Versorgungseinrichtungen, die den gesetzlichen Rentenversicherungen vergleichbare Leistungen erbringen;\nb)\nBeiträge des Steuerpflichtigen aa)\nzum Aufbau einer eigenen kapitalgedeckten Altersversorgung, wenn der Vertrag nur die Zahlung einer monatlichen, auf das Leben des Steuerpflichtigen bezogenen lebenslangen Leibrente nicht vor Vollendung des 62. Lebensjahres oder zusätzlich die ergänzende Absicherung des Eintritts der Berufsunfähigkeit (Berufsunfähigkeitsrente), der verminderten Erwerbsfähigkeit (Erwerbsminderungsrente) oder von Hinterbliebenen (Hinterbliebenenrente) vorsieht. 2Hinterbliebene in diesem Sinne sind der Ehegatte des Steuerpflichtigen und die Kinder, für die er Anspruch auf Kindergeld oder auf einen Freibetrag nach § 32 Absatz 6 hat. 3Der Anspruch auf Waisenrente darf längstens für den Zeitraum bestehen, in dem der Rentenberechtigte die Voraussetzungen für die Berücksichtigung als Kind im Sinne des § 32 erfüllt;\nbb)\nfür seine Absicherung gegen den Eintritt der Berufsunfähigkeit oder der verminderten Erwerbsfähigkeit (Versicherungsfall), wenn der Vertrag nur die Zahlung einer monatlichen, auf das Leben des Steuerpflichtigen bezogenen lebenslangen Leibrente für einen Versicherungsfall vorsieht, der bis zur Vollendung des 67. Lebensjahres eingetreten ist. 2Der Vertrag kann die Beendigung der Rentenzahlung wegen eines medizinisch begründeten Wegfalls der Berufsunfähigkeit oder der verminderten Erwerbsfähigkeit vorsehen. 3Die Höhe der zugesagten Rente kann vom Alter des Steuerpflichtigen bei Eintritt des Versicherungsfalls abhängig gemacht werden, wenn der Steuerpflichtige das 55. Lebensjahr vollendet hat.\n2Die Ansprüche nach Buchstabe b dürfen nicht vererblich, nicht übertragbar, nicht beleihbar, nicht veräußerbar und nicht kapitalisierbar sein. 3Anbieter und Steuerpflichtiger können vereinbaren, dass bis zu zwölf Monatsleistungen in einer Auszahlung zusammengefasst werden oder eine Kleinbetragsrente im Sinne von § 93 Absatz 3 Satz 2 oder 4 abgefunden wird. 4Bei der Berechnung der Kleinbetragsrente sind alle bei einem Anbieter bestehenden Verträge des Steuerpflichtigen jeweils nach Buchstabe b Doppelbuchstabe aa oder Doppelbuchstabe bb zusammenzurechnen. 5Neben den genannten Auszahlungsformen darf kein weiterer Anspruch auf Auszahlungen bestehen. 6Zu den Beiträgen nach den Buchstaben a und b ist der nach § 3 Nummer 62 steuerfreie Arbeitgeberanteil zur gesetzlichen Rentenversicherung und ein diesem gleichgestellter steuerfreier Zuschuss des Arbeitgebers hinzuzurechnen. 7Beiträge nach § 168 Absatz 1 Nummer 1b oder 1c oder nach § 172 Absatz 3 oder 3a des Sechsten Buches Sozialgesetzbuch werden abweichend von Satz 6 nur auf Antrag des Steuerpflichtigen hinzugerechnet;",
+    "raw_sha256": "f970952c77597337017ee213013219bd490a91f1f0b7048bbd8cb697d1d9befd",
+    "reader_sha256": "77f1ca70d5a033d9ba5ce1e113f80de73523cc992760cda326d209379357818e",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-10-20261026.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f1b9a0058651caf.reader.txt",
+    "native_LF": [
+      13,
+      21
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.PENSIONCAP": {
+    "id": "R97-108.PENSIONCAP",
+    "source": "U9f1b9a0058651caf",
+    "article": "EStG §10(3)",
+    "url": "https://www.gesetze-im-internet.de/estg/__10.html",
+    "LF_start": 81,
+    "LF_end": 88,
+    "exact_quote": "(3) 1Vorsorgeaufwendungen nach Absatz 1 Nummer 2 sind bis zu dem Höchstbeitrag zur knappschaftlichen Rentenversicherung, aufgerundet auf einen vollen Betrag in Euro, zu berücksichtigen. 2Bei zusammenveranlagten Ehegatten verdoppelt sich der Höchstbetrag. 3Der Höchstbetrag nach Satz 1 oder 2 ist bei Steuerpflichtigen, die 1.\nArbeitnehmer sind und die während des ganzen oder eines Teils des Kalenderjahres a)\nin der gesetzlichen Rentenversicherung versicherungsfrei oder auf Antrag des Arbeitgebers von der Versicherungspflicht befreit waren und denen für den Fall ihres Ausscheidens aus der Beschäftigung auf Grund des Beschäftigungsverhältnisses eine lebenslängliche Versorgung oder an deren Stelle eine Abfindung zusteht oder die in der gesetzlichen Rentenversicherung nachzuversichern sind oder\nb)\nnicht der gesetzlichen Rentenversicherungspflicht unterliegen, eine Berufstätigkeit ausgeübt und im Zusammenhang damit auf Grund vertraglicher Vereinbarungen Anwartschaftsrechte auf eine Altersversorgung erworben haben, oder\n2.\nEinkünfte im Sinne des § 22 Nummer 4 erzielen und die ganz oder teilweise ohne eigene Beitragsleistung einen Anspruch auf Altersversorgung erwerben,\num den Betrag zu kürzen, der, bezogen auf die Einnahmen aus der Tätigkeit, die die Zugehörigkeit zum genannten Personenkreis begründen, dem Gesamtbeitrag (Arbeitgeber- und Arbeitnehmeranteil) zur allgemeinen Rentenversicherung entspricht. 4Im Kalenderjahr 2013 sind 76 Prozent der nach den Sätzen 1 bis 3 ermittelten Vorsorgeaufwendungen anzusetzen. 5Der sich danach ergebende Betrag, vermindert um den nach § 3 Nummer 62 steuerfreien Arbeitgeberanteil zur gesetzlichen Rentenversicherung und einen diesem gleichgestellten steuerfreien Zuschuss des Arbeitgebers, ist als Sonderausgabe abziehbar. 6Der Prozentsatz in Satz 4 erhöht sich in den folgenden Kalenderjahren bis zum Kalenderjahr 2022 um je 2 Prozentpunkte je Kalenderjahr; ab dem Kalenderjahr 2023 beträgt er 100 Prozent. 7Beiträge nach § 168 Absatz 1 Nummer 1b oder 1c oder nach § 172 Absatz 3 oder 3a des Sechsten Buches Sozialgesetzbuch vermindern den abziehbaren Betrag nach Satz 5 nur, wenn der Steuerpflichtige die Hinzurechnung dieser Beiträge zu den Vorsorgeaufwendungen nach Absatz 1 Nummer 2 Satz 7 beantragt hat.",
+    "raw_sha256": "f970952c77597337017ee213013219bd490a91f1f0b7048bbd8cb697d1d9befd",
+    "reader_sha256": "77f1ca70d5a033d9ba5ce1e113f80de73523cc992760cda326d209379357818e",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-10-20261026.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f1b9a0058651caf.reader.txt",
+    "native_LF": [
+      81,
+      88
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.INPUTVAT": {
+    "id": "R97-108.INPUTVAT",
+    "source": "U9587b12f47ebdc37",
+    "article": "UStG §15(1a), entertainment exception",
+    "url": "https://www.gesetze-im-internet.de/ustg_1980/__15.html",
+    "LF_start": 16,
+    "LF_end": 16,
+    "exact_quote": "(1a) Nicht abziehbar sind Vorsteuerbeträge, die auf Aufwendungen, für die das Abzugsverbot des § 4 Abs. 5 Satz 1 Nr. 1 bis 4, 7 oder des § 12 Nr. 1 des Einkommensteuergesetzes gilt, entfallen. Dies gilt nicht für Bewirtungsaufwendungen, soweit § 4 Abs. 5 Satz 1 Nr. 2 des Einkommensteuergesetzes einen Abzug angemessener und nachgewiesener Aufwendungen ausschließt.",
+    "raw_sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+    "reader_sha256": "e819ae2c4a6a65834fee9861adf1ec100b520126163e240fe08fe6a6d1e80d74",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-15-20261027.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9587b12f47ebdc37.reader.txt",
+    "native_LF": [
+      16,
+      16
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.INPUTRULE": {
+    "id": "R97-108.INPUTRULE",
+    "source": "U9587b12f47ebdc37",
+    "article": "UStG15(1)no1 supply/invoice",
+    "url": "https://www.gesetze-im-internet.de/ustg_1980/__15.html",
+    "LF_start": 7,
+    "LF_end": 8,
+    "exact_quote": "(1) Der Unternehmer kann die folgenden Vorsteuerbeträge abziehen: 1.\ndie gesetzlich geschuldete Steuer für Lieferungen und sonstige Leistungen, die von einem anderen Unternehmer für sein Unternehmen ausgeführt worden sind. Die Ausübung des Vorsteuerabzugs setzt voraus, dass der Unternehmer eine nach den §§ 14, 14a ausgestellte Rechnung besitzt. Soweit der gesondert ausgewiesene Steuerbetrag auf eine Zahlung vor Ausführung dieser Umsätze entfällt, ist er bereits abziehbar, wenn die Rechnung vorliegt und die Zahlung geleistet worden ist;",
+    "raw_sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+    "reader_sha256": "e819ae2c4a6a65834fee9861adf1ec100b520126163e240fe08fe6a6d1e80d74",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-15-20261027.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9587b12f47ebdc37.reader.txt",
+    "native_LF": [
+      7,
+      8
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.MODELLOSS": {
+    "id": "R97-108.MODELLOSS",
+    "source": "Uc0941f6152850d36",
+    "article": "EStG15b(1)–(3)models/10percentgate",
+    "url": "https://www.gesetze-im-internet.de/estg/__15b.html",
+    "LF_start": 7,
+    "LF_end": 9,
+    "exact_quote": "(1) 1Verluste im Zusammenhang mit einem Steuerstundungsmodell dürfen weder mit Einkünften aus Gewerbebetrieb noch mit Einkünften aus anderen Einkunftsarten ausgeglichen werden; sie dürfen auch nicht nach § 10d abgezogen werden. 2Die Verluste mindern jedoch die Einkünfte, die der Steuerpflichtige in den folgenden Wirtschaftsjahren aus derselben Einkunftsquelle erzielt. 3§ 15a ist insoweit nicht anzuwenden.\n(2) 1Ein Steuerstundungsmodell im Sinne des Absatzes 1 liegt vor, wenn auf Grund einer modellhaften Gestaltung steuerliche Vorteile in Form negativer Einkünfte erzielt werden sollen. 2Dies ist der Fall, wenn dem Steuerpflichtigen auf Grund eines vorgefertigten Konzepts die Möglichkeit geboten werden soll, zumindest in der Anfangsphase der Investition Verluste mit übrigen Einkünften zu verrechnen. 3Dabei ist es ohne Belang, auf welchen Vorschriften die negativen Einkünfte beruhen.\n(3) Absatz 1 ist nur anzuwenden, wenn innerhalb der Anfangsphase das Verhältnis der Summe der prognostizierten Verluste zur Höhe des gezeichneten und nach dem Konzept auch aufzubringenden Kapitals oder bei Einzelinvestoren des eingesetzten Eigenkapitals 10 Prozent übersteigt.",
+    "raw_sha256": "e96b5fd42e3c47c38cf75ae34f34bbfffaf7ad0d237993079f2db9e131db3011",
+    "reader_sha256": "86e0c764ba6420834b543d6492f2f22c91520c90e4620609d399ab7d394a03da",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc0941f6152850d36.body",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc0941f6152850d36.reader.txt",
+    "native_LF": [
+      7,
+      9
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.VATCASH": {
+    "id": "R97-108.VATCASH",
+    "source": "Uaaaefc3c6d8e6109",
+    "article": "UStG20cashpermissionandthreealternatives",
+    "url": "https://www.gesetze-im-internet.de/ustg_1980/__20.html",
+    "LF_start": 7,
+    "LF_end": 15,
+    "exact_quote": "Das Finanzamt kann auf Antrag gestatten, dass ein Unternehmer, 1.\ndessen Gesamtumsatz (§ 19 Absatz 2) im vorangegangenen Kalenderjahr nicht mehr als 800 000 Euro betragen hat, oder\n2.\nder von der Verpflichtung, Bücher zu führen und auf Grund jährlicher Bestandsaufnahmen regelmäßig Abschlüsse zu machen, nach § 148 der Abgabenordnung befreit ist, oder\n3.\nsoweit er Umsätze aus einer Tätigkeit als Angehöriger eines freien Berufs im Sinne des § 18 Abs. 1 Nr. 1 des Einkommensteuergesetzes ausführt, oder\n4.\nder eine juristische Person des öffentlichen Rechts ist, soweit er nicht freiwillig Bücher führt und auf Grund jährlicher Bestandsaufnahmen regelmäßig Abschlüsse macht oder hierzu gesetzlich verpflichtet ist,\ndie Steuer nicht nach den vereinbarten Entgelten (§ 16 Abs. 1 Satz 1), sondern nach den vereinnahmten Entgelten berechnet. Erstreckt sich die Befreiung nach Satz 1 Nr. 2 nur auf einzelne Betriebe des Unternehmers und liegt die Voraussetzung nach Satz 1 Nr. 1 nicht vor, so ist die Erlaubnis zur Berechnung der Steuer nach den vereinnahmten Entgelten auf diese Betriebe zu beschränken. Wechselt der Unternehmer die Art der Steuerberechnung, so dürfen Umsätze nicht doppelt erfasst werden oder unversteuert bleiben.",
+    "raw_sha256": "b9bde56785a4fbd9d730441b9f0d155b0715a29e2e3191916db5b14cb58d7f2f",
+    "reader_sha256": "5fe7450c4aa74b69b8c61fbb322e9c03e367160b145e9edcf6c4e5df19e5d583",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-20-20261024.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaaaefc3c6d8e6109.reader.txt",
+    "native_LF": [
+      7,
+      15
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R97-108.VATSUPPLY": {
+    "id": "R97-108.VATSUPPLY",
+    "source": "U5410aa1779126db8",
+    "article": "UStG13(1)no1(a)normaltaxpointandadvances",
+    "url": "https://www.gesetze-im-internet.de/ustg_1980/__13.html",
+    "LF_start": 7,
+    "LF_end": 9,
+    "exact_quote": "(1) Die Steuer entsteht 1.\nfür Lieferungen und sonstige Leistungena)\nbei der Berechnung der Steuer nach vereinbarten Entgelten (§ 16 Abs. 1 Satz 1) mit Ablauf des Voranmeldungszeitraums, in dem die Leistungen ausgeführt worden sind. Das gilt auch für Teilleistungen. Sie liegen vor, wenn für bestimmte Teile einer wirtschaftlich teilbaren Leistung das Entgelt gesondert vereinbart wird. Wird das Entgelt oder ein Teil des Entgelts vereinnahmt, bevor die Leistung oder die Teilleistung ausgeführt worden ist, so entsteht insoweit die Steuer mit Ablauf des Voranmeldungszeitraums, in dem das Entgelt oder das Teilentgelt vereinnahmt worden ist,",
+    "raw_sha256": "651a989b51b160c85addf12be5cceabf2e668b8f945fcdd6aca64e5baa867967",
+    "reader_sha256": "f6e9f249c3c65e9b7ff053a32dde082358a2c8b87c92d51c85b082948746e6aa",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-13-20261024.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5410aa1779126db8.reader.txt",
+    "native_LF": [
+      7,
+      9
+    ],
+    "actual_read_scope": "Own selected operative quote actually read29October2026 from retained native reader, not a claim to have read whole law or to acquire a new body."
+  },
+  "R106.business-training": {
+    "id": "R106.business-training",
+    "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+    "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+    "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "EStG4(9) business training, NOT9(6)employment exception",
+    "native_LF": [
+      56,
+      56
+    ],
+    "exact_quote": "(9) 1Aufwendungen des Steuerpflichtigen für seine Berufsausbildung oder für sein Studium sind nur dann Betriebsausgaben, wenn der Steuerpflichtige zuvor bereits eine Erstausbildung (Berufsausbildung oder Studium) abgeschlossen hat. 2§ 9 Absatz 6 Satz 2 bis 5 gilt entsprechend.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own retained currentnative54–58read, operative56. It incorporates9(6)sentences2–5only, not separateemploymentexception."
+  },
+  "R26.planning-bridge": {
+    "id": "R26.planning-bridge",
+    "source_id": "DEB165",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-3a-20261024.html",
+    "raw_sha256": "f0fec2764f7e3fa8439972db8c9980a9dab6740d22b3d055015d2d01093f3f5b",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB165.txt",
+    "reader_sha256": "a0c5cd471a10d34683a0bbbec2f257871f079e0e6e3b159fa15154a387990a59",
+    "url": "https://www.gesetze-im-internet.de/ustg_1980/__3a.html",
+    "act_article": "UStG § 3a(1)–(3), selected reserved-rule context",
+    "native_LF": [
+      7,
+      35
+    ],
+    "exact_quote": "(1) Eine sonstige Leistung wird vorbehaltlich der Absätze 2 bis 8 und der §§ 3b und 3e an dem Ort ausgeführt, von dem aus der Unternehmer sein Unternehmen betreibt. Wird die sonstige Leistung von einer Betriebsstätte ausgeführt, gilt die Betriebsstätte als der Ort der sonstigen Leistung.\n(2) Eine sonstige Leistung, die an einen Unternehmer für dessen Unternehmen ausgeführt wird, wird vorbehaltlich der Absätze 3 bis 8 und der §§ 3b und 3e an dem Ort ausgeführt, von dem aus der Empfänger sein Unternehmen betreibt. Wird die sonstige Leistung an die Betriebsstätte eines Unternehmers ausgeführt, ist stattdessen der Ort der Betriebsstätte maßgebend. Die Sätze 1 und 2 gelten entsprechend bei einer sonstigen Leistung an eine ausschließlich nicht unternehmerisch tätige juristische Person, der eine Umsatzsteuer-Identifikationsnummer erteilt worden ist, und bei einer sonstigen Leistung an eine juristische Person, die sowohl unternehmerisch als auch nicht unternehmerisch tätig ist; dies gilt nicht für sonstige Leistungen, die ausschließlich für den privaten Bedarf des Personals oder eines Gesellschafters bestimmt sind.\n(3) Abweichend von den Absätzen 1 und 2 gilt: 1.\nEine sonstige Leistung im Zusammenhang mit einem Grundstück wird dort ausgeführt, wo das Grundstück liegt. Als sonstige Leistungen im Zusammenhang mit einem Grundstück sind insbesondere anzusehen: a)\nsonstige Leistungen der in § 4 Nr. 12 bezeichneten Art,\nb)\nsonstige Leistungen im Zusammenhang mit der Veräußerung oder dem Erwerb von Grundstücken,\nc)\nsonstige Leistungen, die der Erschließung von Grundstücken oder der Vorbereitung, Koordinierung oder Ausführung von Bauleistungen dienen.\n2.\nDie kurzfristige Vermietung eines Beförderungsmittels wird an dem Ort ausgeführt, an dem dieses Beförderungsmittel dem Empfänger tatsächlich zur Verfügung gestellt wird. Als kurzfristig im Sinne des Satzes 1 gilt eine Vermietung über einen ununterbrochenen Zeitraum a)\nvon nicht mehr als 90 Tagen bei Wasserfahrzeugen,\nb)\nvon nicht mehr als 30 Tagen bei anderen Beförderungsmitteln.\nDie Vermietung eines Beförderungsmittels, die nicht als kurzfristig im Sinne des Satzes 2 anzusehen ist, an einen Empfänger, der weder ein Unternehmer ist, für dessen Unternehmen die Leistung bezogen wird, noch eine nicht unternehmerisch tätige juristische Person, der eine Umsatzsteuer-Identifikationsnummer erteilt worden ist, wird an dem Ort erbracht, an dem der Empfänger seinen Wohnsitz oder Sitz hat. Handelt es sich bei dem Beförderungsmittel um ein Sportboot, wird abweichend von Satz 3 die Vermietungsleistung an dem Ort ausgeführt, an dem das Sportboot dem Empfänger tatsächlich zur Verfügung gestellt wird, wenn sich auch der Sitz, die Geschäftsleitung oder eine Betriebsstätte des Unternehmers, von wo aus diese Leistung tatsächlich erbracht wird, an diesem Ort befindet.\n3.\nKulturelle, künstlerische, wissenschaftliche, unterrichtende, sportliche, unterhaltende oder ähnliche Leistungen, wie Leistungen im Zusammenhang mit Messen und Ausstellungen, einschließlich der Leistungen der jeweiligen Veranstalter sowie die damit zusammenhängenden Tätigkeiten, die für die Ausübung der Leistungen unerlässlich sind, an einen Empfänger, der weder ein Unternehmer ist, für dessen Unternehmen die Leistung ausgeführt wird, noch eine nichtunternehmerisch tätige juristische Person, der eine Umsatzsteuer-Identifikationsnummer erteilt worden ist, werden dort ausgeführt, wo sie vom Unternehmer tatsächlich erbracht werden. Werden die Leistungen per Streaming übertragen oder auf andere Weise virtuell verfügbar gemacht, gilt abweichend von Satz 1 als Ort der sonstigen Leistung der Ort, an dem der Empfänger ansässig ist oder seinen Wohnsitz oder gewöhnlichen Aufenthaltsort hat.\n3a.\nDie folgenden Leistungen werden dort ausgeführt, wo sie vom Unternehmer tatsächlich erbracht werden: a)\ndie Abgabe von Speisen und Getränken zum Verzehr an Ort und Stelle (Restaurationsleistung), wenn diese Abgabe nicht an Bord eines Schiffs, in einem Luftfahrzeug oder in einer Eisenbahn während einer Beförderung innerhalb des Gemeinschaftsgebiets erfolgt;\nb)\nArbeiten an beweglichen körperlichen Gegenständen und die Begutachtung dieser Gegenstände für einen Empfänger, der weder ein Unternehmer ist, für dessen Unternehmen die Leistung ausgeführt wird, noch eine nicht unternehmerisch tätige juristische Person, der eine Umsatzsteuer-Identifikationsnummer erteilt worden ist.\n4.\nEine Vermittlungsleistung an einen Empfänger, der weder ein Unternehmer ist, für dessen Unternehmen die Leistung bezogen wird, noch eine nicht unternehmerisch tätige juristische Person, der eine Umsatzsteuer-Identifikationsnummer erteilt worden ist, wird an dem Ort erbracht, an dem der vermittelte Umsatz als ausgeführt gilt.\n5.\nDie Einräumung der Eintrittsberechtigung zu kulturellen, künstlerischen, wissenschaftlichen, unterrichtenden, sportlichen, unterhaltenden oder ähnlichen Veranstaltungen, wie Messen und Ausstellungen, sowie die damit zusammenhängenden sonstigen Leistungen an einen Unternehmer für dessen Unternehmen oder an eine nicht unternehmerisch tätige juristische Person, der eine Umsatzsteuer-Identifikationsnummer erteilt worden ist, wird an dem Ort erbracht, an dem die Veranstaltung tatsächlich durchgeführt wird. Wird mit der Eintrittsberechtigung eine virtuelle Teilnahme an einer Veranstaltung ermöglicht, gilt abweichend von Satz 1 für die Einräumung dieser Eintrittsberechtigung Absatz 2.\n(4) Ist der Empfänger einer der in Satz 2 bezeichneten sonstigen Leistungen weder ein Unternehmer, für dessen Unternehmen die Leistung bezogen wird, noch eine nicht unternehmerisch tätige juristische Person, der eine Umsatzsteuer-Identifikationsnummer erteilt worden ist, und hat er seinen Wohnsitz oder Sitz im Drittlandsgebiet, wird die sonstige Leistung an seinem Wohnsitz oder Sitz ausgeführt. Sonstige Leistungen im Sinne des Satzes 1 sind: 1.\ndie Einräumung, Übertragung und Wahrnehmung von Patenten, Urheberrechten, Markenrechten und ähnlichen Rechten;\n2.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Exact same own earlier actual29October2026selected3aprimary reading reused by own-reading bridge for identical planning sibling shortcut; no new broad source sweep."
+  }
+}

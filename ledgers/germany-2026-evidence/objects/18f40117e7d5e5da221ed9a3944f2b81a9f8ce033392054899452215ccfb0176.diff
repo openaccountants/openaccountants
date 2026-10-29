@@ -1,0 +1,60 @@
+--- before
++++ after
+@@ -1,7 +1,7 @@
+ ---
+ name: de-trade-tax
+ description: "German trade tax (Gewerbesteuer, GewSt) for collection period 2026: who is liable (sole traders and partnerships with a commercial business, every GmbH, UG and AG; free professions excluded), trade income (Gewerbeertrag) with the § 8 add-backs (one quarter of financing items above EUR 200,000) and § 9 reductions (Grundsteuer, partnership shares, 15% participation exemption, donations), the EUR 24,500 allowance, the 3.5% base rate, the municipal multiplier (Hebesatz, at least 200% for 2026, 280% from 2027), the § 35 EStG income tax credit (four times the base amount, capped), loss carry-forward (EUR 1 million plus 60%), apportionment between municipalities (Zerlegung), the return, quarterly prepayments, surcharges and interest. Trigger on: Gewerbesteuer, GewSt, Hebesatz, Gewerbeertrag, Steuermessbetrag, Freibetrag 24.500, Hinzurechnungen, Kürzungen, § 35 EStG, Zerlegung, Gewerbesteuer-Vorauszahlung, trade tax Germany. Out of scope: income tax of the owner (de-self-employed-income-tax, de-income-tax), partners' income (de-partners-and-part-year), corporate income tax (de-corporate-tax), non-residents (de-non-resident-tax)."
+-version: 1.3
++version: 1.4
+ jurisdiction: DE
+ tax_year: 2026
+ last_updated: 2026-10-29
+@@ -108,7 +108,11 @@
+ 
+ **5. Round, allow, apply the base rate.** Round trade income down to full EUR 100, subtract the allowance (never below zero), and multiply by 3.5% to get the base amount (Steuermessbetrag) ([§ 11 GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html)).
+ 
+-**6. Apportion between municipalities (Zerlegung).** If the business had permanent establishments in more than one municipality during the period, or one establishment spans two, or it moved, the tax office splits the base amount ([§ 28(1) GewStG](https://www.gesetze-im-internet.de/gewstg/__28.html)). The key is wages paid at each establishment, rounded down to full EUR 1,000 ([§ 29 GewStG](https://www.gesetze-im-internet.de/gewstg/__29.html)). Where the business is not run by a legal person, EUR 25,000 a year in total is added as wages for the working owners ([§ 31(5) GewStG](https://www.gesetze-im-internet.de/gewstg/__31.html)). Wind, solar and storage businesses use installed capacity for nine tenths (§ 29(1) no. 2 and 3). Each municipality then applies its own multiplier to its share ([§ 4(1) GewStG](https://www.gesetze-im-internet.de/gewstg/__4.html)).
++**6. Apportion between municipalities (Zerlegung).** If the business had permanent establishments in more than one municipality during the period, or one establishment spans two, or it moved, the tax office splits the base amount ([§ 28(1) GewStG](https://www.gesetze-im-internet.de/gewstg/__28.html)). The key uses the qualifying statutory wages of each establishment under § 31, then rounds them down to full EUR 1,000 ([§ 29 GewStG](https://www.gesetze-im-internet.de/gewstg/__29.html)). Where the business is not run by a legal person, EUR 25,000 a year in total is added as wages for the working owners ([§ 31(5) GewStG](https://www.gesetze-im-internet.de/gewstg/__31.html)). Wind, solar and storage businesses use installed capacity for nine tenths (§ 29(1) no. 2 and 3). Each municipality then applies its own multiplier to its share ([§ 4(1) GewStG](https://www.gesetze-im-internet.de/gewstg/__4.html)).
++
++**Qualifying apportionment wages (§ 31(1)–(4) GewStG).** Start with employment remuneration under § 19(1) no. 1 EStG, excluding amounts exempt from income tax under other legislation. Include overtime and Sunday, public-holiday and night-work supplements regardless of their income-tax treatment. Exclude remuneration paid to people employed for vocational training and one-off remuneration calculated by profit. For each individual employee, exclude the remaining remuneration above EUR 50,000. Where the business is partly trade-tax exempt, exclude pay of employees who do not work exclusively or predominantly in the taxable business or part. Apply these employee rules before aggregating the establishment's qualifying wages and applying the § 29 rounding and apportionment key. The separate total EUR 25,000 working-owner amount under § 31(5) remains as stated above.
++
++For a stipulated ordinary corporation with two establishments, one employee at A paid EUR 100,000 and one at B paid EUR 50,000, with no trainee pay, profit-based bonus or other adjustment, qualifying wages are EUR 50,000 at each establishment. A EUR 1,000 base amount therefore splits EUR 500 to each, before each municipality applies its own multiplier. The uncapped 2:1 salary ratio is not the statutory key.
+ 
+ **7. Multiply** each share by the municipality's multiplier. The result is the trade tax ([§ 16(1) GewStG](https://www.gesetze-im-internet.de/gewstg/__16.html)).
+ 
+@@ -126,7 +130,7 @@
+ 
+ ## Deadlines and filing
+ 
+-**Who must file** ([§ 25(1) GewStDV](https://www.gesetze-im-internet.de/gewstdv_1955/__25.html)): every liable business whose trade income "den Betrag von 24 500 Euro überstiegen hat"; every non-exempt capital company and cooperative, whatever the amount; a business with a loss carry-forward determined at the end of the last period; any business the tax office asks. A sole trader at or below EUR 24,500 with no loss carry-forward and no request files nothing. Note the test is on trade income before rounding: EUR 24,580 rounds to EUR 24,500, gives no tax, yet a return is due.
++**Who must file** ([§ 25(1) GewStDV](https://www.gesetze-im-internet.de/gewstdv_1955/__25.html)): every liable business whose trade income "den Betrag von 24 500 Euro überstiegen hat"; every non-exempt capital company, cooperative and insurance mutual association, whatever the amount; other private-law legal persons and associations without legal personality, insofar as they have a commercial operation other than agriculture/forestry whose trade income exceeds EUR 5,000; standing commercial businesses of public-law legal persons whose trade income exceeds EUR 5,000; and the partly exempt businesses listed in § 25(1) no. 5 GewStDV only where they also carry on a taxable activity and taxable trade income exceeds EUR 5,000. The separate overrides remain: a business with a loss carry-forward determined at the end of the last period; any business the tax office asks. A sole trader at or below EUR 24,500 with no loss carry-forward and no request files nothing. Note the test is on trade income before rounding: EUR 24,580 rounds to EUR 24,500, gives no tax, yet a return is due.
+ 
+ **What.** A declaration for setting the base amount and, where § 28 applies, an apportionment declaration, sent electronically in the official data format. On request the tax office can accept a signed paper form to avoid undue hardship ([§ 14a GewStG](https://www.gesetze-im-internet.de/gewstg/__14a.html)).
+ 
+@@ -153,7 +157,7 @@
+ | --- | --- | --- |
+ | Late filing surcharge, base amount return and apportionment declaration | EUR 25 per started month of delay | [§ 152(6) AO](https://www.gesetze-im-internet.de/ao_1977/__152.html) |
+ | Highest late filing surcharge | EUR 25,000 | [§ 152(10) AO](https://www.gesetze-im-internet.de/ao_1977/__152.html) |
+-| Late payment surcharge (Säumniszuschlag) | 1% per started month, on the overdue tax rounded down to a multiple of EUR 50; none for a delay of up to three days | [§ 240(1), (3) AO](https://www.gesetze-im-internet.de/ao_1977/__240.html) |
++| Late payment surcharge (Säumniszuschlag) | 1% per started month, on the overdue tax rounded down to a multiple of EUR 50; none for a delay of up to three days except payments within § 224(2) no. 1 AO, including cash or cheques handed or sent to the tax authority | [§ 240(1), (3) AO](https://www.gesetze-im-internet.de/ao_1977/__240.html) |
+ | Interest on an assessment difference (either way) | 0.15% a month (1.8% a year), from 15 months after the end of the year | [§ 233a AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html), [§ 238(1a) AO](https://www.gesetze-im-internet.de/ao_1977/__238.html) |
+ 
+ - **Late filing.** The surcharge is discretionary, but must be set if the return is not filed within 14 months after the year end, or by the call-in date ([§ 152(2) AO](https://www.gesetze-im-internet.de/ao_1977/__152.html)). For this return § 152(6) carries over only § 152(3) no. 1 (an extended deadline), not the let-outs for nil tax or tax covered by prepayments. Example: three months and five days late is four started months, EUR 100. The surcharge goes to the municipality without the multiplier ([§ 14b GewStG](https://www.gesetze-im-internet.de/gewstg/__14b.html)).
+@@ -240,7 +244,7 @@
+ ## Ask the client first
+ 
+ - What exactly does the business do, and is it run alone, in a partnership or through a company? Does any part involve selling goods or reselling others' products? (Decides liability.) For a partnership, can its own commercial and noncommercial activities be separated, what are each activity's and total annual net receipts, and is any commercial income instead from another partnership?
+-- In which municipalities did it have premises in 2026, and did it move? Which multiplier is on the last trade tax notice? (Decides the multiplier and any apportionment.)
++- In which municipalities did it have premises in 2026, and did it move? Which multiplier is on the last trade tax notice? (Decides the multiplier and any apportionment.) For apportionment, obtain pay by employee and establishment, trainee status, profit-based one-off bonuses, tax-exempt items and overtime/Sunday/holiday/night supplements, so the per-employee EUR 50,000 limit and § 31 exclusions can be applied.
+ - What did it pay in the year for interest, annuities, silent partners, rent and leasing (movable and immovable separately) and licences? (Decides the § 8 add-back.)
+ - Does it own real property with Grundsteuer booked as an expense, hold shares in partnerships or companies (and what percentage at 1 January), or make donations? (Decides § 9.)
+ - Was a trade loss carry-forward determined at the end of 2025? (Decides § 10a and the return duty.)
+@@ -289,6 +293,8 @@
+ | BMF EStH 2025 H 15.8(5), judicial two-gate de minimis interpretation, losses and separate participation-income limb | https://grsth.bundesfinanzministerium.de/esth/2025/A-Einkommensteuergesetz/II-Einkommen-2-24b/8-Die-einzelnen-Einkunftsarten-13-24b/b-Gewerbebetrieb-15-17/Paragraf-15/paragraf-15.html | 2026-10-29 |
+ | BFH VIII R 6/12, separability and inclusive net-receipt gates | https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201510044?type=1646225765 | 2026-10-29 |
+ | BFH IV R 42/19, B.III.3, threshold retained for both gains and losses | https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/STRE202210200/ | 2026-10-29 |
++| AO § 240(3) and § 224(2) no. 1 (three-day grace payment-method exception), selected operative clauses re-read | https://www.gesetze-im-internet.de/ao_1977/__224.html | 2026-10-29 |
++| GewStG § 31(1)–(5), qualifying apportionment wages, exclusions and employee ceiling, selected full clauses re-read | https://www.gesetze-im-internet.de/gewstg/__31.html | 2026-10-29 |
+ 
+ Not yet confirmed: the ELSTER form names GewSt 1 A and GewSt 1 D for 2026 (not read on ELSTER); the Munich multiplier as a decision for 2026 specifically (the city page says "aktuell gültig" without a year).
+ 

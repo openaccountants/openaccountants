@@ -1,0 +1,103 @@
+       Ausdruck der elektronischen Lohnsteuerbescheinigung für 2026
+       Nachstehende Daten wurden maschinell an die Finanzverwaltung übermittelt.
+
+                                                                                                                                                 vom - bis
+                                                               1. Bescheinigungszeitraum
+
+                                                                                                                                    Anzahl „U“
+                                                               2. Zeiträume ohne Anspruch auf Arbeitslohn
+
+                                                                  Großbuchstaben (S, M, F, FR)
+
+                                                                                                                                              EUR            Ct
+                                                               3. Bruttoarbeitslohn einschl. Sachbezüge
+
+
+                                                               4. Einbehaltene Lohnsteuer von 3.
+
+                                                               5. Einbehaltener Solidaritätszuschlag von 3.
+
+                                                               6. Einbehaltene Kirchensteuer des Arbeitnehmers von 3.
+
+                                                               7. Einbehaltene Kirchensteuer des Ehegatten/Lebenspartners
+                                                                  von 3. (nur bei Konfessionsverschiedenheit)
+
+                                                               8. In 3. enthaltene Versorgungsbezüge
+
+                                                               9. Versorgungsbezüge für mehrere Kalenderjahre
+       Korrektur:                                                 (in 3. enthalten)
+
+       Stornierung:                                            10. Arbeitslohn für mehrere Kalenderjahre, Entschädigungen, z.B.
+                                                                   Abfindungen (in 3. enthalten, ohne 9.)
+       Datum:
+                                                               11. unbesetzt
+       Identifikationsnummer:
+                                                               12. unbesetzt
+       Personalnummer:
+       Geburtsdatum:                                           13. - 14. unbesetzt
+
+                                                               15. Leistungen, die dem Progressionsvorbehalt unterliegen
+       Transferticket:                                             (z.B.Lohnersatzleistungen)
+
+                                                               15a. (Saison-)Kurzarbeitergeld in 15. enthalten
+       Für den letzten Lohnzahlungszeitraum wurden folgende
+                                                               16. Steuerfreier      a) Doppelbesteuerungsabkommen (DBA)
+       Lohnsteuerabzugsmerkmale zugrunde gelegt:                   Arbeitslohn
+                                                                   nach              b) Auslandstätigkeitserlass
+                       Steuerklasse/Faktor
+                                                               17. Steuerfreie Arbeitgeberleistungen, die auf die
+                                                                   Entfernungspauschale anzurechnen sind
+                                                               18. Pauschal mit 15 % besteuerte Arbeitgeberleistungen für
+                                                                   Fahrten zwischen Wohnung und erster Tätigkeitsstätte
+                    Zahl der Kinderfreibeträge
+                                                               19. unbesetzt
+
+
+                                                               20. Steuerfreie Verpflegungszuschüsse bei Auswärtstätigkeit
+
+                    Steuerfreier Jahresbetrag                  21. Steuerfreie Arbeitgeberleistungen bei doppelter
+                                                                   Haushaltsführung
+
+                                                               22. Arbeitgeber-      a) zur gesetzlichen Rentenversicherung
+                                                                   anteil/
+                                                                  -zuschuss          b) an berufsständische Versorgungs-
+                                                                                        einrichtungen
+                 Jahreshinzurechnungsbetrag
+                                                                                 a) zur gesetzlichen Rentenversicherung
+                                                               23. Arbeitnehmer-
+                                                                   anteil        b) an berufsständische Versorgungs-
+                                                                                    einrichtungen
+
+                     Kirchensteuermerkmale                                           a) zur gesetzlichen Krankenversicherung
+                                                               24. Steuerfreie
+                                                                   Arbeitgeber-      b) zur privaten Krankenversicherung
+                                                                   zuschüsse
+                                                                                     c) zur gesetzlichen Pflegeversicherung
+       Beiträge zur privaten Kranken- und Pflege-Pflicht-
+        versicherung (§ 39 Abs. 4 Nr. 4 Buchst.a EStG)         25. Arbeitnehmerbeiträge zur gesetzlichen Krankenversicherung
+
+                                                               26. Arbeitnehmerbeiträge zur sozialen Pflegeversicherung
+
+       Beiträge zur privaten Basiskranken- und Pflege-         27. Arbeitnehmerbeiträge zur Arbeitslosenversicherung
+       Pflichtversicherung (§ 39 Abs. 4 Nr. 4 Buchst.b EStG)
+                                                               28. unbesetzt
+
+                                                               29. Bemessungsgrundlage für den Versorgungsfreibetrag zu 8.
+       Anschrift und Steuernummer des Arbeitgebers:
+                                                               30. Maßgebendes Kalenderjahr des Versorgungsbeginns zu 8.
+                                                                   und/oder 9.
+                                                               31. Zu 8. bei unterjähriger Zahlung: Erster und letzter Monat, für
+                                                                   den Versorgungsbezüge gezahlt wurden
+                                                               32. Sterbegeld; Kapitalauszahlungen/Abfindungen und Nach-
+                                                                   zahlungen von Versorgungsbezügen - in 3. und 8. enthalten
+
+                                                               33. unbesetzt                                                                                 —
+
+                                                               34. Freibetrag DBA Türkei
+                                                               Finanzamt, an das die Lohnsteuer abgeführt wurde (Name und vierstellige Nr.)
+
+
+
+
+6.25
+

@@ -1,0 +1,540 @@
+{
+  "status": "Substantive R01\u201308 deltas supported; R09 rounding and R10 stale reservation successors pending. Not whole-country verdict.",
+  "writer_manifest_members_rehashed": 87,
+  "pairs": {
+    "de-income-tax": {
+      "guide_sha256": "afcb21f5552d8db8463ed4d9c7ce8782227dc3c6fd573bb77bc673af4cd596c6",
+      "ledger_sha256": "a2356f7fa65dd60d659c8a7fea9ebf0d3fc70a7857d2a1a8e055bba79abdea0a",
+      "exact_operations": 5,
+      "full_inverse": true,
+      "original_oa_exact": 2,
+      "all_current_row_native_memberships": 194,
+      "old_original_wording_ref_LF_unchanged": 519,
+      "note": "Bounded delta check; whole frozen pair reading of freelancer/trade still pending"
+    },
+    "de-self-employed-income-tax": {
+      "guide_sha256": "2280d3e51b479079e099ff054b5d9dc83c8d390fb3b63e86a4db5ea124a74ebe",
+      "ledger_sha256": "7a119380b2018ccdb73c495e90625f0f22616d57652c2437558f63a8410714c5",
+      "exact_operations": 5,
+      "full_inverse": true,
+      "original_oa_exact": 2,
+      "all_current_row_native_memberships": 195,
+      "old_original_wording_ref_LF_unchanged": 385,
+      "note": "Bounded delta check; whole frozen pair reading of freelancer/trade still pending"
+    },
+    "de-einkommensteuer-freelancer": {
+      "guide_sha256": "fa101a2a0e450dcd0481d440b5aa5d647c8dab2bf3d9c95dd809dc5989507aa2",
+      "ledger_sha256": "c0b11fa391cc52c9ea7eb9271437a4fb8d89018be447870ad6c2e3403bc47287",
+      "exact_operations": 6,
+      "full_inverse": true,
+      "original_oa_exact": 3,
+      "all_current_row_native_memberships": 137,
+      "old_original_wording_ref_LF_unchanged": 146,
+      "note": "Bounded delta check; whole frozen pair reading of freelancer/trade still pending"
+    },
+    "de-employee-income-tax": {
+      "guide_sha256": "cd57ecbaf2ea8cd8153e7254e51c2a547d195e618f1cab178f8365909001b35b",
+      "ledger_sha256": "8eac310709ce95bacd98662617dc1252c5950dffbbc291715ad84722b20ea35c",
+      "exact_operations": 4,
+      "full_inverse": true,
+      "original_oa_exact": 2,
+      "all_current_row_native_memberships": 218,
+      "old_original_wording_ref_LF_unchanged": 435,
+      "note": "Bounded delta check; whole frozen pair reading of freelancer/trade still pending"
+    },
+    "de-partners-and-part-year": {
+      "guide_sha256": "0839172b17872bebeed72749eb57e3353d83c4a6132dbb8e02f04ec0ceefb245",
+      "ledger_sha256": "4a7e259948d408fc21fe01cf1f4e61231c0d65e1a159a333948e68b774527dc3",
+      "exact_operations": 8,
+      "full_inverse": true,
+      "original_oa_exact": 2,
+      "all_current_row_native_memberships": 182,
+      "old_original_wording_ref_LF_unchanged": 353,
+      "note": "Bounded delta check; whole frozen pair reading of freelancer/trade still pending"
+    },
+    "de-trade-tax": {
+      "guide_sha256": "d8ca2561b7b20f54a376ef3469679521ecbe0623944c34e1ef57e27709ea74d4",
+      "ledger_sha256": "b91ca4a51b2c83389815870c7884f0c49055ef3a472a44e43b628208ef6962ca",
+      "exact_operations": 6,
+      "full_inverse": true,
+      "original_oa_exact": 2,
+      "all_current_row_native_memberships": 102,
+      "old_original_wording_ref_LF_unchanged": 120,
+      "note": "Bounded delta check; whole frozen pair reading of freelancer/trade still pending"
+    },
+    "de-corporate-tax": {
+      "guide_sha256": "87aaeab2154e651a0dc94832e825030a1a7e2d164881181245393e3d8b5ded1f",
+      "ledger_sha256": "1fac629490219b2a6481df32ec30bd8cee317ca800562329c486a2f186a49181",
+      "exact_operations": 10,
+      "full_inverse": true,
+      "original_oa_exact": 2,
+      "all_current_row_native_memberships": 231,
+      "old_original_wording_ref_LF_unchanged": 228,
+      "note": "Bounded delta check; whole frozen pair reading of freelancer/trade still pending"
+    }
+  },
+  "source_actual_read_ledger": [
+    {
+      "id": "R01.business-car",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+      "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+      "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+      "native_LF": [
+        26,
+        27
+      ],
+      "quote_sha256": "f577660e62bca3e3114baa982c66a55344a519b48d71adf85d4571f121ee70b3"
+    },
+    {
+      "id": "R01.allowance",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5d05d24ddb446c3d.reader.txt",
+      "raw_sha256": "82ce506e5bebc2a7b9964e715fa898bc06d4eba0602e62d24606b2e6b49e23bb",
+      "reader_sha256": "c5ad161d9234d437d840469dd3defee8b76019704a0b7de9562fb13d88b6b971",
+      "native_LF": [
+        13,
+        14
+      ],
+      "quote_sha256": "763492e27446b5126817dd45dacc779bd7017d975f882b52ff8706860f4e269e"
+    },
+    {
+      "id": "R02.meal-incorporation",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+      "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+      "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+      "native_LF": [
+        24,
+        25
+      ],
+      "quote_sha256": "e881de916081629ede3930a888a1c125f0a9c62bc06ab43cdb94eb2e4e68e565"
+    },
+    {
+      "id": "R02.meals",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5d05d24ddb446c3d.reader.txt",
+      "raw_sha256": "82ce506e5bebc2a7b9964e715fa898bc06d4eba0602e62d24606b2e6b49e23bb",
+      "reader_sha256": "c5ad161d9234d437d840469dd3defee8b76019704a0b7de9562fb13d88b6b971",
+      "native_LF": [
+        38,
+        48
+      ],
+      "quote_sha256": "2b9d8d175dd07bf8c3141cc9eed11dfede3ce815d050ecd6eb41424c24b272f5"
+    },
+    {
+      "id": "R03.soli-children",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc748242e6e54c746.reader.txt",
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+      "native_LF": [
+        27,
+        27
+      ],
+      "quote_sha256": "a99746c7c426184f256410adbd244df3063c6347e1b79f06dbc65f61577ac6f0"
+    },
+    {
+      "id": "R03.employee-expense",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5d05d24ddb446c3d.reader.txt",
+      "raw_sha256": "82ce506e5bebc2a7b9964e715fa898bc06d4eba0602e62d24606b2e6b49e23bb",
+      "reader_sha256": "c5ad161d9234d437d840469dd3defee8b76019704a0b7de9562fb13d88b6b971",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "e1d33c52269f9730f2761c8effb743c9a153c55613d28873d70207e21d114f27"
+    },
+    {
+      "id": "R03.special-JAEG",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubbd69a1741987610.reader.txt",
+      "raw_sha256": "e92edebd8a2a9df10c1f49f4d303a8ad162bc0c12fad233b1dc58626e47fea37",
+      "reader_sha256": "de5bf098b2f8986038c3f02b0b664acf03f46d383afb5fc0d1817ff1276d30d2",
+      "native_LF": [
+        7,
+        8
+      ],
+      "quote_sha256": "967bf4b545d6445244d3ebed8db7921ab7b9f832ab5e4f91fa1f1c33eb36517d"
+    },
+    {
+      "id": "R03.current223-boundary",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc9fb465ba767d198.reader.txt",
+      "raw_sha256": "a2f3f5a04b312fe4aa90a2434559e7a46471a60cea568b839b9ede19812d7d3a",
+      "reader_sha256": "cb88c51fc715e961ae49acb053238afec1a236030251b238d2d1e9f2407c915d",
+      "native_LF": [
+        7,
+        10
+      ],
+      "quote_sha256": "402f1666e7775d9c6ffef179032d95a2176dac4758c0129a3dc49cec47c1867a"
+    },
+    {
+      "id": "R04.crossborder-mandatory",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ucb9a939517193e9c.reader.txt",
+      "raw_sha256": "c27dd4e778fb62fb6a389453e29b68329e447cff65925995d8941825c1fc3750",
+      "reader_sha256": "4f1e49286a87ec81f6d872ddd07080cf0b65c71fa15b9ab5ada9da83dcd42d9c",
+      "native_LF": [
+        32,
+        36
+      ],
+      "quote_sha256": "f9308366db4d2cc7f2c409440e3eaa83289c80b7cf4885c97aa4f8e68d26ef04"
+    },
+    {
+      "id": "R03.BMG-health-2026",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BMG-health-2026.reader.txt",
+      "raw_sha256": "ad135633759ad3aea1ad2fc36f4689e90bca5905e5d248a6f2cbb521caf92ed4",
+      "reader_sha256": "e0d3a84fc7114a8463fee70d840ebe610f7a5cd7e598b6e2a965870cf0cb1d39",
+      "native_LF": [
+        379,
+        380
+      ],
+      "quote_sha256": "45a481e673c7321233e5511236ce435693a77eee4e206e8594673b037e8ced1c"
+    },
+    {
+      "id": "R03.BMG-care-2026",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BMG-care-2026.reader.txt",
+      "raw_sha256": "a77a234a354599240cef1e04d676f1f40bb2337a0b078113a98e84771286e26a",
+      "reader_sha256": "9e555bf46242681b414297d5273fe42868f7ca54d56f6ebebea40073b59e2b35",
+      "native_LF": [
+        435,
+        436
+      ],
+      "quote_sha256": "7bded178e98d5b4f4af2acdcf45ab1d2714a2664ee09867fcdfd9a9d1fa35232"
+    },
+    {
+      "id": "R03.amend223",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BStabG2026.txt",
+      "raw_sha256": "190f7ef61f929f26d84e1d63847181516c04582c8769b94e76f66914599c7b76",
+      "reader_sha256": "6793766566cc978987175f9e3d23961ac2fca15cf0c6cef6d05a3c5800ae2cfc",
+      "native_LF": [
+        1782,
+        1789
+      ],
+      "quote_sha256": "51244df96d4a79fe16b4fb55a155dda259549127b60e0c6b5519024bbb5ded73"
+    },
+    {
+      "id": "R03.commencement",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BStabG2026.txt",
+      "raw_sha256": "190f7ef61f929f26d84e1d63847181516c04582c8769b94e76f66914599c7b76",
+      "reader_sha256": "6793766566cc978987175f9e3d23961ac2fca15cf0c6cef6d05a3c5800ae2cfc",
+      "native_LF": [
+        2703,
+        2714
+      ],
+      "quote_sha256": "eba56f155b128745ac9f7136801df7812f9a2cb05a8b83b77bd96de595614464"
+    },
+    {
+      "id": "R05.statute",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB023.txt",
+      "raw_sha256": "9c66144e9197fbf44d69007269443432cc8e67aa92b3c7fb1d2c732e3315cbb4",
+      "reader_sha256": "b8837a2eacafe010efbc888b8bdbb2fdb28e293691da768e14d348c42b41b9c9",
+      "native_LF": [
+        15,
+        19
+      ],
+      "quote_sha256": "3498cbaed74a00327e0a4d0ae07a6b30c16c59f103e040504d949610adea8bee"
+    },
+    {
+      "id": "R05.BFH-separability",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/BFH-VIIIR6-12.reader.txt",
+      "raw_sha256": "18a310660b30ee1211acf5e05a3528c37e77fbb58af983ae25f3df0dac3ee518",
+      "reader_sha256": "62332cc64b8f1d3eddc3d59f16a00eec7816f9153051a68ab8058416056bc9d8",
+      "native_LF": [
+        282,
+        314
+      ],
+      "quote_sha256": "294926d9bc926e8241fa9dcb84f453a9a70904c60e15bcc9bc662ce2df01c093"
+    },
+    {
+      "id": "R05.BFH-thresholds",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/BFH-VIIIR6-12.reader.txt",
+      "raw_sha256": "18a310660b30ee1211acf5e05a3528c37e77fbb58af983ae25f3df0dac3ee518",
+      "reader_sha256": "62332cc64b8f1d3eddc3d59f16a00eec7816f9153051a68ab8058416056bc9d8",
+      "native_LF": [
+        315,
+        378
+      ],
+      "quote_sha256": "31a577e3be6fae4ed4857a8efc483e8f64a3194ce886b878dc57190ff287653e"
+    },
+    {
+      "id": "R05.BMF-current",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/EStH15-8.reader.txt",
+      "raw_sha256": "585fb3f29a5bf17488d4ab46c9c99ba2a3b611010b082f3dd40ef58b01bc7c9f",
+      "reader_sha256": "dc76ddc69bdad63b5041d127e211e2db9dd21a79f1265631913ae82c11961118",
+      "native_LF": [
+        2178,
+        2190
+      ],
+      "quote_sha256": "d98e890ac3b9b0516815db5c777920dc9db9f7cd5be07ce124328aa73f8cc312"
+    },
+    {
+      "id": "R05.BFH-2022",
+      "actual_read": "Earlier independent own official web selected reasoning; writer retained response/hash rechecked. Not raw HTML or a new source-wide read.",
+      "web_tool_response_sha256": "fcd40047751749fd22e0fa0c3394ab99465b3d8ccb3f6a6b36ad078ee8f2e489",
+      "web_lines": [
+        161,
+        178
+      ]
+    },
+    {
+      "id": "R06.retained",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U04496684f283eed9.reader.txt",
+      "raw_sha256": "3f1f145af6f287a80db8abb0d5d0db24db300e90107d4c24391f93b475a950bf",
+      "reader_sha256": "13a087705e5b93c1d702f3c184c0e8f66e75589b8e588440a318373f42548724",
+      "native_LF": [
+        7,
+        16
+      ],
+      "quote_sha256": "a426adfd809bc583830217fa197649e310ce5e473f7f020b63e251c1d515cd86"
+    },
+    {
+      "id": "R06.liability",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaa4bd03133099579.reader.txt",
+      "raw_sha256": "716040badeef5438c57a9ffa016a90fc2676685f927485b08703f4d41e9838c2",
+      "reader_sha256": "3f70feb9fea99f4b04322e1e8374966edb5ebd8200f3a464c2f838b56ea7f69b",
+      "native_LF": [
+        7,
+        11
+      ],
+      "quote_sha256": "3031b4746f0498da909a6fc41eaf0e44ad9d17c67efc7e24d0b7d2d3de57b534"
+    },
+    {
+      "id": "R07.interest",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U89fe99339c842942.reader.txt",
+      "raw_sha256": "7151f48f328bf94ee162029b95f1942c6569007f8e796cae9afdb60fc250aaf6",
+      "reader_sha256": "f345f02cfa04e9c59e94b465c5c9c8b24daeec6ac99ddede4ed50d97a9a71483",
+      "native_LF": [
+        7,
+        17
+      ],
+      "quote_sha256": "24fb0a687e2022418f15c2333162db5de4b4bb028c8b707b2190ffbaf9269878"
+    },
+    {
+      "id": "R07.corporate-income",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ucbc7a426779ae7c3.reader.txt",
+      "raw_sha256": "5574949a5454dd181373f35bcad58386f35986ed39585825a68657dfca3b4254",
+      "reader_sha256": "16adeff24728f44811243ffa41bc94a13e15c88f77c8e6fef29fde412acd8f74",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "9133d0f9b913fd7addfea21868e4d382bf7d708bef17b9da80762612b263ce13"
+    },
+    {
+      "id": "R07.commercial",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7eebf57156097cab.reader.txt",
+      "raw_sha256": "f309400c1595df013343d2b7ce996c79b615ed5c027a494f7696806097a84074",
+      "reader_sha256": "b6396962d89d880e08aa62b7fb54e17d445fbfa3177dd088db9feae0c40f61d7",
+      "native_LF": [
+        7,
+        8
+      ],
+      "quote_sha256": "265f7c866ba93186d02180d7788c4f411eccb24a62bd5ee4ac4a07915f3f131c"
+    },
+    {
+      "id": "R08.royalty-extent",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.reader.txt",
+      "raw_sha256": "0bddf86f831b727c144a7ecb6791cc3e5529bfb8f707ee4715c4dc95c6d2458a",
+      "reader_sha256": "56b79f581bc6fe26a103d5085d7e127e13fb2960475bb814020668dd7f7749c1",
+      "native_LF": [
+        8,
+        12
+      ],
+      "quote_sha256": "1cbf95cde7ba8b7ac219e9f17c10e44dfe3ae1f528c6d39cbd7cf560ad14e2be"
+    },
+    {
+      "id": "R08.refund-population",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U26ee07b985228da2.reader.txt",
+      "raw_sha256": "1589436abec915a0d49be85ff82d5319831789eb3873a391c983fef6726cf72d",
+      "reader_sha256": "6b231e67dcfa9e5f8b8f4c3a9441d242d9fa211fbd37e0191070b5620c1db7f8",
+      "native_LF": [
+        51,
+        51
+      ],
+      "quote_sha256": "6b283cb2718dee18e9bf9e55db44c661f6d15ec89a17ebd30847377fddc88446"
+    },
+    {
+      "id": "R08.foreign-corporation",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U47038fc5ff2efb09.reader.txt",
+      "raw_sha256": "0739fecdbc4229c1055cf629cdd5811cc56dc6d5d274ccd60b02e76bc2a5d4c9",
+      "reader_sha256": "314d18f171f8fa684f9e86c36be0071d704e66c70a73ddafe45dd691b22aaa52",
+      "native_LF": [
+        7,
+        8
+      ],
+      "quote_sha256": "494f2b1ac5e84ab5c2896cbab620096c62dfd61a98f6cfd46faaa30661380d68"
+    },
+    {
+      "id": "R08.anti-abuse",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U20a110d035f0b1ba.reader.txt",
+      "raw_sha256": "fd1ee264c4c5e8fc80f1663de4ea010fc7793242c574622dad8a2c05d7fb345a",
+      "reader_sha256": "05fc41a45e6dc460030534c73b751375029212123e882f7cf0f5a37fe5a35878",
+      "native_LF": [
+        10,
+        14
+      ],
+      "quote_sha256": "840c6c581e472fc21c3ba225eb0d896d8fb6bf149a4781f2255210c6aa30664e"
+    },
+    {
+      "id": "R08.procedure",
+      "actual_read": "Selected original-language quote fully read in bounded actual helper output; raw/reader/native-membership independently checked",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.reader.txt",
+      "raw_sha256": "0bddf86f831b727c144a7ecb6791cc3e5529bfb8f707ee4715c4dc95c6d2458a",
+      "reader_sha256": "56b79f581bc6fe26a103d5085d7e127e13fb2960475bb814020668dd7f7749c1",
+      "native_LF": [
+        13,
+        15
+      ],
+      "quote_sha256": "863b7eb092f7455b43b3af091d8bb037b43d6ac2b2c3104797b6e939a7ec6515"
+    }
+  ],
+  "own_controls": [
+    {
+      "name": "commute2880",
+      "actual": "1360",
+      "expected": "1360",
+      "pass": true
+    },
+    {
+      "name": "commute1000",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "commute2000",
+      "actual": "480",
+      "expected": "480",
+      "pass": true
+    },
+    {
+      "name": "commute listD",
+      "actual": "2880",
+      "expected": "2880",
+      "pass": true
+    },
+    {
+      "name": "commute allowance",
+      "actual": "1520",
+      "expected": "1520",
+      "pass": true
+    },
+    {
+      "name": "short nonovernightmeal",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "qualifying departuremeal",
+      "actual": "14",
+      "expected": "14",
+      "pass": true
+    },
+    {
+      "name": "2026monthlyBMGceiling",
+      "actual": "11625/2",
+      "expected": "11625/2",
+      "pass": true
+    },
+    {
+      "name": "2026careceilingindependent",
+      "actual": "69750",
+      "expected": "69750",
+      "pass": true
+    },
+    {
+      "name": "own activity500000/15000",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "own activity500000/1500001/100",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "own activity1000000/24500",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "own activity1000000/2450001/100",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "34a qualifyingtaxwithdrawalpriority20of30",
+      "actual": "95000",
+      "expected": "95000",
+      "pass": true
+    },
+    {
+      "name": "15a external covering10kwithdrawal qualification",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "15a no external covering10kwithdrawal",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "EBITDA no generation escape current2m",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "oldcarry no blanket escape",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "samepayroyalty cumulative10k",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "samepayroyalty10000.01",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "royalty treaty existence alone establisheszero",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    }
+  ],
+  "helper_failures": "The first repair-source helper stopped at differently named raw-path and web-observation record fields; adapted helper and explicit web-record read completed the intended selected scopes. No fabricated raw-body membership for the web observation."
+}

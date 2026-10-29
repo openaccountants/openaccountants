@@ -1,0 +1,65 @@
+{
+  "de-income-tax": {
+    "Guide_sha256": "afcb21f5552d8db8463ed4d9c7ce8782227dc3c6fd573bb77bc673af4cd596c6",
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/ledgers/de-income-tax.md",
+    "ledger_sha256": "a2356f7fa65dd60d659c8a7fea9ebf0d3fc70a7857d2a1a8e055bba79abdea0a",
+    "current_rows": 194,
+    "original_current_rows": 192,
+    "old_topics": 519,
+    "original_ledger_sha256": "b9e9a854c73ff04be8882a25e11f1cabfe17bce51f6457248dc4285fd537c2a2"
+  },
+  "de-self-employed-income-tax": {
+    "Guide_sha256": "2280d3e51b479079e099ff054b5d9dc83c8d390fb3b63e86a4db5ea124a74ebe",
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/ledgers/de-self-employed-income-tax.md",
+    "ledger_sha256": "7a119380b2018ccdb73c495e90625f0f22616d57652c2437558f63a8410714c5",
+    "current_rows": 195,
+    "original_current_rows": 193,
+    "old_topics": 385,
+    "original_ledger_sha256": "3aa296157e882b041ed054906aa7a6fab93c766954a317b0ce9b84a50144b2e0"
+  },
+  "de-einkommensteuer-freelancer": {
+    "Guide_sha256": "fa101a2a0e450dcd0481d440b5aa5d647c8dab2bf3d9c95dd809dc5989507aa2",
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/ledgers/de-einkommensteuer-freelancer.md",
+    "ledger_sha256": "c0b11fa391cc52c9ea7eb9271437a4fb8d89018be447870ad6c2e3403bc47287",
+    "current_rows": 137,
+    "original_current_rows": 135,
+    "old_topics": 146,
+    "original_ledger_sha256": "241405d4e7a5d1cddabe010ae530098d200e27e33da67ce1e99924356ed52c5d"
+  },
+  "de-employee-income-tax": {
+    "Guide_sha256": "cd57ecbaf2ea8cd8153e7254e51c2a547d195e618f1cab178f8365909001b35b",
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/ledgers/de-employee-income-tax.md",
+    "ledger_sha256": "8eac310709ce95bacd98662617dc1252c5950dffbbc291715ad84722b20ea35c",
+    "current_rows": 218,
+    "original_current_rows": 218,
+    "old_topics": 435,
+    "original_ledger_sha256": "b9c69b23763f131944f97be8e40b60a8134168de8d1e0a1fd4506491b599149a"
+  },
+  "de-partners-and-part-year": {
+    "Guide_sha256": "0839172b17872bebeed72749eb57e3353d83c4a6132dbb8e02f04ec0ceefb245",
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/ledgers/de-partners-and-part-year.md",
+    "ledger_sha256": "4a7e259948d408fc21fe01cf1f4e61231c0d65e1a159a333948e68b774527dc3",
+    "current_rows": 182,
+    "original_current_rows": 177,
+    "old_topics": 353,
+    "original_ledger_sha256": "7e36359e8ea2e366918bb3f90d57f26fceb6eb6cd4e0d5acfa502d8f22107548"
+  },
+  "de-trade-tax": {
+    "Guide_sha256": "d8ca2561b7b20f54a376ef3469679521ecbe0623944c34e1ef57e27709ea74d4",
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/ledgers/de-trade-tax.md",
+    "ledger_sha256": "b91ca4a51b2c83389815870c7884f0c49055ef3a472a44e43b628208ef6962ca",
+    "current_rows": 102,
+    "original_current_rows": 97,
+    "old_topics": 120,
+    "original_ledger_sha256": "a57cd70d8495d767b1be6bc19a9715aac3b17c8b8a2aaeb0cc9972fcbde16eed"
+  },
+  "de-corporate-tax": {
+    "Guide_sha256": "87aaeab2154e651a0dc94832e825030a1a7e2d164881181245393e3d8b5ded1f",
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/ledgers/de-corporate-tax.md",
+    "ledger_sha256": "1fac629490219b2a6481df32ec30bd8cee317ca800562329c486a2f186a49181",
+    "current_rows": 231,
+    "original_current_rows": 229,
+    "old_topics": 228,
+    "original_ledger_sha256": "5aaa6fa7ed8f47d74cc01e8223d6702951657db9b7a760ffb624c4e95a2bab92"
+  }
+}

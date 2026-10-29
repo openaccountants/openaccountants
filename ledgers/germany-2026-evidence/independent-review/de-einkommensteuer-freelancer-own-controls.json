@@ -1,0 +1,204 @@
+{
+  "count": 33,
+  "controls": [
+    {
+      "name": "day1",
+      "actual": "900",
+      "expected": "900",
+      "pass": true
+    },
+    {
+      "name": "profit1",
+      "actual": "59100",
+      "expected": "59100",
+      "pass": true
+    },
+    {
+      "name": "taxable1",
+      "actual": "50000",
+      "expected": "50000",
+      "pass": true
+    },
+    {
+      "name": "tax1",
+      "actual": "10548",
+      "expected": "10548",
+      "pass": true
+    },
+    {
+      "name": "church1",
+      "actual": "23733/25",
+      "expected": "23733/25",
+      "pass": true
+    },
+    {
+      "name": "IAB2",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "profit2",
+      "actual": "90000",
+      "expected": "90000",
+      "pass": true
+    },
+    {
+      "name": "taxable2",
+      "actual": "80300",
+      "expected": "80300",
+      "pass": true
+    },
+    {
+      "name": "tax2",
+      "actual": "22590",
+      "expected": "22590",
+      "pass": true
+    },
+    {
+      "name": "solifull2",
+      "actual": "24849/20",
+      "expected": "24849/20",
+      "pass": true
+    },
+    {
+      "name": "solicap2",
+      "actual": "6664/25",
+      "expected": "6664/25",
+      "pass": true
+    },
+    {
+      "name": "soli2",
+      "actual": "6664/25",
+      "expected": "6664/25",
+      "pass": true
+    },
+    {
+      "name": "tariff3",
+      "actual": "30864",
+      "expected": "30864",
+      "pass": true
+    },
+    {
+      "name": "mess3",
+      "actual": "5985/2",
+      "expected": "5985/2",
+      "pass": true
+    },
+    {
+      "name": "trade3",
+      "actual": "11970",
+      "expected": "11970",
+      "pass": true
+    },
+    {
+      "name": "credit3",
+      "actual": "11970",
+      "expected": "11970",
+      "pass": true
+    },
+    {
+      "name": "incometax3",
+      "actual": "18894",
+      "expected": "18894",
+      "pass": true
+    },
+    {
+      "name": "church3",
+      "actual": "69444/25",
+      "expected": "69444/25",
+      "pass": true
+    },
+    {
+      "name": "jointsplit100k",
+      "actual": "21096",
+      "expected": "21096",
+      "pass": true
+    },
+    {
+      "name": "prepay2637",
+      "actual": "2637",
+      "expected": "2637",
+      "pass": true
+    },
+    {
+      "name": "IABprofit200kpass",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "IABprofit200001fail",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "IABplanned20k50pct",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "flatwriter30pctcap",
+      "actual": "3600",
+      "expected": "3600",
+      "pass": true
+    },
+    {
+      "name": "flatside25pctcap",
+      "actual": "900",
+      "expected": "900",
+      "pass": true
+    },
+    {
+      "name": "GWG952nettest",
+      "actual": "800",
+      "expected": "800",
+      "pass": true
+    },
+    {
+      "name": "GWGcostirrecoverable",
+      "actual": "952",
+      "expected": "952",
+      "pass": true
+    },
+    {
+      "name": "GWGrecoverablecost",
+      "actual": "800",
+      "expected": "800",
+      "pass": true
+    },
+    {
+      "name": "pensioncapminers",
+      "actual": "154128/5",
+      "expected": "154128/5",
+      "pass": true
+    },
+    {
+      "name": "pensioncapceil",
+      "actual": "30826",
+      "expected": "30826",
+      "pass": true
+    },
+    {
+      "name": "R16eligible400reducer100",
+      "actual": "300",
+      "expected": "300",
+      "pass": true
+    },
+    {
+      "name": "R16eligible400noreducer",
+      "actual": "400",
+      "expected": "400",
+      "pass": true
+    },
+    {
+      "name": "oneunitbusinessstartturnover25000inside",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    }
+  ],
+  "scope": "All3 original oa fixture computations plus joint/prepayment narrative and source-based decision boundaries. Fixed original church9% is stipulated; no new state-law approval."
+}

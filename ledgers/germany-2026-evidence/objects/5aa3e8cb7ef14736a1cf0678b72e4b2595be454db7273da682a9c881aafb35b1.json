@@ -1,0 +1,9 @@
+{
+  "Guide_sha256": "27bd4da330db7fb8428c569af3f3e6a208d64623cda58343c02590a36b2ee454",
+  "before_Guide_sha256": "5d5f9d8e80b08e2299130e2fe59328714838a89f40a54800eac2e46368e4c382",
+  "two_op_inverse_exact": true,
+  "all_original_oa_exact": true,
+  "old_topic_count": 459,
+  "coarse_route_count": 108,
+  "all_original_other_bytes_exact": true
+}

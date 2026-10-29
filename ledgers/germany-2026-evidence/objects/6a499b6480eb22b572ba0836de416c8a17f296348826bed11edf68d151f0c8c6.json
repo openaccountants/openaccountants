@@ -1,0 +1,26 @@
+[
+  {
+    "before": "version: 1.2\n",
+    "after": "version: 1.3\n"
+  },
+  {
+    "before": "lift, lifting the standard. The 2025 instructions:",
+    "after": "lift, lifting the standard (judged mainly by heating, sanitary and electrical installations and windows). The 2025 instructions:"
+  },
+  {
+    "before": "needs **Anlage V-FeWo** as well as Anlage V (2025 instructions).",
+    "after": "needs **Anlage V-FeWo** as well as Anlage V (2025 instructions). Each V-FeWo form covers up to four flats."
+  },
+  {
+    "before": "Straight-line instead: 300,000 × 3% × 9/12 = EUR 6,750.",
+    "after": "Straight-line instead: 300,000 × 3% × 9/12 = EUR 6,750. The binding contract was made in March 2026. Total acquisition cost is EUR 400,000, including land of EUR 100,000. From April, rent is EUR 1,200 plus Umlagen of EUR 250 a month: income is 9 × (1,200 + 250) = EUR 13,050. Interest of EUR 9,000, running costs of EUR 2,250 and management of EUR 600 total EUR 11,850. The declining-balance loss is 13,050 − 11,850 − 11,250 = EUR 10,050; with straight-line AfA the loss is EUR 5,550."
+  },
+  {
+    "before": "and is depreciated at 2% with the building. Refer the correction",
+    "after": "and is depreciated at 2% with the building: EUR 31,000 × 2% = EUR 620 for a full year. Refer the correction"
+  },
+  {
+    "before": "Use the 2025 Anlage V. Rules are as for 2026,",
+    "after": "The advised 2024 return was due 30 April 2026 under that transitional rule. Use the 2025 Anlage V. Rules are as for 2026,"
+  }
+]

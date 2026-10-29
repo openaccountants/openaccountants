@@ -1,0 +1,11 @@
+{
+  "id": "U5cbe7c20afaf1523",
+  "url": "https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.body",
+  "raw_sha256": "5456903f44e82a54de893b143543c349a27016293c4953eb29bf4d5450b6f5a7",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5cbe7c20afaf1523.reader.txt",
+  "reader_sha256": "b5b20824cec84cea035f72f785733b88d06c598df2269ca43f9fe5e9648bba8d",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

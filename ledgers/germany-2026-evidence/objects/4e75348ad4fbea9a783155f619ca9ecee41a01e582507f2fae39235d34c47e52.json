@@ -1,0 +1,812 @@
+{
+  "role": "writer, not independent review",
+  "controls": [
+    {
+      "id": "R44.deduction(400, 0, 0)",
+      "actual": "400",
+      "expected": "400",
+      "premise": "Actualeligible46(3)income≤410; age means independently determined statutoryexcess24areduction and farmactual13(3)amount. No broadernegative/hardship algorithm inferred.",
+      "pass": true
+    },
+    {
+      "id": "R44.deduction(400, 100, 0)",
+      "actual": "300",
+      "expected": "300",
+      "premise": "Actualeligible46(3)income≤410; age means independently determined statutoryexcess24areduction and farmactual13(3)amount. No broadernegative/hardship algorithm inferred.",
+      "pass": true
+    },
+    {
+      "id": "R44.deduction(400, 100, 50)",
+      "actual": "250",
+      "expected": "250",
+      "premise": "Actualeligible46(3)income≤410; age means independently determined statutoryexcess24areduction and farmactual13(3)amount. No broadernegative/hardship algorithm inferred.",
+      "pass": true
+    },
+    {
+      "id": "R44.exclude32d6",
+      "actual": "400",
+      "expected": "400",
+      "premise": "Eligibleordinarynon-withheldincome400; additional100optional32d6tariffincome is excluded from46(3)eligibleamount, not combined500. Other filinggates separate.",
+      "pass": true
+    },
+    {
+      "id": "R45.per-person(900, 1000)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actualperson-specificpositive totals after statutorywithin-boxnetting; twoowners900each/200each tested separately, not one pooled2000/512limit. No actualownershipsplit inferred.",
+      "pass": true
+    },
+    {
+      "id": "R45.per-person(1800, 1000)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actualperson-specificpositive totals after statutorywithin-boxnetting; twoowners900each/200each tested separately, not one pooled2000/512limit. No actualownershipsplit inferred.",
+      "pass": true
+    },
+    {
+      "id": "R45.per-person(200, 256)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actualperson-specificpositive totals after statutorywithin-boxnetting; twoowners900each/200each tested separately, not one pooled2000/512limit. No actualownershipsplit inferred.",
+      "pass": true
+    },
+    {
+      "id": "R45.per-person(400, 256)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actualperson-specificpositive totals after statutorywithin-boxnetting; twoowners900each/200each tested separately, not one pooled2000/512limit. No actualownershipsplit inferred.",
+      "pass": true
+    },
+    {
+      "id": "R45.no-pooling-sales",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Twoactualspouseswithseparate900gains; not a single1800ownerusing2000fictitiouslimit.",
+      "pass": true
+    },
+    {
+      "id": "R45.no-pooling-services",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Twoactualspouseswithseparate200serviceincome; not a single400ownerusing512fictitiouslimit.",
+      "pass": true
+    },
+    {
+      "id": "R45.predecessor-clock",
+      "actual": "True",
+      "expected": "True",
+      "premise": "SimpleinheritedpurchasedCurrencyToken, predecessoracquired1Jan2024; disposal1Sep2026 afterone-yearanniversary1Jan2025. Death1Mar2026doesnot restartclock; no365dayfractionalgorithm.",
+      "pass": true
+    },
+    {
+      "id": "R45.predecessor-cost",
+      "actual": "2000",
+      "expected": "2000",
+      "premise": "Simpleactualpredecessoracquisitioncost10000, sale12000, nocosts; deathFMV11000doesnot createassumedstepup. Holding/thresholds decide taxableoutcome separately.",
+      "pass": true
+    },
+    {
+      "id": "R45.wrong-death-stepup",
+      "actual": "1000",
+      "expected": "1000",
+      "premise": "Counterfactualwrongdeathmarketvaluebasis discriminator, not Guide method.",
+      "pass": true
+    },
+    {
+      "id": "R46.2025nonentry('255.99', 256)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual2025ELSTERAnlageSOpositiveincome/gaininstruction only. Exactthreshold fallsoutside statement; not evidenceof2026formlayout/overallno-returnduty.",
+      "pass": true
+    },
+    {
+      "id": "R46.2025nonentry(256, 256)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual2025ELSTERAnlageSOpositiveincome/gaininstruction only. Exactthreshold fallsoutside statement; not evidenceof2026formlayout/overallno-returnduty.",
+      "pass": true
+    },
+    {
+      "id": "R46.2025nonentry('999.99', 1000)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual2025ELSTERAnlageSOpositiveincome/gaininstruction only. Exactthreshold fallsoutside statement; not evidenceof2026formlayout/overallno-returnduty.",
+      "pass": true
+    },
+    {
+      "id": "R46.2025nonentry(1000, 1000)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual2025ELSTERAnlageSOpositiveincome/gaininstruction only. Exactthreshold fallsoutside statement; not evidenceof2026formlayout/overallno-returnduty.",
+      "pass": true
+    },
+    {
+      "id": "R46.lossentry",
+      "actual": "declare-within-scope-loss",
+      "expected": "declare-within-scope-loss",
+      "premise": "Actual2025instruction separatelyrequests within-scope losses; negativeamount not silentlyassigned nonentrybecause no positivetax. Overallfiling/correctionduties remain separate.",
+      "pass": true
+    }
+  ],
+  "control_count": 18,
+  "own_selected_native_ranges": 7,
+  "exact_source_checks": [
+    {
+      "id": "R44-46.Rn75",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R44-46.E23gift",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R44-46.E23base",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R44-46.E46relief",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R44-46.Form2025services",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R44-46.Form2025sales",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R45.current-services",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "CR.Rn2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn3",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn4",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn5",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn26",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn31",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn33",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn34",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn35",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn36",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn37",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn38",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn39",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn40",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn42",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn43",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn44",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn45",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn46",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn47",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn48",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn48a",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn50",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn52",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn53",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn54",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn55",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn56",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn57",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn58",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn59",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn60",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn61",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn62",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn63",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn65",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn67",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn68",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn70",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn71",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn72",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn73",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn74",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn75",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn76",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn79",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn80",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn81",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn82",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn83",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn84",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn85",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn86",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn87",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn88",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn89",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn90",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn91",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn92",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn100",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn101",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn102",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn103",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn104",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn105",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Rn106",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.BMFdate",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.BMFsupersedes",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.E23hold",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.E23gift",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.E23base",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.E22",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.E15",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.E46file",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.E46relief",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.AO147a",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.AO152",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.AO152amount",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.E32d",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.E32a",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.E10d",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.AO150",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.AO90",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.AO169",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.K21",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.K10",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.K9",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.K11",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.K8",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.K1scope",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.AO108",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.BGB187",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.BGB188",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.AO153",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.D56",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.AO149",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.AO149early",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.E36payment",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Notice",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Form2025services",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Form2025sales",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "CR.Form2025business",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    }
+  ],
+  "prior_A_manifest": {
+    "sha256": "caa546e677e15366d0530b1eb757fe4cfba54d87b9993d717c4d261de5282b24",
+    "members_rehashed": 610,
+    "mismatches": 0
+  },
+  "full_inverse_and_all_native_rows": true,
+  "all_prior156_current_units_and346_old_topics_retained": true,
+  "original_examples": {
+    "blocks": 0,
+    "failures": [],
+    "original_executable_blocks": 0,
+    "original_sections7_11_and_all_unedited_illustrations_exact": true
+  },
+  "schema": {
+    "errors": [],
+    "warnings": [],
+    "stdout": "checked 1 guides (0 non-guide .md files skipped)\n"
+  },
+  "diff_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

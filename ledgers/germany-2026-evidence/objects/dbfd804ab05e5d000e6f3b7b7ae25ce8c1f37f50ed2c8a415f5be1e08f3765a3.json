@@ -1,0 +1,167 @@
+[
+  {
+    "label": "miniwage",
+    "actual": "603",
+    "expected": "603"
+  },
+  {
+    "label": "oldminiwage",
+    "actual": "556",
+    "expected": "556"
+  },
+  {
+    "label": "case1RV",
+    "actual": "465",
+    "expected": "465"
+  },
+  {
+    "label": "case1AV",
+    "actual": "65",
+    "expected": "65"
+  },
+  {
+    "label": "case1KV",
+    "actual": "875/2",
+    "expected": "875/2"
+  },
+  {
+    "label": "case1PV",
+    "actual": "120",
+    "expected": "120"
+  },
+  {
+    "label": "case1total",
+    "actual": "2175/2",
+    "expected": "2175/2"
+  },
+  {
+    "label": "case1insolv",
+    "actual": "15/2",
+    "expected": "15/2"
+  },
+  {
+    "label": "case2RV",
+    "actual": "15717/20",
+    "expected": "15717/20"
+  },
+  {
+    "label": "case2AV",
+    "actual": "2197/20",
+    "expected": "2197/20"
+  },
+  {
+    "label": "case2KV",
+    "actual": "496.97",
+    "expected": "496.97"
+  },
+  {
+    "label": "case2PV",
+    "actual": "90.09",
+    "expected": "90.09"
+  },
+  {
+    "label": "case2employerPV",
+    "actual": "104.63",
+    "expected": "104.63"
+  },
+  {
+    "label": "case3KV",
+    "actual": "7839/100",
+    "expected": "7839/100"
+  },
+  {
+    "label": "case3RV",
+    "actual": "1809/20",
+    "expected": "1809/20"
+  },
+  {
+    "label": "case3tax",
+    "actual": "603/50",
+    "expected": "603/50"
+  },
+  {
+    "label": "case3ownRV",
+    "actual": "21.71",
+    "expected": "21.71"
+  },
+  {
+    "label": "Akt8months",
+    "actual": "16000",
+    "expected": "16000"
+  },
+  {
+    "label": "Aktmonthlytaxable",
+    "actual": "500",
+    "expected": "500"
+  },
+  {
+    "label": "Aktbonusfree",
+    "actual": "500",
+    "expected": "500"
+  },
+  {
+    "label": "Aktbonustax",
+    "actual": "300",
+    "expected": "300"
+  },
+  {
+    "label": "quarterdueSaturday",
+    "actual": "5",
+    "expected": "5"
+  },
+  {
+    "label": "quarterdueMonday",
+    "actual": "0",
+    "expected": "0"
+  },
+  {
+    "label": "taxlate",
+    "actual": "25/2",
+    "expected": "25/2"
+  },
+  {
+    "label": "svlate",
+    "actual": "69/2",
+    "expected": "69/2"
+  },
+  {
+    "label": "cert2027Sunday",
+    "actual": "6",
+    "expected": "6"
+  },
+  {
+    "label": "cert2026Saturday",
+    "actual": "5",
+    "expected": "5"
+  },
+  {
+    "label": "midiF",
+    "actual": "0.6619",
+    "expected": "0.6619"
+  },
+  {
+    "label": "midiexact2000",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "miniexact603",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "quarterexact5000",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "annualexact1080",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "U1exact30",
+    "actual": "True",
+    "expected": "True"
+  }
+]

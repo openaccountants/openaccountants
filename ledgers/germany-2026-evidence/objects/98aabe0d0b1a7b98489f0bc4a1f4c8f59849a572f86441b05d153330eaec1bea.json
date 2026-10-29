@@ -1,0 +1,11 @@
+{
+  "id": "Ud5820331e52b7dec",
+  "url": "https://www.gesetze-im-internet.de/ao_1977/__93c.html",
+  "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-93c-20261024.html",
+  "raw_sha256": "a17b6c46401f533886d2f0a58c85fddf58b83038402bc512d3e5d95337ef1fe9",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud5820331e52b7dec.reader.txt",
+  "reader_sha256": "d1ea24c7e9676c087859b92a13c21f5de81948cf6eefe1026a6fbed581dedc16",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "prior cached body",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

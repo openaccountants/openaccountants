@@ -1,0 +1,11 @@
+{
+  "id": "U475fd171437e5353",
+  "url": "https://www.gesetze-im-internet.de/ustg_1980/__19a.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U475fd171437e5353.body",
+  "raw_sha256": "3f98a56af2b32292e688304e949792f43fef8cf812084c5cc3138bcfa4653c94",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U475fd171437e5353.reader.txt",
+  "reader_sha256": "1113ccf924ace22e74af7aa453cf9ac2d543a4bcec0f050b6efb6c28dbb4ea0b",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

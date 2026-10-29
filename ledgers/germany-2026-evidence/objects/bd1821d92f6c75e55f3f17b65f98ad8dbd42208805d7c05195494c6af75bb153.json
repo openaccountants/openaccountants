@@ -1,0 +1,883 @@
+{
+  "actual_old_records_read": 108,
+  "actual_current_selected_native_reads": [
+    [
+      19,
+      105
+    ],
+    [
+      147,
+      166
+    ]
+  ],
+  "source_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/old-topics.json",
+  "source_sha256": "e617d97987141c320dc33a367097dc9fb99e287dac17725d69bd2f6800dfccd5",
+  "changes": [
+    {
+      "row": 1,
+      "old_LF": 19,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "cd9d5917ba70580e55de1e35412cd871e63106a7a6aad2d2a5a574b3cb34bdca",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF17/21/25–28, actual country/tax/scope heading"
+    },
+    {
+      "row": 2,
+      "old_LF": 21,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "ab7da7998c52c98ce2fa675c299682c90b29407814e5f35158ff3ab471371945",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF21/25–28/34–50/56–88, actual notice/scope/dates/base/change/surcharges/cost components"
+    },
+    {
+      "row": 3,
+      "old_LF": 23,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "9fb759fe79e84c65fd925029777690005a1cde14b7f01a65da79a07efc321ef4",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF30–50, current quick-reference figures"
+    },
+    {
+      "row": 4,
+      "old_LF": 25,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "3832f98b5038f09aaf3c3a94c3ce4d31c3f1d2e46e45cecf46652f6f47ec0ba8",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF30–50, current quick-reference figures"
+    },
+    {
+      "row": 5,
+      "old_LF": 27,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "1824849c9b30da5cac9f463382b2c0bdc0b6c6f9f15fc8e34fb2cd53cc6de0b5",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF32–50, current figure-table structure"
+    },
+    {
+      "row": 6,
+      "old_LF": 28,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "831f11e7d7026bc2402e464ae6714a93218f622321805bfb5339d48bd550dfde",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF32–50, table structure"
+    },
+    {
+      "row": 7,
+      "old_LF": 29,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "4552beb47cc6d0430153ee0e568b6e238df112fd87b0f454da713ec363bb936c",
+      "before": "Scope and notice authority; current LF21",
+      "after": "Metadata jurisdiction LF5; country scope LF17/25"
+    },
+    {
+      "row": 8,
+      "old_LF": 30,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "4ce04289feb324013a9cf9c16eba2cbaa065c9a05c15868398ddb49e4fc0e50c",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF17/21/25, income-tax prepayments"
+    },
+    {
+      "row": 9,
+      "old_LF": 31,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "e94e4e01baaafee47bc6333391eafed939dc4f781edb6b7297fdec0dd4588c1e",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF21/26/34–40, own37authority/figures"
+    },
+    {
+      "row": 10,
+      "old_LF": 32,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "7b99ed4fb30303a8666997bc44eac74cc4ef9a75dcca2729a9870ec2efb0463b",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF64/68/74–77/83–88 and Sources166 onward, each named supporting rule"
+    },
+    {
+      "row": 11,
+      "old_LF": 33,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "5d605c771c5f3bc027ba529dc37e1e3b4fe2e257c55dfeb5ef7f67080489260e",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF21/26, Finanzamt notice authority"
+    },
+    {
+      "row": 12,
+      "old_LF": 34,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "1db4c94b0f6ee7fb5d31724cb6565a25212ef6408e1abe644fcb19e8ef1c14c6",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF77, actual MeinELSTER adjustment route"
+    },
+    {
+      "row": 13,
+      "old_LF": 35,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "9740ccf137d9ca819f2db8c5683accbdfe359f9a3fdbb1ff8342d80cdcf9811b",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF94, EUR payment rule"
+    },
+    {
+      "row": 17,
+      "old_LF": 39,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "acc98184eebb9b13562b3f2718b3a67933ae62a9818b87fd110fdf96c60de3a8",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF35–39/58/64, distinct minimums/small-deduction/surcharge conditions"
+    },
+    {
+      "row": 19,
+      "old_LF": 41,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "b699656e28a6407685a33f251519e03e2397aed6865c929ec5a0a0925f6b8ab2",
+      "before": "Scope and notice authority; current LF21",
+      "after": "Historical exact contributor line stays in original archive; current trust metadata LF9, no invented credential"
+    },
+    {
+      "row": 22,
+      "old_LF": 45,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "a92104d97d80e5ac274dc46bf323be7cb2140c708adedec04ff729b701043b77",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF34/74, four actual due dates"
+    },
+    {
+      "row": 24,
+      "old_LF": 48,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "b8ec48555607bc6202126c5db642f11cf898151fb6f2aa19d2e28aea19d7e532",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF34/74, date-table presentation"
+    },
+    {
+      "row": 26,
+      "old_LF": 50,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "dae3223c77739fcb366483654991f359eacfb429f3377805597c6baeca8b9ab1",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF34/74, 10June2026 date"
+    },
+    {
+      "row": 27,
+      "old_LF": 51,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "3ab115a6bb000c13bd2ae58b36be08d857295894a38105795001f645b5b4bbbf",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF34/74, 10September2026 date"
+    },
+    {
+      "row": 28,
+      "old_LF": 52,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "4a774252ded8f28900293b53c4492be82677e9108949eaa8b3f53be48e2f4c41",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF34/74, 10December2026 date"
+    },
+    {
+      "row": 30,
+      "old_LF": 56,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "46bfdad640b74e5fc480b205a5adb268222ff2bc65d073ea0c639d255b92322e",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF26/77/159–164, actual notice/adjustment/input method"
+    },
+    {
+      "row": 31,
+      "old_LF": 58,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "22d9feb3e761acd6b2a9eb965fb3b0e1979805b1e611155fcbf00f4a1eed011c",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF26/77/159–164, actual notice/adjustment/input method"
+    },
+    {
+      "row": 32,
+      "old_LF": 59,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "831f11e7d7026bc2402e464ae6714a93218f622321805bfb5339d48bd550dfde",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF26/77/159–164, actual notice/adjustment/input method"
+    },
+    {
+      "row": 34,
+      "old_LF": 61,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "d849bcb8b394c3c87f61a18a7b52d6b6241579a46ccd081dac917686b635be85",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF26/35–36/50/79, new-business expected-profit/notice/bothminimums; LF21 intro only"
+    },
+    {
+      "row": 35,
+      "old_LF": 62,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "1c56a2532df0ab60ca3db26a7bc694956386da70e4a86f12c3a320dd27ad4db7",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF26/77, current notice until replacement after actual reduction application"
+    },
+    {
+      "row": 36,
+      "old_LF": 63,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "9b14ee32ab2f2f58ae1fb2ea5ae9653183ca8ab3c7076cb898328db4a0d4e614",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF41–44/64, actual Soli base/mitigation selectors"
+    },
+    {
+      "row": 37,
+      "old_LF": 64,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "76bf7733c843eb48bf50d64bc5b7d67d36c5c4d21a7e6b8513a2cb0dc807f00e",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF45/64/161, actual church membership/state-rate route"
+    },
+    {
+      "row": 44,
+      "old_LF": 78,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "8d74058ca12a5e7ca06020d4daf0217c8a48009d7ea6865b8b8ad8604790106f",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF28/90–94, actual separate cross-border/companion scopes"
+    },
+    {
+      "row": 45,
+      "old_LF": 80,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "e11c93f40adfcb57a645cfcd1f2c5b391be685d4241c1dfbca08e22d26d647e5",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF93, actual foreign-credit/moving adjustment route"
+    },
+    {
+      "row": 46,
+      "old_LF": 81,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "856b7747042d82c8a7fa9e23341507267ee4dc6279bf94e1cef3a5291ea9ca56",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF25/28, partner-level scope and partners companion"
+    },
+    {
+      "row": 47,
+      "old_LF": 82,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "d68cd7267e6a3cb630314c500b00cb496f661a3f22ced4a015b3c85575a58e21",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF28, trade-tax companion scope"
+    },
+    {
+      "row": 92,
+      "old_LF": 147,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "7decb6e6db3ae10fbca24dfa87fecb35e68cd2db9f2381f2a87d8f73420c8c1b",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF96–155, two current executablecases plus actual five restoredqualitativecases; oldscenario origins map individually below"
+    },
+    {
+      "row": 93,
+      "old_LF": 149,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "d250db3f4d87a436a26f0df0756bac773970e3af1da3e97b3ad0c3525aa382ae",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF96–155, two current executablecases plus actual five restoredqualitativecases; oldscenario origins map individually below"
+    },
+    {
+      "row": 94,
+      "old_LF": 151,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "935b5e82bd65489fe96f458d7b9e668d2407e44859d57bd22f357d852c32b8dc",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/34/66/74/151, actual restored notice-based qualitative case; original exact scenario remains archived"
+    },
+    {
+      "row": 95,
+      "old_LF": 153,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "12b53459d376ac3e0a01c884cc5a1f911392246946decf0e3e5189c9280c4b6c",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/34/66/74/151, actual restored notice-based qualitative case; original exact scenario remains archived"
+    },
+    {
+      "row": 96,
+      "old_LF": 155,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "00dad201f8353fb766318d8331bb04ab4c82073eea9bbd4cc909e0e5ceef9038",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/34/66/74/151, actual restored notice-based qualitative case; original exact scenario remains archived"
+    },
+    {
+      "row": 97,
+      "old_LF": 156,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "b8ec48555607bc6202126c5db642f11cf898151fb6f2aa19d2e28aea19d7e532",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/34/66/74/151, actual restored notice-based qualitative case; original exact scenario remains archived"
+    },
+    {
+      "row": 98,
+      "old_LF": 157,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "94080232616c52ea759322f177d49d76d2e6a7c1106bb6e20bc5325ed5b0842b",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/34/66/74/151, actual restored notice-based qualitative case; original exact scenario remains archived"
+    },
+    {
+      "row": 99,
+      "old_LF": 158,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "3be6161e144fe594558e3e231c150eba6ccad82fad8a380fc3232a001c0e894d",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/34/66/74/151, actual restored notice-based qualitative case; original exact scenario remains archived"
+    },
+    {
+      "row": 100,
+      "old_LF": 159,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "90dcbc764ed8422fccb3878743045d9893717895e0ca13d8c5a345f8825a3b12",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/34/66/74/151, actual restored notice-based qualitative case; original exact scenario remains archived"
+    },
+    {
+      "row": 101,
+      "old_LF": 160,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "9abdffab9c1b7ea50b54ce79803d2e64d04b3507de78cf719200b961ef121e7f",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/34/66/74/151, actual restored notice-based qualitative case; original exact scenario remains archived"
+    },
+    {
+      "row": 102,
+      "old_LF": 162,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "f3a15df44cca579d6db2ffb787358017064fc15b231df651914277335211ba7d",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/34/66/74/151, actual restored notice-based qualitative case; original exact scenario remains archived"
+    },
+    {
+      "row": 103,
+      "old_LF": 164,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "24acd1b4ab657de8ef1423d121ef7b8f3cac70db0288a70a847b96fd14163876",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/34/66/74/151, actual restored notice-based qualitative case; original exact scenario remains archived"
+    },
+    {
+      "row": 104,
+      "old_LF": 166,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "f9107b8d9c6b60f0d1cafc68d17c379d4ca758caffc8399069adc1cc2185c7b6",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF35–36/152, actual restored below-minimum qualitative case"
+    },
+    {
+      "row": 105,
+      "old_LF": 168,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "4b9781272aa70c4eacca17cf85d94133e5933e17351c163344c224a70ecd4351",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF35–36/152, actual restored below-minimum qualitative case"
+    },
+    {
+      "row": 106,
+      "old_LF": 170,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "e48e5fb4357a97360a7b5d0cd3f3552bbb737025ac1471149357522469d51474",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF35–36/152, actual restored below-minimum qualitative case"
+    },
+    {
+      "row": 107,
+      "old_LF": 172,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "361aecccf8214b08a633c8dce9ca710ba879bbdd0029b79559b31af20a9b12a8",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF46–47/75/83/153, actual restored June10→July15twostartedmonth case"
+    },
+    {
+      "row": 108,
+      "old_LF": 174,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "7540317c16f21f844f57154b36e2eb01ee490ef79648bbbd7a5b597fe02a81c7",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF46–47/75/83/153, actual restored June10→July15twostartedmonth case"
+    },
+    {
+      "row": 109,
+      "old_LF": 176,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "852860a3016b8452302496944b8c5f7dc0cb8f55cf875d0bf7fac95c93c4dc60",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF46–47/75/83/153, actual restored June10→July15twostartedmonth case"
+    },
+    {
+      "row": 110,
+      "old_LF": 178,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "25550327e9ba1d97e6553333acb4aa521a3e147264232c078a6c548fc3dfb164",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF41–44/64/120/154, actual exemption and wholebase/mitigation methods, not just case header147"
+    },
+    {
+      "row": 111,
+      "old_LF": 180,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "924e4a899e59795e0e2b621c87aa708c99ae3edcba2eb8ec0ecc980fb7c6009c",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF41–44/64/120/154, actual exemption and wholebase/mitigation methods, not just case header147"
+    },
+    {
+      "row": 112,
+      "old_LF": 182,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "f07f9d2d60e4e623c8ea12aa4b605a75361776456a8e9bef3bb268e230063522",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF43–44/64/120, actual whole-base5.5% and11.9%mitigation formula; oldscenario archived/restoredexemption154 separate"
+    },
+    {
+      "row": 113,
+      "old_LF": 184,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "698b9a15e569b585d8cf58d2d9cc3495981fe3392733a7f5560d7ab0697bd97e",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF70/155 plus precise Sources bank-pattern reservation; actual restored notice-confirmed case, not universal unverified bank-pattern proof"
+    },
+    {
+      "row": 114,
+      "old_LF": 186,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "02a45cd26a5e550f728dc098d8b6ccc4965bb3e380676c8b6bc62b2d59ad0b1b",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF70/155 plus precise Sources bank-pattern reservation; actual restored notice-confirmed case, not universal unverified bank-pattern proof"
+    },
+    {
+      "row": 115,
+      "old_LF": 188,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "72657bcb3a3ba54d1c8827f29bdddff42812889e397ea15501211586387b451b",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF70/155 plus precise Sources bank-pattern reservation; actual restored notice-confirmed case, not universal unverified bank-pattern proof"
+    },
+    {
+      "row": 116,
+      "old_LF": 190,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "7e488340967ba465ec4eb068fdd05358201abea1d3c355827624f23b19cc754f",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF54–70, actual computation-rule components"
+    },
+    {
+      "row": 124,
+      "old_LF": 201,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "21d849994d9a53fa0bbd15288a642fa0f7f30e52d10372b6f3a7c1ca4fd60a66",
+      "before": "Minimums and below-threshold case; current LF35",
+      "after": "LF35–39/58/64/77, actual distinct minimum/deduction/surcharge/adjustment routes"
+    },
+    {
+      "row": 125,
+      "old_LF": 203,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "07358b139be00efc9be066e4eae3a44b893f6f4a766a102d4da4e762451f45fb",
+      "before": "Minimums and below-threshold case; current LF35",
+      "after": "LF35–39/58/64/77, actual distinct routes"
+    },
+    {
+      "row": 126,
+      "old_LF": 205,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "a955d1d3d586ae6cf00ee274bdcb2d6076b57ce3d3209db1daeca35f92a846e6",
+      "before": "Minimums and below-threshold case; current LF35",
+      "after": "LF35–39/58, current table"
+    },
+    {
+      "row": 127,
+      "old_LF": 206,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "b8ec48555607bc6202126c5db642f11cf898151fb6f2aa19d2e28aea19d7e532",
+      "before": "Minimums and below-threshold case; current LF35",
+      "after": "LF35–39/58, current table structure"
+    },
+    {
+      "row": 128,
+      "old_LF": 207,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "8a0abf7fc5ff6c71b2f0fcb72ea75e6e50d636edd35bfff662baba7820d96413",
+      "before": "Minimums and below-threshold case; current LF35",
+      "after": "LF35–39/58, current37source-bound figures"
+    },
+    {
+      "row": 129,
+      "old_LF": 208,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "347faadbe9ff164772245f12b24d887bc14bc4d005a75b0bde23ac1005b14230",
+      "before": "Minimums and below-threshold case; current LF35",
+      "after": "LF35/152, inclusive annual400 test"
+    },
+    {
+      "row": 130,
+      "old_LF": 209,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "89f717e4d436ff35cbb616bea665099cd1d06931c91e6abaafc58b70fd30e5e2",
+      "before": "Minimums and below-threshold case; current LF35",
+      "after": "LF36/152, inclusive per-date100test/bothminimums"
+    },
+    {
+      "row": 131,
+      "old_LF": 210,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "49a99d33d29e3084a3b9c19e09c24e27f0836c552af512ec6c99409380b401b7",
+      "before": "Minimums and below-threshold case; current LF35",
+      "after": "LF37/77, ordinary increase100perdate, separate from laterincrease"
+    },
+    {
+      "row": 132,
+      "old_LF": 211,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "aa619c990c2bfcade3d1c6362d174e3caaf3b7d587d14b8b19bb1d22c381608b",
+      "before": "Minimums and below-threshold case; current LF35",
+      "after": "LF38/76, laterincrease5000/lastinstalment/one-monthpayment; LF37ordinary increase distinct"
+    },
+    {
+      "row": 133,
+      "old_LF": 212,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "5ec868b81a19e34b6b2227e9079a36dfe1d6b6522a87be899496f979cf05129a",
+      "before": "Minimums and below-threshold case; current LF35",
+      "after": "LF39/58, small-deductions600scope, not annual400minimum"
+    },
+    {
+      "row": 134,
+      "old_LF": 214,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "29d7ed6428720041ccfe413870890410618b90163e88e0772862e2b696d354a9",
+      "before": "Minimums and below-threshold case; current LF35",
+      "after": "LF35–36/64/77; reductionroute77 has no newly invented numeric minimum; exact prior no-minimum wording remains historical/source37(5)MIN"
+    },
+    {
+      "row": 230,
+      "old_LF": 360,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "47a907e5eb22ada1fca6a7fdf58b8e227e7c4471536b3f80ba9af08a1f78a341",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "Historicaltest suite retained as exact input archive; actual substantive-answer routes follow each test, not all at147"
+    },
+    {
+      "row": 231,
+      "old_LF": 362,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "6a00612ab8bb8f3aeab60c768dd80ab2c588912fa478d9cb5c1154bc8967bccf",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/34/66/74/151; exact old test prompt archived, substantive notice method/restoredqualitativecase, not a new executabletest"
+    },
+    {
+      "row": 232,
+      "old_LF": 364,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "b0a779792a29a9443dde2171a57b980d4d35bbfc2045ceef584343b1cf8ccc6a",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/34/66/74/151; exact old test prompt archived, substantive notice method/restoredqualitativecase, not a new executabletest"
+    },
+    {
+      "row": 233,
+      "old_LF": 365,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "09d7dd22a0392b616f89fe7557754847548229de2055d016bc7f7d3bbab0c3aa",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/34/66/74/151; exact old test prompt archived, substantive notice method/restoredqualitativecase, not a new executabletest"
+    },
+    {
+      "row": 234,
+      "old_LF": 367,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "c46cfcb5ff8ec7151e1715bdce7ab3381c196abe41123715d9563be4cb9b9b52",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF35–36/152; exact oldtest archived, actualminimum method/restoredcase"
+    },
+    {
+      "row": 235,
+      "old_LF": 369,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "a1cc41047d7fe4ee1047243e93940dd736ceaa236e1a8fbe94f173a74366c2f1",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF35–36/152; exact oldtest archived, actualminimum method/restoredcase"
+    },
+    {
+      "row": 236,
+      "old_LF": 370,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "4fd964a6e11ed68fbacd7300bfad631b9a726b1e6184f8dcf8c4fcb29c9fba3d",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF35–36/152; exact oldtest archived, actualminimum method/restoredcase"
+    },
+    {
+      "row": 237,
+      "old_LF": 372,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "a63e512768d69fc179b39d746cd3ac5823df9b24fd38681ceea4734e8af3db28",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF46–47/75/83/153; exact oldtest archived, actual2startedmonthmethod/restoredcase"
+    },
+    {
+      "row": 238,
+      "old_LF": 374,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "55e50c32ab7892c9053fdd929eeb0da491cac107a0d71ea99dbdcc17fb6ef8c7",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF46–47/75/83/153; exact oldtest archived, actual2startedmonthmethod/restoredcase"
+    },
+    {
+      "row": 239,
+      "old_LF": 375,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "4f82d48b032463681ac7ed9506df3b9465f1745ba936feb0b59cb2e06e47fa16",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF46–47/75/83/153; exact oldtest archived, actual2startedmonthmethod/restoredcase"
+    },
+    {
+      "row": 240,
+      "old_LF": 377,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "209210f335da784efaca094520bdb53d097819f090c0de388f937a6eef659469",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF41–44/64/154; exact oldtest archived, actualSoli exemption/restoredcase"
+    },
+    {
+      "row": 241,
+      "old_LF": 379,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "ff6ba55e350f95bc47aafd6ba9e135daeb508425e793b396afd946581d9ad955",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF41–44/64/154; exact oldtest archived, actualSoli exemption/restoredcase"
+    },
+    {
+      "row": 242,
+      "old_LF": 380,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "517932aa666ed603386fe26f528a8f71087056e68861adbfb095ddbbd571977d",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF41–44/64/154; exact oldtest archived, actualSoli exemption/restoredcase"
+    },
+    {
+      "row": 243,
+      "old_LF": 382,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "0c87dd222abe01654fb98a4b73376b41abbaaaa0b501c76733e455134524cf12",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/35–36/50/79; oldtest archived, actualfirstnotice/registration/bothminimum method, not one of the five restoredcases"
+    },
+    {
+      "row": 244,
+      "old_LF": 384,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "8712d94f3d52baa3bf127a64da94723dabd5174d6565c1f7e84fc51d816b676a",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/35–36/50/79; oldtest archived, actualfirstnotice/registration/bothminimum method, not one of the five restoredcases"
+    },
+    {
+      "row": 245,
+      "old_LF": 385,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "6cf6141f66a7e2786f4596618ee69544d62f729927accfb3155f570ff9b92d7d",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF26/35–36/50/79; oldtest archived, actualfirstnotice/registration/bothminimum method, not one of the five restoredcases"
+    },
+    {
+      "row": 246,
+      "old_LF": 387,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "7f7808e77c1cfd28f35d62764a969eee2a9f5a34465e3f6997264ad66d2917b4",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF68; oldtest archived, actualrefundsubstantiveanswer, not a separatecase at147"
+    },
+    {
+      "row": 247,
+      "old_LF": 389,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "c7b17158f68afa1303d3d0ee97240ceaca1ad58326a4146d057bf24547276973",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF68; oldtest archived, actualrefundsubstantiveanswer, not a separatecase at147"
+    },
+    {
+      "row": 248,
+      "old_LF": 390,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "decc20928560ad659c29b7b6ae42cfed769eddaa5c850713688dfb33008b3212",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF68; oldtest archived, actualrefundsubstantiveanswer, not a separatecase at147"
+    },
+    {
+      "row": 249,
+      "old_LF": 392,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "886b98c83ee7b62375af5375af7bb1c1e15017993f7f7900fcbe760e0f3bf5bc",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF68/84–85; oldtest archived, actualbalance/timing/interestanswer, not a separatecase at147"
+    },
+    {
+      "row": 250,
+      "old_LF": 394,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "22949a299341628da63abe48724716e6f49ce6a72b36ba2797288cb1db17854f",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF68/84–85; oldtest archived, actualbalance/timing/interestanswer, not a separatecase at147"
+    },
+    {
+      "row": 251,
+      "old_LF": 395,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "244d7c40bcdbbc41752ad5f0e7eee0cbf0b6ca21f1830fe45ac6ef2d19827658",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF68/84–85; oldtest archived, actualbalance/timing/interestanswer, not a separatecase at147"
+    },
+    {
+      "row": 252,
+      "old_LF": 397,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "0251b2bfd8b878160bb8c761d19db0b611eaf69e7a10f013531fc3bf003b0a75",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF21/83–87, especially21/86; exactUSsafeharbourtest archived, substantiveanswer supplied, not a reproduced qualitative case"
+    },
+    {
+      "row": 253,
+      "old_LF": 399,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "b6448588023335a6aba5a65eae21892f06a32299799001a889f0880ce72fea19",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF21/83–87, especially21/86; exactUSsafeharbourtest archived, substantiveanswer supplied, not a reproduced qualitative case"
+    },
+    {
+      "row": 254,
+      "old_LF": 400,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "6501d8e11d8857752ed244a546b2593913787adc98f4a8dbb979dd964f6c00e1",
+      "before": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "after": "LF21/83–87, especially21/86; exactUSsafeharbourtest archived, substantiveanswer supplied, not a reproduced qualitative case"
+    },
+    {
+      "row": 257,
+      "old_LF": 405,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "61dfda931d9a3e819deb1dd750c1598b4aa4db6322a8e91caa557ba64b62be91",
+      "before": "Minimums and below-threshold case; current LF35",
+      "after": "LF35–36/152, bothminimums"
+    },
+    {
+      "row": 263,
+      "old_LF": 411,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "734987cee0876971380863016ff73d386a3de8b44a55dd0cf88296d449bd2d8b",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF28, separate trade-tax/VAT companions"
+    },
+    {
+      "row": 283,
+      "old_LF": 436,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "a691d33414c522ae428949269a10e0c50fe62c2e198e1f22115cdda95012801c",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF28/90–94 and the specific component referrals below"
+    },
+    {
+      "row": 284,
+      "old_LF": 438,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "ade3d6930da830499b84241d980085b76f8d680761861f625ced458bace56087",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF93, foreign-credit/treaty adjustment"
+    },
+    {
+      "row": 285,
+      "old_LF": 439,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "8a902b03ceff554baf0451b7460195e725df725915639706e1583641de230dcd",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF25/28, actual partner population and companion"
+    },
+    {
+      "row": 286,
+      "old_LF": 440,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "b055e57182cce58f499dc3177a0d34f312d84ddfb0a1ec2d03279865bb9a860a",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF28, separate trade-tax/VAT methods"
+    },
+    {
+      "row": 287,
+      "old_LF": 441,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "b0574ec1fc82ae673231e395ea7d97ae79d9989733a618e39bff1a8ec269994c",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF28/de-corporate-tax companion; originalK31reference remains in exact historical archive, not an individual-method computation"
+    },
+    {
+      "row": 288,
+      "old_LF": 442,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "85dbcb494f7651e996f564a072753a28c8328f0c921653357d03f43418800e53",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF56 and tariff companions in descriptionLF3; no tariff computation claimed here"
+    },
+    {
+      "row": 289,
+      "old_LF": 443,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "f364df8b3cd5f49dff20d7b1d95656b182746262d1d9875692798fa9ea976976",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF88, own222application/security/hardship/234interest route, not the unrelated non-resident route"
+    },
+    {
+      "row": 290,
+      "old_LF": 444,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "27603f4f7ab7ea41f45754bb3df2fb03ea9fdb80581a709593825e1c523d869c",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF77, simple adjustment; actual contestednotice beyond that remains referral in historical scope"
+    },
+    {
+      "row": 291,
+      "old_LF": 445,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "3019c344a3754479b28ee065f4a8bee10b06481f3713863b7ce7e972d76c6c18",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF72–79, prepaymentnoticeprocess; annualfiling methods in PITcompanions, not a reproduced37returnmethod"
+    },
+    {
+      "row": 292,
+      "old_LF": 446,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "8f5c2c726f7fc6e0ecf0f5fe6c6a593e87b1e020811628ddcd3a2c042bf40812",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF45/64/161 and Sources reservation, actualstatechurch-rate boundary"
+    },
+    {
+      "row": 293,
+      "old_LF": 447,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "ffbfc0afc454c304cc22e4d4828febfe0b7fc7eefe691e56587e57d0115b8e7b",
+      "before": "Cross-border/referral scope; current LF92",
+      "after": "LF40/49/78/84, actuallonger-farming-period selectors and companion scope"
+    },
+    {
+      "row": 321,
+      "old_LF": 478,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "694d80a0c515e397a6f7fffe8d899d7eff3724673440d179a00c2995d439b15a",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF19 and original exact historical disclaimer archive; no new legal computation"
+    },
+    {
+      "row": 322,
+      "old_LF": 480,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "18eb7f7005039a7411b36f631dccf5a19c7ed2ca1f4b78fa5c58901a0c127e0c",
+      "before": "Scope and notice authority; current LF21",
+      "after": "LF19 and original exact historical disclaimer archive; public source-cited/trust fields unchanged"
+    },
+    {
+      "row": 323,
+      "old_LF": 482,
+      "comparator": "aec314e7^ before PR873",
+      "old_topic_sha256": "4893b7487f411351aaed7bf4786b2cdce9bc53d04c61986cf35ee7b5a0d905cd",
+      "before": "Scope and notice authority; current LF21",
+      "after": "Original exact historical contributor line retained by archive; current trustmetadataLF9, no falsecredential"
+    }
+  ],
+  "no_original_identity_change": true,
+  "extra_historical_tests_not_mislabelled_five_cases": true
+}

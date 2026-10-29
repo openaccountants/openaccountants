@@ -1,0 +1,1690 @@
+[
+  {
+    "row": 1,
+    "id": "AO149-2",
+    "source": {
+      "id": "AO149-2",
+      "source": "U503bfe74d589da30",
+      "article": "AO149(2)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "LF_start": 8,
+      "LF_end": 8,
+      "exact_quote": "(2) Soweit die Steuergesetze nichts anderes bestimmen, sind Steuererkl\u00e4rungen, die sich auf ein Kalenderjahr oder auf einen gesetzlich bestimmten Zeitpunkt beziehen, sp\u00e4testens sieben Monate nach Ablauf des Kalenderjahres oder sieben Monate nach dem gesetzlich bestimmten Zeitpunkt abzugeben. Bei Steuerpflichtigen, die den Gewinn aus Land- und Forstwirtschaft nach einem vom Kalenderjahr abweichenden Wirtschaftsjahr ermitteln, endet die Frist nicht vor Ablauf des siebten Monats, der auf den Schluss des in dem Kalenderjahr begonnenen Wirtschaftsjahres folgt.",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+    "native_LF": [
+      8,
+      8
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 12,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 2,
+    "id": "AO149-3",
+    "source": {
+      "id": "AO149-3",
+      "source": "U503bfe74d589da30",
+      "article": "AO149(3)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "LF_start": 9,
+      "LF_end": 23,
+      "exact_quote": "(3) Sofern Personen, Gesellschaften, Verb\u00e4nde, Vereinigungen, Beh\u00f6rden oder K\u00f6rperschaften im Sinne der \u00a7\u00a7 3 und 4 bis 4d des Steuerberatungsgesetzes beauftragt sind mit der Erstellung von 1.\nEinkommensteuererkl\u00e4rungen nach \u00a7 25 Absatz 3 des Einkommensteuergesetzes mit Ausnahme der Einkommensteuererkl\u00e4rungen im Sinne des \u00a7 46 Absatz 2 Nummer 8 des Einkommensteuergesetzes,\n2.\nK\u00f6rperschaftsteuererkl\u00e4rungen nach \u00a7 31 Absatz 1 und 1a des K\u00f6rperschaftsteuergesetzes, Feststellungserkl\u00e4rungen im Sinne des \u00a7 14 Absatz 5, \u00a7 27 Absatz 2 Satz 4, \u00a7 28 Absatz 1 Satz 4 oder \u00a7 38 Absatz 1 Satz 2 des K\u00f6rperschaftsteuergesetzes oder Erkl\u00e4rungen zur Zerlegung der K\u00f6rperschaftsteuer nach \u00a7 6 Absatz 7 des Zerlegungsgesetzes,\n3.\nErkl\u00e4rungen zur Festsetzung des Gewerbesteuermessbetrags oder Zerlegungserkl\u00e4rungen nach \u00a7 14a des Gewerbesteuergesetzes,\n4.\nUmsatzsteuererkl\u00e4rungen f\u00fcr das Kalenderjahr nach \u00a7 18 Absatz 3 des Umsatzsteuergesetzes,\n5.\nErkl\u00e4rungen zur gesonderten sowie zur gesonderten und einheitlichen Feststellung einkommensteuerpflichtiger oder k\u00f6rperschaftsteuerpflichtiger Eink\u00fcnfte nach \u00a7 180 Absatz 1 Satz 1 Nummer 2 in Verbindung mit \u00a7 181 Absatz 1 und 2,\n6.\nErkl\u00e4rungen zur gesonderten Feststellung von Besteuerungsgrundlagen nach der Verordnung \u00fcber die gesonderte Feststellung von Besteuerungsgrundlagen nach \u00a7 180 Abs. 2 der Abgabenordnung oder\n7.\nErkl\u00e4rungen zur gesonderten Feststellung von Besteuerungsgrundlagen nach \u00a7 18 des Au\u00dfensteuergesetzes,\nso sind diese Erkl\u00e4rungen vorbehaltlich des Absatzes 4 sp\u00e4testens bis zum letzten Tag des Monats Februar und in den F\u00e4llen des Absatzes 2 Satz 2 bis zum 31. Juli des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres abzugeben.",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+    "native_LF": [
+      9,
+      23
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 13,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 3,
+    "id": "AO149-4",
+    "source": {
+      "id": "AO149-4",
+      "source": "U503bfe74d589da30",
+      "article": "AO149(4)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "LF_start": 24,
+      "LF_end": 41,
+      "exact_quote": "(4) Das Finanzamt kann anordnen, dass Erkl\u00e4rungen im Sinne des Absatzes 3 vor dem letzten Tag des Monats Februar des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres abzugeben sind, wenn 1.\nf\u00fcr den betroffenen Steuerpflichtigen a)\nf\u00fcr den vorangegangenen Besteuerungszeitraum Erkl\u00e4rungen nicht oder versp\u00e4tet abgegeben wurden,\nb)\nf\u00fcr den vorangegangenen Besteuerungszeitraum innerhalb von drei Monaten vor Abgabe der Steuererkl\u00e4rung oder innerhalb von drei Monaten vor dem Beginn des Zinslaufs im Sinne des \u00a7 233a Absatz 2 Satz 1 und 2 nachtr\u00e4gliche Vorauszahlungen festgesetzt wurden,\nc)\nVorauszahlungen f\u00fcr den Besteuerungszeitraum au\u00dferhalb einer Veranlagung herabgesetzt wurden,\nd)\ndie Veranlagung f\u00fcr den vorangegangenen Veranlagungszeitraum zu einer Abschlusszahlung von mindestens 25 Prozent der festgesetzten Steuer oder mehr als 10 000 Euro gef\u00fchrt hat,\ne)\ndie Steuerfestsetzung auf Grund einer Steuererkl\u00e4rung im Sinne des Absatzes 3 Nummer 1, 2 oder 4 voraussichtlich zu einer Abschlusszahlung von mehr als 10 000 Euro f\u00fchren wird oder\nf)\neine Au\u00dfenpr\u00fcfung vorgesehen ist,\n2.\nder betroffene Steuerpflichtige im Besteuerungszeitraum einen Betrieb er\u00f6ffnet oder eingestellt hat oder\n3.\nf\u00fcr Beteiligte an Gesellschaften oder Gemeinschaften Verluste festzustellen sind.\nF\u00fcr das Befolgen der Anordnung ist eine Frist von vier Monaten nach Bekanntgabe der Anordnung zu setzen. Ferner d\u00fcrfen die Finanz\u00e4mter nach dem Ergebnis einer automationsgest\u00fctzten Zufallsauswahl anordnen, dass Erkl\u00e4rungen im Sinne des Absatzes 3 vor dem letzten Tag des Monats Februar des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres mit einer Frist von vier Monaten nach Bekanntgabe der Anordnung abzugeben sind. In der Aufforderung nach Satz 3 ist darauf hinzuweisen, dass sie auf einer automationsgest\u00fctzten Zufallsauswahl beruht; eine weitere Begr\u00fcndung ist nicht erforderlich. In den F\u00e4llen des Absatzes 2 Satz 2 tritt an die Stelle des letzten Tages des Monats Februar der 31. Juli des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres. Eine Anordnung nach Satz 1 oder Satz 3 darf f\u00fcr die Abgabe der Erkl\u00e4rung keine k\u00fcrzere als die in Absatz 2 bestimmte Frist setzen. In den F\u00e4llen der S\u00e4tze 1 und 3 erstreckt sich eine Anordnung auf alle Erkl\u00e4rungen im Sinne des Absatzes 3, die vom betroffenen Steuerpflichtigen f\u00fcr den gleichen Besteuerungszeitraum oder Besteuerungszeitpunkt abzugeben sind.",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+    "native_LF": [
+      24,
+      41
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 14,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 4,
+    "id": "AO108",
+    "source": {
+      "id": "AO108",
+      "source": "U3859bf32d53897c9",
+      "article": "AO \u00a7108(3)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+      "LF_start": 9,
+      "LF_end": 9,
+      "exact_quote": "(3) F\u00e4llt das Ende einer Frist auf einen Sonntag, einen gesetzlichen Feiertag oder einen Sonnabend, so endet die Frist mit dem Ablauf des n\u00e4chstfolgenden Werktags.",
+      "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+      "reader_sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3859bf32d53897c9.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-108-20261024.html",
+    "native_LF": [
+      9,
+      9
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 15,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 5,
+    "id": "AO152-1",
+    "source": {
+      "id": "AO152-1",
+      "source": "Ua52afa3591a7820d",
+      "article": "AO152(1)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "LF_start": 7,
+      "LF_end": 7,
+      "exact_quote": "(1) Gegen denjenigen, der seiner Verpflichtung zur Abgabe einer Steuererkl\u00e4rung nicht oder nicht fristgem\u00e4\u00df nachkommt, kann ein Versp\u00e4tungszuschlag festgesetzt werden. Von der Festsetzung eines Versp\u00e4tungszuschlags ist abzusehen, wenn der Erkl\u00e4rungspflichtige glaubhaft macht, dass die Versp\u00e4tung entschuldbar ist; das Verschulden eines Vertreters oder eines Erf\u00fcllungsgehilfen ist dem Erkl\u00e4rungspflichtigen zuzurechnen.",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+    "native_LF": [
+      7,
+      7
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 16,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 6,
+    "id": "AO152-2",
+    "source": {
+      "id": "AO152-2",
+      "source": "Ua52afa3591a7820d",
+      "article": "AO152(2)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "LF_start": 8,
+      "LF_end": 14,
+      "exact_quote": "(2) Abweichend von Absatz 1 ist ein Versp\u00e4tungszuschlag festzusetzen, wenn eine Steuererkl\u00e4rung, die sich auf ein Kalenderjahr oder auf einen gesetzlich bestimmten Zeitpunkt bezieht, 1.\nnicht binnen 14 Monaten nach Ablauf des Kalenderjahrs oder nicht binnen 14 Monaten nach dem Besteuerungszeitpunkt,\n2.\nin den F\u00e4llen des \u00a7 149 Absatz 2 Satz 2 nicht binnen 19 Monaten nach Ablauf des Kalenderjahrs oder nicht binnen 19 Monaten nach dem Besteuerungszeitpunkt oder\n3.\nin den F\u00e4llen des \u00a7 149 Absatz 4 nicht bis zu dem in der Anordnung bestimmten Zeitpunkt\nabgegeben wurde.",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+    "native_LF": [
+      8,
+      14
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 17,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 7,
+    "id": "AO152-3",
+    "source": {
+      "id": "AO152-3",
+      "source": "Ua52afa3591a7820d",
+      "article": "AO152(3)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "LF_start": 15,
+      "LF_end": 22,
+      "exact_quote": "(3) Absatz 2 gilt nicht, 1.\nwenn die Finanzbeh\u00f6rde die Frist f\u00fcr die Abgabe der Steuererkl\u00e4rung nach \u00a7 109 verl\u00e4ngert hat oder diese Frist r\u00fcckwirkend verl\u00e4ngert,\n2.\nwenn die Steuer auf null Euro oder auf einen negativen Betrag festgesetzt wird,\n3.\nwenn die festgesetzte Steuer die Summe der festgesetzten Vorauszahlungen und der anzurechnenden Steuerabzugsbetr\u00e4ge nicht \u00fcbersteigt oder\n4.\nbei j\u00e4hrlich abzugebenden Lohnsteueranmeldungen, bei Anmeldungen von Umsatzsteuer-Sondervorauszahlungen nach \u00a7 48 Absatz 2 der Umsatzsteuer-Durchf\u00fchrungsverordnung, bei j\u00e4hrlich abzugebenden Versicherungsteuer- und Feuerschutzsteueranmeldungen sowie bei Erkl\u00e4rungen nach \u00a7 95 des Mindeststeuergesetzes.",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+    "native_LF": [
+      15,
+      22
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 18,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 8,
+    "id": "AO152-5",
+    "source": {
+      "id": "AO152-5",
+      "source": "Ua52afa3591a7820d",
+      "article": "AO152(5)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "LF_start": 27,
+      "LF_end": 27,
+      "exact_quote": "(5) Der Versp\u00e4tungszuschlag betr\u00e4gt vorbehaltlich des Satzes 2, der Abs\u00e4tze 8 und 13 Satz 2 f\u00fcr jeden angefangenen Monat der eingetretenen Versp\u00e4tung 0,25 Prozent der festgesetzten Steuer, mindestens jedoch 10 Euro f\u00fcr jeden angefangenen Monat der eingetretenen Versp\u00e4tung. F\u00fcr Steuererkl\u00e4rungen, die sich auf ein Kalenderjahr oder auf einen gesetzlich bestimmten Zeitpunkt beziehen, betr\u00e4gt der Versp\u00e4tungszuschlag f\u00fcr jeden angefangenen Monat der eingetretenen Versp\u00e4tung 0,25 Prozent der um die festgesetzten Vorauszahlungen und die anzurechnenden Steuerabzugsbetr\u00e4ge verminderten festgesetzten Steuer, mindestens jedoch 25 Euro f\u00fcr jeden angefangenen Monat der eingetretenen Versp\u00e4tung. Wurde ein Erkl\u00e4rungspflichtiger von der Finanzbeh\u00f6rde erstmals nach Ablauf der gesetzlichen Erkl\u00e4rungsfrist zur Abgabe einer Steuererkl\u00e4rung innerhalb einer dort bezeichneten Frist aufgefordert und konnte er bis zum Zugang dieser Aufforderung davon ausgehen, keine Steuererkl\u00e4rung abgeben zu m\u00fcssen, so ist der Versp\u00e4tungszuschlag nur f\u00fcr die Monate zu berechnen, die nach dem Ablauf der in der Aufforderung bezeichneten Erkl\u00e4rungsfrist begonnen haben.",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+    "native_LF": [
+      27,
+      27
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 19,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 9,
+    "id": "AO152-10",
+    "source": {
+      "id": "AO152-10",
+      "source": "Ua52afa3591a7820d",
+      "article": "AO152(10)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "LF_start": 42,
+      "LF_end": 42,
+      "exact_quote": "(10) Der Versp\u00e4tungszuschlag ist auf volle Euro abzurunden und darf h\u00f6chstens 25 000 Euro betragen.",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+    "native_LF": [
+      42,
+      42
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 20,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 10,
+    "id": "AO233a-2",
+    "source": {
+      "id": "AO233a-2",
+      "source": "Uda6051d17b67ca40",
+      "article": "AO233a(2)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "LF_start": 8,
+      "LF_end": 8,
+      "exact_quote": "(2) Der Zinslauf beginnt 15 Monate nach Ablauf des Kalenderjahrs, in dem die Steuer entstanden ist. Er beginnt f\u00fcr die Einkommen- und K\u00f6rperschaftsteuer 23 Monate nach diesem Zeitpunkt, wenn die Eink\u00fcnfte aus Land- und Forstwirtschaft bei der erstmaligen Steuerfestsetzung die anderen Eink\u00fcnfte \u00fcberwiegen; hierbei sind Kapitalertr\u00e4ge nach \u00a7 32d Absatz 1 und \u00a7 43 Absatz 5 des Einkommensteuergesetzes nicht zu ber\u00fccksichtigen. Er endet mit Ablauf des Tages, an dem die Steuerfestsetzung wirksam wird.",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader_sha256": "707aa5c6d8b589d1ab3ea4e5c30d68d5121ad2a42c56fb9368e7ca2f69d4bd7d",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uda6051d17b67ca40.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-233a-20261024.html",
+    "native_LF": [
+      8,
+      8
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 22,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 11,
+    "id": "AO238-1a",
+    "source": {
+      "id": "AO238-1a",
+      "source": "U15527adfa30c4074",
+      "article": "AO238(1a)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "LF_start": 8,
+      "LF_end": 8,
+      "exact_quote": "(1a) In den F\u00e4llen des \u00a7 233a betragen die Zinsen abweichend von Absatz 1 Satz 1 ab dem 1. Januar 2019 0,15 Prozent f\u00fcr jeden Monat, das hei\u00dft 1,8 Prozent f\u00fcr jedes Jahr.",
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "reader_sha256": "651db01a1f6c18060e1f1e63652986b0e4921fb1ce84da5d2a740ebea8ca0b48",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U15527adfa30c4074.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-238-20261024.html",
+    "native_LF": [
+      8,
+      8
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 25,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 12,
+    "id": "AO240-1",
+    "source": {
+      "id": "AO240-1",
+      "source": "Uee7f672101b3d3dd",
+      "article": "AO240(1)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "LF_start": 7,
+      "LF_end": 7,
+      "exact_quote": "(1) Wird eine Steuer nicht bis zum Ablauf des F\u00e4lligkeitstages entrichtet, so ist f\u00fcr jeden angefangenen Monat der S\u00e4umnis ein S\u00e4umniszuschlag von 1 Prozent des abgerundeten r\u00fcckst\u00e4ndigen Steuerbetrags zu entrichten; abzurunden ist auf den n\u00e4chsten durch 50 Euro teilbaren Betrag. Das Gleiche gilt f\u00fcr zur\u00fcckzuzahlende Steuerverg\u00fctungen und Haftungsschulden, soweit sich die Haftung auf Steuern und zur\u00fcckzuzahlende Steuerverg\u00fctungen erstreckt. Die S\u00e4umnis nach Satz 1 tritt nicht ein, bevor die Steuer festgesetzt oder angemeldet worden ist. Wird die Festsetzung einer Steuer oder Steuerverg\u00fctung aufgehoben, ge\u00e4ndert oder nach \u00a7 129 berichtigt, so bleiben die bis dahin verwirkten S\u00e4umniszuschl\u00e4ge unber\u00fchrt; das Gleiche gilt, wenn ein Haftungsbescheid zur\u00fcckgenommen, widerrufen oder nach \u00a7 129 berichtigt wird. Erlischt der Anspruch durch Aufrechnung, bleiben S\u00e4umniszuschl\u00e4ge unber\u00fchrt, die bis zur F\u00e4lligkeit der Schuld des Aufrechnenden entstanden sind.",
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "reader_sha256": "2cfa86cfaac164f5f98e3dc6a02b04d67165a70fc4439631021fe7a3ae0bf631",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee7f672101b3d3dd.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-240-20261024.html",
+    "native_LF": [
+      7,
+      7
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 27,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 13,
+    "id": "CASH",
+    "source": {
+      "id": "CASH",
+      "source": "U7059a8b10a1f492b",
+      "article": "EStG \u00a74(3)",
+      "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+      "LF_start": 13,
+      "LF_end": 13,
+      "exact_quote": "(3) 1Steuerpflichtige, die nicht auf Grund gesetzlicher Vorschriften verpflichtet sind, B\u00fccher zu f\u00fchren und regelm\u00e4\u00dfig Abschl\u00fcsse zu machen, und die auch keine B\u00fccher f\u00fchren und keine Abschl\u00fcsse machen, k\u00f6nnen als Gewinn den \u00dcberschuss der Betriebseinnahmen \u00fcber die Betriebsausgaben ansetzen. 2Hierbei scheiden Betriebseinnahmen und Betriebsausgaben aus, die im Namen und f\u00fcr Rechnung eines anderen vereinnahmt und verausgabt werden (durchlaufende Posten). 3Die Vorschriften \u00fcber die Bewertungsfreiheit f\u00fcr geringwertige Wirtschaftsg\u00fcter (\u00a7 6 Absatz 2), die Bildung eines Sammelpostens (\u00a7 6 Absatz 2a) und \u00fcber die Absetzung f\u00fcr Abnutzung oder Substanzverringerung sind zu befolgen. 4Die Anschaffungs- oder Herstellungskosten f\u00fcr nicht abnutzbare Wirtschaftsg\u00fcter des Anlageverm\u00f6gens, f\u00fcr Anteile an Kapitalgesellschaften, f\u00fcr Wertpapiere und vergleichbare nicht verbriefte Forderungen und Rechte, f\u00fcr Grund und Boden sowie Geb\u00e4ude des Umlaufverm\u00f6gens sind erst im Zeitpunkt des Zuflusses des Ver\u00e4u\u00dferungserl\u00f6ses oder bei Entnahme im Zeitpunkt der Entnahme als Betriebsausgaben zu ber\u00fccksichtigen. 5Die Wirtschaftsg\u00fcter des Anlageverm\u00f6gens und Wirtschaftsg\u00fcter des Umlaufverm\u00f6gens im Sinne des Satzes 4 sind unter Angabe des Tages der Anschaffung oder Herstellung und der Anschaffungs- oder Herstellungskosten oder des an deren Stelle getretenen Werts in besondere, laufend zu f\u00fchrende Verzeichnisse aufzunehmen.",
+      "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+      "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+    "native_LF": [
+      13,
+      13
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 35,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 14,
+    "id": "KU",
+    "source": {
+      "id": "KU",
+      "source": "Ueb043bd52ca19a0a",
+      "article": "UStG \u00a719(1)/(2)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__19.html",
+      "LF_start": 7,
+      "LF_end": 12,
+      "exact_quote": "(1) Ein von einem im Inland oder in den in \u00a7 1 Absatz 3 bezeichneten Gebieten ans\u00e4ssigen Unternehmer bewirkter Umsatz im Sinne des \u00a7 1 Absatz 1 Nummer 1 ist steuerfrei, wenn der Gesamtumsatz nach Absatz 2 im vorangegangenen Kalenderjahr 25 000 Euro nicht \u00fcberschritten hat und im laufenden Kalenderjahr 100 000 Euro nicht \u00fcberschreitet. In den F\u00e4llen des Satzes 1 finden die Vorschriften \u00fcber die Steuerbefreiung innergemeinschaftlicher Lieferungen (\u00a7 4 Nummer 1 Buchstabe b, \u00a7 6a), \u00fcber den Verzicht auf Steuerbefreiungen (\u00a7 9), \u00fcber die Angabe der Umsatzsteuer-Identifikationsnummern in einer Rechnung (\u00a7 14a Absatz 1 Satz 3, Absatz 3 Satz 2 und Absatz 7 Satz 2) und \u00fcber die Erkl\u00e4rungspflichten (\u00a7 18 Absatz 1 bis 4) keine Anwendung; \u00a7 149 Absatz 1 Satz 2 der Abgabenordnung und \u00a7 18 Absatz 4a dieses Gesetzes bleiben unber\u00fchrt.\n(2) Gesamtumsatz ist die nach vereinnahmten Entgelten berechnete Summe der vom Unternehmer ausgef\u00fchrten steuerbaren Ums\u00e4tze im Sinne des \u00a7 1 Absatz 1 Nummer 1 abz\u00fcglich folgender Ums\u00e4tze: 1.\nUms\u00e4tze, die nach \u00a7 4 Nummer 8 Buchstabe i, Nummer 9 Buchstabe b und Nummer 11 bis 29 steuerfrei sind;\n2.\nUms\u00e4tze, die nach \u00a7 4 Nummer 8 Buchstabe a bis h, Nummer 9 Buchstabe a und Nummer 10 steuerfrei sind, wenn sie Hilfsums\u00e4tze sind.\nDie Ums\u00e4tze mit Wirtschaftsg\u00fctern des Anlageverm\u00f6gens eines Unternehmers bleiben bei der Ermittlung des Gesamtumsatzes nach Satz 1 au\u00dfer Ansatz.",
+      "raw_sha256": "bcee10874715ec2bb3a0ed1867ef4f512bee0093e4eed85e57bae7addc777bfc",
+      "reader_sha256": "ae56f5ede8b771215419ba19792d931837bbcf69fc6116512c3c95ac4f8cf5f3",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ueb043bd52ca19a0a.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-19-20261024.html",
+    "native_LF": [
+      7,
+      12
+    ],
+    "actual_read_bridge": {
+      "guide": "de-einkommensteuer-freelancer",
+      "quote_row": 29,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 15,
+    "id": "CRIME",
+    "source": {
+      "id": "CRIME",
+      "source": "U40b1b56d09dec21a",
+      "article": "AO \u00a7370(1)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__370.html",
+      "LF_start": 7,
+      "LF_end": 13,
+      "exact_quote": "(1) Mit Freiheitsstrafe bis zu f\u00fcnf Jahren oder mit Geldstrafe wird bestraft, wer 1.\nden Finanzbeh\u00f6rden oder anderen Beh\u00f6rden \u00fcber steuerlich erhebliche Tatsachen unrichtige oder unvollst\u00e4ndige Angaben macht,\n2.\ndie Finanzbeh\u00f6rden pflichtwidrig \u00fcber steuerlich erhebliche Tatsachen in Unkenntnis l\u00e4sst oder\n3.\npflichtwidrig die Verwendung von Steuerzeichen oder Steuerstemplern unterl\u00e4sst\nund dadurch Steuern verk\u00fcrzt oder f\u00fcr sich oder einen anderen nicht gerechtfertigte Steuervorteile erlangt.",
+      "raw_sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+      "reader_sha256": "4059b3eeb14a28f929ae1583a4a7cb78525c6d828ff66a88b41ec68ad01724e6",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U40b1b56d09dec21a.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-370-20261027.html",
+    "native_LF": [
+      7,
+      13
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 81,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 16,
+    "id": "EURVATIN",
+    "source": {
+      "id": "EURVATIN",
+      "source": "U2bc145517400aa2b",
+      "article": "BMF2026 E\u00dcR instructions17/18, cashVAT and10days",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2",
+      "LF_start": 1063,
+      "LF_end": 1072,
+      "exact_quote": "Die vereinnahmten Umsatzsteuerbetr\u00e4ge auf die Betriebseinnahmen der Zeilen 15 und 19 geh\u00f6ren im Zeit-               Zeile 17\npunkt ihrer Vereinnahmung sowie die Umsatzsteuer auf unentgeltliche Wertabgaben der Zeilen 19 bis 21 im\nZeitpunkt ihrer Entstehung zu den Betriebseinnahmen und sind in dieser Zeile einzutragen.\n\nHier sind die vom Finanzamt erstatteten und ggf. verrechneten Umsatzsteuerbetr\u00e4ge einzutragen. Die entspre-         Zeile 18\nchenden erstatteten oder verg\u00fcteten steuerlichen Nebenleistungen (Versp\u00e4tungszuschlag, S\u00e4umniszuschlag\netc.) sind in Zeile 16 \u2013 bei Kleinunternehmern in den Zeilen 12 und 13 \u2013 zu erfassen. Eine innerhalb von\n10 Tagen nach Beginn des Kj. f\u00e4llig gewordene und zugeflossene Umsatzsteuer-Erstattung f\u00fcr einen Voranmel-\ndungszeitraum des Vorjahres ist als regelm\u00e4\u00dfig wiederkehrende Einnahme i. S. d. \u00a7 11 Abs. 1 Satz 2 EStG im\nVorjahr als Betriebseinnahme zu ber\u00fccksichtigen.",
+      "raw_sha256": "03d3033acc5c5a126729e58743128596ae39193759c55b207872da9432b83a8f",
+      "reader_sha256": "c0af7243fc4b4a3d52b51838076f3283a209d8c023999148c5bd739e9f06d5e3",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bc145517400aa2b.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-euer-2026-20261026.pdf",
+    "native_LF": [
+      1063,
+      1072
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 89,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 17,
+    "id": "EURVATOUT",
+    "source": {
+      "id": "EURVATOUT",
+      "source": "U2bc145517400aa2b",
+      "article": "BMF2026 E\u00dcR instructions59",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2",
+      "LF_start": 1319,
+      "LF_end": 1324,
+      "exact_quote": "Die aufgrund der Umsatzsteuervoranmeldungen oder aufgrund der Umsatzsteuerjahreserkl\u00e4rung an das Fi-             Zeile 59\nnanzamt gezahlte und ggf. verrechnete Umsatzsteuer ist hier einzutragen.\n\nEine innerhalb von 10 Tagen nach Beginn des Kj. f\u00e4llige und entrichtete Umsatzsteuer-Vorauszahlung f\u00fcr das\nVorjahr ist dabei als regelm\u00e4\u00dfig wiederkehrende Ausgabe i. S. d. \u00a7 11 Abs. 2 Satz 2 EStG im Vorjahr als Be-\ntriebsausgabe zu ber\u00fccksichtigen.",
+      "raw_sha256": "03d3033acc5c5a126729e58743128596ae39193759c55b207872da9432b83a8f",
+      "reader_sha256": "c0af7243fc4b4a3d52b51838076f3283a209d8c023999148c5bd739e9f06d5e3",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bc145517400aa2b.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-euer-2026-20261026.pdf",
+    "native_LF": [
+      1319,
+      1324
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 90,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 18,
+    "id": "ANNUAL",
+    "source": {
+      "id": "ANNUAL",
+      "source": "Uc0f722e6677b195a",
+      "article": "UStG \u00a718(3)/(4)/(4a)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__18.html",
+      "LF_start": 14,
+      "LF_end": 16,
+      "exact_quote": "(3) Der Unternehmer hat vorbehaltlich des \u00a7 18i Absatz 3, des \u00a7 18j Absatz 4, des \u00a7 18k Absatz 4 und des \u00a7 19 Absatz 1 Satz 2 f\u00fcr das Kalenderjahr oder f\u00fcr den k\u00fcrzeren Besteuerungszeitraum eine Steuererkl\u00e4rung nach amtlich vorgeschriebenem Datensatz \u00fcber die amtlich bestimmte Schnittstelle zu \u00fcbermitteln, in der er die zu entrichtende Steuer oder den \u00dcberschuss, der sich zu seinen Gunsten ergibt, nach \u00a7 16 Absatz 1 bis 4 und \u00a7 17 selbst zu berechnen hat (Steueranmeldung). In den F\u00e4llen des \u00a7 16 Absatz 3 und 4 ist die Steueranmeldung binnen einem Monat nach Ablauf des k\u00fcrzeren Besteuerungszeitraums zu \u00fcbermitteln. Auf Antrag kann das Finanzamt zur Vermeidung von unbilligen H\u00e4rten auf eine elektronische \u00dcbermittlung verzichten; in diesem Fall hat der Unternehmer eine Steueranmeldung nach amtlich vorgeschriebenem Vordruck abzugeben und eigenh\u00e4ndig zu unterschreiben.\n(4) Berechnet der Unternehmer die zu entrichtende Steuer oder den \u00dcberschuss in der Steueranmeldung f\u00fcr das Kalenderjahr abweichend von der Summe der Vorauszahlungen, so ist der Unterschiedsbetrag zugunsten des Finanzamts einen Monat nach dem Eingang der Steueranmeldung f\u00e4llig und bis dahin vom Unternehmer zu entrichten. Setzt das Finanzamt die zu entrichtende Steuer oder den \u00dcberschuss abweichend von der Steueranmeldung f\u00fcr den Voranmeldungszeitraum oder f\u00fcr das Kalenderjahr oder auf Grund unterbliebener Abgabe der Steueranmeldung fest, so ist der Unterschiedsbetrag zugunsten des Finanzamts einen Monat nach der Bekanntgabe des Steuerbescheids f\u00e4llig und bis dahin vom Unternehmer zu entrichten. Die F\u00e4lligkeit r\u00fcckst\u00e4ndiger Vorauszahlungen (Absatz 1) bleibt von den S\u00e4tzen 1 und 2 unber\u00fchrt.\n(4a) Voranmeldungen (Abs\u00e4tze 1 und 2) und eine Steuererkl\u00e4rung (Abs\u00e4tze 3 und 4) haben auch die Unternehmer und juristischen Personen abzugeben, die ausschlie\u00dflich Steuer f\u00fcr Ums\u00e4tze nach \u00a7 1 Abs. 1 Nr. 5, \u00a7 13b Absatz 5 oder \u00a7 25b Abs. 2 zu entrichten haben, sowie Fahrzeuglieferer (\u00a7 2a). Voranmeldungen sind nur f\u00fcr die Voranmeldungszeitr\u00e4ume abzugeben, in denen die Steuer f\u00fcr diese Ums\u00e4tze zu erkl\u00e4ren ist. Die Anwendung des Absatzes 2a ist ausgeschlossen.",
+      "raw_sha256": "17daf6ad5eedac838be45dc0c823ef631394a9346781545c7ddb5f35a34eb135",
+      "reader_sha256": "39ce08fa75e6d88e5177607b4c8c9b90d7ea3aa1446712e4fd98d454bf355a3e",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc0f722e6677b195a.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-18-20261024.html",
+    "native_LF": [
+      14,
+      16
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 19,
+    "id": "ADVANCE",
+    "source": {
+      "id": "ADVANCE",
+      "source": "Uc0f722e6677b195a",
+      "article": "UStG \u00a718(1)\u2013(2a), incl2026 startup override",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__18.html",
+      "LF_start": 7,
+      "LF_end": 13,
+      "exact_quote": "(1) Der Unternehmer hat vorbehaltlich des \u00a7 18i Absatz 3, des \u00a7 18j Absatz 4, des \u00a7 18k Absatz 4 und des \u00a7 19 Absatz 1 Satz 2 bis zum zehnten Tag nach Ablauf jedes Voranmeldungszeitraums eine Voranmeldung nach amtlich vorgeschriebenem Datensatz \u00fcber die amtlich bestimmte Schnittstelle zu \u00fcbermitteln, in der er die Steuer f\u00fcr den Voranmeldungszeitraum (Vorauszahlung) selbst zu berechnen hat. Auf Antrag kann das Finanzamt zur Vermeidung von unbilligen H\u00e4rten auf eine elektronische \u00dcbermittlung verzichten; in diesem Fall hat der Unternehmer eine Voranmeldung nach amtlich vorgeschriebenem Vordruck abzugeben. \u00a7 16 Abs. 1 und 2 und \u00a7 17 sind entsprechend anzuwenden. Die Vorauszahlung ist am zehnten Tag nach Ablauf des Voranmeldungszeitraums f\u00e4llig und bis dahin vom Unternehmer zu entrichten.\n(2) Voranmeldungszeitraum ist das Kalendervierteljahr. Betr\u00e4gt die Steuer f\u00fcr das vorangegangene Kalenderjahr mehr als 9 000 Euro, ist der Kalendermonat Voranmeldungszeitraum. Betr\u00e4gt die Steuer f\u00fcr das vorangegangene Kalenderjahr nicht mehr als 2 000 Euro, kann das Finanzamt den Unternehmer von der Verpflichtung zur Abgabe der Voranmeldungen und Entrichtung der Vorauszahlungen befreien. Nimmt der Unternehmer seine berufliche oder gewerbliche T\u00e4tigkeit auf, ist im laufenden und folgenden Kalenderjahr Voranmeldungszeitraum der Kalendermonat. Daneben ist im laufenden und folgenden Kalenderjahr in folgenden F\u00e4llen Voranmeldungszeitraum der Kalendermonat: 1.\nbei im Handelsregister eingetragenen, noch nicht gewerblich oder beruflich t\u00e4tig gewesenen juristischen Personen oder Personengesellschaften, die objektiv belegbar die Absicht haben, eine gewerbliche oder berufliche T\u00e4tigkeit selbst\u00e4ndig auszu\u00fcben (Vorratsgesellschaften), und zwar ab dem Zeitpunkt des Beginns der tats\u00e4chlichen Aus\u00fcbung dieser T\u00e4tigkeit, und\n2.\nbei der \u00dcbernahme von juristischen Personen oder Personengesellschaften, die bereits gewerblich oder beruflich t\u00e4tig gewesen sind und zum Zeitpunkt der \u00dcbernahme ruhen oder nur geringf\u00fcgig gewerblich oder beruflich t\u00e4tig sind (Firmenmantel), und zwar ab dem Zeitpunkt der \u00dcbernahme.\nF\u00fcr die Besteuerungszeitr\u00e4ume 2021 bis 2026 ist abweichend von Satz 4 in den F\u00e4llen, in denen der Unternehmer seine gewerbliche oder berufliche T\u00e4tigkeit nur in einem Teil des vorangegangenen Kalenderjahres ausge\u00fcbt hat, die tats\u00e4chliche Steuer in eine Jahressteuer umzurechnen und in den F\u00e4llen, in denen der Unternehmer seine gewerbliche oder berufliche T\u00e4tigkeit im laufenden Kalenderjahr aufnimmt, die voraussichtliche Steuer des laufenden Kalenderjahres ma\u00dfgebend.\n(2a) Der Unternehmer kann an Stelle des Kalendervierteljahres den Kalendermonat als Voranmeldungszeitraum w\u00e4hlen, wenn sich f\u00fcr das vorangegangene Kalenderjahr ein \u00dcberschuss zu seinen Gunsten von mehr als 9 000 Euro ergibt. In diesem Fall hat der Unternehmer bis zum 10. Februar des laufenden Kalenderjahres eine Voranmeldung f\u00fcr den ersten Kalendermonat abzugeben. Die Aus\u00fcbung des Wahlrechts bindet den Unternehmer f\u00fcr dieses Kalenderjahr. Absatz 2 Satz 6 gilt entsprechend.",
+      "raw_sha256": "17daf6ad5eedac838be45dc0c823ef631394a9346781545c7ddb5f35a34eb135",
+      "reader_sha256": "39ce08fa75e6d88e5177607b4c8c9b90d7ea3aa1446712e4fd98d454bf355a3e",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc0f722e6677b195a.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-18-20261024.html",
+    "native_LF": [
+      7,
+      13
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 20,
+    "id": "PERIOD",
+    "source": {
+      "id": "PERIOD",
+      "source": "Uc1b860a6bb8a10ee",
+      "article": "UStG \u00a716(1)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__16.html",
+      "LF_start": 7,
+      "LF_end": 7,
+      "exact_quote": "(1) Die Steuer ist, soweit nicht \u00a7 20 gilt, nach vereinbarten Entgelten zu berechnen. Besteuerungszeitraum ist das Kalenderjahr. Bei der Berechnung der Steuer ist von der Summe der Ums\u00e4tze nach \u00a7 1 Abs. 1 Nr. 1 und 5 auszugehen, soweit f\u00fcr sie die Steuer in dem Besteuerungszeitraum entstanden und die Steuerschuldnerschaft gegeben ist. Der Steuer sind die nach \u00a7 6a Abs. 4 Satz 2, nach \u00a7 14c sowie nach \u00a7 17 Abs. 1 Satz 6 geschuldeten Steuerbetr\u00e4ge hinzuzurechnen.",
+      "raw_sha256": "b77aa0ec700d9733baff3a3e26ae1ff9da89f40ad2113a630a07c0aeea44a990",
+      "reader_sha256": "ddcef24a266e8741fa4428e93b6dc94fea9bd521a771644652adea3af98bd5dc",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc1b860a6bb8a10ee.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-16-20261024.html",
+    "native_LF": [
+      7,
+      7
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 21,
+    "id": "COMPUTEVAT",
+    "source": {
+      "id": "COMPUTEVAT",
+      "source": "Uc1b860a6bb8a10ee",
+      "article": "UStG \u00a716(2)/(3)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__16.html",
+      "LF_start": 13,
+      "LF_end": 14,
+      "exact_quote": "(2) Von der nach Absatz 1 berechneten Steuer sind vorbehaltlich des \u00a7 18 Absatz 9 Satz 3 die in den Besteuerungszeitraum fallenden, nach \u00a7 15 abziehbaren Vorsteuerbetr\u00e4ge abzusetzen. \u00a7 15a ist zu ber\u00fccksichtigen.\n(3) Hat der Unternehmer seine gewerbliche oder berufliche T\u00e4tigkeit nur in einem Teil des Kalenderjahres ausge\u00fcbt, so tritt dieser Teil an die Stelle des Kalenderjahres.",
+      "raw_sha256": "b77aa0ec700d9733baff3a3e26ae1ff9da89f40ad2113a630a07c0aeea44a990",
+      "reader_sha256": "ddcef24a266e8741fa4428e93b6dc94fea9bd521a771644652adea3af98bd5dc",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc1b860a6bb8a10ee.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-16-20261024.html",
+    "native_LF": [
+      13,
+      14
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 22,
+    "id": "ASSESS",
+    "source": {
+      "id": "ASSESS",
+      "source": "Ub85816c5a3c9229a",
+      "article": "AO \u00a7168",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__168.html",
+      "LF_start": 7,
+      "LF_end": 7,
+      "exact_quote": "Eine Steueranmeldung steht einer Steuerfestsetzung unter Vorbehalt der Nachpr\u00fcfung gleich. F\u00fchrt die Steueranmeldung zu einer Herabsetzung der bisher zu entrichtenden Steuer oder zu einer Steuerverg\u00fctung, so gilt Satz 1 erst, wenn die Finanzbeh\u00f6rde zustimmt. Die Zustimmung bedarf keiner Form.",
+      "raw_sha256": "003ad22e434dbc3b0549244fe9cef82fd51593e2b55c70ca432da7e8d146d64b",
+      "reader_sha256": "a45ee3ee37893f14c1b6e394f9dd11547f5b48c9648f080cbed457b565338242",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ub85816c5a3c9229a.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ub85816c5a3c9229a.body",
+    "native_LF": [
+      7,
+      7
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 23,
+    "id": "REQUEST",
+    "source": {
+      "id": "REQUEST",
+      "source": "U503bfe74d589da30",
+      "article": "AO \u00a7149(1)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "LF_start": 7,
+      "LF_end": 7,
+      "exact_quote": "(1) Die Steuergesetze bestimmen, wer zur Abgabe einer Steuererkl\u00e4rung verpflichtet ist. Zur Abgabe einer Steuererkl\u00e4rung ist auch verpflichtet, wer hierzu von der Finanzbeh\u00f6rde aufgefordert wird. Die Aufforderung kann durch \u00f6ffentliche Bekanntmachung erfolgen. Die Verpflichtung zur Abgabe einer Steuererkl\u00e4rung bleibt auch dann bestehen, wenn die Finanzbeh\u00f6rde die Besteuerungsgrundlagen nach \u00a7 162 gesch\u00e4tzt hat.",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+    "native_LF": [
+      7,
+      7
+    ],
+    "actual_read_bridge": {
+      "guide": "de-trade-tax",
+      "quote_row": 48,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 24,
+    "id": "WAIVE",
+    "source": {
+      "id": "WAIVE",
+      "source": "Ueb043bd52ca19a0a",
+      "article": "UStG \u00a719(3)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__19.html",
+      "LF_start": 13,
+      "LF_end": 13,
+      "exact_quote": "(3) Ein Unternehmer nach Absatz 1 Satz 1 kann bis zum letzten Tag des Monats Februar des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres gegen\u00fcber dem Finanzamt unwiderruflich erkl\u00e4ren, dass er auf die Anwendung des Absatzes 1 verzichtet. Der Verzicht wird von Beginn des Besteuerungszeitraums an, f\u00fcr den er gelten soll, wirksam. Der Verzicht bindet den Unternehmer mindestens f\u00fcr f\u00fcnf Kalenderjahre. Der Unternehmer kann den Verzicht mit Wirkung von Beginn eines darauffolgenden Kalenderjahres an widerrufen.",
+      "raw_sha256": "bcee10874715ec2bb3a0ed1867ef4f512bee0093e4eed85e57bae7addc777bfc",
+      "reader_sha256": "ae56f5ede8b771215419ba19792d931837bbcf69fc6116512c3c95ac4f8cf5f3",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ueb043bd52ca19a0a.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-19-20261024.html",
+    "native_LF": [
+      13,
+      13
+    ],
+    "actual_read_bridge": {
+      "guide": "de-einkommensteuer-freelancer",
+      "quote_row": 29,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 25,
+    "id": "KUEU",
+    "source": {
+      "id": "KUEU",
+      "source": "Ueb043bd52ca19a0a",
+      "article": "UStG \u00a719(4)/(5)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__19.html",
+      "LF_start": 14,
+      "LF_end": 18,
+      "exact_quote": "(4) F\u00fcr im \u00fcbrigen Gemeinschaftsgebiet ans\u00e4ssige Unternehmer gilt Absatz 1 entsprechend, wenn 1.\nder nach Artikel 288 der Richtlinie 2006/112/EG in der jeweils geltenden Fassung ermittelte Jahresumsatz im Gemeinschaftsgebiet im vorangegangenen Kalenderjahr 100 000 Euro nicht \u00fcberschritten hat und im laufenden Kalenderjahr nicht \u00fcberschreitet, und\n2.\ndem Unternehmer f\u00fcr die Steuerbefreiung nach Absatz 1 Satz 1 durch den Mitgliedstaat der Ans\u00e4ssigkeit die insoweit g\u00fcltige Kleinunternehmer-Identifikationsnummer erteilt wurde.\n(5) Ein im \u00fcbrigen Gemeinschaftsgebiet ans\u00e4ssiger Unternehmer kann gegen\u00fcber der zust\u00e4ndigen Finanzbeh\u00f6rde im Mitgliedstaat der Ans\u00e4ssigkeit erkl\u00e4ren, dass er auf die Anwendung des Absatzes 4 verzichtet. Der Verzicht wird von Beginn des auf den Eingang der Verzichtserkl\u00e4rung folgenden Kalendervierteljahres an wirksam. Geht die Verzichtserkl\u00e4rung im letzten Monat eines Kalendervierteljahres ein, wird der Verzicht von Beginn des zweiten Monats des folgenden Kalendervierteljahres an wirksam. Der Verzicht bindet den Unternehmer mindestens f\u00fcr f\u00fcnf Kalenderjahre. Der Unternehmer kann den Verzicht mit Wirkung von Beginn eines darauffolgenden Kalenderjahres an widerrufen.",
+      "raw_sha256": "bcee10874715ec2bb3a0ed1867ef4f512bee0093e4eed85e57bae7addc777bfc",
+      "reader_sha256": "ae56f5ede8b771215419ba19792d931837bbcf69fc6116512c3c95ac4f8cf5f3",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ueb043bd52ca19a0a.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-19-20261024.html",
+    "native_LF": [
+      14,
+      18
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 26,
+    "id": "KUEUREG",
+    "source": {
+      "id": "KUEUREG",
+      "source": "U475fd171437e5353",
+      "article": "UStG \u00a719a(1)\u2013(4)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__19a.html",
+      "LF_start": 7,
+      "LF_end": 18,
+      "exact_quote": "(1) Beabsichtigt ein im Inland oder in den in \u00a7 1 Absatz 3 bezeichneten Gebieten ans\u00e4ssiger Unternehmer, die Steuerbefreiung f\u00fcr Kleinunternehmer in einem anderen Mitgliedstaat in Anspruch zu nehmen, muss er an dem besonderen Meldeverfahren f\u00fcr Kleinunternehmer teilnehmen. Das Bundeszentralamt f\u00fcr Steuern erteilt f\u00fcr die Teilnahme an dem besonderen Meldeverfahren eine Kleinunternehmer-Identifikationsnummer. Die Teilnahme am besonderen Meldeverfahren setzt weiter voraus, dass 1.\nder Unternehmer nach amtlich vorgeschriebenem Datensatz \u00fcber die amtlich bestimmte Schnittstelle beim Bundeszentralamt f\u00fcr Steuern die Teilnahme am besonderen Meldeverfahren beantragt,\n2.\nder nach Artikel 288 der Richtlinie 2006/112/EG in der jeweils geltenden Fassung ermittelte Jahresumsatz des Unternehmers im Gemeinschaftsgebiet im vorangegangenen Kalenderjahr 100 000 Euro nicht \u00fcberschritten hat und im laufenden Kalenderjahr nicht \u00fcberschreitet,\n3.\nder Unternehmer die Voraussetzungen zur Inanspruchnahme der Steuerbefreiung f\u00fcr Kleinunternehmer des Mitgliedstaates, der die Steuerbefreiung gew\u00e4hrt, erf\u00fcllt und\n4.\nder Unternehmer in keinem anderen Mitgliedstaat zur Anwendung der Steuerbefreiung f\u00fcr Kleinunternehmer registriert ist.\n\u00c4nderungen der im Antrag nach Satz 3 Nummer 1 gemachten Angaben hat der Unternehmer unverz\u00fcglich dem Bundeszentralamt f\u00fcr Steuern nach dem in Satz 3 Nummer 1 amtlich vorgeschriebenen Datensatz mitzuteilen.\n(2) Beabsichtigt der Unternehmer, die Steuerbefreiung f\u00fcr Kleinunternehmer in einem anderen Mitgliedstaat nicht mehr in Anspruch zu nehmen, hat er dies nach amtlich vorgeschriebenem Datensatz \u00fcber die amtlich bestimmte Schnittstelle dem Bundeszentralamt f\u00fcr Steuern zu erkl\u00e4ren. \u00a7 19 Absatz 5 Satz 2 und 3 gilt entsprechend.\n(3) Der Unternehmer hat f\u00fcr jedes Kalendervierteljahr eine Umsatzmeldung abzugeben. Der Unternehmer hat die Umsatzmeldung nach Satz 1 innerhalb eines Monats nach Ablauf des Kalendervierteljahres dem Bundeszentralamt f\u00fcr Steuern nach amtlich vorgeschriebenem Datensatz \u00fcber die amtlich bestimmte Schnittstelle zu \u00fcbermitteln. Auf die Umsatzmeldung sind mit Ausnahme von \u00a7 152 der Abgabenordnung erg\u00e4nzend die f\u00fcr Steuererkl\u00e4rungen geltenden Vorschriften der Abgabenordnung entsprechend anzuwenden.\n(4) \u00dcberschreitet der nach Absatz 1 Satz 3 Nummer 2 ermittelte Jahresumsatz im Gemeinschaftsgebiet 100 000 Euro, hat der Unternehmer dies binnen 15 Werktagen nach amtlich vorgeschriebenem Datensatz \u00fcber die amtlich bestimmte Schnittstelle dem Bundeszentralamt f\u00fcr Steuern anzuzeigen. Mit \u00dcberschreiten endet die Teilnahme am besonderen Meldeverfahren.",
+      "raw_sha256": "3f98a56af2b32292e688304e949792f43fef8cf812084c5cc3138bcfa4653c94",
+      "reader_sha256": "1113ccf924ace22e74af7aa453cf9ac2d543a4bcec0f050b6efb6c28dbb4ea0b",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U475fd171437e5353.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U475fd171437e5353.body",
+    "native_LF": [
+      7,
+      18
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 27,
+    "id": "CASHVAT",
+    "source": {
+      "id": "CASHVAT",
+      "source": "Uaaaefc3c6d8e6109",
+      "article": "UStG \u00a720",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__20.html",
+      "LF_start": 7,
+      "LF_end": 15,
+      "exact_quote": "Das Finanzamt kann auf Antrag gestatten, dass ein Unternehmer, 1.\ndessen Gesamtumsatz (\u00a7 19 Absatz 2) im vorangegangenen Kalenderjahr nicht mehr als 800 000 Euro betragen hat, oder\n2.\nder von der Verpflichtung, B\u00fccher zu f\u00fchren und auf Grund j\u00e4hrlicher Bestandsaufnahmen regelm\u00e4\u00dfig Abschl\u00fcsse zu machen, nach \u00a7 148 der Abgabenordnung befreit ist, oder\n3.\nsoweit er Ums\u00e4tze aus einer T\u00e4tigkeit als Angeh\u00f6riger eines freien Berufs im Sinne des \u00a7 18 Abs. 1 Nr. 1 des Einkommensteuergesetzes ausf\u00fchrt, oder\n4.\nder eine juristische Person des \u00f6ffentlichen Rechts ist, soweit er nicht freiwillig B\u00fccher f\u00fchrt und auf Grund j\u00e4hrlicher Bestandsaufnahmen regelm\u00e4\u00dfig Abschl\u00fcsse macht oder hierzu gesetzlich verpflichtet ist,\ndie Steuer nicht nach den vereinbarten Entgelten (\u00a7 16 Abs. 1 Satz 1), sondern nach den vereinnahmten Entgelten berechnet. Erstreckt sich die Befreiung nach Satz 1 Nr. 2 nur auf einzelne Betriebe des Unternehmers und liegt die Voraussetzung nach Satz 1 Nr. 1 nicht vor, so ist die Erlaubnis zur Berechnung der Steuer nach den vereinnahmten Entgelten auf diese Betriebe zu beschr\u00e4nken. Wechselt der Unternehmer die Art der Steuerberechnung, so d\u00fcrfen Ums\u00e4tze nicht doppelt erfasst werden oder unversteuert bleiben.",
+      "raw_sha256": "b9bde56785a4fbd9d730441b9f0d155b0715a29e2e3191916db5b14cb58d7f2f",
+      "reader_sha256": "5fe7450c4aa74b69b8c61fbb322e9c03e367160b145e9edcf6c4e5df19e5d583",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaaaefc3c6d8e6109.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-20-20261024.html",
+    "native_LF": [
+      7,
+      15
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 28,
+    "id": "VATINPUT",
+    "source": {
+      "id": "VATINPUT",
+      "source": "U9587b12f47ebdc37",
+      "article": "UStG \u00a715(1) no1",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__15.html",
+      "LF_start": 7,
+      "LF_end": 8,
+      "exact_quote": "(1) Der Unternehmer kann die folgenden Vorsteuerbetr\u00e4ge abziehen: 1.\ndie gesetzlich geschuldete Steuer f\u00fcr Lieferungen und sonstige Leistungen, die von einem anderen Unternehmer f\u00fcr sein Unternehmen ausgef\u00fchrt worden sind. Die Aus\u00fcbung des Vorsteuerabzugs setzt voraus, dass der Unternehmer eine nach den \u00a7\u00a7 14, 14a ausgestellte Rechnung besitzt. Soweit der gesondert ausgewiesene Steuerbetrag auf eine Zahlung vor Ausf\u00fchrung dieser Ums\u00e4tze entf\u00e4llt, ist er bereits abziehbar, wenn die Rechnung vorliegt und die Zahlung geleistet worden ist;",
+      "raw_sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+      "reader_sha256": "e819ae2c4a6a65834fee9861adf1ec100b520126163e240fe08fe6a6d1e80d74",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9587b12f47ebdc37.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-15-20261027.html",
+    "native_LF": [
+      7,
+      8
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 29,
+    "id": "NOEXEMPTINPUT",
+    "source": {
+      "id": "NOEXEMPTINPUT",
+      "source": "U9587b12f47ebdc37",
+      "article": "UStG \u00a715(2) nos1\u20133",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__15.html",
+      "LF_start": 18,
+      "LF_end": 23,
+      "exact_quote": "(2) Vom Vorsteuerabzug ausgeschlossen ist die Steuer f\u00fcr die Lieferungen, die Einfuhr und den innergemeinschaftlichen Erwerb von Gegenst\u00e4nden sowie f\u00fcr die sonstigen Leistungen, die der Unternehmer zur Ausf\u00fchrung folgender Ums\u00e4tze verwendet: 1.\nsteuerfreie Ums\u00e4tze;\n2.\nUms\u00e4tze im Ausland, die steuerfrei w\u00e4ren, wenn sie im Inland ausgef\u00fchrt w\u00fcrden;\n3.\nUms\u00e4tze im \u00fcbrigen Gemeinschaftsgebiet, die auf Grund der Sonderregelung f\u00fcr Kleinunternehmer des jeweiligen Mitgliedstaates steuerfrei sind.",
+      "raw_sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+      "reader_sha256": "e819ae2c4a6a65834fee9861adf1ec100b520126163e240fe08fe6a6d1e80d74",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9587b12f47ebdc37.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-15-20261027.html",
+    "native_LF": [
+      18,
+      23
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 30,
+    "id": "PRORATA",
+    "source": {
+      "id": "PRORATA",
+      "source": "U9587b12f47ebdc37",
+      "article": "UStG \u00a715(4)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__15.html",
+      "LF_start": 36,
+      "LF_end": 36,
+      "exact_quote": "(4) Verwendet der Unternehmer einen f\u00fcr sein Unternehmen gelieferten, eingef\u00fchrten oder innergemeinschaftlich erworbenen Gegenstand oder eine von ihm in Anspruch genommene sonstige Leistung nur zum Teil zur Ausf\u00fchrung von Ums\u00e4tzen, die den Vorsteuerabzug ausschlie\u00dfen, so ist der Teil der jeweiligen Vorsteuerbetr\u00e4ge nicht abziehbar, der den zum Ausschluss vom Vorsteuerabzug f\u00fchrenden Ums\u00e4tzen wirtschaftlich zuzuordnen ist. Der Unternehmer kann die nicht abziehbaren Teilbetr\u00e4ge im Wege einer sachgerechten Sch\u00e4tzung ermitteln. Eine Ermittlung des nicht abziehbaren Teils der Vorsteuerbetr\u00e4ge nach dem Verh\u00e4ltnis der Ums\u00e4tze, die den Vorsteuerabzug ausschlie\u00dfen, zu den Gesamtums\u00e4tzen ist nur zul\u00e4ssig, wenn keine andere, pr\u00e4zisere wirtschaftliche Zuordnung m\u00f6glich ist. F\u00fcr Grundst\u00fccke ist dabei eine Aufteilung nach dem Verh\u00e4ltnis der Nutzfl\u00e4chen vorzunehmen, es sei denn, eine andere Methode f\u00fchrt zu einer demgegen\u00fcber pr\u00e4ziseren wirtschaftlichen Zuordnung. In den F\u00e4llen des Absatzes 1b gelten die S\u00e4tze 1 bis 4 entsprechend.",
+      "raw_sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+      "reader_sha256": "e819ae2c4a6a65834fee9861adf1ec100b520126163e240fe08fe6a6d1e80d74",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9587b12f47ebdc37.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-15-20261027.html",
+    "native_LF": [
+      36,
+      36
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 31,
+    "id": "VATCORRECT",
+    "source": {
+      "id": "VATCORRECT",
+      "source": "U1c827794c9be2ff8",
+      "article": "UStG \u00a715a(1)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__15a.html",
+      "LF_start": 7,
+      "LF_end": 7,
+      "exact_quote": "(1) \u00c4ndern sich bei einem Wirtschaftsgut, das nicht nur einmalig zur Ausf\u00fchrung von Ums\u00e4tzen verwendet wird, innerhalb von f\u00fcnf Jahren ab dem Zeitpunkt der erstmaligen Verwendung die f\u00fcr den urspr\u00fcnglichen Vorsteuerabzug ma\u00dfgebenden Verh\u00e4ltnisse, ist f\u00fcr jedes Kalenderjahr der \u00c4nderung ein Ausgleich durch eine Berichtigung des Abzugs der auf die Anschaffungs- oder Herstellungskosten entfallenden Vorsteuerbetr\u00e4ge vorzunehmen. Bei Grundst\u00fccken einschlie\u00dflich ihrer wesentlichen Bestandteile, bei Berechtigungen, f\u00fcr die die Vorschriften des b\u00fcrgerlichen Rechts \u00fcber Grundst\u00fccke gelten, und bei Geb\u00e4uden auf fremdem Grund und Boden tritt an die Stelle des Zeitraums von f\u00fcnf Jahren ein Zeitraum von zehn Jahren.",
+      "raw_sha256": "0936dfcdc994d709e6e0961ebbb483be7c29b303fa1d1694275396072868253f",
+      "reader_sha256": "fd80c34545ec2b27d925674fb7d0df07be0f8c6332f74b8ee2e5b72a1950985b",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1c827794c9be2ff8.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1c827794c9be2ff8.body",
+    "native_LF": [
+      7,
+      7
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 32,
+    "id": "VATFIFTH",
+    "source": {
+      "id": "VATFIFTH",
+      "source": "U1c827794c9be2ff8",
+      "article": "UStG \u00a715a(5)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__15a.html",
+      "LF_start": 11,
+      "LF_end": 11,
+      "exact_quote": "(5) Bei der Berichtigung nach Absatz 1 ist f\u00fcr jedes Kalenderjahr der \u00c4nderung in den F\u00e4llen des Satzes 1 von einem F\u00fcnftel und in den F\u00e4llen des Satzes 2 von einem Zehntel der auf das Wirtschaftsgut entfallenden Vorsteuerbetr\u00e4ge auszugehen. Eine k\u00fcrzere Verwendungsdauer ist entsprechend zu ber\u00fccksichtigen. Die Verwendungsdauer wird nicht dadurch verk\u00fcrzt, dass das Wirtschaftsgut in ein anderes einbezogen wird.",
+      "raw_sha256": "0936dfcdc994d709e6e0961ebbb483be7c29b303fa1d1694275396072868253f",
+      "reader_sha256": "fd80c34545ec2b27d925674fb7d0df07be0f8c6332f74b8ee2e5b72a1950985b",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1c827794c9be2ff8.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1c827794c9be2ff8.body",
+    "native_LF": [
+      11,
+      11
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 33,
+    "id": "VATSALE",
+    "source": {
+      "id": "VATSALE",
+      "source": "U1c827794c9be2ff8",
+      "article": "UStG \u00a715a(8)/(9)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__15a.html",
+      "LF_start": 15,
+      "LF_end": 16,
+      "exact_quote": "(8) Eine \u00c4nderung der Verh\u00e4ltnisse liegt auch vor, wenn das noch verwendungsf\u00e4hige Wirtschaftsgut, das nicht nur einmalig zur Ausf\u00fchrung eines Umsatzes verwendet wird, vor Ablauf des nach den Abs\u00e4tzen 1 und 5 ma\u00dfgeblichen Berichtigungszeitraums ver\u00e4u\u00dfert oder nach \u00a7 3 Abs. 1b geliefert wird und dieser Umsatz anders zu beurteilen ist als die f\u00fcr den urspr\u00fcnglichen Vorsteuerabzug ma\u00dfgebliche Verwendung. Dies gilt auch f\u00fcr Wirtschaftsg\u00fcter, f\u00fcr die der Vorsteuerabzug nach \u00a7 15 Absatz 1b teilweise ausgeschlossen war.\n(9) Die Berichtigung nach Absatz 8 ist so vorzunehmen, als w\u00e4re das Wirtschaftsgut in der Zeit von der Ver\u00e4u\u00dferung oder Lieferung im Sinne des \u00a7 3 Abs. 1b bis zum Ablauf des ma\u00dfgeblichen Berichtigungszeitraums unter entsprechend ge\u00e4nderten Verh\u00e4ltnissen weiterhin f\u00fcr das Unternehmen verwendet worden.",
+      "raw_sha256": "0936dfcdc994d709e6e0961ebbb483be7c29b303fa1d1694275396072868253f",
+      "reader_sha256": "fd80c34545ec2b27d925674fb7d0df07be0f8c6332f74b8ee2e5b72a1950985b",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1c827794c9be2ff8.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1c827794c9be2ff8.body",
+    "native_LF": [
+      15,
+      16
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 34,
+    "id": "SMALLCORRECT",
+    "source": {
+      "id": "SMALLCORRECT",
+      "source": "U78b29dc5315f9a80",
+      "article": "UStDV \u00a744(1)\u2013(3), disposal exception explicit",
+      "url": "https://www.gesetze-im-internet.de/ustdv_1980/__44.html",
+      "LF_start": 7,
+      "LF_end": 9,
+      "exact_quote": "(1) Eine Berichtigung des Vorsteuerabzugs nach \u00a7 15a des Gesetzes entf\u00e4llt, wenn die auf die Anschaffungs- oder Herstellungskosten eines Wirtschaftsguts entfallende Vorsteuer 1 000 Euro nicht \u00fcbersteigt.\n(2) Haben sich bei einem Wirtschaftsgut in einem Kalenderjahr die f\u00fcr den urspr\u00fcnglichen Vorsteuerabzug ma\u00dfgebenden Verh\u00e4ltnisse um weniger als zehn Prozentpunkte ge\u00e4ndert, entf\u00e4llt bei diesem Wirtschaftsgut f\u00fcr dieses Kalenderjahr die Berichtigung des Vorsteuerabzugs. Das gilt nicht, wenn der Betrag, um den der Vorsteuerabzug f\u00fcr dieses Kalenderjahr zu berichtigen ist, 1 000 Euro \u00fcbersteigt.\n(3) \u00dcbersteigt der Betrag, um den der Vorsteuerabzug bei einem Wirtschaftsgut f\u00fcr das Kalenderjahr zu berichtigen ist, nicht 6 000 Euro, so ist die Berichtigung des Vorsteuerabzugs nach \u00a7 15a des Gesetzes abweichend von \u00a7 18 Abs. 1 und 2 des Gesetzes erst im Rahmen der Steuerfestsetzung f\u00fcr den Besteuerungszeitraum durchzuf\u00fchren, in dem sich die f\u00fcr den urspr\u00fcnglichen Vorsteuerabzug ma\u00dfgebenden Verh\u00e4ltnisse ge\u00e4ndert haben. Wird das Wirtschaftsgut w\u00e4hrend des ma\u00dfgeblichen Berichtigungszeitraums ver\u00e4u\u00dfert oder nach \u00a7 3 Abs. 1b des Gesetzes geliefert, so ist die Berichtigung des Vorsteuerabzugs f\u00fcr das Kalenderjahr der Lieferung und die folgenden Kalenderjahre des Berichtigungszeitraums abweichend von Satz 1 bereits bei der Berechnung der Steuer f\u00fcr den Voranmeldungszeitraum (\u00a7 18 Abs. 1 und 2 des Gesetzes) durchzuf\u00fchren, in dem die Lieferung stattgefunden hat.",
+      "raw_sha256": "8bb6172c9ba291c2a0f1c649d987416baf5cb1f07bca1f030f61ddf6d1e959d3",
+      "reader_sha256": "b65339729213018968d351d7c118801fa897f301ac29d361aaa5ad58662e1f1c",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U78b29dc5315f9a80.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U78b29dc5315f9a80.body",
+    "native_LF": [
+      7,
+      9
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 35,
+    "id": "EXTEND",
+    "source": {
+      "id": "EXTEND",
+      "source": "U63f984ac340a6450",
+      "article": "UStDV \u00a746",
+      "url": "https://www.gesetze-im-internet.de/ustdv_1980/__46.html",
+      "LF_start": 7,
+      "LF_end": 7,
+      "exact_quote": "Das Finanzamt hat dem Unternehmer auf Antrag die Fristen f\u00fcr die \u00dcbermittlung der Voranmeldungen und f\u00fcr die Entrichtung der Vorauszahlungen (\u00a7 18 Abs. 1, 2 und 2a des Gesetzes) um einen Monat zu verl\u00e4ngern. Das Finanzamt hat den Antrag abzulehnen oder eine bereits gew\u00e4hrte Fristverl\u00e4ngerung zu widerrufen, wenn der Steueranspruch gef\u00e4hrdet erscheint.",
+      "raw_sha256": "03e4fb4bab13a7b281c7f79722b7bb94ff94201c733fe433989bc45cc4d85c97",
+      "reader_sha256": "893d9df1f24805a7bfe6a6286addf8e52d4e060652122c9fb79ae8940ce2a890",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U63f984ac340a6450.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustdv-46-20261024.html",
+    "native_LF": [
+      7,
+      7
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 36,
+    "id": "ELEVENTH",
+    "source": {
+      "id": "ELEVENTH",
+      "source": "Ua93b2c7db129c17c",
+      "article": "UStDV \u00a747(1)\u2013(3)",
+      "url": "https://www.gesetze-im-internet.de/ustdv_1980/__47.html",
+      "LF_start": 7,
+      "LF_end": 9,
+      "exact_quote": "(1) Die Fristverl\u00e4ngerung ist bei einem Unternehmer, der die Voranmeldungen monatlich zu \u00fcbermitteln hat, unter der Auflage zu gew\u00e4hren, dass dieser eine Sondervorauszahlung auf die Steuer eines jeden Kalenderjahres entrichtet. Die Sondervorauszahlung betr\u00e4gt ein Elftel der Summe der Vorauszahlungen f\u00fcr das vorangegangene Kalenderjahr.\n(2) Hat der Unternehmer seine gewerbliche oder berufliche T\u00e4tigkeit nur in einem Teil des vorangegangenen Kalenderjahres ausge\u00fcbt, so ist die Summe der Vorauszahlungen dieses Zeitraums in eine Jahressumme umzurechnen. Angefangene Kalendermonate sind hierbei als volle Kalendermonate zu behandeln.\n(3) Hat der Unternehmer seine gewerbliche oder berufliche T\u00e4tigkeit im laufenden Kalenderjahr begonnen, so ist die Sondervorauszahlung auf der Grundlage der zu erwartenden Vorauszahlungen dieses Kalenderjahres zu berechnen.",
+      "raw_sha256": "b78a891ebb4a5a546bf3e216ef179b36169fda42702f147dcdb0c107fcc70d9c",
+      "reader_sha256": "324f8f603e100e5b6208105d98c9513d50e5cdfd02b6f478e76e3fccd97a59be",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua93b2c7db129c17c.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustdv-47-20261024.html",
+    "native_LF": [
+      7,
+      9
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 37,
+    "id": "EXTENDDUE",
+    "source": {
+      "id": "EXTENDDUE",
+      "source": "U2a2cd1f0609be82e",
+      "article": "UStDV \u00a748(1)\u2013(4)",
+      "url": "https://www.gesetze-im-internet.de/ustdv_1980/__48.html",
+      "LF_start": 7,
+      "LF_end": 10,
+      "exact_quote": "(1) Der Unternehmer hat die Fristverl\u00e4ngerung f\u00fcr die \u00dcbermittlung der Voranmeldungen bis zu dem Zeitpunkt zu beantragen, an dem die Voranmeldung, f\u00fcr die die Fristverl\u00e4ngerung erstmals gelten soll, nach \u00a7 18 Abs. 1, 2 und 2a des Gesetzes zu \u00fcbermitteln ist. Der Antrag ist nach amtlich vorgeschriebenem Datensatz \u00fcber die amtlich bestimmte Schnittstelle zu \u00fcbermitteln. Auf Antrag kann das Finanzamt zur Vermeidung von unbilligen H\u00e4rten auf eine elektronische \u00dcbermittlung verzichten; in diesem Fall hat der Unternehmer einen Antrag nach amtlich vorgeschriebenem Vordruck zu stellen. In dem Antrag hat der Unternehmer, der die Voranmeldungen monatlich zu \u00fcbermitteln hat, die Sondervorauszahlung (\u00a7 47) selbst zu berechnen und anzumelden. Gleichzeitig hat er die angemeldete Sondervorauszahlung zu entrichten.\n(2) W\u00e4hrend der Geltungsdauer der Fristverl\u00e4ngerung hat der Unternehmer, der die Voranmeldungen monatlich zu \u00fcbermitteln hat, die Sondervorauszahlung f\u00fcr das jeweilige Kalenderjahr bis zum gesetzlichen Zeitpunkt der \u00dcbermittlung der ersten Voranmeldung zu berechnen, anzumelden und zu entrichten. Absatz 1 Satz 2 und 3 gilt entsprechend.\n(3) Das Finanzamt kann die Sondervorauszahlung festsetzen, wenn sie vom Unternehmer nicht oder nicht richtig berechnet wurde oder wenn die Anmeldung zu einem offensichtlich unzutreffenden Ergebnis f\u00fchrt.\n(4) Die festgesetzte Sondervorauszahlung ist bei der Festsetzung der Vorauszahlung f\u00fcr den letzten Voranmeldungszeitraum des Besteuerungszeitraums zu ber\u00fccksichtigen, f\u00fcr den die Fristverl\u00e4ngerung gilt. Ein danach verbleibender Erstattungsanspruch ist mit Anspr\u00fcchen aus dem Steuerschuldverh\u00e4ltnis aufzurechnen (\u00a7 226 der Abgabenordnung), im \u00dcbrigen zu erstatten.",
+      "raw_sha256": "ee6a36bf9321f1a212ead44f4be6529210a2a0a0ee325ab51d105140c045c89c",
+      "reader_sha256": "d14e8391a946765ebafecb14a4d08724323f6c94450d952083dbf7500145a442",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2a2cd1f0609be82e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustdv-48-20261024.html",
+    "native_LF": [
+      7,
+      10
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 38,
+    "id": "RATES",
+    "source": {
+      "id": "RATES",
+      "source": "U6614807cebd670d7",
+      "article": "UStG \u00a712(1)/(2) no1",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__12.html",
+      "LF_start": 7,
+      "LF_end": 9,
+      "exact_quote": "(1) Die Steuer betr\u00e4gt f\u00fcr jeden steuerpflichtigen Umsatz 19 Prozent der Bemessungsgrundlage (\u00a7\u00a7 10, 11, 25 Abs. 3 und \u00a7 25a Abs. 3 und 4).\n(2) Die Steuer erm\u00e4\u00dfigt sich auf sieben Prozent f\u00fcr die folgenden Ums\u00e4tze: 1.\ndie Lieferungen, die Einfuhr und der innergemeinschaftliche Erwerb der in Anlage 2 bezeichneten Gegenst\u00e4nde;",
+      "raw_sha256": "e8753b36595e445e776716ce43ec8d01633d9c548aec77d776105ae9484d09d0",
+      "reader_sha256": "f0f9a4d727981094aa001b41d96a3fa3fda7e9692ab888c4d004384b3a8ba259",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6614807cebd670d7.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-12-20261024.html",
+    "native_LF": [
+      7,
+      9
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 39,
+    "id": "INVOICETRANSITION",
+    "source": {
+      "id": "INVOICETRANSITION",
+      "source": "Ue97e872a75e26a99",
+      "article": "UStG \u00a727(38)/(39)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__27.html",
+      "LF_start": 59,
+      "LF_end": 66,
+      "exact_quote": "(38) Abweichend von \u00a7 14 Absatz 1 und 2 kann eine Rechnung 1.\nbis zum 31. Dezember 2026 f\u00fcr einen nach dem 31. Dezember 2024 und vor dem 1. Januar 2027 ausgef\u00fchrten Umsatz auf Papier oder vorbehaltlich der Zustimmung des Empf\u00e4ngers in einem elektronischen Format, das nicht \u00a7 14 Absatz 1 Satz 6 entspricht, \u00fcbermittelt werden;\n2.\nbis zum 31. Dezember 2027 f\u00fcr einen nach dem 31. Dezember 2026 und vor dem 1. Januar 2028 ausgef\u00fchrten Umsatz auf Papier oder vorbehaltlich der Zustimmung des Empf\u00e4ngers in einem elektronischen Format, das nicht \u00a7 14 Absatz 1 Satz 6 entspricht, \u00fcbermittelt werden, wenn der Gesamtumsatz (\u00a7 19 Absatz 2) des die Rechnung ausstellenden Unternehmers im vorangegangenen Kalenderjahr nicht mehr als 800 000 Euro betragen hat;\n3.\nbis zum 31. Dezember 2027 f\u00fcr einen nach dem 31. Dezember 2026 und vor dem 1. Januar 2028 ausgef\u00fchrten Umsatz vorbehaltlich der Zustimmung des Empf\u00e4ngers in einem elektronischen Format, das nicht \u00a7 14 Absatz 1 Satz 6 entspricht, ausgestellt werden, wenn diese mittels elektronischem Datenaustausch (EDI) nach Artikel 2 der Empfehlung 94/820/EG der Kommission vom 19. Oktober 1994 \u00fcber die rechtlichen Aspekte des elektronischen Datenaustausches (ABl. L 338 vom 28.12.1994, S. 98) \u00fcbermittelt wird.\nDie Abs\u00e4tze 15 und 18 bleiben unber\u00fchrt.\n(39) \u00a7 18 Absatz 3 Satz 1 und \u00a7 19 Absatz 1 Satz 4 sowie Absatz 2 in der Fassung des Artikels 23 des Gesetzes vom 27. M\u00e4rz 2024 (BGBl. 2024 I Nr. 108) sind erstmals auf Besteuerungszeitr\u00e4ume anzuwenden, die nach dem 31. Dezember 2023 enden.",
+      "raw_sha256": "58f8018d2dc7512cea52ca14847700b68fe07c8bfa3bc4e4aebc29c5f7451ee0",
+      "reader_sha256": "07dbb451d4da7ca6d39ae7f8154504e6fdaeaa8541ab72cdb24c89d6fed75c3d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue97e872a75e26a99.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-27-20261024.html",
+    "native_LF": [
+      59,
+      66
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 40,
+    "id": "EURO10",
+    "source": {
+      "id": "EURO10",
+      "source": "U389082e12d3ec9bc",
+      "article": "UStG \u00a73c(1)/(4)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__3c.html",
+      "LF_start": 7,
+      "LF_end": 10,
+      "exact_quote": "(1) Als Ort der Lieferung eines innergemeinschaftlichen Fernverkaufs gilt der Ort, an dem sich der Gegenstand bei Beendigung der Bef\u00f6rderung oder Versendung an den Erwerber befindet. Ein innergemeinschaftlicher Fernverkauf ist die Lieferung eines Gegenstands, der durch den Lieferer oder f\u00fcr dessen Rechnung aus dem Gebiet eines Mitgliedstaates in das Gebiet eines anderen Mitgliedstaates oder aus dem \u00fcbrigen Gemeinschaftsgebiet in die in \u00a7 1 Absatz 3 bezeichneten Gebiete an den Erwerber bef\u00f6rdert oder versandt wird, einschlie\u00dflich jener Lieferung, an deren Bef\u00f6rderung oder Versendung der Lieferer indirekt beteiligt ist. Erwerber im Sinne des Satzes 2 ist ein in \u00a7 3a Absatz 5 Satz 1 bezeichneter Empf\u00e4nger oder eine in \u00a7 1a Absatz 3 Nummer 1 genannte Person, die weder die ma\u00dfgebende Erwerbsschwelle \u00fcberschreitet noch auf ihre Anwendung verzichtet; im Fall der Beendigung der Bef\u00f6rderung oder Versendung im Gebiet eines anderen Mitgliedstaates ist die von diesem Mitgliedstaat festgesetzte Erwerbsschwelle ma\u00dfgebend.\n(2) Als Ort der Lieferung eines Fernverkaufs eines Gegenstands, der aus dem Drittlandsgebiet in einen anderen Mitgliedstaat als den, in dem die Bef\u00f6rderung oder Versendung des Gegenstands an den Erwerber endet, eingef\u00fchrt wird, gilt der Ort, an dem sich der Gegenstand bei Beendigung der Bef\u00f6rderung oder Versendung an den Erwerber befindet. \u00a7 3 Absatz 3a Satz 4 und 5 gilt entsprechend.\n(3) Der Ort der Lieferung beim Fernverkauf eines Gegenstands, der aus dem Drittlandsgebiet in den Mitgliedstaat, in dem die Bef\u00f6rderung oder Versendung der Gegenst\u00e4nde an den Erwerber endet, eingef\u00fchrt wird, gilt als in diesem Mitgliedstaat gelegen, sofern die Steuer auf diesen Gegenstand gem\u00e4\u00df dem besonderen Besteuerungsverfahren nach \u00a7 18k zu erkl\u00e4ren ist. \u00a7 3 Absatz 3a Satz 4 und 5 gilt entsprechend. Bei einem Fernverkauf nach \u00a7 3 Absatz 3a Satz 2 gilt Satz 1 f\u00fcr die Lieferung, der die Bef\u00f6rderung oder Versendung des Gegenstandes gem\u00e4\u00df \u00a7 3 Absatz 6b zugeschrieben wird, entsprechend, auch wenn die Steuer auf diesen Gegenstand nicht gem\u00e4\u00df dem besonderen Besteuerungsverfahren nach \u00a7 18k zu erkl\u00e4ren ist und ein Unternehmer oder dessen Beauftragter Schuldner der Einfuhrumsatzsteuer f\u00fcr die Einfuhr des Gegenstands ist.\n(4) Absatz 1 ist nicht anzuwenden, wenn der leistende Unternehmer seinen Sitz, seine Gesch\u00e4ftsleitung, eine Betriebsst\u00e4tte oder in Ermangelung eines Sitzes, einer Gesch\u00e4ftsleitung oder einer Betriebsst\u00e4tte seinen Wohnsitz oder gew\u00f6hnlichen Aufenthalt in nur einem Mitgliedstaat hat und der Gesamtbetrag der Entgelte der in \u00a7 3a Absatz 5 Satz 2 bezeichneten sonstigen Leistungen an in \u00a7 3a Absatz 5 Satz 1 bezeichnete Empf\u00e4nger mit Wohnsitz, gew\u00f6hnlichem Aufenthalt oder Sitz in anderen Mitgliedstaaten sowie der innergemeinschaftlichen Fernverk\u00e4ufe nach Absatz 1 Satz 2 und 3 insgesamt 10 000 Euro im vorangegangenen Kalenderjahr nicht \u00fcberschritten hat und im laufenden Kalenderjahr nicht \u00fcberschreitet. Der leistende Unternehmer kann dem Finanzamt erkl\u00e4ren, dass er auf die Anwendung des Satzes 1 verzichtet. Die Erkl\u00e4rung bindet den Unternehmer mindestens f\u00fcr zwei Kalenderjahre.",
+      "raw_sha256": "11f0492749fef609ff2815df9c1651ae25746a427f1be31640641687884ad2ae",
+      "reader_sha256": "8a53d822558fb41697f03cfa87fb113c0d2be86c15be5fd77f57d9bc1f9393ac",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U389082e12d3ec9bc.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-3c-20261024.html",
+    "native_LF": [
+      7,
+      10
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 41,
+    "id": "OSS",
+    "source": {
+      "id": "OSS",
+      "source": "U7b157a50cc83ca5a",
+      "article": "UStG \u00a718j(1)\u2013(4)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__18j.html",
+      "LF_start": 7,
+      "LF_end": 14,
+      "exact_quote": "(1) Ein Unternehmer, der 1.\nnach dem 30. Juni 2021 Lieferungen nach \u00a7 3 Absatz 3a Satz 1 innerhalb eines Mitgliedstaates oder innergemeinschaftliche Fernverk\u00e4ufe nach \u00a7 3c Absatz 1 Satz 2 und 3 im Gemeinschaftsgebiet erbringt oder\n2.\nim Gemeinschaftsgebiet ans\u00e4ssig ist und nach dem 30. Juni 2021 in einem anderen Mitgliedstaat der Europ\u00e4ischen Union sonstige Leistungen an Empf\u00e4nger nach \u00a7 3a Absatz 5 Satz 1 ausf\u00fchrt,\nf\u00fcr die er dort die Steuer schuldet und Umsatzsteuererkl\u00e4rungen abzugeben hat, hat anzuzeigen, wenn er an dem besonderen Besteuerungsverfahren entsprechend Titel XII Kapitel 6 Abschnitt 3 der Richtlinie 2006/112/EG des Rates in der Fassung von Artikel 1 Nummer 8 bis 13 der Richtlinie (EU) 2019/1995 des Rates vom 21. November 2019 zur \u00c4nderung der Richtlinie 2006/112/EG des Rates vom 28. November 2006 in Bezug auf Vorschriften f\u00fcr Fernverk\u00e4ufe von Gegenst\u00e4nden und bestimmte inl\u00e4ndische Lieferungen von Gegenst\u00e4nden (ABl.L 310 vom 2.12.2019, S. 1) teilnimmt. Die Anzeige ist der zust\u00e4ndigen Finanzbeh\u00f6rde des nach Artikel 369a Nummer 2 der Richtlinie 2006/112/EG des Rates in der Fassung von Artikel 1 Nummer 9 der Richtlinie (EU) 2019/1995 zust\u00e4ndigen Mitgliedstaates der Europ\u00e4ischen Union nach amtlich vorgeschriebenem Datensatz \u00fcber die amtlich bestimmte Schnittstelle zu \u00fcbermitteln; zust\u00e4ndige Finanzbeh\u00f6rde im Inland ist insoweit das Bundeszentralamt f\u00fcr Steuern. Die Anzeige hat vor Beginn des Besteuerungszeitraums (\u00a7 16 Absatz 1d Satz 1) zu erfolgen, ab dessen Beginn der Unternehmer von dem besonderen Besteuerungsverfahren Gebrauch macht. Eine Teilnahme an dem besonderen Besteuerungsverfahren ist dem Unternehmer nur einheitlich f\u00fcr alle Mitgliedstaaten der Europ\u00e4ischen Union und alle Ums\u00e4tze nach Satz 1 m\u00f6glich; dies gilt hinsichtlich sonstiger Leistungen an Empf\u00e4nger nach \u00a7 3a Absatz 5 Satz 1 nur f\u00fcr die Mitgliedstaaten der Europ\u00e4ischen Union, in denen der Unternehmer weder einen Sitz noch eine Betriebsst\u00e4tte hat. Die Anwendung des besonderen Besteuerungsverfahrens kann nur mit Wirkung vom Beginn eines Besteuerungszeitraums an widerrufen werden. Der Widerruf ist vor Beginn des Besteuerungszeitraums, f\u00fcr den er gelten soll, gegen\u00fcber der Finanzbeh\u00f6rde nach Satz 2 nach amtlich vorgeschriebenem Datensatz \u00fcber die amtlich bestimmte Schnittstelle zu erkl\u00e4ren.\n(2) Im \u00fcbrigen Gemeinschaftsgebiet ans\u00e4ssige Unternehmer (\u00a7 13b Absatz 7 Satz 2) k\u00f6nnen die Teilnahme an dem besonderen Besteuerungsverfahren nur in dem Mitgliedstaat der Europ\u00e4ischen Union, in dem sie ans\u00e4ssig sind, anzeigen; hinsichtlich sonstiger Leistungen an Empf\u00e4nger nach \u00a7 3a Absatz 5 Satz 1 im Inland ist eine Teilnahme jedoch nur zul\u00e4ssig, soweit der Unternehmer im Inland, auf der Insel Helgoland und in einem der in \u00a7 1 Absatz 3 bezeichneten Gebiete weder seinen Sitz, seine Gesch\u00e4ftsleitung noch eine Betriebsst\u00e4tte hat. Im Inland ans\u00e4ssige Unternehmer k\u00f6nnen die Teilnahme an dem besonderen Besteuerungsverfahren nur im Inland anzeigen; dies gilt nicht in F\u00e4llen des Satzes 4. Ein Unternehmer ist im Inland ans\u00e4ssig, wenn er im Inland seinen Sitz oder seine Gesch\u00e4ftsleitung hat oder, f\u00fcr den Fall, dass er im Drittlandsgebiet ans\u00e4ssig ist, im Inland eine Betriebsst\u00e4tte hat. Hat ein im Drittlandsgebiet ans\u00e4ssiger Unternehmer neben der Betriebsst\u00e4tte im Inland noch mindestens eine weitere Betriebsst\u00e4tte im \u00fcbrigen Gemeinschaftsgebiet, kann er sich f\u00fcr die Anzeige der Teilnahme an dem besonderen Besteuerungsverfahren im Inland entscheiden. Hat ein im Drittlandsgebiet ans\u00e4ssiger Unternehmer keine Betriebsst\u00e4tte im Gemeinschaftsgebiet, hat er die Teilnahme an dem besonderen Besteuerungsverfahren im Inland anzuzeigen, wenn die Bef\u00f6rderung oder Versendung der Gegenst\u00e4nde im Inland beginnt. Beginnt die Bef\u00f6rderung oder Versendung der Gegenst\u00e4nde teilweise im Inland und teilweise im \u00fcbrigen Gemeinschaftsgebiet, kann sich der im Drittlandsgebiet ans\u00e4ssige Unternehmer, der keine Betriebsst\u00e4tte im Gemeinschaftsgebiet hat, f\u00fcr die Anzeige der Teilnahme an dem besonderen Besteuerungsverfahren im Inland entscheiden. Der im Drittlandsgebiet ans\u00e4ssige Unternehmer ist an seine Entscheidung nach Satz 4 oder 6 f\u00fcr das betreffende Kalenderjahr und die beiden darauffolgenden Kalenderjahre gebunden.\n(3) Erfolgt die Anzeige nach Absatz 1 Satz 1 im Inland und erf\u00fcllt der Unternehmer die Voraussetzungen f\u00fcr die Teilnahme an dem besonderen Besteuerungsverfahren nicht, stellt das Bundeszentralamt f\u00fcr Steuern dies gegen\u00fcber dem Unternehmer fest und lehnt dessen Teilnahme an dem besonderen Besteuerungsverfahren ab.\n(4) Ein Unternehmer, der das in Absatz 1 genannte besondere Besteuerungsverfahren anwendet, hat der Finanzbeh\u00f6rde nach Absatz 1 Satz 2 in Verbindung mit Absatz 2 eine Steuererkl\u00e4rung innerhalb eines Monats nach Ablauf jedes Besteuerungszeitraums (\u00a7 16 Absatz 1d Satz 1) nach amtlich vorgeschriebenem Datensatz \u00fcber die amtlich bestimmte Schnittstelle zu \u00fcbermitteln. In der Steuererkl\u00e4rung hat er die Steuer f\u00fcr den Besteuerungszeitraum selbst zu berechnen. Die berechnete Steuer ist am letzten Tag des auf den Besteuerungszeitraum folgenden Monats f\u00e4llig und bis dahin vom Unternehmer an die Finanzbeh\u00f6rde nach Absatz 1 Satz 2 zu entrichten. Soweit der Unternehmer im Inland Leistungen nach Absatz 1 Satz 1 erbringt, ist \u00a7 18 Absatz 1 bis 4 nicht anzuwenden. Berichtigungen einer Steuererkl\u00e4rung, die innerhalb von drei Jahren nach dem letzten Tag des Zeitraums nach Satz 1 vorgenommen werden, sind mit einer sp\u00e4teren Steuererkl\u00e4rung unter Angabe des zu berichtigenden Besteuerungszeitraums anzuzeigen.",
+      "raw_sha256": "313661bdf7f40dfa915775164a17ef3429aa09a297ad53aa8777ee480f905d0a",
+      "reader_sha256": "b761ea29e2dc65dd0c8d80cfac37773c768a8c92be9aa17d158762f6c6cd94ab",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7b157a50cc83ca5a.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7b157a50cc83ca5a.body",
+    "native_LF": [
+      7,
+      14
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 42,
+    "id": "OSSEXCLUDE",
+    "source": {
+      "id": "OSSEXCLUDE",
+      "source": "U7b157a50cc83ca5a",
+      "article": "UStG \u00a718j(6)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__18j.html",
+      "LF_start": 16,
+      "LF_end": 16,
+      "exact_quote": "(6) Kommt der Unternehmer seinen Verpflichtungen nach Absatz 4 oder \u00a7 22 Absatz 1 oder den von ihm in einem anderen Mitgliedstaat der Europ\u00e4ischen Union zu erf\u00fcllenden Aufzeichnungspflichten entsprechend Artikel 369k der Richtlinie 2006/112/EG wiederholt nicht oder nicht rechtzeitig nach, schlie\u00dft ihn die Finanzbeh\u00f6rde nach Absatz 1 Satz 2 von dem besonderen Besteuerungsverfahren nach Absatz 1 aus. Der Ausschluss gilt ab dem Besteuerungszeitraum, der nach dem Zeitpunkt der Bekanntgabe des Ausschlusses gegen\u00fcber dem Unternehmer beginnt; ist der Ausschluss jedoch auf eine \u00c4nderung des Ortes des Sitzes oder der Betriebsst\u00e4tte oder des Ortes zur\u00fcckzuf\u00fchren, von dem aus die Bef\u00f6rderung oder Versendung von Gegenst\u00e4nden ausgeht, ist der Ausschluss ab dem Tag dieser \u00c4nderung wirksam. Der Ausschluss wegen eines wiederholten Versto\u00dfes gegen die in Satz 1 genannten Verpflichtungen hat auch den Ausschluss von den besonderen Besteuerungsverfahren nach den \u00a7\u00a7 18i und 18k zur Folge.",
+      "raw_sha256": "313661bdf7f40dfa915775164a17ef3429aa09a297ad53aa8777ee480f905d0a",
+      "reader_sha256": "b761ea29e2dc65dd0c8d80cfac37773c768a8c92be9aa17d158762f6c6cd94ab",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7b157a50cc83ca5a.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7b157a50cc83ca5a.body",
+    "native_LF": [
+      16,
+      16
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 43,
+    "id": "OSSDEADLINES",
+    "source": {
+      "id": "OSSDEADLINES",
+      "source": "U7ffe17cf27fa5eb7",
+      "article": "BZSt actual OSS quarter-end dates/null return/payment receipt",
+      "url": "https://www.bzst.de/DE/Unternehmen/Umsatzsteuer/One-Stop-Shop_EU/one_stop_shop_eu_node.html",
+      "LF_start": 68,
+      "LF_end": 80,
+      "exact_quote": "Pflichten\nMit der Teilnahme an der Sonderregelung sind verschiedene Pflichten verbunden. Einige grundlegende Pflichten sind nachstehend erl\u00e4utert.\nEin Versto\u00df gegen diese Pflichten f\u00fchrt zu einem Ausschluss aus der Sonderregelung.\nFristgerechte Abgabe der Steuererkl\u00e4rung\nDie Steuererkl\u00e4rung ist bis zum Ende des Monats, der auf den Ablauf des Besteuerungszeitraums (Kalendervierteljahr) folgt, elektronisch dem Bundeszentralamt f\u00fcr Steuern zu \u00fcbermitteln. Die Steuererkl\u00e4rung ist somit zu \u00fcbermitteln f\u00fcr das:\nI. Kalendervierteljahr bis zum 30. April,\nII. Kalendervierteljahr bis zum 31. Juli,\nIII. Kalendervierteljahr bis zum 31. Oktober,\nIV. Kalendervierteljahr bis zum 31. Januar des Folgejahres.\nAuch wenn keine Ums\u00e4tze im betreffenden Kalendervierteljahr ausgef\u00fchrt wurden, ist eine Steuererkl\u00e4rung (sogenannte Nullmeldung) zu den angegebenen Terminen abzugeben.\nFristgerechte Zahlung der angemeldeten Steuern\nDie im Verfahren One-Stop-Shop erkl\u00e4rten Steuerbetr\u00e4ge m\u00fcssen so rechtzeitig \u00fcberwiesen werden, dass die Zahlung bis zum Ende des Monats, der auf den Ablauf des Besteuerungszeitraums (Kalendervierteljahr) folgt, bei der zust\u00e4ndigen Bundeskasse eingegangen ist.\nEin Lastschrifteinzug ist nicht m\u00f6glich.",
+      "raw_sha256": "c35570bb92b93b5ca4c46368afe80e9e87816942fa885a88404cf192dfabcf51",
+      "reader_sha256": "09335dee82d6f9c73550e06cf825223ab84129fb3c7e920d20eaba0fb620dbb8",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7ffe17cf27fa5eb7.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7ffe17cf27fa5eb7.body",
+    "native_LF": [
+      68,
+      80
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 44,
+    "id": "RCIN",
+    "source": {
+      "id": "RCIN",
+      "source": "U0ea725765e8cb8bb",
+      "article": "UStG \u00a713b(1)/(2) nos1\u20134",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__13b.html",
+      "LF_start": 7,
+      "LF_end": 15,
+      "exact_quote": "(1) F\u00fcr nach \u00a7 3a Absatz 2 im Inland steuerpflichtige sonstige Leistungen eines im \u00fcbrigen Gemeinschaftsgebiet ans\u00e4ssigen Unternehmers entsteht die Steuer mit Ablauf des Voranmeldungszeitraums, in dem die Leistungen ausgef\u00fchrt worden sind.\n(2) F\u00fcr folgende steuerpflichtige Ums\u00e4tze entsteht die Steuer mit Ausstellung der Rechnung, sp\u00e4testens jedoch mit Ablauf des der Ausf\u00fchrung der Leistung folgenden Kalendermonats:1.\nWerklieferungen und nicht unter Absatz 1 fallende sonstige Leistungen eines im Ausland ans\u00e4ssigen Unternehmers;\n2.\nLieferungen sicherungs\u00fcbereigneter Gegenst\u00e4nde durch den Sicherungsgeber an den Sicherungsnehmer au\u00dferhalb des Insolvenzverfahrens;\n3.\nUms\u00e4tze, die unter das Grunderwerbsteuergesetz fallen;\n4.\nBauleistungen, einschlie\u00dflich Werklieferungen und sonstigen Leistungen im Zusammenhang mit Grundst\u00fccken, die der Herstellung, Instandsetzung, Instandhaltung, \u00c4nderung oder Beseitigung von Bauwerken dienen, mit Ausnahme von Planungs- und \u00dcberwachungsleistungen. Als Grundst\u00fccke gelten insbesondere auch Sachen, Ausstattungsgegenst\u00e4nde und Maschinen, die auf Dauer in einem Geb\u00e4ude oder Bauwerk installiert sind und die nicht bewegt werden k\u00f6nnen, ohne das Geb\u00e4ude oder Bauwerk zu zerst\u00f6ren oder zu ver\u00e4ndern. Nummer 1 bleibt unber\u00fchrt;",
+      "raw_sha256": "edd8c2e8992e24eb771e5d261eea2c742740cf56f6463b6dd9d61a2b674da145",
+      "reader_sha256": "b4b1ee940bfc961b7035c2f5d303c9cc874220a9f57f6a27b0a82a3747c535d3",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ea725765e8cb8bb.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-13b-20261024.html",
+    "native_LF": [
+      7,
+      15
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 45,
+    "id": "RC5000",
+    "source": {
+      "id": "RC5000",
+      "source": "U0ea725765e8cb8bb",
+      "article": "UStG \u00a713b(2) nos8\u201311",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__13b.html",
+      "LF_start": 25,
+      "LF_end": 32,
+      "exact_quote": "8.\nReinigen von Geb\u00e4uden und Geb\u00e4udeteilen. Nummer 1 bleibt unber\u00fchrt;\n9.\nLieferungen von Gold mit einem Feingehalt von mindestens 325 Tausendstel, in Rohform oder als Halbzeug (aus Position 7108 des Zolltarifs) und von Goldplattierungen mit einem Goldfeingehalt von mindestens 325 Tausendstel (aus Position 7109);\n10.\nLieferungen von Mobilfunkger\u00e4ten, Tablet-Computern und Spielekonsolen sowie von integrierten Schaltkreisen vor Einbau in einen zur Lieferung auf der Einzelhandelsstufe geeigneten Gegenstand, wenn die Summe der f\u00fcr sie in Rechnung zu stellenden Entgelte im Rahmen eines wirtschaftlichen Vorgangs mindestens 5 000 Euro betr\u00e4gt; nachtr\u00e4gliche Minderungen des Entgelts bleiben dabei unber\u00fccksichtigt;\n11.\nLieferungen der in der Anlage 4 bezeichneten Gegenst\u00e4nde, wenn die Summe der f\u00fcr sie in Rechnung zu stellenden Entgelte im Rahmen eines wirtschaftlichen Vorgangs mindestens 5 000 Euro betr\u00e4gt; nachtr\u00e4gliche Minderungen des Entgelts bleiben dabei unber\u00fccksichtigt;",
+      "raw_sha256": "edd8c2e8992e24eb771e5d261eea2c742740cf56f6463b6dd9d61a2b674da145",
+      "reader_sha256": "b4b1ee940bfc961b7035c2f5d303c9cc874220a9f57f6a27b0a82a3747c535d3",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ea725765e8cb8bb.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-13b-20261024.html",
+    "native_LF": [
+      25,
+      32
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 46,
+    "id": "RCWHO",
+    "source": {
+      "id": "RCWHO",
+      "source": "U0ea725765e8cb8bb",
+      "article": "UStG \u00a713b(5), exact recipient gates",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__13b.html",
+      "LF_start": 37,
+      "LF_end": 37,
+      "exact_quote": "(5) In den in den Abs\u00e4tzen 1 und 2 Nummer 1 bis 3 genannten F\u00e4llen schuldet der Leistungsempf\u00e4nger die Steuer, wenn er ein Unternehmer oder eine juristische Person ist; in den in Absatz 2 Nummer 5 Buchstabe a, Nummer 6, 7, 9 bis 11 genannten F\u00e4llen schuldet der Leistungsempf\u00e4nger die Steuer, wenn er ein Unternehmer ist. In den in Absatz 2 Nummer 4 Satz 1 genannten F\u00e4llen schuldet der Leistungsempf\u00e4nger die Steuer unabh\u00e4ngig davon, ob er sie f\u00fcr eine von ihm erbrachte Leistung im Sinne des Absatzes 2 Nummer 4 Satz 1 verwendet, wenn er ein Unternehmer ist, der nachhaltig entsprechende Leistungen erbringt; davon ist auszugehen, wenn ihm das zust\u00e4ndige Finanzamt eine im Zeitpunkt der Ausf\u00fchrung des Umsatzes g\u00fcltige auf l\u00e4ngstens drei Jahre befristete Bescheinigung, die nur mit Wirkung f\u00fcr die Zukunft widerrufen oder zur\u00fcckgenommen werden kann, dar\u00fcber erteilt hat, dass er ein Unternehmer ist, der entsprechende Leistungen erbringt. Bei den in Absatz 2 Nummer 5 Buchstabe b genannten Lieferungen von Erdgas schuldet der Leistungsempf\u00e4nger die Steuer, wenn er ein Wiederverk\u00e4ufer von Erdgas im Sinne des \u00a7 3g ist. Bei den in Absatz 2 Nummer 5 Buchstabe b genannten Lieferungen von Elektrizit\u00e4t schuldet der Leistungsempf\u00e4nger in den F\u00e4llen die Steuer, in denen der liefernde Unternehmer und der Leistungsempf\u00e4nger Wiederverk\u00e4ufer von Elektrizit\u00e4t im Sinne des \u00a7 3g sind. In den in Absatz 2 Nummer 8 Satz 1 genannten F\u00e4llen schuldet der Leistungsempf\u00e4nger die Steuer unabh\u00e4ngig davon, ob er sie f\u00fcr eine von ihm erbrachte Leistung im Sinne des Absatzes 2 Nummer 8 Satz 1 verwendet, wenn er ein Unternehmer ist, der nachhaltig entsprechende Leistungen erbringt; davon ist auszugehen, wenn ihm das zust\u00e4ndige Finanzamt eine im Zeitpunkt der Ausf\u00fchrung des Umsatzes g\u00fcltige auf l\u00e4ngstens drei Jahre befristete Bescheinigung, die nur mit Wirkung f\u00fcr die Zukunft widerrufen oder zur\u00fcckgenommen werden kann, dar\u00fcber erteilt hat, dass er ein Unternehmer ist, der entsprechende Leistungen erbringt. Bei den in Absatz 2 Nummer 12 Satz 1 genannten Leistungen schuldet der Leistungsempf\u00e4nger die Steuer, wenn er ein Unternehmer ist, dessen Hauptt\u00e4tigkeit in Bezug auf den Erwerb dieser Leistungen in deren Erbringung besteht und dessen eigener Verbrauch dieser Leistungen von untergeordneter Bedeutung ist; davon ist auszugehen, wenn ihm das zust\u00e4ndige Finanzamt eine im Zeitpunkt der Ausf\u00fchrung des Umsatzes g\u00fcltige auf l\u00e4ngstens drei Jahre befristete Bescheinigung, die nur mit Wirkung f\u00fcr die Zukunft widerrufen oder zur\u00fcckgenommen werden kann, dar\u00fcber erteilt hat, dass er ein Unternehmer ist, der entsprechende Leistungen erbringt. Die S\u00e4tze 1 bis 6 gelten vorbehaltlich des Satzes 11 auch, wenn die Leistung f\u00fcr den nichtunternehmerischen Bereich bezogen wird. Sind Leistungsempf\u00e4nger und leistender Unternehmer in Zweifelsf\u00e4llen \u00fcbereinstimmend vom Vorliegen der Voraussetzungen des Absatzes 2 Nummer 4, 5 Buchstabe b, Nummer 6 bis 12 ausgegangen, obwohl dies nach der Art der Ums\u00e4tze unter Anlegung objektiver Kriterien nicht zutreffend war, gilt der Leistungsempf\u00e4nger dennoch als Steuerschuldner, sofern dadurch keine Steuerausf\u00e4lle entstehen. Die S\u00e4tze 2 und 5 gelten auch dann, wenn die entsprechenden Leistungen des Leistungsempf\u00e4ngers nach \u00a7 19 Absatz 1 oder 4 steuerfrei sind. Die S\u00e4tze 1 bis 9 gelten nicht, wenn ein in Absatz 2 Nummer 2, 7 oder 9 bis 11 genannter Gegenstand von dem Unternehmer, der die Lieferung bewirkt, unter den Voraussetzungen des \u00a7 25a geliefert wird. In den in Absatz 2 Nummer 4, 5 Buchstabe b und Nummer 7 bis 12 genannten F\u00e4llen schulden juristische Personen des \u00f6ffentlichen Rechts die Steuer nicht, wenn sie die Leistung f\u00fcr den nichtunternehmerischen Bereich beziehen.",
+      "raw_sha256": "edd8c2e8992e24eb771e5d261eea2c742740cf56f6463b6dd9d61a2b674da145",
+      "reader_sha256": "b4b1ee940bfc961b7035c2f5d303c9cc874220a9f57f6a27b0a82a3747c535d3",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ea725765e8cb8bb.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-13b-20261024.html",
+    "native_LF": [
+      37,
+      37
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 47,
+    "id": "VATFINE",
+    "source": {
+      "id": "VATFINE",
+      "source": "Uaa34b9ace5183c69",
+      "article": "UStG \u00a726a(1)/(2) nos1\u20133",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__26a.html",
+      "LF_start": 7,
+      "LF_end": 13,
+      "exact_quote": "(1) Ordnungswidrig handelt, wer entgegen \u00a7 18 Absatz 1 Satz 4, Absatz 4 Satz 1 oder 2, Absatz 4c Satz 2, Absatz 4e Satz 4 oder Absatz 5a Satz 4, \u00a7 18i Absatz 3 Satz 3, \u00a7 18j Absatz 4 Satz 3 oder \u00a7 18k Absatz 4 Satz 3 eine Vorauszahlung, einen Unterschiedsbetrag oder eine festgesetzte Steuer nicht, nicht vollst\u00e4ndig oder nicht rechtzeitig entrichtet.\n(2) Ordnungswidrig handelt, wer vors\u00e4tzlich oder leichtfertig 1.\nentgegen \u00a7 14 Absatz 2 Satz 2 eine Rechnung nicht oder nicht rechtzeitig ausstellt,\n2.\nentgegen \u00a7 14b Abs. 1 Satz 1, auch in Verbindung mit Satz 4, ein dort bezeichnetes Doppel oder eine dort bezeichnete Rechnung nicht oder nicht mindestens acht Jahre aufbewahrt,\n3.\nentgegen \u00a7 14b Abs. 1 Satz 5 eine dort bezeichnete Rechnung, einen Zahlungsbeleg oder eine andere beweiskr\u00e4ftige Unterlage nicht oder nicht mindestens zwei Jahre aufbewahrt,",
+      "raw_sha256": "e046d9bdd2da18c1b5fe02a5c63390dec6a4956bad2d35d8d43ead931302a796",
+      "reader_sha256": "2851c3ba314c95f3ae87ec842c252bd9c6119cab4cdbad881b8662cb07854019",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaa34b9ace5183c69.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaa34b9ace5183c69.body",
+    "native_LF": [
+      7,
+      13
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 48,
+    "id": "VATFINEMAX",
+    "source": {
+      "id": "VATFINEMAX",
+      "source": "Uaa34b9ace5183c69",
+      "article": "UStG \u00a726a(3)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__26a.html",
+      "LF_start": 28,
+      "LF_end": 28,
+      "exact_quote": "(3) Die Ordnungswidrigkeit kann in den F\u00e4llen des Absatzes 1 mit einer Geldbu\u00dfe bis zu drei\u00dfigtausend Euro, in den F\u00e4llen des Absatzes 2 Nummer 3 mit einer Geldbu\u00dfe bis zu tausend Euro, in den \u00fcbrigen F\u00e4llen des Absatzes 2 mit einer Geldbu\u00dfe bis zu f\u00fcnftausend Euro geahndet werden.",
+      "raw_sha256": "e046d9bdd2da18c1b5fe02a5c63390dec6a4956bad2d35d8d43ead931302a796",
+      "reader_sha256": "2851c3ba314c95f3ae87ec842c252bd9c6119cab4cdbad881b8662cb07854019",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaa34b9ace5183c69.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaa34b9ace5183c69.body",
+    "native_LF": [
+      28,
+      28
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 49,
+    "id": "AUTH",
+    "source": {
+      "id": "AUTH",
+      "source": "U2264927402f77607",
+      "article": "AO \u00a787a(6)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__87a.html",
+      "LF_start": 13,
+      "LF_end": 13,
+      "exact_quote": "(6) Soweit gesetzlich nichts anderes bestimmt ist, ist bei der elektronischen \u00dcbermittlung von amtlich vorgeschriebenen Datens\u00e4tzen an Finanzbeh\u00f6rden ein sicheres Verfahren zu verwenden, das den Daten\u00fcbermittler authentifiziert und die Vertraulichkeit und Integrit\u00e4t des Datensatzes gew\u00e4hrleistet. Nutzt der Daten\u00fcbermittler zur Authentisierung seinen elektronischen Identit\u00e4tsnachweis nach \u00a7 18 des Personalausweisgesetzes, nach \u00a7 12 des eID-Karte-Gesetzes oder nach \u00a7 78 Absatz 5 des Aufenthaltsgesetzes, so d\u00fcrfen die dazu erforderlichen Daten zusammen mit den \u00fcbrigen \u00fcbermittelten Daten gespeichert und verwendet werden.",
+      "raw_sha256": "ffe49ea543ee97e8829eec6a353a9bdce808b4578c9fddbabbe47053807b8dba",
+      "reader_sha256": "54ae8742ccf51da3e14e7993b461e683543e498167f42af7e6c0e943df76f108",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2264927402f77607.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2264927402f77607.body",
+    "native_LF": [
+      13,
+      13
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 50,
+    "id": "ADVISERSTOP",
+    "source": {
+      "id": "ADVISERSTOP",
+      "source": "U503bfe74d589da30",
+      "article": "AO \u00a7149(5)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "LF_start": 42,
+      "LF_end": 42,
+      "exact_quote": "(5) Absatz 3 gilt nicht f\u00fcr Umsatzsteuererkl\u00e4rungen f\u00fcr das Kalenderjahr, wenn die gewerbliche oder berufliche T\u00e4tigkeit vor oder mit dem Ablauf des Besteuerungszeitraums endete.",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+    "native_LF": [
+      42,
+      42
+    ],
+    "actual_read_bridge": {
+      "guide": "de-trade-tax",
+      "quote_row": 51,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 51,
+    "id": "VATADVLATE",
+    "source": {
+      "id": "VATADVLATE",
+      "source": "Ua52afa3591a7820d",
+      "article": "AO \u00a7152(8) no1",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "LF_start": 30,
+      "LF_end": 31,
+      "exact_quote": "(8) Absatz 5 gilt nicht f\u00fcr 1.\nviertelj\u00e4hrlich oder monatlich abzugebende Steueranmeldungen,",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+    "native_LF": [
+      30,
+      31
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 52,
+    "id": "TAXPOINT",
+    "source": {
+      "id": "TAXPOINT",
+      "source": "U5410aa1779126db8",
+      "article": "UStG \u00a713(1) no1(a)/(b)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__13.html",
+      "LF_start": 7,
+      "LF_end": 11,
+      "exact_quote": "(1) Die Steuer entsteht 1.\nf\u00fcr Lieferungen und sonstige Leistungena)\nbei der Berechnung der Steuer nach vereinbarten Entgelten (\u00a7 16 Abs. 1 Satz 1) mit Ablauf des Voranmeldungszeitraums, in dem die Leistungen ausgef\u00fchrt worden sind. Das gilt auch f\u00fcr Teilleistungen. Sie liegen vor, wenn f\u00fcr bestimmte Teile einer wirtschaftlich teilbaren Leistung das Entgelt gesondert vereinbart wird. Wird das Entgelt oder ein Teil des Entgelts vereinnahmt, bevor die Leistung oder die Teilleistung ausgef\u00fchrt worden ist, so entsteht insoweit die Steuer mit Ablauf des Voranmeldungszeitraums, in dem das Entgelt oder das Teilentgelt vereinnahmt worden ist,\nb)\nbei der Berechnung der Steuer nach vereinnahmten Entgelten (\u00a7 20) mit Ablauf des Voranmeldungszeitraums, in dem die Entgelte vereinnahmt worden sind,",
+      "raw_sha256": "651a989b51b160c85addf12be5cceabf2e668b8f945fcdd6aca64e5baa867967",
+      "reader_sha256": "f6e9f249c3c65e9b7ff053a32dde082358a2c8b87c92d51c85b082948746e6aa",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5410aa1779126db8.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-13-20261024.html",
+    "native_LF": [
+      7,
+      11
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 53,
+    "id": "CORRECTBASE",
+    "source": {
+      "id": "CORRECTBASE",
+      "source": "U9782b57d3498ef94",
+      "article": "UStG \u00a717(1)",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__17.html",
+      "LF_start": 7,
+      "LF_end": 7,
+      "exact_quote": "(1) Hat sich die Bemessungsgrundlage f\u00fcr einen steuerpflichtigen Umsatz im Sinne des \u00a7 1 Abs. 1 Nr. 1 ge\u00e4ndert, hat der Unternehmer, der diesen Umsatz ausgef\u00fchrt hat, den daf\u00fcr geschuldeten Steuerbetrag zu berichtigen. Ebenfalls ist der Vorsteuerabzug bei dem Unternehmer, an den dieser Umsatz ausgef\u00fchrt wurde, zu berichtigen. Dies gilt nicht, soweit er durch die \u00c4nderung der Bemessungsgrundlage wirtschaftlich nicht beg\u00fcnstigt wird. Wird in diesen F\u00e4llen ein anderer Unternehmer durch die \u00c4nderung der Bemessungsgrundlage wirtschaftlich beg\u00fcnstigt, hat dieser Unternehmer seinen Vorsteuerabzug zu berichtigen. Die S\u00e4tze 1 bis 4 gelten in den F\u00e4llen des \u00a7 1 Abs. 1 Nr. 5 und des \u00a7 13b sinngem\u00e4\u00df. Bei Preisnachl\u00e4ssen und Preiserstattungen eines Unternehmers in einer Leistungskette an einen in dieser Leistungskette nicht unmittelbar nachfolgenden Abnehmer liegt eine Minderung der Bemessungsgrundlage nach Satz 1 nur vor, wenn der Leistungsbezug dieses Abnehmers im Rahmen der Leistungskette im Inland steuerpflichtig ist. Die Berichtigung des Vorsteuerabzugs kann unterbleiben, soweit ein dritter Unternehmer den auf die Minderung des Entgelts entfallenden Steuerbetrag an das Finanzamt entrichtet; in diesem Fall ist der dritte Unternehmer Schuldner der Steuer. Die Berichtigungen nach den S\u00e4tzen 1 und 2 sind f\u00fcr den Besteuerungszeitraum vorzunehmen, in dem die \u00c4nderung der Bemessungsgrundlage eingetreten ist. Die Berichtigung nach Satz 4 ist f\u00fcr den Besteuerungszeitraum vorzunehmen, in dem der andere Unternehmer wirtschaftlich beg\u00fcnstigt wird.",
+      "raw_sha256": "a2225062fe681e09ae188419fd29a3ed14598db343610689944a45e1b0ff0329",
+      "reader_sha256": "2ea2fd2f6fec865715fe2bad71fa3b67e397d0f1aed842f4335b840c0cb20eaa",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9782b57d3498ef94.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-17-20261024.html",
+    "native_LF": [
+      7,
+      7
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 54,
+    "id": "FORMTOTAL",
+    "source": {
+      "id": "FORMTOTAL",
+      "source": "U5e015408b538374f",
+      "article": "Official2026 USt2A lines124\u2013126/Kz816/820",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5",
+      "LF_start": 646,
+      "LF_end": 660,
+      "exact_quote": "      Umsatzsteuer\n122   \u00dcberschuss - bitte dem Betrag ein Minuszeichen voranstellen -                                                             ,\n123   Anrechenbare Betr\u00e4ge (aus Zeile 18 der Anlage UN)                                                                         ,\n      Verbleibende Umsatzsteuer\n      Verbleibender \u00dcberschuss - bitte dem Betrag ein Minuszeichen voranstellen -\n124   (bitte in jedem Fall ausf\u00fcllen)\n                                                                                               816\n                                                                                                                                ,\n125   Vorauszahlungssoll 2026 (einschlie\u00dflich Sondervorauszahlung)                                                              ,\n      Noch an die Finanzkasse zu entrichten - Abschlusszahlung -\n      Erstattungsanspruch - bitte dem Betrag ein Minuszeichen voranstellen -\n126   (bitte in jedem Fall ausf\u00fcllen)\n                                                                                               820\n                                                                                                                                ,\n      Ein Umsatzsteuerbescheid ergeht nur, wenn von Ihrer Berechnung der Umsatzsteuer abgewichen wird.",
+      "raw_sha256": "6b1225efbfde4d23ce1dd86fe899a33caf443443d96057dcee379414a36eab25",
+      "reader_sha256": "17066e309c2fbde696038c95d3e83b8582bdd1b657a0072f96e6ec3b7cee1a64",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.body",
+    "native_LF": [
+      646,
+      660
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 55,
+    "id": "FORMPAY",
+    "source": {
+      "id": "FORMPAY",
+      "source": "U5e015408b538374f",
+      "article": "Official2026 USt2E Vorauszahlungssoll/closing balance/consent",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5",
+      "LF_start": 1737,
+      "LF_end": 1753,
+      "exact_quote": "Vorauszahlungssoll ist die Summe der angemelde-          Abschlusszahlung ergeben. Diese Zahlung ist einen      Zeilen 124 bis\nten bzw. festgesetzten Umsatzsteuer-Vorauszahlun-        Monat nach Eingang der Steuererkl\u00e4rung f\u00e4llig.                   126\ngen/\u00dcbersch\u00fcsse aus dem Voranmeldungsverfahren\n                                                         Zur Berechnung der Abschlusszahlung bzw. des Er-\neinschlie\u00dflich der Sondervorauszahlung f\u00fcr die Dauer-\n                                                         stattungsanspruchs aufgrund der Umsatzsteuer-\nfristverl\u00e4ngerung. Ob die Vorauszahlungen bereits ent-\n                                                         erkl\u00e4rung mindern Sie bitte die verbleibende Umsatz-\nrichtet sind oder ob das Finanzamt einen \u00dcberschuss\n                                                         steuer bzw. den verbleibenden \u00dcberschuss um das\nbereits ausgezahlt hat, ist f\u00fcr das Vorauszahlungssoll\n                                                         Vorauszahlungssoll f\u00fcr das Kalenderjahr.\nohne Bedeutung.\n                                                      Ein Erstattungsanspruch wird nach Zustimmung\nIn den F\u00e4llen, in denen bereits eine Festsetzung der\n                                                      (\u00a7 168 AO) ohne gesonderten Antrag ausgezahlt, so-\nUmsatzsteuer f\u00fcr den Besteuerungszeitraum erfolgt",
+      "raw_sha256": "6b1225efbfde4d23ce1dd86fe899a33caf443443d96057dcee379414a36eab25",
+      "reader_sha256": "17066e309c2fbde696038c95d3e83b8582bdd1b657a0072f96e6ec3b7cee1a64",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.body",
+    "native_LF": [
+      1737,
+      1753
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 56,
+    "id": "FORMADDRESS",
+    "source": {
+      "id": "FORMADDRESS",
+      "source": "U5e015408b538374f",
+      "article": "BMF29December2025 letter para4 foreign-address2026",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5",
+      "LF_start": 69,
+      "LF_end": 70,
+      "exact_quote": "4    Im Ausland ans\u00e4ssige Unternehmer m\u00fcssen in den \u201eallgemeinen Angaben\u201c nun ihre\n     Auslandsanschrift f\u00fcr die Bekanntgabe von Umsatzsteuerbescheiden angeben.",
+      "raw_sha256": "6b1225efbfde4d23ce1dd86fe899a33caf443443d96057dcee379414a36eab25",
+      "reader_sha256": "17066e309c2fbde696038c95d3e83b8582bdd1b657a0072f96e6ec3b7cee1a64",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.body",
+    "native_LF": [
+      69,
+      70
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 57,
+    "id": "FORMKU",
+    "source": {
+      "id": "FORMKU",
+      "source": "U5e015408b538374f",
+      "article": "Official2026 USt2E line53 exemption/duty and startup25,000",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5",
+      "LF_start": 1182,
+      "LF_end": 1200,
+      "exact_quote": "Kleinunternehmer sind von der \u00dcbermittlung von            100.000 \u20ac im laufenden Kalenderjahr \u00fcbersteigt, ist                Zeile 53\nUmsatzsteuererkl\u00e4rungen befreit. Dies betrifft jedoch     nicht mehr nach \u00a7 19 Absatz 1 UStG steuerfrei, son-\nnicht die F\u00e4lle des \u00a7 18 Absatz 4a UStG. Hierunter fal-   dern unterliegt der Regelbesteuerung und ist nicht in\nlen z. B. innergemeinschaftliche Erwerbe (\u00a7 1 Absatz 1    Zeile 53 zu erfassen.\nNummer 5 UStG) und bezogene Leistungen, f\u00fcr die\n                                                          Wenn Sie die unternehmerische T\u00e4tigkeit im Laufe\nKleinunternehmer die Steuer als Leistungsempf\u00e4nger\n                                                          des Kalenderjahres aufgenommen haben, unterliegt\nschulden (\u00a7 13b Absatz 1 und 2 in Verbindung mit Ab-\n                                                          bereits der Umsatz, der die Grenze in H\u00f6he von\nsatz 5 UStG). In den dort genannten F\u00e4llen haben\n                                                          25.000 \u20ac \u00fcbersteigt, der Regelbesteuerung, ist nicht\nKleinunternehmer dem Finanzamt eine Umsatzsteuer-\n                                                          nach \u00a7 19 Absatz 1 UStG steuerfrei und nicht in Zeile\nerkl\u00e4rung zu \u00fcbermitteln. Auch bleibt die Erkl\u00e4rungs-\n                                                          53 zu erfassen.\npflicht in dem Fall bestehen, in dem der Kleinunterneh-\nmer vom Finanzamt zur Abgabe aufgefordert wird            Gesamtumsatz im Sinne des \u00a7 19 Absatz 2 UStG ist\n(\u00a7 149 Absatz 1 Satz 2 AO).                               die Summe der vom Unternehmer ausgef\u00fchrten steu-",
+      "raw_sha256": "6b1225efbfde4d23ce1dd86fe899a33caf443443d96057dcee379414a36eab25",
+      "reader_sha256": "17066e309c2fbde696038c95d3e83b8582bdd1b657a0072f96e6ec3b7cee1a64",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.body",
+    "native_LF": [
+      1182,
+      1200
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 58,
+    "id": "FORMCASHSWITCH",
+    "source": {
+      "id": "FORMCASHSWITCH",
+      "source": "U5e015408b538374f",
+      "article": "Official2026 USt2E line21 unchanged cash supplies on later receipt",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5",
+      "LF_start": 922,
+      "LF_end": 934,
+      "exact_quote": "                                                                             den oder unversteuert bleiben. Ums\u00e4tze, die in Be-\n                   diesem Fall in Zeile 21 eine \u201e2\u201c ein.\n                                                                             steuerungszeitr\u00e4umen ausgef\u00fchrt wurden, in denen\n                   Wird die Steuer nur f\u00fcr einzelne Teile des Unterneh-      Sie die Istversteuerung angewendet haben, unterlie-\n                   mens nach vereinnahmten Entgelten berechnet, tra-         gen weiterhin der Besteuerung nach vereinnahmten\n                   gen Sie bitte in diesem Fall in Zeile 21 eine \u201e3\u201c ein     Entgelten. Das gilt auch, wenn in sp\u00e4teren Besteue-\n                   (\u00a7 20 Satz 1 Nummer 2 in Verbindung mit Satz 2 oder       rungszeitr\u00e4umen ein Wechsel zur Sollversteuerung\n                   Satz 1 Nummer 3 UStG).                                    eintritt. Vereinnahmen Sie das Entgelt erst nach dem\n                                                                             Wechsel der Besteuerungsart, erkl\u00e4ren Sie bitte den\n                   Die Besteuerung von Anzahlungen (\u00a7 13 Absatz 1\n                                                                             Umsatz im Besteuerungszeitraum der Vereinnah-\n                   Nummer 1 Buchstabe a Satz 4 UStG) ist f\u00fcr die Eintra-\n                                                                             mung.",
+      "raw_sha256": "6b1225efbfde4d23ce1dd86fe899a33caf443443d96057dcee379414a36eab25",
+      "reader_sha256": "17066e309c2fbde696038c95d3e83b8582bdd1b657a0072f96e6ec3b7cee1a64",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.body",
+    "native_LF": [
+      922,
+      934
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 59,
+    "id": "FORMAFTER",
+    "source": {
+      "id": "FORMAFTER",
+      "source": "U5e015408b538374f",
+      "article": "Official2026 USt2E line39 tax on former-KU advances",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5",
+      "LF_start": 1077,
+      "LF_end": 1083,
+      "exact_quote": "Zeile 39           Haben Sie in einem vorangegangenen Kalenderjahr            39 ein.\n                   die Kleinunternehmer-Regelung (\u00a7 19 UStG) ange-            Wenn Sie von der Anwendung der Regelbesteuerung\n                   wendet und Anzahlungen f\u00fcr Ums\u00e4tze vereinnahmt,            oder der Durchschnittssatzbesteuerung (\u00a7 24 UStG)\n                   die Sie erst in diesem Kalenderjahr ausgef\u00fchrt haben       zur Kleinunternehmer-Regelung (\u00a7 19 UStG) gewech-\n                   und die nun der Regelbesteuerung oder der Durch-           selt haben, tragen Sie die Betr\u00e4ge bitte in Zeile 121\n                   schnittssatzbesteuerung (\u00a7 24 UStG) unterliegen,           und nicht in Zeile 39 ein.\n                   dann tragen Sie die Steuer (Nachsteuer) bitte in Zeile",
+      "raw_sha256": "6b1225efbfde4d23ce1dd86fe899a33caf443443d96057dcee379414a36eab25",
+      "reader_sha256": "17066e309c2fbde696038c95d3e83b8582bdd1b657a0072f96e6ec3b7cee1a64",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.body",
+    "native_LF": [
+      1077,
+      1083
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 60,
+    "id": "FORMADVAFTER",
+    "source": {
+      "id": "FORMADVAFTER",
+      "source": "Udc69dbdd94c3ff57",
+      "article": "Official2026 USt1E line46 tax on former-KU advances",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-vordruckmuster-USt-voranmeldung-2026.pdf?__blob=publicationFile&v=2",
+      "LF_start": 992,
+      "LF_end": 1007,
+      "exact_quote": "Andere Steuerbetr\u00e4ge\nBitte tragen Sie in Zeile 46 unter anderem die Nach-      dem die Leistung bzw. Teilleistung ausgef\u00fchrt wird        Zeile 46\nsteuer aufgrund des Wechsels der Besteuerungs-            (\u00a7 27 Absatz 1 Satz 2 und 3 UStG).\nform ein, wenn Sie\n                                                          Hierbei beachten Sie bitte, dass vom 1. Juli 2020 bis\n  \u2013 in einem vorangegangenen Kalenderjahr Kleinun-\n                                                          zum 31. Dezember 2020\n    ternehmer (\u00a7 19 UStG) waren und\n                                                           \u2013 der allgemeine Steuersatz von 19 % auf 16 % und\n  \u2013 w\u00e4hrenddessen Anzahlungen f\u00fcr Ums\u00e4tze verein-\n                                                           \u2013 der erm\u00e4\u00dfigte Steuersatz von 7 % auf 5 %\n    nahmt haben, die erst in diesem Kalenderjahr aus-\n                                                          gesenkt wurde.\n    gef\u00fchrt worden sind und nun der Regelbesteue-\n    rung oder der Durchschnittssatzbesteuerung (\u00a7 24      Wurde eine Leistung erst nach dem 31. Dezember\n    UStG) unterliegen.                                    2025 erbracht, f\u00fcr die Sie eine An- oder Vorauszah-",
+      "raw_sha256": "82e7d63a0faec542bb184acb438eaf4ce90a2d7db067bb47f92ae13b4b17613d",
+      "reader_sha256": "c4371c79f283a7dae1603285ad024bf716151f410c2607da1d5044f72ea097a9",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Udc69dbdd94c3ff57.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-ustva-vordruck-2026-20251229.pdf",
+    "native_LF": [
+      992,
+      1007
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 61,
+    "id": "FORMKUSWITCH",
+    "source": {
+      "id": "FORMKUSWITCH",
+      "source": "U5e015408b538374f",
+      "article": "Official2026 USt2A lines99\u2013102 change of circumstance",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5",
+      "LF_start": 578,
+      "LF_end": 586,
+      "exact_quote": "                     Die Verh\u00e4ltnisse, die urspr\u00fcnglich f\u00fcr die Beurteilung des Vorsteuerabzugs ma\u00dfgebend waren, haben sich seitdem ge\u00e4ndert durch:\n\n                99   X Ver\u00e4u\u00dferung        X Lieferung im Sinne des \u00a7 3 Absatz 1b UStG      X Wechsel der Besteuerungsform, \u00a7 15a Absatz 7 UStG\n\n               100   X Wechsel der Besteuerungsform im Rahmen der Kleinunternehmer-Regelung\n\n               101   X Nutzungs\u00e4nderung, und zwar\n                                \u00dcbergang von steuerpflichtiger zu steuerfreier Vermietung oder umgekehrt beziehungsweise \u00c4nderung des Verwen-\n               102          X dungsschl\u00fcssels bei gemischt genutzten Grundst\u00fccken (insbesondere bei Mieterwechsel).",
+      "raw_sha256": "6b1225efbfde4d23ce1dd86fe899a33caf443443d96057dcee379414a36eab25",
+      "reader_sha256": "17066e309c2fbde696038c95d3e83b8582bdd1b657a0072f96e6ec3b7cee1a64",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e015408b538374f.body",
+    "native_LF": [
+      578,
+      586
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 62,
+    "id": "UAEKUDUTY",
+    "source": {
+      "id": "UAEKUDUTY",
+      "source": "U2bee6632c327237d",
+      "article": "UStAE19.1(1) current first3sentences,2025edition",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2",
+      "LF_start": 40351,
+      "LF_end": 40359,
+      "exact_quote": "              (1) Nach \u00a7 19 Abs. 1 UStG sind die in \u00a7 1 Abs. 1 Nr. 1 UStG bezeichneten Ums\u00e4tze (einschlie\u00dflich\n                   1\n\n            unentgeltliche Wertabgaben \u2013 vgl. Abschnitte 3.2 bis 3.4), die ein im Inland oder in den in \u00a7 1 Abs. 3 UStG\n            genannten Gebieten ans\u00e4ssiger Kleinunternehmer ausf\u00fchrt, von der Steuer befreit. 2Die Einfuhr von\n            Gegenst\u00e4nden (\u00a7 1 Abs. 1 Nr. 4 UStG) sowie der innergemeinschaftliche Erwerb (\u00a7 1 Abs. 1 Nr. 5 UStG, vgl.\n            auch Abschnitt 1a.1 Abs. 2) durch einen Kleinunternehmer sind nicht von \u00a7 19 Abs. 1 UStG erfasst. 3Die\n            Vorschrift hat dar\u00fcber hinaus keine Auswirkung auf die nach \u00a7 13a Abs. 1 Nr. 6, \u00a7 13b Abs. 5, \u00a7 14c und\n            \u00a7 25b Abs. 2 UStG von Kleinunternehmern geschuldete Steuer.",
+      "raw_sha256": "f546602c2b7919aeb660c3a95ef6ec7b9d31e68ae4cc57d4aa1d84bf6b2bac0f",
+      "reader_sha256": "20c3385e52442415812a5211a9e944fca275ccadb7b4c7938f1515df1eabccd0",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.body",
+    "native_LF": [
+      40351,
+      40359
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 63,
+    "id": "UAEKUTHRESHOLD",
+    "source": {
+      "id": "UAEKUTHRESHOLD",
+      "source": "U2bee6632c327237d",
+      "article": "UStAE19.1(2),2025edition",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2",
+      "LF_start": 40430,
+      "LF_end": 40439,
+      "exact_quote": "              (2) 1Voraussetzung f\u00fcr die Anwendung des \u00a7 19 Abs. 1 UStG ist, dass der tats\u00e4chliche Gesamtumsatz (vgl.\n            Abschnitt 19.2) im Vorjahr die Grenze von 25.000 \u20ac nicht \u00fcberschritten hat und im laufenden Kalenderjahr\n            die Grenze von 100.000 \u20ac nicht \u00fcberschreitet. 2Hat der Gesamtumsatz im Vorjahr die Grenze von 25.000 \u20ac\n            \u00fcberschritten, sind die Ums\u00e4tze des Unternehmers im laufenden Kalenderjahr auch dann nicht nach \u00a7 19 Abs. 1\n            UStG steuerfrei, wenn der Gesamtumsatz im laufendem Kalenderjahr die Grenze von 25.000 \u20ac nicht\n            \u00fcberschreiten wird (vgl. BFH-Beschluss vom 18.10.2007 - V B 164/06, BStBl II 2008 S. 263). 3Hat der\n            Gesamtumsatz im Vorjahr die Grenze von 25.000 \u20ac nicht \u00fcberschritten, sind die Ums\u00e4tze des\n            Kleinunternehmers im laufenden Kalenderjahr von der Steuer befreit, solange die Grenze von 100.000 \u20ac\n            nicht \u00fcberschritten wird. 4Bereits der Umsatz, mit dem diese Grenze \u00fcberschritten wird, ist nicht mehr\n            nach \u00a7 19 Abs. 1 UStG steuerfrei.",
+      "raw_sha256": "f546602c2b7919aeb660c3a95ef6ec7b9d31e68ae4cc57d4aa1d84bf6b2bac0f",
+      "reader_sha256": "20c3385e52442415812a5211a9e944fca275ccadb7b4c7938f1515df1eabccd0",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.body",
+    "native_LF": [
+      40430,
+      40439
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 64,
+    "id": "UAESTARTUP",
+    "source": {
+      "id": "UAESTARTUP",
+      "source": "U2bee6632c327237d",
+      "article": "UStAE19.1(3),2025edition",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2",
+      "LF_start": 40453,
+      "LF_end": 40459,
+      "exact_quote": "              (3) 1Nimmt der Unternehmer seine gewerbliche oder berufliche T\u00e4tigkeit im Laufe eines Kalenderjahres im\n            Inland oder in den in \u00a7 1 Abs. 3 UStG genannten Gebieten neu auf, ist in diesen F\u00e4llen allein auf den\n            tats\u00e4chlichen inl\u00e4ndischen Gesamtumsatz (Abschnitt 19.2) des laufenden Kalenderjahres abzustellen (vgl.\n            BFH-Urteil vom 19.02.1976 - V R 23/73, BStBl II S. 400). 2Entsprechend der Zweckbestimmung des \u00a7 19 Abs. 1\n            UStG ist im Jahr der Aufnahme der T\u00e4tigkeit die Grenze von 25.000 \u20ac und nicht die Grenze von 100.000 \u20ac\n            ma\u00dfgebend (vgl. Rn. 16 des BFH-Urteils vom 22.11.1984 - V R 170/83, BStBl II 1985 S. 142 zu \u00a7 19 UStG\n            a. F.).",
+      "raw_sha256": "f546602c2b7919aeb660c3a95ef6ec7b9d31e68ae4cc57d4aa1d84bf6b2bac0f",
+      "reader_sha256": "20c3385e52442415812a5211a9e944fca275ccadb7b4c7938f1515df1eabccd0",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.body",
+    "native_LF": [
+      40453,
+      40459
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 65,
+    "id": "UAETURNOVER",
+    "source": {
+      "id": "UAETURNOVER",
+      "source": "U2bee6632c327237d",
+      "article": "UStAE19.2(1)/(2),2025edition",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2",
+      "LF_start": 40487,
+      "LF_end": 40497,
+      "exact_quote": "              (1) Der Gesamtumsatz wird nach vereinnahmten Entgelten (\u00a7 10 Abs. 1 UStG) berechnet. 2Anzahlungen\n                   1\n\n            sind im Zeitpunkt ihrer Vereinnahmung dem Gesamtumsatz zuzurechnen (vgl. Abschnitte 13.5 Abs. 1 und\n            13.6 Abs. 1).\n              (2) 1Zum Gesamtumsatz im Sinne des \u00a7 19 Abs. 2 UStG geh\u00f6ren auch die vom Unternehmer ausgef\u00fchrten\n            Ums\u00e4tze, die nach \u00a7 1 Abs. 3 UStG wie Ums\u00e4tze im Inland zu behandeln sind, sowie die Ums\u00e4tze, f\u00fcr die ein\n            Anderer als Leistungsempf\u00e4nger Steuerschuldner nach \u00a7 13b Abs. 5 UStG ist. 2Zum Gesamtumsatz geh\u00f6ren nicht\n            die private Verwendung eines dem Unternehmen zugeordneten Gegenstandes, die nicht nach \u00a7 3 Abs. 9a Nr. 1\n            UStG steuerbar ist, und die Ums\u00e4tze, f\u00fcr die der Unternehmer als Leistungsempf\u00e4nger Steuerschuldner nach \u00a7 13b\n            Abs. 5 UStG ist. 3Au\u00dferdem geh\u00f6ren die Lieferungen an den letzten Abnehmer in einem innergemeinschaftlichen",
+      "raw_sha256": "f546602c2b7919aeb660c3a95ef6ec7b9d31e68ae4cc57d4aa1d84bf6b2bac0f",
+      "reader_sha256": "20c3385e52442415812a5211a9e944fca275ccadb7b4c7938f1515df1eabccd0",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.body",
+    "native_LF": [
+      40487,
+      40497
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 66,
+    "id": "UAELATESUPPLY",
+    "source": {
+      "id": "UAELATESUPPLY",
+      "source": "U2bee6632c327237d",
+      "article": "UStAE19.7(1),2025edition; excludes current-year threshold crossing",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2",
+      "LF_start": 40794,
+      "LF_end": 40798,
+      "exact_quote": "              (1) 1Ums\u00e4tze, die der Unternehmer vor dem \u00dcbergang zur Regelbesteuerung ausgef\u00fchrt hat, fallen auch dann\n            unter \u00a7 19 Abs. 1 UStG, wenn die Entgelte nach diesem Zeitpunkt vereinnahmt werden. 2Dies gilt nicht, wenn\n            der Grenzwert von 100.000 \u20ac (25.000 \u20ac bei Neugr\u00fcndung) im laufenden Jahr \u00fcberschritten wurde. 3In\n            diesem Fall ist bereits der vereinnahmte Umsatz, der die jeweilige Grenze \u00fcberschreitet, der\n            Regelbesteuerung zu unterwerfen.",
+      "raw_sha256": "f546602c2b7919aeb660c3a95ef6ec7b9d31e68ae4cc57d4aa1d84bf6b2bac0f",
+      "reader_sha256": "20c3385e52442415812a5211a9e944fca275ccadb7b4c7938f1515df1eabccd0",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2bee6632c327237d.body",
+    "native_LF": [
+      40794,
+      40798
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 67,
+    "id": "RECEIVEE",
+    "source": {
+      "id": "RECEIVEE",
+      "source": "U85b2e15f8f1f736c",
+      "article": "BMF e-invoice FAQ reception from2025",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+      "LF_start": 382,
+      "LF_end": 382,
+      "exact_quote": "Allerdings muss ein Unternehmen seit dem 1. Januar 2025 den Empfang einer E-Rechnung sicherstellen. Dazu reicht bereits ein E\u2011Mail\u2011Postfach aus.",
+      "raw_sha256": "9ca6fb9be039c1ded8633d709d0f29fbb21a7153b5e42dcc59e26ca14c76ea99",
+      "reader_sha256": "e77873437605a46672a2395b677def497441f842f9ff79a3c14575d3af08da5a",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.body",
+    "native_LF": [
+      382,
+      382
+    ],
+    "pending_direct_read": true
+  }
+]

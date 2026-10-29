@@ -1,0 +1,19 @@
+--- 
++++ 
+@@ -143,6 +143,16 @@
+ ```
+ 
+ The 30-day month in the steps is a simplification for this example; count calendar months from the due date on a real file.
++
++**Five further qualitative cases.** These retain the earlier scenarios without inventing a client amount.
++
++| Case | Declared input | Result |
++|---|---|---|
++| Notice-based instalments | A 2026 Vorauszahlungsbescheid lists an amount for each date: 10 March, 10 June, 10 September and 10 December | Report those four amounts and dates; do not invent an equal split (§ 37(1)/(3) EStG). |
++| Below the minimum | The annual income tax prepayments are below EUR 400, or a payment date is below EUR 100 | No income tax prepayments are set: both minimums must be met (§ 37(5)). |
++| Late Q2 transfer | Due 10 June 2026; the tax office is credited on 15 July 2026 | Two started months, beyond the three-day grace. The surcharge is 2 × 1% × the unpaid tax rounded down to EUR 50 (§ 240 AO). |
++| Solidarity exemption | Single filer; the annual prepayment base does not exceed EUR 20,350; no assessed § 32d(3)/(4) flat-rate tax | No solidarity surcharge on that base (§ 3(3) SolzG). |
++| Bank line checked to its notice | `10.06.2026 ; LASTSCHRIFT FINANZAMT MUENCHEN ; DEBIT ; ESt-VZ Q2/2026 ; amount ; EUR`, with the reference/amount confirmed against the income tax notice | Classify this stipulated payment as Q2 income tax prepayment and a private withdrawal, not a deductible business expense (§ 12 number 3 EStG). A payee or date alone is not proof. Church tax has its separate § 10(1) number 4 treatment. |
+ 
+ ## Ask the client first
+ 

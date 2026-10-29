@@ -1,0 +1,34 @@
+[
+  {
+    "before": "version: 1.6",
+    "after": "version: 1.7"
+  },
+  {
+    "before": "Never for a flat the client lives in or lets free.",
+    "after": "Costs attributable to the owner’s private use or free-use parts are not rental expenses. Letting individual rooms within the owner’s home can generate deductible rental costs; allocate those costs to the actual let part."
+  },
+  {
+    "before": "reserve payments until spent; own-use or free flats; the unpaid part of a cheap let;",
+    "after": "reserve payments until spent; costs attributable to own-use or free-use parts; the unpaid part of a cheap let;"
+  },
+  {
+    "before": "- **Not deductible**: loan principal (Tilgung); transfer tax, notary and broker on the purchase (they go into acquisition cost); reserve payments until spent; costs attributable to own-use or free-use parts; the unpaid part of a cheap let; fines (§ 9(5) with § 4(5) no. 8 EStG); income tax, solidarity surcharge and church tax.",
+    "after": "- **Not deductible**: loan principal (Tilgung); transfer tax, notary and broker on the purchase (they go into acquisition cost); reserve payments until spent; costs attributable to own-use or free-use parts; the unpaid part of a cheap let; fines (§ 9(5) with § 4(5) no. 8 EStG); income tax, solidarity surcharge and church tax.\n\nFor mixed private and rental use, first attribute identifiable costs directly. Allocate shared costs by a justified, documented measure, such as the actual usable-floor-area ratio, and explain a first allocation (published 2025 ELSTER instructions, applied here to the unchanged rental-expense principle, not claimed 2026 form lines). For example, an identifiable rented-room repair of EUR 1,000 plus a shared roof repair of EUR 10,000 at an independently supported 20% rental share gives EUR 3,000 rental costs before any other applicable limitation; private-only costs stay excluded. The 20% is a stipulated allocation fact, not a universal prescribed ratio."
+  },
+  {
+    "before": "- **After four years**, AfA runs on the remaining value ([§ 7a(9) EStG](https://www.gesetze-im-internet.de/estg/__7a.html); BMF letter, para. 66). Refer the computation.",
+    "after": "- **After the four-year benefit period**, regular AfA uses the remaining value and the § 7(4) percentage determined from the remaining mathematical useful life; for § 7(5a), apply its 5% rate to that remaining value ([§ 7a(9) EStG](https://www.gesetze-im-internet.de/estg/__7a.html); BMF letter, para. 66). The old-window 2026 sunset does not shorten that four-year period: the 2024 buyer above still uses unchanged regular AfA in 2027 and changes to § 7a(9) in 2028 (BMF para. 16). Establish the actual historical normal/special deductions and useful-life branch before computing; do not substitute a guessed partial-year balance."
+  },
+  {
+    "before": "- **For example**: an 80 m² flat applied for in 2024, completed and bought January 2026, Effizienzhaus 40 with the seal, let long-term, cost of the flat without land EUR 400,000 (land never enters § 7b: BMF letter, para. 43). 400,000 / 80 = EUR 5,000 per m², not over 5,200: qualifies. Base cap 80 × 4,000 = EUR 320,000; § 7b 320,000 × 5% = EUR 16,000 a year for 2026 to 2029, plus straight-line 400,000 × 3% = EUR 12,000 (January, no cut). At EUR 420,000 (EUR 5,250 per m²) there is no § 7b.",
+    "after": "- **For example**: an 80 m² flat applied for in 2024, completed and bought January 2026, Effizienzhaus 40 with the seal, let long-term, cost of the flat without land EUR 400,000 (land never enters § 7b: BMF letter, para. 43). 400,000 / 80 = EUR 5,000 per m², not over 5,200: qualifies. Base cap 80 × 4,000 = EUR 320,000; § 7b 320,000 × 5% = EUR 16,000 a year for 2026 to 2029, plus straight-line 400,000 × 3% = EUR 12,000 (January, no cut). At EUR 420,000 (EUR 5,250 per m²) there is no § 7b.\n\nContinuing that fully qualifying January 2026 straight-line example, four full years through 2029 deduct 4 × (EUR 12,000 regular AfA + EUR 16,000 special AfA). The residual building value is EUR 288,000. The mathematical 3% life is 100/3 years; after four years, 88/3 years remain. Regular annual AfA from 2030 is therefore EUR 288,000 ÷ (88/3) = EUR 9,818.1818… (EUR 9,818.18 displayed). This display rounding is not an independently established assessment-rounding rule. It is a January full-year fixture, not a formula for unverified historical partial-year or shorter-life facts."
+  },
+  {
+    "before": "| At least 50% and less than 66% | Surplus forecast: positive, all costs deductible; negative, split (2025 instructions; BMF letter of 8 October 2004, para. 13 as applied from 2021) |",
+    "after": "| At least 50% and less than 66% | Under the published 2025 ELSTER instruction, a forecast with no loss, including exactly zero, gives full cost deduction; a forecast loss requires splitting. This is the dated administrative method used here on the unchanged 2026 statutory band; the older BMF para. 13 uses positive-surplus wording. |"
+  },
+  {
+    "before": "  - **Result**: a positive total gives full deduction of all costs; a negative total splits the let as under 50%.",
+    "after": "  - **Result**: apply the published 2025 ELSTER no-loss instruction to this unchanged 2026 band: a zero or positive forecast gives full deduction; a negative forecast splits the let as under 50%. This identifies the current published administrative branch, rather than claiming that the older BMF positive-surplus wording expressly settles equality."
+  }
+]

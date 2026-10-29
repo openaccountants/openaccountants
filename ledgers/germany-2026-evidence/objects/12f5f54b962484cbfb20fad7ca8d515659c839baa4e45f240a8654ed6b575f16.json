@@ -1,0 +1,9 @@
+{
+  "schema_errors": [],
+  "schema_warnings": [],
+  "examples_exit": 0,
+  "examples_output": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+  "diff_exit": 0,
+  "diff_output": "",
+  "scope": "Root writer repairs DE-L08/L09; country review pending"
+}

@@ -1,0 +1,432 @@
+{
+  "count": 71,
+  "controls": [
+    {
+      "name": "actualofficial20000class1",
+      "actual": "380",
+      "expected": "380",
+      "pass": true
+    },
+    {
+      "name": "actualofficial20000class2",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "actualofficial20000class3",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "actualofficial20000class5",
+      "actual": "2234",
+      "expected": "2234",
+      "pass": true
+    },
+    {
+      "name": "actualofficial20000class6",
+      "actual": "2766",
+      "expected": "2766",
+      "pass": true
+    },
+    {
+      "name": "actualofficial60000class1",
+      "actual": "9389",
+      "expected": "9389",
+      "pass": true
+    },
+    {
+      "name": "actualofficial60000class2",
+      "actual": "8091",
+      "expected": "8091",
+      "pass": true
+    },
+    {
+      "name": "actualofficial60000class3",
+      "actual": "4822",
+      "expected": "4822",
+      "pass": true
+    },
+    {
+      "name": "actualofficial60000class5",
+      "actual": "15364",
+      "expected": "15364",
+      "pass": true
+    },
+    {
+      "name": "actualofficial60000class6",
+      "actual": "15895",
+      "expected": "15895",
+      "pass": true
+    },
+    {
+      "name": "actualofficial100000class1",
+      "actual": "23248",
+      "expected": "23248",
+      "pass": true
+    },
+    {
+      "name": "actualofficial100000class2",
+      "actual": "21634",
+      "expected": "21634",
+      "pass": true
+    },
+    {
+      "name": "actualofficial100000class3",
+      "actual": "15012",
+      "expected": "15012",
+      "pass": true
+    },
+    {
+      "name": "actualofficial100000class5",
+      "actual": "30157",
+      "expected": "30157",
+      "pass": true
+    },
+    {
+      "name": "actualofficial100000class6",
+      "actual": "30689",
+      "expected": "30689",
+      "pass": true
+    },
+    {
+      "name": "case1VSP",
+      "actual": "12090",
+      "expected": "12090",
+      "pass": true
+    },
+    {
+      "name": "case1zve",
+      "actual": "46644",
+      "expected": "46644",
+      "pass": true
+    },
+    {
+      "name": "case1tax",
+      "actual": "9389",
+      "expected": "9389",
+      "pass": true
+    },
+    {
+      "name": "case1monthly",
+      "actual": "78241/100",
+      "expected": "78241/100",
+      "pass": true
+    },
+    {
+      "name": "case1eeRV",
+      "actual": "465",
+      "expected": "465",
+      "pass": true
+    },
+    {
+      "name": "case1eeAV",
+      "actual": "65",
+      "expected": "65",
+      "pass": true
+    },
+    {
+      "name": "case1eeKV",
+      "actual": "875/2",
+      "expected": "875/2",
+      "pass": true
+    },
+    {
+      "name": "case1eePV",
+      "actual": "120",
+      "expected": "120",
+      "pass": true
+    },
+    {
+      "name": "case1totalcontributions",
+      "actual": "2175/2",
+      "expected": "2175/2",
+      "pass": true
+    },
+    {
+      "name": "case1net",
+      "actual": "313009/100",
+      "expected": "313009/100",
+      "pass": true
+    },
+    {
+      "name": "case2VSP",
+      "actual": "16266",
+      "expected": "16266",
+      "pass": true
+    },
+    {
+      "name": "case2zve",
+      "actual": "90468",
+      "expected": "90468",
+      "pass": true
+    },
+    {
+      "name": "case2tax",
+      "actual": "17826",
+      "expected": "17826",
+      "pass": true
+    },
+    {
+      "name": "case2monthly",
+      "actual": "2971/2",
+      "expected": "2971/2",
+      "pass": true
+    },
+    {
+      "name": "case2childBK",
+      "actual": "11626",
+      "expected": "11626",
+      "pass": true
+    },
+    {
+      "name": "case2churchstipulated8",
+      "actual": "23252/25",
+      "expected": "23252/25",
+      "pass": true
+    },
+    {
+      "name": "case2eeRV",
+      "actual": "15717/20",
+      "expected": "15717/20",
+      "pass": true
+    },
+    {
+      "name": "case2eeAV",
+      "actual": "2197/20",
+      "expected": "2197/20",
+      "pass": true
+    },
+    {
+      "name": "case2eeKV",
+      "actual": "496.97",
+      "expected": "496.97",
+      "pass": true
+    },
+    {
+      "name": "case2eePV",
+      "actual": "90.09",
+      "expected": "90.09",
+      "pass": true
+    },
+    {
+      "name": "case2erPV",
+      "actual": "104.63",
+      "expected": "104.63",
+      "pass": true
+    },
+    {
+      "name": "case2eeTotal",
+      "actual": "1482.76",
+      "expected": "1482.76",
+      "pass": true
+    },
+    {
+      "name": "mini603KV",
+      "actual": "78.39",
+      "expected": "78.39",
+      "pass": true
+    },
+    {
+      "name": "mini603RV",
+      "actual": "90.45",
+      "expected": "90.45",
+      "pass": true
+    },
+    {
+      "name": "mini603tax",
+      "actual": "12.06",
+      "expected": "12.06",
+      "pass": true
+    },
+    {
+      "name": "mini603own",
+      "actual": "21.71",
+      "expected": "21.71",
+      "pass": true
+    },
+    {
+      "name": "aktivMayDecroom",
+      "actual": "16000",
+      "expected": "16000",
+      "pass": true
+    },
+    {
+      "name": "aktiv2500taxpart",
+      "actual": "500",
+      "expected": "500",
+      "pass": true
+    },
+    {
+      "name": "taxLate1275",
+      "actual": "25/2",
+      "expected": "25/2",
+      "pass": true
+    },
+    {
+      "name": "svLate3480",
+      "actual": "69/2",
+      "expected": "69/2",
+      "pass": true
+    },
+    {
+      "name": "Oct10Saturday",
+      "actual": "5",
+      "expected": "5",
+      "pass": true
+    },
+    {
+      "name": "Oct12Monday",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "certificateFeb28Sunday",
+      "actual": "6",
+      "expected": "6",
+      "pass": true
+    },
+    {
+      "name": "certificateMar1Monday",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "lowmini100totalRV",
+      "actual": "651/20",
+      "expected": "651/20",
+      "pass": true
+    },
+    {
+      "name": "lowmini100employer",
+      "actual": "15",
+      "expected": "15",
+      "pass": true
+    },
+    {
+      "name": "lowmini100employee",
+      "actual": "351/20",
+      "expected": "351/20",
+      "pass": true
+    },
+    {
+      "name": "maternityaggregate100",
+      "actual": "100",
+      "expected": "100",
+      "pass": true
+    },
+    {
+      "name": "maternityone13subtraction",
+      "actual": "87",
+      "expected": "87",
+      "pass": true
+    },
+    {
+      "name": "maternityAG1share",
+      "actual": "261/5",
+      "expected": "261/5",
+      "pass": true
+    },
+    {
+      "name": "maternityAG2share",
+      "actual": "174/5",
+      "expected": "174/5",
+      "pass": true
+    },
+    {
+      "name": "precapjob1",
+      "actual": "1428050/209",
+      "expected": "1428050/209",
+      "pass": true
+    },
+    {
+      "name": "precapjob2",
+      "actual": "338000/209",
+      "expected": "338000/209",
+      "pass": true
+    },
+    {
+      "name": "U1stipulated80",
+      "actual": "800",
+      "expected": "800",
+      "pass": true
+    },
+    {
+      "name": "U1stipulated60",
+      "actual": "600",
+      "expected": "600",
+      "pass": true
+    },
+    {
+      "name": "Midijob1000totalbaseDisplay",
+      "actual": "854.06",
+      "expected": "854.06",
+      "pass": true
+    },
+    {
+      "name": "Midijob1000eebaseDisplay",
+      "actual": "568.36",
+      "expected": "568.36",
+      "pass": true
+    },
+    {
+      "name": "Midijob1000childlesssurchargebase1",
+      "actual": "5.12",
+      "expected": "5.12",
+      "pass": true
+    },
+    {
+      "name": "Midijob1000wrongbase2surcharge",
+      "actual": "3.41",
+      "expected": "3.41",
+      "pass": true
+    },
+    {
+      "name": "MidijobRVsharesreconcile",
+      "actual": "158.86",
+      "expected": "158.86",
+      "pass": true
+    },
+    {
+      "name": "MidijobAVsharesreconcile",
+      "actual": "22.20",
+      "expected": "22.20",
+      "pass": true
+    },
+    {
+      "name": "MidijobKVwith2.9sharesreconcile",
+      "actual": "149.46",
+      "expected": "149.46",
+      "pass": true
+    },
+    {
+      "name": "MidijobPVonechildsharesreconcile",
+      "actual": "30.74",
+      "expected": "30.74",
+      "pass": true
+    },
+    {
+      "name": "Midijobexact2000firstbase",
+      "actual": "2000",
+      "expected": "2000",
+      "pass": true
+    },
+    {
+      "name": "Midijobexact2000secondbase",
+      "actual": "2000",
+      "expected": "2000",
+      "pass": true
+    },
+    {
+      "name": "Midijob603.01positiveee",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    }
+  ],
+  "scope": "All2 original executable cases and narrative cases, all15 actual official20k/60k/100k vectors through independently verified FractionPAP helper; ordinary outside-Saxony Midijob formulas/rounding and meaningful new failure separators.8pctchurch is explicitly stipulated; no state-law/currentrate attestation. Saxony Midijob allocation not inferred."
+}

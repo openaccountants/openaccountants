@@ -1,0 +1,84 @@
+[
+  {
+    "finding": "Optimization-R1-partnership-return-option",
+    "LF": 164,
+    "before": "- **§ 1a KStG option.** A commercial or registered civil-law partnership, not a sole trader, may be taxed like a corporation. It cannot be revoked, is filed a month before the business year, and ends the EÜR and the § 35 EStG credit. https://www.gesetze-im-internet.de/kstg_1977/__1a.html",
+    "sources": [
+      {
+        "source": "Ue475dd2d8340b460",
+        "LF": [
+          7,
+          7
+        ],
+        "url": "https://www.gesetze-im-internet.de/kstg_1977/__1a.html",
+        "raw_sha256": "14babf9b722618db642f24e00a87bf6013b7e37be18359bd5ca002ee0946a698",
+        "reader_sha256": "92b2a25c9e24261b715e6689c19a1a8b8583e37f3b7425a1726ff8cab1cb5800",
+        "exact_quote": "(1) 1Auf unwiderruflichen Antrag sind für Zwecke der Besteuerung nach dem Einkommen eine Personenhandelsgesellschaft, Partnerschaftsgesellschaft oder eingetragene Gesellschaft bürgerlichen Rechts wie eine Kapitalgesellschaft (optierende Gesellschaft) und ihre Gesellschafter wie die nicht persönlich haftenden Gesellschafter einer Kapitalgesellschaft zu behandeln; § 217 Absatz 1 des Umwandlungsgesetzes gilt sinngemäß. 2Der Antrag ist von der Personenhandelsgesellschaft, Partnerschaftsgesellschaft oder eingetragenen Gesellschaft bürgerlichen Rechts nach amtlich vorgeschriebenem Datensatz über die amtlich bestimmte Schnittstelle elektronisch bei dem für die gesonderte und einheitliche Feststellung der Einkünfte nach § 180 der Abgabenordnung zuständigen Finanzamt spätestens einen Monat vor Beginn des Wirtschaftsjahrs zu stellen, ab dem die Besteuerung wie eine Kapitalgesellschaft gelten soll; § 31 Absatz 1a Satz 2 gilt entsprechend. 3Erfolgt für die Personenhandelsgesellschaft, Partnerschaftsgesellschaft oder eingetragene Gesellschaft bürgerlichen Rechts keine gesonderte und einheitliche Feststellung der Einkünfte, ist der Antrag bei dem für die Einkommensteuer oder Körperschaftsteuer des Gesellschafters zuständigen Finanzamt zu stellen. 4Erzielt eine Personenhandelsgesellschaft, Partnerschaftsgesellschaft oder eingetragene Gesellschaft bürgerlichen Rechts ausschließlich Einkünfte, die dem Steuerabzug vom Kapitalertrag oder dem Steuerabzug auf Grund des § 50a des Einkommensteuergesetzes unterliegen und gilt infolgedessen die Einkommensteuer nach § 50 Absatz 2 Satz 1 des Einkommensteuergesetzes oder die Körperschaftsteuer nach § 32 Absatz 1 als abgegolten, ist der Antrag bei dem Bundeszentralamt für Steuern zu stellen. 5Hat die Gesellschaft ihren Sitz im Inland, ist der Antrag abweichend von den Sätzen 3 und 4 bei dem Finanzamt zu stellen, in dessen Bezirk die Gesellschaft ihren Sitz hat. 6Die Sätze 1 bis 5 finden keine Anwendung auf 1.",
+        "read_on": "2026-10-29"
+      },
+      {
+        "source": "Ue475dd2d8340b460",
+        "LF": [
+          26,
+          26
+        ],
+        "url": "https://www.gesetze-im-internet.de/kstg_1977/__1a.html",
+        "raw_sha256": "14babf9b722618db642f24e00a87bf6013b7e37be18359bd5ca002ee0946a698",
+        "reader_sha256": "92b2a25c9e24261b715e6689c19a1a8b8583e37f3b7425a1726ff8cab1cb5800",
+        "exact_quote": "(4) 1Eine Gesellschaft, die nach Absatz 1 zur Körperschaftsbesteuerung optiert hat, kann beantragen, dass sie nicht mehr wie eine Kapitalgesellschaft und ihre Gesellschafter nicht mehr wie die nicht persönlich haftenden Gesellschafter einer Kapitalgesellschaft behandelt werden (Rückoption). 2Die Rückoption gilt als Formwechsel nach § 1 Absatz 1 Satz 1 Nummer 2 des Umwandlungssteuergesetzes mit der Maßgabe, dass § 9 Satz 3 des Umwandlungssteuergesetzes keine Anwendung findet. 3Absatz 1 Satz 2, 3 und 5 gilt mit der Maßgabe entsprechend, dass der Antrag bei dem für die Körperschaftsbesteuerung zuständigen Finanzamt zu stellen ist; in den Fällen des Absatzes 1 Satz 4 ist der Antrag bei dem Bundeszentralamt für Steuern zu stellen. 4Die Sätze 1 und 2 finden auch ohne Antrag Anwendung, wenn die Voraussetzungen des Absatzes 1 entfallen. 5Scheidet der vorletzte Gesellschafter aus der Gesellschaft aus, gilt die optierende Gesellschaft als unmittelbar danach aufgelöst und, sofern der verbleibende Gesellschafter die persönlichen Voraussetzungen eines übernehmenden Rechtsträgers einer Umwandlung einer Kapitalgesellschaft im Sinne des § 1 Absatz 1 Satz 1 Nummer 1 oder 4 des Umwandlungssteuergesetzes erfüllt, im Fall des § 1 Absatz 1 Satz 1 Nummer 1 des Umwandlungssteuergesetzes als auf den verbleibenden Gesellschafter verschmolzen beziehungsweise gilt im Fall des § 1 Absatz 1 Satz 1 Nummer 4 des Umwandlungssteuergesetzes das Vermögen der optierenden Gesellschaft als auf den verbleibenden Gesellschafter übertragen mit der Maßgabe, dass jeweils § 2 des Umwandlungssteuergesetzes keine Anwendung findet. 6Erfüllt der verbleibende Gesellschafter nicht die persönlichen Voraussetzungen eines übernehmenden Rechtsträgers einer Umwandlung einer Kapitalgesellschaft im Sinne des § 1 Absatz 1 Satz 1 Nummer 1 oder 4 des Umwandlungssteuergesetzes, gilt die optierende Gesellschaft als aufgelöst und ihr Vermögen als an die Gesellschafter ausgeschüttet; § 11 des Körperschaftsteuergesetzes ist entsprechend mit der Maßgabe anzuwenden, dass an die Stelle des zur Verteilung kommenden Vermögens der gemeine Wert des vorhandenen Vermögens tritt. 7Abweichend von Satz 4 gilt die Umwandlung der optierenden Gesellschaft in eine Körperschaft im Sinne des Umwandlungssteuergesetzes als Umwandlung einer Kapitalgesellschaft in eine Körperschaft.",
+        "read_on": "2026-10-29"
+      }
+    ],
+    "options": [
+      {
+        "label": "A: distinguish initial irrevocability from later return",
+        "after": "- **§ 1a KStG option.** A commercial or registered civil-law partnership, not a sole trader, may be taxed like a corporation. The initial application is irrevocable and is filed at least one month before the business year. A separate later Rückoption is available under § 1a(4), with its own deemed-conversion consequences. The corporate-tax option ends the EÜR and the § 35 EStG credit. https://www.gesetze-im-internet.de/kstg_1977/__1a.html"
+      },
+      {
+        "label": "B: concise referral preserving the later choice",
+        "after": "- **§ 1a KStG option.** A commercial or registered civil-law partnership, not a sole trader, may be taxed like a corporation. The initial application is irrevocable and is filed at least one month before the business year; § 1a(4) permits a later Rückoption. Both directions need a separate legal-form calculation. The corporate-tax option ends the EÜR and the § 35 EStG credit. https://www.gesetze-im-internet.de/kstg_1977/__1a.html"
+      }
+    ]
+  },
+  {
+    "finding": "Optimization-R2-inputVAT-gift-gate",
+    "LF": 363,
+    "before": "| Input VAT timing, § 15 | On receipt of the supply plus an invoice meeting § 14 UStG; payment is not a condition. None on gifts, guest houses, hunting or yachts |",
+    "sources": [
+      {
+        "source": "U9587b12f47ebdc37",
+        "LF": [
+          16,
+          16
+        ],
+        "url": "https://www.gesetze-im-internet.de/ustg_1980/__15.html",
+        "raw_sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+        "reader_sha256": "e819ae2c4a6a65834fee9861adf1ec100b520126163e240fe08fe6a6d1e80d74",
+        "exact_quote": "(1a) Nicht abziehbar sind Vorsteuerbeträge, die auf Aufwendungen, für die das Abzugsverbot des § 4 Abs. 5 Satz 1 Nr. 1 bis 4, 7 oder des § 12 Nr. 1 des Einkommensteuergesetzes gilt, entfallen. Dies gilt nicht für Bewirtungsaufwendungen, soweit § 4 Abs. 5 Satz 1 Nr. 2 des Einkommensteuergesetzes einen Abzug angemessener und nachgewiesener Aufwendungen ausschließt.",
+        "read_on": "2026-10-29"
+      },
+      {
+        "source": "U7059a8b10a1f492b",
+        "LF": [
+          16,
+          17
+        ],
+        "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+        "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+        "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+        "exact_quote": "(5) 1Die folgenden Betriebsausgaben dürfen den Gewinn nicht mindern: 1.\nAufwendungen für Geschenke an Personen, die nicht Arbeitnehmer des Steuerpflichtigen sind. 2Satz 1 gilt nicht, wenn die Anschaffungs- oder Herstellungskosten der dem Empfänger im Wirtschaftsjahr zugewendeten Gegenstände insgesamt 50 Euro nicht übersteigen;",
+        "read_on": "2026-10-29"
+      }
+    ],
+    "options": [
+      {
+        "label": "A: import only the actual income-tax prohibition",
+        "after": "| Input VAT timing, § 15 | On receipt of the supply plus an invoice meeting § 14 UStG; payment is not a condition. None on gifts, guest houses, hunting or yachts |"
+      },
+      {
+        "label": "B: retain the practical gift separator",
+        "after": "| Input VAT timing, § 15 | On receipt of the supply plus an invoice meeting § 14 UStG; payment is not a condition. None on gifts, guest houses, hunting or yachts |"
+      }
+    ]
+  }
+]

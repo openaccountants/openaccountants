@@ -1,0 +1,117 @@
+{
+  "R114.RIESTER": {
+    "id": "OPT.RIESTER",
+    "url": "https://www.gesetze-im-internet.de/estg/__10a.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e9c51969bc671dd.body",
+    "raw_sha256": "f826f1a860a00fe79b1fe1bb1cb921f4e59b02be61cbefd4d8baea151cd68926",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e9c51969bc671dd.reader.txt",
+    "reader_sha256": "27137a2a852ac0fd8840d155543d6239451746f1e2422e4d3ef832a24b944014",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "source": "U5e9c51969bc671dd",
+    "article": "EStG10a(1)eligiblepersons",
+    "LF_start": 7,
+    "LF_end": 8,
+    "exact_quote": "(1) 1In der inländischen gesetzlichen Rentenversicherung Pflichtversicherte können Altersvorsorgebeiträge (§ 82) zuzüglich der dafür nach Abschnitt XI zustehenden Zulage jährlich bis zu 2 100 Euro als Sonderausgaben abziehen; das Gleiche gilt für 1.\nEmpfänger von inländischer Besoldung nach dem Bundesbesoldungsgesetz oder einem Landesbesoldungsgesetz,",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "native_LF": [
+      7,
+      8
+    ],
+    "provenance": "Own selected entire operative quote/nativeLF actually reread for R114 after C finding; no acquisition or full-body read claim."
+  },
+  "R114.RIESTERTEST": {
+    "id": "OPT.RIESTERTEST",
+    "url": "https://www.gesetze-im-internet.de/estg/__10a.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e9c51969bc671dd.body",
+    "raw_sha256": "f826f1a860a00fe79b1fe1bb1cb921f4e59b02be61cbefd4d8baea151cd68926",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5e9c51969bc671dd.reader.txt",
+    "reader_sha256": "27137a2a852ac0fd8840d155543d6239451746f1e2422e4d3ef832a24b944014",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "source": "U5e9c51969bc671dd",
+    "article": "EStG10a(2)favourabilitytest",
+    "LF_start": 24,
+    "LF_end": 24,
+    "exact_quote": "(2) 1Ist der Sonderausgabenabzug nach Absatz 1 für den Steuerpflichtigen günstiger als der Anspruch auf die Zulage nach Abschnitt XI, erhöht sich die unter Berücksichtigung des Sonderausgabenabzugs ermittelte tarifliche Einkommensteuer um den Anspruch auf Zulage. 2In den anderen Fällen scheidet der Sonderausgabenabzug aus. 3Die Günstigerprüfung wird von Amts wegen vorgenommen.",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "native_LF": [
+      24,
+      24
+    ],
+    "provenance": "Own selected entire operative quote/nativeLF actually reread for R114 after C finding; no acquisition or full-body read claim."
+  },
+  "R114.RIESTERBASE": {
+    "id": "OPT.RIESTERBASE",
+    "url": "https://www.gesetze-im-internet.de/estg/__84.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uf3aa8c5476b5b879.body",
+    "raw_sha256": "fecf21749928d47aa284cc5113f0093969f20bf9bb2dac2d7fdf6503398bb9fa",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uf3aa8c5476b5b879.reader.txt",
+    "reader_sha256": "b011507e0d1f07bb42d561a179ac5414658b98d851f28b3a96f5e949fb3b7ecd",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "source": "Uf3aa8c5476b5b879",
+    "article": "EStG84allowance",
+    "LF_start": 7,
+    "LF_end": 7,
+    "exact_quote": "1Jeder Zulageberechtigte erhält eine Grundzulage; diese beträgt ab dem Beitragsjahr 2018 jährlich 175 Euro. 2Für Zulageberechtigte nach § 79 Satz 1, die zu Beginn des Beitragsjahres (§ 88) das 25. Lebensjahr noch nicht vollendet haben, erhöht sich die Grundzulage nach Satz 1 um einmalig 200 Euro. 3Die Erhöhung nach Satz 2 ist für das erste nach dem 31. Dezember 2007 beginnende Beitragsjahr zu gewähren, für das eine Altersvorsorgezulage beantragt wird.",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "native_LF": [
+      7,
+      7
+    ],
+    "provenance": "Own selected entire operative quote/nativeLF actually reread for R114 after C finding; no acquisition or full-body read claim."
+  },
+  "R114.RIESTERCHILD": {
+    "id": "OPT.RIESTERCHILD",
+    "url": "https://www.gesetze-im-internet.de/estg/__85.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4bf6f04b5fd62730.body",
+    "raw_sha256": "197e1823c7ae1f6c6a555f25f2c8251641d258c15ec8c6f3e555dbc66dabb3d0",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4bf6f04b5fd62730.reader.txt",
+    "reader_sha256": "4bccf970ebd0ac6117c12c86c577f459d3ed3a5e42465821af2be7fb07c47214",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "source": "U4bf6f04b5fd62730",
+    "article": "EStG85childallowance/allocation",
+    "LF_start": 7,
+    "LF_end": 8,
+    "exact_quote": "(1) 1Die Kinderzulage beträgt für jedes Kind, für das gegenüber dem Zulageberechtigten Kindergeld festgesetzt wird, jährlich 185 Euro. 2Für ein nach dem 31. Dezember 2007 geborenes Kind erhöht sich die Kinderzulage nach Satz 1 auf 300 Euro. 3Der Anspruch auf Kinderzulage entfällt für den Veranlagungszeitraum, für den das Kindergeld insgesamt zurückgefordert wird. 4Erhalten mehrere Zulageberechtigte für dasselbe Kind Kindergeld, steht die Kinderzulage demjenigen zu, dem gegenüber für den ersten Anspruchszeitraum (§ 66 Absatz 2) im Kalenderjahr Kindergeld festgesetzt worden ist.\n(2) 1Bei Eltern verschiedenen Geschlechts, die miteinander verheiratet sind, nicht dauernd getrennt leben (§ 26 Absatz 1) und ihren Wohnsitz oder gewöhnlichen Aufenthalt in einem Mitgliedstaat der Europäischen Union oder einem Staat haben, auf den das Abkommen über den Europäischen Wirtschaftsraum (EWR-Abkommen) anwendbar ist, wird die Kinderzulage der Mutter zugeordnet, auf Antrag beider Eltern dem Vater. 2Bei Eltern gleichen Geschlechts, die miteinander verheiratet sind oder eine Lebenspartnerschaft führen, nicht dauernd getrennt leben (§ 26 Absatz 1) und ihren Wohnsitz oder gewöhnlichen Aufenthalt in einem Mitgliedstaat der Europäischen Union oder einem Staat haben, auf den das EWR-Abkommen anwendbar ist, ist die Kinderzulage dem Elternteil zuzuordnen, dem gegenüber das Kindergeld festgesetzt wird, auf Antrag beider Eltern dem anderen Elternteil. 3Der Antrag kann für ein abgelaufenes Beitragsjahr nicht zurückgenommen werden.",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "native_LF": [
+      7,
+      8
+    ],
+    "provenance": "Own selected entire operative quote/nativeLF actually reread for R114 after C finding; no acquisition or full-body read claim."
+  },
+  "R114.RIESTERMIND": {
+    "id": "OPT.RIESTERMIND",
+    "url": "https://www.gesetze-im-internet.de/estg/__86.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud6c709ee8fb1a0bb.body",
+    "raw_sha256": "b500402e4ace5a18d413adb7146a3702499cb87db60b87eb6507fa8bc78cce15",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud6c709ee8fb1a0bb.reader.txt",
+    "reader_sha256": "e2c3d48be407db079ea173ddb5e9f06bb44dd4516f595dd4b8631234e38cb0c5",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "source": "Ud6c709ee8fb1a0bb",
+    "article": "EStG86minimum/reduction",
+    "LF_start": 7,
+    "LF_end": 15,
+    "exact_quote": "(1) 1Die Zulage nach den §§ 84 und 85 wird gekürzt, wenn der Zulageberechtigte nicht den Mindesteigenbeitrag leistet. 2Dieser beträgt jährlich 4 Prozent der Summe der in dem dem Kalenderjahr vorangegangenen Kalenderjahr 1.\nerzielten beitragspflichtigen Einnahmen im Sinne des Sechsten Buches Sozialgesetzbuch,\n2.\nbezogenen Besoldung und Amtsbezüge,\n3.\nin den Fällen des § 10a Absatz 1 Satz 1 Nummer 3 und Nummer 4 erzielten Einnahmen, die beitragspflichtig wären, wenn die Versicherungsfreiheit in der gesetzlichen Rentenversicherung nicht bestehen würde und\n4.\nbezogenen Rente wegen voller Erwerbsminderung oder Erwerbsunfähigkeit oder bezogenen Versorgungsbezüge wegen Dienstunfähigkeit in den Fällen des § 10a Absatz 1 Satz 4,\njedoch nicht mehr als der in § 10a Absatz 1 Satz 1 genannte Höchstbetrag, vermindert um die Zulage nach den §§ 84 und 85; gehört der Ehegatte zum Personenkreis nach § 79 Satz 2, berechnet sich der Mindesteigenbeitrag des nach § 79 Satz 1 Begünstigten unter Berücksichtigung der den Ehegatten insgesamt zustehenden Zulagen. 3Auslandsbezogene Bestandteile nach den §§ 52 ff. des Bundesbesoldungsgesetzes oder entsprechender Regelungen eines Landesbesoldungsgesetzes bleiben unberücksichtigt. 4Als Sockelbetrag sind ab dem Jahr 2005 jährlich 60 Euro zu leisten. 5Ist der Sockelbetrag höher als der Mindesteigenbeitrag nach Satz 2, so ist der Sockelbetrag als Mindesteigenbeitrag zu leisten. 6Die Kürzung der Zulage ermittelt sich nach dem Verhältnis der Altersvorsorgebeiträge zum Mindesteigenbeitrag.",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "native_LF": [
+      7,
+      15
+    ],
+    "provenance": "Own selected entire operative quote/nativeLF actually reread for R114 after C finding; no acquisition or full-body read claim."
+  }
+}

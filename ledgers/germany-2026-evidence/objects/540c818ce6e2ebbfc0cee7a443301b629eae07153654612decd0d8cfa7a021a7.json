@@ -1,0 +1,257 @@
+{
+  "R57-60.WHTSOLI": {
+    "id": "R57-60.WHTSOLI",
+    "url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-3-20261024.html",
+    "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc748242e6e54c746.reader.txt",
+    "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "SolzG §3(1) nos5/6",
+    "native_LF": [
+      21,
+      26
+    ],
+    "exact_quote": "5.\nsoweit Kapitalertragsteuer oder Zinsabschlag zu erheben ist außer in den Fällen des § 43b des Einkommensteuergesetzes:\nnach der ab 1. Januar 1998 zu erhebenden Kapitalertragsteuer oder dem ab diesem Zeitpunkt zu erhebenden Zinsabschlag;\n6.\nsoweit bei beschränkt Steuerpflichtigen ein Steuerabzugsbetrag nach § 50a des Einkommensteuergesetzes zu erheben ist:\nnach dem ab 1. Januar 1998 zu erhebenden Steuerabzugsbetrag.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Entire selected original quotation actually read here and literal native scope verified; Italianart2(4)also visually compared onphysical3. Raw unchanged, no whole treaty/acquisition/read inference."
+  },
+  "R57-60.PARENT": {
+    "id": "R57-60.PARENT",
+    "url": "https://www.gesetze-im-internet.de/estg/__43b.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6663ef2d9a58d6ba.body",
+    "raw_sha256": "7fc716c919b01466e54c4b19e389d5f1b7240340bb758206ba763be5612457d3",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6663ef2d9a58d6ba.reader.txt",
+    "reader_sha256": "eccee8afd7f632b6b0ab0484d2be8c2151c29fa59d42182c8566f056ea8fb28b",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG43b(1)/(2)including12months/refund",
+    "native_LF": [
+      7,
+      14
+    ],
+    "exact_quote": "(1) 1Auf Antrag wird die Kapitalertragsteuer für Kapitalerträge im Sinne des § 20 Absatz 1 Nummer 1, die einer Muttergesellschaft, die weder ihren Sitz noch ihre Geschäftsleitung im Inland hat, oder einer in einem anderen Mitgliedstaat der Europäischen Union gelegenen Betriebsstätte dieser Muttergesellschaft, aus Ausschüttungen einer Tochtergesellschaft zufließen, nicht erhoben; § 50d Absatz 3 gilt entsprechend. 2Satz 1 gilt auch für Ausschüttungen einer Tochtergesellschaft, die einer in einem anderen Mitgliedstaat der Europäischen Union gelegenen Betriebsstätte einer unbeschränkt steuerpflichtigen Muttergesellschaft zufließen. 3Ein Zufluss an die Betriebsstätte liegt nur vor, wenn die Beteiligung an der Tochtergesellschaft tatsächlich zu dem Betriebsvermögen der Betriebsstätte gehört. 4Die Sätze 1 bis 3 gelten nicht für Kapitalerträge im Sinne des § 20 Absatz 1 Nummer 1, die anlässlich der Liquidation oder Umwandlung einer Tochtergesellschaft zufließen.\n(2) 1Muttergesellschaft im Sinne des Absatzes 1 ist jede Gesellschaft, die 1.\ndie in der Anlage 2 zu diesem Gesetz bezeichneten Voraussetzungen erfüllt und\n2.\nnach Artikel 3 Absatz 1 Buchstabe a der Richtlinie 2011/96/EU des Rates vom 30. November 2011 über das gemeinsame Steuersystem der Mutter- und Tochtergesellschaften verschiedener Mitgliedstaaten (ABl. L 345 vom 29.12.2011, S. 8), die zuletzt durch die Richtlinie 2014/86/EU (ABl. L 219 vom 25.7.2014, S. 40) geändert worden ist, zum Zeitpunkt der Entstehung der Kapitalertragsteuer gemäß § 44 Absatz 1 Satz 2 nachweislich mindestens zu 10 Prozent unmittelbar am Kapital der Tochtergesellschaft beteiligt ist (Mindestbeteiligung).\n2Ist die Mindestbeteiligung zu diesem Zeitpunkt nicht erfüllt, ist der Zeitpunkt des Gewinnverteilungsbeschlusses maßgeblich. 3Tochtergesellschaft im Sinne des Absatzes 1 sowie des Satzes 1 ist jede unbeschränkt steuerpflichtige Gesellschaft, die die in der Anlage 2 zu diesem Gesetz und in Artikel 3 Absatz 1 Buchstabe b der Richtlinie 2011/96/EU bezeichneten Voraussetzungen erfüllt. 4Weitere Voraussetzung ist, dass die Beteiligung nachweislich ununterbrochen zwölf Monate besteht. 5Wird dieser Beteiligungszeitraum nach dem Zeitpunkt der Entstehung der Kapitalertragsteuer gemäß § 44 Absatz 1 Satz 2 vollendet, ist die einbehaltene und abgeführte Kapitalertragsteuer nach § 50c Absatz 3 zu erstatten; das Freistellungsverfahren nach § 50c Absatz 2 ist ausgeschlossen.\n(2a) Betriebsstätte im Sinne der Absätze 1 und 2 ist eine feste Geschäftseinrichtung in einem anderen Mitgliedstaat der Europäischen Union, durch die die Tätigkeit der Muttergesellschaft ganz oder teilweise ausgeübt wird, wenn das Besteuerungsrecht für die Gewinne dieser Geschäftseinrichtung nach dem jeweils geltenden Abkommen zur Vermeidung der Doppelbesteuerung dem Staat, in dem sie gelegen ist, zugewiesen wird und diese Gewinne in diesem Staat der Besteuerung unterliegen.\n(3) (weggefallen)",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Entire selected original quotation actually read here and literal native scope verified; Italianart2(4)also visually compared onphysical3. Raw unchanged, no whole treaty/acquisition/read inference."
+  },
+  "R57-60.EUGATES": {
+    "id": "R57-60.EUGATES",
+    "url": "https://www.gesetze-im-internet.de/estg/__50g.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.body",
+    "raw_sha256": "670b886e42956deab6140d8bc2f97e653abd54420558c83a487b6a7fd9b81bc1",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.reader.txt",
+    "reader_sha256": "edad2340bbacd4b47ef225febd7946757db154dd073538b4de76700a8aa6fd23",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG50g(3)beneficialowner/company/association",
+    "native_LF": [
+      15,
+      48
+    ],
+    "exact_quote": "(3) Für die Anwendung der Absätze 1 und 2 gelten die folgenden Begriffsbestimmungen und Beschränkungen: 1.\nDer Gläubiger muss der Nutzungsberechtigte sein. 2Nutzungsberechtigter ist a)\nein Unternehmen, wenn es die Einkünfte im Sinne von § 2 Absatz 1 erzielt;\nb)\neine Betriebsstätte, wenn aa)\ndie Forderung, das Recht oder der Gebrauch von Informationen, auf Grund derer/dessen Zahlungen von Zinsen oder Lizenzgebühren geleistet werden, tatsächlich zu der Betriebsstätte gehört und\nbb)\ndie Zahlungen der Zinsen oder Lizenzgebühren Einkünfte darstellen, auf Grund derer die Gewinne der Betriebsstätte in dem Mitgliedstaat der Europäischen Union, in dem sie gelegen ist, zu einer der in Nummer 5 Satz 1 Buchstabe a Doppelbuchstabe cc genannten Steuern beziehungsweise im Fall Belgiens dem „impôt des non-résidents/belasting der nietverblijfhouders“ beziehungsweise im Fall Spaniens dem „Impuesto sobre la Renta de no Residentes“ oder zu einer mit diesen Steuern identischen oder weitgehend ähnlichen Steuer herangezogen werden, die nach dem jeweiligen Zeitpunkt des Inkrafttretens der Richtlinie 2003/49/EG des Rates vom 3. Juni 2003 über eine gemeinsame Steuerregelung für Zahlungen von Zinsen und Lizenzgebühren zwischen verbundenen Unternehmen verschiedener Mitgliedstaaten (ABl. L 157 vom 26.6.2003, S. 49), die zuletzt durch die Richtlinie 2013/13/EU (ABl. L 141 vom 28.5.2013, S. 30) geändert worden ist, anstelle der bestehenden Steuern oder ergänzend zu ihnen eingeführt wird.\n2.\nEine Betriebsstätte gilt nur dann als Schuldner der Zinsen oder Lizenzgebühren, wenn die Zahlung bei der Ermittlung des Gewinns der Betriebsstätte eine steuerlich abzugsfähige Betriebsausgabe ist.\n3.\nGilt eine Betriebsstätte eines Unternehmens eines Mitgliedstaates der Europäischen Union als Schuldner oder Gläubiger von Zinsen oder Lizenzgebühren, so wird kein anderer Teil des Unternehmens als Schuldner oder Gläubiger der Zinsen oder Lizenzgebühren angesehen.\n4.\nIm Sinne des Absatzes 1 sind a)\n„Zinsen“ Einkünfte aus Forderungen jeder Art, auch wenn die Forderungen durch Pfandrechte an Grundstücken gesichert sind, insbesondere Einkünfte aus öffentlichen Anleihen und aus Obligationen einschließlich der damit verbundenen Aufgelder und der Gewinne aus Losanleihen; Zuschläge für verspätete Zahlung und die Rückzahlung von Kapital gelten nicht als Zinsen;\nb)\n„Lizenzgebühren“ Vergütungen jeder Art, die für die Nutzung oder für das Recht auf Nutzung von Urheberrechten an literarischen, künstlerischen oder wissenschaftlichen Werken, einschließlich kinematografischer Filme und Software, von Patenten, Marken, Mustern oder Modellen, Plänen, geheimen Formeln oder Verfahren oder für die Mitteilung gewerblicher, kaufmännischer oder wissenschaftlicher Erfahrungen gezahlt werden; Zahlungen für die Nutzung oder das Recht auf Nutzung gewerblicher, kaufmännischer oder wissenschaftlicher Ausrüstungen gelten als Lizenzgebühren.\n5.\nDie Ausdrücke „Unternehmen eines Mitgliedstaates der Europäischen Union“, „verbundenes Unternehmen“ und „Betriebsstätte“ bedeuten: a)\n„Unternehmen eines Mitgliedstaates der Europäischen Union“ jedes Unternehmen, das aa)\neine der in Anlage 3 Nummer 1 zu diesem Gesetz aufgeführten Rechtsformen aufweist und\nbb)\nnach dem Steuerrecht eines Mitgliedstaates in diesem Mitgliedstaat ansässig ist und nicht nach einem zwischen dem betreffenden Staat und einem Staat außerhalb der Europäischen Union geschlossenen Abkommen zur Vermeidung der Doppelbesteuerung von Einkünften für steuerliche Zwecke als außerhalb der Gemeinschaft ansässig gilt und\ncc)\neiner der in Anlage 3 Nummer 2 zu diesem Gesetz aufgeführten Steuern unterliegt und nicht von ihr befreit ist. 2Entsprechendes gilt für eine mit diesen Steuern identische oder weitgehend ähnliche Steuer, die nach dem jeweiligen Zeitpunkt des Inkrafttretens der Richtlinie 2003/49/EG des Rates vom 3. Juni 2003 (ABl. L 157 vom 26.6.2003, S. 49), zuletzt geändert durch die Richtlinie 2013/13/EU (ABl. L 141 vom 28.5.2013, S. 30) anstelle der bestehenden Steuern oder ergänzend zu ihnen eingeführt wird.\n2Ein Unternehmen ist im Sinne von Doppelbuchstabe bb in einem Mitgliedstaat der Europäischen Union ansässig, wenn es der unbeschränkten Steuerpflicht im Inland oder einer vergleichbaren Besteuerung in einem anderen Mitgliedstaat der Europäischen Union nach dessen Rechtsvorschriften unterliegt.\nb)\n„Verbundenes Unternehmen“ jedes Unternehmen, das dadurch mit einem zweiten Unternehmen verbunden ist, dass aa)\ndas erste Unternehmen unmittelbar mindestens zu 25 Prozent an dem Kapital des zweiten Unternehmens beteiligt ist oder\nbb)\ndas zweite Unternehmen unmittelbar mindestens zu 25 Prozent an dem Kapital des ersten Unternehmens beteiligt ist oder\ncc)\nein drittes Unternehmen unmittelbar mindestens zu 25 Prozent an dem Kapital des ersten Unternehmens und dem Kapital des zweiten Unternehmens beteiligt ist.\n2Die Beteiligungen dürfen nur zwischen Unternehmen bestehen, die in einem Mitgliedstaat der Europäischen Union ansässig sind.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Entire selected original quotation actually read here and literal native scope verified; Italianart2(4)also visually compared onphysical3. Raw unchanged, no whole treaty/acquisition/read inference."
+  },
+  "R57-60.SWISS": {
+    "id": "R57-60.SWISS",
+    "url": "https://www.gesetze-im-internet.de/estg/__50g.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.body",
+    "raw_sha256": "670b886e42956deab6140d8bc2f97e653abd54420558c83a487b6a7fd9b81bc1",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.reader.txt",
+    "reader_sha256": "edad2340bbacd4b47ef225febd7946757db154dd073538b4de76700a8aa6fd23",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG50g(6)Swisscompanies",
+    "native_LF": [
+      53,
+      63
+    ],
+    "exact_quote": "(6) 1Ist im Fall des Absatzes 1 Satz 1 eines der Unternehmen ein Unternehmen der Schweizerischen Eidgenossenschaft oder ist eine in der Schweizerischen Eidgenossenschaft gelegene Betriebsstätte eines Unternehmens eines anderen Mitgliedstaats der Europäischen Union Gläubiger der Zinsen oder Lizenzgebühren, gelten die Absätze 1 bis 5 entsprechend mit der Maßgabe, dass die Schweizerische Eidgenossenschaft insoweit einem Mitgliedstaat der Europäischen Union gleichgestellt ist. 2Absatz 3 Nummer 5 Buchstabe a gilt entsprechend mit der Maßgabe, dass ein Unternehmen der Schweizerischen Eidgenossenschaft jedes Unternehmen ist, das 1.\neine der folgenden Rechtsformen aufweist: –\nAktiengesellschaft/société anonyme/società anonima;\n–\nGesellschaft mit beschränkter Haftung/société à responsabilité limitée/società à responsabilità limitata;\n–\nKommanditaktiengesellschaft/société en commandite par actions/società in accomandita per azioni, und\n2.\nnach dem Steuerrecht der Schweizerischen Eidgenossenschaft dort ansässig ist und nicht nach einem zwischen der Schweizerischen Eidgenossenschaft und einem Staat außerhalb der Europäischen Union geschlossenen Abkommen zur Vermeidung der Doppelbesteuerung von Einkünften für steuerliche Zwecke als außerhalb der Gemeinschaft oder der Schweizerischen Eidgenossenschaft ansässig gilt, und\n3.\nunbeschränkt der schweizerischen Körperschaftsteuer unterliegt, ohne von ihr befreit zu sein.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Entire selected original quotation actually read here and literal native scope verified; Italianart2(4)also visually compared onphysical3. Raw unchanged, no whole treaty/acquisition/read inference."
+  },
+  "R57-60.PORTFOLIO": {
+    "id": "R57-60.PORTFOLIO",
+    "url": "https://www.gesetze-im-internet.de/estg/__50j.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud3e0b0d09cbc2951.body",
+    "raw_sha256": "34d87bee1a69ad9d31dfdb1b0fb849c8ccf32678081761f5ff6cb4b22784e9d7",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud3e0b0d09cbc2951.reader.txt",
+    "reader_sha256": "3cd1c2940a8a21016ce28ab7045c4e324e5fbd0858baf8458835ff5bf616057f",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG50j(1)-(4)includingoneyearexception",
+    "native_LF": [
+      7,
+      20
+    ],
+    "exact_quote": "(1) 1Ein Gläubiger von Kapitalerträgen im Sinne des § 43 Absatz 1 Satz 1 Nummer 1a, die nach einem Abkommen zur Vermeidung der Doppelbesteuerung nicht oder nur nach einem Steuersatz unterhalb des Steuersatzes des § 43a Absatz 1 Satz 1 Nummer 1 besteuert werden, hat ungeachtet dieses Abkommens nur dann Anspruch auf völlige oder teilweise Entlastung nach § 50c Absatz 3, wenn er 1.\nwährend der Mindesthaltedauer nach Absatz 2 hinsichtlich der diesen Kapitalerträgen zugrunde liegenden Anteile oder Genussscheine ununterbrochen wirtschaftlicher Eigentümer ist,\n2.\nwährend der Mindesthaltedauer nach Absatz 2 ununterbrochen das Mindestwertänderungsrisiko nach Absatz 3 trägt und\n3.\nnicht verpflichtet ist, die Kapitalerträge im Sinne des § 43 Absatz 1 Satz 1 Nummer 1a ganz oder überwiegend, unmittelbar oder mittelbar anderen Personen zu vergüten.\n2Satz 1 gilt entsprechend für Anteile oder Genussscheine, die zu inländischen Kapitalerträgen im Sinne des § 43 Absatz 3 Satz 1 führen und einer Wertpapiersammelbank im Ausland zur Verwahrung anvertraut sind.\n(2) 1Die Mindesthaltedauer umfasst 45 Tage und muss innerhalb eines Zeitraums von 45 Tagen vor und 45 Tagen nach der Fälligkeit der Kapitalerträge erreicht werden. 2Bei Anschaffungen und Veräußerungen ist zu unterstellen, dass die zuerst angeschafften Anteile oder Genussscheine zuerst veräußert wurden.\n(3) 1Der Gläubiger der Kapitalerträge muss unter Berücksichtigung von gegenläufigen Ansprüchen und Ansprüchen nahe stehender Personen das Risiko aus einem sinkenden Wert der Anteile oder Genussscheine im Umfang von mindestens 70 Prozent tragen (Mindestwertänderungsrisiko). 2Kein hinreichendes Mindestwertänderungsrisiko liegt insbesondere dann vor, wenn der Gläubiger der Kapitalerträge oder eine ihm nahe stehende Person Kurssicherungsgeschäfte abgeschlossen hat, die das Wertänderungsrisiko der Anteile oder Genussscheine unmittelbar oder mittelbar um mehr als 30 Prozent mindern.\n(4) 1Die Absätze 1 bis 3 sind nur anzuwenden, wenn 1.\ndie Steuer auf die dem Antrag zu Grunde liegenden Kapitalerträge nach einem Abkommen zur Vermeidung der Doppelbesteuerung 15 Prozent des Bruttobetrags der Kapitalerträge im Sinne des § 43 Absatz 1 Satz 1 Nummer 1a und des Absatzes 1 Satz 2 unterschreitet und\n2.\nes sich nicht um Kapitalerträge handelt, die einer beschränkt steuerpflichtigen Kapitalgesellschaft, die am Nennkapital einer unbeschränkt steuerpflichtigen Kapitalgesellschaft im Sinne des § 1 Absatz 1 Nummer 1 des Körperschaftsteuergesetzes zu mindestens einem Zehntel unmittelbar beteiligt ist und im Staat ihrer Ansässigkeit den Steuern vom Einkommen oder Gewinn unterliegt, ohne davon befreit zu sein, von der unbeschränkt steuerpflichtigen Kapitalgesellschaft zufließen.\n2Die Absätze 1 bis 3 sind nicht anzuwenden, wenn der Gläubiger der Kapitalerträge im Sinne des § 43 Absatz 1 Satz 1 Nummer 1a und des Absatzes 1 Satz 2 bei Zufluss seit mindestens einem Jahr ununterbrochen wirtschaftlicher Eigentümer der Aktien oder Genussscheine ist; Absatz 2 Satz 2 gilt entsprechend.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Entire selected original quotation actually read here and literal native scope verified; Italianart2(4)also visually compared onphysical3. Raw unchanged, no whole treaty/acquisition/read inference."
+  },
+  "R57-60.PROCESS": {
+    "id": "R57-60.PROCESS",
+    "url": "https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Erstattungsverfahren_50c/erstattungsverfahren_50c_node.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5ac66e90f192566e.body",
+    "raw_sha256": "a6d4c64b0bebbd7ee2910b77a571c8be3c9a6dd012d3f7f1a9b7f4374b1ad7ce",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5ac66e90f192566e.reader.txt",
+    "reader_sha256": "60289112ce928bc87f76d9d8154d54445bf8ce663b02b190cab37c7b58328c8b",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "BZStprocessingwarning/actualpayment/26.375percent",
+    "native_LF": [
+      39,
+      45
+    ],
+    "exact_quote": "Hinweis\nAufgrund der Vielzahl der eingehenden Anträge, kann es im Bereich der Erstattung zu Bearbeitungszeiten von über 20 Monaten kommen.\nDie Anträge werden grundsätzlich in der zeitlichen Reihenfolge ihres Eingangs bearbeitet.\nEin Antrag kann erst abschließend bearbeitet werden, wenn alle Unterlagen vollständig vorliegen. Welche Nachweise einzureichen sind, ist im Antragsformular und den dazugehörigen Erläuterungen aufgeführt. Bitte reichen Sie Anlagen ausschließlich über das BZSt-Online-Portal ein und nicht per Post oder E-Mail. Soweit im Einzelfall darüber hinaus Nachweise oder Angaben erforderlich sind, werden diese im Zuge der Bearbeitung angefordert.\nAllgemeines\nZu den Voraussetzungen der Erstattung zählt die tatsächliche Entrichtung der Abzugsteuer, entweder im Steuerabzugsverfahren oder auf Grundlage eines Haftungs- oder Nachforderungsbescheids. Eine bloße Anmeldung oder Einbehaltung der Kapitalertragsteuer reicht nicht aus.\nDer Steuerabzug bei Kapitalerträgen beträgt derzeit 26,375 %. Dieser setzt sich zusammen aus 25% Kapitalertragsteuer zuzüglich 5,5 % Solidaritätszuschlag des Kapitalertragsteuerbetrags.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Entire selected original quotation actually read here and literal native scope verified; Italianart2(4)also visually compared onphysical3. Raw unchanged, no whole treaty/acquisition/read inference."
+  },
+  "R57-60.USTAX": {
+    "id": "R57-60.USTAX",
+    "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Verein_Staaten/2008-06-23-USA-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=1",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.body",
+    "raw_sha256": "c712844fbd49d928461286efcca93ac57da6ead9def96d0efea940d3ad2333fd",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.reader.txt",
+    "reader_sha256": "20ce7d897b2183a1ef752f0eac338496af5f0e4bd9ab31f299c7c8683bdd8505",
+    "extraction": "PDF pdftotext-layout; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "DEUS2(1)(b)/(2)",
+    "native_LF": [
+      189,
+      200
+    ],
+    "exact_quote": "       b) in der Bundesrepublik Deutschland                                b) In the Federal Republic of Germany:\n            aa) die Einkommensteuer,                                            aa) the income tax (Einkommensteuer);\n            bb) die Körperschaftsteuer,                                         bb) the corporation tax (Körperschaftsteuer);\n            cc) die Gewerbesteuer und                                           cc) the trade tax (Gewerbesteuer); and\n            dd) die Vermögensteuer                                              dd) the capital tax (Vermögensteuer)\n            (im Folgenden als „deutsche Steuer“ bezeichnet).                    (hereinafter referred to as “German tax”).\n         (2) Dieses Abkommen gilt auch für alle Steuern gleicher oder         2. This Convention shall apply also to any identical or\n       im Wesentlichen ähnlicher Art, die nach der Unterzeichnung des      substantially similar taxes that are imposed after the date of\n       Abkommens neben den bestehenden Steuern oder an deren               signature of this Convention in addition to, or in place of, the\n       Stelle erhoben werden. Die zuständigen Behörden der Vertrags-       existing taxes. The competent authorities of the Contracting\n       staaten teilen einander die in ihren Steuergesetzen eingetrete-     States shall notify each other of any significant changes that\n       nen bedeutsamen Änderungen mit.                                     have been made in their taxation laws.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Entire selected original quotation actually read here and literal native scope verified; Italianart2(4)also visually compared onphysical3. Raw unchanged, no whole treaty/acquisition/read inference."
+  },
+  "R57-60.CZTAX": {
+    "id": "R57-60.CZTAX",
+    "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Tschechien/2025-06-18-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.body",
+    "raw_sha256": "d34112bdc430618db27400d87a7876b2848bbb4248d490a8b13e59715e434598",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.reader.txt",
+    "reader_sha256": "fa906f0414799e660b6475a700e0cc77a58699647a3920fdd54db460dfcdd1ed",
+    "extraction": "PDF pdftotext-layout; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "DECZ2(3)(a)actualErgaenzungsabgabe",
+    "native_LF": [
+      226,
+      233
+    ],
+    "exact_quote": "(3) Zu den zur Zeit bestehenden Steuern, für die dieses Abkommen gilt, gehören insbesondere\n\n    a) in der Bundesrepublik Deutschland:\n       die Einkommensteuer,\n       die Körperschaftsteuer einschließlich der Ergänzungsabgabe zur Körperschaftsteuer,\n       die Vermögensteuer,\n       die Grundsteuer und\n       die Gewerbesteuer;",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Entire selected original quotation actually read here and literal native scope verified; Italianart2(4)also visually compared onphysical3. Raw unchanged, no whole treaty/acquisition/read inference."
+  },
+  "R57-60.CZLATER": {
+    "id": "R57-60.CZLATER",
+    "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Tschechien/2025-06-18-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.body",
+    "raw_sha256": "d34112bdc430618db27400d87a7876b2848bbb4248d490a8b13e59715e434598",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.reader.txt",
+    "reader_sha256": "fa906f0414799e660b6475a700e0cc77a58699647a3920fdd54db460dfcdd1ed",
+    "extraction": "PDF pdftotext-layout; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "DECZ2(5)",
+    "native_LF": [
+      249,
+      252
+    ],
+    "exact_quote": "(5) Dieses Abkommen gilt auch für alle Steuern gleicher oder ähnlicher Art, die künftig neben den zur Zeit\nbestehenden Steuern oder an deren Stelle erhoben werden. Die zuständigen Behörden der Vertragsstaaten\nteilen einander am Ende eines jeden Jahres die in ihren Steuergesetzen eingetretenen Änderungen, soweit\nerforderlich, mit.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Entire selected original quotation actually read here and literal native scope verified; Italianart2(4)also visually compared onphysical3. Raw unchanged, no whole treaty/acquisition/read inference."
+  },
+  "R57-60.IT9": {
+    "id": "R57-60.IT9",
+    "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Italien/1990-08-18-Italien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue32394b5ce5fc51e.body",
+    "raw_sha256": "235d136361226810feaceba5bae85293377e392d93fa6cf08bb4f76f0c598d8f",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ue32394b5ce5fc51e-visual-verified-excerpts.reader.txt",
+    "reader_sha256": "6dcddc854462139295441ec7c25cf42d63fa1c86dcc7d48d9ac279b28a33e8d0",
+    "extraction": "Selected original German clauses manually transcribed after actual visual reads of retained1800px physical-page PNGs; line-end hyphenation joined and paragraph whitespace normalized only in this derivative. Initial raw/text-layer/OCR bodies preserved unchanged. Not a whole-treaty read.",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "actual_read_date": "2026-10-29",
+    "physical_pages_actually_read": [
+      3,
+      7,
+      8,
+      9,
+      20
+    ],
+    "act_article": "Physical PDF page3; Art2(4)",
+    "native_LF": [
+      30,
+      30
+    ],
+    "exact_quote": "Das Abkommen gilt auch für alle Steuern gleicher oder im wesentlichen ähnlicher Art, die nach der Unterzeichnung des Abkommens neben den in Absatz 3 genannten Steuern oder an deren Stelle erhoben werden.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Entire selected original quotation actually read here and literal native scope verified; Italianart2(4)also visually compared onphysical3. Raw unchanged, no whole treaty/acquisition/read inference."
+  },
+  "R58.company-forms": {
+    "id": "R58.company-forms",
+    "url": "https://www.gesetze-im-internet.de/estg/anlage_2.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1e06bb5852a0c786.body",
+    "raw_sha256": "f63071eaeffc3c8760de4ae10f01427ae0fc68d32f12d89a920ac01fd3afb2b5",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1e06bb5852a0c786.reader.txt",
+    "reader_sha256": "2046a83b78ab77aad5ee3a2647d2a29e8bda01484502a489de9b6e924127c509",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG Anlage2companydefinition/formlistopening",
+    "native_LF": [
+      7,
+      10
+    ],
+    "exact_quote": "(Fundstelle: BGBl. I 2014, 1295 — 1297)\nGesellschaft im Sinne der genannten Richtlinie ist jede Gesellschaft, die 1.\neine der folgenden Formen aufweist: a)\neine Gesellschaft, die gemäß der Verordnung (EG) Nr. 2157/2001 des Rates vom 8. Oktober 2001 über das Statut der Europäischen Gesellschaft (SE) und der Richtlinie 2001/86/EG des Rates vom 8. Oktober 2001 zur Ergänzung des Statuts der Europäischen Gesellschaft hinsichtlich der Beteiligung der Arbeitnehmer gegründet wurde, sowie eine Genossenschaft, die gemäß der Verordnung (EG) Nr. 1435/2003 des Rates vom 22. Juli 2003 über das Statut der Europäischen Genossenschaft (SCE) und gemäß der Richtlinie 2003/72/EG des Rates vom 22. Juli 2003 zur Ergänzung des Statuts der Europäischen Genossenschaft hinsichtlich der Beteiligung der Arbeitnehmer gegründet wurde,",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native range actually read; formlistopening is not a claim to have newly reread everycountryform."
+  },
+  "R58.residence-tax": {
+    "id": "R58.residence-tax",
+    "url": "https://www.gesetze-im-internet.de/estg/anlage_2.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1e06bb5852a0c786.body",
+    "raw_sha256": "f63071eaeffc3c8760de4ae10f01427ae0fc68d32f12d89a920ac01fd3afb2b5",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1e06bb5852a0c786.reader.txt",
+    "reader_sha256": "2046a83b78ab77aad5ee3a2647d2a29e8bda01484502a489de9b6e924127c509",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG Anlage2EUresidence/nooutside-treatyresidence/no-option-or-exemptiontax",
+    "native_LF": [
+      67,
+      71
+    ],
+    "exact_quote": "2.\nnach dem Steuerrecht eines Mitgliedstaates in Bezug auf den steuerlichen Wohnsitz als in diesem Staat ansässig betrachtet wird und auf Grund eines mit einem dritten Staat geschlossenen Doppelbesteuerungsabkommens in Bezug auf den steuerlichen Wohnsitz nicht als außerhalb der Gemeinschaft ansässig betrachtet wird und\n3.\nohne Wahlmöglichkeit einer der folgenden Steuern oder irgendeiner Steuer, die eine dieser Steuern ersetzt, unterliegt, ohne davon befreit zu sein: –\nvennootschapsbelasting/impôt des sociétés in Belgien,",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native range actually read; formlistopening is not a claim to have newly reread everycountryform."
+  },
+  "R60.remitted-statute": {
+    "id": "R60.remitted-statute",
+    "url": "https://www.gesetze-im-internet.de/estg/__50c.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.body",
+    "raw_sha256": "0bddf86f831b727c144a7ecb6791cc3e5529bfb8f707ee4715c4dc95c6d2458a",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.reader.txt",
+    "reader_sha256": "56b79f581bc6fe26a103d5085d7e127e13fb2960475bb814020668dd7f7749c1",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG50c(3), actualwithheld/remittedorassessmentpaidrefundpopulation",
+    "native_LF": [
+      13,
+      13
+    ],
+    "exact_quote": "(3) 1Dem beschränkt steuerpflichtigen Gläubiger der Kapitalerträge oder Vergütungen wird auf seinen fristgemäßen Antrag beim Bundeszentralamt für Steuern (Erstattungsantrag) auf der Grundlage eines Freistellungsbescheides die gemäß Absatz 1 Satz 1 einbehaltene und abgeführte oder auf Grund eines Haftungsbescheids oder Nachforderungsbescheids entrichtete Steuer erstattet, wenn die Steuer nicht nach § 36 Absatz 2 Nummer 2 auf die Einkommensteuer oder die Körperschaftsteuer des Gläubigers angerechnet werden kann. 2Die Frist für einen Erstattungsantrag beträgt vier Jahre und beginnt mit Ablauf des Kalenderjahres, in dem die Kapitalerträge oder Vergütungen bezogen worden sind; sie endet nicht vor Ablauf eines Jahres seit dem Zeitpunkt der Entrichtung der Steuer und nicht vor Ablauf der im Abkommen zur Vermeidung der Doppelbesteuerung vorgesehenen Frist. 3Ein Freistellungsbescheid für Kapitalertragsteuer wird nur erteilt, wenn die in § 45a Absatz 2 oder Absatz 3 bezeichnete Bescheinigung vorgelegt wurde oder die Angaben gemäß § 45a Absatz 2a übermittelt wurden; einem Antrag auf Erstattung der nach § 50a entrichteten Steuer ist die Bescheinigung nach § 50a Absatz 5 Satz 7 beizufügen. 4Hat der Gläubiger nach § 50a Absatz 5 Steuern für Rechnung anderer beschränkt steuerpflichtiger Gläubiger einzubehalten, kann die Auszahlung des Erstattungsanspruchs davon abhängig gemacht werden, dass er die Zahlung der von ihm einzubehaltenden Steuer nachweist, hierfür Sicherheit leistet oder unwiderruflich die Zustimmung zur Verrechnung seines Erstattungsanspruchs mit dem Steueranspruch nach § 50a Absatz 5 Satz 3 erklärt.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full operative selected paragraph actually read and literal source scope verified."
+  }
+}

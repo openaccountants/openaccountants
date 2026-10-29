@@ -1,0 +1,1352 @@
+[
+  {
+    "quote": "R01",
+    "source_id": "DEB115",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      8
+    ]
+  },
+  {
+    "quote": "R02",
+    "source_id": "DEB115",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      10,
+      15
+    ]
+  },
+  {
+    "quote": "R03",
+    "source_id": "DEB115",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      17,
+      17
+    ]
+  },
+  {
+    "quote": "R04",
+    "source_id": "DEB032",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      14,
+      20
+    ]
+  },
+  {
+    "quote": "R05",
+    "source_id": "DEB032",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      81,
+      81
+    ]
+  },
+  {
+    "quote": "R06",
+    "source_id": "DEB032",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      69,
+      79
+    ]
+  },
+  {
+    "quote": "R07",
+    "source_id": "DEB032",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      80,
+      80
+    ]
+  },
+  {
+    "quote": "R08",
+    "source_id": "DEB032",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      80,
+      80
+    ]
+  },
+  {
+    "quote": "R09",
+    "source_id": "DEB032",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      7
+    ]
+  },
+  {
+    "quote": "R10",
+    "source_id": "DEB032",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      7
+    ]
+  },
+  {
+    "quote": "R11",
+    "source_id": "DEB117",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      7
+    ]
+  },
+  {
+    "quote": "R12",
+    "source_id": "DEB117",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      9,
+      11
+    ]
+  },
+  {
+    "quote": "R13",
+    "source_id": "DEB117",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      13,
+      13
+    ]
+  },
+  {
+    "quote": "R14",
+    "source_id": "DEB117",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      14,
+      21
+    ]
+  },
+  {
+    "quote": "R15",
+    "source_id": "DEB117",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      22,
+      28
+    ]
+  },
+  {
+    "quote": "R16",
+    "source_id": "DEB117",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      29,
+      29
+    ]
+  },
+  {
+    "quote": "R17",
+    "source_id": "DEB122",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      15,
+      15
+    ]
+  },
+  {
+    "quote": "R18",
+    "source_id": "DEB031",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      10,
+      10
+    ]
+  },
+  {
+    "quote": "R19",
+    "source_id": "DEB030",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      49,
+      49
+    ]
+  },
+  {
+    "quote": "R20",
+    "source_id": "DEB118",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      7
+    ]
+  },
+  {
+    "quote": "R21",
+    "source_id": "DEB118",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      8,
+      9
+    ]
+  },
+  {
+    "quote": "R22",
+    "source_id": "DEB031",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      84,
+      84
+    ]
+  },
+  {
+    "quote": "R23",
+    "source_id": "DEB030",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      26,
+      26
+    ]
+  },
+  {
+    "quote": "R24",
+    "source_id": "DEB115",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      16,
+      16
+    ]
+  },
+  {
+    "quote": "R25",
+    "source_id": "DEB040",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      7
+    ]
+  },
+  {
+    "quote": "R26",
+    "source_id": "DEB040",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      8,
+      8
+    ]
+  },
+  {
+    "quote": "R27",
+    "source_id": "DEB030",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      10
+    ]
+  },
+  {
+    "quote": "R28",
+    "source_id": "DEB030",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      14,
+      14
+    ]
+  },
+  {
+    "quote": "R29",
+    "source_id": "DEB030",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      16,
+      16
+    ]
+  },
+  {
+    "quote": "R30",
+    "source_id": "DEB030",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      32,
+      32
+    ]
+  },
+  {
+    "quote": "R31",
+    "source_id": "DEB180",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      8,
+      8
+    ]
+  },
+  {
+    "quote": "R32",
+    "source_id": "DEB237",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      7
+    ]
+  },
+  {
+    "quote": "R33",
+    "source_id": "DEB237",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      8,
+      8
+    ]
+  },
+  {
+    "quote": "R34",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2580,
+      2587
+    ]
+  },
+  {
+    "quote": "R35",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2591,
+      2593
+    ]
+  },
+  {
+    "quote": "R36",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2601,
+      2601
+    ]
+  },
+  {
+    "quote": "R37",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2610,
+      2610
+    ]
+  },
+  {
+    "quote": "R38",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2644,
+      2644
+    ]
+  },
+  {
+    "quote": "R39",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2697,
+      2699
+    ]
+  },
+  {
+    "quote": "R40",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2700,
+      2702
+    ]
+  },
+  {
+    "quote": "R41",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2709,
+      2714
+    ]
+  },
+  {
+    "quote": "R42",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2737,
+      2744
+    ]
+  },
+  {
+    "quote": "R43",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2745,
+      2749
+    ]
+  },
+  {
+    "quote": "R44",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2751,
+      2754
+    ]
+  },
+  {
+    "quote": "R45",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2758,
+      2762
+    ]
+  },
+  {
+    "quote": "R46",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2775,
+      2777
+    ]
+  },
+  {
+    "quote": "R47",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2780,
+      2785
+    ]
+  },
+  {
+    "quote": "R48",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2793,
+      2797
+    ]
+  },
+  {
+    "quote": "R49",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2547,
+      2558
+    ]
+  },
+  {
+    "quote": "R50",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2563,
+      2572
+    ]
+  },
+  {
+    "quote": "R51",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2717,
+      2728
+    ]
+  },
+  {
+    "quote": "R52",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2731,
+      2735
+    ]
+  },
+  {
+    "quote": "R53",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      618,
+      621
+    ]
+  },
+  {
+    "quote": "R54",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      636,
+      642
+    ]
+  },
+  {
+    "quote": "R55",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      646,
+      650
+    ]
+  },
+  {
+    "quote": "R56",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      652,
+      652
+    ]
+  },
+  {
+    "quote": "R57",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      665,
+      669
+    ]
+  },
+  {
+    "quote": "R58",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      677,
+      677
+    ]
+  },
+  {
+    "quote": "R59",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      682,
+      684
+    ]
+  },
+  {
+    "quote": "R60",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      686,
+      690
+    ]
+  },
+  {
+    "quote": "R61",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      694,
+      696
+    ]
+  },
+  {
+    "quote": "R62",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      701,
+      707
+    ]
+  },
+  {
+    "quote": "R63",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      713,
+      723
+    ]
+  },
+  {
+    "quote": "R64",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      729,
+      729
+    ]
+  },
+  {
+    "quote": "R65",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      733,
+      733
+    ]
+  },
+  {
+    "quote": "R66",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      771,
+      776
+    ]
+  },
+  {
+    "quote": "R67",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      783,
+      784
+    ]
+  },
+  {
+    "quote": "R68",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      785,
+      787
+    ]
+  },
+  {
+    "quote": "R69",
+    "source_id": "DEB213",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      832,
+      834
+    ]
+  },
+  {
+    "quote": "R70",
+    "source_id": "DEB004",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      8,
+      8
+    ]
+  },
+  {
+    "quote": "R71",
+    "source_id": "DEB004",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      13,
+      13
+    ]
+  },
+  {
+    "quote": "R72",
+    "source_id": "DEB004",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      18,
+      18
+    ]
+  },
+  {
+    "quote": "R73",
+    "source_id": "DEB035",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      7
+    ]
+  },
+  {
+    "quote": "R74",
+    "source_id": "DEB035",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      8,
+      8
+    ]
+  },
+  {
+    "quote": "R75",
+    "source_id": "DEB035",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      10,
+      10
+    ]
+  },
+  {
+    "quote": "R76",
+    "source_id": "DEB038",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      8,
+      9
+    ]
+  },
+  {
+    "quote": "R77",
+    "source_id": "DEB038",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      41,
+      43
+    ]
+  },
+  {
+    "quote": "R78",
+    "source_id": "DEB036",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      7
+    ]
+  },
+  {
+    "quote": "R79",
+    "source_id": "DEB036",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      9,
+      9
+    ]
+  },
+  {
+    "quote": "R80",
+    "source_id": "DEB036",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      11,
+      11
+    ]
+  },
+  {
+    "quote": "R81",
+    "source_id": "DEB126",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      19,
+      23
+    ]
+  },
+  {
+    "quote": "R82",
+    "source_id": "DEB121",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      24,
+      25
+    ]
+  },
+  {
+    "quote": "R83",
+    "source_id": "DEB012",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      7
+    ]
+  },
+  {
+    "quote": "R84",
+    "source_id": "DEB012",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      32,
+      32
+    ]
+  },
+  {
+    "quote": "R85",
+    "source_id": "DEB012",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      40,
+      40
+    ]
+  },
+  {
+    "quote": "R86",
+    "source_id": "DEB211",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      601,
+      609
+    ]
+  },
+  {
+    "quote": "R87",
+    "source_id": "DEB211",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2016,
+      2016
+    ]
+  },
+  {
+    "quote": "R88",
+    "source_id": "DEB212",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      241,
+      248
+    ]
+  },
+  {
+    "quote": "R89",
+    "source_id": "DEB212",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      266,
+      275
+    ]
+  },
+  {
+    "quote": "R90",
+    "source_id": "DEB212",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      508,
+      510
+    ]
+  },
+  {
+    "quote": "R91",
+    "source_id": "DEB212",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      717,
+      724
+    ]
+  },
+  {
+    "quote": "R92",
+    "source_id": "DEB212",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      727,
+      732
+    ]
+  },
+  {
+    "quote": "R93",
+    "source_id": "DEB212",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      751,
+      751
+    ]
+  },
+  {
+    "quote": "R94",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2653,
+      2668
+    ]
+  },
+  {
+    "quote": "R95",
+    "source_id": "DEB014",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      8,
+      10
+    ]
+  },
+  {
+    "quote": "R96",
+    "source_id": "DEB014",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      23,
+      24
+    ]
+  },
+  {
+    "quote": "R97",
+    "source_id": "DEB015",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      9,
+      9
+    ]
+  },
+  {
+    "quote": "R98",
+    "source_id": "DEB016",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      22
+    ]
+  },
+  {
+    "quote": "R99",
+    "source_id": "DEB016",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      27,
+      27
+    ]
+  },
+  {
+    "quote": "R100",
+    "source_id": "DEB016",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      42,
+      42
+    ]
+  },
+  {
+    "quote": "R101",
+    "source_id": "DEB017",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      8
+    ]
+  },
+  {
+    "quote": "R102",
+    "source_id": "DEB018",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      8,
+      8
+    ]
+  },
+  {
+    "quote": "R103",
+    "source_id": "DEB123",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      115,
+      122
+    ]
+  },
+  {
+    "quote": "R104",
+    "source_id": "DEB124",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      8
+    ]
+  },
+  {
+    "quote": "R105",
+    "source_id": "DEB125",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      9,
+      15
+    ]
+  },
+  {
+    "quote": "R106",
+    "source_id": "DEB044",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      8
+    ]
+  },
+  {
+    "quote": "R107",
+    "source_id": "DEB044",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      44,
+      45
+    ]
+  },
+  {
+    "quote": "R108",
+    "source_id": "DEB116",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      70,
+      71
+    ]
+  },
+  {
+    "quote": "R109",
+    "source_id": "DEB127",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      7
+    ]
+  },
+  {
+    "quote": "R110",
+    "source_id": "DEB182",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      9,
+      19
+    ]
+  },
+  {
+    "quote": "R111",
+    "source_id": "DEB280",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      7
+    ]
+  },
+  {
+    "quote": "R112",
+    "source_id": "DEB045",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      17,
+      25
+    ]
+  },
+  {
+    "quote": "R113",
+    "source_id": "DEB045",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      27,
+      29
+    ]
+  },
+  {
+    "quote": "R114",
+    "source_id": "DEB045",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      33,
+      33
+    ]
+  },
+  {
+    "quote": "R115",
+    "source_id": "DEB042",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      14
+    ]
+  },
+  {
+    "quote": "R116",
+    "source_id": "DEB029",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      36,
+      37
+    ]
+  },
+  {
+    "quote": "R117",
+    "source_id": "DEB043",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      8
+    ]
+  },
+  {
+    "quote": "R118",
+    "source_id": "DEB043",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      15,
+      24
+    ]
+  },
+  {
+    "quote": "R119",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      1074,
+      1079
+    ]
+  },
+  {
+    "quote": "R120",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2504,
+      2520
+    ]
+  },
+  {
+    "quote": "R121",
+    "source_id": "RNT01",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      421,
+      436
+    ]
+  },
+  {
+    "quote": "R122",
+    "source_id": "RNT02",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      220,
+      243
+    ]
+  },
+  {
+    "quote": "R123",
+    "source_id": "RNT02",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      273,
+      280
+    ]
+  },
+  {
+    "quote": "R124",
+    "source_id": "RNT02",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      331,
+      336
+    ]
+  },
+  {
+    "quote": "R125",
+    "source_id": "RNT02",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      426,
+      433
+    ]
+  },
+  {
+    "quote": "R126",
+    "source_id": "RNT03",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      178,
+      186
+    ]
+  },
+  {
+    "quote": "R127",
+    "source_id": "RNT04",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      25,
+      32
+    ]
+  },
+  {
+    "quote": "R128",
+    "source_id": "RNT04",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      284,
+      292
+    ]
+  },
+  {
+    "quote": "R129",
+    "source_id": "RNT05",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      196,
+      223
+    ]
+  },
+  {
+    "quote": "R130",
+    "source_id": "RNT06",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      14
+    ]
+  },
+  {
+    "quote": "R131",
+    "source_id": "RNT07",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      7,
+      10
+    ]
+  },
+  {
+    "quote": "R132",
+    "source_id": "DEB032",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      11,
+      20
+    ]
+  },
+  {
+    "quote": "R133",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2521,
+      2544
+    ]
+  },
+  {
+    "quote": "R134",
+    "source_id": "DEB185",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      2669,
+      2671
+    ]
+  },
+  {
+    "quote": "R135",
+    "source_id": "RNT08",
+    "exact_containment": true,
+    "raw_reader_hashes": true,
+    "native_LF": [
+      8,
+      10
+    ]
+  }
+]

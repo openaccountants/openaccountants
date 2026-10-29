@@ -1,0 +1,28 @@
+{
+  "slug": "de-einkommensteuer-freelancer",
+  "expected_before_sha256": "0b2d478cb4a3d256c84407c56dce518eae89a4f16f34f9280c507c13cbc1658e",
+  "operations": [
+    {
+      "before": "| § 7g profit limit: profit before the deduction not more than | EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |",
+      "after": "| § 7g profit limit: profit calculated without investment deductions or § 7g(2) add-backs not more than | EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |"
+    },
+    {
+      "before": "- **§ 7g investment deduction ([§ 7g EStG](https://www.gesetze-im-internet.de/estg/__7g.html)).** Up to 50% of a planned movable asset's expected cost comes off profit in advance. The EUR 200,000 profit limit is a cliff (EUR 200,001 means no deduction that year); the EUR 200,000 cap on open deductions is a different rule with the same number. A deduction may create a loss. Not bought by the end of the third year after: it is undone in the year taken (§ 7g(3)). In the year bought, up to the same share of the real cost is added back (not more than the open deductions) and the cost may be cut by as much (§ 7g(2)). The asset must be let or used only or almost only (at least 90%) in a German establishment until the end of the year after purchase (§ 7g(4)). Special depreciation of up to 40% also needs the profit limit met in the year before purchase (§ 7g(5), (6)).",
+      "after": "- **§ 7g investment deduction ([§ 7g EStG](https://www.gesetze-im-internet.de/estg/__7g.html)).** Up to 50% of a planned movable asset's expected cost comes off profit in advance. Test the EUR 200,000 profit limit without both investment deductions and § 7g(2) add-backs; a tested profit of EUR 200,001 fails for that year; the EUR 200,000 cap on open deductions is a different rule with the same number. A deduction may create a loss. Not bought by the end of the third year after: it is undone in the year taken (§ 7g(3)). In the year bought, up to the same share of the real cost is added back (not more than the open deductions) and the cost may be cut by as much (§ 7g(2)). The asset must be let or used only or almost only (at least 90%) in a German establishment until the end of the year after purchase (§ 7g(4)). Special depreciation of up to 40% also needs the profit limit met in the year before purchase (§ 7g(5), (6))."
+    },
+    {
+      "before": "version: 1.2\n",
+      "after": "version: 1.3\n"
+    },
+    {
+      "before": "last_updated: 2026-10-27\n",
+      "after": "last_updated: 2026-10-29\n"
+    }
+  ],
+  "after_sha256": "c80a3678a2bd6edd3461fc56b35c09496980a857079c7386b259927f44764987",
+  "original_oa_blocks": 3,
+  "original_oa_exact": true,
+  "ordered_URLs_exact": true,
+  "protected_metadata_exact": true,
+  "inverse_exact": true
+}

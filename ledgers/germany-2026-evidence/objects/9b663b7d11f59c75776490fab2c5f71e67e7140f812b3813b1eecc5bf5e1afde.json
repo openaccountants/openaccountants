@@ -1,0 +1,1638 @@
+[
+  {
+    "row": 1,
+    "id": "SoliRate",
+    "source": {
+      "id": "SoliRate",
+      "source": "Ud87f3fb176816839",
+      "article": "SolzG \u00a74",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__4.html",
+      "LF_start": 7,
+      "LF_end": 7,
+      "exact_quote": "Der Solidarit\u00e4tszuschlag betr\u00e4gt 5,5 Prozent der Bemessungsgrundlage. Er betr\u00e4gt nicht mehr als 11,9 Prozent des Unterschiedsbetrages zwischen der Bemessungsgrundlage, vermindert um die Einkommensteuer nach \u00a7 32d Absatz 3 und 4 des Einkommensteuergesetzes, und der nach \u00a7 3 Absatz 3, 4 und 5 jeweils ma\u00dfgebenden Freigrenze. Bruchteile eines Cents bleiben au\u00dfer Ansatz. Der Solidarit\u00e4tszuschlag auf die Einkommensteuer nach \u00a7 32d Absatz 3 und 4 des Einkommensteuergesetzes und auf die Lohnsteuer nach \u00a7 39b Absatz 3 des Einkommensteuergesetzes betr\u00e4gt ungeachtet des Satzes 2 5,5 Prozent.",
+      "raw_sha256": "dd28933ed36da19cae72de5a054f9edbea5c5919cb2aeac6efc257afe9fab058",
+      "reader_sha256": "219a2aa1409e999b209ed2402a91d3618b9ec3c19ebf85c10122087d7fa3845a",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud87f3fb176816839.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-4-20261024.html",
+    "native_LF": [
+      7,
+      7
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 10,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 2,
+    "id": "AO149-2",
+    "source": {
+      "id": "AO149-2",
+      "source": "U503bfe74d589da30",
+      "article": "AO149(2)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "LF_start": 8,
+      "LF_end": 8,
+      "exact_quote": "(2) Soweit die Steuergesetze nichts anderes bestimmen, sind Steuererkl\u00e4rungen, die sich auf ein Kalenderjahr oder auf einen gesetzlich bestimmten Zeitpunkt beziehen, sp\u00e4testens sieben Monate nach Ablauf des Kalenderjahres oder sieben Monate nach dem gesetzlich bestimmten Zeitpunkt abzugeben. Bei Steuerpflichtigen, die den Gewinn aus Land- und Forstwirtschaft nach einem vom Kalenderjahr abweichenden Wirtschaftsjahr ermitteln, endet die Frist nicht vor Ablauf des siebten Monats, der auf den Schluss des in dem Kalenderjahr begonnenen Wirtschaftsjahres folgt.",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+    "native_LF": [
+      8,
+      8
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 12,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 3,
+    "id": "AO149-3",
+    "source": {
+      "id": "AO149-3",
+      "source": "U503bfe74d589da30",
+      "article": "AO149(3)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "LF_start": 9,
+      "LF_end": 23,
+      "exact_quote": "(3) Sofern Personen, Gesellschaften, Verb\u00e4nde, Vereinigungen, Beh\u00f6rden oder K\u00f6rperschaften im Sinne der \u00a7\u00a7 3 und 4 bis 4d des Steuerberatungsgesetzes beauftragt sind mit der Erstellung von 1.\nEinkommensteuererkl\u00e4rungen nach \u00a7 25 Absatz 3 des Einkommensteuergesetzes mit Ausnahme der Einkommensteuererkl\u00e4rungen im Sinne des \u00a7 46 Absatz 2 Nummer 8 des Einkommensteuergesetzes,\n2.\nK\u00f6rperschaftsteuererkl\u00e4rungen nach \u00a7 31 Absatz 1 und 1a des K\u00f6rperschaftsteuergesetzes, Feststellungserkl\u00e4rungen im Sinne des \u00a7 14 Absatz 5, \u00a7 27 Absatz 2 Satz 4, \u00a7 28 Absatz 1 Satz 4 oder \u00a7 38 Absatz 1 Satz 2 des K\u00f6rperschaftsteuergesetzes oder Erkl\u00e4rungen zur Zerlegung der K\u00f6rperschaftsteuer nach \u00a7 6 Absatz 7 des Zerlegungsgesetzes,\n3.\nErkl\u00e4rungen zur Festsetzung des Gewerbesteuermessbetrags oder Zerlegungserkl\u00e4rungen nach \u00a7 14a des Gewerbesteuergesetzes,\n4.\nUmsatzsteuererkl\u00e4rungen f\u00fcr das Kalenderjahr nach \u00a7 18 Absatz 3 des Umsatzsteuergesetzes,\n5.\nErkl\u00e4rungen zur gesonderten sowie zur gesonderten und einheitlichen Feststellung einkommensteuerpflichtiger oder k\u00f6rperschaftsteuerpflichtiger Eink\u00fcnfte nach \u00a7 180 Absatz 1 Satz 1 Nummer 2 in Verbindung mit \u00a7 181 Absatz 1 und 2,\n6.\nErkl\u00e4rungen zur gesonderten Feststellung von Besteuerungsgrundlagen nach der Verordnung \u00fcber die gesonderte Feststellung von Besteuerungsgrundlagen nach \u00a7 180 Abs. 2 der Abgabenordnung oder\n7.\nErkl\u00e4rungen zur gesonderten Feststellung von Besteuerungsgrundlagen nach \u00a7 18 des Au\u00dfensteuergesetzes,\nso sind diese Erkl\u00e4rungen vorbehaltlich des Absatzes 4 sp\u00e4testens bis zum letzten Tag des Monats Februar und in den F\u00e4llen des Absatzes 2 Satz 2 bis zum 31. Juli des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres abzugeben.",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+    "native_LF": [
+      9,
+      23
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 13,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 4,
+    "id": "AO108",
+    "source": {
+      "id": "AO108",
+      "source": "U3859bf32d53897c9",
+      "article": "AO \u00a7108(3)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+      "LF_start": 9,
+      "LF_end": 9,
+      "exact_quote": "(3) F\u00e4llt das Ende einer Frist auf einen Sonntag, einen gesetzlichen Feiertag oder einen Sonnabend, so endet die Frist mit dem Ablauf des n\u00e4chstfolgenden Werktags.",
+      "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+      "reader_sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3859bf32d53897c9.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-108-20261024.html",
+    "native_LF": [
+      9,
+      9
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 15,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 5,
+    "id": "AO152-2",
+    "source": {
+      "id": "AO152-2",
+      "source": "Ua52afa3591a7820d",
+      "article": "AO152(2)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "LF_start": 8,
+      "LF_end": 14,
+      "exact_quote": "(2) Abweichend von Absatz 1 ist ein Versp\u00e4tungszuschlag festzusetzen, wenn eine Steuererkl\u00e4rung, die sich auf ein Kalenderjahr oder auf einen gesetzlich bestimmten Zeitpunkt bezieht, 1.\nnicht binnen 14 Monaten nach Ablauf des Kalenderjahrs oder nicht binnen 14 Monaten nach dem Besteuerungszeitpunkt,\n2.\nin den F\u00e4llen des \u00a7 149 Absatz 2 Satz 2 nicht binnen 19 Monaten nach Ablauf des Kalenderjahrs oder nicht binnen 19 Monaten nach dem Besteuerungszeitpunkt oder\n3.\nin den F\u00e4llen des \u00a7 149 Absatz 4 nicht bis zu dem in der Anordnung bestimmten Zeitpunkt\nabgegeben wurde.",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+    "native_LF": [
+      8,
+      14
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 17,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 6,
+    "id": "AO152-3",
+    "source": {
+      "id": "AO152-3",
+      "source": "Ua52afa3591a7820d",
+      "article": "AO152(3)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "LF_start": 15,
+      "LF_end": 22,
+      "exact_quote": "(3) Absatz 2 gilt nicht, 1.\nwenn die Finanzbeh\u00f6rde die Frist f\u00fcr die Abgabe der Steuererkl\u00e4rung nach \u00a7 109 verl\u00e4ngert hat oder diese Frist r\u00fcckwirkend verl\u00e4ngert,\n2.\nwenn die Steuer auf null Euro oder auf einen negativen Betrag festgesetzt wird,\n3.\nwenn die festgesetzte Steuer die Summe der festgesetzten Vorauszahlungen und der anzurechnenden Steuerabzugsbetr\u00e4ge nicht \u00fcbersteigt oder\n4.\nbei j\u00e4hrlich abzugebenden Lohnsteueranmeldungen, bei Anmeldungen von Umsatzsteuer-Sondervorauszahlungen nach \u00a7 48 Absatz 2 der Umsatzsteuer-Durchf\u00fchrungsverordnung, bei j\u00e4hrlich abzugebenden Versicherungsteuer- und Feuerschutzsteueranmeldungen sowie bei Erkl\u00e4rungen nach \u00a7 95 des Mindeststeuergesetzes.",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+    "native_LF": [
+      15,
+      22
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 18,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 7,
+    "id": "AO152-5",
+    "source": {
+      "id": "AO152-5",
+      "source": "Ua52afa3591a7820d",
+      "article": "AO152(5)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "LF_start": 27,
+      "LF_end": 27,
+      "exact_quote": "(5) Der Versp\u00e4tungszuschlag betr\u00e4gt vorbehaltlich des Satzes 2, der Abs\u00e4tze 8 und 13 Satz 2 f\u00fcr jeden angefangenen Monat der eingetretenen Versp\u00e4tung 0,25 Prozent der festgesetzten Steuer, mindestens jedoch 10 Euro f\u00fcr jeden angefangenen Monat der eingetretenen Versp\u00e4tung. F\u00fcr Steuererkl\u00e4rungen, die sich auf ein Kalenderjahr oder auf einen gesetzlich bestimmten Zeitpunkt beziehen, betr\u00e4gt der Versp\u00e4tungszuschlag f\u00fcr jeden angefangenen Monat der eingetretenen Versp\u00e4tung 0,25 Prozent der um die festgesetzten Vorauszahlungen und die anzurechnenden Steuerabzugsbetr\u00e4ge verminderten festgesetzten Steuer, mindestens jedoch 25 Euro f\u00fcr jeden angefangenen Monat der eingetretenen Versp\u00e4tung. Wurde ein Erkl\u00e4rungspflichtiger von der Finanzbeh\u00f6rde erstmals nach Ablauf der gesetzlichen Erkl\u00e4rungsfrist zur Abgabe einer Steuererkl\u00e4rung innerhalb einer dort bezeichneten Frist aufgefordert und konnte er bis zum Zugang dieser Aufforderung davon ausgehen, keine Steuererkl\u00e4rung abgeben zu m\u00fcssen, so ist der Versp\u00e4tungszuschlag nur f\u00fcr die Monate zu berechnen, die nach dem Ablauf der in der Aufforderung bezeichneten Erkl\u00e4rungsfrist begonnen haben.",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+    "native_LF": [
+      27,
+      27
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 19,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 8,
+    "id": "AO152-10",
+    "source": {
+      "id": "AO152-10",
+      "source": "Ua52afa3591a7820d",
+      "article": "AO152(10)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "LF_start": 42,
+      "LF_end": 42,
+      "exact_quote": "(10) Der Versp\u00e4tungszuschlag ist auf volle Euro abzurunden und darf h\u00f6chstens 25 000 Euro betragen.",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+    "native_LF": [
+      42,
+      42
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 20,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 9,
+    "id": "AO233a-2",
+    "source": {
+      "id": "AO233a-2",
+      "source": "Uda6051d17b67ca40",
+      "article": "AO233a(2)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "LF_start": 8,
+      "LF_end": 8,
+      "exact_quote": "(2) Der Zinslauf beginnt 15 Monate nach Ablauf des Kalenderjahrs, in dem die Steuer entstanden ist. Er beginnt f\u00fcr die Einkommen- und K\u00f6rperschaftsteuer 23 Monate nach diesem Zeitpunkt, wenn die Eink\u00fcnfte aus Land- und Forstwirtschaft bei der erstmaligen Steuerfestsetzung die anderen Eink\u00fcnfte \u00fcberwiegen; hierbei sind Kapitalertr\u00e4ge nach \u00a7 32d Absatz 1 und \u00a7 43 Absatz 5 des Einkommensteuergesetzes nicht zu ber\u00fccksichtigen. Er endet mit Ablauf des Tages, an dem die Steuerfestsetzung wirksam wird.",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader_sha256": "707aa5c6d8b589d1ab3ea4e5c30d68d5121ad2a42c56fb9368e7ca2f69d4bd7d",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uda6051d17b67ca40.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-233a-20261024.html",
+    "native_LF": [
+      8,
+      8
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 22,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 10,
+    "id": "AO238-1a",
+    "source": {
+      "id": "AO238-1a",
+      "source": "U15527adfa30c4074",
+      "article": "AO238(1a)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "LF_start": 8,
+      "LF_end": 8,
+      "exact_quote": "(1a) In den F\u00e4llen des \u00a7 233a betragen die Zinsen abweichend von Absatz 1 Satz 1 ab dem 1. Januar 2019 0,15 Prozent f\u00fcr jeden Monat, das hei\u00dft 1,8 Prozent f\u00fcr jedes Jahr.",
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "reader_sha256": "651db01a1f6c18060e1f1e63652986b0e4921fb1ce84da5d2a740ebea8ca0b48",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U15527adfa30c4074.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-238-20261024.html",
+    "native_LF": [
+      8,
+      8
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 25,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 11,
+    "id": "AO240-1",
+    "source": {
+      "id": "AO240-1",
+      "source": "Uee7f672101b3d3dd",
+      "article": "AO240(1)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "LF_start": 7,
+      "LF_end": 7,
+      "exact_quote": "(1) Wird eine Steuer nicht bis zum Ablauf des F\u00e4lligkeitstages entrichtet, so ist f\u00fcr jeden angefangenen Monat der S\u00e4umnis ein S\u00e4umniszuschlag von 1 Prozent des abgerundeten r\u00fcckst\u00e4ndigen Steuerbetrags zu entrichten; abzurunden ist auf den n\u00e4chsten durch 50 Euro teilbaren Betrag. Das Gleiche gilt f\u00fcr zur\u00fcckzuzahlende Steuerverg\u00fctungen und Haftungsschulden, soweit sich die Haftung auf Steuern und zur\u00fcckzuzahlende Steuerverg\u00fctungen erstreckt. Die S\u00e4umnis nach Satz 1 tritt nicht ein, bevor die Steuer festgesetzt oder angemeldet worden ist. Wird die Festsetzung einer Steuer oder Steuerverg\u00fctung aufgehoben, ge\u00e4ndert oder nach \u00a7 129 berichtigt, so bleiben die bis dahin verwirkten S\u00e4umniszuschl\u00e4ge unber\u00fchrt; das Gleiche gilt, wenn ein Haftungsbescheid zur\u00fcckgenommen, widerrufen oder nach \u00a7 129 berichtigt wird. Erlischt der Anspruch durch Aufrechnung, bleiben S\u00e4umniszuschl\u00e4ge unber\u00fchrt, die bis zur F\u00e4lligkeit der Schuld des Aufrechnenden entstanden sind.",
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "reader_sha256": "2cfa86cfaac164f5f98e3dc6a02b04d67165a70fc4439631021fe7a3ae0bf631",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee7f672101b3d3dd.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-240-20261024.html",
+    "native_LF": [
+      7,
+      7
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 27,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 12,
+    "id": "TARIFF",
+    "source": {
+      "id": "TARIFF",
+      "source": "U2aee0a9326f9185f",
+      "article": "EStG \u00a732a(1)2026 whole formula/rounding",
+      "url": "https://www.gesetze-im-internet.de/estg/__32a.html",
+      "LF_start": 7,
+      "LF_end": 22,
+      "exact_quote": "(1) 1Die tarifliche Einkommensteuer bemisst sich nach dem auf volle Euro abgerundeten zu versteuernden Einkommen. 2Sie betr\u00e4gt ab dem Veranlagungszeitraum 2026 vorbehaltlich der \u00a7\u00a7 32b, 32d, 34, 34a, 34b und 34c jeweils in Euro f\u00fcr zu versteuernde Einkommen 1.\nbis 12 348 Euro (Grundfreibetrag):\n0;\n2.\nvon 12 349 Euro bis 17 799 Euro:\n(914,51 \u2022 y + 1 400) \u2022 y;\n3.\nvon 17 800 Euro bis 69 878 Euro:\n(173,10 \u2022 z + 2 397) \u2022 z + 1 034,87;\n4.\nvon 69 879 Euro bis 277 825 Euro:\n0,42 \u2022 x \u2013 11 135,63;\n5.\nvon 277 826 Euro an:\n0,45 \u2022 x \u2013 19 470,38.\n3Die Gr\u00f6\u00dfe \u201ey\u201c ist ein Zehntausendstel des den Grundfreibetrag \u00fcbersteigenden Teils des auf einen vollen Euro-Betrag abgerundeten zu versteuernden Einkommens. 4Die Gr\u00f6\u00dfe \u201ez\u201c ist ein Zehntausendstel des 17 799 Euro \u00fcbersteigenden Teils des auf einen vollen Euro-Betrag abgerundeten zu versteuernden Einkommens. 5Die Gr\u00f6\u00dfe \u201ex\u201c ist das auf einen vollen Euro-Betrag abgerundete zu versteuernde Einkommen. 6Der sich ergebende Steuerbetrag ist auf den n\u00e4chsten vollen Euro-Betrag abzurunden.",
+      "raw_sha256": "053bfcfc2ba961a3013eb631921957ce8a50ec3e4347bb6f0c2befaf765e0f50",
+      "reader_sha256": "b037ef07e71ac2eebadccb3250d16667924ca95b689c2db86eee60207585e2d7",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2aee0a9326f9185f.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32a-20261024.html",
+    "native_LF": [
+      7,
+      22
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 42,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 13,
+    "id": "SOLILIMIT",
+    "source": {
+      "id": "SOLILIMIT",
+      "source": "Uc748242e6e54c746",
+      "article": "SolzG \u00a73(3)2026",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "LF_start": 29,
+      "LF_end": 33,
+      "exact_quote": "(3) Der Solidarit\u00e4tszuschlag ist von einkommensteuerpflichtigen Personen nur zu erheben, wenn die Bemessungsgrundlage nach Absatz 1 Nummer 1 und 2, vermindert um die Einkommensteuer nach \u00a7 32d Absatz 3 und 4 des Einkommensteuergesetzes, 1.\nin den F\u00e4llen des \u00a7 32a Absatz 5 und 6 des Einkommensteuergesetzes 40 700 Euro,\n2.\nin anderen F\u00e4llen 20 350 Euro\n\u00fcbersteigt. Auf die Einkommensteuer nach \u00a7 32d Absatz 3 und 4 des Einkommensteuergesetzes ist der Solidarit\u00e4tszuschlag ungeachtet des Satzes 1 zu erheben.",
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc748242e6e54c746.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-3-20261024.html",
+    "native_LF": [
+      29,
+      33
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 44,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 14,
+    "id": "PROGRESSION",
+    "source": {
+      "id": "PROGRESSION",
+      "source": "Ud922e63d4ac780f0",
+      "article": "EStG \u00a732b(1) no3",
+      "url": "https://www.gesetze-im-internet.de/estg/__32b.html",
+      "LF_start": 32,
+      "LF_end": 33,
+      "exact_quote": "3.\nEink\u00fcnfte, die nach einem Abkommen zur Vermeidung der Doppelbesteuerung steuerfrei sind,",
+      "raw_sha256": "29c00fa5139a1531b7cfcb35484bf302bf8bd3974afdd8c19727d95c353109d9",
+      "reader_sha256": "9e2c9b8b065fd0c3e4f3250b2c45562eb1d70f3988f116bfe439abc8b45b9e19",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud922e63d4ac780f0.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud922e63d4ac780f0.body",
+    "native_LF": [
+      32,
+      33
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 86,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 15,
+    "id": "EMPLOYEE1230",
+    "source": {
+      "id": "EMPLOYEE1230",
+      "source": "Ud3c2c28f415a45d2",
+      "article": "EStG \u00a79a sentence1 no1(a)",
+      "url": "https://www.gesetze-im-internet.de/estg/__9a.html",
+      "LF_start": 7,
+      "LF_end": 10,
+      "exact_quote": "1F\u00fcr Werbungskosten sind bei der Ermittlung der Eink\u00fcnfte die folgenden Pauschbetr\u00e4ge abzuziehen, wenn nicht h\u00f6here Werbungskosten nachgewiesen werden: 1.\na)\nvon den Einnahmen aus nichtselbst\u00e4ndiger Arbeit vorbehaltlich Buchstabe b:\nein Arbeitnehmer-Pauschbetrag von 1 230 Euro;",
+      "raw_sha256": "d345f5dfd44a9478955ec391c63f6fca4f731021153e9e2b9a49edb0c8f9ddeb",
+      "reader_sha256": "dce53e8b87f1e24b576bad5a35dd270f8ac04eb5d16e3487fa40e0f667d57c08",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud3c2c28f415a45d2.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-9a-20261024.html",
+    "native_LF": [
+      7,
+      10
+    ],
+    "actual_read_bridge": {
+      "guide": "de-employee-income-tax",
+      "quote_row": 61,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 16,
+    "id": "FILEDUTY",
+    "source": {
+      "id": "FILEDUTY",
+      "source": "U1ac28d3c84385243",
+      "article": "EStDV \u00a756",
+      "url": "https://www.gesetze-im-internet.de/estdv_1955/__56.html",
+      "LF_start": 7,
+      "LF_end": 17,
+      "exact_quote": "1Unbeschr\u00e4nkt Steuerpflichtige haben eine j\u00e4hrliche Einkommensteuererkl\u00e4rung f\u00fcr das abgelaufene Kalenderjahr (Veranlagungszeitraum) in den folgenden F\u00e4llen abzugeben: 1.\nEhegatten, bei denen im Veranlagungszeitraum die Voraussetzungen des \u00a7 26 Abs. 1 des Gesetzes vorgelegen haben und von denen keiner die Einzelveranlagung nach \u00a7 26a des Gesetzes w\u00e4hlt,a)\nwenn keiner der Ehegatten Eink\u00fcnfte aus nichtselbst\u00e4ndiger Arbeit, von denen ein Steuerabzug vorgenommen worden ist, bezogen und der Gesamtbetrag der Eink\u00fcnfte mehr als das Zweifache des Grundfreibetrages nach \u00a7 32a Absatz 1 Satz 2 Nummer 1 des Gesetzes in der jeweils geltenden Fassung betragen hat,\nb)\nwenn mindestens einer der Ehegatten Eink\u00fcnfte aus nichtselbst\u00e4ndiger Arbeit, von denen ein Steuerabzug vorgenommen worden ist, bezogen hat und eine Veranlagung nach \u00a7 46 Abs. 2 Nr. 1 bis 7 des Gesetzes in Betracht kommt;\n2.\nPersonen, bei denen im Veranlagungszeitraum die Voraussetzungen des \u00a7 26 Abs. 1 des Gesetzes nicht vorgelegen haben,a)\nwenn der Gesamtbetrag der Eink\u00fcnfte den Grundfreibetrag nach \u00a7 32a Absatz 1 Satz 2 Nummer 1 des Gesetzes in der jeweils geltenden Fassung \u00fcberstiegen hat und darin keine Eink\u00fcnfte aus nichtselbst\u00e4ndiger Arbeit, von denen ein Steuerabzug vorgenommen worden ist, enthalten sind,\nb)\nwenn in dem Gesamtbetrag der Eink\u00fcnfte Eink\u00fcnfte aus nichtselbst\u00e4ndiger Arbeit, von denen ein Steuerabzug vorgenommen worden ist, enthalten sind und eine Veranlagung nach \u00a7 46 Abs. 2 Nr. 1 bis 6 und 7 Buchstabe b des Gesetzes in Betracht kommt.\n2Eine Steuererkl\u00e4rung ist au\u00dferdem abzugeben, wenn zum Schluss des vorangegangenen Veranlagungszeitraums ein verbleibender Verlustabzug oder ein nachversteuerungspflichtiger Betrag im Sinne von \u00a7 34a Absatz 3 Satz 3 des Gesetzes festgestellt worden ist.",
+      "raw_sha256": "447719f0018df44e05d36f96e03a510e65ca31b085f6787a465593787bd98b60",
+      "reader_sha256": "93ee8aabfa29f4967b3d282c76dcd78bd3618e745ed7834a9f251406f979c910",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1ac28d3c84385243.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estdv-56-20261026.html",
+    "native_LF": [
+      7,
+      17
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 39,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 17,
+    "id": "BASE",
+    "source": {
+      "id": "BASE",
+      "source": "U14def75b3e601808",
+      "article": "EStG \u00a72(2)\u2013(5)",
+      "url": "https://www.gesetze-im-internet.de/estg/__2.html",
+      "LF_start": 22,
+      "LF_end": 29,
+      "exact_quote": "(2) 1Eink\u00fcnfte sind 1.\nbei Land- und Forstwirtschaft, Gewerbebetrieb und selbst\u00e4ndiger Arbeit der Gewinn (\u00a7\u00a7 4 bis 7k und 13a),\n2.\nbei den anderen Einkunftsarten der \u00dcberschuss der Einnahmen \u00fcber die Werbungskosten (\u00a7\u00a7 8 bis 9a).\n2Bei Eink\u00fcnften aus Kapitalverm\u00f6gen tritt \u00a7 20 Absatz 9 vorbehaltlich der Regelung in \u00a7 32d Absatz 2 an die Stelle der \u00a7\u00a7 9 und 9a.\n(3) Die Summe der Eink\u00fcnfte, vermindert um den Altersentlastungsbetrag, den Entlastungsbetrag f\u00fcr Alleinerziehende und den Abzug nach \u00a7 13 Absatz 3, ist der Gesamtbetrag der Eink\u00fcnfte.\n(4) Der Gesamtbetrag der Eink\u00fcnfte, vermindert um die Sonderausgaben und die au\u00dfergew\u00f6hnlichen Belastungen, ist das Einkommen.\n(5) 1Das Einkommen, vermindert um die Freibetr\u00e4ge nach \u00a7 32 Absatz 6 und um die sonstigen vom Einkommen abzuziehenden Betr\u00e4ge, ist das zu versteuernde Einkommen; dieses bildet die Bemessungsgrundlage f\u00fcr die tarifliche Einkommensteuer. 2Kn\u00fcpfen andere Gesetze an den Begriff des zu versteuernden Einkommens an, ist f\u00fcr deren Zweck das Einkommen in allen F\u00e4llen des \u00a7 32 um die Freibetr\u00e4ge nach \u00a7 32 Absatz 6 zu vermindern.",
+      "raw_sha256": "4ce8258e61a05e50348bfa2c149542d7b078c951ffa5b92b37a88b93d67f8848",
+      "reader_sha256": "a776de83fcc1b5085502ca8844dc998fc060e70f2ff5ffc8eaff71edc4ae7403",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U14def75b3e601808.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-2-20261024.html",
+    "native_LF": [
+      22,
+      29
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 78,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 18,
+    "id": "AO152-1",
+    "source": {
+      "id": "AO152-1",
+      "source": "Ua52afa3591a7820d",
+      "article": "AO152(1)",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "LF_start": 7,
+      "LF_end": 7,
+      "exact_quote": "(1) Gegen denjenigen, der seiner Verpflichtung zur Abgabe einer Steuererkl\u00e4rung nicht oder nicht fristgem\u00e4\u00df nachkommt, kann ein Versp\u00e4tungszuschlag festgesetzt werden. Von der Festsetzung eines Versp\u00e4tungszuschlags ist abzusehen, wenn der Erkl\u00e4rungspflichtige glaubhaft macht, dass die Versp\u00e4tung entschuldbar ist; das Verschulden eines Vertreters oder eines Erf\u00fcllungsgehilfen ist dem Erkl\u00e4rungspflichtigen zuzurechnen.",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+    "native_LF": [
+      7,
+      7
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 16,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 19,
+    "id": "E37-1",
+    "source": {
+      "id": "E37-1",
+      "source": "Uc643ed190a73675e",
+      "article": "E37(1)",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "LF_start": 7,
+      "LF_end": 7,
+      "exact_quote": "(1) 1Der Steuerpflichtige hat am 10. M\u00e4rz, 10. Juni, 10. September und 10. Dezember Vorauszahlungen auf die Einkommensteuer zu entrichten, die er f\u00fcr den laufenden Veranlagungszeitraum voraussichtlich schulden wird. 2Die Einkommensteuer-Vorauszahlung entsteht jeweils mit Beginn des Kalendervierteljahres, in dem die Vorauszahlungen zu entrichten sind, oder, wenn die Steuerpflicht erst im Laufe des Kalendervierteljahres begr\u00fcndet wird, mit Begr\u00fcndung der Steuerpflicht.",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader_sha256": "782a3f377dc8f603590990e0ea2aac93844231f128dbb4a901925e7a6b289efb",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc643ed190a73675e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-37-20261024.html",
+    "native_LF": [
+      7,
+      7
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 28,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 20,
+    "id": "E37-5",
+    "source": {
+      "id": "E37-5",
+      "source": "Uc643ed190a73675e",
+      "article": "E37(5)",
+      "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "LF_start": 11,
+      "LF_end": 11,
+      "exact_quote": "(5) 1Vorauszahlungen sind nur festzusetzen, wenn sie mindestens 400 Euro im Kalenderjahr und mindestens 100 Euro f\u00fcr einen Vorauszahlungszeitpunkt betragen. 2Festgesetzte Vorauszahlungen sind nur zu erh\u00f6hen, wenn sich der Erh\u00f6hungsbetrag im Fall des Absatzes 3 Satz 2 bis 5 f\u00fcr einen Vorauszahlungszeitpunkt auf mindestens 100 Euro, im Fall des Absatzes 4 auf mindestens 5 000 Euro bel\u00e4uft.",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader_sha256": "782a3f377dc8f603590990e0ea2aac93844231f128dbb4a901925e7a6b289efb",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc643ed190a73675e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-37-20261024.html",
+    "native_LF": [
+      11,
+      11
+    ],
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 30,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 21,
+    "id": "SWISSMIN",
+    "source": {
+      "id": "SWISSMIN",
+      "source": "U1b51f4526e41ff5d",
+      "article": "QStV9 current10January2025edition, residentannualgross/continuation/partyear",
+      "url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2018/274/20250110/de/pdf-a/fedlex-data-admin-ch-eli-cc-2018-274-20250110-de-pdf-a.pdf",
+      "LF_start": 225,
+      "LF_end": 253,
+      "exact_quote": "2. Abschnitt:\nNat\u00fcrliche Personen mit steuerrechtlichem Wohnsitz oder Aufenthalt\nin der Schweiz\n\nArt. 9           Obligatorische nachtr\u00e4gliche ordentliche Veranlagung\n1 Eine Person wird nach Artikel 89 Absatz 1 Buchstabe a DBG nachtr\u00e4glich ordentlich\nveranlagt, wenn ihr Bruttoeinkommen aus unselbstst\u00e4ndiger Erwerbst\u00e4tigkeit in ei-\nnem Steuerjahr mindestens 120 000 Franken betr\u00e4gt.\n2 Als Bruttoeinkommen aus unselbstst\u00e4ndiger Erwerbst\u00e4tigkeit gelten die Eink\u00fcnfte\nnach Artikel 84 Absatz 2 Buchstaben a und b DBG.\n3 Zweiverdienerehepaare werden nachtr\u00e4glich ordentlich veranlagt, wenn das Brutto-\neinkommen von Ehemann oder Ehefrau in einem Steuerjahr mindestens\n120 000 Franken betr\u00e4gt.\n\n\n\n\n16    BBl 1983 II 535\n\n                                                                                5 / 12\n\f642.118.2                                                                     Steuern\n\n\n4 Die nachtr\u00e4gliche ordentliche Veranlagung wird bis zum Ende der Quellensteuer-\npflicht beibehalten, und zwar unabh\u00e4ngig davon, ob das Bruttoeinkommen vor\u00fcber-\ngehend oder dauernd unter den Mindestbetrag von 120 000 Franken f\u00e4llt, Eheleute\nsich scheiden lassen oder sich tats\u00e4chlich oder rechtlich trennen.\n5 Bei unterj\u00e4hriger Steuerpflicht richtet sich die Berechnung des Mindestbetrags nach\nArtikel 40 Absatz 3 DBG.",
+      "raw_sha256": "17d27529954087bb69130127f79e99849756d298d40c9efe6d508d9298fe673b",
+      "reader_sha256": "b2932bf8f8e4066f01b74f10559c762816eddc2892984ea5d0c2b992438fff22",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1b51f4526e41ff5d.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1b51f4526e41ff5d.body",
+    "native_LF": [
+      225,
+      253
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 22,
+    "id": "SWISS35",
+    "source": {
+      "id": "SWISS35",
+      "source": "U765fe003a1a24fad",
+      "article": "CurrentESTV Verrechnungssteuer explanation,35percentcapitalincome",
+      "url": "https://www.estv.admin.ch/de/verrechnungssteuer",
+      "LF_start": 48,
+      "LF_end": 52,
+      "exact_quote": "Der Steuersatz betr\u00e4gt\n35 % auf Kapitalertr\u00e4gen und Lottogewinnen,\n15 % auf Leibrenten und Pensionen und\n8 % auf sonstigen Versicherungsleistungen.\nSteuerpflichtig sind die inl\u00e4ndischen Schuldner der steuerbaren Leistung. Sie haben auf der steuerbaren Leistung die Steuer zu entrichten und diese durch entsprechende K\u00fcrzung der Leistung auf deren Empf\u00e4nger zu \u00fcberw\u00e4lzen.",
+      "raw_sha256": "e081d3799c1803477ac7924f295e7111b5f20b98e41956f0161818318ec2c749",
+      "reader_sha256": "2cb20b7ba0d81c854b182ff92c0107ccf36bc50aa417edd85b41bc76a9ec4a3f",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U765fe003a1a24fad.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U765fe003a1a24fad.body",
+    "native_LF": [
+      48,
+      52
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 23,
+    "id": "ENTRY",
+    "source": {
+      "id": "ENTRY",
+      "source": "U93ba2798cfe5272e",
+      "article": "BGBl2025II309entrynotice",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2025-12-23-Schweiz-DBA-Bekanntmachung-Protokoll.pdf?__blob=publicationFile&v=3",
+      "LF_start": 16,
+      "LF_end": 24,
+      "exact_quote": "  Nach Artikel 3 Absatz 2 des Gesetzes vom 27. Oktober 2025 zu dem Protokoll vom 21. August 2023 zur \u00c4nderung\ndes Abkommens vom 11. August 1971 zwischen der Bundesrepublik Deutschland und der Schweizerischen Eid-\ngenossenschaft zur Vermeidung der Doppelbesteuerung auf dem Gebiete der Steuern vom Einkommen und vom\nVerm\u00f6gen in der Fassung des \u00c4nderungsprotokolls vom 27. Oktober 2010 (BGBl. 2025 II Nr. 275) wird bekannt\ngemacht, dass das Protokoll nach seinem Artikel 23 Absatz 2 Satz 1\n                                               am 27. November 2025\nin Kraft getreten ist.\n\n  Die Ratifikationsurkunden wurden am 27. November 2025 in Bern ausgetauscht.",
+      "raw_sha256": "f876a58e842e8f275a784f737925ead59dbc0338862a542adf6b4be2de3f06c5",
+      "reader_sha256": "7d2cb9269fc6db77d74c413cdf8e965533d761b1667defe95308f6144308d5a8",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U93ba2798cfe5272e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U93ba2798cfe5272e.body",
+    "native_LF": [
+      16,
+      24
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 24,
+    "id": "EFFECT",
+    "source": {
+      "id": "EFFECT",
+      "source": "U46cc9b8d7d484c56",
+      "article": "Protocol21August2023Article23(2)",
+      "url": "https://www.recht.bund.de/bgbl/2/2025/275/regelungstext.pdf?__blob=publicationFile&v=2",
+      "LF_start": 477,
+      "LF_end": 487,
+      "exact_quote": "                                                               Artikel 23\n  (1) Dieses Protokoll bedarf der Ratifikation; die Ratifikationsurkunden werden so bald wie m\u00f6glich ausgetauscht.\n   (2) Dieses Protokoll tritt am Tag des Austauschs der Ratifikationsurkunden in Kraft und ist anzuwenden auf Besteuerungszeitr\u00e4ume,\ndie am oder nach dem 1. Januar des auf den Tag des Inkrafttretens dieses Protokolls folgenden Kalenderjahres beginnen. Abweichend\ndavon sind die Bestimmungen dieses Protokolls anwendbar:\na) in Bezug auf die Definition der zust\u00e4ndigen Beh\u00f6rden in Artikel 3 Absatz 1 Buchstabe i des Abkommens: ab dem Inkrafttreten\n   dieses Protokolls;\nb) in Bezug auf die an der Quelle erhobenen Steuern auf Eink\u00fcnfte im Sinne der Artikel 10, 11 und 12, die am oder nach dem 1. Januar\n   des auf den Tag des Inkrafttretens folgenden Kalenderjahres f\u00e4llig werden;\nc) in Bezug auf Artikel 26 des Abkommens: ab dem 1. Januar des \u00fcbern\u00e4chsten Kalenderjahres, das auf den Tag des Inkrafttretens\n   dieses Protokolls folgt.",
+      "raw_sha256": "300322a2df7bf32d6901685d69caee44ba4064aa889c8baf9783b505230546f2",
+      "reader_sha256": "784922d06185bf46d7b16ef11755b9db2ede6cfc810ccaca9db514cfc2d20a6c",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U46cc9b8d7d484c56.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U46cc9b8d7d484c56.body",
+    "native_LF": [
+      477,
+      487
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 25,
+    "id": "RESTIE",
+    "source": {
+      "id": "RESTIE",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "DECH4(1)/(2)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 146,
+      "LF_end": 158,
+      "exact_quote": "  (1) Im Sinne dieses Abkommens bedeutet der Ausdruck \u201eeine in einem Vertragsstaat ans\u00e4ssige Person\u201c eine Person, die nach\ndem in diesem Staat geltenden Recht dort unbeschr\u00e4nkt steuerpflichtig ist.\n     (2) Ist nach Absatz 1 eine nat\u00fcrliche Person in beiden Vertragsstaaten ans\u00e4ssig, so gilt folgendes:\na) Die Person gilt als in dem Vertragsstaat ans\u00e4ssig, in dem sie \u00fcber eine st\u00e4ndige Wohnst\u00e4tte verf\u00fcgt. Verf\u00fcgt sie in beiden\n   Vertragsstaaten \u00fcber eine st\u00e4ndige Wohnst\u00e4tte, so gilt sie als in dem Vertragsstaat ans\u00e4ssig, zu dem sie die engeren pers\u00f6nlichen\n   und wirtschaftlichen Beziehungen hat (Mittelpunkt der Lebensinteressen).\nb) Kann nicht bestimmt werden, in welchem Vertragsstaat die Person den Mittelpunkt der Lebensinteressen hat, oder verf\u00fcgt sie in\n   keinem der Vertragsstaaten \u00fcber eine st\u00e4ndige Wohnst\u00e4tte, so gilt sie als in dem Vertragsstaat ans\u00e4ssig, in dem sie ihren\n   gew\u00f6hnlichen Aufenthalt hat.\nc) Hat die Person ihren gew\u00f6hnlichen Aufenthalt in beiden Vertragsstaaten oder in keinem der Vertragsstaaten, so gilt sie als in dem\n   Vertragsstaat ans\u00e4ssig, dessen Staatsangeh\u00f6rigkeit sie besitzt.\nd) Besitzt die Person die Staatsangeh\u00f6rigkeit beider Vertragsstaaten oder keines Vertragsstaates, so regeln die zust\u00e4ndigen Beh\u00f6rden\n   der Vertragsstaaten die Frage in gegenseitigem Einvernehmen.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      146,
+      158
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 26,
+    "id": "TAIL",
+    "source": {
+      "id": "TAIL",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "DECH4(4)fullsourcecredit/employmentescape",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 174,
+      "LF_end": 186,
+      "exact_quote": "   (4) Bei einer in der Schweiz ans\u00e4ssigen nat\u00fcrlichen Person, die nicht die schweizerische Staatsangeh\u00f6rigkeit besitzt und die in der\nBundesrepublik Deutschland insgesamt mindestens f\u00fcnf Jahre unbeschr\u00e4nkt steuerpflichtig war, kann die Bundesrepublik Deutschland\nin dem Jahr, in dem die unbeschr\u00e4nkte Steuerpflicht zuletzt geendet hat, und in den folgenden f\u00fcnf Jahren die aus der Bundesrepublik\nDeutschland stammenden Eink\u00fcnfte und die in der Bundesrepublik Deutschland belegenen Verm\u00f6genswerte, ungeachtet anderer\nBestimmungen des Abkommens, besteuern. Die nach diesem Abkommen zul\u00e4ssige Besteuerung dieser Eink\u00fcnfte oder\nVerm\u00f6genswerte in der Schweiz bleibt unber\u00fchrt. Die Bundesrepublik Deutschland rechnet jedoch in entsprechender Anwendung der\nVorschriften des deutschen Rechts \u00fcber die Anrechnung ausl\u00e4ndischer Steuern die in \u00dcbereinstimmung mit diesem Abkommen von\ndiesen Eink\u00fcnften oder Verm\u00f6genswerten erhobene schweizerische Steuer auf den Teil der deutschen Steuer (mit Ausnahme der\nGewerbesteuer) an, der aufgrund dieser Bestimmung von diesen Eink\u00fcnften oder Verm\u00f6genswerten \u00fcber die deutsche Steuer hinaus\nerhoben wird, die nach den Artikeln 6 bis 22 hierf\u00fcr erhoben werden d\u00fcrfte. Die Bestimmungen dieses Absatzes gelten nicht, wenn\ndie nat\u00fcrliche Person in der Schweiz ans\u00e4ssig geworden ist, um hier eine echte unselbst\u00e4ndige Arbeit f\u00fcr einen Arbeitgeber auszu\u00fcben,\nan dem sie \u00fcber das Arbeitsverh\u00e4ltnis hinaus weder unmittelbar noch mittelbar durch Beteiligung oder in anderer Weise wirtschaftlich\nwesentlich interessiert ist.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      174,
+      186
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 27,
+    "id": "LUMPSUMRES",
+    "source": {
+      "id": "LUMPSUMRES",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "DECH4(6)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 191,
+      "LF_end": 193,
+      "exact_quote": "  (6) Nicht als \u201ein einem Vertragsstaat ans\u00e4ssig\u201c gilt eine nat\u00fcrliche Person, die in dem Vertragsstaat, in dem sie nach den\nvorstehenden Bestimmungen ans\u00e4ssig w\u00e4re, nicht mit allen nach dem Steuerrecht dieses Staates allgemein steuerpflichtigen\nEink\u00fcnften aus dem anderen Vertragsstaat den allgemein erhobenen Steuern unterliegt.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      191,
+      193
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 28,
+    "id": "SALARY",
+    "source": {
+      "id": "SALARY",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "DECH15(1)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 431,
+      "LF_end": 434,
+      "exact_quote": "  (1) Vorbehaltlich der Artikel 15a bis 19 k\u00f6nnen Geh\u00e4lter, L\u00f6hne und \u00e4hnliche Verg\u00fctungen, die eine in einem Vertragsstaat ans\u00e4ssige\nPerson aus unselbst\u00e4ndiger Arbeit bezieht, nur in diesem Staat besteuert werden, es sei denn, dass die Arbeit in dem anderen\nVertragsstaat ausge\u00fcbt wird. Wird die Arbeit dort ausge\u00fcbt, so k\u00f6nnen die daf\u00fcr bezogenen Verg\u00fctungen in dem anderen Staat\nbesteuert werden.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      431,
+      434
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 29,
+    "id": "MANAGER",
+    "source": {
+      "id": "MANAGER",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "DECH15(4)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 447,
+      "LF_end": 451,
+      "exact_quote": "  (4) Vorbehaltlich des Artikels 15a kann eine nat\u00fcrliche Person, die in einem Vertragsstaat ans\u00e4ssig, aber als Vorstandsmitglied,\nDirektor, Gesch\u00e4ftsf\u00fchrer oder Prokurist einer in dem anderen Vertragsstaat ans\u00e4ssigen Kapitalgesellschaft t\u00e4tig ist, mit den Eink\u00fcnften\naus dieser T\u00e4tigkeit in diesem anderen Staat besteuert werden, sofern ihre T\u00e4tigkeit nicht so abgegrenzt ist, dass sie lediglich Aufgaben\nau\u00dferhalb dieses anderen Staates umfasst. Besteuert dieser andere Vertragsstaat diese Eink\u00fcnfte nicht, so k\u00f6nnen sie in dem Staat\nbesteuert werden, in dem die nat\u00fcrliche Person ans\u00e4ssig ist.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      447,
+      451
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 30,
+    "id": "FRONT",
+    "source": {
+      "id": "FRONT",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "DECH15a(1)/(2)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 454,
+      "LF_end": 462,
+      "exact_quote": "  (1) Ungeachtet des Artikels 15 k\u00f6nnen Geh\u00e4lter, L\u00f6hne und \u00e4hnliche Verg\u00fctungen, die ein Grenzg\u00e4nger aus unselbst\u00e4ndiger Arbeit\nbezieht, in dem Vertragsstaat besteuert werden, in dem dieser ans\u00e4ssig ist. Zum Ausgleich kann der Vertragsstaat, in dem die Arbeit\nausge\u00fcbt wird, von diesen Verg\u00fctungen eine Steuer im Abzugsweg erheben. Diese Steuer darf 4,5 vom Hundert des Bruttobetrages\nder Verg\u00fctungen nicht \u00fcbersteigen, wenn die Ans\u00e4ssigkeit durch eine amtliche Bescheinigung der zust\u00e4ndigen Finanzbeh\u00f6rde des\nVertragsstaates, in dem der Steuerpflichtige ans\u00e4ssig ist, nachgewiesen wird. Artikel 4 Absatz 4 bleibt vorbehalten.\n   (2) Grenzg\u00e4nger im Sinne des Absatzes 1 ist jede in einem Vertragsstaat ans\u00e4ssige Person, die in dem anderen Vertragsstaat\nihren Arbeitsort hat und von dort regelm\u00e4\u00dfig an ihren Wohnsitz zur\u00fcckkehrt. Kehrt diese Person nicht jeweils nach Arbeitsende an\nihren Wohnsitz zur\u00fcck, entf\u00e4llt die Grenzg\u00e4ngereigenschaft nur dann, wenn die Person bei einer Besch\u00e4ftigung w\u00e4hrend des gesamten\nKalenderjahres an mehr als 60 Arbeitstagen aufgrund ihrer Arbeitsaus\u00fcbung nicht an ihren Wohnsitz zur\u00fcckkehrt.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      454,
+      462
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 31,
+    "id": "CREDIT",
+    "source": {
+      "id": "CREDIT",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "DECH15a(3)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 463,
+      "LF_end": 468,
+      "exact_quote": "  (3) Der Vertragsstaat, in dem der Grenzg\u00e4nger ans\u00e4ssig ist, ber\u00fccksichtigt die nach Absatz 1 Satz 3 erhobene Steuer ungeachtet\ndes Artikels 24 wie folgt:\na) in der Bundesrepublik Deutschland wird die Steuer entsprechend \u00a7 36 Einkommensteuergesetz unter Ausschluss von \u00a7 34c\n   Einkommensteuergesetz auf die deutsche Einkommensteuer angerechnet; die Steuer wird auch bei der Festsetzung von\n   Einkommensteuer-Vorauszahlungen ber\u00fccksichtigt;\nb) in der Schweiz wird der Bruttobetrag der Verg\u00fctungen bei der Ermittlung der Bemessungsgrundlage um ein F\u00fcnftel herabgesetzt.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      463,
+      468
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 32,
+    "id": "WORKPLACE",
+    "source": {
+      "id": "WORKPLACE",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "Protocol5(a)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 857,
+      "LF_end": 861,
+      "exact_quote": "     a) Arbeitsort im Sinne von Artikel 15a Absatz 2 Satz 1 ist regelm\u00e4\u00dfig der Ort, an dem der Arbeitnehmer in den Betrieb des\n        Arbeitgebers eingegliedert ist. \u00dcbt der Arbeitnehmer die T\u00e4tigkeit nicht nur an diesem Ort aus (zum Beispiel Berufskraftfahrer,\n        Au\u00dfendienstmitarbeiter), so sind die Tage der ausw\u00e4rtigen T\u00e4tigkeit als Gesch\u00e4ftsreisen im Rahmen der Ermittlung der\n        Nichtr\u00fcckkehrtage zu w\u00fcrdigen. Ist der Arbeitnehmer gem\u00e4\u00df Arbeitsvertrag in mehr als einem Betrieb des Arbeitgebers oder\n        in keinem Betrieb des Arbeitgebers eingegliedert, so ist Arbeitsort der Ort, an dem er die Arbeit \u00fcberwiegend auszu\u00fcben hat.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      857,
+      861
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 33,
+    "id": "RETURN",
+    "source": {
+      "id": "RETURN",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "Protocol5(b)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 864,
+      "LF_end": 865,
+      "exact_quote": "     b) Eine regelm\u00e4\u00dfige R\u00fcckkehr liegt vor, wenn sich der Arbeitnehmer aufgrund des Arbeitsvertrags oder der Arbeitsvertr\u00e4ge an\n        mindestens 20 Prozent der vereinbarten Arbeitstage im Kalenderjahr vom Wohnsitz an den Arbeitsort und zur\u00fcck begibt.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      864,
+      865
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 34,
+    "id": "SHIFT",
+    "source": {
+      "id": "SHIFT",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "Protocol5(c)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 866,
+      "LF_end": 870,
+      "exact_quote": "     c) Die Annahme einer regelm\u00e4\u00dfigen R\u00fcckkehr an den Wohnsitz im Sinne von Artikel 15a Absatz 2 Satz 1 wird nicht dadurch\n        ausgeschlossen, dass sich die Arbeitsaus\u00fcbung bedingt durch betriebliche Umst\u00e4nde, wie zum Beispiel bei Schichtarbeit\n        oder Arbeit im Gesundheitswesen mit Bereitschaftsdienst, \u00fcber mehrere Tage erstreckt. Kurzfristige Arbeitszeitunter-\n        brechungen von weniger als vier Stunden f\u00fchren nicht zur Annahme eines Arbeitsendes im Sinne von Artikel 15a Absatz 2\n        Satz 2.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      866,
+      870
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 35,
+    "id": "DAYS",
+    "source": {
+      "id": "DAYS",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "Protocol5(d)express15a(2)sentence2scope",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 871,
+      "LF_end": 876,
+      "exact_quote": "     d) Arbeitstage im Sinne von Artikel 15a Absatz 2 Satz 2 sind die im Arbeitsvertrag vereinbarten Tage. Fehlt eine solche\n        Vereinbarung, gelten die tats\u00e4chlichen Arbeitstage als solche im Sinne dieser Bestimmung. Erstreckt sich eine mehrt\u00e4gige\n        Gesch\u00e4ftsreise \u00fcber Wochenend- und Feiertage und tr\u00e4gt der Arbeitgeber die Reisekosten f\u00fcr diese Tage, gelten sie als\n        Arbeitstage. Ebenfalls als Arbeitstage gelten grunds\u00e4tzlich arbeitsfreie Tage, namentlich Wochenenden und Feiertage, an\n        welchen der Grenzg\u00e4nger auf ausdr\u00fcckliche Anordnung des Arbeitgebers hin arbeitet. Urlaubs- und krankheitsbedingte\n        Abwesenheiten gelten nicht als Arbeitstage.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      871,
+      876
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 36,
+    "id": "DISTANCE",
+    "source": {
+      "id": "DISTANCE",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "Protocol5(e)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 877,
+      "LF_end": 884,
+      "exact_quote": "     e) Eine Nichtr\u00fcckkehr aufgrund der Arbeitsaus\u00fcbung liegt namentlich dann vor, wenn die R\u00fcckkehr an den Wohnsitz aus\n        beruflichen Gr\u00fcnden nicht m\u00f6glich oder nicht zumutbar ist. Bei Benutzung eines Kraftfahrzeugs ist eine R\u00fcckkehr des\n        Arbeitnehmers an den Wohnsitz nach Arbeitsende insbesondere nicht zumutbar, wenn die k\u00fcrzeste Stra\u00dfenentfernung f\u00fcr\n        die einfache Wegstrecke \u00fcber 100 Kilometer betr\u00e4gt. Bei Benutzung \u00f6ffentlicher Verkehrsmittel ist eine R\u00fcckkehr an den\n        Wohnsitz insbesondere nicht zumutbar, wenn die k\u00fcrzeste Reisedauer zu den allgemein \u00fcblichen Pendelzeiten f\u00fcr die\n        einfache Wegstrecke mehr als 1,5 Stunden betr\u00e4gt. Ma\u00dfgeblich ist das \u00fcberwiegend benutzte Verkehrsmittel. Von einem\n        Nichtr\u00fcckkehrtag ist bei vorliegender Unzumutbarkeit der R\u00fcckkehr nur auszugehen, wenn der Arbeitnehmer tats\u00e4chlich\n        nicht an den Wohnsitz zur\u00fcckgekehrt ist.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      877,
+      884
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 37,
+    "id": "TRIP",
+    "source": {
+      "id": "TRIP",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "Protocol5(f)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 885,
+      "LF_end": 886,
+      "exact_quote": "     f) Eint\u00e4gige Gesch\u00e4ftsreisen im Vertragsstaat des Arbeitsorts und im Ans\u00e4ssigkeitsstaat z\u00e4hlen nicht zu den Nichtr\u00fcck-\n        kehrtagen. Eint\u00e4gige Gesch\u00e4ftsreisen in Drittstaaten z\u00e4hlen stets zu den Nichtr\u00fcckkehrtagen.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      885,
+      886
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 38,
+    "id": "PARTYEAR",
+    "source": {
+      "id": "PARTYEAR",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "Protocol5(g)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 887,
+      "LF_end": 890,
+      "exact_quote": "     g) Ist ein Arbeitnehmer nicht w\u00e4hrend des gesamten Kalenderjahres im anderen Vertragsstaat besch\u00e4ftigt, so sind die f\u00fcr die\n        Grenzg\u00e4ngereigenschaft unsch\u00e4dlichen Nichtr\u00fcckkehrtage in der Weise zu berechnen, dass f\u00fcr einen vollen Monat der\n        Besch\u00e4ftigung f\u00fcnf Tage und f\u00fcr jede volle Woche der Besch\u00e4ftigung ein Tag anzusetzen sind. Ma\u00dfgebend f\u00fcr die Pr\u00fcfung,\n        ob eine Grenzg\u00e4ngereigenschaft vorliegt, ist die Gesamtzahl der auf diese Weise errechneten Tage.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      887,
+      890
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 39,
+    "id": "MULTIPLE",
+    "source": {
+      "id": "MULTIPLE",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "Protocol5(h)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 891,
+      "LF_end": 896,
+      "exact_quote": "     h) Findet ein Arbeitgeberwechsel innerhalb eines Kalenderjahres im T\u00e4tigkeitsstaat statt oder arbeitet ein Arbeitnehmer\n        gleichzeitig f\u00fcr mehrere Arbeitgeber im T\u00e4tigkeitsstaat, ist die Grenzg\u00e4ngereigenschaft insgesamt f\u00fcr alle Arbeitsverh\u00e4ltnisse\n        des Arbeitnehmers in diesem Kalenderjahr im T\u00e4tigkeitsstaat einheitlich zu beurteilen. Zur \u00dcberpr\u00fcfung, ob die jeweils\n        ma\u00dfgebliche Grenze der Nichtr\u00fcckkehrtage in dem zu beurteilenden Kalenderjahr \u00fcberschritten wurde, sind die\n        Nichtr\u00fcckkehrtage aus den jeweiligen Arbeitsverh\u00e4ltnissen zusammenzurechnen. Davon unber\u00fchrt bleibt die Berechnung\n        der f\u00fcr die Grenzg\u00e4ngereigenschaft unsch\u00e4dlichen Nichtr\u00fcckkehrtage gem\u00e4\u00df Buchstabe g.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      891,
+      896
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 40,
+    "id": "PARTTIME",
+    "source": {
+      "id": "PARTTIME",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "Protocol5(i)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 897,
+      "LF_end": 904,
+      "exact_quote": "     i)   Bei Teilzeitbesch\u00e4ftigten, die stundenweise, aber an jedem betriebs\u00fcblichen Arbeitstag im anderen Staat besch\u00e4ftigt sind,\n          ist f\u00fcr die Frage der Grenzg\u00e4ngereigenschaft ebenfalls von 60 unsch\u00e4dlichen Nichtr\u00fcckkehrtagen auszugehen. Bei\n          Teilzeitbesch\u00e4ftigten, die nur tageweise im anderen Staat besch\u00e4ftigt sind, ist diese Zahl durch proportionale K\u00fcrzung im\n          Verh\u00e4ltnis der Arbeitstage herabzusetzen.\n          Bezugsgr\u00f6\u00dfen sind hierbei die im jeweiligen Arbeitsvertrag vereinbarten Arbeitstage zu den bei Vollzeitbesch\u00e4ftigung\n          betriebs\u00fcblichen Arbeitstagen. Lassen sich die betriebs\u00fcblichen Arbeitstage dem Arbeitsvertrag nicht entnehmen, so ist bei\n          einer F\u00fcnf-Tage-Woche von 240 betriebs\u00fcblichen Arbeitstagen, bei einer Sechs-Tage-Woche von 280 betriebs\u00fcblichen\n          Arbeitstagen auszugehen. Urlaubstage sind bei beiden Rechengr\u00f6\u00dfen aus Vereinfachungsgr\u00fcnden nicht abzuziehen.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      897,
+      904
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 41,
+    "id": "PROOF",
+    "source": {
+      "id": "PROOF",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "Protocol5(j)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 905,
+      "LF_end": 910,
+      "exact_quote": "     j)   Die Bescheinigung des Arbeitgebers \u00fcber die Nichtr\u00fcckkehrtage ist mit einem Sichtvermerk der f\u00fcr den Arbeitsort zust\u00e4ndigen\n          Finanzbeh\u00f6rde zu versehen. Im Fall von Buchstabe h hat der Arbeitgeber dem Arbeitnehmer bei Beendigung des Arbeits-\n          verh\u00e4ltnisses die Nichtr\u00fcckkehrtage bis zur Beendigung des Arbeitsverh\u00e4ltnisses durch Vordruck nach zwischen den\n          zust\u00e4ndigen Beh\u00f6rden abgestimmtem Muster zu bescheinigen. Der Arbeitnehmer ist gegen\u00fcber dem Arbeitgeber zur\n          Auskunft \u00fcber Tatsachen verpflichtet, die f\u00fcr die Durchf\u00fchrung einer zutreffenden Besteuerung erforderlich sind. Ermittlungen\n          der am Wohnsitz zust\u00e4ndigen Finanzbeh\u00f6rde werden hierdurch nicht ausgeschlossen.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      905,
+      910
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 42,
+    "id": "PAYCERT",
+    "source": {
+      "id": "PAYCERT",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "Protocol6/7",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 911,
+      "LF_end": 916,
+      "exact_quote": "6.   Zu Artikel 15a Absatz 3\n     Der Bruttobetrag der Verg\u00fctungen und die im T\u00e4tigkeitsstaat erhobene Abzugssteuer sind f\u00fcr Zwecke der Ber\u00fccksichtigung im\n     Ans\u00e4ssigkeitsstaat durch eine Bescheinigung des Arbeitgebers nachzuweisen. Der Arbeitgeber ist verpflichtet, diese Be-\n     scheinigung auf Verlangen des Arbeitnehmers auszustellen.\n7.   Zu Artikel 15a\n     Es besteht Einvernehmen, dass das Verhandlungsprotokoll vom 18. Dezember 1991 keine Anwendung mehr findet.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      911,
+      916
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 43,
+    "id": "EXEMPTCH",
+    "source": {
+      "id": "EXEMPTCH",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "DECH24(1)no1(c)/2",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 572,
+      "LF_end": 577,
+      "exact_quote": "   c) Geh\u00e4lter, L\u00f6hne und \u00e4hnliche Verg\u00fctungen im Sinne des Artikels 15, soweit sie nicht unter Artikel 17 fallen, vorausgesetzt, die\n      Arbeit wird in der Schweiz ausge\u00fcbt.\n2. Die Bundesrepublik Deutschland beh\u00e4lt das Recht, die nach den Bestimmungen dieses Abkommens von der deutschen Steuer\n   ausgenommenen Eink\u00fcnfte und Verm\u00f6genswerte bei der Festsetzung ihres Steuersatzes zu ber\u00fccksichtigen. Dies gilt\n   entsprechend f\u00fcr die in der Schweiz belegenen Verm\u00f6genswerte, wenn die daraus erzielten Eink\u00fcnfte nach Nummer 1 Buch-\n   staben a und b von der Bemessungsgrundlage der deutschen Steuer auszunehmen sind oder auszunehmen w\u00e4ren.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      572,
+      577
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 44,
+    "id": "SUBJECTTAX",
+    "source": {
+      "id": "SUBJECTTAX",
+      "source": "U20a110d035f0b1ba",
+      "article": "EStG50d(8)",
+      "url": "https://www.gesetze-im-internet.de/estg/__50d.html",
+      "LF_start": 19,
+      "LF_end": 19,
+      "exact_quote": "(8) 1Sind Eink\u00fcnfte eines unbeschr\u00e4nkt Steuerpflichtigen aus nichtselbst\u00e4ndiger Arbeit (\u00a7 19) nach einem Abkommen zur Vermeidung der Doppelbesteuerung von der Bemessungsgrundlage der deutschen Steuer auszunehmen, wird die Freistellung bei der Veranlagung ungeachtet des Abkommens nur gew\u00e4hrt, soweit der Steuerpflichtige nachweist, dass der Staat, dem nach dem Abkommen das Besteuerungsrecht zusteht, auf dieses Besteuerungsrecht verzichtet hat oder dass die in diesem Staat auf die Eink\u00fcnfte festgesetzten Steuern entrichtet wurden. 2Wird ein solcher Nachweis erst gef\u00fchrt, nachdem die Eink\u00fcnfte in eine Veranlagung zur Einkommensteuer einbezogen wurden, ist der Steuerbescheid insoweit zu \u00e4ndern. 3\u00a7 175 Absatz 1 Satz 2 der Abgabenordnung ist entsprechend anzuwenden.",
+      "raw_sha256": "fd1ee264c4c5e8fc80f1663de4ea010fc7793242c574622dad8a2c05d7fb345a",
+      "reader_sha256": "05fc41a45e6dc460030534c73b751375029212123e882f7cf0f5a37fe5a35878",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U20a110d035f0b1ba.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U20a110d035f0b1ba.body",
+    "native_LF": [
+      19,
+      19
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 45,
+    "id": "HOMEOFFICE",
+    "source": {
+      "id": "HOMEOFFICE",
+      "source": "Ub097204de605cb80",
+      "article": "BMF26July2022context2010treaty",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2022-07-26-konsultationsvereinbarung-betreffend-der-grenzgaengerregelung-artikel-15a-des-deutsch-schweizerischen-DBS.pdf?__blob=publicationFile&v=2",
+      "LF_start": 32,
+      "LF_end": 37,
+      "exact_quote": "                Vor dem Hintergrund, dass Arbeitnehmende ihre T\u00e4tigkeit zunehmend auch an ihrem Wohn-\n                sitz aus\u00fcben m\u00f6chten, haben die zust\u00e4ndigen Beh\u00f6rden zur einheitlichen Anwendung und\n                Auslegung des Artikels 15a Absatz 2 des deutsch-schweizerischen Doppelbesteuerungs-\n                abkommens vom 11. August 1971, zuletzt ge\u00e4ndert durch das \u00c4nderungsprotokoll vom\n                27. Oktober 2010 (BGBl. 2011 II S. 1092), gest\u00fctzt auf Artikel 26 Absatz 3 DBA-Schweiz,\n                die nachstehende Konsultationsvereinbarung abgeschlossen:",
+      "raw_sha256": "6d94a6b40bc81ddcb0dcdd1ab1152ffb203ddf6db3659eee894f24c8bb1f1639",
+      "reader_sha256": "4f8758b4217ead6d519edc57aef45e4c234a921bf395aa78818463f0d6b7b2fc",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ub097204de605cb80.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ub097204de605cb80.body",
+    "native_LF": [
+      32,
+      37
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 46,
+    "id": "HOMECLAUSE",
+    "source": {
+      "id": "HOMECLAUSE",
+      "source": "Ub097204de605cb80",
+      "article": "BMF26July2022wholehomeworknotnonreturn",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2022-07-26-konsultationsvereinbarung-betreffend-der-grenzgaengerregelung-artikel-15a-des-deutsch-schweizerischen-DBS.pdf?__blob=publicationFile&v=2",
+      "LF_start": 53,
+      "LF_end": 59,
+      "exact_quote": "          Es besteht das gemeinsame Verst\u00e4ndnis, dass Arbeitstage, an denen eine Grenzg\u00e4ngerin oder\n          ein Grenzg\u00e4nger im Sinne des Artikels 15a Absatz 2 Satz 1 DBA ganzt\u00e4gig am Wohnsitz im\n          Ans\u00e4ssigkeitsstaat arbeitet, nicht als Arbeitstage gelten, an welchen die Person nach Arbeits-\n          ende aufgrund ihrer Arbeitsaus\u00fcbung nicht an den Wohnsitz zur\u00fcckkehrt. Diese Arbeitstage\n          gelten somit nicht als Nichtr\u00fcckkehrtage im Sinne des Artikels 15a Absatz 2 Satz 2 DBA.\n\n          Bern, den 15. Juli 2022                                             Berlin, den 18. Juli 2022",
+      "raw_sha256": "6d94a6b40bc81ddcb0dcdd1ab1152ffb203ddf6db3659eee894f24c8bb1f1639",
+      "reader_sha256": "4f8758b4217ead6d519edc57aef45e4c234a921bf395aa78818463f0d6b7b2fc",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ub097204de605cb80.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ub097204de605cb80.body",
+    "native_LF": [
+      53,
+      59
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 47,
+    "id": "MANEX",
+    "source": {
+      "id": "MANEX",
+      "source": "Uc0fac2518009754c",
+      "article": "BMF25April2023signature/authoritymethod",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2023-04-25-konsultationsvereinbarung-zu-artikel-15-absatz-4-des-deutsch-schweizerischen-DBA.pdf?__blob=publicationFile&v=1",
+      "LF_start": 61,
+      "LF_end": 78,
+      "exact_quote": "          2. Es wurde nunmehr Einvernehmen erzielt, Artikel 15 Absatz 4 des Abkommens auch auf\n          Personen anzuwenden, die mit Einzelunterschrift oder Kollektivunterschrift ohne Bezeichnung\n          ihrer Funktion im Schweizer Handelsregister eingetragen sind.\n\n          3. Dar\u00fcber hinaus wurde Einvernehmen erzielt, Artikel 15 Absatz 4 des Abkommens auch auf\n          Personen, die nicht im Handelsregister eingetragen sind, anzuwenden, die aus zivilrechtlicher\n          Sicht eine Stellung innerhalb einer Kapitalgesellschaft einnehmen, die im Hinblick auf die\n          damit verbundene Leitungs- und Vertretungsbefugnis nach den Gesamtumst\u00e4nden des\n          Einzelfalls mit den ausdr\u00fccklich in Artikel 15 Absatz 4 des Abkommens genannten Personen\n          vergleichbar sind. Dabei muss die Leitungs- und Vertretungsbefugnis mindestens der einer\n          Prokura entsprechen. Dies kann \u2013 auch in F\u00e4llen, in denen Prokura ohne Eintragung ins\n          Handelsregister erteilt wurde \u2013 durch eine gegen\u00fcber einer Handlungsvollmacht weitergehende\n          Befugnis zur Au\u00dfenvertretung des Unternehmens nachgewiesen werden (zum Beispiel durch\n          Vorlage eines Zirkulationsbeschlusses, Unterschriftenreglements oder Unternehmensstatutes).\n          Daneben sind insbesondere die folgenden Umst\u00e4nde unter Ber\u00fccksichtigung der\n          Unternehmensgr\u00f6\u00dfe und -branche sowie der Zugeh\u00f6rigkeit zu einer Unternehmensgruppe\n\fSeite 3   darzulegen und zu gewichten. Dabei m\u00fcssen nicht s\u00e4mtliche Umst\u00e4nde vorliegen, um die\n          Voraussetzungen von Artikel 15 Absatz 4 des Abkommens zu erf\u00fcllen:",
+      "raw_sha256": "197ac67df6fd582c68a51b13dc0d767916d3d0efa5f1e748989fb21c60b4670d",
+      "reader_sha256": "0c9f3120a2245742c895dbd177f1461b7e3fd2f0f81bb57b022587cf397f20bf",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc0fac2518009754c.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc0fac2518009754c.body",
+    "native_LF": [
+      61,
+      78
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 48,
+    "id": "MANUNTIL",
+    "source": {
+      "id": "MANUNTIL",
+      "source": "U9113d9f3546c4ba3",
+      "article": "BMF16October2025extensionuntil2027",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2025-10-16-weiterfuehrung-konsultationsvereinb.pdf?__blob=publicationFile&v=3",
+      "LF_start": 42,
+      "LF_end": 48,
+      "exact_quote": "Gest\u00fctzt auf Artikel 26 Absatz 3 DBA vereinbaren die zust\u00e4ndigen Beh\u00f6rden der Bundesrepublik\nDeutschland und der Schweizerischen Eidgenossenschaft, dass die Konsultationsvereinbarung\nvom 6. April 2023 zu Artikel 15 Absatz 4 des Abkommens vom 11. August 1971 zwischen der\nBundesrepublik Deutschland und der Schweizerischen Eidgenossenschaft zur Vermeidung der\nDoppelbesteuerung auf dem Gebiete der Steuern vom Einkommen und vom Verm\u00f6gen bis zum\n31. Dezember 2027 anwendbar bleibt, sofern sich die zust\u00e4ndigen Beh\u00f6rden nicht \u00fcber eine\ndar\u00fcber hinausgehende Weiterf\u00fchrung einigen.",
+      "raw_sha256": "2599ad5f7060359602fbd800121c943f3ffb540b29957ca47fb221c9f2cf1405",
+      "reader_sha256": "620e61b3ad793bd126311577d016a47ac3e49431dd21a9dcbc0b3dc169ade7b9",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9113d9f3546c4ba3.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9113d9f3546c4ba3.body",
+    "native_LF": [
+      42,
+      48
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 49,
+    "id": "GRE1",
+    "source": {
+      "id": "GRE1",
+      "source": "U5ff13411e4f1ce8a",
+      "article": "BMF7December2023Gre1notes1-7",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2023-12-07-ansaessigkeitsbescheinigungen-und-arbeitgeberbescheinigung-ueber-die-nichtrueckkehr.pdf?__blob=publicationFile&v=3",
+      "LF_start": 163,
+      "LF_end": 195,
+      "exact_quote": "1. Geh\u00e4lter, L\u00f6hne und \u00e4hnliche Verg\u00fctungen, die ein Grenzg\u00e4nger bezieht, werden grunds\u00e4tzlich in dessen Ans\u00e4ssigkeits-\n   staat besteuert. Der T\u00e4tigkeitsstaat darf jedoch eine Steuer im Abzugswege erheben.\n2. Um eine Begrenzung dieser Abzugsteuer auf 4,5 v. H. des Bruttobetrags der Verg\u00fctungen zu erreichen, muss der Grenz-\n   g\u00e4nger diese Ans\u00e4ssigkeitsbescheinigung dem Arbeitgeber vorlegen.\n   Eine Ans\u00e4ssigkeitsbescheinigung ist somit zu beantragen:\n   \u2013 bei Arbeitsaufnahme\n   \u2013 bei Arbeitgeberwechsel.\n3. In F\u00e4llen der Wohnsitzverlegung in die Schweiz:\n   Eine Begrenzung der Abzugsteuer durch den deutschen Arbeitgeber kommt trotz Vorlage einer Ans\u00e4ssigkeitsbescheinigung\n   \u201eGre-1\u201c nicht in Betracht, wenn der Besch\u00e4ftigte als \u201eAbwanderer\u201c i. S. des Artikels 4 Absatz 4 DBA Deutschland/Schweiz und\n   weiterhin als Grenzg\u00e4nger anzusehen ist (vgl. Artikel 15a Absatz 1 Satz 4 DBA Deutschland/Schweiz). Diese Pr\u00fcfung obliegt\n   dem Arbeitgeber. In diesen F\u00e4llen unterliegt der Arbeitslohn dem regul\u00e4ren deutschen Lohnsteuerabzug; wegen der Grenz-\n   g\u00e4ngereigenschaft besteuert die Schweiz ebenfalls den Arbeitslohn. Die Schweizer Steuer kann bereits im Lohnsteuer-\n   abzugsverfahren auf die deutsche Lohnsteuer angerechnet werden. Hierf\u00fcr ist beim deutschen Betriebsst\u00e4ttenfinanzamt eine\n   entsprechende Anrechnungsbescheinigung oder ein Freibetrag in sinngem\u00e4\u00dfer Anwendung des \u00a7 39a Einkommensteuer-\n   gesetz (EStG) zu beantragen.\n4. Eine Begrenzung der Abzugsteuer kommt auch bei Vorlage einer Ans\u00e4ssigkeitsbescheinigung nicht in Betracht, wenn der Ar-\n   beitgeber erkennt, dass der Arbeitnehmer aufgrund der voraussichtlichen Tage der Nichtr\u00fcckkehr die Grenzg\u00e4ngereigen-\n   schaft nicht erf\u00fcllen wird.\n   Der Arbeitgeber ist bei Wegfall der Grenzg\u00e4ngereigenschaft im Laufe des Kalenderjahrs verpflichtet, die Nacherhebung der\n   regul\u00e4ren Steuer sicherzustellen.\n5. Der Grenzg\u00e4nger f\u00fcllt den Abschnitt I der drei Ausfertigungen des Vordrucks aus. Er legt diese Ausfertigungen der f\u00fcr ihn im\n   Wohnsitzstaat zust\u00e4ndigen Steuerbeh\u00f6rde vor. Diese beh\u00e4lt nach Erteilung der Bescheinigung in Abschnitt II die dritte Ausfer-\n   tigung des Vordrucks und gibt die beiden \u00fcbrigen dem Grenzg\u00e4nger zur\u00fcck, der die erste Ausfertigung seinem Arbeitgeber\n   \u00fcbergibt und die andere beh\u00e4lt.\n6. a) Der deutsche Arbeitgeber hat die erste Ausfertigung des Vordrucks aufzubewahren. Der Steuerabzug ist bei Vorlage\n      dieser Bescheinigung abweichend von \u00a7 38a EStG in H\u00f6he von 4,5 v. H. der Bruttoverg\u00fctungen vorzunehmen, es sei denn,\n      dass die sich nach \u00a7\u00a7 38a ff. EStG ergebende Steuer niedriger w\u00e4re. In diesem Fall sind \u00a7\u00a7 38 ff. EStG anzuwenden.\n   b) Der schweizerische Arbeitgeber hat die erste Ausfertigung des Vordrucks aufzubewahren. Der Steuerabzug ist bei Vor-\n      lage dieser Bescheinigung abweichend vom internen Recht in H\u00f6he von 4,5 v. H. der Bruttoverg\u00fctungen vorzunehmen, es\n      sei denn, dass die sich aus dem internen Recht ergebende Steuer niedriger w\u00e4re.\n7. Diese Bescheinigung gilt f\u00fcr ein Jahr. Die Bescheinigung wird f\u00fcr das jeweilige Folgejahr dem Grenzg\u00e4nger ohne Antrag von\n   der zust\u00e4ndigen Steuerbeh\u00f6rde erteilt.",
+      "raw_sha256": "0adc8f56319b44d9030ba84c6f32f84027da7dcac433095663e1c6ccec405bcd",
+      "reader_sha256": "f80732f7f88fc88153cf9721b73f1c0ffb75731e1a44015d996e544a398c1792",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5ff13411e4f1ce8a.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5ff13411e4f1ce8a.body",
+    "native_LF": [
+      163,
+      195
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 50,
+    "id": "GRE3",
+    "source": {
+      "id": "GRE3",
+      "source": "U5ff13411e4f1ce8a",
+      "article": "BMF7December2023Gre3note2",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2023-12-07-ansaessigkeitsbescheinigungen-und-arbeitgeberbescheinigung-ueber-die-nichtrueckkehr.pdf?__blob=publicationFile&v=3",
+      "LF_start": 518,
+      "LF_end": 523,
+      "exact_quote": " 2. Stellt der Arbeitgeber am Ende des Jahres oder bei Beendigung des Arbeitsverh\u00e4ltnisses w\u00e4hrend des Jahres fest, dass die\n    Grenzg\u00e4ngereigenschaft aufgrund der entsprechenden Nichtr\u00fcckkehrtage entf\u00e4llt, hat er die Nichtr\u00fcckkehrtage zu bescheini-\n    gen und der f\u00fcr den Einbehalt der Abzugsteuer zust\u00e4ndigen Steuerbeh\u00f6rde m\u00f6glichst innerhalb von 3 Monaten nach Ende des\n    Kalenderjahres oder bei Beendigung des Arbeitsverh\u00e4ltnisses zuzuleiten. Die Steuerbeh\u00f6rde \u00fcberpr\u00fcft diese Bescheinigung\n    und versieht diese mit einem Sichtvermerk bevor sie an den Arbeitgeber zur Weiterleitung an den Grenzg\u00e4nger zur\u00fcck-\n    gegeben wird.",
+      "raw_sha256": "0adc8f56319b44d9030ba84c6f32f84027da7dcac433095663e1c6ccec405bcd",
+      "reader_sha256": "f80732f7f88fc88153cf9721b73f1c0ffb75731e1a44015d996e544a398c1792",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5ff13411e4f1ce8a.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5ff13411e4f1ce8a.body",
+    "native_LF": [
+      518,
+      523
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 51,
+    "id": "INHERIT",
+    "source": {
+      "id": "INHERIT",
+      "source": "Ue2f80ac3e41ed5d3",
+      "article": "ErbStG2(1)no1(a)/(b)",
+      "url": "https://www.gesetze-im-internet.de/erbstg_1974/__2.html",
+      "LF_start": 7,
+      "LF_end": 11,
+      "exact_quote": "(1) Die Steuerpflicht tritt ein 1.\nin den F\u00e4llen des \u00a7 1 Abs. 1 Nr. 1 bis 3, wenn der Erblasser zur Zeit seines Todes, der Schenker zur Zeit der Ausf\u00fchrung der Schenkung oder der Erwerber zur Zeit der Entstehung der Steuer (\u00a7 9) ein Inl\u00e4nder ist, f\u00fcr den gesamten Verm\u00f6gensanfall (unbeschr\u00e4nkte Steuerpflicht). Als Inl\u00e4nder geltena)\nnat\u00fcrliche Personen, die im Inland einen Wohnsitz oder ihren gew\u00f6hnlichen Aufenthalt haben,\nb)\ndeutsche Staatsangeh\u00f6rige, die sich nicht l\u00e4nger als f\u00fcnf Jahre dauernd im Ausland aufgehalten haben, ohne im Inland einen Wohnsitz zu haben,",
+      "raw_sha256": "f6c668fb1a2242539cc8248c35965cd27f706c2bab4b35554fcc3d0845fedc6b",
+      "reader_sha256": "a6a2319815c436cc70d260f3cc2745afbf62b333d959d0bc07560b61d7a4cf0b",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue2f80ac3e41ed5d3.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue2f80ac3e41ed5d3.body",
+    "native_LF": [
+      7,
+      11
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 52,
+    "id": "PUBPENSION",
+    "source": {
+      "id": "PUBPENSION",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "Protocol9(a)/(b)publicservicepension",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 939,
+      "LF_end": 947,
+      "exact_quote": "         vor der Zahlung beziehungsweise vor dem Beginn der Zahlungen im schweizerischen \u00f6ffentlichen Dienst war. Auch als\n         aufgrund eines solchen Versicherungsverh\u00e4ltnisses gezahlt gelten Zahlungen von Freiz\u00fcgigkeitskonten und -policen der\n         schweizerischen beruflichen Vorsorge.\n      b) Nach Artikel 19 Absatz 4 hat der Ans\u00e4ssigkeitsstaat des Empf\u00e4ngers vorrangig das Besteuerungsrecht f\u00fcr vorgenannte\n         Verg\u00fctungen, einschlie\u00dflich Ruhegeh\u00e4ltern, wenn der Verg\u00fctungsempf\u00e4nger die Grenzg\u00e4ngereigenschaft nach Artikel 15a\n         hat oder hatte. Der andere Vertragsstaat hat den Steuerabzug nach Artikel 15a Absatz 1 zu beschr\u00e4nken. Hierf\u00fcr ist der\n         Vorsorgeeinrichtung der 2. S\u00e4ule vor erstmaligem Zufluss einer wiederkehrenden Leistung die hierf\u00fcr vorgesehene\n         Ans\u00e4ssigkeitsbescheinigung vorzulegen. Bei Kapitalleistungen ist die Grenzg\u00e4ngereigenschaft im daf\u00fcr vorgesehenen\n         amtlichen R\u00fcckerstattungsformular zu bescheinigen.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      939,
+      947
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 53,
+    "id": "PENSCREDIT",
+    "source": {
+      "id": "PENSCREDIT",
+      "source": "Ubb44eb74c0244b3e",
+      "article": "BMF8February2018taxedsharecondition",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2018-02-08-DBA-Schweiz-Abzugsteuer-Grenzgaenger.pdf?__blob=publicationFile&v=1",
+      "LF_start": 51,
+      "LF_end": 57,
+      "exact_quote": "\fSeite 2   Nach \u00a7 36 Absatz 2 Nummer 2 EStG setzt eine Anrechnung einer Abzugsteuer voraus, dass\n          die Abzugsbetr\u00e4ge auf die bei der Veranlagung zur Einkommensteuer erfassten Eink\u00fcnfte\n          entfallen und f\u00fcr sie keine Erstattung beantragt oder durchgef\u00fchrt worden ist. Eine Anrech-\n          nung kommt danach nur in Betracht, wenn die Eink\u00fcnfte auch tats\u00e4chlich bei der Veran-\n          lagung erfasst sind. Tats\u00e4chlich erfasst sind die im Steuerabzug belasteten Einnahmen, wenn\n          sie Teil der Besteuerungsgrundlage geworden sind, unabh\u00e4ngig davon, ob sie sich etwa\n          bedingt durch Freibetr\u00e4ge auf die H\u00f6he der festgesetzten Steuer ausgewirkt haben.",
+      "raw_sha256": "dc7513ee78afcb934d3ccbf4176f00c10eb356c9ed18c661e68ac9420fcdb50a",
+      "reader_sha256": "c555d98944c6e061bfff43da252f36c7326fbea3db6d4ff70fe2c557cc07f3e4",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubb44eb74c0244b3e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubb44eb74c0244b3e.body",
+    "native_LF": [
+      51,
+      57
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 54,
+    "id": "PENS1",
+    "source": {
+      "id": "PENS1",
+      "source": "Ubb44eb74c0244b3e",
+      "article": "BMF8February2018ObligatoriumLeibrente",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2018-02-08-DBA-Schweiz-Abzugsteuer-Grenzgaenger.pdf?__blob=publicationFile&v=1",
+      "LF_start": 64,
+      "LF_end": 71,
+      "exact_quote": "          1.1 Leibrenten\n          Leistungen aus dem Obligatorium, die als Leibrenten erbracht werden, sind als Eink\u00fcnfte\n          nach \u00a7 22 Nummer 1 Satz 3 Buchstabe a Doppelbuchstabe aa EStG mit dem ma\u00dfgebenden\n          Besteuerungsanteil bei der Ermittlung des zu versteuernden Einkommens anzusetzen\n          (siehe BMF-Schreiben vom 27. Juli 2016). Soweit die Schweizer Abzugsteuer von h\u00f6chstens\n          4,5 Prozent auf das Obligatorium entf\u00e4llt, ist sie nach Artikel 15a Absatz 3 DBA-Schweiz\n          damit lediglich mit dem Anteil, der diesem Besteuerungsanteil entspricht, auf die Einkom-\n          mensteuer anzurechnen.",
+      "raw_sha256": "dc7513ee78afcb934d3ccbf4176f00c10eb356c9ed18c661e68ac9420fcdb50a",
+      "reader_sha256": "c555d98944c6e061bfff43da252f36c7326fbea3db6d4ff70fe2c557cc07f3e4",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubb44eb74c0244b3e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubb44eb74c0244b3e.body",
+    "native_LF": [
+      64,
+      71
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 55,
+    "id": "PENS2",
+    "source": {
+      "id": "PENS2",
+      "source": "Ubb44eb74c0244b3e",
+      "article": "BMF8February2018UeberobligatoriumLeibrente",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2018-02-08-DBA-Schweiz-Abzugsteuer-Grenzgaenger.pdf?__blob=publicationFile&v=1",
+      "LF_start": 106,
+      "LF_end": 111,
+      "exact_quote": "          2.1 Leibrenten\n          Leistungen aus dem \u00dcberobligatorium, die als Leibrenten erbracht werden, sind nach \u00a7 22\n          Nummer 1 Satz 3 Buchstabe a Doppelbuchstabe bb EStG mit dem ma\u00dfgebenden Ertragsanteil\n          bei der Ermittlung des zu versteuernden Einkommens anzusetzen. Die Anrechnung der\n          Schweizer Abzugsteuer nach Artikel 15a Absatz 3 DBA-Schweiz auf die Einkommensteuer\n          ist auf h\u00f6chstens 4,5 Prozent des Ertragsanteils begrenzt.",
+      "raw_sha256": "dc7513ee78afcb934d3ccbf4176f00c10eb356c9ed18c661e68ac9420fcdb50a",
+      "reader_sha256": "c555d98944c6e061bfff43da252f36c7326fbea3db6d4ff70fe2c557cc07f3e4",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubb44eb74c0244b3e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubb44eb74c0244b3e.body",
+    "native_LF": [
+      106,
+      111
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 56,
+    "id": "OLDRETURN",
+    "source": {
+      "id": "OLDRETURN",
+      "source": "Ufad6bb4b894f9244",
+      "article": "KonsVerCHEV7actualoldreturntest",
+      "url": "https://www.gesetze-im-internet.de/konsverchev/__7.html",
+      "LF_start": 7,
+      "LF_end": 7,
+      "exact_quote": "Eine regelm\u00e4\u00dfige R\u00fcckkehr im Sinn des Artikels 15a Absatz 2 des Abkommens liegt auch noch vor, wenn sich der Arbeitnehmer auf Grund eines Arbeitsvertrages oder mehrerer Arbeitsvertr\u00e4ge mindestens an einem Tag pro Woche oder mindestens an f\u00fcnf Tagen pro Monat von seinem Wohnsitz an seinen Arbeitsort und zur\u00fcck begibt. Sind die genannten Voraussetzungen bei geringf\u00fcgigen Arbeitsverh\u00e4ltnissen nicht erf\u00fcllt, wird eine regelm\u00e4\u00dfige R\u00fcckkehr nicht angenommen.",
+      "raw_sha256": "6133186853dd0bc29d0cb24af8d287f3f7044a2aac8e1e639b0b35fdf51b2d12",
+      "reader_sha256": "3995eebda1eaa5ef963c18bcab57fc88ad8841ee8e3d5fcbfa6ed0ed71a745b8",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ufad6bb4b894f9244.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ufad6bb4b894f9244.body",
+    "native_LF": [
+      7,
+      7
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 57,
+    "id": "OLDDAYS",
+    "source": {
+      "id": "OLDDAYS",
+      "source": "U41879cd7c3a0e147",
+      "article": "KonsVerCHEV9actual250/300countertext",
+      "url": "https://www.gesetze-im-internet.de/konsverchev/__9.html",
+      "LF_start": 8,
+      "LF_end": 9,
+      "exact_quote": "(2) Bei Teilzeitbesch\u00e4ftigten, die nur tageweise im anderen Staat besch\u00e4ftigt sind, ist die Anzahl von 60 unsch\u00e4dlichen Tagen durch proportionale K\u00fcrzung herabzusetzen. Bezugsgr\u00f6\u00dfen sind hierbei die im jeweiligen Arbeitsvertrag vereinbarten Arbeitstage zu den bei Vollzeitbesch\u00e4ftigung betriebs\u00fcblichen Arbeitstagen. Bei einer 5-Tage-Woche ist von 250 betriebs\u00fcblichen Arbeitstagen, bei einer 6-Tage-Woche von 300 betriebs\u00fcblichen Arbeitstagen auszugehen. Urlaubstage sind bei beiden Rechengr\u00f6\u00dfen aus Vereinfachungsgr\u00fcnden nicht abzuziehen.\n(3) Die Berechnung der 60 Tage ist ebenso bei Arbeitnehmern, die im anderen Vertragsstaat bei mehreren Arbeitgebern angestellt sind, vorzunehmen.",
+      "raw_sha256": "d53808b4c4ce385e4b6245a4f927c990e8fbd517d2a4b1d2f3ad31b4b52dd2d4",
+      "reader_sha256": "609ac7651c8d6a137325ec686d20ad396f422502263cb180d35fc40db0a49164",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U41879cd7c3a0e147.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U41879cd7c3a0e147.body",
+    "native_LF": [
+      8,
+      9
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 58,
+    "id": "CHDIV",
+    "source": {
+      "id": "CHDIV",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "DECH10(2)/(3)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 336,
+      "LF_end": 353,
+      "exact_quote": "  (2) Diese Dividenden k\u00f6nnen jedoch auch in dem Vertragsstaat, in dem die die Dividenden zahlende Gesellschaft ans\u00e4ssig ist,\nnach dem Recht dieses Staates besteuert werden; die Steuer darf aber, wenn die zur Nutzung der Dividende berechtigte Person im\nanderen Vertragsstaat ans\u00e4ssig ist, nicht \u00fcbersteigen:\na) 5 vom Hundert des Bruttobetrags der Dividenden, wenn sie von einer Gesellschaft gezahlt werden, die ein Kraftwerk zur\n   Ausnutzung der Wasserkraft des Rheinstromes zwischen dem Bodensee und Basel betreibt (Grenzkraftwerk am Rhein);\nb) 30 vom Hundert des Bruttobetrags der Dividenden, wenn es sich um Einnahmen aus Beteiligungen an einem Handelsgewerbe\n   als stiller Gesellschafter im Sinne des deutschen Rechts, aus Genussrechten, aus Gewinnobligationen oder aus partiarischen\n   Darlehen handelt und wenn diese Betr\u00e4ge bei der Gewinnermittlung des Schuldners abzugsf\u00e4hig sind;\nc) 15 vom Hundert des Bruttobetrags der Dividenden in F\u00e4llen, die nicht unter Buchstabe a oder b fallen.\n   (3) Ungeachtet von Absatz 2 nimmt der Vertragsstaat, in dem die die Dividenden zahlende Gesellschaft ans\u00e4ssig ist, die bezahlten\nDividenden von der Besteuerung aus, wenn die nutzungsberechtigte Person eine Gesellschaft (jedoch keine Personengesellschaft)\nist, die im anderen Vertragsstaat ans\u00e4ssig ist und unmittelbar \u00fcber mindestens 10 Prozent des Kapitals der die Dividenden zahlenden\nGesellschaft w\u00e4hrend einer Dauer von 365 Tagen, die den Tag der Zahlung der Dividende umfasst, h\u00e4lt (f\u00fcr Zwecke der Berechnung\ndieser Dauer werden Besitz\u00e4nderungen nicht ber\u00fccksichtigt, die unmittelbar aus einer Fusion, einer Spaltung oder einer Umwandlung\nder Gesellschaft resultieren, die die Anteile h\u00e4lt oder die die Dividende zahlt). Im Fall von Dividenden, die von einer deutschen\nImmobilien-Aktiengesellschaft mit b\u00f6rsennotierten Anteilen (REIT-AG), einem deutschen Investmentfonds oder einer deutschen\nInvestmentaktiengesellschaft gezahlt werden, ist nicht Satz 1, sondern Absatz 2 Buchstabe c anzuwenden. Dies ber\u00fchrt nicht die\nBesteuerung der Gesellschaft in Bezug auf die Gewinne, aus denen die Dividenden gezahlt werden.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      336,
+      353
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 59,
+    "id": "CHINT",
+    "source": {
+      "id": "CHINT",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "DECH11(1)/(2)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 372,
+      "LF_end": 377,
+      "exact_quote": "  (1) Zinsen, die eine in einem Vertragsstaat ans\u00e4ssige Person als Nutzungsberechtigte bezieht, k\u00f6nnen nur in diesem Staat besteuert\nwerden.\n   (2) Der in diesem Artikel verwendete Ausdruck \u201eZinsen\u201c bedeutet, vorbehaltlich Artikel 10 Absatz 4, Einnahmen aus \u00f6ffentlichen\nAnleihen, aus Schuldverschreibungen einschlie\u00dflich Wandelanleihen, auch wenn sie durch Pfandrechte an Grundst\u00fccken gesichert\nsind, und aus Forderungen jeder Art sowie alle anderen Einnahmen, die nach dem Steuerrecht des Staates, aus dem sie stammen,\nden Einnahmen aus Darlehen gleichgestellt sind. Nicht als Zinsen im Sinne dieses Artikels gelten Zuschl\u00e4ge f\u00fcr versp\u00e4tete Zahlung.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+    "native_LF": [
+      372,
+      377
+    ],
+    "pending_direct_read": true
+  },
+  {
+    "row": 60,
+    "id": "EXIT-trigger",
+    "source": {
+      "id": "EXIT-trigger",
+      "source": "A6",
+      "article": "AStG \u00a76(1)",
+      "url": "https://www.gesetze-im-internet.de/astg/__6.html",
+      "LF_start": 1,
+      "LF_end": 1,
+      "exact_quote": "(1) Vorbehaltlich der Vorschriften des Einkommensteuergesetzes, K\u00f6rperschaftsteuergesetzes und Umwandlungssteuergesetzes stehen bei unbeschr\u00e4nkt Steuerpflichtigen der Ver\u00e4u\u00dferung von Anteilen im Sinne des \u00a7 17 Absatz 1 Satz 1 des Einkommensteuergesetzes zum gemeinen Wert gleich 1. die Beendigung der unbeschr\u00e4nkten Steuerpflicht infolge der Aufgabe des Wohnsitzes oder des gew\u00f6hnlichen Aufenthalts, 2. die unentgeltliche \u00dcbertragung auf eine nicht unbeschr\u00e4nkt steuerpflichtige Person sowie, 3. vorbehaltlich der Nummern 1 und 2, der Ausschluss oder die Beschr\u00e4nkung des Besteuerungsrechts der Bundesrepublik Deutschland hinsichtlich des Gewinns aus der Ver\u00e4u\u00dferung der Anteile.Die Ver\u00e4u\u00dferung im Sinne des Satzes 1 erfolgt im Fall des 1. Satzes 1 Nummer 1 im Zeitpunkt der Beendigung der unbeschr\u00e4nkten Steuerpflicht, 2. Satzes 1 Nummer 2 im Zeitpunkt der \u00dcbertragung, 3. Satzes 1 Nummer 3 unmittelbar vor dem Zeitpunkt, zu dem der Ausschluss oder die Beschr\u00e4nkung des Besteuerungsrechts eintritt.Im Fall des Satzes 1 gelten die Anteile vom Steuerpflichtigen oder, bei unentgeltlicher \u00dcbertragung, von dessen Rechtsnachfolger als zum gemeinen Wert erworben, soweit die auf den Ver\u00e4u\u00dferungsgewinn entfallende Steuer entrichtet worden ist; andernfalls gelten diese weiterhin als zu den urspr\u00fcnglichen Anschaffungskosten erworben.",
+      "raw_sha256": "f0f931afd93ee0c1ba04ef2ec47d803a709daf63df1a0e242dddbf91018a43df",
+      "reader_sha256": "55ec071c00832187d167284ad17c7669ec423a6e85b7ef961a4ac5690aa28ae3",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/A6.paragraphs.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/astg-6-20261026.html",
+    "native_LF": [
+      1,
+      1
+    ],
+    "actual_read_bridge": {
+      "guide": "leaving-germany-exit-tax",
+      "quote_row": 4,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 61,
+    "id": "EXIT-person",
+    "source": {
+      "id": "EXIT-person",
+      "source": "A6",
+      "article": "AStG \u00a76(2)",
+      "url": "https://www.gesetze-im-internet.de/astg/__6.html",
+      "LF_start": 2,
+      "LF_end": 2,
+      "exact_quote": "(2) Unbeschr\u00e4nkt Steuerpflichtige im Sinne des Absatzes 1 sind nat\u00fcrliche Personen, die innerhalb der letzten zw\u00f6lf Jahre vor den in Absatz 1 Satz 1 Nummer 1 bis 3 genannten Tatbest\u00e4nden insgesamt mindestens sieben Jahre unbeschr\u00e4nkt steuerpflichtig im Sinne des \u00a7 1 Absatz 1 des Einkommensteuergesetzes gewesen sind. Bei unentgeltlichem Erwerb von Anteilen ist f\u00fcr die Berechnung der nach Satz 1 ma\u00dfgebenden Dauer der Steuerpflicht auch die unbeschr\u00e4nkte Steuerpflicht des Rechtsvorg\u00e4ngers oder, sofern der betreffende Anteil nacheinander unentgeltlich \u00fcbertragen wurde, auch die unbeschr\u00e4nkte Steuerpflicht des jeweiligen Rechtsvorg\u00e4ngers einzubeziehen. Zeitr\u00e4ume, in denen die nat\u00fcrliche Person und der oder die Rechtsvorg\u00e4nger gleichzeitig unbeschr\u00e4nkt steuerpflichtig waren, werden dabei nur einmal angesetzt. Entf\u00e4llt der Steueranspruch nach Absatz 3 in der jeweils geltenden Fassung oder einer bis zum 30. Juni 2021 geltenden Fassung, gelten der Steuerpflichtige sowie dessen unmittelbarer oder mittelbarer Rechtsnachfolger abweichend von den S\u00e4tzen 1 bis 3 als unbeschr\u00e4nkt Steuerpflichtige im Sinne des Absatzes 1.",
+      "raw_sha256": "f0f931afd93ee0c1ba04ef2ec47d803a709daf63df1a0e242dddbf91018a43df",
+      "reader_sha256": "55ec071c00832187d167284ad17c7669ec423a6e85b7ef961a4ac5690aa28ae3",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/A6.paragraphs.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/astg-6-20261026.html",
+    "native_LF": [
+      2,
+      2
+    ],
+    "actual_read_bridge": {
+      "guide": "leaving-germany-exit-tax",
+      "quote_row": 5,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 62,
+    "id": "EXIT-instalments",
+    "source": {
+      "id": "EXIT-instalments",
+      "source": "A6",
+      "article": "AStG \u00a76(4)",
+      "url": "https://www.gesetze-im-internet.de/astg/__6.html",
+      "LF_start": 4,
+      "LF_end": 4,
+      "exact_quote": "(4) Die festgesetzte Steuer, die auf die nach Absatz 1 realisierten Eink\u00fcnfte entf\u00e4llt, kann auf Antrag des Steuerpflichtigen in sieben gleichen Jahresraten entrichtet werden. Dem Antrag ist in der Regel nur gegen Sicherheitsleistung stattzugeben. Die erste Jahresrate ist innerhalb eines Monats nach Bekanntgabe des Steuerbescheids zu entrichten; die \u00fcbrigen Jahresraten sind jeweils am 31. Juli der Folgejahre f\u00e4llig. Die Jahresraten sind nicht zu verzinsen.",
+      "raw_sha256": "f0f931afd93ee0c1ba04ef2ec47d803a709daf63df1a0e242dddbf91018a43df",
+      "reader_sha256": "55ec071c00832187d167284ad17c7669ec423a6e85b7ef961a4ac5690aa28ae3",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/A6.paragraphs.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/astg-6-20261026.html",
+    "native_LF": [
+      4,
+      4
+    ],
+    "actual_read_bridge": {
+      "guide": "leaving-germany-exit-tax",
+      "quote_row": 7,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 63,
+    "id": "EXIT-shares",
+    "source": {
+      "id": "EXIT-shares",
+      "source": "E17",
+      "article": "EStG \u00a717(1)",
+      "url": "https://www.gesetze-im-internet.de/estg/__17.html",
+      "LF_start": 1,
+      "LF_end": 1,
+      "exact_quote": "(1) 1Zu den Eink\u00fcnften aus Gewerbebetrieb geh\u00f6rt auch der Gewinn aus der Ver\u00e4u\u00dferung von Anteilen an einer Kapitalgesellschaft, wenn der Ver\u00e4u\u00dferer innerhalb der letzten f\u00fcnf Jahre am Kapital der Gesellschaft unmittelbar oder mittelbar zu mindestens 1 Prozent beteiligt war. 2Die verdeckte Einlage von Anteilen an einer Kapitalgesellschaft in eine Kapitalgesellschaft steht der Ver\u00e4u\u00dferung der Anteile gleich. 3Anteile an einer Kapitalgesellschaft sind Aktien, Anteile an einer Gesellschaft mit beschr\u00e4nkter Haftung, Genussscheine oder \u00e4hnliche Beteiligungen und Anwartschaften auf solche Beteiligungen sowie Anteile an einer optierenden Gesellschaft im Sinne des \u00a7 1a des K\u00f6rperschaftsteuergesetzes. 4Hat der Ver\u00e4u\u00dferer den ver\u00e4u\u00dferten Anteil innerhalb der letzten f\u00fcnf Jahre vor der Ver\u00e4u\u00dferung unentgeltlich erworben, so gilt Satz 1 entsprechend, wenn der Ver\u00e4u\u00dferer zwar nicht selbst, aber der Rechtsvorg\u00e4nger oder, sofern der Anteil nacheinander unentgeltlich \u00fcbertragen worden ist, einer der Rechtsvorg\u00e4nger innerhalb der letzten f\u00fcnf Jahre im Sinne von Satz 1 beteiligt war.",
+      "raw_sha256": "fe27f81e022dea91a42b345d41676df4f7f90b06f3f9207db44501034afcd55b",
+      "reader_sha256": "5c6ab032ca00df977d9d14f42650e41e4b24c680a59b501f2a5c43e8d60f0fbe",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/E17.paragraphs.txt",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-17-20261026.html",
+    "native_LF": [
+      1,
+      1
+    ],
+    "actual_read_bridge": {
+      "guide": "leaving-germany-exit-tax",
+      "quote_row": 12,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  },
+  {
+    "row": 64,
+    "id": "EXIT-extended-person",
+    "source": {
+      "id": "EXIT-extended-person",
+      "source": "A2",
+      "article": "AStG \u00a72(1)",
+      "url": "https://www.gesetze-im-internet.de/astg/__2.html",
+      "LF_start": 1,
+      "LF_end": 1,
+      "exact_quote": "(1) Eine nat\u00fcrliche Person, die in den letzten zehn Jahren vor dem Ende ihrer unbeschr\u00e4nkten Steuerpflicht nach \u00a7 1 Abs. 1 Satz 1 des Einkommensteuergesetzes als Deutscher insgesamt mindestens f\u00fcnf Jahre unbeschr\u00e4nkt einkommensteuerpflichtig war und 1. in einem ausl\u00e4ndischen Gebiet ans\u00e4ssig ist, in dem sie mit ihrem Einkommen nur einer niedrigen Besteuerung unterliegt, oder in keinem ausl\u00e4ndischen Gebiet ans\u00e4ssig ist und 2. wesentliche wirtschaftliche Interessen im Geltungsbereich dieses Gesetzes hat,ist bis zum Ablauf von zehn Jahren nach Ende des Jahres, in dem ihre unbeschr\u00e4nkte Steuerpflicht geendet hat, \u00fcber die beschr\u00e4nkte Steuerpflicht im Sinne des Einkommensteuergesetzes hinaus beschr\u00e4nkt einkommensteuerpflichtig mit allen Eink\u00fcnften im Sinne des \u00a7 2 Abs. 1 Satz 1 erster Halbsatz des Einkommensteuergesetzes, die bei unbeschr\u00e4nkter Einkommensteuerpflicht nicht ausl\u00e4ndische Eink\u00fcnfte im Sinne des \u00a7 34d des Einkommensteuergesetzes sind. F\u00fcr Eink\u00fcnfte der nat\u00fcrlichen Person, die weder durch deren ausl\u00e4ndische Betriebsst\u00e4tte noch durch deren in einem ausl\u00e4ndischen Staat t\u00e4tigen st\u00e4ndigen Vertreter erzielt werden, ist f\u00fcr die Anwendung dieser Vorschrift das Bestehen einer inl\u00e4ndischen Gesch\u00e4ftsleitungsbetriebsst\u00e4tte der nat\u00fcrlichen Person anzunehmen, der solche Eink\u00fcnfte zuzuordnen sind. Satz 1 findet nur Anwendung f\u00fcr Veranlagungszeitr\u00e4ume, in denen die hiernach insgesamt beschr\u00e4nkt steuerpflichtigen Eink\u00fcnfte mehr als 16 500 Euro betragen.",
+      "raw_sha256": "e4e89e184732d7c719bedad8fc4269879d319b707d144da7ef82bc97d9d322f8",
+      "reader_sha256": "23156e7b575d8fe25a0c4307ded3e6d987d91a653f6b456da838ae069f20bdec",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/A2.paragraphs.txt",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/A2.body",
+    "native_LF": [
+      1,
+      1
+    ],
+    "actual_read_bridge": {
+      "guide": "leaving-germany-exit-tax",
+      "quote_row": 22,
+      "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+    }
+  }
+]

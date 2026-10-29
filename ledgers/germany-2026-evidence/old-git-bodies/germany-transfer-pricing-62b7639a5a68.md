@@ -1,0 +1,457 @@
+---
+name: germany-transfer-pricing
+description: Use this skill whenever asked about Germany transfer pricing rules, documentation requirements, or Verrechnungspreise compliance. Trigger on phrases like "transfer pricing Germany", "German TP documentation", "Verrechnungspreise", "master file Germany", "local file Germany", "CbCR Germany", "APA Germany", "§90 AO", "transaction matrix Germany", "BZSt", or any question about intercompany pricing for German entities.
+version: 1.0
+jurisdiction: DE
+tax_year: 2026
+last_updated: 2026-10-23
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+depends_on:
+  - transfer-pricing-workflow-base
+category: transfer-pricing
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+---
+
+# Transfer pricing in Germany (Verrechnungspreise)
+
+How Germany prices and documents dealings between a business and its related parties abroad: the arm's length rule, the records a business must keep, the master file, the country-by-country report, what must be handed over in a tax audit and when, the surcharges, and advance pricing procedures. It is for German companies, partnerships and permanent establishments that deal with related parties abroad, and for their advisers. Figures are for tax year 2026. The statute figures are read from the consolidated federal law pages as they stood in September 2026. Four finance ministry papers are also used, each dated another year: the administrative principles on transfer pricing of 12 December 2024, the information sheet on the transaction matrix of 2 April 2025, the application decree on advance pricing procedures of 26 June 2024, and the administrative principles on documentation duties of 3 December 2020. The 2020 paper is older than the changes that apply from 1 January 2025. This Guide uses it only for points that the later law did not change, and names it each time.
+
+## Germany Transfer Pricing Guide v1.0
+
+Version 1.0 of this Guide, refreshed against the official pages for 2026.
+
+## Section 1: Quick Reference
+
+**Quick Reference**
+
+| Field | Value |
+| --- | --- |
+| Country | Germany (Federal Republic of Germany) |
+| Tax authority | Local tax office (Finanzamt): assessment and tax audit. Federal Central Tax Office (Bundeszentralamt für Steuern, BZSt): receives country-by-country reports and runs advance pricing procedures |
+| Key TP legislation | § 1 Außensteuergesetz (AStG, Foreign Tax Act): the arm's length rule. § 90(3) and (4) Abgabenordnung (AO, General Tax Code): records and handover deadlines. § 162(3) and (4) AO: estimates and surcharges. § 138a AO: country-by-country report. § 89a AO: advance pricing procedures |
+| Documentation regulation | GAufzV (Gewinnabgrenzungsaufzeichnungs-Verordnung) |
+| Who is a related party | A holding of at least one quarter, direct or indirect, in capital, membership rights, participation rights, voting rights or company assets; a claim to at least one quarter of the profit or of the liquidation proceeds; controlling influence, direct or indirect; a third person who stands in one of these positions to both sides; or influence that comes from outside the business relation, or an own interest in the other side earning the income (§ 1(2) AStG). The law prints the share in words |
+| Which dealings are covered | Business relations with a related party abroad, and dealings between a business and its permanent establishment in another state (§ 1(1), (4) and (5) AStG). A partnership is itself a taxpayer under this rule. Not covered: dealings that rest on an agreement under company law, meaning one that directly changes the legal position as a shareholder (§ 1(4) sentence 1 no. 1 b AStG) |
+| Direction of the rule | § 1 AStG applies where income was reduced by terms that are not at arm's length. § 1(1) AStG names the case where income was reduced ("gemindert"). For permanent establishments § 1(5) AStG names two cases: the German income of a taxpayer with limited tax liability is reduced, or the foreign income of a taxpayer with unlimited tax liability is raised |
+| OECD guidelines | The ministry's 2024 administrative principles say the German tax administration in principle follows the OECD transfer pricing guidelines, within the domestic law in force, whether or not a tax treaty applies (no. 2.2) |
+| Effective date (current regime) | Records regulation: financial years beginning after 31 December 2016 (§ 7 GAufzV). Transaction matrix, the 30-day handover and the current surcharge rule: from 1 January 2025 (Art. 97 § 37(5) EGAO). Current § 1 AStG: from assessment period 2022. The financing rules in § 1(3d) and (3e) AStG: from assessment period 2024 (§ 21 AStG) |
+| Currency | EUR |
+| Documentation language | German. The tax office can allow another language on application (§ 2(5) GAufzV) |
+| Guide version | 1.0 |
+
+The law pages behind this table: § 1 AStG at https://www.gesetze-im-internet.de/astg/__1.html and § 90 AO at https://www.gesetze-im-internet.de/ao_1977/__90.html
+
+## Section 2: Documentation Requirements
+
+- **Who must keep records.** A taxpayer must keep records on the kind and content of its business relations within § 1(4) AStG. See § 90(3) AO at https://www.gesetze-im-internet.de/ao_1977/__90.html The rule that the records serve, § 1 AStG, is about business relations abroad. The ministry describes the transaction matrix as a table of the taxpayer's cross-border business relations with related parties and permanent establishments (information sheet of 2 April 2025, part I).
+- **No size limit for the duty itself.** § 90(3) AO prints no minimum amount. Smaller businesses get a lighter way to meet the duty, not a release from it. See 2.2.
+- **Three parts.** The records cover (1) an overview of the transactions (Transaktionsmatrix), (2) a presentation of the transactions (Sachverhaltsdokumentation) and (3) the economic and legal basis for arm's length terms, with the time the price was set, the method used and the comparables used (Angemessenheitsdokumentation).
+- **A fourth part for larger group companies.** The master file. See 2.1.
+- **The standard.** The records must show a serious effort to deal at arm's length. An expert third party must be able to see, within a reasonable time, what the taxpayer did and whether it kept to the arm's length rule. See § 2(1) GAufzV at https://www.gesetze-im-internet.de/gaufzv_2017/__2.html Records that are unusable in essence count as not made. See § 1(1) GAufzV at https://www.gesetze-im-internet.de/gaufzv_2017/__1.html
+- **One method is enough.** The taxpayer does not have to keep records for more than one suitable method (§ 2(2) GAufzV).
+- **Per transaction, with grouping allowed.** Records are made per transaction. Transactions that are comparable in functions and risks may be grouped, if the grouping follows rules set in advance and the transactions are alike, or if grouping is usual between third parties. Group transfer pricing guidelines that are in fact followed can replace records per transaction (§ 2(3) GAufzV).
+- **Long-running arrangements.** If circumstances change in a way that matters for the price, the taxpayer must go on collecting information after the deal is closed. This applies above all where tax losses show up that a third party would not have accepted (§ 2(4) GAufzV).
+- **Language.** Records are made in German. The tax office can allow exceptions on application. The application can be made before the records are written. It must be made at the latest without delay after the tax office asks for the records (§ 2(5) GAufzV). The ministry's 2020 paper adds that another living language, English above all, can be allowed if the records can still be understood in reasonable time, that this applies to the master file in particular, and that translations asked for later must then be supplied in reasonable time (no. 34).
+- **Database searches.** A taxpayer that uses databases must disclose the search strategy, the search criteria, the result and the further selection steps. The whole search must be open to checking at the time of the audit. See § 4(3) GAufzV at https://www.gesetze-im-internet.de/gaufzv_2017/__4.html
+
+### 2.1 Master File (Stammdokumentation)
+
+**Master File: the turnover test**
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ao_1977/__90.html |
+| A business that is part of a multinational group must also keep a master file, unless its own turnover in the previous financial year was less than | EUR 100 million | § 90(3) sentence 3 AO: "weniger als 100 Millionen Euro betragen". The law prints "Millionen" in words |
+
+**Master File**
+
+| Item | Detail |
+| --- | --- |
+| Required? | Only if both are true: the business is part of a multinational group, AND its own turnover in the previous financial year was at least the amount in the table above. The test is the turnover of the German business itself, not the consolidated revenue of the group |
+| How turnover is measured | The ministry's 2020 paper (no. 55): turnover as defined in § 277(1) HGB, not consolidated, at home and abroad, with third parties and with related parties. Internal dealings between the business and its own permanent establishment are left out. "Business" there means a business with trade income under § 15(1) sentence 1 no. 1 EStG. It does not matter how small the foreign share of the turnover is |
+| What is a multinational group | At least two related businesses resident in different states, or one business with at least one permanent establishment in another state (§ 90(3) sentence 4 AO) |
+| Purpose | An overview of the group's worldwide business and of the system it uses to set transfer prices (§ 90(3) sentence 3 AO) |
+| Format | The 18 items listed in the annex to § 5 GAufzV. See the list below. The ministry's 2020 paper calls the list final (no. 56) |
+| Who writes it | The taxpayer may use records made by another company of the same group, and adds to them where the annex asks for more (§ 5(1) GAufzV). The effort should be reasonable (§ 5(2) GAufzV) |
+| Filing | In a tax audit: without being asked, within 30 days of the announcement of the audit order (§ 90(4) sentence 3 AO) |
+| Language | German. Another language only if the tax office allows it on application (§ 2(5) and § 5(1) GAufzV) |
+
+**Master File: contents (annex to § 5 GAufzV)**
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html |
+| Supply chains must be described for the five products or services with the highest revenue, and for every other product or service that makes up more than this share of the group's revenue | 5% | Annex no. 4: "auf die jeweils mehr als 5 Prozent der Umsatzerlöse der Unternehmensgruppe entfallen" |
+
+The 18 items of the annex, in short:
+
+1. Chart of the legal and ownership structure and of where the companies and permanent establishments are.
+2. Overview of the main drivers of the group's total profit.
+3. Supply chains of the five products or services with the highest revenue. A clear chart is enough.
+4. Supply chains of every other product or service above the share in the table. A clear chart is enough.
+5. List and short description of important service agreements inside the group (without research and development), with the capacities of the main service sites and the pricing policy for services.
+6. The main geographic markets for the products and services in items 3 and 4.
+7. Short functional analysis: the key functions, important risks and important assets of each group company.
+8. Important restructurings, acquisitions and disposals during the financial year.
+9. The group's overall strategy for intangibles, with the sites of the main research and development facilities and of research and development management.
+10. List of the intangibles that matter for transfer pricing and of the companies that own them.
+11. List of important agreements on intangibles, including cost sharing, main research service agreements and licence agreements.
+12. The group's pricing policy for research and development and for intangibles.
+13. Important transfers of rights in intangibles during the financial year, with the companies, states and payments.
+14. How the group is financed, including important financing from third parties.
+15. The group companies with a central financing, cash management or asset management function, the law they are organised under and their place of effective management.
+16. The group's pricing strategy for financing inside the group.
+17. The group's consolidated accounts for the financial year, if any were drawn up.
+18. List and short description of the group's existing unilateral advance pricing agreements and of other advance rulings on the split of income between states.
+
+Where the annex uses open terms, the business may judge for itself, provided it judges the same way in every country, by disclosed criteria, and from year to year (annex, last sentence).
+
+### 2.2 Local File (Landesspezifische Dokumentation)
+
+**Local File**
+
+| Item | Detail |
+| --- | --- |
+| Name in the regulation | Landesspezifische, unternehmensbezogene Dokumentation (§ 4 GAufzV) |
+| Required? | Yes, for every taxpayer with business relations within § 1(4) AStG, so far as the records matter for checking those relations. There is no amount below which the duty ends. Smaller businesses meet it in a lighter way. See the relief table below |
+| Format | Four blocks (§ 4(1) GAufzV): (1) general information on shareholdings, the business and the organisation; (2) the business relations: kind and size, the contracts behind them, and a list of the main intangibles; (3) function and risk analysis, with the value chain and the taxpayer's share in it; (4) transfer pricing analysis: when the price was set, the information used, the method, why it is suitable, the calculations, and the comparables used |
+| Extra records where the case calls for them | Offsetting arrangements; cost sharing contracts and how the key is applied; mutual agreement or arbitration procedures and foreign advance rulings that touch the taxpayer; price adjustments; the causes of losses and the steps taken, where the taxpayer shows a tax loss from business relations in more than three financial years in a row; research records around a change of functions (§ 4(2) GAufzV) |
+| Filing | The tax office can ask for the records at any time. They are due within 30 days of the request. In justified single cases the period can be made longer (§ 90(4) AO). As a rule the records should be asked for only for a tax audit (§ 2(6) GAufzV) |
+
+**Relief for smaller businesses (§ 6 GAufzV)**
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/gaufzv_2017/__6.html |
+| Total payments for supplies of goods from business relations with related parties in the current financial year: not more than | six million euros | § 6(2) no. 1 GAufzV: "sechs Millionen Euro nicht übersteigt". The regulation prints this amount in words |
+| Total payments for everything other than supplies of goods from business relations with related parties in the current financial year: not more than | EUR 600,000 | § 6(2) no. 2 GAufzV: "nicht mehr als 600 000 Euro beträgt" |
+
+- **Both limits must be kept.** The two tests are joined by "and". A business over either limit is not a smaller business.
+- **What the relief is.** It is not an exemption. The record duties count as met so far as the information given to the tax office meets the standard of § 2(1) GAufzV and is backed by existing documents presented when the tax office asks. The handover deadlines still apply (§ 6(1) GAufzV). The regulation still cites the old sentence numbers of § 90(3) AO for these deadlines; since 1 January 2025 the deadlines sit in § 90(4) AO. The ministry's 2020 paper puts it this way: the duty to present records can also be met by giving information orally in time and presenting documents that already exist (no. 38).
+- **One year of lag, both ways.** If the amounts are passed in a financial year, the relief ends from the following financial year. If a business that did not have the relief falls below the amounts in a financial year, it is treated as a smaller business in the following financial year (§ 6(2) GAufzV).
+- **Added together.** Connected German businesses and German permanent establishments of related persons are added together for the test (§ 6(3) GAufzV).
+- **What is counted.** The ministry's 2020 paper (no. 39): payments for supplies and services received from foreign related parties and provided to them. Goods can be any tangible asset and any intangible. Dealings with German related parties are left out.
+- **Also covered.** The same relief applies to taxpayers whose income from business relations is not profit income (§ 6(1) GAufzV).
+- **The pricing rule is untouched.** The arm's length rule applies below the limits as well. The estimate and surcharge rules also apply to a smaller business that breaches the duties it still has (ministry's 2020 paper, no. 88).
+- **Transaction matrix.** The pages do not say whether a smaller business must still hand over a transaction matrix. § 6 GAufzV dates from 2017, before the matrix existed, and still cites old sentence numbers. § 162(4) sentence 1 AO prints no exception for smaller businesses.
+
+### 2.3 Transaction Matrix (Aufzeichnungen über die Geschäftsbeziehungen)
+
+From 1 January 2025 (Fourth Bureaucracy Relief Act, BEG IV). The law's own word is Transaktionsmatrix. It is one part of the records on business relations (§ 90(3) sentence 2 no. 1 AO).
+
+**Transaction Matrix**
+
+| Item | Detail |
+| --- | --- |
+| Source for all rows below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2025-04-02-merkblatt-zur-transaktionsmatrix.pdf?__blob=publicationFile&v=3 |
+| What it is | A structured table of the taxpayer's cross-border business relations with related parties and permanent establishments. The ministry says it supports the risk-based choice of cases and audit fields |
+| Content | (a) subject and kind of the transactions; (b) the parties, marked as recipient or provider; (c) volume and payment in euro; (d) the contract behind the transaction, named only, not attached; (e) the transfer pricing method used; (f) the tax jurisdictions concerned; (g) whether a transaction is not under the regular tax rules of the jurisdiction concerned, for example a licence box |
+| Grouping | Transactions with one related party or permanent establishment in one jurisdiction that are comparable in functions and risks may be grouped and entered as a group (§ 2(3) GAufzV) |
+| Submission | In a tax audit: without being asked, within 30 days of the announcement of the audit order (§ 90(4) sentence 3 AO) |
+| Format | The information sheet of 2 April 2025 gives two sample layouts. The tax office can allow a different form, content or size. A taxpayer who wants that must say so and give reasons early, at the latest within the 30-day period |
+| Earlier years | The sheet's example year is 2025: an audit order issued in 2025 as a rule also covers years before 2025, and the matrix must then be made for those earlier years too. The 30-day period also applies to a request for the matrix made in 2025 where the audit order was issued before 1 January 2025 |
+| Other audits | Where the audit does not look at income tax matters with a foreign link (VAT special audits, wage tax audits, insurance tax audits), the matrix, the master file and the records on extraordinary transactions are due only on separate request |
+| If it is not presented | The fixed surcharge in the table in Section 6 |
+
+### 2.4 Country-by-Country Report (CbCR)
+
+**CbCR: the revenue test**
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ao_1977/__138a.html |
+| A German group parent must file the report when the consolidated revenue shown in the group accounts for the previous financial year was at least | EUR 750 million | § 138a(1) no. 2 AO: "mindestens 750 Millionen Euro betragen". The law prints "Millionen" in words |
+
+**CbCR**
+
+| Item | Detail |
+| --- | --- |
+| Who files | A business with its seat or management in Germany that draws up consolidated accounts, or must do so under rules other than tax law (German group parent), if both are true: the group accounts include at least one foreign business or foreign permanent establishment, AND the revenue test in the table above is met (§ 138a(1) AO) |
+| Who does not | A German business that is itself included in the consolidated accounts of another business, unless it is appointed or the fallback rule applies (§ 138a(1) sentence 2 AO) |
+| Appointed company | A foreign group parent can appoint an included German group company to file for the group. That company then files with the BZSt (§ 138a(3) AO) |
+| Fallback | If the BZSt has not received the report of a group with a foreign parent, an included German group company must as a rule file it. When one German company files, the others are free. A company that cannot get or make the report must tell the BZSt within the filing period and give all the data it has or can get (§ 138a(4) AO). The same duties apply to the German permanent establishment of a foreign business that is included in consolidated accounts as foreign group parent or as included foreign group company (§ 138a(4) sentence 5 AO) |
+| Filing deadline | At the latest one year after the end of the financial year that the report covers (§ 138a(6) AO) |
+| Filing method | Electronic, in the officially prescribed data set. The BZSt takes the data as an XML file through its bulk data interface (DIP) or by file upload in the BZSt online.portal. See https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/ElektronischeDatenuebermittlung/elektronische_Datenuebermittlung.html |
+| Notification | There is no separate yearly notice to the BZSt. A German business states in its tax return whether it is a German group parent, an appointed company, or an included German company of a group with a foreign parent. In the last case it also states which business files the report and with which authority. If that statement is missing, the included German company must itself file the report on time (§ 138a(5) AO). The same applies to such a German permanent establishment (§ 138a(5) sentence 4 AO). The BZSt's questions and answers page says the BZSt need not be told in advance which group company will file: https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/FAQ/FAQ_node.html Its page on tax return statements says the corporate tax return takes these entries in Anlage WA: https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/Steuererklaerungen/steuererklaerungen_node.html |
+| Content | Per tax jurisdiction: revenue with related and with unrelated businesses, income tax paid and accrued, profit before income tax, equity, retained earnings, number of employees, tangible assets. Plus a list of all businesses and permanent establishments with their main activities (§ 138a(2) AO) |
+| Effective | Financial years beginning after 31 December 2015. The fallback rule and the tax return statement: financial years beginning after 31 December 2016 (Art. 97 § 31 EGAO) |
+
+## Section 3: Arm's Length Standard
+
+### 3.1 Definition
+
+- **Arm's length principle.** Where a taxpayer's income from a business relation abroad with a related party is reduced because the terms, prices above all, differ from what independent third parties would have agreed in the same or similar circumstances, the income is set as it would have been under terms agreed between independent third parties. See § 1(1) AStG at https://www.gesetze-im-internet.de/astg/__1.html
+- **What the third parties are assumed to know.** They know all essential circumstances of the business relation and act as prudent and diligent managers (§ 1(1) sentence 3 AStG).
+- **Facts first.** The actual circumstances of the transaction decide. The law asks for a function and risk analysis (who performs which functions, bears which risks, uses which assets) and a comparability analysis. The circumstances at the time the transaction was agreed count (§ 1(3) AStG).
+- **Stacking.** If the arm's length rule leads to a larger correction than the other rules, the larger correction is made on top of them (§ 1(1) sentence 4 AStG). As other rules the 2024 administrative principles name, for companies, the hidden profit distribution and the hidden contribution, and for sole traders and partnerships, contributions and withdrawals (no. 1.1).
+- **Hypothetical test.** Where no comparable values can be found, a hypothetical arm's length test is made from the view of both the provider and the recipient, using economically recognised valuation methods (§ 1(3) sentence 7 AStG).
+- **No agreement under the law of obligations.** Where a transaction rests on no such agreement, the law assumes that independent prudent and diligent managers would have made one, or would assert an existing legal position, unless the taxpayer shows credibly otherwise in the single case (§ 1(4) sentence 2 AStG).
+
+### 3.2 Accepted Methods
+
+**Accepted Methods**
+
+| Method | Accepted |
+| --- | --- |
+| Source for all rows below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1 |
+| Comparable uncontrolled price method (Preisvergleichsmethode) | Yes (no. 3.9 a) |
+| Resale price method (Wiederverkaufspreismethode) | Yes (no. 3.9 b) |
+| Cost plus method (Kostenaufschlagsmethode) | Yes (no. 3.9 c) |
+| Transactional net margin method (geschäftsvorfallbezogene Nettomargenmethode) | Yes (no. 3.9 d) |
+| Transactional profit split method (geschäftsvorfallbezogene Gewinnaufteilungsmethode) | Yes (no. 3.9 e) |
+| Hypothetical arm's length test | Yes, where no comparable values can be found (§ 1(3) sentence 7 AStG). The ministry expects it as a rule for intangibles and rights, for a relocation of functions, and for a profit split without comparable values (no. 3.12). Recognised methods are above all income value and discounted cash flow methods (no. 3.13) |
+
+The ministry says the list is not closed and that a mix of methods can be right in a single case (no. 3.10).
+
+### 3.3 Preferred Method
+
+- **Preferred method.** The law has no ranking with one method on top. The arm's length price is set by the method that fits best, given the comparability analysis and the comparable values that are available (§ 1(3) sentence 5 AStG). Differences between the compared transactions and the tested one are removed by proper adjustments where that is possible and makes the comparison better (§ 1(3) sentence 6 AStG). The hypothetical arm's length test applies only when no comparable values can be found.
+
+### 3.4 Range/Median
+
+- **A range is normal.** Applying the arm's length rule as a rule gives a range of values (§ 1(3a) sentence 1 AStG).
+- **Narrowing.** The range is narrowed where differences in comparability remain. If the values themselves give no clue how to narrow, the quarter of the lowest values and the quarter of the highest values are left out (§ 1(3a) sentences 2 and 3 AStG). The ministry calls this the interquartile method (no. 3.30 of the 2024 administrative principles).
+- **Range/median adjustment.** If the value the taxpayer used lies outside the range, or outside the narrowed range, the median counts, unless the taxpayer shows credibly that another value inside the range fits the arm's length rule better (§ 1(3a) sentence 4 AStG). This is what the law prescribes, not a choice of the tax office.
+- **Hypothetical test.** The lowest price of the provider and the highest price of the recipient as a rule give an agreement range. The mean of that range is used, unless the taxpayer shows credibly that another value in it is at arm's length (§ 1(3a) sentences 5 and 6 AStG).
+- **No records, worse range.** Where records are missing or unusable and the tax office must estimate, a range can be used in full against the taxpayer. See Section 6.
+
+## Section 4: Filing Obligations
+
+**Filing Obligations**
+
+| Obligation | Detail | Law and link |
+| --- | --- | --- |
+| Transaction matrix | Hand over within 30 days of the announcement of the audit order, without being asked | § 90(4) sentence 3 AO, https://www.gesetze-im-internet.de/ao_1977/__90.html |
+| Master File | Same, where the turnover test in 2.1 is met | § 90(4) sentence 3 AO, same page |
+| Extraordinary transactions | Same. The records themselves must be made close in time to the transaction. See Section 5 | § 90(3) sentence 5 and (4) sentence 3 AO, same page |
+| Local File | Hand over within 30 days of a request. The tax office can make the request at any time, also during the audit and also outside an audit | § 90(4) sentences 1 to 3 AO, same page |
+| Additions | The records must be added to when the tax office asks | § 90(3) sentence 6 AO, same page |
+| CbCR | Yearly electronic filing with the BZSt, where 2.4 applies | § 138a(6) AO, https://www.gesetze-im-internet.de/ao_1977/__138a.html |
+| CbCR notification | No separate notice to the BZSt. The statement is made in the tax return | § 138a(5) AO, same page |
+| Corporate tax return | Carries the CbCR statement (Anlage WA). Transfer pricing records are not filed with the return. They are handed over as the rows above say | https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/Steuererklaerungen/steuererklaerungen_node.html |
+
+## Section 5: Deadlines
+
+**Deadlines**
+
+| Item | Deadline | Law and link |
+| --- | --- | --- |
+| Documentation preparation | The law sets a time for making the records only for extraordinary transactions: close in time to the transaction. Records made within six months after the end of the financial year in which the transaction took place still count as made in time. All other records must be ready to hand over within the 30-day periods below | § 90(3) sentence 5 AO and § 3(1) GAufzV, https://www.gesetze-im-internet.de/gaufzv_2017/__3.html |
+| What is extraordinary | Above all: making or changing long-term contracts with a large effect on income from business relations; asset transfers in a restructuring; transfer or letting of assets with a major change of functions and risks; transactions tied to a change of business strategy that matters for pricing; making cost sharing agreements | § 3(2) GAufzV, same page |
+| Transaction matrix + Master File submission | 30 days from the announcement of the audit order, without being asked. In force from 1 January 2025 | § 90(4) sentence 3 AO and Art. 97 § 37(5) EGAO, https://www.gesetze-im-internet.de/aoeg_1977/art_97__37.html |
+| Extraordinary transactions | 30 days from the announcement of the audit order, without being asked | § 90(4) sentence 3 AO, https://www.gesetze-im-internet.de/ao_1977/__90.html |
+| Local File submission | 30 days from the request | § 90(4) sentence 2 AO, same page |
+| Longer period | Possible in justified single cases | § 90(4) sentence 4 AO, same page |
+| CbCR filing | At the latest one year after the end of the financial year | § 138a(6) AO, https://www.gesetze-im-internet.de/ao_1977/__138a.html |
+| Corporate tax return | Seven months after the end of the calendar year. Where a tax adviser prepares the return: the last day of February of the second calendar year after the tax period. The tax office can call for it earlier in listed cases | § 149(2) to (4) AO, https://www.gesetze-im-internet.de/ao_1977/__149.html |
+
+## Section 6: Penalties
+
+**Surcharges for transfer pricing records (§ 162(4) AO)**
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ao_1977/__162.html |
+| Fixed surcharge where the taxpayer presents no records on a transaction, or the records presented on a transaction are unusable in essence, or the transaction matrix is not presented | EUR 5,000 | § 162(4) sentence 1 AO: "ist ein Zuschlag von 5 000 Euro festzusetzen" |
+| Where it comes to more than the fixed surcharge: lowest share of the extra income that results from a correction under § 162(3) AO | 5% | § 162(4) sentence 2 AO: "Der Zuschlag beträgt mindestens 5 Prozent und höchstens 10 Prozent des Mehrbetrags der Einkünfte" |
+| Highest share of that extra income | 10% | Same sentence: "höchstens 10 Prozent des Mehrbetrags der Einkünfte" |
+| Usable records presented late: highest surcharge | EUR 1,000,000 | § 162(4) sentence 4 AO: "beträgt der Zuschlag bis zu 1 000 000 Euro" |
+| Usable records presented late: lowest surcharge for each full day after the deadline | EUR 100 | Same sentence: "mindestens jedoch 100 Euro für jeden vollen Tag der Fristüberschreitung" |
+
+- **Fixed amount or share.** The fixed surcharge is the floor. The share of the extra income applies only when it comes to more than the fixed surcharge.
+- **Late is a different case from missing.** The late surcharge is for usable records that arrive after the deadline. It can be set in part amounts for full weeks and months of delay.
+- **When it is set.** As a rule after the tax audit has ended.
+- **How the amount is chosen.** Where the tax office has a choice, it weighs the purpose of the surcharge, the advantages the taxpayer drew and, for late records, the length of the delay.
+- **When there is none.** No surcharge is set where the failure appears excusable or the fault is only slight. The fault of a legal representative or of a person who carries out the duty counts as the taxpayer's own.
+- **In force.** The current § 162(4) AO applies from 1 January 2025. See Art. 97 § 37(5) EGAO at https://www.gesetze-im-internet.de/aoeg_1977/art_97__37.html
+- **Not deductible.** The ministry's 2020 paper treats the surcharge as an ancillary tax charge that cannot be deducted, and says it rules out neither a late filing surcharge nor fine or criminal proceedings (no. 89).
+
+**Estimates (§ 162(3) AO)**
+
+- **Adverse estimation.** If the taxpayer presents no records on a transaction, or records that are unusable in essence, or did not make the records on an extraordinary transaction in time, the law presumes that the German income the records serve is higher than declared. The taxpayer can rebut this.
+- **Burden of proof.** The law does not use these words. It works through that rebuttable presumption. If the tax office must then estimate and the income can only be fixed within a range, price ranges above all, the range can be used in full against the taxpayer.
+- **Foreign related party stays silent.** Where usable records were presented, but there are signs that the income would be higher under the arm's length rule, and the doubts cannot be cleared up because a foreign related person does not meet its duties to cooperate or to give information, the range rule applies: the range can be used in full against the taxpayer (§ 162(3) sentence 3 AO). The law does not name the presumption for this case.
+- **Which years.** § 162(3) AO in the version in force on 1 January 2023 applies first to taxes that arise after 31 December 2024. It also applies to earlier taxes where the audit order for them was announced after 31 December 2024. For other earlier taxes the version in force on 31 December 2022 goes on applying (Art. 97 § 37(2) and (3) EGAO).
+
+**Fine for the country-by-country report (§ 379 AO)**
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ao_1977/__379.html |
+| Highest fine for not sending the country-by-country report, not sending it in full or not in time, and for the same failures with the notice under § 138a(4) sentence 3 AO | EUR 10,000 | § 379(5) AO: "mit einer Geldbuße bis zu 10 000 Euro geahndet werden" |
+
+- **Only with intent or recklessness** (leichtfertig), and only where the act cannot be punished under § 378 AO (§ 379(2) no. 1c and (5) AO).
+- **Tax return statement.** The statement under § 138a(5) AO is not named in § 379(2) no. 1c AO. Its own consequence is in 2.4: without it, the included German company must file the report itself.
+- **Who runs the fine procedure.** The competent tax authority of the federal state, not the BZSt. See https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/FAQ/FAQ_node.html
+
+## Section 7: Advance Pricing Agreements (APA)
+
+**APA**
+
+| Item | Detail |
+| --- | --- |
+| Source for all rows below | https://www.gesetze-im-internet.de/ao_1977/__89a.html |
+| Availability | Yes, as a procedure between states (Vorabverständigungsverfahren). It needs a tax treaty with a mutual agreement procedure, a risk of double taxation for the facts, and a likely outcome: that double taxation is avoided and that both authorities read the treaty the same way (§ 89a(1) AO) |
+| Types | Bilateral (Germany and one other state) or multilateral (several other states). § 89a AO describes a procedure between states only. The ministry's decree of 26 June 2024 says that unilateral binding rulings should not be given on cross-border profit allocation or on the allocation of profit to permanent establishments (no. 1.5) |
+| Governing authority | BZSt, acting in agreement with the highest tax authority of the federal state concerned or the authority it appoints |
+| Who can apply | A person entitled to treaty benefits. The BZSt names a business resident in Germany, or a business with a German permanent establishment that is resident in a treaty state. As a rule the foreign side should apply to its own authority at the same time. A partnership as a rule cannot apply itself, unless it has opted for corporate taxation. Where it has not opted, as a rule each partner who is resident in one of the treaty states is the person entitled to treaty benefits (decree, no. 1.8). Several persons whose case can only be judged in one way must apply together (§ 89a(1) AO) |
+| Facts covered | Precisely defined facts that are not yet realised when the application is made |
+| Typical duration | The term should as a rule not be longer than five years. It can be extended on application. On application the agreement can also be applied to assessment periods before the term (roll back), within the treaty's time limits for mutual agreement procedures. Both the extension and the roll back need the consent of the state-level authority and of the other state's authority (§ 89a(1) and (6) AO) |
+| Before applying | A non-binding prefiling meeting can be suggested to the BZSt informally (decree, no. 1.18) |
+| Conditions | Germany signs the agreement with the other state only if it stands at least under the condition that the applicant agrees to its content and waives legal remedies against tax assessments so far as they carry out the agreement correctly for the term. After signing, the BZSt tells the applicant the content and sets a period. If the applicant does not meet the conditions in time, the procedure fails (§ 89a(3) AO) |
+| Binding effect | The local tax office is bound, unless the conditions in the agreement are not met or no longer met, the other state does not keep to the agreement, or the law it rests on is repealed or changed (§ 89a(4) AO) |
+| Annual reporting | As a rule the agreement obliges the taxpayer to make and present a yearly report ("Compliance Report"). It shows that the facts were realised and the conditions kept, and points out every deviation. It goes to the BZSt and the local tax office at the same time, in German or with a German translation (decree, no. 4.2) |
+| Processing time | The pages read for this Guide print no processing time |
+
+**Fees for an advance pricing procedure (§ 89a(7) AO)**
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ao_1977/__89a.html |
+| Fee for each application in a transfer pricing case | EUR 30,000 | "Die Gebühr beträgt 30 000 Euro für jeden Antrag im Sinne des Absatzes 1" |
+| Fee for each application to extend an agreement | EUR 15,000 | "sowie 15 000 Euro für jeden Verlängerungsantrag nach Absatz 6 Satz 1" |
+| Cut in the fee where a coordinated bilateral or multilateral tax audit has already been carried out on the facts and ended with agreed facts and an agreed tax treatment | 75% | "wird die Gebühr um 75 Prozent reduziert" |
+| Smaller transfer pricing case, each application: the total of the transactions covered is not expected to pass the two amounts in the relief table in 2.2 | EUR 10,000 | "beträgt die Gebühr 10 000 Euro für jeden Antrag im Sinne des Absatzes 1" |
+| Smaller transfer pricing case, each application to extend | EUR 7,500 | "7 500 Euro für jeden Antrag nach Absatz 6 Satz 1" |
+
+- **Cases that are not transfer pricing cases** pay one quarter of the standard fees. The law prints this share in words.
+- **When the fee is due.** The fee is set before the procedure opens and is due within one month of the fee notice. The procedure opens only when the fee notice is final and the fee is paid (§ 89a(7) AO).
+- **One fee or several.** Several applicants who must apply together pay one fee. One combined application that covers several treaty states pays a separate fee for each procedure (§ 89a(7) AO).
+- **No refund.** A fee that is final is not paid back if the application is withdrawn or refused, or if the procedure fails (§ 89a(8) AO).
+- **Same number, other rule.** The smaller-case fee in this table and the highest fine in the last table of Section 6 happen to be the same amount. They are different rules.
+
+The ministry's decree of 26 June 2024: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-06-26-aenderung-aeao-89-89a.pdf?__blob=publicationFile&v=6 The BZSt's service page: https://online.portal.bzst.de/SharedDocs/Leistungsbeschreibung/DE/vorabverstaendigungsverfahren_in_verrechnungspreisfaellen.html
+
+## Section 8: Safe Harbours
+
+The pages read for this Guide print no general safe harbour. § 1 AStG prints no minimum amount. What the pages do print:
+
+**Safe Harbours**
+
+| Area | Detail |
+| --- | --- |
+| Source for all rows below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1 |
+| Low-value intra-group services | The price is as a rule set by the cost plus method. A cost mark-up of five percent (the paper prints it in words) can as a rule be seen as arm's length, if the group can show that it applies it uniformly in practice (no. 3.74). Covered: supporting services that are not the group's main business with third parties, use or create no unique and valuable intangibles, and carry no significant risk. Examples: bookkeeping, preparing tax returns, staff recruitment (no. 3.75 and 3.76). Never covered: research and development, manufacturing and production, sales, marketing and distribution (no. 3.77) |
+| Interest rates | No safe harbour rate. Under § 1(3d) AStG interest paid to a related party abroad is not at arm's length so far as the rate is above the rate at which the business could borrow from third parties on the rating of the whole group, unless it is proved in the single case that a rating derived from the group rating is at arm's length. The expense is also not at arm's length if the taxpayer cannot show credibly that it could have serviced the debt for the whole term from the start, and that it needed the money and used it for the purpose of the business. The ministry adds: the group's credit standing counts, unless the borrower's own is better (no. 3.133). Where the group has no rating, the rating of its top company can be used. Where that company has none either, the ministry accepts, for simplicity, a group rating worked out as at the loan date from the group's financing costs with third parties. It also accepts a credit analysis that the Deutsche Bundesbank made for the group as at the contract date (no. 3.136) |
+| Passing on finance | Arranging or passing on a financing relation inside a multinational group, and treasury tasks such as liquidity, financial risk or currency risk management, are as a rule services with few functions and low risk, unless a function and risk analysis proves otherwise (§ 1(3e) AStG) |
+| Cash pool leader | As a rule a service with few functions and low risk, paid on a cost basis. The ministry does not object to a mark-up on the directly attributable costs between five percent and ten percent (printed in words). Financing costs are not part of the cost base (no. 3.152) |
+| Baseline distribution (Amount B) | For transactions within chapter 3 of annex 4 of the paper, the ministry does not object if the price follows the simplified approach described there. Only for a business relation with a jurisdiction within annex 5 of the paper, with which Germany has a tax treaty and which is not a non-cooperative jurisdiction under the Steueroasen-Abwehrgesetz (no. 3.63a). First for assessment period 2025 (no. 6.2) |
+| Documentation thresholds | Within both amounts in the relief table in 2.2 (neither is passed) the records duty is met in a lighter way. It does not fall away, and arm's length pricing must still be shown |
+| Small transactions | No statutory minimum. Every business relation abroad with a related party is under the arm's length rule |
+
+- **Start date of the financing rules.** § 1(3d) and (3e) AStG apply first for assessment period 2024. § 1(3d) does not apply to expenses that arise up to 31 December 2024 from financing relations that were agreed under civil law before 1 January 2024 and whose actual performance began before 1 January 2024. If such a relation was changed in a major way after 31 December 2023 and before 1 January 2025, § 1(3d) does not apply to expenses that arose before the change. See § 21(1a) AStG at https://www.gesetze-im-internet.de/astg/__21.html
+
+### 8.1 Practical Implications of Documentation Thresholds
+
+Germany has no formal safe harbour. The documentation thresholds lower the paperwork, not the pricing standard:
+- Within both amounts in the relief table in 2.2: no full Local File has to be written. The business answers the tax office's questions to the standard of § 2(1) GAufzV and backs the answers with the documents it already has, within the same 30-day periods.
+- Own turnover in the previous financial year below the amount in the table in 2.1, or no multinational group: no Master File required. Group revenue is not the test.
+- However, the general obligation under § 90 AO to cooperate with the tax office remains. For facts abroad the taxpayer must clear up the facts and get the evidence, and cannot plead that this is impossible if it could have secured the means when it set up its affairs (§ 90(2) AO).
+- The tax office can still challenge pricing even without formal documentation requirements.
+
+## Section 9: Recent Developments
+
+**Recent Developments**
+
+| Date | Development | Link |
+| --- | --- | --- |
+| 1 January 2025 | BEG IV (law of 23 October 2024): transaction matrix made part of the records; records due within 30 days of a request; matrix, master file and records on extraordinary transactions due within 30 days of the announcement of the audit order without a request; surcharge rule recast | https://www.gesetze-im-internet.de/aoeg_1977/art_97__37.html |
+| 2 April 2025 | Ministry information sheet on the transaction matrix: contents, two sample layouts, timing, surcharge | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2025-04-02-merkblatt-zur-transaktionsmatrix.pdf?__blob=publicationFile&v=3 |
+| 12 December 2024 | New administrative principles on transfer pricing. They apply first for assessment period 2024 and replace the 2023 version, which applies for the last time for assessment period 2023 (no. 6.2) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1 |
+| Assessment period 2025 | Amount B: the simplified approach for baseline distribution is accepted in the limited cases in Section 8 (no. 3.63a and 6.2 of the 2024 administrative principles) | Same paper |
+| Assessment period 2024 | Law of 27 March 2024: new § 1(3d) and (3e) AStG on financing relations inside a group, with the transition rule in Section 8 | https://www.gesetze-im-internet.de/astg/__21.html |
+| 26 June 2024 | New application decree on advance pricing procedures under § 89a AO. The ministry's information sheet of 5 October 2006 was withdrawn | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-06-26-aenderung-aeao-89-89a.pdf?__blob=publicationFile&v=6 |
+| 2024 | Pillar Two (GloBE) implemented through the Mindeststeuergesetz (MinStG), first for financial years beginning after 30 December 2023. It has its own revenue test in § 1 MinStG and is outside this Guide | https://www.gesetze-im-internet.de/minstg/__101.html |
+| 2022 | § 1 AStG in its current form applies first for assessment period 2022: best-fitting method, range and median, transfer package for a relocation of functions, intangibles (§ 21(1) AStG) | https://www.gesetze-im-internet.de/astg/__21.html |
+
+## Section 10: Interaction with Other Guides
+
+**Interaction with Other Guides**
+
+| Related Guide | Interaction |
+| --- | --- |
+| `germany-bookkeeping` | Transfer pricing records build on the general bookkeeping records and the related-party disclosures |
+| `de-corporate-tax` | A correction under § 1 AStG raises taxable income and so affects corporate income tax (Körperschaftsteuer) and trade tax (Gewerbesteuer). The ministry's 2020 paper says the surcharge under § 162(4) AO cannot be deducted (no. 89) |
+| `germany-vat-return` | The arm's length price can differ from the customs value and from the value for import VAT. Later price adjustments that raise the price must be reported to the main customs office without delay. A later credit can give a refund claim only if the adjustment was agreed in the contract, in principle and in amount, before the imports, and is tied to the products (no. 4.7 and 4.8 of the 2024 administrative principles) |
+| CbCR | The BZSt passes each report to the competent tax office and to the treaty states, and may evaluate the reports within its legal tasks (§ 138a(7) AO). The transaction matrix is the tool the ministry names for the risk-based choice of audit fields |
+| Financial statements | Related-party disclosures under HGB or IFRS should agree with the transfer pricing position. The consolidated accounts are item 17 of the master file and the base for the revenue test in 2.4 |
+
+## The method, step by step
+
+1. Find the covered dealings. List every business relation with a related person abroad within § 1(2) and (4) AStG, and every dealing between the business and a permanent establishment in another state within § 1(5) AStG. § 1 AStG is about business relations abroad. Dealings between two German related parties follow other rules (see the refer list). https://www.gesetze-im-internet.de/astg/__1.html
+2. Set or test each price under § 1(3) AStG: function and risk analysis, comparability analysis, then the method that fits best, on the facts at the time the transaction was agreed. Where no comparable values exist, use the hypothetical arm's length test. Check the result against the range and median rules of § 1(3a) AStG. https://www.gesetze-im-internet.de/astg/__1.html
+3. Test the relief for smaller businesses in § 6 GAufzV: both amounts in the relief table in 2.2, for the current financial year, with connected German businesses added. Remember the one-year lag. https://www.gesetze-im-internet.de/gaufzv_2017/__6.html
+4. Build the records that § 90(3) AO asks for: the transaction matrix, the facts and the appropriateness analysis, with the content of § 4 GAufzV. Write them in German, or apply early for another language under § 2(5) GAufzV. https://www.gesetze-im-internet.de/gaufzv_2017/__4.html
+5. Test the master file duty under § 90(3) sentence 3 AO: part of a multinational group, and own turnover of the previous financial year against the table in 2.1. If it applies, prepare the items of the annex to § 5 GAufzV. https://www.gesetze-im-internet.de/gaufzv_2017/__5.html
+6. Record extraordinary transactions close in time, at the latest within six months after the end of the financial year, under § 3 GAufzV. https://www.gesetze-im-internet.de/gaufzv_2017/__3.html
+7. When an audit order is announced, note the date. Under § 90(4) AO the transaction matrix, the master file and the records on extraordinary transactions are due 30 days later without a request. Everything else is due 30 days after a request. Ask for a longer period early and give reasons. https://www.gesetze-im-internet.de/ao_1977/__90.html
+8. For groups at the revenue test in 2.4: file the country-by-country report with the BZSt under § 138a AO within one year after the financial year ends, and make the group statement in the tax return (Anlage WA for corporations). https://www.gesetze-im-internet.de/ao_1977/__138a.html
+9. Where certainty is wanted in advance and a tax treaty applies, consider an advance pricing procedure under § 89a AO with the BZSt. Weigh the fee in Section 7 and the waiver of legal remedies. https://www.gesetze-im-internet.de/ao_1977/__89a.html
+10. If records were missed or are late, read § 162(3) and (4) AO before answering the tax office: late usable records and missing records lead to different surcharges, and an excusable failure leads to none. https://www.gesetze-im-internet.de/ao_1977/__162.html
+
+## Ask the client first
+
+- Who are the related parties abroad: holdings of at least one quarter, control, or a shared parent? Is there a permanent establishment abroad, or is the client the German permanent establishment of a foreign business?
+- What are the total payments in the current financial year with foreign related parties, split into supplies of goods and everything else (services, interest, licences)? Which connected German businesses must be added?
+- Is the business part of a multinational group, and what was its own turnover, not the group's, in the previous financial year?
+- What was the group's consolidated revenue in the previous financial year, who is the ultimate parent, and which company files the country-by-country report in which country?
+- Has an audit order been announced, or has the tax office asked for records? On what date?
+- Were there extraordinary transactions in the year: restructurings, a transfer of functions, new or changed long-term contracts, cost sharing agreements? Are there loans from related parties, and were they agreed before 1 January 2024?
+
+## When to refuse or refer
+
+- Setting or defending an actual price: benchmarking studies, database searches, choice of comparables. Refer to a German Steuerberater with transfer pricing experience.
+- A relocation of functions and the valuation of a transfer package or of intangibles. See § 1a AStG at https://www.gesetze-im-internet.de/astg/__1a.html
+- The public income tax information report under §§ 342b and following HGB is a separate duty with its own revenue test. It is outside this Guide. See https://www.gesetze-im-internet.de/hgb/__342b.html
+- Financing inside the group: loans, guarantees, cash pools, group ratings under § 1(3d) and (3e) AStG.
+- Profit allocation to permanent establishments under § 1(5) AStG and its regulation.
+- Advance pricing procedures, mutual agreement and arbitration procedures, and corrections already made abroad.
+- An audit in progress where an estimate or a surcharge is on the table.
+- Dealings with non-cooperative jurisdictions: the Steueroasen-Abwehrgesetz adds stricter duties, and § 162(4a) AO applies the surcharge to them.
+- The global minimum tax (MinStG), the interest barrier (§ 4h EStG) and the anti-hybrid rules (§ 4k EStG). They are outside this Guide. The licence barrier of § 4j EStG, which older material still names, has been repealed: the page now reads "weggefallen". It still applies up to and including assessment period 2024 (§ 52(8c) sentence 3 EStG), so it matters in audits of those years. See https://www.gesetze-im-internet.de/estg/__4j.html and https://www.gesetze-im-internet.de/estg/__52.html
+- Dealings between German related parties only: hidden profit distributions and hidden contributions follow other rules.
+- Whether a smaller business within § 6 GAufzV must still hand over a transaction matrix: the pages read for this Guide do not say.
+
+## Sources
+
+- AStG § 1 (arm's length rule), § 1a (price adjustment clause for intangibles) and § 21 (start dates): https://www.gesetze-im-internet.de/astg/__1.html and https://www.gesetze-im-internet.de/astg/__1a.html and https://www.gesetze-im-internet.de/astg/__21.html
+- AO § 90 (records, handover), § 162 (estimates, surcharges), § 138a (country-by-country report), § 379 (fine), § 89a (advance pricing procedures), § 149 (return deadlines): https://www.gesetze-im-internet.de/ao_1977/__90.html and https://www.gesetze-im-internet.de/ao_1977/__162.html and https://www.gesetze-im-internet.de/ao_1977/__138a.html and https://www.gesetze-im-internet.de/ao_1977/__379.html and https://www.gesetze-im-internet.de/ao_1977/__89a.html and https://www.gesetze-im-internet.de/ao_1977/__149.html
+- EGAO Art. 97 § 37 (start of the 2025 rules) and § 31 (start of the country-by-country report): https://www.gesetze-im-internet.de/aoeg_1977/art_97__37.html and https://www.gesetze-im-internet.de/aoeg_1977/art_97__31.html
+- GAufzV § 1 to § 6 and the annex to § 5: https://www.gesetze-im-internet.de/gaufzv_2017/__1.html and https://www.gesetze-im-internet.de/gaufzv_2017/__2.html and https://www.gesetze-im-internet.de/gaufzv_2017/__3.html and https://www.gesetze-im-internet.de/gaufzv_2017/__4.html and https://www.gesetze-im-internet.de/gaufzv_2017/__5.html and https://www.gesetze-im-internet.de/gaufzv_2017/__6.html and https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html
+- MinStG § 101 (start of the minimum tax): https://www.gesetze-im-internet.de/minstg/__101.html
+- EStG § 4j (licence barrier, repealed) and § 52 (application dates): https://www.gesetze-im-internet.de/estg/__4j.html and https://www.gesetze-im-internet.de/estg/__52.html
+- HGB §§ 342b and following (public income tax information report, a separate duty outside this Guide): https://www.gesetze-im-internet.de/hgb/__342b.html
+- Finance ministry, administrative principles on transfer pricing, 12 December 2024: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1
+- Finance ministry, information sheet on the transaction matrix, 2 April 2025: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2025-04-02-merkblatt-zur-transaktionsmatrix.pdf?__blob=publicationFile&v=3
+- Finance ministry, application decree on § 89 and § 89a AO, 26 June 2024: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-06-26-aenderung-aeao-89-89a.pdf?__blob=publicationFile&v=6
+- Finance ministry, administrative principles on documentation duties and estimates, 3 December 2020 (older than the 2025 changes): https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2020-12-03-Verwaltungsgrundsaetze-2020.pdf?__blob=publicationFile&v=1
+- BZSt, country-by-country reporting: procedure, data transmission, tax return statements, questions and answers: https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/Country_by_Country_Reporting/cbcr.html and https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/ElektronischeDatenuebermittlung/elektronische_Datenuebermittlung.html and https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/Steuererklaerungen/steuererklaerungen_node.html and https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/FAQ/FAQ_node.html
+- BZSt, advance pricing procedure service page: https://online.portal.bzst.de/SharedDocs/Leistungsbeschreibung/DE/vorabverstaendigungsverfahren_in_verrechnungspreisfaellen.html
+
+## Disclaimer
+
+This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+
+> Contributed by OpenAccountants.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

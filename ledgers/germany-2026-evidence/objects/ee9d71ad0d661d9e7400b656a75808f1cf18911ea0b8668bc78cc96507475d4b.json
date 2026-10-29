@@ -1,0 +1,11 @@
+{
+  "id": "U6a420e1ab34922e9",
+  "url": "https://www.gesetze-im-internet.de/de_v/__8.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6a420e1ab34922e9.body",
+  "raw_sha256": "6a3217bd6801bdd250e12d182d89052769c27407c7c36de9624e424ebfeef0b4",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6a420e1ab34922e9.reader.txt",
+  "reader_sha256": "6db322cc6771f4dd1aef534475bebb8d3215f7a0733e40ba152176a35bd8b002",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

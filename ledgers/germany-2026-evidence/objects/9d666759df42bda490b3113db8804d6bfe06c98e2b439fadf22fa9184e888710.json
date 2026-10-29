@@ -1,0 +1,1684 @@
+[
+  {
+    "LF": 3,
+    "section": "description",
+    "wording": "description: \"German income tax prepayments (Einkommensteuer-Vorauszahlungen, § 37 EStG) for individuals, tax year 2026. Covers who pays them, the four due dates (10 March, 10 June, 10 September, 10 December), how the tax office sets the amount from the last assessment, the EUR 400 and EUR 100 minimums, the EUR 600 small-deductions rule, increases, reductions and the 15-month adjustment window, the solidarity surcharge (EUR 20,350 / 40,700 limits, 5.5%, 11.9% mitigation) and church tax riding on prepayments, the year-end balance, the 1% late payment surcharge and 1.8% interest after assessment, and new businesses. Trigger on: Vorauszahlungen, Vorauszahlungsbescheid, estimated tax Germany, quarterly tax Germany, Herabsetzung Vorauszahlungen, Säumniszuschlag, Nachzahlungszinsen. Out of scope: the tariff and the return (de-einkommensteuer-freelancer, de-self-employed-income-tax), trade tax prepayments (de-trade-tax), VAT advance payments (germany-vat-return), corporate tax (de-corporate-tax), non-residents (de-non-resident-tax).\"",
+    "anchors": [
+      "DATES",
+      "MIN",
+      "SMALL",
+      "ADJUST",
+      "SOLI_LIMIT",
+      "SOLI_RATE",
+      "LATE",
+      "INTEREST_RATE"
+    ],
+    "kind": "Scope/figure summary; each distinct rule is mapped again at its operative body row",
+    "id": 1,
+    "prior_wording": "description: \"German income tax prepayments (Einkommensteuer-Vorauszahlungen, § 37 EStG) for individuals, tax year 2026. Covers who pays them, the four due dates (10 March, 10 June, 10 September, 10 December), how the tax office sets the amount from the last assessment, the EUR 400 and EUR 100 minimums, the EUR 600 small-deductions rule, increases, reductions and the 15-month adjustment window, the solidarity surcharge (EUR 20,350 / 40,700 limits, 5.5%, 11.9% mitigation) and church tax riding on prepayments, the year-end balance, the 1% late payment surcharge and 1.8% interest after assessment, and new businesses. Trigger on: Vorauszahlungen, Vorauszahlungsbescheid, estimated tax Germany, quarterly tax Germany, Herabsetzung Vorauszahlungen, Säumniszuschlag, Nachzahlungszinsen. Out of scope: the tariff and the return (de-einkommensteuer-freelancer, de-self-employed-income-tax), trade tax prepayments (de-trade-tax), VAT advance payments (germany-vat-return), corporate tax (de-corporate-tax), non-residents (de-non-resident-tax).\"",
+    "source_quote_ids": [
+      "OLD.DATES",
+      "OLD.MIN",
+      "OLD.SMALL",
+      "OLD.ADJUST",
+      "OLD.SOLI_LIMIT",
+      "OLD.SOLI_RATE",
+      "OLD.LATE",
+      "OLD.INTEREST_RATE"
+    ]
+  },
+  {
+    "LF": 19,
+    "section": "German income tax prepayments 2026 (Einkommensteuer-Vorauszahlungen)",
+    "wording": "> **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any specific taxpayer's facts. A Steuerberater should confirm results before acting.",
+    "anchors": [],
+    "kind": "Reference/assumption boundary; the calendar-month caveat prevents applying the executable shortcut generally",
+    "id": 2,
+    "prior_wording": "> **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any specific taxpayer's facts. A Steuerberater should confirm results before acting.",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 21,
+    "section": "German income tax prepayments 2026 (Einkommensteuer-Vorauszahlungen)",
+    "wording": "\"Estimated tax\" is a US phrase. In Germany the taxpayer does not work out prepayments. The tax office (Finanzamt) sets them in a prepayment notice (Vorauszahlungsbescheid), and the taxpayer pays the amounts printed on it. § 37 EStG has no safe harbour percentage, no annualised method and no penalty for an estimate that turns out too low. What costs money is paying a set amount late, and interest on the final balance.",
+    "anchors": [
+      "NOTICE",
+      "BASE",
+      "INTEREST_SCOPE",
+      "LATE"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 3,
+    "prior_wording": "\"Estimated tax\" is a US phrase. In Germany the taxpayer does not work out prepayments. The tax office (Finanzamt) sets them in a prepayment notice (Vorauszahlungsbescheid), and the taxpayer pays the amounts printed on it. § 37 EStG has no safe harbour percentage, no annualised method and no penalty for an estimate that turns out too low. What costs money is paying a set amount late, and interest on the final balance.",
+    "source_quote_ids": [
+      "OLD.NOTICE",
+      "OLD.BASE",
+      "OLD.INTEREST_SCOPE",
+      "OLD.LATE"
+    ]
+  },
+  {
+    "LF": 25,
+    "section": "Who this applies to",
+    "wording": "- **Individuals whose income tax is not fully collected by withholding:** freelancers, sole traders, partners, landlords, investors with assessed income, and employees with large side income. They pay prepayments on the income tax they are expected to owe for the current year ([§ 37(1) EStG](https://www.gesetze-im-internet.de/estg/__37.html)).",
+    "anchors": [
+      "DATES",
+      "PERSON"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 4,
+    "prior_wording": "- **Individuals whose income tax is not fully collected by withholding:** freelancers, sole traders, partners, landlords, investors with assessed income, and employees with large side income. They pay prepayments on the income tax they are expected to owe for the current year ([§ 37(1) EStG](https://www.gesetze-im-internet.de/estg/__37.html)).",
+    "source_quote_ids": [
+      "OLD.DATES",
+      "OLD.PERSON"
+    ]
+  },
+  {
+    "LF": 26,
+    "section": "Who this applies to",
+    "wording": "- **Only once a notice sets them.** Prepayments are set by prepayment notice (§ 37(3) sentence 1 EStG). With no notice, nothing is payable in advance. Set money aside.",
+    "anchors": [
+      "NOTICE"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 5,
+    "prior_wording": "- **Only once a notice sets them.** Prepayments are set by prepayment notice (§ 37(3) sentence 1 EStG). With no notice, nothing is payable in advance. Set money aside.",
+    "source_quote_ids": [
+      "OLD.NOTICE"
+    ]
+  },
+  {
+    "LF": 27,
+    "section": "Who this applies to",
+    "wording": "- **When the claim arises.** Each prepayment arises at the start of the calendar quarter in which it is due, or when tax liability begins, if later (§ 37(1) sentence 2 EStG).",
+    "anchors": [
+      "ARISE"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 6,
+    "prior_wording": "- **When the claim arises.** Each prepayment arises at the start of the calendar quarter in which it is due, or when tax liability begins, if later (§ 37(1) sentence 2 EStG).",
+    "source_quote_ids": [
+      "OLD.ARISE"
+    ]
+  },
+  {
+    "LF": 28,
+    "section": "Who this applies to",
+    "wording": "- **Not here:** trade tax prepayments (set by the municipality, `de-trade-tax`), VAT advance payments (`germany-vat-return`), wage tax withheld by an employer (`de-payroll`), and companies (`de-corporate-tax`). Partnership prepayments are set on each partner personally; the partnership itself pays none for income tax. Partners: `de-partners-and-part-year`.",
+    "anchors": [
+      "PERSON",
+      "PARTNERS",
+      "MUNICIPAL"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 7,
+    "prior_wording": "- **Not here:** trade tax prepayments (set by the municipality, `de-trade-tax`), VAT advance payments (`germany-vat-return`), wage tax withheld by an employer (`de-payroll`), and companies (`de-corporate-tax`). Partnership prepayments are set on each partner personally; the partnership itself pays none for income tax. Partners: `de-partners-and-part-year`.",
+    "source_quote_ids": [
+      "OLD.PERSON",
+      "OLD.PARTNERS",
+      "OLD.MUNICIPAL"
+    ]
+  },
+  {
+    "LF": 32,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Item | Rate or amount | Year | Source |",
+    "anchors": [],
+    "kind": "Presentation/table header",
+    "id": 8,
+    "prior_wording": "| Item | Rate or amount | Year | Source |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 33,
+    "section": "Rates, bands and thresholds",
+    "wording": "|---|---|---|---|",
+    "anchors": [],
+    "kind": "Presentation/table header",
+    "id": 9,
+    "prior_wording": "|---|---|---|---|",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 34,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Due dates | 10 March, 10 June, 10 September, 10 December | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "anchors": [
+      "DATES"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 10,
+    "prior_wording": "| Due dates | 10 March, 10 June, 10 September, 10 December | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "source_quote_ids": [
+      "OLD.DATES"
+    ]
+  },
+  {
+    "LF": 35,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Minimum yearly total, below which no prepayments are set | EUR 400 | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "anchors": [
+      "MIN"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 11,
+    "prior_wording": "| Minimum yearly total, below which no prepayments are set | EUR 400 | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "source_quote_ids": [
+      "OLD.MIN"
+    ]
+  },
+  {
+    "LF": 36,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Minimum per due date (both minimums must be met) | EUR 100 | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "anchors": [
+      "MIN"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 12,
+    "prior_wording": "| Minimum per due date (both minimums must be met) | EUR 100 | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "source_quote_ids": [
+      "OLD.MIN"
+    ]
+  },
+  {
+    "LF": 37,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Minimum increase per due date (ordinary increase) | EUR 100 | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "anchors": [
+      "MIN"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 13,
+    "prior_wording": "| Minimum increase per due date (ordinary increase) | EUR 100 | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "source_quote_ids": [
+      "OLD.MIN"
+    ]
+  },
+  {
+    "LF": 38,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Minimum for a later increase under § 37(4) | EUR 5,000 | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "anchors": [
+      "MIN",
+      "LATER"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 14,
+    "prior_wording": "| Minimum for a later increase under § 37(4) | EUR 5,000 | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "source_quote_ids": [
+      "OLD.MIN",
+      "OLD.LATER"
+    ]
+  },
+  {
+    "LF": 39,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Small deductions left out of the base if together not above | EUR 600 | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "anchors": [
+      "SMALL"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 15,
+    "prior_wording": "| Small deductions left out of the base if together not above | EUR 600 | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "source_quote_ids": [
+      "OLD.SMALL"
+    ]
+  },
+  {
+    "LF": 40,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Adjustment window after the tax year | 15 calendar months (23 if farming and forestry dominates) | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "anchors": [
+      "ADJUST"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 16,
+    "prior_wording": "| Adjustment window after the tax year | 15 calendar months (23 if farming and forestry dominates) | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "source_quote_ids": [
+      "OLD.ADJUST"
+    ]
+  },
+  {
+    "LF": 41,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Solidarity surcharge exemption limit, single | EUR 20,350 of income tax | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html |",
+    "anchors": [
+      "SOLI_LIMIT"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 17,
+    "prior_wording": "| Solidarity surcharge exemption limit, single | EUR 20,350 of income tax | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html |",
+    "source_quote_ids": [
+      "OLD.SOLI_LIMIT"
+    ]
+  },
+  {
+    "LF": 42,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Solidarity surcharge exemption limit, splitting (joint) | EUR 40,700 of income tax | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html |",
+    "anchors": [
+      "SOLI_LIMIT"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 18,
+    "prior_wording": "| Solidarity surcharge exemption limit, splitting (joint) | EUR 40,700 of income tax | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html |",
+    "source_quote_ids": [
+      "OLD.SOLI_LIMIT"
+    ]
+  },
+  {
+    "LF": 43,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Solidarity surcharge rate | 5.5% | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__4.html |",
+    "anchors": [
+      "SOLI_RATE"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 19,
+    "prior_wording": "| Solidarity surcharge rate | 5.5% | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__4.html |",
+    "source_quote_ids": [
+      "OLD.SOLI_RATE"
+    ]
+  },
+  {
+    "LF": 44,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Mitigation cap: surcharge not above this share of the excess over the limit | 11.9% | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__4.html |",
+    "anchors": [
+      "SOLI_RATE"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 20,
+    "prior_wording": "| Mitigation cap: surcharge not above this share of the excess over the limit | 11.9% | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__4.html |",
+    "source_quote_ids": [
+      "OLD.SOLI_RATE"
+    ]
+  },
+  {
+    "LF": 45,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Church tax, members only, on the income tax | 8% or 9% by federal state | 2025 booklet | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf |",
+    "anchors": [
+      "CHURCH_RATE",
+      "CHURCH_STATE"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 21,
+    "prior_wording": "| Church tax, members only, on the income tax | 8% or 9% by federal state | 2025 booklet | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf |",
+    "source_quote_ids": [
+      "OLD.CHURCH_RATE",
+      "OLD.CHURCH_STATE"
+    ]
+  },
+  {
+    "LF": 46,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Late payment surcharge, per started month | 1% of the overdue tax rounded down to a multiple of EUR 50 | 2026 | https://www.gesetze-im-internet.de/ao_1977/__240.html |",
+    "anchors": [
+      "LATE"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 22,
+    "prior_wording": "| Late payment surcharge, per started month | 1% of the overdue tax rounded down to a multiple of EUR 50 | 2026 | https://www.gesetze-im-internet.de/ao_1977/__240.html |",
+    "source_quote_ids": [
+      "OLD.LATE"
+    ]
+  },
+  {
+    "LF": 47,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Grace period before the surcharge is charged | 3 days (not for cash or cheques) | 2026 | https://www.gesetze-im-internet.de/ao_1977/__240.html |",
+    "anchors": [
+      "GRACE",
+      "PAYMENT"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 23,
+    "prior_wording": "| Grace period before the surcharge is charged | 3 days (not for cash or cheques) | 2026 | https://www.gesetze-im-internet.de/ao_1977/__240.html |",
+    "source_quote_ids": [
+      "OLD.GRACE",
+      "OLD.PAYMENT"
+    ]
+  },
+  {
+    "LF": 48,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Interest after assessment (§ 233a AO) | 0.15% per full month (1.8% a year), amount rounded down to EUR 50 | 2026 | https://www.gesetze-im-internet.de/ao_1977/__238.html |",
+    "anchors": [
+      "INTEREST_RATE",
+      "FULL_MONTH",
+      "ROUND"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 24,
+    "prior_wording": "| Interest after assessment (§ 233a AO) | 0.15% per full month (1.8% a year), amount rounded down to EUR 50 | 2026 | https://www.gesetze-im-internet.de/ao_1977/__238.html |",
+    "source_quote_ids": [
+      "OLD.INTEREST_RATE",
+      "OLD.FULL_MONTH",
+      "OLD.ROUND"
+    ]
+  },
+  {
+    "LF": 49,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Interest-free period | 15 months after the end of the tax year (23 for farming and forestry); longer for 2019 to 2024 only | 2026 | https://www.gesetze-im-internet.de/ao_1977/__233a.html |",
+    "anchors": [
+      "INTEREST_PERIOD",
+      "HIST_2019",
+      "HIST_2020_2024"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 25,
+    "prior_wording": "| Interest-free period | 15 months after the end of the tax year (23 for farming and forestry); longer for 2019 to 2024 only | 2026 | https://www.gesetze-im-internet.de/ao_1977/__233a.html |",
+    "source_quote_ids": [
+      "OLD.INTEREST_PERIOD",
+      "OLD.HIST_2019",
+      "OLD.HIST_2020_2024"
+    ]
+  },
+  {
+    "LF": 50,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Registration questionnaire for a new business | within 1 month | 2026 | https://www.gesetze-im-internet.de/ao_1977/__138.html |",
+    "anchors": [
+      "REGISTER_MONTH"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 26,
+    "prior_wording": "| Registration questionnaire for a new business | within 1 month | 2026 | https://www.gesetze-im-internet.de/ao_1977/__138.html |",
+    "source_quote_ids": [
+      "OLD.REGISTER_MONTH"
+    ]
+  },
+  {
+    "LF": 52,
+    "section": "Rates, bands and thresholds",
+    "wording": "The 2026 solidarity surcharge limits first apply for assessment period 2026 ([§ 6(27) SolzG](https://www.gesetze-im-internet.de/solzg_1995/__6.html)). Older material shows lower limits.",
+    "anchors": [
+      "SOLI_YEAR"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 27,
+    "prior_wording": "The 2026 solidarity surcharge limits first apply for assessment period 2026 ([§ 6(27) SolzG](https://www.gesetze-im-internet.de/solzg_1995/__6.html)). Older material shows lower limits.",
+    "source_quote_ids": [
+      "OLD.SOLI_YEAR"
+    ]
+  },
+  {
+    "LF": 56,
+    "section": "The taxable base",
+    "wording": "**The starting figure.** Prepayments are measured, as a rule, by the income tax of the last assessment after crediting withholding taxes such as wage tax and investment income tax (§ 37(3) sentence 2 EStG, with § 36(2) number 2). The tax office may adjust them to the tax it expects for the current year (§ 37(3) sentence 3). Adjusting covers a rise and a cut.",
+    "anchors": [
+      "BASE",
+      "ADJUST"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 28,
+    "prior_wording": "**The starting figure.** Prepayments are measured, as a rule, by the income tax of the last assessment after crediting withholding taxes such as wage tax and investment income tax (§ 37(3) sentence 2 EStG, with § 36(2) number 2). The tax office may adjust them to the tax it expects for the current year (§ 37(3) sentence 3). Adjusting covers a rise and a cut.",
+    "source_quote_ids": [
+      "OLD.BASE",
+      "OLD.ADJUST"
+    ]
+  },
+  {
+    "LF": 58,
+    "section": "The taxable base",
+    "wording": "**Small deductions are ignored.** Church tax paid, childcare costs, own vocational training, school fees (§ 10(1) numbers 4, 5, 7 and 9), the § 10(1a) special expenses, donations (§ 10b), extraordinary burdens (§ 33) and the § 33a amounts are left out if together they do not exceed EUR 600 (§ 37(3) sentence 4).",
+    "anchors": [
+      "SMALL",
+      "CHURCH_SPECIAL"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 29,
+    "prior_wording": "**Small deductions are ignored.** Church tax paid, childcare costs, own vocational training, school fees (§ 10(1) numbers 4, 5, 7 and 9), the § 10(1a) special expenses, donations (§ 10b), extraordinary burdens (§ 33) and the § 33a amounts are left out if together they do not exceed EUR 600 (§ 37(3) sentence 4).",
+    "source_quote_ids": [
+      "OLD.SMALL",
+      "OLD.CHURCH_SPECIAL"
+    ]
+  },
+  {
+    "LF": 60,
+    "section": "The taxable base",
+    "wording": "**Always left out.** The § 34a reduction for retained profits and the § 10a(1) pension special expense (§ 37(3) sentences 5 and 6). § 37(3) does not list the § 35 trade tax credit, so the credit is not excluded; if a notice ignores it, apply for an adjustment. For parents: where child benefit does not fully achieve the tax relief for a child's subsistence minimum (§ 31 EStG), the § 32(6) child allowances and the child benefit to be offset are also left out (§ 37(3) sentence 12). The prepayment base is then worked out with child benefit, not with the allowances; the comparison happens only in the assessment.",
+    "anchors": [
+      "IGNORE",
+      "CHILD"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 30,
+    "prior_wording": "**Always left out.** The § 34a reduction for retained profits and the § 10a(1) pension special expense (§ 37(3) sentences 5 and 6). § 37(3) does not list the § 35 trade tax credit, so the credit is not excluded; if a notice ignores it, apply for an adjustment. For parents: where child benefit does not fully achieve the tax relief for a child's subsistence minimum (§ 31 EStG), the § 32(6) child allowances and the child benefit to be offset are also left out (§ 37(3) sentence 12). The prepayment base is then worked out with child benefit, not with the allowances; the comparison happens only in the assessment.",
+    "source_quote_ids": [
+      "OLD.IGNORE",
+      "OLD.CHILD"
+    ]
+  },
+  {
+    "LF": 62,
+    "section": "The taxable base",
+    "wording": "**Rental losses on a new building.** A loss from letting a building counts only for calendar years that begin after it was bought or completed (§ 37(3) sentence 8). If the building is bought before the calendar year in which it is completed, completion takes the place of purchase (sentence 9). Sentence 10 lifts this for buildings with § 7b special depreciation and some older incentives. The same rule applies to a loss from letting another asset within § 21(1) sentence 1 numbers 1 to 3 EStG, with the start of the taxpayer's own use in place of purchase or completion (sentence 11).",
+    "anchors": [
+      "RENT"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 31,
+    "prior_wording": "**Rental losses on a new building.** A loss from letting a building counts only for calendar years that begin after it was bought or completed (§ 37(3) sentence 8). If the building is bought before the calendar year in which it is completed, completion takes the place of purchase (sentence 9). Sentence 10 lifts this for buildings with § 7b special depreciation and some older incentives. The same rule applies to a loss from letting another asset within § 21(1) sentence 1 numbers 1 to 3 EStG, with the start of the taxpayer's own use in place of purchase or completion (sentence 11).",
+    "source_quote_ids": [
+      "OLD.RENT"
+    ]
+  },
+  {
+    "LF": 64,
+    "section": "The taxable base",
+    "wording": "**Surcharges.** The solidarity surcharge is measured on the prepayments (§ 3(1) number 2 SolzG) and charged only if the base exceeds the limit in the table (§ 3(3)). Above the limit, it is 5.5% of the whole base, but not more than 11.9% of the excess over the limit (§ 4). Worked from § 4, the cap stops biting once the base passes EUR 37,838.28 (single) or EUR 75,676.56 (joint), where 5.5% of the whole base equals 11.9% of the excess. Income tax at the flat rate under § 32d(3) and (4) EStG is left out of the limit test (§ 3(3) SolzG). Joint filers use the EUR 40,700 limit; do not double the single limit by hand. Church tax prepayments are paid with the income tax prepayments ([§ 51a(4) EStG](https://www.gesetze-im-internet.de/estg/__51a.html)). The EUR 400 and EUR 100 minimums do not apply to them (§ 51a(4) sentence 1).",
+    "anchors": [
+      "SOLI_BASE",
+      "SOLI_LIMIT",
+      "SOLI_RATE",
+      "CHURCH_PRE"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 32,
+    "prior_wording": "**Surcharges.** The solidarity surcharge is measured on the prepayments (§ 3(1) number 2 SolzG) and charged only if the base exceeds the limit in the table (§ 3(3)). Above the limit, it is 5.5% of the whole base, but not more than 11.9% of the excess over the limit (§ 4). Worked from § 4, the cap stops biting once the base passes EUR 37,838.28 (single) or EUR 75,676.56 (joint), where 5.5% of the whole base equals 11.9% of the excess. Income tax at the flat rate under § 32d(3) and (4) EStG is left out of the limit test (§ 3(3) SolzG). Joint filers use the EUR 40,700 limit; do not double the single limit by hand. Church tax prepayments are paid with the income tax prepayments ([§ 51a(4) EStG](https://www.gesetze-im-internet.de/estg/__51a.html)). The EUR 400 and EUR 100 minimums do not apply to them (§ 51a(4) sentence 1).",
+    "source_quote_ids": [
+      "OLD.SOLI_BASE",
+      "OLD.SOLI_LIMIT",
+      "OLD.SOLI_RATE",
+      "OLD.CHURCH_PRE"
+    ]
+  },
+  {
+    "LF": 66,
+    "section": "The taxable base",
+    "wording": "**How the yearly amount is split.** § 37 does not print a split across the four dates. Read the amounts from the notice.",
+    "anchors": [
+      "NOTICE"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 33,
+    "prior_wording": "**How the yearly amount is split.** § 37 does not print a split across the four dates. Read the amounts from the notice.",
+    "source_quote_ids": [
+      "OLD.NOTICE"
+    ]
+  },
+  {
+    "LF": 68,
+    "section": "The taxable base",
+    "wording": "**Year-end settlement.** Prepayments paid and withholding taxes are credited against the assessed tax ([§ 36(2) EStG](https://www.gesetze-im-internet.de/estg/__36.html)). A balance due (Abschlusszahlung) is payable within one month of the assessment notice; the part equal to prepayments due but unpaid is payable at once (§ 36(4) sentence 1). An overpayment is refunded after the notice (§ 36(4) sentence 2).",
+    "anchors": [
+      "CREDIT",
+      "BALANCE"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 34,
+    "prior_wording": "**Year-end settlement.** Prepayments paid and withholding taxes are credited against the assessed tax ([§ 36(2) EStG](https://www.gesetze-im-internet.de/estg/__36.html)). A balance due (Abschlusszahlung) is payable within one month of the assessment notice; the part equal to prepayments due but unpaid is payable at once (§ 36(4) sentence 1). An overpayment is refunded after the notice (§ 36(4) sentence 2).",
+    "source_quote_ids": [
+      "OLD.CREDIT",
+      "OLD.BALANCE"
+    ]
+  },
+  {
+    "LF": 70,
+    "section": "The taxable base",
+    "wording": "**Prepayments are not a business expense.** Income tax, solidarity surcharge and the late payment surcharge and interest on them may not be deducted from profit or income ([§ 12 number 3 EStG](https://www.gesetze-im-internet.de/estg/__12.html): taxes on income \"sowie die auf diese Steuern entfallenden Nebenleistungen\"; late payment surcharges and interest are Nebenleistungen under [§ 3(4) numbers 4 and 5 AO](https://www.gesetze-im-internet.de/ao_1977/__3.html)). Book them as private withdrawals. Church tax paid, including church tax prepayments, is the exception: it is a special expense in the year paid ([§ 10(1) number 4 EStG](https://www.gesetze-im-internet.de/estg/__10.html)), except church tax on flat-taxed investment income.",
+    "anchors": [
+      "NOT_EXPENSE",
+      "ANCILLARY",
+      "CHURCH_SPECIAL"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 35,
+    "prior_wording": "**Prepayments are not a business expense.** Income tax, solidarity surcharge and the late payment surcharge and interest on them may not be deducted from profit or income ([§ 12 number 3 EStG](https://www.gesetze-im-internet.de/estg/__12.html): taxes on income \"sowie die auf diese Steuern entfallenden Nebenleistungen\"; late payment surcharges and interest are Nebenleistungen under [§ 3(4) numbers 4 and 5 AO](https://www.gesetze-im-internet.de/ao_1977/__3.html)). Book them as private withdrawals. Church tax paid, including church tax prepayments, is the exception: it is a special expense in the year paid ([§ 10(1) number 4 EStG](https://www.gesetze-im-internet.de/estg/__10.html)), except church tax on flat-taxed investment income.",
+    "source_quote_ids": [
+      "OLD.NOT_EXPENSE",
+      "OLD.ANCILLARY",
+      "OLD.CHURCH_SPECIAL"
+    ]
+  },
+  {
+    "LF": 74,
+    "section": "Deadlines and filing",
+    "wording": "- **Four dates:** 10 March, 10 June, 10 September, 10 December 2026. In 2026 none falls on a weekend. If a deadline ends on a Saturday, Sunday or public holiday, it moves to the next working day ([§ 108(3) AO](https://www.gesetze-im-internet.de/ao_1977/__108.html)).",
+    "anchors": [
+      "DATES",
+      "WEEKENDS"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 36,
+    "prior_wording": "- **Four dates:** 10 March, 10 June, 10 September, 10 December 2026. In 2026 none falls on a weekend. If a deadline ends on a Saturday, Sunday or public holiday, it moves to the next working day ([§ 108(3) AO](https://www.gesetze-im-internet.de/ao_1977/__108.html)).",
+    "source_quote_ids": [
+      "OLD.DATES",
+      "OLD.WEEKENDS"
+    ]
+  },
+  {
+    "LF": 75,
+    "section": "Deadlines and filing",
+    "wording": "- **Day of payment** ([§ 224(2) AO](https://www.gesetze-im-internet.de/ao_1977/__224.html)): a transfer counts on the day the tax office's account is credited; under a SEPA direct debit mandate, on the due date; cash on receipt; a cheque three days after receipt.",
+    "anchors": [
+      "PAYMENT"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 37,
+    "prior_wording": "- **Day of payment** ([§ 224(2) AO](https://www.gesetze-im-internet.de/ao_1977/__224.html)): a transfer counts on the day the tax office's account is credited; under a SEPA direct debit mandate, on the due date; cash on receipt; a cheque three days after receipt.",
+    "source_quote_ids": [
+      "OLD.PAYMENT"
+    ]
+  },
+  {
+    "LF": 76,
+    "section": "Deadlines and filing",
+    "wording": "- **A later increase** adjusts the last prepayment of the year and is payable within one month of the notice (§ 37(4) EStG).",
+    "anchors": [
+      "LATER"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 38,
+    "prior_wording": "- **A later increase** adjusts the last prepayment of the year and is payable within one month of the notice (§ 37(4) EStG).",
+    "source_quote_ids": [
+      "OLD.LATER"
+    ]
+  },
+  {
+    "LF": 77,
+    "section": "Deadlines and filing",
+    "wording": "- **Changing the amount.** A prepayment notice is always set subject to review, and the taxpayer may apply at any time for it to be changed ([§ 164(1) and (2) AO](https://www.gesetze-im-internet.de/ao_1977/__164.html)). Use the Mein ELSTER form \"Antrag auf Anpassung von Vorauszahlungen\" with a profit projection. The tax office decides at its discretion: § 37(3) sentence 3 EStG says it \"kann\" adjust, so an application does not by itself change anything. The current notice stays in force until it is replaced ([§ 124(2) AO](https://www.gesetze-im-internet.de/ao_1977/__124.html)), so pay it until a new notice arrives.",
+    "anchors": [
+      "CHANGE",
+      "APPLY",
+      "ADJUST",
+      "VALID",
+      "ELSTER"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 39,
+    "prior_wording": "- **Changing the amount.** A prepayment notice is always set subject to review, and the taxpayer may apply at any time for it to be changed ([§ 164(1) and (2) AO](https://www.gesetze-im-internet.de/ao_1977/__164.html)). Use the Mein ELSTER form \"Antrag auf Anpassung von Vorauszahlungen\" with a profit projection. The tax office decides at its discretion: § 37(3) sentence 3 EStG says it \"kann\" adjust, so an application does not by itself change anything. The current notice stays in force until it is replaced ([§ 124(2) AO](https://www.gesetze-im-internet.de/ao_1977/__124.html)), so pay it until a new notice arrives.",
+    "source_quote_ids": [
+      "OLD.CHANGE",
+      "OLD.APPLY",
+      "OLD.ADJUST",
+      "OLD.VALID",
+      "OLD.ELSTER"
+    ]
+  },
+  {
+    "LF": 78,
+    "section": "Deadlines and filing",
+    "wording": "- **Adjustment window.** The tax office may adjust 2026 prepayments until the end of March 2028 (15th month after the year). Longer periods applied for 2019 to 2024 only ([§ 52(35d) EStG](https://www.gesetze-im-internet.de/estg/__52.html)).",
+    "anchors": [
+      "ADJUST",
+      "OLD_ADJUST"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 40,
+    "prior_wording": "- **Adjustment window.** The tax office may adjust 2026 prepayments until the end of March 2028 (15th month after the year). Longer periods applied for 2019 to 2024 only ([§ 52(35d) EStG](https://www.gesetze-im-internet.de/estg/__52.html)).",
+    "source_quote_ids": [
+      "OLD.ADJUST",
+      "OLD.OLD_ADJUST"
+    ]
+  },
+  {
+    "LF": 79,
+    "section": "Deadlines and filing",
+    "wording": "- **New business.** The registration questionnaire (Fragebogen zur steuerlichen Erfassung) is due within one month of starting ([§ 138(1b) and (4) AO](https://www.gesetze-im-internet.de/ao_1977/__138.html)). Its expected-profit answer drives the first prepayment notice.",
+    "anchors": [
+      "REGISTER",
+      "REGISTER_MONTH",
+      "ADJUST"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 41,
+    "prior_wording": "- **New business.** The registration questionnaire (Fragebogen zur steuerlichen Erfassung) is due within one month of starting ([§ 138(1b) and (4) AO](https://www.gesetze-im-internet.de/ao_1977/__138.html)). Its expected-profit answer drives the first prepayment notice.",
+    "source_quote_ids": [
+      "OLD.REGISTER",
+      "OLD.REGISTER_MONTH",
+      "OLD.ADJUST"
+    ]
+  },
+  {
+    "LF": 83,
+    "section": "Penalties and interest",
+    "wording": "- **Late payment surcharge** ([§ 240 AO](https://www.gesetze-im-internet.de/ao_1977/__240.html)). For each started month after the due date: 1% of the overdue tax rounded down to a multiple of EUR 50. None for a delay of up to three days, except for cash or cheques (§ 240(3)). None before the tax is set (§ 240(1) sentence 3), but solidarity surcharge and church tax prepayments are payable with the set income tax prepayments even without their own notice, and that protection does not apply to them (§ 51a(4) sentences 2 and 3 EStG). No surcharge on surcharges or interest (§ 240(2)).",
+    "anchors": [
+      "LATE",
+      "GRACE",
+      "LATE_ANCILLARY",
+      "CHURCH_PRE"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 42,
+    "prior_wording": "- **Late payment surcharge** ([§ 240 AO](https://www.gesetze-im-internet.de/ao_1977/__240.html)). For each started month after the due date: 1% of the overdue tax rounded down to a multiple of EUR 50. None for a delay of up to three days, except for cash or cheques (§ 240(3)). None before the tax is set (§ 240(1) sentence 3), but solidarity surcharge and church tax prepayments are payable with the set income tax prepayments even without their own notice, and that protection does not apply to them (§ 51a(4) sentences 2 and 3 EStG). No surcharge on surcharges or interest (§ 240(2)).",
+    "source_quote_ids": [
+      "OLD.LATE",
+      "OLD.GRACE",
+      "OLD.LATE_ANCILLARY",
+      "OLD.CHURCH_PRE"
+    ]
+  },
+  {
+    "LF": 84,
+    "section": "Penalties and interest",
+    "wording": "- **Interest after assessment** ([§ 233a AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html), [§ 238 AO](https://www.gesetze-im-internet.de/ao_1977/__238.html)). 0.15% for each full month, on the balance rounded down to EUR 50, both ways. For 2026 it starts on 1 April 2028. Older years had a longer interest-free period: 2019 from 1 October 2021; 21 months for 2020 and 2021, 20 for 2022, 18 for 2023 and 17 for 2024 (the 2024 interest period is Art. 97 § 36(3) number 7(d), distinct from the 16-month § 152 late-filing rule in number 5(d); [Art. 97 § 36(2) and (3) EGAO](https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html)). Do not carry those periods into 2026. The base is the assessed tax less withholding and less prepayments set before interest starts (§ 233a(3)). Prepayment notices themselves bear no § 233a interest (§ 233a(1) sentence 2). Under § 233a(8), interest is not set or is remitted only to the extent a payment or other performance for a later effective assessment was accepted by the office and actually credited against the assessed tax payable. Apply § 233a(3) sentence 4 correspondingly: actual individual performance dates/amounts and the statutory chronological order, starting with the most recent performance, determine the relevant periods. Obtain the accepted-and-credited amount/date and later assessment, not just a bank debit; a qualifying EUR 2,000 payment against a EUR 5,000 balance does not give whole-balance relief. Subsequent assessment reductions can also reduce the interest waiver under § 233a(8); no unsupported universal stop date is assumed.",
+    "anchors": [
+      "INTEREST_SCOPE",
+      "INTEREST_PERIOD",
+      "HIST_2019",
+      "HIST_2020_2024",
+      "INTEREST_BASE",
+      "VOLUNTARY",
+      "INTEREST_RATE",
+      "ROUND"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 43,
+    "prior_wording": "- **Interest after assessment** ([§ 233a AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html), [§ 238 AO](https://www.gesetze-im-internet.de/ao_1977/__238.html)). 0.15% for each full month, on the balance rounded down to EUR 50, both ways. For 2026 it starts on 1 April 2028. Older years had a longer interest-free period: 2019 from 1 October 2021; 21 months for 2020 and 2021, 20 for 2022, 18 for 2023 and 17 for 2024 (the 2024 interest period is Art. 97 § 36(3) number 7(d), distinct from the 16-month § 152 late-filing rule in number 5(d); [Art. 97 § 36(2) and (3) EGAO](https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html)). Do not carry those periods into 2026. The base is the assessed tax less withholding and less prepayments set before interest starts (§ 233a(3)). Prepayment notices themselves bear no § 233a interest (§ 233a(1) sentence 2). Voluntary payments accepted before the assessment stop interest (§ 233a(8)).",
+    "source_quote_ids": [
+      "OLD.INTEREST_SCOPE",
+      "OLD.INTEREST_PERIOD",
+      "OLD.HIST_2019",
+      "OLD.HIST_2020_2024",
+      "OLD.INTEREST_BASE",
+      "OLD.VOLUNTARY",
+      "OLD.INTEREST_RATE",
+      "OLD.ROUND",
+      "R55.extent",
+      "R55.period-order"
+    ]
+  },
+  {
+    "LF": 85,
+    "section": "Penalties and interest",
+    "wording": "- **Started versus full months.** The surcharge counts each started month; § 233a interest counts full months only (§ 238(1) sentence 2).",
+    "anchors": [
+      "LATE",
+      "FULL_MONTH"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 44,
+    "prior_wording": "- **Started versus full months.** The surcharge counts each started month; § 233a interest counts full months only (§ 238(1) sentence 2).",
+    "source_quote_ids": [
+      "OLD.LATE",
+      "OLD.FULL_MONTH"
+    ]
+  },
+  {
+    "LF": 86,
+    "section": "Penalties and interest",
+    "wording": "- **Too-low prepayments.** No penalty in § 37. The cost is a larger balance and, after the interest-free period, interest.",
+    "anchors": [
+      "NOTICE",
+      "INTEREST_SCOPE",
+      "INTEREST_PERIOD"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 45,
+    "prior_wording": "- **Too-low prepayments.** No penalty in § 37. The cost is a larger balance and, after the interest-free period, interest.",
+    "source_quote_ids": [
+      "OLD.NOTICE",
+      "OLD.INTEREST_SCOPE",
+      "OLD.INTEREST_PERIOD"
+    ]
+  },
+  {
+    "LF": 87,
+    "section": "Penalties and interest",
+    "wording": "- **False facts in a reduction application.** Giving the tax office incorrect or incomplete facts that lead to tax being cut is tax evasion, punishable by up to five years' imprisonment or a fine; the attempt is punishable too ([§ 370(1) and (2) AO](https://www.gesetze-im-internet.de/ao_1977/__370.html)). A prepayment notice is a tax assessment (§ 164(1) sentence 2 AO), so a reduction won on false facts falls under it. Do not prepare or file a reduction application on a profit projection you know to be wrong.",
+    "anchors": [
+      "FALSE",
+      "ATTEMPT",
+      "CHANGE"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 46,
+    "prior_wording": "- **False facts in a reduction application.** Giving the tax office incorrect or incomplete facts that lead to tax being cut is tax evasion, punishable by up to five years' imprisonment or a fine; the attempt is punishable too ([§ 370(1) and (2) AO](https://www.gesetze-im-internet.de/ao_1977/__370.html)). A prepayment notice is a tax assessment (§ 164(1) sentence 2 AO), so a reduction won on false facts falls under it. Do not prepare or file a reduction application on a profit projection you know to be wrong.",
+    "source_quote_ids": [
+      "OLD.FALSE",
+      "OLD.ATTEMPT",
+      "OLD.CHANGE"
+    ]
+  },
+  {
+    "LF": 88,
+    "section": "Penalties and interest",
+    "wording": "- **A client who cannot pay.** The tax office may defer (Stundung) a payment where collecting it when due would be a considerable hardship and the claim is not put at risk; deferral is as a rule granted only on application and against security ([§ 222 AO](https://www.gesetze-im-internet.de/ao_1977/__222.html)). Apply before the due date. Deferral interest is charged for the deferral period ([§ 234(1) AO](https://www.gesetze-im-internet.de/ao_1977/__234.html)) at 0.5% for each full month ([§ 238(1) AO](https://www.gesetze-im-internet.de/ao_1977/__238.html)). That is not the 0.15% § 233a rate, which § 238(1a) limits to § 233a cases; do not mix them. § 233a interest set for the same period is credited against deferral interest (§ 234(3)). If the hardship comes from lower income, apply for a reduction of the prepayments as well.",
+    "anchors": [
+      "DEFERRAL",
+      "DEF_INTEREST",
+      "FULL_MONTH",
+      "INTEREST_RATE",
+      "DEF_CREDIT"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 47,
+    "prior_wording": "- **A client who cannot pay.** The tax office may defer (Stundung) a payment where collecting it when due would be a considerable hardship and the claim is not put at risk; deferral is as a rule granted only on application and against security ([§ 222 AO](https://www.gesetze-im-internet.de/ao_1977/__222.html)). Apply before the due date. Deferral interest is charged for the deferral period ([§ 234(1) AO](https://www.gesetze-im-internet.de/ao_1977/__234.html)) at 0.5% for each full month ([§ 238(1) AO](https://www.gesetze-im-internet.de/ao_1977/__238.html)). That is not the 0.15% § 233a rate, which § 238(1a) limits to § 233a cases; do not mix them. § 233a interest set for the same period is credited against deferral interest (§ 234(3)). If the hardship comes from lower income, apply for a reduction of the prepayments as well.",
+    "source_quote_ids": [
+      "OLD.DEFERRAL",
+      "OLD.DEF_INTEREST",
+      "OLD.FULL_MONTH",
+      "OLD.INTEREST_RATE",
+      "OLD.DEF_CREDIT"
+    ]
+  },
+  {
+    "LF": 92,
+    "section": "Cross-border points",
+    "wording": "- Non-residents with German income assessed under § 49 EStG can also receive prepayment notices; § 37 is not limited to residents. See `de-non-resident-tax`.",
+    "anchors": [
+      "DATES"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 48,
+    "prior_wording": "- Non-residents with German income assessed under § 49 EStG can also receive prepayment notices; § 37 is not limited to residents. See `de-non-resident-tax`.",
+    "source_quote_ids": [
+      "OLD.DATES"
+    ]
+  },
+  {
+    "LF": 93,
+    "section": "Cross-border points",
+    "wording": "- Foreign tax credits and treaty exemptions change the expected tax. If a notice is based on a year before a move, apply for an adjustment. The year of moving in or out: `de-partners-and-part-year`; leaving: `leaving-germany-exit-tax`.",
+    "anchors": [
+      "ADJUST"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 49,
+    "prior_wording": "- Foreign tax credits and treaty exemptions change the expected tax. If a notice is based on a year before a move, apply for an adjustment. The year of moving in or out: `de-partners-and-part-year`; leaving: `leaving-germany-exit-tax`.",
+    "source_quote_ids": [
+      "OLD.ADJUST"
+    ]
+  },
+  {
+    "LF": 94,
+    "section": "Cross-border points",
+    "wording": "- Pay in EUR to the tax office's account; the payment day is when the account is credited, so allow for foreign transfer time.",
+    "anchors": [
+      "PAYMENT"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 50,
+    "prior_wording": "- Pay in EUR to the tax office's account; the payment day is when the account is credited, so allow for foreign transfer time.",
+    "source_quote_ids": [
+      "OLD.PAYMENT"
+    ]
+  },
+  {
+    "LF": 98,
+    "section": "Worked examples",
+    "wording": "**Example 1: freelancer, steady income.** The last assessment showed income tax of EUR 9,600, with EUR 1,200 of investment income tax credited. The base is EUR 8,400. The notice sets four equal prepayments of EUR 2,100. Both minimums are met. EUR 8,400 is below the EUR 20,350 single limit, so no solidarity surcharge. She is a church member in a 9% state: church tax prepayments total EUR 756 for the year, paid with the same instalments.",
+    "anchors": [
+      "BASE",
+      "MIN",
+      "SOLI_LIMIT",
+      "SOLI_RATE",
+      "CHURCH_RATE",
+      "CHURCH_PRE"
+    ],
+    "kind": "Source-bound rule/figure; exact selected quotations below",
+    "id": 51,
+    "prior_wording": "**Example 1: freelancer, steady income.** The last assessment showed income tax of EUR 9,600, with EUR 1,200 of investment income tax credited. The base is EUR 8,400. The notice sets four equal prepayments of EUR 2,100. Both minimums are met. EUR 8,400 is below the EUR 20,350 single limit, so no solidarity surcharge. She is a church member in a 9% state: church tax prepayments total EUR 756 for the year, paid with the same instalments.",
+    "source_quote_ids": [
+      "OLD.BASE",
+      "OLD.MIN",
+      "OLD.SOLI_LIMIT",
+      "OLD.SOLI_RATE",
+      "OLD.CHURCH_RATE",
+      "OLD.CHURCH_PRE"
+    ]
+  },
+  {
+    "LF": 101,
+    "section": "Worked examples",
+    "wording": "name: DE 2026 prepayment base, minimums, surcharge and church tax",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 52,
+    "prior_wording": "name: DE 2026 prepayment base, minimums, surcharge and church tax",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 102,
+    "section": "Worked examples",
+    "wording": "inputs:",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 53,
+    "prior_wording": "inputs:",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 103,
+    "section": "Worked examples",
+    "wording": "  last_income_tax: 9600",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 54,
+    "prior_wording": "  last_income_tax: 9600",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 104,
+    "section": "Worked examples",
+    "wording": "  withholding_credited: 1200",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 55,
+    "prior_wording": "  withholding_credited: 1200",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 105,
+    "section": "Worked examples",
+    "wording": "  soli_limit_single: 20350",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 56,
+    "prior_wording": "  soli_limit_single: 20350",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 106,
+    "section": "Worked examples",
+    "wording": "  church_rate_pct: 9",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 57,
+    "prior_wording": "  church_rate_pct: 9",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 107,
+    "section": "Worked examples",
+    "wording": "steps:",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 58,
+    "prior_wording": "steps:",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 108,
+    "section": "Worked examples",
+    "wording": "  - base: last_income_tax - withholding_credited",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 59,
+    "prior_wording": "  - base: last_income_tax - withholding_credited",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 109,
+    "section": "Worked examples",
+    "wording": "  - per_date: base / 4",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 60,
+    "prior_wording": "  - per_date: base / 4",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 110,
+    "section": "Worked examples",
+    "wording": "  - soli_excess: max(0, base - soli_limit_single)",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 61,
+    "prior_wording": "  - soli_excess: max(0, base - soli_limit_single)",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 111,
+    "section": "Worked examples",
+    "wording": "  - soli: min(base * 0.055, soli_excess * 0.119)",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 62,
+    "prior_wording": "  - soli: min(base * 0.055, soli_excess * 0.119)",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 112,
+    "section": "Worked examples",
+    "wording": "  - church: base * church_rate_pct / 100",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 63,
+    "prior_wording": "  - church: base * church_rate_pct / 100",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 113,
+    "section": "Worked examples",
+    "wording": "expected:",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 64,
+    "prior_wording": "expected:",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 114,
+    "section": "Worked examples",
+    "wording": "  base: 8400",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 65,
+    "prior_wording": "  base: 8400",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 115,
+    "section": "Worked examples",
+    "wording": "  per_date: 2100",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 66,
+    "prior_wording": "  per_date: 2100",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 116,
+    "section": "Worked examples",
+    "wording": "  soli: 0",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 67,
+    "prior_wording": "  soli: 0",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 117,
+    "section": "Worked examples",
+    "wording": "  church: 756",
+    "anchors": [],
+    "kind": "Declared fictional executable case 1 input/formula/output; verified in writer-arithmetic.json",
+    "id": 68,
+    "prior_wording": "  church: 756",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 120,
+    "section": "Worked examples",
+    "wording": "**Example 2: higher earner, mitigation zone and a late payment.** A single sole trader's notice sets income tax prepayments of EUR 22,000 for 2026. That is over the EUR 20,350 limit. 5.5% of 22,000 is EUR 1,210, but the cap is 11.9% of the EUR 1,650 excess, EUR 196.35, so the surcharge prepayments are EUR 196.35 for the year. His 10 September instalment of EUR 5,549 is credited 40 days late. That is two started months. The overdue tax rounds down to EUR 5,500, and the surcharge is 1% x 2 x 5,500 = EUR 110.",
+    "anchors": [
+      "SOLI_LIMIT",
+      "SOLI_RATE",
+      "LATE"
+    ],
+    "kind": "Original fictional worked case2; independently recomputed by writer arithmetic, not statutory client inputs",
+    "id": 69,
+    "prior_wording": "**Example 2: higher earner, mitigation zone and a late payment.** A single sole trader's notice sets income tax prepayments of EUR 22,000 for 2026. That is over the EUR 20,350 limit. 5.5% of 22,000 is EUR 1,210, but the cap is 11.9% of the EUR 1,650 excess, EUR 196.35, so the surcharge prepayments are EUR 196.35 for the year. His 10 September instalment of EUR 5,549 is credited 40 days late. That is two started months. The overdue tax rounds down to EUR 5,500, and the surcharge is 1% x 2 x 5,500 = EUR 110.",
+    "source_quote_ids": [
+      "OLD.SOLI_LIMIT",
+      "OLD.SOLI_RATE",
+      "OLD.LATE"
+    ]
+  },
+  {
+    "LF": 123,
+    "section": "Worked examples",
+    "wording": "name: DE 2026 solidarity mitigation and late payment surcharge",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 70,
+    "prior_wording": "name: DE 2026 solidarity mitigation and late payment surcharge",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 124,
+    "section": "Worked examples",
+    "wording": "inputs:",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 71,
+    "prior_wording": "inputs:",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 125,
+    "section": "Worked examples",
+    "wording": "  prepayments_year: 22000",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 72,
+    "prior_wording": "  prepayments_year: 22000",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 126,
+    "section": "Worked examples",
+    "wording": "  soli_limit_single: 20350",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 73,
+    "prior_wording": "  soli_limit_single: 20350",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 127,
+    "section": "Worked examples",
+    "wording": "  overdue: 5549",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 74,
+    "prior_wording": "  overdue: 5549",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 128,
+    "section": "Worked examples",
+    "wording": "  days_late: 40",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 75,
+    "prior_wording": "  days_late: 40",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 129,
+    "section": "Worked examples",
+    "wording": "steps:",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 76,
+    "prior_wording": "steps:",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 130,
+    "section": "Worked examples",
+    "wording": "  - soli_full: prepayments_year * 0.055",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 77,
+    "prior_wording": "  - soli_full: prepayments_year * 0.055",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 131,
+    "section": "Worked examples",
+    "wording": "  - soli_cap: (prepayments_year - soli_limit_single) * 0.119",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 78,
+    "prior_wording": "  - soli_cap: (prepayments_year - soli_limit_single) * 0.119",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 132,
+    "section": "Worked examples",
+    "wording": "  - soli: min(soli_full, soli_cap)",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 79,
+    "prior_wording": "  - soli: min(soli_full, soli_cap)",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 133,
+    "section": "Worked examples",
+    "wording": "  - started_months: ceil(days_late / 30)",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 80,
+    "prior_wording": "  - started_months: ceil(days_late / 30)",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 134,
+    "section": "Worked examples",
+    "wording": "  - rounded_overdue: floor(overdue / 50) * 50",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 81,
+    "prior_wording": "  - rounded_overdue: floor(overdue / 50) * 50",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 135,
+    "section": "Worked examples",
+    "wording": "  - surcharge: rounded_overdue * 0.01 * started_months",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 82,
+    "prior_wording": "  - surcharge: rounded_overdue * 0.01 * started_months",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 136,
+    "section": "Worked examples",
+    "wording": "expected:",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 83,
+    "prior_wording": "expected:",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 137,
+    "section": "Worked examples",
+    "wording": "  soli_full: 1210",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 84,
+    "prior_wording": "  soli_full: 1210",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 138,
+    "section": "Worked examples",
+    "wording": "  soli_cap: 196.35",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 85,
+    "prior_wording": "  soli_cap: 196.35",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 139,
+    "section": "Worked examples",
+    "wording": "  soli: 196.35",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 86,
+    "prior_wording": "  soli: 196.35",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 140,
+    "section": "Worked examples",
+    "wording": "  started_months: 2",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 87,
+    "prior_wording": "  started_months: 2",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 141,
+    "section": "Worked examples",
+    "wording": "  rounded_overdue: 5500",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 88,
+    "prior_wording": "  rounded_overdue: 5500",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 142,
+    "section": "Worked examples",
+    "wording": "  surcharge: 110",
+    "anchors": [],
+    "kind": "Declared fictional executable case 2 input/formula/output; verified in writer-arithmetic.json",
+    "id": 89,
+    "prior_wording": "  surcharge: 110",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 145,
+    "section": "Worked examples",
+    "wording": "The 30-day month in the steps is a simplification for this example; count calendar months from the due date on a real file.",
+    "anchors": [],
+    "kind": "Reference/assumption boundary; the calendar-month caveat prevents applying the executable shortcut generally",
+    "id": 90,
+    "prior_wording": "The 30-day month in the steps is a simplification for this example; count calendar months from the due date on a real file.",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 147,
+    "section": "Worked examples",
+    "wording": "**Five further qualitative cases.** These retain the earlier scenarios without inventing a client amount.",
+    "anchors": [],
+    "kind": "Preserved earlier qualitative-case presentation; legal anchors are in each actual row below",
+    "id": 91,
+    "prior_wording": "**Five further qualitative cases.** These retain the earlier scenarios without inventing a client amount.",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 149,
+    "section": "Worked examples",
+    "wording": "| Case | Declared input | Result |",
+    "anchors": [],
+    "kind": "Presentation/table header",
+    "id": 92,
+    "prior_wording": "| Case | Declared input | Result |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 150,
+    "section": "Worked examples",
+    "wording": "|---|---|---|",
+    "anchors": [],
+    "kind": "Presentation/table header",
+    "id": 93,
+    "prior_wording": "|---|---|---|",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 151,
+    "section": "Worked examples",
+    "wording": "| Notice-based instalments | A 2026 Vorauszahlungsbescheid lists an amount for each date: 10 March, 10 June, 10 September and 10 December | Report those four amounts and dates; do not invent an equal split (§ 37(1)/(3) EStG). |",
+    "anchors": [
+      "DATES",
+      "NOTICE"
+    ],
+    "kind": "Preserved qualitative case",
+    "id": 94,
+    "prior_wording": "| Notice-based instalments | A 2026 Vorauszahlungsbescheid lists an amount for each date: 10 March, 10 June, 10 September and 10 December | Report those four amounts and dates; do not invent an equal split (§ 37(1)/(3) EStG). |",
+    "source_quote_ids": [
+      "OLD.DATES",
+      "OLD.NOTICE"
+    ]
+  },
+  {
+    "LF": 152,
+    "section": "Worked examples",
+    "wording": "| Below the minimum | The annual income tax prepayments are below EUR 400, or a payment date is below EUR 100 | No income tax prepayments are set: both minimums must be met (§ 37(5)). |",
+    "anchors": [
+      "MIN"
+    ],
+    "kind": "Preserved qualitative case",
+    "id": 95,
+    "prior_wording": "| Below the minimum | The annual income tax prepayments are below EUR 400, or a payment date is below EUR 100 | No income tax prepayments are set: both minimums must be met (§ 37(5)). |",
+    "source_quote_ids": [
+      "OLD.MIN"
+    ]
+  },
+  {
+    "LF": 153,
+    "section": "Worked examples",
+    "wording": "| Late Q2 transfer | Due 10 June 2026; the tax office is credited on 15 July 2026 | Two started months, beyond the three-day grace. The surcharge is 2 × 1% × the unpaid tax rounded down to EUR 50 (§ 240 AO). |",
+    "anchors": [
+      "LATE",
+      "GRACE"
+    ],
+    "kind": "Preserved qualitative calendar-date case; June10→July15 has two started months",
+    "id": 96,
+    "prior_wording": "| Late Q2 transfer | Due 10 June 2026; the tax office is credited on 15 July 2026 | Two started months, beyond the three-day grace. The surcharge is 2 × 1% × the unpaid tax rounded down to EUR 50 (§ 240 AO). |",
+    "source_quote_ids": [
+      "OLD.LATE",
+      "OLD.GRACE"
+    ]
+  },
+  {
+    "LF": 154,
+    "section": "Worked examples",
+    "wording": "| Solidarity exemption | Single filer; the annual prepayment base does not exceed EUR 20,350; no assessed § 32d(3)/(4) flat-rate tax | No solidarity surcharge on that base (§ 3(3) SolzG). |",
+    "anchors": [
+      "SOLI_LIMIT"
+    ],
+    "kind": "Preserved qualitative case; assessed flat-rate-tax exclusion explicit",
+    "id": 97,
+    "prior_wording": "| Solidarity exemption | Single filer; the annual prepayment base does not exceed EUR 20,350; no assessed § 32d(3)/(4) flat-rate tax | No solidarity surcharge on that base (§ 3(3) SolzG). |",
+    "source_quote_ids": [
+      "OLD.SOLI_LIMIT"
+    ]
+  },
+  {
+    "LF": 155,
+    "section": "Worked examples",
+    "wording": "| Bank line checked to its notice | `10.06.2026 ; LASTSCHRIFT FINANZAMT MUENCHEN ; DEBIT ; ESt-VZ Q2/2026 ; amount ; EUR`, with the reference/amount confirmed against the income tax notice | Classify this stipulated payment as Q2 income tax prepayment and a private withdrawal, not a deductible business expense (§ 12 number 3 EStG). A payee or date alone is not proof. Church tax has its separate § 10(1) number 4 treatment. |",
+    "anchors": [
+      "NOT_EXPENSE",
+      "CHURCH_SPECIAL",
+      "NOTICE"
+    ],
+    "kind": "Stipulated notice-confirmed qualitative case, not evidence of a universal bank-reference convention",
+    "id": 98,
+    "prior_wording": "| Bank line checked to its notice | `10.06.2026 ; LASTSCHRIFT FINANZAMT MUENCHEN ; DEBIT ; ESt-VZ Q2/2026 ; amount ; EUR`, with the reference/amount confirmed against the income tax notice | Classify this stipulated payment as Q2 income tax prepayment and a private withdrawal, not a deductible business expense (§ 12 number 3 EStG). A payee or date alone is not proof. Church tax has its separate § 10(1) number 4 treatment. |",
+    "source_quote_ids": [
+      "OLD.NOT_EXPENSE",
+      "OLD.CHURCH_SPECIAL",
+      "OLD.NOTICE"
+    ]
+  },
+  {
+    "LF": 159,
+    "section": "Ask the client first",
+    "wording": "1. Do you have a current Vorauszahlungsbescheid? Send it and the last assessment notice.",
+    "anchors": [],
+    "kind": "Decision-changing intake; no additional tax rule",
+    "id": 99,
+    "prior_wording": "1. Do you have a current Vorauszahlungsbescheid? Send it and the last assessment notice.",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 160,
+    "section": "Ask the client first",
+    "wording": "2. What do you expect this year's profit or income to be, compared with the year the notice is based on? Any one-off gain in that year?",
+    "anchors": [],
+    "kind": "Decision-changing intake; no additional tax rule",
+    "id": 100,
+    "prior_wording": "2. What do you expect this year's profit or income to be, compared with the year the notice is based on? Any one-off gain in that year?",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 161,
+    "section": "Ask the client first",
+    "wording": "3. Are you a church member, and in which federal state?",
+    "anchors": [],
+    "kind": "Decision-changing intake; no additional tax rule",
+    "id": 101,
+    "prior_wording": "3. Are you a church member, and in which federal state?",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 162,
+    "section": "Ask the client first",
+    "wording": "4. Are you assessed jointly with a spouse or partner?",
+    "anchors": [],
+    "kind": "Decision-changing intake; no additional tax rule",
+    "id": 102,
+    "prior_wording": "4. Are you assessed jointly with a spouse or partner?",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 163,
+    "section": "Ask the client first",
+    "wording": "5. Did you start, stop or move a business, or move into or out of Germany, this year or last?",
+    "anchors": [],
+    "kind": "Decision-changing intake; no additional tax rule",
+    "id": 103,
+    "prior_wording": "5. Did you start, stop or move a business, or move into or out of Germany, this year or last?",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 164,
+    "section": "Ask the client first",
+    "wording": "6. Do you pay by SEPA direct debit or by transfer?",
+    "anchors": [],
+    "kind": "Decision-changing intake; no additional tax rule",
+    "id": 104,
+    "prior_wording": "6. Do you pay by SEPA direct debit or by transfer?",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 168,
+    "section": "Sources",
+    "wording": "| Source | URL | Read on |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 105,
+    "prior_wording": "| Source | URL | Read on |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 169,
+    "section": "Sources",
+    "wording": "|---|---|---|",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 106,
+    "prior_wording": "|---|---|---|",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 170,
+    "section": "Sources",
+    "wording": "| EStG § 37 (prepayments) | https://www.gesetze-im-internet.de/estg/__37.html | 2026-10-24 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 107,
+    "prior_wording": "| EStG § 37 (prepayments) | https://www.gesetze-im-internet.de/estg/__37.html | 2026-10-24 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 171,
+    "section": "Sources",
+    "wording": "| EStG § 36 (crediting, balance, refund) | https://www.gesetze-im-internet.de/estg/__36.html | 2026-10-27 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 108,
+    "prior_wording": "| EStG § 36 (crediting, balance, refund) | https://www.gesetze-im-internet.de/estg/__36.html | 2026-10-27 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 172,
+    "section": "Sources",
+    "wording": "| EStG § 51a (surcharge taxes, church tax prepayments) | https://www.gesetze-im-internet.de/estg/__51a.html | 2026-10-24 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 109,
+    "prior_wording": "| EStG § 51a (surcharge taxes, church tax prepayments) | https://www.gesetze-im-internet.de/estg/__51a.html | 2026-10-24 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 173,
+    "section": "Sources",
+    "wording": "| EStG § 52(35d) (2019 to 2024 periods) | https://www.gesetze-im-internet.de/estg/__52.html | 2026-10-24 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 110,
+    "prior_wording": "| EStG § 52(35d) (2019 to 2024 periods) | https://www.gesetze-im-internet.de/estg/__52.html | 2026-10-24 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 174,
+    "section": "Sources",
+    "wording": "| SolzG § 3 (base and limits) | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-10-24 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 111,
+    "prior_wording": "| SolzG § 3 (base and limits) | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-10-24 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 175,
+    "section": "Sources",
+    "wording": "| SolzG § 4 (rate and mitigation) | https://www.gesetze-im-internet.de/solzg_1995/__4.html | 2026-10-24 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 112,
+    "prior_wording": "| SolzG § 4 (rate and mitigation) | https://www.gesetze-im-internet.de/solzg_1995/__4.html | 2026-10-24 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 176,
+    "section": "Sources",
+    "wording": "| SolzG § 6(27) (2026 limits apply) | https://www.gesetze-im-internet.de/solzg_1995/__6.html | 2026-10-26 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 113,
+    "prior_wording": "| SolzG § 6(27) (2026 limits apply) | https://www.gesetze-im-internet.de/solzg_1995/__6.html | 2026-10-26 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 177,
+    "section": "Sources",
+    "wording": "| EStG § 10(1) number 4 (church tax as a special expense) | https://www.gesetze-im-internet.de/estg/__10.html | 2026-10-26 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 114,
+    "prior_wording": "| EStG § 10(1) number 4 (church tax as a special expense) | https://www.gesetze-im-internet.de/estg/__10.html | 2026-10-26 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 178,
+    "section": "Sources",
+    "wording": "| EStG § 12 number 3 (taxes on income not deductible) | https://www.gesetze-im-internet.de/estg/__12.html | 2026-10-27 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 115,
+    "prior_wording": "| EStG § 12 number 3 (taxes on income not deductible) | https://www.gesetze-im-internet.de/estg/__12.html | 2026-10-27 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 179,
+    "section": "Sources",
+    "wording": "| AO § 3(4) (late payment surcharges and interest are Nebenleistungen) | https://www.gesetze-im-internet.de/ao_1977/__3.html | 2026-10-27 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 116,
+    "prior_wording": "| AO § 3(4) (late payment surcharges and interest are Nebenleistungen) | https://www.gesetze-im-internet.de/ao_1977/__3.html | 2026-10-27 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 180,
+    "section": "Sources",
+    "wording": "| AO § 108 (weekends, holidays) | https://www.gesetze-im-internet.de/ao_1977/__108.html | 2026-10-24 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 117,
+    "prior_wording": "| AO § 108 (weekends, holidays) | https://www.gesetze-im-internet.de/ao_1977/__108.html | 2026-10-24 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 181,
+    "section": "Sources",
+    "wording": "| AO § 124 (notice stays in force until replaced) | https://www.gesetze-im-internet.de/ao_1977/__124.html | 2026-10-27 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 118,
+    "prior_wording": "| AO § 124 (notice stays in force until replaced) | https://www.gesetze-im-internet.de/ao_1977/__124.html | 2026-10-27 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 182,
+    "section": "Sources",
+    "wording": "| AO § 138 (registration questionnaire) | https://www.gesetze-im-internet.de/ao_1977/__138.html | 2026-10-24 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 119,
+    "prior_wording": "| AO § 138 (registration questionnaire) | https://www.gesetze-im-internet.de/ao_1977/__138.html | 2026-10-24 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 183,
+    "section": "Sources",
+    "wording": "| AO § 164 (prepayment notices subject to review) | https://www.gesetze-im-internet.de/ao_1977/__164.html | 2026-10-27 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 120,
+    "prior_wording": "| AO § 164 (prepayment notices subject to review) | https://www.gesetze-im-internet.de/ao_1977/__164.html | 2026-10-27 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 184,
+    "section": "Sources",
+    "wording": "| AO § 222 (deferral) | https://www.gesetze-im-internet.de/ao_1977/__222.html | 2026-10-27 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 121,
+    "prior_wording": "| AO § 222 (deferral) | https://www.gesetze-im-internet.de/ao_1977/__222.html | 2026-10-27 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 185,
+    "section": "Sources",
+    "wording": "| AO § 224 (day of payment) | https://www.gesetze-im-internet.de/ao_1977/__224.html | 2026-10-24 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 122,
+    "prior_wording": "| AO § 224 (day of payment) | https://www.gesetze-im-internet.de/ao_1977/__224.html | 2026-10-24 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 186,
+    "section": "Sources",
+    "wording": "| AO § 233a (interest after assessment) | https://www.gesetze-im-internet.de/ao_1977/__233a.html | 2026-10-24 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 123,
+    "prior_wording": "| AO § 233a (interest after assessment) | https://www.gesetze-im-internet.de/ao_1977/__233a.html | 2026-10-24 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 187,
+    "section": "Sources",
+    "wording": "| AO § 234 (deferral interest) | https://www.gesetze-im-internet.de/ao_1977/__234.html | 2026-10-27 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 124,
+    "prior_wording": "| AO § 234 (deferral interest) | https://www.gesetze-im-internet.de/ao_1977/__234.html | 2026-10-27 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 188,
+    "section": "Sources",
+    "wording": "| AO § 238 (interest rate) | https://www.gesetze-im-internet.de/ao_1977/__238.html | 2026-10-24 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 125,
+    "prior_wording": "| AO § 238 (interest rate) | https://www.gesetze-im-internet.de/ao_1977/__238.html | 2026-10-24 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 189,
+    "section": "Sources",
+    "wording": "| AO § 240 (late payment surcharge) | https://www.gesetze-im-internet.de/ao_1977/__240.html | 2026-10-24 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 126,
+    "prior_wording": "| AO § 240 (late payment surcharge) | https://www.gesetze-im-internet.de/ao_1977/__240.html | 2026-10-24 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 190,
+    "section": "Sources",
+    "wording": "| AO § 370 (tax evasion) | https://www.gesetze-im-internet.de/ao_1977/__370.html | 2026-10-27 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 127,
+    "prior_wording": "| AO § 370 (tax evasion) | https://www.gesetze-im-internet.de/ao_1977/__370.html | 2026-10-27 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 191,
+    "section": "Sources",
+    "wording": "| EGAO Art. 97 § 36 (2019 to 2024 interest periods) | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-24 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 128,
+    "prior_wording": "| EGAO Art. 97 § 36 (2019 to 2024 interest periods) | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-24 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 192,
+    "section": "Sources",
+    "wording": "| EGAO Art. 97 § 36(3), numbers 5(d) and 7(d): distinguish 2024 late-filing and interest periods; selected text reread | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-29 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 129,
+    "prior_wording": "| EGAO Art. 97 § 36(3), numbers 5(d) and 7(d): distinguish 2024 late-filing and interest periods; selected text reread | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-29 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 193,
+    "section": "Sources",
+    "wording": "| Finance ministry, \"Steuern von A bis Z\" (church tax 8% or 9%) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf | 2026-10-24 |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 130,
+    "prior_wording": "| Finance ministry, \"Steuern von A bis Z\" (church tax 8% or 9%) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf | 2026-10-24 |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 194,
+    "section": "Sources",
+    "wording": "| Mein ELSTER, \"Antrag auf Anpassung von Vorauszahlungen\" | https://www.elster.de/eportal/formulare-leistungen/alleformulare/eingvorauszlg | 2026-10-27 (named from the earlier version; page not re-read) |",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 131,
+    "prior_wording": "| Mein ELSTER, \"Antrag auf Anpassung von Vorauszahlungen\" | https://www.elster.de/eportal/formulare-leistungen/alleformulare/eingvorauszlg | 2026-10-27 (named from the earlier version; page not re-read) |",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 196,
+    "section": "Sources",
+    "wording": "Not yet confirmed: how the solidarity surcharge limit is applied to a notice issued part way through a year; church tax rates per state for 2026 (the booklet is the 2025 edition); the old version's bank-statement pattern tables (Finanzamt debit references, timing windows, telling ESt from VAT, wage tax and trade tax debits) are working conventions with no official source and were not carried over as rules; the federal founders' portal advice on first-year prepayments was not re-read.",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 132,
+    "prior_wording": "Not yet confirmed: how the solidarity surcharge limit is applied to a notice issued part way through a year; church tax rates per state for 2026 (the booklet is the 2025 edition); the old version's bank-statement pattern tables (Finanzamt debit references, timing windows, telling ESt from VAT, wage tax and trade tax debits) are working conventions with no official source and were not carried over as rules; the federal founders' portal advice on first-year prepayments was not re-read.",
+    "source_quote_ids": []
+  },
+  {
+    "LF": 198,
+    "section": "Sources",
+    "wording": "> Contributed by Michael Cutajar.",
+    "anchors": [],
+    "kind": "Source provenance or precise Not-yet-confirmed boundary, not a supplied additional entitlement",
+    "id": 133,
+    "prior_wording": "> Contributed by Michael Cutajar.",
+    "source_quote_ids": []
+  }
+]

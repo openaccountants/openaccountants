@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "de-payroll-benefits",
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-payroll-benefits.md",
+    "Guide_sha256": "5cfe787fc72884808d51928252fb2a8a42c3442a50da315c846fffc3ea2f24eb",
+    "bytes": 45831,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R78-R87-benefits-writer-successor-2026-10-29/ledgers/de-payroll-benefits.md",
+    "ledger_sha256": "b8248d2ab2ca1824382ef665520998565775c5f1c77d7ecaa0e057787f59c0ec",
+    "rows": 91,
+    "prior_rows": 90,
+    "old_topics": 73,
+    "prior_ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/de-payroll-benefits.md",
+    "prior_ledger_sha256": "aa9f0b91d7357436b2a877fe83cd8897f1b38d6341cf53553994eceb1736f0f2"
+  }
+]

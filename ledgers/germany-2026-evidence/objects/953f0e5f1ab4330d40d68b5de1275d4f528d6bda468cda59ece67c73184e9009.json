@@ -1,0 +1,5729 @@
+[
+  {
+    "id": "001",
+    "prior_row_id": 1,
+    "prior_native_LF": [
+      17,
+      17
+    ],
+    "native_LF": [
+      17,
+      17
+    ],
+    "section": "Tax planning for the self-employed in Germany (Steueroptimierung)",
+    "wording": "The statutory rules behind the usual ways a self-employed person in Germany lowers income tax, trade tax, VAT and social contributions: for each idea the rule, its conditions, its limit and what stops it. This Guide never computes a saving and does not rank options. Figures are for tax year 2026, from the federal law pages, the ministry instructions for the 2026 EÜR form (ministry letter of 1 September 2026) and 2026 pension insurer pages. One source is dated another year: the ministry booklet \"Steuern von A bis Z\" is the 2025 edition, used only for the marginal income tax rates, the church tax rates and the lowest trade tax multiplier, because the statute prints those as factors, not at all, or already in its 2027 version. Rates set for later years are marked as not for 2026.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "002",
+    "prior_row_id": 2,
+    "prior_native_LF": [
+      21,
+      21
+    ],
+    "native_LF": [
+      21,
+      21
+    ],
+    "section": "Germany Tax Optimization: Self-Employed Guide",
+    "wording": "Read the conditions before the benefit. Several rules only move tax to a later year: the investment deduction is added back when the asset is bought, faster depreciation leaves less for later years, and retained profit is taxed again when withdrawn.",
+    "source_quote_ids": [
+      "OPT.IAB",
+      "OPT.POOL",
+      "OPT.RETAIN"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "003",
+    "prior_row_id": 3,
+    "prior_native_LF": [
+      25,
+      25
+    ],
+    "native_LF": [
+      25,
+      25
+    ],
+    "section": "Section 1: Quick Reference",
+    "wording": "**Quick Reference**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "004",
+    "prior_row_id": 4,
+    "prior_native_LF": [
+      27,
+      27
+    ],
+    "native_LF": [
+      27,
+      27
+    ],
+    "section": "Section 1: Quick Reference",
+    "wording": "| Field | Value |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "005",
+    "prior_row_id": 5,
+    "prior_native_LF": [
+      29,
+      29
+    ],
+    "native_LF": [
+      29,
+      29
+    ],
+    "section": "Section 1: Quick Reference",
+    "wording": "| Who this covers | Traders, liberal professions (§ 18 EStG), partners, owner-managers of a small GmbH |",
+    "source_quote_ids": [
+      "OPT.PROF",
+      "OPT.TRADE",
+      "OPT.KStG1-1"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "006",
+    "prior_row_id": 6,
+    "prior_native_LF": [
+      30,
+      30
+    ],
+    "native_LF": [
+      30,
+      30
+    ],
+    "section": "Section 1: Quick Reference",
+    "wording": "| Key legislation | EStG § 4, § 6, § 7, § 7g, § 9, § 10, § 10d, § 34a, § 35; KStG § 1a, § 23; GewStG § 11, § 16; UStG § 15, § 19, § 20; AO § 42 |",
+    "source_quote_ids": [
+      "OPT.BUSCOST",
+      "OPT.K1a",
+      "OPT.CREDIT"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "007",
+    "prior_row_id": 7,
+    "prior_native_LF": [
+      31,
+      31
+    ],
+    "native_LF": [
+      31,
+      31
+    ],
+    "section": "Section 1: Quick Reference",
+    "wording": "| Anti-abuse rule | § 42 AO disregards an inappropriate arrangement giving a tax advantage the law does not provide for, unless non-tax reasons that matter overall are proven |",
+    "source_quote_ids": [
+      "OPT.ABUSE"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "008",
+    "prior_row_id": 8,
+    "prior_native_LF": [
+      32,
+      32
+    ],
+    "native_LF": [
+      32,
+      32
+    ],
+    "section": "Section 1: Quick Reference",
+    "wording": "| Currency, tax year | EUR; the calendar year (§ 2(7) EStG) |",
+    "source_quote_ids": [
+      "OPT.ANNUAL"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "009",
+    "prior_row_id": 9,
+    "prior_native_LF": [
+      33,
+      33
+    ],
+    "native_LF": [
+      33,
+      33
+    ],
+    "section": "Section 1: Quick Reference",
+    "wording": "| Filing deadline | For 2026: nominal 31 July 2027 is Saturday, so the ordinary deadline is Monday 2 August 2027 under § 108(3) AO, subject to any applicable local public holiday; with an adviser, end of February 2028, which the tax office can shorten (§ 149 AO) |",
+    "source_quote_ids": [
+      "OPT.AO149-2",
+      "OPT.AO149-3",
+      "OPT.AO149-4",
+      "OPT.AO108",
+      "R97-108.AO149-2",
+      "R97-108.AO108"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "010",
+    "prior_row_id": 10,
+    "prior_native_LF": [
+      35,
+      35
+    ],
+    "native_LF": [
+      35,
+      35
+    ],
+    "section": "Section 1: Quick Reference",
+    "wording": "Pages: https://www.gesetze-im-internet.de/ao_1977/__42.html and https://www.gesetze-im-internet.de/ao_1977/__149.html",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "011",
+    "prior_row_id": 11,
+    "prior_native_LF": [
+      39,
+      39
+    ],
+    "native_LF": [
+      39,
+      39
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "The tariff is a formula (§ 32a(1) EStG): the statute prints zone boundaries for a single assessment, the flat zones as the factors 0,42 and 0,45, and no percentage for the progressive zones.",
+    "source_quote_ids": [
+      "OPT.TARIFF"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "012",
+    "prior_row_id": 12,
+    "prior_native_LF": [
+      41,
+      41
+    ],
+    "native_LF": [
+      41,
+      41
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "**Income tax tariff 2026: zone boundaries**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "013",
+    "prior_row_id": 13,
+    "prior_native_LF": [
+      43,
+      43
+    ],
+    "native_LF": [
+      43,
+      43
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Zone | Taxable income, single assessment | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "014",
+    "prior_row_id": 14,
+    "prior_native_LF": [
+      45,
+      45
+    ],
+    "native_LF": [
+      45,
+      45
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/estg/__32a.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "015",
+    "prior_row_id": 15,
+    "prior_native_LF": [
+      46,
+      46
+    ],
+    "native_LF": [
+      46,
+      46
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Basic allowance, no tax | up to EUR 12,348 | \"bis 12 348 Euro\" |",
+    "source_quote_ids": [
+      "OPT.TARIFF"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "016",
+    "prior_row_id": 16,
+    "prior_native_LF": [
+      47,
+      47
+    ],
+    "native_LF": [
+      47,
+      47
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| First progressive zone | EUR 12,349 to EUR 17,799 | \"von 12 349 Euro bis 17 799 Euro\" |",
+    "source_quote_ids": [
+      "OPT.TARIFF"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "017",
+    "prior_row_id": 17,
+    "prior_native_LF": [
+      48,
+      48
+    ],
+    "native_LF": [
+      48,
+      48
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Second progressive zone | EUR 17,800 to EUR 69,878 | \"von 17 800 Euro bis 69 878 Euro\" |",
+    "source_quote_ids": [
+      "OPT.TARIFF"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "018",
+    "prior_row_id": 18,
+    "prior_native_LF": [
+      49,
+      49
+    ],
+    "native_LF": [
+      49,
+      49
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| First flat zone, factor 0,42 | EUR 69,879 to EUR 277,825 | \"von 69 879 Euro bis 277 825 Euro\" |",
+    "source_quote_ids": [
+      "OPT.TARIFF"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "019",
+    "prior_row_id": 19,
+    "prior_native_LF": [
+      50,
+      50
+    ],
+    "native_LF": [
+      50,
+      50
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Highest zone, factor 0,45 | from EUR 277,826 | \"von 277 826 Euro an\" |",
+    "source_quote_ids": [
+      "OPT.TARIFF"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "020",
+    "prior_row_id": 20,
+    "prior_native_LF": [
+      52,
+      52
+    ],
+    "native_LF": [
+      52,
+      52
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "**Marginal rates, church tax, lowest trade tax multiplier (ministry booklet, 2025 edition)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "021",
+    "prior_row_id": 21,
+    "prior_native_LF": [
+      54,
+      54
+    ],
+    "native_LF": [
+      54,
+      54
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "022",
+    "prior_row_id": 22,
+    "prior_native_LF": [
+      56,
+      56
+    ],
+    "native_LF": [
+      56,
+      56
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "023",
+    "prior_row_id": 23,
+    "prior_native_LF": [
+      57,
+      57
+    ],
+    "native_LF": [
+      57,
+      57
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Lowest marginal rate | 14% | \"Zonen von 14 Pro- zent\" |",
+    "source_quote_ids": [
+      "OPT.RATESBOOK"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "024",
+    "prior_row_id": 24,
+    "prior_native_LF": [
+      58,
+      58
+    ],
+    "native_LF": [
+      58,
+      58
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Top marginal rate, first flat zone | 42% | \"auf 42 Prozent (Spitzensteuersatz)\" |",
+    "source_quote_ids": [
+      "OPT.RATESBOOK"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "025",
+    "prior_row_id": 25,
+    "prior_native_LF": [
+      59,
+      59
+    ],
+    "native_LF": [
+      59,
+      59
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Highest marginal rate | 45% | \"auf dann 45 Prozent (Reichensteuer)\" |",
+    "source_quote_ids": [
+      "OPT.RATESBOOK"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "026",
+    "prior_row_id": 26,
+    "prior_native_LF": [
+      60,
+      60
+    ],
+    "native_LF": [
+      60,
+      60
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Church tax for members, on the tax | 8% or 9% | \"8 oder 9 Prozent\" |",
+    "source_quote_ids": [
+      "OPT.CHURCHRATE"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "027",
+    "prior_row_id": 27,
+    "prior_native_LF": [
+      61,
+      61
+    ],
+    "native_LF": [
+      61,
+      61
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Lowest trade tax multiplier, the 2026 rule | 200% | \"mindestens 200 Prozent\" |",
+    "source_quote_ids": [
+      "OPT.BG197a"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "028",
+    "prior_row_id": 28,
+    "prior_native_LF": [
+      63,
+      63
+    ],
+    "native_LF": [
+      63,
+      63
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "Rates on the next euro, not on all income. The booklet's zone boundaries are the 2025 ones: use the statute table.",
+    "source_quote_ids": [
+      "OPT.RATESBOOK",
+      "OPT.TARIFF"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "029",
+    "prior_row_id": 29,
+    "prior_native_LF": [
+      65,
+      65
+    ],
+    "native_LF": [
+      65,
+      65
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "**Solidaritätszuschlag: the rate**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "030",
+    "prior_row_id": 30,
+    "prior_native_LF": [
+      67,
+      67
+    ],
+    "native_LF": [
+      67,
+      67
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "031",
+    "prior_row_id": 31,
+    "prior_native_LF": [
+      69,
+      69
+    ],
+    "native_LF": [
+      69,
+      69
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/solzg_1995/__4.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "032",
+    "prior_row_id": 32,
+    "prior_native_LF": [
+      70,
+      70
+    ],
+    "native_LF": [
+      70,
+      70
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Surcharge on the tax, not on income | 5.5% | \"beträgt 5,5 Prozent\" |",
+    "source_quote_ids": [
+      "OPT.SoliRate"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "033",
+    "prior_row_id": 33,
+    "prior_native_LF": [
+      72,
+      72
+    ],
+    "native_LF": [
+      72,
+      72
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "**Solidaritätszuschlag: exemption limits 2026**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "034",
+    "prior_row_id": 34,
+    "prior_native_LF": [
+      74,
+      74
+    ],
+    "native_LF": [
+      74,
+      74
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "035",
+    "prior_row_id": 35,
+    "prior_native_LF": [
+      76,
+      76
+    ],
+    "native_LF": [
+      76,
+      76
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/solzg_1995/__3.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "036",
+    "prior_row_id": 36,
+    "prior_native_LF": [
+      77,
+      77
+    ],
+    "native_LF": [
+      77,
+      77
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Single assessment: charged only above | EUR 20,350 | \"anderen Fällen 20 350 Euro\" |",
+    "source_quote_ids": [
+      "OPT.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "037",
+    "prior_row_id": 37,
+    "prior_native_LF": [
+      78,
+      78
+    ],
+    "native_LF": [
+      78,
+      78
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "| Joint assessment and other splitting cases | EUR 40,700 | \"Einkommensteuergesetzes 40 700 Euro\" |",
+    "source_quote_ids": [
+      "OPT.SOLILIMIT"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "038",
+    "prior_row_id": 38,
+    "prior_native_LF": [
+      80,
+      80
+    ],
+    "native_LF": [
+      80,
+      80
+    ],
+    "section": "Income Tax Rates 2026",
+    "wording": "The limit is measured on the assessed income tax and has a mitigation zone above it: not an allowance. § 3(3) SolzG names persons liable to income tax, so a GmbH has no exemption limit. No official page prints a combined rate of income tax, surcharge and church tax, so this Guide states none.",
+    "source_quote_ids": [
+      "OPT.SOLILIMIT",
+      "OPT.SoliRate",
+      "OPT.SoliBase"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "039",
+    "prior_row_id": 39,
+    "prior_native_LF": [
+      86,
+      86
+    ],
+    "native_LF": [
+      86,
+      86
+    ],
+    "section": "Ehegattensplitting (Spousal Income Splitting)",
+    "wording": "**Ehegattensplitting table**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "040",
+    "prior_row_id": 40,
+    "prior_native_LF": [
+      88,
+      88
+    ],
+    "native_LF": [
+      88,
+      88
+    ],
+    "section": "Ehegattensplitting (Spousal Income Splitting)",
+    "wording": "| Strategy | Rule and what limits it |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "041",
+    "prior_row_id": 41,
+    "prior_native_LF": [
+      90,
+      90
+    ],
+    "native_LF": [
+      90,
+      90
+    ],
+    "section": "Ehegattensplitting (Spousal Income Splitting)",
+    "wording": "| Joint assessment, § 26, § 26b, § 32a(5) EStG | Both fully liable to German income tax and not living permanently apart. Tax is twice the tax on half the joint income. No saving is printed anywhere: work the formula both ways |",
+    "source_quote_ids": [
+      "OPT.COUPLE",
+      "OPT.JOINT",
+      "OPT.SPLIT"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "042",
+    "prior_row_id": 42,
+    "prior_native_LF": [
+      91,
+      91
+    ],
+    "native_LF": [
+      91,
+      91
+    ],
+    "section": "Ehegattensplitting (Spousal Income Splitting)",
+    "wording": "| Tax classes, § 38b EStG | Only for wage tax on a salary; they set withholding, not the year's tax. No tax class on self-employed income |",
+    "source_quote_ids": [
+      "OPT.EMP",
+      "OPT.TARIFF"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "043",
+    "prior_row_id": 43,
+    "prior_native_LF": [
+      95,
+      95
+    ],
+    "native_LF": [
+      95,
+      95
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "No official page prints a combined rate for either form, a profit level for incorporating, or a ranking. Do not add the parts below into one rate.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "044",
+    "prior_row_id": 44,
+    "prior_native_LF": [
+      97,
+      97
+    ],
+    "native_LF": [
+      97,
+      97
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "**Sole Proprietorship vs GmbH table**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "045",
+    "prior_row_id": 45,
+    "prior_native_LF": [
+      99,
+      99
+    ],
+    "native_LF": [
+      99,
+      99
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Factor | Einzelunternehmen or partnership | GmbH |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "046",
+    "prior_row_id": 46,
+    "prior_native_LF": [
+      101,
+      101
+    ],
+    "native_LF": [
+      101,
+      101
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Who is taxed | The owner, at the tariff, when the profit arises | The company (§ 1(1) no. 1 KStG) |",
+    "source_quote_ids": [
+      "OPT.BASE",
+      "OPT.KStG1-1"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "047",
+    "prior_row_id": 47,
+    "prior_native_LF": [
+      102,
+      102
+    ],
+    "native_LF": [
+      102,
+      102
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Trade tax | Only a trade; § 18 EStG professions are not. Allowance below, § 35 EStG credit | Always (§ 2(2) GewStG); no allowance, no credit |",
+    "source_quote_ids": [
+      "OPT.PROF",
+      "OPT.TRADE",
+      "OPT.G2",
+      "OPT.G11",
+      "OPT.CREDIT"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "048",
+    "prior_row_id": 48,
+    "prior_native_LF": [
+      103,
+      103
+    ],
+    "native_LF": [
+      103,
+      103
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| The owner's pay | A withdrawal, not an expense | A salary is an expense; a hidden profit distribution is not (§ 8(3) KStG) |",
+    "source_quote_ids": [
+      "OPT.PERSONAL",
+      "OPT.BUSCOST",
+      "OPT.KStG8-3"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "049",
+    "prior_row_id": 49,
+    "prior_native_LF": [
+      104,
+      104
+    ],
+    "native_LF": [
+      104,
+      104
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Profit taken out | No second tax | A dividend: flat tax, or the partial-income method |",
+    "source_quote_ids": [
+      "OPT.DIVRATE",
+      "OPT.DIVOPTION",
+      "OPT.DIV40"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "050",
+    "prior_row_id": 50,
+    "prior_native_LF": [
+      105,
+      105
+    ],
+    "native_LF": [
+      105,
+      105
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Losses | Against the owner's other income | At company level only (§ 8(1) KStG) |",
+    "source_quote_ids": [
+      "OPT.E10d-1",
+      "OPT.KStG8-1"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "051",
+    "prior_row_id": 51,
+    "prior_native_LF": [
+      106,
+      106
+    ],
+    "native_LF": [
+      106,
+      106
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Accounts, formation | EÜR if no bookkeeping duty: `germany-bookkeeping` | `germany-formation` |",
+    "source_quote_ids": [
+      "OPT.CASH"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "052",
+    "prior_row_id": 52,
+    "prior_native_LF": [
+      108,
+      108
+    ],
+    "native_LF": [
+      108,
+      108
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "**Corporate tax rate (§ 23 KStG)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "053",
+    "prior_row_id": 53,
+    "prior_native_LF": [
+      110,
+      110
+    ],
+    "native_LF": [
+      110,
+      110
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "054",
+    "prior_row_id": 54,
+    "prior_native_LF": [
+      112,
+      112
+    ],
+    "native_LF": [
+      112,
+      112
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/kstg_1977/__23.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "055",
+    "prior_row_id": 55,
+    "prior_native_LF": [
+      113,
+      113
+    ],
+    "native_LF": [
+      113,
+      113
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Tax year 2026; printed for periods up to 2027 | 15% | \"bis 2027 15 Prozent\" |",
+    "source_quote_ids": [
+      "OPT.KStG23-1"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "056",
+    "prior_row_id": 56,
+    "prior_native_LF": [
+      115,
+      115
+    ],
+    "native_LF": [
+      115,
+      115
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "§ 23(1) KStG also prints lower rates for the assessment periods 2028 to 2032. None applies to 2026. Surcharge and trade tax come on top.",
+    "source_quote_ids": [
+      "OPT.KStG23-1",
+      "OPT.SoliRate",
+      "OPT.G2"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "057",
+    "prior_row_id": 57,
+    "prior_native_LF": [
+      117,
+      117
+    ],
+    "native_LF": [
+      117,
+      117
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "**Trade tax: allowance and base rate (§ 11 GewStG)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "058",
+    "prior_row_id": 58,
+    "prior_native_LF": [
+      119,
+      119
+    ],
+    "native_LF": [
+      119,
+      119
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "059",
+    "prior_row_id": 59,
+    "prior_native_LF": [
+      121,
+      121
+    ],
+    "native_LF": [
+      121,
+      121
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/gewstg/__11.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "060",
+    "prior_row_id": 60,
+    "prior_native_LF": [
+      122,
+      122
+    ],
+    "native_LF": [
+      122,
+      122
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Allowance for natural persons and partnerships, per business per year; not a cliff | EUR 24,500 | \"Freibetrag in Höhe von 24 500 Euro\" |",
+    "source_quote_ids": [
+      "OPT.G11"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "061",
+    "prior_row_id": 61,
+    "prior_native_LF": [
+      123,
+      123
+    ],
+    "native_LF": [
+      123,
+      123
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Base rate after the allowance; the municipality's multiplier applies to the result | 3.5% | \"Gewerbeertrag beträgt 3,5 Prozent\" |",
+    "source_quote_ids": [
+      "OPT.G11"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "062",
+    "prior_row_id": 62,
+    "prior_native_LF": [
+      125,
+      125
+    ],
+    "native_LF": [
+      125,
+      125
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "**Trade tax: lowest multiplier from 2027, not for 2026**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "063",
+    "prior_row_id": 63,
+    "prior_native_LF": [
+      127,
+      127
+    ],
+    "native_LF": [
+      127,
+      127
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "064",
+    "prior_row_id": 64,
+    "prior_native_LF": [
+      129,
+      129
+    ],
+    "native_LF": [
+      129,
+      129
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/gewstg/__16.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "065",
+    "prior_row_id": 65,
+    "prior_native_LF": [
+      130,
+      130
+    ],
+    "native_LF": [
+      130,
+      130
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| On the page, but § 36(5b) GewStG starts it in 2027; for 2026 see Section 1 | 280% | \"Er beträgt 280 Prozent\" |",
+    "source_quote_ids": [
+      "OPT.G16",
+      "OPT.G36"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "066",
+    "prior_row_id": 66,
+    "prior_native_LF": [
+      132,
+      132
+    ],
+    "native_LF": [
+      132,
+      132
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "- **Trade tax credit (§ 35 EStG).** Income tax falls by four times the trade tax base amount (\"das Vierfache\"), capped at the trade tax payable and at the income tax on the trade income. Not for a GmbH. https://www.gesetze-im-internet.de/estg/__35.html",
+    "source_quote_ids": [
+      "OPT.CREDIT"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "067",
+    "prior_row_id": 67,
+    "prior_native_LF": [
+      134,
+      134
+    ],
+    "native_LF": [
+      134,
+      134
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "**Retained profit of a sole trader or partner (§ 34a EStG)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "068",
+    "prior_row_id": 68,
+    "prior_native_LF": [
+      136,
+      136
+    ],
+    "native_LF": [
+      136,
+      136
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "069",
+    "prior_row_id": 69,
+    "prior_native_LF": [
+      138,
+      138
+    ],
+    "native_LF": [
+      138,
+      138
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/estg/__34a.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "070",
+    "prior_row_id": 70,
+    "prior_native_LF": [
+      139,
+      139
+    ],
+    "native_LF": [
+      139,
+      139
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| On application, for profit not withdrawn, periods up to 2027; the lower later rates there are not for 2026 | 28.25% | \"28,25 Prozent für Veranlagungszeiträume bis 2027\" |",
+    "source_quote_ids": [
+      "OPT.RETAIN"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "071",
+    "prior_row_id": 71,
+    "prior_native_LF": [
+      140,
+      140
+    ],
+    "native_LF": [
+      140,
+      140
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Tax on the follow-up amount when it is withdrawn later | 25% | \"Nachversteuerungsbetrag beträgt 25 Prozent\" |",
+    "source_quote_ids": [
+      "OPT.RETAIN"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "072",
+    "prior_row_id": 72,
+    "prior_native_LF": [
+      141,
+      141
+    ],
+    "native_LF": [
+      141,
+      141
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| A partner may apply only where one of the next two tests is met: the share of the profit is more than this share | 10% | \"wenn sein Anteil am ... Gewinn mehr als 10 Prozent beträgt\" |",
+    "source_quote_ids": [
+      "OPT.RETAIN"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "073",
+    "prior_row_id": 73,
+    "prior_native_LF": [
+      142,
+      142
+    ],
+    "native_LF": [
+      142,
+      142
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Or the share of the profit is above this amount | EUR 10,000 | \"oder 10 000 Euro übersteigt\" |",
+    "source_quote_ids": [
+      "OPT.RETAIN"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "074",
+    "prior_row_id": 74,
+    "prior_native_LF": [
+      144,
+      144
+    ],
+    "native_LF": [
+      144,
+      144
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "- **Conditions.** Balance-sheet profit only, so not for an EÜR business; applied for per business or partner share and per year. Withdrawals above the year's profit plus deposits trigger the follow-up tax: it defers tax, it does not remove it. Not available for profit on which the § 16(4) EStG allowance or the § 34(3) EStG reduced rate is claimed.",
+    "source_quote_ids": [
+      "OPT.RETAIN"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "075",
+    "prior_row_id": 75,
+    "prior_native_LF": [
+      146,
+      146
+    ],
+    "native_LF": [
+      146,
+      146
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "**Dividends: flat tax and the option out (§ 32d EStG)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "076",
+    "prior_row_id": 76,
+    "prior_native_LF": [
+      148,
+      148
+    ],
+    "native_LF": [
+      148,
+      148
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "077",
+    "prior_row_id": 77,
+    "prior_native_LF": [
+      150,
+      150
+    ],
+    "native_LF": [
+      150,
+      150
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/estg/__32d.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "078",
+    "prior_row_id": 78,
+    "prior_native_LF": [
+      151,
+      151
+    ],
+    "native_LF": [
+      151,
+      151
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Flat tax on private investment income | 25% | \"beträgt 25 Prozent\" |",
+    "source_quote_ids": [
+      "OPT.DIVRATE"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "079",
+    "prior_row_id": 79,
+    "prior_native_LF": [
+      152,
+      152
+    ],
+    "native_LF": [
+      152,
+      152
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| On application it does not apply where the shareholder holds at least | 25% | \"mindestens 25 Prozent an der Kapitalgesellschaft\" |",
+    "source_quote_ids": [
+      "OPT.DIVOPTION"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "080",
+    "prior_row_id": 80,
+    "prior_native_LF": [
+      153,
+      153
+    ],
+    "native_LF": [
+      153,
+      153
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Or holds this AND, through professional work for the company, can take significant entrepreneurial influence on its business | 1% | \"zu mindestens 1 Prozent an der Kapitalgesellschaft beteiligt ist und durch eine berufliche Tätigkeit für diese maßgeblichen unternehmerischen Einfluss auf deren wirtschaftliche Tätigkeit nehmen kann\" |",
+    "source_quote_ids": [
+      "OPT.DIVOPTION"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "081",
+    "prior_row_id": 81,
+    "prior_native_LF": [
+      155,
+      155
+    ],
+    "native_LF": [
+      155,
+      155
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "The dividends then go to the tariff under the partial-income method, related costs become deductible in part (§ 3c(2) EStG) and the saver's allowance stops applying. Applied for with the return; it covers four following years and cannot be renewed once withdrawn.",
+    "source_quote_ids": [
+      "OPT.DIVOPTION",
+      "OPT.DIV40",
+      "OPT.DIV40D",
+      "OPT.DIVCOST",
+      "OPT.SAVER"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "082",
+    "prior_row_id": 82,
+    "prior_native_LF": [
+      157,
+      157
+    ],
+    "native_LF": [
+      157,
+      157
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "**Partial-income method: the tax-free share (§ 3 EStG)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "083",
+    "prior_row_id": 83,
+    "prior_native_LF": [
+      159,
+      159
+    ],
+    "native_LF": [
+      159,
+      159
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "084",
+    "prior_row_id": 84,
+    "prior_native_LF": [
+      161,
+      161
+    ],
+    "native_LF": [
+      161,
+      161
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/estg/__3.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "085",
+    "prior_row_id": 85,
+    "prior_native_LF": [
+      162,
+      162
+    ],
+    "native_LF": [
+      162,
+      162
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "| Share of the dividend or sale price that is tax-free | 40% | § 3 no. 40: \"40 Prozent\" |",
+    "source_quote_ids": [
+      "OPT.DIV40",
+      "OPT.DIV40D"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "086",
+    "prior_row_id": 86,
+    "prior_native_LF": [
+      164,
+      164
+    ],
+    "native_LF": [
+      164,
+      164
+    ],
+    "section": "Sole Proprietorship vs GmbH",
+    "wording": "- **§ 1a KStG option.** A commercial or registered civil-law partnership, not a sole trader, may be taxed like a corporation. The initial application is irrevocable and is filed at least one month before the business year. A separate later Rückoption is available under § 1a(4), with its own deemed-conversion consequences. The corporate-tax option ends the EÜR and the § 35 EStG credit. https://www.gesetze-im-internet.de/kstg_1977/__1a.html",
+    "source_quote_ids": [
+      "OPT.K1a",
+      "OPT.RETURNOPTION",
+      "OPT.G2",
+      "OPT.CREDIT",
+      "OPT.CASH"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "087",
+    "prior_row_id": 87,
+    "prior_native_LF": [
+      168,
+      168
+    ],
+    "native_LF": [
+      168,
+      168
+    ],
+    "section": "Employing Family Members (Ehegatten-Arbeitsverhältnis)",
+    "wording": "- Pay for work really done is an expense (§ 4(4) EStG); household costs and maintenance are not (§ 12 EStG). The arm's-length tests (written contract, payment to the family member's own account, duties matching the pay) come from court rulings, not a linkable page: unverified practice. For a spouse or descendant the collecting agency must ask the pension insurer for a status decision (§ 7a SGB IV). Payroll and the Minijob limit: `de-payroll`. https://www.gesetze-im-internet.de/estg/__12.html",
+    "source_quote_ids": [
+      "OPT.BUSCOST",
+      "OPT.PERSONAL",
+      "OPT.STATUS"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "088",
+    "prior_row_id": 88,
+    "prior_native_LF": [
+      172,
+      172
+    ],
+    "native_LF": [
+      172,
+      172
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "The base rule is § 4(4) EStG: expenses caused by the business. § 4(5) EStG limits some and points to § 9 EStG. Gifts, entertainment, the home office room and lifestyle-related costs must be recorded singly and apart, or they are lost entirely (§ 4(7) EStG). For mixed costs only the business share counts.",
+    "source_quote_ids": [
+      "OPT.BUSCOST",
+      "OPT.RECORDS"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "089",
+    "prior_row_id": 89,
+    "prior_native_LF": [
+      174,
+      174
+    ],
+    "native_LF": [
+      174,
+      174
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "**Deductions Most People Miss table**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "090",
+    "prior_row_id": 90,
+    "prior_native_LF": [
+      176,
+      176
+    ],
+    "native_LF": [
+      176,
+      176
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Deduction | Rule, condition and limit |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "091",
+    "prior_row_id": 91,
+    "prior_native_LF": [
+      178,
+      178
+    ],
+    "native_LF": [
+      178,
+      178
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Home working day rate | § 4(5) no. 6c: ordinarily work mainly at home and do not visit an outside first workplace that day. If permanently no other workplace is available, the day rate can also apply on a day worked elsewhere or at the first workplace. No day rate to the extent the specified double-household accommodation deduction is available or a no. 6b room deduction is taken; one cap covers all business/professional activity |",
+    "source_quote_ids": [
+      "OPT.DAY",
+      "R97-108.DAY"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "092",
+    "prior_row_id": 92,
+    "prior_native_LF": [
+      179,
+      179
+    ],
+    "native_LF": [
+      179,
+      179
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Home office room | § 4(5) no. 6b: only where the room is the centre of all activity; else the day rate |",
+    "source_quote_ids": [
+      "OPT.ROOM"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "093",
+    "prior_row_id": 93,
+    "prior_native_LF": [
+      180,
+      180
+    ],
+    "native_LF": [
+      180,
+      180
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Commuting allowance | § 4(5) no. 6 EStG, which applies § 9(1) sentence 3 no. 4 to the owner's trips between home and the business premises: one rate from the first kilometre in 2026, one way, per day at the premises; the EUR 4,500 cap does not apply to the extent the actual own-car or use-provided-car exception applies |",
+    "source_quote_ids": [
+      "OPT.COMMUTE",
+      "OPT.COMMUTEBRIDGE",
+      "R97-108.COMMUTE",
+      "R97-108.COMMUTEBRIDGE"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "094",
+    "prior_row_id": 94,
+    "prior_native_LF": [
+      181,
+      181
+    ],
+    "native_LF": [
+      181,
+      181
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Business trips by car | A PRIVATE car used for the business: the share of the actual costs, or the flat rate per full kilometre below. A car that is a business asset already has its costs as expenses; private use is the § 6(1) no. 4 table in Section 4 |",
+    "source_quote_ids": [
+      "OPT.TRAVEL",
+      "OPT.CAR1",
+      "OPT.CARLOG"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "095",
+    "prior_row_id": 95,
+    "prior_native_LF": [
+      182,
+      182
+    ],
+    "native_LF": [
+      182,
+      182
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Travel expenses | § 9(4a): meal amounts below, in Germany, first three months at one place |",
+    "source_quote_ids": [
+      "OPT.MEALS",
+      "OPT.MEALBRIDGE"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "096",
+    "prior_row_id": 96,
+    "prior_native_LF": [
+      183,
+      183
+    ],
+    "native_LF": [
+      183,
+      183
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Double household | § 9(1) no. 5: accommodation up to the cap below, one trip home a week |",
+    "source_quote_ids": [
+      "OPT.SECONDHOME"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "097",
+    "prior_row_id": 97,
+    "prior_native_LF": [
+      184,
+      184
+    ],
+    "native_LF": [
+      184,
+      184
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Professional development | Courses, books, journals caused by the business; a first degree only after a first training |",
+    "source_quote_ids": [
+      "OPT.BUSCOST",
+      "OPT.TRAINING",
+      "R106.business-training"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound",
+    "source_anchor_qualification": {
+      "OPT.TRAINING": "Definition/employee-companion reference only. Do not import its employment exception into business4(9). Actual business eligibility anchor R106.business-training governs."
+    }
+  },
+  {
+    "id": "098",
+    "prior_row_id": 98,
+    "prior_native_LF": [
+      185,
+      185
+    ],
+    "native_LF": [
+      185,
+      185
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Work equipment | Laptop, desk, chair, phone; write-off speed in Section 4; private use excluded |",
+    "source_quote_ids": [
+      "OPT.BUSCOST",
+      "OPT.E6-2",
+      "OPT.E7-1"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "099",
+    "prior_row_id": 99,
+    "prior_native_LF": [
+      186,
+      186
+    ],
+    "native_LF": [
+      186,
+      186
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Telephone and internet | Business share only; no official page prints an undocumented flat share |",
+    "source_quote_ids": [
+      "OPT.BUSCOST",
+      "OPT.PERSONAL"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "100",
+    "prior_row_id": 100,
+    "prior_native_LF": [
+      187,
+      187
+    ],
+    "native_LF": [
+      187,
+      187
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Dues, insurance, relocation | Kammer dues, business cover, a job-caused move (flat amounts by ministry letter) |",
+    "source_quote_ids": [
+      "OPT.BUSCOST"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "101",
+    "prior_row_id": 101,
+    "prior_native_LF": [
+      188,
+      188
+    ],
+    "native_LF": [
+      188,
+      188
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Gifts to business contacts | § 4(5) no. 1: the limit below per recipient per year, a cliff, not for own staff |",
+    "source_quote_ids": [
+      "OPT.GIFTS"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "102",
+    "prior_row_id": 102,
+    "prior_native_LF": [
+      189,
+      189
+    ],
+    "native_LF": [
+      189,
+      189
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Business entertainment | § 4(5) no. 2: the share below, with place, date, participants and reason recorded |",
+    "source_quote_ids": [
+      "OPT.ENTERTAIN"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "103",
+    "prior_row_id": 103,
+    "prior_native_LF": [
+      190,
+      190
+    ],
+    "native_LF": [
+      190,
+      190
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Car used privately too | § 6(1) no. 4 EStG: the table in Section 4 |",
+    "source_quote_ids": [
+      "OPT.CAR1",
+      "OPT.CARLOG"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "104",
+    "prior_row_id": 104,
+    "prior_native_LF": [
+      191,
+      191
+    ],
+    "native_LF": [
+      191,
+      191
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Private items | Childcare, own training, insurance, donations below; household services: § 35a EStG |",
+    "source_quote_ids": [
+      "OPT.CHILDCARE",
+      "OPT.HEALTH",
+      "OPT.PENSIONELIG",
+      "OPT.EDUCATION",
+      "OPT.DONATIONS",
+      "OPT.HHSERVICE",
+      "OPT.HHCRAFT"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "105",
+    "prior_row_id": 105,
+    "prior_native_LF": [
+      193,
+      193
+    ],
+    "native_LF": [
+      193,
+      193
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "**Limits in § 4 EStG**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "106",
+    "prior_row_id": 106,
+    "prior_native_LF": [
+      195,
+      195
+    ],
+    "native_LF": [
+      195,
+      195
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "107",
+    "prior_row_id": 107,
+    "prior_native_LF": [
+      197,
+      197
+    ],
+    "native_LF": [
+      197,
+      197
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/estg/__4.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "108",
+    "prior_row_id": 108,
+    "prior_native_LF": [
+      198,
+      198
+    ],
+    "native_LF": [
+      198,
+      198
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Home working day rate per calendar day | EUR 6 | \"Betrag von 6 Euro (Tagespauschale)\" |",
+    "source_quote_ids": [
+      "OPT.DAY"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "109",
+    "prior_row_id": 109,
+    "prior_native_LF": [
+      199,
+      199
+    ],
+    "native_LF": [
+      199,
+      199
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Yearly cap on the day rates, per person | EUR 1,260 | \"höchstens 1 260 Euro\" |",
+    "source_quote_ids": [
+      "OPT.DAY"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "110",
+    "prior_row_id": 110,
+    "prior_native_LF": [
+      200,
+      200
+    ],
+    "native_LF": [
+      200,
+      200
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Yearly flat amount for a home office room that is the centre of all business/professional activity, reduced by 1/12 for every full calendar month that condition is absent | EUR 1,260 | \"pauschal ein Betrag von 1 260 Euro\"; § 4(5) no. 6b sentence 4 full-month reduction |",
+    "source_quote_ids": [
+      "OPT.ROOM",
+      "R97-108.ROOM"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "111",
+    "prior_row_id": 111,
+    "prior_native_LF": [
+      201,
+      201
+    ],
+    "native_LF": [
+      201,
+      201
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Gifts: all items to one recipient in the year | EUR 50 | \"insgesamt 50 Euro nicht übersteigen\" |",
+    "source_quote_ids": [
+      "OPT.GIFTS"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "112",
+    "prior_row_id": 112,
+    "prior_native_LF": [
+      202,
+      202
+    ],
+    "native_LF": [
+      202,
+      202
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Entertainment: deductible share of reasonable costs | 70% | \"sie 70 Prozent der Aufwendungen übersteigen\" |",
+    "source_quote_ids": [
+      "OPT.ENTERTAIN"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "113",
+    "prior_row_id": 113,
+    "prior_native_LF": [
+      203,
+      203
+    ],
+    "native_LF": [
+      203,
+      203
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Business car, home-to-premises trips: the non-deductible amount is the positive DIFFERENCE between this share of the German list price per month per distance kilometre and the commuting allowance, not this share itself | 0.03% | \"in Höhe des positiven Unterschiedsbetrags zwischen 0,03 Prozent des inländischen Listenpreises ... und dem sich nach § 9 Absatz 1 Satz 3 Nummer 4 ... ergebenden Betrag\" |",
+    "source_quote_ids": [
+      "OPT.COMMUTEBRIDGE"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "114",
+    "prior_row_id": 114,
+    "prior_native_LF": [
+      205,
+      205
+    ],
+    "native_LF": [
+      205,
+      205
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "**Limits in § 9 EStG**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "115",
+    "prior_row_id": 115,
+    "prior_native_LF": [
+      207,
+      207
+    ],
+    "native_LF": [
+      207,
+      207
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "116",
+    "prior_row_id": 116,
+    "prior_native_LF": [
+      209,
+      209
+    ],
+    "native_LF": [
+      209,
+      209
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/estg/__9.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "117",
+    "prior_row_id": 117,
+    "prior_native_LF": [
+      210,
+      210
+    ],
+    "native_LF": [
+      210,
+      210
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Commuting allowance 2026 per full kilometre one way | EUR 0.38 | \"von 0,38 Euro anzusetzen\" |",
+    "source_quote_ids": [
+      "OPT.COMMUTE",
+      "R97-108.COMMUTE",
+      "R97-108.COMMUTEBRIDGE"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "118",
+    "prior_row_id": 118,
+    "prior_native_LF": [
+      211,
+      211
+    ],
+    "native_LF": [
+      211,
+      211
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Yearly cap where the own-car/use-provided-car exception does not apply | EUR 4,500 | \"höchstens jedoch 4 500 Euro\"; higher amount allowed to the extent an own or use-provided car is used (§ 9(1) no. 4 sentence 2) |",
+    "source_quote_ids": [
+      "OPT.COMMUTE",
+      "R97-108.COMMUTE",
+      "R97-108.COMMUTEBRIDGE"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "119",
+    "prior_row_id": 119,
+    "prior_native_LF": [
+      212,
+      212
+    ],
+    "native_LF": [
+      212,
+      212
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Second household: accommodation per month, in Germany | EUR 1,000 | \"höchstens 1 000 Euro im Monat\" |",
+    "source_quote_ids": [
+      "OPT.SECONDHOME"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "120",
+    "prior_row_id": 120,
+    "prior_native_LF": [
+      213,
+      213
+    ],
+    "native_LF": [
+      213,
+      213
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Meals: calendar day with 24 hours away | EUR 28 | \"28 Euro für jeden Kalendertag\" |",
+    "source_quote_ids": [
+      "OPT.MEALS"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "121",
+    "prior_row_id": 121,
+    "prior_native_LF": [
+      214,
+      214
+    ],
+    "native_LF": [
+      214,
+      214
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Meals: arrival/departure day with a qualifying overnight stay on that, the following or preceding day; separately, a day without an overnight stay only if absence exceeds eight hours | EUR 14 | § 9(4a) sentence 3 nos. 2–3; the three-month limit remains |",
+    "source_quote_ids": [
+      "OPT.MEALS",
+      "R97-108.MEALS"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "122",
+    "prior_row_id": 122,
+    "prior_native_LF": [
+      216,
+      216
+    ],
+    "native_LF": [
+      216,
+      216
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "**Business trips in a private car (ministry instructions for the 2026 EÜR form)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "123",
+    "prior_row_id": 123,
+    "prior_native_LF": [
+      218,
+      218
+    ],
+    "native_LF": [
+      218,
+      218
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "124",
+    "prior_row_id": 124,
+    "prior_native_LF": [
+      220,
+      220
+    ],
+    "native_LF": [
+      220,
+      220
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "125",
+    "prior_row_id": 125,
+    "prior_native_LF": [
+      221,
+      221
+    ],
+    "native_LF": [
+      221,
+      221
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Private car used for the business: flat amount per full kilometre, in place of the share of actual costs | EUR 0.30 | \"pauschal mit 0,30 Euro für jeden vollen km\" |",
+    "source_quote_ids": [
+      "OPT.TRAVEL"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "126",
+    "prior_row_id": 126,
+    "prior_native_LF": [
+      223,
+      223
+    ],
+    "native_LF": [
+      223,
+      223
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "**Private deductions a self-employed person can also claim (§ 10 EStG)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "127",
+    "prior_row_id": 127,
+    "prior_native_LF": [
+      225,
+      225
+    ],
+    "native_LF": [
+      225,
+      225
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "128",
+    "prior_row_id": 128,
+    "prior_native_LF": [
+      227,
+      227
+    ],
+    "native_LF": [
+      227,
+      227
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/estg/__10.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "129",
+    "prior_row_id": 129,
+    "prior_native_LF": [
+      228,
+      228
+    ],
+    "native_LF": [
+      228,
+      228
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Childcare for a child of the household under 14, with an invoice and bank payment | 80% | \"80 Prozent der Aufwendungen\" |",
+    "source_quote_ids": [
+      "OPT.CHILDCARE"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "130",
+    "prior_row_id": 130,
+    "prior_native_LF": [
+      229,
+      229
+    ],
+    "native_LF": [
+      229,
+      229
+    ],
+    "section": "Section 3: Deductions Most People Miss",
+    "wording": "| Childcare: yearly cap, per child | EUR 4,800 | \"höchstens 4 800 Euro je Kind\" |",
+    "source_quote_ids": [
+      "OPT.CHILDCARE"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "131",
+    "prior_row_id": 131,
+    "prior_native_LF": [
+      235,
+      235
+    ],
+    "native_LF": [
+      235,
+      235
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "**IAB table**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "132",
+    "prior_row_id": 132,
+    "prior_native_LF": [
+      237,
+      237
+    ],
+    "native_LF": [
+      237,
+      237
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| Feature | Detail |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "133",
+    "prior_row_id": 133,
+    "prior_native_LF": [
+      239,
+      239
+    ],
+    "native_LF": [
+      239,
+      239
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| What and who | The share below of the expected cost of a future movable fixed asset, deducted before the purchase. The profit before the deduction must be within the profit limit below: a cliff |",
+    "source_quote_ids": [
+      "OPT.IAB"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "134",
+    "prior_row_id": 134,
+    "prior_native_LF": [
+      240,
+      240
+    ],
+    "native_LF": [
+      240,
+      240
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| Limit, timeline | Open deductions stay under the total cap below, per business; the asset must be bought by the end of the third business year after the deduction |",
+    "source_quote_ids": [
+      "OPT.IAB"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "135",
+    "prior_row_id": 135,
+    "prior_native_LF": [
+      241,
+      241
+    ],
+    "native_LF": [
+      241,
+      241
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| Business use | Let, or used only or almost only for the business in a GERMAN permanent establishment, to the end of the business year after the purchase. A car with more private use fails |",
+    "source_quote_ids": [
+      "OPT.IAB"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "136",
+    "prior_row_id": 136,
+    "prior_native_LF": [
+      242,
+      242
+    ],
+    "native_LF": [
+      242,
+      242
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| On purchase | Up to the share below of the ACTUAL cost is added back, never more than the deduction still open, and the same amount may then be taken off the asset's cost, so depreciation runs on less. If the asset costs less than expected, the part left over is reversed under § 7g(3). Brought forward, not extra |",
+    "source_quote_ids": [
+      "OPT.IAB"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "137",
+    "prior_row_id": 137,
+    "prior_native_LF": [
+      243,
+      243
+    ],
+    "native_LF": [
+      243,
+      243
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| If the plan fails | Reversed in the year claimed, even in a final assessment, with interest under § 233a AO from the normal start |",
+    "source_quote_ids": [
+      "OPT.IAB",
+      "OPT.AO233a-2"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "138",
+    "prior_row_id": 138,
+    "prior_native_LF": [
+      244,
+      244
+    ],
+    "native_LF": [
+      244,
+      244
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| Losses | It may create or increase a loss |",
+    "source_quote_ids": [
+      "OPT.IAB"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "139",
+    "prior_row_id": 139,
+    "prior_native_LF": [
+      246,
+      246
+    ],
+    "native_LF": [
+      246,
+      246
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "**Investment deduction and special depreciation (§ 7g EStG)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "140",
+    "prior_row_id": 140,
+    "prior_native_LF": [
+      248,
+      248
+    ],
+    "native_LF": [
+      248,
+      248
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "141",
+    "prior_row_id": 141,
+    "prior_native_LF": [
+      250,
+      250
+    ],
+    "native_LF": [
+      250,
+      250
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/estg/__7g.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "142",
+    "prior_row_id": 142,
+    "prior_native_LF": [
+      251,
+      251
+    ],
+    "native_LF": [
+      251,
+      251
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| Share of the expected cost deductible in advance | 50% | \"bis zu 50 Prozent der voraussichtlichen\" |",
+    "source_quote_ids": [
+      "OPT.IAB"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "143",
+    "prior_row_id": 143,
+    "prior_native_LF": [
+      252,
+      252
+    ],
+    "native_LF": [
+      252,
+      252
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| Profit limit: profit of that year calculated without investment deductions or § 7g(2) add-backs | EUR 200,000 | \"200 000 Euro nicht überschreitet\" |",
+    "source_quote_ids": [
+      "OPT.IAB"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "144",
+    "prior_row_id": 144,
+    "prior_native_LF": [
+      253,
+      253
+    ],
+    "native_LF": [
+      253,
+      253
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| Total cap per business on open deductions; same number, different rule | EUR 200,000 | \"je Betrieb 200 000 Euro nicht übersteigen\" |",
+    "source_quote_ids": [
+      "OPT.IAB"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "145",
+    "prior_row_id": 145,
+    "prior_native_LF": [
+      254,
+      254
+    ],
+    "native_LF": [
+      254,
+      254
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| Special depreciation in total under § 7g(5) | 40% | \"insgesamt 40 Prozent\" |",
+    "source_quote_ids": [
+      "OPT.SPECIALAFA"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "146",
+    "prior_row_id": 146,
+    "prior_native_LF": [
+      256,
+      256
+    ],
+    "native_LF": [
+      256,
+      256
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "**Ministry instructions for the 2026 EÜR form**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "147",
+    "prior_row_id": 147,
+    "prior_native_LF": [
+      258,
+      258
+    ],
+    "native_LF": [
+      258,
+      258
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "148",
+    "prior_row_id": 148,
+    "prior_native_LF": [
+      260,
+      260
+    ],
+    "native_LF": [
+      260,
+      260
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "149",
+    "prior_row_id": 149,
+    "prior_native_LF": [
+      261,
+      261
+    ],
+    "native_LF": [
+      261,
+      261
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| Minimum business use for § 7g EStG, purchase year and the next | 90% | \"fast ausschließlich (mindestens zu 90 %)\" |",
+    "source_quote_ids": [
+      "OPT.OLD40"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "150",
+    "prior_row_id": 150,
+    "prior_native_LF": [
+      262,
+      262
+    ],
+    "native_LF": [
+      262,
+      262
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| Small business starting during the year: turnover of that year | EUR 25,000 | \"Gesamtumsatz im laufenden Kj.\" |",
+    "source_quote_ids": [
+      "OPT.EURGROSS"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "151",
+    "prior_row_id": 151,
+    "prior_native_LF": [
+      263,
+      263
+    ],
+    "native_LF": [
+      263,
+      263
+    ],
+    "section": "Investitionsabzugsbetrag (IAB): § 7g EStG",
+    "wording": "| Special depreciation cap under § 7g(5) for an asset bought before 1 January 2024, which can still be inside its five-year window in 2026 | 20% | \"Für Wirtschaftsgüter, die vor dem 01.01.2024 angeschafft oder hergestellt worden sind, beträgt die Höchstgrenze der Sonderabschreibungen nach § 7g Abs. 5 EStG weiterhin 20 %\" |",
+    "source_quote_ids": [
+      "OPT.OLD40"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "152",
+    "prior_row_id": 152,
+    "prior_native_LF": [
+      267,
+      267
+    ],
+    "native_LF": [
+      267,
+      267
+    ],
+    "section": "Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG",
+    "wording": "**GWG table**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "153",
+    "prior_row_id": 153,
+    "prior_native_LF": [
+      269,
+      269
+    ],
+    "native_LF": [
+      269,
+      269
+    ],
+    "section": "Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG",
+    "wording": "| Method | Rule |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "154",
+    "prior_row_id": 154,
+    "prior_native_LF": [
+      271,
+      271
+    ],
+    "native_LF": [
+      271,
+      272
+    ],
+    "section": "Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG",
+    "wording": "| Immediate write-off, § 6(2) | For a depreciable movable fixed asset capable of independent use: full deduction in the purchase year, cost per asset less input VAT not above the limit below |\n| Pool, § 6(2a) | Qualifying depreciable movable fixed assets capable of independent use, between the bounds below: one pool a year, released at one fifth a year |",
+    "source_quote_ids": [
+      "OPT.E6-2",
+      "OPT.VATCOST",
+      "R97-108.E6-2",
+      "R97-108.POOL"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "155",
+    "prior_row_id": 155,
+    "prior_native_LF": [
+      272,
+      272
+    ],
+    "native_LF": [
+      271,
+      272
+    ],
+    "section": "Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG",
+    "wording": "| Immediate write-off, § 6(2) | For a depreciable movable fixed asset capable of independent use: full deduction in the purchase year, cost per asset less input VAT not above the limit below |\n| Pool, § 6(2a) | Qualifying depreciable movable fixed assets capable of independent use, between the bounds below: one pool a year, released at one fifth a year |",
+    "source_quote_ids": [
+      "OPT.POOL",
+      "R97-108.E6-2",
+      "R97-108.POOL",
+      "OPT.VATCOST"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "156",
+    "prior_row_id": 156,
+    "prior_native_LF": [
+      273,
+      273
+    ],
+    "native_LF": [
+      273,
+      273
+    ],
+    "section": "Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG",
+    "wording": "| Standard depreciation, § 7 | Anything else, over the useful life, one twelfth less per month before purchase |",
+    "source_quote_ids": [
+      "OPT.E7-1"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "157",
+    "prior_row_id": 157,
+    "prior_native_LF": [
+      275,
+      275
+    ],
+    "native_LF": [
+      275,
+      275
+    ],
+    "section": "Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG",
+    "wording": "**Low-value assets, the pool and the car (§ 6 EStG)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "158",
+    "prior_row_id": 158,
+    "prior_native_LF": [
+      277,
+      277
+    ],
+    "native_LF": [
+      277,
+      277
+    ],
+    "section": "Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "159",
+    "prior_row_id": 159,
+    "prior_native_LF": [
+      279,
+      279
+    ],
+    "native_LF": [
+      279,
+      279
+    ],
+    "section": "Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/estg/__6.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "160",
+    "prior_row_id": 160,
+    "prior_native_LF": [
+      280,
+      280
+    ],
+    "native_LF": [
+      280,
+      280
+    ],
+    "section": "Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG",
+    "wording": "| Immediate write-off: cost per qualifying independently usable depreciable movable fixed asset, less input VAT contained in it | EUR 800 | \"das einzelne Wirtschaftsgut 800 Euro nicht\" |",
+    "source_quote_ids": [
+      "OPT.E6-2",
+      "OPT.VATCOST",
+      "R97-108.E6-2",
+      "R97-108.POOL"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "161",
+    "prior_row_id": 161,
+    "prior_native_LF": [
+      281,
+      281
+    ],
+    "native_LF": [
+      281,
+      281
+    ],
+    "section": "Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG",
+    "wording": "| Register duty for an asset written off at once, value above | EUR 250 | \"deren Wert 250 Euro übersteigt\" |",
+    "source_quote_ids": [
+      "OPT.E6-2"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "162",
+    "prior_row_id": 162,
+    "prior_native_LF": [
+      282,
+      282
+    ],
+    "native_LF": [
+      282,
+      282
+    ],
+    "section": "Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG",
+    "wording": "| Pool: cost per qualifying independently usable depreciable movable fixed asset above the first, not above the second | EUR 250 to EUR 1,000 | \"250 Euro, aber nicht 1 000 Euro übersteigen\" |",
+    "source_quote_ids": [
+      "OPT.POOL",
+      "R97-108.E6-2",
+      "R97-108.POOL",
+      "OPT.VATCOST"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "163",
+    "prior_row_id": 163,
+    "prior_native_LF": [
+      283,
+      283
+    ],
+    "native_LF": [
+      283,
+      283
+    ],
+    "section": "Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG",
+    "wording": "| The list-price method needs business use above | 50% | \"mehr als 50 Prozent betrieblich genutzt\" |",
+    "source_quote_ids": [
+      "OPT.CAR1"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "164",
+    "prior_row_id": 164,
+    "prior_native_LF": [
+      284,
+      284
+    ],
+    "native_LF": [
+      284,
+      284
+    ],
+    "section": "Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG",
+    "wording": "| Private use per month: share of the German list price at first registration, never the price paid | 1% | \"mit 1 Prozent des inländischen Listenpreises\" |",
+    "source_quote_ids": [
+      "OPT.CAR1"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "165",
+    "prior_row_id": 165,
+    "prior_native_LF": [
+      285,
+      285
+    ],
+    "native_LF": [
+      285,
+      285
+    ],
+    "section": "Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG",
+    "wording": "| Electric car with no carbon dioxide emissions bought after 31 December 2018 and before 1 January 2031: a quarter of the list price is counted, but only where the gross list price is not above this amount. A cliff, not a ceiling on the amount counted. A car bought before 1 July 2025 may face a lower amount: check § 52 EStG | EUR 100,000 | \"nicht mehr als 100 000 Euro beträgt\" |",
+    "source_quote_ids": [
+      "OPT.CARQUARTER"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "166",
+    "prior_row_id": 166,
+    "prior_native_LF": [
+      287,
+      287
+    ],
+    "native_LF": [
+      287,
+      287
+    ],
+    "section": "Geringwertige Wirtschaftsgüter (GWG): § 6 Abs. 2 EStG",
+    "wording": "The alternative is the logbook method. Once the pool is chosen for a year, every asset of that year between its bounds goes into it (§ 6(2a) sentence 5 EStG). The 2026 EÜR instructions allow a one-year useful life for computer hardware and software. Under § 6(2) sentences 2–3, an asset is not independently usable if its business purpose requires it to be used only together with other fixed assets and those assets are technically coordinated; possible transfer into another such context does not itself cure that dependency. For an immediate write-off above EUR 250, the separate register is unnecessary if the required acquisition date and value particulars are already evident from the books. The GWG/pool eligibility cost excludes contained VAT; recoverability separately determines actual expense/acquisition cost under § 9b, rather than making every low-priced component eligible.",
+    "source_quote_ids": [
+      "OPT.POOL",
+      "OPT.CARLOG",
+      "OPT.COMPUTER",
+      "R97-108.E6-2",
+      "R97-108.POOL",
+      "OPT.VATCOST"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "167",
+    "prior_row_id": 167,
+    "prior_native_LF": [
+      291,
+      291
+    ],
+    "native_LF": [
+      291,
+      291
+    ],
+    "section": "Sonderabschreibung (Special Depreciation): § 7g Abs. 5 EStG",
+    "wording": "- Up to the total share in the § 7g table, spread over the purchase year and the four following years, on top of normal depreciation; § 52(16) EStG applies that share to assets bought after 31 December 2023. The prior year's profit must be within the § 7g profit limit and the asset used only or almost only for the business, or it is reversed. Over the asset's life the total never exceeds its cost.",
+    "source_quote_ids": [
+      "OPT.SPECIALAFA",
+      "OPT.OLD40"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "168",
+    "prior_row_id": 168,
+    "prior_native_LF": [
+      293,
+      293
+    ],
+    "native_LF": [
+      293,
+      293
+    ],
+    "section": "Sonderabschreibung (Special Depreciation): § 7g Abs. 5 EStG",
+    "wording": "**Depreciation rates and date windows (§ 7 EStG)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "169",
+    "prior_row_id": 169,
+    "prior_native_LF": [
+      295,
+      295
+    ],
+    "native_LF": [
+      295,
+      295
+    ],
+    "section": "Sonderabschreibung (Special Depreciation): § 7g Abs. 5 EStG",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "170",
+    "prior_row_id": 170,
+    "prior_native_LF": [
+      297,
+      297
+    ],
+    "native_LF": [
+      297,
+      297
+    ],
+    "section": "Sonderabschreibung (Special Depreciation): § 7g Abs. 5 EStG",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/estg/__7.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "171",
+    "prior_row_id": 171,
+    "prior_native_LF": [
+      298,
+      298
+    ],
+    "native_LF": [
+      298,
+      298
+    ],
+    "section": "Sonderabschreibung (Special Depreciation): § 7g Abs. 5 EStG",
+    "wording": "| Declining balance, movable assets bought after 30 June 2025 and before 1 January 2028: at most three times the straight-line rate and not above | 30% | \"und 30 Prozent nicht übersteigen\" |",
+    "source_quote_ids": [
+      "OPT.E7-2"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "172",
+    "prior_row_id": 172,
+    "prior_native_LF": [
+      299,
+      299
+    ],
+    "native_LF": [
+      299,
+      299
+    ],
+    "section": "Sonderabschreibung (Special Depreciation): § 7g Abs. 5 EStG",
+    "wording": "| Electric vehicles that are fixed assets, same window: share in the purchase year | 75% | \"im Jahr der Anschaffung 75 Prozent\" |",
+    "source_quote_ids": [
+      "OPT.EV"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "173",
+    "prior_row_id": 173,
+    "prior_native_LF": [
+      301,
+      301
+    ],
+    "native_LF": [
+      301,
+      301
+    ],
+    "section": "Sonderabschreibung (Special Depreciation): § 7g Abs. 5 EStG",
+    "wording": "Outside a date window only straight-line depreciation applies, and a switch from declining balance to straight line is allowed, not the reverse. The electric vehicle rule prints its later shares in words and is barred where special depreciation was claimed. Other buildings: § 7(4) and § 7(5a) EStG; new rental housing § 7b EStG, in `de-rental-income`.",
+    "source_quote_ids": [
+      "OPT.E7-1",
+      "OPT.E7-2",
+      "OPT.EV"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "174",
+    "prior_row_id": 174,
+    "prior_native_LF": [
+      305,
+      305
+    ],
+    "native_LF": [
+      305,
+      305
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "**Loss Utilization table**  _(EStG § 10d)_",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "175",
+    "prior_row_id": 175,
+    "prior_native_LF": [
+      307,
+      307
+    ],
+    "native_LF": [
+      307,
+      307
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "| Relief | Detail and limit |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "176",
+    "prior_row_id": 176,
+    "prior_native_LF": [
+      309,
+      309
+    ],
+    "native_LF": [
+      309,
+      309
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "| Intra-year offset | All sources are added up (§ 2(3) EStG), but ring-fenced losses offset only their own kind: investments (§ 20(6)), private sales (§ 23(3)), other services (§ 22 no. 3), qualifying models under § 15b(2)/(3), with the actual initial-phase forecast-loss ratio strictly above 10% |",
+    "source_quote_ids": [
+      "OPT.BASE",
+      "OPT.CAPLOSS",
+      "OPT.MODELLOSS",
+      "R97-108.MODELLOSS"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "177",
+    "prior_row_id": 177,
+    "prior_native_LF": [
+      310,
+      310
+    ],
+    "native_LF": [
+      310,
+      310
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "| Verlustrücktrag | To the year before and then the second year before, ahead of special expenses. Caps below; the waiver is all or nothing |",
+    "source_quote_ids": [
+      "OPT.E10d-1"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "178",
+    "prior_row_id": 178,
+    "prior_native_LF": [
+      311,
+      311
+    ],
+    "native_LF": [
+      311,
+      311
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "| Verlustvortrag | No time limit. In full up to one million euros of total income (two million jointly, both in words), above that only the share below |",
+    "source_quote_ids": [
+      "OPT.E10d-2"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "179",
+    "prior_row_id": 179,
+    "prior_native_LF": [
+      312,
+      312
+    ],
+    "native_LF": [
+      312,
+      312
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "| Trade tax | Its own carry-forward at a lower share (§ 10a GewStG) and no carry-back |",
+    "source_quote_ids": [
+      "OPT.G10a"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "180",
+    "prior_row_id": 180,
+    "prior_native_LF": [
+      313,
+      313
+    ],
+    "native_LF": [
+      313,
+      313
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "| Investment deduction | It may create or increase a loss, but only within the § 7g conditions |",
+    "source_quote_ids": [
+      "OPT.IAB"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "181",
+    "prior_row_id": 181,
+    "prior_native_LF": [
+      315,
+      315
+    ],
+    "native_LF": [
+      315,
+      315
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "**Loss relief (§ 10d EStG)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "182",
+    "prior_row_id": 182,
+    "prior_native_LF": [
+      317,
+      317
+    ],
+    "native_LF": [
+      317,
+      317
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "183",
+    "prior_row_id": 183,
+    "prior_native_LF": [
+      319,
+      319
+    ],
+    "native_LF": [
+      319,
+      319
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/estg/__10d.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "184",
+    "prior_row_id": 184,
+    "prior_native_LF": [
+      320,
+      320
+    ],
+    "native_LF": [
+      320,
+      320
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "| Carry-back cap, single assessment | EUR 1,000,000 | \"einem Betrag von 1 000 000 Euro\" |",
+    "source_quote_ids": [
+      "OPT.E10d-1"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "185",
+    "prior_row_id": 185,
+    "prior_native_LF": [
+      321,
+      321
+    ],
+    "native_LF": [
+      321,
+      321
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "| Carry-back cap, jointly assessed spouses | EUR 2,000,000 | \"einem Betrag von 2 000 000 Euro\" |",
+    "source_quote_ids": [
+      "OPT.E10d-1"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "186",
+    "prior_row_id": 186,
+    "prior_native_LF": [
+      322,
+      322
+    ],
+    "native_LF": [
+      322,
+      322
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "| Carry-forward: share of the total income above the base | 70% for 2024 to 2027; 60% from 2028 | \"bis zu 70 Prozent des 1 Million Euro übersteigenden\"; back to 60 Prozent from 2028 under BGBl. 2024 I Nr. 108, Art. 6 (https://www.recht.bund.de/bgbl/1/2024/108/VO.html) |",
+    "source_quote_ids": [
+      "OPT.E10d-2",
+      "OPT.BG108a",
+      "OPT.BG108date"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "187",
+    "prior_row_id": 187,
+    "prior_native_LF": [
+      324,
+      324
+    ],
+    "native_LF": [
+      324,
+      324
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "**Trade tax loss carry-forward (§ 10a GewStG)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "188",
+    "prior_row_id": 188,
+    "prior_native_LF": [
+      326,
+      326
+    ],
+    "native_LF": [
+      326,
+      326
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "189",
+    "prior_row_id": 189,
+    "prior_native_LF": [
+      328,
+      328
+    ],
+    "native_LF": [
+      328,
+      328
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/gewstg/__10a.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "190",
+    "prior_row_id": 190,
+    "prior_native_LF": [
+      329,
+      329
+    ],
+    "native_LF": [
+      329,
+      329
+    ],
+    "section": "Section 5: Loss Utilization",
+    "wording": "| Share of the trade income above the base (one million euros, in words) | 60% | \"ist bis zu 60 Prozent\" |",
+    "source_quote_ids": [
+      "OPT.G10a"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "191",
+    "prior_row_id": 191,
+    "prior_native_LF": [
+      333,
+      333
+    ],
+    "native_LF": [
+      333,
+      333
+    ],
+    "section": "Strategy",
+    "wording": "- The investment deduction is not a tool for a high-profit year: it is allowed only within the § 7g profit limit. A carry-back runs ahead of special expenses, so those of the earlier year can be lost, and a refund from it bears interest only from 15 months after the end of the loss year (§ 233a AO).",
+    "source_quote_ids": [
+      "OPT.IAB",
+      "OPT.E10d-1",
+      "OPT.AO233a-2"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "192",
+    "prior_row_id": 192,
+    "prior_native_LF": [
+      337,
+      337
+    ],
+    "native_LF": [
+      337,
+      337
+    ],
+    "section": "Section 6: Timing Strategies",
+    "wording": "These rules work for cash-basis (EÜR) businesses only; § 11 EStG leaves the balance-sheet rules untouched. Who must keep books: `germany-bookkeeping`.",
+    "source_quote_ids": [
+      "OPT.CASHTIME"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "193",
+    "prior_row_id": 193,
+    "prior_native_LF": [
+      339,
+      339
+    ],
+    "native_LF": [
+      339,
+      339
+    ],
+    "section": "Section 6: Timing Strategies",
+    "wording": "**Timing Strategies table**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "194",
+    "prior_row_id": 194,
+    "prior_native_LF": [
+      341,
+      341
+    ],
+    "native_LF": [
+      341,
+      341
+    ],
+    "section": "Section 6: Timing Strategies",
+    "wording": "| Strategy | Rule and what limits it |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "195",
+    "prior_row_id": 195,
+    "prior_native_LF": [
+      343,
+      343
+    ],
+    "native_LF": [
+      343,
+      343
+    ],
+    "section": "Section 6: Timing Strategies",
+    "wording": "| Defer invoicing | Receipts count in the year received (§ 11(1) EStG): the payment date decides. VAT differs: under ordinary Soll accounting it arises at the end of the period in which the supply or separately agreed partial supply is performed; advance consideration received before performance triggers tax on that amount in the receipt period. With permitted Ist accounting, the actual receipt rule applies (§§ 13, 20 UStG) |",
+    "source_quote_ids": [
+      "OPT.CASHTIME",
+      "OPT.VATSUPPLY",
+      "R97-108.VATSUPPLY",
+      "R97-108.VATCASH"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "196",
+    "prior_row_id": 196,
+    "prior_native_LF": [
+      344,
+      344
+    ],
+    "native_LF": [
+      344,
+      344
+    ],
+    "section": "Section 6: Timing Strategies",
+    "wording": "| Accelerate expenses | Expenses count in the year paid (§ 11(2) EStG). Prepayments for over five years are spread; fixed assets still follow depreciation |",
+    "source_quote_ids": [
+      "OPT.CASHTIME",
+      "OPT.E7-1"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "197",
+    "prior_row_id": 197,
+    "prior_native_LF": [
+      345,
+      345
+    ],
+    "native_LF": [
+      345,
+      345
+    ],
+    "section": "Section 6: Timing Strategies",
+    "wording": "| Regularly recurring items | § 11(1) sentence 2 and § 11(2) sentence 2 EStG: a regularly recurring receipt or payment made a short time before or after the year end counts in the year it economically belongs to, not the year it moved. Rent, insurance and the VAT advance payment are the usual ones in practice, not in the statute, so for these the payment date does not decide. The statute prints no number of days |",
+    "source_quote_ids": [
+      "OPT.CASHTIME"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "198",
+    "prior_row_id": 198,
+    "prior_native_LF": [
+      346,
+      346
+    ],
+    "native_LF": [
+      346,
+      346
+    ],
+    "section": "Section 6: Timing Strategies",
+    "wording": "| Investment deduction timing | Only within the § 7g profit limit, the asset bought in time and used almost only for the business |",
+    "source_quote_ids": [
+      "OPT.IAB"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "199",
+    "prior_row_id": 199,
+    "prior_native_LF": [
+      347,
+      347
+    ],
+    "native_LF": [
+      347,
+      347
+    ],
+    "section": "Section 6: Timing Strategies",
+    "wording": "| Year-end low-value purchases | Expensed in the business year of purchase; the purchase date decides, not payment |",
+    "source_quote_ids": [
+      "OPT.E6-2"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "200",
+    "prior_row_id": 200,
+    "prior_native_LF": [
+      348,
+      348
+    ],
+    "native_LF": [
+      348,
+      348
+    ],
+    "section": "Section 6: Timing Strategies",
+    "wording": "| Vorauszahlungen | Due 10 March, 10 June, 10 September, 10 December, adaptable to the expected tax (§ 37 EStG); too-low ones bear interest from 15 months after the year |",
+    "source_quote_ids": [
+      "OPT.E37-1",
+      "OPT.E37-3",
+      "OPT.AO233a-2"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "201",
+    "prior_row_id": 201,
+    "prior_native_LF": [
+      349,
+      349
+    ],
+    "native_LF": [
+      349,
+      349
+    ],
+    "section": "Section 6: Timing Strategies",
+    "wording": "| Adviser filing extension | Due at the end of February of the second following year, but interest still starts after 15 months and a late return costs a surcharge (§ 152 AO) |",
+    "source_quote_ids": [
+      "OPT.AO149-3",
+      "OPT.AO233a-2",
+      "OPT.AO152-1",
+      "OPT.AO152-2"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "202",
+    "prior_row_id": 202,
+    "prior_native_LF": [
+      350,
+      350
+    ],
+    "native_LF": [
+      350,
+      350
+    ],
+    "section": "Section 6: Timing Strategies",
+    "wording": "| Marriage timing | The conditions need only arise during the year, so a marriage on any day of it opens joint assessment for the whole year |",
+    "source_quote_ids": [
+      "OPT.COUPLE",
+      "OPT.JOINT",
+      "OPT.SPLIT"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "203",
+    "prior_row_id": 203,
+    "prior_native_LF": [
+      352,
+      352
+    ],
+    "native_LF": [
+      352,
+      352
+    ],
+    "section": "Section 6: Timing Strategies",
+    "wording": "Pages: https://www.gesetze-im-internet.de/estg/__11.html and https://www.gesetze-im-internet.de/estg/__37.html",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "204",
+    "prior_row_id": 204,
+    "prior_native_LF": [
+      356,
+      356
+    ],
+    "native_LF": [
+      356,
+      356
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "**VAT Optimization table**  _(Umsatzsteuergesetz (UStG))_",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "205",
+    "prior_row_id": 205,
+    "prior_native_LF": [
+      358,
+      358
+    ],
+    "native_LF": [
+      358,
+      358
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "| Strategy | Rule and what limits it |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "206",
+    "prior_row_id": 206,
+    "prior_native_LF": [
+      360,
+      360
+    ],
+    "native_LF": [
+      360,
+      360
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "| Kleinunternehmerregelung, § 19(1) | Tax-free where turnover was not above the first limit below last year and is not above the second this year. Both tests, and no input VAT. The current-year limit is hard: the 2026 EÜR instructions say the sale that crosses it is already taxed. A business that STARTS in the year has no previous year: its total turnover of that year must stay within the start-up limit in the ministry instructions table in Section 4, and the same rule applies when it is crossed. |",
+    "source_quote_ids": [
+      "OPT.KU",
+      "OPT.EURGROSS"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "207",
+    "prior_row_id": 207,
+    "prior_native_LF": [
+      361,
+      361
+    ],
+    "native_LF": [
+      361,
+      361
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "| Waiver, § 19(3) | Declared irrevocably to the tax office until the last day of February of the second calendar year after the period concerned, effective from the start of the period it is to cover, and binding for AT LEAST five calendar years. After that it can be revoked with effect from the start of a later calendar year |",
+    "source_quote_ids": [
+      "OPT.KUWAIVER"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "208",
+    "prior_row_id": 208,
+    "prior_native_LF": [
+      362,
+      362
+    ],
+    "native_LF": [
+      362,
+      364
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "| Ist-Versteuerung, § 20 | On application, VAT on payments received: prior-year total turnover not above the limit below, release from the bookkeeping duty, or to the extent supplies are from the qualifying liberal profession under § 18(1) no. 1 EStG |\n| Input VAT timing, § 15 | For a completed business supply, the required supply and qualifying invoice are needed; payment is not a general condition. Before supply, deduction on an advance requires both the invoice and actual payment. For gifts, guest houses, hunting or yachts, input VAT is excluded only to the extent the actual expense prohibition referenced in § 15(1a) applies, not merely from the item's name. The specific reasonable/evidenced business-entertainment exception under § 15(1a) sentence 2 and all other business/invoice/VAT eligibility gates remain |\n| Reverse charge for EU services | The ordinary § 3a(2) business-use rule uses the recipient business establishment, or the receiving fixed establishment where applicable, subject to the actual statutory place exceptions (including property, catering, short vehicle hire and physical event admission). German recipient liability requires the actual service, foreign-supplier and customer conditions of § 13b; it is not a rule for every EU service. Apply the full ordinary method in `germany-vat-return` |",
+    "source_quote_ids": [
+      "OPT.VATCASH",
+      "R97-108.VATCASH",
+      "R97-108.INPUTRULE",
+      "R97-108.INPUTVAT",
+      "R97-108.GIFTS",
+      "R26.planning-bridge",
+      "OPT.RCDEBTOR",
+      "OPT.VATRECIPIENT"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "209",
+    "prior_row_id": 209,
+    "prior_native_LF": [
+      363,
+      363
+    ],
+    "native_LF": [
+      362,
+      364
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "| Ist-Versteuerung, § 20 | On application, VAT on payments received: prior-year total turnover not above the limit below, release from the bookkeeping duty, or to the extent supplies are from the qualifying liberal profession under § 18(1) no. 1 EStG |\n| Input VAT timing, § 15 | For a completed business supply, the required supply and qualifying invoice are needed; payment is not a general condition. Before supply, deduction on an advance requires both the invoice and actual payment. For gifts, guest houses, hunting or yachts, input VAT is excluded only to the extent the actual expense prohibition referenced in § 15(1a) applies, not merely from the item's name. The specific reasonable/evidenced business-entertainment exception under § 15(1a) sentence 2 and all other business/invoice/VAT eligibility gates remain |\n| Reverse charge for EU services | The ordinary § 3a(2) business-use rule uses the recipient business establishment, or the receiving fixed establishment where applicable, subject to the actual statutory place exceptions (including property, catering, short vehicle hire and physical event admission). German recipient liability requires the actual service, foreign-supplier and customer conditions of § 13b; it is not a rule for every EU service. Apply the full ordinary method in `germany-vat-return` |",
+    "source_quote_ids": [
+      "OPT.INPUTVAT",
+      "OPT.INPUTRULE",
+      "OPT.GIFTS",
+      "R97-108.VATCASH",
+      "R97-108.INPUTRULE",
+      "R97-108.INPUTVAT",
+      "R97-108.GIFTS",
+      "R26.planning-bridge",
+      "OPT.RCDEBTOR",
+      "OPT.VATRECIPIENT"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "210",
+    "prior_row_id": 210,
+    "prior_native_LF": [
+      364,
+      364
+    ],
+    "native_LF": [
+      362,
+      364
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "| Ist-Versteuerung, § 20 | On application, VAT on payments received: prior-year total turnover not above the limit below, release from the bookkeeping duty, or to the extent supplies are from the qualifying liberal profession under § 18(1) no. 1 EStG |\n| Input VAT timing, § 15 | For a completed business supply, the required supply and qualifying invoice are needed; payment is not a general condition. Before supply, deduction on an advance requires both the invoice and actual payment. For gifts, guest houses, hunting or yachts, input VAT is excluded only to the extent the actual expense prohibition referenced in § 15(1a) applies, not merely from the item's name. The specific reasonable/evidenced business-entertainment exception under § 15(1a) sentence 2 and all other business/invoice/VAT eligibility gates remain |\n| Reverse charge for EU services | The ordinary § 3a(2) business-use rule uses the recipient business establishment, or the receiving fixed establishment where applicable, subject to the actual statutory place exceptions (including property, catering, short vehicle hire and physical event admission). German recipient liability requires the actual service, foreign-supplier and customer conditions of § 13b; it is not a rule for every EU service. Apply the full ordinary method in `germany-vat-return` |",
+    "source_quote_ids": [
+      "OPT.VATPLACE",
+      "OPT.VATRECIPIENT",
+      "OPT.RCDEBTOR",
+      "R97-108.VATCASH",
+      "R97-108.INPUTRULE",
+      "R97-108.INPUTVAT",
+      "R97-108.GIFTS",
+      "R26.planning-bridge"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "211",
+    "prior_row_id": 211,
+    "prior_native_LF": [
+      365,
+      365
+    ],
+    "native_LF": [
+      365,
+      365
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "| Return period, § 18 | Quarterly by default, monthly where the tax for the previous calendar year was above the § 18(2) UStG amount. A business that STARTS in 2026 is not automatically monthly: for the years 2021 to 2026 § 18(2) sentence 6 UStG puts the expected tax of the current year in place of the automatic monthly rule. Deadlines move by a month on application (§ 46 UStDV): `germany-vat-return` |",
+    "source_quote_ids": [
+      "OPT.VATPERIOD",
+      "OPT.VATEXTEND"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "212",
+    "prior_row_id": 212,
+    "prior_native_LF": [
+      367,
+      367
+    ],
+    "native_LF": [
+      367,
+      367
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "**Small-business limits (§ 19 UStG)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "213",
+    "prior_row_id": 213,
+    "prior_native_LF": [
+      369,
+      369
+    ],
+    "native_LF": [
+      369,
+      369
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "214",
+    "prior_row_id": 214,
+    "prior_native_LF": [
+      371,
+      371
+    ],
+    "native_LF": [
+      371,
+      371
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__19.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "215",
+    "prior_row_id": 215,
+    "prior_native_LF": [
+      372,
+      372
+    ],
+    "native_LF": [
+      372,
+      372
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "| Total turnover of the previous calendar year not above | EUR 25,000 | \"vorangegangenen Kalenderjahr 25 000 Euro\" |",
+    "source_quote_ids": [
+      "OPT.KU"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "216",
+    "prior_row_id": 216,
+    "prior_native_LF": [
+      373,
+      373
+    ],
+    "native_LF": [
+      373,
+      373
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "| Total turnover of the current calendar year not above | EUR 100,000 | \"laufenden Kalenderjahr 100 000 Euro\" |",
+    "source_quote_ids": [
+      "OPT.KU"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "217",
+    "prior_row_id": 217,
+    "prior_native_LF": [
+      375,
+      375
+    ],
+    "native_LF": [
+      375,
+      375
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "**Cash accounting limit (§ 20 UStG)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "218",
+    "prior_row_id": 218,
+    "prior_native_LF": [
+      377,
+      377
+    ],
+    "native_LF": [
+      377,
+      377
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "219",
+    "prior_row_id": 219,
+    "prior_native_LF": [
+      379,
+      379
+    ],
+    "native_LF": [
+      379,
+      379
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__20.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "220",
+    "prior_row_id": 220,
+    "prior_native_LF": [
+      380,
+      380
+    ],
+    "native_LF": [
+      380,
+      380
+    ],
+    "section": "Section 7: VAT Optimization (Umsatzsteuer)",
+    "wording": "| Total turnover of the previous calendar year not more than | EUR 800,000 | \"nicht mehr als 800 000 Euro\" |",
+    "source_quote_ids": [
+      "OPT.VATCASH"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "221",
+    "prior_row_id": 221,
+    "prior_native_LF": [
+      384,
+      384
+    ],
+    "native_LF": [
+      384,
+      384
+    ],
+    "section": "Section 8: Social Security Optimization",
+    "wording": "Legislation: Sozialgesetzbuch IV and VI. Ceilings, rates and the amounts for compulsorily insured self-employed people: `de-social-contributions`.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "222",
+    "prior_row_id": 222,
+    "prior_native_LF": [
+      388,
+      388
+    ],
+    "native_LF": [
+      388,
+      388
+    ],
+    "section": "Self-Employed Social Security",
+    "wording": "**Self-Employed Social Security table**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "223",
+    "prior_row_id": 223,
+    "prior_native_LF": [
+      390,
+      390
+    ],
+    "native_LF": [
+      390,
+      390
+    ],
+    "section": "Self-Employed Social Security",
+    "wording": "| Category | Detail |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "224",
+    "prior_row_id": 224,
+    "prior_native_LF": [
+      392,
+      392
+    ],
+    "native_LF": [
+      392,
+      392
+    ],
+    "section": "Self-Employed Social Security",
+    "wording": "| Mandatory cases | § 2 SGB VI: teachers, educators and carers with no insured employee; midwives; sea pilots; artists and publicists; home-based traders; skippers; craftspeople in the Handwerksrolle; and persons with no insured employee working essentially for one client |",
+    "source_quote_ids": [
+      "OPT.RVSELF"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "225",
+    "prior_row_id": 225,
+    "prior_native_LF": [
+      393,
+      393
+    ],
+    "native_LF": [
+      393,
+      393
+    ],
+    "section": "Self-Employed Social Security",
+    "wording": "| Everyone else | Not compulsorily insured; voluntary insurance (§ 7 SGB VI), or compulsory insurance on application within five years of starting (§ 4 SGB VI). A Versorgungswerk follows state law, not the federal pages |",
+    "source_quote_ids": [
+      "OPT.VOLUNTARY",
+      "OPT.ONAPPLICATION"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "226",
+    "prior_row_id": 226,
+    "prior_native_LF": [
+      394,
+      394
+    ],
+    "native_LF": [
+      394,
+      394
+    ],
+    "section": "Self-Employed Social Security",
+    "wording": "| One client is not false self-employment | That person is self-employed and pension-insured (§ 2 no. 9 SGB VI); false self-employment means the work is in truth employment (§ 7(1) SGB IV) |",
+    "source_quote_ids": [
+      "OPT.RVSELF",
+      "OPT.EMPSTATUS"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "227",
+    "prior_row_id": 227,
+    "prior_native_LF": [
+      396,
+      396
+    ],
+    "native_LF": [
+      396,
+      396
+    ],
+    "section": "Self-Employed Social Security",
+    "wording": "Pages: https://www.gesetze-im-internet.de/sgb_6/__2.html and https://www.gesetze-im-internet.de/sgb_4/__7.html",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "228",
+    "prior_row_id": 228,
+    "prior_native_LF": [
+      400,
+      400
+    ],
+    "native_LF": [
+      400,
+      400
+    ],
+    "section": "Optimization Strategies",
+    "wording": "**Optimization Strategies table**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "229",
+    "prior_row_id": 229,
+    "prior_native_LF": [
+      402,
+      402
+    ],
+    "native_LF": [
+      402,
+      402
+    ],
+    "section": "Optimization Strategies",
+    "wording": "| Strategy | Detail |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "230",
+    "prior_row_id": 230,
+    "prior_native_LF": [
+      404,
+      404
+    ],
+    "native_LF": [
+      404,
+      404
+    ],
+    "section": "Optimization Strategies",
+    "wording": "| Voluntary pension contributions | Special expenses under § 10(1) no. 2(a) EStG, only up to the one cap in Section 9. Amounts: `de-social-contributions` |",
+    "source_quote_ids": [
+      "OPT.PENSIONELIG",
+      "OPT.PENSIONCAP"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "231",
+    "prior_row_id": 231,
+    "prior_native_LF": [
+      405,
+      405
+    ],
+    "native_LF": [
+      405,
+      405
+    ],
+    "section": "Optimization Strategies",
+    "wording": "| Versorgungswerk | In the same sentence as statutory contributions, so it shares that one cap |",
+    "source_quote_ids": [
+      "OPT.PENSIONELIG",
+      "OPT.PENSIONCAP"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "232",
+    "prior_row_id": 232,
+    "prior_native_LF": [
+      406,
+      406
+    ],
+    "native_LF": [
+      406,
+      406
+    ],
+    "section": "Optimization Strategies",
+    "wording": "| Krankenversicherung | Basic health and care contributions are special expenses; for private cover only the part comparable to statutory cover. The choice is not a tax question |",
+    "source_quote_ids": [
+      "OPT.HEALTH"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "233",
+    "prior_row_id": 233,
+    "prior_native_LF": [
+      407,
+      407
+    ],
+    "native_LF": [
+      407,
+      407
+    ],
+    "section": "Optimization Strategies",
+    "wording": "| Beitragsbemessungsgrenze | Contributions stop at each branch's ceiling; income above it adds none |",
+    "source_quote_ids": [
+      "OPT.PENSIONBASE"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "234",
+    "prior_row_id": 234,
+    "prior_native_LF": [
+      413,
+      413
+    ],
+    "native_LF": [
+      413,
+      413
+    ],
+    "section": "Basisrente (Rürup-Rente): § 10 Abs. 1 Nr. 2 EStG",
+    "wording": "**Basisrente table**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "235",
+    "prior_row_id": 235,
+    "prior_native_LF": [
+      415,
+      415
+    ],
+    "native_LF": [
+      415,
+      415
+    ],
+    "section": "Basisrente (Rürup-Rente): § 10 Abs. 1 Nr. 2 EStG",
+    "wording": "| Feature | Detail |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "236",
+    "prior_row_id": 236,
+    "prior_native_LF": [
+      417,
+      417
+    ],
+    "native_LF": [
+      417,
+      417
+    ],
+    "section": "Basisrente (Rürup-Rente): § 10 Abs. 1 Nr. 2 EStG",
+    "wording": "| What counts | Statutory pension, farmers' fund and comparable professional funds, and an own funded contract paying only a lifelong monthly annuity from age 62, with rights that cannot be inherited, sold or paid as a lump sum |",
+    "source_quote_ids": [
+      "OPT.PENSIONELIG"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "237",
+    "prior_row_id": 237,
+    "prior_native_LF": [
+      418,
+      418
+    ],
+    "native_LF": [
+      418,
+      418
+    ],
+    "section": "Basisrente (Rürup-Rente): § 10 Abs. 1 Nr. 2 EStG",
+    "wording": "| Deduction limit | Full contributions since 2023, up to one cap shared by statutory, Versorgungswerk and Basisrente contributions. The statute prints no euro amount; the 2026 amounts are below |",
+    "source_quote_ids": [
+      "OPT.PENSIONCAP",
+      "OPT.RVCAPS"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "238",
+    "prior_row_id": 238,
+    "prior_native_LF": [
+      419,
+      419
+    ],
+    "native_LF": [
+      421,
+      421
+    ],
+    "section": "Basisrente (Rürup-Rente): § 10 Abs. 1 Nr. 2 EStG",
+    "wording": "| Later and locked | Taxed when paid (§ 22 EStG), at a share fixed by the year the pension starts and higher for each later year. The money is locked in |",
+    "source_quote_ids": [
+      "OPT.PENSLATER"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "239",
+    "prior_row_id": 239,
+    "prior_native_LF": [
+      421,
+      421
+    ],
+    "native_LF": [
+      423,
+      423
+    ],
+    "section": "Basisrente (Rürup-Rente): § 10 Abs. 1 Nr. 2 EStG",
+    "wording": "**Pension contributions: deduction cap 2026**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "240",
+    "prior_row_id": 240,
+    "prior_native_LF": [
+      423,
+      423
+    ],
+    "native_LF": [
+      425,
+      425
+    ],
+    "section": "Basisrente (Rürup-Rente): § 10 Abs. 1 Nr. 2 EStG",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "241",
+    "prior_row_id": 241,
+    "prior_native_LF": [
+      425,
+      425
+    ],
+    "native_LF": [
+      427,
+      427
+    ],
+    "section": "Basisrente (Rürup-Rente): § 10 Abs. 1 Nr. 2 EStG",
+    "wording": "| Source | all figures below | https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2026/260420-vorsorgen-und-steuern-sparen |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "242",
+    "prior_row_id": 242,
+    "prior_native_LF": [
+      426,
+      426
+    ],
+    "native_LF": [
+      428,
+      428
+    ],
+    "section": "Basisrente (Rürup-Rente): § 10 Abs. 1 Nr. 2 EStG",
+    "wording": "| Cap 2026, single person | EUR 30,826 | \"Höchstbetrag 30.826 Euro für Ledige\" |",
+    "source_quote_ids": [
+      "OPT.RVCAPS"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "243",
+    "prior_row_id": 243,
+    "prior_native_LF": [
+      427,
+      427
+    ],
+    "native_LF": [
+      429,
+      429
+    ],
+    "section": "Basisrente (Rürup-Rente): § 10 Abs. 1 Nr. 2 EStG",
+    "wording": "| Cap 2026, jointly assessed spouses | EUR 61,652 | \"61.652 Euro für Verheiratete\" |",
+    "source_quote_ids": [
+      "OPT.RVCAPS",
+      "R97-108.PENSIONELIG",
+      "R97-108.PENSIONCAP"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "244",
+    "prior_row_id": 244,
+    "prior_native_LF": [
+      431,
+      431
+    ],
+    "native_LF": [
+      433,
+      433
+    ],
+    "section": "Riester-Rente: § 10a EStG",
+    "wording": "**Riester-Rente table**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "245",
+    "prior_row_id": 245,
+    "prior_native_LF": [
+      433,
+      433
+    ],
+    "native_LF": [
+      435,
+      435
+    ],
+    "section": "Riester-Rente: § 10a EStG",
+    "wording": "| Feature | Detail |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "246",
+    "prior_row_id": 246,
+    "prior_native_LF": [
+      435,
+      435
+    ],
+    "native_LF": [
+      437,
+      437
+    ],
+    "section": "Riester-Rente: § 10a EStG",
+    "wording": "| Eligibility | § 10a(1) EStG names persons compulsorily insured in the statutory pension insurance and certain civil servants. Someone paying only voluntary contributions is not named; a compulsorily insured self-employed person is |",
+    "source_quote_ids": [
+      "OPT.RIESTER"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "247",
+    "prior_row_id": 247,
+    "prior_native_LF": [
+      436,
+      436
+    ],
+    "native_LF": [
+      438,
+      438
+    ],
+    "section": "Riester-Rente: § 10a EStG",
+    "wording": "| Deduction, allowances | A yearly maximum as special expenses, allowance included (§ 10a(1) EStG); the tax office checks which is better. Allowances: § 84 and § 85 EStG, cut below the minimum own contribution of § 86 EStG. https://www.gesetze-im-internet.de/estg/__10a.html |",
+    "source_quote_ids": [
+      "OPT.RIESTER",
+      "OPT.RIESTERTEST",
+      "OPT.RIESTERBASE",
+      "OPT.RIESTERCHILD",
+      "OPT.RIESTERMIND"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "248",
+    "prior_row_id": 248,
+    "prior_native_LF": [
+      440,
+      440
+    ],
+    "native_LF": [
+      442,
+      442
+    ],
+    "section": "Vermögenswirksame Leistungen (VWL) and Other",
+    "wording": "- **VWL** are employer-employee payments under the Fifth Capital Formation Act, whose § 1 excludes payments to members of the body representing a legal person, so not a GmbH managing director; a sole trader has no employer. https://www.gesetze-im-internet.de/vermbg_2/__1.html",
+    "source_quote_ids": [
+      "OPT.VWL"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "249",
+    "prior_row_id": 249,
+    "prior_native_LF": [
+      441,
+      441
+    ],
+    "native_LF": [
+      443,
+      443
+    ],
+    "section": "Vermögenswirksame Leistungen (VWL) and Other",
+    "wording": "- **Günstigerprüfung.** On application all investment income of the year is taxed at the tariff instead, where the total tax including surcharges is lower (§ 32d(6) EStG). Gains, funds and exit tax: `de-capital-gains`. Freelancer income tax: `de-einkommensteuer-freelancer`.",
+    "source_quote_ids": [
+      "OPT.LOWERTAX"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "250",
+    "prior_row_id": 250,
+    "prior_native_LF": [
+      443,
+      443
+    ],
+    "native_LF": [
+      445,
+      445
+    ],
+    "section": "Vermögenswirksame Leistungen (VWL) and Other",
+    "wording": "**VWL and Other table: saver's allowance (§ 20 EStG)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "251",
+    "prior_row_id": 251,
+    "prior_native_LF": [
+      445,
+      445
+    ],
+    "native_LF": [
+      447,
+      447
+    ],
+    "section": "Vermögenswirksame Leistungen (VWL) and Other",
+    "wording": "| Status | Allowance | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "252",
+    "prior_row_id": 252,
+    "prior_native_LF": [
+      447,
+      447
+    ],
+    "native_LF": [
+      449,
+      449
+    ],
+    "section": "Vermögenswirksame Leistungen (VWL) and Other",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/estg/__20.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "253",
+    "prior_row_id": 253,
+    "prior_native_LF": [
+      448,
+      448
+    ],
+    "native_LF": [
+      450,
+      450
+    ],
+    "section": "Vermögenswirksame Leistungen (VWL) and Other",
+    "wording": "| Sparer-Pauschbetrag, single individual, per year | EUR 1,000 | \"Betrag von 1 000 Euro abzuziehen\" |",
+    "source_quote_ids": [
+      "OPT.SAVER"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "254",
+    "prior_row_id": 254,
+    "prior_native_LF": [
+      449,
+      449
+    ],
+    "native_LF": [
+      451,
+      451
+    ],
+    "section": "Vermögenswirksame Leistungen (VWL) and Other",
+    "wording": "| Sparer-Pauschbetrag, jointly assessed couple | EUR 2,000 | \"Sparer-Pauschbetrag von 2 000 Euro\" |",
+    "source_quote_ids": [
+      "OPT.SAVER"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "255",
+    "prior_row_id": 255,
+    "prior_native_LF": [
+      453,
+      453
+    ],
+    "native_LF": [
+      455,
+      455
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "**Red Lines table**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "256",
+    "prior_row_id": 256,
+    "prior_native_LF": [
+      455,
+      455
+    ],
+    "native_LF": [
+      457,
+      457
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "| Risk | Detail |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "257",
+    "prior_row_id": 257,
+    "prior_native_LF": [
+      457,
+      457
+    ],
+    "native_LF": [
+      459,
+      459
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "| § 42 AO | An inappropriate arrangement giving a tax advantage the law does not provide for is an abuse unless non-tax reasons that matter overall are proven |",
+    "source_quote_ids": [
+      "OPT.ABUSE"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "258",
+    "prior_row_id": 258,
+    "prior_native_LF": [
+      458,
+      458
+    ],
+    "native_LF": [
+      460,
+      460
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "| Deferral models (§ 15b EStG) | The statutory ring-fence requires a prepackaged model designed for tax advantages through negative income and, in the initial phase, forecast losses exceeding 10% of the capital subscribed and payable under the concept, or the individual investor's invested equity. Exactly 10% does not meet paragraph 3; this does not exclude other applicable anti-abuse rules. Qualifying losses reduce only later income from the same source, not § 10d relief |",
+    "source_quote_ids": [
+      "OPT.MODELLOSS",
+      "R97-108.MODELLOSS"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "259",
+    "prior_row_id": 259,
+    "prior_native_LF": [
+      459,
+      459
+    ],
+    "native_LF": [
+      461,
+      461
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "| Scheinselbständigkeit | Working under instructions and inside the other's work organisation (§ 7(1) SGB IV). Past periods: refer |",
+    "source_quote_ids": [
+      "OPT.EMPSTATUS"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "260",
+    "prior_row_id": 260,
+    "prior_native_LF": [
+      460,
+      460
+    ],
+    "native_LF": [
+      462,
+      462
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "| Deduction without the investment | Reversed in the year claimed, with interest at the rate below from 15 months after that year |",
+    "source_quote_ids": [
+      "OPT.IAB",
+      "OPT.AO233a-2",
+      "OPT.AO238-1a"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "261",
+    "prior_row_id": 261,
+    "prior_native_LF": [
+      461,
+      461
+    ],
+    "native_LF": [
+      463,
+      463
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "| Fictitious family employment | The work must be real and the pay caused by the business; maintenance dressed as wages is not deductible |",
+    "source_quote_ids": [
+      "OPT.BUSCOST",
+      "OPT.PERSONAL"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "262",
+    "prior_row_id": 262,
+    "prior_native_LF": [
+      462,
+      462
+    ],
+    "native_LF": [
+      464,
+      464
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "| Hidden profit distribution | It does not reduce the GmbH's income (§ 8(3) KStG), and the statute does not define it |",
+    "source_quote_ids": [
+      "OPT.KStG8-3"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "263",
+    "prior_row_id": 263,
+    "prior_native_LF": [
+      463,
+      463
+    ],
+    "native_LF": [
+      465,
+      465
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "| Private expenses as business | Household and living costs are out (§ 12 EStG), as are costs inappropriate by general standards (§ 4(5) no. 7 EStG) |",
+    "source_quote_ids": [
+      "OPT.PERSONAL",
+      "OPT.BUSCOST"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "264",
+    "prior_row_id": 264,
+    "prior_native_LF": [
+      464,
+      464
+    ],
+    "native_LF": [
+      466,
+      466
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "| Liebhaberei | § 15(2) EStG requires a profit intention and says a tax reduction is not a profit; the tests are case law |",
+    "source_quote_ids": [
+      "OPT.TRADE"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "265",
+    "prior_row_id": 265,
+    "prior_native_LF": [
+      465,
+      465
+    ],
+    "native_LF": [
+      467,
+      467
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "| Home office claims | Room costs only where the room is the centre of all business and professional activity |",
+    "source_quote_ids": [
+      "OPT.ROOM"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "266",
+    "prior_row_id": 266,
+    "prior_native_LF": [
+      467,
+      467
+    ],
+    "native_LF": [
+      469,
+      469
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "**Interest on back tax and refunds (§ 238 AO)**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "267",
+    "prior_row_id": 267,
+    "prior_native_LF": [
+      469,
+      469
+    ],
+    "native_LF": [
+      471,
+      471
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "| What | Value | Note |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "268",
+    "prior_row_id": 268,
+    "prior_native_LF": [
+      471,
+      471
+    ],
+    "native_LF": [
+      473,
+      473
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/ao_1977/__238.html |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "269",
+    "prior_row_id": 269,
+    "prior_native_LF": [
+      472,
+      472
+    ],
+    "native_LF": [
+      474,
+      474
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "| Per month on arrears and refunds after an assessment, periods from 1 January 2019 | 0.15% | \"0,15 Prozent für jeden Monat\" |",
+    "source_quote_ids": [
+      "OPT.AO238-1a"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "270",
+    "prior_row_id": 270,
+    "prior_native_LF": [
+      473,
+      473
+    ],
+    "native_LF": [
+      475,
+      475
+    ],
+    "section": "Section 10: Red Lines",
+    "wording": "| The same rate per year | 1.8% | \"1,8 Prozent für jedes Jahr\" |",
+    "source_quote_ids": [
+      "OPT.AO238-1a"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "271",
+    "prior_row_id": 271,
+    "prior_native_LF": [
+      477,
+      477
+    ],
+    "native_LF": [
+      479,
+      479
+    ],
+    "section": "Section 11: Annual Tax Planning Calendar",
+    "wording": "Statutory due dates; one on a weekend or holiday runs to the next working day (§ 108(3) AO). VAT advance returns are due by the tenth day after each return period (§ 18(1) UStG), and the § 46 UStDV extension moves every VAT date by a month.",
+    "source_quote_ids": [
+      "OPT.AO108",
+      "OPT.VATPERIOD",
+      "OPT.VATEXTEND"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "272",
+    "prior_row_id": 272,
+    "prior_native_LF": [
+      479,
+      479
+    ],
+    "native_LF": [
+      481,
+      481
+    ],
+    "section": "Section 11: Annual Tax Planning Calendar",
+    "wording": "**Annual Tax Planning Calendar table**",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "273",
+    "prior_row_id": 273,
+    "prior_native_LF": [
+      481,
+      481
+    ],
+    "native_LF": [
+      483,
+      483
+    ],
+    "section": "Section 11: Annual Tax Planning Calendar",
+    "wording": "| Month | Action |",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "274",
+    "prior_row_id": 274,
+    "prior_native_LF": [
+      483,
+      483
+    ],
+    "native_LF": [
+      485,
+      485
+    ],
+    "section": "Section 11: Annual Tax Planning Calendar",
+    "wording": "| January | **10 January**: VAT return for December or the fourth quarter. Check open investment deductions |",
+    "source_quote_ids": [
+      "OPT.VATPERIOD",
+      "OPT.IAB"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "275",
+    "prior_row_id": 275,
+    "prior_native_LF": [
+      484,
+      484
+    ],
+    "native_LF": [
+      486,
+      486
+    ],
+    "section": "Section 11: Annual Tax Planning Calendar",
+    "wording": "| February | **15 February**: trade tax prepayment. **End of February**: adviser returns for the year before last |",
+    "source_quote_ids": [
+      "OPT.G19",
+      "OPT.AO149-3"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "276",
+    "prior_row_id": 276,
+    "prior_native_LF": [
+      485,
+      485
+    ],
+    "native_LF": [
+      487,
+      487
+    ],
+    "section": "Section 11: Annual Tax Planning Calendar",
+    "wording": "| March to June | **10 March** and **10 June**: income tax prepayments. **15 May**: trade tax prepayment. **10 April**: VAT return for the first quarter. Compare single and joint assessment before filing |",
+    "source_quote_ids": [
+      "OPT.E37-1",
+      "OPT.G19",
+      "OPT.VATPERIOD",
+      "OPT.COUPLE"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "277",
+    "prior_row_id": 277,
+    "prior_native_LF": [
+      486,
+      486
+    ],
+    "native_LF": [
+      488,
+      488
+    ],
+    "section": "Section 11: Annual Tax Planning Calendar",
+    "wording": "| July | **10 July**: VAT return for the second quarter or June. **31 July**: returns for last year without an adviser |",
+    "source_quote_ids": [
+      "OPT.VATPERIOD",
+      "OPT.AO149-2",
+      "OPT.AO108"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "278",
+    "prior_row_id": 278,
+    "prior_native_LF": [
+      487,
+      487
+    ],
+    "native_LF": [
+      489,
+      489
+    ],
+    "section": "Section 11: Annual Tax Planning Calendar",
+    "wording": "| August, September | **15 August**: trade tax prepayment. **10 September**: income tax prepayment |",
+    "source_quote_ids": [
+      "OPT.G19",
+      "OPT.E37-1"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "279",
+    "prior_row_id": 279,
+    "prior_native_LF": [
+      488,
+      488
+    ],
+    "native_LF": [
+      490,
+      490
+    ],
+    "section": "Section 11: Annual Tax Planning Calendar",
+    "wording": "| October | **10 October**: VAT return for the third quarter or September. Check turnover against the small-business limit |",
+    "source_quote_ids": [
+      "OPT.VATPERIOD",
+      "OPT.KU"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "280",
+    "prior_row_id": 280,
+    "prior_native_LF": [
+      489,
+      489
+    ],
+    "native_LF": [
+      491,
+      491
+    ],
+    "section": "Section 11: Annual Tax Planning Calendar",
+    "wording": "| November | **10 November**: VAT return. **15 November**: trade tax prepayment. Plan pension contributions |",
+    "source_quote_ids": [
+      "OPT.VATPERIOD",
+      "OPT.G19",
+      "OPT.PENSIONCAP"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "281",
+    "prior_row_id": 281,
+    "prior_native_LF": [
+      490,
+      490
+    ],
+    "native_LF": [
+      492,
+      492
+    ],
+    "section": "Section 11: Annual Tax Planning Calendar",
+    "wording": "| December | **10 December**: income tax prepayment. **31 December**: last day for payments to count in an EÜR, apart from the regularly recurring items in Section 6, for assets to be bought rather than ordered, and for a marriage to open joint assessment for the year |",
+    "source_quote_ids": [
+      "OPT.E37-1",
+      "OPT.CASHTIME",
+      "OPT.E6-2",
+      "OPT.COUPLE"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "282",
+    "prior_row_id": 282,
+    "prior_native_LF": [
+      494,
+      494
+    ],
+    "native_LF": [
+      496,
+      496
+    ],
+    "section": "Section 12: Cash Impact Examples",
+    "wording": "This Guide presents planning mechanisms and does not rank products or legal forms or calculate a real client's saving. The historical numerical fixtures are retained in the old-topic evidence: their assumed rates and period figures were not reliable current tax results. Official sources need not print a fictional case's numbers for a source-based computation to be valid. For a real comparison apply the actual § 32a tariff with and without the item, including the applicable deductions, caps and interactions; do not assume a constant marginal rate without checking the entire affected taxable-income interval. The five mechanisms below remain. Example 2 stipulates an eligible isolated self-payer with no employer contribution offset or special cap reduction; Example 4 stipulates an actually qualifying independently usable depreciable movable fixed asset. These facts qualify those examples; the general employee pension and asset selectors above still apply.",
+    "source_quote_ids": [
+      "R97-108.TARIFF",
+      "R97-108.PENSIONELIG",
+      "R97-108.PENSIONCAP",
+      "R97-108.E6-2",
+      "R97-108.POOL"
+    ],
+    "disposition": "R97–108 bounded same-method source qualification/correction; old claim retained as history"
+  },
+  {
+    "id": "283",
+    "prior_row_id": 283,
+    "prior_native_LF": [
+      498,
+      498
+    ],
+    "native_LF": [
+      500,
+      500
+    ],
+    "section": "Example 1: Ehegattensplitting",
+    "wording": "**Example 1.** Joint assessment adds both incomes, taxes half at the tariff and doubles it, and doubles the surcharge limit, the saver's allowance and the pension cap. Work both options.",
+    "source_quote_ids": [
+      "OPT.SPLIT",
+      "OPT.COUPLE",
+      "OPT.SOLILIMIT",
+      "OPT.SAVER",
+      "OPT.PENSIONCAP"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "284",
+    "prior_row_id": 284,
+    "prior_native_LF": [
+      502,
+      502
+    ],
+    "native_LF": [
+      504,
+      504
+    ],
+    "section": "Example 2: Rürup-Rente Contribution",
+    "wording": "**Example 2.** Basisrente contributions, with statutory or Versorgungswerk ones, are special expenses up to the 2026 cap in Section 9 and cut taxable income by the amount paid, no more.",
+    "source_quote_ids": [
+      "OPT.PENSIONCAP",
+      "OPT.PENSIONELIG",
+      "OPT.RVCAPS"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "285",
+    "prior_row_id": 285,
+    "prior_native_LF": [
+      506,
+      506
+    ],
+    "native_LF": [
+      508,
+      508
+    ],
+    "section": "Example 3: IAB + Sonderabschreibung",
+    "wording": "**Example 3.** Part of the expected cost is deducted early; on purchase the same amount is added back and taken off the asset's cost, so depreciation runs on less. Over the asset's life the deductions equal its cost: the gain is timing.",
+    "source_quote_ids": [
+      "OPT.IAB",
+      "OPT.SPECIALAFA",
+      "OPT.E7-1"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "286",
+    "prior_row_id": 286,
+    "prior_native_LF": [
+      510,
+      510
+    ],
+    "native_LF": [
+      512,
+      512
+    ],
+    "section": "Example 4: GWG Immediate Write-Off",
+    "wording": "**Example 4.** A laptop below the immediate write-off limit, measured without the input VAT in the price, is deducted in full in the purchase year unless the pool was chosen for that year.",
+    "source_quote_ids": [
+      "OPT.E6-2",
+      "OPT.VATCOST",
+      "OPT.POOL"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "287",
+    "prior_row_id": 287,
+    "prior_native_LF": [
+      514,
+      514
+    ],
+    "native_LF": [
+      516,
+      516
+    ],
+    "section": "Example 5: Homeoffice-Pauschale",
+    "wording": "**Example 5.** Qualifying days times the day rate in the § 4 table, never above the yearly cap there. Keep a record of the days.",
+    "source_quote_ids": [
+      "OPT.DAY"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "288",
+    "prior_row_id": 288,
+    "prior_native_LF": [
+      518,
+      518
+    ],
+    "native_LF": [
+      520,
+      520
+    ],
+    "section": "The method, step by step",
+    "wording": "1. Fix the facts: legal form, trade or liberal profession (§ 15 and § 18 EStG), and EÜR or balance sheet (§ 4(3) EStG). https://www.gesetze-im-internet.de/estg/__4.html",
+    "source_quote_ids": [
+      "OPT.TRADE",
+      "OPT.PROF",
+      "OPT.CASH"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "289",
+    "prior_row_id": 289,
+    "prior_native_LF": [
+      519,
+      519
+    ],
+    "native_LF": [
+      521,
+      521
+    ],
+    "section": "The method, step by step",
+    "wording": "2. Work out the expected profit and test it against the § 7g profit limit before any investment deduction or special depreciation. https://www.gesetze-im-internet.de/estg/__7g.html",
+    "source_quote_ids": [
+      "OPT.IAB",
+      "OPT.SPECIALAFA"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "290",
+    "prior_row_id": 290,
+    "prior_native_LF": [
+      520,
+      520
+    ],
+    "native_LF": [
+      522,
+      522
+    ],
+    "section": "The method, step by step",
+    "wording": "3. Go through the deductions in Section 3, checking each limit and the separate record § 4(7) EStG demands. https://www.gesetze-im-internet.de/estg/__9.html",
+    "source_quote_ids": [
+      "OPT.BUSCOST",
+      "OPT.RECORDS"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "291",
+    "prior_row_id": 291,
+    "prior_native_LF": [
+      521,
+      521
+    ],
+    "native_LF": [
+      523,
+      523
+    ],
+    "section": "The method, step by step",
+    "wording": "4. Per fixed asset: low-value asset or pool first, one choice for the whole year (§ 6(2a) EStG), then the depreciation method and its date window. https://www.gesetze-im-internet.de/estg/__6.html",
+    "source_quote_ids": [
+      "OPT.E6-2",
+      "OPT.POOL",
+      "OPT.E7-1",
+      "OPT.E7-2"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "292",
+    "prior_row_id": 292,
+    "prior_native_LF": [
+      522,
+      522
+    ],
+    "native_LF": [
+      524,
+      524
+    ],
+    "section": "The method, step by step",
+    "wording": "5. Losses: offset within the year, then the carry-back or its waiver, then the carry-forward (§ 10d EStG). https://www.gesetze-im-internet.de/estg/__10d.html",
+    "source_quote_ids": [
+      "OPT.BASE",
+      "OPT.E10d-1",
+      "OPT.E10d-2"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "293",
+    "prior_row_id": 293,
+    "prior_native_LF": [
+      523,
+      523
+    ],
+    "native_LF": [
+      525,
+      525
+    ],
+    "section": "The method, step by step",
+    "wording": "6. Special expenses in the year paid, and the choice between single and joint assessment in the return (§ 10 and § 26 EStG). https://www.gesetze-im-internet.de/estg/__10.html",
+    "source_quote_ids": [
+      "OPT.PENSIONELIG",
+      "OPT.COUPLE"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "294",
+    "prior_row_id": 294,
+    "prior_native_LF": [
+      524,
+      524
+    ],
+    "native_LF": [
+      526,
+      526
+    ],
+    "section": "The method, step by step",
+    "wording": "7. VAT: test both small-business limits before waiving the rule, knowing the waiver binds for at least five years. https://www.gesetze-im-internet.de/ustg_1980/__19.html",
+    "source_quote_ids": [
+      "OPT.KU",
+      "OPT.KUWAIVER"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "295",
+    "prior_row_id": 295,
+    "prior_native_LF": [
+      525,
+      525
+    ],
+    "native_LF": [
+      527,
+      527
+    ],
+    "section": "The method, step by step",
+    "wording": "8. Test every idea against § 42 AO, write down the non-tax reasons, and refer before any change of structure; a binding ruling can be asked for beforehand, for a fee (§ 89 AO). https://www.gesetze-im-internet.de/ao_1977/__89.html",
+    "source_quote_ids": [
+      "OPT.ABUSE",
+      "OPT.RULING"
+    ],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "296",
+    "prior_row_id": 296,
+    "prior_native_LF": [
+      529,
+      529
+    ],
+    "native_LF": [
+      531,
+      531
+    ],
+    "section": "Ask the client first",
+    "wording": "- What is the legal form and kind of income, and is profit worked out by EÜR or by balance sheet?",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "297",
+    "prior_row_id": 297,
+    "prior_native_LF": [
+      530,
+      530
+    ],
+    "native_LF": [
+      532,
+      532
+    ],
+    "section": "Ask the client first",
+    "wording": "- What is the expected profit this year before any investment deduction, what was last year's, and how much must be withdrawn to live on?",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "298",
+    "prior_row_id": 298,
+    "prior_native_LF": [
+      531,
+      531
+    ],
+    "native_LF": [
+      533,
+      533
+    ],
+    "section": "Ask the client first",
+    "wording": "- Is the client married or in a civil partnership, both fully liable to tax in Germany and living together, and does the spouse work in the business?",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "299",
+    "prior_row_id": 299,
+    "prior_native_LF": [
+      532,
+      532
+    ],
+    "native_LF": [
+      534,
+      534
+    ],
+    "section": "Ask the client first",
+    "wording": "- Which assets will be bought in the next three years, when, and how much will each be used privately?",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "300",
+    "prior_row_id": 300,
+    "prior_native_LF": [
+      533,
+      533
+    ],
+    "native_LF": [
+      535,
+      535
+    ],
+    "section": "Ask the client first",
+    "wording": "- VAT: last year's total turnover, this year's so far, and are large purchases planned?",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "301",
+    "prior_row_id": 301,
+    "prior_native_LF": [
+      534,
+      534
+    ],
+    "native_LF": [
+      536,
+      536
+    ],
+    "section": "Ask the client first",
+    "wording": "- How is the client insured for old age and health, and does the client work essentially for one client?",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "302",
+    "prior_row_id": 302,
+    "prior_native_LF": [
+      538,
+      538
+    ],
+    "native_LF": [
+      540,
+      540
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Anything cross-border: a home, spouse, income, clients, staff, company or assets outside Germany; treaties; foreign tax credits; controlled foreign company rules; transfer pricing (`germany-transfer-pricing`).",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "303",
+    "prior_row_id": 303,
+    "prior_native_LF": [
+      539,
+      539
+    ],
+    "native_LF": [
+      541,
+      541
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Exit tax: leaving Germany, or giving shares abroad, with a shareholding within § 17 EStG or a large fund holding (§ 6 AStG). See `de-capital-gains`, and refer before the move.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "304",
+    "prior_row_id": 304,
+    "prior_native_LF": [
+      540,
+      540
+    ],
+    "native_LF": [
+      542,
+      542
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Any arrangement whose main purpose is a tax advantage, any model with planned early losses, any structure the client cannot explain by non-tax reasons.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "305",
+    "prior_row_id": 305,
+    "prior_native_LF": [
+      541,
+      541
+    ],
+    "native_LF": [
+      543,
+      543
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Choosing or changing the legal form: a GmbH, UG or GmbH & Co. KG, the § 1a KStG option, contributing a business under § 20 UmwStG, holdings, tax groups.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "306",
+    "prior_row_id": 306,
+    "prior_native_LF": [
+      542,
+      542
+    ],
+    "native_LF": [
+      544,
+      544
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- A § 34a EStG application, which starts a record that runs for years and ends in a follow-up tax.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "307",
+    "prior_row_id": 307,
+    "prior_native_LF": [
+      543,
+      543
+    ],
+    "native_LF": [
+      545,
+      545
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Pay, loans, rent and pension promises between a GmbH and its owner: the hidden profit distribution tests are case law.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "308",
+    "prior_row_id": 308,
+    "prior_native_LF": [
+      544,
+      544
+    ],
+    "native_LF": [
+      546,
+      546
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Real estate structuring: property companies, splitting a price between land and building, private sales of property, real estate transfer tax, a shorter useful life for a building.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "309",
+    "prior_row_id": 309,
+    "prior_native_LF": [
+      545,
+      545
+    ],
+    "native_LF": [
+      547,
+      547
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Inheritance and gift planning, and handing the business on: the inheritance and gift tax act was not read for this Guide.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "310",
+    "prior_row_id": 310,
+    "prior_native_LF": [
+      546,
+      546
+    ],
+    "native_LF": [
+      548,
+      548
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Selling or closing the business, or selling shares: the § 16(4) and § 17 EStG allowances, the § 34 EStG reduced rate, the seven-year rule of § 22 UmwStG.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "311",
+    "prior_row_id": 311,
+    "prior_native_LF": [
+      547,
+      547
+    ],
+    "native_LF": [
+      549,
+      549
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Employing family members: the contract, the pay level, the social insurance status, and any suspected false self-employment.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "312",
+    "prior_row_id": 312,
+    "prior_native_LF": [
+      548,
+      548
+    ],
+    "native_LF": [
+      550,
+      550
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Electric and hybrid company cars other than the quarter rule in Section 4, and any car whose private use is disputed.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "313",
+    "prior_row_id": 313,
+    "prior_native_LF": [
+      549,
+      549
+    ],
+    "native_LF": [
+      551,
+      551
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Limited partners' losses (§ 15a EStG), the interest barrier (§ 4h EStG), farming and forestry.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "314",
+    "prior_row_id": 314,
+    "prior_native_LF": [
+      550,
+      550
+    ],
+    "native_LF": [
+      552,
+      552
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Tax arrears, deferral, enforcement, voluntary disclosure and any criminal tax matter.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "315",
+    "prior_row_id": 315,
+    "prior_native_LF": [
+      551,
+      551
+    ],
+    "native_LF": [
+      553,
+      553
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- The exact church tax rate for a client: it is set by state church tax rules, not on the federal pages.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "316",
+    "prior_row_id": 316,
+    "prior_native_LF": [
+      552,
+      552
+    ],
+    "native_LF": [
+      554,
+      554
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- The choice of a pension, insurance or investment product, and private versus statutory health cover.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "317",
+    "prior_row_id": 317,
+    "prior_native_LF": [
+      553,
+      553
+    ],
+    "native_LF": [
+      555,
+      555
+    ],
+    "section": "When to refuse or refer",
+    "wording": "- Computing the client's tax or a saving. Payroll: `de-payroll`. Trade tax: `de-trade-tax`. VAT returns: `germany-vat-return`. Bookkeeping: `germany-bookkeeping`. Rental property: `de-rental-income`. Formation: `germany-formation`.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "318",
+    "prior_row_id": 318,
+    "prior_native_LF": [
+      557,
+      557
+    ],
+    "native_LF": [
+      559,
+      559
+    ],
+    "section": "Sources",
+    "wording": "Each paragraph is linked where it is used. Laws read: Einkommensteuergesetz, Abgabenordnung, Körperschaftsteuergesetz, Gewerbesteuergesetz, Solidaritätszuschlaggesetz, Umsatzsteuergesetz, Sozialgesetzbuch IV and VI and the Fifth Capital Formation Act, at https://www.gesetze-im-internet.de/ Also the ministry's 2026 EÜR instructions (Section 4) and tax booklet (Section 1), and the pension insurer's 2026 pages (Sections 8 and 9).",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "319",
+    "prior_row_id": 319,
+    "prior_native_LF": [
+      559,
+      559
+    ],
+    "native_LF": [
+      561,
+      561
+    ],
+    "section": "Sources",
+    "wording": "Source read on 29 October 2026 for the two narrow corrections: [KStG § 1a(1) and (4)](https://www.gesetze-im-internet.de/kstg_1977/__1a.html), initial irrevocable application and separate later Rückoption; [UStG § 15(1a)](https://www.gesetze-im-internet.de/ustg_1980/__15.html) with [EStG § 4(5) no. 1](https://www.gesetze-im-internet.de/estg/__4.html), the input-VAT exclusion follows the actual expense prohibition. No new legal-form or input-VAT case is certified.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "320",
+    "prior_row_id": 320,
+    "prior_native_LF": [
+      563,
+      563
+    ],
+    "native_LF": [
+      565,
+      565
+    ],
+    "section": "Disclaimer",
+    "wording": "This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a Steuerberater or Wirtschaftsprüfer) before filing or acting upon.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "321",
+    "prior_row_id": 321,
+    "prior_native_LF": [
+      565,
+      565
+    ],
+    "native_LF": [
+      567,
+      567
+    ],
+    "section": "Disclaimer",
+    "wording": "> Contributed by OpenAccountants.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "322",
+    "prior_row_id": 322,
+    "prior_native_LF": [
+      567,
+      567
+    ],
+    "native_LF": [
+      569,
+      569
+    ],
+    "section": "Disclaimer",
+    "wording": "> Contributed by Ryan Duguid.",
+    "source_quote_ids": [],
+    "disposition": "Exact original current unit; native coordinates rebound"
+  },
+  {
+    "id": "323",
+    "prior_row_id": null,
+    "native_LF": [
+      420,
+      420
+    ],
+    "section": "R105 actual employee pension contribution/cap adjustment",
+    "wording": "For an ordinary employee with qualifying pension contributions, include the actual § 3 no. 62 tax-free employer statutory-pension share or equivalent subsidy in the eligible aggregate under § 10(1) no. 2, apply the actual § 10(3) cap and any statutory special cap reduction, then subtract that tax-free employer part. With employee statutory RV EUR 9,000, qualifying employer RV EUR 9,000 and eligible Basisrente EUR 15,000, the combined EUR 33,000 is capped at EUR 30,826; subtract employer EUR 9,000 to give EUR 21,826, not the employee's whole EUR 24,000. An isolated self-payer has no invented employer offset. Apply the separate cap reduction for the actual pension-free/employer-funded or § 22 no. 4 populations in § 10(3) sentence 3. The specified Minijob employer contributions are added and then subtracted only on the taxpayer's statutory application (§ 10(1) no. 2 sentence 7 and § 10(3) sentence 7).",
+    "source_quote_ids": [
+      "R97-108.PENSIONELIG",
+      "R97-108.PENSIONCAP"
+    ],
+    "disposition": "New finite sourced ordinary adjustment / labelled separating computation"
+  }
+]

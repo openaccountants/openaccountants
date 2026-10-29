@@ -1,0 +1,20 @@
+{
+  "slug": "de-income-tax",
+  "expected_before_sha256": "d22cb13b51dccdd86e11d9813a2b9e9c18064b333466910e413565b4444a9e6d",
+  "operations": [
+    {
+      "before": "| Investment deduction (§ 7g) | Up to 50% of expected cost; profit before it not over EUR 200,000; open deductions per business not over EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |",
+      "after": "| Investment deduction (§ 7g) | Up to 50% of expected cost; profit calculated without investment deductions or § 7g(2) add-backs not over EUR 200,000; open deductions per business not over EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |"
+    },
+    {
+      "before": "version: 2.3\n",
+      "after": "version: 2.4\n"
+    }
+  ],
+  "after_sha256": "1c6d47d53101382347ac9b9c3bb34b8c23a7b67db0d00c9f6389b0042b966ce7",
+  "original_oa_blocks": 2,
+  "original_oa_exact": true,
+  "ordered_URLs_exact": true,
+  "protected_metadata_exact": true,
+  "inverse_exact": true
+}

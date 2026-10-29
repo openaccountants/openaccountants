@@ -1,0 +1,355 @@
+{
+  "Guide_sha256": "1a5978cfb309aacdf73dfe49aa3455c6d470fba4145542b53be2e78fec6dc11f",
+  "ledger_sha256": "55d7c3d639fc3d781596d46a854da406308eb1c0217429ed867ebb62ca9d230d",
+  "rows": 185,
+  "literal_actual_quote_checks": 96,
+  "oa_blocks": 2,
+  "oa_failures": [],
+  "own_numeric_controls": [
+    {
+      "name": "current consultantbase",
+      "actual": "4000",
+      "expected": "4000"
+    },
+    {
+      "name": "consultant health",
+      "actual": "676.00",
+      "expected": "676"
+    },
+    {
+      "name": "consultant care",
+      "actual": "168.00",
+      "expected": "168"
+    },
+    {
+      "name": "consultant total",
+      "actual": "844",
+      "expected": "844"
+    },
+    {
+      "name": "current yoga minimum",
+      "actual": "1318.33",
+      "expected": "1318.33"
+    },
+    {
+      "name": "yoga health",
+      "actual": "222.80",
+      "expected": "222.80"
+    },
+    {
+      "name": "yoga care",
+      "actual": "47.46",
+      "expected": "47.46"
+    },
+    {
+      "name": "yoga pension",
+      "actual": "367.82",
+      "expected": "367.82"
+    },
+    {
+      "name": "yoga total",
+      "actual": "638.08",
+      "expected": "638.08"
+    },
+    {
+      "name": "yoga startphaseend",
+      "actual": "2029",
+      "expected": "2029"
+    },
+    {
+      "name": "old800profit minimumsame",
+      "actual": "1318.33",
+      "expected": "1318.33"
+    },
+    {
+      "name": "old800healthcaretotal",
+      "actual": "270.26",
+      "expected": "270.26"
+    },
+    {
+      "name": "old2000yoga health",
+      "actual": "338.00",
+      "expected": "338"
+    },
+    {
+      "name": "old2000yoga care onechild stipulated",
+      "actual": "72.00",
+      "expected": "72"
+    },
+    {
+      "name": "old2000yoga total specifiedonechild",
+      "actual": "777.82",
+      "expected": "777.82"
+    },
+    {
+      "name": "original highincome base",
+      "actual": "5812.50",
+      "expected": "5812.50"
+    },
+    {
+      "name": "highincomehealth2.5stipulated",
+      "actual": "993.94",
+      "expected": "993.94"
+    },
+    {
+      "name": "highincome2childcare",
+      "actual": "194.72",
+      "expected": "194.72"
+    },
+    {
+      "name": "KSKpension",
+      "actual": "232.500",
+      "expected": "232.50"
+    },
+    {
+      "name": "KSKhealth",
+      "actual": "218.750",
+      "expected": "218.75"
+    },
+    {
+      "name": "KSKcare fullsurcharge",
+      "actual": "60.000",
+      "expected": "60"
+    },
+    {
+      "name": "KSKtotal",
+      "actual": "511.25",
+      "expected": "511.25"
+    },
+    {
+      "name": "agency20000levy",
+      "actual": "980.000",
+      "expected": "980"
+    },
+    {
+      "name": "bakery800limit",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "ownadvertising1000exactlimit",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "ownadvertising1000.01cliff",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "newemployeeannual",
+      "actual": "84000",
+      "expected": "84000"
+    },
+    {
+      "name": "newemployeeJAEG",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "employeeRV",
+      "actual": "651.000",
+      "expected": "651"
+    },
+    {
+      "name": "employeeAV",
+      "actual": "91.000",
+      "expected": "91"
+    },
+    {
+      "name": "marginalformula",
+      "actual": "602.3333333333333333333333333",
+      "expected": "602.3333333333333333333333333"
+    },
+    {
+      "name": "marginalceil",
+      "actual": "603",
+      "expected": "603"
+    },
+    {
+      "name": "marginalexact603free",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "marginal603.01notfree",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "KSKeconomicminimum",
+      "actual": "659.17",
+      "expected": "659.17"
+    },
+    {
+      "name": "healthtopreduced",
+      "actual": "982.31",
+      "expected": "982.31"
+    },
+    {
+      "name": "healthtopsickpay",
+      "actual": "1017.19",
+      "expected": "1017.19"
+    },
+    {
+      "name": "healthminimumsickpay",
+      "actual": "230.71",
+      "expected": "230.71"
+    },
+    {
+      "name": "caremax",
+      "actual": "209.25",
+      "expected": "209.25"
+    },
+    {
+      "name": "caremin",
+      "actual": "47.46",
+      "expected": "47.46"
+    },
+    {
+      "name": "pensionmin",
+      "actual": "112.16",
+      "expected": "112.16"
+    },
+    {
+      "name": "pensionmax",
+      "actual": "1571.70",
+      "expected": "1571.70"
+    },
+    {
+      "name": "pensionstandard",
+      "actual": "735.63",
+      "expected": "735.63"
+    },
+    {
+      "name": "unemployfull",
+      "actual": "102.83",
+      "expected": "102.83"
+    },
+    {
+      "name": "unemploystart",
+      "actual": "51.42",
+      "expected": "51.42"
+    },
+    {
+      "name": "referenceannual",
+      "actual": "47460",
+      "expected": "47460"
+    },
+    {
+      "name": "healthannual",
+      "actual": "69750.0",
+      "expected": "69750"
+    },
+    {
+      "name": "RVannual",
+      "actual": "101400",
+      "expected": "101400"
+    },
+    {
+      "name": "minersannual",
+      "actual": "124800",
+      "expected": "124800"
+    },
+    {
+      "name": "pensiontaxcapceil",
+      "actual": "30826",
+      "expected": "30826"
+    },
+    {
+      "name": "jointtaxcap",
+      "actual": "61652",
+      "expected": "61652"
+    },
+    {
+      "name": "2025healthminimum",
+      "actual": "1248.33",
+      "expected": "1248.33"
+    },
+    {
+      "name": "2025averageinferred",
+      "actual": "2.5",
+      "expected": "2.5"
+    },
+    {
+      "name": "pensionincome30percentgate",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "2026exemptioncondition18yearslater",
+      "actual": "18",
+      "expected": "18"
+    },
+    {
+      "name": "KSK3900exactfree",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "KSKpartyearhalfthreshold",
+      "actual": "1950",
+      "expected": "1950"
+    },
+    {
+      "name": "levyadvance40exactnoadvance",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "lateSVround",
+      "actual": "12.00",
+      "expected": "12"
+    },
+    {
+      "name": "20threferenceexception",
+      "actual": "197.75",
+      "expected": "197.75"
+    },
+    {
+      "name": "selfpay care 1",
+      "actual": "3.60",
+      "expected": "3.6"
+    },
+    {
+      "name": "selfpay care 2",
+      "actual": "3.35",
+      "expected": "3.35"
+    },
+    {
+      "name": "selfpay care 3",
+      "actual": "3.10",
+      "expected": "3.1"
+    },
+    {
+      "name": "selfpay care 4",
+      "actual": "2.85",
+      "expected": "2.85"
+    },
+    {
+      "name": "selfpay care 5",
+      "actual": "2.60",
+      "expected": "2.6"
+    },
+    {
+      "name": "selfpay care 6",
+      "actual": "2.60",
+      "expected": "2.6"
+    }
+  ],
+  "old_cases": "All7original cases recomputed; old800minimum and2000yoga variants separately distinguished from current1000yoga. Oldyoga didnotstatechildstatus; computed777.82 is expressly onechild/no-sickpaystipulation, not a newly attributed originalfact.",
+  "source_limitations_retained": [
+    "2025artistslevy actualrate not established by actual2024ordinance",
+    "Ownvoluntaryhealthfund and onapplication-unemployment due notices",
+    "Lowerprovenincome during pensionstartphase",
+    "Owneraccidentincome-taxclassification",
+    "2027ceilings",
+    "Actualaccidentrates/fundadditionalrate"
+  ],
+  "pending_root_findings": [
+    "DE-B06 exemptionclock",
+    "DE-B07 automaticparentproof",
+    "DE-B08 registrationgroups"
+  ],
+  "writer_only_not_independent": true
+}

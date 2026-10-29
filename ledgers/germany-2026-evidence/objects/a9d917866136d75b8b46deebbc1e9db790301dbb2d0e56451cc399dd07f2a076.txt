@@ -1,0 +1,689 @@
+Grundsätze zur ordnungsmäßigen Führung und Aufbewahrung von Büchern, Aufzeichnungen und Unterlagen in elektronischer Form sowie zum Datenzugriff (GoBD)
+(BMF-Schreiben vom 28.11.2019 - IV A 4 - 0316/19/10003:001 -, BStBl I S. 1269, geändert durch BMF-Schreiben vom 11.3.2024 – IV D 2-S 0316/21/10001:002-, BStBl I S. 374)
+Unter Bezugnahme auf das Ergebnis der Erörterungen mit den obersten Finanzbehörden der Länder gilt für die Anwendung dieser Grundsätze Folgendes:
+Inhaltsverzeichnis
+aufklappen
+Zuklappen
+1. Allgemeines
+1.1 Nutzbarmachung außersteuerlicher Buchführungs- und Aufzeichnungspflichten für das Steuerrecht
+1.2 Steuerliche Buchführungs- und Aufzeichnungspflichten
+1.3 Aufbewahrung von Unterlagen zu Geschäftsvorfällen und von solchen Unterlagen, die zum Verständnis und zur Überprüfung der für die Besteuerung gesetzlich vorgeschriebenen Aufzeichnungen von Bedeutung sind
+1.4 Ordnungsvorschriften
+1.5 Führung von Büchern und sonst erforderlichen Aufzeichnungen auf Datenträgern
+1.6 Beweiskraft von Buchführung und Aufzeichnungen, Darstellung von Beanstandungen durch die Finanzbehörde
+1.7 Aufzeichnungen
+1.8 Bücher
+1.9 Geschäftsvorfälle
+1.10 Grundsätze ordnungsmäßiger Buchführung (GoB)
+1.11 Datenverarbeitungssystem; Haupt-, Vor- und Nebensysteme
+2. Verantwortlichkeit
+3. Allgemeine Anforderungen
+3.1 Grundsatz der Nachvollziehbarkeit und Nachprüfbarkeit (§ 145 Absatz 1 AO, § 238 Absatz 1 Satz 2 und Satz 3 HGB)
+3.2 Grundsätze der Wahrheit, Klarheit und fortlaufenden Aufzeichnung
+3.2.1 Vollständigkeit (§ 146 Absatz 1 AO, § 239 Absatz 2 HGB)
+3.2.2 Richtigkeit (§ 146 Absatz 1 AO, § 239 Absatz 2 HGB)
+3.2.3 Zeitgerechte Buchungen und Aufzeichnungen (§ 146 Absatz 1 AO, § 239 Absatz 2 HGB)
+3.2.4 Ordnung (§ 146 Absatz 1 AO, § 239 Absatz 2 HGB)
+3.2.5 Unveränderbarkeit (§ 146 Absatz 4 AO, § 239 Absatz 3 HGB)
+4. Belegwesen (Belegfunktion)
+4.1 Belegsicherung
+4.2 Zuordnung zwischen Beleg und Grund(buch)aufzeichnung oder Buchung
+4.3 Erfassungsgerechte Aufbereitung der Buchungsbelege
+4.4 Besonderheiten
+5. Aufzeichnung der Geschäftsvorfälle in zeitlicher Reihenfolge und in sachlicher Ordnung (Grund(buch)aufzeichnungen, Journal- und Kontenfunktion)
+5.1 Erfassung in Grund(buch)aufzeichnungen
+5.2 Digitale Grund(buch)aufzeichnungen
+5.3 Verbuchung im Journal (Journalfunktion)
+5.4 Aufzeichnung der Geschäftsvorfälle in sachlicher Ordnung (Hauptbuch)
+6. Internes Kontrollsystem (IKS)
+7. Datensicherheit
+8. Unveränderbarkeit, Protokollierung von Änderungen
+9. Aufbewahrung
+9.1 Maschinelle Auswertbarkeit (§ 147 Absatz 2 Nummer 2 AO)
+9.2 Elektronische Aufbewahrung
+9.3 Bildliche Erfassung von Papierdokumenten
+9.4 Auslagerung von Daten aus dem Produktivsystem und Systemwechsel
+10. Nachvollziehbarkeit und Nachprüfbarkeit
+10.1 Verfahrensdokumentation
+10.2 Lesbarmachung von elektronischen Unterlagen
+11. Datenzugriff
+11.1 Umfang und Ausübung des Rechts auf Datenzugriff nach § 147 Absatz 6 AO
+11.2 Umfang der Mitwirkungspflicht nach §§ 147 Absatz 6 und 200 Absatz 1 Satz 2 AO
+12. Zertifizierung und Software-Testate
+13. Anwendungsregelung
+1. Allgemeines
+1
+Die betrieblichen Abläufe in den Unternehmen werden ganz oder teilweise unter Einsatz von Informations- und Kommunikations-Technik abgebildet.
+2
+Auch die nach außersteuerlichen oder steuerlichen Vorschriften zu führenden Bücher und sonst erforderlichen Aufzeichnungen werden in den Unternehmen zunehmend in elektronischer Form geführt (z. B. als Datensätze). Darüber hinaus werden in den Unternehmen zunehmend die aufbewahrungspflichtigen Unterlagen in elektronischer Form (z. B. als elektronische Dokumente) aufbewahrt.
+1.1 Nutzbarmachung außersteuerlicher Buchführungs- und Aufzeichnungspflichten für das Steuerrecht
+3
+Nach § 140 AO sind die außersteuerlichen Buchführungs- und Aufzeichnungspflichten, die für die Besteuerung von Bedeutung sind, auch für das Steuerrecht zu erfüllen. Außersteuerliche Buchführungs- und Aufzeichnungspflichten ergeben sich insbesondere aus den Vorschriften der §§ 238 ff. HGB und aus den dort bezeichneten handelsrechtlichen Grundsätzen ordnungsmäßiger Buchführung (GoB). Für einzelne Rechtsformen ergeben sich flankierende Aufzeichnungspflichten z. B. aus §§ 91 ff. Aktiengesetz, §§ 41 ff. GmbH-Gesetz oder § 33 Genossenschaftsgesetz. Des Weiteren sind zahlreiche gewerberechtliche oder branchenspezifische Aufzeichnungsvorschriften vorhanden, die gem. § 140 AO im konkreten Einzelfall für die Besteuerung von Bedeutung sind, wie z. B. Apothekenbetriebsordnung, Eichordnung, Fahrlehrergesetz, Gewerbeordnung, § 26 Kreditwesengesetz oder § 55 Versicherungsaufsichtsgesetz.
+1.2 Steuerliche Buchführungs- und Aufzeichnungspflichten
+4
+Steuerliche Buchführungs- und Aufzeichnungspflichten ergeben sich sowohl aus der Abgabenordnung (z. B. §§ 90 Absatz 3, 141 bis 144 AO) als auch aus Einzelsteuergesetzen (z. B. § 22 UStG, § 4 Absatz 3 Satz 5, § 4 Absatz 4a Satz 6, § 4 Absatz 7 und § 41 EStG).
+1.3 Aufbewahrung von Unterlagen zu Geschäftsvorfällen und von solchen Unterlagen, die zum Verständnis und zur Überprüfung der für die Besteuerung gesetzlich vorgeschriebenen Aufzeichnungen von Bedeutung sind
+5
+Neben den außersteuerlichen und steuerlichen Büchern, Aufzeichnungen und Unterlagen zu Geschäftsvorfällen sind alle Unterlagen aufzubewahren, die zum Verständnis und zur Überprüfung der für die Besteuerung gesetzlich vorgeschriebenen Aufzeichnungen im Einzelfall von Bedeutung sind (vgl. BFH-Urteil vom 24. Juni 2009, BStBl II 2010 S. 452).
+Dazu zählen neben Unterlagen in Papierform auch alle Unterlagen in Form von Daten, Datensätzen und elektronischen Dokumenten, die dokumentieren, dass die Ordnungsvorschriften umgesetzt und deren Einhaltung überwacht wurde. Nicht aufbewahrungspflichtig sind z. B. reine Entwürfe von Handels- oder Geschäftsbriefen, sofern diese nicht tatsächlich abgesandt wurden.
+Beispiel 1:
+Dienen Kostenstellen der Bewertung von Wirtschaftsgütern, von Rückstellungen oder als Grundlage für die Bemessung von Verrechnungspreisen sind diese Aufzeichnungen aufzubewahren, soweit sie zur Erläuterung steuerlicher Sachverhalte benötigt werden.
+6
+Form, Umfang und Inhalt dieser im Sinne der Rzn. 3 bis 5 nach außersteuerlichen und steuerlichen Rechtsnormen aufzeichnungs- und aufbewahrungspflichtigen Unterlagen (Daten, Datensätze sowie Dokumente in elektronischer oder Papierform) und der zu ihrem Verständnis erforderlichen Unterlagen werden durch den Steuerpflichtigen bestimmt. Eine abschließende Definition der aufzeichnungs- und aufbewahrungspflichtigen Aufzeichnungen und Unterlagen ist nicht Gegenstand der nachfolgenden Ausführungen. Die Finanzbehörde kann diese Unterlagen nicht abstrakt im Vorfeld für alle Unternehmen abschließend definieren, weil die betrieblichen Abläufe, die aufzeichnungs- und aufbewahrungspflichtigen Aufzeichnungen und Unterlagen sowie die eingesetzten Buchführungs- und Aufzeichnungssysteme in den Unternehmen zu unterschiedlich sind.
+1.4 Ordnungsvorschriften
+7
+Die Ordnungsvorschriften der §§ 145 bis 147 AO gelten für die vorbezeichneten Bücher und sonst erforderlichen Aufzeichnungen und der zu ihrem Verständnis erforderlichen Unterlagen (vgl. Rzn. 3 bis 5; siehe auch Rzn. 23, 25 und 28).
+1.5 Führung von Büchern und sonst erforderlichen Aufzeichnungen auf Datenträgern
+8
+Bücher und die sonst erforderlichen Aufzeichnungen können nach § 146 Absatz 5 AO auch auf Datenträgern geführt werden, soweit diese Form der Buchführung einschließlich des dabei angewandten Verfahrens den GoB entspricht (siehe unter 1.4.). Bei Aufzeichnungen, die allein nach den Steuergesetzen vorzunehmen sind, bestimmt sich die Zulässigkeit des angewendeten Verfahrens nach dem Zweck, den die Aufzeichnungen für die Besteuerung erfüllen sollen (§ 145 Absatz 2 AO; § 146 Absatz 5 Satz 1 2. HS AO). Unter diesen Voraussetzungen sind auch Aufzeichnungen auf Datenträgern zulässig.
+9
+Somit sind alle Unternehmensbereiche betroffen, in denen betriebliche Abläufe durch DV-gestützte Verfahren abgebildet werden und ein Datenverarbeitungssystem (DV-System, siehe auch Rz. 20) für die Erfüllung der in den Rzn. 3 bis 5 bezeichneten außersteuerlichen oder steuerlichen Buchführungs-, Aufzeichnungs- und Aufbewahrungspflichten verwendet wird (siehe auch unter 11.1 zum Datenzugriffsrecht).
+10
+Technische Vorgaben oder Standards (z. B. zu Archivierungsmedien oder Kryptografieverfahren) können angesichts der rasch fortschreitenden Entwicklung und der ebenfalls notwendigen Betrachtung des organisatorischen Umfelds nicht festgelegt werden. Im Zweifel ist über einen Analogieschluss festzustellen, ob die Ordnungsvorschriften eingehalten wurden, z. B. bei einem Vergleich zwischen handschriftlich geführten Handelsbüchern und Unterlagen in Papierform, die in einem verschlossenen Schrank aufbewahrt werden, einerseits und elektronischen Handelsbüchern und Unterlagen, die mit einem elektronischen Zugriffsschutz gespeichert werden, andererseits.
+1.6 Beweiskraft von Buchführung und Aufzeichnungen, Darstellung von Beanstandungen durch die Finanzbehörde
+11
+Nach § 158 Absatz 1 AO sind die Buchführung und die Aufzeichnungen des Steuerpflichtigen, die den Vorschriften der §§ 140 bis 148 AO entsprechen, der Besteuerung zugrunde zu legen. Der Grundsatz gilt nicht, soweit nach den Umständen des Einzelfalls Anlass besteht, die sachliche Richtigkeit der Buchführung oder der Aufzeichnungen zu beanstanden (§ 158 Absatz 2 Nummer 1 AO) oder soweit die elektronischen Daten nicht nach den Vorgaben einer der vorgeschriebenen digitalen Schnittstellen der Finanzbehörde zur Verfügung gestellt werden (§ 158 Absatz 2 Nummer 2 AO). Werden Buchführung oder Aufzeichnungen des Steuerpflichtigen im Einzelfall durch die Finanzbehörde beanstandet, so ist durch die Finanzbehörde der Grund der Beanstandung in geeigneter Form darzustellen.
+1.7 Aufzeichnungen
+12
+Aufzeichnungen sind alle dauerhaft verkörperten Erklärungen über Geschäftsvorfälle in Schriftform oder auf Medien mit Schriftersatzfunktion (z. B. auf Datenträgern). Der Begriff der Aufzeichnungen umfasst Darstellungen in Worten, Zahlen, Symbolen und Grafiken.
+13
+Werden Aufzeichnungen nach verschiedenen Rechtsnormen in einer Aufzeichnung zusammengefasst (z. B. nach §§ 238 ff. HGB und nach § 22 UStG), müssen die zusammengefassten Aufzeichnungen den unterschiedlichen Zwecken genügen. Erfordern verschiedene Rechtsnormen gleichartige Aufzeichnungen, so ist eine mehrfache Aufzeichnung für jede Rechtsnorm nicht erforderlich.
+1.8 Bücher
+14
+Der Begriff ist funktional unter Anknüpfung an die handelsrechtliche Bedeutung zu verstehen. Die äußere Gestalt (gebundenes Buch, Loseblattsammlung oder Datenträger) ist unerheblich.
+15
+Der Kaufmann ist verpflichtet, in den Büchern seine Handelsgeschäfte und die Lage des Vermögens ersichtlich zu machen (§ 238 Absatz 1 Satz 1 HGB). Der Begriff Bücher umfasst sowohl die Handelsbücher der Kaufleute (§§ 238 ff. HGB) als auch die diesen entsprechenden Aufzeichnungen von Geschäftsvorfällen der Nichtkaufleute. Bei Kleinunternehmen, deren Jahresumsatz die Vorjahresgrenze des § 19 Absatz 1 Satz 1 UStG in seiner jeweils gültigen Fassung nicht übersteigt und die ihren Gewinn durch Einnahmen-Überschussrechnung ermitteln, ist die Erfüllung der Anforderungen an die Aufzeichnungen nach den GoBD regelmäßig auch mit Blick auf die Unternehmensgröße zu bewerten.
+1.9 Geschäftsvorfälle
+16
+Geschäftsvorfälle sind alle rechtlichen und wirtschaftlichen Vorgänge, die innerhalb eines bestimmten Zeitabschnitts den Gewinn bzw. Verlust oder die Vermögenszusammensetzung in einem Unternehmen dokumentieren oder beeinflussen bzw. verändern (z. B. zu einer Veränderung des Anlage- und Umlaufvermögens sowie des Eigen- und Fremdkapitals führen).
+1.10 Grundsätze ordnungsmäßiger Buchführung (GoB)
+17
+Die GoB sind ein unbestimmter Rechtsbegriff, der insbesondere durch Rechtsnormen und Rechtsprechung geprägt ist und von der Rechtsprechung und Verwaltung jeweils im Einzelnen auszulegen und anzuwenden ist (BFH-Urteil vom 12. Mai 1966, BStBl III S. 371; BVerfG-Beschluss vom 10. Oktober 1961, 2 BvL 1/59, BVerfGE 13 S. 153).
+18
+Die GoB können sich durch gutachterliche Stellungnahmen, Handelsbrauch, ständige Übung, Gewohnheitsrecht, organisatorische und technische Änderungen weiterentwickeln und sind einem Wandel unterworfen.
+19
+Die GoB enthalten sowohl formelle als auch materielle Anforderungen an eine Buchführung. Die formellen Anforderungen ergeben sich insbesondere aus den §§ 238 ff. HGB für Kaufleute und aus den §§ 145 bis 147 AO für Buchführungs- und Aufzeichnungspflichtige (siehe unter 3.). Materiell ordnungsmäßig sind Bücher und Aufzeichnungen, wenn die Geschäftsvorfälle einzeln, nachvollziehbar, vollständig, richtig, zeitgerecht und geordnet in ihrer Auswirkung erfasst und anschließend gebucht bzw. verarbeitet sind (vgl. § 239 Absatz 2 HGB, § 145 AO, § 146 Absatz 1 AO). Siehe Rz. 11 zur Beweiskraft von Buchführung und Aufzeichnungen.
+1.11 Datenverarbeitungssystem; Haupt-, Vor- und Nebensysteme
+20
+Unter DV-System wird die im Unternehmen oder für Unternehmenszwecke zur elektronischen Datenverarbeitung eingesetzte Hard- und Software verstanden, mit denen Daten und Dokumente im Sinne der Rzn. 3 bis 5 erfasst, erzeugt, empfangen, übernommen, verarbeitet, gespeichert oder übermittelt werden. Dazu gehören das Hauptsystem sowie Vor- und Nebensysteme (z. B. Finanzbuchführungssystem, Anlagenbuchhaltung, Lohnbuchhaltungssystem, Kassensystem, Warenwirtschaftssystem, Zahlungsverkehrssystem, Taxameter, Geldspielgeräte, elektronische Waagen, Materialwirtschaft, Fakturierung, Zeiterfassung, Archivsystem, Dokumenten-Management-System) einschließlich der Schnittstellen zwischen den Systemen. Auf die Bezeichnung des DV-Systems oder auf dessen Größe (z. B. Einsatz von Einzelgeräten oder von Netzwerken) kommt es dabei nicht an. Ebenfalls kommt es nicht darauf an, ob die betreffenden DV-Systeme vom Steuerpflichtigen als eigene Hardware bzw. Software erworben und genutzt oder in einer Cloud bzw. als eine Kombination dieser Systeme betrieben werden.
+2. Verantwortlichkeit
+21
+Für die Ordnungsmäßigkeit elektronischer Bücher und sonst erforderlicher elektronischer Aufzeichnungen im Sinne der Rzn. 3 bis 5, einschließlich der eingesetzten Verfahren, ist allein der Steuerpflichtige verantwortlich. Dies gilt auch bei einer teilweisen oder vollständigen organisatorischen und technischen Auslagerung von Buchführungs- und Aufzeichnungsaufgaben auf Dritte (z. B. Steuerberater oder Rechenzentrum).
+3. Allgemeine Anforderungen
+22
+Die Ordnungsmäßigkeit elektronischer Bücher und sonst erforderlicher elektronischer Aufzeichnungen im Sinne der Rzn. 3 bis 5 ist nach den gleichen Prinzipien zu beurteilen wie die Ordnungsmäßigkeit bei manuell erstellten Büchern oder Aufzeichnungen.
+23
+Das Erfordernis der Ordnungsmäßigkeit erstreckt sich - neben den elektronischen Büchern und sonst erforderlichen Aufzeichnungen - auch auf die damit in Zusammenhang stehenden Verfahren und Bereiche des DV-Systems (siehe unter 1.11), da die Grundlage für die Ordnungsmäßigkeit elektronischer Bücher und sonst erforderlicher Aufzeichnungen bereits bei der Entwicklung und Freigabe von Haupt-, Vor- und Nebensystemen einschließlich des dabei angewandten DV-gestützten Verfahrens gelegt wird. Die Ordnungsmäßigkeit muss bei der Einrichtung und unternehmensspezifischen Anpassung des DV-Systems bzw. der DV-gestützten Verfahren im konkreten Unternehmensumfeld und für die Dauer der Aufbewahrungsfrist erhalten bleiben.
+24
+Die Anforderungen an die Ordnungsmäßigkeit ergeben sich aus:
+außersteuerlichen Rechtsnormen (z. B. den handelsrechtlichen GoB gem. §§ 238, 239, 257, 261 HGB), die gem. § 140 AO für das Steuerrecht nutzbar gemacht werden können, wenn sie für die Besteuerung von Bedeutung sind, und
+steuerlichen Ordnungsvorschriften (insbesondere gem. §§ 145 bis 147 AO).
+25
+Die allgemeinen Ordnungsvorschriften in den §§ 145 bis 147 AO gelten nicht nur für Buchführungs- und Aufzeichnungspflichten nach § 140 AO und nach den §§ 141 bis 144 AO. Insbesondere § 145 Absatz 2 AO betrifft alle zu Besteuerungszwecken gesetzlich geforderten Aufzeichnungen, also auch solche, zu denen der Steuerpflichtige aufgrund anderer Steuergesetze verpflichtet ist, wie z. B. nach § 4 Absatz 3 Satz 5, Absatz 7 EStG und nach § 22 UStG (BFH-Urteil vom 24. Juni 2009, BStBl II 2010 S. 452).
+26
+Demnach sind bei der Führung von Büchern in elektronischer oder in Papierform und sonst erforderlicher Aufzeichnungen in elektronischer oder in Papierform im Sinne der Rzn. 3 bis 5 die folgenden Anforderungen zu beachten:
+Grundsatz der Nachvollziehbarkeit und Nachprüfbarkeit (siehe unter 3.1),
+Grundsätze der Wahrheit, Klarheit und fortlaufenden Aufzeichnung (siehe unter 3.2):
+Vollständigkeit (siehe unter 3.2.1),
+Einzelaufzeichnungspflicht (siehe unter 3.2.1),
+Richtigkeit (siehe unter 3.2.2),
+zeitgerechte Buchungen und Aufzeichnungen (siehe unter 3.2.3),
+Ordnung (siehe unter 3.2.4),
+Unveränderbarkeit (siehe unter 3.2.5).
+27
+Diese Grundsätze müssen während der Dauer der Aufbewahrungsfrist nachweisbar erfüllt werden und erhalten bleiben.
+28
+Nach § 146 Absatz 6 AO gelten die Ordnungsvorschriften auch dann, wenn der Unternehmer elektronische Bücher und Aufzeichnungen führt, die für die Besteuerung von Bedeutung sind, ohne hierzu verpflichtet zu sein.
+29
+Der Grundsatz der Wirtschaftlichkeit rechtfertigt es nicht, dass Grundprinzipien der Ordnungsmäßigkeit verletzt und die Zwecke der Buchführung erheblich gefährdet werden. Die zur Vermeidung einer solchen Gefährdung erforderlichen Kosten muss der Steuerpflichtige genauso in Kauf nehmen wie alle anderen Aufwendungen, die die Art seines Betriebes mit sich bringt (BFH-Urteil vom 26. März 1968, BStBl II S. 527).
+3.1 Grundsatz der Nachvollziehbarkeit und Nachprüfbarkeit (§ 145 Absatz 1 AO, § 238 Absatz 1 Satz 2 und Satz 3 HGB)
+30
+Die Verarbeitung der einzelnen Geschäftsvorfälle sowie das dabei angewandte Buchführungs- oder Aufzeichnungsverfahren müssen nachvollziehbar sein. Die Buchungen und die sonst erforderlichen Aufzeichnungen müssen durch einen Beleg nachgewiesen sein oder nachgewiesen werden können (Belegprinzip, siehe auch unter 4.).
+31
+Aufzeichnungen sind so vorzunehmen, dass der Zweck, den sie für die Besteuerung erfüllen sollen, erreicht wird. Damit gelten die nachfolgenden Anforderungen der progressiven und retrograden Prüfbarkeit - soweit anwendbar - sinngemäß.
+32
+Die Buchführung muss so beschaffen sein, dass sie einem sachverständigen Dritten innerhalb angemessener Zeit einen Überblick über die Geschäftsvorfälle und über die Lage des Unternehmens vermitteln kann. Die einzelnen Geschäftsvorfälle müssen sich in ihrer Entstehung und Abwicklung lückenlos verfolgen lassen (progressive und retrograde Prüfbarkeit).
+33
+Die progressive Prüfung beginnt beim Beleg, geht über die Grund(buch)aufzeichnungen und Journale zu den Konten, danach zur Bilanz mit Gewinn- und Verlustrechnung und schließlich zur Steueranmeldung bzw. Steuererklärung. Die retrograde Prüfung verläuft umgekehrt. Die progressive und retrograde Prüfung muss für die gesamte Dauer der Aufbewahrungsfrist und in jedem Verfahrensschritt möglich sein.
+34
+Die Nachprüfbarkeit der Bücher und sonst erforderlichen Aufzeichnungen erfordert eine aussagekräftige und vollständige Verfahrensdokumentation (siehe unter 10.1), die sowohl die aktuellen als auch die historischen Verfahrensinhalte für die Dauer der Aufbewahrungsfrist nachweist und den in der Praxis eingesetzten Versionen des DV-Systems entspricht.
+35
+Die Nachvollziehbarkeit und Nachprüfbarkeit muss für die Dauer der Aufbewahrungsfrist gegeben sein. Dies gilt auch für die zum Verständnis der Buchführung oder Aufzeichnungen erforderliche Verfahrensdokumentation.
+3.2 Grundsätze der Wahrheit, Klarheit und fortlaufenden Aufzeichnung
+3.2.1 Vollständigkeit (§ 146 Absatz 1 AO, § 239 Absatz 2 HGB)
+36
+Die Geschäftsvorfälle sind vollzählig und lückenlos aufzuzeichnen (Grundsatz der Einzelaufzeichnungspflicht; vgl. AEAO zu § 146 AO Nr. 2.1). Eine vollzählige und lückenlose Aufzeichnung von Geschäftsvorfällen ist auch dann gegeben, wenn zulässigerweise nicht alle Datenfelder eines Datensatzes gefüllt werden.
+37
+Die GoB erfordern in der Regel die Aufzeichnung jedes Geschäftsvorfalls - also auch jeder Betriebseinnahme und Betriebsausgabe, jeder Einlage und Entnahme - in einem Umfang, der eine Überprüfung seiner Grundlagen, seines Inhalts und seiner Bedeutung für den Betrieb ermöglicht. Das bedeutet nicht nur die Aufzeichnung der in Geld bestehenden Gegenleistung, sondern auch des Inhalts des Geschäfts und des Namens des Vertragspartners (BFH-Urteil vom 12. Mai 1966, BStBl III S. 371) - soweit zumutbar, mit ausreichender Bezeichnung des Geschäftsvorfalls (BFH-Urteil vom 1. Oktober 1969, BStBl 1970 II S. 45). Branchenspezifische Mindestaufzeichnungspflichten und Zumutbarkeitsgesichtspunkte sind zu berücksichtigen.
+Beispiele 2 zu branchenspezifisch entbehrlichen Aufzeichnungen und zur Zumutbarkeit:
+In einem Einzelhandelsgeschäft kommt zulässigerweise eine PC-Kasse ohne Kundenverwaltung zum Einsatz. Die Namen der Kunden werden bei Bargeschäften nicht erfasst und nicht beigestellt. - Keine Beanstandung.
+Bei einem Taxiunternehmer werden Angaben zum Kunden im Taxameter nicht erfasst und nicht beigestellt. - Keine Beanstandung.
+38
+Dies gilt auch für Bareinnahmen; der Umstand der sofortigen Bezahlung rechtfertigt keine Ausnahme von diesem Grundsatz (BFH-Urteil vom 26. Februar 2004, BStBl II S. 599).
+39
+Die Aufzeichnung jedes einzelnen Geschäftsvorfalls ist nur dann nicht zumutbar, wenn es technisch, betriebswirtschaftlich und praktisch unmöglich ist, die einzelnen Geschäftsvorfälle aufzuzeichnen (BFH-Urteil vom 12. Mai 1966, IV 472/60, BStBl III S. 371). Das Vorliegen dieser Voraussetzungen ist durch den Steuerpflichtigen nachzuweisen.
+Beim Verkauf von Waren an eine Vielzahl von nicht bekannten Personen gegen Barzahlung gilt die Einzelaufzeichnungspflicht nach § 146 Absatz 1 Satz 1 AO aus Zumutbarkeitsgründen nicht, wenn kein elektronisches Aufzeichnungssystem, sondern eine offene Ladenkasse verwendet wird (§ 146 Absatz 1 Satz 3 und 4 AO, vgl. AEAO zu § 146, Nr. 2.2.2.) Bei Vorliegen der übrigen Voraussetzungen des § 146 Absatz 1 Satz 3 AO ist die Zumutbarkeit nicht gesondert zu prüfen. Wird hingegen ein elektronisches Aufzeichnungssystem verwendet, gilt die Einzelaufzeichnungspflicht nach § 146 Absatz 1 Satz 1 AO unabhängig davon, ob das elektronische Aufzeichnungssystem und die digitalen Aufzeichnungen nach § 146a Absatz 3 AO i. V. m. der KassenSichV mit einer zertifizierten technischen Sicherheitseinrichtung zu schützen sind. Die Zumutbarkeitsüberlegungen, die der Ausnahmeregelung nach § 146 Absatz 1 Satz 3 AO zugrunde liegen, sind grundsätzlich auch auf Dienstleistungen übertragbar (vgl. AEAO zu § 146, Nr. 2.2.6).
+40
+Die vollständige und lückenlose Erfassung und Wiedergabe aller Geschäftsvorfälle ist bei DV-Systemen durch ein Zusammenspiel von technischen (einschließlich programmierten) und organisatorischen Kontrollen sicherzustellen (z. B. Erfassungskontrollen, Plausibilitätskontrollen bei Dateneingaben, inhaltliche Plausibilitätskontrollen, automatisierte Vergabe von Datensatznummern, Lückenanalyse oder Mehrfachbelegungsanalyse bei Belegnummern).
+41
+Ein und derselbe Geschäftsvorfall darf nicht mehrfach aufgezeichnet werden.
+Beispiel 3:
+Ein Wareneinkauf wird gewinnwirksam durch Erfassung des zeitgleichen Lieferscheins und später nochmals mittels Erfassung der (Sammel)Rechnung erfasst und verbucht. Keine mehrfache Aufzeichnung eines Geschäftsvorfalles in verschiedenen Systemen oder mit verschiedenen Kennungen (z. B. für Handelsbilanz, für steuerliche Zwecke) liegt vor, soweit keine mehrfache bilanzielle oder gewinnwirksame Auswirkung gegeben ist.
+42
+Zusammengefasste oder verdichtete Aufzeichnungen im Hauptbuch (Konto) sind zulässig, sofern sie nachvollziehbar in ihre Einzelpositionen in den Grund(buch)aufzeichnungen oder des Journals aufgegliedert werden können. Andernfalls ist die Nachvollziehbarkeit und Nachprüfbarkeit nicht gewährleistet.
+43
+Die Erfassung oder Verarbeitung von tatsächlichen Geschäftsvorfällen darf nicht unterdrückt werden. So ist z. B. eine Bon- oder Rechnungserteilung ohne Registrierung der bar vereinnahmten Beträge (Abbruch des Vorgangs) in einem DV-System unzulässig. Auf § 146a Absatz 2 AO wird hingewiesen.
+3.2.2 Richtigkeit (§ 146 Absatz 1 AO, § 239 Absatz 2 HGB)
+44
+Geschäftsvorfälle sind in Übereinstimmung mit den tatsächlichen Verhältnissen und im Einklang mit den rechtlichen Vorschriften inhaltlich zutreffend durch Belege abzubilden (BFH-Urteil vom 24. Juni 1997, BStBl II 1998 S. 51), der Wahrheit entsprechend aufzuzeichnen und bei kontenmäßiger Abbildung zutreffend zu kontieren.
+3.2.3 Zeitgerechte Buchungen und Aufzeichnungen (§ 146 Absatz 1 AO, § 239 Absatz 2 HGB)
+45
+Das Erfordernis „zeitgerecht“ zu buchen verlangt, dass ein zeitlicher Zusammenhang zwischen den Vorgängen und ihrer buchmäßigen Erfassung besteht (BFH-Urteil vom 25. März 1992, BStBl II S. 1010; BFH-Urteil vom 5. März 1965, BStBl III S. 285).
+46
+Jeder Geschäftsvorfall ist zeitnah, d. h. möglichst unmittelbar nach seiner Entstehung in einer Grundaufzeichnung oder in einem Grundbuch zu erfassen. Nach den GoB müssen die Geschäftsvorfälle grundsätzlich laufend gebucht werden (Journal). Es widerspricht dem Wesen der kaufmännischen Buchführung, sich zunächst auf die Sammlung von Belegen zu beschränken und nach Ablauf einer langen Zeit auf Grund dieser Belege die Geschäftsvorfälle in Grundaufzeichnungen oder Grundbüchern einzutragen (vgl. BFH-Urteil vom 10. Juni 1954, BStBl III S. 298). Die Funktion der Grund(buch)aufzeichnungen kann auf Dauer auch durch eine geordnete und übersichtliche Belegablage erfüllt werden (§ 239 Absatz 4 HGB; § 146 Absatz 5 AO; H 5.2 „Grundbuchaufzeichnungen“ EStH).
+47
+Jede nicht durch die Verhältnisse des Betriebs oder des Geschäftsvorfalls zwingend bedingte Zeitspanne zwischen dem Eintritt des Vorganges und seiner laufenden Erfassung in Grund(buch)aufzeichnungen ist bedenklich. Eine Erfassung von unbaren Geschäftsvorfällen innerhalb von zehn Tagen ist unbedenklich. Wegen der Forderung nach zeitnaher chronologischer Erfassung der Geschäftsvorfälle ist zu verhindern, dass die Geschäftsvorfälle buchmäßig für längere Zeit in der Schwebe gehalten werden und sich hierdurch die Möglichkeit eröffnet, sie später anders darzustellen, als sie richtigerweise darzustellen gewesen wären, oder sie ganz außer Betracht zu lassen und im privaten, sich in der Buchführung nicht niederschlagenden Bereich abzuwickeln. Bei zeitlichen Abständen zwischen der Entstehung eines Geschäftsvorfalls und seiner Erfassung sind daher geeignete Maßnahmen zur Sicherung der Vollständigkeit zu treffen.
+48
+Kasseneinnahmen und Kassenausgaben sind nach § 146 Absatz 1 Satz 2 AO täglich festzuhalten.
+49
+Es ist nicht zu beanstanden, wenn Waren- und Kostenrechnungen, die innerhalb von acht Tagen nach Rechnungseingang oder innerhalb der ihrem gewöhnlichen Durchlauf durch den Betrieb entsprechenden Zeit beglichen werden, kontokorrentmäßig nicht (z. B. Geschäftsfreundebuch, Personenkonten) erfasst werden (vgl. R 5.2 Absatz 1 EStR).
+50
+Werden bei der Erstellung der Bücher Geschäftsvorfälle nicht laufend, sondern nur periodenweise gebucht bzw. den Büchern vergleichbare Aufzeichnungen der Nichtbuchführungspflichtigen nicht laufend, sondern nur periodenweise erstellt, dann ist dies unter folgenden Voraussetzungen nicht zu beanstanden:
+Die Geschäftsvorfälle werden vorher zeitnah (bare Geschäftsvorfälle täglich, unbare Geschäftsvorfälle innerhalb von zehn Tagen) in Grund(buch)aufzeichnungen oder Grundbüchern festgehalten und durch organisatorische Vorkehrungen ist sichergestellt, dass die Unterlagen bis zu ihrer Erfassung nicht verloren gehen, z. B. durch laufende Nummerierung der eingehenden und ausgehenden Rechnungen, durch Ablage in besonderen Mappen und Ordnern oder durch elektronische Grund(buch)aufzeichnungen in Kassensystemen, Warenwirtschaftssystemen, Fakturierungssystemen etc.,
+die Vollständigkeit der Geschäftsvorfälle wird im Einzelfall gewährleistet und
+es wurde zeitnah eine Zuordnung (Kontierung, mindestens aber die Zuordnung betrieblich / privat, Ordnungskriterium für die Ablage) vorgenommen.
+51
+Jeder Geschäftsvorfall ist periodengerecht der Abrechnungsperiode zuzuordnen, in der er angefallen ist. Zwingend ist die Zuordnung zum jeweiligen Geschäftsjahr oder zu einer nach Gesetz, Satzung oder Rechnungslegungszweck vorgeschriebenen kürzeren Rechnungsperiode.
+52
+Erfolgt die Belegsicherung oder die Erfassung von Geschäftsvorfällen unmittelbar nach Eingang oder Entstehung mittels DV-System (elektronische Grund(buch)aufzeichnungen), so stellt sich die Frage der Zumutbarkeit und Praktikabilität hinsichtlich der zeitgerechten Erfassung/Belegsicherung und längerer Fristen nicht. Erfüllen die Erfassungen Belegfunktion bzw. dienen sie der Belegsicherung (auch für Vorsysteme, wie Kasseneinzelaufzeichnungen und Warenwirtschaftssystem), dann ist eine unprotokollierte Änderung nicht mehr zulässig (siehe unter 3.2.5). Bei zeitlichen Abständen zwischen Erfassung und Buchung, die über den Ablauf des folgenden Monats hinausgehen, sind die Ordnungsmäßigkeitsanforderungen nur dann erfüllt, wenn die Geschäftsvorfälle vorher fortlaufend richtig und vollständig in Grund(buch)aufzeichnungen oder Grundbüchern festgehalten werden (vgl. Rz. 50). Zur Erfüllung der Funktion der Grund(buch)aufzeichnung vgl. Rz. 46.
+3.2.4 Ordnung (§ 146 Absatz 1 AO, § 239 Absatz 2 HGB)
+53
+Der Grundsatz der Klarheit verlangt u. a. eine systematische Erfassung und übersichtliche, eindeutige und nachvollziehbare Buchungen.
+54
+Die geschäftlichen Unterlagen dürfen nicht planlos gesammelt und aufbewahrt werden. Ansonsten würde dies mit zunehmender Zahl und Verschiedenartigkeit der Geschäftsvorfälle zur Unübersichtlichkeit der Buchführung führen, einen jederzeitigen Abschluss unangemessen erschweren und die Gefahr erhöhen, dass Unterlagen verlorengehen oder später leicht aus dem Buchführungswerk entfernt werden können. Hieraus folgt, dass die Bücher und Aufzeichnungen nach bestimmten Ordnungsprinzipien geführt werden müssen und eine Sammlung und Aufbewahrung der Belege notwendig ist, durch die im Rahmen des Möglichen gewährleistet wird, dass die Geschäftsvorfälle leicht und identifizierbar feststellbar und für einen die Lage des Vermögens darstellenden Abschluss unverlierbar sind (BFH-Urteil vom 26. März 1968, BStBl II S. 527).
+55
+In der Regel verstößt die nicht getrennte Verbuchung von baren und unbaren Geschäftsvorfällen oder von nicht steuerbaren, steuerfreien und steuerpflichtigen Umsätzen ohne genügende Kennzeichnung gegen die Grundsätze der Wahrheit und Klarheit einer kaufmännischen Buchführung. Die nicht getrennte Aufzeichnung von nicht steuerbaren, steuerfreien und steuerpflichtigen Umsätzen ohne genügende Kennzeichnung verstößt in der Regel gegen steuerrechtliche Anforderungen (z. B. § 22 UStG). Eine kurzzeitige gemeinsame Erfassung von baren und unbaren Tagesgeschäften im Kassenbuch ist regelmäßig nicht zu beanstanden, wenn die ursprünglich im Kassenbuch erfassten unbaren Tagesumsätze (z. B. EC-Kartenumsätze) gesondert kenntlich gemacht sind und nachvollziehbar unmittelbar nachfolgend wieder aus dem Kassenbuch auf ein gesondertes Konto aus- bzw. umgetragen werden, soweit die Kassensturzfähigkeit der Kasse weiterhin gegeben ist.
+56
+Bei der doppelten Buchführung sind die Geschäftsvorfälle so zu verarbeiten, dass sie geordnet darstellbar sind und innerhalb angemessener Zeit ein Überblick über die Vermögens- und Ertragslage gewährleistet ist.
+57
+Die Buchungen müssen einzeln und sachlich geordnet nach Konten dargestellt (Kontenfunktion) und unverzüglich lesbar gemacht werden können. Damit bei Bedarf für einen zurückliegenden Zeitpunkt ein Zwischenstatus oder eine Bilanz mit Gewinn- und Verlustrechnung aufgestellt werden kann, sind die Konten nach Abschlusspositionen zu sammeln und nach Kontensummen oder Salden fortzuschreiben (Hauptbuch, siehe unter 5.4).
+3.2.5 Unveränderbarkeit (§ 146 Absatz 4 AO, § 239 Absatz 3 HGB)
+58
+Eine Buchung oder eine Aufzeichnung darf nicht in einer Weise verändert werden, dass der ursprüngliche Inhalt nicht mehr feststellbar ist. Auch solche Veränderungen dürfen nicht vorgenommen werden, deren Beschaffenheit es ungewiss lässt, ob sie ursprünglich oder erst später gemacht worden sind (§ 146 Absatz 4 AO, § 239 Absatz 3 HGB).
+59
+Veränderungen und Löschungen von und an elektronischen Buchungen oder Aufzeichnungen (vgl. Rzn. 3 bis 5) müssen daher so protokolliert werden, dass die Voraussetzungen des § 146 Absatz 4 AO bzw. § 239 Absatz 3 HGB erfüllt sind (siehe auch unter 8). Für elektronische Dokumente und andere elektronische Unterlagen, die gem. § 147 AO aufbewahrungspflichtig und nicht Buchungen oder Aufzeichnungen sind, gilt dies sinngemäß.
+Beispiel 4:
+Der Steuerpflichtige erstellt über ein Fakturierungssystem Ausgangsrechnungen und bewahrt die inhaltlichen Informationen elektronisch auf (zum Beispiel in seinem Fakturierungssystem). Die Lesbarmachung der abgesandten Handels- und Geschäftsbriefe aus dem Fakturierungssystem erfolgt jeweils unter Berücksichtigung der in den aktuellen Stamm- und Bewegungsdaten enthaltenen Informationen.
+In den Stammdaten ist im Jahr 01 der Steuersatz 16 % und der Firmenname des Kunden A hinterlegt. Durch Umfirmierung des Kunden A zu B und Änderung des Steuersatzes auf 19 % werden die Stammdaten im Jahr 02 geändert. Eine Historisierung der Stammdaten erfolgt nicht.
+Der Steuerpflichtige ist im Jahr 02 nicht mehr in der Lage, die inhaltliche Übereinstimmung der abgesandten Handels- und Geschäftsbriefe mit den ursprünglichen Inhalten bei Lesbarmachung sicher zu stellen.
+60
+Der Nachweis der Durchführung der in dem jeweiligen Verfahren vorgesehenen Kontrollen ist u. a. durch Verarbeitungsprotokolle sowie durch die Verfahrensdokumentation (siehe unter 6. und unter 10.1) zu erbringen.
+4. Belegwesen (Belegfunktion)
+61
+Jeder Geschäftsvorfall ist urschriftlich bzw. als Kopie der Urschrift zu belegen. Ist kein Fremdbeleg vorhanden, muss ein Eigenbeleg erstellt werden. Zweck der Belege ist es, den sicheren und klaren Nachweis über den Zusammenhang zwischen den Vorgängen in der Realität einerseits und dem aufgezeichneten oder gebuchten Inhalt in Büchern oder sonst erforderlichen Aufzeichnungen und ihre Berechtigung andererseits zu erbringen (Belegfunktion). Auf die Bezeichnung als „Beleg“ kommt es nicht an. Die Belegfunktion ist die Grundvoraussetzung für die Beweiskraft der Buchführung und sonst erforderlicher Aufzeichnungen. Sie gilt auch bei Einsatz eines DV-Systems.
+62
+Inhalt und Umfang der in den Belegen enthaltenen Informationen sind insbesondere von der Belegart (z. B. Aufträge, Auftragsbestätigungen, Bescheide über Steuern oder der Gebühren, betriebliche Kontoauszüge, Gutschriften, Lieferscheine, Lohn- und Gehaltsabrechnungen, Barquittungen, Rechnungen, Verträge, Zahlungsbelege) und der eingesetzten Verfahren abhängig.
+63
+Empfangene oder abgesandte Handels- oder Geschäftsbriefe erhalten erst mit dem Kontierungsvermerk und der Verbuchung auch die Funktion eines Buchungsbelegs.
+64
+Zur Erfüllung der Belegfunktionen sind deshalb Angaben zur Kontierung, zum Ordnungskriterium für die Ablage und zum Buchungsdatum auf dem Papierbeleg erforderlich. Bei einem elektronischen Beleg kann dies auch durch die Verbindung mit einem Datensatz mit Angaben zur Kontierung oder durch eine elektronische Verknüpfung (z. B. eindeutiger Index, Barcode) erfolgen. Ein Steuerpflichtiger hat andernfalls durch organisatorische Maßnahmen sicherzustellen, dass die Geschäftsvorfälle auch ohne Angaben auf den Belegen in angemessener Zeit progressiv und retrograd nachprüfbar sind.
+Korrektur- bzw. Stornobuchungen müssen auf die ursprüngliche Buchung rückbeziehbar sein.
+65
+Ein Buchungsbeleg in Papierform oder in elektronischer Form (z. B. Rechnung) kann einen oder mehrere Geschäftsvorfälle enthalten.
+66
+Aus der Verfahrensdokumentation (siehe unter 10.1) muss ersichtlich sein, wie die elektronischen Belege erfasst, empfangen, verarbeitet, ausgegeben und aufbewahrt (zur Aufbewahrung siehe unter 9.) werden.
+4.1 Belegsicherung
+67
+Die Belege in Papierform oder in elektronischer Form sind zeitnah, d. h. möglichst unmittelbar nach Eingang oder Entstehung gegen Verlust zu sichern (vgl. zur zeitgerechten Belegsicherung unter 3.2.3, vgl. zur Aufbewahrung unter 9.).
+68
+Bei Papierbelegen erfolgt eine Sicherung z. B. durch laufende Nummerierung der eingehenden und ausgehenden Lieferscheine und Rechnungen, durch laufende Ablage in besonderen Mappen und Ordnern, durch zeitgerechte Erfassung in Grund(buch)aufzeichnungen oder durch laufende Vergabe eines Barcodes und anschließende bildliche Erfassung der Papierbelege im Sinne des § 147 Absatz 2 AO (siehe Rz. 130).
+69
+Bei elektronischen Belegen (z. B. Abrechnung aus Fakturierung) kann die laufende Nummerierung automatisch vergeben werden (z. B. durch eine eindeutige Belegnummer).
+70
+Die Belegsicherung kann organisatorisch und technisch mit der Zuordnung zwischen Beleg und Grund(buch)aufzeichnung oder Buchung verbunden werden.
+4.2 Zuordnung zwischen Beleg und Grund(buch)aufzeichnung oder Buchung
+71
+Die Zuordnung zwischen dem einzelnen Beleg und der dazugehörigen Grund(buch)aufzeichnung oder Buchung kann anhand von eindeutigen Zuordnungsmerkmalen (z. B. Index, Paginiernummer, Dokumenten-ID) und zusätzlichen Identifikationsmerkmalen für die Papierablage oder für die Such- und Filtermöglichkeit bei elektronischer Belegablage gewährleistet werden. Gehören zu einer Grund(buch)aufzeichnung oder Buchung mehrere Belege (z. B. Rechnung verweist für Menge und Art der gelieferten Gegenstände nur auf Lieferschein), bedarf es zusätzlicher Zuordnungs- und Identifikationsmerkmale für die Verknüpfung zwischen den Belegen und der Grund(buch)aufzeichnung oder Buchung.
+72
+Diese Zuordnungs- und Identifizierungsmerkmale aus dem Beleg müssen bei der Aufzeichnung oder Verbuchung in die Bücher oder Aufzeichnungen übernommen werden, um eine progressive und retrograde Prüfbarkeit zu ermöglichen.
+73
+Die Ablage der Belege und die Zuordnung zwischen Beleg und Aufzeichnung müssen in angemessener Zeit nachprüfbar sein. So kann z. B. Beleg- oder Buchungsdatum, Kontoauszugnummer oder Name bei umfangreichem Beleganfall mangels Eindeutigkeit in der Regel kein geeignetes Zuordnungsmerkmal für den einzelnen Geschäftsvorfall sein.
+74
+Beispiel 5:
+Ein Steuerpflichtiger mit ausschließlich unbaren Geschäftsvorfällen erhält nach Abschluss eines jeden Monats von seinem Kreditinstitut einen Kontoauszug in Papierform mit vielen einzelnen Kontoblättern. Für die Zuordnung der Belege und Aufzeichnungen erfasst der Unternehmer ausschließlich die Kontoauszugsnummer. Allein anhand der Kontoauszugsnummer - ohne zusätzliche Angabe der Blattnummer und der Positionsnummer - ist eine Zuordnung von Beleg und Aufzeichnung oder Buchung in angemessener Zeit nicht nachprüfbar.
+4.3 Erfassungsgerechte Aufbereitung der Buchungsbelege
+75
+Eine erfassungsgerechte Aufbereitung der Buchungsbelege in Papierform oder die entsprechende Übernahme von Beleginformationen aus elektronischen Belegen (Daten, Datensätze, elektronische Dokumente und elektronische Unterlagen) ist sicherzustellen. Diese Aufbereitung der Belege ist insbesondere bei Fremdbelegen von Bedeutung, da der Steuerpflichtige im Allgemeinen keinen Einfluss auf die Gestaltung der ihm zugesandten Handels- und Geschäftsbriefe (z. B. Eingangsrechnungen) hat.
+76
+Werden neben bildhaften Urschriften auch elektronische Meldungen bzw. Datensätze ausgestellt (identische Mehrstücke derselben Belegart), ist die Aufbewahrung der tatsächlich weiterverarbeiteten Formate (buchungsbegründende Belege) ausreichend,
+sofern diese über die höchste maschinelle Auswertbarkeit verfügen. In diesem Fall erfüllt das Format mit der höchsten maschinellen Auswertbarkeit mit dessen vollständigem Dateninhalt die Belegfunktion und muss mit dessen vollständigem Inhalt gespeichert werden. Andernfalls sind beide Formate aufzubewahren. Dies gilt entsprechend, wenn mehrere elektronische Meldungen bzw. mehrere Datensätze ohne bildhafte Urschrift ausgestellt werden. Dies gilt auch für elektronische Meldungen bzw. Datensätze (strukturierte Daten, wie z. B. ein monatlicher Kontoauszug im CSV-Format oder als XML-Datei, strukturierter Teil einer E-Rechnung), für die inhaltsgleiche bildhafte Dokumente zusätzlich bereitgestellt werden. Eine zusätzliche Archivierung der inhaltsgleichen Dateien im PDF-Format oder papierhaften Belegen kann bei Erfüllung der Belegfunktion durch die strukturierten Dateien entfallen.
+Bei Einsatz eines Fakturierungsprogramms muss unter Berücksichtigung der vorgenannten Voraussetzungen keine bildhafte Kopie der Ausgangsrechnung (z. B. in Form einer PDF-Datei oder des PDF-Teils eines hybriden Rechnungsformats) ab Erstellung gespeichert bzw. aufbewahrt werden, wenn jederzeit auf Anforderung ein inhaltlich identisches Mehrstück der Ausgangsrechnung erstellt werden kann.
+Hierfür sind u. a. folgende Voraussetzungen zu beachten:
+Entsprechende Stammdaten (z. B. Debitoren, Warenwirtschaft etc.) werden laufend historisiert
+AGB werden ebenfalls historisiert und aus der Verfahrensdokumentation ist ersichtlich, welche AGB bei Erstellung der Originalrechnung verwendet wurden
+Originallayout des verwendeten Geschäftsbogens wird als Muster (Layer) gespeichert und bei Änderungen historisiert. Zudem ist aus der Verfahrensdokumentation ersichtlich, welches Format bei Erstellung der Originalrechnung verwendet wurde (idealerweise kann bei Ausdruck oder Lesbarmachung des Rechnungsdoppels dieses Originallayout verwendet werden).
+Weiterhin sind die Daten des Fakturierungsprogramms in maschinell auswertbarer Form und unveränderbar aufzubewahren.
+77
+Jedem Geschäftsvorfall muss ein Beleg zugrunde liegen, mit folgenden Inhalten:
+BezeichnungBegründung
+Eindeutige Belegnummer (z. B. Index, Paginiernummer, Dokumenten-ID, fortlaufende Rechnungsausgangsnummer)
+Angabe zwingend (§ 146 Absatz 1 Satz 1 AO, einzeln, vollständig, geordnet)
+Kriterium für Vollständigkeitskontrolle (Belegsicherung)
+Bei umfangreichem Beleganfall ist Zuordnung und Identifizierung regelmäßig nicht aus Belegdatum oder anderen Merkmalen eindeutig ableitbar.
+Sofern die Fremdbelegnummer eine eindeutige Zuordnung zulässt, kann auch diese verwendet werden.
+Belegaussteller und -empfängerSoweit dies zu den branchenüblichen Mindestaufzeichnungspflichten gehört und keine Aufzeichnungserleichterungen bestehen (z. B. § 33 UStDV)
+Betrag bzw. Mengen- oder Wertangaben, aus denen sich der zu buchende Betrag ergibtSoweit dies zu den branchenüblichen Mindestaufzeichnungspflichten gehört und keine Aufzeichnungserleichterungen bestehen (z. B. § 33 UStDV)
+Betrag bzw. Mengen- oder Wertangaben, aus denen sich der zu buchende Betrag ergibtAngabe zwingend (BFH vom 12. Mai 1966, BStBl III S. 371); Dokumentation einer Veränderung des Anlage- und Umlaufvermögens sowie des Eigen- und Fremdkapitals
+Währungsangabe und Wechselkurs bei FremdwährungHinweis auf BFH-Urteil vom 12. Mai 1966, BStBl III S. 371; BFH-Urteil vom 1. Oktober 1969, BStBl II 1970 S. 45
+Belegdatum
+Angabe zwingend (§ 146 Absatz 1 Satz 1 AO, zeitgerecht).
+Identifikationsmerkmale für eine chronologische Erfassung, bei Bargeschäften regelmäßig Zeitpunkt des Geschäftsvorfalls
+Evtl. zusätzliche Erfassung der Belegzeit bei umfangreichem Beleganfall erforderlich
+Verantwortlicher Aussteller, soweit vorhandenz. B. Bediener der Kasse
+Vgl. Rz. 85 zu den Inhalten der Grund(buch)aufzeichnungen.
+Vgl. Rz. 94 zu den Inhalten des Journals.
+78
+Für umsatzsteuerrechtliche Zwecke können weitere Angaben erforderlich sein. Dazu gehören beispielsweise die Rechnungsangaben nach §§ 14, 14a UStG und § 33 UStDV.
+79
+Buchungsbelege sowie abgesandte oder empfangene Handels- oder Geschäftsbriefe in Papierform oder in elektronischer Form enthalten darüber hinaus vielfach noch weitere Informationen, die zum Verständnis und zur Überprüfung der für die Besteuerung gesetzlich vorgeschriebenen Aufzeichnungen im Einzelfall von Bedeutung und damit ebenfalls aufzubewahren sind. Dazu gehören z. B.:
+Mengen- oder Wertangaben zur Erläuterung des Buchungsbetrags, sofern nicht bereits unter Rz. 77 berücksichtigt,
+Einzelpreis (z. B. zur Bewertung),
+Valuta, Fälligkeit (z. B. zur Bewertung),
+Angaben zu Skonti, Rabatten (z. B. zur Bewertung),
+Zahlungsart (bar, unbar),
+Angaben zu einer Steuerbefreiung.
+4.4 Besonderheiten
+80
+Bei DV-gestützten Prozessen wird der Nachweis der zutreffenden Abbildung von Geschäftsvorfällen oft nicht durch konventionelle Belege erbracht (z. B. Buchungen aus Fakturierungssätzen, die durch Multiplikation von Preisen mit entnommenen Mengen aus der Betriebsdatenerfassung gebildet werden). Die Erfüllung der Belegfunktion ist dabei durch die ordnungsgemäße Anwendung des jeweiligen Verfahrens wie folgt nachzuweisen:
+Dokumentation der programminternen Vorschriften zur Generierung der Buchungen,
+Nachweis oder Bestätigung, dass die in der Dokumentation enthaltenen Vorschriften einem autorisierten Änderungsverfahren unterlegen haben (u. a. Zugriffsschutz, Versionsführung, Test- und Freigabeverfahren),
+Nachweis der Anwendung des genehmigten Verfahrens sowie
+Nachweis der tatsächlichen Durchführung der einzelnen Buchungen.
+81
+Bei Dauersachverhalten sind die Ursprungsbelege Basis für die folgenden Automatikbuchungen. Bei (monatlichen) AfA-Buchungen nach Anschaffung eines abnutzbaren Wirtschaftsguts ist der Anschaffungsbeleg mit der AfA-Bemessungsgrundlage und weiteren Parametern (z. B. Nutzungsdauer) aufbewahrungspflichtig. Aus der Verfahrensdokumentation und der ordnungsmäßigen Anwendung des Verfahrens muss der automatische Buchungsvorgang nachvollziehbar sein.
+5. Aufzeichnung der Geschäftsvorfälle in zeitlicher Reihenfolge und in sachlicher Ordnung (Grund(buch)aufzeichnungen, Journal- und Kontenfunktion)
+82
+Der Steuerpflichtige hat organisatorisch und technisch sicherzustellen, dass die elektronischen Buchungen und sonst erforderlichen elektronischen Aufzeichnungen einzeln, vollständig, richtig, zeitgerecht und geordnet vorgenommen werden (§ 146 Absatz 1 Satz 1 AO, § 239 Absatz 2 HGB). Jede Buchung oder Aufzeichnung muss im Zusammenhang mit einem Beleg stehen (BFH-Urteil vom 24. Juni 1997, BStBl II 1998 S. 51).
+83
+Bei der doppelten Buchführung müssen alle Geschäftsvorfälle in zeitlicher Reihenfolge (Grund(buch)aufzeichnung, Journalfunktion) und in sachlicher Gliederung (Hauptbuch, Kontenfunktion, siehe unter 5.4) darstellbar sein. Im Hauptbuch bzw. bei der Kontenfunktion verursacht jeder Geschäftsvorfall eine Buchung auf mindestens zwei Konten (Soll- und Habenbuchung).
+84
+Die Erfassung der Geschäftsvorfälle in elektronischen Grund(buch)aufzeichnungen (siehe unter 5.1 und 5.2) und die Verbuchung im Journal (siehe unter 5.3) kann organisatorisch und zeitlich auseinanderfallen (z. B. Grund(buch)aufzeichnung in Form von Kassenauftragszeilen). Erfüllen die Erfassungen Belegfunktion bzw. dienen sie der Belegsicherung, dann ist eine unprotokollierte Änderung nicht mehr zulässig (vgl. Rzn. 58 und 59). In diesen Fällen gelten die Ordnungsvorschriften bereits mit der ersten Erfassung der Geschäftsvorfälle und der Daten und müssen über alle nachfolgenden Prozesse erhalten bleiben (z. B. Übergabe von Daten aus Vor- in Hauptsysteme).
+5.1 Erfassung in Grund(buch)aufzeichnungen
+85
+Die fortlaufende Aufzeichnung der Geschäftsvorfälle erfolgt zunächst in Papierform oder in elektronischen Grund(buch)aufzeichnungen (Grundaufzeichnungsfunktion), um die Belegsicherung und die Garantie der Unverlierbarkeit des Geschäftsvorfalls zu gewährleisten. Sämtliche Geschäftsvorfälle müssen der zeitlichen Reihenfolge nach und materiell mit ihrem richtigen und erkennbaren Inhalt festgehalten werden.
+Zu den aufzeichnungspflichtigen Inhalten gehören
+die in Rzn. 77, 78 und 79 enthaltenen Informationen,
+das Erfassungsdatum, soweit abweichend vom Buchungsdatum
+Begründung:
+Angabe zwingend (§ 146 Absatz 1 Satz 1 AO, zeitgerecht),
+Zeitpunkt der Buchungserfassung und -verarbeitung,
+Angabe der „Festschreibung“ (Veränderbarkeit nur mit Protokollierung) zwingend, soweit nicht Unveränderbarkeit automatisch mit Erfassung und Verarbeitung in Grund(buch)aufzeichnung.
+Vgl. Rz. 94 zu den Inhalten des Journals
+86
+Die Grund(buch)aufzeichnungen sind nicht an ein bestimmtes System gebunden.
+Jedes System, durch das die einzelnen Geschäftsvorfälle fortlaufend, vollständig und richtig festgehalten werden, so dass die Grundaufzeichnungsfunktion erfüllt wird, ist ordnungsmäßig (vgl. BFH-Urteil vom 26. März 1968, BStBl II S. 527 für Buchführungspflichtige).
+5.2 Digitale Grund(buch)aufzeichnungen
+87
+Sowohl beim Einsatz von Haupt- als auch von Vor- oder Nebensystemen ist eine Verbuchung im Journal des Hauptsystems (z. B. Finanzbuchhaltung) bis zum Ablauf des folgenden Monats nicht zu beanstanden, wenn die einzelnen Geschäftsvorfälle bereits in einem Vor- oder Nebensystem die Grundaufzeichnungsfunktion erfüllen und die Einzeldaten aufbewahrt werden.
+88
+Durch Erfassungs-, Übertragungs- und Verarbeitungskontrollen ist sicherzustellen, dass alle Geschäftsvorfälle vollständig erfasst oder übermittelt werden und danach nicht unbefugt (d. h. nicht ohne Zugriffsschutzverfahren) und nicht ohne Nachweis des vorausgegangenen Zustandes verändert werden können. Die Durchführung der Kontrollen ist zu protokollieren. Die konkrete Ausgestaltung der Protokollierung ist abhängig von der Komplexität und Diversifikation der Geschäftstätigkeit und der Organisationsstruktur sowie des eingesetzten DV-Systems.
+89
+Neben den Daten zum Geschäftsvorfall selbst müssen auch alle für die Verarbeitung erforderlichen Tabellendaten (Stammdaten, Bewegungsdaten, Metadaten wie z. B. Grund- oder Systemeinstellungen, geänderte Parameter), deren Historisierung und Programme gespeichert sein. Dazu gehören auch Informationen zu Kriterien, die eine Abgrenzung zwischen den steuerrechtlichen, den handelsrechtlichen und anderen Buchungen (z. B. nachrichtliche Datensätze zu Fremdwährungen, alternative Bewertungsmethoden, statistische Buchungen, GuV-Kontennullstellungen, Summenkonten) ermöglichen.
+5.3 Verbuchung im Journal (Journalfunktion)
+90
+Die Journalfunktion erfordert eine vollständige, zeitgerechte und formal richtige Erfassung, Verarbeitung und Wiedergabe der eingegebenen Geschäftsvorfälle. Sie dient dem Nachweis der tatsächlichen und zeitgerechten Verarbeitung der Geschäftsvorfälle.
+91
+Werden die unter 5.1 genannten Voraussetzungen bereits mit fortlaufender Verbu-chung im Journal erfüllt, ist eine zusätzliche Erfassung in Grund(buch)aufzeichnungen nicht erforderlich. Eine laufende Aufzeichnung unmittelbar im Journal genügt den Erfordernissen der zeitgerechten Erfassung in Grund(buch)aufzeichnungen (vgl. BFH-Urteil vom 16. September 1964, BStBl III S. 654). Zeitversetzte Buchungen im Journal genügen nur dann, wenn die Geschäftsvorfälle vorher fortlaufend richtig und vollständig in Grundaufzeichnungen oder Grundbüchern aufgezeichnet werden. Die Funktion der Grund(buch)aufzeichnungen kann auf Dauer auch durch eine geordnete und übersichtliche Belegablage erfüllt werden (§ 239 Absatz 4 HGB, § 146 Absatz 5 AO, H 5.2 „Grundbuchaufzeichnungen“ EStH; vgl. Rz. 46).
+92
+Die Journalfunktion ist nur erfüllt, wenn die gespeicherten Aufzeichnungen gegen Veränderung oder Löschung geschützt sind.
+93
+Fehlerhafte Buchungen können wirksam und nachvollziehbar durch Stornierungen oder Neubuchungen geändert werden (siehe unter 8.). Es besteht deshalb weder ein Bedarf noch die Notwendigkeit für weitere nachträgliche Veränderungen einer einmal erfolgten Buchung. Bei der doppelten Buchführung kann die Journalfunktion zusammen mit der Kontenfunktion erfüllt werden, indem bereits bei der erstmaligen Erfassung des Geschäftsvorfalls alle für die sachliche Zuordnung notwendigen Informationen erfasst werden.
+94
+Zur Erfüllung der Journalfunktion und zur Ermöglichung der Kontenfunktion sind bei der Buchung insbesondere die nachfolgenden Angaben zu erfassen oder bereit zu stellen:
+Eindeutige Belegnummer (siehe Rz. 77),
+Buchungsbetrag (siehe Rz. 77),
+Währungsangabe und Wechselkurs bei Fremdwährung (siehe Rz. 77),
+Hinreichende Erläuterung des Geschäftsvorfalls (siehe Rz. 77) - kann (bei Erfüllung der Journal- und Kontenfunktion) im Einzelfall bereits durch andere in Rz. 94 aufgeführte Angaben gegeben sein,
+Belegdatum, soweit nicht aus den Grundaufzeichnungen ersichtlich (siehe Rzn. 77 und 85)
+Buchungsdatum,
+Erfassungsdatum, soweit nicht aus der Grundaufzeichnung ersichtlich (siehe Rz. 85),
+Autorisierung soweit vorhanden,
+Buchungsperiode/Voranmeldungszeitraum (Ertragsteuer/Umsatzsteuer),
+Umsatzsteuersatz (siehe Rz. 78),
+Steuerschlüssel, soweit vorhanden (siehe Rz. 78),
+Umsatzsteuerbetrag (siehe Rz. 78),
+Umsatzsteuerkonto (siehe Rz. 78),
+Umsatzsteuer-Identifikationsnummer (siehe Rz. 78),
+Steuernummer (siehe Rz. 78),
+Konto und Gegenkonto,
+Kontoart (Aktiva, Passiva, Kapital, Aufwand, Ertrag, sonstige),
+Kontotyp (Bilanz, GuV, Debitor, Kreditor, steuerlicher Gewinn / außerbilanzielle Zu- und Abrechnungen, sonstige),
+Buchungsschlüssel (soweit vorhanden),
+Soll- und Haben-Betrag,
+eindeutige Identifikationsnummer (Schlüsselfeld) des Geschäftsvorfalls (soweit Aufteilung der Geschäftsvorfälle in Teilbuchungssätze [Buchungs-Halbsätze] oder zahlreiche Soll- oder Habenkonten [Splitbuchungen] vorhanden). Über die einheitliche und je Wirtschaftsjahr eindeutige Identifikationsnummer des Geschäftsvorfalls muss die Identifizierung und Zuordnung aller Teilbuchungen einschließlich Steuer-, Sammel-, Verrechnungs- und Interimskontenbuchungen eines Geschäftsvorfalls gewährleistet sein.
+5.4 Aufzeichnung der Geschäftsvorfälle in sachlicher Ordnung (Hauptbuch)
+95
+Die Geschäftsvorfälle sind so zu verarbeiten, dass sie geordnet darstellbar sind (Kontenfunktion) und damit die Grundlage für einen Überblick über die Vermögens- und Ertragslage darstellen. Zur Erfüllung der Kontenfunktion bei Bilanzierenden müssen Geschäftsvorfälle nach Sach- und Personenkonten geordnet dargestellt werden.
+96
+Die Kontenfunktion verlangt, dass die im Journal in zeitlicher Reihenfolge einzeln aufgezeichneten Geschäftsvorfälle auch in sachlicher Ordnung auf Konten dargestellt werden. Damit bei Bedarf für einen zurückliegenden Zeitpunkt ein Zwischenstatus oder eine Bilanz mit Gewinn- und Verlustrechnung aufgestellt werden kann, müssen Eröffnungsbilanzbuchungen und alle Abschlussbuchungen in den Konten enthalten sein. Die Konten sind nach Abschlussposition zu sammeln und nach Kontensummen oder Salden fortzuschreiben.
+97
+Werden innerhalb verschiedener Bereiche des DV-Systems oder zwischen unterschiedlichen DV-Systemen differierende Ordnungskriterien verwendet, so müssen entsprechende Zuordnungstabellen (z. B. elektronische Mappingtabellen) vorgehalten werden (z. B. Wechsel des Kontenrahmens, unterschiedliche Nummernkreise in Vor- und Hauptsystem). Dies gilt auch bei einer elektronischen Übermittlung von Daten an die Finanzbehörde (z. B. unterschiedliche Ordnungskriterien in Bilanz/GuV und EÜR einerseits und USt-Voranmeldung, LSt-Anmeldung, Anlage EÜR und E-Bilanz andererseits). Sollte die Zuordnung mit elektronischen Verlinkungen oder Schlüsselfeldern erfolgen, sind die Verlinkungen in dieser Form vorzuhalten.
+98
+Die vorstehenden Ausführungen gelten für die Nebenbücher entsprechend.
+99
+Bei der Übernahme verdichteter Zahlen ins Hauptsystem müssen die zugehörigen Einzelaufzeichnungen aus den Vor- und Nebensystemen erhalten bleiben.
+6. Internes Kontrollsystem (IKS)
+100
+Für die Einhaltung der Ordnungsvorschriften des § 146 AO (siehe unter 3.) hat der Steuerpflichtige Kontrollen einzurichten, auszuüben und zu protokollieren.
+Hierzu gehören beispielsweise
+Zugangs- und Zugriffsberechtigungskontrollen auf Basis entsprechender Zugangs- und Zugriffsberechtigungskonzepte (z. B. spezifische Zugangs- und Zugriffsberechtigungen),
+Funktionstrennungen,
+Erfassungskontrollen (Fehlerhinweise, Plausibilitätsprüfungen),
+Abstimmungskontrollen bei der Dateneingabe,
+Verarbeitungskontrollen,
+Schutzmaßnahmen gegen die beabsichtigte und unbeabsichtigte Verfälschung von Programmen, Daten und Dokumenten.
+Die konkrete Ausgestaltung des Kontrollsystems ist abhängig von der Komplexität und Diversifikation der Geschäftstätigkeit und der Organisationsstruktur sowie des eingesetzten DV-Systems.
+101
+Im Rahmen eines funktionsfähigen IKS muss auch anlassbezogen (z. B. Systemwechsel) geprüft werden, ob das eingesetzte DV-System tatsächlich dem dokumentierten System entspricht (siehe Rz. 155 zu den Rechtsfolgen bei fehlender oder ungenügender Verfahrensdokumentation).
+102
+Die Beschreibung des IKS ist Bestandteil der Verfahrensdokumentation (siehe unter 10.1).
+7. Datensicherheit
+103
+Der Steuerpflichtige hat sein DV-System gegen Verlust (z. B. Unauffindbarkeit, Vernichtung, Untergang und Diebstahl) zu sichern und gegen unberechtigte Eingaben und Veränderungen (z. B. durch Zugangs- und Zugriffskontrollen) zu schützen.
+104
+Werden die Daten, Datensätze, elektronischen Dokumente und elektronischen Unterlagen nicht ausreichend geschützt und können deswegen nicht mehr vorgelegt werden, so ist die Buchführung formell nicht mehr ordnungsmäßig.
+105
+Beispiel 6:
+Unternehmer überschreibt unwiderruflich die Finanzbuchhaltungsdaten des Vorjahres mit den Daten des laufenden Jahres.
+Die sich daraus ergebenden Rechtsfolgen sind vom jeweiligen Einzelfall abhängig.
+106
+Die Beschreibung der Vorgehensweise zur Datensicherung ist Bestandteil der Verfahrensdokumentation (siehe unter 10.1). Die konkrete Ausgestaltung der Beschreibung ist abhängig von der Komplexität und Diversifikation der Geschäftstätigkeit und der Organisationsstruktur sowie des eingesetzten DV-Systems.
+8. Unveränderbarkeit, Protokollierung von Änderungen
+107
+Nach § 146 Absatz 4 AO darf eine Buchung oder Aufzeichnung nicht in einer Weise verändert werden, dass der ursprüngliche Inhalt nicht mehr feststellbar ist. Auch solche Veränderungen dürfen nicht vorgenommen werden, deren Beschaffenheit es ungewiss lässt, ob sie ursprünglich oder erst später gemacht worden sind.
+108
+Das zum Einsatz kommende DV-Verfahren muss die Gewähr dafür bieten, dass alle Informationen (Programme und Datenbestände), die einmal in den Verarbeitungsprozess eingeführt werden (Beleg, Grundaufzeichnung, Buchung), nicht mehr unterdrückt oder ohne Kenntlichmachung überschrieben, gelöscht, geändert oder verfälscht werden können. Bereits in den Verarbeitungsprozess eingeführte Informationen (Beleg, Grundaufzeichnung, Buchung) dürfen nicht ohne Kenntlichmachung durch neue Daten ersetzt werden.
+109
+Beispiele 7 für unzulässige Vorgänge:
+Elektronische Grund(buch)aufzeichnungen aus einem Kassen- oder Warenwirtschaftssystem werden über eine Datenschnittstelle in ein Officeprogramm exportiert, dort unprotokolliert editiert und anschließend über eine Datenschnittstelle reimportiert.
+Vorerfassungen und Stapelbuchungen werden bis zur Erstellung des Jahresabschlusses und darüber hinaus offengehalten. Alle Eingaben können daher unprotokolliert geändert werden.
+110
+Die Unveränderbarkeit der Daten, Datensätze, elektronischen Dokumente und elektronischen Unterlagen (vgl. Rzn. 3 bis 5) kann sowohl hardwaremäßig (z. B. unveränderbare und fälschungssichere Datenträger) als auch softwaremäßig (z. B. Sicherungen, Sperren, Festschreibung, Löschmerker, automatische Protokollierung, Historisierungen, Versionierungen) als auch organisatorisch (z. B. mittels Zugriffsberechtigungskonzepten) gewährleistet werden. Die Ablage von Daten und elektronischen Dokumenten in einem Dateisystem erfüllt die Anforderungen der Unveränderbarkeit regelmäßig nicht, soweit nicht zusätzliche Maßnahmen ergriffen werden, die eine Unveränderbarkeit gewährleisten.
+111
+Spätere Änderungen sind ausschließlich so vorzunehmen, dass sowohl der ursprüngliche Inhalt als auch die Tatsache, dass Veränderungen vorgenommen wurden, erkennbar bleiben. Bei programmgenerierten bzw. programmgesteuerten Aufzeichnungen (automatisierte Belege bzw. Dauerbelege) sind Änderungen an den der Aufzeichnung zugrunde liegenden Generierungs- und Steuerungsdaten ebenfalls aufzuzeichnen. Dies betrifft insbesondere die Protokollierung von Änderungen in Einstellungen oder die Parametrisierung der Software. Bei einer Änderung von Stammdaten (z. B. Abkürzungs- oder Schlüsselverzeichnisse, Organisationspläne) muss die eindeutige Bedeutung in den entsprechenden Bewegungsdaten (z. B. Umsatzsteuerschlüssel, Währungseinheit, Kontoeigenschaft) erhalten bleiben. Ggf. müssen Stammdatenänderungen ausgeschlossen oder Stammdaten mit Gültigkeitsangaben historisiert werden, um mehrdeutige Verknüpfungen zu verhindern. Auch eine Änderungshistorie darf nicht nachträglich veränderbar sein.
+112
+Werden Systemfunktionalitäten oder Manipulationsprogramme eingesetzt, die diesen Anforderungen entgegenwirken, führt dies zur Ordnungswidrigkeit der elektronischen Bücher und sonst erforderlicher elektronischer Aufzeichnungen.
+Beispiel 8:
+Einsatz von Zappern, Phantomware, Backofficeprodukten mit dem Ziel unprotokollierter Änderungen elektronischer Einnahmenaufzeichnungen.
+9. Aufbewahrung
+113
+Der sachliche Umfang der Aufbewahrungspflicht in § 147 Absatz 1 AO besteht grundsätzlich nur im Umfang der Aufzeichnungspflicht (BFH-Urteil vom 24. Juni 2009, BStBl II 2010 S. 452; BFH-Urteil vom 26. Februar 2004, BStBl II S. 599).
+114
+Müssen Bücher für steuerliche Zwecke geführt werden, sind sie in vollem Umfang aufbewahrungs- und vorlagepflichtig (z. B. Finanzbuchhaltung hinsichtlich Drohverlustrückstellungen, nicht abziehbare Betriebsausgaben, organschaftliche Steuerumlagen; BFH-Beschluss vom 26. September 2007, BStBl II 2008 S. 415).
+115
+Auch Steuerpflichtige, die nach § 4 Absatz 3 EStG als Gewinn den Überschuss der Betriebseinnahmen über die Betriebsausgaben ansetzen, sind verpflichtet, Aufzeichnungen und Unterlagen nach § 147 Absatz 1 AO aufzubewahren (BFH-Urteil vom 24. Juni 2009, BStBl II 2010 S. 452; BFH-Urteil vom 26. Februar 2004, BStBl II S. 599).
+116
+Aufbewahrungspflichten können sich auch aus anderen Rechtsnormen (z. B. § 14b UStG) ergeben.
+117
+Die aufbewahrungspflichtigen Unterlagen müssen geordnet aufbewahrt werden. Ein bestimmtes Ordnungssystem ist nicht vorgeschrieben. Die Ablage kann z. B. nach Zeitfolge, Sachgruppen, Kontenklassen, Belegnummern oder alphabetisch erfolgen. Bei elektronischen Unterlagen ist ihr Eingang, ihre Archivierung und ggf. Konvertierung sowie die weitere Verarbeitung zu protokollieren. Es muss jedoch sichergestellt sein, dass ein sachverständiger Dritter innerhalb angemessener Zeit prüfen kann.
+118
+Die nach außersteuerlichen und steuerlichen Vorschriften aufzeichnungspflichtigen und nach § 147 Absatz 1 AO aufbewahrungspflichtigen Unterlagen können nach § 147 Absatz 2 AO bis auf wenige Ausnahmen auch als Wiedergabe auf einem Bildträger oder auf anderen Datenträgern aufbewahrt werden, wenn dies den GoB entspricht und sichergestellt ist, dass die Wiedergabe oder die Daten
+mit den empfangenen Handels- oder Geschäftsbriefen und den Buchungsbelegen bildlich und mit den anderen Unterlagen inhaltlich übereinstimmen, wenn sie lesbar gemacht werden,
+während der Dauer der Aufbewahrungsfrist jederzeit verfügbar sind, unverzüglich lesbar gemacht und maschinell ausgewertet werden können.
+Werden Buchungsbelege, Handels- oder Geschäftsbriefe in Form eines strukturierten Datensatzes (bspw. als E-Rechnungen) empfangen, bedarf es abweichend zu § 147 Absatz 2 Nr. 1 AO keiner bildlichen, sondern nur einer inhaltlichen Übereinstimmung.
+119
+Sind aufzeichnungs- und aufbewahrungspflichtige Daten, Datensätze, elektronische Dokumente und elektronische Unterlagen im Unternehmen entstanden oder dort eingegangen, sind sie auch in dieser Form aufzubewahren und dürfen vor Ablauf der Aufbewahrungsfrist nicht gelöscht werden. Sie dürfen daher nicht mehr ausschließlich in ausgedruckter Form aufbewahrt werden und müssen für die Dauer der Aufbewahrungsfrist unveränderbar erhalten bleiben (z. B. per E-Mail eingegangene Rechnung im PDF-Format oder bildlich erfasste Papierbelege). Dies gilt unabhängig davon, ob die Aufbewahrung im Produktivsystem oder durch Auslagerung in ein anderes DV-System erfolgt. Unter Zumutbarkeitsgesichtspunkten ist es nicht zu beanstanden, wenn der Steuerpflichtige elektronisch erstellte und in Papierform abgesandte Handels- und Geschäftsbriefe nur in Papierform aufbewahrt. Bei E-Rechnungen im Sinne des § 14 Absatz 1 Satz 3 und 6 UStG ist es ausreichend, wenn nur der strukturierte Teil aufbewahrt wird und die Anforderungen dieses Schreibens erfüllt werden. Eine Aufbewahrung des menschenlesbaren Datenteils einer hybriden E-Rechnung (z. B. des PDF-Teils einer ZUGFeRD-Rechnung) ist nur dann erforderlich, wenn zusätzliche oder abweichende Informationen enthalten sind, die für die Besteuerung von Bedeutung sind (z. B. Buchungsvermerke).
+120
+Beispiel 9 zu Rz. 119:
+Ein Steuerpflichtiger erstellt seine Ausgangsrechnungen mit einem Textverarbeitungsprogramm. Nach dem Ausdruck der jeweiligen Rechnung wird die hierfür verwendete Maske (Dokumentenvorlage) mit den Inhalten der nächsten Rechnung überschrieben. Es ist in diesem Fall nicht zu beanstanden, wenn das Doppel des versendeten Schreibens in diesem Fall nur als Papierdokument aufbewahrt wird. Werden die abgesandten Handels- und Geschäftsbriefe jedoch tatsächlich in elektronischer Form aufbewahrt (z. B. im File-System oder einem DMS-System), so ist eine ausschließliche Aufbewahrung in Papierform nicht mehr zulässig. Das Verfahren muss dokumentiert werden. Werden Handels- oder Geschäftsbriefe mit Hilfe eines Fakturierungssystems oder ähnlicher Anwendungen erzeugt, bleiben die elektronischen Daten aufbewahrungspflichtig.
+121
+Bei den Daten und Dokumenten ist - wie bei den Informationen in Papierbelegen - auf deren Inhalt und auf deren Funktion abzustellen, nicht auf deren Bezeichnung. So sind beispielsweise E-Mails mit der Funktion eines Handels- oder Geschäftsbriefs oder eines Buchungsbelegs in elektronischer Form aufbewahrungspflichtig. Dient eine E-Mail nur als „Transportmittel“, z. B. für eine angehängte elektronische Rechnung, und enthält darüber hinaus keine weitergehenden aufbewahrungspflichtigen Informationen, so ist diese nicht aufbewahrungspflichtig (wie der bisherige Papierbriefumschlag).
+Nicht aufbewahrungspflichtig ist auch der zur Dokumentation der technischen Abwicklung einer elektronischen Zahlung erzeugte Nachweis eines Zahlungsabwicklungsdienstes, sofern dieser nicht als Buchungsbeleg verwendet wird oder die einzige Form der Abrechnung mit dem Zahlungsabwicklungsdienst darstellt oder nur mit ihm eine eindeutige Abgrenzung zwischen baren und unbaren Geschäftsvorfällen in der Kassenbuchführung gewährleistet ist.
+122
+Ein elektronisches Dokument ist mit einem nachvollziehbaren und eindeutigen Index zu versehen. Der Erhalt der Verknüpfung zwischen Index und elektronischem Dokument muss während der gesamten Aufbewahrungsfrist gewährleistet sein. Es ist sicherzustellen, dass das elektronische Dokument unter dem zugeteilten Index verwaltet werden kann. Stellt ein Steuerpflichtiger durch organisatorische Maßnahmen sicher, dass das elektronische Dokument auch ohne Index verwaltet werden kann, und ist dies in angemessener Zeit nachprüfbar, so ist aus diesem Grund die Buchführung nicht zu beanstanden.
+123
+Das Anbringen von Buchungsvermerken, Indexierungen, Barcodes, farblichen Hervorhebungen usw. darf - unabhängig von seiner technischen Ausgestaltung - keinen Einfluss auf die Lesbarmachung des Originalzustands haben. Die elektronischen Bearbeitungsvorgänge sind zu protokollieren und mit dem elektronischen Dokument zu speichern, damit die Nachvollziehbarkeit und Prüfbarkeit des Originalzustands und seiner Ergänzungen gewährleistet ist.
+124
+(weggefallen)
+9.1 Maschinelle Auswertbarkeit (§ 147 Absatz 2 Nummer 2 AO)
+125
+Art und Umfang der maschinellen Auswertbarkeit sind nach den tatsächlichen Informations- und Dokumentationsmöglichkeiten zu beurteilen.
+Beispiel 10:
+E-Rechnungen in einem hybriden Format (z. B. Datenformat für elektronische Rechnungen ZUGFeRD (Zentraler User Guide des Forums elektronische Rechnung Deutschland))
+E-Rechnungen in einem hybriden Format bestehen neben dem strukturierten Datenteil (z. B. XML-Datei) auch aus einem Datenteil im Bildformat (z. B. PDF-Dokument). Entscheidend ist nicht, ob der Rechnungsempfänger nur das Rechnungsbild (PDF-Dokument) nutzt, sondern dass der strukturierte Datenteil (XML-Datei) vorhanden ist, der nicht durch eine Formatumwandlung (z. B. in TIFF) gelöscht werden darf. Entscheidend ist hier die Aufbewahrung des strukturieren Datenteils (z. B. XML-Datei).
+Sollte die PDF-Datei weitere, steuerlich relevante Informationen enthalten, z. B. Buchungsvermerke, so sind diese auch entsprechend aufzubewahren. Die maschinelle
+Auswertbarkeit in diesem Fall bezieht sich dann auch auf sämtliche Inhalte der PDF-Datei.
+126
+Eine maschinelle Auswertbarkeit ist nach diesem Beurteilungsmaßstab bei aufzeichnungs- und aufbewahrungspflichtigen Daten, Datensätzen, elektronischen Dokumenten und elektronischen Unterlagen (vgl. Rzn. 3 bis 5) u. a. gegeben, die
+mathematisch-technische Auswertungen ermöglichen,
+eine Volltextsuche ermöglichen,
+auch ohne mathematisch-technische Auswertungen eine Prüfung im weitesten Sinne ermöglichen (z. B. Bildschirmabfragen, die Nachverfolgung von Verknüpfungen und Verlinkungen oder die Textsuche nach bestimmten Eingabekriterien).
+127
+Mathematisch-technische Auswertung bedeutet, dass alle in den aufzeichnungs- und aufbewahrungspflichtigen Daten, Datensätzen, elektronischen Dokumenten und elektronischen Unterlagen (vgl. Rzn. 3 bis 5) enthaltenen Informationen automatisiert (DV-gestützt) interpretiert, dargestellt, verarbeitet sowie für andere Datenbankanwendungen und eingesetzte Prüfsoftware direkt, ohne weitere Konvertierungs- und Bearbeitungsschritte und ohne Informationsverlust nutzbar gemacht werden können (z. B. für wahlfreie Sortier-, Summier-, Verbindungs- und Filterungsmöglichkeiten).
+Mathematisch-technische Auswertungen sind z. B. möglich bei:
+Elektronischen Grund(buch)aufzeichnungen (z. B. Kassendaten, Daten aus Warenwirtschaftssystem, Inventurlisten),
+Journaldaten aus Finanzbuchhaltung oder Lohnbuchhaltung,
+Textdateien oder Dateien aus Tabellenkalkulationen mit strukturierten Daten in tabellarischer Form (z. B. Reisekostenabrechnung, Überstundennachweise),
+Sonstigen strukturierten Dateien (z. B. E-Rechnungen im Sinne des § 14 Absatz 1 Satz 3 und 6 UStG).
+128
+Neben den Daten in Form von Datensätzen und den elektronischen Dokumenten sind auch alle zur maschinellen Auswertung der Daten im Rahmen des Datenzugriffs notwendigen Strukturinformationen (z. B. über die Dateiherkunft [eingesetztes System], die Dateistruktur, die Datenfelder, verwendete Zeichensatztabellen) in maschinell auswertbarer Form sowie die internen und externen Verknüpfungen vollständig und in unverdichteter, maschinell auswertbarer Form aufzubewahren. Im Rahmen einer Datenüberlassung ist der Erhalt technischer Verlinkungen nicht erforderlich, sofern dies nicht möglich ist.
+129
+Die Reduzierung einer bereits bestehenden maschinellen Auswertbarkeit, beispielsweise durch Umwandlung des Dateiformats oder der Auswahl bestimmter Aufbewahrungsformen, ist nicht zulässig (siehe unter 9.2).
+Beispiele 11:
+Umwandlung von PDF/A-Dateien ab der Norm PDF/A-3 in ein Bildformat (z. B. TIFF, JPEG etc.), da dann die in den PDF/A-Dateien enthaltenen XML-Daten und ggf. auch vorhandene Volltextinformationen gelöscht werden.
+Umwandlung von elektronischen Grund(buch)aufzeichnungen (z. B. Kasse, Warenwirtschaft) in ein PDF-Format.
+Umwandlung von Journaldaten einer Finanzbuchhaltung oder Lohnbuchhaltung in ein PDF-Format.
+Eine Umwandlung in ein anderes Format (z. B. Inhouse-Format) ist zulässig, wenn die maschinelle Auswertbarkeit nicht eingeschränkt wird und keine inhaltliche Veränderung vorgenommen wird (siehe Rz. 135).
+Der Steuerpflichtige muss dabei auch berücksichtigen, dass entsprechende Einschränkungen in diesen Fällen zu seinen Lasten gehen können (z. B. Speicherung einer E-Mail als PDF-Datei; die Informationen des Headers [z. B. Informationen zum Absender] gehen dabei verloren und es ist nicht mehr nachvollziehbar, wie der tatsächliche Zugang der E-Mail erfolgt ist).
+9.2 Elektronische Aufbewahrung
+130
+Werden Handels- oder Geschäftsbriefe und Buchungsbelege in Papierform empfangen und danach elektronisch bildlich erfasst (z. B. gescannt oder fotografiert), ist das hierdurch entstandene elektronische Dokument so aufzubewahren, dass die Wiedergabe mit dem Original bildlich übereinstimmt, wenn es lesbar gemacht wird (§ 147 Absatz 2 AO). Eine bildliche Erfassung kann hierbei mit den verschiedensten Arten von Geräten (z. B. Smartphones, Multifunktionsgeräten oder Scan-Straßen) erfolgen, wenn die Anforderungen dieses Schreibens erfüllt sind. Werden bildlich erfasste Dokumente per Optical-Character-Recognition-Verfahren (OCR-Verfahren) um Volltextinformationen angereichert (zum Beispiel volltextrecherchierbare PDFs), so ist dieser Volltext nach Verifikation und Korrektur über die Dauer der Aufbewahrungsfrist aufzubewahren und auch für Prüfzwecke verfügbar zu machen. § 146 Absatz 2 AO steht einer bildlichen Erfassung durch mobile Geräte (z. B. Smartphones) im Ausland nicht entgegen, wenn die Belege im Ausland entstanden sind bzw. empfangen wurden und dort direkt erfasst werden (z. B. bei Belegen über eine Dienstreise im Ausland).
+131
+Eingehende elektronische Handels- oder Geschäftsbriefe und Buchungsbelege müssen in dem Format aufbewahrt werden, in dem sie empfangen wurden (z. B. Rechnungen im XML-Format oder Kontoauszüge im PDF- oder Bildformat).
+Eine Umwandlung (Konvertierung) in ein anderes Format (z. B. MSG in PDF) ist unter den Voraussetzungen der Rz. 135 zulässig. Erfolgt eine Anreicherung der Bildinformationen, z. B. durch OCR (Beispiel: Erzeugung einer volltextrecherchierbaren PDF-Datei im Erfassungsprozess), sind die dadurch gewonnenen Informationen nach Verifikation und Korrektur ebenfalls aufzubewahren.
+Bei E-Rechnungen im Sinne des § 14 Absatz 1 Satz 3 und 6 UStG ist es ausreichend, wenn der strukturierte Teil aufbewahrt wird und insbesondere die Anforderungen dieses Schreibens erfüllt werden. Eine zusätzliche Aufbewahrung des menschenlesbaren Datenteils einer E-Rechnung ist nur dann erforderlich, wenn zusätzliche oder abweichende Informationen enthalten sind, die für die Besteuerung von Bedeutung sind (z. B. Buchungsvermerke oder qualifizierte elektronische Signaturen).
+132
+Im DV-System erzeugte Daten im Sinne der Rzn. 3 bis 5 (z. B. Grund(buch)aufzeichnungen in Vor- und Nebensystemen, Buchungen, generierte Datensätze zur Erstellung von Ausgangsrechnungen) oder darin empfangene Daten (z. B. EDI-Verfahren) müssen im Ursprungsformat aufbewahrt werden.
+133
+Im DV-System erzeugte Dokumente (z. B. erstellte Ausgangsrechnungen [§ 14b UStG], elektronisch abgeschlossene Verträge, Handels- und Geschäftsbriefe, Verfahrensdokumentation) sind im Ursprungsformat aufzubewahren. Unter Zumutbarkeitsgesichtspunkten ist es nicht zu beanstanden, wenn der Steuerpflichtige elektronisch erstellte und in Papierform abgesandte Handels- und Geschäftsbriefe nur
+in Papierform aufbewahrt (Hinweis auf Rzn. 119, 120). Eine Umwandlung in ein anderes Format (z. B. Inhouse-Format) ist zulässig, wenn die maschinelle Auswertbarkeit nicht eingeschränkt wird und keine inhaltliche Veränderung vorgenommen wird (siehe Rz. 135).
+134
+Bei Einsatz von Kryptografietechniken ist sicherzustellen, dass die verschlüsselten Unterlagen im DV-System in entschlüsselter Form zur Verfügung stehen. Werden Signaturprüfschlüssel verwendet, sind die eingesetzten Schlüssel aufzubewahren. Die Aufbewahrungspflicht endet, wenn keine der mit den Schlüsseln signierten Unterlagen mehr aufbewahrt werden müssen.
+135
+Bei Umwandlung (Konvertierung) aufbewahrungspflichtiger Unterlagen in ein unternehmenseigenes Format (sog. Inhouse-Format) sind beide Versionen zu archivieren, derselben Aufzeichnung zuzuordnen und mit demselben Index zu verwalten sowie die konvertierte Version als solche zu kennzeichnen.
+Die Aufbewahrung beider Versionen ist bei Beachtung folgender Anforderungen nicht erforderlich, sondern es ist die Aufbewahrung der konvertierten Fassung ausreichend:
+Es wird keine bildliche oder inhaltliche Veränderung vorgenommen.
+Bei der Konvertierung gehen keine sonstigen aufbewahrungspflichtigen Informationen verloren.
+Die ordnungsgemäße und verlustfreie Konvertierung wird dokumentiert (Verfahrensdokumentation).
+Die maschinelle Auswertbarkeit und der Datenzugriff durch die Finanzbehörde werden nicht eingeschränkt; dabei ist es zulässig, wenn bei der Konvertierung Zwischenaggregationsstufen nicht gespeichert, aber in der Verfahrensdokumentation so dargestellt werden, dass die retrograde und progressive Prüfbarkeit sichergestellt ist.
+Nicht aufbewahrungspflichtig sind die während der maschinellen Verarbeitung durch das Buchführungssystem erzeugten Dateien, sofern diese ausschließlich einer temporären Zwischenspeicherung von Verarbeitungsergebnissen dienen und deren Inhalte im Laufe des weiteren Verarbeitungsprozesses vollständig Eingang in die Buchführungsdaten finden. Voraussetzung ist jedoch, dass bei der weiteren Verarbeitung keinerlei „Verdichtung“ aufzeichnungs- und aufbewahrungspflichtiger Daten (vgl. Rzn. 3 bis 5) vorgenommen wird.
+9.3 Bildliche Erfassung von Papierdokumenten
+136
+Papierdokumente werden durch die bildliche Erfassung (siehe Rz. 130) in elektronische Dokumente umgewandelt. Das Verfahren muss dokumentiert werden. Der Steuerpflichtige sollte daher eine Organisationsanweisung erstellen, die unter anderem regelt:
+wer erfassen darf,
+zu welchem Zeitpunkt erfasst wird oder erfasst werden soll (z. B. beim Posteingang, während oder nach Abschluss der Vorgangsbearbeitung),
+welches Schriftgut erfasst wird,
+ob eine bildliche oder inhaltliche Übereinstimmung mit dem Original erforderlich ist,
+wie die Qualitätskontrolle auf Lesbarkeit und Vollständigkeit und
+wie die Protokollierung von Fehlern zu erfolgen hat.
+Die konkrete Ausgestaltung dieser Verfahrensdokumentation ist abhängig von der Komplexität und Diversifikation der Geschäftstätigkeit und der Organisationsstruktur sowie des eingesetzten DV-Systems.
+Aus Vereinfachungsgründen (z. B. bei Belegen über eine Dienstreise im Ausland) steht § 146 Absatz 2 AO einer bildlichen Erfassung durch mobile Geräte (z. B. Smartphones) im Ausland nicht entgegen, wenn die Belege im Ausland entstanden sind bzw. empfangen wurden und dort direkt erfasst werden.
+Erfolgt im Zusammenhang mit einer auf § 146 Absatz 2a AO beruhenden oder nach § 146 Absatz 2b AO genehmigten Verlagerung der elektronischen Buchführung in einen oder mehrere ausländische Staaten eine ersetzende bildliche Erfassung, wird es nicht beanstandet, wenn die papierenen Ursprungsbelege zu diesem Zweck an den Ort der elektronischen Buchführung verbracht werden. Die bildliche Erfassung hat zeitnah zur Verbringung der Papierbelege ins Ausland zu erfolgen.
+137
+Eine vollständige Farbwiedergabe ist erforderlich, wenn der Farbe Beweisfunktion zukommt (z. B. Minusbeträge in roter Schrift, Sicht-, Bearbeitungs- und Zeichnungsvermerke in unterschiedlichen Farben).
+138
+Für Besteuerungszwecke ist eine elektronische Signatur oder ein Zeitstempel nicht erforderlich.
+139
+Im Anschluss an den Erfassungsvorgang (siehe Rz. 130) darf die weitere Bearbeitung nur mit dem elektronischen Dokument erfolgen. Die Papierbelege sind dem weiteren Bearbeitungsgang zu entziehen, damit auf diesen keine Bemerkungen, Ergänzungen usw. vermerkt werden können, die auf dem elektronischen Dokument nicht enthalten sind. Sofern aus organisatorischen Gründen nach dem Erfassungsvorgang eine weitere Vorgangsbearbeitung des Papierbeleges erfolgt, muss nach Abschluss der Bearbeitung der bearbeitete Papierbeleg erneut erfasst und ein Bezug zur ersten elektronischen Fassung des Dokuments hergestellt werden (gemeinsamer Index).
+140
+Nach der bildlichen Erfassung im Sinne der Rz. 130 dürfen Papierdokumente vernichtet werden, soweit sie nicht nach außersteuerlichen oder steuerlichen Vorschriften im Original aufzubewahren sind. Der Steuerpflichtige muss entscheiden, ob Dokumente, deren Beweiskraft bei der Aufbewahrung in elektronischer Form nicht erhalten bleibt, zusätzlich in der Originalform aufbewahrt werden sollen.
+141
+Der Verzicht auf einen Papierbeleg darf die Möglichkeit der Nachvollziehbarkeit und Nachprüfbarkeit nicht beeinträchtigen.
+9.4 Auslagerung von Daten aus dem Produktivsystem und Systemwechsel
+142
+Im Falle eines Systemwechsels (z. B. Abschaltung Altsystem, Datenmigration), einer Systemänderung (z. B. Änderung der OCR-Software, Update der Finanzbuchhaltung etc.) oder einer Auslagerung von aufzeichnungs- und aufbewahrungspflichtigen Daten (vgl. Rzn. 3 bis 5) aus dem Produktivsystem ist es nur dann nicht erforderlich, die ursprüngliche Hard- und Software des Produktivsystems über die Dauer der Aufbewahrungsfrist vorzuhalten, wenn die folgenden Voraussetzungen erfüllt sind:
+Die aufzeichnungs- und aufbewahrungspflichtigen Daten (einschließlich Metadaten, Stammdaten, Bewegungsdaten und der erforderlichen Verknüpfungen) müssen unter Beachtung der Ordnungsvorschriften (vgl. §§ 145 bis 147 AO) quantitativ und qualitativ gleichwertig in ein neues System, in eine neue Datenbank, in ein Archivsystem oder in ein anderes System überführt werden.
+Bei einer erforderlichen Datenumwandlung (Migration) darf ausschließlich das Format der Daten (z. B. Datums- und Währungsformat) umgesetzt, nicht aber eine inhaltliche Änderung der Daten vorgenommen werden. Die vorgenommenen Änderungen sind zu dokumentieren.
+Die Reorganisation von OCR-Datenbanken ist zulässig, soweit die zugrunde liegenden elektronischen Dokumente und Unterlagen durch diesen Vorgang unverändert bleiben und die durch das OCR-Verfahren gewonnenen Informationen mindestens in quantitativer und qualitativer Hinsicht erhalten bleiben.
+Das neue System, das Archivsystem oder das andere System muss in quantitativer und qualitativer Hinsicht die gleichen Auswertungen der aufzeichnungs- und aufbewahrungspflichtigen Daten ermöglichen als wären die Daten noch im Produktivsystem.
+143
+Andernfalls ist die ursprüngliche Hard- und Software des Produktivsystems - neben den aufzeichnungs- und aufbewahrungspflichtigen Daten - für die Dauer der Aufbewahrungsfrist vorzuhalten. Auf die Möglichkeit der Bewilligung von Erleichterungen nach § 148 AO wird hingewiesen.
+144
+Eine Aufbewahrung in Form von Datenextrakten, Reports oder Druckdateien ist unzulässig, soweit nicht mehr alle aufzeichnungs- und aufbewahrungspflichtigen Daten übernommen werden.
+10. Nachvollziehbarkeit und Nachprüfbarkeit
+145
+Die allgemeinen Grundsätze der Nachvollziehbarkeit und Nachprüfbarkeit sind unter 3.1 aufgeführt.
+Die Prüfbarkeit der formellen und sachlichen Richtigkeit bezieht sich sowohl auf einzelne Geschäftsvorfälle (Einzelprüfung) als auch auf die Prüfbarkeit des gesamten Verfahrens (Verfahrens- oder Systemprüfung anhand einer Verfahrensdokumentation, siehe unter 10.1).
+146
+Auch an die DV-gestützte Buchführung wird die Anforderung gestellt, dass Geschäftsvorfälle für die Dauer der Aufbewahrungsfrist retrograd und progressiv prüfbar bleiben müssen.
+147
+Die vorgenannten Anforderungen gelten für sonst erforderliche elektronische Aufzeichnungen sinngemäß (§ 145 Absatz 2 AO).
+148
+Von einem sachverständigen Dritten kann zwar Sachverstand hinsichtlich der Ordnungsvorschriften der §§ 145 bis 147 AO und allgemeiner DV-Sachverstand erwartet werden, nicht jedoch spezielle, produktabhängige System- oder Programmierkenntnisse.
+149
+Nach § 146 Absatz 3 Satz 3 AO muss im Einzelfall die Bedeutung von Abkürzungen, Ziffern, Buchstaben und Symbolen eindeutig festliegen und sich aus der Verfahrensdokumentation ergeben.
+150
+Für die Prüfung ist eine aussagefähige und aktuelle Verfahrensdokumentation notwendig, die alle System- bzw. Verfahrensänderungen inhaltlich und zeitlich lückenlos dokumentiert.
+10.1 Verfahrensdokumentation
+151
+Da sich die Ordnungsmäßigkeit neben den elektronischen Büchern und sonst erforderlichen Aufzeichnungen auch auf die damit in Zusammenhang stehenden Verfahren und Bereiche des DV-Systems bezieht (siehe unter 3.), muss für jedes DV-System eine übersichtlich gegliederte Verfahrensdokumentation vorhanden sein, aus der Inhalt, Aufbau, Ablauf und Ergebnisse des DV-Verfahrens vollständig und schlüssig ersichtlich sind. Der Umfang der im Einzelfall erforderlichen Dokumentation wird dadurch bestimmt, was zum Verständnis des DV-Verfahrens, der Bücher und Aufzeichnungen sowie der aufbewahrten Unterlagen notwendig ist. Die Verfahrensdokumentation muss verständlich und damit für einen sachverständigen Dritten in angemessener Zeit nachprüfbar sein. Die konkrete Ausgestaltung der Verfahrensdokumentation ist abhängig von der Komplexität und Diversifikation der Geschäftstätigkeit und der Organisationsstruktur sowie des eingesetzten DV-Systems.
+152
+Die Verfahrensdokumentation beschreibt den organisatorisch und technisch gewollten Prozess, z. B. bei elektronischen Dokumenten von der Entstehung der Informationen über die Indizierung, Verarbeitung und Speicherung, dem eindeutigen Wiederfinden und der maschinellen Auswertbarkeit, der Absicherung gegen Verlust und Verfälschung und der Reproduktion.
+153
+Die Verfahrensdokumentation besteht in der Regel aus einer allgemeinen Beschreibung, einer Anwenderdokumentation, einer technischen Systemdokumentation und einer Betriebsdokumentation.
+154
+Für den Zeitraum der Aufbewahrungsfrist muss gewährleistet und nachgewiesen sein, dass das in der Dokumentation beschriebene Verfahren dem in der Praxis eingesetzten Verfahren voll entspricht. Dies gilt insbesondere für die eingesetzten Versionen der Programme (Programmidentität). Änderungen einer Verfahrensdokumentation müssen historisch nachvollziehbar sein. Dem wird genügt, wenn die Änderungen versioniert sind und eine nachvollziehbare Änderungshistorie vorgehalten wird. Aus der Verfahrensdokumentation muss sich ergeben, wie die Ordnungsvorschriften (z. B. §§ 145 ff. AO, §§ 238 ff. HGB) und damit die in diesem Schreiben enthaltenen Anforderungen beachtet werden. Die Aufbewahrungsfrist für die Verfahrensdokumentation läuft nicht ab, soweit und solange die Aufbewahrungsfrist für die Unterlagen noch nicht abgelaufen ist, zu deren Verständnis sie erforderlich ist.
+155
+Soweit eine fehlende oder ungenügende Verfahrensdokumentation die Nachvollziehbarkeit und Nachprüfbarkeit nicht beeinträchtigt, liegt kein formeller Mangel mit sachlichem Gewicht vor, der zum Verwerfen der Buchführung führen kann.
+10.2 Lesbarmachung von elektronischen Unterlagen
+156
+Wer aufzubewahrende Unterlagen in der Form einer Wiedergabe auf einem Bildträger oder auf anderen Datenträgern vorlegt, ist nach § 147 Absatz 5 AO verpflichtet, auf seine Kosten diejenigen Hilfsmittel zur Verfügung zu stellen, die erforderlich sind, um die Unterlagen lesbar zu machen. Auf Verlangen der Finanzbehörde hat der Steuerpflichtige auf seine Kosten die Unterlagen unverzüglich ganz oder teilweise auszudrucken oder ohne Hilfsmittel lesbare Reproduktionen beizubringen.
+157
+Der Steuerpflichtige muss durch Erfassen im Sinne der Rz. 130 digitalisierte Unterlagen über sein DV-System per Bildschirm lesbar machen. Ein Ausdruck auf Papier ist nicht ausreichend. Die elektronischen Dokumente müssen für die Dauer der Aufbewahrungsfrist jederzeit lesbar sein (BFH‑Beschluss vom 26. September 2007, BStBl II 2008 S. 415).
+11. Datenzugriff
+158
+Die Finanzbehörde hat das Recht, die mit Hilfe eines DV-Systems erstellten und nach § 147 Absatz 1 AO aufbewahrungspflichtigen Unterlagen durch Datenzugriff zu prüfen. Das Recht auf Datenzugriff steht der Finanzbehörde nur im Rahmen der gesetzlichen Regelungen zu (z.B. Außenprüfung und Nachschauen). Durch die Regelungen zum Datenzugriff wird der sachliche Umfang der Außenprüfung (§ 194 AO) nicht erweitert; er wird durch die Prüfungsanordnung (§ 196 AO, § 5 BpO) bestimmt.
+11.1 Umfang und Ausübung des Rechts auf Datenzugriff nach § 147 Absatz 6 AO
+159
+Das Recht auf Datenzugriff nach § 147 Absatz 6 Satz 1 AO ist in allen dort genannten Ausgestaltungen auf den Rahmen der jeweiligen Außenprüfung beschränkt. Gegenstand der Prüfung sind die nach außersteuerlichen und steuerlichen Vorschriften aufzeichnungspflichtigen und die nach § 147 Absatz 1 AO aufbewahrungspflichtigen Unterlagen. Hierfür sind insbesondere die Daten der Finanzbuchhaltung, der Anlagenbuchhaltung, der Lohnbuchhaltung und aller Vor- und Nebensysteme, die aufzeichnungs- und aufbewahrungspflichtige Unterlagen enthalten (vgl. Rzn. 3 bis 5), für den Datenzugriff bereitzustellen. Die Art der Außenprüfung ist hierbei unerheblich, so dass z. B. die Daten der Finanzbuchhaltung auch Gegenstand der Lohnsteuer-Außenprüfung sein können.
+160
+Neben den Daten müssen insbesondere auch die Teile der Verfahrensdokumentation auf Verlangen zur Verfügung gestellt werden können, die einen vollständigen Systemüberblick ermöglichen und für das Verständnis des DV-Systems erforderlich sind. Dazu gehört auch ein Überblick über alle im DV-System vorhandenen Informationen, die aufzeichnungs- und aufbewahrungspflichtige Unterlagen betreffen (vgl. Rzn. 3 bis 5); z. B. Beschreibungen zu Tabellen, Feldern, Verknüpfungen und Auswertungen. Diese Angaben sind erforderlich, damit die Finanzbehörde das durch den Steuerpflichtigen ausgeübte Erstqualifikationsrecht (vgl. Rz. 161) prüfen und Aufbereitungen für die überlassenen Daten erstellen kann.
+161
+Soweit in Bereichen des Unternehmens betriebliche Abläufe mit Hilfe eines DV-Systems abgebildet werden, sind die betroffenen DV-Systeme durch den Steuerpflichtigen zu identifizieren, die darin enthaltenen Daten nach Maßgabe der außersteuerlichen und steuerlichen Aufzeichnungs- und Aufbewahrungspflichten (vgl. Rzn. 3 bis 5) zu qualifizieren (Erstqualifizierung) und für den Datenzugriff in geeigneter Weise vorzuhalten (siehe auch unter 9.4). Bei unzutreffender Qualifizierung von Daten kann die Finanzbehörde im Rahmen ihres pflichtgemäßen Ermessens verlangen, dass der Steuerpflichtige den Datenzugriff auf diese nach außersteuerlichen und steuerlichen Vorschriften tatsächlich aufgezeichneten und aufbewahrten Daten nachträglich ermöglicht.
+Beispiele 12:
+Ein Steuerpflichtiger stellt aus dem PC-Kassensystem nur Tagesendsummen zur Verfügung. Die digitalen Grund(buch)aufzeichnungen (Kasseneinzeldaten) wurden archiviert, aber nicht zur Verfügung gestellt.
+Ein Steuerpflichtiger stellt für die Datenüberlassung nur einzelne Sachkonten aus der Finanzbuchhaltung zur Verfügung. Die Daten der Finanzbuchhaltung sind archiviert.
+Ein Steuerpflichtiger ohne Auskunftsverweigerungsrecht stellt Belege in Papierform zur Verfügung. Die empfangenen und abgesandten Handels- und Geschäftsbriefe und Buchungsbelege stehen in einem Dokumenten-Management-System zur Verfügung.
+162
+Das allgemeine Auskunftsrecht des Prüfers (§§ 88, 199 Absatz 1 AO) und die Mitwirkungspflichten des Steuerpflichtigen (§§ 90, 200 AO) bleiben unberührt.
+163
+Bei der Ausübung des Rechts auf Datenzugriff stehen der Finanzbehörde nach dem Gesetz drei gleichberechtigte Möglichkeiten zur Verfügung.
+164
+Die Entscheidung, von welcher Möglichkeit des Datenzugriffs die Finanzbehörde Gebrauch macht, steht in ihrem pflichtgemäßen Ermessen; falls erforderlich, kann sie auch kumulativ mehrere Möglichkeiten in Anspruch nehmen (Rzn. 165 bis 170). Sofern noch nicht mit der Außenprüfung begonnen wurde, ist es im Falle eines Systemwechsels oder einer Auslagerung von aufzeichnungs- und aufbewahrungspflichtigen Daten aus dem Produktivsystem ausreichend, wenn nach Ablauf des 5. Kalenderjahres, das auf die Umstellung folgt, nur noch der Z3-Zugriff (Rzn. 167 bis 170) zur Verfügung gestellt wird.
+165
+Unmittelbarer Datenzugriff (Z1)
+Die Finanzbehörde hat das Recht, selbst unmittelbar auf das DV-System dergestalt zuzugreifen, dass sie in Form des Nur-Lesezugriffs Einsicht in die aufzeichnungs- und aufbewahrungspflichtigen Daten nimmt und die vom Steuerpflichtigen oder von einem beauftragten Dritten eingesetzte Hard- und Software zur Prüfung der gespeicherten Daten einschließlich der jeweiligen Meta-, Stamm- und Bewegungsdaten sowie der entsprechenden Verknüpfungen (z. B. zwischen den Tabellen einer relationalen Datenbank) nutzt.
+Dabei darf sie nur mit Hilfe dieser Hard- und Software auf die elektronisch gespeicherten Daten zugreifen. Dies schließt eine Fernabfrage (Online-Zugriff) der Finanzbehörde auf das DV-System des Steuerpflichtigen durch die Finanzbehörde aus.
+Der Nur-Lesezugriff umfasst das Lesen und Analysieren der Daten unter Nutzung der im DV-System vorhandenen Auswertungsmöglichkeiten (z. B. Filtern und Sortieren).
+166
+Mittelbarer Datenzugriff (Z2)
+Die Finanzbehörde kann vom Steuerpflichtigen auch verlangen, dass er an ihrer Stelle die aufzeichnungs- und aufbewahrungspflichtigen Daten nach ihren Vorgaben maschinell auswertet oder von einem beauftragten Dritten maschinell auswerten lässt und der Finanzbehörde die Datenauswertung im maschinell auswertbaren Format zur Verfügung stellt oder anschließend einen Nur-Lesezugriff ermöglicht. Es kann nur eine maschinelle Auswertung unter Verwendung der im DV-System des Steuerpflichtigen oder des beauftragten Dritten vorhandenen Auswertungsmöglichkeiten verlangt werden.
+167
+Datenüberlassung (Z3)
+Die Finanzbehörde kann ferner verlangen, dass ihr die aufzeichnungs- und aufbewahrungspflichtigen Daten, einschließlich der jeweiligen Meta-, Stamm- und Bewegungsdaten sowie der internen und externen Verknüpfungen (z. B. zwischen den Tabellen einer relationalen Datenbank), und elektronische Dokumente und Unterlagen in einem maschinell lesbaren und auswertbaren Format zur Auswertung überlassen werden. Dies kann z. B. auf einem Datenträger oder durch Zurverfügungstellung der Daten über eine Datenaustauschplattform erfolgen, für die die Finanzbehörde einen Zugang eröffnet hat (§ 87a Absatz 1 AO). Dieses Verlangen kann gem. § 197 Absatz 3 AO mit der Prüfungsanordnung innerhalb einer angemessenen Frist bereits vor dem Beginn der Prüfung geltend gemacht werden. Die Finanzbehörde ist nicht berechtigt, selbst Daten aus dem DV-System herunterzuladen oder Kopien vorhandener Datensicherungen vorzunehmen.
+168
+Die Datenüberlassung umfasst die Mitnahme der Daten aus der Sphäre des Steuerpflichtigen. Eine Verarbeitung und Aufbewahrung der Daten ist auch auf mobilen Datenverarbeitungssystemen der Finanzbehörden unabhängig von deren Einsatzort zulässig. Die Finanzbehörde darf die Daten bis zur Unanfechtbarkeit der die Daten betreffenden Verwaltungsakte auch auf den mobilen Datenverarbeitungssystemen unabhängig vom Einsatzort aufbewahren (vgl. § 147 Absatz 7 AO).
+169
+Spätestens nach Bestandskraft der aufgrund der Außenprüfung ergangenen Bescheide sind die vom Steuerpflichtigen überlassenen Daten zu löschen und ggf. zur Auswertung überlassene Datenträger an diesen zurückzugeben.
+170
+Die Finanzbehörde hat bei Anwendung der Regelungen zum Datenzugriff den Grundsatz der Verhältnismäßigkeit zu beachten.
+11.2 Umfang der Mitwirkungspflicht nach §§ 147 Absatz 6 und 200 Absatz 1 Satz 2 AO
+171
+Der Steuerpflichtige hat die Finanzbehörde bei Ausübung ihres Rechts auf Datenzugriff zu unterstützen (§ 200 Absatz 1 AO). Dabei entstehende Kosten hat der Steuerpflichtige zu tragen (§ 147 Absatz 6 Satz 3 AO).
+172
+Enthalten elektronisch gespeicherte Datenbestände z. B. nicht aufzeichnungs- und aufbewahrungspflichtige, personenbezogene oder dem Berufsgeheimnis (§ 102 AO) unterliegende Daten, so obliegt es dem Steuerpflichtigen oder dem von ihm beauftragten Dritten, die Datenbestände so zu organisieren, dass der Prüfer nur auf die aufzeichnungs- und aufbewahrungspflichtigen Daten des Steuerpflichtigen zugreifen kann. Dies kann z. B. durch geeignete Zugriffsbeschränkungen oder „digitales Schwärzen“ der zu schützenden Informationen erfolgen. Für versehentlich überlassene Daten besteht kein Verwertungsverbot.
+173
+Mangels Nachprüfbarkeit akzeptiert die Finanzbehörde keine Reports oder Druckdateien, die vom Unternehmen ausgewählte („vorgefilterte“) Datenfelder und -sätze aufführen, jedoch nicht mehr alle aufzeichnungs- und aufbewahrungspflichtigen Daten (vgl. Rzn. 3 bis 5) enthalten.
+Im Einzelnen gilt Folgendes:
+174
+Beim unmittelbaren Datenzugriff hat der Steuerpflichtige dem Prüfer die für den Datenzugriff erforderlichen Hilfsmittel zur Verfügung zu stellen und ihn für den Nur-Lesezugriff in das DV-System einzuweisen. Die Zugangsberechtigung muss so ausgestaltet sein, dass dem Prüfer dieser Zugriff auf alle aufzeichnungs- und aufbewahrungspflichtigen Daten eingeräumt wird. Sie umfasst die im DV-System genutzten Auswertungsmöglichkeiten (z. B. Filtern, Sortieren, Konsolidieren) für Prüfungszwecke (z. B. in Revisionstools, Standardsoftware, Backofficeprodukten). In Abhängigkeit vom konkreten Sachverhalt kann auch eine vom Steuerpflichtigen nicht genutzte, aber im DV-System vorhandene Auswertungsmöglichkeit verlangt werden.
+Eine Volltextsuche, eine Ansichtsfunktion oder ein selbsttragendes System, das in einer Datenbank nur die für archivierte Dateien vergebenen Schlagworte als Indexwerte nachweist, reicht regelmäßig nicht aus.
+Eine Unveränderbarkeit des Datenbestandes und des DV-Systems durch die Finanzbehörde muss seitens des Steuerpflichtigen oder eines von ihm beauftragten Dritten gewährleistet werden.
+175
+Beim mittelbaren Datenzugriff gehört zur Mithilfe des Steuerpflichtigen beim Nur-Lesezugriff neben der Zurverfügungstellung von Hard- und Software auch die Unterstützung durch mit dem DV-System vertraute Personen. Der Umfang der zumutbaren Mithilfe richtet sich nach den betrieblichen Gegebenheiten des Unternehmens. Hierfür können z. B. seine Größe oder Mitarbeiterzahl Anhaltspunkte sein.Beim mittelbaren Datenzugriff gehört zur Mithilfe des Steuerpflichtigen beim Nur-Lesezugriff neben der Zurverfügungstellung von Hard- und Software auch die Unterstützung durch mit dem DV-System vertraute Personen. Der Umfang der zumutbaren Mithilfe richtet sich nach den betrieblichen Gegebenheiten des Unternehmens. Hierfür können z. B. seine Größe oder Mitarbeiterzahl Anhaltspunkte sein.
+176
+Bei der Datenüberlassung sind der Finanzbehörde mit den gespeicherten Unterlagen und Aufzeichnungen alle zur Auswertung der Daten notwendigen Informationen (z. B. über die Dateiherkunft [eingesetztes System], die Dateistruktur, die Datenfelder, verwendete Zeichensatztabellen sowie interne und externe Verknüpfungen) in maschinell auswertbarer Form zur Verfügung zu stellen. Dies gilt auch in den Fällen, in denen sich die Daten bei einem Dritten befinden.
+Auch die zur Auswertung der Daten notwendigen Strukturinformationen müssen in maschinell auswertbarer Form zur Verfügung gestellt werden.
+Bei unvollständigen oder unzutreffenden Datenliferungen kann die Finanzbehörde neue Datenüberlassungen mit vollständigen und zutreffenden Daten verlangen. Im Verlauf der Prüfung kann die Finanzbehörde auch weitere Datenüberlassungen mit aufzeichnungs- und aufbewahrungspflichtigen Unterlagen anfordern.
+Das Einlesen der Daten muss ohne Installation von Fremdsoftware auf den Rechnern der Finanzbehörde möglich sein. Eine Entschlüsselung der übergebenen Daten muss spätestens bei der Datenübernahme auf die Systeme der Finanzbehörde erfolgen.
+177
+Der Grundsatz der Wirtschaftlichkeit rechtfertigt nicht den Einsatz einer Software, die den in diesem Schreiben niedergelegten Anforderungen zur Datenüberlassung nicht oder nur teilweise genügt und damit den Datenzugriff einschränkt. Die zur Herstellung des Datenzugriffs erforderlichen Kosten muss der Steuerpflichtige genauso in Kauf nehmen wie alle anderen Aufwendungen, die die Art seines Betriebes mit sich bringt.
+178
+Ergänzende Informationen zur Datenüberlassung sind in der Anlage zusammengefasst. Die Digitalen Schnittstellen der Finanzverwaltung (DSFinV bzw. DLS) stehen auf der Internet-Seite des Bundeszentralamts für Steuern (www.bzst.de) zum Download bereit.
+12. Zertifizierung und Software-Testate
+179
+Die Vielzahl und unterschiedliche Ausgestaltung und Kombination der DV-Systeme für die Erfüllung außersteuerlicher oder steuerlicher Aufzeichnungs- und Aufbewahrungspflichten lassen keine allgemein gültigen Aussagen der Finanzbehörde zur Konformität der verwendeten oder geplanten Hard- und Software zu. Dies gilt umso mehr, als weitere Kriterien (z. B. Releasewechsel, Updates, die Vergabe von Zugriffsrechten oder Parametrisierungen, die Vollständigkeit und Richtigkeit der eingegebenen Daten) erheblichen Einfluss auf die Ordnungsmäßigkeit eines DV-Systems und damit auf Bücher und die sonst erforderlichen Aufzeichnungen haben können.
+180
+Positivtestate zur Ordnungsmäßigkeit der Buchführung - und damit zur Ordnungsmäßigkeit DV-gestützter Buchführungssysteme - werden weder im Rahmen einer steuerlichen Außenprüfung noch im Rahmen einer verbindlichen Auskunft erteilt.
+181
+„Zertifikate“ oder „Testate“ Dritter können bei der Auswahl eines Softwareproduktes dem Unternehmen als Entscheidungskriterium dienen, entfalten jedoch aus den in Rz. 179 genannten Gründen gegenüber der Finanzbehörde keine Bindungswirkung.
+13. Anwendungsregelung
+182
+Die GoBD in der Fassung vom 28. November 2019 treten mit Wirkung vom 1. Januar 2020 an die Stelle des BMF-Schreibens vom 14. November 2014 - IV A 4 - S 0316/13/10003 -, BStBl I S. 1450.
+183
+Die GoBD in der Fassung vom 28. November 2019 sind auf Besteuerungszeiträume anzuwenden, die nach dem 31. Dezember 2019 beginnen. Es wird nicht beanstandet, wenn der Steuerpflichtige diese Grundsätze auf Besteuerungszeiträume anwendet, die vor dem 1. Januar 2020 enden.
+184
+Die GoBD in der Fassung vom 11. März 2024 gelten ab dem 1. April 2024.
+185
+Die GoBD in der Fassung vom 14. Juli 2025 sind mit Wirkung vom 14. Juli 2025 anzuwenden.
+Anlage 1
+Anlage
+Ergänzende Informationen zur Datenüberlassung
+aufklappen
+Zuklappen
+Ergänzende Informationen zur Datenüberlassung
+Die „Grundsätze zur ordnungsmäßigen Führung und Aufbewahrung von Büchern, Aufzeichnungen und Unterlagen in elektronischer Form sowie zum Datenzugriff (GoBD)“ in Form der Neufassung durch das BMF-Schreiben vom 28. November 2019 (BStBl I S. 1269), geändert durch das BMF-Schreiben vom 11. März 2024 regeln die Datenüberlassung.
+Auf Verlangen der Finanzbehörde müssen aufzeichnungs- und aufbewahrungspflichtige Daten und zur Auswertung der Daten notwendige Strukturinformationen in maschinell auswertbarer Form durch das geprüfte Unternehmen bereitgestellt werden.
+Da gerade die Datenüberlassung dem geprüften Unternehmen erhebliche Probleme bereiten kann, werden nachfolgende Informationen zur Datenüberlassung als Hilfe bereitgestellt.
+1. Beschreibungsstandard für die Datenüberlassung
+Die Finanzbehörde hat mit Softwareherstellern sowie dem deutschen Vertrieb der bundeseinheitlichen Prüfsoftware der Finanzverwaltung „IDEA“ (Firma CaseWare Germany GmbH) eine einheitliche, technische Bereitstellungshilfe zur Format- und Inhaltsbeschreibung der aufzeichnungs- und aufbewahrungspflichtigen Daten entwickelt.
+Umfang, Struktur oder Bezeichnung der aufzeichnungs- und aufbewahrungspflichtigen Daten werden durch den Beschreibungsstandard nicht vorgegeben.
+1.1 Beschreibungsstandard als technische Bereitstellungshilfe
+Der Beschreibungsstandard für die Datenüberlassung definiert die Datenimport-Schnittstelle zur automatisierten Übernahme aufzeichnungs- und aufbewahrungspflichtiger Daten einschließlich der zur maschinellen Auswertung erforderlichen Strukturinformationen und Verknüpfungen. Er ermöglicht Softwareherstellern und geprüften Unternehmen auf freiwilliger Basis eine problemlose Datenübergabe bei angeforderter Datenüberlassung im Rahmen einer Außenprüfung.
+1.2 Funktionsweise und Inhalt des XML-basierten Beschreibungsstandards
+Um die unterschiedlichen Datenstrukturen verarbeiten zu können, muss das geprüfte Unternehmen oder ein beauftragter Dritter die aufzeichnungs- und aufbewahrungspflichtigen Daten weitgehend „denormalisiert“ zur Verfügung stellen. Der Beschreibungsstandard legt das Dateiformat für diese Daten auf gängige Standardformate fest. Zusätzlich liefert der Beschreibungsstandard eine maschinell auswertbare Beschreibung der Daten, Datenformate und Verknüpfungen im XML-Format.
+1.3 Weiterführende Informationen zum Beschreibungsstandard
+Die aktuelle technische Beschreibung kann bei der Firma CaseWare Germany GmbH (https://www.caseware.net/) kostenlos angefordert werden. Sie beinhaltet insbesondere die technische Organisation des Beschreibungsstandards und eine Erläuterung der zugrunde liegenden DTD (Document Type Definition).
+1.4 Muster-index.xml-Dateien der Finanzbehörde
+Im Zusammenhang mit der Beschreibung digitaler Schnittstellen stellt die Finanzbehörde Muster-index.xml zur Verfügung. Zur Verwendung und Anpassung der Muster-index.xml gilt Folgendes:
+Die Felder (Spalten) müssen in jeder zur Verfügung gestellten csv-Datei in der beschriebenen Reihenfolge enthalten sein. In jeder csv-Datei soll ein Kopfdatensatz mit den Bezeichnungen des Feldnamens vorangestellt werden. Darüber hinaus ist eine beschreibende index.xml-Datei beizufügen. Die jeweilige Muster-index.xml der Finanzbehörde ist bei Verwendung von Zusatzfeldern und -tabellen zu ergänzen und bei Abweichungen der csv-Daten vom Muster anzupassen (z. B. kein Kopfdatensatz enthalten, Feldtrenner nicht Semikolon, Dezimaltrennzeichen nicht Komma, Tausendertrennzeichen nicht Punkt, Zeilenumbruch nicht CRLF, Texteinschlusszeichen nicht Anführungszeichen).
+2. Digitale LohnSchnittstelle
+Für den Bereich der Lohnsteuer-Außenprüfung hat die Finanzbehörde die Digitale LohnSchnittstelle (DLS) erarbeitet.
+Die DLS ist eine verpflichtend einzuhaltende Datensatzbeschreibung für den standardisierten Datenexport aus dem Lohnabrechnungsprogramm des Arbeitgebers zur Übergabe an die Finanzbehörde. Sie stellt eine einheitliche Strukturierung und Bezeichnung der nach § 41 EStG und § 4 LStDV im Lohnkonto aufzuzeichnenden Daten in Dateien und Datenfelder sicher – unabhängig von dem Lohnabrechnungsprogramm des Arbeitgebers. Eine abschließende Definition und Aufzählung der aufzeichnungs- und aufbewahrungspflichtigen Daten sind mit der DLS nicht verbunden.
+Das Datenzugriffsrecht nach § 147 Absatz 6 AO auf weitere aufzeichnungs- und aufbewahrungspflichtige Unterlagen bleibt von der Anwendung der DLS unberührt.
+Die jeweils aktuelle Version der DLS steht mit weiteren Informationen auf der Internetseite des Bundeszentralamtes für Steuern unter www.bzst.bund.de zur Einsicht und zum Download bereit.
+3. Exporte aus elektronischen Aufzeichnungssystemen, die in den Anwendungsbereich des § 146a Absatz 1 Satz 1 und Absatz 3 AO i. V. m. § 1 Kassensicherungsverordnung fallen
+Mit dem Gesetz zum Schutz vor Manipulationen an digitalen Grundaufzeichnungen vom 22. Dezember 2016 (BGBl. I S. 3152) wurde geregelt, dass Daten, die mit Hilfe eines elektronischen Aufzeichnungssystems erfasst werden, ab dem 1. Januar 2020 mit einer zertifizierten technischen Sicherheitseinrichtung (TSE) zu schützen sind (vgl. § 146a Absatz 1 Satz 1 und 2 AO i. V. m. § 1 Kassensicherungsverordnung - KassenSichV). Diese Daten sind der Finanzbehörde anlässlich einer Außenprüfung oder einer Kassen-Nachschau über eine einheitliche digitale Schnittstelle (§ 4 KassenSichV) zur Verfügung zu stellen (vgl. § 146a Absatz 1 Satz 4 AO). Die einheitliche digitale Schnittstelle besteht aus der Einbindungsschnittstelle, der Exportschnittstelle sowie der Digitalen Schnittstellen der Finanzverwaltung (DSFinV -vgl. Nr. 4 des AEAO zu § 146a bzw. Nr. 1.13 des AEAO zu § 146a in der ab 1. Januar 2024 geltenden Fassung). Über sie sind jeweils verpflichtend die erforderlichen Daten sowie Formate definiert.
+Die jeweilige DSFinV liefert hierzu eine fachliche und technische Beschreibung.
+Die jeweils aktuelle Version der jeweiligen DSFinV steht mit weiteren Informationen auf der Internetseite des Bundeszentralamtes für Steuern unter www.bzst.bund.de zur Einsicht und zum Download bereit.
+Das Datenzugriffsrecht nach § 147 Absatz 6 AO auf weitere aufzeichnungs- und aufbewahrungspflichtige Unterlagen bleibt von der Anwendung der jeweiligen DSFinV unberührt.
+4. Weitere unterstützte Dateiformate der Prüfsoftware
+Neben dem Beschreibungsstandard unterstützt die von der Finanzbehörde eingesetzte Prüfsoftware IDEA folgende Dateiformate - sofern die zur Auswertung der Daten notwendigen Strukturinformationen gleichfalls in maschinell auswertbarer Form bereitgestellt werden und das Einlesen der Daten ohne Installation zusätzlicher Fremdsoftware möglich ist:
+ASCII feste Länge (zzgl. Information für Struktur und Datenelemente etc. in maschinell auswertbarer Form)
+ASCII Delimited (einschließlich kommagetrennter Werte, zzgl. Information für Struktur und Datenelemente etc. in maschinell auswertbarer Form)
+Excel (nur Dateien im xlsx-Format / Dateien in anderen Excel-Formaten werden nicht unterstützt, zzgl. Informationen für Struktur und Datenelemente etc. in maschinell auswertbarer Form)
+Access (nur Dateien im accdb-Format / Dateien im mdb-Format werden nicht unterstützt, zzgl. Informationen für Struktur und Datenelemente etc. in maschinell auswertbarer Form)
+dBASE (zzgl. Informationen für Struktur und Datenelemente etc. in maschinell auswertbarer Form)
+Dateien von SAP/AIS (zzgl. Informationen für Struktur und Datenelemente etc. in maschinell auswertbarer Form)
+Des Weiteren ist bei passwortgeschützten Dateien erforderlich, das Kennwort anzugeben. Nicht unterstützte Dateiformate müssen in lesbare Formate konvertiert werden.
+Werden die Daten aus einer Tabellenkalkulation angeliefert, sollten in den Tabellen nur die reinen Daten und keine leeren Zeilen, Zwischensummenzeilen oder Summenzeilen enthalten sein. Die Felder sollten entsprechend dem Feldtyp formatiert werden und in der ersten Zeile einen entsprechenden Feldnamen enthalten. Verknüpfungen sollten als eindeutige Schlüsselfelder mitgeliefert werden.
+Für eine maschinelle Auswertbarkeit ist u. a. die Verwendung eindeutiger Feld- und Datensatztrennkriterien sowie Texteinschlusszeichen erforderlich (so darf zum Beispiel das Texteinschlusszeichen nicht als Feldinhalt verwandt werden).
+5. Anwendungsregelung
+Dieses Schreiben ersetzt das Schreiben vom 28. November 2019.
+Soweit folgende Formate nicht mehr aufgenommen wurden, werden diese für Besteuerungszeiträume, die nach dem 31. Dezember 2024 beginnen, nicht mehr unterstützt:
+EBCDIC feste Länge (zzgl. Information für Struktur und Datenelemente etc. in maschinell auswertbarer Form)
+EBCDIC Dateien mit variabler Länge (zzgl. Information für Struktur und Datenelemente etc. in maschinell auswertbarer Form)
+Lotus 123 (zzgl. Informationen für Struktur und Datenelemente etc. in maschinell auswertbarer Form)
+ASCII-Druckdateien (zzgl. Info für Struktur und Datenelemente etc. in maschinell auswertbarer Form)
+Konvertieren von AS/400 Datensatzbeschreibungen (FDF-Dateien erstellt von PC Support/400) in RDE-Datensatzbeschreibungen (zzgl. Informationen für Struktur und Datenelemente etc. in maschinell auswertbarer Form)
+Für Besteuerungszeiträume, die vor dem 1. Januar 2025 enden, gilt das Schreiben für die vorgenannten Formate in der Fassung vom 28. November 2019 fort.

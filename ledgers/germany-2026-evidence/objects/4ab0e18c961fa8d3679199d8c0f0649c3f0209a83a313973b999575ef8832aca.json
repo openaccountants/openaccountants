@@ -1,0 +1,12 @@
+{
+  "full_two_op_inverse": true,
+  "source_bodies_and_quotes_unchanged": true,
+  "all_native_rows_and_source_IDs": true,
+  "old_map_exact": true,
+  "six_original_cases_and_all_other_prose_exact_except_named_ops": true,
+  "original_oa": 0,
+  "schema_errors": [],
+  "schema_warnings": [],
+  "diff_returncode": 0,
+  "prior_manifest_members_unchanged": 19
+}

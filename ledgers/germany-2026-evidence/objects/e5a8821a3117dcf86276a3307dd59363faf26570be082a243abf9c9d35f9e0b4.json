@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "de-social-contributions",
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-social-contributions.md",
+    "Guide_sha256": "ebce79a0f32c40dfd3c2ee10589761c1332f2f94954a51ffd6c908bd9c8c8fad",
+    "bytes": 57839,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R72-R77-social-writer-successor-2026-10-29/ledgers/de-social-contributions.md",
+    "ledger_sha256": "ed4a3d521d8f2c494ffb1b608be4fd6bab72772fd32a831eccad80f0cad09611",
+    "rows": 189,
+    "prior_rows": 187,
+    "old_topics": 203,
+    "prior_ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/de-social-contributions.md",
+    "prior_ledger_sha256": "1c182cd096cf1c45b4f53be07448dac608c0a23c5e4ad1db410acbddb45eccfe"
+  }
+]

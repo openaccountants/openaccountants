@@ -1,0 +1,1299 @@
+Bundesministerium der Finanzen, 11016 Berlin
+                                                                                                                                 Wilhelmstraße 97
+Nur per E-Mail                                                                                                                   10117 Berlin
+                                                                                                                                 Tel. +49 30 18 682-0
+Oberste Finanzbehörden
+                                                                                                                                 poststelle@bmf.bund.de
+der Länder
+                                                                                                                                 www.bundesfinanzministerium.de
+                                                                                                                                 6. März 2025
+
+
+
+
+Einzelfragen zur ertragsteuerrechtlichen Behandlung bestimmter Kryptowerte
+GZ: IV C 1 - S 2256/00042/064/043
+DOK: COO.7005.100.4.11527963
+Seite 1 von 34
+(bei Antwort bitte GZ und DOK angeben)
+
+
+
+                                                                   Inhaltsverzeichnis
+
+
+I. Erläuterungen ...................................................................................................................................................... 3
+     1. Kryptowerte.................................................................................................................................................... 3
+     2. Differenzierung nach Funktion ............................................................................................................ 3
+     3. Blockchain....................................................................................................................................................... 4
+     4. Erwerb von Kryptowerten im Rahmen der Blockerstellung .................................................. 5
+        a) Proof of Work (Mining) ........................................................................................................................ 6
+        b) Proof of Stake (Forging)........................................................................................................................ 6
+     5. (Passives) Staking und die Unterscheidung zur Blockerstellung mittels Proof of
+         Stake (Forging) ............................................................................................................................................. 7
+     6. Masternode ..................................................................................................................................................... 7
+     7. Wallets, Schlüssel und Transaktionen; dezentrale Finanzmärkte und
+        Handelsplattformen .................................................................................................................................. 8
+     8. Bestandsermittlung (UTXO, Accounting)....................................................................................... 10
+     9. Initial Coin Offering (ICO) ..................................................................................................................... 11
+     10. Lending ........................................................................................................................................................ 11
+     11. Fork (Hard Fork) ...................................................................................................................................... 11
+     12. Airdrop ......................................................................................................................................................... 12
+Seite 2 von 34
+
+    13. Transaktionsübersichten ..................................................................................................................... 12
+    14. Steuerreports ............................................................................................................................................. 13
+II. Ertragsteuerrechtliche Einordnung ....................................................................................................... 13
+    1. Die Wirtschaftsgutqualität von Kryptowerten ............................................................................ 13
+    2. Einkünfte im Zusammenhang mit der Blockerstellung mittels Proof of Work
+       (Mining) und Proof of Stake (Forging) ............................................................................................ 14
+       a) Einkünfte aus Gewerbebetrieb gemäß § 15 EStG ................................................................... 14
+       b) Sonstige Einkünfte aus Leistungen im Sinne des § 22 Nummer 3 EStG ..................... 16
+    3. Einkünfte aus der Verwendung von Kryptowerten für (passives) Staking .................... 17
+    4. Einkünfte aus dem Betrieb einer Masternode ............................................................................. 18
+    5. Einkünfte aus der Veräußerung von Kryptowerten ................................................................. 18
+       a) Ertragsteuerrechtliche Behandlung im Betriebsvermögen............................................... 18
+       b) Ertragsteuerrechtliche Behandlung im Privatvermögen ................................................... 19
+    6. Einkünfte aus der Verwendung von Kryptowerten für Lending ........................................ 21
+       a) Ertragsteuerrechtliche Behandlung im Betriebsvermögen............................................... 21
+       b) Ertragsteuerrechtliche Behandlung im Privatvermögen ................................................... 22
+    7. Ertragsteuerrechtliche Behandlung der durch Hard Forks erhaltenen Kryptowerte
+        ........................................................................................................................................................................... 22
+       a) Ertragsteuerrechtliche Behandlung im Betriebsvermögen............................................... 22
+       b) Ertragsteuerrechtliche Behandlung im Privatvermögen ................................................... 22
+    8. Ertragsteuerrechtliche Behandlung der durch Airdrops erhaltenen Kryptowerte .... 23
+       a) Ertragsteuerrechtliche Behandlung im Betriebsvermögen............................................... 23
+       b) Ertragsteuerrechtliche Behandlung im Privatvermögen ................................................... 23
+    9. Initial Coin Offering (ICO) ..................................................................................................................... 25
+    10. Ertragsteuerrechtliche Besonderheiten von Utility und Security Token..................... 25
+       a) Ertragsteuerrechtliche Behandlung im Betriebsvermögen............................................... 25
+       b) Ertragsteuerrechtliche Behandlung im Privatvermögen ................................................... 25
+    Seite 3 von 34
+
+    III. Steuererklärungs-, Mitwirkungs- und Aufzeichnungspflichten ............................................ 27
+       1. Allgemeines .................................................................................................................................................. 27
+       2. Mitwirkungs-, Aufzeichnungs- und Aufbewahrungspflichten im Betriebsvermögen
+          ........................................................................................................................................................................... 30
+       3. Mitwirkungs- und Aufbewahrungspflichten im Privatvermögen..................................... 31
+    IV. Anwendungs- und Nichtbeanstandungsregelung ........................................................................ 34
+
+
+    Nach Erörterungen mit den obersten Finanzbehörden der Länder wird das BMF-
+    Schreiben vom 10. Mai 2022 (BStBl I S. 668) wie folgt neu gefasst. Ausführungen zu
+    Einkünften aus nichtselbständiger Arbeit und zum Lohnsteuerabzug im Zusammenhang
+    mit der Gewährung von Kryptowerten im Rahmen eines Dienstverhältnisses sind nicht
+    Gegenstand dieses BMF-Schreibens.
+
+
+    I. Erläuterungen
+
+
+    1. Kryptowerte
+1   Ein Kryptowert ist die digitale Darstellung eines Wertes oder eines Rechts, der bzw. das
+    unter Verwendung der Distributed-Ledger-Technologie (DLT) oder einer ähnlichen
+    Technologie elektronisch übertragen und gespeichert werden kann.
+
+
+    2. Differenzierung nach Funktion
+2   Der technische Aufbau und die technische Entwicklung von Krypowerten sind
+    vielgestaltig. Da die Besteuerung dem zugrunde zu legenden Lebenssachverhalt folgt,
+    §§ 1, 88 Abgabenordnung (AO), ist die ertragsteuerrechtliche Beurteilung nach der
+    Funktion des Kryptowertes vorzunehmen.
+
+
+3   Vor diesem Hintergrund kann zur Unterscheidung von Kryptowerten auf die folgende
+    Differenzierung zurückgegriffen werden:
+
+
+        •      Currency oder Payment Token sind Kryptowerte, die als Tauschmittel eingesetzt,
+               aber auch zu Spekulationszwecken gehalten werden. Sie werden nicht von einer
+               Zentralbank oder öffentlichen Stelle emittiert oder garantiert und haben daher
+               nicht den gesetzlichen Status einer Währung, werden aber – wirtschaftlich
+    Seite 4 von 34
+
+           betrachtet – als Tauschmittel akzeptiert. Zu den bekanntesten Currency Token
+           gehören beispielsweise Bitcoin und Ether. Die Internetseite
+           https://www.coinmarketcap.com/de listet weitere Beispiele auf. In Gebrauch sind
+           ferner die Bezeichnungen „Kryptowährung“ und „virtuelle Währung“;
+
+
+       •   Utility Token sind Kryptowerte, die bestimmte Nutzungsrechte (z. B. Zugang zu
+           einem gegebenenfalls noch zu schaffenden Netzwerk) oder einen Anspruch
+           darauf vermitteln, sie gegen eine bestimmte, gegebenenfalls noch zu schaffende
+           Ware oder Dienstleistung einzutauschen. Utility Token können auch
+           Stimmrechte zur Änderung der Software und damit der Funktionalität der Ware
+           oder der Dienstleistung vermitteln;
+
+
+       •   Security Token sind Kryptowerte, die ihrer Funktion nach mit herkömmlichen
+           Wertpapieren vergleichbar sind.
+
+
+4   Kryptowerte können auch eine Kombination aus den zuvor beschriebenen Kategorien
+    beinhalten (hybride Kryptowerte). Für die ertragsteuerrechtliche Einordnung ist jeder
+    Kryptowert unabhängig von seiner Bezeichnung zu würdigen. So wäre beispielsweise ein
+    Utility Token, der zusätzlich die Funktion eines Tauschmittels hat, bei der Verwendung
+    als Tauschmittel ertragsteuerrechtlich wie ein Currency Token zu behandeln.
+
+
+5   Auf die Besonderheiten nicht-fungibler Kryptowerte (sog. Non-Fungible-Token, NFT)
+    wird in der vorliegenden Fassung des BMF-Schreibens nicht eingegangen. Einem NFT ist
+    ein Individualisierungsmerkmal zugeordnet, während fungible Kryptowerte einer
+    Handelsbezeichnung (z. B. Bitcoin, Ether) jeweils eine Gesamtheit von identischen und
+    untereinander austauschbaren Einheiten bilden. Damit ist ein NFT ein einzigartiger
+    Kryptowert, der nicht mit anderen Kryptowerten fungibel ist. Der Anwendungsbereich
+    von NFT umfasst derzeit insbesondere digitale Kunst und Sammlerstücke, ist darauf aber
+    nicht begrenzt.
+
+
+    3. Blockchain
+6   Eine Blockchain ist eine in der Regel keiner zentralen Kontrolle unterliegende
+    Datenbank mit mehreren Beteiligten, die die Distributed-Ledger-Technologie (DLT)
+    verwendet. Ein Distributed Ledger ist ein Informationsspeicher, der über eine Reihe von
+    DLT-Knoten („Nodes“, z. B. ein an das Internet angeschlossener Computer) gemeinsam
+    Seite 5 von 34
+
+    genutzt und zwischen den DLT-Knoten über einen Konsensmechanismus synchronisiert
+    wird. Er ist so konzipiert, dass die Einträge manipulationssicher und unveränderbar sind
+    und nur Hinzufügungen erlauben. Im Kontext von Kryptowerten ist eine Blockchain
+    eine dezentrale Datenbank auf der Grundlage der DLT, in der insbesondere alle
+    bestätigten Transaktionen festgehalten werden, vergleichbar mit einem dezentral
+    geführten Kassenbuch. Diese Transaktionsdaten werden in Blöcken mit
+    fortzuschreibender Nummerierung zusammengefasst, vergleichbar einer Kette, an deren
+    Ende fortwährend neue Blöcke hinzugefügt werden. Der Block, mit dem die Blockchain
+    beginnt, wird als Genesisblock oder Block 0 bezeichnet. Jeder Block enthält mit dem
+    sogenannten Hash-Wert eine lange kryptografische Zeichenfolge, die sich aus dem
+    Inhalt seines Vorgängerblocks errechnet. In die Berechnung fließt also auch der
+    Hash-Wert des Vorgängerblocks ein, der seinerseits aus dem davorliegenden Block
+    errechnet wurde. Dies hat zur Folge, dass eine spätere Veränderung eines in die
+    Berechnung eingeflossenen Wertes (beispielsweise einer in einem Block aufgeführten
+    Transaktion) dazu führt, dass die Hash-Werte nicht mehr mit denen der unverfälschten
+    Blockchain übereinstimmen und die Manipulation für jeden sichtbar wird.
+
+
+    4. Erwerb von Kryptowerten im Rahmen der Blockerstellung
+7   Bei vielen Blockchains wird für das Zusammenführen von Transaktionen in neuen
+    Blöcken und das Anfügen derselben an die Blockchain eine Gegenleistung in Form von
+    neu ausgeschütteten Kryptowerten (Block reward, Blockbelohnung) gewährt, die
+    üblicherweise über sogenannte Coinbase-Transaktionen übertragen wird. In diesen
+    Fällen ist die erste Transaktion eines Blocks zugunsten der oder des Blockerstellenden
+    vorformuliert. Regelmäßig vereinnahmen die Blockerstellenden zudem
+    Transaktionsgebühren für in den Block aufgenommene Transaktionen.
+
+
+8   Für das Anhängen eines neuen Blocks gibt es unterschiedliche Verfahren. Derzeit am
+    weitesten verbreitet sind Proof of Work, in Anlehnung an das Goldschürfen Mining
+    genannt, und Proof of Stake. Proof of Stake wird in Abgrenzung zum Mining auch als
+    Forging oder Minting bezeichnet, das heißt als Schmieden oder Prägen, zum Teil auch
+    generalisierend als Staking. Die Blockerstellenden werden beim Proof of Stake Forger
+    oder Validatoren genannt. Das vorliegende Schreiben nutzt für den Fall der
+    Blockerstellung durch Proof of Stake den Begriff des Forging.
+     Seite 6 von 34
+
+     a) Proof of Work (Mining)
+9    Beim sogenannten Proof of Work ist zur Blockerstellung berechtigt, wer zuerst durch
+     Ausprobieren eine Zufallszahl (sogenannte Nonce, „number that can only be used once“)
+     findet, aus der sich zusammen mit den für den Block ausgewählten Transaktionen und
+     dem Hash-Wert des Vorgängerblocks ein Hash-Wert ergibt, der mit einer bestimmten
+     Anzahl von Nullen beginnt. Durch die Festlegung, mit wie vielen Nullen der Hash-Wert
+     anfängt, lassen sich die Schwierigkeit und damit auch die Dauer der Suche steuern.
+
+
+10   Aufgrund der Rechnerleistung, die benötigt wird, um durch Ausprobieren verschiedener
+     Zufallszahlen eine Nonce zu finden, schließen sich die als Miner bezeichneten
+     Blockerstellenden oftmals in Pools zusammen. Sie leisten anteilig ihren Beitrag an der
+     erforderlichen Rechnerleistung, indem sie innerhalb der Spanne der ihnen zugewiesenen
+     möglichen Nonces versuchen, einen Hash-Wert zu finden (Mining-Pool). Werden in
+     einem Mining-Pool Kryptowerte ausgeschüttet, werden diese entsprechend eines
+     festgelegten Schlüssels auf die beteiligten Miner verteilt. Die Betreiberinnen und
+     Betreiber des Mining-Pools übernehmen eine koordinierende Rolle.
+
+
+11   Daneben betreiben Cloud-Mining-Dienste sogenannte Serverfarmen, die auf Mining
+     spezialisiert sind. Sie verkaufen oder vermieten Anteile ihrer Kapazitäten an Personen,
+     die diese dann zum Mining nutzen.
+
+     b) Proof of Stake (Forging)
+12   Beim sogenannten Proof of Stake erfolgt die Auswahl der oder des nächsten
+     Blockerstellenden in der Regel über eine gewichtete Zufallsauswahl. Die Chance, einen
+     Block an die Blockchain anfügen zu dürfen und die Blockbelohnung nebst
+     Transaktionsgebühren zu vereinnahmen, steigt je nach Ausgestaltung z. B. mit der
+     Teilnahmedauer und/oder Zahl der eingesetzten Kryptowerte (dem „Stake“). Beim Stake
+     handelt es sich um eine Anzahl von Kryptowerten, die die Inhaberinnen und Inhaber für
+     einen bestimmten Zeitraum sperren, sodass sie in der Regel nicht auf sie zugreifen
+     können, und mit denen die Blockerstellenden gegenüber dem Netzwerk nachweisen,
+     Interesse an einer ordnungsgemäßen Blockerstellung zu haben. Werden bei der
+     Blockerstellung Fehler gemacht oder Manipulationen vorgenommen, können die als
+     Stake eingesetzten Kryptowerte je nach Ausgestaltung des Protokolls gegebenenfalls
+     eingezogen oder gelöscht werden.
+     Seite 7 von 34
+
+     5. (Passives) Staking und die Unterscheidung zur Blockerstellung mittels Proof of
+     Stake (Forging)
+13   Nach der Grundidee des Proof of Stake nutzen die Blockerstellenden (Forger, auch
+     Validatoren genannt) nur ihre eigenen Kryptowerte als Stake. Vielfach stellen aber auch
+     Personen Kryptowerte für einen Stake bereit, ohne selbst als Forger an der
+     Blockerstellung beteiligt zu sein. In der Regel geschieht dies über die Teilnahme an
+     sogenannten Staking-Pools, die als solche bereits im jeweiligen Blockchain-Protokoll
+     vorgesehen sind. Die Kryptowerte des Stakes werden dabei gesperrt, aber nicht
+     übertragen. Ein Staking-Pool hat eine höhere Wahrscheinlichkeit, als nächster Forger
+     ausgewählt zu werden. Die Teilnehmenden erhalten eine Vergütung von den Forgern,
+     die die Blockbelohnung und die Transaktionsgebühren vereinnahmen. In der Regel ist
+     ein sogenanntes Claiming erforderlich, das heißt das aktive Einfordern der im System
+     bereitgestellten Vergütung durch den Teilnehmenden. In anderen Fällen wird die
+     Vergütung den Teilnehmenden ohne ihr Zutun unmittelbar gutgeschrieben. Auch einige
+     zentrale Handelsplattformen bieten die Möglichkeit der Teilnahme an einem
+     Staking-Pool (Plattform-Staking). In der Praxis wird teilweise nicht zwischen der
+     Tätigkeit der Forger und der bloßen Bereitstellung eines Stakes ohne Übernahme der
+     Blockerstellung unterschieden und für beide Vorgänge generalisierend der Begriff des
+     Staking verwendet oder lediglich zwischen „aktivem Staking“ und „passivem Staking“
+     differenziert. Das vorliegende Schreiben nutzt den Begriff des (passiven) Stakings für die
+     Bereitstellung eines Stakes ohne Übernahme der Blockerstellung.
+
+
+     6. Masternode
+14   Jedes Blockchain-Netzwerk besteht aus unterschiedlichen Nodes (vgl. Randnummer 6),
+     welche die Funktionen des Netzwerks übernehmen, etwa die Speicherung einer
+     vollständigen Kopie einer Blockchain oder die Blockerstellung. Eine Masternode hat
+     darüber hinausgehende zusätzliche Aufgaben wie das Verarbeiten von anonymen und
+     vertraulichen Transaktionen oder von Sofort-Transaktionen. Zudem sind
+     Betreiberinnen und Betreiber einer Masternode oft berechtigt, an
+     Entscheidungsprozessen zu Regelungen für den Aufbau und die Ablauforganisation von
+     Blockchains (Governance) teilzunehmen und Stimmrechte auszuüben. Welche Aufgaben
+     und Stimmrechte eine Masternode vermittelt, kann je nach Blockchain sehr
+     unterschiedlich ausfallen und hängt vom jeweiligen Protokoll ab.
+     Seite 8 von 34
+
+15   Abhängig von der Ausgestaltung der jeweiligen Blockchain wird der Betrieb der
+     Masternode auch vergütet. Um eine Masternode zu betreiben, muss in den meisten
+     Fällen eine bestimmte Anzahl von Kryptowerten an sie gekoppelt werden. Werden die
+     Kryptowerte von der Masternode gelöst, verliert diese ihre Funktion und die
+     Betreiberinnen und Betreiber das Recht auf eine Vergütung.
+
+
+     7. Wallets, Schlüssel und Transaktionen; dezentrale Finanzmärkte und
+     Handelsplattformen
+16   Für das Empfangen, Halten und Transferieren von Kryptowerten wird in der Regel eine
+     Wallet benötigt (siehe aber Randnummer 20 zu zentralen Handelsplattformen).
+
+
+17   Wörtlich übersetzt bedeutet Wallet Geldbörse oder Brieftasche. Eine genauere
+     Übersetzung wäre jedoch Schlüsselbund. In der Wallet selbst werden keine Kryptowerte
+     gehalten, diese verbleiben stets in der Blockchain. Vielmehr handelt es sich um eine
+     Anwendung zum Erzeugen, Verwalten und Speichern privater und öffentlicher
+     Schlüssel.
+
+
+18   Der öffentliche Schlüssel dient der Zuordnung der Kryptowerte in der
+     zugrundeliegenden Blockchain. Er ist mit einer Bankverbindung (IBAN) oder
+     E-Mail-Adresse vergleichbar und fungiert insbesondere als Empfangsadresse für
+     Transaktionen. Bei einer öffentlichen Blockchain kann im Normalfall jeder die Zahl der
+     einem bestimmten öffentlichen Schlüssel zugeordneten Kryptowerte und alle über
+     diesen Schlüssel durchgeführten Transaktionen einsehen. Der private Schlüssel ist nur
+     den Inhaberinnen und Inhabern bekannt. Er dient als Passwort beziehungsweise der
+     Erzeugung digitaler Unterschriften für Transaktionen (vgl. Randnummer 21). Zu jedem
+     privaten Schlüssel kann es mehrere öffentliche Schlüssel geben.
+
+
+19   Die Zahl der Wallets einer Person ist nicht beschränkt. In der Regel wird für jede
+     Blockchain eine eigene Wallet benötigt, da die öffentlichen Schlüssel abhängig von der
+     zugrundeliegenden Blockchain sind. Die Wallet wird auf dem Rechner als
+     Softwareanwendung (Software Wallet) installiert oder steht als sogenannte Hardware
+     Wallet wie eine externe Festplatte oder ein USB-Stick zur Verfügung. Darüber hinaus
+     kann eine Wallet durch einen Ausdruck auf Papier oder als elektronisches Dokument
+     erzeugt werden (Paper Wallet). Es kann auch auf Online-Angebote zurückgegriffen
+     werden, bei denen die Wallet über den Browser aufgerufen wird. In diesen Fällen
+     Seite 9 von 34
+
+     verwahren teilweise die Anbieter die öffentlichen und privaten Schlüssel; in einigen
+     Fällen wird zudem abweichend von der obigen Darstellung eine gemeinsame Wallet für
+     eine Vielzahl von Personen genutzt.
+
+
+20   Mit Hilfe einer Software-Wallet oder eines Block-Explorers – einer Art Suchmaschine für
+     Blockchains – können die vergangenen Transaktionen verfolgt werden. Allerdings muss
+     der gespeicherte Zu- und Abgang der Kryptowerte nicht mit dem ertragsteuerrechtlich
+     relevanten Anschaffungs- oder Veräußerungszeitpunkt übereinstimmen. Hintergrund
+     ist, dass Kryptowerte regelmäßig über sogenannte zentrale Handelsplattformen
+     (Centralized Exchanges, CEX) wie z. B. Kraken, Coinbase, Bitpanda oder Bison gehandelt
+     werden. Hierbei werden Kryptowerte zum personalisierten Account einer zentralen
+     Handelsplattform transferiert und erst zu einem der Veräußerung beziehungsweise
+     Anschaffung über die Plattform nachgehenden Zeitpunkt zurück in die eigene Wallet
+     gebucht. Für den Anschaffungs- oder Veräußerungszeitpunkt ist dann der Zeitpunkt des
+     Handels über die zentrale Handelsplattform ausschlaggebend. Das Gleiche gilt, wenn
+     Steuerpflichtige keine eigene Wallet verwenden, sondern die Kryptowerte ausschließlich
+     über eine zentrale Handelsplattform halten und handeln.
+
+
+20a Auf dezentralen Finanzmärkten (oft Decentralized Finance, kurz DeFi, genannt) sollen
+     Marktteilnehmende direkt mit der Blockchain ohne Zwischenschaltung eines
+     Intermediärs interagieren können. Auf solchen dezentralen Finanzmärkten werden
+     finanzwirtschaftliche Dienstleistungen angeboten, die auf der Programmierbarkeit der
+     zugrundeliegenden Blockchain basieren und oft durch sogenannte Smart Contracts
+     implementiert sind. Smart Contracts (wörtlich: „intelligente Verträge“) sind keine
+     Verträge im Rechtssinne. Vielmehr handelt es sich um auf der jeweiligen Blockchain
+     gespeicherte Programmcodes, die bestimmte Interaktionen in Abhängigkeit vom
+     Eintreten vorher definierter Ereignisse automatisiert ausführen, z. B. den Transfer eines
+     bestimmten Kryptowertes A beim Erhalt einer bestimmten Menge an Kryptowerten B.
+     Sogenannte dezentrale Handelsplattformen (Decentralized Exchanges, DEX) stellen
+     lediglich die Infrastruktur der programmierten Blockchain zur Verfügung. Der Handel
+     erfolgt über eine Verkettung von Smart Contracts, die den Nutzerinnen und Nutzern
+     beispielsweise die Bereitstellung von Kryptowerten zum Austausch (Peer-to-Peer,
+     Peer-to-Pool) ermöglichen.
+     Seite 10 von 34
+
+21   Im Rahmen einer Blockchain-Transaktion wird zunächst eine Dateneinheit erstellt, die
+     den Hash-Wert des öffentlichen Schlüssels der Empfängerin oder des Empfängers, einen
+     Hash-Wert über die Dateneinheit der vorherigen Transaktion(en) und eine mit dem
+     privaten Schlüssel erzeugte Signatur über beide Hash-Werte enthält. Die so generierte
+     Transaktion wird anschließend an einen (Speicher-)Pool gesendet. Personen, die eine
+     Node (siehe Randnummer 6) mit Blockerstellungsfunktion betreiben, entnehmen von
+     dort die Transaktionsdaten, überprüfen anhand der Signatur die Ordnungsmäßigkeit der
+     Transaktion und fügen sie dann mit einem neuen Block an die Blockchain an, wodurch
+     die Transaktion wirksam wird. Will die Empfängerin oder der Empfänger die
+     Kryptowerte weiter übertragen, ist hierfür eine weitere mit einem privaten Schlüssel
+     bestätigte Transaktion erforderlich.
+
+
+22   Die dargestellten Vorgänge können auch automatisiert ablaufen. Ein praktischer
+     Anwendungsfall liegt in der Nutzung von Debit-Kreditkarten, für deren Nutzung
+     Steuerpflichtige Kryptowerte bereitstellen und auf diese Weise für Zahlungen mit der
+     Kreditkarte nutzen können – das Kreditkartenunternehmen tauscht die Kryptowerte in
+     Euro oder eine andere staatliche Währung und wickelt die Kaufpreiszahlung ab.
+
+
+     8. Bestandsermittlung (UTXO, Accounting)
+23   Für die Ermittlung des Bestandes der einem öffentlichen Schlüssel zugeordneten
+     Kryptowerte werden insbesondere zwei Methoden eingesetzt. Bei Bitcoin und einigen
+     anderen Kryptowerten (insbesondere Cardano) wird der Bestand als die Summe der
+     „Unspent Transaction Output“ (UTXO) erfasst. Dabei werden die Einnahmen (Inputs)
+     und die Ausgaben (Outputs) gegenübergestellt. Für jeden Input und Output werden
+     Werteinheiten (Coins) gebildet. Wenn nur Teile eines Coins veräußert werden, fließt der
+     verbleibende Teil als „Wechselgeld“ (oder „Change Output“) an den eigenen öffentlichen
+     Schlüssel zurück.
+
+
+     Beispiel:
+     A hat in einer ersten Transaktion 0,01 Bitcoin und einer weiteren Transaktion 0,02 Bitcoin
+     angeschafft. Der Bestand an Unspent Transaction Outputs (UTXOs) beträgt 0,03 Bitcoin.
+     Nun veräußert A 0,025 Bitcoin an B. Zur Abwicklung sind drei Outputs erforderlich:
+        (1) Output in Höhe von 0,025 Bitcoin an B
+        (2) Output in Höhe von 0,001 Bitcoin als Transaktionsgebühr
+     Seite 11 von 34
+
+        (3) Output des verbleibenden Bestandes („Wechselgeld“) in Höhe von 0,004 Bitcoin
+            zurück an A
+
+
+24   Die zweite Methode der Bestandsermittlung, die beispielsweise bei Ether, EOS und Tron
+     eingesetzt wird, basiert – ähnlich wie bei einem Bankkonto – auf der Buchung von
+     Ein- und Ausgängen in einem Bestandskonto (Accounting), so dass sich der Bestand
+     fortwährend aus Bestandsmehrungen oder Bestandsminderungen errechnet.
+
+
+     9. Initial Coin Offering (ICO)
+25   Der Begriff Initial Coin Offering (ICO) orientiert sich an dem englischen Begriff Initial
+     Public Offering (IPO). Unter IPO ist ein Börsengang zu verstehen, bei dem Aktien aus
+     dem Bestand oder aus einer Kapitalerhöhung auf dem Kapitalmarkt angeboten werden.
+     Während bei einer solchen Erstplatzierung jedoch Aktien verkauft werden, geht es bei
+     einem ICO um die Ausgabe von Kryptowerten im Tausch gegen andere Kryptowerte
+     oder Einheiten einer staatlichen Währung (z. B. Euro). Beim ICO wird wie beim
+     Börsengang Kapital eingesammelt.
+
+
+     10. Lending
+26   Beim Lending werden Kryptowerte gegen eine Vergütung zur Nutzung überlassen.
+
+
+     11. Fork (Hard Fork)
+27   Fork bedeutet Gabelung oder Aufspaltung einer Blockchain und ihrer Kryptowerte. Im
+     ertragsteuerrechtlichen Bereich ist vorrangig die sogenannte Hard Fork relevant.
+     Kryptowerte beruhen maßgeblich auf der „Open-Source-Idee“. Das heißt, der Quellcode
+     der Blockchain wird veröffentlicht und ist kostenfrei nutz- und veränderbar. Dadurch
+     kann der Quellcode von jedermann eingesehen, heruntergeladen und verändert werden
+     und sich im weiteren Verlauf in eine Richtung entwickeln, welche zwar die
+     ursprünglichen Entwicklerinnen und Entwickler nicht unterstützen möchten, welche
+     aber inzwischen von einer Mehrheit oder zumindest einer relevanten Minderheit
+     favorisiert wird. Es können sich damit innerhalb des Netzwerks
+     Meinungsverschiedenheiten zur weiteren Ausgestaltung der Blockchain herausbilden,
+     die – dem Open-Source-Prinzip folgend – nur im Konsens gelöst werden können. Kann
+     kein Konsens gefunden werden, führt dies zur Aufspaltung der Blockchain. Auf diese
+     Weise entsteht eine zusätzliche Version der Blockchain und damit der Kryptowerte der
+     Blockchain, die neben der ursprünglichen Blockchain und deren Kryptowerten existiert.
+     Seite 12 von 34
+
+     Die beiden Blockchains entwickeln sich nach der Spaltung getrennt weiter. Im Zuge der
+     Spaltung erlangen die Inhaberinnen und Inhaber der Kryptowerte der vor der Hard Fork
+     bestehenden Blockchain somit die gleiche Anzahl von Kryptowerten der neuen
+     Blockchain, ohne dafür eine Gegenleistung erbringen zu müssen.
+
+
+28   Auch bei einer sogenannten Soft Fork wird die dem jeweiligen Kryptowert
+     zugrundeliegende Blockchain weiterentwickelt. Da in diesen Fällen jedoch alle Nodes
+     weiterhin alle Blöcke verarbeiten können, kommt es zu keiner Spaltung der Blockchain
+     oder ihrer Kryptowerte.
+
+
+     12. Airdrop
+29   Bei einem Airdrop werden Kryptowerte „unentgeltlich“ verteilt. In der Regel handelt es
+     sich dabei um Marketing-Aktionen, deren Ausgestaltung unterschiedlich sein kann. Mit
+     einem Airdrop kann z. B. die Auflage verbunden sein, dass die Teilnehmenden mehrere
+     Online-Formulare ausfüllen müssen. Auf diese Weise können Kundendaten gesammelt
+     werden. Für andere Airdrops wird gefordert, das Projekt in sozialen Netzwerken zu
+     bewerben. Bei größeren Airdrops erhält mitunter nur ein Teil der die Bedingungen
+     erfüllenden Teilnehmenden die zu verteilenden Kryptowerte, etwa aufgrund einer
+     Zufallsauswahl. Ein Airdrop kann allerdings auch dergestalt stattfinden, dass gänzlich
+     ohne Zutun der Inhaberin oder des Inhabers eines öffentlichen Schlüssels
+     (vgl. Randnummer 18) an diesen Kryptowerte übertragen werden.
+
+     13. Transaktionsübersichten
+29a Zentrale Handelsplattformen und Wallet-Anbieter stellen ihren Nutzerinnen und
+    Nutzern in der Regel Auflistungen der von diesen auf der jeweiligen Handelsplattform
+    oder mit der Wallet getätigten Transaktionen zum Download zur Verfügung
+    (Transaktionsübersichten). Üblich sind dabei sowohl strukturierte (Datenbank-Formate
+    wie z. B. csv-, xml-, db- oder accdb-Dateien) als auch nicht strukturierte Dateiformate
+    (Dokumenten-Format wie z. B. PDF-Datei), wobei letztere in der Regel nach
+    Kryptowerten differenzieren und chronologisch gegliedert sind. Dabei ist es technisch
+    regelmäßig möglich, einzelne Datensätze beim Export zu unterdrücken oder
+    nachträgliche Änderungen vorzunehmen. Bei einigen Anbietern ist die Möglichkeit des
+    Abrufs der Transaktionsübersichten zeitlich beschränkt, sodass die Nutzerinnen und
+    Nutzer auf einen rechtzeitigen Abruf achten müssen.
+     Seite 13 von 34
+
+    14. Steuerreports
+29b Verschiedene privatwirtschaftliche Anbieter bieten sogenannte Steuerreports an. Sie
+    werben damit, die Einkünfte eines Steuerpflichtigen im Zusammenhang mit
+    Kryptowerten (z. B. Einkünfte aus privaten Veräußerungsgeschäften, sonstige Einkünfte
+    aus Leistungen) zu ermitteln, und ähneln in der äußeren Form Steuerbescheinigungen
+    von Kreditinstituten. Abhängig vom Anbieter sind unterschiedliche Reporteinstellungen
+    wählbar. In der Regel bauen Steuerreports auf Walletinformationen oder
+    Transaktionsübersichten einzelner oder mehrerer Handelsplattformen auf (siehe
+    Randnummer 29a), die von den Steuerpflichtigen ausgewählt und bereitgestellt werden.
+    Ihre Vollständigkeit hängt daher wesentlich von den zugrunde gelegten Daten ab. Die
+    Ergebnisse können von den Steuerpflichtigen manuell angepasst werden, vorrangig zur
+    Korrektur fehlender oder falsch übertragener Werte (z. B. Anschaffungskosten,
+    Anschaffungsdatum), aber mitunter auch in Bezug auf die ertragsteuerrechtlichen
+    Parameter oder Bewertung einzelner Vorgänge.
+
+
+     II. Ertragsteuerrechtliche Einordnung
+
+
+30   Tätigkeiten im Zusammenhang mit Kryptowerten können, je nach den Umständen des
+     Einzelfalls und unter Berücksichtigung der nachfolgenden Ausführungen, zu Einkünften
+     aus allen Einkunftsarten (§ 2 Absatz 1 Satz 1 Einkommensteuergesetz – EStG) führen. In
+     Betracht kommen insbesondere Einkünfte aus Gewerbebetrieb (§ 15 EStG), Einkünfte aus
+     Kapitalvermögen (§ 20 EStG), Einkünfte aus privaten Veräußerungsgeschäften (§ 22
+     Nummer 2 in Verbindung mit § 23 EStG) oder sonstige Einkünfte (§ 22 Nummer 3 EStG).
+
+
+     1. Die Wirtschaftsgutqualität von Kryptowerten
+31   Die einzelnen Kryptowerte sind Wirtschaftsgüter (BFH-Urteil vom 14. Februar 2023,
+     IX R 3/22, BStBl II S. 571). Sie vermitteln die Möglichkeit, die dem eigenen öffentlichen
+     Schlüssel zugewiesenen vermögenswerten Vorteile einem anderen öffentlichen
+     Schlüssel zuzuweisen. Anhand ihres regelmäßig über Handelsplattformen (z. B. Börse
+     Stuttgart Digital Exchange, Kraken, Coinbase und Bitpanda) und Listen
+     (z. B. https://www.coinmarketcap.com/de und https://www.coingecko.com/de)
+     ermittelbaren Marktpreises sind sie einer selbständigen Bewertung zugänglich.
+     Seite 14 von 34
+
+32   Wirtschaftsgüter sind dem Eigentümer zuzurechnen. Wirtschaftlicher Eigentümer ist,
+     wer Transaktionen initiieren und damit über die Zuordnung der Kryptowerte zu
+     öffentlichen Schlüsseln „verfügen“ kann. Dies ist regelmäßig die Inhaberin oder der
+     Inhaber des privaten Schlüssels (BFH-Urteil vom 14. Februar 2023, IX R 3/22, BStBl II
+     S. 571). Es ist für die Zurechnung an den wirtschaftlichen Eigentümer jedoch
+     unschädlich, wenn Transaktionen über Plattformen initiiert werden, die private
+     Schlüssel verwalten oder auf seine Anweisung hin einsetzen (vgl. Randnummer 19).
+
+
+     2. Einkünfte im Zusammenhang mit der Blockerstellung mittels Proof of Work
+     (Mining) und Proof of Stake (Forging)
+33   Mining und Forging stellen Anschaffungsvorgänge dar. Anschaffung ist der entgeltliche
+     Erwerb eines bestehenden oder bereits vorhandenen Wirtschaftsguts von Dritten;
+     Herstellen ist dagegen das Schaffen oder Schaffenlassen eines noch nicht existierenden
+     Wirtschaftsguts (BFH-Urteil vom 2. Mai 2000, IX R 73/98, BStBl II S. 614 und vom
+     2. September 1988, III R 53/84, BStBl II S. 1009). Die für die Blockerstellung an
+     Blockerstellende ausgeschütteten Kryptowerte werden zwar im Zuge der Blockerstellung
+     erstmalig in Verkehr gebracht, sind aber sämtlich bereits mit der Schaffung des
+     Genesisblocks der Blockchain angelegt. Blockerstellende haben keinen Einfluss auf die
+     Eigenschaften der freiwerdenden neuen Kryptowerte. Damit ist die Blockerstellung vom
+     Fall des Emittenten beim ICO abzugrenzen, der über die Ausgestaltung der zu
+     verteilenden Kryptowerte bestimmt und sie daher auch herstellt. Die Gesamtheit der
+     Personen, die Rechte an der Blockchain haben, gewährt die freigegebenen Kryptowerte
+     im Tausch für die Dienstleistung der Blockerstellenden. Auch die Transaktionsgebühren
+     werden im Tausch für die Dienstleistung der Blockerstellenden geleistet. In beiden Fällen
+     handelt es sich somit um einen entgeltlichen Erwerb von Dritten.
+
+
+34   Mining und Forging können je nach den Umständen des Einzelfalls eine private oder
+     eine gewerbliche Tätigkeit sein. Zu den Einnahmen gehören sowohl die Blockbelohnung
+     als auch die erhaltenen Transaktionsgebühren.
+
+
+     a) Einkünfte aus Gewerbebetrieb gemäß § 15 EStG
+35   Sind die Einkünfte aus der Blockerstellung nicht bereits kraft Rechtsform als solche aus
+     Gewerbebetrieb einzuordnen, hängt die Einordnung als gewerbliche Tätigkeit davon ab,
+     ob die Voraussetzungen eines Gewerbebetriebs nach § 15 Absatz 2 EStG vorliegen.
+     Seite 15 von 34
+
+36   Die Blockerstellung ist nachhaltig, wenn sie auf Wiederholung angelegt ist (vgl. H 15.2
+     (Wiederholungsabsicht) Amtliches Einkommensteuer-Handbuch (EStH) 2023).
+
+
+37   Sie muss auf Dauer dazu geeignet sein, aus dieser Tätigkeit einen Gewinn zu erzielen
+     (vgl. H 15.3 (Totalgewinn) EStH 2023).
+
+
+38   Die Blockerstellenden nehmen bereits dadurch am allgemeinen wirtschaftlichen
+     Verkehr teil, indem sie den Netzwerkteilnehmenden ihre Rechnerleistung für die
+     Verifikation der Transaktionsdaten und deren Aufnahme in einen neu zu erstellenden
+     Block der Blockchain zur Verfügung stellen. Dass das Entgelt von der erfolgreichen
+     Erstellung des Blocks abhängt, steht einer Teilnahme am allgemeinen wirtschaftlichen
+     Verkehr nicht entgegen.
+
+
+39   Die Blockerstellung stellt keine private Vermögensverwaltung dar. Sowohl beim Mining
+     als auch beim Forging erhalten die Blockerstellenden die Blockbelohnung und die
+     Transaktionsgebühren im Tausch für die Erstellung neuer Blöcke. Die Tätigkeit
+     entspricht damit dem Bild eines Dienstleisters.
+
+
+40   Bei der Blockerstellung über einen Mining-Pool kann je nach vertraglicher Gestaltung
+     im Einzelfall auf Ebene des Mining-Pools eine Mitunternehmerschaft vorliegen. Es
+     gelten die allgemeinen Grundsätze zur Annahme einer Mitunternehmerschaft
+     (vgl. H 15.8 (1) (Allgemeines) EStH 2023). Eine Mitunternehmerschaft liegt jedenfalls
+     nicht vor, wenn den Betreiberinnen und Betreibern des Mining-Pools von einzelnen
+     Minern lediglich Rechnerleistung gegen Entgelt im Rahmen eines
+     Dienstleistungsverhältnisses zur Verfügung gestellt wird. Ein Staking-Pool stellt
+     regelmäßig keine Mitunternehmerschaft dar.
+
+     aa) Betriebsvermögensvergleich
+     aaa) Wirtschaftsgut
+41   Zur Wirtschaftsgutqualität von Kryptowerten vgl. Randnummer 31. Kryptowerte sind
+     nicht abnutzbare Wirtschaftsgüter materieller Art, die nach den allgemeinen
+     bilanzsteuerrechtlichen Grundsätzen dem Anlage- oder Umlaufvermögen zuzuordnen
+     sind. Sie sind bei Zuordnung zum Anlagevermögen unter Finanzanlagen im Sinne des
+     § 266 Absatz 2 A. III. Handelsgesetzbuch (HGB) und bei Zuordnung zum
+     Seite 16 von 34
+
+     Umlaufvermögen unter sonstige Vermögensgegenstände im Sinne des § 266 Absatz 2 B.
+     II. 4. HGB auszuweisen.
+
+
+     bbb) Zugangsbewertung
+42   Die für die Blockerstellung sowie als Transaktionsgebühr zugeteilten Kryptowerte
+     werden angeschafft (tauschähnlicher Vorgang, vgl. auch Randnummer 33).
+
+
+43   Die Anschaffungskosten entsprechen dem Marktkurs im Zeitpunkt der Anschaffung der
+     Kryptowerte (Ableitung aus § 6 Absatz 6 Satz 1 EStG). Als Marktkurs kann der Kurs einer
+     Handelsplattform (z. B. Börse Stuttgart Digital Exchange, Kraken, Coinbase und
+     Bitpanda) oder einer webbasierten Liste (z. B. https://www.coinmarketcap.com/de und
+     https://www.coingecko.com/de) angesetzt werden. Zur Nichtbeanstandung des Ansatzes
+     eines Tageskurses anstelle des Kurses im Zeitpunkt der Anschaffung siehe Randnummer
+     91.
+
+     bb) Einnahmenüberschussrechnung
+44   Bei Gewinnermittlung durch Einnahmenüberschussrechnung nach § 4 Absatz 3 EStG
+     führt der Zugang von Kryptowerten im Rahmen eines tauschähnlichen Vorgangs zu
+     Betriebseinnahmen. Kryptowerte sind als mit Wertpapieren vergleichbare nicht
+     verbriefte Forderungen und Rechte als Wirtschaftsgüter im Sinne des § 4 Absatz 3 Satz 4
+     EStG anzusehen, deren Anschaffungskosten (§ 6 Absatz 6 EStG, vgl. Randnummer 43) erst
+     im Zeitpunkt des Zuflusses des Veräußerungserlöses oder bei Entnahmen im Zeitpunkt
+     der Entnahme als Betriebsausgaben abzuziehen sind. Die Wirtschaftsgüter sind in die
+     laufend zu führenden Verzeichnisse nach § 4 Absatz 3 Satz 5 EStG aufzunehmen.
+
+     b) Sonstige Einkünfte aus Leistungen im Sinne des § 22 Nummer 3 EStG
+45   Einkünfte aus der Blockerstellung, die keiner anderen Einkunftsart zugerechnet werden
+     können, sind als Leistung nach § 22 Nummer 3 EStG steuerbar. Das kann z. B. der Fall
+     sein, wenn mangels Nachhaltigkeit keine gewerbliche Tätigkeit im Sinne des § 15
+     Absatz 2 EStG vorliegt (vgl. Randnummer 36). Sie sind nicht einkommensteuerpflichtig,
+     wenn sie zusammen mit anderen Einkünften aus Leistungen weniger als 256 € im
+     Kalenderjahr betragen haben (§ 22 Nummer 3 Satz 2 EStG).
+     Seite 17 von 34
+
+46   Als Leistung kommt jedes wie auch immer geartete aktive, passive oder
+     nichtwirtschaftliche Verhalten der Steuerpflichtigen in Betracht. Bei der Verknüpfung
+     von Leistung und Gegenleistung ist kein synallagmatisches (gegenseitiges) Verhältnis
+     zwischen Leistung und Gegenleistung erforderlich. Die Leistenden (hier: die
+     Blockerstellenden) müssen nicht bereits beim Erbringen ihrer Leistung eine
+     Gegenleistung erwarten. Ausreichend ist vielmehr, dass sie eine im wirtschaftlichen
+     Zusammenhang mit ihrem Verhalten (Tun, Dulden, Unterlassen) gewährte
+     (Gegen-)Leistung als solche annehmen. Auf diese Weise ordnen sie ihr Verhalten der
+     erwerbswirtschaftlich und damit auch steuerrechtlich bedeutsamen Sphäre zu
+     (BFH-Urteil vom 24. April 2012, IX R 6/10, BStBl II S. 581). Insoweit ist nicht zwischen der
+     Blockbelohnung und den Transaktionsgebühren zu unterscheiden. Dies gilt auch bei der
+     Teilnahme an Mining- und Staking-Pools und bei einer Beteiligung an einem
+     Cloud-Mining-Dienst.
+
+
+47   Die im Wege der Blockerstellung erlangten Kryptowerte sind nach § 8 Absatz 2 Satz 1
+     EStG mit dem Marktkurs im Zeitpunkt der Anschaffung anzusetzen (vgl. zur Ermittlung
+     des Marktkurses und der Nichtbeanstandung eines Tageskurses Randnummern 43 und
+     91). Als Werbungskosten können beispielsweise Aufwendungen für den Erwerb der
+     erforderlichen Hard- und Software (gegebenenfalls in Form von Absetzungen für
+     Abnutzung) sowie für den Stromverbrauch berücksichtigt werden.
+
+
+     3. Einkünfte aus der Verwendung von Kryptowerten für (passives) Staking
+48   Einnahmen aus (passivem) Staking im hier verwandten Begriffsverständnis der
+     Bereitstellung eines Stakes ohne selbst als Forger an der Blockerstellung beteiligt zu sein
+     (Teilnahme an einem Staking-Pool, Plattform-Staking; siehe Randnummer 13)
+     unterliegen in der Regel als der privaten Vermögensverwaltung unterfallende
+     Fruchtziehung der Besteuerung nach § 22 Nummer 3 EStG. Die Steuerpflichtigen
+     erhalten im Tausch für ihre Leistung (temporärer Verzicht auf die Nutzung der
+     Kryptowerte) eine Gegenleistung in Form von zusätzlichen Kryptowerten (vgl.
+     Randnummer 46). Die erlangten Kryptowerte sind mit dem Marktkurs im Zeitpunkt der
+     Anschaffung anzusetzen (vgl. zur Ermittlung des Marktkurses und der
+     Nichtbeanstandung eines Tageskurses Randnummern 43 und 91).
+     Seite 18 von 34
+
+48a Aus Vereinfachungsgründen wird es nicht beanstandet, wenn unterjährig als Zeitpunkt
+    der Anschaffung beziehungsweise des Zugangs der beim (passivem) Staking erhaltenen
+    Kryptowerte der Zeitpunkt der Einbuchung in der Wallet (Claiming, siehe
+    Randnummer 13) angenommen wird. Der Zugang noch nicht geclaimter Kryptowerte ist
+    spätestens zum Ende des Wirtschaftsjahres/Kalenderjahres zu berücksichtigen.
+
+
+49   Soweit die gesperrten Kryptowerte zum Betriebsvermögen gehören, stellen die
+     Gegenleistungen Betriebseinnahmen dar. Die für das (passive) Staking erhaltenen
+     Kryptowerte sind im Zeitpunkt des Zugangs mit dem Marktkurs (gewinnerhöhend) zu
+     aktivieren (vgl. Randnummern 43, 48a und 91).
+
+
+     4. Einkünfte aus dem Betrieb einer Masternode
+50   Soweit Steuerpflichtige Erträge aus einer Master- oder sonstigen Node erzielen, gelten
+     die Ausführungen zur Blockerstellung im Wege des Proof of Stake der Randnummern 33
+     bis 39 entsprechend.
+
+
+     5. Einkünfte aus der Veräußerung von Kryptowerten
+     a) Ertragsteuerrechtliche Behandlung im Betriebsvermögen
+51   Sind die Kryptowerte Betriebsvermögen, sind die Veräußerungserlöse
+     Betriebseinnahmen. Bei der Ermittlung des Veräußerungsgewinns sind die individuellen
+     – gegebenenfalls fortgeführten – Anschaffungskosten der veräußerten Kryptowerte
+     abzuziehen. Davon kann abgewichen werden, wenn die individuellen
+     Anschaffungskosten im Einzelfall nicht ermittelt und individuell zugeordnet werden
+     können. In diesem Fall können diese mit den durchschnittlichen Anschaffungskosten
+     bewertet werden.
+
+
+52   Werden Kryptowerte wiederholt angekauft und verkauft (einschließlich des Tausches
+     gegen andere Kryptowerte), kann ein solcher Handel eine gewerbliche Tätigkeit
+     darstellen. Für die Abgrenzung zur privaten Vermögensverwaltung können die Kriterien
+     zum gewerblichen Wertpapier- und Devisenhandel herangezogen werden (vgl.
+     H 15.7 (9) (An- und Verkauf von Wertpapieren) EStH 2023).
+     Seite 19 von 34
+
+     b) Ertragsteuerrechtliche Behandlung im Privatvermögen
+53   Kryptowerte sind „andere Wirtschaftsgüter“ im Sinne des § 23 Absatz 1 Satz 1 Nummer 2
+     EStG (BFH-Urteil vom 14. Februar 2023, IX R 3/22, BStBl II S. 571; vgl. Randnummer 31).
+     Gewinne aus der Veräußerung von im Privatvermögen gehaltenen Kryptowerten
+     können daher Einkünfte aus privaten Veräußerungsgeschäften nach § 22 Nummer 2 in
+     Verbindung mit § 23 Absatz 1 Satz 1 Nummer 2 EStG darstellen, wenn der Zeitraum
+     zwischen der Anschaffung und der Veräußerung nicht mehr als ein Jahr beträgt (für die
+     ertragsteuerrechtlichen Besonderheiten von Utility und Security Token vgl.
+     Randnummern 77 ff.). Die Einkünfteerzielungsabsicht ist dabei nicht zu prüfen, da sie
+     bereits aufgrund der Veräußerung innerhalb der Frist objektiviert vorliegt. Die Gewinne
+     bleiben jedoch nach § 23 Absatz 3 Satz 5 EStG steuerfrei, wenn die Summe der aus
+     sämtlichen privaten Veräußerungsgeschäften im Kalenderjahr erzielten Gewinne
+     (Gesamtgewinn) weniger als 1.000 € (bis Veranlagungszeitraum 2023: 600 €) beträgt.
+
+
+54   Erforderlich sind ein Anschaffungs- und ein Veräußerungsvorgang. Unter einer
+     Anschaffung ist der entgeltliche Erwerb von Dritten zu verstehen. Dies umfasst
+     insbesondere die im Zusammenhang mit der Blockerstellung (vgl. Randnummer 42) und
+     gegebenenfalls die durch einen ICO oder Airdrop (vgl. Randnummer 75) erlangten
+     Kryptowerte. Entgeltlich erworben sind zudem alle Kryptowerte, die Steuerpflichtige im
+     Tausch gegen Einheiten einer staatlichen Währung (z. B. Euro), Waren oder
+     Dienstleistungen sowie gegen andere Kryptowerte erworben haben, sowie die durch
+     Lending und (passivem) Staking erlangten Kryptowerte. Spiegelbildlich zur Anschaffung
+     stellt die entgeltliche Übertragung des angeschafften Wirtschaftsguts auf Dritte eine
+     Veräußerung dar. Der Tausch von Kryptowerten in Einheiten einer staatlichen Währung
+     (z. B. Euro), Waren oder Dienstleistungen sowie in andere Kryptowerte führt demgemäß
+     zu einer Veräußerung.
+
+
+55   Die Veräußerungsfristen des § 23 Absatz 1 Satz 1 Nummer 2 EStG beginnen nach jedem
+     Tausch neu. Für die Ermittlung der Jahresfrist ist bei einer Anschaffung oder
+     Veräußerung über eine zentrale Handelsplattform auf die dort aufgezeichneten
+     Zeitpunkte abzustellen. Bei einem Direkterwerb oder einer Direktveräußerung ohne
+     Zwischenschaltung von Intermediären, etwa über eine dezentrale Handelsplattform, ist
+     aus Vereinfachungsgründen in der Regel auf die Zeitpunkte abzustellen, die sich aus der
+     Wallet ergeben. Soll für die Frage, ob die Jahresfrist überschritten ist, das
+     Seite 20 von 34
+
+     schuldrechtliche Verpflichtungsgeschäft maßgebend sein, müssen die Steuerpflichtigen
+     den Zeitpunkt des Vertragsabschlusses durch geeignete Unterlagen nachweisen.
+
+
+56   Wenn Steuerpflichtige Kryptowerte veräußern, deren Bestand nach dem UTXO-Modell
+     ermittelt wird und bei denen für einen nicht veräußerten Teilbetrag „Wechselgeld“ (oder
+     „Change Output“) an den eigenen öffentlichen Schlüssel zurückfließt (vgl. Beispiel in
+     Randnummer 23), werden für diesen Teilbetrag für steuerliche Zwecke die
+     ursprünglichen Anschaffungsdaten der veräußerten Kryptowerte fortgeführt.
+
+
+     aa) Ermittlung des Veräußerungsgewinns
+57   Der Gewinn oder Verlust aus der Veräußerung von Kryptowerten ermittelt sich aus dem
+     Veräußerungserlös abzüglich der Anschaffungs- und der Werbungskosten. Dabei sind
+     Werbungskosten auf steuerbare und nicht steuerbare private Veräußerungsgeschäfte
+     aufzuteilen. Nicht steuerbare private Veräußerungsgeschäfte liegen z. B. vor, wenn die
+     Veräußerung außerhalb der Fristen des § 23 EStG erfolgt (siehe Randnummer 55).
+
+
+58   Als Veräußerungserlös ist bei einer Veräußerung in Euro der vereinbarte Kaufpreis zu
+     berücksichtigen. Werden Kryptowerte gegen andere Kryptowerte getauscht, ist als
+     Veräußerungserlös der hingegebenen Kryptowerte der Marktkurs der erlangten
+     Kryptowerte im Tauschzeitpunkt anzusetzen (vgl. zur Ermittlung des Marktkurses und
+     der Nichtbeanstandung eines Tageskurses Randnummern 43 und 91). Kann ein
+     Marktkurs der erlangten Kryptowerte nicht ermittelt werden, wird es nicht beanstandet,
+     wenn stattdessen der Marktkurs der hingegebenen Kryptowerte angesetzt wird.
+
+
+59   Der Marktkurs der hingegebenen Kryptowerte – zuzüglich eventuell gezahlter
+     Anschaffungsnebenkosten – stellt zugleich die Anschaffungskosten der erhaltenen
+     Kryptowerte dar. Die im Zusammenhang mit der Veräußerung aufgewendeten
+     Transaktionsgebühren sind als Werbungskosten zu berücksichtigen.
+
+
+60   Werden Kryptowerte im Tausch gegen eine Dienstleistung oder eine Ware hingegeben,
+     ist als Veräußerungserlös der hingegebenen Kryptowerte das in Euro vereinbarte Entgelt
+     anzusetzen. Wurde ein Entgelt nicht ausdrücklich beziffert, ist als Veräußerungserlös der
+     Marktkurs der hingegebenen Kryptowerte anzusetzen.
+     Seite 21 von 34
+
+     bb) Verwendungsreihenfolge
+61   Für die Bestimmung der Verwendungsreihenfolge der veräußerten Kryptowerte gilt der
+     Grundsatz der Einzelbetrachtung (vgl. Randnummer 51). Ist eine Einzelbetrachtung nicht
+     möglich, gelten für die Zwecke der Haltefrist die zuerst angeschafften Kryptowerte einer
+     Handelsbezeichnung (z. B. Bitcoin oder Ether) als veräußert und ist für die
+     Wertermittlung die Durchschnittsmethode anzuwenden (BFH-Urteil vom 24. November
+     1993, X R 49/90, BStBl II 1994 S. 591). Aus Vereinfachungsgründen kann für die Zwecke
+     der Wertermittlung unterstellt werden, dass die zuerst angeschafften Kryptowerte einer
+     Handelsbezeichnung zuerst veräußert wurden (First in First out, FiFo).
+
+
+62   Es gilt eine walletbezogene Betrachtung. Innerhalb einer Wallet ist die gewählte Methode
+     bis zur vollständigen Veräußerung aller Kryptowerte einer Handelsbezeichnung in dieser
+     Wallet beizubehalten. Nach einer vollständigen Veräußerung der in der Wallet
+     vorhandenen Kryptowerte einer Handelsbezeichnung und anschließendem Neuerwerb
+     von Kryptowerten dieser Handelsbezeichnung kann die Methode gewechselt werden
+     (Wahlrecht). Beim Halten von Kryptowerten mit abweichenden Handelsbezeichnungen
+     über eine Wallet besteht jeweils ein gesondertes Wahlrecht.
+
+     cc) Keine Verlängerung der Veräußerungsfrist auf zehn Jahre
+63   Bei Currency oder Payment Token (vgl. Randnummer 3) kommt die Verlängerung der
+     Veräußerungsfrist nach § 23 Absatz 1 Satz 1 Nummer 2 Satz 4 EStG nicht zur
+     Anwendung.
+
+
+     6. Einkünfte aus der Verwendung von Kryptowerten für Lending
+     a) Ertragsteuerrechtliche Behandlung im Betriebsvermögen
+64   Erträge aus der Überlassung von dem Betriebsvermögen zuzuordnenden Kryptowerten
+     stellen Betriebseinnahmen dar. Für die Nutzungsüberlassung erhaltene Kryptowerte
+     werden angeschafft und sind mit dem Marktkurs im Zeitpunkt des Zugangs zu bewerten
+     (vgl. zur Ermittlung des Marktkurses und der Nichtbeanstandung eines Tageskurses
+     Randnummern 43 und 91, zum Claiming siehe Randnummer 48a). Zur
+     Einnahmenüberschussrechnung vgl. Randnummer 44.
+     Seite 22 von 34
+
+     b) Ertragsteuerrechtliche Behandlung im Privatvermögen
+65   Einkünfte aus dem Lending sind gemäß § 22 Nummer 3 EStG steuerbar. Die Erzielung
+     von Einkünften mit der Nutzungsüberlassung auf Zeit erfolgt aufgrund einer Leistung
+     der Steuerpflichtigen. Für die Nutzungsüberlassung erhaltene Kryptowerte werden
+     angeschafft und sind mit dem Marktkurs im Zeitpunkt des Zuflusses zu bewerten (vgl.
+     zur Ermittlung des Marktkurses und der Nichtbeanstandung eines Tageskurses
+     Randnummern 43 und 91, zum Claiming siehe Randnummer 48a). Zur Veräußerung der
+     für die Nutzungsüberlassung erhaltenen Kryptowerte wird auf die Ausführungen der
+     Randnummern 53 ff. verwiesen.
+
+
+     7. Ertragsteuerrechtliche Behandlung der durch Hard Forks erhaltenen Kryptowerte
+     a) Ertragsteuerrechtliche Behandlung im Betriebsvermögen
+66   Sind Kryptowerte Betriebsvermögen und entstehen aufgrund einer Hard Fork
+     Kryptowerte einer neuen Blockchain, die ebenfalls Betriebsvermögen sind, stellen die
+     Kryptowerte der verschiedenen Blockchains unterschiedliche Wirtschaftsgüter dar.
+
+
+67   Steuerpflichtige erhalten mit Kryptowerten stets die Möglichkeit, im Zuge einer Hard
+     Fork der zugrundeliegenden Blockchain die gleiche Anzahl zusätzlicher Kryptowerte der
+     neuen Blockchain zu erhalten. Im Falle einer Anschaffung von Kryptowerten (siehe
+     insbesondere Randnummer 42) liegt folglich immer auch ein Anschaffungsvorgang
+     hinsichtlich der durch eine spätere Hard Fork entstandenen Kryptowerte der neuen
+     Blockchain vor. Die Anschaffungskosten der vor der Hard Fork existierenden
+     Kryptowerte sind auf diese Wirtschaftsgüter aufzuteilen. Der Aufteilungsmaßstab richtet
+     sich dabei nach dem Verhältnis der Marktkurse der verschiedenen Kryptowerte im
+     Zeitpunkt der Hard Fork (vgl. zur Ermittlung des Marktkurses und der
+     Nichtbeanstandung eines Tageskurses Randnummern 43 und 91). Soweit nach einer
+     Hard Fork den Kryptowerten der neuen Blockchain kein Wert beigemessen werden
+     kann, verbleiben die Anschaffungskosten bei den vor der Hard Fork existierenden
+     Kryptowerten. Zur Einnahmenüberschussrechnung vgl. Randnummer 44.
+
+     b) Ertragsteuerrechtliche Behandlung im Privatvermögen
+68   Eine Hard Fork führt nicht zu Einkünften aus § 22 Nummer 3 EStG. Werden die
+     aufgrund einer Fork entstandenen neuen Kryptowerte jedoch veräußert, sind die dabei
+     erzielten Gewinne als Einkünfte aus privaten Veräußerungsgeschäften nach § 22
+     Nummer 2 in Verbindung mit § 23 Absatz 1 Satz 1 Nummer 2 EStG zu versteuern, sofern
+     Seite 23 von 34
+
+     die vor der Hard Fork bestehenden Kryptowerte angeschafft wurden und der Zeitraum
+     zwischen der Anschaffung der ursprünglichen Kryptowerte und der Veräußerung nicht
+     mehr als ein Jahr beträgt (vgl. Randnummern 67 und 53 ff.). Zur Aufteilung der
+     Anschaffungskosten vgl. Randnummer 67. Der Anschaffungszeitpunkt der neuen
+     Kryptowerte entspricht dem Anschaffungszeitpunkt der vor der Hard Fork existierenden
+     Kryptowerte.
+
+
+     8. Ertragsteuerrechtliche Behandlung der durch Airdrops erhaltenen Kryptowerte
+     a) Ertragsteuerrechtliche Behandlung im Betriebsvermögen
+69   Soweit der Erhalt von Kryptowerten betrieblich veranlasst ist, liegen Betriebseinnahmen
+     vor. Die Kryptowerte sind mit dem Marktkurs im Zeitpunkt des Zugangs zu bewerten
+     (vgl. zur Ermittlung des Marktkurses und der Nichtbeanstandung eines Tageskurses
+     Randnummern 43 und 91). In Fällen, in denen im Zeitpunkt des Zugangs noch kein
+     Marktkurs ermittelbar ist, wird es nicht beanstandet, wenn die im Rahmen eines
+     Airdrops erhaltenen Kryptowerte mit 0 € angesetzt werden. Zur
+     Einnahmenüberschussrechnung vgl. Randnummer 44.
+
+
+     b) Ertragsteuerrechtliche Behandlung im Privatvermögen
+     aa) Sonstige Einkünfte aus Leistungen gemäß § 22 Nummer 3 EStG
+70   Der Erhalt zusätzlicher Kryptowerte kann zu sonstigen Einkünften aus einer Leistung im
+     Sinne des § 22 Nummer 3 EStG führen. Das ist trotz des Marketingcharakters vieler
+     Airdrops der Fall, wenn von den Interessenten eine Leistung (vgl. Randnummer 46) zu
+     erbringen ist, insbesondere also bei aktivem Tun wie der Nennung des Airdrops, der
+     Projektinitiatorin oder des Projektinitiators in Beiträgen in sozialen Medien. Eine
+     Leistung im Sinne des § 22 Nummer 3 EStG erbringen Steuerpflichtige zudem, wenn sie
+     eigene Bilder, Fotos oder Videos auf einer Plattform hochladen und hierfür Kryptowerte
+     erhalten, auch wenn das Eigentum an den Bildern, Fotos oder Videos bei den
+     Steuerpflichtigen verbleibt.
+
+
+71   Hängt die Zuteilung der Kryptowerte davon ab, dass Steuerpflichtige Daten von sich zur
+     Verfügung stellen, die über die Informationen hinausgehen, die für die schlichte
+     technische Zuteilung oder Bereitstellung erforderlich sind, liegt in der Datenüberlassung
+     eine Leistung der Steuerpflichtigen im Sinne des § 22 Nummer 3 EStG, für die sie als
+     Gegenleistung Kryptowerte erhalten. Davon ist jedenfalls dann auszugehen, wenn die
+     Steuerpflichtigen verpflichtet sind oder sich bereit erklären müssen, im Zusammenhang
+     Seite 24 von 34
+
+     mit einem Airdrop personenbezogene Daten zur Verfügung zu stellen. Anders als bei der
+     Teilnahme an klassischen Rabattsystemen oder Glücksspielen, für die unter anderem die
+     Angabe einer Postadresse aus Identifikationsgründen notwendig ist, reicht für die
+     Zuteilung eines Airdrops der öffentliche Schlüssel der Steuerpflichtigen aus.
+
+
+72   Ist der Airdrop darauf ausgerichtet, dass neben einer Leistung auch „der Zufall“ über den
+     Erhalt von Kryptowerten entscheidet (vgl. Randnummer 29), wird der
+     Zurechnungszusammenhang von Leistung und Gegenleistung durch das
+     „Zufallselement“ unterbrochen oder überlagert.
+
+
+73   Die Kryptowerte sind mit dem Marktkurs im Zeitpunkt des Erwerbs anzusetzen (vgl. zur
+     Ermittlung des Marktkurses Randnummern 43 und 91). In Fällen, in denen im Zeitpunkt
+     des Erwerbs noch kein Marktkurs ermittelbar ist, wird es nicht beanstandet, wenn die im
+     Rahmen eines Airdrops erhaltenen Kryptowerte mit 0 € angesetzt werden.
+
+
+74   Erfolgt die Zuteilung nicht im wirtschaftlichen Zusammenhang mit einer Leistung,
+     kommt eine Schenkung in Betracht, für die die schenkungsteuerrechtlichen Regelungen
+     zu beachten sind.
+
+
+     bb) Einkünfte aus privaten Veräußerungsgeschäften gemäß § 22 Nummer 2 in
+     Verbindung mit § 23 Absatz 1 Satz 1 Nummer 2 EStG
+75   Erfolgt die Zuteilung von Kryptowerten aufgrund einer Leistung im Sinne des § 22
+     Nummer 3 EStG, liegt auch eine Anschaffung vor. Die Anschaffungskosten sind mit dem
+     Wert der hingegebenen Daten oder der vorgenommenen Handlung anzusetzen. Dabei
+     kann widerlegbar vermutet werden, dass der Wert der hingegebenen Daten oder der
+     vorgenommenen Handlung dem Marktkurs der Gegenleistung entspricht (vgl. zur
+     Ermittlung des Marktkurses und der Nichtbeanstandung eines Tageskurses
+     Randnummern 43 und 91 sowie zum Ansatz mit 0 € im Falle eines nicht ermittelbaren
+     Marktkurses Randnummer 73). Aufgrund der Anschaffung kann die spätere
+     Veräußerung der zugeteilten Kryptowerte der Besteuerung als privates
+     Veräußerungsgeschäft unterliegen (sofern nicht Einkünfte aus Kapitalvermögen
+     vorliegen); auf die Ausführungen der Randnummern 53 ff. wird verwiesen. Bei
+     unentgeltlichem Erwerb ist die Anschaffung des Rechtsvorgängers maßgebend (§ 23
+     Absatz 1 Satz 3 EStG).
+     Seite 25 von 34
+
+     9. Initial Coin Offering (ICO)
+76   Beim ICO werden Kryptowerte vom Emittenten selbst herausgegeben. Im
+     Betriebsvermögen des Emittenten können sie – je nach Ausgestaltung – sowohl
+     Eigenkapital (Kapitalüberlassung auf Dauer) als auch Fremdkapital (Kapitalüberlassung
+     auf Zeit) darstellen. Sie sind ertragsteuerrechtlich nach ihrem rechtlichen Gehalt
+     einzuordnen. Die ertragsteuerrechtliche Behandlung folgt den allgemeinen Grundsätzen.
+     Die emittierten Kryptowerte sind beim Emittenten selbst hergestellte Wirtschaftsgüter,
+     die mit den Herstellungskosten zu aktivieren sind. Bei ihrem Tausch z. B. gegen andere
+     Kryptowerte oder Veräußerung realisiert der Emittent einen Gewinn oder einen Verlust,
+     soweit nicht entsprechende Verbindlichkeiten oder Kapitalbeträge zu passivieren sind.
+     Im Einzelfall ist zu prüfen, ob aus den Ausgabebedingungen der Kryptowerte
+     vertragliche Verpflichtungen gegenüber den Inhaberinnen und Inhabern der
+     Kryptowerte resultieren, die – soweit die Voraussetzungen erfüllt werden – als
+     Verbindlichkeit oder Rückstellung auszuweisen wären.
+
+
+     10. Ertragsteuerrechtliche Besonderheiten von Utility und Security Token
+     a) Ertragsteuerrechtliche Behandlung im Betriebsvermögen
+77   Für die ertragsteuerrechtliche Beurteilung ist zu unterscheiden, ob die Kryptowerte den
+     Inhaberinnen und Inhabern eine besondere Rechtsposition einräumen. Sie können als
+     Wirtschaftsgüter unter den Finanzanlagen oder als Forderungen zu bilanzieren sein. Für
+     die weitere Beurteilung gelten die allgemeinen Bilanzierungsgrundsätze. Zur
+     Einnahmenüberschussrechnung vgl. Randnummer 44.
+
+
+     b) Ertragsteuerrechtliche Behandlung im Privatvermögen
+78   Die ertragsteuerrechtliche Einordnung der Erträge hängt davon ab, welche Rechte und
+     Ansprüche im Einzelfall vermittelt werden.
+
+
+     aa) Utility Token
+79   Werden Utility Token eingelöst, ist dies ertragsteuerrechtlich unbeachtlich (BFH-Urteil
+     vom 6. Februar 2018, IX R 33/17, BStBl II S. 525). Eine Veräußerung liegt nicht vor, da es
+     an einer entgeltlichen Übertragung auf Dritte fehlt, wenn lediglich die in den Utility
+     Token verkörperten Ansprüche auf ein Produkt oder eine Dienstleistung eingelöst
+     werden und unter Nutzung der Utility Token die Ware oder die Dienstleistung erhalten
+     wird.
+     Seite 26 von 34
+
+80   Werden angeschaffte Utility Token veräußert, können Einkünfte aus privaten
+     Veräußerungsgeschäften nach § 22 Nummer 2 in Verbindung mit § 23 Absatz 1 Satz 1
+     Nummer 2 EStG vorliegen. Dies gilt auch, wenn Utility Token als Tauschmittel (hybride
+     Token) verwendet werden. Auf die entsprechenden Ausführungen der Randnummern 53
+     ff. wird verwiesen.
+
+
+     bb) Security Token
+81   Je nach Ausgestaltung können Kryptowerte auch als Wertpapiere oder andere
+     Finanzinstrumente anzusehen sein.
+
+
+82   Die ertragsteuerrechtliche Einordnung der laufenden Einkünfte unter § 20 Absatz 1
+     Nummer 1 oder Nummer 7 EStG und der Veräußerungsgewinne unter § 20 Absatz 2
+     Satz 1 Nummer 1 oder Nummer 7 EStG hängt von der Ausgestaltung der Kryptowerte im
+     Einzelfall ab.
+
+
+83   Handelt es sich bei dem vermittelten Recht um eine Schuldverschreibung, kommt es für
+     die ertragsteuerrechtliche Einordnung der hieraus resultierenden Erträge
+     beziehungsweise Gewinne darauf an, ob insoweit eine Kapitalforderung im Sinne des
+     § 20 Absatz 1 Nummer 7 EStG oder ein bloßer Sachleistungsanspruch begründet wird.
+
+
+84   Vermittelt die Schuldverschreibung ausschließlich einen Anspruch auf Lieferung einer
+     beim Emittenten hinterlegten festgelegten Menge von Kryptowerten oder einen
+     Anspruch auf Auszahlung des Erlöses aus ihrer Veräußerung durch den Emittenten, liegt
+     keine Kapitalforderung im Sinne des § 20 Absatz 1 Nummer 7 EStG, sondern ein
+     Sachleistungsanspruch vor. Die BFH-Rechtsprechung zu
+     Xetra-Gold-Inhaberschuldverschreibungen (BFH-Urteile vom 12. Mai 2015, VIII R 35/14,
+     BStBl II S. 834 und VIII R 4/15, BStBl II S. 835, BFH-Urteil vom 6. Februar 2018, IX R
+     33/17, BStBl II S. 525) und die BFH-Rechtsprechung zu Gold-Bullion-Securities (BFH-
+     Urteil vom 16. Juni 2020, VIII 7/17, BStBl II 2021 S. 9) sind entsprechend anzuwenden.
+
+
+85   Die Veräußerung einer solchen Schuldverschreibung führt gegebenenfalls zu Einkünften
+     aus privaten Veräußerungsgeschäften gemäß § 22 Nummer 2 in Verbindung mit § 23
+     Absatz 1 Satz 1 Nummer 2 EStG. Auf die entsprechenden Ausführungen der
+     Randnummern 53 ff. wird verwiesen. Leistungen des Emittenten während der Laufzeit
+     der Schuldverschreibung stellen beim Anleger sonstige Einkünfte im Sinne des
+     Seite 27 von 34
+
+     § 22 Nummer 3 EStG dar. Die zugewendeten Kryptowerte sind im Zeitpunkt des
+     Zuflusses zu bewerten.
+
+
+86   Stellt die Schuldverschreibung hingegen eine Kapitalforderung im Sinne des § 20 Absatz
+     1 Nummer 7 EStG dar, führen während der Haltezeit vereinnahmte Erträge zu
+     Einkünften aus Kapitalvermögen (laufende Kapitalerträge). Eine Veräußerung der
+     Schuldverschreibung fällt in den Anwendungsbereich des § 20 Absatz 2 Satz 1 Nummer 7
+     EStG. Bei nicht in Euro erhaltenen Einnahmen sind § 20 Absatz 3 und § 20 Absatz 4 Satz 1
+     Halbsatz 2 EStG zu beachten.
+
+
+     III. Steuererklärungs-, Mitwirkungs- und Aufzeichnungspflichten
+
+
+     1. Allgemeines
+87   Auch hinsichtlich der Steuererklärungs-, Mitwirkungs- und Aufzeichnungspflichten sind
+     die technischen Besonderheiten von Kryptowerten zu berücksichtigen. So können etwa
+     Transaktionen unmittelbar „on chain“ erfolgen, das heißt im Netzwerk durch eine
+     Transaktion – im Falle der Blockbelohnung: durch das Protokoll – veranlasst und in
+     einem neuen Block dokumentiert werden (siehe Randnummer 21). Dieser unmittelbare
+     Blockchain-Zugriff liegt ebenso dezentralen Handelsplattformen (DEX, siehe
+     Randnummer 20a) zugrunde. Die auf diese Weise in einer öffentlichen Blockchain
+     dokumentierten Informationen sind in der Regel für jedermann einsehbar, lassen jedoch
+     aufgrund der Pseudonymisierung durch öffentliche Schlüssel (siehe Randnummer 18)
+     keine direkten Schlüsse auf die Identität einzelner Steuerpflichtiger zu. Die
+     entsprechenden Informationen unterfallen weiterhin der Informationssphäre der
+     insoweit beweisnäheren Steuerpflichtigen. Die alleinige Überlassung des öffentlichen
+     Schlüssels ohne weitere Angaben ist für die ertragsteuerrechtliche Nachweisführung
+     daher nicht ausreichend. Bei ergänzender Mitteilung des öffentlichen Schlüssels kann
+     dieser jedoch dazu genutzt werden, die Richtigkeit und Vollständigkeit von Angaben und
+     Aufzeichnungen zu prüfen. Werden Kryptowerte auf einer zentralen Handelsplattform
+     (CEX, siehe Randnummer 20) gehandelt, erfolgt in der Regel keine Dokumentation
+     einzelner Transaktionen in der Blockchain, sondern lediglich in den Aufzeichnungen der
+     Handelsplattform über die Bestände der Nutzerkonten. Auch diese Informationen fallen
+     in die Sphäre der Steuerpflichtigen.
+     Seite 28 von 34
+
+88   Die Angaben in den Steuererklärungen sind wahrheitsgemäß nach bestem Wissen und
+     Gewissen zu machen (§ 150 Absatz 2 AO). Die Steuerpflichtigen sind zur Mitwirkung bei
+     der Ermittlung des Sachverhalts verpflichtet (vgl. §§ 90, 93, 97 AO und § 12
+     Steueroasenabwehrgesetz (StAbwG)). Die dem Verhältnismäßigkeitsgrundsatz
+     unterliegende Amtsermittlungspflicht der Finanzbehörde (§ 88 AO) und die
+     Mitwirkungspflicht der Beteiligten stehen dabei grundsätzlich nebeneinander
+     (BFH-Urteil vom 15. Februar 1989, X R 16/86, BStBl II S. 462).
+
+
+89   Werden Kryptowerte über zentrale Handelsplattformen eines ausländischen Betreibers
+     erworben oder veräußert, wird dadurch nach § 90 Absatz 2 AO eine erweiterte
+     Mitwirkungspflicht der Steuerpflichtigen begründet. Über die nach § 90 Absatz 1 AO
+     geschuldete Offenlegung der erheblichen Tatsachen und Angabe der bekannten
+     Beweismittel hinaus haben die Steuerpflichtigen in diesen Fällen den Sachverhalt
+     aufzuklären und die erforderlichen Beweismittel zu beschaffen. Dies umfasst
+     insbesondere den regelmäßigen und vollständigen Abruf der Transaktionsübersichten
+     zentraler Handelsplattformen (CEX, siehe Randnummern 20 und 29a). Fehlende
+     Aufzeichnungen und Datenverluste (z. B. wegen Insolvenz der Handelsplattform oder
+     aufgrund eines Hacker-Angriffs) gehen zu Lasten der Steuerpflichtigen. § 90 Absatz 2 AO
+     gilt im Regelfall ebenso, wenn Kryptowerte über dezentrale Handelsplattformen (DEX,
+     siehe Randnummer 20a) erworben oder veräußert werden. Denn auch hier kommt es
+     aufgrund der internationalen Verortung von Netzwerkknoten einer Blockchain und der
+     nicht an die Ansässigkeit anknüpfenden Auswahl der Tauschpartner in der Regel zu
+     einer Beteiligung ausländischer Akteure.
+
+
+90   Nutzen Steuerpflichtige Steuerreports, gilt vorbehaltlich der Kapitel III 2 und III 3
+     Folgendes: Einkünfte müssen vollständig und richtig erklärt werden und für die
+     Finanzbehörde nachvollziehbar sein. Einkünfte sind für die Finanzbehörde
+     nachvollziehbar, wenn diese sie anhand vorliegender Unterlagen und Angaben ermitteln
+     und berechnen kann. Die Nachvollziehbarkeit kann im Rahmen der Veranlagung auch
+     über Steuerreports gewährleistet werden, wenn diese bei der Bearbeitung plausibel
+     erscheinen, weil keine Hinweise auf eine Unvollständigkeit vorliegen (z. B. offenkundiges
+     Fehlen einzelner Anschaffungskosten, Wallets oder Handelsplattformen), sie in sich
+     schlüssig sind (z. B. weil Angaben sich nicht widersprechen) und nicht im äußeren
+     Widerspruch zu sonstigen Erkenntnissen der Finanzbehörde stehen (z. B. zu übrigen
+     Einkünften, der Mittelherkunft, weiteren Steuerreports oder Transaktionsübersichten).
+     Seite 29 von 34
+
+     Für eine ausreichende Plausibilität sind außerdem regelmäßig Auszüge der
+     Reporteinstellungen zur Bestimmung der Tatsachen, welche diesen zugrunde liegen
+     (z. B. angesetzte Kurse und genutzte Verbrauchsfolgeverfahren wie FiFo, siehe
+     Randnummer 61), sowie Ausführungen zu den zugrundeliegenden
+     ertragsteuerrechtlichen Wertungen erforderlich. Anpassungen und Korrekturen stehen
+     der Plausibilität in der Regel nicht entgegen, wenn sie kenntlich gemacht wurden und
+     nachvollziehbar begründet sind (z. B. wegen fehlender Anschaffungskosten oder –daten
+     bei Übertragungen auf andere Handelsplattformen). Ein plausibel erscheinender
+     Steuerreport kann der Veranlagung zugrunde gelegt werden. Die Finanzbehörde kann in
+     diesen Fällen auf die Notwendigkeit weiterer Sachverhaltsermittlungen verzichten oder
+     sich auf die Prüfung einzelner Vorgänge (insbesondere manuell angepasster Einträge)
+     beschränken. §§ 88 Absatz 2 Satz 1, 145 ff. AO sowie die Möglichkeit einer
+     weitergehenden Überprüfung (insbesondere im Außenprüfungsverfahren) bleiben
+     unberührt.
+
+91   Werden Marktkurse nicht zum Zeitpunkt der Anschaffung bzw. des Tauschvorgangs,
+     sondern mit nach dokumentierten Vorgaben ermittelten Tageskursen bewertet, so
+     können diese von der Finanzbehörde bis auf Weiteres als Besteuerungsgrundlage
+     berücksichtigt werden, solange eine gleichmäßige Wertermittlung gewährleistet ist. Der
+     Tageskurs kann insbesondere dem Tagesdurchschnittskurs, Tageszeitkurs oder
+     Tagesschlusskurs entsprechen. Der Tagesdurchschnittskurs entspricht dem Durchschnitt
+     aller Marktkurse eines Kryptowertes einer Kursquelle (siehe Randnummer 43) eines
+     Kurstages; der Tageszeitkurs entspricht dem Marktkurs eines Kryptowertes einer
+     Kursquelle zu einem gleichbleibendem Tageszeitpunkt; der Tagesschlusskurs entspricht
+     dem letzten Marktkurs eines Kryptowertes einer Kursquelle eines Kalendertages. An der
+     Gleichmäßigkeit der Wertermittlung fehlt es etwa dann, wenn sowohl für
+     Anschaffungskosten als auch für Veräußerungspreise Tageskurse angesetzt werden, für
+     deren Ermittlung jedoch auf unterschiedliche Quellen oder Zeitpunkte abgestellt wird
+     (z. B. Ansatz der Anschaffungskosten nach der webbasierten Liste mit den höchsten und
+     Ansatz der Veräußerungspreise nach der webbasierten Liste mit den niedrigsten
+     Marktkursen, siehe Randnummer 43). Die Gleichmäßigkeit in der Regel unberührt lassen
+     Korrekturen einzelner Werte, die beispielsweise aufgrund abweichender Bezeichnungen
+     in der genutzten Quelle unzutreffend ermittelt wurden. Nutzen Steuerpflichtige
+     Steuerreports mehrerer Anbieter, ist für die Gleichmäßigkeit der Wertermittlung jeder
+     Steuerreport gesondert zu beurteilen.
+     Seite 30 von 34
+
+92   Soweit die Finanzbehörde die Besteuerungsgrundlagen nicht ermitteln oder berechnen
+     kann, hat sie diese gem. § 162 AO zu schätzen. Das gilt insbesondere dann, wenn
+     Steuerpflichtige keine ausreichenden Angaben gemacht oder keine ausreichende
+     Aufklärung über ihre Angaben gegeben haben und die Finanzbehörde die
+     Besteuerungsgrundlagen auch nicht auf andere Weise mit hinreichender Sicherheit
+     ermitteln kann. Ziel der Schätzung ist es, den tatsächlichen Verhältnissen möglichst nahe
+     zu kommen (BFH-Urteil vom 29. Mai 2008, VI R 11/07, BStBl II S. 933). Fehlen vereinzelte
+     Angaben oder Nachweise, sind die im Übrigen vom Steuerpflichtigen zur Plausibilität
+     vorgelegten Unterlagen und Daten jedenfalls im Rahmen der Schätzung zu würdigen.
+     Anhaltspunkt für eine realitätsnahe Schätzung können im Einzelfall daher auch von
+     Handelsplattformen oder Wallet-Anbietern bereitgestellte Transaktionsübersichten und
+     Steuerreports (siehe Randnummern 29a bis 29b) sein. Eine Schätzung darf nicht dazu
+     dienen, Steuerpflichtige zu sanktionieren.
+
+
+     2. Mitwirkungs-, Aufzeichnungs- und Aufbewahrungspflichten im Betriebsvermögen
+93   Steuerliche Buchführungs- und Aufzeichnungspflichten ergeben sich sowohl aus der
+     Abgabenordnung (z. B. § 90 Absatz 3, §§ 141, 143 bis 144 AO), dem Steueroasenabwehr-
+     gesetz (§ 12 StAbwG) als auch aus Einzelsteuergesetzen (z. B. § 22 UStG und § 4 Absatz 3
+     Satz 5 EStG bei der Einnahmenüberschussrechnung).
+
+
+94   Nach § 140 AO sind die außersteuerlichen Buchführungs- und Aufzeichnungspflichten,
+     welche für die Besteuerung von Bedeutung sind, auch für das Steuerrecht zu erfüllen.
+     Außersteuerliche Buchführungs- und Aufzeichnungspflichten ergeben sich
+     insbesondere aus den §§ 238 ff. HGB und aus den dort bezeichneten handelsrechtlichen
+     Grundsätzen ordnungsmäßiger Buchführung (GoB).
+
+
+95   Neben den außersteuerlichen und steuerlichen Büchern, Aufzeichnungen und
+     Unterlagen zu Geschäftsvorfällen sind alle Unterlagen aufzubewahren, die zum
+     Verständnis und zur Überprüfung der für die Besteuerung gesetzlich vorgeschriebenen
+     Aufzeichnungen im Einzelfall von Bedeutung sind. Dazu zählen neben Unterlagen in
+     Papierform auch alle Unterlagen in elektronischer Form (z. B. Daten, Datensätze und
+     elektronische Dokumente), die dokumentieren, dass die Ordnungsvorschriften
+     umgesetzt und deren Einhaltung überwacht wurden.
+     Seite 31 von 34
+
+96   Für die Buchführungs- und Aufzeichnungspflichten, die sonst erforderlichen
+     Aufzeichnungen und die zu ihrem Verständnis erforderlichen Unterlagen sowie ihre
+     Aufbewahrung gelten die §§ 145 bis 147 AO. Insbesondere sind die Buchungen und
+     erforderlichen Aufzeichnungen nach § 146 Absatz 1 Satz 1 AO einzeln, vollständig,
+     richtig, zeitgerecht und geordnet und nach § 146 Absatz 4 AO nicht in einer Weise
+     vorzunehmen, die Veränderungen an ihnen nicht mehr feststellen lässt.
+
+
+97   Weitere Erläuterungen ergeben sich aus den Grundsätzen zur ordnungsmäßigen
+     Führung und Aufbewahrung von Büchern, Aufzeichnungen und Unterlagen in
+     elektronischer Form sowie zum Datenzugriff (GoBD, BMF-Schreiben vom 28. November
+     2019, BStBl I S. 1269, geändert durch BMF-Schreiben vom 11. März 2024, BStBl I S. 374).
+
+
+98   Wird zur Erfüllung der Buchführungs- und Aufzeichnungspflichten im Zusammenhang
+     mit Kryptowerten spezielle Software genutzt, ist für diese neben der Einhaltung der
+     sonstigen GoBD eine Verfahrensdokumentation zu erstellen, vgl. Randziffer 32 und
+     151 ff. der GoBD, und es sind insbesondere die Grundsätze der Unveränderbarkeit und
+     Vollständigkeit zu beachten (siehe § 146 Absatz 4 AO und Randziffer 107 ff. der GoBD).
+
+
+99   Wer nach § 147 Absatz 1 AO aufbewahrungspflichtige Bücher, Aufzeichnungen und
+     Unterlagen ganz oder teilweise mittels eines Datenverarbeitungssystems führt, hat im
+     Rahmen einer Außenprüfung (§ 193 Absatz 1 AO) die Vorschrift zum Datenzugriffsrecht
+     nach § 147 Absatz 6 AO zu beachten. Auch spezielle Software (siehe Randnummer 98)
+     fällt unter das Datenzugriffsrecht der Finanzverwaltung nach § 147 Absatz 6 AO, wenn
+     und soweit damit Aufzeichnungs- oder Aufbewahrungspflichten erfüllt werden. Darüber
+     hinaus kann bei einer Außenprüfung die Herausgabe nicht aufbewahrungspflichtiger
+     Unterlagen zwecks Feststellung des steuererheblichen Sachverhalts nach § 200 Absatz 1
+     Satz 1 und 2 AO verlangt werden.
+
+    3. Mitwirkungs- und Aufbewahrungspflichten im Privatvermögen
+100 Vorbehaltlich der Randnummer 105 gelten im Privatvermögen die allgemeinen
+    Mitwirkungspflichten der Randnummern 87 bis 92. Die Finanzbehörde kann
+    Steuerpflichtige unter Beachtung der allgemeinen Beweislastregeln zur
+    Nachweisführung auffordern, etwa durch den Einsatz von Fragebögen.
+     Seite 32 von 34
+
+101 Der Nachvollziehbarkeit der seitens der Steuerpflichtigen erklärten Einkünfte durch die
+    Finanzbehörde können insbesondere plausibel erscheinende Steuerreports (siehe
+    Randnummern 29b und 90) dienlich sein. Die Finanzbehörde kann die zur Erstellung der
+    Steuerreports genutzten Unterlagen und Dateien (z. B. Transaktionsübersichten oder
+    CSV-Dateien) anfordern. Zur Überprüfung einzelner Angaben (z. B. eines bestimmten
+    Anschaffungsvorgangs) ist nach dem Ausschöpfen der eigenen Ermittlungstätigkeiten,
+    z. B. der Nutzung eines Block Explorers (siehe Randnummer 20), auch die Anforderung
+    von Screenshots etwa aus einer Wallet oder dem Account einer zentralen
+    Handelsplattform verhältnismäßig.
+
+
+102 Der Nachvollziehbarkeit der Angaben der Steuerpflichtigen können neben Steuerreports
+     auch strukturierte Auflistungen oder Tabellen dienen. Dies umfasst eigene Übersichten
+     der Steuerpflichtigen ebenso wie Transaktionsübersichten von zentralen
+     Handelsplattformen und Wallet-Anbietern (siehe Randnummer 29a). Sie sollten beim
+     Handel von Kryptowerten für die zutreffende Ermittlung von Einkünften aus privaten
+     Veräußerungsgeschäften sicherstellen, dass sich jedes private Veräußerungsgeschäft
+     einzeln und für sich betrachtet nachvollziehen lässt, mindestens also den Klarnamen
+     oder das Kürzel sowie die Zahl der jeweils betroffenen Kryptowerte, den Gewinn unter
+     Angabe der Anschaffungskosten und des Veräußerungserlöses bzw. des Zeitpunkts und
+     jeweiligen Kurses der An- und Verkäufe sowie ihre Haltedauer erkennen lassen. Bei
+     sonstigen Einkünften aus Leistungen (z. B. Lending) ist es vorbehaltlich der Anerkennung
+     eines Steuerreports für die zutreffende steuerrechtliche Ermittlung erforderlich, dass
+     Überlassungsbeginn, –ende, –gegenstand, –entgelt und –konditionen bekannt sind.
+     Randnummer 101 gilt entsprechend.
+
+
+103 Abhängig von der Komplexität und der Anzahl der Vorgänge können die Darstellungen
+    der Steuerpflichtigen nach Randnummer 102 darüber hinaus z. B. folgende Unterlagen
+    und Daten sowie die dazugehörigen Belege umfassen und fehlende Angaben von den
+    Finanzämtern angefordert werden:
+
+
+        − Anschaffungszeitpunkt, angeschaffte Menge und Art des Anschaffungsvorgangs
+          (z. B. Kauf/Tausch, ICO, Mining/Forging, (passives) Staking, Lending, bei Airdrop
+          zur Bestimmung des Vorliegens einer Leistung die Darstellung der Bedingungen,
+          welche für die Zuteilung der Kryptowerte maßgeblich waren) sowie genutzte
+          Handelsplattform (siehe Randnummern 70 ff.);
+     Seite 33 von 34
+
+        − Anschaffungs-, Anschaffungsneben- (z. B. Transaktionsgebühren) und sonstige
+          Kosten (z. B. für die Einrichtung eines Accounts) in Euro; Angabe des Marktkurses
+          und der Handelsplattform bzw. der webbasierten Liste (z. B.
+          https://www.coinmarketcap.com/de und https://www.coingecko.com/de), der
+          dieser entnommen wurde, soweit Anschaffung nicht in Euro erfolgt;
+        − Veräußerungszeitpunkt, veräußerte Menge und Art des Veräußerungsvorgangs
+          (Verkauf/Tausch) sowie genutzte Handelsplattform;
+        − Veräußerungserlös und Veräußerungskosten (z. B. Transaktionsgebühren) in
+          Euro; Angabe des Marktkurses und der Handelsplattform bzw. der webbasierten
+          Liste (z. B. https://www.coinmarketcap.com/de und
+          https://www.coingecko.com/de), der dieser entnommen wurde, soweit
+          Veräußerung nicht in Euro erfolgt;
+        − Unterlagen über Kauf- und Tauschvorgänge über Waren und Dienstleistungen
+          unter Verwendung von Kryptowerten zur Ermittlung des für diese anzusetzenden
+          Veräußerungserlöses (im Zusammenhang mit Kreditkarten ist regelmäßig die
+          entsprechende Kreditkartenabrechnung ausreichend);
+        − Dokumentation der gewählten Verwendungsreihenfolge (Einzelbetrachtung,
+          Durchschnitts- oder FiFo-Methode) für die jeweilige Wallet und/oder einzelne
+          Kryptowerte;
+        − Dokumentation von Umschichtungen innerhalb von Wallets zur
+          walletbezogenen Anwendung der Durchschnitts- oder FiFo-Methode;
+        − entsprechende Dokumentation von sonstigen Einkünften aus Mining, Forging,
+          (passivem) Staking, Lending und/oder der Teilnahme an Airdrops und ähnlichen
+          Vorgängen.
+
+
+104 Von den Steuerpflichtigen im Einzelfall angeforderte Informationen zur Mittelherkunft,
+     zu Wallet-Beständen an Stichtagen wie dem 31. Dezember des Veranlagungszeitraums
+     und des Vorjahres, zu genutzten Wallet-Adressen und Transaktions-Hash-Werten (bei
+     direktem Handel unter anderem über dezentrale Handelsplattformen) oder Account-
+     Angaben zu den genutzten Handelsplattformen ermöglichen der Finanzbehörde die
+     Überprüfung der Angaben.
+     Seite 34 von 34
+
+105 Steuerpflichtige, bei denen die Summe der positiven Einkünfte aus nichtselbständiger
+    Arbeit, Kapitalvermögen, Vermietung und Verpachtung oder aus sonstigen Einkünften
+    im Sinne des § 22 EStG (Überschusseinkünfte) mehr als 500.000 € (ab 1. Januar 2027:
+    750.000 €) im Kalenderjahr beträgt, haben die Aufbewahrungsvorschriften des § 147a AO
+    zu beachten. Dies bedeutet, dass sie die Aufzeichnungen und Unterlagen über die den
+    Einkünften zugrundeliegenden Einnahmen und Werbungskosten sechs Jahre
+    aufzubewahren haben. Die Aufzeichnungen und Unterlagen können die
+    Steuerpflichtigen auch auf Datenträgern aufbewahren (§ 147 Absatz 2 AO gilt
+    entsprechend). Sofern ein Datenverarbeitungssystem oder eine spezielle Software zur
+    Erfüllung der Aufbewahrungspflichten eingesetzt wird, kann im Rahmen einer
+    Außenprüfung (§ 193 Absatz 1 AO) ein Datenzugriff nach § 147 Absatz 6
+    in Verbindung mit § 147a Absatz 1 Satz 5 AO auf diese Systeme verlangt werden.
+
+
+    IV. Anwendungs- und Nichtbeanstandungsregelung
+106 Dieses Schreiben ist ab dem Zeitpunkt seiner Veröffentlichung im Bundessteuerblatt Teil
+     I auf alle offenen Fälle anzuwenden. Kursbestimmungen gemäß den bis zur
+     Veröffentlichung des vorliegenden BMF-Schreibens im Bundessteuerblatt Teil I
+     geltenden Vorgaben der Randnummern 43 und 58 sowie der auf diese verweisenden
+     Randnummern des BMF-Schreibens in der Fassung vom 10. Mai 2022 und von den
+     Randnummern 87 ff. abweichende Aufzeichnungen außerhalb des Anwendungsbereichs
+     der GoBD werden für die Veranlagungszeiträume bis einschließlich 2024 nicht
+     beanstandet.
+
+
+     Schlussbestimmungen
+     Dieses Schreiben wird im Bundessteuerblatt Teil I veröffentlicht.
+
+
+
+
+     Im Auftrag
+
+     Dieses Dokument wurde elektronisch erstellt und ist ohne Unterschrift gültig.
+

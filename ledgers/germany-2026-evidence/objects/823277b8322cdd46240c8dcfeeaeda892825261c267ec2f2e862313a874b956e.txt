@@ -1,0 +1,2223 @@
+                    Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik
+
+
+
+
+                                                        Inhaltsverzeichnis
+
+
+Allgemeine haftungsausschließende Erklärung zu diesem Textdokument .......................................... 1
+Haftungsausschließende Erklärung zum Wirksamwerden der Bestimmungen des BEPS-MLI .......... 4
+  Artikel 1 ........................................................................................................................................... 6
+  Artikel 2 ........................................................................................................................................... 7
+  Artikel 3 ......................................................................................................................................... 10
+  Artikel 4 ......................................................................................................................................... 11
+  Artikel 5 ......................................................................................................................................... 12
+  Artikel 6 ......................................................................................................................................... 13
+  Artikel 7 ......................................................................................................................................... 13
+  Artikel 8 ......................................................................................................................................... 14
+  Artikel 9 ......................................................................................................................................... 15
+  Artikel 10 ....................................................................................................................................... 17
+  Artikel 11 ....................................................................................................................................... 17
+  Artikel 12 ....................................................................................................................................... 18
+  Artikel 13 ....................................................................................................................................... 18
+  Artikel 13 a ..................................................................................................................................... 20
+  Artikel 13 b .................................................................................................................................... 20
+  Artikel 13 c ..................................................................................................................................... 21
+  Artikel 14 ....................................................................................................................................... 21
+  Artikel 15 ....................................................................................................................................... 22
+  Artikel 16 ....................................................................................................................................... 22
+  Artikel 17 ....................................................................................................................................... 23
+  Artikel 18 ....................................................................................................................................... 23
+  Artikel 19 ....................................................................................................................................... 23
+  Artikel 20 ....................................................................................................................................... 24
+  Artikel 21 ....................................................................................................................................... 26
+  Artikel 22 ....................................................................................................................................... 28
+  Artikel 23 ....................................................................................................................................... 29
+  Artikel 24 ....................................................................................................................................... 30
+  Artikel 25 ....................................................................................................................................... 31
+  Artikel 25 a ..................................................................................................................................... 32
+  Artikel 25 b .................................................................................................................................... 32
+  Artikel 26 ....................................................................................................................................... 33
+  Artikel 27 ....................................................................................................................................... 33
+  Artikel 28 ....................................................................................................................................... 34
+  Artikel 29 ....................................................................................................................................... 34
+  Artikel 30 ....................................................................................................................................... 35
+  Artikel 30a ...................................................................................................................................... 35
+  Artikel 31 ....................................................................................................................................... 35
+  Notenwechsel ................................................................................................................................. 41
+                           Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 1
+
+
+
+                                   SYNTHETISIERTER TEXT
+
+                  DES ABKOMMENS VOM 21. JULI 1959
+           ZWISCHEN DER BUNDESREPUBLIK DEUTSCHLAND
+                 UND DER FRANZÖSISCHEN REPUBLIK
+ZUR VERMEIDUNG DER DOPPELBESTEUERUNGEN UND ÜBER GEGENSEITIGE
+     AMTS- UND RECHTSHILFE AUF DEM GEBIETE DER STEUERN VOM
+                  EINKOMMEN UND VOM VERMÖGEN
+       SOWIE DER GEWERBESTEUERN UND DER GRUNDSTEUERN
+
+                               IN DER FASSUNG
+                 DES REVISIONSPROTOKOLLS VOM 9. JUNI 1969
+             UND DER ZUSATZABKOMMEN VOM 28. SEPTEMBER 1989,
+                           20. DEZEMBER 2001 UND
+                                 31. MÄRZ 2015
+
+                                        UND DES BEPS-MLI
+
+
+Allgemeine haftungsausschließende Erklärung zu diesem Textdokument
+
+ Dieses Dokument stellt den synthetisierten Text für die Anwendung des Abkommens vom
+ 21. Juli 1959 zwischen der Bundesrepublik Deutschland und der Französischen Republik zur
+ Vermeidung der Doppelbesteuerungen und über gegenseitige Amts- und Rechtshilfe auf dem
+ Gebiete der Steuern vom Einkommen und vom Vermögen sowie der Gewerbesteuern und der
+ Grundsteuern (BGBl. 1961 II S. 397, 398), in der Fassung des Revisionsprotokolls vom 9. Juni 1969
+ (BGBl. 1970 II S. 717, 719) und der Zusatzabkommen vom 28. September 1989 (BGBl. 1990 II S.
+ 770, 772), 20. Dezember 2001 (BGBl. 2002 II S. 2370, 2372) und 31. März 2015 (BGBl. 2015 II
+ S. 1332, 1335) in seiner anzuwendenden Form nach den übereinstimmenden
+ Auswahlentscheidungen und Vorbehalten der Bundesrepublik Deutschland und der Französischen
+ Republik zum Mehrseitigen Übereinkommen vom 24. November 2016 zur Umsetzung
+ steuerabkommensbezogener Maßnahmen zur Verhinderung der Gewinnverkürzung und
+ Gewinnverlagerung (BEPS-MLI) dar.
+
+ Das Dokument wurde auf der Grundlage der von der Bundesrepublik Deutschland am 18. Dezember
+ 2020 und von der Französischen Republik am 26. September 2018 aus Anlass der Ratifikation dem
+ Verwahrer übermittelten Vorbehalte und Notifikationen („BEPS-MLI-Positionen“) erstellt. Die von
+ der Französischen Republik am 22. September 2020 dem Verwahrer vorgelegte Notifikation im
+ Sinne von Artikel 29 Absatz 5 BEPS-MLI hat keine Auswirkung in Bezug auf dieses Abkommen.
+ Diese Auswahlentscheidungen und Vorbehalte sind den im BEPS-MLI vorgesehenen
+ Modifizierungen vorbehalten. Die Modifizierung der Auswahlentscheidungen und Vorbehalte kann
+ die Wirkung des BEPS-MLI auf das Abkommen verändern.
+
+ Die authentischen Vertragstexte des Abkommens und des BEPS-MLI sind vorrangig und als einzig
+ maßgebliche Rechtsquellen anzuwenden.
+
+ Die Bestimmungen des BEPS-MLI, welche in Bezug auf die Bestimmungen des Abkommens
+ anwendbar sind, werden in diesem Dokument durchgehend in Form von eingerahmten Feldern im
+                         Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 2
+
+
+Zusammenhang mit den entsprechenden Bestimmungen des Abkommens dargestellt. Die
+eingerahmten Felder, welche die Bestimmungen des BEPS-MLI enthalten, wurden im Allgemeinen
+in Übereinstimmung mit der Reihenfolge der Bestimmungen des OECD-Musterabkommens auf
+dem Gebiete der Steuern vom Einkommen und vom Vermögen in das Abkommen eingefügt.
+
+Der Text der Bestimmungen des BEPS-MLI wurde zur Vereinheitlichung der im BEPS-MLI
+verwendeten Begriffe mit jenen des Abkommens (z. B. „unter das Übereinkommen fallendes
+Steuerabkommen“ und „Abkommen“, „Vertragspartei dieses Übereinkommens“ und
+„Vertragsparteien“) im Interesse des einfacheren Verständnisses der Bestimmungen des BEPS-MLI
+verändert. Die Veränderungen der Begriffe dienen der leichteren Lesbarkeit des Dokuments und
+zielen nicht auf eine Änderung des Inhalts der Bestimmungen des BEPS-MLI ab. In ähnlicher Weise
+wurden Teile der Bestimmungen des BEPS-MLI verändert, die bestehende Bestimmungen des
+Abkommens umschreiben: umschreibende Wortfolgen wurden durch rechtliche Verweise auf die
+bestehenden Abkommensbestimmungen im Interesse der leichteren Lesbarkeit ersetzt.
+
+In allen Fällen sind Verweise auf die Bestimmungen des Abkommens oder auf das Abkommen in
+dem Sinne zu verstehen, dass sie sich auf das Abkommen in der durch das MLI geänderten Fassung
+beziehen, vorausgesetzt, die Bestimmungen des BEPS-MLI wurden wirksam.
+
+Hinweise
+
+Die authentischen Texte des BEPS-MLI und des Abkommens sind über die Webseite des
+Bundesministeriums der Finanzen abrufbar:
+
+BEPS-MLI-Vertragsgesetz
+https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/
+Abteilungen/Abteilung_IV/19_Legislaturperiode/Gesetze_Verordnungen/2020-11-27-
+Gewinnverkuerzung/0-Gesetz.html
+
+BEPS-MLI-Anwendungsgesetz
+https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/
+Abteilungen/Abteilung_IV/20_Legislaturperiode/2023-12-19-BEPSMLIAnwG/0-Gesetz.html
+
+Abkommen mit der Französischen Republik
+https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internatio
+nales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/1961-04-22-
+Frankreich-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=4
+
+Revisionsprotokoll vom 9. Juni 1969
+https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internatio
+nales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/1970-07-16-
+Frankreich-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=3
+
+Zusatzabkommen vom 28. September 1989
+https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internatio
+nales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/1990-08-18-
+Frankreich-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=3
+                         Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 3
+
+
+Zusatzabkommen vom 20. Dezember 2001
+https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internatio
+nales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/2002-09-17-
+Frankreich-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=3
+
+Zusatzabkommen vom 31. März 2015
+https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internatio
+nales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/2015-11-26-
+Frankreich-Abkommen-DBA-Zusatzabkommen-Gestz.pdf?__blob=publicationFile&v=3
+
+Die Auswahlentscheidungen und Vorbehalte der Bundesrepublik Deutschland und der
+Französischen Republik zum BEPS-MLI sind beim Verwahrer hinterlegt und unter dem Link
+http://www.oecd.org/tax/treaties/beps-mli-signatories-and-parties.pdf abrufbar.
+                          Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 4
+
+
+
+Haftungsausschließende Erklärung zum Wirksamwerden der Bestimmungen des
+BEPS-MLI
+
+Wirksamwerden der Bestimmungen des BEPS-MLI
+
+Die Bestimmungen des BEPS-MLI, die auf das Abkommen anzuwenden sind, werden nicht im
+selben Zeitpunkt wie die ursprünglichen Bestimmungen des Abkommens wirksam. Jede
+Bestimmung des BEPS-MLI kann zu unterschiedlichen Zeitpunkten wirksam werden, abhängig von
+den betroffenen Steuerarten (im Abzugsweg erhobene Steuern oder andere Steuern) und von den
+Wahlmöglichkeiten, welche die Bundesrepublik Deutschland und die Französische Republik
+ausgeübt haben.
+
+Zeitpunkt der Hinterlegung der Ratifizierungs-, Annahme- oder Genehmigungsurkunde:
+18. Dezember 2020 für die Bundesrepublik Deutschland und 26. September 2018 für die
+Französische Republik.
+
+Zeitpunkt des Inkrafttretens des BEPS-MLI: 1. April 2021 für die Bundesrepublik Deutschland und
+1. Januar 2019 für die Französische Republik.
+
+Zeitpunkt des Empfangs der Notifikation der Bundesrepublik Deutschland über den Abschluss
+seiner innerstaatlichen Verfahren für das Wirksamwerden des BEPS-MLI durch den Verwahrer:
+2. Oktober 2024.
+
+Die Bundesrepublik Deutschland und die Französische Republik haben dem Verwahrer notifiziert,
+dass sie beabsichtigen, einen Zeitabschnitt von zwei statt sechs Monaten nach Artikel 35 Absatz 1
+Buchstabe b BEPS-MLI anzuwenden.
+
+Dieses Dokument enthält durchgehend spezifische Informationen über den Zeitpunkt, an dem oder
+nach dem die Bestimmungen des BEPS-MLI in Bezug auf das Abkommen Wirksamkeit erlangen.
+                                       Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 5
+
+
+                                                Abkommen
+                                zwischen der Bundesrepublik Deutschland
+                                     und der Französischen Republik
+                      zur Vermeidung der Doppelbesteuerungen und über gegenseitige
+                     Amt- und Rechtshilfe auf dem Gebiete der Steuern vom Einkommen
+                    und vom Vermögen sowie der Gewerbesteuern und der Grundsteuern
+
+
+                                                 DER PRÄSIDENT
+                                        DER BUNDESREPUBLIK DEUTSCHLAND
+                                                                  und
+                                                    DER PRÄSIDENT
+                                             DER FRANZÖSISCHEN REPUBLIK
+
+
+        sind [ERSETZT durch Artikel 6 Absatz 1 des BEPS-MLI] [, von dem Wunsche geleitet,
+        bei den Steuern vom Einkommen und vom Vermögen sowie der Gewerbesteuern und der
+        Grundsteuern Doppelbesteuerungen zu vermeiden]
+
+    Der folgende Artikel 6 Absatz 1 des BEPS-MLI ersetzt den Text betreffend die Absicht zur Vermeidung der
+    Doppelbesteuerung in der Präambel dieses Abkommens:1
+
+                   ARTIKEL 6 BEPS-MLI – ZWECK EINES UNTER DAS ÜBEREINKOMMEN
+                                  FALLENDEN STEUERABKOMMENS
+    in der Absicht, in Bezug auf die unter dieses Abkommen fallenden Steuern eine Doppelbesteuerung zu
+    beseitigen, ohne Möglichkeiten zur Nicht- oder Niedrigbesteuerung durch Steuerverkürzung oder -
+    umgehung (unter anderem durch missbräuchliche Gestaltungen mit dem Ziel des Erhalts von in diesem
+    Abkommen vorgesehenen Erleichterungen zum mittelbaren Nutzen von in Drittstaaten oder -gebieten
+    ansässigen Personen) zu schaffen,
+
+
+        und Grundsätze für die gegenseitige Amts- und Rechtshilfe aufzustellen,
+        übereingekommen, ein Abkommen zu schließen, und haben zu diesem Zwecke zu ihren
+        Bevollmächtigten ernannt:
+
+
+                                      Der Präsident der Bundesrepublik Deutschland:
+                                                 Dr. Gerhard Josef Jansen,
+                                                        Gesandter,
+                                     Geschäftsträger der Bundesrepublik Deutschland;
+
+
+
+
+1
+    Wirksam ab dem 1. Januar 2025.
+                                   Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 6
+
+
+                                     Der Präsident der Französischen Republik:
+                                         Seine Exzellenz Herrn Louis Joxe,
+                                              Ambassadeur de France,
+                                         Generalsekretär des Ministeriums
+                                          für Auswärtige Angelegenheiten,
+
+
+                              die nach Austausch ihrer in guter und gehöriger Form
+                              befundenen Vollmachten folgendes vereinbart haben:
+
+
+                                                       Artikel 1
+(1) Dieses Abkommen gilt für Personen, die in einem Vertragsstaat oder in beiden Vertragsstaaten ansässig
+sind.2
+
+(2) Durch dieses Abkommen soll vermieden werden, daß die in einem der Vertragstaaten ansässigen
+Personen doppelt zu Steuern herangezogen werden, die nach dem Rechte dieser Staaten unmittelbar vom
+Einkommen oder vom Vermögen oder als Gewerbesteuern oder Grundsteuern für die Vertragstaaten, die
+Länder, die Departements, die Gemeinden oder Gemeindeverbände (auch in Form von Zuschlägen)
+erhoben werden.
+
+(3) Steuern im Sinne dieses Abkommens sind:
+
+     1. in der Französischen Republik:
+
+               a) lʼimpôt sur le revenu des personnes physiques – taxe proportionnelle et surtaxe
+                  progressive (Steuer vom Einkommen natürlicher Personen – Proportionalsteuer und
+                  Progressivsteuer),
+
+               b) le versement forfaitaire applicable à certains bénéfices des professions non commerciales
+                  (Pauschsteuer von bestimmten Gewinnen der freien Berufe),
+
+               c) lʼimpôt sur les bénéfices des sociétés et autres personnes morales (Steuer von den
+                  Gewinnen der Gesellschaften und anderer juristischer Personen),
+
+               d) la contribution des patentes (Gewerbesteuer),
+
+               e) la taxe dʼapprentissage (Lehrlingsabgabe),
+
+               f) la contribution foncière sur les propriétés bâties et non bâties (Grundsteuer für bebaute
+                  und unbebaute Grundstücke),
+
+               g) lʼimpôt de solidarité sur la fortune (Solidaritätsteuer vom Vermögen);3
+
+
+2
+  In Artikel 1 des Abkommens wird durch Artikel I Nummer 1 des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335) ein
+neuer Absatz 1 eingefügt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+3
+ In Artikel 1 Absatz 2 Nummer 1 Buchstabe g des Abkommens werden durch Artikel 1 des Zusatzabkommens vom 28. September 1989 (BGBl.
+1990 II S. 770, 772) die Worte „lʼimpôt spécial sur la plus-value de réévaluation provenant des emprunts (Sondersteuer vom Mehrwert von
+Anleihen)“ gestrichen und ersetzt. Die Änderung ist ab dem 1. Januar 1990 anwendbar.
+                                  Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 7
+
+
+     2. in der Bundesrepublik Deutschland:
+
+               a) die Einkommensteuer,
+
+               b) die Körperschaftsteuer,
+
+               c) die Abgabe Notopfer Berlin,
+
+               d) die Vermögensteuer,
+
+               e) die Gewerbesteuer,
+
+               f) die Grundsteuer.
+
+(4) Dieses Abkommen ist auch auf alle anderen ihrem Wesen nach gleichen oder ähnlichen Steuern
+anzuwenden, die nach seiner Unterzeichnung in einem der Vertragstaaten oder in einem Gebiet eingeführt
+werden, auf das dieses Abkommen nach Artikel 27 ausgedehnt worden ist.
+
+(5) Die zuständigen Behörden der Vertragstaaten werden im beiderseitigen Einvernehmen alle etwaigen
+Zweifel darüber klären, für welche Steuern das Abkommen zu gelten hat.4
+
+
+
+                                                      Artikel 2
+(1) Für die Anwendung dieses Abkommens gilt folgendes:
+     1. Der Begriff „Frankreich“, in geographischem Sinne verwendet, umfaßt nur das französische
+        Mutterland (France métropolitaine) und die überseeischen Departements (Guadeloupe, Guayana,
+        Martinique, Réunion).
+
+     2. Der Begriff „Bundesrepublik“, in geographischem Sinne verwendet, umfaßt das Gebiet des
+        Geltungsbereichs des Grundgesetzes für die Bundesrepublik Deutschland.
+
+     3. Der Begriff „Person“ bedeutet:
+
+               a) natürliche Personen;
+
+               b) juristische Personen. Personenvereinigungen und Vermögensmassen, die als solche der
+                  Besteuerung wie eine juristische Person unterliegen, gelten als juristische Personen.
+
+     4.
+
+               a) Im Sinne dieses Abkommens bedeutet „eine in einem Vertragsstaat ansässige Person“ eine
+                  Person, die nach dem Recht dieses Staates dort aufgrund ihres Wohnsitzes, ihres ständigen
+                  Aufenthalts, des Ortes ihrer Geschäftsleitung oder eines anderen ähnlichen Merkmals
+
+
+
+4
+ Artikel 1 Absätze 1, 2, 3 und 4 des Abkommens werden durch Artikel I Nummer 2 des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II
+S. 1332, 1335) zu Absätzen 2, 3, 4, und 5. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                  Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 8
+
+
+                   steuerpflichtig ist, und umfasst auch diesen Staat, seine Länder und ihre
+                   Gebietskörperschaften.5
+
+              b) Ist nach Buchstabe a) eine natürliche Person in beiden Vertragstaaten ansässig, so gilt
+                 folgendes:
+
+                             (aa) Die Person gilt als in dem Vertragstaat ansässig, in dem sie über eine ständige
+                             Wohnstätte verfügt. Verfügt sie in beiden Vertragstaaten über eine ständige
+                             Wohnstätte, so gilt sie als in dem Vertragstaat ansässig, zu dem sie die engeren
+                             persönlichen und wirtschaftlichen Beziehungen hat (Mittelpunkt der
+                             Lebensinteressen).
+
+                             (bb) Kann nicht bestimmt werden, in welchem Vertragstaate die Person den
+                             Mittelpunkt der Lebensinteressen hat, oder verfügt sie in keinem der
+                             Vertragstaaten über eine ständige Wohnstätte, so gilt sie als in dem Vertragstaat
+                             ansässig, in dem sie ihren gewöhnlichen Aufenthalt hat.
+
+                             (cc) Hat die Person ihren gewöhnlichen Aufenthalt in beiden oder in keinem der
+                             Vertragstaaten, so gilt sie als in dem Vertragstaat ansässig, dessen
+                             Staatsangehörigkeit sie besitzt.
+
+                             (dd) Gehört die Person beiden oder keinem der Vertragstaaten an, so werden die
+                             zuständigen Behörden der Vertragstaaten die Frage im beiderseitigen
+                             Einvernehmen regeln.
+
+              c) Ist nach Buchstabe a) eine juristische Person in beiden Vertragstaaten ansässig, so gilt sie
+                 als in dem Vertragstaat ansässig, in dem sich der Ort ihrer tatsächlichen Geschäftsleitung
+                 befindet. Dies gilt auch für Personengesellschaften und andere Personenvereinigungen,
+                 die nach den für sie maßgebenden innerstaatlichen Gesetzen keine juristischen Personen
+                 sind.
+
+     5. Im Sinne dieses Abkommens ist der Ort der tatsächlichen Geschäftsleitung eines Unternehmens
+        der Ort, an dem sich der Mittelpunkt der geschäftlichen Oberleitung befindet.
+
+     6. Der Begriff „deutsches Unternehmen“ bedeutet ein gewerbliches Unternehmen, das von einer in
+        der Bundesrepublik ansässigen Person betrieben wird.
+        Der Begriff „französisches Unternehmen“ bedeutet ein gewerbliches Unternehmen, das von
+        einer in Frankreich ansässigen Person betrieben wird.
+        Die Begriffe „Unternehmen eines der Vertragstaaten“ und „Unternehmen des anderen
+        Vertragstaates“ bedeuten je nach dem Zusammenhang ein deutsches Unternehmen oder ein
+        französisches Unternehmen.
+
+     7. Der Begriff „Betriebstätte“ bedeutet eine feste Geschäftseinrichtung, in der die Tätigkeit des
+        Unternehmens ganz oder teilweise ausgeübt wird.
+
+              a) Als Betriebstätten gelten insbesondere:
+
+
+5
+ Artikel 2 Absatz 1 Nummer 4 Buchstabe a des Abkommens wird durch Artikel I Nummer 3 des Zusatzabkommens vom 31. März 2015 (BGBl.
+2015 II S. 1332, 1335) aufgehoben und ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 9
+
+
+            (aa) ein Ort der Leitung,
+
+            (bb) eine Zweigniederlassung,
+
+            (cc) eine Geschäftsstelle,
+
+            (dd) eine Fabrikationsstätte,
+
+            (ee) eine Werkstätte,
+
+            (ff) ein Bergwerk, ein Steinbruch oder eine andere Stätte der Ausbeutung von
+            Bodenschätzen,
+
+            (gg) eine Bauausführung oder Montage, deren Dauer zwölf Monate überschreitet.
+
+b) Als Betriebstätten gelten nicht:
+
+            (aa) die Benutzung von Einrichtungen ausschließlich zur Lagerung, Ausstellung
+            oder Auslieferung von dem Unternehmen gehörenden Gütern oder Waren;
+
+            (bb) das Unterhalten eines Bestandes von dem Unternehmen gehörenden Gütern
+            oder Waren ausschließlich zur Lagerung, Ausstellung oder Auslieferung;
+
+            (cc) das Unterhalten eines Bestandes von dem Unternehmen gehörenden Gütern
+            oder Waren ausschließlich zur Bearbeitung oder Verarbeitung durch ein anderes
+            Unternehmen;
+
+            (dd) das Unterhalten einer festen Geschäftseinrichtung ausschließlich zum
+            Einkauf von Gütern oder Waren oder zur Beschaffung von Informationen für das
+            Unternehmen;
+
+            (ee) das Unterhalten einer festen Geschäftseinrichtung ausschließlich zur
+            Werbung, zur Erteilung von Auskünften, zur wissenschaftlichen Forschung oder
+            zur Ausübung ähnlicher Tätigkeiten, die für das Unternehmen vorbereitender Art
+            sind oder eine Hilfstätigkeit darstellen.
+
+c) Eine Person, die in einem Vertragstaate für ein Unternehmen des anderen Vertragstaates
+   tätig ist – mit Ausnahme eines unabhängigen Vertreters im Sinne des Buchstabens e) –
+   gilt als eine in dem erstgenannten Staate belegene Betriebstätte, wenn sie eine Vollmacht
+   besitzt, im Namen des Unternehmens in diesem Staate Verträge abzuschließen, und diese
+   Vollmacht dort gewöhnlich ausübt, es sei denn, daß sich ihre Tätigkeit auf den Einkauf
+   von Gütern oder Waren für das Unternehmen beschränkt.
+
+d) Ein Versicherungsunternehmen eines der Vertragstaaten wird so behandelt, als habe es
+   eine Betriebstätte in dem anderen Staate, wenn es durch einen Vertreter, der nicht Vertreter
+   im Sinne des Buchstabens e) ist, im Gebiete des anderen Staates Prämien empfängt oder
+   durch den Vertreter auf diesem Gebiet gelegene Risiken versichert.
+                                  Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 10
+
+
+               e) Ein Unternehmen eines Vertragstaates wird nicht schon deshalb so behandelt, als habe es
+                  eine Betriebstätte in dem anderen Vertragstaate, weil es dort Geschäftsbeziehungen durch
+                  einen Makler, Kommissionär oder einen anderen unabhängigen Vertreter unterhält, sofern
+                  diese Personen im Rahmen ihrer ordentlichen Geschäftstätigkeit handeln.
+
+               f) Die Tatsache, daß eine in einem Vertragstaat ansässige Gesellschaft eine Gesellschaft
+                  beherrscht oder von einer Gesellschaft beherrscht wird, die in dem anderen Vertragstaat
+                  ansässig ist oder dort (entweder durch eine Betriebstätte oder in anderer Weise)
+                  Geschäftsbeziehungen unterhält, macht für sich allein die eine der beiden Gesellschaften
+                  nicht zur Betriebstätte der anderen Gesellschaft.
+
+     8. Der Begriff „zuständige Behörden“ im Sinne dieses Abkommens bedeutet aufseiten der
+        Bundesrepublik das Bundesministerium der Finanzen oder die Behörde, an die es seine Befugnisse
+        delegiert hat, und aufseiten Frankreichs den Finanzminister oder seinen bevollmächtigten
+        Vertreter.6
+
+(2) Für die Anwendung dieses Abkommens durch einen der Vertragstaaten wird jeder Begriff, der nicht in
+diesem Abkommen bestimmt worden ist, die Auslegung erfahren, die sich aus den Gesetzen ergibt, die in
+diesem Staat in Kraft sind und sich auf Steuern im Sinne dieses Abkommens beziehen, falls der
+Zusammenhang keine andere Auslegung erfordert.
+
+
+
+                                                       Artikel 3
+
+(1) Einkünfte aus unbeweglichem Vermögen (einschließlich des Zubehörs und des lebenden oder toten
+Inventars der land- und forstwirtschaftlichen Betriebe) können nur in dem Vertragstaate besteuert werden,
+in dem dieses Vermögen belegen ist.
+
+(2) Der Begriff „unbewegliches Vermögen“ bestimmt sich nach den Gesetzen des Vertragstaates, in dem
+das Vermögen belegen ist.
+
+(3) Rechte, auf die die bürgerlich-rechtlichen Vorschriften über Grundstücke Anwendung finden,
+Nutzungsrechte an unbeweglichem Vermögen und Rechte auf veränderliche oder feste Lizenzgebühren
+für die Ausbeutung von Mineralvorkommen, Quellen und anderen Bodenschätzen gelten für die
+Anwendung dieses Artikels als unbewegliches Vermögen; Schiffe gelten nicht als unbewegliches
+Vermögen.
+
+(4) Die Absätze (1) bis (3) gelten auch für die Einkünfte aus der unmittelbaren Nutzung, der Vermietung
+oder Verpachtung sowie jeder anderen Art der Nutzung des unbeweglichen Vermögens einschließlich der
+Einkünfte aus Land- und Forstwirtschaft.7
+
+(5) Die Absätze (1) bis (4) gelten auch für die Einkünfte aus unbeweglichem Vermögen von Betrieben, die
+nicht land- und forstwirtschaftliche Betriebe sind, und für die Einkünfte aus unbeweglichem Vermögen,
+das der Ausübung einer freiberuflichen Tätigkeit dient.
+
+
+6
+ Artikel 2 Absatz 1 Nummer 8 des Abkommens wird durch Artikel I Nummer 4 des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S.
+1332, 1335) aufgehoben und ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+7
+ Artikel 3 Absatz 4 Satz 2 des Abkommens wird durch Artikel II Nummer 1 des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332,
+1335) aufgehoben. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                 Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 11
+
+
+                                                      Artikel 4
+
+(1) Gewinne eines Unternehmens eines der Vertragstaaten können nur in diesem Staate besteuert werden,
+es sei denn, daß das Unternehmen in dem anderen Staate durch eine dort belegene Betriebstätte gewerblich
+tätig ist. Ist das Unternehmen auf diese Weise gewerblich tätig, so können in dem anderen Staate die
+Gewinne des Unternehmens besteuert werden, jedoch nur insoweit, als sie der Betriebstätte zugerechnet
+werden können. Dieser Teil der Gewinne kann in dem erstgenannten Vertragstaate nicht besteuert werden.
+
+(2) Ist ein Unternehmen eines der Vertragstaaten in dem anderen Staate durch eine dort belegene
+Betriebstätte gewerblich tätig, so sind dieser Betriebstätte diejenigen Gewinne zuzurechnen, die sie hätte
+erzielen können, wenn sie sich als selbständiges Unternehmen mit gleichen oder ähnlichen Geschäften
+unter gleichen oder ähnlichen Bedingungen befaßt und mit dem Unternehmen, dessen Betriebstätte sie ist,
+Geschäfte wie ein unabhängiges Unternehmen getätigt haben würde.
+
+(3) Anteile eines Mitunternehmers an den Gewinnen eines Unternehmens, das in Form einer Gesellschaft
+des bürgerlichen Rechts, einer offenen Handelsgesellschaft oder einer Kommanditgesellschaft betrieben
+wird, und Anteile an den Gewinnen einer „société de fait“, einer „association en participation“ oder einer
+„société civile“ französischen Rechts können nur in dem Staate besteuert werden, in dem das Unternehmen
+eine Betriebstätte hat, jedoch nur in Höhe des Anteils des Mitunternehmers an den auf die Betriebstätte
+entfallenden Gewinnen.
+
+(4) Die Absätze 1 und 3 gelten sowohl für die durch unmittelbare Verwaltung und Nutznießung als auch
+für die durch Vermietung oder jede andere Art der Nutzung des gewerblichen Unternehmens erzielten
+Einkünfte.8
+
+(5) Gewinne, die ein Unternehmen in einem der Vertragstaaten erzielt hat, dürfen einer in dem anderen
+Staate belegenen Betriebstätte weder ganz noch teilweise deshalb zugerechnet werden, weil das
+Unternehmen in diesem anderen Staate Güter oder Waren lediglich eingekauft hat.
+
+(6) Bei der Ermittlung des aus der Tätigkeit einer Betriebstätte erzielten Gewinns ist grundsätzlich vom
+Bilanzergebnis der Betriebstätte auszugehen. Dabei sind alle der Betriebstätte zurechenbaren Ausgaben
+einschließlich eines Anteils an den Generalunkosten des Unternehmens zu berücksichtigen. In besonderen
+Fällen kann bei der Ermittlung des Gewinns der Gesamtgewinn des Unternehmens aufgeteilt werden; bei
+Versicherungsunternehmen ist in solchen Fällen das Verhältnis der Prämieneinnahmen der Betriebstätte
+zu den gesamten Prämieneinnahmen des Unternehmens zu Grunde zu legen.
+
+(7) Absatz (1) ist entsprechend auf die Gewerbesteuer (contribution des patentes) anzuwenden, die nach
+einer anderen Bemessungsgrundlage als dem gewerblichen Gewinn erhoben wird.
+
+(8) Die zuständigen Behörden der Vertragstaaten werden sich gegebenenfalls über die Grundsätze der
+Aufteilung der Gewinne des Unternehmens verständigen, wenn eine ordnungsgemäße Buchführung nicht
+vorhanden ist, aus der die Gewinne, die auf die in ihrem Gebiete belegenen Betriebstätten entfallen, genau
+und gesondert hervorgehen.
+
+(9) Die Absätze 1 und 3 sind nicht dahin auszulegen, dass sie einem der Vertragsstaaten verbieten, in
+Übereinstimmung mit diesem Abkommen die Einkünfte zu besteuern, die ein Unternehmen des anderen
+Vertragsstaats aus Quellen innerhalb des erstgenannten Staates bezieht (Einkünfte aus unbeweglichem
+8
+ Artikel 4 Absatz 4 des Abkommens wird durch Artikel II Nummer 2 des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335)
+aufgehoben und ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                      Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 12
+
+
+Vermögen, Veräußerungsgewinne im Sinne des Artikels 7 Absätze 1 und 4, Dividenden), wenn diese
+Einkünfte keiner im Gebiet des erstgenannten Staates gelegenen Betriebstätte zugerechnet werden
+können.9
+
+
+
+                                                        Artikel 5
+Wenn
+
+             ein Unternehmen eines der Vertragstaaten an der Geschäftsleitung oder an dem finanziellen
+             Aufbau eines Unternehmens des anderen Vertragstaates unmittelbar oder mittelbar beteiligt ist,
+             oder die gleichen Personen an der Geschäftsleitung oder an dem finanziellen Aufbau eines
+             Unternehmens eines der Vertragstaaten und eines Unternehmens des anderen Vertragstaates
+             unmittelbar oder mittelbar beteiligt sind,
+
+             und wenn in diesen Fällen im Verhältnis beider Unternehmen zueinander für ihre kaufmännischen
+             oder finanziellen Beziehungen Bedingungen vereinbart oder auferlegt werden, die sich von den
+             Bedingungen unterscheiden, die zwischen unabhängigen Unternehmen vereinbart würden,
+
+so können Gewinne, die ohne diese Bedingungen einem der Unternehmen zugeflossen wären, aber infolge
+dieser Bedingungen nicht zugeflossen sind, den Gewinnen dieses Unternehmens hinzugerechnet und
+entsprechend besteuert werden.
+
+     Der folgende Artikel 17 Absatz 1 des BEPS-MLI ist anzuwenden und geht den Bestimmungen dieses
+     Abkommens vor:10
+                                      ARTIKEL 17 BEPS-MLI – GEGENBERICHTIGUNG
+     Rechnet ein Vertragsstaat den Gewinnen eines Unternehmens dieses Vertragsstaats Gewinne zu, mit denen
+     ein Unternehmen des anderen Vertragsstaats in diesem anderen Vertragsstaat besteuert worden ist, und
+     besteuert diese Gewinne entsprechend und handelt es sich bei den zugerechneten Gewinnen um solche,
+     die das Unternehmen des erstgenannten Vertragsstaats erzielt hätte, wenn die zwischen den beiden
+     Unternehmen vereinbarten Bedingungen die gleichen gewesen wären, die unabhängige Unternehmen
+     miteinander vereinbart hätten, so nimmt dieser andere Vertragsstaat eine entsprechende Berichtigung der
+     Höhe der dort von diesen Gewinnen erhobenen Steuer vor. Bei der Ermittlung dieser Berichtigung sind
+     die übrigen Bestimmungen dieses Abkommens zu berücksichtigen und erforderlichenfalls konsultieren
+     die zuständigen Behörden der Vertragsstaaten einander.
+
+
+
+
+9
+ Artikel 4 Absatz 9 des Abkommens wird durch Artikel III des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335) aufgehoben
+und ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+10
+     Wirksam ab dem 1. Januar 2025.
+                               Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 13
+
+
+                                                   Artikel 6
+
+(1) Gewinne aus dem Betrieb von Seeschiffen oder Luftfahrzeugen im internationalen Verkehr können nur
+in dem Vertragstaate besteuert werden, in dem sich der Ort der tatsächlichen Geschäftsleitung des
+Unternehmens befindet.
+
+(2) Gewinne aus dem Betrieb von Schiffen, die der Binnenschiffahrt dienen, können nur in dem
+Vertragstaate besteuert werden, in dem sich der Ort der tatsächlichen Geschäftsleitung des Unternehmens
+befindet.
+
+(3) Befindet sich der Ort der tatsächlichen Geschäftsleitung eines Unternehmens der See- oder
+Binnenschiffahrt an Bord eines Schiffes, so gilt er als in dem Vertragstaate befindlich, in dem der
+Heimathafen des Schiffes liegt. Hat das Schiff keinen Heimathafen in einem der Vertragstaaten, so gilt der
+Ort der tatsächlichen Geschäftsleitung als in dem Vertragstaate befindlich, in dem die Person, die das
+Schiff betreibt, ansässig ist.
+
+(4) Die Absätze (1) und (2) sind entsprechend auf die Gewerbesteuer (contribution des patentes)
+anzuwenden, die nach einer anderen Bemessungsgrundlage als dem gewerblichen Gewinn erhoben wird.
+
+
+
+                                                  Artikel 711
+
+(1) Gewinne, die eine in einem Vertragsstaat ansässige Person aus der Veräußerung unbeweglichen
+Vermögens im Sinne des Artikels 3 bezieht, das im anderen Vertragsstaat liegt, können im anderen Staat
+besteuert werden.
+
+(2) Gewinne aus der Veräußerung beweglichen Vermögens, das Betriebsvermögen einer Betriebstätte ist,
+die ein Unternehmen eines Vertragsstaats im anderen Vertragsstaat hat, oder das zu einer festen
+Einrichtung gehört, die einer in einem Vertragsstaat ansässigen Person für die Ausübung einer
+selbständigen Arbeit im anderen Vertragsstaat zur Verfügung steht, einschließlich derartiger Gewinne, die
+bei der Veräußerung einer solchen Betriebstätte (allein oder mit dem übrigen Unternehmen) oder einer
+solchen festen Einrichtung erzielt werden, können im anderen Staat besteuert werden.
+
+(3) Gewinne aus der Veräußerung von Vermögen, das Betriebsvermögen eines Unternehmens ist und sich
+zusammensetzt aus Seeschiffen oder Luftfahrzeugen, die von diesem Unternehmen im internationalen
+Verkehr betrieben werden, aus Schiffen, die der Binnenschifffahrt dienen, oder aus beweglichem
+Vermögen, das dem Betrieb dieser Schiffe oder Luftfahrzeuge dient, können nur in dem Vertragsstaat
+besteuert werden, in dem sich der Ort der tatsächlichen Geschäftsleitung des Unternehmens befindet.
+
+
+
+
+11
+   Artikel 7 des Abkommens wird durch Artikel II Nummer 3 des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335)
+aufgehoben und ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                      Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 14
+
+
+(4) [ERSETZT durch Artikel 9 Absatz 4 des BEPS-MLI] [Gewinne, die eine in einem Vertragsstaat
+ansässige Person aus der Veräußerung von Aktien oder vergleichbaren Anteilen bezieht, deren Wert zu
+mehr als 50 vom Hundert unmittelbar oder mittelbar auf unbeweglichem Vermögen beruht, das im anderen
+Vertragsstaat liegt, können im anderen Staat besteuert werden.]
+
+     Der folgende Artikel 9 Absatz 4 des BEPS-MLI ersetzt Artikel 7 Absatz 4 Satz 1 dieses Abkommens:12
+
+        ARTIKEL 9 BEPS-MLI – GEWINNE AUS DER VERÄUßERUNG VON ANTEILEN ODER
+     RECHTEN AN RECHTSTRÄGERN, DEREN WERT HAUPTSÄCHLICH AUF UNBEWEGLICHEM
+                                  VERMÖGEN BERUHT
+     Für die Zwecke dieses Abkommens können Gewinne, die eine in einem Vertragsstaat ansässige Person
+     aus der Veräußerung von Anteilen oder vergleichbaren Rechten, wie Rechten an einer
+     Personengesellschaft oder einem Trust, erzielt, im anderen Vertragsstaat besteuert werden, sofern der Wert
+     dieser Anteile oder vergleichbaren Rechte zu irgendeinem Zeitpunkt während der 365 Tage vor der
+     Veräußerung zu mehr als 50 Prozent unmittelbar oder mittelbar auf in diesem anderen Vertragsstaat
+     belegenem unbeweglichem Vermögen (Grundvermögen) beruhte.
+
+
+Bei der Anwendung dieser Bestimmung ist unbewegliches Vermögen, das von einem Rechtsträger
+unmittelbar zur Ausübung seiner Geschäftstätigkeit (zum Beispiel bei einem Bergwerk oder Hotel)
+verwendet wird, nicht zu berücksichtigen.
+
+(5) Gewinne aus der Veräußerung des in den Absätzen 1, 2, 3 und 4 nicht genannten Vermögens können
+nur in dem Vertragsstaat besteuert werden, in dem der Veräußerer ansässig ist.
+
+(6) Bei einer natürlichen Person, die in einem Vertragsstaat während mindestens fünf Jahren ansässig war
+und im anderen Vertragsstaat ansässig geworden ist, berührt Absatz 5 nicht das Recht des erstgenannten
+Staates, bei Anteilen an Gesellschaften, die im erstgenannten Vertragsstaat ansässig sind, nach seinen
+innerstaatlichen Rechtsvorschriften bei der Person einen Vermögenszuwachs bis zu ihrem
+Wohnsitzwechsel zu besteuern. Besteuert der erstgenannte Vertragsstaat bei Wegzug einer in diesem Staat
+ansässigen natürlichen Person den Vermögenszuwachs, so wird bei späterer Veräußerung der Anteile,
+wenn der daraus erzielte Gewinn in dem anderen Staat nach Absatz 5 besteuert wird, dieser Staat bei der
+Ermittlung des Veräußerungsgewinns als Anschaffungskosten den Wert der Anteile im Zeitpunkt des
+Wegzugs zugrunde legen. Verringert sich der Wert der Anteile nach dem Wegzug, ist für die Berechnung
+der Veräußerungsgewinne durch den erstgenannten Staat der Veräußerungspreis zu berücksichtigen.
+
+
+
+                                                        Artikel 813
+In der Bundesrepublik ansässige Gesellschaften, die in Frankreich eine Betriebstätte unterhalten, werden
+nicht zur Ausschüttungsteuer (impôt de distribution) im Sinne des Artikels 115 quinquiès des Code général
+des Impôts herangezogen.
+
+
+
+12
+     Wirksam ab dem 1. Januar 2025.
+13
+   Artikel 8 des Abkommens wird durch Artikel 1 des Revisionsprotokolls vom 9. Juni 1969 (BGBl. 1970 II S. 717, 719) ersetzt. Die Änderung
+ist ab dem Wirtschaftsjahr 1968 anwendbar.
+                                      Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 15
+
+
+                                                        Artikel 9
+
+(1) Dividenden, die eine in einem Vertragstaat ansässige Gesellschaft an eine in dem anderen Vertragstaat
+ansässige Person zahlt, können in dem anderen Staat besteuert werden.14
+
+(2) Jeder der Vertragstaaten behält das Recht, die Steuer von Dividenden nach seinen Rechtsvorschriften
+im Abzugsweg (an der Quelle) zu erheben. Der Steuerabzug darf jedoch 15 vom Hundert des
+Bruttobetrages der Dividenden nicht übersteigen.
+
+(3) Dividenden, die eine in Frankreich ansässige Kapitalgesellschaft an eine in der Bundesrepublik
+ansässige Kapitalgesellschaft zahlt, der mindestens 10 vom Hundert des Gesellschaftskapitals der
+erstgenannten Gesellschaft gehören, können abweichend von Absatz 2 in Frankreich nicht besteuert
+werden.15
+
+     Der folgende Artikel 8 Absatz 1 des BEPS-MLI ist auf Artikel 9 Absatz 3 und 5 dieses Abkommens
+     anzuwenden:16
+
+            ARTIKEL 8 BEPS-MLI – TRANSAKTIONEN ZUR ÜBERTRAGUNG VON DIVIDENDEN
+     Artikel 9 Absatz 3 und 5 dieses Abkommens gelten nur, wenn die Eigentums- oder
+     Inhaberschaftsvoraussetzungen während eines Zeitraums von 365 Tagen einschließlich des Tages der
+     Dividendenzahlung erfüllt sind (bei der Berechnung dieses Zeitraums bleiben Änderungen der Eigentums-
+     oder Inhaberschaftsverhältnisse unberücksichtigt, die sich unmittelbar aus einer Umstrukturierung, wie
+     einer Fusion oder Spaltung, der die Anteile haltenden oder die Dividenden zahlenden Gesellschaft ergeben
+     würden).
+
+
+(4) Eine in der Bundesrepublik ansässige Person, die von einer in Frankreich ansässigen Gesellschaft
+Dividenden bezieht, erhält die Vorsteuer (précompte) erstattet, sofern diese von der Gesellschaft für diese
+Dividenden entrichtet worden ist. Der Bruttobetrag der erstatteten Vorsteuer (précompte) gilt für die
+Zwecke dieses Abkommens als Dividende. Auf ihn finden die Absätze 2 und 3 Anwendung.17
+
+(5) Werden die Dividenden von einer in der Bundesrepublik ansässigen Kapitalgesellschaft an eine in
+Frankreich ansässige Kapitalgesellschaft gezahlt, der mindestens 10 vom Hundert des Kapitals der
+erstgenannten Gesellschaft gehören, so darf abweichend von Absatz 2 die in der Bundesrepublik im
+Abzugsweg (an der Quelle) erhobene Steuer nicht übersteigen:
+
+        −    10 vom Hundert des Bruttobetrags der ab 1. Januar 1990 bis 31. Dezember 1991 gezahlten
+             Dividenden;
+
+
+14
+  Artikel 9 Absatz 1 des Abkommens wird durch Artikel 2 Buchstabe a des Revisionsprotokolls vom 9. Juni 1969 (BGBl. 1970 II S. 717, 719)
+ersetzt. Die Änderung ist ab dem 1. Januar 1968 anwendbar.
+15
+  Artikel 9 Absatz 3 des Abkommens wird durch Artikel 1 Absatz 1 des Zusatzabkommens vom 20. Dezember 2001 (BGBl. 2002 II S. 2370,
+2372) aufgehoben und ersetzt. Die Änderung ist ab dem 1. Januar 2002 anwendbar.
+16
+     Wirksam ab dem 1. Januar 2025.
+17
+  Artikel 9 Absätze 3 und 4 des Abkommens werden durch Artikel 2 Buchstabe b des Revisionsprotokolls vom 9. Juni 1969 (BGBl. 1970 II S.
+717, 719) eingefügt. Die Änderung ist ab dem 1. Januar 1968 anwendbar.
+Artikel 9 Absatz 4 des Abkommens wird durch Artikel 1 Absatz 2 des Zusatzabkommens vom 20. Dezember 2001 (BGBl. 2002 II S. 2370, 2372)
+aufgehoben und ersetzt. Die Änderung ist ab dem 1. Januar 2002 anwendbar.
+                                      Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 16
+
+
+        −    5 vom Hundert des Bruttobetrags der ab 1. Januar 1992 gezahlten Dividenden.18
+
+     Der folgende Artikel 8 Absatz 1 des BEPS-MLI ist auf Artikel 9 Absatz 3 und 5 dieses Abkommens
+     anzuwenden:19
+
+            ARTIKEL 8 BEPS-MLI – TANSAKTIONEN ZUR ÜBERTRAGUNG VON DIVIDENDEN
+     Artikel 9 Absatz 3 und 5 dieses Abkommens gelten nur, wenn die Eigentums- oder
+     Inhaberschaftsvoraussetzungen während eines Zeitraums von 365 Tagen einschließlich des Tages der
+     Dividendenzahlung erfüllt sind (bei der Berechnung dieses Zeitraums bleiben Änderungen der
+     Eigentums- oder Inhaberschaftsverhältnisse unberücksichtigt, die sich unmittelbar aus einer
+     Umstrukturierung, wie einer Fusion oder Spaltung, der die Anteile haltenden oder die Dividenden
+     zahlenden Gesellschaft ergeben würden).
+
+
+(6) Der in diesem Artikel verwendete Ausdruck „Dividenden“ bedeutet Einkünfte aus Aktien,
+Genußrechten oder Genußscheinen, Kuxen, Gründeranteilen oder anderen Rechten – ausgenommen
+Forderungen – mit Gewinnbeteiligung. Ungeachtet der anderen Bestimmungen dieses Abkommens gelten
+für die Zwecke der Absätze 2 bis 5 auch die folgenden Einkünfte als Dividenden:
+
+        a) Einkünfte, die nach dem Steuerrecht des Vertragsstaats, in dem die ausschüttende Gesellschaft
+           ansässig ist, wie Ausschüttungen behandelt werden; und
+
+        b) in der Bundesrepublik Deutschland
+
+             Einkünfte eines stillen Gesellschafters aus seiner Beteiligung als stiller Gesellschafter,
+
+             Einkünfte aus partiarischen Darlehen oder Gewinnobligationen und ähnliche gewinnabhängige
+             Vergütungen sowie Ausschüttungen auf Anteilscheine an einem Investmentvermögen.20
+
+(7) Soweit Frankreich nach den Artikeln 4 und 6 das Recht zur Besteuerung von Gewinnen der in Artikel 4
+Absatz (3) erwähnten Gesellschaften zusteht, können die aus diesen Gewinnen stammenden Einkünfte, die
+die französischen Gesetzesvorschriften als Dividenden ansehen, nach Absatz (2) dieses Artikels besteuert
+werden.21
+
+
+
+
+18
+ Artikel 9 Absatz 3 des Abkommens wird durch Artikel 2 Buchstabe c des Revisionsprotokolls vom 9. Juni 1969 (BGBl. 1970 II S. 717, 719) zu
+Absatz 5. Die Änderung ist ab dem 1. Januar 1968 anwendbar.
+19
+     Wirksam ab dem 1. Januar 2025.
+20
+  Artikel 9 Absatz 4 des Abkommens wird durch Artikel 2 Buchstabe d des Revisionsprotokolls vom 9. Juni 1969 (BGBl. 1970 II S. 717, 719) zu
+Absatz 6 und die dort enthaltene Bezugnahme auf Absatz (5) wird durch die Bezugnahme auf den neuen Absatz (7) ersetzt. Die Änderung ist ab
+dem 1. Januar 1968 anwendbar.
+Artikel 9 Absätze 4, 5 und 6 des Abkommens werden durch Artikel 2 Nummer 1 des Zusatzabkommens vom 28. September 1989 (BGBl. 1990 II
+S. 770, 772) ersetzt. Die Änderung ist ab dem 1. Januar 1990 anwendbar.
+21
+  Artikel 9 Absatz 5 des Abkommens wird durch Artikel 2 Buchstabe e des Revisionsprotokolls vom 9. Juni 1969 (BGBl. 1970 II S. 717, 719)
+durch einen neuen Absatz (7) ersetzt. Die Änderung ist ab dem 1. Januar 1968 anwendbar.
+                                   Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 17
+
+
+(8) Die Absätze (1) bis (5) gelten nicht, wenn der Bezugsberechtigte der Dividenden im anderen
+Vertragstaat eine Betriebstätte hat und die Anteile zum Vermögen dieser Betriebstätte gehören. In diesem
+Fall ist Artikel 4 anzuwenden.22
+
+(9) Die unter Absatz 6 fallenden Einkünfte aus Rechten oder Anteilen mit Gewinnbeteiligung
+(einschließlich der Genußrechte oder Genußscheine und im Fall der Bundesrepublik der Einkünfte eines
+stillen Gesellschafters aus seiner Beteiligung als stiller Gesellschafter und der Einkünfte aus partiarischen
+Darlehen und Gewinnobligationen), die bei der Ermittlung des Gewinns des Schuldners abzugsfähig sind,
+können in dem Vertragsstaat, aus dem sie stammen, nach dem Recht dieses Staates besteuert werden.23
+
+(10) Die Absätze 2, 3 und 5 gelten nicht für Dividenden aus Einkünften oder Gewinnen, die aus
+unbeweglichem Vermögen im Sinne des Artikels 3 erzielt wurden, wenn sie von einem
+Investmentvermögen gezahlt werden,
+
+          a) das diese Einkünfte größtenteils jährlich ausschüttet und
+
+          b) dessen Einkünfte oder Gewinne aus diesem unbeweglichen Vermögen von der Steuer befreit
+          sind,
+
+soweit der Nutzungsberechtigte dieser Dividenden unmittelbar oder mittelbar über mindestens 10 vom
+Hundert des Kapitals des die Dividenden zahlenden Investmentvermögens verfügt. In diesem Fall können
+die Dividenden zu dem Satz besteuert werden, den das innerstaatliche Recht des Vertragsstaats, aus dem
+die Dividenden stammen, vorsieht.24
+
+
+
+                                                         Artikel 10
+
+(1) Zinsen und sonstige Einkünfte aus Schuldverschreibungen, Kassenscheinen, Darlehen und Depots oder
+irgendeiner anderen Forderung können ohne Rücksicht darauf, ob sie durch Grundpfandrechte gesichert
+sind oder nicht, nur in dem Vertragstaate besteuert werden, in dem der Bezugsberechtigte ansässig ist.
+
+(2) Absatz (1) gilt nicht, wenn der Bezugsberechtigte der Zinsen oder der sonstigen Einkünfte im anderen
+Vertragstaat eine Betriebstätte hat und die Forderung zum Vermögen dieser Betriebstätte gehört. In diesem
+Fall ist Artikel 4 anzuwenden.
+
+
+
+                                                         Artikel 11
+
+(1) Tantiemen, Anwesenheitsgelder und sonstige Vergütungen, die Mitglieder des Aufsichtsrates von
+Aktiengesellschaften oder Kommanditgesellschaften auf Aktien oder Mitglieder ähnlicher Organe in
+
+
+22
+ Artikel 9 Absatz 6 des Abkommens wird durch Artikel 2 Buchstabe f des Revisionsprotokolls vom 9. Juni 1969 (BGBl. 1970 II S. 717, 719) zu
+Absatz (8) und die dort enthaltene Bezugnahme auf die Absätze (1) bis (3) wird durch die Bezugnahme auf die Absätze (1) bis (5) ersetzt. Die
+Änderung ist ab dem 1. Januar 1968 anwendbar.
+23
+ Artikel 9 des Abkommens wird durch Artikel 2 Nummer 2 des Zusatzabkommens vom 28. September 1989 (BGBl. 1990 II S. 770, 772) ergänzt.
+Die Änderung ist ab dem 1. Januar 1990 anwendbar.
+24
+  In Artikel 9 des Abkommens wird durch Artikel IV des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335) ein neuer Absatz
+10 eingefügt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                  Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 18
+
+
+dieser Eigenschaft erhalten, können vorbehaltlich des Absatzes (2) nur in dem Vertragstaate besteuert
+werden, in dem der Bezugsberechtigte ansässig ist.
+
+(2) Jeder der Vertragstaaten behält das Recht, die Steuer von den in Absatz (1) bezeichneten Einkünften
+nach seinen Rechtsvorschriften im Abzugsweg (an der Quelle) zu erheben.
+
+(3) Vergütungen, die die in Absatz (1) bezeichneten Personen in anderer Eigenschaft beziehen, sind je nach
+Art der Vergütung nach Artikel 12 oder nach Artikel 13 zu behandeln.
+
+
+
+                                                      Artikel 12
+
+(1) Einkünfte aus selbständiger Arbeit und alle übrigen Einkünfte aus Arbeit, die nicht in den Artikeln 13,
+13b und 14 aufgeführt sind, können nur in dem Vertragsstaat besteuert werden, in dem die persönliche
+Tätigkeit ausgeübt wird, aus der die Einkünfte herrühren.25
+
+(2) Eine freiberufliche Tätigkeit gilt nur dann als in einem der Vertragstaaten ausgeübt, wenn der
+Steuerpflichtige seine Tätigkeit unter Benutzung einer ihm dort regelmäßig zur Verfügung stehenden
+ständigen Einrichtung ausübt.26
+
+(3) Artikel 4 Absatz (4) gilt sinngemäß.
+
+
+
+                                                     Artikel 1327
+
+(1) Einkünfte aus nichtselbständiger Arbeit können vorbehaltlich der Vorschriften der nachstehenden
+Absätze nur in dem Vertragstaate besteuert werden, in dem die persönliche Tätigkeit, aus der die Einkünfte
+herrühren, ausgeübt wird. Als Einkünfte aus nichtselbständiger Arbeit gelten insbesondere Gehälter,
+Besoldungen, Löhne, Gratifikationen oder sonstige Bezüge sowie alle ähnlichen Vorteile, die von anderen
+als den in Artikel 14 bezeichneten Personen gezahlt oder gewährt werden.
+
+(2) Entgelte für eine Tätigkeit, die an Bord eines Schiffes oder Luftfahrzeuges im internationalen Verkehr
+oder an Bord eines der Binnenschiffahrt dienenden Schiffes ausgeübt wird, können nur in dem
+Vertragstaate besteuert werden, in dem sich der Ort der tatsächlichen Geschäftsleitung des Unternehmens
+befindet. Erhebt dieser Staat keine Steuer von diesen Entgelten, so können sie in dem Vertragstaate
+besteuert werden, in dem die Bezugsberechtigten ansässig sind.
+
+(3) Absatz (1) gilt nicht für die in einem der Vertragstaaten ansässigen Studenten, die gegen Entgelt bei
+einem Unternehmen des anderen Vertragstaates nicht länger als 183 Tage in einem Kalenderjahr
+
+
+25
+  Artikel 12 Absatz 1 des Abkommens wird durch Artikel V Nummer 1 des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335)
+aufgehoben und ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+26
+  Artikel 12 Absatz 2 Satz 2 des Abkommens wird durch Artikel V Nummer 2 des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S.
+1332, 1335) aufgehoben. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+27
+   Artikel 13 Absätze 4 und 5 des Abkommens werden durch Artikel 3 Nummer 1 des Zusatzabkommens vom 28. September 1989 (BGBl. 1990
+II S. 770, 772) ersetzt. Die Änderung ist ab dem 1. Januar 1990 anwendbar.
+Artikel 13 Absatz 6 des Abkommens wird Absatz 8 und es werden zwei neue Absätze 6 und 7 durch Artikel 3 Nummer 2 des Zusatzabkommens
+vom 28. September 1989 (BGBl. 1990 II S. 770, 772) eingefügt. Die Änderung ist ab dem 1. Januar 1990 anwendbar.
+                                 Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 19
+
+
+beschäftigt werden, um die notwendige praktische Ausbildung zu erhalten. Die Einkünfte aus dieser
+Tätigkeit können nur in dem Staate besteuert werden, in dem der Student ansässig ist.
+
+(4) Ungeachtet des Absatzes 1 können Vergütungen, die eine in einem Vertragsstaat ansässige Person für
+eine im anderen Vertragsstaat ausgeübte unselbständige Arbeit bezieht, nur im erstgenannten Staat
+besteuert werden, wenn
+
+               1. der Empfänger sich im anderen Staat insgesamt nicht länger als 183 Tage während des
+                  betreffenden Steuerjahrs aufhält und
+
+               2. die Vergütungen von einem Arbeitgeber oder für einen Arbeitgeber gezahlt werden, der
+                  nicht im anderen Staat ansässig ist, und
+
+               3. die Vergütungen nicht von einer Betriebsstätte oder einer festen Einrichtung getragen
+                  werden, die der Arbeitgeber im anderen Staat hat.
+
+(5)
+
+      a) Ungeachtet der Absätze 1, 3 und 4 können Einkünfte aus nichtselbständiger Arbeit von Personen,
+         die im Grenzgebiet eines Vertragsstaats arbeiten und ihre ständige Wohnstätte, zu der sie in der
+         Regel jeden Tag zurückkehren, im Grenzgebiet des anderen Vertragsstaats haben
+         („Grenzgänger“), nur in diesem anderen Staat besteuert werden;28
+
+      b) das Grenzgebiet jedes Vertragsstaats umfaßt die Gemeinden, deren Gebiet ganz oder teilweise
+         höchstens 20 km von der Grenze entfernt liegt;
+
+      c) die Regelung nach Buchstabe a gilt auch für alle Personen, die ihre ständige Wohnstätte in den
+         französischen Grenzdepartements haben und in deutschen Gemeinden arbeiten, deren Gebiet ganz
+         oder teilweise höchstens 30 km von der Grenze entfernt liegt.
+
+(6) Ungeachtet der Absätze 1 bis 4 können Vergütungen, die ein in einem Vertragsstaat ansässiger
+Arbeitnehmer auf Grund einer unselbständigen Arbeit erhält, die er im anderen Vertragsstaat im Rahmen
+eines Vertrags mit einem Arbeitnehmerverleiher ausübt, im anderen Staat besteuert werden. Diese
+Vergütungen können auch in dem Staat besteuert werden, in dem der Arbeitnehmer ansässig ist. Die
+Vertragsstaaten können die Zahlung der auf diese Vergütungen entfallenden Steuer nach Maßgabe ihres
+innerstaatlichen Rechts vom Verleiher oder vom Entleiher verlangen oder sie dafür haftbar machen.
+
+(7) Im Sinne dieses Artikels umfaßt der Ausdruck „unselbständige Arbeit“ insbesondere die in einer der
+Körperschaftsteuer unterliegenden Gesellschaft ausgeübten Leitungs- und Geschäftsführungsaufgaben.
+
+(8) Ruhegehälter, Renten (einschließlich Bezügen aus der gesetzlichen Sozialversicherung) und ähnliche
+Vergütungen können nur in dem Staat besteuert werden, in dem der Begünstigte ansässig ist.29
+
+
+
+
+28
+  Artikel 13 Absatz 5 Buchstabe a des Abkommens wird durch Artikel VI Nummer 1 des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II
+S. 1332, 1335) aufgehoben und ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+29
+  Artikel 13 Absatz 8 des Abkommens wird durch Artikel VI Nummer 2 des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332,
+1335) aufgehoben und ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                  Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 20
+
+
+                                                    Artikel 13 a30
+
+(1) Der nach Artikel 13 Absatz 5 zur Besteuerung der Vergütungen berechtigte Staat zahlt dem Staat, in
+dem die nichtselbständige Arbeit ausgeübt wird, eine Entschädigung in Höhe eines Teils der aufgrund der
+Sitzlandbesteuerung der Grenzgänger erhobenen Steuer vom Einkommen aus dieser nichtselbständigen
+Arbeit. Diese Entschädigung wird auf 1,5 vom Hundert der gesamten Bruttojahresvergütungen der
+Grenzgänger festgelegt.
+
+(2) Der Ausdruck „Bruttojahresvergütungen“ im Sinne des Absatzes 1 bedeutet alle Einnahmen in bar oder
+in Sachleistungen aus einer vollständig oder teilweise für eine andere Person ausgeübten Tätigkeit,
+einschließlich gesetzlicher oder vereinbarter Bezüge, zum Beispiel Kindergeld von einem Arbeitgeber oder
+einer Familienkasse, Zahlungen für Krankenversicherung. Abzüge jeglicher Art, wie zum Beispiel
+Pflichtversicherungsbeiträge oder freiwillige Versicherungsbeiträge, sind nicht zu berücksichtigen. Vom
+Arbeitgeber gezahlte Erstattungen für Aufwendungen, die zur Arbeitsausübung getätigt wurden, fließen
+nicht in die Bruttovergütung ein.
+
+(3) Bei in der Bundesrepublik tätigen Grenzgängern im Sinne des Artikels 13 Absatz 5 Buchstabe a werden
+die gesamten Gehaltsbezüge aus den Bruttojahresvergütungen von Grenzgängern anhand der jährlichen
+Gehaltsaufstellungen ermittelt, die die Arbeitgeber am Ende eines jeden Kalenderjahres den deutschen
+Steuerbehörden übermitteln müssen.
+
+(4) Bei in Frankreich tätigen Grenzgängern im Sinne des Artikels 13 Absatz 5 Buchstabe a werden die
+gesamten Gehaltsbezüge aus den Bruttojahresvergütungen von Grenzgängern anhand der jährlichen
+Gehaltsaufstellungen ermittelt, die die Arbeitgeber am Ende eines jeden Kalenderjahres den französischen
+Steuerbehörden übermitteln müssen.
+
+(5) Die nach den Absätzen 3 und 4 ermittelten Beträge sind spätestens am 30. April des Folgejahres von
+der jeweiligen zuständigen Steuerbehörde beider Staaten an die zuständige Steuerbehörde des anderen
+Staates zu übersenden. Beide Staaten zahlen die Entschädigung spätestens am 30. Juni desselben Jahres.
+
+(6) Die zuständigen Behörden ergreifen in gegenseitigem Einvernehmen die zur Anwendung dieses
+Artikels erforderlichen Verwaltungsmaßnahmen. Sie halten alle fünf Jahre ein Treffen ab, um zu
+überprüfen, ob der in Absatz 1 genannte Anteil nach wie vor eine Entschädigung von maximal 44 vom
+Hundert der Steuer auf die in Absatz 1 genannten gesamten Bruttojahresvergütungen der Grenzgänger
+ergibt. Ist dies nicht der Fall, wird der in Absatz 1 genannte Anteil entsprechend angepasst werden.
+
+
+
+                                                    Artikel 13 b31
+
+(1) Einkünfte, die eine in einem Vertragsstaat ansässige Person als Künstler (wie Bühnen-, Film-,
+Rundfunk- und Fernsehkünstler sowie Musiker), Sportler oder Model aus ihrer im anderen Vertragsstaat
+persönlich ausgeübten Tätigkeit bezieht, können ungeachtet der Artikel 4, 12 und 13 im anderen Staat
+besteuert werden. Einkünfte eines in einem Vertragsstaat ansässigen und ehemals im anderen Vertragsstaat
+ansässigen Künstlers, Sportlers oder Models, die von einer im anderen Staat ansässigen Person für die
+Benutzung oder das Recht auf Benutzung seines Namens, seines Bildes oder sonstiger
+
+30
+  Nach Artikel 13 des Abkommens wird durch Artikel VII des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335) der neue
+Artikel 13 a eingefügt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+31
+  Nach Artikel 13 a des Abkommens wird durch Artikel VIII des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335) der neue
+Artikel 13 b eingefügt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                 Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 21
+
+
+Persönlichkeitsrechte gezahlt werden, können ungeachtet des Artikels 15 im anderen Staat besteuert
+werden.
+
+(2) Fließen Einkünfte im Sinne des Absatzes 1 nicht dem Künstler, Sportler oder Model selbst, sondern
+einer anderen, auch außerhalb der Vertragsstaaten ansässigen Person zu, so können diese Einkünfte
+ungeachtet der Artikel 4, 12 und 13 in dem Vertragsstaat besteuert werden, aus dem die in Absatz 1 Satz 2
+genannten Einkünfte bezogen werden oder in dem der Künstler, der Sportler oder das Model seine
+Tätigkeit ausübt.
+
+(3) Die Absätze 1 und 2 dieses Artikels gelten nicht für Einkünfte aus der von Künstlern oder Sportlern in
+einem Vertragsstaat ausgeübten Tätigkeit, wenn der Aufenthalt in diesem Staat ganz oder überwiegend aus
+öffentlichen Kassen des anderen Vertragsstaats, eines seiner Länder oder einer ihrer Gebietskörperschaften
+unterstützt wird. In diesem Fall können die Einkünfte nur in dem Vertragsstaat besteuert werden, in dem
+der Künstler oder Sportler ansässig ist.
+
+
+
+                                                   Artikel 13 c32
+
+(1) Der nach Artikel 13 Absatz 8 zur Besteuerung der Bezüge aus der gesetzlichen Sozialversicherung
+berechtigte Vertragsstaat schuldet dem Vertragsstaat, aus dem die Bezüge stammen, eine Entschädigung
+in Höhe der Steuer, die der Staat, aus dem die Bezüge stammen, nach seinen steuerlichen Vorschriften
+hätte erheben dürfen.
+
+(2) Der Differenzbetrag der gemäß Absatz 1 festgesetzten Entschädigungen wird am oder vor dem 30. Juni
+des Jahres, das auf das Jahr folgt, für das die Entschädigung festgesetzt wurde, von dem Vertragsstaat
+gezahlt, der dem anderen Vertragsstaat die höhere Entschädigung schuldet. Die Zahlungen sind erstmals
+für das Jahr fällig, in dem Artikel VI des Zusatzabkommens vom 31. März 2015 nach seinem Artikel XVIII
+Absatz 2 anzuwenden ist.
+
+(3) Die zuständigen Behörden der Vertragsstaaten ergreifen in gegenseitigem Einvernehmen die zur
+Anwendung dieses Artikels erforderlichen Verwaltungsmaßnahmen.
+
+
+
+                                                    Artikel 1433
+
+(1) Gehälter, Löhne und ähnliche Vergütungen sowie Ruhegehälter, die einer der Vertragsstaaten, ein
+Land, eine Gebietskörperschaft oder eine juristische Person des öffentlichen Rechts dieses Staates, dieses
+Landes oder dieser Gebietskörperschaft an in dem anderen Staat ansässige natürliche Personen für
+gegenwärtige oder frühere Dienstleistungen in der Verwaltung oder in den Streitkräften zahlt, können nur
+in dem erstgenannten Staat besteuert werden. Dies gilt jedoch nicht, wenn die Vergütungen an Personen
+gezahlt werden, die die Staatsangehörigkeit des anderen Staates besitzen, ohne zugleich Staatsangehörige
+des erstgenannten Staates zu sein; in diesem Fall können die Vergütungen nur von dem Staat besteuert
+werden, in dem diese Personen ansässig sind.
+
+
+32
+  Nach Artikel 13 b des Abkommens wird durch Artikel IX des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335) der neue
+Artikel 13 c eingefügt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+33
+  Artikel 14 des Abkommens wird durch Artikel X des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335) aufgehoben und
+ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                  Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 22
+
+
+(2) Absatz 1 Satz 1 gilt auch für Pensionen, Leibrenten und andere wiederkehrende oder einmalige Bezüge,
+die von einem der Vertragsstaaten, einem Land, einer Gebietskörperschaft oder einer juristischen Person
+des öffentlichen Rechts dieses Staates, dieses Landes oder dieser Gebietskörperschaft als Vergütung für
+einen Schaden gezahlt werden, der als Folge von Kriegshandlungen oder politischer Verfolgung entstanden
+ist.
+
+(3) Absatz 1 gilt nicht für Zahlungen für Dienstleistungen, die im Zusammenhang mit einer auf
+Gewinnerzielung gerichteten gewerblichen Tätigkeit eines der beiden Vertragsstaaten, eines Landes, einer
+Gebietskörperschaft oder einer juristischen Person des öffentlichen Rechts dieses Staates, dieses Landes
+oder dieser Gebietskörperschaft stehen. Einrichtungen wie öffentliche Krankenhäuser, Kindergärten,
+Schulen und Universitäten üben keine auf Gewinnerzielung gerichtete gewerbliche Tätigkeit im Sinne des
+vorstehenden Satzes aus.
+
+
+
+                                                       Artikel 15
+
+(1) Lizenzgebühren und andere Vergütungen für die Benutzung oder das Recht auf Benutzung von
+Urheberrechten an literarischen, künstlerischen oder wissenschaftlichen Werken einschließlich
+kinematographischer Filme, von Patenten, Markenrechten, Gebrauchsmustern, Plänen, geheimen
+Verfahren und Formeln oder ähnlichen Gütern oder Rechten werden nur in dem Vertragstaate besteuert,
+in dem der Bezugsberechtigte ansässig ist.
+
+(2) Wie Lizenzgebühren werden Mietgebühren und ähnliche Vergütungen für die Benutzung oder das
+Recht auf Benutzung gewerblicher, kaufmännischer oder wissenschaftlicher Ausrüstungen und für die
+Überlassung gewerblicher, kaufmännischer oder wissenschaftlicher Erfahrungen behandelt.
+
+(3) Veränderliche oder feste Vergütungen für die Ausbeutung von Bergwerken, Steinbrüchen oder anderen
+Stätten der Ausbeutung von Bodenschätzen gelten nicht als Lizenzgebühren.
+
+(4) Die Absätze 1 bis 3 gelten nicht, wenn der Bezugsberechtigte der Lizenzgebühren oder anderen
+Vergütungen in dem Vertragsstaat, aus dem diese Einkünfte stammen, eine Betriebstätte unterhält oder
+eine feste Geschäftseinrichtung, die der Ausübung einer freiberuflichen Tätigkeit oder einer anderen
+selbständigen Tätigkeit dient, und wenn diese Lizenzgebühren oder anderen Vergütungen dieser
+Betriebstätte oder festen Geschäftseinrichtung zuzurechnen sind. In diesem Fall hat der genannte Staat das
+Besteuerungsrecht für diese Einkünfte.34
+
+
+
+                                                       Artikel 16
+Hochschullehrer oder Lehrer, die in einem der Vertragstaaten ansässig sind und während eines
+vorübergehenden Aufenthaltes von höchstens zwei Jahren eine Vergütung für eine Lehrtätigkeit an einer
+Universität, Hochschule, Schule oder einer anderen Lehranstalt in dem anderen Staat erhalten, können
+hinsichtlich dieser Vergütung nur in dem erstgenannten Staate besteuert werden.
+
+
+34
+  Artikel 15 Absatz 4 des Abkommens wird durch Artikel XI des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335) aufgehoben
+und ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+Artikel 15 Absatz 5 des Abkommens wird durch Artikel XI des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335) aufgehoben.
+Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                 Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 23
+
+
+
+
+                                                     Artikel 17
+Studenten, Lehrlinge und Praktikanten aus einem der Vertragstaaten, die sich in dem anderen Staat
+ausschließlich zum Studium oder zur Ausbildung aufhalten, sind in dem anderen Staat hinsichtlich der
+Bezüge steuerbefreit, die sie in Form von Unterhalts-, Studien- oder Ausbildungsgeldern aus dem Ausland
+empfangen.
+
+
+
+                                                     Artikel 18
+Einkünfte, die in den vorhergehenden Artikeln nicht behandelt sind, können nur in dem Vertragstaate
+besteuert werden, in dem der Bezugsberechtigte, dem diese Einkünfte zustehen, ansässig ist.
+
+
+
+                                                     Artikel 1935
+
+(1) Unbewegliches Vermögen im Sinne des Artikels 3, das einer in einem Vertragsstaat ansässigen Person
+gehört und im anderen Vertragsstaat liegt, kann im anderen Staat besteuert werden.
+
+(2) Aktien oder Anteile an einer Gesellschaft oder einer juristischen Person, deren Betriebsvermögen im
+wesentlichen aus unbeweglichem Vermögen, das in einem der Vertragsstaaten liegt, oder aus Rechten an
+diesem Vermögen besteht, können in dem Vertragsstaat besteuert werden, in dem das unbewegliche
+Vermögen liegt. Für die Zwecke dieser Bestimmung bleibt das unbewegliche Vermögen außer Betracht,
+das von der Gesellschaft oder der juristischen Person für ihren eigenen gewerblichen oder
+landwirtschaftlichen Betrieb oder zur Ausübung einer nichtgewerblichen Tätigkeit eingesetzt wird.
+
+(3) Bewegliches Vermögen, das Betriebsvermögen einer Betriebsstätte ist, die ein Unternehmen eines
+Vertragsstaats im anderen Vertragsstaat hat, oder das zu einer ständigen Einrichtung gehört, die einer in
+einem Vertragsstaat ansässigen Person für die Ausübung einer selbständigen Arbeit im anderen
+Vertragsstaat zur Verfügung steht, kann im anderen Staat besteuert werden.
+
+(4) Seeschiffe und Luftfahrzeuge, die im internationalen Verkehr betrieben werden, und Schiffe, die der
+Binnenschiffahrt dienen, sowie bewegliches Vermögen, das dem Betrieb dieser Schiffe und Luftfahrzeuge
+dient, können nur in dem Vertragsstaat besteuert werden, in dem sich der Ort der tatsächlichen
+Geschäftsleitung des Unternehmens befindet.
+
+(5) Alle anderen Vermögensteile einer in einem Vertragsstaat ansässigen Person können nur in diesem
+Staat besteuert werden.
+
+(6) Ungeachtet der vorstehenden Absätze wird im Fall einer in Frankreich ansässigen natürlichen Person,
+welche die deutsche Staatsangehörigkeit besitzt, ohne die französische Staatsangehörigkeit zu besitzen, bei
+der Veranlagung zur Solidaritätsteuer vom Vermögen, das außerhalb Frankreichs gelegene Vermögen, das
+ihr am 1. Januar jedes der fünf Kalenderjahre gehört, die auf das Jahr folgen, in dem sie in Frankreich
+ansässig geworden ist, nicht in die Steuerbemessungsgrundlage für jedes dieser fünf Jahre einbezogen.
+
+
+
+35
+  Artikel 19 des Abkommens wird durch Artikel 4 des Zusatzabkommens vom 28. September 1989 (BGBl. 1990 II S. 770, 772) ersetzt. Die
+Änderung ist ab dem 1. Januar 1990 anwendbar.
+                                   Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 24
+
+
+Verliert die Person für mindestens drei Jahre die Eigenschaft einer in Frankreich ansässigen Person und
+wird sie darauf erneut in Frankreich ansässig, so wird das außerhalb Frankreichs gelegene Vermögen, das
+ihr am 1. Januar jedes der fünf Kalenderjahre gehört, die auf das Jahr folgen, in dem sie wieder in
+Frankreich ansässig geworden ist, nicht in die Steuerbemessungsgrundlage für jedes dieser fünf Jahre
+einbezogen.
+
+
+
+                                                       Artikel 2036
+
+(1) Bei Personen, die in der Bundesrepublik ansässig sind, wird die Doppelbesteuerung wie folgt
+vermieden:
+
+     a) Von der Bemessungsgrundlage der deutschen Steuer werden vorbehaltlich der Buchstaben b, c
+        und d die Einkünfte aus Frankreich sowie die in Frankreich gelegenen Vermögenswerte
+        ausgenommen, die nach diesem Abkommen in Frankreich besteuert werden können.37 Diese
+        Bestimmung schränkt das Recht der Bundesrepublik nicht ein, die auf diese Weise
+        ausgenommenen Einkünfte und Vermögensteile bei der Festsetzung ihres Steuersatzes zu
+        berücksichtigen.
+
+     b) Bei Dividenden ist Buchstabe a nur auf die Nettoeinkünfte anzuwenden, die den Dividenden
+        entsprechen, die von einer in Frankreich ansässigen Kapitalgesellschaft an eine in der
+        Bundesrepublik ansässige Kapitalgesellschaft gezahlt werden, der mindestens 10 vom Hundert des
+        Gesellschaftskapitals der erstgenannten Gesellschaft gehören. Diese Bestimmung gilt auch für
+        Beteiligungen, deren Dividenden unter Satz 1 fallen würden.38
+
+     c) Die französische Steuer, die nach diesem Abkommen auf andere als die unter Buchstabe b
+        fallenden Dividenden sowie auf die unter Artikel 7 Absatz 4, Artikel 11, Artikel 13 Absatz 6 und
+        Artikel 13 b fallenden Einkünfte, die aus Frankreich stammen, erhoben wird, wird unter Beachtung
+        der Vorschriften des deutschen Rechts über die Anrechnung ausländischer Steuern auf die
+        deutsche Steuer angerechnet, die auf diese Einkünfte entfällt.39
+
+          Die in Artikel 9 Absatz (7) angeführten Einkünfte gelten für die Anwendung dieses Buchstabens
+          nicht als Dividenden.
+
+     d) Ungeachtet der Bestimmungen des Buchstabens a und anderer Bestimmungen dieses Abkommens
+        wird die Doppelbesteuerung durch Steueranrechnung nach Buchstabe c vermieden, wenn die
+        Bundesrepublik gegenüber Frankreich auf diplomatischem Weg andere Einkünfte notifiziert, bei
+        denen sie die Anrechnungsmethode nach Buchstabe c anzuwenden beabsichtigt. Der vorstehende
+36
+   Artikel 20 des Abkommens wird durch Artikel 3 des Revisionsprotokolls vom 9. Juni 1969 (BGBl. 1970 II S. 717, 719) ersetzt. Die Änderung
+ist ab dem 1. Januar 1968 anwendbar.
+37
+   In Artikel 20 Absatz 1 Buchstabe a des Abkommens wird durch Artikel XII Nummer 1 des Zusatzabkommens vom 31. März 2015 (BGBl. 2015
+II S. 1332, 1335) der Satz 1 ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+38
+  Artikel 20 Absatz 1 des Abkommens wird durch Artikel 2 des Zusatzabkommens vom 20. Dezember 2001 (BGBl. 2002 II S. 2370, 2372)
+geändert. Die Änderung ist ab dem 1. Januar 2002 anwendbar.
+39
+  Artikel 20 Absatz 1 Buchstabe b Doppelbuchstabe aa und Buchstabe c des Abkommens mit Ausnahme des letzten Satzes werden durch Artikel
+5 Nummer 1 des Zusatzabkommens vom 28. September 1989 (BGBl. 1990 II S. 770, 772) aufgehoben und ersetzt. Die Änderung ist ab dem 1.
+Januar 1990 anwendbar.
+In Artikel 20 Absatz 1 Buchstabe c des Abkommens wird durch Artikel XII Nummer 2 des Zusatzabkommens vom 31. März 2015 (BGBl. 2015
+II S. 1332, 1335) der Satz 1 ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                 Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 25
+
+
+          Satz gilt nur für Einkünfte nach Artikel 4 und 12. Die Doppelbesteuerung wird für die notifizierten
+          Einkünfte durch Steueranrechnung nach Buchstabe c vom ersten Tag des Kalenderjahres
+          vermieden, das dem Kalenderjahr folgt, in dem die Notifikation übermittelt wurde.40
+
+(2)41 Bei Personen, die in Frankreich ansässig sind, wird die Doppelbesteuerung wie folgt vermieden:
+
+     a) Einkünfte, die aus der Bundesrepublik stammen und nach diesem Abkommen dort besteuert
+        werden können, können auch in Frankreich besteuert werden, wenn sie von einer in Frankreich
+        ansässigen Person erzielt werden und nach innerstaatlichem französischen Recht nicht von der
+        Körperschaftsteuer befreit sind.42 Die deutsche Steuer ist für die Berechnung der in Frankreich
+        steuerpflichtigen Einkünfte nicht abzugsfähig. Der Empfänger hat jedoch Anspruch auf einen
+        Anrechnungsbetrag bei der französischen Steuer, in deren Bemessungsgrundlage diese Einkünfte
+        enthalten sind. Dieser Steueranrechnungsbetrag entspricht
+
+          aa) bei den unter Artikel 7 Absätze 1, 4 und 6, Artikel 9 Absätze 2, 5, 9 und 10, Artikel 11 Absatz
+          2, Artikel 13 Absatz 6 und Artikel 13 b Absätze 1 und 2 fallenden Einkünften dem Betrag der nach
+          diesen Artikeln in der Bundesrepublik gezahlten Steuer. Er darf jedoch den Betrag der diesen
+          Einkünften entsprechenden französischen Steuer nicht überschreiten.
+
+          bb) bei allen anderen Einkünften dem Betrag der diesen Einkünften entsprechenden französischen
+          Steuer, soweit die in Frankreich ansässige Person mit diesen Einkünften der deutschen Steuer
+          unterliegt. Diese Bestimmung gilt insbesondere auch für die Einkünfte, die unter Artikel 3, Artikel
+          4 Absätze 1 und 3, Artikel 6 Absatz 1, Artikel 7 Absätze 2, 3 und 5, Artikel 12 Absatz 1, Artikel
+          13 Absätze 1 und 2 sowie Artikel 14 fallen.43
+
+     b) Wird eine in Frankreich ansässige Gesellschaft dort nach französischem innerstaatlichem Recht
+        anhand einer konsolidierten Bemessungsgrundlage besteuert, die insbesondere die Gewinne und
+        Verluste der in der Bundesrepublik ansässigen Tochtergesellschaften oder der in der
+        Bundesrepublik gelegenen Betriebstätten umfasst, so schließt dieses Abkommen die Anwendung
+        des französischen innerstaatlichen Rechts nicht aus. In diesem Fall kann die deutsche Steuer nicht
+        von solchen Einkünften abgezogen werden, die in Frankreich ansässige Person hat jedoch
+        Anspruch auf einen Anrechnungsbetrag bei der französischen Steuer. Die Steueranrechnung
+        entspricht der in der Bundesrepublik entrichteten Steuer. Dieser Steueranrechnungsbetrag darf
+        jedoch den Betrag der auf diese Einkünfte entfallenden französischen Steuer nicht überschreiten.44
+
+     c) Das Vermögen, das nach Artikel 19 in der Bundesrepublik besteuert werden kann, kann auch in
+        Frankreich besteuert werden. Die in der Bundesrepublik von diesem Vermögen erhobene Steuer
+        verleiht den in Frankreich ansässigen Personen Anspruch auf eine Steueranrechnung in Höhe der
+        in der Bundesrepublik erhobenen Steuer, wobei aber die Anrechnung den Betrag der auf dieses
+
+40
+  Nach Artikel 20 Absatz 1 Buchstabe c des Abkommens wird durch Artikel XII Nummer 3 des Zusatzabkommens vom 31. März 2015 (BGBl.
+2015 II S. 1332, 1335) ein neuer Buchstabe d eingefügt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+41
+  Artikel 20 Absatz 2 des Abkommens wird durch Artikel 5 Nummer 2 des Zusatzabkommens vom 28. September 1989 (BGBl. 1990 II S. 770,
+772) aufgehoben und ersetzt. Die Änderung ist ab dem 1. Januar 1990 anwendbar.
+42
+  Artikel 20 Absatz 2 Buchstabe a Satz 1 des Abkommens wird durch Artikel XII Nummer 4 des Zusatzabkommens vom 31. März 2015 (BGBl.
+2015 II S. 1332, 1335) aufgehoben und ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+43
+  Artikel 20 Absatz 2 Buchstabe a Doppelbuchstabe aa, bb und cc des Abkommens werden durch Artikel XII Nummer 5 des Zusatzabkommens
+vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335) aufgehoben und ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+44
+   Artikel 20 Absatz 2 Buchstabe b des Abkommens wird durch Artikel XII Nummer 6 des Zusatzabkommens vom 31. März 2015 (BGBl. 2015
+II S. 1332, 1335) aufgehoben und ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 26
+
+
+          Vermögen entfallenden französischen Steuer nicht übersteigen darf. Angerechnet wird auf die
+          Solidaritätsteuer vom Vermögen, in deren Bemessungsgrundlage das betreffende Vermögen
+          enthalten ist.
+
+(3) Verwendet eine in der Bundesrepublik Deutschland ansässige Gesellschaft aus Frankreich stammende
+Einkünfte zur Dividendenausschüttung, so schließt Absatz 1 die Herstellung der Ausschüttungsbelastung
+für die Körperschaftsteuer nach den Vorschriften des Steuerrechts der Bundesrepublik Deutschland nicht
+aus.45
+
+
+
+                                                    Artikel 21
+
+(1) Die Staatsangehörigen eines Vertragstaates dürfen in dem anderen Vertragstaate keiner Besteuerung
+oder einer damit zusammenhängenden Verpflichtung unterworfen werden, die anders oder belastender ist
+als die Besteuerung und die damit zusammenhängenden Verpflichtungen, denen die Staatsangehörigen des
+anderen Staates unter gleichen Verhältnissen unterworfen sind oder unterworfen werden können. Im Sinne
+des Satzes 1 gilt, dass eine in einem Vertragsstaat ansässige natürliche Person, juristische Person,
+Personengesellschaft oder Personenvereinigung nicht den gleichen Verhältnissen unterworfen wird wie
+eine nicht in diesem Staat ansässige natürliche Person, juristische Person, Personengesellschaft oder
+Personenvereinigung; dies gilt unabhängig von der Begriffsbestimmung der Staatsangehörigkeit, auch
+wenn juristische Personen, Personengesellschaften und Personenvereinigungen als Staatsangehörige des
+Vertragsstaats gelten, in dem sie ansässig sind.46
+
+(2) Der Begriff „Staatsangehörige“ bedeutet:
+
+     1.    in bezug auf Frankreich
+          alle natürlichen Personen, die die französische Staatsangehörigkeit besitzen;
+
+     2. in bezug auf die Bundesrepublik
+        alle Deutschen im Sinne des Artikels 116 Absatz 1 des Grundgesetzes für die Bundesrepublik
+        Deutschland;
+
+     3. alle juristischen Personen, Personengesellschaften und anderen Personenvereinigungen, die nach
+        dem in einem Vertragstaat geltenden Recht errichtet worden sind.
+
+(3) Staatenlose dürfen in einem Vertragstaate keiner Besteuerung oder einer damit zusammenhängenden
+Verpflichtung unterworfen werden, die anders oder belastender ist als die Besteuerung und die damit
+zusammenhängenden Verpflichtungen, denen die Staatsangehörigen dieses Staates unter gleichen
+Verhältnissen unterworfen sind oder unterworfen werden können.
+
+(4) Die Besteuerung einer Betriebstätte, die ein Unternehmen eines Vertragstaates in dem anderen
+Vertragstaate hat, darf in dem anderen Vertragstaate nicht ungünstiger sein als die Besteuerung von
+Unternehmen dieses anderen Staates, die die gleiche Tätigkeit ausüben.
+Diese Vorschrift ist nicht dahin auszulegen, daß sie einen Vertragstaat verpflichtet, den in dem anderen
+Vertragstaat ansässigen Personen Steuerfreibeträge, ‑vergünstigungen und ‑ermäßigungen auf Grund des
+
+45
+  Artikel 20 des Abkommens wird durch Artikel 5 Nummer 3 des Zusatzabkommens vom 28. September 1989 (BGBl. 1990 II S. 770, 772)
+ergänzt. Die Änderung ist ab dem 1. Januar 1990 anwendbar.
+46
+  In Artikel 21 am Ende von Absatz 1 des Abkommens wird durch Artikel XIII Nummer 1 des Zusatzabkommens vom 31. März 2015 (BGBl.
+2015 II S. 1332, 1335) ein Satz angefügt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                 Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 27
+
+
+Personenstandes oder der Familienlasten zu gewähren, die er den in seinem Gebiet ansässigen Personen
+gewährt.
+
+(5) Die Unternehmen eines Vertragstaates, deren Kapital ganz oder teilweise, unmittelbar oder mittelbar,
+einer in dem anderen Vertragstaat ansässigen Person oder mehreren solchen Personen gehört oder der
+Kontrolle dieser Personen unterliegt, dürfen in dem erstgenannten Vertragstaate keiner Besteuerung oder
+einer damit zusammenhängenden Verpflichtung unterworfen werden, die anders oder belastender ist als
+die Besteuerung und die damit zusammenhängenden Verpflichtungen, denen andere ähnliche
+Unternehmen des erstgenannten Staates unterworfen sind oder unterworfen werden können.
+
+(6) Beiträge von einer oder für eine in einem Vertragsstaat tätige natürliche Person an eine
+Altersvorsorgeeinrichtung,
+
+              a) die im anderen Vertragsstaat steuerlich anerkannt ist,
+
+              b) bei der die natürliche Person unmittelbar vor Aufnahme der Tätigkeit im erstgenannten
+                 Staat Mitglied war,
+
+              c) bei der die natürliche Person zum Zeitpunkt ihrer Tätigkeit oder ihrer Ansässigkeit im
+                 anderen Staat Mitglied war, und
+
+              d) bei der die zuständige Behörde des erstgenannten Staates festgestellt hat, dass sie
+                 allgemein einer Altersvorsorgeeinrichtung entspricht, die in diesem Staat als solche
+                 steuerlich anerkannt ist,
+
+werden zum Zwecke
+
+              e) der Ermittlung der im erstgenannten Staat von der natürlichen Person zu entrichtenden
+                 Steuer und
+
+              f) der Ermittlung der Gewinne eines Unternehmens, die im erstgenannten Staat besteuert
+                 werden können,
+
+in diesem Staat in gleicher Weise und nach den gleichen Bedingungen und Einschränkungen behandelt
+wie Beiträge zu einer im erstgenannten Staat steuerlich anerkannten Altersvorsorgeeinrichtung. Im Sinne
+von Satz 1
+
+              a) bedeutet der Ausdruck „Altersvorsorgeeinrichtung“ eine Einrichtung, an der sich die
+                 natürliche Person zur Sicherung von Ruhestandsleistungen beteiligt, die für die im
+                 vorstehenden Satz genannte Tätigkeit zu zahlen sind, und
+
+              b) ist eine Altersvorsorgeeinrichtung in einem Staat steuerlich anerkannt, wenn für die an
+                 diese Einrichtung geleisteten Beiträge in diesem Staat eine Steuerentlastung gewährt
+                 würde.47
+
+(7) In diesem Artikel bedeutet der Begriff „Besteuerung“ Steuern jeder Art und Bezeichnung.
+
+
+
+47
+  Nach Artikel 21 Absatz 5 des Abkommens wird durch Artikel XIII Nummer 2 des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S.
+1332, 1335) ein neuer Absatz 6 eingefügt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                 Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 28
+
+
+(8)
+
+               a) Die Steuerbefreiungen und ‑ermäßigungen auf Schenkungen oder Erbschaften, die das
+                  Recht eines der Vertragsstaaten zugunsten dieses Staates, seiner Länder oder seiner
+                  Gebietskörperschaften vorsieht, gelten auch für juristische Personen gleicher Art des
+                  anderen Vertragsstaats.
+
+               b) Die Anstalten des öffentlichen Rechts, die gemeinnützigen Anstalten sowie die nicht auf
+                  Gewinnerzielung gerichteten Organe, Vereinigungen, Institutionen und Stiftungen, die in
+                  einem der Vertragsstaaten gegründet oder errichtet worden und auf religiösem,
+                  wissenschaftlichem, künstlerischem, kulturellem, erzieherischem oder mildtätigem Gebiet
+                  tätig sind, genießen im anderen Vertragsstaat unter den im Recht dieses Staates
+                  vorgesehenen Voraussetzungen die Befreiungen oder anderen Vergünstigungen bei den
+                  Steuern auf Schenkungen oder Erbschaften, die den in diesem anderen Staat gegründeten
+                  oder errichteten Rechtsträgern gleicher Art gewährt werden.
+
+Diese Befreiungen oder anderen Vergünstigungen gelten jedoch nur, wenn diese Rechtsträger im
+erstgenannten Staat ähnliche Befreiungen oder Vergünstigungen genießen.48
+
+
+
+                                                     Artikel 22
+
+(1) Die Vertragstaaten werden sich bei der Veranlagung und Erhebung der in Artikel 1 bezeichneten
+Steuern gegenseitig Amts- und Rechtshilfe gewähren.
+
+(2) Zu diesem Zwecke kommen die Vertragstaaten dahin überein, daß sich ihre zuständigen Behörden
+gegenseitig insbesondere die steuerlichen Auskünfte erteilen, die ihnen zur Verfügung stehen oder die sie
+sich auf Grund ihrer gesetzlichen Vorschriften beschaffen können, und die zur Durchführung dieses
+Abkommens sowie zur Verhinderung der Steuerhinterziehung erforderlich sind. Der Inhalt dieser
+Mitteilungen ist geheimzuhalten und nur solchen Personen zugänglich zu machen, die nach den
+gesetzlichen Vorschriften mit der Veranlagung und Erhebung der Steuern im Sinne dieses Abkommens
+beauftragt sind.
+
+(3) Die Vorschriften dieses Artikels dürfen nicht dahin ausgelegt werden, daß sie einen der Vertragstaaten
+verpflichten, dem anderen Staat Auskünfte zu erteilen, die er nach seinem eigenen Steuerrecht nicht
+verlangen kann oder die ein gewerbliches oder berufliches Geheimnis verletzen würden. Die Vorschriften
+dieses Artikels dürfen auch nicht dahin ausgelegt werden, daß sie einen der Vertragstaaten verpflichten,
+Verwaltungsmaßnahmen durchzuführen, die von seinen Vorschriften oder seiner Verwaltungspraxis
+abweichen. Das Auskunftsersuchen kann auch abgelehnt werden, wenn der ersuchte Staat die Auskünfte
+für geeignet hält, seine Hoheitsrechte oder seine Sicherheit zu gefährden oder seine allgemeinen Interessen
+zu beeinträchtigen.
+
+(4) Stellt der Vertragstaat, der die Auskünfte erhält, fest, daß sie nicht den Tatsachen entsprechen, so wird
+die zuständige Behörde dieses Staates, falls sie glaubt, daß dies tunlich und für den anderen Staat von
+
+
+48
+  Artikel 21 des Abkommens wird durch Artikel 6 des Zusatzabkommens vom 28. September 1989 (BGBl. 1990 II S. 770, 772) ergänzt. Die
+Änderung ist ab dem 1. Januar 1990 anwendbar.
+Artikel 21 Absätze 6 und 7 des Abkommens werden durch Artikel XIII Nummer 3 des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S.
+1332, 1335) zu den Absätzen 7 und 8. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                 Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 29
+
+
+Interesse ist, die erhaltenen Unterlagen so bald wie möglich der zuständigen Behörde des anderen Staates
+unter Angabe des Grundes der Rücksendung und der von ihr festgestellten Tatsachen zurücksenden.
+
+
+
+                                                    Artikel 2349
+
+(1) Die Vertragsstaaten leisten sich gegenseitige Amtshilfe bei der Erhebung von Steueransprüchen. Diese
+Amtshilfe wird durch Artikel 1 nicht eingeschränkt. Die zuständigen Behörden der Vertragsstaaten können
+in gegenseitigem Einvernehmen regeln, wie dieser Artikel durchzuführen ist.
+
+(2) Der in diesem Artikel verwendete Ausdruck „Steueranspruch“ bedeutet einen Betrag, der auf Grund
+von Steuern jeder Art und Bezeichnung, die für Rechnung der Vertragsstaaten, eines ihrer Länder oder
+einer ihrer Gebietskörperschaften erhoben werden, geschuldet wird, soweit die Besteuerung diesem
+Abkommen oder anderen Übereinkünften, denen die Vertragsstaaten beigetreten sind, nicht widerspricht,
+sowie mit diesem Betrag zusammenhängende Zinsen, Geldbußen und Kosten der Erhebung und Sicherung.
+
+(3) Ist der Steueranspruch eines Vertragsstaats nach dem Recht dieses Staates vollstreckbar und wird er
+von einer Person geschuldet, die zu diesem Zeitpunkt nach dem Recht dieses Staates die Erhebung nicht
+verhindern kann, wird dieser Steueranspruch auf Ersuchen der zuständigen Behörde dieses Staates für die
+Zwecke der Erhebung von der zuständigen Behörde des anderen Vertragsstaats anerkannt. Der
+Steueranspruch wird vom anderen Staat nach dessen Rechtsvorschriften über die Vollstreckung und
+Erhebung seiner eigenen Steuern erhoben, als handele es sich bei dem Steueranspruch um einen
+Steueranspruch des anderen Staates.
+
+(4) Handelt es sich bei dem Steueranspruch eines Vertragsstaats um einen Anspruch, bei dem dieser Staat
+nach seinem Recht Maßnahmen zur Sicherung der Erhebung einleiten kann, wird dieser Steueranspruch
+auf Ersuchen der zuständigen Behörde dieses Staates zum Zwecke der Einleitung von
+Sicherungsmaßnahmen von der zuständigen Behörde des anderen Vertragsstaats anerkannt. Der andere
+Staat leitet nach seinen Rechtsvorschriften Sicherungsmaßnahmen in Bezug auf diesen Steueranspruch ein,
+als wäre der Steueranspruch ein Steueranspruch dieses anderen Staates, selbst wenn der Steueranspruch
+im Zeitpunkt der Einleitung dieser Maßnahmen im erstgenannten Staat nicht vollstreckbar ist oder von
+einer Person geschuldet wird, die berechtigt ist, die Erhebung zu verhindern.
+
+(5) Ungeachtet der Absätze 3 und 4 unterliegt ein von einem Vertragsstaat für Zwecke der Absätze 3 oder
+4 anerkannter Steueranspruch als solcher in diesem Staat nicht den Verjährungsfristen oder den
+Bestimmungen über vorrangige Behandlung eines Steueranspruchs nach dem Recht dieses Staates. Ferner
+hat ein Steueranspruch, der von einem Vertragsstaat für Zwecke der Absätze 3 oder 4 anerkannt wurde, in
+diesem Staat nicht den Vorrang, den dieser Steueranspruch nach dem Recht des anderen Vertragsstaats
+hat.
+
+(6) Verfahren im Zusammenhang mit dem Bestehen, der Gültigkeit oder der Höhe des Steueranspruchs
+eines Vertragsstaats können nicht bei den Gerichten oder Verwaltungsbehörden des anderen Vertragsstaats
+eingeleitet werden.
+
+
+
+
+49
+  Artikel 23 des Abkommens wird durch Artikel XIV des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335) aufgehoben und
+ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                 Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 30
+
+
+(7) Verliert der betreffende Steueranspruch, nachdem das Ersuchen eines Vertragsstaats nach den Absätzen
+3 oder 4 gestellt wurde und bevor der andere Vertragsstaat den betreffenden Steueranspruch erhoben und
+an den erstgenannten Staat ausgezahlt hat,
+
+               a) im Falle eines Ersuchens nach Absatz 3 seine Eigenschaft als Steueranspruch des
+                  erstgenannten Staates, der nach dem Recht dieses Staates vollstreckbar ist und von einer
+                  Person geschuldet wird, die zu diesem Zeitpunkt nach dem Recht dieses Staates die
+                  Erhebung nicht verhindern kann, oder
+
+               b) im Falle eines Ersuchens nach Absatz 4 seine Eigenschaft als Steueranspruch des
+                  erstgenannten Staates, für den dieser Staat nach seinem Recht Maßnahmen zur Sicherung
+                  der Erhebung einleiten kann,
+
+teilt die zuständige Behörde des erstgenannten Staates dies der zuständigen Behörde des anderen Staates
+unverzüglich mit und nach Wahl des anderen Staates setzt der erstgenannte Staat das Ersuchen entweder
+aus oder nimmt es zurück.
+
+(8) Dieser Artikel ist in keinem Fall so auszulegen, als verpflichte er einen Vertragsstaat,
+
+               a) Verwaltungsmaßnahmen durchzuführen, die von den Gesetzen                                             und     der
+                  Verwaltungspraxis dieses oder des anderen Vertragsstaats abweichen;
+
+               b) Maßnahmen durchzuführen, die der öffentlichen Ordnung widersprächen;
+
+               c) Amtshilfe zu leisten, wenn der andere Vertragsstaat nicht alle angemessenen Maßnahmen
+                  zur Erhebung oder gegebenenfalls Sicherung ausgeschöpft hat, die nach seinen Gesetzen
+                  oder seiner Verwaltungspraxis möglich sind;
+
+               d) Amtshilfe zu leisten, wenn der Verwaltungsaufwand für diesen Staat im Vergleich zum
+                  sich daraus ergebenden Vorteil für den anderen Vertragsstaat unverhältnismäßig hoch ist.
+
+
+
+                                                     Artikel 24
+
+(1) Für die Mitglieder der diplomatischen und konsularischen Vertretungen der beiden Vertragstaaten
+gelten die folgenden besonderen Vorschriften.
+
+Diese Mitglieder werden im Empfangsstaate zu den in Artikel 1 bezeichneten Steuern nur mit den in den
+Artikeln 3 und 7 genannten Einkünften und den in Artikel 19 Absätze 1, 2, 3 und 4 behandelten
+Vermögen herangezogen oder soweit die Steuer im Abzugsweg (an der Quelle) erhoben wird.50 Dies gilt
+auch für Personen, die in den Diensten dieser Vertretungen oder ihrer Mitglieder stehen.
+
+(2) Absatz (1) gilt für die genannten Personen nur, wenn sie die Staatsangehörigkeit des Entsendestaates
+besitzen und außerhalb ihres Amtes oder Dienstes im anderen Staate keinen Beruf, kein Gewerbe und keine
+andere, nicht nur gelegentliche gewinnbringende Tätigkeit ausüben.
+
+
+
+50
+  Artikel 24 Absatz 1 Satz 2 des Abkommens wird durch Artikel XV des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335)
+ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 31
+
+
+(3) Für Wahlkonsuln gelten die Absätze (1) und (2) nicht. Wahlkonsuln, die nur die Staatsangehörigkeit
+des Entsendestaates besitzen, werden mit ihren Dienstbezügen, die sie als Entgelt für die Tätigkeit als
+Konsuln erhalten, im Empfangsstaate nicht zu den Steuern vom Einkommen herangezogen.
+
+(4) Werden auf Grund dieses Artikels die Einkünfte oder das Vermögen im Empfangsstaate nicht besteuert,
+so bleibt ihre Besteuerung dem Entsendestaate vorbehalten.
+
+(5) Dieser Artikel berührt nicht die weitergehenden Befreiungen, die gegebenenfalls nach allgemeinen
+Regeln des Völkerrechts oder besonderen Vereinbarungen den diplomatischen oder konsularischen
+Beamten gewährt werden; soweit auf Grund dieser weitergehenden Befreiungen Einkünfte oder Vermögen
+im Empfangsstaate nicht besteuert werden, bleibt ihre Besteuerung dem Entsendestaate vorbehalten.
+
+
+
+                                                   Artikel 2551
+
+(1) Ist eine Person der Auffassung, dass Maßnahmen eines Vertragsstaats oder beider Vertragsstaaten für
+sie zu einer Besteuerung führen oder führen werden, die diesem Abkommen nicht entspricht, so kann sie
+unbeschadet der nach dem innerstaatlichen Recht dieser Staaten vorgesehenen Rechtsmittel ihren Fall der
+zuständigen Behörde des Vertragsstaats, in dem sie ansässig ist, oder, sofern ihr Fall von Artikel 21
+Absatz 1 erfasst wird, der zuständigen Behörde des Vertragsstaats unterbreiten, dessen Staatsangehöriger
+sie ist. Der Fall muss innerhalb von drei Jahren nach der ersten Mitteilung der Maßnahme unterbreitet
+werden, die zu einer dem Abkommen nicht entsprechenden Besteuerung führt.
+
+(2) Hält die zuständige Behörde die Einwendung für begründet und ist sie selbst nicht in der Lage, eine
+befriedigende Lösung herbeizuführen, so wird sie sich bemühen, den Fall in gegenseitigem Einvernehmen
+mit der zuständigen Behörde des anderen Vertragsstaats so zu regeln, dass eine dem Abkommen nicht
+entsprechende Besteuerung vermieden wird. Die einvernehmliche Regelung ist ungeachtet der Fristen des
+innerstaatlichen Rechts der Vertragsstaaten durchzuführen.
+
+(3) Die zuständigen Behörden der Vertragsstaaten werden sich bemühen, Schwierigkeiten oder Zweifel,
+die bei der Auslegung oder Anwendung des Abkommens entstehen, in gegenseitigem Einvernehmen zu
+beseitigen. Sie können auch gemeinsam darüber beraten, wie eine Doppelbesteuerung in Fällen vermieden
+werden kann, die im Abkommen nicht behandelt sind.
+
+(4) Die zuständigen Behörden der Vertragsstaaten können zur Herbeiführung einer Einigung im Sinne der
+vorstehenden Absätze unmittelbar miteinander verkehren, gegebenenfalls durch eine aus ihnen oder ihren
+Vertretern bestehende gemeinsame Kommission.
+
+(5) Soweit
+
+              a) eine Person einen Fall nach Absatz 1 der zuständigen Behörde eines Vertragsstaats
+                 unterbreitet hat, weil die Maßnahmen eines Vertragsstaats oder beider Vertragsstaaten für
+                 sie zu einer diesem Abkommen nicht entsprechenden Besteuerung führten, und
+
+
+
+
+51
+  Artikel 25 und 25 a des Abkommens werden durch Artikel XVI des Zusatzabkommens vom 31. März 2015 (BGBl. 2015 II S. 1332, 1335)
+aufgehoben und durch einen neuen Artikel 25 ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                                   Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 32
+
+
+               b) die zuständigen Behörden nicht innerhalb von drei Jahren ab Vorlage des Falles bei der
+                  zuständigen Behörde des anderen Vertragsstaats eine Einigung zur Lösung des Falles nach
+                  Absatz 2 erzielen können,
+
+werden ungelöste Streitfragen des Falles auf Antrag der Person einem Schiedsverfahren unterworfen.
+Diese ungelösten Streitfragen werden jedoch nicht einem Schiedsverfahren unterworfen, wenn ein
+(Verwaltungs-)Gericht eines der beiden Staaten bereits über sie entschieden hat. Sofern die
+einvernehmliche Regelung zur Umsetzung der schiedsrichterlichen Entscheidung nicht von einer
+unmittelbar von dem Fall betroffenen Person abgelehnt wird, ist diese Entscheidung für beide
+Vertragsstaaten bindend und ungeachtet der Fristen des innerstaatlichen Rechts dieser Staaten umzusetzen.
+Die zuständigen Behörden der Vertragsstaaten regeln in gegenseitigem Einvernehmen, wie dieser Absatz
+durchzuführen ist.
+
+
+
+                                                      Artikel 25 a
+
+– aufgehoben –52
+
+
+
+                                                     Artikel 25 b53
+
+(1) Werden in einem Vertragsstaat die Steuern von Dividenden, Zinsen, Lizenzgebühren oder sonstigen
+von einer im anderen Vertragsstaat ansässigen Person bezogenen Einkünften im Abzugsweg (an der
+Quelle) erhoben, so wird das Recht des erstgenannten Staates zur Vornahme des Steuerabzugs zu dem
+nach seinem innerstaatlichen Recht vorgesehenen Satz durch dieses Abkommen nicht berührt. Die im
+Abzugsweg (an der Quelle) erhobene Steuer ist jedoch auf Antrag des Steuerpflichtigen zu erstatten, wenn
+und soweit sie durch das Abkommen ermäßigt wird oder entfällt. Der Empfänger kann jedoch die
+unmittelbare Anwendung des Abkommens im Zeitpunkt der Zahlung beantragen, wenn das innerstaatliche
+Recht des betreffenden Staates dies zuläßt.
+
+(2) Die Anträge auf Erstattung müssen vor dem Ende des vierten auf das Kalenderjahr der Zahlung der
+Dividenden, Zinsen, Lizenzgebühren oder anderen Einkünfte folgenden Jahres eingereicht werden.
+
+(3) Die Steuerpflichtigen müssen jedem nach Absatz 1 eingereichten Antrag eine Wohnsitzbestätigung von
+den Steuerbehörden des Vertragsstaats beifügen, in dem sie ansässig sind.
+
+(4) Eine Einrichtung für die kollektive Anlage in Wertpapieren (O.P.C.V.M.), die in einem Vertragsstaat
+liegt, in dem sie keiner der in Artikel 1 Absatz 3 Nummer 1 Buchstabe c oder Absatz 3 Nummer 2
+Buchstabe b genannten Steuern unterliegt, und die aus Quellen im anderen Vertragsstaat stammende
+Dividenden oder Zinsen bezieht, kann die Steuerermäßigungen oder ‑befreiungen oder anderen im
+Abkommen vorgesehenen Vergünstigungen für den Teil dieser Einkünfte global beantragen, der den
+Rechten entspricht, die im erstgenannten Staat ansässige Personen an der Einrichtung (O.P.C.V.M.) halten.
+
+
+52
+  Nach Artikel 25 des Abkommens wird durch Artikel 7 des Zusatzabkommens vom 28. September 1989 (BGBl. 1990 II S. 770, 772) ein Artikel
+25 a eingefügt. Die Änderung ist ab dem 1. Januar 1990 anwendbar.
+Siehe Fußnote 51.
+53
+  Nach Artikel 25 a des Abkommens wird durch Artikel 8 des Zusatzabkommens vom 28. September 1989 (BGBl. 1990 II S. 770, 772) ein Artikel
+25 b eingefügt. Die Änderung ist ab dem 1. Januar 1990 anwendbar.
+                                  Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 33
+
+
+(5) Die zuständigen Behörden können in gegenseitigem Einvernehmen die Durchführung dieses Artikels
+regeln und gegebenenfalls andere Verfahren zur Durchführung der im Abkommen vorgesehenen
+Steuermäßigungen oder ‑befreiungen festlegen.
+
+
+
+                                                       Artikel 26
+
+(1) Die zuständigen Behörden der Vertragstaaten werden die Verwaltungsmaßnahmen treffen, die für die
+Anwendung dieses Abkommens notwendig sind.
+
+(2) Diese Behörden können durch Vereinbarung die Maßnahmen der Amts- und Rechtshilfe, die in den
+Artikeln 22 und 23 vorgesehen sind, ausdehnen auf die Veranlagung und Erhebung von
+
+     1. Steuern, die in Artikel 1 dieses Abkommens bezeichnet sind und sich auf einen vor dem
+        Inkrafttreten des Abkommens liegenden Zeitraum beziehen;
+
+     2. Steuern und Abgaben, die nicht unter Artikel 1 bezeichnet sind.
+
+(3) Die zuständigen Behörden werden sich darüber verständigen, daß die in den Artikeln 8, 9 und 20 dieses
+Abkommens vorgesehenen Maßnahmen nicht Personen zugute kommen, die nicht in der Bundesrepublik
+ansässig sind.54
+
+
+
+                                                       Artikel 27
+
+(1) Die Anwendung der Vorschriften dieses Abkommens kann ganz oder teilweise mit den gegebenenfalls
+als notwendig erachteten Änderungen auf jedes Gebiet ausgedehnt werden, für dessen internationale
+Beziehungen Frankreich verantwortlich ist, und in dem Steuern erhoben werden, die den Steuern im Sinne
+dieses Abkommens entsprechen.
+
+(2) Die in Absatz (1) vorgesehene Ausdehnung des Geltungsbereichs wird von den Vertragstaaten durch
+Noten festgelegt, die auf diplomatischem Wege ausgetauscht werden; in diesen Noten werden das Gebiet,
+auf das der Geltungsbereich ausgedehnt werden soll, und die Voraussetzungen für die Ausdehnung
+niedergelegt. Die Vorschriften, die auf Grund des vorstehend erwähnten Notenwechsels ganz oder
+teilweise oder mit den gegebenenfalls notwendigen Änderungen in ihrem Geltungsbereich ausgedehnt
+werden, werden in dem bezeichneten Gebiete mit Wirkung von dem in den Noten bestimmten Datum
+angewandt.
+
+(3) Nach Ablauf eines Jahres nach dem Zeitpunkt, in dem die Ausdehnung des Geltungsbereichs
+entsprechend den Absätzen (1) und (2) wirksam geworden ist, kann jeder der Vertragstaaten jederzeit durch
+schriftliche Kündigung, die dem anderen Staat auf diplomatischem Wege zugeleitet wird, die Anwendung
+der Vorschriften in jedem der Gebiete aufheben, für das eine Ausdehnung des Geltungsbereichs
+vorgesehen ist; in diesem Falle sind die Vorschriften in dem betreffenden Gebiete von dem auf die
+Kündigung folgenden 1. Januar an nicht mehr anzuwenden, ohne daß dadurch die Anwendung dieser
+
+
+
+54
+  Dem Artikel 26 des Abkommens wird durch Artikel 4 des Revisionsprotokolls vom 9. Juni 1969 (BGBl. 1970 II S. 717, 719) der Absatz (3)
+hinzugefügt. Die Änderung ist ab dem 8. Oktober 1970 anwendbar.
+                                      Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 34
+
+
+Vorschriften in Frankreich und in jedem anderen Gebiete berührt wird, auf das der Geltungsbereich
+ausgedehnt wurde und das im Kündigungsschreiben nicht erwähnt ist.
+
+(4) Sobald dieses Abkommen zwischen der Bundesrepublik und Frankreich nicht mehr gilt, gilt es auch
+nicht mehr gegenüber den Gebieten, auf die es nach diesem Artikel ausgedehnt worden ist, es sei denn,
+daß die Vertragstaaten ausdrücklich etwas anderes bestimmen.
+
+(5) Bei der Anwendung dieses Abkommens auf ein Gebiet, auf das es ausgedehnt worden ist, gelten die
+Bezugnahmen des Abkommens auf Frankreich auch als Bezugnahmen auf das betreffende Gebiet.
+
+     Der folgende Artikel 7 Absatz 1 des BEPS-MLI ist anzuwenden und geht den Bestimmungen dieses
+     Abkommens vor:55
+
+           ARTIKEL 7 BEPS-MLI – VERHINDERUNG VON ABKOMMENSMISSBRAUCH
+     Ungeachtet dieses Abkommens wird eine Vergünstigung nach diesem Abkommen nicht für bestimmte
+     Einkünfte oder Vermögenswerte gewährt, wenn unter Berücksichtigung aller maßgeblichen Tatsachen und
+     Umstände die Feststellung gerechtfertigt ist, dass der Erhalt dieser Vergünstigung einer der Hauptzwecke
+     einer Gestaltung oder Transaktion war, die unmittelbar oder mittelbar zu dieser Vergünstigung geführt hat,
+     es sei denn, es wird nachgewiesen, dass die Gewährung dieser Vergünstigung unter diesen Umständen mit
+     dem Ziel und Zweck der einschlägigen Bestimmungen dieses Abkommens im Einklang steht.
+
+
+
+
+                                                       Artikel 28
+
+(1) Dieses Abkommen gilt auch für das Land Berlin, sofern nicht die Regierung der Bundesrepublik
+Deutschland gegenüber der Regierung der Französischen Republik innerhalb von drei Monaten nach
+Inkrafttreten des Abkommens eine gegenteilige Erklärung abgibt.
+
+(2) Bei der Anwendung des Abkommens auf das Land Berlin gelten die Bezugnahmen auf die
+Bundesrepublik auch als Bezugnahmen auf das Land Berlin.
+
+
+
+                                                       Artikel 29
+
+(1) Dieses Abkommen bedarf der Ratifizierung; die Ratifikationsurkunden sollen so bald wie möglich in
+Bonn ausgetauscht werden.
+
+(2) Dieses Abkommen tritt einen Monat nach Austausch der Ratifikationsurkunden in Kraft und ist
+erstmals anzuwenden auf
+
+                  1. die im Abzugsweg (an der Quelle) erhobenen Steuern von Dividenden, Zinsen und
+                     sonstigen Erträgen, die in den Artikeln 9, 10 und 11 bezeichnet sind und die seit dem
+                     1. Januar 1958 gezahlt werden;
+
+
+
+55
+     Wirksam ab dem 1. Januar 2025.
+                                  Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 35
+
+
+               2. die anderen französischen Steuern, die für das Kalenderjahr 1957 festgesetzt werden;
+
+               3. die anderen deutschen Steuern, die für das Kalenderjahr 1957 erhoben werden.
+
+
+
+                                                      Artikel 30
+
+(1) Dieses Abkommen bleibt auf unbestimmte Zeit in Kraft.
+
+(2) Vom 1. Januar 1962 an kann jeder der Vertragstaaten während der ersten vier Monate eines
+Kalenderjahres das Abkommen gegenüber dem anderen Vertragstaat auf diplomatischem Wege schriftlich
+kündigen. In diesem Falle verliert das Abkommen seine Gültigkeit mit Wirkung vom 1. Januar des auf die
+Kündigung folgenden Jahres. Die Vorschriften des Abkommens sind dann letztmals anzuwenden auf
+
+          a) die im Abzugsweg (an der Quelle) erhobenen Steuern von Dividenden, Zinsen und sonstigen
+          Erträgen, die in den Artikeln 9, 10 und 11 bezeichnet sind und die vor Ablauf des Kalenderjahres
+          gezahlt werden, das dem Kalenderjahr vorangeht, von dem an das Abkommen seine Gültigkeit
+          verliert;
+
+          b) die anderen französischen Steuern, die für das Kalenderjahr festgesetzt werden, das dem
+          Kalenderjahr vorangeht, von dem an das Abkommen seine Gültigkeit verliert;
+
+          c) die anderen deutschen Steuern, die für das Kalenderjahr erhoben werden, das dem Kalenderjahr
+          vorangeht, von dem an das Abkommen seine Gültigkeit verliert.
+
+
+
+                                                    Artikel 30a56
+
+(1) Die zuständigen Behörden eines Vertragstaates sind verpflichtet, den zuständigen Behörden des
+anderen Staates die Änderungen mitzuteilen, die in ihren Rechtsvorschriften über die Besteuerung der
+Gesellschaften und der Ausschüttungen eingetreten sind. Diese Mitteilung soll nach Verkündung dieser
+Änderungen gegeben werden.
+
+(2) Die Vertragstaaten werden sich miteinander ins Benehmen setzen, um bei den Bestimmungen dieses
+Abkommens die Änderungen herbeizuführen, die infolge der im vorstehenden Absatz (1) angeführten
+Änderungen notwendig werden.
+
+
+
+                                                      Artikel 31
+
+Das deutsch-französische Abkommen vom 9. November 1934 zur Vermeidung der Doppelbesteuerungen
+und über gegenseitige Amtshilfe auf dem Gebiete der direkten Steuern wird aufgehoben. Die von dem
+einen oder anderen Vertragstaat auf Grund der Nummer 15 des Schlußprotokolls des genannten
+
+
+
+56
+  Artikel 30a wird durch Artikel 5 des Revisionsprotokolls vom 9. Juni 1969 (BGBl. 1970 II S. 717, 719) in das Abkommen eingefügt. Die
+Änderung ist ab dem 8. Oktober 1970 anwendbar.
+                         Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 36
+
+
+Abkommens gestundeten Steuern gelten als erlassen. Die Vorschriften des genannten Abkommens, nach
+denen diese Stundungen gewährt werden, sind letztmals anzuwenden auf
+
+      1. die Steuern, die von den in Artikel 9 des genannten Abkommens bezeichneten Einkünften aus
+         beweglichem Kapitalvermögen erhoben werden, die vor dem 1. Januar 1958 gezahlt worden
+         sind;
+
+      2. die anderen französischen Steuern, die für das Kalenderjahr 1956 festgesetzt werden;
+
+      3. die anderen deutschen Steuern, die für das Kalenderjahr 1956 erhoben werden.
+
+
+
+ZU URKUND DESSEN haben die Bevollmächtigten der beiden Staaten dieses Abkommen unterschrieben
+und mit ihren Siegeln versehen.
+
+GESCHEHEN zu Paris am 21. Juli 1959 in zwei Urschriften, jede in deutscher und französischer Sprache,
+wobei jeder Wortlaut gleichermaßen verbindlich ist.
+
+                                              Für die
+                                     Bundesrepublik Deutschland:
+                                             Dr. Jansen
+
+                                               Für die
+                                        Französische Republik:
+                                             Louis Joxe
+                                Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 37
+
+
+                                            Protokoll
+                                        zum Abkommen
+                            zwischen der Bundesrepublik Deutschland
+                                 und der Französischen Republik
+                            zur Vermeidung der Doppelbesteuerungen
+                           und über gegenseitige Amts- und Rechtshilfe
+                      auf dem Gebiete der Steuern vom Einkommen und vom
+                    Vermögen sowie der Gewerbesteuern und der Grundsteuern 57
+
+
+
+                                                       Abschnitt I58
+
+I. Die Regierung der Bundesrepublik Deutschland und die Regierung der Französischen Republik
+haben die nachstehenden Bestimmungen vereinbart, die Bestandteil des Abkommens sind.
+
+     1. Hinsichtlich der Artikel 9, 10 und 15 gilt, dass ein Pensionsfonds oder eine andere
+        Einrichtung, die in einem der Vertragsstaaten errichtet und ausschließlich zur Verwaltung,
+        Finanzierung und Bereitstellung von an natürliche Personen gezahlten Ruhegeldern oder
+        anderen Bezügen und Vorteilen aus einer früheren nichtselbständigen Arbeit unterhalten
+        wird und in diesem Vertragsstaat nicht der in Artikel 1 Absatz 3 Nummer 1 Buchstabe c
+        oder Nummer 2 Buchstabe b genannten Steuer unterliegt, ungeachtet anderer
+        Bestimmungen des Abkommens Anspruch auf die Vergünstigungen nach Artikel 9, 10
+        und 15 hat, sofern am Ende des vorangegangenen Steuerjahres mehr als 50 vom Hundert
+        ihrer Begünstigten, Mitglieder oder Teilnehmer in einem der beiden Vertragsstaaten
+        ansässige natürliche Personen sind.
+
+     2. Hinsichtlich des Artikels 13 b Absätze 1 und 2 gilt als Model eine Person, deren haupt-
+        oder nebenberufliche Tätigkeit darin besteht, der Öffentlichkeit Produkte (zum Beispiel
+        Kleidung, Schmuck, Kosmetika) zu präsentieren, und zwar unabhängig von der Art der
+        Präsentation (zum Beispiel Modenschauen oder Fotoaufnahmen).
+
+     3. Hinsichtlich des Artikels 13 c gilt, dass für die Berechnung des Differenzbetrages nach
+        Artikel 13 c Absätze 1 und 2 als Bezugsgröße eine Zahlung Frankreichs in Höhe von 16
+        Millionen Euro für das Referenzjahr 2013 zugrunde gelegt wird. Der Differenzbetrag
+        erhöht sich ab 2014 jährlich um einen Satz von 9,4 % des für das Vorjahr berechneten
+        Betrages bis zur Höhe von 30 Millionen Euro im Jahr 2020.
+
+         Die zuständigen Behörden der Vertragsstaaten kommen rechtzeitig vor dem Jahr 2021
+         zusammen und treffen sich danach regelmäßig im Abstand von fünf Jahren, um die
+         Entwicklung der Entschädigungen für den folgenden Fünfjahreszeitraum nach Artikel 13
+         c Absätze 1 und 2 festzulegen.
+
+57
+  Der Titel des Protokolls vom 21. Juli 1959 zum Abkommen wird durch Artikel XVII Nummer 1 des Zusatzabkommens vom 31. März 2015
+(BGBl. 2015 II S. 1332, 1335) aufgehoben und ersetzt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+58
+  Nach dem Titel des Protokolls vom 21. Juli 1959 zum Abkommen wird durch Artikel XVII Nummer 2 des Zusatzabkommens vom 31. März
+2015 (BGBl. 2015 II S. 1332, 1335) ein neuer Abschnitt I eingefügt. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+                    Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 38
+
+
+   Bei dieser Festlegung sind folgende Faktoren zu berücksichtigen:
+
+a) die Anzahl der Begünstigten, die in einem der Vertragsstaaten ansässig sind und Bezüge
+   aus der gesetzlichen Sozialversicherung des anderen Vertragsstaats erhalten;
+
+b) die durchschnittliche Höhe der Bezüge aus der gesetzlichen Sozialversicherung eines der
+   Vertragsstaaten, die an Begünstigte des anderen Vertragsstaats gezahlt werden;
+
+c) der steuerpflichtige Teil der Bezüge aus der gesetzlichen Sozialversicherung eines jeden
+   Vertragsstaats;
+
+d) der durchschnittliche Steuersatz, der auf Bezüge erhoben würde, die in einem
+   Vertragsstaat ansässige Begünstigte aus der gesetzlichen Sozialversicherung des anderen
+   Vertragsstaats erhalten, wenn die Begünstigten dieser Bezüge in diesem anderen
+   Vertragsstaat steuerpflichtig wären;
+
+e) der Anteil der in Frankreich ansässigen Begünstigten, die Bezüge aus der gesetzlichen
+   Sozialversicherung der Bundesrepublik beziehen und für die unbeschränkte Steuerpflicht
+   optiert haben, gemäß den endgültigen Zahlen des Jahres, das dem Zeitpunkt der
+   erstmaligen Anwendung von Artikel VI des Zusatzabkommens vom 31. März 2015
+   vorausgeht, soweit sich die zuständigen Behörden der Vertragsstaaten nicht später auf eine
+   andere Methode der Ermittlung des rechnerischen Anteils der Begünstigten für die
+   Veranlagungszeiträume nach dem Jahr 2020 einigen;
+
+f) Steuerrechtsänderungen in den Vertragsstaaten betreffend die Besteuerung von Bezügen
+   aus der gesetzlichen Sozialversicherung;
+
+g) sonstige Faktoren, auf die sich die zuständigen Behörden der Vertragsstaaten
+   verständigen.
+
+   Gelingt es den zuständigen Behörden der Vertragsstaaten nicht, die Entwicklung der
+   Entschädigungen gemäß Artikel 13 c Absätze 1 und 2 sowie gemäß den vorstehenden
+   Bestimmungen dieses Absatzes bis zum 30. Juni des folgenden Jahres festzulegen, findet
+   ab dem Jahr 2021 eine vorläufige jährliche Steigerungsrate in Höhe des Durchschnitts der
+   von Eurostat erstellten harmonisierten jährlichen Verbraucherpreisindizes der
+   Bundesrepublik und Frankreichs Anwendung. Wird eine Einigung in Bezug auf einen
+   Fünfjahreszeitraum, wie in den vorstehenden Bestimmungen beschrieben, erzielt, so ist
+   sie ab dem ersten Jahr dieses Fünfjahreszeitraums anwendbar. In diesem Fall wird die
+   Differenz zwischen den von den zuständigen Behörden der Vertragsstaaten festgesetzten
+   Entschädigungen und dem vorläufigen Betrag für die Jahre des Zeitraums, in dem die
+   Entschädigungen nicht bis zum 30. Juni des Folgejahres festgesetzt wurden, spätestens am
+   30. Juni des Jahres gezahlt, das auf das Jahr der Festsetzung dieses Betrags folgt.
+                                Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 39
+
+
+                                                     Abschnitt II59
+
+Zur Vermeidung der Doppelbesteuerungen auf dem Gebiete der einmaligen Abgaben vom
+Vermögen (ausschließlich der Erbschaftsteuer), die nach dem 31. Dezember 1947 und vor dem
+1. Januar 1960 in einem der Vertragstaaten eingeführt und entstanden sind oder eingeführt werden
+und entstehen, haben die Bundesrepublik Deutschland und die Französische Republik in
+Ergänzung des Abkommens zwischen der Bundesrepublik Deutschland und der Französischen
+Republik zur Vermeidung der Doppelbesteuerungen und über gegenseitige Amts- und Rechtshilfe
+auf dem Gebiete der Steuern vom Einkommen und vom Vermögen sowie der Gewerbesteuern
+und der Grundsteuern die nachstehende Vereinbarung getroffen.
+
+        1. Artikel 19 des Abkommens findet auf die vorstehend angeführten einmaligen Abgaben
+           vom Vermögen nach Maßgabe der Nummern 2 und 3 sinngemäß Anwendung.
+
+        2. Für eine in der Bundesrepublik Deutschland ansässige Person gilt Artikel 19 Nr. 1 des
+           Abkommens nur dann, wenn die Person in dem für die Entstehung der Abgabeschuld
+           maßgebenden Zeitpunkt die französische, nicht aber gleichzeitig die deutsche
+           Staatsangehörigkeit besessen hat oder besitzt.
+
+        3. Für eine in der Französischen Republik ansässige Person gilt Artikel 19 Nr. 1 des
+           Abkommens nur dann, wenn die Person in dem für die Entstehung der Abgabeschuld
+           maßgebenden Zeitpunkt die deutsche, nicht aber gleichzeitigt die französische
+           Staatsangehörigkeit besessen hat oder besitzt.
+
+        4. Die auf Grund dieses Zusatzprotokolls etwa zu gewährenden Abgabeermäßigungen
+           müssen innerhalb einer Ausschlussfrist von drei Jahren nach Inkrafttreten des
+           Abkommens beantragt werden.
+
+        5. Die in dem Abkommen vorgesehene Amts- und Rechtshilfe wird auch bei den
+           vorstehend bezeichneten einmaligen Abgaben vom Vermögen geleistet.
+
+                          Dieses Zusatzprotokoll ist Bestandteil des Abkommens.
+
+
+
+ZU URKUND DESSEN haben die Bevollmächtigten der beiden Staaten das Zusatzprotokoll
+unterschrieben und mit ihren Siegeln versehen.
+
+GESCHEHEN zu Paris am 21. Juli 1959 in zwei Urschriften, jede in deutscher und französischer
+Sprache, wobei jeder Wortlaut gleichermaßen verbindlich.
+
+                                                    Für die
+                                           Bundesrepublik Deutschland:
+                                                   Dr. Jansen
+
+
+59
+ Der Wortlaut des Zusatzprotokolls vom 21. Juli 1959 zum Abkommen wird durch Artikel XVII Nummer 3 des Zusatzabkommens vom 31.
+März 2015 (BGBl. 2015 II S. 1332, 1335) zu Abschnitt II. Die Änderung ist ab dem 1. Januar 2016 anwendbar.
+Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 40
+
+
+                     Für die
+              Französische Republik:
+                    Louis Joxe
+                          Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 41
+
+
+                                         Notenwechsel
+
+
+                                                     1.
+
+
+
+                                                                                       Paris, den 21. Juli 1959
+
+Herr Geschäftsträger,
+
+Anläßlich der Unterzeichnung des zwischen unseren beiden Staaten vereinbarten Abkommens zur
+Vermeidung der Doppelbesteuerungen und über gegenseitige Amt- und Rechtshilfe auf dem Gebiete der
+Steuern vom Einkommen und vom Vermögen sowie der Gewerbesteuern und der Grundsteuern beehre ich
+mich, Ihnen unter Bezugnahme auf Artikel 2 Abs. 1 Nr. 7 Buchstabe d dieses Abkommens mitzuteilen,
+daß die Hohen Vertragsschließenden Parteien übereingekommen sind, diese Vorschrift wie folgt
+auszulegen.
+
+Ein Versicherungsunternehmen eines der Vertragstaaten, das einen durch die Behörden des anderen Staates
+zugelassenen Vertreter unterhält, hat dann keine Betriebsstätte im letztgenannten Staate, wenn dieser
+Vertreter sich auf eine Verwaltungstätigkeit beschränkt oder unabhängig von dieser Verwaltungstätigkeit
+lediglich als Kommissionär, Makler oder anderer unabhängiger Vertreter im Rahmen der in Artikel 2
+Abs. 1 Nr. 7 Buchstabe e genannten Voraussetzungen handelt.
+
+Ich wäre sehr verbunden, wenn Sie mir Ihre Zustimmung zu dieser Auslegung mitteilen würden.
+
+Genehmigen Sie, Herr Geschäftsführer, die Versicherung meiner ausgezeichneten Hochachtung.
+
+                                                                                                    Louis Joxe
+
+
+
+Herrn Gesandten
+Dr. Gerhard Hosef Jansen
+Geschäftsträger der Bundesrepublik Deutschland
+
+Paris
+                          Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 42
+
+
+Botschaft der Bundesrepublik
+Deutschland
+
+                                                                                       Paris, den 21. Juli 1959
+
+Herr Botschafter,
+
+Mit Schreiben vom heutigen Tage haben Eure Exzellenz mir folgendes mitgeteilt:
+
+„Anläßlich der Unterzeichnung des zwischen unseren beiden Staaten vereinbarten Abkommens zur
+Vermeidung der Doppelbesteuerungen und über gegenseitige Amt- und Rechtshilfe auf dem Gebiete der
+Steuern vom Einkommen und vom Vermögen sowie der Gewerbesteuern und der Grundsteuern beehre ich
+mich, Ihnen unter Bezugnahme auf Artikel 2 Abs. 1 Nr. 7 Buchstabe d dieses Abkommens mitzuteilen,
+daß die Hohen Vertragsschließenden Parteien übereingekommen sind, diese Vorschrift wie folgt
+auszulegen.
+
+Ein Versicherungsunternehmen eines der Vertragstaaten, das einen durch die Behörden des anderen Staates
+zugelassenen Vertreter unterhält, hat dann keine Betriebsstätte im letztgenannten Staate, wenn dieser
+Vertreter sich auf eine Verwaltungstätigkeit beschränkt oder unabhängig von dieser Verwaltungstätigkeit
+lediglich als Kommissionär, Makler oder anderer unabhängiger Vertreter im Rahmen der in Artikel 2
+Abs. 1 Nr. 7 Buchstabe e genannten Voraussetzungen handelt.
+
+Ich wäre sehr verbunden, wenn Sie mir Ihre Zustimmung zu dieser Auslegung mitteilen würden.“
+
+Ich beehre mich, Eurer Exzellenz mitzuteilen, daß ich der vorstehenden Mitteilung zustimme.
+
+Genehmigen Sie, Herr Botschafter, die Versicherung meiner ausgezeichneten Hochachtung.
+
+                                                Jansen
+                                          Geschäftsträger a. i.
+                                    der Bundesrepublik Deutschland
+
+Seine Exzellenz
+Herrn Louis Joxe,
+Ambassadeur de France
+Generalsekretär des Ministeriums
+für Auswärtige Angelegenheiten
+                          Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 43
+
+
+                                                     2.
+
+
+
+                                                                                       Paris, den 21. Juli 1959
+
+Herr Geschäftsträger,
+
+Anläßlich der Unterzeichnung des Abkommens zwischen der Französischen Republik und der
+Bundesrepublik Deutschland zur Vermeidung der Doppelbesteuerungen und über gegenseitige Amt- und
+Rechtshilfe auf dem Gebiete der Steuern vom Einkommen und vom Vermögen sowie der Gewerbesteuern
+und der Grundsteuern halte ich es für erforderlich, nachstehendes klarzustellen:
+
+Artikel 27 Abs. 1 des Abkommens vom heutigen Tage sieht vor, daß die Anwendung seiner Vorschriften
+unter den im genannten Artikel niedergelegten Bedingungen auf jedes Gebiet ausgedehnt werden kann,
+„für dessen internationale Beziehungen Frankreich verantwortlich ist“. Um jede Schwierigkeit bei der
+Auslegung dieser Vorschrift zu vermeiden, ist es zweckmäßig, klarzustellen, daß die Hohen
+Vertragschließenden Parteien mit dieser Formulierung nicht beabsichtigen, die Möglichkeit der
+Ausdehnung des Geltungsbereichs des Abkommens auf die in Artikel 2 nicht genannten französischen
+Départements, auf die überseeischen Gebiete der Französischen Republik und auf die Mitgliedstaaten der
+Communauté auszuschließen.
+
+Ich wäre sehr verbunden, wenn Sie mir Ihre Zustimmung hierzu bestätigen würden.
+
+Genehmigen Sie, Herr Geschäftsführer, die Versicherung meiner ausgezeichneten Hochachtung.
+
+                                                                                                    Louis Joxe
+
+
+
+Herrn Gesandten
+Dr. Gerhard Hosef Jansen
+Geschäftsträger der Bundesrepublik Deutschland
+
+Paris
+                          Synthetisierter Text des BEPS-MLI und des Abkommens mit der Französischen Republik │ 44
+
+
+Botschaft der Bundesrepublik
+Deutschland
+Paris
+
+                                                                                       Paris, den 21. Juli 1959
+
+Herr Botschafter,
+
+Am heutigen Tage haben Sie nachstehendes Schreiben an mich gerichtet:
+
+„Anläßlich der Unterzeichnung des Abkommens zwischen der Französischen Republik und der
+Bundesrepublik Deutschland zur Vermeidung der Doppelbesteuerungen und über gegenseitige Amt- und
+Rechtshilfe auf dem Gebiete der Steuern vom Einkommen und vom Vermögen sowie der Gewerbesteuern
+und der Grundsteuern halte ich es für erforderlich, nachstehendes zu erklären:
+
+Artikel 27 Abs. 1 des Abkommens vom heutigen Tage sieht vor, daß die Anwendung seiner Vorschriften
+unter den im genannten Artikel niedergelegten Bedingungen auf jedes Gebiet ausgedehnt werden kann,
+für dessen internationale Beziehungen Frankreich verantwortlich ist‘. Um jede Schwierigkeit bei der
+Auslegung dieser Vorschrift zu vermeiden, ist es zweckmäßig, klarzustellen, daß die Hohen
+Vertragschließenden Parteien mit dieser Formulierung nicht beabsichtigen, die Möglichkeit der
+Ausdehnung des Geltungsbereichs des Abkommens auf die in Artikel 2 nicht genannten französischen
+Départements, auf die überseeischen Gebiete der Französischen Republik und auf die Mitgliedstaaten der
+Communauté auszuschließen.
+
+Ich wäre sehr verbunden, wenn Sie mir Ihre Zustimmung hierzu bestätigen würden.“
+
+Ich beehre mich, Ihnen mitzuteilen, daß ich dem Vorstehenden zustimme.
+
+Genehmigen Sie, Herr Botschafter, die Versicherungen meiner ausgezeichneten Hochachtung.
+
+                                                                                                         Jansen
+
+Herrn Louis Joxe,
+Ambassadeur de France
+Paris
+

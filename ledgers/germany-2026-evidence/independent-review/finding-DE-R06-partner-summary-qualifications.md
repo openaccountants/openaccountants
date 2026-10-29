@@ -1,0 +1,13 @@
+# DE-R06: two omitted statutory qualifications in partnership summaries
+
+This is a narrow source/claim mismatch. It does not require implementing the full elective retained-profits regime or every partnership exit. Those detailed methods remain expressly referred.
+
+**CurrentLF80, retained-profit summary.** The formula says profit less the positive balance of withdrawals/contributions plus trade tax. Own fully read `RETAIN` quotation, EStG34a(2) sentences2–3, excludes withdrawals for the tax under34a(1) and its related solidarity surcharge and gives these withdrawals priority. The unqualified positive formula can understate the amount eligible for relief. Actual source: https://www.gesetze-im-internet.de/estg/__34a.html, reader `U04496684f283eed9.reader.txt` SHA13a087705e5b93c1d702f3c184c0e8f66e75589b8e588440a318373f42548724, literalLF7–16, full selected quotation actually read. No new research needed.
+
+**CurrentLF78, limited-partner withdrawals.** The summary says withdrawals creating/increasing a negative capital account are added as profit up to the previously usable losses. Own fully read `LIMITEDLOSS` quotation, EStG15a(3) sentence1, excludes the amount to which qualifying outside liability under15a(1)sentence2 exists or arises because of those withdrawals. Actual source: https://www.gesetze-im-internet.de/estg/__15a.html, reader `Uaa4bd03133099579.reader.txt` SHA3f70feb9fea99f4b04322e1e8374966edb5ebd8200f3a464c2f838b56ea7f69b, literalLF7–11, actually read in full. No universal no-liability assumption appears in the summary.
+
+**Option A, recommended:** add the exact tax/Soli-withdrawal exclusion/priority to the34a summary, keeping its detailed-calculation referral; add the actual qualifying-outside-liability exception to15a's withdrawal add-back summary. Preserve the existing two cases, which do not invoke these exceptions. An exact hypothetical20,000 withdrawal properly within the34a tax/Soli exclusion must not mechanically lower eligible retained profit by20,000. A15a withdrawal with no qualifying additional liability differs from the same withdrawal covered by qualifying liability, still subject to the actual statute's capital/loss caps and evidence.
+
+**Option B:** remove the incomplete arithmetic definitions and narrow them to explicit qualified summaries with direct actual statutory references. Do not present the stripped formula as a complete method merely because the following sentence refers the more detailed regime.
+
+These are straightforward omitted conditions in actually cited law, not unbounded new specialist computations. No reviewer Guide/Git edits.

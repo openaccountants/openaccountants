@@ -1,0 +1,128 @@
+{
+  "de-income-tax": {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-income-tax.md",
+    "before_sha256": "2f4e335bbdaa39f04d46874ae1d114460d8f8b5da55238ef2555071b9c7d47dd",
+    "after_sha256": "afcb21f5552d8db8463ed4d9c7ce8782227dc3c6fd573bb77bc673af4cd596c6",
+    "bytes": 27906,
+    "operations": 5,
+    "full_inverse": true,
+    "original_executable_blocks": 2,
+    "original_executable_blocks_exact": true,
+    "original_full_worked_example_sections_sha256": [
+      "e102b5731c8b2c62825a6448cf6faa79ee9ba5a0ec966237e3a5708240cda262"
+    ],
+    "original_full_worked_examples_exact": true,
+    "protected_frontmatter_exact_except_content_version_and_date": true,
+    "original_URL_occurrences_preserved_in_order": true,
+    "attribution_CTA_exact": true,
+    "native_line_map": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/support/de-income-tax.line-map.json"
+  },
+  "de-self-employed-income-tax": {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-self-employed-income-tax.md",
+    "before_sha256": "7f38fa2dce9edf71f200125f8595a885cce73bd96efc52485ae9cba26436ca47",
+    "after_sha256": "2280d3e51b479079e099ff054b5d9dc83c8d390fb3b63e86a4db5ea124a74ebe",
+    "bytes": 28780,
+    "operations": 5,
+    "full_inverse": true,
+    "original_executable_blocks": 2,
+    "original_executable_blocks_exact": true,
+    "original_full_worked_example_sections_sha256": [
+      "e102b5731c8b2c62825a6448cf6faa79ee9ba5a0ec966237e3a5708240cda262"
+    ],
+    "original_full_worked_examples_exact": true,
+    "protected_frontmatter_exact_except_content_version_and_date": true,
+    "original_URL_occurrences_preserved_in_order": true,
+    "attribution_CTA_exact": true,
+    "native_line_map": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/support/de-self-employed-income-tax.line-map.json"
+  },
+  "de-einkommensteuer-freelancer": {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-einkommensteuer-freelancer.md",
+    "before_sha256": "24b5037c53e61ddfe3fbabce6ec11fbd53cde225ff07c70abaa36587376f9e20",
+    "after_sha256": "fa101a2a0e450dcd0481d440b5aa5d647c8dab2bf3d9c95dd809dc5989507aa2",
+    "bytes": 40291,
+    "operations": 6,
+    "full_inverse": true,
+    "original_executable_blocks": 3,
+    "original_executable_blocks_exact": true,
+    "original_full_worked_example_sections_sha256": [
+      "d72b07eb1d8a005e91240e51b8f64de75d4bd32d3e86dd4a395cea432ff270fb"
+    ],
+    "original_full_worked_examples_exact": true,
+    "protected_frontmatter_exact_except_content_version_and_date": true,
+    "original_URL_occurrences_preserved_in_order": true,
+    "attribution_CTA_exact": true,
+    "native_line_map": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/support/de-einkommensteuer-freelancer.line-map.json"
+  },
+  "de-employee-income-tax": {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-employee-income-tax.md",
+    "before_sha256": "6cbb6da4bc3bf6f54b987da6e415a7ef8f797aae3c02af05dbb05c7c8690c3ee",
+    "after_sha256": "cd57ecbaf2ea8cd8153e7254e51c2a547d195e618f1cab178f8365909001b35b",
+    "bytes": 28763,
+    "operations": 4,
+    "full_inverse": true,
+    "original_executable_blocks": 2,
+    "original_executable_blocks_exact": true,
+    "original_full_worked_example_sections_sha256": [
+      "234e74fc9e373ea18032cc04c2da5bbab39892cbc8bff44db0155586a524c636"
+    ],
+    "original_full_worked_examples_exact": true,
+    "protected_frontmatter_exact_except_content_version_and_date": true,
+    "original_URL_occurrences_preserved_in_order": true,
+    "attribution_CTA_exact": true,
+    "native_line_map": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/support/de-employee-income-tax.line-map.json"
+  },
+  "de-partners-and-part-year": {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-partners-and-part-year.md",
+    "before_sha256": "4461747b0cfdabd2666425c03c0660b57ca431a6d193b8253a48b62a97b28eb0",
+    "after_sha256": "0839172b17872bebeed72749eb57e3353d83c4a6132dbb8e02f04ec0ceefb245",
+    "bytes": 33996,
+    "operations": 8,
+    "full_inverse": true,
+    "original_executable_blocks": 2,
+    "original_executable_blocks_exact": true,
+    "original_full_worked_example_sections_sha256": [
+      "0943149a25cf23cee7a656b527fef5fbb5f45d2137a7055046591a5344e1919c"
+    ],
+    "original_full_worked_examples_exact": true,
+    "protected_frontmatter_exact_except_content_version_and_date": true,
+    "original_URL_occurrences_preserved_in_order": true,
+    "attribution_CTA_exact": true,
+    "native_line_map": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/support/de-partners-and-part-year.line-map.json"
+  },
+  "de-trade-tax": {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-trade-tax.md",
+    "before_sha256": "626bcf76590a68fcd9951f6b2b509aa39fa3a4ef38314b1ae0a4ab9ed2a3575a",
+    "after_sha256": "d8ca2561b7b20f54a376ef3469679521ecbe0623944c34e1ef57e27709ea74d4",
+    "bytes": 40445,
+    "operations": 6,
+    "full_inverse": true,
+    "original_executable_blocks": 2,
+    "original_executable_blocks_exact": true,
+    "original_full_worked_example_sections_sha256": [
+      "f973397dd4423bf9b2207076600282f5a43af68d80fbb8742f6cd28c6091d897"
+    ],
+    "original_full_worked_examples_exact": true,
+    "protected_frontmatter_exact_except_content_version_and_date": true,
+    "original_URL_occurrences_preserved_in_order": true,
+    "attribution_CTA_exact": true,
+    "native_line_map": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/support/de-trade-tax.line-map.json"
+  },
+  "de-corporate-tax": {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-corporate-tax.md",
+    "before_sha256": "eb70e6984dd86812a26e6bf380b38e2c504cc1c3eb7055a5f5d956d6944b3141",
+    "after_sha256": "87aaeab2154e651a0dc94832e825030a1a7e2d164881181245393e3d8b5ded1f",
+    "bytes": 41818,
+    "operations": 10,
+    "full_inverse": true,
+    "original_executable_blocks": 2,
+    "original_executable_blocks_exact": true,
+    "original_full_worked_example_sections_sha256": [
+      "961f26f7c8f554caba167f82977a896790e7c5a427e7045bcff4ba19318ac191"
+    ],
+    "original_full_worked_examples_exact": true,
+    "protected_frontmatter_exact_except_content_version_and_date": true,
+    "original_URL_occurrences_preserved_in_order": true,
+    "attribution_CTA_exact": true,
+    "native_line_map": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/support/de-corporate-tax.line-map.json"
+  }
+}

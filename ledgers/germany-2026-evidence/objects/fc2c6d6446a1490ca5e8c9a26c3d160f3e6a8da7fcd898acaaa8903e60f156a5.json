@@ -1,0 +1,440 @@
+{
+  "status": "Immutable writer successor, different independent review pending",
+  "artifacts": [
+    {
+      "path": "R05-options-and-selection.md",
+      "sha256": "4490889e87186feb6c605d21ae217a29bf00630f79dcb167918780f9d7f35160",
+      "bytes": 1370
+    },
+    {
+      "path": "R06-options-and-selection.md",
+      "sha256": "b749c80d4a8c3fd09f028286c2d503f90a80ddb1c614f94cb548a573aa9fb0f7",
+      "bytes": 1257
+    },
+    {
+      "path": "R07-R08-options-and-selection.md",
+      "sha256": "e2c41f8fdd651f011ec7c8e6f28317eba6158856e56430aa9ae3f234bf7ed875",
+      "bytes": 2239
+    },
+    {
+      "path": "after/de-corporate-tax.md",
+      "sha256": "87aaeab2154e651a0dc94832e825030a1a7e2d164881181245393e3d8b5ded1f",
+      "bytes": 41818
+    },
+    {
+      "path": "after/de-einkommensteuer-freelancer.md",
+      "sha256": "fa101a2a0e450dcd0481d440b5aa5d647c8dab2bf3d9c95dd809dc5989507aa2",
+      "bytes": 40291
+    },
+    {
+      "path": "after/de-employee-income-tax.md",
+      "sha256": "cd57ecbaf2ea8cd8153e7254e51c2a547d195e618f1cab178f8365909001b35b",
+      "bytes": 28763
+    },
+    {
+      "path": "after/de-income-tax.md",
+      "sha256": "afcb21f5552d8db8463ed4d9c7ce8782227dc3c6fd573bb77bc673af4cd596c6",
+      "bytes": 27906
+    },
+    {
+      "path": "after/de-partners-and-part-year.md",
+      "sha256": "0839172b17872bebeed72749eb57e3353d83c4a6132dbb8e02f04ec0ceefb245",
+      "bytes": 33996
+    },
+    {
+      "path": "after/de-self-employed-income-tax.md",
+      "sha256": "2280d3e51b479079e099ff054b5d9dc83c8d390fb3b63e86a4db5ea124a74ebe",
+      "bytes": 28780
+    },
+    {
+      "path": "after/de-trade-tax.md",
+      "sha256": "d8ca2561b7b20f54a376ef3469679521ecbe0623944c34e1ef57e27709ea74d4",
+      "bytes": 40445
+    },
+    {
+      "path": "apply_repairs.py",
+      "sha256": "3e3428fe78806c08ce00964e1d7b10f8cd4c8e2dd82a216eafb62a30cda97b22",
+      "bytes": 3584
+    },
+    {
+      "path": "before/de-corporate-tax.md",
+      "sha256": "eb70e6984dd86812a26e6bf380b38e2c504cc1c3eb7055a5f5d956d6944b3141",
+      "bytes": 39559
+    },
+    {
+      "path": "before/de-einkommensteuer-freelancer.md",
+      "sha256": "24b5037c53e61ddfe3fbabce6ec11fbd53cde225ff07c70abaa36587376f9e20",
+      "bytes": 38293
+    },
+    {
+      "path": "before/de-employee-income-tax.md",
+      "sha256": "6cbb6da4bc3bf6f54b987da6e415a7ef8f797aae3c02af05dbb05c7c8690c3ee",
+      "bytes": 28520
+    },
+    {
+      "path": "before/de-income-tax.md",
+      "sha256": "2f4e335bbdaa39f04d46874ae1d114460d8f8b5da55238ef2555071b9c7d47dd",
+      "bytes": 26109
+    },
+    {
+      "path": "before/de-partners-and-part-year.md",
+      "sha256": "4461747b0cfdabd2666425c03c0660b57ca431a6d193b8253a48b62a97b28eb0",
+      "bytes": 31130
+    },
+    {
+      "path": "before/de-self-employed-income-tax.md",
+      "sha256": "7f38fa2dce9edf71f200125f8595a885cce73bd96efc52485ae9cba26436ca47",
+      "bytes": 26983
+    },
+    {
+      "path": "before/de-trade-tax.md",
+      "sha256": "626bcf76590a68fcd9951f6b2b509aa39fa3a4ef38314b1ae0a4ab9ed2a3575a",
+      "bytes": 38126
+    },
+    {
+      "path": "build_successor_ledgers.py",
+      "sha256": "cc21174b2638f563f12548a5474c205b126d7541487e4f98110071a9cd8db291",
+      "bytes": 13815
+    },
+    {
+      "path": "check_repairs.py",
+      "sha256": "3bf4d12dca710226d17f6b9ea9fa111495319ad9604cf1a8b7a3007b6c2361c8",
+      "bytes": 9451
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "c45c0376bbb7568247570af743239280667fba6ca379f24c68e7cd45e2c670cd",
+      "bytes": 80163
+    },
+    {
+      "path": "first-four-preservation-proof.json",
+      "sha256": "3af24fadcddeab81e12cc3dfccdb438c6f6c4af140dbdfd8235475d648d992ff",
+      "bytes": 4148
+    },
+    {
+      "path": "ledgers/de-corporate-tax.md",
+      "sha256": "1fac629490219b2a6481df32ec30bd8cee317ca800562329c486a2f186a49181",
+      "bytes": 228189
+    },
+    {
+      "path": "ledgers/de-einkommensteuer-freelancer.md",
+      "sha256": "c0b11fa391cc52c9ea7eb9271437a4fb8d89018be447870ad6c2e3403bc47287",
+      "bytes": 130665
+    },
+    {
+      "path": "ledgers/de-employee-income-tax.md",
+      "sha256": "8eac310709ce95bacd98662617dc1252c5950dffbbc291715ad84722b20ea35c",
+      "bytes": 414359
+    },
+    {
+      "path": "ledgers/de-income-tax.md",
+      "sha256": "a2356f7fa65dd60d659c8a7fea9ebf0d3fc70a7857d2a1a8e055bba79abdea0a",
+      "bytes": 291361
+    },
+    {
+      "path": "ledgers/de-partners-and-part-year.md",
+      "sha256": "4a7e259948d408fc21fe01cf1f4e61231c0d65e1a159a333948e68b774527dc3",
+      "bytes": 274377
+    },
+    {
+      "path": "ledgers/de-self-employed-income-tax.md",
+      "sha256": "7a119380b2018ccdb73c495e90625f0f22616d57652c2437558f63a8410714c5",
+      "bytes": 276352
+    },
+    {
+      "path": "ledgers/de-trade-tax.md",
+      "sha256": "b91ca4a51b2c83389815870c7884f0c49055ef3a472a44e43b628208ef6962ca",
+      "bytes": 109320
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "fc4c3eab4ce14685962226e5f60f89899f8b303f461922c5f771fb2cff58c40e",
+      "bytes": 2976
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "a27c9fdb171c51b90d325901e23887d813c55d111161eb2986764a7dfc775867",
+      "bytes": 78502
+    },
+    {
+      "path": "prepare_R05.py",
+      "sha256": "1171d33417275c160923be14f034441aaa59642a1d7c7fad965ac30bdf350338",
+      "bytes": 10561
+    },
+    {
+      "path": "prepare_R06.py",
+      "sha256": "a3d4daee22ad92503c371116a7e7dae340af4f533aec2c3076ac8454abd92f59",
+      "bytes": 3735
+    },
+    {
+      "path": "prepare_R07_R08.py",
+      "sha256": "e33f3e76d99197efa6ac831495212e831dbeefa49bdb5cf52129654cb33eed1d",
+      "bytes": 8309
+    },
+    {
+      "path": "prepare_repairs.py",
+      "sha256": "75e88894663c62515728fd21229fe6266f703b586df5d266fc5094c763f176da",
+      "bytes": 12587
+    },
+    {
+      "path": "preservation-proof.json",
+      "sha256": "ef5c3332e6e4be31e28f404e767bfc075c36b9caf03ed9866c96c90c294b980e",
+      "bytes": 7331
+    },
+    {
+      "path": "preserved-original-seals-and-finding-references.json",
+      "sha256": "a9637f6d8b5ae02da920cc1cefbc383a666bff4fb70202c1b7d404c396dda7e1",
+      "bytes": 3828
+    },
+    {
+      "path": "seal.py",
+      "sha256": "39900bf0c02d73d78bcc6a06a9f040e5880c69cc836d2fd73e26dd9d89faa65b",
+      "bytes": 6928
+    },
+    {
+      "path": "sibling-routing-observations.json",
+      "sha256": "1b79644e7e9633d5d21d32362610c079a93c07434e1d8f5a0da0b014665696e5",
+      "bytes": 9690
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "58433c0c967f1aaa3b1cd1470d0c8698fc783e2040ffc05c7c13d82ef36eba67",
+      "bytes": 1330291
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "92fa0ef290f1ea3b14528568f25488e89b36a4dfb99bcad691ab40b02ed8a2b6",
+      "bytes": 915551
+    },
+    {
+      "path": "sources/BFH-IVR42-19.web-response.json",
+      "sha256": "fcd40047751749fd22e0fa0c3394ab99465b3d8ccb3f6a6b36ad078ee8f2e489",
+      "bytes": 27872
+    },
+    {
+      "path": "sources/BMG-care-2026.html",
+      "sha256": "a77a234a354599240cef1e04d676f1f40bb2337a0b078113a98e84771286e26a",
+      "bytes": 459164
+    },
+    {
+      "path": "sources/BMG-care-2026.identity.json",
+      "sha256": "f3af4ab492590c65646515328dba45bead7cd9c6e760d4e3ae70a003dd472152",
+      "bytes": 850
+    },
+    {
+      "path": "sources/BMG-care-2026.reader.txt",
+      "sha256": "9e555bf46242681b414297d5273fe42868f7ca54d56f6ebebea40073b59e2b35",
+      "bytes": 21321
+    },
+    {
+      "path": "sources/BMG-health-2026.html",
+      "sha256": "ad135633759ad3aea1ad2fc36f4689e90bca5905e5d248a6f2cbb521caf92ed4",
+      "bytes": 453198
+    },
+    {
+      "path": "sources/BMG-health-2026.identity.json",
+      "sha256": "9ba177e69827a9c81c3532481ee18f426b83274e4ade473509d68edf25180afd",
+      "bytes": 797
+    },
+    {
+      "path": "sources/BMG-health-2026.reader.txt",
+      "sha256": "e0d3a84fc7114a8463fee70d840ebe610f7a5cd7e598b6e2a965870cf0cb1d39",
+      "bytes": 19410
+    },
+    {
+      "path": "sources/BStabG2026.failed-web-response.json",
+      "sha256": "d266811cc1089d1ffce610f5317d36059ee296073cd464247349008016998446",
+      "bytes": 320
+    },
+    {
+      "path": "sources/BStabG2026.pdf",
+      "sha256": "190f7ef61f929f26d84e1d63847181516c04582c8769b94e76f66914599c7b76",
+      "bytes": 733897
+    },
+    {
+      "path": "sources/BStabG2026.receipt.json",
+      "sha256": "dc57c0c51893f50f84cbe9fe72807194eafcd423c49b14f66f608a2e4c593108",
+      "bytes": 274
+    },
+    {
+      "path": "sources/BStabG2026.txt",
+      "sha256": "6793766566cc978987175f9e3d23961ac2fca15cf0c6cef6d05a3c5800ae2cfc",
+      "bytes": 434029
+    },
+    {
+      "path": "sources/acquisition-history.md",
+      "sha256": "a9931ca98b19dfbff12ed55e80e1a5e816fab67fae6faaffe36cf51256af9db4",
+      "bytes": 1132
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "af8199f8b0cb22d4d3215a498fbfb87ecf9f9dda1579e59dce6f33ff3fe1b166",
+      "bytes": 28383
+    },
+    {
+      "path": "support/de-corporate-tax/old-topic-destinations.json",
+      "sha256": "c4aafaac1d4d5c945993c813a0a7ea821740ffab7f6bb294e52b108036332b8b",
+      "bytes": 104975
+    },
+    {
+      "path": "support/de-corporate-tax/rows.json",
+      "sha256": "0f0c778a84d3e5fc864a467253f3517f5a2b7f415d3dd3359be83063896255d7",
+      "bytes": 180685
+    },
+    {
+      "path": "support/de-corporate-tax.diff",
+      "sha256": "9c13627ebb3be3d5263e96f72577e37d0c6c247d404c3f3da910a104880c7caf",
+      "bytes": 16780
+    },
+    {
+      "path": "support/de-corporate-tax.line-map.json",
+      "sha256": "462c4b50b0ed3d4df5fbd4d66508e8799fa2ffb7f5c4b10e34028099ad97d422",
+      "bytes": 28380
+    },
+    {
+      "path": "support/de-einkommensteuer-freelancer/old-topic-destinations.json",
+      "sha256": "0b1a5155cd28807da7263718ecb6094c9482b9242fe0b00c4b6b00ea0badc49f",
+      "bytes": 116893
+    },
+    {
+      "path": "support/de-einkommensteuer-freelancer/rows.json",
+      "sha256": "9538a69546da275a9350ceed8c37b71b4de511dcc127fdf90577b9e7fd48eebb",
+      "bytes": 106417
+    },
+    {
+      "path": "support/de-einkommensteuer-freelancer.diff",
+      "sha256": "07cc35dc9bd558e0a4decccd057f0ced2e2067a97228925319eac71b6c4db3b8",
+      "bytes": 8823
+    },
+    {
+      "path": "support/de-einkommensteuer-freelancer.line-map.json",
+      "sha256": "c4401732fec9f9303b029a64bd05c0921527216031269170f9b073266a593929",
+      "bytes": 32184
+    },
+    {
+      "path": "support/de-employee-income-tax/old-topic-destinations.json",
+      "sha256": "ad50255c35079a88f8278914e145815ae19afed4c4de76b110b848d03b47e1b4",
+      "bytes": 221039
+    },
+    {
+      "path": "support/de-employee-income-tax/rows.json",
+      "sha256": "7156cc8bdc1c55e5c55dfc255b505b93a1c8f661dd12c989d4166a9087e4172e",
+      "bytes": 227646
+    },
+    {
+      "path": "support/de-employee-income-tax.diff",
+      "sha256": "948c7903ecf3c115ba316608c7fbe3f4058f89961af43a252b77173163692cfa",
+      "bytes": 3652
+    },
+    {
+      "path": "support/de-employee-income-tax.line-map.json",
+      "sha256": "c3246d44a081dd31faa663fca6d3864eb7836afc48ed2f913f4e3713743cffe0",
+      "bytes": 27816
+    },
+    {
+      "path": "support/de-income-tax/old-topic-destinations.json",
+      "sha256": "96e209d2b5d683dfb7f67253da0edc2c56ac2e7dbfa40200102b1b937d20787c",
+      "bytes": 304541
+    },
+    {
+      "path": "support/de-income-tax/rows.json",
+      "sha256": "ce1300fdd826f95e7b8d60172f636a6bbd728fe4bcc808fb8dec5ed5497484ad",
+      "bytes": 147918
+    },
+    {
+      "path": "support/de-income-tax.diff",
+      "sha256": "4bf0885638c8cfb8872ee2d79d6e5fffb0de76441fc7d002a1541ff222a8b4fe",
+      "bytes": 7351
+    },
+    {
+      "path": "support/de-income-tax.line-map.json",
+      "sha256": "94da50ebf011a8864179c3f9e384541ecaa76117d9e4b8179fb7016bf5faf745",
+      "bytes": 23637
+    },
+    {
+      "path": "support/de-partners-and-part-year/old-topic-destinations.json",
+      "sha256": "b5b038b7ac505496c54d913b2a28f11e1145d759e07d475ec0c646c58efd433f",
+      "bytes": 192164
+    },
+    {
+      "path": "support/de-partners-and-part-year/rows.json",
+      "sha256": "8efb4e11174d56fba33b8253115a89f4cca71676c50f47a07dd970235facd20d",
+      "bytes": 156658
+    },
+    {
+      "path": "support/de-partners-and-part-year.diff",
+      "sha256": "e80198b6b6bba863d495129967872297ff0d1754a87e680977dc9790af8ea8d4",
+      "bytes": 13084
+    },
+    {
+      "path": "support/de-partners-and-part-year.line-map.json",
+      "sha256": "cabf6f31bc1e419c2e7fe1610110e7460e948602baba9163571608902b1979fc",
+      "bytes": 25376
+    },
+    {
+      "path": "support/de-self-employed-income-tax/old-topic-destinations.json",
+      "sha256": "b3ae1cbbc481d31fcd7a8cd0b38dc5079ae9bea6c16a2dce1978e10aeb78b60c",
+      "bytes": 194986
+    },
+    {
+      "path": "support/de-self-employed-income-tax/rows.json",
+      "sha256": "f52be401dee4568669e48212f2229a9a021e4e2abba11279d34972efae7e1b5a",
+      "bytes": 165291
+    },
+    {
+      "path": "support/de-self-employed-income-tax.diff",
+      "sha256": "5e699e28d08e2ae3ca5ab2d477428549ceb253c39a1582e0831034c7f11c2454",
+      "bytes": 7412
+    },
+    {
+      "path": "support/de-self-employed-income-tax.line-map.json",
+      "sha256": "f6b2f37c7d94394f02bdb887be4553f60eb72739889cfce659babaefe967efbf",
+      "bytes": 25635
+    },
+    {
+      "path": "support/de-trade-tax/old-topic-destinations.json",
+      "sha256": "042c5aa1d0ba977601349be651ad472ccc2ae53132219f365738f5dbbcec1e18",
+      "bytes": 98145
+    },
+    {
+      "path": "support/de-trade-tax/rows.json",
+      "sha256": "820b49ce79fffbd332fc264d03bc144ad47124a7e5e0d166476df3af1eec3747",
+      "bytes": 85014
+    },
+    {
+      "path": "support/de-trade-tax.diff",
+      "sha256": "635ea476de58187ed68a6af70b88b3ac2aedc0ed85f44b4c28ced414d2b13268",
+      "bytes": 8711
+    },
+    {
+      "path": "support/de-trade-tax.line-map.json",
+      "sha256": "7aedb387132e10e6baa2799ae75b48427edbc833aa53362acdb2c59dbb11bd6c",
+      "bytes": 27642
+    },
+    {
+      "path": "support/ledger-build-summary.json",
+      "sha256": "f4d4c0b28bbbc92666f1fc661bb46cb99346a92e490e8e35e673f6b9892be550",
+      "bytes": 3986
+    },
+    {
+      "path": "support/scoped-check-summary.json",
+      "sha256": "1633e5c40c0d7ccfbfb9fc7aec6508ef72d27c13bd854933ed7ff859ab71251f",
+      "bytes": 1173
+    },
+    {
+      "path": "support/seven-preservation-summary.json",
+      "sha256": "ef5c3332e6e4be31e28f404e767bfc075c36b9caf03ed9866c96c90c294b980e",
+      "bytes": 7331
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "b892c5ab3891689311c3c720e6a9d1b77708d6818f19aebfa4001b096b55b293",
+      "bytes": 19045
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "2d9c9d755cea2c9f39d66d02255e377e4a84737ff9bbd083c622909ab2332351",
+      "bytes": 4175
+    }
+  ]
+}

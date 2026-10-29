@@ -1,0 +1,1699 @@
+    <!doctype html>
+    <!-- MoBe-Redesign -->
+    <html lang="de">
+    <head>
+            <base href="https://www.bundesfinanzministerium.de/"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <!-- Matomo -->
+
+        <script>
+            const cookie = {
+                /**
+                 * set a cookie
+                 * @param {string} ckey   - key of the cookie
+                 * @param {string} cvalue - value of the cookie
+                 * @param {number} days   - time to live
+                 */
+                setCookie: function (ckey, cvalue, days) {
+                    var expires;
+                    var date;
+                    var protocol = '';
+                    if (days) {
+                        date = new Date();
+                        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                        expires = '; expires=' + date.toGMTString();
+                    } else {
+                        expires = '';
+                    }
+
+                    if (location.protocol === 'https:') {
+                        protocol = ';secure';
+                    }
+                    document.cookie = ckey + '=' + cvalue + expires + protocol + ';path=/';
+                },
+
+                /**
+                 * get a cookie by key
+                 * @param {string} ckey   - key of the cookie
+                 */
+                getCookie: function (ckey) {
+                    var key = ckey + '=';
+                    var ca = document.cookie.split(';');
+                    var i;
+                    var c;
+                    for (i = 0; i < ca.length; i += 1) {
+                        c = ca[i];
+                        while (c.charAt(0) === ' ') {
+                            c = c.substring(1);
+                        }
+                        if (c.indexOf(key) === 0) {
+                            return c.substring(key.length, c.length);
+                        }
+                    }
+                    return '';
+                }
+            };
+
+            var _paq = _paq || [];
+
+            // require user consent before processing data
+            // https://developer.matomo.org/guides/tracking-javascript-guide#asking-for-consent
+
+            _paq.push(['requireConsent']);
+
+            _paq.push(['setDownloadClasses', "download"]);
+            _paq.push(['setLinkClasses', "external"]);
+            _paq.push(['enableLinkTracking']);
+            _paq.push(['trackAllContentImpressions']);
+
+            
+            _paq.push(['trackPageView', 'Investitionssofortprogramm\x20Deutschland\x3A\x20Mehr\x20Wachstum\x20und\x20Wettbewerbsf\xE4higkeit,Basepage,\x2FMonatsberichte\x2FAusgabe\x2F2025\x2F08\x2FInhalte\x2FKapitel\x2D2\x2DFokus\x2Finvestitionssofortprogramm\x2Ddeutschland']);
+
+            var contentTarget = document.URL;
+            if (contentTarget.indexOf(';jsessionid') > 0) {
+                contentTarget = contentTarget.substr(0, contentTarget.indexOf(';jsessionid'));
+            }
+            _paq.push(['trackContentImpression', 'Breadcrumb', '/de/Monatsbericht', contentTarget]);
+            
+
+            (function () {
+                var u = "//analytics.bundesfinanzministerium.de/";
+                _paq.push(['setTrackerUrl', u + 'matomo.php']);
+                _paq.push(['setSiteId', 1]);
+
+                if (cookie.getCookie('cookie-allow-tracking') === '1') {
+
+                    // Hier wird die Erlaubnis innerhalb des Matomo-Codes erteilt, dass ein User das Tracking erlaubt
+                    _paq.push(['setConsentGiven']);
+
+                    /* BMF-3759 - matomo.js wird erst bei Einwilligung geladen */
+                    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                    g.type = 'text/javascript';
+                    g.async = true;
+                    g.defer = true;
+                    g.src = u + 'matomo.js';
+                    s.parentNode.insertBefore(g, s);
+
+                    // ToDo: evtl. hierüber ein nachträgliches Tracking ausführen https://developer.matomo.org/guides/spa-tracking
+                    //window._mtm.push({'event': 'DOMReady'});
+                }
+            })();
+        </script>
+        <!-- End Piwik Code -->
+    
+        <title>BMF-Monatsbericht August 2025  - Investitionssofortprogramm Deutschland: Mehr Wachstum und Wettbewerbsfähigkeit</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="generator" content="Government Site Builder"/>
+            <meta name="google-site-verification" content="Vji7sDKOaSJDY5miF4hf6OQ2M8wr_3OBd_uAPl8Iu6k" />
+    
+    
+        <meta property="og:image" content="https://www.bundesfinanzministerium.de/Content/DE/Bilder/Logos/bmf-standardbild-social-media.jpg?__blob=cover&amp;v=1" />
+
+        <meta property="og:title" content="Investitionssofortprogramm Deutschland: Mehr Wachstum und Wettbewerbsf&#228;higkeit - Bundesfinanzministerium -  BMF-Monatsbericht August 2025"/>
+        <meta property="og:url" content="https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html" />
+        <meta property="og:description" content="Steuerlicher Wachstumsbooster: Mit degressiven Abschreibungen, Senkung der K&#246;rperschaftsteuer und F&#246;rderung von E-Mobilit&#228;t und Forschung sollen Investitionen angekurbelt und der Wirtschaftsstandort Deutschland gest&#228;rkt werden." />
+        <meta property="og:site_name" content="Bundesministerium der Finanzen" />
+        <meta property="og:locale" content="de_DE" />
+    
+        
+    <meta name="description" content="Steuerlicher Wachstumsbooster: Mit degressiven Abschreibungen, Senkung der Körperschaftsteuer und Förderung von E-Mobilität und Forschung sollen Investitionen angekurbelt und der Wirtschaftsstandort Deutschland gestärkt werden."/>
+    <meta name="keywords" content="Innovationsoffensive, Innovationsbooster, Investitionsbooster, Wachstumsbooster, Degressive Abschreibungen, Körperschaftsteuersenkung, E-Mobilitätsförderung"/>
+    <meta name="author" content="publisher"/>
+        <link rel="canonical" href="https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html"/>
+        <link rel="copyright" href="Web/DE/Meta/Impressum/impressum.html" type="text/html" title="Impressum"/>
+        <link rel="start" href="Web/DE/Home/home.html" type="text/html" title="Homepage"/>
+        <link rel="contents" href="Web/DE/Meta/Inhaltsuebersicht/inhaltsuebersicht.html" type="text/html" title="Übersicht"/>
+        <link rel="search" href="Web/DE/Meta/Suche/suche.html" type="text/html" title="Suche"/>
+              <script type="text/javascript">
+         var htmlClass = sessionStorage.getItem("fontSizeClass");
+         var html = document.querySelector("html")
+         
+         if (htmlClass) {
+           html.classList.add("js-text-size-big");
+         }
+      </script>
+        <link rel="apple-touch-icon" sizes="57x57" href="/static/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/static/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/static/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/static/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/static/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/static/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/static/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/static/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/static/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/static/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/static/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/static/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/static/manifest.json">
+        <meta name="msapplication-config" content="/static/browserconfig.xml" />
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/static/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        
+        
+
+<link rel="stylesheet" href="/static/css/vendor.min.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/static/css/screen.min.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/static/css/elements.min.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/static/css/print.min.css" type="text/css" media="print" />
+<link rel="stylesheet" href="/static/css/mobe.min.css" type="text/css" media="screen" />
+
+        <link rel="stylesheet" href="SiteGlobals/StyleBundles/CSS/screen/hotfix_mobe_redesign.css?v=5&amp;nn=237786" type="text/css" />
+        <script>
+            var Bmf = (function (bmf) {
+    bmf.Labels = (function () {
+        return {
+            AnhaltenStarten: 'Wiedergabe anhalten/starten',
+            Ausblenden: 'ausblenden',
+            Browsertitel: 'Bundesfinanzministerium',
+            Datenschutz: 'Datenschutz',
+            Einblenden: 'einblenden',
+            Fussnote: 'Fußnote',
+            FussnoteOeffnen: 'Fußnote öffnen',
+            FussnoteSchliessen: 'Schließen',
+            MobileMenuPlus: 'Menü anzeigen',
+            MobileMenuMinus: 'Menü schliessen',
+            NavWeiter: 'Weiter',
+            NavZurueck: 'Zurück',
+            NavZurueckErsteSeite: 'Zurück zur ersten Seite',
+            SeiteDrucken: 'Seite drucken',
+            SeiteDruckenTooltip: 'Seite drucken (öffnet Dialog)',
+            Start: 'Start',
+            Stop: 'Stop',
+            TrackingDeaktivieren: 'Legen Sie diesen Schalter um, damit Sie dauerhaft nicht getrackt werden.',
+            TrackingAktivieren: 'Legen Sie diesen Schalter um, um das Tracking zu aktivieren.',
+            Untermenuepunkte: 'Untermenüpunkte'
+        };
+    }());
+
+        bmf.Labels.Browsertitel = 'BMF-Monatsbericht August 2025';
+
+    bmf.Urls = {
+        Forms : {
+            Autosuggest: 'SiteGlobals/Forms/Suche/Autosuggest_Formular.html?nn=237786'
+        },
+        Docs: {
+                Monatsbericht: 'Monatsberichte/Ausgabe/2025/08/monatsbericht-08-2025.html',
+                MonatsberichtArchivBilder: {
+                    2017: {
+                        alt: 'Jahr 2017 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2017.jpg?__blob=normal&amp;v=1'
+                    },
+                    2018: {
+                        alt: 'Jahr 2018 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2018.jpg?__blob=normal&amp;v=1'
+                    },
+                    2019: {
+                        alt: 'Jahr 2019 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2019.jpg?__blob=normal&amp;v=1'
+                    },
+                    2020: {
+                        alt: 'Jahr 2020 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2020.jpg?__blob=normal&amp;v=1'
+                    },
+                    2021: {
+                        alt: 'Jahr 2021 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2021.jpg?__blob=normal&amp;v=1'
+                    },
+                    2022: {
+                        alt: 'Jahr 2022 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2022.jpg?__blob=normal&amp;v=1'
+                    },
+                    2023: {
+                        alt: 'Jahr 2023 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2023.jpg?__blob=normal&amp;v=4'
+                    },
+                    2024: {
+                        alt: 'Jahr 2024 aufklappen',
+                        src: '/Content/DE/Bilder/Monatsberichte/Monatsbericht-Auswahl-2024.jpg?__blob=normal&amp;v=4'
+                    }
+                },
+            Impressum: 'Web/DE/Meta/Impressum/impressum.html',
+            Datenschutz: 'Web/DE/Meta/Datenschutz/datenschutz.html',
+            TrackingBanner: 'Content/DE/Standardartikel/Meta/tracking_banner.html?view=render[ConsentBanner]'
+        }
+    }
+
+    bmf.Config = {
+        eTrackerId: 'epm1GE',
+        honeypotTimestamp: 5000
+    }
+
+    return bmf;
+}(Bmf || {}));
+
+
+var KfzStRe = (function (kfzstre) {
+    kfzstre.kfzstreLabels = (function () {
+        return {
+            '00PKWvor04112008': 'PKW EZ bis 04.11.2008',
+            '01PKWnach05112008bis30062009': 'PKW EZ 05.11.2008 bis 30.06.2009',
+            '02PKWnach01072009bis31122011': 'PKW EZ 01.07.2009 bis 31.12.2011',
+            '03PKWnach01012012bis31122013': 'PKW EZ 01.01.2012 bis 31.12.2013',
+            '04PKWnach01012014': 'PKW EZ 01.01.2014 bis 31.12.2020',
+            '05PKWnach01012021': 'PKW EZ ab 01.01.2021',
+            'Anhaenger': 'Anhänger',
+            'Elektro': 'Reine Elektrofahrzeuge',
+            'KRD': 'Motorräder',
+            'LFZ': 'Leichtfahrzeuge',
+            'LKW': 'Nutzfahrzeuge',
+            'Oldtimer': 'Oldtimer',
+            'Wohnmobil': 'Wohnmobile',
+            'Diesel': 'Diesel',
+            'Otto': 'Otto',
+            'OttoWankel': 'Otto/Wankel',
+            '3Liter': '3-Liter-Auto',
+            'Euro1vergl': 'Euro 1 und vergleichbare',
+            'Euro2': 'Euro 2',
+            'Euro3bis6': 'Euro 3 bis 6 (einschließlich D3 und D4)',
+            'keinOzonFahrver': 'Euro 0 (ehemals kein Fahrverbot bei Ozonalarm)',
+            'LFZS1': 'Euro 2 und besser',
+            'LFZS2': 'Schlechter als Euro 2',
+            'S1': 'S1',
+            'keineAuswahl': 'keine Auswahl',
+            'mindestensS2': 'S2 und besser',
+            'mindestensS4': 'mindestens S4',
+            'sonstige': 'Übrige',
+            'sonstige-G1': 'G1',
+            'S3oderS2': 'S2 oder S3',
+            'schlechterAlsS1': 'schlechter als S1',
+            '1Motorrad': 'Motorräder',
+            '0UebrigeKfz': 'Übrige Fahrzeuge',
+            'm01': 'Januar',
+            'm02': 'Februar',
+            'm03': 'März',
+            'm04': 'April',
+            'm05': 'Mai',
+            'm06': 'Juni',
+            'm07': 'Juli',
+            'm08': 'August',
+            'm09': 'September',
+            'm10': 'Oktober',
+            'm11': 'November',
+            'm12': 'Dezember',
+            'ct_hinweis_0': '',
+            'ct_hinweis_1': 'Hinweis: Reine Elektrofahrzeuge sind bei erstmaliger Zulassung bis 31.12.2030 für maximal zehn Jahre von der Steuer befreit. Die Befreiung ist begrenzt bis längstens 31.12.2035. Daran anschließend ermäßigt sich die zu zahlende Kraftfahrzeugsteuer um 50 Prozent (§ 9 Abs. 2 KraftStG). Hier wird der nach Ablauf der Steuerbefreiung anfallende ermäßigte Steuerbetrag angezeigt.'
+        };
+    }());
+    return kfzstre;
+}(KfzStRe || {}));;
+        </script>
+                <script src="Content/DE/Teaser/Suchergebnisteaser/Text-Suchergebnis/txt-suchergebnis-monatsbericht.html?nn=237786"></script>
+        
+        <script src="/static/js/mobe.js"></script>
+        <!--script src='/SiteGlobals/Functions/JavaScript/lib/jquery360.js?v=2'></script>
+        <script src='/SiteGlobals/Functions/JavaScript/lib/jquery-migrate.js'></script>
+        <script src="/SiteGlobals/Functions/JavaScript/script-vendor.js?v=18"></script>
+        <script src='/SiteGlobals/Functions/JavaScript/lib/hammer.js'></script>
+        <script src='/SiteGlobals/Functions/JavaScript/lib/slick.js'></script>
+
+        <script data-main="SiteGlobals/Functions/JavaScript/_mobe/Init.js?v=1" src="SiteGlobals/Functions/JavaScript/require.js?v=1"></script-->
+        
+    </head>
+    <body class="gsb js-on category-pages gsb r2d2 theme--mobe-1 js-off">
+    <!--<![endif]-->
+            <!-- Matomo -->
+        <noscript><p><img src="//analytics.bundesfinanzministerium.de/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+        <!-- End Matomo Code -->
+    
+    
+        <a id="top" name="top"></a>
+
+<script src="SiteGlobals/Functions/JavaScript/lib/jquery-3.3.1.js?v=1&amp;nn=237786"></script>
+<script>$(function() {
+    $('#disclaimerDiv').each(function() {
+        if (getCookieValue('disclaimer') != 'approved') {
+            $(this).show();
+        }
+    });
+})
+
+function getCookieValue(a) {
+    var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
+    return b ? b.pop() : '';
+}
+
+function setDisclaimerCookie(){
+    document.cookie = "disclaimer=approved";
+    $('#disclaimerDiv').hide();
+}
+function setDisclaimerRead(){
+    $('#disclaimerDiv').hide();
+}</script>
+<nav role="navigation" aria-label="<span>Sprunglinks</span>">
+    <ul class="navSkip">
+        <li><a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html?nn=237786#Inhalt"><span>Navigation überspringen</span></a></li>
+        <li><a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html?nn=237786#Hauptmenu"><span>Navigation anspringen</span></a></li>
+        <li><a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html?nn=237786#Suche"><span>Suche anspringen</span></a></li>
+    </ul></nav>
+
+
+<header class="bmf-header" data-js-header>
+    <div class="bmf-header__container">
+        
+
+
+
+
+
+
+
+
+
+<div class="bmf-header__menu">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="bmf-menu-main" aria-labelledby="bmf-menu-main-heading" data-js-menu-main>
+    <h2 id="bmf-menu-main-heading" class="bmf-menu-main__heading">Hauptmenü</h2>
+    <button class="bmf-link bmf-link--button bmf-menu-main__menu-btn" data-js-menu-main-menu-btn="" aria-controls="bmf-menu-main-panel">
+        <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--menu" aria-hidden="true" role="img" width="32" height="32" viewBox="0 0 32 32">
+            <title>Menu</title>
+            <g fill-rule="evenodd">
+                <path d="M1 4H31V8H1zM1 14H31V18H1zM1 24H31V28H1z"></path>
+            </g>
+        </svg>
+
+        <span class="bmf-link-text">Menü</span>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--close" aria-hidden="true" role="img" width="32" height="32" viewBox="0 0 32 32">
+            <title>Schließen</title>
+            <g>
+                <path d="M3.866,0.133l28.002,28.001l-3.734,3.734L0.133,3.866L3.866,0.133z"></path>
+                <path d="M28.134,0.133L0.133,28.134l3.733,3.733L31.868,3.866L28.134,0.133z"></path>
+            </g>
+        </svg>
+    </button>
+
+    <div id="bmf-menu-main-panel" class="bmf-menu-main__panel" data-js-menu-main-panel>
+        <div class="bmf-menu-main__panel-container">
+            <button class="bmf-link bmf-link--button bmf-link--icononly bmf-menu-main__close-btn" data-js-menu-main-close-btn="" aria-controls="bmf-menu-main-panel">
+                <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--close" aria-hidden="true" role="img" width="32" height="32" viewBox="0 0 32 32">
+                    <title>Schließen</title>
+                    <g>
+                        <path d="M3.866,0.133l28.002,28.001l-3.734,3.734L0.133,3.866L3.866,0.133z"></path>
+                        <path d="M28.134,0.133L0.133,28.134l3.733,3.733L31.868,3.866L28.134,0.133z"></path>
+                    </g>
+                </svg>
+                <span class="bmf-link-text">Menü schließen</span>
+            </button>
+
+            <div class="bmf-menu-main__panel-row">
+                <ul class="bmf-menu-main__panel-list" data-js-menu-main-panel-list>
+                    
+                        <li class="bmf-menu-main__menu-item theme--mobe-1" >
+                            <div class="bmf-menu-main__menu-item-head">
+                                <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-btn" data-js-menu-main-menu-item-btn="active" aria-controls="bmf-menu-main-sub-panel-1">
+                                    <span class="bmf-link-text">Im Fokus: Wachstumsbooster</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-next" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                                        <title>Weiter</title>
+                                        <path d="M0 1.25L1.216 0 9 8 1.216 16 0 14.75 6.566 8z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                                
+                                
+                            
+
+
+
+
+
+<div id="bmf-menu-main-sub-panel-1" class="bmf-menu-main__menu-item-panel" aria-hidden="true">
+    <div class="bmf-menu-main__menu-item-panel-head">
+        <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-close-btn" data-js-menu-main-menu-item-close-btn="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-prev" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                <title>Zurück</title>
+                <path d="M9.371,8l6.566,6.75L14.722,16L6.938,8l7.784-8l1.216,1.25L9.371,8z"></path>
+            </svg>
+            <span class="bmf-link-text">Zurück</span>
+        </button>
+
+        <div class="bmf-menu-main__menu-item-panel-title">
+            <span class="bmf-menu-main__menu-item-indicator" aria-hidden="true" style="--bmf-menu-item-indicator--color: var(theme--mobe-1);"></span>
+            <span class="bmf-menu-main__menu-item-panel-title-text">Im Fokus: Wachstumsbooster</span>
+        </div>
+    </div>
+    <ul class="bmf-menu-main__menu-item-panel-list">
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                        <span class="bmf-link bmf-menu-main__sub-menu-link active">
+                            <span class="bmf-link-text">Investitionssofortprogramm Deutschland: Mehr Wachstum und Wettbewerbsfähigkeit</span>
+                        </span>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/interview-mit-michael-schrodi.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Im Interview: Michael Schrodi, Parlamentarischer Staatssekretär beim Bundesminister der Finanzen</span>
+                    </a>
+                
+            </li>
+        
+    </ul>
+</div>
+
+
+                        </li>
+                    
+                        <li class="bmf-menu-main__menu-item theme--mobe-2" >
+                            <div class="bmf-menu-main__menu-item-head">
+                                <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-btn" data-js-menu-main-menu-item-btn="" aria-controls="bmf-menu-main-sub-panel-2">
+                                    <span class="bmf-link-text">Analysen und Berichte</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-next" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                                        <title>Weiter</title>
+                                        <path d="M0 1.25L1.216 0 9 8 1.216 16 0 14.75 6.566 8z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                                
+                                
+                            
+
+
+
+
+
+<div id="bmf-menu-main-sub-panel-2" class="bmf-menu-main__menu-item-panel" aria-hidden="true">
+    <div class="bmf-menu-main__menu-item-panel-head">
+        <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-close-btn" data-js-menu-main-menu-item-close-btn="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-prev" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                <title>Zurück</title>
+                <path d="M9.371,8l6.566,6.75L14.722,16L6.938,8l7.784-8l1.216,1.25L9.371,8z"></path>
+            </svg>
+            <span class="bmf-link-text">Zurück</span>
+        </button>
+
+        <div class="bmf-menu-main__menu-item-panel-title">
+            <span class="bmf-menu-main__menu-item-indicator" aria-hidden="true" style="--bmf-menu-item-indicator--color: var(theme--mobe-2);"></span>
+            <span class="bmf-menu-main__menu-item-panel-title-text">Analysen und Berichte</span>
+        </div>
+    </div>
+    <ul class="bmf-menu-main__menu-item-panel-list">
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-3-Analysen/3-1-finanzpolitisch-struktureller-plan.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Erster deutscher finanzpolitisch-struktureller Plan: Reformierte EU-Fiskalregeln in der Anwendung</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-3-Analysen/3-2-bundeshaushalt-2026.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Der Bundeshaushalt 2026 und die Finanzplanung bis 2029: Investieren, reformieren, konsolidieren</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-3-Analysen/3-3-steuern-im-internationalen-vergleich-2024.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Die wichtigsten Steuern im internationalen Vergleich</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-3-Analysen/3-4-kassensicherheit-und-digitalisierung.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Kassensicherheit und Digitalisierung</span>
+                    </a>
+                
+            </li>
+        
+    </ul>
+</div>
+
+
+                        </li>
+                    
+                        <li class="bmf-menu-main__menu-item theme--mobe-3" >
+                            <div class="bmf-menu-main__menu-item-head">
+                                <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-btn" data-js-menu-main-menu-item-btn="" aria-controls="bmf-menu-main-sub-panel-3">
+                                    <span class="bmf-link-text">Aktuelle Wirtschafts- und Finanzlage</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-next" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                                        <title>Weiter</title>
+                                        <path d="M0 1.25L1.216 0 9 8 1.216 16 0 14.75 6.566 8z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                                
+                                
+                            
+
+
+
+
+
+<div id="bmf-menu-main-sub-panel-3" class="bmf-menu-main__menu-item-panel" aria-hidden="true">
+    <div class="bmf-menu-main__menu-item-panel-head">
+        <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-close-btn" data-js-menu-main-menu-item-close-btn="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-prev" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                <title>Zurück</title>
+                <path d="M9.371,8l6.566,6.75L14.722,16L6.938,8l7.784-8l1.216,1.25L9.371,8z"></path>
+            </svg>
+            <span class="bmf-link-text">Zurück</span>
+        </button>
+
+        <div class="bmf-menu-main__menu-item-panel-title">
+            <span class="bmf-menu-main__menu-item-indicator" aria-hidden="true" style="--bmf-menu-item-indicator--color: var(theme--mobe-3);"></span>
+            <span class="bmf-menu-main__menu-item-panel-title-text">Aktuelle Wirtschafts- und Finanzlage</span>
+        </div>
+    </div>
+    <ul class="bmf-menu-main__menu-item-panel-list">
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-1-ueberblick.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Überblick zur aktuellen Lage</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-2-steuereinnahmen-juli-2025.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Steuereinnahmen im Juli 2025 und konjunkturelles Umfeld</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-3-entwicklung-bundeshaushalt-juli-2025.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Entwicklung des Bundeshaushalts bis einschließlich Juli 2025</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-4-entwicklung-laenderhaushalte-juni-2025.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Entwicklung der Kernhaushalte der Länder bis einschließlich Juni 2025</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-5-kreditaufnahme-des-bundes.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Kreditaufnahme des Bundes und seiner Sondervermögen</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-4-Wirtschafts-und-Finanzlage/4-6-europaeische-wirtschafts-und-finanzpolitik.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Europäische Wirtschafts- und Finanzpolitik</span>
+                    </a>
+                
+            </li>
+        
+    </ul>
+</div>
+
+
+                        </li>
+                    
+                        <li class="bmf-menu-main__menu-item theme--mobe-4" >
+                            <div class="bmf-menu-main__menu-item-head">
+                                <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-btn" data-js-menu-main-menu-item-btn="" aria-controls="bmf-menu-main-sub-panel-4">
+                                    <span class="bmf-link-text">Aktuelles aus dem BMF</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-next" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                                        <title>Weiter</title>
+                                        <path d="M0 1.25L1.216 0 9 8 1.216 16 0 14.75 6.566 8z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                                
+                                
+                            
+
+
+
+
+
+<div id="bmf-menu-main-sub-panel-4" class="bmf-menu-main__menu-item-panel" aria-hidden="true">
+    <div class="bmf-menu-main__menu-item-panel-head">
+        <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-close-btn" data-js-menu-main-menu-item-close-btn="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-prev" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                <title>Zurück</title>
+                <path d="M9.371,8l6.566,6.75L14.722,16L6.938,8l7.784-8l1.216,1.25L9.371,8z"></path>
+            </svg>
+            <span class="bmf-link-text">Zurück</span>
+        </button>
+
+        <div class="bmf-menu-main__menu-item-panel-title">
+            <span class="bmf-menu-main__menu-item-indicator" aria-hidden="true" style="--bmf-menu-item-indicator--color: var(theme--mobe-4);"></span>
+            <span class="bmf-menu-main__menu-item-panel-title-text">Aktuelles aus dem BMF</span>
+        </div>
+    </div>
+    <ul class="bmf-menu-main__menu-item-panel-list">
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-5-Aktuelles-aus-dem-BMF/5-1-termine.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Termine</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-5-Aktuelles-aus-dem-BMF/5-2-veranstaltungen.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Veranstaltungen</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-5-Aktuelles-aus-dem-BMF/5-3-publikationen.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Publikationen</span>
+                    </a>
+                
+            </li>
+        
+    </ul>
+</div>
+
+
+                        </li>
+                    
+                        <li class="bmf-menu-main__menu-item theme--mobe-5" >
+                            <div class="bmf-menu-main__menu-item-head">
+                                <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-btn" data-js-menu-main-menu-item-btn="" aria-controls="bmf-menu-main-sub-panel-5">
+                                    <span class="bmf-link-text">Statistiken und Dokumentationen</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-next" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                                        <title>Weiter</title>
+                                        <path d="M0 1.25L1.216 0 9 8 1.216 16 0 14.75 6.566 8z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                                
+                                
+                            
+
+
+
+
+
+<div id="bmf-menu-main-sub-panel-5" class="bmf-menu-main__menu-item-panel" aria-hidden="true">
+    <div class="bmf-menu-main__menu-item-panel-head">
+        <button class="bmf-link bmf-link--button bmf-menu-main__menu-item-close-btn" data-js-menu-main-menu-item-close-btn="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-prev" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16">
+                <title>Zurück</title>
+                <path d="M9.371,8l6.566,6.75L14.722,16L6.938,8l7.784-8l1.216,1.25L9.371,8z"></path>
+            </svg>
+            <span class="bmf-link-text">Zurück</span>
+        </button>
+
+        <div class="bmf-menu-main__menu-item-panel-title">
+            <span class="bmf-menu-main__menu-item-indicator" aria-hidden="true" style="--bmf-menu-item-indicator--color: var(theme--mobe-5);"></span>
+            <span class="bmf-menu-main__menu-item-panel-title-text">Statistiken und Dokumentationen</span>
+        </div>
+    </div>
+    <ul class="bmf-menu-main__menu-item-panel-list">
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Kapitel/kapitel-6-1-finanzwirtschaftliche-entwicklung.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Übersichten zur finanzwirtschaftlichen Entwicklung</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Kapitel/kapitel-6-2-laenderhaushalte.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Übersichten zur Entwicklung der Länderhaushalte</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Kapitel/kapitel-6-3-produktionspotenzial-konjunkturkomponenten.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Gesamtwirtschaftliches Produktionspotenzial und Konjunkturkomponenten des Bundes</span>
+                    </a>
+                
+            </li>
+        
+            
+            <li class="bmf-menu-main__sub-menu-item">
+                
+                    <a href="Monatsberichte/Ausgabe/2025/08/Kapitel/kapitel-6-4-kennzahlen.html?nn=237786" class="bmf-link bmf-menu-main__sub-menu-link">
+                        <span class="bmf-link-text">Kennzahlen zur gesamtwirtschaftlichen Entwicklung</span>
+                    </a>
+                
+            </li>
+        
+    </ul>
+</div>
+
+
+                        </li>
+                    
+                </ul>
+
+                <nav class="bmf-menu-meta bmf-menu-main__meta" aria-labelledby="bmf-menu-meta-heading">
+                    <h2 id="bmf-menu-meta-heading" class="bmf-menu-meta__heading">Metanavigation</h2>
+                    <ul class="bmf-menu-meta__list">
+                        
+                        <li class="bmf-menu-meta__item">
+                            <a href="Web/DE/Service/Publikationen/Monatsbericht/monatsbericht.html" class="bmf-link bmf-menu-meta__link bmf-menu-meta__link--all">
+                                <span class="bmf-link-text">Alle Monatsberichte</span>
+                            </a>
+                        </li>
+                        
+                        
+                        <li class="bmf-menu-meta__item">
+                            <a href="Monatsberichte/Ausgabe/2025/08/Kapitel/kapitel-1-editorial.html?nn=237786" class="bmf-link bmf-menu-meta__link">
+                                <span class="bmf-link-text">Editorial</span>
+                            </a>
+                        </li>
+                        
+                        <li class="bmf-menu-meta__item">
+                            <a href="Monatsberichte/Ausgabe/2025/08/Kapitel/kapitel-7-english-version.html?nn=237786" class="bmf-link bmf-menu-meta__link">
+                                <span class="bmf-link-text">English version</span>
+                            </a>
+                        </li>
+                        
+                        <li class="bmf-menu-meta__item">
+                            <a href="Monatsberichte/Ausgabe/2025/08/Kapitel/kapitel-8-hinweise.html?nn=237786" class="bmf-link bmf-menu-meta__link">
+                                <span class="bmf-link-text">Hinweise</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+
+
+
+
+
+
+
+
+    <a href="/Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland-pdf.pdf?__blob=publicationFile&amp;v=6" class="bmf-link bmf-link--download bmf-header__download-link"
+       download="Investitionssofortprogramm Deutschland: Mehr Wachstum und Wettbewerbsfähigkeit"
+       title="Download Monatbericht: Investitionssofortprogramm Deutschland: Mehr Wachstum und Wettbewerbsfähigkeit (pdf, 143KB, Datei ist barrierefrei/barrierearm) "
+            
+       target="_blank">
+        <svg class="bmf-icon bmf-icon--download" width="24" height="24" viewBox="0 0 24 24" fill="none"
+             xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+            <path id="Vector"
+                  d="M18 15V18H6V15H4V18C4 19.1 4.9 20 6 20H18C19.1 20 20 19.1 20 18V15H18ZM17 11L15.59 9.59L13 12.17V4H11V12.17L8.41 9.59L7 11L12 16L17 11Z"
+                  fill="black"/>
+        </svg>
+        <span class="bmf-link-text">Download Artikel</span>
+    </a>
+
+
+
+
+
+
+</div>
+<h1 class="bmf-header__title-container">
+    
+        <a href="Monatsberichte/Ausgabe/2025/08/monatsbericht-08-2025.html?nn=237786" class="bmf-header__title-link">
+            <span class="bmf-header__title">BMF-Monatsbericht August 2025</span>
+        </a>
+    
+</h1>
+<div class="bmf-header__group">
+
+    <a href="Web/DE/Service/Publikationen/Monatsbericht/monatsbericht.html" class="bmf-link bmf-link--more bmf-header__all-link">
+        <span class="bmf-link-text">Alle Monatsberichte</span>
+    </a>
+
+    <div class="bmf-header__logo">
+        <a href="Web/DE/Home/home.html" class="bmf-header__logo-link">
+            <svg fill="#000" xmlns="http://www.w3.org/2000/svg" class="bmf-logo__eagle" role="img" aria-hidden="true" viewBox="0 0 30.5 28.3" width="30.5" height="28.3" focusable="false">
+                <path id="icon-logo-adler_Wappen" d="M18.4,10.8c0.1-0.3,0.1-0.6,0.1-0.9c0-0.2,0-0.4,0-0.6c2.6-0.1,4.9-1.9,4.9-4c-0.1-0.9-0.5-1.8-1.1-2.4  c0.1,0,0.2-0.1,0.3-0.1c0.8,0.8,1.4,1.8,1.4,3C23.9,8.3,21.4,10.8,18.4,10.8L18.4,10.8z M15.8,1.8c-0.1-0.3-0.1-0.5-0.3-0.8  c0-0.3,0.1-0.5,0.5-0.3c-0.3,0.3-0.1,0.7-0.1,0.7s0.5-0.2,0.4-0.5C17,1,16.5,2,15.8,1.8L15.8,1.8z M15.2,3.1  c-0.1-0.4-0.3-0.8-0.5-1.1S14,1.4,13.6,1.4c-0.3,0-0.6,0.1-0.8,0.2c-0.2-0.2-0.3-0.5-0.3-0.7c0-0.2,0.3-0.4,0.9-0.4  c1.4,0,2.2,0.6,2.2,1.6C15.4,2.5,15.3,2.8,15.2,3.1L15.2,3.1z M18.6,20.5c0.1,0,0.2,0,0.3,0.1c0.5,1.1,1.2,2.2,2,3.1l0,0l0,0  c0.7-0.1,1.4-0.2,2.1-0.2l0,0c0.1,0,0.2,0,0.3,0.1c0.1,0.1,0.1,0.2,0.1,0.3c0,0.3-0.1,0.5-0.2,0.7c-0.4-0.3-0.9-0.5-1.4-0.5  c-0.2,0-0.4,0.1-0.6,0.1h-0.1H21l0.4,0.4c0.7,0.7,1.2,1.2,1.2,1.6c-0.1,0.3-0.2,0.5-0.4,0.7c-0.2-0.8-0.7-1.6-1.4-2.1l-0.1-0.1v0.3  c0,0.1,0,0.4,0,0.7c0,1.2-0.1,1.4-0.6,1.4c-0.1,0-0.1,0-0.3-0.1c0.3-0.4,0.4-0.9,0.3-1.4v-0.3v-0.3c0-0.2,0-0.5,0.1-0.7v-0.1h-0.1  c-0.3-0.1-0.6-0.1-0.9-0.1c-0.5-0.1-1,0.1-1.4,0.3c-0.2-0.1-0.3-0.4-0.4-0.7c0-0.3,0.2-0.3,0.4-0.3c0.1,0,0.3,0,0.3,0.1  c0.5,0.1,1,0.1,1.5,0.1h0.1v-0.1c-0.5-1-1-1.8-1.7-2.6C18.3,20.7,18.3,20.5,18.6,20.5L18.6,20.5z M10.6,23.6L10.6,23.6L10.6,23.6  c0.5,0.1,1,0,1.6-0.1c0.1,0,0.3,0,0.3-0.1c0.2,0,0.4,0,0.4,0.3c-0.1,0.3-0.2,0.5-0.4,0.7c-0.4-0.3-0.8-0.4-1.4-0.3  c-0.3,0-0.6,0.1-0.9,0.1h-0.1H10v0.1c0.1,0.2,0.1,0.5,0.1,0.7v0.3v0.3c-0.1,0.5,0.1,1,0.3,1.4c-0.1,0-0.1,0.1-0.3,0.1  c-0.5,0-0.6-0.2-0.6-1.4c0-0.3,0-0.5,0-0.7v-0.3l-0.1,0.1c-0.7,0.5-1.2,1.2-1.4,2.1c-0.2-0.1-0.4-0.4-0.4-0.7c0-0.4,0.5-0.9,1.2-1.6  l0.4-0.4l0.1-0.1H9.3C9.1,24,8.9,24,8.7,23.9c-0.5-0.1-1,0.1-1.4,0.5C7.1,24.2,7,23.9,7,23.7c0-0.1,0-0.2,0.1-0.3  c0.1-0.1,0.1-0.1,0.3-0.1l0,0c0.7,0,1.4,0.1,2.1,0.2l0,0l0,0c0.8-1,1.4-2,2-3.1c0.1-0.1,0.2-0.1,0.3-0.1c0.3,0,0.4,0.2,0.5,0.5  C11.6,21.7,11,22.6,10.6,23.6L10.6,23.6z M6.5,5.7c0.1-1.2,0.6-2.2,1.4-3c0.1,0,0.2,0.1,0.3,0.1c-0.7,0.7-1,1.5-1.1,2.4  c0,2.2,2.3,4,5,4c0,0.2,0,0.4,0,0.6c0,0.3,0,0.6,0.1,0.9C9.2,10.8,6.5,8.3,6.5,5.7L6.5,5.7z M26.5,10.3c1.3,2.1,2.4,2.1,4,2.1  c-1-0.8-1.9-1.8-2.6-2.9l-2.4-3.9c-0.3-1.2-0.8-2.3-1.8-3.2c0.3-0.1,0.5-0.2,0.7-0.4c-1.6,0-3.2-0.8-4-0.8c-0.5-0.1-0.8,0.3-0.9,0.7  V2c0.1,0.5,0.5,1,1.5,1c0.3,0,0.5,0,0.8-0.1c0.5,0.7,0.8,1.4,0.9,2.3c0,1.7-2,3.1-4.1,3.1c-0.1,0-0.3,0-0.3,0  c-0.2-0.4-0.8-1.1-0.8-2c0-1.4,0.9-2.5,0.9-3.8c0-0.6-0.2-1.1-0.6-1.6c0.3-0.2,0.5-0.5,0.6-0.7c-0.2,0.1-0.4,0.1-0.6,0.1  c-1,0-1.8-0.3-2.6-0.3c-0.5,0-0.6,0.1-0.6,0.3c0,0.1,0,0.1,0,0.1c-0.2-0.1-0.3-0.1-0.5-0.1c-0.3-0.1-0.5-0.1-0.7-0.1  c-1,0-1.3,0.4-1.3,0.7c0.1,0.5,0.3,0.8,0.5,1.2c0.3-0.2,0.7-0.3,1-0.3c0.5,0,1,0.5,1.2,1c-0.3,0.1-0.5,0.1-0.8,0.1  c-0.6,0-1.2-0.1-1.7-0.3h-0.1c0,0.1,0.3,0.5,0.8,0.7c0.6,0.2,1.2,0.3,1.9,0.4C14.7,3.8,14.6,4,14.4,4c-0.1,0-0.1,0-0.1,0  c-0.7-0.1-1.2-0.3-1.8-0.5c0,0-0.1,0-0.1,0.1c0,0.3,0.9,1.2,1.8,1.4c-0.8,0.9-1.6,2-2,3.2c-0.1,0-0.3,0-0.3,0  c-2.1,0-4.1-1.3-4.1-3.1c0.1-0.8,0.4-1.6,0.9-2.3c0.3,0.1,0.5,0.1,0.8,0.1c0.9,0,1.4-0.5,1.5-1c0-0.5-0.4-0.8-0.8-0.8H10  C9.3,1.2,7.7,2,6.1,2c0.2,0.1,0.5,0.3,0.7,0.4C5.9,3.3,5.3,4.4,5,5.5L2.6,9.5C2,10.6,1,11.5,0,12.4c1.6,0,2.6,0.1,4-2.1l1.2-2  c0.1,0.3,0.2,0.5,0.3,0.8l-2.5,4c-0.7,1.1-1.6,2.1-2.6,2.9c1.6,0,2.6,0.1,4-2.1l2.2-3.5c0.1,0.2,0.3,0.3,0.5,0.5l-3,4.8  c-0.7,1.1-1.6,2.1-2.6,2.9c1.6,0,2.6,0.1,4-2.1L8.4,12c0.2,0.1,0.4,0.3,0.6,0.3l-3.6,5.7c-0.7,1.1-1.6,2.1-2.6,2.9  c1.6,0,2.6,0.1,4-2.1l3.7-5.9c0.2,0.1,0.5,0.2,0.7,0.3L7,19.9c-0.7,1.1-1.6,2.1-2.6,2.9c1.6,0,2.6,0.1,4-2.1l4.4-7.1  c0.1,0,0.1,0,0.1,0c0.1,0.3,0.2,0.7,0.2,1.1c0,2.2-1.5,4.2-3.3,5.7c0.1,0.1,0.3,0.1,0.5,0.1c0.3,0,0.5,0,0.8-0.1  c-0.5,1-1,1.9-1.8,2.7c-0.7-0.1-1.3-0.2-2-0.2c-0.6,0-0.7,0.3-0.7,0.7c0,0.5,0.2,0.9,0.5,1.2c0.1-0.3,0.3-0.7,1.4-0.7  c0,0,0.1,0,0.1,0c-0.3,0.3-1.3,1.1-1.3,1.8c0.1,0.6,0.5,1,1,1c0-0.1-0.1-0.3,0-0.3c0.1-0.6,0.4-1.1,0.8-1.6c0,0.1,0,0.2,0,0.3  c0,1.2,0.1,1.8,0.9,1.8c0.3,0,0.5-0.1,0.7-0.3c-0.4-0.4-0.7-1-0.5-1.5c0-0.2,0-0.3,0-0.6c0-0.2,0-0.3,0-0.5c0.2,0,0.4-0.1,0.6-0.1  c0,0,1.1-0.1,1.4,0.5c0.3-0.3,0.7-0.7,0.7-1.1c0-0.3-0.1-0.6-0.7-0.6c-0.2,0-0.9,0.1-1.4,0.1c0.4-0.7,0.8-1.4,1.4-2  c0.1,0.3,0.3,0.6,0.5,0.8c0.1-1,0.5-2,1-2.7c0.1,0.8,0.2,1.6,0.2,2.4c0,3-0.7,5.3-2.3,5.7c0.2,0.4,0.7,0.7,1,0.7  c0.6,0,0.8-0.7,1.2-1.2c0.2,0.5,0.6,1.6,1,1.6c0.5,0,0.9-1.1,1-1.6c0.3,0.6,0.7,1.2,1.2,1.2c0.5,0,0.8-0.3,1-0.7  c-1.6-0.5-2.3-2.7-2.3-5.7c0-0.8,0.1-1.6,0.2-2.4c0.6,0.8,0.9,1.8,1,2.7c0.3-0.2,0.5-0.5,0.5-0.8c0.5,0.7,1,1.3,1.4,2  c-0.6,0-1.2-0.1-1.4-0.1c-0.6,0-0.7,0.3-0.7,0.6c0,0.4,0.5,0.8,0.7,1.1c0.3-0.6,1.4-0.5,1.4-0.5c0.2,0,0.4,0,0.6,0.1  c0,0.2,0,0.3,0,0.5c0,0.3,0,0.4,0,0.6c0.1,0.6-0.1,1.1-0.5,1.5c0.2,0.2,0.5,0.3,0.7,0.3c0.8,0,0.9-0.6,0.9-1.8c0-0.1,0-0.2,0-0.3  c0.5,0.4,0.7,1,0.8,1.6c0,0.1,0,0.3-0.1,0.3c0.6-0.1,1-0.5,1-1c0-0.7-1-1.4-1.3-1.8c0.1,0,0.1,0,0.1,0c1,0,1.3,0.3,1.4,0.7  c0.3-0.3,0.5-0.7,0.5-1.2c0-0.3-0.1-0.7-0.7-0.7c-0.7,0-1.3,0.1-2,0.2c-0.7-0.8-1.2-1.8-1.8-2.7c0.3,0.1,0.5,0.1,0.8,0.1  c0.2,0,0.3,0,0.5-0.1c-1.8-1.5-3.3-3.5-3.3-5.7c0-0.4,0.1-0.7,0.2-1.1c0.1,0,0.1,0,0.1,0l4.6,7.1c1.3,2.1,2.4,2.1,4,2.1  c-1-0.8-1.9-1.8-2.6-2.9l-4.2-6.7c0.2-0.1,0.5-0.1,0.7-0.3l3.7,5.9c1.3,2.1,2.4,2.1,4,2.1c-1-0.8-1.9-1.8-2.6-2.9l-3.6-5.7  c0.2-0.1,0.4-0.3,0.6-0.3l2.9,4.7c1.3,2.1,2.4,2.1,4,2.1c-1-0.8-1.9-1.8-2.6-2.9l-3-4.8c0.2-0.1,0.3-0.3,0.5-0.5l2.2,3.5  c1.3,2.1,2.4,2.1,4,2.1c-1-0.8-1.9-1.8-2.6-2.9l-2.5-4c0.1-0.3,0.3-0.5,0.3-0.8L26.5,10.3z"></path>
+            </svg> <svg xmlns="http://www.w3.org/2000/svg" class="bmf-logo__flag" role="img" aria-hidden="true" viewBox="0 0 4.6 78.2" width="4.6" height="78.2" focusable="false" preserveAspectRatio="none">
+            <path id="icon-logo-flagge_gold" style="fill:#F8D200" class="st0" d="M2.6,52.1h2v26.1H0V52.1H2.6z"></path>
+            <path id="icon-logo-flagge_rot" style="fill:#E20613" d="M2.6,25.9h2v26.2H0V25.9H2.6z"></path>
+            <path id="icon-logo-flagge_schwarz" style="fill:#000" d="M4.6,0v26.1H0V0C0,0,4.6,0,4.6,0z"></path>
+        </svg> <svg fill="#000" xmlns="http://www.w3.org/2000/svg" class="bmf-logo__text" role="img" viewBox="0 0 106.6 27.1" width="106.6" height="27.1" focusable="false">
+            <title>BundesministeriumDerFinanzen</title>
+            <path id="icon-logo-text_text" d="M68.4,26.8V22c0.1-0.5-0.1-1-0.3-1.4c-0.3-0.3-0.6-0.5-1-0.4c-0.3,0-0.7,0.1-0.9,0.3c-0.2,0.1-0.4,0.3-0.6,0.5  v5.7h-1.2v-7.4h1.2v0.8l0,0c0.1-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.3-0.3,0.4-0.3c0.2-0.1,0.4-0.2,0.6-0.3c0.3-0.1,0.5-0.1,0.8-0.1  c0.3,0,0.6,0.1,0.9,0.1c0.3,0.1,0.5,0.3,0.7,0.5c0.2,0.3,0.3,0.5,0.5,0.8c0.1,0.4,0.2,0.8,0.1,1.3v4.9H68.4z M60.2,20.1  c-0.5,0-0.8,0.2-1,0.6c-0.3,0.5-0.5,1-0.5,1.6h2.7c0-0.1,0-0.1,0-0.2s0-0.2,0-0.3c0-0.4-0.1-0.8-0.3-1.2  C60.9,20.3,60.6,20.1,60.2,20.1L60.2,20.1z M62.6,21.8c0,0.3,0,0.6,0,0.8c0,0.3-0.1,0.5-0.1,0.6h-3.8c0,0.7,0.2,1.4,0.6,2  c0.4,0.4,0.9,0.7,1.4,0.7c0.2,0,0.4,0,0.6-0.1c0.1-0.1,0.3-0.1,0.5-0.2s0.2-0.1,0.3-0.2c0.1-0.1,0.1-0.1,0.2-0.2l0.5,0.9  c-0.1,0.1-0.1,0.1-0.3,0.2c-0.1,0.1-0.3,0.2-0.4,0.3c-0.2,0.1-0.5,0.2-0.7,0.3c-0.3,0.1-0.6,0.1-0.9,0.1c-0.5,0-0.8-0.1-1.2-0.3  c-0.4-0.1-0.7-0.4-1-0.7c-0.3-0.4-0.5-0.8-0.6-1.2c-0.1-0.6-0.3-1.2-0.2-1.8c0-0.6,0.1-1.2,0.2-1.7c0.1-0.5,0.3-0.8,0.6-1.2  s0.5-0.5,0.9-0.7c0.3-0.1,0.7-0.2,1.1-0.2c0.7-0.1,1.2,0.2,1.7,0.7C62.4,20.4,62.6,21.1,62.6,21.8L62.6,21.8z M56.3,20.1l-3,5.5l0,0  h3.2l-0.1,1h-4.8v-0.8l3.1-5.6l0,0h-2.9v-1h4.5L56.3,20.1z M49,26.8V22c0.1-0.5-0.1-1-0.3-1.4c-0.3-0.3-0.6-0.5-1-0.4  c-0.3,0-0.7,0.1-0.9,0.3c-0.2,0.1-0.4,0.3-0.6,0.5v5.7H45v-7.4h1.2v0.8l0,0c0.1-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.3-0.3,0.4-0.3  c0.2-0.1,0.4-0.2,0.6-0.3c0.3-0.1,0.5-0.1,0.8-0.1c0.3,0,0.6,0.1,0.9,0.1c0.3,0.1,0.5,0.3,0.7,0.5c0.2,0.3,0.3,0.5,0.5,0.8  c0.1,0.4,0.2,0.8,0.1,1.3v4.9H49z M40.6,25.9c0.1,0,0.3,0,0.5-0.1s0.3-0.1,0.3-0.2c0.1-0.1,0.2-0.1,0.3-0.3c0.1-0.1,0.1-0.2,0.2-0.2  v-1.6h-0.4c-0.5,0-0.9,0.1-1.4,0.3c-0.3,0.2-0.5,0.5-0.5,0.9c0,0.3,0.1,0.6,0.3,0.8C40,25.8,40.3,25.9,40.6,25.9L40.6,25.9z   M38.3,24.9c0-0.4,0.1-0.8,0.3-1.1c0.1-0.3,0.4-0.5,0.7-0.7c0.3-0.2,0.7-0.3,1-0.4c0.4-0.1,0.8-0.1,1.2-0.1h0.4v-0.7  c0.1-0.5-0.1-0.9-0.3-1.3c-0.3-0.3-0.6-0.4-0.9-0.3c-0.3,0-0.7,0.1-0.9,0.3c-0.2,0.1-0.4,0.3-0.6,0.5l-0.5-0.8  c0.1-0.1,0.2-0.2,0.3-0.3c0.1-0.1,0.3-0.2,0.5-0.3c0.2-0.1,0.4-0.2,0.7-0.3s0.5-0.1,0.8-0.1c0.7-0.1,1.3,0.2,1.8,0.7  c0.5,0.6,0.7,1.3,0.6,2v3.4c0,0.3,0,0.7,0,0.9c0,0.2,0,0.4,0.1,0.6H42l-0.1-0.8l0,0c-0.1,0.1-0.1,0.2-0.2,0.3  c-0.1,0.1-0.2,0.3-0.3,0.3c-0.1,0.1-0.3,0.2-0.5,0.3c-0.2,0.1-0.4,0.1-0.7,0.1s-0.5-0.1-0.8-0.1c-0.3-0.1-0.5-0.3-0.7-0.5  c-0.2-0.2-0.3-0.4-0.4-0.7C38.4,25.4,38.3,25.2,38.3,24.9L38.3,24.9z M35.7,26.8V22c0.1-0.5-0.1-1-0.3-1.4c-0.3-0.3-0.6-0.5-1-0.4  c-0.3,0-0.7,0.1-0.9,0.3c-0.2,0.1-0.4,0.3-0.6,0.5v5.7h-1.3v-7.4h1.2v0.8l0,0c0.1-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.3-0.3,0.4-0.3  c0.2-0.1,0.4-0.2,0.6-0.3c0.3-0.1,0.5-0.1,0.8-0.1c0.3,0,0.6,0.1,0.9,0.1c0.3,0.1,0.5,0.3,0.7,0.5c0.2,0.3,0.3,0.5,0.5,0.8  c0.1,0.4,0.2,0.8,0.1,1.3v4.9H35.7z M29,17.5c-0.3,0-0.5-0.1-0.7-0.3c-0.1-0.2-0.3-0.4-0.3-0.7s0.1-0.5,0.3-0.7  c0.1-0.2,0.4-0.3,0.7-0.3c0.2,0,0.5,0.1,0.6,0.3c0.1,0.2,0.3,0.4,0.3,0.7s-0.1,0.5-0.3,0.7C29.5,17.5,29.3,17.5,29,17.5z M28.4,26.8  h1.2v-7.5h-1.2V26.8z M21.7,26.8V16H27l-0.1,1h-3.8v4h3.5v1h-3.5v4.6L21.7,26.8L21.7,26.8z M17.3,20.4c-0.1-0.1-0.1-0.1-0.2-0.1  c-0.1-0.1-0.3-0.1-0.4-0.1c-0.3,0-0.7,0.1-0.9,0.3c-0.2,0.2-0.4,0.5-0.5,0.7v5.5h-1.2v-7.5h1.2v1l0,0c0.1-0.1,0.1-0.3,0.2-0.5  c0.1-0.1,0.2-0.3,0.3-0.4c0.1-0.1,0.3-0.2,0.5-0.3c0.2-0.1,0.4-0.1,0.6-0.1c0.1,0,0.3,0,0.5,0.1c0.1,0,0.2,0.1,0.3,0.1L17.3,20.4z   M10,20.1c-0.5,0-0.8,0.2-1,0.6c-0.3,0.5-0.5,1-0.5,1.6h2.7c0-0.1,0-0.1,0-0.2s0-0.2,0-0.3c0-0.4-0.1-0.8-0.3-1.2  C10.7,20.3,10.3,20.1,10,20.1L10,20.1z M12.3,21.8c0,0.3,0,0.6,0,0.8c0,0.3-0.1,0.5-0.1,0.6H8.5c0,0.7,0.2,1.4,0.6,2  c0.4,0.4,0.9,0.7,1.4,0.7c0.2,0,0.4,0,0.6-0.1c0.1-0.1,0.3-0.1,0.5-0.2c0.1-0.1,0.2-0.1,0.3-0.2c0.1-0.1,0.1-0.1,0.2-0.2l0.5,0.9  c-0.1,0.1-0.1,0.1-0.3,0.2c-0.1,0.1-0.3,0.2-0.4,0.3c-0.2,0.1-0.5,0.2-0.7,0.3c-0.3,0.1-0.6,0.1-0.9,0.1c-0.5,0-0.8-0.1-1.2-0.3  c-0.4-0.1-0.7-0.4-1-0.7c-0.3-0.4-0.5-0.8-0.6-1.2c-0.1-0.6-0.3-1.2-0.2-1.8c0-0.6,0.1-1.2,0.2-1.7c0.1-0.5,0.3-0.8,0.6-1.2  c0.3-0.3,0.5-0.5,0.9-0.7c0.3-0.1,0.7-0.2,1.1-0.2c0.7-0.1,1.2,0.2,1.7,0.7C12.2,20.4,12.4,21.1,12.3,21.8L12.3,21.8z M3,25.9  c0.2,0,0.3,0,0.5-0.1c0.1-0.1,0.3-0.1,0.4-0.2c0.1-0.1,0.2-0.1,0.3-0.3c0.1-0.1,0.1-0.1,0.2-0.2v-4.6c-0.1-0.1-0.3-0.1-0.4-0.2  c-0.2-0.1-0.4-0.1-0.6-0.1c-0.3,0-0.6,0.1-0.8,0.1c-0.3,0.1-0.5,0.3-0.7,0.5c-0.2,0.3-0.3,0.6-0.5,0.9c-0.1,0.5-0.2,0.9-0.2,1.3  c0,0.5,0.1,0.8,0.1,1.3c0.1,0.3,0.2,0.6,0.4,0.8c0.1,0.2,0.3,0.3,0.5,0.5C2.5,25.8,2.7,25.9,3,25.9L3,25.9z M0,23.1  c0-0.7,0.1-1.3,0.3-1.9c0.2-0.5,0.5-0.8,0.8-1.2c0.3-0.3,0.7-0.5,1-0.7s0.8-0.2,1.2-0.2c0.2,0,0.4,0,0.7,0.1c0.1,0,0.3,0.1,0.5,0.1  v-3.6l1.2-0.1v11.1H4.5V26l0,0c-0.1,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.2,0.3-0.3,0.3c-0.2,0.1-0.3,0.2-0.5,0.3C3.2,26.9,2.9,27,2.7,27  c-0.3,0-0.7-0.1-1-0.2c-0.3-0.1-0.6-0.4-0.8-0.7c-0.3-0.3-0.5-0.8-0.6-1.2C0.1,24.3,0,23.7,0,23.1L0,23.1z M101.3,11.1V6.3  c0.1-0.5-0.1-0.9-0.3-1.3c-0.2-0.3-0.5-0.5-0.8-0.4c-0.2,0-0.4,0-0.5,0.1s-0.3,0.1-0.5,0.2C99.1,5,99,5,98.9,5.1  c-0.1,0.1-0.2,0.2-0.3,0.3v5.7h-1.2V3.7h1.2v0.8l0,0c0.1-0.1,0.1-0.2,0.3-0.3c0.1-0.1,0.3-0.3,0.4-0.3c0.2-0.1,0.3-0.2,0.5-0.3  c0.2-0.1,0.5-0.1,0.7-0.1c0.7-0.1,1.4,0.3,1.8,1c0.1-0.1,0.2-0.3,0.3-0.3c0.1-0.1,0.3-0.3,0.5-0.3c0.2-0.1,0.4-0.2,0.6-0.3  c0.2-0.1,0.5-0.1,0.7-0.1c1.5,0,2.3,0.8,2.3,2.6v5h-1.4V6.3c0.1-0.5-0.1-0.9-0.3-1.3c-0.3-0.3-0.6-0.5-1-0.4c-0.3,0-0.7,0.1-0.8,0.3  c-0.2,0.1-0.4,0.3-0.5,0.5c0,0.1,0.1,0.3,0.1,0.4c0,0.1,0,0.3,0,0.4v5L101.3,11.1z M95.4,11.1h-1.2v-0.8l0,0  c-0.1,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.3,0.3-0.4,0.3c-0.2,0.1-0.4,0.2-0.6,0.3c-0.3,0.1-0.5,0.1-0.8,0.1c-0.3,0-0.6-0.1-0.9-0.1  c-0.3-0.1-0.5-0.3-0.7-0.5c-0.2-0.3-0.3-0.5-0.5-0.8c-0.1-0.4-0.1-0.8-0.1-1.3V3.7h1.2v4.8c-0.1,0.5,0.1,0.9,0.3,1.3  c0.3,0.3,0.6,0.4,0.9,0.4c0.3,0,0.7-0.1,0.9-0.3c0.2-0.1,0.4-0.3,0.6-0.5V3.7h1.2L95.4,11.1z M87.7,1.9c-0.3,0-0.5-0.1-0.7-0.3  c-0.1-0.2-0.3-0.4-0.3-0.7s0.1-0.5,0.3-0.7c0.1-0.2,0.4-0.3,0.7-0.3c0.2,0,0.5,0.1,0.6,0.3s0.3,0.4,0.3,0.7s-0.1,0.5-0.3,0.7  C88.1,1.8,87.9,1.9,87.7,1.9z M87,11.1h1.2V3.7H87V11.1z M85.8,4.8c-0.1-0.1-0.1-0.1-0.2-0.1c-0.1-0.1-0.3-0.1-0.4-0.1  c-0.3,0-0.7,0.1-0.9,0.3c-0.2,0.2-0.4,0.5-0.5,0.7v5.5h-1.2V3.7h1.2v1l0,0c0.1-0.1,0.1-0.3,0.2-0.5C84,4.1,84.2,4,84.3,3.8  s0.3-0.2,0.5-0.3c0.2-0.1,0.4-0.1,0.6-0.1c0.1,0,0.3,0,0.5,0.1c0.1,0,0.2,0.1,0.3,0.1L85.8,4.8z M78.5,4.5c-0.5,0-0.8,0.2-1,0.6  c-0.3,0.5-0.5,1-0.5,1.6h2.7c0-0.1,0-0.1,0-0.2s0-0.2,0-0.3c0-0.4-0.1-0.8-0.3-1.2C79.2,4.6,78.9,4.5,78.5,4.5L78.5,4.5z M80.8,6.2  c0,0.3,0,0.6,0,0.8s-0.1,0.5-0.1,0.6H77c0,0.7,0.2,1.4,0.6,2c0.4,0.4,0.9,0.7,1.4,0.7c0.2,0,0.4,0,0.6-0.1c0.1-0.1,0.3-0.1,0.5-0.2  c0.1-0.1,0.2-0.1,0.3-0.2c0.1-0.1,0.1-0.1,0.2-0.2l0.5,0.9c-0.1,0.1-0.1,0.1-0.3,0.2c-0.1,0.1-0.3,0.2-0.4,0.3  c-0.2,0.1-0.5,0.2-0.7,0.3c-0.3,0.1-0.6,0.1-0.9,0.1c-0.5,0-0.8-0.1-1.2-0.3c-0.4-0.1-0.7-0.4-1-0.7C76.3,10,76.1,9.6,76,9.2  c-0.1-0.6-0.3-1.2-0.2-1.8c0-0.6,0.1-1.2,0.2-1.7c0.1-0.5,0.3-0.8,0.6-1.2c0.3-0.3,0.5-0.5,0.9-0.7c0.3-0.1,0.7-0.2,1.1-0.2  c0.7-0.1,1.2,0.2,1.7,0.7C80.7,4.8,80.9,5.5,80.8,6.2L80.8,6.2z M74.8,4.7h-1.6v4.1c-0.1,0.4,0.1,0.7,0.2,1.1  c0.2,0.2,0.4,0.3,0.7,0.3c0.2,0,0.3,0,0.5-0.1c0.1-0.1,0.2-0.1,0.3-0.1l0.2,1c-0.1,0.1-0.3,0.1-0.4,0.2c-0.3,0.1-0.5,0.1-0.8,0.1  c-0.5,0.1-1-0.1-1.4-0.5C72,10.2,71.8,9.6,71.9,9V4.7H71V3.8l0.9-0.2L72,1.6h1.1v2.1h1.8L74.8,4.7z M69.4,5.1  c-0.1-0.1-0.3-0.3-0.5-0.4c-0.3-0.2-0.5-0.3-0.8-0.3c-0.3,0-0.5,0.1-0.8,0.3C67.1,4.9,67,5.1,67,5.3s0.1,0.5,0.3,0.7  c0.2,0.2,0.5,0.4,0.7,0.6l0.5,0.3c0.5,0.3,0.8,0.6,1.2,1c0.3,0.4,0.5,0.8,0.5,1.4c0,0.6-0.2,1.1-0.6,1.5c-0.5,0.5-1.1,0.7-1.8,0.6  c-0.3,0-0.5,0-0.8-0.1c-0.2-0.1-0.4-0.1-0.6-0.2c-0.1-0.1-0.3-0.2-0.5-0.3c-0.1-0.1-0.2-0.2-0.3-0.3l0.6-1c0.1,0.1,0.1,0.1,0.2,0.2  c0.1,0.1,0.2,0.2,0.3,0.3c0.1,0.1,0.3,0.1,0.4,0.2c0.2,0.1,0.4,0.1,0.5,0.1c0.3,0,0.6-0.1,0.8-0.3c0.2-0.1,0.3-0.4,0.3-0.6  c0-0.1,0-0.3-0.1-0.5c-0.1-0.1-0.1-0.3-0.2-0.3c-0.1-0.1-0.2-0.2-0.3-0.3C68.1,8.3,68,8.1,67.8,8l-0.5-0.3c-0.4-0.3-0.8-0.6-1.1-1  c-0.3-0.4-0.4-0.8-0.4-1.3c0-0.3,0.1-0.5,0.2-0.8c0.1-0.3,0.3-0.5,0.5-0.6c0.2-0.2,0.5-0.3,0.7-0.4c0.3-0.1,0.6-0.1,0.8-0.1  c0.3,0,0.5,0,0.7,0.1c0.2,0.1,0.4,0.1,0.5,0.2c0.1,0.1,0.3,0.1,0.4,0.3c0.1,0.1,0.2,0.2,0.3,0.2L69.4,5.1z M63.6,1.9  c-0.3,0-0.5-0.1-0.7-0.3c-0.1-0.2-0.3-0.4-0.3-0.7s0.1-0.5,0.3-0.7c0.1-0.2,0.4-0.3,0.7-0.3s0.5,0.1,0.6,0.3s0.3,0.4,0.3,0.7  s-0.1,0.5-0.3,0.7C64,1.8,63.8,1.9,63.6,1.9z M63,11.1h1.2V3.7H63V11.1z M59.8,11.1V6.3c0.1-0.5-0.1-1-0.3-1.4  c-0.3-0.3-0.6-0.5-1-0.4c-0.3,0-0.7,0.1-0.9,0.3C57.4,5,57.2,5.1,57,5.3v5.7h-1.2V3.7H57v0.8l0,0c0.1-0.1,0.1-0.2,0.2-0.3  c0.1-0.1,0.3-0.3,0.4-0.3c0.2-0.1,0.4-0.2,0.6-0.3c0.3-0.1,0.5-0.1,0.8-0.1c0.3,0,0.6,0.1,0.9,0.1c0.3,0.1,0.5,0.3,0.7,0.5  c0.2,0.3,0.3,0.5,0.5,0.8c0.1,0.4,0.2,0.8,0.1,1.3v4.9L59.8,11.1z M53.2,1.9c-0.3,0-0.5-0.1-0.7-0.3c-0.1-0.2-0.3-0.4-0.3-0.7  s0.1-0.5,0.3-0.7c0.1-0.2,0.4-0.3,0.7-0.3c0.2,0,0.5,0.1,0.6,0.3S54,0.7,54,1S54,1.4,53.8,1.6C53.6,1.8,53.4,1.9,53.2,1.9z   M52.5,11.1h1.2V3.7h-1.2V11.1z M45.5,11.1V6.3c0.1-0.5-0.1-0.9-0.3-1.3c-0.2-0.3-0.5-0.5-0.8-0.4c-0.2,0-0.4,0-0.5,0.1  s-0.3,0.1-0.5,0.2C43.3,5,43.2,5,43.1,5.1c-0.1,0.1-0.2,0.2-0.3,0.3v5.7h-1.2V3.7h1.2v0.8l0,0c0.1-0.1,0.1-0.2,0.3-0.3  c0.1-0.1,0.3-0.3,0.4-0.3c0.2-0.1,0.3-0.2,0.5-0.3c0.2-0.1,0.5-0.1,0.7-0.1c0.7-0.1,1.4,0.3,1.8,1c0.1-0.1,0.2-0.3,0.3-0.3  c0.1-0.1,0.3-0.3,0.5-0.3c0.2-0.1,0.4-0.2,0.6-0.3c0.2-0.1,0.5-0.1,0.7-0.1c1.5,0,2.3,0.8,2.3,2.6v5h-1.2V6.3  c0.1-0.5-0.1-0.9-0.3-1.3c-0.3-0.3-0.6-0.5-1-0.4c-0.3,0-0.7,0.1-0.8,0.3C47.2,5,47,5.1,46.9,5.3c0,0.1,0.1,0.3,0.1,0.4  c0,0.1,0,0.3,0,0.4v5L45.5,11.1z M39.4,5.1c-0.1-0.1-0.3-0.3-0.5-0.4c-0.3-0.2-0.5-0.3-0.8-0.3c-0.3,0-0.5,0.1-0.8,0.3  C37.1,4.9,37,5.1,37,5.3s0.1,0.5,0.3,0.7c0.2,0.2,0.5,0.4,0.7,0.6l0.5,0.3c0.5,0.3,0.8,0.6,1.2,1c0.3,0.4,0.5,0.8,0.5,1.4  c0,0.6-0.2,1.1-0.6,1.5c-0.5,0.5-1.1,0.7-1.8,0.6c-0.3,0-0.5,0-0.8-0.1c-0.2-0.1-0.4-0.1-0.6-0.2c-0.1-0.1-0.3-0.2-0.5-0.3  c-0.1-0.1-0.2-0.2-0.3-0.3l0.6-1c0.1,0.1,0.1,0.1,0.2,0.2c0.1,0.1,0.2,0.2,0.3,0.3c0.1,0.1,0.3,0.1,0.4,0.2c0.2,0.1,0.4,0.1,0.5,0.1  c0.3,0,0.6-0.1,0.8-0.3c0.2-0.1,0.3-0.4,0.3-0.6c0-0.1,0-0.3-0.1-0.5c-0.1-0.1-0.1-0.3-0.2-0.3c-0.1-0.1-0.2-0.2-0.3-0.3  C38.1,8.3,38,8.1,37.8,8l-0.5-0.3c-0.4-0.3-0.8-0.6-1.1-1c-0.3-0.4-0.4-0.8-0.4-1.3c0-0.3,0.1-0.5,0.2-0.8c0.1-0.3,0.3-0.5,0.5-0.6  c0.2-0.2,0.5-0.3,0.7-0.4c0.3-0.1,0.6-0.1,0.8-0.1c0.3,0,0.5,0,0.7,0.1c0.2,0.1,0.4,0.1,0.5,0.2c0.1,0.1,0.3,0.1,0.4,0.3  c0.1,0.1,0.2,0.2,0.3,0.2L39.4,5.1z M32.1,4.5c-0.5,0-0.8,0.2-1,0.6c-0.3,0.5-0.5,1-0.5,1.6h2.7c0-0.1,0-0.1,0-0.2s0-0.2,0-0.3  c0-0.4-0.1-0.8-0.3-1.2C32.9,4.6,32.5,4.5,32.1,4.5L32.1,4.5z M34.5,6.2c0,0.3,0,0.6,0,0.8s-0.1,0.5-0.1,0.6h-3.8  c0,0.7,0.2,1.4,0.6,2c0.4,0.4,0.9,0.7,1.4,0.7c0.2,0,0.4,0,0.6-0.1c0.1-0.1,0.3-0.1,0.5-0.2c0.1-0.1,0.2-0.1,0.3-0.2  c0.1-0.1,0.1-0.1,0.2-0.2l0.5,0.9c-0.1,0.1-0.1,0.1-0.3,0.2c-0.1,0.1-0.3,0.2-0.4,0.3c-0.2,0.1-0.5,0.2-0.7,0.3  c-0.3,0.1-0.6,0.1-0.9,0.1c-0.5,0-0.8-0.1-1.2-0.3c-0.4-0.1-0.7-0.4-1-0.7C30,10,29.7,9.6,29.7,9.2c-0.1-0.6-0.3-1.2-0.2-1.8  c0-0.6,0.1-1.2,0.2-1.7c0.1-0.5,0.3-0.8,0.6-1.2c0.3-0.3,0.5-0.5,0.9-0.7c0.3-0.1,0.7-0.2,1.1-0.2c0.7-0.1,1.2,0.2,1.7,0.7  C34.4,4.8,34.5,5.5,34.5,6.2L34.5,6.2z M25.2,10.2c0.2,0,0.3,0,0.5-0.1c0.1-0.1,0.3-0.1,0.4-0.2c0.1-0.1,0.2-0.1,0.3-0.3  c0.1-0.1,0.1-0.1,0.2-0.2V4.9c-0.1-0.1-0.3-0.1-0.4-0.2c-0.2-0.1-0.4-0.1-0.6-0.1c-0.3,0-0.6,0.1-0.8,0.1c-0.3,0.1-0.5,0.3-0.7,0.5  c-0.2,0.3-0.3,0.6-0.5,0.9c-0.1,0.5-0.2,0.9-0.2,1.3c0,0.5,0.1,0.8,0.1,1.3c0.1,0.3,0.2,0.6,0.4,0.8c0.1,0.2,0.3,0.3,0.5,0.5  C24.7,10.2,24.9,10.2,25.2,10.2L25.2,10.2z M22.2,7.5c0-0.7,0.1-1.3,0.3-1.9c0.2-0.5,0.5-0.8,0.8-1.2c0.3-0.3,0.7-0.5,1-0.7  c0.4-0.1,0.8-0.2,1.2-0.2c0.2,0,0.4,0,0.7,0.1c0.1,0,0.3,0.1,0.5,0.1V0.1L27.8,0v11.1h-1.2v-0.8l0,0c-0.1,0.1-0.1,0.2-0.2,0.3  c-0.1,0.1-0.2,0.3-0.3,0.3c-0.2,0.1-0.3,0.2-0.5,0.3c-0.3,0.1-0.5,0.1-0.8,0.1c-0.3,0-0.7-0.1-1-0.2c-0.3-0.1-0.6-0.4-0.8-0.7  c-0.3-0.3-0.5-0.8-0.6-1.2C22.2,8.7,22.2,8.1,22.2,7.5L22.2,7.5z M19.4,11.1V6.3c0.1-0.5-0.1-1-0.3-1.4c-0.3-0.3-0.6-0.5-1-0.4  c-0.3,0-0.7,0.1-0.9,0.3c-0.2,0.1-0.4,0.3-0.6,0.5v5.7h-1.2V3.7h1.2v0.8l0,0c0.1-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.3-0.3,0.4-0.3  c0.2-0.1,0.4-0.2,0.6-0.3c0.3-0.1,0.5-0.1,0.8-0.1c0.3,0,0.6,0.1,0.9,0.1c0.3,0.1,0.5,0.3,0.7,0.5c0.2,0.3,0.3,0.5,0.5,0.8  c0.1,0.4,0.2,0.8,0.1,1.3v4.9L19.4,11.1z M13.4,11.1h-1.2v-0.8l0,0c-0.1,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.3,0.3-0.4,0.3  c-0.2,0.1-0.4,0.2-0.6,0.3c-0.3,0.1-0.5,0.1-0.8,0.1c-0.3,0-0.6-0.1-0.9-0.1c-0.3-0.1-0.5-0.3-0.7-0.5c-0.2-0.3-0.3-0.5-0.5-0.8  C8.1,9.5,8.1,9,8.1,8.5V3.7h1.2v4.8C9.3,8.9,9.5,9.4,9.7,9.8c0.3,0.3,0.6,0.5,0.9,0.4c0.3,0,0.7-0.1,0.9-0.3  c0.2-0.1,0.4-0.3,0.6-0.5V3.7h1.2L13.4,11.1z M5.1,8.1c0-0.5-0.2-1-0.6-1.4C4,6.4,3.5,6.3,2.9,6.3H2V10h0.8C3.4,10,4,9.8,4.6,9.5  C5,9.2,5.1,8.7,5.1,8.1L5.1,8.1z M4.9,3.2c0-0.5-0.2-0.9-0.5-1.2c-0.5-0.4-1-0.5-1.6-0.5H2v3.7h0.7c0.6,0.1,1.2-0.1,1.6-0.5  C4.7,4.2,4.9,3.7,4.9,3.2L4.9,3.2z M6.3,3.1c0,0.3-0.1,0.7-0.1,1C6.1,4.4,5.9,4.6,5.7,4.8C5.6,5,5.4,5.2,5.1,5.3  C5,5.5,4.7,5.5,4.5,5.6l0,0C4.8,5.7,5,5.7,5.3,5.9c0.3,0.1,0.5,0.3,0.7,0.5C6.1,6.7,6.3,7,6.4,7.2c0.1,0.3,0.2,0.7,0.2,1  c0,0.4-0.1,0.8-0.2,1.2C6.3,9.7,6,10,5.7,10.3c-0.3,0.3-0.7,0.5-1.2,0.6C4,11,3.5,11.1,2.9,11.1H0.7V0.4h2.1c0.5,0,1.1,0.1,1.6,0.2  c0.4,0.1,0.8,0.3,1.1,0.5C5.8,1.3,6.1,1.6,6.2,2C6.2,2.3,6.3,2.7,6.3,3.1L6.3,3.1z"></path>
+        </svg> <svg fill="#000" xmlns="http://www.w3.org/2000/svg" class="bmf-logo__text bmf-logo__text--en" role="img" viewBox="0 0 106.6 27.1" width="106.6" height="27.1" focusable="false">
+            <title>Federal Ministry of Finance</title>
+            <path id="icon-logo-text_text-en" d="M 0.7440854,11.040083 V 0.26408317 h 5.294 l -0.094,1.07700003 h -3.842 v 3.983 h 3.545 v 1.078 h -3.545 V 11.040083 Z M 12.144085,6.0740832 q 0,0.484 -0.031,0.835 -0.031,0.351 -0.062,0.617 H 8.2250854 a 3.332,3.332 0 0 0 0.57,1.952 1.773,1.773 0 0 0 1.4599996,0.6249998 2.1,2.1 0 0 0 0.593,-0.078 2.214,2.214 0 0 0 0.789,-0.4059998 q 0.133,-0.109 0.2,-0.172 l 0.469,0.8899998 q -0.078,0.078 -0.234,0.226 a 2.1,2.1 0 0 1 -0.422,0.3 3.026,3.026 0 0 1 -0.656,0.258 3.442,3.442 0 0 1 -0.921,0.109 3.319,3.319 0 0 1 -1.2729996,-0.234 2.407,2.407 0 0 1 -0.968,-0.726 3.509,3.509 0 0 1 -0.617,-1.2489998 6.617,6.617 0 0 1 -0.219,-1.819 5.826,5.826 0 0 1 0.227,-1.726 3.447,3.447 0 0 1 0.617,-1.195 2.464,2.464 0 0 1 0.906,-0.7 2.726,2.726 0 0 1 1.109,-0.226 2.149,2.149 0 0 1 1.6869996,0.679 2.971,2.971 0 0 1 0.603,2.04 z m -2.3729996,-1.688 a 1.267,1.267 0 0 0 -1.078,0.562 3.069,3.069 0 0 0 -0.469,1.624 h 2.7329996 a 1.7,1.7 0 0 0 0.023,-0.227 q 0.008,-0.148 0.008,-0.32 a 2.03,2.03 0 0 0 -0.312,-1.21 1.051,1.051 0 0 0 -0.9049996,-0.429 z m 3.7169996,3.014 a 5.307,5.307 0 0 1 0.3,-1.905 3.512,3.512 0 0 1 0.765,-1.234 2.669,2.669 0 0 1 1.062,-0.664 3.782,3.782 0 0 1 1.187,-0.2 3.128,3.128 0 0 1 0.625,0.055 2.084,2.084 0 0 1 0.438,0.134 v -3.58800003 l 1.265,-0.141 V 11.040083 h -1.16 v -0.8 h -0.031 a 1.8,1.8 0 0 1 -0.172,0.258 1.743,1.743 0 0 1 -0.344,0.328 2.069,2.069 0 0 1 -0.547,0.281 2.274,2.274 0 0 1 -0.765,0.117 2.459,2.459 0 0 1 -1.007,-0.211 2.174,2.174 0 0 1 -0.836,-0.672 3.5,3.5 0 0 1 -0.57,-1.1869998 6.366,6.366 0 0 1 -0.21,-1.753 z m 2.967,2.6999998 a 1.674,1.674 0 0 0 0.531,-0.078 1.638,1.638 0 0 0 0.406,-0.1999998 1.726,1.726 0 0 0 0.289,-0.242 1.768,1.768 0 0 0 0.18,-0.219 v -4.615 a 1.888,1.888 0 0 0 -0.4,-0.187 1.771,1.771 0 0 0 -0.57,-0.078 2.249,2.249 0 0 0 -0.82,0.148 1.6,1.6 0 0 0 -0.664,0.492 2.546,2.546 0 0 0 -0.445,0.89 4.733,4.733 0 0 0 -0.164,1.343 5.4,5.4 0 0 0 0.133,1.3 2.435,2.435 0 0 0 0.367,0.843 1.418,1.418 0 0 0 0.531,0.461 1.442,1.442 0 0 0 0.626,0.1449998 z m 9.418,-4.0289998 q 0,0.484 -0.031,0.835 -0.031,0.351 -0.062,0.617 h -3.827 a 3.332,3.332 0 0 0 0.57,1.952 1.773,1.773 0 0 0 1.46,0.6249998 2.1,2.1 0 0 0 0.593,-0.078 2.214,2.214 0 0 0 0.789,-0.4059998 q 0.133,-0.109 0.2,-0.172 l 0.469,0.8899998 q -0.078,0.078 -0.234,0.226 a 2.1,2.1 0 0 1 -0.422,0.3 3.026,3.026 0 0 1 -0.656,0.258 3.442,3.442 0 0 1 -0.921,0.109 3.319,3.319 0 0 1 -1.273,-0.234 2.407,2.407 0 0 1 -0.968,-0.726 3.509,3.509 0 0 1 -0.617,-1.2489998 6.617,6.617 0 0 1 -0.219,-1.819 5.826,5.826 0 0 1 0.227,-1.726 3.447,3.447 0 0 1 0.614,-1.195 2.464,2.464 0 0 1 0.9,-0.692 2.726,2.726 0 0 1 1.109,-0.226 2.149,2.149 0 0 1 1.687,0.679 2.971,2.971 0 0 1 0.612,2.035 z m -2.374,-1.685 a 1.267,1.267 0 0 0 -1.078,0.562 3.069,3.069 0 0 0 -0.469,1.624 h 2.733 a 1.7,1.7 0 0 0 0.023,-0.227 q 0.008,-0.148 0.008,-0.32 a 2.03,2.03 0 0 0 -0.312,-1.21 1.051,1.051 0 0 0 -0.905,-0.429 z m 7.356,0.266 a 0.9,0.9 0 0 0 -0.2,-0.078 1.519,1.519 0 0 0 -0.422,-0.047 1.292,1.292 0 0 0 -0.929,0.32 1.871,1.871 0 0 0 -0.476,0.7 v 5.4999998 h -1.269 V 3.5470832 h 1.156 v 1.012 h 0.031 a 2.473,2.473 0 0 1 0.2,-0.43 1.537,1.537 0 0 1 0.319,-0.375 1.388,1.388 0 0 1 0.445,-0.258 1.81,1.81 0 0 1 0.617,-0.094 1.609,1.609 0 0 1 0.43,0.047 q 0.164,0.047 0.258,0.078 z m 0.734,4.482 a 2.178,2.178 0 0 1 0.25,-1.093 2.043,2.043 0 0 1 0.672,-0.711 2.866,2.866 0 0 1 0.992,-0.39 6,6 0 0 1 1.21,-0.117 h 0.39 v -0.718 a 1.94,1.94 0 0 0 -0.338,-1.312 1.23,1.23 0 0 0 -0.945,-0.359 1.7,1.7 0 0 0 -0.937,0.242 5.624,5.624 0 0 0 -0.593,0.43 l -0.525,-0.844 a 3.921,3.921 0 0 1 0.32,-0.281 2.681,2.681 0 0 1 0.476,-0.3 3.284,3.284 0 0 1 0.64,-0.234 3.223,3.223 0 0 1 0.812,-0.094 2.269,2.269 0 0 1 1.749,0.64 2.974,2.974 0 0 1 0.593,2.062 v 3.42 q 0,0.484 0.031,0.9449998 a 5.893,5.893 0 0 0 0.062,0.617 h -1.2 l -0.047,-0.828 h -0.036 a 1.993,1.993 0 0 1 -0.187,0.32 1.544,1.544 0 0 1 -0.312,0.328 1.877,1.877 0 0 1 -0.453,0.258 1.635,1.635 0 0 1 -0.625,0.109 1.993,1.993 0 0 1 -0.789,-0.156 1.938,1.938 0 0 1 -1.062,-1.0999998 2.29,2.29 0 0 1 -0.148,-0.833 z m 2.265,1.0149998 a 1.3,1.3 0 0 0 0.469,-0.078 1.5,1.5 0 0 0 0.351,-0.1869998 1.23,1.23 0 0 0 0.25,-0.242 q 0.1,-0.133 0.18,-0.226 v -1.656 l -0.406,0.016 a 2.91,2.91 0 0 0 -1.374,0.312 0.976,0.976 0 0 0 -0.469,0.906 1.242,1.242 0 0 0 0.266,0.867 0.947,0.947 0 0 0 0.732,0.2889998 z m 5.653,-0.8629998 a 1.187,1.187 0 0 0 0.133,0.656 0.526,0.526 0 0 0 0.461,0.1869998 1.138,1.138 0 0 0 0.289,-0.031 0.988,0.988 0 0 0 0.18,-0.062 l 0.109,0.937 a 2.668,2.668 0 0 1 -0.344,0.125 2.323,2.323 0 0 1 -0.672,0.078 1.394,1.394 0 0 1 -1.031,-0.39 1.946,1.946 0 0 1 -0.39,-1.3899998 v -9.40000003 l 1.265,-0.141 z m 14.868,-9.02200003 V 11.040083 h -1.31 V 4.9650832 q 0,-0.469 0.008,-0.875 0.008,-0.406 0.023,-0.718 0.016,-0.312 0.031,-0.484 h -0.047 q -0.078,0.359 -0.32,1.163 -0.242,0.804 -0.554,1.726 l -1.78,5.2629998 h -1.078 l -1.783,-5.2629998 q -0.312,-0.922 -0.554,-1.726 -0.242,-0.804 -0.32,-1.165 h -0.047 q 0.016,0.187 0.031,0.5 0.015,0.313 0.023,0.711 0.008,0.4 0.008,0.867 v 6.0749998 h -1.311 V 0.26408317 h 1.515 l 2.546,7.43400003 q 0.172,0.515 0.3,1.007 a 5.018,5.018 0 0 1 0.164,0.851 h 0.031 a 3.888,3.888 0 0 1 0.148,-0.843 q 0.133,-0.484 0.3,-1 l 2.546,-7.45000003 h 1.421 z m 3.467,10.77599983 h -1.265 V 3.5400832 h 1.265 z m -0.625,-9.3079998 a 0.816,0.816 0 0 1 -0.625,-0.25 0.92,0.92 0 0 1 -0.234,-0.65600003 0.9,0.9 0 0 1 0.235,-0.64 0.816,0.816 0 0 1 0.625,-0.25 0.8,0.8 0 0 1 0.609,0.25 0.9,0.9 0 0 1 0.234,0.64 0.92,0.92 0 0 1 -0.234,0.65600003 0.8,0.8 0 0 1 -0.609,0.25 z m 6.653,9.3079998 V 6.2140832 a 2.266,2.266 0 0 0 -0.32,-1.367 1.157,1.157 0 0 0 -0.976,-0.414 1.518,1.518 0 0 0 -0.937,0.281 3.442,3.442 0 0 0 -0.593,0.547 v 5.7789998 h -1.265 V 3.5400832 h 1.156 v 0.846 h 0.03 a 1.535,1.535 0 0 1 0.2,-0.273 1.956,1.956 0 0 1 0.406,-0.344 2.866,2.866 0 0 1 0.594,-0.283 2.275,2.275 0 0 1 0.781,-0.125 2.626,2.626 0 0 1 0.906,0.148 1.625,1.625 0 0 1 0.687,0.476 2.3,2.3 0 0 1 0.437,0.851 4.566,4.566 0 0 1 0.156,1.289 v 4.9199998 h -1.265 z m 4.42,0 h -1.265 V 3.5400832 h 1.265 z m -0.625,-9.3079998 a 0.816,0.816 0 0 1 -0.625,-0.25 0.92,0.92 0 0 1 -0.234,-0.65600003 0.9,0.9 0 0 1 0.235,-0.64 0.816,0.816 0 0 1 0.624,-0.25 0.8,0.8 0 0 1 0.609,0.25 0.9,0.9 0 0 1 0.234,0.64 0.92,0.92 0 0 1 -0.234,0.65600003 0.8,0.8 0 0 1 -0.609,0.25 z m 5.8,3.326 a 3.185,3.185 0 0 0 -0.453,-0.383 1.412,1.412 0 0 0 -0.859,-0.242 1.122,1.122 0 0 0 -0.765,0.234 0.725,0.725 0 0 0 -0.266,0.562 1.009,1.009 0 0 0 0.242,0.695 3.423,3.423 0 0 0 0.742,0.586 l 0.469,0.281 a 4.606,4.606 0 0 1 1.2,0.976 2.036,2.036 0 0 1 0.437,1.351 2.025,2.025 0 0 1 -0.617,1.4999998 2.418,2.418 0 0 1 -1.773,0.609 3.04,3.04 0 0 1 -0.8,-0.094 3.476,3.476 0 0 1 -0.6,-0.219 1.975,1.975 0 0 1 -0.43,-0.273 2.849,2.849 0 0 1 -0.281,-0.273 l 0.609,-0.9999998 q 0.094,0.094 0.227,0.219 a 2.05,2.05 0 0 0 0.32,0.242 1.967,1.967 0 0 0 0.422,0.1999998 1.729,1.729 0 0 0 0.547,0.078 1.3,1.3 0 0 0 0.859,-0.2499998 0.768,0.768 0 0 0 0.3,-0.609 1.361,1.361 0 0 0 -0.07,-0.461 1.055,1.055 0 0 0 -0.211,-0.351 1.964,1.964 0 0 0 -0.344,-0.3 q -0.2,-0.141 -0.469,-0.312 l -0.469,-0.3 a 4.522,4.522 0 0 1 -1.1,-0.953 1.992,1.992 0 0 1 -0.4,-1.281 1.787,1.787 0 0 1 0.625,-1.382 2.243,2.243 0 0 1 0.7,-0.406 2.42,2.42 0 0 1 0.851,-0.148 2.858,2.858 0 0 1 0.75,0.086 2.243,2.243 0 0 1 0.539,0.219 2.345,2.345 0 0 1 0.368,0.267 q 0.148,0.133 0.242,0.227 z m 5.435,-0.484 h -1.64 v 4.155 a 2.031,2.031 0 0 0 0.2,1.085 0.781,0.781 0 0 0 0.687,0.2889998 1.348,1.348 0 0 0 0.484,-0.078 1.619,1.619 0 0 0 0.3,-0.1409998 l 0.172,1.0149998 a 2.162,2.162 0 0 1 -0.375,0.2 1.981,1.981 0 0 1 -0.8,0.133 1.853,1.853 0 0 1 -1.452,-0.539 2.653,2.653 0 0 1 -0.484,-1.7879998 v -4.331 h -0.907 v -0.843 l 0.906,-0.187 0.141,-2.093 h 1.124 v 2.092 h 1.8 z m 4.732,0.078 a 0.9,0.9 0 0 0 -0.2,-0.078 1.519,1.519 0 0 0 -0.422,-0.047 1.292,1.292 0 0 0 -0.929,0.32 1.871,1.871 0 0 0 -0.476,0.7 v 5.4999998 h -1.265 V 3.5470832 h 1.156 v 1.012 h 0.031 a 2.474,2.474 0 0 1 0.2,-0.43 1.537,1.537 0 0 1 0.312,-0.375 1.388,1.388 0 0 1 0.445,-0.258 1.81,1.81 0 0 1 0.617,-0.094 1.609,1.609 0 0 1 0.43,0.047 q 0.164,0.047 0.258,0.078 z m 6.247,-1.109 -2.343,7.9339998 a 5.847,5.847 0 0 1 -0.992,2.077 2.08,2.08 0 0 1 -1.694,0.7 1.2,1.2 0 0 1 -0.39,-0.055 2.119,2.119 0 0 1 -0.219,-0.086 v -1.089 q 0.078,0.031 0.2,0.07 a 1.131,1.131 0 0 0 0.328,0.039 1.256,1.256 0 0 0 1.023,-0.422 3.587,3.587 0 0 0 0.6,-1.3 l 0.109,-0.39 -2.421,-7.4809998 h 1.359 l 1.171,4.154 q 0.172,0.64 0.312,1.195 a 5.765,5.765 0 0 1 0.172,0.992 h 0.031 a 7.206,7.206 0 0 1 0.148,-0.984 q 0.117,-0.547 0.289,-1.187 l 1.062,-4.17 h 1.249 z M 0.1390854,23.043083 a 5.818,5.818 0 0 1 0.242,-1.78 3.467,3.467 0 0 1 0.656,-1.226 2.58,2.58 0 0 1 0.953,-0.7 3.043,3.043 0 0 1 2.3,0 2.4,2.4 0 0 1 0.921,0.7 3.518,3.518 0 0 1 0.617,1.226 6.2,6.2 0 0 1 0.226,1.78 6.063,6.063 0 0 1 -0.234,1.8 3.381,3.381 0 0 1 -0.648,1.226 2.488,2.488 0 0 1 -0.961,0.7 3.082,3.082 0 0 1 -1.156,0.219 3.005,3.005 0 0 1 -1.156,-0.219 2.329,2.329 0 0 1 -0.921,-0.7 3.521,3.521 0 0 1 -0.617,-1.218 6.236,6.236 0 0 1 -0.226,-1.81 z m 4.607,0 a 4.152,4.152 0 0 0 -0.437,-2.179 1.373,1.373 0 0 0 -1.218,-0.679 1.355,1.355 0 0 0 -1.21,0.679 4.214,4.214 0 0 0 -0.43,2.179 4.02,4.02 0 0 0 0.437,2.155 1.385,1.385 0 0 0 1.218,0.656 1.367,1.367 0 0 0 1.21,-0.656 4.081,4.081 0 0 0 0.426,-2.157 z m 5.9659996,-2.717 H 9.1770854 v 6.46 h -1.265 v -6.463 h -0.906 v -0.843 l 0.906,-0.172 v -1.5 a 2.86,2.86 0 0 1 0.172,-1.046 2.071,2.071 0 0 1 0.453,-0.718 1.657,1.657 0 0 1 0.656,-0.406 2.5,2.5 0 0 1 0.8,-0.125 1.9,1.9 0 0 1 0.6869996,0.109 2.272,2.272 0 0 1 0.375,0.172 l -0.266,1.046 a 1.558,1.558 0 0 0 -0.265,-0.133 1.117,1.117 0 0 0 -0.422,-0.07 0.843,0.843 0 0 0 -0.6869996,0.281 1.664,1.664 0 0 0 -0.234,1.031 v 1.343 h 1.6839996 z m 4.541,6.46 v -10.773 h 5.294 l -0.094,1.073 h -3.842 v 3.983 h 3.545 v 1.078 h -3.545 v 4.639 z m 7.965,0 h -1.265 v -7.5 h 1.265 z m -0.625,-9.308 a 0.816,0.816 0 0 1 -0.625,-0.25 0.92,0.92 0 0 1 -0.234,-0.656 0.9,0.9 0 0 1 0.234,-0.64 0.816,0.816 0 0 1 0.625,-0.25 0.8,0.8 0 0 1 0.609,0.25 0.9,0.9 0 0 1 0.234,0.64 0.92,0.92 0 0 1 -0.234,0.656 0.8,0.8 0 0 1 -0.609,0.253 z m 6.653,9.308 v -4.823 a 2.266,2.266 0 0 0 -0.32,-1.367 1.157,1.157 0 0 0 -0.976,-0.414 1.518,1.518 0 0 0 -0.937,0.281 3.442,3.442 0 0 0 -0.593,0.547 v 5.776 h -1.266 v -7.5 h 1.156 v 0.85 h 0.031 a 1.535,1.535 0 0 1 0.2,-0.273 1.957,1.957 0 0 1 0.406,-0.344 2.866,2.866 0 0 1 0.593,-0.289 2.275,2.275 0 0 1 0.781,-0.125 2.626,2.626 0 0 1 0.906,0.148 1.625,1.625 0 0 1 0.687,0.476 2.3,2.3 0 0 1 0.437,0.851 4.566,4.566 0 0 1 0.156,1.289 v 4.917 z m 2.719,-1.9 a 2.178,2.178 0 0 1 0.25,-1.093 2.043,2.043 0 0 1 0.672,-0.711 2.866,2.866 0 0 1 0.992,-0.39 6,6 0 0 1 1.21,-0.117 h 0.39 v -0.721 a 1.94,1.94 0 0 0 -0.336,-1.312 1.23,1.23 0 0 0 -0.945,-0.359 1.7,1.7 0 0 0 -0.937,0.242 5.624,5.624 0 0 0 -0.593,0.43 l -0.531,-0.843 a 3.92,3.92 0 0 1 0.32,-0.281 2.68,2.68 0 0 1 0.476,-0.3 3.283,3.283 0 0 1 0.64,-0.234 3.223,3.223 0 0 1 0.812,-0.094 2.269,2.269 0 0 1 1.749,0.64 2.974,2.974 0 0 1 0.593,2.062 v 3.42 q 0,0.484 0.031,0.945 a 5.893,5.893 0 0 0 0.062,0.617 h -1.2 l -0.047,-0.828 h -0.033 a 1.993,1.993 0 0 1 -0.187,0.32 1.544,1.544 0 0 1 -0.312,0.328 1.877,1.877 0 0 1 -0.453,0.258 1.635,1.635 0 0 1 -0.625,0.109 1.993,1.993 0 0 1 -0.789,-0.156 1.938,1.938 0 0 1 -1.062,-1.1 2.29,2.29 0 0 1 -0.147,-0.832 z m 2.265,1.015 a 1.3,1.3 0 0 0 0.469,-0.078 1.5,1.5 0 0 0 0.351,-0.187 1.23,1.23 0 0 0 0.25,-0.242 q 0.1,-0.133 0.18,-0.226 v -1.659 l -0.406,0.016 a 2.91,2.91 0 0 0 -1.374,0.312 0.976,0.976 0 0 0 -0.469,0.906 1.242,1.242 0 0 0 0.266,0.867 0.947,0.947 0 0 0 0.731,0.289 z m 8.5,0.89 v -4.828 a 2.266,2.266 0 0 0 -0.32,-1.367 1.157,1.157 0 0 0 -0.976,-0.414 1.518,1.518 0 0 0 -0.937,0.281 3.442,3.442 0 0 0 -0.593,0.547 v 5.776 h -1.271 v -7.5 h 1.156 v 0.85 h 0.031 a 1.535,1.535 0 0 1 0.2,-0.273 1.957,1.957 0 0 1 0.406,-0.344 2.866,2.866 0 0 1 0.593,-0.289 2.274,2.274 0 0 1 0.781,-0.125 2.626,2.626 0 0 1 0.906,0.148 1.625,1.625 0 0 1 0.687,0.476 2.3,2.3 0 0 1 0.437,0.851 4.566,4.566 0 0 1 0.156,1.289 v 4.917 h -1.262 z m 7.325,-6.044 q -0.047,-0.047 -0.148,-0.141 a 1.58,1.58 0 0 0 -0.258,-0.187 1.8,1.8 0 0 0 -0.375,-0.164 1.632,1.632 0 0 0 -0.5,-0.07 1.928,1.928 0 0 0 -0.757,0.148 1.525,1.525 0 0 0 -0.609,0.476 2.444,2.444 0 0 0 -0.406,0.851 4.72,4.72 0 0 0 -0.148,1.273 6.158,6.158 0 0 0 0.133,1.39 2.62,2.62 0 0 0 0.367,0.9 1.365,1.365 0 0 0 0.57,0.484 1.814,1.814 0 0 0 0.742,0.148 1.592,1.592 0 0 0 0.882,-0.2 3.015,3.015 0 0 0 0.429,-0.328 l 0.515,0.875 a 2.3,2.3 0 0 1 -0.226,0.226 1.951,1.951 0 0 1 -0.383,0.258 2.572,2.572 0 0 1 -0.57,0.211 3.137,3.137 0 0 1 -0.773,0.086 3.338,3.338 0 0 1 -1.171,-0.2 2.316,2.316 0 0 1 -0.953,-0.672 3.37,3.37 0 0 1 -0.651,-1.225 6.312,6.312 0 0 1 -0.234,-1.859 5.226,5.226 0 0 1 0.281,-1.827 3.4,3.4 0 0 1 0.734,-1.21 2.806,2.806 0 0 1 1.007,-0.672 3.243,3.243 0 0 1 1.859,-0.133 2.47,2.47 0 0 1 0.547,0.2 1.806,1.806 0 0 1 0.375,0.25 q 0.148,0.133 0.242,0.227 z m 6.544,1.078 q 0,0.484 -0.031,0.835 -0.031,0.351 -0.062,0.617 h -3.826 a 3.332,3.332 0 0 0 0.57,1.952 1.773,1.773 0 0 0 1.46,0.625 2.1,2.1 0 0 0 0.593,-0.078 2.214,2.214 0 0 0 0.789,-0.406 q 0.133,-0.109 0.2,-0.172 l 0.469,0.89 q -0.078,0.078 -0.234,0.226 a 2.1,2.1 0 0 1 -0.422,0.3 3.026,3.026 0 0 1 -0.656,0.258 3.442,3.442 0 0 1 -0.921,0.109 3.319,3.319 0 0 1 -1.273,-0.234 2.407,2.407 0 0 1 -0.968,-0.726 3.509,3.509 0 0 1 -0.617,-1.249 6.617,6.617 0 0 1 -0.219,-1.819 5.827,5.827 0 0 1 0.227,-1.726 3.447,3.447 0 0 1 0.617,-1.195 2.464,2.464 0 0 1 0.906,-0.7 2.726,2.726 0 0 1 1.109,-0.226 2.149,2.149 0 0 1 1.687,0.679 2.971,2.971 0 0 1 0.596,2.038 z m -2.374,-1.687 a 1.267,1.267 0 0 0 -1.078,0.562 3.069,3.069 0 0 0 -0.469,1.624 h 2.733 a 1.706,1.706 0 0 0 0.023,-0.227 q 0.008,-0.148 0.008,-0.32 a 2.03,2.03 0 0 0 -0.312,-1.21 1.051,1.051 0 0 0 -0.911,-0.431 z" />
+        </svg> <svg xmlns="http://www.w3.org/2000/svg" class="bmf-logo__background" role="img" aria-hidden="true" viewBox="0 0 218 138">
+            <rect width="100%" height="100%" fill="#FFF" /> </svg>
+            <span class="bmf-header__logo-link-text">Zur Startseite des Bundesfinanzministeriums</span>
+        </a>
+    </div>
+</div>
+
+
+    </div>
+</header>
+
+<div class="content-outer-box" id="Inhalt" role="main">
+    <!-- calledDocument: /bmf/Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland -->
+    
+
+
+
+
+
+
+
+
+
+<div class="bmf-container-fluid bmf-container--colored">
+    <nav aria-label="Breadcrumb" class="bmf-breadcrumb" data-js-breadcrumb>
+        <ol class="bmf-breadcrumb-list" data-js-scrollhint>
+            <li class="bmf-breadcrumb-listItem">
+                <a href="Web/DE/Home/home.html" class="bmf-breadcrumb-link"
+                   aria-label="Zurück zur Startseite" tabindex="0">
+                    
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--home" aria-hidden="true" role="img" width="18" height="18" viewBox="0 0 18 18" aria-label="Startseite">
+  <title>Startseite</title>
+  <path d="M14.793 7.714c-.374.026-.658.349-.635.723v8.117H3.843V8.437c.023-.374-.26-.697-.635-.723-.375.026-.658.349-.635.723v8.84c-.002.187.064.369.186.511.112.132.276.21.449.212h11.585c.174-.002.337-.08.45-.212.121-.142.187-.324.186-.511v-8.84c.001-.187-.065-.368-.187-.51-.112-.133-.275-.21-.449-.213z" />
+  <path d="M17.743 7.222L9.4.146c-.223-.195-.547-.195-.77 0L.265 7.222c-.142.123-.234.298-.257.489-.027.193.015.39.118.554.092.156.245.263.418.294.173.03.35-.019.486-.134L9 1.68l7.961 6.745c.136.117.314.168.488.138.175-.03.328-.136.422-.293.214-.335.157-.785-.134-1.048h.006z" />
+</svg>
+
+
+                </a>
+            </li>
+            
+                
+                    <li class="bmf-breadcrumb-listItem">
+                        
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-next" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16" aria-label="Icon Weiter">
+  <title>Weiter</title>
+  <path d="M0 1.25L1.216 0 9 8 1.216 16 0 14.75 6.566 8z" />
+</svg>
+
+
+
+                        
+
+
+
+
+
+
+
+<div class="bmf-select">
+    <a href="javascript:void(0)" class="bmf-select-control" id="489534-breadcrumb" data-js-select>
+        <span class="sr-only">Aktuelle Seite</span>
+        <span class="bmf-select-title">BMF-Monatsbericht August 2025</span>
+        
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-down-circle-transparent" aria-hidden="true" role="img" width="26px" height="26px" viewBox="0 0 26 26" aria-label="arrow down circle transparent">
+  <title>Menü öffnen</title>
+  <g transform="translate(1.000000, 1.000000)">
+    <circle fill="none" stroke="#000000" stroke-width="1" cx="12" cy="12" r="12" />
+    <polygon fill="#000000" points="12 13.805 17.898 8.067 18.992 9.13 12 15.934 5.008 9.129 6.101 8.066" />
+  </g>
+</svg>
+
+
+        
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-up-circle" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" aria-label="arrow-up-circle">
+  <title>Menü schließen</title>
+  <g>
+    <circle fill="#FFC31D" cx="12" cy="12" r="12" />
+    <path d="M6.101,15.934l-1.093-1.063L12,8.066l6.992,6.805l-1.094,1.063L12,10.195L6.101,15.934z" />
+  </g>
+</svg>
+
+
+        <span class="sr-only">SeiteAendern</span>
+    </a>
+    <ul class="bmf-select-dropdown" aria-labelledby="489534-breadcrumb" data-js-select="dropdown">
+        
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2025/08/Kapitel/kapitel-1-editorial.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Editorial</span>
+                </a>
+            </li>
+        
+        
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2025/08/Kapitel/kapitel-2-fokus.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Im Fokus: Wachstumsbooster</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2025/08/Kapitel/kapitel-3-analysen-berichte.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Analysen und Berichte</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2025/08/Kapitel/kapitel-4-wirtschafts-und-finanzlage.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Aktuelle Wirtschafts- und Finanzlage</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2025/08/Kapitel/kapitel-5-aktuelles-aus-dem-bmf.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Aktuelles aus dem BMF</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2025/08/Kapitel/kapitel-6-0-statistiken-dokumentationen.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Statistiken und Dokumentationen</span>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+
+                        <a class="bmf-breadcrumb-link" href="Monatsberichte/Ausgabe/2025/08/monatsbericht-08-2025.html?nn=237786"
+                           aria-label="BMF-Monatsbericht August 2025" tabindex="0">
+                            BMF-Monatsbericht August 2025
+                        </a>
+                    </li>
+                
+                    <li class="bmf-breadcrumb-listItem">
+                        
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-next" aria-hidden="true" role="img" width="16" height="16" viewBox="0 0 16 16" aria-label="Icon Weiter">
+  <title>Weiter</title>
+  <path d="M0 1.25L1.216 0 9 8 1.216 16 0 14.75 6.566 8z" />
+</svg>
+
+
+
+                        
+
+
+
+
+
+
+<div class="bmf-select">
+    <a href="javascript:void(0)" class="bmf-select-control" id="489512-breadcrumb" data-js-select>
+        <span class="sr-only">Aktuelle Seite</span>
+        <span class="bmf-select-title">Im Fokus: Wachstumsbooster</span>
+        
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-down-circle-transparent" aria-hidden="true" role="img" width="26px" height="26px" viewBox="0 0 26 26" aria-label="arrow down circle transparent">
+  <title>Menü öffnen</title>
+  <g transform="translate(1.000000, 1.000000)">
+    <circle fill="none" stroke="#000000" stroke-width="1" cx="12" cy="12" r="12" />
+    <polygon fill="#000000" points="12 13.805 17.898 8.067 18.992 9.13 12 15.934 5.008 9.129 6.101 8.066" />
+  </g>
+</svg>
+
+
+        
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--arrow-up-circle" aria-hidden="true" role="img" width="24" height="24" viewBox="0 0 24 24" aria-label="arrow-up-circle">
+  <title>Menü schließen</title>
+  <g>
+    <circle fill="#FFC31D" cx="12" cy="12" r="12" />
+    <path d="M6.101,15.934l-1.093-1.063L12,8.066l6.992,6.805l-1.094,1.063L12,10.195L6.101,15.934z" />
+  </g>
+</svg>
+
+
+        <span class="sr-only">SeiteAendern</span>
+    </a>
+    <ul class="bmf-select-dropdown" aria-labelledby="489512-breadcrumb" data-js-select="dropdown">
+        
+            
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach" aria-current="page">
+                    
+                        
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--link-intern" aria-hidden="true" role="img" width="48" height="48" viewBox="0 0 48 48" aria-label="Icon Interner Link">
+  <title>Link (intern)</title>
+  <path d="M48 21.723L10.191 21.723 21.72 9.868 17.963 6 0 24.5 17.963 43 21.72 39.132 10.188 27.262 48 27.262z" transform="rotate(180 24 24.5)" />
+</svg>
+
+
+                    
+                    <span>Investitionssofortprogramm Deutschland: Mehr Wachstum und Wettbewerbsfähigkeit</span>
+                </a>
+            </li>
+        
+            
+            
+            
+            <li class="bmf-select-dropdownItem">
+                <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/interview-mit-michael-schrodi.html?nn=237786" class="bmf-select-itemLink" title="Sortieren nach">
+                    
+                    <span>Im Interview: Michael Schrodi, Parlamentarischer Staatssekretär beim Bundesminister der Finanzen</span>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+
+                        <a class="bmf-breadcrumb-link" href="Monatsberichte/Ausgabe/2025/08/Kapitel/kapitel-2-fokus.html?nn=237786"
+                           aria-label="Im Fokus: Wachstumsbooster" tabindex="0">
+                            Im Fokus: Wachstumsbooster
+                        </a>
+                    </li>
+                
+                <li class="bmf-breadcrumb-listItem bmf-breadcrumb-listItem bmf-breadcrumb-listItem--currentPage">
+                    
+                </li>
+            
+        </ol>
+    </nav>
+    <div class="bmf-reading-progressbar" js-reading-progressbar=""></div>
+</div>
+
+    <h1 class="aural">Inhalt</h1>
+    
+
+
+<div class="bmf-container-fluid bmf-container--colored">
+    <div class="bmf-intro">
+        <div class="bmf-row">
+            <div class="bmf-intro-content">
+                <h1 class="bmf-intro-title">
+                    <span class="bmf-title-text">
+                        Investitionssofortprogramm Deutschland: Mehr Wachstum und Wettbewerbsfähigkeit
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="content">
+    <div class="article-wrapper documentleaf basepage">
+
+        <div class="bmf-toolbox ">
+            <div class="bmf-date">
+                21.08.2025</div>
+        </div>
+    
+
+        <div class="article-content-wrapper">
+            <div class="article-text-wrapper">
+                <div class="article-text singleview ">
+
+                    
+                        <div class="subheadline">
+                            <div class="bmf-background"><div><ul><li>Wachstums<span lang="en-GB" xml:lang="en-GB">booster</span> beschlossen: Das Gesetz für ein steuerliches Investitionssofortprogramm zielt darauf ab, Deutschland wieder auf Wachstumskurs zu bringen und die Wettbewerbsfähigkeit zu stärken.</li><li>Investitionsanreize durch degressive Abschreibungen: Unternehmen profitieren von degressiven Abschreibungen in Höhe von bis zu 30 Prozent für Investitionen, die nach dem 30. Juni 2025 und vor dem 1. Januar 2028 getätigt werden.</li><li>Senkung der Körperschaftsteuer: Der Körperschaftsteuersatz wird schrittweise um jährlich einen Prozentpunkt beginnend ab 2028 von derzeit 15 Prozent auf 10 Prozent gesenkt, um den Standort Deutschland international wettbewerbsfähiger zu machen.</li><li>Absenkung des Thesaurierungssteuersatzes: Der Thesaurierungssteuersatz wird in drei Schritten auf 25 Prozent gesenkt, um die Belastungsneutralität zwischen Personenunternehmern und Kapitalgesellschaften aufrechtzuerhalten.</li><li>Förderung der E-Mobilität: Der Markthochlauf der E-Mobilität wird durch eine degressive Abschreibung für betriebliche Elektrofahrzeuge mit einem Abschreibungssatz im Jahr der Anschaffung in Höhe von 75 Prozent unterstützt. Bei der sogenannten Dienstwagenbesteuerung wird die Bruttolistenpreisgrenze für die Begünstigung von Elektrofahrzeugen von 70.000 Euro auf 100.000 Euro angehoben.</li><li>Stärkung der Forschung: Die Forschungszulage wird durch eine Erhöhung des Bemessungsgrundlagenhöchstbetrags und durch die Ausweitung förderfähiger Aufwendungen gestärkt, um Investitionen in Forschung und Entwicklung zu fördern und um die Standortattraktivität Deutschlands im internationalen Standortwettbewerb zu steigern.</li><li>Solide Finanzierung und langfristige Tragfähigkeit: Die Maßnahmen sind auf eine ausgewogene Steuerpolitik ausgerichtet, die sowohl wirtschaftliche Dynamik als auch Verteilungsgerechtigkeit fördert und die öffentlichen Finanzen langfristig sichert.</li></ul>
+</div></div>
+                        </div>
+                    
+
+                    <div class="bmf-toc">
+  <h2 class="bmf-toc-headline">Inhalt</h2>
+
+  <a href="#" id="Inhaltsverzeichnis489416"></a>
+  
+<ul class="toc">
+    <li>
+                        <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html#doc489416bodyText1">Wachstumsbooster beschlossen: Planungssicherheit und Anreize für private Investitionen</a>
+      
+                          </li>
+    <li>
+                            <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html#doc489416bodyText2">Ausgewogene Steuerpolitik für nachhaltiges Wachstum</a>
+      
+                          </li>
+  </ul>
+
+</div><a name="doc489416bodyText1"></a><h2>Wachstums<span lang="en-GB" xml:lang="en-GB">booster</span> beschlossen: Planungssicherheit und Anreize für private Investitionen</h2>
+
+<p>Der Weg für den Wachstumsbooster der Bundesregierung ist frei. Nach der Verabschiedung des entsprechenden Gesetzes für ein steuerliches Investitionssofortprogramm am 26. Juni 2025 im Deutschen Bundestag stimmte am 11. Juli 2025 auch der Bundesrat einstimmig zu.</p>
+
+<p>Das beschlossene Reformpaket sieht wesentliche steuerliche Maßnahmen vor, um Deutschland wieder auf Wachstumskurs zu bringen. Es soll die Wettbewerbsfähigkeit Deutschlands stärken und durch bessere Rahmenbedingungen starke Anreize setzen und Planungssicherheit für Standort- und Investitionsentscheidungen schaffen. Im Einzelnen sieht das Gesetz folgende Verbesserungen vor:</p>
+<h3>1. Investitions<span lang="en-GB" xml:lang="en-GB">booster</span> durch degressive Abschreibungen in Höhe von bis zu 30 Prozent</h3>
+
+<p>Die Wiedereinführung und Ausweitung der degressiven Absetzung für Abnutzung (AfA) dient der schnelleren Refinanzierung von Investitionen, kommt allen Unternehmen gleichermaßen zugute, ist unkompliziert in der Umsetzung und liefert damit eine schnelle Anreizwirkung in der Breite.</p>
+
+<p>Die Ausweitung der degressiven <abbr title="Absetzung für Abnutzung">AfA</abbr> gilt für alle beweglichen Wirtschaftsgüter des Anlagevermögens, die nach dem 30. Juni 2025 und vor dem 1. Januar 2028 angeschafft oder hergestellt worden sind.</p>
+<h3>2. Schrittweise Absenkung der Unternehmensteuer ab dem Jahr 2028</h3>
+
+<p>Daran zeitlich anschließend werden die Unternehmensteuern deutlich gesenkt. Um den Standort international wettbewerbsfähiger zu machen, wird der aktuelle Körperschaftsteuersatz jährlich, beginnend ab dem Jahr 2028, jeweils um 1 Prozentpunkt von derzeit 15 Prozent auf 10 Prozent reduziert.</p>
+
+<p>Ab dem Jahr 2032 beträgt die Gesamtsteuerbelastung für Unternehmen dann knapp 25 Prozent statt aktuell knapp 30 Prozent. Das ist ein wichtiges Zeichen für den Standort Deutschland, um bei der steuerlichen Belastung von Unternehmen international wettbewerbsfähig zu werden.</p>
+
+<p>Korrespondierend zur Körperschaftsteuersatzsenkung wird der Thesaurierungssteuersatz in § 34a Einkommensteuergesetz (EStG) ebenfalls beginnend ab 2028 in drei Schritten auf 25 Prozent abgesenkt, um die Belastungsneutralität zwischen Personenunternehmern und Kapitalgesellschaften weiterhin zu gewährleisten.</p>
+<h3>3. Investitions<span lang="en-GB" xml:lang="en-GB">booster</span> für E‑Mobilität bei Unternehmen</h3>
+
+<p>Mit dem Gesetz wird E‑Mobilität weiter gefördert und ausgebaut. Der allgemeine Investitionsbooster wird um einen solchen für E‑Mobilität ergänzt. Dafür wird eine degressive Abschreibung für nach dem 30. Juni 2025 und vor dem 1. Januar 2028 angeschaffte Elektrofahrzeuge eingeführt. Diese beginnt mit einem Abschreibungssatz von 75 Prozent, damit alle Unternehmen – insbesondere kleine und mittlere Unternehmen – davon profitieren. Dies leistet einen gezielten steuerlichen Beitrag für den Markthochlauf der E-Mobilität im betrieblichen Bereich.</p>
+
+<p>Zudem wird die Bruttolistenpreisgrenze bei der sogenannten Dienstwagenbesteuerung für die Begünstigung von Elektrofahrzeugen auf 100.000 Euro erhöht.</p>
+<h3>4. Investitions<span lang="en-GB" xml:lang="en-GB">booster</span> in Forschung</h3>
+
+<p>Um Investitionen in Forschung zu fördern, werden zudem bei der Forschungszulage der Bemessungsgrundlagenhöchstbetrag deutlich erhöht und unbürokratisch die förderfähigen Aufwendungen ausgeweitet.</p>
+
+<p>Maßgebliche Kriterien bei der Forschungszulage sind die Bemessungsgrundlage und der Fördersatz. Ab dem Jahr 2026 wird bei der steuerlichen Forschungszulage der Bemessungsgrundlagenhöchstbetrag von 10 <abbr title="Millionen">Mio.</abbr> Euro auf 12 <abbr title="Millionen">Mio.</abbr> Euro angehoben.</p>
+
+<p>Um bürokratiearm eine mittelbare Anhebung des Fördersatzes zu erreichen, werden die förderfähigen Aufwendungen auf Gemein- und sonstige Betriebskosten in Form einer 20-Prozent-Pauschale ausgeweitet. Darüber hinaus werden die förderfähigen Aufwendungen für Eigenleistungen von Einzelunternehmerinnen und -unternehmern sowie von Mitunternehmerinnen und Mitunternehmern von 70 Euro auf 100 Euro je Arbeitsstunde angehoben.</p>
+
+<p>Die Anhebung der Bemessungsgrundlage ist Bestandteil des Koalitionsvertrags; sie steigert die Attraktivität der steuerlichen Forschungsförderung und somit auch die Standortattraktivität Deutschlands im internationalen Standortwettbewerb. Dies ist ein deutliches Signal sowohl für inländische als auch ausländische Unternehmen, dass es sich lohnt, in Forschung und Entwicklung in Deutschland zu investieren.</p>
+<p class="bmf-navtotop">
+  <a class="bmf-link bmf-link--to-top bmf-link--icononly" href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html#Inhaltsverzeichnis489416">
+    <svg aria-hidden="true" aria-label="Icon Nach oben" class="bmf-icon bmf-icon--to-top" height="44" role="img" viewBox="0 0 44 44" width="44" xmlns="http://www.w3.org/2000/svg">
+      <title>Zum Seitenanfang</title>
+      <g>
+        <circle cx="22" cy="22" fill="#FFC31D" r="22"/>
+        <path d="M23.1,31.844V16.336l5.729,5.73l1.541-1.541L22,12.157l-8.37,8.368l1.541,1.541l5.728-5.73v15.508H23.1z" fill="#001826"/>
+      </g>
+      <title>Nach oben</title>
+    </svg>
+    <span class="bmf-link-text">Zum Seitenanfang</span>
+  </a>
+</p>
+<a name="doc489416bodyText2"></a><h2>Ausgewogene Steuerpolitik für nachhaltiges Wachstum</h2>
+
+<p>Deutschland steht geopolitisch und wirtschaftlich vor großen Herausforderungen. Das beschlossene Reformpaket sieht wesentliche steuerliche Maßnahmen vor, um Deutschland wieder auf Wachstumskurs zu bringen.</p>
+
+<p>Die Bundesregierung setzt auf eine ausgewogene Steuerpolitik, die sowohl die wirtschaftliche Dynamik als auch die Verteilungsgerechtigkeit fördert und dabei die langfristige Tragfähigkeit der öffentlichen Finanzen sicherstellt. Es ist daher klar, dass alle Vorhaben solide finanziert sein müssen. Das heißt, die geplanten steuerlichen Maßnahmen müssen zielgerichtet und effektiv sein.</p>
+
+<p>Der Bundesregierung ist bewusst, dass die geplanten steuerlichen Maßnahmen kurzfristig zu geringeren Steuereinnahmen von Bund, Ländern und Gemeinden führen werden. Es ist aber gerade jetzt wichtig, die Potenziale der deutschen Volkswirtschaft zu nutzen und wieder einen höheren Wachstumspfad zu erreichen. Dabei geht es nicht nur um die Bewältigung der gegenwärtigen Herausforderungen, sondern auch um die Schaffung einer langfristig resilienten Wirtschaft.</p>
+
+<p>Angesichts der aktuellen Wachstumsschwäche der deutschen Wirtschaft setzen diese kurzfristig umsetzbaren Maßnahmen wichtige und klare Impulse für einen Wachstumstrend. Gleichwohl handelt es sich nur um einen ersten Schritt zur Verbesserung der steuerlichen Rahmenbedingungen, dem umfassendere weitere Maßnahmen folgen müssen, wie auch im Koalitionsvertrag zwischen <abbr title="Christlich Demokratische Union">CDU</abbr>, <abbr title="Christlich-Soziale Union">CSU</abbr> und <abbr title="Sozialdemokratische Partei Deutschlands">SPD</abbr> vereinbart. Standortstärkende Maßnahmen müssen in ein Gesamtkonzept eingebettet werden, das sowohl schnell wirkende Entlastungen als auch in der Tiefe wirksame strukturelle Verbesserungen enthält.</p>
+<div class="bmf-background"><div><p>Das Gesetz für ein steuerliches Investitionssofortprogramm enthält folgende Maßnahmen:<br/>
+<br/>
+</p>
+
+<ul><li>Wiedereinführung und Aufstockung der degressiven <abbr title="Absetzung für Abnutzung">AfA</abbr> für bewegliche Wirtschaftsgüter des Anlagevermögens – „Investitions<span lang="en-GB" xml:lang="en-GB">booster</span>“ (§ 7 <abbr title="Absatz">Abs.</abbr> 2 <abbr title="Einkommensteuergesetz">EStG</abbr>). Gilt für Investitionen, die nach dem 30. Juni 2025 und vor dem 1. Januar 2028 getätigt werden.</li><li>Schrittweise Senkung des Körperschaftsteuersatzes um jährlich 1 Prozentpunkt ab dem 1. Januar 2028 von derzeit 15 Prozent auf 10 Prozent (§ 23 <abbr title="Absatz">Abs.</abbr> 1 des Körperschaftsteuergesetzes).</li><li>Schrittweise Absenkung des Thesaurierungssteuersatzes in § 34a <abbr title="Einkommensteuergesetz">EStG</abbr> für nicht entnommene Gewinne von derzeit 28,25 Prozent in drei Stufen auf 27 Prozent (Veranlagungszeitraum (VZ) 2028/2029), 26 Prozent (<abbr title="Veranlagungszeitraum">VZ</abbr> 2030/2031) und 25 Prozent (ab dem <abbr title="Veranlagungszeitraum">VZ</abbr> 2032, § 34a <abbr title="Absatz">Abs.</abbr> 1 Satz 1 <abbr title="Einkommensteuergesetz">EStG</abbr>).</li><li>Einführung einer arithmetisch-degressiven Abschreibung für neu angeschaffte Elektrofahrzeuge (§ 7 <abbr title="Absatz">Abs.</abbr> 2a – neu – <abbr title="Einkommensteuergesetz">EStG</abbr>):<br/>
+Abschreibungssatz im Jahr der Anschaffung: 75 Prozent<br/>
+Abschreibungszeitraum: sechs Jahre.</li><li>Anhebung der Bruttolistenpreisgrenze bei der sogenannten Dienstwagenbesteuerung für die Begünstigung von Elektrofahrzeugen von 70.000 Euro auf 100.000 Euro (§ 6 <abbr title="Absatz">Abs.</abbr> 1 <abbr title="Nummer">Nr.</abbr> 4 Satz 2 <abbr title="Nummer">Nr.</abbr> 3 und Satz 3 <abbr title="Nummer">Nr.</abbr> 3 <abbr title="Einkommensteuergesetz">EStG</abbr>).</li><li>Ausweitung des Forschungszulagengesetzes (§ 3 des Forschungszulagengesetzes):<br/>
+Anhebung des Höchstbetrags der Bemessungsgrundlage bei der steuerlichen Forschungszulage von 10 <abbr title="Millionen">Mio.</abbr> Euro auf 12 <abbr title="Millionen">Mio.</abbr> Euro. Ausweitung der förderfähigen Aufwendungen auf Gemein- und Betriebskosten in Form einer 20-Prozent-Pauschale<br/>
+Erhöhung der förderfähigen Aufwendungen für Eigenleistungen und Tätigkeitsverfügungen von 70 Euro auf 100 Euro.</li></ul>
+</div></div>
+<p> </p>
+
+
+                    
+                    
+
+                    
+
+                </div>
+            </div>
+        </div>
+
+        <div class="bmf-toolbox bmf-toolbox--socialmedia ">
+    <div class="bmf-select bmf-select--social">
+        <a href="javascript:void(0)" class="bmf-select-control" id="social-media-links" data-js-select>
+            <span class="bmf-select-title">Die aktuelle Seite in Ihren Sozialen Netzwerken teilen.</span>
+            
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--share" aria-hidden="true" role="img" width="32" height="32" viewBox="0 0 32 32" aria-label="Icon Teilen">
+  <title>Teilen</title>
+  <path d="M24.422,22.537c-1.007,0.023-1.981,0.349-2.801,0.933l-12.23-7.001C9.412,16.31,9.444,16.155,9.484,16     c0-0.093,0-0.372-0.093-0.467l12.23-7c0.813,0.598,1.79,0.924,2.801,0.933c2.576,0,4.666-2.09,4.666-4.668s-2.09-4.668-4.666-4.668     c-2.579,0-4.67,2.09-4.67,4.668c-0.013,0.162,0.02,0.323,0.094,0.467L7.618,12.27c-1.625-1.22-3.852-1.251-5.509-0.072     c-1.656,1.177-2.359,3.292-1.741,5.226c0.62,1.936,2.421,3.248,4.452,3.246c1.006-0.025,1.981-0.35,2.801-0.934l12.231,7.003     c0,0.188-0.094,0.28-0.094,0.468c0.002,2.576,2.095,4.666,4.672,4.663c2.576-0.003,4.664-2.093,4.662-4.671     c0-2.576-2.09-4.666-4.666-4.664L24.422,22.537z" />
+</svg>
+
+</a>
+        <ul class="bmf-select-dropdown" aria-labelledby="social-media-links">
+            <li class="bmf-select-dropdownItem bmf-select-dropdownItem--facebook">
+                <a href="http://www.facebook.com/sharer.php?u=https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html&t=Investitionssofortprogramm Deutschland: Mehr Wachstum und Wettbewerbsfähigkeit" target="_blank" class="bmf-select-itemLink"
+                   title="Bei Verwendung des Links kann Facebook den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Facebook teilen. Link öffnet sich in neuem Browserfenster.">
+                    <span class="sr-only">Bei Verwendung des Links kann Facebook den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Facebook teilen. Link öffnet sich in neuem Browserfenster.</span>
+                    
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--facebook" aria-hidden="true" role="img" width="36" height="36" viewBox="0 0 36 36" aria-label="Icon Facebook">
+  <title>Facebook</title>
+  <path d="M13.962 19.501H10v-5.386h3.962v-4.71C13.962 5.59 16.309 2 21.886 2c1.326-.002 2.65.098 3.961.3l-.22 5.086h-3.41c-2.018 0-2.312 1.12-2.312 2.692v4.039h5.942l-.404 5.386h-5.538V34.31h-5.942L13.962 19.5z" />
+</svg>
+
+</a>
+            </li>
+            <li class="bmf-select-dropdownItem bmf-select-dropdownItem--twitter">
+                <a href="https://twitter.com/intent/tweet?text=Investitionssofortprogramm Deutschland: Mehr Wachstum und Wettbewerbsfähigkeit+https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html" target="_blank" class="bmf-select-itemLink"
+                   title="Bei Verwendung des Links kann Twitter den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Twitter teilen. Link öffnet sich in neuem Browserfenster.">
+                    <span class="sr-only">Bei Verwendung des Links kann Twitter den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Twitter teilen. Link öffnet sich in neuem Browserfenster.</span>
+                    
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--twitter" aria-hidden="true" role="img" width="31" height="31" viewBox="0 0 31 31" aria-label="Icon X/Twitter">
+  <title>X/Twitter</title>
+  <path fill="#000000" d="M 18.449219 13.121094 L 29.988281 0 L 27.253906 0 L 17.234375 11.390625 L 9.230469 0 L 0 0 L 12.101562 17.226562 L 0 30.984375 L 2.734375 30.984375 L 13.316406 18.953125 L 21.769531 30.984375 L 31 30.984375 Z M 14.703125 17.378906 L 13.476562 15.664062 L 3.71875 2.011719 L 7.921875 2.011719 L 15.792969 13.027344 L 17.019531 14.742188 L 27.257812 29.0625 L 23.054688 29.0625 Z M 14.703125 17.378906" />
+</svg>
+
+</a>
+            </li>
+            <li class="bmf-select-dropdownItem bmf-select-dropdownItem--linkedin">
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html&title=Investitionssofortprogramm Deutschland: Mehr Wachstum und Wettbewerbsfähigkeit" target="_blank" class="bmf-select-itemLink"
+                   title="Bei Verwendung des Links kann LinkedIn den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über LinkedIn teilen. Link öffnet sich in neuem Browserfenster.">
+                    <span class="sr-only">Bei Verwendung des Links kann LinkedIn den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über LinkedIn teilen. Link öffnet sich in neuem Browserfenster.</span>
+                    
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--linkedin" aria-hidden="true" role="img" width="36" height="36" viewBox="0 0 36 36" aria-label="Icon LinkedIn">
+  <title>LinkedIn</title>
+  <path d="M25.844 11.94l.264.005c4.51 0 7.892 2.935 7.892 9.259V33h-6.856V21.995c0-2.766-.994-4.652-3.474-4.652-1.586.008-2.996 1.009-3.523 2.5-.175.538-.252 1.103-.225 1.668V33h-6.85s.09-18.64 0-20.57h6.857l-.001 2.905.09-.15c1.243-2.018 3.45-3.247 5.826-3.244zm-16.572.487V33H2.416V12.427h6.856zM5.82 2c2.105 0 3.814 1.699 3.82 3.799.006 2.1-1.692 3.808-3.798 3.82h-.045C3.692 9.608 1.994 7.9 2 5.8 2.006 3.699 3.715 2 5.82 2z" />
+</svg>
+
+</a>
+            </li>
+            <li class="bmf-select-dropdownItem bmf-select-dropdownItem--xing">
+                <a href="https://www.xing.com/social_plugins/share/new?h=1&url=https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html" target="_blank" class="bmf-select-itemLink"
+                   title="Bei Verwendung des Links kann Xing den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Xing teilen. Link öffnet sich in neuem Browserfenster.">
+                    <span class="sr-only">Bei Verwendung des Links kann Xing den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Xing teilen. Link öffnet sich in neuem Browserfenster.</span>
+                    
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--xing" aria-hidden="true" role="img" width="22" height="22" viewBox="0 0 22 22" aria-label="Icon Xing">
+  <title>Xing</title>
+  <path d="M7.399,4.944C7.243,4.603,6.91,4.367,6.521,4.354H3.34C3.33,4.353,3.318,4.353,3.306,4.353c-0.162,0-0.306,0.079-0.395,0.2  C2.87,4.625,2.846,4.709,2.846,4.799c0,0.09,0.024,0.174,0.065,0.247L5.08,8.754l-3.38,5.96c-0.04,0.07-0.064,0.155-0.064,0.245  s0.024,0.174,0.065,0.247c0.084,0.125,0.228,0.208,0.39,0.208c0.006,0,0.013,0,0.019,0h3.179c0.391-0.021,0.721-0.264,0.868-0.604  l3.432-6.066L7.399,4.944z" />
+  <path d="M20.3,0.694c0.04-0.07,0.063-0.155,0.063-0.245c0-0.09-0.023-0.174-0.064-0.247c-0.083-0.12-0.222-0.199-0.38-0.199  c-0.015,0-0.026,0.001-0.041,0.002h-3.237c-0.388,0.008-0.715,0.252-0.849,0.594L8.761,13.125l4.51,8.27  c0.154,0.351,0.492,0.59,0.889,0.603h3.172c0.01,0.001,0.021,0.001,0.033,0.001c0.158,0,0.301-0.079,0.385-0.2  c0.041-0.071,0.064-0.155,0.064-0.246c0-0.09-0.023-0.174-0.064-0.247l-4.469-8.168L20.3,0.694z" />
+</svg>
+
+</a>
+            </li>
+        </ul>
+    </div>
+    <div class="bmf-toolbox-sharePrint">
+        <div class="bmf-printButton">
+            <a href="javascript:void(0)" class="bmf-link bmf-link--print bmf-link--icononly" data-js-print>
+                
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--print" aria-hidden="true" role="img" width="32" height="32" viewBox="0 0 32 32" aria-label="Icon Drucken">
+  <title>Drucken</title>
+  <path d="M25.089.999V8.08l6.336-.001v16.619h-6.37v5.3H7.37v-5.3H1V8.08h6.37V.999h17.719zm4.237 9.218H3.137v12.382H7.37v-3.167h17.719v3.167h4.235l.002-12.382zm-2.429 1.99v2.392h-7.178v-2.392h7.178z" />
+</svg>
+
+<span class="bmf-link-text">Die aktuelle Seite drucken oder als PDF herunterladen.</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+    </div>
+
+    <div class="modal fade table-modal bmf-table-modal" id="tableModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true" data-js-table-modal>
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close bmf-lightbox-closeButton" data-dismiss="modal" data-js-table-modal-close-btn>
+                        <span class="sr-only">Schließen</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--close" aria-hidden="true" role="img" width="32" height="32" viewBox="0 0 32 32">
+                            <title>Schließen</title>
+                            <g>
+                                <path d="M3.866,0.133l28.002,28.001l-3.734,3.734L0.133,3.866L3.866,0.133z"></path>
+                                <path d="M28.134,0.133L0.133,28.134l3.733,3.733L31.868,3.866L28.134,0.133z"></path>
+                            </g>
+                        </svg>
+                    </button>
+                    <h2 class="modal-title aural" id="myModalLabel2">Tabelle</h2>
+                </div>
+                <div class="modal-body article-wrapper">
+                    <div class="table-body">
+                        <div class="table-container">
+                            <div class="table-responsive" data-js-table-modal-content>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade bmf-table-modal__backdrop" data-js-table-modal-backdrop></div>
+
+</div>
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+
+    <div class="bmf-container-fluid bmf-container--colored">
+        <div class="bmf-teaserListSubthemen" data-js-teaser-list-subthemen>
+            <div class="bmf-container-fluid">
+                <div class="bmf-scrollbox">
+                    
+                    
+                    
+                    
+                    
+                        
+                        
+                            
+                            <h2 class="bmf-scrollbox-headline">Mehr zum Thema</h2>
+                        
+                    
+
+                    
+
+                    <div class="bmf-scrollbox-wrapper" tabindex="0" data-js-scrollbox>
+                        <div class="bmf-scrollbox-list">
+                            
+                                
+
+                                
+                                
+                                    <div class="bmf-scrollbox-entry">
+                                        <div class="bmf-teaserSubthemen">
+                                            <div class="bmf-teaserSubthemen-content">
+                                                
+                                                    
+                                                
+                                                    
+                                                    
+                                                    
+                                                        
+                                                    
+                                                
+                                                <a href="Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/interview-mit-michael-schrodi.html" class="bmf-teaserSubthemen-link"
+                                                    
+                                                        
+                                                   data-js-subteaser>
+                                                    
+                                                    <span class="bmf-teaserSubthemen-title">
+                                                                
+                                                                    
+                                                                    
+                                                                        
+                                                                            
+                                                                            
+                                                                                Im Interview: Michael Schrodi, Parlamentarischer Staatssekretär beim Bundesminister der Finanzen
+                                                                            
+                                                                        
+                                                                    
+                                                                
+                                                            </span>
+                                                    <span class="bmf-teaserSubthemen-text">
+                                                                
+                                                                    
+                                                                    
+                                                                        Im Interview stellt sich Michael Schrodi vor und schildert, wie sich der Wachstumsbooster auf Betriebe sowie Arbeitnehmerinnen und Arbeitnehmer …
+                                                                    
+                                                                
+                                                            </span>
+                                                    
+                                                        
+                                                        
+                                                        
+                                                            
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--link-intern" aria-hidden="true" role="img" width="48" height="48" viewBox="0 0 48 48" aria-label="Icon Interner Link">
+  <title>Link (intern)</title>
+  <path d="M48 21.723L10.191 21.723 21.72 9.868 17.963 6 0 24.5 17.963 43 21.72 39.132 10.188 27.262 48 27.262z" transform="rotate(180 24 24.5)" />
+</svg>
+
+
+                                                        
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                                
+
+                                
+                                
+                                    <div class="bmf-scrollbox-entry">
+                                        <div class="bmf-teaserSubthemen">
+                                            <div class="bmf-teaserSubthemen-content">
+                                                
+                                                    
+                                                
+                                                    
+                                                    
+                                                    
+                                                        
+                                                    
+                                                
+                                                <a href="Content/DE/Standardartikel/Themen/Steuern/Wachstumsbooster/wachstumsbooster.html" class="bmf-teaserSubthemen-link"
+                                                    
+                                                        
+                                                   data-js-subteaser>
+                                                    
+                                                    <span class="bmf-teaserSubthemen-title">
+                                                                
+                                                                    
+                                                                    
+                                                                        
+                                                                            
+                                                                            
+                                                                                Der Wachstumsbooster kommt
+                                                                            
+                                                                        
+                                                                    
+                                                                
+                                                            </span>
+                                                    <span class="bmf-teaserSubthemen-text">
+                                                                
+                                                                    
+                                                                    
+                                                                        Wir sichern Arbeitsplätze und bringen Deutschland wieder auf Wachstumskurs. Mit Super-Abschreibungen und gezielten Steuererleichterungen geben wir …
+                                                                    
+                                                                
+                                                            </span>
+                                                    
+                                                        
+                                                        
+                                                        
+                                                            
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="bmf-icon bmf-icon--link-intern" aria-hidden="true" role="img" width="48" height="48" viewBox="0 0 48 48" aria-label="Icon Interner Link">
+  <title>Link (intern)</title>
+  <path d="M48 21.723L10.191 21.723 21.72 9.868 17.963 6 0 24.5 17.963 43 21.72 39.132 10.188 27.262 48 27.262z" transform="rotate(180 24 24.5)" />
+</svg>
+
+
+                                                        
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+
+<footer class="bmf-footer">
+    <div class="bmf-container">
+    </div>
+    
+    <div class="bmf-container">
+        <div class="bmf-footer-container">
+            <div class="bmf-footer-nav" role="navigation" aria-label="Fußzeile">
+                <h2 class="aural">Fußzeile</h2>
+                <ul class="bmf-footer-list">
+        <li class="bmf-footer-item">
+                    <a href="Web/DE/Meta/Impressum/impressum.html" class="bmf-footer-link">Impressum</a>
+                        </li>
+            <li class="bmf-footer-item">
+                    <a href="Web/DE/Meta/Datenschutz/datenschutz.html" class="bmf-footer-link">Datenschutz</a>
+                        </li>
+            <li class="bmf-footer-item">
+                    <a href="Web/DE/Meta/Erklaerung-Barrierefreiheit/erklaerung-barrierefreiheit.html" class="bmf-footer-link">Erklärung zur Barrierefreiheit</a>
+                        </li>
+            </ul>
+
+            </div>
+            <div class="bmf-footer-copyright">
+                <p class="bmf-footer-copyrightText">
+                    <em>© Bundesministerium der Finanzen</em>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    </body>
+    </html>
+    
+
+
+
+
+    
+
+    
+
+    
+
+
+
+
+
+

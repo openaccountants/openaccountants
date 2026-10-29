@@ -1,0 +1,27 @@
+{
+  "finding": "DE-B08",
+  "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-social-contributions.md",
+  "Guide_sha256": "1a5978cfb309aacdf73dfe49aa3455c6d470fba4145542b53be2e78fec6dc11f",
+  "native_LF": 38,
+  "exact_before": "5. **Pension:** test the § 2 SGB VI list. If a group applies and the work is more than marginal, register within three months and choose the contribution; check the exemptions. Otherwise decide on voluntary contributions or insurance on application.",
+  "source_id": "DEB265",
+  "source_URL": "https://www.gesetze-im-internet.de/sgb_6/__190a.html",
+  "source_native_LF": [
+    7,
+    7
+  ],
+  "exact_original_quote": "(1) Selbständig Tätige nach § 2 Satz 1 Nr. 1 bis 3 und 9 sind verpflichtet, sich innerhalb von drei Monaten nach der Aufnahme der selbständigen Tätigkeit beim zuständigen Rentenversicherungsträger zu melden. Selbständig Tätige nach § 2 Satz 1 Nummer 8 sind verpflichtet, dem zuständigen Rentenversicherungsträger die Erfüllung der für die Eintragung in die Handwerksrolle erforderlichen Voraussetzungen in ihrer Person sowie die Führung eines Handwerksbetriebs als Hauptbetrieb, der bisher als Nebenbetrieb im Sinne der §§ 2 und 3 der Handwerksordnung geführt wurde, innerhalb von drei Monaten ab Vorliegen der genannten Tatbestände zu melden. Eine Meldung ist nicht erforderlich, soweit eine Eintragung der Tatbestände in die Handwerksrolle bereits erfolgt ist. Die Vordrucke des Rentenversicherungsträgers sind zu verwenden.",
+  "actual_read_date": "2026-10-29",
+  "assessment": "Opening step broadly extends three-month registration to every section2group, while own190a lists1–3and9; craftspeople8 have a specific condition-triggered notice route with Handwerksrolle exception. Detailed192 already distinguishes them.",
+  "options": [
+    {
+      "label": "A — refer to own registration provision (recommended)",
+      "exact_after": "5. **Pension:** test the § 2 SGB VI list. If a group applies and the work is more than marginal, check registration under § 190a SGB VI and choose the contribution; check the exemptions. Otherwise decide on voluntary contributions or insurance on application."
+    },
+    {
+      "label": "B — state the subset explicitly",
+      "exact_after": "5. **Pension:** test the § 2 SGB VI list. If a group applies and the work is more than marginal, register within three months for groups 1, 2, 3 and 9; for craftspeople check the separate § 190a condition-triggered notice and Handwerksrolle exception, then choose the contribution; check the exemptions. Otherwise decide on voluntary contributions or insurance on application."
+    }
+  ],
+  "no_Guide_edit_by_writer": true
+}

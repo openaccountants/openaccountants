@@ -1,0 +1,206 @@
+{
+  "number": 40,
+  "controls": [
+    {
+      "name": "currentcase1splitmechanism80000zve",
+      "actual": "14418",
+      "expected": "14418"
+    },
+    {
+      "name": "currentcase1separatechoicecounterexampleequaleach40000",
+      "actual": "14418",
+      "expected": "14418"
+    },
+    {
+      "name": "currentcase2ownbasis15000within30826",
+      "actual": "15000",
+      "expected": "15000"
+    },
+    {
+      "name": "currentcase2with20kotherbasisroom10826",
+      "actual": "10826",
+      "expected": "10826"
+    },
+    {
+      "name": "currentcase3IAB50cost40k",
+      "actual": "20000",
+      "expected": "20000"
+    },
+    {
+      "name": "currentcase3purchaseaddback20k",
+      "actual": "20000",
+      "expected": "20000"
+    },
+    {
+      "name": "currentcase3reducedbase",
+      "actual": "20000",
+      "expected": "20000"
+    },
+    {
+      "name": "currentcase3new40percentofreducedbase",
+      "actual": "8000",
+      "expected": "8000"
+    },
+    {
+      "name": "currentcase3sumlifeIABpluscostminusaddback",
+      "actual": "40000",
+      "expected": "40000"
+    },
+    {
+      "name": "currentcase3loweractualcost30kaddback15k",
+      "actual": "15000",
+      "expected": "15000"
+    },
+    {
+      "name": "currentcase3unused5kreversal",
+      "actual": "5000",
+      "expected": "5000"
+    },
+    {
+      "name": "currentcase4qualifying799within800",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "currentcase4poolchoice799fiveyears",
+      "actual": "799/5",
+      "expected": "799/5"
+    },
+    {
+      "name": "currentcase5days210",
+      "actual": "1260",
+      "expected": "1260"
+    },
+    {
+      "name": "currentcase5days211cap",
+      "actual": "1260",
+      "expected": "1260"
+    },
+    {
+      "name": "old80kprofitNOTspecifiedtaxableincome",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "illustrativestipulated80kzveconditionaltariffonly",
+      "actual": "22464",
+      "expected": "22464"
+    },
+    {
+      "name": "illustrativestipulated80kzveconditionaljoint",
+      "actual": "14418",
+      "expected": "14418"
+    },
+    {
+      "name": "conditional80kdelta",
+      "actual": "8046",
+      "expected": "8046"
+    },
+    {
+      "name": "old70kprofitNOTspecifiedzve",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "conditional70kto55k15kdeductiondelta",
+      "actual": "5917",
+      "expected": "5917"
+    },
+    {
+      "name": "old6300assumptionnotconditionaltariffdelta",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "fixedrateentire80kto70kinterval",
+      "actual": "4200",
+      "expected": "4200"
+    },
+    {
+      "name": "fixedrate42validinterval",
+      "actual": "4200",
+      "expected": "4200"
+    },
+    {
+      "name": "GWG250exactnotregisterthreshold",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "GWG250.01registerthreshold",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "GWG800inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "pool250excluded",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "pool1000inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "commute70km200days",
+      "actual": "5320",
+      "expected": "5320"
+    },
+    {
+      "name": "room8fullmonths",
+      "actual": "840",
+      "expected": "840"
+    },
+    {
+      "name": "model10exactnotstrict",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "model10.01strict",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "salaryERpensioninputcapthenERoffset",
+      "actual": "21826",
+      "expected": "21826"
+    },
+    {
+      "name": "solepayer33kcap",
+      "actual": "30826",
+      "expected": "30826"
+    },
+    {
+      "name": "unadvised2026nominalSaturday",
+      "actual": "5",
+      "expected": "5"
+    },
+    {
+      "name": "unadvisedordinaryMonday",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "advisedFeb2028leap29",
+      "actual": "29",
+      "expected": "29"
+    },
+    {
+      "name": "KU25kexactqualifiesboundary",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "cash800kexactnotabove",
+      "actual": "True",
+      "expected": "True"
+    }
+  ],
+  "scope": "Five current qualitative mechanism cases checked; actual historical five pre-refresh case ranges247\u2013290 read, figures retained as historical and incorrect/unestablished assumptions distinguished. Illustrative80000/70000profit is NOT assumed taxable income: tariff controls explicitly use independently stipulated taxable bases, not an alleged recovered client result.0actualoriginal/current executable blocks. No structure ranking/pensionproduct recommendation."
+}

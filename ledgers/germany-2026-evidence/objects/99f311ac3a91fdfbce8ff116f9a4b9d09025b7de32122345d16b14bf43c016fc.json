@@ -1,0 +1,2229 @@
+[
+  {
+    "row": 1,
+    "LF_start": 3,
+    "LF_end": 3,
+    "section": "Scope/metadata",
+    "wording": "description: \"German social insurance contributions for 2026, written for the self-employed and voluntary members. Covers voluntary statutory health insurance (minimum base EUR 1,318.33, ceiling EUR 5,812.50 a month, 14.0% or 14.6% plus the fund's additional rate, average 2.9%), long-term care at 3.6% with the childless surcharge and child reductions, compulsory pension insurance for the self-employed groups in § 2 SGB VI (teachers, carers, midwives, craftspeople, one-client workers) with the 18.6% rate, standard, start-phase and income-based bases, exemptions, voluntary pension contributions, the Künstlersozialkasse and the 4.9% artists' levy, accident and unemployment insurance on application, the status procedure, due dates, late surcharges and the income tax deduction, plus a short employee summary. Trigger on: Krankenkasse freiwillig, Mindestbeitrag, KSK, Künstlersozialabgabe, Rentenversicherungspflicht Selbständige, Pflegeversicherung Kinderlosenzuschlag, Statusfeststellung. Out of scope: the payroll run (de-payroll), benefits in kind and managing directors (de-payroll-benefits), income tax (de-self-employed-income-tax, de-einkommensteuer-freelancer).\"",
+    "source_quote_ids": [
+      "SC.healthassessment",
+      "SC.pensionbase",
+      "SC.KSKeligibility",
+      "SC.levyrate"
+    ],
+    "classification": "Scope/companion summary; no new complete specialist method."
+  },
+  {
+    "row": 2,
+    "LF_start": 26,
+    "LF_end": 26,
+    "section": "Who this applies to",
+    "wording": "German social insurance for calendar year 2026: health and long-term care (charged on the same base), pension, unemployment, and accident insurance paid by the business. The insurance rules apply to everyone employed or self-employed in Germany, and the rules that do not need work apply to everyone resident here ([§ 3 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__3.html)).",
+    "source_quote_ids": [
+      "SC.territory"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 3,
+    "LF_start": 28,
+    "LF_end": 28,
+    "section": "Who this applies to",
+    "wording": "- **The self-employed and voluntary members** are the focus: voluntary or private health cover, compulsory pension insurance for the groups in § 2 SGB VI, the Künstlersozialkasse (KSK), voluntary and on-application insurance, accident insurance, the status procedure and the tax deduction.",
+    "source_quote_ids": [
+      "SC.pensionlist",
+      "SC.KSKeligibility"
+    ],
+    "classification": "Scope/companion summary; no new complete specialist method."
+  },
+  {
+    "row": 4,
+    "LF_start": 29,
+    "LF_end": 29,
+    "section": "Who this applies to",
+    "wording": "- **Employees** get a short summary below. Payroll steps are in `de-payroll`, which uses the same 2026 rates and ceilings.",
+    "source_quote_ids": [],
+    "classification": "Scope/companion summary; no new complete specialist method."
+  },
+  {
+    "row": 5,
+    "LF_start": 30,
+    "LF_end": 30,
+    "section": "Who this applies to",
+    "wording": "- **Not covered:** private premiums, professional pension funds (Versorgungswerke), farmers and foresters, civil servants, and the income tax computation.",
+    "source_quote_ids": [],
+    "classification": "Scope/companion summary; no new complete specialist method."
+  },
+  {
+    "row": 6,
+    "LF_start": 34,
+    "LF_end": 34,
+    "section": "Who this applies to",
+    "wording": "1. **Settle the status.** Work under instructions and inside the client's organisation points to employment ([§ 7(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__7.html)). If unclear, use the status procedure below.",
+    "source_quote_ids": [
+      "PB.employment",
+      "PB.status"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 7,
+    "LF_start": 35,
+    "LF_end": 35,
+    "section": "Who this applies to",
+    "wording": "2. **Employees:** insured by law in all four branches. Test the JAEG (health and care only) and the Minijob limit, then hand the payroll to `de-payroll`.",
+    "source_quote_ids": [
+      "SC.employedhealth",
+      "SC.employedpension",
+      "SC.employedcare",
+      "SC.employedunemployment",
+      "SC.JAEG",
+      "SC.minijob"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 8,
+    "LF_start": 36,
+    "LF_end": 36,
+    "section": "Who this applies to",
+    "wording": "3. **Self-employed health:** a main-occupation self-employed person is not compulsorily insured as an employee (§ 5(5) SGB V) and must hold statutory voluntary or private cover ([§ 193(3) VVG](https://www.gesetze-im-internet.de/vvg_2008/__193.html)). Give the fund the latest tax notice, or at the start the expected income.",
+    "source_quote_ids": [
+      "SC.mainoccupation",
+      "SC.coverobligation",
+      "SC.healthassessment"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 9,
+    "LF_start": 37,
+    "LF_end": 37,
+    "section": "Who this applies to",
+    "wording": "4. **Health amount:** all income, lifted to the minimum base and cut at the ceiling, times the reduced rate (general rate if sick pay was elected) plus the fund's own additional rate. Care on the same base at the rate for the member's children and age.",
+    "source_quote_ids": [
+      "SC.healthassessment",
+      "SC.healthrate",
+      "SC.reduced",
+      "SC.fundrate",
+      "SC.carechildren",
+      "SC.carebase"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 10,
+    "LF_start": 38,
+    "LF_end": 38,
+    "section": "Who this applies to",
+    "wording": "5. **Pension:** test the § 2 SGB VI list. If a group applies and the work is more than marginal, register within three months and choose the contribution; check the exemptions. Otherwise decide on voluntary contributions or insurance on application.",
+    "source_quote_ids": [
+      "SC.pensionlist",
+      "SC.pensionregister",
+      "SC.pensionexempt"
+    ],
+    "classification": "DE-B08 pending root wording precision: own190a covers specified groups, not every section2 population; detailed192 already distinguishes its subset."
+  },
+  {
+    "row": 11,
+    "LF_start": 39,
+    "LF_end": 39,
+    "section": "Who this applies to",
+    "wording": "6. **Artists and publicists:** test the KSVG conditions, register with the KSK, report next year's expected income by 1 December.",
+    "source_quote_ids": [
+      "SC.KSKeligibility",
+      "SC.KSKregister",
+      "SC.KSKforecast"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 12,
+    "LF_start": 40,
+    "LF_end": 40,
+    "section": "Who this applies to",
+    "wording": "7. **Accident and unemployment:** notify the accident insurer within one week of starting; decide on unemployment insurance on application within three months.",
+    "source_quote_ids": [
+      "SC.accidentregister",
+      "SC.unemploymentapply"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 13,
+    "LF_start": 41,
+    "LF_end": 41,
+    "section": "Who this applies to",
+    "wording": "8. **Artists' levy:** if the business pays self-employed artists or publicists, test the levy duty and report the fees by 31 March of the next year.",
+    "source_quote_ids": [
+      "SC.levyuser",
+      "SC.levyreport"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 14,
+    "LF_start": 42,
+    "LF_end": 42,
+    "section": "Who this applies to",
+    "wording": "9. **Pay and check.** The fund's or insurer's notice is the amount. Never rebuild a year's total from rates: add up the debits and check them against the notices.",
+    "source_quote_ids": [
+      "SC.healthassessment",
+      "SC.levyreport"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 15,
+    "LF_start": 43,
+    "LF_end": 43,
+    "section": "Who this applies to",
+    "wording": "10. **Income tax:** deduct the contributions within the caps of [§ 10 EStG](https://www.gesetze-im-internet.de/estg/__10.html). They are private, not business expenses.",
+    "source_quote_ids": [
+      "FR.health",
+      "FR.pension-cap"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 16,
+    "LF_start": 45,
+    "LF_end": 45,
+    "section": "Who this applies to",
+    "wording": "The three-month windows (pension registration and exemptions, unemployment insurance) and the one-month window of the status procedure all run from the first day of the work.",
+    "source_quote_ids": [
+      "SC.pensionregister",
+      "SC.pensionexemptprocedure",
+      "SC.unemploymentapply",
+      "PB.status"
+    ],
+    "classification": "DE-B06 root correction pending: section6(4) exemption clock starts at conditions, not always activity start; own detailed209 already correct."
+  },
+  {
+    "row": 17,
+    "LF_start": 49,
+    "LF_end": 49,
+    "section": "Who this applies to",
+    "wording": "Employees working for pay are insured by law in health ([§ 5(1) no. 1 SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html)), care ([§ 20(1) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__20.html)), pension ([§ 1 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__1.html)) and unemployment ([§ 25(1) SGB III](https://www.gesetze-im-internet.de/sgb_3/__25.html)). They are also covered by accident insurance, which the employer pays alone ([§ 150(1) SGB VII](https://www.gesetze-im-internet.de/sgb_7/__150.html)). The employer pays the total to the employee's health fund ([§ 28h SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28h.html)).",
+    "source_quote_ids": [
+      "SC.employedhealth",
+      "SC.employedcare",
+      "SC.employedpension",
+      "SC.accidentpayer",
+      "SC.collectingfund",
+      "SC.employedunemployment"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 18,
+    "LF_start": 53,
+    "LF_end": 53,
+    "section": "Who this applies to",
+    "wording": "| Pension | 9.3% | 9.3% | Half each ([§ 168(1) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__168.html)) |",
+    "source_quote_ids": [
+      "SC.pensionhalf",
+      "FR.miners-rate"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 19,
+    "LF_start": 54,
+    "LF_end": 54,
+    "section": "Who this applies to",
+    "wording": "| Unemployment | 1.3% | 1.3% | Half each ([§ 346(1) SGB III](https://www.gesetze-im-internet.de/sgb_3/__346.html)) |",
+    "source_quote_ids": [
+      "SC.unemploymenthalf",
+      "SC.unemploymentrate"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 20,
+    "LF_start": 55,
+    "LF_end": 55,
+    "section": "Who this applies to",
+    "wording": "| Health | 7.3% + half the fund's rate | 7.3% + half the fund's rate | Half each ([§ 249(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__249.html)) |",
+    "source_quote_ids": [
+      "SC.healthhalf",
+      "SC.healthrate",
+      "SC.fundrate"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 21,
+    "LF_start": 56,
+    "LF_end": 56,
+    "section": "Who this applies to",
+    "wording": "| Care, parent | 1.8%, less 0.25 points per child from the second to the fifth under 25 | 1.8% | Half each ([§ 58(1) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html)); for how the reductions split, see `de-payroll` |",
+    "source_quote_ids": [
+      "SC.careshare",
+      "SC.carebase",
+      "SC.carechildren"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 22,
+    "LF_start": 57,
+    "LF_end": 57,
+    "section": "Who this applies to",
+    "wording": "| Care, childless, 23 or older | 2.4% | 1.8% | The employee bears the surcharge alone ([§ 58(1) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html)) |",
+    "source_quote_ids": [
+      "SC.careshare",
+      "SC.carebase",
+      "SC.carechildren"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 23,
+    "LF_start": 59,
+    "LF_end": 59,
+    "section": "Who this applies to",
+    "wording": "- **Saxony:** the employee bears one more point of care alone ([§ 58(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html)); use the shares in `de-payroll`.",
+    "source_quote_ids": [
+      "SC.careshare"
+    ],
+    "classification": "Own58(3) states1percentagepoint alone then the remainder shared; this must not be interpreted as a full1point increment over the ordinary employee share. Actual precise shares are in payroll companion."
+  },
+  {
+    "row": 24,
+    "LF_start": 60,
+    "LF_end": 60,
+    "section": "Who this applies to",
+    "wording": "- **Ceilings:** pension and unemployment stop at EUR 8,450 a month; health and care at EUR 5,812.50.",
+    "source_quote_ids": [
+      "PB.pensionceiling",
+      "SC.2026JAEG"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 25,
+    "LF_start": 61,
+    "LF_end": 61,
+    "section": "Who this applies to",
+    "wording": "- **The JAEG (health and care only):** an employee whose regular yearly pay exceeds EUR 77,400 is free of compulsory health insurance ([§ 6(1) no. 1 SGB V](https://www.gesetze-im-internet.de/sgb_5/__6.html)). For someone already insured, cover ends at the end of the year the limit is exceeded, but only if the pay also exceeds next year's limit (§ 6(4)). The special JAEG of EUR 69,750 applies only to those privately insured on 31 December 2002 for that reason. Such an employee may stay voluntarily or go private; either way the employer pays a subsidy ([§ 257 SGB V](https://www.gesetze-im-internet.de/sgb_5/__257.html)).",
+    "source_quote_ids": [
+      "SC.JAEG",
+      "SC.JAEGcontinue",
+      "SC.healthsubsidy",
+      "SC.2026JAEG"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 26,
+    "LF_start": 62,
+    "LF_end": 62,
+    "section": "Who this applies to",
+    "wording": "- **Minijob and transition band:** pay up to EUR 603 a month is a Minijob ([§ 8(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). Above that, up to EUR 2,000 a month, the employee's share is reduced ([§ 20(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__20.html)). Both are in `de-payroll`.",
+    "source_quote_ids": [
+      "SC.minijob",
+      "SC.midijob",
+      "SC.minimumwage"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 27,
+    "LF_start": 63,
+    "LF_end": 63,
+    "section": "Who this applies to",
+    "wording": "- **Job plus business:** if self-employment is the main occupation, the job does not bring compulsory health insurance (§ 5(5) SGB V), but pension and unemployment insurance of the job continue. If the job is the main occupation, the employee is insured through it and the freelance income carries no health or care contribution: the contribution is on pay. The exception is an employee who also draws a statutory pension or a pension-like payment (Versorgungsbezüge): then the freelance income counts too, if it and any pension-like payments together exceed 1/20 of the monthly reference amount (EUR 197.75 in 2026) ([§ 226(1) no. 4 and (2) SGB V](https://www.gesetze-im-internet.de/sgb_5/__226.html)). Employing someone above the Minijob level raises the presumption that self-employment is the main occupation; the fund decides case by case.",
+    "source_quote_ids": [
+      "SC.mainoccupation",
+      "SC.healthotherincome",
+      "SC.2026reference"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 28,
+    "LF_start": 65,
+    "LF_end": 65,
+    "section": "Who this applies to",
+    "wording": "**Case: employee above the JAEG.** Hired 1 January 2026 at EUR 7,000 a month (EUR 84,000 a year), childless, age 40. Pay exceeds EUR 77,400, so the employee is free of compulsory health insurance and may stay as a voluntary member or go private, with the employer's subsidy. Pension and unemployment continue at 9.3% and 1.3% on the full EUR 7,000: EUR 651.00 and EUR 91.00 from the employee. Payroll steps: `de-payroll`.",
+    "source_quote_ids": [
+      "SC.JAEG",
+      "SC.2026JAEG",
+      "SC.pensionhalf",
+      "SC.unemploymenthalf",
+      "FR.miners-rate",
+      "SC.unemploymentrate"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 29,
+    "LF_start": 69,
+    "LF_end": 69,
+    "section": "Who this applies to",
+    "wording": "- **Who decides.** The parties to a contract can ask the Deutsche Rentenversicherung Bund, in writing or electronically, whether it is employment or self-employment. This is not possible once a health fund or another insurer has already started its own procedure on the same contract ([§ 7a(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__7a.html)). The fund must apply where the employer's report shows that the worker is the employer's spouse, partner or descendant, or a managing shareholder of a GmbH. The decision rests on an overall assessment of all circumstances. Other insurers are bound by it.",
+    "source_quote_ids": [
+      "PB.status"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 30,
+    "LF_start": 70,
+    "LF_end": 70,
+    "section": "Who this applies to",
+    "wording": "- **The test.** Signs of employment are work under instructions and being part of the client's organisation ([§ 7(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__7.html)). Working for one client only is not by itself employment, but it can trigger compulsory pension insurance as a one-client self-employed person (group 9 above). Keep the two risks apart.",
+    "source_quote_ids": [
+      "PB.employment",
+      "SC.pensionlist"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 31,
+    "LF_start": 71,
+    "LF_end": 71,
+    "section": "Who this applies to",
+    "wording": "- **Before the work starts.** On application the decision can be made before the work begins (§ 7a(4a)). Changes in the first month must be reported at once. A client can also ask for an opinion that covers other contracts of the same kind (§ 7a(4b)). These options, the third-party rule of § 7a(2) sentences 2 and 3, and the right to a joint hearing expire at the end of 30 June 2027 (§ 7a(7)). Check the law for any contract running past that date.",
+    "source_quote_ids": [
+      "PB.status"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 32,
+    "LF_start": 72,
+    "LF_end": 72,
+    "section": "Who this applies to",
+    "wording": "- **The one-month window.** If the application is made within one month of the work starting and employment is found, insurance starts only on the day the decision is announced. Two conditions apply: the worker consents, and for the time in between the worker had cover against illness and for old age comparable to the statutory schemes. The total contribution then falls due only when the decision can no longer be challenged (§ 7a(5)).",
+    "source_quote_ids": [
+      "PB.status"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 33,
+    "LF_start": 73,
+    "LF_end": 73,
+    "section": "Who this applies to",
+    "wording": "- **Appeals.** An objection or court action against the decision has suspensive effect (§ 7a(6)).",
+    "source_quote_ids": [
+      "PB.status"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 34,
+    "LF_start": 74,
+    "LF_end": 74,
+    "section": "Who this applies to",
+    "wording": "- **If employment is found later**, without the one-month protection, the client owes contributions back to the start of the work, and late-payment surcharges of 1% a month on the rounded-down arrears can follow ([§ 24(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__24.html)). The exposure is large. Refer before the client signs or at once when it comes up.",
+    "source_quote_ids": [
+      "PB.status",
+      "PB.svlate"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 35,
+    "LF_start": 78,
+    "LF_end": 78,
+    "section": "Rates, bands and thresholds",
+    "wording": "All figures are for 2026 unless the row says otherwise. Amounts marked \"check\" use the average additional health rate; each fund sets its own rate and the fund's notice decides. The 2.9% average for 2026 is announced by the Federal Health Ministry ([Beiträge](https://www.bundesgesundheitsministerium.de/beitraege)), which also lists EUR 1,017.19 as the top monthly health contribution of a voluntary member with sick pay.",
+    "source_quote_ids": [
+      "SC.average2026"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 36,
+    "LF_start": 84,
+    "LF_end": 84,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Health, general rate (members with a sick pay claim) | 14.6% | [§ 241 SGB V](https://www.gesetze-im-internet.de/sgb_5/__241.html) |",
+    "source_quote_ids": [
+      "SC.healthrate"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 37,
+    "LF_start": 85,
+    "LF_end": 85,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Health, reduced rate (no sick pay claim: the normal self-employed case) | 14.0% | [§ 243 SGB V](https://www.gesetze-im-internet.de/sgb_5/__243.html) |",
+    "source_quote_ids": [
+      "SC.reduced"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 38,
+    "LF_start": 86,
+    "LF_end": 86,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Health, fund's additional rate | set by each fund | [§ 242(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__242.html) |",
+    "source_quote_ids": [
+      "SC.fundrate"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 39,
+    "LF_start": 87,
+    "LF_end": 87,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Health, average additional rate (planning value only) | 2.9% (check) | [Federal Health Ministry, Beiträge](https://www.bundesgesundheitsministerium.de/beitraege) |",
+    "source_quote_ids": [
+      "SC.average2026"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 40,
+    "LF_start": 88,
+    "LF_end": 88,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Care, base rate | 3.6% | [§ 1 PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html) |",
+    "source_quote_ids": [
+      "SC.carebase"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 41,
+    "LF_start": 89,
+    "LF_end": 89,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Care, childless surcharge from the month after turning 23; reduction per child from the second to the fifth, while under 25 | 0.6 points; 0.25 points | [§ 55(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html) |",
+    "source_quote_ids": [
+      "SC.carechildren"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 42,
+    "LF_start": 90,
+    "LF_end": 90,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Pension, general scheme; miners' scheme (tax cap only) | 18.6%; 24.7% | [RVBeitrSBek 2026](https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html) |",
+    "source_quote_ids": [
+      "FR.miners-rate"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 43,
+    "LF_start": 91,
+    "LF_end": 91,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Unemployment | 2.6% | [§ 341(2) SGB III](https://www.gesetze-im-internet.de/sgb_3/__341.html) |",
+    "source_quote_ids": [
+      "SC.unemploymentrate"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 44,
+    "LF_start": 92,
+    "LF_end": 92,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Artists' levy on fees paid in 2026 | 4.9% | [§ 1 KSAbg2026V](https://www.gesetze-im-internet.de/ksabg2026v/BJNR0DC0A0025.html) |",
+    "source_quote_ids": [
+      "SC.levyrate"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 45,
+    "LF_start": 94,
+    "LF_end": 94,
+    "section": "Rates, bands and thresholds",
+    "wording": "**Full care rate of a member who pays alone, by children** (derived from [PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html) and [§ 55(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html)): no children, 23 or older 4.2%; one child (any age) or all children 25 or older 3.6%; two under 25 3.35%; three 3.1%; four 2.85%; five or more 2.6%. A parent never pays the surcharge, even when the children are grown. Members born before 1 January 1940 are also exempt from it. Proof of children goes to the care fund, and until it is given the fund charges the childless rate. Proof given within six months of the birth counts from the month of birth; later proof counts from the month after it is given ([§ 55(3a) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html)).",
+    "source_quote_ids": [
+      "SC.carebase",
+      "SC.carechildren"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated. DE-B07 current automatic-proof rule qualification pending root correction; source55(3a) distinguishes automated and other evidence."
+  },
+  {
+    "row": 46,
+    "LF_start": 100,
+    "LF_end": 100,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Reference amount (Bezugsgröße), [§ 1 SVBezGrV 2026](https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3) | EUR 47,460 | EUR 3,955 |",
+    "source_quote_ids": [
+      "SC.2026reference"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 47,
+    "LF_start": 101,
+    "LF_end": 101,
+    "section": "Rates, bands and thresholds",
+    "wording": "| General JAEG (employees only) | EUR 77,400 | EUR 6,450 |",
+    "source_quote_ids": [
+      "SC.2026JAEG"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 48,
+    "LF_start": 102,
+    "LF_end": 102,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Special JAEG (privately insured on 31 December 2002), also the health and care ceiling | EUR 69,750 | EUR 5,812.50 |",
+    "source_quote_ids": [
+      "SC.2026JAEG",
+      "SC.careceiling"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 49,
+    "LF_start": 103,
+    "LF_end": 103,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Pension and unemployment ceiling | EUR 101,400 | EUR 8,450 |",
+    "source_quote_ids": [
+      "PB.pensionceiling"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 50,
+    "LF_start": 104,
+    "LF_end": 104,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Pension ceiling, miners' scheme | EUR 124,800 | EUR 10,400 |",
+    "source_quote_ids": [
+      "PB.pensionceiling"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 51,
+    "LF_start": 110,
+    "LF_end": 110,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Minijob limit, per month | EUR 603 | EUR 13.90 minimum wage x 130 / 3 = EUR 602.33, rounded up ([§ 8(1a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html), [MiLoV5](https://www.gesetze-im-internet.de/milov5/__1.html)) |",
+    "source_quote_ids": [
+      "SC.minijob",
+      "SC.minimumwage"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 52,
+    "LF_start": 111,
+    "LF_end": 111,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Voluntary member's minimum base, per month | EUR 1,318.33 | 1/90 of EUR 3,955 per day x 30 = EUR 3,955 / 3 ([§ 240(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__240.html)) |",
+    "source_quote_ids": [
+      "SC.healthmin",
+      "SC.2026reference"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 53,
+    "LF_start": 112,
+    "LF_end": 112,
+    "section": "Rates, bands and thresholds",
+    "wording": "| KSK member's minimum health base, per month | EUR 659.17 | 1/180 per day x 30 = EUR 3,955 / 6 ([§ 234(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__234.html)) |",
+    "source_quote_ids": [
+      "SC.KSKhealthbase",
+      "SC.2026reference"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 54,
+    "LF_start": 113,
+    "LF_end": 113,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Health, lowest and highest, 14.0% + 2.9% = 16.9% | EUR 222.80 and EUR 982.31 (check) | EUR 1,318.33 and EUR 5,812.50 x 16.9% |",
+    "source_quote_ids": [
+      "SC.average2026",
+      "SC.healthmin",
+      "SC.reduced"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 55,
+    "LF_start": 114,
+    "LF_end": 114,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Health with sick pay, 14.6% + 2.9% = 17.5% | EUR 230.71 and EUR 1,017.19 (check) | Same bases x 17.5% |",
+    "source_quote_ids": [
+      "SC.average2026",
+      "SC.healthmin",
+      "SC.healthrate"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 56,
+    "LF_start": 115,
+    "LF_end": 115,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Care at 3.6%, lowest and highest (a notice can differ by a cent) | EUR 47.46 and EUR 209.25 | Same bases x 3.6% ([§ 57(4) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__57.html)) |",
+    "source_quote_ids": [
+      "SC.carebase",
+      "SC.healthcarebase",
+      "SC.healthmin",
+      "SC.2026JAEG"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 57,
+    "LF_start": 116,
+    "LF_end": 116,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Pension, lowest and highest monthly contribution | EUR 112.16 and EUR 1,571.70 | EUR 603 and EUR 8,450 x 18.6% ([§ 165](https://www.gesetze-im-internet.de/sgb_6/__165.html), [§ 167 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__167.html)) |",
+    "source_quote_ids": [
+      "SC.pensionbase",
+      "SC.voluntarypensionmin",
+      "PB.pensionceiling",
+      "FR.miners-rate"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 58,
+    "LF_start": 117,
+    "LF_end": 117,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Pension, standard and half standard (self-employed) | EUR 735.63 and EUR 367.82 | EUR 3,955 and EUR 3,955 / 2 x 18.6% |",
+    "source_quote_ids": [
+      "SC.pensionbase",
+      "SC.2026reference",
+      "FR.miners-rate"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 59,
+    "LF_start": 118,
+    "LF_end": 118,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Unemployment on application, full and start phase | EUR 102.83 and EUR 51.42 | EUR 3,955 and EUR 3,955 / 2 x 2.6% ([§ 345b SGB III](https://www.gesetze-im-internet.de/sgb_3/__345b.html)) |",
+    "source_quote_ids": [
+      "SC.unemploymentbase",
+      "SC.unemploymentrate",
+      "SC.2026reference"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 60,
+    "LF_start": 119,
+    "LF_end": 119,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Tax cap for pension contributions, single (doubled for spouses assessed jointly) | EUR 30,826 | EUR 124,800 x 24.7% = EUR 30,825.60, rounded up to a full euro ([§ 10(3) EStG](https://www.gesetze-im-internet.de/estg/__10.html)) |",
+    "source_quote_ids": [
+      "FR.pension-cap",
+      "FR.miners-base",
+      "FR.miners-rate"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 61,
+    "LF_start": 125,
+    "LF_end": 125,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Not insured if expected yearly income from the work does not exceed | EUR 3,900 | [§ 3(1) KSVG](https://www.gesetze-im-internet.de/ksvg/__3.html) |",
+    "source_quote_ids": [
+      "SC.KSKminincome"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 62,
+    "LF_start": 126,
+    "LF_end": 126,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Pension base: expected yearly income, at least | EUR 3,900 | [§ 165(1) no. 3 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__165.html) |",
+    "source_quote_ids": [
+      "SC.pensionbase"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 63,
+    "LF_start": 127,
+    "LF_end": 127,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Health and care base: 1/360 of expected yearly income per day, at least 1/180 of the monthly reference amount; minimum per month | EUR 659.17 | [§ 234(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__234.html) |",
+    "source_quote_ids": [
+      "SC.KSKhealthbase",
+      "SC.2026reference"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 64,
+    "LF_start": 131,
+    "LF_end": 131,
+    "section": "Rates, bands and thresholds",
+    "wording": "Used now for the final health assessment of 2025 when the 2025 tax notice arrives, and for the artists' levy report on fees paid in 2025 (due 31 March 2026).",
+    "source_quote_ids": [
+      "SC.healthassessment",
+      "SC.levyreport"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 65,
+    "LF_start": 135,
+    "LF_end": 135,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Reference amount, per month | EUR 3,745 | [§ 1 SVBezGrV 2025](https://www.gesetze-im-internet.de/svbezgrv_2025/__1.html) |",
+    "source_quote_ids": [
+      "SC.2025reference"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 66,
+    "LF_start": 136,
+    "LF_end": 136,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Health and care minimum base of a voluntary member, per month (EUR 3,745 / 3) | EUR 1,248.33 | [§ 240(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__240.html) |",
+    "source_quote_ids": [
+      "SC.2025reference",
+      "SC.healthmin"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 67,
+    "LF_start": 137,
+    "LF_end": 137,
+    "section": "Rates, bands and thresholds",
+    "wording": "| General JAEG, per year | EUR 73,800 | [§ 2 SVBezGrV 2025](https://www.gesetze-im-internet.de/svbezgrv_2025/__2.html) |",
+    "source_quote_ids": [
+      "SC.2025JAEG"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 68,
+    "LF_start": 138,
+    "LF_end": 138,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Health and care ceiling, per year and per month | EUR 66,150 and EUR 5,512.50 | [§ 2(2) SVBezGrV 2025](https://www.gesetze-im-internet.de/svbezgrv_2025/__2.html) |",
+    "source_quote_ids": [
+      "SC.2025JAEG"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 69,
+    "LF_start": 139,
+    "LF_end": 139,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Pension ceiling, general scheme, per year and per month | EUR 96,600 and EUR 8,050 | [§ 4 SVBezGrV 2025](https://www.gesetze-im-internet.de/svbezgrv_2025/__4.html) |",
+    "source_quote_ids": [
+      "SC.2025pension"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 70,
+    "LF_start": 140,
+    "LF_end": 140,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Average additional health rate for 2025 (2.9% less the 0.4-point rise) | 2.5% | [Finance ministry monthly report](https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-3-sollbericht-2026.html) |",
+    "source_quote_ids": [
+      "SC.average2025derived"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 71,
+    "LF_start": 142,
+    "LF_end": 142,
+    "section": "Rates, bands and thresholds",
+    "wording": "- The care base rate of 3.6% applied throughout 2025 as well ([§ 1 PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html)).",
+    "source_quote_ids": [
+      "SC.carebase"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 72,
+    "LF_start": 143,
+    "LF_end": 143,
+    "section": "Rates, bands and thresholds",
+    "wording": "- The levy rate for 2025 fees: the Künstlersozialabgabe-Verordnung 2024 (BGBl. 2023 I Nr. 240) sets the rate only \"im Jahr 2024\" (5.0%), and it expired at the end of 2025 ([§ 2 KSAbg2026V](https://www.gesetze-im-internet.de/ksabg2026v/BJNR0DC0A0025.html)). The ordinance that sets the 2025 rate was not found on an official page for this skill: take the 2025 rate from the KSK's notice.",
+    "source_quote_ids": [
+      "SC.oldlevyrate",
+      "SC.levyrate"
+    ],
+    "classification": "Precise retained source/method limit. Actual2024levy enactment does not establish2025rate; no2010or2027release/unknown insurer amount inferred."
+  },
+  {
+    "row": 73,
+    "LF_start": 145,
+    "LF_end": 145,
+    "section": "Rates, bands and thresholds",
+    "wording": "**Already enacted for 2027.** The health and care ceiling will be the special JAEG plus EUR 3,600 ([§ 223(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__223.html)). The 2027 amounts come in the next ordinance, expected in late 2026 (check).",
+    "source_quote_ids": [
+      "SC.healthceiling"
+    ],
+    "classification": "Precise retained source/method limit. Actual2024levy enactment does not establish2025rate; no2010or2027release/unknown insurer amount inferred."
+  },
+  {
+    "row": 74,
+    "LF_start": 153,
+    "LF_end": 153,
+    "section": "The taxable base",
+    "wording": "- A main-occupation self-employed person is not compulsorily insured as an employee ([§ 5(5) SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html)); KSK members are the exception.",
+    "source_quote_ids": [
+      "SC.mainoccupation",
+      "SC.KSKeligibility"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 75,
+    "LF_start": 154,
+    "LF_end": 154,
+    "section": "The taxable base",
+    "wording": "- When compulsory or family insurance ends, cover continues as voluntary membership from the next day, unless the member leaves within two weeks of the fund's notice and proves other cover ([§ 188(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__188.html)).",
+    "source_quote_ids": [
+      "SC.healthcontinue"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 76,
+    "LF_start": 155,
+    "LF_end": 155,
+    "section": "The taxable base",
+    "wording": "- A person outside the statutory system can join only in the cases in [§ 9 SGB V](https://www.gesetze-im-internet.de/sgb_5/__9.html). The main case is after leaving compulsory insurance with 24 months of cover in the last five years, or 12 months without a break just before, notified to the fund within three months.",
+    "source_quote_ids": [
+      "SC.healthjoin",
+      "SC.healthjoindate"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 77,
+    "LF_start": 156,
+    "LF_end": 156,
+    "section": "The taxable base",
+    "wording": "- A person who becomes compulsorily insured after turning 55 stays insurance-free if there was no statutory cover in the five years before and at least half of that time was insurance-free, exempt or main-occupation self-employed ([§ 6(3a) SGB V](https://www.gesetze-im-internet.de/sgb_5/__6.html)).",
+    "source_quote_ids": [
+      "SC.age55"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 78,
+    "LF_start": 157,
+    "LF_end": 157,
+    "section": "The taxable base",
+    "wording": "- Everyone resident must hold cover: without statutory cover, a private policy covering at least outpatient and inpatient treatment ([§ 193(3) VVG](https://www.gesetze-im-internet.de/vvg_2008/__193.html)). A voluntary statutory member is compulsorily insured in social care insurance ([§ 20(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__20.html)).",
+    "source_quote_ids": [
+      "SC.coverobligation",
+      "SC.voluntarycare"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 79,
+    "LF_start": 161,
+    "LF_end": 161,
+    "section": "The taxable base",
+    "wording": "- **Base:** the member's whole economic capacity, not only profit: capital and letting income count too. The base is at least EUR 1,318.33 a month and at most the ceiling of EUR 5,812.50 ([§ 223(3) SGB V](https://www.gesetze-im-internet.de/sgb_5/__223.html)). If the spouse is not in a statutory fund, the spouse's income can count, less set amounts for children (§ 240(5)).",
+    "source_quote_ids": [
+      "SC.healthassessment",
+      "SC.healthceiling",
+      "SC.2026JAEG"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 80,
+    "LF_start": 162,
+    "LF_end": 162,
+    "section": "The taxable base",
+    "wording": "- **Rate:** 14.0% plus the fund's additional rate. It is 14.6% plus that rate only if the member has declared to the fund that the membership shall include sick pay ([§ 44(2) SGB V](https://www.gesetze-im-internet.de/sgb_5/__44.html)).",
+    "source_quote_ids": [
+      "SC.reduced",
+      "SC.healthrate",
+      "SC.fundrate",
+      "SC.healthsickpay"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 81,
+    "LF_start": 163,
+    "LF_end": 163,
+    "section": "The taxable base",
+    "wording": "- **Who pays:** the member pays all of the health contribution ([§ 250(2) SGB V](https://www.gesetze-im-internet.de/sgb_5/__250.html)). The member also pays all of the care contribution, on the same base ([§ 57(4)](https://www.gesetze-im-internet.de/sgb_11/__57.html), [§ 59(4) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__59.html)).",
+    "source_quote_ids": [
+      "SC.healthselfpay",
+      "SC.careselfpay",
+      "SC.healthcarebase"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 82,
+    "LF_start": 167,
+    "LF_end": 167,
+    "section": "The taxable base",
+    "wording": "- **Provisional:** set from the latest income tax notice, from the month after it was issued. At the start of self-employment, set from the proven expected income.",
+    "source_quote_ids": [
+      "SC.healthassessment"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 83,
+    "LF_start": 168,
+    "LF_end": 168,
+    "section": "The taxable base",
+    "wording": "- **Final:** set from the year's actual income once that year's tax notice is presented. Overpayments are refunded; shortfalls are charged.",
+    "source_quote_ids": [
+      "SC.healthassessment"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 84,
+    "LF_start": 169,
+    "LF_end": 169,
+    "section": "The taxable base",
+    "wording": "- **No proof within three years:** if actual income is not proven within three years after the year ends, when the fund asks, the year is set finally on the ceiling. This is held off for twelve months where the member shows that no tax notice has been issued yet. Within twelve months of an assessment on the ceiling, the member can have it redone by presenting the tax notice.",
+    "source_quote_ids": [
+      "SC.healthassessment"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 85,
+    "LF_start": 170,
+    "LF_end": 170,
+    "section": "The taxable base",
+    "wording": "- **Proof requested and not given:** the fund charges on the ceiling for as long as proof is missing. A new assessment can be applied for within twelve months. Where there are sufficient signs that income does not exceed the minimum base, the fund must reassess on its own initiative.",
+    "source_quote_ids": [
+      "SC.healthassessment"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 86,
+    "LF_start": 171,
+    "LF_end": 171,
+    "section": "The taxable base",
+    "wording": "- **Letting income and time limits:** letting income is handled the same way. The time limit on the fund's claim does not run until the tax notice is presented.",
+    "source_quote_ids": [
+      "SC.healthassessment"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 87,
+    "LF_start": 173,
+    "LF_end": 173,
+    "section": "The taxable base",
+    "wording": "**Case: high income, sick pay, two children.** Profit EUR 90,000, sick pay elected, two children under 25, the fund's additional rate assumed 2.5%. The base is capped at EUR 5,812.50. Health EUR 5,812.50 x 17.1% = EUR 993.94; care EUR 5,812.50 x 3.35% = EUR 194.72 a month.",
+    "source_quote_ids": [
+      "SC.healthassessment",
+      "SC.healthrate",
+      "SC.carechildren",
+      "SC.carebase",
+      "SC.2026JAEG"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 88,
+    "LF_start": 177,
+    "LF_end": 177,
+    "section": "The taxable base",
+    "wording": "**Who must be insured** ([§ 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__2.html)). Most self-employed people are not. These are:",
+    "source_quote_ids": [
+      "SC.pensionlist"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 89,
+    "LF_start": 179,
+    "LF_end": 179,
+    "section": "The taxable base",
+    "wording": "1. Teachers and educators who regularly employ no employee subject to insurance in the work.",
+    "source_quote_ids": [
+      "SC.pensionlist"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 90,
+    "LF_start": 180,
+    "LF_end": 180,
+    "section": "The taxable base",
+    "wording": "2. Carers in sick, maternity, infant or child care, on the same condition.",
+    "source_quote_ids": [
+      "SC.pensionlist"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 91,
+    "LF_start": 181,
+    "LF_end": 181,
+    "section": "The taxable base",
+    "wording": "3. Midwives.",
+    "source_quote_ids": [
+      "SC.pensionlist"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 92,
+    "LF_start": 182,
+    "LF_end": 182,
+    "section": "The taxable base",
+    "wording": "4. Sea pilots.",
+    "source_quote_ids": [
+      "SC.pensionlist"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 93,
+    "LF_start": 183,
+    "LF_end": 183,
+    "section": "The taxable base",
+    "wording": "5. Artists and publicists under the KSVG (through the KSK).",
+    "source_quote_ids": [
+      "SC.pensionlist"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 94,
+    "LF_start": 184,
+    "LF_end": 184,
+    "section": "The taxable base",
+    "wording": "6. Home-based traders.",
+    "source_quote_ids": [
+      "SC.pensionlist"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 95,
+    "LF_start": 185,
+    "LF_end": 185,
+    "section": "The taxable base",
+    "wording": "7. Coastal skippers and fishers who are part of the crew (or fish without a vessel) and regularly employ no more than four employees subject to insurance.",
+    "source_quote_ids": [
+      "SC.pensionlist"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 96,
+    "LF_start": 186,
+    "LF_end": 186,
+    "section": "The taxable base",
+    "wording": "8. Craftspeople in the Handwerksrolle who themselves meet the conditions for entry.",
+    "source_quote_ids": [
+      "SC.pensionlist"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 97,
+    "LF_start": 187,
+    "LF_end": 187,
+    "section": "The taxable base",
+    "wording": "9. People who regularly employ no employee subject to insurance and work permanently and essentially for one client. For partners, the partnership's clients count, and the partnership's employees count as their employees.",
+    "source_quote_ids": [
+      "SC.pensionlist"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 98,
+    "LF_start": 189,
+    "LF_end": 189,
+    "section": "The taxable base",
+    "wording": "For groups 1, 2, 7 and 9, apprentices count as employees and Minijobbers do not.",
+    "source_quote_ids": [
+      "SC.pensionlist"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 99,
+    "LF_start": 191,
+    "LF_end": 191,
+    "section": "The taxable base",
+    "wording": "- **Marginal work is free.** Self-employed work whose income is regularly not above the Minijob limit is insurance-free in that work ([§ 5(2) no. 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__5.html), [§ 8(3) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). The limit in force on 1 January (EUR 603 a month in 2026) holds all year. So a teacher with no insured staff is insured once teaching income is more than EUR 603 a month. The same test applies to every group, not only teachers.",
+    "source_quote_ids": [
+      "SC.pensionmarginal",
+      "SC.minijob",
+      "SC.minimumwage"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 100,
+    "LF_start": 192,
+    "LF_end": 192,
+    "section": "The taxable base",
+    "wording": "- **Register** within three months of starting: groups 1, 2, 3 and 9. Craftspeople report within three months unless the Handwerksrolle already shows it ([§ 190a SGB VI](https://www.gesetze-im-internet.de/sgb_6/__190a.html)).",
+    "source_quote_ids": [
+      "SC.pensionregister"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 101,
+    "LF_start": 193,
+    "LF_end": 193,
+    "section": "The taxable base",
+    "wording": "- **Who pays:** the self-employed person alone. Home-based traders share half and half with the traders they work for. For KSK members the KSK pays and collects half from the member ([§ 169 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__169.html)).",
+    "source_quote_ids": [
+      "SC.pensionpayer",
+      "SC.KSKpension"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 102,
+    "LF_start": 194,
+    "LF_end": 194,
+    "section": "The taxable base",
+    "wording": "- **When due:** at the latest on the third-last bank working day of the month the work is done ([§ 23(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23.html)).",
+    "source_quote_ids": [
+      "PB.svdue"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 103,
+    "LF_start": 198,
+    "LF_end": 198,
+    "section": "The taxable base",
+    "wording": "- **Default:** the reference amount, which gives the standard contribution of EUR 735.63 a month.",
+    "source_quote_ids": [
+      "SC.pensionbase",
+      "FR.miners-rate",
+      "SC.2026reference"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 104,
+    "LF_start": 199,
+    "LF_end": 199,
+    "section": "The taxable base",
+    "wording": "- **Proven income:** if lower or higher income is proven, that income is used, but at least twelve times the Minijob limit a year. That gives the lowest contribution of EUR 112.16 a month; the pension ceiling is the top. The proof is the profit from the insured work in the latest tax notice. It is uprated by the change in average pay and grossed up to a full year if earned in part of the year.",
+    "source_quote_ids": [
+      "SC.pensionbase",
+      "PB.pensionceiling",
+      "FR.miners-rate"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 105,
+    "LF_start": 200,
+    "LF_end": 200,
+    "section": "The taxable base",
+    "wording": "- **New tax notice:** it must reach the insurer within two calendar months of issue. It applies from the month after it is presented, and at the latest from the third month after issue.",
+    "source_quote_ids": [
+      "SC.pensionbase"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 106,
+    "LF_start": 201,
+    "LF_end": 201,
+    "section": "The taxable base",
+    "wording": "- **Current income:** on application, current income is used if it is expected to be at least 30% below the tax-notice income ([§ 165(1a) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__165.html)).",
+    "source_quote_ids": [
+      "SC.pensioncurrent"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 107,
+    "LF_start": 202,
+    "LF_end": 202,
+    "section": "The taxable base",
+    "wording": "- **Start phase:** until the end of the third calendar year after the year of starting, the statute sets the base at half the reference amount (EUR 367.82 a month), or the full amount on application. Ask the insurer whether a lower proven income can be used in this phase (check).",
+    "source_quote_ids": [
+      "SC.pensionbase",
+      "FR.miners-rate",
+      "SC.2026reference"
+    ],
+    "classification": "Precise retained source/method limit. Actual2024levy enactment does not establish2025rate; no2010or2027release/unknown insurer amount inferred."
+  },
+  {
+    "row": 108,
+    "LF_start": 206,
+    "LF_end": 206,
+    "section": "The taxable base",
+    "wording": "- **Craftspeople:** after at least 18 years of compulsory contributions.",
+    "source_quote_ids": [
+      "SC.pensionexempt"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 109,
+    "LF_start": 207,
+    "LF_end": 207,
+    "section": "The taxable base",
+    "wording": "- **Group 9 (one client):** for three years after first taking up such work, and again for a second such activity. Also a person first liable under group 9 after turning 58, following earlier self-employment. Renaming a business, or keeping its purpose, is not a new start.",
+    "source_quote_ids": [
+      "SC.pensionexempt"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 110,
+    "LF_start": 208,
+    "LF_end": 208,
+    "section": "The taxable base",
+    "wording": "- **Chamber professions:** members of a professional pension fund with compulsory chamber membership, applying through the fund.",
+    "source_quote_ids": [
+      "SC.pensionexempt",
+      "SC.pensionexemptprocedure"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 111,
+    "LF_start": 209,
+    "LF_end": 209,
+    "section": "The taxable base",
+    "wording": "- **Timing:** an exemption applied for within three months works from the day its conditions are met; later applications work from the day the application arrives.",
+    "source_quote_ids": [
+      "SC.pensionexemptprocedure"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 112,
+    "LF_start": 213,
+    "LF_end": 213,
+    "section": "The taxable base",
+    "wording": "- **Voluntary contributions:** anyone not compulsorily insured, from age 16, may pay any amount from EUR 112.16 to EUR 1,571.70 a month ([§ 7](https://www.gesetze-im-internet.de/sgb_6/__7.html), [§ 161(2) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__161.html)). Payments for a year count only if made by 31 March of the next year ([§ 197(2)](https://www.gesetze-im-internet.de/sgb_6/__197.html)). Not allowed once a full old-age pension has been granted and the month of reaching the standard retirement age has passed.",
+    "source_quote_ids": [
+      "SC.voluntarypension",
+      "SC.voluntarypensionbase",
+      "SC.voluntarypensionmin",
+      "SC.pensionpayment",
+      "PB.pensionceiling",
+      "FR.miners-rate"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 113,
+    "LF_start": 214,
+    "LF_end": 214,
+    "section": "The taxable base",
+    "wording": "- **Compulsory insurance on application:** a self-employed person may apply within five years of starting, or of the end of compulsory insurance from that work ([§ 4(2) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__4.html)). Cover starts when the conditions are first met if applied for within three months, otherwise the day after the application arrives. It ends only when its conditions end; the law names no right to cancel it. Tell the client before applying.",
+    "source_quote_ids": [
+      "SC.pensionapply"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 114,
+    "LF_start": 218,
+    "LF_end": 218,
+    "section": "The taxable base",
+    "wording": "**Who is insured** ([§ 1 KSVG](https://www.gesetze-im-internet.de/ksvg/__1.html)). A self-employed artist or publicist is insured in pension, health and care when both conditions are met:",
+    "source_quote_ids": [
+      "SC.KSKeligibility"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 115,
+    "LF_start": 220,
+    "LF_end": 220,
+    "section": "The taxable base",
+    "wording": "- the work is done for a living and not just for a short time;",
+    "source_quote_ids": [
+      "SC.KSKeligibility"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 116,
+    "LF_start": 221,
+    "LF_end": 221,
+    "section": "The taxable base",
+    "wording": "- the person employs no more than one employee in that work (apprentices and Minijobbers do not count).",
+    "source_quote_ids": [
+      "SC.KSKeligibility"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 117,
+    "LF_start": 223,
+    "LF_end": 223,
+    "section": "The taxable base",
+    "wording": "The KSK decides whether work is artistic or publicist.",
+    "source_quote_ids": [
+      "SC.KSKregister"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 118,
+    "LF_start": 225,
+    "LF_end": 225,
+    "section": "The taxable base",
+    "wording": "(The income thresholds are in the rates table above.)",
+    "source_quote_ids": [
+      "SC.KSKminincome",
+      "SC.KSKhealthbase"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 119,
+    "LF_start": 227,
+    "LF_end": 227,
+    "section": "The taxable base",
+    "wording": "- **When the income limit bites:** it is lowered pro rata for part-year work and does not apply in the first three years after the work was first taken up. Cover also stays in place so long as income falls to the limit or below no more than twice in six calendar years.",
+    "source_quote_ids": [
+      "SC.KSKminincome"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 120,
+    "LF_start": 229,
+    "LF_end": 229,
+    "section": "The taxable base",
+    "wording": "**Member's shares.** The member pays half of each contribution to the KSK.",
+    "source_quote_ids": [
+      "SC.KSKpension",
+      "SC.KSKhealth",
+      "SC.KSKcare"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 121,
+    "LF_start": 231,
+    "LF_end": 231,
+    "section": "The taxable base",
+    "wording": "- **Pension:** half ([§ 15 KSVG](https://www.gesetze-im-internet.de/ksvg/__15.html)).",
+    "source_quote_ids": [
+      "SC.KSKpension"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 122,
+    "LF_start": 232,
+    "LF_end": 232,
+    "section": "The taxable base",
+    "wording": "- **Health:** half at the general rate plus half the fund's additional rate. Without a sick pay claim the reduced rate is used ([§ 16(1) KSVG](https://www.gesetze-im-internet.de/ksvg/__16.html)).",
+    "source_quote_ids": [
+      "SC.KSKhealth"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 123,
+    "LF_start": 233,
+    "LF_end": 233,
+    "section": "The taxable base",
+    "wording": "- **Care:** half, adjusted by the § 55(3) SGB XI amounts, so a childless member pays the whole surcharge on top ([§ 16a KSVG](https://www.gesetze-im-internet.de/ksvg/__16a.html)).",
+    "source_quote_ids": [
+      "SC.KSKcare",
+      "SC.carechildren"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 124,
+    "LF_start": 234,
+    "LF_end": 234,
+    "section": "The taxable base",
+    "wording": "- **Due date:** each month's shares are due on the 5th of the next month.",
+    "source_quote_ids": [
+      "SC.KSKpension",
+      "SC.KSKhealth",
+      "SC.KSKcare"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 125,
+    "LF_start": 235,
+    "LF_end": 235,
+    "section": "The taxable base",
+    "wording": "- **Arrears:** after two months' arrears the KSK sends a reminder. If more than one month's share is still unpaid two weeks later, health benefits are suspended until the arrears are paid.",
+    "source_quote_ids": [
+      "SC.KSKhealth"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 126,
+    "LF_start": 236,
+    "LF_end": 236,
+    "section": "The taxable base",
+    "wording": "- **Registration and reports:** register on the KSK's forms ([§ 11 KSVG](https://www.gesetze-im-internet.de/ksvg/__11.html)). Report next year's expected income by 1 December, up to the pension ceiling ([§ 12 KSVG](https://www.gesetze-im-internet.de/ksvg/__12.html)). A change of circumstances can be applied for with effect from the next month. Without a report, the KSK estimates.",
+    "source_quote_ids": [
+      "SC.KSKregister",
+      "SC.KSKforecast"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 127,
+    "LF_start": 240,
+    "LF_end": 240,
+    "section": "The taxable base",
+    "wording": "- **Typical users** always owe it: publishers, theatres, orchestras, broadcasters, galleries, advertising or PR for third parties, training schools for artistic work and similar.",
+    "source_quote_ids": [
+      "SC.levyuser"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 128,
+    "LF_start": 241,
+    "LF_end": 241,
+    "section": "The taxable base",
+    "wording": "- **Other businesses** owe it when they commission self-employed artists or publicists for their own advertising or PR, or to use their work in the business to earn income. This applies only if the fees for orders placed in the calendar year exceed EUR 1,000 in total. Once the limit is passed, the whole amount is levied.",
+    "source_quote_ids": [
+      "SC.levyuser"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 129,
+    "LF_start": 242,
+    "LF_end": 242,
+    "section": "The taxable base",
+    "wording": "- **Exceptions (use-in-business case only):** fees at events when no more than three such events are held in a year, and music clubs for their regular choir leaders or conductors.",
+    "source_quote_ids": [
+      "SC.levyuser"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 130,
+    "LF_start": 243,
+    "LF_end": 243,
+    "section": "The taxable base",
+    "wording": "- **Base and rate:** all fees paid in the year to self-employed artists or publicists, insured or not, net of VAT shown separately. Payments to collecting societies and tax-free expense allowances are left out ([§ 25 KSVG](https://www.gesetze-im-internet.de/ksvg/__25.html)). The rate is 4.9% for 2026. The levy is a cost of the business, never deducted from the artist.",
+    "source_quote_ids": [
+      "SC.levybase",
+      "SC.levyrate",
+      "FR.businesscost"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 131,
+    "LF_start": 244,
+    "LF_end": 244,
+    "section": "The taxable base",
+    "wording": "- **Report:** the year's total goes to the KSK by 31 March of the next year; otherwise the KSK estimates ([§ 27 KSVG](https://www.gesetze-im-internet.de/ksvg/__27.html)).",
+    "source_quote_ids": [
+      "SC.levyreport"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 132,
+    "LF_start": 245,
+    "LF_end": 245,
+    "section": "The taxable base",
+    "wording": "- **Prepayments:** due within ten days after each month. Each is the current rate on one twelfth of last year's fees; until 1 March, the December amount. None is due if the amount would not exceed EUR 40 ([§ 27(3) KSVG](https://www.gesetze-im-internet.de/ksvg/__27.html)). The KSK can reduce prepayments on application if this year's fees will be much lower.",
+    "source_quote_ids": [
+      "SC.levyreport"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 133,
+    "LF_start": 247,
+    "LF_end": 247,
+    "section": "The taxable base",
+    "wording": "**Case: KSK member.** Graphic designer, expected 2026 income reported as EUR 30,000 (EUR 2,500 a month), childless, age 28, sick pay claim, additional rate assumed 2.9%. Pension share EUR 2,500 x 18.6% / 2 = EUR 232.50; health share EUR 2,500 x 17.5% / 2 = EUR 218.75; care share EUR 2,500 x 3.6% / 2 plus the whole surcharge EUR 2,500 x 0.6% = EUR 60.00. Total EUR 511.25 to the KSK, due on the 5th of the next month.",
+    "source_quote_ids": [
+      "SC.KSKpension",
+      "SC.KSKhealth",
+      "SC.KSKcare",
+      "FR.miners-rate",
+      "SC.healthrate",
+      "SC.carechildren",
+      "SC.carebase"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 134,
+    "LF_start": 249,
+    "LF_end": 249,
+    "section": "The taxable base",
+    "wording": "**Case: the artists' levy.** An advertising agency (a typical user under § 24(1) KSVG) paid EUR 20,000 net of VAT in 2026 to freelance designers: levy EUR 980.00, reported by 31 March 2027. A bakery that paid EUR 800 in 2026 for a logo for its own advertising, and nothing else, owes no levy for 2026.",
+    "source_quote_ids": [
+      "SC.levyuser",
+      "SC.levyrate",
+      "SC.levyreport"
+    ],
+    "classification": "Rates/dates/base rules from own sources; resulting amounts computed, not quoted as enacted monetary figures. Fund rate stipulated where indicated."
+  },
+  {
+    "row": 135,
+    "LF_start": 255,
+    "LF_end": 255,
+    "section": "The taxable base",
+    "wording": "- **Notify:** tell the competent accident insurer within one week of starting; a trade registration within that week counts. Changes to the type of business are reported within four weeks ([§ 192 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__192.html)).",
+    "source_quote_ids": [
+      "SC.accidentregister"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 136,
+    "LF_start": 256,
+    "LF_end": 256,
+    "section": "The taxable base",
+    "wording": "- **Owner's cover:** most owners are not insured by law but can apply in writing or electronically. Cover starts the day after the application arrives and lapses if a contribution is unpaid two months after it falls due ([§ 6 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__6.html)). Insured by law, with no application: among others self-employed people in the health service or welfare work (for example midwives, physiotherapists, carers) and home-based traders ([§ 2(1) no. 6 and 9 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__2.html)). They owe the contribution themselves (§ 150(1)). Some insurers also cover entrepreneurs through their own statute ([§ 3 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__3.html)): ask the insurer for the trade.",
+    "source_quote_ids": [
+      "SC.accidentowner",
+      "SC.accidenthome",
+      "SC.accidenthealth",
+      "SC.accidentpayer",
+      "SC.accidentstatute"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 137,
+    "LF_start": 257,
+    "LF_end": 257,
+    "section": "The taxable base",
+    "wording": "- **Payment:** the entrepreneur pays for staff and, if insured, for the owner ([§ 150(1)](https://www.gesetze-im-internet.de/sgb_7/__150.html)). Contributions are assessed after the year ends ([§ 152 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__152.html)) and are due on the 15th of the month after the notice ([§ 23(3) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23.html)). During the year the insurer may charge advance payments up to the expected yearly requirement ([§ 164(1) SGB VII](https://www.gesetze-im-internet.de/sgb_7/__164.html)). Each insurer sets its own rates; this skill gives none.",
+    "source_quote_ids": [
+      "SC.accidentpayer",
+      "SC.accidentassessment",
+      "SC.accidentadvance",
+      "PB.svdue"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 138,
+    "LF_start": 261,
+    "LF_end": 261,
+    "section": "The taxable base",
+    "wording": "- **Who:** a person starting self-employed work of at least 15 hours a week who either:",
+    "source_quote_ids": [
+      "SC.unemploymentapply"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 139,
+    "LF_start": 262,
+    "LF_end": 262,
+    "section": "The taxable base",
+    "wording": "  - had 12 months of compulsory unemployment insurance in the 30 months before starting, or",
+    "source_quote_ids": [
+      "SC.unemploymentapply"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 140,
+    "LF_start": 263,
+    "LF_end": 263,
+    "section": "The taxable base",
+    "wording": "  - had a claim to a wage replacement benefit under SGB III just before starting.",
+    "source_quote_ids": [
+      "SC.unemploymentapply"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 141,
+    "LF_start": 264,
+    "LF_end": 264,
+    "section": "The taxable base",
+    "wording": "- **Barred:** a person already insured this way who interrupted that work twice and claimed unemployment benefit in the breaks.",
+    "source_quote_ids": [
+      "SC.unemploymentapply"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 142,
+    "LF_start": 265,
+    "LF_end": 265,
+    "section": "The taxable base",
+    "wording": "- **Deadline:** within three months of starting. If another insurance duty blocked the application, within three months after that ends.",
+    "source_quote_ids": [
+      "SC.unemploymentapply"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 143,
+    "LF_start": 266,
+    "LF_end": 266,
+    "section": "The taxable base",
+    "wording": "- **Base:** the monthly reference amount, halved until the end of the calendar year after the year of starting ([§ 345b SGB III](https://www.gesetze-im-internet.de/sgb_3/__345b.html)). At 2.6% that is EUR 102.83, or EUR 51.42 a month.",
+    "source_quote_ids": [
+      "SC.unemploymentbase",
+      "SC.unemploymentrate",
+      "SC.2026reference"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 144,
+    "LF_start": 267,
+    "LF_end": 267,
+    "section": "The taxable base",
+    "wording": "- **Payment:** the insured pays alone, to the employment agency; due date as in the agency's notice (check). The § 24 SGB IV late surcharge does not apply ([§ 349a SGB III](https://www.gesetze-im-internet.de/sgb_3/__349a.html)).",
+    "source_quote_ids": [
+      "SC.unemploymentpayment"
+    ],
+    "classification": "Precise retained source/method limit. Actual2024levy enactment does not establish2025rate; no2010or2027release/unknown insurer amount inferred."
+  },
+  {
+    "row": 145,
+    "LF_start": 268,
+    "LF_end": 268,
+    "section": "The taxable base",
+    "wording": "- **End of cover:** after more than three months' arrears (at the end of the last day paid for); by notice, first possible after five years, three months to the end of a month; or when the conditions end.",
+    "source_quote_ids": [
+      "SC.unemploymentapply"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 146,
+    "LF_start": 274,
+    "LF_end": 274,
+    "section": "The taxable base",
+    "wording": "| Employed with a side business | Health follows the job unless self-employment is the main occupation. If the job is the main occupation, the freelance income carries no health or care contribution, unless the employee also draws a statutory pension or a pension-like payment; then it counts too, if it and any pension-like payments together exceed 1/20 of the monthly reference amount (EUR 197.75 in 2026) ([§ 226(1) no. 4 and (2) SGB V](https://www.gesetze-im-internet.de/sgb_5/__226.html)). Employing someone above the Minijob level raises that presumption | [§ 5(5) SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html) |",
+    "source_quote_ids": [
+      "SC.mainoccupation",
+      "SC.healthotherincome",
+      "SC.2026reference"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 147,
+    "LF_start": 275,
+    "LF_end": 275,
+    "section": "The taxable base",
+    "wording": "| Teacher or carer with one employee above the Minijob level | Not compulsorily insured under § 2 no. 1 or 2 (a Minijobber does not count; an apprentice does) | [§ 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__2.html) |",
+    "source_quote_ids": [
+      "SC.pensionlist"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 148,
+    "LF_start": 276,
+    "LF_end": 276,
+    "section": "The taxable base",
+    "wording": "| Self-employed income at or below the Minijob limit | Pension insurance-free in that work | [§ 5(2) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__5.html) |",
+    "source_quote_ids": [
+      "SC.pensionmarginal",
+      "SC.minijob"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 149,
+    "LF_start": 277,
+    "LF_end": 277,
+    "section": "The taxable base",
+    "wording": "| Artist employing two employees above the Minijob level | Not insured under the KSVG | [§ 1 KSVG](https://www.gesetze-im-internet.de/ksvg/__1.html) |",
+    "source_quote_ids": [
+      "SC.KSKeligibility"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 150,
+    "LF_start": 278,
+    "LF_end": 278,
+    "section": "The taxable base",
+    "wording": "| Business with own-advertising fees of EUR 1,000 or less in the year | No levy; the limit does not help a typical user under § 24(1) | [§ 24(2) KSVG](https://www.gesetze-im-internet.de/ksvg/__24.html) |",
+    "source_quote_ids": [
+      "SC.levyuser"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 151,
+    "LF_start": 279,
+    "LF_end": 279,
+    "section": "The taxable base",
+    "wording": "| Late statutory contributions | 1% for each month started, on arrears rounded down to EUR 50; not charged separately under EUR 150. Not for unemployment insurance on application | [§ 24(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__24.html), [§ 349a SGB III](https://www.gesetze-im-internet.de/sgb_3/__349a.html) |",
+    "source_quote_ids": [
+      "PB.svlate",
+      "SC.unemploymentpayment"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 152,
+    "LF_start": 283,
+    "LF_end": 283,
+    "section": "Deadlines and filing",
+    "wording": "Registration windows: pension registration and exemptions, and unemployment insurance on application, within three months of starting; the accident insurer within one week; the status procedure within one month for its protection; the KSK income estimate by 1 December; the artists' levy report by 31 March of the next year.",
+    "source_quote_ids": [
+      "SC.pensionregister",
+      "SC.pensionexemptprocedure",
+      "SC.unemploymentapply",
+      "SC.accidentregister",
+      "PB.status",
+      "SC.KSKforecast",
+      "SC.levyreport"
+    ],
+    "classification": "DE-B06 root correction pending: section6(4) exemption clock starts at conditions, not always activity start; own detailed209 already correct."
+  },
+  {
+    "row": 153,
+    "LF_start": 289,
+    "LF_end": 289,
+    "section": "Deadlines and filing",
+    "wording": "| Voluntary health and care member | Under the fund's statute and the funds' association's rules; ordinarily by the 15th of the month after the contribution month (check the notice) | [§ 23(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23.html) |",
+    "source_quote_ids": [
+      "PB.svdue"
+    ],
+    "classification": "Precise retained source/method limit. Actual2024levy enactment does not establish2025rate; no2010or2027release/unknown insurer amount inferred."
+  },
+  {
+    "row": 154,
+    "LF_start": 290,
+    "LF_end": 290,
+    "section": "Deadlines and filing",
+    "wording": "| Compulsory pension, self-employed | Third-last bank working day of the month the work is done | [§ 23(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23.html) |",
+    "source_quote_ids": [
+      "PB.svdue"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 155,
+    "LF_start": 291,
+    "LF_end": 291,
+    "section": "Deadlines and filing",
+    "wording": "| Voluntary pension | Counts for a year only if paid by 31 March of the next year | [§ 197(2) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__197.html) |",
+    "source_quote_ids": [
+      "SC.pensionpayment"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 156,
+    "LF_start": 292,
+    "LF_end": 292,
+    "section": "Deadlines and filing",
+    "wording": "| KSK member's shares | 5th of the next month | [§ 15 KSVG](https://www.gesetze-im-internet.de/ksvg/__15.html) |",
+    "source_quote_ids": [
+      "SC.KSKpension"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 157,
+    "LF_start": 293,
+    "LF_end": 293,
+    "section": "Deadlines and filing",
+    "wording": "| Accident insurance | 15th of the month after the notice | [§ 23(3) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23.html) |",
+    "source_quote_ids": [
+      "PB.svdue"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 158,
+    "LF_start": 294,
+    "LF_end": 294,
+    "section": "Deadlines and filing",
+    "wording": "| Artists' levy | Prepayments within ten days after each month; report by 31 March | [§ 27 KSVG](https://www.gesetze-im-internet.de/ksvg/__27.html) |",
+    "source_quote_ids": [
+      "SC.levyreport"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 159,
+    "LF_start": 296,
+    "LF_end": 296,
+    "section": "Deadlines and filing",
+    "wording": "**Income tax deduction** ([§ 10 EStG](https://www.gesetze-im-internet.de/estg/__10.html)). The owner's own contributions are private, not business expenses. They are claimed in the income tax return (filed through ELSTER).",
+    "source_quote_ids": [
+      "FR.health",
+      "FR.pension-cap"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 160,
+    "LF_start": 300,
+    "LF_end": 300,
+    "section": "Deadlines and filing",
+    "wording": "| Pension (statutory, KSK share, voluntary, professional funds, certain annuities) | Up to the yearly cap ([§ 10(3) EStG](https://www.gesetze-im-internet.de/estg/__10.html)) | EUR 30,826 single, doubled for spouses assessed jointly |",
+    "source_quote_ids": [
+      "FR.pension-cap",
+      "FR.miners-base",
+      "FR.miners-rate"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 161,
+    "LF_start": 301,
+    "LF_end": 301,
+    "section": "Deadlines and filing",
+    "wording": "| Basic health cover and statutory care | No cap; a statutory contribution that can give sick pay is first cut by | 4% |",
+    "source_quote_ids": [
+      "FR.health",
+      "FR.pension-cap"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 162,
+    "LF_start": 302,
+    "LF_end": 302,
+    "section": "Deadlines and filing",
+    "wording": "| Other insurance (unemployment, accident, supplementary health) | Within one yearly cap shared with health and care, so nothing if basic health and care already exceed it | EUR 2,800 |",
+    "source_quote_ids": [
+      "FR.health",
+      "FR.pension-cap"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 163,
+    "LF_start": 303,
+    "LF_end": 303,
+    "section": "Deadlines and filing",
+    "wording": "| The same cap where health costs are partly paid without own expense, or tax-free payments under § 3 no. 9, 14, 57 or 62 EStG are made (no. 57 is the KSK's share, so KSK members) | | EUR 1,900 |",
+    "source_quote_ids": [
+      "FR.health",
+      "FR.pension-cap"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 164,
+    "LF_start": 305,
+    "LF_end": 305,
+    "section": "Deadlines and filing",
+    "wording": "Whether the owner's own accident contribution can be a business expense instead is not settled by the statute pages read here: flag it for review.",
+    "source_quote_ids": [],
+    "classification": "Precise retained source/method limit. Actual2024levy enactment does not establish2025rate; no2010or2027release/unknown insurer amount inferred."
+  },
+  {
+    "row": 165,
+    "LF_start": 311,
+    "LF_end": 311,
+    "section": "Deadlines and filing",
+    "wording": "| Statutory health fund | Owner's health and care: private, § 10 EStG. In a business with staff it may be the employees' total contribution: payroll |",
+    "source_quote_ids": [
+      "FR.health",
+      "FR.pension-cap",
+      "SC.collectingfund"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 166,
+    "LF_start": 312,
+    "LF_end": 312,
+    "section": "Deadlines and filing",
+    "wording": "| Private insurer | Private premium; only basic cover is deductible without a cap |",
+    "source_quote_ids": [
+      "FR.health"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 167,
+    "LF_start": 313,
+    "LF_end": 313,
+    "section": "Deadlines and filing",
+    "wording": "| Künstlersozialkasse | Member's shares (private) or the business's levy prepayment (business cost): ask which |",
+    "source_quote_ids": [
+      "SC.KSKpension",
+      "SC.KSKhealth",
+      "SC.KSKcare",
+      "SC.levybase",
+      "FR.businesscost"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 168,
+    "LF_start": 314,
+    "LF_end": 314,
+    "section": "Deadlines and filing",
+    "wording": "| Deutsche Rentenversicherung | Private; pension deduction |",
+    "source_quote_ids": [
+      "FR.pension-cap"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 169,
+    "LF_start": 315,
+    "LF_end": 315,
+    "section": "Deadlines and filing",
+    "wording": "| Accident insurer (Berufsgenossenschaft) | Staff part: business cost. Owner's part: flag for review |",
+    "source_quote_ids": [
+      "FR.businesscost"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 170,
+    "LF_start": 316,
+    "LF_end": 316,
+    "section": "Deadlines and filing",
+    "wording": "| Bundesagentur für Arbeit | Unemployment insurance on application: private, other insurance cap |",
+    "source_quote_ids": [
+      "FR.health",
+      "SC.unemploymentpayment"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 171,
+    "LF_start": 317,
+    "LF_end": 317,
+    "section": "Deadlines and filing",
+    "wording": "| Finanzamt | Tax, not social insurance |",
+    "source_quote_ids": [
+      "FR.personal-tax"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 172,
+    "LF_start": 321,
+    "LF_end": 321,
+    "section": "Penalties and interest",
+    "wording": "- **Late statutory contributions:** a late-payment surcharge of 1% for each month or part month started, on the arrears rounded down to the nearest EUR 50; not charged separately if under EUR 150 ([§ 24(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__24.html)). It does not apply to unemployment insurance on application ([§ 349a SGB III](https://www.gesetze-im-internet.de/sgb_3/__349a.html)).",
+    "source_quote_ids": [
+      "PB.svlate",
+      "SC.unemploymentpayment"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 173,
+    "LF_start": 322,
+    "LF_end": 322,
+    "section": "Penalties and interest",
+    "wording": "- **Missing income proof (voluntary health member):** the fund charges on the ceiling (EUR 5,812.50 a month) for as long as proof is missing, and finally on the ceiling if actual income is not proven within three years ([§ 240(1) and (4a) SGB V](https://www.gesetze-im-internet.de/sgb_5/__240.html)).",
+    "source_quote_ids": [
+      "SC.healthassessment",
+      "SC.2026JAEG"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 174,
+    "LF_start": 323,
+    "LF_end": 323,
+    "section": "Penalties and interest",
+    "wording": "- **KSK arrears:** after two months' arrears a reminder; if more than one month's share is unpaid two weeks later, health benefits are suspended ([§ 16(2) KSVG](https://www.gesetze-im-internet.de/ksvg/__16.html)).",
+    "source_quote_ids": [
+      "SC.KSKhealth"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 175,
+    "LF_start": 324,
+    "LF_end": 324,
+    "section": "Penalties and interest",
+    "wording": "- **Owner's accident cover** lapses if a contribution is unpaid two months after it falls due ([§ 6 SGB VII](https://www.gesetze-im-internet.de/sgb_7/__6.html)). Unemployment insurance on application ends after more than three months' arrears ([§ 28a SGB III](https://www.gesetze-im-internet.de/sgb_3/__28a.html)).",
+    "source_quote_ids": [
+      "SC.accidentowner",
+      "SC.unemploymentapply"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 176,
+    "LF_start": 325,
+    "LF_end": 325,
+    "section": "Penalties and interest",
+    "wording": "- **Employment found later** without the one-month protection: contributions back to the start of the work plus the surcharges above ([§ 7a SGB IV](https://www.gesetze-im-internet.de/sgb_4/__7a.html)).",
+    "source_quote_ids": [
+      "PB.status",
+      "PB.svlate"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 177,
+    "LF_start": 329,
+    "LF_end": 329,
+    "section": "Cross-border points",
+    "wording": "- **Territory:** German insurance duty follows work in Germany, and the rules that need no work follow residence ([§ 3 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__3.html)).",
+    "source_quote_ids": [
+      "SC.territory"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 178,
+    "LF_start": 330,
+    "LF_end": 330,
+    "section": "Cross-border points",
+    "wording": "- **Posting out and in:** a self-employed person who goes abroad for a period limited in advance stays in German insurance (Ausstrahlung); one coming in for such a period from abroad does not enter it (Einstrahlung) ([§ 4(2)](https://www.gesetze-im-internet.de/sgb_4/__4.html), [§ 5(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__5.html)).",
+    "source_quote_ids": [
+      "SC.postingout",
+      "SC.postingin"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 179,
+    "LF_start": 331,
+    "LF_end": 331,
+    "section": "Cross-border points",
+    "wording": "- **Treaties and EU law come first:** intergovernmental and supranational rules override these provisions ([§ 6 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__6.html)). For work in more than one EU or EEA state, or a stay with an A1 certificate from another state, refer: this skill does not carry those rules.",
+    "source_quote_ids": [
+      "SC.overridinglaw"
+    ],
+    "classification": "Operative selected official provisions; exact original-language quote, raw/reader identity and actual read date linked."
+  },
+  {
+    "row": 180,
+    "LF_start": 332,
+    "LF_end": 332,
+    "section": "Cross-border points",
+    "wording": "- **People insured abroad** and cross-border commuters: refer.",
+    "source_quote_ids": [],
+    "classification": "Scope/companion summary; no new complete specialist method."
+  },
+  {
+    "row": 181,
+    "LF_start": 338,
+    "LF_end": 358,
+    "section": "Worked examples",
+    "wording": "**Example 1: self-employed consultant, middle income.** Profit EUR 48,000 in the latest tax notice (EUR 4,000 a month), voluntary member, no sick pay, childless, age 35, no single client. The base of EUR 4,000 lies between the minimum base and the ceiling. Health EUR 4,000 x (14.0% + 2.9%) = EUR 676.00. Care EUR 4,000 x 4.2% (childless) = EUR 168.00. Total EUR 844.00 a month. Not on the § 2 SGB VI list, so no pension duty; voluntary contributions are possible.\n\n```oa-check\nname: DE 2026 voluntary member, profit 48,000, childless, no sick pay\ninputs:\n  profit_year: 48000\n  reference_month: 3955\n  ceiling_month: 5812.50\n  extra_rate: 2.9\nsteps:\n  - min_base: reference_month / 3\n  - base: clamp(profit_year / 12, min_base, ceiling_month)\n  - health: round(base * (14.0 + extra_rate) / 100, 2)\n  - care: round(base * 4.2 / 100, 2)\n  - total: health + care\nexpected:\n  base: 4000\n  health: 676.00\n  care: 168.00\n  total: 844.00\n```",
+    "source_quote_ids": [
+      "SC.healthassessment",
+      "SC.reduced",
+      "SC.fundrate",
+      "SC.carechildren",
+      "SC.carebase",
+      "SC.2026reference",
+      "SC.2026JAEG"
+    ],
+    "classification": "Original current oa example; fact inputs stipulated, outputs independently recomputed in writer-checks."
+  },
+  {
+    "row": 182,
+    "LF_start": 360,
+    "LF_end": 385,
+    "section": "Worked examples",
+    "wording": "**Example 2: yoga teacher in the first year, low income, one child.** Starts teaching on 1 March 2026, profit about EUR 1,000 a month, no insured staff, one child aged 10, voluntary health member without sick pay. Health: the base is lifted to the minimum of EUR 1,318.33, so health EUR 222.80 (check) and care at 3.6% EUR 47.46. Pension: a teacher with no insured staff is on the § 2 SGB VI list and EUR 1,000 is above the EUR 603 Minijob limit, so the work is not marginal. Register by the end of May 2026. In the start phase (to the end of 2029) the base is half the reference amount: EUR 1,977.50 x 18.6% = EUR 367.82 a month, or EUR 735.63 on application. Total EUR 638.08 a month on EUR 1,000 of profit, which is why the minimum bases matter.\n\n```oa-check\nname: DE 2026 yoga teacher start phase, profit 1,000 a month, one child\ninputs:\n  profit_month: 1000\n  reference_month: 3955\n  ceiling_month: 5812.50\n  minijob: 603\n  extra_rate: 2.9\nsteps:\n  - min_base: reference_month / 3\n  - base: clamp(profit_month, min_base, ceiling_month)\n  - health: round(base * (14.0 + extra_rate) / 100, 2)\n  - care: round(base * 3.6 / 100, 2)\n  - above_marginal: max(0, profit_month - minijob)\n  - pension: round(reference_month / 2 * 18.6 / 100, 2)\n  - total: health + care + pension\nexpected:\n  base: 1318.33\n  health: 222.80\n  care: 47.46\n  above_marginal: 397\n  pension: 367.82\n  total: 638.08\n```",
+    "source_quote_ids": [
+      "SC.healthmin",
+      "SC.2026reference",
+      "SC.pensionbase",
+      "SC.pensionlist",
+      "SC.pensionregister",
+      "SC.pensionmarginal",
+      "SC.minimumwage",
+      "SC.minijob",
+      "SC.carebase",
+      "SC.reduced"
+    ],
+    "classification": "Original current oa example; fact inputs stipulated, outputs independently recomputed in writer-checks."
+  },
+  {
+    "row": 183,
+    "LF_start": 389,
+    "LF_end": 397,
+    "section": "Ask the client first",
+    "wording": "- Employed, self-employed, or both? If both, which is the main occupation, and do you employ anyone above the Minijob level?\n- If employed: regular yearly pay, and were you privately insured on 31 December 2002 because your pay was over that year's threshold?\n- Health cover today: statutory fund (which, compulsory or voluntary, sick pay elected?) or private insurer? Since when?\n- What exactly is your work: teaching, nursing or child care, midwifery, a craft in the Handwerksrolle, art or writing, home-based work, or work mostly for one client? When did it start? Is it your first self-employed activity?\n- Children: how many under 25? Your age?\n- Latest income tax notice, and expected income this year from all sources (business, job, capital, letting)?\n- Just before starting, were you in compulsory unemployment insurance or drawing unemployment benefit? Hours a week in the business?\n- Does the business pay fees to self-employed artists, designers, photographers, writers or other publicists?\n- Has anyone already asked the pension insurer to decide whether a contract is employment?",
+    "source_quote_ids": [
+      "SC.mainoccupation",
+      "SC.healthjoin",
+      "SC.healthassessment",
+      "SC.pensionlist",
+      "SC.KSKeligibility",
+      "SC.accidentowner",
+      "SC.unemploymentapply",
+      "PB.status"
+    ],
+    "classification": "Intake/referral/completion facts; precise specialist exclusions and administrative notices retained."
+  },
+  {
+    "row": 184,
+    "LF_start": 401,
+    "LF_end": 412,
+    "section": "Ask the client first",
+    "wording": "- Private health and care premiums, and any advice to move between private and statutory cover: the law makes the way back narrow (§ 6(3a), § 9 SGB V). Refer.\n- Whether a contract is employment (status procedure) or whether the client works \"essentially for one client\": refer at once; the exposure is contributions back to the start of the work.\n- Whether self-employment is the main occupation: the health fund decides case by case.\n- Whether work is artistic or publicist: the KSK decides.\n- A given fund's additional rate: take it from the fund. This skill carries only the average, marked \"check\".\n- Accident insurance amounts: each insurer sets its own rates.\n- Professional pension funds (Versorgungswerke) and their exemption procedure.\n- Cross-border work, A1 certificates, and people insured abroad.\n- Farmers and foresters (their own social insurance), civil servants.\n- Pensioners, students, and people on benefits who are also self-employed: other base rules apply.\n- Payroll (withholding, reports, Minijob flat rates, transition band, employer levies): `de-payroll`.\n- The income tax computation: `de-einkommensteuer-freelancer`.",
+    "source_quote_ids": [
+      "SC.mainoccupation",
+      "SC.healthjoin",
+      "SC.healthassessment",
+      "SC.pensionlist",
+      "SC.KSKeligibility",
+      "SC.accidentowner",
+      "SC.unemploymentapply",
+      "PB.status"
+    ],
+    "classification": "Intake/referral/completion facts; precise specialist exclusions and administrative notices retained."
+  },
+  {
+    "row": 185,
+    "LF_start": 416,
+    "LF_end": 425,
+    "section": "Ask the client first",
+    "wording": "- [ ] Status settled: employee, self-employed, or both; status procedure considered for one-client or client-integrated work.\n- [ ] Health system known (statutory compulsory, statutory voluntary, private); sick pay election known.\n- [ ] Base for a voluntary member from the latest tax notice, between EUR 1,318.33 and EUR 5,812.50 a month; the fund's own additional rate used, not the average.\n- [ ] Care rate set by age and children under 25; proof of children given to the care fund.\n- [ ] § 2 SGB VI list tested; three-month registration and exemption windows checked; start phase applied.\n- [ ] KSK: conditions, income limit, 1 December estimate, half shares; levy duty for businesses that pay artists.\n- [ ] Accident insurer notified within one week; owner's cover decided.\n- [ ] Unemployment insurance on application decided within three months of starting.\n- [ ] Each amount checked against the fund's or insurer's notice; no year total rebuilt from rates.\n- [ ] Tax deduction entered with the § 10 EStG caps; figures marked \"check\" confirmed.",
+    "source_quote_ids": [
+      "SC.mainoccupation",
+      "SC.healthjoin",
+      "SC.healthassessment",
+      "SC.pensionlist",
+      "SC.KSKeligibility",
+      "SC.accidentowner",
+      "SC.unemploymentapply",
+      "PB.status"
+    ],
+    "classification": "Intake/referral/completion facts; precise specialist exclusions and administrative notices retained."
+  }
+]

@@ -1,0 +1,1093 @@
+{
+  "current_units_actually_read": [
+    [
+      1,
+      177
+    ]
+  ],
+  "quotes": [
+    {
+      "row": 1,
+      "id": "G11",
+      "url": "https://www.gesetze-im-internet.de/gewstg/__11.html",
+      "article": "GewStG \u00a711(1)/(2)",
+      "raw_sha256": "46828d9b0262292dad64eac95bb490ca94daa2257a604ca5d674b1c0e3022598",
+      "reader_sha256": "230ef372395186013d586d6789eccd128c565523f43b5fd43ab64e7eccc43c06",
+      "native_LF": [
+        7,
+        12
+      ],
+      "quote_sha256": "5cf5ed32df389b63074ae52413e5b79fe1f4f8b527cf88492476776e3a781de1",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 3,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 2,
+      "id": "SoliRate",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__4.html",
+      "article": "SolzG \u00a74",
+      "raw_sha256": "dd28933ed36da19cae72de5a054f9edbea5c5919cb2aeac6efc257afe9fab058",
+      "reader_sha256": "219a2aa1409e999b209ed2402a91d3618b9ec3c19ebf85c10122087d7fa3845a",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "b8eb2b65618c2dace32c77221fa8bae9a16f130bd5e24bfc421e1426bef2e793",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 5,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 3,
+      "id": "AO149-2",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "article": "AO149(2)",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        8,
+        8
+      ],
+      "quote_sha256": "23bfcd02fb0c2941fc041c97a34697e13aa3cded0205b93b1457275608e72e3c",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 7,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 4,
+      "id": "AO149-3",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "article": "AO149(3)",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        9,
+        23
+      ],
+      "quote_sha256": "d42d4452133e7963db27f96f19d2385a2165dde43b8f9f6194e94623ea97994f",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 8,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 5,
+      "id": "AO149-4",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "article": "AO149(4)",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        24,
+        41
+      ],
+      "quote_sha256": "189aff23817b3e0d09375870b9babc6480abdb0dfb1598cc6007764fe7f29e06",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 9,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 6,
+      "id": "AO108",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+      "article": "AO \u00a7108(3)",
+      "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+      "reader_sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9",
+      "native_LF": [
+        9,
+        9
+      ],
+      "quote_sha256": "6d22b5c1a15f4b1a75caa5aa3b16dcb5e5ffcf4f80488918ed5261c136d40df4",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 10,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 7,
+      "id": "AO152-1",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "article": "AO152(1)",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "aa1e238067672f986535736184514f150e130adfabf066c886d839154cd1f437",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 11,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 8,
+      "id": "AO152-2",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "article": "AO152(2)",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        8,
+        14
+      ],
+      "quote_sha256": "e17249ac587ad278ead480e2159e55da13d06f415cf5b0b0c7493636cd8fab15",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 12,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 9,
+      "id": "AO152-3",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "article": "AO152(3)",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        15,
+        22
+      ],
+      "quote_sha256": "b0e5c6dcbc1290a96e13f49675e0a75eb976930ff62712412a0a60a3bd80ebb6",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 13,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 10,
+      "id": "AO152-10",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "article": "AO152(10)",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        42,
+        42
+      ],
+      "quote_sha256": "92d524babd592c0d4af5b97179cec9227ba1f6adf7c6a0e97b784cd6f79f1d40",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 15,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 11,
+      "id": "AO233a-1",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "article": "AO233a(1)",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader_sha256": "707aa5c6d8b589d1ab3ea4e5c30d68d5121ad2a42c56fb9368e7ca2f69d4bd7d",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "f55ba87a48ebe37e4f1edad31ddaa01a10b86a287ec99dec3c72e77c4f3134e6",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 16,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 12,
+      "id": "AO233a-2",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "article": "AO233a(2)",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader_sha256": "707aa5c6d8b589d1ab3ea4e5c30d68d5121ad2a42c56fb9368e7ca2f69d4bd7d",
+      "native_LF": [
+        8,
+        8
+      ],
+      "quote_sha256": "40bc24f8e325fe8dbd60bef3d828d8206af4839ec8728bdf9d0f2d5b755159c8",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 17,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 13,
+      "id": "AO238-1a",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "article": "AO238(1a)",
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "reader_sha256": "651db01a1f6c18060e1f1e63652986b0e4921fb1ce84da5d2a740ebea8ca0b48",
+      "native_LF": [
+        8,
+        8
+      ],
+      "quote_sha256": "a6b73dc49fd492f5b9253b5ec6af37b0567d4d7420ed821f8b93d52030492b09",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 19,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 14,
+      "id": "AO240-1",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "article": "AO240(1)",
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "reader_sha256": "2cfa86cfaac164f5f98e3dc6a02b04d67165a70fc4439631021fe7a3ae0bf631",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "9656165dbd550290acfc92eb06aa385b8e6343a05d95e4a601f549d974ba0b38",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 21,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 15,
+      "id": "RES",
+      "url": "https://www.gesetze-im-internet.de/estg/__1.html",
+      "article": "EStG \u00a71(1) opening",
+      "raw_sha256": "aa3116bd65c47709867eaba213a4f5a482aabe7075b4e0ae7b31fb8f2830d6ca",
+      "reader_sha256": "c131d86c4bf7573c7ceb89484930ecd33f0df991d53b7f180bdd3640c66b9f18",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "c5b33d2bd044f11db3626c41c41cd922c34b5011f25f3fcd8fda7898adc9e304",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 24,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 16,
+      "id": "PROF",
+      "url": "https://www.gesetze-im-internet.de/estg/__18.html",
+      "article": "EStG \u00a718(1) no1",
+      "raw_sha256": "38ebdcd4278d97c1efcf7ed4f24a3e1deec084784e2afbec5e1c61b3d7539989",
+      "reader_sha256": "a547039b7a9ce833379cab4467a4d87b3510de17c6860de601755b2092294a79",
+      "native_LF": [
+        7,
+        8
+      ],
+      "quote_sha256": "86f7c357bd0d0589189f2e3909e051a6be28d262114330b642166c7d3706df78",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 33,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 17,
+      "id": "CASH",
+      "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+      "article": "EStG \u00a74(3)",
+      "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+      "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+      "native_LF": [
+        13,
+        13
+      ],
+      "quote_sha256": "fafd7d22f8503b2db8017db3bca0630f4dc952212982b00830b4c1c151625fd4",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 35,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 18,
+      "id": "BUSCOST",
+      "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+      "article": "EStG \u00a74(4)",
+      "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+      "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+      "native_LF": [
+        14,
+        14
+      ],
+      "quote_sha256": "bcec496c15d0df3dd1038f5f7b5a85fee24303c7d2258da1433c38a29f88ebcd",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 25,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 19,
+      "id": "TARIFF",
+      "url": "https://www.gesetze-im-internet.de/estg/__32a.html",
+      "article": "EStG \u00a732a(1)2026 whole formula/rounding",
+      "raw_sha256": "053bfcfc2ba961a3013eb631921957ce8a50ec3e4347bb6f0c2befaf765e0f50",
+      "reader_sha256": "b037ef07e71ac2eebadccb3250d16667924ca95b689c2db86eee60207585e2d7",
+      "native_LF": [
+        7,
+        22
+      ],
+      "quote_sha256": "39078d68e2cd9a89a80c87d536b9df274b6e0798c5001c89905eb3cb569f6e71",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 27,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 20,
+      "id": "SPLIT",
+      "url": "https://www.gesetze-im-internet.de/estg/__32a.html",
+      "article": "EStG \u00a732a(5)",
+      "raw_sha256": "053bfcfc2ba961a3013eb631921957ce8a50ec3e4347bb6f0c2befaf765e0f50",
+      "reader_sha256": "b037ef07e71ac2eebadccb3250d16667924ca95b689c2db86eee60207585e2d7",
+      "native_LF": [
+        24,
+        24
+      ],
+      "quote_sha256": "d49ff4e31b56ff3821bb8fc6d98c34ba9e2dc83ead84ea7fb36dede9cbe46c5c",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 28,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 21,
+      "id": "SOLILIMIT",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "article": "SolzG \u00a73(3)2026",
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+      "native_LF": [
+        29,
+        33
+      ],
+      "quote_sha256": "04731a15da9f8567e39f64f828d8bee38676bf404b5318ecbfb3d415755efb81",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 29,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 22,
+      "id": "CREDIT",
+      "url": "https://www.gesetze-im-internet.de/estg/__35.html",
+      "article": "EStG \u00a735(1)",
+      "raw_sha256": "19911da16168dff1054493928501346b305fd226a49e9e30917c72f80d08b661",
+      "reader_sha256": "86f386175dc78ad466695a78d32b6955a81caab1798f6f47ff109e84a5be2ebe",
+      "native_LF": [
+        7,
+        18
+      ],
+      "quote_sha256": "7e8b4b67bbd631cccdffee0121c141018aac4630e859da4650224c13aaf2dcb3",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 47,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 23,
+      "id": "NOTRADEEXP",
+      "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+      "article": "EStG \u00a74(5b)",
+      "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+      "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+      "native_LF": [
+        52,
+        52
+      ],
+      "quote_sha256": "d6791cf8c1f2eeeeb562d0c7c3d84f56157b9d6f9610f1aebec1de1d28f2951b",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 48,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 24,
+      "id": "LUMPSUM",
+      "url": "https://www.gesetze-im-internet.de/estg/__10c.html",
+      "article": "EStG \u00a710c",
+      "raw_sha256": "4309f91a2ebb1b66ae0aef785c77d045069059514425b87f85b2f4671bd4734b",
+      "reader_sha256": "64f4fd600befbcadf6b76e01161d53777e37c273e37f0477d864ca717bd7c77f",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "ed363dedf689ace7a678701407cf56c9ae34bb4ededc6037a68750c6cd29d562",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 41,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 25,
+      "id": "BASE",
+      "url": "https://www.gesetze-im-internet.de/estg/__2.html",
+      "article": "EStG \u00a72(2)\u2013(5)",
+      "raw_sha256": "4ce8258e61a05e50348bfa2c149542d7b078c951ffa5b92b37a88b93d67f8848",
+      "reader_sha256": "a776de83fcc1b5085502ca8844dc998fc060e70f2ff5ffc8eaff71edc4ae7403",
+      "native_LF": [
+        22,
+        29
+      ],
+      "quote_sha256": "23256e92ec17b3d0c5fe3249b551a2044e94111832df3796c0235939cd33ae82",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 43,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 26,
+      "id": "CRIME",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__370.html",
+      "article": "AO \u00a7370(1)",
+      "raw_sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+      "reader_sha256": "4059b3eeb14a28f929ae1583a4a7cb78525c6d828ff66a88b41ec68ad01724e6",
+      "native_LF": [
+        7,
+        13
+      ],
+      "quote_sha256": "00d4f1772314e6b733cb3b10d925e8fb4f29c82cfd26ceeab0621f5983752257",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 81,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 27,
+      "id": "RECKLESS",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__378.html",
+      "article": "AO \u00a7378(1)/(2)",
+      "raw_sha256": "32ac9f2a1f3f7a48814405224d122353bf1409458c918b35a9a6f0c92118bd95",
+      "reader_sha256": "1cba0ea5ac2468353d407626fefb632b6dbe06e94d8e7ed09af98d3571ed0c63",
+      "native_LF": [
+        7,
+        8
+      ],
+      "quote_sha256": "c13e8f7f57d04f69e3032468b23207c7247925e549cf76b0d0ae5ac8d0bbce61",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 82,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 28,
+      "id": "NRTRADE",
+      "url": "https://www.gesetze-im-internet.de/estg/__49.html",
+      "article": "EStG \u00a749(1) no2(a)",
+      "raw_sha256": "ab6d74634775a9a34966bdfd0058d8e93deb30043ab1c0ea3895586cbe6f423b",
+      "reader_sha256": "56cbe0597b599138f1fdbd55e4ceaa376e3b79a25e0067de8d313a8798ea3240",
+      "native_LF": [
+        9,
+        11
+      ],
+      "quote_sha256": "57b09d1a40c8b2bd35af2705dae43c4fa9029bf64c21a46c3b4f13eb3ee2880b",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 83,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 29,
+      "id": "FOREIGNCREDIT",
+      "url": "https://www.gesetze-im-internet.de/estg/__34c.html",
+      "article": "EStG \u00a734c(1)",
+      "raw_sha256": "4897698a6289c877e4470a6ddb4814b6dc7216d114ad393b6f9214978720fef4",
+      "reader_sha256": "7f6005fdc141d3f58a850bc8297a4d51d49f14543b1b5ed73a886a8f77902a57",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "8f2072ced7ca6f539e58274a57d9e28296d899c22e250d2fea895137b04f80cf",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 85,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 30,
+      "id": "PROGRESSION",
+      "url": "https://www.gesetze-im-internet.de/estg/__32b.html",
+      "article": "EStG \u00a732b(1) no3",
+      "raw_sha256": "29c00fa5139a1531b7cfcb35484bf302bf8bd3974afdd8c19727d95c353109d9",
+      "reader_sha256": "9e2c9b8b065fd0c3e4f3250b2c45562eb1d70f3988f116bfe439abc8b45b9e19",
+      "native_LF": [
+        32,
+        33
+      ],
+      "quote_sha256": "de9357fa80186fac214e3140143c59c6c8518c559eaa57d63ae98ade56a776d9",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 44,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 31,
+      "id": "PROGEXCEPTIONS",
+      "url": "https://www.gesetze-im-internet.de/estg/__32b.html",
+      "article": "EStG \u00a732b(1) sentence2 exceptions",
+      "raw_sha256": "29c00fa5139a1531b7cfcb35484bf302bf8bd3974afdd8c19727d95c353109d9",
+      "reader_sha256": "9e2c9b8b065fd0c3e4f3250b2c45562eb1d70f3988f116bfe439abc8b45b9e19",
+      "native_LF": [
+        38,
+        54
+      ],
+      "quote_sha256": "7903aa5dd48a82f5475e0b26a07feb890ff9ad630874f66268f553b6b357941b",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 94,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 32,
+      "id": "EMPLOYEE1230",
+      "url": "https://www.gesetze-im-internet.de/estg/__9a.html",
+      "article": "EStG \u00a79a sentence1 no1(a)",
+      "raw_sha256": "d345f5dfd44a9478955ec391c63f6fca4f731021153e9e2b9a49edb0c8f9ddeb",
+      "reader_sha256": "dce53e8b87f1e24b576bad5a35dd270f8ac04eb5d16e3487fa40e0f667d57c08",
+      "native_LF": [
+        7,
+        10
+      ],
+      "quote_sha256": "75cf01fb2760bf414c3e1f3b72b277771df5ed3f8751e8d920275b1f31a14ba6",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 61,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 33,
+      "id": "COUPLE",
+      "url": "https://www.gesetze-im-internet.de/estg/__26.html",
+      "article": "EStG \u00a726(1)",
+      "raw_sha256": "8648bd3a60a0c011b3466c4482e159fe2cde1b6902a1751c51d2586a72ae648c",
+      "reader_sha256": "5794f8436aac1c927fa75ed5488771ac0815829499f36a2bb0c0bdbab99ad3c7",
+      "native_LF": [
+        7,
+        13
+      ],
+      "quote_sha256": "5a1bafe24da8b350eb2d01dfb0b272942ef04e0bbe3b2710cb57417ab7b7c88c",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 46,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 34,
+      "id": "ANNUAL",
+      "url": "https://www.gesetze-im-internet.de/estg/__2.html",
+      "article": "EStG \u00a72(7)",
+      "raw_sha256": "4ce8258e61a05e50348bfa2c149542d7b078c951ffa5b92b37a88b93d67f8848",
+      "reader_sha256": "a776de83fcc1b5085502ca8844dc998fc060e70f2ff5ffc8eaff71edc4ae7403",
+      "native_LF": [
+        33,
+        33
+      ],
+      "quote_sha256": "06d212accd95b47957e5eff39993954de70298356af55052b67cf2b6defa1653",
+      "actual_read_bridge": {
+        "guide": "de-employee-income-tax",
+        "quote_row": 87,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 35,
+      "id": "PARTNER",
+      "url": "https://www.gesetze-im-internet.de/estg/__15.html",
+      "article": "EStG \u00a715(1) no2",
+      "raw_sha256": "9c66144e9197fbf44d69007269443432cc8e67aa92b3c7fb1d2c732e3315cbb4",
+      "reader_sha256": "b8837a2eacafe010efbc888b8bdbb2fdb28e293691da768e14d348c42b41b9c9",
+      "native_LF": [
+        9,
+        10
+      ],
+      "quote_sha256": "584185cc644e099ffb023cd455d2f0fd30340f0d103cf21ac65e50c607c53bd6",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 36,
+      "id": "PROFPART",
+      "url": "https://www.gesetze-im-internet.de/estg/__18.html",
+      "article": "EStG \u00a718(4)",
+      "raw_sha256": "38ebdcd4278d97c1efcf7ed4f24a3e1deec084784e2afbec5e1c61b3d7539989",
+      "reader_sha256": "a547039b7a9ce833379cab4467a4d87b3510de17c6860de601755b2092294a79",
+      "native_LF": [
+        17,
+        17
+      ],
+      "quote_sha256": "099a10d40e9cd449f20d6380d4c2f2b7e82c7cb68c069fc7a42b0f298ea76e1f",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 37,
+      "id": "MIXED",
+      "url": "https://www.gesetze-im-internet.de/estg/__15.html",
+      "article": "EStG \u00a715(3) no1",
+      "raw_sha256": "9c66144e9197fbf44d69007269443432cc8e67aa92b3c7fb1d2c732e3315cbb4",
+      "reader_sha256": "b8837a2eacafe010efbc888b8bdbb2fdb28e293691da768e14d348c42b41b9c9",
+      "native_LF": [
+        16,
+        17
+      ],
+      "quote_sha256": "ec7c7c29b1903ed4a6ea1e7590bf19c45659762bed0a7aa09946526ed9096068",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 38,
+      "id": "FORM",
+      "url": "https://www.gesetze-im-internet.de/estg/__15.html",
+      "article": "EStG \u00a715(3) no2",
+      "raw_sha256": "9c66144e9197fbf44d69007269443432cc8e67aa92b3c7fb1d2c732e3315cbb4",
+      "reader_sha256": "b8837a2eacafe010efbc888b8bdbb2fdb28e293691da768e14d348c42b41b9c9",
+      "native_LF": [
+        18,
+        19
+      ],
+      "quote_sha256": "c6a9fd1a8093a7a1bb86d963b742579d51f5cf640ddd95ec2cc24d2f8b994810",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 39,
+      "id": "OPTION",
+      "url": "https://www.gesetze-im-internet.de/kstg_1977/__1a.html",
+      "article": "KStG \u00a71a(1) opening",
+      "raw_sha256": "14babf9b722618db642f24e00a87bf6013b7e37be18359bd5ca002ee0946a698",
+      "reader_sha256": "92b2a25c9e24261b715e6689c19a1a8b8583e37f3b7425a1726ff8cab1cb5800",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "11a3036bfb2d292ca15d278d938d0667cc722d2f8dea18c06c08949b96088838",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 40,
+      "id": "INCOMEPERIOD",
+      "url": "https://www.gesetze-im-internet.de/estg/__2.html",
+      "article": "EStG \u00a72(1)",
+      "raw_sha256": "4ce8258e61a05e50348bfa2c149542d7b078c951ffa5b92b37a88b93d67f8848",
+      "reader_sha256": "a776de83fcc1b5085502ca8844dc998fc060e70f2ff5ffc8eaff71edc4ae7403",
+      "native_LF": [
+        7,
+        21
+      ],
+      "quote_sha256": "3f9cfee43d128e3a0c13b2bc6c6ed7c8284aa845e12d02cb811fd077cdfc993c",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 41,
+      "id": "DETERMINATION",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__179.html",
+      "article": "AO \u00a7179(1)/(2)",
+      "raw_sha256": "f9bf4afba7ee8378e85deceb0f0ea59a83538c13507f1243358b7affc5694ec3",
+      "reader_sha256": "0bdb32b9f09cac295baf858b7d659ce4f85c52d74af51f4b0aa85528f648f4c7",
+      "native_LF": [
+        7,
+        8
+      ],
+      "quote_sha256": "77ff91c01ef7ce3b0e7b31180335614f5b07f86656ccf431973ea623b98a98a7",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 42,
+      "id": "SUBJECT",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__180.html",
+      "article": "AO \u00a7180(1) no2(a)",
+      "raw_sha256": "96ad0902d87c7622e212fad5175d5981630c4577554a11d93b739026f47269e8",
+      "reader_sha256": "d307fa29dfc8e33598b976babbc41fb35f80afc9b2d0ff4d5a2ffcc381a32ddf",
+      "native_LF": [
+        7,
+        11
+      ],
+      "quote_sha256": "4f5fc3512770ea61a24beabe024965bfb70e908861670186f73e050e473ff907",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 43,
+      "id": "ONEPARTNER",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__180.html",
+      "article": "AO \u00a7180(3)",
+      "raw_sha256": "96ad0902d87c7622e212fad5175d5981630c4577554a11d93b739026f47269e8",
+      "reader_sha256": "d307fa29dfc8e33598b976babbc41fb35f80afc9b2d0ff4d5a2ffcc381a32ddf",
+      "native_LF": [
+        31,
+        35
+      ],
+      "quote_sha256": "1795cc9af9e864accc444655fb0dc41fd60ffa899a902c07f4a91e3d9ba7376c",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 44,
+      "id": "FOREIGNDET",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__180.html",
+      "article": "AO \u00a7180(5)",
+      "raw_sha256": "96ad0902d87c7622e212fad5175d5981630c4577554a11d93b739026f47269e8",
+      "reader_sha256": "d307fa29dfc8e33598b976babbc41fb35f80afc9b2d0ff4d5a2ffcc381a32ddf",
+      "native_LF": [
+        37,
+        40
+      ],
+      "quote_sha256": "ef77fe2130ae1f67e0d74a971d931968c84672f63173bdf62ed0b905a51f2c29",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 45,
+      "id": "BIND",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__182.html",
+      "article": "AO \u00a7182(1)",
+      "raw_sha256": "c7a9327c7f4cb2aacd14bd6a10d9b842b1219e76a2ae943073385fc43a9af2a6",
+      "reader_sha256": "130b03cb9475506292d0fa22044f19dae95de8ece555546ffc9e0bc7199c0fd1",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "37b7b0dd82352be147b69f102bcd4a30aaf5aaff2d5c5d0ce02089a0a72a2f2e",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 46,
+      "id": "CHALLENGE",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__351.html",
+      "article": "AO \u00a7351(2)",
+      "raw_sha256": "412784b2b527def7a858c240e208c876e4ce87d22518ad048cad916a1a6a0e81",
+      "reader_sha256": "7b51b8d650786af4f4366b033ef2b3420aeadd56c49243f1eb8c499795e80aee",
+      "native_LF": [
+        8,
+        8
+      ],
+      "quote_sha256": "293cd87ed883f07a74cd0fb240d7a4001ee31f14016b7d5e7b85507a0d59304d",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 47,
+      "id": "WHOF",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__181.html",
+      "article": "AO \u00a7181(1)/(2)/(2a)",
+      "raw_sha256": "0904a243623bbf67d8e83107eb61ded38fa527e4d72ea19485f21661d497b6a1",
+      "reader_sha256": "1cc5018cc556e4949dc4d7bfe45c93be0226baad4b87a1e639bd2d098c469e57",
+      "native_LF": [
+        7,
+        20
+      ],
+      "quote_sha256": "98647af744393843834998d05564f983605860d9da2fc72fe3d763dac275a034",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 48,
+      "id": "PARTCREDIT",
+      "url": "https://www.gesetze-im-internet.de/estg/__35.html",
+      "article": "EStG \u00a735(2)\u2013(4)",
+      "raw_sha256": "19911da16168dff1054493928501346b305fd226a49e9e30917c72f80d08b661",
+      "reader_sha256": "86f386175dc78ad466695a78d32b6955a81caab1798f6f47ff109e84a5be2ebe",
+      "native_LF": [
+        19,
+        21
+      ],
+      "quote_sha256": "c46badaf873d9486d0c4805f0e170a018c15dbe3beb77101171e04f0b1ea4a95",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 49,
+      "id": "LIMITEDLOSS",
+      "url": "https://www.gesetze-im-internet.de/estg/__15a.html",
+      "article": "EStG \u00a715a(1)\u2013(4)",
+      "raw_sha256": "716040badeef5438c57a9ffa016a90fc2676685f927485b08703f4d41e9838c2",
+      "reader_sha256": "3f70feb9fea99f4b04322e1e8374966edb5ebd8200f3a464c2f838b56ea7f69b",
+      "native_LF": [
+        7,
+        11
+      ],
+      "quote_sha256": "3031b4746f0498da909a6fc41eaf0e44ad9d17c67efc7e24d0b7d2d3de57b534",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 50,
+      "id": "LIMITEDSAME",
+      "url": "https://www.gesetze-im-internet.de/estg/__15a.html",
+      "article": "EStG \u00a715a(5) nos1/2",
+      "raw_sha256": "716040badeef5438c57a9ffa016a90fc2676685f927485b08703f4d41e9838c2",
+      "reader_sha256": "3f70feb9fea99f4b04322e1e8374966edb5ebd8200f3a464c2f838b56ea7f69b",
+      "native_LF": [
+        12,
+        15
+      ],
+      "quote_sha256": "c009347a3852dfdb995ffc58df793468ba86009da8e7b52bd16abfba09310538",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 51,
+      "id": "RETAIN",
+      "url": "https://www.gesetze-im-internet.de/estg/__34a.html",
+      "article": "EStG \u00a734a(1)/(2), actual ordinary tax-payment withdrawal exclusion retained in quote",
+      "raw_sha256": "3f1f145af6f287a80db8abb0d5d0db24db300e90107d4c24391f93b475a950bf",
+      "reader_sha256": "13a087705e5b93c1d702f3c184c0e8f66e75589b8e588440a318373f42548724",
+      "native_LF": [
+        7,
+        16
+      ],
+      "quote_sha256": "a426adfd809bc583830217fa197649e310ce5e473f7f020b63e251c1d515cd86",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 52,
+      "id": "RECAPTURE",
+      "url": "https://www.gesetze-im-internet.de/estg/__34a.html",
+      "article": "EStG \u00a734a(3)/(4)",
+      "raw_sha256": "3f1f145af6f287a80db8abb0d5d0db24db300e90107d4c24391f93b475a950bf",
+      "reader_sha256": "13a087705e5b93c1d702f3c184c0e8f66e75589b8e588440a318373f42548724",
+      "native_LF": [
+        17,
+        18
+      ],
+      "quote_sha256": "9f4e7fe7898253e13e8b40b2a64d80aaabc3cee52efee3f50651604682407ad1",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 53,
+      "id": "PAYTRADE",
+      "url": "https://www.gesetze-im-internet.de/gewstg/__5.html",
+      "article": "GewStG \u00a75(1)",
+      "raw_sha256": "9b5c285b13608c5c4f17fc7f7b87f307ed1ee875b9cdc9f67ea1f292c885dfa7",
+      "reader_sha256": "619cf56a92a23df4ec0512bacdf94dc047e03aea72bff75ef338306dc224dbb0",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "cce63cc1e46eac724629cd33136ac9de3a9b9c404a67576b22bbe03083464f85",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 54,
+      "id": "TRADEBASE",
+      "url": "https://www.gesetze-im-internet.de/gewstg/__7.html",
+      "article": "GewStG \u00a77 opening",
+      "raw_sha256": "3f924fa113fd2b3cad32d6b165dccc912a736b117dbf5e84cb640c3e68beb709",
+      "reader_sha256": "ceed470e58786ff5226831685f8e62498616685ea9be226fb80e00ff9a660694",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "23850975a734cdcff4a2ba3631e9ed694a163695979d0d770914715e0b9f0427",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 55,
+      "id": "TRADEDIV",
+      "url": "https://www.gesetze-im-internet.de/gewstg/__9.html",
+      "article": "GewStG \u00a79 no2, full exceptions retained",
+      "raw_sha256": "5c93e3e838d08265da9818982c3174bec0bc317d973d2c15dbbd456c7e9d2ddd",
+      "reader_sha256": "006084d381b5ce625477eb2ee9f76609afe16cb125599687e6e5d2fa36b10a41",
+      "native_LF": [
+        25,
+        26
+      ],
+      "quote_sha256": "e4d3d6c352918d04f51f98ac644084d1d17019531277587100ab08e8af5d5196",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 56,
+      "id": "CHANGE",
+      "url": "https://www.gesetze-im-internet.de/gewstg/__35b.html",
+      "article": "GewStG \u00a735b(1)",
+      "raw_sha256": "e4462591f804782a6e043bdb956d4a713e34aea73e9bc30b6830998bda07a26d",
+      "reader_sha256": "7bc2907f162eff3a309927e702291ec998abbb7f6dbf20b496a6dee452666f77",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "3e39d9685f17a11bf6820126688e3bcad4793db85c7216d767a1e01beb806a39",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 57,
+      "id": "PARTLATE",
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "article": "AO \u00a7152(4)\u2013(7)",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        23,
+        29
+      ],
+      "quote_sha256": "bfa7fa27a042da2f9f2b990b00056310e3252d64f3b8a55035a9cae8e6528701",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 58,
+      "id": "MOVEINCOME",
+      "url": "https://www.gesetze-im-internet.de/estg/__32b.html",
+      "article": "EStG \u00a732b(1) no2",
+      "raw_sha256": "29c00fa5139a1531b7cfcb35484bf302bf8bd3974afdd8c19727d95c353109d9",
+      "reader_sha256": "9e2c9b8b065fd0c3e4f3250b2c45562eb1d70f3988f116bfe439abc8b45b9e19",
+      "native_LF": [
+        30,
+        31
+      ],
+      "quote_sha256": "918ef2856efbc4609f8460fff42d379cf6cf074d2647b8427eb06b5a8f50af3d",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 59,
+      "id": "PRORATE",
+      "url": "https://www.gesetze-im-internet.de/estg/__32b.html",
+      "article": "EStG \u00a732b(2)",
+      "raw_sha256": "29c00fa5139a1531b7cfcb35484bf302bf8bd3974afdd8c19727d95c353109d9",
+      "reader_sha256": "9e2c9b8b065fd0c3e4f3250b2c45562eb1d70f3988f116bfe439abc8b45b9e19",
+      "native_LF": [
+        56,
+        64
+      ],
+      "quote_sha256": "1ac2dcd5d05b83f539fe182529ce73c0a6389ed7de00e3028e94f257920d7d01",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 96,
+        "exact_text_raw_reader_native_span": true
+      }
+    },
+    {
+      "row": 60,
+      "id": "INSFOREIGN",
+      "url": "https://www.gesetze-im-internet.de/estg/__10.html",
+      "article": "EStG \u00a710(2) no1 and own EU/EEA/Swiss exception",
+      "raw_sha256": "f970952c77597337017ee213013219bd490a91f1f0b7048bbd8cb697d1d9befd",
+      "reader_sha256": "77f1ca70d5a033d9ba5ce1e113f80de73523cc992760cda326d209379357818e",
+      "native_LF": [
+        56,
+        62
+      ],
+      "quote_sha256": "d763acfc512e8156437013fe12d0adc5aac1b4aed1316506b889f73fa145c994",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 61,
+      "id": "MANRATE",
+      "url": "https://esth.bundesfinanzministerium.de/esth/2025/A-Einkommensteuergesetz/IV-Tarif-31-34b/Paragraf-32b/inhalt.html",
+      "article": "EStH2025 H32b general exact example; not2026 statutory rounding",
+      "raw_sha256": "3b9da2375d2b4633f962cf9a853f2ccae2db4ed1e9f8964e8de93f68050f4afb",
+      "reader_sha256": "03c67b865dc2c76f94e6e56e688483482a085808a4dcf8d989a0e9df68967258",
+      "native_LF": [
+        1141,
+        1161
+      ],
+      "quote_sha256": "19926671a2a8b3ed92c0c409291fc7929dda16fc2b30691422caa72a8bd87bf1",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 62,
+      "id": "MANMOVE",
+      "url": "https://esth.bundesfinanzministerium.de/esth/2025/A-Einkommensteuergesetz/IV-Tarif-31-34b/Paragraf-32b/inhalt.html",
+      "article": "EStH2025 H32b temporary full liability",
+      "raw_sha256": "3b9da2375d2b4633f962cf9a853f2ccae2db4ed1e9f8964e8de93f68050f4afb",
+      "reader_sha256": "03c67b865dc2c76f94e6e56e688483482a085808a4dcf8d989a0e9df68967258",
+      "native_LF": [
+        1209,
+        1211
+      ],
+      "quote_sha256": "7d3d3f401102e585888eadc5d5f6990c8b6aa9e07f1771767580cea055b05c58",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 63,
+      "id": "MANLOSS",
+      "url": "https://esth.bundesfinanzministerium.de/esth/2025/A-Einkommensteuergesetz/IV-Tarif-31-34b/Paragraf-32b/inhalt.html",
+      "article": "EStH2025 H32b foreign losses and exceptions",
+      "raw_sha256": "3b9da2375d2b4633f962cf9a853f2ccae2db4ed1e9f8964e8de93f68050f4afb",
+      "reader_sha256": "03c67b865dc2c76f94e6e56e688483482a085808a4dcf8d989a0e9df68967258",
+      "native_LF": [
+        1189,
+        1194
+      ],
+      "quote_sha256": "fbc6aadf2a56cea1dca11166ad813dfcc72b10b70aab69291a0efc3cdb5bed5a",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 64,
+      "id": "MANAHV",
+      "url": "https://esth.bundesfinanzministerium.de/esth/2025/A-Einkommensteuergesetz/IV-Tarif-31-34b/Paragraf-32b/inhalt.html",
+      "article": "EStH2025 H32b SwissAHV",
+      "raw_sha256": "3b9da2375d2b4633f962cf9a853f2ccae2db4ed1e9f8964e8de93f68050f4afb",
+      "reader_sha256": "03c67b865dc2c76f94e6e56e688483482a085808a4dcf8d989a0e9df68967258",
+      "native_LF": [
+        1188,
+        1188
+      ],
+      "quote_sha256": "b73298fa23eed964fd79831ce0355126574aa8a0ac83713d99e2dd36c52b5208",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 65,
+      "id": "MANKEY",
+      "url": "https://esth.bundesfinanzministerium.de/esth/2025/B-Anhaenge/Anhang-27b/I/inhalt.html",
+      "article": "BMF3November2016 as amended, Rn22/24",
+      "raw_sha256": "bc37e7da359528030f44573fb213754a8497b3e9b45c0f6498a29d829b71780a",
+      "reader_sha256": "0e1b2db8ec694b6a10c6213aea175f6ca3a4728cbeefc1324afabd11ce354673",
+      "native_LF": [
+        1222,
+        1227
+      ],
+      "quote_sha256": "ac7cbc26fdd3ea3786093f5691e80627464fb6a9f00a453ba2d0d9de4f434428",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 66,
+      "id": "MANINS",
+      "url": "https://esth.bundesfinanzministerium.de/esth/2025/B-Anhaenge/Anhang-01a/II/inhalt.html",
+      "article": "BMF insurance letter Rn199, limited to cited exempt-pay context",
+      "raw_sha256": "42a6e79c70732ab685113bac7b3e2d4b2adba027e5e429e75efd0a530bbec077",
+      "reader_sha256": "f66c77ca5cbda6ef9c3d2121d148b6ecbdde4c5a12aea16342f455e3d483f39e",
+      "native_LF": [
+        1908,
+        1911
+      ],
+      "quote_sha256": "7d230d114076812db8fe50b8a00ac933244783e8b163c2447552ddbf201d6e28",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    },
+    {
+      "row": 67,
+      "id": "MANFORM",
+      "url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_fein_2025",
+      "article": "ELSTER2025 ESt1B/FB/FE-G/FE-S names, not2026 form proof",
+      "raw_sha256": "e60556fa186a65596ff731fb0985beb4ce3c45f294ff1199d608a41954612b5a",
+      "reader_sha256": "bd858fde910c5ff6215c90b6caa526ef02542f3edceca7df039b9aeb3f7aaa02",
+      "native_LF": [
+        306,
+        313
+      ],
+      "quote_sha256": "9f25b943f52fe955f5c4d8230026dcc09614b90ca406fdbe208c804f6938e406",
+      "actual_read": "Complete selectedquotation actually read untruncated29October; helper separately verified raw/reader/native literal membership"
+    }
+  ],
+  "pending": [
+    "DE-R05/R06 exact repair successors",
+    "old-topic source spotcheck",
+    "final row dispositions"
+  ]
+}

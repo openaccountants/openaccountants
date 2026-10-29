@@ -1,0 +1,21 @@
+{
+  "origins": 228,
+  "mismatch": [],
+  "semantic_samples_1based": [
+    6,
+    20,
+    25,
+    34,
+    41,
+    44,
+    50,
+    62,
+    68,
+    70,
+    128,
+    145,
+    180,
+    214
+  ],
+  "scope": "All actual old text origins checked against Git. Named semantic destinations actually sampled; no claim every old semantic route re-reviewed."
+}

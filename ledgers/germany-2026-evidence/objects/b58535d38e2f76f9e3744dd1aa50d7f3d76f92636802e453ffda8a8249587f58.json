@@ -1,0 +1,5 @@
+{
+  "result": "TypeError before validation completion",
+  "reason": "Original B manifest is a list, not an artifacts-key object; correct the checker manifest shape only.",
+  "Guide_source_or_ledger_change": false
+}

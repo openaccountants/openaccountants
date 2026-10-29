@@ -1,0 +1,9 @@
+{
+  "before_sha256": "0214cdbe20852e60ffb42cfde6a0a97d3927d737540ef2bbdc0e79fa676d9e64",
+  "after_sha256": "6490866ed01c76228acd389426527eecc10b5c835a082799868ed9a5fe8aa62a",
+  "only_three_recorded_replacements": true,
+  "inverse_exact": true,
+  "original_oa_blocks": 2,
+  "original_oa_exact": true,
+  "scope": "Citation coordinate and metadata only; all other bytes exact, no amount or method change; no independent country review verdict."
+}

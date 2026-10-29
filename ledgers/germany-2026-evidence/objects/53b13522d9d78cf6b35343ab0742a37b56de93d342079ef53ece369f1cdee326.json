@@ -1,0 +1,15 @@
+[
+  "f9de1bc1bafb947fb281284b5db81c23ff9299c2\tc9c520dbae6299a16902587b92f401ddbe0d1065\t2026-10-24\tguides: 247 update(s) by Ryan Duguid (openaccountants.com)",
+  "67a753975096c467f364454814061588c3215fa2\t9e871ea3e21bf66964f32bc5b6b813baacbb4c4e\t2026-10-22\tGermany: the 70% loss share reverts to 60% from 2028 (#548)",
+  "5f0e5e653d843c034d78e0bd866a5bfb4f5f4e59\t8926bfed9f6ce61ccd90729aa878a462bdd77687\t2026-10-18\tsync: 542 files updated from openaccountants.com (2026-10-18)",
+  "d3df95fafbf90e27f4dfb36086784c0df54b0f58\t9e34d39bc2d4000d3788274297dad7909af4f96a\t2026-09-21\tsync: 14 files updated from openaccountants.com (2026-09-21)",
+  "11eb01a426a98dc27b7318f82947506e7f1d7929\t28c603d87fe43702630ba3480da3fb107345c3d9\t2026-08-27\tsync: 3270 files updated from openaccountants.com (2026-08-27)",
+  "7782d74fd197bc66002760de13a81a5a60c82f9a\t7db2915b250b7c5085b52f66534ceac158847b65\t2026-08-25\tsync: 1256 files updated from openaccountants.com (2026-08-25)",
+  "037f3d41878fe4e5b7b773c32d478a11c6034e8e\ta77a15abfe51c6b3ba9575bf700bab1425773daf\t2026-08-02\tsync: 6129 files updated from openaccountants.com (2026-08-02)",
+  "bca875f4e5db9dc0b133bf1120c07968451004d0\tc974f4f85641d7c3bee1857920122bc32cbbfadb\t2026-08-01\tsync: 7374 files updated from openaccountants.com (2026-08-01)",
+  "3244ccd6e8445aba16e6cea2747261a2e9336588\t3ad5ae99321268fa497a87d80e378f38f83fc541\t2026-07-04\tComplete frontmatter metadata on all 1,007 Guides + strict CI",
+  "1c626f5f4dc19bb21c80d70d08e533504f8af047\ta2566a20ade7eb3998ffff80fad008ec0f2206bd\t2026-06-12\tAdd reliance disclaimers across the repo",
+  "5ec07f8c9055c6a1d569afc67e136ef6dcef2b3a\t476d5159a93415aceb2d220cb91fe641f3edb7df\t2026-06-07\tFix broken links: non-www openaccountants.com 404s on every path",
+  "8530598b32a903045d1d3d0175ecd37f9470d854\t03ca5561e99fa9f82fad7b27dcd253b416f20470\t2026-05-26\tFrontmatter cleanup: UK/Germany/Portugal",
+  "2884db4bbfec51d531d561e8f9a96f607ba6652f\t75fa9a9fa2a825867a799514fbbdcaaa603da178\t2026-05-22\tAdd 7 accounting domains + cross-border orchestrator: 104 new skill files"
+]

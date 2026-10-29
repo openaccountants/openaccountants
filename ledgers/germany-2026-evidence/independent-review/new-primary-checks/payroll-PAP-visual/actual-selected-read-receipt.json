@@ -1,0 +1,44 @@
+{
+  "source": {
+    "id": "U04c9d8868081bd75",
+    "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/pap-2026-anlage1-20261024.pdf",
+    "raw_sha256": "5da38acd544868ddcb0bc7f43030bd7d6ee9aa455dff0f42ad59732634e33a48",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U04c9d8868081bd75.reader.txt",
+    "reader_sha256": "104f46ddb0f117a903d18079766f1c6ffffeb872e5fa4a26319b33c48cee538e",
+    "extraction": "PDF pdftotext-layout; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately"
+  },
+  "raw_rehashed": "5da38acd544868ddcb0bc7f43030bd7d6ee9aa455dff0f42ad59732634e33a48",
+  "actual_printed_pages_visually_read": [
+    27,
+    29,
+    30
+  ],
+  "actual_extra_native_LF_read": [
+    [
+      1478,
+      1585
+    ],
+    [
+      1640,
+      1700
+    ]
+  ],
+  "images": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/payroll-PAP-visual/PAP2026-physical27.png",
+      "sha256": "422aa0bc6e9d4f6c326bdceb58b8ad31880ee72f6c8b4cd5c6b9b0b26be4085c"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/payroll-PAP-visual/PAP2026-physical30.png",
+      "sha256": "f8d393c758933b1d69244faf1b0c53c1b9e5325bae38ddf95f7b707fec75300f"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/payroll-PAP-visual/PAP2026-physical29.png",
+      "sha256": "40c75fdee3f2fe448a90cf5af3cf0ebd7e5a4becffdceeb7a4ec4e5fff084da1"
+    }
+  ],
+  "scope": "SelectedcompleteMVSPKVPV/MST5-6/UP5-6diagrams; other37pagesnotvisualread. Native MVSPHB also read; 107prepared selected quotes separatelyread, notrawbodywide."
+}

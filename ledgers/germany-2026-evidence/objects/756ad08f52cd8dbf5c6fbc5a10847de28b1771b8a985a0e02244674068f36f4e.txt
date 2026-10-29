@@ -1,0 +1,2110 @@
+                     Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien
+
+
+
+
+                                                      Inhaltsverzeichnis
+
+
+Allgemeine haftungsausschließende Erklärung zu diesem Textdokument .......................................... 1
+Haftungsausschließende Erklärung zum Wirksamwerden der Bestimmungen des BEPS-MLI .......... 3
+  Artikel 1 Unter das Abkommen fallende Personen .......................................................................... 4
+  Artikel 2 Unter das Abkommen fallende Steuern ............................................................................ 5
+  Artikel 3 Allgemeine Begriffsbestimmungen .................................................................................. 6
+  Artikel 4 Ansässige Person .............................................................................................................. 7
+  Artikel 5 Betriebsstätte ..................................................................................................................... 7
+  Artikel 6 Einkünfte aus unbeweglichem Vermögen ...................................................................... 10
+  Artikel 7 Unternehmensgewinne .................................................................................................... 10
+  Artikel 8 Seeschifffahrt, Binnenschifffahrt und Luftfahrt .............................................................. 11
+  Artikel 9 Verbundene Unternehmen .............................................................................................. 12
+  Artikel 10 Dividenden .................................................................................................................... 12
+  Artikel 11 Zinsen............................................................................................................................ 13
+  Artikel 12 Lizenzgebühren ............................................................................................................. 14
+  Artikel 13 Gewinne aus der Veräußerung von Vermögen ............................................................. 15
+  Artikel 14 Einkünfte aus unselbständiger Arbeit ........................................................................... 16
+  Artikel 15 Aufsichtsrats- und Verwaltungsratsvergütungen .......................................................... 16
+  Artikel 16 Künstler und Sportler .................................................................................................... 16
+  Artikel 17 Ruhegehälter und Renten .............................................................................................. 17
+  Artikel 18 Öffentlicher Dienst........................................................................................................ 18
+  Artikel 19 Gastprofessoren, Lehrer und Studenten ........................................................................ 19
+  Artikel 20 Andere Einkünfte .......................................................................................................... 19
+  Artikel 21 Vermögen ...................................................................................................................... 19
+  Artikel 22 Vermeidung der Doppelbesteuerung ............................................................................ 20
+  Artikel 23 Gleichbehandlung ......................................................................................................... 22
+  Artikel 24 Verständigungsverfahren .............................................................................................. 23
+  Artikel 25 Informationsaustausch .................................................................................................. 32
+  Artikel 26 Amtshilfe bei der Erhebung von Steuern ...................................................................... 33
+  Artikel 27 Mitglieder diplomatischer Missionen und konsularischer Vertretungen ...................... 34
+  Artikel 28 Schranken für die Abkommensvergünstigungen .......................................................... 35
+  Artikel 29 Protokoll ........................................................................................................................ 36
+  Artikel 30 Inkrafttreten................................................................................................................... 36
+  Artikel 31 Kündigung..................................................................................................................... 37
+  Artikel 32 Registrierung ................................................................................................................. 37
+  Protokoll zum Abkommen zwischen der Bundesrepublik Deutschland und dem Königreich
+  Spanien zur Vermeidung der Doppelbesteuerung und zur Verhinderung der Steuerverkürzung
+  auf dem Gebiet der Steuern vom Einkommen und vom Vermögen .............................................. 39
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 1
+
+
+
+                                  SYNTHETISIERTER TEXT
+
+                DES ABKOMMENS VOM 3. FEBRUAR 2011
+           ZWISCHEN DER BUNDESREPUBLIK DEUTSCHLAND
+                   UND DEM KÖNIGREICH SPANIEN
+            ZUR VERMEIDUNG DER DOPPELBESTEUERUNG
+          UND ZUR VERHINDERUNG DER STEUERVERKÜRZUNG
+  AUF DEM GEBIET DER STEUERN VOM EINKOMMEN UND VOM VERMÖGEN
+
+                                       UND DES BEPS-MLI
+
+
+Allgemeine haftungsausschließende Erklärung zu diesem Textdokument
+
+ Dieses Dokument stellt den synthetisierten Text für die Anwendung des Abkommens vom
+ 3. Februar 2011 zwischen der Bundesrepublik Deutschland und dem Königreich Spanien zur
+ Vermeidung der Doppelbesteuerung und zur Verhinderung der Steuerverkürzung auf dem Gebiet
+ der Steuern vom Einkommen und vom Vermögen (BGBl. 2012 II S. 18, 19) in seiner
+ anzuwendenden Form nach den übereinstimmenden Auswahlentscheidungen und Vorbehalten der
+ Bundesrepublik Deutschland und des Königreichs Spanien zum Mehrseitigen Übereinkommen vom
+ 24. November 2016 zur Umsetzung steuerabkommensbezogener Maßnahmen zur Verhinderung der
+ Gewinnverkürzung und Gewinnverlagerung (BEPS-MLI) dar.
+
+ Das Dokument wurde auf der Grundlage der von der Bundesrepublik Deutschland am 18. Dezember
+ 2020 und von dem Königreich Spanien am 28. September 2021 aus Anlass der Ratifikation dem
+ Verwahrer übermittelten Vorbehalte und Notifikationen („BEPS-MLI-Positionen“) erstellt. Diese
+ Auswahlentscheidungen und Vorbehalte sind den im BEPS-MLI vorgesehenen Modifizierungen
+ vorbehalten. Die Modifizierung der Auswahlentscheidungen und Vorbehalte kann die Wirkung des
+ BEPS-MLI auf das Abkommen verändern.
+
+ Die authentischen Vertragstexte des Abkommens und des BEPS-MLI sind vorrangig und als einzig
+ maßgebliche Rechtsquellen anzuwenden.
+
+ Die Bestimmungen des BEPS-MLI, welche in Bezug auf die Bestimmungen des Abkommens
+ anwendbar sind, werden in diesem Dokument durchgehend in Form von eingerahmten Feldern im
+ Zusammenhang mit den entsprechenden Bestimmungen des Abkommens dargestellt. Die
+ eingerahmten Felder, welche die Bestimmungen des BEPS-MLI enthalten, wurden im Allgemeinen
+ in Übereinstimmung mit der Reihenfolge der Bestimmungen des OECD-Musterabkommens auf
+ dem Gebiete der Steuern vom Einkommen und vom Vermögen in das Abkommen eingefügt.
+
+ Der Text der Bestimmungen des BEPS-MLI wurde zur Vereinheitlichung der im BEPS-MLI
+ verwendeten Begriffe mit jenen des Abkommens (z. B. „unter das Übereinkommen fallendes
+ Steuerabkommen“ und „Abkommen“, „Vertragspartei dieses Übereinkommens“ und
+ „Vertragsparteien“) im Interesse des einfacheren Verständnisses der Bestimmungen des BEPS-MLI
+ verändert. Die Veränderungen der Begriffe dienen der leichteren Lesbarkeit des Dokuments und
+ zielen nicht auf eine Änderung des Inhalts der Bestimmungen des BEPS-MLI ab. In ähnlicher Weise
+ wurden Teile der Bestimmungen des BEPS-MLI verändert, die bestehende Bestimmungen des
+                           Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 2
+
+
+Abkommens umschreiben: umschreibende Wortfolgen wurden durch rechtliche Verweise auf die
+bestehenden Abkommensbestimmungen im Interesse der leichteren Lesbarkeit ersetzt.
+
+In allen Fällen sind Verweise auf die Bestimmungen des Abkommens oder auf das Abkommen in
+dem Sinne zu verstehen, dass sie sich auf das Abkommen in der durch das MLI geänderten Fassung
+beziehen, vorausgesetzt, die Bestimmungen des BEPS-MLI wurden wirksam.
+
+Hinweise
+
+Die authentischen Texte des BEPS-MLI und des Abkommens sind über die Webseite des
+Bundesministeriums der Finanzen abrufbar:
+
+BEPS-MLI-Vertragsgesetz
+https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/
+Abteilungen/Abteilung_IV/19_Legislaturperiode/Gesetze_Verordnungen/2020-11-27-
+Gewinnverkuerzung/4-Verkuendetes-Gesetz.pdf?__blob=publicationFile&v=2
+
+BEPS-MLI-Anwendungsgesetz
+https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/
+Abteilungen/Abteilung_IV/20_Legislaturperiode/2023-12-19-BEPSMLIAnwG/0-Gesetz.html
+
+Abkommen mit dem Königreich Spanien
+https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internatio
+nales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Spanien/2012-01-20-Spanien-
+Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=2
+
+Die Auswahlentscheidungen und Vorbehalte der Bundesrepublik Deutschland und des
+Königreichs Spanien zum BEPS-MLI sind beim Verwahrer hinterlegt und unter dem Link
+http://www.oecd.org/tax/treaties/beps-mli-signatories-and-parties.pdf abrufbar.
+                            Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 3
+
+
+
+Haftungsausschließende Erklärung zum Wirksamwerden der Bestimmungen des
+BEPS-MLI
+
+Wirksamwerden der Bestimmungen des BEPS-MLI
+
+Die Bestimmungen des BEPS-MLI, die auf das Abkommen anzuwenden sind, werden nicht im
+selben Zeitpunkt wie die ursprünglichen Bestimmungen des Abkommens wirksam. Jede
+Bestimmung des BEPS-MLI kann zu unterschiedlichen Zeitpunkten wirksam werden, abhängig von
+den betroffenen Steuerarten (im Abzugsweg erhobene Steuern oder andere Steuern) und von den
+Wahlmöglichkeiten, welche die Bundesrepublik Deutschland und das Königreich Spanien ausgeübt
+haben.
+
+Zeitpunkt der Hinterlegung der Ratifizierungs-, Annahme- oder Genehmigungsurkunde:
+18. Dezember 2020 für die Bundesrepublik Deutschland und 28. September 2021 für das
+Königreich Spanien.
+
+Zeitpunkt des Inkrafttretens des BEPS-MLI: 1. April 2021 für die Bundesrepublik Deutschland und
+1. Januar 2022 für das Königreich Spanien.
+
+Zeitpunkt des Empfangs der Notifikation des Königreichs Spanien über den Abschluss seiner
+innerstaatlichen Verfahren für das Wirksamwerden des BEPS-MLI durch den Verwahrer:
+1. Juni 2022.
+
+Zeitpunkt des Empfangs der Notifikation der Bundesrepublik Deutschland über den Abschluss
+seiner innerstaatlichen Verfahren für das Wirksamwerden des BEPS-MLI durch den Verwahrer:
+2. Oktober 2024.
+
+Die Bundesrepublik Deutschland und das Königreich Spanien haben dem Verwahrer notifiziert,
+dass sie beabsichtigen, einen Zeitabschnitt von zwei statt sechs Monaten nach Artikel 35 Absatz 1
+Buchstabe b BEPS-MLI anzuwenden.
+
+Dieses Dokument enthält durchgehend spezifische Informationen über den Zeitpunkt, an dem oder
+nach dem die Bestimmungen des BEPS-MLI in Bezug auf das Abkommen Wirksamkeit erlangen.
+                                      Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 4
+
+
+                                                Abkommen
+                                 zwischen der Bundesrepublik Deutschland
+                                        und dem Königreich Spanien
+                                  zur Vermeidung der Doppelbesteuerung
+                                und zur Verhinderung der Steuerverkürzung
+                       auf dem Gebiet der Steuern vom Einkommen und vom Vermögen
+
+
+                                             Die Bundesrepublik Deutschland
+                                                              und
+                                                 das Königreich Spanien –
+
+
+        [ERSETZT durch Artikel 6 Absatz 1 des BEPS-MLI] [von dem Wunsch geleitet, ein
+        Abkommen zur Vermeidung der Doppelbesteuerung und zur Verhinderung der
+        Steuerverkürzung auf dem Gebiet der Steuern vom Einkommen und vom Vermögen zu
+        schließen]
+
+    Der folgende Artikel 6 Absatz 1 des BEPS-MLI ersetzt den Text betreffend die Absicht zur Vermeidung der
+    Doppelbesteuerung in der Präambel dieses Abkommens:1
+
+                   ARTIKEL 6 BEPS-MLI – ZWECK EINES UNTER DAS ÜBEREINKOMMEN
+                                  FALLENDEN STEUERABKOMMENS
+    in der Absicht, in Bezug auf die unter dieses Abkommen fallenden Steuern eine Doppelbesteuerung zu
+    beseitigen, ohne Möglichkeiten zur Nicht- oder Niedrigbesteuerung durch Steuerverkürzung oder
+    -umgehung (unter anderem durch missbräuchliche Gestaltungen mit dem Ziel des Erhalts von in diesem
+    Abkommen vorgesehenen Erleichterungen zum mittelbaren Nutzen von in Drittstaaten oder -gebieten
+    ansässigen Personen) zu schaffen,
+
+
+        – sind wie folgt übereingekommen:
+
+
+                                                Artikel 1
+                                     Unter das Abkommen fallende Personen
+Dieses Abkommen gilt für Personen, die in einem Vertragsstaat oder in beiden Vertragsstaaten ansässig
+sind.
+
+
+
+
+1
+    Wirksam ab dem 1. Januar 2025.
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 5
+
+
+                                      Artikel 2
+                         Unter das Abkommen fallende Steuern
+
+(1) Dieses Abkommen gilt, ohne Rücksicht auf die Art der Erhebung, für Steuern vom Einkommen und
+vom Vermögen, die für Rechnung eines Vertragsstaats, eines seiner Länder oder einer ihrer
+Gebietskörperschaften erhoben werden.
+
+(2) Als Steuern vom Einkommen und vom Vermögen gelten alle Steuern, die vom Gesamteinkommen,
+vom Gesamtvermögen oder von Teilen des Einkommens oder des Vermögens erhoben werden,
+einschließlich der Steuern vom Gewinn aus der Veräußerung beweglichen oder unbeweglichen
+Vermögens, der Lohnsummensteuern sowie der Steuern vom Vermögenszuwachs.
+
+(3) Zu den zurzeit bestehenden Steuern, für die das Abkommen gilt, gehören insbesondere
+
+   a) im Königreich Spanien:
+
+         i) die Einkommensteuer der natürlichen Personen,
+
+         ii) die Körperschaftsteuer,
+
+         iii) die Einkommensteuer der Auslandsansässigen,
+
+         iv) die Vermögensteuer und
+
+         v) örtliche Einkommen- und Vermögensteuern
+
+         (im Folgenden als „spanische Steuer“ bezeichnet);
+
+   b) in der Bundesrepublik Deutschland:
+
+         i) die Einkommensteuer,
+
+         ii) die Körperschaftsteuer,
+
+         iii) die Gewerbesteuer und
+
+         iv) die Vermögensteuer
+
+         einschließlich der hierauf erhobenen Zuschläge
+
+         (im Folgenden als „deutsche Steuer“ bezeichnet).
+
+(4) Das Abkommen gilt auch für alle Steuern gleicher oder im Wesentlichen ähnlicher Art, die nach der
+Unterzeichnung des Abkommens neben den bestehenden Steuern oder an deren Stelle erhoben werden.
+Die zuständigen Behörden der Vertragsstaaten teilen einander die in ihren Steuergesetzen eingetretenen
+bedeutsamen Änderungen mit, soweit dies für die Anwendung des Abkommens erforderlich ist.
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 6
+
+
+                                       Artikel 3
+                           Allgemeine Begriffsbestimmungen
+
+(1) Im Sinne dieses Abkommens, wenn der Zusammenhang nichts anderes erfordert,
+
+   a) bedeuten die Ausdrücke „ein Vertragsstaat“ und „der andere Vertragsstaat“ je nach dem
+      Zusammenhang die Bundesrepublik Deutschland, nachfolgend „Deutschland“, oder das
+      Königreich Spanien, nachfolgend „Spanien“, und umfassen, im geografischen Sinne verwendet,
+      das Hoheitsgebiet dieser Staaten sowie das an das Küstenmeer angrenzende Gebiet des
+      Meeresbodens, des Meeresuntergrunds und der darüber befindlichen Wassersäule, soweit der
+      jeweilige Staat dort in Übereinstimmung mit dem Völkerrecht und seinen innerstaatlichen
+      Rechtsvorschriften souveräne Rechte und Hoheitsbefugnisse zum Zwecke der Erforschung,
+      Ausbeutung, Erhaltung und Bewirtschaftung der lebenden und nicht lebenden natürlichen
+      Ressourcen ausübt;
+
+   b) umfasst der Ausdruck „Person“ natürliche Personen, Gesellschaften und alle anderen
+      Personenvereinigungen;
+
+   c) bedeutet der Ausdruck „Gesellschaft“ juristische Personen oder Rechtsträger, die für die
+      Besteuerung wie juristische Personen behandelt werden;
+
+   d) bezieht sich der Ausdruck „Unternehmen“ auf die Ausübung einer Geschäftstätigkeit;
+
+   e) bedeuten die Ausdrücke „Unternehmen eines Vertragsstaats“ und „Unternehmen des anderen
+      Vertragsstaats“, je nachdem, ein Unternehmen, das von einer in einem Vertragsstaat ansässigen
+      Person betrieben wird, oder ein Unternehmen, das von einer im anderen Vertragsstaat ansässigen
+      Person betrieben wird;
+
+   f) bedeutet der Ausdruck „internationaler Verkehr“ jede Beförderung mit einem Beförderungsmittel
+      jeder Art, das von einem Unternehmen mit tatsächlicher Geschäftsleitung in einem Vertragsstaat
+      betrieben wird, es sei denn, die Beförderungsmittel werden ausschließlich zwischen Orten im
+      anderen Vertragsstaat betrieben;
+
+   g) bedeutet der Ausdruck „zuständige Behörde“
+
+        i) in Spanien der Minister für Wirtschaft und Finanzen oder sein Bevollmächtigter;
+
+        ii) in Deutschland das Bundesministerium der Finanzen oder die Behörde, an die es seine
+            Befugnisse delegiert hat;
+
+   h) bedeutet der Ausdruck „Staatsangehöriger“
+
+        i) in Bezug auf Deutschland alle Deutschen im Sinne des Grundgesetzes für die Bundesrepublik
+           Deutschland sowie alle juristischen Personen, Personengesellschaften oder anderen
+           Personenvereinigungen, die nach dem in Deutschland geltenden Recht errichtet worden sind;
+
+        ii) in Bezug auf Spanien
+
+            – alle natürlichen Personen, die die spanische Staatsangehörigkeit besitzen, sowie
+                               Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 7
+
+
+              – alle juristischen Personen, Personengesellschaften und anderen Personenvereinigungen, die
+                 nach dem im Königreich Spanien geltenden Recht errichtet worden sind;
+
+    i)   schließt der Ausdruck „Geschäftstätigkeit“ auch die Ausübung einer freiberuflichen oder sonstigen
+         selbständigen Tätigkeit ein.
+
+(2) Bei Anwendung des Abkommens durch einen Vertragsstaat hat, wenn der Zusammenhang nichts
+anderes erfordert, jeder im Abkommen nicht definierte Ausdruck die Bedeutung, die ihm im
+Anwendungszeitraum nach dem Recht dieses Staates über die Steuern zukommt, für die das Abkommen
+gilt, wobei die Bedeutung nach dem in diesem Staat anzuwendenden Steuerrecht den Vorrang vor einer
+Bedeutung hat, die der Ausdruck nach anderem Recht dieses Staates hat.
+
+
+
+                                           Artikel 4
+                                        Ansässige Person
+
+(1) Im Sinne dieses Abkommens bedeutet der Ausdruck „eine in einem Vertragsstaat ansässige Person“
+eine Person, die nach dem Recht dieses Staates, eines seiner Länder oder einer ihrer Gebietskörperschaften
+dort aufgrund ihres Wohnsitzes, ihres ständigen Aufenthalts, des Ortes ihrer Geschäftsleitung oder eines
+anderen ähnlichen Merkmals steuerpflichtig ist, und umfasst auch diesen Staat, seine Länder und ihre
+Gebietskörperschaften. Der Ausdruck umfasst jedoch nicht eine Person, die in diesem Staat nur mit
+Einkünften aus Quellen in diesem Staat oder mit in diesem Staat gelegenem Vermögen steuerpflichtig ist.
+
+(2) Ist nach Absatz 1 eine natürliche Person in beiden Vertragsstaaten ansässig, so gilt Folgendes:
+
+    a) Die Person gilt als nur in dem Staat ansässig, in dem sie über eine ständige Wohnstätte verfügt;
+       verfügt sie in beiden Staaten über eine ständige Wohnstätte, so gilt sie als nur in dem
+       Vertragsstaat ansässig, zu dem sie die engeren persönlichen und wirtschaftlichen Beziehungen
+       hat (Mittelpunkt der Lebensinteressen);
+
+    b) kann nicht bestimmt werden, in welchem Staat die Person den Mittelpunkt ihrer
+       Lebensinteressen hat, oder verfügt sie in keinem der Staaten über eine ständige Wohnstätte, so
+       gilt sie als nur in dem Staat ansässig, in dem sie ihren gewöhnlichen Aufenthalt hat;
+
+    c) hat die Person ihren gewöhnlichen Aufenthalt in beiden Staaten oder in keinem der Staaten, so
+       gilt sie als nur in dem Staat ansässig, dessen Staatsangehöriger sie ist;
+
+    d) ist die Person Staatsangehöriger beider Staaten oder keines der Staaten, so regeln die zuständigen
+       Behörden der Vertragsstaaten die Frage in gegenseitigem Einvernehmen.
+
+(3) Ist nach Absatz 1 eine andere als eine natürliche Person in beiden Vertragsstaaten ansässig, so gilt sie
+als nur in dem Vertragsstaat ansässig, in dem sich der Ort ihrer tatsächlichen Geschäftsleitung befindet.
+
+
+
+                                            Artikel 5
+                                          Betriebsstätte
+(1) Im Sinne dieses Abkommens bedeutet der Ausdruck „Betriebstätte“ eine feste Geschäftseinrichtung,
+durch die die Tätigkeit eines Unternehmens ganz oder teilweise ausgeübt wird.
+                               Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 8
+
+
+(2) Der Ausdruck „Betriebstätte“ umfasst insbesondere
+
+   a) einen Ort der Leitung,
+
+   b) eine Zweigniederlassung,
+
+   c) eine Geschäftsstelle,
+
+   d) eine Fabrikationsstätte,
+
+   e) eine Werkstätte und
+
+   f) ein Bergwerk, ein Öl- oder Gasvorkommen, einen Steinbruch oder eine andere Stätte der
+      Ausbeutung natürlicher Ressourcen.
+
+(3) Eine Bauausführung oder Montage ist nur dann eine Betriebsstätte, wenn ihre Dauer zwölf Monate
+überschreitet.
+
+(4) [ERSETZT durch Artikel 13 Absatz 2 des BEPS-MLI] [Ungeachtet der vorstehenden
+Bestimmungen dieses Artikels gelten nicht als Betriebstätten:
+
+   a) Einrichtungen, die ausschließlich zur Lagerung, Ausstellung oder Auslieferung von Gütern oder
+      Waren des Unternehmens benutzt werden;
+
+   b) Bestände von Gütern oder Waren des Unternehmens, die ausschließlich zu Lagerung,
+      Ausstellung oder Auslieferung unterhalten werden;
+
+   c) Bestände von Gütern oder Waren des Unternehmens, die ausschließlich zu dem Zweck
+      unterhalten werden, durch ein anderes Unternehmen bearbeitet oder verarbeitet zu werden;
+
+   d) eine feste Geschäftseinrichtung, die ausschließlich zu dem Zweck unterhalten wird, für das
+      Unternehmen Güter oder Waren einzukaufen oder Informationen zu beschaffen;
+
+   e) eine feste Geschäftseinrichtung, die ausschließlich zu dem Zweck unterhalten wird, für das
+      Unternehmen andere Tätigkeiten auszuüben, die vorbereitender Art sind oder eine Hilfstätigkeit
+      darstellen;
+
+   f)   eine feste Geschäftseinrichtung, die ausschließlich zu dem Zweck unterhalten wird, mehrere der
+        unter den Buchstaben a bis e genannten Tätigkeiten auszuüben, vorausgesetzt, dass die sich
+        daraus ergebene Gesamttätigkeit der festen Geschäftseinrichtung vorbereitender Art ist oder
+        eine Hilfstätigkeit darstellt.]
+                                     Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 9
+
+
+
+    Der folgende Artikel 13 Absatz 2 des BEPS-MLI ersetzt Artikel 5 Absatz 4 dieses Abkommens:2
+
+                        ARTIKEL 13 BEPS-MLI – KÜNSTLICHE UMGEHUNG DES
+                    BETRIEBSSTÄTTENSTATUS DURCH DIE AUSNAHME BESTIMMTER
+                                         TÄTIGKEITEN
+    Ungeachtet der Bestimmungen dieses Artikels gelten folgende Fälle als nicht von dem Ausdruck
+    „Betriebsstätte“ umfasst:
+
+       a)
+
+              i. Einrichtungen, die ausschließlich zur Lagerung, Ausstellung oder Auslieferung von Gütern
+                 oder Waren des Unternehmens benutzt werden;
+
+             ii. Bestände von Gütern oder Waren des Unternehmens, die ausschließlich zu Lagerung,
+                 Ausstellung oder Auslieferung unterhalten werden;
+
+            iii. Bestände von Gütern oder Waren des Unternehmens, die ausschließlich zu dem Zweck
+                 unterhalten werden, durch ein anderes Unternehmen bearbeitet oder verarbeitet zu werden;
+
+             iv. eine feste Geschäftseinrichtung, die ausschließlich zu dem Zweck unterhalten wird, für das
+                 Unternehmen Güter oder Waren einzukaufen oder Informationen zu beschaffen;
+
+             v. eine feste Geschäftseinrichtung, die ausschließlich zu dem Zweck unterhalten wird, für das
+                Unternehmen andere Tätigkeiten auszuüben, die vorbereitender Art sind oder eine
+                Hilfstätigkeit darstellen;
+
+             vi. eine feste Geschäftseinrichtung, die ausschließlich zu dem Zweck unterhalten wird, mehrere
+                 der unter den Ziffern i. bis v. genannten Tätigkeiten auszuüben, vorausgesetzt, dass die sich
+                 daraus ergebene Gesamttätigkeit der festen Geschäftseinrichtung vorbereitender Art ist oder
+                 eine Hilfstätigkeit darstellt.
+
+       b) eine feste Geschäftseinrichtung, die ausschließlich zu dem Zweck unterhalten wird, für das
+          Unternehmen eine nicht unter Buchstabe a beschriebene Tätigkeit auszuüben,
+
+       c) eine feste Geschäftseinrichtung, die ausschließlich zu dem Zweck unterhalten wird, mehrere der
+          unter den Buchstaben a und b genannten Tätigkeiten auszuüben,
+
+    sofern diese Tätigkeit oder im Fall des Buchstabens c die Gesamttätigkeit der festen Geschäftseinrichtung
+    vorbereitender Art ist oder eine Hilfstätigkeit darstellt.
+
+
+(5) Ist eine Person – mit Ausnahme eines unabhängigen Vertreters im Sinne des Absatzes 6 –für ein
+Unternehmen tätig, und besitzt sie in einem Vertragsstaat die Vollmacht, im Namen des Unternehmens
+Verträge abzuschließen, und übt sie die Vollmacht dort gewöhnlich aus, so wird das Unternehmen
+ungeachtet der Absätze 1 und 2 so behandelt, als habe es in diesem Staat für alle von der Person für das
+Unternehmen ausgeübten Tätigkeiten eine Betriebsstätte, es sei denn, diese Tätigkeiten beschränken sich
+
+
+2
+    Wirksam ab dem 1. Januar 2025.
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 10
+
+
+auf die im Absatz 4 genannten Tätigkeiten, die, würden sie durch eine feste Geschäftseinrichtung ausgeübt,
+diese Einrichtung nach dem genannten Absatz nicht zu einer Betriebsstätte machten.
+
+(6) Ein Unternehmen eines Vertragsstaats wird nicht schon deshalb so behandelt, als habe es eine
+Betriebstätte in einem Vertragsstaat, weil es dort seine Tätigkeit durch einen Makler, Kommissionär oder
+einen anderen unabhängigen Vertreter ausübt, sofern diese Personen im Rahmen ihrer ordentlichen
+Geschäftstätigkeit handeln.
+
+(6) Allein dadurch, dass eine in einem Vertragsstaat ansässige Gesellschaft eine Gesellschaft beherrscht
+oder von einer Gesellschaft beherrscht wird, die in dem anderen Vertragsstaat ansässig ist oder dort
+(entweder durch eine Betriebstätte oder auf andere Weise) ihre Tätigkeit ausübt, wird keine der beiden
+Gesellschaften zur Betriebstätte der anderen.
+
+
+
+                                        Artikel 6
+                         Einkünfte aus unbeweglichem Vermögen
+
+(1) Einkünfte, die eine in einem Vertragsstaat ansässige Person aus unbeweglichem Vermögen
+(einschließlich der Einkünfte aus land- und forstwirtschaftlichen Betrieben) bezieht, das im anderen
+Vertragsstaat liegt, können im anderen Staat besteuert werden.
+
+(2) Der Ausdruck „unbewegliches Vermögen“ hat die Bedeutung, die ihm nach dem Recht des
+Vertragsstaats zukommt, in dem das Vermögen liegt. Der Ausdruck umfasst in jedem Fall das Zubehör
+zum unbeweglichen Vermögen, das lebende und tote Inventar land- und forstwirtschaftlicher Betriebe, die
+Rechte, für die die Vorschriften des Privatrechts über Grundstücke gelten, Nutzungsrechte an
+unbeweglichem Vermögen sowie Rechte auf veränderliche oder feste Vergütungen für die Ausbeutung
+oder das Recht auf Ausbeutung von Mineralvorkommen, Quellen und anderen natürlichen Ressourcen;
+See-, Binnenschiffe und Luftfahrzeuge gelten nicht als unbewegliches Vermögen.
+
+(3) Absatz 1 gilt für die Einkünfte aus der unmittelbaren Nutzung, der Vermietung oder Verpachtung sowie
+jeder anderen Art der Nutzung unbeweglichen Vermögens.
+
+(4) Berechtigt das Eigentum an Aktien oder anderen Anteilen den Eigentümer dieser Aktien oder Anteile
+unmittelbar oder mittelbar zur Nutzung des unbeweglichen Vermögens, so können die Einkünfte aus der
+unmittelbaren Nutzung, der Vermietung oder Verpachtung sowie jeder anderen Art der Ausübung dieses
+Nutzungsrechts in dem Vertragsstaat besteuert werden, in dem das unbewegliche Vermögen liegt.
+
+(5) Die Absätze 1, 3 und 4 gelten auch für Einkünfte aus unbeweglichem Vermögen eines Unternehmens.
+
+
+
+                                          Artikel 7
+                                    Unternehmensgewinne
+
+(1) Gewinne eines Unternehmens eines Vertragsstaats können nur in diesem Staat besteuert werden, es sei
+denn, das Unternehmen übt seine Tätigkeit im anderen Vertragsstaat durch eine dort gelegene Betriebstätte
+aus. Übt das Unternehmen seine Tätigkeit in dieser Weise aus, so können die Gewinne des Unternehmens
+in dem anderen Staat besteuert werden, jedoch nur insoweit, als sie dieser Betriebstätte zugerechnet werden
+können.
+                              Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 11
+
+
+(2) Übt ein Unternehmen eines Vertragsstaats seine Tätigkeit im anderen Vertragsstaat durch eine dort
+gelegene Betriebstätte aus, so werden vorbehaltlich des Absatzes 3 in jedem Vertragsstaat dieser
+Betriebstätte die Gewinne zuzurechnen, die sie hätte erzielen können, wenn sie eine gleiche oder ähnliche
+Tätigkeit unter gleichen oder ähnlichen Bedingungen als selbständiges Unternehmen ausgeübt hätte und
+im Verkehr mit dem Unternehmen, dessen Betriebstätte sie ist, völlig unabhängig gewesen wäre.
+
+(3) Bei der Ermittlung der Gewinne einer Betriebstätte werden die für diese Betriebstätte entstandenen
+Aufwendungen, einschließlich der Geschäftsführungs- und allgemeinen Verwaltungskosten, zum Abzug
+zugelassen, gleichgültig, ob sie in dem Staat, in dem die Betriebstätte liegt, oder anderswo entstanden sind.
+
+(4) Aufgrund des bloßen Einkaufs von Gütern oder Waren für das Unternehmen wird einer Betriebstätte
+kein Gewinn zugerechnet.
+
+(5) Bei der Anwendung der vorstehenden Absätze sind die der Betriebstätte zuzurechnenden Gewinne
+jedes Jahr auf dieselbe Art zu ermitteln, es sei denn, dass ausreichende Gründe dafür bestehen, anders zu
+verfahren.
+
+(6) Gehören zu den Gewinnen Einkünfte, die in anderen Artikeln dieses Abkommens behandelt werden,
+so werden die Bestimmungen jener Artikel durch die Bestimmungen dieses Artikels nicht berührt.
+
+
+
+                                         Artikel 8
+                      Seeschifffahrt, Binnenschifffahrt und Luftfahrt
+
+(1) Gewinne aus dem Betrieb von Seeschiffen oder Luftfahrzeugen im internationalen Verkehr können nur
+in dem Vertragsstaat besteuert werden, in dem sich der Ort der tatsächlichen Geschäftsleitung des
+Unternehmens befindet.
+
+(2) Gewinne aus dem Betrieb von Schiffen, die der Binnenschifffahrt dienen, können nur in dem
+Vertragsstaat besteuert werden, in dem sich der Ort der tatsächlichen Geschäftsleitung des Unternehmens
+befindet.
+
+(3) Für die Zwecke dieses Artikels beinhaltet der Begriff „Gewinne aus dem Betrieb von Seeschiffen,
+Luftfahrzeugen oder Binnenschiffen“ auch die Gewinne aus
+
+    a) der gelegentlichen Vermietung leerer Seeschiffe, Luftfahrzeuge oder Binnenschiffe und
+
+    b) der Nutzung oder Vermietung von Containern (einschließlich Trailern und zugehöriger
+       Ausstattung, die dem Transport dieser Container dienen),
+
+wenn diese Tätigkeiten zum Betrieb von Seeschiffen oder Luftfahrzeugen im internationalen Verkehr oder
+Binnenschiffen gehören
+
+(4) Befindet sich der Ort der tatsächlichen Geschäftsleitung eines Unternehmens der Seeschifffahrt oder
+der Binnenschifffahrt an Bord eines Schiffes, so gilt er als in dem Vertragsstaat gelegen, in dem der
+Heimathafen des Seeschiffes oder des Binnenschiffes liegt, oder, wenn kein Heimathafen vorhanden ist,
+in dem Vertragsstaat, in dem die Person ansässig ist, die das Seeschiff oder das Binnenschiff betreibt.
+
+(5) Die Absätze 1 und 2 gelten auch für Gewinne aus der Beteiligung an einem Pool, einer
+Betriebsgemeinschaft oder einer internationalen Betriebsstelle.
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 12
+
+
+                                        Artikel 9
+                                 Verbundene Unternehmen
+
+(1) Wenn
+
+    a) ein Unternehmen eines Vertragsstaats unmittelbar oder mittelbar an der Geschäftsleitung, der
+       Kontrolle oder am Kapital eines Unternehmens des anderen Vertragsstaats beteiligt ist oder
+
+    b) dieselben Personen unmittelbar oder mittelbar an der Geschäftsleitung, der Kontrolle oder am
+       Kapital eines Unternehmens eines Vertragsstaats und eines Unternehmens des anderen
+       Vertragsstaats beteiligt sind
+
+und in diesen Fällen die beiden Unternehmen in ihren kaufmännischen oder finanziellen Beziehungen an
+vereinbarte oder auferlegte Bedingungen gebunden sind, die von denen abweichen, die unabhängige
+Unternehmen miteinander vereinbaren würden, dürfen die Gewinne, die eines der Unternehmen ohne diese
+Bedingungen erzielt hätte, wegen dieser Bedingungen aber nicht erzielt hat, den Gewinnen dieses
+Unternehmens zugerechnet und entsprechend besteuert werden.
+
+(2) Werden in einem Vertragsstaat den Gewinnen eines Unternehmens dieses Staates Gewinne zugerechnet
+– und entsprechend besteuert –, mit denen ein Unternehmen des anderen Staates in dem anderen
+Vertragsstaat besteuert worden ist, und stimmt der andere Staat zu, dass es sich bei den zugerechneten
+Gewinnen um solche handelt, die das Unternehmen des erstgenannten Staates erzielt hätte, wenn die
+zwischen den beiden Unternehmen vereinbarten Bedingungen die gleichen gewesen wären, die
+unabhängige Unternehmen miteinander vereinbaren würden, so nimmt der andere Staat eine entsprechende
+Änderung der dort von diesen Gewinnen erhobenen Steuer vor. Bei dieser Änderung sind die übrigen
+Bestimmungen dieses Abkommens zu berücksichtigen; erforderlichenfalls werden die zuständigen
+Behörden der Vertragsstaaten einander konsultieren.
+
+
+
+                                          Artikel 10
+                                          Dividenden
+
+(1) Dividenden, die eine in einem Vertragsstaat ansässige Gesellschaft an eine im anderen Vertragsstaat
+ansässige Person zahlt, können im anderen Staat besteuert werden.
+
+(2) Diese Dividenden können jedoch auch in dem Vertragsstaat, in dem die die Dividenden zahlende
+Gesellschaft ansässig ist, nach dem Recht dieses Staates besteuert werden; die Steuer darf aber, wenn der
+Nutzungsberechtigte der Dividenden im anderen Vertragsstaat ansässig ist, nicht übersteigen:
+
+    a) 5 vom Hundert des Bruttobetrags der Dividenden, wenn der Nutzungsberechtigte eine Gesellschaft
+       (jedoch keine Personengesellschaft oder REIT-Gesellschaft) ist, die unmittelbar über mindestens
+       10 vom Hundert des Kapitals der die Dividenden zahlenden Gesellschaft verfügt;
+                                     Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 13
+
+
+
+    Der folgende Artikel 8 Absatz 1 des BEPS-MLI ist auf Artikel 10 Absatz 2 Buchstabe a dieses Abkommens
+    anzuwenden:3
+
+          ARTIKEL 8 BEPS-MLI – TRANSAKTIONEN ZUR ÜBERTRAGUNG VON DIVIDENDEN
+    Artikel 10 Absatz 2 Buchstabe a dieses Abkommens gilt nur, wenn die Eigentums- oder
+    Inhaberschaftsvoraussetzungen während eines Zeitraums von 365 Tagen einschließlich des Tages der
+    Dividendenzahlung erfüllt sind (bei der Berechnung dieses Zeitraums bleiben Änderungen der Eigentums-
+    oder Inhaberschaftsverhältnisse unberücksichtigt, die sich unmittelbar aus einer Umstrukturierung, wie
+    einer Fusion oder Spaltung, der die Anteile haltenden oder die Dividenden zahlenden Gesellschaft ergeben
+    würden).
+
+
+       b) 15 vom Hundert des Bruttobetrags der Dividenden in allen anderen Fällen.
+
+Dieser Absatz berührt nicht die Besteuerung der Gesellschaft in Bezug auf die Gewinne, aus denen die
+Dividenden gezahlt werden.
+
+(3) Der in diesem Artikel verwendete Ausdruck „Dividenden“ bedeutet Einkünfte aus Aktien,
+Genussrechten oder Genussscheinen, Kuxen, Gründeranteilen oder anderen Rechten – ausgenommen
+Forderungen – mit Gewinnbeteiligung und sonstige Einkünfte, die nach dem Recht des Staates, in dem die
+ausschüttende Gesellschaft ansässig ist, den Einkünften aus Aktien steuerlich gleichgestellt sind, sowie
+Einkünfte aus Ausschüttungen auf Anteilscheine an einem deutschen Investmentvermögen.
+
+(4) Die Absätze 1 und 2 sind nicht anzuwenden, wenn der in einem Vertragsstaat ansässige
+Nutzungsberechtigte im anderen Vertragsstaat, in dem die die Dividenden zahlende Gesellschaft ansässig
+ist, eine gewerbliche Tätigkeit durch eine dort gelegene Betriebsstätte ausübt und die Beteiligung, für die
+die Dividenden gezahlt werden, tatsächlich zu dieser Betriebsstätte gehört. In diesem Fall ist Artikel 7
+anzuwenden.
+
+(5) Erzielt eine in einem Vertragsstaat ansässige Gesellschaft Gewinne oder Einkünfte aus dem anderen
+Vertragsstaat, so darf dieser andere Staat weder die von der Gesellschaft gezahlten Dividenden besteuern,
+es sei denn, dass diese Dividenden an eine im anderen Staat ansässige Person gezahlt werden oder dass die
+Beteiligung, für die die Dividenden gezahlt werden, tatsächlich zu einer im anderen Staat gelegenen
+Betriebsstätte gehört, noch Gewinne der Gesellschaft einer Steuer für nicht ausgeschüttete Gewinne
+unterwerfen, selbst wenn die gezahlten Dividenden oder die nicht ausgeschütteten Gewinne ganz oder
+teilweise aus im anderen Staat erzielten Gewinnen oder Einkünften bestehen.
+
+
+
+                                                   Artikel 11
+                                                    Zinsen
+
+(1) Zinsen, die aus einem Vertragsstaat stammen und deren Nutzungsberechtigter im anderen Vertragsstaat
+ansässig ist, können nur im anderen Vertragsstaat besteuert werden.
+
+(2) Der in diesem Artikel verwendete Ausdruck „Zinsen“ bedeutet Einkünfte aus Forderungen jeder Art,
+auch wenn die Forderungen durch Pfandrechte an Grundstücken gesichert oder mit einer Beteiligung am
+
+3
+    Wirksam ab dem 1. Januar 2025.
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 14
+
+
+Gewinn des Schuldners ausgestattet sind, und insbesondere Einkünfte aus öffentlichen Anleihen und aus
+Obligationen einschließlich der damit verbundenen Aufgelder und der Gewinne aus Losanleihen.
+Zuschläge für verspätete Zahlung gelten nicht als Zinsen im Sinne dieses Artikels.
+
+(3) Absatz 1 ist nicht anzuwenden, wenn der in einem Vertragsstaat ansässige Nutzungsberechtigte im
+anderen Vertragsstaat, aus dem die Zinsen stammen, eine Geschäftstätigkeit durch eine dort gelegene
+Betriebstätte ausübt und die Forderungen, für die die Zinsen gezahlt werden, tatsächlich zu dieser
+Betriebstätte gehört. In diesem Fall ist Artikel 7 anzuwenden.
+
+(4) Bestehen zwischen Schuldner und Nutzungsberechtigten oder zwischen jedem von ihnen und einem
+Dritten besondere Beziehungen und übersteigen deshalb die Zinsen, gemessen an der zugrunde liegenden
+Forderung, den Betrag, den Schuldner und Nutzungsberechtigter ohne diese Beziehungen vereinbart
+hätten, so wird dieser Artikel nur auf den letztgenannten Betrag angewendet. In diesem Fall kann der
+übersteigende Betrag nach dem Recht eines jeden Vertragsstaats und unter Berücksichtigung der anderen
+Bestimmungen dieses Abkommens besteuert werden.
+
+
+
+                                          Artikel 12
+                                       Lizenzgebühren
+
+(1) Lizenzgebühren, die aus einem Vertragsstaat stammen und deren Nutzungsberechtigter im anderen
+Vertragsstaat ansässig ist, können nur im anderen Staat besteuert werden.
+
+(2) Der in diesem Artikel verwendete Ausdruck „Lizenzgebühren“ bedeutet Vergütungen jeder Art, die für
+die Benutzung oder das Recht auf Benutzung von Urheberrechten, einschließlich kinematographischer
+Filme sowie Filmen, Tonbändern oder anderen Trägern für die Bild- oder Tonwiedergabe, von Patenten,
+Warenzeichen, Mustern oder Modellen, Plänen, geheimen Formeln oder Verfahren oder für die Benutzung
+oder das Recht auf Benutzung gewerblicher, kaufmännischer oder wissenschaftlicher Ausrüstungen oder
+für die Mitteilung gewerblicher, kaufmännischer oder wissenschaftlicher Erfahrungen gezahlt werden. Der
+Ausdruck „Lizenzgebühren“ beinhaltet auch Vergütungen jeder Art für die Benutzung oder das Recht auf
+Benutzung von Namen, Bildern oder sonstigen vergleichbaren Persönlichkeitsrechten oder für die
+Aufzeichnung der Veranstaltungen von Künstlern und Sportlern durch Rundfunk- oder Fernsehanstalten.
+
+(3) Absatz 1 ist nicht anzuwenden, wenn der in einem Vertragsstaat ansässige Nutzungsberechtigte im
+anderen Vertragsstaat, aus dem die Lizenzgebühren stammen, eine Geschäftstätigkeit durch eine dort
+gelegene Betriebsstätte ausübt und die Rechte oder Vermögenswerte, für die die Lizenzgebühren gezahlt
+werden, tatsächlich zu dieser Betriebsstätte gehören. In diesem Fall ist Artikel 7 anzuwenden.
+
+(4) Bestehen zwischen dem Schuldner und dem Nutzungsberechtigten oder zwischen jedem von ihnen und
+einem Dritten besondere Beziehungen und übersteigen deshalb die Lizenzgebühren, gemessen an der
+zugrunde liegenden Leistung, den Betrag, den Schuldner und Nutzungsberechtigter ohne diese
+Beziehungen vereinbart hätten, so wird dieser Artikel nur auf den letzteren Betrag angewendet. In diesem
+Fall kann der übersteigende Betrag nach dem Recht eines jeden Vertragsstaats und unter Berücksichtigung
+der anderen Bestimmungen dieses Abkommens besteuert werden.
+                                     Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 15
+
+
+                                              Artikel 13
+                              Gewinne aus der Veräußerung von Vermögen
+
+(1) Gewinne, die eine in einem Vertragsstaat ansässige Person aus der Veräußerung unbeweglichen
+Vermögens im Sinne des Artikels 6 erzielt, das im anderen Vertragsstaat liegt, können im anderen Staat
+besteuert werden.
+
+(2) [ERSETZT durch Artikel 9 Absatz 4 des BEPS-MLI] [Gewinne die eine in einem
+Vertragsstaat ansässige Person aus der Veräußerung von Anteilen an einer Gesellschaft – oder
+vergleichbarer Beteiligungen – erzielt, deren Aktivvermögen zu mindestens 50 vom Hundert unmittelbar
+oder mittelbar aus unbeweglichem Vermögen besteht, das im anderen Vertragsstaat liegt, können im
+anderen Staat besteuert werden.]
+
+    Der folgende Artikel 9 Absatz 4 des BEPS-MLI ersetzt Artikel 13 Absatz 2 dieses Abkommens:4
+
+       ARTIKEL 9 BEPS-MLI – GEWINNE AUS DER VERÄUßERUNG VON ANTEILEN ODER
+    RECHTEN AN RECHTSTRÄGERN, DEREN WERT HAUPTSÄCHLICH AUF UNBEWEGLICHEM
+                                 VERMÖGEN BERUHT
+    Für die Zwecke dieses Abkommens können Gewinne, die eine in einem Vertragsstaat ansässige Person
+    aus der Veräußerung von Anteilen oder vergleichbaren Rechten, wie Rechten an einer
+    Personengesellschaft oder einem Trust, erzielt, im anderen Vertragsstaat besteuert werden, sofern der Wert
+    dieser Anteile oder vergleichbaren Rechte zu irgendeinem Zeitpunkt während der 365 Tage vor der
+    Veräußerung zu mehr als 50 Prozent unmittelbar oder mittelbar auf in diesem anderen Vertragsstaat
+    belegenem unbeweglichem Vermögen (Grundvermögen) beruhte.
+
+
+(3) Gewinne aus der Veräußerung von Anteilen oder anderen Rechten, die den Eigentümer unmittelbar
+oder mittelbar zur Nutzung des unbeweglichen Vermögens berechtigten, das in einem Vertragsstaat liegt,
+können in diesem Staat besteuert werden.
+
+(4) Gewinne aus der Veräußerung beweglichen Vermögens, das Betriebsvermögen einer Betriebsstätte ist,
+die ein Unternehmen eines Vertragsstaats im anderen Vertragsstaat hat, einschließlich derartiger Gewinne,
+die bei der Veräußerung einer solchen Betriebsstätte (allein oder mit dem übrigen Unternehmen) erzielt
+werden, können in dem anderen Vertragsstaat besteuert werden.
+
+(5) Gewinne aus der Veräußerung von Seeschiffen oder Luftfahrzeugen, die im internationalen Verkehr
+betrieben werden, von Schiffen, die der Binnenschifffahrt dienen, und von beweglichem Vermögen, das
+dem Betrieb dieser Schiffe oder Luftfahrzeuge dient, können nur in dem Vertragsstaat besteuert werden,
+in dem sich der Ort der tatsächlichen Geschäftsleitung des Unternehmens befindet.
+
+(6) Gewinne aus der Veräußerung von in den Absätzen 1, 2, 3, 4 und 5 nicht genannten Vermögenswerten
+können nur in dem Vertragsstaat besteuert werden, in dem der Veräußerer ansässig ist.
+
+(7) Bei einer natürlichen Person, die in einem Vertragsstaat während mindestens fünf Jahren ansässig war
+und im anderen Vertragsstaat ansässig geworden ist, berührt Absatz 6 nicht das Recht des erstgenannten
+Staates, den Vermögenszuwachs, den diese Person während ihrer Ansässigkeit im erstgenannten Staat aus
+Anteilen an einer Gesellschaft erzielt, nach seinen innerstaatlichen Rechtsvorschriften zu besteuern,
+
+4
+    Wirksam ab dem 1. Januar 2025.
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 16
+
+
+vorausgesetzt, die Veräußerung der Anteile erfolgt innerhalb von fünf Jahren ab dem Zeitpunkt des
+Wegzugs der natürlichen Person aus dem erstgenannten Staat.
+
+
+
+                                        Artikel 14
+                           Einkünfte aus unselbständiger Arbeit
+
+(1) Vorbehaltlich der Artikel 15, 17 und 18 können Gehälter, Löhne und ähnliche Vergütungen, die eine
+in einem Vertragsstaat ansässige Person aus unselbständiger Arbeit bezieht, nur in diesem Staat besteuert
+werden, es sei denn, die Arbeit wird im anderen Vertragsstaat ausgeübt. Wird die Arbeit dort ausgeübt, so
+können die dafür bezogenen Vergütungen im anderen Staat besteuert werden.
+
+(2) Ungeachtet des Absatzes 1 können Vergütungen, die eine in einem Vertragsstaat ansässige Person für
+eine im anderen Vertragsstaat ausgeübte unselbständige Arbeit bezieht, nur im erstgenannten Staat
+besteuert werden, wenn
+
+    a) der Empfänger sich im anderen Staat insgesamt nicht länger als 183 Tage innerhalb eines
+       Zeitraums von zwölf Monaten, der während des betreffenden Steuerjahres beginnt oder endet,
+       aufhält und
+
+    b) die Vergütungen von einem Arbeitgeber oder für einen Arbeitgeber gezahlt werden, der nicht im
+       anderen Staat ansässig ist, und
+
+    c) die Vergütungen nicht von einer Betriebsstätte getragen werden, die der Arbeitgeber im anderen
+       Staat hat.
+
+(3) Ungeachtet der vorstehenden Bestimmungen dieses Artikels können Vergütungen für unselbständige
+Arbeit, die an Bord eines Seeschiffes, Luftfahrzeugs oder Straßenfahrzeugs, das im internationalen
+Verkehr betrieben wird, oder an Bord eines Schiffes, das der Binnenschifffahrt dient, ausgeübt wird, in
+dem Vertragsstaat besteuert werden, in dem sich der Ort der tatsächlichen Geschäftsleitung des
+Unternehmens befindet.
+
+
+
+                                       Artikel 15
+                    Aufsichtsrats- und Verwaltungsratsvergütungen
+Aufsichtsrats- oder Verwaltungsratsvergütungen und ähnliche Zahlungen, die eine in einem Vertragsstaat
+ansässige Person in ihrer Eigenschaft als Mitglied des Aufsichts- oder Verwaltungsrats einer Gesellschaft
+bezieht, die in dem anderen Vertragsstaat ansässig ist, können im anderen Staat besteuert werden.
+
+
+
+                                         Artikel 16
+                                    Künstler und Sportler
+
+(1) Ungeachtet der Artikel 7 und 14 können Einkünfte, die eine in einem Vertragsstaat ansässige Person
+als Künstler, wie Bühnen-, Film-, Rundfunk- und Fernsehkünstler sowie Musiker, oder als Sportler aus
+ihrer im anderen Vertragsstaat persönlich ausgeübten Tätigkeit bezieht, im anderen Staat besteuert werden.
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 17
+
+
+(2) Fließen Einkünfte aus einer von einem Künstler oder Sportler in dieser Eigenschaft persönlich
+ausgeübten Tätigkeit nicht dem Künstler oder Sportler selbst, sondern einer anderen Person zu, so können
+diese Einkünfte ungeachtet der Artikel 7 und 14 in dem Vertragsstaat besteuert werden, in dem der Künstler
+oder Sportler seine Tätigkeit ausübt.
+
+(3) Die Absätze 1 und 2 sind nicht anzuwenden, wenn die von einem Künstler oder Sportler in einem
+Vertragsstaat ausgeübten Tätigkeiten im Rahmen von Kultur- oder Sportaustauschprogrammen, die von
+beiden Vertragsstaaten anerkannt werden, ganz oder in wesentlichem Umfang aus den öffentlichen Kassen
+eines der Vertragsstaaten, eines seiner Länder oder einer ihrer Gebietskörperschaften unterstützt werden.
+In diesem Fall werden die Einkünfte aus diesen Tätigkeiten nur in dem Vertragsstaat besteuert, in dem der
+Künstler oder Sportler ansässig ist.
+
+
+
+                                        Artikel 17
+                                  Ruhegehälter und Renten
+
+(1) Vorbehaltlich des Artikels 18 Absatz 2 können Ruhegehälter, Renten und ähnliche Vergütungen, die
+aus einem Vertragsstaat stammen und an eine im anderen Vertragsstaat ansässige Person gezahlt werden,
+nur in dem anderen Staat besteuert werden.
+
+(2) Jedoch können Vergütungen, die auf Grund des Sozialversicherungsrechts eines Vertragsstaats
+geleistet werden, auch in diesem Staat und nach dem Recht dieses Staates besteuert werden, wenn das den
+Anspruch auf die Vergütungen begründende Ereignis nach dem 31. Dezember 2014 eintritt. Die Steuer
+darf aber 5 vom Hundert des Bruttobetrags der Vergütungen nicht übersteigen, wenn das den Anspruch
+auf die Einkünfte begründende Ereignis zwischen dem 1. Januar 2015 und dem 31. Dezember 2029 eintritt.
+Tritt das Ereignis am oder nach dem 1. Januar 2030 ein, darf die Steuer 10 vom Hundert des Bruttobetrags
+der Vergütungen nicht übersteigen.
+
+(3) Absatz 2 gilt auch für andere nach dem 31. Dezember 2014 bezogene Vergütungen, soweit sie
+
+    a) auf Seiten Deutschlands
+
+         i) auf geförderten Beiträgen beruhen, die nicht zu den steuerpflichtigen Einkünften aus
+            nichtselbständiger Arbeit in diesem Staat gehörten, die steuerlich abziehbar waren oder für
+            die in anderer Weise eine staatliche Förderung gewährt wurde, und
+
+         ii) die Beiträge über einen Zeitraum von mehr als zwölf Jahren geleistet wurden.
+
+Die vorstehende Bestimmung ist nicht anzuwenden, wenn die Förderung zurückgefordert wurde, weil die
+Person aus diesem Staat weggezogen ist;
+
+    b) auf Seiten Spaniens auf Beiträgen beruhen, die nicht zu den steuerpflichtigen Einkünften in diesem
+       Staat gehörten oder die steuerlich abziehbar waren, und soweit die Beiträge über einen Zeitraum
+       von mehr als zwölf Jahren geleistet wurden.
+
+(4) Ungeachtet des Absatzes 1 können wiederkehrende und einmalige Vergütungen, die ein Vertragsstaat
+oder eine seiner Gebietskörperschaften an eine in dem anderen Vertragsstaat ansässige Person als
+Entschädigung für politische Verfolgung oder aufgrund von Kriegshandlungen und Terrorismus
+(einschließlich Wiedergutmachungsleistungen) zahlt, nur im erstgenannten Staat besteuert werden.
+                               Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 18
+
+
+(5) Der Begriff „Rente“ bedeutet bestimmte Beträge, die regelmäßig zu festgesetzten Zeitpunkten
+lebenslänglich oder während eines bestimmten oder bestimmbaren Zeitabschnitts aufgrund einer
+Verpflichtung zahlbar sind, die diese Zahlungen als Gegenleistung für eine in Geld oder Geldeswert
+bewirkte angemessene Leistung vorsieht.
+
+
+
+                                            Artikel 18
+                                        Öffentlicher Dienst
+
+(1)
+
+      a) Gehälter, Löhne und ähnliche Vergütungen, die von einem Vertragsstaat, einem seiner Länder
+         oder einer ihrer Gebietskörperschaften oder einer anderen juristischen Person des öffentlichen
+         Rechts dieses Staates an eine natürliche Person für die diesem Staat, einem seiner Länder oder
+         einer ihrer Gebietskörperschaften oder einer anderen juristischen Person des öffentlichen Rechts
+         geleisteten Dienste gezahlt werden, können nur in diesem Staat besteuert werden.
+
+      b) Diese Gehälter, Löhne und ähnlichen Vergütungen können jedoch nur im anderen Vertragsstaat
+         besteuert werden, wenn die Dienste in diesem Staat geleistet werden und die natürliche Person in
+         diesem Staat ansässig ist und
+
+           i) ein Staatsangehöriger dieses Staates ist oder
+
+           ii) nicht ausschließlich deshalb in diesem Staat ansässig geworden ist, um die Dienste zu leisten.
+
+(2)
+
+      a) Ungeachtet des Absatzes 1 können Ruhegehälter und ähnliche Vergütungen, die von einem
+         Vertragsstaat, einem seiner Länder, einer ihrer Gebietskörperschaften oder einer anderen
+         juristischen Person des öffentlichen Rechts dieses Staates oder aus einem von diesem Staat,
+         einem seiner Länder, einer ihrer Gebietskörperschaften oder einer anderen juristischen Person
+         des öffentlichen Rechts errichteten Sondervermögen an eine natürliche Person für die diesem
+         Staat, einem seiner Länder, einer ihrer Gebietskörperschaften oder einer anderen juristischen
+         Person des öffentlichen Rechts geleisteten Dienste gezahlt werden, nur in diesem Staat besteuert
+         werden.
+
+      b) Diese Ruhegehälter und ähnlichen Vergütungen können jedoch nur im anderen Vertragsstaat
+         besteuert werden, wenn die natürliche Person in diesem Staat ansässig und ein Staatsangehöriger
+         dieses Staates ist.
+
+(3) Auf Gehälter, Löhne, Ruhegehälter und ähnliche Vergütungen für Dienstleistungen, die im
+Zusammenhang mit einer Geschäftstätigkeit eines Vertragsstaats, eines seiner Länder, einer ihrer
+Gebietskörperschaften oder einer anderen juristischen Person des öffentlichen Rechts dieses Staates
+erbracht werden, sind die Artikel 14, 15, 16 oder 17 anzuwenden.
+
+(4) Die Absätze 1 und 2 gelten auch für Löhne, Gehälter, Ruhegehälter und ähnliche Vergütungen, die an
+eine natürliche Person für Dienste gezahlt werden, die dem Goethe-Institut, dem Deutschen
+Akademischen Austauschdienst (DAAD) oder dem Instituto Cervantes geleistet werden. Eine
+entsprechende Behandlung der von anderen vergleichbaren Einrichtungen der Vertragsstaaten gezahlten
+Vergütungen kann durch die zuständigen Behörden im gegenseitigen Einvernehmen vereinbart werden.
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 19
+
+
+                                        Artikel 19
+                          Gastprofessoren, Lehrer und Studenten
+
+(1) Eine natürliche Person, die sich auf Einladung eines Vertragsstaats oder einer Universität, Hochschule,
+Schule, eines Museums oder einer anderen kulturellen Einrichtung dieses Vertragsstaats oder im Rahmen
+eines amtlichen Kulturaustausches in diesem Vertragsstaat höchstens zwei Jahre lang lediglich zur
+Ausübung einer Lehrtätigkeit, zum Halten von Vorlesungen oder zur Ausübung einer Forschungstätigkeit
+bei dieser Einrichtung aufhält und die im anderen Vertragsstaat ansässig ist oder dort unmittelbar vor der
+Einreise in den erstgenannten Staat ansässig war, ist in dem erstgenannten Staat mit ihren für diese
+Tätigkeit bezogenen Vergütungen von der Steuer befreit, vorausgesetzt, dass diese Vergütungen von
+außerhalb dieses Staates bezogen werden.
+
+(2) Zahlungen, die ein Student, Praktikant oder Lehrling, der sich in einem Vertragsstaat ausschließlich
+zum Studium oder zur Ausbildung aufhält und der im anderen Vertragsstaat ansässig ist oder dort
+unmittelbar vor der Einreise in den erstgenannten Staat ansässig war, für seinen Unterhalt, sein Studium
+oder seine Ausbildung erhält, dürfen im erstgenannten Staat nicht besteuert werden, sofern diese
+Zahlungen aus Quellen außerhalb dieses Staates stammen.
+
+
+
+                                         Artikel 20
+                                      Andere Einkünfte
+
+(1) Einkünfte einer in einem Vertragsstaat ansässigen Person, die in den vorstehenden Artikeln dieses
+Abkommens nicht behandelt wurden, können ohne Rücksicht auf ihre Herkunft nur in diesem Staat
+besteuert werden.
+
+(2) Absatz 1 ist auf andere Einkünfte als solche aus unbeweglichem Vermögen im Sinne des Artikels 6
+Absatz 2 nicht anzuwenden, wenn der in einem Vertragsstaat ansässige Empfänger im anderen
+Vertragsstaat eine Geschäftstätigkeit durch eine dort gelegene Betriebsstätte ausübt und die Rechte oder
+Vermögenswerte, für die die Einkünfte gezahlt werden, tatsächlich zu dieser Betriebsstätte gehören. In
+diesem Fall ist Artikel 7 anzuwenden.
+
+(3) Bestehen zwischen der in Absatz 1 bezeichneten Person und einer anderen Person oder zwischen jedem
+von ihnen und einem Dritten besondere Beziehungen und übersteigt deshalb der in Absatz 1 bezeichnete
+Betrag der Einkünfte den Betrag (gegebenenfalls), den sie ohne diese Beziehungen untereinander
+vereinbart hätten, so wird dieser Artikel nur auf den letzteren Betrag angewendet. In diesem Fall kann der
+übersteigende Betrag der Einkünfte nach dem Recht eines jeden Vertragsstaats und unter Berücksichtigung
+der anderen anwendbaren Bestimmungen dieses Abkommens besteuert werden.
+
+
+
+                                           Artikel 21
+                                           Vermögen
+
+(1) Unbewegliches Vermögen im Sinne des Artikels 6, das einer in einem Vertragsstaat ansässigen Person
+gehört und im anderen Vertragsstaat liegt, kann im anderen Staat besteuert werden.
+
+(2) Bewegliches Vermögen, das Betriebsvermögen einer Betriebsstätte ist, die ein Unternehmen eines
+Vertragsstaats im anderen Vertragsstaat hat, kann im anderen Staat besteuert werden.
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 20
+
+
+(3) Seeschiffe oder Luftfahrzeuge, die im internationalen Verkehr betrieben werden, und Schiffe, die der
+Binnenschifffahrt dienen, sowie bewegliches Vermögen, das dem Betrieb dieser Schiffe oder
+Luftfahrzeuge dient, können nur in dem Vertragsstaat besteuert werden, in dem sich der Ort der
+tatsächlichen Geschäftsleitung des Unternehmens befindet.
+
+(4) Anteile an einer Gesellschaft oder einer anderen Personenvereinigung oder andere vergleichbare
+Beteiligungen, deren Aktivvermögen zu mindestens 50 vom Hundert unmittelbar oder mittelbar aus in
+einem Vertragsstaat gelegenem unbeweglichen Vermögen besteht, oder Anteile oder andere Rechte, die
+ihren Eigentümer unmittelbar oder mittelbar zur Nutzung eines in einem Vertragsstaat gelegenen
+unbeweglichen Vermögens berechtigen, können in dem Vertragsstaat besteuert werden, in dem das
+unbewegliche Vermögen liegt.
+
+(5) Alle anderen Vermögensteile einer in einem Vertragsstaat ansässigen Person können nur in diesem
+Staat besteuert werden.
+
+
+
+                                      Artikel 22
+                           Vermeidung der Doppelbesteuerung
+
+(1) In Spanien wird die Doppelbesteuerung durch Anwendung seiner nationalen Rechtsvorschriften oder
+der folgenden Bestimmungen gemäß den nationalen Rechtsvorschriften Spaniens vermieden:
+
+    a) Bezieht eine in Spanien ansässige Person Einkünfte oder besitzt sie Vermögensteile und können
+       diese Einkünfte oder diese Vermögensteile nach diesem Abkommen in Deutschland besteuert
+       werden, so rechnet Spanien
+
+         i) auf die vom Einkommen dieser Person zu erhebende Steuer den Betrag an, der der in
+            Deutschland gezahlten Steuer vom Einkommen entspricht;
+
+         ii) auf die vom Vermögen dieser Person zu erhebende Steuer den Betrag an, der der in
+             Deutschland auf dieselben Vermögensteile gezahlten Steuer entspricht;
+
+         iii) die Anrechnung der zugrunde liegenden Körperschaftsteuer erfolgt gemäß den nationalen
+              Rechtsvorschriften Spaniens.
+
+        Der anzurechnende Betrag darf jedoch den Teil der vor der Anrechnung ermittelten Steuer vom
+        Einkommen oder vom Vermögen nicht übersteigen, der auf die Einkünfte, die in Deutschland
+        besteuert werden können, oder auf die Vermögensteile, die dort besteuert werden können, entfällt.
+
+    b) Einkünfte oder Vermögen einer in Spanien ansässigen Person, die nach dem Abkommen von der
+       Besteuerung in Spanien auszunehmen sind, können dort gleichwohl bei der Festsetzung der Steuer
+       für das übrige Einkommen oder Vermögen der Person einbezogen werden.
+
+(2) Bei einer in der Bundesrepublik Deutschland ansässigen Person wird die Steuer wie folgt festgesetzt:
+
+    a) Von der Bemessungsgrundlage der deutschen Steuer werden die Einkünfte aus dem Königreich
+       Spanien sowie die im Königreich Spanien gelegenen Vermögenswerte ausgenommen, die nach
+       diesem Abkommen im Königreich Spanien tatsächlich besteuert werden und nicht unter
+       Buchstabe b fallen.
+                         Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 21
+
+
+    Für Einkünfte aus Dividenden gilt die vorstehende Bestimmung nur dann, wenn diese Dividenden
+    an eine in der Bundesrepublik Deutschland ansässige Gesellschaft (jedoch nicht an eine
+    Personengesellschaft) von einer im Königreich Spanien ansässigen Gesellschaft gezahlt werden,
+    deren Kapital zu mindestens 10 vom Hundert unmittelbar der deutschen Gesellschaft gehört, und
+    bei der Ermittlung der Gewinne der ausschüttenden Gesellschaft nicht abgezogen worden sind.
+
+    Für die Zwecke der Steuern vom Vermögen werden von der Bemessungsgrundlage der deutschen
+    Steuer ebenfalls Beteiligungen ausgenommen, deren Ausschüttungen, falls solche gezahlt würden,
+    nach den vorhergehenden Sätzen von der Steuerbemessungsgrundlage auszunehmen wären.
+
+b) Auf die deutsche Steuer für die folgenden Einkünfte oder für im Königreich Spanien gelegenes
+   Vermögen wird unter Beachtung der Vorschriften des deutschen Steuerrechts über die Anrechnung
+   ausländischer Steuern die spanische Steuer angerechnet, die nach dem Recht des Königreichs
+   Spanien und in Übereinstimmung mit diesem Abkommen gezahlt worden ist:
+
+     i) Dividenden, die nicht unter Buchstabe a fallen;
+
+     ii) Einkünfte, die nach Artikel 13 Absätze 2 und 3 im Königreich Spanien besteuert werden
+         können;
+
+     iii) Einkünfte, die nach Artikel 14 Absatz 3 im Königreich Spanien besteuert werden können;
+
+     iv) Einkünfte, die nach Artikel 15 im Königreich Spanien besteuert werden können;
+
+     v) Einkünfte, die nach Artikel 16 im Königreich Spanien besteuert werden können;
+
+     vi) Einkünfte, die nach Artikel 17 Absätze 2 und 3 im Königreich Spanien besteuert werden
+         können;
+
+     vii) Einkünfte aus unbeweglichem Vermögen (einschließlich Einkünften aus der Veräußerung
+         dieses Vermögens) oder die Vermögenswerte, soweit dieses Vermögen nicht tatsächlich zu
+         einer Betriebsstätte im Königreich Spanien gehört.
+
+c) Statt der Bestimmungen des Buchstabens a sind die Bestimmungen des Buchstabens b
+   anzuwenden auf Einkünfte im Sinne der Artikel 7 und 10 und die diesen Einkünften zugrunde
+   liegenden Vermögenswerte, wenn die in der Bundesrepublik Deutschland ansässige Person nicht
+   nachweist, dass die Betriebsstätte in dem Wirtschaftsjahr, in dem sie den Gewinn erzielt hat, oder
+   die im Königreich Spanien ansässige Gesellschaft in dem Wirtschaftsjahr, für das sie die
+   Ausschüttung vorgenommen hat, ihre Bruttoerträge ausschließlich oder fast ausschließlich aus
+   unter § 8 Absatz 1 des deutschen Außensteuergesetzes fallenden Tätigkeiten bezogen hat; Gleiches
+   gilt für unbewegliches Vermögen, das einer Betriebsstätte dient, und die daraus erzielten Einkünfte
+   (Artikel 6 Absatz 3) sowie für die Gewinne aus der Veräußerung dieses unbeweglichen Vermögens
+   (Artikel 13 Absatz 1) und des beweglichen Vermögens, das Betriebsvermögen der Betriebsstätte
+   darstellt (Artikel 13 Absatz 4).
+
+d) Die Bundesrepublik Deutschland behält aber das Recht, die nach den Bestimmungen dieses
+   Abkommens von der deutschen Steuer ausgenommenen Einkünfte und Vermögenswerte bei der
+   Festsetzung ihres Steuersatzes zu berücksichtigen.
+
+e) Ungeachtet der Bestimmungen des Buchstabens a wird die Doppelbesteuerung durch
+   Steueranrechnung nach Buchstabe b vermieden, wenn
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 22
+
+
+         i) in     den      Vertragsstaaten     Einkünfte     oder    Vermögen      unterschiedlichen
+            Abkommensbestimmungen zugeordnet oder verschiedenen Personen zugerechnet werden
+            (außer nach Artikel 9) und dieser Konflikt sich nicht durch ein Verfahren nach Artikel 24
+            Absatz 3 regeln lässt und wenn aufgrund dieser unterschiedlichen Zuordnung oder
+            Zurechnung die betreffenden Einkünfte oder Vermögenswerte unbesteuert blieben oder
+            niedriger als ohne diesen Konflikt besteuert würden; oder
+
+         ii) die Bundesrepublik Deutschland nach Konsultation mit der zuständigen Behörde des
+             Königreichs Spanien auf diplomatischem Weg dem Königreich Spanien andere Einkünfte
+             notifiziert, bei denen sie die Anrechnungsmethode nach Buchstabe b anzuwenden
+             beabsichtigt. Die Doppelbesteuerung wird für die notifizierten Einkünfte durch
+             Steueranrechnung vom ersten Tag des Kalenderjahrs vermieden, das dem Kalenderjahr folgt,
+             in dem die Notifikation übermittelt wurde.
+
+
+
+                                          Artikel 23
+                                      Gleichbehandlung
+
+(1) Staatsangehörige eines Vertragsstaats dürfen im anderen Vertragsstaat keiner Besteuerung oder damit
+zusammenhängenden Verpflichtung unterworfen werden, die anders oder belastender ist als die
+Besteuerung und die damit zusammenhängenden Verpflichtungen, denen Staatsangehörige des anderen
+Staates unter gleichen Verhältnissen, insbesondere hinsichtlich der Ansässigkeit, unterworfen sind oder
+unterworfen werden können. Diese Bestimmung gilt ungeachtet des Artikels 1 auch für Personen, die in
+keinem Vertragsstaat ansässig sind.
+
+(2) Die Besteuerung einer Betriebsstätte, die ein Unternehmen eines Vertragsstaats im anderen
+Vertragsstaat hat, darf in dem anderen Staat nicht ungünstiger sein als die Besteuerung von Unternehmen
+des anderen Staates, die die gleiche Tätigkeit ausüben. Diese Bestimmung ist nicht so auszulegen, als
+verpflichte sie einen Vertragsstaat, den in dem anderen Vertragsstaat ansässigen Personen
+Steuerfreibeträge, -vergünstigungen und -ermäßigungen auf Grund des Personenstandes oder der
+Familienlasten zu gewähren, die er seinen ansässigen Personen gewährt.
+
+(3) Sofern nicht Artikel 9 Absatz 1, Artikel 11 Absatz 4 oder Artikel 12 Absatz 4 anzuwenden ist, sind
+Zinsen, Lizenzgebühren und andere Entgelte, die ein Unternehmen eines Vertragsstaats an eine im
+anderen Vertragsstaat ansässige Person zahlt, bei der Ermittlung der steuerpflichtigen Gewinne dieses
+Unternehmens unter den gleichen Bedingungen wie Zahlungen an eine im erstgenannten Staat ansässige
+Person zum Abzug zuzulassen. Dementsprechend sind Schulden, die ein Unternehmen eines
+Vertragsstaats gegenüber einer im anderen Vertragsstaat ansässigen Person hat, bei der Ermittlung des
+steuerpflichtigen Vermögens dieses Unternehmens unter den gleichen Bedingungen wie Schulden
+gegenüber einer im erstgenannten Staat ansässigen Person zum Abzug zuzulassen.
+
+(4) Unternehmen eines Vertragsstaats, deren Kapital ganz oder teilweise unmittelbar oder mittelbar einer
+im anderen Vertragsstaat ansässigen Person oder mehreren solchen Personen gehört oder ihrer Kontrolle
+unterliegt, dürfen im erstgenannten Staat keiner Besteuerung oder damit zusammenhängenden
+Verpflichtung unterworfen werden, die anders oder belastender ist als die Besteuerung und die damit
+zusammenhängenden Verpflichtungen, denen andere ähnliche Unternehmen des erstgenannten Staates
+unterworfen sind oder unterworfen werden können.
+
+(5) Dieser Artikel gilt ungeachtet des Artikels 2 für Steuern jeder Art und Bezeichnung.
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 23
+
+
+                                        Artikel 24
+                                 Verständigungsverfahren
+
+(1) Ist eine Person der Auffassung, dass Maßnahmen eines Vertragsstaats oder beider Vertragsstaaten für
+sie zu einer Besteuerung führen oder führen werden, die diesem Abkommen nicht entspricht, so kann sie
+unbeschadet der nach dem innerstaatlichen Recht dieser Staaten vorgesehenen Rechtsmittel ihren Fall der
+zuständigen Behörde des Vertragsstaats, in dem sie ansässig ist, oder, sofern ihr Fall von Artikel 23
+Absatz 1 erfasst wird, der zuständigen Behörde des Vertragsstaats unterbreiten, dessen Staatsangehöriger
+sie ist. Der Fall muss innerhalb von drei Jahren nach der ersten Mitteilung der Maßnahme unterbreitet
+werden, die zu einer dem Abkommen nicht entsprechenden Besteuerung führt.
+
+(2) Hält die zuständige Behörde die Einwendung für begründet und ist sie selbst nicht in der Lage, eine
+befriedigende Lösung herbeizuführen, so wird sie sich bemühen, den Fall durch Verständigung mit der
+zuständigen Behörde des anderen Vertragsstaats so zu regeln, dass eine dem Abkommen nicht
+entsprechende Besteuerung vermieden wird. Die Verständigungsregelung ist ungeachtet der Fristen des
+innerstaatlichen Rechts der Vertragsstaaten durchzuführen.
+
+(3) Die zuständigen Behörden der Vertragsstaaten werden sich bemühen, Schwierigkeiten oder Zweifel,
+die bei der Auslegung oder Anwendung des Abkommens entstehen, in gegenseitigem Einvernehmen zu
+beseitigen. Sie können auch gemeinsam darüber beraten, wie eine Doppelbesteuerung in Fällen vermieden
+werden kann, die im Abkommen nicht behandelt sind.
+
+(4) Die zuständigen Behörden der Vertragsstaaten können zur Herbeiführung einer Einigung im Sinne der
+vorstehenden Bestimmungen dieses Artikels unmittelbar miteinander verkehren, ggf. durch eine aus ihnen
+oder ihren Vertretern bestehende gemeinsame Kommission.
+                                        Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 24
+
+
+
+    Der folgende Teil VI des BEPS-MLI ist auf dieses Abkommen anzuwenden:5
+
+
+                                      TEIL VI BEPS-MLI – SCHIEDSVERFAHREN
+
+
+    ARTIKEL 19 BEPS-MLI – OBLIGATORISCHES VERBINDLICHES SCHIEDSVERFAHREN
+
+    (1) Wenn:
+
+          a)       eine Person aufgrund des Artikels 24 Absatz 1 Satz 1 dieses Abkommens der zuständigen
+                   Behörde eines Vertragsstaats einen Fall vorgelegt hat, weil die Maßnahmen eines oder beider
+                   Vertragsstaaten für sie zu einer diesem Abkommen nicht entsprechenden Besteuerung geführt
+                   haben, und
+
+          b)       die zuständigen Behörden nicht innerhalb von drei Jahren ab dem in Absatz 8 oder, je nach
+                   Sachlage, Absatz 9 genannten Fristbeginn (es sei denn, die zuständigen Behörden der
+                   Vertragsstaaten haben vor Ablauf dieser Frist eine andere Frist für diesen Fall vereinbart und
+                   die Person, die den Fall vorgelegt hat, darüber unterrichtet) eine Verständigungsregelung zur
+                   Regelung des Falles nach Artikel 24 Absatz 2 Satz 1 dieses Abkommens erzielen können,
+
+    werden auf schriftlichen Antrag der Person noch offene Fragen des Falles auf die in diesem Teil
+    beschriebene Weise und im Einklang mit den von den zuständigen Behörden der Vertragsstaaten nach
+    Absatz 10 vereinbarten Vorschriften oder Verfahren einem Schiedsverfahren unterworfen.
+
+    (2) Hat eine zuständige Behörde das in Absatz 1 erwähnte Verständigungsverfahren ausgesetzt, da bei
+    einem Gericht ein Fall betreffend eine oder mehrere gleiche Fragen anhängig ist, so ist der Lauf der in
+    Absatz 1 Buchstabe b vorgesehenen Frist gehemmt, bis entweder eine abschließende
+    Gerichtsentscheidung ergangen ist oder der Fall eingestellt oder zurückgezogen wurde. Auch wenn eine
+    Person, die einen Fall vorgelegt hat, und eine zuständige Behörde eine Aussetzung des
+    Verständigungsverfahrens vereinbart haben, ist der Lauf der in Absatz 1 Buchstabe b vorgesehenen Frist
+    gehemmt, bis die Aussetzung aufgehoben wurde.
+
+    (3) Kommen beide zuständigen Behörden überein, dass eine unmittelbar von dem Fall betroffene Person
+    es versäumt hat, zusätzliche wesentliche Informationen, die nach Beginn der in Absatz 1 Buchstabe b
+    vorgesehenen Frist von einer der beiden zuständigen Behörden angefordert wurden, rechtzeitig
+    bereitzustellen, so wird die in Absatz 1 Buchstabe b vorgesehene Frist um eine Dauer verlängert, die dem
+    Zeitraum entspricht, der an dem Tag beginnt, bis zu dem die Informationen angefordert waren, und an dem
+    Tag endet, an dem sie bereitgestellt wurden.
+
+    (4)   a) Der Schiedsspruch über die einem Schiedsverfahren unterworfenen Fragen wird durch die
+               Verständigungsregelung in Bezug auf den in Absatz 1 genannten Fall umgesetzt. Der
+               Schiedsspruch ist endgültig.
+
+          b)       Der Schiedsspruch ist für beide Vertragsstaaten verbindlich, es sei denn,
+
+
+5
+  Wirksam für Fälle, die der zuständigen Behörde eines Vertragsstaates am oder nach dem 1. November 2024 vorgelegt werden. Darüber
+hinaus gilt Teil VI für einen Fall, welcher der zuständigen Behörde eines Vertragsstaats vor dem 1. November 2024 vorgelegt wird, insoweit
+als die zuständigen Behörden beider Vertragsstaaten übereinkommen, dass er für diesen bestimmten Fall gilt.
+                            Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 25
+
+
+             i)     eine unmittelbar von dem Fall betroffene Person erkennt die Verständigungs-regelung,
+                    durch die der Schiedsspruch umgesetzt wird, nicht an. In diesem Fall kommt der Fall
+                    für eine weitere Prüfung durch die zuständigen Behörden nicht in Betracht. Die
+                    Verständigungsregelung, durch die der Schiedsspruch über den Fall umgesetzt wird,
+                    gilt als von einer unmittelbar von dem Fall betroffenen Person nicht anerkannt, sofern
+                    nicht eine unmittelbar von dem Fall betroffene Person innerhalb von 60 Tagen nach
+                    Übermittlung der Mitteilung über die Verständigungsregelung an die Person alle in der
+                    Verständigungsregelung, durch die der Schiedsspruch umgesetzt wird, geklärten
+                    Fragen von der Prüfung durch ein Gericht zurückzieht oder alle gegebenenfalls
+                    anhängigen Gerichtsverfahren und außergerichtlichen Rechtsbehelfsverfahren in
+                    Bezug auf diese Fragen in einer mit dieser Verständigungsregelung
+                    übereinstimmenden Weise beendet;
+
+             ii)    der Schiedsspruch wird in einer abschließenden Entscheidung der Gerichte eines der
+                    Vertragsstaaten für ungültig erklärt. In diesem Fall gilt der Schiedsantrag nach
+                    Absatz 1 als nicht gestellt und das Schiedsverfahren als nicht durchgeführt (außer für
+                    die Zwecke der Artikel 21 und 25 des BEPS-MLI. In diesem Fall kann ein neuer
+                    Schiedsantrag gestellt werden, sofern die zuständigen Behörden nicht übereinkommen,
+                    dass ein solcher neuer Antrag nicht zulässig sein soll;
+
+             iii)   eine unmittelbar von dem Fall betroffene Person strengt ein Gerichtsverfahren zu den
+                    in der Verständigungsregelung, durch die der Schiedsspruch umgesetzt wird, geklärten
+                    Fragen an.
+
+(5) Die zuständige Behörde, bei welcher der ursprüngliche Antrag auf ein Verständigungsverfahren nach
+Absatz 1 Buchstabe a eingegangen ist, übermittelt innerhalb von zwei Kalendermonaten nach Eingang des
+Antrags
+
+      a)     eine Mitteilung über den Eingang des Antrags an die Person, die den Fall vorgelegt hat, sowie
+
+      b)     eine Mitteilung über diesen Antrag mit einer Abschrift desselben an die zuständige Behörde
+             des anderen Vertragsstaats.
+
+(6) Innerhalb von drei Kalendermonaten, nachdem eine zuständige Behörde den Antrag auf ein
+Verständigungsverfahren (oder eine Abschrift desselben von der zuständigen Behörde des anderen
+Vertragsstaats) erhalten hat, wird sie
+
+      a)     entweder der Person, die den Fall vorgelegt hat, und der anderen zuständigen Behörde
+             mitteilen, dass sie die für eine sachliche Prüfung des Falles erforderlichen Informationen
+             erhalten hat, oder
+
+      b)     zu diesem Zweck von dieser Person zusätzliche Informationen anfordern.
+
+(7) Haben nach Absatz 6 Buchstabe b eine oder beide zuständigen Behörden von der Person, die den Fall
+vorgelegt hat, zusätzliche Informationen angefordert, die für eine sachliche Prüfung des Falles erforderlich
+sind, so teilt die zuständige Behörde, welche die zusätzlichen Informationen angefordert hat, dieser Person
+und der anderen zuständigen Behörde innerhalb von drei Kalendermonaten nach Erhalt der zusätzlichen
+Informationen von dieser Person entweder mit,
+
+      a)     dass sie die angeforderten Informationen erhalten hat
+                           Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 26
+
+
+      b)    oder dass einige der angeforderten Informationen noch fehlen.
+
+(8) Hat keine der beiden zuständigen Behörden nach Absatz 6 Buchstabe b zusätzliche Informationen
+angefordert, so ist der in Absatz 1 genannte Fristbeginn der frühere der beiden folgenden Tage:
+
+      a)    der Tag, an dem beide zuständigen Behörden der Person, die den Fall vorgelegt hat, eine
+            Mitteilung nach Absatz 6 Buchstabe a übermittelt haben, oder
+
+      b)    der Tag, der drei Kalendermonate nach der Mitteilung an die zuständige Behörde des anderen
+            Vertragsstaats nach Absatz 5 Buchstabe b liegt.
+
+(9) Wurden nach Absatz 6 Buchstabe b zusätzliche Informationen angefordert, so ist der in Absatz 1
+genannte Fristbeginn der frühere der beiden folgenden Tage:
+
+      a)    der letzte Tag, an dem die zuständigen Behörden, die zusätzliche Informationen angefordert
+            haben, der Person, die den Fall vorgelegt hat, und der anderen zuständigen Behörde eine
+            Mitteilung nach Absatz 7 Buchstabe a übermittelt haben, oder
+
+      b)    der Tag, der drei Kalendermonate nach dem Zeitpunkt liegt, zu dem beide zuständigen
+            Behörden von der Person, die den Fall vorgelegt hat, alle von einer der beiden zuständigen
+            Behörden angeforderten Informationen erhalten haben.
+
+Übermitteln jedoch eine oder beide zuständigen Behörden die Mitteilung nach Absatz 7 Buchstabe b, so
+gilt diese als Anforderung zusätzlicher Informationen nach Absatz 6 Buchstabe b.
+
+(10) Die zuständigen Behörden der Vertragsstaaten regeln durch Verständigung nach Artikel 24 dieses
+Abkommens, wie dieser Teil anzuwenden ist und welche Informationen jede zuständige Behörde für eine
+sachliche Prüfung des Falles mindestens benötigt. Diese Verständigungsregelung ist vor dem Tag zu
+treffen, an dem noch offene Fragen im Rahmen eines Falles erstmals in Betracht kommen, einem
+Schiedsverfahren unterworfen zu werden, und kann danach erforderlichenfalls geändert werden.
+
+(12) Ungeachtet der Absätze 1 bis 10 gelten folgende Vorschriften:
+
+      a)    Eine noch offene Frage die sich aus einem Fall ergibt, der Gegenstand eines
+            Verständigungsverfahrens ist und der anderenfalls in den Anwendungsbereich des im BEPS-
+            MLI vorgesehenen Schiedsverfahrens fallen würde, darf nicht einem Schiedsverfahren
+            unterworfen werden, wenn in einem der beiden Vertragsstaaten bereits eine
+            Gerichtsentscheidung zu dieser Frage ergangen ist.
+
+      b)    Wenn zu irgendeinem Zeitpunkt nach Stellung eines Schiedsantrags und vor Übermittlung
+            des Schiedsspruchs an die zuständigen Behörden der Vertragsstaaten durch die Schiedsstelle
+            in einem der Vertragsstaaten eine Gerichtsentscheidung zu der Frage ergeht, endet das
+            Schiedsverfahren.
+
+
+
+                ARTIKEL 20 BEPS-MLI – BESTELLUNG DER SCHIEDSRICHTER
+
+(1) Soweit sich die zuständigen Behörden der Vertragsstaaten nicht auf andere Vorschriften verständigen,
+gelten für die Zwecke dieses Teils die Absätze 2 bis 4.
+                            Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 27
+
+
+(2) Für die Bestellung der Mitglieder einer Schiedsstelle gelten folgende Vorschriften:
+
+      a)     Die Schiedsstelle besteht aus drei Einzelmitgliedern mit Fachkenntnis oder Erfahrung auf
+             dem Gebiet internationaler Steuersachen.
+
+      b)     Jede zuständige Behörde bestellt innerhalb von 60 Tagen nach dem Tag des aufgrund des
+             Artikels 19 Absatz 1 des BEPS-MLI gestellten Schiedsantrags ein Mitglied der Schiedsstelle.
+             Die beiden auf diese Weise bestellten Mitglieder der Schiedsstelle bestellen innerhalb von 60
+             Tagen nach der letzten dieser beiden Bestellungen ein drittes Mitglied, das den Vorsitz der
+             Schiedsstelle ausübt. Der Vorsitzende darf nicht Staatsangehöriger eines der beiden
+             Vertragsstaaten oder in einem der beiden Vertragsstaaten ansässig sein.
+
+      c)     Jedes bestellte Mitglied der Schiedsstelle muss zum Zeitpunkt der Annahme einer Bestellung
+             unparteilich und von den zuständigen Behörden, Steuerverwaltungen und Finanzministerien
+             der Vertragsstaaten sowie allen unmittelbar von dem Fall betroffenen Personen (und deren
+             Beratern) unabhängig sein, während des gesamten Verfahrens seine Unparteilichkeit und
+             Unabhängigkeit wahren und während eines angemessenen Zeitraums danach jedes Verhalten
+             vermeiden, das Anlass zu Zweifeln an der Unparteilichkeit und Unabhängigkeit der
+             Schiedsrichter in Bezug auf das Verfahren geben kann.
+
+(3) Versäumt es die zuständige Behörde eines Vertragsstaats, in der Weise und innerhalb der Frist, die in
+Absatz 2 genannt oder zwischen den zuständigen Behörden der Vertragsstaaten vereinbart sind, ein
+Mitglied der Schiedsstelle zu bestellen, so wird durch den ranghöchsten Funktionsträger des Zentrums für
+Steuerpolitik und -verwaltung der Organisation für wirtschaftliche Zusammenarbeit und Entwicklung, der
+nicht Staatsangehöriger eines der beiden Vertragsstaaten ist, im Namen dieser zuständigen Behörde ein
+Mitglied bestellt.
+
+(4) Versäumen es die beiden ersten Mitglieder der Schiedsstelle, in der Weise und innerhalb der Frist, die
+in Absatz 2 genannt oder zwischen den zuständigen Behörden der Vertragsstaaten vereinbart sind, den
+Vorsitzenden zu bestellen, so wird der Vorsitzende durch den ranghöchsten Funktionsträger des Zentrums
+für Steuerpolitik und -verwaltung der Organisation für wirtschaftliche Zusammenarbeit und Entwicklung
+bestellt, der nicht Staatsangehöriger eines der beiden Vertragsstaaten ist.
+
+
+
+           ARTIKEL 21 BEPS-MLI – VERTRAULICHKEIT VON SCHIEDSVERFAHREN
+
+(1) Mitglieder der Schiedsstelle und höchstens drei Mitarbeiter je Mitglied (sowie vorgesehene
+Schiedsrichter, jedoch nur, soweit dies für die Überprüfung ihrer Fähigkeit zur Erfüllung der
+Voraussetzungen für eine Tätigkeit als Schiedsrichter erforderlich ist) gelten ausschließlich für die
+Anwendung dieses Teils und der Artikel 25 und 26 dieses Abkommens sowie der innerstaatlichen
+Rechtsvorschriften der Vertragsstaaten in Bezug auf Informationsaustausch, Vertraulichkeit und
+Amtshilfe als Personen oder Behörden, an die Informationen weitergegeben werden dürfen.
+Informationen, welche die Schiedsstelle oder vorgesehene Schiedsrichter erhalten, sowie Informationen,
+welche die zuständigen Behörden von der Schiedsstelle erhalten, gelten als nach den Artikeln 25 und 26
+dieses Abkommens ausgetauschte Informationen.
+
+(2) Die zuständigen Behörden der Vertragsstaaten stellen sicher, dass Mitglieder der Schiedsstelle und ihre
+Mitarbeiter sich vor ihrem Tätigwerden im Rahmen eines Schiedsverfahrens schriftlich verpflichten,
+Informationen zum Schiedsverfahren im Einklang mit den in den Bestimmungen der Artikel 25 und 26
+                           Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 28
+
+
+dieses Abkommens beschriebenen und den im anwendbaren Recht der Vertragsstaaten vorgesehenen
+Vertraulichkeits- und Geheimhaltungspflichten zu behandeln.
+
+
+
+           ARTIKEL 22 BEPS-MLI – REGELUNG EINES FALLES VOR ABSCHLUSS DES
+                                  SCHIEDSVERFAHRENS
+
+Für die Zwecke dieses Teiles und des Artikels 24 dieses Abkommens enden das Verständigungsverfahren
+und das Schiedsverfahren in Bezug auf einen Fall, wenn zu irgendeinem Zeitpunkt nach Stellung eines
+Schiedsantrags und vor Übermittlung des Schiedsspruchs an die zuständigen Behörden der Vertragsstaaten
+durch die Schiedsstelle:
+
+      a)     die zuständigen Behörden der Vertragsstaaten den Fall durch Verständigung regeln oder
+
+      b)     die Person, die den Fall vorgelegt hat, den Schiedsantrag oder den Antrag auf ein
+             Verständigungsverfahren zurückzieht.
+
+
+
+                   ARTIKEL 23 BEPS-MLI – ART DES SCHIEDSVERFAHRENS
+
+(1) Soweit sich die zuständigen Behörden der Vertragsstaaten nicht auf andere Vorschriften verständigen,
+gelten bei einem Schiedsverfahren nach diesem Teil folgende Vorschriften:
+
+      a)     Nachdem ein Fall einem Schiedsverfahren unterworfen wurde, legt die zuständige Behörde
+             jedes Vertragsstaats der Schiedsstelle bis zu einem vereinbarten Tag einen
+             Regelungsvorschlag vor, in dem alle noch offenen Fragen des Falles behandelt werden (unter
+             Berücksichtigung aller zuvor zwischen den zuständigen Behörden der Vertragsstaaten in
+             diesem Fall erzielten Verständigungsregelungen). Der Regelungsvorschlag ist für jede
+             Berichtigung oder vergleichbare Frage des Falles auf die Festlegung bestimmter Geldbeträge
+             (zum Beispiel von Einkünften oder Aufwendungen) oder, wenn angegeben, des höchsten
+             aufgrund dieses Abkommens erhobenen Steuersatzes zu beschränken. Konnten die
+             zuständigen Behörden der Vertragsstaaten in einem Fall über eine Frage betreffend die
+             Voraussetzungen für die Anwendung einer Bestimmung dieses Abkommens (im Folgenden
+             als „Schwellenfrage“ bezeichnet) keine Verständigungsregelung erzielen, zum Beispiel
+             darüber, ob eine natürliche Person eine ansässige Person ist oder ob eine Betriebsstätte
+             besteht, so können die zuständigen Behörden alternative Regelungsvorschläge zu Fragen
+             vorlegen, bei denen die Entscheidung von der Regelung dieser Schwellenfragen abhängt.
+
+      b)     Die zuständige Behörde jedes Vertragsstaats kann außerdem ein erläuterndes Positionspapier
+             zur Prüfung durch die Schiedsstelle vorlegen. Jede zuständige Behörde, die einen
+             Regelungsvorschlag oder ein erläuterndes Positionspapier vorlegt, übermittelt der anderen
+             zuständigen Behörde bis zu dem Tag, bis zu dem der Regelungsvorschlag und das erläuternde
+             Positionspapier vorgelegt werden müssen, eine Abschrift. Jede zuständige Behörde kann der
+             Schiedsstelle außerdem bis zu einem vereinbarten Tag eine Erwiderung zu dem von der
+             anderen zuständigen Behörde vorgelegten Regelungsvorschlag und erläuternden
+             Positionspapier übermitteln. Der anderen zuständigen Behörde wird bis zu dem Tag, bis zu
+             dem die Erwiderung vorgelegt werden muss, eine Abschrift davon übermittelt.
+                            Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 29
+
+
+      c)     Die Schiedsstelle wählt als Entscheidung einen der von den zuständigen Behörden in Bezug
+             auf jede Frage und eventuelle Schwellenfragen vorgelegten Regelungsvorschläge für den Fall
+             aus und nimmt in ihre Entscheidung keine Begründung oder sonstige Erläuterung auf. Der
+             Schiedsspruch wird mit einfacher Mehrheit der Mitglieder der Schiedsstelle erlassen. Die
+             Schiedsstelle übermittelt den zuständigen Behörden der Vertragsstaaten schriftlich ihre
+             Entscheidung. Der Schiedsspruch hat keine Präzedenzwirkung.
+
+(5) Vor Beginn eines Schiedsverfahrens stellen die zuständigen Behörden der Vertragsstaaten dieses
+Abkommens sicher, dass jede Person, die den Fall vorgelegt hat, und ihre Berater sich schriftlich
+verpflichten, im Laufe des Schiedsverfahrens von einer der zuständigen Behörden oder der Schiedsstelle
+erhaltene Informationen nicht an eine andere Person weiterzugeben. Das Verständigungsverfahren nach
+diesem Abkommen sowie das Schiedsverfahren nach diesem Teil enden in Bezug auf den Fall, wenn nach
+Stellung eines Schiedsantrags und vor Übermittlung des Schiedsspruchs an die zuständigen Behörden der
+Vertragsstaaten durch die Schiedsstelle eine Person, die den Fall vorgelegt hat, oder einer der Berater
+dieser Person erheblich gegen diese Erklärung verstößt.
+
+
+
+           ARTIKEL 24 BEPS-MLI – VERSTÄNDIGUNG AUF EINE ANDERE REGELUNG
+
+(2) Ungeachtet des Artikels 19 Absatz 4 BEPS-MLI ist ein nach diesem Teil ergangener Schiedsspruch
+für die Vertragsstaaten dieses Abkommens nicht verbindlich und wird nicht umgesetzt, wenn sich die
+zuständigen Behörden der Vertragsstaaten innerhalb von drei Kalendermonaten, nachdem ihnen der
+Schiedsspruch übermittelt wurde, auf eine andere Regelung aller noch offenen Fragen verständigen.
+
+
+
+                 ARTIKEL 25 BEPS-MLI – KOSTEN VON SCHIEDSVERFAHREN
+
+In einem Schiedsverfahren nach diesem Teil werden die Vergütungen und Aufwendungen der Mitglieder
+der Schiedsstelle sowie sämtliche den Vertragsstaaten im Zusammenhang mit dem Schiedsverfahren
+entstandenen Kosten von den Vertragsstaaten in einer zwischen den zuständigen Behörden der
+Vertragsstaaten durch Verständigung zu regelnden Weise getragen. In Ermangelung einer entsprechenden
+Verständigungsregelung trägt jeder Vertragsstaat seine eigenen Aufwendungen und die seines bestellten
+Mitglieds der Schiedsstelle. Die Kosten des Vorsitzenden der Schiedsstelle und sonstige mit der
+Durchführung des Schiedsverfahrens verbundene Aufwendungen tragen die Vertragsstaaten zu gleichen
+Teilen.
+
+
+
+                            ARTIKEL 26 BEPS-MLI – VEREINBARKEIT
+
+(2) Jede noch offene Frage, die sich aus einem Fall ergibt, der Gegenstand eines Verständigungsverfahrens
+ist und der anderenfalls in den Anwendungsbereich des in diesem Teil vorgesehenen Schiedsverfahrens
+fallen würde, wird nicht einem Schiedsverfahren unterworfen, wenn die Frage im Rahmen eines Falles zu
+betrachten ist, für den in Übereinstimmung mit einer zwei- oder mehrseitigen Übereinkunft, die für noch
+offene Fragen, die sich aus einem Fall ergeben, der Gegenstand eines Verständigungsverfahrens ist, ein
+obligatorisches verbindliches Schiedsverfahren vorsieht, bereits eine Schiedsstelle oder ein ähnliches
+Gremium eingerichtet wurde.
+                           Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 30
+
+
+(3) Dieser Teil berührt nicht die Erfüllung weiter reichender Verpflichtungen, die sich in Bezug auf das
+Schiedsverfahren für noch offene Fragen im Rahmen eines Verständigungsverfahrens aus anderen
+Übereinkünften, denen die Vertragsstaaten als Vertragsparteien angehören oder angehören werden,
+ergeben können.
+
+
+
+                                      VORBEHALTE
+                            DER BUNDESREPUBLIK DEUTSCHLAND
+
+In Übereinstimmung mit Artikel 28 Absatz 2 Buchstabe a des BEPS-MLI bringt die Bundesrepublik
+Deutschland die folgenden Vorbehalte in Bezug auf die Art der Fälle an, die nach Teil VI einem
+Schiedsverfahren unterworfen werden können.
+
+  1) Die Bundesrepublik Deutschland behält sich das Recht vor, aus dem Anwendungsbereich des Teils
+     VI alle Fälle auszuschließen, in denen eine innerstaatliche oder steuerabkommensrechtliche
+     Vorschrift zur Missbrauchsbekämpfung (zum Beispiel Vierter, Fünfter und Siebenter Teil des
+     Außensteuergesetzes, § 42 der Abgabenordnung, § 50d Absatz 3 des Einkommensteuergesetzes)
+     angewendet wurde;
+
+  2) Die Bundesrepublik Deutschland behält sich das Recht vor, aus dem Anwendungsbereich des Teils
+     VI alle Fälle auszuschließen, die in Zusammenhang mit einem Verhalten stehen, aufgrund dessen
+     der Steuerpflichtige, eine in seinem Auftrag handelnde Person oder eine verbundene Person durch
+     ein Gericht eines Steuervergehens für schuldig befunden wurde oder gegen ihn beziehungsweise
+     sie eine schwere Sanktion verhängt wurde;
+
+  3) Die Bundesrepublik Deutschland behält sich das Recht vor, aus dem Anwendungsbereich des Teils
+     VI Fälle auszuschließen, die Einkünfte oder Vermögenswerte betreffen, die von einem
+     Vertragsstaat nicht besteuert werden, weil sie dort nicht in die Bemessungsgrundlage einbezogen
+     werden oder weil sie nach seinem innerstaatlichen Recht von der Steuer befreit sind oder einem
+     Nullsteuersatz unterliegen;
+
+  4) Die Bundesrepublik Deutschland behält sich das Recht vor, aus dem Anwendungsbereich des Teils
+     VI alle Fälle auszuschließen, die in den Anwendungsbereich der Richtlinie (EU) 2017/1852 des
+     Rates vom 10. Oktober 2017 über Verfahren zur Beilegung von Besteuerungsstreitigkeiten in der
+     Europäischen Union oder des Übereinkommens über die Beseitigung der Doppelbesteuerung im
+     Falle von Gewinnberichtigungen zwischen verbundenen Unternehmen (90/436/EWG) – in ihren
+     jeweils geltenden Fassungen – oder einer späteren Regelung fallen;
+
+  5) Die Bundesrepublik Deutschland behält sich das Recht vor, aus dem Anwendungsbereich des Teils
+     VI alle Fälle auszuschließen, in denen durch die Anwendung einer innerstaatlichen oder
+     abkommensrechtlichen Vorschrift auf Einkünfte oder Vermögenswerte eine Doppelbesteuerung
+     durch die Anrechnungsmethode statt durch die Befreiungsmethode vermieden wird;
+
+  6) Die Bundesrepublik Deutschland behält sich das Recht vor, aus dem Anwendungsbereich des Teils
+     VI alle Sachverhalte auszuschließen, die im Rahmen einer tatsächlichen Verständigung im Sinne
+     des Schreibens des Bundesministeriums der Finanzen vom 30. Juli 2008 (BStBl. I 2008, S. 831) –
+     in seiner jeweils geltenden Fassung – oder einer späteren Regelung zwischen der Steuerverwaltung
+     eines Vertragsstaats und dem Steuerpflichtigen festgelegt wurden.
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 31
+
+
+                                           VORBEHALTE
+                                     DES KÖNIGREICHS SPANIEN
+
+In Übereinstimmung mit Artikel 28 Absatz 2 Buchstabe a des BEPS-MLI bringt das Königreich Spanien
+die folgenden Vorbehalte in Bezug auf die Art der Fälle an, die nach Teil VI einem Schiedsverfahren
+unterworfen werden können.
+
+  1. Das Königreich Spanien behält sich das Recht vor, aus dem Anwendungsbereich des Teils IV Fälle
+     auszuschließen, die in Zusammenhang mit der Anwendung von Vorschriften zur
+     Missbrauchsbekämpfung aus einem unter das Übereinkommen fallenden Steuerabkommen in
+     seiner durch das Übereinkommen geänderten Fassung oder aus dem innerstaatlichen Recht stehen.
+     Zu diesem Zweck umfassen innerstaatliche Vorschriften zur Missbrauchsbekämpfung die in den
+     Artikeln 15 und 16 des allgemeinen Abgabengesetzes (Gesetz 58/2003 vom 17. Dezember 2003)
+     behandelten Fälle. Spätere Vorschriften zur Ersetzung, Änderung oder Aktualisierung dieser
+     Vorschriften sind ebenfalls erfasst. Das Königreich Spanien notifiziert dem Verwahrer diese
+     späteren Vorschriften.
+
+  2. Das Königreich Spanien behält sich das Recht vor, aus dem Anwendungsbereich des Teils IV Fälle
+     auszuschließen, die in Zusammenhang mit einem Verhalten stehen, aufgrund dessen gegen eine
+     unmittelbar von dem Fall betroffene Person durch eine abschließende Entscheidung aus einem
+     Gerichts- oder Verwaltungsverfahren eine Sanktion wegen Steuerbetrugs, vorsätzlicher
+     Unterlassung oder grober Fahrlässigkeit verhängt wurde. Zu diesem Zweck sind Sanktionen wegen
+     Steuerbetrugs, vorsätzlicher Unterlassung oder grober Fahrlässigkeit die in den folgenden Artikeln
+     geregelten Sanktionen:
+
+   i.    Artikel 305 und 305bis des spanischen Strafgesetzbuchs,
+
+  ii.    Artikel 191, 192 und 193 des allgemeinen Abgabengesetzes (Gesetz 58/2003 vom 17. Dezember
+         2003), sofern ein in Artikel 184 dieses Gesetzes genanntes Einstufungskriterium Anwendung
+         findet,
+
+ iii.    Artikel 18 Absatz 13 Nummer 2 des Körperschaftsteuergesetzes (Ge-setz 27/2014 vom 27.
+         November 2014), sofern ein in Artikel 184 des allgemeinen Abgabengesetzes (Gesetz 58/2003
+         vom 17. Dezember 2003) genanntes Einstufungskriterium Anwendung findet; zu diesem Zweck
+         gelten Bezugnahmen auf „Steuererklärungen“ in Artikel 184 des allgemeinen Abgabengesetzes
+         als Bezugnahmen auf Verrechnungspreisdokumentation.
+
+        Ungeachtet der Ziffer iii. gelten Sanktionen wegen unvollständiger Vorlage der
+        Verrechnungspreisdokumentation, sofern die Quantifizierung oder Ermittlung des Marktwertes
+        nicht erheblich erschwert ist, nicht als Sanktionen wegen Steuerbetrugs, vorsätzlicher Unterlassung
+        oder grober Fahrlässigkeit.
+
+        Spätere Bestimmungen zur Ersetzung, Änderung oder Aktualisierung dieser Bestimmungen sind
+        ebenfalls erfasst. Das Königreich Spanien notifiziert dem Verwahrer diese späteren Bestimmungen.
+
+  3. Das Königreich Spanien behält sich das Recht vor, aus dem Anwendungsbereich des Teils IV
+     Verrechnungspreisfälle auszuschließen, die in Zusammenhang mit Einkünften oder
+     Vermögenswerten stehen, die in einem Vertragsstaat nicht besteuert werden, entweder weil sie dort
+     nicht in die Bemessungsgrundlage einbezogen werden oder weil sie ausschließlich nach seinem
+                              Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 32
+
+
+        innerstaatlichen Steuerrecht einer Steuerbefreiung oder einem Nullsteuersatz unterliegen, die
+        beziehungsweise der sich auf diese Einkünfte oder Vermögenswerte beschränkt.
+
+    4. Das Königreich Spanien behält sich das Recht vor, aus dem Anwendungsbereich des Teils IV Fälle
+       auszuschließen, die nach dem Übereinkommen über die Beseitigung der Doppelbesteuerung im
+       Falle von Gewinnberichtigungen zwischen verbundenen Unternehmen (90/436/EWG) – in seiner
+       jeweils geltenden Fassung – oder einer späteren Regelung einem Schiedsverfahren unterworfen
+       werden können.
+
+    5. Das Königreich Spanien behält sich das Recht vor, aus dem Anwendungsbereich des Teils IV Fälle
+       auszuschließen, bei denen sich die zuständigen Behörden beider Vertragsstaaten einig sind, dass sie
+       für eine Regelung durch ein Schiedsverfahren nicht geeignet sind. Diese Einigung ist vor dem Tag
+       zu erzielen, an dem das Schiedsverfahren anderenfalls begonnen hätte, und wird der Person
+       mitgeteilt, die den Fall vorgelegt hat.
+
+
+
+
+                                          Artikel 25
+                                    Informationsaustausch
+
+(1) Die zuständigen Behörden der Vertragsstaaten tauschen die Informationen aus, die zur Durchführung
+dieses Abkommens oder zur Anwendung oder Durchsetzung des innerstaatlichen Rechts betreffend
+Steuern jeder Art und Bezeichnung, die für Rechnung der Vertragsstaaten, einer seiner Länder oder einer
+ihrer Gebietskörperschaften erhoben werden, voraussichtlich erheblich sind, soweit die diesem Recht
+entsprechende Besteuerung nicht dem Abkommen widerspricht. Der Informationsaustausch ist durch die
+Artikel 1 und 2 nicht eingeschränkt.
+
+(2) Alle Informationen, die ein Vertragsstaat nach Absatz 1 erhalten hat, sind ebenso geheim zu halten wie
+die aufgrund des innerstaatlichen Rechts dieses Staates beschafften Informationen und dürfen nur den
+Personen oder Behörden (einschließlich der Gerichte und der Verwaltungsbehörden) zugänglich gemacht
+werden, die mit der Veranlagung oder Erhebung, der Vollstreckung oder Strafverfolgung, der
+Entscheidung über Rechtsmittel hinsichtlich der in Absatz 1 genannten Steuern oder mit der Aufsicht
+darüber befasst sind. Diese Personen oder Behörden dürfen die Informationen nur für diese Zwecke
+verwenden. Sie dürfen die Informationen in einem öffentlichen Gerichtsverfahren oder in einer
+Gerichtsentscheidung offenlegen. Ungeachtet der vorstehenden Bestimmungen können die Informationen
+für andere Zwecke verwendet werden, wenn sie nach dem Recht beider Staaten für diese anderen Zwecke
+verwendet werden können und die zuständige Behörde des übermittelnden Staates dieser Verwendung
+zugestimmt hat.
+
+(3) Absätze 1 und 2 sind nicht so auszulegen, als verpflichteten sie einen Vertragsstaat,
+
+    a) Verwaltungsmaßnahmen durchzuführen, die von den Gesetzen und der Verwaltungspraxis dieses
+       oder des anderen Vertragsstaats abweichen;
+
+    b) Informationen zu erteilen, die nach den Gesetzen oder der Verwaltungspraxis dieses oder des
+       anderen Vertragsstaats nicht beschafft werden können;
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 33
+
+
+    c) Informationen zu erteilen, die ein Handels-, Industrie-, Gewerbe- oder Berufsgeheimnis oder ein
+       Geschäftsverfahren preisgeben würden oder deren Erteilung der öffentlichen Ordnung
+       widerspräche.
+
+(4) Ersucht ein Vertragsstaat gemäß diesem Artikel um Informationen, so nutzt der andere Vertragsstaat
+die ihm zur Verfügung stehenden Möglichkeiten zur Beschaffung der erbetenen Informationen, selbst
+wenn dieser andere Staat diese Informationen für seine eigenen steuerlichen Zwecke nicht benötigt. Die
+im vorhergehenden Satz enthaltene Verpflichtung unterliegt den Beschränkungen gemäß Absatz 3, aber
+diese Beschränkungen sind nicht so auszulegen, als könne ein Vertragsstaat die Erteilung von
+Informationen nur deshalb ablehnen, weil er kein innerstaatliches Interesse an diesen Informationen hat.
+
+(5) Absatz 3 ist in keinem Fall so auszulegen, als könne ein Vertragsstaat die Erteilung von Informationen
+nur deshalb ablehnen, weil sich die Informationen bei einer Bank, einem sonstigen Finanzinstitut, einem
+Bevollmächtigten, Vertreter oder Treuhänder befinden oder weil sie sich auf das Eigentum an einer Person
+beziehen.
+
+
+
+                                        Artikel 26
+                         Amtshilfe bei der Erhebung von Steuern
+
+(1) Die Vertragsstaaten leisten sich gegenseitige Amtshilfe bei der Erhebung von Steueransprüchen. Diese
+Amtshilfe ist durch Artikel 1 und 2 nicht eingeschränkt. Die zuständigen Behörden der Vertragsstaaten
+können in gegenseitigem Einvernehmen regeln, wie dieser Artikel durchzuführen ist.
+
+(2) Der in diesem Artikel verwendete Ausdruck „Steueranspruch“ bedeutet einen Betrag, der auf Grund
+von Steuern jeder Art und Bezeichnung, die für Rechnung der Vertragsstaaten, einer seiner Länder oder
+einer ihrer Gebietskörperschaften erhoben werden, geschuldet wird, soweit die Besteuerung diesem
+Abkommen oder anderen völkerrechtlichen Übereinkünften, denen die Vertragsstaaten beigetreten sind,
+nicht widerspricht, sowie mit diesem Betrag zusammenhängende Zinsen, Geldbußen und Kosten der
+Erhebung oder Sicherung.
+
+(3) Ist der Steueranspruch eines Vertragsstaats nach dem Recht dieses Staates vollstreckbar und wird er
+von einer Person geschuldet, die zu diesem Zeitpunkt nach dem Recht dieses Staates die Erhebung nicht
+verhindern kann, wird dieser Steueranspruch auf Ersuchen der zuständigen Behörde dieses Staates für die
+Zwecke der Erhebung von der zuständigen Behörde des anderen Vertragsstaats anerkannt. Der
+Steueranspruch wird vom anderen Staat nach dessen Rechtsvorschriften über die Vollstreckung und
+Erhebung seiner eigenen Steuern erhoben, als handele es sich bei dem Steueranspruch um einen
+Steueranspruch des anderen Staates.
+
+(4) Handelt es sich bei dem Steueranspruch eines Vertragsstaats um einen Anspruch, bei dem dieser Staat
+nach seinem Recht Maßnahmen zur Sicherung der Erhebung einleiten kann, wird dieser Steueranspruch
+auf Ersuchen der zuständigen Behörde dieses Staates zum Zwecke der Einleitung von
+Sicherungsmaßnahmen von der zuständigen Behörde des anderen Vertragsstaats anerkannt. Der andere
+Staat leitet nach seinen Rechtsvorschriften Sicherungsmaßnahmen in Bezug auf diesen Steueranspruch ein,
+als wäre der Steueranspruch ein Steueranspruch dieses anderen Staates, selbst wenn der Steueranspruch
+im Zeitpunkt der Einleitung dieser Maßnahmen im erstgenannten Staat nicht vollstreckbar ist oder von
+einer Person geschuldet wird, die berechtigt ist, die Erhebung zu verhindern.
+                              Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 34
+
+
+(5) Ungeachtet der Absätze 3 und 4 unterliegt ein von einem Vertragsstaat für Zwecke der Absätze 3 oder
+4 anerkannter Steueranspruch als solcher in diesem Staat nicht den Verjährungsfristen eines
+Steueranspruchs nach dem Recht dieses Staates. Ferner hat ein Steueranspruch, der von einem
+Vertragsstaat für Zwecke der Absätze 3 oder 4 anerkannt wurde, in diesem Staat nicht den Vorrang, den
+dieser Steueranspruch nach dem Recht des anderen Vertragsstaats hat.
+
+(6) Verfahren im Zusammenhang mit dem Bestehen, der Gültigkeit oder der Höhe des Steueranspruchs
+eines Vertragsstaats können nicht bei den Gerichten oder Verwaltungsbehörden des anderen Vertragsstaats
+eingeleitet werden.
+
+(7) Verliert der betreffende Steueranspruch, nachdem das Ersuchen eines Vertragsstaats nach den Absätzen
+3 oder 4 gestellt wurde und bevor der andere Vertragsstaat den betreffenden Steueranspruch erhoben und
+an den erstgenannten Staat ausgezahlt hat,
+
+    a) im Falle eines Ersuchens nach Absatz 3 seine Eigenschaft als Steueranspruch des erstgenannten
+       Staates, der nach dem Recht dieses Staates vollstreckbar ist und von einer Person geschuldet wird,
+       die zu diesem Zeitpunkt nach dem Recht dieses Staates die Erhebung nicht verhindern kann, oder
+
+    b) im Falle eines Ersuchens nach Absatz 4 seine Eigenschaft als Steueranspruch des erstgenannten
+       Staates, für den dieser Staat nach seinem Recht Maßnahmen zur Sicherung der Erhebung einleiten
+       kann,
+
+teilt die zuständige Behörde des erstgenannten Staates dies der zuständigen Behörde des anderen Staates
+unverzüglich mit und nach Wahl des anderen Staates setzt der erstgenannte Staat das Ersuchen entweder
+aus oder nimmt es zurück.
+
+(8) Dieser Artikel ist nicht so auszulegen, als verpflichte er einen Vertragsstaat,
+
+    a) Verwaltungsmaßnahmen durchzuführen, die von den Gesetzen und der Verwaltungspraxis dieses
+       oder des anderen Vertragsstaats abweichen;
+
+    b) Maßnahmen durchzuführen, die der öffentlichen Ordnung widersprächen;
+
+    c) Amtshilfe zu leisten, wenn der andere Vertragsstaat nicht alle angemessenen Maßnahmen zur
+       Erhebung oder Sicherung, die nach seinen Gesetzen oder seiner Verwaltungspraxis möglich sind,
+       ausgeschöpft hat;
+
+    d) Amtshilfe in Fällen zu leisten, in denen der Verwaltungsaufwand für diesen Staat in einem
+       eindeutigen Missverhältnis zu dem Nutzen steht, den der andere Vertragsstaat dadurch erlangt.
+
+
+
+                                     Artikel 27
+        Mitglieder diplomatischer Missionen und konsularischer Vertretungen
+
+Dieses Abkommen berührt nicht die steuerlichen Vorrechte, die den Mitgliedern diplomatischer Missionen
+und konsularischer Vertretungen nach den allgemeinen Regeln des Völkerrechts oder aufgrund besonderer
+Übereinkünfte zustehen.
+                                     Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 35
+
+
+                                               Artikel 28
+                             Schranken für die Abkommensvergünstigungen
+
+(1) Dieses Abkommen ist nicht so auszulegen, als hindere es
+
+       a) einen Vertragsstaat, seine innerstaatlichen Rechtsvorschriften                    zur   Verhinderung      der
+          Steuerumgehung oder Steuerhinterziehung anzuwenden;
+
+       b) die Bundesrepublik Deutschland daran, die Beträge zu besteuern, die nach dem Vierten, Fünften
+          und Siebenten Teil des deutschen Außensteuergesetzes den Einkünften einer in der
+          Bundesrepublik Deutschland ansässigen Person zuzurechnen sind, oder das Königreich Spanien,
+          die Rechtsvorschriften über beherrschte ausländische Unternehmen nach Titel VII Kapitel XI des
+          spanischen Körperschaftsteuergesetzes („texto refundido de la Ley del Impuesto sobre sociedades,
+          aprobado por Real Decreto Legislativo 4/2004, del 5 de marzo“) anzuwenden.
+
+(2) Die Vergünstigungen nach diesem Abkommen werden Personen nicht gewährt, die nicht der
+Nutzungsberechtigte der aus dem anderen Vertragsstaat stammenden Einkünfte oder der dort gelegenen
+Vermögenswerte sind.
+
+(3) Führen die vorstehenden Bestimmungen zu einer Doppelbesteuerung, konsultieren die zuständigen
+Behörden einander nach Artikel 24 Absatz 3, wie die Doppelbesteuerung zu vermeiden ist.
+
+    Der folgende Artikel 10 Absätze 1 bis 3 des BEPS-MLI ist anzuwenden und geht den Bestimmungen dieses
+    Abkommens vor:6
+
+      ARTIKEL 10 BEPS-MLI – VORSCHRIFT ZUR MISSBRAUCHSBEKÄMPFUNG FÜR IN
+           DRITTSTAATEN ODER -GEBIETEN GELEGENE BETRIEBSSTÄTTEN
+    (1) Wenn
+
+        a) ein Unternehmen eines Vertragsstaats Einkünfte aus dem anderen Vertragsstaat bezieht und der
+           erstgenannte Vertragsstaat diese Einkünfte als Einkünfte betrachtet, die einer in einem Drittstaat
+           oder -gebiet gelegenen Betriebsstätte des Unternehmens zugerechnet werden können, sowie
+
+        b) die Gewinne, die dieser Betriebsstätte zugerechnet werden können, im erstgenannten Vertragsstaat
+           von der Steuer befreit sind,
+
+    gelten die Vergünstigungen dieses Abkommens nicht für Einkünfte, auf die im Drittstaat oder -gebiet
+    weniger als 60 Prozent der Steuer erhoben wird, die im erstgenannten Vertragsstaat von diesen Einkünften
+    erhoben würde, wenn diese Betriebsstätte im erstgenannten Vertragsstaat gelegen wäre. In diesem Fall
+    können Einkünfte, für die dieser Absatz gilt, ungeachtet der sonstigen Bestimmungen dieses Abkommens
+    weiterhin nach dem innerstaatlichen Recht des anderen Vertragsstaats besteuert werden.
+
+    (2) Absatz 1 gilt nicht, wenn die in Absatz 1 beschriebenen Einkünfte aus dem anderen Vertragsstaat im
+    Zusammenhang mit einer durch die Betriebsstätte aktiv ausgeübten Geschäftstätigkeit bezogen werden
+    oder mit einer solchen Geschäftstätigkeit verbunden sind (mit Ausnahme der Vornahme, der Verwaltung
+    oder des bloßen Besitzes von Kapitalanlagen für eigene Rechnung des Unternehmens, es sei denn, es
+
+
+6
+    Wirksam ab dem 1. Januar 2025.
+                                     Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 36
+
+
+    handelt sich dabei um Bank-, Versicherungs- oder Wertpapiergeschäfte einer Bank, eines
+    Versicherungsunternehmens beziehungsweise eines zugelassenen Wertpapierhändlers).
+
+    (3) Werden Vergünstigungen nach diesem Abkommen in Bezug auf bestimmte Einkünfte einer in einem
+    Vertragsstaat ansässigen Person aufgrund des Absatzes 1 versagt, so kann die zuständige Behörde des
+    anderen Vertragsstaats diese Vergünstigungen gleichwohl für diese Einkünfte gewähren, wenn diese
+    zuständige Behörde auf einen Antrag dieser ansässigen Person hin feststellt, dass die Gewährung dieser
+    Vergünstigungen angesichts der Gründe, aus denen diese ansässige Person die Voraussetzungen der
+    Absätze 1 und 2 nicht erfüllt hat, gerechtfertigt ist. Die zuständige Behörde des Vertragsstaats, bei der eine
+    im anderen Vertragsstaat ansässige Person nach Satz 1 einen Antrag gestellt hat, konsultiert die zuständige
+    Behörde des anderen Vertragsstaats, bevor sie dem Antrag stattgibt oder ihn ablehnt.
+
+
+
+    Der folgende Artikel 7 Absatz 1 des BEPS-MLI ist anzuwenden und geht den Bestimmungen dieses
+    Abkommens vor:7
+
+           ARTIKEL 7 BEPS-MLI – VERHINDERUNG VON ABKOMMENSMISSBRAUCH
+    Ungeachtet dieses Abkommens wird eine Vergünstigung nach diesem Abkommen nicht für bestimmte
+    Einkünfte oder Vermögenswerte gewährt, wenn unter Berücksichtigung aller maßgeblichen Tatsachen und
+    Umstände die Feststellung gerechtfertigt ist, dass der Erhalt dieser Vergünstigung einer der Hauptzwecke
+    einer Gestaltung oder Transaktion war, die unmittelbar oder mittelbar zu dieser Vergünstigung geführt hat,
+    es sei denn, es wird nachgewiesen, dass die Gewährung dieser Vergünstigung unter diesen Umständen mit
+    dem Ziel und Zweck der einschlägigen Bestimmungen dieses Abkommens im Einklang steht.
+
+
+
+
+                                                   Artikel 29
+                                                   Protokoll
+
+Das angefügte Protokoll ist Bestandteil dieses Abkommens.
+
+
+
+                                                   Artikel 30
+                                                 Inkrafttreten
+
+(1) Dieses Abkommen bedarf der Ratifikation; die Ratifikationsurkunden werden so bald wie möglich in
+Berlin ausgetauscht.
+
+(2) Das Abkommen tritt nach einem Zeitraum von drei Monaten ab dem Tag des Austausches der
+Ratifikationsurkunden in Kraft und ist anzuwenden
+
+       a) bei den im Abzugsweg erhobenen Steuern auf die Beträge, die am oder nach dem 1. Januar des
+          Kalenderjahrs gezahlt werden, das dem Jahr folgt, in dem das Abkommen in Kraft getreten ist;
+
+
+
+7
+    Wirksam ab dem 1. Januar 2025.
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 37
+
+
+    b) bei den übrigen Steuern auf die Steuern, die für Zeiträume ab dem 1. Januar des Kalenderjahrs
+       erhoben werden, das dem Jahr folgt, in dem das Abkommen in Kraft getreten ist.
+
+(3) Mit dem Inkrafttreten dieses Abkommens tritt das am 5. Dezember 1966 in Bonn unterzeichnete
+Abkommen zwischen der Bundesrepublik Deutschland und dem Spanischen Staat zur Vermeidung der
+Doppelbesteuerung und zur Verhinderung der Steuerverkürzung bei den Steuern vom Einkommen und
+vom Vermögen hinsichtlich der Steuern außer Kraft, die nach Absatz 2 unter das vorliegende Abkommen
+fallen.
+
+(4) Ungeachtet der Bestimmungen dieses Artikels gelten die Artikel 23, 24, 25, 26 und 28 dieses
+Abkommens für alle in diesen Artikeln bezeichneten Steuern, Verständigungsverfahren, Informationen
+oder Steueransprüche, auch wenn diese Informationen, Steuern oder Steueransprüche dem Inkrafttreten
+dieses Abkommens oder dem Wirksamwerden einer seiner Bestimmungen zeitlich vorausgehen.
+
+
+
+                                          Artikel 31
+                                          Kündigung
+
+Das Abkommen bleibt in Kraft, solange es nicht von einem der Vertragsstaaten gekündigt wird. Nach
+Ablauf von fünf Jahren, vom Tag seines Inkrafttretens an gerechnet, kann jeder Vertragsstaat das
+Abkommen mit einer Frist von sechs Monaten zum Ablauf eines jeden Kalenderjahrs auf diplomatischem
+Weg schriftlich kündigen. In diesem Fall ist das Abkommen nicht mehr anzuwenden:
+
+    a) bei den im Abzugsweg erhobenen Steuern auf die Beträge, die am oder nach dem 1. Januar des
+       Kalenderjahrs gezahlt werden, das dem Kündigungsjahr folgt;
+
+    b) bei den übrigen Steuern auf die Steuern, die für Zeiträume ab dem 1. Januar des Kalenderjahrs
+       erhoben werden, das dem Kündigungsjahr folgt.
+
+Die Kündigung gilt als an dem Tag durch einen Vertragsstaat ausgesprochen, an dem der andere
+Vertragsstaat sie erhält.
+
+
+
+                                          Artikel 32
+                                         Registrierung
+
+Die Registrierung dieses Abkommens beim Sekretariat der Vereinten Nationen nach Artikel 102 der Charta
+der Vereinten Nationen wird unmittelbar nach seinem Inkrafttreten von dem Vertragsstaat veranlasst, in
+dem das Abkommen unterzeichnet wurde. Der andere Vertragsstaat wird unter Angabe der VN-
+Registrierungsnummer über die erfolgte Registrierung unterrichtet, sobald die Bestätigung des Sekretariats
+der Vereinten Nationen vorliegt.
+
+Zu Urkund dessen haben die hierzu gehörig befugten Unterzeichneten dieses Abkommen unterzeichnet.
+
+Geschehen zu Madrid am 3. Februar 2011 in zwei Urschriften, jede in deutscher und spanischer Sprache,
+wobei jeder Wortlaut gleichermaßen verbindlich ist. Bei unterschiedlicher Auslegung der beiden Wortlaute
+werden diese gemäß dem Verfahren nach Artikel 24 dieses Abkommens behoben.
+Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 38
+
+
+    Für die Bundesrepublik Deutschland
+    Por la República Federal de Alemania
+
+                    Neisinger
+                    Schäuble
+
+          Für das Königreich Spanien
+            Por el Reino de España
+
+                 Elena Salgado
+                             Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 39
+
+
+                                     Protokoll
+                                 zum Abkommen
+                    zwischen der Bundesrepublik Deutschland
+                           und dem Königreich Spanien
+                     zur Vermeidung der Doppelbesteuerung
+                   und zur Verhinderung der Steuerverkürzung
+          auf dem Gebiet der Steuern vom Einkommen und vom Vermögen
+
+
+
+
+Anlässlich der Unterzeichnung des Abkommens zwischen der Bundesrepublik Deutschland und dem
+Königreich Spanien zur Vermeidung der Doppelbesteuerung und zur Verhinderung der Steuerverkürzung
+auf dem Gebiet der Steuern vom Einkommen und vom Vermögen haben die Unterzeichneten die
+nachstehenden Bestimmungen vereinbart, die Bestandteil des Abkommens sind:
+
+I. Zu den Artikeln 4 und 24:
+
+Wenn ein Investmentvermögen („Collective Investment Vehicle“) nicht als ansässige Person nach
+Artikel 4 gelten kann, können die beiden zuständigen Behörden in gegenseitigem Einvernehmen die
+Anspruchsvoraussetzungen für die Abkommensvergünstigungen festlegen.
+
+II. Zu Artikel 4:
+
+Die Artikel 4 und 6 bis 21 dieses Abkommens gelten nicht für spanische Steuerpflichtige, die sich für die
+Besteuerung nach dem Steuerrecht für Nichtansässige gemäß Artikel 93 des spanischen
+Einkommensteuergesetzes für natürliche Personen („Ley 35/2006, del 28 de noviembre, del Impuesto
+sobre la Renta de las Personas Físicas y de modificación parcial de las Leyes de los Impuestos sobre
+Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio“) entschieden haben. Das Gleiche
+würde für den Fall gelten, dass Deutschland eine ähnliche Regelung einführt.
+
+III. Zu Artikel 7:
+
+Sobald die OECD einen neuen Artikel 7 verabschiedet hat, kommen beide Delegationen erneut
+zusammen, um die Anpassung dieses Artikels an den „Authorised OECD Approach“ zu prüfen.
+
+IV. Zu Artikel 8:
+
+Artikel 8 Absatz 3 wird entsprechend den Textziffern 5 und 9 des Kommentars zu Artikel 8 des OECD-
+Musterabkommens zur Vermeidung der Doppelbesteuerung auf dem Gebiet der Steuern vom
+Einkommen und vom Vermögen ausgelegt.
+
+V. Zu den Artikeln 10 und 11:
+
+Ungeachtet der Artikel 10 und 11 können Dividenden und Zinsen in dem Vertragsstaat, aus dem sie
+stammen, nach dem Recht dieses Staates besteuert werden, wenn sie
+
+    a) auf Rechten oder Forderungen mit Gewinnbeteiligung, einschließlich der Einkünfte aus
+       Genussrechten oder Genussscheinen, der Einkünfte eines stillen Gesellschafters aus seiner
+                              Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 40
+
+
+        Beteiligung als stiller Gesellschafter oder der Einkünfte aus einem partiarischen Darlehen oder
+        aus Gewinnobligationen, beruhen und
+
+    b) bei der Ermittlung der Gewinne des Schuldners der Einkünfte abzugsfähig sind,
+
+die Steuer darf aber, wenn der Nutzungsberechtigte im anderen Vertragsstaat ansässig ist, 15 vom
+Hundert des Bruttobetrags der Dividenden und Zinsen nicht übersteigen.
+
+VI. Zu Artikel 17 Absatz 2:
+
+Das „Ereignis“ gilt als an dem Tag eingetreten, an dem die Person, die Anspruch auf die Leistungen hat,
+erstmals die Zahlung erhält.
+
+VII. Zu Artikel 17 Absatz 3:
+
+Auf Seiten Deutschlands bezieht sich der Ausdruck „geförderte Beiträge“ auf die folgenden staatlich
+geförderten Altersvorsorgebeiträge:
+
+    a) Altersvorsorgebeiträge im Sinne des Altersvorsorgeverträge Zertifizierungsgesetzes sowie des
+       § 82 Absatz 2 Einkommensteuergesetz und
+
+    b) Altersvorsorgebeiträge an Altersvorsorgesysteme nach dem Ersten Abschnitt des Ersten Teils
+       des Betriebsrentengesetzes (BetrAVG). Hierbei handelt es sich um Pensionskassen nach § 1b
+       Absatz 3 BetrAVG, Pensionsfonds nach § 1b Absatz 3 BetrAVG, Direktversicherungen nach
+       § 1b Absatz 2 Satz 1 BetrAVG, Unterstützungskassen nach § 1b Absatz 4 BetrAVG sowie
+       unmittelbar vom Arbeitgeber eingeführte Altersvorsorgesysteme (Direktzusagen) nach § 1
+       BetrAVG.
+
+VIII. Zu den Artikeln 17 und 25:
+
+Die Umsetzung von Artikel 17 Absätze 2 und 3 erfordert die Einrichtung eines Verfahrens für den
+Austausch von Informationen über Ruhegehälter und Renten, die jeder Vertragsstaat an im anderen
+Vertragsstaat ansässige Personen leistet. Die ausgetauschten Informationen umfassen alle zur
+Identifizierung des Zahlungsempfängers erforderlichen Angaben (z. B. Steuernummer, Name,
+Geburtsdatum, Wohnsitz) sowie Angaben zu den gezahlten Beträgen und zum Altersvorsorgesystem, für
+das diese gezahlt werden. Die besonderen Anforderungen dieses Verfahrens werden mithilfe des in
+Artikel 24 Absatz 3 bezeichneten Verfahrens (Schriftwechsel) vereinbart, um die Anwendung von
+Artikel 17 Absätze 2 und 3 zu ermöglichen.
+
+IX. Zu den Artikeln 18 und 30:
+
+Artikel 18 gilt für Vergütungen an Ortskräfte diplomatischer Missionen, konsularischer Vertretungen,
+des Instituto Cervantes und des Goethe-Instituts, die zum Zeitpunkt des Inkrafttretens dieses
+Abkommens dort bereits Dienste leisteten, sofern sie sich nicht für die bereits angewendeten Regelungen
+des am 5. Dezember 1966 in Bonn unterzeichneten Abkommens zur Vermeidung der Doppelbesteuerung
+und zur Verhinderung der Steuerverkürzung auf dem Gebiet der Steuern vom Einkommen und vom
+Vermögen entscheiden. Diese Wahlmöglichkeit kann innerhalb der ersten sechs Monate ab Inkrafttreten
+dieses Abkommens einmal wahrgenommen werden.
+                            Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 41
+
+
+X. Zu Artikel 25:
+
+Soweit nach Artikel 25 personenbezogene Daten übermittelt werden, gelten ergänzend die nachfolgenden
+Bestimmungen:
+
+   a) Allgemein ist die Verwendung der Informationen – abgesehen von den Einschränkungen nach
+      Artikel 25 Absatz 2 – nicht eingeschränkt. Nur in außergewöhnlichen Fällen kann die
+      übermittelnde Stelle für die Verwendung der Informationen bestimmte Einschränkungen
+      festlegen. Diese Einschränkungen dürfen von der übermittelnden Stelle nur auferlegt werden,
+      wenn dem konkreten Ersuchen ohne diese Einschränkungen nicht entsprochen werden kann. Die
+      empfangende Stelle wird über geänderte Gegebenheiten so schnell wie möglich unterrichtet.
+
+   b) Die übermittelnde Stelle ist verpflichtet, auf die Richtigkeit der zu übermittelnden Daten und ihre
+      voraussichtliche Erheblichkeit im Sinne des Artikels 25 Absatz 1 Satz 1 und Verhältnismäßigkeit
+      in Bezug auf den mit der Übermittlung verfolgten Zweck zu achten. Voraussichtlich erheblich
+      sind die Daten, wenn im konkreten Fall die ernstliche Möglichkeit besteht, dass der andere
+      Vertragsstaat ein Besteuerungsrecht hat und keine Anhaltspunkte dafür vorliegen, dass die Daten
+      der zuständigen Behörde des anderen Vertragsstaats bereits bekannt sind oder dass die
+      zuständige Behörde des anderen Vertragsstaats ohne die Auskunft von dem Gegenstand des
+      Besteuerungsrechts Kenntnis erlangt. Erweist sich, dass unrichtige Daten oder Daten, die nicht
+      übermittelt werden durften, übermittelt worden sind, so ist dies der empfangenden Stelle
+      unverzüglich mitzuteilen. Diese ist verpflichtet, die Berichtigung oder Löschung dieser Daten
+      gemäß der umgesetzten Richtlinie 95/46/EG vorzunehmen. Sind Daten ohne Ersuchen
+      übermittelt worden, hat die empfangende Stelle unverzüglich zu prüfen, ob die Daten für den
+      Zweck erforderlich sind, für den sie übermittelt worden sind; nicht benötigte Daten hat sie
+      unverzüglich zu löschen.
+
+   c) Die empfangende Stelle unterrichtet den Betroffenen gemäß ihren innerstaatlichen
+      Rechtsvorschriften über die Datenerhebung bei der übermittelnden Stelle; es sei denn, dass die
+      Daten ohne Ersuchen übermittelt wurden. Die Unterrichtung kann unterbleiben, sofern und
+      solange insgesamt davon ausgegangen wird, dass das öffentliche Interesse an der
+      Nichtunterrichtung des Betroffenen gegenüber seinem Informationsinteresse überwiegt.
+
+   d) Dem Betroffenen ist auf Antrag über die zu seiner Person übermittelten Daten sowie über den
+      vorgesehenen Verwendungszweck gemäß den innerstaatlichen Rechtsvorschriften des
+      übermittelnden Vertragsstaats Auskunft zu erteilen. Buchstabe c Satz 2 gilt entsprechend.
+
+   e) Die übermittelnde und die empfangende Stelle sind verpflichtet, die Übermittlung und den
+      Empfang von personenbezogenen Daten aktenkundig zu machen.
+
+   f) Soweit das für die übermittelnde Stelle geltende innerstaatliche Recht in Bezug auf die
+      übermittelten personenbezogenen Daten besondere Löschungsvorschriften vorsieht, weist diese
+      Stelle die empfangende Stelle darauf hin. In jedem Fall können die übermittelten
+      personenbezogenen Daten nach der umgesetzten Richtlinie 95/46/EG gelöscht werden, sobald
+      sie für den Zweck, für den sie übermittelt worden sind, nicht mehr erforderlich sind.
+
+XI. Verfahrensregeln für die Quellenbesteuerung:
+
+   1. Die zuständigen Behörden können in gegenseitigem Einvernehmen die Bestimmungen über die
+      Entlastung von der Quellenbesteuerung regeln und gegebenenfalls andere Verfahren zur
+                            Synthetisierter Text des BEPS-MLI und des Abkommens mit dem Königreich Spanien │ 42
+
+
+       Durchführung der im Abkommen vorgesehenen Steuerermäßigungen oder -befreiungen
+       festlegen.
+
+   2. Der Vertragsstaat, aus dem die Einkünfte stammen, fordert eine von der zuständigen Behörde
+      des anderen Vertragsstaats ausgestellte Bescheinigung über die Ansässigkeit im Sinne des
+      Abkommens an.
+
+   3. Für die Zwecke von Artikel 4 hat jede Person, die über eine von der zuständigen Behörde eines
+      Vertragsstaats ausgestellte Ansässigkeitsbescheinigung im Sinne dieses Abkommens verfügt,
+      Anspruch auf die Abkommensvergünstigungen. Diese Bestimmung gilt auch für (nach
+      spanischem Recht errichtete) „Sociedades Colectivas“, deren Anteilseigner nicht in Deutschland
+      ansässig sind. Befinden sich unter den Anteilseignern in Deutschland ansässige Personen, sollte
+      die „Sociedad Colectiva“ das Abkommen nur auf die Einkünfte anwenden können, die nicht als
+      einer in Deutschland ansässigen Person zuzurechnen gelten.
+
+
+
+Geschehen zu Madrid am 3. Februar 2011 in zwei Urschriften, jede in deutscher und spanischer Sprache,
+wobei jeder Wortlaut gleichermaßen verbindlich ist. Bei unterschiedlicher Auslegung der beiden
+Wortlaute werden diese gemäß dem Verfahren nach Artikel 24 dieses Abkommens behoben.
+
+
+
+                                Für die Bundesrepublik Deutschland
+                                Por la República Federal de Alemania
+
+                                                Neisinger
+                                                Schäuble
+
+                                      Für das Königreich Spanien
+                                        Por el Reino de España
+
+                                             Elena Salgado
+

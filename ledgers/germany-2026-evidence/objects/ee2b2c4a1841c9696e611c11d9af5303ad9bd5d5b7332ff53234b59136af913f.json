@@ -1,0 +1,13 @@
+{
+  "slug": "germany-transfer-pricing",
+  "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-transfer-pricing.md",
+  "Guide_sha256": "e0fb36c2e05112e253ac55ce2bd1079fe537dfaac9638c662e7f7fca68fe5783",
+  "bytes": 67075,
+  "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R61-TP-CbCR-writer-successor-2026-10-29/ledgers/germany-transfer-pricing.md",
+  "ledger_sha256": "3236c3f7e39e66871cab14dac6c67fd45e75eb016c5967d0a566b52d6f36441d",
+  "current_rows": 316,
+  "prior_current_rows": 316,
+  "old_topics": 398,
+  "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/germany-transfer-pricing.md",
+  "prior_ledger_sha256": "c806f7fdc09984616d06150dfc7ce6db6ad3554d6cd2f7ada5949a1c444b4895"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "U64cf9e0c4b718812",
+  "url": "https://www.gesetze-im-internet.de/hgb/__342b.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U64cf9e0c4b718812.body",
+  "raw_sha256": "f4467378d90e26a02dd19a981113628ead792cdba735019dd671e92c4d03c08c",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U64cf9e0c4b718812.reader.txt",
+  "reader_sha256": "62f6a39120733c7f41f38ffd45209dedbad990eed8187470e7247e8a5c9a6e89",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

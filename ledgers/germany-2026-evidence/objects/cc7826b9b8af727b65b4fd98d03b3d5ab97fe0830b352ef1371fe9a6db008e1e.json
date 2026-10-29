@@ -1,0 +1,11 @@
+{
+  "id": "U8f4dc5ec19db43f2",
+  "url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_kst_2025",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8f4dc5ec19db43f2.body",
+  "raw_sha256": "6760b814d371ece81055ba8349f8c2b443baf46cbcd5eb15f2717e8d89aaae34",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8f4dc5ec19db43f2.reader.txt",
+  "reader_sha256": "f62c083ca5ae631f162ca219c99f70697824e1a797976f4ef30fc90df298a226",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

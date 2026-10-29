@@ -1,0 +1,11 @@
+{
+  "Guide_sha256": "c5c04619f56e19802ef8141885a11a4d3a555720bf8f95d2c988fd9aed84adb1",
+  "schema_errors": [],
+  "schema_warnings": [],
+  "oa_blocks": 2,
+  "oa_failures": [],
+  "scoped_diff_returncode": 0,
+  "scoped_diff_output": "",
+  "actual_initial_failure": "First scoped validator import raised ModuleNotFoundError: yaml; corrected only Python module search path to existing localPyYAML, no Guide change.",
+  "scope": "One current Guide only; writer technical checks, not independent tax review."
+}

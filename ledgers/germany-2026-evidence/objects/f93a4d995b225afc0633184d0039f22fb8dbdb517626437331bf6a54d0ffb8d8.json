@@ -1,0 +1,11 @@
+{
+  "id": "U1db70f7b5e6ca0ae",
+  "url": "https://www.gesetze-im-internet.de/ksttg/__21.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1db70f7b5e6ca0ae.body",
+  "raw_sha256": "86f28b0789691393507efebd35b762bd17ff069198f18ad656d6f02889415864",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1db70f7b5e6ca0ae.reader.txt",
+  "reader_sha256": "7ae4f0b12d07fb8f0382611742abd3e934820ed7d92ec5f51d7980452348a82d",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

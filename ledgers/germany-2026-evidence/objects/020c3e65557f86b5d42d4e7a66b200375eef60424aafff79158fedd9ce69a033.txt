@@ -1,0 +1,16 @@
+§ 4 ERechV - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Verordnung über die elektronische Rechnungsstellung im öffentlichen Auftragswesen des Bundes (E-Rechnungsverordnung - ERechV)
+§ 4 Anforderungen an das Rechnungsdatenmodell und an die Übermittlung
+(1) Für die Ausstellung von elektronischen Rechnungen haben Rechnungssteller und Rechnungssender grundsätzlich den Datenaustauschstandard XRechnung vom 29. September 2017 (BAnz AT 10.10.2017 B1) in der jeweils aktuellen Fassung zu verwenden. Es kann auch ein anderer Datenaustauschstandard verwendet werden, wenn er den Anforderungen der europäischen Norm für die elektronische Rechnungsstellung entspricht.
+(2) Änderungen des Datenaustauschstandards XRechnung werden vom Bundesministerium des Innern, für Bau und Heimat im Bundesanzeiger bekannt gemacht. Bei jeder Änderung/Bekanntmachung ist das Herausgabedatum der Änderung/Bekanntmachung anzugeben und das Datum, ab dem der geänderte Datenaustauschstandard XRechnung anzuwenden ist.
+(3) Für die Übermittlung von elektronischen Rechnungen haben Rechnungssteller und Rechnungssender ein Verwaltungsportal des Bundes im Sinne von § 2 Absatz 2 des Onlinezugangsgesetzes zu nutzen. Voraussetzung für die Übermittlung einer elektronischen Rechnung ist, dass der Rechnungssteller oder Rechnungssender sich zuvor mit einem Nutzerkonto im Sinne von § 2 Absatz 5 des Onlinezugangsgesetzes registriert. Elektronische Rechnungen, die über das Verwaltungsportal übermittelt werden, sind automationsunterstützt auf ihre formale Fehlerlosigkeit zu prüfen. Sobald die ordnungsgemäße Übermittlung einer elektronischen Rechnung festgestellt ist, ist der Rechnungssteller oder der Rechnungssender automationsunterstützt davon zu benachrichtigen. Eine formal fehlerhafte elektronische Rechnung ist automationsunterstützt abzulehnen. In diesem Fall ist der Rechnungssteller oder der Rechnungssender über die Ablehnung zu informieren.
+(4) Erhält ein Rechnungsempfänger eine elektronische Rechnung, die keinem Nutzerkonto zugeordnet werden kann, so hat der Rechnungsempfänger die elektronische Rechnung abzulehnen. In diesem Fall erhalten die Rechnungssteller oder die Rechnungssender keine Information über die Ablehnung.
+(5) Die Verpflichtungen nach den Absätzen 1 bis 4 gelten nicht für die Übermittlung von elektronischen Rechnungen, die in Verfahren der Organleihe nach § 159 Absatz 1 Nummer 5 des Gesetzes gegen Wettbewerbsbeschränkungen auszustellen sind.
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

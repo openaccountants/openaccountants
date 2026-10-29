@@ -1,0 +1,76 @@
+{
+  "finding": "DE-B10",
+  "Guide_sha256": "c5c04619f56e19802ef8141885a11a4d3a555720bf8f95d2c988fd9aed84adb1",
+  "exact_before": [
+    "- Pension: pay up to EUR 101,400 x 9.3%, unless not in the statutory scheme (PAP marker KRV = 1).",
+    "**Other PAP inputs that change the result:** ALV (0 insured / 1 not), KRV, PKV (0 statutory, 1 private), KVZ (the fund's full additional rate), PVZ (1 = childless surcharge), PVA (number of reductions, 0 to 4), PVS (1 = place of employment in Saxony)."
+  ],
+  "options": [
+    {
+      "label": "A recommended narrow restoration",
+      "exact_after": [
+        "- Pension: pay up to EUR 101,400 x 9.3% for employees compulsorily insured in the statutory pension scheme or exempt under § 6(1) no. 1 SGB VI for a professional pension scheme ([§ 39b(2) sentence 5 no. 3(a) EStG](https://www.gesetze-im-internet.de/estg/__39b.html)). Apply the PAP marker KRV: 0 for compulsory cover in the statutory or a professional pension scheme, or voluntary cover after exemption from compulsory insurance; 1 otherwise.",
+        "**Other PAP inputs that change the result:** ALV (0 insured / 1 not), KRV (0 for the qualifying pension-cover branches just described, 1 otherwise), PKV (0 statutory, 1 private), KVZ (the fund's full additional rate), PVZ (1 = childless surcharge), PVA (number of reductions, 0 to 4), PVS (1 = place of employment in Saxony)."
+      ],
+      "reason": "Restore the omitted professional-scheme branch and identify the actual PAP marker, leaving all arithmetic unchanged."
+    },
+    {
+      "label": "B shorter marker-only route",
+      "exact_after": [
+        "- Pension: pay up to EUR 101,400 x 9.3%, where the actual PAP KRV marker is 0; its definition includes qualifying professional-scheme cover.",
+        "**Other PAP inputs that change the result:** ALV (0 insured / 1 not), KRV, PKV (0 statutory, 1 private), KVZ (the fund's full additional rate), PVZ (1 = childless surcharge), PVA (number of reductions, 0 to 4), PVS (1 = place of employment in Saxony)."
+      ],
+      "reason": "Less explicit statutory exemption chain; not selected."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "DEB069",
+      "act_article": "EStG §39b(2)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__39b.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-39b-20261024.html",
+      "raw_sha256": "cbc9fd1bcceae68668abf399bd908e778b998713df9e904453801ba96b92bcf4",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB069.txt",
+      "reader_sha256": "75d0fc036bd274123322e48581d6e5c352e88a11a27c6a503d6f03bd781ef1bf",
+      "native_LF": [
+        7,
+        28
+      ],
+      "exact_quote": "(1) Bei unbeschränkt und beschränkt einkommensteuerpflichtigen Arbeitnehmern hat der Arbeitgeber den Lohnsteuerabzug nach Maßgabe der Absätze 2 bis 6 durchzuführen.\n(2) 1Für die Einbehaltung der Lohnsteuer vom laufenden Arbeitslohn hat der Arbeitgeber die Höhe des laufenden Arbeitslohns im Lohnzahlungszeitraum festzustellen und auf einen Jahresarbeitslohn hochzurechnen. 2Der Arbeitslohn eines monatlichen Lohnzahlungszeitraums ist mit zwölf, der Arbeitslohn eines wöchentlichen Lohnzahlungszeitraums mit 360/7 und der Arbeitslohn eines täglichen Lohnzahlungszeitraums mit 360 zu vervielfältigen. 3Von dem hochgerechneten Jahresarbeitslohn sind ein etwaiger Versorgungsfreibetrag (§ 19 Absatz 2) und Altersentlastungsbetrag (§ 24a) abzuziehen. 4Außerdem ist der hochgerechnete Jahresarbeitslohn um einen etwaigen als Lohnsteuerabzugsmerkmal für den Lohnzahlungszeitraum mitgeteilten Freibetrag (§ 39a Absatz 1) oder Hinzurechnungsbetrag (§ 39a Absatz 1 Satz 1 Nummer 7), vervielfältigt unter sinngemäßer Anwendung von Satz 2, zu vermindern oder zu erhöhen. 5Der so verminderte oder erhöhte hochgerechnete Jahresarbeitslohn, vermindert um 1.\nden Arbeitnehmer-Pauschbetrag (§ 9a Satz 1 Nummer 1 Buchstabe a) oder bei Versorgungsbezügen den Pauschbetrag (§ 9a Satz 1 Nummer 1 Buchstabe b) und den Zuschlag zum Versorgungsfreibetrag (§ 19 Absatz 2) in den Steuerklassen I bis V,\n2.\nden Sonderausgaben-Pauschbetrag (§ 10c Satz 1) in den Steuerklassen I bis V,\n3.\neine Vorsorgepauschale aus den Teilbeträgen a)\nfür die Rentenversicherung bei Arbeitnehmern, die in der gesetzlichen Rentenversicherung pflichtversichert oder von der gesetzlichen Rentenversicherung nach § 6 Absatz 1 Nummer 1 des Sechsten Buches Sozialgesetzbuch befreit sind, in den Steuerklassen I bis VI in Höhe des Betrags, der bezogen auf den Arbeitslohn 50 Prozent des Beitrags in der allgemeinen Rentenversicherung unter Berücksichtigung der jeweiligen Beitragsbemessungsgrenzen entspricht,\nb)\nfür die Krankenversicherung bei Arbeitnehmern, die in der gesetzlichen Krankenversicherung versichert sind, in den Steuerklassen I bis VI in Höhe des Betrags, der bezogen auf den Arbeitslohn unter Berücksichtigung der Beitragsbemessungsgrenze, den ermäßigten Beitragssatz (§ 243 des Fünften Buches Sozialgesetzbuch) und den Zusatzbeitragssatz der Krankenkasse (§ 242 des Fünften Buches Sozialgesetzbuch) dem Arbeitnehmeranteil eines pflichtversicherten Arbeitnehmers entspricht,\nc)\nfür die Pflegeversicherung bei Arbeitnehmern, die in der sozialen Pflegeversicherung versichert sind, in den Steuerklassen I bis VI in Höhe des Betrags, der bezogen auf den Arbeitslohn unter Berücksichtigung der Beitragsbemessungsgrenze und den bundeseinheitlichen Beitragssatz dem Arbeitnehmeranteil eines pflichtversicherten Arbeitnehmers entspricht, erhöht um den Beitragszuschlag und vermindert um die Abschläge des Arbeitnehmers nach § 55 Absatz 3 des Elften Buches Sozialgesetzbuch, wenn die Voraussetzungen dafür vorliegen,\nd)\nfür die Krankenversicherung und für die private Pflege-Pflichtversicherung bei Arbeitnehmern, die nicht unter die Buchstaben b und c fallen, in den Steuerklassen I bis V in Höhe der dem Arbeitgeber als Lohnsteuerabzugsmerkmal bereitgestellten Beiträge nach § 39 Absatz 4 Nummer 4 Buchstabe b, etwaig vervielfältigt unter sinngemäßer Anwendung von Satz 2 auf einen Jahresbetrag, vermindert um die nach § 3 Nummer 62 steuerfreien Zuschüsse, die unter Berücksichtigung der als Lohnsteuerabzugsmerkmal bereitgestellten Beiträge nach § 39 Absatz 4 Nummer 4 Buchstabe a ermittelt wurden;\ne)\nfür die Versicherung gegen Arbeitslosigkeit bei Arbeitnehmern, die in der Arbeitslosenversicherung (Drittes Buch Sozialgesetzbuch) versichert sind, in den Steuerklassen I bis V in Höhe des Betrags, der bezogen auf den Arbeitslohn unter Berücksichtigung der jeweiligen Beitragsbemessungsgrenze und den bundeseinheitlichen Beitragssatz, dem Arbeitnehmeranteil eines pflichtversicherten Arbeitnehmers entspricht; der Teilbetrag ist jedoch nur anzusetzen, soweit er zusammen mit den Teilbeträgen nach den Buchstaben b bis d einen Betrag in Höhe von 1 900 Euro nicht übersteigt;\nEntschädigungen im Sinne des § 24 Nummer 1 sind bei Anwendung der Buchstaben a bis c und e nicht zu berücksichtigen,\n4.\nden Entlastungsbetrag für Alleinerziehende für ein Kind (§ 24b Absatz 2 Satz 1) in der Steuerklasse II,\nergibt den zu versteuernden Jahresbetrag. 6Für den zu versteuernden Jahresbetrag ist die Jahreslohnsteuer in den Steuerklassen I, II und IV nach § 32a Absatz 1 sowie in der Steuerklasse III nach § 32a Absatz 5 zu berechnen. 7In den Steuerklassen V und VI ist die Jahreslohnsteuer zu berechnen, die sich aus dem Zweifachen des Unterschiedsbetrags zwischen dem Steuerbetrag für das Eineinviertelfache und dem Steuerbetrag für das Dreiviertelfache des zu versteuernden Jahresbetrags nach § 32a Absatz 1 ergibt; die Jahreslohnsteuer beträgt jedoch mindestens 14 Prozent des zu versteuernden Jahresbetrags, für den 14 071 Euro übersteigenden Teil des zu versteuernden Jahresbetrags höchstens 42 Prozent, für den 34 939 Euro übersteigenden Teil des zu versteuernden Jahresbetrags 42 Prozent und für den 222 260 Euro übersteigenden Teil des zu versteuernden Jahresbetrags 45 Prozent. 8Für die Lohnsteuerberechnung ist die als Lohnsteuerabzugsmerkmal mitgeteilte oder die nach § 39c Absatz 1 oder Absatz 2 oder nach § 39e Absatz 5a oder Absatz 6 Satz 8 anzuwendende Steuerklasse maßgebend. 9Die monatliche Lohnsteuer ist 1/12, die wöchentliche Lohnsteuer sind 7/360 und die tägliche Lohnsteuer ist 1/360 der Jahreslohnsteuer. 10Bruchteile eines Cents, die sich bei der Berechnung nach den Sätzen 2 und 9 ergeben, bleiben jeweils außer Ansatz. 11Die auf den Lohnzahlungszeitraum entfallende Lohnsteuer ist vom Arbeitslohn einzubehalten. 12Das Betriebsstättenfinanzamt kann allgemein oder auf Antrag zulassen, dass die Lohnsteuer unter den Voraussetzungen des § 42b Absatz 1 nach dem voraussichtlichen Jahresarbeitslohn ermittelt wird, wenn gewährleistet ist, dass die zutreffende Jahreslohnsteuer (§ 38a Absatz 2) nicht unterschritten wird. 13Darüber hinaus kann das Betriebsstättenfinanzamt auf Antrag zulassen, dass bei nach § 1 Absatz 1 unbeschränkt einkommensteuerpflichtigen Arbeitnehmern mit Steuerklasse VI und ohne Freibetrag nach § 39a, die bei dem Arbeitgeber gelegentlich, nicht regelmäßig wiederkehrend beschäftigt werden und deren Dauer der Beschäftigung 24 zusammenhängende Arbeitstage nicht übersteigt, der während der Beschäftigung erzielte Arbeitslohn auf einen Jahresbetrag hochgerechnet und die sich ergebende Lohnsteuer auf den Lohnabrechnungszeitraum zurückgerechnet wird, wobei als Lohnabrechnungszeitraum der Zeitraum vom Beginn des Kalenderjahres bis zum Ende der Beschäftigung gilt. 14Bei Anwendung des Satzes 13 sind auch der im Kalenderjahr in etwaigen vorangegangenen und beendeten weiteren Dienstverhältnissen in der Steuerklasse VI bezogene Arbeitslohn und die darauf erhobene Lohnsteuer einzubeziehen, soweit dort bereits Satz 13 angewandt wurde. 15Voraussetzung für die Anwendung des Verfahrens nach Satz 13 ist zudem, dass der Arbeitnehmer vor Aufnahme der Beschäftigung 1.\nunter Angabe seiner Identifikationsnummer gegenüber dem Arbeitgeber schriftlich zustimmt,\n2.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          28
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    {
+      "source_id": "DEB194",
+      "act_article": "BMF PAP2026 input KRV",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/pap-2026-anlage1-20261024.pdf",
+      "raw_sha256": "5da38acd544868ddcb0bc7f43030bd7d6ee9aa455dff0f42ad59732634e33a48",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB194.txt",
+      "reader_sha256": "104f46ddb0f117a903d18079766f1c6ffffeb872e5fa4a26319b33c48cee538e",
+      "native_LF": [
+        246,
+        254
+      ],
+      "exact_quote": " KRV                 Merker für die Vorsorgepauschale\n\n                     0 = der Arbeitnehmer ist in der gesetzlichen Rentenversicherung\n                     oder einer berufsständischen Versorgungseinrichtung\n                     pflichtversichert oder bei Befreiung von der Versicherungspflicht\n                     freiwillig versichert; es gilt die allgemeine\n                     Beitragsbemessungsgrenze\n\n                     1 = wenn nicht 0",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          246,
+          254
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    }
+  ],
+  "read_on": "2026-10-29",
+  "authorization": "Parent standing authority: save two sourced options then select narrow A in assigned Guide."
+}

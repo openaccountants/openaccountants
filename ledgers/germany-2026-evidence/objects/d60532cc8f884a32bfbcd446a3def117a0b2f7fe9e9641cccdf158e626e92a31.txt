@@ -1,0 +1,21 @@
+§ 20 SGB 4 - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Sozialgesetzbuch (SGB) Viertes Buch (IV) - Gemeinsame Vorschriften für die Sozialversicherung - (Artikel I des Gesetzes vom 23. Dezember 1976, BGBl. I S. 3845)
+§ 20 Aufbringung der Mittel, Übergangsbereich
+(1) Die Mittel der Sozialversicherung einschließlich der Arbeitsförderung werden nach Maßgabe der besonderen Vorschriften für die einzelnen Versicherungszweige durch Beiträge der Versicherten, der Arbeitgeber und Dritter, durch staatliche Zuschüsse und durch sonstige Einnahmen aufgebracht.
+(2) Der Übergangsbereich im Sinne dieses Gesetzbuches umfasst Arbeitsentgelte aus mehr als geringfügigen Beschäftigungen nach § 8 Absatz 1 Nummer 1, die regelmäßig 2 000 Euro im Monat nicht übersteigen; bei mehreren Beschäftigungsverhältnissen ist das insgesamt erzielte Arbeitsentgelt maßgebend.
+(2a) Bei Beschäftigten, deren monatliches Arbeitsentgelt aus einer mehr als geringfügigen Beschäftigung den oberen Grenzbetrag des Übergangsbereichs nach Absatz 2 nicht übersteigt, ist die beitragspflichtige Einnahme BE der Betrag in Euro, der sich nach folgender Formel berechnet:
+Dabei ist AE das Arbeitsentgelt in Euro, G die Geringfügigkeitsgrenze und F der Faktor, der sich berechnet, indem der Wert 28 Prozent geteilt wird durch den Gesamtsozialversicherungsbeitragssatz des Kalenderjahres, in dem der Anspruch auf das Arbeitsentgelt entstanden ist. Der Gesamtsozialversicherungsbeitragssatz eines Kalenderjahres ist die Summe der zum 1. Januar desselben Kalenderjahres geltenden Beitragssätze in der allgemeinen Rentenversicherung, in der sozialen Pflegeversicherung sowie zur Arbeitsförderung und des um den durchschnittlichen Zusatzbeitragssatz erhöhten allgemeinen Beitragssatzes in der gesetzlichen Krankenversicherung. Für die Zeit vom 1. Oktober 2022 bis zum 31. Dezember 2022 beträgt der Faktor F 0,7009. Der Gesamtsozialversicherungsbeitragssatz und der Faktor F sind vom Bundesministerium für Arbeit und Soziales bis zum 31. Dezember eines Jahres für das folgende Kalenderjahr im Bundesanzeiger bekannt zu geben. Zur Bestimmung des vom Arbeitnehmer zu tragenden Anteils am Sozialversicherungsbeitrag wird als beitragspflichtige Einnahme der Betrag zu Grunde gelegt, der sich nach folgender Formel berechnet:
+Dabei ist BE die beitragspflichtige Einnahme in Euro, AE das Arbeitsentgelt in Euro und G die Geringfügigkeitsgrenze. Die §§ 121 und 123 des Sechsten Buches sind anzuwenden. Die Sätze 1 und 6 gelten nicht für Personen, die zu ihrer Berufsausbildung beschäftigt sind.
+(3) Der Arbeitgeber trägt abweichend von den besonderen Vorschriften für Beschäftigte für die einzelnen Versicherungszweige den Gesamtsozialversicherungsbeitrag allein, wenn 1.
+Versicherte, die zu ihrer Berufsausbildung beschäftigt sind, ein Arbeitsentgelt erzielen, das auf den Monat bezogen 325 Euro nicht übersteigt, oder
+2.
+Versicherte ein freiwilliges soziales Jahr oder ein freiwilliges ökologisches Jahr im Sinne des Jugendfreiwilligendienstegesetzes oder einen Bundesfreiwilligendienst nach dem Bundesfreiwilligendienstgesetz leisten.
+Wird infolge einmalig gezahlten Arbeitsentgelts die in Satz 1 genannte Grenze überschritten, tragen die Versicherten und die Arbeitgeber den Gesamtsozialversicherungsbeitrag von dem diese Grenze übersteigenden Teil des Arbeitsentgelts jeweils zur Hälfte; in der gesetzlichen Krankenversicherung gilt dies nur für den um den Beitragsanteil, der allein vom Arbeitnehmer zu tragen ist, reduzierten Beitrag.
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

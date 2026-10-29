@@ -1,0 +1,28 @@
+[
+  {
+    "slug": "germany-payroll",
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-payroll.md",
+    "Guide_sha256": "9a8ed7d2d018e23e3644d6eb951d050765935dcff6bc8770bbde1832e5ee505e",
+    "bytes": 63097,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R62-R70-payroll-writer-successor-2026-10-29/ledgers/germany-payroll.md",
+    "ledger_sha256": "0fb4685ccd3295679b6ca70b6b58f9ca3b70c849251bcb6fb31afcb808374cac",
+    "rows": 346,
+    "prior_rows": 346,
+    "old_topics": 512,
+    "prior_ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/germany-payroll.md",
+    "prior_ledger_sha256": "903e61acde1a27b3106b7695838c1815fa528605ee6eb65d0fb4fca4b6f7a2a9"
+  },
+  {
+    "slug": "de-payroll",
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-payroll.md",
+    "Guide_sha256": "11679ea5289f51dbaac24b7547c80f4f00505622205d2b4da7d0acd71db05765",
+    "bytes": 55438,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R62-R70-payroll-writer-successor-2026-10-29/ledgers/de-payroll.md",
+    "ledger_sha256": "d5886b1a06a64e662efde14798cf5e8343cdf9700d8bead49a63be0705878070",
+    "rows": 138,
+    "prior_rows": 136,
+    "old_topics": 175,
+    "prior_ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/de-payroll.md",
+    "prior_ledger_sha256": "c45ff60d57c437829d766218667ff3f7f9ac6ed20aea5c2d72d330dc7ad2f604"
+  }
+]

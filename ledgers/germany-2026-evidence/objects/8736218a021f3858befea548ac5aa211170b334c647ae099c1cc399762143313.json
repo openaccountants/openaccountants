@@ -1,0 +1,611 @@
+{
+  "role": "writer, not independent review",
+  "controls": [
+    {
+      "id": "R23.incoming(30000, 40000, 80000, 90000, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Established continuing EU business; actual19(2)German and288EU turnover separately determined, number flag valid for Germany; no new-business simplification or crossing-supply computation inferred.",
+      "pass": true
+    },
+    {
+      "id": "R23.incoming(25000, 40000, 80000, 90000, True)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Established continuing EU business; actual19(2)German and288EU turnover separately determined, number flag valid for Germany; no new-business simplification or crossing-supply computation inferred.",
+      "pass": true
+    },
+    {
+      "id": "R23.incoming(25000, 100000, 100000, 100000, True)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Established continuing EU business; actual19(2)German and288EU turnover separately determined, number flag valid for Germany; no new-business simplification or crossing-supply computation inferred.",
+      "pass": true
+    },
+    {
+      "id": "R23.incoming(25000, '100000.01', 100000, '100000.01', True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Established continuing EU business; actual19(2)German and288EU turnover separately determined, number flag valid for Germany; no new-business simplification or crossing-supply computation inferred.",
+      "pass": true
+    },
+    {
+      "id": "R23.incoming(25000, 40000, '100000.01', 90000, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Established continuing EU business; actual19(2)German and288EU turnover separately determined, number flag valid for Germany; no new-business simplification or crossing-supply computation inferred.",
+      "pass": true
+    },
+    {
+      "id": "R23.incoming(25000, 40000, 80000, 90000, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Established continuing EU business; actual19(2)German and288EU turnover separately determined, number flag valid for Germany; no new-business simplification or crossing-supply computation inferred.",
+      "pass": true
+    },
+    {
+      "id": "R23.outgoing(True, False, True)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual German establishment and prior/currentEUturnover gates stipulated met. Host means actual host exemption conditions; duplicate means19a(1)no4 procedure registration, not a ban on multiple qualifying host exemptions.",
+      "pass": true
+    },
+    {
+      "id": "R23.outgoing(False, False, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual German establishment and prior/currentEUturnover gates stipulated met. Host means actual host exemption conditions; duplicate means19a(1)no4 procedure registration, not a ban on multiple qualifying host exemptions.",
+      "pass": true
+    },
+    {
+      "id": "R23.outgoing(True, True, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual German establishment and prior/currentEUturnover gates stipulated met. Host means actual host exemption conditions; duplicate means19a(1)no4 procedure registration, not a ban on multiple qualifying host exemptions.",
+      "pass": true
+    },
+    {
+      "id": "R23.outgoing(True, False, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual German establishment and prior/currentEUturnover gates stipulated met. Host means actual host exemption conditions; duplicate means19a(1)no4 procedure registration, not a ban on multiple qualifying host exemptions.",
+      "pass": true
+    },
+    {
+      "id": "R24.receipts('no1', False)",
+      "actual": "0",
+      "expected": "0",
+      "premise": "30000receipts, no fixed-asset sale. Category independently classified under exact19(2); no2financial/insuranceexemption remains separate from threshold exclusion. No numerical ancillary test invented.",
+      "pass": true
+    },
+    {
+      "id": "R24.receipts('no2', False)",
+      "actual": "30000",
+      "expected": "30000",
+      "premise": "30000receipts, no fixed-asset sale. Category independently classified under exact19(2); no2financial/insuranceexemption remains separate from threshold exclusion. No numerical ancillary test invented.",
+      "pass": true
+    },
+    {
+      "id": "R24.receipts('no2', True)",
+      "actual": "0",
+      "expected": "0",
+      "premise": "30000receipts, no fixed-asset sale. Category independently classified under exact19(2); no2financial/insuranceexemption remains separate from threshold exclusion. No numerical ancillary test invented.",
+      "pass": true
+    },
+    {
+      "id": "R24.receipts('ordinary-taxable', False)",
+      "actual": "30000",
+      "expected": "30000",
+      "premise": "30000receipts, no fixed-asset sale. Category independently classified under exact19(2); no2financial/insuranceexemption remains separate from threshold exclusion. No numerical ancillary test invented.",
+      "pass": true
+    },
+    {
+      "id": "R25.disposal(True, True, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual15a(8)classification only; originally fully taxable/samebasis sale does not automatically change use. Other independent changes/simplifications/remaining-period calculation must still be checked.",
+      "pass": true
+    },
+    {
+      "id": "R25.disposal(True, True, True, True)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual15a(8)classification only; originally fully taxable/samebasis sale does not automatically change use. Other independent changes/simplifications/remaining-period calculation must still be checked.",
+      "pass": true
+    },
+    {
+      "id": "R25.disposal(True, True, False, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual15a(8)classification only; originally fully taxable/samebasis sale does not automatically change use. Other independent changes/simplifications/remaining-period calculation must still be checked.",
+      "pass": true
+    },
+    {
+      "id": "R25.disposal(False, True, True, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual15a(8)classification only; originally fully taxable/samebasis sale does not automatically change use. Other independent changes/simplifications/remaining-period calculation must still be checked.",
+      "pass": true
+    },
+    {
+      "id": "R25.disposal(True, False, True, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual15a(8)classification only; originally fully taxable/samebasis sale does not automatically change use. Other independent changes/simplifications/remaining-period calculation must still be checked.",
+      "pass": true
+    },
+    {
+      "id": "R25.inclusive999.99",
+      "actual": "True",
+      "expected": "True",
+      "premise": "InputVATattributabletoacquisition/productioncost; only44(1)inclusive simplification tested, not all adjustment gates.",
+      "pass": true
+    },
+    {
+      "id": "R25.inclusive1000",
+      "actual": "True",
+      "expected": "True",
+      "premise": "InputVATattributabletoacquisition/productioncost; only44(1)inclusive simplification tested, not all adjustment gates.",
+      "pass": true
+    },
+    {
+      "id": "R25.inclusive1000.01",
+      "actual": "False",
+      "expected": "False",
+      "premise": "InputVATattributabletoacquisition/productioncost; only44(1)inclusive simplification tested, not all adjustment gates.",
+      "pass": true
+    }
+  ],
+  "control_count": 22,
+  "own_selected_native_ranges": 4,
+  "exact_source_checks": [
+    {
+      "id": "R23.small-business",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R23.outgoing-procedure",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R25.disposal",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R25.simplifications",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "VAT.AO149-2",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.AO149-3",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.AO149-4",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.AO108",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.AO152-1",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.AO152-2",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.AO152-3",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.AO152-5",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.AO152-10",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.AO233a-2",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.AO238-1a",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.AO240-1",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.CASH",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.KU",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.CRIME",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.EURVATIN",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.EURVATOUT",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.ANNUAL",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.ADVANCE",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.PERIOD",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.COMPUTEVAT",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.ASSESS",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.REQUEST",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.WAIVE",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.KUEU",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.KUEUREG",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.CASHVAT",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.VATINPUT",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.NOEXEMPTINPUT",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.PRORATA",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.VATCORRECT",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.VATFIFTH",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.VATSALE",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.SMALLCORRECT",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.EXTEND",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.ELEVENTH",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.EXTENDDUE",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.RATES",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.INVOICETRANSITION",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.EURO10",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.OSS",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.OSSEXCLUDE",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.OSSDEADLINES",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.RCIN",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.RC5000",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.RCWHO",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.VATFINE",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.VATFINEMAX",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.AUTH",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.ADVISERSTOP",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.VATADVLATE",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.TAXPOINT",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.CORRECTBASE",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.FORMTOTAL",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.FORMPAY",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.FORMADDRESS",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.FORMKU",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.FORMCASHSWITCH",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.FORMAFTER",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.FORMADVAFTER",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.FORMKUSWITCH",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.UAEKUDUTY",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Exact original first-three-sentence prefix of final native LF; next sentence begins on same line and is outside the quoted claim",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.UAEKUTHRESHOLD",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.UAESTARTUP",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.UAETURNOVER",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.UAELATESUPPLY",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "VAT.RECEIVEE",
+      "hashes_and_literal_quote": true,
+      "scope_precision": "Entire recorded native LF literal",
+      "own_new_selected_read": false
+    }
+  ],
+  "prior_A_manifest": {
+    "sha256": "caa546e677e15366d0530b1eb757fe4cfba54d87b9993d717c4d261de5282b24",
+    "members_rehashed": 610,
+    "mismatches": 0
+  },
+  "full_inverse_and_all_native_rows": true,
+  "all_prior174_current_units_and347_old_topics_retained": true,
+  "original_examples": {
+    "blocks": 2,
+    "failures": [],
+    "whole_original_worked_section_exact": true
+  },
+  "schema": {
+    "errors": [],
+    "warnings": [],
+    "stdout": "checked 1 guides (0 non-guide .md files skipped)\n"
+  },
+  "diff_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

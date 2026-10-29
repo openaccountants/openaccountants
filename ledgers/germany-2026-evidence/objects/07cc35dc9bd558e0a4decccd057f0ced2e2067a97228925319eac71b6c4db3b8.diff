@@ -1,0 +1,52 @@
+--- before/de-einkommensteuer-freelancer
++++ after/de-einkommensteuer-freelancer
+@@ -1,7 +1,7 @@
+ ---
+ name: de-einkommensteuer-freelancer
+ description: "German income tax (Einkommensteuer) on the profit of one self-employed person resident in Germany, tax year 2026. Covers Freiberufler (§ 18 EStG) versus trade (§ 15 EStG), the cash-basis profit (EÜR, § 4(3)) with Anlage EÜR and Anlage S or G, business expenses including the home office flat rate and the EUR 6 day rate, low-value assets and depreciation (§§ 6, 7), the Investitionsabzugsbetrag (§ 7g), the 2026 tariff with the EUR 12,348 Grundfreibetrag (§ 32a), splitting, the solidarity surcharge, church tax, pension and health special expenses, losses (§ 10d), prepayments (§ 37), the § 35 trade tax credit, filing deadlines with and without a Steuerberater (§ 149 AO) and the late-filing surcharge (§ 152 AO). Trigger on: Freiberufler, Selbständige, EÜR, Anlage S, Homeoffice-Pauschale, Investitionsabzugsbetrag, Vorauszahlungen, German freelancer tax. Out of scope: trade tax (de-trade-tax), investments (de-capital-gains), social contributions (de-social-contributions), partners and part-year residents (de-partners-and-part-year), non-residents (de-non-resident-tax)."
+-version: 1.4
++version: 1.5
+ jurisdiction: DE
+ tax_year: 2026
+ last_updated: 2026-10-29
+@@ -31,7 +31,7 @@
+ | Bookkeeping duty by size (§ 141 AO) | None | After a limit in the rates table is crossed and the office gives notice |
+ | Profit form | Anlage S | Anlage G |
+ 
+-- **Out of scope, with the skill to use.** Partnerships (GbR, OHG, KG, Partnerschaftsgesellschaft; a partnership that also trades is a trade as a whole, § 15(3) no. 1 EStG): `de-partners-and-part-year`. Companies (GmbH, UG): `de-corporate-tax`. Wages only: `de-employee-income-tax`. Letting: `de-rental-income`. Legal form: `germany-formation`. VAT returns: `germany-vat-return` and `de-vat-annual-and-special-schemes`. Records, the GWG pool and the car logbook: `germany-bookkeeping`. Contributions: `de-social-contributions`. Prepayment planning: `de-estimated-tax`. Investments: `de-capital-gains`. Crypto: `de-crypto-tax`. Staff: `de-payroll`. Non-residents: `de-non-resident-tax`.
++- **Out of scope, with the skill to use.** Partnerships (GbR, OHG, KG, Partnerschaftsgesellschaft; for partnership commercial classification and the separable own-activity de minimis exception under § 15(3) no. 1 EStG, use `de-partners-and-part-year` and `de-trade-tax`): `de-partners-and-part-year`. Companies (GmbH, UG): `de-corporate-tax`. Wages only: `de-employee-income-tax`. Letting: `de-rental-income`. Legal form: `germany-formation`. VAT returns: `germany-vat-return` and `de-vat-annual-and-special-schemes`. Records, the GWG pool and the car logbook: `germany-bookkeeping`. Contributions: `de-social-contributions`. Prepayment planning: `de-estimated-tax`. Investments: `de-capital-gains`. Crypto: `de-crypto-tax`. Staff: `de-payroll`. Non-residents: `de-non-resident-tax`.
+ - **Also refer.** Selling or closing the business, extraordinary income (§ 34), retained profits (§ 34a), the progression clause (§ 32b); electric and hybrid business cars and any dispute over private car use; the exact church tax rate and rounding for a client (state rules).
+ 
+ ## Rates, bands and thresholds
+@@ -148,8 +148,12 @@
+ Business expenses are the costs caused by the business (§ 4(4) EStG); § 4(5) limits some. Home office room costs, gifts and entertainment must be recorded one by one and apart from other expenses, or the deduction is lost (§ 4(7) EStG).
+ 
+ - **Home office.** Room is the centre of all work: actual costs or the EUR 1,260 flat amount, less one twelfth per full month it is not. Otherwise no room costs, only the EUR 6 day rate (§ 4(5) no. 6c): for a day worked mainly at home without visiting a first place of work (also on a day away if no other workplace is available for good). One day rate per day, and none so far as room costs are deducted.
+-- **Commuting** to one's own premises uses the employee allowance rules of § 9 EStG through § 4(5) no. 6: EUR 0.38 from the first kilometre, one way, not for flights. For a business car, the costs above the allowance are added back; list-price method and logbook: `germany-bookkeeping`.
+-- **Meals** on business trips (§ 4(5) no. 5 with § 9(4a)): flat amounts only; nothing for eight hours or less; they stop after three months at one place; abroad, the country amounts in the ministry's letter of 5 December 2025, in force from 1 January 2026.
++- **Commuting** to one's own premises uses the employee allowance rules of § 9 EStG through § 4(5) no. 6: EUR 0.38 from the first full kilometre, one way, not for flights. Apply the business-car adjustment below; the private-use amount is separate. The existing `germany-bookkeeping` record-keeping route does not replace this computation.
++
++**Business-car commuting adjustment, ordinary combustion car.** In addition to the separate private-use add-back, § 4(5) no. 6 EStG disallows `max(0, D − A)` for travel between home and the business premises. Under the list-price method, `D = 0.0003 × domestic list price at first registration × full one-way kilometres × calendar months`. `A` is the statutory commuting allowance: for this ordinary car case, `EUR 0.38 × full one-way kilometres × actual commuting days`, applying the § 9(1) no. 4 distance and benefit-reduction conditions. When private use is valued under § 6(1) no. 4 sentence 1 or 3, including the logbook method, use the actual documented costs of these commuting trips as `D` instead. Electric/hybrid reductions and family-home trips need their separate rules.
++
++For a stipulated ordinary car with a EUR 40,000 list price, 20 full km, 12 months and 200 commuting days, `D = 2,880`, `A = 1,520`, and the extra nondeductible amount is EUR 1,360. With actual/logbook commuting costs of EUR 1,000 the extra amount is zero; with EUR 2,000 it is EUR 480. These amounts are separate from the private-use add-back.
++- **Meals** on business trips (§ 4(5) no. 5 with § 9(4a)): flat amounts only; for a day without an overnight, nothing for eight hours or less. The EUR 14 arrival/departure branch instead requires an overnight away from home on that, preceding or following day; they stop after three months at one place; abroad, the country amounts in the ministry's letter of 5 December 2025, in force from 1 January 2026.
+ - **Business trips** are not commuting: every kilometre counts, at EUR 0.30 or the actual cost share.
+ - **Flat expense shares** for writers, journalists, side-line teachers and examiners replace all actual expenses of that activity. They rest on a ministry letter of 6 April 2023 (BStBl I S. 671) that the 2026 EÜR instructions cite, not on the statute.
+ 
+@@ -311,6 +315,7 @@
+ - Turnover in 2025 and expected for 2026? Small-business VAT rule (§ 19 UStG) used, or opted out?
+ - Other income this year: job, pension, rent, investments? Married or registered partner, wanting joint assessment? Children?
+ - Church member, and which federal state? Health and pension cover: statutory, private, professional scheme, Künstlersozialkasse?
++- Car method, business-use share, domestic list price at first registration, calendar months, full one-way distance and commuting days? For actual/logbook valuation, the costs attributable to those trips?
+ - Prepayments set? A loss carried from earlier years? Is the 2025 return filed, and does a Steuerberater prepare your returns?
+ 
+ ## Sources
+@@ -332,6 +337,8 @@
+ | BMF letter of 5 December 2025: meal and overnight amounts abroad from 1 January 2026 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Lohnsteuer/2025-12-05-steuerliche-behandlung-reisekosten-2026.pdf?__blob=publicationFile&v=5 | 2026-10-26 |
+ | BMF, Steuern von A bis Z, 2025 edition | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 | 2026-10-24 |
+ | ELSTER help, 2025 income tax return | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025 | 2026-10-24 |
++| EStG § 4(5) nos. 5–6 (business-car commuting adjustment and meal incorporation), selected operative clauses read | https://www.gesetze-im-internet.de/estg/__4.html | 2026-10-29 |
++| EStG § 9(1) no. 4 and (4a) (distance allowance and qualifying meal branches), selected clauses read | https://www.gesetze-im-internet.de/estg/__9.html | 2026-10-29 |
+ 
+ Not yet confirmed: the 2026 ELSTER form names (taken from the 2025 instructions); church tax rates and rounding per state (8% or 9% from the 2025 federal booklet, state laws not read); the ministry letter of 6 April 2023 itself (its 30%/EUR 3,600 and 25%/EUR 900 figures are taken from the 2026 EÜR instructions, line 24).
+ 

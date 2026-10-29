@@ -1,0 +1,8 @@
+{
+  "before_sha256": "c5c04619f56e19802ef8141885a11a4d3a555720bf8f95d2c988fd9aed84adb1",
+  "after_sha256": "cacaa184f25e468514bc31fbabaf03df05c704f7dc7b284f82e180bb5b86ddc3",
+  "full_inverse_exact": true,
+  "old_cases_URL_order_H2_CTA_preserved": true,
+  "operation_count": 4,
+  "writer_not_independent": true
+}

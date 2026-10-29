@@ -1,0 +1,1485 @@
+{
+  "scope": "Independent Germany25 review evidence, selected actual source receipts and exact repair closures. Previous sealed external writer evidence preserved and separately rehashed. Manifest excludes itself.",
+  "artifacts": [
+    {
+      "path": "DE-R01-R08-bounded-review.md",
+      "sha256": "8400854a1e36f0c8ceaf1c36aad1503d3c7872c6ed733ec69d7bb1f65069c8b8",
+      "bytes": 3084
+    },
+    {
+      "path": "DE-R01-R08-bounded-successor-check.json",
+      "sha256": "0375340cc239ae3dcaebb143e55412f1def08c206c89433b18810946158f72d0",
+      "bytes": 25752
+    },
+    {
+      "path": "DE-R01-R08-check.py",
+      "sha256": "3479229448495ace9b32cfd496e57d2a798b2b6ea4cc49022c9d20e79882501b",
+      "bytes": 6144
+    },
+    {
+      "path": "DE-R09-R10-check.py",
+      "sha256": "d6b3bd09e537975ec8cffa46c1dd061a46dd91b84a6dd7169a87a31c1a63319a",
+      "bytes": 3330
+    },
+    {
+      "path": "DE-R09-R10-independent-closure.json",
+      "sha256": "dbbf5179401b2e687200fc3418bfce16d82edaccf326c45a944a75f67d9f0d82",
+      "bytes": 2278
+    },
+    {
+      "path": "DE-R109-R111-independent-closure.json",
+      "sha256": "0b95d5c0295c1fa619d8d460af78b56f95f555d2fb3e8255b9f6e1a5063ac3d4",
+      "bytes": 7018
+    },
+    {
+      "path": "DE-R109-R111-selected-source-read-ledger.json",
+      "sha256": "fc78237ba9d1ee142204c8ec67abc035bb4738e0039cfbf107e42704d6417dc4",
+      "bytes": 13102
+    },
+    {
+      "path": "DE-R11-R17-check.py",
+      "sha256": "0bc73e4c3e6d95fb6bdef1354024c418a188c3229c6433c4bf2ab0b699267341",
+      "bytes": 5125
+    },
+    {
+      "path": "DE-R11-R17-independent-closure.json",
+      "sha256": "899c736207cc10017965754a4b7866c0b28933e0a8d6e2a50870ec2197a8c8fe",
+      "bytes": 10276
+    },
+    {
+      "path": "DE-R112-check.py",
+      "sha256": "9d8cc2dff026ef34c4cf6d0d00cb98c3af4bb48fe47eb57ff3b9b62e09d7b4c1",
+      "bytes": 3241
+    },
+    {
+      "path": "DE-R112-independent-closure.json",
+      "sha256": "33c18edb1c406348e354afe8190807f4e6aa68c220a33afe7499728e26b7a4be",
+      "bytes": 2747
+    },
+    {
+      "path": "DE-R18-R22-check.py",
+      "sha256": "96e5dd2fb65b534273de1ec1ef49fa1dcf265ce2570fc7cee7a35731c8386eb9",
+      "bytes": 4314
+    },
+    {
+      "path": "DE-R18-R22-independent-closure.json",
+      "sha256": "73a03417e93b841751bcb5a6e09be6f3df954666baafa098dcdba5c38f481c71",
+      "bytes": 6266
+    },
+    {
+      "path": "DE-R23-R25-check.py",
+      "sha256": "402f68a669bef3370139f3b87c6302d1bc26bf6605c0f15b77426ceafff003c7",
+      "bytes": 5592
+    },
+    {
+      "path": "DE-R23-R25-independent-closure.json",
+      "sha256": "ec7a9ecb9140451e3c822e4c85a97d6deaa7965e786709b5f68b0d7ea93e2117",
+      "bytes": 6261
+    },
+    {
+      "path": "DE-R23-R25-selected-read-ledger.json",
+      "sha256": "7211c1d4d4c24c10f93594693e3e3710d1504918310857848d5e5d7d93025a4c",
+      "bytes": 9488
+    },
+    {
+      "path": "DE-R26-R31-check.py",
+      "sha256": "7366274b8db2637dbfec1878e5ab0b68a9b5320b331511a9b9f8e50309158e43",
+      "bytes": 4439
+    },
+    {
+      "path": "DE-R26-R31-independent-closure.json",
+      "sha256": "36aa106d5870ad06e06ecd90baa22f880b93bba60e3152a44276f7215b472cc0",
+      "bytes": 7848
+    },
+    {
+      "path": "DE-R26-R31-selected-read-ledger.json",
+      "sha256": "987116bb3ef4e6cc400d102d0da13f2c6f9ddd561679e066c236328f78b8aabd",
+      "bytes": 21680
+    },
+    {
+      "path": "DE-R32-R36-check.py",
+      "sha256": "d6d0999f41ca2c09348b485faf34c07eb9b0299507ec72beeac981da0155f395",
+      "bytes": 4737
+    },
+    {
+      "path": "DE-R32-R36-independent-closure.json",
+      "sha256": "751fa6cf8778ce451b88fbf0f9c03c86035d5784376edbc60ed9c7c7b78ef39a",
+      "bytes": 6929
+    },
+    {
+      "path": "DE-R32-R36-selected-read-ledger.json",
+      "sha256": "5c5923509433f622871cd6ea4d1fb3ba16f51538a984627dfb738e9391d93555",
+      "bytes": 10931
+    },
+    {
+      "path": "DE-R37-R41-einvoice-selected-source-read-ledger.json",
+      "sha256": "3e38fc3e2a8ecd389c0f87d45ec0bb4764bb446af9589033ba1391e0ad6e7877",
+      "bytes": 39213
+    },
+    {
+      "path": "DE-R37-R43-check.py",
+      "sha256": "95389a792006b8b2f7f44e9fa42f222c0b802e122efc3f8bb9c4521d6f706488",
+      "bytes": 5430
+    },
+    {
+      "path": "DE-R37-R43-independent-closure.json",
+      "sha256": "4d78af4fe42711d58fa38d76fcab1db25fe593ff047395d0a722176ac325f022",
+      "bytes": 11297
+    },
+    {
+      "path": "DE-R41-reviewer-fixture-erratum.json",
+      "sha256": "584cc67b5ccfc97587dc825bc9084fad479f8a286cea81bebb3bbb380eb2dcc6",
+      "bytes": 905
+    },
+    {
+      "path": "DE-R44-R46-check.py",
+      "sha256": "f63f444d0e227f28c0468dbd98794fb5f9d7d98e356b30c45b082b577c989019",
+      "bytes": 4541
+    },
+    {
+      "path": "DE-R44-R46-crypto-selected-source-read-ledger.json",
+      "sha256": "109f04b986a7a51d6297724b56f2bb5b8f56f82c64865b1f32310b92391b5a1a",
+      "bytes": 17600
+    },
+    {
+      "path": "DE-R44-R46-independent-closure.json",
+      "sha256": "50f7b40ceb63efd8afde60c312be8ebd1f6b4906a1a5d6b715e93d9908a45be2",
+      "bytes": 7065
+    },
+    {
+      "path": "DE-R47-R53-Swiss-selected-source-read-ledger.json",
+      "sha256": "3c5ab563fe526efdbe2554d3725c76843db6406541ba49f6d254de1460960b90",
+      "bytes": 34014
+    },
+    {
+      "path": "DE-R47-R54-check.py",
+      "sha256": "9ac931086ab55e530ed450bd9feef5a9ef425bb896c36e2037f531c5424352fa",
+      "bytes": 5108
+    },
+    {
+      "path": "DE-R47-R54-independent-closure.json",
+      "sha256": "0abe08ae51e6a0daa61f62ceb7f807b3d32d1250b1bce94d3833ab2cbd7fc6c2",
+      "bytes": 10803
+    },
+    {
+      "path": "DE-R54-Swiss-selected-source.json",
+      "sha256": "6cab510052f558ef9c4a0ad69b269b539325556e4c542149def938d58806d2b8",
+      "bytes": 1211
+    },
+    {
+      "path": "DE-R55-R56-check.py",
+      "sha256": "e6d0040a0cc537fb486b06dd1d1857a99fd77be75b21faad4cf2fe485f71ab6e",
+      "bytes": 4672
+    },
+    {
+      "path": "DE-R55-R56-independent-closure.json",
+      "sha256": "0956104cf1f8e2318c053ef50a7e4b49f56c373464d928c3a9791e9870ce060e",
+      "bytes": 3446
+    },
+    {
+      "path": "DE-R55-estimated-selected-source.json",
+      "sha256": "e75371c62f5677aef2188a596bbc560ae30a645d10747304ba9a1551a4b1e802",
+      "bytes": 1110
+    },
+    {
+      "path": "DE-R56-estimated-old-topic-selected-records.json",
+      "sha256": "915ee5f6096e276b70da9e1c0281fa72d04ea9acfe042eb1c94fe778c5e44db8",
+      "bytes": 3562
+    },
+    {
+      "path": "DE-R57-R60-treaty-selected-source-read-ledger.json",
+      "sha256": "6b82daf76569207d8ff60d7fe9730955d3752154ce7f7f632ef3d30f5276b03f",
+      "bytes": 30437
+    },
+    {
+      "path": "DE-R57-R96-close.py",
+      "sha256": "87250949527fd5d66eacc1df59f3cc9e78225382bb0313a5170ce11d58a16a46",
+      "bytes": 7209
+    },
+    {
+      "path": "DE-R57-R96-independent-closure.json",
+      "sha256": "900a221fbf79de006d70726cd74b5b0435177fbfd474c47ba8eb76f70fd8c7d3",
+      "bytes": 82342
+    },
+    {
+      "path": "DE-R62-R70-payroll-selected-source-read-ledger.json",
+      "sha256": "15622b1d290f542bf5d6475c65726cc759e4eb8fa57d690f629f8dcac87dc878",
+      "bytes": 33740
+    },
+    {
+      "path": "DE-R72-R77-social-selected-source-read-ledger.json",
+      "sha256": "13bea09e4f5af955d39133bd503e487efd7f9f175aed42235909261a340694e5",
+      "bytes": 30249
+    },
+    {
+      "path": "DE-R78-R87-benefits-selected-source-read-ledger.json",
+      "sha256": "e5a0d5d0f621bd91b33ee940ecd2223c37a4f487eab839113ed4d84c688bc34b",
+      "bytes": 53249
+    },
+    {
+      "path": "DE-R88-R96-payroll-selected-source-read-ledger.json",
+      "sha256": "0a36b51ccb6fed1622057679e33e7f3899655ba08a96a7147cac0c9a9f5e336a",
+      "bytes": 47331
+    },
+    {
+      "path": "DE-R97-R108-optimization-selected-source-read-ledger.json",
+      "sha256": "f81e97b8e5cbbce58b24bdb2b19a8ca1dd3d7bd3e8470ee6c021eda95bdbb926",
+      "bytes": 48958
+    },
+    {
+      "path": "DE-R97-R114-close.py",
+      "sha256": "575e2cfb25c76f1b1e1244f8eaed76e9d80cb5c167f6def708e806c91f200823",
+      "bytes": 5604
+    },
+    {
+      "path": "DE-R97-R114-independent-closure.json",
+      "sha256": "c56c45adabcd5abab2c09475415e213ce94b154700ff617ab8614fb9d2fa4a74",
+      "bytes": 25077
+    },
+    {
+      "path": "README-final-scope-check.py",
+      "sha256": "d07448e13423e1c55ab82f29a23488f88b1cce20e1b71127e148b9b39c6c9e7d",
+      "bytes": 3601
+    },
+    {
+      "path": "README-final-scope-independent-review.json",
+      "sha256": "3d67c6898fbadde840f8b5dd8bd8ae532efd4c6f1aa4217ecab39b475fabb12c",
+      "bytes": 3411
+    },
+    {
+      "path": "all-original-writer-seals-final-rehash.json",
+      "sha256": "da43d63a7883a8235d03323988273ab5aaeca55f4ba795d984c7d9d7474b8937",
+      "bytes": 1233
+    },
+    {
+      "path": "build-final-pair-map.py",
+      "sha256": "fb438d847fdff3f5b854f17fd150c6ce8445b9f19022fffe9f391e71682cfdbe",
+      "bytes": 4437
+    },
+    {
+      "path": "check-successor-chain.py",
+      "sha256": "9272e3a1e1216a27cbe3bde853f8103b07ebc5b6f909d458b7b5223db714f14f",
+      "bytes": 4933
+    },
+    {
+      "path": "country-freeze.json",
+      "sha256": "c285780165db5543f52fd36a0e6eb77d5a5afb3addb48d9445f7e0acbfea44af",
+      "bytes": 21811
+    },
+    {
+      "path": "de-capital-gains-check.py",
+      "sha256": "7c8c814c7888ebec16b76521cbfcf6fcd2ca8125863788648b19687ba2a6ff59",
+      "bytes": 6525
+    },
+    {
+      "path": "de-capital-gains-old-origin-check.json",
+      "sha256": "c141b465f73442055b04c0410b3964346201a3f99d905a33ac4bf660a4f62fb3",
+      "bytes": 391
+    },
+    {
+      "path": "de-capital-gains-own-controls.json",
+      "sha256": "b96dda1708b2d5f26b01e9a26b0c28d70d359a5c935bf159334a4c084383529d",
+      "bytes": 5305
+    },
+    {
+      "path": "de-capital-gains-quote-reuse-plan.json",
+      "sha256": "dc743da0b42066f00629e54932e415b123adf58f1a4d29f9f4488465ec59a0e2",
+      "bytes": 150982
+    },
+    {
+      "path": "de-capital-gains-source-read-ledger.json",
+      "sha256": "b364ea88ddf62706fd2fb381fec17a712c37991f627410c03061182d1db9867c",
+      "bytes": 74430
+    },
+    {
+      "path": "de-corporate-tax-old-origin-check.json",
+      "sha256": "922e690e468b234d38e60fd169d90de5f7de3a6c78758c593bda132d865158fb",
+      "bytes": 345
+    },
+    {
+      "path": "de-corporate-tax-own-controls.json",
+      "sha256": "349354ce53b73c2a9f32e59837cce4d245c9f6186e86ef55e78bf0376c06dd86",
+      "bytes": 4119
+    },
+    {
+      "path": "de-corporate-tax-source-read-ledger.json",
+      "sha256": "9a7a0eae895733db3306ca372d1847d6d5609d080e02a53714d375f5879dff8b",
+      "bytes": 113970
+    },
+    {
+      "path": "de-crypto-tax-check.py",
+      "sha256": "ca70e13e20ea7f11eee87cde286c85919b528f5f8c1ba0583694ecf014b32397",
+      "bytes": 5862
+    },
+    {
+      "path": "de-crypto-tax-old-origin-check.json",
+      "sha256": "b7dcd32734635ccdcbfdf35d5f5310b4a426b8e15db2d0690b6e8f0621e969a7",
+      "bytes": 450
+    },
+    {
+      "path": "de-crypto-tax-own-controls.json",
+      "sha256": "9bab9d92935923b39e8bf9c53c591a30d93d6d7ff23072f855384b87679ad409",
+      "bytes": 5658
+    },
+    {
+      "path": "de-crypto-tax-quote-reuse-plan.json",
+      "sha256": "366c9343bcb06f9722f09aa17102af7dc46e78ccf1a81de2bc40ad5802ea6649",
+      "bytes": 198073
+    },
+    {
+      "path": "de-crypto-tax-source-read-ledger.json",
+      "sha256": "2a87c012648e33d796696c96c71734eb94059aed90392c6866fc68560cdf630b",
+      "bytes": 113155
+    },
+    {
+      "path": "de-einkommensteuer-freelancer-check.py",
+      "sha256": "966b5a90263e707d822d09048a2a4104786dde078e162a99aced167c9bc05721",
+      "bytes": 6299
+    },
+    {
+      "path": "de-einkommensteuer-freelancer-old-origin-check.json",
+      "sha256": "7b9e881cc3ee0d757ff531897ab219d5b44970905fcefb659411b2856fb4578c",
+      "bytes": 392
+    },
+    {
+      "path": "de-einkommensteuer-freelancer-own-controls.json",
+      "sha256": "d230b7b7b386250ae34941257d76e9b5a925fefcd1adba5e97b52644b7a68b78",
+      "bytes": 3986
+    },
+    {
+      "path": "de-einkommensteuer-freelancer-quote-reuse-plan.json",
+      "sha256": "6dc95c9b822736b1184e8520903f9d0e351fc944d8502f60eb835ce5ed3737d6",
+      "bytes": 245828
+    },
+    {
+      "path": "de-einkommensteuer-freelancer-source-read-ledger.json",
+      "sha256": "38c9f8c1034645d5386e7a280fafaab75152fec0974de37eae1c65f43211a4bf",
+      "bytes": 104936
+    },
+    {
+      "path": "de-employee-income-tax-old-origin-check.json",
+      "sha256": "7522759087126b4b9b9fcc7c4fe68fdf5ebd71e20c023547e4b67b8c4633b00e",
+      "bytes": 49638
+    },
+    {
+      "path": "de-employee-income-tax-own-controls.json",
+      "sha256": "8638b1728516807aeba23afb1b73fcc45e94ef34abaa8872bcb8ccd40676fa8d",
+      "bytes": 4292
+    },
+    {
+      "path": "de-employee-income-tax-source-read-ledger.json",
+      "sha256": "5a319de068fd346dc85b28cc7fda87f99ba42a382cd34bcbee180e363d3dad76",
+      "bytes": 62227
+    },
+    {
+      "path": "de-estimated-tax-check.py",
+      "sha256": "12810eef2aee6dad3209964ec673076f72adf85a1fe9869e4b949bf2620f6fd1",
+      "bytes": 6149
+    },
+    {
+      "path": "de-estimated-tax-municipal-source-completion.json",
+      "sha256": "eed8cf1d96f87c2d5be528403d1e861fef8e6257ff2d1ba5c514ddc762d1d5c1",
+      "bytes": 1350
+    },
+    {
+      "path": "de-estimated-tax-old-origin-check.json",
+      "sha256": "aef7b98fa9eac3ba8c30de5bd2197cd9b9e4cf40b7224a165b158a4b9ede07c2",
+      "bytes": 915
+    },
+    {
+      "path": "de-estimated-tax-own-controls.json",
+      "sha256": "c501683edc9c22ce21205a2bd3da54b68aef56dbef157e2ceca02e9e247da9a3",
+      "bytes": 4641
+    },
+    {
+      "path": "de-estimated-tax-quote-reuse-plan.json",
+      "sha256": "35842c4049fff8bf6772a80088bfaa046fdcce01b5f1db7cc0f632a6fe923143",
+      "bytes": 91578
+    },
+    {
+      "path": "de-estimated-tax-source-read-ledger.json",
+      "sha256": "626ae14577e48f671318c8d20673eb46aa4cbd6cc30c7cefcddb33ade5dbfa8b",
+      "bytes": 54586
+    },
+    {
+      "path": "de-income-tax-independent-source-reads.json",
+      "sha256": "454633b6edc19f7f7ee1bc0fd1fd78c945d7d34f76d4f5ab555e85239297542a",
+      "bytes": 74497
+    },
+    {
+      "path": "de-income-tax-old-origin-identity.json",
+      "sha256": "f9413dbe1c85f8cf3d88b4f67a5eee42b2a9f4f81e00e52b76a7f1f62243f1d8",
+      "bytes": 57623
+    },
+    {
+      "path": "de-income-tax-own-controls.json",
+      "sha256": "02a193fd8a989ec2bbc6a6bdbdc2f6185b3370b3d57ec6eec1ee86d25bc2839a",
+      "bytes": 4801
+    },
+    {
+      "path": "de-non-resident-tax-check.py",
+      "sha256": "cfdd03165d581a783940c7f58cd727b1612ea7d3e641d27256bbf7660539d19d",
+      "bytes": 5309
+    },
+    {
+      "path": "de-non-resident-tax-old-origin-check.json",
+      "sha256": "2cdf0d3ac567cc800e7f972fb7207f2802665341f44b64fdf206dc6205e6a35a",
+      "bytes": 327
+    },
+    {
+      "path": "de-non-resident-tax-own-controls.json",
+      "sha256": "88386061ad5467624a4baeb11e2818868b6083e7414eb1553692af5b7a8cebe2",
+      "bytes": 4001
+    },
+    {
+      "path": "de-non-resident-tax-quote-reuse-plan.json",
+      "sha256": "d258700feabccaedf954f66754f57ff6f0ed9b452b650aada6d7d800587ad81b",
+      "bytes": 163317
+    },
+    {
+      "path": "de-non-resident-tax-source-read-ledger.json",
+      "sha256": "2d4c18901fa46c78cd6112c16ef1c5b741056e2a8799028cf393271e1eb917be",
+      "bytes": 83339
+    },
+    {
+      "path": "de-partners-and-part-year-old-origin-check.json",
+      "sha256": "f41a8da788873bff25a24149565432b0d0a67d619bccfe7b992335b5a2843276",
+      "bytes": 325
+    },
+    {
+      "path": "de-partners-and-part-year-own-controls.json",
+      "sha256": "67f5fcca3540d48bb9a8bcf66a8fb5499ee6dc5f961a31e3dea2fb2ff212dd2d",
+      "bytes": 3917
+    },
+    {
+      "path": "de-partners-and-part-year-source-read-ledger.json",
+      "sha256": "f718e11d21ee54b56f009d6f5ffdee8252f21785cf9c808962c8b3262541490f",
+      "bytes": 43311
+    },
+    {
+      "path": "de-payroll-benefits-check.py",
+      "sha256": "9b253a53df8745ab4088354b38c3efd3020c7eaf444005a2a4aa5238f48a1df2",
+      "bytes": 6978
+    },
+    {
+      "path": "de-payroll-benefits-old-origin-check.json",
+      "sha256": "5771908aa104338999041be5b38fd56080b2c1433761d49d10856900c1d5a352",
+      "bytes": 435
+    },
+    {
+      "path": "de-payroll-benefits-own-controls.json",
+      "sha256": "35daa5fee08e5402f62ca0e5b3eea843510d26ff2a1476e8fb26974218f4c62d",
+      "bytes": 6111
+    },
+    {
+      "path": "de-payroll-benefits-quote-reuse-plan.json",
+      "sha256": "2b2f7191085a5ee0888a844546c8ea1487df5330cab9b080f621ac3992ef300f",
+      "bytes": 179660
+    },
+    {
+      "path": "de-payroll-benefits-source-read-ledger.json",
+      "sha256": "22c3b5fc0a705e9031f8a7f61f78b7620bd4492c4e3a6614ad31c0f5f5f3f677",
+      "bytes": 59679
+    },
+    {
+      "path": "de-payroll-check.py",
+      "sha256": "b83f4d61540b7e229de7b475dbd3eca4c63e577e1ed29580a86912345c37fbec",
+      "bytes": 8510
+    },
+    {
+      "path": "de-payroll-old-origin-check.json",
+      "sha256": "f38f436151d1436b45eb0ba28edb14bf98126c625f3f248ab9f1b786b73edf47",
+      "bytes": 434
+    },
+    {
+      "path": "de-payroll-own-controls.json",
+      "sha256": "c2103238adee297e50dc6e5bd0925d2ddaf68ef32e1eaaea92269f130ec4cc47",
+      "bytes": 8850
+    },
+    {
+      "path": "de-payroll-quote-reuse-plan.json",
+      "sha256": "c221b959d6bc93c5f80d3b2caccc6c158a7be4a199cc74bc57a533333abcecd0",
+      "bytes": 351627
+    },
+    {
+      "path": "de-payroll-source-read-ledger.json",
+      "sha256": "6ed800fa6bef99af4977de141122f19f130b540258627c8034ce6fb3ac015d9e",
+      "bytes": 129263
+    },
+    {
+      "path": "de-rental-income-check.py",
+      "sha256": "99f9a25a26e4eed7f273808ec3151d74d99ecb516aee287080faa8e8441b2bd3",
+      "bytes": 7369
+    },
+    {
+      "path": "de-rental-income-old-origin-check.json",
+      "sha256": "c4fb639331efd35c4fdde1dcf7719b72cc3ab6e307febd819db4931d42cb8c9a",
+      "bytes": 2558
+    },
+    {
+      "path": "de-rental-income-own-controls.json",
+      "sha256": "e445f99ca7f61c995d282e7d19db733686ec569b4bfad41ca4fa1a1c61e33d6b",
+      "bytes": 5431
+    },
+    {
+      "path": "de-rental-income-quote-reuse-plan.json",
+      "sha256": "7b83337cebff8c1b72e814a588c9e9be8e9b606a06328fc6f64521a7b2e82807",
+      "bytes": 383155
+    },
+    {
+      "path": "de-rental-income-source-read-ledger.json",
+      "sha256": "bb41297763d94422dd12410592f5f45357282509a1b520cfbcc7fa7279fe0abf",
+      "bytes": 143761
+    },
+    {
+      "path": "de-self-employed-income-tax-exact-read-reuse.json",
+      "sha256": "7a09565e2a8dffe129ffeb3d3a1c2d7653b00d56c4f838d6643e340c866286a5",
+      "bytes": 44811
+    },
+    {
+      "path": "de-self-employed-income-tax-original-case-old-origin-check.json",
+      "sha256": "ee024d9ac24c14b0381282a2134b68e7072a627c4e2ff78641c406e5011de97e",
+      "bytes": 367
+    },
+    {
+      "path": "de-social-contributions-check.py",
+      "sha256": "e65cbea6c0f3854694a56de77ba0526e529c69c301bc803666a17eeb025d55d3",
+      "bytes": 7449
+    },
+    {
+      "path": "de-social-contributions-old-origin-check.json",
+      "sha256": "95c0d1f2e28f6dc76c6340d83316de105defef330a2a5664a8c7defc0b693e6d",
+      "bytes": 434
+    },
+    {
+      "path": "de-social-contributions-own-controls.json",
+      "sha256": "48574c55792ff85966da2296d9b18ca963902c5fb15b518db1b40e0e003d20d2",
+      "bytes": 6137
+    },
+    {
+      "path": "de-social-contributions-quote-reuse-plan.json",
+      "sha256": "ae428599e9841bdde3d22068dfc5191c96671a189c2e313487db0764fd2faab6",
+      "bytes": 243981
+    },
+    {
+      "path": "de-social-contributions-source-read-ledger.json",
+      "sha256": "e898a214958a676070608ecea6649b53245ddb48b2e027e4b27cd16240223a68",
+      "bytes": 102912
+    },
+    {
+      "path": "de-trade-tax-check.py",
+      "sha256": "a611aec353502260188883680b7036f573649927f150cbb06a381bfebfd550be",
+      "bytes": 6158
+    },
+    {
+      "path": "de-trade-tax-old-origin-check.json",
+      "sha256": "1b703de470e80ea617f68e913c960826b83d01fe41cd39e0cd696f2684ca42ab",
+      "bytes": 685
+    },
+    {
+      "path": "de-trade-tax-own-controls.json",
+      "sha256": "73536918af1c1f2766f42b4cf2e1e8f881162a11bbcc100dff8115d80e0963b3",
+      "bytes": 3897
+    },
+    {
+      "path": "de-trade-tax-quote-reuse-plan.json",
+      "sha256": "cad3901dbe6f5b81092ad5b0cfeeee24711b3e05ee95d86f10445027df803bca",
+      "bytes": 152757
+    },
+    {
+      "path": "de-trade-tax-source-read-ledger.json",
+      "sha256": "ee07a17c04d2f32ba138cc09ec38d83782107c51b1a5fb54893d7b3bc364eab5",
+      "bytes": 60997
+    },
+    {
+      "path": "de-treaty-withholding-rates-check.py",
+      "sha256": "da6dc89e74ac9cfc2dbd5bacfac1b4cef0632fc5e7f4a4da24d3f21e4fd0bf33",
+      "bytes": 5862
+    },
+    {
+      "path": "de-treaty-withholding-rates-old-origin-check.json",
+      "sha256": "71edc3e18e76ddf543d4785a23ec11f024b47fb1547036ed144bf1a7d652e36d",
+      "bytes": 554
+    },
+    {
+      "path": "de-treaty-withholding-rates-own-controls.json",
+      "sha256": "e33b22224f3ca906884d0c2e31051498266799574f107fb13d4723164717b3d6",
+      "bytes": 5762
+    },
+    {
+      "path": "de-treaty-withholding-rates-quote-reuse-plan.json",
+      "sha256": "c99509ae762e59493423a73e5bbda20c0355f459f606df526f38e1a79a9a80a1",
+      "bytes": 229255
+    },
+    {
+      "path": "de-treaty-withholding-rates-source-read-ledger.json",
+      "sha256": "e79cf4ad728fbfcca40393c1a48c9734d6f5e746e7887cce207110b6c4c3064f",
+      "bytes": 126586
+    },
+    {
+      "path": "de-uk-employer-first-hire-check.py",
+      "sha256": "7aeeb27f708cbb3c33b3ecab583143906c56dc2fb1be279f91eff95a5d78e739",
+      "bytes": 4973
+    },
+    {
+      "path": "de-uk-employer-first-hire-old-origin-check.json",
+      "sha256": "55ddaa309bf19a1549558fc398749b40e375cabbe1535296480291d390e3f4aa",
+      "bytes": 255
+    },
+    {
+      "path": "de-uk-employer-first-hire-own-decision-controls.json",
+      "sha256": "8232935a1d56bab310d0f4451df63e3547bf7f6839df03d7055b347bae1a81e5",
+      "bytes": 2456
+    },
+    {
+      "path": "de-uk-employer-first-hire-source-read-ledger.json",
+      "sha256": "5d237c0c3928ed3e5360b68fd3ace637b67e4323d17e341f82a8c871d8e4108c",
+      "bytes": 27596
+    },
+    {
+      "path": "de-vat-annual-and-special-schemes-check.py",
+      "sha256": "c025255768a1e54e587301f8543939cdbc8c54cd9e0bf7a0279ba695773764dd",
+      "bytes": 5397
+    },
+    {
+      "path": "de-vat-annual-and-special-schemes-old-origin-check.json",
+      "sha256": "56c5c1bffc22c69f5981cb31ea9c419c5bf522074b77efcf6a14dbebe5970d08",
+      "bytes": 327
+    },
+    {
+      "path": "de-vat-annual-and-special-schemes-own-controls.json",
+      "sha256": "bab748ad788f8a43f79e67c5490002d601afb71236dec1d4e0552658ac31756a",
+      "bytes": 5081
+    },
+    {
+      "path": "de-vat-annual-and-special-schemes-quote-reuse-plan.json",
+      "sha256": "02e3e6ccbfaa03779798207960cde48d52fab4a37855e28f35ff0feb47d77493",
+      "bytes": 148366
+    },
+    {
+      "path": "de-vat-annual-and-special-schemes-source-read-ledger.json",
+      "sha256": "2341279f80acec23493004c1410120d92aa9a7be850ed10a286d9bfbe8606a30",
+      "bytes": 71818
+    },
+    {
+      "path": "dispatch.md",
+      "sha256": "868723c55d0710422d7ab4351888eac6004d8463fe7ab02d9d4510e4e2ef5b56",
+      "bytes": 2325
+    },
+    {
+      "path": "final-25-pair-map.json",
+      "sha256": "486fea72e36d50afe738e7fad27f36db19bbcb11ff1fe927451e975b323353cb",
+      "bytes": 42898
+    },
+    {
+      "path": "final-country-review.json",
+      "sha256": "89a779a2a2d235529876facc7d0dc3c048f705bca633e75bdf5f51370429613d",
+      "bytes": 1534
+    },
+    {
+      "path": "finding-DE-R05-abfaerbung.md",
+      "sha256": "b6cba44da266382dfb8c69d9a8b58fac5ab9f3894d2cf05394bcb74e2aab3f5a",
+      "bytes": 3682
+    },
+    {
+      "path": "finding-DE-R06-partner-summary-qualifications.md",
+      "sha256": "8883d5f04fc8cf3489ee8f7db2d40a763f9febcbdc917b99d9a1a80c13cba8fd",
+      "bytes": 2620
+    },
+    {
+      "path": "finding-DE-R07-corporate-carry-conditions.md",
+      "sha256": "02a88fe420c1b641e5ce9dc234cf9a3cc0822d1315a76e2afa6ffd54fdc2b018",
+      "bytes": 2757
+    },
+    {
+      "path": "finding-DE-R08-corporate-withholding-gates.md",
+      "sha256": "faf70fa522b74c30e74f4e5cc8084467dc9e56ff28d4f21d6fdb0b7c48f45f70",
+      "bytes": 2494
+    },
+    {
+      "path": "finding-DE-R09-corporate-assessment-rounding.md",
+      "sha256": "024737c6a9723f3ccb1265909c0d97f96075d17bf35bd1204a41c316cba0361c",
+      "bytes": 1556
+    },
+    {
+      "path": "finding-DE-R10-trade-stale-reservation.md",
+      "sha256": "d3ba81f6c1ae96c1ab44c2f90d237aea9588e0f7769069dcf9572473d7fcbb0b",
+      "bytes": 1354
+    },
+    {
+      "path": "finding-DE-R11-exit-gift-shareholding-test.md",
+      "sha256": "cab2755f0f04c64fa464201223fc20e7f348fb36e69dbd3f1ecf67ebf1847ce8",
+      "bytes": 2722
+    },
+    {
+      "path": "finding-DE-R112-crypto-source-scope.md",
+      "sha256": "611067087c02c404aefce957eaaf2e3895c3af020477db8e415b792d56b78379",
+      "bytes": 1473
+    },
+    {
+      "path": "finding-DE-R113-planning-table.md",
+      "sha256": "aadbfb5c20227744ca96abe890b6c4304d42d5ec7053c8f7167b0b296579812d",
+      "bytes": 1011
+    },
+    {
+      "path": "finding-DE-R114-planning-Riester.md",
+      "sha256": "b237529bc560c3568dea898e00d00a389f71ec9ea72c18632c91220f47a7816d",
+      "bytes": 2468
+    },
+    {
+      "path": "finding-DE-R12-trade-apportionment-wage-base.md",
+      "sha256": "178ff98c97c47142494802a7d1d2d1e132450707893e4d5a761b09ce63ac4418",
+      "bytes": 2298
+    },
+    {
+      "path": "finding-DE-R13-late-payment-grace-method.md",
+      "sha256": "af3a23d2b5026c1f82e7836dddb7360a876939507dc82d1b94e6271183b0fa89",
+      "bytes": 2099
+    },
+    {
+      "path": "finding-DE-R14-R15-scope-conditions.md",
+      "sha256": "f7c3d18464cb3cfd72ece25fec28d93cacb0d7413d20c2ab2ce4da343410367a",
+      "bytes": 3428
+    },
+    {
+      "path": "finding-DE-R16-freelancer-410-relief-conditions.md",
+      "sha256": "282c346a48b7c8a03c4f49d1ac3c5e671bc7a809c7000449796aa93e3a883763",
+      "bytes": 2168
+    },
+    {
+      "path": "finding-DE-R17-freelancer-grouped-old-topic-map.md",
+      "sha256": "f0ca047a4106fe0ba8a7a568cbf980940b6022cbc7f6250262d4522cfcd2acf8",
+      "bytes": 2123
+    },
+    {
+      "path": "finding-DE-R54-Swiss-filing-extension.md",
+      "sha256": "b36497f36b43a4de19cadeb102cbba36b828370c6175c14ce5e3fb560dd750c2",
+      "bytes": 1561
+    },
+    {
+      "path": "finding-DE-R55-estimated-voluntary-interest.md",
+      "sha256": "85c1bbec29509a5ce490c64b5632b331d9dfa57afb8b8df5df415b879ff055af",
+      "bytes": 1971
+    },
+    {
+      "path": "finding-DE-R56-estimated-old-topic-routes.md",
+      "sha256": "2a4f7643c5e6d7952cd44043b7525b4d9091c74c44a080fd61b679ecb11ba28f",
+      "bytes": 2292
+    },
+    {
+      "path": "finding-DE-R61-TP-CbCR-catchup.md",
+      "sha256": "54df3c5bd3b9a42f8bf89f5bb3b0473a80e2b0e020f6d2263dc9301d1b75536c",
+      "bytes": 2952
+    },
+    {
+      "path": "finding-DE-R71-employee-withholding-explanation.md",
+      "sha256": "acf29f2b330b76e96ab5a38cac29cda25f856604c457a52c169de8cdc9355255",
+      "bytes": 3650
+    },
+    {
+      "path": "findings-DE-R109-R111-rental.md",
+      "sha256": "2b284efe753917d118d80751c4470709524566929a9f329b2fce626e77ef0b7a",
+      "bytes": 3757
+    },
+    {
+      "path": "findings-DE-R18-R22-non-resident.md",
+      "sha256": "82b271334dc30af777d23fed3b5135964c599a530b4658454aff606636104a42",
+      "bytes": 6977
+    },
+    {
+      "path": "findings-DE-R23-R25-annual-VAT.md",
+      "sha256": "b200bd79c5c76722b3c828900a13dfa3392cf930ec6630ac0b32015999e8f5f2",
+      "bytes": 5105
+    },
+    {
+      "path": "findings-DE-R26-R31-advance-VAT.md",
+      "sha256": "09abc957e3a4450e5e5f2848fe3b69885fc94e87954c2a5b228887749ba6d161",
+      "bytes": 8360
+    },
+    {
+      "path": "findings-DE-R32-R36-capital-gains.md",
+      "sha256": "a34c2b654b55ab990a81834b66cdd9cfcc895b9cd589da8844532d98a2d9ee44",
+      "bytes": 6213
+    },
+    {
+      "path": "findings-DE-R37-R41-einvoice.md",
+      "sha256": "ea3706b4a436b23737c58958289abb0e2893a612985e85725bf8bd0f950cebed",
+      "bytes": 6419
+    },
+    {
+      "path": "findings-DE-R42-R43-einvoice-archiving.md",
+      "sha256": "74dafe13835db4f78680a6ec9cda022a501f8b037ec1d0975389c65a6c01efe7",
+      "bytes": 4097
+    },
+    {
+      "path": "findings-DE-R44-R46-crypto.md",
+      "sha256": "230cd1048a85d5d46530aed049c7365c976a536090e2273844b2edcdfbbbba2c",
+      "bytes": 5374
+    },
+    {
+      "path": "findings-DE-R47-R53-Swiss.md",
+      "sha256": "cb9ae594bd2dfbfb4d8e778fa5312e00220464d09aa6155ce365d037d87c9c3b",
+      "bytes": 8397
+    },
+    {
+      "path": "findings-DE-R57-R60-treaty.md",
+      "sha256": "bab1c9256bf800f35717d080abad36fa9f133c0cbb3eeb35acbe16663b27ef81",
+      "bytes": 6713
+    },
+    {
+      "path": "findings-DE-R62-R70-payroll.md",
+      "sha256": "dd5b7ef71f02106064a18f026d2493765435650e8c7bdbc703b767badac21277",
+      "bytes": 9840
+    },
+    {
+      "path": "findings-DE-R72-R77-social.md",
+      "sha256": "84724d1e46a5dcc7b991c09125bc4e8623364bff06683bd37c58ab9aa116575b",
+      "bytes": 7357
+    },
+    {
+      "path": "findings-DE-R78-R87-benefits.md",
+      "sha256": "fdcd8c8d706356dc157d4aba4e12179ae079ef54f56f5630b1fd74a9242b7050",
+      "bytes": 10992
+    },
+    {
+      "path": "findings-DE-R88-R96-payroll.md",
+      "sha256": "6deed8f4633b11fafbdf4b99f98b017be9a0088eee0c51b9efc51858bb6d8cfe",
+      "bytes": 9358
+    },
+    {
+      "path": "findings-DE-R97-R108-optimization.md",
+      "sha256": "8464012fd99679d3af9236d3b29b6eb3bcbff3d8d1f70be3400d7c47f35b652f",
+      "bytes": 10283
+    },
+    {
+      "path": "findings-employee-PIT.md",
+      "sha256": "1ed5c159f5e5e022825ae2d4bd55cf5f39e9ad5c2e85480f947a4fc0d60fc5d1",
+      "bytes": 4761
+    },
+    {
+      "path": "findings-first-PIT.md",
+      "sha256": "38ae63c04417028249a841a908df9b5fa3e524a28bef8e206f0fef05183837f5",
+      "bytes": 4687
+    },
+    {
+      "path": "germany-einvoice-check.py",
+      "sha256": "110e0d3bcea293c763bd2501472751dd61ebda4c4d589e614d12d0cba38aad49",
+      "bytes": 5304
+    },
+    {
+      "path": "germany-einvoice-old-origin-check.json",
+      "sha256": "f1db8832a5bc52cc256f0077eeeae4203f6756317fa786362d75cc2e64beaf69",
+      "bytes": 555
+    },
+    {
+      "path": "germany-einvoice-own-controls.json",
+      "sha256": "92b3cb8f81c54c364f8c63483c8ff333d74e705ff8fddfce5098fe02356503f9",
+      "bytes": 4735
+    },
+    {
+      "path": "germany-einvoice-quote-reuse-plan.json",
+      "sha256": "3eaabb7dff576cc341e939b9d29e70c6d1c3ea0a43c78062854f10efd30471e6",
+      "bytes": 349404
+    },
+    {
+      "path": "germany-einvoice-source-read-ledger.json",
+      "sha256": "0aa8c754aa381f28243cded11a02171ccbfc69f43714ac4534e36d27efcef78d",
+      "bytes": 155362
+    },
+    {
+      "path": "germany-payroll-PAP-independent-calc.py",
+      "sha256": "db631d353221e875b9a12c8a4a9b9591f6b6461fbd46e7547edba84a690a1e6b",
+      "bytes": 1735
+    },
+    {
+      "path": "germany-payroll-check.py",
+      "sha256": "f0279b28f1a4083b73f92943a872563473e0a2fd3b3fb8c1144ef22a1e44e138",
+      "bytes": 8300
+    },
+    {
+      "path": "germany-payroll-old-origin-check.json",
+      "sha256": "f6cd5888d6ee9e65b4aac1b92d1e9106facc4bc44537fc4324c6daa3dcf3c2a4",
+      "bytes": 715
+    },
+    {
+      "path": "germany-payroll-own-controls.json",
+      "sha256": "6e2128082a0968db77bfa46366d9efeb982eecaee03ec9b99b3ad00e3da82c48",
+      "bytes": 8328
+    },
+    {
+      "path": "germany-payroll-quote-reuse-plan.json",
+      "sha256": "fb45fc06c3c35d499cbc0175e4e2d1f85b993f7afdb86b5a6340ca8ab5d94e1e",
+      "bytes": 252215
+    },
+    {
+      "path": "germany-payroll-source-read-ledger.json",
+      "sha256": "aa0e530347eab2e6ada2612f7df5f589e771ece0376ea991e2940697d1e96164",
+      "bytes": 108589
+    },
+    {
+      "path": "germany-tax-optimization-check.py",
+      "sha256": "0ef3f468dd161554261a2b7ebf202cd853cc5ba3c9ffac746e37c6371ecee717",
+      "bytes": 6189
+    },
+    {
+      "path": "germany-tax-optimization-old-origin-check.json",
+      "sha256": "b0b9bb0ca1a1c2691cc190c597b78146c493eefa04f4e785560a1157f28defd8",
+      "bytes": 524
+    },
+    {
+      "path": "germany-tax-optimization-own-controls.json",
+      "sha256": "cc1d076c9c2144f1d59542d33adb02ba41b8c9c52d3972c485898ef1133b71d5",
+      "bytes": 4889
+    },
+    {
+      "path": "germany-tax-optimization-quote-reuse-plan.json",
+      "sha256": "408ed83538b620168b02192fab119d7f831501b84ccad61e7926155887108e6b",
+      "bytes": 273605
+    },
+    {
+      "path": "germany-tax-optimization-source-read-ledger.json",
+      "sha256": "b7be8217ecd86d2d8a92cdff7e3f2b73a933d74fe36d34976c03b90127a8f587",
+      "bytes": 123528
+    },
+    {
+      "path": "germany-to-switzerland-cross-border-tax-check.py",
+      "sha256": "21eeb682ea66034fff488b546e974e350c7306c91a99439efb535b1100e06f12",
+      "bytes": 5990
+    },
+    {
+      "path": "germany-to-switzerland-cross-border-tax-old-origin-check.json",
+      "sha256": "7ea2b961cd5fce491b8625d5f04a7f8eec9c898ba2886b68a897a76198f82bb0",
+      "bytes": 423
+    },
+    {
+      "path": "germany-to-switzerland-cross-border-tax-own-controls.json",
+      "sha256": "254d370f0e642ad1d82f13e64ee86b50abfc727c513d6bfb42e35b9c93dba409",
+      "bytes": 5680
+    },
+    {
+      "path": "germany-to-switzerland-cross-border-tax-quote-reuse-plan.json",
+      "sha256": "9b663b7d11f59c75776490fab2c5f71e67e7140f812b3813b1eecc5bf5e1afde",
+      "bytes": 130283
+    },
+    {
+      "path": "germany-to-switzerland-cross-border-tax-source-read-ledger.json",
+      "sha256": "97131882c7525367252ac6418df18964e6f88fc8dfd807aea9b7b5094878e3b1",
+      "bytes": 71421
+    },
+    {
+      "path": "germany-transfer-pricing-check.py",
+      "sha256": "9e1b33851767dbd5a1f495d9d243d518d85ea913f6b83ebfe0f1a24988eb35d4",
+      "bytes": 5722
+    },
+    {
+      "path": "germany-transfer-pricing-old-origin-check.json",
+      "sha256": "8db40fbf16d605b514fe0058d9f64bf60894497d7c057097666637fc5ed7f010",
+      "bytes": 631
+    },
+    {
+      "path": "germany-transfer-pricing-own-controls.json",
+      "sha256": "76f8fdf3fd0718ace88a9da5ec3e04d12fa1fdec940b57bc11ff79f739a357d7",
+      "bytes": 4963
+    },
+    {
+      "path": "germany-transfer-pricing-quote-reuse-plan.json",
+      "sha256": "6ba64e1880b61baf994f897bd9aca890469719956f980f9ac2963a2ff51747cf",
+      "bytes": 253516
+    },
+    {
+      "path": "germany-transfer-pricing-source-read-ledger.json",
+      "sha256": "fa61a07747eabc36dab31fb7005a0b157d45d28b68f8581a0f1964eadabf2c81",
+      "bytes": 143780
+    },
+    {
+      "path": "germany-vat-return-check.py",
+      "sha256": "975b5717efad3b1edb813434ba52a7b67a5cff4ed585403ba61039fcfaf9f749",
+      "bytes": 6033
+    },
+    {
+      "path": "germany-vat-return-old-origin-check.json",
+      "sha256": "9133ce8a041a178bbd071979ae79b865b1e583bd8afbce8e1bd45374ed5cda34",
+      "bytes": 398
+    },
+    {
+      "path": "germany-vat-return-own-controls.json",
+      "sha256": "674fae64c308c683e3801222f49bbb20049c45f9a2e6b12defc4f151496992ce",
+      "bytes": 4450
+    },
+    {
+      "path": "germany-vat-return-quote-reuse-plan.json",
+      "sha256": "9bab9b073a0e62c7f7cd5ca1b92debb5c54f80f3be533f365b7229eeeb78b034",
+      "bytes": 208498
+    },
+    {
+      "path": "germany-vat-return-source-read-ledger.json",
+      "sha256": "a2c7a849f9f4e58fbc279ddbfc6323f7d9873fbb745fd3059bf54d7d904fb880",
+      "bytes": 78651
+    },
+    {
+      "path": "guide-snapshots/README.md",
+      "sha256": "9a5d36d017a780727a82a1235c3f351a4e5a8ca5b2135e4be9cb04a5dc6ebcc4",
+      "bytes": 5093
+    },
+    {
+      "path": "guide-snapshots/de-capital-gains.md",
+      "sha256": "d6ad76e43de497f0374419344e03cef72fdba5c3e06ba80b13adbb8acdbd7322",
+      "bytes": 31552
+    },
+    {
+      "path": "guide-snapshots/de-corporate-tax.md",
+      "sha256": "eb70e6984dd86812a26e6bf380b38e2c504cc1c3eb7055a5f5d956d6944b3141",
+      "bytes": 39559
+    },
+    {
+      "path": "guide-snapshots/de-crypto-tax.md",
+      "sha256": "70aea2e9373458a904f6cef335c15302b9de48a6bc845c5e14e7144b5e99e35a",
+      "bytes": 36842
+    },
+    {
+      "path": "guide-snapshots/de-einkommensteuer-freelancer.md",
+      "sha256": "24b5037c53e61ddfe3fbabce6ec11fbd53cde225ff07c70abaa36587376f9e20",
+      "bytes": 38293
+    },
+    {
+      "path": "guide-snapshots/de-employee-income-tax.md",
+      "sha256": "6cbb6da4bc3bf6f54b987da6e415a7ef8f797aae3c02af05dbb05c7c8690c3ee",
+      "bytes": 28520
+    },
+    {
+      "path": "guide-snapshots/de-estimated-tax.md",
+      "sha256": "5d5f9d8e80b08e2299130e2fe59328714838a89f40a54800eac2e46368e4c382",
+      "bytes": 23897
+    },
+    {
+      "path": "guide-snapshots/de-income-tax.md",
+      "sha256": "2f4e335bbdaa39f04d46874ae1d114460d8f8b5da55238ef2555071b9c7d47dd",
+      "bytes": 26109
+    },
+    {
+      "path": "guide-snapshots/de-non-resident-tax.md",
+      "sha256": "2771446fffdebcafb42c3f4875418d5c66839a2cdcce4473b2c5bd426b7d290c",
+      "bytes": 32645
+    },
+    {
+      "path": "guide-snapshots/de-partners-and-part-year.md",
+      "sha256": "4461747b0cfdabd2666425c03c0660b57ca431a6d193b8253a48b62a97b28eb0",
+      "bytes": 31130
+    },
+    {
+      "path": "guide-snapshots/de-payroll-benefits.md",
+      "sha256": "6490866ed01c76228acd389426527eecc10b5c835a082799868ed9a5fe8aa62a",
+      "bytes": 37167
+    },
+    {
+      "path": "guide-snapshots/de-payroll.md",
+      "sha256": "f7864d22ecb5e51e67d65e1c799dd335abe3dc120be7e556779c84ac2df80382",
+      "bytes": 52385
+    },
+    {
+      "path": "guide-snapshots/de-rental-income.md",
+      "sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e",
+      "bytes": 48829
+    },
+    {
+      "path": "guide-snapshots/de-self-employed-income-tax.md",
+      "sha256": "7f38fa2dce9edf71f200125f8595a885cce73bd96efc52485ae9cba26436ca47",
+      "bytes": 26983
+    },
+    {
+      "path": "guide-snapshots/de-social-contributions.md",
+      "sha256": "440c63cff96c29ab6ba597bc1d96e7e0183665c6aeb547b0c2b184658cf22f5d",
+      "bytes": 53753
+    },
+    {
+      "path": "guide-snapshots/de-trade-tax.md",
+      "sha256": "626bcf76590a68fcd9951f6b2b509aa39fa3a4ef38314b1ae0a4ab9ed2a3575a",
+      "bytes": 38126
+    },
+    {
+      "path": "guide-snapshots/de-treaty-withholding-rates.md",
+      "sha256": "98b7a3ed15a0ff174004be9b2975f1c920b1a6ad752b7bb38ba05038c21eb7a1",
+      "bytes": 30095
+    },
+    {
+      "path": "guide-snapshots/de-uk-employer-first-hire.md",
+      "sha256": "7f2bb0b78a274a979c60708a8d2967859daed0a46618ed2b76e6e2787fd7f0ff",
+      "bytes": 15448
+    },
+    {
+      "path": "guide-snapshots/de-vat-annual-and-special-schemes.md",
+      "sha256": "51433fb5a8203b3d7466cfd1378ee2b28dc7bfd76f2e423cdf420cd714677867",
+      "bytes": 32537
+    },
+    {
+      "path": "guide-snapshots/germany-bookkeeping.md",
+      "sha256": "0ed2aceb7063d9f5ce2ed536ba2f647e74fcbf84d86e53eb7e3617ab3526efae",
+      "bytes": 64266
+    },
+    {
+      "path": "guide-snapshots/germany-einvoice.md",
+      "sha256": "f11973431a1c837ca473eeea4884817dd31faa5b3f327775ad80f451a399d835",
+      "bytes": 71678
+    },
+    {
+      "path": "guide-snapshots/germany-financial-statements.md",
+      "sha256": "72b604b3dc422f4b2f9e3af09342a64aed00a176ecccc1875978df8a931fffbf",
+      "bytes": 70759
+    },
+    {
+      "path": "guide-snapshots/germany-formation.md",
+      "sha256": "3cb9d734f539ebffa8836dd49114792a4433d609aab12a32aa303448dea73da3",
+      "bytes": 79817
+    },
+    {
+      "path": "guide-snapshots/germany-payroll.md",
+      "sha256": "5a2eec995028a0fa55991eda2600a92904c6f7d11b9e8220a6e55d4a85942564",
+      "bytes": 59531
+    },
+    {
+      "path": "guide-snapshots/germany-tax-optimization.md",
+      "sha256": "fa5036e6c87c3c778fcd65270a5a151ec007dd37e46d536ab3ff44ee6178c403",
+      "bytes": 44775
+    },
+    {
+      "path": "guide-snapshots/germany-to-switzerland-cross-border-tax.md",
+      "sha256": "49bb497e26ed61b20ad31b474a7503f6eaae113e5a5c20dc7e0b0b604041a6d4",
+      "bytes": 28479
+    },
+    {
+      "path": "guide-snapshots/germany-transfer-pricing.md",
+      "sha256": "6484533ed7d6864dee6ccdd2c67e04a9478abf59c7d362bfcdecd172aef120cb",
+      "bytes": 66136
+    },
+    {
+      "path": "guide-snapshots/germany-vat-return.md",
+      "sha256": "0648208e05e68321e55227681b1351328ac36a5d503b8d6d81cb6ea9f6d24ef7",
+      "bytes": 40083
+    },
+    {
+      "path": "guide-snapshots/leaving-germany-exit-tax.md",
+      "sha256": "07a1281e07643bd5beee21a7c190692b5205f287f0b01662cf4478f28cadc100",
+      "bytes": 24926
+    },
+    {
+      "path": "guide-snapshots/references.md",
+      "sha256": "1ad2b9b85a14e53ca662e3b3da639a60ad3450c78a9b76e04a516099040dbd87",
+      "bytes": 4209
+    },
+    {
+      "path": "initial-pair-identity-check.json",
+      "sha256": "6465d74e8cde949e0cf7c6daf3a97cb214978fcfe30b9f9ea0d4c35847137ce6",
+      "bytes": 20077
+    },
+    {
+      "path": "leaving-germany-exit-tax-check.py",
+      "sha256": "4171303a1d36d45f20950cfb886a00ef4f40a019c0abf5871e45e970f85c8766",
+      "bytes": 4037
+    },
+    {
+      "path": "leaving-germany-exit-tax-old-origin-check.json",
+      "sha256": "201ae73b10cf47d0ff4e6cbee2ed03996b08b062ce8f8f7515c094175dce6f54",
+      "bytes": 162
+    },
+    {
+      "path": "leaving-germany-exit-tax-own-controls.json",
+      "sha256": "150ab34a4a1c54015108d57e03dd136e53286f9c274344d15e0f3c6e5e89a0a2",
+      "bytes": 2514
+    },
+    {
+      "path": "leaving-germany-exit-tax-source-read-ledger.json",
+      "sha256": "700726a4548a2ec50767a8f22f008265262f4b2be824325ed30eea0a8cc8667e",
+      "bytes": 25947
+    },
+    {
+      "path": "new-primary-checks/BFH-VIIIR6-12.pdf",
+      "sha256": "18a310660b30ee1211acf5e05a3528c37e77fbb58af983ae25f3df0dac3ee518",
+      "bytes": 74225
+    },
+    {
+      "path": "new-primary-checks/BFH-VIIIR6-12.reader.txt",
+      "sha256": "62332cc64b8f1d3eddc3d59f16a00eec7816f9153051a68ab8058416056bc9d8",
+      "bytes": 32170
+    },
+    {
+      "path": "new-primary-checks/DE-R05-selected-read-ledger.json",
+      "sha256": "2f9e119ea557d1c7a880dd5686994edafe00a7c787c3d8b8b86d5c0043a8cfed",
+      "bytes": 2240
+    },
+    {
+      "path": "new-primary-checks/EStH15-8-reader-extraction.json",
+      "sha256": "4f62c7962b273f45a55a1bd08d78d2266f663f30fc283695e46d1a886e747dc7",
+      "bytes": 523
+    },
+    {
+      "path": "new-primary-checks/EStH15-8.html",
+      "sha256": "585fb3f29a5bf17488d4ab46c9c99ba2a3b611010b082f3dd40ef58b01bc7c9f",
+      "bytes": 1386400
+    },
+    {
+      "path": "new-primary-checks/EStH15-8.reader.txt",
+      "sha256": "dc76ddc69bdad63b5041d127e211e2db9dd21a79f1265631913ae82c11961118",
+      "bytes": 270546
+    },
+    {
+      "path": "new-primary-checks/acquisition-receipts.json",
+      "sha256": "f9523311c8d278fa3ae40130080ccadf5888f8c335337b70cb896ca80fcf1ff6",
+      "bytes": 631
+    },
+    {
+      "path": "new-primary-checks/capital-allowance-search-only.json",
+      "sha256": "a961f2ea83a89a0e30bdbd9552b7325c49761f563af5ef9a15f782886624dd7a",
+      "bytes": 27005
+    },
+    {
+      "path": "new-primary-checks/escalated-acquisition-receipts.json",
+      "sha256": "8f232ee4a78a9e0429257508314148e7a332bf498740204dd6e0e05fa7e48d75",
+      "bytes": 889
+    },
+    {
+      "path": "new-primary-checks/estimated-official-observations.json",
+      "sha256": "96eaaf8f8209c2a09df7f4d945149990463fbada1d433b313b83a6c834a16826",
+      "bytes": 3706
+    },
+    {
+      "path": "new-primary-checks/german_abfaerbung_primary.json",
+      "sha256": "85e42523953195403353321b3d2638c2d824086cb8e2c6f4e5cd785f3c9f47b8",
+      "bytes": 26068
+    },
+    {
+      "path": "new-primary-checks/german_abfaerbung_primary_selected.json",
+      "sha256": "2400e4c91dbbd4fcb75575eec8aef52cfd35eebdbc5aae588b41e05ca0ae7b9c",
+      "bytes": 26642
+    },
+    {
+      "path": "new-primary-checks/gobd-2026/actual-selected-read-ledger.json",
+      "sha256": "422c1cb9e71939c741509877488816249e9cf32e7aaf4f041163e83dff9cbc7c",
+      "bytes": 9893
+    },
+    {
+      "path": "new-primary-checks/gobd-2026/extraction.json",
+      "sha256": "0595c5c359edc9c9290c792994ecf0d723d89519418fdba65f97c7f1f29c2fe1",
+      "bytes": 288
+    },
+    {
+      "path": "new-primary-checks/gobd-2026/fetch-receipt.json",
+      "sha256": "338f836a782921066f1907fb3ee7d571ae78e42dea5cb71d9b88a120febc4e54",
+      "bytes": 349
+    },
+    {
+      "path": "new-primary-checks/gobd-2026/initial-fetch-failure.json",
+      "sha256": "dd8068f20458010de89c08d5bad2abe41fdb73afb835c1ee9150a6b20b3e8028",
+      "bytes": 255
+    },
+    {
+      "path": "new-primary-checks/gobd-2026/official-annex.raw.html",
+      "sha256": "5987f8c5108eee225bb64aa3f91507465b1e72e9ef933c22d12ada9e380b4378",
+      "bytes": 1631532
+    },
+    {
+      "path": "new-primary-checks/gobd-2026/official-annex.reader.txt",
+      "sha256": "a9d917866136d75b8b46deebbc1e9db790301dbb2d0e56451cc399dd07f2a076",
+      "bytes": 112989
+    },
+    {
+      "path": "new-primary-checks/payroll-PAP-visual/PAP2026-physical27.png",
+      "sha256": "422aa0bc6e9d4f6c326bdceb58b8ad31880ee72f6c8b4cd5c6b9b0b26be4085c",
+      "bytes": 118298
+    },
+    {
+      "path": "new-primary-checks/payroll-PAP-visual/PAP2026-physical29.png",
+      "sha256": "40c75fdee3f2fe448a90cf5af3cf0ebd7e5a4becffdceeb7a4ec4e5fff084da1",
+      "bytes": 108144
+    },
+    {
+      "path": "new-primary-checks/payroll-PAP-visual/PAP2026-physical30.png",
+      "sha256": "f8d393c758933b1d69244faf1b0c53c1b9e5325bae38ddf95f7b707fec75300f",
+      "bytes": 65891
+    },
+    {
+      "path": "new-primary-checks/payroll-PAP-visual/actual-selected-read-receipt.json",
+      "sha256": "3597cde9075321f45639b4e40cb11ebdd031b9a8cec031977f35a312267e3004",
+      "bytes": 2208
+    },
+    {
+      "path": "new-primary-checks/payroll-SGBX26-web-observation.json",
+      "sha256": "bc5324cc1c52a3c969c6c2437ac28b0786f7d1e626d96149cd540d9e082254a0",
+      "bytes": 2670
+    },
+    {
+      "path": "new-primary-checks/payroll-remaining-gates/AAG9.failed.json",
+      "sha256": "074d4e3985c8195ee33dc7df45daae191e799eef47b270745622e953db952987",
+      "bytes": 190
+    },
+    {
+      "path": "new-primary-checks/payroll-remaining-gates/AAG9.html",
+      "sha256": "e4db9fcbf11ef99852326bdefaba72e72e9262f047db1b7c156282e2575da283",
+      "bytes": 5823
+    },
+    {
+      "path": "new-primary-checks/payroll-remaining-gates/AAG9.reader.txt",
+      "sha256": "d8318391bda01fec22060c9b486060be534d66576fe7f8b2859bfc7b43defa9d",
+      "bytes": 1487
+    },
+    {
+      "path": "new-primary-checks/payroll-remaining-gates/AAG9.receipt.json",
+      "sha256": "eea89544c313bf81c664732e3e1973db2a895af1b0003dcaa9e071869567337d",
+      "bytes": 404
+    },
+    {
+      "path": "new-primary-checks/payroll-remaining-gates/SGBVI163.failed.json",
+      "sha256": "ccb3773ce84821ac40e3bbf3db3488a608c1c19ee48c5f4c9fa9c7caec002986",
+      "bytes": 192
+    },
+    {
+      "path": "new-primary-checks/payroll-remaining-gates/SGBVI163.html",
+      "sha256": "8a31343e9b7496b118054452ba6129e5b2e06a90600b34a97d782212c10149e9",
+      "bytes": 8607
+    },
+    {
+      "path": "new-primary-checks/payroll-remaining-gates/SGBVI163.reader.txt",
+      "sha256": "0b38d63fe3b014e76ab4aa45f9a86677d5afdf1b3afd0eb58cabb582729e724f",
+      "bytes": 4858
+    },
+    {
+      "path": "new-primary-checks/payroll-remaining-gates/SGBVI163.receipt.json",
+      "sha256": "e4f5c5dad88b5b3f71232a5096bf8dff0646f44f51500998fee2c555b6347e6a",
+      "bytes": 504
+    },
+    {
+      "path": "new-primary-checks/payroll-remaining-gates/formula-visual-read-receipt.json",
+      "sha256": "cceb2285124f7db19667f6b55e63c6f40911548084fff897dfb145decf11da1d",
+      "bytes": 2934
+    },
+    {
+      "path": "new-primary-checks/treaty-scan-independent/Ua6e2c9f9ded58ef2-physical10.png",
+      "sha256": "91a4a8bb274afc2a4e0cbf210ec8c47fe5f15728f98233aba0718a8b5acc0474",
+      "bytes": 514237
+    },
+    {
+      "path": "new-primary-checks/treaty-scan-independent/Ua6e2c9f9ded58ef2-physical2.png",
+      "sha256": "d93d1681fc105b0163fe54dd99115128d3ecd0e3a3273bd1d4d09a11d5025fe5",
+      "bytes": 300137
+    },
+    {
+      "path": "new-primary-checks/treaty-scan-independent/Ua6e2c9f9ded58ef2-physical8.png",
+      "sha256": "f3124ad5e3e31b232c1539747f72321970f06a83ff6b9ffcd6ddb6e30cc0013c",
+      "bytes": 507125
+    },
+    {
+      "path": "new-primary-checks/treaty-scan-independent/Ua6e2c9f9ded58ef2-physical9.png",
+      "sha256": "4119a882af7447350c6b7ac6f9397c5ac1f209c0c4d90b3aa35c200599aea0bb",
+      "bytes": 488235
+    },
+    {
+      "path": "new-primary-checks/treaty-scan-independent/Ue32394b5ce5fc51e-physical20.png",
+      "sha256": "e76b4d8199e927864679d39c275f1c2d69484379c6ef68cbc937767e71c57921",
+      "bytes": 419230
+    },
+    {
+      "path": "new-primary-checks/treaty-scan-independent/Ue32394b5ce5fc51e-physical21.png",
+      "sha256": "0b76d59a5071d6133bb95a1949540a4b78a1cc72a78aee400c165e626c676f22",
+      "bytes": 448653
+    },
+    {
+      "path": "new-primary-checks/treaty-scan-independent/Ue32394b5ce5fc51e-physical3.png",
+      "sha256": "5a382fb263928860bd2dd29036d0d5cd5aa9be29b84bbcf5b0e188518e4db111",
+      "bytes": 384640
+    },
+    {
+      "path": "new-primary-checks/treaty-scan-independent/Ue32394b5ce5fc51e-physical7.png",
+      "sha256": "e2fe8a7f08fc59d04c2a533c05e25395b91208cb70f1bf4a5a0bdb2ca0e29d96",
+      "bytes": 457588
+    },
+    {
+      "path": "new-primary-checks/treaty-scan-independent/Ue32394b5ce5fc51e-physical8.png",
+      "sha256": "2307aa2968a4c308da405ee0eb4ea380e7a5bd8df173ea79eaadaa71a3e30bc4",
+      "bytes": 416123
+    },
+    {
+      "path": "new-primary-checks/treaty-scan-independent/Ue32394b5ce5fc51e-physical9.png",
+      "sha256": "094b952859af930ee724fa5e6c213e984d1f65765485889f89077e8dfa4d42f2",
+      "bytes": 454832
+    },
+    {
+      "path": "new-primary-checks/treaty-scan-independent/Uef4b5d31ac957a16-physical2.png",
+      "sha256": "846839fa0ddd5f4251446bd84a427b171045d80d2c050dbeeba0572b9b47e393",
+      "bytes": 565766
+    },
+    {
+      "path": "new-primary-checks/treaty-scan-independent/Uef4b5d31ac957a16-physical5.png",
+      "sha256": "737e3e87605e6f8c664738c58f51a561ca632b13c7ade669e3257ef18e34b2d9",
+      "bytes": 721684
+    },
+    {
+      "path": "new-primary-checks/treaty-scan-independent/render-manifest.json",
+      "sha256": "cabe0025431e038440edf3a9c6bb643e83a84fc7da504aa84fa91526d7eafcc8",
+      "bytes": 11292
+    },
+    {
+      "path": "new-primary-checks/treaty-scan-independent/visual-read-receipt.json",
+      "sha256": "33e8fbf3d3659893cd80f7c0c1d94ae5994d9c9172943b1cb63cc0bcbd79cbee",
+      "bytes": 13419
+    },
+    {
+      "path": "ordinary-scope-disposition.json",
+      "sha256": "7b6e0a532e58512114cc1827f6af9db83d67dd01331b177e0ce9f4205314df69",
+      "bytes": 13214
+    },
+    {
+      "path": "pending-successor-mechanical-results.json",
+      "sha256": "9d3bf021971934347654ea6be596a6a8b39b4430eb71e2d5ddf4e2ec368324c0",
+      "bytes": 19223
+    },
+    {
+      "path": "prepare-A-bridge.py",
+      "sha256": "61c7fff50c45d03b0e5b3d313f9e56d076f5f51d025ea02c538cb1cde204a4f7",
+      "bytes": 2628
+    },
+    {
+      "path": "prepare-B-bridge.py",
+      "sha256": "2f9bd617674674500cfae8c6331295631a6c0a4c1f361e8b1c20bb29b1494e80",
+      "bytes": 2456
+    },
+    {
+      "path": "prepare-estimated-bridge.py",
+      "sha256": "f8582e17142005c17c788991095b0c362a40cdc451147f5b686bf67c82610505",
+      "bytes": 2403
+    },
+    {
+      "path": "prepare-rental-bridge.py",
+      "sha256": "41b0fe8ca907691bb9118235edd062f91d0ea44fc6e23b5e2131b0240805b215",
+      "bytes": 2376
+    },
+    {
+      "path": "progress.json",
+      "sha256": "06daa47fb8ff058fd98290b068e1bfe71193dbbaa5d87a88fb3cdef90bcccf49",
+      "bytes": 16753
+    },
+    {
+      "path": "read-B-view.py",
+      "sha256": "cd2a7efad0ec203067bc1226a155bd172fd5ef98f15c8bd47c1d744d98156ace",
+      "bytes": 1269
+    },
+    {
+      "path": "read-rental-view.py",
+      "sha256": "446c4704d31949e650d7f8d741429cccbb54c69bb2e09d01a697f70bb225850b",
+      "bytes": 954
+    },
+    {
+      "path": "read-view.py",
+      "sha256": "f5b7e9a73ccf5ac7e0c6fefd806f11ccbb69c8258d503366c3f0c5cad4d447ad",
+      "bytes": 1748
+    },
+    {
+      "path": "repair-read-view.py",
+      "sha256": "83f304dfb780748397ef2ae853889dfde37213d95ff1755f7390f63c711fcae9",
+      "bytes": 893
+    },
+    {
+      "path": "report.md",
+      "sha256": "8e0eab2d02e98b258c7899df4960be76d17c1d3af0eed1983cb1973efce996e0",
+      "bytes": 8038
+    }
+  ]
+}

@@ -1,0 +1,1991 @@
+{
+  "current_Guide_sha256": "424a96380e879606f6e7b35211b32c99290361c805ad19c7b6c24babd84a9d19",
+  "pre_refresh_sha256": "5ed0b2af30ac0a6e938104aa25a8fe726efef8f66fe4c7009b5e20842c984f94",
+  "comparator": "de38edd6^",
+  "original_body_reference": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/current-and-pre-refresh-identities.json",
+  "current_main_rows": [
+    {
+      "old_native_LF": [
+        1,
+        14
+      ],
+      "old_unit_sha256": "7dbcad79928f25fd510471961a40152070a2d8169660de95df4a84e7f53299fa",
+      "current_destination": "1–14",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "1–14",
+      "predecessor_disposition": "Root DE-B03/04 surgical correction: version/date and contained-VAT/IAB profit wording; exact preimage and inverse retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "1–14"
+    },
+    {
+      "old_native_LF": [
+        16,
+        16
+      ],
+      "old_unit_sha256": "97b8c79dc175140118428cb442fe62badda3c1637290f379da400f0f483299f5",
+      "current_destination": "16–16",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "16–16",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "16–16"
+    },
+    {
+      "old_native_LF": [
+        18,
+        18
+      ],
+      "old_unit_sha256": "c2a86d2ed3705dba9077b70f22ef12140bd728a094cac15cec1fed4b9a2d6857",
+      "current_destination": "18–18",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "18–18",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "18–18"
+    },
+    {
+      "old_native_LF": [
+        20,
+        20
+      ],
+      "old_unit_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "current_destination": "20–20",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "20–20",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "20–20"
+    },
+    {
+      "old_native_LF": [
+        22,
+        25
+      ],
+      "old_unit_sha256": "25559719af38416d038b734043fea24ad126dbb025f742e0f398ed1b5a86dd6e",
+      "current_destination": "22–25",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "22–25",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "22–25"
+    },
+    {
+      "old_native_LF": [
+        27,
+        32
+      ],
+      "old_unit_sha256": "5b6cb5ae75dc57182db9c9b9ac8fba354d404dfac54474a10d644e317f40792a",
+      "current_destination": "27–32",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "27–32",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "27–32"
+    },
+    {
+      "old_native_LF": [
+        34,
+        35
+      ],
+      "old_unit_sha256": "e95159ef4d31e87cfd741bb72606e906f587ee2f269440be9d4ba06464b69225",
+      "current_destination": "34–35",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "34–35",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "34–35"
+    },
+    {
+      "old_native_LF": [
+        37,
+        37
+      ],
+      "old_unit_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "current_destination": "37–37",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "37–37",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "37–37"
+    },
+    {
+      "old_native_LF": [
+        39,
+        39
+      ],
+      "old_unit_sha256": "5ba6c22cf621bf76670383a0c325828c948b0651216517d7d62950dc691a1dd6",
+      "current_destination": "39–39",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "39–39",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "39–39"
+    },
+    {
+      "old_native_LF": [
+        41,
+        47
+      ],
+      "old_unit_sha256": "1a5591c0d1a67ed8a9249fba71d96571ce45545abc9fbdeca8fa4cbd9dfe593c",
+      "current_destination": "41–47",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "41–47",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "41–47"
+    },
+    {
+      "old_native_LF": [
+        49,
+        51
+      ],
+      "old_unit_sha256": "79fa94efb759135041245cf4e6d133a45ac4241f11945321dfb0b5ec5ea5fc57",
+      "current_destination": "49–51",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "49–51",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "49–51"
+    },
+    {
+      "old_native_LF": [
+        53,
+        53
+      ],
+      "old_unit_sha256": "98283ee7370d4304a54b7845ea5cc313ee08568f4017a351bd7514ccd0c38d08",
+      "current_destination": "53–53",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "53–53",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "53–53"
+    },
+    {
+      "old_native_LF": [
+        55,
+        103
+      ],
+      "old_unit_sha256": "923a15377b47a76ac36f71db5520228bddc57feffb74255812ce770905b6a5c7",
+      "current_destination": "55–103",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "55–103",
+      "predecessor_disposition": "Root DE-B03/04 surgical correction: version/date and contained-VAT/IAB profit wording; exact preimage and inverse retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "55–103"
+    },
+    {
+      "old_native_LF": [
+        105,
+        105
+      ],
+      "old_unit_sha256": "e1dd7cd832bbf4a55a8e8b34ef5be117278f70ee67296788df3b3a187ac00554",
+      "current_destination": "105–105",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "105–105",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "105–105"
+    },
+    {
+      "old_native_LF": [
+        107,
+        108
+      ],
+      "old_unit_sha256": "08d4bfa3e4a6b382daa9caa957646c8a724a02cc3eb5a3312e2c6f64866abb2b",
+      "current_destination": "107–108",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "107–108",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "107–108"
+    },
+    {
+      "old_native_LF": [
+        110,
+        110
+      ],
+      "old_unit_sha256": "8928026e201c827c49cb09ba3a4eb3b8712b8810262e84ecf2c13956e38715cd",
+      "current_destination": "110–110",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "110–110",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "110–110"
+    },
+    {
+      "old_native_LF": [
+        112,
+        116
+      ],
+      "old_unit_sha256": "094d4202582f157cf3560af78a76d790802610e8b6c8781281b291e1efd4aa92",
+      "current_destination": "112–116",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "112–116",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "112–116"
+    },
+    {
+      "old_native_LF": [
+        118,
+        118
+      ],
+      "old_unit_sha256": "9a270f25e12e05398c62ab8e4f5e8549be913d9681bc835958faaa3361507cd1",
+      "current_destination": "118–118",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "118–118",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "118–118"
+    },
+    {
+      "old_native_LF": [
+        120,
+        120
+      ],
+      "old_unit_sha256": "1922c5897a17fa48bb320a158b52f374f76325b7c4d357ef1fa639f050317119",
+      "current_destination": "120–120",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "120–120",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "120–120"
+    },
+    {
+      "old_native_LF": [
+        122,
+        122
+      ],
+      "old_unit_sha256": "6e8316405004f1d0aa6e951c546ca2e8f39de33db246a1d079f3fc09fa08aa2d",
+      "current_destination": "122–122",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "122–122",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "122–122"
+    },
+    {
+      "old_native_LF": [
+        124,
+        124
+      ],
+      "old_unit_sha256": "b11dcf16e8b1be1a9cbe001aee0a7144c86ce553e3eb1ac3b8bf6e2fa2b8f804",
+      "current_destination": "124–124",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "124–124",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "124–124"
+    },
+    {
+      "old_native_LF": [
+        126,
+        131
+      ],
+      "old_unit_sha256": "6e166f6edb98c11ba6aafdbe155a65a3361ae18a2130b957be55c7d13eefe63f",
+      "current_destination": "126–131",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "126–131",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "126–131"
+    },
+    {
+      "old_native_LF": [
+        133,
+        137
+      ],
+      "old_unit_sha256": "33db69d51be0c19bdef8f1814fe441bb181242fa1673c37b06db385cbcf0a802",
+      "current_destination": "133–137",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "133–137",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "133–137"
+    },
+    {
+      "old_native_LF": [
+        139,
+        139
+      ],
+      "old_unit_sha256": "4c423865e5297c4b5cd04afabd608de6425bc51b9a30089346114c21b493140f",
+      "current_destination": "139–139",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "139–139",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "139–139"
+    },
+    {
+      "old_native_LF": [
+        141,
+        144
+      ],
+      "old_unit_sha256": "ec2ed7ad9e6efba6179e6b3b5500f19a8bae25dfda84bf17fb2cbbe62684b985",
+      "current_destination": "141–144",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "141–144",
+      "predecessor_disposition": "Root DE-B03/04 surgical correction: version/date and contained-VAT/IAB profit wording; exact preimage and inverse retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "141–144"
+    },
+    {
+      "old_native_LF": [
+        146,
+        146
+      ],
+      "old_unit_sha256": "ff90d2581bfff6262633ea4411d46066e6d49031a91004dcc75a0ae4906ba4ca",
+      "current_destination": "146–146",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "146–146",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "146–146"
+    },
+    {
+      "old_native_LF": [
+        148,
+        148
+      ],
+      "old_unit_sha256": "2b9bea596368891957ec126f0e984b0beb5e893e03b106e7d1727de03d97925f",
+      "current_destination": "148–148",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "148–148",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "148–148"
+    },
+    {
+      "old_native_LF": [
+        150,
+        154
+      ],
+      "old_unit_sha256": "c53fde9a863da3605700995b8a854c4a881ec600bcfd8d21cb7db71c974eff64",
+      "current_destination": "150–158",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "150–154",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "150–158"
+    },
+    {
+      "old_native_LF": [
+        156,
+        156
+      ],
+      "old_unit_sha256": "7471305faa97ed4bc64c50ffbaced064b87337e3453184faaa846b03e447b766",
+      "current_destination": "160–160",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "156–156",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "160–160"
+    },
+    {
+      "old_native_LF": [
+        158,
+        159
+      ],
+      "old_unit_sha256": "286b5e95ca7c38933f1c3af45f5dcf273452218c36ba8419ad4cffaefa0f27d5",
+      "current_destination": "162–163",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "158–159",
+      "predecessor_disposition": "Root DE-B03/04 surgical correction: version/date and contained-VAT/IAB profit wording; exact preimage and inverse retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "162–163"
+    },
+    {
+      "old_native_LF": [
+        161,
+        161
+      ],
+      "old_unit_sha256": "b364101389b12f83c5396d689ee6ae090d7ba623be093c5c2530503b83f1c271",
+      "current_destination": "165–165",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "161–161",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "165–165"
+    },
+    {
+      "old_native_LF": [
+        163,
+        163
+      ],
+      "old_unit_sha256": "c8847dc35cffa684fe26863cf0eccd3aae3e7dc785f1e246212e674f197ae673",
+      "current_destination": "167–167",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "163–163",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "167–167"
+    },
+    {
+      "old_native_LF": [
+        165,
+        165
+      ],
+      "old_unit_sha256": "eefba5124fcb80046a88afbf8be143760ef9115480e768ac0cf2d830c310a1df",
+      "current_destination": "169–169",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "165–165",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "169–169"
+    },
+    {
+      "old_native_LF": [
+        167,
+        167
+      ],
+      "old_unit_sha256": "af55c085782c0b61bcd1018e68328ccdaac4c2ca49cafeaa6e2b6896e3367240",
+      "current_destination": "171–171",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "167–167",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "171–171"
+    },
+    {
+      "old_native_LF": [
+        169,
+        171
+      ],
+      "old_unit_sha256": "779a071cefc5e0f010bc96d1bbe98f4549387e29d5eed6ce43bd6b9e6d03188c",
+      "current_destination": "173–175",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "169–171",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "173–175"
+    },
+    {
+      "old_native_LF": [
+        173,
+        173
+      ],
+      "old_unit_sha256": "9799ccfed4953e95d210e4a9e11dbda66d9299afe8e99dd2fe2f78615457d2d1",
+      "current_destination": "177–177",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "173–173",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "177–177"
+    },
+    {
+      "old_native_LF": [
+        175,
+        175
+      ],
+      "old_unit_sha256": "23c28eb002a0a84b4c2e9a99c92b04a6c013279e9feaf522afff0cdbe0bdfe9b",
+      "current_destination": "179–179",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "175–175",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "179–179"
+    },
+    {
+      "old_native_LF": [
+        177,
+        177
+      ],
+      "old_unit_sha256": "7803daa4a9ea176eab2775036c424132a2f5f143499d309771515fb989bfe17c",
+      "current_destination": "181–181",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "177–177",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "181–181"
+    },
+    {
+      "old_native_LF": [
+        179,
+        179
+      ],
+      "old_unit_sha256": "fc82a2654c598212594066c9b1296fa3818165492c7c166aabf4e3f0393215ca",
+      "current_destination": "183–183",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "179–179",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "183–183"
+    },
+    {
+      "old_native_LF": [
+        181,
+        181
+      ],
+      "old_unit_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "current_destination": "185–185",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "181–181",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "185–185"
+    },
+    {
+      "old_native_LF": [
+        183,
+        187
+      ],
+      "old_unit_sha256": "3b6c95e2c320863b285fa5e2e79c8e707acbbf4d9666290ed80dcbb4c077ee13",
+      "current_destination": "187–191",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "183–187",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "187–191"
+    },
+    {
+      "old_native_LF": [
+        189,
+        193
+      ],
+      "old_unit_sha256": "619e254683144320ea6f0a3d417396488558a03057e25c5f67f5fafe965442f4",
+      "current_destination": "193–197",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "189–193",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "193–197"
+    },
+    {
+      "old_native_LF": [
+        195,
+        199
+      ],
+      "old_unit_sha256": "5d4673af6e9b6aeb0d20eb69e44044d93203cd8f4c9683a61b8464ecf5fc39b5",
+      "current_destination": "199–203",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "195–199",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "199–203"
+    },
+    {
+      "old_native_LF": [
+        201,
+        201
+      ],
+      "old_unit_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "current_destination": "205–205",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "201–201",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "205–205"
+    },
+    {
+      "old_native_LF": [
+        203,
+        208
+      ],
+      "old_unit_sha256": "da35ec8f0cd67f27fdcef692a373a2290424e3e5d6f05087e677730b03523f91",
+      "current_destination": "207–212",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "203–208",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "207–212"
+    },
+    {
+      "old_native_LF": [
+        210,
+        213
+      ],
+      "old_unit_sha256": "3891a8e3f3d6b2333523950fce82f5cd09277aaea97a9cfe9c4d80080fb095ab",
+      "current_destination": "214–217",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "210–213",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "214–217"
+    },
+    {
+      "old_native_LF": [
+        215,
+        215
+      ],
+      "old_unit_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "current_destination": "219–219",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "215–215",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "219–219"
+    },
+    {
+      "old_native_LF": [
+        217,
+        222
+      ],
+      "old_unit_sha256": "c6b8ea43663a0670feeae9b051f3c1309ca38a9d3aa038e205db6bdc54cbe3da",
+      "current_destination": "221–226",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "217–222",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "221–226"
+    },
+    {
+      "old_native_LF": [
+        224,
+        224
+      ],
+      "old_unit_sha256": "24306288984cfa636de0ac24a9833561c7e6c3cb47df7023c1903f57c3720a9b",
+      "current_destination": "228–228",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "224–224",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "228–228"
+    },
+    {
+      "old_native_LF": [
+        226,
+        226
+      ],
+      "old_unit_sha256": "64050ce27b42e3f27d1b2dc6ea913dde0af4d34215a09521ac970dfb31c664eb",
+      "current_destination": "230–230",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "226–226",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "230–230"
+    },
+    {
+      "old_native_LF": [
+        228,
+        249
+      ],
+      "old_unit_sha256": "99430326ec2568bda1a2da27cdd281c0974d15ac73a0e5af1ad0f649dd8b9c01",
+      "current_destination": "232–253",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "228–249",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "232–253"
+    },
+    {
+      "old_native_LF": [
+        251,
+        251
+      ],
+      "old_unit_sha256": "dd753622f7e1d612388f5931afa9fce76213f590bc12165958a5b069e8ad5e7b",
+      "current_destination": "255–255",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "251–251",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "255–255"
+    },
+    {
+      "old_native_LF": [
+        253,
+        275
+      ],
+      "old_unit_sha256": "0022fc3f020df5b49651ce325c40f465fce37c74f97cdb23cd0684bba295550f",
+      "current_destination": "257–279",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "253–275",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "257–279"
+    },
+    {
+      "old_native_LF": [
+        277,
+        277
+      ],
+      "old_unit_sha256": "c40ec3bed5c44b318ae4b47e9d8e4df9d8dd5968c9d584bd840c40c552931a18",
+      "current_destination": "281–281",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "277–277",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "281–281"
+    },
+    {
+      "old_native_LF": [
+        279,
+        303
+      ],
+      "old_unit_sha256": "c68e78d1592febe093ab21d60458d9726afae012be5d069a4e5e21023d22e079",
+      "current_destination": "283–307",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "279–303",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "283–307"
+    },
+    {
+      "old_native_LF": [
+        305,
+        305
+      ],
+      "old_unit_sha256": "ba9254a0c71c7907ed1d5f2e28df6c1eb123e0c005eecb19748ab581cd971aed",
+      "current_destination": "309–309",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "305–305",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "309–309"
+    },
+    {
+      "old_native_LF": [
+        307,
+        307
+      ],
+      "old_unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "current_destination": "311–311",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "307–307",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "311–311"
+    },
+    {
+      "old_native_LF": [
+        309,
+        314
+      ],
+      "old_unit_sha256": "4cb2a3cab10aac2712d1027356f2ea6ff532809fb754cbe94059d23485bd9427",
+      "current_destination": "313–319",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "309–314",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "313–319"
+    },
+    {
+      "old_native_LF": [
+        316,
+        316
+      ],
+      "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "current_destination": "321–321",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "316–316",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "321–321"
+    },
+    {
+      "old_native_LF": [
+        318,
+        334
+      ],
+      "old_unit_sha256": "cb93c449819c2f9984092d656069074cec6c7228358d3e4f650d0220cb310cd6",
+      "current_destination": "323–339",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "318–334",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "323–339"
+    },
+    {
+      "old_native_LF": [
+        336,
+        336
+      ],
+      "old_unit_sha256": "9809060a6befbb37cd9fabc6bff1f4b3dc3112574f8441f27611817c21b5326b",
+      "current_destination": "343–343",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "336–336",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "343–343"
+    },
+    {
+      "old_native_LF": [
+        338,
+        338
+      ],
+      "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "current_destination": "345–345",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "338–338",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "345–345"
+    },
+    {
+      "old_native_LF": [
+        340,
+        340
+      ],
+      "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "current_destination": "347–347",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "340–340",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "347–347"
+    },
+    {
+      "old_native_LF": [
+        342,
+        342
+      ],
+      "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "current_destination": "349–349",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "342–342",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "349–349"
+    },
+    {
+      "old_native_LF": [
+        344,
+        347
+      ],
+      "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "current_destination": "351–354",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "344–347",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "351–354"
+    },
+    {
+      "old_native_LF": [
+        349,
+        350
+      ],
+      "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "current_destination": "356–357",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "349–350",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "356–357"
+    },
+    {
+      "old_native_LF": [
+        352,
+        354
+      ],
+      "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+      "current_destination": "359–361",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "352–354",
+      "predecessor_disposition": "Exact current-main block retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "359–361"
+    }
+  ],
+  "pre_refresh_rows": [
+    {
+      "old_native_LF": [
+        1,
+        12
+      ],
+      "old_unit_sha256": "0f484e5d665de0d4969cbce5c4b7ed6e9795eef68046419b5984945809f65d2d",
+      "old_exact_opening": "--- name: de-einkommensteuer-freelancer description: Computes Einkommensteuer for Freiberufler including Betriebsausgaben, Sonderausgaben, and progressive tax brackets. jurisdiction: DE tax_year: 2026 last_updated: 2026-",
+      "current_destination": "1–14",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "1–14",
+      "predecessor_disposition": "Protected platform fields retained; description expanded and version/date advanced.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "1–14"
+    },
+    {
+      "old_native_LF": [
+        14,
+        14
+      ],
+      "old_unit_sha256": "97b8c79dc175140118428cb442fe62badda3c1637290f379da400f0f483299f5",
+      "old_exact_opening": "# Income tax for the self-employed in Germany (Einkommensteuer for Freiberufler and Gewerbetreibende)",
+      "current_destination": "16",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "16",
+      "predecessor_disposition": "Title retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "16"
+    },
+    {
+      "old_native_LF": [
+        16,
+        16
+      ],
+      "old_unit_sha256": "032246dc9cbfae6bad32ce39ebb9c29ac0d7b90134344b761b31ec57b3ddc76c",
+      "old_exact_opening": "How Germany taxes the profit of one self-employed person: Freiberufler or trade, the EÜR, the tariff, surcharge and church tax, expenses, special expenses, losses, prepayments, the return, late filing, and how the VAT sm",
+      "current_destination": "18",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "18",
+      "predecessor_disposition": "Year and overview retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "18"
+    },
+    {
+      "old_native_LF": [
+        18,
+        18
+      ],
+      "old_unit_sha256": "06f13eceae24bd0eb87002e30400999346da1ac5f0f9e44ba02101ab01d1f6a3",
+      "old_exact_opening": "## Scope",
+      "current_destination": "20",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "20",
+      "predecessor_disposition": "Scope heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "20"
+    },
+    {
+      "old_native_LF": [
+        20,
+        22
+      ],
+      "old_unit_sha256": "a693baba91f7102b897d1156b5f186b7c61edebf8d8fc0d0897b190bf191c4f5",
+      "old_exact_opening": "- **Covers.** One individual resident in Germany with income from self-employed work (§ 18 EStG) or a trade (§ 15 EStG), assessed alone or jointly with a spouse. Tax office: the local Finanzamt; returns go through ELSTER",
+      "current_destination": "22–25/34–35",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "22–25/34–35",
+      "predecessor_disposition": "All original populations/companions retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "22–25/34–35"
+    },
+    {
+      "old_native_LF": [
+        24,
+        24
+      ],
+      "old_unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "old_exact_opening": "## Ask the client first",
+      "current_destination": "311",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "307",
+      "predecessor_disposition": "Intake heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "311"
+    },
+    {
+      "old_native_LF": [
+        26,
+        34
+      ],
+      "old_unit_sha256": "d5b45518ba75d46d66a84369e275d8aad161480ab177e48949b69f65695f93fb",
+      "old_exact_opening": "- What exactly do you do, and on what qualification? Is a trade registered? - EÜR or books? Any notice from the tax office to keep books? - Total turnover in 2025 and expected for 2026? Small-business VAT rule (§ 19 UStG",
+      "current_destination": "313–319",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "309–314",
+      "predecessor_disposition": "All9 intake points retained across6 longer bullets:activity/legalform/books/turnover/otherincome/spouse/church/insurance/prepayments-loss-filing.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "313–319"
+    },
+    {
+      "old_native_LF": [
+        36,
+        36
+      ],
+      "old_unit_sha256": "e6898fcf2842cd2ef41957dac3ba9d4c6e9e4c64f7b58641d5a57190035c1291",
+      "old_exact_opening": "## The method, step by step",
+      "current_destination": "122–217",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "122–213",
+      "predecessor_disposition": "Method heading distributed into explicit computation and filing sections.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "122–217"
+    },
+    {
+      "old_native_LF": [
+        38,
+        46
+      ],
+      "old_unit_sha256": "e25b2b08b8abf20713c2b10f6c9e884d101580f8def3c2496e03e9c41c5471a4",
+      "old_exact_opening": "1. **Type of income:** § 18 or § 15 EStG. Register within one month ([§ 138(4) AO](https://www.gesetze-im-internet.de/ao_1977/__138.html): \"innerhalb eines Monats nach dem meldepflichtigen Ereignis\"). 2. **VAT status:** ",
+      "current_destination": "23–35/124–217",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "23–35/124–213",
+      "predecessor_disposition": "All9 method steps retained:classification,method,VAT,profit,taxablebase,tariff+surcharges,credit,payment,filing.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "23–35/124–217"
+    },
+    {
+      "old_native_LF": [
+        48,
+        48
+      ],
+      "old_unit_sha256": "c463d5f1ce9dc548c9042fe9885244ca8269d7d27e9010d4b63893f7bc4bb47d",
+      "old_exact_opening": "## Freiberufler or trade",
+      "current_destination": "20",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "20",
+      "predecessor_disposition": "Profession heading consolidated.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "20"
+    },
+    {
+      "old_native_LF": [
+        50,
+        50
+      ],
+      "old_unit_sha256": "499034ce53c4263807d5e39623272e03566beafb15566fb31fc2a084860ef542",
+      "old_exact_opening": "The split decides trade tax, registration and the bookkeeping duty, not the tariff.",
+      "current_destination": "25",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "25",
+      "predecessor_disposition": "Tariff unchanged by classification.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "25"
+    },
+    {
+      "old_native_LF": [
+        52,
+        53
+      ],
+      "old_unit_sha256": "80f05c461aaff34def2b2c8bfcf772627e579e7bda4e136f8868eb80ede4f90c",
+      "old_exact_opening": "- **Freiberufler ([§ 18(1) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__18.html)).** Self-employed scientific, artistic, writing, teaching or educational work, and the named professions (among them doctors, dent",
+      "current_destination": "23",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "23",
+      "predecessor_disposition": "Profession list and staff supervision retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "23"
+    },
+    {
+      "old_native_LF": [
+        55,
+        60
+      ],
+      "old_unit_sha256": "6e8d0602e41d14ae2dcac870a8ba5f01d480f0437e0353f62b4b9d5bf2b63573",
+      "old_exact_opening": "| Point | Freiberufler | Trade | | --- | --- | --- | | Trade tax | None ([§ 2(1) GewStG](https://www.gesetze-im-internet.de/gewstg/__2.html)) | Above the allowance below; partly credited (§ 35 EStG) | | Registration with",
+      "current_destination": "27–32",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "27–32",
+      "predecessor_disposition": "All comparison rows retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "27–32"
+    },
+    {
+      "old_native_LF": [
+        62,
+        66
+      ],
+      "old_unit_sha256": "546b48b027bf66316552cfc6b2039bc06551895fee189d7c4754e7ec477c3f23",
+      "old_exact_opening": "| Trade limits | Value | Source | | --- | --- | --- | | Trade tax allowance for individuals and partnerships, per business per year; only the excess is taxed | EUR 24,500 | [§ 11(1) GewStG](https://www.gesetze-im-interne",
+      "current_destination": "65–67",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "65–67",
+      "predecessor_disposition": "Trade allowance and both bookkeeping limits retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "65–67"
+    },
+    {
+      "old_native_LF": [
+        68,
+        68
+      ],
+      "old_unit_sha256": "f3790cb094ee66f155202b2e2c79e3fa991ec4a60ed25a5a4b32a6a8eb3bb7ee",
+      "old_exact_opening": "Either limit is enough. The duty starts only with the financial year after the tax office's notice (§ 141(2) AO). Whoever must keep books under another law, such as a merchant under the Commercial Code, must also do so f",
+      "current_destination": "133",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "133",
+      "predecessor_disposition": "Bookkeeping notice gate retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "133"
+    },
+    {
+      "old_native_LF": [
+        70,
+        70
+      ],
+      "old_unit_sha256": "3ec4c51096c72408af0f1f5f1bdade628dd9c1206fe99f9cf400dfdab9028e8d",
+      "old_exact_opening": "## How profit is found",
+      "current_destination": "120",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "120",
+      "predecessor_disposition": "Profit heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "120"
+    },
+    {
+      "old_native_LF": [
+        72,
+        72
+      ],
+      "old_unit_sha256": "b11dcf16e8b1be1a9cbe001aee0a7144c86ce553e3eb1ac3b8bf6e2fa2b8f804",
+      "old_exact_opening": "For a trade and for self-employed work the taxed income is the profit (§ 2(2) EStG).",
+      "current_destination": "124",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "124",
+      "predecessor_disposition": "Profit definition.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "124"
+    },
+    {
+      "old_native_LF": [
+        74,
+        79
+      ],
+      "old_unit_sha256": "e5716e5d2d6c990d2bbe5e49f7290f8044e769f9a3a4c6af0c7d8d8f6dffa0e4",
+      "old_exact_opening": "| Criterion | EÜR (§ 4(3) EStG) | Balance sheet (§ 4(1), § 5 EStG) | | --- | --- | --- | | Who | Anyone not bound by law to keep books who also keeps none. Always open to a Freiberufler | Traders bound to keep books, and",
+      "current_destination": "126–131",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "126–131",
+      "predecessor_disposition": "All method/timing/form comparison cells retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "126–131"
+    },
+    {
+      "old_native_LF": [
+        81,
+        84
+      ],
+      "old_unit_sha256": "cf36f5b1a7cf5d8004d0c1bdda95f01c15b86b7dcbb13ad4d3ea577a5f7fc7db",
+      "old_exact_opening": "- **Year end.** Regularly recurring receipts and payments made a short time before or after the year end count in the year they belong to (§ 11 EStG). - **Not pure cash** ([§ 4(3) EStG](https://www.gesetze-im-internet.de",
+      "current_destination": "134",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "134",
+      "predecessor_disposition": "Recurring year-end items retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "134"
+    },
+    {
+      "old_native_LF": [
+        86,
+        86
+      ],
+      "old_unit_sha256": "53efcc14f5d393a86f90af157064c31dc136ce36145d41156c0720d04ac36d25",
+      "old_exact_opening": "## VAT and the income tax figures (§ 19 UStG)",
+      "current_destination": "139",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "139",
+      "predecessor_disposition": "VAT heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "139"
+    },
+    {
+      "old_native_LF": [
+        88,
+        88
+      ],
+      "old_unit_sha256": "a13a18cb1acd4c89d170aa512c795c4d85abd714c9aa57749095afac9025da68",
+      "old_exact_opening": "VAT is its own tax (`germany-vat-return`), but the VAT status decides how every amount enters the EÜR.",
+      "current_destination": "141–143",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "141–143",
+      "predecessor_disposition": "VAT status applies throughout EÜR.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "141–143"
+    },
+    {
+      "old_native_LF": [
+        90,
+        94
+      ],
+      "old_unit_sha256": "b221ec93bd21e58d6bce7a34fabde564bfa07e6193980827f8fc6a54a7ba03cf",
+      "old_exact_opening": "| What | Value | Source | | --- | --- | --- | | Small business (Kleinunternehmer): total turnover of the previous calendar year not above | EUR 25,000 | [§ 19(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__19.ht",
+      "current_destination": "68–70/141",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "68–70/141",
+      "predecessor_disposition": "Both limits and startup rule retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "68–70/141"
+    },
+    {
+      "old_native_LF": [
+        96,
+        99
+      ],
+      "old_unit_sha256": "50f4f7ea74778676b75a164ecb316b078e9c646b79e23598c14bef7af762c2c1",
+      "old_exact_opening": "- **Both limits must be met**; a turnover exactly at a limit is still inside. The receipt that crosses a limit in the current year is already taxed normally; earlier receipts stay exempt (EÜR instructions, line 12). Opti",
+      "current_destination": "141",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "141",
+      "predecessor_disposition": "Exact-limit/crossing-supply/5-year election retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "141"
+    },
+    {
+      "old_native_LF": [
+        101,
+        101
+      ],
+      "old_unit_sha256": "0d9967cd09c90068334b896838f3dcc2c79216eeeb914259d7997bb2141cdf24",
+      "old_exact_opening": "## From profit to taxable income",
+      "current_destination": "165",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "161",
+      "predecessor_disposition": "Taxable-income heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "165"
+    },
+    {
+      "old_native_LF": [
+        103,
+        103
+      ],
+      "old_unit_sha256": "1f55f1458f74256b751f29a9aad79216512843aeac9632183a76f44f9cfa6dc8",
+      "old_exact_opening": "The order is set by [§ 2 EStG](https://www.gesetze-im-internet.de/estg/__2.html): income of each type (profit for a business; receipts less expenses for a job, letting and the rest) → total income (Gesamtbetrag der Einkü",
+      "current_destination": "167",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "163",
+      "predecessor_disposition": "Full statutory income-to-tax ordering retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "167"
+    },
+    {
+      "old_native_LF": [
+        105,
+        105
+      ],
+      "old_unit_sha256": "6bd13eac71bf4e2ea85025a9f106ac45565c43c56feb4cc5bb8ccc59d0ab6672",
+      "old_exact_opening": "## Figures for tax year 2026",
+      "current_destination": "37",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "37",
+      "predecessor_disposition": "Figures heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "37"
+    },
+    {
+      "old_native_LF": [
+        107,
+        107
+      ],
+      "old_unit_sha256": "e933e9730e7cfa00009e083565af4b6f67362a96118f059d673c242a366e8efe",
+      "old_exact_opening": "### The tariff (§ 32a EStG)",
+      "current_destination": "39",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "39",
+      "predecessor_disposition": "Tariff heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "39"
+    },
+    {
+      "old_native_LF": [
+        109,
+        115
+      ],
+      "old_unit_sha256": "33bd5c7e3181b4f0bf5f3cb0720c4a4a14dfe6094732c88f3696b7bdbed76312",
+      "old_exact_opening": "| Zone of taxable income (single) | From | To | Formula, English notation ([§ 32a(1) EStG](https://www.gesetze-im-internet.de/estg/__32a.html)) | | --- | --- | --- | --- | | 1, basic allowance (Grundfreibetrag) | 0 | EUR",
+      "current_destination": "41–47",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "41–47",
+      "predecessor_disposition": "All5 tariff zones and coefficients retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "41–47"
+    },
+    {
+      "old_native_LF": [
+        117,
+        119
+      ],
+      "old_unit_sha256": "4c86d54f6d223a95beefd521a2d0af58de5b94784a3e8cefa2fb8cb59917283a",
+      "old_exact_opening": "- **x** is taxable income rounded down to a full euro; **y** is one ten-thousandth of x above the basic allowance; **z** is one ten-thousandth of x above EUR 17,799 (§ 32a(1) sentence 4). Round the tax down to a full eur",
+      "current_destination": "49",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "49",
+      "predecessor_disposition": "Full-euro rounding retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "49"
+    },
+    {
+      "old_native_LF": [
+        121,
+        125
+      ],
+      "old_unit_sha256": "6700fce23c21acb9e54a31557719b990ca61a24c8c5f3e0ac716619d1d22b4df",
+      "old_exact_opening": "| Marginal rates (a rate on the next euro, not on the whole income) | Value | Source: [ministry tax booklet, 2025 edition](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-vo",
+      "current_destination": "51",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "51",
+      "predecessor_disposition": "Entry14/top42/highest45 terminology retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "51"
+    },
+    {
+      "old_native_LF": [
+        127,
+        127
+      ],
+      "old_unit_sha256": "90c1756506dc3793ed9321d2ac53019dcfd9783d19767ccb6124dfb6036da313",
+      "old_exact_opening": "The 2026 statute prints only the factors 0.42 and 0.45; the percentages come from the 2025 booklet, whose 2025 zone limits must not be used for 2026.",
+      "current_destination": "51/118",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "51/118",
+      "predecessor_disposition": "2025 booklet vintage warning retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "51/118"
+    },
+    {
+      "old_native_LF": [
+        129,
+        129
+      ],
+      "old_unit_sha256": "d6c0ae5b4fe2c7513798036deeabeb6ac6ad60fa94081909aa22dc72da226f7f",
+      "old_exact_opening": "### Solidarity surcharge and church tax",
+      "current_destination": "105",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "105",
+      "predecessor_disposition": "Soli heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "105"
+    },
+    {
+      "old_native_LF": [
+        131,
+        137
+      ],
+      "old_unit_sha256": "9dc13041a2a488e51b66cddb2df8518ec21211d7fd58c4374f46fe7a03cc5bf9",
+      "old_exact_opening": "| What | Value | Source | | --- | --- | --- | | No surcharge unless the income tax (single assessment) is more than | EUR 20,350 | [§ 3(3) no. 2 SolzG](https://www.gesetze-im-internet.de/solzg_1995/__3.html): \"in anderen",
+      "current_destination": "60–64",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "60–64",
+      "predecessor_disposition": "All Soli and church figures retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "60–64"
+    },
+    {
+      "old_native_LF": [
+        139,
+        140
+      ],
+      "old_unit_sha256": "e4af6bf8483e40a685ee0abb4bd8cb9e7ef96a6d36ae2367a7f4b55d655d343d",
+      "old_exact_opening": "- **A limit with a sliding zone, not an allowance.** Up to the limit, no surcharge. Above it, the lower of the full rate on the whole tax and the cap on the excess. Fractions of a cent are dropped (§ 4 SolzG). The base i",
+      "current_destination": "107",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "107",
+      "predecessor_disposition": "Complete Soli sliding/childbase/investment exclusion retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "107"
+    },
+    {
+      "old_native_LF": [
+        142,
+        142
+      ],
+      "old_unit_sha256": "e912a866631a769555027e25ad0b23186a05765514a598c03050a93b03c5f13f",
+      "old_exact_opening": "### Business expenses a freelancer meets",
+      "current_destination": "146",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "146",
+      "predecessor_disposition": "Business-cost heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "146"
+    },
+    {
+      "old_native_LF": [
+        144,
+        144
+      ],
+      "old_unit_sha256": "2b9bea596368891957ec126f0e984b0beb5e893e03b106e7d1727de03d97925f",
+      "old_exact_opening": "Business expenses are the costs caused by the business (§ 4(4) EStG); § 4(5) limits some. Home office room costs, gifts and entertainment must be recorded one by one and apart from other expenses, or the deduction is los",
+      "current_destination": "148",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "148",
+      "predecessor_disposition": "Business cause and separate-record gates retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "148"
+    },
+    {
+      "old_native_LF": [
+        146,
+        156
+      ],
+      "old_unit_sha256": "a20d6ae363efa042b9a0b47dd0139ea4fc0769ffb79278b0126bc477fa7a28de",
+      "old_exact_opening": "| What | Value | Source | | --- | --- | --- | | Home office room that is the centre of all work: yearly flat amount instead of actual costs | EUR 1,260 | [§ 4(5) no. 6b EStG](https://www.gesetze-im-internet.de/estg/__4.h",
+      "current_destination": "71–79/150–157",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "71–79/150–153",
+      "predecessor_disposition": "All expense table figures retained incl Austria and private-car mileage.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "71–79/150–157"
+    },
+    {
+      "old_native_LF": [
+        158,
+        161
+      ],
+      "old_unit_sha256": "5a56fcfa0fd76f3fed51817479a4fdf274bd48e7cd3c1b9d57085bb9084acdb9",
+      "old_exact_opening": "- **Home office.** Room is the centre: actual costs or the flat amount, less one twelfth per full month it is not. Otherwise no room costs, only the day rate: for a day worked mainly at home without visiting a first plac",
+      "current_destination": "150",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "150",
+      "predecessor_disposition": "Home room/day/month-overlap rules retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "150"
+    },
+    {
+      "old_native_LF": [
+        163,
+        176
+      ],
+      "old_unit_sha256": "bb4efd03075142c9862ddc03fc677cc98a4d034407b2dee1cbe26dfa1728fc7a",
+      "old_exact_opening": "| Assets | Value | Source | | --- | --- | --- | | Low-value asset (GWG), movable, wearing out, usable alone: expensed in full if cost net of deductible input VAT is not more than | EUR 800 | [§ 6(2) EStG](https://www.ges",
+      "current_destination": "80–87/160",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "80–87/156",
+      "predecessor_disposition": "Asset figures retained; eligibility and profit measures corrected under DE-B03/04.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "80–87/160"
+    },
+    {
+      "old_native_LF": [
+        178,
+        180
+      ],
+      "old_unit_sha256": "fb375915199e599b330667a46c957990b6a32b9edce3904d9b77990d0b7aaf23",
+      "old_exact_opening": "- **GWG** is tested asset by asset and is a choice. § 6(2a) offers a yearly pool instead (`germany-bookkeeping`). Other assets are depreciated evenly over their useful life, by months in the year bought (§ 7(1)). - **§ 7",
+      "current_destination": "162",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "158",
+      "predecessor_disposition": "GWG choice/pool/monthly depreciation retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "162"
+    },
+    {
+      "old_native_LF": [
+        182,
+        182
+      ],
+      "old_unit_sha256": "eefba5124fcb80046a88afbf8be143760ef9115480e768ac0cf2d830c310a1df",
+      "old_exact_opening": "### Special expenses: pension and health insurance",
+      "current_destination": "169",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "165",
+      "predecessor_disposition": "Special-expense heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "169"
+    },
+    {
+      "old_native_LF": [
+        184,
+        184
+      ],
+      "old_unit_sha256": "b65e4a0864c379d327616de9aef687182452075f3c8fc2d9b554e1c5495c526c",
+      "old_exact_opening": "Private costs: they do not reduce profit. They are taken off the total income and go on Anlage Vorsorgeaufwand.",
+      "current_destination": "171",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "167",
+      "predecessor_disposition": "Private expense versus profit and form retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "171"
+    },
+    {
+      "old_native_LF": [
+        186,
+        195
+      ],
+      "old_unit_sha256": "cef40c2f1c7b045a53a550cd9b5c4f28152aa6d2de6b8660926c4933d13ffae6",
+      "old_exact_opening": "| What | Value | Source | | --- | --- | --- | | Share of pension contributions within the cap that is deductible, from 2023 | 100% | [§ 10(3) sentence 6 EStG](https://www.gesetze-im-internet.de/estg/__10.html): \"ab dem K",
+      "current_destination": "90–97",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "90–97",
+      "predecessor_disposition": "All pension/health amounts retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "90–97"
+    },
+    {
+      "old_native_LF": [
+        197,
+        199
+      ],
+      "old_unit_sha256": "a18f6bb471d01d2fe1b9043801384f164c2496e23f56d15e56a92945e27bc8aa",
+      "old_exact_opening": "- **Pension contributions (§ 10(1) no. 2):** statutory insurance, professional schemes with comparable benefits, and a private contract paying only a lifelong monthly annuity not before age 62, with rights not inheritabl",
+      "current_destination": "173",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "169",
+      "predecessor_disposition": "Eligible pension terms/employer-share treatment retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "173"
+    },
+    {
+      "old_native_LF": [
+        201,
+        201
+      ],
+      "old_unit_sha256": "9799ccfed4953e95d210e4a9e11dbda66d9299afe8e99dd2fe2f78615457d2d1",
+      "old_exact_opening": "### Losses (§ 10d EStG)",
+      "current_destination": "177",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "173",
+      "predecessor_disposition": "Loss heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "177"
+    },
+    {
+      "old_native_LF": [
+        203,
+        207
+      ],
+      "old_unit_sha256": "189ce4353ef0c79940785c92b28a2b15e5c96bb529e76e1af18256ec7fb8f034",
+      "old_exact_opening": "| What | Value | Source | | --- | --- | --- | | Carry-back cap, single assessment | EUR 1,000,000 | [§ 10d(1) EStG](https://www.gesetze-im-internet.de/estg/__10d.html): \"bis zu einem Betrag von 1 000 000 Euro\" | | Carry-",
+      "current_destination": "98–99",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "98–99",
+      "predecessor_disposition": "Carryback and timed70/60 carryforward figures retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "98–99"
+    },
+    {
+      "old_native_LF": [
+        209,
+        209
+      ],
+      "old_unit_sha256": "e3a3c3236df094fd46624f5f4be1108c141422585322b0db7a431d4a6a62fc1c",
+      "old_exact_opening": "A loss first offsets other income of the same year; the rest goes back one year, then two, ahead of special expenses (on request carry-back is waived, only as a whole), and then forward without time limit. The office fix",
+      "current_destination": "179",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "175",
+      "predecessor_disposition": "Two-year carryback/whole waiver/annual notice/forward method retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "179"
+    },
+    {
+      "old_native_LF": [
+        211,
+        211
+      ],
+      "old_unit_sha256": "8337ea7545179eb3b91d15de74f4dc291ddc04c798f53365fa3dc7ef1b023250",
+      "old_exact_opening": "### Prepayments (Vorauszahlungen, § 37 EStG)",
+      "current_destination": "202",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "198",
+      "predecessor_disposition": "Prepayment heading consolidated.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "202"
+    },
+    {
+      "old_native_LF": [
+        213,
+        217
+      ],
+      "old_unit_sha256": "6f07110f2a12a8beabf03fa7ffe6d587bc0c0eb5496154e4395ed059ae8d2eae",
+      "old_exact_opening": "| What | Value | Source | | --- | --- | --- | | Prepayments are set only if they are at least this much in the calendar year | EUR 400 | [§ 37(5) EStG](https://www.gesetze-im-internet.de/estg/__37.html): \"mindestens 400 ",
+      "current_destination": "100–101",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "100–101",
+      "predecessor_disposition": "All three minimum figures retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "100–101"
+    },
+    {
+      "old_native_LF": [
+        219,
+        221
+      ],
+      "old_unit_sha256": "eeb9578bd61736d491d201cc7c765f01d652ce251d61e043d4534105e0b25213",
+      "old_exact_opening": "- **Due** 10 March, 10 June, 10 September and 10 December (§ 37(1)); both minimums must be met. - **Amount.** Set by notice, as a rule from the last assessment's tax less tax withheld. The office can adjust them to the e",
+      "current_destination": "202",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "198",
+      "predecessor_disposition": "Dates, quarter amounts,15-month adjustment, notice and firstyear forecast retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "202"
+    },
+    {
+      "old_native_LF": [
+        223,
+        223
+      ],
+      "old_unit_sha256": "7803daa4a9ea176eab2775036c424132a2f5f143499d309771515fb989bfe17c",
+      "old_exact_opening": "### Trade tax credit (§ 35 EStG), traders only",
+      "current_destination": "181",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "177",
+      "predecessor_disposition": "Credit heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "181"
+    },
+    {
+      "old_native_LF": [
+        225,
+        225
+      ],
+      "old_unit_sha256": "47704832d95254a30a190b22001c161bc8ac433012f7380eb196fb338a13e1e7",
+      "old_exact_opening": "Income tax is reduced by four times the trade tax base amount (Messbetrag) set for the same year ([§ 35 EStG](https://www.gesetze-im-internet.de/estg/__35.html): \"das Vierfache\"). Two caps: only the part of the tariff ta",
+      "current_destination": "183",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "179",
+      "predecessor_disposition": "All3 caps, positive-income fraction, no carry/refund,24500/rounding and3.5% retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "183"
+    },
+    {
+      "old_native_LF": [
+        227,
+        227
+      ],
+      "old_unit_sha256": "8928026e201c827c49cb09ba3a4eb3b8712b8810262e84ecf2c13956e38715cd",
+      "old_exact_opening": "### 2025 figures, for returns being filed now",
+      "current_destination": "110",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "110",
+      "predecessor_disposition": "2025 heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "110"
+    },
+    {
+      "old_native_LF": [
+        229,
+        234
+      ],
+      "old_unit_sha256": "b13e78b516128927116e5c59d4f532cc9a58257bc2464b627b68cb81523d08c3",
+      "old_exact_opening": "| What (tax year 2025) | Value | Source | | --- | --- | --- | | Basic allowance | EUR 12,096 | [Tax booklet, 2025 edition](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-vo",
+      "current_destination": "112–116",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "112–116",
+      "predecessor_disposition": "All2025 comparison figures retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "112–116"
+    },
+    {
+      "old_native_LF": [
+        236,
+        236
+      ],
+      "old_unit_sha256": "42baf74641daa5c121236e4035091030a7b5805ed2637e2dafa9344b98e572f7",
+      "old_exact_opening": "The 2025 formulas are those of § 32a in its 2025 wording, which the consolidated statute no longer prints; take them from the ELSTER program for 2025. Deadlines for 2025 are under \"Filing and payment\".",
+      "current_destination": "118",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "118",
+      "predecessor_disposition": "Actual2025 formula route retained; no2025 formula invented.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "118"
+    },
+    {
+      "old_native_LF": [
+        238,
+        238
+      ],
+      "old_unit_sha256": "763dd92c54b7ff1d3e0e663d6efad4c642c7c9ba4f168156dc0ed294ce3398f6",
+      "old_exact_opening": "## Boundaries and exceptions",
+      "current_destination": "49/68–70/84/107/183/214",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "49/68–70/84/107/179/210",
+      "predecessor_disposition": "Boundary heading folded into own methods.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "49/68–70/84/107/183/214"
+    },
+    {
+      "old_native_LF": [
+        240,
+        247
+      ],
+      "old_unit_sha256": "a708c935f9c1b2e4e5f7409698f20cf6a9081c53d84f443b72ce3d2204683e3d",
+      "old_exact_opening": "| Situation | Result | Source | | --- | --- | --- | | Taxable income exactly EUR 12,348 (single) | Zone 1: no tax. Zone 2 starts at the next euro | [§ 32a EStG](https://www.gesetze-im-internet.de/estg/__32a.html) | | Inc",
+      "current_destination": "49/57–103/107/141/163/183/214",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "49/57–103/107/141/159/179/210",
+      "predecessor_disposition": "All6 boundary cases retained; IAB200001 is tested-profit measure and KU exactlimit retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "49/57–103/107/141/163/183/214"
+    },
+    {
+      "old_native_LF": [
+        249,
+        249
+      ],
+      "old_unit_sha256": "13553a4d81793d4eb28bdef6a259906163c7624435353bd8bdf2bfbde894bef5",
+      "old_exact_opening": "## Worked cases",
+      "current_destination": "228",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "224",
+      "predecessor_disposition": "Cases heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "228"
+    },
+    {
+      "old_native_LF": [
+        251,
+        251
+      ],
+      "old_unit_sha256": "6404368ae2b7698b9b9fec7a2412acb059653e174e5e5533a21a8afab63e03f6",
+      "old_exact_opening": "2026, single unless stated; taxable income is an assumption after all deductions; church tax rounding follows state rules.",
+      "current_destination": "230/255/281/309",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "226/251/277/305",
+      "predecessor_disposition": "Stipulated example status retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "230/255/281/309"
+    },
+    {
+      "old_native_LF": [
+        253,
+        259
+      ],
+      "old_unit_sha256": "def829764dcf2f5682be8de538c28bed74543d06d8ad6c1ab0fd532ee1c99a2f",
+      "old_exact_opening": "1. **Translator, zone 3** ([§ 32a EStG](https://www.gesetze-im-internet.de/estg/__32a.html)). Taxable income EUR 50,000. z = (50,000 - 17,799) / 10,000 = 3.2201. Tax = (173.10 x 3.2201 + 2,397) x 3.2201 + 1,034.87 = 10,5",
+      "current_destination": "230–253",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "226–249",
+      "predecessor_disposition": "Translator example retained byte-exact originaloa.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "230–253"
+    },
+    {
+      "old_native_LF": [
+        261,
+        261
+      ],
+      "old_unit_sha256": "a691d33414c522ae428949269a10e0c50fe62c2e198e1f22115cdda95012801c",
+      "old_exact_opening": "## When to refuse or refer",
+      "current_destination": "34–35/221–226/343",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "34–35/217–222/336",
+      "predecessor_disposition": "Referrals distributed.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "34–35/221–226/343"
+    },
+    {
+      "old_native_LF": [
+        263,
+        270
+      ],
+      "old_unit_sha256": "63c2025105d2aa11eb2323d04fef431a2c3113e9f9fc2cf0177f580ff0dc6633",
+      "old_exact_opening": "- Partnerships (GbR, OHG, KG, Partnerschaftsgesellschaft) and companies (GmbH, UG); a partnership that also trades is a trade as a whole (§ 15(3) no. 1 EStG). People with wages only. - Whether an unnamed job is a \"simila",
+      "current_destination": "34–35/221–226/343",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "34–35/217–222/336",
+      "predecessor_disposition": "All8 referral groups retained:corporate/partnership/move/trade-mix/disposals+tariffs/foreign/property/churchinsurancecars.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "34–35/221–226/343",
+      "bounded_successor_scope": "R12: apportionment uses statutory31 qualifying wages before29 rounding/key, not uncapped all-pay."
+    },
+    {
+      "old_native_LF": [
+        272,
+        272
+      ],
+      "old_unit_sha256": "d4072aba64834048b4a4d45c60ba071f17a946e8fe090c509f8799b276b63949",
+      "old_exact_opening": "## Filing and payment",
+      "current_destination": "185",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "181",
+      "predecessor_disposition": "Filing heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "185"
+    },
+    {
+      "old_native_LF": [
+        274,
+        274
+      ],
+      "old_unit_sha256": "f47089acfc90e91a5bcbed1fed73d5666e1cd3700d8d47be7a970ab8489607d0",
+      "old_exact_opening": "**Forms**, as named in ELSTER's instructions for the 2025 return, the latest published ([ELSTER help, 2025 return](https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025)): main form ESt 1 A; Anlage S ",
+      "current_destination": "188",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "184",
+      "predecessor_disposition": "2025 ELSTER form-name route retained with precise2026 limitation.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "188"
+    },
+    {
+      "old_native_LF": [
+        276,
+        278
+      ],
+      "old_unit_sha256": "e877d264fb47a67ccf9171c07674fe12eab24dfe3c14c4af749d7886bc2ca323",
+      "old_exact_opening": "- **Who must file** ([§ 56 EStDV](https://www.gesetze-im-internet.de/estdv_1955/__56.html)): without wages, if total income exceeds the basic allowance (twice it for a joint assessment); also after a loss notice for the ",
+      "current_destination": "189",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "185",
+      "predecessor_disposition": "Filing thresholds/lossnotice/office request retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "189",
+      "bounded_successor_scope": "R12: apportionment uses statutory31 qualifying wages before29 rounding/key, not uncapped all-pay."
+    },
+    {
+      "old_native_LF": [
+        280,
+        284
+      ],
+      "old_unit_sha256": "619e254683144320ea6f0a3d417396488558a03057e25c5f67f5fafe965442f4",
+      "old_exact_opening": "| Deadline | 2026 return | 2025 return | Source | | --- | --- | --- | --- | | Without an adviser: seven months after the year | 31 July 2027 is a Saturday, so Monday 2 August 2027 | Friday 31 July 2026: passed, file now ",
+      "current_destination": "193–197",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "189–193",
+      "predecessor_disposition": "All3 deadline rows retained incl2025 and2026 dates.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "193–197"
+    },
+    {
+      "old_native_LF": [
+        286,
+        288
+      ],
+      "old_unit_sha256": "982011d3c178c169ab6ffac77d323d208b6196b664bbcf3a355df09d38dddccc",
+      "old_exact_opening": "- **One rule for every return.** The 14-month rule applies advised or not, so for an advised return it bites the day after the advised deadline unless that was extended; also when a return called in early (§ 149(4) AO, f",
+      "current_destination": "197/199",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "193/195",
+      "predecessor_disposition": "14-month and4-month early-call rules retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "197/199"
+    },
+    {
+      "old_native_LF": [
+        290,
+        296
+      ],
+      "old_unit_sha256": "7e09d64ddcc0c339ea78c99410eb2d59426251a491807c21cf33c2f5305eab46",
+      "old_exact_opening": "| Late return and interest | Value | Source | | --- | --- | --- | | Surcharge per started month of delay, on the assessed tax less prepayments and tax withheld | 0.25% | [§ 152(5) AO](https://www.gesetze-im-internet.de/a",
+      "current_destination": "207–212",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "203–208",
+      "predecessor_disposition": "All4 penalty/interest figures retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "207–212"
+    },
+    {
+      "old_native_LF": [
+        298,
+        300
+      ],
+      "old_unit_sha256": "444904b170eda01bf91de142f81e9c770c1c5f9f55da9081af77af5eab4f4f07",
+      "old_exact_opening": "- **May or must.** The surcharge may be set for any late return unless the delay is excusable (§ 152(1)). It is not compulsory if the deadline was extended, the tax is nil or below, or the tax is not above prepayments pl",
+      "current_destination": "214–215",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "210–211",
+      "predecessor_disposition": "Discretionary/mandatory exceptions and100 example retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "214–215"
+    },
+    {
+      "old_native_LF": [
+        302,
+        302
+      ],
+      "old_unit_sha256": "74e3c99fcc880eb3180c4951fcdc3cde00b52029fd2ae10ad32e53f84a4ed9a7",
+      "old_exact_opening": "## Completion checklist",
+      "current_destination": "313–319 + supplied methods",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "309–314 + supplied methods",
+      "predecessor_disposition": "Completion heading folded into intake.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "313–319 + supplied methods"
+    },
+    {
+      "old_native_LF": [
+        304,
+        311
+      ],
+      "old_unit_sha256": "d1f225944b163134de9a974ff421696fd9dfe5d7e930791fe3828f3bfeb29a0c",
+      "old_exact_opening": "- Income type settled (§ 18 or § 15) and registration within one month done. - VAT status tested against both § 19 limits; EÜR entries gross or net to match. - EÜR complete: one per business, AVEÜR attached, § 4(7) recor",
+      "current_destination": "23–217/313–319",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "23–213/309–314",
+      "predecessor_disposition": "All8 completion checks mapped to own method:classify/books,VAT,profit/deductions,tax,credit,payments,forms,calendar.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "23–217/313–319"
+    },
+    {
+      "old_native_LF": [
+        313,
+        313
+      ],
+      "old_unit_sha256": "694d80a0c515e397a6f7fffe8d899d7eff3724673440d179a00c2995d439b15a",
+      "old_exact_opening": "## Disclaimer",
+      "current_destination": "18/359–361",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "18/352–354",
+      "predecessor_disposition": "Reference disclaimer retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "18/359–361"
+    },
+    {
+      "old_native_LF": [
+        315,
+        315
+      ],
+      "old_unit_sha256": "28b731e9bc59edde08f5674832aa98956b34d4e7f7a161a88599a0e495b68b31",
+      "old_exact_opening": "This skill and its outputs are for information and computation only and are not tax, legal or financial advice. Open Accountants accepts no liability for errors, omissions or outcomes from its use. A qualified profession",
+      "current_destination": "18/359–361",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "18/352–354",
+      "predecessor_disposition": "Steuerberater review/reference warning retained.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "18/359–361"
+    },
+    {
+      "old_native_LF": [
+        317,
+        317
+      ],
+      "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "old_exact_opening": "<!-- openaccountants-cta-block -->",
+      "current_destination": "345",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "338",
+      "predecessor_disposition": "Exact CTA marker.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "345"
+    },
+    {
+      "old_native_LF": [
+        319,
+        319
+      ],
+      "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "old_exact_opening": "---",
+      "current_destination": "347",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "340",
+      "predecessor_disposition": "Exact separator.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "347"
+    },
+    {
+      "old_native_LF": [
+        321,
+        321
+      ],
+      "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "old_exact_opening": "## Talk to a verified accountant",
+      "current_destination": "349",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "342",
+      "predecessor_disposition": "Exact CTA heading.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "349"
+    },
+    {
+      "old_native_LF": [
+        323,
+        326
+      ],
+      "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "old_exact_opening": "This guide is maintained by the OpenAccountants network — accountants who put their name behind the tax answers AI gives people. The live, always-current version (and the professional behind it) is at [openaccountants.co",
+      "current_destination": "351–354",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "344–347",
+      "predecessor_disposition": "Exact original byline/maintainer.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "351–354"
+    },
+    {
+      "old_native_LF": [
+        328,
+        329
+      ],
+      "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "old_exact_opening": "- Use it in your AI: https://www.openaccountants.com/connect - Meet the accountants: https://www.openaccountants.com/network",
+      "current_destination": "356–357",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "349–350",
+      "predecessor_disposition": "Both original CTA links.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "356–357"
+    },
+    {
+      "old_native_LF": [
+        331,
+        333
+      ],
+      "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+      "old_exact_opening": "> **General reference only.** This document does not constitute tax, legal, or > financial advice. Verify figures against the cited primary sources or with a > licensed professional before relying on them.",
+      "current_destination": "359–361",
+      "disposition": "Historical topic preserved at the rebound successor destination; the original historical rationale is retained separately. DE-R01–08 corrections govern any affected universal simplification.",
+      "predecessor_current_destination": "352–354",
+      "predecessor_disposition": "Exact original disclaimer.",
+      "successor_disposition": "Destination coordinates rebound mechanically; exact old/new current claims are in canonical rows and operations.",
+      "prior_sealed_current_destination": "359–361"
+    }
+  ],
+  "predecessor_current_Guide_sha256": "24b5037c53e61ddfe3fbabce6ec11fbd53cde225ff07c70abaa36587376f9e20",
+  "prior_sealed_current_Guide_sha256": "fa101a2a0e450dcd0481d440b5aa5d647c8dab2bf3d9c95dd809dc5989507aa2"
+}

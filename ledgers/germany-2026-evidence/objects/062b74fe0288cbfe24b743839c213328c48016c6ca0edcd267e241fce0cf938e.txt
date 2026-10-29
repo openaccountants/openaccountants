@@ -1,0 +1,364 @@
+Bundesfinanzministerium - Fragen und Antworten zur Aktivrente
+Einwilligung in Reichweitenanalyse
+Helfen Sie mit, unsere Website zu verbessern!
+Wenn Sie auf „Einwilligen“ klicken, können wir statistische Informationen erfassen und besser verstehen, wie Besucherinnen und Besucher unsere Website nutzen.
+Das passiert ✓ anonym und ohne personenbezogene Daten, ✓ ohne Cookies, ✓ auf Servern in Deutschland ✓ und ohne Übermittlung an Dritte.
+Außerdem können Sie Ihre Einwilligung jederzeit auf der Datenschutzseite widerrufen.
+Einwilligen
+Ablehnen
+mehr Informationen
+Dienst:
+Matomo
+Beschreibung:
+Erfassung von Kennzahlen zur Webanalyse
+Speicherung von/Zugriff auf Informationen auf Ihrem Endgerät:
+Nach Ihrer Einwilligung wird das Skript „matomo.js“ ausgeführt. Folgende Geräteinformationen werden ausgelesen: Gerätetyp, Gerätemarke, Gerätemodell (in den meisten Fällen nicht für Desktopgeräte), Bildschirmauflösung, Betriebssystem-Version, Browser/Browser-Engines und Browser-Plugins.
+Es werden keine Matomo-Cookies auf Ihrem Endgerät gespeichert.
+Welche Daten werden erhoben?
+Neben den genannten Geräteinformationen werden Daten zu Ihren Nutzungsaktivitäten gespeichert: Ihre gekürzte/verfremdete IP-Adresse; aufgerufene URLs; die Website, von der auf die aufgerufene Seite gelangt wurde (Referrer-Site); Verweildauer; heruntergeladene PDFs; eingegebene Suchbegriffe. Die Rohdaten werden 30 Tage gespeichert und danach automatisiert gelöscht.
+Schutz personenbezogener Daten:
+Ihre IP-Adresse wird nicht vollständig gespeichert, die letzten beiden Oktettes werden zum frühestmöglichen Zeitpunkt weggelassen/verfremdet (Beispiel: 183.172.xxx.xxx). Auch weitere personenbezogene Daten werden nicht erhoben.
+Zweck der Datenerhebung und Rechtsgrundlage:
+Die Verwendung von Matomo hilft uns, die Nutzerfreundlichkeit unserer Website stetig zu verbessern. Eine Profilbildung findet nicht statt. Die Verarbeitung Ihrer Daten dient dazu, eine zielgerichtete Information der Öffentlichkeit über die Tätigkeit des Ministeriums sicherzustellen und basiert auf § 3 Absatz 1 E-Government-Gesetz in Verbindung mit § 3 BDSG. Durch die frühestmögliche Verfremdung der IP-Adresse wird dem Interesse der Nutzerinnen und Nutzer an dem Schutz ihrer personenbezogenen Daten hinreichend Rechnung getragen. Der Zugriff auf Ihre Gerätedaten erfolgt aufgrund Ihrer Einwilligung gemäß Art. 25 Abs. 1 TTDSG.
+Ort der Verarbeitung:
+Matomo wird lokal auf den Servern unseres Dienstleisters in Deutschland betrieben. Es findet keine Datenübermittlung an Matomo oder sonstige Dritte statt.
+Weitere Informationen:
+Weitere Angaben zu Ihren Rechten, zum Datenschutzverantwortlichen sowie Kontaktdaten finden Sie auf unserer Datenschutzseite.
+Navigation überspringen
+Navigation anspringen
+Suche anspringen
+Navigation
+Bundesministerium der Finanzen Federal Ministry of Finance
+Unsere Meilensteine
+Kopfzeile
+Kontakt
+Schriftgröße Schalter öffnen Schalter schließen A A
+Gebärdensprache Gebärdensprache
+Einfache Sprache Leichte Sprache
+English
+Menü Menü Schließen
+Hauptmenü
+Zurück Themen Weiter
+Zurück Top-Themen Weiter
+Überblick
+Bundeshaushalt 2027
+Sondervermögen für Infrastruktur und Klimaneutralität
+Reform der Einkommensteuer
+Frühstartrente
+Aktivrente
+Aktionsplan gegen Steuerkriminalität
+Aktionsplan gegen Organisierte Kriminalität
+Zurück Steuern Weiter
+Überblick
+Wachstumsbooster
+Steuerarten
+Internationales Steuerrecht
+Steuerschätzung & Steuereinnahmen
+Steuerverwaltung & Steuerrecht
+Steuerliche Themengebiete
+Formulare
+Zurück Öffentliche Finanzen Weiter
+Überblick
+Bundeshaushalt
+Sondervermögen für Infrastruktur und Klimaneutralität
+Stabilitätspolitik
+Föderale Finanzbeziehungen
+Nachhaltigkeitsstrategie
+Wiedergutmachung
+Daten und Berichte
+Zurück Europa Weiter
+Überblick
+Krieg in der Ukraine
+Eurogruppe & ECOFIN
+Der Euro
+EU-Haushalt
+Deutscher Aufbau- und Resilienzplan (DARP)
+Deutsch-Französische Zusammenarbeit
+Zurück Internationales/Finanzmarkt Weiter
+Überblick
+Internationale Zusammenarbeit
+Förderung der privaten Altersvorsorge
+Start-up-Standort stärken
+Finanzmarktpolitik
+Finanzkriminalität bekämpfen
+Finanzielle Bildung
+Zurück Bundesvermögen Weiter
+Überblick
+Beteiligungspolitik
+Privatisierungspolitik
+Zurück Zoll Weiter
+Überblick
+Post und Reise
+Aufgaben und Struktur des Zolls
+Finanzkontrolle Schwarzarbeit
+Zurück Briefmarken & Sammlermünzen Weiter
+Überblick
+Briefmarken
+Sammlermünzen
+Öffentliche Finanzen
+Deutschlandkarte zum Sondervermögen – Hier wirken Investitionen
+Öffentliche Finanzen
+Monitoring-Dashboard zum Sondervermögen für Infrastruktur und Klimaneutralität
+Schließen Schließen
+Zurück Ministerium Weiter
+Minister und Hausleitung
+Ostbeauftragte der Bundesregierung
+Arbeiten und Ausbildung
+Abteilungen
+Bundesfinanzakademie
+Beiräte
+BMF-Geschäftsbereich
+Veranstaltungen
+Geschichte
+Ministerium
+DRH 360° – das Online-Erlebnis des Detlev-Rohwedder-Hauses
+Ministerium
+Veranstaltungen des Bun­des­fi­nanz­mi­nis­te­ri­ums
+Monatsbericht
+BMF-Monatsbericht September 2026
+Ministerium
+Investitions- und Innovationsbeirat
+Schließen Schließen
+Zurück Service Weiter
+Newsletter
+Social Media Newsroom
+Publikationen
+Gesetze und Gesetzesvorhaben
+Rechner
+FAQ und Glossar
+Themenportale
+Transparenzinitiativen
+Hinweisgeberschutz im BMF
+Steuern
+Kfz-Steu­er-Rech­ner
+Steuern
+Lohn- und Einkommensteuerrechner
+Service
+Warnungen vor Betrugsversuchen im Namen des Bun­des­fi­nanz­mi­nis­te­ri­ums
+Ministerium
+FAQ: Antworten zu vielen Fragen aus dem Finanzbereich
+Schließen Schließen
+Zurück Presse Weiter
+Pressemitteilungen
+Termine
+Reden, Interviews und Namensartikel
+Pressekontakt
+Pressefotos
+Ministerium
+Social Media Newsroom
+Ministerium
+Reden und Interviews des Bundesfinanzministers
+Schließen Schließen
+Zurück Mediathek Weiter
+Übersicht
+BMFpresents
+#Finanzisch
+Livestream
+Bundeshaushalt
+Lars Klingbeil stellt den Haushaltsentwurf für 2027 vor
+Öffentliche Finanzen
+Infografiken zum Sondervermögen für Infrastruktur und Klimaneutralität
+Schließen Schließen
+Kontakt
+Schriftgröße Schalter öffnen Schalter schließen A A
+Gebärdensprache Gebärdensprache
+Einfache Sprache Leichte Sprache
+English
+zur Suche Suche
+Suche
+Suchbegriff(e) eingeben Suchen Suche
+Ergebnisse für:
+Beliebte Inhalte
+Kfz-Steuer-Rechner
+Aktivrente
+Reisekosten
+Kaufpreisaufteilung
+E-Rechnung
+Formulare
+Umrechnungskurse
+Sie sind hier:
+Startseite
+Weiter
+Aktuelle Seite Service Menü öffnen Menü schließen SeiteAendern
+Newsletter
+Social Media Newsroom
+Publikationen
+Gesetze und Gesetzesvorhaben
+Rechner
+FAQ und Glossar
+Themenportale
+Transparenzinitiativen
+Hinweisgeberschutz im BMF
+Service
+Weiter
+Aktuelle Seite FAQ und Glossar Menü öffnen Menü schließen SeiteAendern
+Link (intern) FAQ
+Glossar
+FAQ und Glossar
+Weiter FAQ
+25.06.2026
+Steuern
+Fragen und Antworten zur Aktivrente
+Bei dem nachfolgenden Fragen- und Antworten-Katalog (FAQ) handelt es sich lediglich um eine Orientierungshilfe und nicht um eine Verwaltungsanweisung. Die Informationen haben keine Rechts- oder Bindungswirkung. Die Entscheidung im konkreten Einzelfall bleibt immer dem zuständigen Finanzamt vorbehalten. (Stand: 25. Juni 2026)
+Zur besseren Lesbarkeit bezieht sich im folgenden Text die Abkürzung „EStG“ auf das Einkommensteuergesetz, die Abkürzung „SGB VI“ auf das Sechste Buch Sozialgesetzbuch und die Bezeichnung Arbeitnehmer auch auf Arbeitnehmerinnen.
+Zoomlink BildVergroessern
+Schließen Schließen
+Fragen und Antworten zur Aktivrente
+Quelle:iStock.com/vm {0} ({1}, {2}, {3}) Hochauflösendes Bild (jpeg, 222KB)
+Quelle:iStock.com/vm
+Inhalt
+I. Antworten auf allgemeine Fragen
+II. Fragen für Arbeitnehmer
+III. Sonderfragen für Arbeitgeber
+I. Antworten auf allgemeine Fragen
+1. Was ist die Aktivrente?
+Die Aktivrente ist ein neuer Steuerfreibetrag nach § 3 Nummer 21 EStG.
+Haben Sie die Regelaltersgrenze in der gesetzlichen Rentenversicherung bereits erreicht und sind sozialversicherungspflichtig beschäftigt, bleibt Ihr Arbeitslohn künftig bis zu 2.000 € im Monat steuerfrei.
+Die Regelung ist am 1. Januar 2026 in Kraft getreten. Sie ist erstmals auf den laufenden Arbeitslohn anzuwenden, der für einen nach dem 31. Dezember 2025 endenden Lohnzahlungszeitraum gezahlt wird, und auf sonstige Bezüge (Urlaubsgeld, Weihnachtsgeld, Bonus u.ä.), die nach dem 31. Dezember 2025 zufließen.
+2. Wer kann die Aktivrente nutzen?
+Begünstigt sind unbeschränkt und beschränkt steuerpflichtige Arbeitnehmer, die:
+ihre gesetzliche Regelaltersgrenze erreicht haben (§ 35 Satz 2 oder § 235 des SGB VI – 67 Jahre inkl. Übergangsregelung),
+nichtselbständig beschäftigt (§ 19 Absatz 1 Satz 1 Nummer 1 EStG) sind und
+für deren Arbeitslohn der Arbeitgeber Rentenversicherungsbeiträge oder Beitragszuschüsse zu berufsständischen Versorgungseinrichtungen zu entrichten hat (§ 168 Absatz 1 Nummer 1 oder Nummer 1d oder Absatz 3, § 172 Absatz 1 oder § 172a SGB VI).
+Dies gilt unabhängig davon, welche Art der Erwerbstätigkeit (nichtselbständig, verbeamtet, selbständig etc.) sie bisher ausgeübt haben. Entscheidend für die Aktivrente ist nur die aktuell ausgeübte Tätigkeit.
+Die Steuerbefreiung gilt insbesondere nicht für Einnahmen aus anderer Erwerbstätigkeit, z.B.:
+aus selbständigen Tätigkeiten
+aus einem Beamtenverhältnis
+als Abgeordneter
+aus Minijobs (geringfügige Beschäftigung)
+Der Status im Rahmen der Krankenversicherung (pflichtversichert, freiwillig gesetzlich versichert, privat versichert) ist unmaßgeblich.
+Auch bei geschäftsführenden Gesellschaftern einer Kapitalgesellschaft ist die Inanspruchnahme der Aktivrente davon abhängig, ob Rentenversicherungsbeiträge im oben genannten Sinne abgeführt werden müssen.
+3. Ist der Arbeitgeber verpflichtet, die Aktivrente beim Lohnsteuerabzug zu berücksichtigen?
+Ja. Der Arbeitgeber ist verpflichtet, den Lohnsteuerabzug entsprechend den gesetzlichen Vorgaben vorzunehmen, dazu gehört auch die Berücksichtigung des Freibetrags aus der Aktivrente im Lohnsteuerabzugsverfahren.
+4. Kann ich die Aktivrente nutzen, wenn ich als Ruhestandsbeamter ab Erreichen der gesetzlichen Regelaltersgrenze sozialversicherungspflichtig beschäftigt bin?
+Ja. Die Steuerbefreiung kann Anwendung finden, denn der Arbeitgeber hat nach § 172 Absatz 1 SGB VI für das aktive Beschäftigungsverhältnis Rentenversicherungsbeiträge abzuführen.
+5. Kann ich die Aktivrente nutzen, wenn ich zwar keine Einkünfte aus nichtselbständiger Arbeit (§ 19 EStG) erziele, jedoch sozialversicherungsrechtlich als abhängig beschäftigt gelte oder freiwillig Zahlungen an die Deutsche Rentenversicherung leiste?
+Nein. Die Steuerfreistellung nach § 3 Nummer 21 EStG richtet sich ausschließlich nach steuerrechtlichen Kriterien. Die Aktivrente kommt nur bei der Erzielung von Einnahmen aus nichtselbständiger Arbeit nach § 19 Absatz 1 Satz 1 Nummer 1 EStG in Betracht. Die sozialversicherungsrechtliche Einordnung einer Tätigkeit ist für die steuerrechtliche Beurteilung nicht maßgebend.
+6. Ich war bisher selbständig tätig; kann ich die Aktivrente trotzdem erhalten?
+Ja, wenn Sie die gesetzliche Regelaltersgrenze erreicht haben und eine nichtselbständige sozialversicherungspflichtige Beschäftigung ausüben, können Sie die Aktivrente in Anspruch nehmen. Entscheidend für die Aktivrente ist nur die aktuell ausgeübte Tätigkeit.
+7. Muss ich eine Altersrente beziehen?
+Nein. Die Aktivrente gilt unabhängig davon, ob Sie eine Altersrente beziehen.
+8. Kann ich die Aktivrente auch dann in Anspruch nehmen, wenn ich bereits früher (z.B. „Rente mit 63“, Frührente u.ä.) in Rente gegangen bin?
+Die Aktivrente kann erst ab dem Folgemonat, nach dem Sie die gesetzliche Regelaltersgrenze erreicht haben (§ 35 Satz 2 oder § 235 SGB VI – 67 Jahre inkl. Übergangsregelung), in Anspruch genommen werden.
+9. Wie hoch ist die Aktivrente?
+Die Aktivrente wird als monatlicher Steuerfreibetrag bis zu maximal 2.000 € gewährt. Dieser Freibetrag gilt nur für Monate, in denen die o.g. Voraussetzungen (siehe oben unter Abschnitt I Nummer 2) vorliegen.
+Beispiel 1:
+Der Arbeitnehmer X, der im April die Regelaltersgrenze erreicht hat, nimmt ab dem 1. Mai eine neue Beschäftigung auf. Er kann daher die Aktivrente ab Mai, somit für acht Monate in Anspruch nehmen. Steuerfrei sind daher maximal jeweils 2.000 € für acht Monate.
+Beispiel 2:
+Der Arbeitnehmer Y erhält einen Arbeitslohn von 2.500 € im Monat, für die er die Voraussetzungen der Aktivrente erfüllt. Der gezahlte monatliche Arbeitslohn ist bis zu jeweils 2.000 € steuerfrei. Der die 2.000 €-Grenze übersteigende Betrag von 500 € (2.500 € - 2.000 €) ist steuerpflichtiger Arbeitslohn.
+10. Wie wird die Aktivrente berücksichtigt?
+Arbeitslohn, der im Rahmen der Aktivrente erzielt wird, ist steuerfrei bis maximal 2.000 € monatlich. Dieser Arbeitslohn wird vom Arbeitgeber nicht bei der Lohnsteuerberechnung berücksichtigt. Nur der übrige Arbeitslohn (der 2.000 € übersteigende Betrag) unterliegt der regulären Lohnbesteuerung.
+Der Arbeitgeber trägt die zu übermittelnden Daten zu dem steuerfrei ausgezahlten Betrag in den Ausdruck der elektronischen Lohnsteuerbescheinigung ein, für 2026 in einer nicht amtlich belegten Zeile (siehe auch Abschnitt III Nummer 2).
+Zum Seitenanfang Nach oben Zum Seitenanfang
+II. Fragen für Arbeitnehmer
+1. Ab wann gilt die Aktivrente?
+Die Aktivrente gilt ab dem Folgemonat, in dem Sie die gesetzliche Regelaltersgrenze (siehe Abschnitt I Nummer 2) erreichen.
+Beispiel:
+Erreichen Sie die Regelaltersgrenze im Mai, dann können Sie die Aktivrente erst ab Juni in Anspruch nehmen.
+2. Was passiert, wenn mein Arbeitgeber es versäumt hat, den Arbeitslohn steuerfrei zu stellen?
+Der Arbeitgeber kann den Lohnsteuerabzug in der Regel nachträglich korrigieren. Ist eine Korrektur ausnahmsweise nicht mehr möglich, kann die Aktivrente nachträglich mit der Einkommensteuererklärung beantragt werden.
+3. Was passiert, wenn ich zeitgleich mehrere Arbeitgeber habe?
+Die Aktivrente kann beim Lohnsteuerabzug nicht gleichzeitig für mehrere Dienstverhältnisse in Anspruch genommen werden. Sie wird zwingend beim ersten Dienstverhältnis berücksichtigt (Steuerklassen I – V), wenn die Voraussetzungen vorliegen.
+In der Steuerklasse VI wird die Aktivrente nur berücksichtigt, wenn der Arbeitnehmer gegenüber dem Arbeitgeber bestätigt hat, dass die Aktivrente nicht bereits in einem anderen Dienstverhältnis berücksichtigt wird.
+Eine betragsmäßige Aufteilung der Aktivrente im Lohnsteuerabzugsverfahren ist nicht möglich.
+4. Was passiert, wenn ich gleichzeitig Arbeitslohn aus zwei Dienstverhältnissen erziele und der Höchstbetrag im ersten Dienstverhältnis nicht ausgeschöpft wird?
+Der Arbeitnehmer kann in diesem Fall den verbleibenden Steuerfreibetrag aus der Aktivrente für das zweite Dienstverhältnis nachträglich mit der Einkommensteuererklärung beantragen. Hierfür müssen in beiden Dienstverhältnissen die gesetzlichen Voraussetzungen für die Inanspruchnahme der Aktivrente vorliegen.
+4a. Was passiert, wenn ich im Laufe des Monats ein neues Arbeitsverhältnis aufnehme, mein Arbeitsverhältnis beende oder den Arbeitgeber wechsele?
+Wenn Ihr Arbeitsverhältnis innerhalb eines Monats endet oder Sie den Arbeitgeber wechseln, erhalten Sie die Aktivrente nur anteilig. Dabei wird von 30 Kalendertagen im Monat ausgegangen und der Freibetrag wird entsprechend der tatsächlichen Kalendertage aufgeteilt.
+Falls durch diese tageweise Aufteilung der Aktivrente der Betrag von 2.000 Euro in diesem Monat nicht vollständig genutzt wird, können Sie den vollen Freibetrag für diesen Monat mit Ihrer Einkommensteuererklärung beantragen.
+Wenn Sie im laufenden Monat eine neue Beschäftigung aufnehmen, dann erhalten sie den vollen Freibetrag von bis zu 2.000 Euro, wenn Sie Ihrem Arbeitgeber schriftlich bestätigen, dass Sie in die sem Monat noch keine Aktivrente bezogen haben. Der Arbeitgeber nimmt die Bestätigung zum Lohnkonto und stellt Ihren Arbeitslohn bis zu einem Betrag von 2.000 Euro steuerfrei. Legen Sie keine Bestätigung vor, erfolgt lediglich eine anteilige Berücksichtigung wie bei einem Arbeitgeberwechsel.
+5. Sind Sonderzahlungen (z.B. Urlaubsgeld, Weihnachtsgeld, Bonus) steuerfrei?
+Ja, soweit sie innerhalb des Freibetrags von 2.000 € pro Monat liegen. Übersteigt die Sonderzahlung zusammen mit dem laufenden monatlichen Arbeitslohn diese Grenze, ist der Mehrbetrag regulär steuerpflichtig.
+Dabei ist zu beachten, dass nur der Teil einer Sonderzahlung steuerfrei ist, der auf Zeiträume entfällt, für die die Voraussetzungen der Aktivrente vorlagen.
+6. Können nicht genutzte Freibeträge in Folgemonate übertragen werden?
+Nein. Die Aktivrente ist monatsbezogen. Nicht ausgeschöpfte Beträge (z.B. bei Teilzeit) können nicht vor- oder zurückgetragen werden, d.h. diese können nicht in einem anderen Monat verwendet werden. Dies gilt auch bei sonstigen Bezügen (Urlaubsgeld, Weihnachtsgeld, Bonus u.ä.).
+Beispiel:
+Der Arbeitnehmer, der die Regelaltersgrenze im April erreicht hatte und ab Mai für 1.500 € im Monat weiterbeschäftigt ist, erhält im Dezember neben dem laufenden Arbeitslohn von 1.500 € noch 800 € Sonderzahlung für Dezember ausgezahlt.
+Da der Arbeitnehmer die Regelaltersgrenze im April erreicht hat, ist der monatliche Arbeitslohn von 1.500 € ab Mai steuerfrei. Der nicht genutzte Freibetrag von monatlich 500 € (2.000 € - 1.500 €) kann nicht für andere Monate verwendet werden. Von der Sonderzahlung sind daher nur 500 € (1.500 € laufender Lohn + 500 € = 2.000 €) steuerfrei. Der die 2.000 €-Grenze übersteigende Betrag von 300 € (laufender Lohn 1.500 € + 800 € Sonderzahlung = 2.300 € - 2.000 €) ist steuerpflichtiger Arbeitslohn.
+7. Was gilt bei Abfindungen oder Nachzahlungen?
+Abfindungen sind im Rahmen der Aktivrente in der Regel nicht steuerfrei, da sie nicht beitragspflichtig in der Sozialversicherung sind.
+Nachzahlungen sind in der Regel steuerfrei, soweit sie laufenden Arbeitslohn oder sonstige Bezüge darstellen und für Zeiträume gezahlt werden, in denen die Voraussetzungen der Aktivrente vorlagen. Auch hierbei ist die 2.000 €-Monatsgrenze zu beachten.
+Nachzahlungen für Zeiträume vor dem Folgemonat, in dem die Regelaltersgrenze erreicht wurde, sind unabhängig vom Zeitpunkt der Zahlung nicht von der Aktivrente umfasst.
+8. Gilt die Aktivrente auch für geringfügige Beschäftigungen (Minijobs)?
+Nein. Die Aktivrente gilt nur für Einnahmen aus nichtselbständiger Arbeit nach § 19 Absatz 1 Satz 1 Nummer 1 EStG aus regulär sozialversicherungspflichtigen Beschäftigungen. Minijobs sind nicht begünstigt, weil dort pauschale Sozialversicherungsbeiträge gezahlt werden. Dies gilt unabhängig davon, ob der Arbeitgeber die Lohnsteuer mit 2 % oder 20 % pauschaliert (§ 40a Absatz 2 oder 2a EStG) oder der Lohnsteuerabzug nach den individuellen elektronischen Lohnsteuerabzugsmerkmalen (ELStAM) des Arbeitnehmers erfolgt.
+9. Was gilt bei einer Beschäftigung im sogenannten Übergangsbereich (Midijobs - ehemals Gleitzone)?
+Arbeitnehmer im sogenannten Übergangsbereich (z.B. in 2026 monatliche Arbeitsentgelte von 603,01 € - 2.000 €) können von der Aktivrente profitieren. Die Steuerfreiheit der Aktivrente ist grundsätzlich auf das volle Arbeitsentgelt anzuwenden und nicht auf das für Zwecke der Rentenversicherung reduzierte beitragspflichtige Entgelt zu begrenzen.
+10. Wie ist das Verhältnis der Aktivrente zu sonstigen Steuerbefreiungen und gilt dies dann auch für steuerfreie ehrenamtliche Tätigkeiten?
+Soweit Einnahmen nach anderen Vorschriften als der Aktivrente (z. B. § 3 Nummer 26 EStG, sog. Übungsleiterfreibetrag) steuerbefreit sind, sind diese Steuerbefreiungen vorrangig anzuwenden. Erst im Anschluss darf der verbleibende Teil der Einnahmen der Aktivrente unterworfen werden. Die Anwendung sonstiger Steuerbefreiungen reduziert somit nicht die Höhe der Aktivrente von 2.000 Euro monatlich.
+11. Muss die Aktivrente in der Steuererklärung angegeben werden?
+Grundsätzlich nicht. Die Arbeitgeber melden die steuerfreien Beträge mit der elektronischen Lohnsteuerbescheinigung an die Finanzverwaltung. Der Arbeitgeber gibt insofern die Summe der steuerfreien Aktivrentenbeträge in der elektronischen Lohnsteuerbescheinigung in einem neuen Datenfeld an und übermittelt dies an die Finanzverwaltung (zur Besonderheit für 2026 siehe auch Abschnitt III Nummer 2). Daher ist die Angabe in der Einkommensteuererklärung nur erforderlich, wenn der Arbeitgeber die Aktivrente nicht oder teilweise nicht berücksichtigt hat.
+Die Abgabe einer Steuererklärung ausschließlich aufgrund der Inanspruchnahme der Aktivrente ist nicht erforderlich. Die Verpflichtung, aus anderen Gründen eine Steuererklärung abzugeben, bleibt hingegen bestehen (z.B. aufgrund steuerpflichtigen Rentenbezugs).
+12. Wie wirkt sich die Aktivrente auf die Werbungskosten aus?
+Werbungskosten, die im Zusammenhang mit der Aktivrente stehen, sind nicht abziehbar (§ 3c EStG). Stehen Werbungskosten sowohl mit steuerpflichtigen als auch mit steuerfreien Lohnbestandteilen im Zusammenhang, sind sie entsprechend dem Verhältnis der Einnahmen in einen abziehbaren und einen nicht abziehbaren Teil aufzuteilen.
+Beispiel:
+Ein Arbeitnehmer, der seine Regelaltersgrenze bereits 2025 erreicht hat, erzielt in 2026 monatlich 3.000 € Arbeitslohn. Davon sind im Jahr 2026 2.000 € im Monat steuerfrei und insgesamt 12.000 € als steuerpflichtiger Arbeitslohn zu erfassen.
+Der Arbeitnehmer hat in 2026 Werbungskosten von 3.000 € (Arbeitsmittel und Fahrtkosten für die Wege zwischen Wohnung und erster Tätigkeitsstätte). Da diese Werbungskosten nicht ausschließlich dem steuerfreien oder steuerpflichtigen Teil zugeordnet werden können, sind sie im Verhältnis des steuerpflichtigen Arbeitslohns zum gesamten Arbeitslohn aufzuteilen. In der Folge sind 1.000 € (3.000 € x 12.000 € / 36.000 €) steuerlich abzugsfähig. 2.000 € Werbungskosten stehen mit steuerfreiem Arbeitslohn (Aktivrente) in Zusammenhang und dürfen nicht abgezogen werden.
+Der Arbeitnehmer-Pauschbetrag von 1.230 € wird auch dann in vollem Umfang beim steuerpflichtigen Arbeitslohn berücksichtigt, wenn daneben auch die Aktivrente in Anspruch genommen wird.
+13. Wie wirkt sich die Aktivrente auf die steuerliche Abziehbarkeit der Vorsorgeaufwendungen aus?
+Vorsorgeaufwendungen, die in unmittelbarem wirtschaftlichem Zusammenhang mit der Aktivrente stehen, sind nicht als Sonderausgaben abziehbar (§ 10 Absatz 2 Satz 1 Nummer 1 EStG). Stehen Vorsorgeaufwendungen sowohl mit steuerpflichtigen als auch mit steuerfreien Lohnbestandteilen im Zusammenhang, sind sie entsprechend dem Verhältnis der Einnahmen in einen abziehbaren und einen nicht abziehbaren Teil aufzuteilen.
+14. Gilt die Aktivrente auch bei Sozialversicherungspflicht im Ausland (z.B. Grenzgänger)?
+Die Aktivrente gilt unter den übrigen Voraussetzungen auch für Arbeitnehmer, für deren Arbeitslohn der Arbeitgeber zu § 168 Absatz 1 Nummer 1, 1d, Absatz 3, § 172 Absatz 1 oder § 172a SGB VI vergleichbare Rentenversicherungsbeiträge in einem Mitgliedstaat der Europäischen Union, in einem Staat, auf den das Abkommen über den Europäischen Wirtschaftsraum Anwendung findet, oder in der Schweiz abführt.
+Zum Seitenanfang Nach oben Zum Seitenanfang
+III. Sonderfragen für Arbeitgeber
+1. Wie erfolgt die steuerliche Umsetzung im Lohnsteuerabzugsverfahren?
+Bei Vorliegen der rechtlichen Voraussetzungen mindert der Arbeitgeber den steuerpflichtigen Arbeitslohn monatlich um bis zu 2.000 € (§ 3 Nummer 21 EStG). Die Aktivrente darf im Lohnsteuerabzugsverfahren nur in einem Dienstverhältnis genutzt werden.
+Bei Steuerklasse VI ist deshalb eine Bestätigung des Arbeitnehmers erforderlich, dass die Steuerbefreiung nicht zeitgleich in einem anderen Dienstverhältnis berücksichtigt wird. Diese Erklärung kann z.B. per E-Mail erfolgen und ist zum Lohnkonto zu nehmen.
+2. Wie wird die Aktivrente in der Lohnsteuerbescheinigung ausgewiesen?
+In der elektronischen Lohnsteuerbescheinigung wird die Summe der steuerfreien Aktivrentenbeträge in einem neuen Datenfeld angegeben.
+Hinweis für 2026:
+In der elektronischen Lohnsteuerbescheinigung 2026 ist die Aktivrente in einer frei belegbaren Zeile mit der konkreten Zeilenbeschreibung „SteuerfreibetragAktivrente“ (ohne Leerzeichen) einzutragen. Für die Nutzung dieses Zusatzfeldes ist die exakte Schreibweise zwingende Voraussetzung, um eine maschinelle Verwertbarkeit der Angabe sicherzustellen.
+In den Folgejahren ist eine entsprechende Anpassung der elektronischen Lohnsteuerbescheinigung vorgesehen.
+3. Welche Auswirkungen ergeben sich auf die Sozialversicherungsbeiträge?
+Die Aktivrente hat keine Auswirkungen auf die Sozialversicherungspflicht. Diese bleibt unverändert bestehen.
+Bei der Lohnsteuerberechnung und damit bei der Bemessung der Vorsorgepauschale bleiben Sozialversicherungsbeiträge auf die Aktivrente unberücksichtigt.
+In der Lohnsteuerbescheinigung werden die Sozialversicherungsbeiträge nach den allgemeinen Grundsätzen bescheinigt (siehe Abschnitt I Nummer 15 des BMF-Schreibens vom 5. September 2024, BStBl I Seite 1255).
+4. Welche konkreten Auswirkungen ergeben sich bei der Lohnsteuerberechnung?
+Arbeitslohn im Rahmen der Aktivrente ist bis zu 2.000 € im Monat nicht bei der Lohnsteuerberechnung zu berücksichtigen. Eine Lohnsteuerberechnung ist nur für den steuerpflichtigen Arbeitslohn vorzunehmen, der den Höchstbetrag übersteigt. Die Aktivrente ist im maschinellen Programmablaufplan (PAP) somit auch nicht enthalten und auch nicht im BMF-Steuerrechner umgesetzt.
+Die aktuelle Seite in Ihren Sozialen Netzwerken teilen. Teilen
+Bei Verwendung des Links kann Facebook den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Facebook teilen. Link öffnet sich in neuem Browserfenster. Facebook
+Bei Verwendung des Links kann Twitter den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Twitter teilen. Link öffnet sich in neuem Browserfenster. X/Twitter
+Bei Verwendung des Links kann LinkedIn den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über LinkedIn teilen. Link öffnet sich in neuem Browserfenster. LinkedIn
+Bei Verwendung des Links kann Xing den Besuch unserer Website ggf. ihrem Konto zuordnen. Mehr Informationen dazu erhalten Sie in unseren Erklärungen zum Datenschutz. Diese Seite über Xing teilen. Link öffnet sich in neuem Browserfenster. Xing
+Drucken Die aktuelle Seite drucken oder als PDF herunterladen.
+Mehr zum Thema
+FAQ zur Aktivrente in einer PDF-Datei PDF|145KB Download
+Broschüre „Aktivrente: Mehr Einkommen, weniger Steuern – aktiv im Alter.“ Mit der Aktivrente können Sie Ihre finanzielle Situation im Ruhestand verbessern. Dieser neue Steuerfreibetrag gilt für alle, die die … PDF|6MB Download
+Inhaltübersicht
+Folgen Sie dem Ministerium
+Instagram Instagram
+X/Twitter X/Twitter
+Facebook Facebook
+LinkedIn LinkedIn
+YouTube YouTube
+Folgen Sie dem Minister
+Instagram Instagram
+TikTok
+Facebook Facebook
+Beliebte Inhalte
+Link (intern) Kfz-Steuer-Rechner
+Link (intern) Lohn- und Einkommensteuerrechner
+Link (intern) FAQ
+Link (intern) Newsletter
+Link (intern) BMF-Schreiben
+Link (intern) Monatsbericht
+Link (intern) Umsatzsteuer-Umrechnungskurse
+Link (intern) AfA-Tabellen
+Themenportale
+Externer Link Bundeshaushalt
+Externer Link DRH 360°
+Externer Link Ostbeauftragte der Bundesregierung
+Externer Link Mit Geld & Verstand
+Externer Link Amtliche Handbücher
+Externer Link Ausschuss für Finanzstabilität
+Externer Link Datenportal
+Fußzeile
+Impressum
+Datenschutz
+Erklärung zur Barrierefreiheit
+© Bundesministerium der Finanzen
+Nach oben Zum Seitenanfang
+Schließen
+Glossar-Hilfe
+...
+Schließen Schließen
+Tabelle

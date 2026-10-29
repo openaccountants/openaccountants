@@ -1,0 +1,11 @@
+{
+  "id": "U7542a4708cc0237b",
+  "url": "https://www.gesetze-im-internet.de/milov5/__1.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7542a4708cc0237b.body",
+  "raw_sha256": "486c1093af7fa7b7f0e66b75a0967f91c773aaafe38460d9e0810cc996a0a11b",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7542a4708cc0237b.reader.txt",
+  "reader_sha256": "bebc0bff5cde7f67bc5359514d69b05e19b2521ea9dba307803ef3cf62781e9d",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

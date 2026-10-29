@@ -1,0 +1,20 @@
+{
+  "role": "writer scope correction, different independent check pending",
+  "operations": 7,
+  "full_inverse": true,
+  "six_exact_partial_domains": [
+    "IT-IND",
+    "PR",
+    "SC",
+    "TP",
+    "VAT",
+    "XB"
+  ],
+  "IT_CORP_row_and_all_other_metadata_exact": true,
+  "all_other_README_bytes_exact_outside_seven_ops": true,
+  "all_original_URLs_in_order": true,
+  "all11_actual_material_boundaries_explicitly_bound": true,
+  "claimant_input_future_form_specialist_distinctions_retained": true,
+  "Guide_changes": 0,
+  "no_country_completion_or_attestation_claim": true
+}

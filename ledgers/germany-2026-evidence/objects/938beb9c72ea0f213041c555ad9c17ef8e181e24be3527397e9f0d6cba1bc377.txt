@@ -1,0 +1,77 @@
+§ 18a UStG - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Umsatzsteuergesetz (UStG)
+§ 18a Zusammenfassende Meldung
+(1) Der Unternehmer im Sinne des § 2 hat bis zum 25. Tag nach Ablauf jedes Kalendermonats (Meldezeitraum), in dem er innergemeinschaftliche Warenlieferungen oder Lieferungen im Sinne des § 25b Absatz 2 ausgeführt hat, dem Bundeszentralamt für Steuern eine Meldung (Zusammenfassende Meldung) nach amtlich vorgeschriebenem Datensatz über die amtlich bestimmte Schnittstelle zu übermitteln, in der er die Angaben nach Absatz 7 Satz 1 Nummer 1, 2, 2a und 4 zu machen hat. Soweit die Summe der Bemessungsgrundlagen für innergemeinschaftliche Warenlieferungen und für Lieferungen im Sinne des § 25b Absatz 2 weder für das laufende Kalendervierteljahr noch für eines der vier vorangegangenen Kalendervierteljahre jeweils mehr als 50 000 Euro beträgt, kann die Zusammenfassende Meldung bis zum 25. Tag nach Ablauf des Kalendervierteljahres übermittelt werden. Übersteigt die Summe der Bemessungsgrundlage für innergemeinschaftliche Warenlieferungen und für Lieferungen im Sinne des § 25b Absatz 2 im Laufe eines Kalendervierteljahres 50 000 Euro, hat der Unternehmer bis zum 25. Tag nach Ablauf des Kalendermonats, in dem dieser Betrag überschritten wird, eine Zusammenfassende Meldung für diesen Kalendermonat und die bereits abgelaufenen Kalendermonate dieses Kalendervierteljahres zu übermitteln. Nimmt der Unternehmer die in Satz 2 enthaltene Regelung nicht in Anspruch, hat er dies gegenüber dem Bundeszentralamt für Steuern anzuzeigen. Vom 1. Juli 2010 bis zum 31. Dezember 2011 gelten die Sätze 2 und 3 mit der Maßgabe, dass an die Stelle des Betrages von 50 000 Euro der Betrag von 100 000 Euro tritt.
+(2) Der Unternehmer im Sinne des § 2 hat bis zum 25. Tag nach Ablauf jedes Kalendervierteljahres (Meldezeitraum), in dem er im übrigen Gemeinschaftsgebiet steuerpflichtige sonstige Leistungen im Sinne des § 3a Absatz 2, für die der in einem anderen Mitgliedstaat ansässige Leistungsempfänger die Steuer dort schuldet, ausgeführt hat, dem Bundeszentralamt für Steuern eine Zusammenfassende Meldung nach amtlich vorgeschriebenem Datensatz über die amtlich bestimmte Schnittstelle zu übermitteln, in der er die Angaben nach Absatz 7 Satz 1 Nummer 3 zu machen hat. Soweit der Unternehmer bereits nach Absatz 1 zur monatlichen Übermittlung einer Zusammenfassenden Meldung verpflichtet ist, hat er die Angaben im Sinne von Satz 1 in der Zusammenfassenden Meldung für den letzten Monat des Kalendervierteljahres zu machen.
+(3) Soweit der Unternehmer im Sinne des § 2 die Zusammenfassende Meldung entsprechend Absatz 1 bis zum 25. Tag nach Ablauf jedes Kalendermonats übermittelt, kann er die nach Absatz 2 vorgesehenen Angaben in die Meldung für den jeweiligen Meldezeitraum aufnehmen. Nimmt der Unternehmer die in Satz 1 enthaltene Regelung in Anspruch, hat er dies gegenüber dem Bundeszentralamt für Steuern anzuzeigen.
+(4) Die Absätze 1 bis 3 gelten nicht für Unternehmer, die § 19 Absatz 1 anwenden.
+(5) Auf Antrag kann das Finanzamt zur Vermeidung unbilliger Härten auf eine elektronische Übermittlung verzichten; in diesem Fall hat der Unternehmer eine Meldung nach amtlich vorgeschriebenem Vordruck abzugeben. § 150 Absatz 8 der Abgabenordnung gilt entsprechend. Soweit das Finanzamt nach § 18 Absatz 1 Satz 2 auf eine elektronische Übermittlung der Voranmeldung verzichtet hat, gilt dies auch für die Zusammenfassende Meldung. Für die Anwendung dieser Vorschrift gelten auch nichtselbständige juristische Personen im Sinne des § 2 Absatz 2 Nummer 2 als Unternehmer. § 18 Absatz 4f ist entsprechend anzuwenden. Die Landesfinanzbehörden übermitteln dem Bundeszentralamt für Steuern die erforderlichen Angaben zur Bestimmung der Unternehmer, die nach den Absätzen 1 und 2 zur Abgabe der Zusammenfassenden Meldung verpflichtet sind. Diese Angaben dürfen nur zur Sicherstellung der Abgabe der Zusammenfassenden Meldung verarbeitet werden. Das Bundeszentralamt für Steuern übermittelt den Landesfinanzbehörden die Angaben aus den Zusammenfassenden Meldungen, soweit diese für steuerliche Kontrollen benötigt werden.
+(6) Eine innergemeinschaftliche Warenlieferung im Sinne dieser Vorschrift ist 1.
+eine innergemeinschaftliche Lieferung im Sinne des § 6a Absatz 1 mit Ausnahme der Lieferungen neuer Fahrzeuge an Abnehmer ohne Umsatzsteuer-Identifikationsnummer;
+2.
+eine innergemeinschaftliche Lieferung im Sinne des § 6a Absatz 2;
+3.
+eine Beförderung oder Versendung im Sinne des § 6b Absatz 1 oder 4 oder ein Erwerberwechsel nach § 6b Absatz 5.
+(7) Die Zusammenfassende Meldung muss folgende Angaben enthalten: 1.
+für innergemeinschaftliche Warenlieferungen im Sinne des Absatzes 6 Nummer 1: a)
+die Umsatzsteuer-Identifikationsnummer jedes Erwerbers, die ihm in einem anderen Mitgliedstaat erteilt worden ist und unter der die innergemeinschaftlichen Warenlieferungen an ihn ausgeführt worden sind, und
+b)
+für jeden Erwerber die Summe der Bemessungsgrundlagen der an ihn ausgeführten innergemeinschaftlichen Warenlieferungen;
+2.
+für innergemeinschaftliche Warenlieferungen im Sinne des Absatzes 6 Nummer 2: a)
+die Umsatzsteuer-Identifikationsnummer des Unternehmers in den Mitgliedstaaten, in die er Gegenstände verbracht hat, und
+b)
+die darauf entfallende Summe der Bemessungsgrundlagen;
+2a.
+für Beförderungen oder Versendungen oder einen Erwerberwechsel im Sinne des Absatzes 6 Nummer 3: a)
+in den Fällen des § 6b Absatz 1 die Umsatzsteuer-Identifikationsnummer des Erwerbers im Sinne des § 6b Absatz 1 Nummer 1 und 3,
+b)
+in den Fällen des § 6b Absatz 4 die Umsatzsteuer-Identifikationsnummer des ursprünglich vorgesehenen Erwerbers im Sinne des § 6b Absatz 1 Nummer 1 und 3 oder
+c)
+in den Fällen des § 6b Absatz 5 die Umsatzsteuer-Identifikationsnummer des ursprünglich vorgesehenen Erwerbers im Sinne des § 6b Absatz 1 Nummer 1 und 3 sowie die des neuen Erwerbers;
+3.
+für im übrigen Gemeinschaftsgebiet ausgeführte steuerpflichtige sonstige Leistungen im Sinne des § 3a Absatz 2, für die der in einem anderen Mitgliedstaat ansässige Leistungsempfänger die Steuer dort schuldet: a)
+die Umsatzsteuer-Identifikationsnummer jedes Leistungsempfängers, die ihm in einem anderen Mitgliedstaat erteilt worden ist und unter der die steuerpflichtigen sonstigen Leistungen an ihn erbracht wurden,
+b)
+für jeden Leistungsempfänger die Summe der Bemessungsgrundlagen der an ihn erbrachten steuerpflichtigen sonstigen Leistungen und
+c)
+einen Hinweis auf das Vorliegen einer im übrigen Gemeinschaftsgebiet ausgeführten steuerpflichtigen sonstigen Leistung im Sinne des § 3a Absatz 2, für die der in einem anderen Mitgliedstaat ansässige Leistungsempfänger die Steuer dort schuldet;
+4.
+für Lieferungen im Sinne des § 25b Absatz 2: a)
+die Umsatzsteuer-Identifikationsnummer eines jeden letzten Abnehmers, die diesem in dem Mitgliedstaat erteilt worden ist, in dem die Versendung oder Beförderung beendet worden ist,
+b)
+für jeden letzten Abnehmer die Summe der Bemessungsgrundlagen der an ihn ausgeführten Lieferungen und
+c)
+einen Hinweis auf das Vorliegen eines innergemeinschaftlichen Dreiecksgeschäfts.
+§ 16 Absatz 6 und § 17 sind sinngemäß anzuwenden.
+(8) Die Angaben nach Absatz 7 Satz 1 Nummer 1 und 2 sind für den Meldezeitraum zu machen, in dem die Rechnung für die innergemeinschaftliche Warenlieferung ausgestellt wird, spätestens jedoch für den Meldezeitraum, in dem der auf die Ausführung der innergemeinschaftlichen Warenlieferung folgende Monat endet. Die Angaben nach Absatz 7 Satz 1 Nummer 3 und 4 sind für den Meldezeitraum zu machen, in dem die im übrigen Gemeinschaftsgebiet steuerpflichtige sonstige Leistung im Sinne des § 3a Absatz 2, für die der in einem anderen Mitgliedstaat ansässige Leistungsempfänger die Steuer dort schuldet, und die Lieferungen nach § 25b Absatz 2 ausgeführt worden sind.
+(9) Hat das Finanzamt den Unternehmer von der Verpflichtung zur Abgabe der Voranmeldungen und Entrichtung der Vorauszahlungen befreit (§ 18 Absatz 2 Satz 3), kann er die Zusammenfassende Meldung abweichend von den Absätzen 1 und 2 bis zum 25. Tag nach Ablauf jedes Kalenderjahres abgeben, in dem er innergemeinschaftliche Warenlieferungen ausgeführt hat oder im übrigen Gemeinschaftsgebiet steuerpflichtige sonstige Leistungen im Sinne des § 3a Absatz 2 ausgeführt hat, für die der in einem anderen Mitgliedstaat ansässige Leistungsempfänger die Steuer dort schuldet, wenn 1.
+die Summe seiner Lieferungen und sonstigen Leistungen im vorangegangenen Kalenderjahr 200 000 Euro nicht überstiegen hat und im laufenden Kalenderjahr voraussichtlich nicht übersteigen wird,
+2.
+die Summe seiner innergemeinschaftlichen Warenlieferungen oder im übrigen Gemeinschaftsgebiet ausgeführten steuerpflichtigen Leistungen im Sinne des § 3a Absatz 2, für die der in einem anderen Mitgliedstaat ansässige Leistungsempfänger die Steuer dort schuldet, im vorangegangenen Kalenderjahr 15 000 Euro nicht überstiegen hat und im laufenden Kalenderjahr voraussichtlich nicht übersteigen wird und
+3.
+es sich bei den in Nummer 2 bezeichneten Warenlieferungen nicht um Lieferungen neuer Fahrzeuge an Abnehmer mit Umsatzsteuer-Identifikationsnummer handelt.
+Absatz 8 gilt entsprechend.
+(10) Erkennt der Unternehmer nachträglich, dass eine von ihm abgegebene Zusammenfassende Meldung unrichtig oder unvollständig ist, so ist er verpflichtet, die ursprüngliche Zusammenfassende Meldung innerhalb eines Monats zu berichtigen.
+(11) Auf die Zusammenfassende Meldung sind mit Ausnahme von § 152 der Abgabenordnung ergänzend die für Steuererklärungen geltenden Vorschriften der Abgabenordnung anzuwenden.
+(12) Zur Erleichterung und Vereinfachung der Abgabe und Verarbeitung der Zusammenfassenden Meldung kann das Bundesministerium der Finanzen durch Rechtsverordnung mit Zustimmung des Bundesrates bestimmen, dass die Zusammenfassende Meldung auf maschinell verwertbaren Datenträgern oder durch Datenfernübertragung übermittelt werden kann. Dabei können insbesondere geregelt werden: 1.
+die Voraussetzungen für die Anwendung des Verfahrens;
+2.
+das Nähere über Form, Inhalt, Verarbeitung und Sicherung der zu übermittelnden Daten;
+3.
+die Art und Weise der Übermittlung der Daten;
+4.
+die Zuständigkeit für die Entgegennahme der zu übermittelnden Daten;
+5.
+die Mitwirkungspflichten Dritter bei der Verarbeitung der Daten;
+6.
+der Umfang und die Form der für dieses Verfahren erforderlichen besonderen Erklärungspflichten des Unternehmers.
+Zur Regelung der Datenübermittlung kann in der Rechtsverordnung auf Veröffentlichungen sachverständiger Stellen verwiesen werden; hierbei sind das Datum der Veröffentlichung, die Bezugsquelle und eine Stelle zu bezeichnen, bei der die Veröffentlichung archivmäßig gesichert niedergelegt ist.
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

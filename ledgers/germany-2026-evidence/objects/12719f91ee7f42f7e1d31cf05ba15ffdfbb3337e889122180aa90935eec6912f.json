@@ -1,0 +1,708 @@
+{
+  "role": "writer, independent recheck pending",
+  "controls": [
+    {
+      "id": "R32.holding(2, True, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Independently established private otherasset, not daily-use excluded; years represents independently determined legal holding period, not a365dayfraction method. Token flag means actual Currency/Payment Token under specific BMF exception, not every cryptoasset. Other23gates/base/tax separate.",
+      "pass": true
+    },
+    {
+      "id": "R32.holding(2, False, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Independently established private otherasset, not daily-use excluded; years represents independently determined legal holding period, not a365dayfraction method. Token flag means actual Currency/Payment Token under specific BMF exception, not every cryptoasset. Other23gates/base/tax separate.",
+      "pass": true
+    },
+    {
+      "id": "R32.holding(2, True, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Independently established private otherasset, not daily-use excluded; years represents independently determined legal holding period, not a365dayfraction method. Token flag means actual Currency/Payment Token under specific BMF exception, not every cryptoasset. Other23gates/base/tax separate.",
+      "pass": true
+    },
+    {
+      "id": "R32.holding(1, False, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Independently established private otherasset, not daily-use excluded; years represents independently determined legal holding period, not a365dayfraction method. Token flag means actual Currency/Payment Token under specific BMF exception, not every cryptoasset. Other23gates/base/tax separate.",
+      "pass": true
+    },
+    {
+      "id": "R32.holding(10, True, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Independently established private otherasset, not daily-use excluded; years represents independently determined legal holding period, not a365dayfraction method. Token flag means actual Currency/Payment Token under specific BMF exception, not every cryptoasset. Other23gates/base/tax separate.",
+      "pass": true
+    },
+    {
+      "id": "R32.holding('10.01', True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Independently established private otherasset, not daily-use excluded; years represents independently determined legal holding period, not a365dayfraction method. Token flag means actual Currency/Payment Token under specific BMF exception, not every cryptoasset. Other23gates/base/tax separate.",
+      "pass": true
+    },
+    {
+      "id": "R33.receipt2026-12-15",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual irrevocable request reaches paying institution during current2026; sendingdate not substituted, no bankweekend/cure rule inferred.",
+      "pass": true
+    },
+    {
+      "id": "R33.receipt2026-12-16",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual irrevocable request reaches paying institution during current2026; sendingdate not substituted, no bankweekend/cure rule inferred.",
+      "pass": true
+    },
+    {
+      "id": "R33.receipt2026-12-14",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual irrevocable request reaches paying institution during current2026; sendingdate not substituted, no bankweekend/cure rule inferred.",
+      "pass": true
+    },
+    {
+      "id": "R34.owner('10', True)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual corporation/cooperative shareholder loan in specified20categories; costgate means corresponding debtor expenses/Germantaxand20(9)costbar conditions satisfied. This is only(b), not automatic overallflat-tax result.",
+      "pass": true
+    },
+    {
+      "id": "R34.owner('9.99', True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual corporation/cooperative shareholder loan in specified20categories; costgate means corresponding debtor expenses/Germantaxand20(9)costbar conditions satisfied. This is only(b), not automatic overallflat-tax result.",
+      "pass": true
+    },
+    {
+      "id": "R34.owner('10', False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual corporation/cooperative shareholder loan in specified20categories; costgate means corresponding debtor expenses/Germantaxand20(9)costbar conditions satisfied. This is only(b), not automatic overallflat-tax result.",
+      "pass": true
+    },
+    {
+      "id": "R34.related(True, True)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actualstatutoryrelatednessindependentlyestablished; familymembershipalone does not set flag. Only(a) limb, otherstatutorylimbsseparate.",
+      "pass": true
+    },
+    {
+      "id": "R34.related(False, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actualstatutoryrelatednessindependentlyestablished; familymembershipalone does not set flag. Only(a) limb, otherstatutorylimbsseparate.",
+      "pass": true
+    },
+    {
+      "id": "R34.related(True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actualstatutoryrelatednessindependentlyestablished; familymembershipalone does not set flag. Only(a) limb, otherstatutorylimbsseparate.",
+      "pass": true
+    },
+    {
+      "id": "R34.connected(True, False, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Qualifying financing/branch/recourse facts independently met; actual commonplan and marketterms/noburdenadvantage statutory connection selectors only.",
+      "pass": true
+    },
+    {
+      "id": "R34.connected(True, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Qualifying financing/branch/recourse facts independently met; actual commonplan and marketterms/noburdenadvantage statutory connection selectors only.",
+      "pass": true
+    },
+    {
+      "id": "R34.connected(True, False, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Qualifying financing/branch/recourse facts independently met; actual commonplan and marketterms/noburdenadvantage statutory connection selectors only.",
+      "pass": true
+    },
+    {
+      "id": "R34.connected(False, False, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Qualifying financing/branch/recourse facts independently met; actual commonplan and marketterms/noburdenadvantage statutory connection selectors only.",
+      "pass": true
+    },
+    {
+      "id": "R34.actualcostincome",
+      "actual": "8000",
+      "expected": "8000",
+      "premise": "Independently qualifying32d(2)no1case,2000eligibleactualcosts; ordinaryincome, not finaltarifftax.20(6)/(9)do notapply.",
+      "pass": true
+    },
+    {
+      "id": "R34.disallowedflatshortcut",
+      "actual": "9000",
+      "expected": "9000",
+      "premise": "Counterfactualwronglump-sumshortcut discriminator only, not the Guide output.",
+      "pass": true
+    },
+    {
+      "id": "R35.gift('.005', True, True)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual five-year personal/recentacquisition/qualifyingpredecessororchain holding dates independently established. NoAStGresidenceaggregationorautomaticfinaltax.",
+      "pass": true
+    },
+    {
+      "id": "R35.gift('.005', False, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual five-year personal/recentacquisition/qualifyingpredecessororchain holding dates independently established. NoAStGresidenceaggregationorautomaticfinaltax.",
+      "pass": true
+    },
+    {
+      "id": "R35.gift('.005', True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual five-year personal/recentacquisition/qualifyingpredecessororchain holding dates independently established. NoAStGresidenceaggregationorautomaticfinaltax.",
+      "pass": true
+    },
+    {
+      "id": "R35.gift('.01', False, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual five-year personal/recentacquisition/qualifyingpredecessororchain holding dates independently established. NoAStGresidenceaggregationorautomaticfinaltax.",
+      "pass": true
+    },
+    {
+      "id": "R36.fullbase",
+      "actual": "8880",
+      "expected": "8880",
+      "premise": "Full actuallyassessedownership-periodVorabpauschale history, regardlesscashwithholding.",
+      "pass": true
+    },
+    {
+      "id": "R36.afterpartial",
+      "actual": "6216.0",
+      "expected": "6216",
+      "premise": "Actualequityfundclassification/30%partialexemption independently established.",
+      "pass": true
+    },
+    {
+      "id": "R36.wrongfraction",
+      "actual": "784.0",
+      "expected": "784",
+      "premise": "Wrong deduction input discriminator, not correctmethod.",
+      "pass": true
+    },
+    {
+      "id": "R36.wrongresult",
+      "actual": "6451.2",
+      "expected": "6451.20",
+      "premise": "Counterfactualwrongonlytaxablefractionshortcut, not Guide output.",
+      "pass": true
+    },
+    {
+      "id": "R36.nohistory",
+      "actual": "7000.0",
+      "expected": "7000",
+      "premise": "No assessedprepaymenthistory; unassessed estimates not deducted. Classification otherwiseindependentlymet.",
+      "pass": true
+    }
+  ],
+  "control_count": 30,
+  "own_selected_read_count": 7,
+  "source_checks": [
+    {
+      "id": "R32.extended-period",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "new_own_read": true
+    },
+    {
+      "id": "R32.token-exception",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "new_own_read": true
+    },
+    {
+      "id": "R33.complete-certificate",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "new_own_read": true
+    },
+    {
+      "id": "R34.mandatory-financing",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "new_own_read": true
+    },
+    {
+      "id": "R34.finality",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "new_own_read": true
+    },
+    {
+      "id": "R35.recent-gift",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "new_own_read": true
+    },
+    {
+      "id": "R36.full-assessed-prepayments",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "new_own_read": true
+    },
+    {
+      "id": "OLD.Exit.scope",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.rate",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.calendar",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.option",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO233a.interest",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.private-cliff-history",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.fund-exit",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.soli-exclusion",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.propertyfund-exclusions",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO149.callin",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.private10year-home",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.declare",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.fund-cost",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.privategain-cliff",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.dividends",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.allowance",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.loss-certificate",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.Exit.return",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.fund-sale",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.crypto-lending",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.private1year",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.withholding",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.fund-actualquota",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.large-loss",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.bank-finality",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.formKAPINV",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.formKAP",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.FIFO",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.partial40-percent",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.Soli.rate",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.fund-income",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.basis2026",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.favourable",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.large-threshold",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.large-allowance",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.propertyfund-assetvalue",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.foreigncredit",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.resident",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.gain",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.fund-old",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO240.surcharge",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.Exit.residence",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.private-cliff-date",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.crypto-lots",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.guidance-title",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.pre2009",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.bank-monthly",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO108.weekend",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.loss",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.fund-partial",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.Exit.instalments",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.interest",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.formSO",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.partial60",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.loss-repeal",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.partial40-scope",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.fund-bank-withdrawal",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO152.surcharge",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.allowance-order",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.crypto-swap",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO238.rate",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.fund-definition",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.large-liquidation",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO149.general",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.propertyfund-definition",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.formG",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.fund-prepayment",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.basis2025",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.corona-scope",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.CG.asset-income",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    },
+    {
+      "id": "OLD.AO149.adviser",
+      "literal_quote_and_hashes_exact": true,
+      "quote_scope": "Preserved exact original selected excerpt within declared nativeLF",
+      "new_own_read": false
+    }
+  ],
+  "all83_prior_current_identities_and129_old_topics_retained": true,
+  "current_native_rows_and_full_inverse_exact": true,
+  "prior_B_seal": {
+    "manifest_sha256": "61130a4ac7b8618cfc6ecb29771c5fd925e49d8b925c770f6489a43f6ab11004",
+    "members_rehashed_unchanged": 515
+  },
+  "original_oa_cases": {
+    "count": 4,
+    "failures": [],
+    "whole_worked_section_exact": true
+  },
+  "schema": {
+    "errors": [],
+    "warnings": [],
+    "stdout": "checked 1 guides (0 non-guide .md files skipped)\n"
+  },
+  "scoped_diff_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

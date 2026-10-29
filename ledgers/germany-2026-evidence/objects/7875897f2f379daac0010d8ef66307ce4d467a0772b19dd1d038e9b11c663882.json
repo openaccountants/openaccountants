@@ -1,0 +1,11 @@
+{
+  "id": "Ud9d81d326deb678c",
+  "url": "https://www.elster.de/eportal/e-rechnung",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud9d81d326deb678c.body",
+  "raw_sha256": "3dc02fdf28d51db7f3389ab56241bc541c070bc83674ca356b124636dc22c7ec",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud9d81d326deb678c.reader.txt",
+  "reader_sha256": "501860c103746d84c260419039b25f06310818414c4ce570fb2f941f3e8072c6",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

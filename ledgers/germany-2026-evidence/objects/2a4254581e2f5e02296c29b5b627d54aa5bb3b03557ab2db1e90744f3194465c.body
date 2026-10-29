@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="de-DE" class="no-js">
+<head>
+    <meta charset="utf-8">
+
+<!-- 
+	=========================================================================================
+	Uses GSB 11 https://software.opencode.de/project/2460
+	=========================================================================================
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2026 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+
+
+<title>Der Über­tragungs­­kanal: E‑Mail | E-Rechnung in der Bundesverwaltung</title>
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta name="description" content="Senden Sie Ihre E-Rechnung einfach per E-Mail an die Bundesverwaltung – schnell, unkompliziert und mit klaren Formatvorgaben.">
+<meta name="generator" content="GSB11">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="robots" content="index,follow">
+<meta name="apple-mobile-web-app-capable" content="no">
+
+
+<link rel="stylesheet" href="/_assets/2cc2b3842a6bf65d4bbef6ad377cbd88/StyleSheets/screen.css?1792142509" media="all" integrity="sha256-Jvr0zwWYEOW6otvTbGAc/rqwWZ2zFOrBL8XtIvV6Iik=">
+<link rel="stylesheet" href="/_assets/2cc2b3842a6bf65d4bbef6ad377cbd88/StyleSheets/print.css?1792142509" media="print" integrity="sha256-kLhhdOiEZSj7s4MqOlbQKZWrRQtqY3e7acjs6zndUm8=">
+<link rel="stylesheet" href="/_assets/2cc2b3842a6bf65d4bbef6ad377cbd88/StyleSheets/navigationPrimary.css?1792142509" media="all" integrity="sha256-PX9rI3W3N360aVSjiWVdLOxvPybWEU0orbT3wvUCUlQ=">
+<link rel="stylesheet" href="/_assets/76f10eee146e450e64a6aac7fdeee007/StyleSheets/solr.css?1791277883" media="all" integrity="sha256-MKzex8N9LL6w+9BOLHZxZXj5fXSEDHtSRDHgAEi7Ws8=">
+<link rel="stylesheet" href="/_assets/6666cd76f96956469e7be39d750cc7d9/StyleSheets/main.css?1793109112" media="all" integrity="sha256-zeBIyKw72yvwpYo1eAIni6LQV4PBf2y962BOvViuaIg=">
+<style integrity="sha256-SMvDKlk7xavEXbBX5rscWzVSBO4B40c9/LSEmTgq7ug=">
+        .teaser.grid-light {
+            --bs-focus-ring-color: rgb(255, 255, 255, .2);
+        }
+    </style>
+<style integrity="sha256-YGiwVuhQ/g5WB4S7aU7BWPRv+uyQJujJCHGVD6PHgZk=">
+        :root {
+        --bs-quaternary: #003c5f;
+            
+                --bs-secondary: #004b76;
+            
+                --bs-primary: #0077b6;
+            
+                --bs-tertiary: #FFFFFF;
+            
+                --bs-focus-ring-color: rgb(from var(--bs-secondary)r g b / 5%);
+            
+            
+                --bs-bgcolor-6: #f6f7f7;
+            
+                --bs-bgcolor-5: #003c5f;
+            
+                --bs-bgcolor-4: #004b76;
+            
+                --bs-bgcolor-3: #0077b6;
+            
+                --bs-bgcolor-2: #ffffff;
+            
+                --bs-bgcolor-1: #000000;
+        }
+    </style>
+<style integrity="sha256-KWKv3veFeG9bkKOsv3A3Ti200+pswc5MJ/ok4tAWpTs=">
+        @font-face { font-display: swap; font-family: "GSBPublicSans"; font-style: normal; font-weight: 400; src: url(/_assets/3eadcd930e66a55206259b33cd6bd978/Fonts/BundesSans-Web-Regular.woff2?1792591909) format("woff2"); }
+    </style>
+<style integrity="sha256-T6uxkyGfjRiCaiaC2FiZJYxLVfnRtXP8eRO0magrhkA=">
+        @font-face { font-display: swap; font-family: "GSBPublicSans"; font-style: italic; font-weight: 400; src: url(/_assets/3eadcd930e66a55206259b33cd6bd978/Fonts/BundesSans-Web-RegularItalic.woff2?1792591909) format("woff2"); }
+    </style>
+<style integrity="sha256-WDqia6EoLR+Mw3Nwx2izcMBgYz18Ltrtk6G/+/GELUc=">
+        @font-face { font-display: swap; font-family: "GSBPublicSans"; font-style: normal; font-weight: 700; src: url(/_assets/3eadcd930e66a55206259b33cd6bd978/Fonts/BundesSans-Web-Bold.woff2?1792591909) format("woff2"); }
+    </style>
+<style integrity="sha256-qb3t5OpP8VkpeVagvIkoSTGEJ0Nzyytx4oGcjkp1XAM=">
+        @font-face { font-display: swap; font-family: "GSBPublicSans"; font-style: italic; font-weight: 700; src: url(/_assets/3eadcd930e66a55206259b33cd6bd978/Fonts/BundesSans-Web-BoldItalic.woff2?1792591909) format("woff2"); }
+    </style>
+<style integrity="sha256-PZYiI7s3LQzZCv0iRCNupj/z8WRV+zZC1Pkh/7eOVHQ=">
+        @font-face { font-display: swap; font-family: "GSBPublicSans"; font-style: normal; font-weight: 500; src: url(/_assets/3eadcd930e66a55206259b33cd6bd978/Fonts/BundesSans-Web-Medium.woff2?1792591909) format("woff2"); }
+    </style>
+<style integrity="sha256-nCqrel8XnRfnf2vcSPy6z15G1Far3Gd+w44ac9tUTek=">
+        @font-face { font-display: swap; font-family: "GSBPublicSerif"; font-style: normal; font-weight: 400; src: url(/_assets/3eadcd930e66a55206259b33cd6bd978/Fonts/BundesSerif-Web-Regular.woff2?1792591909) format("woff2"); }
+    </style>
+<style integrity="sha256-u0SCQpGjLHRGlJeNOahMSPOfkOKrfBNNzDjlg0n5R1o=">
+        @font-face { font-display: swap; font-family: "GSBPublicSerif"; font-style: italic; font-weight: 400; src: url(/_assets/3eadcd930e66a55206259b33cd6bd978/Fonts/BundesSerif-Web-Italic.woff2?1792591909) format("woff2"); }
+    </style>
+<style integrity="sha256-88MWg+0/dMfYcfJ1rRqZNah5V240N3bKc46R5tItS0k=">
+    :root {
+    --bs-font-sans-serif: GSBPublicSans, "Helvetica Neue", helvetica, arial, sans-serif;
+    }
+</style>
+<style integrity="sha256-LUpp4F+nfIXWsIb7cRGg8UlRb5r8IzvC+L6KEhHLRdg=">
+    :root {
+    --bs-font-serif: GSBPublicSerif, "Helvetica Neue", helvetica, arial, sans-serif;
+    }
+</style>
+
+
+
+<script integrity="sha256-969ZQA3Eg9hgH6n3PHYjz+SH386CEGt8+vsiC/mtiCU=">
+    window.gsbConsentScripts = window.gsbConsentScripts || [];
+
+    
+
+
+</script>
+
+<link rel="prev" href="/ubertragungskanale/peppol">
+    
+
+    
+            
+    
+
+    <link href="/_assets/3eadcd930e66a55206259b33cd6bd978/Favicons/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png" />
+    <link href="/_assets/3eadcd930e66a55206259b33cd6bd978/Favicons/favicon.ico" rel="shortcut icon" />
+    <link href="/_assets/3eadcd930e66a55206259b33cd6bd978/Favicons/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="/_assets/3eadcd930e66a55206259b33cd6bd978/Favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="/_assets/3eadcd930e66a55206259b33cd6bd978/Favicons/site.webmanifest" rel="manifest" />
+
+
+        
+
+    <meta content="E-Rechnung in der Bundesverwaltung" name="apple-mobile-web-app-title">
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+<link rel="canonical" href="https://e-rechnung-bund.de/ubertragungskanale/e-mail">
+
+<link rel="alternate" hreflang="de-DE" href="https://e-rechnung-bund.de/ubertragungskanale/e-mail">
+<link rel="alternate" hreflang="en-US" href="https://e-rechnung-bund.de/en/transmission-methods/email">
+<link rel="alternate" hreflang="x-default" href="https://e-rechnung-bund.de/ubertragungskanale/e-mail">
+</head>
+<body id="top" class="page-41 lang- default layout-default second-logo-default complete-logo-11 navtype-0 simple-language-page gsb">
+
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+
+<div class="skipnav"><a href="https://e-rechnung-bund.de/ubertragungskanale/e-mail#mainContent">Zum Inhalt springen</a></div>
+
+<div class="layer"></div>
+
+<header class="header-wrapper fixed-top">
+    
+        <div class="brand-topline w-100 bg-light mx-auto overflow-hidden">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <span class="d-flex align-items-center" role="img"
+                        aria-label="Flagge der Bundesrepublik Deutschland">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 16" width="24" height="16"
+                            title="Flagge der Bundesrepublik Deutschland">
+                            <path fill="#000" d="M0 .5h24v5.333H0z"></path>
+                            <path fill="red" d="M0 5.833h24v5.333H0z"></path>
+                            <path fill="#FACA2C" d="M0 11.167h24V16.5H0z"></path>
+                        </svg>
+                    </span>
+                    <span>
+                        Offizielle Website – Bundesrepublik Deutschland
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    <div class="header-wrapper-bg flex-wrap">
+        <div class="container position-relative">
+            
+
+            
+            
+                
+    
+
+    <div class="row align-items-start flex-nowrap">
+        
+
+
+
+    
+
+    <div class="col logo">
+
+        
+                <a title="Zur Startseite" href="/">
+                    
+    
+            
+                <img class="img-fluid logo-complete-big d-none d-lg-block" src="/fileadmin/user_upload/Logo-BeschA.svg" width="134" height="72" alt="" />
+            
+            
+                <img class="img-fluid logo-complete-small d-block d-lg-none" src="/fileadmin/user_upload/Logo-BeschA.svg" width="134" height="72" alt="" />
+            
+        
+
+                    <span class="visually-hidden">Zur Startseite - E-Rechnung in der Bundesverwaltung</span>
+                </a>
+            
+    </div>
+
+
+
+
+        
+    
+    
+        <div class="col meta-desktop d-none d-lg-block">
+            <nav class="meta-item" aria-labelledby="metaItem">
+                <p id="metaItem" class="visually-hidden">Service-Navigation Kopfbereich</p>
+                <ul class="metanav nav flex-lg-nowrap justify-content-between justify-content-lg-end">
+                    <li class="nav-item">
+                        
+
+
+
+
+
+
+        
+            
+    
+
+        
+            
+    
+            
+                    <div class="nav-item">
+                        <a class="nav-link text-capitalize"
+                           href="/en/transmission-methods/email"
+                           hreflang="en">
+                            <span class="active-span dividing-line d-block w-100" lang="en">English</span>
+                        </a>
+                    </div>
+                
+        
+
+        
+    
+
+
+
+                    </li>
+                    
+                        <li class="nav-item ">
+            
+                    <a class="nav-link meta-25 simple-language-page" href="/leichte-sprache-node">
+                        <span>Leichte Sprache</span>
+                    </a>
+                
+        </li>
+    
+                    
+                        <li class="nav-item ">
+            
+                    <a class="nav-link meta-26 sign-language-page" href="/gebaerdensprache-node">
+                        <span>Gebärdensprache</span>
+                    </a>
+                
+        </li>
+    
+                    
+                </ul>
+            </nav>
+        </div>
+    
+
+    
+    
+
+
+    </div>
+
+    <div class="row align-items-center">
+        
+    
+
+    <nav aria-labelledby="mainmenu" class="main-menu-layer dropdown flex-shrink-1 d-lg-none" id="main-menu">
+        <p class="visually-hidden" id="mainmenu">Hauptnavigation</p>
+        
+        <button class="navbar-toggler ms-auto" data-bs-auto-close="outside" data-bs-boundary="scrollParent" data-bs-display="static" data-bs-reference="parent" data-bs-toggle="dropdown" id="main-menu-button" title="Menü öffnen" type="button">
+            <span class="line"></span>
+            <span class="txt">Menü <span class="visually-hidden">öffnen</span></span>
+        </button>
+        <div class="dropdown-menu" id="menu">
+            <div class="navbar-wrapper">
+                
+
+
+    
+        <div class="main-nav-wrapper" id="main-menu-list">
+            <div class="container-md">
+                <ul class="main-menu list-unstyled row">
+                    
+                        <li class="col shortcut">
+                            
+                                    
+                                        <button aria-current="true" aria-controls="menu-6" aria-expanded="false" class="first-child first-child-btn collapsed dropdown-item hassub" data-bs-target="#menu-6" data-bs-toggle="collapse" type="button" title="">Start</button>
+                                        <ul class="list-unstyled collapse" id="menu-6">
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item" href="/rechnungssteller">
+                            Rechnungs­steller
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item" href="/behoerden">
+                            Behörden und Einrichtungen
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item" href="/erp-hersteller">
+                            ERP-Hersteller
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item" href="/verbaende">
+                            Verbände
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                        </ul>
+                                    
+                                
+                        </li>
+                    
+                        <li class="col">
+                            
+                                    
+                                        <button aria-current="true" aria-controls="menu-12" aria-expanded="false" class="first-child first-child-btn collapsed dropdown-item hassub" data-bs-target="#menu-12" data-bs-toggle="collapse" type="button" title="">E-Rechnung</button>
+                                        <ul class="list-unstyled collapse" id="menu-12">
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item" href="/e-rechnung/was-ist-eine-e-rechnung">
+                            Was ist eine E-Rechnung?
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item" href="/e-rechnung/glossar">
+                            E‑Rechnung A‑Z
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item" href="/e-rechnung/merksatze-zur-erechnung">
+                            Merksätze zur E‑Rechnung
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item" href="/e-rechnung/unterschied-zwischen-papier-pdf-und-erechnung">
+                            Unterschied Papier-, PDF- und E-Rechnung
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item" href="/e-rechnung/umsetzung-der-e-rechnung-in-den-bundeslaendern">
+                            E-Rechnung in den Bundesländern
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item" href="/e-rechnung/e-rechnung-zwischen-unternehmen-b2b">
+                            E-Rechnung zwischen Unternehmen (B2B)
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                        </ul>
+                                    
+                                
+                        </li>
+                    
+                        <li class="col">
+                            
+                                    
+                                        <button aria-current="true" aria-controls="menu-13" aria-expanded="false" class="first-child first-child-btn collapsed dropdown-item act hassub" data-bs-target="#menu-13" data-bs-toggle="collapse" type="button" title="">Übertragungs­kanäle</button>
+                                        <ul class="list-unstyled collapse" id="menu-13">
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item" href="/ubertragungskanale/weberfassung">
+                            Weberfassung
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item" href="/ubertragungskanale/upload">
+                            Upload
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item" href="/ubertragungskanale/peppol">
+                            Peppol
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item act current" href="/ubertragungskanale/e-mail">
+                            E-Mail
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                        </ul>
+                                    
+                                
+                        </li>
+                    
+                        <li class="col">
+                            
+                                    
+                                        <button aria-current="true" aria-controls="menu-14" aria-expanded="false" class="first-child first-child-btn collapsed dropdown-item hassub" data-bs-target="#menu-14" data-bs-toggle="collapse" type="button" title="">Mediathek</button>
+                                        <ul class="list-unstyled collapse" id="menu-14">
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item" href="/mediathek/tutorials">
+                            Tutorials
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                                
+        
+                <li>
+                
+                        <a class="sub dropdown-item" href="/mediathek/dokumente">
+                            Dokumente
+                        </a>
+                    
+                </li>
+            
+    
+                                            
+                                        </ul>
+                                    
+                                
+                        </li>
+                    
+                        <li class="col">
+                            
+                                    
+                                            <a class="first-child dropdown-item" href="/aktuelles">
+                                                Aktuelles
+                                            </a>
+                                        
+                                
+                        </li>
+                    
+                        <li class="col">
+                            
+                                    
+                                            <a class="first-child dropdown-item" href="/faq">
+                                                FAQ
+                                            </a>
+                                        
+                                
+                        </li>
+                    
+                        <li class="col">
+                            
+                                    
+                                            <a class="first-child dropdown-item" href="/kontakt">
+                                                Kontakt
+                                            </a>
+                                        
+                                
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    
+
+    
+
+
+            </div>
+        </div>
+    </nav>
+
+
+        <nav class="mainnav-desktop justify-content-end d-none d-lg-flex" aria-labelledby="mainnavDesktop">
+            <p id="mainnavDesktop" class="visually-hidden">Hauptnavigation</p>
+            <ul class="list-unstyled d-flex mb-0 justify-content-end" id="nav-desktop">
+                
+                    
+    
+
+    
+        <li class="mainnav-desktop-item shortcut">
+            
+                    
+                        <button aria-current="true" aria-controls="menu-desktop-6" aria-expanded="false" class="first-nav first-nav-btn hassub" data-bs-auto-close="outside" data-bs-boundary="scrollParent" data-bs-display="static" data-bs-reference="parent" data-bs-toggle="dropdown" type="button" title="">
+                            <span class="txt">Start</span>
+                        </button>
+                        <div class="dropdown-menu main-menu-desktop" id="menu-desktop-6">
+                            <div class="container d-flex justify-content-end pt-3 pb-3" style="height: 5.5rem !important">
+                                <button aria-label="Schließen" class="btn-close rounded-circle dropdown-item" type="button"></button>
+                            </div>
+                            <ul class="container list-unstyled mainnav-children">
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item" href="/rechnungssteller">
+                                <span>Rechnungs­steller</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item" href="/behoerden">
+                                <span>Behörden und Einrichtungen</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item" href="/erp-hersteller">
+                                <span>ERP-Hersteller</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item" href="/verbaende">
+                                <span>Verbände</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                            </ul>
+                        </div>
+                    
+                
+        </li>
+    
+
+    
+
+
+                
+                    
+    
+
+    
+        <li class="mainnav-desktop-item">
+            
+                    
+                        <button aria-current="true" aria-controls="menu-desktop-12" aria-expanded="false" class="first-nav first-nav-btn hassub" data-bs-auto-close="outside" data-bs-boundary="scrollParent" data-bs-display="static" data-bs-reference="parent" data-bs-toggle="dropdown" type="button" title="">
+                            <span class="txt">E-Rechnung</span>
+                        </button>
+                        <div class="dropdown-menu main-menu-desktop" id="menu-desktop-12">
+                            <div class="container d-flex justify-content-end pt-3 pb-3" style="height: 5.5rem !important">
+                                <button aria-label="Schließen" class="btn-close rounded-circle dropdown-item" type="button"></button>
+                            </div>
+                            <ul class="container list-unstyled mainnav-children">
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item" href="/e-rechnung/was-ist-eine-e-rechnung">
+                                <span>Was ist eine E-Rechnung?</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item" href="/e-rechnung/glossar">
+                                <span>E‑Rechnung A‑Z</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item" href="/e-rechnung/merksatze-zur-erechnung">
+                                <span>Merksätze zur E‑Rechnung</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item" href="/e-rechnung/unterschied-zwischen-papier-pdf-und-erechnung">
+                                <span>Unterschied Papier-, PDF- und E-Rechnung</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item" href="/e-rechnung/umsetzung-der-e-rechnung-in-den-bundeslaendern">
+                                <span>E-Rechnung in den Bundesländern</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item" href="/e-rechnung/e-rechnung-zwischen-unternehmen-b2b">
+                                <span>E-Rechnung zwischen Unternehmen (B2B)</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                            </ul>
+                        </div>
+                    
+                
+        </li>
+    
+
+    
+
+
+                
+                    
+    
+
+    
+        <li class="mainnav-desktop-item">
+            
+                    
+                        <button aria-current="true" aria-controls="menu-desktop-13" aria-expanded="false" class="first-nav first-nav-btn act hassub" data-bs-auto-close="outside" data-bs-boundary="scrollParent" data-bs-display="static" data-bs-reference="parent" data-bs-toggle="dropdown" type="button" title="">
+                            <span class="txt">Übertragungs­kanäle</span>
+                        </button>
+                        <div class="dropdown-menu main-menu-desktop" id="menu-desktop-13">
+                            <div class="container d-flex justify-content-end pt-3 pb-3" style="height: 5.5rem !important">
+                                <button aria-label="Schließen" class="btn-close rounded-circle dropdown-item" type="button"></button>
+                            </div>
+                            <ul class="container list-unstyled mainnav-children">
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item" href="/ubertragungskanale/weberfassung">
+                                <span>Weberfassung</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item" href="/ubertragungskanale/upload">
+                                <span>Upload</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item" href="/ubertragungskanale/peppol">
+                                <span>Peppol</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item act current" href="/ubertragungskanale/e-mail">
+                                <span>E-Mail</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                            </ul>
+                        </div>
+                    
+                
+        </li>
+    
+
+    
+
+
+                
+                    
+    
+
+    
+        <li class="mainnav-desktop-item">
+            
+                    
+                        <button aria-current="true" aria-controls="menu-desktop-14" aria-expanded="false" class="first-nav first-nav-btn hassub" data-bs-auto-close="outside" data-bs-boundary="scrollParent" data-bs-display="static" data-bs-reference="parent" data-bs-toggle="dropdown" type="button" title="">
+                            <span class="txt">Mediathek</span>
+                        </button>
+                        <div class="dropdown-menu main-menu-desktop" id="menu-desktop-14">
+                            <div class="container d-flex justify-content-end pt-3 pb-3" style="height: 5.5rem !important">
+                                <button aria-label="Schließen" class="btn-close rounded-circle dropdown-item" type="button"></button>
+                            </div>
+                            <ul class="container list-unstyled mainnav-children">
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item" href="/mediathek/tutorials">
+                                <span>Tutorials</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                                    
+        
+            
+                    <li>
+                    
+                            <a class="sub collapsed dropdown-item" href="/mediathek/dokumente">
+                                <span>Dokumente</span>
+                            </a>
+                        
+                    </li>
+                
+        
+    
+                                
+                            </ul>
+                        </div>
+                    
+                
+        </li>
+    
+
+    
+
+
+                
+                    
+    
+
+    
+        <li class="mainnav-desktop-item">
+            
+                    
+                            <a class="first-nav" href="/aktuelles">
+                                Aktuelles
+                            </a>
+                        
+                
+        </li>
+    
+
+    
+
+
+                
+                    
+    
+
+    
+        <li class="mainnav-desktop-item">
+            
+                    
+                            <a class="first-nav" href="/faq">
+                                FAQ
+                            </a>
+                        
+                
+        </li>
+    
+
+    
+
+
+                
+                    
+    
+
+    
+        <li class="mainnav-desktop-item">
+            
+                    
+                            <a class="first-nav" href="/kontakt">
+                                Kontakt
+                            </a>
+                        
+                
+        </li>
+    
+
+    
+
+
+                
+                
+            </ul>
+        </nav>
+    </div>
+
+
+            
+
+            
+
+            
+        </div>
+    </div>
+</header>
+
+<div class="meta-mobile container d-block d-lg-none" id="meta-mobile"></div>
+
+
+    
+
+<nav aria-labelledby="breadcrumb" class="container">
+    <p class="visually-hidden" id="breadcrumb">Sie sind hier:</p>
+    <ol class="breadcrumb">
+        
+            <li class="breadcrumb-item">
+                
+                        <a href="/" title="Startseite">
+                            <span class="visually-hidden">Startseite</span>
+                        </a>
+                    
+            </li>
+        
+            <li class="breadcrumb-item">
+                
+                        
+                                <a class="breadcrumb-link" href="/ubertragungskanale">
+                                    Übertragungs­kanäle
+                                </a>
+                            
+                    
+            </li>
+        
+            <li class="breadcrumb-item">
+                
+                        
+                                <a aria-current="page" class="breadcrumb-link fw-bold" href="/ubertragungskanale/e-mail">
+                                    <span>E-Mail</span>
+                                </a>
+                            
+                    
+            </li>
+        
+    </ol>
+</nav>
+
+
+
+
+
+
+
+
+    <main class="main-wrapper" id="mainContent" aria-labelledby="headerMain">
+        
+            <div class="top-container">
+                
+
+
+<div class="frame
+frame-default
+frame-type-ce_container
+frame-layout-0
+frame-space-before-medium
+frame-space-after-medium
+grid-light teaser-headline-contrast
+grid-fullsize
+
+
+
+ position-relative"
+     id="c984">
+
+    
+
+    
+        <div class="grid-bg bg-color_3"></div>
+    
+
+    
+
+    <div class="container header-underline">
+
+    
+        
+
+
+        
+    
+
+    
+
+
+
+
+    
+
+    
+    
+        
+            
+
+<!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c985" class="frame frame-default frame-type-textpic frame-layout-0 grid-light teaser-headline-contrast "><div class="textpic nexttotext-right d-lg-flex"><div class="ce-gallery ms-md-5 order-1" data-images="1"><div data-count="0" class="image-wrapper "><figure class="figure"><picture class="" data-aspectratio-lg="NaN" data-aspectratio-md="NaN" data-aspectratio-sm="NaN" data-aspectratio-xl="NaN" data-aspectratio-xs="NaN"><img class="figure-img img-fluid" src="/fileadmin/illustrations/Illustration-kanaele-email.svg" width="434" height="284" alt="" loading="lazy" /></picture></figure></div></div><div class="ce-bodytext"><div class="header-content"><h1 class=" " id="headerMain"><span id="element-985-header">Der Über­tragungs­­kanal: E‑Mail</span></h1></div><p>Hier erfahren Sie, was es bei der Nutzung des Übertragungskanals E-Mail an der Rechnungseingangsplattform OZG-RE des Bundes zu beachten gilt.</p></div></div></div>
+
+
+        
+    
+
+
+    </div>
+</div>
+
+
+
+            </div>
+        
+
+        
+
+        <div data-glossary="list">
+            <div class="main-container container">
+                <div class="row">
+                    <div class="col-12">
+                        <!--TYPO3SEARCH_begin-->
+                        
+
+<!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c986" class="frame frame-default frame-type-text frame-layout-0 frame-space-before-medium frame-space-after-medium "><div class="header-content"><h2 class=" "><span id="element-986-header">Allgemeine Hinweise zum Übertragungskanal “E-Mail”</span></h2></div><div class="text"><div class="ce-bodytext"><p>An der Rechnungseingangsplattform OZG‑RE werden Rechnungssendern verschiedene Übertragungskanäle zur Übermittlung von E‑Rechnungen an die Rechnungsempfänger zur Verfügung gestellt.</p></div></div></div>
+
+
+
+
+<div class="frame
+frame-default
+frame-type-ce_container
+frame-layout-0
+frame-space-before-small
+frame-space-after-small
+
+
+
+
+
+ position-relative"
+     id="c987">
+
+    
+
+    
+        <div class="grid-bg bg-color_6"></div>
+    
+
+    
+
+    <div class="container header-underline">
+
+    
+        
+
+
+        
+    
+
+    
+
+
+
+
+    
+
+    
+    
+        
+            
+
+<!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c988" class="frame frame-default frame-type-text frame-layout-0 "><div class="header-content"><h3 class=" "><span id="element-988-header">Wichtige Punkte bei der Übertragung per E‑Mail</span></h3></div><div class="text"><div class="ce-bodytext"><ul><li data-list-item-id="e4ba0a5240dfc477911e215dbc9f5a188">Es darf immer nur eine E‑Rechnung pro E‑Mail versendet werden.</li><li data-list-item-id="eb239f13bec58bbd2b1fa0014c0f00aed">Sollte mehr als eine Rechnung in einer E‑Mail enthalten sein, wird die E-Mail inklusive der Anhänge verworfen. Die Rechnung kann dann nicht zugestellt werden.</li><li data-list-item-id="e2b72e4c08096621f53cdf28618e2f9e4">Sobald Anhänge versendet werden, die keine E-Rechnung im Sinne eines strukturierten Datensatzes (s. auch FAQ-Bereiche zu <a href="/faq#c711"><span class="icon"></span>E-Rechnung</a> und <a href="/faq#c754"><span class="icon"></span>XRechnung</a>) darstellen, wird die E-Mail inklusive der Anhänge verworfen. Die</li><li data-list-item-id="e128bd99b86f9e7cd5c05defc8ee8c34c">Rechnung kann dann nicht zugestellt werden.</li><li data-list-item-id="ed45926db5733d9a7e407306f873aeb0e">Es sollten keine „No Reply“-E‑Mail-Adressen verwendet werden.</li><li data-list-item-id="ea575c538e74c42b842e0ca66fad21ca1">Betreff und Text sind für die Einsendung irrelevant und werden automatisch aus der E‑Mail gelöscht und nicht an den Rechnungsempfänger weitergeleitet; sie können auch leer bleiben.</li></ul></div></div></div>
+
+
+        
+    
+
+
+    </div>
+</div>
+
+
+
+
+<!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c990" class="frame frame-default frame-type-header frame-layout-0 frame-space-before-medium "></div>
+
+
+
+
+<div class="frame
+frame-default
+frame-type-ce_container
+frame-layout-0
+frame-space-before-large
+frame-space-after-large
+
+grid-fullsize
+
+
+
+ position-relative"
+     id="c989">
+
+    
+
+    
+        <div class="grid-bg bg-color_6"></div>
+    
+
+    
+
+    <div class="container header-underline">
+
+    
+        
+
+
+        
+    
+
+    
+
+
+
+
+    
+
+    
+    
+        
+            
+
+<!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c1158" class="frame frame-default frame-type-text frame-layout-0 "><div class="header-content"><h2 class=" "><span id="element-1158-header">Anleitung zur Nutzung des Übertragungs­­kanals „E‑Mail“ an der OZG‑RE</span></h2></div><div class="text"><div class="ce-bodytext"></div></div></div>
+
+
+        
+            
+
+<!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c991" class="frame frame-default frame-type-textpic frame-layout-0 frame-space-before-large "><div class="textpic nexttotext-right d-lg-flex"><div class="ce-gallery ms-md-5 order-1" data-images="1"><div data-count="0" class="image-wrapper "><figure class="figure"><picture class="" data-aspectratio-lg="NaN" data-aspectratio-md="NaN" data-aspectratio-sm="NaN" data-aspectratio-xl="NaN" data-aspectratio-xs="NaN"><source
+                        media="(min-width: 1200px)"
+                        srcset="/fileadmin/_processed_/8/e/csm_Login-Seite-des-OZG-RE-Portals_40b0acc85f.webp"
+                        type="image/webp"
+                    ><source
+                        media="(min-width: 1200px)"
+                        srcset="/fileadmin/ubertragungskanale/Login-Seite-des-OZG-RE-Portals.jpg"
+                        type="image/jpeg"
+                    ><source
+                        media="(min-width: 992px)"
+                        srcset="/fileadmin/_processed_/8/e/csm_Login-Seite-des-OZG-RE-Portals_40b0acc85f.webp"
+                        type="image/webp"
+                    ><source
+                        media="(min-width: 992px)"
+                        srcset="/fileadmin/ubertragungskanale/Login-Seite-des-OZG-RE-Portals.jpg"
+                        type="image/jpeg"
+                    ><source
+                        media="(min-width: 768px)"
+                        srcset="/fileadmin/_processed_/8/e/csm_Login-Seite-des-OZG-RE-Portals_6e761ada15.webp"
+                        type="image/webp"
+                    ><source
+                        media="(min-width: 768px)"
+                        srcset="/fileadmin/_processed_/8/e/csm_Login-Seite-des-OZG-RE-Portals_32b0b89cad.jpg"
+                        type="image/jpeg"
+                    ><source
+                        media="(min-width: 576px)"
+                        srcset="/fileadmin/_processed_/8/e/csm_Login-Seite-des-OZG-RE-Portals_d61d423ab3.webp"
+                        type="image/webp"
+                    ><source
+                        media="(min-width: 576px)"
+                        srcset="/fileadmin/_processed_/8/e/csm_Login-Seite-des-OZG-RE-Portals_82eca75f88.jpg"
+                        type="image/jpeg"
+                    ><source
+                        media="(min-width: 0)"
+                        srcset="/fileadmin/_processed_/8/e/csm_Login-Seite-des-OZG-RE-Portals_2775b72a90.webp"
+                        type="image/webp"
+                    ><source
+                        media="(min-width: 0)"
+                        srcset="/fileadmin/_processed_/8/e/csm_Login-Seite-des-OZG-RE-Portals_e2877fb0a7.jpg"
+                        type="image/jpeg"
+                    ><img class="figure-img img-fluid" src="/fileadmin/ubertragungskanale/Login-Seite-des-OZG-RE-Portals.jpg" width="908" height="644" alt="Der Screenshot zeigt die Anmeldeseite des OZG-RE Portals. Sie können sich entweder bei einem bestehenden Benutzerkonto anmelden (" loading="lazy" /></picture><ul class="image-buttons d-flex list-unstyled"><li><button class="btn btn-image btn-info" data-bs-target="#modal-description-991" data-bs-toggle="modal" type="button"><span class="visually-hidden">Öffne Beschreibung</span></button><div aria-hidden="true" class="modal fade" data-bs-backdrop="static" id="modal-description-991" tabindex="-1"><div class="modal-dialog modal-md modal-dialog-scrollable modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><div class="container"><div class="row g-0"><div class="col-10 title"><h2>Beschreibung</h2></div><div class="col-2 close text-end"><button class="btn-close" data-bs-dismiss="modal" title="Schließen" type="button"><span class="visually-hidden">Schließen</span></button></div></div></div></div><div class="modal-body"><p>Abbildung: Anmeldung (Benutzeroberfläche OZG-RE)</p></div></div></div></div></li></ul></figure></div></div><div class="ce-bodytext"><div class="header-content"><h3 class=" "><span id="element-991-header">1. Schritt: Registrierung</span></h3></div><p>Um den Übertragungskanal „E‑Mail“ nutzen zu können, ist zunächst die <a href="https://xrechnung-bdr.de/edi/account/login?r=L2VkaS8%3D" target="_blank" rel="noreferrer"><span class="icon" aria-hidden="true"></span>Registrierung</a> des Rechnungssenders an der OZG‑RE notwendig.</p></div></div></div>
+
+
+        
+            
+
+<!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c992" class="frame frame-default frame-type-textpic frame-layout-0 frame-space-before-large "><div class="textpic nexttotext-right d-lg-flex"><div class="ce-gallery ms-md-5 order-1" data-images="1"><div data-count="0" class="image-wrapper "><figure class="figure"><picture class="" data-aspectratio-lg="NaN" data-aspectratio-md="NaN" data-aspectratio-sm="NaN" data-aspectratio-xl="NaN" data-aspectratio-xs="NaN"><source
+                        media="(min-width: 1200px)"
+                        srcset="/fileadmin/_processed_/f/b/csm_OZG-RE-XRechnung-via-Email-e1756286753337_0919ac391f.webp"
+                        type="image/webp"
+                    ><source
+                        media="(min-width: 1200px)"
+                        srcset="/fileadmin/_processed_/f/b/csm_OZG-RE-XRechnung-via-Email-e1756286753337_2ddba1de1a.jpg"
+                        type="image/jpeg"
+                    ><source
+                        media="(min-width: 992px)"
+                        srcset="/fileadmin/_processed_/f/b/csm_OZG-RE-XRechnung-via-Email-e1756286753337_0919ac391f.webp"
+                        type="image/webp"
+                    ><source
+                        media="(min-width: 992px)"
+                        srcset="/fileadmin/_processed_/f/b/csm_OZG-RE-XRechnung-via-Email-e1756286753337_2ddba1de1a.jpg"
+                        type="image/jpeg"
+                    ><source
+                        media="(min-width: 768px)"
+                        srcset="/fileadmin/_processed_/f/b/csm_OZG-RE-XRechnung-via-Email-e1756286753337_4b668b27bb.webp"
+                        type="image/webp"
+                    ><source
+                        media="(min-width: 768px)"
+                        srcset="/fileadmin/_processed_/f/b/csm_OZG-RE-XRechnung-via-Email-e1756286753337_29596ee79b.jpg"
+                        type="image/jpeg"
+                    ><source
+                        media="(min-width: 576px)"
+                        srcset="/fileadmin/_processed_/f/b/csm_OZG-RE-XRechnung-via-Email-e1756286753337_dbdce82928.webp"
+                        type="image/webp"
+                    ><source
+                        media="(min-width: 576px)"
+                        srcset="/fileadmin/_processed_/f/b/csm_OZG-RE-XRechnung-via-Email-e1756286753337_4ec61d948b.jpg"
+                        type="image/jpeg"
+                    ><source
+                        media="(min-width: 0)"
+                        srcset="/fileadmin/_processed_/f/b/csm_OZG-RE-XRechnung-via-Email-e1756286753337_1dbdb70071.webp"
+                        type="image/webp"
+                    ><source
+                        media="(min-width: 0)"
+                        srcset="/fileadmin/_processed_/f/b/csm_OZG-RE-XRechnung-via-Email-e1756286753337_975b7801b8.jpg"
+                        type="image/jpeg"
+                    ><img class="figure-img img-fluid" src="/fileadmin/ubertragungskanale/OZG-RE-XRechnung-via-Email-e1756286753337.png" width="694" height="432" alt="„Maske mit Anleitung: ‚Extern erstellte XRechnung via E-Mail senden‘. Hinweis: Rechnung im XRechnungs-Format als Anhang an die spezifische E-Mail-Adresse des Benutzerkontos senden. Darunter zwei Buttons: ‚E-Mail senden‘ (rot) und ‚E-Mail-Adresse in Zwischenablage kopieren‘ (grau)." loading="lazy" /></picture><ul class="image-buttons d-flex list-unstyled"><li><button class="btn btn-image btn-info" data-bs-target="#modal-description-992" data-bs-toggle="modal" type="button"><span class="visually-hidden">Öffne Beschreibung</span></button><div aria-hidden="true" class="modal fade" data-bs-backdrop="static" id="modal-description-992" tabindex="-1"><div class="modal-dialog modal-md modal-dialog-scrollable modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><div class="container"><div class="row g-0"><div class="col-10 title"><h2>Beschreibung</h2></div><div class="col-2 close text-end"><button class="btn-close" data-bs-dismiss="modal" title="Schließen" type="button"><span class="visually-hidden">Schließen</span></button></div></div></div></div><div class="modal-body"><p>Abbildung: Versand von E-Rechnungen per E-Mail (Benutzeroberfläche OZG-RE)</p></div></div></div></div></li></ul></figure></div></div><div class="ce-bodytext"><div class="header-content"><h3 class=" "><span id="element-992-header">2. Schritt: Versand von E‑Rechnungen per E‑Mail</span></h3></div><p>Auf der Startseite der OZG‑RE werden Ihnen die Funktionen der Rechnungseingangsplattform in Kacheln dargestellt. Scrollen Sie auf der Seite zu der Kachel „Extern erstellte XRechnung via E‑Mail senden“.</p><p>Klicken Sie auf „E‑Mail senden“ und es öffnet sich Ihr E‑Mail-Programm, in dem bereits die Empfängeradresse zur OZG-RE für den Versand von E‑Rechnungen automatisch vorbefüllt wurde.</p><p>Alternativ können Sie „E‑Mail-Adresse in Zwischenablage kopieren“ wählen, um die Empfängeradresse zum Versand von E‑Rechnungen an die OZG-RE zu kopieren, bspw. um diese in Ihr Adressbuch zu überführen.</p><p>Die generisch erzeugte Empfängeradresse identifiziert Sie als Rechnungssteller eindeutig und kann fortan für den Versand Ihrer E‑Rechnungen an die OZG‑RE verwendet werden. Diese E‑Mail-Adresse bleibt für Ihr Konto immer gleich, Sie können diese E‑Mail-Adresse jederzeit wieder auf der Startseite abfragen. Die E‑Mail-Adresse des Absenders darf variieren. Wird die E‑Mail-Adresse genutzt, die mit dem Rechnungssenderkonto verknüpft ist, kann die E‑Rechnung dem Rechnungssenderkonto immer eindeutig zugeordnet werden.</p><p>Hängen Sie der E‑Mail Ihre E‑Rechnung zum Versand an.</p></div></div></div>
+
+
+        
+            
+
+<!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c993" class="frame frame-default frame-type-text frame-layout-0 frame-space-before-large "><div class="header-content"><h3 class=" "><span id="element-993-header">Zusätzliche Informationen</span></h3></div><div class="text"><div class="ce-bodytext"><p>Auf der OZG‑RE können Sie in den persönlichen Einstellungen außerdem hinterlegen, ob Sie Benachrichtigungen zu Statuswechseln eingereichter E‑Rechnungen erhalten möchten. Sie haben die Möglichkeit, hier Benachrichtigungen bei allen Statuswechseln – also erfolgreich übermittelten E‑Rechnungen und fehlerhaften Statuswechseln – festzulegen. Alternativ können Sie einstellen, dass Sie lediglich bei fehlerhaften Statuswechseln eine Benachrichtigung per E‑Mail erhalten möchten.</p></div></div></div>
+
+
+        
+    
+
+
+    </div>
+</div>
+
+
+
+
+<!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c994" class="frame frame-default frame-type-text frame-layout-0 frame-space-before-medium frame-space-after-medium "><div class="header-content"><h2 class=" "><span id="element-994-header">Testen und Einsenden von E-Rechnungen an die OZG-RE</span></h2></div><div class="text"><div class="ce-bodytext"><p>Sie möchten sich zunächst mit dem Einsenden von E‑Rechnungen an die OZG‑RE vertraut machen, bevor Sie E‑Rechnungen an Ihre Kunden bzw. Rechnungsempfänger versenden?</p><p>Zum Testen der Funktionalitäten der Rechnungseingangsplattform OZG‑RE steht Ihnen eine <a href="https://test.xrechnung-bdr.de/edi/auth/login" target="_blank" rel="noreferrer"><span class="icon" aria-hidden="true"></span>Testumgebung</a> zur Verfügung. Auch auf der Testumgebung ist zum Versand von E-Rechnungen per E‑Mail eine Registrierung notwendig.</p><p>Sie können die Funktionen der OZG-RE wie das Einsenden von E-Rechnungen auf der Testumgebung erproben.</p><p>Zur finalen Zusendung der E‑Rechnungen nutzen Sie die <a href="https://xrechnung-bdr.de/edi/account/login" target="_blank" rel="noreferrer"><span class="icon" aria-hidden="true"></span>Produktivumgebung</a> der OZG‑RE.</p><p>Sie müssen sich jedoch an der Testumgebung sowie der Produktivumgebung der OZG-RE jeweils separat registrieren. Zusätzliche Informationen zur Nutzung der OZG-RE – und insbesondere zu den Übertragungskanälen – finden Sie in den <a href="https://xrechnung-bdr.de/edi/auth/terms-of-use" target="_blank" rel="noreferrer"><span class="icon" aria-hidden="true"></span>Nutzungsbedingungen der OZG-RE</a>.</p></div></div></div>
+
+
+                        
+
+
+<div class="frame
+frame-default
+frame-type-ce_container
+frame-layout-0
+
+
+
+grid-fullsize
+
+
+
+ position-relative"
+     id="c995">
+
+    
+
+    
+        <div class="grid-bg bg-color_6"></div>
+    
+
+    
+
+    <div class="container header-underline">
+
+    
+        
+
+
+        
+    
+
+    
+
+
+
+
+    
+
+    
+    
+        
+            
+
+<!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c996" class="frame frame-default frame-type-shortcut frame-layout-0 "><div class="frame
+frame-default
+frame-type-ce_grid
+frame-layout-0
+frame-space-before-large
+
+
+
+
+
+
+ position-relative"
+     id="c105"><div class="container header-underline"><ul class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 list-unstyled"><li class="col"><div class="frame
+frame-default
+frame-type-ce_container
+frame-layout-0
+
+
+
+
+
+
+
+ position-relative"
+     id="c110"><div class="container header-underline"><!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c117" class="frame frame-default frame-type-text frame-layout-0 frame-space-after-small "><div class="header-content"><h2 class=" "><span id="element-117-header">Weiterführende Informationen</span></h2></div><div class="text"><div class="ce-bodytext"><p>Hier erhalten Sie weiterführende Informationen rund um das Thema E‑Rechnung in der Bundesverwaltung.</p></div></div></div><div class="frame
+frame-default
+frame-type-ce_grid
+frame-layout-0
+
+
+
+
+
+
+
+ position-relative"
+     id="c111"><div class="container header-underline"><ul class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 list-unstyled"><li class="col"><!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c116" class="frame frame-default frame-type-textpic frame-layout-0 "><div class="textpic topcenter"><div class="ce-gallery" data-images="1"><div data-count="0" class="image-wrapper "><figure class="figure"><picture class="" data-aspectratio-lg="NaN" data-aspectratio-md="NaN" data-aspectratio-sm="NaN" data-aspectratio-xl="NaN" data-aspectratio-xs="NaN"><img class="figure-img img-fluid" src="/fileadmin/icons/blue/merksaetze-icon-blue.svg" width="80" height="80" alt="Icon mit drei Sprechblasen für wichtige Merksätze zur E-Rechnung" title="Merksätze zur E-Rechnung" loading="lazy" /></picture></figure></div></div><div class="ce-bodytext"><div class="header-content"><h3 class=" h6"><a href="/e-rechnung/merksatze-zur-erechnung" class="link"><span id="element-116-header">Merksätze zur E-Rechnung</span></a></h3></div></div></div></div></li><li class="col"><!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c115" class="frame frame-default frame-type-textpic frame-layout-0 "><div class="textpic topcenter"><div class="ce-gallery" data-images="1"><div data-count="0" class="image-wrapper "><figure class="figure"><picture class="" data-aspectratio-lg="NaN" data-aspectratio-md="NaN" data-aspectratio-sm="NaN" data-aspectratio-xl="NaN" data-aspectratio-xs="NaN"><img class="figure-img img-fluid" src="/fileadmin/icons/blue/glossar-icon-blue.svg" width="80" height="80" alt="Icon eines Buchs mit den Buchstaben A und Z für ein Glossar zur E-Rechnung" title="E-Rechnung von A bis Z" loading="lazy" /></picture></figure></div></div><div class="ce-bodytext"><div class="header-content"><h3 class=" h6"><a href="/e-rechnung/glossar" class="link"><span id="element-115-header">E-Rechnung von A-Z</span></a></h3></div></div></div></div></li><li class="col"><!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c114" class="frame frame-default frame-type-textpic frame-layout-0 "><div class="textpic topcenter"><div class="ce-gallery" data-images="1"><div data-count="0" class="image-wrapper "><figure class="figure"><picture class="" data-aspectratio-lg="NaN" data-aspectratio-md="NaN" data-aspectratio-sm="NaN" data-aspectratio-xl="NaN" data-aspectratio-xs="NaN"><img class="figure-img img-fluid" src="/fileadmin/icons/blue/bundeslaender-icon-blue.svg" width="80" height="80" alt="Icon einer Deutschlandkarte mit XML-Dokument für Vorgaben in den Bundesländern" title="E-Rechnung in den Bundesländern" loading="lazy" /></picture></figure></div></div><div class="ce-bodytext"><div class="header-content"><h3 class=" h6"><a href="/e-rechnung/umsetzung-der-e-rechnung-in-den-bundeslaendern" class="link"><span id="element-114-header">E-Rechnung in den Bundesländern</span></a></h3></div></div></div></div></li><li class="col"><!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c113" class="frame frame-default frame-type-textpic frame-layout-0 "><div class="textpic topcenter"><div class="ce-gallery" data-images="1"><div data-count="0" class="image-wrapper "><figure class="figure"><picture class="" data-aspectratio-lg="NaN" data-aspectratio-md="NaN" data-aspectratio-sm="NaN" data-aspectratio-xl="NaN" data-aspectratio-xs="NaN"><img class="figure-img img-fluid" src="/fileadmin/icons/blue/faq-icon-blue.svg" width="80" height="80" alt="Icon mit Frage- und Antwort-Sprechblasen für häufig gestellte Fragen" title="FAQ zur E-Rechnung" loading="lazy" /></picture></figure></div></div><div class="ce-bodytext"><div class="header-content"><h3 class=" h6"><a href="/faq" class="link"><span id="element-113-header">FAQ zur E-Rechnung</span></a></h3></div></div></div></div></li><li class="col"><!-- Do not output frame wrapper for Solr result elements inside container (ul > li must not contain a div) --><div id="c112" class="frame frame-default frame-type-textpic frame-layout-0 "><div class="textpic topcenter"><div class="ce-gallery" data-images="1"><div data-count="0" class="image-wrapper "><figure class="figure"><picture class="" data-aspectratio-lg="NaN" data-aspectratio-md="NaN" data-aspectratio-sm="NaN" data-aspectratio-xl="NaN" data-aspectratio-xs="NaN"><img class="figure-img img-fluid" src="/fileadmin/icons/blue/rechnungsformate-icon-blue.svg" width="80" height="80" alt="Icon eines Dokuments mit Fragezeichen zum Vergleich von Papier-, PDF- und E-Rechnung" title="Unterschied Papier-, PDF- und E-Rechnung" loading="lazy" /></picture></figure></div></div><div class="ce-bodytext"><div class="header-content"><h3 class=" h6"><a href="/e-rechnung/unterschied-zwischen-papier-pdf-und-erechnung" class="link"><span id="element-112-header">Unterschied Papier-, PDF und E-Rechnung</span></a></h3></div></div></div></div></li></ul></div></div></div></div></li><li class="col"><div class="frame
+frame-default
+frame-type-ce_container
+frame-layout-0
+
+
+
+
+
+
+
+ position-relative"
+     id="c106"><div class="container header-underline"><article id="c109" class="frame frame-type-gsb_singleteaser frame-layout-0 frame-space-after-small"><div class="teaser bg-color_4 grid-light teaser-headline-contrast d-flex textpic topcenter flex-wrap"><div class="teaser-content ce-bodytext w-100 h-100 order-1"><!-- Ctype: gsb_singleteaser
+               Uid: 109
+        --><div class="header-content"><h2 class=" "><a href="/mediathek/dokumente" target="#:~:text=Gesetze und Verordnungen" class="teaser-link stretched-link"><span id="element-109-header">Gesetze und Verordnungen</span></a></h2></div><p>Aktuelle Gesetze und Verordnungen zur E-Rechnung in Deutschland</p></div></div></article><article id="c108" class="frame frame-type-gsb_singleteaser frame-layout-0 frame-space-after-small"><div class="teaser bg-color_4 grid-light teaser-headline-contrast d-flex textpic topcenter flex-wrap"><div class="teaser-content ce-bodytext w-100 h-100 order-1"><!-- Ctype: gsb_singleteaser
+               Uid: 108
+        --><div class="header-content"><h2 class=" "><a href="/mediathek/dokumente" class="teaser-link stretched-link"><span id="element-108-header">Dokumente</span></a></h2></div><p>Alle wichtigen Dokumente für Rechnungssteller, ERP-Hersteller, Behörden und Einrichtungen sowie Verbände zur E-Rechnung</p></div></div></article><article id="c107" class="frame frame-type-gsb_singleteaser frame-layout-0 frame-space-after-small"><div class="teaser bg-color_4 grid-light teaser-headline-contrast d-flex textpic topcenter flex-wrap"><div class="teaser-content ce-bodytext w-100 h-100 order-1"><!-- Ctype: gsb_singleteaser
+               Uid: 107
+        --><div class="header-content"><h2 class=" "><a href="/mediathek/tutorials" class="teaser-link stretched-link"><span id="element-107-header">Tutorials</span></a></h2></div><p>Hier finden Sie Videotutorials zur Nutzung der Rechnungs­eingangs­plattform OZG-RE</p></div></div></article></div></div></li></ul></div></div></div>
+
+
+        
+    
+
+
+    </div>
+</div>
+
+
+
+                        <!--TYPO3SEARCH_end-->
+                        
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+
+<footer class="fw-bold text-gray-600 pt-5 border-top border-2 position-relative" aria-labelledby="footerID">
+    <div id="footerID" hidden>Servicebereich</div>
+
+    <div class="container footer-grid testclass">
+        <div class="footer-column">
+            <div class="frame contact-column">
+                <h3>Kontakt &amp; Support</h3>
+                <p>
+                    <a target="_blank" title="Call support" href="tel:03025984436">03025984436</a>
+                    <br>
+                    Mo - Fr 8:00-16:00
+                    <br>
+                    ausgenommen Feiertage
+                </p>
+            </div>
+            
+                <div class="frame">
+                    <h3>
+                        Informationen für
+                    </h3>
+
+                    
+                        <ul class="footer-subpages">
+                            
+                                <li>
+                                    <a href="/rechnungssteller" target="" title="Rechnungssteller">
+                                        Rechnungssteller
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/erp-hersteller" target="" title="ERP-Hersteller">
+                                        ERP-Hersteller
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/behoerden" target="" title="Behörden und Einrichtungen">
+                                        Behörden und Einrichtungen
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/verbaende" target="" title="Verbände">
+                                        Verbände
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    
+                </div>
+            
+                <div class="frame">
+                    <h3>
+                        Externe Links
+                    </h3>
+
+                    
+                        <ul class="footer-subpages">
+                            
+                                <li>
+                                    <a href="https://xrechnung-bdr.de/edi/auth/login" target="_blank" title="OZG-RE">
+                                        OZG-RE
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://peppol.org/" target="_blank" title="Peppol">
+                                        Peppol
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://xeinkauf.de/xrechnung/" target="_blank" title="Standard XRechnung">
+                                        Standard XRechnung
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    
+                </div>
+            
+                <div class="frame">
+                    <h3>
+                        Gesetze &amp; Verordnungen
+                    </h3>
+
+                    
+                        <ul class="footer-subpages">
+                            
+                                <li>
+                                    <a href="/fileadmin/user_upload/pdf/E-RechV_092025.pdf" target="_blank" title="E-Rechnungsverordnung (E-RechV)">
+                                        E-Rechnungsverordnung (E-RechV)
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://bgbl.de/xaver/bgbl/start.xav?start=%2F%2F*%5B%40attr_id%3D%27bgbl117s0770.pdf%27%5D#/switch/tocPane?_ts=1780398240979" target="_blank" title="Richtlinie 2014/55/EU">
+                                        Richtlinie 2014/55/EU
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:189:0001:0008:DE:PDF#:~:text=Rechnungen%20auf%20Papier%20und%20elektronische,auf%20Papier%20sollte%20nicht%20zunehmen" target="_blank" title="Richtlinie 2010/45/EU">
+                                        Richtlinie 2010/45/EU
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/fileadmin/pdf/Zeitstrahl-Umsetzung-E-Rechnung-Deutschland_092025.pdf" target="_blank" title="Zeitstrahl zur Umsetzung der E‑Rechnung">
+                                        Zeitstrahl zur Umsetzung der E‑Rechnung
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    
+                </div>
+            
+        </div>
+    </div>
+
+    <div class="container pb-5">
+        
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="row align-items-start py-4">
+                
+                        <div class="col-12 col-lg-4 pb-2">
+                            
+                                <p class="footer-copyright-distances footer-copyright-font-properties">
+                                    © 2026
+                                    Beschaffungsamt des BMI
+                                </p>
+                            
+                        </div>
+                        <div class="col-12 col-lg-8 pb-2">
+                            
+
+<nav aria-labelledby="meta" class="text-uppercase">
+    <p class="visually-hidden" id="meta">Service-Navigation Fußbereich</p>
+    <ul class="footer-nav nav footer-nav-mobile justify-content-end">
+        
+            <li class="nav-item footer-nav-item-distances">
+                
+                        <a class="nav-link footer-nav-link-distances" href="/impressum">
+                            Impressum
+                        </a>
+                    
+            </li>
+        
+            <li class="nav-item footer-nav-item-distances">
+                
+                        <a class="nav-link footer-nav-link-distances" href="/datenschutz">
+                            Datenschutz
+                        </a>
+                    
+            </li>
+        
+            <li class="nav-item footer-nav-item-distances">
+                
+                        <a class="nav-link footer-nav-link-distances" href="/barrierefreiheit">
+                            Barriere­freiheits­erklärung
+                        </a>
+                    
+            </li>
+        
+            <li class="nav-item footer-nav-item-distances">
+                
+                        <a class="nav-link footer-nav-link-distances" href="/sitemap">
+                            Sitemap
+                        </a>
+                    
+            </li>
+        
+            <li class="nav-item footer-nav-item-distances">
+                
+                        <a class="nav-link footer-nav-link-distances" href="/meldestelle-hinweisgeber">
+                            Meldestelle Hinweisgeber
+                        </a>
+                    
+            </li>
+        
+    </ul>
+</nav>
+
+                        </div>
+                    
+            </div>
+        </div>
+    </div>
+
+
+        
+
+
+
+    </div>
+
+    
+        <div class="brand-footerline">
+            <div class="container">
+                <div class="col-12 brand-footerline__wrapper">
+                    <span class="brand-footerline__text">Die Digitale Dachmarke kennzeichnet digitale Angebote von Bund, Ländern und Kommunen als staatliche Leistungen.</span>
+                    <svg class="brand-footerline__icon" aria-labelledby="aria-22-7h5mpidw15r8elvt42vq8i02y" viewBox="0 0 197 77" width="197" height="77" role="img" focusable="false">
+                        <title id="aria-22-7h5mpidw15r8elvt42vq8i02y">Digitalwappen Bund Länder Kommunen</title>
+                        <path d="M79.999 1.852h5.779c2.777 0 4.855 1.897 4.855 4.448 0 1.468-.701 2.641-1.919 3.432 1.512.722 2.347 2.009 2.347 3.679 0 2.642-2.077 4.606-4.853 4.606h-6.209V1.852Zm5.531 6.819c1.536 0 2.416-.768 2.416-2.078 0-1.399-.948-2.325-2.416-2.325h-2.867v4.403h2.867Zm.429 6.93c1.468 0 2.416-.925 2.416-2.325 0-1.445-.926-2.348-2.416-2.348h-3.296v4.673h3.296Zm7.903-1.58V6.3h2.573v7.202c0 1.445.858 2.348 2.168 2.348 1.084 0 2.009-.632 2.506-1.648V6.3h2.596v11.717h-2.348v-1.761c-.767 1.287-1.987 2.009-3.522 2.009-2.37 0-3.973-1.715-3.973-4.244Zm18.445-5.554c-1.083 0-2.054.61-2.573 1.626v7.924h-2.574V6.3h2.371v1.716c.767-1.264 2.009-1.964 3.544-1.964 2.393 0 3.996 1.693 3.996 4.267v7.698h-2.574v-7.202c0-1.467-.835-2.348-2.19-2.348Zm7.338 3.725c0-3.612 2.235-6.14 5.373-6.14 1.4 0 2.439.519 3.161 1.648V.566h2.597v17.451h-2.303v-1.761c-.723 1.355-1.829 2.009-3.409 2.009-3.206 0-5.419-2.506-5.419-6.073Zm5.69 3.703c1.264 0 2.257-.632 2.844-1.761V10.16c-.61-1.128-1.625-1.738-2.867-1.738-1.896 0-3.07 1.445-3.07 3.748 0 2.325 1.174 3.725 3.093 3.725ZM82.708 43.652h6.524v2.506h-9.233V29.994h2.709v13.658Zm11.628 2.755c-2.123 0-3.658-1.378-3.658-3.319 0-1.693 1.152-2.912 3.183-3.319l3.59-.677v-.113c0-1.535-.994-2.416-2.709-2.416-1.31 0-2.664.52-3.658 1.355v-2.596c.971-.745 2.326-1.129 3.883-1.129 3.161 0 5.08 1.671 5.08 4.493v7.472h-2.37v-1.58c-.655 1.174-1.851 1.829-3.341 1.829Zm-1.31-17.858c.948 0 1.693.722 1.693 1.648s-.745 1.648-1.693 1.648c-.926 0-1.648-.722-1.648-1.648s.722-1.648 1.648-1.648Zm1.919 15.69c1.106 0 2.009-.519 2.506-1.377v-1.761l-2.754.542c-.993.181-1.445.61-1.445 1.332 0 .813.587 1.264 1.693 1.264Zm2.8-15.69c.948 0 1.693.722 1.693 1.648s-.745 1.648-1.693 1.648c-.926 0-1.649-.722-1.649-1.648s.723-1.648 1.649-1.648Zm10.769 8.06c-1.084 0-2.054.609-2.574 1.625v7.924h-2.573V34.441h2.37v1.716c.768-1.264 2.009-1.964 3.545-1.964 2.393 0 3.996 1.693 3.996 4.267v7.698h-2.574v-7.201c0-1.468-.835-2.348-2.19-2.348Zm7.338 3.725c0-3.612 2.235-6.141 5.373-6.141 1.4 0 2.438.519 3.161 1.648v-7.134h2.596v17.451h-2.303v-1.76c-.722 1.354-1.828 2.009-3.409 2.009-3.206 0-5.418-2.506-5.418-6.073Zm5.689 3.702c1.264 0 2.258-.632 2.845-1.761v-3.973c-.61-1.129-1.626-1.739-2.867-1.739-1.897 0-3.071 1.445-3.071 3.748 0 2.325 1.174 3.725 3.093 3.725Zm8.106-3.68c0-3.657 2.28-6.163 5.531-6.163 3.093 0 5.125 2.325 5.125 5.87v1.038h-8.082c.248 2.009 1.467 2.98 3.679 2.98 1.423 0 2.755-.384 3.816-1.106v2.393c-1.061.677-2.438 1.039-3.928 1.039-3.771 0-6.141-2.326-6.141-6.051Zm8.24-1.264c-.18-1.738-1.106-2.641-2.664-2.641-1.603 0-2.641.948-2.957 2.641h5.621Zm5.149-4.651h2.347v2.416c.746-1.874 1.829-2.664 3.5-2.664.451 0 .835.045 1.196.158v2.709a3.473 3.473 0 0 0-1.264-.225c-1.4 0-2.574.789-3.206 2.122v7.201h-2.573V34.441ZM82.708 67.053V74.3h-2.709V58.136h2.709v7.156l6.276-7.156h3.5l-7.089 7.969L92.71 74.3h-3.613l-6.389-7.247Zm10.115 1.4c0-3.613 2.348-6.119 5.735-6.119s5.734 2.506 5.734 6.119c0 3.589-2.371 6.095-5.734 6.095-3.387 0-5.735-2.506-5.735-6.095Zm5.735 3.702c1.941 0 3.138-1.399 3.138-3.702 0-2.326-1.197-3.725-3.138-3.725s-3.116 1.399-3.116 3.725c0 2.303 1.174 3.702 3.116 3.702Zm8.422-9.572h2.347v1.738c.768-1.264 1.987-1.987 3.5-1.987 1.557 0 2.777.768 3.409 2.055.79-1.309 2.054-2.055 3.657-2.055 2.438 0 4.019 1.671 4.019 4.268V74.3h-2.574v-7.202c0-1.445-.79-2.348-2.1-2.348-1.061 0-2.031.655-2.506 1.693V74.3h-2.573v-7.202c0-1.445-.79-2.348-2.077-2.348-1.061 0-2.032.655-2.529 1.603V74.3h-2.573V62.583Zm20.274 0h2.348v1.738c.768-1.264 1.987-1.987 3.5-1.987 1.557 0 2.776.768 3.409 2.055.79-1.309 2.054-2.055 3.657-2.055 2.438 0 4.018 1.671 4.018 4.268V74.3h-2.573v-7.202c0-1.445-.791-2.348-2.1-2.348-1.061 0-2.032.655-2.506 1.693V74.3h-2.573v-7.202c0-1.445-.791-2.348-2.078-2.348-1.061 0-2.031.655-2.528 1.603V74.3h-2.574V62.583Zm20.14 7.721v-7.721h2.573v7.202c0 1.445.858 2.348 2.167 2.348 1.084 0 2.01-.633 2.506-1.649v-7.901h2.597V74.3h-2.348v-1.761c-.768 1.287-1.987 2.009-3.522 2.009-2.371 0-3.973-1.716-3.973-4.244Zm18.445-5.554c-1.083 0-2.054.61-2.574 1.626V74.3h-2.573V62.583h2.37v1.716c.768-1.265 2.009-1.965 3.545-1.965 2.393 0 3.996 1.694 3.996 4.268V74.3h-2.574v-7.202c0-1.467-.835-2.348-2.19-2.348Zm7.315 3.748c0-3.658 2.281-6.164 5.531-6.164 3.093 0 5.125 2.326 5.125 5.871v1.038h-8.082c.249 2.009 1.467 2.98 3.68 2.98 1.422 0 2.754-.384 3.815-1.106v2.393c-1.061.677-2.438 1.038-3.928 1.038-3.77 0-6.141-2.325-6.141-6.05Zm8.241-1.264c-.181-1.739-1.107-2.642-2.664-2.642-1.603 0-2.642.948-2.958 2.642h5.622Zm10.295-2.484c-1.083 0-2.054.61-2.573 1.626V74.3h-2.574V62.583h2.371v1.716c.767-1.265 2.009-1.965 3.544-1.965 2.393 0 3.996 1.694 3.996 4.268V74.3h-2.574v-7.202c0-1.467-.835-2.348-2.19-2.348Z"></path>
+                        <path fill="#dc0000" d="M2.837 22.33v33.286A2.837 2.837 0 0 1 0 58.455V20.261c.92.723 1.867 1.414 2.837 2.069Zm4.267 2.571v29.293a2.837 2.837 0 0 0 2.838-2.838V26.301a48.186 48.186 0 0 1-2.838-1.4Zm7.105 3.088v21.936a2.837 2.837 0 0 0 2.837-2.837V28.862a41.796 41.796 0 0 1-2.837-.873Zm10.094 17.789c-.384-3.28-1.049-8.653-.453-15.571-.78-.087-1.853-.276-2.661-.423-.61 7.162-.015 12.664.443 16.625 0 0 1.239-.393 2.671-.631ZM57.162 22.33v33.286A2.838 2.838 0 0 0 60 58.455V20.261a48.73 48.73 0 0 1-2.838 2.069Zm-7.104 3.971v25.055a2.837 2.837 0 0 0 2.837 2.838V24.901c-.928.496-1.874.964-2.837 1.4Zm-7.105 2.561v18.225a2.838 2.838 0 0 0 2.838 2.838V27.989c-.746.27-2.1.679-2.838.873Zm-4.585 17.547c.458-3.961 1.053-9.463.443-16.625-.808.147-1.881.336-2.661.423.596 6.918-.07 12.291-.454 15.571 1.433.238 2.672.631 2.672.631Z"></path>
+                        <path fill="#f0b405" d="M16.224 68.753a2.79 2.79 0 0 1-2.734-2.773v-2.932l-4.787 4.399a2.797 2.797 0 0 1 .16-3.888l2.292-2.138H6.128a2.764 2.764 0 0 1 .815-1.913 2.769 2.769 0 0 1 1.967-.815h5.261l6.854-6.668c.971-.946 1.076-1.255 1.083-2.216 1.006-.445 1.689-.616 2.55-.78v.739c0 1.744-.059 2.508-1.54 3.95a17551.44 17551.44 0 0 0-6.022 5.859l2.556 1.023a2.765 2.765 0 0 1 1.618 1.388c.327.645.39 1.377.179 2.068l-5.225-2.009v6.706ZM30 77.11c3.733 0 7.753-.745 10.754-1.994l1.963-.816s-.634-.642-1.509-1.5c-4.966-4.869-6.367-9.75-5.175-16.214-1.34-1.291-1.645-1.618-2.185-2.467-1.089 4.862-2.228 12.331 3.833 19.072-2.291.672-5.082 1.181-7.681 1.181s-5.39-.509-7.681-1.181c6.061-6.741 4.922-14.21 3.833-19.072-.54.849-.845 1.176-2.185 2.467 1.191 6.464-.209 11.345-5.176 16.214-.874.858-1.508 1.5-1.508 1.5l1.963.816C22.247 76.365 26.267 77.11 30 77.11Zm13.775-8.357a2.79 2.79 0 0 0 2.735-2.773v-2.932l4.787 4.399a2.8 2.8 0 0 0-.16-3.888l-2.293-2.138h5.027a2.759 2.759 0 0 0-.814-1.913 2.773 2.773 0 0 0-1.968-.815h-5.26l-6.854-6.668c-.971-.946-1.076-1.255-1.084-2.216-1.005-.445-1.689-.616-2.55-.78v.739c0 1.744.06 2.508 1.541 3.95l6.021 5.859-2.555 1.023a2.766 2.766 0 0 0-1.619 1.388 2.766 2.766 0 0 0-.179 2.068l5.225-2.009v6.706Z"></path>
+                        <path d="M36.647 13.065c.619 2.84 1.203 5.807 1.517 9.5-.875.217-1.839.339-2.815.397-.267-3.509-.865-6.503-1.473-9.291-.247-1.128-.48-2.194-.674-3.165-.503-2.519-.004-4.214 1.535-5.42l-4.938-1.858c-1.155-.458-2.105-.166-2.955.754l-.204.212-.669-.207c-.299-.093-.868-.275-1.71-.275-.772 0-1.422.749-1.422 1.701v2.189c1.291 0 2.373.147 3.162.568.905.484 1.618 1.322 1.618 2.857 0 2.858-2.168 8.106-2.923 11.95a18.08 18.08 0 0 1-2.833-.391c.708-3.819 2.832-8.608 2.832-10.894 0-1.325-1.197-1.325-2.647-1.325h-2.047V5.263c0-1.235.326-2.511 1.257-3.321.799-.695 1.655-.954 2.67-.954.86 0 1.373.17 1.917.27 1.77-1.395 3.187-1.4 5.054-.647l9.622 4.046-.451.179s-4.834 1.801-4.085 5.115c.212.941.418 1.999.662 3.114ZM8.566 1.852A8.566 8.566 0 0 0 0 10.417v4.611c.92.724 1.866 1.414 2.837 2.069v-6.68a5.728 5.728 0 0 1 5.729-5.728h4.224a2.83 2.83 0 0 0 2.006-.831 2.824 2.824 0 0 0 .831-2.006H8.566ZM19.42 19.391c-8.093-2.347-9.478-3.846-9.478-7.278v-3.3a2.837 2.837 0 0 0-2.838 2.838v.88c0 4.747 1.762 6.923 11.601 9.458.21-.967.369-1.576.715-2.598ZM44.372 1.852c0 .783.318 1.494.832 2.006a2.83 2.83 0 0 0 2.006.831h4.224a5.727 5.727 0 0 1 5.728 5.728v6.68A48.269 48.269 0 0 0 60 15.028v-4.611a8.566 8.566 0 0 0-8.566-8.565h-7.062Zm-3.1 20.137c9.84-2.535 11.624-4.711 11.624-9.458v-.88a2.838 2.838 0 0 0-2.838-2.838v3.3c0 3.376-1.346 4.882-9.092 7.164.131.887.234 1.815.306 2.712Z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    
+
+    <a
+        href="#top"
+        class="totop shadow"
+        aria-label="Nach oben springen"
+        title="Nach oben springen"
+    >
+        <div class="ol"></div>
+
+        <div class="bg"></div>
+    </a>
+</footer>
+
+
+
+    
+
+        
+    
+<div id="cookie-banner" class="consent-banner-positioning"
+    data-src="/consent.html"
+    data-store-url="/storeConsent.html"
+    data-store-lifetime="31536000"
+    data-version="0"
+    data-preserve-selected="1"></div>
+
+
+
+
+
+
+
+
+<a href="#cookie-banner" class="d-none" id="cookie-banner-link" data-replacement-link-selector=".footer-nav .nav-item:last-child"
+    title="Consent Management öffnen">
+    Cookies
+</a>
+
+
+
+<div id="glossary-definition-modal" class="modal fade" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="glossary-definition-modal-title" aria-describedby="glossary-definition-modal-body" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-scrollable modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-10 title">
+              <h2 id="glossary-definition-modal-title"></h2>
+            </div>
+            <div class="col-2 close text-end">
+              <div class="btn-close-wrapper">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" data-close-modal title="Schließen">
+                    <span class="visually-hidden">Schließen</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container container">
+        <div id="glossary-definition-modal-body" class="modal-body"></div>
+        <div class="modal-footer glossary-modal-footer">
+          <div class="ce-bodytext">
+            <ul>
+              <li class="list-unstyled">
+                <a id="glossary-definition-modal-link" class="internal-link" href="#" title="Zum Glossar">
+                  <span class="icon" aria-hidden="true"></span>Zum Glossar
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src="/_assets/407ae717c4b09e486e22ae7c2bfaaf6f/JavaScript/consent-overlay.js?1791277156" integrity="sha256-ZpUGMIPVvbuqZMM3SLv8bXhudLhAy4qXsBsvOvTUdeA="></script>
+<script src="/_assets/542a38dbcbc3e9671534c5c3a6f2632b/JavaScript/FormCrShield.js?1758944859" integrity="sha256-xqjSUhVBmVdNisYO4MoXZ8OjWXxF66Qy5YkHhOo3t1w="></script>
+<script src="/_assets/2cc2b3842a6bf65d4bbef6ad377cbd88/JavaScripts/screen.js?1792142509" integrity="sha256-Rgj9tWu5n7BbSpQoxPzELIYHwWsLhYT0VVXVSblLFY4="></script>
+<script src="/_assets/2cc2b3842a6bf65d4bbef6ad377cbd88/JavaScripts/navigationPrimary.js?1792142509" integrity="sha256-m4mkfzLwpN98whlEM0q+EQHMmdfqvjM7Ggj65WAvj5g="></script>
+<script src="/_assets/76f10eee146e450e64a6aac7fdeee007/JavaScripts/solr.js?1791277883" integrity="sha256-DMECVVcvX37E7z0TSl1Jnlb4jQ9umT3paERJJH8rY9E="></script>
+<script src="/_assets/6666cd76f96956469e7be39d750cc7d9/JavaScript/main.js?1793109112" integrity="sha256-L9MgImvDWSAljyZ9OZoFcgHDEfyMCmdn9JZlbzMTU88="></script>
+<script integrity="sha256-M5JsLfQ0y/9Z2BGu2cwroI7bHaT672Zil3bpapivuik=" src="/_assets/407ae717c4b09e486e22ae7c2bfaaf6f/JavaScript/cookieBannerFull.js?1791277156"></script><style integrity="sha256-+EOh5g2e9Y+Dg6kQZxuuaWUO7sqbZQxPb+9GHdUaYr0=">
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+    
+    
+    
+
+    
+    
+
+
+</style>
+
+
+</body>
+</html>

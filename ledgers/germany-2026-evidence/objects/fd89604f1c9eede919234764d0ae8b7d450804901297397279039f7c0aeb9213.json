@@ -1,0 +1,11 @@
+{
+  "id": "U82200146a1d913d5",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-12-02-beruecks-auslaendischer-verhaeltnisse.pdf?__blob=publicationFile&v=4",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U82200146a1d913d5.body",
+  "raw_sha256": "745c34ec78b01e23896a46ea9c6e6c6c7c0ae69186c920908c95aaff6d95e0a0",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U82200146a1d913d5.reader.txt",
+  "reader_sha256": "8f23d903fcbf57325bacda6499b386ab375c58c35f260cc0481db945c85beec8",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

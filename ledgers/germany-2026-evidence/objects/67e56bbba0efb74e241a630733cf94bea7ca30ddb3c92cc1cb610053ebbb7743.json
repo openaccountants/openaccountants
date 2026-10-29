@@ -1,0 +1,37 @@
+{
+  "finding": "DE-B02: original fund-exit positive-gain and dated holding gates no longer explicit in current abbreviated routing paragraph or named companion",
+  "current_Guide_sha256": "b219cbd217a510b7f605539e4a101ddf1ad75e6141a760b47c77876d5f54c769",
+  "current_LF": 136,
+  "current_exact_wording": "- **Exit tax.** A client fully liable for at least seven of the last twelve years who holds § 17 shares faces a deemed sale on moving abroad, or on giving the shares to someone not liable in Germany ([§ 6 AStG](https://www.gesetze-im-internet.de/astg/__6.html)). Payment can be spread over seven yearly instalments on application; there is no open-ended EU/EEA deferral for triggers from 2022, and the tax falls away on return within seven years if conditions are met. Fund units are caught at 1% of a fund or a cost of EUR 500,000 ([§ 19(3) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__19.html)). Full detail: leaving-germany-exit-tax.",
+  "pre_refresh_revision": "03c473a8^",
+  "old_LF": 168,
+  "old_exact_wording": "- **Fund units** are also caught if the client held at least 1% of a fund's issued units at any time in the last five years, or at the time of the trigger holds units in the fund that cost at least EUR 500,000 ([§ 19(3) InvStG](https://www.gesetze-im-internet.de/invstg_2018/__19.html): \"mindestens 500 000 Euro\"). Either test only applies if the client's taxable gains on the fund units are positive overall (\"insgesamt positiv\"). The deemed gain is flat-tax income with the fund's tax-free share.",
+  "own_source": {
+    "source_id": "DEB174",
+    "act_article": "InvStG19(3)",
+    "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__19.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-19-20261026.html",
+    "raw_sha256": "766e08ce3f2365ef447650776d7cf05fad96c2a571082e8a532bd9d15350d2f2",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB174.txt",
+    "reader_sha256": "42efc20b8ad863a9ebf7d5c174b81dfcd6b788e4e4a8efe2b275137a739b600b",
+    "native_LF": [
+      9,
+      22
+    ],
+    "exact_quote": "(3) Soweit ein unbeschränkt Steuerpflichtiger seine Investmentanteile nicht im Betriebsvermögen hält, stehen der Veräußerung von Investmentanteilen zum gemeinen Wert gleich 1.\ndie Beendigung der unbeschränkten Steuerpflicht des Anlegers infolge der Aufgabe des Wohnsitzes oder des gewöhnlichen Aufenthalts,\n2.\ndie unentgeltliche Übertragung auf eine nicht unbeschränkt steuerpflichtige Person sowie,\n3.\nvorbehaltlich der Nummern 1 und 2, der Ausschluss oder die Beschränkung des Besteuerungsrechts der Bundesrepublik Deutschland hinsichtlich des Gewinns aus der Veräußerung der Investmentanteile.\nSatz 1 ist nur anzuwenden, wenn 1.\ndie Summe der nach Absatz 1, § 22 und § 56 ermittelten steuerpflichtigen Gewinne insgesamt positiv ist und\n2.\nder Anleger a)\ninnerhalb der letzten fünf Jahre vor der Veräußerung im Sinne des Satzes 1 unmittelbar oder mittelbar mindestens 1 Prozent der ausgegebenen Investmentanteile gehalten hat oder\nb)\nim Zeitpunkt der Veräußerung im Sinne des Satzes 1 unmittelbar oder mittelbar Investmentanteile an dem Investmentfonds hält, deren Anschaffungskosten mindestens 500 000 Euro betragen.\n§ 6 Absatz 1 Satz 2 und 3 sowie Absatz 2 bis 5 des Außensteuergesetzes und § 17 Absatz 1 Satz 4 sowie Absatz 2 Satz 3 bis 5 des Einkommensteuergesetzes sind entsprechend anzuwenden. Bei der entsprechenden Anwendung des § 6 Absatz 3 Satz 1 Nummer 2 und Absatz 4 Satz 5 Nummer 5 des Außensteuergesetzes treten die Ausschüttungen nach § 16 Absatz 1 Nummer 1 an die Stelle der Gewinnausschüttungen und die steuerfreien Kapitalrückzahlungen nach § 17 Absatz 1 an die Stelle der Einlagenrückgewähr. Im Fall des Satzes 1 ist keine Kapitalertragsteuer zu erheben.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": [
+      [
+        5,
+        23
+      ]
+    ],
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": ""
+  },
+  "options": {
+    "A_recommended": "Replace the fund-units sentence only: \"For private fund units, §19(3) applies only if the aggregate taxable gains calculated under §19(1), §22 and §56 are positive overall and the investor either held at least 1% of the fund’s issued units at some point in the preceding five years or holds units in that fund costing at least EUR 500,000 at the trigger date.\"",
+    "B": "Keep the short threshold sentence but immediately add: \"The 1% test looks back five years; the EUR 500,000 cost test is measured at the trigger. Both require positive aggregate taxable gains under §19(3).\""
+  },
+  "separating_control": "A1% holding sold down below1% before departure can still meet the five-year test; a €500000 holding with overall zero taxable gain fails the positive-gain condition. No negative deemed loss is supplied."
+}

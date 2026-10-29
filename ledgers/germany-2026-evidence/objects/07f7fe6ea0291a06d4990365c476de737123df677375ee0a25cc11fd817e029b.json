@@ -1,0 +1,17 @@
+[
+  {
+    "offset": 1126,
+    "before": "version: 1.4\n",
+    "after": "version: 1.5\n"
+  },
+  {
+    "offset": 20677,
+    "before": "How a furniture surcharge enters the cheap-let comparison is not on an official page read: refer.",
+    "after": "For the cheap-let comparison, use a furniture adjustment already provided by the local rent index without adding it twice. Otherwise add a surcharge only if it can be established from the local market for furnished lets; if no market value can be determined, no surcharge is added. Never derive it from monthly furniture AfA or a standard investment return ([BFH, 6 February 2018, IX R 14/17, paras. 18 to 20](https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201810105?type=1646225765))."
+  },
+  {
+    "offset": 47543,
+    "before": "how a furniture surcharge enters the cheap-let test; ",
+    "after": ""
+  }
+]

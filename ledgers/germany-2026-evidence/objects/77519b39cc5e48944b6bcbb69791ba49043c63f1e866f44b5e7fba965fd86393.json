@@ -1,0 +1,24 @@
+{
+  "slug": "germany-tax-optimization",
+  "expected_before_sha256": "fdb8f218bb046428f7d5cfdfee5cb9cc4b7e7f27ee671d1b620caf9d93ac25e0",
+  "operations": [
+    {
+      "before": "| Profit limit: profit of that year, without the deduction | EUR 200,000 | \"200 000 Euro nicht überschreitet\" |",
+      "after": "| Profit limit: profit of that year calculated without investment deductions or § 7g(2) add-backs | EUR 200,000 | \"200 000 Euro nicht überschreitet\" |"
+    },
+    {
+      "before": "version: 1.0\n",
+      "after": "version: 1.1\n"
+    },
+    {
+      "before": "last_updated: 2026-10-23\n",
+      "after": "last_updated: 2026-10-29\n"
+    }
+  ],
+  "after_sha256": "8db464182031e5fac0d6e52828c5e91e31cd5bd69d12c5d423323e75995b683d",
+  "original_oa_blocks": 0,
+  "original_oa_exact": true,
+  "ordered_URLs_exact": true,
+  "protected_metadata_exact": true,
+  "inverse_exact": true
+}

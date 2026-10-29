@@ -1,0 +1,1906 @@
+[
+  {
+    "lf": 19,
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "This skill works out which country taxes the pay of a person who lives on one side of the German-Swiss border and works on the other, and how Germany taxes the result. It also lists the German rules that follow a German who moves to Switzerland. It works from the treaty of 11 August 1971 as amended by the protocol of 21 August 2023. That protocol came into force on 27 November 2025 and applies from 1 January 2026.",
+    "anchors": [
+      "ENTRY",
+      "EFFECT"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 21,
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "See also, and do not repeat here:",
+    "anchors": [],
+    "kind": "scope / sibling or external-law referral / evidence boundary"
+  },
+  {
+    "lf": 23,
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "- **ch-cross-border** (Switzerland pack): Swiss residence, tax at source, the CHF 120,000 ordinary assessment threshold, lump-sum taxation, Swiss withholding tax refunds.",
+    "anchors": [
+      "SWISSMIN"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 24,
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "- **leaving-germany-exit-tax**: the § 6 AStG exit tax on shares and the § 2 AStG extended limited liability, with the full method.",
+    "anchors": [],
+    "kind": "scope / sibling or external-law referral / evidence boundary"
+  },
+  {
+    "lf": 25,
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "- **de-non-resident-tax**: a person who has left Germany and still has German income.",
+    "anchors": [],
+    "kind": "scope / sibling or external-law referral / evidence boundary"
+  },
+  {
+    "lf": 26,
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "- **de-partners-and-part-year**: the year of moving out, with the progression clause.",
+    "anchors": [],
+    "kind": "scope / sibling or external-law referral / evidence boundary"
+  },
+  {
+    "lf": 27,
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "- **de-employee-income-tax**: the 2026 tariff, Werbungskosten and special expenses of an employee.",
+    "anchors": [],
+    "kind": "scope / sibling or external-law referral / evidence boundary"
+  },
+  {
+    "lf": 28,
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "- **de-treaty-withholding-rates**: German withholding on dividends, interest and royalties paid to Swiss residents.",
+    "anchors": [],
+    "kind": "scope / sibling or external-law referral / evidence boundary"
+  },
+  {
+    "lf": 32,
+    "section": "Who this applies to",
+    "wording": "Three groups, with different results. Classify the client first and test again after any change of job, home office pattern, flat or family home.",
+    "anchors": [],
+    "kind": "scope / sibling or external-law referral / evidence boundary"
+  },
+  {
+    "lf": 34,
+    "section": "Who this applies to",
+    "wording": "**1. Frontier commuter (Grenzgänger), art. 15a.** A person resident in one state whose place of work is in the other state and who regularly returns from there to their home. The pay is taxed in the state of residence. The work state may withhold tax, capped at 4.5% of gross pay if the person shows an official residence certificate from their home tax office (art. 15a(1)).",
+    "anchors": [
+      "FRONT"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 36,
+    "section": "Who this applies to",
+    "wording": "- **Place of work** is normally where the employee is integrated into the employer's business. For drivers and field staff, days away count as business trips when counting non-return days. Where the contract names several sites or none, the place of work is where the work is mostly done (protocol no. 5(a)).",
+    "anchors": [
+      "WORKPLACE"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 37,
+    "section": "Who this applies to",
+    "wording": "- **Regular return, new from 2026.** There is a regular return only if the employee travels from home to the place of work and back on at least 20% of the agreed working days in the calendar year (protocol no. 5(b)). Agreed working days are those in the contract. Protocol no. 5(d) takes leave and sick days out of the working days for the 60-day test; the protocol does not say whether they also come out of the base for the 20% test, so check both bases (Example 2 passes and fails the same way on either).",
+    "anchors": [
+      "RETURN",
+      "DAYS"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 38,
+    "section": "Who this applies to",
+    "wording": "- **The 60 non-return days test.** A person who does not return home after every working day keeps commuter status unless, when employed for the whole calendar year, they fail to return home on more than 60 working days because of their work (art. 15a(2)).",
+    "anchors": [
+      "FRONT"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 39,
+    "section": "Who this applies to",
+    "wording": "- **What counts as a non-return day.** A day on which returning home was not possible or not reasonable for work reasons, and the person in fact did not return. Return is not reasonable when the shortest road distance one way is over 100 km by car, or the fastest public transport one way at usual commuting times takes over 1.5 hours; the means of transport mostly used decides (protocol no. 5(e), which takes over the consultation agreement of 12 October 2018). One-day business trips in either treaty state are not non-return days; one-day trips to a third country always are (protocol no. 5(f)). Weekend and holiday days on a multi-day business trip paid by the employer, and days off worked on the employer's express order, are working days (protocol no. 5(d)). Shift work spread over several days does not break the regular return; breaks under four hours do not end the working day (protocol no. 5(c)).",
+    "anchors": [
+      "DISTANCE",
+      "TRIP",
+      "DAYS",
+      "SHIFT"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 40,
+    "section": "Who this applies to",
+    "wording": "- **Home office days.** Under the consultation agreement of 15 and 18 July 2022 (BMF letter of 26 July 2022), a working day spent entirely at home in the residence state is not a non-return day. That agreement was made under the treaty as amended in 2010; whether it still applies under the 2026 protocol is not confirmed (see the end of this skill). Either way, a home office day is not a day on which the person travels to the place of work and back, so from 2026 it counts against the 20% regular-return test.",
+    "anchors": [
+      "HOMEOFFICE",
+      "HOMECLAUSE",
+      "RETURN"
+    ],
+    "kind": "positive own statutory/treaty/admin rule",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 41,
+    "section": "Who this applies to",
+    "wording": "- **Part-year employment.** The allowed non-return days are 5 per full month and 1 per full week of employment in the other state (protocol no. 5(g)).",
+    "anchors": [
+      "PARTYEAR"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 42,
+    "section": "Who this applies to",
+    "wording": "- **Part-time employment.** Someone who works some hours on every usual working day keeps the 60 days. Someone who works only on some days gets 60 cut in proportion: contractual working days over the usual full-time working days, taken as 240 for a five-day week and 280 for a six-day week if the contract is silent. Leave is not deducted from either figure (protocol no. 5(i)).",
+    "anchors": [
+      "PARTTIME"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 43,
+    "section": "Who this applies to",
+    "wording": "- **Several employers in the work state.** Status is judged once for all jobs in the year; non-return days from all jobs are added (protocol no. 5(h)).",
+    "anchors": [
+      "MULTIPLE"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 45,
+    "section": "Who this applies to",
+    "wording": "The rule works both ways. For a Swiss resident who commutes to a German employer, the German employer withholds at most 4.5% and Switzerland taxes the pay, cutting the gross pay by one fifth when computing its tax base (art. 15a(3)(b)).",
+    "anchors": [
+      "FRONT",
+      "CREDIT"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 47,
+    "section": "Who this applies to",
+    "wording": "**2. Weekly stayer (Wochenaufenthalter) and others who lose commuter status.** A German resident with a weekday room in Switzerland who stays there on more than 60 working days is not a commuter. Art. 15 applies instead: Switzerland may tax pay for work done in Switzerland. Germany exempts that pay but uses it to set the rate on other income (art. 24(1) no. 1(c) and no. 2; § 32b(1) no. 3 EStG). Germany grants the exemption only if the person proves that Switzerland taxed the pay and the tax was paid, or that Switzerland waived its right (§ 50d(8) EStG). Pay for workdays spent outside Switzerland stays taxable in Germany.",
+    "anchors": [
+      "FRONT",
+      "SALARY",
+      "EXEMPTCH",
+      "SUBJECTTAX",
+      "PROGRESSION"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 49,
+    "section": "Who this applies to",
+    "wording": "A weekday flat does not by itself move the person's residence. If the person is resident in both states under domestic law, art. 4(2) decides: permanent home first, then centre of vital interests (closer personal and economic ties), then habitual abode, then nationality. A family home in Germany usually points to Germany.",
+    "anchors": [
+      "RESTIE"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 51,
+    "section": "Who this applies to",
+    "wording": "**3. Managers of Swiss companies, art. 15(4).** A German resident who is a board member (Vorstandsmitglied), director, managing director (Geschäftsführer) or Prokurist of a Swiss company can be taxed in Switzerland on that pay, unless their duties are limited to work outside Switzerland. Art. 15a takes priority, so a manager who meets the commuter test is a commuter. The German and Swiss authorities agreed on 6 April 2023 to apply art. 15(4) also to people registered with a signature right and no stated function, and to unregistered people with powers at least equal to a Prokura. That agreement now runs to 31 December 2027 (BMF letters of 25 April 2023 and 16 October 2025).",
+    "anchors": [
+      "MANAGER",
+      "MANEX",
+      "MANUNTIL"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 53,
+    "section": "Who this applies to",
+    "wording": "**4. Germans who move to Switzerland.** Moving ends German unlimited liability. Four German rules can follow:",
+    "anchors": [],
+    "kind": "scope / sibling or external-law referral / evidence boundary"
+  },
+  {
+    "lf": 55,
+    "section": "Who this applies to",
+    "wording": "- **Treaty tail, art. 4(4).** A Swiss resident without Swiss nationality who was fully taxable in Germany for at least five years in total remains taxable in Germany on German-source income in the year their German liability ended and the five following years. Germany credits the Swiss tax on that income. This does not apply to someone who moved to take up genuine employment with an employer in which they have no substantial interest. A German employer may not apply the 4.5% cap to such a person while art. 4(4) applies (Gre-1 note 3).",
+    "anchors": [
+      "TAIL",
+      "GRE1"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 56,
+    "section": "Who this applies to",
+    "wording": "- **Exit tax, § 6 AStG.** Shares of at least 1% held in the last five years, after at least seven years of full German liability in the last twelve: deemed sale on leaving, seven yearly instalments on application. Method in leaving-germany-exit-tax.",
+    "anchors": [
+      "EXIT-trigger",
+      "EXIT-person",
+      "EXIT-shares",
+      "EXIT-instalments"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 57,
+    "section": "Who this applies to",
+    "wording": "- **Extended limited liability, § 2 AStG.** A German citizen who moves to a low-tax country and keeps substantial German economic interests stays taxable on more German income for ten years. Whether the Swiss canton counts as low-tax is a computation; see leaving-germany-exit-tax.",
+    "anchors": [
+      "EXIT-extended-person"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 58,
+    "section": "Who this applies to",
+    "wording": "- **Gift and inheritance tax, § 2(1) no. 1(b) ErbStG.** A German national who has lived abroad for no more than five years without a German home still counts as a resident for gift and inheritance tax.",
+    "anchors": [
+      "INHERIT"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 60,
+    "section": "Who this applies to",
+    "wording": "**Lump-sum taxpayers, art. 4(6).** A person is not treated as resident in a treaty state if that state does not tax them, at the generally applied taxes, on all their income from the other state that is normally taxable there. A lump-sum (expenditure-based) taxpayer in Switzerland who is not taxed on German-source income at ordinary rates therefore loses treaty protection. The Swiss rules on the lump sum are in ch-cross-border.",
+    "anchors": [
+      "LUMPSUMRES"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 64,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Item | Rate or amount | Year | Source |",
+    "anchors": [],
+    "kind": "presentation table label"
+  },
+  {
+    "lf": 66,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Swiss tax on a German-resident commuter's pay | At most 4.5% of gross pay, with a Gre-1 residence certificate; the lower Swiss tariff tax if that is less | 2026 | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2 (art. 15a(1)); Gre-1 note 6 |",
+    "anchors": [
+      "FRONT",
+      "GRE1"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 67,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Non-return days allowed, full year, full time | 60 working days | 2026 | Same, art. 15a(2) |",
+    "anchors": [
+      "FRONT"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 68,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Non-return days allowed, part year | 5 per full month plus 1 per full week of employment | 2026 | Same, protocol no. 5(g) |",
+    "anchors": [
+      "PARTYEAR"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 69,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Non-return days allowed, part time on some days only | 60 × contractual working days / usual full-time days (240 for a five-day week, 280 for a six-day week, if not in the contract) | 2026 | Same, protocol no. 5(i) |",
+    "anchors": [
+      "PARTTIME"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 70,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Regular return | Commute home to work and back on at least 20% of agreed working days | From 2026 | Same, protocol no. 5(b) |",
+    "anchors": [
+      "RETURN",
+      "EFFECT"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 71,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Return not reasonable | Over 100 km one way by road, or over 1.5 hours one way by public transport at usual times | 2026 | Same, protocol no. 5(e) |",
+    "anchors": [
+      "DISTANCE"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 72,
+    "section": "Rates, bands and thresholds",
+    "wording": "| German credit of the Swiss commuter tax | In full, like German withholding, under § 36 EStG, not under § 34c; also counted when setting prepayments | 2026 | Same, art. 15a(3)(a); https://www.gesetze-im-internet.de/estg/__36.html |",
+    "anchors": [
+      "CREDIT"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 73,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Swiss resident commuting to Germany | German withholding at most 4.5%; Swiss tax base is gross pay less one fifth | 2026 | Same, art. 15a(1), (3)(b) |",
+    "anchors": [
+      "FRONT",
+      "CREDIT"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 74,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Treaty tail for Germans who move | Year of departure plus five years | 2026 | Same, art. 4(4) |",
+    "anchors": [
+      "TAIL"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 75,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Prior German liability for the treaty tail | At least five years in total | 2026 | Same, art. 4(4) |",
+    "anchors": [
+      "TAIL"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 76,
+    "section": "Rates, bands and thresholds",
+    "wording": "| German return required, single, no German wage tax withheld | Total income above EUR 12,348 (EUR 24,696 for a married couple assessed jointly) | 2026 | https://www.gesetze-im-internet.de/estdv_1955/__56.html; https://www.gesetze-im-internet.de/estg/__32a.html |",
+    "anchors": [
+      "FILEDUTY",
+      "TARIFF"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 77,
+    "section": "Rates, bands and thresholds",
+    "wording": "| 2026 tariff, zone 3 (taxable EUR 17,800 to 69,878) | (173.10 × z + 2,397) × z + 1,034.87, z = (taxable − 17,799) / 10,000, result rounded down | 2026 | https://www.gesetze-im-internet.de/estg/__32a.html |",
+    "anchors": [
+      "TARIFF"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 78,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Prepayments | 10 March, 10 June, 10 September, 10 December; set only if at least EUR 400 a year and EUR 100 a date | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "anchors": [
+      "E37-1",
+      "E37-5"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 79,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Art. 15(4) consultation agreement | Applies to 31 December 2027 | 2026 | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2025-10-16-weiterfuehrung-konsultationsvereinb.pdf?__blob=publicationFile&v=3 |",
+    "anchors": [
+      "MANUNTIL"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 80,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Swiss mandatory ordinary assessment of source-taxed pay | Gross employment income of at least CHF 120,000 | 2026 | See ch-cross-border (QStV art. 9) |",
+    "anchors": [
+      "SWISSMIN"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 86,
+    "section": "Step 1: is the person a commuter?",
+    "wording": "1. Residence: where does the person live under domestic law, and if both, where under art. 4(2)?",
+    "anchors": [
+      "RESTIE"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 87,
+    "section": "Step 1: is the person a commuter?",
+    "wording": "2. Place of work in the other state (protocol no. 5(a))?",
+    "anchors": [
+      "WORKPLACE"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 88,
+    "section": "Step 1: is the person a commuter?",
+    "wording": "3. Regular return: commuting days ÷ agreed working days must be at least 20%. As explained above, the protocol excludes leave and sickness from the working days for the non-return test but does not expressly extend that exclusion to this denominator; calculate both denominators and retain the stated source uncertainty where the result differs.",
+    "anchors": [
+      "RETURN",
+      "DAYS"
+    ],
+    "kind": "positive own statutory/treaty/admin rule",
+    "evidence_note": "DE-L19 root correction applied to exact49bb497e: do not present net-of-leave denominator as settled when protocol5(d)expressly concerns15a(2)sentence2and Sourcesreserves5(b)denominator."
+  },
+  {
+    "lf": 89,
+    "section": "Step 1: is the person a commuter?",
+    "wording": "4. Non-return days: count only days that meet protocol no. 5(e) and (f), and compare with 60 or the reduced limit for part-year or part-time work. Add days from all jobs in the work state.",
+    "anchors": [
+      "DISTANCE",
+      "TRIP",
+      "FRONT",
+      "PARTYEAR",
+      "PARTTIME",
+      "MULTIPLE"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 90,
+    "section": "Step 1: is the person a commuter?",
+    "wording": "5. If both tests pass, art. 15a applies to the whole year's pay from that employment. If either fails, go to Step 3.",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "SALARY"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 92,
+    "section": "Step 1: is the person a commuter?",
+    "wording": "The employer certifies the non-return days on form Gre-3, stamped by the tax office for the place of work (protocol no. 5(j)). Where the employer finds at the year end, or when the job ends, that commuter status fails because of the non-return days, it sends the Gre-3 to the tax authority that collects the withholding, if possible within three months (Gre-3 note 2). The employee must give the employer the facts needed (protocol no. 5(j)).",
+    "anchors": [
+      "PROOF",
+      "GRE3"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 96,
+    "section": "Step 2: the German assessment of a commuter (German resident)",
+    "wording": "- All the pay, including pay for days worked in Switzerland, is German employment income. Compute it as for any employee (de-employee-income-tax): gross pay less Werbungskosten or the employee lump sum, then special expenses.",
+    "anchors": [
+      "BASE",
+      "EMPLOYEE1230",
+      "CREDIT"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 97,
+    "section": "Step 2: the German assessment of a commuter (German resident)",
+    "wording": "- The 2026 tariff applies to taxable income, with the solidarity surcharge at 5.5% above the EUR 20,350 threshold of income tax (see de-employee-income-tax).",
+    "anchors": [
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 98,
+    "section": "Step 2: the German assessment of a commuter (German resident)",
+    "wording": "- The Swiss tax withheld, up to 4.5% of gross, is credited against German income tax as if it were German withholding (art. 15a(3)(a); § 36(2) no. 2 EStG). It is not capped under § 34c. The employer's certificate of gross pay and Swiss tax is the evidence (protocol no. 6).",
+    "anchors": [
+      "CREDIT",
+      "PAYCERT"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 99,
+    "section": "Step 2: the German assessment of a commuter (German resident)",
+    "wording": "- The Swiss employer withholds the lower of 4.5% and the Swiss tariff tax (Gre-1 note 6(b)). The commuter gives the employer the Gre-1 when starting work and when changing employer; the German tax office then renews it each year without a new application (Gre-1 notes 2 and 7).",
+    "anchors": [
+      "GRE1"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 103,
+    "section": "Step 3: when commuter status fails",
+    "wording": "- Pay for work days in Switzerland: Swiss tax under art. 15; exempt in Germany with progression (art. 24(1) no. 1(c), no. 2; § 32b EStG), only with proof of Swiss tax paid (§ 50d(8)).",
+    "anchors": [
+      "SALARY",
+      "EXEMPTCH",
+      "SUBJECTTAX",
+      "PROGRESSION"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 104,
+    "section": "Step 3: when commuter status fails",
+    "wording": "- Pay for days worked in Germany or third countries: taxable in Germany.",
+    "anchors": [
+      "SALARY"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 105,
+    "section": "Step 3: when commuter status fails",
+    "wording": "- If the employer finds during the year that status will fail, it must collect the full Swiss tax (Gre-1 note 4).",
+    "anchors": [
+      "GRE1"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 109,
+    "section": "Step 4: Swiss occupational pensions of former commuters",
+    "wording": "A former commuter who worked in the Swiss public service and draws a second-pillar pension keeps the Germany-first rule: the Swiss pension fund withholds at most 4.5% on a Gre-4 certificate (Gre-5 for survivors), and Germany credits it in proportion to the taxable share of the pension (BMF letters of 8 February 2018 and 7 December 2023; protocol no. 9).",
+    "anchors": [
+      "PUBPENSION",
+      "PENSCREDIT",
+      "PENS1",
+      "PENS2"
+    ],
+    "kind": "positive own statutory/treaty/admin rule",
+    "evidence_note": "Narrow formerpublicservicepension referral and actualtaxedshare credit quoted; no full individual pension taxation calculation or new50percentpriorservice testcase is claimed."
+  },
+  {
+    "lf": 113,
+    "section": "Deadlines and filing",
+    "wording": "| Step | Rule |",
+    "anchors": [],
+    "kind": "presentation table label"
+  },
+  {
+    "lf": 115,
+    "section": "Deadlines and filing",
+    "wording": "| Gre-1 residence certificate | Apply to the German tax office when starting work and when changing employer; valid for one year and renewed without a new application |",
+    "anchors": [
+      "GRE1"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 116,
+    "section": "Deadlines and filing",
+    "wording": "| Gre-3 non-return days | Where status fails: employer certifies, the tax office for the place of work stamps; if possible within three months after the year end or the end of the job |",
+    "anchors": [
+      "PROOF",
+      "GRE3"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 117,
+    "section": "Deadlines and filing",
+    "wording": "| German return, 2026 | Required when total income exceeds EUR 12,348 (single) and no German wage tax was withheld (§ 56 EStDV). Due 31 July 2027, a Saturday, so Monday 2 August 2027; with a tax adviser 29 February 2028 (§§ 108, 149 AO; see de-non-resident-tax) |",
+    "anchors": [
+      "FILEDUTY",
+      "TARIFF",
+      "AO149-2",
+      "AO149-3",
+      "AO108"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 118,
+    "section": "Deadlines and filing",
+    "wording": "| Prepayments | Quarterly on 10 March, 10 June, 10 September and 10 December; the 4.5% Swiss tax is counted (art. 15a(3)(a); § 37 EStG) |",
+    "anchors": [
+      "E37-1",
+      "CREDIT"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 119,
+    "section": "Deadlines and filing",
+    "wording": "| Weekly stayer | Swiss tax return or tax at source in Switzerland (see ch-cross-border); German return showing the exempt pay for progression, with proof of Swiss tax |",
+    "anchors": [
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 123,
+    "section": "Penalties and interest",
+    "wording": "- **Late filing surcharge (§ 152 AO).** 0.25% per started month of the assessed tax less prepayments and credited withholding, at least EUR 25 per month, at most EUR 25,000. Compulsory if the 2026 return is not filed by 29 February 2028 and tax is due.",
+    "anchors": [
+      "AO152-1",
+      "AO152-2",
+      "AO152-3",
+      "AO152-5",
+      "AO152-10"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 124,
+    "section": "Penalties and interest",
+    "wording": "- **Interest on assessed tax (§ 233a, § 238 AO).** 0.15% per full month on the balance, from 1 April 2028 for 2026.",
+    "anchors": [
+      "AO233a-2",
+      "AO238-1a"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 125,
+    "section": "Penalties and interest",
+    "wording": "- **Late payment (§ 240 AO).** 1% per started month on overdue tax, rounded down to the nearest EUR 50.",
+    "anchors": [
+      "AO240-1"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 126,
+    "section": "Penalties and interest",
+    "wording": "- **Lost commuter status found late.** The employer must collect the Swiss tax not withheld (Gre-1 note 4). In Germany the exemption under art. 24 is refused until the Swiss tax is shown paid (§ 50d(8) EStG), so the return is assessed with the pay taxed and changed later.",
+    "anchors": [
+      "GRE1",
+      "SUBJECTTAX"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 128,
+    "section": "Penalties and interest",
+    "wording": "Figures and sections as in de-non-resident-tax, which read them on 2026-10-23.",
+    "anchors": [],
+    "kind": "scope / sibling or external-law referral / evidence boundary"
+  },
+  {
+    "lf": 132,
+    "section": "Cross-border points",
+    "wording": "- **Two treaty layers from 2026.** The protocol of 21 August 2023 rewrote the commuter points into the treaty protocol (nos. 5 to 7) and ended the 1991 negotiation record (protocol no. 7). The 20% regular-return test is the main new condition.",
+    "anchors": [
+      "PAYCERT",
+      "RETURN",
+      "EFFECT"
+    ],
+    "kind": "positive own statutory/treaty/admin rule"
+  },
+  {
+    "lf": 133,
+    "section": "Cross-border points",
+    "wording": "- **Swiss withholding for German residents, dividends, interest.** Switzerland withholds 35% Verrechnungssteuer; under art. 10 a German resident can recover down to 15% (0% for a German company holding at least 10% for 365 days); interest is taxable only in Germany (art. 11). Refund route in ch-cross-border.",
+    "anchors": [
+      "CHDIV",
+      "CHINT",
+      "SWISS35"
+    ],
+    "kind": "positive own statutory/treaty/admin rule",
+    "evidence_note": "Current official ESTV35percentcapitalincome statement actually read and quoted; own treaty10/11 relief gates remain separate. No full Swiss domestic withholding/refund review is claimed."
+  },
+  {
+    "lf": 134,
+    "section": "Cross-border points",
+    "wording": "- **German withholding on payments to Swiss residents.** See de-treaty-withholding-rates.",
+    "anchors": [],
+    "kind": "scope / sibling or external-law referral / evidence boundary"
+  },
+  {
+    "lf": 135,
+    "section": "Cross-border points",
+    "wording": "- **Social security.** EU-Switzerland coordination decides where contributions are due, separately from tax. Not covered here.",
+    "anchors": [],
+    "kind": "scope / sibling or external-law referral / evidence boundary"
+  },
+  {
+    "lf": 136,
+    "section": "Cross-border points",
+    "wording": "- **Inheritance tax.** A separate Germany-Switzerland inheritance tax treaty of 1978 exists. Not covered here.",
+    "anchors": [],
+    "kind": "scope / sibling or external-law referral / evidence boundary"
+  },
+  {
+    "lf": 137,
+    "section": "Cross-border points",
+    "wording": "- **Currency.** Swiss pay is converted to euro for the German return. The conversion rule is not set out here.",
+    "anchors": [],
+    "kind": "scope / sibling or external-law referral / evidence boundary"
+  },
+  {
+    "lf": 143,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "Lena lives in Lörrach and works full time for a Basel employer all of 2026. She commutes every working day except 12 nights away on multi-day business trips in Switzerland and 20 home office days at home. She is single and has no other income. Her gross pay is EUR 80,000 (already converted). After Werbungskosten and special expenses her taxable income is EUR 60,000 (computed as in de-employee-income-tax). She gave her employer a Gre-1. (Invented case.)",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 145,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "- Non-return days: 12, below 60. Home office days do not count.",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 146,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "- Regular return: she commutes on almost every working day, far above 20%.",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 147,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "- She is a commuter. Swiss tax at source: 4.5% × 80,000 = EUR 3,600.",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 148,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "- German tax on EUR 60,000: z = (60,000 − 17,799) / 10,000 = 4.2201; tax = (173.10 × 4.2201 + 2,397) × 4.2201 + 1,034.87 = 14,233.23, rounded down EUR 14,233. Below EUR 20,350, so no solidarity surcharge.",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 149,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "- Credit of the Swiss tax: EUR 3,600 in full (§ 36). German tax still to pay: EUR 10,633.",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 150,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "- Total tax on the pay: EUR 3,600 in Switzerland plus EUR 10,633 in Germany, EUR 14,233.",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 152,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "```oa-check",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 153,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "name: DE-CH commuter 2026, 4.5% Swiss tax credited under § 36",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 154,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "inputs:",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 155,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  gross_pay: 80000",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 156,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  taxable_income: 60000",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 157,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  swiss_cap_rate: 0.045",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 158,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "steps:",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 159,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  - swiss_tax: gross_pay * swiss_cap_rate",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 160,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  - z: (taxable_income - 17799) / 10000",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 161,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  - german_tax: floor((173.10 * z + 2397) * z + 1034.87)",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 162,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  - german_balance: german_tax - swiss_tax",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 163,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  - total: swiss_tax + german_balance",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 164,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "expected:",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 165,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  swiss_tax: 3600",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 166,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  german_tax: 14233",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 167,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  german_balance: 10633",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 168,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  total: 14233",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 169,
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "```",
+    "anchors": [
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "HOMECLAUSE",
+      "TARIFF",
+      "SoliRate",
+      "SOLILIMIT",
+      "CREDIT"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 173,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "Jonas lives in Konstanz and works three days a week for a Zurich employer all of 2026. His contract does not state the usual full-time days, so a five-day week gives 240. His contractual days are 3/5 of 240 = 144. He takes 12 days of leave, so he has 132 working days. He works 30 of them at home in Konstanz and stays overnight in Switzerland on 30 days because of evening client work more than 100 km from home. (Invented case.)",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 175,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "- Non-return limit: 60 × 144 / 240 = 36 days (leave is not deducted for this ratio). His 30 days are within it.",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 176,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "- Regular return: commuting days = 132 − 30 − 30 = 72. 20% of 132 = 26.4. 72 is above, so he passes. On the contract days without deducting leave (144) the threshold is 28.8; he still passes.",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 177,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "- He is a commuter: Switzerland withholds at most 4.5% and Germany taxes the pay and credits it, as in Example 1.",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 178,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "- Edge case: if he had worked 80 days at home, his commuting days would be 132 − 80 − 30 = 22, below 26.4 (and below 28.8). He would then fail the regular-return test from 2026 even though the home office days are not non-return days. Art. 15 would then apply: Switzerland taxes pay for his Swiss work days and Germany exempts it with progression, on proof of Swiss tax.",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 180,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "```oa-check",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 181,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "name: DE-CH part-time commuter 2026, non-return limit and 20% return test",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 182,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "inputs:",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 183,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  usual_days: 240",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 184,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  days_per_week: 3",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 185,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  leave_days: 12",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 186,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  home_office_days: 30",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 187,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  nonreturn_days: 30",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 188,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  home_office_alt: 80",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 189,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "steps:",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 190,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - contract_days: usual_days * days_per_week / 5",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 191,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - nonreturn_limit: 60 * contract_days / usual_days",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 192,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - working_days: contract_days - leave_days",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 193,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - commute_days: working_days - home_office_days - nonreturn_days",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 194,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - min_commute: working_days * 0.20",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 195,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - margin_nonreturn: nonreturn_limit - nonreturn_days",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 196,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - margin_return: commute_days - min_commute",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 197,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - commute_alt: working_days - home_office_alt - nonreturn_days",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 198,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - margin_alt: commute_alt - min_commute",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 199,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "expected:",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 200,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  contract_days: 144",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 201,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  nonreturn_limit: 36",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 202,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  working_days: 132",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 203,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  commute_days: 72",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 204,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  min_commute: 26.4",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 205,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  margin_nonreturn: 6",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 206,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  margin_return: 45.6",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 207,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  commute_alt: 22",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 208,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  margin_alt: -4.4",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 209,
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "```",
+    "anchors": [
+      "PARTTIME",
+      "FRONT",
+      "RETURN",
+      "DAYS",
+      "DISTANCE",
+      "HOMECLAUSE",
+      "EXEMPTCH",
+      "SUBJECTTAX"
+    ],
+    "kind": "computed fictional input / arithmetic / output",
+    "evidence_note": "Home-office non-return treatment is the actual2022administrative agreement; its continued application under2026protocol remains explicitly unconfirmed in GuideSources. Example is a conditional worksheet, not independent2026software or authority acceptance."
+  },
+  {
+    "lf": 213,
+    "section": "Ask the client first",
+    "wording": "1. Where is your home, where does your family live, and do you keep a room or flat in the other country?",
+    "anchors": [],
+    "kind": "intake question; actual legal parameters cited in substantive rows"
+  },
+  {
+    "lf": 214,
+    "section": "Ask the client first",
+    "wording": "2. Your contract: employer, place of work, working days per week, and any second job in the same country.",
+    "anchors": [],
+    "kind": "intake question; actual legal parameters cited in substantive rows"
+  },
+  {
+    "lf": 215,
+    "section": "Ask the client first",
+    "wording": "3. For 2026: days worked at home, days you stayed overnight for work (with distance or travel time), days on trips to third countries, leave and sick days.",
+    "anchors": [],
+    "kind": "intake question; actual legal parameters cited in substantive rows"
+  },
+  {
+    "lf": 216,
+    "section": "Ask the client first",
+    "wording": "4. Are you a board member, managing director or Prokurist of the Swiss company, or registered with a signature right?",
+    "anchors": [],
+    "kind": "intake question; actual legal parameters cited in substantive rows"
+  },
+  {
+    "lf": 217,
+    "section": "Ask the client first",
+    "wording": "5. Did you live in Germany before moving, for how many years, and do you hold 1% or more of any company?",
+    "anchors": [],
+    "kind": "intake question; actual legal parameters cited in substantive rows"
+  },
+  {
+    "lf": 218,
+    "section": "Ask the client first",
+    "wording": "6. Do you have the Gre-1 for 2026, and will your employer issue the Gre-3 and a certificate of pay and Swiss tax?",
+    "anchors": [],
+    "kind": "intake question; actual legal parameters cited in substantive rows"
+  },
+  {
+    "lf": 222,
+    "section": "Sources",
+    "wording": "| Source | URL | Read on |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 224,
+    "section": "Sources",
+    "wording": "| BMF, consolidated Germany-Switzerland treaty as in force from 27 November 2025 (arts. 4, 15, 15a, 24; protocol nos. 5 to 7, 9) | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2 | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 225,
+    "section": "Sources",
+    "wording": "| BMF, entry into force of the protocol of 21 August 2023 (27 November 2025) | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2025-12-23-Schweiz-DBA-Bekanntmachung-Protokoll.pdf?__blob=publicationFile&v=3 | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 226,
+    "section": "Sources",
+    "wording": "| Fedlex, treaty SR 0.672.913.62, version of 27 November 2025 (application from 2026, art. 23(2) of the protocol) | https://www.fedlex.admin.ch/eli/cc/1972/3075_3128_2910/de | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 227,
+    "section": "Sources",
+    "wording": "| BMF letter of 26 July 2022, home office days of commuters | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2022-07-26-konsultationsvereinbarung-betreffend-der-grenzgaengerregelung-artikel-15a-des-deutsch-schweizerischen-DBS.pdf?__blob=publicationFile&v=2 | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 228,
+    "section": "Sources",
+    "wording": "| BMF letter of 25 October 2018, non-return for work reasons (100 km, 1.5 hours) | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2018-10-25-nichtrueckkehr-eines-grenzgaengers-aufgrund-der-arbeitsausuebung-nach-artikel-15a-asbsatz-2-DBA-Schweiz.pdf?__blob=publicationFile&v=1 | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 229,
+    "section": "Sources",
+    "wording": "| BMF letter of 7 December 2023, forms Gre-1, Gre-3, Gre-4, Gre-5 with notes | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2023-12-07-ansaessigkeitsbescheinigungen-und-arbeitgeberbescheinigung-ueber-die-nichtrueckkehr.pdf?__blob=publicationFile&v=3 | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 230,
+    "section": "Sources",
+    "wording": "| BMF letter of 8 February 2018, credit of Swiss tax on second-pillar pensions | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2018-02-08-DBA-Schweiz-Abzugsteuer-Grenzgaenger.pdf?__blob=publicationFile&v=1 | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 231,
+    "section": "Sources",
+    "wording": "| BMF letter of 25 April 2023, art. 15(4) managers | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2023-04-25-konsultationsvereinbarung-zu-artikel-15-absatz-4-des-deutsch-schweizerischen-DBA.pdf?__blob=publicationFile&v=1 | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 232,
+    "section": "Sources",
+    "wording": "| BMF letter of 16 October 2025, art. 15(4) agreement continued to 2027 | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2025-10-16-weiterfuehrung-konsultationsvereinb.pdf?__blob=publicationFile&v=3 | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 233,
+    "section": "Sources",
+    "wording": "| EStG § 32a (2026 tariff) | https://www.gesetze-im-internet.de/estg/__32a.html | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 234,
+    "section": "Sources",
+    "wording": "| EStG § 32b (progression) | https://www.gesetze-im-internet.de/estg/__32b.html | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 235,
+    "section": "Sources",
+    "wording": "| EStG § 36 (credit of withholding) | https://www.gesetze-im-internet.de/estg/__36.html | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 236,
+    "section": "Sources",
+    "wording": "| EStG § 37 (prepayments) | https://www.gesetze-im-internet.de/estg/__37.html | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 237,
+    "section": "Sources",
+    "wording": "| EStG § 50d (proof for exempt employment income) | https://www.gesetze-im-internet.de/estg/__50d.html | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 238,
+    "section": "Sources",
+    "wording": "| EStDV § 56 (duty to file) | https://www.gesetze-im-internet.de/estdv_1955/__56.html | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 239,
+    "section": "Sources",
+    "wording": "| ErbStG § 2 (five-year rule for German nationals) | https://www.gesetze-im-internet.de/erbstg_1974/__2.html | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 240,
+    "section": "Sources",
+    "wording": "| AO §§ 152, 233a, 238, 240 | https://www.gesetze-im-internet.de/ao_1977/__152.html | 2026-10-23 |",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  },
+  {
+    "lf": 242,
+    "section": "Sources",
+    "wording": "Not yet confirmed: whether the home office consultation agreement of July 2022 still applies under the 2026 protocol text (it was made under the treaty as amended in 2010, and the new protocol no. 5 does not mention home office days; the 2023 Gre-1 notes still cite it); whether the BMF has issued an introductory letter on the 2026 commuter rules (none found in a search of bundesfinanzministerium.de on 2026-10-23); whether leave and sick days come out of the base for the 20% test; how the German implementing ordinance KonsVerCHEV (https://www.gesetze-im-internet.de/konsverchev/), which still uses 250 and 300 usual working days for part-time workers (§ 9) and a one day a week or five days a month return test (§ 7), sits beside protocol no. 5 from 2026; the euro conversion rule for Swiss pay; how the German tax office treats a year in which the 20% test fails only because of home office days.",
+    "anchors": [],
+    "kind": "source route / historical read attribution / precise stated evidence boundary"
+  }
+]

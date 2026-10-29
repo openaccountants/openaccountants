@@ -1,0 +1,13 @@
+{
+  "raw_sha256": "585fb3f29a5bf17488d4ab46c9c99ba2a3b611010b082f3dd40ef58b01bc7c9f",
+  "reader_sha256": "dc76ddc69bdad63b5041d127e211e2db9dd21a79f1265631913ae82c11961118",
+  "extraction": "HTMLParser, scripts/styles excluded, blocktag newlines, whitespace collapsed within each nonempty line; raw unchanged",
+  "actual_read_scopes_native_LF": [
+    [
+      2178,
+      2190
+    ]
+  ],
+  "actual_read_date": "2026-10-29",
+  "limitations": "Only selected Bagatell scope actually read, not all comprehensive handbook HTML"
+}

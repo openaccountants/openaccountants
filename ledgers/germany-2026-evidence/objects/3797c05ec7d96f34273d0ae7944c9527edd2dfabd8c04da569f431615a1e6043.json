@@ -1,0 +1,12 @@
+{
+  "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-tax-optimization.md",
+  "before_sha256": "fa5036e6c87c3c778fcd65270a5a151ec007dd37e46d536ab3ff44ee6178c403",
+  "after_sha256": "45b98bb40ee1749c47a231894efa9d643177939b66fb9b051b61264c63abcde0",
+  "bytes": 49736,
+  "ops": 22,
+  "full_inverse": true,
+  "original_oa_count": 0,
+  "five_qualitative_example_paragraphs_exact": true,
+  "intro_correction_and_eligible_fixture_assumptions_explicit": true,
+  "old_URL_order_exact": true
+}

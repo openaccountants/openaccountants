@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-29",
+  "selected": "B: exact section4(1)no1 coordinate",
+  "alternative": "A: change section3 to4 only",
+  "actual_root_read": "DEB188 native55–65; enacted2026 general pension ceiling",
+  "operations": [
+    {
+      "before": "| Pension ceiling (general pension insurance), base for the bAV limits (SVBezGrV 2026 § 3) | EUR 101,400 a year | 2026 | https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3 |",
+      "after": "| Pension ceiling (general pension insurance), base for the bAV limits (SVBezGrV 2026 § 4(1) no. 1) | EUR 101,400 a year | 2026 | https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3 |"
+    },
+    {
+      "before": "version: 0.1\n",
+      "after": "version: 0.2\n"
+    },
+    {
+      "before": "last_updated: 2026-10-24\n",
+      "after": "last_updated: 2026-10-29\n"
+    }
+  ]
+}

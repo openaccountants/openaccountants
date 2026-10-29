@@ -1,0 +1,3241 @@
+[
+  {
+    "lf": 21,
+    "section": "E-invoicing in Germany (E-Rechnung, XRechnung and ZUGFeRD)",
+    "wording": "When a German business must issue an e-invoice, when a paper or PDF invoice is still allowed, what every business must be able to receive, which formats count, how to correct, check and store e-invoices, and how invoicing federal authorities differs. It is for businesses, freelancers, landlords and associations in Germany, for foreign businesses that invoice German customers, and for the people who keep their books. Figures are for tax year 2026. The rules are read from the consolidated federal law pages (UStG, UStDV, AO, ERechV), from the finance ministry's letter of 15 October 2025, which writes the e-invoice rules into the VAT application decree (Umsatzsteuer-Anwendungserlass), from the ministry's questions and answers page (as of March 2026), and from the GoBD change letters of 11 March 2024 and 14 July 2025. The reduced VAT rate is printed as a digit only in the ministry's tax booklet, 2025 edition; the statute states it in words. The ministry's first e-invoice letter, of 15 October 2024, is no longer at its address on the ministry's site, so nothing in this Guide rests on it alone.",
+    "anchors": [],
+    "kind": "scope/presentation/professional attribution; exact source date is historical Guide attribution, not a fresh fullread"
+  },
+  {
+    "lf": 25,
+    "section": "Section 1: Quick Reference",
+    "wording": "| Field | Value |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 27,
+    "section": "Section 1: Quick Reference",
+    "wording": "| Country | Germany (Bundesrepublik Deutschland) |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 28,
+    "section": "Section 1: Quick Reference",
+    "wording": "| Currency | EUR |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 29,
+    "section": "Section 1: Quick Reference",
+    "wording": "| What an e-invoice is | An invoice that is issued, sent and received in a structured electronic format and that allows electronic processing (§ 14(1) UStG). Paper, a plain PDF, an image file or the text of an e-mail is an \"other invoice\" (sonstige Rechnung) |",
+    "anchors": [
+      "DEFINITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 30,
+    "section": "Section 1: Quick Reference",
+    "wording": "| National CIUS | XRechnung. The ministry says it meets the European standard EN 16931 and § 14(1) sentence 6 no. 1 UStG |",
+    "anchors": [
+      "STANDARD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 31,
+    "section": "Section 1: Quick Reference",
+    "wording": "| Hybrid format | ZUGFeRD from version 2.0.1, without the profiles MINIMUM and BASIC-WL: a PDF that carries the structured XML data in the same file |",
+    "anchors": [
+      "ZUGFERD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 32,
+    "section": "Section 1: Quick Reference",
+    "wording": "| Current XRechnung version | KoSIT lists the current 3.0.2 bundle. ELSTER’s viewer still describes its own version as 3.0.1; that viewer label does not set the normative version. See Section 3 and Sources |",
+    "anchors": [
+      "VIEWER",
+      "VERSION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 33,
+    "section": "Section 1: Quick Reference",
+    "wording": "| Governing body | Bundesministerium der Finanzen (BMF) for the VAT rules |",
+    "anchors": [
+      "BMFDEF"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 34,
+    "section": "Section 1: Quick Reference",
+    "wording": "| Standards body | Koordinierungsstelle für IT-Standards (KoSIT) for XRechnung. Forum elektronische Rechnung Deutschland (FeRD) for ZUGFeRD |",
+    "anchors": [
+      "VERSION",
+      "ZUGFERD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 35,
+    "section": "Section 1: Quick Reference",
+    "wording": "| Key legislation | § 14, § 14b and § 27(38) UStG as changed by the Wachstumschancengesetz (Growth Opportunities Act); §§ 33, 34 and 34a UStDV; the E-Rechnungsverordnung (ERechV) for federal public contracts; GoBD (last changed 14 July 2025) |",
+    "anchors": [
+      "DUTY",
+      "KEEP",
+      "TRANSITION",
+      "SMALL250",
+      "TICKET",
+      "KUFIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 36,
+    "section": "Section 1: Quick Reference",
+    "wording": "| B2G portal | OZG-RE (Onlinezugangsgesetz-konforme Rechnungseingangsplattform). The ministry's questions and answers page names it as the ERechV route. See Section 5 |",
+    "anchors": [
+      "FAQSCOPE",
+      "PORTAL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 37,
+    "section": "Section 1: Quick Reference",
+    "wording": "| B2G mandatory since | 27 November 2020 at federal level (§ 11(3) ERechV) |",
+    "anchors": [
+      "FEDENTRY"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 38,
+    "section": "Section 1: Quick Reference",
+    "wording": "| B2B reception mandatory | Since 1 January 2025, for every business in Germany, Kleinunternehmer included. No transition period |",
+    "anchors": [
+      "RECEIVE",
+      "FAQRECEIVE",
+      "EFFECT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 39,
+    "section": "Section 1: Quick Reference",
+    "wording": "| B2B issuance | A duty in law since 1 January 2025. Relief for sales made in 2025 and 2026: every issuer, until 31 December 2026. Relief for sales made in 2027: only issuers within the turnover limit in Section 2, or EDI, until 31 December 2027. From 2028 no relief |",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 40,
+    "section": "Section 1: Quick Reference",
+    "wording": "| B2C | Not subject to the e-invoicing duty |",
+    "anchors": [
+      "DUTY"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 41,
+    "section": "Section 1: Quick Reference",
+    "wording": "| Current status | Invoicing federal authorities: in force. Receiving between businesses: in force. Issuing between businesses: in its transition |",
+    "anchors": [
+      "TRANSITION",
+      "FEDENTRY",
+      "RECEIVE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 42,
+    "section": "Section 1: Quick Reference",
+    "wording": "| Guide version | Core tax clauses retain their recorded source history. The selected technical clauses and federal portal sources below were read on 29 October 2026 |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 44,
+    "section": "Section 1: Quick Reference",
+    "wording": "**Five things older material gets wrong**",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 46,
+    "section": "Section 1: Quick Reference",
+    "wording": "- **The duty to RECEIVE has no exceptions.** A Kleinunternehmer, a landlord of flats, a doctor and an association with a business side must all be able to receive e-invoices since 1 January 2025. Kleinunternehmer are released from ISSUING only.",
+    "anchors": [
+      "RECEIVE",
+      "FAQRECEIVE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 47,
+    "section": "Section 1: Quick Reference",
+    "wording": "- **Paper needs no consent.** During the transition a paper invoice may always be sent. Only an invoice in another electronic format, for example a plain PDF by e-mail, needs the recipient's consent.",
+    "anchors": [
+      "CONSENT",
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 48,
+    "section": "Section 1: Quick Reference",
+    "wording": "- **An e-invoice to a German business needs no consent.** The recipient cannot insist on paper or PDF.",
+    "anchors": [
+      "RECEIVE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 49,
+    "section": "Section 1: Quick Reference",
+    "wording": "- **A plain PDF is not an e-invoice.** A hybrid ZUGFeRD file, a PDF that carries the structured data, can be one.",
+    "anchors": [
+      "DEFINITION",
+      "ZUGFERD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 50,
+    "section": "Section 1: Quick Reference",
+    "wording": "- **The turnover limit is a test of the ISSUER, for sales made in 2027 only.** It is not a phase that starts a duty. The duty exists since 2025; the limit decides who may still use the relief in 2027.",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 56,
+    "section": "Who Must Comply",
+    "wording": "| Scope | Requirement |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 58,
+    "section": "Who Must Comply",
+    "wording": "| B2G (federal) | Suppliers must issue and send invoices to federal contracting authorities in electronic form (§ 3(1) ERechV, in force since 27 November 2020). The standard is XRechnung, or another standard that meets the European norm (§ 4(1) ERechV). Invoices go through a federal administration portal, after sign-up for a user account (§ 4(3) ERechV). Not for invoices after a direct award up to the amount in the ERechV table below |",
+    "anchors": [
+      "FEDERAL",
+      "PORTAL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 59,
+    "section": "Who Must Comply",
+    "wording": "| B2G (Länder) | The federal states have their own rules for invoices to state and local authorities. They are not on the pages read for this Guide. The legacy Guide said all of them were in force by 2024; that was not checked |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 60,
+    "section": "Who Must Comply",
+    "wording": "| B2B (reception) | Every business established in Germany must be able to receive e-invoices since 1 January 2025. No exceptions |",
+    "anchors": [
+      "RECEIVE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 61,
+    "section": "Who Must Comply",
+    "wording": "| B2B (issuance) | Duty under § 14(2) sentence 2 no. 1 UStG when supplier AND customer are both established in Germany and the supply is for the customer's business. Transition relief: see Transitional Rules below |",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 62,
+    "section": "Who Must Comply",
+    "wording": "| B2C | Not covered. An invoice to a consumer may be on paper. In an electronic format, e-invoice included, it needs the consumer's consent (§ 14(1) sentence 5 UStG) |",
+    "anchors": [
+      "DUTY"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 63,
+    "section": "Who Must Comply",
+    "wording": "| Outside the duty to ISSUE an e-invoice | Small invoices within the limit in the table below (§ 33 UStDV). Passenger tickets (§ 34 UStDV). Invoices issued by a Kleinunternehmer (§ 34a UStDV). Supplies exempt under § 4 nos. 8 to 29 UStG, for which there is no duty to invoice at all. Supplies to legal persons that are not businesses. Certain property-related services to consumers. Any supply where the supplier or the customer is not established in Germany |",
+    "anchors": [
+      "DUTY",
+      "SMALL250",
+      "TICKET",
+      "KUFIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 65,
+    "section": "Who Must Comply",
+    "wording": "**The core rule**, all from § 14(1) and (2) UStG at https://www.gesetze-im-internet.de/ustg_1980/__14.html",
+    "anchors": [
+      "DEFINITION",
+      "DUTY"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 67,
+    "section": "Who Must Comply",
+    "wording": "- **Duty to invoice.** For a supply to another business for its business, the supplier must issue an invoice \"innerhalb von sechs Monaten nach Ausführung der Leistung\" (within six months after the supply), unless the supply is exempt under § 4 nos. 8 to 29 UStG.",
+    "anchors": [
+      "DUTY"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 68,
+    "section": "Who Must Comply",
+    "wording": "- **Duty to use an e-invoice.** That invoice must be an e-invoice when supplier and customer are both established in Germany (Inland) or in one of the areas named in § 1(3) UStG.",
+    "anchors": [
+      "DUTY"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 69,
+    "section": "Who Must Comply",
+    "wording": "- **Established** means: seat, place of management, a fixed establishment that takes part in the supply, or, with no seat, the home or usual place of stay (§ 14(2) sentence 3 UStG). A foreign business that is only registered for VAT in Germany, with no fixed establishment here, may say so on its invoice to explain why it sends no e-invoice; the recipient may rely on that with a prudent merchant's care (ministry questions and answers, no. 3).",
+    "anchors": [
+      "DUTY",
+      "FAQSCOPE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 70,
+    "section": "Who Must Comply",
+    "wording": "- **Business** is wide. The ministry's questions and answers page counts freelancers and people with exempt sales only, such as landlords of flats, Kleinunternehmer and doctors (no. 3).",
+    "anchors": [
+      "BMFEST"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 71,
+    "section": "Who Must Comply",
+    "wording": "- **Shorter deadlines stay.** § 14a UStG sets the fifteenth day of the following month for intra-Community supplies and for services under § 3a(2) UStG performed in another member state. See https://www.gesetze-im-internet.de/ustg_1980/__14a.html",
+    "anchors": [
+      "NEXT15"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 72,
+    "section": "Who Must Comply",
+    "wording": "- **Advance payments.** If money is received before the supply, the six months run from the receipt (decree section 14.1(3)).",
+    "anchors": [
+      "ADVANCE",
+      "BMF6MONTH"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 74,
+    "section": "Who Must Comply",
+    "wording": "**E-invoicing: turnover limit for the 2027 relief**",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 76,
+    "section": "Who Must Comply",
+    "wording": "| What | Value | Note |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 78,
+    "section": "Who Must Comply",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__27.html |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 79,
+    "section": "Who Must Comply",
+    "wording": "| Total turnover (Gesamtumsatz, § 19(2) UStG) of the business that issues the invoice, in the previous calendar year: not more than | EUR 800,000 | § 27(38) no. 2 UStG: \"im vorangegangenen Kalenderjahr nicht mehr als 800 000 Euro betragen hat\" |",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 81,
+    "section": "Who Must Comply",
+    "wording": "- **What the limit is.** A cliff, tested on the issuer, never on the customer. At the limit or below, the relief for 2027 sales applies. One euro above, it does not, for any 2027 sale.",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 82,
+    "section": "Who Must Comply",
+    "wording": "- **What counts.** Total turnover under § 19(2) UStG: supplies within the scope of German VAT (steuerbare Umsätze), counted on a receipts basis, less certain exempt supplies, without sales of fixed assets. See https://www.gesetze-im-internet.de/ustg_1980/__19.html",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 83,
+    "section": "Who Must Comply",
+    "wording": "- **Same number, other rules.** The same amount appears in § 141 AO (bookkeeping duty) and § 20 UStG (VAT on receipts). They are separate tests.",
+    "anchors": [],
+    "evidence_note": "Uncomputed sibling AO141/USt20 thresholds; own ledger covers distinct800000invoice threshold.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 85,
+    "section": "Who Must Comply",
+    "wording": "**Small invoices**",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 87,
+    "section": "Who Must Comply",
+    "wording": "| What | Value | Note |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 89,
+    "section": "Who Must Comply",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/ustdv_1980/__33.html |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 90,
+    "section": "Who Must Comply",
+    "wording": "| Invoice total up to which the invoice may always be an other invoice | EUR 250 | § 33 UStDV: \"Eine Rechnung, deren Gesamtbetrag 250 Euro nicht übersteigt\" |",
+    "anchors": [
+      "SMALL250",
+      "GROSS250"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 92,
+    "section": "Who Must Comply",
+    "wording": "- **What the limit is.** The total of ONE invoice, VAT included. \"Not more than\": an invoice of exactly the amount in the table is still a small invoice.",
+    "anchors": [
+      "SMALL250",
+      "GROSS250"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 93,
+    "section": "Who Must Comply",
+    "wording": "- **The whole invoice counts.** If one invoice covers several supplies, only its total matters. Above the limit an e-invoice is due, even if the part that falls under the e-invoice duty is below it, for example because exempt or non-taxable items are billed on the same invoice (decree section 14.6(4)).",
+    "anchors": [
+      "BMFSMALL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 94,
+    "section": "Who Must Comply",
+    "wording": "- **Not for every supply.** § 33 sentence 3 UStDV takes invoices for supplies under §§ 3c, 6a and 13b UStG (distance sales, intra-Community supplies, reverse charge) out of the small-invoice rule.",
+    "anchors": [
+      "SMALL250"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 95,
+    "section": "Who Must Comply",
+    "wording": "- **Cash purchases have no special rule.** A business meal in a restaurant or materials bought in a DIY store need an e-invoice once the invoice is above the limit, unless the issuer uses the transition relief. The ministry suggests a till receipt on the spot and an e-invoice by e-mail afterwards that corrects it (questions and answers, no. 10).",
+    "anchors": [
+      "FAQCASH"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 97,
+    "section": "Who Must Comply",
+    "wording": "**The same two limits as the ministry prints them**",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 99,
+    "section": "Who Must Comply",
+    "wording": "| What | Value | Note |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 101,
+    "section": "Who Must Comply",
+    "wording": "| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 102,
+    "section": "Who Must Comply",
+    "wording": "| Small invoices: the limit is a gross amount | EUR 250 | Questions and answers, no. 4: \"bis 250 Euro Bruttobetrag\" |",
+    "anchors": [
+      "FAQCASH"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 103,
+    "section": "Who Must Comply",
+    "wording": "| Relief for 2027: issuer's turnover of the previous year up to | EUR 800,000 | Questions and answers, no. 11: \"Bei einem Vorjahresumsatz des Rechnungsausstellers bis 800.000 Euro verlängert sich diese Frist noch bis zum Ablauf des Jahres 2027\" |",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 105,
+    "section": "Who Must Comply",
+    "wording": "**Kleinunternehmer (small business under § 19 UStG)**",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 107,
+    "section": "Who Must Comply",
+    "wording": "| What | Value | Note |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 109,
+    "section": "Who Must Comply",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__19.html |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 110,
+    "section": "Who Must Comply",
+    "wording": "| Total turnover of the previous calendar year: must not have exceeded | EUR 25,000 | § 19(1) UStG: \"im vorangegangenen Kalenderjahr 25 000 Euro nicht überschritten hat\" |",
+    "anchors": [
+      "KU"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 111,
+    "section": "Who Must Comply",
+    "wording": "| Total turnover of the current calendar year: must not exceed | EUR 100,000 | § 19(1) UStG: \"im laufenden Kalenderjahr 100 000 Euro nicht überschreitet\" |",
+    "anchors": [
+      "KU"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 113,
+    "section": "Who Must Comply",
+    "wording": "- **Both conditions must hold** (AND). Details are in the German VAT Guide, `germany-vat-return`. Older material gives lower limits: they are out of date.",
+    "anchors": [
+      "KU"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 114,
+    "section": "Who Must Comply",
+    "wording": "- **What a Kleinunternehmer may do.** Always issue an other invoice: paper, or with the recipient's consent another electronic format (§ 34a UStDV, decree section 14.7a(3)). Issuing an e-invoice is allowed too, and needs no consent when the customer is a German business.",
+    "anchors": [
+      "KUFIELDS",
+      "BMKU"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 115,
+    "section": "Who Must Comply",
+    "wording": "- **What a Kleinunternehmer must do.** Be able to receive e-invoices (decree section 14.1(5)).",
+    "anchors": [
+      "RECEIVE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 116,
+    "section": "Who Must Comply",
+    "wording": "- **Leaving the scheme.** A Kleinunternehmer who moves to normal taxation must issue e-invoices from that moment, under the general conditions (questions and answers, no. 4).",
+    "anchors": [
+      "KU",
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 118,
+    "section": "Who Must Comply",
+    "wording": "**Federal public contracts (ERechV)**",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 120,
+    "section": "Who Must Comply",
+    "wording": "| What | Value | Note |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 122,
+    "section": "Who Must Comply",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/erechv/__3.html |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 123,
+    "section": "Who Must Comply",
+    "wording": "| No duty to invoice electronically for an invoice issued after a direct award (Direktauftrag) up to | EUR 1,000 | § 3(3) no. 1 ERechV: \"die nach Erfüllung eines Direktauftrags bis zu einem Betrag von 1 000 Euro gestellt werden\" |",
+    "anchors": [
+      "FEDERAL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 125,
+    "section": "Who Must Comply",
+    "wording": "- **Other ERechV exceptions:** invoice data that must be kept secret (§ 8), the foreign service and other purchases abroad (§ 9), and Organleihe cases (§ 3(3) no. 3).",
+    "anchors": [
+      "FEDERAL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 126,
+    "section": "Who Must Comply",
+    "wording": "- **The ERechV does not say** whether its amount is net or gross.",
+    "anchors": [],
+    "evidence_note": "Guide explicitly reserves net/gross1000federal direct-award measurement.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 127,
+    "section": "Who Must Comply",
+    "wording": "- **Two sets of rules, side by side.** The ministry says there is no ranking between the UStG and the ERechV: each applies in its own field, and one can in practice narrow a choice the other leaves open (questions and answers, no. 4a). An invoice to a public body falls under the VAT e-invoice rules only when the body acts as a business.",
+    "anchors": [
+      "FAQSCOPE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 131,
+    "section": "Receiving e-invoices",
+    "wording": "All from the ministry's letter of 15 October 2025, decree section 14.1(4) and (5): https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+    "anchors": [
+      "RECEIVE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 133,
+    "section": "Receiving e-invoices",
+    "wording": "- **The duty.** \"Inländische Unternehmer müssen die technischen Voraussetzungen zum Empfang einer E-Rechnung schaffen.\" This also applies to a recipient under § 19 UStG.",
+    "anchors": [
+      "RECEIVE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 134,
+    "section": "Receiving e-invoices",
+    "wording": "- **No consent.** Issuing an e-invoice to another German business does not need the recipient's consent.",
+    "anchors": [
+      "RECEIVE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 135,
+    "section": "Receiving e-invoices",
+    "wording": "- **E-mail.** E-invoices may come by e-mail. The letter says: \"Bei einem Empfang mittels E-Mail ist kein gesondertes E-Mail-Postfach nur für den Empfang von E-Rechnungen erforderlich.\" The ministry's questions and answers page goes one step further and says an e-mail inbox is already enough to receive (nos. 8 and 12).",
+    "anchors": [
+      "RECEIVE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 136,
+    "section": "Receiving e-invoices",
+    "wording": "- **Refusing does not help.** A business that cannot receive an e-invoice, or refuses it, has no right to an other invoice instead. The issuer's VAT duties then count as met if it issued an e-invoice and can show that it tried to send it properly, for example with a send log.",
+    "anchors": [
+      "FAQCHANNEL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 137,
+    "section": "Receiving e-invoices",
+    "wording": "- **Receiving is not processing.** The recipient need not process the data electronically beyond what storage demands (questions and answers, no. 9).",
+    "anchors": [
+      "VIEWER"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 138,
+    "section": "Receiving e-invoices",
+    "wording": "- **Reading the file.** An XRechnung has no picture part; a viewer is needed. The tax administration offers one for XRechnung and ZUGFeRD files at https://www.elster.de/eportal/e-rechnung and calls it a non-binding service.",
+    "anchors": [
+      "STRUCTURED",
+      "INPUT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 139,
+    "section": "Receiving e-invoices",
+    "wording": "- **Associations.** An association must be able to receive e-invoices so far as it acts as a business. For supplies to its non-business side it need neither receive nor issue e-invoices (questions and answers, no. 5).",
+    "anchors": [
+      "FAQSCOPE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 143,
+    "section": "When consent is needed",
+    "wording": "| Invoice | Consent of the recipient |",
+    "anchors": [],
+    "kind": "precise professional/source referral boundary"
+  },
+  {
+    "lf": 145,
+    "section": "When consent is needed",
+    "wording": "| E-invoice to a German business, where the e-invoice duty applies | Not needed |",
+    "anchors": [
+      "CONSENT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 146,
+    "section": "When consent is needed",
+    "wording": "| E-invoice to a German business for a small invoice, a ticket or a Kleinunternehmer supply | Not needed (decree section 14.1(6)) |",
+    "anchors": [
+      "CONSENT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 147,
+    "section": "When consent is needed",
+    "wording": "| Paper invoice, where paper is allowed | Not needed |",
+    "anchors": [
+      "RECEIVE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 148,
+    "section": "When consent is needed",
+    "wording": "| Other electronic format, for example a plain PDF, where an other invoice is allowed | Needed (§ 14(1) sentence 5 UStG, § 27(38) UStG) |",
+    "anchors": [
+      "CONSENT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 149,
+    "section": "When consent is needed",
+    "wording": "| E-invoice where there is no e-invoice duty: consumers, exempt supplies under § 4 nos. 8 to 29 UStG, a supplier or customer abroad, a legal person that is not a business | Needed |",
+    "anchors": [
+      "CONSENT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 151,
+    "section": "When consent is needed",
+    "wording": "- **Form of consent.** None. It can be implied, for example by accepting the invoice without objection, given in general terms of business, or given afterwards (decree section 14.1(7)).",
+    "anchors": [
+      "CONSENT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 155,
+    "section": "Transitional Rules (2025-2027)",
+    "wording": "All from § 27(38) UStG: https://www.gesetze-im-internet.de/ustg_1980/__27.html",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 157,
+    "section": "Transitional Rules (2025-2027)",
+    "wording": "| Supply made in | What may still be sent instead of an e-invoice | Invoice sent by | Who |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 159,
+    "section": "Transitional Rules (2025-2027)",
+    "wording": "| 2025 or 2026 | A paper invoice. Or, with the recipient's consent, an invoice in another electronic format | 31 December 2026 | Every issuer. No turnover test (no. 1) |",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 160,
+    "section": "Transitional Rules (2025-2027)",
+    "wording": "| 2027 | The same | 31 December 2027 | Only an issuer within the turnover limit in the table above (no. 2) |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 161,
+    "section": "Transitional Rules (2025-2027)",
+    "wording": "| 2027 | With the recipient's consent, an invoice in another electronic format that is sent by EDI | 31 December 2027 | Every issuer. No turnover test (no. 3) |",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 162,
+    "section": "Transitional Rules (2025-2027)",
+    "wording": "| 2028 onward | Nothing. An e-invoice is due wherever § 14(2) sentence 2 no. 1 UStG demands one | Not applicable | The lasting exceptions stay: small invoices, tickets, Kleinunternehmer, exempt supplies under § 4 nos. 8 to 29 UStG, non-German parties |",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 164,
+    "section": "Transitional Rules (2025-2027)",
+    "wording": "- **Two dates in each rule.** The statute ties each relief to when the supply was made AND to the day by which the invoice is sent. Read literally, an invoice sent in January 2027 for a sale made in December 2026 fits neither the first row (sent too late) nor the second (sale made too early). The pages read for this Guide do not settle that case. The ministry's questions and answers page (no. 11) describes the first relief the same way, as a period in which the invoice is issued, from 1 January 2025 to 31 December 2026. Invoice 2026 sales before the year ends, or refer.",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 165,
+    "section": "Transitional Rules (2025-2027)",
+    "wording": "- **Issuing only.** § 27(38) UStG relieves issuers. There is no relief for receiving.",
+    "anchors": [
+      "RECEIVE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 166,
+    "section": "Transitional Rules (2025-2027)",
+    "wording": "- **The issuer decides.** The choice to use the relief lies with the issuer. The ministry adds that the rules leave a recipient free to pick a supplier that, for now, still issues paper invoices (questions and answers, no. 11).",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 167,
+    "section": "Transitional Rules (2025-2027)",
+    "wording": "- **An other invoice still works while it is allowed.** As long as an other invoice may be issued, it remains a proper invoice for the input tax deduction (questions and answers, no. 2).",
+    "anchors": [
+      "TRANSITION",
+      "INPUT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 168,
+    "section": "Transitional Rules (2025-2027)",
+    "wording": "- **Supplies before 2025** follow the old rules, even if invoiced later (questions and answers, no. 2).",
+    "anchors": [
+      "EFFECT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 169,
+    "section": "Transitional Rules (2025-2027)",
+    "wording": "- **Payments on account.** Invoices for advance or part payments issued before the cut-off date need not be e-invoices, even if supply and payment come later (questions and answers, no. 7b).",
+    "anchors": [
+      "ADVANCE",
+      "BMF6MONTH"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 170,
+    "section": "Transitional Rules (2025-2027)",
+    "wording": "- **Corrections during the transition** may still be made without an e-invoice (decree section 14.11(1); questions and answers, no. 7b).",
+    "anchors": [
+      "CORRECT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 171,
+    "section": "Transitional Rules (2025-2027)",
+    "wording": "- **After the transition an agreed format stays possible.** § 14(1) sentence 6 no. 2 UStG allows a structured format agreed between the parties, if the required data can be extracted correctly and completely into a format that meets the European standard or works with it. The ministry names EDI procedures such as EDIFACT as examples.",
+    "anchors": [
+      "EDI"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 175,
+    "section": "Timeline Summary",
+    "wording": "| Date | Milestone |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 177,
+    "section": "Timeline Summary",
+    "wording": "| 27 November 2020 | Duty to invoice federal authorities electronically (§ 11(3) ERechV) |",
+    "anchors": [
+      "FEDENTRY"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 178,
+    "section": "Timeline Summary",
+    "wording": "| 1 January 2025 | New definition of the e-invoice. Every German business must be able to receive e-invoices. Duty to issue, with transition relief |",
+    "anchors": [
+      "EFFECT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 179,
+    "section": "Timeline Summary",
+    "wording": "| 14 July 2025 | GoBD changed for e-invoice archiving, with immediate effect |",
+    "anchors": [
+      "GOBDOUT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 180,
+    "section": "Timeline Summary",
+    "wording": "| September 2025 | The federal administration receives e-invoices through one platform, OZG-RE, after the older ZRE platform was merged into it. Source: the federal e-invoicing information site named in the ministry's questions and answers page. It is not an allowed host for this Guide and is not linked |",
+    "anchors": [],
+    "evidence_note": "Historical federal portal consolidation date is corroborated by the actual current federal publisher statement at CONSOLIDATION, not a portal runtime observation.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 181,
+    "section": "Timeline Summary",
+    "wording": "| 15 October 2025 | The ministry writes the e-invoice rules into the VAT application decree |",
+    "anchors": [
+      "EFFECT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 182,
+    "section": "Timeline Summary",
+    "wording": "| 31 December 2026 | End of the relief for sales made in 2025 and 2026 |",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 183,
+    "section": "Timeline Summary",
+    "wording": "| 31 December 2027 | End of the relief for small issuers and for EDI, for sales made in 2027 |",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 184,
+    "section": "Timeline Summary",
+    "wording": "| 1 January 2028 | E-invoices between German businesses with no transition relief |",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 185,
+    "section": "Timeline Summary",
+    "wording": "| Later, no date | A reporting system for invoice data to the tax administration is planned. The ministry says the government will propose the law \"zu gegebener Zeit\" (questions and answers, no. 1) |",
+    "anchors": [
+      "FAQREPORT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 191,
+    "section": "Accepted Formats",
+    "wording": "| Format | Type | Standard | Status |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 193,
+    "section": "Accepted Formats",
+    "wording": "| XRechnung | Pure XML (UBL or CII syntax) | National CIUS of the European standard EN 16931 | Named by the ministry: meets § 14(1) sentence 6 no. 1 UStG |",
+    "anchors": [
+      "STANDARD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 194,
+    "section": "Accepted Formats",
+    "wording": "| ZUGFeRD from version 2.0.1, without the profiles MINIMUM and BASIC-WL | Hybrid: PDF plus embedded XML in one file | Based on the EN 16931 series | Named by the ministry as an allowed e-invoice format |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 195,
+    "section": "Accepted Formats",
+    "wording": "| Other European formats that meet EN 16931 | Structured | EN 16931 | Allowed: the ministry says use is not limited to national formats. It names none. The legacy Guide listed Peppol BIS Billing 3.0 here; that was not checked on an official page |",
+    "anchors": [
+      "STANDARD",
+      "ZUGFERD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 196,
+    "section": "Accepted Formats",
+    "wording": "| Format agreed between issuer and recipient, for example EDI such as EDIFACT | Structured | May differ from EN 16931 | Allowed if the data required by the UStG can be extracted correctly and completely into a format that meets EN 16931 or is interoperable with it (§ 14(1) sentence 6 no. 2 UStG) |",
+    "anchors": [
+      "ZUGFERD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 197,
+    "section": "Accepted Formats",
+    "wording": "| Plain PDF, image file, text of an e-mail, paper | Not structured | None | Not an e-invoice. An \"other invoice\" |",
+    "anchors": [
+      "EDI"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 199,
+    "section": "Accepted Formats",
+    "wording": "- **Which allowed format is used** is a civil law question between the parties (decree section 14.1(12)).",
+    "anchors": [
+      "STANDARD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 200,
+    "section": "Accepted Formats",
+    "wording": "- **Syntax names.** The ministry says only that the standard prescribes XML. KoSIT's specification names the same two syntaxes, UBL and the UN/CEFACT Cross Industry Invoice (CII).",
+    "anchors": [
+      "STANDARD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 201,
+    "section": "Accepted Formats",
+    "wording": "- **Hybrid files: the XML leads.** Before 2025 the picture part led. Now the structured part is the leading part, and if the two differ the structured data decide (decree section 14.4(3); questions and answers, no. 12a). Input tax can be deducted only from the structured part. A picture part with different invoice details can count as a further (other) invoice, for which § 14c UStG must be checked: that section makes a person owe tax that is shown wrongly or without the right to show it (decree section 14c.1(4a)). Small technical differences, such as a shortened description or rounding differences, are not objected to.",
+    "anchors": [
+      "HYBRID"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 202,
+    "section": "Accepted Formats",
+    "wording": "- **Everything the VAT law demands must be in the structured part.** All details under §§ 14 and 14a UStG belong there. A mere reference in the data to an attachment that holds them in unstructured form is not enough. A link to an outside target is not enough. Extra detail, such as a timesheet as a PDF, may sit in an attachment inside the e-invoice (decree section 14.5(1) and (15)).",
+    "anchors": [
+      "STRUCTURED"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 206,
+    "section": "XRechnung Technical Details",
+    "wording": "The identifiers below are checked against KoSIT’s XRechnung 3.0.2 specification and the schemas in its bundle dated 31 August 2026. The UBL namespace is also in OASIS’s UBL 2.1 schema. These are technical source checks, not a validator execution; exact Sources and limits are below.",
+    "anchors": [
+      "UBLROOT",
+      "CIIROOT",
+      "BUNDLE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 208,
+    "section": "XRechnung Technical Details",
+    "wording": "| Parameter | Value |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 210,
+    "section": "XRechnung Technical Details",
+    "wording": "| Version | The ELSTER viewer states: \"Es wird die aktuell gültige XRechnung Version 3.0.1 verwendet.\" See https://www.elster.de/eportal/e-rechnung . KoSIT's own version page, read on 19 September 2026 but not linked, also lists a release 3.0.2 as in force and announces a version 4.0 for 2027. The ERechV asks for the standard \"in der jeweils aktuellen Fassung\" (§ 4(1)); changes are announced in the Bundesanzeiger (§ 4(2)). Confirm the version in your software |",
+    "anchors": [
+      "VERSION",
+      "BUNDLE",
+      "VIEWER"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 211,
+    "section": "XRechnung Technical Details",
+    "wording": "| UBL namespace | `urn:oasis:names:specification:ubl:schema:xsd:Invoice-2` |",
+    "anchors": [
+      "UBLROOT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 212,
+    "section": "XRechnung Technical Details",
+    "wording": "| CII namespace | `urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100` |",
+    "anchors": [
+      "CIIROOT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 213,
+    "section": "XRechnung Technical Details",
+    "wording": "| CustomizationID (UBL) | `urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0` |",
+    "anchors": [
+      "PROCESS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 214,
+    "section": "XRechnung Technical Details",
+    "wording": "| ProfileID (BT-23) | `urn:fdc:peppol.eu:2017:poacc:billing:01:1.0` |",
+    "anchors": [
+      "PROCESS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 215,
+    "section": "XRechnung Technical Details",
+    "wording": "| Encoding | UTF-8 |",
+    "anchors": [
+      "UTF8"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 216,
+    "section": "XRechnung Technical Details",
+    "wording": "| Validation | KoSIT Validator (open source, Java based) |",
+    "anchors": [
+      "JAVA",
+      "OPENMAP"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 217,
+    "section": "XRechnung Technical Details",
+    "wording": "| Schema download | KoSIT's site xeinkauf.de (named in the ministry's questions and answers, no. 16; not linked here) |",
+    "anchors": [
+      "BUNDLE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 219,
+    "section": "XRechnung Technical Details",
+    "wording": "- **Extension.** Besides the core data model, XRechnung offers an extension for sector needs. The ministry says the VAT details are all in the core model, so using an extension does not touch the VAT rules (decree sections 14.1(13) and 14.5(1)).",
+    "anchors": [
+      "STANDARD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 223,
+    "section": "ZUGFeRD Profiles",
+    "wording": "FeRD publishes the profile definitions below. Its current FAQ distinguishes the EN 16931 (COMFORT) profile, the BASIC subset and the EXTENDED profile, and the XRECHNUNG reference profile. The ministry allows ZUGFeRD from version 2.0.1, excluding MINIMUM and BASIC-WL. Acceptance under federal ERechV remains a separate condition.",
+    "anchors": [
+      "PROFILEFULL",
+      "PROFILEEXCLUSIONS",
+      "ZUGFERD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 225,
+    "section": "ZUGFeRD Profiles",
+    "wording": "| Profile | Source-backed format scope | Use Case |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 227,
+    "section": "ZUGFeRD Profiles",
+    "wording": "| Minimum | No. Excluded by the ministry | Not an e-invoice for VAT |",
+    "anchors": [
+      "ZUGFERD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 228,
+    "section": "ZUGFeRD Profiles",
+    "wording": "| Basic WL | No. Excluded by the ministry | Without line detail. Not an e-invoice for VAT |",
+    "anchors": [
+      "ZUGFERD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 229,
+    "section": "ZUGFeRD Profiles",
+    "wording": "| Basic | A subset of EN 16931 for simple UStG-conforming invoices; BMF permits the profile | Standard use with the required invoice data |",
+    "anchors": [
+      "BASIC",
+      "ZUGFERD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 230,
+    "section": "ZUGFeRD Profiles",
+    "wording": "| Comfort (EN 16931) | Fully represents EN 16931-1, according to FeRD | Full core invoice data |",
+    "anchors": [
+      "COMFORT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 231,
+    "section": "ZUGFeRD Profiles",
+    "wording": "| Extended | Extends EN 16931 with additional information; FeRD says to agree its exchange with the recipient | Additional business information |",
+    "anchors": [
+      "EXTENDED"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 232,
+    "section": "ZUGFeRD Profiles",
+    "wording": "| XRechnung | Reference profile for an XML file conforming to the current XRechnung specification; FeRD permits CII only inside this reference profile | XRechnung XML inside a ZUGFeRD container |",
+    "anchors": [
+      "PROFILEFULL",
+      "PROFILEEXCLUSIONS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 234,
+    "section": "ZUGFeRD Profiles",
+    "wording": "- **Profile selection guidance.** For invoices between businesses, any ZUGFeRD profile from version 2.0.1 other than the two excluded ones falls under the allowed formats. For invoices to federal authorities the ERechV asks for XRechnung, or another standard that meets the European norm (§ 4(1) ERechV). Which ZUGFeRD profile a given authority accepts is not on the pages read for this Guide: ask the authority.",
+    "anchors": [
+      "STANDARD",
+      "PORTAL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 238,
+    "section": "Format errors, business rule errors and content errors",
+    "wording": "From the ministry's letter of 15 October 2025 (decree sections 14.1(2), 14.1(11) and 14.5(1)):",
+    "anchors": [
+      "FORMATERR",
+      "STANDARD",
+      "STRUCTURED"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 240,
+    "section": "Format errors, business rule errors and content errors",
+    "wording": "| Kind of error | What it is | Result for VAT |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 242,
+    "section": "Format errors, business rule errors and content errors",
+    "wording": "| Format error | The file does not follow the allowed syntax or its technical rules, or an agreed format does not allow correct and complete extraction | The file is not an e-invoice. It is an other invoice in another electronic format. Where an e-invoice was due, it is not a proper invoice |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 243,
+    "section": "Format errors, business rule errors and content errors",
+    "wording": "| Business rule error on VAT content | The file breaks the format's logic checks on a detail that §§ 14 or 14a UStG demand, for example the tax amount does not agree with the stated rate | A content error: not a proper invoice until corrected |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 244,
+    "section": "Format errors, business rule errors and content errors",
+    "wording": "| Business rule error on other content | For example no entry in the mandatory field \"BT-10 Buyer reference\" of an XRechnung | Irrelevant for VAT (\"umsatzsteuerlich unbeachtlich\") |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 245,
+    "section": "Format errors, business rule errors and content errors",
+    "wording": "| Content error that no validator finds | For example a wrong tax rate that is consistent in itself | Not a proper invoice, even though validation passes |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 249,
+    "section": "Section 4: Mandatory Fields",
+    "wording": "The field codes and cardinalities below are checked against KoSIT’s XRechnung 3.0.2 specification. The scheme examples 0204 and 9930 are checked against KoSIT’s identifier guidance dated 2 January 2025. The exact Leitweg-ID validation pattern is not supplied here: use the identifier assigned by the recipient under § 5 ERechV. The ministry’s FAQ no. 16 also points to the joint KoSIT/FeRD mapping of VAT details to BT fields.",
+    "anchors": [
+      "IDS",
+      "BTCORE",
+      "PROCESS",
+      "OPENMAP",
+      "FEDFIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 253,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT Code | Field | Required |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 255,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-1 | Invoice number | Yes |",
+    "anchors": [
+      "BTCORE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 256,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-2 | Invoice issue date | Yes |",
+    "anchors": [
+      "BTCORE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 257,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-3 | Invoice type code (380 = commercial invoice; 384 = corrected invoice, which must refer to the earlier invoice; 381 = credit note in the commercial sense; 389 = self-billed invoice, the Gutschrift of § 14(2) UStG) | Yes |",
+    "anchors": [
+      "BTCORE",
+      "CODETYPE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 258,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-5 | Invoice currency code | Yes |",
+    "anchors": [
+      "BTCORE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 259,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-9 | Payment due date | Optional on its own. If the amount due for payment is positive, either the payment due date (BT-9) or the payment terms (BT-20) must be present (rule BR-CO-25) |",
+    "anchors": [
+      "DUEOR",
+      "BTDUE",
+      "BT20"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 260,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-10 | Buyer reference (Leitweg-ID for B2G) | Yes. The ministry calls it a mandatory field of an XRechnung. Between businesses no Leitweg-ID is needed, and for VAT a placeholder such as \"-\" is enough (questions and answers, no. 6) |",
+    "anchors": [
+      "BTDUE",
+      "RULEDE",
+      "FAQREF"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 261,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-23 | Business process type (ProfileID) | Yes (mandatory since XRechnung 3.0.1, per the legacy Guide) |",
+    "anchors": [
+      "PROCESS"
+    ],
+    "evidence_note": "Current3.0.2 mandatory clause is quoted. The historical since3.0.1 attribution remains legacy rather than a new historical release verification.",
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 262,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-24 | Specification identifier (CustomizationID) | Yes |",
+    "anchors": [
+      "PROCESS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 263,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-27 | Seller name | Yes |",
+    "anchors": [
+      "SELLER"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 264,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-40 | Seller country code | Yes |",
+    "anchors": [
+      "SELLCOUNTRY"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 265,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-31 | Seller VAT identifier | The law asks for the tax number OR the VAT identification number (§ 14(4) no. 2 UStG), and it must be in the structured part (decree section 14.5(9)). A Kleinunternehmer may give the Kleinunternehmer identification number instead (§ 34a UStDV). KoSIT's specification has a separate field BT-32 (Seller tax registration identifier, \"eine örtliche steuerrechtliche Kennung des Verkäufers\"); for the mapping see the joint KoSIT and FeRD table |",
+    "anchors": [
+      "SELLER",
+      "RULEDE",
+      "FIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 266,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-34 | Seller electronic address + scheme ID | Yes (mandatory since XRechnung 3.0.1, per the legacy Guide) |",
+    "anchors": [
+      "SELLER",
+      "SCHEME"
+    ],
+    "evidence_note": "Current3.0.2 requirement quoted; legacy since3.0.1 effective version not independently established.",
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 267,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-44 | Buyer name | Yes |",
+    "anchors": [
+      "BUYER"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 268,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-55 | Buyer country code | Yes |",
+    "anchors": [
+      "BUYCOUNTRY"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 269,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-48 | Buyer VAT identifier | § 14a(1) and (3) UStG demand both VAT identification numbers for services under § 3a(2) UStG performed in another member state and for intra-Community supplies. For a domestic reverse-charge supply § 14a(5) UStG demands the words \"Steuerschuldnerschaft des Leistungsempfängers\" instead |",
+    "anchors": [
+      "BUYER",
+      "NEXT15"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 270,
+    "section": "EN 16931 Core Fields (Required by XRechnung)",
+    "wording": "| BT-49 | Buyer electronic address + scheme ID | Yes (mandatory since XRechnung 3.0.1, per the legacy Guide) |",
+    "anchors": [
+      "BUYER",
+      "SCHEME"
+    ],
+    "evidence_note": "Current3.0.2 requirement quoted; legacy since3.0.1 effective version not independently established.",
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 274,
+    "section": "XRechnung-Specific Additional Requirements",
+    "wording": "| Field | Description | Required |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 276,
+    "section": "XRechnung-Specific Additional Requirements",
+    "wording": "| BT-10 (Leitweg-ID) | Hierarchical routing identifier for B2G (format: coarse-fine-check digit). § 5(1) no. 1 ERechV demands a Leitweg-Identifikationsnummer on every invoice to a federal authority | Yes (B2G) |",
+    "anchors": [
+      "BTDUE",
+      "FEDFIELDS"
+    ],
+    "evidence_note": "Own ERechV5 proves assigned Leitweg-ID; exact full coarse/fine/check syntax is not established by the selected clauses.",
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 277,
+    "section": "XRechnung-Specific Additional Requirements",
+    "wording": "| BT-23 (ProfileID) | Mandatory. The buyer specifies the value. If the buyer gave none, the Peppol process identifier in Section 3 may be sent as the default; inside the Peppol network the value must follow the Peppol pattern | Yes |",
+    "anchors": [
+      "PROCESS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 278,
+    "section": "XRechnung-Specific Additional Requirements",
+    "wording": "| BT-34 / BT-49 | Electronic addresses with scheme identifier (e.g., 0204 for Leitweg-ID, 9930 for DE VAT number) | Yes |",
+    "anchors": [
+      "IDS",
+      "SCHEME"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 279,
+    "section": "XRechnung-Specific Additional Requirements",
+    "wording": "| Payment instructions (BG-16) | At least one payment means must be specified. § 5(1) nos. 2 and 3 ERechV demand bank details and payment terms for federal invoices | Yes |",
+    "anchors": [
+      "RULEDE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 280,
+    "section": "XRechnung-Specific Additional Requirements",
+    "wording": "| BT-20 | Payment terms (text description) | Optional on its own. Needed if the amount due is positive and BT-9 is empty (rule BR-CO-25). § 5(1) no. 3 ERechV demands payment terms on federal invoices |",
+    "anchors": [
+      "BT20",
+      "DUEOR"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 281,
+    "section": "XRechnung-Specific Additional Requirements",
+    "wording": "| BT-81 | Payment means type code (e.g., 58 = SEPA credit transfer) | Yes |",
+    "anchors": [
+      "PAYMENT",
+      "SEPA"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 282,
+    "section": "XRechnung-Specific Additional Requirements",
+    "wording": "| Seller contact (BG-6) | The group must be sent, with contact point (BT-41), telephone number (BT-42) and e-mail address (BT-43): rules BR-DE-2, BR-DE-5, BR-DE-6, BR-DE-7 | Yes |",
+    "anchors": [
+      "RULEDE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 283,
+    "section": "XRechnung-Specific Additional Requirements",
+    "wording": "| City and post code | Seller city (BT-37) and post code (BT-38), buyer city (BT-52) and post code (BT-53): rules BR-DE-3, BR-DE-4, BR-DE-8, BR-DE-9 | Yes |",
+    "anchors": [
+      "RULEDE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 284,
+    "section": "XRechnung-Specific Additional Requirements",
+    "wording": "| Seller tax identifier | With tax codes S, Z, E, AE, K, G, L or M at least one of seller VAT identifier (BT-31), seller tax registration identifier (BT-32) or a tax representative (BG-11) must be sent: rule BR-DE-16 | Yes |",
+    "anchors": [
+      "RULEDE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 286,
+    "section": "XRechnung-Specific Additional Requirements",
+    "wording": "- **Also demanded by § 5 ERechV for federal invoices:** the issuer's De-Mail or e-mail address, and the supplier number and order number if they were given with the order. See https://www.gesetze-im-internet.de/erechv/__5.html",
+    "anchors": [
+      "FEDFIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 292,
+    "section": "B2G Transmission",
+    "wording": "The ERechV demands a federal administration portal and a user account set up before the first invoice (§ 4(3) ERechV, https://www.gesetze-im-internet.de/erechv/__4.html). A formally faulty invoice is rejected automatically and the sender is told. An invoice that cannot be matched to a user account is rejected without notice (§ 4(4) ERechV). The channels below are from the legacy Guide and from the federal e-invoicing information site named in the ministry's questions and answers page (e-rechnung-bund.de, run by the procurement office of the interior ministry). Its current upload and e-mail instructions and its September 2025 consolidation statement were read on 29 October 2026 and are linked in Sources. No user account was opened or invoice submitted.",
+    "anchors": [
+      "PORTAL",
+      "FEDCHANNELS",
+      "CONSOLIDATION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 294,
+    "section": "B2G Transmission",
+    "wording": "| Channel | Description |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 296,
+    "section": "B2G Transmission",
+    "wording": "| OZG-RE Web Portal | Entry in a web form, or upload of a finished file, in the browser |",
+    "anchors": [
+      "UPLOAD",
+      "FEDCHANNELS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 297,
+    "section": "B2G Transmission",
+    "wording": "| OZG-RE Email | Submit XRechnung XML as email attachment to designated address |",
+    "anchors": [
+      "EMAIL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 298,
+    "section": "B2G Transmission",
+    "wording": "| Peppol | Machine-to-machine via Peppol Access Point using participant ID (format: 0204:{Leitweg-ID}) |",
+    "anchors": [
+      "IDS",
+      "IDRECOMMEND"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 300,
+    "section": "B2G Transmission",
+    "wording": "The legacy Guide said the ZRE (Zentrale Rechnungseingangsplattform) was switched off in September 2025 and that all federal submissions now go through OZG-RE. The federal e-invoicing information site says the same: since September 2025 the federal administration receives e-invoices through one central platform, OZG-RE.",
+    "anchors": [
+      "CONSOLIDATION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 304,
+    "section": "B2B Transmission",
+    "wording": "Germany does not prescribe a transmission channel for e-invoices between businesses. Which allowed channel is used is a civil law question between the parties. The ministry's letter (decree section 14.1(4)) and its questions and answers page (no. 8) name these examples:",
+    "anchors": [
+      "FAQCHANNEL",
+      "BMFEST"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 306,
+    "section": "B2B Transmission",
+    "wording": "| Channel | Description |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 308,
+    "section": "B2B Transmission",
+    "wording": "| Email | XRechnung or ZUGFeRD sent as email attachment. No separate inbox is needed |",
+    "anchors": [
+      "FAQCHANNEL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 309,
+    "section": "B2B Transmission",
+    "wording": "| Download portal | Seller provides the structured e-invoice for download on an internet portal |",
+    "anchors": [
+      "FAQCHANNEL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 310,
+    "section": "B2B Transmission",
+    "wording": "| EDI | Electronic data interchange |",
+    "anchors": [
+      "EDI"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 311,
+    "section": "B2B Transmission",
+    "wording": "| API / interface | Data made available through an electronic interface |",
+    "anchors": [
+      "FAQCHANNEL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 312,
+    "section": "B2B Transmission",
+    "wording": "| Shared storage | Joint access to a central storage location, for example inside a group |",
+    "anchors": [
+      "FAQCHANNEL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 313,
+    "section": "B2B Transmission",
+    "wording": "| Data carrier | Handover, for example on a USB stick |",
+    "anchors": [
+      "FAQCHANNEL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 314,
+    "section": "B2B Transmission",
+    "wording": "| Peppol | Legacy row. The ministry's pages do not name Peppol for invoices between businesses. Since the law prescribes no channel, using it is a matter for the parties |",
+    "anchors": [
+      "PEPPOL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 316,
+    "section": "B2B Transmission",
+    "wording": "- **Sending twice is harmless.** The same e-invoice file may be sent more than once, as long as it is the same invoice and only an identical copy (decree section 14c.1(4)).",
+    "anchors": [
+      "DUPLICATE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 320,
+    "section": "Peppol in Germany",
+    "wording": "KoSIT’s own Peppol explanation and identifier guidance support the four points below. The identifiers address the recipient; they do not prove that a particular recipient is currently connected or that an invoice was delivered.",
+    "anchors": [
+      "PEPPOL",
+      "IDRECOMMEND"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 322,
+    "section": "Peppol in Germany",
+    "wording": "- KoSIT manages the German Peppol Authority",
+    "anchors": [
+      "PEPPOL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 323,
+    "section": "Peppol in Germany",
+    "wording": "- Public authorities connected to OZG-RE are reachable via Peppol",
+    "anchors": [
+      "PEPPOL",
+      "FEDCHANNELS"
+    ],
+    "evidence_note": "Published channel and addressing scope, not an actual live recipient lookup or delivery test.",
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 324,
+    "section": "Peppol in Germany",
+    "wording": "- Peppol participant IDs for federal authorities use scheme 0204 (Leitweg-ID based)",
+    "anchors": [
+      "IDS",
+      "IDRECOMMEND"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 325,
+    "section": "Peppol in Germany",
+    "wording": "- For B2B, scheme 9930 (DE VAT number) is commonly used",
+    "anchors": [
+      "IDS",
+      "IDRECOMMEND"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 329,
+    "section": "Section 6: Validation Rules",
+    "wording": "**What the ministry says about validation** (letter of 15 October 2025, decree sections 14.1(11) and 14.5(1); questions and answers, no. 7):",
+    "anchors": [
+      "VALIDATE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 331,
+    "section": "Section 6: Validation Rules",
+    "wording": "- Validation is not a condition for the tax office to accept an invoice. It helps to avoid errors, and the ministry recommends it already when the e-invoice is created and sent.",
+    "anchors": [
+      "VALIDATOR",
+      "FORMATERR"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 332,
+    "section": "Section 6: Validation Rules",
+    "wording": "- The ministry recommends no particular tool.",
+    "anchors": [
+      "VALIDATE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 333,
+    "section": "Section 6: Validation Rules",
+    "wording": "- A business that acts with a prudent merchant's care may rely on the technical result of a suitable validation tool as to format and business rules. Keeping the validation report as proof is advised.",
+    "anchors": [
+      "VALIDATE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 334,
+    "section": "Section 6: Validation Rules",
+    "wording": "- Validation does not replace the recipient's own duty to check that the invoice is complete and correct.",
+    "anchors": [
+      "VALIDATOR"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 338,
+    "section": "KoSIT Validator",
+    "wording": "The current KoSIT bundle describes its validator as a Java tool, with configuration resources for XML schemas, EN 16931 Schematron and XRechnung CIUS/extension Schematron. The layers below describe those supplied components; no particular invoice or validator run has been tested here.",
+    "anchors": [
+      "JAVA",
+      "LAYERS",
+      "VALIDATORCURRENT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 340,
+    "section": "KoSIT Validator",
+    "wording": "| Layer | Description |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 342,
+    "section": "KoSIT Validator",
+    "wording": "| Schema validation | XML against the UBL or CII schema (XSD) |",
+    "anchors": [
+      "LAYERS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 343,
+    "section": "KoSIT Validator",
+    "wording": "| Schematron (EN 16931) | European standard business rules |",
+    "anchors": [
+      "LAYERS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 344,
+    "section": "KoSIT Validator",
+    "wording": "| Schematron (XRechnung) | National CIUS rules (German-specific) |",
+    "anchors": [
+      "LAYERS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 345,
+    "section": "KoSIT Validator",
+    "wording": "| Schematron (Extension) | Extension rules for additional national requirements |",
+    "anchors": [
+      "LAYERS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 349,
+    "section": "Common Rejection Reasons",
+    "wording": "Carried over from the legacy Guide, with the ministry's view added where it has one.",
+    "anchors": [],
+    "kind": "historical source-read attribution / explicit retained technical-source limitation"
+  },
+  {
+    "lf": 351,
+    "section": "Common Rejection Reasons",
+    "wording": "| Issue | Resolution |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 353,
+    "section": "Common Rejection Reasons",
+    "wording": "| Missing BT-23 (ProfileID) | Mandatory in the checked XRechnung 3.0.2 specification. Populate the business-process identifier |",
+    "anchors": [
+      "PROCESS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 354,
+    "section": "Common Rejection Reasons",
+    "wording": "| Missing BT-34 / BT-49 (electronic addresses) | Mandatory in the checked XRechnung 3.0.2 specification. Include each with its scheme ID |",
+    "anchors": [
+      "SELLER",
+      "BUYER"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 355,
+    "section": "Common Rejection Reasons",
+    "wording": "| Invalid Leitweg-ID format | Use the exact identifier assigned by the recipient (§ 5 ERechV). Not yet confirmed here: the full validation pattern. The legacy numeric-only description is not a verified constraint |",
+    "anchors": [
+      "FEDFIELDS"
+    ],
+    "evidence_note": "Exact complete Leitweg-ID syntax/pattern is not established; copy the recipient-assigned identifier. Targeted official pattern PDF requests failed/404, not fabricated reading.",
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 356,
+    "section": "Common Rejection Reasons",
+    "wording": "| Missing BT-10 (Buyer reference) | A mandatory field of an XRechnung. For VAT the gap is a business rule error without effect, and between businesses a placeholder is enough. A federal portal can still reject the file |",
+    "anchors": [
+      "RULEDE",
+      "FAQREF"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 357,
+    "section": "Common Rejection Reasons",
+    "wording": "| Tax calculation inconsistency | The tax amount must agree with the stated rate. The ministry gives exactly this as its example of a business rule error, and on a VAT detail it is also a content error |",
+    "anchors": [
+      "RATESPLIT",
+      "ROUND"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 358,
+    "section": "Common Rejection Reasons",
+    "wording": "| Wrong CustomizationID | Must match the URN of the XRechnung version in use exactly |",
+    "anchors": [
+      "PROCESS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 359,
+    "section": "Common Rejection Reasons",
+    "wording": "| Mixed currency without conversion | If a VAT accounting currency code (BT-6) is given, the invoice total VAT amount in that currency (BT-111) must be given too (rule BR-53). KoSIT's specification has no field for a conversion rate |",
+    "anchors": [
+      "BR53"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 363,
+    "section": "OZG-RE Additional Checks",
+    "wording": "- **Not yet confirmed:** whether the platform validates a Leitweg-ID against a registered directory.",
+    "anchors": [],
+    "evidence_note": "Explicit Not-yet-confirmed directory check; statutory formal validation does not establish this extra implementation.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 364,
+    "section": "OZG-RE Additional Checks",
+    "wording": "- **Not yet confirmed:** whether the platform verifies that the recipient is currently connected and active.",
+    "anchors": [],
+    "evidence_note": "Explicit Not-yet-confirmed current connected/active recipient check.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 365,
+    "section": "OZG-RE Additional Checks",
+    "wording": "- **Not yet confirmed:** the exact structured error-message format for rejected invoices.",
+    "anchors": [],
+    "evidence_note": "Explicit Not-yet-confirmed structured error-message format.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 366,
+    "section": "OZG-RE Additional Checks",
+    "wording": "- These three retained technical topics are not established by the source clauses read. The ERechV itself says only that invoices sent through the portal are checked automatically for formal correctness and that a faulty one is rejected with a notice to the sender (§ 4(4) ERechV)",
+    "anchors": [
+      "PORTAL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 372,
+    "section": "VAT Rates (2025/2026)",
+    "wording": "| What | Value | Note |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 374,
+    "section": "VAT Rates (2025/2026)",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__12.html |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 375,
+    "section": "VAT Rates (2025/2026)",
+    "wording": "| Standard rate (Regelsteuersatz), on every taxable supply | 19% | § 12(1) UStG: \"Die Steuer beträgt für jeden steuerpflichtigen Umsatz 19 Prozent der Bemessungsgrundlage\" |",
+    "anchors": [
+      "RATE19"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 376,
+    "section": "VAT Rates (2025/2026)",
+    "wording": "| Zero rate, only for the supply and installation of solar modules and storage for certain buildings | 0% | § 12(3) UStG: \"Die Steuer ermäßigt sich auf 0 Prozent für die folgenden Umsätze\" |",
+    "anchors": [
+      "SOLAR"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 378,
+    "section": "VAT Rates (2025/2026)",
+    "wording": "| What | Value | Note |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 380,
+    "section": "VAT Rates (2025/2026)",
+    "wording": "| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 381,
+    "section": "VAT Rates (2025/2026)",
+    "wording": "| Reduced rate (ermäßigter Steuersatz), only for the supplies listed in § 12(2) UStG and its annex | 7% | Tax booklet, 2025 edition: \"den ermäßigten von 7 Prozent\". The statute prints this rate in words |",
+    "anchors": [
+      "RATE19"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 383,
+    "section": "VAT Rates (2025/2026)",
+    "wording": "- **Correction.** The legacy Guide listed intra-EU supplies and exports under a zero rate. In German law they are EXEMPT under § 4 UStG, not taxed at a rate of zero. In the structured data they carry their own tax category code and an exemption reason. The only zero RATE in the statute is the one in the table.",
+    "anchors": [
+      "SOLAR",
+      "EXEMPT",
+      "ZERO"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 384,
+    "section": "VAT Rates (2025/2026)",
+    "wording": "- **Which goods and services take the reduced rate** is for the German VAT Guide, `germany-vat-return`.",
+    "anchors": [
+      "RATE19"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 388,
+    "section": "Rounding",
+    "wording": "These points describe the data format. The amount datatype and line-net formula are checked against XRechnung 3.0.2 sections 8.1 and 12.5 (PEPPOL-EN16931-R120); the tax-group rule is BR-CO-17. The specification of the format in use decides, and no rounding mode is inferred.",
+    "anchors": [
+      "R120",
+      "AMOUNT",
+      "ROUND"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 390,
+    "section": "Rounding",
+    "wording": "- **Line net amount (BT-131):** quantity × (item net price / price-base quantity), plus line charges, less line allowances (PEPPOL-EN16931-R120). Amounts are expressed with two decimal places (section 8.1). Quantity × unit price alone describes only the case with a price-base quantity of one and no line charges or allowances.",
+    "anchors": [
+      "R120",
+      "AMOUNT",
+      "LINENET"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 391,
+    "section": "Rounding",
+    "wording": "- **Tax amount rounding:** the format has no tax amount per line. The tax is worked out once per VAT breakdown group (BG-23), that is per tax category and rate: the group's taxable amount (BT-116) times its rate (BT-119), divided by 100, rounded to two decimal places (rule BR-CO-17). The legacy Guide's tax amount per line was wrong",
+    "anchors": [
+      "ROUND"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 392,
+    "section": "Rounding",
+    "wording": "- **Category totals:** for each tax category and each rate within it, the taxable amount (BT-116) must equal the sum of the line net amounts (BT-131) with that category and rate, plus document level charges, less document level allowances with that category and rate (rule BR-S-8 for category S)",
+    "anchors": [
+      "RATESPLIT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 393,
+    "section": "Rounding",
+    "wording": "- **Validation tolerance:** the legacy Guide stated a one-cent tolerance per tax subtotal group. No allowed page prints it, so the amount was removed",
+    "anchors": [],
+    "evidence_note": "Guide says previousonecenttolerance unsupported; no positive tolerance claim.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 394,
+    "section": "Rounding",
+    "wording": "- **Rounding mode:** KoSIT's specification says only \"gerundet auf zwei Dezimalstellen\" and names no rounding mode. The legacy Guide's line on banker's rounding is not in it and was removed",
+    "anchors": [],
+    "evidence_note": "Guide says roundingmodeunsettled; no invented bankers-rounding mandate.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 395,
+    "section": "Rounding",
+    "wording": "- **What the ministry says:** rounding differences between the picture part and the structured part of a hybrid invoice are not objected to (decree section 14c.1(4a)).",
+    "anchors": [
+      "HYBRID"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 399,
+    "section": "Multi-Rate Invoice Handling",
+    "wording": "The following ordinary German invoice categories are checked against the named XRechnung rules and the current bundle’s code list. The list is not an exhaustive method for every foreign VAT system.",
+    "anchors": [
+      "CODELIST",
+      "ITALIANB",
+      "RATESPLIT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 401,
+    "section": "Multi-Rate Invoice Handling",
+    "wording": "- **Separate tax subtotal group per rate:** each VAT rate requires a separate tax subtotal group (BG-23). The law demands the net amount broken down by tax rate and by exemption (§ 14(4) no. 7 UStG)",
+    "anchors": [
+      "RATESPLIT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 402,
+    "section": "Multi-Rate Invoice Handling",
+    "wording": "- **Tax category codes:** For ordinary German invoices, the codes are S (Standard rate), Z (Zero rated goods), E (Exempt from tax), AE (VAT Reverse Charge), K (intra-Community supply), G (export, tax not charged), O (outside scope of tax), and L and M for the Canary Islands and for Ceuta and Melilla. The current validator also recognises code B under its Italian-only conditions; that foreign method is outside this Guide. The legacy Guide's code AA for the reduced rate is not in that list. A reduced-rate line carries S with its own rate: rule BR-S-5 asks only that the rate under S be greater than zero",
+    "anchors": [
+      "CODELIST",
+      "ITALIANB",
+      "RULEDE",
+      "RATESPLIT",
+      "ZERO",
+      "EXEMPT",
+      "REVERSE",
+      "EXPORT",
+      "OUTSCOPE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 403,
+    "section": "Multi-Rate Invoice Handling",
+    "wording": "- **Reverse charge category code:** for reverse charge (§ 13b UStG), use category code AE with a rate of zero. The invoice must carry the words \"Steuerschuldnerschaft des Leistungsempfängers\", and no tax is shown (§ 14a(5) UStG). The e-invoice duty applies to reverse-charge supplies between two German businesses (decree section 14.1(4))",
+    "anchors": [
+      "REVERSE",
+      "NEXT15"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 404,
+    "section": "Multi-Rate Invoice Handling",
+    "wording": "- **Tax exemption reason population:** the tax exemption reason (BT-120/BT-121) must be given for the categories E, AE, G and O (rules BR-E-10, BR-AE-10, BR-G-10, BR-O-10) and must NOT be given for the zero rated category Z (rule BR-Z-10). The law demands a note that an exemption applies (§ 14(4) no. 8 UStG)",
+    "anchors": [
+      "ZERO",
+      "EXEMPT",
+      "REVERSE",
+      "EXPORT",
+      "OUTSCOPE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 405,
+    "section": "Multi-Rate Invoice Handling",
+    "wording": "- **Partly exempt invoices.** If only part of what is billed falls under the e-invoice duty, for example taxable and § 4 nos. 8 to 29 exempt items together, the whole invoice must be an e-invoice (decree section 14.1(4))",
+    "anchors": [
+      "MIXED",
+      "DUTY"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 409,
+    "section": "§ 14 UStG Invoice Requirements",
+    "wording": "German VAT law (§ 14(4) UStG, https://www.gesetze-im-internet.de/ustg_1980/__14.html) lists the content of an invoice. In an e-invoice all of it must be in the structured data:",
+    "anchors": [
+      "FIELDS",
+      "STRUCTURED"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 411,
+    "section": "§ 14 UStG Invoice Requirements",
+    "wording": "1. Full name and full address of the supplier and of the customer",
+    "anchors": [
+      "FIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 412,
+    "section": "§ 14 UStG Invoice Requirements",
+    "wording": "2. The supplier's tax number (Steuernummer) or VAT identification number (USt-IdNr.)",
+    "anchors": [
+      "FIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 413,
+    "section": "§ 14 UStG Invoice Requirements",
+    "wording": "3. Issue date",
+    "anchors": [
+      "FIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 414,
+    "section": "§ 14 UStG Invoice Requirements",
+    "wording": "4. A sequential invoice number, given once",
+    "anchors": [
+      "FIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 415,
+    "section": "§ 14 UStG Invoice Requirements",
+    "wording": "5. Quantity and kind (usual trade description) of the goods, or scope and kind of the service",
+    "anchors": [
+      "FIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 416,
+    "section": "§ 14 UStG Invoice Requirements",
+    "wording": "6. Time of the supply; for payments on account, the time of receipt if it is fixed and differs from the issue date",
+    "anchors": [
+      "FIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 417,
+    "section": "§ 14 UStG Invoice Requirements",
+    "wording": "7. The net amount broken down by tax rate and by exemption, and any reduction agreed in advance that is not yet in the price",
+    "anchors": [
+      "FIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 418,
+    "section": "§ 14 UStG Invoice Requirements",
+    "wording": "8. The tax rate and the tax amount, or a note that an exemption applies",
+    "anchors": [
+      "FIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 419,
+    "section": "§ 14 UStG Invoice Requirements",
+    "wording": "9. In the cases of § 14b(1) sentence 5 UStG, a note that the recipient must keep the invoice",
+    "anchors": [
+      "FIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 420,
+    "section": "§ 14 UStG Invoice Requirements",
+    "wording": "10. The word \"Gutschrift\" where the customer issues the invoice (self-billing)",
+    "anchors": [
+      "FIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 422,
+    "section": "§ 14 UStG Invoice Requirements",
+    "wording": "- **Date of supply.** A phrase such as \"Leistungsdatum entspricht Rechnungsdatum\" is enough only on an other invoice. In an e-invoice the date must be in the structured field. A reference to a delivery note works only for other invoices (decree section 14.5(16)). The calendar month may be given as the time of supply, so several supplies of one month can go on one collective e-invoice (§ 31(4) UStDV; questions and answers, no. 7b).",
+    "anchors": [
+      "DATE",
+      "MONTH"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 423,
+    "section": "§ 14 UStG Invoice Requirements",
+    "wording": "- **Cash discount.** A note such as the agreed discount terms is enough; the discount need not be shown as an amount (decree section 14.5(19)).",
+    "anchors": [
+      "DISCOUNT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 424,
+    "section": "§ 14 UStG Invoice Requirements",
+    "wording": "- **Small invoices, tickets and Kleinunternehmer invoices** need no sequential number (decree section 14.5(14)).",
+    "anchors": [
+      "NOSMALLNUM",
+      "SMALL250",
+      "KUFIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 428,
+    "section": "Section 8: Archiving Requirements",
+    "wording": "| Requirement | Detail |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 430,
+    "section": "Section 8: Archiving Requirements",
+    "wording": "| Retention period | 8 years for a copy of every invoice issued and for every invoice received (§ 14b(1) UStG). The period starts at the end of the calendar year in which the invoice was issued. § 147(3) AO stays untouched: under it the period does not end while the documents still matter for a tax whose assessment period is open. Start of the eight-year period: it applies to every invoice whose old retention period had not yet run out on 31 December 2024; for banks, insurers and securities institutions only to invoices whose old period had not run out on 1 January 2026 (§ 27(40) UStG, https://www.gesetze-im-internet.de/ustg_1980/__27.html) |",
+    "anchors": [
+      "KEEP",
+      "TRANSITION",
+      "AOBOOK"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 431,
+    "section": "Section 8: Archiving Requirements",
+    "wording": "| Two-year duty for private recipients | A consumer, or a business buying for its private side, who receives a taxable property-related service must keep the invoice, a payment record or other proof for two years (§ 14b(1) sentence 5 UStG) |",
+    "anchors": [
+      "KEEP"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 432,
+    "section": "Section 8: Archiving Requirements",
+    "wording": "| Format | Keep the invoice in the format in which it was received (decree section 14b.1(1); GoBD paragraph 131). For an e-invoice, at least the structured part must be kept so that it is unchanged and in its original form, and the tax office must be able to evaluate it by machine (decree section 14b.1(5)) |",
+    "anchors": [
+      "ORIGINAL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 433,
+    "section": "Section 8: Archiving Requirements",
+    "wording": "| GoBD compliance | The GoBD (ministry letter of 28 November 2019, changed on 11 March 2024 and 14 July 2025) apply for income tax and bookkeeping purposes. For VAT alone, the ministry says that storing e-invoices outside a GoBD-compliant system is as a rule (\"regelmäßig\") no breach of § 14b(1) UStG (decree section 14b.1(1)) |",
+    "anchors": [
+      "BMKEEP"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 434,
+    "section": "Section 8: Archiving Requirements",
+    "wording": "| Hybrid invoices (ZUGFeRD) | It is enough to keep the structured part. The human-readable part must be kept only if it holds extra or different information that matters for tax, for example booking notes or qualified electronic signatures (GoBD paragraphs 119 and 131). The XML must not be lost through a format change, for example to TIFF (GoBD paragraph 125) |",
+    "anchors": [
+      "GOBDOUT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 435,
+    "section": "Section 8: Archiving Requirements",
+    "wording": "| Outgoing invoices | With an invoicing program, no picture copy of the outgoing invoice (a PDF, or the PDF part of a hybrid file) needs to be stored, if an identical copy can be produced on request at any time (GoBD paragraph 76) |",
+    "anchors": [
+      "GOBDOUT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 436,
+    "section": "Section 8: Archiving Requirements",
+    "wording": "| Content, not picture | Vouchers received as structured data need to match in content only, not in appearance (GoBD paragraph 118) |",
+    "anchors": [
+      "GOBDOUT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 437,
+    "section": "Section 8: Archiving Requirements",
+    "wording": "| Immutability | Authenticity of origin, integrity of content and legibility must be secured for the whole period (§ 14b(1) sentence 2 with § 14(3) UStG). For an e-invoice, legible means machine-readable; a human-readable copy is not required (decree section 14.4(3)). A qualified electronic signature, if used, must be kept too (decree section 14b.1(6)) |",
+    "anchors": [
+      "INTEGRITY",
+      "SIGNATURE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 438,
+    "section": "Section 8: Archiving Requirements",
+    "wording": "| Verfahrensdokumentation | The legacy Guide says written procedural documentation of the e-invoice process (receipt, processing, archiving) is mandatory. That comes from the GoBD main letter of 28 November 2019, which is not among the pages read for this Guide. Carried over, not checked |",
+    "anchors": [],
+    "evidence_note": "Guide expresslylabels proceduraldocumentation as unverifiedlegacy; mainGoBD2019notread.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 439,
+    "section": "Section 8: Archiving Requirements",
+    "wording": "| Storage location | In Germany. Electronic storage elsewhere in the EU is allowed if full online access, download and use of the data are secured; the tax office must then be told the place (§ 14b(2) and (4) UStG). Outside the EU only under § 146(2b) AO, which needs the tax office's approval on application (§ 14b(5) UStG) |",
+    "anchors": [
+      "KEEP",
+      "AOLOCATION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 440,
+    "section": "Section 8: Archiving Requirements",
+    "wording": "| Audit access | Three forms under § 147(6) AO: the tax office inspects the stored data and uses the system itself (Z1, direct access); it demands that the data be evaluated by machine as it specifies (Z2, indirect access); or it demands that the data be handed over in a machine-readable format (Z3, data handover, for example on a data carrier or through a data exchange platform). The legacy Guide still called Z3 a data carrier handover; the GoBD change of 11 March 2024 renamed it |",
+    "anchors": [
+      "AOBOOK",
+      "GOBDZ2",
+      "GOBD2024"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 441,
+    "section": "Section 8: Archiving Requirements",
+    "wording": "| Conversion | Converting an incoming electronic document to another format is allowed only under the conditions of GoBD paragraph 135 (GoBD paragraph 131). Paragraph 135 itself is in the main letter, which was not read. The legacy Guide's summary: the original must also be kept and the conversion documented |",
+    "anchors": [],
+    "evidence_note": "Guide expresslylabels paragraph135conversiondetail as notread; only actual2025amendmentsquoted.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 442,
+    "section": "Section 8: Archiving Requirements",
+    "wording": "| Validation report | The ministry advises keeping it as proof (decree section 14.5(1)) |",
+    "anchors": [
+      "VALIDATE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 444,
+    "section": "Section 8: Archiving Requirements",
+    "wording": "Sources for this section: § 14b UStG at https://www.gesetze-im-internet.de/ustg_1980/__14b.html , § 147 AO at https://www.gesetze-im-internet.de/ao_1977/__147.html , and the GoBD change letter of 14 July 2025 at https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2025-07-14-GoBD-2-aenderung.pdf?__blob=publicationFile&v=4",
+    "anchors": [
+      "KEEP",
+      "AOBOOK",
+      "GOBDOUT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 448,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "§ 26a UStG prints its fines in words, not digits, so they are given in words here. See https://www.gesetze-im-internet.de/ustg_1980/__26a.html",
+    "anchors": [],
+    "kind": "scope/presentation/professional attribution; exact source date is historical Guide attribution, not a fresh fullread"
+  },
+  {
+    "lf": 450,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "| Violation | Penalty |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 452,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "| Not issuing an invoice, or not in time, against § 14(2) sentence 2 UStG, intentionally or recklessly (§ 26a(2) no. 1 UStG) | Fine of up to five thousand euros (\"bis zu fünftausend Euro\", § 26a(3) UStG) |",
+    "anchors": [
+      "FINES"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 453,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "| Not keeping a copy of an issued invoice or a received invoice for at least eight years, intentionally or recklessly (§ 26a(2) no. 2 UStG) | Fine of up to five thousand euros |",
+    "anchors": [
+      "FINES"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 454,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "| A private recipient not keeping the invoice or proof of a property-related service for at least two years, intentionally or recklessly (§ 26a(2) no. 3 UStG) | Fine of up to one thousand euros (\"bis zu tausend Euro\") |",
+    "anchors": [
+      "FINES"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 455,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "| Other invoice where an e-invoice was due: input VAT deduction | The invoice is not a proper invoice under §§ 14 and 14a UStG, so in principle it gives no right to deduct input tax (decree section 15.2a(1)). The issuer can cure this by issuing an e-invoice afterwards that refers specifically and clearly to the first invoice (15.2a(7)). Without that, the decree's paragraph 15.2a(1a), on deducting input tax without a proper invoice, also applies to this case, and the ministry adds that a correct and complete other invoice will \"regelmäßig\" meet its conditions. The earlier sentences of 15.2a(1a), which set those conditions, are not in the letter and were not read |",
+    "anchors": [
+      "INPUT",
+      "CURE",
+      "EXCEPTIONINPUT"
+    ],
+    "evidence_note": "15.2a(1a)earlierconditions absent from amendment letter; precise missing operative chain retained, no blanketdeduction.",
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 456,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "| Estimated tax assessment | The tax office estimates the tax base where books or records that must be kept cannot be presented (§ 162(2) AO) |",
+    "anchors": [
+      "ESTIMATE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 457,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "| GoBD non-compliance | § 158 AO makes books and records the basis of taxation if they meet §§ 140 to 148 AO, and not so far as there is reason to doubt that they are correct. Where they are not taken as the basis, the tax office estimates (§ 162(2) AO). The legacy Guide's \"safety margins\" and \"penalty surcharges\" are not on the pages read and were removed |",
+    "anchors": [
+      "PRESUMPTION",
+      "ESTIMATE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 458,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "| Repeated/wilful violations | Tax evasion (Steuerhinterziehung) under § 370 AO for deliberate cases. Refer to a specialist |",
+    "anchors": [
+      "CRIME"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 460,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "- **Correction.** The legacy Guide gave a fine of up to thirty thousand euros for \"serious\" retention breaches. The statute has no such case: that ceiling belongs to § 26a(1) UStG, which is about not paying VAT prepayments and similar amounts on time. It is not an invoicing fine.",
+    "anchors": [
+      "FINES"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 461,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "- **Not settled on the pages read:** whether sending a paper or PDF invoice where an e-invoice was due counts as \"not issuing\" an invoice for the fine in the first row. The statute's wording is in the table. Refer.",
+    "anchors": [],
+    "evidence_note": "Fineclassification of wrongformat explicitlyunsettled; not equated automaticallywithnonissue.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 462,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "- **No fault of the issuer.** A breach of the e-invoice duty is not held against an issuer who did not know, and with a prudent merchant's care could not have seen, that the customer bought as a business. Use of a VAT identification number or a business identification number (W-IdNr.) can be a sign that the customer is a business (decree section 14.1(6)).",
+    "anchors": [
+      "CARE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 464,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "**Refusing data access**",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 466,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "| What | Value | Note |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 468,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "| Source | all figures below | https://www.gesetze-im-internet.de/ao_1977/__146.html |",
+    "anchors": [],
+    "kind": "presentation table or subheading label"
+  },
+  {
+    "lf": 469,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "| Delay payment (Verzögerungsgeld) that may be set when data access under § 147(6) AO is not granted: lowest amount | EUR 2,500 | § 146(2c) AO: \"kann ein Verzögerungsgeld von 2 500 Euro bis 250 000 Euro festgesetzt werden\" |",
+    "anchors": [
+      "AOLOCATION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 470,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "| The same: highest amount | EUR 250,000 | Same sentence |",
+    "anchors": [
+      "AOLOCATION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 472,
+    "section": "Section 9: Penalties for Non-Compliance",
+    "wording": "- **What it is.** Discretionary (\"kann\"). It also covers electronic books moved abroad without approval, and not moving them back on demand.",
+    "anchors": [
+      "AOLOCATION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 478,
+    "section": "VAT Return Integration",
+    "wording": "- E-invoices provide the data basis for the monthly or quarterly Umsatzsteuer-Voranmeldung (advance VAT return) via ELSTER. See the German VAT Guide, `germany-vat-return`",
+    "anchors": [],
+    "evidence_note": "VATreturn sibling handoff, no stand-alonefiling method here.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 479,
+    "section": "VAT Return Integration",
+    "wording": "- The input tax deduction needs an invoice issued under §§ 14 and 14a UStG (§ 15(1) no. 1 UStG, https://www.gesetze-im-internet.de/ustg_1980/__15.html). Where an e-invoice was due, only an e-invoice meets that in principle: see Section 9",
+    "anchors": [
+      "INPUT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 480,
+    "section": "VAT Return Integration",
+    "wording": "- A content error (a missing or wrong detail under § 14(4) or § 14a UStG) means the invoice is not a proper one. Unless proof under decree paragraph 15.2a(1a) can be given, it must be corrected to open the right to deduct (decree section 15.2a(7))",
+    "anchors": [
+      "CURE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 481,
+    "section": "VAT Return Integration",
+    "wording": "- The legacy Guide spoke of plans for pre-filled VAT returns. The ministry's pages say something else: a system for reporting invoice data to the tax administration, transaction by transaction, is planned for a later date, and the e-invoice prepares it (questions and answers, no. 1). No law and no date yet",
+    "anchors": [
+      "FAQREPORT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 482,
+    "section": "VAT Return Integration",
+    "wording": "- On request, e-invoices can be sent to the tax office through ELSTER, with the function \"Belegnachreichung zur Steuererklärung\" (questions and answers, no. 14): https://www.elster.de/eportal/formulare-leistungen/alleformulare/belegnachreichung",
+    "anchors": [
+      "FAQUPLOAD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 486,
+    "section": "Income Tax Integration",
+    "wording": "- For Einzelunternehmer (sole proprietors) and Freiberufler (freelancers), e-invoice revenue data feeds into the Einkommensteuer return (Anlage S or Anlage G)",
+    "anchors": [],
+    "evidence_note": "PIT S/G sibling handoff; cash/accrual timing independentlyquoted.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 487,
+    "section": "Income Tax Integration",
+    "wording": "- **Correction.** Under the EÜR (Einnahmenüberschussrechnung, cash basis, § 4(3) EStG) income counts in the calendar year in which it flows in (§ 11(1) EStG, https://www.gesetze-im-internet.de/estg/__11.html), not at the invoice date. The legacy Guide's advice to align e-invoice dates with payment dates was wrong: an invoice is dated when it is issued, and must be issued within six months of the supply",
+    "anchors": [
+      "CASH",
+      "CASHTIME",
+      "DUTY"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 488,
+    "section": "Income Tax Integration",
+    "wording": "- **Correction.** Under Bilanzierung (accruals basis) income is booked whatever the payment date, and profit counts when it is realised (§ 252(1) nos. 4 and 5 HGB, https://www.gesetze-im-internet.de/hgb/__252.html). The invoice date does not decide. See the bookkeeping Guide, `germany-bookkeeping`",
+    "anchors": [
+      "ACCRUAL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 492,
+    "section": "Intra-EU Reporting",
+    "wording": "- An invoice to a business customer in another EU country is outside the German e-invoice duty, because the customer is not established in Germany. It may be an e-invoice if the customer agrees. The rules of § 14a UStG on content and the shorter deadline still apply",
+    "anchors": [
+      "DUTY",
+      "NEXT15"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 493,
+    "section": "Intra-EU Reporting",
+    "wording": "- Intra-EU supplies reported via Zusammenfassende Meldung (recapitulative statement) must reconcile with the invoices issued for them (tax category K in the structured data)",
+    "anchors": [],
+    "evidence_note": "Operationalinvoice-to-ZM reconciliation, no newlegalallowance or categoryclassification.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 494,
+    "section": "Intra-EU Reporting",
+    "wording": "- Buyer VAT IDs on invoices (BT-48) should be checked against VIES",
+    "anchors": [],
+    "evidence_note": "VIES check is an operational recommendation, not claim that allbuyerVATIDs determine tax.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 495,
+    "section": "Intra-EU Reporting",
+    "wording": "- Exempt supplies under § 4 nos. 1 to 7 UStG between two German businesses, for example an intra-Community supply from Germany to another German business's fixed establishment elsewhere in the EU, DO need an e-invoice (decree section 14.1(4))",
+    "anchors": [
+      "BMFEST"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 499,
+    "section": "GoBD and Tax Audit",
+    "wording": "- Tax auditors may use Z1 (direct access), Z2 (machine evaluation by the taxpayer as the office specifies) or Z3 (data handover) for archived e-invoices: see Section 8",
+    "anchors": [
+      "AOBOOK",
+      "GOBDZ2",
+      "GOBD2024"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 500,
+    "section": "GoBD and Tax Audit",
+    "wording": "- Verfahrensdokumentation must describe the e-invoice workflow from receipt to archiving (legacy statement, from the GoBD main letter, not checked)",
+    "anchors": [],
+    "evidence_note": "Unverifiedlegacy procedural-documentation statement; no fabricatedGoBDquote.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 501,
+    "section": "GoBD and Tax Audit",
+    "wording": "- If the archive cannot be produced in an audit, the tax office can estimate (§ 162 AO, https://www.gesetze-im-internet.de/ao_1977/__162.html), and a delay payment can be set when data access is not granted: see Section 9",
+    "anchors": [
+      "ESTIMATE",
+      "AOLOCATION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 505,
+    "section": "Section 11: Cases the ministry has settled",
+    "wording": "All from the letter of 15 October 2025 (decree sections in brackets) at https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5 or from the questions and answers page at https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+    "anchors": [],
+    "kind": "scope/presentation/professional attribution; exact source date is historical Guide attribution, not a fresh fullread"
+  },
+  {
+    "lf": 507,
+    "section": "Section 11: Cases the ministry has settled",
+    "wording": "- **Self-billing (Gutschrift).** The e-invoice rules apply in the same way when the customer issues the invoice. If a self-billing document and an ordinary invoice cannot be combined in one e-invoice for technical reasons, separate e-invoices are issued (14.3(1) and (2)).",
+    "anchors": [
+      "SELFBILL",
+      "SEPARATE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 508,
+    "section": "Section 11: Cases the ministry has settled",
+    "wording": "- **Special schemes.** The duty also covers supplies under the special rules of §§ 23a to 25c UStG (for example travel services and the margin scheme) and reverse-charge supplies under § 13b UStG between German businesses (14.1(4)).",
+    "anchors": [
+      "SPECIAL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 509,
+    "section": "Section 11: Cases the ministry has settled",
+    "wording": "- **Opted supplies.** A supply that is taxable only because of an option under § 9(1) UStG needs an e-invoice (14.1(4)).",
+    "anchors": [
+      "SPECIAL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 510,
+    "section": "Section 11: Cases the ministry has settled",
+    "wording": "- **Rent and other continuing contracts.** One e-invoice for the first part period is enough, if the contract is attached to it or the e-invoice otherwise makes clear that it is a standing invoice. When an invoice detail changes, for example a rent increase, a new e-invoice is due. A standing invoice that was properly issued as an other invoice needs no extra e-invoice as long as its details do not change (14.1(19), 14.5(17)). The invoice number may be a number from the contract, such as a flat or tenant number (14.5(12)).",
+    "anchors": [
+      "RENT",
+      "RENTCHANGE",
+      "NUMBER"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 511,
+    "section": "Section 11: Cases the ministry has settled",
+    "wording": "- **Contracts as invoices.** A contract with all invoice details is an other invoice unless it meets the format rules. Where an e-invoice is due, an e-invoice must be issued in addition; the contract can sit in its attachment (14.1(17)).",
+    "anchors": [
+      "CONTRACT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 512,
+    "section": "Section 11: Cases the ministry has settled",
+    "wording": "- **Bank statements** that bill the bank's own service are invoices. They are e-invoices only if they meet the format and content rules (14.1(16)).",
+    "anchors": [
+      "BANK"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 513,
+    "section": "Section 11: Cases the ministry has settled",
+    "wording": "- **Inside one business.** Documents for movements between departments of the same business, or inside a VAT group (Organkreis), are internal vouchers, not invoices (14.1(1)). The e-invoice duty does not reach them.",
+    "anchors": [
+      "INTERNAL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 514,
+    "section": "Section 11: Cases the ministry has settled",
+    "wording": "- **Customer with a business and a private side.** For a legal person that buys for both sides, the e-invoice duty takes priority (14.1(8)). Where several persons buy jointly and businesses are among them, the invoice to that community must be an e-invoice once no transition relief applies (15.2a(3)).",
+    "anchors": [
+      "MIXED",
+      "COMMUNITY"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 515,
+    "section": "Section 11: Cases the ministry has settled",
+    "wording": "- **Corrections.** Where an e-invoice was due, the correction must also be an e-invoice, using the invoice type for corrections. Sending the missing or wrong detail in another form is not enough (14.11(1)). Single line items may be corrected in a later e-invoice if it refers specifically and clearly to the first one (questions and answers, no. 7b).",
+    "anchors": [
+      "CORRECT",
+      "FAQBUILD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 516,
+    "section": "Section 11: Cases the ministry has settled",
+    "wording": "- **Price changes are not corrections.** Cash discounts, rebates and bonuses paid later, and price cuts after a complaint that leave the supply itself unchanged, change the tax base under § 17 UStG; the invoice need not be corrected. A change in what was supplied, such as changed quantities on a building invoice, does need a correction, at least of the description (14.11(4), 17.1(3a)).",
+    "anchors": [
+      "PRICE",
+      "PRICELATER",
+      "PRICE2"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 517,
+    "section": "Section 11: Cases the ministry has settled",
+    "wording": "- **Building work.** For now it is enough if the structured part lists the single trades with their sums, and a human-readable attachment, clearly referred to in the structured part, gives the detailed breakdown (questions and answers, no. 7b).",
+    "anchors": [
+      "FAQBUILD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 518,
+    "section": "Section 11: Cases the ministry has settled",
+    "wording": "- **Final invoices.** Part payments already received may be deducted in an unstructured attachment, if the structured part points to it expressly. The ministry says this can also be used after 31 December 2027 (questions and answers, no. 7b).",
+    "anchors": [
+      "FAQBUILD"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 519,
+    "section": "Section 11: Cases the ministry has settled",
+    "wording": "- **Fee notices of public bodies** that count as invoices follow the general rules, e-invoice duty included; one issued as an other invoice can be corrected by an e-invoice later (14.1(1)).",
+    "anchors": [
+      "INTERNAL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 523,
+    "section": "The method, step by step",
+    "wording": "1. Check whether an invoice is due at all. § 14(2) sentence 2 UStG demands one, within six months, for supplies to another business for its business, to a legal person that is not a business, and for taxable property-related work for anyone else. No duty for supplies exempt under § 4 nos. 8 to 29 UStG. https://www.gesetze-im-internet.de/ustg_1980/__14.html",
+    "anchors": [
+      "DUTY"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 524,
+    "section": "The method, step by step",
+    "wording": "2. Check whether it must be an e-invoice. Yes, if supplier and customer are both established in Germany and the customer buys for its business (§ 14(2) sentence 2 no. 1 UStG). No, if one of them is established abroad, or the customer is a consumer or a legal person that is not a business. Same page as step 1.",
+    "anchors": [
+      "DUTY",
+      "FAQSCOPE"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 525,
+    "section": "The method, step by step",
+    "wording": "3. Check the lasting exceptions: small invoices (§ 33 UStDV), passenger tickets (§ 34 UStDV), invoices of a Kleinunternehmer (§ 34a UStDV). These may always be other invoices. https://www.gesetze-im-internet.de/ustdv_1980/__33.html and https://www.gesetze-im-internet.de/ustdv_1980/__34.html and https://www.gesetze-im-internet.de/ustdv_1980/__34a.html",
+    "anchors": [
+      "SMALL250",
+      "TICKET",
+      "KUFIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 526,
+    "section": "The method, step by step",
+    "wording": "4. Check the transition relief in § 27(38) UStG: the year of the supply, the day the invoice is sent and, for 2027 sales, the issuer's total turnover of the previous calendar year. If the relief applies and the issuer wants to use it: paper, or with the recipient's consent another electronic format. https://www.gesetze-im-internet.de/ustg_1980/__27.html",
+    "anchors": [
+      "TRANSITION"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 527,
+    "section": "The method, step by step",
+    "wording": "5. If an e-invoice is due or wanted, pick an allowed format: XRechnung, ZUGFeRD from version 2.0.1 without MINIMUM and BASIC-WL, another format that meets the European standard, or an agreed format that allows full extraction. Put every detail of § 14(4) and § 14a UStG into the structured part. Ministry letter of 15 October 2025: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+    "anchors": [
+      "STANDARD",
+      "ZUGFERD",
+      "EDI",
+      "STRUCTURED"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 528,
+    "section": "The method, step by step",
+    "wording": "6. Validate the file, keep the validation report, and send it by a channel agreed with the customer. The customer's consent to the e-invoice is not needed. Keep proof of sending. Same letter as step 5.",
+    "anchors": [
+      "VALIDATE",
+      "RECEIVE",
+      "FAQCHANNEL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 529,
+    "section": "The method, step by step",
+    "wording": "7. On the receiving side: make sure e-invoices can be received, display the XML with a viewer (the tax administration offers one at https://www.elster.de/eportal/e-rechnung ), and check the invoice details before deducting input tax under § 15 UStG. https://www.gesetze-im-internet.de/ustg_1980/__15.html",
+    "anchors": [
+      "RECEIVE",
+      "VIEWER",
+      "INPUT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 530,
+    "section": "The method, step by step",
+    "wording": "8. Correct a faulty invoice under § 31(5) UStDV with a document that refers specifically and clearly to it. Where an e-invoice was due, the correction is an e-invoice too. https://www.gesetze-im-internet.de/ustdv_1980/__31.html",
+    "anchors": [
+      "MONTH",
+      "CORRECT"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 531,
+    "section": "The method, step by step",
+    "wording": "9. Store the structured part unchanged, in the format received, for the period in § 14b(1) UStG, and keep it machine-readable for the tax office. https://www.gesetze-im-internet.de/ustg_1980/__14b.html",
+    "anchors": [
+      "KEEP",
+      "ORIGINAL"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 532,
+    "section": "The method, step by step",
+    "wording": "10. For a federal authority, follow the ERechV as well: XRechnung or an equal standard, Leitweg-ID, sign-up at the federal portal. https://www.gesetze-im-internet.de/erechv/__4.html",
+    "anchors": [
+      "PORTAL",
+      "FEDFIELDS"
+    ],
+    "kind": "positive statutory/admin/technical rule, selected actual own-source quote"
+  },
+  {
+    "lf": 536,
+    "section": "Ask the client first",
+    "wording": "- Are you and your customer both established in Germany (seat, management, or a fixed establishment that takes part in the supply), and does the customer buy for its business?",
+    "anchors": [],
+    "kind": "intake question"
+  },
+  {
+    "lf": 537,
+    "section": "Ask the client first",
+    "wording": "- When was the supply made, and when will the invoice be sent? The relief depends on both dates.",
+    "anchors": [],
+    "kind": "intake question"
+  },
+  {
+    "lf": 538,
+    "section": "Ask the client first",
+    "wording": "- What was your total turnover (§ 19(2) UStG) in the previous calendar year, and are you a Kleinunternehmer?",
+    "anchors": [],
+    "kind": "intake question"
+  },
+  {
+    "lf": 539,
+    "section": "Ask the client first",
+    "wording": "- What is the gross total of the invoice, and is any part of the supply exempt under § 4 nos. 8 to 29 UStG?",
+    "anchors": [],
+    "kind": "intake question"
+  },
+  {
+    "lf": 540,
+    "section": "Ask the client first",
+    "wording": "- What does your software produce and read today: XRechnung, ZUGFeRD (which version and profile), EDI, or plain PDF? Can you receive, display and store an XML file?",
+    "anchors": [],
+    "kind": "intake question"
+  },
+  {
+    "lf": 541,
+    "section": "Ask the client first",
+    "wording": "- Is the customer a public authority? If so, federal or state, and do you have its Leitweg-ID?",
+    "anchors": [],
+    "kind": "intake question"
+  },
+  {
+    "lf": 545,
+    "section": "When to refuse or refer",
+    "wording": "- Invoices to state and local authorities: each federal state has its own rules, which this Guide does not cover.",
+    "anchors": [],
+    "kind": "precise professional/source referral boundary"
+  },
+  {
+    "lf": 546,
+    "section": "When to refuse or refer",
+    "wording": "- Technical set-up: field mapping, validator messages, Peppol access, portal sign-up. Refer to the software vendor and to the KoSIT and FeRD material.",
+    "anchors": [],
+    "kind": "precise professional/source referral boundary"
+  },
+  {
+    "lf": 547,
+    "section": "When to refuse or refer",
+    "wording": "- Whether a customer or supplier is \"established\" in Germany through a fixed establishment that takes part in the supply. Refer to a Steuerberater.",
+    "anchors": [],
+    "kind": "precise professional/source referral boundary"
+  },
+  {
+    "lf": 548,
+    "section": "When to refuse or refer",
+    "wording": "- Whether a supply is exempt under § 4 nos. 8 to 29 UStG, or taxable by option.",
+    "anchors": [],
+    "kind": "precise professional/source referral boundary"
+  },
+  {
+    "lf": 549,
+    "section": "When to refuse or refer",
+    "wording": "- A dispute over input tax where a paper or PDF invoice arrived although an e-invoice was due.",
+    "anchors": [],
+    "kind": "precise professional/source referral boundary"
+  },
+  {
+    "lf": 550,
+    "section": "When to refuse or refer",
+    "wording": "- Fine proceedings and anything that may be tax evasion.",
+    "anchors": [],
+    "kind": "precise professional/source referral boundary"
+  },
+  {
+    "lf": 551,
+    "section": "When to refuse or refer",
+    "wording": "- Disputes between the parties over format or channel: the ministry treats these as civil law.",
+    "anchors": [],
+    "kind": "precise professional/source referral boundary"
+  },
+  {
+    "lf": 552,
+    "section": "When to refuse or refer",
+    "wording": "- Self-billing and the 2027 turnover test, VAT groups, and any case where it is unclear whose turnover counts.",
+    "anchors": [],
+    "kind": "precise professional/source referral boundary"
+  },
+  {
+    "lf": 553,
+    "section": "When to refuse or refer",
+    "wording": "- An invoice sent after 31 December 2026 for a sale made in 2025 or 2026: the statute's wording gives no relief, and the pages read do not discuss it.",
+    "anchors": [],
+    "kind": "precise professional/source referral boundary"
+  },
+  {
+    "lf": 554,
+    "section": "When to refuse or refer",
+    "wording": "- E-invoicing duties of other countries, and invoices under § 14(7) UStG that follow another member state's rules.",
+    "anchors": [],
+    "kind": "precise professional/source referral boundary"
+  },
+  {
+    "lf": 555,
+    "section": "When to refuse or refer",
+    "wording": "- GoBD procedural documentation and the choice of an archive system.",
+    "anchors": [],
+    "kind": "precise professional/source referral boundary"
+  },
+  {
+    "lf": 556,
+    "section": "When to refuse or refer",
+    "wording": "- The planned reporting system: there is no law yet.",
+    "anchors": [],
+    "kind": "precise professional/source referral boundary"
+  },
+  {
+    "lf": 560,
+    "section": "Sources",
+    "wording": "- UStG § 12, § 14, § 14a, § 14b, § 15, § 19, § 26a, § 27: https://www.gesetze-im-internet.de/ustg_1980/__12.html and https://www.gesetze-im-internet.de/ustg_1980/__14.html and https://www.gesetze-im-internet.de/ustg_1980/__14a.html and https://www.gesetze-im-internet.de/ustg_1980/__14b.html and https://www.gesetze-im-internet.de/ustg_1980/__15.html and https://www.gesetze-im-internet.de/ustg_1980/__19.html and https://www.gesetze-im-internet.de/ustg_1980/__26a.html and https://www.gesetze-im-internet.de/ustg_1980/__27.html",
+    "anchors": [],
+    "kind": "source route and historical read attribution"
+  },
+  {
+    "lf": 561,
+    "section": "Sources",
+    "wording": "- UStDV § 31, § 33, § 34, § 34a: https://www.gesetze-im-internet.de/ustdv_1980/__31.html and https://www.gesetze-im-internet.de/ustdv_1980/__33.html and https://www.gesetze-im-internet.de/ustdv_1980/__34.html and https://www.gesetze-im-internet.de/ustdv_1980/__34a.html",
+    "anchors": [],
+    "kind": "source route and historical read attribution"
+  },
+  {
+    "lf": 562,
+    "section": "Sources",
+    "wording": "- AO § 146, § 147, § 158, § 162, § 370: https://www.gesetze-im-internet.de/ao_1977/__146.html and https://www.gesetze-im-internet.de/ao_1977/__147.html and https://www.gesetze-im-internet.de/ao_1977/__158.html and https://www.gesetze-im-internet.de/ao_1977/__162.html and https://www.gesetze-im-internet.de/ao_1977/__370.html",
+    "anchors": [],
+    "kind": "source route and historical read attribution"
+  },
+  {
+    "lf": 563,
+    "section": "Sources",
+    "wording": "- HGB § 252, EStG § 4 and § 11: https://www.gesetze-im-internet.de/hgb/__252.html and https://www.gesetze-im-internet.de/estg/__4.html and https://www.gesetze-im-internet.de/estg/__11.html",
+    "anchors": [],
+    "kind": "source route and historical read attribution"
+  },
+  {
+    "lf": 564,
+    "section": "Sources",
+    "wording": "- ERechV § 3, § 4, § 5, § 11: https://www.gesetze-im-internet.de/erechv/__3.html and https://www.gesetze-im-internet.de/erechv/__4.html and https://www.gesetze-im-internet.de/erechv/__5.html and https://www.gesetze-im-internet.de/erechv/__11.html",
+    "anchors": [],
+    "kind": "source route and historical read attribution"
+  },
+  {
+    "lf": 565,
+    "section": "Sources",
+    "wording": "- Finance ministry, e-invoice letter of 15 October 2025 (changes the VAT application decree, sections 14.1 and following): https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5",
+    "anchors": [],
+    "kind": "source route and historical read attribution"
+  },
+  {
+    "lf": 566,
+    "section": "Sources",
+    "wording": "- Finance ministry, questions and answers on the mandatory e-invoice, as of March 2026: https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+    "anchors": [],
+    "kind": "source route and historical read attribution"
+  },
+  {
+    "lf": 567,
+    "section": "Sources",
+    "wording": "- Finance ministry, GoBD change letters of 11 March 2024 and 14 July 2025: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-03-11-aenderung-gobd.pdf?__blob=publicationFile&v=4 and https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2025-07-14-GoBD-2-aenderung.pdf?__blob=publicationFile&v=4",
+    "anchors": [],
+    "kind": "source route and historical read attribution"
+  },
+  {
+    "lf": 568,
+    "section": "Sources",
+    "wording": "- Finance ministry, tax booklet (Steuern von A-Z), 2025 edition: https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9",
+    "anchors": [],
+    "kind": "source route and historical read attribution"
+  },
+  {
+    "lf": 569,
+    "section": "Sources",
+    "wording": "- ELSTER, e-invoice viewer of the tax administration, and the document upload function: https://www.elster.de/eportal/e-rechnung and https://www.elster.de/eportal/formulare-leistungen/alleformulare/belegnachreichung",
+    "anchors": [],
+    "kind": "source route and historical read attribution"
+  },
+  {
+    "lf": 570,
+    "section": "Sources",
+    "wording": "- Technical sources read on 29 October 2026: [KoSIT XRechnung 3.0.2 specification](https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf), selected fields, amount datatype and PEPPOL-EN16931-R120; [current version list and bundle](https://xeinkauf.de/xrechnung/versionen-und-bundles/), whose selected schema and configuration members establish namespaces and validation layers. No full bundle execution is claimed.",
+    "anchors": [],
+    "kind": "source route and historical read attribution"
+  },
+  {
+    "lf": 571,
+    "section": "Sources",
+    "wording": "- [KoSIT identifier guidance, 2 January 2025](https://xeinkauf.de/app/uploads/2025/01/2025-01-02_Germany_Identifier_v.1.1_eng.pdf), selected 0204/9930 addressing clauses; [FeRD profile FAQ](https://www.ferd-net.de/standards/zugferd-faq), selected profile definitions. These are technical publisher statements, separate from the VAT law.",
+    "anchors": [],
+    "kind": "source route and historical read attribution"
+  },
+  {
+    "lf": 572,
+    "section": "Sources",
+    "wording": "- Federal procurement office: [current platform and consolidation explanation](https://e-rechnung-bund.de/), [upload instructions](https://e-rechnung-bund.de/ubertragungskanale/upload/) and [e-mail instructions](https://e-rechnung-bund.de/ubertragungskanale/e-mail/), selected operational clauses read on 29 October 2026. No registration, login or submission was used.",
+    "anchors": [],
+    "kind": "source route and historical read attribution"
+  },
+  {
+    "lf": 573,
+    "section": "Sources",
+    "wording": "- Not yet confirmed: the exact Leitweg-ID validation pattern and the three additional portal checks identified in Section 6; the earlier stated GoBD procedural-documentation and paragraph 135 details; the full conditions of UStAE 15.2a(1a) absent from the amendment letter; and whether wrong-format invoicing attracts the non-issue fine. These limits are not resolved by technical schema conformity.",
+    "anchors": [],
+    "evidence_note": "Consolidated exact remaining source limits; newly read namespaces/profiles/identifiers/channels/layers are no longer classified as missing.",
+    "kind": "precise retained technical/source boundary or operational instruction, not verified newlegalclaim"
+  },
+  {
+    "lf": 577,
+    "section": "Disclaimer",
+    "wording": "This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a Steuerberater or Wirtschaftsprüfer) before filing or acting upon.",
+    "anchors": [],
+    "kind": "protected professional disclaimer, not a new positive tax allowance"
+  },
+  {
+    "lf": 579,
+    "section": "Disclaimer",
+    "wording": "> Contributed by OpenAccountants.",
+    "anchors": [],
+    "kind": "protected professional disclaimer, not a new positive tax allowance"
+  }
+]

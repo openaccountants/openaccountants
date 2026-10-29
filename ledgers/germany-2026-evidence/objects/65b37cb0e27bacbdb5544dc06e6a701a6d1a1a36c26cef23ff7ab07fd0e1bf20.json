@@ -1,0 +1,11 @@
+{
+  "id": "U8e8cc9c5160fb456",
+  "url": "https://www.dvka.de/de/arbeitgeber-erwerbstaetige/geltungsbereiche/koordination.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8e8cc9c5160fb456.body",
+  "raw_sha256": "5e0cc12980b8fa848af5fc0fe8ee5ed8d30d62e23094d52f898a516a0458b324",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8e8cc9c5160fb456.reader.txt",
+  "reader_sha256": "0675a4a99eb8305e0c1d1a03fb921d588df5a7e951eb5eb7940eccca2e77d701",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

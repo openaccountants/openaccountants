@@ -1,0 +1,11 @@
+# Germany independent review dispatch
+
+All25 writer Guide/ledger pairs are frozen in country-freeze.json; snapshots include all30country markdown files. Root independently rehashed all50pair files and the five unchanged companions. These are identity checks, not an independent legal verdict.
+
+WriterA16: germany-ledger-writer-2026-10-28/writer-A-handover-report.md and writer-A-final-inventory.json,610member manifest. Sources/quoted ranges and actual reads are in its guide-specific support files. WriterB7: germany-ledger-writer-B-2026-10-29/writer-handover.md and seven-pair-inventory.json,515member manifest, actual-read-scope-index.json/source index with explicit coordinate successors. Rootestimated: germany-root-estimated-ledger-2026-10-29/report.md,freeze.json,81artifactmanifest. Rootrental: germany-root-rental-ledger-2026-10-29/report.md,freeze.json,163artifactmanifest;289currentunits/135quotes/550oldorigins/49controls.
+
+Read the exact ledgers and sources row by row. Reuse completed source chains with honest attribution; do not claim full reading from successful hashes. Quotes/native reader coordinates for rental were corrected to preserve PDFformfeeds, and the earlier index/failure is retained. Officialweb observations versus rawbodies and the2019deposit appeal history are explicit. Every substantive old topic has a destination or precise unchanged limit. Recompute examples and spot-check oldtopics; explore beyond cited source only when a check fails. No ledgerless fresh review.
+
+CountryREADME currently claims partial:{}; that is writer-baseline text, not a verified completion verdict. Evaluate it against all disclosed ordinary per-Guide limits, and report the correct whole-country disposition. Five unchanged companions are explicitly inventoried; inspect their routing/summary/trust consistency, without silently claiming fresh companyformation/accounting legal coverage. Preserve original metadata/bylines/CTA and all prior reviews.
+
+Write independent findings/report in this review folder, keep exact reviewer read/source evidence and failure closures. Do not edit writer Guides yourself; send root concrete source-backed failures so the writer can repair and you can recheck. No Git/PR/public mutations or paidAPI. A pass is source-cited draft review only, never professional attestation.

@@ -1,0 +1,72 @@
+[
+  {
+    "case": "original1",
+    "base": 8400,
+    "per_date": 2100,
+    "soli": 0,
+    "church": "756"
+  },
+  {
+    "case": "original2",
+    "full": "1210",
+    "mitigation": "3927/20",
+    "rounded_overdue": 5500,
+    "surcharge": 110
+  },
+  {
+    "case": "mitigation crossing single",
+    "exact_base": "1210825/32",
+    "display": "37838.28, rounded display of algebraic crossing; not statutory breakpoint"
+  },
+  {
+    "case": "mitigation crossing joint",
+    "exact_base": "1210825/16",
+    "display": "75676.56, rounded display of algebraic crossing; not statutory breakpoint"
+  },
+  {
+    "case": "2026 due weekdays",
+    "dates": [
+      {
+        "date": "2026-03-10",
+        "weekday": "Tuesday"
+      },
+      {
+        "date": "2026-06-10",
+        "weekday": "Wednesday"
+      },
+      {
+        "date": "2026-09-10",
+        "weekday": "Thursday"
+      },
+      {
+        "date": "2026-12-10",
+        "weekday": "Thursday"
+      }
+    ]
+  },
+  {
+    "case": "legacy June10 to July15",
+    "days": 35,
+    "started_calendar_months": 2,
+    "exceeds_grace": true
+  },
+  {
+    "case": "minimums",
+    "400_per100": "both inclusive tests pass",
+    "399_annual": "fails annual",
+    "99_per_due": "fails per-date"
+  },
+  {
+    "case": "DE-L08 transition",
+    "2024_months": 17,
+    "2024_interest_start": "2026-06-01",
+    "2026_months": 15,
+    "2026_interest_start": "2028-04-01"
+  },
+  {
+    "case": "five old scenarios",
+    "count": 5,
+    "derived_or_qualitative": true,
+    "bank_case": "notice-confirmed stipulated transaction only; old date windows remain unconfirmed"
+  }
+]

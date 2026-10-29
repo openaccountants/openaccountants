@@ -1,0 +1,48 @@
+{
+  "R61.cb-4": {
+    "id": "R61.cb-4",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__138a.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.body",
+    "raw_sha256": "ab3e9238a92b67156cc3d0c50b994057a5635b857641ff0fa76f085c3e5dfa7e",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.reader.txt",
+    "reader_sha256": "96bac0c232697de930aadaf031a5def0b170ff1f7d03806ab8730cf74a699305",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "source": "U0ab387a9c7139dab",
+    "article": "AO §138a(4)",
+    "LF_start": 38,
+    "LF_end": 38,
+    "exact_quote": "(4) Eine einbezogene inländische Konzerngesellschaft ist im Regelfall verpflichtet, den länderbezogenen Bericht für einen Konzern mit einer ausländischen Konzernobergesellschaft, die nach Absatz 1 zur Übermittlung des länderbezogenen Berichts verpflichtet wäre, wenn sie Sitz oder Geschäftsleitung im Inland hätte, dem Bundeszentralamt für Steuern zu übermitteln, wenn das Bundeszentralamt für Steuern keinen länderbezogenen Bericht erhalten hat. Übermittelt eine einbezogene inländische Konzerngesellschaft den länderbezogenen Bericht, entfällt die Verpflichtung für alle anderen einbezogenen inländischen Konzerngesellschaften dieses Konzerns. Kann eine einbezogene inländische Konzerngesellschaft die Übermittlung innerhalb der Frist des Absatzes 6 Satz 1 nicht sicherstellen, insbesondere weil sie den länderbezogenen Bericht weder beschaffen noch erstellen kann, so hat sie dies innerhalb der Frist des Absatzes 6 Satz 1 dem Bundeszentralamt für Steuern mitzuteilen und dabei alle Angaben im Sinne von Absatz 2 zu machen, über die sie verfügt oder die sie beschaffen kann. Konnte eine einbezogene inländische Konzerngesellschaft davon ausgehen, dass der länderbezogene Bericht fristgerecht übermittelt wird, und stellt sich nachträglich heraus, dass dies ohne Verschulden der einbezogenen inländischen Konzerngesellschaft nicht geschehen ist, so hat diese ihre Pflichten nach Satz 1 oder Satz 3 innerhalb eines Monats nach Bekanntwerden der Nichtübermittlung zu erfüllen. Die Sätze 1 bis 4 gelten entsprechend für die inländische Betriebsstätte eines ausländischen Unternehmens, das als ausländische Konzernobergesellschaft oder als einbezogene ausländische Konzerngesellschaft in einen Konzernabschluss einbezogen wird.",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "native_LF": [
+      38,
+      38
+    ],
+    "actual_read_scope": "Own complete operative paragraph actually read from retained native reader; acquisition and prior review are not substituted for reading."
+  },
+  "R61.cb-6": {
+    "id": "R61.cb-6",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__138a.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.body",
+    "raw_sha256": "ab3e9238a92b67156cc3d0c50b994057a5635b857641ff0fa76f085c3e5dfa7e",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.reader.txt",
+    "reader_sha256": "96bac0c232697de930aadaf031a5def0b170ff1f7d03806ab8730cf74a699305",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "source": "U0ab387a9c7139dab",
+    "article": "AO §138a(6)",
+    "LF_start": 46,
+    "LF_end": 46,
+    "exact_quote": "(6) Die Übermittlung des länderbezogenen Berichts an das Bundeszentralamt für Steuern hat spätestens ein Jahr nach Ablauf des Wirtschaftsjahres zu erfolgen, für das der länderbezogene Bericht zu erstellen ist. Abweichend von Satz 1 gilt in den Fällen von Absatz 4 Satz 4 die dort genannte Frist für die Übermittlung des länderbezogenen Berichts. Die Übermittlung hat nach amtlich vorgeschriebenem Datensatz durch Datenfernübertragung zu erfolgen.",
+    "read_on": "2026-10-29",
+    "line_convention": "literal LF split('\\n')",
+    "native_LF": [
+      46,
+      46
+    ],
+    "actual_read_scope": "Own complete operative paragraph actually read from retained native reader; acquisition and prior review are not substituted for reading."
+  }
+}

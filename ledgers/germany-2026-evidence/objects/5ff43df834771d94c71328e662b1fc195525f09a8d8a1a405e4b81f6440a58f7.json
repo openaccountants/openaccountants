@@ -1,0 +1,11 @@
+{
+  "id": "U48fc7e3c289a4b4e",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+  "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+  "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

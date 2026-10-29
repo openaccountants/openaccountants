@@ -1,0 +1,139 @@
+{
+  "status": "PASS bounded exact R23\u201325 plus R24 terminology successor. Frozen174rows/67sources and original examples previously independently reviewed. No country verdict.",
+  "initial_pair": {
+    "slug": "de-vat-annual-and-special-schemes",
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-vat-annual-and-special-schemes.md",
+    "Guide_sha256": "6efaea2e7187a02ef34952cf07803f8fb80516c8def1df3fe6b7158c2e7fe196",
+    "bytes": 35216,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R23-R25-annual-VAT-writer-successor-2026-10-29/ledgers/de-vat-annual-and-special-schemes.md",
+    "ledger_sha256": "785e75dafb9ec0abcec8b42cc4a5d4ae93f19ce276dde550e27a31856a71ef48",
+    "current_rows": 177,
+    "prior_current_rows": 174,
+    "old_topics": 347,
+    "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/de-vat-annual-and-special-schemes.md",
+    "prior_ledger_sha256": "bffbf9a62569d8a2e27a6e6dee0c21f4d66238c603974e327e6bde93feea923f"
+  },
+  "final_pair": {
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-vat-annual-and-special-schemes.md",
+    "Guide_sha256": "c9af14ff3cd68fa52372d444ff37c917860ae5bd6fa8ff645c08cdee03397d71",
+    "Guide_bytes": 35255,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R24-steuerbar-wording-successor-2026-10-29/de-vat-annual-and-special-schemes.md",
+    "ledger_sha256": "d22dd5268409a71a0124e6888da0912266991291b7e6ad4e5576480f631951ed",
+    "rows_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R24-steuerbar-wording-successor-2026-10-29/rows.json",
+    "rows_sha256": "bec2578d87a543b09120f2587a853c2dd870621ef0766b68b6a5327f47d5c434",
+    "old_topics_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R23-R25-annual-VAT-writer-successor-2026-10-29/support/de-vat-annual-and-special-schemes/old-topic-destinations.json",
+    "old_topics_sha256": "d10ae7d52eb78907774e89044cc35a223670449545f456830d316233d3e61186",
+    "source_index_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R23-R25-annual-VAT-writer-successor-2026-10-29/source-quote-index.json",
+    "source_index_sha256": "35da6754e20d6122dfc479cc74f95404e37e93c3ff5a1fca2e5bd8cfdc228600",
+    "prior_manifest_sha256": "a5975e6d4656bf525d4e836aaf26eb367124e5fd29077db2863f4df3a0744fdd"
+  },
+  "manifest_members_rehashed": [
+    20,
+    11
+  ],
+  "initial_operations": 7,
+  "terminology_operations": 2,
+  "both_full_inverses": true,
+  "native_rows_verified": [
+    177,
+    177
+  ],
+  "original_oa_exact": 2,
+  "whole_example_section_exact": true,
+  "protected_metadata_CTA_URLs": true,
+  "sources": [
+    {
+      "id": "R23.small-business",
+      "native_LF": [
+        7,
+        18
+      ],
+      "reader_sha256": "ae56f5ede8b771215419ba19792d931837bbcf69fc6116512c3c95ac4f8cf5f3",
+      "quote_sha256": "07aca18e2e6f9e4025aee0c827a00edaa1d7666e60de6041bfe5dcb8e1b8a8c8",
+      "actual_read": "Full selected own quotation actually read in annual VAT source batches and R23\u201325 direct selected read ledger; identical retained own body, not writer-verdict reuse."
+    },
+    {
+      "id": "R23.outgoing-procedure",
+      "native_LF": [
+        7,
+        18
+      ],
+      "reader_sha256": "1113ccf924ace22e74af7aa453cf9ac2d543a4bcec0f050b6efb6c28dbb4ea0b",
+      "quote_sha256": "eb8163509d4a9fc3fa34fd310693429e3ebf7c69d3d30348c79cee61033a6ae7",
+      "actual_read": "Full selected own quotation actually read in annual VAT source batches and R23\u201325 direct selected read ledger; identical retained own body, not writer-verdict reuse."
+    },
+    {
+      "id": "R25.disposal",
+      "native_LF": [
+        15,
+        16
+      ],
+      "reader_sha256": "fd80c34545ec2b27d925674fb7d0df07be0f8c6332f74b8ee2e5b72a1950985b",
+      "quote_sha256": "a6260e0cf05f9c35d6362804d998bfbb0e694dc72151e292478714731617785f",
+      "actual_read": "Full selected own quotation actually read in annual VAT source batches and R23\u201325 direct selected read ledger; identical retained own body, not writer-verdict reuse."
+    },
+    {
+      "id": "R25.simplifications",
+      "native_LF": [
+        7,
+        9
+      ],
+      "reader_sha256": "b65339729213018968d351d7c118801fa897f301ac29d361aaa5ad58662e1f1c",
+      "quote_sha256": "e59828c11bb762eae474fbd86469a884cdd36804164558384e0f17cacb103a3d",
+      "actual_read": "Full selected own quotation actually read in annual VAT source batches and R23\u201325 direct selected read ledger; identical retained own body, not writer-verdict reuse."
+    }
+  ],
+  "source_reuse_precision": "Four exact selected own-primary records independently identity/membership checked, actual own full quotations read in annual VAT source batches and selected R23\u201325 ledger. No new broadsource reading claimed.",
+  "own_controls": [
+    {
+      "name": "Germanprev30kfails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "Germanprev25kpassesonlylimb",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "EU100kboundary",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "EU100000.01fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "R24maininsurance not automaticallyexcluded",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "R24ancillary independentlyproved exclusion",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "R25samefullytaxeddisposal no automaticchange",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "R25different exemptdisposal check",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "R25input1000within",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "R25input1000.01outside",
+      "actual": "False",
+      "expected": "False"
+    }
+  ]
+}

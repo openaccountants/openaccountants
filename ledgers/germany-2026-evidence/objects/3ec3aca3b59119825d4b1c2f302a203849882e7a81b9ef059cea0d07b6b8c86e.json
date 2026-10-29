@@ -1,0 +1,11 @@
+{
+  "id": "U03b377b39fa3ef3f",
+  "url": "https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-3-sollbericht-2026.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U03b377b39fa3ef3f.body",
+  "raw_sha256": "5418015841e63fc1b1a3dc1099c5ea2e40cf7f6d6a617d0bc8b89a47703ac87e",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U03b377b39fa3ef3f.reader.txt",
+  "reader_sha256": "64adee01b43648a74f735ace5c3d4aa08dc051806f0c4fd9cbf75a97c9618ab4",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

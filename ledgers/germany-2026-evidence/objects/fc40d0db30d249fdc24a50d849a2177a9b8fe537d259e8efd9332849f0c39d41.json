@@ -1,0 +1,8 @@
+{
+  "before_sha256": "cacaa184f25e468514bc31fbabaf03df05c704f7dc7b284f82e180bb5b86ddc3",
+  "after_sha256": "f7864d22ecb5e51e67d65e1c799dd335abe3dc120be7e556779c84ac2df80382",
+  "operations": 3,
+  "full_inverse_exact": true,
+  "original_oa_CTA_URL_order_exact": true,
+  "no_independent_verdict": true
+}

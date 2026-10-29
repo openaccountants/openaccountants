@@ -1,0 +1,102 @@
+{
+  "controls": [
+    {
+      "id": "RV",
+      "actual": "1674",
+      "expected": "1674",
+      "scope": "Separating reference arithmetic; original Guide keeps actual fictional certificate9414 and balance1910 stipulated. Own classVminimum branch only, C fullbranch/testvector calculation separately attributed.",
+      "pass": true
+    },
+    {
+      "id": "KVPV",
+      "actual": "1845",
+      "expected": "1845",
+      "scope": "Separating reference arithmetic; original Guide keeps actual fictional certificate9414 and balance1910 stipulated. Own classVminimum branch only, C fullbranch/testvector calculation separately attributed.",
+      "pass": true
+    },
+    {
+      "id": "ALV",
+      "actual": "234",
+      "expected": "234",
+      "scope": "Separating reference arithmetic; original Guide keeps actual fictional certificate9414 and balance1910 stipulated. Own classVminimum branch only, C fullbranch/testvector calculation separately attributed.",
+      "pass": true
+    },
+    {
+      "id": "remainingroom",
+      "actual": "55",
+      "expected": "55",
+      "scope": "Separating reference arithmetic; original Guide keeps actual fictional certificate9414 and balance1910 stipulated. Own classVminimum branch only, C fullbranch/testvector calculation separately attributed.",
+      "pass": true
+    },
+    {
+      "id": "VSP",
+      "actual": "3574",
+      "expected": "3574",
+      "scope": "Separating reference arithmetic; original Guide keeps actual fictional certificate9414 and balance1910 stipulated. Own classVminimum branch only, C fullbranch/testvector calculation separately attributed.",
+      "pass": true
+    },
+    {
+      "id": "zve",
+      "actual": "13160",
+      "expected": "13160",
+      "scope": "Separating reference arithmetic; original Guide keeps actual fictional certificate9414 and balance1910 stipulated. Own classVminimum branch only, C fullbranch/testvector calculation separately attributed.",
+      "pass": true
+    },
+    {
+      "id": "minimum",
+      "actual": "1842",
+      "expected": "1842",
+      "scope": "Separating reference arithmetic; original Guide keeps actual fictional certificate9414 and balance1910 stipulated. Own classVminimum branch only, C fullbranch/testvector calculation separately attributed.",
+      "pass": true
+    },
+    {
+      "id": "wrongomittedALV",
+      "actual": "1850",
+      "expected": "1850",
+      "scope": "Separating reference arithmetic; original Guide keeps actual fictional certificate9414 and balance1910 stipulated. Own classVminimum branch only, C fullbranch/testvector calculation separately attributed.",
+      "pass": true
+    },
+    {
+      "id": "referencecombined",
+      "actual": "9406",
+      "expected": "9406",
+      "scope": "Separating reference arithmetic; original Guide keeps actual fictional certificate9414 and balance1910 stipulated. Own classVminimum branch only, C fullbranch/testvector calculation separately attributed.",
+      "pass": true
+    },
+    {
+      "id": "stipulatedcombined",
+      "actual": "9414",
+      "expected": "9414",
+      "scope": "Separating reference arithmetic; original Guide keeps actual fictional certificate9414 and balance1910 stipulated. Own classVminimum branch only, C fullbranch/testvector calculation separately attributed.",
+      "pass": true
+    },
+    {
+      "id": "stipulatedbalance",
+      "actual": "1910",
+      "expected": "1910",
+      "scope": "Separating reference arithmetic; original Guide keeps actual fictional certificate9414 and balance1910 stipulated. Own classVminimum branch only, C fullbranch/testvector calculation separately attributed.",
+      "pass": true
+    },
+    {
+      "id": "referencebalance",
+      "actual": "1918",
+      "expected": "1918",
+      "scope": "Separating reference arithmetic; original Guide keeps actual fictional certificate9414 and balance1910 stipulated. Own classVminimum branch only, C fullbranch/testvector calculation separately attributed.",
+      "pass": true
+    }
+  ],
+  "own_new_selected_ranges": 3,
+  "all_source_quote_and_identity_checks": true,
+  "changed_rows": [
+    "132"
+  ],
+  "ops": 2,
+  "full_inverse": true,
+  "original_oa_exact_and_pass": 2,
+  "all_original_case_numbers_algebra_exact": true,
+  "oldURLs_order_and_protectedmetadata_exact_exceptversion": true,
+  "schema_errors": [],
+  "schema_warnings": [],
+  "diff_returncode": 0,
+  "originalP87members_rehashed_unchanged": true
+}

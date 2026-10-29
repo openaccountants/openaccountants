@@ -1,0 +1,2460 @@
+Stand: 12.11.2025 (endgültig)                                                       Anlage 1
+
+
+                Programmablaufplan für die maschinelle Berechnung
+     der vom Arbeitslohn einzubehaltenden Lohnsteuer, des Solidaritätszuschlags
+              und der Maßstabsteuer für die Kirchenlohnsteuer für 2026
+
+
+Das Programm bietet die Möglichkeit, die Werte von Lohnsteuer, Solidaritätszuschlag und
+Bemessungsgrundlage für die Kirchenlohnsteuer in Euro maschinell zu berechnen. Das
+Programm kann als Unterprogramm in ein Lohnabrechnungsverfahren eingefügt werden,
+wenn die unter 3.1 beschriebenen Eingangsparameter zur Verfügung gestellt werden. Es ist
+auch für den Lohnsteuer-Jahresausgleich durch den Arbeitgeber nach § 42b EStG
+einsetzbar.
+
+
+Inhalt
+
+1.       Gesetzliche Grundlagen/Allgemeines
+2.       Erläuterungen
+         2.1    Allgemeines
+         2.2    Feldlängen
+         2.3    Symbole
+         2.4    Kassenindividueller Zusatzbeitragssatz bei gesetzlich krankenversicherten
+                Arbeitnehmern
+3.       Schnittstellenkonventionen
+         3.1    Eingangsparameter
+         3.2    Ausgangsparameter
+         3.3    Ausgangsparameter DBA
+4.       Interne Felder
+5.       Programmablaufplan 2026
+
+
+1.       Gesetzliche Grundlagen/Allgemeines
+
+Der Programmablaufplan enthält gem. § 39b Absatz 6 EStG:
+
+a)       die Berechnung der vom laufenden Arbeitslohn nach § 39b Absatz 2 EStG
+         einzubehaltenden Lohnsteuer für Lohnzahlungszeiträume, die nach dem
+         31. Dezember 2025, aber vor dem 1. Januar 2027 enden,
+
+b)       die Berechnung der von sonstigen Bezügen nach § 39b Absatz 3 Satz 1 bis 8 EStG
+         einzubehaltenden Lohnsteuer für sonstige Bezüge, die nach dem 31. Dezember
+         2025, aber vor dem 1. Januar 2027 zufließen,
+
+c)       die Berechnung des Solidaritätszuschlags auf laufenden Arbeitslohn, der für einen
+         nach dem 31. Dezember 2025, aber vor dem 1. Januar 2027 endenden
+         Lohnzahlungszeitraum gezahlt wird, und auf sonstige Bezüge, die nach dem
+         31. Dezember 2025, aber vor dem 1. Januar 2027 zufließen,
+
+d)       die Ermittlung der Bemessungsgrundlage für die einzubehaltende Kirchenlohnsteuer
+         (Minderung der ermittelten Lohnsteuer nach § 51a EStG).
+
+Der Programmablaufplan berücksichtigt für 2026 die Änderungen bei der Berechnung der
+Vorsorgepauschale durch das Jahressteuergesetz 2020, das Jahressteuergesetz 2022 und
+das Kreditzweitmarktförderungsgesetz sowie die Anpassungen des Einkommensteuertarifs
+(einschließlich Anhebung des Grundfreibetrags auf 12.348 Euro), der Zahlenwerte in § 39b
+Absatz 2 Satz 7 EStG, des Kinderfreibetrags (Anhebung auf 4 878 Euro bzw. 9.756 Euro)
+
+                                        Seite 1 von 40
+Stand: 12.11.2025 (endgültig)                                                         Anlage 1
+
+
+und der Freigrenze beim Solidaritätszuschlag (Anhebung auf 20.350 Euro) durch das
+Steuerfortentwicklungsgesetz.
+
+Bei der Aufstellung wurde im Übrigen berücksichtigt, dass
+
+-      in der gesetzlichen Krankenversicherung und sozialen Pflegeversicherung die
+       Beitragsbemessungsgrenze 69.750 Euro (2025: 66.150 Euro) beträgt,
+-      in der gesetzlichen Krankenversicherung der ermäßigte Beitragssatz (§ 243 SGB V)
+       weiterhin 14,0 % beträgt,
+-      in der sozialen Pflegeversicherung der bundeseinheitliche Beitragssatz weiterhin
+       3,60 %, der Zuschlag für Kinderlose weiterhin 0,6 % und die Beitragsabschläge für
+       zweite und weitere Kinder bis zum 5. Kind jeweils weiterhin 0,25 % betragen,
+-      in der allgemeinen Rentenversicherung und Arbeitslosenversicherung die allgemeine
+       Beitragsbemessungsgrenze (BBG) 101.400 Euro (2025: 96.600 Euro) beträgt,
+-      in der Arbeitslosenversicherung der Beitragssatz 2,6 % beträgt,
+-      in der allgemeinen Rentenversicherung der Beitragssatz weiterhin 18,6 % beträgt.
+
+
+2.     Erläuterungen
+
+2.1    Allgemeines
+
+Es sind tägliche, wöchentliche, monatliche und jährliche Lohnzahlungszeiträume
+berücksichtigt. Die Aufteilung von Jahresbeträgen auf unterjährige Lohnzahlungszeiträume
+sowie die Hochrechnung von Beträgen für unterjährige Lohnzahlungszeiträume auf
+Jahresbeträge wird entsprechend den in § 39b Absatz 2 Satz 9 EStG angegebenen
+Bruchteilen vorgenommen. Die Berechnung abweichender Lohnzahlungszeiträume - z. B.
+drei Tage - ist nicht möglich. In diesen Fällen ist die Steuer für den nächstkleineren Zeitraum
+zu ermitteln, hier z. B. Berechnung für alle drei Tage einzeln als Tageslohnsteuer. Bruchteile
+eines Cent werden entsprechend den Angaben im Programmablaufplan auf ganze Cent
+aufgerundet bzw. bleiben außer Ansatz.
+
+2.2    Feldlängen
+
+Das Format und die Länge der Parameter und internen Felder sind bei der Programmierung
+(Codierung) zu bestimmen, soweit sie sich nicht unmittelbar aus den Erläuterungen oder
+dem Programmablaufplan ergeben. Feldbeschreibungen ohne Stellenangaben beziehen sich
+auf Ganzzahlen, ansonsten sind die Nachkommastellen angegeben. Bei der
+Steuerberechnung werden Gleitkommafelder verwendet.
+
+2.3    Symbole
+
+Die im Programmablaufplan verwendeten Sinnbilder entsprechen der Zeichenschablone
+nach DIN 66001. Darüber hinaus bedeuten:
+ = Wert nach unten abrunden (z. B. Euro  = auf volle Euro abrunden)
+ = Wert nach oben aufrunden (z. B. Cent  = auf volle Cent aufrunden)
+→ = „übertragen nach“ (Zuweisung)
+
+2.4    Kassenindividueller Zusatzbeitragssatz bei gesetzlich krankenversicherten
+       Arbeitnehmern (ergänzende Erläuterungen zum BMF-Schreiben zur
+       Vorsorgepauschale im Lohnsteuerabzugsverfahren vom 14. August 2025, BStBl I,
+       S. 1628)
+
+Beim Eingangsparameter KVZ ist Folgendes zu beachten:
+
+
+                                        Seite 2 von 40
+Stand: 12.11.2025 (endgültig)                                                          Anlage 1
+
+
+Maßgeblich ist der für den Arbeitnehmer bei der Beitragsberechnung zu berücksichtigende
+kassenindividuelle Zusatzbeitragssatz. Der durchschnittliche Zusatzbeitragssatz ist
+unmaßgeblich. Es ist stets der volle Zusatzbeitragssatz einzutragen. Die Aufteilung in
+Arbeitnehmer- und Arbeitgeberanteil ist im Programmablauf umgesetzt. Bei der Berechnung
+der Lohnsteuer für sonstige Bezüge ist der am Ende des Kalendermonats des Zuflusses
+geltende Zusatzbeitragssatz maßgeblich (R 39b.6 LStR). Bei der Nachforderung von
+Lohnsteuer nach R 41c.3 Absatz 2 LStR oder im Rahmen der Lohnsteuer-Außenprüfung
+nach Ablauf des Kalenderjahres mittels Jahreslohnsteuerberechnung ist der zuletzt im
+jeweiligen Kalenderjahr geltende Zusatzbeitragssatz maßgeblich. Bei Entschädigungen im
+Sinne des § 24 Nummer 1 EStG, die nach § 39b Absatz 2 Satz 5 Nummer 3 Schlusssatz
+Halbsatz 1 EStG bei der Berechnung der Vorsorgepauschale außen vor bleiben, aber im Fall
+der regulären Besteuerung aus Vereinfachungsgründen nach R 39b.6 Absatz 5 Satz 2 LStR
+einbezogen werden können, ist der am Ende des Kalendermonats des Zuflusses geltende
+Zusatzbeitragssatz maßgeblich. Bei der Berechnung des Durchschnittssteuersatzes nach
+§ 40 Absatz 1 EStG i.V.m. R 40.1 LStR kann der Arbeitgeber aus Vereinfachungsgründen
+beim Teilbetrag der Vorsorgepauschale für die gesetzliche Krankenversicherung den
+durchschnittlichen Zusatzbeitragssatz nach § 242a SGB V zugrunde legen. Bei bestimmten
+Personengruppen (vgl. § 242 Absatz 3 SGB V) ist bei der Beitragsberechnung der
+durchschnittliche Zusatzbeitragssatz nach § 242a SGB V maßgeblich; dies gilt für den
+Lohnsteuerabzug entsprechend. Für bestimmte Übergangszeiträume kann es bei dem
+Lohnsteuerabzug unterliegenden Versorgungsbezügen zu Abweichungen zwischen dem von
+der Krankenkasse festgesetzten Zusatzbeitragssatz und dem tatsächlich vom Arbeitgeber
+anzuwendenden Zusatzbeitragssatz kommen (vgl. § 248 SGB V). Hier ist der der
+Beitragsberechnung zugrunde liegende Zusatzbeitragssatz maßgeblich; der von der
+Krankenkasse (aktuell) festgesetzte Zusatzbeitragssatz ist unmaßgeblich. Vor dem
+Hintergrund, dass § 248 SGB V nicht für freiwillig versicherte Selbstzahler gilt, ist bei diesem
+Personenkreis der von der Krankenkasse (aktuell) festgesetzte Zusatzbeitragssatz ohne
+zeitliche Verzögerung zugrunde zu legen.
+
+Auf den Ausschlusstatbestand für den Lohnsteuer-Jahresausgleich nach einer unterjährigen
+Änderung des Zusatzbeitragssatzes wird hingewiesen (vgl. § 42b Absatz 1 Satz 3 Nummer 5
+EStG).
+
+
+3.     Schnittstellenkonventionen
+
+Hat ein Rechenergebnis oder ein zu übertragendes Feld Dezimalstellen, die im
+Empfangsfeld nicht vorgesehen sind, und ist im Programmablaufplan nichts anderes
+angegeben, sind diese überschüssigen Dezimalstellen wegzulassen. Dies gilt jedoch nur für
+die im Programmablaufplan genannten Felder. Zwischenfelder, die durch die
+Programmierung oder die verwendete Programmiersprache notwendig werden, sind nicht zu
+runden.
+
+3.1    Eingangsparameter
+
+Die Plausibilität der Parameter wird im Programm nicht geprüft. Sie müssen daher in
+Vorprogrammen des Arbeitgebers abgesichert werden. Es kommen z. B. in Betracht:
+
+-      Vorzeichenprüfung (z. B. darf der Wert in RE4 nicht negativ sein);
+-      Prüfung auf gültigen Inhalt (z. B. Wert in LZZ nur 1, 2, 3 oder 4, Wert in ALTER1);
+-      Prüfung von Eingangswerten im Verhältnis zu anderen Eingangswerten, z. B.:
+       •      VBEZ darf nicht größer als RE4 sein, da die Versorgungsbezüge im Bruttolohn
+              enthalten sein müssen;
+       •      wenn STKL = 6 ist, darf die Eingabe von JHINZU und LZZHINZU nicht
+              möglich sein;
+       •      das Faktorverfahren kommt nur in der Steuerklasse IV zur Anwendung;
+                                         Seite 3 von 40
+Stand: 12.11.2025 (endgültig)                                                      Anlage 1
+
+
+        •    neben dem Faktor darf kein Freibetrag eingetragen werden.
+
+Es werden folgende Eingangsparameter benötigt:
+
+ Name                Bedeutung
+
+ AF                  1, wenn die Anwendung des Faktorverfahrens gewählt wurde (nur in
+                     Steuerklasse IV)
+
+ AJAHR               Auf die Vollendung des 64. Lebensjahres folgendes Kalenderjahr
+                     (erforderlich, wenn ALTER1=1)
+
+ ALTER1              1, wenn das 64. Lebensjahr vor Beginn des Kalenderjahres vollendet
+                     wurde, in dem der Lohnzahlungszeitraum endet (§ 24a EStG), sonst
+                     =0
+
+ ALV                 Merker für die Vorsorgepauschale
+
+                     0 = der Arbeitnehmer ist in der Arbeitslosenversicherung
+                     pflichtversichert; es gilt die allgemeine Beitragsbemessungsgrenze
+
+                     1 = wenn nicht 0
+
+ F                   eingetragener Faktor mit drei Nachkommastellen
+
+ JFREIB              Jahresfreibetrag für die Ermittlung der Lohnsteuer für die sonstigen
+                     Bezüge sowie für Vermögensbeteiligungen nach § 19a Absatz 1
+                     und 4 EStG nach Maßgabe der elektronischen
+                     Lohnsteuerabzugsmerkmale nach § 39e EStG oder der Eintragung
+                     auf der Bescheinigung für den Lohnsteuerabzug 2026 in Cent
+                     (ggf. 0)
+
+ JHINZU              Jahreshinzurechnungsbetrag für die Ermittlung der Lohnsteuer für
+                     die sonstigen Bezüge sowie für Vermögensbeteiligungen nach § 19a
+                     Absatz 1 und 4 EStG nach Maßgabe der elektronischen
+                     Lohnsteuerabzugsmerkmale nach § 39e EStG oder der Eintragung
+                     auf der Bescheinigung für den Lohnsteuerabzug 2026 in Cent
+                     (ggf. 0)
+
+ JRE4                Voraussichtlicher Jahresarbeitslohn ohne sonstige Bezüge (d.h.
+                     auch ohne die zu besteuernden Vorteile bei
+                     Vermögensbeteiligungen, § 19a Absatz 4 EStG) in Cent.
+                     Anmerkung: Die Eingabe dieses Feldes (ggf. 0) ist erforderlich bei
+                     Eingaben zu sonstigen Bezügen (Feld SONSTB).
+
+                     Sind in einem vorangegangenen Abrechnungszeitraum bereits
+                     sonstige Bezüge gezahlt worden, so sind sie dem voraussichtlichen
+                     Jahresarbeitslohn hinzuzurechnen. Gleiches gilt für zu besteuernde
+                     Vorteile bei Vermögensbeteiligungen (§ 19a Absatz 4 EStG).
+
+ JRE4ENT             In JRE4 enthaltene Entschädigungen nach § 24 Nummer 1 EStG
+                     und zu besteuernde Vorteile bei Vermögensbeteiligungen (§ 19a
+                     Absatz 4 EStG) in Cent
+
+ JVBEZ               In JRE4 enthaltene Versorgungsbezüge in Cent (ggf. 0)
+
+                                        Seite 4 von 40
+Stand: 12.11.2025 (endgültig)                                                      Anlage 1
+
+
+ Name                Bedeutung
+
+ KRV                 Merker für die Vorsorgepauschale
+
+                     0 = der Arbeitnehmer ist in der gesetzlichen Rentenversicherung
+                     oder einer berufsständischen Versorgungseinrichtung
+                     pflichtversichert oder bei Befreiung von der Versicherungspflicht
+                     freiwillig versichert; es gilt die allgemeine
+                     Beitragsbemessungsgrenze
+
+                     1 = wenn nicht 0
+
+ KVZ                 Kassenindividueller Zusatzbeitragssatz bei einem gesetzlich
+                     krankenversicherten Arbeitnehmer in Prozent (bspw. 2,90 für
+                     2,90 %) mit 2 Dezimalstellen. Es ist der volle Zusatzbeitragssatz
+                     anzugeben. Die Aufteilung in Arbeitnehmer- und Arbeitgeberanteil
+                     erfolgt im Programmablauf.
+
+                     Siehe i.Ü. auch Erläuterungen unter Pkt. 2.4.
+
+ LZZ                 Lohnzahlungszeitraum:
+
+                     1 = Jahr
+                     2 = Monat
+                     3 = Woche
+                     4 = Tag
+
+ LZZFREIB            Der als elektronisches Lohnsteuerabzugsmerkmal für den
+                     Arbeitgeber nach § 39e EStG festgestellte oder in der Bescheinigung
+                     für den Lohnsteuerabzug 2026 eingetragene Freibetrag für den
+                     Lohnzahlungszeitraum in Cent
+
+ LZZHINZU            Der als elektronisches Lohnsteuerabzugsmerkmal für den
+                     Arbeitgeber nach § 39e EStG festgestellte oder in der Bescheinigung
+                     für den Lohnsteuerabzug 2026 eingetragene Hinzurechnungsbetrag
+                     für den Lohnzahlungszeitraum in Cent
+
+ MBV                 Nicht zu besteuernde Vorteile bei Vermögensbeteiligungen (§ 19a
+                     Absatz 1 Satz 6 EStG) in Cent
+
+ PKPV                Die als elektronische Lohnsteuerabzugsmerkmale für den
+                     Arbeitgeber nach § 39 Absatz 4 Nummer 4 Buchstabe b EStG
+                     festgestellten oder in der Bescheinigung für den Lohnsteuerabzug
+                     2026 eingetragenen Beiträge zur privaten Basiskranken- und Pflege-
+                     Pflichtversicherung im Sinne des § 10 Absatz 1 Nummer 3 EStG in
+                     Cent; der Wert ist unabhängig vom Lohnzahlungszeitraum immer als
+                     Monatsbetrag anzugeben
+
+ PKPVAGZ             Steuerfreier Arbeitgeberzuschuss für eine private
+                     Krankenversicherung und für eine private Pflege-Pflichtversicherung
+                     in Cent; der Wert ist unabhängig vom Lohnzahlungszeitraum immer
+                     als Monatsbetrag anzugeben
+
+ PKV                 0 = gesetzlich krankenversicherte Arbeitnehmer
+
+                     1 = ausschließlich privat krankenversicherte Arbeitnehmer
+                                      Seite 5 von 40
+Stand: 12.11.2025 (endgültig)                                                    Anlage 1
+
+
+ Name                Bedeutung
+
+
+ PVA                 Zahl der beim Arbeitnehmer zu berücksichtigenden
+                     Beitragsabschläge in der sozialen Pflegeversicherung bei mehr als
+                     einem Kind
+
+                     0 = kein Abschlag
+                     1 = Beitragsabschlag für das 2. Kind
+                     2 = Beitragsabschläge für das 2. und 3. Kind
+                     3 = Beitragsabschläge für 2. bis 4. Kinder
+                     4 = Beitragsabschläge für 2. bis 5. oder mehr Kinder
+
+ PVS                 1, wenn bei der sozialen Pflegeversicherung die Besonderheiten in
+                     Sachsen zu berücksichtigen sind bzw. zu berücksichtigen wären
+
+ PVZ                 1, wenn der Arbeitnehmer den Zuschlag zur sozialen
+                     Pflegeversicherung zu zahlen hat
+
+ R                   Religionsgemeinschaft des Arbeitnehmers lt. elektronischer
+                     Lohnsteuerabzugsmerkmale oder der Bescheinigung für den
+                     Lohnsteuerabzug 2026 (bei keiner Religionszugehörigkeit = 0)
+
+ RE4                 Steuerpflichtiger Arbeitslohn für den Lohnzahlungszeitraum vor
+                     Berücksichtigung des Versorgungsfreibetrags und des Zuschlags
+                     zum Versorgungsfreibetrag, des Altersentlastungsbetrags und des
+                     als elektronisches Lohnsteuerabzugsmerkmal festgestellten oder in
+                     der Bescheinigung für den Lohnsteuerabzug 2026 für den
+                     Lohnzahlungszeitraum eingetragenen Freibetrags bzw.
+                     Hinzurechnungsbetrags in Cent
+
+ SONSTB              Sonstige Bezüge einschließlich zu besteuernde Vorteile bei
+                     Vermögensbeteiligungen und Sterbegeld bei Versorgungsbezügen
+                     sowie Kapitalauszahlungen/Abfindungen, in Cent (ggf. 0)
+
+ SONSTENT            In SONSTB enthaltene Entschädigungen nach § 24 Nummer 1 EStG
+                     sowie zu besteuernde Vorteile bei Vermögensbeteiligungen (§ 19a
+                     Absatz 4 EStG), in Cent
+
+ STERBE              Sterbegeld bei Versorgungsbezügen sowie
+                     Kapitalauszahlungen/Abfindungen (in SONSTB enthalten), in Cent
+
+ STKL                Steuerklasse:
+
+                     1=I
+                     2 = II
+                     3 = III
+                     4 = IV
+                     5=V
+                     6 = VI
+
+ VBEZ                In RE4 enthaltene Versorgungsbezüge in Cent (ggf. 0) ggf. unter
+                     Berücksichtigung einer geänderten Bemessungsgrundlage nach
+                     § 19 Absatz 2 Satz 10 und 11 EStG
+
+
+                                     Seite 6 von 40
+Stand: 12.11.2025 (endgültig)                                                       Anlage 1
+
+
+ Name                Bedeutung
+
+ VBEZM               Versorgungsbezug im Januar 2005 bzw. für den ersten vollen Monat,
+                     wenn der Versorgungsbezug erstmalig nach Januar 2005 gewährt
+                     wurde, in Cent
+
+ VBEZS               Voraussichtliche Sonderzahlungen von Versorgungsbezügen im
+                     Kalenderjahr des Versorgungsbeginns bei Versorgungsempfängern
+                     ohne Sterbegeld, Kapitalauszahlungen/Abfindungen in Cent
+
+ VBS                 In SONSTB enthaltene Versorgungsbezüge einschließlich
+                     Sterbegeld in Cent (ggf. 0)
+
+ VJAHR               Jahr, in dem der Versorgungsbezug erstmalig gewährt wurde;
+                     werden mehrere Versorgungsbezüge gezahlt, wird aus
+                     Vereinfachungsgründen für die Berechnung das Jahr des ältesten
+                     erstmaligen Bezugs herangezogen; auf die Möglichkeit der
+                     getrennten Abrechnung verschiedenartiger Bezüge (§ 39e Absatz 5a
+                     EStG) wird im Übrigen verwiesen
+
+ ZKF                 Zahl der Freibeträge für Kinder (eine Dezimalstelle, nur bei
+                     Steuerklassen I, II, III und IV)
+
+ ZMVB                Zahl der Monate, für die im Kalenderjahr Versorgungsbezüge
+                     gezahlt werden [nur erforderlich bei Jahresberechnung (LZZ = 1)]
+
+3.2    Ausgangsparameter
+
+Als Ergebnis stellt das Programm folgende Ausgangsparameter zur Verfügung:
+
+ Name                Bedeutung
+
+ BK                  Bemessungsgrundlage für die Kirchenlohnsteuer in Cent
+
+ BKS                 Bemessungsgrundlage der sonstigen Bezüge für die
+                     Kirchenlohnsteuer in Cent.
+
+                     Hinweis: Negativbeträge, die aus nicht zu besteuernden Vorteilen bei
+                     Vermögensbeteiligungen (§ 19a Absatz 1 Satz 4 EStG) resultieren,
+                     mindern BK (maximal bis 0). Der Sonderausgabenabzug für
+                     tatsächlich erbrachte Vorsorgeaufwendungen im Rahmen der
+                     Veranlagung zur Einkommensteuer bleibt unberührt.
+
+ LSTLZZ              Für den Lohnzahlungszeitraum einzubehaltende Lohnsteuer in Cent
+
+
+ SOLZLZZ             Für den Lohnzahlungszeitraum einzubehaltender
+                     Solidaritätszuschlag in Cent
+
+ SOLZS               Solidaritätszuschlag für sonstige Bezüge in Cent.
+
+                     Hinweis: Negativbeträge, die aus nicht zu besteuernden Vorteilen bei
+                     Vermögensbeteiligungen (§ 19a Absatz 1 Satz 4 EStG) resultieren,
+                     mindern SOLZLZZ (maximal bis 0). Der Sonderausgabenabzug für
+                     tatsächlich erbrachte Vorsorgeaufwendungen im Rahmen der
+                     Veranlagung zur Einkommensteuer bleibt unberührt.
+                                      Seite 7 von 40
+Stand: 12.11.2025 (endgültig)                                                        Anlage 1
+
+
+ Name                    Bedeutung
+
+
+ STS                     Lohnsteuer für sonstige Bezüge in Cent
+
+                         Hinweis: Negativbeträge, die aus nicht zu besteuernden Vorteilen bei
+                         Vermögensbeteiligungen (§ 19a Absatz 1 Satz 4 EStG) resultieren,
+                         mindern LSTLZZ (maximal bis 0). Der Sonderausgabenabzug für
+                         tatsächlich erbrachte Vorsorgeaufwendungen im Rahmen der
+                         Veranlagung zur Einkommensteuer bleibt unberührt.
+
+
+
+3.3     Ausgangsparameter DBA
+
+Zusätzlich stellt das Programm Ausgangsparameter zur Verfügung, die für die Ermittlung der
+Lohnsteuer unter Berücksichtigung von Doppelbesteuerungsabkommen (DBA) mittels DBA-
+PAP benötigt werden. Soweit eine Kompatibilität des Programms mit der
+Lohnsteuerermittlung nach DBA nicht gegeben sein soll, sind die Parameter zumindest als
+interne Felder zu definieren.
+
+ Name                    Bedeutung
+
+ VFRB                    Verbrauchter Freibetrag bei Berechnung des laufenden Arbeitslohns,
+                         in Cent
+
+ VFRBS1                  Verbrauchter Freibetrag bei Berechnung des voraussichtlichen
+                         Jahresarbeitslohns, in Cent
+
+ VFRBS2                  Verbrauchter Freibetrag bei Berechnung der sonstigen Bezüge, in
+                         Cent
+
+ WVFRB                   Für die weitergehende Berücksichtigung des Steuerfreibetrags nach
+                         dem DBA Türkei verfügbares ZVE über dem Grundfreibetrag bei der
+                         Berechnung des laufenden Arbeitslohns, in Cent
+
+ WVFRBM                  Für die weitergehende Berücksichtigung des Steuerfreibetrags nach
+                         dem DBA Türkei verfügbares ZVE über dem Grundfreibetrag bei der
+                         Berechnung der sonstigen Bezüge, in Cent
+
+ WVFRBO                  Für die weitergehende Berücksichtigung des Steuerfreibetrags nach
+                         dem DBA Türkei verfügbares ZVE über dem Grundfreibetrag bei der
+                         Berechnung des voraussichtlichen Jahresarbeitslohns, in Cent
+
+
+4.      Interne Felder
+
+Das Programm verwendet intern folgende Felder (wenn ggf. solche Felder im Umfeld des
+Programms verwendet werden sollen, können sie als Ausgangsparameter behandelt
+werden, soweit sie nicht während des Programmdurchlaufs noch verändert wurden). Die
+internen Felder müssen vor Aufruf des Programms gelöscht werden:
+
+ Name                    Bedeutung
+
+ ALTE                    Altersentlastungsbetrag in Euro, Cent (2 Dezimalstellen)
+
+                                         Seite 8 von 40
+Stand: 12.11.2025 (endgültig)                                                     Anlage 1
+
+
+ Name                Bedeutung
+
+ ANP                 Arbeitnehmer-Pauschbetrag/Werbungskosten-Pauschbetrag in Euro
+
+ ANTEIL1             Auf den Lohnzahlungszeitraum entfallender Anteil von Jahreswerten
+                     auf ganze Cent abgerundet
+
+ AVSATZAN            Beitragssatz des Arbeitnehmers zur Arbeitslosenversicherung
+                     (4 Dezimalstellen)
+
+ BBGKVPV             Beitragsbemessungsgrenze in der gesetzlichen
+                     Krankenversicherung und der sozialen Pflegeversicherung in Euro
+
+ BBGRVALV            Allgemeine Beitragsbemessungsgrenze in der allgemeinen
+                     Rentenversicherung und Arbeitslosenversicherung in Euro
+
+ BMG                 Bemessungsgrundlage für Altersentlastungsbetrag in Euro, Cent
+                     (2 Dezimalstellen)
+
+ DIFF                Differenz zwischen ST1 und ST2 in Euro
+
+ EFA                 Entlastungsbetrag für Alleinerziehende in Euro
+
+ FVB                 Versorgungsfreibetrag in Euro, Cent (2 Dezimalstellen)
+
+ FVBSO               Versorgungsfreibetrag in Euro, Cent (2 Dezimalstellen) für die
+                     Berechnung der Lohnsteuer für den sonstigen Bezug
+
+ FVBZ                Zuschlag zum Versorgungsfreibetrag in Euro
+
+ FVBZSO              Zuschlag zum Versorgungsfreibetrag in Euro für die Berechnung der
+                     Lohnsteuer beim sonstigen Bezug
+
+ GFB                 Grundfreibetrag in Euro
+
+ HBALTE              Maximaler Altersentlastungsbetrag in Euro
+
+ HFVB                Maßgeblicher maximaler Versorgungsfreibetrag in Euro, Cent
+                     (2 Dezimalstellen)
+
+ HFVBZ               Maßgeblicher maximaler Zuschlag zum Versorgungsfreibetrag in
+                     Euro, Cent (2 Dezimalstellen)
+
+ HFVBZSO             Maßgeblicher maximaler Zuschlag zum Versorgungsfreibetrag in
+                     Euro, Cent (2 Dezimalstellen) für die Berechnung der Lohnsteuer für
+                     den sonstigen Bezug
+
+ HOCH                Zwischenfeld zu X für die Berechnung der Steuer nach § 39b
+                     Absatz 2 Satz 7 EStG in Euro
+
+ J                   Nummer der Tabellenwerte für Versorgungsparameter
+
+ JBMG                Jahressteuer nach § 51a EStG, aus der Solidaritätszuschlag und
+                     Bemessungsgrundlage für die Kirchenlohnsteuer ermittelt werden, in
+                     Euro
+
+                                     Seite 9 von 40
+Stand: 12.11.2025 (endgültig)                                                      Anlage 1
+
+
+ JLFREIB             Auf einen Jahreslohn hochgerechneter LZZFREIB in Euro, Cent
+                     (2 Dezimalstellen)
+
+ JLHINZU             Auf einen Jahreslohn hochgerechneter LZZHINZU in Euro, Cent
+                     (2 Dezimalstellen)
+
+ JW                  Jahreswert, dessen Anteil für einen Lohnzahlungszeitraum in
+                     UPANTEIL errechnet werden soll, in Cent
+
+ K                   Nummer der Tabellenwerte für Parameter bei
+                     Altersentlastungsbetrag
+
+ KFB                 Summe der Freibeträge für Kinder in Euro
+
+
+
+ KVSATZAN            Beitragssatz des Arbeitnehmers zur Krankenversicherung
+                     (5 Dezimalstellen)
+
+ KZTAB               Kennzahl für die Einkommensteuer-Tarifarten:
+
+                     1 = Grundtarif
+                     2 = Splittingverfahren
+
+ LSTJAHR             Jahreslohnsteuer in Euro
+
+ LSTOSO, LSTSO       Zwischenfelder der Jahreslohnsteuer in Cent
+
+ MIST                Mindeststeuer für die Steuerklassen V und VI in Euro
+
+
+
+ PKPVAGZJ            Auf einen Jahreswert hochgerechneter steuerfreier
+                     Arbeitgeberzuschuss für eine private Krankenversicherung und für
+                     eine private Pflegeversicherung in Euro, Cent (2 Dezimalstellen)
+
+ PVSATZAN            Beitragssatz des Arbeitnehmers zur Pflegeversicherung
+                     (6 Dezimalstellen)
+
+ RVSATZAN            Beitragssatz des Arbeitnehmers in der allgemeinen gesetzlichen
+                     Rentenversicherung (4 Dezimalstellen)
+
+ RW                  Rechenwert in Gleitkommadarstellung
+
+ SAP                 Sonderausgaben-Pauschbetrag in Euro
+
+ SOLZFREI            Freigrenze für den Solidaritätszuschlag in Euro
+
+ SOLZJ               Solidaritätszuschlag auf die Jahreslohnsteuer in Euro, Cent
+                     (2 Dezimalstellen)
+
+ SOLZMIN             Zwischenwert für den Solidaritätszuschlag auf die Jahreslohnsteuer
+                     in Euro, Cent (2 Dezimalstellen)
+
+ SOLZSBMG            Bemessungsgrundlage des Solidaritätszuschlags zur Prüfung der
+                     Freigrenze beim Solidaritätszuschlag für sonstige Bezüge in Euro
+                                    Seite 10 von 40
+Stand: 12.11.2025 (endgültig)                                                     Anlage 1
+
+
+
+ SOLZSZVE            Zu versteuerndes Einkommen für die Ermittlung der
+                     Bemessungsgrundlage des Solidaritätszuschlags zur Prüfung der
+                     Freigrenze beim Solidaritätszuschlag für sonstige Bezüge in Euro,
+                     Cent (2 Dezimalstellen)
+
+ ST                  Tarifliche Einkommensteuer in Euro
+
+ ST1                 Tarifliche Einkommensteuer auf das 1,25-fache ZX in Euro
+
+ ST2                 Tarifliche Einkommensteuer auf das 0,75-fache ZX in Euro
+
+ TAB1                Tabelle für die Prozentsätze des Versorgungsfreibetrags
+
+ TAB2                Tabelle für die Höchstbeträge des Versorgungsfreibetrags
+
+ TAB3                Tabelle für die Zuschläge zum Versorgungsfreibetrag
+
+ TAB4                Tabelle für die Prozentsätze des Altersentlastungsbetrags
+
+ TAB5                Tabelle für die Höchstbeträge des Altersentlastungsbetrags
+
+ VBEZB               Bemessungsgrundlage für den Versorgungsfreibetrag in Cent
+
+ VBEZBSO             Bemessungsgrundlage für den Versorgungsfreibetrag in Cent für
+                     den sonstigen Bezug
+
+ VERGL               Zwischenfeld zu X für die Berechnung der Steuer nach § 39b
+                     Absatz 2 Satz 7 EStG in Euro
+
+ VSPHB               Auf den Höchstbetrag begrenzte Beiträge zur
+                     Arbeitslosenversicherung einschließlich Kranken- und
+                     Pflegeversicherung in Euro, Cent (2 Dezimalstellen)
+
+
+
+ VSP                 Vorsorgepauschale mit Teilbeträgen für die Rentenversicherung, die
+                     gesetzliche Kranken- und soziale Pflegeversicherung nach fiktiven
+                     Beträgen oder ggf. für die private Basiskrankenversicherung und
+                     private Pflege-Pflichtversicherung sowie ggf. auf den Höchstbetrag
+                     begrenzten Beiträgen zur Arbeitslosenversicherung in Euro, Cent
+                     (2 Dezimalstellen)
+
+ VSPN                Vorsorgepauschale mit Teilbeträgen für die Rentenversicherung
+                     sowie auf den Höchstbetrag begrenzten Teilbeträgen für die
+                     Arbeitslosenversicherung, die gesetzliche Kranken- und soziale
+                     Pflegeversicherung nach fiktiven Beträgen oder ggf. für die private
+                     Basiskrankenversicherung und private Pflege-Pflichtversicherung in
+                     Euro, Cent (2 Dezimalstellen)
+
+ VSPALV              Teilbetrag für die Arbeitslosenversicherung bei der Berechnung der
+                     Vorsorgepauschale in Euro, Cent (2 Dezimalstellen)
+
+ VSPKVPV             Vorsorgepauschale mit Teilbeträgen für die gesetzliche Kranken-
+                     und soziale Pflegeversicherung nach fiktiven Beträgen oder ggf. für
+
+                                     Seite 11 von 40
+Stand: 12.11.2025 (endgültig)                                                     Anlage 1
+
+
+                     die private Basiskrankenversicherung und private Pflege-
+                     Pflichtversicherung in Euro, Cent (2 Dezimalstellen)
+
+ VSPR                Teilbetrag für die Rentenversicherung bei der Berechnung der
+                     Vorsorgepauschale in Euro, Cent (2 Dezimalstellen)
+
+ W1STKL5             Erster Grenzwert in Steuerklasse V/VI in Euro
+
+ W2STKL5             Zweiter Grenzwert in Steuerklasse V/VI in Euro
+
+ W3STKL5             Dritter Grenzwert in Steuerklasse V/VI in Euro
+
+ X                   Zu versteuerndes Einkommen gem. § 32a Absatz 1 und 5 EStG in
+                     Euro, Cent (2 Dezimalstellen)
+
+ Y                   Gem. § 32a Absatz 1 EStG (6 Dezimalstellen)
+
+ ZRE4                Auf einen Jahreslohn hochgerechnetes RE4 in Euro, Cent
+                     (2 Dezimalstellen) nach Abzug der Freibeträge nach § 39b Absatz 2
+                     Satz 3 und 4 EStG
+
+ ZRE4J               Auf einen Jahreslohn hochgerechnetes RE4 in Euro, Cent
+                     (2 Dezimalstellen)
+
+ ZRE4VP              Auf einen Jahreslohn hochgerechnetes RE4, ggf. nach Abzug der
+                     Entschädigungen i.S.d. § 24 Nummer 1 EStG in Euro, Cent
+                     (2 Dezimalstellen)
+
+ ZRE4VPR             Zwischenfeld zu ZRE4VP für die Begrenzung auf die jeweilige
+                     Beitragsbemessungsgrenze in Euro, Cent (2 Dezimalstellen)
+
+ ZTABFB              Feste Tabellenfreibeträge (ohne Vorsorgepauschale) in Euro, Cent
+                     (2 Dezimalstellen)
+
+ ZVBEZ               Auf einen Jahreslohn hochgerechnetes VBEZ abzüglich FVB in
+                     Euro, Cent (2 Dezimalstellen)
+
+ ZVBEZJ              Auf einen Jahreslohn hochgerechnetes VBEZ in Euro, Cent
+                     (2 Dezimalstellen)
+
+ ZVE                 Zu versteuerndes Einkommen in Euro, Cent (2 Dezimalstellen)
+
+ ZX                  Zwischenfeld zu X für die Berechnung der Steuer nach § 39b
+                     Absatz 2 Satz 7 EStG in Euro
+
+ ZZX                 Zwischenfeld zu X für die Berechnung der Steuer nach § 39b
+                     Absatz 2 Satz 7 EStG in Euro
+
+
+
+
+                                     Seite 12 von 40
+Stand: 12.11.2025 (endgültig)                                                    Anlage 1
+
+
+
+
+              LST2026           5. Programmablaufplan 2026
+                                    Steuerung
+
+                                     Zuweisung von Werten für bestimmte
+               MPARA
+                                     Steuer- und Sozialversicherungsparameter
+
+
+
+                                     Ermittlung des Jahresarbeitslohns nach
+               MRE4JL
+                                     § 39b Absatz 2 Satz 2 EStG
+
+
+
+             VBEZBSO = 0
+
+
+
+                                     Ermittlung der Freibeträge nach § 39b
+                MRE4                 Absatz 2 Satz 3 EStG
+
+
+
+                                     Abzug der Freibeträge nach § 39b Absatz 2
+              MRE4ABZ
+                                     Satz 3 und 4 EStG vom Jahresarbeitslohn
+
+
+                                     Ermittlung der Jahreslohnsteuer auf
+              MBERECH
+                                     laufende Bezüge
+
+
+
+              MSONST                 Berechnung sonstiger Bezüge
+
+
+
+               ENDE
+
+
+
+
+                                   Seite 13 von 40
+Stand: 12.11.2025 (endgültig)                                                                   Anlage 1
+
+
+
+                                                                        Zuweisung von Werten für bestimmte
+                                                         MPARA          Sozialversicherungs- und Steuerparameter
+
+
+                                                    BBGRVALV = 101400
+
+   Parameter
+   Rentenversicherung                               AVSATZAN = 0,0130
+
+
+
+                                                    RVSATZAN = 0,0930
+
+
+
+                                                     BBGKVPV = 69750
+
+
+                                                       KVSATZAN =
+                                                     KVZ/2/100 + 0,07
+  Parameter
+  Krankenversicherung /
+  Pflegeversicherung
+                                          Nein           PVS = 1           Ja
+
+
+                                PVSATZAN = 0,018                        PVSATZAN = 0,023
+
+
+
+
+                                             Nein        PVZ = 1           Ja
+
+
+                               PVSATZAN =                                 PVSATZAN =
+                          PVSATZAN – PVA * 0,0025                       PVSATZAN + 0,006
+
+
+
+
+                                                     W1STKL5 = 14071
+  Grenzwerte für die
+  Steuerklassen V / VI                               W2STKL5 = 34939
+
+
+                                                    W3STKL5 = 222260
+
+
+                                                       GFB = 12348
+  Grundfreibetrag
+
+                                                     SOLZFREI = 20350
+  Freigrenze SolZ
+
+                                                          ENDE
+
+
+
+
+                                         Seite 14 von 40
+Stand: 12.11.2025 (endgültig)                                                                                           Anlage 1
+
+
+                                                                                                Ermittlung des Jahresarbeitslohns
+                                                                            MRE4JL              und der Freibeträge
+                                                                                                § 39b Absatz 2 Satz 2 EStG
+
+
+                                                            Nein             LZZ = 1              Ja
+
+
+                             Nein                 LZZ = 2            Ja
+
+
+          Nein     LZZ = 3            Ja
+
+                                      ZRE4J =
+     ZRE4J =                                                           ZRE4J =                          ZRE4J =
+                                    RE4 * 360 / 7
+  RE4 * 360 /100                                                    RE4 * 12 / 100                     RE4 / 100
+                                       / 100
+
+
+
+
+    ZVBEZJ =                          ZVBEZJ =                           ZVBEZJ =
+                                                                                                     ZVBEZJ =
+     VBEZ *                            VBEZ *                             VBEZ *
+                                                                                                    VBEZ / 100
+    360 / 100                       360 / 7 / 100                        12 / 100
+
+
+
+
+     JLFREIB =                        JLFREIB =                          JLFREIB =
+                                                                                                    JLFREIB =
+    LZZFREIB *                       LZZFREIB *                         LZZFREIB *
+                                                                                                  LZZFREIB / 100
+     360 / 100                      360 / 7 / 100                         12 / 100
+
+
+
+
+    JLHINZU =                         JLHINZU =                          JLHINZU =
+                                                                                                   JLHINZU =
+   LZZHINZU *                        LZZHINZU *                         LZZHINZU *
+                                                                                                 LZZHINZU / 100
+    360 / 100                       360 / 7 / 100                         12 / 100
+
+
+
+
+                                           Nein                AF = 0                Ja
+
+
+
+
+                                                                                          F=1
+
+
+
+
+                                                                   ENDE
+
+
+
+
+                                                     Seite 15 von 40
+Stand: 12.11.2025 (endgültig)                                                                                                 Anlage 1
+
+
+
+
+                                                                                     MRE4              Freibeträge für Versorgungs-
+                                                                                                       bezüge, Altersentlastungsbetrag
+                                                                                                       (§ 39b Absatz 2 Satz 3 EStG)
+                                                                  Nein          ZVBEZJ = 0   Ja
+                                                     VJAHR
+                                     Nein                                Ja
+                                                     < 2006
+                            VJAHR
+            Nein                              Ja
+                            < 2058
+       J = 54                               J = VJAHR - 2004                  J =1
+
+
+               Nein              LZZ = 1             Ja
+          VBEZB =                                      VBEZB =
+         VBEZM * 12                                VBEZM * ZMVB +
+          + VBEZS                                       VBEZS
+                                                       HFVB =
+           HFVB =
+                                                    TAB2(J) / 12 *            Euro
+           TAB2(J)
+                                                        ZMVB
+                                                        FVBZ =
+       FVBZ = TAB3(J)                               TAB3(J) / 12 *            Euro
+                                                        ZMVB
+                                 FVB =
+                          VBEZB * TAB1(J) / 100           Cent
+                                                                                                  FVBZ = 0
+                                 FVB >
+                   Nein                              Ja
+                                 HFVB
+                                                     FVB = HFVB
+
+
+                                  FVB >                                                            FVB = 0
+                   Nein                               Ja
+                                 ZVBEZJ
+                                                     FVB = ZVBEZJ
+
+                                FVBSO =
+                            FVB + VBEZBSO *                Cent                                FVBZSO = 0
+                              TAB1(J) / 100
+
+                                FVBSO >
+                                                     Ja
+                                TAB2(J)
+                                                   FVBSO = TAB2(J)                                FVBSO = 0
+
+                              HFVBZSO =
+                          (VBEZB + VBEZBSO) /
+                              100 - FVBSO
+                              FVBZSO =
+                           FVBZ + VBEZBSO /                Euro
+                                  100
+
+                                FVBZSO >
+                                                     Ja
+                                HFVBZSO
+                                                  FVBZSO = HFVBZSO               Euro
+
+
+                                FVBZSO >
+                                                     Ja
+                                 TAB3(J)
+                                                  FVBZSO = TAB3(J)
+
+
+                               HFVBZ =
+                            VBEZB/100 - FVB
+
+                                 FVBZ >
+                   Nein                              Ja
+                                 HFVBZ
+                                                    FVBZ = HFVBZ                Euro
+
+
+
+                                                                         MRE4ALTE            Ermittlung des Altersentlastungsbetrags
+
+
+                                                                              ENDE
+
+
+
+
+                                                              Seite 16 von 40
+Stand: 12.11.2025 (endgültig)                                                                       Anlage 1
+
+
+
+
+                                                                                         Altersentlastungsbetrag
+                                                                        MRE4ALTE
+                                                                                        (§ 39b Absatz 2 Satz 3 EStG)
+
+
+
+
+                                                          Nein           ALTER1 = 0
+
+
+
+                                                 AJAHR
+                                  Nein                                   Ja
+                                                 < 2006
+
+                         AJAHR
+               Nein                      Ja
+                         < 2058
+                                          K = AJAHR
+          K = 54                                                              K=1
+                                            - 2004
+
+
+
+
+                                            BMG =                                             ALTE = 0
+                                         ZRE4J - ZVBEZJ
+
+
+
+                                          ALTE = BMG             Euro
+                                           * TAB4(K)
+
+
+
+                                           HBALTE =
+                                            TAB5(K)
+
+
+
+
+                                Nein     ALTE > HBALTE                  Ja
+
+
+                                                                        ALTE = HBALTE
+
+
+
+
+                                                                              ENDE
+
+
+
+
+                                         Seite 17 von 40
+Stand: 12.11.2025 (endgültig)                                                                     Anlage 1
+
+
+
+
+        Maßgebender Prozentsatz, Höchstbetrag des Versorgungsfreibetrags und
+            Zuschlag zum Versorgungsfreibetrag gem. § 19 Absatz 2 EStG
+
+
+
+           Jahr des                Höchst-     Zu-     Jahr des                Höchst-    Zu-
+                           Satz                                        Satz
+            Versor-                betrag    schlag     Versor-                betrag    schlag
+                      J                                           J
+            gungs-                                      gungs-
+           beginns         TAB1    TAB2      TAB3      beginns         TAB1    TAB2      TAB3
+           bis 2005   1    0,400   3000       900       2023      19   0,140   1050       315
+            2006      2    0,384   2880       864       2024      20   0,136   1020       306
+            2007      3    0,368   2760       828       2025      21   0,132    990       297
+            2008      4    0,352   2640       792       2026      22   0,128    960       288
+            2009      5    0,336   2520       756       2027      23   0,124    930       279
+            2010      6    0,320   2400       720       2028      24   0,120    900       270
+            2011      7    0,304   2280       684       2029      25   0,116    870       261
+            2012      8    0,288   2160       648       2030      26   0,112    840       252
+            2013      9    0,272   2040       612       2031      27   0,108    810       243
+            2014      10   0,256   1920       576       2032      28   0,104    780       234
+            2015      11   0,240   1800       540       2033      29   0,100    750       225
+            2016      12   0,224   1680       504       2034      30   0,096    720       216
+            2017      13   0,208   1560       468       2035      31   0,092    690       207
+            2018      14   0,192   1440       432       2036      36
+                                                                  32   0,000
+                                                                       0,088    660
+                                                                                 0        198
+                                                                                           0
+            2019      15   0,176   1320       396       2037      33   0,084    630       189
+            2020      16   0,160   1200       360       2035
+                                                        2038      35
+                                                                  34   0,080
+                                                                       0,008    600
+                                                                                 60       180
+                                                                                           18
+            2021      17   0,152   1140       342       2036
+                                                        2039      36
+                                                                  35   0,000
+                                                                       0,076    570
+                                                                                 0        171
+                                                                                           0
+            2022      18   0,144   1080       324       2040      36   0,072    540       162
+                                                        2041      37   0,068    510       153
+                                                        2042      38   0,064    480       144
+                                                        2043      39   0,060    450       135
+                                                        2044      40   0,056    420       126
+                                                        2045      41   0,052    390       117
+                                                        2046      42   0,048    360       108
+                                                        2047      43   0,044    330       99
+                                                        2048      44   0,040    300       90
+                                                        2049      45   0,036    270       81
+                                                        2050      46   0,032    240       72
+                                                        2051      47   0,028    210       63
+                                                        2052      48   0,024    180       54
+                                                        2053      49   0,020    150       45
+                                                        2054      50   0,016    120       36
+                                                        2055      51   0,012     90       27
+                                                        2056      52   0,008     60       18
+                                                        2057      53   0,004     30        9
+                                                        2058      54   0,000     0         0
+
+
+
+
+                                             Seite 18 von 40
+Stand: 12.11.2025 (endgültig)                                                                     Anlage 1
+
+
+
+
+                         Maßgebender Prozentsatz und Höchstbetrag des
+                           Altersentlastungsbetrags gem. § 24a EStG
+
+
+            Auf die Voll-                                 Auf die Voll-
+                                            Höchst-                                     Höchst-
+            endung des              Satz    betrag        endung des            Satz    betrag
+          64. Lebensjahres     K                        64. Lebensjahres   K
+              folgendes                                     folgendes
+            Kalenderjahr            TAB4    TAB5          Kalenderjahr          TAB4    TAB5
+
+              bis 2005         1    0,400   1900              2023         19   0,140    665
+               2006            2    0,384   1824              2024         20   0,136    646
+               2007            3    0,368   1748              2025         21   0,132    627
+               2008            4    0,352   1672              2026         22   0,128    608
+               2009            5    0,336   1596              2027         23   0,124    589
+               2010            6    0,320   1520              2028         24   0,120    570
+               2011            7    0,304   1444              2029         25   0,116    551
+               2012            8    0,288   1368              2030         26   0,112    532
+               2013            9    0,272   1292              2031         27   0,108    513
+               2014            10   0,256   1216              2032         28   0,104    494
+                2015           11   0,240   1140              2033         29   0,100    475
+               2016            12   0,224   1064              2034         30   0,096    456
+               2017            13   0,208    988              2035         31   0,092    437
+               2012
+               2018            36
+                               14   0,000
+                                    0,192    912
+                                              0               2012
+                                                              2036         36
+                                                                           32   0,000
+                                                                                0,088    418
+                                                                                          0
+               2019            15   0,176    836              2037         33   0,084    399
+               2020            16   0,160    760              2038         34   0,080    380
+               2021            17   0,152    722              2039         35   0,076    361
+               2022            18   0,144    684              2040         36   0,072    342
+                                                              2012
+                                                              2041         37
+                                                                           36   0,068
+                                                                                0,000    323
+                                                                                          0
+                                                              2042         38   0,064    304
+                                                              2043         39   0,060    285
+                                                              2044         40   0,056    266
+                                                              2045         41   0,052    247
+                                                              2028
+                                                              2046         36
+                                                                           42   0,000
+                                                                                0,048    228
+                                                                                          0
+                                                              2047         43   0,044    209
+                                                              2048         44   0,040    190
+                                                              2049         45   0,036    171
+                                                              2050         46   0,032    152
+                                                              2012
+                                                              2051         47
+                                                                           36   0,028
+                                                                                0,000    133
+                                                                                          0
+                                                              2052         48   0,024    114
+                                                              2053         49   0,020    95
+                                                              2054         50   0,016    76
+                                                              2055         51   0,012    57
+                                                              2056         52   0,008    38
+                                                              2057         53   0,004    19
+                                                              2058         54   0,000     0
+
+
+
+
+                                            Seite 19 von 40
+Stand: 12.11.2025 (endgültig)                                                                 Anlage 1
+
+
+
+
+                                                   Ermittlung des Jahresarbeitslohns nach Abzug der
+                          MRE4ABZ                  Freibeträge nach
+                                                   § 39b Absatz 2 Satz 3 und 4 EStG
+
+                      ZRE4 = ZRE4J - FVB -
+                        ALTE - JLFREIB +
+                           JLHINZU
+
+
+
+
+           Nein            ZRE4 < 0                    Ja
+
+
+                                                               ZRE4 = 0
+
+
+
+
+                        ZRE4VP = ZRE4J
+
+
+
+
+                       ZVBEZ = ZVBEZJ -
+                            FVB
+
+
+
+
+            Nein           ZVBEZ < 0                     Ja
+
+
+
+                                                              ZVBEZ = 0
+
+
+
+
+                            ENDE
+
+
+
+
+                                          Seite 20 von 40
+Stand: 12.11.2025 (endgültig)                                                                        Anlage 1
+
+
+
+
+                      MBERECH         Berechnung für laufende Lohnzahlungszeiträume
+
+
+                       MZTABFB
+                                                Ermittlung der festen Tabellenfreibeträge
+                                                (ohne Vorsorgepauschale)
+
+                     VFRB = (ANP +
+                     FVB + FVBZ) *
+                         100
+
+                                                Ermittlung der Jahreslohnsteuer für
+                       MLSTJAHR
+                                                die Lohnsteuerberechnung
+
+
+                     WVFRB = (ZVE –
+                      GFB) * 100
+
+
+
+              Nein     WVFRB < 0      Ja
+
+                                           WVFRB = 0
+
+
+
+
+                       LSTJAHR =
+                         ST * F
+
+
+
+                                                Ermittlung des Anteils der
+                       UPLSTLZZ
+                                                Jahreslohnsteuer für den Lohnzahlungszeitraum
+
+
+
+
+              Nein      ZKF > 0       Ja                         Berechnung der
+                                                                 Tabellenfreibeträge mit
+                                            ZTABFB =             Freibeträgen für Kinder
+                                             ZTABFB              für die
+                                              + KFB              Bemessungsgrundlage
+                                                                 KiSt und SOLZ
+
+                                            MRE4ABZ
+
+
+                                                                 Ermittlung der Jahreslohnsteuer mit
+                                           MLSTJAHR              Freibeträgen für Kinder als
+                                                                 Jahresbemessungsgrundlage KiSt und SOLZ
+
+          JBMG =                            JBMG =
+          LSTJAHR                            ST * F
+
+
+
+                                                       Ermittlung des Solidaritätszuschlags mit Aufteilung von
+                        MSOLZ                          SOLZJ und JBMG auf den Lohnzahlungszeitraum
+
+
+                         ENDE
+
+
+
+
+                                           Seite 21 von 40
+Stand: 12.11.2025 (endgültig)                                                                                              Anlage 1
+
+
+
+                                                               MZTABFB            Ermittlung der festen Tabellenfreibeträge
+                                                                                          (ohne Vorsorgepauschale)
+
+                                                                ANP = 0
+
+
+                                                                ZVBEZ
+                                                   Nein                       Ja
+                                                                 >= 0
+                                                                                   ZVBEZ
+                                                                      Nein                      Ja
+                                                                                   < FVBZ
+
+ Mögliche Begrenzung des Zuschlags                                                             FVBZ = ZVBEZ
+  zum Versorgungsfreibetrag, und
+    Festlegung und Begrenzung
+ Werbungskosten-Pauschbetrag für
+                                                                 STKL
+        Versorgungsbezüge                          Nein                       Ja
+                                                                  <6
+                                                                                   ZVBEZ
+                                            FVBZ = 0                  Nein                       Ja
+                                                                                    >0
+
+                                                                                       Nein   ZVBEZ - FVBZ <         Ja
+                                                                                                  102
+                                           FVBZSO = 0                                                                ANP =
+                                                                              ANP = 102                                          Euro
+                                                                                                                  ZVBEZ - FVBZ
+
+
+
+
+                                                                 STKL
+                                                   Nein                       Ja
+                                                                  <6
+                                                                                    ZRE4
+                                                                                                 Ja
+                                                                                  > ZVBEZ
+
+   Festlegung Arbeitnehmer-                                                            Nein    ZRE4 - ZVBEZ          Ja
+        Pauschbetrag für                                                                          < 1230           ANP = ANP
+          aktiven Lohn                                                         ANP =
+                                                                                                                     + ZRE4      Euro
+   mit möglicher Begrenzung                                                  ANP + 1230
+                                                                                                                    - ZVBEZ
+
+
+
+
+                                                                                                KZTAB = 1
+
+
+
+                                                                                       Nein      STKL = 1
+
+                                                                   Nein      STKL = 2            Ja
+
+                                                Nein       STKL = 3          Ja
+
+                              Nein    STKL = 4            Ja
+                                                                              KZTAB = 2              EFA = 4260
+            Nein      STKL = 5       Ja
+
+
+                                     SAP = 36              SAP = 36               SAP = 36            SAP = 36             SAP = 36
+
+
+
+                                                            KFB =              KFB =                   KFB =                KFB =
+        KFB = 0                      KFB = 0
+                                                          ZKF * 4878         ZKF * 9756              ZKF * 9756           ZKF * 9756
+
+
+
+                                                                                                   ZTABFB =
+                    Berechnung der Tabellenfreibeträge ohne Freibeträge
+                                                                                                   EFA + ANP
+                               für Kinder für die Lohnsteuerberechnung                            + SAP + FVBZ
+
+                                                                                                      ENDE
+
+
+
+
+                                                       Seite 22 von 40
+Stand: 12.11.2025 (endgültig)                                                   Anlage 1
+
+
+
+
+                                 MLSTJAHR         Ermittlung Jahreslohnsteuer
+
+
+
+
+                                                           Ermittlung der
+                                  UPEVP
+                                                           Vorsorgepauschale
+
+
+
+
+                                 ZVE = ZRE4
+                                  -ZTABFB
+                                    -VSP
+
+
+
+
+                                  UPMLST
+
+
+
+
+                                   ENDE
+
+
+
+
+                                Seite 23 von 40
+Stand: 12.11.2025 (endgültig)                                                         Anlage 1
+
+
+
+                        UPLSTLZZ
+
+
+
+
+                       JW = LSTJAHR
+                          * 100
+
+
+
+
+                                                    Ermittlung des Anteils der Jahreslohnsteuer
+                        UPANTEIL
+                                                    für den Lohnzahlungszeitraum
+
+
+
+                     LSTLZZ = ANTEIL1
+
+
+
+
+                          ENDE
+
+
+
+
+                                        Seite 24 von 40
+Stand: 12.11.2025 (endgültig)                                         Anlage 1
+
+
+
+
+                                        UPMLST
+
+
+
+
+                          Nein          ZVE < 1       Ja
+
+
+                   X=                                       ZVE = 0
+               ZVE / KZTAB       Euro
+
+
+
+
+                                                             X=0
+
+
+
+
+                       Nein             STKL < 5      Ja
+
+
+
+
+                 MST5-6                                    UPTAB26
+
+
+
+
+                                         ENDE
+
+
+
+
+                                    Seite 25 von 40
+Stand: 12.11.2025 (endgültig)                                                             Anlage 1
+
+
+
+
+                                                         UPEVP     Vorsorgepauschale
+                                                                   (§ 39b Absatz 2 Satz 5 Nummer 3 EStG)
+
+
+
+
+                                  Nein                   KRV = 1
+
+
+
+
+                           ZRE4VP              Ja
+             Nein
+                        > BBGRVALV
+
+         ZRE4VPR =                                   ZRE4VPR =
+          ZRE4VP                                     BBGRVALV
+
+
+
+
+                            VSPR =
+                      ZRE4VPR * RVSATZAN                                  VSPR = 0
+
+
+
+
+                                                     MVSPKVPV
+
+
+
+
+                                     Nein                ALV = 1     Ja
+
+
+
+                     Nein       STKL = 6            Ja
+
+
+
+
+               MVSPHB
+
+
+
+
+                                                         ENDE
+
+
+
+
+                                           Seite 26 von 40
+Stand: 12.11.2025 (endgültig)                                                                         Anlage 1
+
+
+
+
+                                 MVSPKVPV                              Vorsorgepauschale
+                                                                       (§ 39b Absatz 2 Satz 5 Nummer 3
+                                                                       Buchstaben b bis d EStG)
+
+                                 ZRE4VP >
+                   Nein                                  Ja
+                                 BBGKVPV
+
+                                                     ZRE4VPR = BBGKVPV
+           ZRE4VPR = ZRE4VP
+
+
+
+
+                     Nein         PKV > 0                Ja
+
+
+
+                                                                Nein               STKL = 6
+
+
+
+                                                      PKPVAGZJ =
+                                                   PKPVAGZ * 12 / 100
+
+
+
+                                                       VSPKVPV =
+                                                     PKPV * 12 / 100
+
+
+                                                                                              VSPKVPV = 0
+                                                       VSPKVPV =
+                                                   VSPKVPV – PKPVAGZJ
+
+
+
+           VSPKVPV = ZRE4VPR *
+         (KVSATZAN + PVSATZAN)
+                                        Nein          VSPKVPV < 0             Ja
+
+
+
+                                                                           VSPKVPV = 0
+
+
+
+
+                                       VSP =                  Euro
+                                   VSPKVPV + VSPR
+
+
+
+                                            ENDE
+
+
+
+
+                                        Seite 27 von 40
+Stand: 12.11.2025 (endgültig)                                                             Anlage 1
+
+
+
+
+                                                         Höchstbetragsberechnung zur
+                                      MVSPHB             Arbeitslosenversicherung
+                                                         (§ 39b Absatz 2 Satz 5 Nummer 3 Buchstabe e EStG)
+
+
+
+
+                       Nein           ZRE4VP              Ja
+                                    > BBGRVALV
+
+
+              ZRE4VPR = ZRE4VP                            ZRE4VPR = BBGRVALV
+
+
+
+
+                                      VSPALV =
+                                 AVSATZAN * ZRE4VPR
+
+
+
+
+                                      VSPHB =
+                                  VSPALV + VSPKVPV
+
+
+
+
+                                      VSPHB >
+                         Nein                              Ja
+                                       1900
+
+                                                           VSPHB = 1900
+
+
+
+
+                                       VSPN =         Euro
+                                    VSPR + VSPHB
+
+
+
+
+                                     VSPN > VSP                Ja
+
+
+
+                                                               VSP = VSPN
+
+
+
+
+                                       ENDE
+
+
+
+                                       Seite 28 von 40
+Stand: 12.11.2025 (endgültig)                                                                                          Anlage 1
+
+
+
+
+                                              MST5-6                    Lohnsteuer für die Steuerklassen V und VI
+                                                                        (§ 39b Absatz 2 Satz 7 EStG)
+
+
+                                                ZZX = X
+
+
+
+
+                            Nein            ZZX > W2STKL5               Ja
+
+
+                ZX = ZZX                                                      ZX = W2STKL5
+
+
+
+                 UP5-6                                                              UP5-6
+
+
+
+
+       Nein   ZZX > W1STKL5        Ja                                Nein     ZZX > W3STKL5      Ja
+
+
+
+                                                             ST = ST +                         ST = ST +
+                                VERGL = ST                (ZZX - W2STKL5)                     (W3STKL5 -        Euro
+                                                                             Euro
+                                                               * 0,42                        W2STKL5) * 0,42
+
+                                                                                                  ST = ST +
+                               ZX = W1STKL5                                                   (ZZX – W3STKL5)   Euro
+                                                                                                   * 0,45
+
+
+                                    UP5-6
+
+
+                                HOCH = ST +
+                              (ZZX - W1STKL5)           Euro
+                                   * 0,42
+
+
+
+                     Nein     HOCH < VERGL         Ja
+
+
+               ST = VERGL                         ST = HOCH
+
+
+
+
+                                                 ENDE
+
+
+
+
+                                                  Seite 29 von 40
+Stand: 12.11.2025 (endgültig)                                     Anlage 1
+
+
+
+
+                                  UP5-6
+
+
+
+                                    X=
+                                 ZX * 1,25       Euro
+
+
+
+
+                                 UPTAB26
+
+
+
+
+                                 ST1 = ST
+
+
+
+                                    X=           Euro
+                                 ZX * 0,75
+
+
+
+                                 UPTAB26
+
+
+
+
+                                 ST2 = ST
+
+
+                                  DIFF =
+                                (ST1 - ST2)
+                                    *2
+
+
+                                  MIST =       Euro
+                                 ZX * 0,14
+
+
+
+                 Nein           MIST > DIFF             Ja
+
+
+
+            ST = DIFF                                 ST = MIST
+
+
+
+
+                                  ENDE
+
+
+
+
+                                          Seite 30 von 40
+Stand: 12.11.2025 (endgültig)                                                                             Anlage 1
+
+
+
+                               MSOLZ
+                                                                       Solidaritätszuschlag
+
+
+                              SOLZFREI =
+                           SOLZFREI * KZTAB
+
+
+
+                               JBMG >
+                    Nein                        Ja
+                              SOLZFREI
+                                                      SOLZJ =
+           SOLZLZZ = 0                                JBMG *       Cent
+                                                     5,5 / 100
+
+                                                 SOLZMIN =
+                                              (JBMG - SOLZFREI)
+                                                 * 11,9 / 100
+
+
+                                                  SOLZMIN
+                                      Nein                        Ja
+                                                   < SOLZJ
+
+                                                                  SOLZJ = SOLZMIN
+
+
+
+
+                                                    JW =
+                                                 SOLZJ * 100
+
+
+
+
+                                                 UPANTEIL
+
+
+
+
+                                                 SOLZLZZ =
+                                                  ANTEIL1
+
+
+
+
+                    Nein        R>0             Ja                             Aufteilung des Betrages nach § 51a EStG
+                                                                               auf den LZZ für die Kirchensteuer
+
+                                                    JW =
+           BK = 0
+                                                 JBMG * 100
+
+
+
+
+                                                 UPANTEIL
+
+
+
+
+                                                BK = ANTEIL1
+
+
+
+
+                                 ENDE
+
+
+
+                                              Seite 31 von 40
+Stand: 12.11.2025 (endgültig)                                                                    Anlage 1
+
+
+                                                                      Anteil von Jahresbeträgen für einen
+                                                       UPANTEIL       LZZ (§ 39b Absatz 2 Satz 9 EStG)
+
+
+
+                                            Nein        LZZ = 1     Ja
+
+
+
+
+                          Nein          LZZ = 2        Ja
+
+
+
+
+         Nein       LZZ = 3        Ja
+
+
+
+   ANTEIL1 =                      ANTEIL1 =            ANTEIL1 =
+   JW / 360                      JW * 7 / 360           JW / 12     ANTEIL1 = JW
+      *)                              *)                  *)
+
+
+
+
+                                                        ENDE
+   *) Ergebnis abrunden
+
+
+
+
+                                                  Seite 32 von 40
+Stand: 12.11.2025 (endgültig)                                                                              Anlage 1
+
+
+
+
+                                                                             Berechnung sonstiger
+                                                    MSONST                   Bezüge nach
+                                                                             § 39b Absatz 3 Satz 1 bis 8
+                                                      LZZ = 1                EStG
+
+                                     Nein           ZMVB = 0                Ja
+
+                                                                            ZMVB = 12
+
+
+
+                                                   SONSTB = 0                    Ja
+                               Nein
+                                                   und MBV = 0
+                     MOSONST
+
+
+
+                   ZRE4J = (JRE4 +
+                   SONSTB) / 100
+
+
+                  ZVBEZJ = (JVBEZ +
+                     VBS) / 100
+                                                                                         LSTSO = 0
+                     VBEZBSO =
+                      STERBE
+
+
+                    MRE4SONST                                                             STS = 0
+
+
+                     MLSTJAHR
+
+                  WVFRBM = (ZVE –                                                        SOLZS = 0
+                    GFB) * 100
+
+
+           Nein     WVFRBM < 0              Ja
+                                                                                          BKS = 0
+                                        WVFRBM = 0
+
+
+
+
+                  LSTSO = ST * 100
+
+
+                                                 Hinweis: negative Zahlen
+                   STS = (LSTSO -
+                                       Euro      werden nach ihrem Betrag
+                    LSTOSO) * F                  gerundet!
+
+
+                      STSMIN
+
+
+
+
+                                                     ENDE
+
+
+
+
+                                                     Seite 33 von 40
+Stand: 12.11.2025 (endgültig)                                                                                 Anlage 1
+
+
+
+
+                                   STSMIN
+
+
+                     Nein          STS < 0                          Ja
+
+
+                                                            Nein                 MBV = 0         Ja
+                                               LSTLZZ =
+                                             LSTLZZ + STS
+
+
+                                   Nein       LSTLZZ < 0           Ja
+
+
+                                                               LSTLZZ = 0
+
+
+
+
+                                            SOLZLZZ =
+                                                                             CENT
+                                      SOLZLZZ + STS * 5.5 / 100
+
+
+                                    Nein     SOLZLZZ < 0           Ja
+
+
+                                                              SOLZLZZ = 0
+
+
+
+
+                                             BK = BK + STS
+
+
+
+                                   Nein           BK < 0            Ja
+
+
+                                                                        BK = 0
+
+
+
+
+          MSOLZSTS                                                                              Anmerkung:
+                                                                                     STS = 0    Negative Lohnsteuer auf
+                                                                                                sonstigen Bezug wird
+                                                                                                nicht zugelassen.
+                                                                                    SOLZS = 0
+
+
+
+
+                            Nein           R>0                Ja
+
+
+                      BKS = 0                                BKS = STS
+
+
+
+
+                                           ENDE
+
+
+
+
+                                                 Seite 34 von 40
+Stand: 12.11.2025 (endgültig)                                                               Anlage 1
+
+
+
+
+                                     MSOLZSTS            Berechnung des SolZ auf sonstige
+                                                         Bezüge
+
+
+                          Nein         ZKF > 0                 Ja
+
+                 SOLZSZVE = ZVE                            SOLZSZVE = ZVE – KFB
+
+
+
+
+                       Nein          SOLZSZVE < 1                   Ja
+
+
+
+    Euro    X = SOLZSZVE / KZTAB                                    SOLZSZVE = 0
+
+
+
+                                                                         X=0
+
+
+
+
+                         Nein             STKL < 5                       Ja
+
+
+
+                    MST5_6                                                 UPTAB26
+
+
+
+
+                                     SOLZSBMG = ST * F              Euro
+
+
+
+
+                                        SOLZSBMG >
+                              Nein                            Ja
+                                         SOLZFREI
+
+
+
+
+                     SOLZS = 0                           SOLZS = STS * 5.5 / 100     CENT
+
+
+
+
+                                           ENDE
+
+
+
+
+                                         Seite 35 von 40
+Stand: 12.11.2025 (endgültig)                                                            Anlage 1
+
+
+
+
+                            MOSONST              Sonderberechnung ohne sonstige Bezüge
+                                                 für Berechnung bei sonstigen Bezügen
+
+                              ZRE4J =
+                            JRE4 / 100
+
+
+                             ZVBEZJ =
+                            JVBEZ / 100
+
+
+                              JLFREIB =
+                            JFREIB / 100
+
+
+                         JLHINZU = JHINZU /
+                                100
+
+
+
+                                MRE4
+
+
+
+                             MRE4ABZ
+
+
+
+                         ZRE4VP = ZRE4VP -
+                           JRE4ENT / 100
+
+
+
+                             MZTABFB
+
+
+
+                          VFRBS1 = (ANP +
+                         FVB + FVBZ) * 100
+
+
+
+                             MLSTJAHR
+
+
+
+                          WVFRBO = (ZVE
+                           – GFB) * 100
+
+
+
+
+                 Nein       WVFRBO < 0           Ja
+
+
+                                                      WVFRBO = 0
+
+
+
+
+                         LSTOSO = ST * 100
+
+
+
+
+                                ENDE
+
+
+
+                                           Seite 36 von 40
+Stand: 12.11.2025 (endgültig)                                                       Anlage 1
+
+
+
+
+                                MRE4SONST            Sonderberechnung mit sonstigen Bezügen
+                                                     für Berechnung bei sonstigen Bezügen
+
+
+                                   MRE4
+
+
+
+                                FVB = FVBSO
+
+
+
+                                  MRE4ABZ
+
+
+
+                            ZRE4VP = ZRE4VP +
+                           MBV / 100 - JRE4ENT /
+                           100 - SONSTENT / 100
+
+
+
+                                FVBZ = FVBZSO
+
+
+
+                                  MZTABFB
+
+
+
+                             VFRBS2 = (ANP +
+                            FVB + FVBZ) * 100 –
+                                  VFRBS1
+
+
+
+
+                                   ENDE
+
+
+
+
+                                       Seite 37 von 40
+Stand: 12.11.2025 (endgültig)                                                                            Anlage 1
+
+
+
+
+              Tarifliche Einkommensteuer
+                                                                                      UPTAB26
+                      (§ 32a EStG)
+
+
+                                                                          Nein        X < GFB + 1
+
+
+
+
+                                                    Nein          X < 17800      Ja
+
+
+
+
+                               Nein          X < 69879       Ja
+
+
+
+                                                                 Y=
+               Nein     X < 277826      Ja                  (X –
+                                                              / 10000
+
+
+                                                                                      Y=
+                                                               RW =
+                                                                                  (X - GFB)
+                                                             Y * 173,1
+                                                                                   / 10000
+
+
+
+                                                              RW =                  RW =
+                                                            RW + 2397            Y * 914,51
+
+
+
+                                                               RW =                RW =
+                                                              RW * Y             RW + 1400
+
+
+
+             ST =                         ST =                                                      *)
+                        *)                         *)          ST =        *)      ST =
+           X * 0,45                     X * 0,42                                                             ST = 0
+                                                           RW + 1034,87           RW * Y
+         - 19470,38                   - 11135,63
+
+
+
+
+                                                                                    ST =
+                                                                                 ST * KZTAB
+
+
+
+                                                                                      ENDE
+
+
+
+
+        *) auf volle Euro
+           abrunden
+
+
+
+
+                                             Seite 38 von 40
+Stand: 12.11.2025 (endgültig)                                                                Anlage 1
+
+
+                 Allgemeine maschinelle Jahreslohnsteuer 2026 (Prüftabelle)1
+      Jahres-                     Jahreslohnsteuer 2026 (in Euro) in Steuerklasse2
+    bruttolohn
+     (in Euro)            I             II            III          IV               V        VI
+      5.000                   0              0            0            0               372       558
+      7.500                   0              0            0            0               647       838
+     10.000                   0              0            0            0               922     1.117
+     12.500                   0              0            0            0             1.197     1.397
+     15.000                   0              0            0            0             1.472     1.676
+     17.500                  51              0            0           51             1.778     1.956
+     20.000                 380              0            0          380             2.234     2.766
+     22.500                 782             32            0          782             3.073     3.604
+     25.000               1.251            359            0        1.251             3.911     4.443
+     27.500               1.742            759            0        1.742             4.749     5.281
+     30.000               2.248          1.230            0        2.248             5.588     6.120
+     32.500               2.767          1.724            0        2.767             6.426     6.952
+     35.000               3.300          2.233          294        3.300             7.216     7.682
+     37.500               3.847          2.756          628        3.847             7.954     8.436
+     40.000               4.407          3.293        1.000        4.407             8.720     9.218
+     42.500               4.982          3.843        1.406        4.982             9.512    10.030
+     45.000               5.570          4.408        1.850        5.570            10.334    10.865
+     47.500               6.172          4.987        2.324        6.172            11.171    11.703
+     50.000               6.788          5.580        2.810        6.788            12.010    12.542
+     52.500               7.417          6.186        3.302        7.417            12.848    13.380
+     55.000               8.060          6.807        3.802        8.060            13.687    14.218
+     57.500               8.718          7.442        4.308        8.718            14.525    15.057
+     60.000               9.389          8.091        4.822        9.389            15.364    15.895
+     62.500              10.073          8.754        5.342       10.073            16.202    16.734
+     65.000              10.772          9.430        5.870       10.772            17.040    17.572
+     67.500              11.484         10.121        6.402       11.484            17.879    18.410
+     70.000              12.220         10.835        6.952       12.220            18.729    19.260
+     72.500              13.062         11.647        7.574       13.062            19.681    20.213
+     75.000              13.922         12.476        8.206       13.922            20.633    21.165
+     77.500              14.799         13.323        8.846       14.799            21.585    22.117
+     80.000              15.694         14.188        9.496       15.694            22.538    23.070
+     82.500              16.607         15.071       10.154       16.607            23.490    24.022
+     85.000              17.538         15.971       10.822       17.538            24.443    24.974
+     87.500              18.486         16.890       11.498       18.486            25.395    25.927
+     90.000              19.438         17.826       12.182       19.438            26.347    26.879
+     92.500              20.390         18.777       12.876       20.390            27.300    27.831
+     95.000              21.343         19.729       13.580       21.343            28.252    28.784
+     97.500              22.295         20.682       14.292       22.295            29.204    29.736
+     100.000             23.248         21.634       15.012       23.248            30.157    30.689
+     102.500             24.243         22.629       15.774       24.243            31.152    31.684
+     105.000             25.293         23.679       16.590       25.293            32.202    32.734
+     107.500             26.343         24.729       17.416       26.343            33.252    33.784
+     110.000             27.393         25.779       18.252       27.393            34.302    34.834
+
+Allgemeine Lohnsteuer ist die Lohnsteuer, die für einen Arbeitnehmer zu erheben ist, der in
+allen Sozialversicherungszweigen versichert ist.
+
+
+
+1 Berechnet mit den Merkern ALV, KRV und PKV = 0 sowie KVZ = 2,90.
+2 In der Steuerklasse II gilt PVZ = 0, in den anderen Steuerklassen gilt PVZ = 1.
+
+
+
+                                             Seite 39 von 40
+Stand: 12.11.2025 (endgültig)                                                                Anlage 1
+
+
+                 Besondere maschinelle Jahreslohnsteuer 2026 (Prüftabelle)3
+      Jahres-                     Jahreslohnsteuer 2026 (in Euro) in Steuerklasse4
+    bruttolohn
+     (in Euro)            I             II            III         IV            V              VI
+      5.000                   0              0            0            0            18            700
+      7.500                   0              0            0            0           368          1.050
+     10.000                   0              0            0            0           718          1.400
+     12.500                   0              0            0            0         1.068          1.750
+     15.000                   0              0            0            0         1.418          2.359
+     17.500                  40              0            0           40         1.768          3.409
+     20.000                 461              0            0          461         2.415          4.459
+     22.500                 995            153            0          995         3.465          5.509
+     25.000               1.604            607            0        1.604         4.515          6.559
+     27.500               2.234          1.173            0        2.234         5.565          7.514
+     30.000               2.886          1.788            0        2.886         6.615          8.460
+     32.500               3.559          2.424           76        3.559         7.564          9.446
+     35.000               4.254          3.083          466        4.254         8.510         10.473
+     37.500               4.971          3.763          914        4.971         9.498         11.523
+     40.000               5.710          4.464        1.420        5.710        10.529         12.573
+     42.500               6.470          5.188        1.982        6.470        11.579         13.623
+     45.000               7.252          5.932        2.584        7.252        12.629         14.673
+     47.500               8.055          6.699        3.198        8.055        13.679         15.723
+     50.000               8.880          7.487        3.824        8.880        14.729         16.773
+     52.500               9.727          8.297        4.458        9.727        15.779         17.823
+     55.000              10.595          9.128        5.106       10.595        16.829         18.873
+     57.500              11.485          9.981        5.762       11.485        17.879         19.923
+     60.000              12.396         10.856        6.430       12.396        18.929         20.973
+     62.500              13.330         11.752        7.110       13.330        19.979         22.023
+     65.000              14.284         12.670        7.798       14.284        21.029         23.073
+     67.500              15.261         13.610        8.500       15.261        22.079         24.123
+     70.000              16.259         14.571        9.210       16.259        23.129         25.173
+     72.500              17.279         15.554        9.932       17.279        24.179         26.223
+     75.000              18.320         16.559       10.666       18.320        25.229         27.273
+     77.500              19.370         17.585       11.410       19.370        26.279         28.323
+     80.000              20.420         18.631       12.164       20.420        27.329         29.373
+     82.500              21.470         19.681       12.930       21.470        28.379         30.423
+     85.000              22.520         20.731       13.706       22.520        29.429         31.473
+     87.500              23.570         21.781       14.492       23.570        30.479         32.523
+     90.000              24.620         22.831       15.290       24.620        31.529         33.573
+     92.500              25.670         23.881       16.098       25.670        32.579         34.623
+     95.000              26.720         24.931       16.918       26.720        33.629         35.673
+     97.500              27.770         25.981       17.748       27.770        34.679         36.723
+     100.000             28.820         27.031       18.590       28.820        35.729         37.773
+     102.500             29.870         28.081       19.442       29.870        36.779         38.823
+     105.000             30.920         29.131       20.304       30.920        37.829         39.873
+     107.500             31.970         30.181       21.178       31.970        38.879         40.923
+     110.000             33.020         31.231       22.062       33.020        39.929         41.973
+
+Besondere Lohnsteuer ist die Lohnsteuer, die für einen Arbeitnehmer zu erheben ist, der in
+keinem Sozialversicherungszweig versichert ist.
+
+
+3 Berechnet mit den Merkern ALV, KRV und PKV = 1.
+4 In der Steuerklasse III gilt PKPV = 50.000, in der Steuerklasse VI gilt PKPV = 0, in den anderen
+
+Steuerklassen gilt PKPV = 30.000.
+
+                                             Seite 40 von 40
+

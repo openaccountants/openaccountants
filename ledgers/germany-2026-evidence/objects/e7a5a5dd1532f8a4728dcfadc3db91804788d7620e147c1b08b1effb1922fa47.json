@@ -1,0 +1,866 @@
+[
+  {
+    "source": "BG108",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2024-I-108-20261024.pdf",
+    "sha256": "b95ebec40902824eb7f0e9daabbfdeb628dde44aeaae9d7757231249c680ff3b"
+  },
+  {
+    "source": "BG108",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/BG108.reader.txt",
+    "sha256": "38ab8edac703a190bbc86b6e9c3f2d577f77a75503d6be4ce36dfd7fe640329e"
+  },
+  {
+    "source": "BG197",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2026-I-197-20261024.pdf",
+    "sha256": "0ac9f7d5f47a69f15bb30645f3570d54dbea88ec359662c1a26f02db4c854462"
+  },
+  {
+    "source": "BG197",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/BG197.reader.txt",
+    "sha256": "75aee695a14fb8f7274a6e9b4916332195ef77f5b6ba917b9d7ad4e63552b7a9"
+  },
+  {
+    "source": "U0085cf8336d322b7",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0085cf8336d322b7.body",
+    "sha256": "98b5d025647310cfee89a82d45c43959c4794a97b67093cf49b45a0be7706373"
+  },
+  {
+    "source": "U0085cf8336d322b7",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0085cf8336d322b7.reader.txt",
+    "sha256": "5781cc627e4a232a99d9d7b8d073a7686346b17ac2906239d921636c6a6de718"
+  },
+  {
+    "source": "U05ad06905cf77e35",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-19-20261024.html",
+    "sha256": "f89bc46265fbdb2798332ac5c120b1a1d6809297622e7ea4d2d1e1e72092b9bc"
+  },
+  {
+    "source": "U05ad06905cf77e35",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U05ad06905cf77e35.reader.txt",
+    "sha256": "f99fae65bfe57a8cb3e953153eec998fa03c1a3bb24498daa1a49b259186c7ee"
+  },
+  {
+    "source": "U15527adfa30c4074",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-238-20261024.html",
+    "sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597"
+  },
+  {
+    "source": "U15527adfa30c4074",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U15527adfa30c4074.reader.txt",
+    "sha256": "651db01a1f6c18060e1f1e63652986b0e4921fb1ce84da5d2a740ebea8ca0b48"
+  },
+  {
+    "source": "U196f87077c49f644",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U196f87077c49f644.body",
+    "sha256": "ab9d08d7ef6d01026a8d8c9c0489755cd8d5ed9088defb0d118850b8180043eb"
+  },
+  {
+    "source": "U196f87077c49f644",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U196f87077c49f644.reader.txt",
+    "sha256": "134ce55bf922ce8e0df4886a29df3251b38c11e0a4e700da28731259ccbfc723"
+  },
+  {
+    "source": "U19bf916b6e83dcb6",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-49-20261024.html",
+    "sha256": "ab6d74634775a9a34966bdfd0058d8e93deb30043ab1c0ea3895586cbe6f423b"
+  },
+  {
+    "source": "U19bf916b6e83dcb6",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U19bf916b6e83dcb6.reader.txt",
+    "sha256": "56cbe0597b599138f1fdbd55e4ceaa376e3b79a25e0067de8d313a8798ea3240"
+  },
+  {
+    "source": "U20a110d035f0b1ba",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U20a110d035f0b1ba.body",
+    "sha256": "fd1ee264c4c5e8fc80f1663de4ea010fc7793242c574622dad8a2c05d7fb345a"
+  },
+  {
+    "source": "U20a110d035f0b1ba",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U20a110d035f0b1ba.reader.txt",
+    "sha256": "05fc41a45e6dc460030534c73b751375029212123e882f7cf0f5a37fe5a35878"
+  },
+  {
+    "source": "U26ee07b985228da2",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-44a-20261026.html",
+    "sha256": "1589436abec915a0d49be85ff82d5319831789eb3873a391c983fef6726cf72d"
+  },
+  {
+    "source": "U26ee07b985228da2",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U26ee07b985228da2.reader.txt",
+    "sha256": "6b231e67dcfa9e5f8b8f4c3a9441d242d9fa211fbd37e0191070b5620c1db7f8"
+  },
+  {
+    "source": "U2a27a353be8c869c",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-14a-20261024.html",
+    "sha256": "e0c370d403b9c0fc1eac150a08c6a3e0acb5580b2db973c90117433c58a67404"
+  },
+  {
+    "source": "U2a27a353be8c869c",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2a27a353be8c869c.reader.txt",
+    "sha256": "6f0ed4bb425cbd239725360951e15adac87e5c4042567f41d5e65c017fa31ae0"
+  },
+  {
+    "source": "U2a71014ac3ac9b3e",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2a71014ac3ac9b3e.body",
+    "sha256": "b41080ab645d5f1d5b3c4d6e4fead907c2fbd553f0a36d1972042e3650e4ec5b"
+  },
+  {
+    "source": "U2a71014ac3ac9b3e",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2a71014ac3ac9b3e.reader.txt",
+    "sha256": "275f932e206c6a3a6f841518810ea79e3adcd04da70c4d4e20d09144d7117863"
+  },
+  {
+    "source": "U2c2c12cc07b61124",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2c2c12cc07b61124.body",
+    "sha256": "71c8716cbd11650e7bfd89e5d8e61a20140d0571c2228ec84b015475e68abfdd"
+  },
+  {
+    "source": "U2c2c12cc07b61124",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2c2c12cc07b61124.reader.txt",
+    "sha256": "2e5693143f3b645eb8d3273e48bba941e161e48b8de9d1642e2b22dd453d57f7"
+  },
+  {
+    "source": "U32eccbb14b2ffb8a",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U32eccbb14b2ffb8a.body",
+    "sha256": "c70732bc591cec26e6dc42db53f4cf9114013e6a240e96b3137e40998a906831"
+  },
+  {
+    "source": "U32eccbb14b2ffb8a",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U32eccbb14b2ffb8a.reader.txt",
+    "sha256": "29d33e8ebd8f75d7eacf3473eff6ed9db4401be48d4c356fa0b02870c17ea9fc"
+  },
+  {
+    "source": "U3859bf32d53897c9",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-108-20261024.html",
+    "sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc"
+  },
+  {
+    "source": "U3859bf32d53897c9",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3859bf32d53897c9.reader.txt",
+    "sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9"
+  },
+  {
+    "source": "U4076101d24c7d61a",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4076101d24c7d61a.body",
+    "sha256": "6619f4329037f236591bdc985f77cc44a287388712626cd031608fae67757cc3"
+  },
+  {
+    "source": "U4076101d24c7d61a",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4076101d24c7d61a.reader.txt",
+    "sha256": "62dc176e62ca7edef888221eb51a4445e32124d91c85bf6e700195610dfa250f"
+  },
+  {
+    "source": "U47038fc5ff2efb09",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U47038fc5ff2efb09.body",
+    "sha256": "0739fecdbc4229c1055cf629cdd5811cc56dc6d5d274ccd60b02e76bc2a5d4c9"
+  },
+  {
+    "source": "U47038fc5ff2efb09",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U47038fc5ff2efb09.reader.txt",
+    "sha256": "314d18f171f8fa684f9e86c36be0071d704e66c70a73ddafe45dd691b22aaa52"
+  },
+  {
+    "source": "U503bfe74d589da30",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+    "sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190"
+  },
+  {
+    "source": "U503bfe74d589da30",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+    "sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12"
+  },
+  {
+    "source": "U550f2712522b94a5",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-10a-20261024.html",
+    "sha256": "24df3ff38ffc0adff4da697aa3d2c15255cf18c86f94d88286aaf4c0087ad340"
+  },
+  {
+    "source": "U550f2712522b94a5",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U550f2712522b94a5.reader.txt",
+    "sha256": "8d10297e7e3a0e1ffb797f0155800a7d7fa89ecb1c8de68fabc94808365d601c"
+  },
+  {
+    "source": "U5928df53b13d17ed",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-16-20261024.html",
+    "sha256": "635cdef3ad63b9f6f06e352be12cf37051fea76a7a38ed5074d6f9ca6a3d5011"
+  },
+  {
+    "source": "U5928df53b13d17ed",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5928df53b13d17ed.reader.txt",
+    "sha256": "930037afe18cafa3d91cdfc8376082d5d068ed6c47407a0e0b88be388e1690cd"
+  },
+  {
+    "source": "U5b362e12f4cf1fe8",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5b362e12f4cf1fe8.body",
+    "sha256": "3406157d2f67c263af07da3aeb19e12004df08a42292fb4317e135d2dc38d667"
+  },
+  {
+    "source": "U5b362e12f4cf1fe8",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5b362e12f4cf1fe8.reader.txt",
+    "sha256": "d776d8cefb66f619763cea364a93804d8cbe5ed4118e7ca378aa4da7fb02af2b"
+  },
+  {
+    "source": "U5d6be704a1fbc765",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5d6be704a1fbc765.body",
+    "sha256": "663ef7812b1f78936c2f40eb376f077cd99e781e87b26dac86d296bd17dc046e"
+  },
+  {
+    "source": "U5d6be704a1fbc765",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5d6be704a1fbc765.reader.txt",
+    "sha256": "d3bd3fb03ffe4642306202c09107734854373ca1419edd105a6a0920c289eca4"
+  },
+  {
+    "source": "U5f5596dcc58e4f5b",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5f5596dcc58e4f5b.body",
+    "sha256": "339e35867f95e3cf75048582688940daa4e8bfca929af58deb17c9ba731f2cd0"
+  },
+  {
+    "source": "U5f5596dcc58e4f5b",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5f5596dcc58e4f5b.reader.txt",
+    "sha256": "f44e7add563851ded26d97082d57c23a92f73888da1ad6093ac2bc635678fcf9"
+  },
+  {
+    "source": "U634066ef5feb9dbd",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U634066ef5feb9dbd.body",
+    "sha256": "1bfdeecdd864015c1f58572779924f6664d8c2b5771b83bb1d91e70b83e93307"
+  },
+  {
+    "source": "U634066ef5feb9dbd",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U634066ef5feb9dbd.reader.txt",
+    "sha256": "345054a34d4a2ada3e80803c6b90816c088ac2235dec30f574e63949fcc86109"
+  },
+  {
+    "source": "U63758f5cd8f74de2",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-36-20261024.html",
+    "sha256": "2d686dad5c5e579b98fc1f16d116a55dee2f1771f01b705308ccf7e812934bc8"
+  },
+  {
+    "source": "U63758f5cd8f74de2",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U63758f5cd8f74de2.reader.txt",
+    "sha256": "e5611884eab51e146aac20514bef572484d48e354fde18ca721941149e1d6f3a"
+  },
+  {
+    "source": "U643873242e98bbb6",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U643873242e98bbb6.body",
+    "sha256": "7fff8d9461ef8b3753d05a73a30356e9b9a016f9993c1d9f95ff70440a426299"
+  },
+  {
+    "source": "U643873242e98bbb6",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U643873242e98bbb6.reader.txt",
+    "sha256": "8f8247ed56afa99e9c60c89f9d1bbd0f35a64d45695085a73280dd1144afd36f"
+  },
+  {
+    "source": "U64e69f9b8e5b8907",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U64e69f9b8e5b8907.body",
+    "sha256": "c2f1ca423d2e669433e164e1dfec68dd521b4148f01cb3cb5854ddaa91edafe2"
+  },
+  {
+    "source": "U64e69f9b8e5b8907",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U64e69f9b8e5b8907.reader.txt",
+    "sha256": "ff3238fe38887b38033fbe228729ed49065bf92321f68e5b08c0aed53210727c"
+  },
+  {
+    "source": "U6663ef2d9a58d6ba",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6663ef2d9a58d6ba.body",
+    "sha256": "7fc716c919b01466e54c4b19e389d5f1b7240340bb758206ba763be5612457d3"
+  },
+  {
+    "source": "U6663ef2d9a58d6ba",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6663ef2d9a58d6ba.reader.txt",
+    "sha256": "eccee8afd7f632b6b0ab0484d2be8c2151c29fa59d42182c8566f056ea8fb28b"
+  },
+  {
+    "source": "U6954483d027c63ef",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-10d-20261024.html",
+    "sha256": "4ecb27305f856990db5f9ecf9737a5f64b4ae16a73379a2827e961c8310d2b22"
+  },
+  {
+    "source": "U6954483d027c63ef",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6954483d027c63ef.reader.txt",
+    "sha256": "595e58f0c9c7b980d68a59d3190ff69d1f1608fd2204430103669dd934779c8d"
+  },
+  {
+    "source": "U7059a8b10a1f492b",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+    "sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434"
+  },
+  {
+    "source": "U7059a8b10a1f492b",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+    "sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd"
+  },
+  {
+    "source": "U76a20b875cd92863",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-11-20261024.html",
+    "sha256": "46828d9b0262292dad64eac95bb490ca94daa2257a604ca5d674b1c0e3022598"
+  },
+  {
+    "source": "U76a20b875cd92863",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U76a20b875cd92863.reader.txt",
+    "sha256": "230ef372395186013d586d6789eccd128c565523f43b5fd43ab64e7eccc43c06"
+  },
+  {
+    "source": "U7becc58a97fbfdec",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-14-20261024.html",
+    "sha256": "e171e4bd34f0050058758b5b0517cf639e8d76c0b722fddeb400c554630cf9a0"
+  },
+  {
+    "source": "U7becc58a97fbfdec",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7becc58a97fbfdec.reader.txt",
+    "sha256": "d52843ed6a003bea0237a8de4672a7cd40dcc4ff8f74936324c1cdf063fa5caa"
+  },
+  {
+    "source": "U7eebf57156097cab",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-2-20261024.html",
+    "sha256": "f309400c1595df013343d2b7ce996c79b615ed5c027a494f7696806097a84074"
+  },
+  {
+    "source": "U7eebf57156097cab",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7eebf57156097cab.reader.txt",
+    "sha256": "b6396962d89d880e08aa62b7fb54e17d445fbfa3177dd088db9feae0c40f61d7"
+  },
+  {
+    "source": "U80d1a0ee54a59a74",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.body",
+    "sha256": "670b886e42956deab6140d8bc2f97e653abd54420558c83a487b6a7fd9b81bc1"
+  },
+  {
+    "source": "U80d1a0ee54a59a74",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.reader.txt",
+    "sha256": "edad2340bbacd4b47ef225febd7946757db154dd073538b4de76700a8aa6fd23"
+  },
+  {
+    "source": "U816365676f95809c",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U816365676f95809c.body",
+    "sha256": "1d6261f3a27fdf78e48767fce5234b13195922f07b70d4186dd01a016d9bf731"
+  },
+  {
+    "source": "U816365676f95809c",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U816365676f95809c.reader.txt",
+    "sha256": "0f17cad845ae999d270ae4cfe0acc0b54b8828885ac3cd017f6f569b2bc874a0"
+  },
+  {
+    "source": "U8356a4d2b1139ef6",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-43-20261026.html",
+    "sha256": "952d3b3fe3fd433ab08ba994e224d36c08459e478c92b83b88e43fda41a33c77"
+  },
+  {
+    "source": "U8356a4d2b1139ef6",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8356a4d2b1139ef6.reader.txt",
+    "sha256": "d53d558fa43c9b55aa62394b068bcc7f64afaa5ec1721d019bc32e7c0fd651b5"
+  },
+  {
+    "source": "U85d6cd6e36db5bab",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85d6cd6e36db5bab.body",
+    "sha256": "dde1589f07c2d29922681107dd2d3e3b2a9f3ad3db90b89a5ae97bfb9ab020cd"
+  },
+  {
+    "source": "U85d6cd6e36db5bab",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85d6cd6e36db5bab.reader.txt",
+    "sha256": "4d9c18e26b8a95c468b9051534dfbcdf6f482d1b444637efe7e6c51fefa0be05"
+  },
+  {
+    "source": "U89fe99339c842942",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U89fe99339c842942.body",
+    "sha256": "7151f48f328bf94ee162029b95f1942c6569007f8e796cae9afdb60fc250aaf6"
+  },
+  {
+    "source": "U89fe99339c842942",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U89fe99339c842942.reader.txt",
+    "sha256": "f345f02cfa04e9c59e94b465c5c9c8b24daeec6ac99ddede4ed50d97a9a71483"
+  },
+  {
+    "source": "U8a1c531e2e26fec5",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-43a-20261026.html",
+    "sha256": "25cdf208dc378a1c3685a2318f5304fb342b2c73aedd89f7ca952cf13ed03687"
+  },
+  {
+    "source": "U8a1c531e2e26fec5",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8a1c531e2e26fec5.reader.txt",
+    "sha256": "8d7aa2e671377cab047bfd620fb39005ff69f940f972c372b57656e414e5d9b2"
+  },
+  {
+    "source": "U8bd6bf13c2143063",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-36-20261027.html",
+    "sha256": "5dd46a731f12aada297b6c739e3ac1f8039097f226afc44cb42fad1b626d4d51"
+  },
+  {
+    "source": "U8bd6bf13c2143063",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8bd6bf13c2143063.reader.txt",
+    "sha256": "97d6383916c9613859576a8f24fc2d296ff7e005f8787d7808aa5437adbe3c35"
+  },
+  {
+    "source": "U8d1ac9027cadfa3a",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8d1ac9027cadfa3a.body",
+    "sha256": "26b1545d4d9673c3c51c6367da96104bf37ad4b3348f876773f4d899ebbf08ad"
+  },
+  {
+    "source": "U8d1ac9027cadfa3a",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8d1ac9027cadfa3a.reader.txt",
+    "sha256": "bda94e4f97d0eb4556d05055db649e9d832e7604be13611f1d0c071637ab61bb"
+  },
+  {
+    "source": "U8f4dc5ec19db43f2",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8f4dc5ec19db43f2.body",
+    "sha256": "6760b814d371ece81055ba8349f8c2b443baf46cbcd5eb15f2717e8d89aaae34"
+  },
+  {
+    "source": "U8f4dc5ec19db43f2",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8f4dc5ec19db43f2.reader.txt",
+    "sha256": "f62c083ca5ae631f162ca219c99f70697824e1a797976f4ef30fc90df298a226"
+  },
+  {
+    "source": "U973c64f282413d56",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U973c64f282413d56.body",
+    "sha256": "7f1713069ec91b95b3cb11fe73139648e3182d398befb84beec90d616c3e860b"
+  },
+  {
+    "source": "U973c64f282413d56",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U973c64f282413d56.reader.txt",
+    "sha256": "9d038f72010ebc6b3f347abe5e20c374f41306762694cebd7f2236b3738d4c47"
+  },
+  {
+    "source": "U974604150d0aa59a",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U974604150d0aa59a.body",
+    "sha256": "04bc7790eb922b3a2400298af03e77b8a671a9d9b62979c71756a757810700fd"
+  },
+  {
+    "source": "U974604150d0aa59a",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U974604150d0aa59a.reader.txt",
+    "sha256": "7ca1e6f6c42ac97138332e3d9cf6a87044dce9593976f2364f5b86c2ecb0873d"
+  },
+  {
+    "source": "U98239c4f95f4719d",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.body",
+    "sha256": "0bddf86f831b727c144a7ecb6791cc3e5529bfb8f707ee4715c4dc95c6d2458a"
+  },
+  {
+    "source": "U98239c4f95f4719d",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.reader.txt",
+    "sha256": "56b79f581bc6fe26a103d5085d7e127e13fb2960475bb814020668dd7f7749c1"
+  },
+  {
+    "source": "U996c3fb78a450a00",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U996c3fb78a450a00.body",
+    "sha256": "d500a2040fb199e149e5b0036f1c4823caffaba1d0fa13525143961dcd2f0477"
+  },
+  {
+    "source": "U996c3fb78a450a00",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U996c3fb78a450a00.reader.txt",
+    "sha256": "2a06c0d5894ac5e7d000a287df2d219e8c99d13145ab80083cf7119177950a7a"
+  },
+  {
+    "source": "Ua52afa3591a7820d",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+    "sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67"
+  },
+  {
+    "source": "Ua52afa3591a7820d",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+    "sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be"
+  },
+  {
+    "source": "Ub3fcc8065c56fbaa",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ub3fcc8065c56fbaa.body",
+    "sha256": "e75ea33878af56c9b8fb062b5bf35c192e7f1060f5c93add93f160a98318d820"
+  },
+  {
+    "source": "Ub3fcc8065c56fbaa",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ub3fcc8065c56fbaa.reader.txt",
+    "sha256": "16ffa2bbb37f3b96b6c037297a45face87deec70de536a42a56c05a01a79c255"
+  },
+  {
+    "source": "Ube3f9918b2dc4b20",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ube3f9918b2dc4b20.body",
+    "sha256": "d4a57b359fc3446f532dcd41552b052dcac543e59dde644be8175774d8cf2838"
+  },
+  {
+    "source": "Ube3f9918b2dc4b20",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ube3f9918b2dc4b20.reader.txt",
+    "sha256": "5678cb2545a557397daa96e027c334f45e8cbe472781e2623f5793f46083bdfd"
+  },
+  {
+    "source": "Uc4a706c312c85258",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-8-20261024.html",
+    "sha256": "a846887cce2d12a7250a8771e5f173e4ddc85ead112d6b468bf5860437423990"
+  },
+  {
+    "source": "Uc4a706c312c85258",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc4a706c312c85258.reader.txt",
+    "sha256": "0be4dce9b7938aa0f2aee07fbbaaf44921df55cb499d9fb4cce572bb88ca36ae"
+  },
+  {
+    "source": "Uc569ed131070949c",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-52-20261024.html",
+    "sha256": "bec6241b5340b28eb111acc63168aaa37356253f714334f69786379dd8edbfd5"
+  },
+  {
+    "source": "Uc569ed131070949c",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc569ed131070949c.reader.txt",
+    "sha256": "93f5e25556cf28a80e3d2347b80fce6403a3c51fea9a46caf2e3caf0aec4ecce"
+  },
+  {
+    "source": "Uc643ed190a73675e",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-37-20261024.html",
+    "sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779"
+  },
+  {
+    "source": "Uc643ed190a73675e",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc643ed190a73675e.reader.txt",
+    "sha256": "782a3f377dc8f603590990e0ea2aac93844231f128dbb4a901925e7a6b289efb"
+  },
+  {
+    "source": "Uc748242e6e54c746",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-3-20261024.html",
+    "sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6"
+  },
+  {
+    "source": "Uc748242e6e54c746",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc748242e6e54c746.reader.txt",
+    "sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9"
+  },
+  {
+    "source": "Uc8a0ed7f4fcfa52f",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc8a0ed7f4fcfa52f.body",
+    "sha256": "f7d6a4c39871de984f46bbcd3113ca948963bf33e469e88c0b47dd28a5a2709d"
+  },
+  {
+    "source": "Uc8a0ed7f4fcfa52f",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc8a0ed7f4fcfa52f.reader.txt",
+    "sha256": "04a738e98526d8c8e2401b6e565cc68a5e1ea5bfd91fb85cc984881d9fe7d086"
+  },
+  {
+    "source": "Uc8f6bc69fc989c90",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-35-20261024.html",
+    "sha256": "19911da16168dff1054493928501346b305fd226a49e9e30917c72f80d08b661"
+  },
+  {
+    "source": "Uc8f6bc69fc989c90",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc8f6bc69fc989c90.reader.txt",
+    "sha256": "86f386175dc78ad466695a78d32b6955a81caab1798f6f47ff109e84a5be2ebe"
+  },
+  {
+    "source": "Ucbc7a426779ae7c3",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ucbc7a426779ae7c3.body",
+    "sha256": "5574949a5454dd181373f35bcad58386f35986ed39585825a68657dfca3b4254"
+  },
+  {
+    "source": "Ucbc7a426779ae7c3",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ucbc7a426779ae7c3.reader.txt",
+    "sha256": "16adeff24728f44811243ffa41bc94a13e15c88f77c8e6fef29fde412acd8f74"
+  },
+  {
+    "source": "Uccaace8ab6d45098",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-9-20261024.html",
+    "sha256": "5c93e3e838d08265da9818982c3174bec0bc317d973d2c15dbbd456c7e9d2ddd"
+  },
+  {
+    "source": "Uccaace8ab6d45098",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uccaace8ab6d45098.reader.txt",
+    "sha256": "006084d381b5ce625477eb2ee9f76609afe16cb125599687e6e5d2fa36b10a41"
+  },
+  {
+    "source": "Uce939ba721872299",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uce939ba721872299.body",
+    "sha256": "eebabfba6b04a66bb9cfa82574be0a72ef85fb7f753bfb54a5149d5fabd3eff2"
+  },
+  {
+    "source": "Uce939ba721872299",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uce939ba721872299.reader.txt",
+    "sha256": "7203f2dee513de1b47bcd8365a0d2b33120611ae381cfaa25074b12bb291f83a"
+  },
+  {
+    "source": "Ud09e7e216c8b5621",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-6-20261024.html",
+    "sha256": "7888cea55ee179f051c84a3dd9cee5d48871e33b3789d28e0fa18a509e40e40f"
+  },
+  {
+    "source": "Ud09e7e216c8b5621",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud09e7e216c8b5621.reader.txt",
+    "sha256": "f4d5425829ef0a78a20634206218b78092ff602e0379ff9a56fa173685e8cf2b"
+  },
+  {
+    "source": "Ud293cc7b10f1aea8",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud293cc7b10f1aea8.body",
+    "sha256": "41ab91682c18c7f8075602a2afff322a7ebfc98928718773d2dd6d1e27e3bbce"
+  },
+  {
+    "source": "Ud293cc7b10f1aea8",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud293cc7b10f1aea8.reader.txt",
+    "sha256": "a8aa0aacffc5058b7aef9aa6966689b83663f553191a4409e54abee0e9bd63b4"
+  },
+  {
+    "source": "Ud37146006499be03",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud37146006499be03.body",
+    "sha256": "473093a055687b4f1080906450a53bfa4454856afe4a25599e1907757d5436bc"
+  },
+  {
+    "source": "Ud37146006499be03",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud37146006499be03.reader.txt",
+    "sha256": "45ffa494336b97fdb64a8261370a05f74e069dcab59dd97c0b9eb6d7a325ae24"
+  },
+  {
+    "source": "Ud4e3eb9cd30f8ab0",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud4e3eb9cd30f8ab0.body",
+    "sha256": "d960669f3f2b80a722a95a34c691206e263d76285741911deca24e0f42e2a47c"
+  },
+  {
+    "source": "Ud4e3eb9cd30f8ab0",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud4e3eb9cd30f8ab0.reader.txt",
+    "sha256": "4ac594493f3af01c8aa3fcea7e759baf8c08473f0937ef4789ec8bd6a62d9d91"
+  },
+  {
+    "source": "Ud818a09838515be4",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-224-20261024.html",
+    "sha256": "a3d09dc43f6c7e7209a1fa636313afcfcaca668b5430dc85decfa0a8fde30d5f"
+  },
+  {
+    "source": "Ud818a09838515be4",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud818a09838515be4.reader.txt",
+    "sha256": "d0b8f9648ceb978be2ed418912b741a3e5840f2512e6d916d605ac4f3b98d62f"
+  },
+  {
+    "source": "Ud87f3fb176816839",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-4-20261024.html",
+    "sha256": "dd28933ed36da19cae72de5a054f9edbea5c5919cb2aeac6efc257afe9fab058"
+  },
+  {
+    "source": "Ud87f3fb176816839",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud87f3fb176816839.reader.txt",
+    "sha256": "219a2aa1409e999b209ed2402a91d3618b9ec3c19ebf85c10122087d7fa3845a"
+  },
+  {
+    "source": "Ud9b322068c0a37f5",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud9b322068c0a37f5.body",
+    "sha256": "c691692cce58c33ce848f219d66f35f4cf273dd0803134849f7077ae9042c759"
+  },
+  {
+    "source": "Ud9b322068c0a37f5",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud9b322068c0a37f5.reader.txt",
+    "sha256": "ffb3bd5e921b7329056a1465c3187ef5d580ba12c4363f885bd1ad5cad9eaa7f"
+  },
+  {
+    "source": "Uda6051d17b67ca40",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-233a-20261024.html",
+    "sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b"
+  },
+  {
+    "source": "Uda6051d17b67ca40",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uda6051d17b67ca40.reader.txt",
+    "sha256": "707aa5c6d8b589d1ab3ea4e5c30d68d5121ad2a42c56fb9368e7ca2f69d4bd7d"
+  },
+  {
+    "source": "Udbfa5bb5ab265cca",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Udbfa5bb5ab265cca.body",
+    "sha256": "d57afa0a921a82db2f16388e39d0202db1cda0779af7c62be2208f51e70a78f5"
+  },
+  {
+    "source": "Udbfa5bb5ab265cca",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Udbfa5bb5ab265cca.reader.txt",
+    "sha256": "246bef28c6e22fd0db2be970d813e4a233a1be28c57c1f552b018dd42ee5e5f6"
+  },
+  {
+    "source": "Ue475dd2d8340b460",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue475dd2d8340b460.body",
+    "sha256": "14babf9b722618db642f24e00a87bf6013b7e37be18359bd5ca002ee0946a698"
+  },
+  {
+    "source": "Ue475dd2d8340b460",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue475dd2d8340b460.reader.txt",
+    "sha256": "92b2a25c9e24261b715e6689c19a1a8b8583e37f3b7425a1726ff8cab1cb5800"
+  },
+  {
+    "source": "Ue826e61df12f41c1",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue826e61df12f41c1.body",
+    "sha256": "29be467c6ced8b7606f72d3eea9ae3e56a231f6c3ce359bde09097a3238954cb"
+  },
+  {
+    "source": "Ue826e61df12f41c1",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue826e61df12f41c1.reader.txt",
+    "sha256": "3e40209fa29c10426dd1c654ea43d9d54ddc5c988d5d438f8c83161a8aa1e84f"
+  },
+  {
+    "source": "Uee7f672101b3d3dd",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-240-20261024.html",
+    "sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818"
+  },
+  {
+    "source": "Uee7f672101b3d3dd",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee7f672101b3d3dd.reader.txt",
+    "sha256": "2cfa86cfaac164f5f98e3dc6a02b04d67165a70fc4439631021fe7a3ae0bf631"
+  },
+  {
+    "source": "Uf20d6b33a87a2687",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uf20d6b33a87a2687.body",
+    "sha256": "fd58a9842cd4f112918bc7f617bfd4d8483da1b46193c2facddaabfc85ad8781"
+  },
+  {
+    "source": "Uf20d6b33a87a2687",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uf20d6b33a87a2687.reader.txt",
+    "sha256": "94e560cafd479a922c341ed0062ac2d036ea37f9ab550d313cce3669e5270ec5"
+  },
+  {
+    "source": "Uf36ac91d2b49b128",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-7-20261024.html",
+    "sha256": "3f924fa113fd2b3cad32d6b165dccc912a736b117dbf5e84cb640c3e68beb709"
+  },
+  {
+    "source": "Uf36ac91d2b49b128",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uf36ac91d2b49b128.reader.txt",
+    "sha256": "ceed470e58786ff5226831685f8e62498616685ea9be226fb80e00ff9a660694"
+  },
+  {
+    "source": "Uf4ec5897b292ec40",
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-7-20261024.html",
+    "sha256": "6a9a7530293debb0ba9a1cdff44c86ea1c50bd1115b6850a0ed29edf23a352f4"
+  },
+  {
+    "source": "Uf4ec5897b292ec40",
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uf4ec5897b292ec40.reader.txt",
+    "sha256": "4142a47c78fa9e76d0eb0edc51a4b09397234d7c7200d73aa4ded9d62c976021"
+  }
+]

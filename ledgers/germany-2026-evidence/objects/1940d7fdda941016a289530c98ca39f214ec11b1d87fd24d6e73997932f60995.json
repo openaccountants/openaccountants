@@ -1,0 +1,11 @@
+{
+  "id": "U1b51f4526e41ff5d",
+  "url": "https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2018/274/20250110/de/pdf-a/fedlex-data-admin-ch-eli-cc-2018-274-20250110-de-pdf-a.pdf",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1b51f4526e41ff5d.body",
+  "raw_sha256": "17d27529954087bb69130127f79e99849756d298d40c9efe6d508d9298fe673b",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1b51f4526e41ff5d.reader.txt",
+  "reader_sha256": "b2932bf8f8e4066f01b74f10559c762816eddc2892984ea5d0c2b992438fff22",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

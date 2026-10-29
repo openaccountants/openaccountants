@@ -1,0 +1,14 @@
+{
+  "all_actual_origins_checked": 112,
+  "mismatches": 0,
+  "semantic_spots_actually_read": [
+    3,
+    10,
+    20,
+    34,
+    47,
+    65,
+    84,
+    99
+  ]
+}

@@ -1,0 +1,2107 @@
+[
+  {
+    "row": 1,
+    "id": "CG.rate",
+    "source": {
+      "source_id": "DEB002",
+      "act_article": "EStG32d(1)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__32d.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32d-20261026.html",
+      "raw_sha256": "2e31697f9d0ec13e81ddac8ebe78237a46bef83054e577e8b57c8a45f30a06a7",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB002.txt",
+      "reader_sha256": "8cc16e1ec4460eabab60ae8ddea900b95d35022860c4f88bd4ef3981fce3dfae",
+      "native_LF": [
+        7,
+        10
+      ],
+      "exact_quote": "(1) 1Die Einkommensteuer f\u00fcr Eink\u00fcnfte aus Kapitalverm\u00f6gen, die nicht unter \u00a7 20 Absatz 8 fallen, betr\u00e4gt 25 Prozent. 2Die Steuer nach Satz 1 vermindert sich um die nach Ma\u00dfgabe des Absatzes 5 anrechenbaren ausl\u00e4ndischen Steuern. 3Im Fall der Kirchensteuerpflicht erm\u00e4\u00dfigt sich die Steuer nach den S\u00e4tzen 1 und 2 um 25 Prozent der auf die Kapitalertr\u00e4ge entfallenden Kirchensteuer. 4Die Einkommensteuer betr\u00e4gt damit\ne \u2013 4q\n4 +k.\n5Dabei sind \u201ee\u201c die nach den Vorschriften des \u00a7 20 ermittelten Eink\u00fcnfte, \u201eq\u201c die nach Ma\u00dfgabe des Absatzes 5 anrechenbare ausl\u00e4ndische Steuer und \u201ek\u201c der f\u00fcr die Kirchensteuer erhebende Religionsgesellschaft (Religionsgemeinschaft) geltende Kirchensteuersatz.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          38
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-non-resident-tax",
+      "quote_row": 51,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 2,
+    "id": "CG.large-threshold",
+    "source": {
+      "source_id": "DEB003",
+      "act_article": "EStG17(1)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__17.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-17-20261026.html",
+      "raw_sha256": "fe27f81e022dea91a42b345d41676df4f7f90b06f3f9207db44501034afcd55b",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB003.txt",
+      "reader_sha256": "7bb0daec1aa36da5cdd8598cd60d6ad89291c220d134e8bf6d136786d8c274c4",
+      "native_LF": [
+        7,
+        7
+      ],
+      "exact_quote": "(1) 1Zu den Eink\u00fcnften aus Gewerbebetrieb geh\u00f6rt auch der Gewinn aus der Ver\u00e4u\u00dferung von Anteilen an einer Kapitalgesellschaft, wenn der Ver\u00e4u\u00dferer innerhalb der letzten f\u00fcnf Jahre am Kapital der Gesellschaft unmittelbar oder mittelbar zu mindestens 1 Prozent beteiligt war. 2Die verdeckte Einlage von Anteilen an einer Kapitalgesellschaft in eine Kapitalgesellschaft steht der Ver\u00e4u\u00dferung der Anteile gleich. 3Anteile an einer Kapitalgesellschaft sind Aktien, Anteile an einer Gesellschaft mit beschr\u00e4nkter Haftung, Genussscheine oder \u00e4hnliche Beteiligungen und Anwartschaften auf solche Beteiligungen sowie Anteile an einer optierenden Gesellschaft im Sinne des \u00a7 1a des K\u00f6rperschaftsteuergesetzes. 4Hat der Ver\u00e4u\u00dferer den ver\u00e4u\u00dferten Anteil innerhalb der letzten f\u00fcnf Jahre vor der Ver\u00e4u\u00dferung unentgeltlich erworben, so gilt Satz 1 entsprechend, wenn der Ver\u00e4u\u00dferer zwar nicht selbst, aber der Rechtsvorg\u00e4nger oder, sofern der Anteil nacheinander unentgeltlich \u00fcbertragen worden ist, einer der Rechtsvorg\u00e4nger innerhalb der letzten f\u00fcnf Jahre im Sinne von Satz 1 beteiligt war.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          20
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "leaving-germany-exit-tax",
+      "quote_row": 12,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 3,
+    "id": "CG.private1year",
+    "source": {
+      "source_id": "DEB004",
+      "act_article": "EStG23(1)2",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__23.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-23-20261024.html",
+      "raw_sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB004.txt",
+      "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "native_LF": [
+        10,
+        10
+      ],
+      "exact_quote": "Ver\u00e4u\u00dferungsgesch\u00e4fte bei anderen Wirtschaftsg\u00fctern, bei denen der Zeitraum zwischen Anschaffung und Ver\u00e4u\u00dferung nicht mehr als ein Jahr betr\u00e4gt. 2Ausgenommen sind Ver\u00e4u\u00dferungen von Gegenst\u00e4nden des t\u00e4glichen Gebrauchs. 3Bei Anschaffung und Ver\u00e4u\u00dferung mehrerer gleichartiger Fremdw\u00e4hrungsbetr\u00e4ge ist zu unterstellen, dass die zuerst angeschafften Betr\u00e4ge zuerst ver\u00e4u\u00dfert wurden. 4Bei Wirtschaftsg\u00fctern im Sinne von Satz 1, aus deren Nutzung als Einkunftsquelle zumindest in einem Kalenderjahr Eink\u00fcnfte erzielt werden, erh\u00f6ht sich der Zeitraum auf zehn Jahre;",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          24
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 4,
+    "id": "CG.private10year-home",
+    "source": {
+      "source_id": "DEB004",
+      "act_article": "EStG23(1)1",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__23.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-23-20261024.html",
+      "raw_sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB004.txt",
+      "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "native_LF": [
+        8,
+        8
+      ],
+      "exact_quote": "Ver\u00e4u\u00dferungsgesch\u00e4fte bei Grundst\u00fccken und Rechten, die den Vorschriften des b\u00fcrgerlichen Rechts \u00fcber Grundst\u00fccke unterliegen (z. B. Erbbaurecht, Mineralgewinnungsrecht), bei denen der Zeitraum zwischen Anschaffung und Ver\u00e4u\u00dferung nicht mehr als zehn Jahre betr\u00e4gt. 2Geb\u00e4ude und Au\u00dfenanlagen sind einzubeziehen, soweit sie innerhalb dieses Zeitraums errichtet, ausgebaut oder erweitert werden; dies gilt entsprechend f\u00fcr Geb\u00e4udeteile, die selbst\u00e4ndige unbewegliche Wirtschaftsg\u00fcter sind, sowie f\u00fcr Eigentumswohnungen und im Teileigentum stehende R\u00e4ume. 3Ausgenommen sind Wirtschaftsg\u00fcter, die im Zeitraum zwischen Anschaffung oder Fertigstellung und Ver\u00e4u\u00dferung ausschlie\u00dflich zu eigenen Wohnzwecken oder im Jahr der Ver\u00e4u\u00dferung und in den beiden vorangegangenen Jahren zu eigenen Wohnzwecken genutzt wurden;",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          24
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 5,
+    "id": "CG.fund-prepayment",
+    "source": {
+      "source_id": "DEB168",
+      "act_article": "InvStG18",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__18.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-18-20261026.html",
+      "raw_sha256": "6460797f0ff546a68e797a8c164fe9cefb5c70d676b56a0f82532390fbf748dd",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB168.txt",
+      "reader_sha256": "49f3a51f8b128dc02b9c86a731652ff560002ee37605c410f329c40684b3ce87",
+      "native_LF": [
+        7,
+        10
+      ],
+      "exact_quote": "(1) Die Vorabpauschale ist der Betrag, um den die Aussch\u00fcttungen eines Investmentfonds innerhalb eines Kalenderjahres den Basisertrag f\u00fcr dieses Kalenderjahr unterschreiten. Der Basisertrag wird ermittelt durch Multiplikation des R\u00fccknahmepreises des Investmentanteils zu Beginn des Kalenderjahres mit 70 Prozent des Basiszinses nach Absatz 4. Der Basisertrag ist auf den Mehrbetrag begrenzt, der sich zwischen dem ersten und dem letzten im Kalenderjahr festgesetzten R\u00fccknahmepreis zuz\u00fcglich der Aussch\u00fcttungen innerhalb des Kalenderjahres ergibt. Wird kein R\u00fccknahmepreis festgesetzt, so tritt der B\u00f6rsen- oder Marktpreis an die Stelle des R\u00fccknahmepreises.\n(2) Im Jahr des Erwerbs der Investmentanteile vermindert sich die Vorabpauschale um ein Zw\u00f6lftel f\u00fcr jeden vollen Monat, der dem Monat des Erwerbs vorangeht.\n(3) Die Vorabpauschale gilt am ersten Werktag des folgenden Kalenderjahres als zugeflossen.\n(4) Der Basiszins ist aus der langfristig erzielbaren Rendite \u00f6ffentlicher Anleihen abzuleiten. Dabei ist auf den Zinssatz abzustellen, den die Deutsche Bundesbank anhand der Zinsstrukturdaten jeweils auf den ersten B\u00f6rsentag des Jahres errechnet. Das Bundesministerium der Finanzen ver\u00f6ffentlicht den ma\u00dfgebenden Zinssatz im Bundessteuerblatt.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          14
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 6,
+    "id": "CG.resident",
+    "source": {
+      "source_id": "DEB280",
+      "act_article": "EStG1(1)sentence1",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__1.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/targeted-sources/estg-1-20261029.html",
+      "raw_sha256": "aa3116bd65c47709867eaba213a4f5a482aabe7075b4e0ae7b31fb8f2830d6ca",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB280.txt",
+      "reader_sha256": "c131d86c4bf7573c7ceb89484930ecd33f0df991d53b7f180bdd3640c66b9f18",
+      "native_LF": [
+        7,
+        7
+      ],
+      "exact_quote": "(1) 1Nat\u00fcrliche Personen, die im Inland einen Wohnsitz oder ihren gew\u00f6hnlichen Aufenthalt haben, sind unbeschr\u00e4nkt einkommensteuerpflichtig.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          26
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 32,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 7,
+    "id": "CG.calendar",
+    "source": {
+      "source_id": "DEB235",
+      "act_article": "EStG25(1)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__25.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uba73bdff2c6e289c.body",
+      "raw_sha256": "e0d94cf6efeb8792dec0d855ec2a492964694a1d8b9af3945d0007455d0d8286",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uba73bdff2c6e289c.reader.txt",
+      "reader_sha256": "9d3c8d4b043a61e27df2f7fedfaa7ba9f1dc1efc49f3aa51f565e23a48bef29d",
+      "native_LF": [
+        7,
+        7
+      ],
+      "exact_quote": "(1) Die Einkommensteuer wird nach Ablauf des Kalenderjahres (Veranlagungszeitraum) nach dem Einkommen veranlagt, das der Steuerpflichtige in diesem Veranlagungszeitraum bezogen hat, soweit nicht nach \u00a7 43 Absatz 5 und \u00a7 46 eine Veranlagung unterbleibt.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          14
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 8,
+    "id": "CG.asset-income",
+    "source": {
+      "source_id": "DEB001",
+      "act_article": "EStG20(2)1",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-20-20261026.html",
+      "raw_sha256": "e77b03a7c6f4600978d136cbbf5b2e4b6b9f9699a521827bbd5f1941f6003b6c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB001.txt",
+      "reader_sha256": "53c639c844a9de7bc9e5031d44ad6059697666651d09993728cde069514d9989",
+      "native_LF": [
+        38,
+        39
+      ],
+      "exact_quote": "(2) 1Zu den Eink\u00fcnften aus Kapitalverm\u00f6gen geh\u00f6ren auch 1.\nder Gewinn aus der Ver\u00e4u\u00dferung von Anteilen an einer K\u00f6rperschaft im Sinne des Absatzes 1 Nummer 1. 2Anteile an einer K\u00f6rperschaft sind auch Genussrechte im Sinne des Absatzes 1 Nummer 1, den Anteilen im Sinne des Absatzes 1 Nummer 1 \u00e4hnliche Beteiligungen und Anwartschaften auf Anteile im Sinne des Absatzes 1 Nummer 1;",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          35,
+          39
+        ],
+        [
+          40,
+          64
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 9,
+    "id": "CG.loss",
+    "source": {
+      "source_id": "DEB001",
+      "act_article": "EStG20(6)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-20-20261026.html",
+      "raw_sha256": "e77b03a7c6f4600978d136cbbf5b2e4b6b9f9699a521827bbd5f1941f6003b6c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB001.txt",
+      "reader_sha256": "53c639c844a9de7bc9e5031d44ad6059697666651d09993728cde069514d9989",
+      "native_LF": [
+        67,
+        67
+      ],
+      "exact_quote": "(6) 1Verluste aus Kapitalverm\u00f6gen d\u00fcrfen nicht mit Eink\u00fcnften aus anderen Einkunftsarten ausgeglichen werden; sie d\u00fcrfen auch nicht nach \u00a7 10d abgezogen werden. 2Die Verluste mindern jedoch die Eink\u00fcnfte, die der Steuerpflichtige in den folgenden Veranlagungszeitr\u00e4umen aus Kapitalverm\u00f6gen erzielt. 3\u00a7 10d Absatz 4 ist sinngem\u00e4\u00df anzuwenden; im Fall von zusammenveranlagten Ehegatten erfolgt ein gemeinsamer Verlustausgleich vor der Verlustfeststellung. 4Verluste aus Kapitalverm\u00f6gen im Sinne des Absatzes 2 Satz 1 Nummer 1 Satz 1, die aus der Ver\u00e4u\u00dferung von Aktien entstehen, d\u00fcrfen nur mit Gewinnen aus Kapitalverm\u00f6gen im Sinne des Absatzes 2 Satz 1 Nummer 1 Satz 1, die aus der Ver\u00e4u\u00dferung von Aktien entstehen, ausgeglichen werden; die S\u00e4tze 2 und 3 gelten sinngem\u00e4\u00df. 5Verluste aus Kapitalverm\u00f6gen, die der Kapitalertragsteuer unterliegen, d\u00fcrfen nur verrechnet werden oder mindern die Eink\u00fcnfte, die der Steuerpflichtige in den folgenden Veranlagungszeitr\u00e4umen aus Kapitalverm\u00f6gen erzielt, wenn eine Bescheinigung im Sinne des \u00a7 43a Absatz 3 Satz 4 vorliegt.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          67,
+          70
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 10,
+    "id": "CG.privategain-cliff",
+    "source": {
+      "source_id": "DEB004",
+      "act_article": "EStG23(3)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__23.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-23-20261024.html",
+      "raw_sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB004.txt",
+      "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "native_LF": [
+        18,
+        18
+      ],
+      "exact_quote": "(3) 1Gewinn oder Verlust aus Ver\u00e4u\u00dferungsgesch\u00e4ften nach Absatz 1 ist der Unterschied zwischen Ver\u00e4u\u00dferungspreis einerseits und den Anschaffungs- oder Herstellungskosten und den Werbungskosten andererseits. 2In den F\u00e4llen des Absatzes 1 Satz 5 Nummer 1 tritt an die Stelle des Ver\u00e4u\u00dferungspreises der f\u00fcr den Zeitpunkt der Einlage nach \u00a7 6 Absatz 1 Nummer 5 angesetzte Wert, in den F\u00e4llen des Absatzes 1 Satz 5 Nummer 2 der gemeine Wert. 3In den F\u00e4llen des Absatzes 1 Satz 2 tritt an die Stelle der Anschaffungs- oder Herstellungskosten der nach \u00a7 6 Absatz 1 Nummer 4 oder \u00a7 16 Absatz 3 angesetzte Wert. 4Die Anschaffungs- oder Herstellungskosten mindern sich um Absetzungen f\u00fcr Abnutzung, erh\u00f6hte Absetzungen und Sonderabschreibungen, soweit sie bei der Ermittlung der Eink\u00fcnfte im Sinne des \u00a7 2 Absatz 1 Satz 1 Nummer 4 bis 7 abgezogen worden sind. 5Gewinne bleiben steuerfrei, wenn der aus den privaten Ver\u00e4u\u00dferungsgesch\u00e4ften erzielte Gesamtgewinn im Kalenderjahr weniger als 1 000 Euro betragen hat. 6In den F\u00e4llen des Absatzes 1 Satz 5 Nummer 1 sind Gewinne oder Verluste f\u00fcr das Kalenderjahr, in dem der Preis f\u00fcr die Ver\u00e4u\u00dferung aus dem Betriebsverm\u00f6gen zugeflossen ist, in den F\u00e4llen des Absatzes 1 Satz 5 Nummer 2 f\u00fcr das Kalenderjahr der verdeckten Einlage anzusetzen. 7Verluste d\u00fcrfen nur bis zur H\u00f6he des Gewinns, den der Steuerpflichtige im gleichen Kalenderjahr aus privaten Ver\u00e4u\u00dferungsgesch\u00e4ften erzielt hat, ausgeglichen werden; sie d\u00fcrfen nicht nach \u00a7 10d abgezogen werden. 8Die Verluste mindern jedoch nach Ma\u00dfgabe des \u00a7 10d die Eink\u00fcnfte, die der Steuerpflichtige in dem unmittelbar vorangegangenen Veranlagungszeitraum oder in den folgenden Veranlagungszeitr\u00e4umen aus privaten Ver\u00e4u\u00dferungsgesch\u00e4ften nach Absatz 1 erzielt hat oder erzielt; \u00a7 10d Absatz 4 gilt entsprechend.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          24
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 11,
+    "id": "CG.dividends",
+    "source": {
+      "source_id": "DEB001",
+      "act_article": "EStG20(1)1",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-20-20261026.html",
+      "raw_sha256": "e77b03a7c6f4600978d136cbbf5b2e4b6b9f9699a521827bbd5f1941f6003b6c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB001.txt",
+      "reader_sha256": "53c639c844a9de7bc9e5031d44ad6059697666651d09993728cde069514d9989",
+      "native_LF": [
+        7,
+        8
+      ],
+      "exact_quote": "(1) Zu den Eink\u00fcnften aus Kapitalverm\u00f6gen geh\u00f6ren 1.\nGewinnanteile (Dividenden) und sonstige Bez\u00fcge aus Aktien, Genussrechten, mit denen das Recht am Gewinn und Liquidationserl\u00f6s einer Kapitalgesellschaft verbunden ist, aus Anteilen an Gesellschaften mit beschr\u00e4nkter Haftung, an Genossenschaften sowie an einer optierenden Gesellschaft im Sinne des \u00a7 1a des K\u00f6rperschaftsteuergesetzes. 2Zu den sonstigen Bez\u00fcgen geh\u00f6ren auch verdeckte Gewinnaussch\u00fcttungen. 3Die Bez\u00fcge geh\u00f6ren nicht zu den Einnahmen, soweit sie aus Aussch\u00fcttungen einer K\u00f6rperschaft stammen, f\u00fcr die Betr\u00e4ge aus dem steuerlichen Einlagekonto im Sinne des \u00a7 27 des K\u00f6rperschaftsteuergesetzes als verwendet gelten. 4Als sonstige Bez\u00fcge gelten auch Einnahmen, die anstelle der Bez\u00fcge im Sinne des Satzes 1 von einem anderen als dem Anteilseigner nach Absatz 5 bezogen werden, wenn die Aktien mit Dividendenberechtigung erworben, aber ohne Dividendenanspruch geliefert werden;",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          34
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 12,
+    "id": "CG.interest",
+    "source": {
+      "source_id": "DEB001",
+      "act_article": "EStG20(1)7",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-20-20261026.html",
+      "raw_sha256": "e77b03a7c6f4600978d136cbbf5b2e4b6b9f9699a521827bbd5f1941f6003b6c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB001.txt",
+      "reader_sha256": "53c639c844a9de7bc9e5031d44ad6059697666651d09993728cde069514d9989",
+      "native_LF": [
+        25,
+        26
+      ],
+      "exact_quote": "7.\nErtr\u00e4ge aus sonstigen Kapitalforderungen jeder Art, wenn die R\u00fcckzahlung des Kapitalverm\u00f6gens oder ein Entgelt f\u00fcr die \u00dcberlassung des Kapitalverm\u00f6gens zur Nutzung zugesagt oder geleistet worden ist, auch wenn die H\u00f6he der R\u00fcckzahlung oder des Entgelts von einem ungewissen Ereignis abh\u00e4ngt. 2Dies gilt unabh\u00e4ngig von der Bezeichnung und der zivilrechtlichen Ausgestaltung der Kapitalanlage. 3Erstattungszinsen im Sinne des \u00a7 233a der Abgabenordnung sind Ertr\u00e4ge im Sinne des Satzes 1;",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          34
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 13,
+    "id": "CG.partial40-scope",
+    "source": {
+      "source_id": "DEB007",
+      "act_article": "EStG3no40(c)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__3.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-3-20261024.html",
+      "raw_sha256": "85b9a2a8ff330e68a0df9f7e4e38d9dc515f1bce2635706bc14642de47c1c2b3",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB007.txt",
+      "reader_sha256": "9be956cc7a2bab50aba6634347a5920b442fee7adcc3fe0e833928c6d5d849cc",
+      "native_LF": [
+        177,
+        177
+      ],
+      "exact_quote": "des Ver\u00e4u\u00dferungspreises oder des gemeinen Werts im Sinne des \u00a7 17 Absatz 2. 2Satz 1 ist in den F\u00e4llen des \u00a7 17 Absatz 4 entsprechend anzuwenden,",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          171,
+          185
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "leaving-germany-exit-tax",
+      "quote_row": 21,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 14,
+    "id": "CG.partial60",
+    "source": {
+      "source_id": "DEB008",
+      "act_article": "EStG3c(2)sentence1",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__3c.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-3c-20261024.html",
+      "raw_sha256": "bacf05969468e83a9a319cced4a36b186cc977a59deb5ecea8fab09605a31da2",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB008.txt",
+      "reader_sha256": "a9706a0ec76c2eff5c1a73bc30590926fdc218542f9eb9da5580205c86757607",
+      "native_LF": [
+        8,
+        8
+      ],
+      "exact_quote": "(2) 1Betriebsverm\u00f6gensminderungen, Betriebsausgaben, Ver\u00e4u\u00dferungskosten oder Werbungskosten, die mit den dem \u00a7 3 Nummer 40 zugrunde liegenden Betriebsverm\u00f6gensmehrungen oder Einnahmen oder mit Verg\u00fctungen nach \u00a7 3 Nummer 40a in wirtschaftlichem Zusammenhang stehen, d\u00fcrfen unabh\u00e4ngig davon, in welchem Veranlagungszeitraum die Betriebsverm\u00f6gensmehrungen oder Einnahmen anfallen, bei der Ermittlung der Eink\u00fcnfte nur zu 60 Prozent abgezogen werden; Entsprechendes gilt, wenn bei der Ermittlung der Eink\u00fcnfte der Wert des Betriebsverm\u00f6gens oder des Anteils am Betriebsverm\u00f6gen oder die Anschaffungs- oder Herstellungskosten oder der an deren Stelle tretende Wert mindernd zu ber\u00fccksichtigen sind.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          15
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "leaving-germany-exit-tax",
+      "quote_row": 19,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 15,
+    "id": "CG.withholding",
+    "source": {
+      "source_id": "DEB005",
+      "act_article": "EStG43a(1)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__43a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-43a-20261026.html",
+      "raw_sha256": "25cdf208dc378a1c3685a2318f5304fb342b2c73aedd89f7ca952cf13ed03687",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB005.txt",
+      "reader_sha256": "8d7aa2e671377cab047bfd620fb39005ff69f940f972c372b57656e414e5d9b2",
+      "native_LF": [
+        7,
+        13
+      ],
+      "exact_quote": "(1) 1Die Kapitalertragsteuer betr\u00e4gt 1.\nin den F\u00e4llen des \u00a7 43 Absatz 1 Satz 1 Nummer 1 bis 7a und 8 bis 12 sowie Satz 2:\n25 Prozent des Kapitalertrags;\n2.\nin den F\u00e4llen des \u00a7 43 Absatz 1 Satz 1 Nummer 7b und 7c:\n15 Prozent des Kapitalertrags.\n2Im Fall einer Kirchensteuerpflicht erm\u00e4\u00dfigt sich die Kapitalertragsteuer um 25 Prozent der auf die Kapitalertr\u00e4ge entfallenden Kirchensteuer. 3\u00a7 32d Absatz 1 Satz 4 und 5 gilt entsprechend.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          25
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-corporate-tax",
+      "quote_row": 104,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 16,
+    "id": "Soli.rate",
+    "source": {
+      "source_id": "DEB006",
+      "act_article": "SolzG4",
+      "official_url": "https://www.gesetze-im-internet.de/solzg_1995/__4.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-4-20261024.html",
+      "raw_sha256": "dd28933ed36da19cae72de5a054f9edbea5c5919cb2aeac6efc257afe9fab058",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB006.txt",
+      "reader_sha256": "219a2aa1409e999b209ed2402a91d3618b9ec3c19ebf85c10122087d7fa3845a",
+      "native_LF": [
+        7,
+        7
+      ],
+      "exact_quote": "Der Solidarit\u00e4tszuschlag betr\u00e4gt 5,5 Prozent der Bemessungsgrundlage.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          12
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 10,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 17,
+    "id": "CG.allowance",
+    "source": {
+      "source_id": "DEB001",
+      "act_article": "EStG20(9)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-20-20261026.html",
+      "raw_sha256": "e77b03a7c6f4600978d136cbbf5b2e4b6b9f9699a521827bbd5f1941f6003b6c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB001.txt",
+      "reader_sha256": "53c639c844a9de7bc9e5031d44ad6059697666651d09993728cde069514d9989",
+      "native_LF": [
+        70,
+        70
+      ],
+      "exact_quote": "(9) 1Bei der Ermittlung der Eink\u00fcnfte aus Kapitalverm\u00f6gen ist als Werbungskosten ein Betrag von 1 000 Euro abzuziehen (Sparer-Pauschbetrag); der Abzug der tats\u00e4chlichen Werbungskosten ist ausgeschlossen. 2Ehegatten, die zusammen veranlagt werden, wird ein gemeinsamer Sparer-Pauschbetrag von 2 000 Euro gew\u00e4hrt. 3Der gemeinsame Sparer-Pauschbetrag ist bei der Einkunftsermittlung bei jedem Ehegatten je zur H\u00e4lfte abzuziehen; sind die Kapitalertr\u00e4ge eines Ehegatten niedriger als 1 000 Euro, so ist der anteilige Sparer-Pauschbetrag insoweit, als er die Kapitalertr\u00e4ge dieses Ehegatten \u00fcbersteigt, bei dem anderen Ehegatten abzuziehen. 4Der Sparer-Pauschbetrag und der gemeinsame Sparer-Pauschbetrag d\u00fcrfen nicht h\u00f6her sein als die nach Ma\u00dfgabe des Absatzes 6 verrechneten Kapitalertr\u00e4ge.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          64,
+          64
+        ],
+        [
+          67,
+          70
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-non-resident-tax",
+      "quote_row": 78,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 18,
+    "id": "CG.partial40-percent",
+    "source": {
+      "source_id": "DEB007",
+      "act_article": "EStG3no40 introductory rate",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__3.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-3-20261024.html",
+      "raw_sha256": "85b9a2a8ff330e68a0df9f7e4e38d9dc515f1bce2635706bc14642de47c1c2b3",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB007.txt",
+      "reader_sha256": "9be956cc7a2bab50aba6634347a5920b442fee7adcc3fe0e833928c6d5d849cc",
+      "native_LF": [
+        172,
+        172
+      ],
+      "exact_quote": "40 Prozent a)",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          171,
+          185
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 19,
+    "id": "CG.large-allowance",
+    "source": {
+      "source_id": "DEB003",
+      "act_article": "EStG17(3)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__17.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-17-20261026.html",
+      "raw_sha256": "fe27f81e022dea91a42b345d41676df4f7f90b06f3f9207db44501034afcd55b",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB003.txt",
+      "reader_sha256": "7bb0daec1aa36da5cdd8598cd60d6ad89291c220d134e8bf6d136786d8c274c4",
+      "native_LF": [
+        19,
+        19
+      ],
+      "exact_quote": "(3) 1Der Ver\u00e4u\u00dferungsgewinn wird zur Einkommensteuer nur herangezogen, soweit er den Teil von 9 060 Euro \u00fcbersteigt, der dem ver\u00e4u\u00dferten Anteil an der Kapitalgesellschaft entspricht. 2Der Freibetrag erm\u00e4\u00dfigt sich um den Betrag, um den der Ver\u00e4u\u00dferungsgewinn den Teil von 36 100 Euro \u00fcbersteigt, der dem ver\u00e4u\u00dferten Anteil an der Kapitalgesellschaft entspricht.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          19,
+          19
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "leaving-germany-exit-tax",
+      "quote_row": 15,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 20,
+    "id": "CG.fund-partial",
+    "source": {
+      "source_id": "DEB167",
+      "act_article": "InvStG20(1)\u2013(3)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-20-20261026.html",
+      "raw_sha256": "7959133d1308cfcd1763695bfd43fc73590a185a3fb8b9d16607fb40fb5be28f",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB167.txt",
+      "reader_sha256": "4b0e46adbf3ec9a530c342fc1fbf068b837f6fb763d4daafaa082e83ef03891c",
+      "native_LF": [
+        7,
+        13
+      ],
+      "exact_quote": "(1) Steuerfrei sind bei Aktienfonds 30 Prozent der Ertr\u00e4ge (Aktienteilfreistellung). Bei nat\u00fcrlichen Personen, die ihre Investmentanteile im Betriebsverm\u00f6gen halten, betr\u00e4gt die Aktienteilfreistellung 60 Prozent. Bei Anlegern, die dem K\u00f6rperschaftsteuergesetz unterliegen, betr\u00e4gt die Aktienteilfreistellung 80 Prozent. Die S\u00e4tze 2 und 3 gelten nicht, 1.\nwenn der Anleger ein Lebens- oder Krankenversicherungsunternehmen ist und der Investmentanteil den Kapitalanlagen zuzurechnen ist oder\n2.\nwenn der Anleger ein Institut oder Unternehmen nach \u00a7 3 Nummer 40 Satz 3 des Einkommensteuergesetzes oder nach \u00a7 8b Absatz 7 des K\u00f6rperschaftsteuergesetzes ist und der Investmentanteil dem Handelsbestand im Sinne des \u00a7 340e Absatz 3 des Handelsgesetzbuchs zuzuordnen oder zum Zeitpunkt des Zugangs zum Betriebsverm\u00f6gen als Umlaufverm\u00f6gen auszuweisen ist.\nSatz 4 Nummer 1 gilt entsprechend, wenn der Anleger ein Pensionsfonds ist.\n(2) Bei Mischfonds ist die H\u00e4lfte der f\u00fcr Aktienfonds geltenden Aktienteilfreistellung anzusetzen.\n(3) Bei Immobilienfonds sind 60 Prozent der Ertr\u00e4ge steuerfrei (Immobilienteilfreistellung). Bei Auslands-Immobilienfonds sind 80 Prozent der Ertr\u00e4ge steuerfrei (Auslands-Immobilienteilfreistellung). Die Anwendung der Immobilienteilfreistellung oder der Auslands-Immobilienteilfreistellung schlie\u00dft die Anwendung der Aktienteilfreistellung aus.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          24
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 21,
+    "id": "CG.basis2026",
+    "source": {
+      "source_id": "DEB169",
+      "act_article": "BMF13January2026 Basiszins2026",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Investmentsteuer/2026-01-13-basiszins-berechnung-vorabpauschale.pdf?__blob=publicationFile&v=3",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/2026-01-13-basiszins-berechnung-vorabpauschale.pdf",
+      "raw_sha256": "11245b8c1f4e326d851655fd7066e881731e6d7a664c66e0bf678603fa054bf9",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB169.txt",
+      "reader_sha256": "ea3366e3fc4609e0fdf660c5027dbfc38fd17e54397d7e7ec0e0a53c392859b8",
+      "native_LF": [
+        26,
+        44
+      ],
+      "exact_quote": "Der Anleger eines Investmentfonds hat als Investmentertrag unter anderem die Vorabpauschale\nnach \u00a7 18 InvStG zu versteuern (\u00a7 16 Absatz 1 Nummer 2 InvStG). Die Vorabpauschale f\u00fcr 2026\ngilt gem\u00e4\u00df \u00a7 18 Absatz 3 InvStG beim Anleger als am ersten Werktag des folgenden\nKalenderjahres \u2013 also am 4. Januar 2027 \u2013 zugeflossen.\n\nDie Vorabpauschale f\u00fcr 2026 ist unter Anwendung des Basiszinses vom 2. Januar 2026 zu ermit-\nteln.\n\nDer Basiszins ist gem\u00e4\u00df \u00a7 18 Absatz 4 InvStG aus der langfristig erzielbaren Rendite \u00f6ffentlicher\nAnleihen abzuleiten. Dabei ist auf den Zinssatz abzustellen, den die Deutsche Bundesbank\nanhand der Zinsstrukturdaten jeweils auf den ersten B\u00f6rsentag des Jahres errechnet. Das\nBundesministerium der Finanzen hat den ma\u00dfgebenden Zinssatz im Bundessteuerblatt zu\nver\u00f6ffentlichen.\n\nHiermit gebe ich gem\u00e4\u00df \u00a7 18 Absatz 4 Satz 3 InvStG den Basiszins zur Berechnung der Vorabpau-\nschale bekannt, der aus der langfristig erzielbaren Rendite \u00f6ffentlicher Anleihen abgeleitet ist.\nDie Deutsche Bundesbank hat hierf\u00fcr auf den 2. Januar 2026 anhand der Zinsstrukturdaten einen\nWert von 3,20 Prozent f\u00fcr Bundeswertpapiere mit j\u00e4hrlicher Kuponzahlung und einer Restlauf-\nzeit von 15 Jahren errechnet.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          25,
+          50
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 22,
+    "id": "CG.basis2025",
+    "source": {
+      "source_id": "DEB178",
+      "act_article": "BMF10January2025 Basiszins2025",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Investmentsteuer/2025-01-10-basiszins-vorabpauschale-zum-2-1-2025.pdf?__blob=publicationFile&v=6",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/2025-01-10-basiszins-vorabpauschale-zum-2-1-2025.pdf",
+      "raw_sha256": "97919e95b02ebb988c56bfd06633453405d18167f5e87f8bd015f3e69e41d514",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB178.txt",
+      "reader_sha256": "f33e5baf6f2cd89dabf5bafc30c33d80432d969a2e93016fee38ebce3ac34607",
+      "native_LF": [
+        27,
+        48
+      ],
+      "exact_quote": "Der Anleger eines Investmentfonds hat als Investmentertrag unter\nanderem die Vorabpauschale nach \u00a7 18 InvStG zu versteuern (\u00a7 16 Absatz 1\nNummer 2 InvStG). Die Vorabpauschale f\u00fcr 2025 gilt gem\u00e4\u00df \u00a7 18 Absatz 3\nInvStG beim Anleger als am ersten Werktag des folgenden Kalenderjahres\n\u2013 also am 2. Januar 2026 \u2013 zugeflossen.\n\nDie Vorabpauschale f\u00fcr 2025 ist unter Anwendung des Basiszinses vom\n2. Januar 2025 zu ermitteln.\n\nDer Basiszins ist gem\u00e4\u00df \u00a7 18 Absatz 4 InvStG aus der langfristig erzielbaren\nRendite \u00f6ffentlicher Anleihen abzuleiten. Dabei ist auf den Zinssatz abzu-\nstellen, den die Deutsche Bundesbank anhand der Zinsstrukturdaten jeweils\nauf den ersten B\u00f6rsentag des Jahres errechnet. Das Bundesministerium der\nFinanzen hat den ma\u00dfgebenden Zinssatz im Bundessteuerblatt zu ver\u00f6f-\nfentlichen.\n\nHiermit gebe ich gem\u00e4\u00df \u00a7 18 Absatz 4 Satz 3 InvStG den Basiszins zur\nBerechnung der Vorabpauschale bekannt, der aus der langfristig erzielbaren\nRendite \u00f6ffentlicher Anleihen abgeleitet ist. Die Deutsche Bundesbank hat\nhierf\u00fcr auf den 2. Januar 2025 anhand der Zinsstrukturdaten einen Wert\nvon 2,53 Prozent f\u00fcr Bundeswertpapiere mit j\u00e4hrlicher Kuponzahlung und\neiner Restlaufzeit von 15 Jahren errechnet.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          25,
+          54
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 23,
+    "id": "CG.fund-old",
+    "source": {
+      "source_id": "DEB170",
+      "act_article": "InvStG56(6)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__56.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-56-20261026.html",
+      "raw_sha256": "c8ea53a6d059d5e9b0fbfab8c7ba51c1267cd6e80d0e2338546b08b2f600a869",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB170.txt",
+      "reader_sha256": "441e27e960f87290340d2552c01b14285f75c0396fae3f0e3b5f7d2d37c0dc22",
+      "native_LF": [
+        18,
+        22
+      ],
+      "exact_quote": "(6) Bei Alt-Anteilen, die vor dem 1. Januar 2009 erworben wurden und seit der Anschaffung nicht im Betriebsverm\u00f6gen gehalten wurden (bestandsgesch\u00fctzte Alt-Anteile), sind 1.\nWertver\u00e4nderungen, die zwischen dem Anschaffungszeitpunkt und dem 31. Dezember 2017 eingetreten sind, steuerfrei und\n2.\nWertver\u00e4nderungen, die ab dem 1. Januar 2018 eingetreten sind, steuerpflichtig, soweit der Gewinn aus der Ver\u00e4u\u00dferung von bestandsgesch\u00fctzten Alt-Anteilen 100 000 Euro \u00fcbersteigt.\nDer am Schluss des Veranlagungszeitraums verbleibende Freibetrag nach Satz 1 Nummer 2 ist bis zu seinem vollst\u00e4ndigen Verbrauch j\u00e4hrlich gesondert festzustellen. Verbleibender Freibetrag ist im Jahr der erstmaligen Inanspruchnahme der Betrag von 100 000 Euro vermindert um den bei der Ermittlung der Eink\u00fcnfte ber\u00fccksichtigten Freibetrag nach Satz 1 Nummer 2; verbleibender Freibetrag ist in den Folgejahren der zum Schluss des vorangegangenen Veranlagungszeitraums festgestellte verbleibende Freibetrag vermindert um den bei der Ermittlung der Eink\u00fcnfte ber\u00fccksichtigten Freibetrag nach Satz 1 Nummer 2. Zust\u00e4ndig f\u00fcr die gesonderte Feststellung des verbleibenden Freibetrags ist das Finanzamt, das f\u00fcr die Besteuerung des Anlegers nach dem Einkommen zust\u00e4ndig ist. \u00a7 10d Absatz 4 Satz 4 bis 6 des Einkommensteuergesetzes ist entsprechend anzuwenden. Anteile im Sinne des \u00a7 21 Absatz 2a und 2b des Investmentsteuergesetzes in der bis zum 31. Dezember 2017 geltenden Fassung sind keine bestandsgesch\u00fctzten Alt-Anteile im Sinne der S\u00e4tze 1 bis 5.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          18,
+          29
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 24,
+    "id": "CG.gain",
+    "source": {
+      "source_id": "DEB001",
+      "act_article": "EStG20(4)sentences1\u20132",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-20-20261026.html",
+      "raw_sha256": "e77b03a7c6f4600978d136cbbf5b2e4b6b9f9699a521827bbd5f1941f6003b6c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB001.txt",
+      "reader_sha256": "53c639c844a9de7bc9e5031d44ad6059697666651d09993728cde069514d9989",
+      "native_LF": [
+        64,
+        64
+      ],
+      "exact_quote": "(4) 1Gewinn im Sinne des Absatzes 2 ist der Unterschied zwischen den Einnahmen aus der Ver\u00e4u\u00dferung nach Abzug der Aufwendungen, die im unmittelbaren sachlichen Zusammenhang mit dem Ver\u00e4u\u00dferungsgesch\u00e4ft stehen, und den Anschaffungskosten; bei nicht in Euro get\u00e4tigten Gesch\u00e4ften sind die Einnahmen im Zeitpunkt der Ver\u00e4u\u00dferung und die Anschaffungskosten im Zeitpunkt der Anschaffung in Euro umzurechnen.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          64,
+          64
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 25,
+    "id": "CG.FIFO",
+    "source": {
+      "source_id": "DEB001",
+      "act_article": "EStG20(4)sentence7",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-20-20261026.html",
+      "raw_sha256": "e77b03a7c6f4600978d136cbbf5b2e4b6b9f9699a521827bbd5f1941f6003b6c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB001.txt",
+      "reader_sha256": "53c639c844a9de7bc9e5031d44ad6059697666651d09993728cde069514d9989",
+      "native_LF": [
+        64,
+        64
+      ],
+      "exact_quote": "7Bei vertretbaren Wertpapieren, die einem Verwahrer zur Sammelverwahrung im Sinne des \u00a7 5 des Depotgesetzes in der Fassung der Bekanntmachung vom 11. Januar 1995 (BGBl. I S. 34), das zuletzt durch Artikel 4 des Gesetzes vom 5. April 2004 (BGBl. I S. 502) ge\u00e4ndert worden ist, in der jeweils geltenden Fassung anvertraut worden sind, ist zu unterstellen, dass die zuerst angeschafften Wertpapiere zuerst ver\u00e4u\u00dfert wurden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          64,
+          64
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 26,
+    "id": "CG.allowance-order",
+    "source": {
+      "source_id": "DEB009",
+      "act_article": "EStG44a(2)/(2a)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__44a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-44a-20261026.html",
+      "raw_sha256": "1589436abec915a0d49be85ff82d5319831789eb3873a391c983fef6726cf72d",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB009.txt",
+      "reader_sha256": "6b231e67dcfa9e5f8b8f4c3a9441d242d9fa211fbd37e0191070b5620c1db7f8",
+      "native_LF": [
+        14,
+        19
+      ],
+      "exact_quote": "(2) 1Voraussetzung f\u00fcr die Abstandnahme vom Steuerabzug nach Absatz 1 ist, dass dem nach \u00a7 44 Absatz 1 zum Steuerabzug Verpflichteten in den F\u00e4llen 1.\ndes Absatzes 1 Satz 1 ein Freistellungsauftrag des Gl\u00e4ubigers der Kapitalertr\u00e4ge nach amtlich vorgeschriebenem Muster oder\n2.\ndes Absatzes 1 Satz 4 eine Nichtveranlagungs-Bescheinigung des f\u00fcr den Gl\u00e4ubiger zust\u00e4ndigen Wohnsitzfinanzamts\nvorliegt. 2In den F\u00e4llen des Satzes 1 Nummer 2 ist die Bescheinigung unter dem Vorbehalt des Widerrufs auszustellen. 3Ihre Geltungsdauer darf h\u00f6chstens drei Jahre betragen und muss am Schluss eines Kalenderjahres enden. 4Fordert das Finanzamt die Bescheinigung zur\u00fcck oder erkennt der Gl\u00e4ubiger, dass die Voraussetzungen f\u00fcr ihre Erteilung weggefallen sind, so hat er dem Finanzamt die Bescheinigung zur\u00fcckzugeben.\n(2a) 1Ein Freistellungsauftrag kann nur erteilt werden, wenn der Gl\u00e4ubiger der Kapitalertr\u00e4ge seine Identifikationsnummer (\u00a7 139b der Abgabenordnung) und bei gemeinsamen Freistellungsauftr\u00e4gen auch die Identifikationsnummer des Ehegatten mitteilt. 2Ein Freistellungsauftrag ist ab dem 1. Januar 2016 unwirksam, wenn der Meldestelle im Sinne des \u00a7 45d Absatz 1 Satz 1 keine Identifikationsnummer des Gl\u00e4ubigers der Kapitalertr\u00e4ge und bei gemeinsamen Freistellungsauftr\u00e4gen auch keine des Ehegatten vorliegen. 3Sofern der Meldestelle im Sinne des \u00a7 45d Absatz 1 Satz 1 die Identifikationsnummer nicht bereits bekannt ist, kann sie diese beim Bundeszentralamt f\u00fcr Steuern abfragen. 4In der Anfrage d\u00fcrfen nur die in \u00a7 139b Absatz 3 der Abgabenordnung genannten Daten des Gl\u00e4ubigers der Kapitalertr\u00e4ge und bei gemeinsamen Freistellungsauftr\u00e4gen die des Ehegatten angegeben werden, soweit sie der Meldestelle bekannt sind. 5Die Anfrage hat nach amtlich vorgeschriebenem Datensatz durch Datenfern\u00fcbertragung zu erfolgen. 6Das Bundeszentralamt f\u00fcr Steuern teilt der Meldestelle die Identifikationsnummer mit, sofern die \u00fcbermittelten Daten mit den nach \u00a7 139b Absatz 3 der Abgabenordnung beim Bundeszentralamt f\u00fcr Steuern gespeicherten Daten \u00fcbereinstimmen. 7Die Meldestelle darf die Identifikationsnummer nur verarbeiten, soweit dies zur Erf\u00fcllung von steuerlichen Pflichten erforderlich ist.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          19
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 27,
+    "id": "CG.soli-exclusion",
+    "source": {
+      "source_id": "DEB011",
+      "act_article": "SolzG3(3)",
+      "official_url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-3-20261024.html",
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB011.txt",
+      "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+      "native_LF": [
+        29,
+        33
+      ],
+      "exact_quote": "(3) Der Solidarit\u00e4tszuschlag ist von einkommensteuerpflichtigen Personen nur zu erheben, wenn die Bemessungsgrundlage nach Absatz 1 Nummer 1 und 2, vermindert um die Einkommensteuer nach \u00a7 32d Absatz 3 und 4 des Einkommensteuergesetzes, 1.\nin den F\u00e4llen des \u00a7 32a Absatz 5 und 6 des Einkommensteuergesetzes 40 700 Euro,\n2.\nin anderen F\u00e4llen 20 350 Euro\n\u00fcbersteigt. Auf die Einkommensteuer nach \u00a7 32d Absatz 3 und 4 des Einkommensteuergesetzes ist der Solidarit\u00e4tszuschlag ungeachtet des Satzes 1 zu erheben.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          29,
+          33
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 44,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 28,
+    "id": "CG.foreigncredit",
+    "source": {
+      "source_id": "DEB002",
+      "act_article": "EStG32d(5)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__32d.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32d-20261026.html",
+      "raw_sha256": "2e31697f9d0ec13e81ddac8ebe78237a46bef83054e577e8b57c8a45f30a06a7",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB002.txt",
+      "reader_sha256": "8cc16e1ec4460eabab60ae8ddea900b95d35022860c4f88bd4ef3981fce3dfae",
+      "native_LF": [
+        37,
+        37
+      ],
+      "exact_quote": "(5) 1In den F\u00e4llen der Abs\u00e4tze 3 und 4 ist bei unbeschr\u00e4nkt Steuerpflichtigen, die mit ausl\u00e4ndischen Kapitalertr\u00e4gen in dem Staat, aus dem die Kapitalertr\u00e4ge stammen, zu einer der deutschen Einkommensteuer entsprechenden Steuer herangezogen werden, die auf ausl\u00e4ndische Kapitalertr\u00e4ge festgesetzte und gezahlte und um einen entstandenen Erm\u00e4\u00dfigungsanspruch gek\u00fcrzte ausl\u00e4ndische Steuer, jedoch h\u00f6chstens 25 Prozent ausl\u00e4ndische Steuer auf den einzelnen steuerpflichtigen Kapitalertrag, auf die deutsche Steuer anzurechnen. 2Soweit in einem Abkommen zur Vermeidung der Doppelbesteuerung die Anrechnung einer ausl\u00e4ndischen Steuer einschlie\u00dflich einer als gezahlt geltenden Steuer auf die deutsche Steuer vorgesehen ist, gilt Satz 1 entsprechend. 3Die ausl\u00e4ndischen Steuern sind nur bis zur H\u00f6he der auf die im jeweiligen Veranlagungszeitraum bezogenen Kapitalertr\u00e4ge im Sinne des Satzes 1 entfallenden deutschen Steuer anzurechnen.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          18,
+          38
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-non-resident-tax",
+      "quote_row": 53,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 29,
+    "id": "CG.pre2009",
+    "source": {
+      "source_id": "DEB012",
+      "act_article": "EStG52(28)sentences11\u201312",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__52.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-52-20261024.html",
+      "raw_sha256": "bec6241b5340b28eb111acc63168aaa37356253f714334f69786379dd8edbfd5",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB012.txt",
+      "reader_sha256": "93f5e25556cf28a80e3d2347b80fce6403a3c51fea9a46caf2e3caf0aec4ecce",
+      "native_LF": [
+        59,
+        59
+      ],
+      "exact_quote": "11\u00a7 20 Absatz 2 Satz 1 Nummer 1 in der am 18. August 2007 geltenden Fassung ist erstmals auf Gewinne aus der Ver\u00e4u\u00dferung von Anteilen anzuwenden, die nach dem 31. Dezember 2008 erworben wurden. 12\u00a7 20 Absatz 2 Satz 1 Nummer 3 in der am 18. August 2007 geltenden Fassung ist erstmals auf Gewinne aus Termingesch\u00e4ften anzuwenden, bei denen der Rechtserwerb nach dem 31. Dezember 2008 stattgefunden hat.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        {
+          "LF": 59,
+          "char_start": 2853,
+          "char_end_exclusive": 3254
+        }
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 30,
+    "id": "CG.loss-repeal",
+    "source": {
+      "source_id": "DEB012",
+      "act_article": "EStG52(28)sentences25\u201326",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__52.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-52-20261024.html",
+      "raw_sha256": "bec6241b5340b28eb111acc63168aaa37356253f714334f69786379dd8edbfd5",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB012.txt",
+      "reader_sha256": "93f5e25556cf28a80e3d2347b80fce6403a3c51fea9a46caf2e3caf0aec4ecce",
+      "native_LF": [
+        65,
+        65
+      ],
+      "exact_quote": "25\u00a7 20 Absatz 6 Satz 5 in der Fassung des Artikels 1 des Gesetzes vom 21. Dezember 2020 (BGBl. I S. 3096) ist auf alle offenen F\u00e4lle nicht mehr anzuwenden. 26\u00a7 20 Absatz 6 Satz 6 in der Fassung des Artikels 1 des Gesetzes vom 21. Dezember 2020 (BGBl. I S. 3096) ist auf alle offenen F\u00e4lle nicht mehr anzuwenden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          60,
+          65
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 31,
+    "id": "CG.loss-certificate",
+    "source": {
+      "source_id": "DEB005",
+      "act_article": "EStG43a(3)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__43a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-43a-20261026.html",
+      "raw_sha256": "25cdf208dc378a1c3685a2318f5304fb342b2c73aedd89f7ca952cf13ed03687",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB005.txt",
+      "reader_sha256": "8d7aa2e671377cab047bfd620fb39005ff69f940f972c372b57656e414e5d9b2",
+      "native_LF": [
+        19,
+        19
+      ],
+      "exact_quote": "2Sie hat unter Ber\u00fccksichtigung des \u00a7 20 Absatz 6 Satz 4 im Kalenderjahr negative Kapitalertr\u00e4ge einschlie\u00dflich gezahlter St\u00fcckzinsen bis zur H\u00f6he der positiven Kapitalertr\u00e4ge auszugleichen; liegt ein gemeinsamer Freistellungsauftrag im Sinne des \u00a7 44a Absatz 2 Satz 1 Nummer 1 in Verbindung mit \u00a7 20 Absatz 9 Satz 2 vor, erfolgt ein gemeinsamer Ausgleich. 3Der nicht ausgeglichene Verlust ist auf das n\u00e4chste Kalenderjahr zu \u00fcbertragen. 4Auf Verlangen des Gl\u00e4ubigers der Kapitalertr\u00e4ge hat sie \u00fcber die H\u00f6he eines nicht ausgeglichenen Verlusts eine Bescheinigung nach amtlich vorgeschriebenem Muster zu erteilen; der Verlust\u00fcbertrag entf\u00e4llt in diesem Fall. 5Der unwiderrufliche Antrag auf Erteilung der Bescheinigung muss bis zum 15.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          25
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 32,
+    "id": "CG.propertyfund-exclusions",
+    "source": {
+      "source_id": "DEB172",
+      "act_article": "InvStG2(9a)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__2.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-2-20261026.html",
+      "raw_sha256": "410fd7e93f2e02878bb7d44e79d0d0e1241979ac0f73c59304cff4b213e6e74c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB172.txt",
+      "reader_sha256": "86ef2a5b8db5020e4055cf0d1c9139189c42fce018f4808cf0579d62e598391c",
+      "native_LF": [
+        37,
+        37
+      ],
+      "exact_quote": "(9a) Eine Immobilie ist f\u00fcr die Zwecke der Immobilienfondsquote und der Auslandsimmobilienfondsquote nicht als Immobilie anzusetzen, wenn die Eink\u00fcnfte aus der Vermietung oder Verpachtung oder aus der Ver\u00e4u\u00dferung der Immobilie keiner Besteuerung unterliegen oder zu mehr als 50 Prozent von der Besteuerung befreit sind. Eine Beteiligung an einer Immobilien-Gesellschaft oder Auslands-Immobiliengesellschaft, die der Investmentfonds unmittelbar oder mittelbar \u00fcber Personengesellschaften h\u00e4lt, ist f\u00fcr die Zwecke der Immobilienfondsquote und der Auslands-Immobilienfondsquote nicht als Immobiliengesellschaft oder Auslands-Immobiliengesellschaft anzusetzen, wenn die Eink\u00fcnfte der Immobilien-Gesellschaft oder der Auslands-Immobiliengesellschaft aus der Vermietung oder Verpachtung oder aus der Ver\u00e4u\u00dferung von Immobilien zu mehr als 50 Prozent von der Besteuerung befreit sind. Das Gleiche gilt, wenn die Eink\u00fcnfte der Immobilien-Gesellschaft oder Auslands-Immobiliengesellschaft dem Investmentfonds als deren Gesellschafter zugerechnet werden und diese Eink\u00fcnfte keiner Besteuerung unterliegen oder zu mehr als 50 Prozent von der Besteuerung befreit sind.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          35,
+          48
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 33,
+    "id": "CG.propertyfund-assetvalue",
+    "source": {
+      "source_id": "DEB172",
+      "act_article": "InvStG2(9b)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__2.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-2-20261026.html",
+      "raw_sha256": "410fd7e93f2e02878bb7d44e79d0d0e1241979ac0f73c59304cff4b213e6e74c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB172.txt",
+      "reader_sha256": "86ef2a5b8db5020e4055cf0d1c9139189c42fce018f4808cf0579d62e598391c",
+      "native_LF": [
+        38,
+        38
+      ],
+      "exact_quote": "(9b) Die H\u00f6he des Aktivverm\u00f6gens bestimmt sich nach dem Wert der Verm\u00f6gensgegenst\u00e4nde des Investmentfonds ohne Ber\u00fccksichtigung von Verbindlichkeiten des Investmentfonds. Anstelle des Aktivverm\u00f6gens darf in den Anlagebedingungen auf den Wert des Investmentfonds abgestellt werden. Bei der Ermittlung des Umfangs des in Kapitalbeteiligungen angelegten Verm\u00f6gens sind in den F\u00e4llen des Satzes 2 die Kredite entsprechend dem Anteil der Kapitalbeteiligungen am Wert aller Verm\u00f6gensgegenst\u00e4nde abzuziehen. Satz 3 gilt entsprechend f\u00fcr die Ermittlung des Umfangs des in Immobilien angelegten Verm\u00f6gens.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          35,
+          48
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 34,
+    "id": "CG.propertyfund-definition",
+    "source": {
+      "source_id": "DEB172",
+      "act_article": "InvStG2(9)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__2.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-2-20261026.html",
+      "raw_sha256": "410fd7e93f2e02878bb7d44e79d0d0e1241979ac0f73c59304cff4b213e6e74c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB172.txt",
+      "reader_sha256": "86ef2a5b8db5020e4055cf0d1c9139189c42fce018f4808cf0579d62e598391c",
+      "native_LF": [
+        36,
+        36
+      ],
+      "exact_quote": "(9) Immobilienfonds sind Investmentfonds, die gem\u00e4\u00df den Anlagebedingungen fortlaufend mehr als 50 Prozent ihres Aktivverm\u00f6gens in Immobilien und Immobilien-Gesellschaften anlegen (Immobilienfondsquote). Auslands-Immobilienfonds sind Investmentfonds, die gem\u00e4\u00df den Anlagebedingungen fortlaufend mehr als 50 Prozent ihres Aktivverm\u00f6gens in ausl\u00e4ndische Immobilien und Auslands-Immobiliengesellschaften anlegen (Auslands-Immobilienfondsquote). Auslands-Immobiliengesellschaften sind Immobilien-Gesellschaften, die ausschlie\u00dflich in ausl\u00e4ndische Immobilien investieren. Investmentanteile an Immobilienfonds oder an Auslands-Immobilienfonds gelten in H\u00f6he von 51 Prozent des Wertes des Investmentanteils als Immobilien. Sieht ein Immobilienfonds oder ein Auslands-Immobilienfonds in seinen Anlagebedingungen einen h\u00f6heren Prozentsatz als 51 Prozent seines Aktivverm\u00f6gens f\u00fcr die fortlaufende Mindestanlage in Immobilien vor, gilt der Investmentanteil im Umfang dieses h\u00f6heren Prozentsatzes als Immobilie. Anteile an K\u00f6rperschaften, Personenvereinigungen oder Verm\u00f6gensmassen, bei denen nach gesetzlichen Bestimmungen oder nach deren Anlagebedingungen das Bruttoverm\u00f6gen zu mindestens 65 Prozent aus unbeweglichem Verm\u00f6gen besteht, gelten in H\u00f6he von 65 Prozent des Wertes der Anteile als Immobilien, wenn die K\u00f6rperschaften, Personenvereinigungen oder Verm\u00f6gensmassen einer Ertragsbesteuerung in H\u00f6he von mindestens 15 Prozent unterliegen und nicht von ihr befreit sind oder wenn deren Aussch\u00fcttungen einer Besteuerung von mindestens 15 Prozent unterliegen und der Investmentfonds nicht davon befreit ist. Absatz 6 Satz 4 ist entsprechend anzuwenden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          35,
+          48
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 35,
+    "id": "CG.fund-income",
+    "source": {
+      "source_id": "DEB171",
+      "act_article": "InvStG16(1)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__16.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-16-20261026.html",
+      "raw_sha256": "71f93dd1028fc29e56b798560c984f484c9f0deff05fe5a5e830350c5b835550",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB171.txt",
+      "reader_sha256": "b8c53d4a7a8be02cdebbe5bb182f376ab2ed55b6975f276dc782fe1a011677a2",
+      "native_LF": [
+        7,
+        12
+      ],
+      "exact_quote": "(1) Ertr\u00e4ge aus Investmentfonds (Investmentertr\u00e4ge) sind 1.\nAussch\u00fcttungen des Investmentfonds nach \u00a7 2 Absatz 11,\n2.\nVorabpauschalen nach \u00a7 18 und\n3.\nGewinne aus der Ver\u00e4u\u00dferung von Investmentanteilen nach \u00a7 19.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          15
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 36,
+    "id": "CG.fund-definition",
+    "source": {
+      "source_id": "DEB172",
+      "act_article": "InvStG2(6)/(7)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__2.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-2-20261026.html",
+      "raw_sha256": "410fd7e93f2e02878bb7d44e79d0d0e1241979ac0f73c59304cff4b213e6e74c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB172.txt",
+      "reader_sha256": "86ef2a5b8db5020e4055cf0d1c9139189c42fce018f4808cf0579d62e598391c",
+      "native_LF": [
+        12,
+        13
+      ],
+      "exact_quote": "(6) Aktienfonds sind Investmentfonds, die gem\u00e4\u00df den Anlagebedingungen fortlaufend mehr als 50 Prozent ihres Aktivverm\u00f6gens in Kapitalbeteiligungen anlegen (Aktienfonds-Kapitalbeteiligungsquote). Ein Dach-Investmentfonds ist auch dann ein Aktienfonds, wenn der Dach-Investmentfonds nach seinen Anlagebedingungen verpflichtet ist, derart in Ziel-Investmentfonds zu investieren, dass fortlaufend die Aktienfonds-Kapitalbeteiligungsquote erreicht wird und die Anlagebedingungen vorsehen, dass der Dach-Investmentfonds f\u00fcr die Einhaltung der Aktienfonds-Kapitalbeteiligungsquote auf die bewertungst\u00e4glich von den Ziel-Investmentfonds ver\u00f6ffentlichten tats\u00e4chlichen Kapitalbeteiligungsquoten abstellt. Satz 2 ist nur auf Ziel-Investmentfonds anzuwenden, die mindestens einmal pro Woche eine Bewertung vornehmen. In dem Zeitpunkt, in dem der Investmentfonds wesentlich gegen die Anlagebedingungen verst\u00f6\u00dft und dabei die Aktienfonds-Kapitalbeteiligungsquote unterschreitet, endet die Eigenschaft als Aktienfonds.\n(7) Mischfonds sind Investmentfonds, die gem\u00e4\u00df den Anlagebedingungen fortlaufend mindestens 25 Prozent ihres Aktivverm\u00f6gens in Kapitalbeteiligungen anlegen (Mischfonds-Kapitalbeteiligungsquote). Ein Dach-Investmentfonds ist auch dann ein Mischfonds, wenn der Dach-Investmentfonds nach seinen Anlagebedingungen verpflichtet ist, derart in Ziel-Investmentfonds zu investieren, dass fortlaufend die Mischfonds-Kapitalbeteiligungsquote erreicht wird und die Anlagebedingungen vorsehen, dass der Dach-Investmentfonds f\u00fcr deren Einhaltung auf die bewertungst\u00e4glich von den Ziel-Investmentfonds ver\u00f6ffentlichten tats\u00e4chlichen Kapitalbeteiligungsquoten abstellt. Satz 2 ist nur auf Ziel-Investmentfonds anzuwenden, die mindestens einmal pro Woche eine Bewertung vornehmen. Absatz 6 Satz 4 ist entsprechend anzuwenden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          34
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 37,
+    "id": "CG.fund-actualquota",
+    "source": {
+      "source_id": "DEB167",
+      "act_article": "InvStG20(4)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-20-20261026.html",
+      "raw_sha256": "7959133d1308cfcd1763695bfd43fc73590a185a3fb8b9d16607fb40fb5be28f",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB167.txt",
+      "reader_sha256": "4b0e46adbf3ec9a530c342fc1fbf068b837f6fb763d4daafaa082e83ef03891c",
+      "native_LF": [
+        15,
+        15
+      ],
+      "exact_quote": "(4) Weist der Anleger nach, dass der Investmentfonds die Aktienfonds- oder Mischfonds-Kapitalbeteiligungsquote oder Immobilienfonds- oder Auslands-Immobilienfondsquote w\u00e4hrend des Kalenderjahres tats\u00e4chlich durchgehend \u00fcberschritten hat, so ist die Teilfreistellung auf Antrag des Anlegers in der Veranlagung anzuwenden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          24
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 38,
+    "id": "CG.fund-cost",
+    "source": {
+      "source_id": "DEB173",
+      "act_article": "InvStG21",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__21.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-21-20261026.html",
+      "raw_sha256": "244089288aaaca01af757065b324dfeff66dbf9b3f9a175489ef7d0c68ac4189",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB173.txt",
+      "reader_sha256": "22be84ac66242187b4ab107a29b800ef2c9e7c5a9ba3b10d5cf5d8d719aa3f46",
+      "native_LF": [
+        7,
+        7
+      ],
+      "exact_quote": "Betriebsverm\u00f6gensminderungen, Betriebsausgaben, Ver\u00e4u\u00dferungskosten oder Werbungskosten, die mit den Ertr\u00e4gen aus Aktien-, Misch- oder Immobilienfonds in wirtschaftlichem Zusammenhang stehen, d\u00fcrfen unabh\u00e4ngig davon, in welchem Veranlagungszeitraum die Betriebsverm\u00f6gensmehrungen oder Einnahmen anfallen, bei der Ermittlung der Eink\u00fcnfte in dem prozentualen Umfang nicht abgezogen werden, wie auf die Ertr\u00e4ge eine Teilfreistellung anzuwenden ist.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          12
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 39,
+    "id": "CG.fund-sale",
+    "source": {
+      "source_id": "DEB174",
+      "act_article": "InvStG19(1)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__19.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-19-20261026.html",
+      "raw_sha256": "766e08ce3f2365ef447650776d7cf05fad96c2a571082e8a532bd9d15350d2f2",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB174.txt",
+      "reader_sha256": "42efc20b8ad863a9ebf7d5c174b81dfcd6b788e4e4a8efe2b275137a739b600b",
+      "native_LF": [
+        7,
+        7
+      ],
+      "exact_quote": "(1) F\u00fcr die Ermittlung des Gewinns aus der Ver\u00e4u\u00dferung von Investmentanteilen, die nicht zu einem Betriebsverm\u00f6gen geh\u00f6ren, ist \u00a7 20 Absatz 4 des Einkommensteuergesetzes entsprechend anzuwenden. \u00a7 20 Absatz 4a des Einkommensteuergesetzes ist nicht anzuwenden. Der Gewinn ist um die w\u00e4hrend der Besitzzeit angesetzten Vorabpauschalen zu vermindern. Die angesetzten Vorabpauschalen sind ungeachtet einer m\u00f6glichen Teilfreistellung nach \u00a7 20 in voller H\u00f6he zu ber\u00fccksichtigen.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          23
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 40,
+    "id": "CG.fund-bank-withdrawal",
+    "source": {
+      "source_id": "DEB013",
+      "act_article": "EStG44(1b)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__44.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-44-20261026.html",
+      "raw_sha256": "c031d39ffcda719f204213fdd59982e8c250af64f5e070dbf6b3f43481834e8c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB013.txt",
+      "reader_sha256": "3d53756534d3eb20475d9da3efd9ced99100f11a7003cdc508870d3be6fca61a",
+      "native_LF": [
+        54,
+        54
+      ],
+      "exact_quote": "(1b) Bei inl\u00e4ndischen und ausl\u00e4ndischen Investmentfonds ist f\u00fcr die Vorabpauschale nach \u00a7 16 Absatz 1 Nummer 2 des Investmentsteuergesetzes Absatz 1 Satz 7 bis 11 entsprechend anzuwenden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          54,
+          54
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 41,
+    "id": "CG.large-loss",
+    "source": {
+      "source_id": "DEB003",
+      "act_article": "EStG17(2)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__17.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-17-20261026.html",
+      "raw_sha256": "fe27f81e022dea91a42b345d41676df4f7f90b06f3f9207db44501034afcd55b",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB003.txt",
+      "reader_sha256": "7bb0daec1aa36da5cdd8598cd60d6ad89291c220d134e8bf6d136786d8c274c4",
+      "native_LF": [
+        8,
+        11
+      ],
+      "exact_quote": "(2) 1Ver\u00e4u\u00dferungsgewinn im Sinne des Absatzes 1 ist der Betrag, um den der Ver\u00e4u\u00dferungspreis nach Abzug der Ver\u00e4u\u00dferungskosten die Anschaffungskosten \u00fcbersteigt. 2In den F\u00e4llen des Absatzes 1 Satz 2 tritt an die Stelle des Ver\u00e4u\u00dferungspreises der Anteile ihr gemeiner Wert. 3Weist der Ver\u00e4u\u00dferer nach, dass ihm die Anteile bereits im Zeitpunkt der Begr\u00fcndung der unbeschr\u00e4nkten Steuerpflicht nach \u00a7 1 Absatz 1 zuzurechnen waren und dass der bis zu diesem Zeitpunkt entstandene Verm\u00f6genszuwachs auf Grund gesetzlicher Bestimmungen des Wegzugsstaats im Wegzugsstaat einer der Steuer nach \u00a7 6 des Au\u00dfensteuergesetzes vergleichbaren Steuer unterlegen hat, tritt an die Stelle der Anschaffungskosten der Wert, den der Wegzugsstaat bei der Berechnung der der Steuer nach \u00a7 6 des Au\u00dfensteuergesetzes vergleichbaren Steuer angesetzt hat, h\u00f6chstens jedoch der gemeine Wert. 4Satz 3 ist in den F\u00e4llen des \u00a7 6 Absatz 3 des Au\u00dfensteuergesetzes nicht anzuwenden. 5Hat der Ver\u00e4u\u00dferer den ver\u00e4u\u00dferten Anteil unentgeltlich erworben, so sind als Anschaffungskosten des Anteils die Anschaffungskosten des Rechtsvorg\u00e4ngers ma\u00dfgebend, der den Anteil zuletzt entgeltlich erworben hat. 6Ein Ver\u00e4u\u00dferungsverlust ist nicht zu ber\u00fccksichtigen, soweit er auf Anteile entf\u00e4llt, a)\ndie der Steuerpflichtige innerhalb der letzten f\u00fcnf Jahre unentgeltlich erworben hatte. 2Dies gilt nicht, soweit der Rechtsvorg\u00e4nger anstelle des Steuerpflichtigen den Ver\u00e4u\u00dferungsverlust h\u00e4tte geltend machen k\u00f6nnen;\nb)\ndie entgeltlich erworben worden sind und nicht innerhalb der gesamten letzten f\u00fcnf Jahre zu einer Beteiligung des Steuerpflichtigen im Sinne von Absatz 1 Satz 1 geh\u00f6rt haben. 2Dies gilt nicht f\u00fcr innerhalb der letzten f\u00fcnf Jahre erworbene Anteile, deren Erwerb zur Begr\u00fcndung einer Beteiligung des Steuerpflichtigen im Sinne von Absatz 1 Satz 1 gef\u00fchrt hat oder die nach Begr\u00fcndung der Beteiligung im Sinne von Absatz 1 Satz 1 erworben worden sind.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          20
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 42,
+    "id": "CG.large-liquidation",
+    "source": {
+      "source_id": "DEB003",
+      "act_article": "EStG17(4)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__17.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-17-20261026.html",
+      "raw_sha256": "fe27f81e022dea91a42b345d41676df4f7f90b06f3f9207db44501034afcd55b",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB003.txt",
+      "reader_sha256": "7bb0daec1aa36da5cdd8598cd60d6ad89291c220d134e8bf6d136786d8c274c4",
+      "native_LF": [
+        20,
+        20
+      ],
+      "exact_quote": "(4) 1Als Ver\u00e4u\u00dferung im Sinne des Absatzes 1 gilt auch die Aufl\u00f6sung einer Kapitalgesellschaft, die Kapitalherabsetzung, wenn das Kapital zur\u00fcckgezahlt wird, und die Aussch\u00fcttung oder Zur\u00fcckzahlung von Betr\u00e4gen aus dem steuerlichen Einlagenkonto im Sinne des \u00a7 27 des K\u00f6rperschaftsteuergesetzes. 2In diesen F\u00e4llen ist als Ver\u00e4u\u00dferungspreis der gemeine Wert des dem Steuerpflichtigen zugeteilten oder zur\u00fcckgezahlten Verm\u00f6gens der Kapitalgesellschaft anzusehen. 3Satz 1 gilt nicht, soweit die Bez\u00fcge nach \u00a7 20 Absatz 1 Nummer 1 oder 2 zu den Einnahmen aus Kapitalverm\u00f6gen geh\u00f6ren.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          20,
+          20
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 43,
+    "id": "CG.option",
+    "source": {
+      "source_id": "DEB002",
+      "act_article": "EStG32d(2)3",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__32d.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32d-20261026.html",
+      "raw_sha256": "2e31697f9d0ec13e81ddac8ebe78237a46bef83054e577e8b57c8a45f30a06a7",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB002.txt",
+      "reader_sha256": "8cc16e1ec4460eabab60ae8ddea900b95d35022860c4f88bd4ef3981fce3dfae",
+      "native_LF": [
+        28,
+        32
+      ],
+      "exact_quote": "auf Antrag f\u00fcr Kapitalertr\u00e4ge im Sinne des \u00a7 20 Absatz 1 Nummer 1 und 2 aus einer Beteiligung an einer Kapitalgesellschaft, wenn der Steuerpflichtige im Veranlagungszeitraum, f\u00fcr den der Antrag erstmals gestellt wird, unmittelbar oder mittelbar a)\nzu mindestens 25 Prozent an der Kapitalgesellschaft beteiligt ist oder\nb)\nzu mindestens 1 Prozent an der Kapitalgesellschaft beteiligt ist und durch eine berufliche T\u00e4tigkeit f\u00fcr diese ma\u00dfgeblichen unternehmerischen Einfluss auf deren wirtschaftliche T\u00e4tigkeit nehmen kann.\n2Insoweit finden \u00a7 3 Nummer 40 Satz 2 und \u00a7 20 Absatz 6 und 9 keine Anwendung. 3Der Antrag gilt f\u00fcr die jeweilige Beteiligung erstmals f\u00fcr den Veranlagungszeitraum, f\u00fcr den er gestellt worden ist. 4Er ist sp\u00e4testens zusammen mit der Einkommensteuererkl\u00e4rung f\u00fcr den jeweiligen Veranlagungszeitraum zu stellen und gilt, solange er nicht widerrufen wird, auch f\u00fcr die folgenden vier Veranlagungszeitr\u00e4ume, ohne dass die Antragsvoraussetzungen erneut zu belegen sind. 5Die Widerrufserkl\u00e4rung muss dem Finanzamt sp\u00e4testens mit der Steuererkl\u00e4rung f\u00fcr den Veranlagungszeitraum zugehen, f\u00fcr den die S\u00e4tze 1 bis 4 erstmals nicht mehr angewandt werden sollen. 6Nach einem Widerruf ist ein erneuter Antrag des Steuerpflichtigen f\u00fcr diese Beteiligung an der Kapitalgesellschaft nicht mehr zul\u00e4ssig;",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          18,
+          38
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 44,
+    "id": "CG.private-cliff-history",
+    "source": {
+      "source_id": "DEB175",
+      "act_article": "Wachstumschancengesetz2024 Art2no5",
+      "official_url": "https://www.recht.bund.de/bgbl/1/2024/108/VO.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2024-I-108-20261024.pdf",
+      "raw_sha256": "b95ebec40902824eb7f0e9daabbfdeb628dde44aeaae9d7757231249c680ff3b",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB175.txt",
+      "reader_sha256": "38ab8edac703a190bbc86b6e9c3f2d577f77a75503d6be4ce36dfd7fe640329e",
+      "native_LF": [
+        314,
+        314
+      ],
+      "exact_quote": "5. In \u00a7 23 Absatz 3 Satz 5 wird die Angabe \u201e600 Euro\u201c durch die Angabe \u201e1 000 Euro\u201c ersetzt.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          302,
+          315
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 45,
+    "id": "CG.private-cliff-date",
+    "source": {
+      "source_id": "DEB175",
+      "act_article": "Wachstumschancengesetz2024 Art35(4)",
+      "official_url": "https://www.recht.bund.de/bgbl/1/2024/108/VO.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2024-I-108-20261024.pdf",
+      "raw_sha256": "b95ebec40902824eb7f0e9daabbfdeb628dde44aeaae9d7757231249c680ff3b",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB175.txt",
+      "reader_sha256": "38ab8edac703a190bbc86b6e9c3f2d577f77a75503d6be4ce36dfd7fe640329e",
+      "native_LF": [
+        2008,
+        2008
+      ],
+      "exact_quote": "  (4) Die Artikel 2, 12, 20, 31 und 32 Nummer 2 treten mit Wirkung vom 1. Januar 2024 in Kraft.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          2002,
+          2010
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-corporate-tax",
+      "quote_row": 116,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 46,
+    "id": "CG.crypto-swap",
+    "source": {
+      "source_id": "DEB176",
+      "act_article": "BMF6March2025 Rn54\u201355",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf",
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB176.txt",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "native_LF": [
+        708,
+        718
+      ],
+      "exact_quote": "     Tausch gegen Einheiten einer staatlichen W\u00e4hrung (z. B. Euro), Waren oder\n     Dienstleistungen sowie gegen andere Kryptowerte erworben haben, sowie die durch\n     Lending und (passivem) Staking erlangten Kryptowerte. Spiegelbildlich zur Anschaffung\n     stellt die entgeltliche \u00dcbertragung des angeschafften Wirtschaftsguts auf Dritte eine\n     Ver\u00e4u\u00dferung dar. Der Tausch von Kryptowerten in Einheiten einer staatlichen W\u00e4hrung\n     (z. B. Euro), Waren oder Dienstleistungen sowie in andere Kryptowerte f\u00fchrt demgem\u00e4\u00df\n     zu einer Ver\u00e4u\u00dferung.\n\n\n55   Die Ver\u00e4u\u00dferungsfristen des \u00a7 23 Absatz 1 Satz 1 Nummer 2 EStG beginnen nach jedem\n     Tausch neu. F\u00fcr die Ermittlung der Jahresfrist ist bei einer Anschaffung oder",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          704,
+          726
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 47,
+    "id": "CG.crypto-lots",
+    "source": {
+      "source_id": "DEB176",
+      "act_article": "BMF6March2025 Rn61\u201362",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf",
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB176.txt",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "native_LF": [
+        767,
+        783
+      ],
+      "exact_quote": "61   F\u00fcr die Bestimmung der Verwendungsreihenfolge der ver\u00e4u\u00dferten Kryptowerte gilt der\n     Grundsatz der Einzelbetrachtung (vgl. Randnummer 51). Ist eine Einzelbetrachtung nicht\n     m\u00f6glich, gelten f\u00fcr die Zwecke der Haltefrist die zuerst angeschafften Kryptowerte einer\n     Handelsbezeichnung (z. B. Bitcoin oder Ether) als ver\u00e4u\u00dfert und ist f\u00fcr die\n     Wertermittlung die Durchschnittsmethode anzuwenden (BFH-Urteil vom 24. November\n     1993, X R 49/90, BStBl II 1994 S. 591). Aus Vereinfachungsgr\u00fcnden kann f\u00fcr die Zwecke\n     der Wertermittlung unterstellt werden, dass die zuerst angeschafften Kryptowerte einer\n     Handelsbezeichnung zuerst ver\u00e4u\u00dfert wurden (First in First out, FiFo).\n\n\n62   Es gilt eine walletbezogene Betrachtung. Innerhalb einer Wallet ist die gew\u00e4hlte Methode\n     bis zur vollst\u00e4ndigen Ver\u00e4u\u00dferung aller Kryptowerte einer Handelsbezeichnung in dieser\n     Wallet beizubehalten. Nach einer vollst\u00e4ndigen Ver\u00e4u\u00dferung der in der Wallet\n     vorhandenen Kryptowerte einer Handelsbezeichnung und anschlie\u00dfendem Neuerwerb\n     von Kryptowerten dieser Handelsbezeichnung kann die Methode gewechselt werden\n     (Wahlrecht). Beim Halten von Kryptowerten mit abweichenden Handelsbezeichnungen\n     \u00fcber eine Wallet besteht jeweils ein gesondertes Wahlrecht.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          767,
+          790
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 48,
+    "id": "CG.crypto-lending",
+    "source": {
+      "source_id": "DEB176",
+      "act_article": "BMF6March2025 Rn63",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf",
+      "raw_sha256": "a739f2ffdfa4b6b2cf013c0a7fd2f12209716abcc2e945f187ce96cbe7b76056",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB176.txt",
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "native_LF": [
+        785,
+        788
+      ],
+      "exact_quote": "     cc) Keine Verl\u00e4ngerung der Ver\u00e4u\u00dferungsfrist auf zehn Jahre\n63   Bei Currency oder Payment Token (vgl. Randnummer 3) kommt die Verl\u00e4ngerung der\n     Ver\u00e4u\u00dferungsfrist nach \u00a7 23 Absatz 1 Satz 1 Nummer 2 Satz 4 EStG nicht zur\n     Anwendung.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          767,
+          790
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 49,
+    "id": "CG.favourable",
+    "source": {
+      "source_id": "DEB002",
+      "act_article": "EStG32d(6)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__32d.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32d-20261026.html",
+      "raw_sha256": "2e31697f9d0ec13e81ddac8ebe78237a46bef83054e577e8b57c8a45f30a06a7",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB002.txt",
+      "reader_sha256": "8cc16e1ec4460eabab60ae8ddea900b95d35022860c4f88bd4ef3981fce3dfae",
+      "native_LF": [
+        38,
+        38
+      ],
+      "exact_quote": "(6) 1Auf Antrag des Steuerpflichtigen werden anstelle der Anwendung der Abs\u00e4tze 1, 3 und 4 die nach \u00a7 20 ermittelten Kapitaleink\u00fcnfte den Eink\u00fcnften im Sinne des \u00a7 2 hinzugerechnet und der tariflichen Einkommensteuer unterworfen, wenn dies zu einer niedrigeren Einkommensteuer einschlie\u00dflich Zuschlagsteuern f\u00fchrt (G\u00fcnstigerpr\u00fcfung). 2Absatz 5 ist mit der Ma\u00dfgabe anzuwenden, dass die nach dieser Vorschrift ermittelten ausl\u00e4ndischen Steuern auf die zus\u00e4tzliche tarifliche Einkommensteuer anzurechnen sind, die auf die hinzugerechneten Kapitaleink\u00fcnfte entf\u00e4llt. 3Der Antrag kann f\u00fcr den jeweiligen Veranlagungszeitraum nur einheitlich f\u00fcr s\u00e4mtliche Kapitalertr\u00e4ge gestellt werden. 4Bei zusammenveranlagten Ehegatten kann der Antrag nur f\u00fcr s\u00e4mtliche Kapitalertr\u00e4ge beider Ehegatten gestellt werden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          18,
+          38
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-non-resident-tax",
+      "quote_row": 53,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 50,
+    "id": "CG.bank-finality",
+    "source": {
+      "source_id": "DEB281",
+      "act_article": "EStG43(5)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__43.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-43-20261026.html",
+      "raw_sha256": "952d3b3fe3fd433ab08ba994e224d36c08459e478c92b83b88e43fda41a33c77",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB281.txt",
+      "reader_sha256": "d53d558fa43c9b55aa62394b068bcc7f64afaa5ec1721d019bc32e7c0fd651b5",
+      "native_LF": [
+        81,
+        81
+      ],
+      "exact_quote": "(5) 1F\u00fcr Kapitalertr\u00e4ge im Sinne des \u00a7 20, soweit sie der Kapitalertragsteuer unterlegen haben, ist die Einkommensteuer mit dem Steuerabzug abgegolten; die Abgeltungswirkung des Steuerabzugs tritt nicht ein, wenn der Gl\u00e4ubiger nach \u00a7 44 Absatz 1 Satz 10 und 11 und Absatz 5 in Anspruch genommen werden kann. 2Dies gilt nicht in F\u00e4llen des \u00a7 32d Absatz 2 und f\u00fcr Kapitalertr\u00e4ge, die zu den Eink\u00fcnften aus Land- und Forstwirtschaft, aus Gewerbebetrieb, aus selbst\u00e4ndiger Arbeit oder aus Vermietung und Verpachtung geh\u00f6ren. 3Auf Antrag des Gl\u00e4ubigers werden Kapitalertr\u00e4ge im Sinne des Satzes 1 in die besondere Besteuerung von Kapitalertr\u00e4gen nach \u00a7 32d einbezogen. 4Eine vorl\u00e4ufige Festsetzung der Einkommensteuer im Sinne des \u00a7 165 Absatz 1 Satz 2 Nummer 2 bis 4 der Abgabenordnung umfasst auch Eink\u00fcnfte im Sinne des Satzes 1, f\u00fcr die der Antrag nach Satz 3 nicht gestellt worden ist.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          73,
+          85
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 51,
+    "id": "CG.bank-monthly",
+    "source": {
+      "source_id": "DEB013",
+      "act_article": "EStG44(1)sentences5\u201310",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__44.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-44-20261026.html",
+      "raw_sha256": "c031d39ffcda719f204213fdd59982e8c250af64f5e070dbf6b3f43481834e8c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB013.txt",
+      "reader_sha256": "3d53756534d3eb20475d9da3efd9ced99100f11a7003cdc508870d3be6fca61a",
+      "native_LF": [
+        40,
+        46
+      ],
+      "exact_quote": "5Die innerhalb eines Kalendermonats einbehaltene Steuer ist jeweils bis zum zehnten des folgenden Monats an das Finanzamt abzuf\u00fchren, das f\u00fcr die Besteuerung 1.\ndes Schuldners der Kapitalertr\u00e4ge,\n2.\nder den Verkaufsauftrag ausf\u00fchrenden Stelle oder\n3.\nder die Kapitalertr\u00e4ge auszahlenden Stelle\nnach dem Einkommen zust\u00e4ndig ist; bei Kapitalertr\u00e4gen im Sinne des \u00a7 43 Absatz 1 Satz 1 Nummer 1 ist die einbehaltene Steuer in dem Zeitpunkt abzuf\u00fchren, in dem die Kapitalertr\u00e4ge dem Gl\u00e4ubiger zuflie\u00dfen. 6Dabei ist die Kapitalertragsteuer, die zu demselben Zeitpunkt abzuf\u00fchren ist, jeweils auf den n\u00e4chsten vollen Eurobetrag abzurunden. 7Wenn Kapitalertr\u00e4ge ganz oder teilweise nicht in Geld bestehen (\u00a7 8 Absatz 2) und der in Geld geleistete Kapitalertrag nicht zur Deckung der Kapitalertragsteuer ausreicht, hat der Gl\u00e4ubiger der Kapitalertr\u00e4ge dem zum Steuerabzug Verpflichteten den Fehlbetrag zur Verf\u00fcgung zu stellen. 8Zu diesem Zweck kann der zum Steuerabzug Verpflichtete den Fehlbetrag von einem bei ihm unterhaltenen und auf den Namen des Gl\u00e4ubigers der Kapitalertr\u00e4ge lautenden Konto, ohne Einwilligung des Gl\u00e4ubigers, einziehen. 9Soweit der Gl\u00e4ubiger nicht vor Zufluss der Kapitalertr\u00e4ge widerspricht, darf der zum Steuerabzug Verpflichtete auch insoweit die Geldbetr\u00e4ge von einem auf den Namen des Gl\u00e4ubigers der Kapitalertr\u00e4ge lautenden Konto einziehen, wie ein mit dem Gl\u00e4ubiger vereinbarter Kontokorrentkredit f\u00fcr dieses Konto nicht in Anspruch genommen wurde. 10Soweit der Gl\u00e4ubiger seiner Verpflichtung nicht nachkommt, hat der zum Steuerabzug Verpflichtete dies dem f\u00fcr ihn zust\u00e4ndigen Betriebsst\u00e4ttenfinanzamt nach Ma\u00dfgabe des \u00a7 93c der Abgabenordnung anzuzeigen und neben den in \u00a7 93c Absatz 1 der Abgabenordnung genannten Angaben folgende Daten zu \u00fcbermitteln: 1.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          38,
+          46
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 52,
+    "id": "CG.declare",
+    "source": {
+      "source_id": "DEB002",
+      "act_article": "EStG32d(3)/(4)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__32d.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32d-20261026.html",
+      "raw_sha256": "2e31697f9d0ec13e81ddac8ebe78237a46bef83054e577e8b57c8a45f30a06a7",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB002.txt",
+      "reader_sha256": "8cc16e1ec4460eabab60ae8ddea900b95d35022860c4f88bd4ef3981fce3dfae",
+      "native_LF": [
+        35,
+        36
+      ],
+      "exact_quote": "(3) 1Steuerpflichtige Kapitalertr\u00e4ge, die nicht der Kapitalertragsteuer unterlegen haben, hat der Steuerpflichtige in seiner Einkommensteuererkl\u00e4rung anzugeben. 2F\u00fcr diese Kapitalertr\u00e4ge erh\u00f6ht sich die tarifliche Einkommensteuer um den nach Absatz 1 ermittelten Betrag. 3Im Fall des Satzes 1 ist eine Veranlagung ungeachtet von \u00a7 46 Absatz 2 durchzuf\u00fchren.\n(4) Der Steuerpflichtige kann mit der Einkommensteuererkl\u00e4rung f\u00fcr Kapitalertr\u00e4ge, die der Kapitalertragsteuer unterlegen haben, eine Steuerfestsetzung entsprechend Absatz 3 Satz 2 insbesondere in F\u00e4llen eines nicht vollst\u00e4ndig ausgesch\u00f6pften Sparer-Pauschbetrags, einer Anwendung der Ersatzbemessungsgrundlage nach \u00a7 43a Absatz 2 Satz 7, eines noch nicht im Rahmen des \u00a7 43a Absatz 3 ber\u00fccksichtigten Verlusts, eines Verlustvortrags nach \u00a7 20 Absatz 6 und noch nicht ber\u00fccksichtigter ausl\u00e4ndischer Steuern, zur \u00dcberpr\u00fcfung des Steuereinbehalts dem Grund oder der H\u00f6he nach oder zur Anwendung von Absatz 1 Satz 3 beantragen.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          18,
+          38
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-non-resident-tax",
+      "quote_row": 52,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 53,
+    "id": "CG.formKAP",
+    "source": {
+      "source_id": "DEB185",
+      "act_article": "Official ELSTER2025 instructions: AnlageKAP",
+      "official_url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2025-20261024.html",
+      "raw_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+      "reader_sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+      "native_LF": [
+        1361,
+        1375
+      ],
+      "exact_quote": "Die Anlage KAP ist f\u00fcr Ihre Angaben zu Eink\u00fcnften aus Kapitalverm\u00f6gen vorgesehen.\nSoweit die Kapitalertr\u00e4ge zu den Eink\u00fcnften aus Land- und Forstwirtschaft, Gewerbebetrieb, selbst\u00e4ndiger Arbeit oder Vermietung und Verpachtung geh\u00f6ren, sind sie diesen Eink\u00fcnften zuzurechnen.\nWann m\u00fcssen Sie die Anlage KAP ausf\u00fcllen?\nGrunds\u00e4tzlich ist die Einkommensteuer auf Kapitalertr\u00e4ge durch den Steuerabzug abgegolten (Abgeltungsteuer) und Sie m\u00fcssen die Anlage KAP nicht ausf\u00fcllen. Angaben zu Ihren Eink\u00fcnften aus Kapitalverm\u00f6gen sind in der Anlage KAP dennoch erforderlich, wenn\ndie Kapitalertr\u00e4ge nicht dem Steuerabzug unterlegen haben (eine Erkl\u00e4rungspflicht besteht auch, wenn die Kapitalertr\u00e4ge den Sparer-Freibetrag nicht \u00fcbersteigen),\nbeim Steuerabzug eine den tats\u00e4chlichen Kapitalertrag unterschreitende Ersatzbemessungsgrundlage angewandt wurde,\nkeine Kirchensteuer auf Kapitalertr\u00e4ge einbehalten wurde, obwohl Sie kirchensteuerpflichtig sind,\nSie den Steuereinbehalt dem Grunde oder der H\u00f6he nach \u00fcberpr\u00fcfen lassen m\u00f6chten,\nSie einen Antrag auf G\u00fcnstigerpr\u00fcfung stellen. Ihr Finanzamt pr\u00fcft dann, ob die tarifliche Besteuerung Ihrer Kapitalertr\u00e4ge gegen\u00fcber dem Abgeltungsteuersatz von 25 % zu einer Steuerentlastung f\u00fchrt,\ndie abgeltende Wirkung des Steuerabzugs aufgrund der Ausnahmeregelung des \u00a7 32d Absatz 2 EStG nicht in Betracht kommt,\nSie bestandsgesch\u00fctzte Alt-Anteile im Sinne des \u00a7 56 Absatz 6 Satz 1 Nummer 2 InvStG ver\u00e4u\u00dfert haben oder\nIhre inl\u00e4ndische auszahlende Stelle (zum Beispiel Kreditinstitut) Ihnen f\u00fcr das Jahr 2025 noch Verluste aus der ganzen oder teilweisen Uneinbringlichkeit einer Kapitalforderung, aus der Ausbuchung oder \u00dcbertragung wertloser Wirtschaftsg\u00fcter im Sinne des \u00a7 20 Absatz 1 EStG auf einen Dritten oder aus einem sonstigen Ausfall solcher Wirtschaftsg\u00fcter oder aus Termingesch\u00e4ften in der Steuerbescheinigung ausgewiesen hat.\nDie Antr\u00e4ge laut den Zeilen 4, 5 und 31 k\u00f6nnen Sie unabh\u00e4ngig voneinander stellen. Der Antrag auf G\u00fcnstigerpr\u00fcfung (Zeile 4) ersetzt nicht den Antrag auf Anwendung der tariflichen Einkommensteuer (Zeile 31).\nF\u00fcllen Sie die Anlage KAP bitte stets auch aus, wenn Ihr Finanzamt einbehaltene inl\u00e4ndische Kapitalertragsteuer, einbehaltenen Solidarit\u00e4tszuschlag, einbehaltene Kirchensteuer im Zusammenhang mit anderen Einkunftsarten anrechnen oder erstatten soll.\nAnlage KAP-BET: Eink\u00fcnfte aus Kapitalverm\u00f6gen aus Beteiligungen",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          1361,
+          1375
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": "2025 instructions support named forms/filing purpose only; 2026 field coordinates are not inferred."
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 54,
+    "id": "CG.formKAPINV",
+    "source": {
+      "source_id": "DEB185",
+      "act_article": "Official ELSTER2025 instructions: AnlageKAP-INV",
+      "official_url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2025-20261024.html",
+      "raw_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+      "reader_sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+      "native_LF": [
+        1509,
+        1514
+      ],
+      "exact_quote": "Die Anlage KAP\u2011INV ist f\u00fcr Ihre Angaben zu Investmentertr\u00e4gen vorgesehen, die nicht dem inl\u00e4ndischen Steuerabzug unterlegen haben.\nSoweit die Investmentertr\u00e4ge zu den Eink\u00fcnften aus Land- und Forstwirtschaft, Gewerbebetrieb, selbst\u00e4ndiger Arbeit oder Vermietung und Verpachtung geh\u00f6ren, m\u00fcssen Sie die Ertr\u00e4ge diesen Eink\u00fcnften zurechnen.\nWann m\u00fcssen Sie die Anlage KAP-INV ausf\u00fcllen?\nDie Anlage KAP\u2011INV f\u00fcllen Sie bitte f\u00fcr Investmentertr\u00e4ge aus, die nicht dem inl\u00e4ndischen Steuerabzug unterlegen haben (eine Erkl\u00e4rungspflicht besteht auch,\nwenn die Kapitalertr\u00e4ge den Sparer-Pauschbetrag nicht \u00fcbersteigen). Dies ist zum Beispiel der Fall, wenn Ihre Investmentanteile im Ausland verwahrt werden. Bitte machen Sie in diesen F\u00e4llen auch die Angaben zum Sparer-Pauschbetrag in Zeile 17 der Anlage KAP, au\u00dfer wenn Sie die G\u00fcnstigerpr\u00fcfung beantragen.\nEhemalige Kapital-Investitionsgesellschaften im Sinne des \u00a7 19 Investmentsteuergesetz (InvStG) in der bis zum 31. Dezember 2017 geltenden Fassung sind seit dem 1. Januar 2018 Investmentfonds, aus denen Sie Investmentertr\u00e4ge erzielen. Seit dem 1. Januar 2018 entstehende Ver\u00e4u\u00dferungsgewinne/-verluste m\u00fcssen Sie daher in der Anlage KAP\u2011INV eintragen. Tragen Sie bitte Gewinne und Verluste aus der fiktiven Ver\u00e4u\u00dferung von nicht bestandsgesch\u00fctzten Alt-Anteilen im Sinne des \u00a7 56 Absatz 2 in Verbindung mit \u00a7 56 Absatz 3 Satz 1 InvStG an einer Kapital-Investitionsgesellschaft in die Zeilen 18 und/oder 19 und gegebenenfalls in die Zeilen 20 und/oder 22 und/oder 23 der Anlage KAP ein.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          1509,
+          1514
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": "2025 form name/purpose, not assumed 2026 line numbers."
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 55,
+    "id": "CG.formSO",
+    "source": {
+      "source_id": "DEB185",
+      "act_article": "Official ELSTER2025 instructions: AnlageSO",
+      "official_url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2025-20261024.html",
+      "raw_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+      "reader_sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+      "native_LF": [
+        2357,
+        2367
+      ],
+      "exact_quote": "Anlage SO\nAllgemeines\nIn die Anlage SO tragen Sie bitte die folgenden Eink\u00fcnfte ein:\naus wiederkehrenden Bez\u00fcgen (zum Beispiel Versorgungsleistungen im Rahmen einer Verm\u00f6gens\u00fcbertragung),\nUnterhaltsleistungen (sogenanntes begrenztes Realsplitting),\nVersorgungsleistungen, die auf besonderen Verpflichtungsgr\u00fcnden beruhen,\nAusgleichsleistungen zur Vermeidung des Versorgungsausgleichs,\nAusgleichszahlung im Rahmen eines Versorgungsausgleichs,\nLeistungen,\nAbgeordnetenbez\u00fcge und/oder\nprivate Ver\u00e4u\u00dferungsgesch\u00e4fte",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          2357,
+          2373
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 56,
+    "id": "CG.formG",
+    "source": {
+      "source_id": "DEB185",
+      "act_article": "Official ELSTER2025 instructions: AnlageG",
+      "official_url": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2025-20261024.html",
+      "raw_sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+      "reader_sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+      "native_LF": [
+        171,
+        172
+      ],
+      "exact_quote": "Anlage G\nHaben Sie Eink\u00fcnfte aus Gewerbebetrieb, dann k\u00f6nnen hier Angaben zum Gewinn und zur Steuererm\u00e4\u00dfigung nach \u00a7 35 EStG gemacht werden. Hinzu kommen Daten zum Ver\u00e4u\u00dferungsgewinn eines Betriebes, Teilbetriebes oder Mitunternehmeranteils und Sonstiges.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          166,
+          175
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": "Combined with EStG17(1) business-income classification; no 2026 field coordinate supplied."
+    },
+    "actual_read_bridge": {
+      "guide": "de-einkommensteuer-freelancer",
+      "quote_row": 18,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 57,
+    "id": "CG.guidance-title",
+    "source": {
+      "source_id": "DEB177",
+      "act_article": "BMF14May2025 official title/date pointer",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Abgeltungsteuer/2025-05-14-einzelfragen-zur-abgeltungsteuer.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-abgeltungsteuer-20250514.html",
+      "raw_sha256": "33b6bd7dfd51fe6265556809e8ba2e1841031b24632250f4b57e2c7381097133",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB177.txt",
+      "reader_sha256": "3dcba4754ad48eacd30989741fd1bd37676243b8d003036854b14b5a537fc664",
+      "native_LF": [
+        204,
+        205
+      ],
+      "exact_quote": "14.05.2025\nEinzelfragen zur Abgeltungsteuer",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          204,
+          205
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": "Landing-page title/date actually read; linked full letter body is not claimed read."
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 58,
+    "id": "AO149.general",
+    "source": {
+      "source_id": "DEB014",
+      "act_article": "AO149(1)/(2)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB014.txt",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        7,
+        8
+      ],
+      "exact_quote": "(1) Die Steuergesetze bestimmen, wer zur Abgabe einer Steuererkl\u00e4rung verpflichtet ist. Zur Abgabe einer Steuererkl\u00e4rung ist auch verpflichtet, wer hierzu von der Finanzbeh\u00f6rde aufgefordert wird. Die Aufforderung kann durch \u00f6ffentliche Bekanntmachung erfolgen. Die Verpflichtung zur Abgabe einer Steuererkl\u00e4rung bleibt auch dann bestehen, wenn die Finanzbeh\u00f6rde die Besteuerungsgrundlagen nach \u00a7 162 gesch\u00e4tzt hat.\n(2) Soweit die Steuergesetze nichts anderes bestimmen, sind Steuererkl\u00e4rungen, die sich auf ein Kalenderjahr oder auf einen gesetzlich bestimmten Zeitpunkt beziehen, sp\u00e4testens sieben Monate nach Ablauf des Kalenderjahres oder sieben Monate nach dem gesetzlich bestimmten Zeitpunkt abzugeben. Bei Steuerpflichtigen, die den Gewinn aus Land- und Forstwirtschaft nach einem vom Kalenderjahr abweichenden Wirtschaftsjahr ermitteln, endet die Frist nicht vor Ablauf des siebten Monats, der auf den Schluss des in dem Kalenderjahr begonnenen Wirtschaftsjahres folgt.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          24
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-trade-tax",
+      "quote_row": 48,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 59,
+    "id": "CG.corona-scope",
+    "source": {
+      "source_id": "DEB182",
+      "act_article": "EGAOArt97\u00a736(3) opening",
+      "official_url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/egao-97-36-20261024.html",
+      "raw_sha256": "473093a055687b4f1080906450a53bfa4454856afe4a25599e1907757d5436bc",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB182.txt",
+      "reader_sha256": "45ffa494336b97fdb64a8261370a05f74e069dcab59dd97c0b9eb6d7a325ae24",
+      "native_LF": [
+        9,
+        9
+      ],
+      "exact_quote": "(3) F\u00fcr die Besteuerungszeitr\u00e4ume 2020 bis 2024 sind die \u00a7\u00a7 109, 149, 152 und 233a der Abgabenordnung in der am 23. Juni 2022 geltenden Fassung mit folgenden Ma\u00dfgaben anzuwenden: 1.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          9,
+          9
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": "Explicit2020\u20132024 scope; ordinary AO deadlines used for2025/2026. This is not an extension for those years."
+    },
+    "actual_read_bridge": {
+      "guide": "de-corporate-tax",
+      "quote_row": 97,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 60,
+    "id": "AO149.adviser",
+    "source": {
+      "source_id": "DEB014",
+      "act_article": "AO149(3)/(4)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB014.txt",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        23,
+        24
+      ],
+      "exact_quote": "so sind diese Erkl\u00e4rungen vorbehaltlich des Absatzes 4 sp\u00e4testens bis zum letzten Tag des Monats Februar und in den F\u00e4llen des Absatzes 2 Satz 2 bis zum 31. Juli des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres abzugeben.\n(4) Das Finanzamt kann anordnen, dass Erkl\u00e4rungen im Sinne des Absatzes 3 vor dem letzten Tag des Monats Februar des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres abzugeben sind, wenn 1.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          24
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-trade-tax",
+      "quote_row": 50,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 61,
+    "id": "AO108.weekend",
+    "source": {
+      "source_id": "DEB015",
+      "act_article": "AO108(3)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-108-20261024.html",
+      "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB015.txt",
+      "reader_sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9",
+      "native_LF": [
+        9,
+        9
+      ],
+      "exact_quote": "(3) F\u00e4llt das Ende einer Frist auf einen Sonntag, einen gesetzlichen Feiertag oder einen Sonnabend, so endet die Frist mit dem Ablauf des n\u00e4chstfolgenden Werktags.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          13
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 15,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 62,
+    "id": "AO149.callin",
+    "source": {
+      "source_id": "DEB014",
+      "act_article": "AO149(4)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB014.txt",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        24,
+        43
+      ],
+      "exact_quote": "(4) Das Finanzamt kann anordnen, dass Erkl\u00e4rungen im Sinne des Absatzes 3 vor dem letzten Tag des Monats Februar des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres abzugeben sind, wenn 1.\nf\u00fcr den betroffenen Steuerpflichtigen a)\nf\u00fcr den vorangegangenen Besteuerungszeitraum Erkl\u00e4rungen nicht oder versp\u00e4tet abgegeben wurden,\nb)\nf\u00fcr den vorangegangenen Besteuerungszeitraum innerhalb von drei Monaten vor Abgabe der Steuererkl\u00e4rung oder innerhalb von drei Monaten vor dem Beginn des Zinslaufs im Sinne des \u00a7 233a Absatz 2 Satz 1 und 2 nachtr\u00e4gliche Vorauszahlungen festgesetzt wurden,\nc)\nVorauszahlungen f\u00fcr den Besteuerungszeitraum au\u00dferhalb einer Veranlagung herabgesetzt wurden,\nd)\ndie Veranlagung f\u00fcr den vorangegangenen Veranlagungszeitraum zu einer Abschlusszahlung von mindestens 25 Prozent der festgesetzten Steuer oder mehr als 10 000 Euro gef\u00fchrt hat,\ne)\ndie Steuerfestsetzung auf Grund einer Steuererkl\u00e4rung im Sinne des Absatzes 3 Nummer 1, 2 oder 4 voraussichtlich zu einer Abschlusszahlung von mehr als 10 000 Euro f\u00fchren wird oder\nf)\neine Au\u00dfenpr\u00fcfung vorgesehen ist,\n2.\nder betroffene Steuerpflichtige im Besteuerungszeitraum einen Betrieb er\u00f6ffnet oder eingestellt hat oder\n3.\nf\u00fcr Beteiligte an Gesellschaften oder Gemeinschaften Verluste festzustellen sind.\nF\u00fcr das Befolgen der Anordnung ist eine Frist von vier Monaten nach Bekanntgabe der Anordnung zu setzen. Ferner d\u00fcrfen die Finanz\u00e4mter nach dem Ergebnis einer automationsgest\u00fctzten Zufallsauswahl anordnen, dass Erkl\u00e4rungen im Sinne des Absatzes 3 vor dem letzten Tag des Monats Februar des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres mit einer Frist von vier Monaten nach Bekanntgabe der Anordnung abzugeben sind. In der Aufforderung nach Satz 3 ist darauf hinzuweisen, dass sie auf einer automationsgest\u00fctzten Zufallsauswahl beruht; eine weitere Begr\u00fcndung ist nicht erforderlich. In den F\u00e4llen des Absatzes 2 Satz 2 tritt an die Stelle des letzten Tages des Monats Februar der 31. Juli des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres. Eine Anordnung nach Satz 1 oder Satz 3 darf f\u00fcr die Abgabe der Erkl\u00e4rung keine k\u00fcrzere als die in Absatz 2 bestimmte Frist setzen. In den F\u00e4llen der S\u00e4tze 1 und 3 erstreckt sich eine Anordnung auf alle Erkl\u00e4rungen im Sinne des Absatzes 3, die vom betroffenen Steuerpflichtigen f\u00fcr den gleichen Besteuerungszeitraum oder Besteuerungszeitpunkt abzugeben sind.\n(5) Absatz 3 gilt nicht f\u00fcr Umsatzsteuererkl\u00e4rungen f\u00fcr das Kalenderjahr, wenn die gewerbliche oder berufliche T\u00e4tigkeit vor oder mit dem Ablauf des Besteuerungszeitraums endete.\n(6) Die oberste Landesfinanzbeh\u00f6rde oder eine von ihr bestimmte Landesfinanzbeh\u00f6rde kann zulassen, dass Personen, Gesellschaften, Verb\u00e4nde, Vereinigungen, Beh\u00f6rden und K\u00f6rperschaften im Sinne der \u00a7\u00a7 3 und 4 des Steuerberatungsgesetzes bis zu bestimmten Stichtagen einen bestimmten prozentualen Anteil der Erkl\u00e4rungen im Sinne des Absatzes 3 einreichen. Soweit Erkl\u00e4rungen im Sinne des Absatzes 3 in ein Verfahren nach Satz 1 einbezogen werden, ist Absatz 4 Satz 3 nicht anzuwenden. Die Einrichtung eines Verfahrens nach Satz 1 steht im Ermessen der obersten Landesfinanzbeh\u00f6rden und ist nicht einklagbar.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          24,
+          46
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-trade-tax",
+      "quote_row": 51,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 63,
+    "id": "AO152.surcharge",
+    "source": {
+      "source_id": "DEB016",
+      "act_article": "AO152(5)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB016.txt",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        27,
+        27
+      ],
+      "exact_quote": "F\u00fcr Steuererkl\u00e4rungen, die sich auf ein Kalenderjahr oder auf einen gesetzlich bestimmten Zeitpunkt beziehen, betr\u00e4gt der Versp\u00e4tungszuschlag f\u00fcr jeden angefangenen Monat der eingetretenen Versp\u00e4tung 0,25 Prozent der um die festgesetzten Vorauszahlungen und die anzurechnenden Steuerabzugsbetr\u00e4ge verminderten festgesetzten Steuer, mindestens jedoch 25 Euro f\u00fcr jeden angefangenen Monat der eingetretenen Versp\u00e4tung.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          35
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 19,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 64,
+    "id": "AO233a.interest",
+    "source": {
+      "source_id": "DEB017",
+      "act_article": "AO233a(1)/(2)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-233a-20261024.html",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB017.txt",
+      "reader_sha256": "707aa5c6d8b589d1ab3ea4e5c30d68d5121ad2a42c56fb9368e7ca2f69d4bd7d",
+      "native_LF": [
+        7,
+        8
+      ],
+      "exact_quote": "(1) F\u00fchrt die Festsetzung der Einkommen-, K\u00f6rperschaft-, Verm\u00f6gen-, Umsatz- oder Gewerbesteuer zu einem Unterschiedsbetrag im Sinne des Absatzes 3, ist dieser zu verzinsen. Dies gilt nicht f\u00fcr die Festsetzung von Vorauszahlungen und Steuerabzugsbetr\u00e4gen.\n(2) Der Zinslauf beginnt 15 Monate nach Ablauf des Kalenderjahrs, in dem die Steuer entstanden ist. Er beginnt f\u00fcr die Einkommen- und K\u00f6rperschaftsteuer 23 Monate nach diesem Zeitpunkt, wenn die Eink\u00fcnfte aus Land- und Forstwirtschaft bei der erstmaligen Steuerfestsetzung die anderen Eink\u00fcnfte \u00fcberwiegen; hierbei sind Kapitalertr\u00e4ge nach \u00a7 32d Absatz 1 und \u00a7 43 Absatz 5 des Einkommensteuergesetzes nicht zu ber\u00fccksichtigen. Er endet mit Ablauf des Tages, an dem die Steuerfestsetzung wirksam wird.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          18
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-trade-tax",
+      "quote_row": 59,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 65,
+    "id": "AO238.rate",
+    "source": {
+      "source_id": "DEB018",
+      "act_article": "AO238(1a)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-238-20261024.html",
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB018.txt",
+      "reader_sha256": "651db01a1f6c18060e1f1e63652986b0e4921fb1ce84da5d2a740ebea8ca0b48",
+      "native_LF": [
+        8,
+        8
+      ],
+      "exact_quote": "(1a) In den F\u00e4llen des \u00a7 233a betragen die Zinsen abweichend von Absatz 1 Satz 1 ab dem 1. Januar 2019 0,15 Prozent f\u00fcr jeden Monat, das hei\u00dft 1,8 Prozent f\u00fcr jedes Jahr.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          15
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 25,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 66,
+    "id": "AO240.surcharge",
+    "source": {
+      "source_id": "DEB019",
+      "act_article": "AO240(1)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-240-20261024.html",
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB019.txt",
+      "reader_sha256": "2cfa86cfaac164f5f98e3dc6a02b04d67165a70fc4439631021fe7a3ae0bf631",
+      "native_LF": [
+        7,
+        7
+      ],
+      "exact_quote": "(1) Wird eine Steuer nicht bis zum Ablauf des F\u00e4lligkeitstages entrichtet, so ist f\u00fcr jeden angefangenen Monat der S\u00e4umnis ein S\u00e4umniszuschlag von 1 Prozent des abgerundeten r\u00fcckst\u00e4ndigen Steuerbetrags zu entrichten; abzurunden ist auf den n\u00e4chsten durch 50 Euro teilbaren Betrag.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          15
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 27,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 67,
+    "id": "Exit.scope",
+    "source": {
+      "source_id": "DEB020",
+      "act_article": "AStG6(1)",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__6.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/astg-6-20261026.html",
+      "raw_sha256": "f0f931afd93ee0c1ba04ef2ec47d803a709daf63df1a0e242dddbf91018a43df",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB020.txt",
+      "reader_sha256": "9f8b931a21ff5f60975194d1097a925a3290b315b3e38e5921cae418a7e3723f",
+      "native_LF": [
+        7,
+        12
+      ],
+      "exact_quote": "(1) Vorbehaltlich der Vorschriften des Einkommensteuergesetzes, K\u00f6rperschaftsteuergesetzes und Umwandlungssteuergesetzes stehen bei unbeschr\u00e4nkt Steuerpflichtigen der Ver\u00e4u\u00dferung von Anteilen im Sinne des \u00a7 17 Absatz 1 Satz 1 des Einkommensteuergesetzes zum gemeinen Wert gleich 1.\ndie Beendigung der unbeschr\u00e4nkten Steuerpflicht infolge der Aufgabe des Wohnsitzes oder des gew\u00f6hnlichen Aufenthalts,\n2.\ndie unentgeltliche \u00dcbertragung auf eine nicht unbeschr\u00e4nkt steuerpflichtige Person sowie,\n3.\nvorbehaltlich der Nummern 1 und 2, der Ausschluss oder die Beschr\u00e4nkung des Besteuerungsrechts der Bundesrepublik Deutschland hinsichtlich des Gewinns aus der Ver\u00e4u\u00dferung der Anteile.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          31
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "leaving-germany-exit-tax",
+      "quote_row": 4,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 68,
+    "id": "Exit.residence",
+    "source": {
+      "source_id": "DEB020",
+      "act_article": "AStG6(2)",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__6.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/astg-6-20261026.html",
+      "raw_sha256": "f0f931afd93ee0c1ba04ef2ec47d803a709daf63df1a0e242dddbf91018a43df",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB020.txt",
+      "reader_sha256": "9f8b931a21ff5f60975194d1097a925a3290b315b3e38e5921cae418a7e3723f",
+      "native_LF": [
+        20,
+        20
+      ],
+      "exact_quote": "(2) Unbeschr\u00e4nkt Steuerpflichtige im Sinne des Absatzes 1 sind nat\u00fcrliche Personen, die innerhalb der letzten zw\u00f6lf Jahre vor den in Absatz 1 Satz 1 Nummer 1 bis 3 genannten Tatbest\u00e4nden insgesamt mindestens sieben Jahre unbeschr\u00e4nkt steuerpflichtig im Sinne des \u00a7 1 Absatz 1 des Einkommensteuergesetzes gewesen sind.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          31
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "leaving-germany-exit-tax",
+      "quote_row": 5,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 69,
+    "id": "Exit.instalments",
+    "source": {
+      "source_id": "DEB020",
+      "act_article": "AStG6(4)",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__6.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/astg-6-20261026.html",
+      "raw_sha256": "f0f931afd93ee0c1ba04ef2ec47d803a709daf63df1a0e242dddbf91018a43df",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB020.txt",
+      "reader_sha256": "9f8b931a21ff5f60975194d1097a925a3290b315b3e38e5921cae418a7e3723f",
+      "native_LF": [
+        28,
+        28
+      ],
+      "exact_quote": "(4) Die festgesetzte Steuer, die auf die nach Absatz 1 realisierten Eink\u00fcnfte entf\u00e4llt, kann auf Antrag des Steuerpflichtigen in sieben gleichen Jahresraten entrichtet werden. Dem Antrag ist in der Regel nur gegen Sicherheitsleistung stattzugeben. Die erste Jahresrate ist innerhalb eines Monats nach Bekanntgabe des Steuerbescheids zu entrichten; die \u00fcbrigen Jahresraten sind jeweils am 31. Juli der Folgejahre f\u00e4llig. Die Jahresraten sind nicht zu verzinsen.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          31
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "leaving-germany-exit-tax",
+      "quote_row": 7,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 70,
+    "id": "Exit.return",
+    "source": {
+      "source_id": "DEB020",
+      "act_article": "AStG6(3)",
+      "official_url": "https://www.gesetze-im-internet.de/astg/__6.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/astg-6-20261026.html",
+      "raw_sha256": "f0f931afd93ee0c1ba04ef2ec47d803a709daf63df1a0e242dddbf91018a43df",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB020.txt",
+      "reader_sha256": "9f8b931a21ff5f60975194d1097a925a3290b315b3e38e5921cae418a7e3723f",
+      "native_LF": [
+        21,
+        27
+      ],
+      "exact_quote": "(3) Beruht die Beendigung der unbeschr\u00e4nkten Steuerpflicht im Sinne des Absatzes 1 Satz 1 Nummer 1 auf einer nur vor\u00fcbergehenden Abwesenheit des Steuerpflichtigen und wird der Steuerpflichtige innerhalb von sieben Jahren seit Beendigung der unbeschr\u00e4nkten Steuerpflicht wieder unbeschr\u00e4nkt steuerpflichtig, entf\u00e4llt der Steueranspruch nach Absatz 1, soweit 1.\ndie Anteile in der Zwischenzeit weder ver\u00e4u\u00dfert, \u00fcbertragen noch in ein Betriebsverm\u00f6gen eingelegt wurden,\n2.\nkeine Gewinnaussch\u00fcttungen oder keine Einlagenr\u00fcckgew\u00e4hr erfolgt sind, deren gemeiner Wert insgesamt mehr als ein Viertel des Werts im Sinne des Absatzes 1 betr\u00e4gt, und\n3.\ndas Besteuerungsrecht der Bundesrepublik Deutschland hinsichtlich des Gewinns aus der Ver\u00e4u\u00dferung der Anteile mindestens in dem Umfang wieder begr\u00fcndet wird, wie es im Zeitpunkt der Beendigung der Steuerpflicht bestand.\nAbweichend von Satz 1 Nummer 1 ist eine unentgeltliche \u00dcbertragung durch den Steuerpflichtigen auf eine nat\u00fcrliche Person von Todes wegen unbeachtlich, wenn die Voraussetzungen des Satzes 1 durch die betreffende Person oder, infolge aufeinanderfolgender unentgeltlicher Weiter\u00fcbertragung zwischen nat\u00fcrlichen Personen von Todes wegen, durch deren unmittelbaren oder mittelbaren Rechtsnachfolger erf\u00fcllt werden. Das Finanzamt, das im Zeitpunkt der Beendigung der unbeschr\u00e4nkten Steuerpflicht nach \u00a7 19 der Abgabenordnung zust\u00e4ndig ist, kann die Frist auf Antrag des Steuerpflichtigen oder im Fall des Satzes 2 dessen Rechtsnachfolgers insgesamt um h\u00f6chstens f\u00fcnf Jahre verl\u00e4ngern, wenn die Absicht zur R\u00fcckkehr unver\u00e4ndert fortbesteht. Beruht ein Ausschluss des Besteuerungsrechts im Sinne des Absatzes 1 Satz 1 Nummer 3 auf einer nur vor\u00fcbergehenden Abwesenheit des Steuerpflichtigen, gelten die S\u00e4tze 1 bis 3 entsprechend. Wird im Fall der unentgeltlichen \u00dcbertragung im Sinne des Absatzes 1 Satz 1 Nummer 2 auf eine nat\u00fcrliche Person die betreffende Person innerhalb von sieben Jahren seit der \u00dcbertragung unbeschr\u00e4nkt steuerpflichtig, gelten die S\u00e4tze 1 bis 3 entsprechend.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          31
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 71,
+    "id": "CG.fund-exit",
+    "source": {
+      "source_id": "DEB174",
+      "act_article": "InvStG19(3)",
+      "official_url": "https://www.gesetze-im-internet.de/invstg_2018/__19.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/invstg-19-20261026.html",
+      "raw_sha256": "766e08ce3f2365ef447650776d7cf05fad96c2a571082e8a532bd9d15350d2f2",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB174.txt",
+      "reader_sha256": "42efc20b8ad863a9ebf7d5c174b81dfcd6b788e4e4a8efe2b275137a739b600b",
+      "native_LF": [
+        9,
+        22
+      ],
+      "exact_quote": "(3) Soweit ein unbeschr\u00e4nkt Steuerpflichtiger seine Investmentanteile nicht im Betriebsverm\u00f6gen h\u00e4lt, stehen der Ver\u00e4u\u00dferung von Investmentanteilen zum gemeinen Wert gleich 1.\ndie Beendigung der unbeschr\u00e4nkten Steuerpflicht des Anlegers infolge der Aufgabe des Wohnsitzes oder des gew\u00f6hnlichen Aufenthalts,\n2.\ndie unentgeltliche \u00dcbertragung auf eine nicht unbeschr\u00e4nkt steuerpflichtige Person sowie,\n3.\nvorbehaltlich der Nummern 1 und 2, der Ausschluss oder die Beschr\u00e4nkung des Besteuerungsrechts der Bundesrepublik Deutschland hinsichtlich des Gewinns aus der Ver\u00e4u\u00dferung der Investmentanteile.\nSatz 1 ist nur anzuwenden, wenn 1.\ndie Summe der nach Absatz 1, \u00a7 22 und \u00a7 56 ermittelten steuerpflichtigen Gewinne insgesamt positiv ist und\n2.\nder Anleger a)\ninnerhalb der letzten f\u00fcnf Jahre vor der Ver\u00e4u\u00dferung im Sinne des Satzes 1 unmittelbar oder mittelbar mindestens 1 Prozent der ausgegebenen Investmentanteile gehalten hat oder\nb)\nim Zeitpunkt der Ver\u00e4u\u00dferung im Sinne des Satzes 1 unmittelbar oder mittelbar Investmentanteile an dem Investmentfonds h\u00e4lt, deren Anschaffungskosten mindestens 500 000 Euro betragen.\n\u00a7 6 Absatz 1 Satz 2 und 3 sowie Absatz 2 bis 5 des Au\u00dfensteuergesetzes und \u00a7 17 Absatz 1 Satz 4 sowie Absatz 2 Satz 3 bis 5 des Einkommensteuergesetzes sind entsprechend anzuwenden. Bei der entsprechenden Anwendung des \u00a7 6 Absatz 3 Satz 1 Nummer 2 und Absatz 4 Satz 5 Nummer 5 des Au\u00dfensteuergesetzes treten die Aussch\u00fcttungen nach \u00a7 16 Absatz 1 Nummer 1 an die Stelle der Gewinnaussch\u00fcttungen und die steuerfreien Kapitalr\u00fcckzahlungen nach \u00a7 17 Absatz 1 an die Stelle der Einlagenr\u00fcckgew\u00e4hr. Im Fall des Satzes 1 ist keine Kapitalertragsteuer zu erheben.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          23
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  }
+]

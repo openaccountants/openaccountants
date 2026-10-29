@@ -1,0 +1,70 @@
+{
+  "official_url": "https://usth.bundesfinanzministerium.de/ao/2026/Anhaenge/BMF-Schreiben-und-gleichlautende-Laendererlasse/Anhang-33/inhalt.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/gobd-2026/official-annex.raw.html",
+  "raw_sha256": "5987f8c5108eee225bb64aa3f91507465b1e72e9ef933c22d12ada9e380b4378",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/gobd-2026/official-annex.reader.txt",
+  "reader_sha256": "a9d917866136d75b8b46deebbc1e9db790301dbb2d0e56451cc399dd07f2a076",
+  "read_date": "2026-10-29",
+  "line_convention": "literal LF split(\\n)",
+  "actual_selected_reads": [
+    [
+      1,
+      8
+    ],
+    [
+      252,
+      266
+    ],
+    [
+      490,
+      501
+    ],
+    [
+      504,
+      523
+    ],
+    [
+      543,
+      571
+    ],
+    [
+      612,
+      639
+    ]
+  ],
+  "scope_note": "New acquisition from official BMF2026 AO annex because existing2025 amendment source omitted conditions. Only selected ranges actually read, not689-line reader or entire AO. Paragraph185 at637–638 expressly dates14July2025 effect; header still names2024. Reader extraction/missing-bs4 attempts and initialDNSfailure retained. No secondary source relied upon.",
+  "selected_provisions": [
+    {
+      "article": "GoBD76",
+      "native_LF": [
+        254,
+        265
+      ],
+      "quote": "4.3 Erfassungsgerechte Aufbereitung der Buchungsbelege\n75\nEine erfassungsgerechte Aufbereitung der Buchungsbelege in Papierform oder die entsprechende Übernahme von Beleginformationen aus elektronischen Belegen (Daten, Datensätze, elektronische Dokumente und elektronische Unterlagen) ist sicherzustellen. Diese Aufbereitung der Belege ist insbesondere bei Fremdbelegen von Bedeutung, da der Steuerpflichtige im Allgemeinen keinen Einfluss auf die Gestaltung der ihm zugesandten Handels- und Geschäftsbriefe (z. B. Eingangsrechnungen) hat.\n76\nWerden neben bildhaften Urschriften auch elektronische Meldungen bzw. Datensätze ausgestellt (identische Mehrstücke derselben Belegart), ist die Aufbewahrung der tatsächlich weiterverarbeiteten Formate (buchungsbegründende Belege) ausreichend,\nsofern diese über die höchste maschinelle Auswertbarkeit verfügen. In diesem Fall erfüllt das Format mit der höchsten maschinellen Auswertbarkeit mit dessen vollständigem Dateninhalt die Belegfunktion und muss mit dessen vollständigem Inhalt gespeichert werden. Andernfalls sind beide Formate aufzubewahren. Dies gilt entsprechend, wenn mehrere elektronische Meldungen bzw. mehrere Datensätze ohne bildhafte Urschrift ausgestellt werden. Dies gilt auch für elektronische Meldungen bzw. Datensätze (strukturierte Daten, wie z. B. ein monatlicher Kontoauszug im CSV-Format oder als XML-Datei, strukturierter Teil einer E-Rechnung), für die inhaltsgleiche bildhafte Dokumente zusätzlich bereitgestellt werden. Eine zusätzliche Archivierung der inhaltsgleichen Dateien im PDF-Format oder papierhaften Belegen kann bei Erfüllung der Belegfunktion durch die strukturierten Dateien entfallen.\nBei Einsatz eines Fakturierungsprogramms muss unter Berücksichtigung der vorgenannten Voraussetzungen keine bildhafte Kopie der Ausgangsrechnung (z. B. in Form einer PDF-Datei oder des PDF-Teils eines hybriden Rechnungsformats) ab Erstellung gespeichert bzw. aufbewahrt werden, wenn jederzeit auf Anforderung ein inhaltlich identisches Mehrstück der Ausgangsrechnung erstellt werden kann.\nHierfür sind u. a. folgende Voraussetzungen zu beachten:\nEntsprechende Stammdaten (z. B. Debitoren, Warenwirtschaft etc.) werden laufend historisiert\nAGB werden ebenfalls historisiert und aus der Verfahrensdokumentation ist ersichtlich, welche AGB bei Erstellung der Originalrechnung verwendet wurden\nOriginallayout des verwendeten Geschäftsbogens wird als Muster (Layer) gespeichert und bei Änderungen historisiert. Zudem ist aus der Verfahrensdokumentation ersichtlich, welches Format bei Erstellung der Originalrechnung verwendet wurde (idealerweise kann bei Ausdruck oder Lesbarmachung des Rechnungsdoppels dieses Originallayout verwendet werden).\nWeiterhin sind die Daten des Fakturierungsprogramms in maschinell auswertbarer Form und unveränderbar aufzubewahren."
+    },
+    {
+      "article": "GoBD135",
+      "native_LF": [
+        492,
+        499
+      ],
+      "quote": "135\nBei Umwandlung (Konvertierung) aufbewahrungspflichtiger Unterlagen in ein unternehmenseigenes Format (sog. Inhouse-Format) sind beide Versionen zu archivieren, derselben Aufzeichnung zuzuordnen und mit demselben Index zu verwalten sowie die konvertierte Version als solche zu kennzeichnen.\nDie Aufbewahrung beider Versionen ist bei Beachtung folgender Anforderungen nicht erforderlich, sondern es ist die Aufbewahrung der konvertierten Fassung ausreichend:\nEs wird keine bildliche oder inhaltliche Veränderung vorgenommen.\nBei der Konvertierung gehen keine sonstigen aufbewahrungspflichtigen Informationen verloren.\nDie ordnungsgemäße und verlustfreie Konvertierung wird dokumentiert (Verfahrensdokumentation).\nDie maschinelle Auswertbarkeit und der Datenzugriff durch die Finanzbehörde werden nicht eingeschränkt; dabei ist es zulässig, wenn bei der Konvertierung Zwischenaggregationsstufen nicht gespeichert, aber in der Verfahrensdokumentation so dargestellt werden, dass die retrograde und progressive Prüfbarkeit sichergestellt ist.\nNicht aufbewahrungspflichtig sind die während der maschinellen Verarbeitung durch das Buchführungssystem erzeugten Dateien, sofern diese ausschließlich einer temporären Zwischenspeicherung von Verarbeitungsergebnissen dienen und deren Inhalte im Laufe des weiteren Verarbeitungsprozesses vollständig Eingang in die Buchführungsdaten finden. Voraussetzung ist jedoch, dass bei der weiteren Verarbeitung keinerlei „Verdichtung“ aufzeichnungs- und aufbewahrungspflichtiger Daten (vgl. Rzn. 3 bis 5) vorgenommen wird."
+    },
+    {
+      "article": "GoBD150–155",
+      "native_LF": [
+        545,
+        557
+      ],
+      "quote": "150\nFür die Prüfung ist eine aussagefähige und aktuelle Verfahrensdokumentation notwendig, die alle System- bzw. Verfahrensänderungen inhaltlich und zeitlich lückenlos dokumentiert.\n10.1 Verfahrensdokumentation\n151\nDa sich die Ordnungsmäßigkeit neben den elektronischen Büchern und sonst erforderlichen Aufzeichnungen auch auf die damit in Zusammenhang stehenden Verfahren und Bereiche des DV-Systems bezieht (siehe unter 3.), muss für jedes DV-System eine übersichtlich gegliederte Verfahrensdokumentation vorhanden sein, aus der Inhalt, Aufbau, Ablauf und Ergebnisse des DV-Verfahrens vollständig und schlüssig ersichtlich sind. Der Umfang der im Einzelfall erforderlichen Dokumentation wird dadurch bestimmt, was zum Verständnis des DV-Verfahrens, der Bücher und Aufzeichnungen sowie der aufbewahrten Unterlagen notwendig ist. Die Verfahrensdokumentation muss verständlich und damit für einen sachverständigen Dritten in angemessener Zeit nachprüfbar sein. Die konkrete Ausgestaltung der Verfahrensdokumentation ist abhängig von der Komplexität und Diversifikation der Geschäftstätigkeit und der Organisationsstruktur sowie des eingesetzten DV-Systems.\n152\nDie Verfahrensdokumentation beschreibt den organisatorisch und technisch gewollten Prozess, z. B. bei elektronischen Dokumenten von der Entstehung der Informationen über die Indizierung, Verarbeitung und Speicherung, dem eindeutigen Wiederfinden und der maschinellen Auswertbarkeit, der Absicherung gegen Verlust und Verfälschung und der Reproduktion.\n153\nDie Verfahrensdokumentation besteht in der Regel aus einer allgemeinen Beschreibung, einer Anwenderdokumentation, einer technischen Systemdokumentation und einer Betriebsdokumentation.\n154\nFür den Zeitraum der Aufbewahrungsfrist muss gewährleistet und nachgewiesen sein, dass das in der Dokumentation beschriebene Verfahren dem in der Praxis eingesetzten Verfahren voll entspricht. Dies gilt insbesondere für die eingesetzten Versionen der Programme (Programmidentität). Änderungen einer Verfahrensdokumentation müssen historisch nachvollziehbar sein. Dem wird genügt, wenn die Änderungen versioniert sind und eine nachvollziehbare Änderungshistorie vorgehalten wird. Aus der Verfahrensdokumentation muss sich ergeben, wie die Ordnungsvorschriften (z. B. §§ 145 ff. AO, §§ 238 ff. HGB) und damit die in diesem Schreiben enthaltenen Anforderungen beachtet werden. Die Aufbewahrungsfrist für die Verfahrensdokumentation läuft nicht ab, soweit und solange die Aufbewahrungsfrist für die Unterlagen noch nicht abgelaufen ist, zu deren Verständnis sie erforderlich ist.\n155\nSoweit eine fehlende oder ungenügende Verfahrensdokumentation die Nachvollziehbarkeit und Nachprüfbarkeit nicht beeinträchtigt, liegt kein formeller Mangel mit sachlichem Gewicht vor, der zum Verwerfen der Buchführung führen kann."
+    },
+    {
+      "article": "GoBD182–185",
+      "native_LF": [
+        630,
+        639
+      ],
+      "quote": "13. Anwendungsregelung\n182\nDie GoBD in der Fassung vom 28. November 2019 treten mit Wirkung vom 1. Januar 2020 an die Stelle des BMF-Schreibens vom 14. November 2014 - IV A 4 - S 0316/13/10003 -, BStBl I S. 1450.\n183\nDie GoBD in der Fassung vom 28. November 2019 sind auf Besteuerungszeiträume anzuwenden, die nach dem 31. Dezember 2019 beginnen. Es wird nicht beanstandet, wenn der Steuerpflichtige diese Grundsätze auf Besteuerungszeiträume anwendet, die vor dem 1. Januar 2020 enden.\n184\nDie GoBD in der Fassung vom 11. März 2024 gelten ab dem 1. April 2024.\n185\nDie GoBD in der Fassung vom 14. Juli 2025 sind mit Wirkung vom 14. Juli 2025 anzuwenden.\nAnlage 1"
+    }
+  ]
+}

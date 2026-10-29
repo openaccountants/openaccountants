@@ -1,0 +1,301 @@
+{
+  "role": "writer, not independent PASS",
+  "controls": [
+    {
+      "id": "R55.extent(2000, True, 2000)",
+      "actual": "2000",
+      "expected": "2000",
+      "premise": "Laterassessedpayablebalance5000; actualcreditedtothisassessment independentlyestablished, notbankdebit/unrelatedtransfer. Qualifiedperiod separatelydetermined under8/3sentence4.",
+      "pass": true
+    },
+    {
+      "id": "R55.extent(2000, True, 0)",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Laterassessedpayablebalance5000; actualcreditedtothisassessment independentlyestablished, notbankdebit/unrelatedtransfer. Qualifiedperiod separatelydetermined under8/3sentence4.",
+      "pass": true
+    },
+    {
+      "id": "R55.extent(2000, False, 0)",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Laterassessedpayablebalance5000; actualcreditedtothisassessment independentlyestablished, notbankdebit/unrelatedtransfer. Qualifiedperiod separatelydetermined under8/3sentence4.",
+      "pass": true
+    },
+    {
+      "id": "R55.extent(5000, True, 2000)",
+      "actual": "2000",
+      "expected": "2000",
+      "premise": "Laterassessedpayablebalance5000; actualcreditedtothisassessment independentlyestablished, notbankdebit/unrelatedtransfer. Qualifiedperiod separatelydetermined under8/3sentence4.",
+      "pass": true
+    },
+    {
+      "id": "R55.unrelieved-balance",
+      "actual": "3000",
+      "expected": "3000",
+      "premise": "Partialqualifiedpayment cannot erasewhole5000balance; no unsupporteddate assumption.",
+      "pass": true
+    },
+    {
+      "id": "R55.whole-raw-interest",
+      "actual": "45.0000",
+      "expected": "45",
+      "premise": "Stipulatedsixwholemonths/50multiplebase; actualperiodinput independentlyestablished, notinferred from bankdate.",
+      "pass": true
+    },
+    {
+      "id": "R55.only-qualified-interest",
+      "actual": "18.0000",
+      "expected": "18",
+      "premise": "Sameactualqualified2000amount/period gives18relief, not45; actualnoticeperiods/order independentlychecked.",
+      "pass": true
+    },
+    {
+      "id": "R55.remaining-interest",
+      "actual": "27",
+      "expected": "27",
+      "premise": "Samefixture, otherstatutorycorrectionsandwaiversindependentlyexcluded; no newgeneralinterestalgorithm.",
+      "pass": true
+    },
+    {
+      "id": "R55.youngest-first",
+      "actual": "['2028-05-01', '2028-04-01']",
+      "expected": "['2028-05-01', '2028-04-01']",
+      "premise": "Actual individualperformance dates source3sentence4order, not an assumption that all shareonestopdate.",
+      "pass": true
+    }
+  ],
+  "control_count": 9,
+  "Guide_inverse_protected_case_section_exact": true,
+  "old_origins459_exact_identity_and_body_membership": true,
+  "coarse_routes108_corrected": "sixdiscriminatorsandtestarchive-versuscaseclassification checked",
+  "old_root_seal_members_unchanged": 81,
+  "source_checks": [
+    {
+      "id": "OLD.DATES",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.ARISE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.NOTICE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.BASE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.ADJUST",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.SMALL",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.IGNORE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.CHILD",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.RENT",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.LATER",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.MIN",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.SOLI_BASE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.SOLI_LIMIT",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.SOLI_RATE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.SOLI_YEAR",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.CHURCH_PRE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.CHURCH_STATE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.CHURCH_RATE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.CHURCH_SPECIAL",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.CREDIT",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.BALANCE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.NOT_EXPENSE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.ANCILLARY",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.WEEKENDS",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.PAYMENT",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.CHANGE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.APPLY",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.VALID",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.REGISTER",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.REGISTER_MONTH",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.LATE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.LATE_ANCILLARY",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.GRACE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.INTEREST_SCOPE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.INTEREST_PERIOD",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.INTEREST_BASE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.VOLUNTARY",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.INTEREST_RATE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.FULL_MONTH",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.ROUND",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.HIST_2019",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.HIST_2020_2024",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.OLD_ADJUST",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.FALSE",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.ATTEMPT",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.DEFERRAL",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.DEF_INTEREST",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.DEF_CREDIT",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.PERSON",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.PARTNERS",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "OLD.ELSTER",
+      "original_attributed_official_observation": "original rooted receipt preserved, no newHTMLclaim"
+    },
+    {
+      "id": "OLD.MUNICIPAL",
+      "original_attributed_official_observation": "original rooted receipt preserved, no newHTMLclaim"
+    },
+    {
+      "id": "R55.extent",
+      "literal_selected_excerpt_and_hashes": true
+    },
+    {
+      "id": "R55.period-order",
+      "literal_selected_excerpt_and_hashes": true
+    }
+  ],
+  "original_examples": {
+    "oa_count": 2,
+    "failures": [],
+    "five_further_qualitative_cases_exact": true
+  },
+  "schema": {
+    "errors": [],
+    "warnings": []
+  },
+  "diff_returncode": 0
+}

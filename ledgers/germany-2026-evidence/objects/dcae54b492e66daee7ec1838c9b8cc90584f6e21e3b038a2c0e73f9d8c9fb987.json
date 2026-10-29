@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Optimization-R1-partnership-return-option root-selected A",
+    "before": "- **§ 1a KStG option.** A commercial or registered civil-law partnership, not a sole trader, may be taxed like a corporation. It cannot be revoked, is filed a month before the business year, and ends the EÜR and the § 35 EStG credit. https://www.gesetze-im-internet.de/kstg_1977/__1a.html",
+    "after": "- **§ 1a KStG option.** A commercial or registered civil-law partnership, not a sole trader, may be taxed like a corporation. The initial application is irrevocable and is filed at least one month before the business year. A separate later Rückoption is available under § 1a(4), with its own deemed-conversion consequences. The corporate-tax option ends the EÜR and the § 35 EStG credit. https://www.gesetze-im-internet.de/kstg_1977/__1a.html"
+  },
+  {
+    "label": "Optimization-R2-inputVAT-gift-gate root-selected A",
+    "before": "| Input VAT timing, § 15 | On receipt of the supply plus an invoice meeting § 14 UStG; payment is not a condition. None on gifts, guest houses, hunting or yachts |",
+    "after": "| Input VAT timing, § 15 | On receipt of the supply plus an invoice meeting § 14 UStG; payment is not a condition. None on gifts, guest houses, hunting or yachts |"
+  },
+  {
+    "label": "monotonic content version, date already29October2026",
+    "before": "version: 1.1\n",
+    "after": "version: 1.2\n"
+  },
+  {
+    "label": "exact selected source-read note before existing disclaimer",
+    "before": "## Disclaimer",
+    "after": "Source read on 29 October 2026 for the two narrow corrections: [KStG § 1a(1) and (4)](https://www.gesetze-im-internet.de/kstg_1977/__1a.html), initial irrevocable application and separate later Rückoption; [UStG § 15(1a)](https://www.gesetze-im-internet.de/ustg_1980/__15.html) with [EStG § 4(5) no. 1](https://www.gesetze-im-internet.de/estg/__4.html), the input-VAT exclusion follows the actual expense prohibition. No new legal-form or input-VAT case is certified.\n\n## Disclaimer"
+  }
+]

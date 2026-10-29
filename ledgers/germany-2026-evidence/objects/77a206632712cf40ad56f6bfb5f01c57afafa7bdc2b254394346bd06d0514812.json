@@ -1,0 +1,12 @@
+[
+  {
+    "old": "version: 2.4",
+    "new": "version: 2.5",
+    "native_LF": 4
+  },
+  {
+    "old": "Voluntary payments accepted before the assessment stop interest (§ 233a(8)).",
+    "new": "Under § 233a(8), interest is not set or is remitted only to the extent a payment or other performance for a later effective assessment was accepted by the office and actually credited against the assessed tax payable. Apply § 233a(3) sentence 4 correspondingly: actual individual performance dates/amounts and the statutory chronological order, starting with the most recent performance, determine the relevant periods. Obtain the accepted-and-credited amount/date and later assessment, not just a bank debit; a qualifying EUR 2,000 payment against a EUR 5,000 balance does not give whole-balance relief. Subsequent assessment reductions can also reduce the interest waiver under § 233a(8); no unsupported universal stop date is assumed.",
+    "native_LF": 84
+  }
+]

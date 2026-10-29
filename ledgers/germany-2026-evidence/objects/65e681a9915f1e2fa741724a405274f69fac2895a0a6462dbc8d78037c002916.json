@@ -1,0 +1,12 @@
+[
+  {
+    "old": "**Small business: what counts.** Total turnover is the sum of taxable supplies counted on receipts,",
+    "new": "**Small business: what counts.** Total turnover is the sum of supplies within the scope of VAT (steuerbare Umsätze), counted on receipts,",
+    "native_LF": 86
+  },
+  {
+    "old": "version: 0.3",
+    "new": "version: 0.4",
+    "native_LF": 4
+  }
+]

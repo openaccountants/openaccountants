@@ -1,0 +1,152 @@
+[
+  {
+    "label": "Swisswithholding",
+    "actual": "3600",
+    "expected": "3600"
+  },
+  {
+    "label": "tariffz",
+    "actual": "42201/10000",
+    "expected": "42201/10000"
+  },
+  {
+    "label": "Germantariff",
+    "actual": "14233",
+    "expected": "14233"
+  },
+  {
+    "label": "balance",
+    "actual": "10633",
+    "expected": "10633"
+  },
+  {
+    "label": "totaltax",
+    "actual": "14233",
+    "expected": "14233"
+  },
+  {
+    "label": "contractdays",
+    "actual": "144",
+    "expected": "144"
+  },
+  {
+    "label": "nonreturnlimit",
+    "actual": "36",
+    "expected": "36"
+  },
+  {
+    "label": "workdays",
+    "actual": "132",
+    "expected": "132"
+  },
+  {
+    "label": "commutedays",
+    "actual": "72",
+    "expected": "72"
+  },
+  {
+    "label": "minimumcommute",
+    "actual": "132/5",
+    "expected": "132/5"
+  },
+  {
+    "label": "nonreturnmargin",
+    "actual": "6",
+    "expected": "6"
+  },
+  {
+    "label": "returnmargin",
+    "actual": "228/5",
+    "expected": "228/5"
+  },
+  {
+    "label": "alternativecommute",
+    "actual": "22",
+    "expected": "22"
+  },
+  {
+    "label": "alternativemargin",
+    "actual": "-22/5",
+    "expected": "-22/5"
+  },
+  {
+    "label": "unreduceddenominatorthreshold",
+    "actual": "144/5",
+    "expected": "144/5"
+  },
+  {
+    "label": "originalstillpassesunreduced",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "alternativestillfailsunreduced",
+    "actual": "False",
+    "expected": "False"
+  },
+  {
+    "label": "60exactallowed",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "61notallowed",
+    "actual": "False",
+    "expected": "False"
+  },
+  {
+    "label": "road100notstrictlyover",
+    "actual": "False",
+    "expected": "False"
+  },
+  {
+    "label": "road100.1strictlyover",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "inheritancetail5exact",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "Swissreversebase",
+    "actual": "80000",
+    "expected": "80000"
+  },
+  {
+    "label": "unadvised2026dueweekday",
+    "actual": "5",
+    "expected": "5"
+  },
+  {
+    "label": "advised2026due",
+    "actual": "2028-02-29",
+    "expected": "2028-02-29"
+  },
+  {
+    "label": "Swissordinarythresholdexact",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "Swissordinarythresholdbelow",
+    "actual": "False",
+    "expected": "False"
+  },
+  {
+    "label": "Swissdomestic35percent",
+    "actual": "3500",
+    "expected": "3500"
+  },
+  {
+    "label": "DE-L19netpasses",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "DE-L19agreedfails",
+    "actual": "False",
+    "expected": "False"
+  }
+]

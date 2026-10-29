@@ -1,0 +1,7 @@
+{
+  "failure": "Exact full-native-LF assertion for reused VAT.UAEKUDUTY quote",
+  "observation": "Original A label/quotation expressly covers first three sentences, but LF40359 also begins sentence4 after the selected sentence3. Exact quote is a literal prefix of recorded LF scope, not a wrong/missing quotation.",
+  "actual_bounded_read": "Writer actually read full LF40351\u201340359 while inspecting this assertion; sentence4 opening is not promoted to a complete rule.",
+  "correction": "Preserve original quotation verbatim and require exact literal prefix only for this explicitly labelled anchor; full literal equality retained for every other source anchor.",
+  "Guide_change_required": false
+}

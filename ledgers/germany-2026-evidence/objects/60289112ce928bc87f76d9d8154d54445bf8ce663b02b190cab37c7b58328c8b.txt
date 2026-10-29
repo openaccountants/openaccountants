@@ -1,0 +1,217 @@
+BZSt - Erstattungsverfahren von der Steuer auf Kapitalerträge nach § 50c Absatz 3 EStG / § 44a Absatz 9 EStG
+Hinweis zur Verwendung von Cookies
+Wir möchten zur Verbesserung unserer Website das Nutzungsverhalten analysieren und Zugriffsstatistiken erstellen. Dafür werden mit der Webanalyse-Software Matomo statistische Informationen erfasst und ausgewertet. Ausschließlich mit Ihrer Einwilligung speichern wir dafür ein Statistik-Cookie auf Ihrem Endgerät und greifen auf für diesen Zweck erforderliche Geräteinformationen Ihres Endgerätes zu. Zu keiner Zeit werden diese Daten mit persönlichen Daten in Verbindung gebracht oder an Dritte weitergegeben. Weitere Informationen finden Sie in unserer Datenschutzerklärung. Dort ist auch jederzeit der Widerruf Ihrer Einwilligung möglich.
+Einverstanden
+Springe direkt zu:
+Inhalt
+Hauptmenü
+Suche
+BZSt Online.Portal
+Kontakt
+English
+Leichte Sprache
+Gebärdensprache
+Bundeszentralamt für Steuern (Link zur Startseite)
+Dieses Dokument bestimmt, ob ein Zusatzlogo ausgegeben wird.
+Ein im Feld Wert eingehängtes Logo wird als Zusatzlogo ausgegeben.
+Ist das Feld Wert leer, so wird kein Zusatzlogo ausgegeben.
+Ablageoptionen:
+Wird dieses Dokument unterhalb des globalen Verzeichnisses "_config" abgelegt, so wird das Zusatzlogo auf allen Seiten ausgegeben.
+Um das Logo nur für bestimmte Bereiche auszugeben, kann das Konfigurationsdokument zusätzlich pfadabhängig abgelegt werden.
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Karriere
+Website durchsuchen
+Suchtext
+Suchtext
+Startseite
+Unternehmen
+Kapitalerträge und Entlastung
+Kapitalertragsteuerentlastung
+Elektronisches Antragsverfahren
+Erstattungsverfahren von der Steuer auf Kapitalerträge nach § 50c Absatz 3 EStG / § 44a Absatz 9 EStG
+Vorlesen
+Erstattungsverfahren von der Steuer auf Kapitalerträge nach § 50c Absatz 3 EStG / § 44a Absatz 9 EStG
+In den nachstehenden Rubriken erhalten Sie Informationen darüber, welche Formulare Sie zur Antragstellung benötigen, welche Fristen Sie einhalten müssen und welche Angaben bzw. Dokumente das Bundeszentralamt für Steuern zur Bearbeitung Ihres Antrages benötigt.
+Hinweis
+Aufgrund der Vielzahl der eingehenden Anträge, kann es im Bereich der Erstattung zu Bearbeitungszeiten von über 20 Monaten kommen.
+Die Anträge werden grundsätzlich in der zeitlichen Reihenfolge ihres Eingangs bearbeitet.
+Ein Antrag kann erst abschließend bearbeitet werden, wenn alle Unterlagen vollständig vorliegen. Welche Nachweise einzureichen sind, ist im Antragsformular und den dazugehörigen Erläuterungen aufgeführt. Bitte reichen Sie Anlagen ausschließlich über das BZSt-Online-Portal ein und nicht per Post oder E-Mail. Soweit im Einzelfall darüber hinaus Nachweise oder Angaben erforderlich sind, werden diese im Zuge der Bearbeitung angefordert.
+Allgemeines
+Zu den Voraussetzungen der Erstattung zählt die tatsächliche Entrichtung der Abzugsteuer, entweder im Steuerabzugsverfahren oder auf Grundlage eines Haftungs- oder Nachforderungsbescheids. Eine bloße Anmeldung oder Einbehaltung der Kapitalertragsteuer reicht nicht aus.
+Der Steuerabzug bei Kapitalerträgen beträgt derzeit 26,375 %. Dieser setzt sich zusammen aus 25% Kapitalertragsteuer zuzüglich 5,5 % Solidaritätszuschlag des Kapitalertragsteuerbetrags.
+Eine Erstattung bereits einbehaltener und abgeführter Kapitalertragsteuer kann erfolgen, soweit dies nach deutschen Steuergesetzen oder nach den Bestimmungen eines DBA möglich ist.
+Das Erstattungsverfahren ist antragsgebunden (vgl. § 50c Absatz 3 Satz 1 EStG).
+Antragsteller
+Antragsberechtigt sind grundsätzlich alle beschränkt steuerpflichtigen natürlichen und juristischen Personen, die Gläubiger inländischer Kapitalerträge sind. Einzelne Rechtsvorschriften (z.B. §§ 43b EStG, 44a Absatz 9 EStG) schränken den zulässigen Kreis der Antragsteller ein.
+Antragsfrist
+Die Frist für den Erstattungsantrag beträgt vier Jahre und beginnt mit Ablauf des Kalenderjahres, in dem die Kapitalerträge zugeflossen sind. Sie endet nicht vor Ablauf eines Jahres seit dem Zeitpunkt der Entrichtung der Steuer (§ 50c Absatz 3 Satz 2 EStG).
+Die Frist für die Antragstellung endet grundsätzlich nicht vor Ablauf einer in einem Doppelbesteuerungsabkommen ggfs. vorgesehenen günstigeren Antragsfrist.
+Formulare/Muster/Hinweise
+Muster Ansässigkeitsbescheinigung
+PDF, 181KB, Datei ist barrierefrei⁄barrierearm
+Vollmacht in Steuersachen für das Kapitalertragsteuerentlastungsverfahren / Power of Attorney for Tax Matters for the capital income tax relief procedure
+PDF, 24KB, Datei ist nicht barrierefrei
+Auf Deutsch und Englisch / In German and English
+Antrag auf Erstattung von der deutschen Steuer auf Kapitalerträge (de/en)
+Merkblatt DBA Japan
+PDF, 202KB, Datei ist barrierefrei⁄barrierearm
+Ausführliche Informationen zur Entlastungsberechtigung nach Art. 21 des Doppelbesteuerungsabkommens mit Japan (DBA Japan) und § 50d Abs. 3 EStG
+Angabe einer neuen Bankverbindung
+PDF, 162KB, Datei ist nicht barrierefrei
+Dieser Vordruck dient zur Angabe einer neuen Bankverbindung, wenn Erstattungsanträge im Rahmen des schriftlichen Verfahrens gestellt werden
+Wichtige Informationen zur Steuerbescheinigung
+PDF, 319KB, Datei ist nicht barrierefrei
+Fragebogen Investmentfonds Luxemburg
+PDF, 108KB, Datei ist barrierefrei⁄barrierearm
+Fragebogen Investmentfonds Spanien
+PDF, 105KB, Datei ist barrierefrei⁄barrierearm
+Fragebogen Investmentfonds Frankreich
+PDF, 140KB, Datei ist barrierefrei⁄barrierearm
+Fragebogen Investmentfonds Irland
+PDF, 109KB, Datei ist barrierefrei⁄barrierearm
+Fragebogen Investmentfonds Großbritannien
+PDF, 104KB, Datei ist barrierefrei⁄barrierearm
+Fragebogen Investmentfonds USA
+PDF, 114KB, Datei ist barrierefrei⁄barrierearm
+Fragebogen Investmentfonds Australien
+PDF, 117KB, Datei ist barrierefrei⁄barrierearm
+Fragebogen Investmentfonds Liechtenstein
+PDF, 124KB, Datei ist barrierefrei⁄barrierearm
+Fragebogen Investmentfonds Niederlande
+PDF, 108KB, Datei ist barrierefrei⁄barrierearm
+Fragebogen Investmentfonds ohne DBA-Besonderheiten
+PDF, 95KB, Datei ist barrierefrei⁄barrierearm
+Zahlungsbestätigung Finanzamt
+PDF, 650KB, Datei ist nicht barrierefrei
+Merkblatt KapESt – Prozess bei Rückzahlungen bzw. Rückforderungen
+PDF, 384KB, Datei ist barrierefrei⁄barrierearm
+Fragen und Antworten
+Hinweis
+Bei dem nachfolgenden Fragen- und Antworten-Katalog (FAQ) handelt es sich lediglich um eine Orientierungshilfe. Er ist weder eine Verwaltungsanweisung noch ein BMF-Schreiben. Die Informationen haben keine Rechts- oder Bindungswirkung. Die Entscheidung im konkreten Einzelfall bleibt immer dem zuständigen Finanzamt vorbehalten.
+Fragen & Antworten
+Nach welchen Rechtsgrundlagen erstattet das BZSt die Steuer auf Kapitalerträge?
+Das Erstattungsverfahren nach § 50c Absatz 3 EStG ist anwendbar bei inländischen Kapitalerträgen im Sinne des § 49 Absatz 1 Nr. 5 EStG, die dem Steuerabzug nach § 43 EStG unterliegen
+Das BZSt erstattet die einbehaltene und abgeführte Steuer auf Kapitalerträge, soweit die nach den Abkommen zur Vermeidung der Doppelbesteuerung bzw. den §§ 43b oder 44a Absatz 9 EStG maßgeblichen Quellensteuersätze überstiegen werden. Darüber hinaus werden Erstattungen auf Grundlage des § 11 InvStG vorgenommen.
+Die Erstattung ohne Rechtsgrundlage einbehaltener Kapitalertragsteuer erfolgt nach § 37 Absatz 2 AO durch das Betriebsstättenfinanzamt des Entrichtungspflichtigen, an das die Kapitalertragsteuer abgeführt worden ist.
+Hierbei handelt es sich um Fälle, in denen ein Steuerabzug vorgenommen wurde, obwohl die maßgeblichen Kapitalerträge zum Zeitpunkt des Zuflusses nicht unter die beschränkte Steuerpflicht gemäß § 49 EStG fallen.
+Eine Erstattung nach § 37 Absatz 2 der Abgabenordnung durch das Betriebsstättenfinanzamt des Entrichtungspflichtigen kommt nicht in Betracht für im Kalenderjahr des Wechsels von der unbeschränkten zur beschränkten Einkommensteuerpflicht (Jahr des Wohnsitzwechsels von Deutschland in das Ausland) zugeflossene Kapitalerträge.
+In diesem Fall erfolgt eine Anrechnung der ohne Rechtsgrundlage einbehaltenen Kapitalertragsteuer auf die Einkommensteuer im Rahmen der Veranlagung nach § 2 Absatz 7 EStG durch das Wohnsitzfinanzamt des Gläubigers der Kapitalerträge (§ 36 Abs. 2 Nr. 2 S. 5 EStG)..
+Vorschriften
+Für die Kapitalertragsteuerentlastung bilden diverse Gesetze und BMF-Schreiben die rechtlichen Grundlagen. Hier sind die relevanten Rechtsgrundlagen aufgeführt.
+Wer ist berechtigt, einen Antrag auf Erstattung deutscher Steuer auf Kapitalerträge (Erstattungsantrag) nach § 50c Absatz 3 EStG zu stellen?
+Zur Antragstellung befugt sind im Ausland ansässige, beschränkt steuerpflichtige Gläubiger von Kapitalerträgen, denen diese im Zeitpunkt des Zuflusses wirtschaftlich zuzurechnen sind. Der Antragsteller muss somit nicht notwendigerweise (auch) der zivilrechtliche Gläubiger der Kapitalerträge sein.
+Welche Belege sind einem Erstattungsantrag nach § 50c Absatz 3 EStG beizufügen?
+Dem Erstattungsantrag sind mittels Upload die maßgebliche Steuerbescheinigung sowie die Ansässigkeitsbescheinigung beizufügen. Ein Übersendung im Original per Post ist nicht notwendig.
+Wo erhalten Antragstellende die Bescheinigung über die steuerliche Ansässigkeit gemäß § 50c Absatz 5 EStG?
+Der Antragstellende hat durch eine Bestätigung der für ihn im Zeitpunkt des Zuflusses der Kapitalerträge zuständigen Steuerbehörde seine Ansässigkeit nachzuweisen.
+Auf der Ansässigkeitsbescheinigung ist von der Steuerbehörde zu bestätigen, dass der Antragsteller zum Zeitpunkt des Zuflusses der Kapitalerträge den im Formular angegebenen Wohnsitz, gewöhnlichen Aufenthalt bzw. Sitz oder Ort der Geschäftsleitung hatte und daher nach dem maßgeblichen Abkommen abkommensberechtigt ist / den statuarischen Sitz hatte bzw. dem zulässigen Antragstellerkreis des § 43b EStG angehört.
+Dem Erstattungsantrag ist die Ansässigkeitsbescheinigung mittels Upload im BZSt-Online-Portal beizufügen. Es wird darauf hingewiesen, dass es in Einzelfällen zur Anforderung der Ansässigkeitsbescheinigung im Original kommen kann.
+Was ist eine Steuerbescheinigung und wo ist diese erhältlich?
+Eine Steuerbescheinigung dient als Nachweis über:
+die Art der Kapitalerträge
+die Höhe der Kapitalerträge
+die einbehaltene Kapitalertragsteuer und
+den hiervon einbehaltenen Solidaritätszuschlag
+Die Steuerbescheinigung wird durch die (inländische, d.h. deutsche) Zahlstelle ausgestellt. Als Zahlstellen gelten gemäß § 44 Absatz 1 Satz 4 Nr. 3a EStG:
+inländische (d.h. deutsche) Kredit- oder Finanzdienstleistungsinstitute,
+inländische (d.h. deutsche) Wertpapierinstitute,
+welche die Anteile verwahren oder verwalten und die Kapitalerträge auszahlen bzw. gutschreiben oder die Kapitalerträge an eine ausländische Stelle auszahlen.
+Nicht ausreichend ist eine Gutschriftsanzeige (z.B. Dividendenbescheinigung) der (ausländischen) Depotbank.
+Gibt es Fristen für die Beantragung der Erstattung nach § 50c Absatz 3 EStG?
+Die Frist für den Erstattungsantrag beträgt vier Jahre und beginnt mit Ablauf des Kalenderjahres, in dem die Kapitalerträge zugeflossen sind. Sie endet nicht vor Ablauf eines Jahres seit dem Zeitpunkt der Entrichtung der Steuer (§ 50c Absatz 3 Satz 2 EStG).
+Die Frist für die Antragstellung endet grundsätzlich nicht vor Ablauf einer in einem Doppelbesteuerungsabkommen ggfs. vorgesehenen günstigeren Antragsfrist.
+Kann die Steuer auf Kapitalerträge nach § 50c Absatz 3 EStG durch das BZSt erstattet werden, obwohl für den Zuflusszeitraum eine Freistellungsbescheinigung nach § 50c Absatz 2 EStG erteilt wurde?
+Durch die erteilte Freistellungsbescheinigung kann der Schuldner der Kapitalerträge den Steuerabzug von vornherein unterlassen oder nach einem reduzierten Steuersatz vornehmen.
+Sollten Steuern auf die Kapitalerträge einbehalten und abgeführt worden sein, da die Freistellungsbescheinigung zum Zeitpunkt der Steueranmeldung noch nicht vorlag, hat der Schuldner der Kapitalerträge die Möglichkeit, eine berichtigte Kapitalertragsteueranmeldung beim Betriebsstättenfinanzamt einzureichen und diesem Wege eine Erstattung nach § 44b Absatz 5 EStG zu erhalten.
+Was bedeuten die Begriffe "Reststeuer" bzw. "Reststeuersatz"? Kann die Reststeuer erstattet werden?
+Die sogenannte Reststeuer ist die Steuer, die der Staat, aus dem die Vergütungen stammen (also der Quellenstaat), gemäß den Regelungen der jeweils einschlägigen Entlastungsnorm (z.B. DBA, § 44a Absatz 9 EStG, etc.) nicht erstatten muss. Maßgeblich für die Bestimmung des Reststeuersatzes ist insbesondere die Art des Kapitalertrags (Zinsen, Dividenden, etc.), die Höhe der Beteiligung und die Rechtsform des Gläubigers der Kapitalerträge.
+Besteht ein Erstattungsanspruch, wenn zwischen Deutschland und dem Ansässigkeitsstaat/Wohnsitzstaat des Gläubigers kein Doppelbesteuerungsabkommen (DBA) abgeschlossen wurde?
+Für Kapitalerträge, die einer beschränkt steuerpflichtigen Körperschaft, Personenvereinigung oder Vermögensmasse mit Sitz und Geschäftsleitung im Ausland zufließen, ist nach § 44a Absatz 9 EStG eine Erstattung von zwei Fünftel der einbehaltenen und abgeführten Kapitalertragsteuer und des Solidaritätszuschlags vorgesehen.
+Die Erstattung an einen ausländischen Investmentfonds nach § 44a Absatz 9 EStG ist ausgeschlossen (vgl. § 7 Absatz 1 Satz 2 InvStG).
+Welches Zuflussdatum ist bei einer Aktiendividende im Rahmen der Antragstellung nach § 50c Absatz 3 EStG anzugeben?
+In den Erstattungsanträgen ist im Feld „Tag des Zuflusses“ der in der Einzelsteuerbescheinigung angegebene Zahlungstag zu verwenden.
+Welche Besonderheiten sind bei Kapitalerträgen aus Streubesitzbeteiligungen, die einem geringeren Quellensteuersatz als 15 Prozent unterliegen, zu beachten (§ 50j EStG)?
+Gläubiger mit Kapitalerträgen aus Streubesitzbeteiligungen müssen die Besonderheiten des § 50j EStG beachten, wenn ihnen seit dem 1. Januar 2017 Kapitalerträge zugeflossen sind, die nach einem Doppelbesteuerungsabkommen (DBA) oder anderen bilateralen Abkommen einem geringeren Steuersatz als 15 Prozent unterliegen.
+Der betroffene Antragsteller muss den Antragsvordruck „010004‐Erstattungsantrag bei Quellensteuersatz von unter 15 %“ verwenden und bestätigen, dass die Voraussetzungen des § 50j Absatz 1 Nr. 1 bis 3 EStG erfüllt sind. Das BZSt behält sich vor, die Angaben zu überprüfen und entsprechende Nachweise anzufordern. Auf die Mitwirkungspflicht des Antragstellers und der Beteiligten (§ 90 AO i. V. m. § 78 AO) wird verwiesen.
+Wie lange dauert die Antragsbearbeitung?
+Die Anträge werden grundsätzlich in der zeitlichen Reihenfolge ihres Eingangs bearbeitet.
+Ein Antrag kann erst abschließend bearbeitet werden, wenn alle Unterlagen vollständig vorliegen. Welche Nachweise einzureichen sind, ist im Antragsformular und den dazugehörigen Erläuterungen aufgeführt.
+Soweit im Einzelfall darüber hinaus Nachweise oder Angaben erforderlich sind, werden diese im Zuge der Bearbeitung angefordert.
+Aufgrund der Vielzahl der eingehenden Anträge, kann es zu längeren Bearbeitungszeiten kommen. Um weitere Verzögerungen zu vermeiden, werden Sachstandsanfragen nicht beantwortet.
+Wer kann den Entlastungsantrag stellen?
+Der Entlastungsantrag kann vom beschränkt steuerpflichtigen Gläubiger der Kapitalerträge selbst oder durch einen Bevollmächtigten eingereicht werden (vgl. § 80 AO). Die rechtliche Befugnis, für den beschränkt steuerpflichtigen Gläubiger der Kapitalerträge im steuerlichen Verwaltungsverfahren zu handeln, hat der Bevollmächtigte anhand einer Vollmacht nachzuweisen.
+Wie kann ich als Ehegatten einen Antrag auf Erstattung deutscher Steuer auf Kapitalerträge (Erstattungsantrag) nach § 50c Absatz 3 EStG stellen?
+Ehegatten können keinen gemeinsamen Antrag einreichen. Jeder Ehegatte hat für sich einen Erstattungsantrag zu stellen.
+Jeder der beiden Ehegatten hat einen Zugang zum BZSt-Online-Portal (s. Registrierungsprozess) zu beantragen und muss einen Antrag stellen. Im Verlauf der Antragstellung erscheint im Onlineformular die Frage:
+"Handelt es sich um ein Gemeinschaftsdepot/-konto oder eine andere Form der mittelbaren Beteiligung?" – Diese Frage ist von beiden Ehegatten jeweils mit "ja" zu beantworten.
+"Handelt es sich um Ehegatten, die jeweils zu 50% beteiligt sind?" – Diese Frage ist in den meisten Fällen ebenfalls mit "ja" zu beantworten, in abweichenden Fällen, ist "nein" anzugeben und in einem weiteren Schritt die abweichende Prozentzahl einzugeben.
+Beim Bruttozufluss ist der Gesamtzufluss (100%) anzugeben.
+Bei der Befüllung des Antragsformulars ist folgendes zu beachten. In das Freitextfeld „Erläuterungen zum Antrag“ ist jeweils der folgende Hinweis aufzunehmen: "Es handelt sich um ein Gemeinschaftsdepot, an dem beide Ehegatten zu jeweils 50% beteiligt sind." plus den Namen des Ehegatten.
+Wie kann ich bei einer Erbengemeinschaft einen Antrag auf Erstattung deutscher Steuer auf Kapitalerträge (Erstattungsantrag) nach § 50c Absatz 3 EStG stellen?
+Erbengemeinschaften können im elektronischen Antragsverfahren keinen gemeinsamen Antrag einreichen. Jeder der Erben hat für sich einen Erstattungsantrag zu stellen und muss daher über einen Zugang zum BZSt-Online-Portal (s. Registrierungsprozess) verfügen.
+Im Verlauf der Antragstellung erscheint im Onlineformular die Frage: "Handelt es sich um ein Gemeinschaftsdepot/-konto oder eine andere Form der mittelbaren Beteiligung?" – Diese Frage ist mit "ja" zu beantworten. Das Formular passt sich entsprechend an und die weiteren Felder sind zu befüllen.
+Bei der Befüllung des Antragsformulars ist folgendes zu beachten. In das Freitextfeld "Erläuterungen zum Antrag" ist jeweils der folgende Hinweis aufzunehmen: "Es handelt sich um ein Gemeinschaftsdepot, an dem ich als Erbe zu xy % beteiligt bin." plus die Namen der übrigen Erben.
+Was gebe ich im Onlineformular an, wenn die Ansässigkeitsbescheinigung keinen Gültigkeitszeitraum enthält?
+Wenn die Ansässigkeitsbestätigung keine Gültigkeitsdauer enthält, kann das Jahr der Ausstellung der Ansässigkeitsbestätigung eingetragen werden.
+Warum erhalte ich zu meinem Investmentfonds-Antrag einen Fragebogen?
+Um eine effiziente Bearbeitung der durch Investmentfonds gestellten Anträge nach § 50c EStG zu gewährleisten, werden die für die Antragsprüfung erforderlichen Angaben standardisiert anhand eines Fragebogens abgefragt. Den Fragebogen für Anträge nach dem DBA Luxemburg finden Sie hier.
+Fragebogen Investmentfonds Luxemburg
+PDF, 108KB, Datei ist barrierefrei⁄barrierearm
+Questionnaire investment funds Luxembourg
+PDF, 125KB, Datei ist barrierefrei⁄barrierearm
+Für alle übrigen Staaten werden zu einem späteren Zeitpunkt weitere Fragebögen zur Verfügung gestellt.
+Bitte beantworten Sie den jeweiligen Fragebogen vollständig, auch wenn Sie die Informationen bereits bei Antragstellung übermittelt haben. Mit der Beantwortung der Fragen ermöglichen Sie uns eine schnellere und gezieltere Antragsbearbeitung.
+Kontakt
+Bundeszentralamt für Steuern
+Referat St I B 3
+An der Küppe 1
+53225 Bonn
+Zuständigkeitsbereich:
+Entlastung von der Kapitalertragsteuer
+Kapitalertragsteuer@steuerliches-info-center.de
+Nachricht schreiben
+E-Mail schreiben
+Vorschriften
+Vorschriften
+Für die Kapitalertragsteuerentlastung bilden diverse Gesetze und BMF-Schreiben die rechtlichen Grundlagen. Hier sind die relevanten Rechtsgrundlagen aufgeführt.
+Verwandte Themen
+Freistellungsverfahren von der Steuer auf Kapitalerträge nach § 50c Absatz 2 Satz 1 Nr. 1 EStG
+Ausländische Empfänger (Gläubiger) von Kapitalerträgen können in besonderen Fällen ganz oder teilweise durch Freistellung von der Kapitalertragsteuer entlastet werden. Hier erhalten Sie alle …
+BZSt-Online-Portal
+Hier erhalten Sie Informationen zur Registrierung und Anmeldung im BZSt-Online-Portal für das Entlastungsverfahren von der Steuer auf Kapitalerträge.
+Härtefallregelung
+Hier erhalten Sie Informationen zur Härtefallregelung im elektronischen Entlastungverfahren von der Steuer auf Kapitalerträge.
+Massendatenschnittstelle im elektronischen Antragsverfahren
+Hier erhalten Sie Informationen zur geplanten Massendatenschnittstelle im elektronischen Entlastungsverfahren von der Steuer auf Kapitalerträge.
+Steuerliche Identifikationsnummer im Entlastungsverfahren
+Hier erhalten Sie Informationen zur steuerlichen Identifikationsnummer (IdNr) im Entlastungsverfahren von der Steuer auf Kapitalerträge nach § 50c Absatz 3 Einkommensteuergesetz (EStG) / § 44a Absatz …
+Erstattungsverfahren von der Steuer auf Kapitalerträge nach § 32 Absatz 6 KStG
+Gemeinnützige Organisationen können nach § 32 Absatz 6 KStG eine Reduzierung der Kapitalertragsteuer auf Null erhalten. In den nachstehenden Rubriken erhalten Sie Informationen darüber, wie Sie einen …
+Seite empfehlen
+Unternavigation aller Website-Bereiche
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Themen A-Z
+Karriere
+Presse
+Newsletter
+Haben Sie Fragen?
+Anrufen
+Nachricht schreiben
+Zentrale Behördennummer
+Für alle Fragen zu Behörden in Deutschland
+Montag bis Freitag 08:00-18:00 Uhr
+115
+Mehr erfahren
+© Bundeszentralamt für Steuern
+Inhaltsverzeichnis
+Erklärung zur Barrierefreiheit
+Impressum
+Datenschutz

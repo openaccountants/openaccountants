@@ -1,0 +1,188 @@
+{
+  "status": "PASS bounded exact R26\u201331 successor; frozen116groups/73quotes/335oldorigins and both original worked examples previously independently checked. No country verdict.",
+  "pair": {
+    "slug": "germany-vat-return",
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-vat-return.md",
+    "Guide_sha256": "b0aac8b240ca637a881daa19ff6fd3eee0eee13bb111ce92d6dee3a49ddf4261",
+    "bytes": 44371,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R26-R31-advance-VAT-writer-successor-2026-10-29/ledgers/germany-vat-return.md",
+    "ledger_sha256": "2baab2cd67a2b2883eb3245e49ce69dc0c9033acbfc6ce7bd7cc9701efe094aa",
+    "current_rows": 119,
+    "prior_current_rows": 116,
+    "old_topics": 335,
+    "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/germany-vat-return.md",
+    "prior_ledger_sha256": "24e84680057f956e6d71f5397e9ab8e558d1d03c6dac0f3b57826771cb8a5292"
+  },
+  "manifest_members_rehashed": 22,
+  "operations": 10,
+  "full_inverse": true,
+  "native_rows_verified": 119,
+  "original_oa_exact": 2,
+  "whole_example_section_exact": true,
+  "protected_metadata_CTA_URLs": true,
+  "sources": [
+    {
+      "id": "R26.place",
+      "native_LF": [
+        7,
+        35
+      ],
+      "reader_sha256": "a0c5cd471a10d34683a0bbbec2f257871f079e0e6e3b159fa15154a387990a59",
+      "quote_sha256": "cb45d12b96c105c81de580fce499ee6d400eb63680f9f4a203a746945a031299",
+      "actual_read": "Exact own-source quotation/range independently matched to the full actual source reading in VAT newquote batches and finite failed-claim selected read ledger DE-R26\u201331; no new acquisition/read inferred from writer count."
+    },
+    {
+      "id": "R27.solar",
+      "native_LF": [
+        64,
+        71
+      ],
+      "reader_sha256": "f0f9a4d727981094aa001b41d96a3fa3fda7e9692ab888c4d004384b3a8ba259",
+      "quote_sha256": "fc529b1b82206a4e86bb1e55db5cc89e918d6131c720b97a23892bde2126c402",
+      "actual_read": "Exact own-source quotation/range independently matched to the full actual source reading in VAT newquote batches and finite failed-claim selected read ledger DE-R26\u201331; no new acquisition/read inferred from writer count."
+    },
+    {
+      "id": "R27.water",
+      "native_LF": [
+        151,
+        151
+      ],
+      "reader_sha256": "8f4fae0c02317653b5aff001ef94f4dedcde0dd7daf522043ad54263afa8690f",
+      "quote_sha256": "76a30c166ef1d21819a0a2e6c6505ccdcb8fa2da440fbc02cadf1f5348b25a2e",
+      "actual_read": "Exact own-source quotation/range independently matched to the full actual source reading in VAT newquote batches and finite failed-claim selected read ledger DE-R26\u201331; no new acquisition/read inferred from writer count."
+    },
+    {
+      "id": "R28.finance",
+      "native_LF": [
+        68,
+        80
+      ],
+      "reader_sha256": "ee88ed0e89798f5ca33348bef8f31c28b02c1069c283a1315189c7981e2e4976",
+      "quote_sha256": "a67a2237a4d18a95ad22b698fe8216ae48e158ead429e3bcccb7891123f8c248",
+      "actual_read": "Exact own-source quotation/range independently matched to the full actual source reading in VAT newquote batches and finite failed-claim selected read ledger DE-R26\u201331; no new acquisition/read inferred from writer count."
+    },
+    {
+      "id": "R29.exemption-ZM",
+      "native_LF": [
+        7,
+        11
+      ],
+      "reader_sha256": "ee88ed0e89798f5ca33348bef8f31c28b02c1069c283a1315189c7981e2e4976",
+      "quote_sha256": "9a8813a261e33db260b6a3eddfb20c2a3c909c4ff2dbb777a574eca18c886147",
+      "actual_read": "Exact own-source quotation/range independently matched to the full actual source reading in VAT newquote batches and finite failed-claim selected read ledger DE-R26\u201331; no new acquisition/read inferred from writer count."
+    },
+    {
+      "id": "R29.ICS",
+      "native_LF": [
+        7,
+        24
+      ],
+      "reader_sha256": "22b3026c42979a580bc77a499283d44703d736a93e008b7b41743eb67f5134e0",
+      "quote_sha256": "2c000905a7e163c113769e4fdcfec1daf4df5267436a26d75eac6af476636fd7",
+      "actual_read": "Exact own-source quotation/range independently matched to the full actual source reading in VAT newquote batches and finite failed-claim selected read ledger DE-R26\u201331; no new acquisition/read inferred from writer count."
+    },
+    {
+      "id": "R29.presumption",
+      "native_LF": [
+        7,
+        29
+      ],
+      "reader_sha256": "fc23204b67728b4b77df9a1a2b87da1eac7d82672c70567e82639143d0697260",
+      "quote_sha256": "0017f48ab055a4e072c7810c72975ebb4e02b57b5d6cd81d1c5448ecd0b46a19",
+      "actual_read": "Exact own-source quotation/range independently matched to the full actual source reading in VAT newquote batches and finite failed-claim selected read ledger DE-R26\u201331; no new acquisition/read inferred from writer count."
+    },
+    {
+      "id": "R30.foreign-input",
+      "native_LF": [
+        917,
+        958
+      ],
+      "reader_sha256": "c4371c79f283a7dae1603285ad024bf716151f410c2607da1d5044f72ea097a9",
+      "quote_sha256": "19662670fcca0463bc359e006f70048db9c9c32f9c1dbd573d31ae9e8e5af5a7",
+      "actual_read": "Exact own-source quotation/range independently matched to the full actual source reading in VAT newquote batches and finite failed-claim selected read ledger DE-R26\u201331; no new acquisition/read inferred from writer count."
+    },
+    {
+      "id": "R31.late-filing-exclusion",
+      "native_LF": [
+        30,
+        40
+      ],
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "quote_sha256": "63b7a5b174ed4f8dae9f5a4084ca3ba984efbd6e3e6b90bbaef18cf9fc784d20",
+      "actual_read": "Exact own-source quotation/range independently matched to the full actual source reading in VAT newquote batches and finite failed-claim selected read ledger DE-R26\u201331; no new acquisition/read inferred from writer count."
+    }
+  ],
+  "own_controls": [
+    {
+      "name": "Germanpropertyservice notplacedFrancebyheadquarters",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "ordinaryFrenchrecipientconsultancy generalplace",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "shortwatercraft90inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "shortothertransport30inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "shortothertransport31fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "solar30presumptioninclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "reseller notautomaticallyoperator",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "consumerbottledwater notAnnex34water",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "custodyotherwiseeligible100net19input",
+      "actual": "19",
+      "expected": "19"
+    },
+    {
+      "name": "two2no2supportonly nopresumption",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "one2no1plusone2no2pairpossible",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "accurateZM notsilentlyomittable",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "foreignwrongVATnoGermaninput",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "specialprepayment1528no5noformula",
+      "actual": "True",
+      "expected": "True"
+    }
+  ],
+  "unchanged_original_controls": "germany-vat-return-own-controls.json:36 own controls; all original2fixtures already recomputed. Existing source questions unchanged."
+}

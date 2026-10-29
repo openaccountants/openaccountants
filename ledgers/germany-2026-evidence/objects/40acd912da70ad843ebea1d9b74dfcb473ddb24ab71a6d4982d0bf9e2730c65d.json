@@ -1,0 +1,105 @@
+{
+  "status": "Writer successor, independent review pending",
+  "artifacts": [
+    {
+      "path": "after/de-non-resident-tax.md",
+      "sha256": "2240579d7a85e98bbc9f6994ccd0a9a2d99025d4f1fa8c6ed94b18c7e7a25174",
+      "bytes": 37995
+    },
+    {
+      "path": "before/de-non-resident-tax.md",
+      "sha256": "2771446fffdebcafb42c3f4875418d5c66839a2cdcce4473b2c5bd426b7d290c",
+      "bytes": 32645
+    },
+    {
+      "path": "build-ledger.py",
+      "sha256": "30abdb92a36663bb692047810df252d29208e225b36892ebcb34bd1735a57dac",
+      "bytes": 7722
+    },
+    {
+      "path": "check-and-seal.py",
+      "sha256": "bbeb9c709c7eb2eb48a7ed9cd48cc6a8073fedfe7eb6a9e3987d4142946db912",
+      "bytes": 10323
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "714c749a9f38496127b3e6b1f919277074bf71d573186c103c059d0b837e4d64",
+      "bytes": 10065
+    },
+    {
+      "path": "first-check-failure.json",
+      "sha256": "c9636f008ad38b35c2776e076a0b20353014a688a2e81731203cd739a200dec8",
+      "bytes": 318
+    },
+    {
+      "path": "historical-apply.py",
+      "sha256": "17a3a7e0d6704ba9823637ef8c44e754e3b0e4d947def13c2bc1be1d35903de9",
+      "bytes": 16585
+    },
+    {
+      "path": "ledgers/de-non-resident-tax.md",
+      "sha256": "3ee8e1cb8adb832f2953b24c0d54ae44c99c6733c8947f72a40a487e59213349",
+      "bytes": 239702
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "9ad0a77ff77bbb0faa0fe9974007ebcbee645faf221c27cf54421c3b002557ca",
+      "bytes": 2325
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "13494425673ad6ff6b3f058e80a7bdf63994fe344719e3ceed1d314244e791b6",
+      "bytes": 22854
+    },
+    {
+      "path": "preservation-proof.json",
+      "sha256": "3c80f040d74516973e9c1dc48b201076efb8b5c355f8ffb2e4c6b2fbbeb97cf0",
+      "bytes": 543
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "e9aebf7141b70126952d9e99ffe93f86bcfb248efdbab04e25642730eb365e6c",
+      "bytes": 192015
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "b2676d56975c3648e3b22337c8094b54284ec51cf85a643b536285df2df2a272",
+      "bytes": 118482
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "571f332bb4dc18f731525ac15c01f53b96cf1d2df413e31f91805e38426fada0",
+      "bytes": 890
+    },
+    {
+      "path": "support/de-non-resident-tax/old-topic-destinations.json",
+      "sha256": "01df592da1075b75e7326f0fa5aca47edd8bb2dba7bc38de3011c9add835f91e",
+      "bytes": 229319
+    },
+    {
+      "path": "support/de-non-resident-tax/rows.json",
+      "sha256": "bd6b44e1273e7cbf3a435076762306160a5918dfbb4f766129fa7891b8d87e5d",
+      "bytes": 130970
+    },
+    {
+      "path": "support/guide.diff",
+      "sha256": "427e6f9f5bf4d6c76d8021a87f6445669061435ea826d65b36735b4c98726b1c",
+      "bytes": 15818
+    },
+    {
+      "path": "support/line-map.json",
+      "sha256": "0e15eefece8ab1da7148f7fc3e3f4e330b3d0e30a0ba123077d313fdaccb7615",
+      "bytes": 22733
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "19be1d3a2976db8878912b6c2ed934fc9dd1ba442e0079a1e8f4e7235294b5d9",
+      "bytes": 20343
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "a9387413ec4b2ae5301ca236298d0fe63f33c9797c0393d7cdb2003e9e9a1c32",
+      "bytes": 2486
+    }
+  ]
+}

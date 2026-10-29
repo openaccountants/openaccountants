@@ -1,0 +1,21 @@
+{
+  "all_actual_origin_count": 281,
+  "mismatches": 0,
+  "semantic_spots_actually_read": [
+    131,
+    133,
+    3,
+    124,
+    179,
+    143,
+    145,
+    136,
+    161,
+    22,
+    6,
+    155,
+    192,
+    31
+  ],
+  "scope": "All actual Git old origins hash/word identities; named semantic destinations actually compared with complete current Guide reading. Actual correcting vs unchanged current topics distinguished."
+}

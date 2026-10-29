@@ -1,0 +1,9 @@
+{
+  "scope": "Own reviewer fixture precision erratum, no historical report or controls overwritten",
+  "historical_report": "findings-DE-R37-R41-einvoice.md",
+  "historical_report_sha256": "ea3706b4a436b23737c58958289abb0e2893a612985e85725bf8bd0f950cebed",
+  "finding": "DE-R41 Option B",
+  "correction": "100net+19VAT=119gross does not exceed the250small-invoice exemption and cannot separate a wrong-format case in which an e-invoice was mandatory. The arithmetic is correct but the fixture does not test that duty. Writer correctly supplied1000net+190VAT=1190gross, full actual eligible facts/paid/evidence; independent closure checks190.",
+  "original_control_note": "germany-einvoice-own-controls.json historical119payment arithmetic retained; not a proof that119gross incurred compulsory e-invoice duty.",
+  "accepted_successor": "d2017d1ab2cce52ae1d416036f9d18f331b35f1aa7e9221ab24307d126b3bddb"
+}

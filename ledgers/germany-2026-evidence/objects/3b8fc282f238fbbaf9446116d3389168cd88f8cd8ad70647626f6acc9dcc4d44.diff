@@ -1,0 +1,16 @@
+--- 427f3162f3d6e847bbb9cc121c9c761eaeeacc1c/skills/international/germany/de-einkommensteuer-freelancer.md
++++ 62b7639a5a68324a83a96bb0190fff8b7c76f8c5/skills/international/germany/de-einkommensteuer-freelancer.md
+@@ -3,12 +3,12 @@
+ description: "German income tax (Einkommensteuer) on the profit of one self-employed person resident in Germany, tax year 2026. Covers Freiberufler (§ 18 EStG) versus trade (§ 15 EStG), the cash-basis profit (EÜR, § 4(3)) with Anlage EÜR and Anlage S or G, business expenses including the home office flat rate and the EUR 6 day rate, low-value assets and depreciation (§§ 6, 7), the Investitionsabzugsbetrag (§ 7g), the 2026 tariff with the EUR 12,348 Grundfreibetrag (§ 32a), splitting, the solidarity surcharge, church tax, pension and health special expenses, losses (§ 10d), prepayments (§ 37), the § 35 trade tax credit, filing deadlines with and without a Steuerberater (§ 149 AO) and the late-filing surcharge (§ 152 AO). Trigger on: Freiberufler, Selbständige, EÜR, Anlage S, Homeoffice-Pauschale, Investitionsabzugsbetrag, Vorauszahlungen, German freelancer tax. Out of scope: trade tax (de-trade-tax), investments (de-capital-gains), social contributions (de-social-contributions), partners and part-year residents (de-partners-and-part-year), non-residents (de-non-resident-tax)."
+ version: 1.2
+ jurisdiction: DE
+-category: international
+ tax_year: 2026
+ last_updated: 2026-10-27
+ authored_by: Michael Cutajar and the OpenAccountants team
+ review_status: pending_review
+ trust_label: Built by Michael Cutajar and the OpenAccountants team
++category: international
+ tier: 2
+ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+ ---

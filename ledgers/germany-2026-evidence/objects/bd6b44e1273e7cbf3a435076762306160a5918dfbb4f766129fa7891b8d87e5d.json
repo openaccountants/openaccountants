@@ -1,0 +1,4577 @@
+[
+  {
+    "id": "001",
+    "prior_row_id": 1,
+    "prior_native_LF": [
+      18,
+      18
+    ],
+    "native_LF": [
+      18,
+      18
+    ],
+    "section": "Germany: non-residents with German income, and foreign tax credits, tax year 2026",
+    "wording": "This skill decides whether a person is taxed in Germany on worldwide income or only on German income, then works out how the German income is taxed: by assessment, by wage tax, or by a flat withholding. It also covers the reverse case: a German resident with foreign income who wants credit for the foreign tax.",
+    "source_quote_ids": [
+      "NR.RES",
+      "NR.NR",
+      "NR.OPTION13"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "002",
+    "prior_row_id": 2,
+    "prior_native_LF": [
+      20,
+      20
+    ],
+    "native_LF": [
+      20,
+      20
+    ],
+    "section": "Germany: non-residents with German income, and foreign tax credits, tax year 2026",
+    "wording": "See also, and do not repeat here:",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "003",
+    "prior_row_id": 3,
+    "prior_native_LF": [
+      22,
+      22
+    ],
+    "native_LF": [
+      22,
+      22
+    ],
+    "section": "Germany: non-residents with German income, and foreign tax credits, tax year 2026",
+    "wording": "- **de-employee-income-tax**: the 2026 tariff, Werbungskosten and special expenses for a resident employee. The tariff formula there is the one used below.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "004",
+    "prior_row_id": 4,
+    "prior_native_LF": [
+      23,
+      23
+    ],
+    "native_LF": [
+      23,
+      23
+    ],
+    "section": "Germany: non-residents with German income, and foreign tax credits, tax year 2026",
+    "wording": "- **de-rental-income**: how to compute the rental result (AfA, Werbungskosten, Anlage V). A non-resident landlord computes it the same way.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "005",
+    "prior_row_id": 5,
+    "prior_native_LF": [
+      24,
+      24
+    ],
+    "native_LF": [
+      24,
+      24
+    ],
+    "section": "Germany: non-residents with German income, and foreign tax credits, tax year 2026",
+    "wording": "- **de-capital-gains**: the flat tax on investment income, the Sparer-Pauschbetrag and the loss pots.",
+    "source_quote_ids": [
+      "NR.TARIFF"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "006",
+    "prior_row_id": 6,
+    "prior_native_LF": [
+      25,
+      25
+    ],
+    "native_LF": [
+      25,
+      25
+    ],
+    "section": "Germany: non-residents with German income, and foreign tax credits, tax year 2026",
+    "wording": "- **de-payroll** and **germany-payroll**: running wage tax for an employee, including tax class I.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "007",
+    "prior_row_id": 7,
+    "prior_native_LF": [
+      26,
+      26
+    ],
+    "native_LF": [
+      26,
+      26
+    ],
+    "section": "Germany: non-residents with German income, and foreign tax credits, tax year 2026",
+    "wording": "- **de-corporate-tax**: corporate tax at 15%, also for the German permanent establishment of a foreign company.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "008",
+    "prior_row_id": 8,
+    "prior_native_LF": [
+      27,
+      27
+    ],
+    "native_LF": [
+      27,
+      27
+    ],
+    "section": "Germany: non-residents with German income, and foreign tax credits, tax year 2026",
+    "wording": "- **leaving-germany-exit-tax**: shareholders who move out, and extended limited liability after a move to a low-tax country (§ 2 AStG).",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "009",
+    "prior_row_id": 9,
+    "prior_native_LF": [
+      28,
+      28
+    ],
+    "native_LF": [
+      28,
+      28
+    ],
+    "section": "Germany: non-residents with German income, and foreign tax credits, tax year 2026",
+    "wording": "- **germany-to-switzerland-cross-border-tax**: Swiss commuters and moves to Switzerland.",
+    "source_quote_ids": [
+      "NR.CORPRATE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "010",
+    "prior_row_id": 10,
+    "prior_native_LF": [
+      29,
+      29
+    ],
+    "native_LF": [
+      29,
+      29
+    ],
+    "section": "Germany: non-residents with German income, and foreign tax credits, tax year 2026",
+    "wording": "- **de-treaty-withholding-rates**: treaty withholding rates by country, § 43b, § 50g and § 50d(3).",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "011",
+    "prior_row_id": 11,
+    "prior_native_LF": [
+      33,
+      33
+    ],
+    "native_LF": [
+      33,
+      33
+    ],
+    "section": "Who this applies to",
+    "wording": "**Unlimited liability (§ 1(1) EStG).** A person with a residence (Wohnsitz) or habitual abode (gewöhnlicher Aufenthalt) in Germany is taxed on worldwide income.",
+    "source_quote_ids": [
+      "NR.RES"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "012",
+    "prior_row_id": 12,
+    "prior_native_LF": [
+      35,
+      35
+    ],
+    "native_LF": [
+      35,
+      35
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Residence (§ 8 AO):** a home the person keeps and uses, in circumstances showing they will keep and use it. A flat kept available in Germany is enough, even if the person spends most of the year abroad.",
+    "source_quote_ids": [
+      "NR.HOME"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "013",
+    "prior_row_id": 13,
+    "prior_native_LF": [
+      36,
+      36
+    ],
+    "native_LF": [
+      36,
+      36
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Habitual abode (§ 9 AO):** staying in a way that shows the stay is not just temporary. A continuous stay of more than six months always counts, from the first day; short breaks are ignored. The six-month rule does not apply to a purely private stay (visit, holiday, cure) of up to one year (§ 9 sentence 3 AO).",
+    "source_quote_ids": [
+      "NR.ABODE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "014",
+    "prior_row_id": 14,
+    "prior_native_LF": [
+      37,
+      37
+    ],
+    "native_LF": [
+      37,
+      37
+    ],
+    "section": "Who this applies to",
+    "wording": "- **German state employees abroad (§ 1(2) EStG):** German nationals paid from a German public purse, taxed abroad only like non-residents, stay fully liable.",
+    "source_quote_ids": [
+      "NR.PUBLICABROAD"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "015",
+    "prior_row_id": 15,
+    "prior_native_LF": [
+      39,
+      39
+    ],
+    "native_LF": [
+      39,
+      39
+    ],
+    "section": "Who this applies to",
+    "wording": "**Limited liability (§ 1(4) EStG).** A person with neither residence nor habitual abode in Germany is taxed only on German-source income listed in § 49 EStG.",
+    "source_quote_ids": [
+      "NR.NR"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "016",
+    "prior_row_id": 16,
+    "prior_native_LF": [
+      41,
+      41
+    ],
+    "native_LF": [
+      41,
+      41
+    ],
+    "section": "Who this applies to",
+    "wording": "**The § 1(3) option.** A non-resident can apply to be treated as fully liable for their German income if, in the calendar year, either:",
+    "source_quote_ids": [
+      "NR.OPTION13"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "017",
+    "prior_row_id": 17,
+    "prior_native_LF": [
+      43,
+      43
+    ],
+    "native_LF": [
+      43,
+      43
+    ],
+    "section": "Who this applies to",
+    "wording": "- at least 90% of their total income is subject to German income tax, or",
+    "source_quote_ids": [
+      "NR.OPTION13"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "018",
+    "prior_row_id": 18,
+    "prior_native_LF": [
+      44,
+      44
+    ],
+    "native_LF": [
+      44,
+      44
+    ],
+    "section": "Who this applies to",
+    "wording": "- the income not subject to German tax is no more than the Grundfreibetrag, EUR 12,348 for 2026. The amount is cut to ¾, ½ or ¼ for residents of lower-cost countries (BMF country groups; Austria and most of Western Europe are in group 1, full amount).",
+    "source_quote_ids": [
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.GROUPEFFECT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "019",
+    "prior_row_id": 19,
+    "prior_native_LF": [
+      46,
+      46
+    ],
+    "native_LF": [
+      46,
+      46
+    ],
+    "section": "Who this applies to",
+    "wording": "German income that a tax treaty limits to a reduced rate (for example dividends) counts as not subject to German tax for the test (§ 1(3) sentence 3). The foreign income must be shown by a certificate from the foreign tax authority (§ 1(3) sentence 5). § 50a withholding still applies (§ 1(3) sentence 6).",
+    "source_quote_ids": [
+      "NR.OPTION13"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "020",
+    "prior_row_id": 20,
+    "prior_native_LF": [
+      48,
+      48
+    ],
+    "native_LF": [
+      48,
+      48
+    ],
+    "section": "Who this applies to",
+    "wording": "**§ 1a EStG, EU/EEA nationals.** An EU or EEA national who is fully liable under § 1(1) or treated so under § 1(3) can have a spouse who lives in another EU/EEA state treated as fully liable, so the couple gets joint assessment and splitting. For the § 1(3) test the income of both spouses counts and the Grundfreibetrag is doubled to EUR 24,696 (§ 1a(1) no. 2). A non-EU/EEA national under § 1(3) gets the Grundfreibetrag but not splitting.",
+    "source_quote_ids": [
+      "NR.SPOUSE",
+      "NR.COUPLE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "021",
+    "prior_row_id": 21,
+    "prior_native_LF": [
+      50,
+      50
+    ],
+    "native_LF": [
+      50,
+      50
+    ],
+    "section": "Who this applies to",
+    "wording": "**Companies.** A company with neither its seat nor its place of management in Germany has limited corporate tax liability on its German income (§ 2 no. 1 KStG). Income settled by withholding is final unless it belongs to a German business (§ 32(1) KStG). A German permanent establishment is assessed at the 15% corporate rate (§ 23 KStG; see de-corporate-tax).",
+    "source_quote_ids": [
+      "NR.COMPANYNR",
+      "NR.COMPFINAL",
+      "NR.CORPRATE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "022",
+    "prior_row_id": 22,
+    "prior_native_LF": [
+      54,
+      54
+    ],
+    "native_LF": [
+      54,
+      54
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Item | Rate or amount | Year | Source |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "023",
+    "prior_row_id": 23,
+    "prior_native_LF": [
+      56,
+      56
+    ],
+    "native_LF": [
+      56,
+      56
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Grundfreibetrag (basic allowance) | EUR 12,348 | 2026 | https://www.gesetze-im-internet.de/estg/__32a.html |",
+    "source_quote_ids": [
+      "NR.TARIFF"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "024",
+    "prior_row_id": 24,
+    "prior_native_LF": [
+      57,
+      57
+    ],
+    "native_LF": [
+      57,
+      57
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| 2026 tariff, zone 3 (taxable EUR 17,800 to 69,878) | (173.10 × z + 2,397) × z + 1,034.87, z = (taxable − 17,799) / 10,000; full tariff in de-employee-income-tax | 2026 | Same |",
+    "source_quote_ids": [
+      "NR.TARIFF"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "025",
+    "prior_row_id": 25,
+    "prior_native_LF": [
+      58,
+      58
+    ],
+    "native_LF": [
+      58,
+      58
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Non-resident assessment | Tariff applied to taxable income plus EUR 12,348; for German employment income the add-back is only the part of EUR 12,348 above that income (net of allowed deductions) | 2026 | https://www.gesetze-im-internet.de/estg/__50.html (§ 50(1) sentence 2) |",
+    "source_quote_ids": [
+      "NR.NRBASE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "026",
+    "prior_row_id": 26,
+    "prior_native_LF": [
+      59,
+      59
+    ],
+    "native_LF": [
+      59,
+      59
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 1(3) test | German-taxed income at least 90% of total, or non-German income at most EUR 12,348 (scaled by country group) | 2026 | https://www.gesetze-im-internet.de/estg/__1.html |",
+    "source_quote_ids": [
+      "NR.OPTION13",
+      "NR.TARIFF"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "027",
+    "prior_row_id": 27,
+    "prior_native_LF": [
+      60,
+      60
+    ],
+    "native_LF": [
+      60,
+      60
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 1a test for a couple | Both spouses' income; non-German income at most EUR 24,696 | 2026 | https://www.gesetze-im-internet.de/estg/__1a.html |",
+    "source_quote_ids": [
+      "NR.SPOUSE",
+      "NR.TARIFF"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "028",
+    "prior_row_id": 28,
+    "prior_native_LF": [
+      61,
+      61
+    ],
+    "native_LF": [
+      61,
+      61
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Country groups (Ländergruppen) | Group 1 full amount, group 2 ¾, group 3 ½, group 4 ¼ | From 2025, until replaced | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-12-02-beruecks-auslaendischer-verhaeltnisse.pdf |",
+    "source_quote_ids": [
+      "NR.COUNTRY",
+      "NR.GROUPEFFECT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "029",
+    "prior_row_id": 29,
+    "prior_native_LF": [
+      62,
+      62
+    ],
+    "native_LF": [
+      62,
+      62
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 50a withholding: artists, athletes, entertainers, royalties | 15% of gross receipts | 2026 | https://www.gesetze-im-internet.de/estg/__50a.html (§ 50a(2)) |",
+    "source_quote_ids": [
+      "NR.GROSS"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "030",
+    "prior_row_id": 30,
+    "prior_native_LF": [
+      63,
+      63
+    ],
+    "native_LF": [
+      63,
+      63
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 50a withholding: supervisory board fees | 30% of gross receipts | 2026 | Same |",
+    "source_quote_ids": [
+      "NR.GROSS"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "031",
+    "prior_row_id": 31,
+    "prior_native_LF": [
+      64,
+      64
+    ],
+    "native_LF": [
+      64,
+      64
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 50a, net basis for eligible EU/EEA creditors | Only § 50a(1) nos. 1, 2 and 4, not royalties under no. 3: 30% for individuals, 15% for eligible companies, on net receipts after proven directly related costs | 2026 | Same, § 50a(3) |",
+    "source_quote_ids": [
+      "NR.NET"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "032",
+    "prior_row_id": 32,
+    "prior_native_LF": [
+      65,
+      65
+    ],
+    "native_LF": [
+      65,
+      65
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 50a small performances | No withholding if receipts per performance are no more than EUR 250 | 2026 | Same, § 50a(2) sentence 3 |",
+    "source_quote_ids": [
+      "NR.GROSS"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "033",
+    "prior_row_id": 33,
+    "prior_native_LF": [
+      66,
+      66
+    ],
+    "native_LF": [
+      66,
+      66
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 50a ordered by the tax office | 25% of gross (15% for companies) | 2026 | Same, § 50a(7) |",
+    "source_quote_ids": [
+      "NR.ORDER"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "034",
+    "prior_row_id": 34,
+    "prior_native_LF": [
+      67,
+      67
+    ],
+    "native_LF": [
+      67,
+      67
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Solidarity surcharge on § 50a and Kapitalertragsteuer | 5.5% of the tax withheld | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html (§ 3(1) nos. 5, 6) and __4.html |",
+    "source_quote_ids": [
+      "NR.WHTSOLI",
+      "NR.SoliRate"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "035",
+    "prior_row_id": 35,
+    "prior_native_LF": [
+      68,
+      68
+    ],
+    "native_LF": [
+      68,
+      68
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Kapitalertragsteuer on dividends | 25% plus 5.5% surcharge (26.375% in total) | 2026 | https://www.gesetze-im-internet.de/estg/__43a.html; BZSt page in Sources |",
+    "source_quote_ids": [
+      "NR.KWHT",
+      "NR.WHTSOLI",
+      "NR.BZST"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "036",
+    "prior_row_id": 36,
+    "prior_native_LF": [
+      69,
+      69
+    ],
+    "native_LF": [
+      69,
+      69
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Refund for a foreign company with limited corporate tax liability | Two fifths of the Kapitalertragsteuer withheld; further treaty or directive claims are not affected | 2026 | https://www.gesetze-im-internet.de/estg/__44a.html (§ 44a(9)) |",
+    "source_quote_ids": [
+      "NR.REFUND40"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "037",
+    "prior_row_id": 37,
+    "prior_native_LF": [
+      70,
+      70
+    ],
+    "native_LF": [
+      70,
+      70
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 50c exemption for small royalties | Payer need not withhold where a treaty bars German tax and royalties from that payer in the year stay at or below EUR 10,000 | 2026 | https://www.gesetze-im-internet.de/estg/__50c.html (§ 50c(2) no. 2) |",
+    "source_quote_ids": [
+      "NR.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "038",
+    "prior_row_id": 38,
+    "prior_native_LF": [
+      71,
+      71
+    ],
+    "native_LF": [
+      71,
+      71
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 50c refund deadline | Four years from the end of the year of receipt; not before one year after the tax was paid, nor before any longer treaty period | 2026 | Same, § 50c(3) sentence 2 |",
+    "source_quote_ids": [
+      "NR.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "039",
+    "prior_row_id": 39,
+    "prior_native_LF": [
+      72,
+      72
+    ],
+    "native_LF": [
+      72,
+      72
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Flat tax on a resident's capital income | 25%, less foreign tax capped at 25% of each item and at the German tax on it | 2026 | https://www.gesetze-im-internet.de/estg/__32d.html (§ 32d(1), (5)) |",
+    "source_quote_ids": [
+      "NR.FLAT",
+      "NR.FOREIGNFLAT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "040",
+    "prior_row_id": 40,
+    "prior_native_LF": [
+      73,
+      73
+    ],
+    "native_LF": [
+      73,
+      73
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Solidarity surcharge threshold, assessment | None while income tax is at most EUR 20,350 (EUR 40,700 joint); always 5.5% on § 32d(3) and (4) tax | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html |",
+    "source_quote_ids": [
+      "NR.SOLILIMIT",
+      "NR.SoliRate"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "041",
+    "prior_row_id": 41,
+    "prior_native_LF": [
+      79,
+      79
+    ],
+    "native_LF": [
+      79,
+      79
+    ],
+    "section": "Step 1: is the income German-source? (§ 49 EStG)",
+    "wording": "The common cases:",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "042",
+    "prior_row_id": 42,
+    "prior_native_LF": [
+      81,
+      81
+    ],
+    "native_LF": [
+      81,
+      81
+    ],
+    "section": "Step 1: is the income German-source? (§ 49 EStG)",
+    "wording": "| Income | German-source when | § 49(1) |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "043",
+    "prior_row_id": 43,
+    "prior_native_LF": [
+      83,
+      83
+    ],
+    "native_LF": [
+      83,
+      83
+    ],
+    "section": "Step 1: is the income German-source? (§ 49 EStG)",
+    "wording": "| Business profits | There is a permanent establishment or a permanent representative in Germany | no. 2(a) |",
+    "source_quote_ids": [
+      "NR.NRTRADE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "044",
+    "prior_row_id": 44,
+    "prior_native_LF": [
+      84,
+      84
+    ],
+    "native_LF": [
+      84,
+      84
+    ],
+    "section": "Step 1: is the income German-source? (§ 49 EStG)",
+    "wording": "| Artists, athletes, entertainers | The performance takes place or is exploited in Germany, whoever receives the money | no. 2(d), 3, 9 |",
+    "source_quote_ids": [
+      "NR.GERMANCAP",
+      "NR.NRPROF"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "045",
+    "prior_row_id": 45,
+    "prior_native_LF": [
+      85,
+      85
+    ],
+    "native_LF": [
+      85,
+      85
+    ],
+    "section": "Step 1: is the income German-source? (§ 49 EStG)",
+    "wording": "| Sale of shares in a company | The conditions of § 17 apply and the company has its seat or management in Germany; or the property-company branch applies: at some time in the 365 days before disposal, more than 50% of the share value rested directly or indirectly on German immovable property and the shares were attributable to the seller at that time. For that percentage, use the active business assets at the book values that would have applied at that time, rather than market values. The separate statutory restructuring branch and treaty override must also be tested where relevant. | no. 2(e)(aa)–(cc) |",
+    "source_quote_ids": [
+      "NR.GERMANCAP",
+      "R22.share-source"
+    ],
+    "disposition": "R18–22 bounded source-backed condition successor"
+  },
+  {
+    "id": "046",
+    "prior_row_id": 46,
+    "prior_native_LF": [
+      86,
+      86
+    ],
+    "native_LF": [
+      86,
+      86
+    ],
+    "section": "Step 1: is the income German-source? (§ 49 EStG)",
+    "wording": "| Self-employed work | Performed or exploited in Germany, or a fixed base in Germany | no. 3 |",
+    "source_quote_ids": [
+      "NR.NRPROF"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "047",
+    "prior_row_id": 47,
+    "prior_native_LF": [
+      87,
+      87
+    ],
+    "native_LF": [
+      87,
+      87
+    ],
+    "section": "Step 1: is the income German-source? (§ 49 EStG)",
+    "wording": "| Employment | Work done in Germany; or pay from a German public purse; or pay as managing director (Geschäftsführer), Prokurist or board member of a company managed in Germany | no. 4(a), (b), (c) |",
+    "source_quote_ids": [
+      "NR.GERMANEMP"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "048",
+    "prior_row_id": 48,
+    "prior_native_LF": [
+      88,
+      88
+    ],
+    "native_LF": [
+      88,
+      88
+    ],
+    "section": "Step 1: is the income German-source? (§ 49 EStG)",
+    "wording": "| Dividends | The paying company has its seat or management in Germany | no. 5(a) |",
+    "source_quote_ids": [
+      "NR.GERMANDIV"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "049",
+    "prior_row_id": 49,
+    "prior_native_LF": [
+      89,
+      89
+    ],
+    "native_LF": [
+      89,
+      89
+    ],
+    "section": "Step 1: is the income German-source? (§ 49 EStG)",
+    "wording": "| Rent | Domestic location, domestic registration or exploitation in a German permanent establishment or other facility, within the property/right categories in no. 6. For other rights whose only domestic link is registration in a German public book or register, no. 6 excludes the income if the rental is between parties not related under § 1(2) AStG, or applicable treaty provisions, taking account of the Act's treaty-application rules, oppose taxation. An actual domestic location or exploitation link must be tested separately. | no. 6 |",
+    "source_quote_ids": [
+      "NR.GERMANRENT",
+      "R21.business-rights",
+      "R21.private-rights"
+    ],
+    "disposition": "R18–22 bounded source-backed condition successor"
+  },
+  {
+    "id": "050",
+    "prior_row_id": 50,
+    "prior_native_LF": [
+      90,
+      90
+    ],
+    "native_LF": [
+      90,
+      90
+    ],
+    "section": "Step 1: is the income German-source? (§ 49 EStG)",
+    "wording": "| Sale of German land | Privately held: inside the ten-year period of § 23 EStG (no. 8). Held in a business, or by a foreign company: always, with no time limit (no. 2(f)) | no. 8, no. 2(f) |",
+    "source_quote_ids": [
+      "NR.GERMANIMM",
+      "NR.GERMANSALE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "051",
+    "prior_row_id": 51,
+    "prior_native_LF": [
+      91,
+      91
+    ],
+    "native_LF": [
+      91,
+      91
+    ],
+    "section": "Step 1: is the income German-source? (§ 49 EStG)",
+    "wording": "| German pensions | Paid by a German statutory pension fund, insurer or pension scheme | no. 7 |",
+    "source_quote_ids": [
+      "NR.GERMANPENSION"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "052",
+    "prior_row_id": 52,
+    "prior_native_LF": [
+      93,
+      93
+    ],
+    "native_LF": [
+      95,
+      95
+    ],
+    "section": "Step 1: is the income German-source? (§ 49 EStG)",
+    "wording": "Ordinary interest from a German bank account or a listed bond is not on the list (§ 49(1) no. 5(c) covers only loans secured on German land and certain profit-participation rights, and no. 5(d) only over-the-counter coupon payments), so a non-resident is not taxed on it.",
+    "source_quote_ids": [
+      "NR.GERMANINTEREST"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "053",
+    "prior_row_id": 53,
+    "prior_native_LF": [
+      97,
+      97
+    ],
+    "native_LF": [
+      99,
+      99
+    ],
+    "section": "Step 2: is the tax settled by withholding? (§ 50(2) EStG)",
+    "wording": "For a person remaining subject to limited liability, income subject to wage tax, Kapitalertragsteuer or § 50a withholding is generally settled by that withholding. Test all the exceptions in § 50(2) sentence 2 before treating it as final:",
+    "source_quote_ids": [
+      "NR.FINAL",
+      "R20.assessment-exceptions"
+    ],
+    "disposition": "R18–22 bounded source-backed condition successor"
+  },
+  {
+    "id": "054",
+    "prior_row_id": 54,
+    "prior_native_LF": [
+      99,
+      99
+    ],
+    "native_LF": [
+      101,
+      101
+    ],
+    "section": "Step 2: is the tax settled by withholding? (§ 50(2) EStG)",
+    "wording": "- income of a German business (permanent establishment);",
+    "source_quote_ids": [
+      "NR.FINAL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "055",
+    "prior_row_id": 55,
+    "prior_native_LF": [
+      100,
+      100
+    ],
+    "native_LF": [
+      102,
+      108
+    ],
+    "section": "Step 2: is the tax settled by withholding? (§ 50(2) EStG)",
+    "wording": "- German employment income under § 49(1) no. 4 where a § 39a(4) allowance was entered and annual pay exceeds the Grundfreibetrag plus the employee and special-expense lump sums (no. 4(a)); an application under § 46(2) no. 8 (no. 4(b)); or the § 46(2) nos. 2, 5 and 5a cases (no. 4(c));\n- employment applications connected with extraordinary income under § 34(1) and (2) nos. 2 and 4 (no. 4(d)), or an application for a foreign-tax credit under § 50d(7) sentence 2 (no. 4(e)); these have their own gates, rather than no. 4(b)'s nationality/residence restriction;\n- income under § 50a(1) nos. 1, 2 and 4 on application (no. 5; assessed by the BZSt);\n- a later finding that the conditions for full liability under § 1(2), § 1(3) or § 1a were not met (no. 2), or the mixed-year case under § 2(7) sentence 3 (no. 3);\n- the specified life-insurance capital income under § 49(1) no. 5 sentence 1(a), to which § 20(1) no. 6 sentence 2 applies, on application (no. 6).\n\nThe EU/EEA nationality and residence restriction in § 50(2) sentence 7 applies to no. 4(b) and no. 5. Sentence 8 additionally extends no. 4(b) to the specified EU/EEA nationals resident in Switzerland and Swiss nationals resident in the EU or Switzerland. It is not a general restriction on no. 4(d), no. 4(e) or no. 6. For no. 4 employment cases use the competent employer's Betriebsstättenfinanzamt under sentences 3–6; for no. 6 use the debtor's income-tax office under sentence 10. The referred special-tariff, insurance and credit computations are not supplied by this assessment-gate list. A person actually qualifying for full liability under § 1(3) or § 1a follows that full-liability route instead.",
+    "source_quote_ids": [
+      "NR.FINAL",
+      "R20.assessment-exceptions"
+    ],
+    "disposition": "R18–22 bounded source-backed condition successor"
+  },
+  {
+    "id": "056",
+    "prior_row_id": 56,
+    "prior_native_LF": [
+      101,
+      101
+    ],
+    "native_LF": [
+      102,
+      108
+    ],
+    "section": "Step 2: is the tax settled by withholding? (§ 50(2) EStG)",
+    "wording": "- German employment income under § 49(1) no. 4 where a § 39a(4) allowance was entered and annual pay exceeds the Grundfreibetrag plus the employee and special-expense lump sums (no. 4(a)); an application under § 46(2) no. 8 (no. 4(b)); or the § 46(2) nos. 2, 5 and 5a cases (no. 4(c));\n- employment applications connected with extraordinary income under § 34(1) and (2) nos. 2 and 4 (no. 4(d)), or an application for a foreign-tax credit under § 50d(7) sentence 2 (no. 4(e)); these have their own gates, rather than no. 4(b)'s nationality/residence restriction;\n- income under § 50a(1) nos. 1, 2 and 4 on application (no. 5; assessed by the BZSt);\n- a later finding that the conditions for full liability under § 1(2), § 1(3) or § 1a were not met (no. 2), or the mixed-year case under § 2(7) sentence 3 (no. 3);\n- the specified life-insurance capital income under § 49(1) no. 5 sentence 1(a), to which § 20(1) no. 6 sentence 2 applies, on application (no. 6).\n\nThe EU/EEA nationality and residence restriction in § 50(2) sentence 7 applies to no. 4(b) and no. 5. Sentence 8 additionally extends no. 4(b) to the specified EU/EEA nationals resident in Switzerland and Swiss nationals resident in the EU or Switzerland. It is not a general restriction on no. 4(d), no. 4(e) or no. 6. For no. 4 employment cases use the competent employer's Betriebsstättenfinanzamt under sentences 3–6; for no. 6 use the debtor's income-tax office under sentence 10. The referred special-tariff, insurance and credit computations are not supplied by this assessment-gate list. A person actually qualifying for full liability under § 1(3) or § 1a follows that full-liability route instead.",
+    "source_quote_ids": [
+      "NR.FINAL",
+      "R20.assessment-exceptions"
+    ],
+    "disposition": "R18–22 bounded source-backed condition successor"
+  },
+  {
+    "id": "057",
+    "prior_row_id": 57,
+    "prior_native_LF": [
+      102,
+      102
+    ],
+    "native_LF": [
+      102,
+      108
+    ],
+    "section": "Step 2: is the tax settled by withholding? (§ 50(2) EStG)",
+    "wording": "- German employment income under § 49(1) no. 4 where a § 39a(4) allowance was entered and annual pay exceeds the Grundfreibetrag plus the employee and special-expense lump sums (no. 4(a)); an application under § 46(2) no. 8 (no. 4(b)); or the § 46(2) nos. 2, 5 and 5a cases (no. 4(c));\n- employment applications connected with extraordinary income under § 34(1) and (2) nos. 2 and 4 (no. 4(d)), or an application for a foreign-tax credit under § 50d(7) sentence 2 (no. 4(e)); these have their own gates, rather than no. 4(b)'s nationality/residence restriction;\n- income under § 50a(1) nos. 1, 2 and 4 on application (no. 5; assessed by the BZSt);\n- a later finding that the conditions for full liability under § 1(2), § 1(3) or § 1a were not met (no. 2), or the mixed-year case under § 2(7) sentence 3 (no. 3);\n- the specified life-insurance capital income under § 49(1) no. 5 sentence 1(a), to which § 20(1) no. 6 sentence 2 applies, on application (no. 6).\n\nThe EU/EEA nationality and residence restriction in § 50(2) sentence 7 applies to no. 4(b) and no. 5. Sentence 8 additionally extends no. 4(b) to the specified EU/EEA nationals resident in Switzerland and Swiss nationals resident in the EU or Switzerland. It is not a general restriction on no. 4(d), no. 4(e) or no. 6. For no. 4 employment cases use the competent employer's Betriebsstättenfinanzamt under sentences 3–6; for no. 6 use the debtor's income-tax office under sentence 10. The referred special-tariff, insurance and credit computations are not supplied by this assessment-gate list. A person actually qualifying for full liability under § 1(3) or § 1a follows that full-liability route instead.",
+    "source_quote_ids": [
+      "NR.OPTION13",
+      "NR.SPOUSE",
+      "R20.assessment-exceptions"
+    ],
+    "disposition": "R18–22 bounded source-backed condition successor"
+  },
+  {
+    "id": "058",
+    "prior_row_id": 58,
+    "prior_native_LF": [
+      104,
+      104
+    ],
+    "native_LF": [
+      110,
+      110
+    ],
+    "section": "Step 2: is the tax settled by withholding? (§ 50(2) EStG)",
+    "wording": "Income with no withholding, such as rent, a German business or a sale of German land, is always assessed.",
+    "source_quote_ids": [
+      "NR.NR",
+      "NR.FINAL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "059",
+    "prior_row_id": 59,
+    "prior_native_LF": [
+      108,
+      108
+    ],
+    "native_LF": [
+      114,
+      114
+    ],
+    "section": "Step 3: the assessment of a non-resident (§ 50(1) EStG)",
+    "wording": "1. **Income.** Compute each type as for a resident. Business expenses and Werbungskosten count only if they relate to the German income.",
+    "source_quote_ids": [
+      "NR.NRBASE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "060",
+    "prior_row_id": 60,
+    "prior_native_LF": [
+      109,
+      109
+    ],
+    "native_LF": [
+      115,
+      115
+    ],
+    "section": "Step 3: the assessment of a non-resident (§ 50(1) EStG)",
+    "wording": "2. **No personal deductions.** Special expenses, the EUR 36 lump sum, single-parent relief, child allowances, extraordinary burdens and § 35a credits do not apply (§ 50(1) sentence 4). There is no splitting. Exception under § 50(1a): mandatory contributions to a professional pension institution can qualify where membership arises from the admission required for the German professional practice. It covers EU/EEA nationals resident in the EU/EEA or Switzerland, and Swiss nationals resident in the EU or Switzerland. Contributions must directly relate to German income under § 49(1) no. 2 or 3 from that admitted practice; the deduction follows German qualifying income divided by the total positive German and foreign income from that practice. It is excluded to the extent already deducted in the residence state or exceeding the German qualifying income.",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.PROFPENSION"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "061",
+    "prior_row_id": 61,
+    "prior_native_LF": [
+      110,
+      110
+    ],
+    "native_LF": [
+      116,
+      116
+    ],
+    "section": "Step 3: the assessment of a non-resident (§ 50(1) EStG)",
+    "wording": "3. **Employees are the exception.** For employment income under § 49(1) no. 4, pension and health insurance contributions and the EUR 36 lump sum are allowed, for the period of the German employment and up to that employment income (§ 50(1) sentence 5). The employee lump sum (EUR 1,230, § 9a) is a Werbungskosten lump sum and applies anyway; it and the EUR 36 are cut pro rata for part-year work (§ 50(1) sentence 6).",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.EMPLOYEE1230",
+      "NR.LUMPSUM"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "062",
+    "prior_row_id": 62,
+    "prior_native_LF": [
+      111,
+      111
+    ],
+    "native_LF": [
+      117,
+      117
+    ],
+    "section": "Step 3: the assessment of a non-resident (§ 50(1) EStG)",
+    "wording": "4. **Grundfreibetrag added back.** Apply the tariff to taxable income plus EUR 12,348. For employment income, add only the part of EUR 12,348 above the employment income less allowed deductions. In effect a non-resident employee keeps the allowance on wages; a landlord or business owner does not.",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.TARIFF"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "063",
+    "prior_row_id": 63,
+    "prior_native_LF": [
+      112,
+      112
+    ],
+    "native_LF": [
+      118,
+      118
+    ],
+    "section": "Step 3: the assessment of a non-resident (§ 50(1) EStG)",
+    "wording": "5. **Solidarity surcharge.** Establish the assessment base under § 3 SolzG; it is not automatically the unadjusted income-tax amount. For an ordinary single assessment with no § 32d(3) or (4) tax component, it is zero when that base is at most EUR 20,350. Above that threshold, take the smaller of 5.5% of the base and 11.9% of the excess over EUR 20,350, dropping fractions of a cent (§§ 3(3), 4 SolzG). A stipulated base of EUR 20,400 gives min(EUR 1,122, EUR 5.95) = EUR 5.95. The separate § 32d(3)/(4) component and the withholding branches retain their own 5.5% treatment and do not receive this ordinary threshold/cap.",
+    "source_quote_ids": [
+      "NR.SOLILIMIT",
+      "NR.SoliRate",
+      "R18.rate",
+      "R18.base-and-threshold"
+    ],
+    "disposition": "R18–22 bounded source-backed condition successor"
+  },
+  {
+    "id": "064",
+    "prior_row_id": 64,
+    "prior_native_LF": [
+      116,
+      116
+    ],
+    "native_LF": [
+      122,
+      122
+    ],
+    "section": "Step 4: the § 1(3) assessment instead",
+    "wording": "The person is taxed as a resident on their German income: Grundfreibetrag, special expenses, the EUR 36 lump sum and the resident deductions apply. Income that is not subject to German tax is left out of the base but raises the rate (progression, § 32b(1) no. 5 EStG): the tax rate is found on taxable income plus that foreign income, then applied to taxable income alone. Splitting needs § 1a. Foreign capital income is a special case: § 2(5b) EStG keeps capital income under § 32d(1) out of \"income\" wherever the law refers to it, and whether foreign interest or dividends of a § 1(3) applicant count in the 90% test and in the progression is not settled here (see Not yet confirmed).",
+    "source_quote_ids": [
+      "NR.OPTION13",
+      "NR.SPOUSE",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.CAPIGNORE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "065",
+    "prior_row_id": 65,
+    "prior_native_LF": [
+      120,
+      120
+    ],
+    "native_LF": [
+      126,
+      126
+    ],
+    "section": "Wage tax for non-resident employees",
+    "wording": "- Non-resident employees are in tax class I (§ 38b(1) no. 1(b) EStG), unless treated as fully liable under § 1(3) or § 1a.",
+    "source_quote_ids": [
+      "NR.CLASSI"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "066",
+    "prior_row_id": 66,
+    "prior_native_LF": [
+      121,
+      121
+    ],
+    "native_LF": [
+      127,
+      127
+    ],
+    "section": "Wage tax for non-resident employees",
+    "wording": "- The employer's Betriebsstättenfinanzamt (the tax office for the place of business), not a residence office, sets and changes their wage tax data and issues the tax ID (§ 39(2) sentence 2 and § 39(3) EStG).",
+    "source_quote_ids": [
+      "NR.WAGEDATA"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "067",
+    "prior_row_id": 67,
+    "prior_native_LF": [
+      122,
+      122
+    ],
+    "native_LF": [
+      128,
+      128
+    ],
+    "section": "Wage tax for non-resident employees",
+    "wording": "- A § 1(3) or § 1a employee with wage tax data set this way must file (§ 46(2) no. 7(b) EStG). An employee who wants § 1(3) treatment only in the assessment applies with a return (§ 46(2) no. 9), at the employer's Betriebsstättenfinanzamt.",
+    "source_quote_ids": [
+      "NR.FILE7",
+      "NR.FILE8"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "068",
+    "prior_row_id": 68,
+    "prior_native_LF": [
+      126,
+      126
+    ],
+    "native_LF": [
+      132,
+      132
+    ],
+    "section": "§ 50a withholding (artists, athletes, royalties, supervisory boards)",
+    "wording": "- The German payer withholds when the payment is made: 15% of gross, 30% for supervisory board fees, plus 5.5% surcharge on the tax. Travel and hotel costs the payer refunds count as receipts only above actual cost and the per diem lump sums.",
+    "source_quote_ids": [
+      "NR.GROSS",
+      "NR.PAYWHT",
+      "NR.WHTSOLI",
+      "NR.SoliRate"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "069",
+    "prior_row_id": 69,
+    "prior_native_LF": [
+      127,
+      127
+    ],
+    "native_LF": [
+      133,
+      133
+    ],
+    "section": "§ 50a withholding (artists, athletes, royalties, supervisory boards)",
+    "wording": "- For § 50a(1) nos. 1, 2 and 4 only, the payer may deduct directly related costs proved in a form the BZSt can check or paid by the payer, then withhold 30% for an EU/EEA national resident in the EU/EEA, or 15% for a company meeting § 32(4) KStG. This net route does not apply to royalties under § 50a(1) no. 3 (§ 50a(3)).",
+    "source_quote_ids": [
+      "NR.NET"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "070",
+    "prior_row_id": 70,
+    "prior_native_LF": [
+      128,
+      128
+    ],
+    "native_LF": [
+      134,
+      134
+    ],
+    "section": "§ 50a withholding (artists, athletes, royalties, supervisory boards)",
+    "wording": "- The payer files the withholding return with the BZSt by the 10th of the month after each calendar quarter and pays it over (§ 50a(5)). It must file even when nothing is withheld. The payer is liable for tax not withheld; the creditor can also be pursued.",
+    "source_quote_ids": [
+      "NR.PAYWHT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "071",
+    "prior_row_id": 71,
+    "prior_native_LF": [
+      129,
+      129
+    ],
+    "native_LF": [
+      135,
+      135
+    ],
+    "section": "§ 50a withholding (artists, athletes, royalties, supervisory boards)",
+    "wording": "- On request the payer issues a certificate of the tax withheld (§ 50a(5) sentence 7). The creditor needs it for a refund.",
+    "source_quote_ids": [
+      "NR.PAYWHT",
+      "NR.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "072",
+    "prior_row_id": 72,
+    "prior_native_LF": [
+      133,
+      133
+    ],
+    "native_LF": [
+      139,
+      139
+    ],
+    "section": "Treaty relief: exemption and refund (§ 50c EStG)",
+    "wording": "- The payer withholds in full even when a treaty limits German tax, unless the creditor holds an exemption certificate (Freistellungsbescheinigung) from the BZSt (§ 50c(1), (2)). For dividends, a treaty exemption certificate is given only to a company holding at least 10% of a German company.",
+    "source_quote_ids": [
+      "NR.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "073",
+    "prior_row_id": 73,
+    "prior_native_LF": [
+      134,
+      134
+    ],
+    "native_LF": [
+      140,
+      140
+    ],
+    "section": "Treaty relief: exemption and refund (§ 50c EStG)",
+    "wording": "- Small royalties: where a treaty bars German tax and the year's royalties from that payer stay at or below EUR 10,000, the payer need not withhold (§ 50c(2) no. 2), but must still file the withholding return.",
+    "source_quote_ids": [
+      "NR.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "074",
+    "prior_row_id": 74,
+    "prior_native_LF": [
+      135,
+      135
+    ],
+    "native_LF": [
+      141,
+      141
+    ],
+    "section": "Treaty relief: exemption and refund (§ 50c EStG)",
+    "wording": "- Refund: the creditor applies to the BZSt, electronically, within four years from the end of the year of receipt, with a residence certificate from their own tax authority and the payer's tax certificate (§ 50c(3), (5)). The BZSt warns that refunds can take more than 20 months.",
+    "source_quote_ids": [
+      "NR.REFUND",
+      "NR.ELECTREFUND",
+      "NR.BZST"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "075",
+    "prior_row_id": 75,
+    "prior_native_LF": [
+      136,
+      136
+    ],
+    "native_LF": [
+      142,
+      142
+    ],
+    "section": "Treaty relief: exemption and refund (§ 50c EStG)",
+    "wording": "- Companies: § 50d(3) denies relief to the stated extent where both conditions hold: participating or constitutionally benefited persons would not have the entitlement if they earned the income directly, and the income source has no substantial connection with the entity's economic activity. Merely receiving or passing on the income, or activity through a business operation not adequately equipped for its purpose, is not economic activity for this test. The denial does not apply to the extent the entity proves that obtaining a tax advantage was not one of the main purposes of its interposition, or where its main class of shares is substantially and regularly traded on a recognised exchange. § 42 AO remains applicable. Lack of other economic activity alone does not displace an established statutory rebuttal; neither rebuttal nor listing creates an entitlement without the other relief conditions.",
+    "source_quote_ids": [
+      "NR.ANTISHOP",
+      "R19.refund",
+      "R19.anti-abuse"
+    ],
+    "disposition": "R18–22 bounded source-backed condition successor"
+  },
+  {
+    "id": "076",
+    "prior_row_id": 76,
+    "prior_native_LF": [
+      140,
+      140
+    ],
+    "native_LF": [
+      146,
+      146
+    ],
+    "section": "Kapitalertragsteuer on dividends to non-residents",
+    "wording": "The German company withholds 25% plus 5.5% surcharge, 26.375% in all, whoever the shareholder is. For a non-resident shareholder without a German business, that settles the German tax. The excess over the treaty rate is reclaimed from the BZSt under § 50c(3). Example: a treaty limit of 15% gives a refund of 26.375% − 15% = 11.375% of the gross dividend. For a capital-income creditor that is a corporation subject to limited liability within § 2 no. 1 KStG, § 44a(9) provides a refund of two fifths of the Kapitalertragsteuer actually withheld and remitted. This incorporates the application/procedure in § 50c(3) and (5) and the anti-abuse test and exceptions in § 50d(3); it is not an unconditional refund for every foreign company. Further statutory or treaty relief claims remain separate. The treaty rate itself depends on the treaty; see de-treaty-withholding-rates for the rates by country.",
+    "source_quote_ids": [
+      "NR.KWHT",
+      "NR.WHTSOLI",
+      "NR.REFUND",
+      "NR.REFUND40",
+      "R19.refund",
+      "R19.anti-abuse"
+    ],
+    "disposition": "R18–22 bounded source-backed condition successor"
+  },
+  {
+    "id": "077",
+    "prior_row_id": 77,
+    "prior_native_LF": [
+      144,
+      144
+    ],
+    "native_LF": [
+      150,
+      150
+    ],
+    "section": "Foreign tax credit for residents (§ 34c and § 32d(5) EStG)",
+    "wording": "Which rule applies depends on the income:",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "078",
+    "prior_row_id": 78,
+    "prior_native_LF": [
+      146,
+      146
+    ],
+    "native_LF": [
+      152,
+      152
+    ],
+    "section": "Foreign tax credit for residents (§ 34c and § 32d(5) EStG)",
+    "wording": "- **Capital income under the flat tax (§ 32d(1)), such as foreign dividends and interest of a private investor.** § 34c does not apply (§ 34c(1) sentence 1, second half). The foreign tax is credited under § 32d(5): at most 25% of each item, and at most the German tax on the capital income. The flat tax is then (e − 4q) / 4 without church tax, where e is the capital income after the Sparer-Pauschbetrag and q the creditable foreign tax (§ 32d(1) sentence 4). Income that had no German Kapitalertragsteuer, for example through a foreign broker, is declared in the return (§ 32d(3)).",
+    "source_quote_ids": [
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.CREDITALL",
+      "NR.DECLFLAT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "079",
+    "prior_row_id": 79,
+    "prior_native_LF": [
+      147,
+      147
+    ],
+    "native_LF": [
+      153,
+      153
+    ],
+    "section": "Foreign tax credit for residents (§ 34c and § 32d(5) EStG)",
+    "wording": "- **Other foreign income taxed at the tariff (for example foreign rent, foreign business income).** § 34c(1) applies where no treaty exists; where a treaty provides for a credit, § 34c(6) applies the same method. Capital income assessed under the § 32d(6) Günstigerprüfung instead keeps the § 32d(5) credit, capped at the additional tariff tax on that capital income (§ 32d(6) sentence 2). For income within § 34c, the foreign tax is credited up to the German tax on that income:",
+    "source_quote_ids": [
+      "NR.CREDITALL",
+      "NR.CREDITTREATY",
+      "NR.FOREIGNFLAT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "080",
+    "prior_row_id": 80,
+    "prior_native_LF": [
+      149,
+      149
+    ],
+    "native_LF": [
+      155,
+      155
+    ],
+    "section": "Foreign tax credit for residents (§ 34c and § 32d(5) EStG)",
+    "wording": "  credit cap = German tariff tax × foreign income from that country / taxable income (sentence 2: the average rate on the whole taxable income, applied to the foreign income).",
+    "source_quote_ids": [
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "081",
+    "prior_row_id": 81,
+    "prior_native_LF": [
+      151,
+      151
+    ],
+    "native_LF": [
+      157,
+      157
+    ],
+    "section": "Foreign tax credit for residents (§ 34c and § 32d(5) EStG)",
+    "wording": "  Foreign tax above the cap is lost. Only tax that was set, paid and reduced by any refund due abroad counts. Instead of the credit the taxpayer can deduct the foreign tax from the income (§ 34c(2)).",
+    "source_quote_ids": [
+      "NR.CREDITALL",
+      "NR.CREDITTREATY"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "082",
+    "prior_row_id": 82,
+    "prior_native_LF": [
+      152,
+      152
+    ],
+    "native_LF": [
+      158,
+      158
+    ],
+    "section": "Foreign tax credit for residents (§ 34c and § 32d(5) EStG)",
+    "wording": "- **Income a treaty exempts in Germany** (often foreign employment income or foreign rent): no credit, but it raises the rate under § 32b(1) no. 3. Exception: rent from property in another EU/EEA state, and profits of an EU/EEA permanent establishment that fails the active-business test of § 2a(2), do not raise the rate (§ 32b(1) sentence 2).",
+    "source_quote_ids": [
+      "NR.PROGRESSION",
+      "NR.PROGEXCEPTIONS"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "083",
+    "prior_row_id": 83,
+    "prior_native_LF": [
+      154,
+      154
+    ],
+    "native_LF": [
+      160,
+      160
+    ],
+    "section": "Foreign tax credit for residents (§ 34c and § 32d(5) EStG)",
+    "wording": "What counts as foreign income is set out in § 34d EStG.",
+    "source_quote_ids": [
+      "NR.FOREIGNLIST"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "084",
+    "prior_row_id": 84,
+    "prior_native_LF": [
+      158,
+      158
+    ],
+    "native_LF": [
+      164,
+      164
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Step | Rule |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "085",
+    "prior_row_id": 85,
+    "prior_native_LF": [
+      160,
+      160
+    ],
+    "native_LF": [
+      166,
+      166
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Who files | A non-resident with German income not settled by withholding (rent, a German business, sale of German land), or who applies for an assessment (§ 1(3), refunds of wage tax, § 50a net assessment). Return under § 25(3) EStG |",
+    "source_quote_ids": [
+      "NR.NR",
+      "NR.FINAL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "086",
+    "prior_row_id": 86,
+    "prior_native_LF": [
+      161,
+      161
+    ],
+    "native_LF": [
+      167,
+      167
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Competent tax office | For a non-resident: the office where the German assets are, or the most valuable part; failing that, where the activity is mainly carried on (§ 19(2) AO). Employees under § 1(3) or § 50(2) no. 4: the employer's Betriebsstättenfinanzamt (§ 46(2) nos. 7, 9; § 50(2) sentences 3 to 6 EStG). § 50a net assessments: the BZSt (§ 50(2) sentence 9) |",
+    "source_quote_ids": [
+      "NR.OFFICE",
+      "NR.FINAL",
+      "NR.FILE7",
+      "NR.FILE8"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "087",
+    "prior_row_id": 87,
+    "prior_native_LF": [
+      162,
+      162
+    ],
+    "native_LF": [
+      168,
+      168
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Pensions from Germany | A non-resident whose only German income is pensions under § 49(1) nos. 7 and 10: Finanzamt Neubrandenburg, also where such a person applies under § 1(3) (§ 19(6) AO; § 1 EStZustV) |",
+    "source_quote_ids": [
+      "NR.PENSIONOFFICE",
+      "NR.NB"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "088",
+    "prior_row_id": 88,
+    "prior_native_LF": [
+      163,
+      163
+    ],
+    "native_LF": [
+      169,
+      169
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Own return, 2026 | 31 July 2027, a Saturday, so Monday 2 August 2027 (§ 149(2), § 108(3) AO) |",
+    "source_quote_ids": [
+      "NR.AO149-2",
+      "NR.AO108"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "089",
+    "prior_row_id": 89,
+    "prior_native_LF": [
+      164,
+      164
+    ],
+    "native_LF": [
+      170,
+      170
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| With a tax adviser, 2026 | 29 February 2028 (§ 149(3) AO) |",
+    "source_quote_ids": [
+      "NR.AO149-3"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "090",
+    "prior_row_id": 90,
+    "prior_native_LF": [
+      165,
+      165
+    ],
+    "native_LF": [
+      171,
+      171
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| § 50a withholding return (payer) | By the 10th of the month after each calendar quarter, to the BZSt (§ 50a(5)) |",
+    "source_quote_ids": [
+      "NR.PAYWHT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "091",
+    "prior_row_id": 91,
+    "prior_native_LF": [
+      166,
+      166
+    ],
+    "native_LF": [
+      172,
+      172
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| § 50c refund | Four years from the end of the year the payment was received (§ 50c(3)) |",
+    "source_quote_ids": [
+      "NR.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "092",
+    "prior_row_id": 92,
+    "prior_native_LF": [
+      167,
+      167
+    ],
+    "native_LF": [
+      173,
+      173
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Electronic filing | Compulsory where there is business or self-employed income (§ 25(4) EStG) |",
+    "source_quote_ids": [
+      "NR.EFILE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "093",
+    "prior_row_id": 93,
+    "prior_native_LF": [
+      171,
+      171
+    ],
+    "native_LF": [
+      177,
+      177
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Late filing surcharge (§ 152 AO).** 0.25% per started month of the tax less prepayments and withholding, at least EUR 25 per month, at most EUR 25,000. It is compulsory if the return is not filed within 14 months after the end of the year (for 2026: by 29 February 2028), unless an extension was granted, the tax is nil or negative, or the tax does not exceed prepayments and withholding (§ 152(2), (3) AO).",
+    "source_quote_ids": [
+      "NR.AO152-2",
+      "NR.AO152-3",
+      "NR.AO152-5",
+      "NR.AO152-10"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "094",
+    "prior_row_id": 94,
+    "prior_native_LF": [
+      172,
+      172
+    ],
+    "native_LF": [
+      178,
+      178
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Interest (§ 233a, § 238 AO).** 0.15% per full month (1.8% a year) on the balance, from 15 months after year end: from 1 April 2028 for 2026.",
+    "source_quote_ids": [
+      "NR.AO233a-1",
+      "NR.AO233a-2",
+      "NR.AO238-1a"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "095",
+    "prior_row_id": 95,
+    "prior_native_LF": [
+      173,
+      173
+    ],
+    "native_LF": [
+      179,
+      179
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Late payment (§ 240 AO).** 1% per started month on the overdue tax rounded down to EUR 50.",
+    "source_quote_ids": [
+      "NR.AO240-1"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "096",
+    "prior_row_id": 96,
+    "prior_native_LF": [
+      174,
+      174
+    ],
+    "native_LF": [
+      180,
+      180
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **§ 50a payer.** The payer is liable for tax it did not withhold or pay over (§ 50a(5) sentence 5). The creditor can also be pursued.",
+    "source_quote_ids": [
+      "NR.PAYWHT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "097",
+    "prior_row_id": 97,
+    "prior_native_LF": [
+      178,
+      178
+    ],
+    "native_LF": [
+      184,
+      184
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Treaties override.** A treaty can take away Germany's right to tax (for example employment income under the 183-day rule) or cap it (dividends, royalties). Withholding still happens first; relief is by exemption certificate or refund (§ 50c).",
+    "source_quote_ids": [
+      "NR.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "098",
+    "prior_row_id": 98,
+    "prior_native_LF": [
+      179,
+      179
+    ],
+    "native_LF": [
+      185,
+      185
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Moving in or out during the year.** A person who is fully liable for part of the year is assessed once; foreign income of the non-resident months raises the rate (§ 2(7), § 32b(1) no. 2 EStG). Not set out further here.",
+    "source_quote_ids": [
+      "NR.ANNUAL",
+      "NR.MOVEINCOME"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "099",
+    "prior_row_id": 99,
+    "prior_native_LF": [
+      180,
+      180
+    ],
+    "native_LF": [
+      186,
+      186
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Leaving with shares.** See leaving-germany-exit-tax, including extended limited liability under § 2 AStG after a move to a low-tax country.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "100",
+    "prior_row_id": 100,
+    "prior_native_LF": [
+      181,
+      181
+    ],
+    "native_LF": [
+      187,
+      187
+    ],
+    "section": "Cross-border points",
+    "wording": "- **VAT.** A non-resident letting German property or performing in Germany may also have German VAT duties. Not covered here; see germany-vat-return.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "101",
+    "prior_row_id": 101,
+    "prior_native_LF": [
+      182,
+      182
+    ],
+    "native_LF": [
+      188,
+      188
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Church tax.** Not dealt with here; it is set by state law.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "102",
+    "prior_row_id": 102,
+    "prior_native_LF": [
+      188,
+      188
+    ],
+    "native_LF": [
+      194,
+      194
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "Anna lives in Vienna and has no home in Germany. Her German flat produces a rental result of EUR 24,000 for 2026, computed as in de-rental-income. Her only other income is a rental result of EUR 2,000 from a garage she lets in Vienna. (Invented case.)",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "103",
+    "prior_row_id": 103,
+    "prior_native_LF": [
+      190,
+      190
+    ],
+    "native_LF": [
+      196,
+      196
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "**Limited liability (default).** No personal deductions, no EUR 36 lump sum. Taxable income EUR 24,000. The tariff is applied to 24,000 + 12,348 = 36,348. z = (36,348 − 17,799) / 10,000 = 1.8549. Tax = (173.10 × 1.8549 + 2,397) × 1.8549 + 1,034.87 = 6,076.65, rounded down EUR 6,076. Below EUR 20,350, so no surcharge.",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "104",
+    "prior_row_id": 104,
+    "prior_native_LF": [
+      192,
+      192
+    ],
+    "native_LF": [
+      198,
+      198
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "**§ 1(3) option.** German income is 24,000 / 26,000 = 92.3% of her total, and the Austrian income is under EUR 12,348 (Austria is in country group 1), so both tests pass. She needs a certificate from the Austrian tax office for the EUR 2,000. Taxable income 24,000 − 36 = EUR 23,964. The Austrian rent is not subject to German tax, so it raises the rate (§ 32b(1) no. 5; the EU/EEA rent exception in § 32b(1) sentence 2 covers only no. 3): tax on 23,964 + 2,000 = 25,964 is EUR 3,107, a rate of 11.9666%. Tax = 23,964 × 11.9666% = EUR 2,867. The option saves EUR 3,209.",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "105",
+    "prior_row_id": 105,
+    "prior_native_LF": [
+      194,
+      194
+    ],
+    "native_LF": [
+      200,
+      200
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "The tax office rounds the progression rate; the example keeps it unrounded, which can move the result by one euro. If Anna also had large Austrian income (say a salary of EUR 40,000), she would fail both tests and stay on the limited-liability figure.",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "106",
+    "prior_row_id": 106,
+    "prior_native_LF": [
+      196,
+      196
+    ],
+    "native_LF": [
+      202,
+      202
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "```oa-check",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "107",
+    "prior_row_id": 107,
+    "prior_native_LF": [
+      197,
+      197
+    ],
+    "native_LF": [
+      203,
+      203
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "name: DE non-resident landlord 2026, limited liability vs § 1(3) option",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "108",
+    "prior_row_id": 108,
+    "prior_native_LF": [
+      198,
+      198
+    ],
+    "native_LF": [
+      204,
+      204
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "inputs:",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "109",
+    "prior_row_id": 109,
+    "prior_native_LF": [
+      199,
+      199
+    ],
+    "native_LF": [
+      205,
+      205
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  rent_result: 24000",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "110",
+    "prior_row_id": 110,
+    "prior_native_LF": [
+      200,
+      200
+    ],
+    "native_LF": [
+      206,
+      206
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  foreign_rent: 2000",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "111",
+    "prior_row_id": 111,
+    "prior_native_LF": [
+      201,
+      201
+    ],
+    "native_LF": [
+      207,
+      207
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  grundfreibetrag: 12348",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "112",
+    "prior_row_id": 112,
+    "prior_native_LF": [
+      202,
+      202
+    ],
+    "native_LF": [
+      208,
+      208
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "steps:",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "113",
+    "prior_row_id": 113,
+    "prior_native_LF": [
+      203,
+      203
+    ],
+    "native_LF": [
+      209,
+      209
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  - base_limited: rent_result + grundfreibetrag",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "114",
+    "prior_row_id": 114,
+    "prior_native_LF": [
+      204,
+      204
+    ],
+    "native_LF": [
+      210,
+      210
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  - z1: (base_limited - 17799) / 10000",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "115",
+    "prior_row_id": 115,
+    "prior_native_LF": [
+      205,
+      205
+    ],
+    "native_LF": [
+      211,
+      211
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  - tax_limited: floor((173.10 * z1 + 2397) * z1 + 1034.87)",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "116",
+    "prior_row_id": 116,
+    "prior_native_LF": [
+      206,
+      206
+    ],
+    "native_LF": [
+      212,
+      212
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  - german_share: rent_result / (rent_result + foreign_rent)",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "117",
+    "prior_row_id": 117,
+    "prior_native_LF": [
+      207,
+      207
+    ],
+    "native_LF": [
+      213,
+      213
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  - taxable_opt: rent_result - 36",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "118",
+    "prior_row_id": 118,
+    "prior_native_LF": [
+      208,
+      208
+    ],
+    "native_LF": [
+      214,
+      214
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  - prog_base: taxable_opt + foreign_rent",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "119",
+    "prior_row_id": 119,
+    "prior_native_LF": [
+      209,
+      209
+    ],
+    "native_LF": [
+      215,
+      215
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  - z2: (prog_base - 17799) / 10000",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "120",
+    "prior_row_id": 120,
+    "prior_native_LF": [
+      210,
+      210
+    ],
+    "native_LF": [
+      216,
+      216
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  - tax_prog_base: floor((173.10 * z2 + 2397) * z2 + 1034.87)",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "121",
+    "prior_row_id": 121,
+    "prior_native_LF": [
+      211,
+      211
+    ],
+    "native_LF": [
+      217,
+      217
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  - rate: tax_prog_base / prog_base",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "122",
+    "prior_row_id": 122,
+    "prior_native_LF": [
+      212,
+      212
+    ],
+    "native_LF": [
+      218,
+      218
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  - tax_option: floor(taxable_opt * rate)",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "123",
+    "prior_row_id": 123,
+    "prior_native_LF": [
+      213,
+      213
+    ],
+    "native_LF": [
+      219,
+      219
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  - saving: tax_limited - tax_option",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "124",
+    "prior_row_id": 124,
+    "prior_native_LF": [
+      214,
+      214
+    ],
+    "native_LF": [
+      220,
+      220
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "expected:",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "125",
+    "prior_row_id": 125,
+    "prior_native_LF": [
+      215,
+      215
+    ],
+    "native_LF": [
+      221,
+      221
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  base_limited: 36348",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "126",
+    "prior_row_id": 126,
+    "prior_native_LF": [
+      216,
+      216
+    ],
+    "native_LF": [
+      222,
+      222
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  tax_limited: 6076",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "127",
+    "prior_row_id": 127,
+    "prior_native_LF": [
+      217,
+      217
+    ],
+    "native_LF": [
+      223,
+      223
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  german_share: 0.9231",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "128",
+    "prior_row_id": 128,
+    "prior_native_LF": [
+      218,
+      218
+    ],
+    "native_LF": [
+      224,
+      224
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  tax_prog_base: 3107",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "129",
+    "prior_row_id": 129,
+    "prior_native_LF": [
+      219,
+      219
+    ],
+    "native_LF": [
+      225,
+      225
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  tax_option: 2867",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "130",
+    "prior_row_id": 130,
+    "prior_native_LF": [
+      220,
+      220
+    ],
+    "native_LF": [
+      226,
+      226
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "  saving: 3209",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "131",
+    "prior_row_id": 131,
+    "prior_native_LF": [
+      221,
+      221
+    ],
+    "native_LF": [
+      227,
+      227
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "tolerance: 0.01",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "132",
+    "prior_row_id": 132,
+    "prior_native_LF": [
+      222,
+      222
+    ],
+    "native_LF": [
+      228,
+      228
+    ],
+    "section": "Example 1: Austrian resident with a German rental flat",
+    "wording": "```",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "133",
+    "prior_row_id": 133,
+    "prior_native_LF": [
+      226,
+      226
+    ],
+    "native_LF": [
+      232,
+      232
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "Jan lives in Munich. In 2026 he receives EUR 10,000 of dividends from a foreign company through a foreign broker. The source country withheld 15% (EUR 1,500), its treaty rate. He has no other capital income and is not a church member. (Invented case.)",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "134",
+    "prior_row_id": 134,
+    "prior_native_LF": [
+      228,
+      228
+    ],
+    "native_LF": [
+      234,
+      234
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "**Which regime.** These are private capital income under § 32d(1) EStG, so § 34c does not apply (§ 34c(1) sentence 1, second half, and § 34c(6) sentence 2). The credit is under § 32d(5). Because no German bank withheld, he declares the dividends in the return (§ 32d(3)).",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "135",
+    "prior_row_id": 135,
+    "prior_native_LF": [
+      230,
+      230
+    ],
+    "native_LF": [
+      236,
+      236
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "- Capital income after the Sparer-Pauschbetrag of EUR 1,000 (see de-capital-gains): e = EUR 9,000.",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "136",
+    "prior_row_id": 136,
+    "prior_native_LF": [
+      231,
+      231
+    ],
+    "native_LF": [
+      237,
+      237
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "- German tax before credit: 25% × 9,000 = EUR 2,250.",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "137",
+    "prior_row_id": 137,
+    "prior_native_LF": [
+      232,
+      232
+    ],
+    "native_LF": [
+      238,
+      238
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "- Cap 1: 25% of the dividend, EUR 2,500. Cap 2: the German tax on the capital income, EUR 2,250. The EUR 1,500 paid is under both, so q = EUR 1,500 is credited in full.",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "138",
+    "prior_row_id": 138,
+    "prior_native_LF": [
+      233,
+      233
+    ],
+    "native_LF": [
+      239,
+      239
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "- Flat tax: (9,000 − 4 × 1,500) / 4 = EUR 750.",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "139",
+    "prior_row_id": 139,
+    "prior_native_LF": [
+      234,
+      234
+    ],
+    "native_LF": [
+      240,
+      240
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "- Solidarity surcharge: 5.5% × 750 = EUR 41.25. The EUR 20,350 threshold does not apply to § 32d(3) tax.",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "140",
+    "prior_row_id": 140,
+    "prior_native_LF": [
+      235,
+      235
+    ],
+    "native_LF": [
+      241,
+      241
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "- Total German tax on the dividends: EUR 791.25.",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "141",
+    "prior_row_id": 141,
+    "prior_native_LF": [
+      237,
+      237
+    ],
+    "native_LF": [
+      243,
+      243
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "If he had chosen the tariff under § 32d(6), § 32d(5) still governs the credit, applied to the additional tariff tax on the capital income. The foreign tax must first be reduced by any source-country refund entitlement. If 30% (EUR 3,000) were withheld but the same treaty limits source tax to 15%, only EUR 1,500 is creditable in this case and EUR 1,500 is reclaimed from the source country; the German tax cap does not turn treaty-refundable tax into a German credit. In a separate no-refund-entitlement case with EUR 3,000 of eligible foreign tax, the German cap would limit credit to EUR 2,250 and EUR 750 would remain uncredited.",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "142",
+    "prior_row_id": 142,
+    "prior_native_LF": [
+      239,
+      239
+    ],
+    "native_LF": [
+      245,
+      245
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "```oa-check",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "143",
+    "prior_row_id": 143,
+    "prior_native_LF": [
+      240,
+      240
+    ],
+    "native_LF": [
+      246,
+      246
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "name: DE resident, EUR 10,000 foreign dividends, 15% foreign tax, § 32d(5) credit",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "144",
+    "prior_row_id": 144,
+    "prior_native_LF": [
+      241,
+      241
+    ],
+    "native_LF": [
+      247,
+      247
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "inputs:",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "145",
+    "prior_row_id": 145,
+    "prior_native_LF": [
+      242,
+      242
+    ],
+    "native_LF": [
+      248,
+      248
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  dividends: 10000",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "146",
+    "prior_row_id": 146,
+    "prior_native_LF": [
+      243,
+      243
+    ],
+    "native_LF": [
+      249,
+      249
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  foreign_rate: 0.15",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "147",
+    "prior_row_id": 147,
+    "prior_native_LF": [
+      244,
+      244
+    ],
+    "native_LF": [
+      250,
+      250
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  sparer_pauschbetrag: 1000",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "148",
+    "prior_row_id": 148,
+    "prior_native_LF": [
+      245,
+      245
+    ],
+    "native_LF": [
+      251,
+      251
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "steps:",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "149",
+    "prior_row_id": 149,
+    "prior_native_LF": [
+      246,
+      246
+    ],
+    "native_LF": [
+      252,
+      252
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  - foreign_tax: dividends * foreign_rate",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "150",
+    "prior_row_id": 150,
+    "prior_native_LF": [
+      247,
+      247
+    ],
+    "native_LF": [
+      253,
+      253
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  - e: dividends - sparer_pauschbetrag",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "151",
+    "prior_row_id": 151,
+    "prior_native_LF": [
+      248,
+      248
+    ],
+    "native_LF": [
+      254,
+      254
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  - german_tax_before: e * 0.25",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "152",
+    "prior_row_id": 152,
+    "prior_native_LF": [
+      249,
+      249
+    ],
+    "native_LF": [
+      255,
+      255
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  - q: min(foreign_tax, dividends * 0.25, german_tax_before)",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "153",
+    "prior_row_id": 153,
+    "prior_native_LF": [
+      250,
+      250
+    ],
+    "native_LF": [
+      256,
+      256
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  - flat_tax: (e - 4 * q) / 4",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "154",
+    "prior_row_id": 154,
+    "prior_native_LF": [
+      251,
+      251
+    ],
+    "native_LF": [
+      257,
+      257
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  - soli: flat_tax * 0.055",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "155",
+    "prior_row_id": 155,
+    "prior_native_LF": [
+      252,
+      252
+    ],
+    "native_LF": [
+      258,
+      258
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  - total: flat_tax + soli",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "156",
+    "prior_row_id": 156,
+    "prior_native_LF": [
+      253,
+      253
+    ],
+    "native_LF": [
+      259,
+      259
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "expected:",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "157",
+    "prior_row_id": 157,
+    "prior_native_LF": [
+      254,
+      254
+    ],
+    "native_LF": [
+      260,
+      260
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  foreign_tax: 1500",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "158",
+    "prior_row_id": 158,
+    "prior_native_LF": [
+      255,
+      255
+    ],
+    "native_LF": [
+      261,
+      261
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  german_tax_before: 2250",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "159",
+    "prior_row_id": 159,
+    "prior_native_LF": [
+      256,
+      256
+    ],
+    "native_LF": [
+      262,
+      262
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  q: 1500",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "160",
+    "prior_row_id": 160,
+    "prior_native_LF": [
+      257,
+      257
+    ],
+    "native_LF": [
+      263,
+      263
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  flat_tax: 750",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "161",
+    "prior_row_id": 161,
+    "prior_native_LF": [
+      258,
+      258
+    ],
+    "native_LF": [
+      264,
+      264
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  soli: 41.25",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "162",
+    "prior_row_id": 162,
+    "prior_native_LF": [
+      259,
+      259
+    ],
+    "native_LF": [
+      265,
+      265
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "  total: 791.25",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "163",
+    "prior_row_id": 163,
+    "prior_native_LF": [
+      260,
+      260
+    ],
+    "native_LF": [
+      266,
+      266
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "```",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "164",
+    "prior_row_id": 164,
+    "prior_native_LF": [
+      262,
+      262
+    ],
+    "native_LF": [
+      268,
+      268
+    ],
+    "section": "Example 2: German resident with foreign dividends taxed 15% abroad",
+    "wording": "For comparison, the § 34c cap for income taxed at the tariff is German tariff tax × foreign income / taxable income. With taxable income of EUR 60,000 including EUR 10,000 of foreign rent, tariff tax T, the cap is T × 10,000 / 60,000.",
+    "source_quote_ids": [
+      "NR.NRBASE",
+      "NR.OPTION13",
+      "NR.TARIFF",
+      "NR.LUMPSUM",
+      "NR.COUNTRY",
+      "NR.AUSTRIAHEAD",
+      "NR.AUSTRIA",
+      "NR.PROG5",
+      "NR.PRORATE",
+      "NR.FLAT",
+      "NR.FOREIGNFLAT",
+      "NR.SAVER",
+      "NR.SoliRate",
+      "NR.SOLILIMIT",
+      "NR.CREDITALL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "165",
+    "prior_row_id": 165,
+    "prior_native_LF": [
+      266,
+      266
+    ],
+    "native_LF": [
+      272,
+      272
+    ],
+    "section": "Ask the client first",
+    "wording": "1. Where do you live, and do you keep any home in Germany you can use? Did you stay in Germany more than six months in a row? This decides full or limited liability.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "166",
+    "prior_row_id": 166,
+    "prior_native_LF": [
+      267,
+      267
+    ],
+    "native_LF": [
+      273,
+      273
+    ],
+    "section": "Ask the client first",
+    "wording": "2. What German income do you have (wages for work done in Germany, rent, a business, director or board fees, performances, royalties, dividends), and was tax withheld from it?",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "167",
+    "prior_row_id": 167,
+    "prior_native_LF": [
+      268,
+      268
+    ],
+    "native_LF": [
+      274,
+      274
+    ],
+    "section": "Ask the client first",
+    "wording": "3. What is your total income from all countries for 2026? This decides the § 1(3) test.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "168",
+    "prior_row_id": 168,
+    "prior_native_LF": [
+      269,
+      269
+    ],
+    "native_LF": [
+      275,
+      275
+    ],
+    "section": "Ask the client first",
+    "wording": "4. Your nationality, and where your spouse lives. EU/EEA nationals may get splitting under § 1a.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "169",
+    "prior_row_id": 169,
+    "prior_native_LF": [
+      270,
+      270
+    ],
+    "native_LF": [
+      276,
+      276
+    ],
+    "section": "Ask the client first",
+    "wording": "5. Which country taxes you as a resident, and do you have its residence certificate? Treaty refunds and the § 1(3) option need one.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "170",
+    "prior_row_id": 170,
+    "prior_native_LF": [
+      271,
+      271
+    ],
+    "native_LF": [
+      277,
+      277
+    ],
+    "section": "Ask the client first",
+    "wording": "6. For a resident with foreign income: what type of income, which country, how much tax was paid, and was any of it refundable there?",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "171",
+    "prior_row_id": 171,
+    "prior_native_LF": [
+      275,
+      275
+    ],
+    "native_LF": [
+      282,
+      282
+    ],
+    "section": "Sources",
+    "wording": "| Source | URL | Read on |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "172",
+    "prior_row_id": 172,
+    "prior_native_LF": [
+      277,
+      277
+    ],
+    "native_LF": [
+      284,
+      284
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 1 (liability, § 1(3) option) | https://www.gesetze-im-internet.de/estg/__1.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "173",
+    "prior_row_id": 173,
+    "prior_native_LF": [
+      278,
+      278
+    ],
+    "native_LF": [
+      285,
+      285
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 2 (§ 2(5b) capital income) | https://www.gesetze-im-internet.de/estg/__2.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "174",
+    "prior_row_id": 174,
+    "prior_native_LF": [
+      279,
+      279
+    ],
+    "native_LF": [
+      286,
+      286
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 1a (EU/EEA spouses) | https://www.gesetze-im-internet.de/estg/__1a.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "175",
+    "prior_row_id": 175,
+    "prior_native_LF": [
+      280,
+      280
+    ],
+    "native_LF": [
+      287,
+      287
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 25 (return, electronic filing) | https://www.gesetze-im-internet.de/estg/__25.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "176",
+    "prior_row_id": 176,
+    "prior_native_LF": [
+      281,
+      281
+    ],
+    "native_LF": [
+      288,
+      288
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 32a (2026 tariff, EUR 12,348) | https://www.gesetze-im-internet.de/estg/__32a.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "177",
+    "prior_row_id": 177,
+    "prior_native_LF": [
+      282,
+      282
+    ],
+    "native_LF": [
+      289,
+      289
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 32b (progression) | https://www.gesetze-im-internet.de/estg/__32b.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "178",
+    "prior_row_id": 178,
+    "prior_native_LF": [
+      283,
+      283
+    ],
+    "native_LF": [
+      290,
+      290
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 32d (flat tax, foreign tax credit) | https://www.gesetze-im-internet.de/estg/__32d.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "179",
+    "prior_row_id": 179,
+    "prior_native_LF": [
+      284,
+      284
+    ],
+    "native_LF": [
+      291,
+      291
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 34c (foreign tax credit) | https://www.gesetze-im-internet.de/estg/__34c.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "180",
+    "prior_row_id": 180,
+    "prior_native_LF": [
+      285,
+      285
+    ],
+    "native_LF": [
+      292,
+      292
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 34d (foreign income) | https://www.gesetze-im-internet.de/estg/__34d.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "181",
+    "prior_row_id": 181,
+    "prior_native_LF": [
+      286,
+      286
+    ],
+    "native_LF": [
+      293,
+      293
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 38b (tax class I) | https://www.gesetze-im-internet.de/estg/__38b.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "182",
+    "prior_row_id": 182,
+    "prior_native_LF": [
+      287,
+      287
+    ],
+    "native_LF": [
+      294,
+      294
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 39 (wage tax data for non-residents) | https://www.gesetze-im-internet.de/estg/__39.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "183",
+    "prior_row_id": 183,
+    "prior_native_LF": [
+      288,
+      288
+    ],
+    "native_LF": [
+      295,
+      295
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 43a (Kapitalertragsteuer 25%) | https://www.gesetze-im-internet.de/estg/__43a.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "184",
+    "prior_row_id": 184,
+    "prior_native_LF": [
+      289,
+      289
+    ],
+    "native_LF": [
+      296,
+      296
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 44a (two-fifths refund) | https://www.gesetze-im-internet.de/estg/__44a.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "185",
+    "prior_row_id": 185,
+    "prior_native_LF": [
+      290,
+      290
+    ],
+    "native_LF": [
+      297,
+      297
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 46 (employee assessments) | https://www.gesetze-im-internet.de/estg/__46.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "186",
+    "prior_row_id": 186,
+    "prior_native_LF": [
+      291,
+      291
+    ],
+    "native_LF": [
+      298,
+      298
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 49 (German-source income) | https://www.gesetze-im-internet.de/estg/__49.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "187",
+    "prior_row_id": 187,
+    "prior_native_LF": [
+      292,
+      292
+    ],
+    "native_LF": [
+      299,
+      299
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 50 (assessment of non-residents) | https://www.gesetze-im-internet.de/estg/__50.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "188",
+    "prior_row_id": 188,
+    "prior_native_LF": [
+      293,
+      293
+    ],
+    "native_LF": [
+      300,
+      300
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 50a (withholding) | https://www.gesetze-im-internet.de/estg/__50a.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "189",
+    "prior_row_id": 189,
+    "prior_native_LF": [
+      294,
+      294
+    ],
+    "native_LF": [
+      301,
+      301
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 50c (exemption and refund) | https://www.gesetze-im-internet.de/estg/__50c.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "190",
+    "prior_row_id": 190,
+    "prior_native_LF": [
+      295,
+      295
+    ],
+    "native_LF": [
+      302,
+      302
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 50d (treaty shopping) | https://www.gesetze-im-internet.de/estg/__50d.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "191",
+    "prior_row_id": 191,
+    "prior_native_LF": [
+      296,
+      296
+    ],
+    "native_LF": [
+      303,
+      303
+    ],
+    "section": "Sources",
+    "wording": "| AO §§ 8, 9 (residence, habitual abode) | https://www.gesetze-im-internet.de/ao_1977/__8.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "192",
+    "prior_row_id": 192,
+    "prior_native_LF": [
+      297,
+      297
+    ],
+    "native_LF": [
+      304,
+      304
+    ],
+    "section": "Sources",
+    "wording": "| AO § 19 (competent tax office) | https://www.gesetze-im-internet.de/ao_1977/__19.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "193",
+    "prior_row_id": 193,
+    "prior_native_LF": [
+      298,
+      298
+    ],
+    "native_LF": [
+      305,
+      305
+    ],
+    "section": "Sources",
+    "wording": "| EStZustV § 1 (Finanzamt Neubrandenburg for non-resident pensioners) | https://www.gesetze-im-internet.de/estzustv/__1.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "194",
+    "prior_row_id": 194,
+    "prior_native_LF": [
+      299,
+      299
+    ],
+    "native_LF": [
+      306,
+      306
+    ],
+    "section": "Sources",
+    "wording": "| AO §§ 108, 149, 152, 233a, 238, 240 | https://www.gesetze-im-internet.de/ao_1977/__149.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "195",
+    "prior_row_id": 195,
+    "prior_native_LF": [
+      300,
+      300
+    ],
+    "native_LF": [
+      307,
+      307
+    ],
+    "section": "Sources",
+    "wording": "| KStG § 2 (limited corporate liability) | https://www.gesetze-im-internet.de/kstg_1977/__2.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "196",
+    "prior_row_id": 196,
+    "prior_native_LF": [
+      301,
+      301
+    ],
+    "native_LF": [
+      308,
+      308
+    ],
+    "section": "Sources",
+    "wording": "| KStG § 23 (15% to 2027) | https://www.gesetze-im-internet.de/kstg_1977/__23.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "197",
+    "prior_row_id": 197,
+    "prior_native_LF": [
+      302,
+      302
+    ],
+    "native_LF": [
+      309,
+      309
+    ],
+    "section": "Sources",
+    "wording": "| KStG § 32 (withholding final) | https://www.gesetze-im-internet.de/kstg_1977/__32.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "198",
+    "prior_row_id": 198,
+    "prior_native_LF": [
+      303,
+      303
+    ],
+    "native_LF": [
+      310,
+      310
+    ],
+    "section": "Sources",
+    "wording": "| SolzG §§ 3, 4 | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-10-23 |",
+    "source_quote_ids": [
+      "R18.rate",
+      "R18.base-and-threshold"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "199",
+    "prior_row_id": 199,
+    "prior_native_LF": [
+      304,
+      304
+    ],
+    "native_LF": [
+      311,
+      311
+    ],
+    "section": "Sources",
+    "wording": "| BMF letter of 2 December 2025, country groups from 2025 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-12-02-beruecks-auslaendischer-verhaeltnisse.pdf | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "200",
+    "prior_row_id": 200,
+    "prior_native_LF": [
+      305,
+      305
+    ],
+    "native_LF": [
+      312,
+      312
+    ],
+    "section": "Sources",
+    "wording": "| BZSt, Kapitalertragsteuerentlastung (26.375%, processing time) | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/kapitalertragsteuerentlastung_node.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "201",
+    "prior_row_id": 201,
+    "prior_native_LF": [
+      306,
+      306
+    ],
+    "native_LF": [
+      313,
+      313
+    ],
+    "section": "Sources",
+    "wording": "| BZSt, Abzugsteuern nach § 50a EStG | https://www.bzst.de/DE/Unternehmen/Abzugsteuern/abzugsteuern_node.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "202",
+    "prior_row_id": 202,
+    "prior_native_LF": [
+      308,
+      308
+    ],
+    "native_LF": [
+      317,
+      317
+    ],
+    "section": "Sources",
+    "wording": "Not yet confirmed: whether the BMF has issued a country-group list for 2026 (the 2 December 2025 letter applies from 2025 and no later one was found); how the tax office rounds the progression rate; whether foreign capital income of a § 1(3) applicant counts in the 90% test and in the progression, given § 2(5b) EStG; whether the § 50c(3) refund of dividend tax down to the treaty rate includes the solidarity surcharge (the example assumes it does); church tax for non-residents (state law).",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "203",
+    "prior_row_id": 203,
+    "prior_native_LF": [
+      310,
+      310
+    ],
+    "native_LF": [
+      319,
+      319
+    ],
+    "section": "Sources",
+    "wording": "> Contributed by Ryan Duguid.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "204",
+    "prior_row_id": null,
+    "native_LF": [
+      93,
+      93
+    ],
+    "section": "R18–22 new bounded operative condition / labelled computed separator / actual read source",
+    "wording": "For business rental or disposal of other rights under § 49(1) no. 2(f), apply its corresponding registry-only exception: where registration is the sole domestic source link, income is excluded if the parties are not related under § 1(2) AStG, or the applicable treaty, with the Act's treaty-application rules, opposes taxation. This does not exempt German land or override a different domestic source link. A property-company separator: German real-estate active book assets of EUR 40 and other active book assets of EUR 60 fail the strict more-than-50% test even if the property's market value is EUR 90. Book assets of EUR 60 and EUR 40 pass that percentage test only if the seller-attribution and relevant-time conditions also hold; the separate § 17 and treaty tests still apply.",
+    "source_quote_ids": [
+      "R21.business-rights",
+      "R21.private-rights",
+      "R22.share-source"
+    ],
+    "disposition": "New sourced correction; fixture amounts stipulated and computed"
+  },
+  {
+    "id": "205",
+    "prior_row_id": null,
+    "native_LF": [
+      278,
+      278
+    ],
+    "section": "R18–22 new bounded operative condition / labelled computed separator / actual read source",
+    "wording": "7. For the relevant non-resident branch: any later failed full-liability status, mixed residence year, extraordinary employment income or special credit/insurance application; any registry-only right and related-party/treaty facts; for a property-company share, dated active-asset book values and seller attribution during the 365-day window; for entity relief, its statutory population, owners/beneficiaries, source-to-activity connection and actual rebuttal or listed-share evidence.",
+    "source_quote_ids": [
+      "R18.rate",
+      "R18.base-and-threshold",
+      "R19.refund",
+      "R19.anti-abuse",
+      "R20.assessment-exceptions",
+      "R21.business-rights",
+      "R21.private-rights",
+      "R22.share-source"
+    ],
+    "disposition": "New sourced correction; fixture amounts stipulated and computed"
+  },
+  {
+    "id": "206",
+    "prior_row_id": null,
+    "native_LF": [
+      314,
+      314
+    ],
+    "section": "R18–22 new bounded operative condition / labelled computed separator / actual read source",
+    "wording": "| SolzG §§ 3(1)–(3), 4, assessment base, threshold and sliding cap; actual selected operative reads | https://www.gesetze-im-internet.de/solzg_1995/__4.html | 2026-10-29 |",
+    "source_quote_ids": [
+      "R18.rate",
+      "R18.base-and-threshold"
+    ],
+    "disposition": "New sourced correction; fixture amounts stipulated and computed"
+  },
+  {
+    "id": "207",
+    "prior_row_id": null,
+    "native_LF": [
+      315,
+      315
+    ],
+    "section": "R18–22 new bounded operative condition / labelled computed separator / actual read source",
+    "wording": "| EStG §§ 49(1) nos. 2(e), 2(f), 6; 50(2); 44a(9); 50d(3), selected source/assessment/refund conditions actually read | https://www.gesetze-im-internet.de/estg/__49.html | 2026-10-29 |",
+    "source_quote_ids": [
+      "R19.refund",
+      "R19.anti-abuse",
+      "R20.assessment-exceptions",
+      "R21.business-rights",
+      "R21.private-rights",
+      "R22.share-source"
+    ],
+    "disposition": "New sourced correction; fixture amounts stipulated and computed"
+  }
+]

@@ -1,0 +1,350 @@
+{
+  "Guide_sha256": "0648208e05e68321e55227681b1351328ac36a5d503b8d6d81cb6ea9f6d24ef7",
+  "ledger_sha256": "24e84680057f956e6d71f5397e9ab8e558d1d03c6dac0f3b57826771cb8a5292",
+  "own_fresh_controls": [
+    {
+      "name": "oa1output",
+      "actual": "4028.00",
+      "expected": "4028"
+    },
+    {
+      "name": "oa1input",
+      "actual": "1368.00",
+      "expected": "1368"
+    },
+    {
+      "name": "oa1pay",
+      "actual": "2660.00",
+      "expected": "2660"
+    },
+    {
+      "name": "oa1late",
+      "actual": "26.50",
+      "expected": "26.5"
+    },
+    {
+      "name": "oa1dueFriday",
+      "actual": "4",
+      "expected": "4"
+    },
+    {
+      "name": "oa1creditedTuesday",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "oa1past3days",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "oa2prepay",
+      "actual": "6000",
+      "expected": "6000"
+    },
+    {
+      "name": "oa2drinksgross",
+      "actual": "38199.0",
+      "expected": "38199"
+    },
+    {
+      "name": "oa2foodgross",
+      "actual": "89131.0",
+      "expected": "89131"
+    },
+    {
+      "name": "oa2drinksnet",
+      "actual": "3.210E+4",
+      "expected": "32100"
+    },
+    {
+      "name": "oa2foodnet",
+      "actual": "8.330E+4",
+      "expected": "83300"
+    },
+    {
+      "name": "oa2drinksVAT",
+      "actual": "6099.0",
+      "expected": "6099"
+    },
+    {
+      "name": "oa2foodVAT",
+      "actual": "5831.0",
+      "expected": "5831"
+    },
+    {
+      "name": "oa2output",
+      "actual": "11930.0",
+      "expected": "11930"
+    },
+    {
+      "name": "oa2beforeSV",
+      "actual": "7730.0",
+      "expected": "7730"
+    },
+    {
+      "name": "oa2pay",
+      "actual": "1730.0",
+      "expected": "1730"
+    },
+    {
+      "name": "oa2old19all",
+      "actual": "20330",
+      "expected": "20330"
+    },
+    {
+      "name": "officialprepaymentseparateexample",
+      "actual": "4000",
+      "expected": "4000"
+    },
+    {
+      "name": "pre-refreshUSnet23.78RC",
+      "actual": "4.52",
+      "expected": "4.52"
+    },
+    {
+      "name": "pre-refreshEU1200RC",
+      "actual": "228.00",
+      "expected": "228"
+    },
+    {
+      "name": "pre-refreshundocumented285.60VATclaim",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "pre-refresh59.95net",
+      "actual": "50.38",
+      "expected": "50.38"
+    },
+    {
+      "name": "pre-refresh59.95VAT",
+      "actual": "9.57",
+      "expected": "9.57"
+    },
+    {
+      "name": "pre-refresh4500EUserviceGermanVAT",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "pre-refresh12.90bank+89.50insuranceinput",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "monthlyVAT>9000",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "monthlyVAT>9001",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "releaseeligibility2000",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "releaseeligibility2001",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "RCthreshold5000",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "RCthreshold4999",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "ZMquartercurrent50000",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "ZMquartercurrent50001",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "ZMpreviousquarter50001blocks",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "KUprior25000current100000",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "KUprior25001fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "KUcurrent100001fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "smallinvoice250inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "smallinvoice250.01",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "minbusiness9.99fails",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "minbusiness10notblocked",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "solar30inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "solar30.01notdeemed",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "gift50sameapplicableyearallowed",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "gift50.01wholeblock",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "B12noinputentitlement-useVAT",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "B12entitled400costno-spread40pctVAT",
+      "actual": "30.400",
+      "expected": "30.4"
+    },
+    {
+      "name": "B12wrong5yearspread400",
+      "actual": "6.080",
+      "expected": "6.08"
+    },
+    {
+      "name": "B12entitled500costspread5years40pctVAT",
+      "actual": "7.600",
+      "expected": "7.60"
+    },
+    {
+      "name": "B12withdrawalprice8500plus150VAT",
+      "actual": "1643.50",
+      "expected": "1643.5"
+    },
+    {
+      "name": "B13oneStateTruecombined10000",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "B13oneStateTruecombined10001",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "B13oneStateFalsecombined9000",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "B14FC1000rate1.25EURbase",
+      "actual": "8E+2",
+      "expected": "800"
+    },
+    {
+      "name": "B14VAT19",
+      "actual": "152",
+      "expected": "152"
+    },
+    {
+      "name": "B14unapproveddaily1.10woulddiffer",
+      "actual": "172.73",
+      "expected": "172.73"
+    },
+    {
+      "name": "B14advance1.20differentmonth",
+      "actual": "158.33",
+      "expected": "158.33"
+    },
+    {
+      "name": "annual31JulSaturday",
+      "actual": "5",
+      "expected": "5"
+    },
+    {
+      "name": "annual2AugMonday",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "adviser29FebTuesday",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "interest15months1Apr2028",
+      "actual": "2028-04-01",
+      "expected": "2028-04-01"
+    },
+    {
+      "name": "interest10000threefullmonths",
+      "actual": "45.0000",
+      "expected": "45"
+    },
+    {
+      "name": "annualsurcharge10000less8000twomonthsminimum",
+      "actual": "50",
+      "expected": "50"
+    },
+    {
+      "name": "penaltywholeEURfloor",
+      "actual": "50",
+      "expected": "50"
+    },
+    {
+      "name": "late2660oneMonth",
+      "actual": "26.50",
+      "expected": "26.5"
+    }
+  ],
+  "original_oa_blocks": 2,
+  "oa_failures": [],
+  "used_actual_quote_hash_literal_checks": 73,
+  "schema_errors": [],
+  "schema_warnings": [],
+  "scoped_diff": "",
+  "exact_composition_and_inverse": true,
+  "original_oa_URL_order_bylines_CTA_H2_protected_metadata": "Exact, except authorizedversion/date",
+  "retained_gaps": [
+    "Calendar-year gift administrativeperiod, machine/signature entertainmentrequirements, country-specificforeignofficeandwhole-euro taxbaserounding remain actualGuidepreciselimits.",
+    "DEB226 is an index/header body; not used as operative statutoryquotation. Specificoperativearticles acquiredorretainedandactuallyread separately.",
+    "Actualold1062LFpatternlibrary/Excel/Kontoauszugworkflow retirementexplicitinold-topicmap; priorreviewreport is lineage not independentnewPASS."
+  ],
+  "not_independent_review": true
+}

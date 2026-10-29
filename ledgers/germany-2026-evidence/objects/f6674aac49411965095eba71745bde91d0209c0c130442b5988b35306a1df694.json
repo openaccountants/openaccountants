@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-29",
+  "selected": "Option A from both writer findings, with the identical 7g tested-profit definition applied to its three actual sibling statements.",
+  "alternative": "Option B retains the short threshold wording and adds the exact statutory definition in a following sentence; Swiss Option B gives a shorter referral to the existing two-denominator method.",
+  "sources": [
+    "germany-ledger-writer-B-2026-10-29/DE-B03-IAB-profit-measurement/two-options-and-evidence.json",
+    "germany-ledger-writer-2026-10-28/DE-L19-options/options-and-evidence.json"
+  ],
+  "root_actual_read": "DEB033 native LF5–27; U48fc7e3c289a4b4e native LF864–876. Selected provisions, not whole downloaded bodies.",
+  "plans": [
+    {
+      "slug": "de-einkommensteuer-freelancer",
+      "expected_before_sha256": "0b2d478cb4a3d256c84407c56dce518eae89a4f16f34f9280c507c13cbc1658e",
+      "operations": [
+        {
+          "before": "| § 7g profit limit: profit before the deduction not more than | EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |",
+          "after": "| § 7g profit limit: profit calculated without investment deductions or § 7g(2) add-backs not more than | EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |"
+        },
+        {
+          "before": "- **§ 7g investment deduction ([§ 7g EStG](https://www.gesetze-im-internet.de/estg/__7g.html)).** Up to 50% of a planned movable asset's expected cost comes off profit in advance. The EUR 200,000 profit limit is a cliff (EUR 200,001 means no deduction that year); the EUR 200,000 cap on open deductions is a different rule with the same number. A deduction may create a loss. Not bought by the end of the third year after: it is undone in the year taken (§ 7g(3)). In the year bought, up to the same share of the real cost is added back (not more than the open deductions) and the cost may be cut by as much (§ 7g(2)). The asset must be let or used only or almost only (at least 90%) in a German establishment until the end of the year after purchase (§ 7g(4)). Special depreciation of up to 40% also needs the profit limit met in the year before purchase (§ 7g(5), (6)).",
+          "after": "- **§ 7g investment deduction ([§ 7g EStG](https://www.gesetze-im-internet.de/estg/__7g.html)).** Up to 50% of a planned movable asset's expected cost comes off profit in advance. Test the EUR 200,000 profit limit without both investment deductions and § 7g(2) add-backs; a tested profit of EUR 200,001 fails for that year; the EUR 200,000 cap on open deductions is a different rule with the same number. A deduction may create a loss. Not bought by the end of the third year after: it is undone in the year taken (§ 7g(3)). In the year bought, up to the same share of the real cost is added back (not more than the open deductions) and the cost may be cut by as much (§ 7g(2)). The asset must be let or used only or almost only (at least 90%) in a German establishment until the end of the year after purchase (§ 7g(4)). Special depreciation of up to 40% also needs the profit limit met in the year before purchase (§ 7g(5), (6))."
+        },
+        {
+          "before": "version: 1.2\n",
+          "after": "version: 1.3\n"
+        },
+        {
+          "before": "last_updated: 2026-10-27\n",
+          "after": "last_updated: 2026-10-29\n"
+        }
+      ]
+    },
+    {
+      "slug": "de-income-tax",
+      "expected_before_sha256": "d22cb13b51dccdd86e11d9813a2b9e9c18064b333466910e413565b4444a9e6d",
+      "operations": [
+        {
+          "before": "| Investment deduction (§ 7g) | Up to 50% of expected cost; profit before it not over EUR 200,000; open deductions per business not over EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |",
+          "after": "| Investment deduction (§ 7g) | Up to 50% of expected cost; profit calculated without investment deductions or § 7g(2) add-backs not over EUR 200,000; open deductions per business not over EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |"
+        },
+        {
+          "before": "version: 2.3\n",
+          "after": "version: 2.4\n"
+        }
+      ]
+    },
+    {
+      "slug": "de-self-employed-income-tax",
+      "expected_before_sha256": "dd39f263415888e9b6a5bc4635cfb2ed0b3f218f57ae04006700d41bdf5381a8",
+      "operations": [
+        {
+          "before": "| Investment deduction (§ 7g) | Up to 50% of expected cost; profit before it not over EUR 200,000; open deductions per business not over EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |",
+          "after": "| Investment deduction (§ 7g) | Up to 50% of expected cost; profit calculated without investment deductions or § 7g(2) add-backs not over EUR 200,000; open deductions per business not over EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |"
+        },
+        {
+          "before": "version: 2.2\n",
+          "after": "version: 2.3\n"
+        }
+      ]
+    },
+    {
+      "slug": "germany-tax-optimization",
+      "expected_before_sha256": "fdb8f218bb046428f7d5cfdfee5cb9cc4b7e7f27ee671d1b620caf9d93ac25e0",
+      "operations": [
+        {
+          "before": "| Profit limit: profit of that year, without the deduction | EUR 200,000 | \"200 000 Euro nicht überschreitet\" |",
+          "after": "| Profit limit: profit of that year calculated without investment deductions or § 7g(2) add-backs | EUR 200,000 | \"200 000 Euro nicht überschreitet\" |"
+        },
+        {
+          "before": "version: 1.0\n",
+          "after": "version: 1.1\n"
+        },
+        {
+          "before": "last_updated: 2026-10-23\n",
+          "after": "last_updated: 2026-10-29\n"
+        }
+      ]
+    },
+    {
+      "slug": "germany-to-switzerland-cross-border-tax",
+      "expected_before_sha256": "701f9d2a48e988d2de8999a07c5d89f211c71ab7cdb621b629061d4c1b3a734e",
+      "operations": [
+        {
+          "before": "3. Regular return: commuting days ÷ agreed working days, net of leave and sick days, at least 20%?",
+          "after": "3. Regular return: commuting days ÷ agreed working days must be at least 20%. As explained above, the protocol excludes leave and sickness from the working days for the non-return test but does not expressly extend that exclusion to this denominator; calculate both denominators and retain the stated source uncertainty where the result differs."
+        },
+        {
+          "before": "version: 0.1\n",
+          "after": "version: 0.2\n"
+        },
+        {
+          "before": "last_updated: 2026-10-23\n",
+          "after": "last_updated: 2026-10-29\n"
+        }
+      ]
+    }
+  ]
+}

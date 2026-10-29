@@ -1,0 +1,11 @@
+{
+  "id": "U456bf50ce20bf9a7",
+  "url": "https://www.bzst.de/DE/Unternehmen/Abzugsteuern/abzugsteuern_node.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U456bf50ce20bf9a7.body",
+  "raw_sha256": "5c021950e97533a6f756cd41a09358c55643068b01e659d9b56664ffd8e0add3",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U456bf50ce20bf9a7.reader.txt",
+  "reader_sha256": "463794639575b26020c7a58bd6c8501824f09f6c41ece73f7ef846ef45fe2ff6",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

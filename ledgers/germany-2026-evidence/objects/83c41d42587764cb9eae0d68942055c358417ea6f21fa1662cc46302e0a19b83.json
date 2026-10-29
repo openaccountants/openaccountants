@@ -1,0 +1,332 @@
+{
+  "R89.employershare": {
+    "source_id": "DEB071",
+    "act_article": "SGB VI §168(1)1,1b–1d",
+    "official_url": "https://www.gesetze-im-internet.de/sgb_6/__168.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb6-168-20261024.html",
+    "raw_sha256": "0046c1be59b1cf96269f6427ebd46c9736d4520bb629af9b69ffa28f5c14cf98",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB071.txt",
+    "reader_sha256": "0b72192bf40f9cde660ced74600ac9c6e2adbfad961fc52d596182d3fc604bb8",
+    "native_LF": [
+      7,
+      16
+    ],
+    "exact_quote": "(1) Die Beiträge werden getragen 1.\nbei Personen, die gegen Arbeitsentgelt beschäftigt werden, von den Versicherten und von den Arbeitgebern je zur Hälfte,\n1a.\nbei Arbeitnehmern, die Kurzarbeitergeld oder Qualifizierungsgeld beziehen, vom Arbeitgeber,\n1b.\nbei Personen, die gegen Arbeitsentgelt geringfügig versicherungspflichtig beschäftigt werden, von den Arbeitgebern in Höhe des Betrages, der 15 vom Hundert des der Beschäftigung zugrunde liegenden Arbeitsentgelts entspricht, im Übrigen vom Versicherten,\n1c.\nbei Personen, die gegen Arbeitsentgelt in Privathaushalten geringfügig versicherungspflichtig beschäftigt werden, von den Arbeitgebern in Höhe des Betrages, der 5 vom Hundert des der Beschäftigung zugrunde liegenden Arbeitsentgelts entspricht, im Übrigen vom Versicherten,\n1d.\nbei Beschäftigten, deren beitragspflichtige Einnahme sich nach § 163 Absatz 7 bestimmt, von den Beschäftigten in Höhe der Hälfte des Betrages, der sich ergibt, wenn der Beitragssatz auf die nach Maßgabe von § 20 Absatz 2a Satz 6 des Vierten Buches ermittelte beitragspflichtige Einnahme angewendet wird, im Übrigen von den Arbeitgebern,",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own selected complete quoted operative scope actually read29October2026 from retained source; not wholebody/acquisition-as-reading.",
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R89.employershare",
+    "url": "https://www.gesetze-im-internet.de/sgb_6/__168.html",
+    "article": "SGB VI §168(1)1,1b–1d"
+  },
+  "R92.flat": {
+    "source_id": "DEB082",
+    "act_article": "EStG §40a",
+    "official_url": "https://www.gesetze-im-internet.de/estg/__40a.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-40a-20261024.html",
+    "raw_sha256": "5d0a4cf71c049dfe80f603d18e74968799302f153a365a35fcb41b4786f95bed",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB082.txt",
+    "reader_sha256": "8779e09d795175473d89e3b4e86058705a4ab347eb1baed7a8ecbb9f0fa80d4d",
+    "native_LF": [
+      7,
+      20
+    ],
+    "exact_quote": "(1) 1Der Arbeitgeber kann unter Verzicht auf den Abruf von elektronischen Lohnsteuerabzugsmerkmalen (§ 39e Absatz 4 Satz 2) oder die Vorlage einer Bescheinigung für den Lohnsteuerabzug (§ 39 Absatz 3 oder § 39e Absatz 7 oder Absatz 8) bei Arbeitnehmern, die nur kurzfristig beschäftigt werden, die Lohnsteuer mit einem Pauschsteuersatz von 25 Prozent des Arbeitslohns erheben. 2Eine kurzfristige Beschäftigung liegt vor, wenn der Arbeitnehmer bei dem Arbeitgeber gelegentlich, nicht regelmäßig wiederkehrend beschäftigt wird, die Dauer der Beschäftigung 18 zusammenhängende Arbeitstage nicht übersteigt und 1.\nder Arbeitslohn während der Beschäftigungsdauer 150 Euro durchschnittlich je Arbeitstag nicht übersteigt oder\n2.\ndie Beschäftigung zu einem unvorhersehbaren Zeitpunkt sofort erforderlich wird.\n(2) Der Arbeitgeber kann unter Verzicht auf den Abruf von elektronischen Lohnsteuerabzugsmerkmalen (§ 39e Absatz 4 Satz 2) oder die Vorlage einer Bescheinigung für den Lohnsteuerabzug (§ 39 Absatz 3 oder § 39e Absatz 7 oder Absatz 8) die Lohnsteuer einschließlich Solidaritätszuschlag und Kirchensteuern (einheitliche Pauschsteuer) für das Arbeitsentgelt aus geringfügigen Beschäftigungen im Sinne des § 8 Absatz 1 Nummer 1 oder des § 8a des Vierten Buches Sozialgesetzbuch, für das er Beiträge nach § 168 Absatz 1 Nummer 1b oder 1c (geringfügig versicherungspflichtig Beschäftigte) oder nach § 172 Absatz 3 oder 3a (versicherungsfrei oder von der Versicherungspflicht befreite geringfügig Beschäftigte) oder nach § 276a Absatz 1 (versicherungsfrei geringfügig Beschäftigte) des Sechsten Buches Sozialgesetzbuch zu entrichten hat, mit einem einheitlichen Pauschsteuersatz in Höhe von insgesamt 2 Prozent des Arbeitsentgelts erheben.\n(2a) Hat der Arbeitgeber in den Fällen des Absatzes 2 keine Beiträge nach § 168 Absatz 1 Nummer 1b oder 1c oder nach § 172 Absatz 3 oder 3a oder nach § 276a Absatz 1 des Sechsten Buches Sozialgesetzbuch zu entrichten, kann er unter Verzicht auf den Abruf von elektronischen Lohnsteuerabzugsmerkmalen (§ 39e Absatz 4 Satz 2) oder die Vorlage einer Bescheinigung für den Lohnsteuerabzug (§ 39 Absatz 3 oder § 39e Absatz 7 oder Absatz 8) die Lohnsteuer mit einem Pauschsteuersatz in Höhe von 20 Prozent des Arbeitsentgelts erheben.\n(3) 1Abweichend von den Absätzen 1 und 2a kann der Arbeitgeber unter Verzicht auf den Abruf von elektronischen Lohnsteuerabzugsmerkmalen (§ 39e Absatz 4 Satz 2) oder die Vorlage einer Bescheinigung für den Lohnsteuerabzug (§ 39 Absatz 3 oder § 39e Absatz 7 oder Absatz 8) bei Aushilfskräften, die in Betrieben der Land- und Forstwirtschaft im Sinne des § 13 Absatz 1 Nummer 1 bis 4 ausschließlich mit typisch land- oder forstwirtschaftlichen Arbeiten beschäftigt werden, die Lohnsteuer mit einem Pauschsteuersatz von 5 Prozent des Arbeitslohns erheben. 2Aushilfskräfte im Sinne dieser Vorschrift sind Personen, die für die Ausführung und für die Dauer von Arbeiten, die nicht ganzjährig anfallen, beschäftigt werden; eine Beschäftigung mit anderen land- und forstwirtschaftlichen Arbeiten ist unschädlich, wenn deren Dauer 25 Prozent der Gesamtbeschäftigungsdauer nicht überschreitet. 3Aushilfskräfte sind nicht Arbeitnehmer, die zu den land- und forstwirtschaftlichen Fachkräften gehören oder die der Arbeitgeber mehr als 180 Tage im Kalenderjahr beschäftigt.\n(4) Die Pauschalierungen nach den Absätzen 1 und 3 sind unzulässig 1.\nbei Arbeitnehmern, deren Arbeitslohn während der Beschäftigungsdauer durchschnittlich je Arbeitsstunde 19 Euro übersteigt,\n2.\nbei Arbeitnehmern, die für eine andere Beschäftigung von demselben Arbeitgeber Arbeitslohn beziehen, der nach § 39b oder § 39c dem Lohnsteuerabzug unterworfen wird.\n(5) 1Auf die Pauschalierungen nach den Absätzen 1 bis 3 und 7 ist § 40 Absatz 3 anzuwenden. 2Auf die Pauschalierungen nach den Absätzen 1, 2a, 3 und 7 ist § 40 Absatz 4 entsprechend anzuwenden.\n(6) 1Für die Erhebung der einheitlichen Pauschsteuer nach Absatz 2 ist die Deutsche Rentenversicherung Knappschaft-Bahn-See zuständig. 2Die Regelungen zum Steuerabzug vom Arbeitslohn sind entsprechend anzuwenden. 3Für die Anmeldung, Abführung und Vollstreckung der einheitlichen Pauschsteuer sowie die Erhebung eines Säumniszuschlags und das Mahnverfahren für die einheitliche Pauschsteuer gelten dabei die Regelungen für die Beiträge nach § 168 Absatz 1 Nummer 1b oder 1c oder nach § 172 Absatz 3 oder 3a oder nach § 276a Absatz 1 des Sechsten Buches Sozialgesetzbuch. 4Die Deutsche Rentenversicherung Knappschaft-Bahn-See hat die einheitliche Pauschsteuer auf die erhebungsberechtigten Körperschaften aufzuteilen; dabei entfallen aus Vereinfachungsgründen 90 Prozent der einheitlichen Pauschsteuer auf die Lohnsteuer, 5 Prozent auf den Solidaritätszuschlag und 5 Prozent auf die Kirchensteuern. 5Die erhebungsberechtigten Kirchen haben sich auf eine Aufteilung des Kirchensteueranteils zu verständigen und diesen der Deutschen Rentenversicherung Knappschaft-Bahn-See mitzuteilen. 6Die Deutsche Rentenversicherung Knappschaft-Bahn-See ist berechtigt, die einheitliche Pauschsteuer nach Absatz 2 zusammen mit den Sozialversicherungsbeiträgen beim Arbeitgeber einzuziehen.\n(7) 1 Der Arbeitgeber kann unter Verzicht auf den Abruf von elektronischen Lohnsteuerabzugsmerkmalen (§ 39e Absatz 4 Satz 2) die Lohnsteuer für Bezüge von kurzfristigen, im Inland ausgeübten Tätigkeiten beschränkt steuerpflichtiger Arbeitnehmer, die einer ausländischen Betriebsstätte dieses Arbeitgebers zugeordnet sind, mit einem Pauschsteuersatz von 30 Prozent des Arbeitslohns erheben. 2 Eine kurzfristige Tätigkeit im Sinne des Satzes 1 liegt nur vor, wenn die im Inland ausgeübte Tätigkeit 18 zusammenhängende Arbeitstage nicht übersteigt.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own selected complete quoted operative scope actually read29October2026 from retained source; not wholebody/acquisition-as-reading.",
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R92.flat",
+    "url": "https://www.gesetze-im-internet.de/estg/__40a.html",
+    "article": "EStG §40a"
+  },
+  "R93.classes": {
+    "source_id": "DEB085",
+    "act_article": "EStG §38b(1)",
+    "official_url": "https://www.gesetze-im-internet.de/estg/__38b.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-38b-20261024.html",
+    "raw_sha256": "c97b7db9a18c84845688cf49f6963ca2b7e1b9ec7983499c399f1b369d3ad61b",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB085.txt",
+    "reader_sha256": "27b4ee4d91f81177a7ee7838ec39daa0f9d11f038b69f1fc97a8309c3b1b3385",
+    "native_LF": [
+      7,
+      38
+    ],
+    "exact_quote": "(1) 1Für die Durchführung des Lohnsteuerabzugs werden Arbeitnehmer in Steuerklassen eingereiht. 2Dabei gilt Folgendes: 1.\nIn die Steuerklasse I gehören Arbeitnehmer, die a)\nunbeschränkt einkommensteuerpflichtig und aa)\nledig sind,\nbb)\nverheiratet, verwitwet oder geschieden sind und bei denen die Voraussetzungen für die Steuerklasse III oder IV nicht erfüllt sind; oder\nb)\nbeschränkt einkommensteuerpflichtig sind;\n2.\nin die Steuerklasse II gehören die unter Nummer 1 Buchstabe a bezeichneten Arbeitnehmer, wenn bei ihnen der Entlastungsbetrag für Alleinerziehende (§ 24b) zu berücksichtigen ist;\n3.\nin die Steuerklasse III gehören Arbeitnehmer, a)\ndie verheiratet sind, wenn beide Ehegatten unbeschränkt einkommensteuerpflichtig sind und nicht dauernd getrennt leben und der Ehegatte des Arbeitnehmers auf Antrag beider Ehegatten in die Steuerklasse V eingereiht wird,\nb)\ndie verwitwet sind, wenn sie und ihr verstorbener Ehegatte im Zeitpunkt seines Todes unbeschränkt einkommensteuerpflichtig waren und in diesem Zeitpunkt nicht dauernd getrennt gelebt haben, für das Kalenderjahr, das dem Kalenderjahr folgt, in dem der Ehegatte verstorben ist,\nc)\nderen Ehe aufgelöst worden ist, wenn aa)\nim Kalenderjahr der Auflösung der Ehe beide Ehegatten unbeschränkt einkommensteuerpflichtig waren und nicht dauernd getrennt gelebt haben und\nbb)\nder andere Ehegatte wieder geheiratet hat, von seinem neuen Ehegatten nicht dauernd getrennt lebt und er und sein neuer Ehegatte unbeschränkt einkommensteuerpflichtig sind,\nfür das Kalenderjahr, in dem die Ehe aufgelöst worden ist;\n4.\nin die Steuerklasse IV gehören Arbeitnehmer, die verheiratet sind, wenn beide Ehegatten unbeschränkt einkommensteuerpflichtig sind und nicht dauernd getrennt leben; dies gilt auch, wenn einer der Ehegatten keinen Arbeitslohn bezieht und kein Antrag nach Nummer 3 Buchstabe a gestellt worden ist;\n5.\nin die Steuerklasse V gehören die unter Nummer 4 bezeichneten Arbeitnehmer, wenn der Ehegatte des Arbeitnehmers auf Antrag beider Ehegatten in die Steuerklasse III eingereiht wird;\n6.\ndie Steuerklasse VI gilt bei Arbeitnehmern, die nebeneinander von mehreren Arbeitgebern Arbeitslohn beziehen, für die Einbehaltung der Lohnsteuer vom Arbeitslohn aus dem zweiten und einem weiteren Dienstverhältnis sowie in den Fällen des § 39c.\n3Als unbeschränkt einkommensteuerpflichtig im Sinne der Nummern 3 und 4 gelten nur Personen, die die Voraussetzungen des § 1 Absatz 1 oder 2 oder des § 1a erfüllen.\n(2) 1Für ein minderjähriges und nach § 1 Absatz 1 unbeschränkt einkommensteuerpflichtiges Kind im Sinne des § 32 Absatz 1 Nummer 1 und Absatz 3 werden bei der Anwendung der Steuerklassen I bis IV die Kinderfreibeträge als Lohnsteuerabzugsmerkmal nach § 39 Absatz 1 wie folgt berücksichtigt: 1.\nmit Zähler 0,5, wenn dem Arbeitnehmer der Kinderfreibetrag nach § 32 Absatz 6 Satz 1 zusteht, oder\n2.\nmit Zähler 1, wenn dem Arbeitnehmer der Kinderfreibetrag zusteht, weil a)",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own selected complete quoted operative scope actually read29October2026 from retained source; not wholebody/acquisition-as-reading.",
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R93.classes",
+    "url": "https://www.gesetze-im-internet.de/estg/__38b.html",
+    "article": "EStG §38b(1)"
+  },
+  "R93.missing": {
+    "source_id": "DEB086",
+    "act_article": "EStG §39c",
+    "official_url": "https://www.gesetze-im-internet.de/estg/__39c.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-39c-20261024.html",
+    "raw_sha256": "adcf3b9dc694033214f020218e90e8b7901e07324db96cfba7813a4416ab6fe3",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB086.txt",
+    "reader_sha256": "bac7710086842c4599abaf3a62f52ddb6b337131b164d778fcef8fb522befe53",
+    "native_LF": [
+      7,
+      9
+    ],
+    "exact_quote": "(1) 1Solange der Arbeitnehmer dem Arbeitgeber zum Zweck des Abrufs der elektronischen Lohnsteuerabzugsmerkmale (§ 39e Absatz 4 Satz 1) die ihm zugeteilte Identifikationsnummer sowie den Tag der Geburt schuldhaft nicht mitteilt oder das Bundeszentralamt für Steuern die Mitteilung elektronischer Lohnsteuerabzugsmerkmale ablehnt, hat der Arbeitgeber die Lohnsteuer nach Steuerklasse VI zu ermitteln. 2Kann der Arbeitgeber die elektronischen Lohnsteuerabzugsmerkmale wegen technischer Störungen nicht abrufen oder hat der Arbeitnehmer die fehlende Mitteilung der ihm zuzuteilenden Identifikationsnummer nicht zu vertreten, hat der Arbeitgeber für die Lohnsteuerberechnung die voraussichtlichen Lohnsteuerabzugsmerkmale im Sinne des § 38b längstens für die Dauer von drei Kalendermonaten zu Grunde zu legen. 3Hat nach Ablauf der drei Kalendermonate der Arbeitnehmer die Identifikationsnummer sowie den Tag der Geburt nicht mitgeteilt, ist rückwirkend Satz 1 anzuwenden. 4Sobald dem Arbeitgeber in den Fällen des Satzes 2 die elektronischen Lohnsteuerabzugsmerkmale vorliegen, sind die Lohnsteuerermittlungen für die vorangegangenen Monate zu überprüfen und, falls erforderlich, zu ändern. 5Die zu wenig oder zu viel einbehaltene Lohnsteuer ist jeweils bei der nächsten Lohnabrechnung auszugleichen.\n(2) 1Ist ein Antrag nach § 39 Absatz 3 Satz 1 oder § 39e Absatz 8 nicht gestellt, hat der Arbeitgeber die Lohnsteuer nach Steuerklasse VI zu ermitteln. 2Legt der Arbeitnehmer binnen sechs Wochen nach Eintritt in das Dienstverhältnis oder nach Beginn des Kalenderjahres eine Bescheinigung für den Lohnsteuerabzug vor, ist Absatz 1 Satz 4 und 5 sinngemäß anzuwenden.\n(3) 1In den Fällen des § 38 Absatz 3a Satz 1 kann der Dritte die Lohnsteuer für einen sonstigen Bezug mit 20 Prozent unabhängig von den Lohnsteuerabzugsmerkmalen des Arbeitnehmers ermitteln, wenn der maßgebende Jahresarbeitslohn nach § 39b Absatz 3 zuzüglich des sonstigen Bezugs 10 000 Euro nicht übersteigt. 2Bei der Feststellung des maßgebenden Jahresarbeitslohns sind nur die Lohnzahlungen des Dritten zu berücksichtigen.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own selected complete quoted operative scope actually read29October2026 from retained source; not wholebody/acquisition-as-reading.",
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R93.missing",
+    "url": "https://www.gesetze-im-internet.de/estg/__39c.html",
+    "article": "EStG §39c"
+  },
+  "R89.calculation": {
+    "source_id": "DEB299",
+    "act_article": "BVV §2(1)/(2)",
+    "official_url": "https://www.gesetze-im-internet.de/beitrvv/__2.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/targeted-sources/beitrvv-2-20261029.html",
+    "raw_sha256": "c5e8dc2c8bd2014aa8e0b72db8e504e7ca456054f106fe8787d84f479c284c86",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB299.txt",
+    "reader_sha256": "4dec988c45f70e2bbf67fa06f84253d63ecb6223f0288c39b06e9cdb58654bfd",
+    "native_LF": [
+      7,
+      8
+    ],
+    "exact_quote": "(1) Beiträge, die der Arbeitgeber und der Beschäftigte je zur Hälfte tragen, werden durch Anwendung des halben Beitragssatzes auf das Arbeitsentgelt und anschließender Verdoppelung des gerundeten Ergebnisses berechnet. Auf Beiträge, die der Arbeitgeber allein trägt, kann Satz 1 entsprechend angewandt werden. Werden Beiträge vom Arbeitgeber und vom Beschäftigten nicht je zur Hälfte getragen, ergibt sich der Beitrag aus der Summe der getrennt berechneten gerundeten Anteile. Beiträge, die vom Beschäftigten allein zu tragen sind, werden durch Anwendung des für diese Beiträge geltenden Beitragssatzes gegebenenfalls unter Berücksichtigung eines Beitragszuschlags oder von Beitragsabschlägen auf das Arbeitsentgelt berechnet; Satz 3 zweiter Halbsatz gilt entsprechend. Wird die Mindestbeitragsbemessungsgrundlage des § 163 Abs. 8 des Sechsten Buches Sozialgesetzbuch nicht überschritten, wird der Beitragssatz auf die Mindestbeitragsbemessungsgrundlage angewandt und der vom Arbeitgeber zu tragende Beitragsanteil berechnet und gerundet; durch Abzug des Arbeitgeberanteils vom Beitrag ergibt sich der Beitragsanteil des Beschäftigten.\n(2) Abweichend von Absatz 1 Satz 1 wird in den Fällen des Übergangsbereichs der vom Arbeitgeber zu zahlende Beitrag durch Anwendung des halben Beitragssatzes auf die beitragspflichtige Einnahme nach § 20 Absatz 2a Satz 1 des Vierten Buches Sozialgesetzbuch und anschließende Verdoppelung des gerundeten Ergebnisses berechnet. Bei Entgelten bis zur Geringfügigkeitsgrenze ergibt sich die beitragspflichtige Einnahme nach § 20 Absatz 2a Satz 1 des Vierten Buches Sozialgesetzbuch durch Anwendung des Faktors F auf das der Beschäftigung nach § 14 in Verbindung mit § 17 des Vierten Buches Sozialgesetzbuch zugrunde liegende Arbeitsentgelt. Der vom Beschäftigten zu tragende Beitragsanteil wird durch Anwendung des jeweiligen halben Beitragssatzes zur gesetzlichen Rentenversicherung, der sozialen Pflegeversicherung nach § 55 Absatz 1 Satz 1 des Elften Buches Sozialgesetzbuch, zur Arbeitsförderung und der gesetzlichen Krankenversicherung sowie des halben kassenindividuellen Zusatzbeitragssatzes auf die nach § 20 Absatz 2a Satz 6 des Vierten Buches Sozialgesetzbuch ermittelte beitragspflichtige Einnahme berechnet und gerundet. Der Abzug des Beitragsanteils des Beschäftigten von dem nach Satz 1 errechneten Beitrag ergibt den Beitragsanteil des Arbeitgebers. Überschreiten einzelne Entgelte in Fällen des § 20 Absatz 2a des Vierten Buches Sozialgesetzbuch nicht die Geringfügigkeitsgrenze, ist kein Beitragsanteil nach Satz 3 zu ermitteln, der Arbeitgeber trägt insoweit den gesamten Beitrag allein. Vom Beschäftigten allein zu tragende Beitragsanteile werden durch Anwendung des maßgebenden Beitragssatzes oder Beitragszuschlags auf die beitragspflichtige Einnahme nach § 20 Absatz 2a Satz 1 des Vierten Buches Sozialgesetzbuch berechnet und auf zwei Dezimalstellen gerundet. Die den Beitragsanteil des Beschäftigten reduzierenden Beträge werden durch Anwendung des maßgebenden Beitragsabschlags auf die beitragspflichtige Einnahme nach § 20 Absatz 2a Satz 6 des Vierten Buches Sozialgesetzbuch berechnet und auf zwei Dezimalstellen gerundet.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own selected complete quoted operative scope actually read29October2026 from retained source; not wholebody/acquisition-as-reading.",
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "Own selected actual operative paragraphs read; shared-branch rounding and transition surcharge/reduction bases are distinct.",
+    "id": "R89.calculation",
+    "url": "https://www.gesetze-im-internet.de/beitrvv/__2.html",
+    "article": "BVV §2(1)/(2)"
+  },
+  "R91.multijob": {
+    "source_id": "DEB088",
+    "act_article": "SGB IV §22",
+    "official_url": "https://www.gesetze-im-internet.de/sgb_4/__22.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-22-20261024.html",
+    "raw_sha256": "6429ed296b16880c9b62e06312d883350666397b75a3b0dfbad164f6476dc78e",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB088.txt",
+    "reader_sha256": "efa3c5b90203ec761326cad1f306d2c4ce0ed256ebdf38cb664a6236e341f934",
+    "native_LF": [
+      7,
+      8
+    ],
+    "exact_quote": "(1) Die Beitragsansprüche der Versicherungsträger entstehen, sobald ihre im Gesetz oder auf Grund eines Gesetzes bestimmten Voraussetzungen vorliegen. Bei einmalig gezahltem Arbeitsentgelt sowie bei Arbeitsentgelt, das aus dem aus Arbeitszeitguthaben abgeleiteten Entgeltguthaben errechnet wird, entstehen die Beitragsansprüche, sobald dieses ausgezahlt worden ist. Satz 2 gilt nicht, soweit das einmalig gezahlte Arbeitsentgelt nur wegen eines Insolvenzereignisses im Sinne des § 165 Absatz 1 des Dritten Buches vom Arbeitgeber nicht ausgezahlt worden ist oder die Beiträge für aus Arbeitszeitguthaben abgeleiteten Entgeltguthaben schon aus laufendem Arbeitsentgelt gezahlt wurden.\n(2) Treffen beitragspflichtige Einnahmen aus mehreren Versicherungsverhältnissen zusammen und übersteigen sie die für das jeweilige Versicherungsverhältnis maßgebliche Beitragsbemessungsgrenze, so vermindern sie sich zum Zwecke der Beitragsberechnung nach dem Verhältnis ihrer Höhe so zueinander, dass sie zusammen höchstens die Beitragsbemessungsgrenze erreichen. Die beitragspflichtigen Einnahmen aus dem jeweiligen Versicherungsverhältnis sind vor der Verhältnisrechnung nach Satz 1 auf die maßgebliche Beitragsbemessungsgrenze zu reduzieren. Für die knappschaftliche Rentenversicherung und die allgemeine Rentenversicherung sind die Berechnungen nach Satz 1 getrennt durchzuführen. Die Sätze 1 bis 3 gelten nicht für Personen, die als ehemalige Soldaten auf Zeit Übergangsgebührnisse beziehen (§ 166 Absatz 1 Nummer 1c des Sechsten Buches).",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own selected complete quoted operative scope actually read29October2026 from retained source; not wholebody/acquisition-as-reading.",
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R91.multijob",
+    "url": "https://www.gesetze-im-internet.de/sgb_4/__22.html",
+    "article": "SGB IV §22"
+  },
+  "R94.maternity": {
+    "source_id": "DEB202",
+    "act_article": "MuSchG §20",
+    "official_url": "https://www.gesetze-im-internet.de/muschg_2018/__20.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/muschg-20-20261024.html",
+    "raw_sha256": "f0089e3bbc148dc3635393c771f29b02a4866d0a0142456f70528f7eb9266762",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB202.txt",
+    "reader_sha256": "e7cadc2700de8e7981aad46ec67b2c5fbaddef207b6e9dfeb8d6192febba4566",
+    "native_LF": [
+      7,
+      10
+    ],
+    "exact_quote": "(1) Eine Frau erhält während ihres bestehenden Beschäftigungsverhältnisses für die Zeit der Schutzfristen vor und nach der Entbindung sowie für den Entbindungstag von ihrem Arbeitgeber einen Zuschuss zum Mutterschaftsgeld. Als Zuschuss zum Mutterschaftsgeld wird der Unterschiedsbetrag zwischen 13 Euro und dem um die gesetzlichen Abzüge verminderten durchschnittlichen kalendertäglichen Arbeitsentgelt der letzten drei abgerechneten Kalendermonate vor Beginn der Schutzfrist vor der Entbindung gezahlt. Einer Frau, deren Beschäftigungsverhältnis während der Schutzfristen vor oder nach der Entbindung beginnt, wird der Zuschuss zum Mutterschaftsgeld von Beginn des Beschäftigungsverhältnisses an gezahlt.\n(2) Ist eine Frau für mehrere Arbeitgeber tätig, sind für die Berechnung des Arbeitgeberzuschusses nach Absatz 1 die durchschnittlichen kalendertäglichen Arbeitsentgelte aus diesen Beschäftigungsverhältnissen zusammenzurechnen. Den sich daraus ergebenden Betrag zahlen die Arbeitgeber anteilig im Verhältnis der von ihnen gezahlten durchschnittlichen kalendertäglichen Arbeitsentgelte.\n(3) Endet das Beschäftigungsverhältnis nach Maßgabe von § 17 Absatz 2 durch eine Kündigung, erhält die Frau für die Zeit nach dem Ende des Beschäftigungsverhältnisses den Zuschuss zum Mutterschaftsgeld nach Absatz 1 von der für die Zahlung des Mutterschaftsgeldes zuständigen Stelle. Satz 1 gilt entsprechend, wenn der Arbeitgeber wegen eines Insolvenzereignisses im Sinne von § 165 Absatz 1 Satz 2 des Dritten Buches Sozialgesetzbuch den Zuschuss nach Absatz 1 nicht zahlen kann.\n(4) Bei Personen, die nach einem Abkommen zur Vermeidung der Doppelbesteuerung nicht in der Bundesrepublik Deutschland ansässig sind und deren Ansässigkeitsstaat nach diesem Abkommen zur Vermeidung der Doppelbesteuerung das Besteuerungsrecht für den Zuschuss zum Mutterschaftsgeld zusteht, sind für die Berechnung des Zuschusses zum Mutterschaftsgeld nur die Beiträge zur Sozialversicherung als das durchschnittliche kalendertägliche Arbeitsentgelt nach Absatz 1 Satz 2 vermindernde gesetzliche Abzüge zu berücksichtigen. Unterliegt der Zuschuss zum Mutterschaftsgeld im Ansässigkeitsstaat nach dessen maßgebenden Vorschriften nicht der Steuer, sind alle gesetzlichen Abzüge nach Absatz 1 Satz 2 zu berücksichtigen.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own selected complete quoted operative scope actually read29October2026 from retained source; not wholebody/acquisition-as-reading.",
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R94.maternity",
+    "url": "https://www.gesetze-im-internet.de/muschg_2018/__20.html",
+    "article": "MuSchG §20"
+  },
+  "R96.copy": {
+    "source_id": "DEB099",
+    "act_article": "SGB IV §28a(4) final rules",
+    "official_url": "https://www.gesetze-im-internet.de/sgb_4/__28a.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-28a-20261024.html",
+    "raw_sha256": "a3bf381aee4e11a65cf6bff806f89e888f913e9f679beb459be843b817a21d2a",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB099.txt",
+    "reader_sha256": "3e7ece679176f183df8e2550aa77f7deb9e72a7e952505fe668baf918b4f26df",
+    "native_LF": [
+      151,
+      158
+    ],
+    "exact_quote": "Die Meldung wird in der Stammsatzdatei nach § 150 Absatz 1 und 2 des Sechsten Buches gespeichert. Die Meldung gilt nicht als Meldung nach Absatz 1 Satz 1 Nummer 1.\n(4a) Der Meldepflichtige erstattet die Meldungen nach Absatz 1 Satz 1 Nummer 10 an die zuständige Einzugsstelle. In der Meldung sind insbesondere anzugeben: 1.\ndie Versicherungsnummer des Beschäftigten,\n2.\ndie Betriebsnummer des Beschäftigungsbetriebes,\n3.\ndas monatliche laufende und einmalig gezahlte Arbeitsentgelt, von dem Beiträge zur Renten-, Arbeitslosen-, Kranken- und Pflegeversicherung für das der Ermittlung nach § 26 Absatz 4 zugrunde liegende Kalenderjahr berechnet wurden.\n(5) Der Meldepflichtige hat der zu meldenden Person mindestens einmal jährlich zum 30. April eines Jahres den Inhalt der Meldung in Textform mit der laufenden, spätestens mit der folgenden Entgeltabrechnung mitzuteilen; dies gilt nicht, wenn die Meldung ausschließlich aufgrund einer Veränderung der Daten für die gesetzliche Unfallversicherung erfolgt. Bei Auflösung des Arbeitsverhältnisses ist die Bescheinigung unverzüglich nach Abgabe der letzten Meldung auszustellen. Die Mitteilung hat gesondert oder als Anhang zur monatlichen Entgeltbescheinigung zu erfolgen.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own selected complete quoted operative scope actually read29October2026 from retained source; not wholebody/acquisition-as-reading.",
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R96.copy",
+    "url": "https://www.gesetze-im-internet.de/sgb_4/__28a.html",
+    "article": "SGB IV §28a(4) final rules"
+  },
+  "R88.weekend": {
+    "source_id": "DEB015",
+    "act_article": "AO108(3)",
+    "official_url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-108-20261024.html",
+    "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB015.txt",
+    "reader_sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9",
+    "native_LF": [
+      9,
+      9
+    ],
+    "exact_quote": "(3) Fällt das Ende einer Frist auf einen Sonntag, einen gesetzlichen Feiertag oder einen Sonnabend, so endet die Frist mit dem Ablauf des nächstfolgenden Werktags.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own selected complete quoted operative scope actually read29October2026 from retained source; not wholebody/acquisition-as-reading.",
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R88.weekend",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+    "article": "AO108(3)"
+  },
+  "R88.certificate": {
+    "source_id": "DEB105",
+    "act_article": "EStG §41b(1)",
+    "official_url": "https://www.gesetze-im-internet.de/estg/__41b.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-41b-20261024.html",
+    "raw_sha256": "e738d7a3ccd36867daeed0ce721a7c7dbe096c6a8b59a0dbabaf4189ad3e3042",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB105.txt",
+    "reader_sha256": "e4fb1d778abd99dc4f6ecb3b9f05bdd7ea25bbcb416765dfb825d66fa63dd688",
+    "native_LF": [
+      7,
+      15
+    ],
+    "exact_quote": "(1) 1Bei Beendigung eines Dienstverhältnisses oder am Ende des Kalenderjahres hat der Arbeitgeber das Lohnkonto des Arbeitnehmers abzuschließen. 2Auf Grund der Aufzeichnungen im Lohnkonto hat der Arbeitgeber nach Abschluss des Lohnkontos für jeden Arbeitnehmer der für dessen Besteuerung nach dem Einkommen zuständigen Finanzbehörde nach Maßgabe des § 93c der Abgabenordnung neben den in § 93c Absatz 1 der Abgabenordnung genannten Daten insbesondere folgende Angaben zu übermitteln (elektronische Lohnsteuerbescheinigung): 1.\ndie abgerufenen elektronischen Lohnsteuerabzugsmerkmale oder die auf der entsprechenden Bescheinigung für den Lohnsteuerabzug eingetragenen Lohnsteuerabzugsmerkmale sowie die Bezeichnung und die Nummer des Finanzamts, an das die Lohnsteuer abgeführt worden ist,\n2.\ndie Dauer des Dienstverhältnisses während des Kalenderjahres sowie die Anzahl der nach § 41 Absatz 1 Satz 5 vermerkten Großbuchstaben U,\n3.\ndie Art und Höhe des gezahlten Arbeitslohns sowie den nach § 41 Absatz 1 Satz 6 vermerkten Großbuchstaben S,\n4.\ndie einbehaltene Lohnsteuer, den Solidaritätszuschlag und die Kirchensteuer,\n5.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own selected complete quoted operative scope actually read29October2026 from retained source; not wholebody/acquisition-as-reading.",
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R88.certificate",
+    "url": "https://www.gesetze-im-internet.de/estg/__41b.html",
+    "article": "EStG §41b(1)"
+  },
+  "R88.deadline": {
+    "source_id": "DEB106",
+    "act_article": "AO §93c(1)1",
+    "official_url": "https://www.gesetze-im-internet.de/ao_1977/__93c.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-93c-20261024.html",
+    "raw_sha256": "a17b6c46401f533886d2f0a58c85fddf58b83038402bc512d3e5d95337ef1fe9",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB106.txt",
+    "reader_sha256": "d1ea24c7e9676c087859b92a13c21f5de81948cf6eefe1026a6fbed581dedc16",
+    "native_LF": [
+      7,
+      8
+    ],
+    "exact_quote": "(1) Sind steuerliche Daten eines Steuerpflichtigen auf Grund gesetzlicher Vorschriften von einem Dritten (mitteilungspflichtige Stelle) an Finanzbehörden elektronisch zu übermitteln, so gilt vorbehaltlich abweichender Bestimmungen in den Steuergesetzen Folgendes: 1.\nDie mitteilungspflichtige Stelle muss die Daten nach Ablauf des Besteuerungszeitraums bis zum letzten Tag des Monats Februar des folgenden Jahres nach amtlich vorgeschriebenem Datensatz durch Datenfernübertragung über die amtlich bestimmte Schnittstelle übermitteln; bezieht sich die Übermittlungspflicht auf einen Besteuerungszeitpunkt, sind die Daten bis zum Ablauf des zweiten Kalendermonats nach Ablauf des Monats zu übermitteln, in dem der Besteuerungszeitpunkt liegt.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own selected complete quoted operative scope actually read29October2026 from retained source; not wholebody/acquisition-as-reading.",
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R88.deadline",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__93c.html",
+    "article": "AO §93c(1)1"
+  },
+  "R95.adjust": {
+    "source_id": "DEB107",
+    "act_article": "EStG §42b",
+    "official_url": "https://www.gesetze-im-internet.de/estg/__42b.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-42b-20261024.html",
+    "raw_sha256": "c46046e376b0d8357f3ac08fae621317486d14587c8e76acd07ecfe003ebf0b8",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB107.txt",
+    "reader_sha256": "486463a05fe12a2929512cfe1699fd0d61616d25f4b5def05b0638dc1335251d",
+    "native_LF": [
+      7,
+      30
+    ],
+    "exact_quote": "(1) 1Der Arbeitgeber ist berechtigt, seinen Arbeitnehmern, die während des abgelaufenen Kalenderjahres (Ausgleichsjahr) ständig in einem zu ihm bestehenden Dienstverhältnis gestanden haben, die für das Ausgleichsjahr einbehaltene Lohnsteuer insoweit zu erstatten, als sie die auf den Jahresarbeitslohn entfallende Jahreslohnsteuer übersteigt (Lohnsteuer-Jahresausgleich). 2Er ist zur Durchführung des Lohnsteuer-Jahresausgleichs verpflichtet, wenn er am 31. Dezember des Ausgleichsjahres mindestens zehn Arbeitnehmer beschäftigt. 3Der Arbeitgeber darf den Lohnsteuer-Jahresausgleich nicht durchführen, wenn 1.\nder Arbeitnehmer es beantragt oder\n2.\nder Arbeitnehmer für das Ausgleichsjahr oder für einen Teil des Ausgleichsjahres nach den Steuerklassen V oder VI zu besteuern war oder\n3.\nder Arbeitnehmer für einen Teil des Ausgleichsjahres nach den Steuerklassen II, III oder IV zu besteuern war oder\n3a.\nbei der Lohnsteuerberechnung ein Freibetrag oder Hinzurechnungsbetrag zu berücksichtigen war oder\n3b.\ndas Faktorverfahren angewandt wurde oder\n4.\nder Arbeitnehmer im Ausgleichsjahr Kurzarbeitergeld, Qualifizierungsgeld, Zuschuss zum Mutterschaftsgeld nach dem Mutterschutzgesetz, Zuschuss bei Beschäftigungsverboten für die Zeit vor oder nach einer Entbindung sowie für den Entbindungstag während einer Elternzeit nach beamtenrechtlichen Vorschriften, Entschädigungen für Verdienstausfall nach dem Infektionsschutzgesetz, nach § 3 Nummer 21 steuerfreie Einnahmen, nach § 3 Nummer 28 steuerfreie Aufstockungsbeträge oder Zuschläge oder nach § 3 Nummer 28a steuerfreie Zuschüsse bezogen hat oder\n4a.\ndie Anzahl der im Lohnkonto oder in der Lohnsteuerbescheinigung eingetragenen Großbuchstaben U mindestens eins beträgt oder\n5.\nfür den Arbeitnehmer im Ausgleichsjahr im Rahmen der Vorsorgepauschale jeweils nur zeitweise Beträge nach § 39b Absatz 2 Satz 5 Nummer 3 Buchstabe a bis e oder der Beitragszuschlag nach § 39b Absatz 2 Satz 5 Nummer 3 Buchstabe c berücksichtigt wurden oder sich im Ausgleichsjahr der Zusatzbeitragssatz (§ 39b Absatz 2 Satz 5 Nummer 3 Buchstabe b) geändert hat oder\n5a.\nfür den Arbeitnehmer im Ausgleichsjahr im Rahmen der Vorsorgepauschale im Zusammenhang mit der Pflegeversicherung unterschiedliche Abschläge (§ 39b Absatz 2 Satz 5 Nummer 3 Buchstabe c) berücksichtigt wurden oder\n6.\nder Arbeitnehmer im Ausgleichsjahr ausländische Einkünfte aus nichtselbständiger Arbeit bezogen hat, von denen keine inländische Lohnsteuer einbehalten wurde.\n4Bei der Anwendung von Satz 3 bleiben die Verhältnisse aus einem Dienstverhältnis zu einem anderen Arbeitgeber unberücksichtigt.\n(2) 1Für den Lohnsteuer-Jahresausgleich hat der Arbeitgeber den Jahresarbeitslohn aus dem zu ihm bestehenden Dienstverhältnis festzustellen. 2Vom Jahresarbeitslohn sind der etwa in Betracht kommende Versorgungsfreibetrag und Zuschlag zum Versorgungsfreibetrag und der etwa in Betracht kommende Altersentlastungsbetrag abzuziehen. 3Für den so geminderten Jahresarbeitslohn ist die Jahreslohnsteuer nach § 39b Absatz 2 Satz 6 und 7 zu ermitteln nach Maßgabe der Steuerklasse, die für den letzten Lohnzahlungszeitraum des Ausgleichsjahres als elektronisches Lohnsteuerabzugsmerkmal abgerufen oder auf der Bescheinigung für den Lohnsteuerabzug oder etwaigen Mitteilungen über Änderungen zuletzt eingetragen wurde. 4Den Betrag, um den die sich hiernach ergebende Jahreslohnsteuer die Lohnsteuer unterschreitet, die von dem zugrunde gelegten Jahresarbeitslohn insgesamt erhoben worden ist, hat der Arbeitgeber dem Arbeitnehmer zu erstatten.\n(3) 1Der Arbeitgeber darf den Lohnsteuer-Jahresausgleich frühestens bei der Lohnabrechnung für den letzten im Ausgleichsjahr endenden Lohnzahlungszeitraum, spätestens bei der Lohnabrechnung für den letzten Lohnzahlungszeitraum, der im Monat Februar des dem Ausgleichsjahr folgenden Kalenderjahres endet, durchführen. 2Die zu erstattende Lohnsteuer ist dem Betrag zu entnehmen, den der Arbeitgeber für seine Arbeitnehmer für den Lohnzahlungszeitraum insgesamt an Lohnsteuer erhoben hat. 3§ 41c Absatz 2 Satz 2 ist anzuwenden.\n(4) 1Im Lohnkonto für das Ausgleichsjahr ist die im Lohnsteuer-Jahresausgleich erstattete Lohnsteuer gesondert einzutragen. 2In der Lohnsteuerbescheinigung für das Ausgleichsjahr ist der sich nach Verrechnung der erhobenen Lohnsteuer mit der erstatteten Lohnsteuer ergebende Betrag als erhobene Lohnsteuer einzutragen.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own selected complete quoted operative scope actually read29October2026 from retained source; not wholebody/acquisition-as-reading.",
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R95.adjust",
+    "url": "https://www.gesetze-im-internet.de/estg/__42b.html",
+    "article": "EStG §42b"
+  },
+  "R89.minimum": {
+    "url": "https://www.gesetze-im-internet.de/sgb_6/__163.html",
+    "raw_sha256": "8a31343e9b7496b118054452ba6129e5b2e06a90600b34a97d782212c10149e9",
+    "reader_sha256": "0b38d63fe3b014e76ab4aa45f9a86677d5afdf1b3afd0eb58cabb582729e724f",
+    "raw_bytes": 8607,
+    "encoding": "ISO8859-1, actual meta declaration; initial UTF8 parser failure preserved in tool output before reading",
+    "prior_failed_routes": [
+      "webtimeout",
+      "defaultDNS"
+    ],
+    "status": "acquired, selected actual reading follows",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/payroll-remaining-gates/SGBVI163.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/payroll-remaining-gates/SGBVI163.reader.txt",
+    "actual_native_LF_read": [
+      13,
+      16
+    ],
+    "exact_selected_quote": "(7) Bei Beschäftigten, die gegen ein monatliches Arbeitsentgelt bis zum oberen Grenzbetrag des Übergangsbereichs (§ 20 Absatz 2 des Vierten Buches) mehr als geringfügig beschäftigt sind, berechnet sich die beitragspflichtige Einnahme nach § 20 Absatz 2a Satz 1 des Vierten Buches.\n(8) Bei Arbeitnehmern, die eine geringfügige Beschäftigung ausüben, ist beitragspflichtige Einnahme das Arbeitsentgelt, mindestens jedoch der Betrag in Höhe von 175 Euro.\n(9) (weggefallen)\n(10) (weggefallen)",
+    "read_date": "2026-10-29",
+    "reason": "Precise existing positive ledger-rule check failed; retained original cited BVV/168 or AAG1 required this provision. No broad new research.",
+    "id": "R89.minimum",
+    "article": "SGBVI163(7)–(10)",
+    "native_LF": [
+      13,
+      16
+    ],
+    "exact_quote": "(7) Bei Beschäftigten, die gegen ein monatliches Arbeitsentgelt bis zum oberen Grenzbetrag des Übergangsbereichs (§ 20 Absatz 2 des Vierten Buches) mehr als geringfügig beschäftigt sind, berechnet sich die beitragspflichtige Einnahme nach § 20 Absatz 2a Satz 1 des Vierten Buches.\n(8) Bei Arbeitnehmern, die eine geringfügige Beschäftigung ausüben, ist beitragspflichtige Einnahme das Arbeitsentgelt, mindestens jedoch der Betrag in Höhe von 175 Euro.\n(9) (weggefallen)\n(10) (weggefallen)",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own actual selected current original-language clauses read29October2026; reviewer acquired after precise cited-rule check failed. Earlier failed routes/encoding histories remain in immutable C receipts; not called a successful earlier read."
+  },
+  "R90.tariff": {
+    "url": "https://www.gesetze-im-internet.de/aufag/__9.html",
+    "raw_sha256": "e4db9fcbf11ef99852326bdefaba72e72e9262f047db1b7c156282e2575da283",
+    "reader_sha256": "d8318391bda01fec22060c9b486060be534d66576fe7f8b2859bfc7b43defa9d",
+    "raw_bytes": 5823,
+    "encoding": "ISO8859-1, source meta",
+    "prior_default_network_failure_retained": true,
+    "status": "acquired, selected actual reading follows",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/payroll-remaining-gates/AAG9.html",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/payroll-remaining-gates/AAG9.reader.txt",
+    "actual_native_LF_read": [
+      15,
+      18
+    ],
+    "exact_selected_quote": "(2) Die Satzung kann 1.\ndie Höhe der Erstattung nach § 1 Abs. 1 beschränken und verschiedene Erstattungssätze, die 40 vom Hundert nicht unterschreiten, vorsehen,\n2.\neine pauschale Erstattung des von den Arbeitgebern zu tragenden Teils des Gesamtsozialversicherungsbeitrags für das nach § 18 des Mutterschutzgesetzes gezahlte Arbeitsentgelt vorsehen,",
+    "read_date": "2026-10-29",
+    "reason": "Precise existing positive ledger-rule check failed; retained original cited BVV/168 or AAG1 required this provision. No broad new research.",
+    "id": "R90.tariff",
+    "article": "AAG9(2)nos1–2",
+    "native_LF": [
+      15,
+      18
+    ],
+    "exact_quote": "(2) Die Satzung kann 1.\ndie Höhe der Erstattung nach § 1 Abs. 1 beschränken und verschiedene Erstattungssätze, die 40 vom Hundert nicht unterschreiten, vorsehen,\n2.\neine pauschale Erstattung des von den Arbeitgebern zu tragenden Teils des Gesamtsozialversicherungsbeitrags für das nach § 18 des Mutterschutzgesetzes gezahlte Arbeitsentgelt vorsehen,",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own actual selected current original-language clauses read29October2026; reviewer acquired after precise cited-rule check failed. Earlier failed routes/encoding histories remain in immutable C receipts; not called a successful earlier read."
+  },
+  "R91.rounding": {
+    "source_id": "DEB298",
+    "act_article": "BVV §1(1)/(2)",
+    "official_url": "https://www.gesetze-im-internet.de/beitrvv/__1.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/targeted-sources/beitrvv-1-20261029.html",
+    "raw_sha256": "bfc5c3da4e3105e6e9142877171bbd329ef7659ee64db0eeb5a3669a9f9c82e7",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB298.txt",
+    "reader_sha256": "5d0aef0eb370f24238ff86d4519841a7a2037b489a5bacea4dc0867e8b2bc238",
+    "native_LF": [
+      7,
+      8
+    ],
+    "exact_quote": "(1) Der Gesamtsozialversicherungsbeitrag und die Beitragsbemessungsgrenzen werden je Kalendermonat für die Kalendertage berechnet, an denen eine versicherungspflichtige Beschäftigung besteht (Sozialversicherungstage); ein voller Kalendermonat wird mit 30 Sozialversicherungstagen angesetzt. Berechnungsbasis ist das aus der Beschäftigung erzielte Arbeitsentgelt bis zur monatlichen Beitragsbemessungsgrenze.\n(2) Die Rechengänge werden ohne Rundung der einzelnen Zwischenergebnisse durchgeführt. Das Gesamtergebnis wird auf zwei Dezimalstellen berechnet; die zweite Dezimalstelle wird um 1 erhöht, wenn sich in der dritten Dezimalstelle eine der Zahlen 5 bis 9 ergibt.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Own complete operative7–8 reread29October2026; no intermediate rounding.",
+    "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+    "note": "",
+    "id": "R91.rounding",
+    "article": "BVV §1(1)/(2)",
+    "url": "https://www.gesetze-im-internet.de/beitrvv/__1.html"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guide_sha256": "6484533ed7d6864dee6ccdd2c67e04a9478abf59c7d362bfcdecd172aef120cb",
+  "ledger_sha256": "c806f7fdc09984616d06150dfc7ce6db6ad3554d6cd2f7ada5949a1c444b4895",
+  "current_units": 316,
+  "quoted_anchors": 131,
+  "old_units": 398,
+  "unclassified_current": [],
+  "pending_old": [],
+  "literal_quote_substrings": true,
+  "Guide_unchanged": true,
+  "known_finding": "DE-L01 source-corrected by root; writer did not edit Guide",
+  "new_independent_review": false
+}

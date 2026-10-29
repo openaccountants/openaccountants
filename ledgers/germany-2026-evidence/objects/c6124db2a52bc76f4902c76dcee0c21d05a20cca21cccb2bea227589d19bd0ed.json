@@ -1,0 +1,36 @@
+{
+  "slug": "de-vat-annual-and-special-schemes",
+  "before_sha256": "b0c0f913256ddb1f0e9cb19e9f36ae9930042a402ceb00425d87c01ae1e86419",
+  "after_sha256": "51433fb5a8203b3d7466cfd1378ee2b28dc7bfd76f2e423cdf420cd714677867",
+  "operations": [
+    {
+      "before": "| Correction of not more than this goes in the annual return only | EUR 6,000 | 2026 | § 44(3) UStDV |",
+      "after": "| Annual-return-only correction ceiling, except sales or § 3(1b) supplies covered by § 44(3) sentence 2 UStDV | EUR 6,000 | 2026 | § 44(3) UStDV |"
+    },
+    {
+      "before": "**The annual return is a full recomputation, not a sum of the quarters.** Under § 18(3) UStG the business recomputes the year's tax from § 16(1) to (4) and § 17 UStG: output tax on the year's supplies, plus tax owed as a buyer, minus deductible input tax, plus or minus input tax corrections. The advance returns are only prepayments on it. So the annual return is where errors in the advance returns are put right, where § 15a corrections of up to EUR 6,000 are made (§ 44(3) UStDV), and where a partial-exemption key estimated during the year is replaced with the final one.",
+      "after": "**The annual return is a full recomputation, not a sum of the quarters.** Under § 18(3) UStG the business recomputes the year's tax from § 16(1) to (4) and § 17 UStG: output tax on the year's supplies, plus tax owed as a buyer, minus deductible input tax, plus or minus input tax corrections. The advance returns are only prepayments on it. So the annual return is where errors in the advance returns are put right, where § 15a corrections of up to EUR 6,000 are normally made (§ 44(3) UStDV; its sentence 2 requires sale/§ 3(1b) disposal corrections in the advance return for the period of disposal), and where a partial-exemption key estimated during the year is replaced with the final one."
+    },
+    {
+      "before": "**Input tax correction (§ 15a UStG).** If the use of an asset changes within five years of first use (ten years for land and buildings), the input tax deducted on it is corrected by one fifth (or one tenth) a year for each year of change (§ 15a(1) and (5)). A sale or a private withdrawal during the period is also a change (§ 15a(8)). The UStDV simplifications are in the table: nothing below EUR 1,000 of input tax, nothing for a change under 10 points unless above EUR 1,000, and only in the annual return up to EUR 6,000.",
+      "after": "**Input tax correction (§ 15a UStG).** If the use of an asset changes within five years of first use (ten years for land and buildings), the input tax deducted on it is corrected by one fifth (or one tenth) a year for each year of change (§ 15a(1) and (5)). A sale or a private withdrawal during the period is also a change (§ 15a(8)). The UStDV simplifications are in the table: nothing below EUR 1,000 of input tax, nothing for a change under 10 points unless above EUR 1,000, and generally only in the annual return up to EUR 6,000. If the asset is sold or supplied under § 3(1b) during the correction period, § 44(3) sentence 2 instead requires the corrections for the disposal year and the remaining years in the advance return for the period of disposal, even when the amount is no more than EUR 6,000."
+    },
+    {
+      "before": "**Sibling skills.** [germany-vat-return](germany-vat-return.md) for the box-by-box advance return and the supplier library. [germany-einvoice](germany-einvoice.md) for XRechnung, ZUGFeRD and archiving. [de-income-tax](de-income-tax.md) and [de-einkommensteuer-freelancer](de-einkommensteuer-freelancer.md) for income tax, where a small business reports income gross and a VAT-registered business reports it net. [de-corporate-tax](de-corporate-tax.md) for a GmbH's profit.",
+      "after": "**Sibling skills.** [germany-vat-return](germany-vat-return.md) for the box-by-box advance return and the supplier library. [germany-einvoice](germany-einvoice.md) for XRechnung, ZUGFeRD and archiving. [de-income-tax](de-income-tax.md) and [de-einkommensteuer-freelancer](de-einkommensteuer-freelancer.md) for income tax, where a small business uses gross receipts and costs, while normal-scheme cash EÜR records VAT collected as a receipt and VAT remitted as an expense. [de-corporate-tax](de-corporate-tax.md) for a GmbH's profit."
+    },
+    {
+      "before": "version: 0.1\n",
+      "after": "version: 0.2\n"
+    },
+    {
+      "before": "last_updated: 2026-10-23\n",
+      "after": "last_updated: 2026-10-29\n"
+    }
+  ],
+  "original_oa_blocks": 2,
+  "original_oa_blocks_byte_exact": true,
+  "ordered_urls_exact": true,
+  "protected_metadata_exact": true,
+  "exact_inverse": true
+}

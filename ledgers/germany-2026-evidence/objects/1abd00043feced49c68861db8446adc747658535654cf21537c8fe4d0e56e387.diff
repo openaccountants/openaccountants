@@ -1,0 +1,92 @@
+--- before
++++ after
+@@ -9,7 +9,7 @@
+ review_status: pending_review
+ trust_label: Built by Michael Cutajar and the OpenAccountants team
+ tier: 2
+-version: 0.2
++version: 0.3
+ verified_by: pending
+ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+ ---
+@@ -44,15 +44,15 @@
+ 
+ The rule works both ways. For a Swiss resident who commutes to a German employer, the German employer withholds at most 4.5% and Switzerland taxes the pay, cutting the gross pay by one fifth when computing its tax base (art. 15a(3)(b)).
+ 
+-**2. Weekly stayer (Wochenaufenthalter) and others who lose commuter status.** A German resident with a weekday room in Switzerland who stays there on more than 60 working days is not a commuter. Art. 15 applies instead: Switzerland may tax pay for work done in Switzerland. Germany exempts that pay but uses it to set the rate on other income (art. 24(1) no. 1(c) and no. 2; § 32b(1) no. 3 EStG). Germany grants the exemption only if the person proves that Switzerland taxed the pay and the tax was paid, or that Switzerland waived its right (§ 50d(8) EStG). Pay for workdays spent outside Switzerland stays taxable in Germany.
++**2. Weekly stayer (Wochenaufenthalter) and others who lose commuter status.** After actual commuter status fails, test art. 15(2) before allocating Swiss work pay under art. 15(1): pay remains taxable only in the residence state if presence in the other state is not more than 183 days in the relevant calendar year, the actual treaty employer is not resident there, and its permanent establishment there does not bear the remuneration. Count presence days, not just working days; establish employer and any economic-employer issue from the actual facts. An ordinary German-resident non-commuter present for 80 days in Switzerland for an actual German treaty employer, with no Swiss permanent establishment bearing the pay and all other stated gates met, stays exclusively German-taxable on that pay. At 184 days or with a Swiss-resident employer, that exception fails; then art. 15(1), subject to the other actual special rules, allows Swiss taxation of pay for work there. Germany exempts qualifying pay with progression (art. 24(1) no. 1(c), no. 2; § 32b(1) no. 3 EStG), only on proof either that Switzerland waived its taxing right or that Swiss tax assessed on the pay was paid (§ 50d(8)); a bare zero-withholding certificate does not itself establish a waiver. Under that ordinary art. 15(1) workday route, pay for days outside Switzerland stays German-taxable. Existing examples with a Swiss employer do not meet art. 15(2)(b).
+ 
+ A weekday flat does not by itself move the person's residence. If the person is resident in both states under domestic law, art. 4(2) decides: permanent home first, then centre of vital interests (closer personal and economic ties), then habitual abode, then nationality. A family home in Germany usually points to Germany.
+ 
+ **3. Managers of Swiss companies, art. 15(4).** A German resident who is a board member (Vorstandsmitglied), director, managing director (Geschäftsführer) or Prokurist of a Swiss company can be taxed in Switzerland on that pay, unless their duties are limited to work outside Switzerland. Art. 15a takes priority, so a manager who meets the commuter test is a commuter. The German and Swiss authorities agreed on 6 April 2023 to apply art. 15(4) also to people registered with a signature right and no stated function, and to unregistered people with powers at least equal to a Prokura. That agreement now runs to 31 December 2027 (BMF letters of 25 April 2023 and 16 October 2025).
+ 
+-**4. Germans who move to Switzerland.** Moving ends German unlimited liability. Four German rules can follow:
+-
+-- **Treaty tail, art. 4(4).** A Swiss resident without Swiss nationality who was fully taxable in Germany for at least five years in total remains taxable in Germany on German-source income in the year their German liability ended and the five following years. Germany credits the Swiss tax on that income. This does not apply to someone who moved to take up genuine employment with an employer in which they have no substantial interest. A German employer may not apply the 4.5% cap to such a person while art. 4(4) applies (Gre-1 note 3).
++**4. Germans who move to Switzerland.** Moving alone does not end German domestic unlimited liability: test any retained German home or habitual abode under § 1(1) EStG separately from treaty residence. If that domestic liability actually ends, four German departure rules can follow:
++
++- **Treaty tail, art. 4(4).** A Swiss resident without Swiss nationality who was fully taxable in Germany for at least five years in total remains taxable in Germany on German-source income in the year their German liability ended and the five following years. The separate art. 4(4) credit, under the actual German foreign-tax-credit rules and excluding trade tax, covers treaty-permitted Swiss tax only against the additional German tax imposed by this tail beyond what arts. 6–22 otherwise permit. Stipulated German tail tax EUR 300, otherwise treaty-permitted German tax EUR 100 and otherwise eligible Swiss tax EUR 250 give an additional-tax cap of EUR 200, credit EUR 200 and German remainder EUR 100. These are independently established inputs, not an official example or the full commuter § 36 settlement credit. This does not apply to someone who moved to take up genuine employment with an employer in which they have no substantial interest. A German employer may not apply the 4.5% cap to such a person while art. 4(4) applies (Gre-1 note 3).
+ - **Exit tax, § 6 AStG.** Shares of at least 1% held in the last five years, after at least seven years of full German liability in the last twelve: deemed sale on leaving, seven yearly instalments on application. Method in leaving-germany-exit-tax.
+ - **Extended limited liability, § 2 AStG.** A German citizen who moves to a low-tax country and keeps substantial German economic interests stays taxable on more German income for ten years. Whether the Swiss canton counts as low-tax is a computation; see leaving-germany-exit-tax.
+ - **Gift and inheritance tax, § 2(1) no. 1(b) ErbStG.** A German national who has lived abroad for no more than five years without a German home still counts as a resident for gift and inheritance tax.
+@@ -94,19 +94,19 @@
+ ### Step 2: the German assessment of a commuter (German resident)
+ 
+ - All the pay, including pay for days worked in Switzerland, is German employment income. Compute it as for any employee (de-employee-income-tax): gross pay less Werbungskosten or the employee lump sum, then special expenses.
+-- The 2026 tariff applies to taxable income, with the solidarity surcharge at 5.5% above the EUR 20,350 threshold of income tax (see de-employee-income-tax).
++- The 2026 tariff applies to taxable income. For ordinary assessment without a separate § 32d(3)/(4) component, establish the actual Soli base and threshold: EUR 20,350 for a single assessment, EUR 40,700 for the statutory joint cases. Up to that threshold the ordinary surcharge is zero; above it take the smaller of 5.5% of the base and 11.9% of its excess over that threshold, dropping fractions of a cent. A stipulated ordinary single base of EUR 20,400 gives min(EUR 1,122, EUR 5.95) = EUR 5.95. Use the employee companion for child-related base and special § 32d selectors; Swiss § 36 withholding credit is a settlement credit, not a reduction of this Soli assessment base.
+ - The Swiss tax withheld, up to 4.5% of gross, is credited against German income tax as if it were German withholding (art. 15a(3)(a); § 36(2) no. 2 EStG). It is not capped under § 34c. The employer's certificate of gross pay and Swiss tax is the evidence (protocol no. 6).
+ - The Swiss employer withholds the lower of 4.5% and the Swiss tariff tax (Gre-1 note 6(b)). The commuter gives the employer the Gre-1 when starting work and when changing employer; the German tax office then renews it each year without a new application (Gre-1 notes 2 and 7).
+ 
+ ### Step 3: when commuter status fails
+ 
+-- Pay for work days in Switzerland: Swiss tax under art. 15; exempt in Germany with progression (art. 24(1) no. 1(c), no. 2; § 32b EStG), only with proof of Swiss tax paid (§ 50d(8)).
++- After testing art. 15(2) and other actual special rules above, qualifying Swiss workday pay under art. 15(1) is exempt in Germany with progression (art. 24(1) no. 1(c), no. 2; § 32b), on proof of Swiss waiver or payment of assessed Swiss tax (§ 50d(8)). If the three art. 15(2) gates instead hold, do not exempt that pay merely because work occurred in Switzerland.
+ - Pay for days worked in Germany or third countries: taxable in Germany.
+ - If the employer finds during the year that status will fail, it must collect the full Swiss tax (Gre-1 note 4).
+ 
+ ### Step 4: Swiss occupational pensions of former commuters
+ 
+-A former commuter who worked in the Swiss public service and draws a second-pillar pension keeps the Germany-first rule: the Swiss pension fund withholds at most 4.5% on a Gre-4 certificate (Gre-5 for survivors), and Germany credits it in proportion to the taxable share of the pension (BMF letters of 8 February 2018 and 7 December 2023; protocol no. 9).
++Protocol no. 9 covers Swiss second-pillar insurance payments where the last or current employment relevant to that insurance relationship before payment/start was in Swiss public service, including the specified vested-benefit accounts/policies. For a recipient who has or had art. 15a commuter status, art. 19(4) gives residence-state priority and the other state limits withholding under art. 15a. For recurring payments, give the second-pillar institution the prescribed residence certificate before the first receipt (Gre-4, or Gre-5 for survivors); capital payments instead require commuter-status certification in the prescribed official refund form. Merely having worked in Swiss public service sometime is insufficient. German credit of Swiss withholding requires the corresponding receipts actually to enter the German tax base and no refund to have been applied for or made. Preserve the actual pension classification/taxable-share limit: the cited 2018 method credits at most the corresponding 4.5% share for the Obligatorium or the relevant Ertragsanteil for the Überobligatorium; no universal pension percentage or double recovery is inferred.
+ 
+ ## Deadlines and filing
+ 
+@@ -116,21 +116,21 @@
+ | Gre-3 non-return days | Where status fails: employer certifies, the tax office for the place of work stamps; if possible within three months after the year end or the end of the job |
+ | German return, 2026 | Required when total income exceeds EUR 12,348 (single) and no German wage tax was withheld (§ 56 EStDV). Due 31 July 2027, a Saturday, so Monday 2 August 2027; with a tax adviser 29 February 2028 (§§ 108, 149 AO; see de-non-resident-tax) |
+ | Prepayments | Quarterly on 10 March, 10 June, 10 September and 10 December; the 4.5% Swiss tax is counted (art. 15a(3)(a); § 37 EStG) |
+-| Weekly stayer | Swiss tax return or tax at source in Switzerland (see ch-cross-border); German return showing the exempt pay for progression, with proof of Swiss tax |
++| Weekly stayer | Test art. 15(2) first. Where Swiss taxation/German exemption actually applies, follow ch-cross-border for Swiss filing; the German return shows qualifying exempt pay for progression with proof of Swiss waiver or payment of assessed Swiss tax, not payment as the only possible proof. |
+ 
+ ## Penalties and interest
+ 
+-- **Late filing surcharge (§ 152 AO).** 0.25% per started month of the assessed tax less prepayments and credited withholding, at least EUR 25 per month, at most EUR 25,000. Compulsory if the 2026 return is not filed by 29 February 2028 and tax is due.
++- **Late filing surcharge (§ 152 AO).** 0.25% per started month of the assessed tax less prepayments and credited withholding, at least EUR 25 per month, at most EUR 25,000. The § 152(2) compulsory route after 29 February 2028 is subject to § 152(3): it does not apply where the office extends the deadline under § 109, including retroactively, where assessed tax is zero or negative, or where assessed tax does not exceed assessed prepayments plus creditable withholding. These exceptions limit paragraph 2 compulsion; apply paragraph 1's separate discretionary conditions, not an automatic waiver of every surcharge.
+ - **Interest on assessed tax (§ 233a, § 238 AO).** 0.15% per full month on the balance, from 1 April 2028 for 2026.
+ - **Late payment (§ 240 AO).** 1% per started month on overdue tax, rounded down to the nearest EUR 50.
+-- **Lost commuter status found late.** The employer must collect the Swiss tax not withheld (Gre-1 note 4). In Germany the exemption under art. 24 is refused until the Swiss tax is shown paid (§ 50d(8) EStG), so the return is assessed with the pay taxed and changed later.
++- **Lost commuter status found late.** The employer must collect the Swiss tax not withheld (Gre-1 note 4). In Germany where art. 24 exemption actually applies after the other treaty tests, § 50d(8) requires proof either of Swiss waiver or that Swiss assessed tax was paid. If the required proof is first supplied after the German assessment included the pay, amend that assessment to the corresponding extent; do not demand payment of tax where a valid waiver is proved.
+ 
+ Figures and sections as in de-non-resident-tax, which read them on 2026-10-23.
+ 
+ ## Cross-border points
+ 
+ - **Two treaty layers from 2026.** The protocol of 21 August 2023 rewrote the commuter points into the treaty protocol (nos. 5 to 7) and ended the 1991 negotiation record (protocol no. 7). The 20% regular-return test is the main new condition.
+-- **Swiss withholding for German residents, dividends, interest.** Switzerland withholds 35% Verrechnungssteuer; under art. 10 a German resident can recover down to 15% (0% for a German company holding at least 10% for 365 days); interest is taxable only in Germany (art. 11). Refund route in ch-cross-border.
++- **Swiss withholding for German residents, dividends, interest.** Switzerland withholds 35% Verrechnungssteuer. For the treaty-resident beneficial owner, the ordinary residual dividend ceiling is 15% under art. 10(2)(c); separately classify the Rhine border-power-company 5% population and the specified deductible silent-participation/profit-sharing instruments under the 30% branch in (a)/(b). Art. 10(3) gives source-state exemption only to a beneficially entitled treaty-resident company other than a partnership, directly holding at least 10% for a 365-day period including the dividend payment day; the stated merger/division/conversion changes are disregarded for that period. Indirect 10%, partnership ownership or an unproved payment-inclusive period does not establish zero. Its German REIT/fund exclusion concerns German payers; do not extend it to Swiss payers. Actual entitlement and evidence precede any Swiss refund, whose route is in ch-cross-border; German outbound cases use the treaty-withholding companion. Interest follows art. 11's separate Germany-only route.
+ - **German withholding on payments to Swiss residents.** See de-treaty-withholding-rates.
+ - **Social security.** EU-Switzerland coordination decides where contributions are due, separately from tax. Not covered here.
+ - **Inheritance tax.** A separate Germany-Switzerland inheritance tax treaty of 1978 exists. Not covered here.
+@@ -216,8 +216,11 @@
+ 4. Are you a board member, managing director or Prokurist of the Swiss company, or registered with a signature right?
+ 5. Did you live in Germany before moving, for how many years, and do you hold 1% or more of any company?
+ 6. Do you have the Gre-1 for 2026, and will your employer issue the Gre-3 and a certificate of pay and Swiss tax?
++7. For the relevant exception: total calendar-presence days, actual treaty employer and remuneration-bearing Swiss permanent establishment; Swiss waiver or assessed-tax payment proof; retained German home/habitual abode; pension insurance relationship and last/current relevant public employment, payment kind/certificates/refund history; dividend instrument, beneficial entitlement, direct holding and payment-inclusive dates; any actual § 109 filing extension.
+ 
+ ## Sources
++
++Selected operative clauses actually read on 29 October 2026: SolzG §§ 3/4; EStG §§ 1(1),50d(8); AO § 152(3); treaty arts. 4(4),15(1)/(2),10(2)/(3), protocol no. 9, with full population/period/proof gates; and the cited 2018 pension credit clauses. Actual source identities/native scopes and unchanged raw/readers are retained in the accompanying writer source ledger. This is no new treaty or pension-rate matrix.
+ 
+ | Source | URL | Read on |
+ |---|---|---|

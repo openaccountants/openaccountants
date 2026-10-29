@@ -1,0 +1,35 @@
+{
+  "status": "writer final evidence successor, independent review pending",
+  "artifacts": [
+    {
+      "path": "de-crypto-tax.md",
+      "sha256": "6c7d1d95447bd117bc0bac1a15ea3e182beacde3c7593a961b2f230d9d390230",
+      "bytes": 227904
+    },
+    {
+      "path": "exact-ledger-operations.json",
+      "sha256": "8f30dd0f70547b4fa3e48b45941a699e548b5faea31a48dca838fcc343844155",
+      "bytes": 437
+    },
+    {
+      "path": "predecessor-reference.json",
+      "sha256": "4c7909f00d72a26a4dda58d267b972ca333967ac934a3c8f3b1c17e7594c6fc3",
+      "bytes": 1188
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "76b142be7426283ef5b278db7c6f225cc7b3ec4a2c22f15698444cec126379e7",
+      "bytes": 623
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "a6bc3988e18bd5a852bd8de2c5aaa3236510a44a74db962f574931cb719d9fbd",
+      "bytes": 369
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "4a51f448e9d8a008c1288a834051a179a57d79b820fb3511765a85ccbfcc4454",
+      "bytes": 775
+    }
+  ]
+}

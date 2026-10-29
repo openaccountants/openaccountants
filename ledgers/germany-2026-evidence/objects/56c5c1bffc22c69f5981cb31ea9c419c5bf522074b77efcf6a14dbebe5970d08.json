@@ -1,0 +1,19 @@
+{
+  "all_actual_old_origins": 347,
+  "mismatches": 0,
+  "semantic_spots_actually_read": [
+    1,
+    15,
+    36,
+    48,
+    69,
+    109,
+    180,
+    201,
+    215,
+    226,
+    247,
+    346
+  ],
+  "scope": "All real Git wording origins checked;12actual prior-topic semantic samples, not every old destination fresh reading"
+}

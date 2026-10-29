@@ -1,0 +1,20 @@
+[
+  {
+    "id": "DE-L01",
+    "Guide": "germany-transfer-pricing",
+    "current_LF": 406,
+    "wording": "A relocation of functions and the valuation of a transfer package or of intangibles. See § 1a AStG",
+    "source_A1a": "https://www.gesetze-im-internet.de/astg/__1a.html",
+    "source_A1_3b": "https://www.gesetze-im-internet.de/astg/__1.html",
+    "classification": "wrong referral citation; no calculation error established",
+    "options": [
+      {
+        "A": "Change only relocation referral to §1(3b) AStG; retain separate intangible-price-adjustment1a reference if intended."
+      },
+      {
+        "B": "Keep combined referral but name both §1(3b) relocation and §1a price-adjustment roles explicitly."
+      }
+    ],
+    "implementation": "none; parent owns any later Guide corrections"
+  }
+]

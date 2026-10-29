@@ -1,0 +1,1123 @@
+{
+  "role": "writer successor, independent review pending",
+  "controls": [
+    {
+      "id": "R97.weekday",
+      "actual": "5",
+      "expected": "5",
+      "scope": "Nominal Saturday, ordinary statutory deadline.",
+      "pass": true
+    },
+    {
+      "id": "R97.adjusted",
+      "actual": "2027-08-02",
+      "expected": "2027-08-02",
+      "scope": "Monday ordinary next working day, actual local holidays/authority early request separate.",
+      "pass": true
+    },
+    {
+      "id": "R98.(False, 2)",
+      "actual": "0",
+      "expected": "0",
+      "scope": "Qualifying arrival/departure overnight branch or independent same-day branch; all other travel predicates stipulated.",
+      "pass": true
+    },
+    {
+      "id": "R98.(True, 2)",
+      "actual": "14",
+      "expected": "14",
+      "scope": "Qualifying arrival/departure overnight branch or independent same-day branch; all other travel predicates stipulated.",
+      "pass": true
+    },
+    {
+      "id": "R98.(False, 8)",
+      "actual": "0",
+      "expected": "0",
+      "scope": "Qualifying arrival/departure overnight branch or independent same-day branch; all other travel predicates stipulated.",
+      "pass": true
+    },
+    {
+      "id": "R98.(False, 9)",
+      "actual": "14",
+      "expected": "14",
+      "scope": "Qualifying arrival/departure overnight branch or independent same-day branch; all other travel predicates stipulated.",
+      "pass": true
+    },
+    {
+      "id": "R98.full24",
+      "actual": "28",
+      "expected": "28",
+      "scope": "Full qualifying 24-hour absence, separate from arrival/day14.",
+      "pass": true
+    },
+    {
+      "id": "R99.owncar",
+      "actual": "5320.00",
+      "expected": "5320",
+      "scope": "Own/use-provided-car exception established; full one-way km and eligible days stipulated.",
+      "pass": true
+    },
+    {
+      "id": "R99.defaultcap",
+      "actual": "4500",
+      "expected": "4500",
+      "scope": "Same travel amount without own-car exception, actual statutory selector.",
+      "pass": true
+    },
+    {
+      "id": "R100.room8months",
+      "actual": "840",
+      "expected": "840",
+      "scope": "Four full nonqualifying months; partial month does not create an extra FULL-month reduction.",
+      "pass": true
+    },
+    {
+      "id": "R100.day(True, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Permanent-no-other-workplace alternative independently established, actual activity-at-home condition and no room/double-household duplication remain required.",
+      "pass": true
+    },
+    {
+      "id": "R100.day(True, False, False)",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Permanent-no-other-workplace alternative independently established, actual activity-at-home condition and no room/double-household duplication remain required.",
+      "pass": true
+    },
+    {
+      "id": "R100.day(False, True, True)",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Permanent-no-other-workplace alternative independently established, actual activity-at-home condition and no room/double-household duplication remain required.",
+      "pass": true
+    },
+    {
+      "id": "R101.gift50",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Cliff only for actual qualifying gift-expense prohibition; being below50 does not establish invoice/business/input-VAT eligibility.",
+      "pass": true
+    },
+    {
+      "id": "R101.gift50.01",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Cliff only for actual qualifying gift-expense prohibition; being below50 does not establish invoice/business/input-VAT eligibility.",
+      "pass": true
+    },
+    {
+      "id": "R102.GWG(700, True)",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Depreciable movable fixed asset otherwise established; qualifying contained-VAT cost metric, not generic all-asset deduction.",
+      "pass": true
+    },
+    {
+      "id": "R102.GWG(700, False)",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Depreciable movable fixed asset otherwise established; qualifying contained-VAT cost metric, not generic all-asset deduction.",
+      "pass": true
+    },
+    {
+      "id": "R102.GWG(800, True)",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Depreciable movable fixed asset otherwise established; qualifying contained-VAT cost metric, not generic all-asset deduction.",
+      "pass": true
+    },
+    {
+      "id": "R102.GWG(Decimal('800.01'), True)",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Depreciable movable fixed asset otherwise established; qualifying contained-VAT cost metric, not generic all-asset deduction.",
+      "pass": true
+    },
+    {
+      "id": "R102.pool250",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Otherwise qualifying independently usable depreciable movable fixed asset; uniform pool-year choice.",
+      "pass": true
+    },
+    {
+      "id": "R102.pool250.01",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Otherwise qualifying independently usable depreciable movable fixed asset; uniform pool-year choice.",
+      "pass": true
+    },
+    {
+      "id": "R102.pool1000",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Otherwise qualifying independently usable depreciable movable fixed asset; uniform pool-year choice.",
+      "pass": true
+    },
+    {
+      "id": "R102.pool1000.01",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Otherwise qualifying independently usable depreciable movable fixed asset; uniform pool-year choice.",
+      "pass": true
+    },
+    {
+      "id": "R102.register",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Register strictly above250 unless books already show required particulars.",
+      "pass": true
+    },
+    {
+      "id": "R103.KU(25000, 100000)",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Actual ordinary turnover selectors; other19 conditions independently met.",
+      "pass": true
+    },
+    {
+      "id": "R103.KU(25001, 100000)",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Actual ordinary turnover selectors; other19 conditions independently met.",
+      "pass": true
+    },
+    {
+      "id": "R103.KU(25000, 100001)",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Actual ordinary turnover selectors; other19 conditions independently met.",
+      "pass": true
+    },
+    {
+      "id": "R103.cash800k",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Inclusive prior turnover ceiling; permission and statutory turnover population still required.",
+      "pass": true
+    },
+    {
+      "id": "R103.advance(True, False)",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Before-supply input VAT requires both actual qualifying invoice and payment; completed supply rule separate.",
+      "pass": true
+    },
+    {
+      "id": "R103.advance(True, True)",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Before-supply input VAT requires both actual qualifying invoice and payment; completed supply rule separate.",
+      "pass": true
+    },
+    {
+      "id": "R103.advance(False, True)",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Before-supply input VAT requires both actual qualifying invoice and payment; completed supply rule separate.",
+      "pass": true
+    },
+    {
+      "id": "R103.uncollected",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Uncollected prepayment invoice is not actual received cash for advance output-VAT branch.",
+      "pass": true
+    },
+    {
+      "id": "R104.ratio0.10",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Statutory initial-phase forecast loss/capital ratio only; actual prepackaged model/negative-income facts separately established, no immunity under other anti-abuse rules.",
+      "pass": true
+    },
+    {
+      "id": "R104.ratio0.1001",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Statutory initial-phase forecast loss/capital ratio only; actual prepackaged model/negative-income facts separately established, no immunity under other anti-abuse rules.",
+      "pass": true
+    },
+    {
+      "id": "R105.aggregate",
+      "actual": "33000",
+      "expected": "33000",
+      "scope": "Own and qualifying tax-free employer RV plus independently eligible basis pension.",
+      "pass": true
+    },
+    {
+      "id": "R105.employee",
+      "actual": "21826",
+      "expected": "21826",
+      "scope": "Ordinary employee, no separate statutory special-cap reduction, actual qualifying employer offset.",
+      "pass": true
+    },
+    {
+      "id": "R105.selfpayer",
+      "actual": "15000",
+      "expected": "15000",
+      "scope": "Isolated eligible selfpayer without employer component; no imaginary offset.",
+      "pass": true
+    },
+    {
+      "id": "R105.jointcap",
+      "actual": "61652",
+      "expected": "61652",
+      "scope": "Only jointly assessed qualifying spouses, not marriage alone.",
+      "pass": true
+    },
+    {
+      "id": "R106.business",
+      "actual": "False",
+      "expected": "False",
+      "scope": "No completed first training/degree means4(9) business deduction blocked even if separate employee9(6) employment exception would apply; no imported exception.",
+      "pass": true
+    },
+    {
+      "id": "R108.fixedband",
+      "actual": "4200",
+      "expected": "4200",
+      "scope": "Both full taxable intervals in actual2026 42% tariff band; no church/Soli/other-scheme claim.",
+      "pass": true
+    },
+    {
+      "id": "R108.crosszone",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Crossed formula zones require actual tariff difference, not arbitrary top-rate multiplication.",
+      "pass": true
+    },
+    {
+      "id": "R107.route97",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Exact archived old topic routed to actual operative current component, correcting historical unsupported figures rather than adopting them.",
+      "pass": true
+    },
+    {
+      "id": "R107.route96",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Exact archived old topic routed to actual operative current component, correcting historical unsupported figures rather than adopting them.",
+      "pass": true
+    },
+    {
+      "id": "R107.route98",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Exact archived old topic routed to actual operative current component, correcting historical unsupported figures rather than adopting them.",
+      "pass": true
+    },
+    {
+      "id": "R107.route99",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Exact archived old topic routed to actual operative current component, correcting historical unsupported figures rather than adopting them.",
+      "pass": true
+    },
+    {
+      "id": "R107.route100",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Exact archived old topic routed to actual operative current component, correcting historical unsupported figures rather than adopting them.",
+      "pass": true
+    },
+    {
+      "id": "R107.distinctFeature81",
+      "actual": "[415, 415]",
+      "expected": "[415, 415]",
+      "scope": "Actual Basisrente/Riester header coordinate, not ambiguous identical IAB Feature header237.",
+      "pass": true
+    },
+    {
+      "id": "R107.distinctFeature85",
+      "actual": "[433, 433]",
+      "expected": "[433, 433]",
+      "scope": "Actual Basisrente/Riester header coordinate, not ambiguous identical IAB Feature header237.",
+      "pass": true
+    },
+    {
+      "id": "R107.calendar103",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Individually selected calendar period/component, not generic AO42; actual source IDs and body membership checked.",
+      "pass": true
+    },
+    {
+      "id": "R107.calendar104",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Individually selected calendar period/component, not generic AO42; actual source IDs and body membership checked.",
+      "pass": true
+    },
+    {
+      "id": "R107.calendar105",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Individually selected calendar period/component, not generic AO42; actual source IDs and body membership checked.",
+      "pass": true
+    },
+    {
+      "id": "R107.calendar106",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Individually selected calendar period/component, not generic AO42; actual source IDs and body membership checked.",
+      "pass": true
+    },
+    {
+      "id": "R107.calendar107",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Individually selected calendar period/component, not generic AO42; actual source IDs and body membership checked.",
+      "pass": true
+    },
+    {
+      "id": "R107.calendar108",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Individually selected calendar period/component, not generic AO42; actual source IDs and body membership checked.",
+      "pass": true
+    },
+    {
+      "id": "R107.calendar109",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Individually selected calendar period/component, not generic AO42; actual source IDs and body membership checked.",
+      "pass": true
+    },
+    {
+      "id": "R107.calendar110",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Individually selected calendar period/component, not generic AO42; actual source IDs and body membership checked.",
+      "pass": true
+    },
+    {
+      "id": "R107.calendar111",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Individually selected calendar period/component, not generic AO42; actual source IDs and body membership checked.",
+      "pass": true
+    },
+    {
+      "id": "R107.calendar112",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Individually selected calendar period/component, not generic AO42; actual source IDs and body membership checked.",
+      "pass": true
+    },
+    {
+      "id": "R107.calendar113",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Individually selected calendar period/component, not generic AO42; actual source IDs and body membership checked.",
+      "pass": true
+    },
+    {
+      "id": "R107.calendar114",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Individually selected calendar period/component, not generic AO42; actual source IDs and body membership checked.",
+      "pass": true
+    }
+  ],
+  "control_count": 60,
+  "source_checks": [
+    {
+      "id": "R97-108.E6-2",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.AO149-2",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.AO108",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.TARIFF",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.GIFTS",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.DAY",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.ROOM",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.COMMUTEBRIDGE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.COMMUTE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.MEALS",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.POOL",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.PENSIONELIG",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.PENSIONCAP",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.INPUTVAT",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.INPUTRULE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.MODELLOSS",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.VATCASH",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R97-108.VATSUPPLY",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R106.business-training",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "R26.planning-bridge",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": true
+    },
+    {
+      "id": "OPT.KStG1-1",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.KStG8-1",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.KStG8-3",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.KStG23-1",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.E6-2",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.E7-1",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.E7-2",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.E10d-1",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.E10d-2",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.E37-1",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.E37-3",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.AO149-2",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.AO149-3",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.AO149-4",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.AO152-1",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.AO152-2",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.AO233a-2",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.AO238-1a",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.SoliRate",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.SoliBase",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.G11",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.G16",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.G36",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.G2",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.G10a",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.AO108",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.G19",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.K1a",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.BG108a",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.BG108date",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.BG197a",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.PROF",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.TRADE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.CASH",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.BUSCOST",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.TARIFF",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.SPLIT",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.SOLILIMIT",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.CHURCHRATE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.CREDIT",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.KU",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.GIFTS",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.ENTERTAIN",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.DAY",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.ROOM",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.COMMUTEBRIDGE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.COMMUTE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.MEALBRIDGE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.MEALS",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.CAR1",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.CARLOG",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.VATCOST",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.POOL",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.EV",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.IAB",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.SPECIALAFA",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.PENSIONELIG",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.PENSIONCAP",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.PENSIONBASE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.HEALTH",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.CASHTIME",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.PERSONAL",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.RECORDS",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.BASE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.INPUTVAT",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.EURGROSS",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.COMPUTER",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.TRAVEL",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.EMP",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.COUPLE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.JOINT",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.SECONDHOME",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.EDUCATION",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.TRAINING",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.DONATIONS",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.HHSERVICE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.HHCRAFT",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.CHILDCARE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.ANNUAL",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.VATRECIPIENT",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.INPUTRULE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.ABUSE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.RATESBOOK",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.RETAIN",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.DIVRATE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.DIVOPTION",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.LOWERTAX",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.RETURNOPTION",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.STATUS",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.CARQUARTER",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.OLD40",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.RVSELF",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.VOLUNTARY",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.ONAPPLICATION",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.EMPSTATUS",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.RVCAPS",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.RIESTER",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.RIESTERTEST",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.RIESTERBASE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.RIESTERCHILD",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.RIESTERMIND",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.VWL",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.SAVER",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.CAPLOSS",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.MODELLOSS",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.PENSLATER",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.RULING",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.VATCASH",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.KUWAIVER",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.VATSUPPLY",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.VATPLACE",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.VATPERIOD",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.VATEXTEND",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.DIV40",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.DIVCOST",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.RCDEBTOR",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    },
+    {
+      "id": "OPT.DIV40D",
+      "raw_reader_identity_and_literal_quote": true,
+      "own_new_selected": false
+    }
+  ],
+  "current_rows": 323,
+  "old_origins": 455,
+  "all134_semantic_routes_checked": true,
+  "full_inverse_ops": 22,
+  "five_original_qualitative_examples_exact": true,
+  "original_oa": 0,
+  "schema_errors": [],
+  "schema_warnings": [],
+  "diff_returncode": 0,
+  "original_A_manifest_members_unchanged": 610
+}

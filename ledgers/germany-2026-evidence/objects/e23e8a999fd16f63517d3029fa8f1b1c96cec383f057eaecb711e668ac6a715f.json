@@ -1,0 +1,90 @@
+{
+  "finding": "DE-B11",
+  "Guide_sha256": "cacaa184f25e468514bc31fbabaf03df05c704f7dc7b284f82e180bb5b86ddc3",
+  "exact_before": "**Transition band.** Normal wage tax by the ELStAM. Contributions are worked out on reduced bases by two formulas in [§ 20(2a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__20.html), with AE the monthly pay, G = EUR 603 and F = 0.6619. Base for the total contribution: BE = F x G + (2,000 / (2,000 - G) - G / (2,000 - G) x F) x (AE - G). Base for the employee's share: BE = 2,000 / (2,000 - G) x (AE - G). The employee pays the employee rates on the second base; the employer pays the total contribution on the first base less the employee's share. At AE EUR 1,000 the bases are EUR 854.06 and EUR 568.36. Not for apprentices. Exactly EUR 2,000 is still in the band (\"nicht übersteigen\").",
+  "options": [
+    {
+      "label": "A recommended narrow allocation correction",
+      "exact_after": "**Transition band.** Normal wage tax by the ELStAM. Contributions are worked out on reduced bases by two formulas in [§ 20(2a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__20.html), with AE the monthly pay, G = EUR 603 and F = 0.6619. Base for the total contribution: BE = F x G + (2,000 / (2,000 - G) - G / (2,000 - G) x F) x (AE - G). Base for the employee's share: BE = 2,000 / (2,000 - G) x (AE - G). For the ordinarily shared branches outside Saxony, compute the total contribution by applying half the contribution rate to the first base, rounding to cents and doubling; compute the employee's ordinary half-rate contribution on the second base, rounding to cents. The employer bears the difference. Calculate the employee-only childless care surcharge on the first base; calculate care reductions on the second base, each rounded separately ([§ 1(2) and § 2(2) BVV](https://www.gesetze-im-internet.de/beitrvv/__2.html)). At AE EUR 1,000 the 0.6-point childless surcharge is EUR 5.12, not EUR 3.41. Saxony has a separate allocation under § 58(5) SGB XI; this ordinary half-rate worksheet does not supply that Saxony allocation. At AE EUR 1,000 the bases are EUR 854.06 and EUR 568.36. Not for apprentices. Exactly EUR 2,000 is still in the band (\"nicht übersteigen\").",
+      "reason": "State actual statutory rounding/shared-branch method and first-versus-second care components; preserve Saxony as a precise unsupplied allocation, not a guessed half-rate result."
+    },
+    {
+      "label": "B remove all transition contribution calculation",
+      "exact_after": "**Transition band.** Normal wage tax by the ELStAM. Contributions are worked out on reduced bases by two formulas in [§ 20(2a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__20.html), with AE the monthly pay, G = EUR 603 and F = 0.6619. Base for the total contribution: BE = F x G + (2,000 / (2,000 - G) - G / (2,000 - G) x F) x (AE - G). Base for the employee's share: BE = 2,000 / (2,000 - G) x (AE - G). The precise allocation must follow BVV §2(2); this Guide supplies the two bases only.",
+      "reason": "Overbroad withdrawal of supported ordinary methods; not selected."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "DEB298",
+      "act_article": "BVV §1(1)/(2)",
+      "official_url": "https://www.gesetze-im-internet.de/beitrvv/__1.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/targeted-sources/beitrvv-1-20261029.html",
+      "raw_sha256": "bfc5c3da4e3105e6e9142877171bbd329ef7659ee64db0eeb5a3669a9f9c82e7",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB298.txt",
+      "reader_sha256": "5d0aef0eb370f24238ff86d4519841a7a2037b489a5bacea4dc0867e8b2bc238",
+      "native_LF": [
+        7,
+        8
+      ],
+      "exact_quote": "(1) Der Gesamtsozialversicherungsbeitrag und die Beitragsbemessungsgrenzen werden je Kalendermonat für die Kalendertage berechnet, an denen eine versicherungspflichtige Beschäftigung besteht (Sozialversicherungstage); ein voller Kalendermonat wird mit 30 Sozialversicherungstagen angesetzt. Berechnungsbasis ist das aus der Beschäftigung erzielte Arbeitsentgelt bis zur monatlichen Beitragsbemessungsgrenze.\n(2) Die Rechengänge werden ohne Rundung der einzelnen Zwischenergebnisse durchgeführt. Das Gesamtergebnis wird auf zwei Dezimalstellen berechnet; die zweite Dezimalstelle wird um 1 erhöht, wenn sich in der dritten Dezimalstelle eine der Zahlen 5 bis 9 ergibt.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          8
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    {
+      "source_id": "DEB299",
+      "act_article": "BVV §2(1)/(2)",
+      "official_url": "https://www.gesetze-im-internet.de/beitrvv/__2.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/targeted-sources/beitrvv-2-20261029.html",
+      "raw_sha256": "c5e8dc2c8bd2014aa8e0b72db8e504e7ca456054f106fe8787d84f479c284c86",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB299.txt",
+      "reader_sha256": "4dec988c45f70e2bbf67fa06f84253d63ecb6223f0288c39b06e9cdb58654bfd",
+      "native_LF": [
+        7,
+        8
+      ],
+      "exact_quote": "(1) Beiträge, die der Arbeitgeber und der Beschäftigte je zur Hälfte tragen, werden durch Anwendung des halben Beitragssatzes auf das Arbeitsentgelt und anschließender Verdoppelung des gerundeten Ergebnisses berechnet. Auf Beiträge, die der Arbeitgeber allein trägt, kann Satz 1 entsprechend angewandt werden. Werden Beiträge vom Arbeitgeber und vom Beschäftigten nicht je zur Hälfte getragen, ergibt sich der Beitrag aus der Summe der getrennt berechneten gerundeten Anteile. Beiträge, die vom Beschäftigten allein zu tragen sind, werden durch Anwendung des für diese Beiträge geltenden Beitragssatzes gegebenenfalls unter Berücksichtigung eines Beitragszuschlags oder von Beitragsabschlägen auf das Arbeitsentgelt berechnet; Satz 3 zweiter Halbsatz gilt entsprechend. Wird die Mindestbeitragsbemessungsgrundlage des § 163 Abs. 8 des Sechsten Buches Sozialgesetzbuch nicht überschritten, wird der Beitragssatz auf die Mindestbeitragsbemessungsgrundlage angewandt und der vom Arbeitgeber zu tragende Beitragsanteil berechnet und gerundet; durch Abzug des Arbeitgeberanteils vom Beitrag ergibt sich der Beitragsanteil des Beschäftigten.\n(2) Abweichend von Absatz 1 Satz 1 wird in den Fällen des Übergangsbereichs der vom Arbeitgeber zu zahlende Beitrag durch Anwendung des halben Beitragssatzes auf die beitragspflichtige Einnahme nach § 20 Absatz 2a Satz 1 des Vierten Buches Sozialgesetzbuch und anschließende Verdoppelung des gerundeten Ergebnisses berechnet. Bei Entgelten bis zur Geringfügigkeitsgrenze ergibt sich die beitragspflichtige Einnahme nach § 20 Absatz 2a Satz 1 des Vierten Buches Sozialgesetzbuch durch Anwendung des Faktors F auf das der Beschäftigung nach § 14 in Verbindung mit § 17 des Vierten Buches Sozialgesetzbuch zugrunde liegende Arbeitsentgelt. Der vom Beschäftigten zu tragende Beitragsanteil wird durch Anwendung des jeweiligen halben Beitragssatzes zur gesetzlichen Rentenversicherung, der sozialen Pflegeversicherung nach § 55 Absatz 1 Satz 1 des Elften Buches Sozialgesetzbuch, zur Arbeitsförderung und der gesetzlichen Krankenversicherung sowie des halben kassenindividuellen Zusatzbeitragssatzes auf die nach § 20 Absatz 2a Satz 6 des Vierten Buches Sozialgesetzbuch ermittelte beitragspflichtige Einnahme berechnet und gerundet. Der Abzug des Beitragsanteils des Beschäftigten von dem nach Satz 1 errechneten Beitrag ergibt den Beitragsanteil des Arbeitgebers. Überschreiten einzelne Entgelte in Fällen des § 20 Absatz 2a des Vierten Buches Sozialgesetzbuch nicht die Geringfügigkeitsgrenze, ist kein Beitragsanteil nach Satz 3 zu ermitteln, der Arbeitgeber trägt insoweit den gesamten Beitrag allein. Vom Beschäftigten allein zu tragende Beitragsanteile werden durch Anwendung des maßgebenden Beitragssatzes oder Beitragszuschlags auf die beitragspflichtige Einnahme nach § 20 Absatz 2a Satz 1 des Vierten Buches Sozialgesetzbuch berechnet und auf zwei Dezimalstellen gerundet. Die den Beitragsanteil des Beschäftigten reduzierenden Beträge werden durch Anwendung des maßgebenden Beitragsabschlags auf die beitragspflichtige Einnahme nach § 20 Absatz 2a Satz 6 des Vierten Buches Sozialgesetzbuch berechnet und auf zwei Dezimalstellen gerundet.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          8
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": "Own selected actual operative paragraphs read; shared-branch rounding and transition surcharge/reduction bases are distinct."
+    },
+    {
+      "source_id": "DEB076",
+      "act_article": "SGBXI58(1)–(5)",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_11/__58.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb11-58-20261024.html",
+      "raw_sha256": "408a6e8f91d0299ebd08aef25a633874c276905c73358b44d7373d195d3551ad",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB076.txt",
+      "reader_sha256": "c3e6d031859c78ab46d14243133003062430204c049b1b212cfb6beee3d0694b",
+      "native_LF": [
+        7,
+        11
+      ],
+      "exact_quote": "(1) Die nach § 20 Abs. 1 Satz 2 Nr. 1 und 12 versicherungspflichtig Beschäftigten, die in der gesetzlichen Krankenversicherung pflichtversichert sind, und ihre Arbeitgeber tragen die nach dem Arbeitsentgelt zu bemessenden Beiträge jeweils zur Hälfte. Soweit für Beschäftigte Beiträge für Kurzarbeitergeld oder Qualifizierungsgeld zu zahlen sind, trägt der Arbeitgeber den Beitrag allein. Den Beitragszuschlag für Kinderlose nach § 55 Absatz 3 Satz 1 tragen die Beschäftigten.\n(2) Zum Ausgleich der mit den Arbeitgeberbeiträgen verbundenen Belastungen der Wirtschaft werden die Länder einen gesetzlichen landesweiten Feiertag, der stets auf einen Werktag fällt, aufheben.\n(3) Die in Absatz 1 genannten Beschäftigten tragen die Beiträge in Höhe von 1 vom Hundert allein, wenn der Beschäftigungsort in einem Land liegt, in dem die am 31. Dezember 1993 bestehende Anzahl der gesetzlichen landesweiten Feiertage nicht um einen Feiertag, der stets auf einen Werktag fiel, vermindert worden ist. In Fällen des § 55 Absatz 1 Satz 3 werden die Beiträge in Höhe von 0,5 vom Hundert allein getragen. Im Übrigen findet Absatz 1 Anwendung, soweit es sich nicht um eine versicherungspflichtige Beschäftigung mit einem monatlichen Arbeitsentgelt innerhalb des Übergangsbereichs nach § 20 Absatz 2 des Vierten Buches handelt, für die Absatz 5 Satz 2 Anwendung findet. Die Beiträge der Beschäftigten erhöhen sich nicht, wenn Länder im Jahr 2017 den Reformationstag einmalig zu einem gesetzlichen Feiertag erheben.\n(4) Die Aufhebung eines Feiertages wirkt für das gesamte Kalenderjahr. Handelt es sich um einen Feiertag, der im laufenden Kalenderjahr vor dem Zeitpunkt des Inkrafttretens der Regelung über die Streichung liegt, wirkt die Aufhebung erst im folgenden Kalenderjahr.\n(5) § 249 Absatz 3 und 4 des Fünften Buches gilt mit der Maßgabe, dass statt des allgemeinen und ermäßigten Beitragssatzes der Krankenkasse und des kassenindividuellen Zusatzbeitragssatzes der Beitragssatz der Pflegeversicherung und bei den in Absatz 3 Satz 1 genannten Beschäftigten für die Berechnung des Beitragsanteils des Arbeitgebers ein Beitragssatz in Höhe des um einen Prozentpunkt verminderten Beitragssatzes der Pflegeversicherung Anwendung findet.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          11
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    }
+  ],
+  "read_on": "2026-10-29",
+  "authorization": "Parent standing authority: two sourced options then recommended narrow A."
+}

@@ -1,0 +1,2 @@
+Own visual transcription of the actual official formula image, viewed2026-10-29; not extracted HTML. Raw image unchanged.
+BE = F × G + (2000 / (2000 − G) − G / (2000 − G) × F) × (AE − G)

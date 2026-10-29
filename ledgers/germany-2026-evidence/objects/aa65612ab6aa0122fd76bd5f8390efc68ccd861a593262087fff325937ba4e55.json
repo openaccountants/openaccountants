@@ -1,0 +1,62 @@
+[
+  {
+    "finding": "version",
+    "before": "version: 2.3",
+    "after": "version: 2.4",
+    "before_native_LF": 4
+  },
+  {
+    "finding": "R27",
+    "before": "| Solar modules and storage for systems on or near homes | 0% |",
+    "after": "| Qualifying solar modules/components/storage supplied to the PV operator; qualifying acquisition, import or installation under § 12(3) | 0% |",
+    "before_native_LF": 42
+  },
+  {
+    "finding": "R26",
+    "before": "**Place of supply first, then the rate.** A service to a business is taxed where the customer is established (§ 3a(2) UStG). So a German consultant's service to a French company is not taxable in Germany, and a foreign supplier's service to a German business is taxed in Germany with the German customer owing the tax.",
+    "after": "**Place of supply first, then the rate.** For a service acquired by a business for its business, § 3a(2) generally places it where the recipient operates its business; if supplied to a receiving permanent establishment, use that establishment instead. This is subject to § 3a(3)–(8), §§ 3b and 3e. Ordinary selectors include property-related services at the property (§ 3a(3) no. 1); on-site catering where performed, except the separate on-board EU passenger-transport branch (no. 3a(a)); short-term hire of transport where it is actually made available, with at most 90 continuous days for watercraft and 30 for other transport (no. 2); and physical event admission at the event, while virtual participation follows § 3a(2) (no. 5). Thus a service concerning German property is not placed in France merely because the customer has French headquarters. For an ordinary consultancy actually within § 3a(2), a German consultant's service to a French company is outside German VAT; a foreign supplier's service to a German receiving business is placed in Germany, then the § 13b supplier/transaction gates determine whether the customer owes the tax. Establish the actual service and receiving establishment before using the general Kz 21 or reverse-charge route.",
+    "before_native_LF": 71
+  },
+  {
+    "finding": "R27",
+    "before": "**What the 7% rate covers, beyond goods.** § 12(2) UStG with Annex 2: food and the other Annex 2 goods, books and newspapers and their electronic editions, water, cut flowers and plants, dental technicians' work, admission to theatres, concerts, museums and zoos, and short-term letting of rooms and camping pitches. Services sold with a room that do not directly serve the letting (parking, internet) are not at the room rate (§ 12(2) no. 11 sentence 2). From 1 January 2026 breakfast food is a catering service at 7% under § 12(2) no. 15, with drinks at 19%. Where one package price covers the room and these services, the tax office accepts 15% of the package price as their share (UStAE 12.16(12) sentence 2, as amended by the BMF letter of 22 December 2025). Passenger transport is at 7% by rail without a distance limit, and by scheduled bus, taxi, cable car and ferry only within one municipality or where the journey is not more than 50 kilometres (§ 12(2) no. 10 UStG).",
+    "after": "**What the 7% rate covers, beyond goods.** § 12(2) UStG with Annex 2: food and the other Annex 2 goods, books and newspapers and their electronic editions, qualifying water under Annex 2 no. 34 (excluding drinking water, including spring/table water, marketed in consumer-ready prepackages, medicinal water and steam), cut flowers and plants, dental technicians' work, admission to theatres, concerts, museums and zoos, and short-term letting of rooms and camping pitches. Services sold with a room that do not directly serve the letting (parking, internet) are not at the room rate (§ 12(2) no. 11 sentence 2). From 1 January 2026 breakfast food is a catering service at 7% under § 12(2) no. 15, with drinks at 19%. Where one package price covers the room and these services, the tax office accepts 15% of the package price as their share (UStAE 12.16(12) sentence 2, as amended by the BMF letter of 22 December 2025). Passenger transport is at 7% by rail without a distance limit, and by scheduled bus, taxi, cable car and ferry only within one municipality or where the journey is not more than 50 kilometres (§ 12(2) no. 10 UStG).",
+    "before_native_LF": 75
+  },
+  {
+    "finding": "R27",
+    "before": "**Solar at 0%.** The 0% rate is a rate, not an exemption, so the supplier keeps full input deduction. It covers supply, intra-EU acquisition, import and installation of modules, essential components and storage for systems on or near homes and public-benefit buildings; the conditions count as met up to 30 kWp registered in the Marktstammdatenregister (§ 12(3) UStG). Acquisitions at 0% go in Kz 90.",
+    "after": "**Solar at 0%.** The 0% rate is a rate, not an exemption, so the supplier keeps full input deduction. Under § 12(3) no. 1, qualifying modules, essential components and electricity-storage equipment must be supplied to the PV operator, with the statutory installation conditions for homes or public-benefit buildings. The registered installed gross capacity of not more than 30 kWp supplies the statutory presumption for the installation conditions; it does not remove the operator-recipient requirement or automatically zero-rate a sale to an independent reseller. Intra-EU acquisition and import under nos. 2 and 3 require the qualifying no. 1 goods/conditions; installation under no. 4 requires that the installed components' supply meet no. 1. Qualifying acquisitions at 0% go in Kz 90.",
+    "before_native_LF": 77
+  },
+  {
+    "finding": "R30",
+    "before": "- foreign VAT wrongly charged by a supplier in another member state: only VAT owed under the German act is deductible (2026 form instructions, lines 38 to 42). Book it as a cost and ask for a corrected invoice; foreign input VAT is reclaimed through the BZSt refund procedure;",
+    "after": "- foreign VAT wrongly charged by a supplier in another member state: no German input deduction; only VAT owed under the German act is deductible (2026 form instructions, lines 38 to 42). Ask the supplier to correct the invoice. The instructions point to the BZSt for information on foreign input-tax refunds; they do not establish that wrongly charged VAT is recoverable through that route. Establish whether foreign VAT was legally due and the actual foreign refund conditions before treating it as eligible foreign input tax. Determine cost or receivable treatment from actual recoverability, rather than automatically booking the disputed VAT as a cost or promising a refund;",
+    "before_native_LF": 85
+  },
+  {
+    "finding": "R28",
+    "before": "| Bank fees, interest, loans, insurance premiums | Exempt or outside scope: no input VAT |",
+    "after": "| Bank fees, interest, loans, insurance premiums | Classify the actual transaction, rather than the bank's identity. Qualifying exempt credit/financial and insurance transactions carry no input VAT. Debt collection is excluded from § 4 no. 8(c)'s exemption; securities custody/management is excluded from no. 8(e). For a legally taxed fee service, input deduction follows § 15 and the actual invoice/business-use conditions. Thus an otherwise eligible custody invoice of EUR 100 net plus EUR 19 legally charged VAT can give EUR 19 input; an exempt credit transaction has no such VAT. Other bank/advisory/card fees need their actual classification. |",
+    "before_native_LF": 130
+  },
+  {
+    "finding": "R29",
+    "before": "- **Goods.** Intra-EU supplies to a customer with a valid VAT ID are tax-free with input deduction (Kz 41), with transport evidence. Arrival in the other member state is presumed where the supplier transported the goods and holds two consistent documents from parties independent of each other and of both sides, or, where the customer transported them, also holds a Gelangensbestätigung (entry certificate) delivered by the customer by the 10th day of the month after the supply (§ 17a(1) UStDV, https://www.gesetze-im-internet.de/ustdv_1980/__17a.html); otherwise the evidence rules of § 17b UStDV apply; exports outside the EU go in Kz 43. Acquisitions from EU suppliers are self-assessed (Kz 89 or 93, input Kz 61). Import VAT is charged by customs and deducted in Kz 62.",
+    "after": "- **Goods.** Before using the intra-EU exemption with input deduction (Kz 41), establish all § 6a conditions: actual transport/dispatch to another member state; the qualifying customer status and business acquisition (or the separate non-business legal-person/new-vehicle branch); acquisition subject to that other state's VAT provisions; and, for the § 6a(1) no. 2(a)/(b) customer, actual use toward the supplier of a valid VAT ID issued by another member state. § 4 no. 1(b) excludes exemption where the required recapitulative statement (ZM) was not filed, or is incorrect/incomplete for the supply. Do not assume an exemption or a particular later cure outcome from an unverified/missing statement; apply the actual proof and statutory conditions, including § 6a(4)'s specifically gated customer-misinformation protection where relevant. For the § 17a(1) transport presumption, the supplier needs consistent documents from different issuers independent of each other and both transaction parties: either at least two transport/dispatch documents under § 17a(2) no. 1, or one such document plus one supporting document under no. 2 confirming the transport/dispatch. Two insurance/bank support documents alone do not meet that pair test. For the customer-transport route the supplier additionally needs the customer's Gelangensbestätigung delivered by the tenth day of the month after the supply (§ 17a(1) UStDV, https://www.gesetze-im-internet.de/ustdv_1980/__17a.html). The tax office can rebut the presumption; otherwise the evidence rules of § 17b UStDV apply. Exports outside the EU go in Kz 43. Acquisitions from EU suppliers are self-assessed (Kz 89 or 93, input Kz 61). Import VAT is charged by customs and deducted in Kz 62.",
+    "before_native_LF": 172
+  },
+  {
+    "finding": "R26-R30 intake",
+    "before": "6. For restaurants and caterers: do the till and invoices split food from drinks, and are there package prices?",
+    "after": "6. For restaurants and caterers: do the till and invoices split food from drinks, and are there package prices?\n7. Actual service type and receiving establishment; solar recipient/operator and installation facts; water product/prepackaging; bank fee contract/invoice and foreign VAT legality/recoverability; EU acquisition/customer status, VAT ID actually used, accurate supply-specific ZM and each independent transport/support document class.",
+    "before_native_LF": 271
+  },
+  {
+    "finding": "R26-R31 sources",
+    "before": "| Bundeszentralamt für Steuern (VAT IDs, recapitulative statement) | https://www.bzst.de | 2026-10-24 |",
+    "after": "| Bundeszentralamt für Steuern (VAT IDs, recapitulative statement) | https://www.bzst.de | 2026-10-24 |\n| UStG § 3a(2)/(3), § 12(3), Annex 2 no. 34, § 4 no. 8/1(b), § 6a; UStDV § 17a, selected classification and proof gates actually read | https://www.gesetze-im-internet.de/ustg_1980/__6a.html | 2026-10-29 |\n| AO § 152(8) full special-prepayment exclusion and closing discretionary factors; 2026 input instructions are an information route, not a foreign refund entitlement | https://www.gesetze-im-internet.de/ao_1977/__152.html | 2026-10-29 |",
+    "before_native_LF": 308
+  }
+]

@@ -1,0 +1,1754 @@
+{
+  "all_frozen_current_units_read": 165,
+  "claim_read_batches": [
+    [
+      1,
+      55
+    ],
+    [
+      56,
+      110
+    ],
+    [
+      111,
+      165
+    ]
+  ],
+  "selected_quote_records": [
+    {
+      "row": 1,
+      "id": "SoliRate",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-4-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud87f3fb176816839.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "dd28933ed36da19cae72de5a054f9edbea5c5919cb2aeac6efc257afe9fab058",
+      "reader_sha256": "219a2aa1409e999b209ed2402a91d3618b9ec3c19ebf85c10122087d7fa3845a",
+      "quote_sha256": "b8eb2b65618c2dace32c77221fa8bae9a16f130bd5e24bfc421e1426bef2e793",
+      "official_url": "https://www.gesetze-im-internet.de/solzg_1995/__4.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 10,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 2,
+      "id": "AO238-1a",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-238-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U15527adfa30c4074.reader.txt",
+      "native_LF": [
+        8,
+        8
+      ],
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "reader_sha256": "651db01a1f6c18060e1f1e63652986b0e4921fb1ce84da5d2a740ebea8ca0b48",
+      "quote_sha256": "a6b73dc49fd492f5b9253b5ec6af37b0567d4d7420ed821f8b93d52030492b09",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 25,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 3,
+      "id": "AO240-1",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-240-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uee7f672101b3d3dd.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "reader_sha256": "2cfa86cfaac164f5f98e3dc6a02b04d67165a70fc4439631021fe7a3ae0bf631",
+      "quote_sha256": "9656165dbd550290acfc92eb06aa385b8e6343a05d95e4a601f549d974ba0b38",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 27,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 4,
+      "id": "NR",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6c12b21cadb51df.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6c12b21cadb51df.reader.txt",
+      "native_LF": [
+        25,
+        25
+      ],
+      "raw_sha256": "aa3116bd65c47709867eaba213a4f5a482aabe7075b4e0ae7b31fb8f2830d6ca",
+      "reader_sha256": "c131d86c4bf7573c7ceb89484930ecd33f0df991d53b7f180bdd3640c66b9f18",
+      "quote_sha256": "ff8d58ed747ad209c2f20d027048a9abc6706793f981fc90da2992c4c95cbdbc",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__1.html",
+      "actual_read_bridge": {
+        "guide": "de-non-resident-tax",
+        "quote_row": 32,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 5,
+      "id": "COMPANYNR",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U47038fc5ff2efb09.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U47038fc5ff2efb09.reader.txt",
+      "native_LF": [
+        7,
+        8
+      ],
+      "raw_sha256": "0739fecdbc4229c1055cf629cdd5811cc56dc6d5d274ccd60b02e76bc2a5d4c9",
+      "reader_sha256": "314d18f171f8fa684f9e86c36be0071d704e66c70a73ddafe45dd691b22aaa52",
+      "quote_sha256": "494f2b1ac5e84ab5c2896cbab620096c62dfd61a98f6cfd46faaa30661380d68",
+      "official_url": "https://www.gesetze-im-internet.de/kstg_1977/__2.html",
+      "actual_read_bridge": {
+        "guide": "de-corporate-tax",
+        "quote_row": 3,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 6,
+      "id": "GROSS",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U32eccbb14b2ffb8a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U32eccbb14b2ffb8a.reader.txt",
+      "native_LF": [
+        7,
+        15
+      ],
+      "raw_sha256": "c70732bc591cec26e6dc42db53f4cf9114013e6a240e96b3137e40998a906831",
+      "reader_sha256": "29d33e8ebd8f75d7eacf3473eff6ed9db4401be48d4c356fa0b02870c17ea9fc",
+      "quote_sha256": "cde214371c868feca4e3b17438b99e20b36889231f41f5ecba0a68cb3b2c970f",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__50a.html",
+      "actual_read_bridge": {
+        "guide": "de-non-resident-tax",
+        "quote_row": 41,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 7,
+      "id": "NET",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U32eccbb14b2ffb8a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U32eccbb14b2ffb8a.reader.txt",
+      "native_LF": [
+        16,
+        19
+      ],
+      "raw_sha256": "c70732bc591cec26e6dc42db53f4cf9114013e6a240e96b3137e40998a906831",
+      "reader_sha256": "29d33e8ebd8f75d7eacf3473eff6ed9db4401be48d4c356fa0b02870c17ea9fc",
+      "quote_sha256": "d7849ccf234100a81da969987b834de498a2e3e370dbd7e5025f372f1f65de7c",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__50a.html",
+      "actual_read_bridge": {
+        "guide": "de-non-resident-tax",
+        "quote_row": 42,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 8,
+      "id": "PAYWHT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U32eccbb14b2ffb8a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U32eccbb14b2ffb8a.reader.txt",
+      "native_LF": [
+        21,
+        28
+      ],
+      "raw_sha256": "c70732bc591cec26e6dc42db53f4cf9114013e6a240e96b3137e40998a906831",
+      "reader_sha256": "29d33e8ebd8f75d7eacf3473eff6ed9db4401be48d4c356fa0b02870c17ea9fc",
+      "quote_sha256": "ab233e9a9d3239a5655c33241c8d2a9c3f6a12022cbeeb23119b624214ae43b3",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__50a.html",
+      "actual_read_bridge": {
+        "guide": "de-non-resident-tax",
+        "quote_row": 44,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 9,
+      "id": "WHTSOLI",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-3-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc748242e6e54c746.reader.txt",
+      "native_LF": [
+        21,
+        26
+      ],
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+      "quote_sha256": "3e65950272500946425145bfe1e780d059dfafa2f452fbd78e37fbf07ca65c24",
+      "official_url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "actual_read_bridge": {
+        "guide": "de-corporate-tax",
+        "quote_row": 82,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 10,
+      "id": "KWHT",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-43a-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8a1c531e2e26fec5.reader.txt",
+      "native_LF": [
+        7,
+        13
+      ],
+      "raw_sha256": "25cdf208dc378a1c3685a2318f5304fb342b2c73aedd89f7ca952cf13ed03687",
+      "reader_sha256": "8d7aa2e671377cab047bfd620fb39005ff69f940f972c372b57656e414e5d9b2",
+      "quote_sha256": "4ca7fe868d443562d83f2eaccf543a942f3bf7d3974b7548cbd1510bd143bb1b",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__43a.html",
+      "actual_read_bridge": {
+        "guide": "de-corporate-tax",
+        "quote_row": 104,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 11,
+      "id": "REFUND40",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-44a-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U26ee07b985228da2.reader.txt",
+      "native_LF": [
+        51,
+        51
+      ],
+      "raw_sha256": "1589436abec915a0d49be85ff82d5319831789eb3873a391c983fef6726cf72d",
+      "reader_sha256": "6b231e67dcfa9e5f8b8f4c3a9441d242d9fa211fbd37e0191070b5620c1db7f8",
+      "quote_sha256": "6b283cb2718dee18e9bf9e55db44c661f6d15ec89a17ebd30847377fddc88446",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__44a.html",
+      "actual_read_bridge": {
+        "guide": "de-corporate-tax",
+        "quote_row": 105,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 12,
+      "id": "EXEMPT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.reader.txt",
+      "native_LF": [
+        7,
+        12
+      ],
+      "raw_sha256": "0bddf86f831b727c144a7ecb6791cc3e5529bfb8f707ee4715c4dc95c6d2458a",
+      "reader_sha256": "56b79f581bc6fe26a103d5085d7e127e13fb2960475bb814020668dd7f7749c1",
+      "quote_sha256": "1845f63c5fb8d03fa0e400e017718093b99342a386db0cb1edec221ad40de853",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__50c.html",
+      "actual_read_bridge": {
+        "guide": "de-non-resident-tax",
+        "quote_row": 48,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 13,
+      "id": "REFUND",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.reader.txt",
+      "native_LF": [
+        13,
+        13
+      ],
+      "raw_sha256": "0bddf86f831b727c144a7ecb6791cc3e5529bfb8f707ee4715c4dc95c6d2458a",
+      "reader_sha256": "56b79f581bc6fe26a103d5085d7e127e13fb2960475bb814020668dd7f7749c1",
+      "quote_sha256": "8502e8212ae94e82c63e4c7a358835e35a444b572af11532d2dceae037901c78",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__50c.html",
+      "actual_read_bridge": {
+        "guide": "de-corporate-tax",
+        "quote_row": 66,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 14,
+      "id": "ELECTREFUND",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.reader.txt",
+      "native_LF": [
+        15,
+        15
+      ],
+      "raw_sha256": "0bddf86f831b727c144a7ecb6791cc3e5529bfb8f707ee4715c4dc95c6d2458a",
+      "reader_sha256": "56b79f581bc6fe26a103d5085d7e127e13fb2960475bb814020668dd7f7749c1",
+      "quote_sha256": "290367f98a528f4d29e368f504706c8e55a9b24912fad28995636b5865d9f287",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__50c.html",
+      "actual_read_bridge": {
+        "guide": "de-non-resident-tax",
+        "quote_row": 50,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 15,
+      "id": "GERMANDIV",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-49-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U19bf916b6e83dcb6.reader.txt",
+      "native_LF": [
+        48,
+        56
+      ],
+      "raw_sha256": "ab6d74634775a9a34966bdfd0058d8e93deb30043ab1c0ea3895586cbe6f423b",
+      "reader_sha256": "56cbe0597b599138f1fdbd55e4ceaa376e3b79a25e0067de8d313a8798ea3240",
+      "quote_sha256": "cc4959b8c913ee98889bca12066425b8828a9d285eebe9c2403d18399183f065",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__49.html",
+      "actual_read_bridge": {
+        "guide": "de-non-resident-tax",
+        "quote_row": 59,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 16,
+      "id": "GERMANINTEREST",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-49-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U19bf916b6e83dcb6.reader.txt",
+      "native_LF": [
+        59,
+        69
+      ],
+      "raw_sha256": "ab6d74634775a9a34966bdfd0058d8e93deb30043ab1c0ea3895586cbe6f423b",
+      "reader_sha256": "56cbe0597b599138f1fdbd55e4ceaa376e3b79a25e0067de8d313a8798ea3240",
+      "quote_sha256": "adba43c67f7a4e530c0b808718b4cba3191b03aaee8bbbddcc46a2d8e138e28c",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__49.html",
+      "actual_read_bridge": {
+        "guide": "de-corporate-tax",
+        "quote_row": 108,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 17,
+      "id": "GERMANRENT",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-49-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U19bf916b6e83dcb6.reader.txt",
+      "native_LF": [
+        70,
+        71
+      ],
+      "raw_sha256": "ab6d74634775a9a34966bdfd0058d8e93deb30043ab1c0ea3895586cbe6f423b",
+      "reader_sha256": "56cbe0597b599138f1fdbd55e4ceaa376e3b79a25e0067de8d313a8798ea3240",
+      "quote_sha256": "3070eef7af54804728a2147cf83d4285f9a96d1a291f70fd7e95c54b50ff9460",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__49.html",
+      "actual_read_bridge": {
+        "guide": "de-non-resident-tax",
+        "quote_row": 61,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 18,
+      "id": "ANTISHOP",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U20a110d035f0b1ba.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U20a110d035f0b1ba.reader.txt",
+      "native_LF": [
+        10,
+        14
+      ],
+      "raw_sha256": "fd1ee264c4c5e8fc80f1663de4ea010fc7793242c574622dad8a2c05d7fb345a",
+      "reader_sha256": "05fc41a45e6dc460030534c73b751375029212123e882f7cf0f5a37fe5a35878",
+      "quote_sha256": "840c6c581e472fc21c3ba225eb0d896d8fb6bf149a4781f2255210c6aa30664e",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__50d.html",
+      "actual_read_bridge": {
+        "guide": "de-corporate-tax",
+        "quote_row": 107,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 19,
+      "id": "AO152-1",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua52afa3591a7820d.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "quote_sha256": "aa1e238067672f986535736184514f150e130adfabf066c886d839154cd1f437",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 16,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 20,
+      "id": "AO238-1",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-238-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U15527adfa30c4074.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "reader_sha256": "651db01a1f6c18060e1f1e63652986b0e4921fb1ce84da5d2a740ebea8ca0b48",
+      "quote_sha256": "d2b4a065359f29d0a79bb0c86afac79b934163863b2c795041b8890b777e487c",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 24,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 21,
+      "id": "KAPCATEGORIES",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-43-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8356a4d2b1139ef6.reader.txt",
+      "native_LF": [
+        7,
+        26
+      ],
+      "raw_sha256": "952d3b3fe3fd433ab08ba994e224d36c08459e478c92b83b88e43fda41a33c77",
+      "reader_sha256": "d53d558fa43c9b55aa62394b068bcc7f64afaa5ec1721d019bc32e7c0fd651b5",
+      "quote_sha256": "75f9318ffb8ded93a9a44c54c5fd759587971a0e8367cf05329b30258cee537d",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__43.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 22,
+      "id": "REMIT",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-44-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U59461194b6fa9911.reader.txt",
+      "native_LF": [
+        40,
+        46
+      ],
+      "raw_sha256": "c031d39ffcda719f204213fdd59982e8c250af64f5e070dbf6b3f43481834e8c",
+      "reader_sha256": "3d53756534d3eb20475d9da3efd9ced99100f11a7003cdc508870d3be6fca61a",
+      "quote_sha256": "040fadbd56258d997f442710a3ffc8d52dca061100c62c12e35271127fe75615",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__44.html",
+      "actual_read_bridge": {
+        "guide": "de-capital-gains",
+        "quote_row": 51,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 23,
+      "id": "TAXDATE",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-44-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U59461194b6fa9911.reader.txt",
+      "native_LF": [
+        55,
+        55
+      ],
+      "raw_sha256": "c031d39ffcda719f204213fdd59982e8c250af64f5e070dbf6b3f43481834e8c",
+      "reader_sha256": "3d53756534d3eb20475d9da3efd9ced99100f11a7003cdc508870d3be6fca61a",
+      "quote_sha256": "723c0bd7f9327f7913e976772f97f0217c5b3f994993d07ae45430edd222a082",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__44.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 24,
+      "id": "LIABLE",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-44-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U59461194b6fa9911.reader.txt",
+      "native_LF": [
+        58,
+        58
+      ],
+      "raw_sha256": "c031d39ffcda719f204213fdd59982e8c250af64f5e070dbf6b3f43481834e8c",
+      "reader_sha256": "3d53756534d3eb20475d9da3efd9ced99100f11a7003cdc508870d3be6fca61a",
+      "quote_sha256": "23ceace3f5acf2b7a7e52fb22d1c33c28a318e09ee4ba36b8a8241cd64ce687e",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__44.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 25,
+      "id": "CERT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f4ec11897d3e391.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f4ec11897d3e391.reader.txt",
+      "native_LF": [
+        8,
+        15
+      ],
+      "raw_sha256": "8d62815e50090d56e837e8560809bcd77912b1b146cb0dbb9f0bb246a07257bb",
+      "reader_sha256": "700afd2c44320c607a1ae82d2b1886d15ada2a0401baf96526899538a14a1b23",
+      "quote_sha256": "e086638bfa4fb05ee5051a19d5bb333bb6c39b9c6cecaa8941c60b8f4c70a9a8",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__45a.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 26,
+      "id": "PARENT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6663ef2d9a58d6ba.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6663ef2d9a58d6ba.reader.txt",
+      "native_LF": [
+        7,
+        14
+      ],
+      "raw_sha256": "7fc716c919b01466e54c4b19e389d5f1b7240340bb758206ba763be5612457d3",
+      "reader_sha256": "eccee8afd7f632b6b0ab0484d2be8c2151c29fa59d42182c8566f056ea8fb28b",
+      "quote_sha256": "46471219d720a92cbc0baee79175ab5e209480a5ea5c862fe10c4dacef3007b8",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__43b.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 27,
+      "id": "EUINTEREST",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.reader.txt",
+      "native_LF": [
+        7,
+        7
+      ],
+      "raw_sha256": "670b886e42956deab6140d8bc2f97e653abd54420558c83a487b6a7fd9b81bc1",
+      "reader_sha256": "edad2340bbacd4b47ef225febd7946757db154dd073538b4de76700a8aa6fd23",
+      "quote_sha256": "44095c77d5c9dfd5c12251304ca5642d1823bc8d45e0818a5f2d541bbca3472c",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__50g.html",
+      "actual_read_bridge": {
+        "guide": "de-corporate-tax",
+        "quote_row": 67,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 28,
+      "id": "EUGATES",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.reader.txt",
+      "native_LF": [
+        15,
+        48
+      ],
+      "raw_sha256": "670b886e42956deab6140d8bc2f97e653abd54420558c83a487b6a7fd9b81bc1",
+      "reader_sha256": "edad2340bbacd4b47ef225febd7946757db154dd073538b4de76700a8aa6fd23",
+      "quote_sha256": "eaabf032777d69528ec721654ea15bae9111fe10dd43421f4742111c02f9e72b",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__50g.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 29,
+      "id": "SWISS",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.reader.txt",
+      "native_LF": [
+        53,
+        63
+      ],
+      "raw_sha256": "670b886e42956deab6140d8bc2f97e653abd54420558c83a487b6a7fd9b81bc1",
+      "reader_sha256": "edad2340bbacd4b47ef225febd7946757db154dd073538b4de76700a8aa6fd23",
+      "quote_sha256": "dcf765599849523349fb99cc835aeba412f45801cc33b8683dd67e197e190901",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__50g.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 30,
+      "id": "EXCLUSIONS",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.reader.txt",
+      "native_LF": [
+        8,
+        14
+      ],
+      "raw_sha256": "670b886e42956deab6140d8bc2f97e653abd54420558c83a487b6a7fd9b81bc1",
+      "reader_sha256": "edad2340bbacd4b47ef225febd7946757db154dd073538b4de76700a8aa6fd23",
+      "quote_sha256": "2f1f314ff90f97a8646e353b98db5d0862028f8a91f5a56d94349e5aad97fea0",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__50g.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 31,
+      "id": "FORMS",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U667cd10c5c6117c7.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U667cd10c5c6117c7.reader.txt",
+      "native_LF": [
+        39,
+        39
+      ],
+      "raw_sha256": "3a235afab9f5109484512011a4c73e26c909d6cb56db4f25e2906ad83658be87",
+      "reader_sha256": "79d44645e887be8c8619588f697d808d40136efc3d3759f0fee965f06487b923",
+      "quote_sha256": "dae8686d2b581a6fedbb2cb1e596f22c0f40bc5d2e47910fde1297a199c7985f",
+      "official_url": "https://www.gesetze-im-internet.de/estg/anlage_3.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 32,
+      "id": "TAXFORM",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U667cd10c5c6117c7.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U667cd10c5c6117c7.reader.txt",
+      "native_LF": [
+        96,
+        96
+      ],
+      "raw_sha256": "3a235afab9f5109484512011a4c73e26c909d6cb56db4f25e2906ad83658be87",
+      "reader_sha256": "79d44645e887be8c8619588f697d808d40136efc3d3759f0fee965f06487b923",
+      "quote_sha256": "e124015735f8f64542f52d25343b719bfb3079f906cb8c8088c63ead5c085916",
+      "official_url": "https://www.gesetze-im-internet.de/estg/anlage_3.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 33,
+      "id": "PORTFOLIO",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud3e0b0d09cbc2951.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud3e0b0d09cbc2951.reader.txt",
+      "native_LF": [
+        7,
+        20
+      ],
+      "raw_sha256": "34d87bee1a69ad9d31dfdb1b0fb849c8ccf32678081761f5ff6cb4b22784e9d7",
+      "reader_sha256": "3cd1c2940a8a21016ce28ab7045c4e324e5fbd0858baf8458835ff5bf616057f",
+      "quote_sha256": "c9c10ddac75234cbea9ba153e2ac77be04ac22c70a12217bf4a031348a5c378b",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__50j.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 34,
+      "id": "REFINTEREST",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.reader.txt",
+      "native_LF": [
+        14,
+        14
+      ],
+      "raw_sha256": "0bddf86f831b727c144a7ecb6791cc3e5529bfb8f707ee4715c4dc95c6d2458a",
+      "reader_sha256": "56b79f581bc6fe26a103d5085d7e127e13fb2960475bb814020668dd7f7749c1",
+      "quote_sha256": "1a2b85bf8d41935bbd6adaede5119d755f64803dd18818bb80878f4a50585c25",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__50c.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 35,
+      "id": "PROCESS",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5ac66e90f192566e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5ac66e90f192566e.reader.txt",
+      "native_LF": [
+        39,
+        45
+      ],
+      "raw_sha256": "a6d4c64b0bebbd7ee2910b77a571c8be3c9a6dd012d3f7f1a9b7f4374b1ad7ce",
+      "reader_sha256": "60289112ce928bc87f76d9d8154d54445bf8ce663b02b190cab37c7b58328c8b",
+      "quote_sha256": "cc18d35f2888c3f40c0a4a00a9c0c3c6cc174bac3f8a1fe0dcb6c4ed3890cf1d",
+      "official_url": "https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Erstattungsverfahren_50c/erstattungsverfahren_50c_node.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 36,
+      "id": "BEFORE",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ube3f9918b2dc4b20.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ube3f9918b2dc4b20.reader.txt",
+      "native_LF": [
+        40,
+        51
+      ],
+      "raw_sha256": "d4a57b359fc3446f532dcd41552b052dcac543e59dde644be8175774d8cf2838",
+      "reader_sha256": "5678cb2545a557397daa96e027c334f45e8cbe472781e2623f5793f46083bdfd",
+      "quote_sha256": "3ecb13ea9782395c30a7af7be0454af54db860750a3b4d2115113eb8c6fccc5d",
+      "official_url": "https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Freistellungsverfahren_50c/freistellungsverfahren_50c_node.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 37,
+      "id": "NEWPORTAL",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U456bf50ce20bf9a7.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U456bf50ce20bf9a7.reader.txt",
+      "native_LF": [
+        39,
+        41
+      ],
+      "raw_sha256": "5c021950e97533a6f756cd41a09358c55643068b01e659d9b56664ffd8e0add3",
+      "reader_sha256": "463794639575b26020c7a58bd6c8501824f09f6c41ece73f7ef846ef45fe2ff6",
+      "quote_sha256": "b0fae3be7a40af6a86c591321af692ce19c844752f148f78fa52672a983f2fd5",
+      "official_url": "https://www.bzst.de/DE/Unternehmen/Abzugsteuern/abzugsteuern_node.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 38,
+      "id": "STABW",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U456bf50ce20bf9a7.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U456bf50ce20bf9a7.reader.txt",
+      "native_LF": [
+        36,
+        36
+      ],
+      "raw_sha256": "5c021950e97533a6f756cd41a09358c55643068b01e659d9b56664ffd8e0add3",
+      "reader_sha256": "463794639575b26020c7a58bd6c8501824f09f6c41ece73f7ef846ef45fe2ff6",
+      "quote_sha256": "1cee7d474346a6510ee45862cc8bb46ae24c8a6066790a36174a056fd144717c",
+      "official_url": "https://www.bzst.de/DE/Unternehmen/Abzugsteuern/abzugsteuern_node.html",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 39,
+      "id": "ATD",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2371d7e0a7990e02.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2371d7e0a7990e02.reader.txt",
+      "native_LF": [
+        283,
+        289
+      ],
+      "raw_sha256": "efd57b2b35832a3e4cd33430485e07e09ff1de15d64a37b114b61e6db77a042a",
+      "reader_sha256": "4d8e766dd4370f73085094e0337f69ecd9b51fc1c74e1d2fe69e7efd061c499e",
+      "quote_sha256": "0c9b0103a191a72b3ab6b797732cfb8daebe9b5d192d50f951e038e93a2525da",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Oesterreich/2024-11-28-Oesterreich-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 40,
+      "id": "ATI",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2371d7e0a7990e02.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2371d7e0a7990e02.reader.txt",
+      "native_LF": [
+        313,
+        317
+      ],
+      "raw_sha256": "efd57b2b35832a3e4cd33430485e07e09ff1de15d64a37b114b61e6db77a042a",
+      "reader_sha256": "4d8e766dd4370f73085094e0337f69ecd9b51fc1c74e1d2fe69e7efd061c499e",
+      "quote_sha256": "5d808b909b54b24ac2df8321aa698cf39d9c3c0eeb1db237552e135c7bc34cf6",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Oesterreich/2024-11-28-Oesterreich-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 41,
+      "id": "ATR",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2371d7e0a7990e02.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2371d7e0a7990e02.reader.txt",
+      "native_LF": [
+        340,
+        341
+      ],
+      "raw_sha256": "efd57b2b35832a3e4cd33430485e07e09ff1de15d64a37b114b61e6db77a042a",
+      "reader_sha256": "4d8e766dd4370f73085094e0337f69ecd9b51fc1c74e1d2fe69e7efd061c499e",
+      "quote_sha256": "ddec5820a1e0d832cdb7cc00976c5b82eee96607d67cb7d945fb548a3015cbf2",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Oesterreich/2024-11-28-Oesterreich-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 42,
+      "id": "ATPE",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2371d7e0a7990e02.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2371d7e0a7990e02.reader.txt",
+      "native_LF": [
+        299,
+        303
+      ],
+      "raw_sha256": "efd57b2b35832a3e4cd33430485e07e09ff1de15d64a37b114b61e6db77a042a",
+      "reader_sha256": "4d8e766dd4370f73085094e0337f69ecd9b51fc1c74e1d2fe69e7efd061c499e",
+      "quote_sha256": "a68176c257f4b4f126613fd443df6ce8ba5b3877dc66a8e3c7fb909dc63b14de",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Oesterreich/2024-11-28-Oesterreich-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 43,
+      "id": "ATTAX",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2371d7e0a7990e02.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2371d7e0a7990e02.reader.txt",
+      "native_LF": [
+        75,
+        81
+      ],
+      "raw_sha256": "efd57b2b35832a3e4cd33430485e07e09ff1de15d64a37b114b61e6db77a042a",
+      "reader_sha256": "4d8e766dd4370f73085094e0337f69ecd9b51fc1c74e1d2fe69e7efd061c499e",
+      "quote_sha256": "81240628989ca322d784fd3b2db2672678823b95da55f0317d7d54dd7d278706",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Oesterreich/2024-11-28-Oesterreich-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 44,
+      "id": "CHD",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+      "native_LF": [
+        336,
+        353
+      ],
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "quote_sha256": "7b481f4010cc0103d80323acefd87efe78d840e1999a08366303a3e4d127ecb7",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "actual_read_bridge": {
+        "guide": "germany-to-switzerland-cross-border-tax",
+        "quote_row": 58,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 45,
+      "id": "CHI",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+      "native_LF": [
+        372,
+        373
+      ],
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "quote_sha256": "cb5bcc4e772b044a25b464c86483b1e7e8ef54ac5f354bb7a22c2cfcad70c7ee",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "actual_read_bridge": {
+        "guide": "germany-to-switzerland-cross-border-tax",
+        "quote_row": 59,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 46,
+      "id": "CHR",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+      "native_LF": [
+        388,
+        389
+      ],
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "quote_sha256": "960f5aa2ad521c32c0314b94c228a3cfacbba120acd9b876f82ea25bb0fa154f",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 47,
+      "id": "CHTAX",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+      "native_LF": [
+        74,
+        88
+      ],
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "quote_sha256": "6d971be0883fdedfea3e6a672a48d7f22a7c2a117beedb9eaa9721f9c01c5b08",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 48,
+      "id": "NLD",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubc52031c54be79dc.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubc52031c54be79dc.reader.txt",
+      "native_LF": [
+        333,
+        351
+      ],
+      "raw_sha256": "7967c0245c14ef07bdc4bc85b5a1ce76652057e010d382db328591d7e0e90acc",
+      "reader_sha256": "bffb541ce5da23b142dd007964bae73f3fba4662f59163e8ac40a2a361ebd453",
+      "quote_sha256": "bd16d6d7a64ed2c97353257aee6d64e2aff801d4d50f73ca6a9ea670aa2ad5b5",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Niederlande/2026-05-18-Niederlande-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 49,
+      "id": "NLI",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubc52031c54be79dc.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubc52031c54be79dc.reader.txt",
+      "native_LF": [
+        376,
+        377
+      ],
+      "raw_sha256": "7967c0245c14ef07bdc4bc85b5a1ce76652057e010d382db328591d7e0e90acc",
+      "reader_sha256": "bffb541ce5da23b142dd007964bae73f3fba4662f59163e8ac40a2a361ebd453",
+      "quote_sha256": "216938fa632e1f95bcaf2a5b5aba382ecfb8395fec69c5e401b0ad04f889ad9c",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Niederlande/2026-05-18-Niederlande-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 50,
+      "id": "NLR",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubc52031c54be79dc.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubc52031c54be79dc.reader.txt",
+      "native_LF": [
+        393,
+        394
+      ],
+      "raw_sha256": "7967c0245c14ef07bdc4bc85b5a1ce76652057e010d382db328591d7e0e90acc",
+      "reader_sha256": "bffb541ce5da23b142dd007964bae73f3fba4662f59163e8ac40a2a361ebd453",
+      "quote_sha256": "e5839b4eac16f879f39f844303492071bd109f348015559f54bc1f634cd08a57",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Niederlande/2026-05-18-Niederlande-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 51,
+      "id": "NLPROFIT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubc52031c54be79dc.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubc52031c54be79dc.reader.txt",
+      "native_LF": [
+        1209,
+        1217
+      ],
+      "raw_sha256": "7967c0245c14ef07bdc4bc85b5a1ce76652057e010d382db328591d7e0e90acc",
+      "reader_sha256": "bffb541ce5da23b142dd007964bae73f3fba4662f59163e8ac40a2a361ebd453",
+      "quote_sha256": "71b0d591790ddc09411bc5cfda1bec18d0cac6dc27df26e5fb204e2b4ad65766",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Niederlande/2026-05-18-Niederlande-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 52,
+      "id": "NLTAX",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubc52031c54be79dc.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubc52031c54be79dc.reader.txt",
+      "native_LF": [
+        74,
+        80
+      ],
+      "raw_sha256": "7967c0245c14ef07bdc4bc85b5a1ce76652057e010d382db328591d7e0e90acc",
+      "reader_sha256": "bffb541ce5da23b142dd007964bae73f3fba4662f59163e8ac40a2a361ebd453",
+      "quote_sha256": "dcbb7d37ab4e2692ac984c32a0ad8e3412a812d60ef4844357d82674fc15d1f7",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Niederlande/2026-05-18-Niederlande-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 53,
+      "id": "FRD",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.reader.txt",
+      "native_LF": [
+        727,
+        729
+      ],
+      "raw_sha256": "1f272f14689c05293072a525f59df9c293718adb53df6c754b62724c35d20047",
+      "reader_sha256": "823277b8322cdd46240c8dcfeeaeda892825261c267ec2f2e862313a874b956e",
+      "quote_sha256": "1001023f4b7d76eb4004ff61df132503332e08bdce6eb30dc1e79a8178618999",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 54,
+      "id": "FRQUAL",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.reader.txt",
+      "native_LF": [
+        753,
+        758
+      ],
+      "raw_sha256": "1f272f14689c05293072a525f59df9c293718adb53df6c754b62724c35d20047",
+      "reader_sha256": "823277b8322cdd46240c8dcfeeaeda892825261c267ec2f2e862313a874b956e",
+      "quote_sha256": "0d978cfbde8c9678b3af35bc958eb1cbee6bf3ed1112d17585c2b52faf2132fe",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 55,
+      "id": "FR5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.reader.txt",
+      "native_LF": [
+        778,
+        778
+      ],
+      "raw_sha256": "1f272f14689c05293072a525f59df9c293718adb53df6c754b62724c35d20047",
+      "reader_sha256": "823277b8322cdd46240c8dcfeeaeda892825261c267ec2f2e862313a874b956e",
+      "quote_sha256": "de713a17f4406f4d6693bbbd2fafd5aee3012b584f41fe587ea9098ff9eb345e",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 56,
+      "id": "FR365",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.reader.txt",
+      "native_LF": [
+        784,
+        789
+      ],
+      "raw_sha256": "1f272f14689c05293072a525f59df9c293718adb53df6c754b62724c35d20047",
+      "reader_sha256": "823277b8322cdd46240c8dcfeeaeda892825261c267ec2f2e862313a874b956e",
+      "quote_sha256": "7a8daa70a1f88655fcc6bff19648378c55aef77a16f1da4b35b5bfe8b8bc1c50",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 57,
+      "id": "FREFFECT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.reader.txt",
+      "native_LF": [
+        818,
+        819
+      ],
+      "raw_sha256": "1f272f14689c05293072a525f59df9c293718adb53df6c754b62724c35d20047",
+      "reader_sha256": "823277b8322cdd46240c8dcfeeaeda892825261c267ec2f2e862313a874b956e",
+      "quote_sha256": "3bbd0cabe724884274072497617040660019b41ef4aa8e360be6fe5bbc2babb8",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 58,
+      "id": "FRI",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.reader.txt",
+      "native_LF": [
+        860,
+        866
+      ],
+      "raw_sha256": "1f272f14689c05293072a525f59df9c293718adb53df6c754b62724c35d20047",
+      "reader_sha256": "823277b8322cdd46240c8dcfeeaeda892825261c267ec2f2e862313a874b956e",
+      "quote_sha256": "23cccc686059cd34b4858ec90a062a939cd1f8eec1a4fd4459f9e0a9704c700a",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 59,
+      "id": "FRR",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.reader.txt",
+      "native_LF": [
+        1130,
+        1138
+      ],
+      "raw_sha256": "1f272f14689c05293072a525f59df9c293718adb53df6c754b62724c35d20047",
+      "reader_sha256": "823277b8322cdd46240c8dcfeeaeda892825261c267ec2f2e862313a874b956e",
+      "quote_sha256": "3ccb953555f3080e0f3ab830a4e09588a376260f18df113755e2a2a5de8ca93b",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 60,
+      "id": "FRPROFIT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.reader.txt",
+      "native_LF": [
+        836,
+        840
+      ],
+      "raw_sha256": "1f272f14689c05293072a525f59df9c293718adb53df6c754b62724c35d20047",
+      "reader_sha256": "823277b8322cdd46240c8dcfeeaeda892825261c267ec2f2e862313a874b956e",
+      "quote_sha256": "bec9eb9c26ceff8d9137c39571de8654ac147c7ccf48f51ef318f2a1835a0750",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 61,
+      "id": "FRTAX",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5746efcd68c9eb95.reader.txt",
+      "native_LF": [
+        267,
+        271
+      ],
+      "raw_sha256": "1f272f14689c05293072a525f59df9c293718adb53df6c754b62724c35d20047",
+      "reader_sha256": "823277b8322cdd46240c8dcfeeaeda892825261c267ec2f2e862313a874b956e",
+      "quote_sha256": "daf0a41fa60d0c506e96aa41cba09a5061dfcdadaa55704874faf6c408cd3868",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 62,
+      "id": "ESD",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U27262e24f0ec8bd0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U27262e24f0ec8bd0.reader.txt",
+      "native_LF": [
+        610,
+        616
+      ],
+      "raw_sha256": "6442bcd677c6669caa73baf24ff504fb23b83f622cbfdacf538a247f5dc11c56",
+      "reader_sha256": "756ad08f52cd8dbf5c6fbc5a10847de28b1771b8a985a0e02244674068f36f4e",
+      "quote_sha256": "348c177995d1262a7a818e1596b38d386903f8900a26e5e850da616bec68b548",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Spanien/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 63,
+      "id": "ES365",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U27262e24f0ec8bd0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U27262e24f0ec8bd0.reader.txt",
+      "native_LF": [
+        625,
+        633
+      ],
+      "raw_sha256": "6442bcd677c6669caa73baf24ff504fb23b83f622cbfdacf538a247f5dc11c56",
+      "reader_sha256": "756ad08f52cd8dbf5c6fbc5a10847de28b1771b8a985a0e02244674068f36f4e",
+      "quote_sha256": "c520a7b3106b621c2758bead98003ce9a08fe51729f4f115f5b9d5a70d4cceb0",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Spanien/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 64,
+      "id": "ESEFFECT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U27262e24f0ec8bd0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U27262e24f0ec8bd0.reader.txt",
+      "native_LF": [
+        669,
+        670
+      ],
+      "raw_sha256": "6442bcd677c6669caa73baf24ff504fb23b83f622cbfdacf538a247f5dc11c56",
+      "reader_sha256": "756ad08f52cd8dbf5c6fbc5a10847de28b1771b8a985a0e02244674068f36f4e",
+      "quote_sha256": "497e32b843e4c5d82caa613b8a1a65386fd77c4634e8cac35e123049a13f93a4",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Spanien/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 65,
+      "id": "ESI",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U27262e24f0ec8bd0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U27262e24f0ec8bd0.reader.txt",
+      "native_LF": [
+        663,
+        664
+      ],
+      "raw_sha256": "6442bcd677c6669caa73baf24ff504fb23b83f622cbfdacf538a247f5dc11c56",
+      "reader_sha256": "756ad08f52cd8dbf5c6fbc5a10847de28b1771b8a985a0e02244674068f36f4e",
+      "quote_sha256": "21fbd67a4cbb6e525a946eedd67090ad2b50108aa16dbbb4e80ab42d71aa9f93",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Spanien/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 66,
+      "id": "ESR",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U27262e24f0ec8bd0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U27262e24f0ec8bd0.reader.txt",
+      "native_LF": [
+        695,
+        696
+      ],
+      "raw_sha256": "6442bcd677c6669caa73baf24ff504fb23b83f622cbfdacf538a247f5dc11c56",
+      "reader_sha256": "756ad08f52cd8dbf5c6fbc5a10847de28b1771b8a985a0e02244674068f36f4e",
+      "quote_sha256": "87cdc828727abf42c6f5b4bd9101e74a9fa7387605004093d447b1d42a8730e2",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Spanien/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 67,
+      "id": "ESTAX",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U27262e24f0ec8bd0.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U27262e24f0ec8bd0.reader.txt",
+      "native_LF": [
+        243,
+        255
+      ],
+      "raw_sha256": "6442bcd677c6669caa73baf24ff504fb23b83f622cbfdacf538a247f5dc11c56",
+      "reader_sha256": "756ad08f52cd8dbf5c6fbc5a10847de28b1771b8a985a0e02244674068f36f4e",
+      "quote_sha256": "cabd3e799e3ebef3c35b7070635d01d4904afe67ff83a69fada09aec8ef51192",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Spanien/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 68,
+      "id": "UKD",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U65822eba03edf117.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U65822eba03edf117.reader.txt",
+      "native_LF": [
+        493,
+        509
+      ],
+      "raw_sha256": "a0583349f76690b9e8351b5f73825e0f2567eded20049dae9be80a53f15b3389",
+      "reader_sha256": "6f051209f4b9da401e61b55d78c61c2420fc4e8e145d22928318df3a3e4f3b90",
+      "quote_sha256": "a95fc37cab2a3168457d8ce8738a7f49875af5d47a446f331f482bba5e567686",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Grossbritannien/2010-11-23-Grossbritannien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 69,
+      "id": "UKI",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U65822eba03edf117.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U65822eba03edf117.reader.txt",
+      "native_LF": [
+        560,
+        562
+      ],
+      "raw_sha256": "a0583349f76690b9e8351b5f73825e0f2567eded20049dae9be80a53f15b3389",
+      "reader_sha256": "6f051209f4b9da401e61b55d78c61c2420fc4e8e145d22928318df3a3e4f3b90",
+      "quote_sha256": "98a02e6001564584624d164d18808fe1b974a0da0b641e3f87e0176e8b202714",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Grossbritannien/2010-11-23-Grossbritannien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 70,
+      "id": "UKR",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U65822eba03edf117.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U65822eba03edf117.reader.txt",
+      "native_LF": [
+        599,
+        602
+      ],
+      "raw_sha256": "a0583349f76690b9e8351b5f73825e0f2567eded20049dae9be80a53f15b3389",
+      "reader_sha256": "6f051209f4b9da401e61b55d78c61c2420fc4e8e145d22928318df3a3e4f3b90",
+      "quote_sha256": "8e8ac0e5a85e11486728c048fbb8334c2ed3d0eace8864663c0cb7a7a53bc3cc",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Grossbritannien/2010-11-23-Grossbritannien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 71,
+      "id": "UKTAX",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U65822eba03edf117.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U65822eba03edf117.reader.txt",
+      "native_LF": [
+        112,
+        118
+      ],
+      "raw_sha256": "a0583349f76690b9e8351b5f73825e0f2567eded20049dae9be80a53f15b3389",
+      "reader_sha256": "6f051209f4b9da401e61b55d78c61c2420fc4e8e145d22928318df3a3e4f3b90",
+      "quote_sha256": "23abab77b750bfb772d0eed88a1fd47a1ebbc3922d53bf7fd06c8181393884b8",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Grossbritannien/2010-11-23-Grossbritannien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 72,
+      "id": "UKCURRENT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U468074a782b8f280.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U468074a782b8f280.reader.txt",
+      "native_LF": [
+        208,
+        223
+      ],
+      "raw_sha256": "f68bc6a81c8ad3b730758fd192c96956d9cb4140c84fc82f05a7f9e6c0be27c8",
+      "reader_sha256": "735f74009fd13b10a0ecafc0c212c817db4b19aecf3a7a470caac13ee284e7dc",
+      "quote_sha256": "66ace0080e3c7a2c1c649c7135a3d0b85d44e4d7960e6fa72cd18032903766b6",
+      "official_url": "https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 73,
+      "id": "IED",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue6953f6072c63d46.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue6953f6072c63d46.reader.txt",
+      "native_LF": [
+        486,
+        507
+      ],
+      "raw_sha256": "8494d419f6857400136c44017646d3871e8ea9b07c80002fe83021dc473c9258",
+      "reader_sha256": "3a06d1a395b55d94b7acf405fd2b9e5a5ef33a36d252d559651da087cee6339d",
+      "quote_sha256": "40987777230fc30853b4143f0f1ca0fd4606acfdc3ba90d6fe96143936bdfca6",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Irland/2025-04-10-Irland-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 74,
+      "id": "IEI",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue6953f6072c63d46.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue6953f6072c63d46.reader.txt",
+      "native_LF": [
+        539,
+        541
+      ],
+      "raw_sha256": "8494d419f6857400136c44017646d3871e8ea9b07c80002fe83021dc473c9258",
+      "reader_sha256": "3a06d1a395b55d94b7acf405fd2b9e5a5ef33a36d252d559651da087cee6339d",
+      "quote_sha256": "0ed78b8b33b89945638f2c54f06fd4ae669e6cad839ff3bc185b64e61ab296b7",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Irland/2025-04-10-Irland-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 75,
+      "id": "IER",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue6953f6072c63d46.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue6953f6072c63d46.reader.txt",
+      "native_LF": [
+        573,
+        576
+      ],
+      "raw_sha256": "8494d419f6857400136c44017646d3871e8ea9b07c80002fe83021dc473c9258",
+      "reader_sha256": "3a06d1a395b55d94b7acf405fd2b9e5a5ef33a36d252d559651da087cee6339d",
+      "quote_sha256": "4182ad4e4c9cee96d7e6309842c420402e4d0a3f0ffc9b7dc9cc94a9c52679ba",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Irland/2025-04-10-Irland-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 76,
+      "id": "IEPROFIT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue6953f6072c63d46.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue6953f6072c63d46.reader.txt",
+      "native_LF": [
+        1581,
+        1594
+      ],
+      "raw_sha256": "8494d419f6857400136c44017646d3871e8ea9b07c80002fe83021dc473c9258",
+      "reader_sha256": "3a06d1a395b55d94b7acf405fd2b9e5a5ef33a36d252d559651da087cee6339d",
+      "quote_sha256": "1e70539a55718cab18c5870b5267c0442ab7bc2f61c6dbd9abd5ddf77acfc58d",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Irland/2025-04-10-Irland-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 77,
+      "id": "IETAX",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue6953f6072c63d46.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue6953f6072c63d46.reader.txt",
+      "native_LF": [
+        101,
+        107
+      ],
+      "raw_sha256": "8494d419f6857400136c44017646d3871e8ea9b07c80002fe83021dc473c9258",
+      "reader_sha256": "3a06d1a395b55d94b7acf405fd2b9e5a5ef33a36d252d559651da087cee6339d",
+      "quote_sha256": "febbcaa1f632d874ef519c1595adef06e4e984381db85d07d68b8a4f10727784",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Irland/2025-04-10-Irland-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 78,
+      "id": "LUD",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U386e9f404bb57681.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U386e9f404bb57681.reader.txt",
+      "native_LF": [
+        115,
+        129
+      ],
+      "raw_sha256": "cc21270f98adea6651b108a3b29c645fec17b244b0602a48485483f1038fd398",
+      "reader_sha256": "d24f6485a8845c625ddb8ec6637d1c5d0f19ebcedb910700bb9dcfe33bfc4a4a",
+      "quote_sha256": "2e9fa9d40d5136f8858d44c59626c0136ab9a155e0cc920cbe79a36e603e7dab",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Luxemburg/2023-12-13-Luxemburg-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 79,
+      "id": "LUI",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U386e9f404bb57681.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U386e9f404bb57681.reader.txt",
+      "native_LF": [
+        135,
+        138
+      ],
+      "raw_sha256": "cc21270f98adea6651b108a3b29c645fec17b244b0602a48485483f1038fd398",
+      "reader_sha256": "d24f6485a8845c625ddb8ec6637d1c5d0f19ebcedb910700bb9dcfe33bfc4a4a",
+      "quote_sha256": "652627d43f959f1946a12ad7cb9e1239f1ce2ed9b5e94f00ef1aba25d794522e",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Luxemburg/2023-12-13-Luxemburg-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 80,
+      "id": "LUEFFECT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U386e9f404bb57681.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U386e9f404bb57681.reader.txt",
+      "native_LF": [
+        361,
+        368
+      ],
+      "raw_sha256": "cc21270f98adea6651b108a3b29c645fec17b244b0602a48485483f1038fd398",
+      "reader_sha256": "d24f6485a8845c625ddb8ec6637d1c5d0f19ebcedb910700bb9dcfe33bfc4a4a",
+      "quote_sha256": "996a800437a185e8bdf29c5b3b7e2615b5e6d29655c72729e19a9a3a9f285993",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Luxemburg/2023-12-13-Luxemburg-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 81,
+      "id": "USD",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.reader.txt",
+      "native_LF": [
+        523,
+        534
+      ],
+      "raw_sha256": "c712844fbd49d928461286efcca93ac57da6ead9def96d0efea940d3ad2333fd",
+      "reader_sha256": "20ce7d897b2183a1ef752f0eac338496af5f0e4bd9ab31f299c7c8683bdd8505",
+      "quote_sha256": "f668cde7596be77de2904fcf58116e9ae40469b18de5a186eefdefdc35616cc4",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Verein_Staaten/2008-06-23-USA-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 82,
+      "id": "USZERO",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.reader.txt",
+      "native_LF": [
+        538,
+        569
+      ],
+      "raw_sha256": "c712844fbd49d928461286efcca93ac57da6ead9def96d0efea940d3ad2333fd",
+      "reader_sha256": "20ce7d897b2183a1ef752f0eac338496af5f0e4bd9ab31f299c7c8683bdd8505",
+      "quote_sha256": "f6817890ebb7c2a5af6e539de1a1dfd509c66ecc46398c993cd1de473c253026",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Verein_Staaten/2008-06-23-USA-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 83,
+      "id": "USFUNDS",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.reader.txt",
+      "native_LF": [
+        570,
+        604
+      ],
+      "raw_sha256": "c712844fbd49d928461286efcca93ac57da6ead9def96d0efea940d3ad2333fd",
+      "reader_sha256": "20ce7d897b2183a1ef752f0eac338496af5f0e4bd9ab31f299c7c8683bdd8505",
+      "quote_sha256": "04a513e13eae09a151e8d9712441802c4d3ed583c71ecc74f295fae692fe5ec1",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Verein_Staaten/2008-06-23-USA-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 84,
+      "id": "USPROFIT",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.reader.txt",
+      "native_LF": [
+        617,
+        635
+      ],
+      "raw_sha256": "c712844fbd49d928461286efcca93ac57da6ead9def96d0efea940d3ad2333fd",
+      "reader_sha256": "20ce7d897b2183a1ef752f0eac338496af5f0e4bd9ab31f299c7c8683bdd8505",
+      "quote_sha256": "98a356577ee44e3062cb2a8067f750e7a49964df1318e3dc790d3121ddee4494",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Verein_Staaten/2008-06-23-USA-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 85,
+      "id": "USI",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.reader.txt",
+      "native_LF": [
+        736,
+        738
+      ],
+      "raw_sha256": "c712844fbd49d928461286efcca93ac57da6ead9def96d0efea940d3ad2333fd",
+      "reader_sha256": "20ce7d897b2183a1ef752f0eac338496af5f0e4bd9ab31f299c7c8683bdd8505",
+      "quote_sha256": "69d9c6a1b020f1c0c67f1e3a49446356a4bc7e617c6f90c3d74e30e6d9b463f3",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Verein_Staaten/2008-06-23-USA-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 86,
+      "id": "USR",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.reader.txt",
+      "native_LF": [
+        795,
+        797
+      ],
+      "raw_sha256": "c712844fbd49d928461286efcca93ac57da6ead9def96d0efea940d3ad2333fd",
+      "reader_sha256": "20ce7d897b2183a1ef752f0eac338496af5f0e4bd9ab31f299c7c8683bdd8505",
+      "quote_sha256": "3a3e60d61bc4ae63b5d0a29976dc82b8e8e8262be468b5c0b0c49745d1347ae1",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Verein_Staaten/2008-06-23-USA-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 87,
+      "id": "USTAX",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.reader.txt",
+      "native_LF": [
+        189,
+        200
+      ],
+      "raw_sha256": "c712844fbd49d928461286efcca93ac57da6ead9def96d0efea940d3ad2333fd",
+      "reader_sha256": "20ce7d897b2183a1ef752f0eac338496af5f0e4bd9ab31f299c7c8683bdd8505",
+      "quote_sha256": "68fff3f7aea71d66fee2e4263c08f31760d1b9e134ff61b1bcea5990508d3810",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Verein_Staaten/2008-06-23-USA-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 88,
+      "id": "CZD",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.reader.txt",
+      "native_LF": [
+        495,
+        503
+      ],
+      "raw_sha256": "d34112bdc430618db27400d87a7876b2848bbb4248d490a8b13e59715e434598",
+      "reader_sha256": "fa906f0414799e660b6475a700e0cc77a58699647a3920fdd54db460dfcdd1ed",
+      "quote_sha256": "a7e282c02de16e9bd4a8da4605205b52e32078d22494d5dd2448d1212ad5b70e",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Tschechien/2025-06-18-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 89,
+      "id": "CZI",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.reader.txt",
+      "native_LF": [
+        542,
+        543
+      ],
+      "raw_sha256": "d34112bdc430618db27400d87a7876b2848bbb4248d490a8b13e59715e434598",
+      "reader_sha256": "fa906f0414799e660b6475a700e0cc77a58699647a3920fdd54db460dfcdd1ed",
+      "quote_sha256": "97bf491ac94ba93404d2975244c1fcf2fba06080611ac2e022e8effaa7b8495a",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Tschechien/2025-06-18-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 90,
+      "id": "CZR",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.reader.txt",
+      "native_LF": [
+        567,
+        572
+      ],
+      "raw_sha256": "d34112bdc430618db27400d87a7876b2848bbb4248d490a8b13e59715e434598",
+      "reader_sha256": "fa906f0414799e660b6475a700e0cc77a58699647a3920fdd54db460dfcdd1ed",
+      "quote_sha256": "e0288eecb79c2be0d73d4fe8489fd5f88ef451cec4be54de0268167900a6b717",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Tschechien/2025-06-18-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 91,
+      "id": "CZTAX",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.reader.txt",
+      "native_LF": [
+        226,
+        233
+      ],
+      "raw_sha256": "d34112bdc430618db27400d87a7876b2848bbb4248d490a8b13e59715e434598",
+      "reader_sha256": "fa906f0414799e660b6475a700e0cc77a58699647a3920fdd54db460dfcdd1ed",
+      "quote_sha256": "2a3824d77be1aba8a6983de73a18431bf0506135fa48ee2687c53d5810237940",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Tschechien/2025-06-18-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 92,
+      "id": "CZLATER",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.reader.txt",
+      "native_LF": [
+        249,
+        252
+      ],
+      "raw_sha256": "d34112bdc430618db27400d87a7876b2848bbb4248d490a8b13e59715e434598",
+      "reader_sha256": "fa906f0414799e660b6475a700e0cc77a58699647a3920fdd54db460dfcdd1ed",
+      "quote_sha256": "58111762f669878f9966f305ca8d75f10a2bafbdc287935b2f3b825458b1111e",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Tschechien/2025-06-18-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 93,
+      "id": "LUDATE",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6829be140a616ad1.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6829be140a616ad1.reader.txt",
+      "native_LF": [
+        244,
+        245
+      ],
+      "raw_sha256": "c83ff59f43ec10d85bcbdaad6d2f953db2e1262b78c1c1b4b2efbe46c5d65ab9",
+      "reader_sha256": "3f7eeac8deab16e144a7f96a61a907fc1465a2a58654e51ea72c65a6f36172a1",
+      "quote_sha256": "c438f90d154620e88ab3befff5adaa19b8d48ecab035d0659818c84d080fda43",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2026-01-07-stand-DBA-1-januar-2026.pdf?__blob=publicationFile&v=2",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 94,
+      "id": "IT1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue32394b5ce5fc51e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ue32394b5ce5fc51e-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        2,
+        2
+      ],
+      "raw_sha256": "235d136361226810feaceba5bae85293377e392d93fa6cf08bb4f76f0c598d8f",
+      "reader_sha256": "6dcddc854462139295441ec7c25cf42d63fa1c86dcc7d48d9ac279b28a33e8d0",
+      "quote_sha256": "60524cabb23aa063359a8707468053ec88260dbb627c038c4cbbdcb5d14033dc",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Italien/1990-08-18-Italien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 95,
+      "id": "IT2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue32394b5ce5fc51e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ue32394b5ce5fc51e-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        5,
+        5
+      ],
+      "raw_sha256": "235d136361226810feaceba5bae85293377e392d93fa6cf08bb4f76f0c598d8f",
+      "reader_sha256": "6dcddc854462139295441ec7c25cf42d63fa1c86dcc7d48d9ac279b28a33e8d0",
+      "quote_sha256": "441460cb97c116e5b4f79a04f9f8a7bffcb787122d02706a5aaea2f11dd7c5c7",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Italien/1990-08-18-Italien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 96,
+      "id": "IT3",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue32394b5ce5fc51e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ue32394b5ce5fc51e-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        8,
+        8
+      ],
+      "raw_sha256": "235d136361226810feaceba5bae85293377e392d93fa6cf08bb4f76f0c598d8f",
+      "reader_sha256": "6dcddc854462139295441ec7c25cf42d63fa1c86dcc7d48d9ac279b28a33e8d0",
+      "quote_sha256": "a8ae83baec2281ed53b9db0be44336e8f7b487e9d0867d58934c8fb2bab04e9f",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Italien/1990-08-18-Italien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 97,
+      "id": "IT4",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue32394b5ce5fc51e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ue32394b5ce5fc51e-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        11,
+        14
+      ],
+      "raw_sha256": "235d136361226810feaceba5bae85293377e392d93fa6cf08bb4f76f0c598d8f",
+      "reader_sha256": "6dcddc854462139295441ec7c25cf42d63fa1c86dcc7d48d9ac279b28a33e8d0",
+      "quote_sha256": "11e379a843ac23318e3a4cac3ce6e013b68bb32940e345aaa5f7ec88d1954d6d",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Italien/1990-08-18-Italien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 98,
+      "id": "IT5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue32394b5ce5fc51e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ue32394b5ce5fc51e-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        17,
+        18
+      ],
+      "raw_sha256": "235d136361226810feaceba5bae85293377e392d93fa6cf08bb4f76f0c598d8f",
+      "reader_sha256": "6dcddc854462139295441ec7c25cf42d63fa1c86dcc7d48d9ac279b28a33e8d0",
+      "quote_sha256": "874621e6efb02e9498cab9605d17918b1bc85dda711ca999912fca319c386165",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Italien/1990-08-18-Italien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 99,
+      "id": "IT6",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue32394b5ce5fc51e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ue32394b5ce5fc51e-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        21,
+        21
+      ],
+      "raw_sha256": "235d136361226810feaceba5bae85293377e392d93fa6cf08bb4f76f0c598d8f",
+      "reader_sha256": "6dcddc854462139295441ec7c25cf42d63fa1c86dcc7d48d9ac279b28a33e8d0",
+      "quote_sha256": "851653ab932e3072fcdfdd016676275db8af509e411fd0de24a20d9e84d01239",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Italien/1990-08-18-Italien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 100,
+      "id": "IT7",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue32394b5ce5fc51e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ue32394b5ce5fc51e-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        24,
+        24
+      ],
+      "raw_sha256": "235d136361226810feaceba5bae85293377e392d93fa6cf08bb4f76f0c598d8f",
+      "reader_sha256": "6dcddc854462139295441ec7c25cf42d63fa1c86dcc7d48d9ac279b28a33e8d0",
+      "quote_sha256": "bfab3d6868200cef1ae25c1ff97e6ee3eb63234785dc662f70ef13b40527841b",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Italien/1990-08-18-Italien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 101,
+      "id": "IT8",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue32394b5ce5fc51e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ue32394b5ce5fc51e-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        27,
+        27
+      ],
+      "raw_sha256": "235d136361226810feaceba5bae85293377e392d93fa6cf08bb4f76f0c598d8f",
+      "reader_sha256": "6dcddc854462139295441ec7c25cf42d63fa1c86dcc7d48d9ac279b28a33e8d0",
+      "quote_sha256": "4fb1aa7363f21f1ecb7386359ba6e5fde2f571869654a59edca96c80488c8323",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Italien/1990-08-18-Italien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 102,
+      "id": "IT9",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue32394b5ce5fc51e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ue32394b5ce5fc51e-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        30,
+        30
+      ],
+      "raw_sha256": "235d136361226810feaceba5bae85293377e392d93fa6cf08bb4f76f0c598d8f",
+      "reader_sha256": "6dcddc854462139295441ec7c25cf42d63fa1c86dcc7d48d9ac279b28a33e8d0",
+      "quote_sha256": "b8b2ecba5110f246d2ca90c825f3bcc5897de4daa27e8deea49f8f8802724eee",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Italien/1990-08-18-Italien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 103,
+      "id": "PL1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6e2c9f9ded58ef2.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ua6e2c9f9ded58ef2-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        2,
+        3
+      ],
+      "raw_sha256": "1d98894a25f8a76b24bdaa4f876d96c10c7a5215e9803adc18fe9d4eb4fd0228",
+      "reader_sha256": "bebbd69dde25ea6c6e3189da5e7d763aee8026531fc7c5f4f1ebb84b1ea49ddb",
+      "quote_sha256": "2799435df70b48323b42a59ff2c457412d7bf46080894c4b2a9d736b46780f28",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Polen/2004-04-29-Polen-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 104,
+      "id": "PL2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6e2c9f9ded58ef2.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ua6e2c9f9ded58ef2-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        6,
+        6
+      ],
+      "raw_sha256": "1d98894a25f8a76b24bdaa4f876d96c10c7a5215e9803adc18fe9d4eb4fd0228",
+      "reader_sha256": "bebbd69dde25ea6c6e3189da5e7d763aee8026531fc7c5f4f1ebb84b1ea49ddb",
+      "quote_sha256": "3dedc912f6a775b6d15eb6d2e95089c835c3c20b4449ab08de82ca05cc4c81cd",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Polen/2004-04-29-Polen-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 105,
+      "id": "PL3",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6e2c9f9ded58ef2.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ua6e2c9f9ded58ef2-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        9,
+        14
+      ],
+      "raw_sha256": "1d98894a25f8a76b24bdaa4f876d96c10c7a5215e9803adc18fe9d4eb4fd0228",
+      "reader_sha256": "bebbd69dde25ea6c6e3189da5e7d763aee8026531fc7c5f4f1ebb84b1ea49ddb",
+      "quote_sha256": "0b34b8d6b29d38471aecbe8ce782e21446200489b4f1231f758d8905edc3cadb",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Polen/2004-04-29-Polen-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 106,
+      "id": "PL4",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6e2c9f9ded58ef2.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ua6e2c9f9ded58ef2-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        17,
+        17
+      ],
+      "raw_sha256": "1d98894a25f8a76b24bdaa4f876d96c10c7a5215e9803adc18fe9d4eb4fd0228",
+      "reader_sha256": "bebbd69dde25ea6c6e3189da5e7d763aee8026531fc7c5f4f1ebb84b1ea49ddb",
+      "quote_sha256": "ae66777603982bf6411e88b68ebe14db99fab65024c1c29fb2a548b8d68a4c14",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Polen/2004-04-29-Polen-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 107,
+      "id": "PL5",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6e2c9f9ded58ef2.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ua6e2c9f9ded58ef2-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        20,
+        24
+      ],
+      "raw_sha256": "1d98894a25f8a76b24bdaa4f876d96c10c7a5215e9803adc18fe9d4eb4fd0228",
+      "reader_sha256": "bebbd69dde25ea6c6e3189da5e7d763aee8026531fc7c5f4f1ebb84b1ea49ddb",
+      "quote_sha256": "46b83414ca5955ab46eac0ffca6381a1feb667b44b3268ef83dfa675efba535b",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Polen/2004-04-29-Polen-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 108,
+      "id": "LU1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef4b5d31ac957a16.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Uef4b5d31ac957a16-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        2,
+        3
+      ],
+      "raw_sha256": "22ded31d7d8e0fbacbbdd83486f7546598b8943c7d255ae2296d21acc5fd17aa",
+      "reader_sha256": "797a004d68ef4cdf7906f26df7f99b413a07c6b296e2db27d73b64e2fedad65a",
+      "quote_sha256": "76aa7b89e012695cdd914db8eb7d59f79bb0a7c7941bc0fdc7ff75d461976f83",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Luxemburg/2012-12-10-Luxemburg-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    },
+    {
+      "row": 109,
+      "id": "LU2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uef4b5d31ac957a16.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Uef4b5d31ac957a16-visual-verified-excerpts.reader.txt",
+      "native_LF": [
+        6,
+        6
+      ],
+      "raw_sha256": "22ded31d7d8e0fbacbbdd83486f7546598b8943c7d255ae2296d21acc5fd17aa",
+      "reader_sha256": "797a004d68ef4cdf7906f26df7f99b413a07c6b296e2db27d73b64e2fedad65a",
+      "quote_sha256": "d987267d0203030252ace9e21bb738b74f6b42dab29526966e161f39cf3aec75",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Luxemburg/2012-12-10-Luxemburg-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1",
+      "actual_read": "All85 new subset quotations actually read in bounded batches1\u201310/11\u201322/23\u201335/36\u201348/49\u201361/62\u201374/75\u201385, with original row mapped here. No complete rawbody reading claim."
+    }
+  ],
+  "direct_new_quotes": 85,
+  "prior_exact_actual_read_bridges": 24,
+  "precise_findings": "R57\u201360 pending exact successor; all source quotes read. Independent visual recheck of selected IT/PL/LU scans separately recorded; actual extra residence/tax definitions and dated NL/CZ scope read.",
+  "no_portal_or_validator_execution": true
+}

@@ -1,0 +1,10 @@
+{
+  "id": "B04_E9B",
+  "url": "https://www.gesetze-im-internet.de/estg/__9b.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/targeted-sources/estg-9b-20261029.html",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB282.txt",
+  "raw_sha256": "ce949c27f771455664013bb563be7c14736e00e594ae69a01732529600ab0698",
+  "reader_sha256": "ba6e1450f8bcaebb61db13d727d573c3b0a0dc8e892f781b6b2f3902e54cc207",
+  "extraction": "Existing writer-B literal native LF reader; raw unchanged",
+  "acquisition": "Reused targeted official source; actual selected LF5\u201310 read by writer A29October2026"
+}

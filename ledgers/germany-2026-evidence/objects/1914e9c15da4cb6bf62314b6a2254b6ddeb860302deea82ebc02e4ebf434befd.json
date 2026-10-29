@@ -1,0 +1,166 @@
+{
+  "germany-payroll": [
+    {
+      "finding": "version",
+      "before": "version: 1.0",
+      "after": "version: 1.1"
+    },
+    {
+      "finding": "R62",
+      "before": "The employee owes the wage tax; the employer must withhold it at every wage payment ([§ 38 EStG](https://www.gesetze-im-internet.de/estg/__38.html)) and is liable for it ([§ 42d(1) EStG](https://www.gesetze-im-internet.de/estg/__42d.html)). The employer pays the total social insurance contribution and recovers the employee's share only by deduction from pay ([§ 28e SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28e.html), [§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html)).",
+      "after": "The employee owes the wage tax; the employer must withhold it at every wage payment ([§ 38 EStG](https://www.gesetze-im-internet.de/estg/__38.html)) and is liable for it ([§ 42d(1) EStG](https://www.gesetze-im-internet.de/estg/__42d.html)). The employer pays the total social insurance contribution and ordinarily recovers the employee's share by deduction from pay, subject to the § 28g exceptions stated below ([§ 28e SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28e.html), [§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html))."
+    },
+    {
+      "finding": "R62",
+      "before": "8. **Contributions.** Cap pay at each branch's monthly ceiling, apply the shares, deduct the employee's. A missed deduction can be made up only at the next three payments, later only if the employer was not at fault ([§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html)).",
+      "after": "8. **Contributions.** Cap pay at each branch's monthly ceiling, apply the shares, deduct the employee's. Under § 28g SGB IV the ordinary claim is recovered by deduction from pay. A missed deduction can ordinarily be recovered at the next three payments, and later if the employer was not at fault. The deduction-only and three-payment restrictions do not apply where the employee intentionally or grossly negligently breaches § 28o(1), bears the entire total social contribution, or receives only benefits in kind. ([§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html))."
+    },
+    {
+      "finding": "R62",
+      "before": "What breaks when the order is wrong: without wage tax data the tax runs in class VI and is corrected later; a missed employee share is lost after three payments; a late contribution statement lets the fund estimate the pay ([§ 28f(3) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28f.html)).",
+      "after": "What breaks when the order is wrong: without wage tax data the tax runs in class VI and is corrected later; a missed employee deduction cannot ordinarily be recovered after the next three payments unless the employer-nonfault or other § 28g exception above applies; a late contribution statement lets the fund estimate the pay ([§ 28f(3) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28f.html))."
+    },
+    {
+      "finding": "R63",
+      "before": "U1, U2 and the insolvency levy are charged on the pay on which pension contributions are worked out ([§ 7(2) AAG](https://www.gesetze-im-internet.de/aufag/__7.html), [§ 358(2) SGB III](https://www.gesetze-im-internet.de/sgb_3/__358.html)).",
+      "after": "U1, U2 and the insolvency levy are charged on the pay on which pension contributions are worked out ([§ 7(2) AAG](https://www.gesetze-im-internet.de/aufag/__7.html), [§ 358(2) SGB III](https://www.gesetze-im-internet.de/sgb_3/__358.html)). For U1, exclude one-time pay under § 23a SGB IV and pay for employment lasting no longer than four weeks where the nature of the job prevents sickness-pay entitlement under § 3(3) EntgFG. Do not transfer that U1 exclusion to U2 or the insolvency levy. During short-time allowance, AAG levies use actual earned pay up to the pension ceiling (§ 7(2) AAG)."
+    },
+    {
+      "finding": "R64",
+      "before": "| Contribution-free only where the hourly pay the surcharge is based on is not above | EUR 25 | [§ 1(1) no. 1 SvEV](https://www.gesetze-im-internet.de/svev/__1.html) |",
+      "after": "| Contribution exemption for an otherwise qualifying tax-free surcharge: applies to the part based on hourly basic pay up to this amount; the excess part remains contributory | EUR 25 | [§ 1(1) no. 1 SvEV](https://www.gesetze-im-internet.de/svev/__1.html) |"
+    },
+    {
+      "finding": "R64",
+      "before": "The two caps differ: a surcharge can be tax-free and still carry contributions. Public holidays are those at the place of work.",
+      "after": "The two caps differ: a surcharge can be tax-free and still carry contributions. Public holidays are those at the place of work. Sunday and holiday work also includes 00:00–04:00 on the following day if the night work began before midnight (§ 3b(3) no. 2 EStG). With EUR 30 hourly basic pay and an otherwise qualifying 25% night premium, EUR 7.50 is tax-free within the EUR 50 tax ceiling; EUR 6.25 is contribution-free and EUR 1.25 remains contributory. Actual work, additional payment and applicable statutory percentage gates still apply."
+    },
+    {
+      "finding": "R65",
+      "before": "Not covered by the minimum wage ([§ 22 MiLoG](https://www.gesetze-im-internet.de/milog/__22.html)): under-18s without completed vocational training; apprentices; volunteers; compulsory internships, and orientation or study-accompanying internships of up to three months; formerly long-term unemployed people in their first six months. Sector minimum wages can be higher.",
+      "after": "Not covered by the minimum wage ([§ 22 MiLoG](https://www.gesetze-im-internet.de/milog/__22.html)): under-18s without completed vocational training; apprentices; volunteers; compulsory internships, and orientation internships of up to three months and training- or study-accompanying internships of up to three months only if no such prior internship with the same trainer/employer existed; formerly long-term unemployed people in their first six months. Sector minimum wages can be higher."
+    },
+    {
+      "finding": "R66",
+      "before": "- **Short-term jobs.** A job limited in advance to three months or 70 working days in a calendar year is contribution-free unless done as a profession with pay above the Minijob limit ([§ 8(1) no. 2 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). The social insurance test and the 25% tax test are different tests.",
+      "after": "- **Short-term jobs.** A job limited in advance to three months or 70 working days in a calendar year, or 15 weeks or 90 working days for employment in an agricultural business is contribution-free unless done as a profession with pay above the Minijob limit ([§ 8(1) no. 2 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). The social insurance test and the 25% tax test are different tests."
+    },
+    {
+      "finding": "R66",
+      "before": "- **Several jobs.** Several Minijobs are added together. One Minijob beside a main insured job stays separate; every further Minijob is added to the main job ([§ 8(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)).",
+      "after": "- **Several jobs.** Several Minijobs are added together. One Minijob beside a main insured job stays separate; every further Minijob is added to the main job ([§ 8(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). If aggregation shows that the minor-employment conditions fail, insurance begins on the day the competent insurance decision is notified under § 8(2) SGB IV, unless the employer intentionally or grossly negligently failed to investigate the facts needed to assess insurance status. This is the specific aggregation rule, not a universal bar on retroactive insurance."
+    },
+    {
+      "finding": "R67",
+      "before": "| Average additional rate for 2026 (planning value, and the rate that counts for the groups of § 242(3) SGB V) | 2.9% (check) | [Finance ministry monthly report](https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-3-sollbericht-2026.html) |",
+      "after": "| Average additional rate for 2026, where legally required for the § 242(3) SGB V groups; ordinary payroll uses the employee fund's actual rate | 2.9% | [BMG published 2026 contributions guidance](https://www.bundesgesundheitsministerium.de/beitraege/seite); earlier [Finance ministry monthly report](https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-3-sollbericht-2026.html) is an estimate source |"
+    },
+    {
+      "finding": "R67",
+      "before": "The official notice of the average additional rate is published in the Federal Gazette, which is not an allowed source for this skill; the figure above is the finance ministry's reading of the estimate. Confirm it before using it for the § 242(3) groups.",
+      "after": "The retained BMG administrative guidance expressly publishes 2.9% for 2026. Use it where the average rate is legally required; ordinary employees use their fund-specific additional rate. This is an actual current official administrative publication, not a separately retained Federal Gazette announcement. The earlier finance ministry estimate is preserved as history, not the sole current-rate evidence."
+    },
+    {
+      "finding": "R67",
+      "before": "| Total contribution rate 2026: 18.6 + 3.6 + 2.6 + 14.6 + 2.9 | 42.3% (check) | Derived from the rates table; § 20(2a) defines the sum |",
+      "after": "| Total contribution rate 2026: 18.6 + 3.6 + 2.6 + 14.6 + 2.9 | 42.3% | Derived from the rates table; § 20(2a) defines the sum |"
+    },
+    {
+      "finding": "R67",
+      "before": "| Factor F 2026: 28 / 42.3 | 0.6619 (check) | Derived; the labour ministry publishes it in the Federal Gazette |",
+      "after": "| Factor F 2026: 28 / 42.3 | 0.6619 | Derived from 28 / 42.3 = 0.6619385…, rounded to four decimals; § 20(2a) SGB IV requires four-decimal rounding. No separate Gazette acquisition is claimed |"
+    },
+    {
+      "finding": "R67",
+      "before": "- [ ] Figures marked \"check\" confirmed: average additional rate, factor F, the lower church tax states.",
+      "after": "- [ ] Apply the employee fund's actual additional rate, or the published 2.9% average where legally required; use the sourced four-decimal F and confirm the actual church-tax state selector."
+    },
+    {
+      "finding": "R67",
+      "before": "| Health and care ceiling (BBG KV/PV), equal to the special threshold of § 6(7) SGB V | EUR 69,750 | EUR 5,812.50 | SVBezGrV 2026 § 2(2); [§ 55(2) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html) ties the care ceiling to it |",
+      "after": "| Health and care ceiling (BBG KV/PV), equal to the special threshold of § 6(7) SGB V | EUR 69,750 | EUR 5,812.50 | SVBezGrV 2026 § 2(2); [§ 55(2) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html) ties the care ceiling to it; [BMG actual 2026 contribution-ceiling guidance](https://www.bundesgesundheitsministerium.de/beitraege/seite) expressly states these amounts; the special-JAEG reference alone is not treated as the whole 2026 contribution-ceiling proof |"
+    },
+    {
+      "finding": "R68",
+      "before": "| Special annual report to accident insurance for everyone employed and insured in 2026 | 16 February 2027 (\"zum 16. Februar des Folgejahres\") | [§ 28a(2a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28a.html) |",
+      "after": "| Special annual report to accident insurance for everyone employed and insured in 2026 | Ordinarily 16 February 2027 (\"zum 16. Februar des Folgejahres\"). On insolvency, definitive business closure or end of all employment: next payroll, at latest six weeks. The statutory agricultural-BG exception applies only where the work value is not used for contribution calculation | [§ 28a(2a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28a.html) |"
+    },
+    {
+      "finding": "R69",
+      "before": "The 2025 annual report was due by 15 February 2026 and the 2025 wage tax certificates by the last day of February 2026 (2 March 2026, as 28 February 2026 was a Saturday). A late or corrected certificate is still sent electronically. Employees with wages from two employers at once in 2025 must file a 2025 return ([§ 46(2) no. 2 EStG](https://www.gesetze-im-internet.de/estg/__46.html)).",
+      "after": "The 2025 annual report was due by Monday 16 February 2026: nominal 15 February was a Sunday, so § 26(3) SGB X moves the ordinary deadline to the next working day. This does not override an authority notice expressly fixing the day under that provision or an authority-set appointment under § 26(5). The [actual social-procedure rule](https://www.gesetze-im-internet.de/sgb_10/__26.html) supplies this adjustment; AO § 108 is not its authority. The 2025 wage tax certificates were due by the last day of February 2026 (2 March 2026, as 28 February 2026 was a Saturday). A late or corrected certificate is still sent electronically. Employees with wages from two employers at once in 2025 must file a 2025 return ([§ 46(2) no. 2 EStG](https://www.gesetze-im-internet.de/estg/__46.html))."
+    },
+    {
+      "finding": "R70",
+      "before": "- **Continued pay in sickness.** Up to six weeks per incapacity, at the pay for regular working time without overtime pay, once the job has lasted four weeks without a break. The same illness again gives a new six weeks only after six months without incapacity from it, or twelve months after the first incapacity from it began ([§ 3 EntgFG](https://www.gesetze-im-internet.de/entgfg/__3.html), [§ 4 EntgFG](https://www.gesetze-im-internet.de/entgfg/__4.html)). Small employers in U1 get part of it back (80% under the statute).",
+      "after": "- **Continued pay in sickness.** For incapacity due to sickness without employee fault, up to six weeks per incapacity, at the pay for regular working time without overtime pay, once the job has lasted four weeks without a break. The same illness again gives a new six weeks only after six months without incapacity from it, or twelve months after the first incapacity from it began ([§ 3 EntgFG](https://www.gesetze-im-internet.de/entgfg/__3.html), [§ 4 EntgFG](https://www.gesetze-im-internet.de/entgfg/__4.html)). Small employers in U1 get part of it back (80% under the statute). Under § 4(1a) EntgFG, additional overtime pay is excluded, as are expense reimbursements contingent on actual expenses that do not arise during incapacity. For performance-related remuneration, use the average earnings achievable during the employee's applicable regular working time."
+    }
+  ],
+  "de-payroll": [
+    {
+      "finding": "version",
+      "before": "version: 1.4",
+      "after": "version: 1.5"
+    },
+    {
+      "finding": "R62 mirror",
+      "before": "- **Social insurance.** The employer pays the whole contribution (Gesamtsozialversicherungsbeitrag) to the collecting office and gets the employee's share back only by deducting it from pay ([§ 28e SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28e.html), [§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html)). The collecting office is the employee's health fund; for Minijobs it is the Minijob-Zentrale ([§ 28i SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28i.html)).",
+      "after": "- **Social insurance.** The employer pays the whole contribution (Gesamtsozialversicherungsbeitrag) to the collecting office and gets the employee's share back ordinarily by deducting it from pay, subject to the § 28g exceptions below ([§ 28e SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28e.html), [§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html)). The collecting office is the employee's health fund; for Minijobs it is the Minijob-Zentrale ([§ 28i SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28i.html))."
+    },
+    {
+      "finding": "R62 mirror",
+      "before": "- A missed employee deduction can be made up only at the next three payments, later only if the employer was not at fault ([§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html)).",
+      "after": "- Under § 28g SGB IV the ordinary claim is recovered by deduction from pay. A missed deduction can ordinarily be recovered at the next three payments, and later if the employer was not at fault. The deduction-only and three-payment restrictions do not apply where the employee intentionally or grossly negligently breaches § 28o(1), bears the entire total social contribution, or receives only benefits in kind. ([§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html))."
+    },
+    {
+      "finding": "R62 mirror",
+      "before": "- **Lost employee share:** a missed employee deduction is lost after the next three payments unless the employer was not at fault ([§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html)); the employer still owes the whole contribution.",
+      "after": "- **Missed employee deduction:** recovery after the next three payments requires the employer-nonfault exception or another actual § 28g exception stated above; the employer still owes the whole contribution ([§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html))."
+    },
+    {
+      "finding": "R63",
+      "before": "- U1 applies to employers with, as a rule, not more than 30 employees (apprentices not counted) and refunds 80% of continued sick pay; U2 applies to all employers. U1, U2 and the insolvency levy are charged on pension-contribution pay ([§ 1 AAG](https://www.gesetze-im-internet.de/aufag/__1.html), [§ 7(2) AAG](https://www.gesetze-im-internet.de/aufag/__7.html), [§ 358(2) SGB III](https://www.gesetze-im-internet.de/sgb_3/__358.html)). Accident insurance is billed by the Berufsgenossenschaft after the year.",
+      "after": "- U1 applies to employers with, as a rule, not more than 30 employees (apprentices not counted) and refunds 80% of continued sick pay; U2 applies to all employers. U1, U2 and the insolvency levy are charged on pension-contribution pay ([§ 1 AAG](https://www.gesetze-im-internet.de/aufag/__1.html), [§ 7(2) AAG](https://www.gesetze-im-internet.de/aufag/__7.html), [§ 358(2) SGB III](https://www.gesetze-im-internet.de/sgb_3/__358.html)). Accident insurance is billed by the Berufsgenossenschaft after the year. For U1, exclude one-time pay under § 23a SGB IV and pay for employment lasting no longer than four weeks where the nature of the job prevents sickness-pay entitlement under § 3(3) EntgFG. Do not transfer that U1 exclusion to U2 or the insolvency levy. During short-time allowance, AAG levies use actual earned pay up to the pension ceiling (§ 7(2) AAG)."
+    },
+    {
+      "finding": "R64 mirror",
+      "before": "**Tax-free night, Sunday and holiday surcharges** ([§ 3b EStG](https://www.gesetze-im-internet.de/estg/__3b.html)), paid on top of basic pay for work actually done: night (20:00 to 06:00) 25%, rising to 40% for 00:00 to 04:00 if the shift began before midnight; Sunday 50%; public holidays and 31 December from 14:00 125%; 24 December from 14:00, 25 and 26 December and 1 May 150%; hourly basic pay counted at most EUR 50. They are free of contributions only where the hourly pay they are based on is not above EUR 25 ([§ 1(1) no. 1 SvEV](https://www.gesetze-im-internet.de/svev/__1.html)). So a surcharge can be tax-free and still carry contributions.",
+      "after": "**Tax-free night, Sunday and holiday surcharges** ([§ 3b EStG](https://www.gesetze-im-internet.de/estg/__3b.html)), paid on top of basic pay for work actually done: night (20:00 to 06:00) 25%, rising to 40% for 00:00 to 04:00 if the shift began before midnight; Sunday 50%; public holidays and 31 December from 14:00 125%; 24 December from 14:00, 25 and 26 December and 1 May 150%; hourly basic pay counted at most EUR 50. For an otherwise qualifying tax-free surcharge, the part based on hourly basic pay up to EUR 25 is free of contributions; the part based on excess hourly basic pay remains contributory ([§ 1(1) no. 1 SvEV](https://www.gesetze-im-internet.de/svev/__1.html)). So a surcharge can be tax-free and still carry contributions."
+    },
+    {
+      "finding": "R64 mirror",
+      "before": "**Tax-free night, Sunday and holiday surcharges** ([§ 3b EStG](https://www.gesetze-im-internet.de/estg/__3b.html)), paid on top of basic pay for work actually done: night (20:00 to 06:00) 25%, rising to 40% for 00:00 to 04:00 if the shift began before midnight; Sunday 50%; public holidays and 31 December from 14:00 125%; 24 December from 14:00, 25 and 26 December and 1 May 150%; hourly basic pay counted at most EUR 50. For an otherwise qualifying tax-free surcharge, the part based on hourly basic pay up to EUR 25 is free of contributions; the part based on excess hourly basic pay remains contributory ([§ 1(1) no. 1 SvEV](https://www.gesetze-im-internet.de/svev/__1.html)). So a surcharge can be tax-free and still carry contributions.",
+      "after": "**Tax-free night, Sunday and holiday surcharges** ([§ 3b EStG](https://www.gesetze-im-internet.de/estg/__3b.html)), paid on top of basic pay for work actually done: night (20:00 to 06:00) 25%, rising to 40% for 00:00 to 04:00 if the shift began before midnight; Sunday 50%; public holidays and 31 December from 14:00 125%; 24 December from 14:00, 25 and 26 December and 1 May 150%; hourly basic pay counted at most EUR 50. For an otherwise qualifying tax-free surcharge, the part based on hourly basic pay up to EUR 25 is free of contributions; the part based on excess hourly basic pay remains contributory ([§ 1(1) no. 1 SvEV](https://www.gesetze-im-internet.de/svev/__1.html)). So a surcharge can be tax-free and still carry contributions. Sunday and holiday work also includes 00:00–04:00 on the following day if the night work began before midnight (§ 3b(3) no. 2 EStG). With EUR 30 hourly basic pay and an otherwise qualifying 25% night premium, EUR 7.50 is tax-free within the EUR 50 tax ceiling; EUR 6.25 is contribution-free and EUR 1.25 remains contributory. Actual work, additional payment and applicable statutory percentage gates still apply."
+    },
+    {
+      "finding": "R65",
+      "before": "**Minimum wage.** EUR 13.90 per hour worked, paid at the agreed date and at the latest on the last bank working day (Frankfurt am Main) of the month after the work ([§ 2(1) MiLoG](https://www.gesetze-im-internet.de/milog/__2.html)). Hours on a written working-time account may not exceed 50% of contractual hours a month and must be balanced within twelve months (§ 2(2) MiLoG). Not covered ([§ 22 MiLoG](https://www.gesetze-im-internet.de/milog/__22.html)): under-18s without completed vocational training, apprentices, volunteers, compulsory internships and orientation or study-accompanying internships of up to three months, and the formerly long-term unemployed in their first six months.",
+      "after": "**Minimum wage.** EUR 13.90 per hour worked, paid at the agreed date and at the latest on the last bank working day (Frankfurt am Main) of the month after the work ([§ 2(1) MiLoG](https://www.gesetze-im-internet.de/milog/__2.html)). Hours on a written working-time account may not exceed 50% of contractual hours a month and must be balanced within twelve months (§ 2(2) MiLoG). Not covered ([§ 22 MiLoG](https://www.gesetze-im-internet.de/milog/__22.html)): under-18s without completed vocational training, apprentices, volunteers, compulsory internships and orientation internships of up to three months and training- or study-accompanying internships of up to three months only if no such prior internship with the same trainer/employer existed, and the formerly long-term unemployed in their first six months."
+    },
+    {
+      "finding": "R66",
+      "before": "**Minijob rules.** The limit is on regular monthly pay; an unforeseeable overrun in not more than two calendar months within the twelve months ending with the pay period, each by up to the limit itself, does not end the Minijob ([§ 8(1b) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). Several Minijobs are added together; one Minijob beside a main insured job stays separate, every further one is added to the main job ([§ 8(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). A Minijobber is in pension insurance unless they apply in writing or electronically to be released ([§ 6(1b) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__6.html)); the employer's 15% stays. The flat tax is an option: the employer may tax by the ELStAM instead. The 2% flat tax is collected by the Minijob-Zentrale (Deutsche Rentenversicherung Knappschaft-Bahn-See, [§ 40a(6) EStG](https://www.gesetze-im-internet.de/estg/__40a.html)); 20% and 25% go on the wage tax return. Exactly EUR 603 is a Minijob (\"nicht übersteigt\"); EUR 603.01 is in the transition band.",
+      "after": "**Minijob rules.** The limit is on regular monthly pay; an unforeseeable overrun in not more than two calendar months within the twelve months ending with the pay period, each by up to the limit itself, does not end the Minijob ([§ 8(1b) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). Several Minijobs are added together; one Minijob beside a main insured job stays separate, every further one is added to the main job ([§ 8(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). A Minijobber is in pension insurance unless they apply in writing or electronically to be released ([§ 6(1b) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__6.html)); the employer's 15% stays. The flat tax is an option: the employer may tax by the ELStAM instead. The 2% flat tax is collected by the Minijob-Zentrale (Deutsche Rentenversicherung Knappschaft-Bahn-See, [§ 40a(6) EStG](https://www.gesetze-im-internet.de/estg/__40a.html)); 20% and 25% go on the wage tax return. Exactly EUR 603 is a Minijob (\"nicht übersteigt\"); EUR 603.01 is in the transition band. If aggregation shows that the minor-employment conditions fail, insurance begins on the day the competent insurance decision is notified under § 8(2) SGB IV, unless the employer intentionally or grossly negligently failed to investigate the facts needed to assess insurance status. This is the specific aggregation rule, not a universal bar on retroactive insurance."
+    },
+    {
+      "finding": "R67",
+      "before": "| Health and care ceiling (BBG KV/PV) | EUR 69,750 a year; EUR 5,812.50 a month | 2026 | SVBezGrV 2026 § 2(2) (special JAEG of § 6(7) SGB V); [§ 55(2) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html) |",
+      "after": "| Health and care ceiling (BBG KV/PV) | EUR 69,750 a year; EUR 5,812.50 a month | 2026 | SVBezGrV 2026 § 2(2) (special JAEG of § 6(7) SGB V); [§ 55(2) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html); [BMG actual 2026 contribution-ceiling guidance](https://www.bundesgesundheitsministerium.de/beitraege/seite) expressly states these amounts; the special-JAEG reference alone is not treated as the whole 2026 contribution-ceiling proof |"
+    },
+    {
+      "finding": "R68 mirror",
+      "before": "| Annual report for 2026 | first payroll run of 2027, at the latest 15 February 2027 | [§ 10 DEÜV](https://www.gesetze-im-internet.de/de_v/__10.html) |",
+      "after": "| Annual report for 2026 | first payroll run of 2027, at the latest 15 February 2027 | [§ 10 DEÜV](https://www.gesetze-im-internet.de/de_v/__10.html) |\n| Special annual report to accident insurance for employees insured in 2026 | Ordinarily 16 February 2027; on insolvency, definitive business closure or end of all employment, next payroll and at latest six weeks. The statutory agricultural-BG exception applies only where the work value is not used for contribution calculation | [§ 28a(2a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28a.html) |"
+    },
+    {
+      "finding": "R70",
+      "before": "**Sick pay and the maternity top-up.** Continued pay for up to six weeks per incapacity, once the job has lasted four weeks without a break; the same illness again gives a new six weeks only after six months free of it, or twelve months after the first incapacity from it began ([§ 3 EntgFG](https://www.gesetze-im-internet.de/entgfg/__3.html)), at the pay for regular working time ([§ 4 EntgFG](https://www.gesetze-im-internet.de/entgfg/__4.html)). During the protection periods and the day of birth the employer pays the difference between EUR 13 and the average net pay per calendar day ([§ 20(1) MuSchG](https://www.gesetze-im-internet.de/muschg_2018/__20.html)); U2 refunds it ([§ 1(2) AAG](https://www.gesetze-im-internet.de/aufag/__1.html)).",
+      "after": "**Sick pay and the maternity top-up.** Continued pay for up to six weeks per incapacity due to sickness without employee fault, once the job has lasted four weeks without a break; the same illness again gives a new six weeks only after six months free of it, or twelve months after the first incapacity from it began ([§ 3 EntgFG](https://www.gesetze-im-internet.de/entgfg/__3.html)), at the pay for regular working time ([§ 4 EntgFG](https://www.gesetze-im-internet.de/entgfg/__4.html)). During the protection periods and the day of birth the employer pays the difference between EUR 13 and the average net pay per calendar day ([§ 20(1) MuSchG](https://www.gesetze-im-internet.de/muschg_2018/__20.html)); U2 refunds it ([§ 1(2) AAG](https://www.gesetze-im-internet.de/aufag/__1.html)). Under § 4(1a) EntgFG, additional overtime pay is excluded, as are expense reimbursements contingent on actual expenses that do not arise during incapacity. For performance-related remuneration, use the average earnings achievable during the employee's applicable regular working time."
+    },
+    {
+      "finding": "actual selected sources",
+      "before": "| Federal Health Ministry, contributions page (average additional rate 2.9%, ceilings) | https://www.bundesgesundheitsministerium.de/beitraege | 2026-10-24 |",
+      "after": "| Federal Health Ministry, contributions page (average additional rate 2.9%, ceilings) | https://www.bundesgesundheitsministerium.de/beitraege | 2026-10-24 |\n| Selected operative recovery, U1, surcharge, internship, aggregation, sickness and report exceptions; actual BMG 2026 rate and ceiling (administrative guidance), read 29 October 2026 | https://www.gesetze-im-internet.de/sgb_4/__28g.html ; https://www.gesetze-im-internet.de/aufag/__7.html ; https://www.bundesgesundheitsministerium.de/beitraege/seite | 2026-10-29 |"
+    }
+  ]
+}

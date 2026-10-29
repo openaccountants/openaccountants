@@ -1,0 +1,35 @@
+{
+  "all_actual_origin_count": 459,
+  "mismatches": 0,
+  "source_refs": {
+    "pre-refresh-original.md": {
+      "ref": "aec314e7^",
+      "repo": ".claude/worktrees/europe-germany",
+      "sha256": "d069f8300d310f37cda939738cd639ed56e8dbca8bda9b9e55765f9cc746029b"
+    },
+    "reviewed-restoration.md": {
+      "ref": "427f3162",
+      "repo": "/Users/michaelcutajar/Downloads/oa-f1-wt/wt-rev-903",
+      "sha256": "a8d6d3b98a310e3aa94c7e4a9e84d31488048387eb940a1cdc1bfbaa3b702517"
+    }
+  },
+  "semantic_spots_actually_read": [
+    133,
+    129,
+    130,
+    132,
+    64,
+    340,
+    2,
+    112,
+    18,
+    10,
+    140,
+    35,
+    49,
+    34,
+    289,
+    253
+  ],
+  "scope": "Both retained historical full bodies independently matched to actual Git object in its real repository, every old LF identity checked; named semantic spots read against full current Guide. Not a new legal review of all old words."
+}

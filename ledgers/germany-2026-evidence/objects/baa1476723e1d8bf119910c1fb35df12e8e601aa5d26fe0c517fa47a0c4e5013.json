@@ -1,0 +1,50 @@
+{
+  "leaving-germany-exit-tax": {
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/leaving-germany-exit-tax.md",
+    "Guide_sha256": "af2fa313362b1a41d77c68ca1454e8fdb87290b6c96ccabc533ac154d2b4689d",
+    "bytes": 26518,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R11-R12-writer-successor-2026-10-29/ledgers/leaving-germany-exit-tax.md",
+    "ledger_sha256": "e2c6e7382ebe53e66822c927f2c85ea1d7a88fda49e3780bae701e76b042a2be",
+    "current_rows": 114,
+    "prior_current_rows": 112,
+    "old_topics": 112,
+    "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/leaving-germany-exit-tax.md",
+    "prior_ledger_sha256": "1cf8d1b6a38a752e6cbb9457020c8bd8dc1b75fbc8cef4c3d64322fb9ff3ddac"
+  },
+  "de-trade-tax": {
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-trade-tax.md",
+    "Guide_sha256": "41138a1e3f25dd1bbcd831ffa2110a80edf06d021505c5ae84794380ef07e953",
+    "bytes": 42917,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R11-R12-writer-successor-2026-10-29/ledgers/de-trade-tax.md",
+    "ledger_sha256": "7e2c5b77e2bd393690fe4ac3c1bdfdeb0585bcd238adc51c2b357ce071bcabc0",
+    "current_rows": 104,
+    "prior_current_rows": 102,
+    "old_topics": 120,
+    "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R09-corporate-rounding-writer-successor-2026-10-29/ledgers/de-trade-tax.md",
+    "prior_ledger_sha256": "ff116f30defd925575a8561955441923343237649757c4ad4a35f8b602cc4834"
+  },
+  "de-corporate-tax": {
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-corporate-tax.md",
+    "Guide_sha256": "926723924c9092e0ab651796b78a84164ee10a5ea92015fa1c5a98afeebf4378",
+    "bytes": 42561,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R11-R12-writer-successor-2026-10-29/ledgers/de-corporate-tax.md",
+    "ledger_sha256": "f87125b4aed3972529c99ea72b0f2a1c09c9917db830b2c60b56dae0e2fb5859",
+    "current_rows": 233,
+    "prior_current_rows": 232,
+    "old_topics": 228,
+    "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R09-corporate-rounding-writer-successor-2026-10-29/ledgers/de-corporate-tax.md",
+    "prior_ledger_sha256": "c7018e24f13c32de67faa572f922b9e6304a693154a1c7b1d31de597549569b5"
+  },
+  "de-einkommensteuer-freelancer": {
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-einkommensteuer-freelancer.md",
+    "Guide_sha256": "424a96380e879606f6e7b35211b32c99290361c805ad19c7b6c24babd84a9d19",
+    "bytes": 40915,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R11-R12-writer-successor-2026-10-29/ledgers/de-einkommensteuer-freelancer.md",
+    "ledger_sha256": "313a3e33037fcad6822dbf5df4b6f4071efe07a88b47dc89622bfe25bdcc0f1d",
+    "current_rows": 137,
+    "prior_current_rows": 137,
+    "old_topics": 146,
+    "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/ledgers/de-einkommensteuer-freelancer.md",
+    "prior_ledger_sha256": "c0b11fa391cc52c9ea7eb9271437a4fb8d89018be447870ad6c2e3403bc47287"
+  }
+}

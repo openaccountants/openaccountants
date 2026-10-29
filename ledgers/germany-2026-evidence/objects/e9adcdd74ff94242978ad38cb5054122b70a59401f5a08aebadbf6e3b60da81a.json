@@ -1,0 +1,71 @@
+{
+  "code": "DE",
+  "name": "Germany",
+  "writer": "Claude",
+  "main": {
+    "code": "DE",
+    "name": "Germany",
+    "region": "europe",
+    "owner": "michael",
+    "dir": "skills/international/germany",
+    "skills": 31,
+    "reviewed": 0,
+    "stale": 0,
+    "present": [
+      "IT-IND",
+      "IT-CORP",
+      "VAT",
+      "SC",
+      "PR",
+      "TP",
+      "XB"
+    ],
+    "missing": [],
+    "not_applicable": {},
+    "partial": {},
+    "has_readme": true,
+    "complete": true
+  },
+  "issue": {
+    "closedAt": "2026-10-23T09:04:06Z",
+    "labels": [
+      {
+        "id": "LA_kwDOR-KM1s8AAAAC-qtGYA",
+        "name": "coverage",
+        "description": "Pack completeness work toward GOAL.md",
+        "color": "0E8A16"
+      },
+      {
+        "id": "LA_kwDOR-KM1s8AAAAC-qtWlg",
+        "name": "owner:michael",
+        "description": "Michael Cutajar owns this",
+        "color": "047857"
+      }
+    ],
+    "number": 388,
+    "state": "CLOSED",
+    "title": "[DE] Complete the pack",
+    "url": "https://github.com/openaccountants/openaccountants/issues/388"
+  },
+  "country_pr": null,
+  "closeout_state": "RESTORATION MERGED / PACK EVIDENCE RECONCILIATION",
+  "next": "Preserve merged restoration#903and recorded independentreview;reconcilefullcountryreviewchain/remainingordinarycoverage rather than inferfinalityfrommergedPR.",
+  "restoration_review_evidence": {
+    "number": 903,
+    "url": "https://github.com/openaccountants/openaccountants/pull/903",
+    "state": "MERGED",
+    "head": "2e232d255055a9c5d25176b15126dfff69af4c5c",
+    "merged_at": "2026-10-27T16:42:54Z",
+    "merge_commit": {
+      "oid": "08ed44c5ae12909de8ddea8bcdd6207b699b3032"
+    },
+    "independent_comment_urls": [
+      "https://github.com/openaccountants/openaccountants/pull/903#issuecomment-6447804028"
+    ],
+    "recorded_review_heads": [
+      "2e232d255055a9c5d25176b15126dfff69af4c5c"
+    ],
+    "review_head_matches_final_head": true
+  },
+  "evidence_reconciliation_note": "Older-wave restoration merged with independentreviewcomment at recordedhead. This is scoped no-loss/source evidence,notproofallwhole-countryordinarycoverage."
+}

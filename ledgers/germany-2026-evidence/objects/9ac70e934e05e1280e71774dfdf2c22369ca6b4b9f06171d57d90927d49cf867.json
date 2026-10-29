@@ -1,0 +1,50 @@
+[
+  {
+    "finding": "version",
+    "before": "version: 1.1",
+    "after": "version: 1.2",
+    "before_native_LF": 4
+  },
+  {
+    "finding": "R44",
+    "before": "| Employees who are assessed: side income is deducted again if NOT MORE than | EUR 410 | EUR 410 | § 46(3) EStG |",
+    "after": "| Assessed employees: eligible non-withheld income ceiling before the actual § 46(3) exclusions/reductions below; not an unconditional full deduction | EUR 410 | EUR 410 | § 46(3) EStG |",
+    "before_native_LF": 60
+  },
+  {
+    "finding": "R45",
+    "before": "| Inherited coins | \"Check\" as a whole: § 23(1) s. 3 names only the single successor (Einzelrechtsnachfolger, a gift), not an heir. Refer | § 23(1) s. 3 EStG |",
+    "after": "| Inherited coins | Ordinary simple inheritance: actual 2025 ELSTER help expressly attributes the predecessor's acquisition to the successor, including inheritance and gifts. Selected 2026 unchanged-law/admin-method continuation under § 23(1) sentence 3, § 23(3) and BMF paragraph 75: obtain predecessor acquisition date/cost and ownership records; test the actual predecessor acquisition rather than restarting at death or assuming a market-value step-up. Separate estate division, consideration-paid heir-share acquisition, disputed history and inheritance-tax questions require their own facts/method. | Actual 2025 help; current § 23 and paragraph 75, not a claim to have read a 2026 form |",
+    "before_native_LF": 182
+  },
+  {
+    "finding": "R45",
+    "before": "| Spouses assessed jointly | Each spouse's own sales and services are tested against the limits; the allowed official sources for this skill do not print that sentence. \"Check\" | § 23(3) s. 5; § 22 Nr. 3 EStG |",
+    "after": "| Spouses assessed jointly | Actual 2025 ELSTER help expressly gives the EUR 1,000 private-sales and EUR 256 service thresholds to each person. For the 2026 unchanged-statute/admin-method continuation, apply each person's own income and limit separately; do not pool a joint EUR 2,000 or EUR 512 allowance. Two spouses each with EUR 900 private-sales gains or EUR 200 service income are separately below their respective limits; one person's EUR 1,800 gains or EUR 400 service income is not sheltered by pooling. | Current § 23(3) sentence 5 and § 22 no. 3; actual 2025 help, not a 2026 form read |",
+    "before_native_LF": 188
+  },
+  {
+    "finding": "R44",
+    "before": "- **Who must file.** A person with no wages must file if total income is above the basic allowance (twice that for spouses assessed jointly) ([§ 56 EStDV](https://www.gesetze-im-internet.de/estdv_1955/__56.html)). A return is also compulsory if a remaining loss deduction was formally determined at the end of the previous year, for example a private-sales loss carried forward (§ 56 sentence 2 EStDV). An employee must be assessed if untaxed side income, such as taxable crypto gains or staking income, is more than the § 46(2) no. 1 EStG amount in the figures table; for an employee who is assessed, such income is deducted again if it is not more than that amount in total, and above it a regulation softens the step up to full taxation (§ 46(3) and (5), [§ 46 EStG](https://www.gesetze-im-internet.de/estg/__46.html)).",
+    "after": "- **Who must file.** A person with no wages must file if total income is above the basic allowance (twice that for spouses assessed jointly) ([§ 56 EStDV](https://www.gesetze-im-internet.de/estdv_1955/__56.html)). A return is also compulsory if a remaining loss deduction was formally determined at the end of the previous year, for example a private-sales loss carried forward (§ 56 sentence 2 EStDV). An employee must be assessed if untaxed side income, such as taxable crypto gains or staking income, is more than the § 46(2) no. 1 EStG amount in the figures table; for an employee assessed under § 46(2), § 46(3) deducts only eligible non-withheld taxable income totalling not more than EUR 410, excluding income subjected to the tariff under § 32d(6). Reduce that deduction by the statutory excess Altersentlastungsbetrag over the § 24a percentage of wages excluding § 19(2) pension receipts, and by the § 13(3) amount. Stipulated eligible income of EUR 400 with a EUR 100 statutory reduction gives EUR 300 deduction; with neither reduction it gives EUR 400. Above EUR 410, apply the separately gated § 70 EStDV hardship route/qualified freelancer companion rather than promising a full deduction (§ 46(3) and (5), [§ 46 EStG](https://www.gesetze-im-internet.de/estg/__46.html)).",
+    "before_native_LF": 231
+  },
+  {
+    "finding": "R46",
+    "before": "- **Gains below the limits and losses.** Declare losses from private sales so they can be carried; whether gains below the limits must be entered is set by the form instructions for each year (\"check\" on the current form).",
+    "after": "- **Gains below the limits and losses: actual 2025 form answer.** ELSTER's 2025 Anlage SO help expressly says service income below EUR 256 and total private-sales gains below EUR 1,000 need not be entered in that form; exactly EUR 256 or EUR 1,000 is outside those non-entry statements. It asks for losses from the respective activities/private sales within scope to be entered. These are actual 2025 instructions, not evidence of the future 2026 form layout. For 2026 use the unchanged-law tax thresholds and actual released form instructions for entry/layout; this dated non-entry statement does not cancel an overall filing duty, other-income reporting or § 153 correction duty.",
+    "before_native_LF": 233
+  },
+  {
+    "finding": "R44-R46 intake",
+    "before": "- [ ] Filing duty and deadline checked; late-filing surcharge considered; earlier years checked for § 153 AO corrections.",
+    "after": "- [ ] Filing duty and deadline checked; late-filing surcharge considered; earlier years checked for § 153 AO corrections.\n- [ ] Employee § 46(3) exclusions/reductions established; each spouse's income/ownership recorded separately; simple inheritance uses actual predecessor dates/costs and any distinct paid estate transaction is classified separately. Actual form year is recorded, rather than relabelling 2025 help as 2026.",
+    "before_native_LF": 255
+  },
+  {
+    "finding": "R44-R46 sources",
+    "before": "This skill is general information, not tax advice. Have a Steuerberater check a return before it is filed.",
+    "after": "- Additional selected source scopes actually read on 29 October 2026: current EStG §§ 46(3)/(5),23(1)/(3),22 no. 3 and BMF paragraph 75; [ELSTER 2025 income-tax help, Anlage SO](https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025), exact service/private-sales inheritance/per-person/non-entry/loss clauses. The labelled 2026 continuation above uses unchanged current law, not a claimed read of a future 2026 form.\n\nThis skill is general information, not tax advice. Have a Steuerberater check a return before it is filed.",
+    "before_native_LF": 262
+  }
+]

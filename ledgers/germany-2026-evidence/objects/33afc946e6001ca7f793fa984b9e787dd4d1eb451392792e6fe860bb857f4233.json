@@ -1,0 +1,3521 @@
+[
+  {
+    "native_LF": 1,
+    "section": "metadata/title",
+    "wording": "---",
+    "classification": "preserved_metadata",
+    "anchors": [],
+    "disposition": "Existing identity/protected trust metadata; version/date record actual writer changes, not independent attestation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 2,
+    "section": "metadata/title",
+    "wording": "name: de-rental-income",
+    "classification": "preserved_metadata",
+    "anchors": [],
+    "disposition": "Existing identity/protected trust metadata; version/date record actual writer changes, not independent attestation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 3,
+    "section": "metadata/title",
+    "wording": "description: \"German income from letting property held privately (Einkünfte aus Vermietung und Verpachtung, § 21 EStG), tax year 2026. Covers what counts as rent and Werbungskosten (§ 9 EStG), building depreciation at 2%, 2.5% or 3% (§ 7(4)), the 5% declining-balance AfA for new housing (§ 7(5a)) and § 7b special depreciation for new rental flats, maintenance versus acquisition-related production cost (the 15% three-year rule) and § 82b EStDV spreading, cheap lets to relatives (the 50% and 66% rules), holiday and short-term lets and the intention to make a surplus, losses, the ten-year rule on a sale (§ 23), Anlage V and deadlines. Trigger on: Mieteinnahmen, Vermietung, Anlage V, AfA Gebäude, Werbungskosten Vermietung, anschaffungsnahe Herstellungskosten, verbilligte Vermietung, Ferienwohnung, Spekulationsfrist, rental income Germany. Out of scope: property in a business or a trade in property (de-trade-tax), the tariff (de-einkommensteuer-freelancer), non-resident landlords (de-non-resident-tax), sales beyond the ten-year test (de-capital-gains), VAT returns (germany-vat-return).\"",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R01",
+      "R04",
+      "R07",
+      "R08",
+      "R11",
+      "R14",
+      "R18",
+      "R20",
+      "R22",
+      "R23",
+      "R24",
+      "R42",
+      "R57",
+      "R59",
+      "R62",
+      "R68",
+      "R70",
+      "R73",
+      "R74",
+      "R95",
+      "R96"
+    ],
+    "disposition": "Scoped summary of the bound methods and explicit sibling exclusions.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 4,
+    "section": "metadata/title",
+    "wording": "version: 1.6",
+    "classification": "preserved_metadata",
+    "anchors": [],
+    "disposition": "Existing identity/protected trust metadata; version/date record actual writer changes, not independent attestation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 5,
+    "section": "metadata/title",
+    "wording": "jurisdiction: DE",
+    "classification": "preserved_metadata",
+    "anchors": [],
+    "disposition": "Existing identity/protected trust metadata; version/date record actual writer changes, not independent attestation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 6,
+    "section": "metadata/title",
+    "wording": "tax_year: 2026",
+    "classification": "preserved_metadata",
+    "anchors": [],
+    "disposition": "Existing identity/protected trust metadata; version/date record actual writer changes, not independent attestation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 7,
+    "section": "metadata/title",
+    "wording": "last_updated: 2026-10-29",
+    "classification": "preserved_metadata",
+    "anchors": [],
+    "disposition": "Existing identity/protected trust metadata; version/date record actual writer changes, not independent attestation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 8,
+    "section": "metadata/title",
+    "wording": "authored_by: Michael Cutajar and the OpenAccountants team",
+    "classification": "preserved_metadata",
+    "anchors": [],
+    "disposition": "Existing identity/protected trust metadata; version/date record actual writer changes, not independent attestation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 9,
+    "section": "metadata/title",
+    "wording": "review_status: pending_review",
+    "classification": "preserved_metadata",
+    "anchors": [],
+    "disposition": "Existing identity/protected trust metadata; version/date record actual writer changes, not independent attestation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 10,
+    "section": "metadata/title",
+    "wording": "trust_label: Built by Michael Cutajar and the OpenAccountants team",
+    "classification": "preserved_metadata",
+    "anchors": [],
+    "disposition": "Existing identity/protected trust metadata; version/date record actual writer changes, not independent attestation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 11,
+    "section": "metadata/title",
+    "wording": "depends_on:",
+    "classification": "preserved_metadata",
+    "anchors": [],
+    "disposition": "Existing identity/protected trust metadata; version/date record actual writer changes, not independent attestation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 12,
+    "section": "metadata/title",
+    "wording": "  - de-self-employed-income-tax",
+    "classification": "preserved_metadata",
+    "anchors": [],
+    "disposition": "Existing identity/protected trust metadata; version/date record actual writer changes, not independent attestation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 13,
+    "section": "metadata/title",
+    "wording": "category: international",
+    "classification": "preserved_metadata",
+    "anchors": [],
+    "disposition": "Existing identity/protected trust metadata; version/date record actual writer changes, not independent attestation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 14,
+    "section": "metadata/title",
+    "wording": "tier: 2",
+    "classification": "preserved_metadata",
+    "anchors": [],
+    "disposition": "Existing identity/protected trust metadata; version/date record actual writer changes, not independent attestation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 15,
+    "section": "metadata/title",
+    "wording": "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+    "classification": "preserved_metadata",
+    "anchors": [],
+    "disposition": "Existing identity/protected trust metadata; version/date record actual writer changes, not independent attestation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 16,
+    "section": "metadata/title",
+    "wording": "---",
+    "classification": "preserved_metadata",
+    "anchors": [],
+    "disposition": "Existing identity/protected trust metadata; version/date record actual writer changes, not independent attestation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 18,
+    "section": "metadata/title",
+    "wording": "# Rental income tax in Germany 2026 (Vermietung und Verpachtung)",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 20,
+    "section": "metadata/title",
+    "wording": "> **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any specific landlord's facts. A Steuerberater should confirm results before a return is filed.",
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "anchors": [],
+    "disposition": "Protected original reference/CTA language, retained exactly; no new tax or attestation claim.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 22,
+    "section": " Who this applies to",
+    "wording": "## Who this applies to",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 24,
+    "section": " Who this applies to",
+    "wording": "- **Individuals letting land, buildings, flats or rooms held as private assets.** This is income from letting and leasing under [§ 21(1) EStG](https://www.gesetze-im-internet.de/estg/__21.html): immovable property (land, buildings, parts of buildings, rights such as a heritable building right), bundles of movable assets, the temporary grant of rights, and the sale of rent claims.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R01",
+      "R02"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 25,
+    "section": " Who this applies to",
+    "wording": "- **Not here: letting that belongs to another kind of income** (§ 21(3) EStG). Property held in a business, a trading partnership, or a trade in property (gewerblicher Grundstückshandel) is taxed as business income: refer, and see `de-trade-tax`. Hotel-like services can also make a let a trade.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R03",
+      "R121"
+    ],
+    "disposition": "Bound category rule and source-backed hotel-style referral; not a categorical trade determination.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 26,
+    "section": " Who this applies to",
+    "wording": "- **Residents.** A person with a home or habitual abode in Germany is taxed on worldwide income. This skill computes the German rental result. Rent from property abroad (Anlage AUS, treaty exemption): refer.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R111",
+      "R112"
+    ],
+    "disposition": "bound residence/scope; foreign-treaty computation is explicit referral",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 27,
+    "section": " Who this applies to",
+    "wording": "- **Non-residents with German property** are taxed on German rent under [§ 49(1) no. 6 EStG](https://www.gesetze-im-internet.de/estg/__49.html). Compute the rental result with this skill, then go to `de-non-resident-tax` for liability, the tariff and filing.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R108"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 28,
+    "section": " Who this applies to",
+    "wording": "- **Year.** Tax year 2026, the calendar year. The consolidated EStG as read applies \"erstmals für den Veranlagungszeitraum 2026\" ([§ 52(1) EStG](https://www.gesetze-im-internet.de/estg/__52.html)). For 2025 returns still being filed, see \"Deadlines and filing\".",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R83",
+      "R114"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 29,
+    "section": " Who this applies to",
+    "wording": "- **Measure.** Receipts less Werbungskosten, on a cash basis. The result joins the client's other income at the normal tariff with solidarity surcharge and church tax: use `de-einkommensteuer-freelancer` for the tariff.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R112",
+      "R113",
+      "R25",
+      "R26"
+    ],
+    "disposition": "bound measure; full tariff belongs to sibling",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 30,
+    "section": " Who this applies to",
+    "wording": "- **Refer, not covered here**: co-ownership determinations (separate and uniform assessment), heirs' communities, funds, usufruct (Nießbrauch), heritable building rights (Erbbaurecht) as a party, §§ 7h and 7i, and §§ 15a and 15b loss limits.",
+    "classification": "scope_routing",
+    "anchors": [],
+    "disposition": "Declared excluded/specialist scope; not a substantive outcome.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 31,
+    "section": " Who this applies to",
+    "wording": "- **Related skills.** `de-capital-gains` (sales), `germany-vat-return` and `de-vat-annual-and-special-schemes` (VAT), `de-trade-tax` (a letting that is a trade), `de-estimated-tax` (prepayments), `de-employee-income-tax` (employees who must file), `de-non-resident-tax` (non-resident landlords).",
+    "classification": "scope_routing",
+    "anchors": [],
+    "disposition": "Sibling routing links; existing paths are preserved.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 33,
+    "section": " Rates, bands and thresholds",
+    "wording": "## Rates, bands and thresholds",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 35,
+    "section": " Rates, bands and thresholds",
+    "wording": "All figures apply to tax year 2026 and were the same in 2025 unless marked.",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R83",
+      "R04",
+      "R11",
+      "R14",
+      "R18",
+      "R20",
+      "R22",
+      "R24",
+      "R28",
+      "R119",
+      "R85",
+      "R86",
+      "R87"
+    ],
+    "disposition": "Year framing; dated2025/2026commuting distinction is explicit in192.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 37,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Item | Rate or amount | Year | Source URL |",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Table header or separator; no independent operative amount.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 38,
+    "section": " Rates, bands and thresholds",
+    "wording": "|---|---|---|---|",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Table header or separator; no independent operative amount.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 39,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Straight-line AfA, building completed after 31 Dec 2022 | 3% a year | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(4) no. 2(a)) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R04"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 40,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Straight-line AfA, completed 1 Jan 1925 to 31 Dec 2022 | 2% a year | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(4) no. 2(b)) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R04"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 41,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Straight-line AfA, completed before 1 Jan 1925 | 2.5% a year | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(4) no. 2(c)) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R04"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 42,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Declining-balance AfA for housing, construction start or purchase contract 1 Oct 2023 to 30 Sep 2029 | 5% of remaining value | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(5a)) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R07",
+      "R08"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 43,
+    "section": " Rates, bands and thresholds",
+    "wording": "| § 7b special depreciation for new rental flats, year of purchase or completion and three more | up to 5% a year of the base | 2026 | https://www.gesetze-im-internet.de/estg/__7b.html |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R11"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 44,
+    "section": " Rates, bands and thresholds",
+    "wording": "| § 7b cost cliff / base cap, application 1 Jan 2023 to 30 Sep 2029 | EUR 5,200 / EUR 4,000 per m² of living space | 2026 | https://www.gesetze-im-internet.de/estg/__7b.html (§ 7b(2), (3)) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R12",
+      "R14"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 45,
+    "section": " Rates, bands and thresholds",
+    "wording": "| § 7b cost cliff / base cap, application 1 Sep 2018 to 31 Dec 2021 | EUR 3,000 / EUR 2,000 per m²; last year of claim 2026 | 2026 | https://www.gesetze-im-internet.de/estg/__52.html (§ 52(15a)) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R12",
+      "R14",
+      "R84"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 46,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Works within three years of purchase capitalised if, without VAT, they exceed | 15% of the building's acquisition cost | 2026 | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(1) no. 1a) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R18",
+      "R19"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 47,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Spreading of larger maintenance, mainly residential building | 2 to 5 years | 2026 | https://www.gesetze-im-internet.de/estdv_1955/__82b.html |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R20"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 48,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Low-value movable item (furniture) deducted at once | cost not more than EUR 800 net | 2026 | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(2)), via § 9(1) no. 7 |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R22",
+      "R23",
+      "R39"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 49,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Cheap let of a home: costs split if rent is | under 50% of local market rent | 2026 | https://www.gesetze-im-internet.de/estg/__21.html (§ 21(2)) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R24"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 50,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Cheap let of a permanent home: fully paid if rent is | at least 66% of local rent | 2026 | https://www.gesetze-im-internet.de/estg/__21.html (§ 21(2)) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R24"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 51,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Car travel to the property (actual cost or flat rate) | 30 cents per km driven | 2026 | https://www.gesetze-im-internet.de/brkg_2005/__5.html (§ 5(2) BRKG) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R29",
+      "R30",
+      "R31"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 52,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Commuting allowance (only if the property were a first place of activity) | EUR 0.38 per full km one way | 2026 | https://www.gesetze-im-internet.de/estg/__9.html (§ 9(1) no. 4) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R28",
+      "R30"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 53,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Private sale of land: taxable period | not more than 10 years between purchase and sale | 2026 | https://www.gesetze-im-internet.de/estg/__23.html (§ 23(1) no. 1) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R70"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 54,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Private sale gains tax-free if total for the year is | less than EUR 1,000 | 2026 | https://www.gesetze-im-internet.de/estg/__23.html (§ 23(3)) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R72"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 55,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Loss carry-back | EUR 1,000,000 (EUR 2,000,000 joint) | 2026 | https://www.gesetze-im-internet.de/estg/__10d.html (§ 10d(1)) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R73"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 56,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Loss carry-forward above EUR 1 million (EUR 2 million joint) of total income | 70% of the excess for 2024 to 2027; 60% from 2028 | 2026 | https://www.gesetze-im-internet.de/estg/__10d.html; https://www.recht.bund.de/bgbl/1/2024/108/regelungstext.pdf (Art. 6, in force 1 Jan 2028) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R74",
+      "R85",
+      "R86",
+      "R87"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 57,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Employee must file if untaxed side income is more than | EUR 410 | 2026 | https://www.gesetze-im-internet.de/estg/__46.html (§ 46(2) no. 1) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R76"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 58,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Prepayments set only if at least | EUR 400 a year and EUR 100 per date | 2026 | https://www.gesetze-im-internet.de/estg/__37.html (§ 37(5)) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R80"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 59,
+    "section": " Rates, bands and thresholds",
+    "wording": "| VAT on a let where the landlord opts / on short-term guest lets | 19% / 7% | 2026 | https://www.gesetze-im-internet.de/ustg_1980/__12.html (§ 12(1), (2) no. 11) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R103",
+      "R104",
+      "R106",
+      "R107"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 60,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Late-filing surcharge per started month | 0.25% of net tax due, at least EUR 25; cap EUR 25,000 | 2026 | https://www.gesetze-im-internet.de/ao_1977/__152.html (§ 152(5), (10)) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R98",
+      "R99",
+      "R100"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 61,
+    "section": " Rates, bands and thresholds",
+    "wording": "| Interest on back tax or refunds | 0.15% a month (1.8% a year), from 15 months after the year | 2026 | https://www.gesetze-im-internet.de/ao_1977/__233a.html; https://www.gesetze-im-internet.de/ao_1977/__238.html (§ 238(1a)) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R101",
+      "R102"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 63,
+    "section": " The taxable base",
+    "wording": "## The taxable base",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 65,
+    "section": " The taxable base",
+    "wording": "### Income and timing",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 67,
+    "section": " The taxable base",
+    "wording": "- **Income**: rent; Umlagen (running costs paid by the tenant); settlement back-payments; a deposit kept and set off against rent, running costs or damage; payments for antenna, wind or Wi-Fi sites; a furniture surcharge; VAT received on an opted let; grants for rent (2025 instructions, lines 13 to 31). A refundable deposit is not income while held.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R49",
+      "R50",
+      "R01",
+      "R02",
+      "R25",
+      "R126",
+      "R127",
+      "R131"
+    ],
+    "disposition": "Bound actual receipts/deposit treatment; furniture consideration is an application of paid rental-use income, not an imputed charge.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 68,
+    "section": " The taxable base",
+    "wording": "- **Umlagen count twice**: income when received; the running costs paid are Werbungskosten.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R49",
+      "R51"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 69,
+    "section": " The taxable base",
+    "wording": "- **Cash basis** ([§ 11 EStG](https://www.gesetze-im-internet.de/estg/__11.html)): income when received, costs when paid. Regularly recurring items paid shortly before or after the turn of the year belong to the year they relate to. Rent received in advance for a let of more than five years **may** be spread over the period; costs paid in advance for more than five years **must** be spread. A market-level loan discount (Disagio) is deductible when paid.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R25",
+      "R26"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 71,
+    "section": " The taxable base",
+    "wording": "### Werbungskosten ([§ 9 EStG](https://www.gesetze-im-internet.de/estg/__9.html))",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 73,
+    "section": " The taxable base",
+    "wording": "Costs \"zur Erwerbung, Sicherung und Erhaltung der Einnahmen\", deductible in the year paid, only for a property that earns or is intended to earn rent. Never for a flat the client lives in or lets free.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R27",
+      "R34"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 75,
+    "section": " The taxable base",
+    "wording": "- **Deductible**: loan interest so far as linked to the property, and the cost of raising the loan (§ 9(1) no. 1); property tax, other public charges and building insurance (no. 2); AfA and § 7b (no. 7); liability insurance; running costs, including those passed on; Hausgeld **except** the maintenance-reserve part, which is deductible only when the owners' association spends it; management; the tax adviser's rental share; tenancy legal fees; advertising and the broker for finding a tenant; rent-account fees; maintenance.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R27",
+      "R23",
+      "R34",
+      "R40",
+      "R41",
+      "R51",
+      "R52"
+    ],
+    "disposition": "Bound income-related cost categories. Incidental management/legal/advertising/account fees are writer applications of9(1), not assertions of automatic deductibility without the income connection.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 76,
+    "section": " The taxable base",
+    "wording": "- **Travel**: actual cost, or 30 cents per km **driven** by car (§ 9(1) no. 4a and § 9(3) EStG with [§ 5(2) BRKG](https://www.gesetze-im-internet.de/brkg_2005/__5.html)). If the property were a first place of activity, the commuting allowance of EUR 0.38 per full km one way applies instead. When a let property is one is not settled on the pages read: ask the accountant.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R28",
+      "R29",
+      "R30",
+      "R31"
+    ],
+    "disposition": "bound for numeric rule; actual first-place determination explicitly unconfirmed",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 77,
+    "section": " The taxable base",
+    "wording": "- **Not deductible**: loan principal (Tilgung); transfer tax, notary and broker on the purchase (they go into acquisition cost); reserve payments until spent; own-use or free flats; the unpaid part of a cheap let; fines (§ 9(5) with § 4(5) no. 8 EStG); income tax, solidarity surcharge and church tax.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R27",
+      "R32",
+      "R34",
+      "R41",
+      "R115",
+      "R116",
+      "R19"
+    ],
+    "disposition": "Bound applications of interest-versus-acquisition/private-cost rules. Principal is distinguished from interest; exceptional economic-benefit disgorgement is not decided by the generic fine exclusion. Church-tax special-expense treatment is outside this rental-cost list.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 78,
+    "section": " The taxable base",
+    "wording": "- **§ 35c energy credit**: only for a building used **only** for the owner's own housing ([§ 35c(2) EStG](https://www.gesetze-im-internet.de/estg/__35c.html)), and not for costs deducted as Werbungskosten (§ 35c(3)). For a let property, energy works are maintenance or production cost under the rules below, never the § 35c credit.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R82"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 80,
+    "section": " The taxable base",
+    "wording": "### Building depreciation (AfA, [§ 7 EStG](https://www.gesetze-im-internet.de/estg/__7.html))",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 82,
+    "section": " The taxable base",
+    "wording": "- **Completion date decides the straight-line rate**, not the purchase date: 3% after 2022, 2% for 1925 to 2022, 2.5% before 1925 (§ 7(4) sentence 1 no. 2). This covers every privately held building, housing or not, including flats and separate parts of a building (§ 7(5b)). The separate 3% rate in no. 1 is for business-asset buildings not used for housing: never use it for a private shop or office completed before 2023.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R04",
+      "R05"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 83,
+    "section": " The taxable base",
+    "wording": "- **Shorter actual life.** If the actual life is under 33 years (after 2022), 50 years (1925 to 2022) or 40 years (before 1925), that life may be used (§ 7(4) sentence 2). The 2025 instructions call this an exceptional case that must be proved to the tax office. Refer.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R04",
+      "R37"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 84,
+    "section": " The taxable base",
+    "wording": "- **Older staged rates.** A building built or bought in its completion year under an application or contract before 1 January 2006 (housing; earlier dates for the other historic branches) may be on the staged rates of § 7(5). Ask what past returns used; refer any change.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R06"
+    ],
+    "disposition": "bound afterDE-L22 restoration",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 85,
+    "section": " The taxable base",
+    "wording": "- **Acquired free of charge** (gift or inheritance): continue the previous owner's rate (2025 instructions).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R38"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 86,
+    "section": " The taxable base",
+    "wording": "- **Declining-balance AfA, § 7(5a).** Instead of 3% straight-line, 5% of the remaining value (\"Restwert\") each year, so far as the building is used for **housing**, if all hold: it is in Germany, the EU or the EEA; the client built it, or bought it by the end of the completion year; and construction started (the date on the construction-start notice required by state law; where none is required, the client declares a voluntary notice) or the binding purchase contract was made after 30 September 2023 and before 1 October 2029. No extraordinary write-down while it runs. Switching to straight-line is allowed, then on the remaining value and remaining life.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R07",
+      "R08"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 87,
+    "section": " The taxable base",
+    "wording": "- **Base.** Price plus side costs (transfer tax, notary, land register, the buyer's broker) under [§ 255 HGB](https://www.gesetze-im-internet.de/hgb/__255.html), less the land share. Land is never depreciated. A maintenance reserve bought with a flat is excluded (2025 instructions). Grants reduce the base (line 89). A former own home let for the first time needs a first computation.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R32",
+      "R35",
+      "R36",
+      "R50"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 88,
+    "section": " The taxable base",
+    "wording": "- **Price split.** Split by the ratio of market values, not by the residual-value method (2025 instructions). The [BMF purchase-price split tool](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Berechnung-Aufteilung-Grundstueckskaufpreis.html) makes or tests a split. A contract split at arm's length or an expert valuation may also be used; the tax office may challenge a high building share.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R123",
+      "R124",
+      "R122",
+      "R125",
+      "R135"
+    ],
+    "disposition": "Bound market-value/contract/expert principles plus explicitly identified official work-aid web observation; no2026work-aid execution.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 89,
+    "section": " The taxable base",
+    "wording": "- **First-year month cut.** Cut one twelfth for each full month before the month of acquisition or completion (§ 7(1) sentence 4). Statute applies it to § 7(5a) (sentence 5). For straight-line AfA, the BMF letter of 21 May 2025 on § 7b says so too: \"bei Fertigstellung nach dem 31. Januar wäre eine zeitanteilige Kürzung der linearen AfA im Jahr der Fertigstellung erforderlich\" (example 7). Only the old staged § 7(5) rates take a full first year.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R09",
+      "R08",
+      "R06",
+      "R93"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 90,
+    "section": " The taxable base",
+    "wording": "- **For example**: completed February 2026, bought with benefit and burden from 1 April 2026, building share EUR 300,000. Declining-balance: 300,000 × 5% × 9/12 = EUR 11,250 in 2026; 2027: (300,000 − 11,250) × 5% = EUR 14,437.50. Straight-line instead: 300,000 × 3% × 9/12 = EUR 6,750. The binding contract was made in March 2026. Total acquisition cost is EUR 400,000, including land of EUR 100,000. From April, rent is EUR 1,200 plus Umlagen of EUR 250 a month: income is 9 × (1,200 + 250) = EUR 13,050. Interest of EUR 9,000, running costs of EUR 2,250 and management of EUR 600 total EUR 11,850. The declining-balance loss is 13,050 − 11,850 − 11,250 = EUR 10,050; with straight-line AfA the loss is EUR 5,550.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R04",
+      "R07",
+      "R08",
+      "R09"
+    ],
+    "disposition": "arithmetic controls; selected clauses bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 91,
+    "section": " The taxable base",
+    "wording": "- **End**: until fully written off, or the year of sale.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R132",
+      "R27",
+      "R131"
+    ],
+    "disposition": "Bound ordinary cessation inference from own depreciable asset/rental use; exact month-of-sale AfA expressly remains unconfirmed.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 93,
+    "section": " The taxable base",
+    "wording": "### § 7b special depreciation for new rental flats ([§ 7b EStG](https://www.gesetze-im-internet.de/estg/__7b.html))",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 95,
+    "section": " The taxable base",
+    "wording": "Up to 5% of the base in the year of acquisition or production and the three following years, on top of normal AfA under § 7(4) or § 7(5a). All must hold:",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R11"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 97,
+    "section": " The taxable base",
+    "wording": "- The building work creates **new** flats that did not exist before, under a building application or notice in the **old window** (after 31 August 2018 and before 1 January 2022) or the **new window** (after 31 December 2022 and before 1 October 2029). Nothing applied for in 2022 qualifies.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R12"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 98,
+    "section": " The taxable base",
+    "wording": "- Cost per m² of living space **not more than** the cliff (EUR 3,000 old window, EUR 5,200 new window), or no § 7b at all. The base is capped per m² (EUR 2,000 old, EUR 4,000 new). Normal AfA still runs on full cost (BMF letter of 21 May 2025, para. 65).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R14",
+      "R91"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 99,
+    "section": " The taxable base",
+    "wording": "- In the EU, or a state giving the required administrative help. If bought, bought by the end of the completion year; only the buyer claims.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R11"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 100,
+    "section": " The taxable base",
+    "wording": "- Let **for housing, against payment**, in that year and the **nine** following years. Short-term guest accommodation is not housing (§ 7b(2) no. 3).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R13"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 101,
+    "section": " The taxable base",
+    "wording": "- New window only: the building meets \"Effizienzhaus 40\" with sustainability class, proven by the \"Qualitätssiegel Nachhaltiges Gebäude\".",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R12"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 102,
+    "section": " The taxable base",
+    "wording": "- **Old window ends with 2026**: claims are allowed \"letztmalig für den Veranlagungszeitraum 2026\" ([§ 52(15a)](https://www.gesetze-im-internet.de/estg/__52.html)), even if four years have not run. A buyer who started in 2024 claims 2024 to 2026 and loses the fourth year (BMF letter, para. 16, example 1). The new window has no such end.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R84",
+      "R88",
+      "R89"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 103,
+    "section": " The taxable base",
+    "wording": "- **Claw-back** of all past claims if the flat is not let for housing for ten years, is sold in that time with the gain untaxed, or later costs push it over the cliff within three years after the year of acquisition or production (§ 7b(4)).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R15"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 104,
+    "section": " The taxable base",
+    "wording": "- **After four years**, AfA runs on the remaining value ([§ 7a(9) EStG](https://www.gesetze-im-internet.de/estg/__7a.html); BMF letter, para. 66). Refer the computation.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R17",
+      "R92"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 105,
+    "section": " The taxable base",
+    "wording": "- **De minimis aid**: for the new window, only claimants with farming, business or self-employed income must meet the EU de minimis rules (§ 7b(5)); the 2025 instructions treat the old window as de minimis aid and ask for the other aid received.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R16",
+      "R84",
+      "R94"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 106,
+    "section": " The taxable base",
+    "wording": "- **For example**: an 80 m² flat applied for in 2024, completed and bought January 2026, Effizienzhaus 40 with the seal, let long-term, cost of the flat without land EUR 400,000 (land never enters § 7b: BMF letter, para. 43). 400,000 / 80 = EUR 5,000 per m², not over 5,200: qualifies. Base cap 80 × 4,000 = EUR 320,000; § 7b 320,000 × 5% = EUR 16,000 a year for 2026 to 2029, plus straight-line 400,000 × 3% = EUR 12,000 (January, no cut). At EUR 420,000 (EUR 5,250 per m²) there is no § 7b.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R04",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R90",
+      "R91"
+    ],
+    "disposition": "bound plus arithmetic controls",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 108,
+    "section": " The taxable base",
+    "wording": "Source for the letter: [BMF letter of 21 May 2025 on § 7b EStG](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-05-21-anwendungsschreiben-7b-estg-neu.pdf?__blob=publicationFile&v=5).",
+    "classification": "source_pointer",
+    "anchors": [
+      "R88",
+      "R89",
+      "R90",
+      "R91",
+      "R92",
+      "R93"
+    ],
+    "disposition": "Pointer to the actual bound official letter/handbook quotations.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 110,
+    "section": " The taxable base",
+    "wording": "### Maintenance or production cost",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 112,
+    "section": " The taxable base",
+    "wording": "- **Maintenance** (Erhaltungsaufwand) keeps or restores the condition: repainting, like-for-like heating, roof repair, equivalent windows. Deductible when paid, or spread under § 82b EStDV.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R128",
+      "R33",
+      "R18",
+      "R19",
+      "R26",
+      "R20"
+    ],
+    "disposition": "Bound maintenance principle and stated examples; fact-sensitive production/acquisition/15percent gates are retained in adjacent paragraphs.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 113,
+    "section": " The taxable base",
+    "wording": "- **Production cost** creates something new, extends, or substantially improves beyond the original condition ([§ 255(2) HGB](https://www.gesetze-im-internet.de/hgb/__255.html)): balcony, attic conversion, lift, lifting the standard (judged mainly by heating, sanitary and electrical installations and windows). The 2025 instructions: works that bring the flat or building \"auf einen höheren Standard\" are production or acquisition cost. Capitalised and depreciated with the building.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R33",
+      "R41"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 114,
+    "section": " The taxable base",
+    "wording": "- **Bought in a poor state**: making non-working essential parts work again (defective heating, water or fire damage), and change-of-use works before first use, are **acquisition** cost (2025 instructions).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R32",
+      "R41"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 115,
+    "section": " The taxable base",
+    "wording": "- **The 15% rule, acquisition-related production cost** ([§ 6(1) no. 1a EStG](https://www.gesetze-im-internet.de/estg/__6.html), applied to Werbungskosten by § 9(5) sentence 2). Repair and modernisation works carried out **within three years** of acquisition become production cost if their total cost **without VAT** \"15 Prozent der Anschaffungskosten des Gebäudes übersteigen\". It is a cliff: over it, **all** of them are capitalised. The three years are added up, so a later job can pull earlier deductions back in. Exactly 15% is not over. Not counted: extensions, and maintenance that usually recurs every year, such as servicing.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R18",
+      "R19"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 116,
+    "section": " The taxable base",
+    "wording": "- **For example**: building completed 1970, bought May 2025, building share EUR 200,000, so the limit is EUR 30,000. Works without VAT: EUR 12,000 in 2025 (deducted on the 2025 return) and EUR 19,000 in 2026. Total EUR 31,000 is over EUR 30,000: all of it is production cost, including 2025, and is depreciated at 2% with the building: EUR 31,000 × 2% = EUR 620 for a full year. Refer the correction of the 2025 assessment. With 2026 works of EUR 18,000 the total is exactly EUR 30,000: not over, judge each job on its own.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R18",
+      "R19",
+      "R04"
+    ],
+    "disposition": "arithmetic checked; assessment correction is explicit referral",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 117,
+    "section": " The taxable base",
+    "wording": "- **Spreading, [§ 82b EStDV](https://www.gesetze-im-internet.de/estdv_1955/__82b.html).** Larger maintenance may be spread evenly over two to five years if, **when paid**, the building is not a business asset and is **mainly** housing: housing floor area more than half the usable area; garages count as housing up to one car per flat. On sale, transfer into a business or end of letting, the rest is deducted that year. Co-owners must use the same period. Works in redevelopment areas and on listed buildings (§§ 11a, 11b EStG, §§ 7h, 7i): refer.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R20",
+      "R21"
+    ],
+    "disposition": "bound; special scheme computation is referral",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 119,
+    "section": " The taxable base",
+    "wording": "### Furniture",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 121,
+    "section": " The taxable base",
+    "wording": "A furniture surcharge is rent. Furniture and fitted kitchens are depreciated over their useful life (§ 7(1) EStG; lines 42 to 45). An item usable on its own costing not more than EUR 800 net may be deducted at once ([§ 6(2) EStG](https://www.gesetze-im-internet.de/estg/__6.html) through § 9(1) no. 7). For the cheap-let comparison, use a furniture adjustment already provided by the local rent index without adding it twice. Otherwise add a surcharge only if it can be established from the local market for furnished lets; if no market value can be determined, no surcharge is added. Never derive it from monthly furniture AfA or a standard investment return ([BFH, 6 February 2018, IX R 14/17, paras. 18 to 20](https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201810105?type=1646225765)).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R01",
+      "R02",
+      "R10",
+      "R22",
+      "R23",
+      "R39",
+      "R129"
+    ],
+    "disposition": "Bound actual rental consideration/furniture depreciation/800gate and newly sourced market-comparison method.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 123,
+    "section": " The taxable base",
+    "wording": "### Cheap lets: the 50% and 66% rules ([§ 21(2) EStG](https://www.gesetze-im-internet.de/estg/__21.html))",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 125,
+    "section": " The taxable base",
+    "wording": "Applies to letting a **home for living in**, to any tenant; it mostly bites on relatives.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R24"
+    ],
+    "disposition": "bound for statutory home scope; frequency observation is editorial",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 127,
+    "section": " The taxable base",
+    "wording": "| Rent including Umlagen, as share of local market rent including passable costs | Result |",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Table header or separator; no independent operative amount.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 128,
+    "section": " The taxable base",
+    "wording": "|---|---|",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Table header or separator; no independent operative amount.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 129,
+    "section": " The taxable base",
+    "wording": "| Less than 50% | Split into a paid and an unpaid part; costs deductible only for the paid part |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R24",
+      "R42"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 130,
+    "section": " The taxable base",
+    "wording": "| At least 50% and less than 66% | Surplus forecast: positive, all costs deductible; negative, split (2025 instructions; BMF letter of 8 October 2004, para. 13 as applied from 2021) |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R42"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 131,
+    "section": " The taxable base",
+    "wording": "| At least 66%, permanent home let | Deemed fully paid; all costs deductible |",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R24",
+      "R42"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 133,
+    "section": " The taxable base",
+    "wording": "- **Compare** rent paid including Umlagen with market rent including passable running costs, never cold rent with cold rent (2025 instructions).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R42"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 134,
+    "section": " The taxable base",
+    "wording": "- **The split**: costs in the ratio of agreed rent to market rent. On the 2025 form enter all costs in full (lines 33 to 84) and the cut percentage in line 87, or an amount in line 88 if only part of the property is let cheaply. The tax office makes the cut.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R34",
+      "R42"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 135,
+    "section": " The taxable base",
+    "wording": "- **The forecast (Totalüberschussprognose)** for the 50% to 66% band, per the BMF letter of 8 October 2004 (BStBl I p. 933), paras. 13 and 34, as printed with its notes in the [official income tax handbook 2024, Anhang 30 II](https://esth.bundesfinanzministerium.de/esth/2024/C-Anhaenge/Anhang-30/II/anhang-30-II.html). The notes state that from 2021 para. 13 applies with 50% and 66% in place of 56% and 75%.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R57"
+    ],
+    "disposition": "bound with explicit2021 note",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 136,
+    "section": " The taxable base",
+    "wording": "  - **Period**: 30 years, counted for the cheap let from the date of its tenancy contract (para. 34, example 2). Earlier lets of the same flat and other flats are left out.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R65",
+      "R66",
+      "R67"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 137,
+    "section": " The taxable base",
+    "wording": "  - **AfA in the forecast**: the straight-line § 7(4) rate, not § 7(5a) declining balance or § 7b special depreciation actually claimed (para. 34).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R67"
+    ],
+    "disposition": "bound; modern5a exclusion is the disclosed application of the7(4) forecast method",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 138,
+    "section": " The taxable base",
+    "wording": "  - **Estimate**: average income and costs of the last five years, unless the client shows objective changes already set in motion; future maintenance may be estimated along § 28 of the Second Computation Ordinance (II. BV).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R68"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 139,
+    "section": " The taxable base",
+    "wording": "  - **Safety margins**: add 10% to total estimated income and deduct 10% from total estimated costs.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R68"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 140,
+    "section": " The taxable base",
+    "wording": "  - **Leave out** private sale gains, taxable under § 23 or not.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R66"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 141,
+    "section": " The taxable base",
+    "wording": "  - **Result**: a positive total gives full deduction of all costs; a negative total splits the let as under 50%.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R57"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 142,
+    "section": " The taxable base",
+    "wording": "- **Market rent**: the local rent index (Mietspiegel); failing that, equally valid: a sworn expert's reasoned report, a rent database, or rents for at least three comparable flats (§ 558a(2) nos. 2 to 4 BGB, per the 2025 instructions).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R43"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 143,
+    "section": " The taxable base",
+    "wording": "- **Outside § 21(2)**: commercial space; the 66% sentence covers only permanent home lets. A cheap let of an office to a relative: refer.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R24"
+    ],
+    "disposition": "bound statutory home scope; commercial case referred",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 145,
+    "section": " The taxable base",
+    "wording": "### Vacancy, holiday flats and the intention to make a surplus (Liebhaberei)",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 147,
+    "section": " The taxable base",
+    "wording": "Source for this part: BMF letter of 8 October 2004 (BStBl I p. 933), as printed with its notes in the [official income tax handbook 2024, Anhang 30 II](https://esth.bundesfinanzministerium.de/esth/2024/C-Anhaenge/Anhang-30/II/anhang-30-II.html) (\"para.\" below).",
+    "classification": "source_pointer",
+    "anchors": [
+      "R53",
+      "R57",
+      "R59",
+      "R66",
+      "R68"
+    ],
+    "disposition": "Pointer to the actual bound official letter/handbook quotations.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 149,
+    "section": " The taxable base",
+    "wording": "- **Long-term home lets.** A let of a flat meant to last is taken to aim at a surplus without a test (para. 1). That presumption does not cover commercial premises or undeveloped land (note to para. 1): there the forecast below decides.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R53"
+    ],
+    "disposition": "bound to retained official handbook",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 150,
+    "section": " The taxable base",
+    "wording": "- **Signs against the intention** (paras. 5 to 7): a let planned only for a time (a fixed-term lease with stated own use or sale, short financing, an early search for a buyer), or a sale or own use within about five years of acquisition with only losses in that time. The client can rebut by showing the decision to sell or move in came later (para. 9).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R54",
+      "R55"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 151,
+    "section": " The taxable base",
+    "wording": "- **Vacancy.** Costs are deductible before the first let and during a gap once the decision to let for good is made and shown by serious, continuing efforts (agent, advertisements, a realistic rent) (paras. 25 to 27). The client carries the proof. Without such efforts, or if the flat cannot be let in the foreseeable future, the intention lapses and costs stop (notes to para. 26).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R63",
+      "R64"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 152,
+    "section": " The taxable base",
+    "wording": "- **Forms.** A holiday flat, or any object let **short-term** (for example through an online platform), needs **Anlage V-FeWo** as well as Anlage V (2025 instructions). Each V-FeWo form covers up to four flats.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R47"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 153,
+    "section": " The taxable base",
+    "wording": "- **Day counts** where the owner used it, left it free to others, or could use it at any time: days of own use (including free use by others; not short stays for servicing, cleaning, renovation or checks), letting and vacancy. Own use possible at any time: split vacancy by the ratio of own use to letting. Own use limited to set times (for example let through an agent): only the reserved time is own use, and vacancy counts as letting. Never used by the owner and let only to changing guests: give the letting days usual in that place, from tourist office or municipal records.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R48"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 154,
+    "section": " The taxable base",
+    "wording": "- **Holiday flat let only to changing guests** and otherwise held ready for them: the intention is taken as given without a test, whether the client lets it directly or through an agent (para. 16). Exception: if letting days fall short of the usual local letting time by **at least 25%**, with no obstacle to letting, a forecast is needed (note to para. 16).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R59"
+    ],
+    "disposition": "bound with qualification",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 155,
+    "section": " The taxable base",
+    "wording": "- **Proving there is no own use** (para. 17): the client shows one of: letting handed to an unrelated agent with own use excluded by contract for the whole year; the flat is in or right next to the client's own home, which meets the client's needs; the client has more than one holiday flat in the place and uses only one; or letting days at least equal the local seasonal average. Otherwise the client must prove it, and with too few letting days show stronger advertising (para. 18). Short stays for servicing, key handover, cleaning, checks, repairs or owners' meetings are not own use; longer stays or stays with family need explaining (para. 19).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R60",
+      "R61"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 156,
+    "section": " The taxable base",
+    "wording": "- **Holiday flat let part of the time and used by the owner** (or reserved for own use, or lent free): the intention is always tested by forecast (para. 21), per flat, not per let (para. 34). Only costs for let days and vacancy allocated to letting go in (para. 39); mixed costs (interest, property charges, maintenance, AfA, insurance) are split by days of each use (para. 40). Vacancy: if own use is limited to set times, only those count as own use; if possible at any time, split vacancy by the ratio of own use to letting; if the extent of own use cannot be established, vacancy is split 50/50 (paras. 22, 23). The forecast then follows para. 34: 30 years, § 7(4) AfA, five-year average, 10% margins (see the cheap-let forecast above).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R62",
+      "R66",
+      "R67",
+      "R68",
+      "R69"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 157,
+    "section": " The taxable base",
+    "wording": "- **Without the intention** the losses are not recognised (Liebhaberei). If the lack of intention only shows later, final assessments can be changed under § 173(1) no. 1 AO (para. 10).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R56",
+      "R53"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 158,
+    "section": " The taxable base",
+    "wording": "- **Trade and VAT.** Hotel-like services may make it a trade (`de-trade-tax`). Short-term guest accommodation is not VAT-exempt ([§ 4 no. 12 sentence 2 UStG](https://www.gesetze-im-internet.de/ustg_1980/__4.html)); where VAT is due it is at 7% ([§ 12(2) no. 11 UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html)), except for services not directly part of the letting, such as breakfast, even if included in the price. Whether VAT is due turns on the small-business rule: `germany-vat-return`. No § 7b for short-term lets.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R121",
+      "R103",
+      "R106",
+      "R107",
+      "R13"
+    ],
+    "disposition": "Bound demarcation/referral, accommodationVAT and7bexclusion; no general VAT filing computation claimed.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 160,
+    "section": " The taxable base",
+    "wording": "### VAT option on commercial lets",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 162,
+    "section": " The taxable base",
+    "wording": "Letting land and buildings is VAT-exempt (§ 4 no. 12 sentence 1 letter a UStG), except short-term guest rooms, parking spaces, short-term campsites and operating fixtures. The landlord may opt to tax only on a let **to another business for its business** ([§ 9(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__9.html)), and for land only so far as the tenant uses it **only** for sales that allow input VAT deduction (§ 9(2)). Never to a private tenant. Some buildings begun before 1 June 1984 or 11 November 1993 escape that test ([§ 27(2) UStG](https://www.gesetze-im-internet.de/ustg_1980/__27.html)). If opted: VAT at 19% of net rent, input VAT recoverable; on the income tax return VAT received is income (line 27) and input VAT a cost (lines 80 to 82).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R103",
+      "R104",
+      "R105",
+      "R106",
+      "R49",
+      "R51",
+      "R117",
+      "R118"
+    ],
+    "disposition": "bound as basic option/input method subject to actual15 invoice/use/exclusion gates; full VAT computation is sibling scope",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 164,
+    "section": " The taxable base",
+    "wording": "### Losses ([§ 10d EStG](https://www.gesetze-im-internet.de/estg/__10d.html))",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 166,
+    "section": " The taxable base",
+    "wording": "- **Same year**: against other rental income, then other kinds of income (§ 2(3) EStG).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R112",
+      "R113"
+    ],
+    "disposition": "bound aggregate rental loss offset",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 167,
+    "section": " The taxable base",
+    "wording": "- **Carry-back**: up to EUR 1,000,000 (EUR 2,000,000 joint) to the year before, then the second year before; the client may waive it only in full.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R73"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 168,
+    "section": " The taxable base",
+    "wording": "- **Carry-forward**: no time limit; unlimited up to total income of EUR 1 million (EUR 2 million joint), then 70% of the excess for 2024 to 2027 and 60% from 2028. Article 6 of BGBl. 2024 I No. 108 changes \"70 Prozent\" back to \"60 Prozent\" from 1 January 2028; the consolidated text on gesetze-im-internet.de does not show that yet. Fixed by a separate notice (§ 10d(4)).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R74",
+      "R75",
+      "R85",
+      "R86",
+      "R87"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 169,
+    "section": " The taxable base",
+    "wording": "- **Loss schemes**: §§ 15a and 15b apply by analogy (§ 21(1) sentence 2). Refer.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R02"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 171,
+    "section": " The taxable base",
+    "wording": "### Sale within ten years ([§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html), the Spekulationsfrist)",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 173,
+    "section": " The taxable base",
+    "wording": "- A sale of land or a flat is a private sale if acquisition and sale are **not more than** ten years apart. Buildings put up or extended in the period are included.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R70"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 174,
+    "section": " The taxable base",
+    "wording": "- **Own-use exception**: used **only** for own housing between acquisition (or completion) and sale, **or** for own housing in the year of sale and the two years before. A flat let up to the sale meets neither.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R70"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 175,
+    "section": " The taxable base",
+    "wording": "- **Depreciation comes back**: the cost is **reduced** by AfA, increased depreciation and special depreciation claimed (§ 23(3) sentence 4). Gain = price less reduced cost less selling costs.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R72"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 176,
+    "section": " The taxable base",
+    "wording": "- **Exemption limit**: tax-free only if all private-sale gains in the year total **less than** EUR 1,000; at EUR 1,000 or more, all is taxed. Losses offset only private-sale gains of the same year, and carry back or forward only against such gains (§ 23(3) sentences 7 and 8).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R72"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 177,
+    "section": " The taxable base",
+    "wording": "- **Gift**: a single successor who receives it free takes over the donor's acquisition date (§ 23(1) sentence 3). Heirs' communities are not named there: ask the accountant.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R71"
+    ],
+    "disposition": "bound; heirs-community computation is explicit referral",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 178,
+    "section": " The taxable base",
+    "wording": "- **Also**: deduct any rest of a § 82b spread in the year of sale, and check the § 7b claw-back.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R21",
+      "R15"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 179,
+    "section": " The taxable base",
+    "wording": "- **For example**: bought March 2019 for EUR 300,000 (building EUR 240,000 at 2% = EUR 4,800 a year); sold at the end of February 2026 for EUR 340,000; selling costs EUR 10,000. AfA claimed: 2019, ten months = EUR 4,000; 2020 to 2025, 6 × 4,800 = EUR 28,800; 2026, two months to the sale, assumed EUR 800. Total EUR 33,600. Reduced cost EUR 266,400; gain 340,000 − 266,400 − 10,000 = EUR 63,600, all taxed. Confirm the sale-year AfA with the accountant. More in `de-capital-gains`.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R70",
+      "R72",
+      "R04"
+    ],
+    "disposition": "arithmetic checked; sale-year AfA expressly stipulated/unconfirmed",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 181,
+    "section": " The taxable base",
+    "wording": "### Order of work",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 183,
+    "section": " The taxable base",
+    "wording": "Fix the building share before the three-year 15% test, which measures against it. Complete the costs before the cheap-let cut, which applies to their total. Then work out the surplus or loss per property, share it between co-owners, and apply the loss rules.",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R18",
+      "R19",
+      "R24",
+      "R42",
+      "R112",
+      "R113"
+    ],
+    "disposition": "Writer order of operations follows building-cost denominator and cost-apportionment bases; co-owner allocation is illustrative, determination outside scope.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 185,
+    "section": " The taxable base",
+    "wording": "**Defaults when a fact is missing.** Completion date, land share, market rent for a cheap let, or private versus business status unknown: stop and ask, because each changes the result. Unsure whether work is maintenance or production cost: treat it as production cost (capitalise) until resolved. Housing use unknown: ask, because § 7(5a), § 7b, § 21(2) and § 82b apply only to housing.",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R04",
+      "R07",
+      "R11",
+      "R18",
+      "R20",
+      "R24",
+      "R32",
+      "R33"
+    ],
+    "disposition": "Conservative temporary workflow pending actual missing facts, not a determination that unresolved works are legally production cost.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 187,
+    "section": " Deadlines and filing",
+    "wording": "## Deadlines and filing",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 189,
+    "section": " Deadlines and filing",
+    "wording": "- **Forms.** One Anlage V per built-on property, filed with the income tax return through ELSTER. Add Anlage V-FeWo for holiday or short-term lets, and Anlage V-Sonstige for shares in communities and funds, subletting, land without buildings and rights (2025 instructions).",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R120",
+      "R47"
+    ],
+    "disposition": "Actual official forms and their scoped uses; ELSTER route is the source medium, not an assertion of a universal electronic-filing obligation.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 190,
+    "section": " Deadlines and filing",
+    "wording": "- **Who must file.** A landlord who is assessed anyway files Anlage V with the return. An employee whose wage tax was withheld must file if untaxed side income, such as rent, is **more than** EUR 410 ([§ 46(2) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__46.html)); if assessed, side income of not more than EUR 410 in total is taken off again, phased out above (§ 46(3), (5)).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R76",
+      "R77"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 191,
+    "section": " Deadlines and filing",
+    "wording": "- **2026 return** ([§ 149 AO](https://www.gesetze-im-internet.de/ao_1977/__149.html)): without an adviser, seven months after the year: 31 July 2027 is a Saturday, so **Monday 2 August 2027** ([§ 108(3) AO](https://www.gesetze-im-internet.de/ao_1977/__108.html)). With an adviser, the last day of February of the second following year: **Tuesday 29 February 2028**. The tax office may call for an advised return earlier (§ 149(4)).",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R95",
+      "R96",
+      "R97"
+    ],
+    "disposition": "bound plus calendar computation",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 192,
+    "section": " Deadlines and filing",
+    "wording": "- **2025 returns being filed now.** Without an adviser: due Friday 31 July 2026, passed. With an adviser: the last day of February 2027 is a Sunday, so **Monday 1 March 2027**. The extended dates in Art. 97 § 36(3) EGAO cover only \"die Besteuerungszeiträume 2020 bis 2024\" ([EGAO](https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html)). The advised 2024 return was due 30 April 2026 under that transitional rule. Use the 2025 Anlage V. Rules are as for 2026, except the commuting allowance: if a first place of activity applies, the 2025 rate was EUR 0.30 per full one-way kilometre for the first 20 km and EUR 0.38 for each further kilometre (2025 instructions); from 2026 it is EUR 0.38 from the first kilometre. 2025 is the second-last year for the old § 7b window.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R95",
+      "R96",
+      "R97",
+      "R110",
+      "R84",
+      "R119",
+      "R28"
+    ],
+    "disposition": "Bound filing dates,2024transition and dated2025/2026commuting figures; property-specific first-place classification remains unconfirmed.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 193,
+    "section": " Deadlines and filing",
+    "wording": "- **Prepayments** ([§ 37 EStG](https://www.gesetze-im-internet.de/estg/__37.html)): 10 March, 10 June, 10 September, 10 December; set only if at least EUR 400 a year and EUR 100 per date. A building's rental loss reduces prepayments only for calendar years beginning **after** its acquisition or completion (§ 37(3) sentence 8); a building bought before the year it is completed counts from completion (sentence 9); the bar does not apply where § 7b is claimed (sentence 10). The same timing governs a wage tax allowance for an employee ([§ 39a(1) no. 5 EStG](https://www.gesetze-im-internet.de/estg/__39a.html)). For example, a landlord who bought a new flat in 2026 with a EUR 10,050 loss cannot cut her 2026 prepayments for it; she can from 2027, or at once if § 7b is claimed.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R78",
+      "R79",
+      "R80",
+      "R81"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 194,
+    "section": " Deadlines and filing",
+    "wording": "- **2026 forms.** The ELSTER 2026 instructions route returned no substantive content in the recorded 24 October 2026 check; this does not establish whether the instructions were published. Line numbers below come from the [2025 instructions](https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025). Confirm the relevant 2026 form before using these line numbers.",
+    "classification": "scope_limit",
+    "anchors": [],
+    "disposition": "Historical route observation and explicit2025line-map limitation. DE-L25 corrects unsupported publication-absence inference; exact prior observations and failures retained.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 196,
+    "section": " Deadlines and filing",
+    "wording": "**Anlage V line map (2025 form).** Bank-text keywords in brackets.",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R120"
+    ],
+    "disposition": "Dated2025form-table label; bank keywords are editorial, not official return labels.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 198,
+    "section": " Deadlines and filing",
+    "wording": "| Lines | Content |",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Table header or separator; no independent operative amount.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 199,
+    "section": " Deadlines and filing",
+    "wording": "|---|---|",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Table header or separator; no independent operative amount.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 200,
+    "section": " Deadlines and filing",
+    "wording": "| 6 to 12 | File number; purchase, completion, sale dates; use (holiday: V-FeWo); living space, own or free part |",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R133"
+    ],
+    "disposition": "Dated2025form fields6–12.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 201,
+    "section": " Deadlines and filing",
+    "wording": "| 13 to 19 | Rent without Umlagen: homes 13 to 15 (MIETE), other rooms 16 to 18, relatives 19 |",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R49"
+    ],
+    "disposition": "Dated2025form fields13–19; bank keywords editorial.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 202,
+    "section": " Deadlines and filing",
+    "wording": "| 20 to 24 | Umlagen (NEBENKOSTEN); 21 settlement (NACHZAHLUNG); 22 to 23 relatives |",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R49"
+    ],
+    "disposition": "Dated2025form fields20–24; bank keywords editorial.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 203,
+    "section": " Deadlines and filing",
+    "wording": "| 25 to 31 | Deposit kept (KAUTION) 25; antenna, wind and Wi-Fi sites 26; VAT received 27; grants 29 to 31 |",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R49",
+      "R50"
+    ],
+    "disposition": "Dated2025form fields25–31.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 204,
+    "section": " Deadlines and filing",
+    "wording": "| 32 | Total income |",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R44"
+    ],
+    "disposition": "Dated2025form totalincome32, official example.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 205,
+    "section": " Deadlines and filing",
+    "wording": "| 33 to 45 | Building AfA 33 to 35; § 7b 36 to 38; §§ 7h, 7i 39 to 41; furniture 42 to 45 |",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R35",
+      "R37",
+      "R94",
+      "R39",
+      "R134"
+    ],
+    "disposition": "Dated2025form depreciation33–45 headings;7h/7i calculations excluded.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 206,
+    "section": " Deadlines and filing",
+    "wording": "| 46 to 51 | Interest (DARLEHENSZINSEN) 46 to 48; loan costs 49 to 51 |",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R40"
+    ],
+    "disposition": "Dated2025form interest/financing46–51.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 207,
+    "section": " Deadlines and filing",
+    "wording": "| 55 to 72 | Maintenance (REPARATUR, HANDWERKER), including § 82b spreads |",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R41",
+      "R20",
+      "R21"
+    ],
+    "disposition": "Dated2025form maintenance55–72.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 208,
+    "section": " Deadlines and filing",
+    "wording": "| 73 to 78 | Running costs passed on 73 to 75 (GRUNDSTEUER, insurance, Hausgeld settlement); not passed on 76 to 78 (management, Hausgeld without reserve, KONTOFÜHRUNG) |",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R51",
+      "R52"
+    ],
+    "disposition": "Dated2025form passed/unpassed73–78; particular bank keyword mapping is editorial and distinguished in212.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 209,
+    "section": " Deadlines and filing",
+    "wording": "| 80 to 83 | Other costs (travel, adviser, tenant broker, low-value items, input VAT); 83 total |",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R51",
+      "R52",
+      "R39",
+      "R27"
+    ],
+    "disposition": "Dated2025form other-cost80–83; income-related examples subject to9(1), no automatic expense eligibility.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 210,
+    "section": " Deadlines and filing",
+    "wording": "| 85 to 89 | Result and sharing 85 to 86; cheap-let cut 87 to 88; acquisition grants 89 |",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R45",
+      "R46",
+      "R50",
+      "R52",
+      "R42"
+    ],
+    "disposition": "Dated2025form result/share/cut/grant fields85–89.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 212,
+    "section": " Deadlines and filing",
+    "wording": "The instructions name the content of lines 25, 26, 46 to 51, 55 to 72, the Hausgeld settlement (73 to 75) and, in the official example, account fees (76 to 78). Other keyword placements are this skill's reading of the headings and do not change the total in line 83. **Exclude**: principal (TILGUNG), own transfers, deposit refunds, reserve payments until spent, personal taxes. Transfer tax (GRUNDERWERBSTEUER) goes into acquisition cost.",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R40",
+      "R41",
+      "R50",
+      "R51",
+      "R52",
+      "R32",
+      "R27",
+      "R131"
+    ],
+    "disposition": "Explicit editorial keyword interpretation, with income/asset/trust exclusions. No official keyword list invented.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 214,
+    "section": " Penalties and interest",
+    "wording": "## Penalties and interest",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 216,
+    "section": " Penalties and interest",
+    "wording": "- **Late-filing surcharge** ([§ 152 AO](https://www.gesetze-im-internet.de/ao_1977/__152.html)). Compulsory if the return is not filed \"binnen 14 Monaten nach Ablauf des Kalenderjahrs\" (§ 152(2) no. 1), advised or not. For 2026 the 14 months end on 29 February 2028, the same day as the advised deadline, so for an advised return it bites from the day after that deadline. Also compulsory if a return the office called in early is not filed by the date set (no. 3). The 19-month period in no. 2 is only for farmers with a non-calendar financial year. Amount: 0.25% a month of the tax less prepayments and withheld tax, at least EUR 25 for each started month (§ 152(5)), rounded down to full euros and capped at EUR 25,000 (§ 152(10)). Not compulsory, though still possible at discretion, if the deadline was extended, the tax is nil or negative, or the tax does not exceed prepayments and withheld tax (§ 152(3)). For an unadvised 2025 return filed now the surcharge is discretionary until the 14 months run out at the end of February 2027.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R95",
+      "R96",
+      "R98",
+      "R99",
+      "R100"
+    ],
+    "disposition": "bound plus calendar computation",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 217,
+    "section": " Penalties and interest",
+    "wording": "- **Interest** ([§ 233a AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html)): back tax and refunds carry interest of 0.15% a month ([§ 238(1a) AO](https://www.gesetze-im-internet.de/ao_1977/__238.html)) starting 15 months after the end of the tax year, so from 1 April 2028 for 2026.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R101",
+      "R102"
+    ],
+    "disposition": "bound plus calendar computation",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 218,
+    "section": " Penalties and interest",
+    "wording": "- **§ 7b claw-back**: assessments are reopened even if final; the assessment period restarts at the end of the year of the triggering event, and § 233a(2a) AO does not apply (§ 7b(4)), so interest runs from the normal date.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R15"
+    ],
+    "disposition": "bound",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 219,
+    "section": " Penalties and interest",
+    "wording": "- **Under-declaration** (wrong deductions, unreported rent): refer for the appropriate return or assessment correction. Apply § 233a interest only where its conditions and statutory interest period are met. Deliberate false or incomplete tax facts that shorten tax can constitute tax offences under § 370 AO; refer.",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R101",
+      "R102",
+      "R130",
+      "R56"
+    ],
+    "disposition": "Scoped correction/criminal referral with actual interest-period qualification; does not select a complete procedural route.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 221,
+    "section": " Cross-border points",
+    "wording": "## Cross-border points",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 223,
+    "section": " Cross-border points",
+    "wording": "- **Non-resident landlords** with German property are taxed on the rent ([§ 49(1) no. 6 EStG](https://www.gesetze-im-internet.de/estg/__49.html)). They deduct only Werbungskosten linked to the German income ([§ 50(1) EStG](https://www.gesetze-im-internet.de/estg/__50.html)), and their tariff is applied with the basic allowance added back unless an option applies. Compute the rental result here; liability, the § 1(3) and § 1a options, and filing are in `de-non-resident-tax`.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R108",
+      "R109"
+    ],
+    "disposition": "bound; options and assessment procedure are explicit sibling handoff",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 224,
+    "section": " Cross-border points",
+    "wording": "- **German residents with property abroad**: report the rental income and determine the treatment from the actual treaty for the property country. Treaty exemption, credit, progression and Anlage AUS: refer.",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R111",
+      "R112",
+      "R120"
+    ],
+    "disposition": "Resident foreign-income/reporting scope and actual-treaty referral; no unsourced general treaty result selected.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 225,
+    "section": " Cross-border points",
+    "wording": "- **AfA for property elsewhere in the EU or EEA**: § 7(5a) and § 7b reach buildings in the EU or EEA (and for § 7b, states giving administrative help), which matters for a resident's foreign property only where Germany taxes it. Refer.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R07",
+      "R11"
+    ],
+    "disposition": "bound only with stated territorial/help gates; foreign-property taxability referred",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 226,
+    "section": " Cross-border points",
+    "wording": "- **Moving in or out during the year**: `de-partners-and-part-year`.",
+    "classification": "scope_routing",
+    "anchors": [],
+    "disposition": "Part-year routing to sibling.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 228,
+    "section": " Worked examples",
+    "wording": "## Worked examples",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 230,
+    "section": " Worked examples",
+    "wording": "Inputs are invented and labelled, except Example 2, which is the official example in the 2025 instructions. Each result is the rental surplus or loss before the tariff.",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Fixture provenance: invented first case, actual official2025second case, all before tariff.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 232,
+    "section": " Worked examples",
+    "wording": "### Example 1: a let flat bought in 2019, full year 2026",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 234,
+    "section": " Worked examples",
+    "wording": "A flat completed in 1995, bought in 2019, let all of 2026 at market rent. Building share of cost EUR 180,000, so straight-line AfA at 2% (§ 7(4) no. 2(b)) is EUR 3,600. Rent EUR 950 a month plus Umlagen EUR 180. Paid in 2026: interest EUR 4,200; running costs EUR 2,160 (all passed on); Hausgeld excluding the reserve EUR 540 (the reserve part of EUR 600 is left out); a repair EUR 1,500; account fees EUR 60; principal EUR 6,000 (not deductible). Six trips by car, 300 km driven in all, at 30 cents.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41",
+      "R32"
+    ],
+    "disposition": "Invented fixture inputs and bound legal parameters; all original executable expected outputs preserved and recomputed.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 236,
+    "section": " Worked examples",
+    "wording": "Income is (950 + 180) × 12 = EUR 13,560. Werbungskosten are 3,600 + 4,200 + 2,160 + 540 + 1,500 + 90 + 60 = EUR 12,150. The surplus of EUR 1,410 goes in line 85 and is taxed at the client's marginal rate.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R49",
+      "R51",
+      "R52"
+    ],
+    "disposition": "arithmetic checked; tariff sibling remains handoff",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 238,
+    "section": " Worked examples",
+    "wording": "```oa-check",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 239,
+    "section": " Worked examples",
+    "wording": "name: DE 2026 let flat, 2% AfA, surplus",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 240,
+    "section": " Worked examples",
+    "wording": "inputs:",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 241,
+    "section": " Worked examples",
+    "wording": "  monthly_rent: 950",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 242,
+    "section": " Worked examples",
+    "wording": "  monthly_umlagen: 180",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 243,
+    "section": " Worked examples",
+    "wording": "  building_cost: 180000",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 244,
+    "section": " Worked examples",
+    "wording": "  interest: 4200",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 245,
+    "section": " Worked examples",
+    "wording": "  running_costs: 2160",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 246,
+    "section": " Worked examples",
+    "wording": "  hausgeld_without_reserve: 540",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 247,
+    "section": " Worked examples",
+    "wording": "  repairs: 1500",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 248,
+    "section": " Worked examples",
+    "wording": "  km_driven: 300",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 249,
+    "section": " Worked examples",
+    "wording": "  account_fees: 60",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 250,
+    "section": " Worked examples",
+    "wording": "steps:",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 251,
+    "section": " Worked examples",
+    "wording": "  - income: (monthly_rent + monthly_umlagen) * 12",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 252,
+    "section": " Worked examples",
+    "wording": "  - afa: building_cost * 0.02",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 253,
+    "section": " Worked examples",
+    "wording": "  - travel: km_driven * 0.30",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 254,
+    "section": " Worked examples",
+    "wording": "  - costs: afa + interest + running_costs + hausgeld_without_reserve + repairs + travel + account_fees",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 255,
+    "section": " Worked examples",
+    "wording": "  - surplus: income - costs",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 256,
+    "section": " Worked examples",
+    "wording": "expected:",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 257,
+    "section": " Worked examples",
+    "wording": "  income: 13560",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 258,
+    "section": " Worked examples",
+    "wording": "  afa: 3600",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 259,
+    "section": " Worked examples",
+    "wording": "  travel: 90",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 260,
+    "section": " Worked examples",
+    "wording": "  costs: 12150",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 261,
+    "section": " Worked examples",
+    "wording": "  surplus: 1410",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 262,
+    "section": " Worked examples",
+    "wording": "```",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "disposition": "Original executable case1; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 264,
+    "section": " Worked examples",
+    "wording": "### Example 2: cheap let to parents, under 50% (official example, 2025 instructions)",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 266,
+    "section": " Worked examples",
+    "wording": "A married couple own a 60 m² flat and let it to the wife's parents for EUR 270 cold rent plus EUR 150 Umlagen a month. Local market rent is 60 m² × EUR 15 = EUR 900 plus EUR 150 passable costs = EUR 1,050. Costs: AfA EUR 3,000, running costs EUR 1,800, account fees EUR 120.",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R44",
+      "R45"
+    ],
+    "disposition": "bound official illustrative2025 inputs reused for2026 statutory test",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 268,
+    "section": " Worked examples",
+    "wording": "Rent paid including Umlagen is EUR 420, which is 40.00% of EUR 1,050: under 50%, so costs are split. The form shows income EUR 5,040 (line 32), costs in full EUR 4,920 (line 83), result before the cut EUR 120 (line 85), and the cut of 60.00% in line 87. After the cut only EUR 1,968 of costs is deductible, so the taxable surplus is EUR 3,072, EUR 1,536 for each spouse. Variants: rent of EUR 700 including Umlagen is 66.67%, fully paid; EUR 600 is 57.14%, in the forecast band: run the 30-year forecast under \"Cheap lets\".",
+    "classification": "rule_or_figure_or_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46",
+      "R57",
+      "R65",
+      "R66",
+      "R67",
+      "R68"
+    ],
+    "disposition": "Bound actual official2025example reused against unchanged2026cheap-let test; forecast method and arithmetic separately verified.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 270,
+    "section": " Worked examples",
+    "wording": "```oa-check",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 271,
+    "section": " Worked examples",
+    "wording": "name: DE 2026 cheap let to relatives at 40% of market rent",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 272,
+    "section": " Worked examples",
+    "wording": "inputs:",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 273,
+    "section": " Worked examples",
+    "wording": "  cold_rent: 270",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 274,
+    "section": " Worked examples",
+    "wording": "  umlagen: 150",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 275,
+    "section": " Worked examples",
+    "wording": "  market_cold_rent: 900",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 276,
+    "section": " Worked examples",
+    "wording": "  afa: 3000",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 277,
+    "section": " Worked examples",
+    "wording": "  running_costs: 1800",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 278,
+    "section": " Worked examples",
+    "wording": "  account_fees: 120",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 279,
+    "section": " Worked examples",
+    "wording": "steps:",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 280,
+    "section": " Worked examples",
+    "wording": "  - rent_paid: cold_rent + umlagen",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 281,
+    "section": " Worked examples",
+    "wording": "  - market_rent: market_cold_rent + umlagen",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 282,
+    "section": " Worked examples",
+    "wording": "  - paid_share: rent_paid / market_rent",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 283,
+    "section": " Worked examples",
+    "wording": "  - income: rent_paid * 12",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 284,
+    "section": " Worked examples",
+    "wording": "  - costs_in_full: afa + running_costs + account_fees",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 285,
+    "section": " Worked examples",
+    "wording": "  - line85_before_cut: income - costs_in_full",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 286,
+    "section": " Worked examples",
+    "wording": "  - cut_percent: (1 - paid_share) * 100",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 287,
+    "section": " Worked examples",
+    "wording": "  - deductible_costs: costs_in_full * paid_share",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 288,
+    "section": " Worked examples",
+    "wording": "  - surplus: income - deductible_costs",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 289,
+    "section": " Worked examples",
+    "wording": "  - per_spouse: surplus / 2",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 290,
+    "section": " Worked examples",
+    "wording": "expected:",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 291,
+    "section": " Worked examples",
+    "wording": "  paid_share: 0.40",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 292,
+    "section": " Worked examples",
+    "wording": "  income: 5040",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 293,
+    "section": " Worked examples",
+    "wording": "  costs_in_full: 4920",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 294,
+    "section": " Worked examples",
+    "wording": "  line85_before_cut: 120",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 295,
+    "section": " Worked examples",
+    "wording": "  cut_percent: 60",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 296,
+    "section": " Worked examples",
+    "wording": "  deductible_costs: 1968",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 297,
+    "section": " Worked examples",
+    "wording": "  surplus: 3072",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 298,
+    "section": " Worked examples",
+    "wording": "  per_spouse: 1536",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 299,
+    "section": " Worked examples",
+    "wording": "```",
+    "classification": "original_executable_fixture",
+    "anchors": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "disposition": "Original executable case2; exact block retained. Fixture inputs are not statutory thresholds; parameter rules and expected arithmetic independently checked.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 301,
+    "section": " Ask the client first",
+    "wording": "## Ask the client first",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 303,
+    "section": " Ask the client first",
+    "wording": "- When was the building completed, and when did you buy it (contract date, and the date benefit and burden passed)? Which AfA method and rate did past returns use? For a new flat: date of the building application, start of construction, living space in m², cost per m², energy standard.",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R04",
+      "R07",
+      "R11",
+      "R12",
+      "R14",
+      "R133"
+    ],
+    "disposition": "Decision-fact intake, no invented client facts.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 304,
+    "section": " Ask the client first",
+    "wording": "- Is the property held privately or in a business? What share of the floor area is housing? Is any unit let short-term or as a holiday flat, and is there any own use?",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R03",
+      "R07",
+      "R13",
+      "R20",
+      "R24",
+      "R47",
+      "R48",
+      "R62"
+    ],
+    "disposition": "Decision-fact intake, no invented client facts.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 305,
+    "section": " Ask the client first",
+    "wording": "- How was the price split between land and building, and who made the split?",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R32",
+      "R35",
+      "R122",
+      "R123"
+    ],
+    "disposition": "Decision-fact intake, no invented client facts.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 306,
+    "section": " Ask the client first",
+    "wording": "- What rent and Umlagen does each tenant pay, and what is the local market rent? Is any tenant a relative?",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R24",
+      "R42",
+      "R43",
+      "R58"
+    ],
+    "disposition": "Decision-fact intake, no invented client facts.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 307,
+    "section": " Ask the client first",
+    "wording": "- What works were done since the purchase, when, and at what cost without VAT?",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R18",
+      "R19",
+      "R33",
+      "R41"
+    ],
+    "disposition": "Decision-fact intake, no invented client facts.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 308,
+    "section": " Ask the client first",
+    "wording": "- Do you live in Germany? Any co-owners, loans, a sale made or planned, or wage tax withheld on a job?",
+    "classification": "rule_summary_or_method_or_intake",
+    "anchors": [
+      "R111",
+      "R108",
+      "R76",
+      "R120",
+      "R131"
+    ],
+    "disposition": "Decision-fact intake; co-owner/treaty/determination outcomes handed off.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 310,
+    "section": " Sources",
+    "wording": "## Sources",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 312,
+    "section": " Sources",
+    "wording": "| Source | URL | Read on |",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Table header or separator; no independent operative amount.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 313,
+    "section": " Sources",
+    "wording": "|---|---|---|",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Table header or separator; no independent operative amount.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 314,
+    "section": " Sources",
+    "wording": "| EStG § 21, income from letting; § 21(2) cheap lets | https://www.gesetze-im-internet.de/estg/__21.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 315,
+    "section": " Sources",
+    "wording": "| EStG § 9, Werbungskosten; commuting allowance EUR 0.38 | https://www.gesetze-im-internet.de/estg/__9.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 316,
+    "section": " Sources",
+    "wording": "| EStG § 7, AfA rates and § 7(5a) declining balance | https://www.gesetze-im-internet.de/estg/__7.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 317,
+    "section": " Sources",
+    "wording": "| EStG § 7a(9), AfA after special depreciation | https://www.gesetze-im-internet.de/estg/__7a.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 318,
+    "section": " Sources",
+    "wording": "| EStG § 7b, special depreciation for new rental flats | https://www.gesetze-im-internet.de/estg/__7b.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 319,
+    "section": " Sources",
+    "wording": "| EStG § 6(1) no. 1a (15% rule) and § 6(2) (EUR 800) | https://www.gesetze-im-internet.de/estg/__6.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 320,
+    "section": " Sources",
+    "wording": "| EStG § 11, cash basis | https://www.gesetze-im-internet.de/estg/__11.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 321,
+    "section": " Sources",
+    "wording": "| EStG § 10d, losses | https://www.gesetze-im-internet.de/estg/__10d.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 322,
+    "section": " Sources",
+    "wording": "| EStG § 23, private sales | https://www.gesetze-im-internet.de/estg/__23.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 323,
+    "section": " Sources",
+    "wording": "| EStG § 35c, energy works on own home | https://www.gesetze-im-internet.de/estg/__35c.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 324,
+    "section": " Sources",
+    "wording": "| EStG § 37, prepayments | https://www.gesetze-im-internet.de/estg/__37.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 325,
+    "section": " Sources",
+    "wording": "| EStG § 46, employee filing duty | https://www.gesetze-im-internet.de/estg/__46.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 326,
+    "section": " Sources",
+    "wording": "| EStG §§ 49, 50, non-residents | https://www.gesetze-im-internet.de/estg/__49.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 327,
+    "section": " Sources",
+    "wording": "| EStG § 52(1), (15a), (18b), (35a), application | https://www.gesetze-im-internet.de/estg/__52.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 328,
+    "section": " Sources",
+    "wording": "| EStDV § 82b, spreading larger maintenance | https://www.gesetze-im-internet.de/estdv_1955/__82b.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 329,
+    "section": " Sources",
+    "wording": "| BRKG § 5(2), 30 cents per km | https://www.gesetze-im-internet.de/brkg_2005/__5.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 330,
+    "section": " Sources",
+    "wording": "| UStG §§ 4 no. 12, 9, 12, 27(2) | https://www.gesetze-im-internet.de/ustg_1980/__9.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 331,
+    "section": " Sources",
+    "wording": "| AO §§ 108, 149, 152, 233a, 238 | https://www.gesetze-im-internet.de/ao_1977/__152.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 332,
+    "section": " Sources",
+    "wording": "| EGAO Art. 97 § 36(3), extended deadlines 2020 to 2024 | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 333,
+    "section": " Sources",
+    "wording": "| BGBl. 2024 I No. 108, Art. 6 (loss carry-forward back to 60% from 2028) | https://www.recht.bund.de/bgbl/1/2024/108/regelungstext.pdf | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 334,
+    "section": " Sources",
+    "wording": "| BMF letter of 21 May 2025 on § 7b EStG (paras. 16, 63 to 66, example 7) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-05-21-anwendungsschreiben-7b-estg-neu.pdf?__blob=publicationFile&v=5 | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 335,
+    "section": " Sources",
+    "wording": "| BMF letter of 8 October 2004 (BStBl I p. 933) on the intention to make a surplus, with notes, in the official income tax handbook 2024, Anhang 30 II (paras. 1, 5 to 10, 13, 16 to 27, 34, 39, 40) | https://esth.bundesfinanzministerium.de/esth/2024/C-Anhaenge/Anhang-30/II/anhang-30-II.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 336,
+    "section": " Sources",
+    "wording": "| BMF purchase-price split tool | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Berechnung-Aufteilung-Grundstueckskaufpreis.html | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 337,
+    "section": " Sources",
+    "wording": "| ELSTER instructions to the 2025 return, Anlage V, V-FeWo, V-Sonstige | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025 | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 338,
+    "section": " Sources",
+    "wording": "| ELSTER instructions to the 2026 return (page empty when read) | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2026 | 2026-10-24 |",
+    "classification": "historical_source_record",
+    "anchors": [],
+    "disposition": "Preserved original source URL/read-on citation record. Root actual read date is29October2026 in the quote index; earlier dates are not relabelled as root reads.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 340,
+    "section": " Sources",
+    "wording": "Not yet confirmed: the 2026 Anlage V form and instructions (the recorded route returned no substantive content; line numbers are from 2025); any BMF update to the letter of 8 October 2004 after the retained 2024 handbook (the checked 2025 handbook route remained inaccessible); the BMF letter of 22 February 2023 on a shorter actual useful life; whether a let property can be a first place of activity for travel; AfA in the month of sale; heirs under § 23(1) sentence 3; treaty treatment of foreign rental property; the BMF letter of 21 October 2026 on paid waiver of usufruct (Nießbrauch), not read.",
+    "classification": "scope_limit",
+    "anchors": [],
+    "disposition": "Precise Not-yet-confirmed scope and historical route/body-read limits. This is not proof of absence or a completed specialist/treaty method. DE-L25/26 settle only their named old questions; original limits preserved in their preimages.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 342,
+    "section": " Sources",
+    "wording": "<!-- openaccountants-cta-block -->",
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "anchors": [],
+    "disposition": "Protected original reference/CTA language, retained exactly; no new tax or attestation claim.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 344,
+    "section": " Sources",
+    "wording": "---",
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "anchors": [],
+    "disposition": "Protected original reference/CTA language, retained exactly; no new tax or attestation claim.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 346,
+    "section": " Talk to a verified accountant",
+    "wording": "## Talk to a verified accountant",
+    "classification": "structure",
+    "anchors": [],
+    "disposition": "Heading; all operative amounts/methods have separate bound rows.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 348,
+    "section": " Talk to a verified accountant",
+    "wording": "This guide is maintained by the OpenAccountants network — accountants who put",
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "anchors": [],
+    "disposition": "Protected original reference/CTA language, retained exactly; no new tax or attestation claim.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 349,
+    "section": " Talk to a verified accountant",
+    "wording": "their name behind the tax answers AI gives people. The live, always-current",
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "anchors": [],
+    "disposition": "Protected original reference/CTA language, retained exactly; no new tax or attestation claim.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 350,
+    "section": " Talk to a verified accountant",
+    "wording": "version (and the professional behind it) is at",
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "anchors": [],
+    "disposition": "Protected original reference/CTA language, retained exactly; no new tax or attestation claim.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 351,
+    "section": " Talk to a verified accountant",
+    "wording": "[openaccountants.com](https://www.openaccountants.com).",
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "anchors": [],
+    "disposition": "Protected original reference/CTA language, retained exactly; no new tax or attestation claim.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 353,
+    "section": " Talk to a verified accountant",
+    "wording": "- Use it in your AI: https://www.openaccountants.com/connect",
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "anchors": [],
+    "disposition": "Protected original reference/CTA language, retained exactly; no new tax or attestation claim.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 354,
+    "section": " Talk to a verified accountant",
+    "wording": "- Meet the accountants: https://www.openaccountants.com/network",
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "anchors": [],
+    "disposition": "Protected original reference/CTA language, retained exactly; no new tax or attestation claim.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 356,
+    "section": " Talk to a verified accountant",
+    "wording": "> **General reference only.** This document does not constitute tax, legal, or",
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "anchors": [],
+    "disposition": "Protected original reference/CTA language, retained exactly; no new tax or attestation claim.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 357,
+    "section": " Talk to a verified accountant",
+    "wording": "> financial advice. Verify figures against the cited primary sources or with a",
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "anchors": [],
+    "disposition": "Protected original reference/CTA language, retained exactly; no new tax or attestation claim.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  },
+  {
+    "native_LF": 358,
+    "section": " Talk to a verified accountant",
+    "wording": "> licensed professional before relying on them.",
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "anchors": [],
+    "disposition": "Protected original reference/CTA language, retained exactly; no new tax or attestation claim.",
+    "guide_sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e"
+  }
+]

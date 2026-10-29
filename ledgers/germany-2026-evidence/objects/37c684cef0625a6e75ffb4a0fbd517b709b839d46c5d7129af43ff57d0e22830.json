@@ -1,0 +1,40 @@
+{
+  "slug": "de-non-resident-tax",
+  "before_sha256": "90cc51144b9fb01972187158c6cc09a6cdd14bf5aa7a92def578592070c4168c",
+  "after_sha256": "2771446fffdebcafb42c3f4875418d5c66839a2cdcce4473b2c5bd426b7d290c",
+  "operations": [
+    {
+      "before": "- **Other foreign income taxed at the tariff (for example foreign rent, foreign business income, or capital income taxed at the tariff after the § 32d(6) option).** § 34c(1) applies where no treaty exists; where a treaty provides for a credit, § 34c(6) applies the same method. The foreign tax is credited up to the German tax on that income:",
+      "after": "- **Other foreign income taxed at the tariff (for example foreign rent, foreign business income).** § 34c(1) applies where no treaty exists; where a treaty provides for a credit, § 34c(6) applies the same method. Capital income assessed under the § 32d(6) Günstigerprüfung instead keeps the § 32d(5) credit, capped at the additional tariff tax on that capital income (§ 32d(6) sentence 2). For income within § 34c, the foreign tax is credited up to the German tax on that income:"
+    },
+    {
+      "before": "If he had chosen the tariff under § 32d(6) (only worth it on a low income), § 32d(5) still governs the credit, applied to the extra tariff tax on the capital income. If the foreign rate were 30% (EUR 3,000), only EUR 2,250 could be credited. The part above the treaty rate is reclaimed from the source country under its treaty, not from Germany; the rest is lost.",
+      "after": "If he had chosen the tariff under § 32d(6), § 32d(5) still governs the credit, applied to the additional tariff tax on the capital income. The foreign tax must first be reduced by any source-country refund entitlement. If 30% (EUR 3,000) were withheld but the same treaty limits source tax to 15%, only EUR 1,500 is creditable in this case and EUR 1,500 is reclaimed from the source country; the German tax cap does not turn treaty-refundable tax into a German credit. In a separate no-refund-entitlement case with EUR 3,000 of eligible foreign tax, the German cap would limit credit to EUR 2,250 and EUR 750 would remain uncredited."
+    },
+    {
+      "before": "| § 50a, net basis for EU/EEA creditors (costs deducted) | 30% for individuals, 15% for companies, on net receipts | 2026 | Same, § 50a(3) |",
+      "after": "| § 50a, net basis for eligible EU/EEA creditors | Only § 50a(1) nos. 1, 2 and 4, not royalties under no. 3: 30% for individuals, 15% for eligible companies, on net receipts after proven directly related costs | 2026 | Same, § 50a(3) |"
+    },
+    {
+      "before": "- For an EU/EEA creditor the payer may deduct costs the creditor proves, then withhold 30% (individual) or 15% (company) of the net (§ 50a(3)).",
+      "after": "- For § 50a(1) nos. 1, 2 and 4 only, the payer may deduct directly related costs proved in a form the BZSt can check or paid by the payer, then withhold 30% for an EU/EEA national resident in the EU/EEA, or 15% for a company meeting § 32(4) KStG. This net route does not apply to royalties under § 50a(1) no. 3 (§ 50a(3))."
+    },
+    {
+      "before": "2. **No personal deductions.** Special expenses, the EUR 36 lump sum, single-parent relief, child allowances, extraordinary burdens and § 35a credits do not apply (§ 50(1) sentence 4). There is no splitting.",
+      "after": "2. **No personal deductions.** Special expenses, the EUR 36 lump sum, single-parent relief, child allowances, extraordinary burdens and § 35a credits do not apply (§ 50(1) sentence 4). There is no splitting. Exception under § 50(1a): mandatory contributions to a professional pension institution can qualify where membership arises from the admission required for the German professional practice. It covers EU/EEA nationals resident in the EU/EEA or Switzerland, and Swiss nationals resident in the EU or Switzerland. Contributions must directly relate to German income under § 49(1) no. 2 or 3 from that admitted practice; the deduction follows German qualifying income divided by the total positive German and foreign income from that practice. It is excluded to the extent already deducted in the residence state or exceeding the German qualifying income."
+    },
+    {
+      "before": "version: 0.1\n",
+      "after": "version: 0.2\n"
+    },
+    {
+      "before": "last_updated: 2026-10-23\n",
+      "after": "last_updated: 2026-10-29\n"
+    }
+  ],
+  "original_oa_blocks": 2,
+  "original_oa_blocks_byte_exact": true,
+  "ordered_urls_exact": true,
+  "protected_metadata_exact": true,
+  "exact_inverse": true
+}

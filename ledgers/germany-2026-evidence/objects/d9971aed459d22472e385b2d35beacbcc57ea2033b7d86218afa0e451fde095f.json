@@ -1,0 +1,107 @@
+[
+  {
+    "finding": "version",
+    "before": "version: 1.1",
+    "after": "version: 1.2",
+    "before_native_LF": 4,
+    "sequential_input_created_by_prior_operation": false
+  },
+  {
+    "finding": "R40",
+    "before": "- **No consent.** Issuing an e-invoice to another German business does not need the recipient's consent.",
+    "after": "- **Apply the consent table.** No consent is needed for the domestic e-invoice duty, or the stated domestic business-to-business § 33/34/34a UStDV cases. Remaining voluntary cases, including consumers, the stated exempt supplies and a supplier or customer abroad, require the recipient's consent.",
+    "before_native_LF": 134,
+    "sequential_input_created_by_prior_operation": false
+  },
+  {
+    "finding": "R39",
+    "before": "- **Two dates in each rule.** The statute ties each relief to when the supply was made AND to the day by which the invoice is sent. Read literally, an invoice sent in January 2027 for a sale made in December 2026 fits neither the first row (sent too late) nor the second (sale made too early). The pages read for this Guide do not settle that case. The ministry's questions and answers page (no. 11) describes the first relief the same way, as a period in which the invoice is issued, from 1 January 2025 to 31 December 2026. Invoice 2026 sales before the year ends, or refer.",
+    "after": "- **Two dates and the default duty: selected combined-law interpretation.** Each § 27(38) relief tests both the supply date and the last transmission date. For an ordinary taxable domestic business-to-business supply made in December 2026, first invoiced in January 2027, the default § 14(2) e-invoice duty applies if both parties meet the domestic-establishment test, the recipient acquires for its business, the invoice total is above EUR 250, and no Kleinunternehmer, ticket or other permanent exemption applies. This fixture assumes no previously issued qualifying advance or standing invoice; those follow their specific rules below. No. 1 relief ended on 31 December 2026; nos. 2 and 3 concern supplies made after that date, so neither low issuer turnover nor the December supply date rescues this January invoice. This is a labelled reading of the own default and transition clauses, not a separate ruling. The same December supply first sent by 31 December 2026 can use paper or an agreed PDF under no. 1. A supply made on 1 January 2027 instead enters no. 2's own prior-year-turnover test and 2027 transmission window. The ministry applies the principles to post-2024 supplies, subject to the actual transition. Reapply these exact duty/relief gates to other late invoices rather than inferring a gap in all invoicing rules.",
+    "before_native_LF": 164,
+    "sequential_input_created_by_prior_operation": false
+  },
+  {
+    "finding": "R38",
+    "before": "- These three retained technical topics are not established by the source clauses read. The ERechV itself says only that invoices sent through the portal are checked automatically for formal correctness and that a faulty one is rejected with a notice to the sender (§ 4(4) ERechV)",
+    "after": "- These three retained technical topics are not established by the source clauses read. The ERechV itself says only that invoices sent through the portal are checked automatically for formal correctness and that a faulty one is rejected with a notice to the sender (§ 4(3) ERechV)",
+    "before_native_LF": 366,
+    "sequential_input_created_by_prior_operation": false
+  },
+  {
+    "finding": "R41",
+    "before": "| Other invoice where an e-invoice was due: input VAT deduction | The invoice is not a proper invoice under §§ 14 and 14a UStG, so in principle it gives no right to deduct input tax (decree section 15.2a(1)). The issuer can cure this by issuing an e-invoice afterwards that refers specifically and clearly to the first invoice (15.2a(7)). Without that, the decree's paragraph 15.2a(1a), on deducting input tax without a proper invoice, also applies to this case, and the ministry adds that a correct and complete other invoice will \"regelmäßig\" meet its conditions. The earlier sentences of 15.2a(1a), which set those conditions, are not in the letter and were not read |",
+    "after": "| Other invoice where an e-invoice was due: input VAT deduction | The invoice is not proper under §§ 14/14a, so it gives no deduction in principle (UStAE 15.2a(1)). A later e-invoice referring specifically and clearly to it supplies the ordinary cure (15.2a(7)). Without cure, the full 15.2a(1a) strict-evidence route requires an actual invoice, although formally faulty, and objective evidence allowing easy, unambiguous verification of every material condition: actual goods/services supplied by another entrepreneur for the claimant's taxable outputs and VAT actually paid. An invoice or copy openly showing VAT is necessary to prove payment of that tax; an invoice cannot be dispensed with entirely. Establish supply timing rather than automatically assuming it equals the invoice date where there are doubts. The authority need not find missing information itself; doubts and gaps fall on the claimant. Sentences 12–14 expressly apply this to wrong-format invoices and say an otherwise correct, complete invoice regularly meets the conditions. Stipulated ordinary domestic taxable supply above the small-invoice limit: a complete PDF showing EUR 1,000 net/EUR 190 legally due VAT, actual business supply and EUR 1,190 payment, all otherwise eligible under § 15 with objective records, can support EUR 190 input despite the wrong format. A missing invoice/open VAT, unproved supply/payment or other failed material gate is not presumed to support that deduction. Contested evidence requires actual resolution; neither any-PDF credit nor all-PDF denial is the method. |",
+    "before_native_LF": 455,
+    "sequential_input_created_by_prior_operation": false
+  },
+  {
+    "finding": "R40",
+    "before": "6. Validate the file, keep the validation report, and send it by a channel agreed with the customer. The customer's consent to the e-invoice is not needed. Keep proof of sending. Same letter as step 5.",
+    "after": "6. Validate the file, keep the validation report, and send it by a channel agreed with the customer. Apply the consent table before transmission: no consent for the domestic duty or its stated domestic § 33/34/34a cases; obtain consent for the remaining voluntary cases. Keep proof of sending. Same letter as step 5.",
+    "before_native_LF": 528,
+    "sequential_input_created_by_prior_operation": false
+  },
+  {
+    "finding": "R39",
+    "before": "- An invoice sent after 31 December 2026 for a sale made in 2025 or 2026: the statute's wording gives no relief, and the pages read do not discuss it.",
+    "after": "- For an ordinary December 2026 supply first invoiced in January 2027, apply the selected default-duty method in Section 2, not a blanket referral. For other late 2025/2026 invoices, test the actual § 14 duty and § 27(38) supply/transmission dates; refer only unresolved establishment, exemption, prior advance/standing-invoice or other facts outside the stated ordinary fixture.",
+    "before_native_LF": 553,
+    "sequential_input_created_by_prior_operation": false
+  },
+  {
+    "finding": "R41 reservation",
+    "before": "- Not yet confirmed: the exact Leitweg-ID validation pattern and the three additional portal checks identified in Section 6; the earlier stated GoBD procedural-documentation and paragraph 135 details; the full conditions of UStAE 15.2a(1a) absent from the amendment letter; and whether wrong-format invoicing attracts the non-issue fine. These limits are not resolved by technical schema conformity.",
+    "after": "- Not yet confirmed: the exact Leitweg-ID validation pattern and the three additional portal checks identified in Section 6; the earlier stated GoBD procedural-documentation and paragraph 135 details; and whether wrong-format invoicing attracts the non-issue fine. These limits are not resolved by technical schema conformity.",
+    "before_native_LF": 573,
+    "sequential_input_created_by_prior_operation": false
+  },
+  {
+    "finding": "R37-R41 sources",
+    "before": "- Not yet confirmed: the exact Leitweg-ID validation pattern and the three additional portal checks identified in Section 6; the earlier stated GoBD procedural-documentation and paragraph 135 details; and whether wrong-format invoicing attracts the non-issue fine. These limits are not resolved by technical schema conformity.",
+    "after": "- Selected legal clauses actually read on 29 October 2026: UStG §§ 14(1)/(2),27(38),26a(2)/(3); ERechV 4(3); BMF 15 October 2025 consent/input/effect clauses. The complete strict input-evidence conditions were actually read in the [retained full UStAE, section 15.2a(1a)](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2), not inferred from the amending letter alone.\n- Not yet confirmed: the exact Leitweg-ID validation pattern and the three additional portal checks identified in Section 6; the earlier stated GoBD procedural-documentation and paragraph 135 details; and whether wrong-format invoicing attracts the non-issue fine. These limits are not resolved by technical schema conformity.",
+    "before_native_LF": null,
+    "sequential_input_created_by_prior_operation": true
+  },
+  {
+    "finding": "R42",
+    "before": "| Outgoing invoices | With an invoicing program, no picture copy of the outgoing invoice (a PDF, or the PDF part of a hybrid file) needs to be stored, if an identical copy can be produced on request at any time (GoBD paragraph 76) |",
+    "after": "| Outgoing invoices | GoBD 76 permits omitting the outgoing image/PDF copy only under the preceding full-content/highest-machine-evaluability conditions and if an identical copy can be produced on request at any time. The actually processed format must carry the full content with the highest machine evaluability; otherwise keep both formats. Among the additional requirements, continuously historise master data and terms; document which terms and original format applied; retain the original layout as a template and historise changes; keep invoicing data machine-evaluable and immutable. Reproducing a current-looking image while overwriting historical customer/terms/layout data does not establish the waiver. This does not remove the separate structured-original/XML duties. |",
+    "before_native_LF": 435,
+    "sequential_input_created_by_prior_operation": false
+  },
+  {
+    "finding": "R43",
+    "before": "| Verfahrensdokumentation | The legacy Guide says written procedural documentation of the e-invoice process (receipt, processing, archiving) is mandatory. That comes from the GoBD main letter of 28 November 2019, which is not among the pages read for this Guide. Carried over, not checked |",
+    "after": "| Verfahrensdokumentation | GoBD 150–155 requires clear, current process documentation allowing a knowledgeable third party to understand and check the system within reasonable time; its extent depends on the actual business/system complexity. Describe creation, indexing, processing, storage, retrieval, machine evaluation, security and reproduction. Documentation must correspond to the programme versions actually used, with traceable dated/version history retained as long as needed to understand the records. Under paragraph 155, missing or inadequate documentation is not a substantive formal defect justifying rejection of the books where traceability and verifiability are not impaired; no automatic penalty or universal certification follows. |",
+    "before_native_LF": 438,
+    "sequential_input_created_by_prior_operation": false
+  },
+  {
+    "finding": "R43",
+    "before": "| Conversion | Converting an incoming electronic document to another format is allowed only under the conditions of GoBD paragraph 135 (GoBD paragraph 131). Paragraph 135 itself is in the main letter, which was not read. The legacy Guide's summary: the original must also be kept and the conversion documented |",
+    "after": "| Conversion | Under GoBD 135, the default for in-house conversion is to retain both versions, assign them to the same record/index and mark the converted one. Converted-only retention is permitted only if no image/content changes, no other retention-required information is lost, proper lossless conversion is documented, and machine evaluability/tax-authority access is unrestricted. This general exception does not permit losing mandatory original structured invoice data or the XML barred from loss by GoBD 125; keep the independent VAT structured-original rule above. Actual conversion and compliance require records, not a software-brand assumption. |",
+    "before_native_LF": 441,
+    "sequential_input_created_by_prior_operation": false
+  },
+  {
+    "finding": "R43 summary",
+    "before": "- Verfahrensdokumentation must describe the e-invoice workflow from receipt to archiving (legacy statement, from the GoBD main letter, not checked)",
+    "after": "- Verfahrensdokumentation follows the actual GoBD 150–155 process/version-history method and paragraph 155 qualification in Section 8. The documentation and archive/implementation records must describe the actual workflow; no universal software certification is asserted.",
+    "before_native_LF": 500,
+    "sequential_input_created_by_prior_operation": false
+  },
+  {
+    "finding": "R43 reservation",
+    "before": "- Not yet confirmed: the exact Leitweg-ID validation pattern and the three additional portal checks identified in Section 6; the earlier stated GoBD procedural-documentation and paragraph 135 details; and whether wrong-format invoicing attracts the non-issue fine. These limits are not resolved by technical schema conformity.",
+    "after": "- Not yet confirmed: the exact Leitweg-ID validation pattern and the three additional portal checks identified in Section 6; and whether wrong-format invoicing attracts the non-issue fine. These limits are not resolved by technical schema conformity.",
+    "before_native_LF": null,
+    "sequential_input_created_by_prior_operation": true
+  },
+  {
+    "finding": "R42-R43 source",
+    "before": "- Selected legal clauses actually read on 29 October 2026:",
+    "after": "- [Official BMF 2026 AO annex, GoBD 76/135/150–155/185](https://usth.bundesfinanzministerium.de/ao/2026/Anhaenge/BMF-Schreiben-und-gleichlautende-Laendererlasse/Anhang-33/inhalt.html): selected operative conditions/effect actually read on 29 October 2026. This completes the stated outgoing-copy, conversion and documentation scopes; no full archive-system audit is claimed.\n- Selected legal clauses actually read on 29 October 2026:",
+    "before_native_LF": null,
+    "sequential_input_created_by_prior_operation": true
+  }
+]

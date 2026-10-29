@@ -1,0 +1,1 @@
+Initial scoped wrapper failed before checks: ModuleNotFoundError: No module named frontmatter_yaml. Cause: repository scripts directory absent from sys.path. No Guide/source mutation from this check. Corrected by adding R/scripts to import path.

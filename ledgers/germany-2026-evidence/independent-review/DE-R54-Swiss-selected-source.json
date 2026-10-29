@@ -1,0 +1,13 @@
+{
+  "id": "AO152-3",
+  "source": "Ua52afa3591a7820d",
+  "article": "AO152(3)",
+  "url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+  "LF_start": 15,
+  "LF_end": 22,
+  "exact_quote": "(3) Absatz 2 gilt nicht, 1.\nwenn die Finanzbehörde die Frist für die Abgabe der Steuererklärung nach § 109 verlängert hat oder diese Frist rückwirkend verlängert,\n2.\nwenn die Steuer auf null Euro oder auf einen negativen Betrag festgesetzt wird,\n3.\nwenn die festgesetzte Steuer die Summe der festgesetzten Vorauszahlungen und der anzurechnenden Steuerabzugsbeträge nicht übersteigt oder\n4.\nbei jährlich abzugebenden Lohnsteueranmeldungen, bei Anmeldungen von Umsatzsteuer-Sondervorauszahlungen nach § 48 Absatz 2 der Umsatzsteuer-Durchführungsverordnung, bei jährlich abzugebenden Versicherungsteuer- und Feuerschutzsteueranmeldungen sowie bei Erklärungen nach § 95 des Mindeststeuergesetzes.",
+  "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+  "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+  "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+  "line_convention": "literal LF split('\\n')"
+}

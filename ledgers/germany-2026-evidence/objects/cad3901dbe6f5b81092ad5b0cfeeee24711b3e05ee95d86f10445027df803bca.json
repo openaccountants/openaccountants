@@ -1,0 +1,1842 @@
+[
+  {
+    "row": 1,
+    "id": "GT.liability",
+    "source": {
+      "source_id": "DEB024",
+      "act_article": "GewStG2(1)\u2013(5)",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__2.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-2-20261024.html",
+      "raw_sha256": "f309400c1595df013343d2b7ce996c79b615ed5c027a494f7696806097a84074",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB024.txt",
+      "reader_sha256": "b6396962d89d880e08aa62b7fb54e17d445fbfa3177dd088db9feae0c40f61d7",
+      "native_LF": [
+        7,
+        11
+      ],
+      "exact_quote": "(1) 1Der Gewerbesteuer unterliegt jeder stehende Gewerbebetrieb, soweit er im Inland betrieben wird. 2Unter Gewerbebetrieb ist ein gewerbliches Unternehmen im Sinne des Einkommensteuergesetzes zu verstehen. 3Im Inland betrieben wird ein Gewerbebetrieb, soweit f\u00fcr ihn im Inland oder auf einem in einem inl\u00e4ndischen Schiffsregister eingetragenen Kauffahrteischiff eine Betriebsst\u00e4tte unterhalten wird.\n(2) 1Als Gewerbebetrieb gilt stets und in vollem Umfang die T\u00e4tigkeit der Kapitalgesellschaften (insbesondere Europ\u00e4ische Gesellschaften, Aktiengesellschaften, Kommanditgesellschaften auf Aktien, Gesellschaften mit beschr\u00e4nkter Haftung), Genossenschaften einschlie\u00dflich Europ\u00e4ischer Genossenschaften sowie der Versicherungs- und Pensionsfondsvereine auf Gegenseitigkeit. 2Ist eine Kapitalgesellschaft Organgesellschaft im Sinne der \u00a7 14 oder \u00a7 17 des K\u00f6rperschaftsteuergesetzes, so gilt sie als Betriebsst\u00e4tte des Organtr\u00e4gers.\n(3) Als Gewerbebetrieb gilt auch die T\u00e4tigkeit der sonstigen juristischen Personen des privaten Rechts und der Vereine ohne Rechtspers\u00f6nlichkeit, soweit sie einen wirtschaftlichen Gesch\u00e4ftsbetrieb (ausgenommen Land- und Forstwirtschaft) unterhalten.\n(4) Vor\u00fcbergehende Unterbrechungen im Betrieb eines Gewerbes, die durch die Art des Betriebs veranlasst sind, heben die Steuerpflicht f\u00fcr die Zeit bis zur Wiederaufnahme des Betriebs nicht auf.\n(5) 1Geht ein Gewerbebetrieb im Ganzen auf einen anderen Unternehmer \u00fcber, so gilt der Gewerbebetrieb als durch den bisherigen Unternehmer eingestellt. 2Der Gewerbebetrieb gilt als durch den anderen Unternehmer neu gegr\u00fcndet, wenn er nicht mit einem bereits bestehenden Gewerbebetrieb vereinigt wird.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          11
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 2,
+    "id": "GT.professions",
+    "source": {
+      "source_id": "DEB022",
+      "act_article": "EStG18(1)\u2013(4)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__18.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-18-20261024.html",
+      "raw_sha256": "38ebdcd4278d97c1efcf7ed4f24a3e1deec084784e2afbec5e1c61b3d7539989",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB022.txt",
+      "reader_sha256": "a547039b7a9ce833379cab4467a4d87b3510de17c6860de601755b2092294a79",
+      "native_LF": [
+        7,
+        17
+      ],
+      "exact_quote": "(1) Eink\u00fcnfte aus selbst\u00e4ndiger Arbeit sind 1.\nEink\u00fcnfte aus freiberuflicher T\u00e4tigkeit. 2Zu der freiberuflichen T\u00e4tigkeit geh\u00f6ren die selbst\u00e4ndig ausge\u00fcbte wissenschaftliche, k\u00fcnstlerische, schriftstellerische, unterrichtende oder erzieherische T\u00e4tigkeit, die selbst\u00e4ndige Berufst\u00e4tigkeit der \u00c4rzte, Zahn\u00e4rzte, Tier\u00e4rzte, Rechtsanw\u00e4lte, Notare, Patentanw\u00e4lte, Vermessungsingenieure, Ingenieure, Architekten, Handelschemiker, Wirtschaftspr\u00fcfer, Steuerberater, beratenden Volks- und Betriebswirte, vereidigten Buchpr\u00fcfer, Steuerbevollm\u00e4chtigten, Heilpraktiker, Dentisten, Krankengymnasten, Journalisten, Bildberichterstatter, Dolmetscher, \u00dcbersetzer, Lotsen und \u00e4hnlicher Berufe. 3Ein Angeh\u00f6riger eines freien Berufs im Sinne der S\u00e4tze 1 und 2 ist auch dann freiberuflich t\u00e4tig, wenn er sich der Mithilfe fachlich vorgebildeter Arbeitskr\u00e4fte bedient; Voraussetzung ist, dass er auf Grund eigener Fachkenntnisse leitend und eigenverantwortlich t\u00e4tig wird. 4Eine Vertretung im Fall vor\u00fcbergehender Verhinderung steht der Annahme einer leitenden und eigenverantwortlichen T\u00e4tigkeit nicht entgegen;\n2.\nEink\u00fcnfte der Einnehmer einer staatlichen Lotterie, wenn sie nicht Eink\u00fcnfte aus Gewerbebetrieb sind;\n3.\nEink\u00fcnfte aus sonstiger selbst\u00e4ndiger Arbeit, z. B. Verg\u00fctungen f\u00fcr die Vollstreckung von Testamenten, f\u00fcr Verm\u00f6gensverwaltung und f\u00fcr die T\u00e4tigkeit als Aufsichtsratsmitglied;\n4.\nEink\u00fcnfte, die ein Beteiligter an einer verm\u00f6gensverwaltenden Gesellschaft oder Gemeinschaft, deren Zweck im Erwerb, Halten und in der Ver\u00e4u\u00dferung von Anteilen an Kapitalgesellschaften besteht, als Verg\u00fctung f\u00fcr Leistungen zur F\u00f6rderung des Gesellschafts- oder Gemeinschaftszwecks erzielt, wenn der Anspruch auf die Verg\u00fctung unter der Voraussetzung einger\u00e4umt worden ist, dass die Gesellschafter oder Gemeinschafter ihr eingezahltes Kapital vollst\u00e4ndig zur\u00fcckerhalten haben; \u00a7 15 Absatz 3 ist nicht anzuwenden.\n(2) Eink\u00fcnfte nach Absatz 1 sind auch dann steuerpflichtig, wenn es sich nur um eine vor\u00fcbergehende T\u00e4tigkeit handelt.\n(3) 1Zu den Eink\u00fcnften aus selbst\u00e4ndiger Arbeit geh\u00f6rt auch der Gewinn, der bei der Ver\u00e4u\u00dferung des Verm\u00f6gens oder eines selbst\u00e4ndigen Teils des Verm\u00f6gens oder eines Anteils am Verm\u00f6gen erzielt wird, das der selbst\u00e4ndigen Arbeit dient. 2\u00a7 16 Absatz 1 Satz 1 Nummer 1 und 2 und Absatz 1 Satz 2 sowie Absatz 2 bis 4 gilt entsprechend.\n(4) 1\u00a7 13 Absatz 5 gilt entsprechend, sofern das Grundst\u00fcck im Veranlagungszeitraum 1986 zu einem der selbst\u00e4ndigen Arbeit dienenden Betriebsverm\u00f6gen geh\u00f6rt hat. 2\u00a7 15 Absatz 1 Satz 1 Nummer 2, Absatz 1a, Absatz 2 Satz 2 und 3, \u00a7\u00a7 15a und 15b sind entsprechend anzuwenden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          17
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 3,
+    "id": "GT.financing",
+    "source": {
+      "source_id": "DEB143",
+      "act_article": "GewStG8no1",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__8.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-8-20261024.html",
+      "raw_sha256": "a846887cce2d12a7250a8771e5f173e4ddc85ead112d6b468bf5860437423990",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB143.txt",
+      "reader_sha256": "0be4dce9b7938aa0f2aee07fbbaaf44921df55cb499d9fb4cce572bb88ca36ae",
+      "native_LF": [
+        7,
+        25
+      ],
+      "exact_quote": "Dem Gewinn aus Gewerbebetrieb (\u00a7 7) werden folgende Betr\u00e4ge wieder hinzugerechnet, soweit sie bei der Ermittlung des Gewinns abgesetzt worden sind: 1.\nEin Viertel der Summe ausa)\nEntgelten f\u00fcr Schulden. 2Als Entgelt gelten auch der Aufwand aus nicht dem gew\u00f6hnlichen Gesch\u00e4ftsverkehr entsprechenden gew\u00e4hrten Skonti oder wirtschaftlich vergleichbaren Vorteilen im Zusammenhang mit der Erf\u00fcllung von Forderungen aus Lieferungen und Leistungen vor F\u00e4lligkeit sowie die Diskontbetr\u00e4ge bei der Ver\u00e4u\u00dferung von Wechsel- und anderen Geldforderungen. 3Soweit Gegenstand der Ver\u00e4u\u00dferung eine Forderung aus einem schwebenden Vertragsverh\u00e4ltnis ist, gilt die Differenz zwischen dem Wert der Forderung aus dem schwebenden Vertragsverh\u00e4ltnis, wie ihn die Vertragsparteien im Zeitpunkt des Vertragsschlusses der Ver\u00e4u\u00dferung zugrunde gelegt haben, und dem vereinbarten Ver\u00e4u\u00dferungserl\u00f6s als bei der Ermittlung des Gewinns abgesetzt,\nb)\nRenten und dauernden Lasten. 2Pensionszahlungen auf Grund einer unmittelbar vom Arbeitgeber erteilten Versorgungszusage gelten nicht als dauernde Last im Sinne des Satzes 1,\nc)\nGewinnanteilen des stillen Gesellschafters,\nd)\neinem F\u00fcnftel der Miet- und Pachtzinsen (einschlie\u00dflich Leasingraten) f\u00fcr die Benutzung von beweglichen Wirtschaftsg\u00fctern des Anlageverm\u00f6gens, die im Eigentum eines anderen stehen. 2Eine Hinzurechnung nach Satz 1 ist nur zur H\u00e4lfte vorzunehmen bei aa)\nFahrzeugen mit Antrieb ausschlie\u00dflich durch Elektromotoren, die ganz oder \u00fcberwiegend aus mechanischen oder elektrochemischen Energiespeichern oder aus emissionsfrei betriebenen Energiewandlern gespeist werden (Elektrofahrzeuge),\nbb)\nextern aufladbaren Hybridelektrofahrzeugen, f\u00fcr die sich aus der \u00dcbereinstimmungsbescheinigung nach Anhang IX der Richtlinie 2007/46/EG oder aus der \u00dcbereinstimmungsbescheinigung nach Artikel 38 der Verordnung (EU) Nr. 168/2013 ergibt, dass das Fahrzeug eine Kohlendioxidemission von h\u00f6chstens 50 Gramm je gefahrenen Kilometer hat oder die Reichweite des Fahrzeugs unter ausschlie\u00dflicher Nutzung der elektrischen Antriebsmaschine mindestens 80 Kilometer betr\u00e4gt, und\ncc)\nFahrr\u00e4dern, die keine Kraftfahrzeuge sind,\ne)\nder H\u00e4lfte der Miet- und Pachtzinsen (einschlie\u00dflich Leasingraten) f\u00fcr die Benutzung der unbeweglichen Wirtschaftsg\u00fcter des Anlageverm\u00f6gens, die im Eigentum eines anderen stehen, und\nf)\neinem Viertel der Aufwendungen f\u00fcr die zeitlich befristete \u00dcberlassung von Rechten (insbesondere Konzessionen und Lizenzen, mit Ausnahme von Lizenzen, die ausschlie\u00dflich dazu berechtigen, daraus abgeleitete Rechte Dritten zu \u00fcberlassen). 2Eine Hinzurechnung nach Satz 1 ist nicht vorzunehmen auf Aufwendungen, die nach \u00a7 25 des K\u00fcnstlersozialversicherungsgesetzes Bemessungsgrundlage f\u00fcr die K\u00fcnstlersozialabgabe sind,\nsoweit die Summe den Betrag von 200 000 Euro \u00fcbersteigt;",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          25
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-corporate-tax",
+      "quote_row": 88,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 4,
+    "id": "GT.round-allow-rate",
+    "source": {
+      "source_id": "DEB026",
+      "act_article": "GewStG11",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__11.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-11-20261024.html",
+      "raw_sha256": "46828d9b0262292dad64eac95bb490ca94daa2257a604ca5d674b1c0e3022598",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB026.txt",
+      "reader_sha256": "230ef372395186013d586d6789eccd128c565523f43b5fd43ab64e7eccc43c06",
+      "native_LF": [
+        7,
+        13
+      ],
+      "exact_quote": "(1) 1Bei der Berechnung der Gewerbesteuer ist von einem Steuermessbetrag auszugehen. 2Dieser ist durch Anwendung eines Prozentsatzes (Steuermesszahl) auf den Gewerbeertrag zu ermitteln. 3Der Gewerbeertrag ist auf volle 100 Euro nach unten abzurunden und 1.\nbei nat\u00fcrlichen Personen sowie bei Personengesellschaften um einen Freibetrag in H\u00f6he von 24 500 Euro,\n2.\nbei Unternehmen im Sinne des \u00a7 2 Abs. 3 und des \u00a7 3 Nr. 5, 6, 8, 9, 15, 17, 21, 26, 27, 28 und 29 sowie bei Unternehmen von juristischen Personen des \u00f6ffentlichen Rechts um einen Freibetrag in H\u00f6he von 5 000 Euro,\nh\u00f6chstens jedoch in H\u00f6he des abgerundeten Gewerbeertrags, zu k\u00fcrzen.\n(2) Die Steuermesszahl f\u00fcr den Gewerbeertrag betr\u00e4gt 3,5 Prozent.\n(3) 1Die Steuermesszahl erm\u00e4\u00dfigt sich auf 56 Prozent bei Hausgewerbetreibenden und ihnen nach \u00a7 1 Abs. 2 Buchstabe b und d des Heimarbeitsgesetzes in der im Bundesgesetzblatt Teil III, Gliederungsnummer 804-1, ver\u00f6ffentlichten bereinigten Fassung, zuletzt ge\u00e4ndert durch Artikel 4 des Gesetzes vom 13. Juli 1988 (BGBl. I S. 1034), gleichgestellten Personen. 2Das Gleiche gilt f\u00fcr die nach \u00a7 1 Abs. 2 Buchstabe c des Heimarbeitsgesetzes gleichgestellten Personen, deren Entgelte (\u00a7 10 Abs. 1 des Umsatzsteuergesetzes) aus der T\u00e4tigkeit unmittelbar f\u00fcr den Absatzmarkt im Erhebungszeitraum 25 000 Euro nicht \u00fcbersteigen.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          13
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 5,
+    "id": "GT.floor-law",
+    "source": {
+      "source_id": "DEB218",
+      "act_article": "BGBl2026I197 Art8",
+      "official_url": "https://www.recht.bund.de/bgbl/1/2026/197/VO.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2026-I-197-20261024.pdf",
+      "raw_sha256": "0ac9f7d5f47a69f15bb30645f3570d54dbea88ec359662c1a26f02db4c854462",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB218.txt",
+      "reader_sha256": "75aee695a14fb8f7274a6e9b4916332195ef77f5b6ba917b9d7ad4e63552b7a9",
+      "native_LF": [
+        1038,
+        1050
+      ],
+      "exact_quote": "                                                    Artikel 8\n\n                                   \u00c4nderung des Gewerbesteuergesetzes\n  Das Gewerbesteuergesetz in der Fassung der Bekanntmachung vom 15. Oktober 2002 (BGBl. I S. 4167), das\nzuletzt durch Artikel 4 des Gesetzes vom 28. Februar 2025 (BGBl. 2025 I Nr. 69) ge\u00e4ndert worden ist, wird wie folgt\nge\u00e4ndert:\n1. In \u00a7 16 Absatz 4 Satz 2 wird die Angabe \u201e200\u201c durch die Angabe \u201e280\u201c ersetzt.\n2. \u00a7 36 wird wie folgt ge\u00e4ndert:\n  a) Nach Absatz 5a wird der folgende Absatz 5b eingef\u00fcgt:\n        \u201e(5b) \u00a7 16 Absatz 4 Satz 2 in der Fassung des Artikels 7 des Gesetzes vom 29. Juni 2026 (BGBl. 2026 I\n     Nr. 197) ist erstmals f\u00fcr den Erhebungszeitraum 2027 anzuwenden.\u201c\n  b) Die bisherigen Abs\u00e4tze 5b und 5c werden zu den Abs\u00e4tzen 5c und 5d.\n\fBundesgesetzblatt Jahrgang 2026 Teil I Nr. 197, ausgegeben zu Bonn am 2. Juli 2026               Seite 19 von 21",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          1037,
+          1052
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": "The enacted Article8 contains its own internal Article7 cross-reference in newly inserted36(5b); retain that literal drafting discrepancy. Operative200\u2192280 and first2027 application are explicit; no2026floor280 inferred."
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 6,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 6,
+    "id": "GT.credit",
+    "source": {
+      "source_id": "DEB037",
+      "act_article": "EStG35",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__35.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-35-20261024.html",
+      "raw_sha256": "19911da16168dff1054493928501346b305fd226a49e9e30917c72f80d08b661",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB037.txt",
+      "reader_sha256": "86f386175dc78ad466695a78d32b6955a81caab1798f6f47ff109e84a5be2ebe",
+      "native_LF": [
+        7,
+        21
+      ],
+      "exact_quote": "(1) 1Die tarifliche Einkommensteuer, vermindert um die sonstigen Steuererm\u00e4\u00dfigungen mit Ausnahme der \u00a7\u00a7 34f, 34g, 35a und 35c, erm\u00e4\u00dfigt sich, soweit sie anteilig auf im zu versteuernden Einkommen enthaltene gewerbliche Eink\u00fcnfte entf\u00e4llt (Erm\u00e4\u00dfigungsh\u00f6chstbetrag), 1.\nbei Eink\u00fcnften aus gewerblichen Unternehmen im Sinne des \u00a7 15 Absatz 1 Satz 1 Nummer 1\num das Vierfache des jeweils f\u00fcr den dem Veranlagungszeitraum entsprechenden Erhebungszeitraum nach \u00a7 14 des Gewerbesteuergesetzes f\u00fcr das Unternehmen festgesetzten Steuermessbetrags (Gewerbesteuer-Messbetrag); Absatz 2 Satz 5 ist entsprechend anzuwenden;\n2.\nbei Eink\u00fcnften aus Gewerbebetrieb als Mitunternehmer im Sinne des \u00a7 15 Absatz 1 Satz 1 Nummer 2 oder als pers\u00f6nlich haftender Gesellschafter einer Kommanditgesellschaft auf Aktien im Sinne des \u00a7 15 Absatz 1 Satz 1 Nummer 3\num das Vierfache des jeweils f\u00fcr den dem Veranlagungszeitraum entsprechenden Erhebungszeitraum festgesetzten anteiligen Gewerbesteuer-Messbetrags.\n2Der Erm\u00e4\u00dfigungsh\u00f6chstbetrag ist wie folgt zu ermitteln:\nSumme der\npositiven gewerblichen Eink\u00fcnfte \u2022 geminderte\ntarifliche Steuer.\nSumme aller positiven Eink\u00fcnfte\n3Gewerbliche Eink\u00fcnfte im Sinne der S\u00e4tze 1 und 2 sind die der Gewerbesteuer unterliegenden Gewinne und Gewinnanteile, soweit sie nicht nach anderen Vorschriften von der Steuererm\u00e4\u00dfigung nach \u00a7 35 ausgenommen sind. 4Geminderte tarifliche Steuer ist die tarifliche Steuer nach Abzug von Betr\u00e4gen auf Grund der Anwendung zwischenstaatlicher Abkommen und nach Anrechnung der ausl\u00e4ndischen Steuern nach \u00a7 32d Absatz 6 Satz 2, \u00a7 34c Absatz 1 und 6 dieses Gesetzes und \u00a7 12 des Au\u00dfensteuergesetzes. 5Der Abzug des Steuererm\u00e4\u00dfigungsbetrags ist auf die tats\u00e4chlich zu zahlende Gewerbesteuer beschr\u00e4nkt.\n(2) 1Bei Mitunternehmerschaften im Sinne des \u00a7 15 Absatz 1 Satz 1 Nummer 2 oder bei Kommanditgesellschaften auf Aktien im Sinne des \u00a7 15 Absatz 1 Satz 1 Nummer 3 ist der Betrag des Gewerbesteuer-Messbetrags, die tats\u00e4chlich zu zahlende Gewerbesteuer und der auf die einzelnen Mitunternehmer oder auf die pers\u00f6nlich haftenden Gesellschafter entfallende Anteil gesondert und einheitlich festzustellen. 2Der Anteil eines Mitunternehmers am Gewerbesteuer-Messbetrag richtet sich nach seinem Anteil am Gewinn der Mitunternehmerschaft nach Ma\u00dfgabe des allgemeinen Gewinnverteilungsschl\u00fcssels; Vorabgewinnanteile sind nicht zu ber\u00fccksichtigen. 3Wenn auf Grund der Bestimmungen in einem Abkommen zur Vermeidung der Doppelbesteuerung bei der Festsetzung des Gewerbesteuer-Messbetrags f\u00fcr eine Mitunternehmerschaft nur der auf einen Teil der Mitunternehmer entfallende anteilige Gewerbeertrag ber\u00fccksichtigt wird, ist der Gewerbesteuer-Messbetrag nach Ma\u00dfgabe des allgemeinen Gewinnverteilungsschl\u00fcssels in voller H\u00f6he auf diese Mitunternehmer entsprechend ihrer Anteile am Gewerbeertrag der Mitunternehmerschaft aufzuteilen. 4Der anteilige Gewerbesteuer-Messbetrag ist als Prozentsatz mit zwei Nachkommastellen gerundet zu ermitteln. 5Bei der Feststellung nach Satz 1 sind anteilige Gewerbesteuer-Messbetr\u00e4ge, die aus einer Beteiligung an einer Mitunternehmerschaft stammen, einzubeziehen.\n(3) 1Zust\u00e4ndig f\u00fcr die gesonderte Feststellung nach Absatz 2 ist das f\u00fcr die gesonderte Feststellung der Eink\u00fcnfte zust\u00e4ndige Finanzamt. 2F\u00fcr die Ermittlung der Steuererm\u00e4\u00dfigung nach Absatz 1 sind die Festsetzung des Gewerbesteuer-Messbetrags, die Feststellung des Anteils an dem festzusetzenden Gewerbesteuer-Messbetrag nach Absatz 2 Satz 1 und die Festsetzung der Gewerbesteuer Grundlagenbescheide. 3F\u00fcr die Ermittlung des anteiligen Gewerbesteuer-Messbetrags nach Absatz 2 sind die Festsetzung des Gewerbesteuer-Messbetrags und die Festsetzung des anteiligen Gewerbesteuer-Messbetrags aus der Beteiligung an einer Mitunternehmerschaft Grundlagenbescheide.\n(4) F\u00fcr die Aufteilung und die Feststellung der tats\u00e4chlich zu zahlenden Gewerbesteuer bei Mitunternehmerschaften im Sinne des \u00a7 15 Absatz 1 Satz 1 Nummer 2 und bei Kommanditgesellschaften auf Aktien im Sinne des \u00a7 15 Absatz 1 Satz 1 Nummer 3 gelten die Abs\u00e4tze 2 und 3 entsprechend.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          21
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 7,
+    "id": "GT.losses",
+    "source": {
+      "source_id": "DEB145",
+      "act_article": "GewStG10a + printedBVerfGdecisionnote",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__10a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-10a-20261024.html",
+      "raw_sha256": "24df3ff38ffc0adff4da697aa3d2c15255cf18c86f94d88286aaf4c0087ad340",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB145.txt",
+      "reader_sha256": "8d10297e7e3a0e1ffb797f0155800a7d7fa89ecb1c8de68fabc94808365d601c",
+      "native_LF": [
+        7,
+        14
+      ],
+      "exact_quote": "1Der ma\u00dfgebende Gewerbeertrag wird bis zu einem Betrag in H\u00f6he von 1 Million Euro um die Fehlbetr\u00e4ge gek\u00fcrzt, die sich bei der Ermittlung des ma\u00dfgebenden Gewerbeertrags f\u00fcr die vorangegangenen Erhebungszeitr\u00e4ume nach den Vorschriften der \u00a7\u00a7 7 bis 10 ergeben haben, soweit die Fehlbetr\u00e4ge nicht bei der Ermittlung des Gewerbeertrags f\u00fcr die vorangegangenen Erhebungszeitr\u00e4ume ber\u00fccksichtigt worden sind. 2Der 1 Million Euro \u00fcbersteigende ma\u00dfgebende Gewerbeertrag ist bis zu 60 Prozent um nach Satz 1 nicht ber\u00fccksichtigte Fehlbetr\u00e4ge der vorangegangenen Erhebungszeitr\u00e4ume zu k\u00fcrzen. 3Im Fall des \u00a7 2 Abs. 2 Satz 2 kann die Organgesellschaft den ma\u00dfgebenden Gewerbeertrag nicht um Fehlbetr\u00e4ge k\u00fcrzen, die sich vor dem rechtswirksamen Abschluss des Gewinnabf\u00fchrungsvertrags ergeben haben. 4Bei einer Mitunternehmerschaft ist der sich f\u00fcr die Mitunternehmerschaft insgesamt ergebende Fehlbetrag den Mitunternehmern entsprechend dem sich aus dem Gesellschaftsvertrag ergebenden allgemeinen Gewinnverteilungsschl\u00fcssel zuzurechnen; Vorabgewinnanteile sind nicht zu ber\u00fccksichtigen. 5F\u00fcr den Abzug der den Mitunternehmern zugerechneten Fehlbetr\u00e4ge nach Ma\u00dfgabe der S\u00e4tze 1 und 2 ist der sich f\u00fcr die Mitunternehmerschaft insgesamt ergebende ma\u00dfgebende Gewerbeertrag sowie der H\u00f6chstbetrag nach Satz 1 den Mitunternehmern entsprechend dem sich aus dem Gesellschaftsvertrag f\u00fcr das Abzugsjahr ergebenden allgemeinen Gewinnverteilungsschl\u00fcssel zuzurechnen; Vorabgewinnanteile sind nicht zu ber\u00fccksichtigen. 6Die H\u00f6he der vortragsf\u00e4higen Fehlbetr\u00e4ge ist gesondert festzustellen. 7Vortragsf\u00e4hige Fehlbetr\u00e4ge sind die nach der K\u00fcrzung des ma\u00dfgebenden Gewerbeertrags nach Satz 1 und 2 zum Schluss des Erhebungszeitraums verbleibenden Fehlbetr\u00e4ge. 8Im Fall des \u00a7 2 Abs. 5 kann der andere Unternehmer den ma\u00dfgebenden Gewerbeertrag nicht um die Fehlbetr\u00e4ge k\u00fcrzen, die sich bei der Ermittlung des ma\u00dfgebenden Gewerbeertrags des \u00fcbergegangenen Unternehmens ergeben haben. 9\u00a7 8 Abs. 8 und 9 Satz 5 bis 8 des K\u00f6rperschaftsteuergesetzes ist entsprechend anzuwenden. 10Auf die Fehlbetr\u00e4ge ist \u00a7 8c des K\u00f6rperschaftsteuergesetzes entsprechend anzuwenden; dies gilt auch f\u00fcr den Fehlbetrag einer Mitunternehmerschaft, soweit dieser 1.\neiner K\u00f6rperschaft unmittelbar oder\n2.\neiner Mitunternehmerschaft, soweit an dieser eine K\u00f6rperschaft unmittelbar oder mittelbar \u00fcber eine oder mehrere Personengesellschaften beteiligt ist,\nzuzurechnen ist. 11Auf die Fehlbetr\u00e4ge ist \u00a7 8d des K\u00f6rperschaftsteuergesetzes entsprechend anzuwenden, wenn ein fortf\u00fchrungsgebundener Verlustvortrag nach \u00a7 8d des K\u00f6rperschaftsteuergesetzes gesondert festgestellt worden ist. 12Unterbleibt eine Feststellung nach \u00a7 8d Absatz 1 Satz 8 des K\u00f6rperschaftsteuergesetzes, weil keine nicht genutzten Verluste nach \u00a7 8c Absatz 1 Satz 1 des K\u00f6rperschaftsteuergesetzes vorliegen, ist auf Antrag auf die Fehlbetr\u00e4ge \u00a7 8d des K\u00f6rperschaftsteuergesetzes entsprechend anzuwenden; f\u00fcr die Form und die Frist dieses Antrags gilt \u00a7 8d Absatz 1 Satz 5 des K\u00f6rperschaftsteuergesetzes entsprechend.\nFu\u00dfnote\n(+++ \u00a7 10a: Zur Anwendung vgl. \u00a7 36 +++)\n\u00a7 10a Satz 1 u. 2: IdF d. G v. 23.12.2003 I 2922 mWv 01.01.2004 nach Ma\u00dfgabe der Entscheidungsformel mit GG vereinbar gem. BVerfGE vom 23.07.2025 I Nr. 222 \u2013 2 BvL 19/14 \u2013",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          14
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 8,
+    "id": "GT.period",
+    "source": {
+      "source_id": "DEB136",
+      "act_article": "GewStG14",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__14.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-14-20261024.html",
+      "raw_sha256": "e171e4bd34f0050058758b5b0517cf639e8d76c0b722fddeb400c554630cf9a0",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB136.txt",
+      "reader_sha256": "d52843ed6a003bea0237a8de4672a7cd40dcc4ff8f74936324c1cdf063fa5caa",
+      "native_LF": [
+        7,
+        7
+      ],
+      "exact_quote": "1Der Steuermessbetrag wird f\u00fcr den Erhebungszeitraum nach dessen Ablauf festgesetzt. 2Erhebungszeitraum ist das Kalenderjahr. 3Besteht die Gewerbesteuerpflicht nicht w\u00e4hrend des ganzen Kalenderjahrs, so tritt an die Stelle des Kalenderjahrs der Zeitraum der Steuerpflicht (abgek\u00fcrzter Erhebungszeitraum).",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          7
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-corporate-tax",
+      "quote_row": 99,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 9,
+    "id": "GT.notice",
+    "source": {
+      "source_id": "DEB137",
+      "act_article": "AO184(1)/(3)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__184.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-184-20261024.html",
+      "raw_sha256": "38bb787debc54afc5496d98045fa091cb82fd2dca9faed2b9abda1fabebdaf45",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB137.txt",
+      "reader_sha256": "6f3d9ac0fdaa6c8ef85addf048e48213aa7af5dc246cc772f6b68dd441ee434c",
+      "native_LF": [
+        7,
+        9
+      ],
+      "exact_quote": "(1) Steuermessbetr\u00e4ge, die nach den Steuergesetzen zu ermitteln sind, werden durch Steuermessbescheid festgesetzt. Mit der Festsetzung der Steuermessbetr\u00e4ge wird auch \u00fcber die pers\u00f6nliche und sachliche Steuerpflicht entschieden. Die Vorschriften \u00fcber die Durchf\u00fchrung der Besteuerung sind sinngem\u00e4\u00df anzuwenden. Ferner sind \u00a7 182 Absatz 1 und f\u00fcr Grundsteuermessbescheide auch Absatz 2 und \u00a7 183 sinngem\u00e4\u00df anzuwenden.\n(2) Die Befugnis, Realsteuermessbetr\u00e4ge festzusetzen, schlie\u00dft auch die Befugnis zu Ma\u00dfnahmen nach \u00a7 163 Absatz 1 Satz 1 ein, soweit f\u00fcr solche Ma\u00dfnahmen in einer allgemeinen Verwaltungsvorschrift der Bundesregierung, der obersten Bundesfinanzbeh\u00f6rde oder einer obersten Landesfinanzbeh\u00f6rde Richtlinien aufgestellt worden sind. Eine Ma\u00dfnahme nach \u00a7 163 Absatz 1 Satz 2 wirkt, soweit sie die gewerblichen Eink\u00fcnfte als Grundlage f\u00fcr die Festsetzung der Steuer vom Einkommen beeinflusst, auch f\u00fcr den Gewerbeertrag als Grundlage f\u00fcr die Festsetzung des Gewerbesteuermessbetrags.\n(3) Die Finanzbeh\u00f6rden teilen den Inhalt des Steuermessbescheids sowie die nach Absatz 2 getroffenen Ma\u00dfnahmen den Gemeinden mit, denen die Steuerfestsetzung (der Erlass des Realsteuerbescheids) obliegt. Die Mitteilungen an die Gemeinden erfolgen durch Bereitstellung zum Abruf; \u00a7 87a Absatz 8 und \u00a7 87b Absatz 1 gelten dabei entsprechend.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          9
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 10,
+    "id": "GT.multiplier",
+    "source": {
+      "source_id": "DEB138",
+      "act_article": "GewStG16(1)\u2013(4)",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__16.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-16-20261024.html",
+      "raw_sha256": "635cdef3ad63b9f6f06e352be12cf37051fea76a7a38ed5074d6f9ca6a3d5011",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB138.txt",
+      "reader_sha256": "930037afe18cafa3d91cdfc8376082d5d068ed6c47407a0e0b88be388e1690cd",
+      "native_LF": [
+        7,
+        10
+      ],
+      "exact_quote": "(1) Die Steuer wird auf Grund des Steuermessbetrags (\u00a7 14) mit einem Prozentsatz (Hebesatz) festgesetzt und erhoben, der von der hebeberechtigten Gemeinde (\u00a7\u00a7 4, 35a) zu bestimmen ist.\n(2) Der Hebesatz kann f\u00fcr ein Kalenderjahr oder mehrere Kalenderjahre festgesetzt werden.\n(3) 1Der Beschluss \u00fcber die Festsetzung oder \u00c4nderung des Hebesatzes ist bis zum 30. Juni eines Kalenderjahrs mit Wirkung vom Beginn dieses Kalenderjahrs zu fassen. 2Nach diesem Zeitpunkt kann der Beschluss \u00fcber die Festsetzung des Hebesatzes gefasst werden, wenn der Hebesatz die H\u00f6he der letzten Festsetzung nicht \u00fcberschreitet.\n(4) 1Der Hebesatz muss f\u00fcr alle in der Gemeinde vorhandenen Unternehmen der gleiche sein. 2Er betr\u00e4gt 280 Prozent, wenn die Gemeinde nicht einen h\u00f6heren Hebesatz bestimmt hat. 3Wird das Gebiet von Gemeinden ge\u00e4ndert, so kann die Landesregierung oder die von ihr bestimmte Stelle f\u00fcr die von der \u00c4nderung betroffenen Gebietsteile auf eine bestimmte Zeit verschiedene Hebes\u00e4tze zulassen. 4In den F\u00e4llen des Satzes 3 sind die \u00a7\u00a7 28 bis 34 mit der Ma\u00dfgabe anzuwenden, dass an die Stelle mehrerer Gemeinden die Gebietsteile der Gemeinde mit verschiedenen Hebes\u00e4tzen treten.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          10
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 4,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 11,
+    "id": "GT.profit",
+    "source": {
+      "source_id": "DEB149",
+      "act_article": "GewStG7",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__7.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-7-20261024.html",
+      "raw_sha256": "3f924fa113fd2b3cad32d6b165dccc912a736b117dbf5e84cb640c3e68beb709",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB149.txt",
+      "reader_sha256": "ceed470e58786ff5226831685f8e62498616685ea9be226fb80e00ff9a660694",
+      "native_LF": [
+        7,
+        13
+      ],
+      "exact_quote": "1Gewerbeertrag ist der nach den Vorschriften des Einkommensteuergesetzes oder des K\u00f6rperschaftsteuergesetzes zu ermittelnde Gewinn aus dem Gewerbebetrieb, der bei der Ermittlung des Einkommens f\u00fcr den dem Erhebungszeitraum (\u00a7 14) entsprechenden Veranlagungszeitraum zu ber\u00fccksichtigen ist, vermehrt und vermindert um die in den \u00a7\u00a7 8 und 9 bezeichneten Betr\u00e4ge. 2Zum Gewerbeertrag geh\u00f6rt auch der Gewinn aus der Ver\u00e4u\u00dferung oder Aufgabe 1.\ndes Betriebs oder eines Teilbetriebs einer Mitunternehmerschaft,\n2.\ndes Anteils eines Gesellschafters, der als Unternehmer (Mitunternehmer) des Betriebs einer Mitunternehmerschaft anzusehen ist,\n3.\ndes Anteils eines pers\u00f6nlich haftenden Gesellschafters einer Kommanditgesellschaft auf Aktien,\nsoweit er nicht auf eine nat\u00fcrliche Person als unmittelbar beteiligter Mitunternehmer entf\u00e4llt. 3Der nach \u00a7 5a des Einkommensteuergesetzes ermittelte Gewinn einschlie\u00dflich der Hinzurechnungen nach \u00a7 5a Absatz 4 und 4a des Einkommensteuergesetzes und das nach \u00a7 8 Absatz 1 Satz 3 des K\u00f6rperschaftsteuergesetzes ermittelte Einkommen gelten als Gewerbeertrag nach Satz 1. 4\u00a7 3 Nr. 40 und \u00a7 3c Abs. 2 des Einkommensteuergesetzes sind bei der Ermittlung des Gewerbeertrags einer Mitunternehmerschaft anzuwenden, soweit an der Mitunternehmerschaft nat\u00fcrliche Personen unmittelbar oder mittelbar \u00fcber eine oder mehrere Personengesellschaften beteiligt sind; im \u00dcbrigen ist \u00a7 8b des K\u00f6rperschaftsteuergesetzes anzuwenden. 5Bei der Ermittlung des Gewerbeertrags einer Kapitalgesellschaft, auf die \u00a7 8 Abs. 7 Satz 1 Nr. 2 des K\u00f6rperschaftsteuergesetzes anzuwenden ist, ist \u00a7 8 Abs. 9 Satz 1 bis 3 des K\u00f6rperschaftsteuergesetzes entsprechend anzuwenden; ein sich danach bei der jeweiligen Sparte im Sinne des \u00a7 8 Abs. 9 Satz 1 des K\u00f6rperschaftsteuergesetzes ergebender negativer Gewerbeertrag darf nicht mit einem positiven Gewerbeertrag aus einer anderen Sparte im Sinne des \u00a7 8 Abs. 9 Satz 1 des K\u00f6rperschaftsteuergesetzes ausgeglichen werden. 6\u00a7 50d Abs. 10 des Einkommensteuergesetzes ist bei der Ermittlung des Gewerbeertrags entsprechend anzuwenden. 7Hinzurechnungsbetr\u00e4ge im Sinne des \u00a7 10 Absatz 1 des Au\u00dfensteuergesetzes sind Eink\u00fcnfte, die in einer inl\u00e4ndischen Betriebsst\u00e4tte anfallen. 8Eink\u00fcnfte, die in einer ausl\u00e4ndischen Betriebsst\u00e4tte anfallen und nach den \u00a7\u00a7 7 bis 13 des Au\u00dfensteuergesetzes steuerpflichtig w\u00e4ren, falls diese Betriebsst\u00e4tte eine ausl\u00e4ndische Gesellschaft im Sinne dieser Vorschriften w\u00e4re, gelten als in einer inl\u00e4ndischen Betriebsst\u00e4tte erzielt.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          13
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 12,
+    "id": "GT.commercial",
+    "source": {
+      "source_id": "DEB023",
+      "act_article": "EStG15(2)/(3)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__15.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-15-20261024.html",
+      "raw_sha256": "9c66144e9197fbf44d69007269443432cc8e67aa92b3c7fb1d2c732e3315cbb4",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB023.txt",
+      "reader_sha256": "b8837a2eacafe010efbc888b8bdbb2fdb28e293691da768e14d348c42b41b9c9",
+      "native_LF": [
+        15,
+        19
+      ],
+      "exact_quote": "(2) 1Eine selbst\u00e4ndige nachhaltige Bet\u00e4tigung, die mit der Absicht, Gewinn zu erzielen, unternommen wird und sich als Beteiligung am allgemeinen wirtschaftlichen Verkehr darstellt, ist Gewerbebetrieb, wenn die Bet\u00e4tigung weder als Aus\u00fcbung von Land- und Forstwirtschaft noch als Aus\u00fcbung eines freien Berufs noch als eine andere selbst\u00e4ndige Arbeit anzusehen ist. 2Eine durch die Bet\u00e4tigung verursachte Minderung der Steuern vom Einkommen ist kein Gewinn im Sinne des Satzes 1. 3Ein Gewerbebetrieb liegt, wenn seine Voraussetzungen im \u00dcbrigen gegeben sind, auch dann vor, wenn die Gewinnerzielungsabsicht nur ein Nebenzweck ist.\n(3) Als Gewerbebetrieb gilt in vollem Umfang die mit Eink\u00fcnfteerzielungsabsicht unternommene T\u00e4tigkeit 1.\neiner offenen Handelsgesellschaft, einer Kommanditgesellschaft oder einer anderen Personengesellschaft, wenn die Gesellschaft auch eine T\u00e4tigkeit im Sinne des Absatzes 1 Satz 1 Nummer 1 aus\u00fcbt oder gewerbliche Eink\u00fcnfte im Sinne des Absatzes 1 Satz 1 Nummer 2 bezieht. 2Dies gilt unabh\u00e4ngig davon, ob aus der T\u00e4tigkeit im Sinne des Absatzes 1 Satz 1 Nummer 1 ein Gewinn oder Verlust erzielt wird oder ob die gewerblichen Eink\u00fcnfte im Sinne des Absatzes 1 Satz 1 Nummer 2 positiv oder negativ sind;\n2.\neiner Personengesellschaft, die keine T\u00e4tigkeit im Sinne des Absatzes 1 Satz 1 Nummer 1 aus\u00fcbt und bei der ausschlie\u00dflich eine oder mehrere Kapitalgesellschaften pers\u00f6nlich haftende Gesellschafter sind und nur diese oder Personen, die nicht Gesellschafter sind, zur Gesch\u00e4ftsf\u00fchrung befugt sind (gewerblich gepr\u00e4gte Personengesellschaft). 2Ist eine gewerblich gepr\u00e4gte Personengesellschaft als pers\u00f6nlich haftender Gesellschafter an einer anderen Personengesellschaft beteiligt, so steht f\u00fcr die Beurteilung, ob die T\u00e4tigkeit dieser Personengesellschaft als Gewerbebetrieb gilt, die gewerblich gepr\u00e4gte Personengesellschaft einer Kapitalgesellschaft gleich.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          15,
+          19
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 13,
+    "id": "GT.foreign",
+    "source": {
+      "source_id": "DEB024",
+      "act_article": "GewStG2(6)\u2013(8)",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__2.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-2-20261024.html",
+      "raw_sha256": "f309400c1595df013343d2b7ce996c79b615ed5c027a494f7696806097a84074",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB024.txt",
+      "reader_sha256": "b6396962d89d880e08aa62b7fb54e17d445fbfa3177dd088db9feae0c40f61d7",
+      "native_LF": [
+        12,
+        30
+      ],
+      "exact_quote": "(6) Inl\u00e4ndische Betriebsst\u00e4tten von Unternehmen, deren Gesch\u00e4ftsleitung sich in einem ausl\u00e4ndischen Staat befindet, mit dem kein Abkommen zur Vermeidung der Doppelbesteuerung besteht, unterliegen nicht der Gewerbesteuer, wenn und soweit 1.\ndie Eink\u00fcnfte aus diesen Betriebsst\u00e4tten im Rahmen der beschr\u00e4nkten Einkommensteuerpflicht steuerfrei sind und\n2.\nder ausl\u00e4ndische Staat Unternehmen, deren Gesch\u00e4ftsleitung sich im Inland befindet, eine entsprechende Befreiung von den der Gewerbesteuer \u00e4hnlichen oder ihr entsprechenden Steuern gew\u00e4hrt, oder in dem ausl\u00e4ndischen Staat keine der Gewerbesteuer \u00e4hnlichen oder ihr entsprechenden Steuern bestehen.\n(7) Zum Inland im Sinne dieses Gesetzes geh\u00f6rt auch der der Bundesrepublik Deutschland zustehende Anteil 1.\nan der ausschlie\u00dflichen Wirtschaftszone, soweit dort a)\ndie lebenden und nicht lebenden nat\u00fcrlichen Ressourcen der Gew\u00e4sser \u00fcber dem Meeresboden, des Meeresbodens und seines Untergrunds erforscht, ausgebeutet, erhalten oder bewirtschaftet werden,\nb)\nandere T\u00e4tigkeiten zur wirtschaftlichen Erforschung oder Ausbeutung der ausschlie\u00dflichen Wirtschaftszone ausge\u00fcbt werden, wie beispielsweise die Energieerzeugung aus Wasser, Str\u00f6mung und Wind oder\nc)\nk\u00fcnstliche Inseln errichtet oder genutzt werden und Anlagen und Bauwerke f\u00fcr die in den Buchstaben a und b genannten Zwecke errichtet oder genutzt werden, und\n2.\nam Festlandsockel, soweit dort a)\ndessen nat\u00fcrliche Ressourcen erforscht oder ausgebeutet werden; nat\u00fcrliche Ressourcen in diesem Sinne sind die mineralischen und sonstigen nicht lebenden Ressourcen des Meeresbodens und seines Untergrunds sowie die zu den sesshaften Arten geh\u00f6renden Lebewesen, die im nutzbaren Stadium entweder unbeweglich auf oder unter dem Meeresboden verbleiben oder sich nur in st\u00e4ndigem k\u00f6rperlichen Kontakt mit dem Meeresboden oder seinem Untergrund fortbewegen k\u00f6nnen; oder\nb)\nk\u00fcnstliche Inseln errichtet oder genutzt werden und Anlagen und Bauwerke f\u00fcr die in Buchstabe a genannten Zwecke errichtet oder genutzt werden, und\n3.\nder nicht zur Bundesrepublik Deutschland geh\u00f6rende Teil eines grenz\u00fcberschreitenden Gewerbegebiets, das nach den Vorschriften eines Abkommens zur Vermeidung der Doppelbesteuerung als solches bestimmt ist.\n(8) F\u00fcr die Anwendung dieses Gesetzes sind eine optierende Gesellschaft im Sinne des \u00a7 1a des K\u00f6rperschaftsteuergesetzes als Kapitalgesellschaft und ihre Gesellschafter wie die nicht pers\u00f6nlich haftenden Gesellschafter einer Kapitalgesellschaft zu behandeln.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          12,
+          30
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 14,
+    "id": "GT.partnership-decree",
+    "source": {
+      "source_id": "DEB217",
+      "act_article": "Equalstatesdecree5November2025",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Steuerarten/Gewerbesteuer/2025-11-05-gle-aufhebung-gle-01-10-20-anl.pdf?__blob=publicationFile&v=3",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-gle-20251105.pdf",
+      "raw_sha256": "dcfb24afd732063323bf8470f12f3a191766e8acbcb88f13e409c3e13cc5f38b",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB217.txt",
+      "reader_sha256": "e81470392e2fa1daac5c072b8a65ec628a04515611fe995c9ce5b64978fe181c",
+      "native_LF": [
+        10,
+        24
+      ],
+      "exact_quote": "Mit gleich lautenden Erlassen der obersten Finanzbeh\u00f6rden der L\u00e4nder vom 1. Oktober 2020,\na.a.O., hat die Finanzverwaltung zu den Folgen des BFH-Urteils vom 6. Juni 2019,\nIV R 30/16, BStBl II 2020, 649, auf die Gewerbesteuer Stellung genommen und entschieden,\ndass die Grunds\u00e4tze des Urteils nicht \u00fcber den entschiedenen Einzelfall hinaus allgemein\nanzuwenden sind.\n\nNach dem Ergebnis einer Er\u00f6rterung der obersten Finanzbeh\u00f6rden der L\u00e4nder wird an dieser\nAuffassung nicht weiter festgehalten. Die gleich lautenden Erlasse der obersten\nFinanzbeh\u00f6rden der L\u00e4nder vom 1. Oktober 2020, a.a.O., werden aufgehoben.\n\nDie im BFH-Urteil vom 6. Juni 2019, IV R 30/16, a.a.O., zum Ausdruck kommenden\ngewerbesteuerlichen Grunds\u00e4tze sind damit in allen offenen F\u00e4llen \u00fcber den entschiedenen\nEinzelfall hinaus allgemein anzuwenden.\n\nDiese Erlasse ergehen im Einvernehmen mit dem Bundesministerium der Finanzen.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          1,
+          28
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": "Actual administrative extension of namedBFHprinciples read; no unexamined deminimis case-law threshold inferred."
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 15,
+    "id": "GT.travel",
+    "source": {
+      "source_id": "DEB139",
+      "act_article": "GewStG35a",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__35a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-35a-20261024.html",
+      "raw_sha256": "cf6b7e50d272e970b004e520a15d49b57a9a1c1b65e2012d8500a10080e61197",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB139.txt",
+      "reader_sha256": "d5c7d72dd3e53d7a7c15c5de647b6d449b2774889f337d7ffb4afa65fb4044c8",
+      "native_LF": [
+        7,
+        10
+      ],
+      "exact_quote": "(1) Der Gewerbesteuer unterliegen auch die Reisegewerbebetriebe, soweit sie im Inland betrieben werden.\n(2) 1Reisegewerbebetrieb im Sinne dieses Gesetzes ist ein Gewerbebetrieb, dessen Inhaber nach den Vorschriften der Gewerbeordnung und den dazugeh\u00f6rigen Ausf\u00fchrungsbestimmungen einer Reisegewerbekarte bedarf. 2Wird im Rahmen eines einheitlichen Gewerbebetriebs sowohl ein stehendes Gewerbe als auch ein Reisegewerbe betrieben, so ist der Betrieb in vollem Umfang als stehendes Gewerbe zu behandeln.\n(3) Hebeberechtigt ist die Gemeinde, in der sich der Mittelpunkt der gewerblichen T\u00e4tigkeit befindet.\n(4) Ist im Laufe des Erhebungszeitraums der Mittelpunkt der gewerblichen T\u00e4tigkeit von einer Gemeinde in eine andere Gemeinde verlegt worden, so hat das Finanzamt den Steuermessbetrag nach den zeitlichen Anteilen (Kalendermonaten) auf die beteiligten Gemeinden zu zerlegen.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          10
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 16,
+    "id": "GT.solar",
+    "source": {
+      "source_id": "DEB140",
+      "act_article": "GewStG3no32",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__3.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-3-20261024.html",
+      "raw_sha256": "9623be1fb11150467f13008e817706001eb7f8e9d4df4c0d892d7c666edfabd0",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB140.txt",
+      "reader_sha256": "0fe329fe630480862c381c4adac6e3d10abddbaf0498bba0fd77d72b4a266228",
+      "native_LF": [
+        85,
+        86
+      ],
+      "exact_quote": "32.\nstehende Gewerbebetriebe von Anlagenbetreibern im Sinne des \u00a7 3 Nummer 2 des Erneuerbare-Energien-Gesetzes, wenn sich deren T\u00e4tigkeit ausschlie\u00dflich auf die Erzeugung und Vermarktung von Strom aus einer auf, an oder in einem Geb\u00e4ude angebrachten Solaranlage bis zu einer installierten Leistung von 30 Kilowatt beschr\u00e4nkt.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          85,
+          86
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 17,
+    "id": "GT.taxdebtor",
+    "source": {
+      "source_id": "DEB141",
+      "act_article": "GewStG5",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__5.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-5-20261024.html",
+      "raw_sha256": "9b5c285b13608c5c4f17fc7f7b87f307ed1ee875b9cdc9f67ea1f292c885dfa7",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB141.txt",
+      "reader_sha256": "619cf56a92a23df4ec0512bacdf94dc047e03aea72bff75ef338306dc224dbb0",
+      "native_LF": [
+        7,
+        8
+      ],
+      "exact_quote": "(1) 1Steuerschuldner ist der Unternehmer. 2Als Unternehmer gilt der, f\u00fcr dessen Rechnung das Gewerbe betrieben wird. 3Ist die T\u00e4tigkeit einer Personengesellschaft Gewerbebetrieb, so ist Steuerschuldner die Gesellschaft. 4Wird das Gewerbe in der Rechtsform einer Europ\u00e4ischen wirtschaftlichen Interessenvereinigung mit Sitz im Geltungsbereich der Verordnung (EWG) Nr. 2137/85 des Rates vom 25. Juli 1985 \u00fcber die Schaffung einer Europ\u00e4ischen wirtschaftlichen Interessenvereinigung (EWIV) - (ABl. L 199 vom 31.7.1985, S. 1) betrieben, sind abweichend von Satz 3 die Mitglieder Gesamtschuldner.\n(2) 1Geht ein Gewerbebetrieb im Ganzen auf einen anderen Unternehmer \u00fcber (\u00a7 2 Abs. 5), so ist der bisherige Unternehmer bis zum Zeitpunkt des \u00dcbergangs Steuerschuldner. 2Der andere Unternehmer ist von diesem Zeitpunkt an Steuerschuldner.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          8
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 18,
+    "id": "GT.activity-notice",
+    "source": {
+      "source_id": "DEB046",
+      "act_article": "AO138(1)/(1b)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__138.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-138-20261024.html",
+      "raw_sha256": "843b5720d9bc7f89ef230b4779c3b23c43e2ded3c0f3bb36036d606086787987",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB046.txt",
+      "reader_sha256": "aeb5cc53eb9fe47dff77dba5b0223183c3109dd51f99d9c9190992b07c976784",
+      "native_LF": [
+        7,
+        9
+      ],
+      "exact_quote": "(1) Wer einen Betrieb der Land- und Forstwirtschaft, einen gewerblichen Betrieb oder eine Betriebst\u00e4tte er\u00f6ffnet, hat dies nach amtlich vorgeschriebenem Vordruck der Gemeinde mitzuteilen, in der der Betrieb oder die Betriebst\u00e4tte er\u00f6ffnet wird; die Gemeinde unterrichtet unverz\u00fcglich das nach \u00a7 22 Absatz 1 zust\u00e4ndige Finanzamt von dem Inhalt der Mitteilung. Ist die Festsetzung der Realsteuern den Gemeinden nicht \u00fcbertragen worden, so tritt an die Stelle der Gemeinde das nach \u00a7 22 Absatz 2 zust\u00e4ndige Finanzamt. Wer eine freiberufliche T\u00e4tigkeit aufnimmt, hat dies dem nach \u00a7 19 zust\u00e4ndigen Finanzamt mitzuteilen. Das Gleiche gilt f\u00fcr die Verlegung und die Aufgabe eines Betriebs, einer Betriebst\u00e4tte oder einer freiberuflichen T\u00e4tigkeit. Unternehmer im Sinne des \u00a7 21 Absatz 1 Satz 2 haben die Aufnahme einer im Geltungsbereich des Gesetzes umsatzsteuerbaren T\u00e4tigkeit dem nach der Umsatzsteuer-Zust\u00e4ndigkeitsverordnung zust\u00e4ndigen Finanzamt anzuzeigen, es sei denn, diese Unternehmer erbringen in Deutschland ausschlie\u00dflich steuerbare und steuerpflichtige Ums\u00e4tze, die in den besonderen Besteuerungsverfahren nach den \u00a7\u00a7 18i bis 18k des Umsatzsteuergesetzes zu erkl\u00e4ren sind.\n(1a) Unternehmer im Sinne des \u00a7 2 des Umsatzsteuergesetzes k\u00f6nnen ihre Anzeigepflichten nach Absatz 1 zus\u00e4tzlich bei der f\u00fcr die Umsatzbesteuerung zust\u00e4ndigen Finanzbeh\u00f6rde elektronisch erf\u00fcllen.\n(1b) Sofern Steuerpflichtige gem\u00e4\u00df Absatz 1 Satz 1 bis 3 verpflichtet sind, eine Betriebser\u00f6ffnung oder Aufnahme einer freiberuflichen T\u00e4tigkeit mitzuteilen, haben sie dem in Absatz 1 bezeichneten Finanzamt weitere Ausk\u00fcnfte \u00fcber die f\u00fcr die Besteuerung erheblichen rechtlichen und tats\u00e4chlichen Verh\u00e4ltnisse zu erteilen. Die Ausk\u00fcnfte im Sinne des Satzes 1 sind nach amtlich vorgeschriebenem Datensatz \u00fcber die amtlich bestimmte Schnittstelle zu \u00fcbermitteln. Auf Antrag kann das Finanzamt zur Vermeidung unbilliger H\u00e4rten auf eine \u00dcbermittlung gem\u00e4\u00df Satz 2 verzichten; in diesem Fall sind die Ausk\u00fcnfte im Sinne des Satzes 1 nach amtlich vorgeschriebenem Vordruck zu erteilen. Die S\u00e4tze 1 bis 3 gelten entsprechend f\u00fcr Steuerpflichtige im Sinne des \u00a7 137, die nicht nach Absatz 1 zur Anzeige verpflichtet sind.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          10
+        ],
+        [
+          24,
+          24
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 79,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 19,
+    "id": "GT.notice-month",
+    "source": {
+      "source_id": "DEB046",
+      "act_article": "AO138(4)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__138.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-138-20261024.html",
+      "raw_sha256": "843b5720d9bc7f89ef230b4779c3b23c43e2ded3c0f3bb36036d606086787987",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB046.txt",
+      "reader_sha256": "aeb5cc53eb9fe47dff77dba5b0223183c3109dd51f99d9c9190992b07c976784",
+      "native_LF": [
+        24,
+        24
+      ],
+      "exact_quote": "(4) Mitteilungen nach den Abs\u00e4tzen 1, 1a und 1b sind innerhalb eines Monats nach dem meldepflichtigen Ereignis zu erstatten.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          10
+        ],
+        [
+          24,
+          24
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 80,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 20,
+    "id": "GT.floor-admin",
+    "source": {
+      "source_id": "DEB179",
+      "act_article": "BMFSteuernvonAbisZ2025 p69",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-steuern-a-z-20261024.pdf",
+      "raw_sha256": "c36ca62b6c89e5524682fcc124a68548aec918813761dbbf866f010f741d52fb",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB179.txt",
+      "reader_sha256": "2d05ce2568efd71d46184329c032e3190ad2a35348b1e16e405da272f0f33696",
+      "native_LF": [
+        2537,
+        2542
+      ],
+      "exact_quote": "\nDie Gewerbesteuer wird von der Gemeinde aufgrund des Steuermess\u00ad\nbetrags \u2013 im Fall der Zerlegung aufgrund des Zerlegungsanteils \u2013 mit\neinem Hundertsatz (Hebesatz) festgesetzt und erhoben. Die hebe-\nberechtigte Gemeinde bestimmt diesen Hebesatz. Er betr\u00e4gt mindestens\n200 Prozent.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          2530,
+          2570
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 21,
+    "id": "GT.floor-transition",
+    "source": {
+      "source_id": "DEB142",
+      "act_article": "GewStG36(5b)",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__36.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-36-20261024.html",
+      "raw_sha256": "2d686dad5c5e579b98fc1f16d116a55dee2f1771f01b705308ccf7e812934bc8",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB142.txt",
+      "reader_sha256": "e5611884eab51e146aac20514bef572484d48e354fde18ca721941149e1d6f3a",
+      "native_LF": [
+        17,
+        17
+      ],
+      "exact_quote": "(5b) \u00a7 16 Absatz 4 Satz 2 in der Fassung des Artikels 7 des Gesetzes vom 29. Juni 2026 (BGBl. 2026 I Nr. 197) ist erstmals f\u00fcr den Erhebungszeitraum 2027 anzuwenden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          17,
+          17
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 5,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 22,
+    "id": "GT.Munich",
+    "source": {
+      "source_id": "DEB219",
+      "act_article": "CityofMunich currentGewerbesteuerpage",
+      "official_url": "https://stadt.muenchen.de/service/info/gewerbesteuer/1074725/",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/muenchen-gewst-20261024.html",
+      "raw_sha256": "0d823efde93dbf84f31b0f3b3fc4be345f7d5cdb1ed4e5dd004eb0f356505e44",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB219.txt",
+      "reader_sha256": "2d48497cf5c08d28440649bf67c1af82b9a7bc8e4fa566452787d38c62da7979",
+      "native_LF": [
+        68,
+        70
+      ],
+      "exact_quote": "Berechnung der Gewerbesteuer\nIhr zust\u00e4ndiges Finanzamt entscheidet \u00fcber die Gewerbesteuerpflicht, ermittelt den Gewerbeertrag und setzt den Gewerbesteuermessbetrag sowie den Besteuerungszeitraum im Gewerbesteuermessbescheid fest. Die Landeshauptstadt M\u00fcnchen multipliziert dann den Gewerbesteuermessbetrag mit dem aktuell g\u00fcltigen Hebesatz von 490 Prozent.\nDer errechnete Betrag wird als Gewerbesteuer im Gewerbesteuerbescheid ausgewiesen.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          66,
+          70
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": "The page says aktuellg\u00fcltig490%, no2026-specific municipalresolution claimed."
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 23,
+    "id": "GT.average2025",
+    "source": {
+      "source_id": "DEB220",
+      "act_article": "DestatisRelease3692026, realtaxes2025",
+      "official_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_369_712.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/destatis-pd26-369-20261024.html",
+      "raw_sha256": "8aa4fdd7ff2e1b860dfe4a5f0ae7cade756c20532fe22f550d770d1b2d67efc5",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB220.txt",
+      "reader_sha256": "db0904168cf4d73f407ca0d4ad5d725e8de2acf1fa82180a7a2ec2ef39add77f",
+      "native_LF": [
+        124,
+        125
+      ],
+      "exact_quote": "Durchschnittlicher Gewerbesteuerhebesatz nahezu unver\u00e4ndert\nDie von den Gemeinden festgesetzten Hebes\u00e4tze zur Gewerbesteuer sowie zur Grundsteuer A, B und C entscheiden ma\u00dfgeblich \u00fcber die H\u00f6he ihrer Realsteuereinnahmen. Im Jahr 2025 lag der durchschnittliche Hebesatz aller Gemeinden in Deutschland f\u00fcr die Gewerbesteuer bei 410 % und damit 1 Prozentpunkt \u00fcber dem Vorjahreswert. Bei der Grundsteuer A stieg der durchschnittliche Hebesatz im Jahr 2025 gegen\u00fcber 2024 um 15 Prozentpunkte auf 377 %.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          123,
+          126
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": "410%is the2025 nationalaverage, usedonlyas labelledillustration, never as a municipality2026rate."
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 24,
+    "id": "GT.partnership-reduction",
+    "source": {
+      "source_id": "DEB144",
+      "act_article": "GewStG9no2/2a",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__9.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-9-20261024.html",
+      "raw_sha256": "5c93e3e838d08265da9818982c3174bec0bc317d973d2c15dbbd456c7e9d2ddd",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB144.txt",
+      "reader_sha256": "006084d381b5ce625477eb2ee9f76609afe16cb125599687e6e5d2fa36b10a41",
+      "native_LF": [
+        25,
+        28
+      ],
+      "exact_quote": "2.\ndie Anteile am Gewinn einer in- oder ausl\u00e4ndischen offenen Handelsgesellschaft, einer Kommanditgesellschaft oder einer anderen Gesellschaft, bei der die Gesellschafter als Unternehmer (Mitunternehmer) des Gewerbebetriebs anzusehen sind, wenn die Gewinnanteile bei Ermittlung des Gewinns angesetzt worden sind. 2Satz 1 ist nicht anzuwenden, soweit im Gewinnanteil Eink\u00fcnfte im Sinne des \u00a7 7 Satz 7 und 8 enthalten sind. 3Bei Lebens- und Krankenversicherungsunternehmen und Pensionsfonds ist Satz 1 auch auf den \u00fcbrigen Gewinnanteil nicht anzuwenden. 4Satz 2 ist nicht anzuwenden, soweit diese Eink\u00fcnfte bereits bei einer den Anteil am Gewinn vermittelnden inl\u00e4ndischen offenen Handelsgesellschaft, Kommanditgesellschaft oder anderen Gesellschaft, bei der die Gesellschafter als Unternehmer (Mitunternehmer) des Gewerbebetriebs anzusehen sind, Bestandteil des Gewerbeertrags waren. 5Bei Lebens- und Krankenversicherungsunternehmen und Pensionsfonds ist Satz 4 auf Eink\u00fcnfte im Sinne des \u00a7 7 Satz 8 nicht anzuwenden;\n2a.\ndie Gewinne aus Anteilen an einer nicht steuerbefreiten inl\u00e4ndischen Kapitalgesellschaft im Sinne des \u00a7 2 Abs. 2, einer Kredit- oder Versicherungsanstalt des \u00f6ffentlichen Rechts, einer Genossenschaften oder einer Unternehmensbeteiligungsgesellschaft im Sinne des \u00a7 3 Nr. 23, wenn die Beteiligung zu Beginn des Erhebungszeitraums mindestens 15 Prozent des Grund- oder Stammkapitals betr\u00e4gt und die Gewinnanteile bei Ermittlung des Gewinns (\u00a7 7) angesetzt worden sind. 2Ist ein Grund- oder Stammkapital nicht vorhanden, so ist die Beteiligung an dem Verm\u00f6gen, bei Genossenschaften die Beteiligung an der Summe der Gesch\u00e4ftsguthaben, ma\u00dfgebend. 3Im unmittelbaren Zusammenhang mit Gewinnanteilen stehende Aufwendungen mindern den K\u00fcrzungsbetrag, soweit entsprechende Beteiligungsertr\u00e4ge zu ber\u00fccksichtigen sind; insoweit findet \u00a7 8 Nr. 1 keine Anwendung. 4Nach \u00a7 8b Abs. 5 des K\u00f6rperschaftsteuergesetzes nicht abziehbare Betriebsausgaben sind keine Gewinne aus Anteilen im Sinne des Satzes 1. 5Satz 1 ist bei Lebens- und Krankenversicherungsunternehmen auf Gewinne aus Anteilen, die den Kapitalanlagen zuzurechnen sind, nicht anzuwenden; f\u00fcr Pensionsfonds gilt Entsprechendes;",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          25,
+          28
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 25,
+    "id": "GT.foreign-dividend",
+    "source": {
+      "source_id": "DEB144",
+      "act_article": "GewStG9no7/8",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__9.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-9-20261024.html",
+      "raw_sha256": "5c93e3e838d08265da9818982c3174bec0bc317d973d2c15dbbd456c7e9d2ddd",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB144.txt",
+      "reader_sha256": "006084d381b5ce625477eb2ee9f76609afe16cb125599687e6e5d2fa36b10a41",
+      "native_LF": [
+        55,
+        58
+      ],
+      "exact_quote": "7.\ndie Gewinne aus Anteilen an einer Kapitalgesellschaft mit Gesch\u00e4ftsleitung und Sitz au\u00dferhalb des Geltungsbereichs dieses Gesetzes, wenn die Beteiligung zu Beginn des Erhebungszeitraums mindestens 15 Prozent des Nennkapitals betr\u00e4gt und die Gewinnanteile bei der Ermittlung des Gewinns (\u00a7 7) angesetzt worden sind. 2\u00a7 9 Nummer 2a Satz 3 bis 5 gilt entsprechend;\n8.\ndie Gewinne aus Anteilen an einer ausl\u00e4ndischen Gesellschaft, die nach einem Abkommen zur Vermeidung der Doppelbesteuerung unter der Voraussetzung einer Mindestbeteiligung von der Gewerbesteuer befreit sind, wenn die Beteiligung mindestens 15 Prozent betr\u00e4gt und die Gewinnanteile bei der Ermittlung des Gewinns (\u00a7 7) angesetzt worden sind; ist in einem Abkommen zur Vermeidung der Doppelbesteuerung eine niedrigere Mindestbeteiligungsgrenze vereinbart, ist diese ma\u00dfgebend. 2\u00a7 9 Nr. 2a Satz 3 gilt entsprechend. 3\u00a7 9 Nr. 2a Satz 4 gilt entsprechend. 4Satz 1 ist bei Lebens- und Krankenversicherungsunternehmen auf Gewinne aus Anteilen, die den Kapitalanlagen zuzurechnen sind, nicht anzuwenden; f\u00fcr Pensionsfonds gilt Entsprechendes.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          55,
+          58
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 26,
+    "id": "GT.ownerwages",
+    "source": {
+      "source_id": "DEB146",
+      "act_article": "GewStG31",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__31.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-31-20261024.html",
+      "raw_sha256": "0f6d168a6c7f008c77e883ecab48356c3471a0f73c59c46bb268fc74bb992d82",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB146.txt",
+      "reader_sha256": "2f305a64620e8172d7d6a3a2e56110d809ce1669d14bff861f0687697b90bd3b",
+      "native_LF": [
+        7,
+        11
+      ],
+      "exact_quote": "(1) 1Arbeitsl\u00f6hne sind vorbehaltlich der Abs\u00e4tze 2 bis 5 die Verg\u00fctungen im Sinne des \u00a7 19 Abs. 1 Nr. 1 des Einkommensteuergesetzes, soweit sie nicht durch andere Rechtsvorschriften von der Einkommensteuer befreit sind. 2Zuschl\u00e4ge f\u00fcr Mehrarbeit und f\u00fcr Sonntags-, Feiertags- und Nachtarbeit geh\u00f6ren unbeschadet der einkommensteuerlichen Behandlung zu den Arbeitsl\u00f6hnen.\n(2) Zu den Arbeitsl\u00f6hnen geh\u00f6ren nicht Verg\u00fctungen, die an Personen gezahlt worden sind, die zu ihrer Berufsausbildung besch\u00e4ftigt werden.\n(3) In F\u00e4llen einer Befreiung von der Gewerbesteuer bleiben die Verg\u00fctungen an solche Arbeitnehmer au\u00dfer Ansatz, die nicht ausschlie\u00dflich oder \u00fcberwiegend in dem steuerpflichtigen Betrieb oder Teil des Betriebs t\u00e4tig sind.\n(4) 1Nach dem Gewinn berechnete einmalige Verg\u00fctungen (z. B. Tantiemen, Gratifikationen) sind nicht anzusetzen. 2Das Gleiche gilt f\u00fcr sonstige Verg\u00fctungen, soweit sie bei dem einzelnen Arbeitnehmer 50.000 Euro \u00fcbersteigen.\n(5) Bei Unternehmen, die nicht von einer juristischen Person betrieben werden, sind f\u00fcr die im Betrieb t\u00e4tigen Unternehmer (Mitunternehmer) insgesamt 25.000 Euro j\u00e4hrlich anzusetzen.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          11
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 27,
+    "id": "GT.prepayments",
+    "source": {
+      "source_id": "DEB147",
+      "act_article": "GewStG19",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__19.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-19-20261024.html",
+      "raw_sha256": "f89bc46265fbdb2798332ac5c120b1a1d6809297622e7ea4d2d1e1e72092b9bc",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB147.txt",
+      "reader_sha256": "f99fae65bfe57a8cb3e953153eec998fa03c1a3bb24498daa1a49b259186c7ee",
+      "native_LF": [
+        7,
+        11
+      ],
+      "exact_quote": "(1) 1Der Steuerschuldner hat am 15. Februar, 15. Mai, 15. August und 15. November Vorauszahlungen zu entrichten. 2Gewerbetreibende, deren Wirtschaftsjahr vom Kalenderjahr abweicht, haben die Vorauszahlungen w\u00e4hrend des Wirtschaftsjahrs zu entrichten, das im Erhebungszeitraum endet. 3Satz 2 gilt nur, wenn der Gewerbebetrieb nach dem 31. Dezember 1985 gegr\u00fcndet worden oder infolge Wegfalls eines Befreiungsgrundes in die Steuerpflicht eingetreten ist oder das Wirtschaftsjahr nach diesem Zeitpunkt auf einen vom Kalenderjahr abweichenden Zeitraum umgestellt worden ist.\n(2) Jede Vorauszahlung betr\u00e4gt grunds\u00e4tzlich ein Viertel der Steuer, die sich bei der letzten Veranlagung ergeben hat.\n(3) 1Die Gemeinde kann die Vorauszahlungen der Steuer anpassen, die sich f\u00fcr den Erhebungszeitraum (\u00a7 14) voraussichtlich ergeben wird. 2Die Anpassung kann bis zum Ende des 15. auf den Erhebungszeitraum folgenden Kalendermonats vorgenommen werden; bei einer nachtr\u00e4glichen Erh\u00f6hung der Vorauszahlungen ist der Erh\u00f6hungsbetrag innerhalb eines Monats nach Bekanntgabe des Vorauszahlungsbescheids zu entrichten. 3Das Finanzamt kann bis zum Ende des 15. auf den Erhebungszeitraum folgenden Kalendermonats f\u00fcr Zwecke der Gewerbesteuer-Vorauszahlungen den Steuermessbetrag festsetzen, der sich voraussichtlich ergeben wird. 4An diese Festsetzung ist die Gemeinde bei der Anpassung der Vorauszahlungen nach den S\u00e4tzen 1 und 2 gebunden.\n(4) Wird im Laufe des Erhebungszeitraums ein Gewerbebetrieb neu gegr\u00fcndet oder tritt ein bereits bestehender Gewerbebetrieb infolge Wegfalls des Befreiungsgrundes in die Steuerpflicht ein, so gilt f\u00fcr die erstmalige Festsetzung der Vorauszahlungen Absatz 3 entsprechend.\n(5) 1Die einzelne Vorauszahlung ist auf den n\u00e4chsten vollen Betrag in Euro nach unten abzurunden. 2Sie wird nur festgesetzt, wenn sie mindestens 50 Euro betr\u00e4gt.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          11
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 28,
+    "id": "GT.filing",
+    "source": {
+      "source_id": "DEB148",
+      "act_article": "GewStDV25",
+      "official_url": "https://www.gesetze-im-internet.de/gewstdv_1955/__25.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstdv-25-20261024.html",
+      "raw_sha256": "7fa141e157520695e52b700e2d5afe81f0a949c9c0f5a14f8b31183749f81e89",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB148.txt",
+      "reader_sha256": "dbb29495b02df477985d87eead52d0bfc21a0a4f4bfa44f9ece1af6c58d94829",
+      "native_LF": [
+        7,
+        21
+      ],
+      "exact_quote": "(1) Eine Gewerbesteuererkl\u00e4rung ist abzugeben 1.\nf\u00fcr alle gewerbesteuerpflichtigen Unternehmen, deren Gewerbeertrag im Erhebungszeitraum den Betrag von 24 500 Euro \u00fcberstiegen hat;\n2.\nf\u00fcr Kapitalgesellschaften (Aktiengesellschaften, Kommanditgesellschaften auf Aktien, Gesellschaften mit beschr\u00e4nkter Haftung), wenn sie nicht von der Gewerbesteuer befreit sind;\n3.\nf\u00fcr Genossenschaften einschlie\u00dflich Europ\u00e4ischer Genossenschaften und f\u00fcr Versicherungsvereine auf Gegenseitigkeit, wenn sie nicht von der Gewerbesteuer befreit sind. F\u00fcr sonstige juristische Personen des privaten Rechts und f\u00fcr Vereine ohne Rechtspers\u00f6nlichkeit ist eine Gewerbesteuererkl\u00e4rung nur abzugeben, soweit diese Unternehmen einen wirtschaftlichen Gesch\u00e4ftsbetrieb - ausgenommen Land- und Forstwirtschaft - unterhalten, dessen Gewerbeertrag im Erhebungszeitraum den Betrag von 5 000 Euro \u00fcberstiegen hat;\n4.\nf\u00fcr Unternehmen von juristischen Personen des \u00f6ffentlichen Rechts, wenn sie als stehende Gewerbebetriebe anzusehen sind und ihr Gewerbeertrag im Erhebungszeitraum den Betrag von 5 000 Euro \u00fcberstiegen hat;\n5.\nf\u00fcr Unternehmen im Sinne des \u00a7 3 Nr. 5, 6, 8, 9, 15, 17, 21, 26, 27, 28, und 29 des Gesetzes nur, wenn sie neben der von der Gewerbesteuer befreiten T\u00e4tigkeit auch eine der Gewerbesteuer unterliegende T\u00e4tigkeit ausge\u00fcbt haben und ihr steuerpflichtiger Gewerbeertrag im Erhebungszeitraum den Betrag von 5 000 Euro \u00fcberstiegen hat;\n6.\nf\u00fcr Unternehmen, f\u00fcr die zum Schluss des vorangegangenen Erhebungszeitraums vortragsf\u00e4hige Fehlbetr\u00e4ge gesondert festgestellt worden sind;\n7.\nf\u00fcr alle gewerbesteuerpflichtigen Unternehmen, f\u00fcr die vom Finanzamt eine Gewerbesteuererkl\u00e4rung besonders verlangt wird.\n(2) 1Die Steuererkl\u00e4rung ist sp\u00e4testens an dem von den obersten Finanzbeh\u00f6rden der L\u00e4nder bestimmten Zeitpunkt abzugeben. 2Das Recht des Finanzamts, schon vor diesem Zeitpunkt Angaben zu verlangen, die f\u00fcr die Besteuerung von Bedeutung sind, bleibt unber\u00fchrt.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          21
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 29,
+    "id": "GT.not-expense",
+    "source": {
+      "source_id": "DEB029",
+      "act_article": "EStG4(5b)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__4.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+      "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB029.txt",
+      "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+      "native_LF": [
+        52,
+        52
+      ],
+      "exact_quote": "(5b) Die Gewerbesteuer und die darauf entfallenden Nebenleistungen sind keine Betriebsausgaben.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          49,
+          53
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 48,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 30,
+    "id": "GT.partnerpay",
+    "source": {
+      "source_id": "DEB023",
+      "act_article": "EStG15(1)2/3",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__15.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-15-20261024.html",
+      "raw_sha256": "9c66144e9197fbf44d69007269443432cc8e67aa92b3c7fb1d2c732e3315cbb4",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB023.txt",
+      "reader_sha256": "b8837a2eacafe010efbc888b8bdbb2fdb28e293691da768e14d348c42b41b9c9",
+      "native_LF": [
+        9,
+        13
+      ],
+      "exact_quote": "2.\ndie Gewinnanteile der Gesellschafter einer Offenen Handelsgesellschaft, einer Kommanditgesellschaft und einer anderen Gesellschaft, bei der der Gesellschafter als Unternehmer (Mitunternehmer) des Betriebs anzusehen ist, und die Verg\u00fctungen, die der Gesellschafter von der Gesellschaft f\u00fcr seine T\u00e4tigkeit im Dienst der Gesellschaft oder f\u00fcr die Hingabe von Darlehen oder f\u00fcr die \u00dcberlassung von Wirtschaftsg\u00fctern bezogen hat. 2Der mittelbar \u00fcber eine oder mehrere Personengesellschaften beteiligte Gesellschafter steht dem unmittelbar beteiligten Gesellschafter gleich; er ist als Mitunternehmer des Betriebs der Gesellschaft anzusehen, an der er mittelbar beteiligt ist, wenn er und die Personengesellschaften, die seine Beteiligung vermitteln, jeweils als Mitunternehmer der Betriebe der Personengesellschaften anzusehen sind, an denen sie unmittelbar beteiligt sind;\n3.\ndie Gewinnanteile der pers\u00f6nlich haftenden Gesellschafter einer Kommanditgesellschaft auf Aktien, soweit sie nicht auf Anteile am Grundkapital entfallen, und die Verg\u00fctungen, die der pers\u00f6nlich haftende Gesellschafter von der Gesellschaft f\u00fcr seine T\u00e4tigkeit im Dienst der Gesellschaft oder f\u00fcr die Hingabe von Darlehen oder f\u00fcr die \u00dcberlassung von Wirtschaftsg\u00fctern bezogen hat.\n2Satz 1 Nummer 2 und 3 gilt auch f\u00fcr Verg\u00fctungen, die als nachtr\u00e4gliche Eink\u00fcnfte (\u00a7 24 Nummer 2) bezogen werden. 3\u00a7 13 Absatz 5 gilt entsprechend, sofern das Grundst\u00fcck im Veranlagungszeitraum 1986 zu einem gewerblichen Betriebsverm\u00f6gen geh\u00f6rt hat.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          9,
+          13
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 31,
+    "id": "GT.finyear",
+    "source": {
+      "source_id": "DEB150",
+      "act_article": "GewStG10",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__10.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-10-20261024.html",
+      "raw_sha256": "bd17baa787ae2607af5cacc117e31c17beaaaaafb4f276f00247c55df50d18fe",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB150.txt",
+      "reader_sha256": "482520599bcc7b442a364e59563c695a775927a24102acf0092843e9929f01f8",
+      "native_LF": [
+        7,
+        8
+      ],
+      "exact_quote": "(1) Ma\u00dfgebend ist der Gewerbeertrag, der in dem Erhebungszeitraum bezogen worden ist, f\u00fcr den der Steuermessbetrag (\u00a7 14) festgesetzt wird.\n(2) Weicht bei Unternehmen, die B\u00fccher nach den Vorschriften des Handelsgesetzbuchs zu f\u00fchren verpflichtet sind, das Wirtschaftsjahr, f\u00fcr das sie regelm\u00e4\u00dfig Abschl\u00fcsse machen, vom Kalenderjahr ab, so gilt der Gewerbeertrag als in dem Erhebungszeitraum bezogen, in dem das Wirtschaftsjahr endet.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          8
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 32,
+    "id": "GT.vehicle-transition",
+    "source": {
+      "source_id": "DEB142",
+      "act_article": "GewStG36(4)",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__36.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-36-20261024.html",
+      "raw_sha256": "2d686dad5c5e579b98fc1f16d116a55dee2f1771f01b705308ccf7e812934bc8",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB142.txt",
+      "reader_sha256": "e5611884eab51e146aac20514bef572484d48e354fde18ca721941149e1d6f3a",
+      "native_LF": [
+        12,
+        12
+      ],
+      "exact_quote": "(4) 1\u00a7 8 Nummer 1 Buchstabe d Satz 2 ist nur auf Entgelte anzuwenden, die auf Vertr\u00e4gen beruhen, die nach dem 31. Dezember 2019 abgeschlossen worden sind. 2Dabei ist bei Vertr\u00e4gen, die vor dem 1. Januar 2025 abgeschlossen werden, statt einer Reichweite von 80 Kilometern eine Reichweite von 60 Kilometern ausreichend. 3\u00a7 8 Nummer 1 Buchstabe d Satz 2 ist letztmals f\u00fcr den Erhebungszeitraum 2030 anzuwenden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          12,
+          12
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 33,
+    "id": "GT.otheraddbacks",
+    "source": {
+      "source_id": "DEB143",
+      "act_article": "GewStG8no4/5/8/9/10/12",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__8.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-8-20261024.html",
+      "raw_sha256": "a846887cce2d12a7250a8771e5f173e4ddc85ead112d6b468bf5860437423990",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB143.txt",
+      "reader_sha256": "0be4dce9b7938aa0f2aee07fbbaaf44921df55cb499d9fb4cce572bb88ca36ae",
+      "native_LF": [
+        30,
+        51
+      ],
+      "exact_quote": "4.\ndie Gewinnanteile, die an pers\u00f6nlich haftende Gesellschafter einer Kommanditgesellschaft auf Aktien auf ihre nicht auf das Grundkapital gemachten Einlagen oder als Verg\u00fctung (Tantieme) f\u00fcr die Gesch\u00e4ftsf\u00fchrung verteilt worden sind;\n5.\ndie nach \u00a7 3 Nr. 40 des Einkommensteuergesetzes oder \u00a7 8b Abs. 1 des K\u00f6rperschaftsteuergesetzes au\u00dfer Ansatz bleibenden Gewinnanteile (Dividenden) und die diesen gleichgestellten Bez\u00fcge und erhaltenen Leistungen aus Anteilen an einer K\u00f6rperschaft, Personenvereinigung oder Verm\u00f6gensmasse im Sinne des K\u00f6rperschaftsteuergesetzes, soweit sie nicht die Voraussetzungen des \u00a7 9 Nr. 2a oder 7 erf\u00fcllen, nach Abzug der mit diesen Einnahmen, Bez\u00fcgen und erhaltenen Leistungen in wirtschaftlichem Zusammenhang stehenden Betriebsausgaben, soweit sie nach \u00a7 3c Abs. 2 des Einkommensteuergesetzes und \u00a7 8b Abs. 5 und 10 des K\u00f6rperschaftsteuergesetzes unber\u00fccksichtigt bleiben.\n6.\n(weggefallen)\n7.\n(weggefallen)\n8.\ndie Anteile am Verlust einer in- oder ausl\u00e4ndischen offenen Handelsgesellschaft, einer Kommanditgesellschaft oder einer anderen Gesellschaft, bei der die Gesellschafter als Unternehmer (Mitunternehmer) des Gewerbebetriebs anzusehen sind. 2Satz 1 ist bei Lebens- und Krankenversicherungsunternehmen nicht anzuwenden; f\u00fcr Pensionsfonds gilt Entsprechendes;\n9.\ndie Ausgaben im Sinne des \u00a7 9 Abs. 1 Nr. 2 des K\u00f6rperschaftsteuergesetzes;\n10.\nGewinnminderungen, diea)\ndurch Ansatz des niedrigeren Teilwerts des Anteils an einer K\u00f6rperschaft oder\nb)\ndurch Ver\u00e4u\u00dferung oder Entnahme des Anteils an einer K\u00f6rperschaft oder bei Aufl\u00f6sung oder Herabsetzung des Kapitals der K\u00f6rperschaft\nentstanden sind, soweit der Ansatz des niedrigeren Teilwerts oder die sonstige Gewinnminderung auf Gewinnaussch\u00fcttungen der K\u00f6rperschaft, um die der Gewerbeertrag nach \u00a7 9 Nr. 2a, 7 oder 8 zu k\u00fcrzen ist, oder organschaftliche Gewinnabf\u00fchrungen der K\u00f6rperschaft zur\u00fcckzuf\u00fchren ist;\n11.\n(weggefallen)\n12.\nausl\u00e4ndische Steuern, die nach \u00a7 34c des Einkommensteuergesetzes oder nach einer Bestimmung, die \u00a7 34c des Einkommensteuergesetzes f\u00fcr entsprechend anwendbar erkl\u00e4rt, bei der Ermittlung der Eink\u00fcnfte abgezogen werden, soweit sie auf Gewinne oder Gewinnanteile entfallen, die bei der Ermittlung des Gewerbeertrags au\u00dfer Ansatz gelassen oder nach \u00a7 9 gek\u00fcrzt werden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          30,
+          51
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 34,
+    "id": "GT.property-reduction",
+    "source": {
+      "source_id": "DEB144",
+      "act_article": "GewStG9no1",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__9.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-9-20261024.html",
+      "raw_sha256": "5c93e3e838d08265da9818982c3174bec0bc317d973d2c15dbbd456c7e9d2ddd",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB144.txt",
+      "reader_sha256": "006084d381b5ce625477eb2ee9f76609afe16cb125599687e6e5d2fa36b10a41",
+      "native_LF": [
+        7,
+        24
+      ],
+      "exact_quote": "Die Summe des Gewinns und der Hinzurechnungen wird gek\u00fcrzt um 1.\ndie im Erhebungszeitraum als Betriebsausgabe erfasste Grundsteuer f\u00fcr zum Betriebsverm\u00f6gen des Unternehmers geh\u00f6renden Grundbesitz. 2An Stelle der K\u00fcrzung nach Satz 1 tritt auf Antrag bei Unternehmen, die ausschlie\u00dflich eigenen Grundbesitz oder neben eigenem Grundbesitz eigenes Kapitalverm\u00f6gen verwalten und nutzen oder daneben Wohnungsbauten betreuen oder Einfamilienh\u00e4user, Zweifamilienh\u00e4user oder Eigentumswohnungen im Sinne des Wohnungseigentumsgesetzes in der jeweils geltenden Fassung, errichten und ver\u00e4u\u00dfern, die K\u00fcrzung um den Teil des Gewerbeertrags, der auf die Verwaltung und Nutzung des eigenen Grundbesitzes entf\u00e4llt. 3Satz 2 gilt entsprechend, wenn a)\nin Verbindung mit der Errichtung und Ver\u00e4u\u00dferung von Eigentumswohnungen Teileigentum im Sinne des Wohnungseigentumsgesetzes errichtet und ver\u00e4u\u00dfert wird und das Geb\u00e4ude zu mehr als 66 2/3 Prozent Wohnzwecken dient,\nb)\nin Verbindung mit der Verwaltung und Nutzung des eigenen Grundbesitzes Einnahmen aus der Lieferung von Strom aa)\nim Zusammenhang mit dem Betrieb von Anlagen zur Stromerzeugung aus erneuerbaren Energien im Sinne des \u00a7 3 Nummer 21 des Erneuerbare-Energien-Gesetzes oder\nbb)\naus dem Betrieb von Ladestationen f\u00fcr Elektrofahrzeuge oder Elektrofahrr\u00e4der,\nerzielt werden und diese Einnahmen im Wirtschaftsjahr nicht h\u00f6her als 20 Prozent der Einnahmen aus der Gebrauchs\u00fcberlassung des Grundbesitzes sind; die Einnahmen im Sinne von Doppelbuchstabe aa d\u00fcrfen nicht aus der Lieferung an Letztverbraucher stammen, es sei denn, diese sind Mieter des Anlagenbetreibers, oder\nc)\nEinnahmen aus unmittelbaren Vertragsbeziehungen mit den Mietern des Grundbesitzes aus anderen als den in den Buchstaben a und b bezeichneten T\u00e4tigkeiten erzielt werden und diese Einnahmen im Wirtschaftsjahr nicht h\u00f6her als 5 Prozent der Einnahmen aus der Gebrauchs\u00fcberlassung des Grundbesitzes sind.\n4Betreut ein Unternehmen auch Wohnungsbauten oder ver\u00e4u\u00dfert es auch Einfamilienh\u00e4user, Zweifamilienh\u00e4user oder Eigentumswohnungen oder \u00fcbt es auch T\u00e4tigkeiten im Sinne von Satz 3 Buchstabe b und c aus, so ist Voraussetzung f\u00fcr die Anwendung des Satzes 2, dass der Gewinn aus der Verwaltung und Nutzung des eigenen Grundbesitzes gesondert ermittelt wird. 5Die S\u00e4tze 2 und 3 gelten nicht, 1.\nwenn der Grundbesitz ganz oder zum Teil dem Gewerbebetrieb eines Gesellschafters oder Genossen dient,\n1a.\nsoweit der Gewerbeertrag Verg\u00fctungen im Sinne des \u00a7 15 Absatz 1 Satz 1 Nummer 2 Satz 1 des Einkommensteuergesetzes enth\u00e4lt, die der Gesellschafter von der Gesellschaft f\u00fcr seine T\u00e4tigkeit im Dienst der Gesellschaft oder f\u00fcr die Hingabe von Darlehen oder f\u00fcr die \u00dcberlassung von Wirtschaftsg\u00fctern, mit Ausnahme der \u00dcberlassung von Grundbesitz, bezogen hat. 2Satz 1 ist auch auf Verg\u00fctungen anzuwenden, die vor dem 19. Juni 2008 erstmals vereinbart worden sind, wenn die Vereinbarung nach diesem Zeitpunkt wesentlich ge\u00e4ndert wird, oder\n2.\nsoweit der Gewerbeertrag Gewinne aus der Aufdeckung stiller Reserven aus dem Grundbesitz enth\u00e4lt, der innerhalb von drei Jahren vor der Aufdeckung der stillen Reserven zu einem unter dem Teilwert liegenden Wert in das Betriebsverm\u00f6gen des aufdeckenden Gewerbebetriebs \u00fcberf\u00fchrt oder \u00fcbertragen worden ist, und soweit diese Gewinne auf bis zur \u00dcberf\u00fchrung oder \u00dcbertragung entstandenen stillen Reserven entfallen.\n6Eine K\u00fcrzung nach den S\u00e4tzen 2 und 3 ist ausgeschlossen f\u00fcr den Teil des Gewerbeertrags, der auf Ver\u00e4u\u00dferungs- oder Aufgabegewinne im Sinne des \u00a7 7 Satz 2 Nr. 2 und 3 entf\u00e4llt;",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          24
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 35,
+    "id": "GT.property-transition",
+    "source": {
+      "source_id": "DEB142",
+      "act_article": "GewStG36(4b)",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__36.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-36-20261024.html",
+      "raw_sha256": "2d686dad5c5e579b98fc1f16d116a55dee2f1771f01b705308ccf7e812934bc8",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB142.txt",
+      "reader_sha256": "e5611884eab51e146aac20514bef572484d48e354fde18ca721941149e1d6f3a",
+      "native_LF": [
+        14,
+        14
+      ],
+      "exact_quote": "(4b) 1\u00a7 9 Nummer 1 Satz 1 in der Fassung des Artikels 9 des Gesetzes vom 2. Dezember 2024 (BGBl. 2024 I Nr. 387) ist erstmals f\u00fcr den Erhebungszeitraum 2025 anzuwenden. 2\u00a7 9 Nummer 1 Satz 3 Buchstabe b in der Fassung des Artikels 19 des Gesetzes vom 27. M\u00e4rz 2024 (BGBl. 2024 I Nr. 108) ist erstmals f\u00fcr den Erhebungszeitraum 2023 anzuwenden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          14,
+          14
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 36,
+    "id": "GT.foreignPE",
+    "source": {
+      "source_id": "DEB144",
+      "act_article": "GewStG9no3",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__9.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-9-20261024.html",
+      "raw_sha256": "5c93e3e838d08265da9818982c3174bec0bc317d973d2c15dbbd456c7e9d2ddd",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB144.txt",
+      "reader_sha256": "006084d381b5ce625477eb2ee9f76609afe16cb125599687e6e5d2fa36b10a41",
+      "native_LF": [
+        31,
+        32
+      ],
+      "exact_quote": "3.\nden Teil des Gewerbeertrags eines inl\u00e4ndischen Unternehmens, der auf eine nicht im Inland belegene Betriebsst\u00e4tte dieses Unternehmens entf\u00e4llt; dies gilt nicht f\u00fcr Eink\u00fcnfte im Sinne des \u00a7 7 Satz 7 und 8. 2Bei Unternehmen, die ausschlie\u00dflich den Betrieb von eigenen oder gecharterten Handelsschiffen im internationalen Verkehr zum Gegenstand haben, gelten 80 Prozent des Gewerbeertrags als auf eine nicht im Inland belegene Betriebsst\u00e4tte entfallend. 3Ist Gegenstand eines Betriebs nicht ausschlie\u00dflich der Betrieb von Handelsschiffen im internationalen Verkehr, so gelten 80 Prozent des Teils des Gewerbeertrags, der auf den Betrieb von Handelsschiffen im internationalen Verkehr entf\u00e4llt, als auf eine nicht im Inland belegene Betriebsst\u00e4tte entfallend; in diesem Fall ist Voraussetzung, dass dieser Teil gesondert ermittelt wird. 4Handelsschiffe werden im internationalen Verkehr betrieben, wenn eigene oder gecharterte Handelsschiffe im Wirtschaftsjahr \u00fcberwiegend zur Bef\u00f6rderung von Personen und G\u00fctern im Verkehr mit oder zwischen ausl\u00e4ndischen H\u00e4fen, innerhalb eines ausl\u00e4ndischen Hafens oder zwischen einem ausl\u00e4ndischen Hafen und der freien See eingesetzt werden. 5F\u00fcr die Anwendung der S\u00e4tze 2 bis 4 gilt \u00a7 5a Abs. 2 Satz 2 des Einkommensteuergesetzes entsprechend;",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          31,
+          32
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 37,
+    "id": "GT.donations-cap",
+    "source": {
+      "source_id": "DEB144",
+      "act_article": "GewStG9no5sentence1",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__9.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-9-20261024.html",
+      "raw_sha256": "5c93e3e838d08265da9818982c3174bec0bc317d973d2c15dbbd456c7e9d2ddd",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB144.txt",
+      "reader_sha256": "006084d381b5ce625477eb2ee9f76609afe16cb125599687e6e5d2fa36b10a41",
+      "native_LF": [
+        36,
+        36
+      ],
+      "exact_quote": "die aus den Mitteln des Gewerbebetriebs geleisteten Zuwendungen (Spenden und Mitgliedsbeitr\u00e4ge) zur F\u00f6rderung steuerbeg\u00fcnstigter Zwecke im Sinne der \u00a7\u00a7 52 bis 54 der Abgabenordnung bis zur H\u00f6he von insgesamt 20 Prozent des um die Hinzurechnungen nach \u00a7 8 Nummer 9 erh\u00f6hten Gewinns aus Gewerbebetrieb (\u00a7 7) oder 4 Promille der Summe der gesamten Ums\u00e4tze und der im Wirtschaftsjahr aufgewendeten L\u00f6hne und Geh\u00e4lter.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          35,
+          52
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 38,
+    "id": "GT.donations-carry",
+    "source": {
+      "source_id": "DEB144",
+      "act_article": "GewStG9no5sentence8",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__9.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-9-20261024.html",
+      "raw_sha256": "5c93e3e838d08265da9818982c3174bec0bc317d973d2c15dbbd456c7e9d2ddd",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB144.txt",
+      "reader_sha256": "006084d381b5ce625477eb2ee9f76609afe16cb125599687e6e5d2fa36b10a41",
+      "native_LF": [
+        42,
+        42
+      ],
+      "exact_quote": "8\u00dcberschreiten die geleisteten Zuwendungen die H\u00f6chsts\u00e4tze nach Satz 1, kann die K\u00fcrzung im Rahmen der H\u00f6chsts\u00e4tze nach Satz 1 in den folgenden Erhebungszeitr\u00e4umen vorgenommen werden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          35,
+          52
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 39,
+    "id": "GT.apportion",
+    "source": {
+      "source_id": "DEB151",
+      "act_article": "GewStG28",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__28.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-28-20261024.html",
+      "raw_sha256": "39a3c8a21ff0af6e909802c6441f1a5f26cb0b88970ac1446758eb46e9a5651c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB151.txt",
+      "reader_sha256": "ec4cc4ddac915d13042375a0b5e886f1cd1d82790819c71a03e7132143d408f3",
+      "native_LF": [
+        7,
+        16
+      ],
+      "exact_quote": "(1) 1Sind im Erhebungszeitraum Betriebsst\u00e4tten zur Aus\u00fcbung des Gewerbes in mehreren Gemeinden unterhalten worden, so ist der Steuermessbetrag in die auf die einzelnen Gemeinden entfallenden Anteile (Zerlegungsanteile) zu zerlegen. 2Das gilt auch in den F\u00e4llen, in denen eine Betriebsst\u00e4tte sich \u00fcber mehrere Gemeinden erstreckt hat oder eine Betriebsst\u00e4tte innerhalb eines Erhebungszeitraums von einer Gemeinde in eine andere Gemeinde verlegt worden ist.\n(2) 1Bei der Zerlegung sind die Gemeinden nicht zu ber\u00fccksichtigen, in denen 1.\nVerkehrsunternehmen lediglich Gleisanlagen unterhalten,\n2.\nsich nur Anlagen befinden, die der Weiterleitung fester, fl\u00fcssiger oder gasf\u00f6rmiger Stoffe sowie elektrischer Energie dienen, ohne dass diese dort abgegeben werden,\n3.\nBergbauunternehmen keine oberirdischen Anlagen haben, in welchen eine gewerbliche T\u00e4tigkeit entfaltet wird.\n4.\n(weggefallen)\n2Dies gilt nicht, wenn dadurch auf keine Gemeinde ein Zerlegungsanteil oder der Steuermessbetrag entfallen w\u00fcrde.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          16
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 40,
+    "id": "GT.wagekey",
+    "source": {
+      "source_id": "DEB152",
+      "act_article": "GewStG29",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__29.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-29-20261024.html",
+      "raw_sha256": "a5a3086c8729abff2a76312a3b67ff65f29369c95f91362a84de92d54402a43e",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB152.txt",
+      "reader_sha256": "c4469541ef3dc025b59d66f2823211042a510c8a01f9eaa4a0e948c44e3889c2",
+      "native_LF": [
+        7,
+        25
+      ],
+      "exact_quote": "(1) Zerlegungsma\u00dfstab ist 1.\nvorbehaltlich der Nummern 2 und 3 das Verh\u00e4ltnis, in dem die Summe der Arbeitsl\u00f6hne, die an die bei allen Betriebsst\u00e4tten (\u00a7 28) besch\u00e4ftigten Arbeitnehmer gezahlt worden sind, zu den Arbeitsl\u00f6hnen steht, die an die bei den Betriebsst\u00e4tten der einzelnen Gemeinden besch\u00e4ftigten Arbeitnehmer gezahlt worden sind;\n2.\nbei Betrieben, die ausschlie\u00dflich Anlagen zur Erzeugung von Strom und anderen Energietr\u00e4gern sowie W\u00e4rme aus Windenergie und solarer Strahlungsenergie betreiben, a)\nvorbehaltlich des Buchstabens b zu einem Zehntel das in Nummer 1 bezeichnete Verh\u00e4ltnis und zu neun Zehnteln das Verh\u00e4ltnis, in dem die Summe der installierten Leistung im Sinne von \u00a7 3 Nummer 31 des Erneuerbare-Energien-Gesetzes in allen Betriebsst\u00e4tten (\u00a7 28) zur installierten Leistung in den einzelnen Betriebsst\u00e4tten steht,\nb)\nf\u00fcr die Erhebungszeitr\u00e4ume 2021 bis 2023 bei Betrieben, die ausschlie\u00dflich Anlagen zur Erzeugung von Strom und anderen Energietr\u00e4gern sowie W\u00e4rme aus solarer Strahlungsenergie betreiben, aa)\nf\u00fcr den auf Neuanlagen im Sinne von Satz 3 entfallenden Anteil am Steuermessbetrag zu einem Zehntel das in Nummer 1 bezeichnete Verh\u00e4ltnis und zu neun Zehnteln das Verh\u00e4ltnis, in dem die Summe der installierten Leistung im Sinne von \u00a7 3 Nummer 31 des Erneuerbare-Energien-Gesetzes in allen Betriebsst\u00e4tten (\u00a7 28) zur installierten Leistung in den einzelnen Betriebsst\u00e4tten steht, und\nbb)\nf\u00fcr den auf die \u00fcbrigen Anlagen im Sinne von Satz 4 entfallenden Anteil am Steuermessbetrag das in Nummer 1 bezeichnete Verh\u00e4ltnis.\n2Der auf Neuanlagen und auf \u00fcbrige Anlagen jeweils entfallende Anteil am Steuermessbetrag wird ermittelt aus dem Verh\u00e4ltnis, in dem aa)\ndie Summe der installierten Leistung im Sinne von \u00a7 3 Nummer 31 des Erneuerbare-Energien-Gesetzes f\u00fcr Neuanlagen und\nbb)\ndie Summe der installierten Leistung im Sinne von \u00a7 3 Nummer 31 des Erneuerbare-Energien-Gesetzes f\u00fcr die \u00fcbrigen Anlagen\nzur gesamten installierten Leistung im Sinne von \u00a7 3 Nummer 31 des Erneuerbare-Energien-Gesetzes des Betriebs steht. 3Neuanlagen sind Anlagen, die nach dem 30. Juni 2013 zur Erzeugung von Strom und anderen Energietr\u00e4gern sowie W\u00e4rme aus solarer Strahlungsenergie genehmigt wurden. 4Die \u00fcbrigen Anlagen sind Anlagen, die nicht unter Satz 3 fallen;\n3.\nbei Betrieben, die ausschlie\u00dflich Energiespeicheranlagen im Sinne des \u00a7 3 Nummer 15d des Energiewirtschaftsgesetzes betreiben, zu einem Zehntel das in Nummer 1 bezeichnete Verh\u00e4ltnis und zu neun Zehnteln das Verh\u00e4ltnis, in dem die Summe der installierten Leistung in allen Betriebsst\u00e4tten (\u00a7 28) zur installierten Leistung in den einzelnen Betriebsst\u00e4tten steht.\n(2) Bei der Zerlegung nach Absatz 1 sind die Arbeitsl\u00f6hne anzusetzen, die in den Betriebsst\u00e4tten der beteiligten Gemeinden (\u00a7 28) w\u00e4hrend des Erhebungszeitraums (\u00a7 14) erzielt oder gezahlt worden sind.\n(3) Bei Ermittlung der Verh\u00e4ltniszahlen sind die Arbeitsl\u00f6hne auf volle 1 000 Euro abzurunden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          25
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 41,
+    "id": "GT.municipality",
+    "source": {
+      "source_id": "DEB153",
+      "act_article": "GewStG4",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__4.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-4-20261024.html",
+      "raw_sha256": "1675303b8996b252f154199ff9e6ec493d38bcfd67f21583f2ddd063b946834c",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB153.txt",
+      "reader_sha256": "6f8c70209f136f2f4d84722eb301fd4ed0269280afd91a625c08a55f29e70ef0",
+      "native_LF": [
+        7,
+        9
+      ],
+      "exact_quote": "(1) 1Die stehenden Gewerbebetriebe unterliegen der Gewerbesteuer in der Gemeinde, in der eine Betriebsst\u00e4tte zur Aus\u00fcbung des stehenden Gewerbes unterhalten wird. 2Befinden sich Betriebsst\u00e4tten desselben Gewerbebetriebs in mehreren Gemeinden, oder erstreckt sich eine Betriebsst\u00e4tte \u00fcber mehrere Gemeinden, so wird die Gewerbesteuer in jeder Gemeinde nach dem Teil des Steuermessbetrags erhoben, der auf sie entf\u00e4llt.\n(2) 1F\u00fcr Betriebsst\u00e4tten in gemeindefreien Gebieten bestimmt die Landesregierung durch Rechtsverordnung, wer die nach diesem Gesetz den Gemeinden zustehenden Befugnisse aus\u00fcbt. 2Der in \u00a7 2 Absatz 7 Nummer 1 und 2 bezeichnete Anteil am Festlandsockel und an der ausschlie\u00dflichen Wirtschaftszone ist gemeindefreies Gebiet. 3In F\u00e4llen von Satz 2 bestimmt sich die zust\u00e4ndige Landesregierung im Sinne des Satzes 1 unter entsprechender Anwendung des \u00a7 22a der Abgabenordnung.\n(3) 1F\u00fcr Betriebsst\u00e4tten im nicht zur Bundesrepublik Deutschland geh\u00f6renden Teil eines grenz\u00fcberschreitenden Gewerbegebiets im Sinne des \u00a7 2 Absatz 7 Nummer 3 ist die Gemeinde hebeberechtigt, in der der zur Bundesrepublik Deutschland geh\u00f6rende Teil des grenz\u00fcberschreitenden Gewerbegebiets liegt. 2Liegt der zur Bundesrepublik Deutschland geh\u00f6rende Teil in mehreren Gemeinden, gilt Absatz 2 entsprechend.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          9
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 42,
+    "id": "GT.church-credit",
+    "source": {
+      "source_id": "DEB010",
+      "act_article": "EStG51a(2)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__51a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-51a-20261024.html",
+      "raw_sha256": "02bf2ed03b59ac334e8201d01a4294c694363cf10bca8158d100bfde3c667b11",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB010.txt",
+      "reader_sha256": "834556473df5071d4654f0a644c36b1abe36e5a544e5910dec57e0fa981a25b2",
+      "native_LF": [
+        8,
+        8
+      ],
+      "exact_quote": "(2) 1Bemessungsgrundlage ist die Einkommensteuer, die abweichend von \u00a7 2 Absatz 6 unter Ber\u00fccksichtigung von Freibetr\u00e4gen nach \u00a7 32 Absatz 6 in allen F\u00e4llen des \u00a7 32 festzusetzen w\u00e4re. 2Zur Ermittlung der Einkommensteuer im Sinne des Satzes 1 ist das zu versteuernde Einkommen um die nach \u00a7 3 Nummer 40 steuerfreien Betr\u00e4ge zu erh\u00f6hen und um die nach \u00a7 3c Absatz 2 nicht abziehbaren Betr\u00e4ge zu mindern. 3\u00a7 35 ist bei der Ermittlung der festzusetzenden Einkommensteuer nach Satz 1 nicht anzuwenden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          8
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 45,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 43,
+    "id": "GT.church-admin",
+    "source": {
+      "source_id": "DEB179",
+      "act_article": "BMFSteuernvonAbisZ2025 p82",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-steuern-a-z-20261024.pdf",
+      "raw_sha256": "c36ca62b6c89e5524682fcc124a68548aec918813761dbbf866f010f741d52fb",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB179.txt",
+      "reader_sha256": "2d05ce2568efd71d46184329c032e3190ad2a35348b1e16e405da272f0f33696",
+      "native_LF": [
+        2961,
+        2967
+      ],
+      "exact_quote": "                                                               Kirchensteuer       81\n\f             Wie hoch ist die Steuer?\n             Die Kirchensteuer wird als Zuschlag zur \u2192\u200a\u200aEinkommensteuer,\n             \u2192\u200a\u200aLohnsteuer und \u2192\u200a\u200aAbgeltungsteuer (seit 1. Januar 2009) erhoben.\n             Die H\u00f6he dieser Zuschlagsteuer wird durch Kirchensteuerbeschl\u00fcsse\n             der steuerberechtigten Religionsgesellschaften festgelegt und betr\u00e4gt\n             je nach Bundesland 8 oder 9 Prozent.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          2959,
+          2971
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": "Official federal description of8/9% variation; not a selected state/church resolution for a taxpayer."
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 44,
+    "id": "GT.incometax-aftercredit",
+    "source": {
+      "source_id": "DEB045",
+      "act_article": "EStG2(6)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__2.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-2-20261024.html",
+      "raw_sha256": "4ce8258e61a05e50348bfa2c149542d7b078c951ffa5b92b37a88b93d67f8848",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB045.txt",
+      "reader_sha256": "a776de83fcc1b5085502ca8844dc998fc060e70f2ff5ffc8eaff71edc4ae7403",
+      "native_LF": [
+        32,
+        32
+      ],
+      "exact_quote": "(6) 1Die tarifliche Einkommensteuer, vermindert um den Unterschiedsbetrag nach \u00a7 32c Absatz 1 Satz 2, die anzurechnenden ausl\u00e4ndischen Steuern und die Steuererm\u00e4\u00dfigungen, vermehrt um die Steuer nach \u00a7 32d Absatz 3 und 4, die Steuer nach \u00a7 34c Absatz 5 und den Zuschlag nach \u00a7 3 Absatz 4 Satz 2 des Forstsch\u00e4den-Ausgleichsgesetzes in der Fassung der Bekanntmachung vom 26. August 1985 (BGBl. I S. 1756), das zuletzt durch Artikel 412 der Verordnung vom 31. August 2015 (BGBl. I S. 1474) ge\u00e4ndert worden ist, in der jeweils geltenden Fassung, ist die festzusetzende Einkommensteuer. 2Wurde der Gesamtbetrag der Eink\u00fcnfte in den F\u00e4llen des \u00a7 10a Absatz 2 um Sonderausgaben nach \u00a7 10a Absatz 1 gemindert, ist f\u00fcr die Ermittlung der festzusetzenden Einkommensteuer der Anspruch auf Zulage nach Abschnitt XI der tariflichen Einkommensteuer hinzuzurechnen; bei der Ermittlung der dem Steuerpflichtigen zustehenden Zulage bleibt die Erh\u00f6hung der Grundzulage nach \u00a7 84 Satz 2 au\u00dfer Betracht. 3Wird das Einkommen in den F\u00e4llen des \u00a7 31 um die Freibetr\u00e4ge nach \u00a7 32 Absatz 6 gemindert, ist der Anspruch auf Kindergeld nach Abschnitt X der tariflichen Einkommensteuer hinzuzurechnen; nicht jedoch f\u00fcr Kalendermonate, in denen durch Bescheid der Familienkasse ein Anspruch auf Kindergeld festgesetzt, aber wegen \u00a7 70 Absatz 1 Satz 2 nicht ausgezahlt wurde.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          25,
+          32
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 45,
+    "id": "GT.soli-assessment",
+    "source": {
+      "source_id": "DEB011",
+      "act_article": "SolzG3(1)1",
+      "official_url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-3-20261024.html",
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB011.txt",
+      "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+      "native_LF": [
+        7,
+        9
+      ],
+      "exact_quote": "(1) Der Solidarit\u00e4tszuschlag bemisst sich vorbehaltlich der Abs\u00e4tze 2 bis 5, 1.\nsoweit eine Veranlagung zur Einkommensteuer oder K\u00f6rperschaftsteuer vorzunehmen ist:\nnach der nach Absatz 2 berechneten Einkommensteuer oder der festgesetzten K\u00f6rperschaftsteuer f\u00fcr Veranlagungszeitr\u00e4ume ab 1998, vermindert um die anzurechnende oder verg\u00fctete K\u00f6rperschaftsteuer, wenn ein positiver Betrag verbleibt;",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          9
+        ],
+        [
+          22,
+          28
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 11,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 46,
+    "id": "GT.soli-childonly",
+    "source": {
+      "source_id": "DEB011",
+      "act_article": "SolzG3(2)",
+      "official_url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-3-20261024.html",
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB011.txt",
+      "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+      "native_LF": [
+        27,
+        27
+      ],
+      "exact_quote": "(2) Bei der Veranlagung zur Einkommensteuer ist Bemessungsgrundlage f\u00fcr den Solidarit\u00e4tszuschlag die Einkommensteuer, die abweichend von \u00a7 2 Abs. 6 des Einkommensteuergesetzes unter Ber\u00fccksichtigung von Freibetr\u00e4gen nach \u00a7 32 Abs. 6 des Einkommensteuergesetzes in allen F\u00e4llen des \u00a7 32 des Einkommensteuergesetzes festzusetzen w\u00e4re.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          5,
+          9
+        ],
+        [
+          22,
+          28
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 47,
+    "id": "GT.electronic",
+    "source": {
+      "source_id": "DEB154",
+      "act_article": "GewStG14a",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__14a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-14a-20261024.html",
+      "raw_sha256": "e0c370d403b9c0fc1eac150a08c6a3e0acb5580b2db973c90117433c58a67404",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB154.txt",
+      "reader_sha256": "6f0ed4bb425cbd239725360951e15adac87e5c4042567f41d5e65c017fa31ae0",
+      "native_LF": [
+        7,
+        7
+      ],
+      "exact_quote": "1Der Steuerschuldner (\u00a7 5) hat f\u00fcr steuerpflichtige Gewerbebetriebe eine Erkl\u00e4rung zur Festsetzung des Steuermessbetrags und in den F\u00e4llen des \u00a7 28 au\u00dferdem eine Zerlegungserkl\u00e4rung nach amtlich vorgeschriebenem Datensatz \u00fcber die amtlich bestimmte Schnittstelle elektronisch zu \u00fcbermitteln. 2Auf Antrag kann die Finanzbeh\u00f6rde zur Vermeidung unbilliger H\u00e4rten auf eine elektronische \u00dcbermittlung verzichten; in diesem Fall ist die Erkl\u00e4rung nach amtlich vorgeschriebenem Vordruck abzugeben und vom Steuerschuldner oder von den in \u00a7 34 der Abgabenordnung bezeichneten Personen eigenh\u00e4ndig zu unterschreiben.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          7
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-corporate-tax",
+      "quote_row": 98,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 48,
+    "id": "AO149.general",
+    "source": {
+      "source_id": "DEB014",
+      "act_article": "AO149(1)/(2)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB014.txt",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        7,
+        8
+      ],
+      "exact_quote": "(1) Die Steuergesetze bestimmen, wer zur Abgabe einer Steuererkl\u00e4rung verpflichtet ist. Zur Abgabe einer Steuererkl\u00e4rung ist auch verpflichtet, wer hierzu von der Finanzbeh\u00f6rde aufgefordert wird. Die Aufforderung kann durch \u00f6ffentliche Bekanntmachung erfolgen. Die Verpflichtung zur Abgabe einer Steuererkl\u00e4rung bleibt auch dann bestehen, wenn die Finanzbeh\u00f6rde die Besteuerungsgrundlagen nach \u00a7 162 gesch\u00e4tzt hat.\n(2) Soweit die Steuergesetze nichts anderes bestimmen, sind Steuererkl\u00e4rungen, die sich auf ein Kalenderjahr oder auf einen gesetzlich bestimmten Zeitpunkt beziehen, sp\u00e4testens sieben Monate nach Ablauf des Kalenderjahres oder sieben Monate nach dem gesetzlich bestimmten Zeitpunkt abzugeben. Bei Steuerpflichtigen, die den Gewinn aus Land- und Forstwirtschaft nach einem vom Kalenderjahr abweichenden Wirtschaftsjahr ermitteln, endet die Frist nicht vor Ablauf des siebten Monats, der auf den Schluss des in dem Kalenderjahr begonnenen Wirtschaftsjahres folgt.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          24
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 49,
+    "id": "AO108.weekend",
+    "source": {
+      "source_id": "DEB015",
+      "act_article": "AO108(3)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-108-20261024.html",
+      "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB015.txt",
+      "reader_sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9",
+      "native_LF": [
+        9,
+        9
+      ],
+      "exact_quote": "(3) F\u00e4llt das Ende einer Frist auf einen Sonntag, einen gesetzlichen Feiertag oder einen Sonnabend, so endet die Frist mit dem Ablauf des n\u00e4chstfolgenden Werktags.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          13
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 15,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 50,
+    "id": "AO149.adviser",
+    "source": {
+      "source_id": "DEB014",
+      "act_article": "AO149(3)/(4)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB014.txt",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        23,
+        24
+      ],
+      "exact_quote": "so sind diese Erkl\u00e4rungen vorbehaltlich des Absatzes 4 sp\u00e4testens bis zum letzten Tag des Monats Februar und in den F\u00e4llen des Absatzes 2 Satz 2 bis zum 31. Juli des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres abzugeben.\n(4) Das Finanzamt kann anordnen, dass Erkl\u00e4rungen im Sinne des Absatzes 3 vor dem letzten Tag des Monats Februar des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres abzugeben sind, wenn 1.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          24
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 51,
+    "id": "AO149.callin",
+    "source": {
+      "source_id": "DEB014",
+      "act_article": "AO149(4)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB014.txt",
+      "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "native_LF": [
+        24,
+        43
+      ],
+      "exact_quote": "(4) Das Finanzamt kann anordnen, dass Erkl\u00e4rungen im Sinne des Absatzes 3 vor dem letzten Tag des Monats Februar des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres abzugeben sind, wenn 1.\nf\u00fcr den betroffenen Steuerpflichtigen a)\nf\u00fcr den vorangegangenen Besteuerungszeitraum Erkl\u00e4rungen nicht oder versp\u00e4tet abgegeben wurden,\nb)\nf\u00fcr den vorangegangenen Besteuerungszeitraum innerhalb von drei Monaten vor Abgabe der Steuererkl\u00e4rung oder innerhalb von drei Monaten vor dem Beginn des Zinslaufs im Sinne des \u00a7 233a Absatz 2 Satz 1 und 2 nachtr\u00e4gliche Vorauszahlungen festgesetzt wurden,\nc)\nVorauszahlungen f\u00fcr den Besteuerungszeitraum au\u00dferhalb einer Veranlagung herabgesetzt wurden,\nd)\ndie Veranlagung f\u00fcr den vorangegangenen Veranlagungszeitraum zu einer Abschlusszahlung von mindestens 25 Prozent der festgesetzten Steuer oder mehr als 10 000 Euro gef\u00fchrt hat,\ne)\ndie Steuerfestsetzung auf Grund einer Steuererkl\u00e4rung im Sinne des Absatzes 3 Nummer 1, 2 oder 4 voraussichtlich zu einer Abschlusszahlung von mehr als 10 000 Euro f\u00fchren wird oder\nf)\neine Au\u00dfenpr\u00fcfung vorgesehen ist,\n2.\nder betroffene Steuerpflichtige im Besteuerungszeitraum einen Betrieb er\u00f6ffnet oder eingestellt hat oder\n3.\nf\u00fcr Beteiligte an Gesellschaften oder Gemeinschaften Verluste festzustellen sind.\nF\u00fcr das Befolgen der Anordnung ist eine Frist von vier Monaten nach Bekanntgabe der Anordnung zu setzen. Ferner d\u00fcrfen die Finanz\u00e4mter nach dem Ergebnis einer automationsgest\u00fctzten Zufallsauswahl anordnen, dass Erkl\u00e4rungen im Sinne des Absatzes 3 vor dem letzten Tag des Monats Februar des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres mit einer Frist von vier Monaten nach Bekanntgabe der Anordnung abzugeben sind. In der Aufforderung nach Satz 3 ist darauf hinzuweisen, dass sie auf einer automationsgest\u00fctzten Zufallsauswahl beruht; eine weitere Begr\u00fcndung ist nicht erforderlich. In den F\u00e4llen des Absatzes 2 Satz 2 tritt an die Stelle des letzten Tages des Monats Februar der 31. Juli des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres. Eine Anordnung nach Satz 1 oder Satz 3 darf f\u00fcr die Abgabe der Erkl\u00e4rung keine k\u00fcrzere als die in Absatz 2 bestimmte Frist setzen. In den F\u00e4llen der S\u00e4tze 1 und 3 erstreckt sich eine Anordnung auf alle Erkl\u00e4rungen im Sinne des Absatzes 3, die vom betroffenen Steuerpflichtigen f\u00fcr den gleichen Besteuerungszeitraum oder Besteuerungszeitpunkt abzugeben sind.\n(5) Absatz 3 gilt nicht f\u00fcr Umsatzsteuererkl\u00e4rungen f\u00fcr das Kalenderjahr, wenn die gewerbliche oder berufliche T\u00e4tigkeit vor oder mit dem Ablauf des Besteuerungszeitraums endete.\n(6) Die oberste Landesfinanzbeh\u00f6rde oder eine von ihr bestimmte Landesfinanzbeh\u00f6rde kann zulassen, dass Personen, Gesellschaften, Verb\u00e4nde, Vereinigungen, Beh\u00f6rden und K\u00f6rperschaften im Sinne der \u00a7\u00a7 3 und 4 des Steuerberatungsgesetzes bis zu bestimmten Stichtagen einen bestimmten prozentualen Anteil der Erkl\u00e4rungen im Sinne des Absatzes 3 einreichen. Soweit Erkl\u00e4rungen im Sinne des Absatzes 3 in ein Verfahren nach Satz 1 einbezogen werden, ist Absatz 4 Satz 3 nicht anzuwenden. Die Einrichtung eines Verfahrens nach Satz 1 steht im Ermessen der obersten Landesfinanzbeh\u00f6rden und ist nicht einklagbar.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          24,
+          46
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 52,
+    "id": "GT.settlement",
+    "source": {
+      "source_id": "DEB155",
+      "act_article": "GewStG20",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__20.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-20-20261024.html",
+      "raw_sha256": "c370ea75b4da25442ed39b1bbbe4a00af83f53410611e34e66bd230a7c51739f",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB155.txt",
+      "reader_sha256": "da05352f9faa0623fab818968932b07bbc2eb6144285cbf8bbe8a04fb8268aa9",
+      "native_LF": [
+        7,
+        9
+      ],
+      "exact_quote": "(1) Die f\u00fcr einen Erhebungszeitraum (\u00a7 14) entrichteten Vorauszahlungen werden auf die Steuerschuld f\u00fcr diesen Erhebungszeitraum angerechnet.\n(2) Ist die Steuerschuld gr\u00f6\u00dfer als die Summe der anzurechnenden Vorauszahlungen, so ist der Unterschiedsbetrag, soweit er den im Erhebungszeitraum und nach \u00a7 19 Abs. 3 Satz 2 nach Ablauf des Erhebungszeitraums f\u00e4llig gewordenen, aber nicht entrichteten Vorauszahlungen entspricht, sofort, im \u00dcbrigen innerhalb eines Monats nach Bekanntgabe des Steuerbescheids zu entrichten (Abschlusszahlung).\n(3) Ist die Steuerschuld kleiner als die Summe der anzurechnenden Vorauszahlungen, so wird der Unterschiedsbetrag nach Bekanntgabe des Steuerbescheids durch Aufrechnung oder Zur\u00fcckzahlung ausgeglichen.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          9
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 53,
+    "id": "CG.corona-scope",
+    "source": {
+      "source_id": "DEB182",
+      "act_article": "EGAOArt97\u00a736(3) opening",
+      "official_url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/egao-97-36-20261024.html",
+      "raw_sha256": "473093a055687b4f1080906450a53bfa4454856afe4a25599e1907757d5436bc",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB182.txt",
+      "reader_sha256": "45ffa494336b97fdb64a8261370a05f74e069dcab59dd97c0b9eb6d7a325ae24",
+      "native_LF": [
+        9,
+        9
+      ],
+      "exact_quote": "(3) F\u00fcr die Besteuerungszeitr\u00e4ume 2020 bis 2024 sind die \u00a7\u00a7 109, 149, 152 und 233a der Abgabenordnung in der am 23. Juni 2022 geltenden Fassung mit folgenden Ma\u00dfgaben anzuwenden: 1.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          9,
+          9
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": "Explicit2020\u20132024 scope; ordinary AO deadlines used for2025/2026. This is not an extension for those years."
+    },
+    "actual_read_bridge": {
+      "guide": "de-corporate-tax",
+      "quote_row": 97,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 54,
+    "id": "GT.AOlocal",
+    "source": {
+      "source_id": "DEB156",
+      "act_article": "AO1(1)\u2013(3)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__1.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-1-20261024.html",
+      "raw_sha256": "bb6db3b17787fc1b82874cad6df4ee64bdb3c1ecba8f14519242d450330119dd",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB156.txt",
+      "reader_sha256": "2866f6a47d0be17f00b724cf4c69090462b545affd3059492c0536a926ef51a1",
+      "native_LF": [
+        7,
+        24
+      ],
+      "exact_quote": "(1) Dieses Gesetz gilt f\u00fcr alle Steuern einschlie\u00dflich der Steuerverg\u00fctungen, die durch Bundesrecht oder Recht der Europ\u00e4ischen Union geregelt sind, soweit sie durch Bundesfinanzbeh\u00f6rden oder durch Landesfinanzbeh\u00f6rden verwaltet werden. Es ist nur vorbehaltlich des Rechts der Europ\u00e4ischen Union anwendbar.\n(2) F\u00fcr die Realsteuern gelten, soweit ihre Verwaltung den Gemeinden \u00fcbertragen worden ist, die folgenden Vorschriften dieses Gesetzes entsprechend: 1.\ndie Vorschriften des Ersten, Zweiten, Vierten, Sechsten und Siebten Abschnitts des Ersten Teils (Anwendungsbereich; Steuerliche Begriffsbestimmungen; Datenverarbeitung und Steuergeheimnis; Betroffenenrechte; Datenschutzaufsicht, Gerichtlicher Rechtsschutz in datenschutzrechtlichen Angelegenheiten),\n2.\ndie Vorschriften des Zweiten Teils (Steuerschuldrecht),\n3.\ndie Vorschriften des Dritten Teils mit Ausnahme der \u00a7\u00a7 82 bis 84 (Allgemeine Verfahrensvorschriften),\n4.\ndie Vorschriften des Vierten Teils (Durchf\u00fchrung der Besteuerung),\n5.\ndie Vorschriften des F\u00fcnften Teils (Erhebungsverfahren),\n6.\n\u00a7 249 Absatz 2 Satz 2,\n7.\ndie \u00a7\u00a7 351 und 361 Absatz 1 Satz 2 und Absatz 3,\n8.\ndie Vorschriften des Achten Teils (Straf- und Bu\u00dfgeldvorschriften, Straf- und Bu\u00dfgeldverfahren).\n(3) Auf steuerliche Nebenleistungen sind die Vorschriften dieses Gesetzes vorbehaltlich des Rechts der Europ\u00e4ischen Union sinngem\u00e4\u00df anwendbar. Der Dritte bis Sechste Abschnitt des Vierten Teils gilt jedoch nur, soweit dies besonders bestimmt wird.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          24
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 55,
+    "id": "GT.latesurcharge",
+    "source": {
+      "source_id": "DEB016",
+      "act_article": "AO152(6)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB016.txt",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        28,
+        28
+      ],
+      "exact_quote": "(6) F\u00fcr Erkl\u00e4rungen zur gesonderten Feststellung von Besteuerungsgrundlagen, f\u00fcr Erkl\u00e4rungen zur Festsetzung des Gewerbesteuermessbetrags und f\u00fcr Zerlegungserkl\u00e4rungen gelten vorbehaltlich des Absatzes 7 die Abs\u00e4tze 1, 2 und 3 Nummer 1 sowie Absatz 4 Satz 1 und 2 entsprechend. Der Versp\u00e4tungszuschlag betr\u00e4gt f\u00fcr jeden angefangenen Monat der eingetretenen Versp\u00e4tung 25 Euro.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          26
+        ],
+        [
+          28,
+          36
+        ],
+        [
+          38,
+          44
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-partners-and-part-year",
+      "quote_row": 57,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 56,
+    "id": "GT.late-max",
+    "source": {
+      "source_id": "DEB016",
+      "act_article": "AO152(10)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB016.txt",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        42,
+        42
+      ],
+      "exact_quote": "(10) Der Versp\u00e4tungszuschlag ist auf volle Euro abzurunden und darf h\u00f6chstens 25 000 Euro betragen.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          38,
+          44
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 20,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 57,
+    "id": "AO240.surcharge",
+    "source": {
+      "source_id": "DEB019",
+      "act_article": "AO240(1)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-240-20261024.html",
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB019.txt",
+      "reader_sha256": "2cfa86cfaac164f5f98e3dc6a02b04d67165a70fc4439631021fe7a3ae0bf631",
+      "native_LF": [
+        7,
+        7
+      ],
+      "exact_quote": "(1) Wird eine Steuer nicht bis zum Ablauf des F\u00e4lligkeitstages entrichtet, so ist f\u00fcr jeden angefangenen Monat der S\u00e4umnis ein S\u00e4umniszuschlag von 1 Prozent des abgerundeten r\u00fcckst\u00e4ndigen Steuerbetrags zu entrichten; abzurunden ist auf den n\u00e4chsten durch 50 Euro teilbaren Betrag.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          15
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 27,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 58,
+    "id": "AO240.grace",
+    "source": {
+      "source_id": "DEB019",
+      "act_article": "AO240(3)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-240-20261024.html",
+      "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB019.txt",
+      "reader_sha256": "2cfa86cfaac164f5f98e3dc6a02b04d67165a70fc4439631021fe7a3ae0bf631",
+      "native_LF": [
+        9,
+        9
+      ],
+      "exact_quote": "(3) Ein S\u00e4umniszuschlag wird bei einer S\u00e4umnis bis zu drei Tagen nicht erhoben. Dies gilt nicht bei Zahlung nach \u00a7 224 Absatz 2 Nummer 1.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          15
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-corporate-tax",
+      "quote_row": 61,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 59,
+    "id": "AO233a.interest",
+    "source": {
+      "source_id": "DEB017",
+      "act_article": "AO233a(1)/(2)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-233a-20261024.html",
+      "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB017.txt",
+      "reader_sha256": "707aa5c6d8b589d1ab3ea4e5c30d68d5121ad2a42c56fb9368e7ca2f69d4bd7d",
+      "native_LF": [
+        7,
+        8
+      ],
+      "exact_quote": "(1) F\u00fchrt die Festsetzung der Einkommen-, K\u00f6rperschaft-, Verm\u00f6gen-, Umsatz- oder Gewerbesteuer zu einem Unterschiedsbetrag im Sinne des Absatzes 3, ist dieser zu verzinsen. Dies gilt nicht f\u00fcr die Festsetzung von Vorauszahlungen und Steuerabzugsbetr\u00e4gen.\n(2) Der Zinslauf beginnt 15 Monate nach Ablauf des Kalenderjahrs, in dem die Steuer entstanden ist. Er beginnt f\u00fcr die Einkommen- und K\u00f6rperschaftsteuer 23 Monate nach diesem Zeitpunkt, wenn die Eink\u00fcnfte aus Land- und Forstwirtschaft bei der erstmaligen Steuerfestsetzung die anderen Eink\u00fcnfte \u00fcberwiegen; hierbei sind Kapitalertr\u00e4ge nach \u00a7 32d Absatz 1 und \u00a7 43 Absatz 5 des Einkommensteuergesetzes nicht zu ber\u00fccksichtigen. Er endet mit Ablauf des Tages, an dem die Steuerfestsetzung wirksam wird.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          18
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 60,
+    "id": "AO238.rate",
+    "source": {
+      "source_id": "DEB018",
+      "act_article": "AO238(1a)",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-238-20261024.html",
+      "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB018.txt",
+      "reader_sha256": "651db01a1f6c18060e1f1e63652986b0e4921fb1ce84da5d2a740ebea8ca0b48",
+      "native_LF": [
+        8,
+        8
+      ],
+      "exact_quote": "(1a) In den F\u00e4llen des \u00a7 233a betragen die Zinsen abweichend von Absatz 1 Satz 1 ab dem 1. Januar 2019 0,15 Prozent f\u00fcr jeden Monat, das hei\u00dft 1,8 Prozent f\u00fcr jedes Jahr.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          15
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "actual_read_bridge": {
+      "guide": "de-income-tax",
+      "quote_row": 25,
+      "conditions": "Exact original raw+official URL and quotation words; normalisation only joins extracted whitespace/formfeeds. Current independent literal reader span membership separately checked, not source-wide read."
+    }
+  },
+  {
+    "row": 61,
+    "id": "GT.late-mandatory",
+    "source": {
+      "source_id": "DEB016",
+      "act_article": "AO152(1)\u2013(3)1",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__152.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "raw_sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB016.txt",
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "native_LF": [
+        7,
+        16
+      ],
+      "exact_quote": "(1) Gegen denjenigen, der seiner Verpflichtung zur Abgabe einer Steuererkl\u00e4rung nicht oder nicht fristgem\u00e4\u00df nachkommt, kann ein Versp\u00e4tungszuschlag festgesetzt werden. Von der Festsetzung eines Versp\u00e4tungszuschlags ist abzusehen, wenn der Erkl\u00e4rungspflichtige glaubhaft macht, dass die Versp\u00e4tung entschuldbar ist; das Verschulden eines Vertreters oder eines Erf\u00fcllungsgehilfen ist dem Erkl\u00e4rungspflichtigen zuzurechnen.\n(2) Abweichend von Absatz 1 ist ein Versp\u00e4tungszuschlag festzusetzen, wenn eine Steuererkl\u00e4rung, die sich auf ein Kalenderjahr oder auf einen gesetzlich bestimmten Zeitpunkt bezieht, 1.\nnicht binnen 14 Monaten nach Ablauf des Kalenderjahrs oder nicht binnen 14 Monaten nach dem Besteuerungszeitpunkt,\n2.\nin den F\u00e4llen des \u00a7 149 Absatz 2 Satz 2 nicht binnen 19 Monaten nach Ablauf des Kalenderjahrs oder nicht binnen 19 Monaten nach dem Besteuerungszeitpunkt oder\n3.\nin den F\u00e4llen des \u00a7 149 Absatz 4 nicht bis zu dem in der Anordnung bestimmten Zeitpunkt\nabgegeben wurde.\n(3) Absatz 2 gilt nicht, 1.\nwenn die Finanzbeh\u00f6rde die Frist f\u00fcr die Abgabe der Steuererkl\u00e4rung nach \u00a7 109 verl\u00e4ngert hat oder diese Frist r\u00fcckwirkend verl\u00e4ngert,",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          26
+        ],
+        [
+          28,
+          36
+        ],
+        [
+          38,
+          44
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  },
+  {
+    "row": 62,
+    "id": "GT.latesurcharge-local",
+    "source": {
+      "source_id": "DEB157",
+      "act_article": "GewStG14b",
+      "official_url": "https://www.gesetze-im-internet.de/gewstg/__14b.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-14b-20261024.html",
+      "raw_sha256": "6bd11d873174767352c950bee6de7070ef803f8709bbd9a8967280025b75d234",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB157.txt",
+      "reader_sha256": "0556dc54b176e72a047710bd6448a5c654b173433a9acad2b2a6b1054803a9da",
+      "native_LF": [
+        7,
+        7
+      ],
+      "exact_quote": "1Ein nach \u00a7 152 der Abgabenordnung zu entrichtender Versp\u00e4tungszuschlag flie\u00dft der Gemeinde zu. 2Sind mehrere Gemeinden an der Gewerbesteuer beteiligt, so flie\u00dft der Versp\u00e4tungszuschlag der Gemeinde zu, in der sich die Gesch\u00e4ftsleitung am Ende des Erhebungszeitraums befindet. 3Befindet sich die Gesch\u00e4ftsleitung im Ausland, so flie\u00dft der Versp\u00e4tungszuschlag der Gemeinde zu, in der sich die wirtschaftlich bedeutendste Betriebsst\u00e4tte befindet. 4Auf den Versp\u00e4tungszuschlag ist der Hebesatz der Gemeinde nicht anzuwenden.",
+      "read_on": "2026-10-29",
+      "actual_read_scope": [
+        [
+          7,
+          7
+        ]
+      ],
+      "read_mode": "Selected operative text actually read by this writer; no whole-body acquisition/read inference. Literal extracted text; HTML block whitespace normalization identified in candidate catalog.",
+      "note": ""
+    },
+    "pending_direct_read": true
+  }
+]

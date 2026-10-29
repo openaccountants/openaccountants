@@ -1,0 +1,3351 @@
+[
+  {
+    "id": "001",
+    "prior_row_id": 1,
+    "prior_native_LF": [
+      19,
+      19
+    ],
+    "native_LF": [
+      19,
+      19
+    ],
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "This skill works out which country taxes the pay of a person who lives on one side of the German-Swiss border and works on the other, and how Germany taxes the result. It also lists the German rules that follow a German who moves to Switzerland. It works from the treaty of 11 August 1971 as amended by the protocol of 21 August 2023. That protocol came into force on 27 November 2025 and applies from 1 January 2026.",
+    "source_quote_ids": [
+      "CH.ENTRY",
+      "CH.EFFECT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "002",
+    "prior_row_id": 2,
+    "prior_native_LF": [
+      21,
+      21
+    ],
+    "native_LF": [
+      21,
+      21
+    ],
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "See also, and do not repeat here:",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "003",
+    "prior_row_id": 3,
+    "prior_native_LF": [
+      23,
+      23
+    ],
+    "native_LF": [
+      23,
+      23
+    ],
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "- **ch-cross-border** (Switzerland pack): Swiss residence, tax at source, the CHF 120,000 ordinary assessment threshold, lump-sum taxation, Swiss withholding tax refunds.",
+    "source_quote_ids": [
+      "CH.SWISSMIN"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "004",
+    "prior_row_id": 4,
+    "prior_native_LF": [
+      24,
+      24
+    ],
+    "native_LF": [
+      24,
+      24
+    ],
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "- **leaving-germany-exit-tax**: the § 6 AStG exit tax on shares and the § 2 AStG extended limited liability, with the full method.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "005",
+    "prior_row_id": 5,
+    "prior_native_LF": [
+      25,
+      25
+    ],
+    "native_LF": [
+      25,
+      25
+    ],
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "- **de-non-resident-tax**: a person who has left Germany and still has German income.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "006",
+    "prior_row_id": 6,
+    "prior_native_LF": [
+      26,
+      26
+    ],
+    "native_LF": [
+      26,
+      26
+    ],
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "- **de-partners-and-part-year**: the year of moving out, with the progression clause.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "007",
+    "prior_row_id": 7,
+    "prior_native_LF": [
+      27,
+      27
+    ],
+    "native_LF": [
+      27,
+      27
+    ],
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "- **de-employee-income-tax**: the 2026 tariff, Werbungskosten and special expenses of an employee.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "008",
+    "prior_row_id": 8,
+    "prior_native_LF": [
+      28,
+      28
+    ],
+    "native_LF": [
+      28,
+      28
+    ],
+    "section": "Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026",
+    "wording": "- **de-treaty-withholding-rates**: German withholding on dividends, interest and royalties paid to Swiss residents.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "009",
+    "prior_row_id": 9,
+    "prior_native_LF": [
+      32,
+      32
+    ],
+    "native_LF": [
+      32,
+      32
+    ],
+    "section": "Who this applies to",
+    "wording": "Three groups, with different results. Classify the client first and test again after any change of job, home office pattern, flat or family home.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "010",
+    "prior_row_id": 10,
+    "prior_native_LF": [
+      34,
+      34
+    ],
+    "native_LF": [
+      34,
+      34
+    ],
+    "section": "Who this applies to",
+    "wording": "**1. Frontier commuter (Grenzgänger), art. 15a.** A person resident in one state whose place of work is in the other state and who regularly returns from there to their home. The pay is taxed in the state of residence. The work state may withhold tax, capped at 4.5% of gross pay if the person shows an official residence certificate from their home tax office (art. 15a(1)).",
+    "source_quote_ids": [
+      "CH.FRONT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "011",
+    "prior_row_id": 11,
+    "prior_native_LF": [
+      36,
+      36
+    ],
+    "native_LF": [
+      36,
+      36
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Place of work** is normally where the employee is integrated into the employer's business. For drivers and field staff, days away count as business trips when counting non-return days. Where the contract names several sites or none, the place of work is where the work is mostly done (protocol no. 5(a)).",
+    "source_quote_ids": [
+      "CH.WORKPLACE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "012",
+    "prior_row_id": 12,
+    "prior_native_LF": [
+      37,
+      37
+    ],
+    "native_LF": [
+      37,
+      37
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Regular return, new from 2026.** There is a regular return only if the employee travels from home to the place of work and back on at least 20% of the agreed working days in the calendar year (protocol no. 5(b)). Agreed working days are those in the contract. Protocol no. 5(d) takes leave and sick days out of the working days for the 60-day test; the protocol does not say whether they also come out of the base for the 20% test, so check both bases (Example 2 passes and fails the same way on either).",
+    "source_quote_ids": [
+      "CH.RETURN",
+      "CH.DAYS"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "013",
+    "prior_row_id": 13,
+    "prior_native_LF": [
+      38,
+      38
+    ],
+    "native_LF": [
+      38,
+      38
+    ],
+    "section": "Who this applies to",
+    "wording": "- **The 60 non-return days test.** A person who does not return home after every working day keeps commuter status unless, when employed for the whole calendar year, they fail to return home on more than 60 working days because of their work (art. 15a(2)).",
+    "source_quote_ids": [
+      "CH.FRONT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "014",
+    "prior_row_id": 14,
+    "prior_native_LF": [
+      39,
+      39
+    ],
+    "native_LF": [
+      39,
+      39
+    ],
+    "section": "Who this applies to",
+    "wording": "- **What counts as a non-return day.** A day on which returning home was not possible or not reasonable for work reasons, and the person in fact did not return. Return is not reasonable when the shortest road distance one way is over 100 km by car, or the fastest public transport one way at usual commuting times takes over 1.5 hours; the means of transport mostly used decides (protocol no. 5(e), which takes over the consultation agreement of 12 October 2018). One-day business trips in either treaty state are not non-return days; one-day trips to a third country always are (protocol no. 5(f)). Weekend and holiday days on a multi-day business trip paid by the employer, and days off worked on the employer's express order, are working days (protocol no. 5(d)). Shift work spread over several days does not break the regular return; breaks under four hours do not end the working day (protocol no. 5(c)).",
+    "source_quote_ids": [
+      "CH.DISTANCE",
+      "CH.TRIP",
+      "CH.DAYS",
+      "CH.SHIFT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "015",
+    "prior_row_id": 15,
+    "prior_native_LF": [
+      40,
+      40
+    ],
+    "native_LF": [
+      40,
+      40
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Home office days.** Under the consultation agreement of 15 and 18 July 2022 (BMF letter of 26 July 2022), a working day spent entirely at home in the residence state is not a non-return day. That agreement was made under the treaty as amended in 2010; whether it still applies under the 2026 protocol is not confirmed (see the end of this skill). Either way, a home office day is not a day on which the person travels to the place of work and back, so from 2026 it counts against the 20% regular-return test.",
+    "source_quote_ids": [
+      "CH.HOMEOFFICE",
+      "CH.HOMECLAUSE",
+      "CH.RETURN"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "016",
+    "prior_row_id": 16,
+    "prior_native_LF": [
+      41,
+      41
+    ],
+    "native_LF": [
+      41,
+      41
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Part-year employment.** The allowed non-return days are 5 per full month and 1 per full week of employment in the other state (protocol no. 5(g)).",
+    "source_quote_ids": [
+      "CH.PARTYEAR"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "017",
+    "prior_row_id": 17,
+    "prior_native_LF": [
+      42,
+      42
+    ],
+    "native_LF": [
+      42,
+      42
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Part-time employment.** Someone who works some hours on every usual working day keeps the 60 days. Someone who works only on some days gets 60 cut in proportion: contractual working days over the usual full-time working days, taken as 240 for a five-day week and 280 for a six-day week if the contract is silent. Leave is not deducted from either figure (protocol no. 5(i)).",
+    "source_quote_ids": [
+      "CH.PARTTIME"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "018",
+    "prior_row_id": 18,
+    "prior_native_LF": [
+      43,
+      43
+    ],
+    "native_LF": [
+      43,
+      43
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Several employers in the work state.** Status is judged once for all jobs in the year; non-return days from all jobs are added (protocol no. 5(h)).",
+    "source_quote_ids": [
+      "CH.MULTIPLE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "019",
+    "prior_row_id": 19,
+    "prior_native_LF": [
+      45,
+      45
+    ],
+    "native_LF": [
+      45,
+      45
+    ],
+    "section": "Who this applies to",
+    "wording": "The rule works both ways. For a Swiss resident who commutes to a German employer, the German employer withholds at most 4.5% and Switzerland taxes the pay, cutting the gross pay by one fifth when computing its tax base (art. 15a(3)(b)).",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "020",
+    "prior_row_id": 20,
+    "prior_native_LF": [
+      47,
+      47
+    ],
+    "native_LF": [
+      47,
+      47
+    ],
+    "section": "Who this applies to",
+    "wording": "**2. Weekly stayer (Wochenaufenthalter) and others who lose commuter status.** After actual commuter status fails, test art. 15(2) before allocating Swiss work pay under art. 15(1): pay remains taxable only in the residence state if presence in the other state is not more than 183 days in the relevant calendar year, the actual treaty employer is not resident there, and its permanent establishment there does not bear the remuneration. Count presence days, not just working days; establish employer and any economic-employer issue from the actual facts. An ordinary German-resident non-commuter present for 80 days in Switzerland for an actual German treaty employer, with no Swiss permanent establishment bearing the pay and all other stated gates met, stays exclusively German-taxable on that pay. At 184 days or with a Swiss-resident employer, that exception fails; then art. 15(1), subject to the other actual special rules, allows Swiss taxation of pay for work there. Germany exempts qualifying pay with progression (art. 24(1) no. 1(c), no. 2; § 32b(1) no. 3 EStG), only on proof either that Switzerland waived its taxing right or that Swiss tax assessed on the pay was paid (§ 50d(8)); a bare zero-withholding certificate does not itself establish a waiver. Under that ordinary art. 15(1) workday route, pay for days outside Switzerland stays German-taxable. Existing examples with a Swiss employer do not meet art. 15(2)(b).",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.SALARY",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX",
+      "CH.PROGRESSION",
+      "R47-53.SUBJECTTAX",
+      "R47-53.SALARY"
+    ],
+    "disposition": "R47–54 bounded source-backed condition successor"
+  },
+  {
+    "id": "021",
+    "prior_row_id": 21,
+    "prior_native_LF": [
+      49,
+      49
+    ],
+    "native_LF": [
+      49,
+      49
+    ],
+    "section": "Who this applies to",
+    "wording": "A weekday flat does not by itself move the person's residence. If the person is resident in both states under domestic law, art. 4(2) decides: permanent home first, then centre of vital interests (closer personal and economic ties), then habitual abode, then nationality. A family home in Germany usually points to Germany.",
+    "source_quote_ids": [
+      "CH.RESTIE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "022",
+    "prior_row_id": 22,
+    "prior_native_LF": [
+      51,
+      51
+    ],
+    "native_LF": [
+      51,
+      51
+    ],
+    "section": "Who this applies to",
+    "wording": "**3. Managers of Swiss companies, art. 15(4).** A German resident who is a board member (Vorstandsmitglied), director, managing director (Geschäftsführer) or Prokurist of a Swiss company can be taxed in Switzerland on that pay, unless their duties are limited to work outside Switzerland. Art. 15a takes priority, so a manager who meets the commuter test is a commuter. The German and Swiss authorities agreed on 6 April 2023 to apply art. 15(4) also to people registered with a signature right and no stated function, and to unregistered people with powers at least equal to a Prokura. That agreement now runs to 31 December 2027 (BMF letters of 25 April 2023 and 16 October 2025).",
+    "source_quote_ids": [
+      "CH.MANAGER",
+      "CH.MANEX",
+      "CH.MANUNTIL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "023",
+    "prior_row_id": 23,
+    "prior_native_LF": [
+      53,
+      53
+    ],
+    "native_LF": [
+      53,
+      53
+    ],
+    "section": "Who this applies to",
+    "wording": "**4. Germans who move to Switzerland.** Moving alone does not end German domestic unlimited liability: test any retained German home or habitual abode under § 1(1) EStG separately from treaty residence. If that domestic liability actually ends, four German departure rules can follow:",
+    "source_quote_ids": [
+      "R47-53.RES"
+    ],
+    "disposition": "R47–54 bounded source-backed condition successor"
+  },
+  {
+    "id": "024",
+    "prior_row_id": 24,
+    "prior_native_LF": [
+      55,
+      55
+    ],
+    "native_LF": [
+      55,
+      55
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Treaty tail, art. 4(4).** A Swiss resident without Swiss nationality who was fully taxable in Germany for at least five years in total remains taxable in Germany on German-source income in the year their German liability ended and the five following years. The separate art. 4(4) credit, under the actual German foreign-tax-credit rules and excluding trade tax, covers treaty-permitted Swiss tax only against the additional German tax imposed by this tail beyond what arts. 6–22 otherwise permit. Stipulated German tail tax EUR 300, otherwise treaty-permitted German tax EUR 100 and otherwise eligible Swiss tax EUR 250 give an additional-tax cap of EUR 200, credit EUR 200 and German remainder EUR 100. These are independently established inputs, not an official example or the full commuter § 36 settlement credit. This does not apply to someone who moved to take up genuine employment with an employer in which they have no substantial interest. A German employer may not apply the 4.5% cap to such a person while art. 4(4) applies (Gre-1 note 3).",
+    "source_quote_ids": [
+      "CH.TAIL",
+      "CH.GRE1",
+      "R47-53.TAIL"
+    ],
+    "disposition": "R47–54 bounded source-backed condition successor"
+  },
+  {
+    "id": "025",
+    "prior_row_id": 25,
+    "prior_native_LF": [
+      56,
+      56
+    ],
+    "native_LF": [
+      56,
+      56
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Exit tax, § 6 AStG.** Shares of at least 1% held in the last five years, after at least seven years of full German liability in the last twelve: deemed sale on leaving, seven yearly instalments on application. Method in leaving-germany-exit-tax.",
+    "source_quote_ids": [
+      "CH.EXIT-trigger",
+      "CH.EXIT-person",
+      "CH.EXIT-shares",
+      "CH.EXIT-instalments"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "026",
+    "prior_row_id": 26,
+    "prior_native_LF": [
+      57,
+      57
+    ],
+    "native_LF": [
+      57,
+      57
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Extended limited liability, § 2 AStG.** A German citizen who moves to a low-tax country and keeps substantial German economic interests stays taxable on more German income for ten years. Whether the Swiss canton counts as low-tax is a computation; see leaving-germany-exit-tax.",
+    "source_quote_ids": [
+      "CH.EXIT-extended-person"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "027",
+    "prior_row_id": 27,
+    "prior_native_LF": [
+      58,
+      58
+    ],
+    "native_LF": [
+      58,
+      58
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Gift and inheritance tax, § 2(1) no. 1(b) ErbStG.** A German national who has lived abroad for no more than five years without a German home still counts as a resident for gift and inheritance tax.",
+    "source_quote_ids": [
+      "CH.INHERIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "028",
+    "prior_row_id": 28,
+    "prior_native_LF": [
+      60,
+      60
+    ],
+    "native_LF": [
+      60,
+      60
+    ],
+    "section": "Who this applies to",
+    "wording": "**Lump-sum taxpayers, art. 4(6).** A person is not treated as resident in a treaty state if that state does not tax them, at the generally applied taxes, on all their income from the other state that is normally taxable there. A lump-sum (expenditure-based) taxpayer in Switzerland who is not taxed on German-source income at ordinary rates therefore loses treaty protection. The Swiss rules on the lump sum are in ch-cross-border.",
+    "source_quote_ids": [
+      "CH.LUMPSUMRES"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "029",
+    "prior_row_id": 29,
+    "prior_native_LF": [
+      64,
+      64
+    ],
+    "native_LF": [
+      64,
+      64
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Item | Rate or amount | Year | Source |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "030",
+    "prior_row_id": 30,
+    "prior_native_LF": [
+      66,
+      66
+    ],
+    "native_LF": [
+      66,
+      66
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Swiss tax on a German-resident commuter's pay | At most 4.5% of gross pay, with a Gre-1 residence certificate; the lower Swiss tariff tax if that is less | 2026 | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2 (art. 15a(1)); Gre-1 note 6 |",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.GRE1"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "031",
+    "prior_row_id": 31,
+    "prior_native_LF": [
+      67,
+      67
+    ],
+    "native_LF": [
+      67,
+      67
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Non-return days allowed, full year, full time | 60 working days | 2026 | Same, art. 15a(2) |",
+    "source_quote_ids": [
+      "CH.FRONT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "032",
+    "prior_row_id": 32,
+    "prior_native_LF": [
+      68,
+      68
+    ],
+    "native_LF": [
+      68,
+      68
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Non-return days allowed, part year | 5 per full month plus 1 per full week of employment | 2026 | Same, protocol no. 5(g) |",
+    "source_quote_ids": [
+      "CH.PARTYEAR"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "033",
+    "prior_row_id": 33,
+    "prior_native_LF": [
+      69,
+      69
+    ],
+    "native_LF": [
+      69,
+      69
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Non-return days allowed, part time on some days only | 60 × contractual working days / usual full-time days (240 for a five-day week, 280 for a six-day week, if not in the contract) | 2026 | Same, protocol no. 5(i) |",
+    "source_quote_ids": [
+      "CH.PARTTIME"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "034",
+    "prior_row_id": 34,
+    "prior_native_LF": [
+      70,
+      70
+    ],
+    "native_LF": [
+      70,
+      70
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Regular return | Commute home to work and back on at least 20% of agreed working days | From 2026 | Same, protocol no. 5(b) |",
+    "source_quote_ids": [
+      "CH.RETURN",
+      "CH.EFFECT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "035",
+    "prior_row_id": 35,
+    "prior_native_LF": [
+      71,
+      71
+    ],
+    "native_LF": [
+      71,
+      71
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Return not reasonable | Over 100 km one way by road, or over 1.5 hours one way by public transport at usual times | 2026 | Same, protocol no. 5(e) |",
+    "source_quote_ids": [
+      "CH.DISTANCE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "036",
+    "prior_row_id": 36,
+    "prior_native_LF": [
+      72,
+      72
+    ],
+    "native_LF": [
+      72,
+      72
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| German credit of the Swiss commuter tax | In full, like German withholding, under § 36 EStG, not under § 34c; also counted when setting prepayments | 2026 | Same, art. 15a(3)(a); https://www.gesetze-im-internet.de/estg/__36.html |",
+    "source_quote_ids": [
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "037",
+    "prior_row_id": 37,
+    "prior_native_LF": [
+      73,
+      73
+    ],
+    "native_LF": [
+      73,
+      73
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Swiss resident commuting to Germany | German withholding at most 4.5%; Swiss tax base is gross pay less one fifth | 2026 | Same, art. 15a(1), (3)(b) |",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "038",
+    "prior_row_id": 38,
+    "prior_native_LF": [
+      74,
+      74
+    ],
+    "native_LF": [
+      74,
+      74
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Treaty tail for Germans who move | Year of departure plus five years | 2026 | Same, art. 4(4) |",
+    "source_quote_ids": [
+      "CH.TAIL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "039",
+    "prior_row_id": 39,
+    "prior_native_LF": [
+      75,
+      75
+    ],
+    "native_LF": [
+      75,
+      75
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Prior German liability for the treaty tail | At least five years in total | 2026 | Same, art. 4(4) |",
+    "source_quote_ids": [
+      "CH.TAIL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "040",
+    "prior_row_id": 40,
+    "prior_native_LF": [
+      76,
+      76
+    ],
+    "native_LF": [
+      76,
+      76
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| German return required, single, no German wage tax withheld | Total income above EUR 12,348 (EUR 24,696 for a married couple assessed jointly) | 2026 | https://www.gesetze-im-internet.de/estdv_1955/__56.html; https://www.gesetze-im-internet.de/estg/__32a.html |",
+    "source_quote_ids": [
+      "CH.FILEDUTY",
+      "CH.TARIFF"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "041",
+    "prior_row_id": 41,
+    "prior_native_LF": [
+      77,
+      77
+    ],
+    "native_LF": [
+      77,
+      77
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| 2026 tariff, zone 3 (taxable EUR 17,800 to 69,878) | (173.10 × z + 2,397) × z + 1,034.87, z = (taxable − 17,799) / 10,000, result rounded down | 2026 | https://www.gesetze-im-internet.de/estg/__32a.html |",
+    "source_quote_ids": [
+      "CH.TARIFF"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "042",
+    "prior_row_id": 42,
+    "prior_native_LF": [
+      78,
+      78
+    ],
+    "native_LF": [
+      78,
+      78
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Prepayments | 10 March, 10 June, 10 September, 10 December; set only if at least EUR 400 a year and EUR 100 a date | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "source_quote_ids": [
+      "CH.E37-1",
+      "CH.E37-5"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "043",
+    "prior_row_id": 43,
+    "prior_native_LF": [
+      79,
+      79
+    ],
+    "native_LF": [
+      79,
+      79
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Art. 15(4) consultation agreement | Applies to 31 December 2027 | 2026 | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2025-10-16-weiterfuehrung-konsultationsvereinb.pdf?__blob=publicationFile&v=3 |",
+    "source_quote_ids": [
+      "CH.MANUNTIL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "044",
+    "prior_row_id": 44,
+    "prior_native_LF": [
+      80,
+      80
+    ],
+    "native_LF": [
+      80,
+      80
+    ],
+    "section": "Rates, bands and thresholds",
+    "wording": "| Swiss mandatory ordinary assessment of source-taxed pay | Gross employment income of at least CHF 120,000 | 2026 | See ch-cross-border (QStV art. 9) |",
+    "source_quote_ids": [
+      "CH.SWISSMIN"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "045",
+    "prior_row_id": 45,
+    "prior_native_LF": [
+      86,
+      86
+    ],
+    "native_LF": [
+      86,
+      86
+    ],
+    "section": "Step 1: is the person a commuter?",
+    "wording": "1. Residence: where does the person live under domestic law, and if both, where under art. 4(2)?",
+    "source_quote_ids": [
+      "CH.RESTIE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "046",
+    "prior_row_id": 46,
+    "prior_native_LF": [
+      87,
+      87
+    ],
+    "native_LF": [
+      87,
+      87
+    ],
+    "section": "Step 1: is the person a commuter?",
+    "wording": "2. Place of work in the other state (protocol no. 5(a))?",
+    "source_quote_ids": [
+      "CH.WORKPLACE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "047",
+    "prior_row_id": 47,
+    "prior_native_LF": [
+      88,
+      88
+    ],
+    "native_LF": [
+      88,
+      88
+    ],
+    "section": "Step 1: is the person a commuter?",
+    "wording": "3. Regular return: commuting days ÷ agreed working days must be at least 20%. As explained above, the protocol excludes leave and sickness from the working days for the non-return test but does not expressly extend that exclusion to this denominator; calculate both denominators and retain the stated source uncertainty where the result differs.",
+    "source_quote_ids": [
+      "CH.RETURN",
+      "CH.DAYS"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "048",
+    "prior_row_id": 48,
+    "prior_native_LF": [
+      89,
+      89
+    ],
+    "native_LF": [
+      89,
+      89
+    ],
+    "section": "Step 1: is the person a commuter?",
+    "wording": "4. Non-return days: count only days that meet protocol no. 5(e) and (f), and compare with 60 or the reduced limit for part-year or part-time work. Add days from all jobs in the work state.",
+    "source_quote_ids": [
+      "CH.DISTANCE",
+      "CH.TRIP",
+      "CH.FRONT",
+      "CH.PARTYEAR",
+      "CH.PARTTIME",
+      "CH.MULTIPLE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "049",
+    "prior_row_id": 49,
+    "prior_native_LF": [
+      90,
+      90
+    ],
+    "native_LF": [
+      90,
+      90
+    ],
+    "section": "Step 1: is the person a commuter?",
+    "wording": "5. If both tests pass, art. 15a applies to the whole year's pay from that employment. If either fails, go to Step 3.",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.SALARY"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "050",
+    "prior_row_id": 50,
+    "prior_native_LF": [
+      92,
+      92
+    ],
+    "native_LF": [
+      92,
+      92
+    ],
+    "section": "Step 1: is the person a commuter?",
+    "wording": "The employer certifies the non-return days on form Gre-3, stamped by the tax office for the place of work (protocol no. 5(j)). Where the employer finds at the year end, or when the job ends, that commuter status fails because of the non-return days, it sends the Gre-3 to the tax authority that collects the withholding, if possible within three months (Gre-3 note 2). The employee must give the employer the facts needed (protocol no. 5(j)).",
+    "source_quote_ids": [
+      "CH.PROOF",
+      "CH.GRE3"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "051",
+    "prior_row_id": 51,
+    "prior_native_LF": [
+      96,
+      96
+    ],
+    "native_LF": [
+      96,
+      96
+    ],
+    "section": "Step 2: the German assessment of a commuter (German resident)",
+    "wording": "- All the pay, including pay for days worked in Switzerland, is German employment income. Compute it as for any employee (de-employee-income-tax): gross pay less Werbungskosten or the employee lump sum, then special expenses.",
+    "source_quote_ids": [
+      "CH.BASE",
+      "CH.EMPLOYEE1230",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "052",
+    "prior_row_id": 52,
+    "prior_native_LF": [
+      97,
+      97
+    ],
+    "native_LF": [
+      97,
+      97
+    ],
+    "section": "Step 2: the German assessment of a commuter (German resident)",
+    "wording": "- The 2026 tariff applies to taxable income. For ordinary assessment without a separate § 32d(3)/(4) component, establish the actual Soli base and threshold: EUR 20,350 for a single assessment, EUR 40,700 for the statutory joint cases. Up to that threshold the ordinary surcharge is zero; above it take the smaller of 5.5% of the base and 11.9% of its excess over that threshold, dropping fractions of a cent. A stipulated ordinary single base of EUR 20,400 gives min(EUR 1,122, EUR 5.95) = EUR 5.95. Use the employee companion for child-related base and special § 32d selectors; Swiss § 36 withholding credit is a settlement credit, not a reduction of this Soli assessment base.",
+    "source_quote_ids": [
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "R47-53.SoliRate",
+      "R47-53.SOLILIMIT"
+    ],
+    "disposition": "R47–54 bounded source-backed condition successor"
+  },
+  {
+    "id": "053",
+    "prior_row_id": 53,
+    "prior_native_LF": [
+      98,
+      98
+    ],
+    "native_LF": [
+      98,
+      98
+    ],
+    "section": "Step 2: the German assessment of a commuter (German resident)",
+    "wording": "- The Swiss tax withheld, up to 4.5% of gross, is credited against German income tax as if it were German withholding (art. 15a(3)(a); § 36(2) no. 2 EStG). It is not capped under § 34c. The employer's certificate of gross pay and Swiss tax is the evidence (protocol no. 6).",
+    "source_quote_ids": [
+      "CH.CREDIT",
+      "CH.PAYCERT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "054",
+    "prior_row_id": 54,
+    "prior_native_LF": [
+      99,
+      99
+    ],
+    "native_LF": [
+      99,
+      99
+    ],
+    "section": "Step 2: the German assessment of a commuter (German resident)",
+    "wording": "- The Swiss employer withholds the lower of 4.5% and the Swiss tariff tax (Gre-1 note 6(b)). The commuter gives the employer the Gre-1 when starting work and when changing employer; the German tax office then renews it each year without a new application (Gre-1 notes 2 and 7).",
+    "source_quote_ids": [
+      "CH.GRE1"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "055",
+    "prior_row_id": 55,
+    "prior_native_LF": [
+      103,
+      103
+    ],
+    "native_LF": [
+      103,
+      103
+    ],
+    "section": "Step 3: when commuter status fails",
+    "wording": "- After testing art. 15(2) and other actual special rules above, qualifying Swiss workday pay under art. 15(1) is exempt in Germany with progression (art. 24(1) no. 1(c), no. 2; § 32b), on proof of Swiss waiver or payment of assessed Swiss tax (§ 50d(8)). If the three art. 15(2) gates instead hold, do not exempt that pay merely because work occurred in Switzerland.",
+    "source_quote_ids": [
+      "CH.SALARY",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX",
+      "CH.PROGRESSION",
+      "R47-53.SUBJECTTAX",
+      "R47-53.SALARY"
+    ],
+    "disposition": "R47–54 bounded source-backed condition successor"
+  },
+  {
+    "id": "056",
+    "prior_row_id": 56,
+    "prior_native_LF": [
+      104,
+      104
+    ],
+    "native_LF": [
+      104,
+      104
+    ],
+    "section": "Step 3: when commuter status fails",
+    "wording": "- Pay for days worked in Germany or third countries: taxable in Germany.",
+    "source_quote_ids": [
+      "CH.SALARY"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "057",
+    "prior_row_id": 57,
+    "prior_native_LF": [
+      105,
+      105
+    ],
+    "native_LF": [
+      105,
+      105
+    ],
+    "section": "Step 3: when commuter status fails",
+    "wording": "- If the employer finds during the year that status will fail, it must collect the full Swiss tax (Gre-1 note 4).",
+    "source_quote_ids": [
+      "CH.GRE1"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "058",
+    "prior_row_id": 58,
+    "prior_native_LF": [
+      109,
+      109
+    ],
+    "native_LF": [
+      109,
+      109
+    ],
+    "section": "Step 4: Swiss occupational pensions of former commuters",
+    "wording": "Protocol no. 9 covers Swiss second-pillar insurance payments where the last or current employment relevant to that insurance relationship before payment/start was in Swiss public service, including the specified vested-benefit accounts/policies. For a recipient who has or had art. 15a commuter status, art. 19(4) gives residence-state priority and the other state limits withholding under art. 15a. For recurring payments, give the second-pillar institution the prescribed residence certificate before the first receipt (Gre-4, or Gre-5 for survivors); capital payments instead require commuter-status certification in the prescribed official refund form. Merely having worked in Swiss public service sometime is insufficient. German credit of Swiss withholding requires the corresponding receipts actually to enter the German tax base and no refund to have been applied for or made. Preserve the actual pension classification/taxable-share limit: the cited 2018 method credits at most the corresponding 4.5% share for the Obligatorium or the relevant Ertragsanteil for the Überobligatorium; no universal pension percentage or double recovery is inferred.",
+    "source_quote_ids": [
+      "CH.PUBPENSION",
+      "CH.PENSCREDIT",
+      "CH.PENS1",
+      "CH.PENS2",
+      "R47-53.PUBPENSION",
+      "R47-53.PENSCREDIT",
+      "R47-53.PENS1",
+      "R47-53.PENS2"
+    ],
+    "disposition": "R47–54 bounded source-backed condition successor"
+  },
+  {
+    "id": "059",
+    "prior_row_id": 59,
+    "prior_native_LF": [
+      113,
+      113
+    ],
+    "native_LF": [
+      113,
+      113
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Step | Rule |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "060",
+    "prior_row_id": 60,
+    "prior_native_LF": [
+      115,
+      115
+    ],
+    "native_LF": [
+      115,
+      115
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Gre-1 residence certificate | Apply to the German tax office when starting work and when changing employer; valid for one year and renewed without a new application |",
+    "source_quote_ids": [
+      "CH.GRE1"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "061",
+    "prior_row_id": 61,
+    "prior_native_LF": [
+      116,
+      116
+    ],
+    "native_LF": [
+      116,
+      116
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Gre-3 non-return days | Where status fails: employer certifies, the tax office for the place of work stamps; if possible within three months after the year end or the end of the job |",
+    "source_quote_ids": [
+      "CH.PROOF",
+      "CH.GRE3"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "062",
+    "prior_row_id": 62,
+    "prior_native_LF": [
+      117,
+      117
+    ],
+    "native_LF": [
+      117,
+      117
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| German return, 2026 | Required when total income exceeds EUR 12,348 (single) and no German wage tax was withheld (§ 56 EStDV). Due 31 July 2027, a Saturday, so Monday 2 August 2027; with a tax adviser 29 February 2028 (§§ 108, 149 AO; see de-non-resident-tax) |",
+    "source_quote_ids": [
+      "CH.FILEDUTY",
+      "CH.TARIFF",
+      "CH.AO149-2",
+      "CH.AO149-3",
+      "CH.AO108"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "063",
+    "prior_row_id": 63,
+    "prior_native_LF": [
+      118,
+      118
+    ],
+    "native_LF": [
+      118,
+      118
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Prepayments | Quarterly on 10 March, 10 June, 10 September and 10 December; the 4.5% Swiss tax is counted (art. 15a(3)(a); § 37 EStG) |",
+    "source_quote_ids": [
+      "CH.E37-1",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "064",
+    "prior_row_id": 64,
+    "prior_native_LF": [
+      119,
+      119
+    ],
+    "native_LF": [
+      119,
+      119
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Weekly stayer | Test art. 15(2) first. Where Swiss taxation/German exemption actually applies, follow ch-cross-border for Swiss filing; the German return shows qualifying exempt pay for progression with proof of Swiss waiver or payment of assessed Swiss tax, not payment as the only possible proof. |",
+    "source_quote_ids": [
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX",
+      "R47-53.SUBJECTTAX",
+      "R47-53.SALARY"
+    ],
+    "disposition": "R47–54 bounded source-backed condition successor"
+  },
+  {
+    "id": "065",
+    "prior_row_id": 65,
+    "prior_native_LF": [
+      123,
+      123
+    ],
+    "native_LF": [
+      123,
+      123
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Late filing surcharge (§ 152 AO).** 0.25% per started month of the assessed tax less prepayments and credited withholding, at least EUR 25 per month, at most EUR 25,000. The § 152(2) compulsory route after 29 February 2028 is subject to § 152(3): it does not apply where the office extends the deadline under § 109, including retroactively, where assessed tax is zero or negative, or where assessed tax does not exceed assessed prepayments plus creditable withholding. These exceptions limit paragraph 2 compulsion; apply paragraph 1's separate discretionary conditions, not an automatic waiver of every surcharge.",
+    "source_quote_ids": [
+      "CH.AO152-1",
+      "CH.AO152-2",
+      "CH.AO152-3",
+      "CH.AO152-5",
+      "CH.AO152-10",
+      "R54.extensions"
+    ],
+    "disposition": "R47–54 bounded source-backed condition successor"
+  },
+  {
+    "id": "066",
+    "prior_row_id": 66,
+    "prior_native_LF": [
+      124,
+      124
+    ],
+    "native_LF": [
+      124,
+      124
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Interest on assessed tax (§ 233a, § 238 AO).** 0.15% per full month on the balance, from 1 April 2028 for 2026.",
+    "source_quote_ids": [
+      "CH.AO233a-2",
+      "CH.AO238-1a"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "067",
+    "prior_row_id": 67,
+    "prior_native_LF": [
+      125,
+      125
+    ],
+    "native_LF": [
+      125,
+      125
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Late payment (§ 240 AO).** 1% per started month on overdue tax, rounded down to the nearest EUR 50.",
+    "source_quote_ids": [
+      "CH.AO240-1"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "068",
+    "prior_row_id": 68,
+    "prior_native_LF": [
+      126,
+      126
+    ],
+    "native_LF": [
+      126,
+      126
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Lost commuter status found late.** The employer must collect the Swiss tax not withheld (Gre-1 note 4). In Germany where art. 24 exemption actually applies after the other treaty tests, § 50d(8) requires proof either of Swiss waiver or that Swiss assessed tax was paid. If the required proof is first supplied after the German assessment included the pay, amend that assessment to the corresponding extent; do not demand payment of tax where a valid waiver is proved.",
+    "source_quote_ids": [
+      "CH.GRE1",
+      "CH.SUBJECTTAX",
+      "R47-53.SUBJECTTAX",
+      "R47-53.SALARY"
+    ],
+    "disposition": "R47–54 bounded source-backed condition successor"
+  },
+  {
+    "id": "069",
+    "prior_row_id": 69,
+    "prior_native_LF": [
+      128,
+      128
+    ],
+    "native_LF": [
+      128,
+      128
+    ],
+    "section": "Penalties and interest",
+    "wording": "Figures and sections as in de-non-resident-tax, which read them on 2026-10-23.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "070",
+    "prior_row_id": 70,
+    "prior_native_LF": [
+      132,
+      132
+    ],
+    "native_LF": [
+      132,
+      132
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Two treaty layers from 2026.** The protocol of 21 August 2023 rewrote the commuter points into the treaty protocol (nos. 5 to 7) and ended the 1991 negotiation record (protocol no. 7). The 20% regular-return test is the main new condition.",
+    "source_quote_ids": [
+      "CH.PAYCERT",
+      "CH.RETURN",
+      "CH.EFFECT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "071",
+    "prior_row_id": 71,
+    "prior_native_LF": [
+      133,
+      133
+    ],
+    "native_LF": [
+      133,
+      133
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Swiss withholding for German residents, dividends, interest.** Switzerland withholds 35% Verrechnungssteuer. For the treaty-resident beneficial owner, the ordinary residual dividend ceiling is 15% under art. 10(2)(c); separately classify the Rhine border-power-company 5% population and the specified deductible silent-participation/profit-sharing instruments under the 30% branch in (a)/(b). Art. 10(3) gives source-state exemption only to a beneficially entitled treaty-resident company other than a partnership, directly holding at least 10% for a 365-day period including the dividend payment day; the stated merger/division/conversion changes are disregarded for that period. Indirect 10%, partnership ownership or an unproved payment-inclusive period does not establish zero. Its German REIT/fund exclusion concerns German payers; do not extend it to Swiss payers. Actual entitlement and evidence precede any Swiss refund, whose route is in ch-cross-border; German outbound cases use the treaty-withholding companion. Interest follows art. 11's separate Germany-only route.",
+    "source_quote_ids": [
+      "CH.CHDIV",
+      "CH.CHINT",
+      "CH.SWISS35",
+      "R47-53.CHDIV"
+    ],
+    "disposition": "R47–54 bounded source-backed condition successor"
+  },
+  {
+    "id": "072",
+    "prior_row_id": 72,
+    "prior_native_LF": [
+      134,
+      134
+    ],
+    "native_LF": [
+      134,
+      134
+    ],
+    "section": "Cross-border points",
+    "wording": "- **German withholding on payments to Swiss residents.** See de-treaty-withholding-rates.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "073",
+    "prior_row_id": 73,
+    "prior_native_LF": [
+      135,
+      135
+    ],
+    "native_LF": [
+      135,
+      135
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Social security.** EU-Switzerland coordination decides where contributions are due, separately from tax. Not covered here.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "074",
+    "prior_row_id": 74,
+    "prior_native_LF": [
+      136,
+      136
+    ],
+    "native_LF": [
+      136,
+      136
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Inheritance tax.** A separate Germany-Switzerland inheritance tax treaty of 1978 exists. Not covered here.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "075",
+    "prior_row_id": 75,
+    "prior_native_LF": [
+      137,
+      137
+    ],
+    "native_LF": [
+      137,
+      137
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Currency.** Swiss pay is converted to euro for the German return. The conversion rule is not set out here.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "076",
+    "prior_row_id": 76,
+    "prior_native_LF": [
+      143,
+      143
+    ],
+    "native_LF": [
+      143,
+      143
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "Lena lives in Lörrach and works full time for a Basel employer all of 2026. She commutes every working day except 12 nights away on multi-day business trips in Switzerland and 20 home office days at home. She is single and has no other income. Her gross pay is EUR 80,000 (already converted). After Werbungskosten and special expenses her taxable income is EUR 60,000 (computed as in de-employee-income-tax). She gave her employer a Gre-1. (Invented case.)",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "077",
+    "prior_row_id": 77,
+    "prior_native_LF": [
+      145,
+      145
+    ],
+    "native_LF": [
+      145,
+      145
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "- Non-return days: 12, below 60. Home office days do not count.",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "078",
+    "prior_row_id": 78,
+    "prior_native_LF": [
+      146,
+      146
+    ],
+    "native_LF": [
+      146,
+      146
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "- Regular return: she commutes on almost every working day, far above 20%.",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "079",
+    "prior_row_id": 79,
+    "prior_native_LF": [
+      147,
+      147
+    ],
+    "native_LF": [
+      147,
+      147
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "- She is a commuter. Swiss tax at source: 4.5% × 80,000 = EUR 3,600.",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "080",
+    "prior_row_id": 80,
+    "prior_native_LF": [
+      148,
+      148
+    ],
+    "native_LF": [
+      148,
+      148
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "- German tax on EUR 60,000: z = (60,000 − 17,799) / 10,000 = 4.2201; tax = (173.10 × 4.2201 + 2,397) × 4.2201 + 1,034.87 = 14,233.23, rounded down EUR 14,233. Below EUR 20,350, so no solidarity surcharge.",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "081",
+    "prior_row_id": 81,
+    "prior_native_LF": [
+      149,
+      149
+    ],
+    "native_LF": [
+      149,
+      149
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "- Credit of the Swiss tax: EUR 3,600 in full (§ 36). German tax still to pay: EUR 10,633.",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "082",
+    "prior_row_id": 82,
+    "prior_native_LF": [
+      150,
+      150
+    ],
+    "native_LF": [
+      150,
+      150
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "- Total tax on the pay: EUR 3,600 in Switzerland plus EUR 10,633 in Germany, EUR 14,233.",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "083",
+    "prior_row_id": 83,
+    "prior_native_LF": [
+      152,
+      152
+    ],
+    "native_LF": [
+      152,
+      152
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "```oa-check",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "084",
+    "prior_row_id": 84,
+    "prior_native_LF": [
+      153,
+      153
+    ],
+    "native_LF": [
+      153,
+      153
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "name: DE-CH commuter 2026, 4.5% Swiss tax credited under § 36",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "085",
+    "prior_row_id": 85,
+    "prior_native_LF": [
+      154,
+      154
+    ],
+    "native_LF": [
+      154,
+      154
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "inputs:",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "086",
+    "prior_row_id": 86,
+    "prior_native_LF": [
+      155,
+      155
+    ],
+    "native_LF": [
+      155,
+      155
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  gross_pay: 80000",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "087",
+    "prior_row_id": 87,
+    "prior_native_LF": [
+      156,
+      156
+    ],
+    "native_LF": [
+      156,
+      156
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  taxable_income: 60000",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "088",
+    "prior_row_id": 88,
+    "prior_native_LF": [
+      157,
+      157
+    ],
+    "native_LF": [
+      157,
+      157
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  swiss_cap_rate: 0.045",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "089",
+    "prior_row_id": 89,
+    "prior_native_LF": [
+      158,
+      158
+    ],
+    "native_LF": [
+      158,
+      158
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "steps:",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "090",
+    "prior_row_id": 90,
+    "prior_native_LF": [
+      159,
+      159
+    ],
+    "native_LF": [
+      159,
+      159
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  - swiss_tax: gross_pay * swiss_cap_rate",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "091",
+    "prior_row_id": 91,
+    "prior_native_LF": [
+      160,
+      160
+    ],
+    "native_LF": [
+      160,
+      160
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  - z: (taxable_income - 17799) / 10000",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "092",
+    "prior_row_id": 92,
+    "prior_native_LF": [
+      161,
+      161
+    ],
+    "native_LF": [
+      161,
+      161
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  - german_tax: floor((173.10 * z + 2397) * z + 1034.87)",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "093",
+    "prior_row_id": 93,
+    "prior_native_LF": [
+      162,
+      162
+    ],
+    "native_LF": [
+      162,
+      162
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  - german_balance: german_tax - swiss_tax",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "094",
+    "prior_row_id": 94,
+    "prior_native_LF": [
+      163,
+      163
+    ],
+    "native_LF": [
+      163,
+      163
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  - total: swiss_tax + german_balance",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "095",
+    "prior_row_id": 95,
+    "prior_native_LF": [
+      164,
+      164
+    ],
+    "native_LF": [
+      164,
+      164
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "expected:",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "096",
+    "prior_row_id": 96,
+    "prior_native_LF": [
+      165,
+      165
+    ],
+    "native_LF": [
+      165,
+      165
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  swiss_tax: 3600",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "097",
+    "prior_row_id": 97,
+    "prior_native_LF": [
+      166,
+      166
+    ],
+    "native_LF": [
+      166,
+      166
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  german_tax: 14233",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "098",
+    "prior_row_id": 98,
+    "prior_native_LF": [
+      167,
+      167
+    ],
+    "native_LF": [
+      167,
+      167
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  german_balance: 10633",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "099",
+    "prior_row_id": 99,
+    "prior_native_LF": [
+      168,
+      168
+    ],
+    "native_LF": [
+      168,
+      168
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "  total: 14233",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "100",
+    "prior_row_id": 100,
+    "prior_native_LF": [
+      169,
+      169
+    ],
+    "native_LF": [
+      169,
+      169
+    ],
+    "section": "Example 1: commuter from Lörrach to Basel, full year 2026",
+    "wording": "```",
+    "source_quote_ids": [
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.HOMECLAUSE",
+      "CH.TARIFF",
+      "CH.SoliRate",
+      "CH.SOLILIMIT",
+      "CH.CREDIT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "101",
+    "prior_row_id": 101,
+    "prior_native_LF": [
+      173,
+      173
+    ],
+    "native_LF": [
+      173,
+      173
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "Jonas lives in Konstanz and works three days a week for a Zurich employer all of 2026. His contract does not state the usual full-time days, so a five-day week gives 240. His contractual days are 3/5 of 240 = 144. He takes 12 days of leave, so he has 132 working days. He works 30 of them at home in Konstanz and stays overnight in Switzerland on 30 days because of evening client work more than 100 km from home. (Invented case.)",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "102",
+    "prior_row_id": 102,
+    "prior_native_LF": [
+      175,
+      175
+    ],
+    "native_LF": [
+      175,
+      175
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "- Non-return limit: 60 × 144 / 240 = 36 days (leave is not deducted for this ratio). His 30 days are within it.",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "103",
+    "prior_row_id": 103,
+    "prior_native_LF": [
+      176,
+      176
+    ],
+    "native_LF": [
+      176,
+      176
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "- Regular return: commuting days = 132 − 30 − 30 = 72. 20% of 132 = 26.4. 72 is above, so he passes. On the contract days without deducting leave (144) the threshold is 28.8; he still passes.",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "104",
+    "prior_row_id": 104,
+    "prior_native_LF": [
+      177,
+      177
+    ],
+    "native_LF": [
+      177,
+      177
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "- He is a commuter: Switzerland withholds at most 4.5% and Germany taxes the pay and credits it, as in Example 1.",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "105",
+    "prior_row_id": 105,
+    "prior_native_LF": [
+      178,
+      178
+    ],
+    "native_LF": [
+      178,
+      178
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "- Edge case: if he had worked 80 days at home, his commuting days would be 132 − 80 − 30 = 22, below 26.4 (and below 28.8). He would then fail the regular-return test from 2026 even though the home office days are not non-return days. Art. 15 would then apply: Switzerland taxes pay for his Swiss work days and Germany exempts it with progression, on proof of Swiss tax.",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "106",
+    "prior_row_id": 106,
+    "prior_native_LF": [
+      180,
+      180
+    ],
+    "native_LF": [
+      180,
+      180
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "```oa-check",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "107",
+    "prior_row_id": 107,
+    "prior_native_LF": [
+      181,
+      181
+    ],
+    "native_LF": [
+      181,
+      181
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "name: DE-CH part-time commuter 2026, non-return limit and 20% return test",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "108",
+    "prior_row_id": 108,
+    "prior_native_LF": [
+      182,
+      182
+    ],
+    "native_LF": [
+      182,
+      182
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "inputs:",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "109",
+    "prior_row_id": 109,
+    "prior_native_LF": [
+      183,
+      183
+    ],
+    "native_LF": [
+      183,
+      183
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  usual_days: 240",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "110",
+    "prior_row_id": 110,
+    "prior_native_LF": [
+      184,
+      184
+    ],
+    "native_LF": [
+      184,
+      184
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  days_per_week: 3",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "111",
+    "prior_row_id": 111,
+    "prior_native_LF": [
+      185,
+      185
+    ],
+    "native_LF": [
+      185,
+      185
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  leave_days: 12",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "112",
+    "prior_row_id": 112,
+    "prior_native_LF": [
+      186,
+      186
+    ],
+    "native_LF": [
+      186,
+      186
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  home_office_days: 30",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "113",
+    "prior_row_id": 113,
+    "prior_native_LF": [
+      187,
+      187
+    ],
+    "native_LF": [
+      187,
+      187
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  nonreturn_days: 30",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "114",
+    "prior_row_id": 114,
+    "prior_native_LF": [
+      188,
+      188
+    ],
+    "native_LF": [
+      188,
+      188
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  home_office_alt: 80",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "115",
+    "prior_row_id": 115,
+    "prior_native_LF": [
+      189,
+      189
+    ],
+    "native_LF": [
+      189,
+      189
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "steps:",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "116",
+    "prior_row_id": 116,
+    "prior_native_LF": [
+      190,
+      190
+    ],
+    "native_LF": [
+      190,
+      190
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - contract_days: usual_days * days_per_week / 5",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "117",
+    "prior_row_id": 117,
+    "prior_native_LF": [
+      191,
+      191
+    ],
+    "native_LF": [
+      191,
+      191
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - nonreturn_limit: 60 * contract_days / usual_days",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "118",
+    "prior_row_id": 118,
+    "prior_native_LF": [
+      192,
+      192
+    ],
+    "native_LF": [
+      192,
+      192
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - working_days: contract_days - leave_days",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "119",
+    "prior_row_id": 119,
+    "prior_native_LF": [
+      193,
+      193
+    ],
+    "native_LF": [
+      193,
+      193
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - commute_days: working_days - home_office_days - nonreturn_days",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "120",
+    "prior_row_id": 120,
+    "prior_native_LF": [
+      194,
+      194
+    ],
+    "native_LF": [
+      194,
+      194
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - min_commute: working_days * 0.20",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "121",
+    "prior_row_id": 121,
+    "prior_native_LF": [
+      195,
+      195
+    ],
+    "native_LF": [
+      195,
+      195
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - margin_nonreturn: nonreturn_limit - nonreturn_days",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "122",
+    "prior_row_id": 122,
+    "prior_native_LF": [
+      196,
+      196
+    ],
+    "native_LF": [
+      196,
+      196
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - margin_return: commute_days - min_commute",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "123",
+    "prior_row_id": 123,
+    "prior_native_LF": [
+      197,
+      197
+    ],
+    "native_LF": [
+      197,
+      197
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - commute_alt: working_days - home_office_alt - nonreturn_days",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "124",
+    "prior_row_id": 124,
+    "prior_native_LF": [
+      198,
+      198
+    ],
+    "native_LF": [
+      198,
+      198
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  - margin_alt: commute_alt - min_commute",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "125",
+    "prior_row_id": 125,
+    "prior_native_LF": [
+      199,
+      199
+    ],
+    "native_LF": [
+      199,
+      199
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "expected:",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "126",
+    "prior_row_id": 126,
+    "prior_native_LF": [
+      200,
+      200
+    ],
+    "native_LF": [
+      200,
+      200
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  contract_days: 144",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "127",
+    "prior_row_id": 127,
+    "prior_native_LF": [
+      201,
+      201
+    ],
+    "native_LF": [
+      201,
+      201
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  nonreturn_limit: 36",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "128",
+    "prior_row_id": 128,
+    "prior_native_LF": [
+      202,
+      202
+    ],
+    "native_LF": [
+      202,
+      202
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  working_days: 132",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "129",
+    "prior_row_id": 129,
+    "prior_native_LF": [
+      203,
+      203
+    ],
+    "native_LF": [
+      203,
+      203
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  commute_days: 72",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "130",
+    "prior_row_id": 130,
+    "prior_native_LF": [
+      204,
+      204
+    ],
+    "native_LF": [
+      204,
+      204
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  min_commute: 26.4",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "131",
+    "prior_row_id": 131,
+    "prior_native_LF": [
+      205,
+      205
+    ],
+    "native_LF": [
+      205,
+      205
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  margin_nonreturn: 6",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "132",
+    "prior_row_id": 132,
+    "prior_native_LF": [
+      206,
+      206
+    ],
+    "native_LF": [
+      206,
+      206
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  margin_return: 45.6",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "133",
+    "prior_row_id": 133,
+    "prior_native_LF": [
+      207,
+      207
+    ],
+    "native_LF": [
+      207,
+      207
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  commute_alt: 22",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "134",
+    "prior_row_id": 134,
+    "prior_native_LF": [
+      208,
+      208
+    ],
+    "native_LF": [
+      208,
+      208
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "  margin_alt: -4.4",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "135",
+    "prior_row_id": 135,
+    "prior_native_LF": [
+      209,
+      209
+    ],
+    "native_LF": [
+      209,
+      209
+    ],
+    "section": "Example 2: part-time commuter with home office and overnight trips",
+    "wording": "```",
+    "source_quote_ids": [
+      "CH.PARTTIME",
+      "CH.FRONT",
+      "CH.RETURN",
+      "CH.DAYS",
+      "CH.DISTANCE",
+      "CH.HOMECLAUSE",
+      "CH.EXEMPTCH",
+      "CH.SUBJECTTAX"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "136",
+    "prior_row_id": 136,
+    "prior_native_LF": [
+      213,
+      213
+    ],
+    "native_LF": [
+      213,
+      213
+    ],
+    "section": "Ask the client first",
+    "wording": "1. Where is your home, where does your family live, and do you keep a room or flat in the other country?",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "137",
+    "prior_row_id": 137,
+    "prior_native_LF": [
+      214,
+      214
+    ],
+    "native_LF": [
+      214,
+      214
+    ],
+    "section": "Ask the client first",
+    "wording": "2. Your contract: employer, place of work, working days per week, and any second job in the same country.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "138",
+    "prior_row_id": 138,
+    "prior_native_LF": [
+      215,
+      215
+    ],
+    "native_LF": [
+      215,
+      215
+    ],
+    "section": "Ask the client first",
+    "wording": "3. For 2026: days worked at home, days you stayed overnight for work (with distance or travel time), days on trips to third countries, leave and sick days.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "139",
+    "prior_row_id": 139,
+    "prior_native_LF": [
+      216,
+      216
+    ],
+    "native_LF": [
+      216,
+      216
+    ],
+    "section": "Ask the client first",
+    "wording": "4. Are you a board member, managing director or Prokurist of the Swiss company, or registered with a signature right?",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "140",
+    "prior_row_id": 140,
+    "prior_native_LF": [
+      217,
+      217
+    ],
+    "native_LF": [
+      217,
+      217
+    ],
+    "section": "Ask the client first",
+    "wording": "5. Did you live in Germany before moving, for how many years, and do you hold 1% or more of any company?",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "141",
+    "prior_row_id": 141,
+    "prior_native_LF": [
+      218,
+      218
+    ],
+    "native_LF": [
+      218,
+      218
+    ],
+    "section": "Ask the client first",
+    "wording": "6. Do you have the Gre-1 for 2026, and will your employer issue the Gre-3 and a certificate of pay and Swiss tax?",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "142",
+    "prior_row_id": 142,
+    "prior_native_LF": [
+      222,
+      222
+    ],
+    "native_LF": [
+      225,
+      225
+    ],
+    "section": "Sources",
+    "wording": "| Source | URL | Read on |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "143",
+    "prior_row_id": 143,
+    "prior_native_LF": [
+      224,
+      224
+    ],
+    "native_LF": [
+      227,
+      227
+    ],
+    "section": "Sources",
+    "wording": "| BMF, consolidated Germany-Switzerland treaty as in force from 27 November 2025 (arts. 4, 15, 15a, 24; protocol nos. 5 to 7, 9) | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2 | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "144",
+    "prior_row_id": 144,
+    "prior_native_LF": [
+      225,
+      225
+    ],
+    "native_LF": [
+      228,
+      228
+    ],
+    "section": "Sources",
+    "wording": "| BMF, entry into force of the protocol of 21 August 2023 (27 November 2025) | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2025-12-23-Schweiz-DBA-Bekanntmachung-Protokoll.pdf?__blob=publicationFile&v=3 | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "145",
+    "prior_row_id": 145,
+    "prior_native_LF": [
+      226,
+      226
+    ],
+    "native_LF": [
+      229,
+      229
+    ],
+    "section": "Sources",
+    "wording": "| Fedlex, treaty SR 0.672.913.62, version of 27 November 2025 (application from 2026, art. 23(2) of the protocol) | https://www.fedlex.admin.ch/eli/cc/1972/3075_3128_2910/de | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "146",
+    "prior_row_id": 146,
+    "prior_native_LF": [
+      227,
+      227
+    ],
+    "native_LF": [
+      230,
+      230
+    ],
+    "section": "Sources",
+    "wording": "| BMF letter of 26 July 2022, home office days of commuters | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2022-07-26-konsultationsvereinbarung-betreffend-der-grenzgaengerregelung-artikel-15a-des-deutsch-schweizerischen-DBS.pdf?__blob=publicationFile&v=2 | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "147",
+    "prior_row_id": 147,
+    "prior_native_LF": [
+      228,
+      228
+    ],
+    "native_LF": [
+      231,
+      231
+    ],
+    "section": "Sources",
+    "wording": "| BMF letter of 25 October 2018, non-return for work reasons (100 km, 1.5 hours) | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2018-10-25-nichtrueckkehr-eines-grenzgaengers-aufgrund-der-arbeitsausuebung-nach-artikel-15a-asbsatz-2-DBA-Schweiz.pdf?__blob=publicationFile&v=1 | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "148",
+    "prior_row_id": 148,
+    "prior_native_LF": [
+      229,
+      229
+    ],
+    "native_LF": [
+      232,
+      232
+    ],
+    "section": "Sources",
+    "wording": "| BMF letter of 7 December 2023, forms Gre-1, Gre-3, Gre-4, Gre-5 with notes | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2023-12-07-ansaessigkeitsbescheinigungen-und-arbeitgeberbescheinigung-ueber-die-nichtrueckkehr.pdf?__blob=publicationFile&v=3 | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "149",
+    "prior_row_id": 149,
+    "prior_native_LF": [
+      230,
+      230
+    ],
+    "native_LF": [
+      233,
+      233
+    ],
+    "section": "Sources",
+    "wording": "| BMF letter of 8 February 2018, credit of Swiss tax on second-pillar pensions | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2018-02-08-DBA-Schweiz-Abzugsteuer-Grenzgaenger.pdf?__blob=publicationFile&v=1 | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "150",
+    "prior_row_id": 150,
+    "prior_native_LF": [
+      231,
+      231
+    ],
+    "native_LF": [
+      234,
+      234
+    ],
+    "section": "Sources",
+    "wording": "| BMF letter of 25 April 2023, art. 15(4) managers | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2023-04-25-konsultationsvereinbarung-zu-artikel-15-absatz-4-des-deutsch-schweizerischen-DBA.pdf?__blob=publicationFile&v=1 | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "151",
+    "prior_row_id": 151,
+    "prior_native_LF": [
+      232,
+      232
+    ],
+    "native_LF": [
+      235,
+      235
+    ],
+    "section": "Sources",
+    "wording": "| BMF letter of 16 October 2025, art. 15(4) agreement continued to 2027 | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2025-10-16-weiterfuehrung-konsultationsvereinb.pdf?__blob=publicationFile&v=3 | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "152",
+    "prior_row_id": 152,
+    "prior_native_LF": [
+      233,
+      233
+    ],
+    "native_LF": [
+      236,
+      236
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 32a (2026 tariff) | https://www.gesetze-im-internet.de/estg/__32a.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "153",
+    "prior_row_id": 153,
+    "prior_native_LF": [
+      234,
+      234
+    ],
+    "native_LF": [
+      237,
+      237
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 32b (progression) | https://www.gesetze-im-internet.de/estg/__32b.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "154",
+    "prior_row_id": 154,
+    "prior_native_LF": [
+      235,
+      235
+    ],
+    "native_LF": [
+      238,
+      238
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 36 (credit of withholding) | https://www.gesetze-im-internet.de/estg/__36.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "155",
+    "prior_row_id": 155,
+    "prior_native_LF": [
+      236,
+      236
+    ],
+    "native_LF": [
+      239,
+      239
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 37 (prepayments) | https://www.gesetze-im-internet.de/estg/__37.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "156",
+    "prior_row_id": 156,
+    "prior_native_LF": [
+      237,
+      237
+    ],
+    "native_LF": [
+      240,
+      240
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 50d (proof for exempt employment income) | https://www.gesetze-im-internet.de/estg/__50d.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "157",
+    "prior_row_id": 157,
+    "prior_native_LF": [
+      238,
+      238
+    ],
+    "native_LF": [
+      241,
+      241
+    ],
+    "section": "Sources",
+    "wording": "| EStDV § 56 (duty to file) | https://www.gesetze-im-internet.de/estdv_1955/__56.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "158",
+    "prior_row_id": 158,
+    "prior_native_LF": [
+      239,
+      239
+    ],
+    "native_LF": [
+      242,
+      242
+    ],
+    "section": "Sources",
+    "wording": "| ErbStG § 2 (five-year rule for German nationals) | https://www.gesetze-im-internet.de/erbstg_1974/__2.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "159",
+    "prior_row_id": 159,
+    "prior_native_LF": [
+      240,
+      240
+    ],
+    "native_LF": [
+      243,
+      243
+    ],
+    "section": "Sources",
+    "wording": "| AO §§ 152, 233a, 238, 240 | https://www.gesetze-im-internet.de/ao_1977/__152.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "160",
+    "prior_row_id": 160,
+    "prior_native_LF": [
+      242,
+      242
+    ],
+    "native_LF": [
+      245,
+      245
+    ],
+    "section": "Sources",
+    "wording": "Not yet confirmed: whether the home office consultation agreement of July 2022 still applies under the 2026 protocol text (it was made under the treaty as amended in 2010, and the new protocol no. 5 does not mention home office days; the 2023 Gre-1 notes still cite it); whether the BMF has issued an introductory letter on the 2026 commuter rules (none found in a search of bundesfinanzministerium.de on 2026-10-23); whether leave and sick days come out of the base for the 20% test; how the German implementing ordinance KonsVerCHEV (https://www.gesetze-im-internet.de/konsverchev/), which still uses 250 and 300 usual working days for part-time workers (§ 9) and a one day a week or five days a month return test (§ 7), sits beside protocol no. 5 from 2026; the euro conversion rule for Swiss pay; how the German tax office treats a year in which the 20% test fails only because of home office days.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates"
+  },
+  {
+    "id": "161",
+    "prior_row_id": null,
+    "native_LF": [
+      219,
+      219
+    ],
+    "section": "R47–54 new bounded operative condition / labelled computed separator / actual read source",
+    "wording": "7. For the relevant exception: total calendar-presence days, actual treaty employer and remuneration-bearing Swiss permanent establishment; Swiss waiver or assessed-tax payment proof; retained German home/habitual abode; pension insurance relationship and last/current relevant public employment, payment kind/certificates/refund history; dividend instrument, beneficial entitlement, direct holding and payment-inclusive dates; any actual § 109 filing extension.",
+    "source_quote_ids": [
+      "R47-53.SoliRate",
+      "R47-53.SOLILIMIT",
+      "R47-53.TAIL",
+      "R47-53.SALARY",
+      "R47-53.SUBJECTTAX",
+      "R47-53.PUBPENSION",
+      "R47-53.PENSCREDIT",
+      "R47-53.PENS1",
+      "R47-53.PENS2",
+      "R47-53.CHDIV",
+      "R47-53.RES",
+      "R54.extensions"
+    ],
+    "disposition": "New sourced correction; fixture amounts stipulated and computed"
+  },
+  {
+    "id": "162",
+    "prior_row_id": null,
+    "native_LF": [
+      223,
+      223
+    ],
+    "section": "R47–54 new bounded operative condition / labelled computed separator / actual read source",
+    "wording": "Selected operative clauses actually read on 29 October 2026: SolzG §§ 3/4; EStG §§ 1(1),50d(8); AO § 152(3); treaty arts. 4(4),15(1)/(2),10(2)/(3), protocol no. 9, with full population/period/proof gates; and the cited 2018 pension credit clauses. Actual source identities/native scopes and unchanged raw/readers are retained in the accompanying writer source ledger. This is no new treaty or pension-rate matrix.",
+    "source_quote_ids": [
+      "R47-53.SoliRate",
+      "R47-53.SOLILIMIT",
+      "R47-53.TAIL",
+      "R47-53.SALARY",
+      "R47-53.SUBJECTTAX",
+      "R47-53.PUBPENSION",
+      "R47-53.PENSCREDIT",
+      "R47-53.PENS1",
+      "R47-53.PENS2",
+      "R47-53.CHDIV",
+      "R47-53.RES",
+      "R54.extensions"
+    ],
+    "disposition": "New sourced correction; fixture amounts stipulated and computed"
+  }
+]

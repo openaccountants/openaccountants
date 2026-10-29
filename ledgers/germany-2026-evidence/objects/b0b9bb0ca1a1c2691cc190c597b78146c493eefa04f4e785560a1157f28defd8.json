@@ -1,0 +1,30 @@
+{
+  "all455_actual_git_origins_checked": true,
+  "refs": {
+    "2884db4bbfec51d531d561e8f9a96f607ba6652f": "510a486a827c77b779a63adaf27de9a3b495c9dbf88c0323682d73a43478d35f",
+    "62b7639a5a68324a83a96bb0190fff8b7c76f8c5": "fdb8f218bb046428f7d5cfdfee5cb9cc4b7e7f27ee671d1b620caf9d93ac25e0"
+  },
+  "semantic_spots_actual_read": [
+    3,
+    25,
+    46,
+    61,
+    70,
+    97,
+    136,
+    200,
+    221,
+    267,
+    298,
+    312,
+    334,
+    344,
+    370,
+    383,
+    416,
+    424,
+    437,
+    453
+  ],
+  "mismatch": 0
+}

@@ -1,0 +1,740 @@
+{
+  "Guide_sha256": "6490866ed01c76228acd389426527eecc10b5c835a082799868ed9a5fe8aa62a",
+  "earliest_created_revision": "1742288b",
+  "earliest_created_sha256": "f2fdac7ff9fb362c26a4fb9c03b76dea0f31d27ed1ddac3b09c7119aacc08bc1",
+  "pre_addition": "1742288b^ has no Guide. No nonexistent earlier body invented.",
+  "earliest_created_rows": [
+    {
+      "old_native_LF": [
+        1,
+        14
+      ],
+      "old_unit_sha256": "7edfb7192ae9ccb3a0d0095e538d7a0223676ffa528244fe1b10a140122d1d64",
+      "old_exact_opening": "--- name: de-payroll-benefits description: \"German payroll benefits for 2026: how an employer values and taxes benefits in kind on the payslip. Covers the EUR 50 monthly limit for benefits in kind and vouchers, company cars (1% ru",
+      "current_destination": "1–13",
+      "disposition": "Original authored_by removed before current main; byline explicitly retained239. Other platform fields preserved. No invented pre-addition body."
+    },
+    {
+      "old_native_LF": [
+        16,
+        16
+      ],
+      "old_unit_sha256": "3ee708dcbc0ad9033d44dfdf81575d45bb578459c22c9a42ab65ee24bd999ab1",
+      "old_exact_opening": "# German payroll benefits 2026: benefits in kind, company cars, flat taxes, employer pensions and managing directors",
+      "current_destination": "15–15",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        18,
+        18
+      ],
+      "old_unit_sha256": "1cdc6a369c8837c64f2d5042ab4e7a81da6d197fa9573540f29f27ddc4cfd176",
+      "old_exact_opening": "> **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any specific employer's or employee's facts. A Steuerberater or payroll accountant should confirm the tr",
+      "current_destination": "17–17",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        20,
+        20
+      ],
+      "old_unit_sha256": "bb625f1ecd69bd76bf93557c05bacd29be7f327b896ef13d9d8e69a9813b1306",
+      "old_exact_opening": "**Sibling skills.** The monthly wage tax and contribution run (tax classes, the 2026 PAP, rates, ceilings, Minijobs, filing and payment dates): [de-payroll](de-payroll.md). [germany-payroll](germany-payroll.md) is an older version",
+      "current_destination": "19–19",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        22,
+        22
+      ],
+      "old_unit_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "old_exact_opening": "## Who this applies to",
+      "current_destination": "21–21",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        24,
+        28
+      ],
+      "old_unit_sha256": "a7ba9e6ce66c1002bc1e2e8202bf6b6bdec4112e783551fe2d145b842d7f6ba0",
+      "old_exact_opening": "- **In.** Any employer that runs German payroll (wage tax under § 38 EStG) and gives employees anything other than cash pay: goods, services, vouchers, a car, meals, lodging, gifts, event costs, pension contributions. It also cove",
+      "current_destination": "23–27",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        30,
+        30
+      ],
+      "old_unit_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "old_exact_opening": "## Rates, bands and thresholds",
+      "current_destination": "29–29",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        32,
+        66
+      ],
+      "old_unit_sha256": "830a80855eb704f33803875a4885727b27f01d8298672b2a1084e963ec9738dd",
+      "old_exact_opening": "| Item | Rate or amount | Year | Source URL | |---|---|---|---| | Benefits in kind valued at market price: tax-free if the total net benefit is not more than this a month (a cliff, not an allowance); vouchers count only if given o",
+      "current_destination": "32–69",
+      "disposition": "Every old table item retained; car historicalcaps/rounding and2027 pension rules added. Citation-only DE-B05 separately tracked."
+    },
+    {
+      "old_native_LF": [
+        68,
+        68
+      ],
+      "old_unit_sha256": "1922c5897a17fa48bb320a158b52f374f76325b7c4d357ef1fa639f050317119",
+      "old_exact_opening": "## The taxable base",
+      "current_destination": "71–71",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        70,
+        70
+      ],
+      "old_unit_sha256": "95bd6a5849afe7af26ffbaefc31e2d0efd90d74d85ec81825847ff8ad719f475",
+      "old_exact_opening": "**The EUR 50 limit.** Benefits valued at market price under § 8(2) sentence 1 EStG stay out of pay if the total net benefit in the month is not over EUR 50. It is a cliff: at EUR 50.01 the whole amount is taxable. Benefits valued ",
+      "current_destination": "73–73",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        72,
+        78
+      ],
+      "old_unit_sha256": "053d20a1c408759c9c501bb401498b7efeb9d1b10e9b78965d6cf10d326d3cf3",
+      "old_exact_opening": "**Company cars.** - **1% rule.** Private use is 1% of the domestic gross list price at first registration, plus factory extras, including VAT, each month (§ 6(1) no. 4 sentence 2 with § 8(2) sentence 2 EStG). The list price is use",
+      "current_destination": "75–81",
+      "disposition": "Every old car branch retained; older2019–2021 gates,100floor,partmonth and electric ordering supplied."
+    },
+    {
+      "old_native_LF": [
+        80,
+        80
+      ],
+      "old_unit_sha256": "832f6dbee7ace2d3b6422247b1bb5ad2755c41c4338bfc833d1315e15d646759",
+      "old_exact_opening": "**Meals and lodging.** Meals and lodging use the SvEV values for both tax and contributions (§ 8(2) sentences 6 and 7 EStG). For 2026: EUR 345 a month for full board, EUR 2.37 per breakfast and EUR 4.57 per lunch or dinner, EUR 28",
+      "current_destination": "83–83",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        82,
+        86
+      ],
+      "old_unit_sha256": "e5f3a5dfa3b0add432a04c97a36bb734168415987704541fc2108f246ffd2e09",
+      "old_exact_opening": "**Flat taxes.** - **§ 37b, 30%.** The employer may pay 30% income tax on all non-cash benefits granted in a business year on top of pay owed (to employees) or on top of the agreed service (to customers and business partners). The ",
+      "current_destination": "85–89",
+      "disposition": "All old flat-tax branches retained. Old37bannual10000cliff corrected to excess-only cap while single-gift cliff remains; recipient/calendar distinctions supplied."
+    },
+    {
+      "old_native_LF": [
+        88,
+        94
+      ],
+      "old_unit_sha256": "cb1f1d4b050af955dba3586f1a155c8141acf32ec7fd6afab816c815f10fea22",
+      "old_exact_opening": "**Tax-free items (on top of pay owed where marked).** - Public transport between home and work, and local public transport in general, given as a ticket or a subsidy (Jobticket), on top of pay owed. It reduces the employee's commu",
+      "current_destination": "91–97",
+      "disposition": "All old tax-free topics retained; sharedeferral companylimits/liabilityoption and event110peremployee/twoevents clarified."
+    },
+    {
+      "old_native_LF": [
+        96,
+        101
+      ],
+      "old_unit_sha256": "0eb7bfdc8e4cecb26c9a37b4c7f677e26902221ac8627b1979949652649b2d89",
+      "old_exact_opening": "**Employer pensions (bAV).** - **Tax.** Employer contributions from the first employment to a Pensionsfonds, Pensionskasse or Direktversicherung are tax-free up to 8% of the pension ceiling: EUR 8,112 in 2026 (§ 3 no. 63 EStG; cei",
+      "current_destination": "99–104",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        103,
+        107
+      ],
+      "old_unit_sha256": "702035359b656e64d8a237e220c9106d2edd5fb160ff9607893f41a01a6656d2",
+      "old_exact_opening": "**Managing directors (Gesellschafter-Geschäftsführer).** - **The test.** Employment is non-self-employed work, especially in an employment relationship; the signs are working under instructions and being integrated into the organi",
+      "current_destination": "108–112",
+      "disposition": "All director topics retained, adds nonshareholder headnote. Current2026hearingreport limitation remains."
+    },
+    {
+      "old_native_LF": [
+        109,
+        109
+      ],
+      "old_unit_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "old_exact_opening": "## Deadlines and filing",
+      "current_destination": "114–114",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        111,
+        115
+      ],
+      "old_unit_sha256": "750d17a54bd185f00e2a9227ad5746b77031b9a64ac5f547ec0617511d486bb7",
+      "old_exact_opening": "- **Through the payroll.** Benefits are pay of the period they are given in. Wage tax and contributions on them are filed and paid with the normal monthly run: the wage tax return (Lohnsteuer-Anmeldung) by the 10th after the perio",
+      "current_destination": "116–120",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        117,
+        117
+      ],
+      "old_unit_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "old_exact_opening": "## Penalties and interest",
+      "current_destination": "122–122",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        119,
+        122
+      ],
+      "old_unit_sha256": "16f86ddaba56c01ab7a05b30c85b6b5e0825974108ed89b0345cda42734e7222",
+      "old_exact_opening": "- **Employer liability.** The employer is liable for wage tax it should have withheld on a benefit (§ 42d(1) EStG). Tax collected after an audit for many employees can be flat-taxed at a net rate under § 40(1) no. 2 EStG, which ra",
+      "current_destination": "124–127",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        124,
+        124
+      ],
+      "old_unit_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "old_exact_opening": "## Cross-border points",
+      "current_destination": "129–129",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        126,
+        130
+      ],
+      "old_unit_sha256": "9a3e9710dbd2a76df0187f9a1ea74fcc34c9a33ff0800c0f2871fc87c48d6ff9",
+      "old_exact_opening": "- **Tax.** Benefits are part of employment income and follow the same rules as cash pay for German wage tax and for treaty allocation; see [de-non-resident-tax](de-non-resident-tax.md) and [de-payroll](de-payroll.md). - **§ 37b an",
+      "current_destination": "131–135",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        132,
+        132
+      ],
+      "old_unit_sha256": "24306288984cfa636de0ac24a9833561c7e6c3cb47df7023c1903f57c3720a9b",
+      "old_exact_opening": "## Worked examples",
+      "current_destination": "137–137",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        134,
+        134
+      ],
+      "old_unit_sha256": "39aa9b4b39555c4d1741c7935a90aa2dc08f86da125d28f16ad77538fe159023",
+      "old_exact_opening": "**Example 1: company car, combustion versus electric.** An employee has a company car for private use and the commute. One-way distance 18 km. Option A: a petrol car with a gross list price of EUR 48,700. Option B: a fully electri",
+      "current_destination": "139",
+      "disposition": "Original64000electric input changed64050 to exercise rounding; both are retained in own oldcase controls."
+    },
+    {
+      "old_native_LF": [
+        136,
+        136
+      ],
+      "old_unit_sha256": "746b0210ba5dfbc9f54430934a52b17c3bf4d044cf9c523adebee8245e307cf0",
+      "old_exact_opening": "Option A: 1% of 48,700 is EUR 487.00; 0.03% x 18 km x 48,700 is EUR 262.98; monthly benefit EUR 749.98. Option B: list price counted at a quarter, EUR 16,000. 1% is EUR 160.00; 0.03% x 18 x 16,000 is EUR 86.40; total EUR 246.40; l",
+      "current_destination": "141",
+      "disposition": "Same computed16000base/196.40benefit after rounding; current input64050 exercises floor."
+    },
+    {
+      "old_native_LF": [
+        138,
+        159
+      ],
+      "old_unit_sha256": "4fa63e3162dc74a24aace334ca7319b5b40afcbc3ccc552ef5a4784fdec89f0d",
+      "old_exact_opening": "```oa-check name: DE 2026 company car, petrol vs electric, 18 km commute inputs: list_petrol: 48700 list_ev: 64000 km: 18 user_charge: 50 steps: - petrol_private: list_petrol * 0.01 - petrol_commute: list_petrol * 0.0003 * km - pe",
+      "current_destination": "143–164",
+      "disposition": "Original oa variant64000/4 retained in earliest body and independently recomputed; current64050/4thenfloor explicitly differs."
+    },
+    {
+      "old_native_LF": [
+        161,
+        161
+      ],
+      "old_unit_sha256": "8d661d1546862159fbdffb02001750fa1715e99d016844a3fe7562284ca59582",
+      "old_exact_opening": "**Example 2: salary sacrifice above the 4% line, plus canteen lunches.** Pay EUR 4,000 a month, under all ceilings. The employee converts EUR 300 a month into a Direktversicherung. Because the conversion saves contributions, the e",
+      "current_destination": "166",
+      "disposition": "Original300/45/4140/84over4% example replaced by290/43.50/4002/54room, avoids pretending full15% topup obligation where actual savings smaller. Original arithmetic retained privately as conditional amount fixture."
+    },
+    {
+      "old_native_LF": [
+        163,
+        192
+      ],
+      "old_unit_sha256": "f47f95595765a48c9c367724bbf94e07717cae20b20efbdda51f62a0d38fe78a",
+      "old_exact_opening": "```oa-check name: DE 2026 bAV salary sacrifice 300 a month with 15% top-up, plus canteen lunches inputs: sacrifice_month: 300 ceiling: 101400 lunches: 20 paid_per_lunch: 2.50 lunch_month_value: 137 steps: - topup_month: sacrifice_",
+      "current_destination": "168–197",
+      "disposition": "Original300salarysacrifice oa retained/recomputed as stipulated fulltopup arithmetic; current290variant is different, no byte-identity claim."
+    },
+    {
+      "old_native_LF": [
+        194,
+        194
+      ],
+      "old_unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "old_exact_opening": "## Ask the client first",
+      "current_destination": "199–199",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        196,
+        201
+      ],
+      "old_unit_sha256": "c08521754dc11485d3515c1caf8421b219402e3b0c9327403f8dfc17313ce18a",
+      "old_exact_opening": "1. For each car: gross list price at first registration, purchase date, drive type (petrol or diesel, electric, plug-in hybrid with CO2 and electric range from the certificate of conformity), commute distance, and whether a logboo",
+      "current_destination": "201–206",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        203,
+        203
+      ],
+      "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "old_exact_opening": "## Sources",
+      "current_destination": "208–208",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        205,
+        226
+      ],
+      "old_unit_sha256": "f31f4a8e9c2d66b8a4c551dbfcc1d41c73816e8163fdd7ca71fe62f8ebc4b28a",
+      "old_exact_opening": "| Source | URL | Read on | |---|---|---| | EStG § 3 (nos. 15, 33, 34, 37, 39, 45, 46, 56, 63) | https://www.gesetze-im-internet.de/estg/__3.html | 2026-10-24 | | EStG § 6(1) no. 4 (list price, electric and hybrid rates, logbook) |",
+      "current_destination": "210–236",
+      "disposition": "All old officialsource families/URLs retained, added actualdated administrative/enactment chains."
+    },
+    {
+      "old_native_LF": [
+        228,
+        228
+      ],
+      "old_unit_sha256": "3db1ca7557051d51c16f4baa444402629c5fbb2e3b2be637d7d9021362a35cca",
+      "old_exact_opening": "Not yet confirmed: the rounding of the list price down to the full EUR 100 and the other administrative car rules in R 8.1(9) LStR (the examples use round list prices); the EUR 60 meal limit and staff-event rules in the wage tax g",
+      "current_destination": "237",
+      "disposition": "Original precise gaps preserved/narrowed only where actual source reading supports current carfloor; statechurch/full2026judgment and promise-tax limits retained."
+    }
+  ],
+  "current_main_rows": [
+    {
+      "old_native_LF": [
+        1,
+        13
+      ],
+      "old_unit_sha256": "fb246848d1e8193ad431b7469041eaea16a18eda2e6d08b2d1aca87fa8034d86",
+      "old_exact_opening": "--- name: de-payroll-benefits description: \"German payroll benefits for 2026: how an employer values and taxes benefits in kind on the payslip. Covers the EUR 50 monthly limit for benefits in kind and vouchers, company cars (1% ru",
+      "current_destination": "1–13",
+      "disposition": "Only rootDE-B05version/date changed; protected fields retained."
+    },
+    {
+      "old_native_LF": [
+        15,
+        15
+      ],
+      "old_unit_sha256": "3ee708dcbc0ad9033d44dfdf81575d45bb578459c22c9a42ab65ee24bd999ab1",
+      "old_exact_opening": "# German payroll benefits 2026: benefits in kind, company cars, flat taxes, employer pensions and managing directors",
+      "current_destination": "15–15",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        17,
+        17
+      ],
+      "old_unit_sha256": "1cdc6a369c8837c64f2d5042ab4e7a81da6d197fa9573540f29f27ddc4cfd176",
+      "old_exact_opening": "> **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any specific employer's or employee's facts. A Steuerberater or payroll accountant should confirm the tr",
+      "current_destination": "17–17",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        19,
+        19
+      ],
+      "old_unit_sha256": "bb625f1ecd69bd76bf93557c05bacd29be7f327b896ef13d9d8e69a9813b1306",
+      "old_exact_opening": "**Sibling skills.** The monthly wage tax and contribution run (tax classes, the 2026 PAP, rates, ceilings, Minijobs, filing and payment dates): [de-payroll](de-payroll.md). [germany-payroll](germany-payroll.md) is an older version",
+      "current_destination": "19–19",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        21,
+        21
+      ],
+      "old_unit_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "old_exact_opening": "## Who this applies to",
+      "current_destination": "21–21",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        23,
+        27
+      ],
+      "old_unit_sha256": "a7ba9e6ce66c1002bc1e2e8202bf6b6bdec4112e783551fe2d145b842d7f6ba0",
+      "old_exact_opening": "- **In.** Any employer that runs German payroll (wage tax under § 38 EStG) and gives employees anything other than cash pay: goods, services, vouchers, a car, meals, lodging, gifts, event costs, pension contributions. It also cove",
+      "current_destination": "23–27",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        29,
+        29
+      ],
+      "old_unit_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "old_exact_opening": "## Rates, bands and thresholds",
+      "current_destination": "29–29",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        31,
+        69
+      ],
+      "old_unit_sha256": "36b7330fc4d562a99f6d4be7bbcb9a077d8a63b4838343f150117f6ccd3fef1d",
+      "old_exact_opening": "| Item | Rate or amount | Year | Source URL | |---|---|---|---| | Benefits in kind valued at market price: tax-free if the total net benefit is not more than this a month (a cliff, not an allowance); vouchers count only if given o",
+      "current_destination": "31–69",
+      "disposition": "Only pensionceiling provision coordinate corrected3→4(1)no1 by rootDE-B05; all figures and other table cells exact."
+    },
+    {
+      "old_native_LF": [
+        71,
+        71
+      ],
+      "old_unit_sha256": "1922c5897a17fa48bb320a158b52f374f76325b7c4d357ef1fa639f050317119",
+      "old_exact_opening": "## The taxable base",
+      "current_destination": "71–71",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        73,
+        73
+      ],
+      "old_unit_sha256": "95bd6a5849afe7af26ffbaefc31e2d0efd90d74d85ec81825847ff8ad719f475",
+      "old_exact_opening": "**The EUR 50 limit.** Benefits valued at market price under § 8(2) sentence 1 EStG stay out of pay if the total net benefit in the month is not over EUR 50. It is a cliff: at EUR 50.01 the whole amount is taxable. Benefits valued ",
+      "current_destination": "73–73",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        75,
+        81
+      ],
+      "old_unit_sha256": "36b7f783af9095f9866306c13c780753191ef0fd4ffe9f531c57429c9507cc1d",
+      "old_exact_opening": "**Company cars.** - **1% rule.** Private use is 1% of the domestic gross list price at first registration, plus factory extras, including VAT, each month (§ 6(1) no. 4 sentence 2 with § 8(2) sentence 2 EStG). The list price is use",
+      "current_destination": "75–81",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        83,
+        83
+      ],
+      "old_unit_sha256": "642bb200ff9f8806df6412b08396e20c645add18488d784e8f7d455e78778cd1",
+      "old_exact_opening": "**Meals and lodging.** Meals and lodging use the SvEV values for both tax and contributions (§ 8(2) sentences 6 and 7 EStG). For 2026: EUR 345 a month for full board, EUR 2.37 per breakfast and EUR 4.57 per lunch or dinner, EUR 28",
+      "current_destination": "83–83",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        85,
+        89
+      ],
+      "old_unit_sha256": "ce5e4d0e3d10c2756801b54b04d990a64e767cd9339fd2893861dd5a75e0e2f1",
+      "old_exact_opening": "**Flat taxes.** - **§ 37b, 30%.** The employer may pay 30% income tax on all non-cash benefits granted in a business year on top of pay owed (to employees) or on top of the agreed service (to customers and business partners). The ",
+      "current_destination": "85–89",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        91,
+        97
+      ],
+      "old_unit_sha256": "5c3ec9ffa89b24554fd8a421b2d5a9377e092890f18d575cf3707d984bac3203",
+      "old_exact_opening": "**Tax-free items (on top of pay owed where marked).** - Public transport between home and work, and local public transport in general, given as a ticket or a subsidy (Jobticket), on top of pay owed. It reduces the employee's commu",
+      "current_destination": "91–97",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        99,
+        106
+      ],
+      "old_unit_sha256": "68735cb117bf9c6e3a520644da73584f4f60f54ee4f6e73e784353a8bb31e009",
+      "old_exact_opening": "**Employer pensions (bAV).** - **Tax.** Employer contributions from the first employment to a Pensionsfonds, Pensionskasse or Direktversicherung are tax-free up to 8% of the pension ceiling: EUR 8,112 in 2026 (§ 3 no. 63 EStG; cei",
+      "current_destination": "99–106",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        108,
+        112
+      ],
+      "old_unit_sha256": "1e383d126f36f2b31928e0be8db0bfee676e88375370a204380cc4ecc2574372",
+      "old_exact_opening": "**Managing directors (Gesellschafter-Geschäftsführer).** - **The test.** Employment is non-self-employed work, especially in an employment relationship; the signs are working under instructions and being integrated into the organi",
+      "current_destination": "108–112",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        114,
+        114
+      ],
+      "old_unit_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "old_exact_opening": "## Deadlines and filing",
+      "current_destination": "114–114",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        116,
+        120
+      ],
+      "old_unit_sha256": "750d17a54bd185f00e2a9227ad5746b77031b9a64ac5f547ec0617511d486bb7",
+      "old_exact_opening": "- **Through the payroll.** Benefits are pay of the period they are given in. Wage tax and contributions on them are filed and paid with the normal monthly run: the wage tax return (Lohnsteuer-Anmeldung) by the 10th after the perio",
+      "current_destination": "116–120",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        122,
+        122
+      ],
+      "old_unit_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "old_exact_opening": "## Penalties and interest",
+      "current_destination": "122–122",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        124,
+        127
+      ],
+      "old_unit_sha256": "16f86ddaba56c01ab7a05b30c85b6b5e0825974108ed89b0345cda42734e7222",
+      "old_exact_opening": "- **Employer liability.** The employer is liable for wage tax it should have withheld on a benefit (§ 42d(1) EStG). Tax collected after an audit for many employees can be flat-taxed at a net rate under § 40(1) no. 2 EStG, which ra",
+      "current_destination": "124–127",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        129,
+        129
+      ],
+      "old_unit_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "old_exact_opening": "## Cross-border points",
+      "current_destination": "129–129",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        131,
+        135
+      ],
+      "old_unit_sha256": "9a3e9710dbd2a76df0187f9a1ea74fcc34c9a33ff0800c0f2871fc87c48d6ff9",
+      "old_exact_opening": "- **Tax.** Benefits are part of employment income and follow the same rules as cash pay for German wage tax and for treaty allocation; see [de-non-resident-tax](de-non-resident-tax.md) and [de-payroll](de-payroll.md). - **§ 37b an",
+      "current_destination": "131–135",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        137,
+        137
+      ],
+      "old_unit_sha256": "24306288984cfa636de0ac24a9833561c7e6c3cb47df7023c1903f57c3720a9b",
+      "old_exact_opening": "## Worked examples",
+      "current_destination": "137–137",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        139,
+        139
+      ],
+      "old_unit_sha256": "6457a1adc434b48b74eaea643ef29c8db2d6c14d7c535ff602fdfcdbffad189f",
+      "old_exact_opening": "**Example 1: company car, combustion versus electric.** An employee has a company car for private use and the commute. One-way distance 18 km. Option A: a petrol car with a gross list price of EUR 48,700. Option B: a fully electri",
+      "current_destination": "139–139",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        141,
+        141
+      ],
+      "old_unit_sha256": "742b9efd381eb63255a6c0c06eaf298c8788b016eaa6e9ee762e7b5c19cdf9c3",
+      "old_exact_opening": "Option A: 1% of 48,700 is EUR 487.00; 0.03% x 18 km x 48,700 is EUR 262.98; monthly benefit EUR 749.98. Option B: a quarter of 64,050 is EUR 16,012.50, rounded down to the full EUR 100: EUR 16,000. 1% is EUR 160.00; 0.03% x 18 x 1",
+      "current_destination": "141–141",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        143,
+        164
+      ],
+      "old_unit_sha256": "9055e1dd08e379783ceba07de9ca537695be058d77047548a16ce529daeb5b13",
+      "old_exact_opening": "```oa-check name: DE 2026 company car, petrol vs electric, 18 km commute inputs: list_petrol: 48700 list_ev: 64050 km: 18 user_charge: 50 steps: - petrol_private: list_petrol * 0.01 - petrol_commute: list_petrol * 0.0003 * km - pe",
+      "current_destination": "143–164",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        166,
+        166
+      ],
+      "old_unit_sha256": "cbfbd37cf3de9d8bd0f3d028272403eafa1cb046d46e1835a953d097ee886d3b",
+      "old_exact_opening": "**Example 2: salary sacrifice inside the 4% line, plus canteen lunches.** Pay EUR 4,000 a month, under all ceilings. The employee converts EUR 290 a month into a Direktversicherung. Because the conversion saves contributions, the ",
+      "current_destination": "166–166",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        168,
+        197
+      ],
+      "old_unit_sha256": "5fca1b2fce31f15fc0075f87251fc5a1421fe772e6776c1ee7637553423be5c2",
+      "old_exact_opening": "```oa-check name: DE 2026 bAV salary sacrifice 290 a month with 15% top-up, plus canteen lunches inputs: sacrifice_month: 290 ceiling: 101400 lunches: 20 paid_per_lunch: 2.50 lunch_month_value: 137 steps: - topup_month: sacrifice_",
+      "current_destination": "168–197",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        199,
+        199
+      ],
+      "old_unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "old_exact_opening": "## Ask the client first",
+      "current_destination": "199–199",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        201,
+        206
+      ],
+      "old_unit_sha256": "c08521754dc11485d3515c1caf8421b219402e3b0c9327403f8dfc17313ce18a",
+      "old_exact_opening": "1. For each car: gross list price at first registration, purchase date, drive type (petrol or diesel, electric, plug-in hybrid with CO2 and electric range from the certificate of conformity), commute distance, and whether a logboo",
+      "current_destination": "201–206",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        208,
+        208
+      ],
+      "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "old_exact_opening": "## Sources",
+      "current_destination": "208–208",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        210,
+        235
+      ],
+      "old_unit_sha256": "38e8af55d9b48667e533ca94254fc042ead1fb4f603682860673fd746b9a43b0",
+      "old_exact_opening": "| Source | URL | Read on | |---|---|---| | EStG § 3 (nos. 15, 33, 34, 37, 39, 45, 46, 56, 63) | https://www.gesetze-im-internet.de/estg/__3.html | 2026-10-24 | | EStG § 6(1) no. 4 (list price, electric and hybrid rates, logbook) |",
+      "current_destination": "210–235",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        237,
+        237
+      ],
+      "old_unit_sha256": "91efda55b3629950de74dc76a669c5f15d1a8b17594fb36391ef3570f4bbb734",
+      "old_exact_opening": "Not yet confirmed: the administrative car rules in R 8.1(9) LStR beyond the list-price rounding and part-month rule; the EUR 60 meal limit and staff-event rules in the wage tax guidelines beyond the statute; church tax rates on fl",
+      "current_destination": "237–237",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        239,
+        239
+      ],
+      "old_unit_sha256": "cd6e492917c1a8ee9a5db69e092a96a573d0755ba0fdfeb3d0e3c92e4bd0e0c7",
+      "old_exact_opening": "> Contributed by Michael Cutajar.",
+      "current_destination": "239–239",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        241,
+        241
+      ],
+      "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "old_exact_opening": "<!-- openaccountants-cta-block -->",
+      "current_destination": "241–241",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        243,
+        243
+      ],
+      "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "old_exact_opening": "---",
+      "current_destination": "1–1",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        245,
+        245
+      ],
+      "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "old_exact_opening": "## Talk to a verified accountant",
+      "current_destination": "245–245",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        247,
+        250
+      ],
+      "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "old_exact_opening": "This guide is maintained by the OpenAccountants network — accountants who put their name behind the tax answers AI gives people. The live, always-current version (and the professional behind it) is at [openaccountants.com](https:/",
+      "current_destination": "247–250",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        252,
+        253
+      ],
+      "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "old_exact_opening": "- Use it in your AI: https://www.openaccountants.com/connect - Meet the accountants: https://www.openaccountants.com/network",
+      "current_destination": "252–253",
+      "disposition": "Exact topic block retained, including every table/list member."
+    },
+    {
+      "old_native_LF": [
+        255,
+        257
+      ],
+      "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+      "old_exact_opening": "> **General reference only.** This document does not constitute tax, legal, or > financial advice. Verify figures against the cited primary sources or with a > licensed professional before relying on them.",
+      "current_destination": "255–257",
+      "disposition": "Exact topic block retained, including every table/list member."
+    }
+  ]
+}

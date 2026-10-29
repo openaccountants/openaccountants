@@ -1,0 +1,209 @@
+{
+  "Guide_sha256": "6490866ed01c76228acd389426527eecc10b5c835a082799868ed9a5fe8aa62a",
+  "ledger_sha256": "b6e00411ef833fed7da205afa907ec8a26ce3bd67891a0236284dec13dad52d6",
+  "row_count": 90,
+  "actual_literal_quote_checks": 57,
+  "oa_blocks": 2,
+  "oa_failures": [],
+  "numeric_controls": [
+    {
+      "name": "petrol private",
+      "actual": "487.00",
+      "expected": "487"
+    },
+    {
+      "name": "petrol commute",
+      "actual": "262.9800",
+      "expected": "262.98"
+    },
+    {
+      "name": "petrol total",
+      "actual": "749.98",
+      "expected": "749.98"
+    },
+    {
+      "name": "current EV unrounded",
+      "actual": "16012.5",
+      "expected": "16012.50"
+    },
+    {
+      "name": "current EV fullhundred",
+      "actual": "16000",
+      "expected": "16000"
+    },
+    {
+      "name": "old EV fullhundred",
+      "actual": "16000",
+      "expected": "16000"
+    },
+    {
+      "name": "EVtotal",
+      "actual": "246.4000",
+      "expected": "246.40"
+    },
+    {
+      "name": "EV usercharge",
+      "actual": "196.40",
+      "expected": "196.40"
+    },
+    {
+      "name": "charge floorzero",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "2026taxfreecap",
+      "actual": "8112.00",
+      "expected": "8112"
+    },
+    {
+      "name": "2026SVfreecap",
+      "actual": "4056.00",
+      "expected": "4056"
+    },
+    {
+      "name": "current290topup",
+      "actual": "43.50",
+      "expected": "43.50"
+    },
+    {
+      "name": "currentannual4002",
+      "actual": "4002.00",
+      "expected": "4002"
+    },
+    {
+      "name": "currentSVroom",
+      "actual": "54",
+      "expected": "54"
+    },
+    {
+      "name": "old300conditionaltopup",
+      "actual": "45.00",
+      "expected": "45"
+    },
+    {
+      "name": "oldconditionaltotal",
+      "actual": "4140.00",
+      "expected": "4140"
+    },
+    {
+      "name": "oldconditionalSVexcess",
+      "actual": "84",
+      "expected": "84"
+    },
+    {
+      "name": "breakfast",
+      "actual": "2.37",
+      "expected": "2.37"
+    },
+    {
+      "name": "lunch",
+      "actual": "4.57",
+      "expected": "4.57"
+    },
+    {
+      "name": "mealnet",
+      "actual": "2.07",
+      "expected": "2.07"
+    },
+    {
+      "name": "monthlymeals",
+      "actual": "41.40",
+      "expected": "41.40"
+    },
+    {
+      "name": "flat25",
+      "actual": "10.350",
+      "expected": "10.35"
+    },
+    {
+      "name": "flatSoli",
+      "actual": "0.56",
+      "expected": "0.56"
+    },
+    {
+      "name": "monthly50exact",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "monthly50.01cliff",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "staffdiscount",
+      "actual": "840.00",
+      "expected": "840"
+    },
+    {
+      "name": "37bannual12000base",
+      "actual": "10000",
+      "expected": "10000"
+    },
+    {
+      "name": "37bsinglegift12000eligible",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "37bgift10000eligible",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "recreation2children",
+      "actual": "364",
+      "expected": "364"
+    },
+    {
+      "name": "subsidy240",
+      "actual": "72.0",
+      "expected": "72"
+    },
+    {
+      "name": "subsidy960",
+      "actual": "288.0",
+      "expected": "288"
+    },
+    {
+      "name": "subsidy2027cap1200",
+      "actual": "360.0",
+      "expected": "360"
+    },
+    {
+      "name": "2025hybridrange79fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "2025hybridCO2exact50passes",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "commute180year",
+      "actual": "1036.80000",
+      "expected": "1036.80"
+    },
+    {
+      "name": "lateSVrounded",
+      "actual": "12.00",
+      "expected": "12"
+    }
+  ],
+  "historical_case_qualification": "Earliest300/45/4140/84 case is recomputed as stipulated arithmetic only; actual15% obligation remains capped by actual employer savings. Current290example avoids claiming fulltopup across free-cap limit. Original64000EVvariant recomputed separately from current64050roundedvariant.",
+  "pending_exact_evidence": [
+    "DE-B05 citation number3→4 root edit pending; correct101400 unchanged.",
+    "Regulation883body not claimed read; actual DVKA administrativeanswers selected125–180 supply A1certificate scope."
+  ],
+  "preserved_precise_Guide_reservations": [
+    "Full2026BSGwrittenreasons",
+    "Stateflat-taxchurchrates",
+    "Beyond-selectedadministrativecar/meal/eventrules",
+    "Collectiveagreementtopupexception",
+    "Actual-savingtopupaboveceilings",
+    "Directpromise/supportfundwagetaxroute"
+  ],
+  "writer_not_independent_review": true
+}

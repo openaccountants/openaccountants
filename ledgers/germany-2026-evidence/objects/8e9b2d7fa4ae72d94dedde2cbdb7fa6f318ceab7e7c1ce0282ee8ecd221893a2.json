@@ -1,0 +1,11 @@
+{
+  "slug": "de-employee-income-tax",
+  "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-employee-income-tax.md",
+  "Guide_sha256": "32b10213e3bc5d405ac89a1479b3a9ab07133a62320100c5788195a667764f3c",
+  "bytes": 28805,
+  "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R71-employee-certificate-precision-2026-10-29/ledgers/de-employee-income-tax.md",
+  "ledger_sha256": "035e5e2442882e2f59530447502138bae2e89c6ea31af109166626fd1ee2b6ce",
+  "current_rows": 218,
+  "old_topics": 435,
+  "original_oa": 2
+}

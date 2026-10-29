@@ -1,0 +1,172 @@
+{
+  "role": "writer successor, independent review pending",
+  "controls": [
+    {
+      "id": "R114.ordinary_minimum",
+      "actual": "625.00",
+      "expected": "625",
+      "scope": "Directly eligible isolated age30 claimant, no indirectly eligible spouse/children, actual prior relevant statutory insured income20k.",
+      "pass": true
+    },
+    {
+      "id": "R114.half_allowance",
+      "actual": "87.50",
+      "expected": "87.50",
+      "scope": "Actual qualifying own payment, not annual turnover/current income.",
+      "pass": true
+    },
+    {
+      "id": "R114.high_minimum",
+      "actual": "1925",
+      "expected": "1925",
+      "scope": "Cap4%income at2100 BEFORE subtracting entitled175 allowance.",
+      "pass": true
+    },
+    {
+      "id": "R114.cap_separator",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Reject cap-after-subtraction method.",
+      "pass": true
+    },
+    {
+      "id": "R114.floor",
+      "actual": "60",
+      "expected": "60",
+      "scope": "Sockel floor even where4%income less allowance is negative.",
+      "pass": true
+    },
+    {
+      "id": "R114.low_floor",
+      "actual": "60",
+      "expected": "60",
+      "scope": "Unfloored25 becomes60, no contribution-free full allowance.",
+      "pass": true
+    },
+    {
+      "id": "R114.floor_half",
+      "actual": "87.5",
+      "expected": "87.5",
+      "scope": "Actual30 payment over60 statutory minimum, proportional175 allowance.",
+      "pass": true
+    },
+    {
+      "id": "R114.no_payment",
+      "actual": "0",
+      "expected": "0",
+      "scope": "Entitlement before contribution reduction is not automatically credited full175.",
+      "pass": true
+    },
+    {
+      "id": "R114.overpayment",
+      "actual": "175",
+      "expected": "175",
+      "scope": "Overpayment does not multiply entitlement above full basic allowance.",
+      "pass": true
+    },
+    {
+      "id": "R114.child_old",
+      "actual": "440.00",
+      "expected": "440",
+      "scope": "Documented actual pre2008 child entitlement allocated to this directly eligible claimant; not mere childcount.",
+      "pass": true
+    },
+    {
+      "id": "R114.child_new",
+      "actual": "325.00",
+      "expected": "325",
+      "scope": "Documented post2007 child entitlement allocated to claimant; otherwise no assumed300.",
+      "pass": true
+    },
+    {
+      "id": "R114.two_children",
+      "actual": "140.00",
+      "expected": "140",
+      "scope": "Both actual child entitlements independently established; no implied two-claimant duplication.",
+      "pass": true
+    },
+    {
+      "id": "R114.under25_first",
+      "actual": "425.00",
+      "expected": "425",
+      "scope": "Directly eligible under25 at year-start, actual first qualifying post2007 requested contribution year. Age30 examples do not include200.",
+      "pass": true
+    },
+    {
+      "id": "R114.first_year_only",
+      "actual": "625.00",
+      "expected": "625",
+      "scope": "Later year does not receive invented repeated200 bonus.",
+      "pass": true
+    },
+    {
+      "id": "R114.own_plus_allowance_cap",
+      "actual": "2100",
+      "expected": "2100",
+      "scope": "10a comparison cap for eligible own qualifying payment plus entitled allowance; not sole own-payment cap.",
+      "pass": true
+    },
+    {
+      "id": "R114.tax_addback",
+      "actual": "9375",
+      "expected": "9375",
+      "scope": "Stipulated actual tariff with deduction9200; required entitlement add-back175, not automatic double allowance.",
+      "pass": true
+    },
+    {
+      "id": "R114.actual_comparison_saving",
+      "actual": "625",
+      "expected": "625",
+      "scope": "Stipulated actual without-deduction10000; not800+175 saving. No new universal tariff saving.",
+      "pass": true
+    },
+    {
+      "id": "R114.both_requested_transfer",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Different-sex married/non-separated qualifying EU/EEA parents: actual joint request needed to transfer mother allocation; no childcount allocation.",
+      "pass": true
+    },
+    {
+      "id": "R114.total_recovery",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Child Kindergeld wholly reclaimed for assessment period removes actual child allowance; no positive fixture assumes otherwise.",
+      "pass": true
+    },
+    {
+      "id": "R113.contiguous_original_table",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Header/separator/three original data rows contiguous; exact moved employer paragraph after final row, all words/amounts same.",
+      "pass": true
+    },
+    {
+      "id": "R114.oldroute87",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Prior source-only/historical Riester numeric origin now routes to actual current numeric ordinary method and documented allocation.",
+      "pass": true
+    },
+    {
+      "id": "R114.oldroute88",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Prior source-only/historical Riester numeric origin now routes to actual current numeric ordinary method and documented allocation.",
+      "pass": true
+    }
+  ],
+  "control_count": 22,
+  "own_source_scopes": 5,
+  "full_inverse_ops": 3,
+  "current_rows": 323,
+  "all_prior_current_ids": true,
+  "old_origins": 455,
+  "all134actualcomponents_rebound": true,
+  "original_five_case_paragraphs_exact": true,
+  "original_oa": 0,
+  "schema_errors": [],
+  "schema_warnings": [],
+  "diff_returncode": 0,
+  "prior23members_unchanged": 23
+}

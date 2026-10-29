@@ -1,0 +1,64 @@
+{
+  "de-social-contributions": [
+    {
+      "finding": "version",
+      "before": "version: 2.2",
+      "after": "version: 2.3"
+    },
+    {
+      "finding": "R72",
+      "before": "- **The one-month window.** If the application is made within one month of the work starting and employment is found, insurance starts only on the day the decision is announced. Two conditions apply: the worker consents, and for the time in between the worker had cover against illness and for old age comparable to the statutory schemes. The total contribution then falls due only when the decision can no longer be challenged (§ 7a(5)).",
+      "after": "- **The one-month window.** If the application is made within one month of the work starting and employment is found, insurance starts only on the day the decision is announced. Two conditions apply: the worker consents, and for the time in between the worker had cover against illness and for old age comparable to the statutory schemes. The total contribution then falls due only when the decision can no longer be challenged (§ 7a(5)).\n- **Group-opinion protection.** If a DRV opinion under § 7a(4b) assumed self-employment and a later status or insurance proceeding finds employment for the same contractual relationship, § 7a(4c) starts compulsory insurance only on notification of that decision if the worker had the comparable illness and old-age cover required by § 7a(5) sentence 1 no. 2. The contract must have been concluded within two years after receipt of the opinion. Same relationships require the same type and circumstances of work and uniform contractual agreements under paragraph 4b. The individual route's one-month application and consent requirements do not apply to this alternative. Under current § 7a(7), paragraph 4c expires at the end of 30 June 2027."
+    },
+    {
+      "finding": "R72",
+      "before": "- **If employment is found later**, without the one-month protection, the client owes contributions back to the start of the work, and late-payment surcharges of 1% a month on the rounded-down arrears can follow ([§ 24(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__24.html)). The exposure is large. Refer before the client signs or at once when it comes up.",
+      "after": "- **If employment is found later**, and neither the individual one-month protection nor the qualifying group-opinion protection applies, ordinary contribution liability reaches back to the start of the work. Late-payment surcharges can follow, subject to the actual § 24 rules: where a contribution notice operates retrospectively, no surcharge is levied to the extent the debtor credibly shows lack of knowledge of the payment duty without fault ([§ 24(1), (2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__24.html)). Refer before the client signs or at once when it comes up."
+    },
+    {
+      "finding": "R72",
+      "before": "- **Employment found later** without the one-month protection: contributions back to the start of the work plus the surcharges above ([§ 7a SGB IV](https://www.gesetze-im-internet.de/sgb_4/__7a.html)).",
+      "after": "- **Employment found later:** back-to-start contributions apply where neither the individual one-month nor qualifying group-opinion protection above applies; retrospective late-payment surcharges are separately subject to credible no-fault lack of knowledge under § 24(2) SGB IV ([§ 7a SGB IV](https://www.gesetze-im-internet.de/sgb_4/__7a.html))."
+    },
+    {
+      "finding": "R72",
+      "before": "- **Late statutory contributions:** a late-payment surcharge of 1% for each month or part month started, on the arrears rounded down to the nearest EUR 50; not charged separately if under EUR 150 ([§ 24(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__24.html)). It does not apply to unemployment insurance on application ([§ 349a SGB III](https://www.gesetze-im-internet.de/sgb_3/__349a.html)).",
+      "after": "- **Late statutory contributions:** a late-payment surcharge of 1% for each month or part month started, on the arrears rounded down to the nearest EUR 50; not charged separately if under EUR 150 ([§ 24(1) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__24.html)). It does not apply to unemployment insurance on application ([§ 349a SGB III](https://www.gesetze-im-internet.de/sgb_3/__349a.html)). For a retrospective contribution notice, § 24(2) excludes the surcharge to the extent the debtor credibly shows lack of knowledge of the payment duty without fault."
+    },
+    {
+      "finding": "R73",
+      "before": "- Everyone resident must hold cover: without statutory cover, a private policy covering at least outpatient and inpatient treatment ([§ 193(3) VVG](https://www.gesetze-im-internet.de/vvg_2008/__193.html)). A voluntary statutory member is compulsorily insured in social care insurance ([§ 20(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__20.html)).",
+      "after": "- Residents within [§ 193(3) VVG](https://www.gesetze-im-internet.de/vvg_2008/__193.html) must maintain a private policy with an insurer authorised to operate in Germany, covering at least outpatient and inpatient treatment. The combined absolute and percentage deductibles for those treatments must be capped at EUR 5,000 per insured person and calendar year; for Beihilfe entitlement the cap follows the proportion not covered by Beihilfe. Apply the express statutory exceptions: statutory-insured or compulsorily insured persons; free medical care, Beihilfe or comparable entitlements within their scope; Asylum Seekers Benefits Act entitlement; and the specified ongoing SGB XII chapters 3, 4 and 7 or SGB IX part 2 benefit recipients whose benefit receipt began before 1 January 2009, including interruptions shorter than one month. This is not a private-policy duty for every resident outside GKV. A voluntary statutory member is compulsorily insured in social care insurance ([§ 20(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__20.html))."
+    },
+    {
+      "finding": "R74",
+      "before": "- **Prepayments:** due within ten days after each month. Each is the current rate on one twelfth of last year's fees; until 1 March, the December amount. None is due if the amount would not exceed EUR 40 ([§ 27(3) KSVG](https://www.gesetze-im-internet.de/ksvg/__27.html)). The KSK can reduce prepayments on application if this year's fees will be much lower.",
+      "after": "- **Prepayments:** due within ten days after each month. With full prior-year duty, each is the current rate on one twelfth of last year's qualifying fees; if duty existed for only part of that year, divide those fees by the number of begun calendar months in which duty existed. Until 1 March, use the amount due for the preceding December. The first prepayment duty begins ten days after the end of the month up to which the levy first had to be accounted for. None is due if the monthly amount would not exceed EUR 40 ([§ 27(3), (4) KSVG](https://www.gesetze-im-internet.de/ksvg/__27.html)). The KSK can reduce prepayments on application if this year's fees will be much lower. For stipulated duty from July through December 2025 and EUR 12,000 qualifying fees, six begun duty months give the 2026 monthly reference EUR 12,000 / 6 × 4.9% = EUR 98, rather than EUR 49 under a full-year denominator; the preceding-December rule still applies until 1 March. A mid-July start still counts July."
+    },
+    {
+      "finding": "R75",
+      "before": "- **Barred:** a person already insured this way who interrupted that work twice and claimed unemployment benefit in the breaks.",
+      "after": "- **Concurrent-status gate:** the applicant must be neither compulsorily insured under §§ 25 or 26 SGB III nor insurance-free under §§ 27 or 28. Minor employment under § 27(2) does not exclude entry.\n- **Barred:** a person already insured this way who interrupted that work twice and claimed unemployment benefit in the breaks."
+    },
+    {
+      "finding": "R75",
+      "before": "- **Deadline:** within three months of starting. If another insurance duty blocked the application, within three months after that ends.",
+      "after": "- **Deadline:** within three months of starting. If entry was blocked solely by a prior compulsory-insurance status under §§ 25 or 26 or insurance-free status under §§ 27 or 28, apply within three months after that exclusion ends. Insurance begins when the actual paragraph 1 and 2 conditions are first met.\n- **Suspension:** later compulsory insurance under §§ 25 or 26 or insurance-free status under § 27 suspends this insurance; a § 27(2) minor job does not. Paragraph 4 does not list § 28 in this suspension clause; the separate end-of-cover rules remain."
+    },
+    {
+      "finding": "R76",
+      "before": "Register by the end of May 2026.",
+      "after": "Register within three months: the nominal end of May is Sunday 31 May 2026, so the ordinary deadline is Monday 1 June 2026 under [§ 26(3) SGB X](https://www.gesetze-im-internet.de/sgb_10/__26.html). This assumes no authority notice expressly fixing the day under that provision or authority-set appointment under § 26(5)."
+    },
+    {
+      "finding": "R77",
+      "before": "- **Arrears:** after two months' arrears the KSK sends a reminder. If more than one month's share is still unpaid two weeks later, health benefits are suspended until the arrears are paid.",
+      "after": "- **Arrears:** after two months' arrears the KSK sends a reminder warning of suspension. If more than one month's share remains unpaid two weeks after receipt, the KSK must issue a suspension decision; suspension starts three days after receipt of that decision, not automatically when the two weeks expire. It ends when all arrears and the health and care shares falling due during suspension are paid. The KSK can end it early on an instalment agreement (§ 16(2), applied correspondingly by § 16a(2) KSVG)."
+    },
+    {
+      "finding": "R77",
+      "before": "- **KSK arrears:** after two months' arrears a reminder; if more than one month's share is unpaid two weeks later, health benefits are suspended ([§ 16(2) KSVG](https://www.gesetze-im-internet.de/ksvg/__16.html)).",
+      "after": "- **KSK arrears:** the two-month arrears/reminder and two-week remaining-balance tests require a warning in the reminder and a suspension decision. Suspension begins three days after receipt of that decision; payment of all arrears and intervening health/care shares ends it, and the KSK can end it early on an instalment agreement ([§ 16(2) KSVG](https://www.gesetze-im-internet.de/ksvg/__16.html), applied correspondingly by § 16a(2))."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-29",
+  "selected": "Option A for each finding; DE-L11 first replacement reorders the same sourced sentences to keep the formula introduction next to its formula.",
+  "scope": "Writer corrections awaiting independent whole-country review. No independent verdict or country completion.",
+  "findings": [
+    {
+      "id": "DE-L11",
+      "slug": "de-non-resident-tax",
+      "expected_before_sha256": "90cc51144b9fb01972187158c6cc09a6cdd14bf5aa7a92def578592070c4168c",
+      "operations": [
+        {
+          "before": "- **Other foreign income taxed at the tariff (for example foreign rent, foreign business income, or capital income taxed at the tariff after the § 32d(6) option).** § 34c(1) applies where no treaty exists; where a treaty provides for a credit, § 34c(6) applies the same method. The foreign tax is credited up to the German tax on that income:",
+          "after": "- **Other foreign income taxed at the tariff (for example foreign rent, foreign business income).** § 34c(1) applies where no treaty exists; where a treaty provides for a credit, § 34c(6) applies the same method. Capital income assessed under the § 32d(6) Günstigerprüfung instead keeps the § 32d(5) credit, capped at the additional tariff tax on that capital income (§ 32d(6) sentence 2). For income within § 34c, the foreign tax is credited up to the German tax on that income:"
+        },
+        {
+          "before": "If he had chosen the tariff under § 32d(6) (only worth it on a low income), § 32d(5) still governs the credit, applied to the extra tariff tax on the capital income. If the foreign rate were 30% (EUR 3,000), only EUR 2,250 could be credited. The part above the treaty rate is reclaimed from the source country under its treaty, not from Germany; the rest is lost.",
+          "after": "If he had chosen the tariff under § 32d(6), § 32d(5) still governs the credit, applied to the additional tariff tax on the capital income. The foreign tax must first be reduced by any source-country refund entitlement. If 30% (EUR 3,000) were withheld but the same treaty limits source tax to 15%, only EUR 1,500 is creditable in this case and EUR 1,500 is reclaimed from the source country; the German tax cap does not turn treaty-refundable tax into a German credit. In a separate no-refund-entitlement case with EUR 3,000 of eligible foreign tax, the German cap would limit credit to EUR 2,250 and EUR 750 would remain uncredited."
+        }
+      ]
+    },
+    {
+      "id": "DE-L12",
+      "slug": "de-non-resident-tax",
+      "expected_before_sha256": "90cc51144b9fb01972187158c6cc09a6cdd14bf5aa7a92def578592070c4168c",
+      "operations": [
+        {
+          "before": "| § 50a, net basis for EU/EEA creditors (costs deducted) | 30% for individuals, 15% for companies, on net receipts | 2026 | Same, § 50a(3) |",
+          "after": "| § 50a, net basis for eligible EU/EEA creditors | Only § 50a(1) nos. 1, 2 and 4, not royalties under no. 3: 30% for individuals, 15% for eligible companies, on net receipts after proven directly related costs | 2026 | Same, § 50a(3) |"
+        },
+        {
+          "before": "- For an EU/EEA creditor the payer may deduct costs the creditor proves, then withhold 30% (individual) or 15% (company) of the net (§ 50a(3)).",
+          "after": "- For § 50a(1) nos. 1, 2 and 4 only, the payer may deduct directly related costs proved in a form the BZSt can check or paid by the payer, then withhold 30% for an EU/EEA national resident in the EU/EEA, or 15% for a company meeting § 32(4) KStG. This net route does not apply to royalties under § 50a(1) no. 3 (§ 50a(3))."
+        }
+      ]
+    },
+    {
+      "id": "DE-L13",
+      "slug": "de-non-resident-tax",
+      "expected_before_sha256": "90cc51144b9fb01972187158c6cc09a6cdd14bf5aa7a92def578592070c4168c",
+      "operations": [
+        {
+          "before": "2. **No personal deductions.** Special expenses, the EUR 36 lump sum, single-parent relief, child allowances, extraordinary burdens and § 35a credits do not apply (§ 50(1) sentence 4). There is no splitting.",
+          "after": "2. **No personal deductions.** Special expenses, the EUR 36 lump sum, single-parent relief, child allowances, extraordinary burdens and § 35a credits do not apply (§ 50(1) sentence 4). There is no splitting. Exception under § 50(1a): mandatory contributions to a professional pension institution can qualify where membership arises from the admission required for the German professional practice. It covers EU/EEA nationals resident in the EU/EEA or Switzerland, and Swiss nationals resident in the EU or Switzerland. Contributions must directly relate to German income under § 49(1) no. 2 or 3 from that admitted practice; the deduction follows German qualifying income divided by the total positive German and foreign income from that practice. It is excluded to the extent already deducted in the residence state or exceeding the German qualifying income."
+        }
+      ]
+    },
+    {
+      "id": "DE-L14",
+      "slug": "de-vat-annual-and-special-schemes",
+      "expected_before_sha256": "b0c0f913256ddb1f0e9cb19e9f36ae9930042a402ceb00425d87c01ae1e86419",
+      "operations": [
+        {
+          "before": "| Correction of not more than this goes in the annual return only | EUR 6,000 | 2026 | § 44(3) UStDV |",
+          "after": "| Annual-return-only correction ceiling, except sales or § 3(1b) supplies covered by § 44(3) sentence 2 UStDV | EUR 6,000 | 2026 | § 44(3) UStDV |"
+        },
+        {
+          "before": "**The annual return is a full recomputation, not a sum of the quarters.** Under § 18(3) UStG the business recomputes the year's tax from § 16(1) to (4) and § 17 UStG: output tax on the year's supplies, plus tax owed as a buyer, minus deductible input tax, plus or minus input tax corrections. The advance returns are only prepayments on it. So the annual return is where errors in the advance returns are put right, where § 15a corrections of up to EUR 6,000 are made (§ 44(3) UStDV), and where a partial-exemption key estimated during the year is replaced with the final one.",
+          "after": "**The annual return is a full recomputation, not a sum of the quarters.** Under § 18(3) UStG the business recomputes the year's tax from § 16(1) to (4) and § 17 UStG: output tax on the year's supplies, plus tax owed as a buyer, minus deductible input tax, plus or minus input tax corrections. The advance returns are only prepayments on it. So the annual return is where errors in the advance returns are put right, where § 15a corrections of up to EUR 6,000 are normally made (§ 44(3) UStDV; its sentence 2 requires sale/§ 3(1b) disposal corrections in the advance return for the period of disposal), and where a partial-exemption key estimated during the year is replaced with the final one."
+        },
+        {
+          "before": "**Input tax correction (§ 15a UStG).** If the use of an asset changes within five years of first use (ten years for land and buildings), the input tax deducted on it is corrected by one fifth (or one tenth) a year for each year of change (§ 15a(1) and (5)). A sale or a private withdrawal during the period is also a change (§ 15a(8)). The UStDV simplifications are in the table: nothing below EUR 1,000 of input tax, nothing for a change under 10 points unless above EUR 1,000, and only in the annual return up to EUR 6,000.",
+          "after": "**Input tax correction (§ 15a UStG).** If the use of an asset changes within five years of first use (ten years for land and buildings), the input tax deducted on it is corrected by one fifth (or one tenth) a year for each year of change (§ 15a(1) and (5)). A sale or a private withdrawal during the period is also a change (§ 15a(8)). The UStDV simplifications are in the table: nothing below EUR 1,000 of input tax, nothing for a change under 10 points unless above EUR 1,000, and generally only in the annual return up to EUR 6,000. If the asset is sold or supplied under § 3(1b) during the correction period, § 44(3) sentence 2 instead requires the corrections for the disposal year and the remaining years in the advance return for the period of disposal, even when the amount is no more than EUR 6,000."
+        }
+      ]
+    },
+    {
+      "id": "DE-L15",
+      "slug": "de-vat-annual-and-special-schemes",
+      "expected_before_sha256": "b0c0f913256ddb1f0e9cb19e9f36ae9930042a402ceb00425d87c01ae1e86419",
+      "operations": [
+        {
+          "before": "**Sibling skills.** [germany-vat-return](germany-vat-return.md) for the box-by-box advance return and the supplier library. [germany-einvoice](germany-einvoice.md) for XRechnung, ZUGFeRD and archiving. [de-income-tax](de-income-tax.md) and [de-einkommensteuer-freelancer](de-einkommensteuer-freelancer.md) for income tax, where a small business reports income gross and a VAT-registered business reports it net. [de-corporate-tax](de-corporate-tax.md) for a GmbH's profit.",
+          "after": "**Sibling skills.** [germany-vat-return](germany-vat-return.md) for the box-by-box advance return and the supplier library. [germany-einvoice](germany-einvoice.md) for XRechnung, ZUGFeRD and archiving. [de-income-tax](de-income-tax.md) and [de-einkommensteuer-freelancer](de-einkommensteuer-freelancer.md) for income tax, where a small business uses gross receipts and costs, while normal-scheme cash EÜR records VAT collected as a receipt and VAT remitted as an expense. [de-corporate-tax](de-corporate-tax.md) for a GmbH's profit."
+        }
+      ]
+    },
+    {
+      "id": "DE-L16",
+      "slug": "de-treaty-withholding-rates",
+      "expected_before_sha256": "33841f0efd1d0d777dd389c10d671e8b9ee115490931ce05df7444b3e1a369e9",
+      "operations": [
+        {
+          "before": "| Payer remits Kapitalertragsteuer | Tax withheld in a month, to the tax office by the 10th of the next month (§ 44(1) sentence 5) |",
+          "after": "| Payer remits Kapitalertragsteuer | General rule: tax withheld in a month is remitted by the 10th of the following month. Exception: for § 43(1) sentence 1 no. 1 distributions, remit when the capital income is received under § 44(1) sentence 5; § 44(2) uses the payment day fixed by the distribution resolution, or its statutory default where no payment day was fixed. Custodial dividends under § 43(1) no. 1a remain under the general monthly rule |"
+        }
+      ]
+    },
+    {
+      "id": "DE-L17",
+      "slug": "de-treaty-withholding-rates",
+      "expected_before_sha256": "33841f0efd1d0d777dd389c10d671e8b9ee115490931ce05df7444b3e1a369e9",
+      "operations": [
+        {
+          "before": "**Portfolio holdings below 15% (§ 50j).** Where a treaty cuts German tax on dividends below 15% for a shareholder that is not a company holding at least 10% (for example the US pension fund at 0%, or the Dutch pension fund and UK pension scheme at 10%), the refund needs the recipient to have been the beneficial owner for 45 days within 45 days either side of the due date, carrying at least 70% of the risk of a fall in value, and not to pass the dividend on (§ 50j EStG).",
+          "after": "**Portfolio holdings below 15% (§ 50j).** Where a treaty cuts German tax on dividends below 15% for a shareholder that is not a company holding at least 10% (for example the US pension fund at 0%, or the Dutch pension fund and UK pension scheme at 10%), the refund needs the recipient to have been the beneficial owner for 45 days within 45 days either side of the due date, carrying at least 70% of the risk of a fall in value, and not to pass the dividend on (§ 50j EStG). The tests in § 50j(1)–(3) do not apply if, at receipt, the recipient has been the economic owner of the shares or participation certificates continuously for at least one year (§ 50j(4) sentence 2); the FIFO rule in § 50j(2) sentence 2 still applies."
+        }
+      ]
+    },
+    {
+      "id": "DE-L18",
+      "slug": "de-treaty-withholding-rates",
+      "expected_before_sha256": "33841f0efd1d0d777dd389c10d671e8b9ee115490931ce05df7444b3e1a369e9",
+      "operations": [
+        {
+          "before": "**Refund amount on a treaty dividend.** Refund = tax withheld − treaty limit × gross dividend. For a 15% treaty: 26.375% − 15% = 11.375% of the gross. This holds where the treaty's covered taxes include the solidarity surcharge. Austria, Luxembourg, the Netherlands, Spain, the UK, Ireland and Poland list German taxes \"including the supplements levied thereon\" (art. 2); Switzerland and France cover taxes levied \"also in the form of surcharges\" (art. 2(1), art. 1(2)). Italy, the US and the Czech Republic do not name supplements; there the surcharge comes in only as a later tax of a similar kind (Italy art. 2(4), US art. 2(2), Czech Republic art. 2(5)).",
+          "after": "**Refund amount on a treaty dividend.** Refund = tax withheld − treaty limit × gross dividend. For a 15% treaty: 26.375% − 15% = 11.375% of the gross. This holds where the treaty's covered taxes include the solidarity surcharge. Austria, Luxembourg, the Netherlands, Spain, the UK, Ireland and Poland list German taxes \"including the supplements levied thereon\" (art. 2); Switzerland and France cover taxes levied \"also in the form of surcharges\" (art. 2(1), art. 1(2)). Italy and the US do not expressly name supplements; their later-similar-tax clauses are Italy art. 2(4) and US art. 2(2). Czech Republic art. 2(3)(a) expressly names the corporation-tax Ergänzungsabgabe; whether the current solidarity surcharge falls within that wording or the later-similar-tax clause in art. 2(5) is not separately established here."
+        },
+        {
+          "before": "Not yet confirmed: whether the BZSt in practice applies the Italian, US and Czech limits to tax and surcharge together (those treaties do not name supplements; the refund formula assumes they do); the late-filing surcharge on withholding returns; the StAbwG rates; any BZSt country table of residual rates (the BZSt table found covers foreign tax credited to German residents, not German tax on payments abroad, so it was not used for the rates above).",
+          "after": "Not yet confirmed: whether the BZSt in practice applies the Italian, US and Czech limits to tax and surcharge together (Italy and the US do not expressly name supplements; the Czech treaty names the corporation-tax Ergänzungsabgabe, but application to the current solidarity surcharge is not separately established; the refund formula assumes current surcharge coverage); the late-filing surcharge on withholding returns; the StAbwG rates; any BZSt country table of residual rates (the BZSt table found covers foreign tax credited to German residents, not German tax on payments abroad, so it was not used for the rates above)."
+        }
+      ]
+    }
+  ]
+}

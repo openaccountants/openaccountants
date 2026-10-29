@@ -1,0 +1,105 @@
+{
+  "status": "Writer successor, independent review pending",
+  "artifacts": [
+    {
+      "path": "after/de-vat-annual-and-special-schemes.md",
+      "sha256": "6efaea2e7187a02ef34952cf07803f8fb80516c8def1df3fe6b7158c2e7fe196",
+      "bytes": 35216
+    },
+    {
+      "path": "before/de-vat-annual-and-special-schemes.md",
+      "sha256": "51433fb5a8203b3d7466cfd1378ee2b28dc7bfd76f2e423cdf420cd714677867",
+      "bytes": 32537
+    },
+    {
+      "path": "build-ledger.py",
+      "sha256": "a5ef94c3f7ed5941f1ee5ae36fad7db6ba21d5938528fc9ca0afa45e42510ff1",
+      "bytes": 7009
+    },
+    {
+      "path": "check-and-seal.py",
+      "sha256": "a3895751362052d99d96c14dc216ecb59fb50a9587aa7da1ba7b8b12024642d0",
+      "bytes": 9826
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "771c8c45cf59e3d898729dfdc870892bd8620586ba936f412631a6af6db45731",
+      "bytes": 8287
+    },
+    {
+      "path": "first-check-failure.json",
+      "sha256": "e95b3435c8d25f63169651ac51b8c74ac4c54721c8a6f32e032138303998d2ea",
+      "bytes": 704
+    },
+    {
+      "path": "historical-apply.py",
+      "sha256": "6ec72beb71073a318a78e770018f400d6d0fea50d67a84d9f5864b22117ca7c2",
+      "bytes": 10873
+    },
+    {
+      "path": "ledgers/de-vat-annual-and-special-schemes.md",
+      "sha256": "785e75dafb9ec0abcec8b42cc4a5d4ae93f19ce276dde550e27a31856a71ef48",
+      "bytes": 228085
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "754ce817baa010acf2e210ed9ca532ce992d1fffa0a7171137c64097cf7f8857",
+      "bytes": 1911
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "c4672d7988cd7959726110753e382085b194869de2a272784e250b813d1e6cd3",
+      "bytes": 12962
+    },
+    {
+      "path": "preservation-proof.json",
+      "sha256": "c13c187e8ac95db0107eeb0a514e7aec405adae99163276c38e5daa0c74656e5",
+      "bytes": 475
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "35da6754e20d6122dfc479cc74f95404e37e93c3ff5a1fca2e5bd8cfdc228600",
+      "bytes": 170334
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "4cc7dc8d728b7815c962e5328febb9c83cdebd232145c951bfe3c89c16828025",
+      "bytes": 110254
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "60234c6cb432fffea49c586426639ee842000130abdb581d0d884f2f5ab526a2",
+      "bytes": 944
+    },
+    {
+      "path": "support/de-vat-annual-and-special-schemes/old-topic-destinations.json",
+      "sha256": "d10ae7d52eb78907774e89044cc35a223670449545f456830d316233d3e61186",
+      "bytes": 202701
+    },
+    {
+      "path": "support/de-vat-annual-and-special-schemes/rows.json",
+      "sha256": "1ed1574ac03f1c11b169607f82bcf7ba1c4e490f09db06c8482b6af301d51a54",
+      "bytes": 117466
+    },
+    {
+      "path": "support/guide.diff",
+      "sha256": "7b3e0aa090fe5089857fae20d0a6c8fe56570cf8ccc29cf330dc9d9641e75c2b",
+      "bytes": 13487
+    },
+    {
+      "path": "support/line-map.json",
+      "sha256": "18fa4301d823f4930712b58565e6775504f7bda0e3befea93a7e07e5a038a85d",
+      "bytes": 18519
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "8736218a021f3858befea548ac5aa211170b334c647ae099c1cc399762143313",
+      "bytes": 21277
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "c158d185ba696470736f39d5b90f2c80328612d3f0c6c8916ae907581c20b7ba",
+      "bytes": 2321
+    }
+  ]
+}

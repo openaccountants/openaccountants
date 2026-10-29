@@ -1,0 +1,11 @@
+{
+  "id": "U85b2e15f8f1f736c",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.body",
+  "raw_sha256": "9ca6fb9be039c1ded8633d709d0f29fbb21a7153b5e42dcc59e26ca14c76ea99",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U85b2e15f8f1f736c.reader.txt",
+  "reader_sha256": "e77873437605a46672a2395b677def497441f842f9ff79a3c14575d3af08da5a",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

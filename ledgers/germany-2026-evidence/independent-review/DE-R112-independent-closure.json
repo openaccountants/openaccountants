@@ -1,0 +1,50 @@
+{
+  "successor_folder": "germany-DE-R112-crypto-source-scope-writer-successor-2026-10-29",
+  "manifest_members_rehashed": 11,
+  "pairs": [
+    {
+      "pair": {
+        "slug": "de-crypto-tax",
+        "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-crypto-tax.md",
+        "Guide_sha256": "63a6ef182271bbf75f149139f08aa8184aa266dab06a266638aec5cecb853699",
+        "Guide_bytes": 39539,
+        "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R112-crypto-source-scope-writer-successor-2026-10-29/ledgers/de-crypto-tax.md",
+        "ledger_sha256": "a57d239d578db72eea76ba39cb018ca226ca5db49f3f886bbd3f6928e5adc79b",
+        "rows": 158,
+        "old_origins": 346,
+        "changed_current_row_ids": [
+          "076"
+        ]
+      },
+      "before_sha256": "e227cef8836a9ec2220197dd3505fca5ce9f1b5f610a5363a9e98c50afd8e3fa",
+      "operations": 2,
+      "full_inverse": true,
+      "all_native_current_rows": 158,
+      "original_oa_byteexact": 0,
+      "protected_metadata_CTA_oldURLorder": true
+    }
+  ],
+  "sources": [],
+  "status": "PASS exact source-scope correction R112 and final ledger header/link precision. No new NFTtaxrule or wholecountryPASS.",
+  "final_pair": {
+    "slug": "de-crypto-tax",
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-crypto-tax.md",
+    "Guide_sha256": "63a6ef182271bbf75f149139f08aa8184aa266dab06a266638aec5cecb853699",
+    "Guide_bytes": 39539,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R112-crypto-ledger-header-precision-2026-10-29/de-crypto-tax.md",
+    "ledger_sha256": "6c7d1d95447bd117bc0bac1a15ea3e182beacde3c7593a961b2f230d9d390230",
+    "rows": 158,
+    "old_origins": 346,
+    "changed_current_row_ids": [
+      "076"
+    ]
+  },
+  "second_manifest_members_rehashed": 6,
+  "evidence_header_link_ops": 2,
+  "all341_source_quote_links_point_to_retained_prior_source_file": true,
+  "actual_reading": "Both Guide operations and two ledger operations actually read; retained ministry NFT/notice scope quotations are identical to already actually read wholecrypto/R44\u201346 source scopes. No new reading/acquisition or universal-law inference.",
+  "six_original_cases_and_all_later_prose_byteexact": true,
+  "all346_old_origin_identities_exact": true,
+  "full_two_stage_inverses": true,
+  "prior_initial_wrong_byte_header_39516": "Historical first11member seal preserved; final39539 matches actualGuide. Generic support layout/heading errors recorded in toolhistory; actual support/rows.json and Worked cases inspected."
+}

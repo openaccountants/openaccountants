@@ -1,0 +1,62 @@
+{
+  "R58.company-forms": {
+    "id": "R58.company-forms",
+    "url": "https://www.gesetze-im-internet.de/estg/anlage_2.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1e06bb5852a0c786.body",
+    "raw_sha256": "f63071eaeffc3c8760de4ae10f01427ae0fc68d32f12d89a920ac01fd3afb2b5",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1e06bb5852a0c786.reader.txt",
+    "reader_sha256": "2046a83b78ab77aad5ee3a2647d2a29e8bda01484502a489de9b6e924127c509",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG Anlage2companydefinition/formlistopening",
+    "native_LF": [
+      7,
+      10
+    ],
+    "exact_quote": "(Fundstelle: BGBl. I 2014, 1295 — 1297)\nGesellschaft im Sinne der genannten Richtlinie ist jede Gesellschaft, die 1.\neine der folgenden Formen aufweist: a)\neine Gesellschaft, die gemäß der Verordnung (EG) Nr. 2157/2001 des Rates vom 8. Oktober 2001 über das Statut der Europäischen Gesellschaft (SE) und der Richtlinie 2001/86/EG des Rates vom 8. Oktober 2001 zur Ergänzung des Statuts der Europäischen Gesellschaft hinsichtlich der Beteiligung der Arbeitnehmer gegründet wurde, sowie eine Genossenschaft, die gemäß der Verordnung (EG) Nr. 1435/2003 des Rates vom 22. Juli 2003 über das Statut der Europäischen Genossenschaft (SCE) und gemäß der Richtlinie 2003/72/EG des Rates vom 22. Juli 2003 zur Ergänzung des Statuts der Europäischen Genossenschaft hinsichtlich der Beteiligung der Arbeitnehmer gegründet wurde,",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native range actually read; formlistopening is not a claim to have newly reread everycountryform.",
+    "actual_reread": "2026-10-29, complete selected operative quote; no whole-body claim"
+  },
+  "R58.residence-tax": {
+    "id": "R58.residence-tax",
+    "url": "https://www.gesetze-im-internet.de/estg/anlage_2.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1e06bb5852a0c786.body",
+    "raw_sha256": "f63071eaeffc3c8760de4ae10f01427ae0fc68d32f12d89a920ac01fd3afb2b5",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1e06bb5852a0c786.reader.txt",
+    "reader_sha256": "2046a83b78ab77aad5ee3a2647d2a29e8bda01484502a489de9b6e924127c509",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG Anlage2EUresidence/nooutside-treatyresidence/no-option-or-exemptiontax",
+    "native_LF": [
+      67,
+      71
+    ],
+    "exact_quote": "2.\nnach dem Steuerrecht eines Mitgliedstaates in Bezug auf den steuerlichen Wohnsitz als in diesem Staat ansässig betrachtet wird und auf Grund eines mit einem dritten Staat geschlossenen Doppelbesteuerungsabkommens in Bezug auf den steuerlichen Wohnsitz nicht als außerhalb der Gemeinschaft ansässig betrachtet wird und\n3.\nohne Wahlmöglichkeit einer der folgenden Steuern oder irgendeiner Steuer, die eine dieser Steuern ersetzt, unterliegt, ohne davon befreit zu sein: –\nvennootschapsbelasting/impôt des sociétés in Belgien,",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Full selected native range actually read; formlistopening is not a claim to have newly reread everycountryform.",
+    "actual_reread": "2026-10-29, complete selected operative quote; no whole-body claim"
+  },
+  "R57-60.PORTFOLIO": {
+    "id": "R57-60.PORTFOLIO",
+    "url": "https://www.gesetze-im-internet.de/estg/__50j.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud3e0b0d09cbc2951.body",
+    "raw_sha256": "34d87bee1a69ad9d31dfdb1b0fb849c8ccf32678081761f5ff6cb4b22784e9d7",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud3e0b0d09cbc2951.reader.txt",
+    "reader_sha256": "3cd1c2940a8a21016ce28ab7045c4e324e5fbd0858baf8458835ff5bf616057f",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "act_article": "EStG50j(1)-(4)includingoneyearexception",
+    "native_LF": [
+      7,
+      20
+    ],
+    "exact_quote": "(1) 1Ein Gläubiger von Kapitalerträgen im Sinne des § 43 Absatz 1 Satz 1 Nummer 1a, die nach einem Abkommen zur Vermeidung der Doppelbesteuerung nicht oder nur nach einem Steuersatz unterhalb des Steuersatzes des § 43a Absatz 1 Satz 1 Nummer 1 besteuert werden, hat ungeachtet dieses Abkommens nur dann Anspruch auf völlige oder teilweise Entlastung nach § 50c Absatz 3, wenn er 1.\nwährend der Mindesthaltedauer nach Absatz 2 hinsichtlich der diesen Kapitalerträgen zugrunde liegenden Anteile oder Genussscheine ununterbrochen wirtschaftlicher Eigentümer ist,\n2.\nwährend der Mindesthaltedauer nach Absatz 2 ununterbrochen das Mindestwertänderungsrisiko nach Absatz 3 trägt und\n3.\nnicht verpflichtet ist, die Kapitalerträge im Sinne des § 43 Absatz 1 Satz 1 Nummer 1a ganz oder überwiegend, unmittelbar oder mittelbar anderen Personen zu vergüten.\n2Satz 1 gilt entsprechend für Anteile oder Genussscheine, die zu inländischen Kapitalerträgen im Sinne des § 43 Absatz 3 Satz 1 führen und einer Wertpapiersammelbank im Ausland zur Verwahrung anvertraut sind.\n(2) 1Die Mindesthaltedauer umfasst 45 Tage und muss innerhalb eines Zeitraums von 45 Tagen vor und 45 Tagen nach der Fälligkeit der Kapitalerträge erreicht werden. 2Bei Anschaffungen und Veräußerungen ist zu unterstellen, dass die zuerst angeschafften Anteile oder Genussscheine zuerst veräußert wurden.\n(3) 1Der Gläubiger der Kapitalerträge muss unter Berücksichtigung von gegenläufigen Ansprüchen und Ansprüchen nahe stehender Personen das Risiko aus einem sinkenden Wert der Anteile oder Genussscheine im Umfang von mindestens 70 Prozent tragen (Mindestwertänderungsrisiko). 2Kein hinreichendes Mindestwertänderungsrisiko liegt insbesondere dann vor, wenn der Gläubiger der Kapitalerträge oder eine ihm nahe stehende Person Kurssicherungsgeschäfte abgeschlossen hat, die das Wertänderungsrisiko der Anteile oder Genussscheine unmittelbar oder mittelbar um mehr als 30 Prozent mindern.\n(4) 1Die Absätze 1 bis 3 sind nur anzuwenden, wenn 1.\ndie Steuer auf die dem Antrag zu Grunde liegenden Kapitalerträge nach einem Abkommen zur Vermeidung der Doppelbesteuerung 15 Prozent des Bruttobetrags der Kapitalerträge im Sinne des § 43 Absatz 1 Satz 1 Nummer 1a und des Absatzes 1 Satz 2 unterschreitet und\n2.\nes sich nicht um Kapitalerträge handelt, die einer beschränkt steuerpflichtigen Kapitalgesellschaft, die am Nennkapital einer unbeschränkt steuerpflichtigen Kapitalgesellschaft im Sinne des § 1 Absatz 1 Nummer 1 des Körperschaftsteuergesetzes zu mindestens einem Zehntel unmittelbar beteiligt ist und im Staat ihrer Ansässigkeit den Steuern vom Einkommen oder Gewinn unterliegt, ohne davon befreit zu sein, von der unbeschränkt steuerpflichtigen Kapitalgesellschaft zufließen.\n2Die Absätze 1 bis 3 sind nicht anzuwenden, wenn der Gläubiger der Kapitalerträge im Sinne des § 43 Absatz 1 Satz 1 Nummer 1a und des Absatzes 1 Satz 2 bei Zufluss seit mindestens einem Jahr ununterbrochen wirtschaftlicher Eigentümer der Aktien oder Genussscheine ist; Absatz 2 Satz 2 gilt entsprechend.",
+    "read_on": "2026-10-29",
+    "actual_read_scope": "Entire selected original quotation actually read here and literal native scope verified; Italianart2(4)also visually compared onphysical3. Raw unchanged, no whole treaty/acquisition/read inference.",
+    "actual_reread": "2026-10-29, complete selected operative quote; no whole-body claim"
+  }
+}

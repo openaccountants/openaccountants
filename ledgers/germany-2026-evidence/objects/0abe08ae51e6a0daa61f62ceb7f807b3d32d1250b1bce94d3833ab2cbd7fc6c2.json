@@ -1,0 +1,263 @@
+{
+  "status": "PASS bounded exact R47\u201354 successor; frozen160units/64quotes/281oldorigins and two original worked examples previously independently checked. No country verdict.",
+  "pair": {
+    "slug": "germany-to-switzerland-cross-border-tax",
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-to-switzerland-cross-border-tax.md",
+    "Guide_sha256": "796c662a90d1493b7b63a1bc83093175168016bfc5a5a7f312f8759471f838b5",
+    "bytes": 33849,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R47-R54-Swiss-writer-successor-2026-10-29/ledgers/germany-to-switzerland-cross-border-tax.md",
+    "ledger_sha256": "e5bcb494932847ff0e36d63f35d35078e6c1de0717c3207baac9e6252e6024be",
+    "current_rows": 162,
+    "prior_current_rows": 160,
+    "old_topics": 281,
+    "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/germany-to-switzerland-cross-border-tax.md",
+    "prior_ledger_sha256": "226a6bc71ffed829a3a0c72625742fa96e1e0d1505612c9e02091b8b7942c7f2"
+  },
+  "manifest_members_rehashed": 20,
+  "operations": 13,
+  "full_inverse": true,
+  "native_rows_verified": 162,
+  "original_oa_exact": 2,
+  "whole_example_section_exact": true,
+  "protected_metadata_CTA_URLs": true,
+  "sources": [
+    {
+      "id": "R47-53.SoliRate",
+      "native_LF": [
+        7,
+        7
+      ],
+      "reader_sha256": "219a2aa1409e999b209ed2402a91d3618b9ec3c19ebf85c10122087d7fa3845a",
+      "quote_sha256": "b8eb2b65618c2dace32c77221fa8bae9a16f130bd5e24bfc421e1426bef2e793",
+      "actual_read": "All twelve complete writer-selected actual quotations independently read in two six-record bounded batches, matched to prior Swiss/source/finding reads. Two identical Soli records were writer-reused reads, independently re-read here; no new acquisition."
+    },
+    {
+      "id": "R47-53.SOLILIMIT",
+      "native_LF": [
+        29,
+        33
+      ],
+      "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+      "quote_sha256": "04731a15da9f8567e39f64f828d8bee38676bf404b5318ecbfb3d415755efb81",
+      "actual_read": "All twelve complete writer-selected actual quotations independently read in two six-record bounded batches, matched to prior Swiss/source/finding reads. Two identical Soli records were writer-reused reads, independently re-read here; no new acquisition."
+    },
+    {
+      "id": "R47-53.TAIL",
+      "native_LF": [
+        174,
+        186
+      ],
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "quote_sha256": "977c217c7165b2ed8454477a3f93305d78c81c053d562c596d786506b504d447",
+      "actual_read": "All twelve complete writer-selected actual quotations independently read in two six-record bounded batches, matched to prior Swiss/source/finding reads. Two identical Soli records were writer-reused reads, independently re-read here; no new acquisition."
+    },
+    {
+      "id": "R47-53.SALARY",
+      "native_LF": [
+        431,
+        442
+      ],
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "quote_sha256": "a48039e97bee19e58b0cab40a5ccac91ae3295e5e9b6163d598cf8420cb1aa99",
+      "actual_read": "All twelve complete writer-selected actual quotations independently read in two six-record bounded batches, matched to prior Swiss/source/finding reads. Two identical Soli records were writer-reused reads, independently re-read here; no new acquisition."
+    },
+    {
+      "id": "R47-53.SUBJECTTAX",
+      "native_LF": [
+        19,
+        19
+      ],
+      "reader_sha256": "05fc41a45e6dc460030534c73b751375029212123e882f7cf0f5a37fe5a35878",
+      "quote_sha256": "23dbe052bc2cdd5655919f76fce96a9083224103dd1d2e1e803b5697fc02834b",
+      "actual_read": "All twelve complete writer-selected actual quotations independently read in two six-record bounded batches, matched to prior Swiss/source/finding reads. Two identical Soli records were writer-reused reads, independently re-read here; no new acquisition."
+    },
+    {
+      "id": "R47-53.PUBPENSION",
+      "native_LF": [
+        933,
+        947
+      ],
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "quote_sha256": "3a47f6909a20abd968d283bef4028172692a24a0e14a3eddc041f09f46d1ecc2",
+      "actual_read": "All twelve complete writer-selected actual quotations independently read in two six-record bounded batches, matched to prior Swiss/source/finding reads. Two identical Soli records were writer-reused reads, independently re-read here; no new acquisition."
+    },
+    {
+      "id": "R47-53.PENSCREDIT",
+      "native_LF": [
+        51,
+        57
+      ],
+      "reader_sha256": "c555d98944c6e061bfff43da252f36c7326fbea3db6d4ff70fe2c557cc07f3e4",
+      "quote_sha256": "9e50bd7bc358116a352ced899e93861cf1e887c2e15708719459df35bb7646f6",
+      "actual_read": "All twelve complete writer-selected actual quotations independently read in two six-record bounded batches, matched to prior Swiss/source/finding reads. Two identical Soli records were writer-reused reads, independently re-read here; no new acquisition."
+    },
+    {
+      "id": "R47-53.PENS1",
+      "native_LF": [
+        64,
+        71
+      ],
+      "reader_sha256": "c555d98944c6e061bfff43da252f36c7326fbea3db6d4ff70fe2c557cc07f3e4",
+      "quote_sha256": "c0a9866a5bde8d623ca3cb655aab3152494d6a8d544321382879bb8ec7b2ec35",
+      "actual_read": "All twelve complete writer-selected actual quotations independently read in two six-record bounded batches, matched to prior Swiss/source/finding reads. Two identical Soli records were writer-reused reads, independently re-read here; no new acquisition."
+    },
+    {
+      "id": "R47-53.PENS2",
+      "native_LF": [
+        106,
+        111
+      ],
+      "reader_sha256": "c555d98944c6e061bfff43da252f36c7326fbea3db6d4ff70fe2c557cc07f3e4",
+      "quote_sha256": "e61ec29cefbfc4950fbca5fcabdbdb85fb36e3fa8c086191ce00e40c1c37cec1",
+      "actual_read": "All twelve complete writer-selected actual quotations independently read in two six-record bounded batches, matched to prior Swiss/source/finding reads. Two identical Soli records were writer-reused reads, independently re-read here; no new acquisition."
+    },
+    {
+      "id": "R47-53.CHDIV",
+      "native_LF": [
+        336,
+        353
+      ],
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "quote_sha256": "7b481f4010cc0103d80323acefd87efe78d840e1999a08366303a3e4d127ecb7",
+      "actual_read": "All twelve complete writer-selected actual quotations independently read in two six-record bounded batches, matched to prior Swiss/source/finding reads. Two identical Soli records were writer-reused reads, independently re-read here; no new acquisition."
+    },
+    {
+      "id": "R47-53.RES",
+      "native_LF": [
+        7,
+        7
+      ],
+      "reader_sha256": "c131d86c4bf7573c7ceb89484930ecd33f0df991d53b7f180bdd3640c66b9f18",
+      "quote_sha256": "c5b33d2bd044f11db3626c41c41cd922c34b5011f25f3fcd8fda7898adc9e304",
+      "actual_read": "All twelve complete writer-selected actual quotations independently read in two six-record bounded batches, matched to prior Swiss/source/finding reads. Two identical Soli records were writer-reused reads, independently re-read here; no new acquisition."
+    },
+    {
+      "id": "R54.extensions",
+      "native_LF": [
+        15,
+        22
+      ],
+      "reader_sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "quote_sha256": "b0e5c6dcbc1290a96e13f49675e0a75eb976930ff62712412a0a60a3bd80ebb6",
+      "actual_read": "All twelve complete writer-selected actual quotations independently read in two six-record bounded batches, matched to prior Swiss/source/finding reads. Two identical Soli records were writer-reused reads, independently re-read here; no new acquisition."
+    }
+  ],
+  "own_controls": [
+    {
+      "name": "singleSoli20400phasein",
+      "actual": "119/20",
+      "expected": "119/20"
+    },
+    {
+      "name": "joint40700noSoli",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "tailincrementcap",
+      "actual": "200",
+      "expected": "200"
+    },
+    {
+      "name": "tailcredit",
+      "actual": "200",
+      "expected": "200"
+    },
+    {
+      "name": "tailremainder",
+      "actual": "100",
+      "expected": "100"
+    },
+    {
+      "name": "tailnotfull250credit",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "presence183inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "presence184fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "Germanemployer80daysnoSwissPEexception",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "Swissemployer80daysfails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "waiveralternativepaymentnotboth",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "zerowithheldnotwaiver",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "retainedGermanhomecanpreserveunlimited",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "lastpublicemploymentnotanyhistoric",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "periodiccertbeforefirstreceipt",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "capitalrefundformnotperiodicGre4",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "ordinarydividend10000residual15",
+      "actual": "1500",
+      "expected": "1500"
+    },
+    {
+      "name": "qualifying10directinclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "qualifying365inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "indirect10notdirect10",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "GermanREITpayerexclusionnotSwisspayer",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "filingextensioncanbarparagraph2compulsion",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "paragraph1discretionnotautomaticallyerased",
+      "actual": "True",
+      "expected": "True"
+    }
+  ],
+  "unchanged_original_controls": "germany-to-switzerland-cross-border-tax-own-controls.json:51 own controls; both original examples and full worked section unchanged. Existing precise homeoffice20percent denominator/currency/ordinance questions retained."
+}

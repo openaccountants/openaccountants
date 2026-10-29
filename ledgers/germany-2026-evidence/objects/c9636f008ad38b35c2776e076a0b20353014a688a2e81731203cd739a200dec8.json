@@ -1,0 +1,6 @@
+{
+  "result": "FileNotFoundError before validation completion",
+  "reason": "Writer check used generic artifact-manifest.json; original A seal is writer-A-handover-manifest.json, a list with absolute paths.",
+  "Guide_or_source_change_required": false,
+  "corrected_manifest_name": "writer-A-handover-manifest.json"
+}

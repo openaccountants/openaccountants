@@ -1,0 +1,84 @@
+{
+  "artifacts": [
+    {
+      "path": "after/de-employee-income-tax.md",
+      "sha256": "32b10213e3bc5d405ac89a1479b3a9ab07133a62320100c5788195a667764f3c",
+      "bytes": 28805
+    },
+    {
+      "path": "attributed-C-calculation-receipt.json",
+      "sha256": "069f53174d05f9de5738eefd0158f76ef68b089c298eb5d59e1af121034398b9",
+      "bytes": 846
+    },
+    {
+      "path": "before/de-employee-income-tax.md",
+      "sha256": "cd57ecbaf2ea8cd8153e7254e51c2a547d195e618f1cab178f8365909001b35b",
+      "bytes": 28763
+    },
+    {
+      "path": "builder-check-history.md",
+      "sha256": "052c3868508fc87124dfd0feab0d3443700c1bf3529ff695ea4a627503662481",
+      "bytes": 399
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "1db1e52f021cba0954921ba408ac83967224f92eda5f16bfe0d260d03dc7e6d4",
+      "bytes": 507
+    },
+    {
+      "path": "historical-apply-and-check.py",
+      "sha256": "e3ba0e7c93a153a92090f118706c76bec7079266de8a3ee55f38268f1187f320",
+      "bytes": 12739
+    },
+    {
+      "path": "ledgers/de-employee-income-tax.md",
+      "sha256": "035e5e2442882e2f59530447502138bae2e89c6ea31af109166626fd1ee2b6ce",
+      "bytes": 409453
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "e521e4b5fd0e3dd63d2dbfb97cdb496ec3a22a05a61e221244768038e0e36211",
+      "bytes": 1174
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "31c7d454e4ed0e40e9a0428cda303d56ee20c118422791c76285b2056f7ce547",
+      "bytes": 14352
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "4c6608dfe589a9cf5d0355afb2107486874fa909b3109060bf3d07aedfb5ac13",
+      "bytes": 205403
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "a7154338727c88c94c776aa8d44b0bb01f042416bbf294b61360f41a0f64a6e4",
+      "bytes": 131370
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "8e9b2d7fa4ae72d94dedde2cbdb7fa6f318ceab7e7c1ce0282ee8ecd221893a2",
+      "bytes": 632
+    },
+    {
+      "path": "support/de-employee-income-tax/old-topic-destinations.json",
+      "sha256": "9e038c1e2813276b0f48d66ab138787e9ed623551fee99c91dc8c54155107ace",
+      "bytes": 276875
+    },
+    {
+      "path": "support/de-employee-income-tax/rows.json",
+      "sha256": "0e2b828d43d832fa6873de34323f4a3fcf6e06c0d6487085cac3c1b3b457cd52",
+      "bytes": 271912
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "b67f3d65997d268d137a9ae95c2f8357bd3dd5c1c51cccf3b420462844cb3640",
+      "bytes": 4414
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "3b67f6fd8b7e504a5ff581af4aa3f4ba2d5d4d5550070e297ddf4050459f251f",
+      "bytes": 1227
+    }
+  ]
+}

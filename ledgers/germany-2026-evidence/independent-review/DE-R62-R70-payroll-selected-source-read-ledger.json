@@ -1,0 +1,274 @@
+{
+  "read_on": "2026-10-29",
+  "records": [
+    {
+      "quote": {
+        "id": "RECOVER",
+        "source": "U44fba97f2acbffef",
+        "article": "SGBIV28g missed-deduction+exceptions",
+        "url": "https://www.gesetze-im-internet.de/sgb_4/__28g.html",
+        "LF_start": 7,
+        "LF_end": 7,
+        "exact_quote": "Der Arbeitgeber und in den Fällen der nach § 7f Absatz 1 Satz 1 Nummer 2 auf die Deutsche Rentenversicherung Bund übertragenen Wertguthaben die Deutsche Rentenversicherung Bund hat gegen den Beschäftigten einen Anspruch auf den vom Beschäftigten zu tragenden Teil des Gesamtsozialversicherungsbeitrags. Dieser Anspruch kann nur durch Abzug vom Arbeitsentgelt geltend gemacht werden. Ein unterbliebener Abzug darf nur bei den drei nächsten Lohn- oder Gehaltszahlungen nachgeholt werden, danach nur dann, wenn der Abzug ohne Verschulden des Arbeitgebers unterblieben ist. Die Sätze 2 und 3 gelten nicht, wenn der Beschäftigte seinen Pflichten nach § 28o Absatz 1 vorsätzlich oder grob fahrlässig nicht nachkommt oder er den Gesamtsozialversicherungsbeitrag allein trägt oder solange der Beschäftigte nur Sachbezüge erhält.",
+        "raw_sha256": "9e7a1c55ca4b5f93041a6eaeb9e6d480837d2abcfbbe1e921dcc21aca28ef3c6",
+        "reader_sha256": "33b6dc0d3b946e4556d31d40c55b4659580ef8ae1f86f133ed6d8e5a7939a49f",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-28g-20261024.html",
+      "raw_sha256": "9e7a1c55ca4b5f93041a6eaeb9e6d480837d2abcfbbe1e921dcc21aca28ef3c6",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U44fba97f2acbffef.reader.txt",
+      "reader_sha256": "33b6dc0d3b946e4556d31d40c55b4659580ef8ae1f86f133ed6d8e5a7939a49f",
+      "actual_read": "Complete prepared quote actually read in payroll wholepair pass (or exact prior actual read bridge); no entire rawbody reading implied."
+    },
+    {
+      "quote": {
+        "id": "MINI",
+        "source": "U0807260aa5dcc968",
+        "article": "SGBIV8(1)–(2)ordinary+agricultural distinction",
+        "url": "https://www.gesetze-im-internet.de/sgb_4/__8.html",
+        "LF_start": 7,
+        "LF_end": 13,
+        "exact_quote": "(1) Eine geringfügige Beschäftigung liegt vor, wenn 1.\ndas Arbeitsentgelt aus dieser Beschäftigung regelmäßig die Geringfügigkeitsgrenze nicht übersteigt,\n2.\ndie Beschäftigung innerhalb eines Kalenderjahres auf längstens drei Monate oder 70 Arbeitstage nach ihrer Eigenart begrenzt zu sein pflegt oder im Voraus vertraglich begrenzt ist, es sei denn, dass die Beschäftigung berufsmäßig ausgeübt wird und die Geringfügigkeitsgrenze übersteigt; bei einer Beschäftigung in einem landwirtschaftlichen Betrieb gilt eine zeitliche Grenze von 15 Wochen oder 90 Arbeitstagen.\n(1a) Die Geringfügigkeitsgrenze im Sinne des Sozialgesetzbuchs bezeichnet das monatliche Arbeitsentgelt, das bei einer Arbeitszeit von zehn Wochenstunden zum Mindestlohn nach § 1 Absatz 2 Satz 1 des Mindestlohngesetzes in Verbindung mit der auf der Grundlage des § 11 Absatz 1 Satz 1 des Mindestlohngesetzes jeweils erlassenen Verordnung erzielt wird. Sie wird berechnet, indem der Mindestlohn mit 130 vervielfacht, durch drei geteilt und auf volle Euro aufgerundet wird. Die Geringfügigkeitsgrenze wird jeweils vom Bundesministerium für Arbeit und Soziales im Bundesanzeiger bekannt gegeben.\n(1b) Ein unvorhersehbares Überschreiten der Geringfügigkeitsgrenze steht dem Fortbestand einer geringfügigen Beschäftigung nach Absatz 1 Nummer 1 nicht entgegen, wenn die Geringfügigkeitsgrenze innerhalb des für den jeweiligen Entgeltabrechnungszeitraum zu bildenden Zeitjahres in nicht mehr als zwei Kalendermonaten um jeweils einen Betrag bis zur Höhe der Geringfügigkeitsgrenze überschritten wird.\n(2) Bei der Anwendung des Absatzes 1 sind mehrere geringfügige Beschäftigungen nach Nummer 1 oder Nummer 2 sowie geringfügige Beschäftigungen nach Nummer 1 mit Ausnahme einer geringfügigen Beschäftigung nach Nummer 1 und nicht geringfügige Beschäftigungen zusammenzurechnen. Eine geringfügige Beschäftigung liegt nicht mehr vor, sobald die Voraussetzungen des Absatzes 1 entfallen. Wird beim Zusammenrechnen nach Satz 1 festgestellt, dass die Voraussetzungen einer geringfügigen Beschäftigung nicht mehr vorliegen, tritt die Versicherungspflicht erst mit dem Tag ein, an dem die Entscheidung über die Versicherungspflicht nach § 37 des Zehnten Buches durch die Einzugsstelle nach § 28i Satz 5 oder einen anderen Träger der Rentenversicherung bekannt gegeben wird. Dies gilt nicht, wenn der Arbeitgeber vorsätzlich oder grob fahrlässig versäumt hat, den Sachverhalt für die versicherungsrechtliche Beurteilung der Beschäftigung aufzuklären.",
+        "raw_sha256": "51043975307e6eef847ebfa5bbd2679f22c21122a58fa81fd2fe95a9823e6043",
+        "reader_sha256": "73502fe514818adb7a95ae9b3195ee83742e3386a4850380f665d5c75fbfe483",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-8-20261024.html",
+      "raw_sha256": "51043975307e6eef847ebfa5bbd2679f22c21122a58fa81fd2fe95a9823e6043",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0807260aa5dcc968.reader.txt",
+      "reader_sha256": "73502fe514818adb7a95ae9b3195ee83742e3386a4850380f665d5c75fbfe483",
+      "actual_read": "Complete prepared quote actually read in payroll wholepair pass (or exact prior actual read bridge); no entire rawbody reading implied."
+    },
+    {
+      "quote": {
+        "id": "UVREPORT",
+        "source": "U532d69a8f1b24ff3",
+        "article": "SGBIV28a(2a)UVannualreport",
+        "url": "https://www.gesetze-im-internet.de/sgb_4/__28a.html",
+        "LF_start": 52,
+        "LF_end": 58,
+        "exact_quote": "(2a) Der Arbeitgeber hat für jeden in einem Kalenderjahr Beschäftigten, der in der Unfallversicherung versichert ist, zum 16. Februar des Folgejahres eine besondere Jahresmeldung zur Unfallversicherung zu erstatten. Diese Meldung enthält über die Angaben nach Absatz 3 Satz 1 Nummer 1 bis 3, 6 und 9 hinaus folgende Angaben: 1.\ndie Unternehmernummer nach § 136a des Siebten Buches;\n2.\ndie Betriebsnummer des zuständigen Unfallversicherungsträgers;\n3.\ndas in der Unfallversicherung beitragspflichtige Arbeitsentgelt in Euro und seine Zuordnung zur jeweilig anzuwendenden Gefahrtarifstelle.\nArbeitgeber, die Mitglied der landwirtschaftlichen Berufsgenossenschaft sind und für deren Beitragsberechnung der Arbeitswert keine Anwendung findet, haben Meldungen nach Satz 2 Nummer 1 bis 3 nicht zu erstatten. Abweichend von Satz 1 ist die Meldung bei Eintritt eines Insolvenzereignisses, bei einer endgültigen Einstellung des Unternehmens oder bei der Beendigung aller Beschäftigungsverhältnisse mit der nächsten Entgeltabrechnung, spätestens innerhalb von sechs Wochen, abzugeben.",
+        "raw_sha256": "a3bf381aee4e11a65cf6bff806f89e888f913e9f679beb459be843b817a21d2a",
+        "reader_sha256": "3e7ece679176f183df8e2550aa77f7deb9e72a7e952505fe668baf918b4f26df",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-28a-20261024.html",
+      "raw_sha256": "a3bf381aee4e11a65cf6bff806f89e888f913e9f679beb459be843b817a21d2a",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U532d69a8f1b24ff3.reader.txt",
+      "reader_sha256": "3e7ece679176f183df8e2550aa77f7deb9e72a7e952505fe668baf918b4f26df",
+      "actual_read": "Complete prepared quote actually read in payroll wholepair pass (or exact prior actual read bridge); no entire rawbody reading implied."
+    },
+    {
+      "quote": {
+        "id": "AVERAGE",
+        "source": "U03b377b39fa3ef3f",
+        "article": "BMFmonthlyFebruary2026 calculation2.9percent,not Gazette notice",
+        "url": "https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-3-sollbericht-2026.html",
+        "LF_start": 293,
+        "LF_end": 293,
+        "exact_quote": "Mit dem Gesetz zur Modernisierung der Gesetzlichen Krankenversicherung (GKV) wurde im Jahr 2004 ein steuerfinanzierter Bundeszuschuss zum Gesundheitsfonds zur pauschalen Abgeltung versicherungsfremder Leistungen in der GKV eingeführt. Im Jahr 2026 beträgt der Bundeszuschuss die seit 2017 jährlich festgeschriebene Höhe von 14,5 Mrd. Euro. Wie bereits im Jahr 2025 wird dem Gesundheitsfonds zusätzlich ein überjähriges zinsloses Darlehen in Höhe von 2,3 Mrd. Euro gewährt, das in den Jahren 2029 bis 2033 in jährlichen Raten zurückzuzahlen ist. Darüber hinaus ist das dem Gesundheitsfonds im Jahr 2023 gewährte überjährige zinslose Darlehen in Höhe von 1,0 Mrd. Euro abweichend vom Haushaltsgesetz 2023 nunmehr erst bis spätestens Ende 2033 zurückzuzahlen. Nach Berechnungen des GKV-Schätzerkreises (Stand der Schätzung: 15. Oktober 2025) dürften im Jahr 2026 die Ausgaben der GKV stärker steigen als die beitragspflichtigen Einnahmen der Krankenkassenmitglieder: So rechnen das Bundesministerium für Gesundheit und das Bundesamt für Soziale Sicherung für das Jahr 2026 mit einem Ausgabenwachstum von 6,5 Prozent (2025: +7,8 Prozent; 2024: +7,1 Prozent), dem ein Anstieg der beitragspflichtigen Einnahmen von 4,0 Prozent (2025: +5,4 Prozent; 2024: +5,6 Prozent) gegenübersteht. Aus den Schätzergebnissen ergibt sich für das Jahr 2026 rechnerisch ein durchschnittlicher Zusatzbeitragssatz von 2,9 Prozent. Dies entspricht einem Anstieg von 0,4 Prozentpunkten gegenüber dem für das Jahr 2025 bekannt gegebenen durchschnittlichen Zusatzbeitragssatz. Zur Stabilisierung der Beitragssätze in der GKV ab dem Jahr 2027 soll die FinanzKommission Gesundheit bis Ende März 2026 Vorschläge vorlegen. Bis Ende 2026 sollen Strukturreformen für eine mittel- bis langfristige Stabilisierung der GKV-Finanzen erarbeitet werden.",
+        "raw_sha256": "5418015841e63fc1b1a3dc1099c5ea2e40cf7f6d6a617d0bc8b89a47703ac87e",
+        "reader_sha256": "64adee01b43648a74f735ace5c3d4aa08dc051806f0c4fd9cbf75a97c9618ab4",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U03b377b39fa3ef3f.body",
+      "raw_sha256": "5418015841e63fc1b1a3dc1099c5ea2e40cf7f6d6a617d0bc8b89a47703ac87e",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U03b377b39fa3ef3f.reader.txt",
+      "reader_sha256": "64adee01b43648a74f735ace5c3d4aa08dc051806f0c4fd9cbf75a97c9618ab4",
+      "actual_read": "Complete prepared quote actually read in payroll wholepair pass (or exact prior actual read bridge); no entire rawbody reading implied."
+    },
+    {
+      "quote": {
+        "id": "CEILING",
+        "source": "U8a0841550441ebc7",
+        "article": "SVBezGrV2026 §2 general/specialthreshold",
+        "url": "https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3",
+        "LF_start": 37,
+        "LF_end": 41,
+        "exact_quote": "                         Jahresarbeitsentgeltgrenzen in der Krankenversicherung\n  (1) Die Jahresarbeitsentgeltgrenze nach § 6 Absatz 6 des Fünften Buches Sozialgesetzbuch wird für das\nJahr 2026 auf 77 400 Euro festgesetzt. Umgerechnet auf den Monat ergeben sich 6 450 Euro.\n  (2) Die Jahresarbeitsentgeltgrenze nach § 6 Absatz 7 des Fünften Buches Sozialgesetzbuch wird für das\nJahr 2026 auf 69 750 Euro festgesetzt. Umgerechnet auf den Monat ergeben sich 5 812,50 Euro.",
+        "raw_sha256": "de050ad62d30ef31b580ae227ace25e27c4ed865658fb35c0ca5ddd88683957d",
+        "reader_sha256": "509eb3d4b27d44f581a3ce35bc74ce334784ca007befc9b48f8785eb0eb0c69d",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8a0841550441ebc7.body",
+      "raw_sha256": "de050ad62d30ef31b580ae227ace25e27c4ed865658fb35c0ca5ddd88683957d",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8a0841550441ebc7.reader.txt",
+      "reader_sha256": "509eb3d4b27d44f581a3ce35bc74ce334784ca007befc9b48f8785eb0eb0c69d",
+      "actual_read": "Complete prepared quote actually read in payroll wholepair pass (or exact prior actual read bridge); no entire rawbody reading implied."
+    },
+    {
+      "quote": {
+        "id": "AAGBASE",
+        "source": "U63ee29b924bb4a80",
+        "article": "AAG7(2)base/exclusions",
+        "url": "https://www.gesetze-im-internet.de/aufag/__7.html",
+        "LF_start": 8,
+        "LF_end": 8,
+        "exact_quote": "(2) Die Umlagen sind jeweils in einem Prozentsatz des Entgelts (Umlagesatz) festzusetzen, nach dem die Beiträge zur gesetzlichen Rentenversicherung für die im Betrieb beschäftigten Arbeitnehmer, Arbeitnehmerinnen und Auszubildenden bemessen werden oder bei Versicherungspflicht in der gesetzlichen Rentenversicherung zu bemessen wären. Bei der Berechnung der Umlage für Aufwendungen nach § 1 Abs. 1 sind Entgelte von Arbeitnehmern und Arbeitnehmerinnen, deren Beschäftigungsverhältnis bei einem Arbeitgeber nicht länger als vier Wochen besteht und bei denen wegen der Art des Beschäftigungsverhältnisses auf Grund des § 3 Abs. 3 des Entgeltfortzahlungsgesetzes kein Anspruch auf Entgeltfortzahlung im Krankheitsfall entstehen kann, sowie einmalig gezahlte Arbeitsentgelte nach § 23a des Vierten Buches Sozialgesetzbuch nicht zu berücksichtigen. Für die Zeit des Bezugs von Kurzarbeitergeld bemessen sich die Umlagen nach dem tatsächlich erzielten Arbeitsentgelt bis zur Beitragsbemessungsgrenze in der gesetzlichen Rentenversicherung.",
+        "raw_sha256": "07f8d41af7094275ff538c5ca581c13b4bd4f69fbb007f0d521d909d0d609e7a",
+        "reader_sha256": "c33b997291c755d3488965aa9f766dd3f16c4a5adcb16d6eb689693b61d42857",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U63ee29b924bb4a80.body",
+      "raw_sha256": "07f8d41af7094275ff538c5ca581c13b4bd4f69fbb007f0d521d909d0d609e7a",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U63ee29b924bb4a80.reader.txt",
+      "reader_sha256": "c33b997291c755d3488965aa9f766dd3f16c4a5adcb16d6eb689693b61d42857",
+      "actual_read": "Complete prepared quote actually read in payroll wholepair pass (or exact prior actual read bridge); no entire rawbody reading implied."
+    },
+    {
+      "quote": {
+        "id": "MINEXCEPT",
+        "source": "U97ef8fb6daf4c91f",
+        "article": "MiLoG22 exemptions",
+        "url": "https://www.gesetze-im-internet.de/milog/__22.html",
+        "LF_start": 7,
+        "LF_end": 18,
+        "exact_quote": "(1) Dieses Gesetz gilt für Arbeitnehmerinnen und Arbeitnehmer. Praktikantinnen und Praktikanten im Sinne des § 26 des Berufsbildungsgesetzes gelten als Arbeitnehmerinnen und Arbeitnehmer im Sinne dieses Gesetzes, es sei denn, dass sie 1.\nein Praktikum verpflichtend auf Grund einer schulrechtlichen Bestimmung, einer Ausbildungsordnung, einer hochschulrechtlichen Bestimmung oder im Rahmen einer Ausbildung an einer gesetzlich geregelten Berufsakademie leisten,\n2.\nein Praktikum von bis zu drei Monaten zur Orientierung für eine Berufsausbildung oder für die Aufnahme eines Studiums leisten,\n3.\nein Praktikum von bis zu drei Monaten begleitend zu einer Berufs- oder Hochschulausbildung leisten, wenn nicht zuvor ein solches Praktikumsverhältnis mit demselben Ausbildenden bestanden hat, oder\n4.\nan einer Einstiegsqualifizierung nach § 54a des Dritten Buches Sozialgesetzbuch oder an einer Berufsausbildungsvorbereitung nach §§ 68 bis 70 des Berufsbildungsgesetzes teilnehmen.\nPraktikantin oder Praktikant ist unabhängig von der Bezeichnung des Rechtsverhältnisses, wer sich nach der tatsächlichen Ausgestaltung und Durchführung des Vertragsverhältnisses für eine begrenzte Dauer zum Erwerb praktischer Kenntnisse und Erfahrungen einer bestimmten betrieblichen Tätigkeit zur Vorbereitung auf eine berufliche Tätigkeit unterzieht, ohne dass es sich dabei um eine Berufsausbildung im Sinne des Berufsbildungsgesetzes oder um eine damit vergleichbare praktische Ausbildung handelt.\n(2) Personen im Sinne von § 2 Absatz 1 und 2 des Jugendarbeitsschutzgesetzes ohne abgeschlossene Berufsausbildung gelten nicht als Arbeitnehmerinnen und Arbeitnehmer im Sinne dieses Gesetzes.\n(3) Von diesem Gesetz nicht geregelt wird die Vergütung von zu ihrer Berufsausbildung Beschäftigten sowie ehrenamtlich Tätigen.\n(4) Für Arbeitsverhältnisse von Arbeitnehmerinnen und Arbeitnehmern, die unmittelbar vor Beginn der Beschäftigung langzeitarbeitslos im Sinne des § 18 Absatz 1 des Dritten Buches Sozialgesetzbuch waren, gilt der Mindestlohn in den ersten sechs Monaten der Beschäftigung nicht. Die Bundesregierung hat den gesetzgebenden Körperschaften zum 1. Juni 2016 darüber zu berichten, inwieweit die Regelung nach Satz 1 die Wiedereingliederung von Langzeitarbeitslosen in den Arbeitsmarkt gefördert hat, und eine Einschätzung darüber abzugeben, ob diese Regelung fortbestehen soll.",
+        "raw_sha256": "36337bd18a86b17478418ef61523e6d51cd07f3edad32a08aba09b0da0f6ccd8",
+        "reader_sha256": "2d4883588751209f0e1d53053b25f39f2f825159a40da236305529ffc53c4417",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/milog-22-20261024.html",
+      "raw_sha256": "36337bd18a86b17478418ef61523e6d51cd07f3edad32a08aba09b0da0f6ccd8",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U97ef8fb6daf4c91f.reader.txt",
+      "reader_sha256": "2d4883588751209f0e1d53053b25f39f2f825159a40da236305529ffc53c4417",
+      "actual_read": "Complete prepared quote actually read in payroll wholepair pass (or exact prior actual read bridge); no entire rawbody reading implied."
+    },
+    {
+      "quote": {
+        "id": "NIGHT",
+        "source": "U16158a9e768da6a1",
+        "article": "EStG3b allordinarysurchargegates",
+        "url": "https://www.gesetze-im-internet.de/estg/__3b.html",
+        "LF_start": 7,
+        "LF_end": 20,
+        "exact_quote": "(1) Steuerfrei sind Zuschläge, die für tatsächlich geleistete Sonntags-, Feiertags- oder Nachtarbeit neben dem Grundlohn gezahlt werden, soweit sie 1.\nfür Nachtarbeit 25 Prozent,\n2.\nvorbehaltlich der Nummern 3 und 4 für Sonntagsarbeit 50 Prozent,\n3.\nvorbehaltlich der Nummer 4 für Arbeit am 31. Dezember ab 14 Uhr und an den gesetzlichen Feiertagen 125 Prozent,\n4.\nfür Arbeit am 24. Dezember ab 14 Uhr, am 25. und 26. Dezember sowie am 1. Mai 150 Prozent\ndes Grundlohns nicht übersteigen.\n(2) 1Grundlohn ist der laufende Arbeitslohn, der dem Arbeitnehmer bei der für ihn maßgebenden regelmäßigen Arbeitszeit für den jeweiligen Lohnzahlungszeitraum zusteht; er ist in einen Stundenlohn umzurechnen und mit höchstens 50 Euro anzusetzen. 2Nachtarbeit ist die Arbeit in der Zeit von 20 Uhr bis 6 Uhr. 3Sonntagsarbeit und Feiertagsarbeit ist die Arbeit in der Zeit von 0 Uhr bis 24 Uhr des jeweiligen Tages. 4Die gesetzlichen Feiertage werden durch die am Ort der Arbeitsstätte geltenden Vorschriften bestimmt.\n(3) Wenn die Nachtarbeit vor 0 Uhr aufgenommen wird, gilt abweichend von den Absätzen 1 und 2 Folgendes: 1.\nFür Nachtarbeit in der Zeit von 0 Uhr bis 4 Uhr erhöht sich der Zuschlagssatz auf 40 Prozent,\n2.\nals Sonntagsarbeit und Feiertagsarbeit gilt auch die Arbeit in der Zeit von 0 Uhr bis 4 Uhr des auf den Sonntag oder Feiertag folgenden Tages.",
+        "raw_sha256": "8f754d91583ea0301fb42b9511c569a7d126c5f10e78a40eeec3c14ae6b070ae",
+        "reader_sha256": "12b5e202cddab01ccad626f641de3f22526b50634dfbdff797c1639d09d440ff",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-3b-20261024.html",
+      "raw_sha256": "8f754d91583ea0301fb42b9511c569a7d126c5f10e78a40eeec3c14ae6b070ae",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U16158a9e768da6a1.reader.txt",
+      "reader_sha256": "12b5e202cddab01ccad626f641de3f22526b50634dfbdff797c1639d09d440ff",
+      "actual_read": "Complete prepared quote actually read in payroll wholepair pass (or exact prior actual read bridge); no entire rawbody reading implied."
+    },
+    {
+      "quote": {
+        "id": "NIGHTSV",
+        "source": "Ufecb1f1e1eb6a0e8",
+        "article": "SvEV1(1)no1 taxvsSV25cap/Aktivrenteexclusion",
+        "url": "https://www.gesetze-im-internet.de/svev/__1.html",
+        "LF_start": 7,
+        "LF_end": 7,
+        "exact_quote": "einmalige Einnahmen, laufende Zulagen, Zuschläge, Zuschüsse sowie ähnliche Einnahmen, die zusätzlich zu Löhnen oder Gehältern gewährt werden, soweit sie lohnsteuerfrei sind; dies gilt nicht für Sonntags-, Feiertags- und Nachtarbeitszuschläge, soweit das Entgelt, auf dem sie berechnet werden, mehr als 25 Euro für jede Stunde beträgt, nicht für Vermögensbeteiligungen nach § 19a Absatz 1 Satz 1 des Einkommensteuergesetzes und nicht für Einnahmen, die allein nach § 3 Nummer 21 des Einkommensteuergesetzes steuerfrei sind,",
+        "raw_sha256": "dd09050791c50af13998ddb3ce6b186eb33f00e14a9a61b03bb1c3a6721171ad",
+        "reader_sha256": "a5316e3b7b259ce366fc814c3304c278923e12e3fa7e2dbc6b21485c48029e8c",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/svev-1-20261024.html",
+      "raw_sha256": "dd09050791c50af13998ddb3ce6b186eb33f00e14a9a61b03bb1c3a6721171ad",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ufecb1f1e1eb6a0e8.reader.txt",
+      "reader_sha256": "a5316e3b7b259ce366fc814c3304c278923e12e3fa7e2dbc6b21485c48029e8c",
+      "actual_read": "Complete prepared quote actually read in payroll wholepair pass (or exact prior actual read bridge); no entire rawbody reading implied."
+    },
+    {
+      "quote": {
+        "id": "SICK",
+        "source": "Ud81635a0674aff75",
+        "article": "EntgFG3(1)/(3)",
+        "url": "https://www.gesetze-im-internet.de/entgfg/__3.html",
+        "LF_start": 7,
+        "LF_end": 12,
+        "exact_quote": "(1) Wird ein Arbeitnehmer durch Arbeitsunfähigkeit infolge Krankheit an seiner Arbeitsleistung verhindert, ohne daß ihn ein Verschulden trifft, so hat er Anspruch auf Entgeltfortzahlung im Krankheitsfall durch den Arbeitgeber für die Zeit der Arbeitsunfähigkeit bis zur Dauer von sechs Wochen. Wird der Arbeitnehmer infolge derselben Krankheit erneut arbeitsunfähig, so verliert er wegen der erneuten Arbeitsunfähigkeit den Anspruch nach Satz 1 für einen weiteren Zeitraum von höchstens sechs Wochen nicht, wenn 1.\ner vor der erneuten Arbeitsunfähigkeit mindestens sechs Monate nicht infolge derselben Krankheit arbeitsunfähig war oder\n2.\nseit Beginn der ersten Arbeitsunfähigkeit infolge derselben Krankheit eine Frist von zwölf Monaten abgelaufen ist.\n(2) Als unverschuldete Arbeitsunfähigkeit im Sinne des Absatzes 1 gilt auch eine Arbeitsverhinderung, die infolge einer nicht rechtswidrigen Sterilisation oder eines nicht rechtswidrigen Abbruchs der Schwangerschaft eintritt. Dasselbe gilt für einen Abbruch der Schwangerschaft, wenn die Schwangerschaft innerhalb von zwölf Wochen nach der Empfängnis durch einen Arzt abgebrochen wird, die schwangere Frau den Abbruch verlangt und dem Arzt durch eine Bescheinigung nachgewiesen hat, daß sie sich mindestens drei Tage vor dem Eingriff von einer anerkannten Beratungsstelle hat beraten lassen.\n(3) Der Anspruch nach Absatz 1 entsteht nach vierwöchiger ununterbrochener Dauer des Arbeitsverhältnisses.",
+        "raw_sha256": "2e15c7293642f9d1b827168a0c96e440694e13144b7b21ecb157765b3dc8a0aa",
+        "reader_sha256": "7e34c0843d7cf47d26dc1f1e2a58d956abd3b75429c87cbee56420db023e05b7",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/entgfg-3-20261024.html",
+      "raw_sha256": "2e15c7293642f9d1b827168a0c96e440694e13144b7b21ecb157765b3dc8a0aa",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud81635a0674aff75.reader.txt",
+      "reader_sha256": "7e34c0843d7cf47d26dc1f1e2a58d956abd3b75429c87cbee56420db023e05b7",
+      "actual_read": "Complete prepared quote actually read in payroll wholepair pass (or exact prior actual read bridge); no entire rawbody reading implied."
+    },
+    {
+      "quote": {
+        "id": "SICKPAY",
+        "source": "U98e65d062231d2ca",
+        "article": "EntgFG4(1)/(1a)",
+        "url": "https://www.gesetze-im-internet.de/entgfg/__4.html",
+        "LF_start": 7,
+        "LF_end": 8,
+        "exact_quote": "(1) Für den in § 3 Abs. 1 oder in § 3a Absatz 1 bezeichneten Zeitraum ist dem Arbeitnehmer das ihm bei der für ihn maßgebenden regelmäßigen Arbeitszeit zustehende Arbeitsentgelt fortzuzahlen.\n(1a) Zum Arbeitsentgelt nach Absatz 1 gehören nicht das zusätzlich für Überstunden gezahlte Arbeitsentgelt und Leistungen für Aufwendungen des Arbeitnehmers, soweit der Anspruch auf sie im Falle der Arbeitsfähigkeit davon abhängig ist, daß dem Arbeitnehmer entsprechende Aufwendungen tatsächlich entstanden sind, und dem Arbeitnehmer solche Aufwendungen während der Arbeitsunfähigkeit nicht entstehen. Erhält der Arbeitnehmer eine auf das Ergebnis der Arbeit abgestellte Vergütung, so ist der von dem Arbeitnehmer in der für ihn maßgebenden regelmäßigen Arbeitszeit erzielbare Durchschnittsverdienst der Berechnung zugrunde zu legen.",
+        "raw_sha256": "8e02e53b25fa39781b884c1fbe5b7c8c13644d23570c5a91d8e5494a9b48d084",
+        "reader_sha256": "52cad9a603308a0b447e89a5863a8e3ed45895e2b9c86eacb724320cedba85af",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/entgfg-4-20261024.html",
+      "raw_sha256": "8e02e53b25fa39781b884c1fbe5b7c8c13644d23570c5a91d8e5494a9b48d084",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98e65d062231d2ca.reader.txt",
+      "reader_sha256": "52cad9a603308a0b447e89a5863a8e3ed45895e2b9c86eacb724320cedba85af",
+      "actual_read": "Complete prepared quote actually read in payroll wholepair pass (or exact prior actual read bridge); no entire rawbody reading implied."
+    },
+    {
+      "quote": {
+        "id": "PAPVALUES",
+        "source": "U04c9d8868081bd75",
+        "article": "OfficialPAP2026 PAPVALUES",
+        "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2",
+        "LF_start": 64,
+        "LF_end": 94,
+        "exact_quote": "und der Freigrenze beim Solidaritätszuschlag (Anhebung auf 20.350 Euro) durch das\nSteuerfortentwicklungsgesetz.\n\nBei der Aufstellung wurde im Übrigen berücksichtigt, dass\n\n-      in der gesetzlichen Krankenversicherung und sozialen Pflegeversicherung die\n       Beitragsbemessungsgrenze 69.750 Euro (2025: 66.150 Euro) beträgt,\n-      in der gesetzlichen Krankenversicherung der ermäßigte Beitragssatz (§ 243 SGB V)\n       weiterhin 14,0 % beträgt,\n-      in der sozialen Pflegeversicherung der bundeseinheitliche Beitragssatz weiterhin\n       3,60 %, der Zuschlag für Kinderlose weiterhin 0,6 % und die Beitragsabschläge für\n       zweite und weitere Kinder bis zum 5. Kind jeweils weiterhin 0,25 % betragen,\n-      in der allgemeinen Rentenversicherung und Arbeitslosenversicherung die allgemeine\n       Beitragsbemessungsgrenze (BBG) 101.400 Euro (2025: 96.600 Euro) beträgt,\n-      in der Arbeitslosenversicherung der Beitragssatz 2,6 % beträgt,\n-      in der allgemeinen Rentenversicherung der Beitragssatz weiterhin 18,6 % beträgt.\n\n\n2.     Erläuterungen\n\n2.1    Allgemeines\n\nEs sind tägliche, wöchentliche, monatliche und jährliche Lohnzahlungszeiträume\nberücksichtigt. Die Aufteilung von Jahresbeträgen auf unterjährige Lohnzahlungszeiträume\nsowie die Hochrechnung von Beträgen für unterjährige Lohnzahlungszeiträume auf\nJahresbeträge wird entsprechend den in § 39b Absatz 2 Satz 9 EStG angegebenen\nBruchteilen vorgenommen. Die Berechnung abweichender Lohnzahlungszeiträume - z. B.\ndrei Tage - ist nicht möglich. In diesen Fällen ist die Steuer für den nächstkleineren Zeitraum\nzu ermitteln, hier z. B. Berechnung für alle drei Tage einzeln als Tageslohnsteuer. Bruchteile\neines Cent werden entsprechend den Angaben im Programmablaufplan auf ganze Cent\naufgerundet bzw. bleiben außer Ansatz.",
+        "raw_sha256": "5da38acd544868ddcb0bc7f43030bd7d6ee9aa455dff0f42ad59732634e33a48",
+        "reader_sha256": "104f46ddb0f117a903d18079766f1c6ffffeb872e5fa4a26319b33c48cee538e",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/pap-2026-anlage1-20261024.pdf",
+      "raw_sha256": "5da38acd544868ddcb0bc7f43030bd7d6ee9aa455dff0f42ad59732634e33a48",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U04c9d8868081bd75.reader.txt",
+      "reader_sha256": "104f46ddb0f117a903d18079766f1c6ffffeb872e5fa4a26319b33c48cee538e",
+      "actual_read": "Complete prepared quote actually read in payroll wholepair pass (or exact prior actual read bridge); no entire rawbody reading implied."
+    },
+    {
+      "source": {
+        "url": "https://www.bundesgesundheitsministerium.de/beitraege/seite",
+        "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BMG-health-2026.html",
+        "raw_sha256": "ad135633759ad3aea1ad2fc36f4689e90bca5905e5d248a6f2cbb521caf92ed4",
+        "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BMG-health-2026.reader.txt",
+        "reader_sha256": "e0d3a84fc7114a8463fee70d840ebe610f7a5cd7e598b6e2a965870cf0cb1d39",
+        "read_date": "2026-10-29",
+        "kind": "official ministry administrative guidance; not legislative text",
+        "extraction": "HTMLParser, script/style omitted, whitespace joined within block; native LF",
+        "id": "R03.BMG-health-2026",
+        "article": "BMG: published 2026 health/care contribution-ceiling guidance",
+        "native_LF": [
+          379,
+          380
+        ],
+        "exact_quote": "Beitragshöhe\nSowohl bei pflichtversicherten als auch bei freiwillig versicherten Mitgliedern werden die Einkünfte insgesamt höchstens bis zur Beitragsbemessungsgrenze von 5.812,50 Euro im Monat bzw. 69.750 Euro im Jahr (Stand: 2026) berücksichtigt.",
+        "read_on": "2026-10-29",
+        "qualification": "Explicit official administrative 2026 application, not a statutory quotation. Supports the existing €69,750 annual / €5,812.50 monthly contribution ceiling independently of a bare special-JAEG reference."
+      },
+      "additional_actual_selected_native_LF": [
+        375,
+        427
+      ],
+      "quote_native391": "Für einige Personengruppen gilt der durchschnittliche Zusatzbeitragssatz, zum Beispiel für Geringverdienende, Auszubildende (Arbeitsentgelt bis 325 Euro) sowie Auszubildende in Einrichtungen der Jugendhilfe und Bezieherinnen und Bezieher von Bürgergeld. Dieser Zusatzbeitragssatz wird vom Bundesministerium für Gesundheit nach Auswertung der Ergebnisse des Schätzerkreises bekanntgegeben. Dem Schätzerkreis gehören Fachleute des Bundesministeriums für Gesundheit, des Bundesamtes für Soziale Sicherung sowie des GKV-Spitzenverbandes an. Für das Jahr 2026 beträgt der durchschnittliche Zusatzbeitragssatz 2,9 Prozent.",
+      "actual_read": "Full375–427 actually read now, including explicit2026rate2.9 and table. Earlier R03receipt covered ceiling379–380 only; not misrepresented as earlier wholepage read."
+    }
+  ],
+  "new_actual_observation": "new-primary-checks/payroll-SGBX26-web-observation.json",
+  "PAP_visual": "Pages27/29/30 actually viewed in new-primary-checks/payroll-PAP-visual; confirms round-upVSP and floorMST5/UP5, not findings against those correct formulas."
+}

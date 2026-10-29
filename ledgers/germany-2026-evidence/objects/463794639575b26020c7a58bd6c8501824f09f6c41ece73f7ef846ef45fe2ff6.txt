@@ -1,0 +1,89 @@
+BZSt - Abzugsteuern
+Hinweis zur Verwendung von Cookies
+Wir möchten zur Verbesserung unserer Website das Nutzungsverhalten analysieren und Zugriffsstatistiken erstellen. Dafür werden mit der Webanalyse-Software Matomo statistische Informationen erfasst und ausgewertet. Ausschließlich mit Ihrer Einwilligung speichern wir dafür ein Statistik-Cookie auf Ihrem Endgerät und greifen auf für diesen Zweck erforderliche Geräteinformationen Ihres Endgerätes zu. Zu keiner Zeit werden diese Daten mit persönlichen Daten in Verbindung gebracht oder an Dritte weitergegeben. Weitere Informationen finden Sie in unserer Datenschutzerklärung. Dort ist auch jederzeit der Widerruf Ihrer Einwilligung möglich.
+Einverstanden
+Springe direkt zu:
+Inhalt
+Hauptmenü
+Suche
+BZSt Online.Portal
+Kontakt
+English
+Leichte Sprache
+Gebärdensprache
+Bundeszentralamt für Steuern (Link zur Startseite)
+Dieses Dokument bestimmt, ob ein Zusatzlogo ausgegeben wird.
+Ein im Feld Wert eingehängtes Logo wird als Zusatzlogo ausgegeben.
+Ist das Feld Wert leer, so wird kein Zusatzlogo ausgegeben.
+Ablageoptionen:
+Wird dieses Dokument unterhalb des globalen Verzeichnisses "_config" abgelegt, so wird das Zusatzlogo auf allen Seiten ausgegeben.
+Um das Logo nur für bestimmte Bereiche auszugeben, kann das Konfigurationsdokument zusätzlich pfadabhängig abgelegt werden.
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Karriere
+Website durchsuchen
+Suchtext
+Suchtext
+Startseite
+Unternehmen
+Abzugsteuern
+Vorlesen
+Abzugsteuern
+Inländische Einkünfte von ausländischen Künstlern, Sportlern, Lizenzgebern und Aufsichtsräten im Sinne von § 49 EStG unterliegen der beschränkten Steuerpflicht. Die Besteuerung dieser Einkünfte erfolgt in einem besonderen Verfahren, dem Steuerabzugsverfahren nach § 50a EStG. In diesem Verfahren sind die zumeist inländischen Schuldner der Vergütungen dazu verpflichtet, von ihren Zahlungen an die ausländischen Vergütungsgläubiger Steuern einzubehalten und an das BZSt abzuführen.
+Mit Wirkung ab dem 1. Januar 2022 erweitert § 10 des Steueroasenabwehrgesetzes (StAbwG) die beschränkt steuerpflichtigen Einkünfte, die einem Steuerabzug unterliegen. Soweit Vergütungsgläubiger, die in einem nicht kooperativen Steuerhoheitsgebiet ansässig sind, Vergütungen aus Finanzierungsbeziehungen, Versicherungs- oder Rückversicherungsleistungen, der Erbringung von Dienstleistungen sowie dem Handel mit Waren oder Dienstleistungen erzielen, unterliegen diese Einkünfte der beschränkten Steuerpflicht. Die Besteuerung erfolgt ebenfalls über ein Abzugsverfahren. Der inländische Vergütungsschuldner hat analog zu § 50a EStG die Steuern einzubehalten und an das BZSt abzuführen.
+Neues Formular für die Anmeldung des Steuerabzugs nach § 50a EStG
+Derzeit befindet sich das BZSt in einem Umstellungsprozess des alten BZSt online.portal "Mein BOP" auf das neue BZSt online.portal.
+Im Wege dieser Umstellung wird für das Steuerabzugsverfahren nach § 50a EStG im BZSt ein neues Formular für die Anmeldung des Steuerabzugs nach § 50a EStG zum 7. Dezember 2026 künftig ausschließlich im neuen BZSt online.portal (BOP) zur Verfügung stehen. Bezüglich der Nutzung des neuen BOP können Sie Ihre bestehenden Zertifikate zur Anmeldung weiterhin verwenden.
+Damit die eventuell erforderlichen Umstellungsarbeiten zeitnah begonnen werden können, finden Sie weitere Informationen zur Formularumstellung sowie die aktuelle Version der CSV-Vorlage zur Angabe von Vergütungsgläubigerdaten im neuen Formular auf der Internetseite des BZSt unter Abzugsteuern > Abzugsteuern nach § 50a EStG > Elektronische Datenübermittlung.
+Bisherige CSV-Vorlagen können nach der Formularumstellung zum 7. Dezember 2026 nicht weiterverwendet werden, eine Verwendung des neuen Formulars inklusive neuer CSV-Vorlagen ist zwingend notwendig.
+Themenbereiche
+Überblick Steuerabzugs- und Entlastungsverfahren
+Erhalten Sie einen Überblick über das Verfahren rund um die Abzugsteuern nach § 50a EStG und die Entlastung von Abzugsteuern gemäß § 50c Abs. 2 Satz 1 Nr. 1 und Abs. 3 EStG.
+Abzugsteuern nach § 50a EStG
+Dem Steuerabzugsverfahren nach § 50a EStG unterliegen bestimmte beschränkt steuerpflichtige Einkünfte ausländischer Vergütungsgläubiger (§ 49 EStG). Die Schuldner der gezahlten Vergütungen sind dazu …
+Abzugsteuerentlastung
+Inländische Einkünfte von ausländischen Künstlern, Sportlern, Lizenzgebern und Aufsichtsräten im Sinne von § 49 des Einkommensteuergesetzes (EStG) unterliegen der beschränkten Steuerpflicht. Die …
+Registerfälle
+Einkünfte aus der befristeten Überlassung von Rechten, die in ein inländisches Register eingetragen sind, unterliegen der beschränkten Steuerpflicht nach § 49 des Einkommensteuergesetzes (EStG), auch …
+Freistellungsoption
+Die neue Freistellung nach § 50c Abs. 2 Satz 1 Nr. 2 EStG bietet in Fällen geringer steuerlicher Bedeutung, die Möglichkeit, die Abzugsteuer nach § 50a Einkommensteuergesetz (EStG) zu ermäßigen oder …
+Abzugsteuern nach § 10 StAbwG
+Dem Steuerabzugsverfahren nach § 10 StAbwG unterliegen folgende über § 49 EStG hinaus beschränkt steuerpflichtigen Einkünfte ausländischer Vergütungsgläubiger, wenn diese in einem nicht kooperativen …
+Kontakt
+Bundeszentralamt für Steuern
+Referat St I B 5 - Abzugsteuern nach 50, 50a EStG
+An der Küppe 1
+53225 Bonn
+Telefon:
++49 228 406-1200
+Fax: +49 228 406-3200
+Zuständigkeitsbereich:
+Abzugsteuern
+Nachricht schreiben
+Seite empfehlen
+Unternavigation aller Website-Bereiche
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Themen A-Z
+Karriere
+Presse
+Newsletter
+Haben Sie Fragen?
+Anrufen
+Nachricht schreiben
+Zentrale Behördennummer
+Für alle Fragen zu Behörden in Deutschland
+Montag bis Freitag 08:00-18:00 Uhr
+115
+Mehr erfahren
+© Bundeszentralamt für Steuern
+Inhaltsverzeichnis
+Erklärung zur Barrierefreiheit
+Impressum
+Datenschutz

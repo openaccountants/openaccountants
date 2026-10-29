@@ -1,0 +1,60 @@
+from pathlib import Path
+import json,hashlib,re,difflib,copy
+O=Path('/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27');W=O/'germany-DE-R109-R111-rental-writer-successor-2026-10-29';P=O/'germany-root-rental-ledger-2026-10-29';R=Path('/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany');p=R/'skills/international/germany/de-rental-income.md';H=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();dump=lambda p,x:p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n');W.mkdir(exist_ok=True);(W/'before').mkdir(exist_ok=True);(W/'after').mkdir(exist_ok=True);(W/'ledgers').mkdir(exist_ok=True);(W/'support').mkdir(exist_ok=True)
+assert H(p)=='7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e';before=p.read_text();(W/'before'/p.name).write_bytes(p.read_bytes());text=before;ops=[]
+(W/'options-and-selection.md').write_text('''# DE-R109–111 sourced options, before editing
+
+A selected under standing authority. R109: publish the ELSTER2025 no-forecast-loss branch, explicitly including zero, as a dated administrative method applied to the unchanged2026 statutory band. R110: supply own7a(9)/BMF66 residual-value formula and the January400000 fixture, with nonstandard historical balances and display rounding clearly distinguished. R111: limit own/free-use expense exclusion to attributable private parts and supply actual direct/shared cost allocation from ELSTER. Sources and full original-language quotes are in own-actual-read-quotes.json.
+
+B: retain positive/negative wording but expressly reserve zero as old-BMF versus later administrative wording; state the residual formula without numeric example; narrow the owner-flat prohibition but hand mixed-unit allocation off. Both retain original cases. A is recommended because the retained actual sources supply the ordinary positive method. No new source search or2026 form-layout assertion.
+''')
+ids={q['source_id']:q for q in json.loads((P/'source-identities.json').read_text())};own={}
+for q in json.loads((O/'germany-ledger-independent-review-2026-10-29/DE-R109-R111-selected-source-read-ledger.json').read_text())['sources']:
+ i=ids[q['source_id']];a,b=q['reader_native_LF'];lit='\n'.join(Path(i['reader_path']).read_text().split('\n')[a-1:b]);assert q['exact_original_language_quote']in lit;assert H(Path(i['path']))==q['source_sha256'];assert H(Path(i['reader_path']))==q['reader_sha256'];own['R109-111.'+q['id']]={**q,'raw_path':i['path'],'raw_sha256':q['source_sha256'],'reader_path':i['reader_path'],'native_LF':[a,b],'exact_quote':q['exact_original_language_quote'],'read_on':'2026-10-29','actual_read_scope':'Own selected nativeLF read in full after C handover; no whole-body reading claim.'}
+dump(W/'own-actual-read-quotes.json',own)
+def op(a,b):
+ global text
+ assert text.count(a)==1,(a,text.count(a));ops.append({'before':a,'after':b});text=text.replace(a,b,1)
+op('version: 1.6','version: 1.7')
+op('Never for a flat the client lives in or lets free.','Costs attributable to the owner’s private use or free-use parts are not rental expenses. Letting individual rooms within the owner’s home can generate deductible rental costs; allocate those costs to the actual let part.')
+op('reserve payments until spent; own-use or free flats; the unpaid part of a cheap let;','reserve payments until spent; costs attributable to own-use or free-use parts; the unpaid part of a cheap let;')
+a='- **Not deductible**:';ln=next(l for l in text.split('\n')if l.startswith(a))
+op(ln,ln+'\n\nFor mixed private and rental use, first attribute identifiable costs directly. Allocate shared costs by a justified, documented measure, such as the actual usable-floor-area ratio, and explain a first allocation (published 2025 ELSTER instructions, applied here to the unchanged rental-expense principle, not claimed 2026 form lines). For example, an identifiable rented-room repair of EUR 1,000 plus a shared roof repair of EUR 10,000 at an independently supported 20% rental share gives EUR 3,000 rental costs before any other applicable limitation; private-only costs stay excluded. The 20% is a stipulated allocation fact, not a universal prescribed ratio.')
+op('- **After four years**, AfA runs on the remaining value ([§ 7a(9) EStG](https://www.gesetze-im-internet.de/estg/__7a.html); BMF letter, para. 66). Refer the computation.','- **After the four-year benefit period**, regular AfA uses the remaining value and the § 7(4) percentage determined from the remaining mathematical useful life; for § 7(5a), apply its 5% rate to that remaining value ([§ 7a(9) EStG](https://www.gesetze-im-internet.de/estg/__7a.html); BMF letter, para. 66). The old-window 2026 sunset does not shorten that four-year period: the 2024 buyer above still uses unchanged regular AfA in 2027 and changes to § 7a(9) in 2028 (BMF para. 16). Establish the actual historical normal/special deductions and useful-life branch before computing; do not substitute a guessed partial-year balance.')
+line=next(l for l in text.split('\n')if l.startswith('- **For example**: an 80 m²'))
+op(line,line+'\n\nContinuing that fully qualifying January 2026 straight-line example, four full years through 2029 deduct 4 × (EUR 12,000 regular AfA + EUR 16,000 special AfA). The residual building value is EUR 288,000. The mathematical 3% life is 100/3 years; after four years, 88/3 years remain. Regular annual AfA from 2030 is therefore EUR 288,000 ÷ (88/3) = EUR 9,818.1818… (EUR 9,818.18 displayed). This display rounding is not an independently established assessment-rounding rule. It is a January full-year fixture, not a formula for unverified historical partial-year or shorter-life facts.')
+op('| At least 50% and less than 66% | Surplus forecast: positive, all costs deductible; negative, split (2025 instructions; BMF letter of 8 October 2004, para. 13 as applied from 2021) |','| At least 50% and less than 66% | Under the published 2025 ELSTER instruction, a forecast with no loss, including exactly zero, gives full cost deduction; a forecast loss requires splitting. This is the dated administrative method used here on the unchanged 2026 statutory band; the older BMF para. 13 uses positive-surplus wording. |')
+op('  - **Result**: a positive total gives full deduction of all costs; a negative total splits the let as under 50%.','  - **Result**: apply the published 2025 ELSTER no-loss instruction to this unchanged 2026 band: a zero or positive forecast gives full deduction; a negative forecast splits the let as under 50%. This identifies the current published administrative branch, rather than claiming that the older BMF positive-surplus wording expressly settles equality.')
+(W/'after'/p.name).write_text(text);p.write_text(text);dump(W/'exact-operations.json',ops)
+# Rebind every original unit and all550 actual old origins; add only newly inserted operative paragraphs.
+bl=before.split('\n');ls=text.split('\n');lm={}
+for tag,a,b,c,d in difflib.SequenceMatcher(a=bl,b=ls,autojunk=False).get_opcodes():
+ for n in range(a,b):lm[str(n+1)]=[c+1 if tag!='equal'else c+n-a+1,d if tag!='equal'else c+n-a+1]
+dump(W/'support/line-map.json',lm);priorrows=json.loads((P/'current-rule-rows.json').read_text());rows=[];covered=set()
+def extra(t):
+ z=[]
+ if 'no loss'in t or'no-loss'in t or'zero or positive forecast'in t:z+=['R109-111.R42']
+ if 'four-year benefit period'in t or'Continuing that fully qualifying January'in t:z+=['R109-111.R17','R109-111.R89','R109-111.R92']
+ if any(k in t for k in ['Costs attributable to the owner','For mixed private and rental use','costs attributable to own-use']):z+=['R109-111.R34','R109-111.R120']
+ return z
+for n,q in enumerate(priorrows,1):
+ a,b=lm[str(q['native_LF'])];t='\n'.join(ls[a-1:b]);rows.append({'id':f'{n:03d}','prior_row_id':n,'native_LF':[a,b],'section':q['section'],'wording':t,'source_quote_ids':list(dict.fromkeys(q['anchors']+extra(t))),'classification':q['classification'],'prior_native_LF':q['native_LF'],'disposition':'Exact original unit or bounded R109–111 qualification; historical wording retained in preimage'});covered.update(range(a,b+1))
+for n,l in enumerate(ls,1):
+ if n in covered or not l.strip():continue
+ ex=extra(l)
+ if ex:rows.append({'id':str(len(rows)+1),'prior_row_id':None,'native_LF':[n,n],'section':'Finite ordinary rental calculation','wording':l,'source_quote_ids':ex,'classification':'new_sourced_computation','disposition':'Computed fixture, actual independent allocation/historical qualification facts required'})
+old=json.loads((P/'old-topics.json').read_text());old['current_guide_sha256']=H(p)
+for key in ['pre_refresh_rows','main_baseline_rows']:
+ for q in old[key]:
+  q['prior_sealed_destination_current_native_LF']=q['destination_current_native_LF'];q['prior_sealed_destination_wording']=q.get('destination_wording',[bl[a-1]for a in q['destination_current_native_LF']]);new=sorted(set(n for a in q['destination_current_native_LF']for n in range(lm[str(a)][0],lm[str(a)][1]+1)));q['destination_current_native_LF']=new;q['destination_wording']=[ls[n-1]for n in new];q['successor_scope']='R109–111 actual administrative no-loss/remaining-life/attribution corrections qualify matching earlier claims; full old wording/identity retained.'
+dump(W/'support/current-rule-rows.json',rows);dump(W/'support/old-topics.json',old)
+qs={q['id']:{**q,'provenance':'Original root selected quotation/actual read date reused by attribution; not new own whole-source reading.'}for q in json.loads((P/'source-quotes.json').read_text())};qs.update(own);dump(W/'source-quote-index.json',qs);dump(W/'source-index-reference.json',{'original_source_identities_path':str(P/'source-identities.json'),'sha256':H(P/'source-identities.json'),'original_source_quotes_sha256':H(P/'source-quotes.json'),'scope':'Exact original135 quotes retained; six own selected re-reads supplement. RNT08 remains web observation, not raw HTML.'})
+esc=lambda t:str(t).replace('|','\\|').replace('\n','<br>');t=f'# de-rental-income R109–111 successor ledger\n\nGuide `{H(p)}`, {p.stat().st_size} bytes. Original Guide7723c03d / ledger800b72f5 and163-member root seal unchanged. Writer correction, independent review pending. Source IDs bind exact original-language quotations/officialURLs/nativeLF/read dates in source-quote-index.json and source-quotes.md; original root source-identities.json remains referenced without duplicate bodies.\n\n| ID/native LF | Section | Exact wording | Source IDs/classification |\n|---|---|---|---|\n'
+for q in rows:t+=f'| {q["id"]} / {q["native_LF"]} | {esc(q["section"])} | {esc(q["wording"])} | {esc(q["source_quote_ids"])} / {q["classification"]} |\n'
+t+='\n## Complete old-topic destinations\n\nAll550 actual old origins and exact original wording retained with original destination and successor clauses.\n\n| Origin/nativeLF | Exact old wording | Actual current nativeLF / wording |\n|---|---|---|\n'
+for key in ['pre_refresh_rows','main_baseline_rows']:
+ for q in old[key]:t+=f'| {q["origin"]} / {q["old_native_LF"]} | {esc(q["old_wording"])} | {q["destination_current_native_LF"]} / {esc(q["destination_wording"])} |\n'
+(W/'ledgers'/p.name).write_text(t);t='# Rental source quotations\n\nOriginal135 exact quotations retained with attributed original read dates. Six own operative native scopes read29October2026. See source-index-reference.json for exact original identity table. No source acquisition.\n'
+for id,q in qs.items():t+=f'\n## {id}\n\n{q["act_article"]}; {q["official_url"]}; read {q["read_on"]}; nativeLF {q["reader_native_LF"]}. {q.get("note","")}\n\n> '+q['exact_original_language_quote'].replace('\n','\n> ')+'\n'
+(W/'source-quotes.md').write_text(t);dump(W/'successor-inventory.json',{'slug':p.stem,'Guide_path':str(p),'Guide_sha256':H(p),'Guide_bytes':p.stat().st_size,'ledger_path':str(W/'ledgers'/p.name),'ledger_sha256':H(W/'ledgers'/p.name),'rows':len(rows),'prior_rows':len(priorrows),'old_origins':sum(len(old[k])for k in ['pre_refresh_rows','main_baseline_rows']),'own_selected_quotes':len(own),'ops':len(ops)})
+print((W/'successor-inventory.json').read_text())

@@ -1,0 +1,209 @@
+     Private companies using the Peppol Network:
+Guideline for the use of identifier schemes of recipients in
+                         Germany 1
+
+    Information for Service Provider addressing the German market
+
+
+
+
+                       © 2025 Koordinierungsstelle für IT-Standards
+                                    Version 1.1
+
+
+
+
+1
+ We would like to thank the Nederlandse Peppolautoriteit for their guide on the same topic, which
+provided inspiration as well as some of the information contained herein.
+Changes
+Version   Date         Author   Chapter   Status
+1.0       20.07.2022   KoSIT    -         Release
+1.1       02.01.2025   KoSIT    -         Release
+
+
+
+
+                                                    Page 2 of 6
+1 Introduction
+This document provides recommendations for German private and public organisations on the
+Peppol network regarding
+      common identifier schemes used in Germany (section 2),
+
+      the identifiers to use when publishing receiving capabilities (section 3),
+
+      how to obtain the relevant identifiers for recipients on the network (section 4),
+
+      the usage of document types Peppol BIS Billing and XRechnung (section 5).
+
+The Peppol network employs a four-corner model for document exchange: A trading entity
+(corner 1) uses an access point (corner 2) to send a business document to the receiving
+access point (corner 3) of a receiving trading entity (corner 4).
+The sending access point locates the receiving access point using a published identifier of the
+receiving trading entity. This Peppol-ID, also known as participant-ID, can be generated using
+one of several different identifier schemes. Examples include a country’s Chamber of
+Commerce number, a VAT number, a Leitweg-ID, a Global Location Number (GLN) and so
+on. The code list for Peppol BIS documents is available here. The code list of all Peppol
+Participant Identifier Schemes is available here.
+The specific scheme that is used can be a de-facto standard within a sector or a country, or it
+can be agreed upon bilaterally between the sender and the recipient. However, to improve
+automation and automatic discovery, the amount of data that must be bilaterally communicated
+should be kept as low as possible.
+To help achieve this, the German Peppol Authority has set out additional requirements for the
+use of Peppol by the public sector in its Peppol Authority Specific Requirements (PASR): this
+is the use of the scheme Leitweg-ID for the Peppol-ID and the CIUS XRechnung.
+In general, sending organisations are expected to use the addressing information provided to
+them by the recipient. The Peppol Directory can be used to verify that available information is
+up to date.
+
+
+2 Overview of common identifier schemes in Germany
+The scheme codes, which are used to specify the identifier scheme, are a combination of the
+ISO 6523 ICD list, and a Peppol-specific extension list.
+The common identifiers in Germany are:
+      Scheme Leitweg-ID, code 0204, to be used by the public sector (see also German
+       Peppol Authority Specific Requirements)
+
+      Scheme (German) VAT number (Umsatzsteuer-Identifikationsnummer), code 9930
+
+      Scheme Global Location Number (GLN), code 0088
+
+      Scheme IBAN, code 9918
+
+      Be aware: Code 9958 MUST NOT be used anymore.
+
+                                                                                           Page 3 of 6
+3 Identifier scheme(s) to use to publish receiving capabilities
+
+3.1   Available schemes
+When publishing a recipient on the Peppol network, organisations SHOULD publish their legal
+registration identifier in the Peppol Directory. It is expected this requirement will become
+mandatory for all recipients worldwide. If this goal can´t be reached in 2023, the Peppol
+Directory will become mandatory in 2024 latest.
+In Germany public authorities MUST use the scheme Leitweg-ID (DE:LWID; Value 0204) for
+their Peppol-ID.
+The scheme for creating a Peppol-ID on the basis of the Leitweg-ID has been properly
+defined.2 However, the specification is only relevant for the governmental organisations that
+shall be addressed via this addressing information. As these governmental organisations use
+this scheme in various ways, according to their individual internal structures, senders should
+not try to gain additional information by interpreting parts of the Peppol-ID.
+The recommendation for non-governmental organisations is to publish their VAT number (or
+Umsatzsteuer-Identifikationsnummer - DE:VAT; Value: 9930), if available, or their Global
+Location Number (GLN; Value: 0088) otherwise.
+If the recipient has none of these identifiers, the international IBAN number SHOULD be used
+(IBAN; Value: 9918).
+All recipients SHOULD use the Peppol Directory for publishing their addressing information.
+These guidelines are summarised in the following figure and table.
+
+
+
+
+                             Governmental
+                              organisation
+
+
+                      true                   false
+
+
+
+               Leitweg-ID              VAT number available
+
+
+                                      true                   false
+
+
+                                  VAT                       GLN available
+                                 number
+
+                                                     true                   false
+
+
+                                                 GLN                          IBAN
+
+
+
+2
+ This specification is only available in German. As the information is only relevant for German
+governmental organisations, this is considered acceptable.
+                                                                                              Page 4 of 6
+Identifier          Scheme ID How to use
+
+DE: Leitweg-ID      0204        Used as ID for governmental organisations only
+
+DE: VAT number 9930             Used for any VAT-registered organisation
+
+GLN                 0088        Used as ID for organisations
+
+IBAN                9918        Used as fallback for organisations without VAT
+
+DE: LID             9958        Not to be used (deprecated)
+
+
+
+3.2       Use of additional routing information
+
+3.2.1 Routing information via several Peppol-IDs
+Some organisations intentionally publish multiple identifiers with different metadata properties.
+This means that an organization could use several Peppol-IDs, probably based on different
+schemes. One such scenario is so that incoming documents can then be routed internally
+based on the identifier it was sent to, for instance by publishing different GLN or IBAN numbers
+for different departments.
+This may make sense depending on the size of the organisation and its structure. It should be
+noted that in these cases, providing meaningful meta data for use in the Peppol Directory is
+essential to ensuring that the scope of each of the published identifiers can be derived easily.
+
+3.2.2 Routing information via additional identifier from within the document
+Internal routing MAY also be achieved based on other document properties, such as the order
+reference or buyer reference. Alternatively, accounting cost and project reference fields MAY
+be used. These examples are all fields from within the XML-document and they don´t belong
+to the Peppol-routing information.
+Governmental organisations in Germany use the Leitweg-ID for internal routing, which
+is essential for addressing information in most cases. This internal addressing information
+is included within the XML e-invoicing document (field BT-10). Senders have to get this
+important addressing information from their receivers / buyers as part of their contract
+relationship.
+It should be noted that German governmental organisations usually use two types of
+addressing information: Peppol-ID and Leitweg-ID. In some cases, these IDs may be (nearly)
+identical. It is nevertheless important not to confuse them.
+Example: Peppol-ID and Leitweg-ID both using the same scheme
+          Header-Level (Peppol ID / Participant ID)
+           e.g. <Identifier Authority="iso6523-actorid-upis">0204:04000000-FHBXLAND-
+           82</Identifier>
+
+          Invoice Level (Leitweg-ID)
+           e.g. <cbc:BuyerReference>04000000-900X44X06-60</cbc:BuyerReference>
+
+
+
+
+                                                                                        Page 5 of 6
+4 Obtaining address information for receiving trading entities and
+  use of the Peppol Directory
+The buyer is expected to provide the relevant addressing information, i.e., the Peppol-ID, to
+the seller. This information should be stable and may thus be saved as part of the standing
+data. The Peppol Directory may be used to check whether the available data is applicable
+and/or up to date. If no information has been provided, a known Leitweg-ID or VAT number
+MAY also be used to look up a Peppol-ID in the Peppol Directory.
+If the sender hasn´t received the addressing information and it can´t be retrieved via Peppol
+Directory, the sender MUST contact the receiver / buyer (eMail, phone, etc.) in order to get the
+addressing information.
+The sender MUST NOT check the semantical or syntactical correctness of the Peppol-ID
+obtained e.g. from the Peppol Directory against the Leitweg-ID rules.
+
+
+5 Usage of Doctypes XRechnung and Peppol BIS Billing
+XRechnung and Peppol BIS Billing 3.0 are both CIUSes based on and compliant to EN 16931-
+1.
+If electronic invoices are sent within Germany to German public entities via Peppol, the CIUS
+XRechnung MUST be used. It MAY also be used when sending invoices to private businesses.
+The XRechnung specification is currently only available in German language.
+If electronic invoices are sent form outside Germany via Peppol, it is also possible to use the
+format Peppol BIS Billing 3.0. The German public entities can receive both formats. However,
+when using Peppol BIS Billing to address German public entities, it is vital that the field BT-10
+MUST contain the Leitweg-ID.
+
+
+
+
+                                                                                        Page 6 of 6
+

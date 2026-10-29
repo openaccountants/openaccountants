@@ -1,0 +1,13 @@
+{
+  "guide_sha256": "7f2bb0b78a274a979c60708a8d2967859daed0a46618ed2b76e6e2787fd7f0ff",
+  "ledger_sha256": "50e05f26a2529421c0ce3c81f69228cd3ee16116f1d5bedcdd37abe93fd7f8b4",
+  "current_units": 31,
+  "old_units": 62,
+  "actual_selected_anchors": 29,
+  "unclassified": [],
+  "quotes_exact": true,
+  "old_units_exact_retained": 62,
+  "original_qualitative_examples": 5,
+  "original_oa_blocks": 0,
+  "Guide_unchanged": true
+}

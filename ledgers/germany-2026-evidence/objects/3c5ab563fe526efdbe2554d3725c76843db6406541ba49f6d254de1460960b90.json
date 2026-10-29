@@ -1,0 +1,339 @@
+[
+  {
+    "selected_quote": {
+      "id": "SoliRate",
+      "source": "Ud87f3fb176816839",
+      "article": "SolzG §4",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__4.html",
+      "LF_start": 7,
+      "LF_end": 7,
+      "exact_quote": "Der Solidaritätszuschlag beträgt 5,5 Prozent der Bemessungsgrundlage. Er beträgt nicht mehr als 11,9 Prozent des Unterschiedsbetrages zwischen der Bemessungsgrundlage, vermindert um die Einkommensteuer nach § 32d Absatz 3 und 4 des Einkommensteuergesetzes, und der nach § 3 Absatz 3, 4 und 5 jeweils maßgebenden Freigrenze. Bruchteile eines Cents bleiben außer Ansatz. Der Solidaritätszuschlag auf die Einkommensteuer nach § 32d Absatz 3 und 4 des Einkommensteuergesetzes und auf die Lohnsteuer nach § 39b Absatz 3 des Einkommensteuergesetzes beträgt ungeachtet des Satzes 2 5,5 Prozent.",
+      "raw_sha256": "dd28933ed36da19cae72de5a054f9edbea5c5919cb2aeac6efc257afe9fab058",
+      "reader_sha256": "219a2aa1409e999b209ed2402a91d3618b9ec3c19ebf85c10122087d7fa3845a",
+      "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "Ud87f3fb176816839",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__4.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-4-20261024.html",
+      "raw_sha256": "dd28933ed36da19cae72de5a054f9edbea5c5919cb2aeac6efc257afe9fab058",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud87f3fb176816839.reader.txt",
+      "reader_sha256": "219a2aa1409e999b209ed2402a91d3618b9ec3c19ebf85c10122087d7fa3845a",
+      "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+      "acquisition": "prior cached body",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quotation actually read in Swiss tranche or exact previous actual reading bridge; no full rawbody reading claim."
+  },
+  {
+    "selected_quote": {
+      "id": "SOLILIMIT",
+      "source": "Uc748242e6e54c746",
+      "article": "SolzG §3(3)2026",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "LF_start": 29,
+      "LF_end": 33,
+      "exact_quote": "(3) Der Solidaritätszuschlag ist von einkommensteuerpflichtigen Personen nur zu erheben, wenn die Bemessungsgrundlage nach Absatz 1 Nummer 1 und 2, vermindert um die Einkommensteuer nach § 32d Absatz 3 und 4 des Einkommensteuergesetzes, 1.\nin den Fällen des § 32a Absatz 5 und 6 des Einkommensteuergesetzes 40 700 Euro,\n2.\nin anderen Fällen 20 350 Euro\nübersteigt. Auf die Einkommensteuer nach § 32d Absatz 3 und 4 des Einkommensteuergesetzes ist der Solidaritätszuschlag ungeachtet des Satzes 1 zu erheben.",
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "Uc748242e6e54c746",
+      "url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-3-20261024.html",
+      "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc748242e6e54c746.reader.txt",
+      "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+      "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+      "acquisition": "prior cached body",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quotation actually read in Swiss tranche or exact previous actual reading bridge; no full rawbody reading claim."
+  },
+  {
+    "selected_quote": {
+      "id": "TAIL",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "DECH4(4)fullsourcecredit/employmentescape",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 174,
+      "LF_end": 186,
+      "exact_quote": "   (4) Bei einer in der Schweiz ansässigen natürlichen Person, die nicht die schweizerische Staatsangehörigkeit besitzt und die in der\nBundesrepublik Deutschland insgesamt mindestens fünf Jahre unbeschränkt steuerpflichtig war, kann die Bundesrepublik Deutschland\nin dem Jahr, in dem die unbeschränkte Steuerpflicht zuletzt geendet hat, und in den folgenden fünf Jahren die aus der Bundesrepublik\nDeutschland stammenden Einkünfte und die in der Bundesrepublik Deutschland belegenen Vermögenswerte, ungeachtet anderer\nBestimmungen des Abkommens, besteuern. Die nach diesem Abkommen zulässige Besteuerung dieser Einkünfte oder\nVermögenswerte in der Schweiz bleibt unberührt. Die Bundesrepublik Deutschland rechnet jedoch in entsprechender Anwendung der\nVorschriften des deutschen Rechts über die Anrechnung ausländischer Steuern die in Übereinstimmung mit diesem Abkommen von\ndiesen Einkünften oder Vermögenswerten erhobene schweizerische Steuer auf den Teil der deutschen Steuer (mit Ausnahme der\nGewerbesteuer) an, der aufgrund dieser Bestimmung von diesen Einkünften oder Vermögenswerten über die deutsche Steuer hinaus\nerhoben wird, die nach den Artikeln 6 bis 22 hierfür erhoben werden dürfte. Die Bestimmungen dieses Absatzes gelten nicht, wenn\ndie natürliche Person in der Schweiz ansässig geworden ist, um hier eine echte unselbständige Arbeit für einen Arbeitgeber auszuüben,\nan dem sie über das Arbeitsverhältnis hinaus weder unmittelbar noch mittelbar durch Beteiligung oder in anderer Weise wirtschaftlich\nwesentlich interessiert ist.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "U48fc7e3c289a4b4e",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "extraction": "PDF pdftotext-layout; raw unchanged",
+      "acquisition": "new targeted acquisition",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quotation actually read in Swiss tranche or exact previous actual reading bridge; no full rawbody reading claim."
+  },
+  {
+    "selected_quote": {
+      "id": "SALARY",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "DECH15(1)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 431,
+      "LF_end": 434,
+      "exact_quote": "  (1) Vorbehaltlich der Artikel 15a bis 19 können Gehälter, Löhne und ähnliche Vergütungen, die eine in einem Vertragsstaat ansässige\nPerson aus unselbständiger Arbeit bezieht, nur in diesem Staat besteuert werden, es sei denn, dass die Arbeit in dem anderen\nVertragsstaat ausgeübt wird. Wird die Arbeit dort ausgeübt, so können die dafür bezogenen Vergütungen in dem anderen Staat\nbesteuert werden.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "U48fc7e3c289a4b4e",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "extraction": "PDF pdftotext-layout; raw unchanged",
+      "acquisition": "new targeted acquisition",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quotation actually read in Swiss tranche or exact previous actual reading bridge; no full rawbody reading claim."
+  },
+  {
+    "selected_quote": {
+      "id": "SUBJECTTAX",
+      "source": "U20a110d035f0b1ba",
+      "article": "EStG50d(8)",
+      "url": "https://www.gesetze-im-internet.de/estg/__50d.html",
+      "LF_start": 19,
+      "LF_end": 19,
+      "exact_quote": "(8) 1Sind Einkünfte eines unbeschränkt Steuerpflichtigen aus nichtselbständiger Arbeit (§ 19) nach einem Abkommen zur Vermeidung der Doppelbesteuerung von der Bemessungsgrundlage der deutschen Steuer auszunehmen, wird die Freistellung bei der Veranlagung ungeachtet des Abkommens nur gewährt, soweit der Steuerpflichtige nachweist, dass der Staat, dem nach dem Abkommen das Besteuerungsrecht zusteht, auf dieses Besteuerungsrecht verzichtet hat oder dass die in diesem Staat auf die Einkünfte festgesetzten Steuern entrichtet wurden. 2Wird ein solcher Nachweis erst geführt, nachdem die Einkünfte in eine Veranlagung zur Einkommensteuer einbezogen wurden, ist der Steuerbescheid insoweit zu ändern. 3§ 175 Absatz 1 Satz 2 der Abgabenordnung ist entsprechend anzuwenden.",
+      "raw_sha256": "fd1ee264c4c5e8fc80f1663de4ea010fc7793242c574622dad8a2c05d7fb345a",
+      "reader_sha256": "05fc41a45e6dc460030534c73b751375029212123e882f7cf0f5a37fe5a35878",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "U20a110d035f0b1ba",
+      "url": "https://www.gesetze-im-internet.de/estg/__50d.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U20a110d035f0b1ba.body",
+      "raw_sha256": "fd1ee264c4c5e8fc80f1663de4ea010fc7793242c574622dad8a2c05d7fb345a",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U20a110d035f0b1ba.reader.txt",
+      "reader_sha256": "05fc41a45e6dc460030534c73b751375029212123e882f7cf0f5a37fe5a35878",
+      "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+      "acquisition": "new targeted acquisition",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quotation actually read in Swiss tranche or exact previous actual reading bridge; no full rawbody reading claim."
+  },
+  {
+    "selected_quote": {
+      "id": "PUBPENSION",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "Protocol9(a)/(b)publicservicepension",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 939,
+      "LF_end": 947,
+      "exact_quote": "         vor der Zahlung beziehungsweise vor dem Beginn der Zahlungen im schweizerischen öffentlichen Dienst war. Auch als\n         aufgrund eines solchen Versicherungsverhältnisses gezahlt gelten Zahlungen von Freizügigkeitskonten und -policen der\n         schweizerischen beruflichen Vorsorge.\n      b) Nach Artikel 19 Absatz 4 hat der Ansässigkeitsstaat des Empfängers vorrangig das Besteuerungsrecht für vorgenannte\n         Vergütungen, einschließlich Ruhegehältern, wenn der Vergütungsempfänger die Grenzgängereigenschaft nach Artikel 15a\n         hat oder hatte. Der andere Vertragsstaat hat den Steuerabzug nach Artikel 15a Absatz 1 zu beschränken. Hierfür ist der\n         Vorsorgeeinrichtung der 2. Säule vor erstmaligem Zufluss einer wiederkehrenden Leistung die hierfür vorgesehene\n         Ansässigkeitsbescheinigung vorzulegen. Bei Kapitalleistungen ist die Grenzgängereigenschaft im dafür vorgesehenen\n         amtlichen Rückerstattungsformular zu bescheinigen.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "U48fc7e3c289a4b4e",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "extraction": "PDF pdftotext-layout; raw unchanged",
+      "acquisition": "new targeted acquisition",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quotation actually read in Swiss tranche or exact previous actual reading bridge; no full rawbody reading claim."
+  },
+  {
+    "selected_quote": {
+      "id": "PENSCREDIT",
+      "source": "Ubb44eb74c0244b3e",
+      "article": "BMF8February2018taxedsharecondition",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2018-02-08-DBA-Schweiz-Abzugsteuer-Grenzgaenger.pdf?__blob=publicationFile&v=1",
+      "LF_start": 51,
+      "LF_end": 57,
+      "exact_quote": "\fSeite 2   Nach § 36 Absatz 2 Nummer 2 EStG setzt eine Anrechnung einer Abzugsteuer voraus, dass\n          die Abzugsbeträge auf die bei der Veranlagung zur Einkommensteuer erfassten Einkünfte\n          entfallen und für sie keine Erstattung beantragt oder durchgeführt worden ist. Eine Anrech-\n          nung kommt danach nur in Betracht, wenn die Einkünfte auch tatsächlich bei der Veran-\n          lagung erfasst sind. Tatsächlich erfasst sind die im Steuerabzug belasteten Einnahmen, wenn\n          sie Teil der Besteuerungsgrundlage geworden sind, unabhängig davon, ob sie sich etwa\n          bedingt durch Freibeträge auf die Höhe der festgesetzten Steuer ausgewirkt haben.",
+      "raw_sha256": "dc7513ee78afcb934d3ccbf4176f00c10eb356c9ed18c661e68ac9420fcdb50a",
+      "reader_sha256": "c555d98944c6e061bfff43da252f36c7326fbea3db6d4ff70fe2c557cc07f3e4",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "Ubb44eb74c0244b3e",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2018-02-08-DBA-Schweiz-Abzugsteuer-Grenzgaenger.pdf?__blob=publicationFile&v=1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubb44eb74c0244b3e.body",
+      "raw_sha256": "dc7513ee78afcb934d3ccbf4176f00c10eb356c9ed18c661e68ac9420fcdb50a",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubb44eb74c0244b3e.reader.txt",
+      "reader_sha256": "c555d98944c6e061bfff43da252f36c7326fbea3db6d4ff70fe2c557cc07f3e4",
+      "extraction": "PDF pdftotext-layout; raw unchanged",
+      "acquisition": "new targeted acquisition",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quotation actually read in Swiss tranche or exact previous actual reading bridge; no full rawbody reading claim."
+  },
+  {
+    "selected_quote": {
+      "id": "PENS1",
+      "source": "Ubb44eb74c0244b3e",
+      "article": "BMF8February2018ObligatoriumLeibrente",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2018-02-08-DBA-Schweiz-Abzugsteuer-Grenzgaenger.pdf?__blob=publicationFile&v=1",
+      "LF_start": 64,
+      "LF_end": 71,
+      "exact_quote": "          1.1 Leibrenten\n          Leistungen aus dem Obligatorium, die als Leibrenten erbracht werden, sind als Einkünfte\n          nach § 22 Nummer 1 Satz 3 Buchstabe a Doppelbuchstabe aa EStG mit dem maßgebenden\n          Besteuerungsanteil bei der Ermittlung des zu versteuernden Einkommens anzusetzen\n          (siehe BMF-Schreiben vom 27. Juli 2016). Soweit die Schweizer Abzugsteuer von höchstens\n          4,5 Prozent auf das Obligatorium entfällt, ist sie nach Artikel 15a Absatz 3 DBA-Schweiz\n          damit lediglich mit dem Anteil, der diesem Besteuerungsanteil entspricht, auf die Einkom-\n          mensteuer anzurechnen.",
+      "raw_sha256": "dc7513ee78afcb934d3ccbf4176f00c10eb356c9ed18c661e68ac9420fcdb50a",
+      "reader_sha256": "c555d98944c6e061bfff43da252f36c7326fbea3db6d4ff70fe2c557cc07f3e4",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "Ubb44eb74c0244b3e",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2018-02-08-DBA-Schweiz-Abzugsteuer-Grenzgaenger.pdf?__blob=publicationFile&v=1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubb44eb74c0244b3e.body",
+      "raw_sha256": "dc7513ee78afcb934d3ccbf4176f00c10eb356c9ed18c661e68ac9420fcdb50a",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubb44eb74c0244b3e.reader.txt",
+      "reader_sha256": "c555d98944c6e061bfff43da252f36c7326fbea3db6d4ff70fe2c557cc07f3e4",
+      "extraction": "PDF pdftotext-layout; raw unchanged",
+      "acquisition": "new targeted acquisition",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quotation actually read in Swiss tranche or exact previous actual reading bridge; no full rawbody reading claim."
+  },
+  {
+    "selected_quote": {
+      "id": "PENS2",
+      "source": "Ubb44eb74c0244b3e",
+      "article": "BMF8February2018UeberobligatoriumLeibrente",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2018-02-08-DBA-Schweiz-Abzugsteuer-Grenzgaenger.pdf?__blob=publicationFile&v=1",
+      "LF_start": 106,
+      "LF_end": 111,
+      "exact_quote": "          2.1 Leibrenten\n          Leistungen aus dem Überobligatorium, die als Leibrenten erbracht werden, sind nach § 22\n          Nummer 1 Satz 3 Buchstabe a Doppelbuchstabe bb EStG mit dem maßgebenden Ertragsanteil\n          bei der Ermittlung des zu versteuernden Einkommens anzusetzen. Die Anrechnung der\n          Schweizer Abzugsteuer nach Artikel 15a Absatz 3 DBA-Schweiz auf die Einkommensteuer\n          ist auf höchstens 4,5 Prozent des Ertragsanteils begrenzt.",
+      "raw_sha256": "dc7513ee78afcb934d3ccbf4176f00c10eb356c9ed18c661e68ac9420fcdb50a",
+      "reader_sha256": "c555d98944c6e061bfff43da252f36c7326fbea3db6d4ff70fe2c557cc07f3e4",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "Ubb44eb74c0244b3e",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2018-02-08-DBA-Schweiz-Abzugsteuer-Grenzgaenger.pdf?__blob=publicationFile&v=1",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubb44eb74c0244b3e.body",
+      "raw_sha256": "dc7513ee78afcb934d3ccbf4176f00c10eb356c9ed18c661e68ac9420fcdb50a",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubb44eb74c0244b3e.reader.txt",
+      "reader_sha256": "c555d98944c6e061bfff43da252f36c7326fbea3db6d4ff70fe2c557cc07f3e4",
+      "extraction": "PDF pdftotext-layout; raw unchanged",
+      "acquisition": "new targeted acquisition",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quotation actually read in Swiss tranche or exact previous actual reading bridge; no full rawbody reading claim."
+  },
+  {
+    "selected_quote": {
+      "id": "CHDIV",
+      "source": "U48fc7e3c289a4b4e",
+      "article": "DECH10(2)/(3)",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "LF_start": 336,
+      "LF_end": 353,
+      "exact_quote": "  (2) Diese Dividenden können jedoch auch in dem Vertragsstaat, in dem die die Dividenden zahlende Gesellschaft ansässig ist,\nnach dem Recht dieses Staates besteuert werden; die Steuer darf aber, wenn die zur Nutzung der Dividende berechtigte Person im\nanderen Vertragsstaat ansässig ist, nicht übersteigen:\na) 5 vom Hundert des Bruttobetrags der Dividenden, wenn sie von einer Gesellschaft gezahlt werden, die ein Kraftwerk zur\n   Ausnutzung der Wasserkraft des Rheinstromes zwischen dem Bodensee und Basel betreibt (Grenzkraftwerk am Rhein);\nb) 30 vom Hundert des Bruttobetrags der Dividenden, wenn es sich um Einnahmen aus Beteiligungen an einem Handelsgewerbe\n   als stiller Gesellschafter im Sinne des deutschen Rechts, aus Genussrechten, aus Gewinnobligationen oder aus partiarischen\n   Darlehen handelt und wenn diese Beträge bei der Gewinnermittlung des Schuldners abzugsfähig sind;\nc) 15 vom Hundert des Bruttobetrags der Dividenden in Fällen, die nicht unter Buchstabe a oder b fallen.\n   (3) Ungeachtet von Absatz 2 nimmt der Vertragsstaat, in dem die die Dividenden zahlende Gesellschaft ansässig ist, die bezahlten\nDividenden von der Besteuerung aus, wenn die nutzungsberechtigte Person eine Gesellschaft (jedoch keine Personengesellschaft)\nist, die im anderen Vertragsstaat ansässig ist und unmittelbar über mindestens 10 Prozent des Kapitals der die Dividenden zahlenden\nGesellschaft während einer Dauer von 365 Tagen, die den Tag der Zahlung der Dividende umfasst, hält (für Zwecke der Berechnung\ndieser Dauer werden Besitzänderungen nicht berücksichtigt, die unmittelbar aus einer Fusion, einer Spaltung oder einer Umwandlung\nder Gesellschaft resultieren, die die Anteile hält oder die die Dividende zahlt). Im Fall von Dividenden, die von einer deutschen\nImmobilien-Aktiengesellschaft mit börsennotierten Anteilen (REIT-AG), einem deutschen Investmentfonds oder einer deutschen\nInvestmentaktiengesellschaft gezahlt werden, ist nicht Satz 1, sondern Absatz 2 Buchstabe c anzuwenden. Dies berührt nicht die\nBesteuerung der Gesellschaft in Bezug auf die Gewinne, aus denen die Dividenden gezahlt werden.",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "U48fc7e3c289a4b4e",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "extraction": "PDF pdftotext-layout; raw unchanged",
+      "acquisition": "new targeted acquisition",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Full selected quotation actually read in Swiss tranche or exact previous actual reading bridge; no full rawbody reading claim."
+  },
+  {
+    "article": "DECH15(1)/(2)",
+    "identity": {
+      "id": "U48fc7e3c289a4b4e",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "extraction": "PDF pdftotext-layout; raw unchanged",
+      "acquisition": "new targeted acquisition",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "native_LF": [
+      431,
+      442
+    ],
+    "exact_quote": "  (1) Vorbehaltlich der Artikel 15a bis 19 können Gehälter, Löhne und ähnliche Vergütungen, die eine in einem Vertragsstaat ansässige\nPerson aus unselbständiger Arbeit bezieht, nur in diesem Staat besteuert werden, es sei denn, dass die Arbeit in dem anderen\nVertragsstaat ausgeübt wird. Wird die Arbeit dort ausgeübt, so können die dafür bezogenen Vergütungen in dem anderen Staat\nbesteuert werden.\n\fBundesgesetzblatt Jahrgang 2026 Teil II Nr. 135, ausgegeben zu Bonn am 15. Juli 2026                                    Seite 9 von 18\n\n  (2) Ungeachtet des Absatzes 1 können Vergütungen, die eine in einem Vertragsstaat ansässige Person für eine in dem anderen\nVertragsstaat ausgeübte unselbständige Arbeit bezieht, nur in dem erstgenannten Staat besteuert werden, wenn\na) der Empfänger sich in dem anderen Staat insgesamt nicht länger als 183 Tage während des betreffenden Kalenderjahres aufhält,\nb) die Vergütungen von einem Arbeitgeber oder für einen Arbeitgeber gezahlt werden, der nicht in dem anderen Staat ansässig ist,\n   und\nc) die Vergütungen nicht von einer Betriebsstätte getragen werden, die der Arbeitgeber in dem anderen Staat hat.",
+    "actual_read": "Newly read selected completion for failed current claim, existing retained source unchanged."
+  },
+  {
+    "article": "DECHprotocol9fullpopulation",
+    "identity": {
+      "id": "U48fc7e3c289a4b4e",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.body",
+      "raw_sha256": "0dbc243ca6b7b851c94666b6bf63f1f160b3ddb4c30189c05e658fce89b9b18f",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U48fc7e3c289a4b4e.reader.txt",
+      "reader_sha256": "a13520669190efee7962b2a1c465a0aa0192cf96e71d0f7a4b15322de023623d",
+      "extraction": "PDF pdftotext-layout; raw unchanged",
+      "acquisition": "new targeted acquisition",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "native_LF": [
+      933,
+      947
+    ],
+    "exact_quote": "9.    Zu Artikel 19 Absatz 1\n      a) Vergütungen, einschließlich wiederkehrender oder einmaliger Zahlungen, von Vorsorgeeinrichtungen der schweizerischen\n         beruflichen Vorsorge (2. Säule) an aktive oder ehemals Bedienstete im schweizerischen öffentlichen Dienst gelten als aus\n         einem Sondervermögen für erbrachte Dienste nach Artikel 19 Absatz 1 gewährt, sofern sie aufgrund eines Versicherungs-\n         verhältnisses der schweizerischen beruflichen Vorsorge gezahlt werden, das zu einer Person besteht oder bestand, deren\n         letzte oder laufende für die Versicherung in der schweizerischen beruflichen Vorsorge maßgebende unselbständige Tätigkeit\n         vor der Zahlung beziehungsweise vor dem Beginn der Zahlungen im schweizerischen öffentlichen Dienst war. Auch als\n         aufgrund eines solchen Versicherungsverhältnisses gezahlt gelten Zahlungen von Freizügigkeitskonten und -policen der\n         schweizerischen beruflichen Vorsorge.\n      b) Nach Artikel 19 Absatz 4 hat der Ansässigkeitsstaat des Empfängers vorrangig das Besteuerungsrecht für vorgenannte\n         Vergütungen, einschließlich Ruhegehältern, wenn der Vergütungsempfänger die Grenzgängereigenschaft nach Artikel 15a\n         hat oder hatte. Der andere Vertragsstaat hat den Steuerabzug nach Artikel 15a Absatz 1 zu beschränken. Hierfür ist der\n         Vorsorgeeinrichtung der 2. Säule vor erstmaligem Zufluss einer wiederkehrenden Leistung die hierfür vorgesehene\n         Ansässigkeitsbescheinigung vorzulegen. Bei Kapitalleistungen ist die Grenzgängereigenschaft im dafür vorgesehenen\n         amtlichen Rückerstattungsformular zu bescheinigen.",
+    "actual_read": "Newly read selected completion for failed current claim, existing retained source unchanged."
+  },
+  {
+    "selected_quote": {
+      "id": "RES",
+      "source": "Ua6c12b21cadb51df",
+      "article": "EStG §1(1) opening",
+      "url": "https://www.gesetze-im-internet.de/estg/__1.html",
+      "LF_start": 7,
+      "LF_end": 7,
+      "exact_quote": "(1) 1Natürliche Personen, die im Inland einen Wohnsitz oder ihren gewöhnlichen Aufenthalt haben, sind unbeschränkt einkommensteuerpflichtig. 2Zum Inland im Sinne dieses Gesetzes gehört auch der der Bundesrepublik Deutschland zustehende Anteil 1.",
+      "raw_sha256": "aa3116bd65c47709867eaba213a4f5a482aabe7075b4e0ae7b31fb8f2830d6ca",
+      "reader_sha256": "c131d86c4bf7573c7ceb89484930ecd33f0df991d53b7f180bdd3640c66b9f18",
+      "read_on": "2026-10-29",
+      "line_convention": "literal LF split('\\n')"
+    },
+    "identity": {
+      "id": "Ua6c12b21cadb51df",
+      "url": "https://www.gesetze-im-internet.de/estg/__1.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6c12b21cadb51df.body",
+      "raw_sha256": "aa3116bd65c47709867eaba213a4f5a482aabe7075b4e0ae7b31fb8f2830d6ca",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6c12b21cadb51df.reader.txt",
+      "reader_sha256": "c131d86c4bf7573c7ceb89484930ecd33f0df991d53b7f180bdd3640c66b9f18",
+      "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+      "acquisition": "new targeted acquisition",
+      "scope": "Acquisition only; selected actual reads must be recorded separately"
+    },
+    "actual_read": "Exact source/claim bridge to earlier independent income source32 EStG1(1), full actual quotation read then and rechecked now."
+  }
+]

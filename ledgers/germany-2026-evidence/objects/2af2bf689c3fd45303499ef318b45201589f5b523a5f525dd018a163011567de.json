@@ -1,0 +1,95 @@
+{
+  "status": "writer successor, independent review pending",
+  "artifacts": [
+    {
+      "path": "after/de-social-contributions.md",
+      "sha256": "ebce79a0f32c40dfd3c2ee10589761c1332f2f94954a51ffd6c908bd9c8c8fad",
+      "bytes": 57839
+    },
+    {
+      "path": "before/de-social-contributions.md",
+      "sha256": "440c63cff96c29ab6ba597bc1d96e7e0183665c6aeb547b0c2b184658cf22f5d",
+      "bytes": 53753
+    },
+    {
+      "path": "build-ledgers.py",
+      "sha256": "8685d53bdbe2c685a5b96fe702dac5e16b8b1fdd82278d5de1a323def24c0e86",
+      "bytes": 8402
+    },
+    {
+      "path": "check-and-seal.py",
+      "sha256": "c1acb1fd79d70bff868c7e206a13f0402dc88a483f3d95bbb4751246039c8796",
+      "bytes": 10805
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "c478f1df492a41959bc6bfc2bff96eeeda8605528ddf15beaa713ab5cba01007",
+      "bytes": 10701
+    },
+    {
+      "path": "historical-author.py",
+      "sha256": "c739e7d94cf1134eab7f0540d146086e7811e517dfaa0801a86d27d30a91ae6e",
+      "bytes": 11808
+    },
+    {
+      "path": "ledgers/de-social-contributions.md",
+      "sha256": "ed4a3d521d8f2c494ffb1b608be4fd6bab72772fd32a831eccad80f0cad09611",
+      "bytes": 183619
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "d0e60efac8f8b0c0a5da0cd9b6c2120e71084a16aaf4e2ee0f0c2027b90ac86b",
+      "bytes": 1976
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "b3ec96ececb77bb111e2154a6da92538492cb7ecb5bbe796643464cb609f7e4f",
+      "bytes": 31271
+    },
+    {
+      "path": "preservation-proof.json",
+      "sha256": "a9b83d923182f6018411274f1108307c6d28698fe136eba0cebb4574ac77120a",
+      "bytes": 663
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "8bb4f798365784959b19a4abba3f0ea916949d1c6c22fea7592b6156ebc6fca7",
+      "bytes": 272177
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "3b74b7713aa940184fa2d820ecfe7774c2232de1b3c1eee998032cdbe8ba278b",
+      "bytes": 166205
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "e5a8821a3117dcf86276a3307dd59363faf26570be082a243abf9c9d35f9e0b4",
+      "bytes": 921
+    },
+    {
+      "path": "support/de-social-contributions/line-map.json",
+      "sha256": "7732575ce62cbb04fbe0257658d2d94a2cabb501f25be35668513d644410f58d",
+      "bytes": 22515
+    },
+    {
+      "path": "support/de-social-contributions/old-topic-destinations.json",
+      "sha256": "6c2f29598f3368998cebd2f901ccd983817acf6d5871109e74ac5c835834f917",
+      "bytes": 132140
+    },
+    {
+      "path": "support/de-social-contributions/rows.json",
+      "sha256": "90d69a8c47fea365ad8394d5bf72e07e792db738c0eae25fb9bbcbf97b37bccb",
+      "bytes": 122290
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "dcd04b4982b9719b0f515175e10e330690dc544142d0b8326481f3ee3db48e9d",
+      "bytes": 28922
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "b4d06503e731303837d813435fe5080f923c1a11d934e636afbe7f0eca89e8a0",
+      "bytes": 1949
+    }
+  ]
+}

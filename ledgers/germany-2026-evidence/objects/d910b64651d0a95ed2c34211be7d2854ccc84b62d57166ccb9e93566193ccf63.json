@@ -1,0 +1,11 @@
+{
+  "id": "U9022e5d1ce5ddb70",
+  "url": "https://www.gesetze-im-internet.de/gaufzv_2017/__6.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9022e5d1ce5ddb70.body",
+  "raw_sha256": "216645795f074fe5ef9ddf6b717dad00cf1b29ad8e0ff5c2a3b5959b30e1ccef",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9022e5d1ce5ddb70.reader.txt",
+  "reader_sha256": "366bb2e93c07988c4dc4251632898d7a17af426d016e4c4bb8b5b4821f7b9581",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

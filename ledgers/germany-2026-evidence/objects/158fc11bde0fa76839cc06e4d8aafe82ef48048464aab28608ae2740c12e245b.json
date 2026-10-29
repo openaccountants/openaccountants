@@ -1,0 +1,107 @@
+[
+  {
+    "label": "annual prepayments",
+    "actual": "8250",
+    "expected": "8250"
+  },
+  {
+    "label": "annual output",
+    "actual": "39900",
+    "expected": "39900"
+  },
+  {
+    "label": "annual net tax",
+    "actual": "10150",
+    "expected": "10150"
+  },
+  {
+    "label": "annual closing balance",
+    "actual": "1900",
+    "expected": "1900"
+  },
+  {
+    "label": "late payment2months",
+    "actual": "38",
+    "expected": "38"
+  },
+  {
+    "label": "late filing permonth",
+    "actual": "25",
+    "expected": "25"
+  },
+  {
+    "label": "late filing3months",
+    "actual": "75",
+    "expected": "75"
+  },
+  {
+    "label": "Lena turnover excess",
+    "actual": "6200",
+    "expected": "6200"
+  },
+  {
+    "label": "Lena cash headroom",
+    "actual": "768800",
+    "expected": "768800"
+  },
+  {
+    "label": "Lena current net",
+    "actual": "7500",
+    "expected": "7500"
+  },
+  {
+    "label": "Lena current tax",
+    "actual": "1425",
+    "expected": "1425"
+  },
+  {
+    "label": "Lena old advance tax rounded",
+    "actual": "31933/100",
+    "expected": "31933/100"
+  },
+  {
+    "label": "Lena Q1 rounded",
+    "actual": "136433/100",
+    "expected": "136433/100"
+  },
+  {
+    "label": "one eleventh12000",
+    "actual": "12000/11",
+    "expected": "12000/11"
+  },
+  {
+    "label": "annual-only boundary6000",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "disposal correction1000 is not automatically annual-only",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "Q4 statutory date Sunday",
+    "actual": "6",
+    "expected": "6"
+  },
+  {
+    "label": "prudential Friday date",
+    "actual": "4",
+    "expected": "4"
+  },
+  {
+    "label": "annual filing14May Friday",
+    "actual": "4",
+    "expected": "4"
+  },
+  {
+    "label": "annual closing14June Monday",
+    "actual": "0",
+    "expected": "0"
+  },
+  {
+    "label": "Lena April10 Friday",
+    "actual": "4",
+    "expected": "4"
+  }
+]

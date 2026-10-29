@@ -1,0 +1,320 @@
+{
+  "scope_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/ordinary-scope-disposition.json",
+  "scope_source_sha256": "7b6e0a532e58512114cc1827f6af9db83d67dd01331b177e0ce9f4205314df69",
+  "actual_writer_read": "Complete reviewer classification/domain/boundary/readiness text and selected current Guide scopes,29October2026. No new acquisition or original-law reading claimed. Independent reviewer’s completed source readings remain attributed, not adopted as new writer readings.",
+  "bindings": [
+    {
+      "id": "DE-M01",
+      "reviewer_exact_boundary": "State church-tax selector, caps and rounding, including actual flat-tax church rates and nonresidents, not verified by the federal source population. Stipulated8/9% examples remain valid conditional calculations.",
+      "reviewer_exact_why_material": "An ordinary church member's final liability changes: on independently stipulated10000 base,8% versus9% is800 versus900 before actual state-law rules. A federal source's silence is not an exemption.",
+      "mapped_domains": [
+        "IT-IND",
+        "PR",
+        "XB"
+      ],
+      "current_Guide_read_scopes": [
+        {
+          "Guide": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-payroll.md",
+          "Guide_sha256": "7a318a63c5364e3d0e95c06f1a8ebd9aae02e0355d93562e97918102395e56d5",
+          "actual_selected_current_Guide_native_LF": [
+            358
+          ],
+          "exact_Guide_excerpt": [
+            "Not yet confirmed: the Federal Gazette text of the labour ministry's 2026 factor F notice itself (0.6619 is taken from an official state circular that cites it, and equals 28 / 42.3); which states levy 8% and which 9% church tax (secondary sources name Bavaria and Baden-Württemberg at 8%), and state church tax caps; U1 and U2 rates (set by each fund) and accident insurance; the 2027 health ceiling amount."
+          ],
+          "read_on": "2026-10-29",
+          "role": "Actual selected Guide reservation read by writer; underlying full primary reading belongs to explicitly attributed independent country review."
+        },
+        {
+          "Guide": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-payroll-benefits.md",
+          "Guide_sha256": "5cfe787fc72884808d51928252fb2a8a42c3442a50da315c846fffc3ea2f24eb",
+          "actual_selected_current_Guide_native_LF": [
+            239
+          ],
+          "exact_Guide_excerpt": [
+            "Not yet confirmed: the administrative car rules in R 8.1(9) LStR beyond the list-price rounding and part-month rule; the EUR 60 meal limit and staff-event rules in the wage tax guidelines beyond the statute; church tax rates on flat taxes (for § 37b the BMF letter, Rn. 36, points to the state decrees of 28 and 29 December 2006; the rates themselves were not read); whether a collective agreement can set aside the 15% top-up; whether a bAV top-up is owed where pay exceeds the ceilings (depends on the saving actually made); the written reasons of the 23 July 2026 BSG decision (only the hearing report was read); the wage tax treatment of the Unterstützungskasse and direct-promise routes of bAV, which is not covered here."
+          ],
+          "read_on": "2026-10-29",
+          "role": "Actual selected Guide reservation read by writer; underlying full primary reading belongs to explicitly attributed independent country review."
+        },
+        {
+          "Guide": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-non-resident-tax.md",
+          "Guide_sha256": "2240579d7a85e98bbc9f6994ccd0a9a2d99025d4f1fa8c6ed94b18c7e7a25174",
+          "actual_selected_current_Guide_native_LF": [
+            317
+          ],
+          "exact_Guide_excerpt": [
+            "Not yet confirmed: whether the BMF has issued a country-group list for 2026 (the 2 December 2025 letter applies from 2025 and no later one was found); how the tax office rounds the progression rate; whether foreign capital income of a § 1(3) applicant counts in the 90% test and in the progression, given § 2(5b) EStG; whether the § 50c(3) refund of dividend tax down to the treaty rate includes the solidarity surcharge (the example assumes it does); church tax for non-residents (state law)."
+          ],
+          "read_on": "2026-10-29",
+          "role": "Actual selected Guide reservation read by writer; underlying full primary reading belongs to explicitly attributed independent country review."
+        }
+      ]
+    },
+    {
+      "id": "DE-M02",
+      "reviewer_exact_boundary": "Foreign social contributions on pre-arrival/post-departure foreign salary in the §32b(1)no2 moving-year case: special-expense treatment remains explicitly unresolved, unlike the supplied treaty-exempt no3 branch.",
+      "reviewer_exact_why_material": "An actual ordinary move can alter the resident-year deduction/base. Do not equate absence of a read rule with no deduction.",
+      "mapped_domains": [
+        "IT-IND",
+        "XB"
+      ],
+      "current_Guide_read_scopes": [
+        {
+          "Guide": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-partners-and-part-year.md",
+          "Guide_sha256": "0839172b17872bebeed72749eb57e3353d83c4a6132dbb8e02f04ec0ceefb245",
+          "actual_selected_current_Guide_native_LF": [
+            134
+          ],
+          "exact_Guide_excerpt": [
+            "- **Social security.** Contributions linked to pay that a treaty exempts in Germany (the § 32b(1) no. 3 case) are not special expenses (§ 10(2) sentence 1 no. 1 EStG; BMF letter on Vorsorgeaufwendungen, Rn. 199), unless the pay was earned in an EU or EEA state or Switzerland and that state allows no deduction for them (§ 10(2) sentence 1 no. 1 (a) to (c)). Contributions on foreign pay of the months before arrival or after departure (the no. 2 case) are not settled here (see Not yet confirmed). Swiss AHV contributions do not reduce the amount added for the rate (H 32b). Social security itself: de-social-contributions."
+          ],
+          "read_on": "2026-10-29",
+          "role": "Actual selected Guide reservation read by writer; underlying full primary reading belongs to explicitly attributed independent country review."
+        }
+      ]
+    },
+    {
+      "id": "DE-M03",
+      "reviewer_exact_boundary": "Foreign capital income of a §1(3) applicant in the90% eligibility and progression calculations, given §2(5b), remains unsupplied.",
+      "reviewer_exact_why_material": "Eligibility and rate can change for an ordinary applicant with foreign interest/dividends. The ordinary rental and foreign-tax-credit fixtures do not determine this intersection.",
+      "mapped_domains": [
+        "IT-IND",
+        "XB"
+      ],
+      "current_Guide_read_scopes": [
+        {
+          "Guide": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-non-resident-tax.md",
+          "Guide_sha256": "2240579d7a85e98bbc9f6994ccd0a9a2d99025d4f1fa8c6ed94b18c7e7a25174",
+          "actual_selected_current_Guide_native_LF": [
+            122
+          ],
+          "exact_Guide_excerpt": [
+            "The person is taxed as a resident on their German income: Grundfreibetrag, special expenses, the EUR 36 lump sum and the resident deductions apply. Income that is not subject to German tax is left out of the base but raises the rate (progression, § 32b(1) no. 5 EStG): the tax rate is found on taxable income plus that foreign income, then applied to taxable income alone. Splitting needs § 1a. Foreign capital income is a special case: § 2(5b) EStG keeps capital income under § 32d(1) out of \"income\" wherever the law refers to it, and whether foreign interest or dividends of a § 1(3) applicant count in the 90% test and in the progression is not settled here (see Not yet confirmed)."
+          ],
+          "read_on": "2026-10-29",
+          "role": "Actual selected Guide reservation read by writer; underlying full primary reading belongs to explicitly attributed independent country review."
+        }
+      ]
+    },
+    {
+      "id": "DE-M04",
+      "reviewer_exact_boundary": "Repeated travel to a let property as a first place of activity and AfA in the sale month are explicit unresolved ordinary branches. Standard actual-cost travel and stipulated sale-year AfA case remain conditional methods.",
+      "reviewer_exact_why_material": "Different travel measure and final AfA change an ordinary landlord's expense/sale basis. Shorter actual building life needs claimant proof (E), but it is not an excuse to zero ordinary AfA.",
+      "mapped_domains": [
+        "IT-IND"
+      ],
+      "current_Guide_read_scopes": [
+        {
+          "Guide": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-rental-income.md",
+          "Guide_sha256": "6f97644830c828129f0e7343809d7d42022297e444ff4e840a2f35594f36715e",
+          "actual_selected_current_Guide_native_LF": [
+            76,
+            344
+          ],
+          "exact_Guide_excerpt": [
+            "- **Travel**: actual cost, or 30 cents per km **driven** by car (§ 9(1) no. 4a and § 9(3) EStG with [§ 5(2) BRKG](https://www.gesetze-im-internet.de/brkg_2005/__5.html)). If the property were a first place of activity, the commuting allowance of EUR 0.38 per full km one way applies instead. When a let property is one is not settled on the pages read: ask the accountant.",
+            "Not yet confirmed: the 2026 Anlage V form and instructions (the recorded route returned no substantive content; line numbers are from 2025); any BMF update to the letter of 8 October 2004 after the retained 2024 handbook (the checked 2025 handbook route remained inaccessible); the BMF letter of 22 February 2023 on a shorter actual useful life; whether a let property can be a first place of activity for travel; AfA in the month of sale; heirs under § 23(1) sentence 3; treaty treatment of foreign rental property; the BMF letter of 21 October 2026 on paid waiver of usufruct (Nießbrauch), not read."
+          ],
+          "read_on": "2026-10-29",
+          "role": "Actual selected Guide reservation read by writer; underlying full primary reading belongs to explicitly attributed independent country review."
+        }
+      ]
+    },
+    {
+      "id": "DE-M05",
+      "reviewer_exact_boundary": "Ordinary whole-euro advance-return tax-base transcription convention is not determined by the retained instruction saying whole euros; the calendar-year VAT gift aggregation and machine/host-signature entertainment receipt requirements remain expressly unverified.",
+      "reviewer_exact_why_material": "These can alter ordinary return inputs/input recovery. Existing clear income-tax fiscal-year and §4(5) tests cannot silently stand in for distinct VAT/admin conditions.",
+      "mapped_domains": [
+        "VAT"
+      ],
+      "current_Guide_read_scopes": [
+        {
+          "Guide": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-vat-return.md",
+          "Guide_sha256": "b0aac8b240ca637a881daa19ff6fd3eee0eee13bb111ce92d6dee3a49ddf4261",
+          "actual_selected_current_Guide_native_LF": [
+            89,
+            313
+          ],
+          "exact_Guide_excerpt": [
+            "**The 2026 boxes (Kennzahlen, Kz) on form USt 1 A.** Tax bases go in whole euros; tax amounts include cents. Source: BMF letter of 29 December 2025 with the 2026 form and instructions.",
+            "Not yet confirmed: that the EUR 50 gift limit is counted by calendar year for VAT (UStAE 15.6(4) was not read for this version; the income-tax text counts by financial year); that the entertainment receipt must be machine-produced and signed by the host (an administrative rule, not in § 4(5) EStG); which tax office handles a foreign business, by country (the Umsatzsteuerzuständigkeitsverordnung was not read for this version); the rounding rule for whole-euro tax bases on the advance return (the 2026 instructions say whole euros but not whether to round or cut off the cents)."
+          ],
+          "read_on": "2026-10-29",
+          "role": "Actual selected Guide reservation read by writer; underlying full primary reading belongs to explicitly attributed independent country review."
+        }
+      ]
+    },
+    {
+      "id": "DE-M06",
+      "reviewer_exact_boundary": "Actual OSS Q4 deadline Sunday31January2027 weekend treatment remains expressly unresolved; the Guide supplies conservative Friday29January filing/payment.",
+      "reviewer_exact_why_material": "Ordinary OSS businesses need the exact last lawful day, but the supplied early operational route avoids asserting a false extension. This is a narrow compliance partial, not absence of an OSS tax method.",
+      "mapped_domains": [
+        "VAT"
+      ],
+      "current_Guide_read_scopes": [
+        {
+          "Guide": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-vat-annual-and-special-schemes.md",
+          "Guide_sha256": "c9af14ff3cd68fa52372d444ff37c917860ae5bd6fa8ff645c08cdee03397d71",
+          "actual_selected_current_Guide_native_LF": [
+            112,
+            251
+          ],
+          "exact_Guide_excerpt": [
+            "| One-stop shop return and payment | End of the month after each quarter: 30 April, 31 July, 31 October, 31 January. Payment must have reached the Bundeskasse by then. A nil return is due for a quarter with no sales. For Q4 2026 the date is Sunday 31 January 2027: file and pay by Friday 29 January 2027, because no official text moves this date | § 18j(4) UStG; BZSt OSS page |",
+            "Not yet confirmed: whether the one-stop shop deadline for Q4 2026 (Sunday 31 January 2027) moves to the next working day under § 108(3) AO; neither § 18j UStG, UStAE 18j.1 nor the BZSt page says so, so the skill tells the reader to file and pay by Friday 29 January 2027."
+          ],
+          "read_on": "2026-10-29",
+          "role": "Actual selected Guide reservation read by writer; underlying full primary reading belongs to explicitly attributed independent country review."
+        }
+      ]
+    },
+    {
+      "id": "DE-M07",
+      "reviewer_exact_boundary": "Lower proven income during the compulsory-pension fixed-half-reference start phase remains unresolved; ordinary voluntary-health nonGKV-spouse attribution and owner-accident expense classification also lack a complete method.",
+      "reviewer_exact_why_material": "An ordinary low-profit startup can pay a different pension amount; spouse income can change an ordinary fund base; owner accident cost classification affects income tax. Do not assume full minimum or zero from source silence.",
+      "mapped_domains": [
+        "SC"
+      ],
+      "current_Guide_read_scopes": [
+        {
+          "Guide": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-social-contributions.md",
+          "Guide_sha256": "ebce79a0f32c40dfd3c2ee10589761c1332f2f94954a51ffd6c908bd9c8c8fad",
+          "actual_selected_current_Guide_native_LF": [
+            162,
+            450
+          ],
+          "exact_Guide_excerpt": [
+            "- **Base:** the member's whole economic capacity, not only profit: capital and letting income count too. The base is at least EUR 1,318.33 a month and at most the ceiling of EUR 5,812.50 ([§ 223(3) SGB V](https://www.gesetze-im-internet.de/sgb_5/__223.html)). If the spouse is not in a statutory fund, the spouse's income can count, less set amounts for children (§ 240(5)).",
+            "Not yet confirmed: the 2025 artists' levy rate (the ordinance setting it was not found; take it from the KSK notice); the due date of a voluntary health member's contribution (fund statute; ordinarily the 15th of the next month); the due date of unemployment insurance on application (agency notice); whether a lower proven income can be used in the pension start phase; whether the owner's own accident contribution is a business expense; the 2027 ceilings (next ordinance, expected late 2026); accident insurance rates (set by each insurer); each fund's own additional rate."
+          ],
+          "read_on": "2026-10-29",
+          "role": "Actual selected Guide reservation read by writer; underlying full primary reading belongs to explicitly attributed independent country review."
+        }
+      ]
+    },
+    {
+      "id": "DE-M08",
+      "reviewer_exact_boundary": "Saxony Midijob care-contribution allocation is not supplied. The actual outside-Saxony two-base algorithm is supplied and independently checked through de-payroll, closing the earlier general Midijob referral.",
+      "reviewer_exact_why_material": "This is an ordinary employee population in one Land, not a hypothetical specialist intersection.",
+      "mapped_domains": [
+        "SC",
+        "PR"
+      ],
+      "current_Guide_read_scopes": [
+        {
+          "Guide": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-payroll.md",
+          "Guide_sha256": "7a318a63c5364e3d0e95c06f1a8ebd9aae02e0355d93562e97918102395e56d5",
+          "actual_selected_current_Guide_native_LF": [
+            162
+          ],
+          "exact_Guide_excerpt": [
+            "**Transition band.** Normal wage tax by the ELStAM. Contributions are worked out on reduced bases by two formulas in [§ 20(2a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__20.html), with AE the monthly pay, G = EUR 603 and F = 0.6619. Base for the total contribution: BE = F x G + (2,000 / (2,000 - G) - G / (2,000 - G) x F) x (AE - G). Base for the employee's share: BE = 2,000 / (2,000 - G) x (AE - G). For the ordinarily shared branches outside Saxony, compute the total contribution by applying half the contribution rate to the first base, rounding to cents and doubling; compute the employee's ordinary half-rate contribution on the second base, rounding to cents. The employer bears the difference. Calculate the employee-only childless care surcharge on the first base; calculate care reductions on the second base, each rounded separately ([§ 1(2) and § 2(2) BVV](https://www.gesetze-im-internet.de/beitrvv/__2.html)). At AE EUR 1,000 the 0.6-point childless surcharge is EUR 5.12, not EUR 3.41. Saxony has a separate allocation under § 58(5) SGB XI; this ordinary half-rate worksheet does not supply that Saxony allocation. At AE EUR 1,000 the bases are EUR 854.06 and EUR 568.36. Not for apprentices. Exactly EUR 2,000 is still in the band (\"nicht übersteigen\")."
+          ],
+          "read_on": "2026-10-29",
+          "role": "Actual selected Guide reservation read by writer; underlying full primary reading belongs to explicitly attributed independent country review."
+        }
+      ]
+    },
+    {
+      "id": "DE-M09",
+      "reviewer_exact_boundary": "bAV support-fund/direct-promise routes and actual collective-agreement/real-social-saving15% top-up boundaries are not fully computed. Ordinary Pensionsfonds/Pensionskasse/Direktversicherung annual and specifically conditioned special tax routes are supplied.",
+      "reviewer_exact_why_material": "These are real employee pension arrangements. The Guide does not present them as zero, and the full actual payroll/bAV product input is not inferred from an example.",
+      "mapped_domains": [
+        "PR"
+      ],
+      "current_Guide_read_scopes": [
+        {
+          "Guide": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-payroll-benefits.md",
+          "Guide_sha256": "5cfe787fc72884808d51928252fb2a8a42c3442a50da315c846fffc3ea2f24eb",
+          "actual_selected_current_Guide_native_LF": [
+            239
+          ],
+          "exact_Guide_excerpt": [
+            "Not yet confirmed: the administrative car rules in R 8.1(9) LStR beyond the list-price rounding and part-month rule; the EUR 60 meal limit and staff-event rules in the wage tax guidelines beyond the statute; church tax rates on flat taxes (for § 37b the BMF letter, Rn. 36, points to the state decrees of 28 and 29 December 2006; the rates themselves were not read); whether a collective agreement can set aside the 15% top-up; whether a bAV top-up is owed where pay exceeds the ceilings (depends on the saving actually made); the written reasons of the 23 July 2026 BSG decision (only the hearing report was read); the wage tax treatment of the Unterstützungskasse and direct-promise routes of bAV, which is not covered here."
+          ],
+          "read_on": "2026-10-29",
+          "role": "Actual selected Guide reservation read by writer; underlying full primary reading belongs to explicitly attributed independent country review."
+        }
+      ]
+    },
+    {
+      "id": "DE-M10",
+      "reviewer_exact_boundary": "Application of the old GAufzV SME documentation relief to the current statutory audit transaction-matrix obligation is expressly unresolved.",
+      "reviewer_exact_why_material": "Ordinary small crossborder businesses can have a distinct audit handover duty. Threshold algebra alone does not choose the controlling duty.",
+      "mapped_domains": [
+        "TP"
+      ],
+      "current_Guide_read_scopes": [
+        {
+          "Guide": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-transfer-pricing.md",
+          "Guide_sha256": "e0fb36c2e05112e253ac55ce2bd1079fe537dfaac9638c662e7f7fca68fe5783",
+          "actual_selected_current_Guide_native_LF": [
+            138,
+            453
+          ],
+          "exact_Guide_excerpt": [
+            "- **Transaction matrix.** The pages do not say whether a smaller business must still hand over a transaction matrix. § 6 GAufzV dates from 2017, before the matrix existed, and still cites old sentence numbers. § 162(4) sentence 1 AO prints no exception for smaller businesses.",
+            "- Whether a smaller business within § 6 GAufzV must still hand over a transaction matrix: the pages read for this Guide do not say."
+          ],
+          "read_on": "2026-10-29",
+          "role": "Actual selected Guide reservation read by writer; underlying full primary reading belongs to explicitly attributed independent country review."
+        }
+      ]
+    },
+    {
+      "id": "DE-M11",
+      "reviewer_exact_boundary": "The new20% regular-return denominator's leave/sickness treatment, continuing homeoffice agreement/ordinance interaction, homeoffice-only failure case and actual euro conversion of Swiss pay remain unresolved.",
+      "reviewer_exact_why_material": "Ordinary commuters can cross the20% gate and every CHF salary needs a supported euro input. The independently stipulated EUR-only salary example does not settle either.",
+      "mapped_domains": [
+        "XB"
+      ],
+      "current_Guide_read_scopes": [
+        {
+          "Guide": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-to-switzerland-cross-border-tax.md",
+          "Guide_sha256": "796c662a90d1493b7b63a1bc83093175168016bfc5a5a7f312f8759471f838b5",
+          "actual_selected_current_Guide_native_LF": [
+            37,
+            40,
+            245
+          ],
+          "exact_Guide_excerpt": [
+            "- **Regular return, new from 2026.** There is a regular return only if the employee travels from home to the place of work and back on at least 20% of the agreed working days in the calendar year (protocol no. 5(b)). Agreed working days are those in the contract. Protocol no. 5(d) takes leave and sick days out of the working days for the 60-day test; the protocol does not say whether they also come out of the base for the 20% test, so check both bases (Example 2 passes and fails the same way on either).",
+            "- **Home office days.** Under the consultation agreement of 15 and 18 July 2022 (BMF letter of 26 July 2022), a working day spent entirely at home in the residence state is not a non-return day. That agreement was made under the treaty as amended in 2010; whether it still applies under the 2026 protocol is not confirmed (see the end of this skill). Either way, a home office day is not a day on which the person travels to the place of work and back, so from 2026 it counts against the 20% regular-return test.",
+            "Not yet confirmed: whether the home office consultation agreement of July 2022 still applies under the 2026 protocol text (it was made under the treaty as amended in 2010, and the new protocol no. 5 does not mention home office days; the 2023 Gre-1 notes still cite it); whether the BMF has issued an introductory letter on the 2026 commuter rules (none found in a search of bundesfinanzministerium.de on 2026-10-23); whether leave and sick days come out of the base for the 20% test; how the German implementing ordinance KonsVerCHEV (https://www.gesetze-im-internet.de/konsverchev/), which still uses 250 and 300 usual working days for part-time workers (§ 9) and a one day a week or five days a month return test (§ 7), sits beside protocol no. 5 from 2026; the euro conversion rule for Swiss pay; how the German tax office treats a year in which the 20% test fails only because of home office days."
+          ],
+          "read_on": "2026-10-29",
+          "role": "Actual selected Guide reservation read by writer; underlying full primary reading belongs to explicitly attributed independent country review."
+        }
+      ]
+    }
+  ],
+  "not_promoted_to_gaps": [
+    {
+      "class": "E",
+      "items": "Actual fund additional rates, U1/U2 tariff and reimbursement scope, accident premium, municipality multiplier, claimant age/children, actual insurance status and pension certificate, documented building/land valuation, arm's-length market rent, rented-room shared-cost ratio and actual allowable expense invoices: positive formulas apply once those actual facts are known."
+    },
+    {
+      "class": "F",
+      "items": "2026 return form names/box numbers compared with expressly dated2025 forms;2027 ceiling amounts; unacquired FederalGazette original where an actual current official administrative value and statutory formula independently support the same2026 rate; official route returning empty/503 proves only access result."
+    },
+    {
+      "class": "F",
+      "items": "Exact Leitweg-ID validation regex, recipient-directory/connection checks and error-message layout are portal/technical execution limits; a complete country tax method does not require live transmission. Wrong-format nonissue-fine interpretation is a narrow penalty question that stays explicit."
+    },
+    {
+      "class": "S",
+      "items": "Organschaft/restructuring, complex §15a/15b investment models, disputed expert actual useful life, estate-community/paid-usufruct structures, NFT/protocol-specific classifications not covered by actual guidance, groupwide APA execution and UK immigration/UKpayroll outside the expressly Germany-only firsthire workflow are retained bounded referrals. No blanket statement that all such subjects are legally unsettled follows from a ministry document excluding them."
+    },
+    {
+      "class": "S",
+      "items": "Five companion population entries comprise README plus bookkeeping,financialstatements,formation and references; preservation/routing checked, no new full accounting/company-formation legal attestation."
+    }
+  ],
+  "IT_CORP_ordinary_status": {
+    "ordinary_positive": "15% KSt with taxpayer-favour whole-euro rounding, Soli, trade tax add-backs/reductions/losses/apportionment, charitable sponsorship gates, revised thin-cap standalone conditions and restoration of actual ordinary old topics supplied.",
+    "status": "ordinary method supplied within stated resident-company scope",
+    "material_ids": [],
+    "limits": "Actual municipality multiplier is a claimant input. Future2026 KSt form layout is F, not an ordinary computation hole. Organschaft/restructuring/complex international ownership remain specialist referrals."
+  }
+}

@@ -1,0 +1,1743 @@
+{
+  "basis": "de-income-tax independent actual reading1\u2013192/quotes1\u201396, not writer PASS or hash alone",
+  "source_read_record_sha256": "454633b6edc19f7f7ee1bc0fd1fd78c945d7d34f76d4f5ab555e85239297542a",
+  "claim_map": [
+    {
+      "row": 1,
+      "Guide_LF": 19,
+      "bridge_to_income_row": 1,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 2,
+      "Guide_LF": 21,
+      "bridge_to_income_row": 2,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 3,
+      "Guide_LF": 23,
+      "bridge_to_income_row": 3,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 4,
+      "Guide_LF": 24,
+      "bridge_to_income_row": 4,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 5,
+      "Guide_LF": 25,
+      "bridge_to_income_row": 5,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 6,
+      "Guide_LF": 26,
+      "bridge_to_income_row": 6,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 7,
+      "Guide_LF": 27,
+      "bridge_to_income_row": 7,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 8,
+      "Guide_LF": 28,
+      "bridge_to_income_row": 8,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 9,
+      "Guide_LF": 29,
+      "bridge_to_income_row": 9,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 10,
+      "Guide_LF": 33,
+      "bridge_to_income_row": 10,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 11,
+      "Guide_LF": 34,
+      "bridge_to_income_row": 11,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 12,
+      "Guide_LF": 35,
+      "bridge_to_income_row": 12,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 13,
+      "Guide_LF": 36,
+      "bridge_to_income_row": 13,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 14,
+      "Guide_LF": 37,
+      "bridge_to_income_row": 14,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 15,
+      "Guide_LF": 41,
+      "bridge_to_income_row": 15,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 16,
+      "Guide_LF": 43,
+      "bridge_to_income_row": 16,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 17,
+      "Guide_LF": 44,
+      "bridge_to_income_row": 17,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 18,
+      "Guide_LF": 45,
+      "bridge_to_income_row": 18,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 19,
+      "Guide_LF": 46,
+      "bridge_to_income_row": 19,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 20,
+      "Guide_LF": 47,
+      "bridge_to_income_row": 20,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 21,
+      "Guide_LF": 48,
+      "bridge_to_income_row": 21,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 22,
+      "Guide_LF": 49,
+      "bridge_to_income_row": 22,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 23,
+      "Guide_LF": 50,
+      "bridge_to_income_row": 23,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 24,
+      "Guide_LF": 51,
+      "bridge_to_income_row": 24,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 25,
+      "Guide_LF": 52,
+      "bridge_to_income_row": 25,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 26,
+      "Guide_LF": 53,
+      "bridge_to_income_row": 26,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 27,
+      "Guide_LF": 54,
+      "bridge_to_income_row": 27,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 28,
+      "Guide_LF": 55,
+      "bridge_to_income_row": 28,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 29,
+      "Guide_LF": 56,
+      "bridge_to_income_row": 29,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 30,
+      "Guide_LF": 57,
+      "bridge_to_income_row": 30,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 31,
+      "Guide_LF": 58,
+      "bridge_to_income_row": 31,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 32,
+      "Guide_LF": 59,
+      "bridge_to_income_row": 32,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 33,
+      "Guide_LF": 60,
+      "bridge_to_income_row": 33,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 34,
+      "Guide_LF": 61,
+      "bridge_to_income_row": 34,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 35,
+      "Guide_LF": 62,
+      "bridge_to_income_row": 35,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 36,
+      "Guide_LF": 63,
+      "bridge_to_income_row": 36,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 37,
+      "Guide_LF": 64,
+      "bridge_to_income_row": 37,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 38,
+      "Guide_LF": 65,
+      "bridge_to_income_row": 38,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 39,
+      "Guide_LF": 66,
+      "bridge_to_income_row": 39,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 40,
+      "Guide_LF": 67,
+      "bridge_to_income_row": 40,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 41,
+      "Guide_LF": 68,
+      "bridge_to_income_row": 41,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 42,
+      "Guide_LF": 69,
+      "bridge_to_income_row": 42,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 43,
+      "Guide_LF": 70,
+      "bridge_to_income_row": 43,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 44,
+      "Guide_LF": 71,
+      "bridge_to_income_row": 44,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 45,
+      "Guide_LF": 72,
+      "bridge_to_income_row": 45,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 46,
+      "Guide_LF": 73,
+      "bridge_to_income_row": 46,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 47,
+      "Guide_LF": 74,
+      "bridge_to_income_row": 47,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 48,
+      "Guide_LF": 75,
+      "bridge_to_income_row": 48,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 49,
+      "Guide_LF": 79,
+      "bridge_to_income_row": 49,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 50,
+      "Guide_LF": 81,
+      "bridge_to_income_row": 50,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 51,
+      "Guide_LF": 83,
+      "bridge_to_income_row": 51,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 52,
+      "Guide_LF": 84,
+      "bridge_to_income_row": 52,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 53,
+      "Guide_LF": 85,
+      "bridge_to_income_row": 53,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 54,
+      "Guide_LF": 86,
+      "bridge_to_income_row": 54,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 55,
+      "Guide_LF": 87,
+      "bridge_to_income_row": 55,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 56,
+      "Guide_LF": 88,
+      "bridge_to_income_row": 56,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 57,
+      "Guide_LF": 89,
+      "bridge_to_income_row": 57,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 58,
+      "Guide_LF": 90,
+      "bridge_to_income_row": 58,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 59,
+      "Guide_LF": 91,
+      "bridge_to_income_row": 59,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 60,
+      "Guide_LF": 92,
+      "bridge_to_income_row": 60,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 61,
+      "Guide_LF": 93,
+      "bridge_to_income_row": 61,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 62,
+      "Guide_LF": 94,
+      "bridge_to_income_row": 62,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 63,
+      "Guide_LF": 95,
+      "bridge_to_income_row": 63,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 64,
+      "Guide_LF": 96,
+      "bridge_to_income_row": 64,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 65,
+      "Guide_LF": 98,
+      "bridge_to_income_row": 65,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 66,
+      "Guide_LF": 100,
+      "bridge_to_income_row": 66,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 67,
+      "Guide_LF": 102,
+      "bridge_to_income_row": 67,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 68,
+      "Guide_LF": 104,
+      "bridge_to_income_row": 68,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 69,
+      "Guide_LF": 106,
+      "bridge_to_income_row": 69,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 70,
+      "Guide_LF": 108,
+      "bridge_to_income_row": 70,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 71,
+      "Guide_LF": 112,
+      "bridge_to_income_row": 71,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 72,
+      "Guide_LF": 114,
+      "bridge_to_income_row": 72,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 73,
+      "Guide_LF": 115,
+      "bridge_to_income_row": 73,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 74,
+      "Guide_LF": 116,
+      "bridge_to_income_row": 74,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 75,
+      "Guide_LF": 117,
+      "bridge_to_income_row": 75,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 76,
+      "Guide_LF": 118,
+      "bridge_to_income_row": 76,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 77,
+      "Guide_LF": 119,
+      "bridge_to_income_row": 77,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 78,
+      "Guide_LF": 123,
+      "bridge_to_income_row": 78,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 79,
+      "Guide_LF": 124,
+      "bridge_to_income_row": 79,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 80,
+      "Guide_LF": 125,
+      "bridge_to_income_row": 80,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 81,
+      "Guide_LF": 126,
+      "bridge_to_income_row": 81,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 82,
+      "Guide_LF": 130,
+      "bridge_to_income_row": 82,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 83,
+      "Guide_LF": 131,
+      "bridge_to_income_row": 83,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 84,
+      "Guide_LF": 132,
+      "bridge_to_income_row": 84,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 85,
+      "Guide_LF": 133,
+      "bridge_to_income_row": 85,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 86,
+      "Guide_LF": 139,
+      "bridge_to_income_row": 86,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 87,
+      "Guide_LF": 141,
+      "bridge_to_income_row": 87,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 88,
+      "Guide_LF": 142,
+      "bridge_to_income_row": 88,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 89,
+      "Guide_LF": 143,
+      "bridge_to_income_row": 89,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 90,
+      "Guide_LF": 144,
+      "bridge_to_income_row": 90,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 91,
+      "Guide_LF": 145,
+      "bridge_to_income_row": 91,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 92,
+      "Guide_LF": 147,
+      "bridge_to_income_row": 126,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 93,
+      "Guide_LF": 148,
+      "bridge_to_income_row": 93,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 94,
+      "Guide_LF": 149,
+      "bridge_to_income_row": 128,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 95,
+      "Guide_LF": 150,
+      "bridge_to_income_row": 95,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 96,
+      "Guide_LF": 151,
+      "bridge_to_income_row": 96,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 97,
+      "Guide_LF": 152,
+      "bridge_to_income_row": 97,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 98,
+      "Guide_LF": 153,
+      "bridge_to_income_row": 98,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 99,
+      "Guide_LF": 154,
+      "bridge_to_income_row": 99,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 100,
+      "Guide_LF": 155,
+      "bridge_to_income_row": 100,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 101,
+      "Guide_LF": 156,
+      "bridge_to_income_row": 101,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 102,
+      "Guide_LF": 157,
+      "bridge_to_income_row": 102,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 103,
+      "Guide_LF": 158,
+      "bridge_to_income_row": 103,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 104,
+      "Guide_LF": 159,
+      "bridge_to_income_row": 133,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 105,
+      "Guide_LF": 160,
+      "bridge_to_income_row": 105,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 106,
+      "Guide_LF": 161,
+      "bridge_to_income_row": 106,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 107,
+      "Guide_LF": 162,
+      "bridge_to_income_row": 107,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 108,
+      "Guide_LF": 163,
+      "bridge_to_income_row": 108,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 109,
+      "Guide_LF": 164,
+      "bridge_to_income_row": 137,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 110,
+      "Guide_LF": 165,
+      "bridge_to_income_row": 110,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 111,
+      "Guide_LF": 166,
+      "bridge_to_income_row": 111,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 112,
+      "Guide_LF": 167,
+      "bridge_to_income_row": 112,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 113,
+      "Guide_LF": 168,
+      "bridge_to_income_row": 142,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 114,
+      "Guide_LF": 169,
+      "bridge_to_income_row": 114,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 115,
+      "Guide_LF": 170,
+      "bridge_to_income_row": 115,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 116,
+      "Guide_LF": 171,
+      "bridge_to_income_row": 116,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 117,
+      "Guide_LF": 172,
+      "bridge_to_income_row": 117,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 118,
+      "Guide_LF": 173,
+      "bridge_to_income_row": 150,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 119,
+      "Guide_LF": 175,
+      "bridge_to_income_row": 119,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 120,
+      "Guide_LF": 179,
+      "bridge_to_income_row": 120,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 121,
+      "Guide_LF": 181,
+      "bridge_to_income_row": 121,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 122,
+      "Guide_LF": 182,
+      "bridge_to_income_row": 122,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 123,
+      "Guide_LF": 183,
+      "bridge_to_income_row": 123,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 124,
+      "Guide_LF": 184,
+      "bridge_to_income_row": 124,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 125,
+      "Guide_LF": 185,
+      "bridge_to_income_row": 125,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 126,
+      "Guide_LF": 187,
+      "bridge_to_income_row": 126,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 127,
+      "Guide_LF": 188,
+      "bridge_to_income_row": 127,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 128,
+      "Guide_LF": 189,
+      "bridge_to_income_row": 128,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 129,
+      "Guide_LF": 190,
+      "bridge_to_income_row": 129,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 130,
+      "Guide_LF": 191,
+      "bridge_to_income_row": 130,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 131,
+      "Guide_LF": 192,
+      "bridge_to_income_row": 131,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 132,
+      "Guide_LF": 193,
+      "bridge_to_income_row": 132,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 133,
+      "Guide_LF": 194,
+      "bridge_to_income_row": 133,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 134,
+      "Guide_LF": 195,
+      "bridge_to_income_row": 134,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 135,
+      "Guide_LF": 196,
+      "bridge_to_income_row": 135,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 136,
+      "Guide_LF": 197,
+      "bridge_to_income_row": 136,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 137,
+      "Guide_LF": 198,
+      "bridge_to_income_row": 137,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 138,
+      "Guide_LF": 199,
+      "bridge_to_income_row": 138,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 139,
+      "Guide_LF": 200,
+      "bridge_to_income_row": 139,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 140,
+      "Guide_LF": 201,
+      "bridge_to_income_row": 140,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 141,
+      "Guide_LF": 202,
+      "bridge_to_income_row": 141,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 142,
+      "Guide_LF": 203,
+      "bridge_to_income_row": 142,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 143,
+      "Guide_LF": 204,
+      "bridge_to_income_row": 143,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 144,
+      "Guide_LF": 205,
+      "bridge_to_income_row": 144,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 145,
+      "Guide_LF": 206,
+      "bridge_to_income_row": 145,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 146,
+      "Guide_LF": 207,
+      "bridge_to_income_row": 146,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 147,
+      "Guide_LF": 208,
+      "bridge_to_income_row": 147,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 148,
+      "Guide_LF": 209,
+      "bridge_to_income_row": 148,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 149,
+      "Guide_LF": 210,
+      "bridge_to_income_row": 149,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 150,
+      "Guide_LF": 211,
+      "bridge_to_income_row": 150,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 151,
+      "Guide_LF": 213,
+      "bridge_to_income_row": 151,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 152,
+      "Guide_LF": 217,
+      "bridge_to_income_row": 152,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 153,
+      "Guide_LF": 218,
+      "bridge_to_income_row": 153,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 154,
+      "Guide_LF": 219,
+      "bridge_to_income_row": 154,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 155,
+      "Guide_LF": 220,
+      "bridge_to_income_row": 155,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 156,
+      "Guide_LF": 221,
+      "bridge_to_income_row": 156,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 157,
+      "Guide_LF": 222,
+      "bridge_to_income_row": 157,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 158,
+      "Guide_LF": 226,
+      "bridge_to_income_row": 158,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 159,
+      "Guide_LF": 228,
+      "bridge_to_income_row": 159,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 160,
+      "Guide_LF": 229,
+      "bridge_to_income_row": 160,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 161,
+      "Guide_LF": 230,
+      "bridge_to_income_row": 161,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 162,
+      "Guide_LF": 231,
+      "bridge_to_income_row": 162,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 163,
+      "Guide_LF": 232,
+      "bridge_to_income_row": 163,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 164,
+      "Guide_LF": 233,
+      "bridge_to_income_row": 164,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 165,
+      "Guide_LF": 234,
+      "bridge_to_income_row": 165,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 166,
+      "Guide_LF": 235,
+      "bridge_to_income_row": 166,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 167,
+      "Guide_LF": 236,
+      "bridge_to_income_row": 167,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 168,
+      "Guide_LF": 237,
+      "bridge_to_income_row": 168,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 169,
+      "Guide_LF": 238,
+      "bridge_to_income_row": 169,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 170,
+      "Guide_LF": 239,
+      "bridge_to_income_row": 170,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 171,
+      "Guide_LF": 240,
+      "bridge_to_income_row": 171,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 172,
+      "Guide_LF": 241,
+      "bridge_to_income_row": 172,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 173,
+      "Guide_LF": 242,
+      "bridge_to_income_row": 173,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 174,
+      "Guide_LF": 243,
+      "bridge_to_income_row": 174,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 175,
+      "Guide_LF": 244,
+      "bridge_to_income_row": 175,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 176,
+      "Guide_LF": 245,
+      "bridge_to_income_row": 176,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 177,
+      "Guide_LF": 246,
+      "bridge_to_income_row": 177,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 178,
+      "Guide_LF": 247,
+      "bridge_to_income_row": 178,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 179,
+      "Guide_LF": 248,
+      "bridge_to_income_row": 179,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 180,
+      "Guide_LF": 249,
+      "bridge_to_income_row": 180,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 181,
+      "Guide_LF": 250,
+      "bridge_to_income_row": 181,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 182,
+      "Guide_LF": 251,
+      "bridge_to_income_row": 182,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 183,
+      "Guide_LF": 252,
+      "bridge_to_income_row": 183,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 184,
+      "Guide_LF": 253,
+      "bridge_to_income_row": 184,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 185,
+      "Guide_LF": 254,
+      "bridge_to_income_row": 185,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 186,
+      "Guide_LF": 255,
+      "bridge_to_income_row": 186,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 187,
+      "Guide_LF": 256,
+      "bridge_to_income_row": 187,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 188,
+      "Guide_LF": 257,
+      "bridge_to_income_row": 188,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 189,
+      "Guide_LF": 258,
+      "bridge_to_income_row": 189,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 190,
+      "Guide_LF": 259,
+      "bridge_to_income_row": 190,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 191,
+      "Guide_LF": 260,
+      "bridge_to_income_row": 191,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 192,
+      "Guide_LF": 262,
+      "bridge_to_income_row": 192,
+      "wording_and_anchor_relationship_exact": true
+    },
+    {
+      "row": 193,
+      "Guide_LF": 264,
+      "direct_read": "> Contributed by Michael Cutajar.",
+      "kind": "historical attribution, no tax rule"
+    }
+  ],
+  "quote_map": [
+    {
+      "row": 1,
+      "quote_id": "E10d-1",
+      "bridge_to_income_quote_row": 1,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 2,
+      "quote_id": "E10d-2",
+      "bridge_to_income_quote_row": 2,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 3,
+      "quote_id": "G11",
+      "bridge_to_income_quote_row": 3,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 4,
+      "quote_id": "G16",
+      "bridge_to_income_quote_row": 4,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 5,
+      "quote_id": "G36",
+      "bridge_to_income_quote_row": 5,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 6,
+      "quote_id": "BG197a",
+      "bridge_to_income_quote_row": 6,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 7,
+      "quote_id": "E7-1",
+      "bridge_to_income_quote_row": 7,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 8,
+      "quote_id": "E7-2",
+      "bridge_to_income_quote_row": 8,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 9,
+      "quote_id": "E6-2",
+      "bridge_to_income_quote_row": 9,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 10,
+      "quote_id": "SoliRate",
+      "bridge_to_income_quote_row": 10,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 11,
+      "quote_id": "SoliBase",
+      "bridge_to_income_quote_row": 11,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 12,
+      "quote_id": "AO149-2",
+      "bridge_to_income_quote_row": 12,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 13,
+      "quote_id": "AO149-3",
+      "bridge_to_income_quote_row": 13,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 14,
+      "quote_id": "AO149-4",
+      "bridge_to_income_quote_row": 14,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 15,
+      "quote_id": "AO108",
+      "bridge_to_income_quote_row": 15,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 16,
+      "quote_id": "AO152-1",
+      "bridge_to_income_quote_row": 16,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 17,
+      "quote_id": "AO152-2",
+      "bridge_to_income_quote_row": 17,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 18,
+      "quote_id": "AO152-3",
+      "bridge_to_income_quote_row": 18,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 19,
+      "quote_id": "AO152-5",
+      "bridge_to_income_quote_row": 19,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 20,
+      "quote_id": "AO152-10",
+      "bridge_to_income_quote_row": 20,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 21,
+      "quote_id": "AO233a-1",
+      "bridge_to_income_quote_row": 21,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 22,
+      "quote_id": "AO233a-2",
+      "bridge_to_income_quote_row": 22,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 23,
+      "quote_id": "AO233a-3",
+      "bridge_to_income_quote_row": 23,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 24,
+      "quote_id": "AO238-1",
+      "bridge_to_income_quote_row": 24,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 25,
+      "quote_id": "AO238-1a",
+      "bridge_to_income_quote_row": 25,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 26,
+      "quote_id": "AO238-2",
+      "bridge_to_income_quote_row": 26,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 27,
+      "quote_id": "AO240-1",
+      "bridge_to_income_quote_row": 27,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 28,
+      "quote_id": "E37-1",
+      "bridge_to_income_quote_row": 28,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 29,
+      "quote_id": "E37-3",
+      "bridge_to_income_quote_row": 29,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 30,
+      "quote_id": "E37-5",
+      "bridge_to_income_quote_row": 30,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 31,
+      "quote_id": "E36-4",
+      "bridge_to_income_quote_row": 31,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 32,
+      "quote_id": "RES",
+      "bridge_to_income_quote_row": 32,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 33,
+      "quote_id": "PROF",
+      "bridge_to_income_quote_row": 33,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 34,
+      "quote_id": "TRADE",
+      "bridge_to_income_quote_row": 34,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 35,
+      "quote_id": "CASH",
+      "bridge_to_income_quote_row": 35,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 36,
+      "quote_id": "BUSCOST",
+      "bridge_to_income_quote_row": 36,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 37,
+      "quote_id": "INTEREST",
+      "bridge_to_income_quote_row": 37,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 38,
+      "quote_id": "BOOKS",
+      "bridge_to_income_quote_row": 38,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 39,
+      "quote_id": "FILEDUTY",
+      "bridge_to_income_quote_row": 39,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 40,
+      "quote_id": "EFILE",
+      "bridge_to_income_quote_row": 40,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 41,
+      "quote_id": "EEUR",
+      "bridge_to_income_quote_row": 41,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 42,
+      "quote_id": "TARIFF",
+      "bridge_to_income_quote_row": 42,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 43,
+      "quote_id": "SPLIT",
+      "bridge_to_income_quote_row": 43,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 44,
+      "quote_id": "SOLILIMIT",
+      "bridge_to_income_quote_row": 44,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 45,
+      "quote_id": "CHURCHBASE",
+      "bridge_to_income_quote_row": 45,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 46,
+      "quote_id": "CHURCHRATE",
+      "bridge_to_income_quote_row": 46,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 47,
+      "quote_id": "CREDIT",
+      "bridge_to_income_quote_row": 47,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 48,
+      "quote_id": "NOTRADEEXP",
+      "bridge_to_income_quote_row": 48,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 49,
+      "quote_id": "KU",
+      "bridge_to_income_quote_row": 49,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 50,
+      "quote_id": "GIFTS",
+      "bridge_to_income_quote_row": 50,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 51,
+      "quote_id": "ENTERTAIN",
+      "bridge_to_income_quote_row": 51,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 52,
+      "quote_id": "DAY",
+      "bridge_to_income_quote_row": 52,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 53,
+      "quote_id": "ROOM",
+      "bridge_to_income_quote_row": 53,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 54,
+      "quote_id": "COMMUTEBRIDGE",
+      "bridge_to_income_quote_row": 54,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 55,
+      "quote_id": "COMMUTE",
+      "bridge_to_income_quote_row": 55,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 56,
+      "quote_id": "MEALBRIDGE",
+      "bridge_to_income_quote_row": 56,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 57,
+      "quote_id": "MEALS",
+      "bridge_to_income_quote_row": 57,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 58,
+      "quote_id": "CAR1",
+      "bridge_to_income_quote_row": 58,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 59,
+      "quote_id": "CARLOG",
+      "bridge_to_income_quote_row": 59,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 60,
+      "quote_id": "VATCOST",
+      "bridge_to_income_quote_row": 60,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 61,
+      "quote_id": "EURGWG",
+      "bridge_to_income_quote_row": 61,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 62,
+      "quote_id": "POOL",
+      "bridge_to_income_quote_row": 62,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 63,
+      "quote_id": "EV",
+      "bridge_to_income_quote_row": 63,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 64,
+      "quote_id": "IAB",
+      "bridge_to_income_quote_row": 64,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 65,
+      "quote_id": "SPECIALAFA",
+      "bridge_to_income_quote_row": 65,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 66,
+      "quote_id": "PENSIONELIG",
+      "bridge_to_income_quote_row": 66,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 67,
+      "quote_id": "PENSIONCAP",
+      "bridge_to_income_quote_row": 67,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 68,
+      "quote_id": "PENSIONBASE",
+      "bridge_to_income_quote_row": 68,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 69,
+      "quote_id": "PENSIONRATE",
+      "bridge_to_income_quote_row": 69,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 70,
+      "quote_id": "HEALTH",
+      "bridge_to_income_quote_row": 70,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 71,
+      "quote_id": "HEALTHCAP",
+      "bridge_to_income_quote_row": 71,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 72,
+      "quote_id": "LUMPSUM",
+      "bridge_to_income_quote_row": 72,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 73,
+      "quote_id": "CASHTIME",
+      "bridge_to_income_quote_row": 73,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 74,
+      "quote_id": "PERSONAL",
+      "bridge_to_income_quote_row": 74,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 75,
+      "quote_id": "FINES",
+      "bridge_to_income_quote_row": 75,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 76,
+      "quote_id": "RECORDS",
+      "bridge_to_income_quote_row": 76,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 77,
+      "quote_id": "PAIDCHURCH",
+      "bridge_to_income_quote_row": 77,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 78,
+      "quote_id": "BASE",
+      "bridge_to_income_quote_row": 78,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 79,
+      "quote_id": "REGISTER",
+      "bridge_to_income_quote_row": 79,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 80,
+      "quote_id": "REGISTERMONTH",
+      "bridge_to_income_quote_row": 80,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 81,
+      "quote_id": "CRIME",
+      "bridge_to_income_quote_row": 81,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 82,
+      "quote_id": "RECKLESS",
+      "bridge_to_income_quote_row": 82,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 83,
+      "quote_id": "NRTRADE",
+      "bridge_to_income_quote_row": 83,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 84,
+      "quote_id": "NRPROF",
+      "bridge_to_income_quote_row": 84,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 85,
+      "quote_id": "FOREIGNCREDIT",
+      "bridge_to_income_quote_row": 85,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 86,
+      "quote_id": "PROGRESSION",
+      "bridge_to_income_quote_row": 86,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 87,
+      "quote_id": "INPUTVAT",
+      "bridge_to_income_quote_row": 87,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 88,
+      "quote_id": "EURGROSS",
+      "bridge_to_income_quote_row": 88,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 89,
+      "quote_id": "EURVATIN",
+      "bridge_to_income_quote_row": 89,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 90,
+      "quote_id": "EURVATOUT",
+      "bridge_to_income_quote_row": 90,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 91,
+      "quote_id": "COMPUTER",
+      "bridge_to_income_quote_row": 91,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 92,
+      "quote_id": "TRAVEL",
+      "bridge_to_income_quote_row": 92,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 93,
+      "quote_id": "TRADE2008",
+      "bridge_to_income_quote_row": 93,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 94,
+      "quote_id": "PROGEXCEPTIONS",
+      "bridge_to_income_quote_row": 94,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 95,
+      "quote_id": "PROGINTRO",
+      "bridge_to_income_quote_row": 95,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    },
+    {
+      "row": 96,
+      "quote_id": "PROGAPPLY",
+      "bridge_to_income_quote_row": 96,
+      "full_quote_source_identity_native_scope_and_claim_relationship_exact": true
+    }
+  ],
+  "meaning": "Same exact text/rule, exact source raw/reader/native scopes and identical claim-anchor relationship; no duplicated fresh reading claim"
+}

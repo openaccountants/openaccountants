@@ -1,0 +1,18 @@
+§ 18i SGB 4 - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Sozialgesetzbuch (SGB) Viertes Buch (IV) - Gemeinsame Vorschriften für die Sozialversicherung - (Artikel I des Gesetzes vom 23. Dezember 1976, BGBl. I S. 3845)
+§ 18i Betriebsnummer für Beschäftigungsbetriebe der Arbeitgeber
+(1) Der Arbeitgeber hat zur Teilnahme an den Meldeverfahren zur Sozialversicherung bei der Bundesagentur für Arbeit eine Betriebsnummer für jeden seiner Beschäftigungsbetriebe elektronisch zu beantragen.
+(2) Der Arbeitgeber hat zur Vergabe der Betriebsnummer der Bundesagentur für Arbeit die dazu notwendigen Angaben, insbesondere den Namen und die Anschrift des Beschäftigungsbetriebes, den Beschäftigungsort, die wirtschaftliche Tätigkeit des Beschäftigungsbetriebes und die Rechtsform des Betriebes sowie die Unternehmernummer einschließlich des Anhangs gemäß § 136a des Siebten Buches elektronisch zu übermitteln.
+(3) Für Beschäftigungsbetriebe desselben Arbeitgebers mit unterschiedlicher wirtschaftlicher Betätigung oder in verschiedenen Gemeinden sind jeweils eigene Betriebsnummern zu vergeben.
+(4) Änderungen zu den Angaben nach Absatz 2 sowie eine Meldung im Fall der vollständigen Beendigung der Betriebstätigkeit sind vom Arbeitgeber, nach Eröffnung des Insolvenzverfahrens vom Insolvenzverwalter, unverzüglich der Bundesagentur für Arbeit durch gesicherte und verschlüsselte Datenübertragung aus systemgeprüften Programmen oder mittels maschinell erstellter Ausfüllhilfen zu übermitteln. Dies gilt auch für anlassbezogene Bestandsmeldungen. Die Bundesagentur für Arbeit hat alle Rückmeldungen an die Arbeitgeber oder Insolvenzverwalter durch gesicherte und verschlüsselte Datenübertragung zu erstatten.
+(5) Das Nähere zum Verfahren und zum Inhalt der zu übermittelnden Angaben, insbesondere der Datensätze sowie der in Absatz 4 Satz 2 genannten Anlässe, regeln die Gemeinsamen Grundsätze nach § 28b Absatz 1 Satz 1 Nummer 1 bis 3.
+(6) Die Betriebsnummern und alle Angaben nach den Absätzen 2 und 4 werden bei der Bundesagentur für Arbeit in einem elektronischen Dateisystem der Beschäftigungsbetriebe gespeichert.
+(7) Zur Pflege der im Dateisystem der Beschäftigungsbetriebe zu den Betriebsnummern gespeicherten Angaben ist die Bundesagentur für Arbeit berechtigt, die Daten aus den zu den Beschäftigungsbetrieben übermittelten Meldungen der Sozialversicherungsträger zu verarbeiten. Die Sozialversicherungsträger haben diese Meldungen durch gesicherte und verschlüsselte Datenübertragung zu übermitteln.
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

@@ -1,0 +1,112 @@
+[
+  {
+    "finding": "version",
+    "before": "version: 1.2",
+    "after": "version: 1.3"
+  },
+  {
+    "finding": "R97",
+    "before": "| Filing deadline | 31 July 2027 for 2026; with an adviser, end of February 2028, which the tax office can shorten (§ 149 AO) |",
+    "after": "| Filing deadline | For 2026: nominal 31 July 2027 is Saturday, so the ordinary deadline is Monday 2 August 2027 under § 108(3) AO, subject to any applicable local public holiday; with an adviser, end of February 2028, which the tax office can shorten (§ 149 AO) |"
+  },
+  {
+    "finding": "R98",
+    "before": "| Meals: arrival and departure day, and a day over eight hours | EUR 14 | \"jeweils 14 Euro für den An- und Abreisetag\" |",
+    "after": "| Meals: arrival/departure day with a qualifying overnight stay on that, the following or preceding day; separately, a day without an overnight stay only if absence exceeds eight hours | EUR 14 | § 9(4a) sentence 3 nos. 2–3; the three-month limit remains |"
+  },
+  {
+    "finding": "R99",
+    "before": "| Commuting allowance | § 4(5) no. 6 EStG, which applies § 9(1) sentence 3 no. 4 to the owner's trips between home and the business premises: one rate from the first kilometre in 2026, one way, per day at the premises |",
+    "after": "| Commuting allowance | § 4(5) no. 6 EStG, which applies § 9(1) sentence 3 no. 4 to the owner's trips between home and the business premises: one rate from the first kilometre in 2026, one way, per day at the premises; the EUR 4,500 cap does not apply to the extent the actual own-car or use-provided-car exception applies |"
+  },
+  {
+    "finding": "R99",
+    "before": "| Yearly cap on it | EUR 4,500 | \"höchstens jedoch 4 500 Euro\" |",
+    "after": "| Yearly cap where the own-car/use-provided-car exception does not apply | EUR 4,500 | \"höchstens jedoch 4 500 Euro\"; higher amount allowed to the extent an own or use-provided car is used (§ 9(1) no. 4 sentence 2) |"
+  },
+  {
+    "finding": "R100",
+    "before": "| Home working day rate | § 4(5) no. 6c: the rate below per day worked mainly at home, up to the yearly cap |",
+    "after": "| Home working day rate | § 4(5) no. 6c: ordinarily work mainly at home and do not visit an outside first workplace that day. If permanently no other workplace is available, the day rate can also apply on a day worked elsewhere or at the first workplace. No day rate to the extent the specified double-household accommodation deduction is available or a no. 6b room deduction is taken; one cap covers all business/professional activity |"
+  },
+  {
+    "finding": "R100",
+    "before": "| Yearly flat amount for a home office room that is the centre of all activity | EUR 1,260 | \"pauschal ein Betrag von 1 260 Euro\" |",
+    "after": "| Yearly flat amount for a home office room that is the centre of all business/professional activity, reduced by 1/12 for every full calendar month that condition is absent | EUR 1,260 | \"pauschal ein Betrag von 1 260 Euro\"; § 4(5) no. 6b sentence 4 full-month reduction |"
+  },
+  {
+    "finding": "R102",
+    "before": "| Immediate write-off, § 6(2) | Full deduction in the purchase year, cost per asset less input VAT not above the limit below |",
+    "after": "| Immediate write-off, § 6(2) | For a depreciable movable fixed asset capable of independent use: full deduction in the purchase year, cost per asset less input VAT not above the limit below |"
+  },
+  {
+    "finding": "R102",
+    "before": "| Pool, § 6(2a) | Assets between the bounds below: one pool a year, released at one fifth a year |",
+    "after": "| Pool, § 6(2a) | Qualifying depreciable movable fixed assets capable of independent use, between the bounds below: one pool a year, released at one fifth a year |"
+  },
+  {
+    "finding": "R102",
+    "before": "| Immediate write-off: cost per asset, less input VAT contained in it | EUR 800 | \"das einzelne Wirtschaftsgut 800 Euro nicht\" |",
+    "after": "| Immediate write-off: cost per qualifying independently usable depreciable movable fixed asset, less input VAT contained in it | EUR 800 | \"das einzelne Wirtschaftsgut 800 Euro nicht\" |"
+  },
+  {
+    "finding": "R102",
+    "before": "| Pool: cost per asset above the first, not above the second | EUR 250 to EUR 1,000 | \"250 Euro, aber nicht 1 000 Euro übersteigen\" |",
+    "after": "| Pool: cost per qualifying independently usable depreciable movable fixed asset above the first, not above the second | EUR 250 to EUR 1,000 | \"250 Euro, aber nicht 1 000 Euro übersteigen\" |"
+  },
+  {
+    "finding": "R102",
+    "before": "The alternative is the logbook method. Once the pool is chosen for a year, every asset of that year between its bounds goes into it (§ 6(2a) sentence 5 EStG). The 2026 EÜR instructions allow a one-year useful life for computer hardware and software.",
+    "after": "The alternative is the logbook method. Once the pool is chosen for a year, every asset of that year between its bounds goes into it (§ 6(2a) sentence 5 EStG). The 2026 EÜR instructions allow a one-year useful life for computer hardware and software. Under § 6(2) sentences 2–3, an asset is not independently usable if its business purpose requires it to be used only together with other fixed assets and those assets are technically coordinated; possible transfer into another such context does not itself cure that dependency. For an immediate write-off above EUR 250, the separate register is unnecessary if the required acquisition date and value particulars are already evident from the books. The GWG/pool eligibility cost excludes contained VAT; recoverability separately determines actual expense/acquisition cost under § 9b, rather than making every low-priced component eligible."
+  },
+  {
+    "finding": "R103",
+    "before": "| Defer invoicing | Receipts count in the year received (§ 11(1) EStG): the payment date decides. VAT differs, arising when the service is performed (§ 13 UStG) |",
+    "after": "| Defer invoicing | Receipts count in the year received (§ 11(1) EStG): the payment date decides. VAT differs: under ordinary Soll accounting it arises at the end of the period in which the supply or separately agreed partial supply is performed; advance consideration received before performance triggers tax on that amount in the receipt period. With permitted Ist accounting, the actual receipt rule applies (§§ 13, 20 UStG) |"
+  },
+  {
+    "finding": "R103",
+    "before": "| Kleinunternehmerregelung, § 19(1) | Tax-free where turnover stayed under the first limit below last year and stays under the second this year. Both tests, and no input VAT. The current-year limit is hard: the 2026 EÜR instructions say the sale that crosses it is already taxed. A business that STARTS in the year has no previous year: its total turnover of that year must stay within the start-up limit in the ministry instructions table in Section 4, and the same rule applies when it is crossed. |",
+    "after": "| Kleinunternehmerregelung, § 19(1) | Tax-free where turnover was not above the first limit below last year and is not above the second this year. Both tests, and no input VAT. The current-year limit is hard: the 2026 EÜR instructions say the sale that crosses it is already taxed. A business that STARTS in the year has no previous year: its total turnover of that year must stay within the start-up limit in the ministry instructions table in Section 4, and the same rule applies when it is crossed. |"
+  },
+  {
+    "finding": "R103",
+    "before": "| Ist-Versteuerung, § 20 | On application, VAT on payments received: turnover below the limit below, release from the bookkeeping duty, or a liberal profession with no limit |",
+    "after": "| Ist-Versteuerung, § 20 | On application, VAT on payments received: prior-year total turnover not above the limit below, release from the bookkeeping duty, or to the extent supplies are from the qualifying liberal profession under § 18(1) no. 1 EStG |"
+  },
+  {
+    "finding": "R101/R103",
+    "before": "| Input VAT timing, § 15 | On receipt of the supply plus an invoice meeting § 14 UStG; payment is not a condition. None on gifts, guest houses, hunting or yachts |",
+    "after": "| Input VAT timing, § 15 | For a completed business supply, the required supply and qualifying invoice are needed; payment is not a general condition. Before supply, deduction on an advance requires both the invoice and actual payment. For gifts, guest houses, hunting or yachts, input VAT is excluded only to the extent the actual expense prohibition referenced in § 15(1a) applies, not merely from the item's name. The specific reasonable/evidenced business-entertainment exception under § 15(1a) sentence 2 and all other business/invoice/VAT eligibility gates remain |"
+  },
+  {
+    "finding": "R26 sibling",
+    "before": "| Reverse charge for EU services | A service to a business is supplied where the recipient is established (§ 3a(2) UStG) and the German recipient owes the VAT (§ 13b UStG): `germany-vat-return` |",
+    "after": "| Reverse charge for EU services | The ordinary § 3a(2) business-use rule uses the recipient business establishment, or the receiving fixed establishment where applicable, subject to the actual statutory place exceptions (including property, catering, short vehicle hire and physical event admission). German recipient liability requires the actual service, foreign-supplier and customer conditions of § 13b; it is not a rule for every EU service. Apply the full ordinary method in `germany-vat-return` |"
+  },
+  {
+    "finding": "R104",
+    "before": "| Intra-year offset | All sources are added up (§ 2(3) EStG), but ring-fenced losses offset only their own kind: investments (§ 20(6)), private sales (§ 23(3)), other services (§ 22 no. 3), models (§ 15b) |",
+    "after": "| Intra-year offset | All sources are added up (§ 2(3) EStG), but ring-fenced losses offset only their own kind: investments (§ 20(6)), private sales (§ 23(3)), other services (§ 22 no. 3), qualifying models under § 15b(2)/(3), with the actual initial-phase forecast-loss ratio strictly above 10% |"
+  },
+  {
+    "finding": "R104",
+    "before": "| Deferral models (§ 15b EStG) | Losses from a model aimed at early losses reduce only later income from the same source |",
+    "after": "| Deferral models (§ 15b EStG) | The statutory ring-fence requires a prepackaged model designed for tax advantages through negative income and, in the initial phase, forecast losses exceeding 10% of the capital subscribed and payable under the concept, or the individual investor's invested equity. Exactly 10% does not meet paragraph 3; this does not exclude other applicable anti-abuse rules. Qualifying losses reduce only later income from the same source, not § 10d relief |"
+  },
+  {
+    "finding": "R105",
+    "before": "| Cap 2026, married couple | EUR 61,652 | \"61.652 Euro für Verheiratete\" |",
+    "after": "| Cap 2026, jointly assessed spouses | EUR 61,652 | \"61.652 Euro für Verheiratete\" |"
+  },
+  {
+    "finding": "R105",
+    "before": "| Deduction limit | Full contributions since 2023, up to one cap shared by statutory, Versorgungswerk and Basisrente contributions. The statute prints no euro amount; the 2026 amounts are below |",
+    "after": "| Deduction limit | Full contributions since 2023, up to one cap shared by statutory, Versorgungswerk and Basisrente contributions. The statute prints no euro amount; the 2026 amounts are below |\n\nFor an ordinary employee with qualifying pension contributions, include the actual § 3 no. 62 tax-free employer statutory-pension share or equivalent subsidy in the eligible aggregate under § 10(1) no. 2, apply the actual § 10(3) cap and any statutory special cap reduction, then subtract that tax-free employer part. With employee statutory RV EUR 9,000, qualifying employer RV EUR 9,000 and eligible Basisrente EUR 15,000, the combined EUR 33,000 is capped at EUR 30,826; subtract employer EUR 9,000 to give EUR 21,826, not the employee's whole EUR 24,000. An isolated self-payer has no invented employer offset. Apply the separate cap reduction for the actual pension-free/employer-funded or § 22 no. 4 populations in § 10(3) sentence 3. The specified Minijob employer contributions are added and then subtracted only on the taxpayer's statutory application (§ 10(1) no. 2 sentence 7 and § 10(3) sentence 7)."
+  },
+  {
+    "finding": "R108/R105/R102",
+    "before": "The legacy examples used made-up incomes and computed a saving at an assumed rate. No official page prints those numbers and this library does not compute tax, so each is kept as the mechanism in words. For a real case apply the tariff formula of § 32a EStG once with the item and once without it, and never multiply a deduction by a top rate.",
+    "after": "This Guide presents planning mechanisms and does not rank products or legal forms or calculate a real client's saving. The historical numerical fixtures are retained in the old-topic evidence: their assumed rates and period figures were not reliable current tax results. Official sources need not print a fictional case's numbers for a source-based computation to be valid. For a real comparison apply the actual § 32a tariff with and without the item, including the applicable deductions, caps and interactions; do not assume a constant marginal rate without checking the entire affected taxable-income interval. The five mechanisms below remain. Example 2 stipulates an eligible isolated self-payer with no employer contribution offset or special cap reduction; Example 4 stipulates an actually qualifying independently usable depreciable movable fixed asset. These facts qualify those examples; the general employee pension and asset selectors above still apply."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "U8be16320b48f3193",
+  "url": "https://e-rechnung-bund.de/ubertragungskanale/e-mail/",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8be16320b48f3193.body",
+  "raw_sha256": "2a4254581e2f5e02296c29b5b627d54aa5bb3b03557ab2db1e90744f3194465c",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8be16320b48f3193.reader.txt",
+  "reader_sha256": "9346fda71b4e2821a4dc47a5fd3ded612469a09953d00ae8150f5603728fbac4",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "Ud9f80ce546477f0f",
+  "url": "https://www.gesetze-im-internet.de/ustdv_1980/__33.html",
+  "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustdv-33-20261024.html",
+  "raw_sha256": "aa5ec6111492b06c7bbc4c23053b7e5c3e969a807d84bbc69a641548e8ff0558",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud9f80ce546477f0f.reader.txt",
+  "reader_sha256": "f55fdd4deefae8149d0076b18418cb98bdb7c63fc001eaaa4b9c6928b09c89f5",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "prior cached body",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

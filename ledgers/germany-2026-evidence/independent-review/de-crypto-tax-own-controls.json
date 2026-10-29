@@ -1,0 +1,266 @@
+{
+  "scope": "All6 original narrative worked cases recomputed;0original oa.52 own price/basis/lot/cliff/filing/date/record/evidence controls. Current future provider reporting nominal date not a new weekend-extension interpretation. No portal parity.",
+  "controls": [
+    {
+      "name": "case1holdingJan25toMarch26over1year",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "case1secondAug26beforeSep26",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "case1averagecost",
+      "actual": "50000.0",
+      "expected": "50000"
+    },
+    {
+      "name": "case1averagegain",
+      "actual": "15000",
+      "expected": "15000"
+    },
+    {
+      "name": "case1FIFOgain",
+      "actual": "5000",
+      "expected": "5000"
+    },
+    {
+      "name": "case2cliff999",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "case2combined1199",
+      "actual": "1199",
+      "expected": "1199"
+    },
+    {
+      "name": "case2fulltaxable1199",
+      "actual": "1199",
+      "expected": "1199"
+    },
+    {
+      "name": "case3stake300minus60",
+      "actual": "240",
+      "expected": "240"
+    },
+    {
+      "name": "case3below256",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "case3stake300minus40",
+      "actual": "260",
+      "expected": "260"
+    },
+    {
+      "name": "case3all260taxable",
+      "actual": "260",
+      "expected": "260"
+    },
+    {
+      "name": "case4airdropsplusstaking",
+      "actual": "350",
+      "expected": "350"
+    },
+    {
+      "name": "case4cost150",
+      "actual": "150",
+      "expected": "150"
+    },
+    {
+      "name": "case5oldbasis",
+      "actual": "9000",
+      "expected": "9000"
+    },
+    {
+      "name": "case5newbasis",
+      "actual": "1000",
+      "expected": "1000"
+    },
+    {
+      "name": "case5newgain",
+      "actual": "1500",
+      "expected": "1500"
+    },
+    {
+      "name": "case5olderoriginal2024sale2026outsideyear",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "case6July31deadlineFriday",
+      "actual": "4",
+      "expected": "4"
+    },
+    {
+      "name": "case6discretionbefore14months",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "late7500nettax.25percentminimum25",
+      "actual": "25",
+      "expected": "25"
+    },
+    {
+      "name": "late20000nettax.25percent",
+      "actual": "50",
+      "expected": "50"
+    },
+    {
+      "name": "2025adviserFeb28Sunday",
+      "actual": "6",
+      "expected": "6"
+    },
+    {
+      "name": "2025adviserMarch1Monday",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "2026clientJuly31Saturday",
+      "actual": "5",
+      "expected": "5"
+    },
+    {
+      "name": "2026clientAug2Monday",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "2026adviserFeb29Tuesday",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "nominalKStTGfirstyear",
+      "actual": "2027",
+      "expected": "2027"
+    },
+    {
+      "name": "exact1000notunderlimit",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "exact256notunderlimit",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "sale900plusstake200separatelimits",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "samespouse1800notpooled2000",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "spouse900eachseparately",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "wallettransfernogainassumed",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "changeoutputnotresetbasis",
+      "actual": "100",
+      "expected": "100"
+    },
+    {
+      "name": "swapsaleusesreceivedvalue",
+      "actual": "120",
+      "expected": "120"
+    },
+    {
+      "name": "swapnewbasisusesgivenvalue",
+      "actual": "200",
+      "expected": "200"
+    },
+    {
+      "name": "simpleswapnewholdingperiod",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "no-new-marketairdrop0accepted",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "forknewvalue0oldcostunchanged",
+      "actual": "10000",
+      "expected": "10000"
+    },
+    {
+      "name": "sideincome400reduced100",
+      "actual": "300",
+      "expected": "300"
+    },
+    {
+      "name": "sideincome400withoutreduction",
+      "actual": "400",
+      "expected": "400"
+    },
+    {
+      "name": "positiveincomesum500knottrigger",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "positiveincomesum500001trigger",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "2027threshold750kfootnote",
+      "actual": "750000",
+      "expected": "750000"
+    },
+    {
+      "name": "coinscurrency10yextensionnotapplied",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "noncurrencyincomeproducing10yselector",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "sameyearprivatesalegain1200loss300",
+      "actual": "900",
+      "expected": "900"
+    },
+    {
+      "name": "serviceslossnotwageoffset",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "crosstaxboxprivateandservicescannotpool",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "datesanniversaryinclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "dayafteranniversaryoutside",
+      "actual": "True",
+      "expected": "True"
+    }
+  ],
+  "number": 52
+}

@@ -1,0 +1,11 @@
+{
+  "id": "Ue6953f6072c63d46",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Irland/2025-04-10-Irland-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=3",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue6953f6072c63d46.body",
+  "raw_sha256": "8494d419f6857400136c44017646d3871e8ea9b07c80002fe83021dc473c9258",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue6953f6072c63d46.reader.txt",
+  "reader_sha256": "3a06d1a395b55d94b7acf405fd2b9e5a5ef33a36d252d559651da087cee6339d",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

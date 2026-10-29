@@ -1,0 +1,21 @@
+{
+  "slug": "de-self-employed-income-tax",
+  "expected_before_sha256": "5a71fe5bdc783deed9c2815c9bfe400c4a48ac2fe93786f614ae70fc85c24f26",
+  "operations": [
+    {
+      "before": "| Low-value asset (GWG) | Expensed at once if cost net of deductible VAT is at most EUR 800; register if over EUR 250 | 2026 | Same, § 6(2) |",
+      "after": "| Low-value asset (GWG) | Expensed at once if cost reduced by contained input VAT for the eligibility test is at most EUR 800; the expense includes irrecoverable VAT; register if over EUR 250 | 2026 | Same, § 6(2) |"
+    },
+    {
+      "before": "version: 2.3\n",
+      "after": "version: 2.4\n"
+    }
+  ],
+  "after_sha256": "7f38fa2dce9edf71f200125f8595a885cce73bd96efc52485ae9cba26436ca47",
+  "original_oa_blocks": 2,
+  "original_oa_exact": true,
+  "old_URL_order_preserved": true,
+  "added_URLs": 0,
+  "protected_metadata_exact": true,
+  "inverse_exact": true
+}

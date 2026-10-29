@@ -1,0 +1,55 @@
+§ 2 InvStG - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Investmentsteuergesetz (InvStG)
+§ 2 Begriffsbestimmungen
+(1) Die Begriffsbestimmungen des Kapitalanlagegesetzbuchs gelten entsprechend, soweit sich keine abweichenden Begriffsbestimmungen aus diesem Gesetz ergeben.
+(2) Ein inländischer Investmentfonds ist ein Investmentfonds, der dem inländischen Recht unterliegt.
+(3) Ein ausländischer Investmentfonds ist ein Investmentfonds, der ausländischem Recht unterliegt.
+(4) Investmentanteil ist der Anteil an einem Investmentfonds, unabhängig von der rechtlichen Ausgestaltung des Anteils oder des Investmentfonds. Spezial-Investmentanteil ist der Anteil an einem Spezial-Investmentfonds, unabhängig von der rechtlichen Ausgestaltung des Anteils oder des Spezial-Investmentfonds.
+(5) Ein Dach-Investmentfonds ist ein Investmentfonds, der Investmentanteile an einem anderen Investmentfonds (Ziel-Investmentfonds) hält. Ein Dach-Spezial-Investmentfonds ist ein Spezial-Investmentfonds, der Spezial-Investmentanteile an einem anderen Spezial-Investmentfonds (Ziel-Spezial-Investmentfonds) hält.
+(6) Aktienfonds sind Investmentfonds, die gemäß den Anlagebedingungen fortlaufend mehr als 50 Prozent ihres Aktivvermögens in Kapitalbeteiligungen anlegen (Aktienfonds-Kapitalbeteiligungsquote). Ein Dach-Investmentfonds ist auch dann ein Aktienfonds, wenn der Dach-Investmentfonds nach seinen Anlagebedingungen verpflichtet ist, derart in Ziel-Investmentfonds zu investieren, dass fortlaufend die Aktienfonds-Kapitalbeteiligungsquote erreicht wird und die Anlagebedingungen vorsehen, dass der Dach-Investmentfonds für die Einhaltung der Aktienfonds-Kapitalbeteiligungsquote auf die bewertungstäglich von den Ziel-Investmentfonds veröffentlichten tatsächlichen Kapitalbeteiligungsquoten abstellt. Satz 2 ist nur auf Ziel-Investmentfonds anzuwenden, die mindestens einmal pro Woche eine Bewertung vornehmen. In dem Zeitpunkt, in dem der Investmentfonds wesentlich gegen die Anlagebedingungen verstößt und dabei die Aktienfonds-Kapitalbeteiligungsquote unterschreitet, endet die Eigenschaft als Aktienfonds.
+(7) Mischfonds sind Investmentfonds, die gemäß den Anlagebedingungen fortlaufend mindestens 25 Prozent ihres Aktivvermögens in Kapitalbeteiligungen anlegen (Mischfonds-Kapitalbeteiligungsquote). Ein Dach-Investmentfonds ist auch dann ein Mischfonds, wenn der Dach-Investmentfonds nach seinen Anlagebedingungen verpflichtet ist, derart in Ziel-Investmentfonds zu investieren, dass fortlaufend die Mischfonds-Kapitalbeteiligungsquote erreicht wird und die Anlagebedingungen vorsehen, dass der Dach-Investmentfonds für deren Einhaltung auf die bewertungstäglich von den Ziel-Investmentfonds veröffentlichten tatsächlichen Kapitalbeteiligungsquoten abstellt. Satz 2 ist nur auf Ziel-Investmentfonds anzuwenden, die mindestens einmal pro Woche eine Bewertung vornehmen. Absatz 6 Satz 4 ist entsprechend anzuwenden.
+(8) Kapitalbeteiligungen sind 1.
+zum amtlichen Handel an einer Börse zugelassene oder auf einem organisierten Markt notierte Anteile an einer Kapitalgesellschaft,
+2.
+Anteile an einer Kapitalgesellschaft, die keine Immobilien-Gesellschaft ist und die a)
+in einem Mitgliedstaat der Europäischen Union oder in einem anderen Vertragsstaat des Abkommens über den Europäischen Wirtschaftsraum ansässig ist und dort der Ertragsbesteuerung für Kapitalgesellschaften unterliegt und nicht von ihr befreit ist, oder
+b)
+in einem Drittstaat ansässig ist und dort einer Ertragsbesteuerung für Kapitalgesellschaften in Höhe von mindestens 15 Prozent unterliegt und nicht von ihr befreit ist,
+3.
+Investmentanteile an Aktienfonds in Höhe von 51 Prozent des Wertes des Investmentanteils oder
+4.
+Investmentanteile an Mischfonds in Höhe von 25 Prozent des Wertes des Investmentanteils.
+Sieht ein Aktienfonds in seinen Anlagebedingungen einen höheren Prozentsatz als 51 Prozent seines Aktivvermögens für die fortlaufende Mindestanlage in Kapitalbeteiligungen vor, gilt abweichend von Satz 1 Nummer 3 der Investmentanteil im Umfang dieses höheren Prozentsatzes als Kapitalbeteiligung. Sieht ein Mischfonds in seinen Anlagebedingungen einen höheren Prozentsatz als 25 Prozent seines Aktivvermögens für die fortlaufende Mindestanlage in Kapitalbeteiligungen vor, gilt abweichend von Satz 1 Nummer 4 der Investmentanteil im Umfang dieses höheren Prozentsatzes als Kapitalbeteiligung. Im Übrigen gelten Investmentanteile nicht als Kapitalbeteiligungen. Auch nicht als Kapitalbeteiligungen gelten 1.
+Anteile an Personengesellschaften, auch wenn die Personengesellschaften Anteile an Kapitalgesellschaften halten oder wenn die Personengesellschaften nach § 1a des Körperschaftsteuergesetzes zur Körperschaftsbesteuerung optiert haben,
+2.
+Anteile an Kapitalgesellschaften, die nach Absatz 9 Satz 6 als Immobilien gelten,
+3.
+Anteile an Kapitalgesellschaften, die von der Ertragsbesteuerung befreit sind, soweit sie Ausschüttungen vornehmen, es sei denn, die Ausschüttungen unterliegen einer Besteuerung von mindestens 15 Prozent und der Investmentfonds ist nicht davon befreit und
+4.
+Anteile an Kapitalgesellschaften, a)
+deren Einnahmen unmittelbar oder mittelbar zu mehr als 10 Prozent aus Beteiligungen an Kapitalgesellschaften stammen, die nicht die Voraussetzungen des Satzes 1 Nummer 2 erfüllen oder
+b)
+die unmittelbar oder mittelbar Beteiligungen an Kapitalgesellschaften halten, die nicht die Voraussetzungen des Satzes 1 Nummer 2 erfüllen, wenn der gemeine Wert derartiger Beteiligungen mehr als 10 Prozent des gemeinen Werts der Kapitalgesellschaften beträgt.
+(9) Immobilienfonds sind Investmentfonds, die gemäß den Anlagebedingungen fortlaufend mehr als 50 Prozent ihres Aktivvermögens in Immobilien und Immobilien-Gesellschaften anlegen (Immobilienfondsquote). Auslands-Immobilienfonds sind Investmentfonds, die gemäß den Anlagebedingungen fortlaufend mehr als 50 Prozent ihres Aktivvermögens in ausländische Immobilien und Auslands-Immobiliengesellschaften anlegen (Auslands-Immobilienfondsquote). Auslands-Immobiliengesellschaften sind Immobilien-Gesellschaften, die ausschließlich in ausländische Immobilien investieren. Investmentanteile an Immobilienfonds oder an Auslands-Immobilienfonds gelten in Höhe von 51 Prozent des Wertes des Investmentanteils als Immobilien. Sieht ein Immobilienfonds oder ein Auslands-Immobilienfonds in seinen Anlagebedingungen einen höheren Prozentsatz als 51 Prozent seines Aktivvermögens für die fortlaufende Mindestanlage in Immobilien vor, gilt der Investmentanteil im Umfang dieses höheren Prozentsatzes als Immobilie. Anteile an Körperschaften, Personenvereinigungen oder Vermögensmassen, bei denen nach gesetzlichen Bestimmungen oder nach deren Anlagebedingungen das Bruttovermögen zu mindestens 65 Prozent aus unbeweglichem Vermögen besteht, gelten in Höhe von 65 Prozent des Wertes der Anteile als Immobilien, wenn die Körperschaften, Personenvereinigungen oder Vermögensmassen einer Ertragsbesteuerung in Höhe von mindestens 15 Prozent unterliegen und nicht von ihr befreit sind oder wenn deren Ausschüttungen einer Besteuerung von mindestens 15 Prozent unterliegen und der Investmentfonds nicht davon befreit ist. Absatz 6 Satz 4 ist entsprechend anzuwenden.
+(9a) Eine Immobilie ist für die Zwecke der Immobilienfondsquote und der Auslandsimmobilienfondsquote nicht als Immobilie anzusetzen, wenn die Einkünfte aus der Vermietung oder Verpachtung oder aus der Veräußerung der Immobilie keiner Besteuerung unterliegen oder zu mehr als 50 Prozent von der Besteuerung befreit sind. Eine Beteiligung an einer Immobilien-Gesellschaft oder Auslands-Immobiliengesellschaft, die der Investmentfonds unmittelbar oder mittelbar über Personengesellschaften hält, ist für die Zwecke der Immobilienfondsquote und der Auslands-Immobilienfondsquote nicht als Immobiliengesellschaft oder Auslands-Immobiliengesellschaft anzusetzen, wenn die Einkünfte der Immobilien-Gesellschaft oder der Auslands-Immobiliengesellschaft aus der Vermietung oder Verpachtung oder aus der Veräußerung von Immobilien zu mehr als 50 Prozent von der Besteuerung befreit sind. Das Gleiche gilt, wenn die Einkünfte der Immobilien-Gesellschaft oder Auslands-Immobiliengesellschaft dem Investmentfonds als deren Gesellschafter zugerechnet werden und diese Einkünfte keiner Besteuerung unterliegen oder zu mehr als 50 Prozent von der Besteuerung befreit sind.
+(9b) Die Höhe des Aktivvermögens bestimmt sich nach dem Wert der Vermögensgegenstände des Investmentfonds ohne Berücksichtigung von Verbindlichkeiten des Investmentfonds. Anstelle des Aktivvermögens darf in den Anlagebedingungen auf den Wert des Investmentfonds abgestellt werden. Bei der Ermittlung des Umfangs des in Kapitalbeteiligungen angelegten Vermögens sind in den Fällen des Satzes 2 die Kredite entsprechend dem Anteil der Kapitalbeteiligungen am Wert aller Vermögensgegenstände abzuziehen. Satz 3 gilt entsprechend für die Ermittlung des Umfangs des in Immobilien angelegten Vermögens.
+(10) Anleger ist derjenige, dem der Investmentanteil oder Spezial-Investmentanteil nach § 39 der Abgabenordnung zuzurechnen ist.
+(11) Ausschüttungen sind die dem Anleger gezahlten oder gutgeschriebenen Beträge einschließlich des Steuerabzugs auf den Kapitalertrag.
+(12) Als Anlagebedingungen gelten auch die Satzung, der Gesellschaftsvertrag oder vergleichbare konstituierende Rechtsakte eines Investmentfonds.
+(13) Als Veräußerung von Investmentanteilen und Spezial-Investmentanteilen gilt auch deren Rückgabe, Abtretung, Entnahme oder verdeckte Einlage in eine Kapitalgesellschaft sowie eine beendete Abwicklung oder Liquidation des Investmentfonds oder Spezial-Investmentfonds.
+(14) Der Gewinnbegriff umfasst auch Verluste aus einem Rechtsgeschäft.
+(15) Ein Amts- und Beitreibungshilfe leistender ausländischer Staat ist ein Mitgliedstaat der Europäischen Union oder ein Drittstaat, der 1.
+der Bundesrepublik Deutschland Amtshilfe gemäß der Amtshilferichtlinie im Sinne des § 2 Absatz 2 des EU-Amtshilfegesetzes oder gemäß vergleichbaren völkerrechtlichen Vereinbarungen leistet und
+2.
+die Bundesrepublik Deutschland bei der Beitreibung von Forderungen gemäß der Beitreibungsrichtlinie im Sinne des § 2 Absatz 2 des EU-Beitreibungsgesetzes oder gemäß vergleichbaren völkerrechtlichen Vereinbarungen unterstützt.
+(16) Anteile an Personengesellschaften, die nach § 1a des Körperschaftsteuergesetzes zur Körperschaftsbesteuerung optiert haben, gelten für die Zwecke der §§ 26, 28 und 48 nicht als Beteiligung an einer Kapitalgesellschaft, sondern es sind weiterhin die für Personengesellschaften geltenden Regelungen anzuwenden.
+Fußnote
+(+++ § 2: Zur Anwendung vgl. § 56 Abs. 1 u. § 57 +++)
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

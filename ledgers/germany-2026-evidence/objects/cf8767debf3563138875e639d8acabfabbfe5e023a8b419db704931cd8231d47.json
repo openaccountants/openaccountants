@@ -1,0 +1,11 @@
+{
+  "id": "Ud6736f28fab2cf5e",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-03-11-aenderung-gobd.pdf?__blob=publicationFile&v=4",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud6736f28fab2cf5e.body",
+  "raw_sha256": "25479639b2d67ffaec3cdf0cb39521fa91aeb98a0e1cb5bb1b82f86647fd4f85",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud6736f28fab2cf5e.reader.txt",
+  "reader_sha256": "3c0ac01abe33710a0854fa6d174a2372f2777821ecefdd28f5d12344624a3809",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

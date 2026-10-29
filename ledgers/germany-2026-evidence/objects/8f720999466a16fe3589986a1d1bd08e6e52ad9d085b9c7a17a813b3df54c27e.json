@@ -1,0 +1,11 @@
+{
+  "id": "Ue1b7b85d7f51ac1f",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2025-04-02-merkblatt-zur-transaktionsmatrix.pdf?__blob=publicationFile&v=3",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.body",
+  "raw_sha256": "7d293974c423a4b62431fc79374a54c57e7015b3984c8394c4571588ee01140e",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue1b7b85d7f51ac1f.reader.txt",
+  "reader_sha256": "c35340e6bffc1aa43b8a84ef667bdd0c1e5d4df75c3ce9762ad6172e47fd62b7",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

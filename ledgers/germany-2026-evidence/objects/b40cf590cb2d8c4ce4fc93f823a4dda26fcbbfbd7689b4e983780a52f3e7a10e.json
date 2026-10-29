@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "args": [
+    "git",
+    "diff",
+    "--check",
+    "--",
+    "skills/international/germany/germany-einvoice.md",
+    "skills/international/germany/germany-tax-optimization.md"
+  ]
+}

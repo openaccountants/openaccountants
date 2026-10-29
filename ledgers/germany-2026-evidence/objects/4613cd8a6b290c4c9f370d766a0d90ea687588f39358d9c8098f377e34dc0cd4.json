@@ -1,0 +1,60 @@
+{
+  "status": "writer terminology successor; independent closure pending",
+  "artifacts": [
+    {
+      "path": "after-Guide.md",
+      "sha256": "c9af14ff3cd68fa52372d444ff37c917860ae5bd6fa8ff645c08cdee03397d71",
+      "bytes": 35255
+    },
+    {
+      "path": "apply-and-check.py",
+      "sha256": "e0112edcd09ecc06063724752882fb5b12b57ac742e443f2313454733c040744",
+      "bytes": 8700
+    },
+    {
+      "path": "before-Guide.md",
+      "sha256": "6efaea2e7187a02ef34952cf07803f8fb80516c8def1df3fe6b7158c2e7fe196",
+      "bytes": 35216
+    },
+    {
+      "path": "de-vat-annual-and-special-schemes.md",
+      "sha256": "d22dd5268409a71a0124e6888da0912266991291b7e6ad4e5576480f631951ed",
+      "bytes": 383355
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "65e681a9915f1e2fa741724a405274f69fac2895a0a6462dbc8d78037c002916",
+      "bytes": 381
+    },
+    {
+      "path": "first-check-failure.md",
+      "sha256": "0ecd60340a81d78cb65cbdb9c4ba30708ccc8d7fdaf1eb9da4f7ee2887a0054b",
+      "bytes": 330
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "7908b05af020f9ac7db8aab5cd1c14af6e253db84e13bb8e14558ecdd8904431",
+      "bytes": 1318
+    },
+    {
+      "path": "rows.json",
+      "sha256": "bec2578d87a543b09120f2587a853c2dd870621ef0766b68b6a5327f47d5c434",
+      "bytes": 117549
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "93327c8cbcbd3a4ff147d6e16525bb24f34b36ec1a5d8ecb3301cd7d22045ec3",
+      "bytes": 1486
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "2d9fab1ede7ebd914b5861df5f49ab6bc0f917b5b5838799197478eeda559699",
+      "bytes": 372
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "65850421abb8acaa1d900454b44a048a5c6fbaa02d43349b9b10fc70bf0404ba",
+      "bytes": 1185
+    }
+  ]
+}

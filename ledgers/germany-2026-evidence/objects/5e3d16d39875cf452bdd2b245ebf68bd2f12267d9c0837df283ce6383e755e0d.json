@@ -1,0 +1,13 @@
+{
+  "slug": "germany-tax-optimization",
+  "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-tax-optimization.md",
+  "Guide_sha256": "4f360c9f88fcfa601cba004d4764aa2089e3d493582745fcb6b06c330be5f9ce",
+  "Guide_bytes": 52238,
+  "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R113-R114-planning-writer-successor-2026-10-29/ledgers/germany-tax-optimization.md",
+  "ledger_sha256": "a2f35f1b515aecdb84c5f268c4dc7bd0d85c470d5825f6c13f751157eef9c867",
+  "rows": 323,
+  "prior_rows": 323,
+  "old_origins": 455,
+  "own_selected_quotes": 5,
+  "ops": 3
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-29",
+  "selected": "B06/B07/B08 Option A, composed so the opening and closing registration summaries respect B08. The two existing detailed timing bullets now state the same exact statutory triggers.",
+  "alternative": "The saved B variants use shorter referrals or explicit group subsets.",
+  "actual_root_reads": "DEB094 native33, DEB077 native11, DEB265 native7; selected operative paragraphs and own Guide occurrences.",
+  "scope": "Three finite writer findings, no rate changes or country review verdict.",
+  "operations": [
+    {
+      "finding": "DE-B08",
+      "before": "5. **Pension:** test the § 2 SGB VI list. If a group applies and the work is more than marginal, register within three months and choose the contribution; check the exemptions. Otherwise decide on voluntary contributions or insurance on application.",
+      "after": "5. **Pension:** test the § 2 SGB VI list. If a group applies and the work is more than marginal, check registration under § 190a SGB VI and choose the contribution; check the exemptions. Otherwise decide on voluntary contributions or insurance on application."
+    },
+    {
+      "finding": "DE-B06/B08",
+      "before": "The three-month windows (pension registration and exemptions, unemployment insurance) and the one-month window of the status procedure all run from the first day of the work.",
+      "after": "Pension registration follows the group-specific route and clock in § 190a SGB VI, described below. Unemployment insurance on application has a three-month work-start window, and the status procedure a one-month window for the stated protection. For ordinary self-employed pension exemptions under § 6(4) SGB VI, the three-month period runs from when the exemption conditions are met."
+    },
+    {
+      "finding": "DE-B07",
+      "before": "**Full care rate of a member who pays alone, by children** (derived from [PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html) and [§ 55(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html)): no children, 23 or older 4.2%; one child (any age) or all children 25 or older 3.6%; two under 25 3.35%; three 3.1%; four 2.85%; five or more 2.6%. A parent never pays the surcharge, even when the children are grown. Members born before 1 January 1940 are also exempt from it. Proof of children goes to the care fund, and until it is given the fund charges the childless rate. Proof given within six months of the birth counts from the month of birth; later proof counts from the month after it is given ([§ 55(3a) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html)).",
+      "after": "**Full care rate of a member who pays alone, by children** (derived from [PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html) and [§ 55(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html)): no children, 23 or older 4.2%; one child (any age) or all children 25 or older 3.6%; two under 25 3.35%; three 3.1%; four 2.85%; five or more 2.6%. A parent never pays the surcharge, even when the children are grown. Members born before 1 January 1940 are also exempt from it. For self-payers, the care fund must have proof of parenthood and children under 25, unless those facts are already known. Evidence received through the automatic procedure counts from the birth month or comparable qualifying event. Evidence outside that procedure counts from that event if supplied within six months, otherwise from the month after it is supplied ([§ 55(3a) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html))."
+    },
+    {
+      "finding": "DE-B08 detail",
+      "before": "- **Register** within three months of starting: groups 1, 2, 3 and 9. Craftspeople report within three months unless the Handwerksrolle already shows it ([§ 190a SGB VI](https://www.gesetze-im-internet.de/sgb_6/__190a.html)).",
+      "after": "- **Register** within three months of starting for groups 1, 2, 3 and 9. For craftspeople, § 190a(1) instead requires notice of the personally met Handwerksrolle-qualification conditions and the specified move from an ancillary to a main trade within three months after the relevant facts arise; no notice is required where those facts are already entered in the Handwerksrolle ([§ 190a SGB VI](https://www.gesetze-im-internet.de/sgb_6/__190a.html))."
+    },
+    {
+      "finding": "DE-B06 detail",
+      "before": "- **Timing:** an exemption applied for within three months works from the day its conditions are met; later applications work from the day the application arrives.",
+      "after": "- **Timing:** an ordinary self-employed pension exemption applied for within three months after its conditions are met works from that day; a later application works from the day the application arrives (§ 6(4) SGB VI)."
+    },
+    {
+      "finding": "DE-B06/B08 summary",
+      "before": "Registration windows: pension registration and exemptions, and unemployment insurance on application, within three months of starting; the accident insurer within one week; the status procedure within one month for its protection; the KSK income estimate by 1 December; the artists' levy report by 31 March of the next year.",
+      "after": "Registration windows: pension registration follows the group-specific § 190a SGB VI clock described above; unemployment insurance on application is within three months of starting; an ordinary self-employed § 6(4) SGB VI exemption is within three months after its conditions are met; the accident insurer within one week; the status procedure within one month for its protection; the KSK income estimate by 1 December; the artists' levy report by 31 March of the next year."
+    },
+    {
+      "finding": "metadata",
+      "before": "version: 2.1\n",
+      "after": "version: 2.2\n"
+    },
+    {
+      "finding": "metadata",
+      "before": "last_updated: 2026-10-26\n",
+      "after": "last_updated: 2026-10-29\n"
+    }
+  ]
+}

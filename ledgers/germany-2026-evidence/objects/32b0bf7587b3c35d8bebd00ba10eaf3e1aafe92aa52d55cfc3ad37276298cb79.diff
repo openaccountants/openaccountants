@@ -1,0 +1,34 @@
+--- 
++++ 
+@@ -1,7 +1,7 @@
+ ---
+ name: de-payroll
+ description: "German payroll for employees for pay periods in 2026: wage tax (Lohnsteuer) by tax class I to VI through the finance ministry's 2026 program flow (PAP) with the EUR 12,348 basic allowance, the Vorsorgepauschale, solidarity surcharge and church tax; the four social insurance branches (pension 18.6%, unemployment 2.6%, health 14.6% plus the fund's additional rate, average 2.9%, care 3.6% with the childless surcharge) and the 2026 ceilings; Minijobs (EUR 603), the Midijob band to EUR 2,000, the Aktivrente; the wage tax return by the 10th, contributions by the third-last bank working day, DEÜV reports, payslips, minimum wage, tax-free surcharges, sick and maternity pay, and penalties. Trigger on: Lohnsteuer, Gehaltsabrechnung, Brutto Netto, Steuerklasse, Arbeitgeberanteil, Beitragsbemessungsgrenze, Minijob, Midijob, Lohnsteuer-Anmeldung, DEÜV. Out of scope: the employee's annual return (de-employee-income-tax), the self-employed (de-social-contributions, de-self-employed-income-tax), non-residents' wider German tax (de-non-resident-tax)."
+-version: 1.2
++version: 1.3
+ jurisdiction: DE
+ tax_year: 2026
+ last_updated: 2026-10-29
+@@ -128,12 +128,12 @@
+ 
+ **Vorsorgepauschale** (the employee's insurance, inside the tax; [§ 39b(2) sentence 5 no. 3 EStG](https://www.gesetze-im-internet.de/estg/__39b.html), PAP 2026):
+ 
+-- Pension: pay up to EUR 101,400 x 9.3%, unless not in the statutory scheme (PAP marker KRV = 1).
++- Pension: pay up to EUR 101,400 x 9.3% for employees compulsorily insured in the statutory pension scheme or exempt under § 6(1) no. 1 SGB VI for a professional pension scheme ([§ 39b(2) sentence 5 no. 3(a) EStG](https://www.gesetze-im-internet.de/estg/__39b.html)). Apply the PAP marker KRV: 0 for compulsory cover in the statutory or a professional pension scheme, or voluntary cover after exemption from compulsory insurance; 1 otherwise.
+ - Health and care: pay up to EUR 69,750 x (half the fund's additional rate + 7.0% + the employee care rate). The PAP uses the full additional rate of the employee's own fund: "Der durchschnittliche Zusatzbeitragssatz ist unmaßgeblich", except for the § 242(3) SGB V groups. The statutory health and care parts apply in classes I to VI ([§ 39b(2) sentence 5 no. 3(b), (c) EStG](https://www.gesetze-im-internet.de/estg/__39b.html)); the ministry's class VI test figures include them. Privately insured (PKV = 1): the private premiums from the ELStAM less the tax-free employer subsidy, classes I to V only; in class VI a privately insured employee gets no health or care part.
+ - Unemployment (new in 2026, ALV = 0 if insured, not in class VI): the PAP compares pension + health + care with pension + the lower of EUR 1,900 and (unemployment + health + care), and takes the higher. Once health and care alone pass EUR 1,900, unemployment adds nothing.
+ - The total is rounded up to whole euros (PAP 2026, MVSPKVPV and MVSPHB). There is no minimum Vorsorgepauschale in 2026. Severance under § 24 no. 1 EStG is left out of the insurance parts.
+ 
+-**Other PAP inputs that change the result:** ALV (0 insured / 1 not), KRV, PKV (0 statutory, 1 private), KVZ (the fund's full additional rate), PVZ (1 = childless surcharge), PVA (number of reductions, 0 to 4), PVS (1 = place of employment in Saxony).
++**Other PAP inputs that change the result:** ALV (0 insured / 1 not), KRV (0 for the qualifying pension-cover branches just described, 1 otherwise), PKV (0 statutory, 1 private), KVZ (the fund's full additional rate), PVZ (1 = childless surcharge), PVA (number of reductions, 0 to 4), PVS (1 = place of employment in Saxony).
+ 
+ **Solidarity surcharge and church tax.** No surcharge while the yearly base does not exceed the exemption limit; above it, the lower of 5.5% of the base and 11.9% of the excess ([§ 4 SolzG](https://www.gesetze-im-internet.de/solzg_1995/__4.html)). The period limit is the matching fraction of the yearly limit ([§ 3(4) SolzG](https://www.gesetze-im-internet.de/solzg_1995/__3.html)). Church tax applies only to members of a church that levies it, at the state's rate on the base.
+ 
+@@ -347,6 +347,7 @@
+ | Amended PAP 2025 (22 January 2025), for 2025 corrections | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-01-22-geaenderte-PAP-2025-anlage-1.pdf?__blob=publicationFile&v=2 | 2026-10-24 |
+ | Minimum wage regulation MiLoV4 § 1 (2025) | https://www.gesetze-im-internet.de/milov4/__1.html | 2026-10-24 |
+ | Retirement-age pension and unemployment distinction: SGB VI § 5(4), § 172(1); SGB III § 28(1) no. 1, § 346(3) | https://www.gesetze-im-internet.de/sgb_6/__5.html ; https://www.gesetze-im-internet.de/sgb_3/__28.html ; https://www.gesetze-im-internet.de/sgb_6/__172.html ; https://www.gesetze-im-internet.de/sgb_3/__346.html | 2026-10-29 |
++| Pension Vorsorgepauschale and professional schemes: EStG § 39b(2) sentence 5 no. 3(a); PAP 2026 KRV definition | https://www.gesetze-im-internet.de/estg/__39b.html ; https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2 | 2026-10-29 |
+ 
+ Not yet confirmed: the Federal Gazette text of the labour ministry's 2026 factor F notice itself (0.6619 is taken from an official state circular that cites it, and equals 28 / 42.3); which states levy 8% and which 9% church tax (secondary sources name Bavaria and Baden-Württemberg at 8%), and state church tax caps; U1 and U2 rates (set by each fund) and accident insurance; the 2027 health ceiling amount; whether the 2026 wage tax certificate deadline moves from Sunday 28 February 2027 to Monday 1 March 2027 under § 108(3) AO.
+ 

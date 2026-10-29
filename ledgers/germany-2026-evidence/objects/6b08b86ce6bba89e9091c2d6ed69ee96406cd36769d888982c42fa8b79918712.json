@@ -1,0 +1,345 @@
+[
+  {
+    "name": "oldcase1 income",
+    "actual": "13050",
+    "expected": "13050",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase1 declining firstyear",
+    "actual": "11250",
+    "expected": "11250",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase1 othercosts",
+    "actual": "11850",
+    "expected": "11850",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase1 loss",
+    "actual": "-10050",
+    "expected": "-10050",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase1 straightline",
+    "actual": "6750",
+    "expected": "6750",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase1 straightline loss",
+    "actual": "-5550",
+    "expected": "-5550",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase1 nextyear restvalue",
+    "actual": "28875/2",
+    "expected": "28875/2",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase2 cost threshold",
+    "actual": "30000",
+    "expected": "30000",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase2 overcliff",
+    "actual": "True",
+    "expected": "True",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase2 equal threshold notover",
+    "actual": "False",
+    "expected": "False",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase2 yearly cost depreciation",
+    "actual": "620",
+    "expected": "620",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase3 paid ratio",
+    "actual": "2/5",
+    "expected": "2/5",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase3 income",
+    "actual": "5040",
+    "expected": "5040",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase3 allowedcost",
+    "actual": "1968",
+    "expected": "1968",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase3 surplus",
+    "actual": "3072",
+    "expected": "3072",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase3 spouse",
+    "actual": "1536",
+    "expected": "1536",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase3 fullpaid variant above66",
+    "actual": "True",
+    "expected": "True",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase3 forecast variant",
+    "actual": "True",
+    "expected": "True",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase4 costperm2",
+    "actual": "5000",
+    "expected": "5000",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase4 costeligibility",
+    "actual": "True",
+    "expected": "True",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase4 cap",
+    "actual": "320000",
+    "expected": "320000",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase4 specialannual",
+    "actual": "16000",
+    "expected": "16000",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase4 normalannual",
+    "actual": "12000",
+    "expected": "12000",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase4 totalfirstyear",
+    "actual": "28000",
+    "expected": "28000",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase4 ineligiblevariant",
+    "actual": "True",
+    "expected": "True",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase5 stipulatedAfA",
+    "actual": "33600",
+    "expected": "33600",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase5 reducedcost",
+    "actual": "266400",
+    "expected": "266400",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase5 gain",
+    "actual": "63600",
+    "expected": "63600",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "oldcase6 carried rental loss",
+    "actual": "-10050",
+    "expected": "-10050",
+    "kind": "arithmetic only: legal prepayment year gate still pending source binding",
+    "result": "PASS"
+  },
+  {
+    "name": "newcase1 income",
+    "actual": "13560",
+    "expected": "13560",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "newcase1 AfA",
+    "actual": "3600",
+    "expected": "3600",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "newcase1 travel",
+    "actual": "90",
+    "expected": "90",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "newcase1 costs",
+    "actual": "12150",
+    "expected": "12150",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "newcase1 surplus",
+    "actual": "1410",
+    "expected": "1410",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "newcase2 allcosts",
+    "actual": "4920",
+    "expected": "4920",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "newcase2 precutresult",
+    "actual": "120",
+    "expected": "120",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "newcase2 percentagecut",
+    "actual": "60",
+    "expected": "60",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "newcase2 disallowedcost",
+    "actual": "2952",
+    "expected": "2952",
+    "kind": "arithmetic",
+    "result": "PASS"
+  },
+  {
+    "name": "cheaplet50boundary",
+    "actual": "False",
+    "expected": "False",
+    "kind": "threshold separator",
+    "result": "PASS"
+  },
+  {
+    "name": "cheaplet66boundary",
+    "actual": "True",
+    "expected": "True",
+    "kind": "threshold separator",
+    "result": "PASS"
+  },
+  {
+    "name": "new7bcliffinclusive",
+    "actual": "416000",
+    "expected": "416000",
+    "kind": "threshold separator",
+    "result": "PASS"
+  },
+  {
+    "name": "new7bfirstcentover",
+    "actual": "True",
+    "expected": "True",
+    "kind": "threshold separator",
+    "result": "PASS"
+  },
+  {
+    "name": "2026 unadvised nominal31July2027 Saturday",
+    "actual": "5",
+    "expected": "5",
+    "kind": "calendar",
+    "result": "PASS"
+  },
+  {
+    "name": "2026 unadvised moved2August2027 Monday",
+    "actual": "0",
+    "expected": "0",
+    "kind": "calendar",
+    "result": "PASS"
+  },
+  {
+    "name": "2026 advised29February2028 Tuesday",
+    "actual": "1",
+    "expected": "1",
+    "kind": "calendar",
+    "result": "PASS"
+  },
+  {
+    "name": "2025 unadvised31July2026 Friday",
+    "actual": "4",
+    "expected": "4",
+    "kind": "calendar",
+    "result": "PASS"
+  },
+  {
+    "name": "2025 advised nominal28February2027 Sunday",
+    "actual": "6",
+    "expected": "6",
+    "kind": "calendar",
+    "result": "PASS"
+  },
+  {
+    "name": "2025 advised moved1March2027 Monday",
+    "actual": "0",
+    "expected": "0",
+    "kind": "calendar",
+    "result": "PASS"
+  },
+  {
+    "name": "2024 advised30April2026 Thursday",
+    "actual": "3",
+    "expected": "3",
+    "kind": "calendar",
+    "result": "PASS"
+  }
+]

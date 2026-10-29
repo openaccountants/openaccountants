@@ -1,0 +1,14 @@
+{
+  "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-vat-annual-and-special-schemes.md",
+  "Guide_sha256": "c9af14ff3cd68fa52372d444ff37c917860ae5bd6fa8ff645c08cdee03397d71",
+  "Guide_bytes": 35255,
+  "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R24-steuerbar-wording-successor-2026-10-29/de-vat-annual-and-special-schemes.md",
+  "ledger_sha256": "d22dd5268409a71a0124e6888da0912266991291b7e6ad4e5576480f631951ed",
+  "rows_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R24-steuerbar-wording-successor-2026-10-29/rows.json",
+  "rows_sha256": "bec2578d87a543b09120f2587a853c2dd870621ef0766b68b6a5327f47d5c434",
+  "old_topics_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R23-R25-annual-VAT-writer-successor-2026-10-29/support/de-vat-annual-and-special-schemes/old-topic-destinations.json",
+  "old_topics_sha256": "d10ae7d52eb78907774e89044cc35a223670449545f456830d316233d3e61186",
+  "source_index_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R23-R25-annual-VAT-writer-successor-2026-10-29/source-quote-index.json",
+  "source_index_sha256": "35da6754e20d6122dfc479cc74f95404e37e93c3ff5a1fca2e5bd8cfdc228600",
+  "prior_manifest_sha256": "a5975e6d4656bf525d4e836aaf26eb367124e5fd29077db2863f4df3a0744fdd"
+}

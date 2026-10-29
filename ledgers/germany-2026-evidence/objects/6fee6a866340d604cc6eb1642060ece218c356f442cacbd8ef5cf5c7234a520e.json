@@ -1,0 +1,4992 @@
+[
+  {
+    "id": "001",
+    "prior_row_id": 1,
+    "native_LF": [
+      1,
+      1
+    ],
+    "section": "metadata/title",
+    "wording": "---",
+    "source_quote_ids": [],
+    "classification": "preserved_metadata",
+    "prior_native_LF": 1,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "002",
+    "prior_row_id": 2,
+    "native_LF": [
+      2,
+      2
+    ],
+    "section": "metadata/title",
+    "wording": "name: de-rental-income",
+    "source_quote_ids": [],
+    "classification": "preserved_metadata",
+    "prior_native_LF": 2,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "003",
+    "prior_row_id": 3,
+    "native_LF": [
+      3,
+      3
+    ],
+    "section": "metadata/title",
+    "wording": "description: \"German income from letting property held privately (Einkünfte aus Vermietung und Verpachtung, § 21 EStG), tax year 2026. Covers what counts as rent and Werbungskosten (§ 9 EStG), building depreciation at 2%, 2.5% or 3% (§ 7(4)), the 5% declining-balance AfA for new housing (§ 7(5a)) and § 7b special depreciation for new rental flats, maintenance versus acquisition-related production cost (the 15% three-year rule) and § 82b EStDV spreading, cheap lets to relatives (the 50% and 66% rules), holiday and short-term lets and the intention to make a surplus, losses, the ten-year rule on a sale (§ 23), Anlage V and deadlines. Trigger on: Mieteinnahmen, Vermietung, Anlage V, AfA Gebäude, Werbungskosten Vermietung, anschaffungsnahe Herstellungskosten, verbilligte Vermietung, Ferienwohnung, Spekulationsfrist, rental income Germany. Out of scope: property in a business or a trade in property (de-trade-tax), the tariff (de-einkommensteuer-freelancer), non-resident landlords (de-non-resident-tax), sales beyond the ten-year test (de-capital-gains), VAT returns (germany-vat-return).\"",
+    "source_quote_ids": [
+      "R01",
+      "R04",
+      "R07",
+      "R08",
+      "R11",
+      "R14",
+      "R18",
+      "R20",
+      "R22",
+      "R23",
+      "R24",
+      "R42",
+      "R57",
+      "R59",
+      "R62",
+      "R68",
+      "R70",
+      "R73",
+      "R74",
+      "R95",
+      "R96"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 3,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "004",
+    "prior_row_id": 4,
+    "native_LF": [
+      4,
+      4
+    ],
+    "section": "metadata/title",
+    "wording": "version: 1.7",
+    "source_quote_ids": [],
+    "classification": "preserved_metadata",
+    "prior_native_LF": 4,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "005",
+    "prior_row_id": 5,
+    "native_LF": [
+      5,
+      5
+    ],
+    "section": "metadata/title",
+    "wording": "jurisdiction: DE",
+    "source_quote_ids": [],
+    "classification": "preserved_metadata",
+    "prior_native_LF": 5,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "006",
+    "prior_row_id": 6,
+    "native_LF": [
+      6,
+      6
+    ],
+    "section": "metadata/title",
+    "wording": "tax_year: 2026",
+    "source_quote_ids": [],
+    "classification": "preserved_metadata",
+    "prior_native_LF": 6,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "007",
+    "prior_row_id": 7,
+    "native_LF": [
+      7,
+      7
+    ],
+    "section": "metadata/title",
+    "wording": "last_updated: 2026-10-29",
+    "source_quote_ids": [],
+    "classification": "preserved_metadata",
+    "prior_native_LF": 7,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "008",
+    "prior_row_id": 8,
+    "native_LF": [
+      8,
+      8
+    ],
+    "section": "metadata/title",
+    "wording": "authored_by: Michael Cutajar and the OpenAccountants team",
+    "source_quote_ids": [],
+    "classification": "preserved_metadata",
+    "prior_native_LF": 8,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "009",
+    "prior_row_id": 9,
+    "native_LF": [
+      9,
+      9
+    ],
+    "section": "metadata/title",
+    "wording": "review_status: pending_review",
+    "source_quote_ids": [],
+    "classification": "preserved_metadata",
+    "prior_native_LF": 9,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "010",
+    "prior_row_id": 10,
+    "native_LF": [
+      10,
+      10
+    ],
+    "section": "metadata/title",
+    "wording": "trust_label: Built by Michael Cutajar and the OpenAccountants team",
+    "source_quote_ids": [],
+    "classification": "preserved_metadata",
+    "prior_native_LF": 10,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "011",
+    "prior_row_id": 11,
+    "native_LF": [
+      11,
+      11
+    ],
+    "section": "metadata/title",
+    "wording": "depends_on:",
+    "source_quote_ids": [],
+    "classification": "preserved_metadata",
+    "prior_native_LF": 11,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "012",
+    "prior_row_id": 12,
+    "native_LF": [
+      12,
+      12
+    ],
+    "section": "metadata/title",
+    "wording": "  - de-self-employed-income-tax",
+    "source_quote_ids": [],
+    "classification": "preserved_metadata",
+    "prior_native_LF": 12,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "013",
+    "prior_row_id": 13,
+    "native_LF": [
+      13,
+      13
+    ],
+    "section": "metadata/title",
+    "wording": "category: international",
+    "source_quote_ids": [],
+    "classification": "preserved_metadata",
+    "prior_native_LF": 13,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "014",
+    "prior_row_id": 14,
+    "native_LF": [
+      14,
+      14
+    ],
+    "section": "metadata/title",
+    "wording": "tier: 2",
+    "source_quote_ids": [],
+    "classification": "preserved_metadata",
+    "prior_native_LF": 14,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "015",
+    "prior_row_id": 15,
+    "native_LF": [
+      15,
+      15
+    ],
+    "section": "metadata/title",
+    "wording": "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+    "source_quote_ids": [],
+    "classification": "preserved_metadata",
+    "prior_native_LF": 15,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "016",
+    "prior_row_id": 16,
+    "native_LF": [
+      16,
+      16
+    ],
+    "section": "metadata/title",
+    "wording": "---",
+    "source_quote_ids": [],
+    "classification": "preserved_metadata",
+    "prior_native_LF": 16,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "017",
+    "prior_row_id": 17,
+    "native_LF": [
+      18,
+      18
+    ],
+    "section": "metadata/title",
+    "wording": "# Rental income tax in Germany 2026 (Vermietung und Verpachtung)",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 18,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "018",
+    "prior_row_id": 18,
+    "native_LF": [
+      20,
+      20
+    ],
+    "section": "metadata/title",
+    "wording": "> **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any specific landlord's facts. A Steuerberater should confirm results before a return is filed.",
+    "source_quote_ids": [],
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "prior_native_LF": 20,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "019",
+    "prior_row_id": 19,
+    "native_LF": [
+      22,
+      22
+    ],
+    "section": " Who this applies to",
+    "wording": "## Who this applies to",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 22,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "020",
+    "prior_row_id": 20,
+    "native_LF": [
+      24,
+      24
+    ],
+    "section": " Who this applies to",
+    "wording": "- **Individuals letting land, buildings, flats or rooms held as private assets.** This is income from letting and leasing under [§ 21(1) EStG](https://www.gesetze-im-internet.de/estg/__21.html): immovable property (land, buildings, parts of buildings, rights such as a heritable building right), bundles of movable assets, the temporary grant of rights, and the sale of rent claims.",
+    "source_quote_ids": [
+      "R01",
+      "R02"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 24,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "021",
+    "prior_row_id": 21,
+    "native_LF": [
+      25,
+      25
+    ],
+    "section": " Who this applies to",
+    "wording": "- **Not here: letting that belongs to another kind of income** (§ 21(3) EStG). Property held in a business, a trading partnership, or a trade in property (gewerblicher Grundstückshandel) is taxed as business income: refer, and see `de-trade-tax`. Hotel-like services can also make a let a trade.",
+    "source_quote_ids": [
+      "R03",
+      "R121"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 25,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "022",
+    "prior_row_id": 22,
+    "native_LF": [
+      26,
+      26
+    ],
+    "section": " Who this applies to",
+    "wording": "- **Residents.** A person with a home or habitual abode in Germany is taxed on worldwide income. This skill computes the German rental result. Rent from property abroad (Anlage AUS, treaty exemption): refer.",
+    "source_quote_ids": [
+      "R111",
+      "R112"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 26,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "023",
+    "prior_row_id": 23,
+    "native_LF": [
+      27,
+      27
+    ],
+    "section": " Who this applies to",
+    "wording": "- **Non-residents with German property** are taxed on German rent under [§ 49(1) no. 6 EStG](https://www.gesetze-im-internet.de/estg/__49.html). Compute the rental result with this skill, then go to `de-non-resident-tax` for liability, the tariff and filing.",
+    "source_quote_ids": [
+      "R108"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 27,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "024",
+    "prior_row_id": 24,
+    "native_LF": [
+      28,
+      28
+    ],
+    "section": " Who this applies to",
+    "wording": "- **Year.** Tax year 2026, the calendar year. The consolidated EStG as read applies \"erstmals für den Veranlagungszeitraum 2026\" ([§ 52(1) EStG](https://www.gesetze-im-internet.de/estg/__52.html)). For 2025 returns still being filed, see \"Deadlines and filing\".",
+    "source_quote_ids": [
+      "R83",
+      "R114"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 28,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "025",
+    "prior_row_id": 25,
+    "native_LF": [
+      29,
+      29
+    ],
+    "section": " Who this applies to",
+    "wording": "- **Measure.** Receipts less Werbungskosten, on a cash basis. The result joins the client's other income at the normal tariff with solidarity surcharge and church tax: use `de-einkommensteuer-freelancer` for the tariff.",
+    "source_quote_ids": [
+      "R112",
+      "R113",
+      "R25",
+      "R26"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 29,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "026",
+    "prior_row_id": 26,
+    "native_LF": [
+      30,
+      30
+    ],
+    "section": " Who this applies to",
+    "wording": "- **Refer, not covered here**: co-ownership determinations (separate and uniform assessment), heirs' communities, funds, usufruct (Nießbrauch), heritable building rights (Erbbaurecht) as a party, §§ 7h and 7i, and §§ 15a and 15b loss limits.",
+    "source_quote_ids": [],
+    "classification": "scope_routing",
+    "prior_native_LF": 30,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "027",
+    "prior_row_id": 27,
+    "native_LF": [
+      31,
+      31
+    ],
+    "section": " Who this applies to",
+    "wording": "- **Related skills.** `de-capital-gains` (sales), `germany-vat-return` and `de-vat-annual-and-special-schemes` (VAT), `de-trade-tax` (a letting that is a trade), `de-estimated-tax` (prepayments), `de-employee-income-tax` (employees who must file), `de-non-resident-tax` (non-resident landlords).",
+    "source_quote_ids": [],
+    "classification": "scope_routing",
+    "prior_native_LF": 31,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "028",
+    "prior_row_id": 28,
+    "native_LF": [
+      33,
+      33
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "## Rates, bands and thresholds",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 33,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "029",
+    "prior_row_id": 29,
+    "native_LF": [
+      35,
+      35
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "All figures apply to tax year 2026 and were the same in 2025 unless marked.",
+    "source_quote_ids": [
+      "R83",
+      "R04",
+      "R11",
+      "R14",
+      "R18",
+      "R20",
+      "R22",
+      "R24",
+      "R28",
+      "R119",
+      "R85",
+      "R86",
+      "R87"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 35,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "030",
+    "prior_row_id": 30,
+    "native_LF": [
+      37,
+      37
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Item | Rate or amount | Year | Source URL |",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 37,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "031",
+    "prior_row_id": 31,
+    "native_LF": [
+      38,
+      38
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "|---|---|---|---|",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 38,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "032",
+    "prior_row_id": 32,
+    "native_LF": [
+      39,
+      39
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Straight-line AfA, building completed after 31 Dec 2022 | 3% a year | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(4) no. 2(a)) |",
+    "source_quote_ids": [
+      "R04"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 39,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "033",
+    "prior_row_id": 33,
+    "native_LF": [
+      40,
+      40
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Straight-line AfA, completed 1 Jan 1925 to 31 Dec 2022 | 2% a year | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(4) no. 2(b)) |",
+    "source_quote_ids": [
+      "R04"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 40,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "034",
+    "prior_row_id": 34,
+    "native_LF": [
+      41,
+      41
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Straight-line AfA, completed before 1 Jan 1925 | 2.5% a year | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(4) no. 2(c)) |",
+    "source_quote_ids": [
+      "R04"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 41,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "035",
+    "prior_row_id": 35,
+    "native_LF": [
+      42,
+      42
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Declining-balance AfA for housing, construction start or purchase contract 1 Oct 2023 to 30 Sep 2029 | 5% of remaining value | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(5a)) |",
+    "source_quote_ids": [
+      "R07",
+      "R08"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 42,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "036",
+    "prior_row_id": 36,
+    "native_LF": [
+      43,
+      43
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| § 7b special depreciation for new rental flats, year of purchase or completion and three more | up to 5% a year of the base | 2026 | https://www.gesetze-im-internet.de/estg/__7b.html |",
+    "source_quote_ids": [
+      "R11"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 43,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "037",
+    "prior_row_id": 37,
+    "native_LF": [
+      44,
+      44
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| § 7b cost cliff / base cap, application 1 Jan 2023 to 30 Sep 2029 | EUR 5,200 / EUR 4,000 per m² of living space | 2026 | https://www.gesetze-im-internet.de/estg/__7b.html (§ 7b(2), (3)) |",
+    "source_quote_ids": [
+      "R12",
+      "R14"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 44,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "038",
+    "prior_row_id": 38,
+    "native_LF": [
+      45,
+      45
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| § 7b cost cliff / base cap, application 1 Sep 2018 to 31 Dec 2021 | EUR 3,000 / EUR 2,000 per m²; last year of claim 2026 | 2026 | https://www.gesetze-im-internet.de/estg/__52.html (§ 52(15a)) |",
+    "source_quote_ids": [
+      "R12",
+      "R14",
+      "R84"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 45,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "039",
+    "prior_row_id": 39,
+    "native_LF": [
+      46,
+      46
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Works within three years of purchase capitalised if, without VAT, they exceed | 15% of the building's acquisition cost | 2026 | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(1) no. 1a) |",
+    "source_quote_ids": [
+      "R18",
+      "R19"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 46,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "040",
+    "prior_row_id": 40,
+    "native_LF": [
+      47,
+      47
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Spreading of larger maintenance, mainly residential building | 2 to 5 years | 2026 | https://www.gesetze-im-internet.de/estdv_1955/__82b.html |",
+    "source_quote_ids": [
+      "R20"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 47,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "041",
+    "prior_row_id": 41,
+    "native_LF": [
+      48,
+      48
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Low-value movable item (furniture) deducted at once | cost not more than EUR 800 net | 2026 | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(2)), via § 9(1) no. 7 |",
+    "source_quote_ids": [
+      "R22",
+      "R23",
+      "R39"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 48,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "042",
+    "prior_row_id": 42,
+    "native_LF": [
+      49,
+      49
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Cheap let of a home: costs split if rent is | under 50% of local market rent | 2026 | https://www.gesetze-im-internet.de/estg/__21.html (§ 21(2)) |",
+    "source_quote_ids": [
+      "R24"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 49,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "043",
+    "prior_row_id": 43,
+    "native_LF": [
+      50,
+      50
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Cheap let of a permanent home: fully paid if rent is | at least 66% of local rent | 2026 | https://www.gesetze-im-internet.de/estg/__21.html (§ 21(2)) |",
+    "source_quote_ids": [
+      "R24"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 50,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "044",
+    "prior_row_id": 44,
+    "native_LF": [
+      51,
+      51
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Car travel to the property (actual cost or flat rate) | 30 cents per km driven | 2026 | https://www.gesetze-im-internet.de/brkg_2005/__5.html (§ 5(2) BRKG) |",
+    "source_quote_ids": [
+      "R29",
+      "R30",
+      "R31"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 51,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "045",
+    "prior_row_id": 45,
+    "native_LF": [
+      52,
+      52
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Commuting allowance (only if the property were a first place of activity) | EUR 0.38 per full km one way | 2026 | https://www.gesetze-im-internet.de/estg/__9.html (§ 9(1) no. 4) |",
+    "source_quote_ids": [
+      "R28",
+      "R30"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 52,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "046",
+    "prior_row_id": 46,
+    "native_LF": [
+      53,
+      53
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Private sale of land: taxable period | not more than 10 years between purchase and sale | 2026 | https://www.gesetze-im-internet.de/estg/__23.html (§ 23(1) no. 1) |",
+    "source_quote_ids": [
+      "R70"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 53,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "047",
+    "prior_row_id": 47,
+    "native_LF": [
+      54,
+      54
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Private sale gains tax-free if total for the year is | less than EUR 1,000 | 2026 | https://www.gesetze-im-internet.de/estg/__23.html (§ 23(3)) |",
+    "source_quote_ids": [
+      "R72"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 54,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "048",
+    "prior_row_id": 48,
+    "native_LF": [
+      55,
+      55
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Loss carry-back | EUR 1,000,000 (EUR 2,000,000 joint) | 2026 | https://www.gesetze-im-internet.de/estg/__10d.html (§ 10d(1)) |",
+    "source_quote_ids": [
+      "R73"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 55,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "049",
+    "prior_row_id": 49,
+    "native_LF": [
+      56,
+      56
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Loss carry-forward above EUR 1 million (EUR 2 million joint) of total income | 70% of the excess for 2024 to 2027; 60% from 2028 | 2026 | https://www.gesetze-im-internet.de/estg/__10d.html; https://www.recht.bund.de/bgbl/1/2024/108/regelungstext.pdf (Art. 6, in force 1 Jan 2028) |",
+    "source_quote_ids": [
+      "R74",
+      "R85",
+      "R86",
+      "R87"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 56,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "050",
+    "prior_row_id": 50,
+    "native_LF": [
+      57,
+      57
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Employee must file if untaxed side income is more than | EUR 410 | 2026 | https://www.gesetze-im-internet.de/estg/__46.html (§ 46(2) no. 1) |",
+    "source_quote_ids": [
+      "R76"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 57,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "051",
+    "prior_row_id": 51,
+    "native_LF": [
+      58,
+      58
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Prepayments set only if at least | EUR 400 a year and EUR 100 per date | 2026 | https://www.gesetze-im-internet.de/estg/__37.html (§ 37(5)) |",
+    "source_quote_ids": [
+      "R80"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 58,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "052",
+    "prior_row_id": 52,
+    "native_LF": [
+      59,
+      59
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| VAT on a let where the landlord opts / on short-term guest lets | 19% / 7% | 2026 | https://www.gesetze-im-internet.de/ustg_1980/__12.html (§ 12(1), (2) no. 11) |",
+    "source_quote_ids": [
+      "R103",
+      "R104",
+      "R106",
+      "R107"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 59,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "053",
+    "prior_row_id": 53,
+    "native_LF": [
+      60,
+      60
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Late-filing surcharge per started month | 0.25% of net tax due, at least EUR 25; cap EUR 25,000 | 2026 | https://www.gesetze-im-internet.de/ao_1977/__152.html (§ 152(5), (10)) |",
+    "source_quote_ids": [
+      "R98",
+      "R99",
+      "R100"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 60,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "054",
+    "prior_row_id": 54,
+    "native_LF": [
+      61,
+      61
+    ],
+    "section": " Rates, bands and thresholds",
+    "wording": "| Interest on back tax or refunds | 0.15% a month (1.8% a year), from 15 months after the year | 2026 | https://www.gesetze-im-internet.de/ao_1977/__233a.html; https://www.gesetze-im-internet.de/ao_1977/__238.html (§ 238(1a)) |",
+    "source_quote_ids": [
+      "R101",
+      "R102"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 61,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "055",
+    "prior_row_id": 55,
+    "native_LF": [
+      63,
+      63
+    ],
+    "section": " The taxable base",
+    "wording": "## The taxable base",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 63,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "056",
+    "prior_row_id": 56,
+    "native_LF": [
+      65,
+      65
+    ],
+    "section": " The taxable base",
+    "wording": "### Income and timing",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 65,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "057",
+    "prior_row_id": 57,
+    "native_LF": [
+      67,
+      67
+    ],
+    "section": " The taxable base",
+    "wording": "- **Income**: rent; Umlagen (running costs paid by the tenant); settlement back-payments; a deposit kept and set off against rent, running costs or damage; payments for antenna, wind or Wi-Fi sites; a furniture surcharge; VAT received on an opted let; grants for rent (2025 instructions, lines 13 to 31). A refundable deposit is not income while held.",
+    "source_quote_ids": [
+      "R49",
+      "R50",
+      "R01",
+      "R02",
+      "R25",
+      "R126",
+      "R127",
+      "R131"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 67,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "058",
+    "prior_row_id": 58,
+    "native_LF": [
+      68,
+      68
+    ],
+    "section": " The taxable base",
+    "wording": "- **Umlagen count twice**: income when received; the running costs paid are Werbungskosten.",
+    "source_quote_ids": [
+      "R49",
+      "R51"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 68,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "059",
+    "prior_row_id": 59,
+    "native_LF": [
+      69,
+      69
+    ],
+    "section": " The taxable base",
+    "wording": "- **Cash basis** ([§ 11 EStG](https://www.gesetze-im-internet.de/estg/__11.html)): income when received, costs when paid. Regularly recurring items paid shortly before or after the turn of the year belong to the year they relate to. Rent received in advance for a let of more than five years **may** be spread over the period; costs paid in advance for more than five years **must** be spread. A market-level loan discount (Disagio) is deductible when paid.",
+    "source_quote_ids": [
+      "R25",
+      "R26"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 69,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "060",
+    "prior_row_id": 60,
+    "native_LF": [
+      71,
+      71
+    ],
+    "section": " The taxable base",
+    "wording": "### Werbungskosten ([§ 9 EStG](https://www.gesetze-im-internet.de/estg/__9.html))",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 71,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "061",
+    "prior_row_id": 61,
+    "native_LF": [
+      73,
+      73
+    ],
+    "section": " The taxable base",
+    "wording": "Costs \"zur Erwerbung, Sicherung und Erhaltung der Einnahmen\", deductible in the year paid, only for a property that earns or is intended to earn rent. Costs attributable to the owner’s private use or free-use parts are not rental expenses. Letting individual rooms within the owner’s home can generate deductible rental costs; allocate those costs to the actual let part.",
+    "source_quote_ids": [
+      "R27",
+      "R34",
+      "R109-111.R34",
+      "R109-111.R120"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 73,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "062",
+    "prior_row_id": 62,
+    "native_LF": [
+      75,
+      75
+    ],
+    "section": " The taxable base",
+    "wording": "- **Deductible**: loan interest so far as linked to the property, and the cost of raising the loan (§ 9(1) no. 1); property tax, other public charges and building insurance (no. 2); AfA and § 7b (no. 7); liability insurance; running costs, including those passed on; Hausgeld **except** the maintenance-reserve part, which is deductible only when the owners' association spends it; management; the tax adviser's rental share; tenancy legal fees; advertising and the broker for finding a tenant; rent-account fees; maintenance.",
+    "source_quote_ids": [
+      "R27",
+      "R23",
+      "R34",
+      "R40",
+      "R41",
+      "R51",
+      "R52"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 75,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "063",
+    "prior_row_id": 63,
+    "native_LF": [
+      76,
+      76
+    ],
+    "section": " The taxable base",
+    "wording": "- **Travel**: actual cost, or 30 cents per km **driven** by car (§ 9(1) no. 4a and § 9(3) EStG with [§ 5(2) BRKG](https://www.gesetze-im-internet.de/brkg_2005/__5.html)). If the property were a first place of activity, the commuting allowance of EUR 0.38 per full km one way applies instead. When a let property is one is not settled on the pages read: ask the accountant.",
+    "source_quote_ids": [
+      "R28",
+      "R29",
+      "R30",
+      "R31"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 76,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "064",
+    "prior_row_id": 64,
+    "native_LF": [
+      77,
+      79
+    ],
+    "section": " The taxable base",
+    "wording": "- **Not deductible**: loan principal (Tilgung); transfer tax, notary and broker on the purchase (they go into acquisition cost); reserve payments until spent; costs attributable to own-use or free-use parts; the unpaid part of a cheap let; fines (§ 9(5) with § 4(5) no. 8 EStG); income tax, solidarity surcharge and church tax.\n\nFor mixed private and rental use, first attribute identifiable costs directly. Allocate shared costs by a justified, documented measure, such as the actual usable-floor-area ratio, and explain a first allocation (published 2025 ELSTER instructions, applied here to the unchanged rental-expense principle, not claimed 2026 form lines). For example, an identifiable rented-room repair of EUR 1,000 plus a shared roof repair of EUR 10,000 at an independently supported 20% rental share gives EUR 3,000 rental costs before any other applicable limitation; private-only costs stay excluded. The 20% is a stipulated allocation fact, not a universal prescribed ratio.",
+    "source_quote_ids": [
+      "R27",
+      "R32",
+      "R34",
+      "R41",
+      "R115",
+      "R116",
+      "R19",
+      "R109-111.R34",
+      "R109-111.R120"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 77,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "065",
+    "prior_row_id": 65,
+    "native_LF": [
+      80,
+      80
+    ],
+    "section": " The taxable base",
+    "wording": "- **§ 35c energy credit**: only for a building used **only** for the owner's own housing ([§ 35c(2) EStG](https://www.gesetze-im-internet.de/estg/__35c.html)), and not for costs deducted as Werbungskosten (§ 35c(3)). For a let property, energy works are maintenance or production cost under the rules below, never the § 35c credit.",
+    "source_quote_ids": [
+      "R82"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 78,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "066",
+    "prior_row_id": 66,
+    "native_LF": [
+      82,
+      82
+    ],
+    "section": " The taxable base",
+    "wording": "### Building depreciation (AfA, [§ 7 EStG](https://www.gesetze-im-internet.de/estg/__7.html))",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 80,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "067",
+    "prior_row_id": 67,
+    "native_LF": [
+      84,
+      84
+    ],
+    "section": " The taxable base",
+    "wording": "- **Completion date decides the straight-line rate**, not the purchase date: 3% after 2022, 2% for 1925 to 2022, 2.5% before 1925 (§ 7(4) sentence 1 no. 2). This covers every privately held building, housing or not, including flats and separate parts of a building (§ 7(5b)). The separate 3% rate in no. 1 is for business-asset buildings not used for housing: never use it for a private shop or office completed before 2023.",
+    "source_quote_ids": [
+      "R04",
+      "R05"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 82,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "068",
+    "prior_row_id": 68,
+    "native_LF": [
+      85,
+      85
+    ],
+    "section": " The taxable base",
+    "wording": "- **Shorter actual life.** If the actual life is under 33 years (after 2022), 50 years (1925 to 2022) or 40 years (before 1925), that life may be used (§ 7(4) sentence 2). The 2025 instructions call this an exceptional case that must be proved to the tax office. Refer.",
+    "source_quote_ids": [
+      "R04",
+      "R37"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 83,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "069",
+    "prior_row_id": 69,
+    "native_LF": [
+      86,
+      86
+    ],
+    "section": " The taxable base",
+    "wording": "- **Older staged rates.** A building built or bought in its completion year under an application or contract before 1 January 2006 (housing; earlier dates for the other historic branches) may be on the staged rates of § 7(5). Ask what past returns used; refer any change.",
+    "source_quote_ids": [
+      "R06"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 84,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "070",
+    "prior_row_id": 70,
+    "native_LF": [
+      87,
+      87
+    ],
+    "section": " The taxable base",
+    "wording": "- **Acquired free of charge** (gift or inheritance): continue the previous owner's rate (2025 instructions).",
+    "source_quote_ids": [
+      "R38"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 85,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "071",
+    "prior_row_id": 71,
+    "native_LF": [
+      88,
+      88
+    ],
+    "section": " The taxable base",
+    "wording": "- **Declining-balance AfA, § 7(5a).** Instead of 3% straight-line, 5% of the remaining value (\"Restwert\") each year, so far as the building is used for **housing**, if all hold: it is in Germany, the EU or the EEA; the client built it, or bought it by the end of the completion year; and construction started (the date on the construction-start notice required by state law; where none is required, the client declares a voluntary notice) or the binding purchase contract was made after 30 September 2023 and before 1 October 2029. No extraordinary write-down while it runs. Switching to straight-line is allowed, then on the remaining value and remaining life.",
+    "source_quote_ids": [
+      "R07",
+      "R08"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 86,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "072",
+    "prior_row_id": 72,
+    "native_LF": [
+      89,
+      89
+    ],
+    "section": " The taxable base",
+    "wording": "- **Base.** Price plus side costs (transfer tax, notary, land register, the buyer's broker) under [§ 255 HGB](https://www.gesetze-im-internet.de/hgb/__255.html), less the land share. Land is never depreciated. A maintenance reserve bought with a flat is excluded (2025 instructions). Grants reduce the base (line 89). A former own home let for the first time needs a first computation.",
+    "source_quote_ids": [
+      "R32",
+      "R35",
+      "R36",
+      "R50"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 87,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "073",
+    "prior_row_id": 73,
+    "native_LF": [
+      90,
+      90
+    ],
+    "section": " The taxable base",
+    "wording": "- **Price split.** Split by the ratio of market values, not by the residual-value method (2025 instructions). The [BMF purchase-price split tool](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Berechnung-Aufteilung-Grundstueckskaufpreis.html) makes or tests a split. A contract split at arm's length or an expert valuation may also be used; the tax office may challenge a high building share.",
+    "source_quote_ids": [
+      "R123",
+      "R124",
+      "R122",
+      "R125",
+      "R135"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 88,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "074",
+    "prior_row_id": 74,
+    "native_LF": [
+      91,
+      91
+    ],
+    "section": " The taxable base",
+    "wording": "- **First-year month cut.** Cut one twelfth for each full month before the month of acquisition or completion (§ 7(1) sentence 4). Statute applies it to § 7(5a) (sentence 5). For straight-line AfA, the BMF letter of 21 May 2025 on § 7b says so too: \"bei Fertigstellung nach dem 31. Januar wäre eine zeitanteilige Kürzung der linearen AfA im Jahr der Fertigstellung erforderlich\" (example 7). Only the old staged § 7(5) rates take a full first year.",
+    "source_quote_ids": [
+      "R09",
+      "R08",
+      "R06",
+      "R93"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 89,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "075",
+    "prior_row_id": 75,
+    "native_LF": [
+      92,
+      92
+    ],
+    "section": " The taxable base",
+    "wording": "- **For example**: completed February 2026, bought with benefit and burden from 1 April 2026, building share EUR 300,000. Declining-balance: 300,000 × 5% × 9/12 = EUR 11,250 in 2026; 2027: (300,000 − 11,250) × 5% = EUR 14,437.50. Straight-line instead: 300,000 × 3% × 9/12 = EUR 6,750. The binding contract was made in March 2026. Total acquisition cost is EUR 400,000, including land of EUR 100,000. From April, rent is EUR 1,200 plus Umlagen of EUR 250 a month: income is 9 × (1,200 + 250) = EUR 13,050. Interest of EUR 9,000, running costs of EUR 2,250 and management of EUR 600 total EUR 11,850. The declining-balance loss is 13,050 − 11,850 − 11,250 = EUR 10,050; with straight-line AfA the loss is EUR 5,550.",
+    "source_quote_ids": [
+      "R04",
+      "R07",
+      "R08",
+      "R09"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 90,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "076",
+    "prior_row_id": 76,
+    "native_LF": [
+      93,
+      93
+    ],
+    "section": " The taxable base",
+    "wording": "- **End**: until fully written off, or the year of sale.",
+    "source_quote_ids": [
+      "R132",
+      "R27",
+      "R131"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 91,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "077",
+    "prior_row_id": 77,
+    "native_LF": [
+      95,
+      95
+    ],
+    "section": " The taxable base",
+    "wording": "### § 7b special depreciation for new rental flats ([§ 7b EStG](https://www.gesetze-im-internet.de/estg/__7b.html))",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 93,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "078",
+    "prior_row_id": 78,
+    "native_LF": [
+      97,
+      97
+    ],
+    "section": " The taxable base",
+    "wording": "Up to 5% of the base in the year of acquisition or production and the three following years, on top of normal AfA under § 7(4) or § 7(5a). All must hold:",
+    "source_quote_ids": [
+      "R11"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 95,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "079",
+    "prior_row_id": 79,
+    "native_LF": [
+      99,
+      99
+    ],
+    "section": " The taxable base",
+    "wording": "- The building work creates **new** flats that did not exist before, under a building application or notice in the **old window** (after 31 August 2018 and before 1 January 2022) or the **new window** (after 31 December 2022 and before 1 October 2029). Nothing applied for in 2022 qualifies.",
+    "source_quote_ids": [
+      "R12"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 97,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "080",
+    "prior_row_id": 80,
+    "native_LF": [
+      100,
+      100
+    ],
+    "section": " The taxable base",
+    "wording": "- Cost per m² of living space **not more than** the cliff (EUR 3,000 old window, EUR 5,200 new window), or no § 7b at all. The base is capped per m² (EUR 2,000 old, EUR 4,000 new). Normal AfA still runs on full cost (BMF letter of 21 May 2025, para. 65).",
+    "source_quote_ids": [
+      "R14",
+      "R91"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 98,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "081",
+    "prior_row_id": 81,
+    "native_LF": [
+      101,
+      101
+    ],
+    "section": " The taxable base",
+    "wording": "- In the EU, or a state giving the required administrative help. If bought, bought by the end of the completion year; only the buyer claims.",
+    "source_quote_ids": [
+      "R11"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 99,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "082",
+    "prior_row_id": 82,
+    "native_LF": [
+      102,
+      102
+    ],
+    "section": " The taxable base",
+    "wording": "- Let **for housing, against payment**, in that year and the **nine** following years. Short-term guest accommodation is not housing (§ 7b(2) no. 3).",
+    "source_quote_ids": [
+      "R13"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 100,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "083",
+    "prior_row_id": 83,
+    "native_LF": [
+      103,
+      103
+    ],
+    "section": " The taxable base",
+    "wording": "- New window only: the building meets \"Effizienzhaus 40\" with sustainability class, proven by the \"Qualitätssiegel Nachhaltiges Gebäude\".",
+    "source_quote_ids": [
+      "R12"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 101,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "084",
+    "prior_row_id": 84,
+    "native_LF": [
+      104,
+      104
+    ],
+    "section": " The taxable base",
+    "wording": "- **Old window ends with 2026**: claims are allowed \"letztmalig für den Veranlagungszeitraum 2026\" ([§ 52(15a)](https://www.gesetze-im-internet.de/estg/__52.html)), even if four years have not run. A buyer who started in 2024 claims 2024 to 2026 and loses the fourth year (BMF letter, para. 16, example 1). The new window has no such end.",
+    "source_quote_ids": [
+      "R84",
+      "R88",
+      "R89"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 102,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "085",
+    "prior_row_id": 85,
+    "native_LF": [
+      105,
+      105
+    ],
+    "section": " The taxable base",
+    "wording": "- **Claw-back** of all past claims if the flat is not let for housing for ten years, is sold in that time with the gain untaxed, or later costs push it over the cliff within three years after the year of acquisition or production (§ 7b(4)).",
+    "source_quote_ids": [
+      "R15"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 103,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "086",
+    "prior_row_id": 86,
+    "native_LF": [
+      106,
+      106
+    ],
+    "section": " The taxable base",
+    "wording": "- **After the four-year benefit period**, regular AfA uses the remaining value and the § 7(4) percentage determined from the remaining mathematical useful life; for § 7(5a), apply its 5% rate to that remaining value ([§ 7a(9) EStG](https://www.gesetze-im-internet.de/estg/__7a.html); BMF letter, para. 66). The old-window 2026 sunset does not shorten that four-year period: the 2024 buyer above still uses unchanged regular AfA in 2027 and changes to § 7a(9) in 2028 (BMF para. 16). Establish the actual historical normal/special deductions and useful-life branch before computing; do not substitute a guessed partial-year balance.",
+    "source_quote_ids": [
+      "R17",
+      "R92",
+      "R109-111.R17",
+      "R109-111.R89",
+      "R109-111.R92"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 104,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "087",
+    "prior_row_id": 87,
+    "native_LF": [
+      107,
+      107
+    ],
+    "section": " The taxable base",
+    "wording": "- **De minimis aid**: for the new window, only claimants with farming, business or self-employed income must meet the EU de minimis rules (§ 7b(5)); the 2025 instructions treat the old window as de minimis aid and ask for the other aid received.",
+    "source_quote_ids": [
+      "R16",
+      "R84",
+      "R94"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 105,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "088",
+    "prior_row_id": 88,
+    "native_LF": [
+      108,
+      108
+    ],
+    "section": " The taxable base",
+    "wording": "- **For example**: an 80 m² flat applied for in 2024, completed and bought January 2026, Effizienzhaus 40 with the seal, let long-term, cost of the flat without land EUR 400,000 (land never enters § 7b: BMF letter, para. 43). 400,000 / 80 = EUR 5,000 per m², not over 5,200: qualifies. Base cap 80 × 4,000 = EUR 320,000; § 7b 320,000 × 5% = EUR 16,000 a year for 2026 to 2029, plus straight-line 400,000 × 3% = EUR 12,000 (January, no cut). At EUR 420,000 (EUR 5,250 per m²) there is no § 7b.",
+    "source_quote_ids": [
+      "R04",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R90",
+      "R91"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 106,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "089",
+    "prior_row_id": 89,
+    "native_LF": [
+      112,
+      112
+    ],
+    "section": " The taxable base",
+    "wording": "Source for the letter: [BMF letter of 21 May 2025 on § 7b EStG](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-05-21-anwendungsschreiben-7b-estg-neu.pdf?__blob=publicationFile&v=5).",
+    "source_quote_ids": [
+      "R88",
+      "R89",
+      "R90",
+      "R91",
+      "R92",
+      "R93"
+    ],
+    "classification": "source_pointer",
+    "prior_native_LF": 108,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "090",
+    "prior_row_id": 90,
+    "native_LF": [
+      114,
+      114
+    ],
+    "section": " The taxable base",
+    "wording": "### Maintenance or production cost",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 110,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "091",
+    "prior_row_id": 91,
+    "native_LF": [
+      116,
+      116
+    ],
+    "section": " The taxable base",
+    "wording": "- **Maintenance** (Erhaltungsaufwand) keeps or restores the condition: repainting, like-for-like heating, roof repair, equivalent windows. Deductible when paid, or spread under § 82b EStDV.",
+    "source_quote_ids": [
+      "R128",
+      "R33",
+      "R18",
+      "R19",
+      "R26",
+      "R20"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 112,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "092",
+    "prior_row_id": 92,
+    "native_LF": [
+      117,
+      117
+    ],
+    "section": " The taxable base",
+    "wording": "- **Production cost** creates something new, extends, or substantially improves beyond the original condition ([§ 255(2) HGB](https://www.gesetze-im-internet.de/hgb/__255.html)): balcony, attic conversion, lift, lifting the standard (judged mainly by heating, sanitary and electrical installations and windows). The 2025 instructions: works that bring the flat or building \"auf einen höheren Standard\" are production or acquisition cost. Capitalised and depreciated with the building.",
+    "source_quote_ids": [
+      "R33",
+      "R41"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 113,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "093",
+    "prior_row_id": 93,
+    "native_LF": [
+      118,
+      118
+    ],
+    "section": " The taxable base",
+    "wording": "- **Bought in a poor state**: making non-working essential parts work again (defective heating, water or fire damage), and change-of-use works before first use, are **acquisition** cost (2025 instructions).",
+    "source_quote_ids": [
+      "R32",
+      "R41"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 114,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "094",
+    "prior_row_id": 94,
+    "native_LF": [
+      119,
+      119
+    ],
+    "section": " The taxable base",
+    "wording": "- **The 15% rule, acquisition-related production cost** ([§ 6(1) no. 1a EStG](https://www.gesetze-im-internet.de/estg/__6.html), applied to Werbungskosten by § 9(5) sentence 2). Repair and modernisation works carried out **within three years** of acquisition become production cost if their total cost **without VAT** \"15 Prozent der Anschaffungskosten des Gebäudes übersteigen\". It is a cliff: over it, **all** of them are capitalised. The three years are added up, so a later job can pull earlier deductions back in. Exactly 15% is not over. Not counted: extensions, and maintenance that usually recurs every year, such as servicing.",
+    "source_quote_ids": [
+      "R18",
+      "R19"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 115,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "095",
+    "prior_row_id": 95,
+    "native_LF": [
+      120,
+      120
+    ],
+    "section": " The taxable base",
+    "wording": "- **For example**: building completed 1970, bought May 2025, building share EUR 200,000, so the limit is EUR 30,000. Works without VAT: EUR 12,000 in 2025 (deducted on the 2025 return) and EUR 19,000 in 2026. Total EUR 31,000 is over EUR 30,000: all of it is production cost, including 2025, and is depreciated at 2% with the building: EUR 31,000 × 2% = EUR 620 for a full year. Refer the correction of the 2025 assessment. With 2026 works of EUR 18,000 the total is exactly EUR 30,000: not over, judge each job on its own.",
+    "source_quote_ids": [
+      "R18",
+      "R19",
+      "R04"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 116,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "096",
+    "prior_row_id": 96,
+    "native_LF": [
+      121,
+      121
+    ],
+    "section": " The taxable base",
+    "wording": "- **Spreading, [§ 82b EStDV](https://www.gesetze-im-internet.de/estdv_1955/__82b.html).** Larger maintenance may be spread evenly over two to five years if, **when paid**, the building is not a business asset and is **mainly** housing: housing floor area more than half the usable area; garages count as housing up to one car per flat. On sale, transfer into a business or end of letting, the rest is deducted that year. Co-owners must use the same period. Works in redevelopment areas and on listed buildings (§§ 11a, 11b EStG, §§ 7h, 7i): refer.",
+    "source_quote_ids": [
+      "R20",
+      "R21"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 117,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "097",
+    "prior_row_id": 97,
+    "native_LF": [
+      123,
+      123
+    ],
+    "section": " The taxable base",
+    "wording": "### Furniture",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 119,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "098",
+    "prior_row_id": 98,
+    "native_LF": [
+      125,
+      125
+    ],
+    "section": " The taxable base",
+    "wording": "A furniture surcharge is rent. Furniture and fitted kitchens are depreciated over their useful life (§ 7(1) EStG; lines 42 to 45). An item usable on its own costing not more than EUR 800 net may be deducted at once ([§ 6(2) EStG](https://www.gesetze-im-internet.de/estg/__6.html) through § 9(1) no. 7). For the cheap-let comparison, use a furniture adjustment already provided by the local rent index without adding it twice. Otherwise add a surcharge only if it can be established from the local market for furnished lets; if no market value can be determined, no surcharge is added. Never derive it from monthly furniture AfA or a standard investment return ([BFH, 6 February 2018, IX R 14/17, paras. 18 to 20](https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201810105?type=1646225765)).",
+    "source_quote_ids": [
+      "R01",
+      "R02",
+      "R10",
+      "R22",
+      "R23",
+      "R39",
+      "R129"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 121,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "099",
+    "prior_row_id": 99,
+    "native_LF": [
+      127,
+      127
+    ],
+    "section": " The taxable base",
+    "wording": "### Cheap lets: the 50% and 66% rules ([§ 21(2) EStG](https://www.gesetze-im-internet.de/estg/__21.html))",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 123,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "100",
+    "prior_row_id": 100,
+    "native_LF": [
+      129,
+      129
+    ],
+    "section": " The taxable base",
+    "wording": "Applies to letting a **home for living in**, to any tenant; it mostly bites on relatives.",
+    "source_quote_ids": [
+      "R24"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 125,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "101",
+    "prior_row_id": 101,
+    "native_LF": [
+      131,
+      131
+    ],
+    "section": " The taxable base",
+    "wording": "| Rent including Umlagen, as share of local market rent including passable costs | Result |",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 127,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "102",
+    "prior_row_id": 102,
+    "native_LF": [
+      132,
+      132
+    ],
+    "section": " The taxable base",
+    "wording": "|---|---|",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 128,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "103",
+    "prior_row_id": 103,
+    "native_LF": [
+      133,
+      133
+    ],
+    "section": " The taxable base",
+    "wording": "| Less than 50% | Split into a paid and an unpaid part; costs deductible only for the paid part |",
+    "source_quote_ids": [
+      "R24",
+      "R42"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 129,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "104",
+    "prior_row_id": 104,
+    "native_LF": [
+      134,
+      134
+    ],
+    "section": " The taxable base",
+    "wording": "| At least 50% and less than 66% | Under the published 2025 ELSTER instruction, a forecast with no loss, including exactly zero, gives full cost deduction; a forecast loss requires splitting. This is the dated administrative method used here on the unchanged 2026 statutory band; the older BMF para. 13 uses positive-surplus wording. |",
+    "source_quote_ids": [
+      "R42",
+      "R109-111.R42"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 130,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "105",
+    "prior_row_id": 105,
+    "native_LF": [
+      135,
+      135
+    ],
+    "section": " The taxable base",
+    "wording": "| At least 66%, permanent home let | Deemed fully paid; all costs deductible |",
+    "source_quote_ids": [
+      "R24",
+      "R42"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 131,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "106",
+    "prior_row_id": 106,
+    "native_LF": [
+      137,
+      137
+    ],
+    "section": " The taxable base",
+    "wording": "- **Compare** rent paid including Umlagen with market rent including passable running costs, never cold rent with cold rent (2025 instructions).",
+    "source_quote_ids": [
+      "R42"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 133,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "107",
+    "prior_row_id": 107,
+    "native_LF": [
+      138,
+      138
+    ],
+    "section": " The taxable base",
+    "wording": "- **The split**: costs in the ratio of agreed rent to market rent. On the 2025 form enter all costs in full (lines 33 to 84) and the cut percentage in line 87, or an amount in line 88 if only part of the property is let cheaply. The tax office makes the cut.",
+    "source_quote_ids": [
+      "R34",
+      "R42"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 134,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "108",
+    "prior_row_id": 108,
+    "native_LF": [
+      139,
+      139
+    ],
+    "section": " The taxable base",
+    "wording": "- **The forecast (Totalüberschussprognose)** for the 50% to 66% band, per the BMF letter of 8 October 2004 (BStBl I p. 933), paras. 13 and 34, as printed with its notes in the [official income tax handbook 2024, Anhang 30 II](https://esth.bundesfinanzministerium.de/esth/2024/C-Anhaenge/Anhang-30/II/anhang-30-II.html). The notes state that from 2021 para. 13 applies with 50% and 66% in place of 56% and 75%.",
+    "source_quote_ids": [
+      "R57"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 135,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "109",
+    "prior_row_id": 109,
+    "native_LF": [
+      140,
+      140
+    ],
+    "section": " The taxable base",
+    "wording": "  - **Period**: 30 years, counted for the cheap let from the date of its tenancy contract (para. 34, example 2). Earlier lets of the same flat and other flats are left out.",
+    "source_quote_ids": [
+      "R65",
+      "R66",
+      "R67"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 136,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "110",
+    "prior_row_id": 110,
+    "native_LF": [
+      141,
+      141
+    ],
+    "section": " The taxable base",
+    "wording": "  - **AfA in the forecast**: the straight-line § 7(4) rate, not § 7(5a) declining balance or § 7b special depreciation actually claimed (para. 34).",
+    "source_quote_ids": [
+      "R67"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 137,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "111",
+    "prior_row_id": 111,
+    "native_LF": [
+      142,
+      142
+    ],
+    "section": " The taxable base",
+    "wording": "  - **Estimate**: average income and costs of the last five years, unless the client shows objective changes already set in motion; future maintenance may be estimated along § 28 of the Second Computation Ordinance (II. BV).",
+    "source_quote_ids": [
+      "R68"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 138,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "112",
+    "prior_row_id": 112,
+    "native_LF": [
+      143,
+      143
+    ],
+    "section": " The taxable base",
+    "wording": "  - **Safety margins**: add 10% to total estimated income and deduct 10% from total estimated costs.",
+    "source_quote_ids": [
+      "R68"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 139,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "113",
+    "prior_row_id": 113,
+    "native_LF": [
+      144,
+      144
+    ],
+    "section": " The taxable base",
+    "wording": "  - **Leave out** private sale gains, taxable under § 23 or not.",
+    "source_quote_ids": [
+      "R66"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 140,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "114",
+    "prior_row_id": 114,
+    "native_LF": [
+      145,
+      145
+    ],
+    "section": " The taxable base",
+    "wording": "  - **Result**: apply the published 2025 ELSTER no-loss instruction to this unchanged 2026 band: a zero or positive forecast gives full deduction; a negative forecast splits the let as under 50%. This identifies the current published administrative branch, rather than claiming that the older BMF positive-surplus wording expressly settles equality.",
+    "source_quote_ids": [
+      "R57",
+      "R109-111.R42"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 141,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "115",
+    "prior_row_id": 115,
+    "native_LF": [
+      146,
+      146
+    ],
+    "section": " The taxable base",
+    "wording": "- **Market rent**: the local rent index (Mietspiegel); failing that, equally valid: a sworn expert's reasoned report, a rent database, or rents for at least three comparable flats (§ 558a(2) nos. 2 to 4 BGB, per the 2025 instructions).",
+    "source_quote_ids": [
+      "R43"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 142,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "116",
+    "prior_row_id": 116,
+    "native_LF": [
+      147,
+      147
+    ],
+    "section": " The taxable base",
+    "wording": "- **Outside § 21(2)**: commercial space; the 66% sentence covers only permanent home lets. A cheap let of an office to a relative: refer.",
+    "source_quote_ids": [
+      "R24"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 143,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "117",
+    "prior_row_id": 117,
+    "native_LF": [
+      149,
+      149
+    ],
+    "section": " The taxable base",
+    "wording": "### Vacancy, holiday flats and the intention to make a surplus (Liebhaberei)",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 145,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "118",
+    "prior_row_id": 118,
+    "native_LF": [
+      151,
+      151
+    ],
+    "section": " The taxable base",
+    "wording": "Source for this part: BMF letter of 8 October 2004 (BStBl I p. 933), as printed with its notes in the [official income tax handbook 2024, Anhang 30 II](https://esth.bundesfinanzministerium.de/esth/2024/C-Anhaenge/Anhang-30/II/anhang-30-II.html) (\"para.\" below).",
+    "source_quote_ids": [
+      "R53",
+      "R57",
+      "R59",
+      "R66",
+      "R68"
+    ],
+    "classification": "source_pointer",
+    "prior_native_LF": 147,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "119",
+    "prior_row_id": 119,
+    "native_LF": [
+      153,
+      153
+    ],
+    "section": " The taxable base",
+    "wording": "- **Long-term home lets.** A let of a flat meant to last is taken to aim at a surplus without a test (para. 1). That presumption does not cover commercial premises or undeveloped land (note to para. 1): there the forecast below decides.",
+    "source_quote_ids": [
+      "R53"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 149,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "120",
+    "prior_row_id": 120,
+    "native_LF": [
+      154,
+      154
+    ],
+    "section": " The taxable base",
+    "wording": "- **Signs against the intention** (paras. 5 to 7): a let planned only for a time (a fixed-term lease with stated own use or sale, short financing, an early search for a buyer), or a sale or own use within about five years of acquisition with only losses in that time. The client can rebut by showing the decision to sell or move in came later (para. 9).",
+    "source_quote_ids": [
+      "R54",
+      "R55"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 150,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "121",
+    "prior_row_id": 121,
+    "native_LF": [
+      155,
+      155
+    ],
+    "section": " The taxable base",
+    "wording": "- **Vacancy.** Costs are deductible before the first let and during a gap once the decision to let for good is made and shown by serious, continuing efforts (agent, advertisements, a realistic rent) (paras. 25 to 27). The client carries the proof. Without such efforts, or if the flat cannot be let in the foreseeable future, the intention lapses and costs stop (notes to para. 26).",
+    "source_quote_ids": [
+      "R63",
+      "R64"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 151,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "122",
+    "prior_row_id": 122,
+    "native_LF": [
+      156,
+      156
+    ],
+    "section": " The taxable base",
+    "wording": "- **Forms.** A holiday flat, or any object let **short-term** (for example through an online platform), needs **Anlage V-FeWo** as well as Anlage V (2025 instructions). Each V-FeWo form covers up to four flats.",
+    "source_quote_ids": [
+      "R47"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 152,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "123",
+    "prior_row_id": 123,
+    "native_LF": [
+      157,
+      157
+    ],
+    "section": " The taxable base",
+    "wording": "- **Day counts** where the owner used it, left it free to others, or could use it at any time: days of own use (including free use by others; not short stays for servicing, cleaning, renovation or checks), letting and vacancy. Own use possible at any time: split vacancy by the ratio of own use to letting. Own use limited to set times (for example let through an agent): only the reserved time is own use, and vacancy counts as letting. Never used by the owner and let only to changing guests: give the letting days usual in that place, from tourist office or municipal records.",
+    "source_quote_ids": [
+      "R48"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 153,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "124",
+    "prior_row_id": 124,
+    "native_LF": [
+      158,
+      158
+    ],
+    "section": " The taxable base",
+    "wording": "- **Holiday flat let only to changing guests** and otherwise held ready for them: the intention is taken as given without a test, whether the client lets it directly or through an agent (para. 16). Exception: if letting days fall short of the usual local letting time by **at least 25%**, with no obstacle to letting, a forecast is needed (note to para. 16).",
+    "source_quote_ids": [
+      "R59"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 154,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "125",
+    "prior_row_id": 125,
+    "native_LF": [
+      159,
+      159
+    ],
+    "section": " The taxable base",
+    "wording": "- **Proving there is no own use** (para. 17): the client shows one of: letting handed to an unrelated agent with own use excluded by contract for the whole year; the flat is in or right next to the client's own home, which meets the client's needs; the client has more than one holiday flat in the place and uses only one; or letting days at least equal the local seasonal average. Otherwise the client must prove it, and with too few letting days show stronger advertising (para. 18). Short stays for servicing, key handover, cleaning, checks, repairs or owners' meetings are not own use; longer stays or stays with family need explaining (para. 19).",
+    "source_quote_ids": [
+      "R60",
+      "R61"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 155,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "126",
+    "prior_row_id": 126,
+    "native_LF": [
+      160,
+      160
+    ],
+    "section": " The taxable base",
+    "wording": "- **Holiday flat let part of the time and used by the owner** (or reserved for own use, or lent free): the intention is always tested by forecast (para. 21), per flat, not per let (para. 34). Only costs for let days and vacancy allocated to letting go in (para. 39); mixed costs (interest, property charges, maintenance, AfA, insurance) are split by days of each use (para. 40). Vacancy: if own use is limited to set times, only those count as own use; if possible at any time, split vacancy by the ratio of own use to letting; if the extent of own use cannot be established, vacancy is split 50/50 (paras. 22, 23). The forecast then follows para. 34: 30 years, § 7(4) AfA, five-year average, 10% margins (see the cheap-let forecast above).",
+    "source_quote_ids": [
+      "R62",
+      "R66",
+      "R67",
+      "R68",
+      "R69"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 156,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "127",
+    "prior_row_id": 127,
+    "native_LF": [
+      161,
+      161
+    ],
+    "section": " The taxable base",
+    "wording": "- **Without the intention** the losses are not recognised (Liebhaberei). If the lack of intention only shows later, final assessments can be changed under § 173(1) no. 1 AO (para. 10).",
+    "source_quote_ids": [
+      "R56",
+      "R53"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 157,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "128",
+    "prior_row_id": 128,
+    "native_LF": [
+      162,
+      162
+    ],
+    "section": " The taxable base",
+    "wording": "- **Trade and VAT.** Hotel-like services may make it a trade (`de-trade-tax`). Short-term guest accommodation is not VAT-exempt ([§ 4 no. 12 sentence 2 UStG](https://www.gesetze-im-internet.de/ustg_1980/__4.html)); where VAT is due it is at 7% ([§ 12(2) no. 11 UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html)), except for services not directly part of the letting, such as breakfast, even if included in the price. Whether VAT is due turns on the small-business rule: `germany-vat-return`. No § 7b for short-term lets.",
+    "source_quote_ids": [
+      "R121",
+      "R103",
+      "R106",
+      "R107",
+      "R13"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 158,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "129",
+    "prior_row_id": 129,
+    "native_LF": [
+      164,
+      164
+    ],
+    "section": " The taxable base",
+    "wording": "### VAT option on commercial lets",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 160,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "130",
+    "prior_row_id": 130,
+    "native_LF": [
+      166,
+      166
+    ],
+    "section": " The taxable base",
+    "wording": "Letting land and buildings is VAT-exempt (§ 4 no. 12 sentence 1 letter a UStG), except short-term guest rooms, parking spaces, short-term campsites and operating fixtures. The landlord may opt to tax only on a let **to another business for its business** ([§ 9(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__9.html)), and for land only so far as the tenant uses it **only** for sales that allow input VAT deduction (§ 9(2)). Never to a private tenant. Some buildings begun before 1 June 1984 or 11 November 1993 escape that test ([§ 27(2) UStG](https://www.gesetze-im-internet.de/ustg_1980/__27.html)). If opted: VAT at 19% of net rent, input VAT recoverable; on the income tax return VAT received is income (line 27) and input VAT a cost (lines 80 to 82).",
+    "source_quote_ids": [
+      "R103",
+      "R104",
+      "R105",
+      "R106",
+      "R49",
+      "R51",
+      "R117",
+      "R118"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 162,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "131",
+    "prior_row_id": 131,
+    "native_LF": [
+      168,
+      168
+    ],
+    "section": " The taxable base",
+    "wording": "### Losses ([§ 10d EStG](https://www.gesetze-im-internet.de/estg/__10d.html))",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 164,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "132",
+    "prior_row_id": 132,
+    "native_LF": [
+      170,
+      170
+    ],
+    "section": " The taxable base",
+    "wording": "- **Same year**: against other rental income, then other kinds of income (§ 2(3) EStG).",
+    "source_quote_ids": [
+      "R112",
+      "R113"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 166,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "133",
+    "prior_row_id": 133,
+    "native_LF": [
+      171,
+      171
+    ],
+    "section": " The taxable base",
+    "wording": "- **Carry-back**: up to EUR 1,000,000 (EUR 2,000,000 joint) to the year before, then the second year before; the client may waive it only in full.",
+    "source_quote_ids": [
+      "R73"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 167,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "134",
+    "prior_row_id": 134,
+    "native_LF": [
+      172,
+      172
+    ],
+    "section": " The taxable base",
+    "wording": "- **Carry-forward**: no time limit; unlimited up to total income of EUR 1 million (EUR 2 million joint), then 70% of the excess for 2024 to 2027 and 60% from 2028. Article 6 of BGBl. 2024 I No. 108 changes \"70 Prozent\" back to \"60 Prozent\" from 1 January 2028; the consolidated text on gesetze-im-internet.de does not show that yet. Fixed by a separate notice (§ 10d(4)).",
+    "source_quote_ids": [
+      "R74",
+      "R75",
+      "R85",
+      "R86",
+      "R87"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 168,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "135",
+    "prior_row_id": 135,
+    "native_LF": [
+      173,
+      173
+    ],
+    "section": " The taxable base",
+    "wording": "- **Loss schemes**: §§ 15a and 15b apply by analogy (§ 21(1) sentence 2). Refer.",
+    "source_quote_ids": [
+      "R02"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 169,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "136",
+    "prior_row_id": 136,
+    "native_LF": [
+      175,
+      175
+    ],
+    "section": " The taxable base",
+    "wording": "### Sale within ten years ([§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html), the Spekulationsfrist)",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 171,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "137",
+    "prior_row_id": 137,
+    "native_LF": [
+      177,
+      177
+    ],
+    "section": " The taxable base",
+    "wording": "- A sale of land or a flat is a private sale if acquisition and sale are **not more than** ten years apart. Buildings put up or extended in the period are included.",
+    "source_quote_ids": [
+      "R70"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 173,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "138",
+    "prior_row_id": 138,
+    "native_LF": [
+      178,
+      178
+    ],
+    "section": " The taxable base",
+    "wording": "- **Own-use exception**: used **only** for own housing between acquisition (or completion) and sale, **or** for own housing in the year of sale and the two years before. A flat let up to the sale meets neither.",
+    "source_quote_ids": [
+      "R70"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 174,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "139",
+    "prior_row_id": 139,
+    "native_LF": [
+      179,
+      179
+    ],
+    "section": " The taxable base",
+    "wording": "- **Depreciation comes back**: the cost is **reduced** by AfA, increased depreciation and special depreciation claimed (§ 23(3) sentence 4). Gain = price less reduced cost less selling costs.",
+    "source_quote_ids": [
+      "R72"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 175,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "140",
+    "prior_row_id": 140,
+    "native_LF": [
+      180,
+      180
+    ],
+    "section": " The taxable base",
+    "wording": "- **Exemption limit**: tax-free only if all private-sale gains in the year total **less than** EUR 1,000; at EUR 1,000 or more, all is taxed. Losses offset only private-sale gains of the same year, and carry back or forward only against such gains (§ 23(3) sentences 7 and 8).",
+    "source_quote_ids": [
+      "R72"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 176,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "141",
+    "prior_row_id": 141,
+    "native_LF": [
+      181,
+      181
+    ],
+    "section": " The taxable base",
+    "wording": "- **Gift**: a single successor who receives it free takes over the donor's acquisition date (§ 23(1) sentence 3). Heirs' communities are not named there: ask the accountant.",
+    "source_quote_ids": [
+      "R71"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 177,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "142",
+    "prior_row_id": 142,
+    "native_LF": [
+      182,
+      182
+    ],
+    "section": " The taxable base",
+    "wording": "- **Also**: deduct any rest of a § 82b spread in the year of sale, and check the § 7b claw-back.",
+    "source_quote_ids": [
+      "R21",
+      "R15"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 178,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "143",
+    "prior_row_id": 143,
+    "native_LF": [
+      183,
+      183
+    ],
+    "section": " The taxable base",
+    "wording": "- **For example**: bought March 2019 for EUR 300,000 (building EUR 240,000 at 2% = EUR 4,800 a year); sold at the end of February 2026 for EUR 340,000; selling costs EUR 10,000. AfA claimed: 2019, ten months = EUR 4,000; 2020 to 2025, 6 × 4,800 = EUR 28,800; 2026, two months to the sale, assumed EUR 800. Total EUR 33,600. Reduced cost EUR 266,400; gain 340,000 − 266,400 − 10,000 = EUR 63,600, all taxed. Confirm the sale-year AfA with the accountant. More in `de-capital-gains`.",
+    "source_quote_ids": [
+      "R70",
+      "R72",
+      "R04"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 179,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "144",
+    "prior_row_id": 144,
+    "native_LF": [
+      185,
+      185
+    ],
+    "section": " The taxable base",
+    "wording": "### Order of work",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 181,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "145",
+    "prior_row_id": 145,
+    "native_LF": [
+      187,
+      187
+    ],
+    "section": " The taxable base",
+    "wording": "Fix the building share before the three-year 15% test, which measures against it. Complete the costs before the cheap-let cut, which applies to their total. Then work out the surplus or loss per property, share it between co-owners, and apply the loss rules.",
+    "source_quote_ids": [
+      "R18",
+      "R19",
+      "R24",
+      "R42",
+      "R112",
+      "R113"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 183,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "146",
+    "prior_row_id": 146,
+    "native_LF": [
+      189,
+      189
+    ],
+    "section": " The taxable base",
+    "wording": "**Defaults when a fact is missing.** Completion date, land share, market rent for a cheap let, or private versus business status unknown: stop and ask, because each changes the result. Unsure whether work is maintenance or production cost: treat it as production cost (capitalise) until resolved. Housing use unknown: ask, because § 7(5a), § 7b, § 21(2) and § 82b apply only to housing.",
+    "source_quote_ids": [
+      "R04",
+      "R07",
+      "R11",
+      "R18",
+      "R20",
+      "R24",
+      "R32",
+      "R33"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 185,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "147",
+    "prior_row_id": 147,
+    "native_LF": [
+      191,
+      191
+    ],
+    "section": " Deadlines and filing",
+    "wording": "## Deadlines and filing",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 187,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "148",
+    "prior_row_id": 148,
+    "native_LF": [
+      193,
+      193
+    ],
+    "section": " Deadlines and filing",
+    "wording": "- **Forms.** One Anlage V per built-on property, filed with the income tax return through ELSTER. Add Anlage V-FeWo for holiday or short-term lets, and Anlage V-Sonstige for shares in communities and funds, subletting, land without buildings and rights (2025 instructions).",
+    "source_quote_ids": [
+      "R120",
+      "R47"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 189,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "149",
+    "prior_row_id": 149,
+    "native_LF": [
+      194,
+      194
+    ],
+    "section": " Deadlines and filing",
+    "wording": "- **Who must file.** A landlord who is assessed anyway files Anlage V with the return. An employee whose wage tax was withheld must file if untaxed side income, such as rent, is **more than** EUR 410 ([§ 46(2) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__46.html)); if assessed, side income of not more than EUR 410 in total is taken off again, phased out above (§ 46(3), (5)).",
+    "source_quote_ids": [
+      "R76",
+      "R77"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 190,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "150",
+    "prior_row_id": 150,
+    "native_LF": [
+      195,
+      195
+    ],
+    "section": " Deadlines and filing",
+    "wording": "- **2026 return** ([§ 149 AO](https://www.gesetze-im-internet.de/ao_1977/__149.html)): without an adviser, seven months after the year: 31 July 2027 is a Saturday, so **Monday 2 August 2027** ([§ 108(3) AO](https://www.gesetze-im-internet.de/ao_1977/__108.html)). With an adviser, the last day of February of the second following year: **Tuesday 29 February 2028**. The tax office may call for an advised return earlier (§ 149(4)).",
+    "source_quote_ids": [
+      "R95",
+      "R96",
+      "R97"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 191,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "151",
+    "prior_row_id": 151,
+    "native_LF": [
+      196,
+      196
+    ],
+    "section": " Deadlines and filing",
+    "wording": "- **2025 returns being filed now.** Without an adviser: due Friday 31 July 2026, passed. With an adviser: the last day of February 2027 is a Sunday, so **Monday 1 March 2027**. The extended dates in Art. 97 § 36(3) EGAO cover only \"die Besteuerungszeiträume 2020 bis 2024\" ([EGAO](https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html)). The advised 2024 return was due 30 April 2026 under that transitional rule. Use the 2025 Anlage V. Rules are as for 2026, except the commuting allowance: if a first place of activity applies, the 2025 rate was EUR 0.30 per full one-way kilometre for the first 20 km and EUR 0.38 for each further kilometre (2025 instructions); from 2026 it is EUR 0.38 from the first kilometre. 2025 is the second-last year for the old § 7b window.",
+    "source_quote_ids": [
+      "R95",
+      "R96",
+      "R97",
+      "R110",
+      "R84",
+      "R119",
+      "R28"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 192,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "152",
+    "prior_row_id": 152,
+    "native_LF": [
+      197,
+      197
+    ],
+    "section": " Deadlines and filing",
+    "wording": "- **Prepayments** ([§ 37 EStG](https://www.gesetze-im-internet.de/estg/__37.html)): 10 March, 10 June, 10 September, 10 December; set only if at least EUR 400 a year and EUR 100 per date. A building's rental loss reduces prepayments only for calendar years beginning **after** its acquisition or completion (§ 37(3) sentence 8); a building bought before the year it is completed counts from completion (sentence 9); the bar does not apply where § 7b is claimed (sentence 10). The same timing governs a wage tax allowance for an employee ([§ 39a(1) no. 5 EStG](https://www.gesetze-im-internet.de/estg/__39a.html)). For example, a landlord who bought a new flat in 2026 with a EUR 10,050 loss cannot cut her 2026 prepayments for it; she can from 2027, or at once if § 7b is claimed.",
+    "source_quote_ids": [
+      "R78",
+      "R79",
+      "R80",
+      "R81"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 193,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "153",
+    "prior_row_id": 153,
+    "native_LF": [
+      198,
+      198
+    ],
+    "section": " Deadlines and filing",
+    "wording": "- **2026 forms.** The ELSTER 2026 instructions route returned no substantive content in the recorded 24 October 2026 check; this does not establish whether the instructions were published. Line numbers below come from the [2025 instructions](https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025). Confirm the relevant 2026 form before using these line numbers.",
+    "source_quote_ids": [],
+    "classification": "scope_limit",
+    "prior_native_LF": 194,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "154",
+    "prior_row_id": 154,
+    "native_LF": [
+      200,
+      200
+    ],
+    "section": " Deadlines and filing",
+    "wording": "**Anlage V line map (2025 form).** Bank-text keywords in brackets.",
+    "source_quote_ids": [
+      "R120"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 196,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "155",
+    "prior_row_id": 155,
+    "native_LF": [
+      202,
+      202
+    ],
+    "section": " Deadlines and filing",
+    "wording": "| Lines | Content |",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 198,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "156",
+    "prior_row_id": 156,
+    "native_LF": [
+      203,
+      203
+    ],
+    "section": " Deadlines and filing",
+    "wording": "|---|---|",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 199,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "157",
+    "prior_row_id": 157,
+    "native_LF": [
+      204,
+      204
+    ],
+    "section": " Deadlines and filing",
+    "wording": "| 6 to 12 | File number; purchase, completion, sale dates; use (holiday: V-FeWo); living space, own or free part |",
+    "source_quote_ids": [
+      "R133"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 200,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "158",
+    "prior_row_id": 158,
+    "native_LF": [
+      205,
+      205
+    ],
+    "section": " Deadlines and filing",
+    "wording": "| 13 to 19 | Rent without Umlagen: homes 13 to 15 (MIETE), other rooms 16 to 18, relatives 19 |",
+    "source_quote_ids": [
+      "R49"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 201,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "159",
+    "prior_row_id": 159,
+    "native_LF": [
+      206,
+      206
+    ],
+    "section": " Deadlines and filing",
+    "wording": "| 20 to 24 | Umlagen (NEBENKOSTEN); 21 settlement (NACHZAHLUNG); 22 to 23 relatives |",
+    "source_quote_ids": [
+      "R49"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 202,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "160",
+    "prior_row_id": 160,
+    "native_LF": [
+      207,
+      207
+    ],
+    "section": " Deadlines and filing",
+    "wording": "| 25 to 31 | Deposit kept (KAUTION) 25; antenna, wind and Wi-Fi sites 26; VAT received 27; grants 29 to 31 |",
+    "source_quote_ids": [
+      "R49",
+      "R50"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 203,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "161",
+    "prior_row_id": 161,
+    "native_LF": [
+      208,
+      208
+    ],
+    "section": " Deadlines and filing",
+    "wording": "| 32 | Total income |",
+    "source_quote_ids": [
+      "R44"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 204,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "162",
+    "prior_row_id": 162,
+    "native_LF": [
+      209,
+      209
+    ],
+    "section": " Deadlines and filing",
+    "wording": "| 33 to 45 | Building AfA 33 to 35; § 7b 36 to 38; §§ 7h, 7i 39 to 41; furniture 42 to 45 |",
+    "source_quote_ids": [
+      "R35",
+      "R37",
+      "R94",
+      "R39",
+      "R134"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 205,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "163",
+    "prior_row_id": 163,
+    "native_LF": [
+      210,
+      210
+    ],
+    "section": " Deadlines and filing",
+    "wording": "| 46 to 51 | Interest (DARLEHENSZINSEN) 46 to 48; loan costs 49 to 51 |",
+    "source_quote_ids": [
+      "R40"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 206,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "164",
+    "prior_row_id": 164,
+    "native_LF": [
+      211,
+      211
+    ],
+    "section": " Deadlines and filing",
+    "wording": "| 55 to 72 | Maintenance (REPARATUR, HANDWERKER), including § 82b spreads |",
+    "source_quote_ids": [
+      "R41",
+      "R20",
+      "R21"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 207,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "165",
+    "prior_row_id": 165,
+    "native_LF": [
+      212,
+      212
+    ],
+    "section": " Deadlines and filing",
+    "wording": "| 73 to 78 | Running costs passed on 73 to 75 (GRUNDSTEUER, insurance, Hausgeld settlement); not passed on 76 to 78 (management, Hausgeld without reserve, KONTOFÜHRUNG) |",
+    "source_quote_ids": [
+      "R51",
+      "R52"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 208,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "166",
+    "prior_row_id": 166,
+    "native_LF": [
+      213,
+      213
+    ],
+    "section": " Deadlines and filing",
+    "wording": "| 80 to 83 | Other costs (travel, adviser, tenant broker, low-value items, input VAT); 83 total |",
+    "source_quote_ids": [
+      "R51",
+      "R52",
+      "R39",
+      "R27"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 209,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "167",
+    "prior_row_id": 167,
+    "native_LF": [
+      214,
+      214
+    ],
+    "section": " Deadlines and filing",
+    "wording": "| 85 to 89 | Result and sharing 85 to 86; cheap-let cut 87 to 88; acquisition grants 89 |",
+    "source_quote_ids": [
+      "R45",
+      "R46",
+      "R50",
+      "R52",
+      "R42"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 210,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "168",
+    "prior_row_id": 168,
+    "native_LF": [
+      216,
+      216
+    ],
+    "section": " Deadlines and filing",
+    "wording": "The instructions name the content of lines 25, 26, 46 to 51, 55 to 72, the Hausgeld settlement (73 to 75) and, in the official example, account fees (76 to 78). Other keyword placements are this skill's reading of the headings and do not change the total in line 83. **Exclude**: principal (TILGUNG), own transfers, deposit refunds, reserve payments until spent, personal taxes. Transfer tax (GRUNDERWERBSTEUER) goes into acquisition cost.",
+    "source_quote_ids": [
+      "R40",
+      "R41",
+      "R50",
+      "R51",
+      "R52",
+      "R32",
+      "R27",
+      "R131"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 212,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "169",
+    "prior_row_id": 169,
+    "native_LF": [
+      218,
+      218
+    ],
+    "section": " Penalties and interest",
+    "wording": "## Penalties and interest",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 214,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "170",
+    "prior_row_id": 170,
+    "native_LF": [
+      220,
+      220
+    ],
+    "section": " Penalties and interest",
+    "wording": "- **Late-filing surcharge** ([§ 152 AO](https://www.gesetze-im-internet.de/ao_1977/__152.html)). Compulsory if the return is not filed \"binnen 14 Monaten nach Ablauf des Kalenderjahrs\" (§ 152(2) no. 1), advised or not. For 2026 the 14 months end on 29 February 2028, the same day as the advised deadline, so for an advised return it bites from the day after that deadline. Also compulsory if a return the office called in early is not filed by the date set (no. 3). The 19-month period in no. 2 is only for farmers with a non-calendar financial year. Amount: 0.25% a month of the tax less prepayments and withheld tax, at least EUR 25 for each started month (§ 152(5)), rounded down to full euros and capped at EUR 25,000 (§ 152(10)). Not compulsory, though still possible at discretion, if the deadline was extended, the tax is nil or negative, or the tax does not exceed prepayments and withheld tax (§ 152(3)). For an unadvised 2025 return filed now the surcharge is discretionary until the 14 months run out at the end of February 2027.",
+    "source_quote_ids": [
+      "R95",
+      "R96",
+      "R98",
+      "R99",
+      "R100"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 216,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "171",
+    "prior_row_id": 171,
+    "native_LF": [
+      221,
+      221
+    ],
+    "section": " Penalties and interest",
+    "wording": "- **Interest** ([§ 233a AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html)): back tax and refunds carry interest of 0.15% a month ([§ 238(1a) AO](https://www.gesetze-im-internet.de/ao_1977/__238.html)) starting 15 months after the end of the tax year, so from 1 April 2028 for 2026.",
+    "source_quote_ids": [
+      "R101",
+      "R102"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 217,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "172",
+    "prior_row_id": 172,
+    "native_LF": [
+      222,
+      222
+    ],
+    "section": " Penalties and interest",
+    "wording": "- **§ 7b claw-back**: assessments are reopened even if final; the assessment period restarts at the end of the year of the triggering event, and § 233a(2a) AO does not apply (§ 7b(4)), so interest runs from the normal date.",
+    "source_quote_ids": [
+      "R15"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 218,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "173",
+    "prior_row_id": 173,
+    "native_LF": [
+      223,
+      223
+    ],
+    "section": " Penalties and interest",
+    "wording": "- **Under-declaration** (wrong deductions, unreported rent): refer for the appropriate return or assessment correction. Apply § 233a interest only where its conditions and statutory interest period are met. Deliberate false or incomplete tax facts that shorten tax can constitute tax offences under § 370 AO; refer.",
+    "source_quote_ids": [
+      "R101",
+      "R102",
+      "R130",
+      "R56"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 219,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "174",
+    "prior_row_id": 174,
+    "native_LF": [
+      225,
+      225
+    ],
+    "section": " Cross-border points",
+    "wording": "## Cross-border points",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 221,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "175",
+    "prior_row_id": 175,
+    "native_LF": [
+      227,
+      227
+    ],
+    "section": " Cross-border points",
+    "wording": "- **Non-resident landlords** with German property are taxed on the rent ([§ 49(1) no. 6 EStG](https://www.gesetze-im-internet.de/estg/__49.html)). They deduct only Werbungskosten linked to the German income ([§ 50(1) EStG](https://www.gesetze-im-internet.de/estg/__50.html)), and their tariff is applied with the basic allowance added back unless an option applies. Compute the rental result here; liability, the § 1(3) and § 1a options, and filing are in `de-non-resident-tax`.",
+    "source_quote_ids": [
+      "R108",
+      "R109"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 223,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "176",
+    "prior_row_id": 176,
+    "native_LF": [
+      228,
+      228
+    ],
+    "section": " Cross-border points",
+    "wording": "- **German residents with property abroad**: report the rental income and determine the treatment from the actual treaty for the property country. Treaty exemption, credit, progression and Anlage AUS: refer.",
+    "source_quote_ids": [
+      "R111",
+      "R112",
+      "R120"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 224,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "177",
+    "prior_row_id": 177,
+    "native_LF": [
+      229,
+      229
+    ],
+    "section": " Cross-border points",
+    "wording": "- **AfA for property elsewhere in the EU or EEA**: § 7(5a) and § 7b reach buildings in the EU or EEA (and for § 7b, states giving administrative help), which matters for a resident's foreign property only where Germany taxes it. Refer.",
+    "source_quote_ids": [
+      "R07",
+      "R11"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 225,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "178",
+    "prior_row_id": 178,
+    "native_LF": [
+      230,
+      230
+    ],
+    "section": " Cross-border points",
+    "wording": "- **Moving in or out during the year**: `de-partners-and-part-year`.",
+    "source_quote_ids": [],
+    "classification": "scope_routing",
+    "prior_native_LF": 226,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "179",
+    "prior_row_id": 179,
+    "native_LF": [
+      232,
+      232
+    ],
+    "section": " Worked examples",
+    "wording": "## Worked examples",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 228,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "180",
+    "prior_row_id": 180,
+    "native_LF": [
+      234,
+      234
+    ],
+    "section": " Worked examples",
+    "wording": "Inputs are invented and labelled, except Example 2, which is the official example in the 2025 instructions. Each result is the rental surplus or loss before the tariff.",
+    "source_quote_ids": [
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 230,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "181",
+    "prior_row_id": 181,
+    "native_LF": [
+      236,
+      236
+    ],
+    "section": " Worked examples",
+    "wording": "### Example 1: a let flat bought in 2019, full year 2026",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 232,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "182",
+    "prior_row_id": 182,
+    "native_LF": [
+      238,
+      238
+    ],
+    "section": " Worked examples",
+    "wording": "A flat completed in 1995, bought in 2019, let all of 2026 at market rent. Building share of cost EUR 180,000, so straight-line AfA at 2% (§ 7(4) no. 2(b)) is EUR 3,600. Rent EUR 950 a month plus Umlagen EUR 180. Paid in 2026: interest EUR 4,200; running costs EUR 2,160 (all passed on); Hausgeld excluding the reserve EUR 540 (the reserve part of EUR 600 is left out); a repair EUR 1,500; account fees EUR 60; principal EUR 6,000 (not deductible). Six trips by car, 300 km driven in all, at 30 cents.",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41",
+      "R32"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 234,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "183",
+    "prior_row_id": 183,
+    "native_LF": [
+      240,
+      240
+    ],
+    "section": " Worked examples",
+    "wording": "Income is (950 + 180) × 12 = EUR 13,560. Werbungskosten are 3,600 + 4,200 + 2,160 + 540 + 1,500 + 90 + 60 = EUR 12,150. The surplus of EUR 1,410 goes in line 85 and is taxed at the client's marginal rate.",
+    "source_quote_ids": [
+      "R49",
+      "R51",
+      "R52"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 236,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "184",
+    "prior_row_id": 184,
+    "native_LF": [
+      242,
+      242
+    ],
+    "section": " Worked examples",
+    "wording": "```oa-check",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 238,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "185",
+    "prior_row_id": 185,
+    "native_LF": [
+      243,
+      243
+    ],
+    "section": " Worked examples",
+    "wording": "name: DE 2026 let flat, 2% AfA, surplus",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 239,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "186",
+    "prior_row_id": 186,
+    "native_LF": [
+      244,
+      244
+    ],
+    "section": " Worked examples",
+    "wording": "inputs:",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 240,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "187",
+    "prior_row_id": 187,
+    "native_LF": [
+      245,
+      245
+    ],
+    "section": " Worked examples",
+    "wording": "  monthly_rent: 950",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 241,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "188",
+    "prior_row_id": 188,
+    "native_LF": [
+      246,
+      246
+    ],
+    "section": " Worked examples",
+    "wording": "  monthly_umlagen: 180",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 242,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "189",
+    "prior_row_id": 189,
+    "native_LF": [
+      247,
+      247
+    ],
+    "section": " Worked examples",
+    "wording": "  building_cost: 180000",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 243,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "190",
+    "prior_row_id": 190,
+    "native_LF": [
+      248,
+      248
+    ],
+    "section": " Worked examples",
+    "wording": "  interest: 4200",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 244,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "191",
+    "prior_row_id": 191,
+    "native_LF": [
+      249,
+      249
+    ],
+    "section": " Worked examples",
+    "wording": "  running_costs: 2160",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 245,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "192",
+    "prior_row_id": 192,
+    "native_LF": [
+      250,
+      250
+    ],
+    "section": " Worked examples",
+    "wording": "  hausgeld_without_reserve: 540",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 246,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "193",
+    "prior_row_id": 193,
+    "native_LF": [
+      251,
+      251
+    ],
+    "section": " Worked examples",
+    "wording": "  repairs: 1500",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 247,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "194",
+    "prior_row_id": 194,
+    "native_LF": [
+      252,
+      252
+    ],
+    "section": " Worked examples",
+    "wording": "  km_driven: 300",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 248,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "195",
+    "prior_row_id": 195,
+    "native_LF": [
+      253,
+      253
+    ],
+    "section": " Worked examples",
+    "wording": "  account_fees: 60",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 249,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "196",
+    "prior_row_id": 196,
+    "native_LF": [
+      254,
+      254
+    ],
+    "section": " Worked examples",
+    "wording": "steps:",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 250,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "197",
+    "prior_row_id": 197,
+    "native_LF": [
+      255,
+      255
+    ],
+    "section": " Worked examples",
+    "wording": "  - income: (monthly_rent + monthly_umlagen) * 12",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 251,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "198",
+    "prior_row_id": 198,
+    "native_LF": [
+      256,
+      256
+    ],
+    "section": " Worked examples",
+    "wording": "  - afa: building_cost * 0.02",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 252,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "199",
+    "prior_row_id": 199,
+    "native_LF": [
+      257,
+      257
+    ],
+    "section": " Worked examples",
+    "wording": "  - travel: km_driven * 0.30",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 253,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "200",
+    "prior_row_id": 200,
+    "native_LF": [
+      258,
+      258
+    ],
+    "section": " Worked examples",
+    "wording": "  - costs: afa + interest + running_costs + hausgeld_without_reserve + repairs + travel + account_fees",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 254,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "201",
+    "prior_row_id": 201,
+    "native_LF": [
+      259,
+      259
+    ],
+    "section": " Worked examples",
+    "wording": "  - surplus: income - costs",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 255,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "202",
+    "prior_row_id": 202,
+    "native_LF": [
+      260,
+      260
+    ],
+    "section": " Worked examples",
+    "wording": "expected:",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 256,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "203",
+    "prior_row_id": 203,
+    "native_LF": [
+      261,
+      261
+    ],
+    "section": " Worked examples",
+    "wording": "  income: 13560",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 257,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "204",
+    "prior_row_id": 204,
+    "native_LF": [
+      262,
+      262
+    ],
+    "section": " Worked examples",
+    "wording": "  afa: 3600",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 258,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "205",
+    "prior_row_id": 205,
+    "native_LF": [
+      263,
+      263
+    ],
+    "section": " Worked examples",
+    "wording": "  travel: 90",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 259,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "206",
+    "prior_row_id": 206,
+    "native_LF": [
+      264,
+      264
+    ],
+    "section": " Worked examples",
+    "wording": "  costs: 12150",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 260,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "207",
+    "prior_row_id": 207,
+    "native_LF": [
+      265,
+      265
+    ],
+    "section": " Worked examples",
+    "wording": "  surplus: 1410",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 261,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "208",
+    "prior_row_id": 208,
+    "native_LF": [
+      266,
+      266
+    ],
+    "section": " Worked examples",
+    "wording": "```",
+    "source_quote_ids": [
+      "R04",
+      "R27",
+      "R29",
+      "R30",
+      "R31",
+      "R41"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 262,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "209",
+    "prior_row_id": 209,
+    "native_LF": [
+      268,
+      268
+    ],
+    "section": " Worked examples",
+    "wording": "### Example 2: cheap let to parents, under 50% (official example, 2025 instructions)",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 264,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "210",
+    "prior_row_id": 210,
+    "native_LF": [
+      270,
+      270
+    ],
+    "section": " Worked examples",
+    "wording": "A married couple own a 60 m² flat and let it to the wife's parents for EUR 270 cold rent plus EUR 150 Umlagen a month. Local market rent is 60 m² × EUR 15 = EUR 900 plus EUR 150 passable costs = EUR 1,050. Costs: AfA EUR 3,000, running costs EUR 1,800, account fees EUR 120.",
+    "source_quote_ids": [
+      "R44",
+      "R45"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 266,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "211",
+    "prior_row_id": 211,
+    "native_LF": [
+      272,
+      272
+    ],
+    "section": " Worked examples",
+    "wording": "Rent paid including Umlagen is EUR 420, which is 40.00% of EUR 1,050: under 50%, so costs are split. The form shows income EUR 5,040 (line 32), costs in full EUR 4,920 (line 83), result before the cut EUR 120 (line 85), and the cut of 60.00% in line 87. After the cut only EUR 1,968 of costs is deductible, so the taxable surplus is EUR 3,072, EUR 1,536 for each spouse. Variants: rent of EUR 700 including Umlagen is 66.67%, fully paid; EUR 600 is 57.14%, in the forecast band: run the 30-year forecast under \"Cheap lets\".",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46",
+      "R57",
+      "R65",
+      "R66",
+      "R67",
+      "R68"
+    ],
+    "classification": "rule_or_figure_or_fixture",
+    "prior_native_LF": 268,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "212",
+    "prior_row_id": 212,
+    "native_LF": [
+      274,
+      274
+    ],
+    "section": " Worked examples",
+    "wording": "```oa-check",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 270,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "213",
+    "prior_row_id": 213,
+    "native_LF": [
+      275,
+      275
+    ],
+    "section": " Worked examples",
+    "wording": "name: DE 2026 cheap let to relatives at 40% of market rent",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 271,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "214",
+    "prior_row_id": 214,
+    "native_LF": [
+      276,
+      276
+    ],
+    "section": " Worked examples",
+    "wording": "inputs:",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 272,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "215",
+    "prior_row_id": 215,
+    "native_LF": [
+      277,
+      277
+    ],
+    "section": " Worked examples",
+    "wording": "  cold_rent: 270",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 273,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "216",
+    "prior_row_id": 216,
+    "native_LF": [
+      278,
+      278
+    ],
+    "section": " Worked examples",
+    "wording": "  umlagen: 150",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 274,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "217",
+    "prior_row_id": 217,
+    "native_LF": [
+      279,
+      279
+    ],
+    "section": " Worked examples",
+    "wording": "  market_cold_rent: 900",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 275,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "218",
+    "prior_row_id": 218,
+    "native_LF": [
+      280,
+      280
+    ],
+    "section": " Worked examples",
+    "wording": "  afa: 3000",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 276,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "219",
+    "prior_row_id": 219,
+    "native_LF": [
+      281,
+      281
+    ],
+    "section": " Worked examples",
+    "wording": "  running_costs: 1800",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 277,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "220",
+    "prior_row_id": 220,
+    "native_LF": [
+      282,
+      282
+    ],
+    "section": " Worked examples",
+    "wording": "  account_fees: 120",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 278,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "221",
+    "prior_row_id": 221,
+    "native_LF": [
+      283,
+      283
+    ],
+    "section": " Worked examples",
+    "wording": "steps:",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 279,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "222",
+    "prior_row_id": 222,
+    "native_LF": [
+      284,
+      284
+    ],
+    "section": " Worked examples",
+    "wording": "  - rent_paid: cold_rent + umlagen",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 280,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "223",
+    "prior_row_id": 223,
+    "native_LF": [
+      285,
+      285
+    ],
+    "section": " Worked examples",
+    "wording": "  - market_rent: market_cold_rent + umlagen",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 281,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "224",
+    "prior_row_id": 224,
+    "native_LF": [
+      286,
+      286
+    ],
+    "section": " Worked examples",
+    "wording": "  - paid_share: rent_paid / market_rent",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 282,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "225",
+    "prior_row_id": 225,
+    "native_LF": [
+      287,
+      287
+    ],
+    "section": " Worked examples",
+    "wording": "  - income: rent_paid * 12",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 283,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "226",
+    "prior_row_id": 226,
+    "native_LF": [
+      288,
+      288
+    ],
+    "section": " Worked examples",
+    "wording": "  - costs_in_full: afa + running_costs + account_fees",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 284,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "227",
+    "prior_row_id": 227,
+    "native_LF": [
+      289,
+      289
+    ],
+    "section": " Worked examples",
+    "wording": "  - line85_before_cut: income - costs_in_full",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 285,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "228",
+    "prior_row_id": 228,
+    "native_LF": [
+      290,
+      290
+    ],
+    "section": " Worked examples",
+    "wording": "  - cut_percent: (1 - paid_share) * 100",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 286,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "229",
+    "prior_row_id": 229,
+    "native_LF": [
+      291,
+      291
+    ],
+    "section": " Worked examples",
+    "wording": "  - deductible_costs: costs_in_full * paid_share",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 287,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "230",
+    "prior_row_id": 230,
+    "native_LF": [
+      292,
+      292
+    ],
+    "section": " Worked examples",
+    "wording": "  - surplus: income - deductible_costs",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 288,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "231",
+    "prior_row_id": 231,
+    "native_LF": [
+      293,
+      293
+    ],
+    "section": " Worked examples",
+    "wording": "  - per_spouse: surplus / 2",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 289,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "232",
+    "prior_row_id": 232,
+    "native_LF": [
+      294,
+      294
+    ],
+    "section": " Worked examples",
+    "wording": "expected:",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 290,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "233",
+    "prior_row_id": 233,
+    "native_LF": [
+      295,
+      295
+    ],
+    "section": " Worked examples",
+    "wording": "  paid_share: 0.40",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 291,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "234",
+    "prior_row_id": 234,
+    "native_LF": [
+      296,
+      296
+    ],
+    "section": " Worked examples",
+    "wording": "  income: 5040",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 292,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "235",
+    "prior_row_id": 235,
+    "native_LF": [
+      297,
+      297
+    ],
+    "section": " Worked examples",
+    "wording": "  costs_in_full: 4920",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 293,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "236",
+    "prior_row_id": 236,
+    "native_LF": [
+      298,
+      298
+    ],
+    "section": " Worked examples",
+    "wording": "  line85_before_cut: 120",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 294,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "237",
+    "prior_row_id": 237,
+    "native_LF": [
+      299,
+      299
+    ],
+    "section": " Worked examples",
+    "wording": "  cut_percent: 60",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 295,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "238",
+    "prior_row_id": 238,
+    "native_LF": [
+      300,
+      300
+    ],
+    "section": " Worked examples",
+    "wording": "  deductible_costs: 1968",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 296,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "239",
+    "prior_row_id": 239,
+    "native_LF": [
+      301,
+      301
+    ],
+    "section": " Worked examples",
+    "wording": "  surplus: 3072",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 297,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "240",
+    "prior_row_id": 240,
+    "native_LF": [
+      302,
+      302
+    ],
+    "section": " Worked examples",
+    "wording": "  per_spouse: 1536",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 298,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "241",
+    "prior_row_id": 241,
+    "native_LF": [
+      303,
+      303
+    ],
+    "section": " Worked examples",
+    "wording": "```",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R44",
+      "R45",
+      "R46"
+    ],
+    "classification": "original_executable_fixture",
+    "prior_native_LF": 299,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "242",
+    "prior_row_id": 242,
+    "native_LF": [
+      305,
+      305
+    ],
+    "section": " Ask the client first",
+    "wording": "## Ask the client first",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 301,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "243",
+    "prior_row_id": 243,
+    "native_LF": [
+      307,
+      307
+    ],
+    "section": " Ask the client first",
+    "wording": "- When was the building completed, and when did you buy it (contract date, and the date benefit and burden passed)? Which AfA method and rate did past returns use? For a new flat: date of the building application, start of construction, living space in m², cost per m², energy standard.",
+    "source_quote_ids": [
+      "R04",
+      "R07",
+      "R11",
+      "R12",
+      "R14",
+      "R133"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 303,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "244",
+    "prior_row_id": 244,
+    "native_LF": [
+      308,
+      308
+    ],
+    "section": " Ask the client first",
+    "wording": "- Is the property held privately or in a business? What share of the floor area is housing? Is any unit let short-term or as a holiday flat, and is there any own use?",
+    "source_quote_ids": [
+      "R03",
+      "R07",
+      "R13",
+      "R20",
+      "R24",
+      "R47",
+      "R48",
+      "R62"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 304,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "245",
+    "prior_row_id": 245,
+    "native_LF": [
+      309,
+      309
+    ],
+    "section": " Ask the client first",
+    "wording": "- How was the price split between land and building, and who made the split?",
+    "source_quote_ids": [
+      "R32",
+      "R35",
+      "R122",
+      "R123"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 305,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "246",
+    "prior_row_id": 246,
+    "native_LF": [
+      310,
+      310
+    ],
+    "section": " Ask the client first",
+    "wording": "- What rent and Umlagen does each tenant pay, and what is the local market rent? Is any tenant a relative?",
+    "source_quote_ids": [
+      "R24",
+      "R42",
+      "R43",
+      "R58"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 306,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "247",
+    "prior_row_id": 247,
+    "native_LF": [
+      311,
+      311
+    ],
+    "section": " Ask the client first",
+    "wording": "- What works were done since the purchase, when, and at what cost without VAT?",
+    "source_quote_ids": [
+      "R18",
+      "R19",
+      "R33",
+      "R41"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 307,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "248",
+    "prior_row_id": 248,
+    "native_LF": [
+      312,
+      312
+    ],
+    "section": " Ask the client first",
+    "wording": "- Do you live in Germany? Any co-owners, loans, a sale made or planned, or wage tax withheld on a job?",
+    "source_quote_ids": [
+      "R111",
+      "R108",
+      "R76",
+      "R120",
+      "R131"
+    ],
+    "classification": "rule_summary_or_method_or_intake",
+    "prior_native_LF": 308,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "249",
+    "prior_row_id": 249,
+    "native_LF": [
+      314,
+      314
+    ],
+    "section": " Sources",
+    "wording": "## Sources",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 310,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "250",
+    "prior_row_id": 250,
+    "native_LF": [
+      316,
+      316
+    ],
+    "section": " Sources",
+    "wording": "| Source | URL | Read on |",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 312,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "251",
+    "prior_row_id": 251,
+    "native_LF": [
+      317,
+      317
+    ],
+    "section": " Sources",
+    "wording": "|---|---|---|",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 313,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "252",
+    "prior_row_id": 252,
+    "native_LF": [
+      318,
+      318
+    ],
+    "section": " Sources",
+    "wording": "| EStG § 21, income from letting; § 21(2) cheap lets | https://www.gesetze-im-internet.de/estg/__21.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 314,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "253",
+    "prior_row_id": 253,
+    "native_LF": [
+      319,
+      319
+    ],
+    "section": " Sources",
+    "wording": "| EStG § 9, Werbungskosten; commuting allowance EUR 0.38 | https://www.gesetze-im-internet.de/estg/__9.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 315,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "254",
+    "prior_row_id": 254,
+    "native_LF": [
+      320,
+      320
+    ],
+    "section": " Sources",
+    "wording": "| EStG § 7, AfA rates and § 7(5a) declining balance | https://www.gesetze-im-internet.de/estg/__7.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 316,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "255",
+    "prior_row_id": 255,
+    "native_LF": [
+      321,
+      321
+    ],
+    "section": " Sources",
+    "wording": "| EStG § 7a(9), AfA after special depreciation | https://www.gesetze-im-internet.de/estg/__7a.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 317,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "256",
+    "prior_row_id": 256,
+    "native_LF": [
+      322,
+      322
+    ],
+    "section": " Sources",
+    "wording": "| EStG § 7b, special depreciation for new rental flats | https://www.gesetze-im-internet.de/estg/__7b.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 318,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "257",
+    "prior_row_id": 257,
+    "native_LF": [
+      323,
+      323
+    ],
+    "section": " Sources",
+    "wording": "| EStG § 6(1) no. 1a (15% rule) and § 6(2) (EUR 800) | https://www.gesetze-im-internet.de/estg/__6.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 319,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "258",
+    "prior_row_id": 258,
+    "native_LF": [
+      324,
+      324
+    ],
+    "section": " Sources",
+    "wording": "| EStG § 11, cash basis | https://www.gesetze-im-internet.de/estg/__11.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 320,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "259",
+    "prior_row_id": 259,
+    "native_LF": [
+      325,
+      325
+    ],
+    "section": " Sources",
+    "wording": "| EStG § 10d, losses | https://www.gesetze-im-internet.de/estg/__10d.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 321,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "260",
+    "prior_row_id": 260,
+    "native_LF": [
+      326,
+      326
+    ],
+    "section": " Sources",
+    "wording": "| EStG § 23, private sales | https://www.gesetze-im-internet.de/estg/__23.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 322,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "261",
+    "prior_row_id": 261,
+    "native_LF": [
+      327,
+      327
+    ],
+    "section": " Sources",
+    "wording": "| EStG § 35c, energy works on own home | https://www.gesetze-im-internet.de/estg/__35c.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 323,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "262",
+    "prior_row_id": 262,
+    "native_LF": [
+      328,
+      328
+    ],
+    "section": " Sources",
+    "wording": "| EStG § 37, prepayments | https://www.gesetze-im-internet.de/estg/__37.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 324,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "263",
+    "prior_row_id": 263,
+    "native_LF": [
+      329,
+      329
+    ],
+    "section": " Sources",
+    "wording": "| EStG § 46, employee filing duty | https://www.gesetze-im-internet.de/estg/__46.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 325,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "264",
+    "prior_row_id": 264,
+    "native_LF": [
+      330,
+      330
+    ],
+    "section": " Sources",
+    "wording": "| EStG §§ 49, 50, non-residents | https://www.gesetze-im-internet.de/estg/__49.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 326,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "265",
+    "prior_row_id": 265,
+    "native_LF": [
+      331,
+      331
+    ],
+    "section": " Sources",
+    "wording": "| EStG § 52(1), (15a), (18b), (35a), application | https://www.gesetze-im-internet.de/estg/__52.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 327,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "266",
+    "prior_row_id": 266,
+    "native_LF": [
+      332,
+      332
+    ],
+    "section": " Sources",
+    "wording": "| EStDV § 82b, spreading larger maintenance | https://www.gesetze-im-internet.de/estdv_1955/__82b.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 328,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "267",
+    "prior_row_id": 267,
+    "native_LF": [
+      333,
+      333
+    ],
+    "section": " Sources",
+    "wording": "| BRKG § 5(2), 30 cents per km | https://www.gesetze-im-internet.de/brkg_2005/__5.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 329,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "268",
+    "prior_row_id": 268,
+    "native_LF": [
+      334,
+      334
+    ],
+    "section": " Sources",
+    "wording": "| UStG §§ 4 no. 12, 9, 12, 27(2) | https://www.gesetze-im-internet.de/ustg_1980/__9.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 330,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "269",
+    "prior_row_id": 269,
+    "native_LF": [
+      335,
+      335
+    ],
+    "section": " Sources",
+    "wording": "| AO §§ 108, 149, 152, 233a, 238 | https://www.gesetze-im-internet.de/ao_1977/__152.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 331,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "270",
+    "prior_row_id": 270,
+    "native_LF": [
+      336,
+      336
+    ],
+    "section": " Sources",
+    "wording": "| EGAO Art. 97 § 36(3), extended deadlines 2020 to 2024 | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 332,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "271",
+    "prior_row_id": 271,
+    "native_LF": [
+      337,
+      337
+    ],
+    "section": " Sources",
+    "wording": "| BGBl. 2024 I No. 108, Art. 6 (loss carry-forward back to 60% from 2028) | https://www.recht.bund.de/bgbl/1/2024/108/regelungstext.pdf | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 333,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "272",
+    "prior_row_id": 272,
+    "native_LF": [
+      338,
+      338
+    ],
+    "section": " Sources",
+    "wording": "| BMF letter of 21 May 2025 on § 7b EStG (paras. 16, 63 to 66, example 7) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-05-21-anwendungsschreiben-7b-estg-neu.pdf?__blob=publicationFile&v=5 | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 334,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "273",
+    "prior_row_id": 273,
+    "native_LF": [
+      339,
+      339
+    ],
+    "section": " Sources",
+    "wording": "| BMF letter of 8 October 2004 (BStBl I p. 933) on the intention to make a surplus, with notes, in the official income tax handbook 2024, Anhang 30 II (paras. 1, 5 to 10, 13, 16 to 27, 34, 39, 40) | https://esth.bundesfinanzministerium.de/esth/2024/C-Anhaenge/Anhang-30/II/anhang-30-II.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 335,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "274",
+    "prior_row_id": 274,
+    "native_LF": [
+      340,
+      340
+    ],
+    "section": " Sources",
+    "wording": "| BMF purchase-price split tool | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Berechnung-Aufteilung-Grundstueckskaufpreis.html | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 336,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "275",
+    "prior_row_id": 275,
+    "native_LF": [
+      341,
+      341
+    ],
+    "section": " Sources",
+    "wording": "| ELSTER instructions to the 2025 return, Anlage V, V-FeWo, V-Sonstige | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025 | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 337,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "276",
+    "prior_row_id": 276,
+    "native_LF": [
+      342,
+      342
+    ],
+    "section": " Sources",
+    "wording": "| ELSTER instructions to the 2026 return (page empty when read) | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2026 | 2026-10-24 |",
+    "source_quote_ids": [],
+    "classification": "historical_source_record",
+    "prior_native_LF": 338,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "277",
+    "prior_row_id": 277,
+    "native_LF": [
+      344,
+      344
+    ],
+    "section": " Sources",
+    "wording": "Not yet confirmed: the 2026 Anlage V form and instructions (the recorded route returned no substantive content; line numbers are from 2025); any BMF update to the letter of 8 October 2004 after the retained 2024 handbook (the checked 2025 handbook route remained inaccessible); the BMF letter of 22 February 2023 on a shorter actual useful life; whether a let property can be a first place of activity for travel; AfA in the month of sale; heirs under § 23(1) sentence 3; treaty treatment of foreign rental property; the BMF letter of 21 October 2026 on paid waiver of usufruct (Nießbrauch), not read.",
+    "source_quote_ids": [],
+    "classification": "scope_limit",
+    "prior_native_LF": 340,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "278",
+    "prior_row_id": 278,
+    "native_LF": [
+      346,
+      346
+    ],
+    "section": " Sources",
+    "wording": "<!-- openaccountants-cta-block -->",
+    "source_quote_ids": [],
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "prior_native_LF": 342,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "279",
+    "prior_row_id": 279,
+    "native_LF": [
+      348,
+      348
+    ],
+    "section": " Sources",
+    "wording": "---",
+    "source_quote_ids": [],
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "prior_native_LF": 344,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "280",
+    "prior_row_id": 280,
+    "native_LF": [
+      350,
+      350
+    ],
+    "section": " Talk to a verified accountant",
+    "wording": "## Talk to a verified accountant",
+    "source_quote_ids": [],
+    "classification": "structure",
+    "prior_native_LF": 346,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "281",
+    "prior_row_id": 281,
+    "native_LF": [
+      352,
+      352
+    ],
+    "section": " Talk to a verified accountant",
+    "wording": "This guide is maintained by the OpenAccountants network — accountants who put",
+    "source_quote_ids": [],
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "prior_native_LF": 348,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "282",
+    "prior_row_id": 282,
+    "native_LF": [
+      353,
+      353
+    ],
+    "section": " Talk to a verified accountant",
+    "wording": "their name behind the tax answers AI gives people. The live, always-current",
+    "source_quote_ids": [],
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "prior_native_LF": 349,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "283",
+    "prior_row_id": 283,
+    "native_LF": [
+      354,
+      354
+    ],
+    "section": " Talk to a verified accountant",
+    "wording": "version (and the professional behind it) is at",
+    "source_quote_ids": [],
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "prior_native_LF": 350,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "284",
+    "prior_row_id": 284,
+    "native_LF": [
+      355,
+      355
+    ],
+    "section": " Talk to a verified accountant",
+    "wording": "[openaccountants.com](https://www.openaccountants.com).",
+    "source_quote_ids": [],
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "prior_native_LF": 351,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "285",
+    "prior_row_id": 285,
+    "native_LF": [
+      357,
+      357
+    ],
+    "section": " Talk to a verified accountant",
+    "wording": "- Use it in your AI: https://www.openaccountants.com/connect",
+    "source_quote_ids": [],
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "prior_native_LF": 353,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "286",
+    "prior_row_id": 286,
+    "native_LF": [
+      358,
+      358
+    ],
+    "section": " Talk to a verified accountant",
+    "wording": "- Meet the accountants: https://www.openaccountants.com/network",
+    "source_quote_ids": [],
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "prior_native_LF": 354,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "287",
+    "prior_row_id": 287,
+    "native_LF": [
+      360,
+      360
+    ],
+    "section": " Talk to a verified accountant",
+    "wording": "> **General reference only.** This document does not constitute tax, legal, or",
+    "source_quote_ids": [],
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "prior_native_LF": 356,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "288",
+    "prior_row_id": 288,
+    "native_LF": [
+      361,
+      361
+    ],
+    "section": " Talk to a verified accountant",
+    "wording": "> financial advice. Verify figures against the cited primary sources or with a",
+    "source_quote_ids": [],
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "prior_native_LF": 357,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "289",
+    "prior_row_id": 289,
+    "native_LF": [
+      362,
+      362
+    ],
+    "section": " Talk to a verified accountant",
+    "wording": "> licensed professional before relying on them.",
+    "source_quote_ids": [],
+    "classification": "protected_reference_disclaimer_or_CTA",
+    "prior_native_LF": 358,
+    "disposition": "Exact original unit or bounded R109–111 qualification; historical wording retained in preimage"
+  },
+  {
+    "id": "290",
+    "prior_row_id": null,
+    "native_LF": [
+      110,
+      110
+    ],
+    "section": "Finite ordinary rental calculation",
+    "wording": "Continuing that fully qualifying January 2026 straight-line example, four full years through 2029 deduct 4 × (EUR 12,000 regular AfA + EUR 16,000 special AfA). The residual building value is EUR 288,000. The mathematical 3% life is 100/3 years; after four years, 88/3 years remain. Regular annual AfA from 2030 is therefore EUR 288,000 ÷ (88/3) = EUR 9,818.1818… (EUR 9,818.18 displayed). This display rounding is not an independently established assessment-rounding rule. It is a January full-year fixture, not a formula for unverified historical partial-year or shorter-life facts.",
+    "source_quote_ids": [
+      "R109-111.R17",
+      "R109-111.R89",
+      "R109-111.R92"
+    ],
+    "classification": "new_sourced_computation",
+    "disposition": "Computed fixture, actual independent allocation/historical qualification facts required"
+  }
+]

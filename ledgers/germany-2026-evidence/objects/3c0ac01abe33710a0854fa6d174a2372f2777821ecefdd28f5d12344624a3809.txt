@@ -1,0 +1,336 @@
+POSTANSCHRIFT   Bundesministerium der Finanzen, 11016 Berlin
+
+                Nur per E-Mail                                               HAUSANSCHRIFT    Wilhelmstraße 97
+                                                                                              10117 Berlin
+                                                                                       TEL    +49 (0) 30 18 682-0
+                Oberste Finanzbehörden
+                der Länder                                                           E-MAIL   poststelle@bmf.bund.de
+                                                                                    DATUM     11. März 2024
+
+
+
+
+     BETREFF    Grundsätze zur ordnungsmäßigen Führung und Aufbewahrung von Büchern,
+                Aufzeichnungen und Unterlagen in elektronischer Form sowie zum Datenzugriff
+                (GoBD);
+                Änderung aufgrund verschiedener gesetzlicher Änderungen
+
+          GZ    IV D 2 - S 0316/21/10001 :002
+         DOK    2024/0184201
+                 (bei Antwort bitte GZ und DOK angeben)
+
+
+
+
+                Insbesondere aufgrund des Gesetzes zur Umsetzung der Richtlinie (EU) 2021/514 des Rates
+                vom 22. März 2021 zur Änderung der Richtlinie 2011/16/EU über die Zusammenarbeit der
+                Verwaltungsbehörden im Bereich der Besteuerung und zur Modernisierung des Steuerver-
+                fahrensrechts ergibt sich an verschiedenen Stellen Änderungsbedarf bei den GoBD.
+
+                Nach Erörterung mit den obersten Finanzbehörden der Länder werden die GoBD, veröffent-
+                licht mit BMF-Schreiben vom 28. November 2019 (BStBl I S. 1269), mit sofortiger Wirkung
+                wie folgt geändert:
+
+                1.            Das Inhaltsverzeichnis wird wie folgt geändert:
+                              In der Angabe zu 1.6 das Wort „Finanzverwaltung“ durch das Wort „Finanzbehörde“
+                              ersetzt.
+
+                2.            In Randziffer 6 Satz 3 und in der Überschrift des Unterabschnitts 1.6 wird jeweils das
+                              Wort „Finanzverwaltung“ durch das Wort „Finanzbehörde“ ersetzt.
+
+                3.            Randziffer 11 wird wie folgt geändert:
+                              a) Satz 1 wird durch die folgenden Sätze ersetzt:
+
+
+
+
+                                                                                                                www.bundesfinanzministerium.de
+Seite 2        „Nach § 158 Absatz 1 AO sind die Buchführung und die Aufzeichnungen des
+               Steuerpflichtigen, die den Vorschriften der §§ 140 bis 148 AO entsprechen, der
+               Besteuerung zugrunde zu legen. Der Grundsatz gilt nicht, soweit nach den Umständen
+               des Einzelfalls Anlass besteht, die sachliche Richtigkeit der Buchführung oder der
+               Aufzeichnungen zu beanstanden (§ 158 Absatz 2 Nummer 1 AO) oder soweit die
+               elektronischen Daten nicht nach den Vorgaben einer der vorgeschriebenen digitalen
+               Schnittstellen der Finanzbehörde zur Verfügung gestellt werden (§ 158 Absatz 2
+               Nummer 2 AO).“
+
+               b) In Satz 3 wird jeweils das Wort „Finanzverwaltung“ durch das Wort
+                  „Finanzbehörde“ ersetzt.
+
+          4.   Randziffer 15 Satz 3 wird wie folgt gefasst:
+               „Bei Kleinunternehmen, deren Jahresumsatz die Vorjahresgrenze des § 19 Absatz 1
+               Satz 1 UStG in seiner jeweils gültigen Fassung nicht übersteigt und die ihren Gewinn
+               durch Einnahmen-Überschussrechnung ermitteln, ist die Erfüllung der Anforderungen
+               an die Aufzeichnungen nach den GoBD regelmäßig auch mit Blick auf die
+               Unternehmensgröße zu bewerten.
+
+          5.   Randziffer 39, 2. Absatz, wird wie folgt geändert:
+               a) In Satz 1 wird die Angabe „2.1.4“ durch die Angabe „2.2.2“ ersetzt.
+               b) Nach Satz 1 wird folgender Satz eingefügt:
+               „Bei Vorliegen der übrigen Voraussetzungen des § 146 Absatz 1 Satz 3 AO ist die
+               Zumutbarkeit nicht gesondert zu prüfen.“
+
+          6.   In Randziffer 43 wird folgender Satz angefügt:
+               „Auf § 146a Absatz 2 AO wird hingewiesen.“
+
+          7.   In Randziffer 94 werden nach dem Tiret „Konto und Gegenkonto“ die folgenden
+               Tirets eingefügt:
+               „• Kontoart (Aktiva, Passiva, Kapital, Aufwand, Ertrag, sonstige),
+               • Kontotyp (Bilanz, GuV, Debitor, Kreditor, steuerlicher Gewinn / außerbilanzielle
+               Zu- und Abrechnungen, sonstige),“
+
+          8.   Randziffer 124 wird aufgehoben.
+
+          9.   In Randziffer 128 Satz 2 wird das Wort „Datenträgerüberlassung“ durch das Wort
+               „Datenüberlassung“ ersetzt und die Wörter „auf dem Datenträger“ gestrichen.
+Seite 3   10.    In Randziffer 136 wird Satz 1 des letzten Absatzes wie folgt gefasst:
+                 „Erfolgt im Zusammenhang mit einer auf § 146 Absatz 2a AO beruhenden oder nach
+                 § 146 Absatz 2b AO genehmigten Verlagerung der elektronischen Buchführung in
+                 einen oder mehrere ausländische Staaten eine ersetzende bildliche Erfassung, wird es
+                 nicht beanstandet, wenn die papierenen Ursprungsbelege zu diesem Zweck an den Ort
+                 der elektronischen Buchführung verbracht werden.“
+
+          11.    In Randziffer 159 wird folgender Satz vorangestellt:
+                 „Das Recht auf Datenzugriff nach § 147 Absatz 6 Satz 1 AO ist in allen dort
+                 genannten Ausgestaltungen auf den Rahmen der jeweiligen Außenprüfung
+                 beschränkt.“
+
+          12.    In Randziffer 160 Satz 3 wird das Wort „Datenträgerüberlassung“ durch die Wörter
+                 „überlassenen Daten“ sowie das Wort „Finanzverwaltung“ durch das Wort
+                 „Finanzbehörde“ ersetzt.
+
+          13.    In Randziffer 161, Beispiel 12, 2. Tiret wird das Wort „Datenträgerüberlassung“ durch
+                 das Wort „Datenüberlassung“ ersetzt.
+
+          14.   Die Randziffern 167 bis 169 werden durch die folgenden Randziffern ersetzt:
+           „167 Datenüberlassung (Z3)
+                Die Finanzbehörde kann ferner verlangen, dass ihr die aufzeichnungs- und aufbe-
+                wahrungspflichtigen Daten, einschließlich der jeweiligen Meta-, Stamm- und
+                Bewegungsdaten sowie der internen und externen Verknüpfungen (z. B. zwischen den
+                Tabellen einer relationalen Datenbank), und elektronische Dokumente und Unterlagen
+                in einem maschinell lesbaren und auswertbaren Format zur Auswertung überlassen
+                werden. Dies kann z. B. auf einem Datenträger oder durch Zurverfügungstellung der
+                Daten über eine Datenaustauschplattform erfolgen, für die die Finanzbehörde einen
+                Zugang eröffnet hat (§ 87a Absatz 1 AO). Dieses Verlangen kann gem. § 197 Absatz 3
+                AO mit der Prüfungsanordnung innerhalb einer angemessenen Frist bereits vor dem
+                Beginn der Prüfung geltend gemacht werden. Die Finanzbehörde ist nicht berechtigt,
+                selbst Daten aus dem DV-System herunterzuladen oder Kopien vorhandener
+                Datensicherungen vorzunehmen.
+           168 Die Datenüberlassung umfasst die Mitnahme der Daten aus der Sphäre des
+                Steuerpflichtigen. Eine Verarbeitung und Aufbewahrung der Daten ist auch auf
+                mobilen Datenverarbeitungssystemen der Finanzbehörden unabhängig von deren
+                Einsatzort zulässig. Die Finanzbehörde darf die Daten bis zur Unanfechtbarkeit der die
+                Daten betreffenden Verwaltungsakte auch auf den mobilen Datenverarbeitungs-
+                systemen unabhängig vom Einsatzort aufbewahren (vgl. § 147 Absatz 7 AO).
+Seite 4    169 Spätestens nach Bestandskraft der aufgrund der Außenprüfung ergangenen Bescheide
+               sind die vom Steuerpflichtigen überlassenen Daten zu löschen und ggf. zur
+               Auswertung überlassene Datenträger an diesen zurückzugeben.“
+
+          15.    Randziffer 176 wird wie folgt geändert:
+                 a) In Satz 1 wird das Wort „Datenträgerüberlassung“ durch das Wort
+                     „Datenüberlassung“ ersetzt.
+                 b) In Satz 4 und 5 wird jeweils das Wort „Datenträger“ durch das Wort
+                     „Datenüberlassungen“ ersetzt.
+                 c) In Satz 7 wird das Wort „Finanzverwaltung“ durch das Wort „Finanzbehörde“
+                     ersetzt.
+
+          16.    In Randziffer 177 wird das Wort „Datenträgerüberlassung“ durch das Wort
+                 „Datenüberlassung“ ersetzt.
+
+          17.   Randziffer 178 wird wie folgt gefasst:
+           „178 „Ergänzende Informationen zur Datenüberlassung sind in der Anlage
+                zusammengefasst. Die Digitalen Schnittstellen der Finanzverwaltung (DSFinV bzw.
+                DLS) stehen auf der Internet-Seite des Bundeszentralamts für Steuern (www.bzst.de)
+                zum Download bereit.“
+
+          18.   Randziffern 182 bis 184 werden durch die folgenden Randziffern ersetzt:
+           „182 Die GoBD in der Fassung vom 28. November 2019 treten mit Wirkung vom 1. Januar
+                2020 an die Stelle des BMF-Schreibens vom 14. November 2014
+                - IV A 4 - S 0316/13/10003 -, BStBl I S. 1450.
+           183 Die GoBD in der Fassung vom 28. November 2019 sind auf Besteuerungszeiträume
+                anzuwenden, die nach dem 31. Dezember 2019 beginnen. Es wird nicht beanstandet,
+                wenn der Steuerpflichtige diese Grundsätze auf Besteuerungszeiträume anwendet, die
+                vor dem 1. Januar 2020 enden.
+           184 Die GoBD in der Fassung vom 11. März 2024 gelten ab dem 1. April 2024.“
+
+          22.    Die Anlage wird wie folgt gefasst:
+
+
+
+                    „Ergänzende Informationen zur Datenüberlassung
+
+          Die „Grundsätze zur ordnungsmäßigen Führung und Aufbewahrung von Büchern,
+          Aufzeichnungen und Unterlagen in elektronischer Form sowie zum Datenzugriff
+          (GoBD)“ in Form der Neufassung durch das BMF-Schreiben vom 28. November 2019
+          (BStBl I S. 1269), geändert durch das BMF-Schreiben vom 11. März 2024 regeln die
+Seite 5   Datenüberlassung.
+          Auf Verlangen der Finanzbehörde müssen aufzeichnungs- und aufbewahrungspflichtige
+          Daten und zur Auswertung der Daten notwendige Strukturinformationen in maschinell
+          auswertbarer Form durch das geprüfte Unternehmen bereitgestellt werden.
+          Da gerade die Datenüberlassung dem geprüften Unternehmen erhebliche Probleme
+          bereiten kann, werden nachfolgende Informationen zur Datenüberlassung als Hilfe
+          bereitgestellt.
+
+          1. Beschreibungsstandard für die Datenüberlassung
+          Die Finanzbehörde hat mit Softwareherstellern sowie dem deutschen Vertrieb der
+          bundeseinheitlichen Prüfsoftware der Finanzverwaltung „IDEA“ (Firma CaseWare
+          Germany GmbH) eine einheitliche, technische Bereitstellungshilfe zur Format- und
+          Inhaltsbeschreibung der aufzeichnungs- und aufbewahrungspflichtigen Daten
+          entwickelt.
+          Umfang, Struktur oder Bezeichnung der aufzeichnungs- und aufbewahrungspflichtigen
+          Daten werden durch den Beschreibungsstandard nicht vorgegeben.
+
+          1.1 Beschreibungsstandard als technische Bereitstellungshilfe
+          Der Beschreibungsstandard für die Datenüberlassung definiert die Datenimport-
+          Schnittstelle    zur     automatisierten    Übernahme        aufzeichnungs-      und
+          aufbewahrungspflichtiger Daten einschließlich der zur maschinellen Auswertung
+          erforderlichen Strukturinformationen und Verknüpfungen. Er ermöglicht
+          Softwareherstellern und geprüften Unternehmen auf freiwilliger Basis eine problemlose
+          Datenübergabe bei angeforderter Datenüberlassung im Rahmen einer Außenprüfung.
+
+          1.2 Funktionsweise und Inhalt des XML-basierten Beschreibungsstandards
+          Um die unterschiedlichen Datenstrukturen verarbeiten zu können, muss das geprüfte
+          Unternehmen     oder    ein    beauftragter Dritter die aufzeichnungs- und
+          aufbewahrungspflichtigen Daten weitgehend „denormalisiert“ zur Verfügung stellen.
+          Der Beschreibungsstandard legt das Dateiformat für diese Daten auf gängige
+          Standardformate fest. Zusätzlich liefert der Beschreibungsstandard eine maschinell
+          auswertbare Beschreibung der Daten, Datenformate und Verknüpfungen im XML-
+          Format.
+
+          1.3 Weiterführende Informationen zum Beschreibungsstandard
+          Die aktuelle technische Beschreibung kann bei der Firma CaseWare Germany GmbH
+          (https://www.caseware.net/) kostenlos angefordert werden. Sie beinhaltet insbesondere
+          die technische Organisation des Beschreibungsstandards und eine Erläuterung der
+          zugrunde liegenden DTD (Document Type Definition).
+Seite 6   1.4 Muster-index.xml-Dateien der Finanzbehörde
+          Im Zusammenhang mit der Beschreibung digitaler Schnittstellen stellt die Finanzbehörde
+          Muster-index.xml zur Verfügung. Zur Verwendung und Anpassung der Muster-
+          index.xml gilt Folgendes:
+          Die Felder (Spalten) müssen in jeder zur Verfügung gestellten csv-Datei in der
+          beschriebenen Reihenfolge enthalten sein. In jeder csv-Datei soll ein Kopfdatensatz mit
+          den Bezeichnungen des Feldnamens vorangestellt werden. Darüber hinaus ist eine
+          beschreibende index.xml-Datei beizufügen. Die jeweilige Muster-index.xml der
+          Finanzbehörde ist bei Verwendung von Zusatzfeldern und -tabellen zu ergänzen und bei
+          Abweichungen der csv-Daten vom Muster anzupassen (z. B. kein Kopfdatensatz
+          enthalten, Feldtrenner nicht Semikolon, Dezimaltrennzeichen nicht Komma,
+          Tausendertrennzeichen nicht Punkt, Zeilenumbruch nicht CRLF, Texteinschlusszeichen
+          nicht Anführungszeichen).
+
+
+          2. Digitale LohnSchnittstelle
+          Für den Bereich der Lohnsteuer-Außenprüfung hat die Finanzbehörde die Digitale
+          LohnSchnittstelle (DLS) erarbeitet.
+
+          Die DLS ist eine verpflichtend einzuhaltende Datensatzbeschreibung für den
+          standardisierten Datenexport aus dem Lohnabrechnungsprogramm des Arbeitgebers zur
+          Übergabe an die Finanzbehörde. Sie stellt eine einheitliche Strukturierung und
+          Bezeichnung der nach § 41 EStG und § 4 LStDV im Lohnkonto aufzuzeichnenden Daten
+          in Dateien und Datenfelder sicher – unabhängig von dem Lohnabrechnungsprogramm
+          des Arbeitgebers. Eine abschließende Definition und Aufzählung der aufzeichnungs- und
+          aufbewahrungspflichtigen Daten sind mit der DLS nicht verbunden.
+
+          Das Datenzugriffsrecht nach § 147 Absatz 6 AO auf weitere aufzeichnungs- und
+          aufbewahrungspflichtige Unterlagen bleibt von der Anwendung der DLS unberührt.
+
+          Die jeweils aktuelle Version der DLS steht mit weiteren Informationen auf der
+          Internetseite des Bundeszentralamtes für Steuern unter www.bzst.bund.de zur Einsicht
+          und zum Download bereit.
+
+
+          3. Exporte aus elektronischen Aufzeichnungssystemen, die in den
+             Anwendungsbereich des § 146a Absatz 1 Satz 1 und Absatz 3 AO i. V. m.
+             § 1 Kassensicherungsverordnung fallen
+          Mit dem Gesetz zum Schutz vor Manipulationen an digitalen Grundaufzeichnungen vom
+          22. Dezember 2016 (BGBl. I S. 3152) wurde geregelt, dass Daten, die mit Hilfe eines
+          elektronischen Aufzeichnungssystems erfasst werden, ab dem 1. Januar 2020 mit einer
+          zertifizierten technischen Sicherheitseinrichtung (TSE) zu schützen sind
+Seite 7   (vgl. § 146a Absatz 1 Satz 1 und 2 AO i. V. m. § 1 Kassensicherungsverordnung -
+           KassenSichV). Diese Daten sind der Finanzbehörde anlässlich einer Außenprüfung oder
+           einer Kassen-Nachschau über eine einheitliche digitale Schnittstelle (§ 4 KassenSichV)
+           zur Verfügung zu stellen (vgl. § 146a Absatz 1 Satz 4 AO). Die einheitliche digitale
+           Schnittstelle besteht aus der Einbindungsschnittstelle, der Exportschnittstelle sowie
+           der Digitalen Schnittstellen der Finanzverwaltung (DSFinV -vgl. Nr. 4 des AEAO zu
+           § 146a bzw. Nr. 1.13 des AEAO zu § 146a in der ab 1. Januar 2024 geltenden Fassung).
+           Über sie sind jeweils verpflichtend die erforderlichen Daten sowie Formate definiert.
+
+           Die jeweilige DSFinV liefert hierzu eine fachliche und technische Beschreibung.
+
+           Die jeweils aktuelle Version der jeweiligen DSFinV steht mit weiteren Informationen
+           auf der Internetseite des Bundeszentralamtes für Steuern unter www.bzst.bund.de zur
+           Einsicht und zum Download bereit.
+
+           Das Datenzugriffsrecht nach § 147 Absatz 6 AO auf weitere aufzeichnungs- und
+           aufbewahrungspflichtige Unterlagen bleibt von der Anwendung der jeweiligen DSFinV
+           unberührt.
+
+
+
+           4. Weitere unterstützte Dateiformate der Prüfsoftware
+           Neben dem Beschreibungsstandard unterstützt die von der Finanzbehörde eingesetzte
+           Prüfsoftware IDEA folgende Dateiformate - sofern die zur Auswertung der Daten
+           notwendigen Strukturinformationen gleichfalls in maschinell auswertbarer Form
+           bereitgestellt werden und das Einlesen der Daten ohne Installation zusätzlicher
+           Fremdsoftware möglich ist:
+                 • ASCII feste Länge
+                   (zzgl. Information für Struktur und Datenelemente etc. in maschinell
+                   auswertbarer Form)
+                 • ASCII Delimited
+                   (einschließlich kommagetrennter Werte, zzgl. Information für Struktur und
+                   Datenelemente etc. in maschinell auswertbarer Form)
+                 • Excel
+                   (nur Dateien im xlsx-Format / Dateien in anderen Excel-Formaten werden
+                   nicht unterstützt, zzgl. Informationen für Struktur und Datenelemente etc.
+                   in maschinell auswertbarer Form)
+                 • Access
+                   (nur Dateien im accdb-Format / Dateien im mdb-Format werden nicht
+                   unterstützt, zzgl. Informationen für Struktur und Datenelemente etc. in
+                   maschinell auswertbarer Form)
+Seite 8         • dBASE
+                  (zzgl. Informationen für Struktur und Datenelemente etc. in maschinell
+                  auswertbarer Form)
+                • Dateien von SAP/AIS
+                  (zzgl. Informationen für Struktur und Datenelemente etc. in maschinell
+                  auswertbarer Form)
+          Des Weiteren ist bei passwortgeschützten Dateien erforderlich, das Kennwort
+          anzugeben. Nicht unterstützte Dateiformate müssen in lesbare Formate konvertiert
+          werden.
+
+          Werden die Daten aus einer Tabellenkalkulation angeliefert, sollten in den Tabellen nur
+          die reinen Daten und keine leeren Zeilen, Zwischensummenzeilen oder Summenzeilen
+          enthalten sein. Die Felder sollten entsprechend dem Feldtyp formatiert werden und in der
+          ersten Zeile einen entsprechenden Feldnamen enthalten. Verknüpfungen sollten als
+          eindeutige Schlüsselfelder mitgeliefert werden.
+          Für eine maschinelle Auswertbarkeit ist u. a. die Verwendung eindeutiger Feld- und
+          Datensatztrennkriterien sowie Texteinschlusszeichen erforderlich (so darf zum Beispiel
+          das Texteinschlusszeichen nicht als Feldinhalt verwandt werden).
+
+
+          5. Anwendungsregelung
+          Dieses Schreiben ersetzt das Schreiben vom 28. November 2019.
+
+          Soweit folgende Formate nicht mehr aufgenommen wurden, werden diese für
+          Besteuerungszeiträume, die nach dem 31. Dezember 2024 beginnen, nicht mehr
+          unterstützt:
+
+
+                • EBCDIC feste Länge (zzgl. Information für Struktur und Datenelemente etc. in
+                  maschinell auswertbarer Form)
+                • EBCDIC Dateien mit variabler Länge (zzgl. Information für Struktur und
+                  Datenelemente etc. in maschinell auswertbarer Form)
+                • Lotus 123 (zzgl. Informationen für Struktur und Datenelemente etc. in
+                  maschinell auswertbarer Form)
+                • ASCII-Druckdateien (zzgl. Info für Struktur und Datenelemente etc. in
+                  maschinell auswertbarer Form)
+                • Konvertieren von AS/400 Datensatzbeschreibungen
+                  (FDF-Dateien erstellt von PC Support/400) in RDE-Datensatzbeschreibungen
+                  (zzgl. Informationen für Struktur und Datenelemente etc. in maschinell
+                  auswertbarer Form)
+
+          Für Besteuerungszeiträume, die vor dem 1. Januar 2025 enden, gilt das Schreiben für die
+          vorgenannten Formate in der Fassung vom 28. November 2019 fort.“
+Seite 9   Dieses Schreiben wird im Bundessteuerblatt Teil I veröffentlicht.
+
+          Im Auftrag
+
+          Dieses Dokument wurde elektronisch erstellt und ist ohne Unterschrift gültig.
+

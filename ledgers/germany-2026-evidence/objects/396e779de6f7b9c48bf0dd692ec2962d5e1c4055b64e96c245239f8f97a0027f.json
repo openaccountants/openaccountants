@@ -1,0 +1,11 @@
+{
+  "id": "U4b1a5e5d48307725",
+  "url": "https://www.gesetze-im-internet.de/erechv/__5.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4b1a5e5d48307725.body",
+  "raw_sha256": "b04f5f346778b525e678f20326fce706e502e38af70f25fdf47726d1bb626f8e",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U4b1a5e5d48307725.reader.txt",
+  "reader_sha256": "a0628c4e99e4434351f011d520c4678a2798c48d95026b6b4fd307303007ef71",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

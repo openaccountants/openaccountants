@@ -1,0 +1,163 @@
+[
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-ben-rev.md",
+    "copy": "preserved-review-reports/DE-ben-rev.md",
+    "sha256": "ec4419fbddee7fad9749cb8fa6c7b32c6e2958c03eac32dde08d65c2cad63ca1",
+    "bytes": 4326,
+    "kind": "independent review"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-ben.md",
+    "copy": "preserved-review-reports/DE-ben.md",
+    "sha256": "ad6aca7d4b1caa08ceacf7b4927cb450cc828662846939d7fb57a4ca1fe973c2",
+    "bytes": 1822,
+    "kind": "writer/audit report; not independent legal proof"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-cg-rev.md",
+    "copy": "preserved-review-reports/DE-cg-rev.md",
+    "sha256": "3a5f63554dd8f2f12bbbbaea0b7dda7540eafa61c83561da97b04574c56ac4b3",
+    "bytes": 1153,
+    "kind": "independent review"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-cg.md",
+    "copy": "preserved-review-reports/DE-cg.md",
+    "sha256": "b083b589d7da6b9b3c15da74822b39954b5bc34c50e4a46761553148d0b31936",
+    "bytes": 1319,
+    "kind": "writer/audit report; not independent legal proof"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-est-rev.md",
+    "copy": "preserved-review-reports/DE-est-rev.md",
+    "sha256": "1b6f55d7b12e0e0f054755bf19661adc7f0dba288c991a40f004389afdb5b20a",
+    "bytes": 1809,
+    "kind": "independent review"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-est.md",
+    "copy": "preserved-review-reports/DE-est.md",
+    "sha256": "b1406ce3ac297d7d7ebe860d685dc10ed98362e47035805f83b64cf542aab68e",
+    "bytes": 1233,
+    "kind": "writer/audit report; not independent legal proof"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-free-rev2.md",
+    "copy": "preserved-review-reports/DE-free-rev2.md",
+    "sha256": "1faa513a3fa54d1e510bb4bdabfa5893b5f17cc68747f7d6b34c85bbb4497ab3",
+    "bytes": 853,
+    "kind": "independent review"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-free.md",
+    "copy": "preserved-review-reports/DE-free.md",
+    "sha256": "80a89d6821af5927aba9c088dfa39cb7256d1d61b8d8b868fe46749213bbcaeb",
+    "bytes": 1153,
+    "kind": "writer/audit report; not independent legal proof"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-gewst-rev.md",
+    "copy": "preserved-review-reports/DE-gewst-rev.md",
+    "sha256": "01c82c483737a604516fba3043c86ec84678834ca4d4bb358cacb9889d406d06",
+    "bytes": 2444,
+    "kind": "independent review"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-gewst.md",
+    "copy": "preserved-review-reports/DE-gewst.md",
+    "sha256": "7f7cc5b6d3592c681d43fd810b80af9bbd582c2b65e9111dc70fcbb715e5bf86",
+    "bytes": 2605,
+    "kind": "writer/audit report; not independent legal proof"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-pr-rev.md",
+    "copy": "preserved-review-reports/DE-pr-rev.md",
+    "sha256": "1f0ed48d214b90544f9625b4f2efe3e63e305dd1ef0ea69aeda57e1d112edec1",
+    "bytes": 2475,
+    "kind": "independent review"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-pr.md",
+    "copy": "preserved-review-reports/DE-pr.md",
+    "sha256": "a46d8606e74a662ce93ddf3c794aabb87f2d55d326782c9b07c9ad00fb646d58",
+    "bytes": 1587,
+    "kind": "writer/audit report; not independent legal proof"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-rent-rev.md",
+    "copy": "preserved-review-reports/DE-rent-rev.md",
+    "sha256": "3cdc2396d2106bf0085818e517fa21f5e6f6be0f4f416092e1ff28e7eca9a73e",
+    "bytes": 3042,
+    "kind": "independent review"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-rent.md",
+    "copy": "preserved-review-reports/DE-rent.md",
+    "sha256": "be6596aaa00bde51831881ad0c0396c215fe3a19b4ccef8ec3c0d68e70ea9831",
+    "bytes": 2844,
+    "kind": "writer/audit report; not independent legal proof"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-restore.md",
+    "copy": "preserved-review-reports/DE-restore.md",
+    "sha256": "6f6fab40d5b4d62275237b612283c575504b89c5fb27db0095911ad3211e72ca",
+    "bytes": 2254,
+    "kind": "writer/audit report; not independent legal proof"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-sc-rev.md",
+    "copy": "preserved-review-reports/DE-sc-rev.md",
+    "sha256": "3980b91813523e67e7674b7675e60e41ba7f0a606edf1aa6bd699e4e2479eb43",
+    "bytes": 915,
+    "kind": "independent review"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-sc.md",
+    "copy": "preserved-review-reports/DE-sc.md",
+    "sha256": "2557fbec4bf27282688a06ce8932114b24d78d347fb92a68c4f4ee19d15a256b",
+    "bytes": 1324,
+    "kind": "writer/audit report; not independent legal proof"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-vat-rev.md",
+    "copy": "preserved-review-reports/DE-vat-rev.md",
+    "sha256": "0a915614f5408c72a1b30acf0c71c0c76b1657ef2c4d3409a53f161c05faa0d8",
+    "bytes": 3874,
+    "kind": "independent review"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/DE-vat.md",
+    "copy": "preserved-review-reports/DE-vat.md",
+    "sha256": "dac7a6969c0ca3f8abb7243f635f3418d6e5ecbe29c1261e5fabeb919ba450fa",
+    "bytes": 2610,
+    "kind": "writer/audit report; not independent legal proof"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/noloss-A-rev.md",
+    "copy": "preserved-review-reports/noloss-A-rev.md",
+    "sha256": "abf823990bc0a1db0e1dfbec14e9050e69eb90f31eb75f268d11a6829ec0eb1f",
+    "bytes": 1813,
+    "kind": "independent review"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/noloss-A.md",
+    "copy": "preserved-review-reports/noloss-A.md",
+    "sha256": "14a91c71726977b3388ae07f7ef2d7648c31d26c03c0d1ab209c707ad5075a89",
+    "bytes": 1299,
+    "kind": "writer/audit report; not independent legal proof"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/restore-rev.md",
+    "copy": "preserved-review-reports/restore-rev.md",
+    "sha256": "462254a9b4c3447bdc1b069fd7f0b6da01bb43b73a00a94de74bf5767028cf40",
+    "bytes": 4472,
+    "kind": "independent review"
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reports/shrink-audit.md",
+    "copy": "preserved-review-reports/shrink-audit.md",
+    "sha256": "dee6e05248f37c8b7e4fb8a2279e5db99cce227a8a6d31fd7d5d43af59b06d48",
+    "bytes": 19776,
+    "kind": "writer/audit report; not independent legal proof"
+  }
+]

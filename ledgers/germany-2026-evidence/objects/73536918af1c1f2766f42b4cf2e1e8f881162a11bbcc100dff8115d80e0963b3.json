@@ -1,0 +1,198 @@
+{
+  "count": 32,
+  "controls": [
+    {
+      "name": "fin1",
+      "actual": "32000",
+      "expected": "32000",
+      "pass": true
+    },
+    {
+      "name": "add1",
+      "actual": "0.0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "base1",
+      "actual": "3885/2",
+      "expected": "3885/2",
+      "pass": true
+    },
+    {
+      "name": "tax1",
+      "actual": "38073/4",
+      "expected": "38073/4",
+      "pass": true
+    },
+    {
+      "name": "credit1",
+      "actual": "7770",
+      "expected": "7770",
+      "pass": true
+    },
+    {
+      "name": "unoffset1",
+      "actual": "6993/4",
+      "expected": "6993/4",
+      "pass": true
+    },
+    {
+      "name": "prepayment1",
+      "actual": "2379",
+      "expected": "2379",
+      "pass": true
+    },
+    {
+      "name": "fin2",
+      "actual": "240000",
+      "expected": "240000",
+      "pass": true
+    },
+    {
+      "name": "add2",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "beforeloss2",
+      "actual": "1404000",
+      "expected": "1404000",
+      "pass": true
+    },
+    {
+      "name": "usedloss2",
+      "actual": "1242400",
+      "expected": "1242400",
+      "pass": true
+    },
+    {
+      "name": "remainingloss2",
+      "actual": "757600",
+      "expected": "757600",
+      "pass": true
+    },
+    {
+      "name": "income2",
+      "actual": "161600",
+      "expected": "161600",
+      "pass": true
+    },
+    {
+      "name": "base2",
+      "actual": "9597/2",
+      "expected": "9597/2",
+      "pass": true
+    },
+    {
+      "name": "tax2",
+      "actual": "393477/20",
+      "expected": "393477/20",
+      "pass": true
+    },
+    {
+      "name": "partnercreditcap2",
+      "actual": "9597",
+      "expected": "9597",
+      "pass": true
+    },
+    {
+      "name": "return24580strict",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "tax24580afterround",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "loss60pctat2m",
+      "actual": "400000",
+      "expected": "400000",
+      "pass": true
+    },
+    {
+      "name": "addback200000equals",
+      "actual": "0.0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "addback200000.04",
+      "actual": "1/100",
+      "expected": "1/100",
+      "pass": true
+    },
+    {
+      "name": "homeworkerbase_rate",
+      "actual": "49/2500",
+      "expected": "49/2500",
+      "pass": true
+    },
+    {
+      "name": "late1234.56",
+      "actual": "12",
+      "expected": "12",
+      "pass": true
+    },
+    {
+      "name": "late4startedmonths",
+      "actual": "100",
+      "expected": "100",
+      "pass": true
+    },
+    {
+      "name": "minprepay49.99notset",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "minprepay50set",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "2027July31Saturday",
+      "actual": "5",
+      "expected": "5",
+      "pass": true
+    },
+    {
+      "name": "2028Feb29Tuesday",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "name": "2027Feb28Sunday",
+      "actual": "6",
+      "expected": "6",
+      "pass": true
+    },
+    {
+      "name": "DE-R12 statutory wages A",
+      "actual": "50000",
+      "expected": "50000",
+      "pass": true
+    },
+    {
+      "name": "DE-R12 statutory wage key equal",
+      "actual": "500",
+      "expected": "500",
+      "pass": true
+    },
+    {
+      "name": "DE-R13no1paymentnograce",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    }
+  ],
+  "scope": "Both original cases independently recomputed using exact Fractions and actual sourced boundaries; actual municipal rates in cases are stipulated as disclosed, not a new2026municipal resolution claim."
+}

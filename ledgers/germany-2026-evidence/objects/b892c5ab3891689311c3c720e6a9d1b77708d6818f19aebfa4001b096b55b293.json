@@ -1,0 +1,538 @@
+{
+  "writer_only": true,
+  "no_independent_PASS": true,
+  "controls": [
+    {
+      "id": "R01.standard.D",
+      "actual": "2880.0000",
+      "expected": "2880",
+      "premise": "Stipulated ordinary combustion car, no benefits reducing allowance; full one-way km and actual days. Separate private use not included.",
+      "pass": true
+    },
+    {
+      "id": "R01.standard.A",
+      "actual": "1520.00",
+      "expected": "1520",
+      "premise": "Stipulated ordinary combustion car, no benefits reducing allowance; full one-way km and actual days. Separate private use not included.",
+      "pass": true
+    },
+    {
+      "id": "R01.standard.extra",
+      "actual": "1360.0000",
+      "expected": "1360",
+      "premise": "Stipulated ordinary combustion car, no benefits reducing allowance; full one-way km and actual days. Separate private use not included.",
+      "pass": true
+    },
+    {
+      "id": "R01.actual1000.D",
+      "actual": "1000",
+      "expected": "1000",
+      "premise": "Stipulated ordinary combustion car, no benefits reducing allowance; full one-way km and actual days. Separate private use not included.",
+      "pass": true
+    },
+    {
+      "id": "R01.actual1000.A",
+      "actual": "1520.00",
+      "expected": "1520",
+      "premise": "Stipulated ordinary combustion car, no benefits reducing allowance; full one-way km and actual days. Separate private use not included.",
+      "pass": true
+    },
+    {
+      "id": "R01.actual1000.extra",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Stipulated ordinary combustion car, no benefits reducing allowance; full one-way km and actual days. Separate private use not included.",
+      "pass": true
+    },
+    {
+      "id": "R01.actual2000.D",
+      "actual": "2000",
+      "expected": "2000",
+      "premise": "Stipulated ordinary combustion car, no benefits reducing allowance; full one-way km and actual days. Separate private use not included.",
+      "pass": true
+    },
+    {
+      "id": "R01.actual2000.A",
+      "actual": "1520.00",
+      "expected": "1520",
+      "premise": "Stipulated ordinary combustion car, no benefits reducing allowance; full one-way km and actual days. Separate private use not included.",
+      "pass": true
+    },
+    {
+      "id": "R01.actual2000.extra",
+      "actual": "480.00",
+      "expected": "480",
+      "premise": "Stipulated ordinary combustion car, no benefits reducing allowance; full one-way km and actual days. Separate private use not included.",
+      "pass": true
+    },
+    {
+      "id": "R01.six-month-nonpositive.D",
+      "actual": "1440.0000",
+      "expected": "1440",
+      "premise": "Stipulated ordinary combustion car, no benefits reducing allowance; full one-way km and actual days. Separate private use not included.",
+      "pass": true
+    },
+    {
+      "id": "R01.six-month-nonpositive.A",
+      "actual": "1520.00",
+      "expected": "1520",
+      "premise": "Stipulated ordinary combustion car, no benefits reducing allowance; full one-way km and actual days. Separate private use not included.",
+      "pass": true
+    },
+    {
+      "id": "R01.six-month-nonpositive.extra",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Stipulated ordinary combustion car, no benefits reducing allowance; full one-way km and actual days. Separate private use not included.",
+      "pass": true
+    },
+    {
+      "id": "R01.three-month.D",
+      "actual": "720.0000",
+      "expected": "720",
+      "premise": "Stipulated ordinary combustion car, no benefits reducing allowance; full one-way km and actual days. Separate private use not included.",
+      "pass": true
+    },
+    {
+      "id": "R01.three-month.A",
+      "actual": "380.00",
+      "expected": "380",
+      "premise": "Stipulated ordinary combustion car, no benefits reducing allowance; full one-way km and actual days. Separate private use not included.",
+      "pass": true
+    },
+    {
+      "id": "R01.three-month.extra",
+      "actual": "340.0000",
+      "expected": "340",
+      "premise": "Stipulated ordinary combustion car, no benefits reducing allowance; full one-way km and actual days. Separate private use not included.",
+      "pass": true
+    },
+    {
+      "id": "R02.short-no-overnight",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Qualifying business travel; no supplied meals/reimbursements; within three-month limit. Overnight flag means actual qualifying that/preceding/following-day overnight.",
+      "pass": true
+    },
+    {
+      "id": "R02.short-departure-overnight",
+      "actual": "14",
+      "expected": "14",
+      "premise": "Qualifying business travel; no supplied meals/reimbursements; within three-month limit. Overnight flag means actual qualifying that/preceding/following-day overnight.",
+      "pass": true
+    },
+    {
+      "id": "R02.exact8-no-overnight",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Qualifying business travel; no supplied meals/reimbursements; within three-month limit. Overnight flag means actual qualifying that/preceding/following-day overnight.",
+      "pass": true
+    },
+    {
+      "id": "R02.over8-no-overnight",
+      "actual": "14",
+      "expected": "14",
+      "premise": "Qualifying business travel; no supplied meals/reimbursements; within three-month limit. Overnight flag means actual qualifying that/preceding/following-day overnight.",
+      "pass": true
+    },
+    {
+      "id": "R02.full24",
+      "actual": "28",
+      "expected": "28",
+      "premise": "Qualifying business travel; no supplied meals/reimbursements; within three-month limit. Overnight flag means actual qualifying that/preceding/following-day overnight.",
+      "pass": true
+    },
+    {
+      "id": "R02.arrival-following-overnight",
+      "actual": "14",
+      "expected": "14",
+      "premise": "Qualifying business travel; no supplied meals/reimbursements; within three-month limit. Overnight flag means actual qualifying that/preceding/following-day overnight.",
+      "pass": true
+    },
+    {
+      "id": "R05.net-500000-15000-profit",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Otherwise qualifying separable own-origin side activity; denominator includes both activities; net receipts, not profit. Branch result does not alter gates.",
+      "pass": true
+    },
+    {
+      "id": "R05.net-500000-15000-loss",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Otherwise qualifying separable own-origin side activity; denominator includes both activities; net receipts, not profit. Branch result does not alter gates.",
+      "pass": true
+    },
+    {
+      "id": "R05.net-500000-15000.01-profit",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Otherwise qualifying separable own-origin side activity; denominator includes both activities; net receipts, not profit. Branch result does not alter gates.",
+      "pass": true
+    },
+    {
+      "id": "R05.net-500000-15000.01-loss",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Otherwise qualifying separable own-origin side activity; denominator includes both activities; net receipts, not profit. Branch result does not alter gates.",
+      "pass": true
+    },
+    {
+      "id": "R05.net-1000000-24500-profit",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Otherwise qualifying separable own-origin side activity; denominator includes both activities; net receipts, not profit. Branch result does not alter gates.",
+      "pass": true
+    },
+    {
+      "id": "R05.net-1000000-24500-loss",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Otherwise qualifying separable own-origin side activity; denominator includes both activities; net receipts, not profit. Branch result does not alter gates.",
+      "pass": true
+    },
+    {
+      "id": "R05.net-1000000-24500.01-profit",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Otherwise qualifying separable own-origin side activity; denominator includes both activities; net receipts, not profit. Branch result does not alter gates.",
+      "pass": true
+    },
+    {
+      "id": "R05.net-1000000-24500.01-loss",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Otherwise qualifying separable own-origin side activity; denominator includes both activities; net receipts, not profit. Branch result does not alter gates.",
+      "pass": true
+    },
+    {
+      "id": "R06.retained-tax-only",
+      "actual": "105000",
+      "expected": "105000",
+      "premise": "Stipulated profit100000/trade tax5000/no contributions; exclusion amount independently qualifies as own34a(1)tax+Soli; no full elective-regime computation claimed.",
+      "pass": true
+    },
+    {
+      "id": "R06.retained-partial",
+      "actual": "95000",
+      "expected": "95000",
+      "premise": "Stipulated profit100000/trade tax5000/no contributions; exclusion amount independently qualifies as own34a(1)tax+Soli; no full elective-regime computation claimed.",
+      "pass": true
+    },
+    {
+      "id": "R06.retained-priority20of25",
+      "actual": "100000",
+      "expected": "100000",
+      "premise": "Stipulated profit100000/trade tax5000/no contributions; exclusion amount independently qualifies as own34a(1)tax+Soli; no full elective-regime computation claimed.",
+      "pass": true
+    },
+    {
+      "id": "R06.outside-liability-0",
+      "actual": "8000",
+      "expected": "8000",
+      "premise": "10000 negative-capital increase; 8000 available statutory prior-loss cap; indicated qualifying outside liability exists/arises because of withdrawal and all1(2)/(3)conditions met. No later liability reduction assumed.",
+      "pass": true
+    },
+    {
+      "id": "R06.outside-liability-10000",
+      "actual": "0",
+      "expected": "0",
+      "premise": "10000 negative-capital increase; 8000 available statutory prior-loss cap; indicated qualifying outside liability exists/arises because of withdrawal and all1(2)/(3)conditions met. No later liability reduction assumed.",
+      "pass": true
+    },
+    {
+      "id": "R06.outside-liability-6000",
+      "actual": "4000",
+      "expected": "4000",
+      "premise": "10000 negative-capital increase; 8000 available statutory prior-loss cap; indicated qualifying outside liability exists/arises because of withdrawal and all1(2)/(3)conditions met. No later liability reduction assumed.",
+      "pass": true
+    },
+    {
+      "id": "R03.health-cap",
+      "actual": "5859.000000",
+      "expected": "5859",
+      "premise": "Stipulated fund additional2.9% and sick-pay deduction; explicit current BMG2026 contribution ceiling.",
+      "pass": true
+    },
+    {
+      "id": "R03.care-cap",
+      "actual": "1255.500",
+      "expected": "1255.50",
+      "premise": "Stipulated parental employee care rate1.8%, outside Saxony; same actual2026 ceiling.",
+      "pass": true
+    },
+    {
+      "id": "R04.non-table-mandatory-case",
+      "actual": "False",
+      "expected": "False",
+      "premise": "The listed common cases are false but own46(2)no7 mandatory case is true: voluntary conclusion is false.",
+      "pass": true
+    },
+    {
+      "id": "R04.no-statutory-mandatory-case",
+      "actual": "True",
+      "expected": "True",
+      "premise": "No statutory mandatory case applies: application assessment remains available.",
+      "pass": true
+    },
+    {
+      "id": "R07.EBITDA-generation-2000000",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Tax EBITDA10000000, no prior carries; stated current-year escape facts; generation barred for escape/nonpositive-net years.",
+      "pass": true
+    },
+    {
+      "id": "R07.interest-carry-2000000",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Same fixture; no other escape where indicated; no mixed-carry ordering inference.",
+      "pass": true
+    },
+    {
+      "id": "R07.EBITDA-generation-3000000",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Tax EBITDA10000000, no prior carries; stated current-year escape facts; generation barred for escape/nonpositive-net years.",
+      "pass": true
+    },
+    {
+      "id": "R07.interest-carry-3000000",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Same fixture; no other escape where indicated; no mixed-carry ordering inference.",
+      "pass": true
+    },
+    {
+      "id": "R07.EBITDA-generation-4000000",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Tax EBITDA10000000, no prior carries; stated current-year escape facts; generation barred for escape/nonpositive-net years.",
+      "pass": true
+    },
+    {
+      "id": "R07.interest-carry-4000000",
+      "actual": "1000000.00",
+      "expected": "1000000",
+      "premise": "Same fixture; no other escape where indicated; no mixed-carry ordering inference.",
+      "pass": true
+    },
+    {
+      "id": "R07.EBITDA-generation-0",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Tax EBITDA10000000, no prior carries; stated current-year escape facts; generation barred for escape/nonpositive-net years.",
+      "pass": true
+    },
+    {
+      "id": "R07.interest-carry-0",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Same fixture; no other escape where indicated; no mixed-carry ordering inference.",
+      "pass": true
+    },
+    {
+      "id": "R07.oldest-eligible-vintage",
+      "actual": "{2021: Decimal('200'), 2022: Decimal('300')}",
+      "expected": "{2021: Decimal('200'), 2022: Decimal('300')}",
+      "premise": "500 demand after current capacity in financial year2026;2020 expired,2021 then2022 capacity; no interest-carry allocation assumed.",
+      "pass": true
+    },
+    {
+      "id": "R08.same-payer-cap-9000-1000",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Same actual payer and recipient/calendar year; actual treaty eligibility/extent established separately, not presumed from a treaty existing.",
+      "pass": true
+    },
+    {
+      "id": "R08.same-payer-cap-9000-1000.01",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Same actual payer and recipient/calendar year; actual treaty eligibility/extent established separately, not presumed from a treaty existing.",
+      "pass": true
+    },
+    {
+      "id": "R08.same-payer-cap-10000-0.01",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Same actual payer and recipient/calendar year; actual treaty eligibility/extent established separately, not presumed from a treaty existing.",
+      "pass": true
+    },
+    {
+      "id": "R08.partial-treaty-residual",
+      "actual": "100.00",
+      "expected": "100",
+      "premise": "Pure stipulated counterexample: actual applicable treaty leaves10% German tax; qualifying annual cap, no exemption certificate needed for this50c2no2 scope.10% is a hypothetical input, not a treaty rate supplied by the Guide; zero is incorrect.",
+      "pass": true
+    },
+    {
+      "id": "R08.two-fifths-refund",
+      "actual": "100.00",
+      "expected": "100",
+      "premise": "Qualifying KStG2no1 corporate recipient;250 withholding paid; actual50d3 and50c3/5 claim/proof/procedure conditions independently satisfied. No automatic refund for every foreign entity.",
+      "pass": true
+    }
+  ],
+  "control_count": 53,
+  "own_source_checks": [
+    {
+      "id": "R01.business-car",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R01.allowance",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R02.meal-incorporation",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R02.meals",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R03.soli-children",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R03.employee-expense",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R03.special-JAEG",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R03.current223-boundary",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R04.crossborder-mandatory",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R03.BMG-health-2026",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R03.BMG-care-2026",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R03.amend223",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R03.commencement",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R05.statute",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R05.BFH-separability",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R05.BFH-thresholds",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R05.BMF-current",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R05.BFH-2022",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R06.retained",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R06.liability",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R07.interest",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R07.corporate-income",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R07.commercial",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R08.royalty-extent",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R08.refund-population",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R08.foreign-corporation",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R08.anti-abuse",
+      "exact_retained_identity_and_quote": true
+    },
+    {
+      "id": "R08.procedure",
+      "exact_retained_identity_and_quote": true
+    }
+  ],
+  "own_selected_source_anchor_count": 28,
+  "examples": {
+    "de-income-tax": {
+      "original_blocks": 2,
+      "failures": []
+    },
+    "de-self-employed-income-tax": {
+      "original_blocks": 2,
+      "failures": []
+    },
+    "de-einkommensteuer-freelancer": {
+      "original_blocks": 3,
+      "failures": []
+    },
+    "de-employee-income-tax": {
+      "original_blocks": 2,
+      "failures": []
+    },
+    "de-partners-and-part-year": {
+      "original_blocks": 2,
+      "failures": []
+    },
+    "de-trade-tax": {
+      "original_blocks": 2,
+      "failures": []
+    },
+    "de-corporate-tax": {
+      "original_blocks": 2,
+      "failures": []
+    }
+  },
+  "original_block_count": 15,
+  "canonical_scoped_schema": {
+    "files": 7,
+    "errors": [],
+    "warnings": [],
+    "stdout": "checked 7 guides (0 non-guide .md files skipped)\n"
+  },
+  "scoped_diff_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "all_original_current_rows_rebound": true,
+  "all_current_row_wording_native_exact": true,
+  "all_successor_current_Guide_ledger_hashes_match": true
+}

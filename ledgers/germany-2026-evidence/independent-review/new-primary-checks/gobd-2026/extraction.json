@@ -1,0 +1,6 @@
+{
+  "method": "stdlib HTMLParser; main element when present; discard script/style/nav; paragraph boundaries; collapse whitespace inside line",
+  "main_found": true,
+  "reader_sha256": "a9d917866136d75b8b46deebbc1e9db790301dbb2d0e56451cc399dd07f2a076",
+  "no_full_body_read_claim": true
+}

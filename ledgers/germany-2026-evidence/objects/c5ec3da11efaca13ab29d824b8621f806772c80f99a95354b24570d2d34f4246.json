@@ -1,0 +1,11 @@
+{
+  "id": "Ub097204de605cb80",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2022-07-26-konsultationsvereinbarung-betreffend-der-grenzgaengerregelung-artikel-15a-des-deutsch-schweizerischen-DBS.pdf?__blob=publicationFile&v=2",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ub097204de605cb80.body",
+  "raw_sha256": "6d94a6b40bc81ddcb0dcdd1ab1152ffb203ddf6db3659eee894f24c8bb1f1639",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ub097204de605cb80.reader.txt",
+  "reader_sha256": "4f8758b4217ead6d519edc57aef45e4c234a921bf395aa78818463f0d6b7b2fc",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

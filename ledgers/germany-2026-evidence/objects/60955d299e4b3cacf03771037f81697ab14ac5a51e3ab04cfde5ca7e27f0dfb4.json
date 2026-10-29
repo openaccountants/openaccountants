@@ -1,0 +1,11 @@
+{
+  "id": "Uf618f4ed3b204c7b",
+  "url": "https://www.gesetze-im-internet.de/sgb_6/__168.html",
+  "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb6-168-20261024.html",
+  "raw_sha256": "0046c1be59b1cf96269f6427ebd46c9736d4520bb629af9b69ffa28f5c14cf98",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uf618f4ed3b204c7b.reader.txt",
+  "reader_sha256": "0b72192bf40f9cde660ced74600ac9c6e2adbfad961fc52d596182d3fc604bb8",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "prior cached body",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

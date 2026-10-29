@@ -1,0 +1,69 @@
+{
+  "writer_only": true,
+  "controls": [
+    {
+      "id": "R09.positive-10000",
+      "taxable_income": "10000",
+      "intermediate": "1500.00",
+      "assessment": "1500",
+      "expected": "1500",
+      "pass": true,
+      "scope": "Stipulated ordinary positive assessed KSt; not a rule for all bases, surcharges or refunds."
+    },
+    {
+      "id": "R09.positive-10001",
+      "taxable_income": "10001",
+      "intermediate": "1500.15",
+      "assessment": "1500",
+      "expected": "1500",
+      "pass": true,
+      "scope": "Stipulated ordinary positive assessed KSt; not a rule for all bases, surcharges or refunds."
+    },
+    {
+      "id": "R09.positive-10006",
+      "taxable_income": "10006",
+      "intermediate": "1500.90",
+      "assessment": "1500",
+      "expected": "1500",
+      "pass": true,
+      "scope": "Stipulated ordinary positive assessed KSt; not a rule for all bases, surcharges or refunds."
+    },
+    {
+      "id": "R09.positive-10007",
+      "taxable_income": "10007",
+      "intermediate": "1501.05",
+      "assessment": "1501",
+      "expected": "1501",
+      "pass": true,
+      "scope": "Stipulated ordinary positive assessed KSt; not a rule for all bases, surcharges or refunds."
+    }
+  ],
+  "original_case_checks": {
+    "de-corporate-tax": {
+      "blocks": 2,
+      "failures": []
+    },
+    "de-trade-tax": {
+      "blocks": 2,
+      "failures": []
+    }
+  },
+  "original_case_count": 4,
+  "schema": {
+    "files": 2,
+    "errors": [],
+    "warnings": [],
+    "stdout": "checked 2 guides (0 non-guide .md files skipped)\n"
+  },
+  "scoped_diff_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "prior_seven_seal_member_rehashes": 87,
+  "mismatches": [],
+  "other_five_Guide_ledger_pairs_exact_prior_seal": true,
+  "both_full_inverses": true,
+  "all_current_row_native_wording_exact": true,
+  "remaining_form_Munich_reservations_exact": true
+}

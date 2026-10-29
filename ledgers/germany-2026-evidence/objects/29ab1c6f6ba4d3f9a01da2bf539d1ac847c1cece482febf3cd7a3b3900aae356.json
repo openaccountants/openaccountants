@@ -1,0 +1,12 @@
+{
+  "guide_sha256": "5a2eec995028a0fa55991eda2600a92904c6f7d11b9e8220a6e55d4a85942564",
+  "ledger_sha256": "903e61acde1a27b3106b7695838c1815fa528605ee6eb65d0fb4fca4b6f7a2a9",
+  "current_units": 346,
+  "source_anchors": 107,
+  "old_units": 512,
+  "controls": 33,
+  "unclassified": [],
+  "pending_old": [],
+  "all_quotes_native_exact": true,
+  "guide_unchanged": true
+}

@@ -1,0 +1,222 @@
+{
+  "count": 36,
+  "controls": [
+    {
+      "name": "case1 domesticVAT",
+      "actual": "3800",
+      "expected": "3800",
+      "pass": true
+    },
+    {
+      "name": "case1 nonEUrc",
+      "actual": "38",
+      "expected": "38",
+      "pass": true
+    },
+    {
+      "name": "case1 EUrc",
+      "actual": "190",
+      "expected": "190",
+      "pass": true
+    },
+    {
+      "name": "case1 output",
+      "actual": "4028",
+      "expected": "4028",
+      "pass": true
+    },
+    {
+      "name": "case1 RCinput",
+      "actual": "228",
+      "expected": "228",
+      "pass": true
+    },
+    {
+      "name": "case1 totalinput",
+      "actual": "1368",
+      "expected": "1368",
+      "pass": true
+    },
+    {
+      "name": "case1 net",
+      "actual": "2660",
+      "expected": "2660",
+      "pass": true
+    },
+    {
+      "name": "case1 overdue50",
+      "actual": "2650",
+      "expected": "2650",
+      "pass": true
+    },
+    {
+      "name": "case1 penalty",
+      "actual": "53/2",
+      "expected": "53/2",
+      "pass": true
+    },
+    {
+      "name": "case2 specialbase",
+      "actual": "66000",
+      "expected": "66000",
+      "pass": true
+    },
+    {
+      "name": "case2 special",
+      "actual": "6000",
+      "expected": "6000",
+      "pass": true
+    },
+    {
+      "name": "case2 drinkgross",
+      "actual": "38199",
+      "expected": "38199",
+      "pass": true
+    },
+    {
+      "name": "case2 foodgross",
+      "actual": "89131",
+      "expected": "89131",
+      "pass": true
+    },
+    {
+      "name": "case2 drinknet",
+      "actual": "32100",
+      "expected": "32100",
+      "pass": true
+    },
+    {
+      "name": "case2 foodnet",
+      "actual": "83300",
+      "expected": "83300",
+      "pass": true
+    },
+    {
+      "name": "case2 drinkVAT",
+      "actual": "6099",
+      "expected": "6099",
+      "pass": true
+    },
+    {
+      "name": "case2 foodVAT",
+      "actual": "5831",
+      "expected": "5831",
+      "pass": true
+    },
+    {
+      "name": "case2 output",
+      "actual": "11930",
+      "expected": "11930",
+      "pass": true
+    },
+    {
+      "name": "case2 line48",
+      "actual": "7730",
+      "expected": "7730",
+      "pass": true
+    },
+    {
+      "name": "case2 line83",
+      "actual": "1730",
+      "expected": "1730",
+      "pass": true
+    },
+    {
+      "name": "case2 all19",
+      "actual": "20330",
+      "expected": "20330",
+      "pass": true
+    },
+    {
+      "name": "Apr10Friday",
+      "actual": "4",
+      "expected": "4",
+      "pass": true
+    },
+    {
+      "name": "Apr14fourcalendardayslate",
+      "actual": "4",
+      "expected": "4",
+      "pass": true
+    },
+    {
+      "name": "graceendApr13Monday",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "2027Feb10Wednesday",
+      "actual": "2",
+      "expected": "2",
+      "pass": true
+    },
+    {
+      "name": "ZM50000inclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "ZM50000.01fails",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "smallinvoice250inclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "vehiclebusiness9.99fails",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "vehiclebusiness10passesminimum",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "gift50inside",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "gift50.01outside",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "Solarratepresumption30inclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "annual200000inclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "annual15000inclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "R28eligiblecustodyVAT100net",
+      "actual": "19",
+      "expected": "19",
+      "pass": true
+    }
+  ],
+  "scope": "Both original whole executable fixtures recomputed exactly, dates/thresholds and current source classification separators. Whole-euro-base rounding, calendar-vs-financial-year gift and other actual reservations not invented."
+}

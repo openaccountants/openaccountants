@@ -1,0 +1,410 @@
+Urteil 
+vom 27. August 2014, VIII R 6/12
+Bagatellgrenze für die Nichtanwendung der Abfärberegelung in § 15 Abs. 3 Nr. 1 EStG - Leitende und
+eigenverantwortliche Berufsausübung i.S. des § 18 Abs. 1 Nr. 1 Satz 3 EStG
+BFH VIII. Senat
+EStG § 18 Abs 1 Nr 1, 
+EStG § 15 Abs 3 Nr 1, 
+GewStG § 11 Abs 1 S 3 Nr 1, 
+GewStG § 2 Abs 1, 
+EStG § 18 Abs 1 Nr 3
+vorgehend Finanzgericht Mecklenburg-Vorpommern , 14. Dezember 2011, Az: 2 K 412/08
+Leitsätze
+1. Eine Rechtsanwalts-GbR ist gewerblich tätig, soweit sie einem angestellten Rechtsanwalt die eigenverantwortliche
+Durchführung von Insolvenzverfahren überträgt 
+.
+2. Ihre Einkünfte werden dadurch nicht insgesamt nach § 15 Abs. 3 Nr. 1 EStG zu solchen aus Gewerbebetrieb
+umqualifiziert, wenn die Nettoumsatzerlöse aus dieser auf den Angestellten übertragenen Tätigkeit 3 v.H. der
+Gesamtnettoumsatzerlöse der Gesellschaft und den Betrag von 24.500 € im Veranlagungszeitraum nicht übersteigen 
+.
+Tatbestand
+I.
+Die Klägerin und Revisionsbeklagte (Klägerin) ist eine aus sieben Rechtsanwälten/-innen bestehende GbR, die auch
+auf dem Gebiet der Insolvenzverwaltung tätig ist. Einer der Gesellschafter, Rechtsanwalt X (X) wurde in den
+Streitjahren 2003 und 2004 regelmäßig zum (vorläufigen) Insolvenzverwalter (31 und 20 Bestellungen) oder
+Treuhänder in Verbraucherinsolvenzverfahren (19 und 21 Bestellungen) bestellt.
+1
+In diesen Jahren beschäftigte die Klägerin drei angestellte Rechtsanwälte, u.a. Rechtsanwalt Y (Y), sowie sieben
+weitere angestellte Mitarbeiter (Rechtsanwaltsfachangestellte und Bürokräfte). Zudem beauftragte sie in geringem
+Umfang einen Unternehmensberater und eine Bilanzbuchhalterin als Subunternehmer.
+2
+Rechtsanwalt Y wurde in den Jahren 2003 und 2004 jeweils 25 bzw. 38 Mal selbst zum Treuhänder oder
+(vorläufigen) Insolvenzverwalter bestellt. Darüber hinaus nahm er Prozesstermine in Mandatsangelegenheiten wahr.
+3
+Die beiden anderen angestellten Rechtsanwälte bereiteten Klagen für den Forderungseinzug vor und nahmen
+Gerichtstermine wahr. Sie wurden nicht zum Insolvenzverwalter oder Treuhänder bestellt. Die aus der Tätigkeit des
+Rechtsanwalts Y als Insolvenzverwalter und Treuhänder in den Streitjahren erzielten Einnahmen der Klägerin
+beliefen sich auf 15.358,52 € im Jahr 2003 und 21.065,42 € im Jahr 2004.
+4
+Die Klägerin ermittelte ihren Gewinn durch Einnahmenüberschussrechnung nach § 4 Abs. 3 des
+Einkommensteuergesetzes (EStG) und behandelte ihre Einkünfte als solche aus selbständiger Arbeit i.S. von § 18
+EStG.
+5
+Nach Durchführung einer Außenprüfung gelangte der Beklagte und Revisionskläger (das Finanzamt ‑‑FA‑‑) zu der
+Auffassung, die Klägerin habe nach § 15 Abs. 3 Nr. 1 EStG gewerbliche Einkünfte erzielt, da sie nach den Kriterien
+der Vervielfältigungstheorie im Bereich der Insolvenzverwaltung nicht die Voraussetzungen des § 18 Abs. 1 Nr. 3
+EStG erfülle.
+6
+Das FA erließ am 19. März 2008 nach § 164 Abs. 2 der Abgabenordnung geänderte Bescheide über die gesonderte
+und einheitliche Feststellung der Besteuerungsgrundlagen und stellte einen ‑‑der Höhe nach unstreitigen‑‑ Gewinn
+aus Gewerbebetrieb in Höhe von 528.358 € (2003) und 410.537 € (2004) fest. Die Nettoumsätze betrugen 847.721 €
+in 2003 und 787.211 € in 2004. Zudem erließ es am selben Tag erstmalig Gewerbesteuermessbetragsbescheide.
+7
+Seite 1 von 7
+
+Entscheidungsgründe
+II.
+Die nach erfolglosem Einspruch gegen die geänderten Feststellungs- und erstmaligen
+Gewerbesteuermessbetragsbescheide erhobene Klage hatte Erfolg. Das Finanzgericht (FG) hat der Klage mit Urteil
+vom 15. Dezember 2011  2 K 412/08 stattgegeben und die Gewerbesteuermessbetragsbescheide aufgehoben, sowie
+die Einkünfte der Klägerin in voller Höhe als Einkünfte aus selbständiger Arbeit festgestellt.
+8
+Mit seiner Revision rügt das FA die Verletzung materiellen Rechts und macht geltend, das FG habe zu Unrecht die
+Regelung des § 15 Abs. 3 Nr. 1 EStG nicht angewandt.
+9
+Nach § 15 Abs. 3 Nr. 1 EStG führe jede gewerbliche Tätigkeit zur steuerlichen Umqualifizierung der übrigen
+Einkünfte.
+10
+Lediglich bei einem "äußerst geringen Anteil" gewerblicher Einkünfte ‑‑in jenem Fall 1,25 v.H. der Gesamtumsätze‑‑
+habe der Bundesfinanzhof (BFH) wegen des Grundsatzes der Verhältnismäßigkeit die Abfärbewirkung verneint
+(BFH-Urteil vom 11. August 1999 XI R 12/98, BFHE 189, 419, BStBl II 2000, 229). Weder der BFH noch der
+Gesetzgeber hätten bislang den Verhältnismäßigkeitsgrundsatz durch eine allgemeine quantitative
+Unschädlichkeitsgrenze weiter konkretisiert. Allerdings habe der BFH im Urteil vom 15. Dezember 2010 VIII R 50/09
+(BFHE 232, 162, BStBl II 2011, 506) ausgeführt, dass er an der Grenze von 1,25 v.H. festhalte. Der BFH-Beschluss
+vom 8. März 2004 IV B 212/03 (BFH/NV 2004, 954), mit dem der BFH eine Umsatzgrenze in Höhe von 2,81 v.H. als
+unschädlich angesehen habe, sei lediglich bei summarischer Prüfung im Verfahren des einstweiligen
+Rechtsschutzes ergangen. Der Freibetrag nach § 11 Abs. 1 Satz 3 Nr. 1 des Gewerbesteuergesetzes (GewStG) in Höhe
+von 24.500 € sei kein taugliches Abgrenzungskriterium.
+11
+Das FA beantragt, das Urteil des FG Mecklenburg-Vorpommern vom 15. Dezember 2011  2 K 412/08 hinsichtlich der
+Bescheide über die gesonderte und einheitliche Feststellung von Besteuerungsgrundlagen für die Jahre 2003 und
+2004 sowie der Bescheide über den Gewerbesteuermessbetrag für die Jahre 2003 und 2004 aufzuheben und die
+Klage abzuweisen.
+12
+Die Klägerin beantragt, die Revision als unbegründet zurückzuweisen.
+13
+Die Revision des FA ist unbegründet und daher zurückzuweisen (§ 126 Abs. 2 der Finanzgerichtsordnung ‑‑FGO‑‑).
+14
+Das FG hat zu Recht die Anwendung des § 15 Abs. 3 Nr. 1 EStG aus Gründen der Verhältnismäßigkeit verneint, so
+dass die Einkünfte der Klägerin aus selbständiger Arbeit nicht zu gewerblichen Einkünften umzuqualifizieren sind.
+15
+1. Die Gesellschafter der Klägerin üben in ihrer gesamthänderischen Verbundenheit sowohl eine freiberufliche
+‑‑anwaltliche‑‑ Tätigkeit i.S. von § 18 Abs. 1 Nr. 1 EStG als auch durch die Insolvenzverwaltertätigkeit des
+Gesellschafters X eine sonstige vermögensverwaltende Tätigkeit i.S. von § 18 Abs. 1 Nr. 3 EStG aus.
+16
+a) Nach ständiger Rechtsprechung des BFH entfaltet eine Personengesellschaft nur dann eine Tätigkeit, die die
+Ausübung eines freien Berufs i.S. von § 18 EStG darstellt, wenn sämtliche Gesellschafter die Merkmale eines freien
+Berufs erfüllen, denn die tatbestandlichen Voraussetzungen der Freiberuflichkeit können nicht von der
+Personengesellschaft selbst, sondern nur von natürlichen Personen erfüllt werden. Das Handeln der Gesellschafter
+in ihrer gesamthänderischen Verbundenheit und damit das Handeln der Gesellschaft darf kein Element einer nicht
+freiberuflichen Tätigkeit enthalten.
+17
+aa) Es ist unschädlich, wenn die Personengesellschaft durch ihre Gesellschafter neben ihrer freiberuflichen
+Tätigkeit auch eine sonstige selbständige Arbeit i.S. von § 18 Abs. 1 Nr. 3 EStG ausübt (sog. interprofessionelle
+Mitunternehmerschaft), solange die Gesellschafter auch hinsichtlich dieser Tätigkeit die oben dargestellten
+Anforderungen erfüllen (vgl. BFH-Urteile vom 26. Januar 2011 VIII R 3/10, BFHE 232, 453, BStBl II 2011, 498; vom
+15. Juni 2010 VIII R 10/09, BFHE 230, 47, BStBl II 2010, 906; vom 28. Oktober 2008 VIII R 69/06, BFHE 223, 206,
+BStBl II 2009, 642).
+18
+bb) Bedienen sich die Gesellschafter bei der Ausübung ihrer freiberuflichen oder sonstigen selbständigen Arbeit der
+Mithilfe fachlich vorgebildeter Arbeitskräfte, dann müssen die Gesellschafter dennoch auf Grund eigener
+Fachkenntnisse leitend und eigenverantwortlich tätig sein (§ 18 Abs. 1 Nr. 1 Satz 3 EStG).
+19
+Seite 2 von 7
+
+Dies setzt allerdings nicht voraus, dass jeder Gesellschafter in allen Unternehmensbereichen leitend tätig ist und an
+jedem Auftrag mitarbeitet. "Teamarbeit" oder Mitarbeit ist grundsätzlich ausreichend, aber auch in dem Sinne
+erforderlich, dass sich jeder Gesellschafter kraft seiner persönlichen Berufsqualifikation an der "Teamarbeit"
+beteiligt. Die Gesellschafter müssen an der Bearbeitung der erteilten Aufträge zumindest in der Weise mitwirken,
+dass die Berufsträger die mit einem übernommenen Auftrag verbundenen Aufgaben untereinander aufteilen und
+jeder den ihm zugewiesenen Aufgabenbereich aufgrund seiner Sachkenntnis eigenverantwortlich leitet (vgl. BFH-
+Urteile vom 10. Oktober 2012 VIII R 42/10, BFHE 238, 444, BStBl II 2013, 79; in BFHE 232, 162, BStBl II 2011, 506;
+in BFHE 223, 206, BStBl II 2009, 642, jeweils m.w.N.; Brandt in Herrmann/Heuer/Raupach ‑‑HHR‑‑, § 18 EStG
+Rz 442).
+20
+cc) Erbringen die Gesellschafter einer Personengesellschaft ihre Leistungen teilweise freiberuflich und teilweise
+‑‑mangels Eigenverantwortlichkeit‑‑ gewerblich, so ist ihre Tätigkeit nach § 15 Abs. 3 Nr. 1 EStG insgesamt als
+gewerblich zu qualifizieren (BFH-Urteil vom 4. Juli 2007 VIII R 77/05, BFH/NV 2008, 53).
+21
+b) Nach diesen Grundsätzen ist das FG zutreffend davon ausgegangen, dass die Klägerin, deren sieben
+Mitunternehmer-Gesellschafter alle die Zulassung zum Rechtsanwalt besaßen und auch als solche tätig waren,
+insoweit eine freiberufliche Tätigkeit i.S. von § 18 Abs. 1 Nr. 1 EStG ausgeübt hat.
+22
+c) Soweit der Mitunternehmer-Gesellschafter X darüber hinaus als (vorläufiger) Insolvenzverwalter und Treuhänder
+tätig war, erzielte die Klägerin Einkünfte aus sonstiger selbständiger Arbeit i.S. von § 18 Abs. 1 Nr. 3 EStG.
+23
+aa) Die Tätigkeit eines Insolvenz-, Zwangs- und Vergleichsverwalters ist ‑‑auch wenn sie durch Rechtsanwälte
+ausgeübt wird‑‑ nach der Rechtsprechung des BFH eine vermögensverwaltende Tätigkeit i.S. des § 18 Abs. 1 Nr. 3
+EStG (BFH-Urteil in BFHE 232, 162, BStBl II 2011, 506, m.w.N.).
+24
+bb) Dies gilt auch für die Tätigkeit als vorläufiger Insolvenzverwalter und als Treuhänder im
+Verbraucherinsolvenzverfahren. Die Befugnisse eines Treuhänders und im Regelfall auch die eines vorläufigen
+Insolvenzverwalters sind zwar nicht so weitreichend wie diejenigen des (endgültigen) Insolvenzverwalters. Beide
+Aufgaben stellen jedoch ‑‑ebenso wie die Tätigkeit eines Insolvenzverwalters‑‑ keine für den Katalogberuf des
+Rechtsanwalts i.S. des § 18 Abs. 1 Nr. 1 EStG berufstypische Tätigkeit dar. Denn ebenso wie zum Insolvenzverwalter
+kann auch zum vorläufigen Insolvenzverwalter und zum Treuhänder nach § 21 Abs. 2 Satz 1 Nr. 1 der
+Insolvenzordnung (InsO) bzw. § 313 InsO a.F. jeweils i.V.m. § 56 InsO eine für den jeweiligen Einzelfall geeignete,
+insbesondere geschäftskundige und von den Gläubigern und dem Schuldner unabhängige natürliche Person bestellt
+werden, die aus dem Kreis aller zur Übernahme von Insolvenzverwaltungen bereiten Personen auszuwählen ist.
+25
+2. Das FG ist weiterhin zutreffend davon ausgegangen, dass die Klägerin auch Einkünfte aus Gewerbebetrieb erzielt
+hat. Die Vergütungen aus den von dem angestellten Rechtsanwalt Y als Insolvenzverwalter und Treuhänder
+geführten Verfahren entfielen nicht auf eine leitende und eigenverantwortliche Tätigkeit der Mitunternehmer der
+Klägerin.
+26
+a) Die nach Aufgabe der sog. Vervielfältigungstheorie auch für den Bereich der Einkünfte aus sonstiger
+selbständiger Arbeit i.S. von § 18 Abs. 1 Nr. 3 EStG zulässige Mitarbeit fachlich Vorgebildeter setzt voraus, dass der
+Berufsträger trotz solcher Mitarbeiter auch in diesem Bereich seinen Beruf leitend und eigenverantwortlich i.S. des
+§ 18 Abs. 1 Nr. 1 Satz 3 EStG ausübt (vgl. hierzu grundlegend BFH-Urteile in BFHE 232, 162, BStBl II 2011, 506, und
+in BFHE 232, 453, BStBl II 2011, 498).
+27
+Diesem Erfordernis entspricht eine Berufsausübung nur, wenn sie über die Festlegung der Grundzüge der
+Organisation und der dienstlichen Aufsicht hinaus durch Planung, Überwachung und Kompetenz zur Entscheidung
+in Zweifelsfällen gekennzeichnet ist und die Teilnahme des Berufsträgers an der praktischen Arbeit in
+ausreichendem Maße gewährleistet. Nur unter diesen Voraussetzungen trägt die Arbeitsleistung ‑‑selbst wenn der
+Berufsträger ausnahmsweise in einzelnen Routinefällen nicht mitarbeitet‑‑ den erforderlichen "Stempel der
+Persönlichkeit" des Steuerpflichtigen.
+28
+Ob diese Voraussetzungen vorliegen, ist eine Frage der Tatsachenfeststellung und -würdigung, die den
+Finanzgerichten als Tatsacheninstanz obliegt. Diese Würdigung ist jeweils nach den tatsächlichen Verhältnissen des
+Einzelfalls und den Besonderheiten des jeweiligen Berufs vorzunehmen.
+29
+aa) Die Maßstäbe für die Würdigung der vom FA und FG festzustellenden Tatsachen zur Mitarbeiterbeteiligung
+werden bei Ausübung der Insolvenzverwaltertätigkeit im Wesentlichen dadurch bestimmt, was nach den
+30
+Seite 3 von 7
+
+Regelungen der Insolvenzordnung zu den höchstpersönlich auszuführenden Aufgaben eines Insolvenzverwalters
+gehört (Einzelheiten im BFH-Urteil in BFHE 232, 162, BStBl II 2011, 506, m.w.N.). Entscheidend ist, ob Organisation
+und Abwicklung des Insolvenzverfahrens insgesamt den "Stempel der Persönlichkeit" desjenigen tragen, dem nach
+§ 56 InsO das Amt des Insolvenzverwalters vom Insolvenzgericht übertragen worden ist. Dies erfordert, dass die
+Entscheidungen über das "Ob" bestimmter Einzelakte und zentrale Aufgaben im Rahmen des Insolvenzverfahrens
+durch den Insolvenzverwalter persönlich zu treffen sind.
+Hat er Entscheidungen dieser Art (höchstpersönlich) getroffen, bleibt seine Tätigkeit auch dann eine solche i.S. des
+§ 18 Abs. 1 Nr. 3 EStG, wenn er das "Wie", nämlich die kaufmännisch-technische Umsetzung dieser Entscheidungen
+auf Dritte überträgt.
+31
+bb) Diese für die Beschäftigung von Arbeitskräften durch einen Insolvenzverwalter geltenden Maßstäbe (vgl. BFH-
+Urteil in BFHE 232, 162, BStBl II 2011, 506, m.w.N.) sind für die Beurteilung der Tätigkeit eines vorläufigen
+Insolvenzverwalters oder eines Treuhänders im Verbraucherinsolvenzverfahren entsprechend heranzuziehen.
+32
+b) Ausgehend von diesen Grundsätzen ist das FG aufgrund der von ihm getroffenen Feststellungen zu dem Ergebnis
+gelangt, der Gesellschafter Rechtsanwalt Y sei insoweit leitend und eigenverantwortlich tätig gewesen, wie er selbst
+vom jeweiligen Insolvenzgericht zum (vorläufigen) Insolvenzverwalter oder Treuhänder bestellt worden sei, da er
+den ihm obliegenden Kernaufgaben höchstpersönlich nachgekommen sei, die Entscheidungen über das "Ob"
+bestimmter Einzelakte im Rahmen des Insolvenzverfahrens selbst getroffen habe und die ihm als (vorläufigem)
+Insolvenzverwalter und Treuhänder lt. Insolvenzordnung obliegenden zentralen Aufgaben ‑‑Berichtspflicht
+gegenüber den Insolvenzgerichten, der Gläubigerversammlung und dem Gläubigerausschuss, seine Pflicht zur
+Erstellung eines Insolvenzplanes und zur Schlussrechnungslegung‑‑ persönlich erfüllt habe. Der Senat ist an diese
+‑‑von den Beteiligten nicht mit Rügen angegriffene‑‑ Sachverhaltswürdigung gebunden (§ 118 Abs. 2 FGO).
+33
+c) Auf Grundlage des von ihm festgestellten Sachverhaltes ist das FG jedoch ferner zu dem Ergebnis gelangt, dass
+die Gesellschafter der Klägerin im Rahmen der Insolvenzverwaltung insoweit nicht eigenverantwortlich tätig
+geworden sind, als sie sich des Rechtsanwalts Y als qualifiziertem Mitarbeiter bedient haben, der selbst als
+(vorläufiger) Insolvenzverwalter und Treuhänder bestellt worden war.
+34
+aa) Das FG hat die im Klageverfahren noch streitige Frage, ob Rechtsanwalt Y ebenfalls als Mitunternehmer der
+Klägerin anzusehen ist, auf Grundlage der von ihm getroffenen und von den Beteiligten nicht mit Rügen
+angegriffenen tatsächlichen Feststellungen (§ 118 Abs. 2 FGO) verneint: E habe keine Mitunternehmerinitiative
+entfalten können. Er habe auch kein Mitunternehmerrisiko getragen, weil er ein Festgehalt und eine
+Umsatzbeteiligung bezogen und die Klägerin für ihn Lohnsteuer- und Sozialversicherungsbeiträge abgeführt habe
+(vgl. BFH-Urteile in BFHE 238, 444, BStBl II 2013, 79; vom 29. April 1992 XI R 58/89, BFH/NV 1992, 803). Dies ist
+revisionsrechtlich nicht zu beanstanden.
+35
+bb) Weiterhin hat das FG den festgestellten Sachverhalt zutreffend dahingehend gewürdigt, dass, soweit Y vom
+Insolvenzgericht selbst zum (vorläufigen) Insolvenzverwalter und Treuhänder bestellt worden ist, unter
+Berücksichtigung der unter II.2.a dargestellten Rechtsprechung des Senats zur eigenverantwortlichen Tätigkeit
+eines Insolvenzverwalters nicht mehr von einer eigenverantwortlichen Tätigkeit der Gesellschafter der Klägerin
+ausgegangen werden könne. Auch dies ist revisionsrechtlich nicht zu beanstanden.
+36
+(1) Nach den vom FG unter Rz 11 des Urteils vom 15. Dezember 2011  2 K 412/08 getroffenen Feststellungen, an
+die der Senat gebunden ist (§ 118 Abs. 2 FGO), hat die Klägerin selbst vorgetragen, der Gesellschafter X übe die
+Insolvenzverwaltertätigkeit eigenverantwortlich und selbständig aus. Gleiches gelte für Rechtsanwalt Y. Beide
+Verwalter veranlassten und überwachten nach Eingang der Insolvenzakte die von ihnen jeweils angeordneten
+Maßnahmen, führten den Schriftverkehr mit dem Schuldner, fertigten die Berichte, nähmen die Gerichtstermine
+wahr und verwerteten die Vermögensgegenstände.
+37
+Die Würdigung des FG, dass Rechtsanwalt Y, der seine Tätigkeit in gleicher Weise wie der Gesellschafter
+Rechtsanwalt X ausübe, damit ‑‑genau wie Rechtsanwalt X‑‑ leitend und eigenverantwortlich tätig geworden sei, so
+dass im Umkehrschluss insoweit nicht mehr von einer leitenden und eigenverantwortlichen Tätigkeit der
+Gesellschafter der Klägerin ausgegangen werden könne, verstößt weder gegen Denkgesetze noch Erfahrungssätze
+und ist revisionsrechtlich nicht zu beanstanden.
+38
+(2) Die Klägerin trägt nunmehr vor, dass für Rechtsanwalt Y bei seiner Tätigkeit als Insolvenzverwalter und
+Treuhänder die gleichen internen Arbeitsabläufe und Kontrollen wie bei einer Zuarbeit für Rechtsanwalt X gegolten
+39
+Seite 4 von 7
+
+hätten. Dies kann als neuer Tatsachenvortrag in der Revisionsinstanz nicht mehr berücksichtigt werden.
+(3) Das aus jedem Arbeitsvertrag folgende Weisungsrecht des Arbeitgebers und die damit verbundene Eingliederung
+in dessen betriebliche Strukturen führen für sich allein nicht dazu, dass von einer leitenden und
+eigenverantwortlichen Tätigkeit i.S. des § 18 Abs. 1 Nr. 1 Satz 3 EStG des jeweiligen Berufsträgers in Bezug auf die
+von dem Arbeitnehmer verrichteten Tätigkeiten ausgegangen werden kann. Andernfalls liefe dieses Merkmal
+weitestgehend leer.
+40
+3. Die Einkünfte der Klägerin werden im Streitfall jedoch nicht nach § 15 Abs. 3 Nr. 1 EStG zu solchen aus
+Gewerbebetrieb umqualifiziert.
+41
+Denn obwohl es sich bei den von Y als Insolvenzverwalter und Treuhänder erzielten Umsätzen der Klägerin
+mangels leitender und eigenverantwortlicher Tätigkeit der Gesellschafter um eine gewerbliche Tätigkeit i.S. des
+§ 15 Abs. 2 Satz 1 EStG handelt (s. hierzu unter II.3. b), ist diese von so untergeordneter Bedeutung, dass die
+Umqualifizierung der Einkünfte der Klägerin in gewerbliche Einkünfte zu einem unverhältnismäßigen Ergebnis
+führen würde (s. hierzu unter II.3.c). Ob die Klägerin insoweit mangels Kostendeckung ohne
+Gewinnerzielungsabsicht gehandelt hat, kann daher im Streitfall dahinstehen.
+42
+a) Im Unterschied zur sog. gemischten Tätigkeit eines Einzelunternehmers, bei dem gleichzeitig verrichtete
+gewerbliche und freiberufliche Betätigungen selbst bei sachlichen und wirtschaftlichen Berührungspunkten in der
+Regel getrennt zu beurteilen sind, fingiert die Regelung des § 15 Abs. 3 Nr. 1 EStG für gemischt tätige
+Personengesellschaften sämtliche Einkünfte als solche aus Gewerbebetrieb, wenn die Personengesellschaft neben
+nicht gewerblichen Tätigkeiten gleichzeitig eine gewerbliche Tätigkeit ausübt. Unerheblich ist dabei nach dem
+Wortlaut der Norm, ob der gewerblichen Tätigkeit im Rahmen des gesamten Unternehmens nur geringfügige
+wirtschaftliche Bedeutung zukommt (BFH-Urteile vom 10. August 1994 I R 133/93, BFHE 175, 357, BStBl II 1995,
+171; vom 19. Februar 1998 IV R 11/97, BFHE 186, 37, BStBl II 1998, 603).
+43
+Das Bundesverfassungsgericht (BVerfG) hat die Verfassungsmäßigkeit der Abfärberegelung in § 15 Abs. 3 Nr. 1 EStG
+gerade im Hinblick auf diese Ungleichbehandlung zwischen Einzelunternehmen und Personengesellschaften und
+die erheblichen steuerrechtlichen Folgen ‑‑die grundsätzlich unabhängig von der Höhe der gewerblichen Einkünfte
+und des Verhältnisses zum Gesamtgewinn eintreten‑‑ grundsätzlich bestätigt (BVerfG-Beschluss vom 15. Januar
+2008  1 BvL 2/04, BVerfGE 120, 1, BFH/NV 2008, Beilage 3, 247, unter C.II.). Die mit der Typisierung des § 15 Abs. 3
+Nr. 1 EStG verbundenen Nachteile stehen danach in einem vertretbaren Verhältnis zu den mit der Regelung
+verfolgten Zielen, die Ermittlung der Einkünfte auch gewerblich tätiger Personengesellschaften durch Fiktion nur
+einer Einkunftsart zu vereinfachen und das Gewerbesteueraufkommen zu schützen.
+44
+Dabei ist das BVerfG allerdings davon ausgegangen, dass die gewerbesteuerliche Belastung auf ein zumutbares
+Maß gemildert wird durch die Möglichkeit, mit Hilfe gesellschaftsrechtlicher Gestaltungen der Abfärberegelung
+auszuweichen (sog. Ausgliederungsmodell - vgl. hierzu BFH-Urteile vom 12. Juni 2002 XI R 21/99, BFH/NV 2002,
+1554; vom 19. Februar 1998 IV R 11/97, BFHE 186, 37, BStBl II 1998, 603, jeweils m.w.N.), durch die Anrechnung
+der Gewerbesteuer auf die Einkommensteuer nach § 35 EStG und schließlich durch die restriktive Rechtsprechung
+des BFH zu § 15 Abs. 3 Nr. 1 EStG, u.a. durch den Ausschluss einer die Einkunftsart insgesamt fingierenden Wirkung
+einer originär gewerblichen Tätigkeit von äußerst geringem Ausmaß (BFH-Urteile in BFHE 189, 419, BStBl II 2000,
+229; vom 30. August 2001 IV R 43/00, BFHE 196, 511, BStBl II 2002, 152; vom 29. November 2001 IV R 91/99,
+BFHE 197, 400, BStBl II 2002, 221).
+45
+b) Voraussetzung für die Anwendung von § 15 Abs. 3 Nr. 1 EStG ist zunächst, dass die Gesellschaft sowohl
+gewerbliche als auch von diesen zu trennende nicht gewerbliche Einkünfte erzielt, d.h. dass die unterschiedlichen
+Tätigkeiten nicht derart miteinander verflochten sind, dass sie sich gegenseitig unlösbar bedingen. Ist die Tätigkeit
+der Gesellschaft hingegen wegen untrennbarer Verflechtung der Tätigkeiten einheitlich als originär gewerblich zu
+qualifizieren, ergibt sich die Gewerbesteuerpflicht unmittelbar aus § 2 Abs. 1 Satz 2 GewStG, § 15 Abs. 1 Nr. 1 EStG.
+Liegt hingegen eine einheitliche freiberufliche Tätigkeit vor, entfällt die Anwendung von § 15 Abs. 3 Nr. 1 EStG
+(Schmidt/Wacker, EStG, 33. Aufl., § 15 Rz 186, m.w.N.).
+46
+Ausgehend von diesen Grundsätzen führt der Bereich, in dem die Gesellschafter der Klägerin nicht mehr leitend und
+eigenverantwortlich tätig sind, zu gewerblichen Einkünften i.S. von § 15 Abs. 2 Satz 1 EStG, die getrennt von der
+selbständigen Tätigkeit der Klägerin zu betrachten sind.
+47
+Eine Trennung der beiden Tätigkeiten ist im Streitfall möglich, da die Mitunternehmer der Klägerin nur im Hinblick
+48
+Seite 5 von 7
+
+auf die von Y ausgeübte Tätigkeit als Insolvenzverwalter und Treuhänder nicht leitend und eigenverantwortlich
+tätig gewesen sind und die darauf entfallenden Umsätze auch von den Umsätzen aus selbständiger Arbeit getrennt
+ermittelt werden konnten (vgl. zur Trennbarkeit bei einem Einzelunternehmen BFH-Urteil vom 8. Oktober 2008
+VIII R 53/07, BFHE 223, 272, BStBl II 2009, 143).
+Hinsichtlich der übrigen Tätigkeiten erfüllen alle Gesellschafter in ihrer gesamthänderischen Verbundenheit, sowohl
+ihrer persönlichen Qualifikation nach als auch mit der von ihnen und den anderen Arbeitnehmern ausgeübten
+Tätigkeit, die Voraussetzungen des § 18 Abs. 1 Nr. 1 und Nr. 3 EStG.
+49
+Insoweit unterscheidet sich der vorliegende Fall von der Beteiligung eines berufsfremden Mitunternehmers an einer
+freiberuflich tätigen Mitunternehmerschaft oder der Beteiligung eines Mitunternehmers, der tatsächlich keinen
+freien Beruf ausübt, da in diesen Fällen bereits die Gesellschafter in ihrer gesamthänderischen Verbundenheit nicht
+die Voraussetzungen des § 18 Abs. 1 Nr. 1 EStG erfüllen (vgl. hierzu BFH-Urteile in BFHE 238, 444, BStBl II 2013, 79,
+und in BFHE 223, 206, BStBl II 2009, 642).
+50
+c) Die gewerblichen Umsätze der Klägerin sind so gering, dass der Grundsatz der Verhältnismäßigkeit die
+Abfärbewirkung des § 15 Abs. 3 Nr. 1 EStG im Streitfall ausschließt.
+51
+aa) Aufgrund der dargestellten Rechtsprechung des BVerfG, das die Verhältnismäßigkeit der Abfärberegelung u.a.
+auf der Grundlage der restriktiven Auslegung des § 15 Abs. 3 Nr. 1 EStG durch den BFH bejaht hat, hält der Senat an
+der Rechtsprechung fest, dass einer originär gewerblichen Tätigkeit einer ansonsten Einkünfte aus selbständiger
+Arbeit erzielenden Personengesellschaft dann keine die übrige Tätigkeit der Gesellschaft umqualifizierende
+Wirkung zukommt, wenn es sich um eine gewerbliche Tätigkeit von äußerst geringem Ausmaß handelt (BFH-Urteile
+in BFHE 189, 419, BStBl II 2000, 229; in BFHE 196, 511, BStBl II 2002, 152; in BFHE 197, 400, BStBl II 2002, 221;
+BFH-Beschluss in BFH/NV 2004, 954).
+52
+bb) Eine Tätigkeit von äußerst geringem Ausmaß, die nicht dazu führt, dass die gesamte Tätigkeit der
+Personengesellschaft einheitlich als gewerblich fingiert wird, liegt dann vor, wenn die originär gewerblichen
+Nettoumsatzerlöse 3 v.H. der Gesamtnettoumsatzerlöse der Gesellschaft und den Betrag von 24.500 € im
+Veranlagungszeitraum nicht übersteigen
+.
+53
+(1) Ob es sich bei der gewerblichen Tätigkeit um eine äußerst geringfügige Tätigkeit handelt, die nicht zur
+Umqualifizierung der übrigen Einkünfte führt, kann nur anhand eines Vergleichs beider Tätigkeiten festgestellt
+werden.
+54
+Als geeigneter Vergleichsmaßstab ist das ‑‑im Regelfall ohne Schwierigkeiten zu ermittelnde‑‑ Verhältnis der
+Nettoumsätze der gewerblichen Tätigkeit zu den Gesamtnettoumsätzen der Gesellschaft aus selbständiger Arbeit
+und gewerblicher Tätigkeit heranzuziehen. Die erwirtschafteten Umsätze erlauben bei typisierender Betrachtung
+Rückschlüsse auf den auf die verschiedenen Tätigkeiten entfallenden zeitlichen und finanziellen Aufwand der
+Gesellschaft und damit darauf, ob der gewerblichen Tätigkeit eine völlig untergeordnete Bedeutung zukommt.
+55
+(2) Hinsichtlich der Höhe des Anteils der gewerblichen Umsätze folgt der Senat nicht der Auffassung des FA,
+wonach lediglich ein Anteil von 1,25 v.H. als äußerst geringfügig anzusehen ist. Zwar hat der BFH bereits
+entschieden, dass jedenfalls bei einem Anteil der gewerblichen Umsatzerlöse in Höhe von 1,25 v.H. der
+Gesamtumsatzerlöse eine gewerbliche Tätigkeit von äußerst geringem Umfang vorliege (BFH-Urteil in BFHE 189,
+419, BStBl II 2000, 229; bestätigt im BFH-Urteil in BFHE 232, 162, BStBl II 2011, 506, bei dem die gewerblichen
+Umsätze jedoch noch unter 1 v.H. lagen). Eine Entscheidung, dass höhere gewerbliche Umsätze immer zum Eintritt
+der Abfärbewirkung führen, war damit jedoch nicht getroffen. So hat der BFH bereits im Urteil in BFHE 189, 419,
+BStBl II 2000, 229 darauf hingewiesen, dass erst bei gewerblichen Umsätzen in Höhe von 6 v.H. ein äußerst geringer
+Umfang nicht mehr vorliegen dürfte (unter Hinweis auf das BFH-Urteil in BFHE 175, 357, BStBl II 1995, 171). In
+einem späteren summarischen Verfahren wurde zumindest ein Umsatzanteil in Höhe von 2,81 v.H. des
+Gesamtumsatzes noch als äußerst geringfügig angesehen (BFH-Beschluss in BFH/NV 2004, 954).
+56
+(3) Der erkennende Senat hält auf dieser Grundlage einen gewerblichen Umsatzanteil von 3 v.H. typisierend noch
+für von so untergeordneter Bedeutung, dass eine Umqualifizierung der gesamten Einkünfte unverhältnismäßig
+wäre. Dabei sind die Nettoumsätze zugrunde zu legen, um das Verhältnis der Umsätze bei unterschiedlichen
+Umsatzsteuersätzen nicht zu verfälschen.
+57
+cc) Zur Vermeidung einer Privilegierung von Personengesellschaften, die besonders hohe freiberufliche Umsätze
+58
+Seite 6 von 7
+
+Quelle: 
+www.bundesfinanzhof.de
+erzielen und damit in größerem Umfang gewerblich tätig sein könnten und unter Berücksichtigung des
+Normzwecks, das Gewerbesteueraufkommen zu schützen, ist es außerdem erforderlich, den Betrag der
+gewerblichen Nettoumsatzerlöse, bei dem noch von einem äußerst geringfügigen Umfang ausgegangen werden
+kann, auf einen Höchstbetrag in Höhe von 24.500 € zu begrenzen. Dieser orientiert sich an dem
+gewerbesteuerlichen Freibetrag für Personengesellschaften nach § 11 Abs. 1 Satz 3 Nr. 1 GewStG. Denn im
+Regelfall droht dann kein Ausfall von Gewerbesteuer, wenn bereits die gewerblichen Umsätze unter dem
+gewinnbezogenen Freibetrag in Höhe von 24.500 € liegen.
+(1) Allerdings handelt es sich bei dem Freibetrag des § 11 Abs. 1 Satz 3 Nr. 1 GewStG um eine Gewinn- und nicht um
+eine Umsatzgrenze. Auch liegt der Zweck dieser Regelung nicht in der Freistellung von Kleingewerbetreibenden
+von der Gewerbesteuer, sondern in der Herstellung einer vergleichbaren gewerbesteuerlichen Belastung im
+Vergleich zu Kapitalgesellschaften durch Berücksichtigung eines fiktiven Unternehmerlohnes (vgl. zur Kritik FG
+Münster, Urteil vom 19. Juni 2008  8 K 4272/06 G, Entscheidungen der Finanzgerichte 2008, 1975).
+59
+(2) Gleichwohl ist es sachgerecht, den für Personengesellschaften geltenden gewerbesteuerlichen Freibetrag als
+Umsatzgrenze für eine typisierende Einschränkung der Abfärbewirkung gemäß § 15 Abs. 3 Nr. 1 EStG
+heranzuziehen.
+60
+Der Normzweck des § 11 Abs. 1 Satz 3 Nr. 1 GewStG steht einer Anwendung des Freibetrages als absolute
+Umsatzgrenze im Rahmen des § 15 Abs. 3 Nr. 1 EStG nicht entgegen. Denn wenn auch eine Freistellung von
+geringen gewerblichen Einkünften nicht Zweck der Norm ist, so ist sie doch deren Ergebnis. Da gewerbliche Erträge
+in dieser Höhe nicht mit Gewerbesteuer belastet werden, droht insoweit auch nicht die Gefahr von Steuerausfällen.
+61
+Dass eine Gewerbesteuerpflicht der ansonsten freiberuflichen Einkünfte dann nicht geboten ist, wenn die
+gewerblichen Einkünfte für sich genommen keine Gewerbesteuer zeitigen würden, steht im Übrigen auch im
+Einklang mit der Rechtsprechung des BFH, wonach auch eine Gewerbesteuerbefreiung der gewerblichen Einkünfte
+auf die freiberuflichen Einkünfte "abfärbt", so dass im Ergebnis keine Gewerbesteuer entsteht (BFH-Urteil in BFHE
+196, 511, BStBl II 2002, 152).
+62
+Es würde jedoch dem vorrangigen Zweck der Abfärberegelung ‑‑der vereinfachten weil einheitlichen
+Einkünfteermittlung‑‑ zuwider laufen, den Freibetrag des § 11 Abs. 1 Satz 3 Nr. 1 GewStG ‑‑wie dort vorgesehen‑‑
+im Rahmen des § 15 Abs. 3 Nr. 1 EStG als Gewinngrenze zu berücksichtigen, da dies eine getrennte
+Einkünfteermittlung für die verschiedenen Tätigkeiten ‑‑mit den damit verbundenen Zuordnungs- und
+Aufteilungsschwierigkeiten‑‑ zur Folge hätte. Die aus Gründen der Verhältnismäßigkeit gebotene Einschränkung des
+Anwendungsbereiches des § 15 Abs. 3 Nr. 1 EStG darf nicht dazu führen, dass damit der eigentliche Normzweck
+gefährdet wird (so auch HHR/Stapperfend, § 15 EStG Rz 1426; Korn in Korn, § 18 EStG Rz 153; Kempermann,
+Deutsches Steuerrecht 2002, 664). Die Berücksichtigung des Freibetrages als Umsatzgrenze vermeidet derartige
+Schwierigkeiten.
+63
+4. Das FG hat damit im Ergebnis zutreffend die Anwendung des § 15 Abs. 3 Nr. 1 EStG verneint.
+64
+Die gewerblichen Nettoumsätze betragen 15.358 € (1,81 v.H. der Nettogesamtumsätze) in 2003 und 21.065 €
+(2,68 v.H. der Nettogesamtumsätze) in 2004 und überschreiten damit weder die relative Grenze von 3 v.H. der
+Gesamtumsätze noch den Höchstbetrag von 24.500 €.
+65
+Die Festsetzungen der Gewerbesteuermessbeträge waren daher aufzuheben und die Einkünfte der Klägerin in voller
+Höhe als solche aus selbständiger Arbeit festzustellen (so bereits BFH-Urteil in BFHE 189, 419, BStBl II 2000, 229).
+66
+Seite 7 von 7

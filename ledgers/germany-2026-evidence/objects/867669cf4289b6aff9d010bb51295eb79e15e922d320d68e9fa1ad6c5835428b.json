@@ -1,0 +1,14 @@
+[
+  {
+    "before": "- **Older staged rates.** A building built or bought in its completion year under an old application or contract may be on the staged rates of § 7(5). Ask what past returns used; refer any change.",
+    "after": "- **Older staged rates.** A building built or bought in its completion year under an application or contract before 1 January 2006 (housing; earlier dates for the other historic branches) may be on the staged rates of § 7(5). Ask what past returns used; refer any change."
+  },
+  {
+    "before": "version: 1.1\n",
+    "after": "version: 1.2\n"
+  },
+  {
+    "before": "last_updated: 2026-10-26\n",
+    "after": "last_updated: 2026-10-29\n"
+  }
+]

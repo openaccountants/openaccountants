@@ -1,0 +1,7 @@
+{
+  "ref": "1ec9831388337269560358f49249c7d6f2ec6ba8",
+  "path": "skills/international/germany/de-corporate-tax.md",
+  "returncode": 128,
+  "stderr": "fatal: path 'skills/international/germany/de-corporate-tax.md' exists on disk, but not in '1ec9831388337269560358f49249c7d6f2ec6ba8'\n",
+  "interpretation": "No prior Git body at introduction parent; no separately verified platform predecessor invented"
+}

@@ -1,0 +1,226 @@
+{
+  "scope": "Both original executable fixtures recomputed plus44 own numerical/threshold/year/date/selector controls. No client benchmark or automatic preferred method; actual31day deadline does not replace statutorycalendar month. Small-business matrix bridge retained as precise existing question.",
+  "controls": [
+    {
+      "name": "case1eligiblecost",
+      "actual": "100000",
+      "expected": "100000"
+    },
+    {
+      "name": "case1markup",
+      "actual": "5000",
+      "expected": "5000"
+    },
+    {
+      "name": "case1price",
+      "actual": "105000",
+      "expected": "105000"
+    },
+    {
+      "name": "case2charged",
+      "actual": "100000",
+      "expected": "100000"
+    },
+    {
+      "name": "case2CUP",
+      "actual": "120000",
+      "expected": "120000"
+    },
+    {
+      "name": "case2incomeincrease",
+      "actual": "20000",
+      "expected": "20000"
+    },
+    {
+      "name": "case2related60abovequarter",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "noautomaticCUPpriority",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "smallgoods6millioninclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "smallother600kinclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "goods6millionpoint01fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "other600kpoint01fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "aggregate3mplus3point1mnoteligible",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "bothgatesANDnotOR",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "eligibilityendfollowingyear",
+      "actual": "2027",
+      "expected": "2027"
+    },
+    {
+      "name": "master100mexacttrigger",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "master99999999fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "masterGermanownnotgroup",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "CbCR750mexacttrigger",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "CbCR749999999fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "supplychaintop5plusstrict5percent",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "supplychain5point01included",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "30day10Mar2025",
+      "actual": "2025-04-09",
+      "expected": "2025-04-09"
+    },
+    {
+      "name": "extraordinary6months2026yearend",
+      "actual": "2027-06-30",
+      "expected": "2027-06-30"
+    },
+    {
+      "name": "no-faultknowledge15Feb2027plus1calendarMonth",
+      "actual": "2027-03-15",
+      "expected": "2027-03-15"
+    },
+    {
+      "name": "no-faultnotculpablefailureselector",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "fixed5000vs5percent80k",
+      "actual": "5000",
+      "expected": "5000"
+    },
+    {
+      "name": "fixed5000vs5percent120k",
+      "actual": "6000",
+      "expected": "6000"
+    },
+    {
+      "name": "10percent120k",
+      "actual": "12000",
+      "expected": "12000"
+    },
+    {
+      "name": "lateusable20fulldaysfloor",
+      "actual": "2000",
+      "expected": "2000"
+    },
+    {
+      "name": "APA30k75percentreduction",
+      "actual": "7500",
+      "expected": "7500"
+    },
+    {
+      "name": "APA15k75percentreduction",
+      "actual": "3750",
+      "expected": "3750"
+    },
+    {
+      "name": "APAnotTPquarterfee",
+      "actual": "7500.0",
+      "expected": "7500"
+    },
+    {
+      "name": "APAsmall10000",
+      "actual": "10000",
+      "expected": "10000"
+    },
+    {
+      "name": "APAsmallextension7500",
+      "actual": "7500",
+      "expected": "7500"
+    },
+    {
+      "name": "80percentnot5percentmarkup",
+      "actual": "5000",
+      "expected": "5000"
+    },
+    {
+      "name": "cashpooldirectcost10kmarkup5to10",
+      "actual": "[Fraction(500, 1), Fraction(1000, 1)]",
+      "expected": "[500, 1000]"
+    },
+    {
+      "name": "financingcostexcludedcashpool",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "medianoutside1to5is3",
+      "actual": "3",
+      "expected": "3"
+    },
+    {
+      "name": "hypotheticalmean80to120",
+      "actual": "100",
+      "expected": "100"
+    },
+    {
+      "name": "licensebarrierlast2024not2026",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "ordinarydeadline2026July31Saturday",
+      "actual": "5",
+      "expected": "5"
+    },
+    {
+      "name": "AO108nextMonday2026return",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "advisedFeb29leap2028",
+      "actual": "1",
+      "expected": "1"
+    }
+  ],
+  "number": 44
+}

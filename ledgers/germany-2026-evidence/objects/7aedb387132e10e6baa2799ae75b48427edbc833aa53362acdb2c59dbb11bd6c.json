@@ -1,0 +1,1527 @@
+{
+  "1": {
+    "start": 1,
+    "end": 1,
+    "disposition": "byte-exact old line"
+  },
+  "2": {
+    "start": 2,
+    "end": 2,
+    "disposition": "byte-exact old line"
+  },
+  "3": {
+    "start": 3,
+    "end": 3,
+    "disposition": "byte-exact old line"
+  },
+  "4": {
+    "start": 4,
+    "end": 4,
+    "disposition": "bounded finding correction; exact old/new text in operations and diff"
+  },
+  "5": {
+    "start": 5,
+    "end": 5,
+    "disposition": "byte-exact old line"
+  },
+  "6": {
+    "start": 6,
+    "end": 6,
+    "disposition": "byte-exact old line"
+  },
+  "7": {
+    "start": 7,
+    "end": 7,
+    "disposition": "bounded finding correction; exact old/new text in operations and diff"
+  },
+  "8": {
+    "start": 8,
+    "end": 8,
+    "disposition": "byte-exact old line"
+  },
+  "9": {
+    "start": 9,
+    "end": 9,
+    "disposition": "byte-exact old line"
+  },
+  "10": {
+    "start": 10,
+    "end": 10,
+    "disposition": "byte-exact old line"
+  },
+  "11": {
+    "start": 11,
+    "end": 11,
+    "disposition": "byte-exact old line"
+  },
+  "12": {
+    "start": 12,
+    "end": 12,
+    "disposition": "byte-exact old line"
+  },
+  "13": {
+    "start": 13,
+    "end": 13,
+    "disposition": "byte-exact old line"
+  },
+  "14": {
+    "start": 14,
+    "end": 14,
+    "disposition": "byte-exact old line"
+  },
+  "15": {
+    "start": 15,
+    "end": 15,
+    "disposition": "byte-exact old line"
+  },
+  "16": {
+    "start": 16,
+    "end": 16,
+    "disposition": "byte-exact old line"
+  },
+  "17": {
+    "start": 17,
+    "end": 17,
+    "disposition": "byte-exact old line"
+  },
+  "18": {
+    "start": 18,
+    "end": 18,
+    "disposition": "byte-exact old line"
+  },
+  "19": {
+    "start": 19,
+    "end": 19,
+    "disposition": "byte-exact old line"
+  },
+  "20": {
+    "start": 20,
+    "end": 20,
+    "disposition": "byte-exact old line"
+  },
+  "21": {
+    "start": 21,
+    "end": 21,
+    "disposition": "byte-exact old line"
+  },
+  "22": {
+    "start": 22,
+    "end": 22,
+    "disposition": "byte-exact old line"
+  },
+  "23": {
+    "start": 23,
+    "end": 23,
+    "disposition": "byte-exact old line"
+  },
+  "24": {
+    "start": 24,
+    "end": 24,
+    "disposition": "byte-exact old line"
+  },
+  "25": {
+    "start": 25,
+    "end": 25,
+    "disposition": "byte-exact old line"
+  },
+  "26": {
+    "start": 26,
+    "end": 26,
+    "disposition": "byte-exact old line"
+  },
+  "27": {
+    "start": 27,
+    "end": 27,
+    "disposition": "byte-exact old line"
+  },
+  "28": {
+    "start": 28,
+    "end": 28,
+    "disposition": "byte-exact old line"
+  },
+  "29": {
+    "start": 29,
+    "end": 29,
+    "disposition": "byte-exact old line"
+  },
+  "30": {
+    "start": 30,
+    "end": 30,
+    "disposition": "byte-exact old line"
+  },
+  "31": {
+    "start": 31,
+    "end": 31,
+    "disposition": "byte-exact old line"
+  },
+  "32": {
+    "start": 32,
+    "end": 32,
+    "disposition": "byte-exact old line"
+  },
+  "33": {
+    "start": 33,
+    "end": 33,
+    "disposition": "byte-exact old line"
+  },
+  "34": {
+    "start": 34,
+    "end": 34,
+    "disposition": "byte-exact old line"
+  },
+  "35": {
+    "start": 35,
+    "end": 35,
+    "disposition": "byte-exact old line"
+  },
+  "36": {
+    "start": 36,
+    "end": 36,
+    "disposition": "bounded finding correction; exact old/new text in operations and diff"
+  },
+  "37": {
+    "start": 37,
+    "end": 37,
+    "disposition": "byte-exact old line"
+  },
+  "38": {
+    "start": 38,
+    "end": 38,
+    "disposition": "byte-exact old line"
+  },
+  "39": {
+    "start": 39,
+    "end": 39,
+    "disposition": "byte-exact old line"
+  },
+  "40": {
+    "start": 40,
+    "end": 40,
+    "disposition": "byte-exact old line"
+  },
+  "41": {
+    "start": 41,
+    "end": 41,
+    "disposition": "byte-exact old line"
+  },
+  "42": {
+    "start": 42,
+    "end": 42,
+    "disposition": "byte-exact old line"
+  },
+  "43": {
+    "start": 43,
+    "end": 43,
+    "disposition": "byte-exact old line"
+  },
+  "44": {
+    "start": 44,
+    "end": 44,
+    "disposition": "byte-exact old line"
+  },
+  "45": {
+    "start": 45,
+    "end": 45,
+    "disposition": "byte-exact old line"
+  },
+  "46": {
+    "start": 46,
+    "end": 46,
+    "disposition": "byte-exact old line"
+  },
+  "47": {
+    "start": 47,
+    "end": 47,
+    "disposition": "byte-exact old line"
+  },
+  "48": {
+    "start": 52,
+    "end": 52,
+    "disposition": "byte-exact old line"
+  },
+  "49": {
+    "start": 53,
+    "end": 53,
+    "disposition": "byte-exact old line"
+  },
+  "50": {
+    "start": 54,
+    "end": 54,
+    "disposition": "byte-exact old line"
+  },
+  "51": {
+    "start": 55,
+    "end": 55,
+    "disposition": "byte-exact old line"
+  },
+  "52": {
+    "start": 56,
+    "end": 56,
+    "disposition": "byte-exact old line"
+  },
+  "53": {
+    "start": 57,
+    "end": 57,
+    "disposition": "byte-exact old line"
+  },
+  "54": {
+    "start": 58,
+    "end": 58,
+    "disposition": "byte-exact old line"
+  },
+  "55": {
+    "start": 59,
+    "end": 59,
+    "disposition": "byte-exact old line"
+  },
+  "56": {
+    "start": 60,
+    "end": 60,
+    "disposition": "byte-exact old line"
+  },
+  "57": {
+    "start": 61,
+    "end": 61,
+    "disposition": "byte-exact old line"
+  },
+  "58": {
+    "start": 62,
+    "end": 62,
+    "disposition": "byte-exact old line"
+  },
+  "59": {
+    "start": 63,
+    "end": 63,
+    "disposition": "byte-exact old line"
+  },
+  "60": {
+    "start": 64,
+    "end": 64,
+    "disposition": "byte-exact old line"
+  },
+  "61": {
+    "start": 65,
+    "end": 65,
+    "disposition": "byte-exact old line"
+  },
+  "62": {
+    "start": 66,
+    "end": 66,
+    "disposition": "byte-exact old line"
+  },
+  "63": {
+    "start": 67,
+    "end": 67,
+    "disposition": "byte-exact old line"
+  },
+  "64": {
+    "start": 68,
+    "end": 68,
+    "disposition": "byte-exact old line"
+  },
+  "65": {
+    "start": 69,
+    "end": 69,
+    "disposition": "byte-exact old line"
+  },
+  "66": {
+    "start": 70,
+    "end": 70,
+    "disposition": "byte-exact old line"
+  },
+  "67": {
+    "start": 71,
+    "end": 71,
+    "disposition": "byte-exact old line"
+  },
+  "68": {
+    "start": 72,
+    "end": 72,
+    "disposition": "byte-exact old line"
+  },
+  "69": {
+    "start": 73,
+    "end": 73,
+    "disposition": "byte-exact old line"
+  },
+  "70": {
+    "start": 74,
+    "end": 74,
+    "disposition": "byte-exact old line"
+  },
+  "71": {
+    "start": 75,
+    "end": 75,
+    "disposition": "byte-exact old line"
+  },
+  "72": {
+    "start": 76,
+    "end": 76,
+    "disposition": "byte-exact old line"
+  },
+  "73": {
+    "start": 77,
+    "end": 77,
+    "disposition": "byte-exact old line"
+  },
+  "74": {
+    "start": 78,
+    "end": 78,
+    "disposition": "byte-exact old line"
+  },
+  "75": {
+    "start": 79,
+    "end": 79,
+    "disposition": "byte-exact old line"
+  },
+  "76": {
+    "start": 80,
+    "end": 80,
+    "disposition": "byte-exact old line"
+  },
+  "77": {
+    "start": 81,
+    "end": 81,
+    "disposition": "byte-exact old line"
+  },
+  "78": {
+    "start": 82,
+    "end": 82,
+    "disposition": "byte-exact old line"
+  },
+  "79": {
+    "start": 83,
+    "end": 83,
+    "disposition": "byte-exact old line"
+  },
+  "80": {
+    "start": 84,
+    "end": 84,
+    "disposition": "byte-exact old line"
+  },
+  "81": {
+    "start": 85,
+    "end": 85,
+    "disposition": "byte-exact old line"
+  },
+  "82": {
+    "start": 86,
+    "end": 86,
+    "disposition": "byte-exact old line"
+  },
+  "83": {
+    "start": 87,
+    "end": 87,
+    "disposition": "byte-exact old line"
+  },
+  "84": {
+    "start": 88,
+    "end": 88,
+    "disposition": "byte-exact old line"
+  },
+  "85": {
+    "start": 89,
+    "end": 89,
+    "disposition": "byte-exact old line"
+  },
+  "86": {
+    "start": 90,
+    "end": 90,
+    "disposition": "byte-exact old line"
+  },
+  "87": {
+    "start": 91,
+    "end": 91,
+    "disposition": "byte-exact old line"
+  },
+  "88": {
+    "start": 92,
+    "end": 92,
+    "disposition": "byte-exact old line"
+  },
+  "89": {
+    "start": 93,
+    "end": 93,
+    "disposition": "byte-exact old line"
+  },
+  "90": {
+    "start": 94,
+    "end": 94,
+    "disposition": "byte-exact old line"
+  },
+  "91": {
+    "start": 95,
+    "end": 95,
+    "disposition": "byte-exact old line"
+  },
+  "92": {
+    "start": 96,
+    "end": 96,
+    "disposition": "byte-exact old line"
+  },
+  "93": {
+    "start": 97,
+    "end": 97,
+    "disposition": "byte-exact old line"
+  },
+  "94": {
+    "start": 98,
+    "end": 98,
+    "disposition": "byte-exact old line"
+  },
+  "95": {
+    "start": 99,
+    "end": 99,
+    "disposition": "byte-exact old line"
+  },
+  "96": {
+    "start": 100,
+    "end": 100,
+    "disposition": "byte-exact old line"
+  },
+  "97": {
+    "start": 101,
+    "end": 101,
+    "disposition": "byte-exact old line"
+  },
+  "98": {
+    "start": 102,
+    "end": 102,
+    "disposition": "byte-exact old line"
+  },
+  "99": {
+    "start": 103,
+    "end": 103,
+    "disposition": "byte-exact old line"
+  },
+  "100": {
+    "start": 104,
+    "end": 104,
+    "disposition": "byte-exact old line"
+  },
+  "101": {
+    "start": 105,
+    "end": 105,
+    "disposition": "byte-exact old line"
+  },
+  "102": {
+    "start": 106,
+    "end": 106,
+    "disposition": "byte-exact old line"
+  },
+  "103": {
+    "start": 107,
+    "end": 107,
+    "disposition": "byte-exact old line"
+  },
+  "104": {
+    "start": 108,
+    "end": 108,
+    "disposition": "byte-exact old line"
+  },
+  "105": {
+    "start": 109,
+    "end": 109,
+    "disposition": "byte-exact old line"
+  },
+  "106": {
+    "start": 110,
+    "end": 110,
+    "disposition": "byte-exact old line"
+  },
+  "107": {
+    "start": 111,
+    "end": 111,
+    "disposition": "byte-exact old line"
+  },
+  "108": {
+    "start": 112,
+    "end": 112,
+    "disposition": "byte-exact old line"
+  },
+  "109": {
+    "start": 113,
+    "end": 113,
+    "disposition": "byte-exact old line"
+  },
+  "110": {
+    "start": 114,
+    "end": 114,
+    "disposition": "byte-exact old line"
+  },
+  "111": {
+    "start": 115,
+    "end": 115,
+    "disposition": "byte-exact old line"
+  },
+  "112": {
+    "start": 116,
+    "end": 116,
+    "disposition": "byte-exact old line"
+  },
+  "113": {
+    "start": 117,
+    "end": 117,
+    "disposition": "byte-exact old line"
+  },
+  "114": {
+    "start": 118,
+    "end": 118,
+    "disposition": "byte-exact old line"
+  },
+  "115": {
+    "start": 119,
+    "end": 119,
+    "disposition": "byte-exact old line"
+  },
+  "116": {
+    "start": 120,
+    "end": 120,
+    "disposition": "byte-exact old line"
+  },
+  "117": {
+    "start": 121,
+    "end": 121,
+    "disposition": "byte-exact old line"
+  },
+  "118": {
+    "start": 122,
+    "end": 122,
+    "disposition": "byte-exact old line"
+  },
+  "119": {
+    "start": 123,
+    "end": 123,
+    "disposition": "byte-exact old line"
+  },
+  "120": {
+    "start": 124,
+    "end": 124,
+    "disposition": "byte-exact old line"
+  },
+  "121": {
+    "start": 125,
+    "end": 125,
+    "disposition": "byte-exact old line"
+  },
+  "122": {
+    "start": 126,
+    "end": 126,
+    "disposition": "byte-exact old line"
+  },
+  "123": {
+    "start": 127,
+    "end": 127,
+    "disposition": "byte-exact old line"
+  },
+  "124": {
+    "start": 128,
+    "end": 128,
+    "disposition": "byte-exact old line"
+  },
+  "125": {
+    "start": 129,
+    "end": 129,
+    "disposition": "byte-exact old line"
+  },
+  "126": {
+    "start": 130,
+    "end": 130,
+    "disposition": "byte-exact old line"
+  },
+  "127": {
+    "start": 131,
+    "end": 131,
+    "disposition": "byte-exact old line"
+  },
+  "128": {
+    "start": 132,
+    "end": 132,
+    "disposition": "byte-exact old line"
+  },
+  "129": {
+    "start": 133,
+    "end": 133,
+    "disposition": "byte-exact old line"
+  },
+  "130": {
+    "start": 134,
+    "end": 134,
+    "disposition": "byte-exact old line"
+  },
+  "131": {
+    "start": 135,
+    "end": 135,
+    "disposition": "byte-exact old line"
+  },
+  "132": {
+    "start": 136,
+    "end": 136,
+    "disposition": "byte-exact old line"
+  },
+  "133": {
+    "start": 137,
+    "end": 137,
+    "disposition": "byte-exact old line"
+  },
+  "134": {
+    "start": 138,
+    "end": 138,
+    "disposition": "byte-exact old line"
+  },
+  "135": {
+    "start": 139,
+    "end": 139,
+    "disposition": "byte-exact old line"
+  },
+  "136": {
+    "start": 140,
+    "end": 140,
+    "disposition": "byte-exact old line"
+  },
+  "137": {
+    "start": 141,
+    "end": 141,
+    "disposition": "byte-exact old line"
+  },
+  "138": {
+    "start": 142,
+    "end": 142,
+    "disposition": "byte-exact old line"
+  },
+  "139": {
+    "start": 143,
+    "end": 143,
+    "disposition": "byte-exact old line"
+  },
+  "140": {
+    "start": 144,
+    "end": 144,
+    "disposition": "byte-exact old line"
+  },
+  "141": {
+    "start": 145,
+    "end": 145,
+    "disposition": "byte-exact old line"
+  },
+  "142": {
+    "start": 146,
+    "end": 146,
+    "disposition": "byte-exact old line"
+  },
+  "143": {
+    "start": 147,
+    "end": 147,
+    "disposition": "byte-exact old line"
+  },
+  "144": {
+    "start": 148,
+    "end": 148,
+    "disposition": "byte-exact old line"
+  },
+  "145": {
+    "start": 149,
+    "end": 149,
+    "disposition": "byte-exact old line"
+  },
+  "146": {
+    "start": 150,
+    "end": 150,
+    "disposition": "byte-exact old line"
+  },
+  "147": {
+    "start": 151,
+    "end": 151,
+    "disposition": "byte-exact old line"
+  },
+  "148": {
+    "start": 152,
+    "end": 152,
+    "disposition": "byte-exact old line"
+  },
+  "149": {
+    "start": 153,
+    "end": 153,
+    "disposition": "byte-exact old line"
+  },
+  "150": {
+    "start": 154,
+    "end": 154,
+    "disposition": "byte-exact old line"
+  },
+  "151": {
+    "start": 155,
+    "end": 155,
+    "disposition": "byte-exact old line"
+  },
+  "152": {
+    "start": 156,
+    "end": 156,
+    "disposition": "byte-exact old line"
+  },
+  "153": {
+    "start": 157,
+    "end": 157,
+    "disposition": "byte-exact old line"
+  },
+  "154": {
+    "start": 158,
+    "end": 158,
+    "disposition": "byte-exact old line"
+  },
+  "155": {
+    "start": 159,
+    "end": 159,
+    "disposition": "byte-exact old line"
+  },
+  "156": {
+    "start": 160,
+    "end": 160,
+    "disposition": "byte-exact old line"
+  },
+  "157": {
+    "start": 161,
+    "end": 161,
+    "disposition": "byte-exact old line"
+  },
+  "158": {
+    "start": 162,
+    "end": 162,
+    "disposition": "byte-exact old line"
+  },
+  "159": {
+    "start": 163,
+    "end": 163,
+    "disposition": "byte-exact old line"
+  },
+  "160": {
+    "start": 164,
+    "end": 164,
+    "disposition": "byte-exact old line"
+  },
+  "161": {
+    "start": 165,
+    "end": 165,
+    "disposition": "byte-exact old line"
+  },
+  "162": {
+    "start": 166,
+    "end": 166,
+    "disposition": "byte-exact old line"
+  },
+  "163": {
+    "start": 167,
+    "end": 167,
+    "disposition": "byte-exact old line"
+  },
+  "164": {
+    "start": 168,
+    "end": 168,
+    "disposition": "byte-exact old line"
+  },
+  "165": {
+    "start": 169,
+    "end": 169,
+    "disposition": "byte-exact old line"
+  },
+  "166": {
+    "start": 170,
+    "end": 170,
+    "disposition": "byte-exact old line"
+  },
+  "167": {
+    "start": 171,
+    "end": 171,
+    "disposition": "byte-exact old line"
+  },
+  "168": {
+    "start": 172,
+    "end": 172,
+    "disposition": "byte-exact old line"
+  },
+  "169": {
+    "start": 173,
+    "end": 173,
+    "disposition": "byte-exact old line"
+  },
+  "170": {
+    "start": 174,
+    "end": 174,
+    "disposition": "byte-exact old line"
+  },
+  "171": {
+    "start": 175,
+    "end": 175,
+    "disposition": "byte-exact old line"
+  },
+  "172": {
+    "start": 176,
+    "end": 176,
+    "disposition": "byte-exact old line"
+  },
+  "173": {
+    "start": 177,
+    "end": 177,
+    "disposition": "byte-exact old line"
+  },
+  "174": {
+    "start": 178,
+    "end": 178,
+    "disposition": "byte-exact old line"
+  },
+  "175": {
+    "start": 179,
+    "end": 179,
+    "disposition": "byte-exact old line"
+  },
+  "176": {
+    "start": 180,
+    "end": 180,
+    "disposition": "byte-exact old line"
+  },
+  "177": {
+    "start": 181,
+    "end": 181,
+    "disposition": "byte-exact old line"
+  },
+  "178": {
+    "start": 182,
+    "end": 182,
+    "disposition": "byte-exact old line"
+  },
+  "179": {
+    "start": 183,
+    "end": 183,
+    "disposition": "byte-exact old line"
+  },
+  "180": {
+    "start": 184,
+    "end": 184,
+    "disposition": "byte-exact old line"
+  },
+  "181": {
+    "start": 185,
+    "end": 185,
+    "disposition": "byte-exact old line"
+  },
+  "182": {
+    "start": 186,
+    "end": 186,
+    "disposition": "byte-exact old line"
+  },
+  "183": {
+    "start": 187,
+    "end": 187,
+    "disposition": "byte-exact old line"
+  },
+  "184": {
+    "start": 188,
+    "end": 188,
+    "disposition": "byte-exact old line"
+  },
+  "185": {
+    "start": 189,
+    "end": 189,
+    "disposition": "byte-exact old line"
+  },
+  "186": {
+    "start": 190,
+    "end": 190,
+    "disposition": "byte-exact old line"
+  },
+  "187": {
+    "start": 191,
+    "end": 191,
+    "disposition": "byte-exact old line"
+  },
+  "188": {
+    "start": 192,
+    "end": 192,
+    "disposition": "byte-exact old line"
+  },
+  "189": {
+    "start": 193,
+    "end": 193,
+    "disposition": "byte-exact old line"
+  },
+  "190": {
+    "start": 194,
+    "end": 194,
+    "disposition": "byte-exact old line"
+  },
+  "191": {
+    "start": 195,
+    "end": 195,
+    "disposition": "byte-exact old line"
+  },
+  "192": {
+    "start": 196,
+    "end": 196,
+    "disposition": "byte-exact old line"
+  },
+  "193": {
+    "start": 197,
+    "end": 197,
+    "disposition": "byte-exact old line"
+  },
+  "194": {
+    "start": 198,
+    "end": 198,
+    "disposition": "byte-exact old line"
+  },
+  "195": {
+    "start": 199,
+    "end": 199,
+    "disposition": "byte-exact old line"
+  },
+  "196": {
+    "start": 200,
+    "end": 200,
+    "disposition": "byte-exact old line"
+  },
+  "197": {
+    "start": 201,
+    "end": 201,
+    "disposition": "byte-exact old line"
+  },
+  "198": {
+    "start": 202,
+    "end": 202,
+    "disposition": "byte-exact old line"
+  },
+  "199": {
+    "start": 203,
+    "end": 203,
+    "disposition": "byte-exact old line"
+  },
+  "200": {
+    "start": 204,
+    "end": 204,
+    "disposition": "byte-exact old line"
+  },
+  "201": {
+    "start": 205,
+    "end": 205,
+    "disposition": "byte-exact old line"
+  },
+  "202": {
+    "start": 206,
+    "end": 206,
+    "disposition": "byte-exact old line"
+  },
+  "203": {
+    "start": 207,
+    "end": 207,
+    "disposition": "byte-exact old line"
+  },
+  "204": {
+    "start": 208,
+    "end": 208,
+    "disposition": "byte-exact old line"
+  },
+  "205": {
+    "start": 209,
+    "end": 209,
+    "disposition": "byte-exact old line"
+  },
+  "206": {
+    "start": 210,
+    "end": 210,
+    "disposition": "byte-exact old line"
+  },
+  "207": {
+    "start": 211,
+    "end": 211,
+    "disposition": "byte-exact old line"
+  },
+  "208": {
+    "start": 212,
+    "end": 212,
+    "disposition": "byte-exact old line"
+  },
+  "209": {
+    "start": 213,
+    "end": 213,
+    "disposition": "byte-exact old line"
+  },
+  "210": {
+    "start": 214,
+    "end": 214,
+    "disposition": "byte-exact old line"
+  },
+  "211": {
+    "start": 215,
+    "end": 215,
+    "disposition": "byte-exact old line"
+  },
+  "212": {
+    "start": 216,
+    "end": 216,
+    "disposition": "byte-exact old line"
+  },
+  "213": {
+    "start": 217,
+    "end": 217,
+    "disposition": "byte-exact old line"
+  },
+  "214": {
+    "start": 218,
+    "end": 218,
+    "disposition": "byte-exact old line"
+  },
+  "215": {
+    "start": 219,
+    "end": 219,
+    "disposition": "byte-exact old line"
+  },
+  "216": {
+    "start": 220,
+    "end": 220,
+    "disposition": "byte-exact old line"
+  },
+  "217": {
+    "start": 221,
+    "end": 221,
+    "disposition": "byte-exact old line"
+  },
+  "218": {
+    "start": 222,
+    "end": 222,
+    "disposition": "byte-exact old line"
+  },
+  "219": {
+    "start": 223,
+    "end": 223,
+    "disposition": "byte-exact old line"
+  },
+  "220": {
+    "start": 224,
+    "end": 224,
+    "disposition": "byte-exact old line"
+  },
+  "221": {
+    "start": 225,
+    "end": 225,
+    "disposition": "byte-exact old line"
+  },
+  "222": {
+    "start": 226,
+    "end": 226,
+    "disposition": "byte-exact old line"
+  },
+  "223": {
+    "start": 227,
+    "end": 227,
+    "disposition": "byte-exact old line"
+  },
+  "224": {
+    "start": 228,
+    "end": 228,
+    "disposition": "byte-exact old line"
+  },
+  "225": {
+    "start": 229,
+    "end": 229,
+    "disposition": "byte-exact old line"
+  },
+  "226": {
+    "start": 230,
+    "end": 230,
+    "disposition": "byte-exact old line"
+  },
+  "227": {
+    "start": 231,
+    "end": 231,
+    "disposition": "byte-exact old line"
+  },
+  "228": {
+    "start": 232,
+    "end": 232,
+    "disposition": "byte-exact old line"
+  },
+  "229": {
+    "start": 233,
+    "end": 233,
+    "disposition": "byte-exact old line"
+  },
+  "230": {
+    "start": 234,
+    "end": 234,
+    "disposition": "byte-exact old line"
+  },
+  "231": {
+    "start": 235,
+    "end": 235,
+    "disposition": "byte-exact old line"
+  },
+  "232": {
+    "start": 236,
+    "end": 236,
+    "disposition": "byte-exact old line"
+  },
+  "233": {
+    "start": 237,
+    "end": 237,
+    "disposition": "byte-exact old line"
+  },
+  "234": {
+    "start": 238,
+    "end": 238,
+    "disposition": "byte-exact old line"
+  },
+  "235": {
+    "start": 239,
+    "end": 239,
+    "disposition": "byte-exact old line"
+  },
+  "236": {
+    "start": 240,
+    "end": 240,
+    "disposition": "byte-exact old line"
+  },
+  "237": {
+    "start": 241,
+    "end": 241,
+    "disposition": "byte-exact old line"
+  },
+  "238": {
+    "start": 242,
+    "end": 242,
+    "disposition": "bounded finding correction; exact old/new text in operations and diff"
+  },
+  "239": {
+    "start": 243,
+    "end": 243,
+    "disposition": "byte-exact old line"
+  },
+  "240": {
+    "start": 244,
+    "end": 244,
+    "disposition": "byte-exact old line"
+  },
+  "241": {
+    "start": 245,
+    "end": 245,
+    "disposition": "byte-exact old line"
+  },
+  "242": {
+    "start": 246,
+    "end": 246,
+    "disposition": "byte-exact old line"
+  },
+  "243": {
+    "start": 247,
+    "end": 247,
+    "disposition": "byte-exact old line"
+  },
+  "244": {
+    "start": 248,
+    "end": 248,
+    "disposition": "byte-exact old line"
+  },
+  "245": {
+    "start": 249,
+    "end": 249,
+    "disposition": "byte-exact old line"
+  },
+  "246": {
+    "start": 250,
+    "end": 250,
+    "disposition": "byte-exact old line"
+  },
+  "247": {
+    "start": 251,
+    "end": 251,
+    "disposition": "byte-exact old line"
+  },
+  "248": {
+    "start": 252,
+    "end": 252,
+    "disposition": "byte-exact old line"
+  },
+  "249": {
+    "start": 253,
+    "end": 253,
+    "disposition": "byte-exact old line"
+  },
+  "250": {
+    "start": 254,
+    "end": 254,
+    "disposition": "byte-exact old line"
+  },
+  "251": {
+    "start": 255,
+    "end": 255,
+    "disposition": "byte-exact old line"
+  },
+  "252": {
+    "start": 256,
+    "end": 256,
+    "disposition": "byte-exact old line"
+  },
+  "253": {
+    "start": 257,
+    "end": 257,
+    "disposition": "byte-exact old line"
+  },
+  "254": {
+    "start": 258,
+    "end": 258,
+    "disposition": "byte-exact old line"
+  },
+  "255": {
+    "start": 259,
+    "end": 259,
+    "disposition": "byte-exact old line"
+  },
+  "256": {
+    "start": 260,
+    "end": 260,
+    "disposition": "byte-exact old line"
+  },
+  "257": {
+    "start": 261,
+    "end": 261,
+    "disposition": "byte-exact old line"
+  },
+  "258": {
+    "start": 262,
+    "end": 262,
+    "disposition": "byte-exact old line"
+  },
+  "259": {
+    "start": 263,
+    "end": 263,
+    "disposition": "byte-exact old line"
+  },
+  "260": {
+    "start": 264,
+    "end": 264,
+    "disposition": "byte-exact old line"
+  },
+  "261": {
+    "start": 265,
+    "end": 265,
+    "disposition": "byte-exact old line"
+  },
+  "262": {
+    "start": 266,
+    "end": 266,
+    "disposition": "byte-exact old line"
+  },
+  "263": {
+    "start": 267,
+    "end": 267,
+    "disposition": "byte-exact old line"
+  },
+  "264": {
+    "start": 268,
+    "end": 268,
+    "disposition": "byte-exact old line"
+  },
+  "265": {
+    "start": 269,
+    "end": 269,
+    "disposition": "byte-exact old line"
+  },
+  "266": {
+    "start": 270,
+    "end": 270,
+    "disposition": "byte-exact old line"
+  },
+  "267": {
+    "start": 271,
+    "end": 271,
+    "disposition": "byte-exact old line"
+  },
+  "268": {
+    "start": 272,
+    "end": 272,
+    "disposition": "byte-exact old line"
+  },
+  "269": {
+    "start": 273,
+    "end": 273,
+    "disposition": "byte-exact old line"
+  },
+  "270": {
+    "start": 274,
+    "end": 274,
+    "disposition": "byte-exact old line"
+  },
+  "271": {
+    "start": 275,
+    "end": 275,
+    "disposition": "byte-exact old line"
+  },
+  "272": {
+    "start": 276,
+    "end": 276,
+    "disposition": "byte-exact old line"
+  },
+  "273": {
+    "start": 277,
+    "end": 277,
+    "disposition": "byte-exact old line"
+  },
+  "274": {
+    "start": 278,
+    "end": 278,
+    "disposition": "byte-exact old line"
+  },
+  "275": {
+    "start": 279,
+    "end": 279,
+    "disposition": "byte-exact old line"
+  },
+  "276": {
+    "start": 280,
+    "end": 280,
+    "disposition": "byte-exact old line"
+  },
+  "277": {
+    "start": 281,
+    "end": 281,
+    "disposition": "byte-exact old line"
+  },
+  "278": {
+    "start": 282,
+    "end": 282,
+    "disposition": "byte-exact old line"
+  },
+  "279": {
+    "start": 283,
+    "end": 283,
+    "disposition": "byte-exact old line"
+  },
+  "280": {
+    "start": 284,
+    "end": 284,
+    "disposition": "byte-exact old line"
+  },
+  "281": {
+    "start": 285,
+    "end": 285,
+    "disposition": "byte-exact old line"
+  },
+  "282": {
+    "start": 286,
+    "end": 286,
+    "disposition": "byte-exact old line"
+  },
+  "283": {
+    "start": 287,
+    "end": 287,
+    "disposition": "byte-exact old line"
+  },
+  "284": {
+    "start": 288,
+    "end": 288,
+    "disposition": "byte-exact old line"
+  },
+  "285": {
+    "start": 292,
+    "end": 292,
+    "disposition": "byte-exact old line"
+  },
+  "286": {
+    "start": 293,
+    "end": 293,
+    "disposition": "byte-exact old line"
+  },
+  "287": {
+    "start": 294,
+    "end": 294,
+    "disposition": "byte-exact old line"
+  },
+  "288": {
+    "start": 295,
+    "end": 295,
+    "disposition": "byte-exact old line"
+  },
+  "289": {
+    "start": 296,
+    "end": 296,
+    "disposition": "byte-exact old line"
+  },
+  "290": {
+    "start": 297,
+    "end": 297,
+    "disposition": "byte-exact old line"
+  },
+  "291": {
+    "start": 298,
+    "end": 298,
+    "disposition": "byte-exact old line"
+  },
+  "292": {
+    "start": 299,
+    "end": 299,
+    "disposition": "byte-exact old line"
+  },
+  "293": {
+    "start": 300,
+    "end": 300,
+    "disposition": "byte-exact old line"
+  },
+  "294": {
+    "start": 301,
+    "end": 301,
+    "disposition": "byte-exact old line"
+  },
+  "295": {
+    "start": 302,
+    "end": 302,
+    "disposition": "byte-exact old line"
+  },
+  "296": {
+    "start": 303,
+    "end": 303,
+    "disposition": "byte-exact old line"
+  },
+  "297": {
+    "start": 304,
+    "end": 304,
+    "disposition": "byte-exact old line"
+  },
+  "298": {
+    "start": 305,
+    "end": 305,
+    "disposition": "byte-exact old line"
+  },
+  "299": {
+    "start": 306,
+    "end": 306,
+    "disposition": "byte-exact old line"
+  },
+  "300": {
+    "start": 307,
+    "end": 307,
+    "disposition": "byte-exact old line"
+  },
+  "301": {
+    "start": 308,
+    "end": 308,
+    "disposition": "byte-exact old line"
+  },
+  "302": {
+    "start": 309,
+    "end": 309,
+    "disposition": "byte-exact old line"
+  },
+  "303": {
+    "start": 310,
+    "end": 310,
+    "disposition": "byte-exact old line"
+  },
+  "304": {
+    "start": 311,
+    "end": 311,
+    "disposition": "byte-exact old line"
+  },
+  "305": {
+    "start": 312,
+    "end": 312,
+    "disposition": "byte-exact old line"
+  }
+}

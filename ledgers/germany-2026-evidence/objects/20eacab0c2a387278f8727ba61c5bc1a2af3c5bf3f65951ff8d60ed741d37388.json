@@ -1,0 +1,770 @@
+[
+  {
+    "id": "DATES",
+    "source": "estg-37",
+    "act_article": "estg-37",
+    "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+    "reader": "sources/estg-37.reader.txt",
+    "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+    "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "Der Steuerpflichtige hat am 10. März, 10. Juni, 10. September und 10. Dezember Vorauszahlungen auf die Einkommensteuer zu entrichten, die er für den laufenden Veranlagungszeitraum voraussichtlich schulden wird.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "ARISE",
+    "source": "estg-37",
+    "act_article": "estg-37",
+    "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+    "reader": "sources/estg-37.reader.txt",
+    "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+    "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "Die Einkommensteuer-Vorauszahlung entsteht jeweils mit Beginn des Kalendervierteljahres, in dem die Vorauszahlungen zu entrichten sind, oder, wenn die Steuerpflicht erst im Laufe des Kalendervierteljahres begründet wird, mit Begründung der Steuerpflicht.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "NOTICE",
+    "source": "estg-37",
+    "act_article": "estg-37",
+    "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+    "reader": "sources/estg-37.reader.txt",
+    "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+    "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+    "native_LF": [
+      3,
+      3
+    ],
+    "exact_quote": "Das Finanzamt setzt die Vorauszahlungen durch Vorauszahlungsbescheid fest.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "BASE",
+    "source": "estg-37",
+    "act_article": "estg-37",
+    "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+    "reader": "sources/estg-37.reader.txt",
+    "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+    "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+    "native_LF": [
+      3,
+      3
+    ],
+    "exact_quote": "Die Vorauszahlungen bemessen sich grundsätzlich nach der Einkommensteuer, die sich nach Anrechnung der Steuerabzugsbeträge (§ 36 Absatz 2 Nummer 2) bei der letzten Veranlagung ergeben hat.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "ADJUST",
+    "source": "estg-37",
+    "act_article": "estg-37",
+    "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+    "reader": "sources/estg-37.reader.txt",
+    "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+    "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+    "native_LF": [
+      3,
+      3
+    ],
+    "exact_quote": "Das Finanzamt kann bis zum Ablauf des auf den Veranlagungszeitraum folgenden 15. Kalendermonats die Vorauszahlungen an die Einkommensteuer anpassen, die sich für den Veranlagungszeitraum voraussichtlich ergeben wird; dieser Zeitraum verlängert sich auf 23 Monate, wenn die Einkünfte aus Land- und Forstwirtschaft bei der erstmaligen Steuerfestsetzung die anderen Einkünfte voraussichtlich überwiegen werden.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "SMALL",
+    "source": "estg-37",
+    "act_article": "estg-37",
+    "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+    "reader": "sources/estg-37.reader.txt",
+    "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+    "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+    "native_LF": [
+      3,
+      3
+    ],
+    "exact_quote": "Bei der Anwendung der Sätze 2 und 3 bleiben Aufwendungen im Sinne des § 10 Absatz 1 Nummer 4, 5, 7 und 9 sowie Absatz 1a, der §§ 10b und 33 sowie die abziehbaren Beträge nach § 33a, wenn die Aufwendungen und abziehbaren Beträge insgesamt 600 Euro nicht übersteigen, außer Ansatz.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "IGNORE",
+    "source": "estg-37",
+    "act_article": "estg-37",
+    "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+    "reader": "sources/estg-37.reader.txt",
+    "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+    "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+    "native_LF": [
+      3,
+      3
+    ],
+    "exact_quote": "Die Steuerermäßigung nach § 34a bleibt außer Ansatz. 6Bei der Anwendung der Sätze 2 und 3 bleibt der Sonderausgabenabzug nach § 10a Absatz 1 außer Ansatz.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "CHILD",
+    "source": "estg-37",
+    "act_article": "estg-37",
+    "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+    "reader": "sources/estg-37.reader.txt",
+    "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+    "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+    "native_LF": [
+      3,
+      3
+    ],
+    "exact_quote": "In den Fällen des § 31, in denen die gebotene steuerliche Freistellung eines Einkommensbetrags in Höhe des Existenzminimums eines Kindes durch das Kindergeld nicht in vollem Umfang bewirkt wird, bleiben bei der Anwendung der Sätze 2 und 3 Freibeträge nach § 32 Absatz 6 und zu verrechnendes Kindergeld außer Ansatz.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "RENT",
+    "source": "estg-37",
+    "act_article": "estg-37",
+    "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+    "reader": "sources/estg-37.reader.txt",
+    "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+    "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+    "native_LF": [
+      3,
+      3
+    ],
+    "exact_quote": "Negative Einkünfte aus der Vermietung oder Verpachtung eines Gebäudes im Sinne des § 21 Absatz 1 Satz 1 Nummer 1 werden bei der Festsetzung der Vorauszahlungen nur für Kalenderjahre berücksichtigt, die nach der Anschaffung oder Fertigstellung dieses Gebäudes beginnen. 9Wird ein Gebäude vor dem Kalenderjahr seiner Fertigstellung angeschafft, tritt an die Stelle der Anschaffung die Fertigstellung. 10Satz 8 gilt nicht für negative Einkünfte aus der Vermietung oder Verpachtung eines Gebäudes, für das Sonderabschreibungen nach § 7b dieses Gesetzes oder erhöhte Absetzungen nach den §§ 14a, 14c oder 14d des Berlinförderungsgesetzes in Anspruch genommen werden. 11Satz 8 gilt für negative Einkünfte aus der Vermietung oder Verpachtung eines anderen Vermögensgegenstands im Sinne des § 21 Absatz 1 Satz 1 Nummer 1 bis 3 entsprechend mit der Maßgabe, dass an die Stelle der Anschaffung oder Fertigstellung die Aufnahme der Nutzung durch den Steuerpflichtigen tritt.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "LATER",
+    "source": "estg-37",
+    "act_article": "estg-37",
+    "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+    "reader": "sources/estg-37.reader.txt",
+    "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+    "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+    "native_LF": [
+      4,
+      4
+    ],
+    "exact_quote": "(4) 1Bei einer nachträglichen Erhöhung der Vorauszahlungen ist die letzte Vorauszahlung für den Veranlagungszeitraum anzupassen. 2Der Erhöhungsbetrag ist innerhalb eines Monats nach Bekanntgabe des Vorauszahlungsbescheids zu entrichten.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "MIN",
+    "source": "estg-37",
+    "act_article": "estg-37",
+    "url": "https://www.gesetze-im-internet.de/estg/__37.html",
+    "reader": "sources/estg-37.reader.txt",
+    "reader_sha256": "e655c7028879b3479fe934cd7a9297c29e0c46e5c45ef4f021731a40c1c3c4c9",
+    "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+    "native_LF": [
+      5,
+      5
+    ],
+    "exact_quote": "(5) 1Vorauszahlungen sind nur festzusetzen, wenn sie mindestens 400 Euro im Kalenderjahr und mindestens 100 Euro für einen Vorauszahlungszeitpunkt betragen. 2Festgesetzte Vorauszahlungen sind nur zu erhöhen, wenn sich der Erhöhungsbetrag im Fall des Absatzes 3 Satz 2 bis 5 für einen Vorauszahlungszeitpunkt auf mindestens 100 Euro, im Fall des Absatzes 4 auf mindestens 5 000 Euro beläuft.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "SOLI_BASE",
+    "source": "solzg-3",
+    "act_article": "solzg-3",
+    "url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+    "reader": "sources/solzg-3.reader.txt",
+    "reader_sha256": "6729e7e8479df5c552f9764a7266d120bfeac9a913e9efb92d6839d34b6f0510",
+    "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "soweit Vorauszahlungen zur Einkommensteuer oder Körperschaftsteuer zu leisten sind: nach den Vorauszahlungen auf die Steuer für Veranlagungszeiträume ab 2002;",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "SOLI_LIMIT",
+    "source": "solzg-3",
+    "act_article": "solzg-3",
+    "url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+    "reader": "sources/solzg-3.reader.txt",
+    "reader_sha256": "6729e7e8479df5c552f9764a7266d120bfeac9a913e9efb92d6839d34b6f0510",
+    "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+    "native_LF": [
+      4,
+      4
+    ],
+    "exact_quote": "(3) Der Solidaritätszuschlag ist von einkommensteuerpflichtigen Personen nur zu erheben, wenn die Bemessungsgrundlage nach Absatz 1 Nummer 1 und 2, vermindert um die Einkommensteuer nach § 32d Absatz 3 und 4 des Einkommensteuergesetzes, 1. in den Fällen des § 32a Absatz 5 und 6 des Einkommensteuergesetzes 40 700 Euro, 2. in anderen Fällen 20 350 Euroübersteigt. Auf die Einkommensteuer nach § 32d Absatz 3 und 4 des Einkommensteuergesetzes ist der Solidaritätszuschlag ungeachtet des Satzes 1 zu erheben.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "SOLI_RATE",
+    "source": "solzg-4",
+    "act_article": "solzg-4",
+    "url": "https://www.gesetze-im-internet.de/solzg_1995/__4.html",
+    "reader": "sources/solzg-4.reader.txt",
+    "reader_sha256": "2b0005826a19694e780f86c03a0cff4ac1f2b8c8052088adc296b558d0740f2f",
+    "raw_sha256": "dd28933ed36da19cae72de5a054f9edbea5c5919cb2aeac6efc257afe9fab058",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "Der Solidaritätszuschlag beträgt 5,5 Prozent der Bemessungsgrundlage. Er beträgt nicht mehr als 11,9 Prozent des Unterschiedsbetrages zwischen der Bemessungsgrundlage, vermindert um die Einkommensteuer nach § 32d Absatz 3 und 4 des Einkommensteuergesetzes, und der nach § 3 Absatz 3, 4 und 5 jeweils maßgebenden Freigrenze. Bruchteile eines Cents bleiben außer Ansatz. Der Solidaritätszuschlag auf die Einkommensteuer nach § 32d Absatz 3 und 4 des Einkommensteuergesetzes und auf die Lohnsteuer nach § 39b Absatz 3 des Einkommensteuergesetzes beträgt ungeachtet des Satzes 2 5,5 Prozent.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "SOLI_YEAR",
+    "source": "solzg-6",
+    "act_article": "solzg-6",
+    "url": "https://www.gesetze-im-internet.de/solzg_1995/__6.html",
+    "reader": "sources/solzg-6.reader.txt",
+    "reader_sha256": "014447c744e895cceac341acd65437c833bc90f0855ba27cb6a0574604667ca4",
+    "raw_sha256": "440b164ab35a89eff28cda416931ac803718f92526b81a0c2f28974b5b04d2f1",
+    "native_LF": [
+      27,
+      27
+    ],
+    "exact_quote": "(27) § 3 Absatz 3 in der Fassung des Artikels 4 des Gesetzes vom 23. Dezember 2024 (BGBl. 2024 I Nr. 449) ist erstmals im Veranlagungszeitraum 2026 anzuwenden.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "CHURCH_PRE",
+    "source": "estg-51a",
+    "act_article": "estg-51a",
+    "url": "https://www.gesetze-im-internet.de/estg/__51a.html",
+    "reader": "sources/estg-51a.reader.txt",
+    "reader_sha256": "81eefdcf0f0a556b9674ac32b4cf5ea2d6a6e322a440b941c30c0fd4285959c3",
+    "raw_sha256": "02bf2ed03b59ac334e8201d01a4294c694363cf10bca8158d100bfde3c667b11",
+    "native_LF": [
+      9,
+      9
+    ],
+    "exact_quote": "(4)1 Die Vorauszahlungen auf Zuschlagsteuern sind gleichzeitig mit den festgesetzten Vorauszahlungen auf die Einkommensteuer zu entrichten; § 37 Absatz 5 ist nicht anzuwenden. 2Solange ein Bescheid über die Vorauszahlungen auf Zuschlagsteuern nicht erteilt worden ist, sind die Vorauszahlungen ohne besondere Aufforderung nach Maßgabe der für die Zuschlagsteuern geltenden Vorschriften zu entrichten. 3§ 240 Absatz 1 Satz 3 der Abgabenordnung ist insoweit nicht anzuwenden; § 254 Absatz 2 der Abgabenordnung gilt insoweit sinngemäß.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "CHURCH_STATE",
+    "source": "estg-51a",
+    "act_article": "estg-51a",
+    "url": "https://www.gesetze-im-internet.de/estg/__51a.html",
+    "reader": "sources/estg-51a.reader.txt",
+    "reader_sha256": "81eefdcf0f0a556b9674ac32b4cf5ea2d6a6e322a440b941c30c0fd4285959c3",
+    "raw_sha256": "02bf2ed03b59ac334e8201d01a4294c694363cf10bca8158d100bfde3c667b11",
+    "native_LF": [
+      11,
+      11
+    ],
+    "exact_quote": "(6) Die Absätze 1 bis 5 gelten für die Kirchensteuern nach Maßgabe landesrechtlicher Vorschriften.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "CHURCH_RATE",
+    "source": "bmf-steuern-a-z",
+    "act_article": "bmf-steuern-a-z",
+    "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf",
+    "reader": "sources/bmf-steuern-a-z.reader.txt",
+    "reader_sha256": "2d05ce2568efd71d46184329c032e3190ad2a35348b1e16e405da272f0f33696",
+    "raw_sha256": "c36ca62b6c89e5524682fcc124a68548aec918813761dbbf866f010f741d52fb",
+    "native_LF": [
+      2967,
+      2967
+    ],
+    "exact_quote": "             je nach Bundesland 8 oder 9 Prozent.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "CHURCH_SPECIAL",
+    "source": "estg-10",
+    "act_article": "estg-10",
+    "url": "https://www.gesetze-im-internet.de/estg/__10.html",
+    "reader": "sources/estg-10.reader.txt",
+    "reader_sha256": "a0fd6ad345cb518cb58a37fdf63186576c8cbf0cc2a2ac9b7b4fde0dcf6882fd",
+    "raw_sha256": "f970952c77597337017ee213013219bd490a91f1f0b7048bbd8cb697d1d9befd",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "4. gezahlte Kirchensteuer; dies gilt nicht, soweit die Kirchensteuer als Zuschlag zur Kapitalertragsteuer oder als Zuschlag auf die nach dem gesonderten Tarif des § 32d Absatz 1 ermittelte Einkommensteuer gezahlt wurde;",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "CREDIT",
+    "source": "estg-36",
+    "act_article": "estg-36",
+    "url": "https://www.gesetze-im-internet.de/estg/__36.html",
+    "reader": "sources/estg-36.reader.txt",
+    "reader_sha256": "a59b98722ed8e2f94d161a7fdc6d3cb83ba52b08f946e4e424e98d5767789f1d",
+    "raw_sha256": "5dd46a731f12aada297b6c739e3ac1f8039097f226afc44cb42fad1b626d4d51",
+    "native_LF": [
+      2,
+      2
+    ],
+    "exact_quote": "Auf die Einkommensteuer werden angerechnet: 1. die für den Veranlagungszeitraum entrichteten Einkommensteuer-Vorauszahlungen (§ 37); 2. die durch Steuerabzug erhobene Einkommensteuer",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "BALANCE",
+    "source": "estg-36",
+    "act_article": "estg-36",
+    "url": "https://www.gesetze-im-internet.de/estg/__36.html",
+    "reader": "sources/estg-36.reader.txt",
+    "reader_sha256": "a59b98722ed8e2f94d161a7fdc6d3cb83ba52b08f946e4e424e98d5767789f1d",
+    "raw_sha256": "5dd46a731f12aada297b6c739e3ac1f8039097f226afc44cb42fad1b626d4d51",
+    "native_LF": [
+      4,
+      4
+    ],
+    "exact_quote": "(4) 1Wenn sich nach der Abrechnung ein Überschuss zuungunsten des Steuerpflichtigen ergibt, hat der Steuerpflichtige (Steuerschuldner) diesen Betrag, soweit er den fällig gewordenen, aber nicht entrichteten Einkommensteuer-Vorauszahlungen entspricht, sofort, im Übrigen innerhalb eines Monats nach Bekanntgabe des Steuerbescheids zu entrichten (Abschlusszahlung). 2Wenn sich nach der Abrechnung ein Überschuss zugunsten des Steuerpflichtigen ergibt, wird dieser dem Steuerpflichtigen nach Bekanntgabe des Steuerbescheids ausgezahlt. 3Bei Ehegatten, die nach den §§ 26, 26b zusammen zur Einkommensteuer veranlagt worden sind, wirkt die Auszahlung an einen Ehegatten auch für und gegen den anderen Ehegatten.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "NOT_EXPENSE",
+    "source": "estg-12",
+    "act_article": "estg-12",
+    "url": "https://www.gesetze-im-internet.de/estg/__12.html",
+    "reader": "sources/estg-12.reader.txt",
+    "reader_sha256": "95d130beec6fcfcfa5007b929b887cc92f029469e5960e3cbeb46c952517f63c",
+    "raw_sha256": "2f2a2749f2f5ec64b89f9ffe5f657575e60bd4a6ef74217332842658f9056282",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "3. die Steuern vom Einkommen und sonstige Personensteuern sowie die Umsatzsteuer für Umsätze, die Entnahmen sind, und die Vorsteuerbeträge auf Aufwendungen, für die das Abzugsverbot der Nummer 1 oder des § 4 Absatz 5 Satz 1 Nummer 1 bis 5, 7 oder Absatz 7 gilt; das gilt auch für die auf diese Steuern entfallenden Nebenleistungen;",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "ANCILLARY",
+    "source": "ao-3",
+    "act_article": "ao-3",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__3.html",
+    "reader": "sources/ao-3.reader.txt",
+    "reader_sha256": "0c6956c4076d4094dc527133fb63fdfbdb40960b216449987495ac5576442b9b",
+    "raw_sha256": "e7921833e74989a31048f1b4271b12ca92dffce537778d9ae788369cfe17f257",
+    "native_LF": [
+      4,
+      4
+    ],
+    "exact_quote": "4. Zinsen nach den §§ 233 bis 237 sowie Zinsen nach den Steuergesetzen, auf die die §§ 238 und 239 anzuwenden sind, sowie Zinsen, die über die §§ 233 bis 237 und die Steuergesetze hinaus nach dem Recht der Europäischen Union auf zu erstattende Steuern zu leisten sind, 5. Säumniszuschläge nach § 240,",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "WEEKENDS",
+    "source": "ao-108",
+    "act_article": "ao-108",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+    "reader": "sources/ao-108.reader.txt",
+    "reader_sha256": "ab2dc42bbe74ee81b7926cdebe2a22466276c8c7a59d1e411b12634b34530fb3",
+    "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+    "native_LF": [
+      3,
+      3
+    ],
+    "exact_quote": "(3) Fällt das Ende einer Frist auf einen Sonntag, einen gesetzlichen Feiertag oder einen Sonnabend, so endet die Frist mit dem Ablauf des nächstfolgenden Werktags.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "PAYMENT",
+    "source": "ao-224",
+    "act_article": "ao-224",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__224.html",
+    "reader": "sources/ao-224.reader.txt",
+    "reader_sha256": "550a20cbb1bda29cc87249d01fef74384e351c666ceef0fc8e7f21a9b9bbb144",
+    "raw_sha256": "a3d09dc43f6c7e7209a1fa636313afcfcaca668b5430dc85decfa0a8fde30d5f",
+    "native_LF": [
+      2,
+      2
+    ],
+    "exact_quote": "(2) Eine wirksam geleistete Zahlung gilt als entrichtet: 1. bei Übergabe oder Übersendung von Zahlungsmitteln am Tag des Eingangs, bei Hingabe oder Übersendung von Schecks jedoch drei Tage nach dem Tag des Eingangs, 2. bei Überweisung oder Einzahlung auf ein Konto der Finanzbehörde und bei Einzahlung mit Zahlschein an dem Tag, an dem der Betrag der Finanzbehörde gutgeschrieben wird, 3. bei Vorliegen eines SEPA-Lastschriftmandats am Fälligkeitstag.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "CHANGE",
+    "source": "ao-164",
+    "act_article": "ao-164",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__164.html",
+    "reader": "sources/ao-164.reader.txt",
+    "reader_sha256": "43c763c554932d66ddbbd717f7b51e1b7430bbeab934196fc7c2b4d2838ee69e",
+    "raw_sha256": "d7a2d7c6e3aff32ba8ae76a4e8791db643056d73b7ed67fd93bf6acf1e92dc5f",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "(1) Die Steuern können, solange der Steuerfall nicht abschließend geprüft ist, allgemein oder im Einzelfall unter dem Vorbehalt der Nachprüfung festgesetzt werden, ohne dass dies einer Begründung bedarf. Die Festsetzung einer Vorauszahlung ist stets eine Steuerfestsetzung unter Vorbehalt der Nachprüfung.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "APPLY",
+    "source": "ao-164",
+    "act_article": "ao-164",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__164.html",
+    "reader": "sources/ao-164.reader.txt",
+    "reader_sha256": "43c763c554932d66ddbbd717f7b51e1b7430bbeab934196fc7c2b4d2838ee69e",
+    "raw_sha256": "d7a2d7c6e3aff32ba8ae76a4e8791db643056d73b7ed67fd93bf6acf1e92dc5f",
+    "native_LF": [
+      2,
+      2
+    ],
+    "exact_quote": "(2) Solange der Vorbehalt wirksam ist, kann die Steuerfestsetzung aufgehoben oder geändert werden. Der Steuerpflichtige kann die Aufhebung oder Änderung der Steuerfestsetzung jederzeit beantragen. Die Entscheidung hierüber kann jedoch bis zur abschließenden Prüfung des Steuerfalls, die innerhalb angemessener Frist vorzunehmen ist, hinausgeschoben werden.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "VALID",
+    "source": "ao-124",
+    "act_article": "ao-124",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__124.html",
+    "reader": "sources/ao-124.reader.txt",
+    "reader_sha256": "fb2374d6e2cdd910f99f60347c394639162e9b9eacf7e314219701c02be44685",
+    "raw_sha256": "37e4a374b64d32a2f4b42d3ddd72e36b5cbe3755a7741bf8a7a481b7b1ac2234",
+    "native_LF": [
+      2,
+      2
+    ],
+    "exact_quote": "(2) Ein Verwaltungsakt bleibt wirksam, solange und soweit er nicht zurückgenommen, widerrufen, anderweitig aufgehoben oder durch Zeitablauf oder auf andere Weise erledigt ist.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "REGISTER",
+    "source": "ao-138",
+    "act_article": "ao-138",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__138.html",
+    "reader": "sources/ao-138.reader.txt",
+    "reader_sha256": "e8cf5cf24aec1db4afa201e68cd307425289a89c3cef798cec592f20c45d1838",
+    "raw_sha256": "843b5720d9bc7f89ef230b4779c3b23c43e2ded3c0f3bb36036d606086787987",
+    "native_LF": [
+      3,
+      3
+    ],
+    "exact_quote": "(1b) Sofern Steuerpflichtige gemäß Absatz 1 Satz 1 bis 3 verpflichtet sind, eine Betriebseröffnung oder Aufnahme einer freiberuflichen Tätigkeit mitzuteilen, haben sie dem in Absatz 1 bezeichneten Finanzamt weitere Auskünfte über die für die Besteuerung erheblichen rechtlichen und tatsächlichen Verhältnisse zu erteilen. Die Auskünfte im Sinne des Satzes 1 sind nach amtlich vorgeschriebenem Datensatz über die amtlich bestimmte Schnittstelle zu übermitteln. Auf Antrag kann das Finanzamt zur Vermeidung unbilliger Härten auf eine Übermittlung gemäß Satz 2 verzichten; in diesem Fall sind die Auskünfte im Sinne des Satzes 1 nach amtlich vorgeschriebenem Vordruck zu erteilen. Die Sätze 1 bis 3 gelten entsprechend für Steuerpflichtige im Sinne des § 137, die nicht nach Absatz 1 zur Anzeige verpflichtet sind.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "REGISTER_MONTH",
+    "source": "ao-138",
+    "act_article": "ao-138",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__138.html",
+    "reader": "sources/ao-138.reader.txt",
+    "reader_sha256": "e8cf5cf24aec1db4afa201e68cd307425289a89c3cef798cec592f20c45d1838",
+    "raw_sha256": "843b5720d9bc7f89ef230b4779c3b23c43e2ded3c0f3bb36036d606086787987",
+    "native_LF": [
+      7,
+      7
+    ],
+    "exact_quote": "(4) Mitteilungen nach den Absätzen 1, 1a und 1b sind innerhalb eines Monats nach dem meldepflichtigen Ereignis zu erstatten.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "LATE",
+    "source": "ao-240",
+    "act_article": "ao-240",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+    "reader": "sources/ao-240.reader.txt",
+    "reader_sha256": "de5abf16cae7369f1c3ce79fd9dc06628e2f09f617e635eae23721672949edb6",
+    "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "(1) Wird eine Steuer nicht bis zum Ablauf des Fälligkeitstages entrichtet, so ist für jeden angefangenen Monat der Säumnis ein Säumniszuschlag von 1 Prozent des abgerundeten rückständigen Steuerbetrags zu entrichten; abzurunden ist auf den nächsten durch 50 Euro teilbaren Betrag. Das Gleiche gilt für zurückzuzahlende Steuervergütungen und Haftungsschulden, soweit sich die Haftung auf Steuern und zurückzuzahlende Steuervergütungen erstreckt. Die Säumnis nach Satz 1 tritt nicht ein, bevor die Steuer festgesetzt oder angemeldet worden ist. Wird die Festsetzung einer Steuer oder Steuervergütung aufgehoben, geändert oder nach § 129 berichtigt, so bleiben die bis dahin verwirkten Säumniszuschläge unberührt; das Gleiche gilt, wenn ein Haftungsbescheid zurückgenommen, widerrufen oder nach § 129 berichtigt wird. Erlischt der Anspruch durch Aufrechnung, bleiben Säumniszuschläge unberührt, die bis zur Fälligkeit der Schuld des Aufrechnenden entstanden sind.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "LATE_ANCILLARY",
+    "source": "ao-240",
+    "act_article": "ao-240",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+    "reader": "sources/ao-240.reader.txt",
+    "reader_sha256": "de5abf16cae7369f1c3ce79fd9dc06628e2f09f617e635eae23721672949edb6",
+    "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+    "native_LF": [
+      2,
+      2
+    ],
+    "exact_quote": "(2) Säumniszuschläge entstehen nicht bei steuerlichen Nebenleistungen.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "GRACE",
+    "source": "ao-240",
+    "act_article": "ao-240",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__240.html",
+    "reader": "sources/ao-240.reader.txt",
+    "reader_sha256": "de5abf16cae7369f1c3ce79fd9dc06628e2f09f617e635eae23721672949edb6",
+    "raw_sha256": "c1e55a37d29e5a34cc140d4e90ec0c02a1ca672c1a79fc6d4a193334b04dd818",
+    "native_LF": [
+      3,
+      3
+    ],
+    "exact_quote": "(3) Ein Säumniszuschlag wird bei einer Säumnis bis zu drei Tagen nicht erhoben. Dies gilt nicht bei Zahlung nach § 224 Absatz 2 Nummer 1.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "INTEREST_SCOPE",
+    "source": "ao-233a",
+    "act_article": "ao-233a",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+    "reader": "sources/ao-233a.reader.txt",
+    "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+    "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "(1) Führt die Festsetzung der Einkommen-, Körperschaft-, Vermögen-, Umsatz- oder Gewerbesteuer zu einem Unterschiedsbetrag im Sinne des Absatzes 3, ist dieser zu verzinsen. Dies gilt nicht für die Festsetzung von Vorauszahlungen und Steuerabzugsbeträgen.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "INTEREST_PERIOD",
+    "source": "ao-233a",
+    "act_article": "ao-233a",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+    "reader": "sources/ao-233a.reader.txt",
+    "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+    "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+    "native_LF": [
+      2,
+      2
+    ],
+    "exact_quote": "(2) Der Zinslauf beginnt 15 Monate nach Ablauf des Kalenderjahrs, in dem die Steuer entstanden ist. Er beginnt für die Einkommen- und Körperschaftsteuer 23 Monate nach diesem Zeitpunkt, wenn die Einkünfte aus Land- und Forstwirtschaft bei der erstmaligen Steuerfestsetzung die anderen Einkünfte überwiegen; hierbei sind Kapitalerträge nach § 32d Absatz 1 und § 43 Absatz 5 des Einkommensteuergesetzes nicht zu berücksichtigen. Er endet mit Ablauf des Tages, an dem die Steuerfestsetzung wirksam wird.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "INTEREST_BASE",
+    "source": "ao-233a",
+    "act_article": "ao-233a",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+    "reader": "sources/ao-233a.reader.txt",
+    "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+    "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+    "native_LF": [
+      4,
+      4
+    ],
+    "exact_quote": "(3) Maßgebend für die Zinsberechnung ist die festgesetzte Steuer, vermindert um die anzurechnenden Steuerabzugsbeträge, um die anzurechnende Körperschaftsteuer und um die bis zum Beginn des Zinslaufs festgesetzten Vorauszahlungen (Unterschiedsbetrag). Bei der Vermögensteuer ist als Unterschiedsbetrag für die Zinsberechnung die festgesetzte Steuer, vermindert um die festgesetzten Vorauszahlungen oder die bisher festgesetzte Jahressteuer, maßgebend. Ein Unterschiedsbetrag zugunsten des Steuerpflichtigen ist nur bis zur Höhe des zu erstattenden Betrags zu verzinsen; die Verzinsung beginnt frühestens mit dem Tag der Zahlung. Besteht der Erstattungsbetrag aus mehreren Teil-Leistungen, richtet sich der Zinsberechnungszeitraum jeweils nach dem Zeitpunkt der einzelnen Leistung; die Leistungen sind in chronologischer Reihenfolge zu berücksichtigen, beginnend mit der jüngsten Leistung.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "VOLUNTARY",
+    "source": "ao-233a",
+    "act_article": "ao-233a",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__233a.html",
+    "reader": "sources/ao-233a.reader.txt",
+    "reader_sha256": "4f25afff442a5df860dd33b4723b6508da53b98b4748813648fd9e8484095cb4",
+    "raw_sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+    "native_LF": [
+      9,
+      9
+    ],
+    "exact_quote": "(8) Zinsen auf einen Unterschiedsbetrag zuungunsten des Steuerpflichtigen (Nachzahlungszinsen) sind entweder nicht festzusetzen oder zu erlassen, soweit Zahlungen oder andere Leistungen auf eine später wirksam gewordene Steuerfestsetzung erbracht wurden, die Finanzbehörde diese Leistungen angenommen und auf die festgesetzte und zu entrichtende Steuer angerechnet hat. Absatz 3 Satz 4 ist hierbei entsprechend anzuwenden. Soweit Nachzahlungszinsen aufgrund einer Aufhebung, Änderung oder Berichtigung der Steuerfestsetzung nach Absatz 5 Satz 3 zweiter Halbsatz entfallen, mindert sich der Zinsverzicht nach Satz 1 entsprechend. Die §§ 163 und 227 bleiben unberührt.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "INTEREST_RATE",
+    "source": "ao-238",
+    "act_article": "ao-238",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+    "reader": "sources/ao-238.reader.txt",
+    "reader_sha256": "b498560da681c999714264f8e70d8e691a277da18f088ddfb51316b8bb61e908",
+    "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+    "native_LF": [
+      2,
+      2
+    ],
+    "exact_quote": "(1a) In den Fällen des § 233a betragen die Zinsen abweichend von Absatz 1 Satz 1 ab dem 1. Januar 2019 0,15 Prozent für jeden Monat, das heißt 1,8 Prozent für jedes Jahr.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "FULL_MONTH",
+    "source": "ao-238",
+    "act_article": "ao-238",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+    "reader": "sources/ao-238.reader.txt",
+    "reader_sha256": "b498560da681c999714264f8e70d8e691a277da18f088ddfb51316b8bb61e908",
+    "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "(1) Die Zinsen betragen für jeden Monat einhalb Prozent. Sie sind von dem Tag an, an dem der Zinslauf beginnt, nur für volle Monate zu zahlen; angefangene Monate bleiben außer Ansatz. Erlischt der zu verzinsende Anspruch durch Aufrechnung, gilt der Tag, an dem die Schuld des Aufrechnenden fällig wird, als Tag der Zahlung.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "ROUND",
+    "source": "ao-238",
+    "act_article": "ao-238",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__238.html",
+    "reader": "sources/ao-238.reader.txt",
+    "reader_sha256": "b498560da681c999714264f8e70d8e691a277da18f088ddfb51316b8bb61e908",
+    "raw_sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+    "native_LF": [
+      5,
+      5
+    ],
+    "exact_quote": "(2) Für die Berechnung der Zinsen wird der zu verzinsende Betrag jeder Steuerart auf den nächsten durch 50 Euro teilbaren Betrag abgerundet.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "HIST_2019",
+    "source": "egao-97-36",
+    "act_article": "egao-97-36",
+    "url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html",
+    "reader": "sources/egao-97-36.reader.txt",
+    "reader_sha256": "33675804855e15b5ce79c16826df9dbd4f7392841e458dda172ad4f9e38f28a4",
+    "raw_sha256": "473093a055687b4f1080906450a53bfa4454856afe4a25599e1907757d5436bc",
+    "native_LF": [
+      2,
+      2
+    ],
+    "exact_quote": "(2) Abweichend von § 233a Absatz 2 Satz 1 der Abgabenordnung in der am 19. Februar 2021 geltenden Fassung beginnt der Zinslauf für den Besteuerungszeitraum 2019 am 1. Oktober 2021. In den Fällen des § 233a Absatz 2 Satz 2 der Abgabenordnung in der am 19. Februar 2021 geltenden Fassung beginnt der Zinslauf für den Besteuerungszeitraum 2019 am 1. Mai 2022.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "HIST_2020_2024",
+    "source": "egao-97-36",
+    "act_article": "egao-97-36",
+    "url": "https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html",
+    "reader": "sources/egao-97-36.reader.txt",
+    "reader_sha256": "33675804855e15b5ce79c16826df9dbd4f7392841e458dda172ad4f9e38f28a4",
+    "raw_sha256": "473093a055687b4f1080906450a53bfa4454856afe4a25599e1907757d5436bc",
+    "native_LF": [
+      3,
+      3
+    ],
+    "exact_quote": "(3) Für die Besteuerungszeiträume 2020 bis 2024 sind die §§ 109, 149, 152 und 233a der Abgabenordnung in der am 23. Juni 2022 geltenden Fassung mit folgenden Maßgaben anzuwenden: 1. In § 109 Absatz 2 Satz 1 Nummer 1 und § 149 Absatz 3 und 4 Satz 1 und 3 der Abgabenordnung tritt jeweils an die Stelle des letzten Tags des Monats Februar des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres a) für den Besteuerungszeitraum 2020 der 31. August 2022, b) für den Besteuerungszeitraum 2021 der 31. August 2023, c) für den Besteuerungszeitraum 2022 der 31. Juli 2024, d) für den Besteuerungszeitraum 2023 der 31. Mai 2025 und e) für den Besteuerungszeitraum 2024 der 30. April 2026. 2. In § 109 Absatz 2 Satz 2 und § 149 Absatz 3 und 4 Satz 5 der Abgabenordnung tritt jeweils an die Stelle des 31. Juli des zweiten auf den Besteuerungszeitraum folgenden Kalenderjahres a) für den Besteuerungszeitraum 2020 der 31. Januar 2023, b) für den Besteuerungszeitraum 2021 der 31. Januar 2024, c) für den Besteuerungszeitraum 2022 der 31. Dezember 2024, d) für den Besteuerungszeitraum 2023 der 31. Oktober 2025 und e) für den Besteuerungszeitraum 2024 der 30. September 2026. 3. In § 149 Absatz 2 Satz 1 der Abgabenordnung tritt an die Stelle der Angabe „sieben Monate“ a) für die Besteuerungszeiträume 2020 und 2021 die Angabe „zehn Monate“, b) für den Besteuerungszeitraum 2022 die Angabe „neun Monate“ und c) für den Besteuerungszeitraum 2023 die Angabe „acht Monate“. 4. In § 149 Absatz 2 Satz 2 der Abgabenordnung tritt an die Stelle der Angabe „des siebten Monats“ a) für die Besteuerungszeiträume 2020 und 2021 die Angabe „des zehnten Monats“, b) für den Besteuerungszeitraum 2022 die Angabe „des neunten Monats“ und c) für den Besteuerungszeitraum 2023 die Angabe „des achten Monats“. 5. In § 152 Absatz 2 Nummer 1 der Abgabenordnung tritt an die Stelle der Angabe „14 Monaten“ a) für die Besteuerungszeiträume 2020 und 2021 die Angabe „20 Monaten“, b) für den Besteuerungszeitraum 2022 die Angabe „19 Monaten“, c) für den Besteuerungszeitraum 2023 die Angabe „17 Monaten“ und d) für den Besteuerungszeitraum 2024 die Angabe „16 Monaten“. 6. In § 152 Absatz 2 Nummer 2 der Abgabenordnung tritt an die Stelle der Angabe „19 Monaten“ a) für die Besteuerungszeiträume 2020 und 2021 die Angabe „25 Monaten“, b) für den Besteuerungszeitraum 2022 die Angabe „24 Monaten“, c) für den Besteuerungszeitraum 2023 die Angabe „22 Monaten“ und d) für den Besteuerungszeitraum 2024 die Angabe „21 Monaten“. 7. In § 233a Absatz 2 Satz 1 der Abgabenordnung tritt an die Stelle der Angabe „15 Monate“ a) für die Besteuerungszeiträume 2020 und 2021 die Angabe „21 Monate“, b) für den Besteuerungszeitraum 2022 die Angabe „20 Monate“, c) für den Besteuerungszeitraum 2023 die Angabe „18 Monate“ und d) für den Besteuerungszeitraum 2024 die Angabe „17 Monate“. 8. In § 233a Absatz 2 Satz 2 der Abgabenordnung tritt an die Stelle der Angabe „23 Monate“ a) für die Besteuerungszeiträume 2020 und 2021 die Angabe „29 Monate“, b) für den Besteuerungszeitraum 2022 die Angabe „28 Monate“, c) für den Besteuerungszeitraum 2023 die Angabe „26 Monate“ und d) für den Besteuerungszeitraum 2024 die Angabe „25 Monate“.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "OLD_ADJUST",
+    "source": "estg-52",
+    "act_article": "estg-52",
+    "url": "https://www.gesetze-im-internet.de/estg/__52.html",
+    "reader": "sources/estg-52.reader.txt",
+    "reader_sha256": "1a03d9af193ec9637744ad730f30cf0fd7964ee9a3f00d79b6904010745a0b7b",
+    "raw_sha256": "bec6241b5340b28eb111acc63168aaa37356253f714334f69786379dd8edbfd5",
+    "native_LF": [
+      64,
+      64
+    ],
+    "exact_quote": "(35d) § 37 Absatz 3 Satz 3 ist auf Antrag des Steuerpflichtigen mit der Maßgabe anzuwenden, dass 1. für den Veranlagungszeitraum 2019 an die Stelle des 15. Kalendermonats der 21. Kalendermonat und an die Stelle des 23. Kalendermonats der 28. Kalendermonat, 2. für die Veranlagungszeiträume 2020 und 2021 an die Stelle des 15. Kalendermonats der 21. Kalendermonat und an die Stelle des 23. Kalendermonats der 29. Kalendermonat, 3. für den Veranlagungszeitraum 2022 an die Stelle des 15. Kalendermonats der 20. Kalendermonat und an die Stelle des 23. Kalendermonats der 28. Kalendermonat, 4. für den Veranlagungszeitraum 2023 an die Stelle des 15. Kalendermonats der 18. Kalendermonat und an die Stelle des 23. Kalendermonats der 26. Kalendermonat und 5. für den Veranlagungszeitraum 2024 an die Stelle des 15. Kalendermonats der 17. Kalendermonat und an die Stelle des 23. Kalendermonats der 25. Kalendermonattritt.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "FALSE",
+    "source": "ao-370",
+    "act_article": "ao-370",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__370.html",
+    "reader": "sources/ao-370.reader.txt",
+    "reader_sha256": "7d674859807e5233b7b0fd3fed683b2a7270223555628b3ff4f89e3375eb426f",
+    "raw_sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "(1) Mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe wird bestraft, wer 1. den Finanzbehörden oder anderen Behörden über steuerlich erhebliche Tatsachen unrichtige oder unvollständige Angaben macht, 2. die Finanzbehörden pflichtwidrig über steuerlich erhebliche Tatsachen in Unkenntnis lässt oder 3. pflichtwidrig die Verwendung von Steuerzeichen oder Steuerstemplern unterlässtund dadurch Steuern verkürzt oder für sich oder einen anderen nicht gerechtfertigte Steuervorteile erlangt.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "ATTEMPT",
+    "source": "ao-370",
+    "act_article": "ao-370",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__370.html",
+    "reader": "sources/ao-370.reader.txt",
+    "reader_sha256": "7d674859807e5233b7b0fd3fed683b2a7270223555628b3ff4f89e3375eb426f",
+    "raw_sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+    "native_LF": [
+      2,
+      2
+    ],
+    "exact_quote": "(2) Der Versuch ist strafbar.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "DEFERRAL",
+    "source": "ao-222",
+    "act_article": "ao-222",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__222.html",
+    "reader": "sources/ao-222.reader.txt",
+    "reader_sha256": "0027a626de01e00a7fd8d0e082f7fa2b5cf325281247ebaa5879feb0b474398e",
+    "raw_sha256": "8fb40b4ba01fe464f7bad592659de781e924468510f4fe633daff5cf97aa9be6",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "Die Finanzbehörden können Ansprüche aus dem Steuerschuldverhältnis ganz oder teilweise stunden, wenn die Einziehung bei Fälligkeit eine erhebliche Härte für den Schuldner bedeuten würde und der Anspruch durch die Stundung nicht gefährdet erscheint. Die Stundung soll in der Regel nur auf Antrag und gegen Sicherheitsleistung gewährt werden. Steueransprüche gegen den Steuerschuldner können nicht gestundet werden, soweit ein Dritter (Entrichtungspflichtiger) die Steuer für Rechnung des Steuerschuldners zu entrichten, insbesondere einzubehalten und abzuführen hat. Die Stundung des Haftungsanspruchs gegen den Entrichtungspflichtigen ist ausgeschlossen, soweit er Steuerabzugsbeträge einbehalten oder Beträge, die eine Steuer enthalten, eingenommen hat.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "DEF_INTEREST",
+    "source": "ao-234",
+    "act_article": "ao-234",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__234.html",
+    "reader": "sources/ao-234.reader.txt",
+    "reader_sha256": "b7ca17a8f1e07e0a61e04a0ca9cdaf3bef6f082622afaf93844218a7afdf89ce",
+    "raw_sha256": "9e5bb5fe1311894b46b3490d9070453c493eb467763e34bd9dc641f40bbaf1c8",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "(1) Für die Dauer einer gewährten Stundung von Ansprüchen aus dem Steuerschuldverhältnis werden Zinsen erhoben; für Haftungsansprüche gilt dies nur, soweit sich die Haftung auf Steuern und zurückzuzahlende Steuervergütungen erstreckt. Wird der Steuer- oder Haftungsbescheid nach Ablauf der Stundung aufgehoben, geändert oder nach § 129 berichtigt, so bleiben die bis dahin entstandenen Zinsen unberührt.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "DEF_CREDIT",
+    "source": "ao-234",
+    "act_article": "ao-234",
+    "url": "https://www.gesetze-im-internet.de/ao_1977/__234.html",
+    "reader": "sources/ao-234.reader.txt",
+    "reader_sha256": "b7ca17a8f1e07e0a61e04a0ca9cdaf3bef6f082622afaf93844218a7afdf89ce",
+    "raw_sha256": "9e5bb5fe1311894b46b3490d9070453c493eb467763e34bd9dc641f40bbaf1c8",
+    "native_LF": [
+      3,
+      3
+    ],
+    "exact_quote": "(3) Zinsen nach § 233a, die für denselben Zeitraum festgesetzt wurden, sind anzurechnen.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "PERSON",
+    "source": "estg-1",
+    "act_article": "estg-1",
+    "url": "https://www.gesetze-im-internet.de/estg/__1.html",
+    "reader": "sources/estg-1.reader.txt",
+    "reader_sha256": "de759e13cf094ca682c262e335d66fc24cd924de04499b73810aa81116e1206d",
+    "raw_sha256": "aa3116bd65c47709867eaba213a4f5a482aabe7075b4e0ae7b31fb8f2830d6ca",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "Natürliche Personen, die im Inland einen Wohnsitz oder ihren gewöhnlichen Aufenthalt haben, sind unbeschränkt einkommensteuerpflichtig.",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "PARTNERS",
+    "source": "estg-15",
+    "act_article": "estg-15",
+    "url": "https://www.gesetze-im-internet.de/estg/__15.html",
+    "reader": "sources/estg-15.reader.txt",
+    "reader_sha256": "9831a4177d2a34a5d89e6f69b1dd9e8d04d4a63eb22621fe5ecda6f716882cfe",
+    "raw_sha256": "9c66144e9197fbf44d69007269443432cc8e67aa92b3c7fb1d2c732e3315cbb4",
+    "native_LF": [
+      1,
+      1
+    ],
+    "exact_quote": "die Gewinnanteile der Gesellschafter einer Offenen Handelsgesellschaft, einer Kommanditgesellschaft und einer anderen Gesellschaft, bei der der Gesellschafter als Unternehmer (Mitunternehmer) des Betriebs anzusehen ist,",
+    "read_on": "2026-10-29"
+  },
+  {
+    "id": "ELSTER",
+    "source": "live official webpage",
+    "act_article": "ELSTER published form name",
+    "url": "https://www.elster.de/eportal/formulare-leistungen/alleformulare/eingvorauszlg",
+    "exact_quote": "Antrag auf Anpassung von Vorauszahlungen",
+    "read_on": "2026-10-29",
+    "scope": "Actually opened rendered page title/heading. No authenticated form completion, version selection or source-body download asserted."
+  },
+  {
+    "id": "MUNICIPAL",
+    "source": "live official webpage",
+    "act_article": "GewStG §1",
+    "url": "https://www.gesetze-im-internet.de/gewstg/__1.html",
+    "exact_quote": "Die Gemeinden erheben eine Gewerbesteuer als Gemeindesteuer.",
+    "read_on": "2026-10-29",
+    "scope": "Actually opened official provision, exact displayed sentence; no new raw HTML acquisition claim."
+  }
+]

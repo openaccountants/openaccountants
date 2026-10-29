@@ -1,0 +1,100 @@
+{
+  "status": "Writer successor, independent review pending",
+  "artifacts": [
+    {
+      "path": "after/de-crypto-tax.md",
+      "sha256": "e227cef8836a9ec2220197dd3505fca5ce9f1b5f610a5363a9e98c50afd8e3fa",
+      "bytes": 39516
+    },
+    {
+      "path": "before/de-crypto-tax.md",
+      "sha256": "70aea2e9373458a904f6cef335c15302b9de48a6bc845c5e14e7144b5e99e35a",
+      "bytes": 36842
+    },
+    {
+      "path": "build-ledger.py",
+      "sha256": "b7fa916d4a291bcd46433941fd10c9812a20078f77ef17da2767a5d46d73179c",
+      "bytes": 7228
+    },
+    {
+      "path": "check-and-seal.py",
+      "sha256": "ee489f1a51d46e124b34f6553e00b5764fe8835663bba5c3b7317bb9996160ce",
+      "bytes": 9550
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "9ac70e934e05e1280e71774dfdf2c22369ca6b4b9f06171d57d90927d49cf867",
+      "bytes": 7014
+    },
+    {
+      "path": "historical-apply.py",
+      "sha256": "f150b0397274be7e9677b8a4b1d1bf6050d3b1b8a42598ef89797bc5b14265f9",
+      "bytes": 10329
+    },
+    {
+      "path": "ledgers/de-crypto-tax.md",
+      "sha256": "c1e540c5debc20110b64493a4cdf1d0da86636efb0749a65ee9e52f3d7c585d6",
+      "bytes": 183839
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "e984e7a0f7fd1832fdd8f8b52a050913adfb4a216e267e94c0948f4bc9f82cfa",
+      "bytes": 1743
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "68a45be71e148c59ac36fa33b401af6b17cafed1e74b6b9d170b4340dd8d736f",
+      "bytes": 17188
+    },
+    {
+      "path": "preservation-proof.json",
+      "sha256": "3184a4ff11586655ac33d4b90c205040aa370755024108d705ef44d4a9ac3afe",
+      "bytes": 489
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "1c487e3a6eb7826c8b977f510e982fbf8ec43eac11334c7cde55882f59680f02",
+      "bytes": 232988
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "51242db1ca2a86785f0a525232d06dcc45589e520489c57c13e67542c1c863d2",
+      "bytes": 140268
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "91ea34e80dd849bc4efdf68fc1e31c1dfedb502c48110cbf71f21d6157182954",
+      "bytes": 860
+    },
+    {
+      "path": "support/de-crypto-tax/old-topic-destinations.json",
+      "sha256": "1c9502b078547a249dc12ae6ef3ef932ab47e1606900064992a2b5b7d0ea0a4f",
+      "bytes": 212834
+    },
+    {
+      "path": "support/de-crypto-tax/rows.json",
+      "sha256": "67b116dc1d575b1bccb1d5ecc13a11ed73f4f9e3f1de524d0a9bbe5f7976e34e",
+      "bytes": 97267
+    },
+    {
+      "path": "support/guide.diff",
+      "sha256": "3230fa9ba91e93ea90748a11954a9e180a54334f7d134ed4559fec6fa1ad8bbe",
+      "bytes": 9969
+    },
+    {
+      "path": "support/line-map.json",
+      "sha256": "fa0b62baa197f292e783406a814afdf341e35d1710a1f03f0306953a135640b8",
+      "bytes": 19361
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "4e75348ad4fbea9a783155f619ca9ecee41a01e582507f2fae39235d34c47e52",
+      "bytes": 27563
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "da744d22124a0406ff0c783691b6a9996318b848f6029dd093b8a266f4897809",
+      "bytes": 2120
+    }
+  ]
+}

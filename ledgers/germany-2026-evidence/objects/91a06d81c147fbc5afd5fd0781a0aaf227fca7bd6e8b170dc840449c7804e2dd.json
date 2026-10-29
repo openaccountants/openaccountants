@@ -1,0 +1,13 @@
+{
+  "slug": "de-crypto-tax",
+  "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-crypto-tax.md",
+  "Guide_sha256": "63a6ef182271bbf75f149139f08aa8184aa266dab06a266638aec5cecb853699",
+  "Guide_bytes": 39539,
+  "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R112-crypto-source-scope-writer-successor-2026-10-29/ledgers/de-crypto-tax.md",
+  "ledger_sha256": "a57d239d578db72eea76ba39cb018ca226ca5db49f3f886bbd3f6928e5adc79b",
+  "rows": 158,
+  "old_origins": 346,
+  "changed_current_row_ids": [
+    "076"
+  ]
+}

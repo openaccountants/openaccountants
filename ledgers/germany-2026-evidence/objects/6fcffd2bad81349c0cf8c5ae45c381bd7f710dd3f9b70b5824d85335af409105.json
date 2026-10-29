@@ -1,0 +1,12 @@
+[
+  {
+    "old": "version: 1.2",
+    "new": "version: 1.3",
+    "reason": "Monotonic content version; actual read date already29October"
+  },
+  {
+    "old": "Not yet confirmed: the ELSTER form names GewSt 1 A and GewSt 1 D for 2026 (not read on ELSTER); any de minimis limit for Abfärbung under § 15(3) no. 1 EStG (case law, not in the statute); the Munich multiplier as a decision for 2026 specifically (the city page says \"aktuell gültig\" without a year).",
+    "new": "Not yet confirmed: the ELSTER form names GewSt 1 A and GewSt 1 D for 2026 (not read on ELSTER); the Munich multiplier as a decision for 2026 specifically (the city page says \"aktuell gültig\" without a year).",
+    "reason": "DE-R10 remove only obsolete supplied-method reservation"
+  }
+]

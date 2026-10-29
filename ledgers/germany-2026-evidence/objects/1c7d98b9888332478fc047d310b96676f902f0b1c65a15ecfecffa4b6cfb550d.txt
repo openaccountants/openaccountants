@@ -1,0 +1,313 @@
+Versionen und Bundles der XRechnung | XStandards Einkauf
+Start
+Bereiche
+Überblick
+Peppol
+eForms-DE
+XBestellung
+XBezahldienste
+XRechnung
+Aktuelles
+Dokumente
+FAQ
+Veranstaltungen
+Kontakt
+Suchen
+Suchen
+Home
+XRechnung
+Versionen und Bundles der XRechnung
+XRechnung
+Versionen und Bundles
+Am 01. Februar 2024 ist die Version 3.0 in Kraft getreten und sollte genutzt werden. Version 2.3 wurde zum 01. Februar 2024 außer Kraft gesetzt und ist nicht mehr zur Nutzung empfohlen.
+Im Sommer 2026 gab es kein normatives Release von XRechnung. Somit gibt es auch keinen Versionswechsel und XRechnung 3.0 wird daher bis mindestens 31.07.2027 in Kraft bleiben.
+Im September 2026 wurde die Vorversion der Spezifikation XRechnung 4.0 veröffentlicht. Die finale Version XRechnung 4.0 wird voraussichtlich im Frühjahr 2027 im Bundle mit den technischen Komponenten veröffentlicht werden.
+Aktuelle Version 3.0
+Übersicht der aktuellen Version
+Die nachfolgende Tabelle gibt eine Übersicht der aktuell in Kraft befindlichen Version inkl. der zugehörigen Releases der technischen Komponenten.
+XRechnung Version
+Fassung vom
+Gültigkeitszeitraum
+XRechnung Bugfix Visualization 2026-10-13
+Externer Link
+Fassung vom
+13.10.2026
+Ab dem 13.10.2026
+XRechnung Bundle 3.0.2 Summer 2026 Bugfix
+Externer Link
+Fassung vom
+31.08.2026
+Ab dem 31.08.2026
+XRechnung Bundle 3.0.2 Winter 2025/26 Bugfix
+Externer Link
+Fassung vom
+10.07.2025
+Ab dem 10.07.2025
+XRechnung Bundle 3.0.2 Spring 2025 Bugfix
+Externer Link
+Fassung vom
+21.03.2025
+Ab dem 21.03.2025
+XRechnung Bundle 3.0.2 Fall 2024 Bugfix
+Externer Link
+Fassung vom
+20.11.2024
+Ab dem 20.11.2024
+XRechnung Bundle 3.0.2
+Externer Link
+Fassung vom
+02.07.2024
+Ab dem 02.07.2024
+XRechnung Version 3.0.2
+pdf
+5.12 MB
+Fassung vom
+20.06.2024
+Ab dem 20.06.2024
+XRechnung Syntax Binding 3.0.2
+pdf
+128.68 KB
+Fassung vom
+20.06.2024
+Ab dem 20.06.2024
+English Summary XRechnung 3.0.2
+pdf
+471.69 KB
+Fassung vom
+20.06.2024
+Ab dem 20.06.2024
+XRechnung Bundle 3.0.1
+zip
+42.72 MB
+Fassung vom
+15.11.2023
+Ab dem 01.02.2024
+XRechnung Version 3.0.1
+pdf
+5.10 MB
+Fassung vom
+22.09.2023
+Ab dem 01.02.2024
+English Summary of XRechnung 3.0.1 and Peppol
+pdf
+481.25 KB
+Fassung vom
+22.09.2023
+Ab dem 01.02.2024
+XRechnung Syntax Binding 3.0.1
+pdf
+80.51 KB
+Fassung vom
+22.09.2023
+Ab dem 01.02.2024
+XRechnung Bundle 3.0.0
+zip
+42.51 MB
+Fassung vom
+31.07.2023
+Ab dem 01.08.2023
+XRechnung Version 3.0.0
+pdf
+4.80 MB
+Fassung vom
+31.07.2023
+Ab dem 01.08.2023
+English Summary of XRechnung 3.0.0
+pdf
+481.04 KB
+Fassung vom
+31.07.2024
+Ab dem 01.08.2023
+XRechnung Syntax Binding 3.0.0
+pdf
+151.65 KB
+Fassung vom
+31.07.2023
+Ab dem 01.08.2023
+Demnächst in Kraft tretende Version
+Übersicht der demnächst in Kraft tretenden Version
+Im September 2026 wurde die Vorversion der Spezifikation XRechnung 4.0 veröffentlicht. Die finale Version XRechnung 4.0 wird voraussichtlich im Frühjahr 2027 im Bundle mit den technischen Komponenten veröffentlicht werden.
+XRechnung Version
+Fassung vom
+Gültigkeitszeitraum
+Vorversion XRechnung 4.0.0
+pdf
+1.06 MB
+Fassung vom
+15.09.2026
+—
+Ältere Versionen
+Übersicht der nicht mehr in Kraft befindlichen Versionen
+Die nachfolgende Tabelle gibt einen Überblick über nicht mehr in Kraft befindliche Versionen inkl. der zugehörigen Releases der technischen Komponenten. Diese Tabelle dient Informationszwecken sowie zum Download der entsprechenden Releases, um im Bedarfsfalle mit veralteten Versionen arbeiten zu können bzw. diese rekonstruieren zu können. Es wird ausdrücklich nicht empfohlen, diese Versionen nach Außerkraftsetzung zur Rechnungseinreichung zu verwenden.
+XRechnung Versionen & Bundles
+Fassung vom
+Gültigkeitszeitraum
+XRechnung Bundle Version 2.3.1
+zip
+40.23 MB
+Fassung vom
+12.05.2023
+01.08.2023 – 31.01.2024
+XRechnung Version 2.3.1
+pdf
+4.76 MB
+Fassung vom
+03.02.2023
+01.08.2023 – 31.01.2024
+English Summary XRechnung Version 2.3.1
+pdf
+435.94 KB
+Fassung vom
+03.02.2023
+01.08.2023 – 31.01.2024
+Syntax Binding XRechnung Version 2.3.1
+pdf
+127.42 KB
+Fassung vom
+03.02.2023
+01.08.2023 – 31.01.2024
+XRechnung Bugfix Visualisierungskomponente
+Externer Link
+Fassung vom
+31.07.2022
+01.08.2022 – 31.07.2023
+XRechnung Bundle 2.2.0 Sommerrelease
+zip
+32.69 MB
+Fassung vom
+23.06.2022
+01.07.2022 – 31.07.2023
+XRechnung Bundle 2.2.0 Spring Bugfix
+zip
+31.24 MB
+Fassung vom
+31.05.2022
+01.06.2022 – 31.07.2023
+XRechnung Bundle 2.2.0 Hotfix
+zip
+31.23 MB
+Fassung vom
+07.02.2022
+15.02.2022 – 31.07.2023
+XRechnung Bundle 2.2.0
+zip
+31.20 MB
+Fassung vom
+27.01.2022
+01.02.2022 – 31.07.2023
+XRechnung Version 2.2.0
+pdf
+7.09 MB
+Fassung vom
+27.01.2022
+01.02.2022 – 31.07.2023
+XRechnung Bundle 2.2.0 Fall Bugfix
+zip
+32.72 MB
+Fassung vom
+15.11.2022
+15.11.2022 – 31.07.2023
+XRechnung Bundle 2.1.1
+zip
+30.40 MB
+Fassung vom
+27.01.2022
+01.02.2022-31.07.2022
+Dokument nicht verfügbar
+Fassung vom
+22.07.2021
+XRechnung Version 2.1.0 zurückgezogen
+XRechnung Version 2.0.1
+pdf
+6.65 MB
+Fassung vom
+16.12.2020
+01.07.2021-31.01.2022
+XRechnung Bundle 2.0.1
+zip
+30.09 MB
+Fassung vom
+16.12.2020
+01.07.2021-31.01.2022
+XRechnung Version 2.0.0
+pdf
+6.53 MB
+Fassung vom
+30.06.2020
+01.01.2021-30.06.2021
+XRechnung Bundle 2.0.0
+zip
+38.22 MB
+Fassung vom
+30.06.2020
+01.01.2021-30.06.2021
+XRechnung Version 1.2.2
+pdf
+4.68 MB
+Fassung vom
+19.12.2019
+01.07.2020 – 31.12.2020
+XRechnung Bundle 1.2.2
+zip
+12.94 MB
+Fassung vom
+19.12.2019
+01.07.2020 – 31.12.2020
+XRechnung Version 1.2.1
+pdf
+4.71 MB
+Fassung vom
+28.06.2019
+01.01.2020 – 30.06.2020
+XRechnung Version 1.2.0
+pdf
+4.67 MB
+Fassung vom
+18.12.2018
+01.07.2019 – 31.12.2019
+XRechnung Version 2.1.1
+pdf
+6.66 MB
+Fassung vom
+27.07.2021
+01.02.2022-31.07.2022
+XRechnung Version 1.1
+pdf
+4.82 MB
+Fassung vom
+30.11.2017
+01.12.2017 – 30.06.2019
+XRechnung Version 1.0
+pdf
+4.79 MB
+Fassung vom
+10.05.2017
+01.06.2017 – 30.11.2017
+Bleiben Sie mit unserem RSS-Newsfeed auf dem aktuellsten Stand!
+Mit unserem RSS-Newsfeed erhalten Sie alle Informationen zu neusten Entwicklungen, Veranstaltungen und Standardveröffentlichungen direkt und sofort.
+Verwenden Sie folgenden Link: https://xeinkauf.de/aktuelles/feed
+RSS-Link kopieren
+Kontakt
+Senator für Finanzen
+Koordinierungsstelle für IT Standards (KoSIT)
+Rudolf-Hilferding-Platz 1
+28195 Bremen
+xeinkauf@finanzen.bremen.de
+Schnellzugriff
+Newsfeed
+Aktuelles
+Dokumente
+FAQ
+Kontakt
+XStandards Einkauf
+Peppol
+eForms-DE
+XBestellung
+XBezahldienste
+Rechtliches
+Datenschutz
+Impressum
+Barrierefreiheit
+Cookie-Einstellung
+© 2026 Koordinierungsstelle für IT-Standards
+Seitenübersicht

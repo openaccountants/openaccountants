@@ -1,0 +1,31 @@
+{
+  "actual_Git_origin_count": 512,
+  "origin_mismatches": 0,
+  "actual_refs": [
+    "2884db4bbfec51d531d561e8f9a96f607ba6652f",
+    "62b7639a5a68324a83a96bb0190fff8b7c76f8c5"
+  ],
+  "semantic_spots_actually_read": [
+    11,
+    12,
+    17,
+    18,
+    25,
+    27,
+    31,
+    35,
+    43,
+    51,
+    55,
+    63,
+    76,
+    85,
+    95,
+    111,
+    130,
+    144,
+    155,
+    163
+  ],
+  "scope": "All512 actual Git-origin units independently byte matched,20selected substantive old wordings/routes read. Oldchurchstate assertions marked source limits, not a false current verification. Archived3originalpayrollillustrations are historic labelled approximations where replaced; no claim alloldnumbersarecurrent."
+}

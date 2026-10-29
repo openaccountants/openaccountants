@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "args": [
+    "python3",
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/scripts/check-examples.py",
+    "skills/international/germany/germany-einvoice.md",
+    "skills/international/germany/germany-tax-optimization.md"
+  ]
+}

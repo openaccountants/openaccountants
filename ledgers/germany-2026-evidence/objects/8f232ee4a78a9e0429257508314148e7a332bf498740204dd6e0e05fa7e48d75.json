@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201510044?type=1646225765",
+    "file": "BFH-VIIIR6-12.pdf",
+    "sha256": "18a310660b30ee1211acf5e05a3528c37e77fbb58af983ae25f3df0dac3ee518",
+    "status": 200,
+    "bytes": 74225,
+    "content_type": "application/pdf",
+    "scope": "acquisition only; actual selected reading separately recorded"
+  },
+  {
+    "url": "https://grsth.bundesfinanzministerium.de/esth/2025/A-Einkommensteuergesetz/II-Einkommen-2-24b/8-Die-einzelnen-Einkunftsarten-13-24b/b-Gewerbebetrieb-15-17/Paragraf-15/paragraf-15.html",
+    "file": "EStH15-8.html",
+    "sha256": "585fb3f29a5bf17488d4ab46c9c99ba2a3b611010b082f3dd40ef58b01bc7c9f",
+    "status": 200,
+    "bytes": 1386400,
+    "content_type": "text/html;charset=utf-8",
+    "scope": "acquisition only; actual selected reading separately recorded"
+  }
+]

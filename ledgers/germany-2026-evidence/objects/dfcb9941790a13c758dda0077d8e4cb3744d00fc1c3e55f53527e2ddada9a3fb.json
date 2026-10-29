@@ -1,0 +1,11 @@
+{
+  "id": "U93ba2798cfe5272e",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2025-12-23-Schweiz-DBA-Bekanntmachung-Protokoll.pdf?__blob=publicationFile&v=3",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U93ba2798cfe5272e.body",
+  "raw_sha256": "f876a58e842e8f275a784f737925ead59dbc0338862a542adf6b4be2de3f06c5",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U93ba2798cfe5272e.reader.txt",
+  "reader_sha256": "7d2cb9269fc6db77d74c413cdf8e965533d761b1667defe95308f6144308d5a8",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

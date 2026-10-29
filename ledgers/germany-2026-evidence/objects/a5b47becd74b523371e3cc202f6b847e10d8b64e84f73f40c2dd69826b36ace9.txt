@@ -1,0 +1,591 @@
+Urteil vom 14. Juli 2016, IV R 34/13
+Vermietung eines Einkaufszentrums kein Gewerbebetrieb - Berücksichtigung artspezifischer Besonderheiten bei der
+objektbezogenen Prüfung der Üblichkeit von vermieterseitig erbrachten Sonderleistungen - Sachlicher
+Anwendungsbereich von § 35b GewStG
+
+ECLI:DE:BFH:2016:U.140716.IVR34.13.0
+
+BFH IV. Senat
+
+EStG § 15 Abs 1 S 1 Nr 1, EStG § 15 Abs 2, EStG § 15 Abs 3, GewStG § 2 Abs 1 S 2, GewStG § 35b Abs 1, EStG § 15 Abs 1
+S 1 Nr 1, EStG § 15 Abs 2, EStG § 15 Abs 3, GewStG § 2 Abs 1 S 2, GewStG § 2 Abs 1 S 2, GewStG § 35b Abs 1, GewStG §
+35b Abs 1, EStG § 15 Abs 3 Nr 1, EStG § 15 Abs 3 Nr 1, EStG § 21, EStG § 21
+
+vorgehend Niedersächsisches Finanzgericht , 25. Juni 2013, Az: 7 K 10056/09
+
+Leitsätze
+Die Vermietung eines Einkaufszentrums ist nicht deshalb als Gewerbebetrieb anzusehen, weil der Vermieter die für ein
+Einkaufszentrum üblichen Infrastruktureinrichtungen bereitstellt oder werbe- und verkaufsfördernde Maßnahmen für das
+Gesamtobjekt durchführt .
+
+
+Tenor
+Auf die Revision der Klägerin wird das Urteil des Niedersächsischen Finanzgerichts vom 26. Juni 2013 7 K 10056/09
+aufgehoben.
+
+Die Gewerbesteuermessbescheide für 2001 und 2002, jeweils vom 17. April 2008, geändert am 23. September 2013, die
+Bescheide über die gesonderte Feststellung des vortragsfähigen Gewerbeverlustes auf den 31. Dezember 1998 und auf
+den 31. Dezember 1999, jeweils vom 12. Juni 2008, geändert am 23. September 2013, und der Bescheid über die
+gesonderte Feststellung des vortragsfähigen Gewerbeverlustes auf den 31. Dezember 2000 vom 12. Juni 2008 sowie die
+Einspruchsentscheidung vom 10. Februar 2009 werden ersatzlos aufgehoben.
+
+Die Kosten des gesamten Verfahrens hat der Beklagte zu tragen.
+
+
+Tatbestand
+I.
+
+1    Die Klägerin und Revisionsklägerin (Klägerin) ist eine GmbH, die durch formwechselnde Umwandlung aus der X-
+     GmbH & Co. KG (KG) entstanden ist. Die Umwandlung wurde am ... 2013 in das Handelsregister eingetragen.
+
+2    Die KG war mit notariellem Vertrag vom ... 1995 gegründet worden. Kommanditisten waren die Eheleute A mit einer
+     Einlage von zunächst 490.000 DM und B mit einer Einlage von 10.000 DM. Komplementärin war die X-Verwaltungs-
+     GmbH. Deren alleinvertretungsberechtigter Geschäftsführer war A. Gegenstand der KG war ausweislich ihres
+     Gesellschaftsvertrags insbesondere die Vermietung und Verpachtung von Grundbesitz in A-Stadt sowie alle damit
+     zusammenhängenden Geschäfte. Mit Gesellschafterbeschluss vom ... 1996 wurde die Kommanditeinlage des A bei
+     der KG auf 14.990.000 DM erhöht. Durch weiteren Beschluss der Gesellschafter vom ... 1996 wurde der
+     Gesellschaftsvertrag der KG dahingehend geändert, dass neben der Komplementär-GmbH auch die Kommanditistin
+     B zur Geschäftsführung der KG befugt war.
+
+3    Die KG erwarb mit Vertrag vom ... 1995 eine Option auf ein in A-Stadt gelegenes Grundstück. Am ... 1996 schloss die
+     KG mit der Stadt einen Durchführungsvertrag zu dem Vorhaben- und Erschließungsplan "Fachmarktzentrum".
+     Gegenstand des Vorhabens war die Errichtung eines Fachmarktzentrums in A-Stadt mit einer
+                                                                                                              Seite 1 von 10
+    einzelhandelsbezogenen Verkaufsfläche von bis zu 30 000 qm. Die KG verpflichtete sich hierbei als Vorhabenträger
+    u.a. zur Erstellung von Plänen und zur Durchführung der in diesem Zusammenhang genehmigten Baumaßnahmen.
+
+4   Im Jahr 1996 erwarb die KG das Eigentum an dem Grundstück. Sie errichtete dort bis zur Fertigstellung im Oktober
+    1998 auf einem ca. 100 000 qm großen Areal, das zuvor als Ackerfläche genutzt worden war, das
+    Fachmarktzentrum. Die Räumlichkeiten auf einer Fläche von etwa 30 000 qm vermietete die KG an etwa
+    40 Einzelhandels- und Dienstleistungsunternehmen.
+
+5   Am ... 1996 schloss die KG mit der C-GmbH (nachfolgend auch "Verwalterin") einen Verwaltervertrag über die
+    Bewirtschaftung des Fachmarktzentrums (im Folgenden: Bewirtschaftungsvertrag). Alleinige Gesellschafterin und
+    Geschäftsführerin der C-GmbH war B. Gegenstand der C-GmbH ist ausweislich des Gesellschaftsvertrages
+    insbesondere die Verwaltung des Fachmarktzentrums A-Stadt im eigenen Namen und für eigene Rechnung, der
+    Abschluss aller diesbezüglichen Verträge sowie die Beteiligung an der dortigen Werbegemeinschaft und ggf. am
+    Projektmanagement.
+
+6   Der Bewirtschaftungsvertrag regelt dabei auszugsweise:
+
+    "§ 2 Leistungen des Verwalters
+
+    1. Der Verwalter bewirtschaftet das FMZ <Fachmarktzentrum> unter bestmöglicher Wahrnehmung der Interessen
+       des Auftraggebers <der KG> nach Maßgabe der Bestimmungen dieses Vertrages. Dabei wird er, soweit in
+       diesem Vertrag nicht ausdrücklich etwas anderes bestimmt ist, im eigenen Namen und für eigene Rechnung
+       tätig; dies gilt insbesondere für die im Rahmen der Bewirtschaftung abzuschließenden Verträge.
+
+    2. Der Verwalter erbringt die folgenden allgemeinen kaufmännischen Bewirtschaftungsleistungen:
+       a) Abschluß, laufende Betreuung (...) von Mietverhältnissen (...)
+       d) Erhebung der (...) Nebenkosten (...)
+       g) Vorbereitung und Abwicklung des im Zusammenhang mit dem Objekt anfallenden Zahlungsverkehrs (...)
+       (...)
+       k) Einstellung, Betreuung sowie Einsatz der für die Wartung, Instandhaltung, Pflege, Reinigung und Haustechnik
+       vor Ort notwendigen Mitarbeiter - ferner ggf. auch deren Entlassung - im eigenen Namen und auf eigene
+       Rechnung; die resultierenden Kosten werden vom Verwalter auf die Mieter umgelegt;
+       l) Erstellung einer Planung über die zu erwartenden Einnahmen und Ausgaben des Folgejahres zum 31. Oktober
+       eines jeden Jahres, in der auch die erforderlichen Instandhaltungs-, Instandsetzungs-, und
+       Modernisierungsarbeiten aufgrund der vorher durchgeführten örtlichen Überprüfung im einzelnen nach Umfang
+       und Kosten beschrieben sind (Budget); der Auftraggeber wird das Budget jeweils zum 31. Dezember des Jahres
+       prüfen und schriftlich gegenüber dem Verwalter bewilligen. (...)
+
+    3. Bei der Vermietung erbringt der Verwalter die folgenden Leistungen:
+
+       a) Entwicklung von Konzepten zur Optimierung der jeweiligen Mieterstruktur und deren Umsetzung im Rahmen
+       des Möglichen in Abstimmung mit dem Auftraggeber;
+
+       b) Vermietung von freien und freiwerdenden Flächen auf Basis des vom Verwalter entwickelten und vom
+       Auftraggeber im Rahmen des Jahresbudgets genehmigten Mietkonzeptes und unter Beachtung der im
+       Jahresbudget festgelegten (Mindest-)Mietkonditionen; soweit nicht anders schriftlich mit dem Auftraggeber
+       abgestimmt, bedient sich der Verwalter des beiden Parteien bekannten, als Anlage 1 anliegenden Standard-
+       Mietvertrages; (...)
+
+    4. Der Verwalter erbringt die nachfolgend aufgeführten technischen Bewirtschaftungsleistungen:
+
+                                                             (...)
+
+       d) Abschluß von Verwalterverträgen mit den Mietern zur Erfüllung mietvertraglicher Reinigungs-,
+       Verkehrssicherungs- und sonstiger Pflichten gemäß dem in Anlage 2 beigefügten Mustervertrag; (...)
+
+    5. Der Verwalter übernimmt werbe- und verkaufsfördernde Maßnahmen:
+
+
+
+                                                                                                            Seite 2 von 10
+            a) Der Verwalter wird Gesellschafter der für das FMZ errichteten Werbegemeinschaft (...). Er nimmt die nach
+            dem Gesellschaftsvertrag dem Verwalter übertragenen Aufgaben wahr. (...)
+
+            b) Der Verwalter schließt mit einem Centermanager einen Geschäftsbesorgungsvertrag oder vereinbart mit
+            diesem ein Beschäftigungsverhältnis. Der Centermanager ist für die Entwicklung und Durchführung von
+            Werbung und verkaufsfördernden Maßnahmen zuständig. Der Verwalter unterstützt den Centermanager bei
+            diesen Maßnahmen.
+            (...)"
+
+
+7   Der dem Bewirtschaftungsvertrag als Anlage 1 beigefügte Standard-Mietvertrag regelt auszugsweise:
+
+    "§ 1 Mietgegenstand, Mietzweck
+
+    1. Mietgegenstand sind die im anliegenden Lageplan/Grundrißplan (...) umrandeten Bruttoflächen (...)
+
+    § 7 Mietnebenkosten
+
+    1. Die Nebenkosten des Einkaufszentrums, insbesondere die Kosten des Betriebes, der Reinigung, Pflege, Wartung,
+       Instandhaltung und Instandsetzung der gemeinschaftlichen Anlagen und Einrichtungen werden von allen
+       Mietern gleichmäßig im Verhältnis ihrer Ladenflächen zur Gesamtladenfläche des Einkaufszentrums getragen.
+       Diese Nebenkosten umfassen: (...)
+
+    3. Der Mieter beteiligt sich entsprechend dem in Abs. 1 festgelegten Umlageschlüssel an den Verwaltungskosten
+       sowie an den Kosten des für den Verwalter tätigen internen oder externen Centermanagers und an den
+       sonstigen, in diesem Zusammenhang anfallenden Personal-, Sach- und Beratungskosten. (...)
+
+    6. Der Vermieter ist berechtigt, die in Abs. 1 aufgeführten Leistungen, deren Kosten umlagefähig sind, mit
+       befreiender Wirkung auf Dritte zu übertragen. Dem Mieter ist bekannt, dass die in Abs. 1 Ziff. b), c), d), f), g) und
+       k) genannten Leistungen durch den Verwalter erbracht werden. Die Vornahme diesbezüglicher Handlungen und
+       Dienstleistungen ist nicht Sache des Vermieters. Der Mieter wird jederzeit auf Verlangen des Vermieters den in
+       Anlage 3 zu diesem Vertrag beigefügten Verwaltervertrag über die betroffenen Leistungen mit dem Verwalter
+       schließen. (...)"
+
+
+8   Der Musterverwaltungsvertrag für die Verwendung zwischen den Mietern und der Verwalterin regelt auszugsweise:
+
+                                                          "Vorbemerkung
+
+    Der Mieter hat mit Mietvertrag vom ... Geschäftsräume im Fachmarktzentrum ... (FMZ) angemietet. Der Mietvertrag
+    ist dem Verwalter bekannt und liegt ihm vor. Der Verwalter wird im Rahmen des Betriebes des Fachmarktzentrums
+    Leistungen zur Pflege, Wartung, Instandhaltung und Instandsetzung sowie der Reinigung der gemeinschaftlichen
+    Anlagen und Einrichtungen erbringen. Darüber hinaus wird der Verwalter im Rahmen der von der
+    Werbegemeinschaft bezweckten Werbe- und verkaufsfördernden Maßnahmen für den Mieter tätig werden.
+
+    Betrieb, Pflege, Wartung, Instandhaltung und Instandsetzung sowie Reinigung der gemeinschaftlichen Anlagen und
+    Einrichtungen
+    (...)
+
+    Werbe- und verkaufsfördernde Maßnahmen
+    § 3 Beitritt zur Werbegemeinschaft
+
+    1. Der Mieter wird der Werbegemeinschaft des FMZ in der Rechtsform der Gesellschaft bürgerlichen Rechts auf
+       der Grundlage des als Anlage beigefügten Gesellschaftsvertrages beitreten und die Mitgliedschaft während der
+       Dauer des Mietvertrages aufrechterhalten.
+
+    (...)
+
+
+
+                                                                                                                  Seite 3 von 10
+     § 5 Allgemeinwerbung durch den Mieter
+
+     Der Mieter verpflichtet sich, bei jeglichen objektbezogenen Werbemaßnahmen in Inseraten, Prospekten und
+     sonstigen Werbemedien das festgelegte Emblem des FMZ zu verwenden.
+     (...)"
+
+
+9    Im Jahr 1996 wurde die Werbegemeinschaft ... GbR (Werbe-GbR) gegründet. Beginnend im Oktober 1996 traten der
+     Werbe-GbR bis auf zwei Ausnahmen alle Mieter des Fachmarktzentrums bei.
+
+10   Der Gesellschaftsvertrag der Werbe-GbR lautet auszugsweise wie folgt:
+
+       "(...)
+       § 4 Zweck
+
+     1. Alleiniger Zweck der Gesellschaft ist es, auf dem Gebiet der Verkaufsförderung und Werbung Maßnahmen zu
+        beraten, zu beschließen und für das Fachmarktzentrum als auch für die Gesellschafter insgesamt durchzuführen.
+
+     2. Ein Gewinn soll von der Gesellschaft nicht erzielt werden.
+
+     3. Jeder Gesellschafter hat das Recht, für seinen Geschäftsbereich zusätzlich geeignete eigenständige Werbung zu
+        betreiben.
+
+     § 5 Gesellschafter
+
+     1. Gesellschafter der Gesellschaft werden alle Einzelpersonen, Personengesellschaften und Kapitalgesellschaften,
+        die eine Geschäftsniederlassung im Fachmarktzentrum haben, sowie der vom Vermieter bestimmte Verwalter
+        des Fachmarktzentrums und der noch zu benennende Centermanager (nachstehend 'CM' genannt), Letztere
+        jeweils ohne Kapitalbeteiligung und ohne Verpflichtung zur Zahlung von Werbebeiträgen.
+        (...)"
+
+
+11   Am ... 1998 schloss die C-GmbH als Auftraggeber mit der M-GmbH einen Geschäftsbesorgungsvertrag ab. Die M-
+     GmbH war am ... 1997 gegründet worden. Alleinige Gesellschafterin war B, die auch ‑‑neben einer weiteren
+     Person‑‑ zur einzelvertretungsberechtigten Geschäftsführerin bestellt wurde. Der Vertrag umfasste auszugsweise
+     folgende Regelungen:
+
+     "§ 1 Vertragsgegenstand
+     1. [Vertragsobjekt] Der Auftraggeber beauftragt den Centermanager im Rahmen des in diesem Vertrag geregelten
+     Leistungsumfang <s> mit Beratungs-, Betreuungs- und Verwaltungsaufgaben einschließlich der Entwicklung und
+     Durchführung von Werbung und verkaufsfördernden Maßnahmen für <das Fachmarktzentrum> (...), dessen
+     Bewirtschaftung und technische und kaufmännische Verwaltung der Auftraggeber im eigenen Nahmen und für
+     eigene Rechnung übernommen hat.
+     (...)
+
+
+
+     § 2 Leistungen des Centermanagers
+
+     1. [Werbegemeinschaft, Marketing] Dem Centermanager obliegt die Optimierung der Marktdurchsetzung des
+        Fachmarktzentrums, insbesondere durch
+
+     a) [Werbegemeinschaft] Mitgliedschaft in und Leitung der Werbegemeinschaft gemäß Werbegemeinschaftsvertrag
+        (Anlage 1);
+
+     b) [Werbemaßnahmen, Öffentlichkeitsarbeit] Darstellung des Fachmarktzentrums in der Öffentlichkeit,
+        insbesondere bei den anzusprechenden Kundenkreisen, einschließlich Eröffnungswerbung, Werbemaßnahmen
+        und Aktionen (im Rahmen der Werbegemeinschaft), Entwicklung weiterer Aktionen und Maßnahmen in
+        Absprache mit dem Auftraggeber sowie laufende Öffentlichkeitsarbeit über die Presse;
+
+
+                                                                                                            Seite 4 von 10
+      c) [Einzug der Werbebeiträge] Unterstützung des Verwalters beim Einzug der Mindestwerbebeiträge,
+         umsatzabhängigen Werbebeiträge sowie festgesetzten Sonderwerbebeiträge von den Mietern; (...)"
+
+
+
+
+12 Bis auf wenige Ausnahmen entsprachen die geschlossenen Miet- und Verwalterverträge den zuvor festgelegten
+   Mustervereinbarungen und traten die Mieter der Werbe-GbR bei.
+
+13 Die KG erklärte für die Streitjahre 1998 bis 2002 Einkünfte aus Vermietung und Verpachtung und gab keine
+   Gewerbesteuererklärungen ab. Der Beklagte und Revisionsbeklagte (das Finanzamt ‑‑FA‑‑) folgte in den für die
+   Streitjahre ergangenen Feststellungsbescheiden zunächst den Erklärungen der KG.
+
+14 Nach Durchführung einer am 28. November 2003 angeordneten Außenprüfung kamen die Prüfer in ihrem Bericht
+   vom 12. März 2008 zu dem Ergebnis, die KG erziele Einkünfte aus Gewerbebetrieb. Es sei ein zusammenhängendes
+   Vertragswerk der KG, der C-GmbH sowie der M-GmbH in Gestalt der Errichtung eines Kaufparks und dessen
+   anschließender Vermietung sowie Werbung durch die Werbe-GbR anzunehmen.
+
+15 Das FA folgte dieser Auffassung und erließ am 17. April 2008 Gewerbesteuermessbescheide, in denen ein
+   Gewerbesteuermessbetrag für das Jahr 2001 in Höhe von ... DM und für 2002 in Höhe von ... € festgesetzt wurde. Am
+   12. Juni 2008 erließ es Bescheide über die gesonderte Feststellung des vortragsfähigen Gewerbeverlustes auf den
+   31. Dezember 1998 von ... DM, auf den 31. Dezember 1999 von ... DM und auf den 31. Dezember 2000 von 0 DM.
+   Das hiergegen durchgeführte Einspruchsverfahren blieb erfolglos.
+
+16 Ebenfalls aufgrund der Außenprüfung erlassene Bescheide über die gesonderte und einheitliche Feststellung von
+   Einkünften aus Gewerbebetrieb konnte das FA wegen eingetretener Verjährung nicht aufrechterhalten. Es erließ am
+   11. Dezember 2008 Feststellungsbescheide, in denen wieder Einkünfte aus Vermietung und Verpachtung
+   festgestellt wurden. Außerdem hob das FA am 4. Dezember 2008 den Gewerbesteuermessbescheid für das Jahr
+   2000 und am 8. Januar 2009 die Gewerbesteuermessbescheide für die Jahre 1998 und 1999 ersatzlos auf.
+
+17 In der mündlichen Verhandlung vor dem Finanzgericht (FG) am 26. Juni 2013 verständigten sich die Beteiligten über
+   bislang streitige Fragen zur Höhe des Gewinns und das FA verpflichtete sich zur teilweisen Änderung der
+   angefochtenen Verwaltungsakte. Mit Urteil vom 26. Juni 2013 7 K 10056/09 wies das FG die Klage als unbegründet
+   ab.
+
+18 Am 23. September 2013 ergingen die in der mündlichen Verhandlung vor dem FG zugesagten Änderungsbescheide.
+   Der Gewerbesteuermessbetrag für 2001 wurde nun auf ... DM, für 2002 auf ... € gemindert. Die nach § 10a des
+   Gewerbesteuergesetzes in der für die Streitjahre maßgebenden Fassung (GewStG) zum 31. Dezember verbleibenden
+   Verlustvorträge wurden erhöht auf ... DM für 1998 und ... DM für 1999.
+
+19 Mit ihrer Revision rügt die Klägerin die Verletzung materiellen und formellen Rechts.
+
+20 Sie beantragt,
+   das Urteil des Niedersächsischen FG vom 26. Juni 2013 7 K 10056/09 aufzuheben,
+   die Bescheide über den Gewerbesteuermessbetrag für 2001 und 2002, jeweils vom 23. September 2013, die
+   Bescheide über die gesonderte Feststellung des vortragsfähigen Gewerbeverlustes auf den 31. Dezember 1998 und
+   31. Dezember 1999, jeweils vom 23. September 2013, und den Bescheid über die gesonderte Feststellung des
+   vortragsfähigen Gewerbeverlustes auf den 31. Dezember 2000 vom 12. Juni 2008 sowie die
+   Einspruchsentscheidung vom 10. Februar 2009 ersatzlos aufzuheben, und
+   hilfsweise, die Bescheide über den Gewerbesteuermessbetrag für 2001 und 2002, jeweils vom 23. September 2013,
+   dahingehend zu ändern, dass der Gewerbesteuermessbetrag wegen der erweiterten Kürzung nach § 9 Nr. 1
+   Sätze 2 ff. GewStG auf 0 € festgesetzt wird.
+
+21 Das FA beantragt,
+   die Revision zurückzuweisen.
+
+
+Entscheidungsgründe
+
+II.
+                                                                                                          Seite 5 von 10
+II.
+
+22 Die Revision ist begründet. Sie führt nach § 126 Abs. 3 Satz 1 Nr. 1 der Finanzgerichtsordnung (FGO) zur Aufhebung
+   des FG-Urteils und zur Entscheidung des Senats in der Sache selbst. Die Vorentscheidung war, soweit sie die
+   Streitjahre 1998, 1999, 2001 und 2002 betrifft, schon aus verfahrensrechtlichen Gründen aufzuheben (1.). Die
+   gewerbesteuerrechtlichen Verwaltungsakte sind zwar nicht schon wegen des Vorliegens geänderter
+   Gewinnfeststellungen aufzuheben (2.), aber deshalb, weil die Tätigkeit der Klägerin der privaten
+   Vermögensverwaltung zuzuordnen ist und keinen Gewerbebetrieb begründet (3.).
+
+23 1. Das Urteil des FG ist, soweit es die Streitjahre 1998, 1999, 2001 und 2002 betrifft, aus verfahrensrechtlichen
+   Gründen aufzuheben. Es kann insoweit bereits deshalb keinen Bestand haben, weil an die Stelle der angefochtenen
+   Bescheide vom 17. April 2008 sowie vom 12. Juni 2008 im Laufe des Revisionsverfahrens am 23. September 2013
+   geänderte Bescheide getreten sind (vgl. Urteile des Bundesfinanzhofs ‑‑BFH‑‑ vom 27. Juli 2004 IX R 44/01, BFH/NV
+   2005, 188, und vom 28. Mai 2015 IV R 27/12, BFHE 249, 544, BStBl II 2015, 837). Der Senat entscheidet über die
+   nach § 121 Satz 1 FGO i.V.m. § 68 Satz 1 FGO zum Gegenstand des Verfahrens gewordenen Änderungsbescheide
+   vom 23. September 2013 auf Grundlage der verfahrensfehlerfrei zustande gekommenen und damit nach § 118
+   Abs. 2 FGO weiterhin bindenden Feststellungen nach §§ 121, 100 FGO in der Sache. Der in dem Revisionsverfahren
+   streitige Punkt ‑‑das Vorliegen eines Gewerbebetriebs‑‑ ist auch nach Ergehen der Änderungsbescheide unverändert
+   geblieben. Die während des Revisionsverfahrens ergangenen Änderungsbescheide setzen lediglich die zwischen
+   den Beteiligten nicht mehr streitige tatsächliche Verständigung aus der mündlichen Verhandlung vor dem FG in
+   Verwaltungsakte um. Der Senat sieht daher wegen Vorliegens der Spruchreife der Sache von einer
+   Zurückverweisung nach § 127 FGO ab und entscheidet in der Sache selbst (vgl. BFH-Urteile vom 20. November 2003
+   IV R 31/02, BFHE 204, 166, BStBl II 2006, 7; vom 4. Dezember 2014 IV R 53/11, BFHE 248, 57, BStBl II 2015, 483,
+   und in BFHE 249, 544, BStBl II 2015, 837).
+
+24 2. Der Klage ist nicht schon aus verfahrensrechtlichen Gründen deshalb stattzugeben, weil die Bescheide über die
+   gesonderte und einheitliche Feststellung von Besteuerungsgrundlagen (Gewinnfeststellung) für die KG betreffend
+   die Jahre 1998 bis 2002 am 11. Dezember 2008 dahingehend abgeändert wurden, dass statt der zuvor
+   festgestellten Einkünfte aus Gewerbebetrieb nunmehr wieder Einkünfte aus Vermietung und Verpachtung
+   festgestellt wurden.
+
+25 a) Nach § 35b Abs. 1 GewStG ist der Gewerbesteuermessbescheid oder Verlustfeststellungsbescheid von Amts
+   wegen aufzuheben oder zu ändern, wenn der Einkommensteuerbescheid, der Körperschaftsteuerbescheid oder ein
+   Feststellungsbescheid aufgehoben oder geändert werden und die Aufhebung oder Änderung den Gewinn aus
+   Gewerbebetrieb berührt.
+
+26 Diese Regelung bezweckt, unnötige Doppelverfahren zu vermeiden. Der Steuerpflichtige soll sich bei einem Streit
+   um die Höhe des Gewinns aus Gewerbebetrieb darauf beschränken können, den Einkommensteuer- oder
+   Gewinnfeststellungsbescheid anzufechten. Ist dieser Rechtsbehelf erfolgreich, so verpflichtet die Norm
+   grundsätzlich zu einer entsprechenden Folgeänderung bei der Gewerbesteuer (vgl. BFH-Urteil vom 13. November
+   1991 X R 48/91, BFHE 166, 367, BStBl II 1992, 351). Die Folgeänderung bei der Gewerbesteuer setzt voraus, dass
+   die Änderung bei der Einkommensteuerfestsetzung bzw. der Gewinnfeststellung nach § 35b Abs. 1 Satz 2 GewStG
+   die Höhe des Gewerbeertrags oder des vortragsfähigen Gewerbeverlustes beeinflusst. Erfolgt die Änderung oder
+   Aufhebung des Einkommensteuer- oder Gewinnfeststellungsbescheids jedoch aus verfahrensrechtlichen Gründen
+   ‑‑etwa aufgrund der Regelungen über die Festsetzungs- oder Feststellungsverjährung‑‑, so liegt keine Änderung
+   oder Aufhebung mit Folgewirkung auf die Höhe des Gewerbeertrages vor. § 35b GewStG greift in diesem Fall nicht
+   ein (vgl. BFH-Urteile in BFHE 166, 367, BStBl II 1992, 351, sowie vom 24. Juni 2009 X R 36/06, BFHE 225, 407, BStBl
+   II 2010, 171).
+
+27 b) So liegt es im Streitfall. Das FA hatte in den angefochtenen Bescheiden über die Feststellung des vortragsfähigen
+   Gewerbeverlustes auf den 31. Dezember 1998 bis 31. Dezember 2000 und in den Gewerbesteuermessbescheiden
+   für die Jahre 2001 und 2002 nicht nach § 35b Abs. 1 GewStG zu berücksichtigen, dass am 11. Dezember 2008
+   geänderte Gewinnfeststellungsbescheide für die Jahre 1998 bis 2002 ergangen waren. Mit diesen für die KG als
+   Rechtsvorgängerin der Klägerin ergangenen Gewinnfeststellungsbescheiden waren die zuvor in Umsetzung der
+   Ergebnisse der Außenprüfung festgestellten Einkünfte aus Gewerbebetrieb rückgängig gemacht und wieder
+   Einkünfte aus Vermietung und Verpachtung festgestellt worden.
+
+28 Diese Änderungen der Gewinnfeststellungsbescheide erfolgten jedoch nur deshalb, weil das FA den Eintritt der
+   Feststellungsverjährung wegen einer für die Ablaufhemmung unzureichenden Bezeichnung des Gegenstandes der
+
+                                                                                                             Seite 6 von 10
+    vorgenommenen Außenprüfung angenommen hatte. Dies ergibt sich aus den Schreiben des FA vom 4. Dezember
+    2008 und vom 8. Januar 2009 an den steuerlichen Vertreter der KG. Die Änderungen der
+    Gewinnfeststellungsbescheide erfolgten demnach nur aus verfahrensrechtlichen Gründen und führen deshalb nicht
+    zur Anpassung der gewerbesteuerrechtlichen Verwaltungsakte nach § 35b GewStG.
+
+29 3. Entgegen der Auffassung des FA und des FG hat die KG im Streitzeitraum private Vermögensverwaltung betrieben
+   und keinen Gewerbebetrieb unterhalten (a). Auch eine Betriebsaufspaltung (b), gewerbliche Prägung (c) oder eine
+   Abfärbung (d) liegen nicht vor und führen deshalb nicht zur Annahme eines Gewerbebetriebs.
+
+30 a) Die KG hat keinen Gewerbebetrieb unterhalten.
+
+31 aa) Gemäß § 2 Abs. 1 Satz 1 GewStG unterliegt jeder stehende Gewerbebetrieb, soweit er im Inland betrieben wird,
+   der Gewerbesteuer. Unter Gewerbebetrieb ist ein gewerbliches Unternehmen i.S. des Einkommensteuergesetzes
+   (EStG) zu verstehen (§ 2 Abs. 1 Satz 2 GewStG). Eine Personengesellschaft erzielt gewerbliche Einkünfte, wenn die
+   Gesellschafter in ihrer Verbundenheit als Personengesellschaft ein gewerbliches Unternehmen (§ 15 Abs. 1 Satz 1
+   Nr. 1 EStG) betreiben.
+
+32 Nach § 15 Abs. 2 Satz 1 EStG ist Gewerbebetrieb eine selbständige nachhaltige Betätigung, die mit der Absicht,
+   Gewinn zu erzielen, unternommen wird, sich als Beteiligung am allgemeinen wirtschaftlichen Verkehr darstellt und
+   weder als Ausübung von Land- und Forstwirtschaft noch als Ausübung eines freien Berufs noch als eine andere
+   selbständige Arbeit anzusehen ist. Ungeschriebenes Tatbestandmerkmal des Gewerbebetriebs ist nach der
+   Rechtsprechung des BFH des Weiteren, dass die Betätigung den Rahmen einer privaten Vermögensverwaltung
+   überschreitet (ständige Rechtsprechung, vgl. Beschluss des Großen Senats des BFH vom 25. Juni 1984 GrS 4/82,
+   BFHE 141, 405, BStBl II 1984, 751, unter C.III.3.b aa).
+
+33 Da kein Streit darüber besteht, dass die KG selbständig gehandelt hat, sich nachhaltig und mit
+   Gewinnerzielungsabsicht am allgemeinen wirtschaftlichen Verkehr beteiligt hat und ihre Tätigkeit weder als
+   Ausübung von Land- und Forstwirtschaft noch als freier Beruf oder andere selbständige Arbeit zu qualifizieren ist
+   (vgl. zu diesen Voraussetzungen des Gewerbebetriebs etwa BFH-Urteil vom 26. Juni 2007 IV R 49/04, BFHE 217,
+   150, BStBl II 2009, 289), sieht der Senat insoweit von weiteren Ausführungen ab.
+
+34 bb) Für die Abgrenzung der privaten Vermögensverwaltung von einem Gewerbebetrieb hat die Rechtsprechung
+   verschiedene Kriterien entwickelt.
+
+35 (1) Die Grenze von der privaten Vermögensverwaltung zum Gewerbebetrieb wird nach ständiger Rechtsprechung
+   des BFH überschritten, wenn nach dem Gesamtbild der Betätigung und unter Berücksichtigung der
+   Verkehrsauffassung die Ausnutzung substantieller Vermögenswerte durch Umschichtung gegenüber der Nutzung
+   der Vermögenswerte i.S. einer Fruchtziehung aus zu erhaltenden Substanzwerten (z.B. durch Selbstnutzung oder
+   Vermietung) entscheidend in den Vordergrund tritt. Bei der Abgrenzung zwischen dem Vorliegen eines
+   Gewerbebetriebs einerseits und privater Vermögensverwaltung andererseits hat die Rechtsprechung seit Langem
+   auf das Gesamtbild der Verhältnisse und die Verkehrsanschauung abgestellt. In Zweifelsfällen ist die
+   gerichtsbekannte und nicht beweisbedürftige Auffassung darüber maßgebend, ob die Tätigkeit, soll sie in den
+   gewerblichen Bereich fallen, dem Bild entspricht, das nach der Verkehrsanschauung einen Gewerbebetrieb
+   ausmacht und einer privaten Vermögensverwaltung fremd ist (vgl. Beschlüsse des Großen Senats des BFH vom
+   3. Juli 1995 GrS 1/93, BFHE 178, 86, BStBl II 1995, 617, unter C.I., und vom 10. Dezember 2001 GrS 1/98, BFHE 197,
+   240, BStBl II 2002, 291, unter C.III.1., sowie BFH-Urteil in BFHE 217, 150, BStBl II 2009, 289). Ob eine Tätigkeit noch
+   der privaten Vermögensverwaltung zuzuordnen ist, lässt sich nicht für alle Bereiche nach einheitlichen Maßstäben
+   beurteilen. Es sind die jeweiligen artspezifischen Besonderheiten zu beachten (vgl. BFH-Urteile vom 22. Januar
+   2003 X R 37/00, BFHE 201, 264, BStBl II 2003, 464; vom 31. Mai 2007 IV R 17/05, BFHE 218, 183, BStBl II 2007,
+   768; vom 2. September 2008 X R 14/07, BFH/NV 2008, 2012).
+
+36 Nach der Rechtsprechung des BFH geht das Vermieten einzelner (beweglicher oder unbeweglicher) Gegenstände in
+   der Regel über den Rahmen einer privaten Vermögensverwaltung nicht hinaus. Eine gewerbliche
+   Vermietungstätigkeit ist erst dann anzunehmen, wenn nach dem Gesamtbild der Verhältnisse im Einzelfall
+   besondere Umstände hinzutreten, die der Tätigkeit als Ganzes das Gepräge einer gewerblichen Betätigung geben,
+   hinter der die eigentliche Gebrauchsüberlassung des Gegenstandes in den Hintergrund tritt (vgl. BFH-Urteil in
+   BFHE 217, 150, BStBl II 2009, 289, m.w.N.). Zur Vermögensverwaltung sind Leistungen wie die Pflege, Wartung und
+   Versicherung des vermieteten Objekts zu rechnen, die im Rahmen einer normalen Vermietungstätigkeit anfallen
+   (vgl. BFH-Urteil in BFHE 201, 264, BStBl II 2003, 464).
+
+                                                                                                               Seite 7 von 10
+37 (2) Bei der Vermietung von Wohnungen führt nicht jede über die Zurverfügungstellung von Wohnraum
+   hinausgehende Sonderleistung schon dazu, dass der Charakter der Vermögensverwaltung verloren ginge. Solche
+   Umstände werden aber insbesondere dann bejaht, wenn wegen bestimmter, ins Gewicht fallender, bei der
+   Vermietung von Räumen nicht üblicher Sonderleistungen des Vermieters oder wegen eines besonders häufigen
+   Wechsels der Mieter eine gewisse, einem gewerblichen Beherbergungsbetrieb wie einem Hotel oder einer
+   Fremdenpension vergleichbare, unternehmerische Organisation erforderlich ist (vgl. BFH-Urteile vom 18. Mai 1999
+   III R 65/97, BFHE 188, 490, BStBl II 1999, 619; vom 24. Oktober 2000 IX R 58/97, BFH/NV 2001, 752, und vom
+   14. Januar 2004 X R 7/02, BFH/NV 2004, 945; BFH-Beschluss vom 28. September 2010 X B 42/10). Sollen die
+   Sonderleistungen die Vermietungstätigkeit gewerblich prägen, so müssen sie ins Gewicht fallen und nicht etwa im
+   Haushalt des Steuerpflichtigen miterledigt werden können. Es kommen nur solche Sonderleistungen für die
+   gewerbliche Prägung in Betracht, die nicht schon üblicherweise mit der Vermietung von Ferienwohnungen
+   verbunden sind (vgl. BFH-Urteil in BFH/NV 2004, 945). Die Vermietung von Grundbesitz bleibt auch dann
+   Vermögensverwaltung, wenn der Besitz sehr umfangreich ist, an eine Vielzahl von Mietern vermietet und zur
+   Verwaltung ein in kaufmännischer Weise eingerichteter Geschäftsbetrieb unterhalten wird (BFH-Urteil vom 6. März
+   1997 IV R 21/96, BFH/NV 1997, 762 – Vermietung eines Geschäfts- und Freizeitzentrums an etwa 60 Mieter mit
+   eigener Beschäftigung von sechs Personen zur Verwaltung, Reinigung und Instandhaltung durch die Vermieterin).
+
+38 (3) Ist die Frage, ob von dem Vermieter erbrachte Leistungen noch üblich, mithin gebräuchlich und verbreitet sind,
+   objektbezogen nach der Art des Vermietungsobjekts zu beantworten, müssen bei der Vermietung einer
+   gewerblichen Großimmobilie solche Leistungen als unschädlich behandelt werden, die nicht über das hinausgehen,
+   was die Nutzung der Räume zu dem von den Mietern vorausgesetzten gewerblichen Zweck ermöglicht, und die
+   nicht als eigenständiges Herantreten an den Markt verstanden werden können. Letzteres ist nicht anzunehmen,
+   wenn die Sonderleistung im (jedenfalls überwiegenden) wirtschaftlichen Interesse des Vermieters erbracht wird und
+   nicht wirtschaftliche Interessen des Empfängers im Vordergrund stehen.
+
+39 (a) Bei einem Einkaufszentrum, in dem verschiedene Einzelhändler und Dienstleister in einem Objekt räumlich
+   zusammengefasst ihre Waren und Dienstleistungen anbieten, sind die Leistungen des Vermieters vor dem
+   Hintergrund zu sehen, dass es ‑‑aus Sicht des Kunden‑‑ mehr darstellt als die Summe der Angebote der dort
+   angesiedelten Händler und Dienstleister. Für den Kunden wird durch das Einkaufszentrum typischerweise eine
+   spezifische Einkaufssituation geschaffen, die eine bewusste Mischung des Angebots an Handel und
+   Dienstleistungen anbietet, eine leichte, typischerweise fußläufige Erreichbarkeit der einzelnen Geschäfte ("shops")
+   unter Ausschaltung störenden Straßenverkehrs und der Witterung durch Überdachung und Heizung ermöglicht und
+   die schließlich einen einheitlichen Rahmen für den Betrieb des gesamten Einkaufszentrums herstellt. Dieser
+   einheitliche Rahmen beinhaltet typischerweise weitgehend aneinander angepasste Ladenöffnungszeiten der
+   mietenden Einzelhändler und Dienstleister, die Durchführung eines unterhaltenden oder informierenden
+   Programms für die Kundschaft sowie eine einheitliche Werbung für das gesamte Einkaufszentrum. Die Schaffung
+   dieses einheitlichen Rahmens soll typischerweise einen Lagevorteil und eine besondere Anziehungskraft für die
+   Kundschaft begründen, die zu längerem Verweilen in dem Gesamtkomplex und ‑‑damit erfahrungsgemäß häufig
+   verbunden‑‑ ausgedehnteren Einkäufen verleitet.
+
+40 (b) Die Überlassung von Geschäftsraum in einem Einkaufszentrum erfordert danach ein gewisses Mindestmaß an
+   Infrastruktur wie Parkplätze, Abstellräume, Zugangssicherung etc. Zu solchen Infrastruktureinrichtungen gehören
+   auch Sanitäranlagen, ohne die eine Vermietung schon öffentlich-rechtlich nicht möglich wäre. Der Betrieb und die
+   Instandhaltung solcher Infrastruktureinrichtungen sind keine Zusatzleistungen des Vermieters, sondern
+   untrennbarer Bestandteil der Hauptleistung.
+
+41 Bei der Bewachung des Gesamtobjekts handelt der Vermieter in seinem eigenen Interesse, um sein Eigentum vor
+   Beschädigung durch Dritte zu schützen. Die Reinigung der in dem Einkaufszentrum vorhandenen Sanitärräume und
+   Sozialräume sowie die Aufrechterhaltung deren Nutzbarkeit durch Ausstattung mit Verbrauchsmaterial stellt sich
+   für die Vermietung eines Einkaufszentrums als übliche Leistung dar, weil ohne die Bereitstellung von Toiletten für
+   die Kunden der Zweck, einen längeren Aufenthalt zum Zwecke ausgiebigen Einkaufens zu ermöglichen, schwer zu
+   erreichen ist. Im Übrigen entlastet dies die Mieter in dem Einkaufszentrum davon, selbst diverse Flächen für diesen
+   Bedarf ihrer Kunden und eigenen Angestellten bereitzuhalten. Dies gilt auch hinsichtlich der für Angestellte bereit
+   gehaltenen Sozialräume. Auch das Angebot ausreichender Parkplätze ist nicht nur baurechtlich zwingend mit dem
+   Betrieb eines Einkaufszentrums verbunden, sondern entspricht auch dem spezifisch verfolgten Zweck, den Kunden
+   der Mieter einen ausgedehnten Einkauf in verschiedenen Geschäften innerhalb einer verkehrsfreien Zone zu
+   ermöglichen. Hierzu gehört außerdem die Bewachung der Parkplätze, um im Interesse der Kunden aller Mieter
+   einen Schutz der dort abgestellten Fahrzeuge zu gewährleisten.
+                                                                                                             Seite 8 von 10
+42 (c) Werbe- und verkaufsfördernde Maßnahmen, die vom Vermieter des Einkaufszentrums oder einem vom Vermieter
+   beauftragten Manager gegenüber den Mietern des Einkaufszentrums erbracht werden, stellen ebenfalls für die
+   Vermietung von Flächen in einem Einkaufszentrum übliche Sonderleistungen dar.
+
+43 Der einheitliche Rahmen, den der Vermieter eines Einkaufszentrums für sein vielfach vermietetes Objekt herstellt,
+   bringt es mit sich, dass nicht nur die in dem Einkaufszentrum eingemieteten Einzelhändler und
+   Dienstleistungserbringer werbend auf sich und ihr Angebot hinweisen, sondern dass auch das Einkaufszentrum
+   selbst das Gesamtangebot bewirbt und Aktionen veranstaltet, um auf das besondere Angebot hinzuweisen, das
+   einen bequemen, unterschiedliche Bedürfnisse ansprechenden und abwechslungsreichen Einkauf verspricht.
+   Derartige werbe- und verkaufsfördernde Maßnahmen finden im überwiegenden Interesse des Vermieters statt. Denn
+   sie sichern einerseits die Attraktivität des Standorts, um Mieter zu binden bzw. neu zu gewinnen, und erlauben es
+   andererseits, höhere Mieten für die ansässigen Händler und Dienstleister durchzusetzen bzw. bei Umsatzmieten
+   unmittelbar an Umsatzsteigerungen teilzunehmen.
+
+44 cc) Das FG ist von anderen Grundsätzen ausgegangen. Es hat für die Bestimmung der Üblichkeit erbrachter
+   Sonderleistungen nur auf die "bei einer langfristigen Vermietung üblichen Leistungen" abgestellt, und nicht die
+   artspezifischen Besonderheiten im Rahmen einer objektbezogenen Prüfung berücksichtigt. Danach kann das Urteil
+   keinen Bestand haben. Vielmehr reichen die Feststellungen des FG dafür aus, die Leistungen der KG bei Anlegung
+   eines objektspezifischen Maßstabs als nicht über den üblichen Umfang hinausgehend und damit die Tätigkeit
+   insgesamt als vermögensverwaltend und nicht gewerblich zu beurteilen.
+
+45 (1) Zu Unrecht hat das FG das Überschreiten der privaten Vermögensverwaltung schon allein deshalb angenommen,
+   weil die KG eine unternehmerische Organisation bereitgehalten habe, innerhalb derer sie die Bewachung des
+   Gesamtobjekts, den Sicherheitsdienst auf dem Parkplatz sowie die Reinigung und Ausstattung von in dem
+   Einkaufszentrum befindlichen öffentlichen Sanitäranlagen und Sozialräumen mit Verbrauchsmaterial besorgt habe.
+   Denn mit diesen Leistungen hat die KG keine Leistungen erbracht, die für die Verwaltung und Unterhaltung eines
+   Einkaufszentrums unüblich gewesen wären und der Vermietungstätigkeit ein anderes Gepräge gegeben hätten.
+
+46 (2) Die werbe- und verkaufsfördernden Maßnahmen, die durch den bei der M-GmbH beschäftigten Centermanager
+   und die Werbe-GbR einschließlich des dort agierenden Centermanagers gegenüber den Mietern des Einkaufscenters
+   erbracht werden, stellen keine für die Vermietung von Flächen in einem Einkaufszentrum unüblichen
+   Sonderleistungen dar. Derartige Maßnahmen fallen neben der Vermietung einer etwa 30 000 qm großen Fläche an
+   etwa 40 Mieter nicht so stark ins Gewicht, dass sie der Leistung insgesamt das Gepräge verleihen könnten. Im
+   Mittelpunkt der Leistung der KG gegenüber den Mietern steht immer noch die Vermietung einer Fläche, die sie
+   insbesondere durch die Gestaltung von Gemeinschaftsflächen und auf das gesamte Objekt bezogene Aktionen und
+   Werbemaßnahmen für Kunden gleichermaßen wie für (potentielle) Mieter für das Einkaufszentrum selbst attraktiv
+   erhalten will.
+
+47 Danach kann im Ergebnis offenbleiben, inwieweit die durch die Verwalterin C-GmbH, die M-GmbH und die Werbe-
+   GbR erbrachten Leistungen der KG für die Bestimmung der gewerblichen Tätigkeit i.S. von § 2 GewStG, § 15 Abs. 2
+   EStG als eigene Leistungen zugerechnet werden können, oder ob der KG nur die Einbindung der Mieter in ein von
+   ihr geschaffenes und kontrolliertes Netz von Dienstleistungen, die durch diese Dritten erbracht wurden, als eigene
+   Leistung zugerechnet werden dürfte.
+
+48 b) Die Einkünfte der KG waren nicht deshalb als gewerblich zu qualifizieren, weil eine Betriebsaufspaltung zwischen
+   der KG als möglicher Besitzgesellschaft und der C-GmbH als möglicher Betriebsgesellschaft vorgelegen hätte.
+
+49 aa) Eine Betriebsaufspaltung mit der Folge der Umqualifizierung der Einkünfte der Besitzgesellschaft in gewerbliche
+   Einkünfte liegt vor, wenn einem Betriebsunternehmen wesentliche Grundlagen für seinen Betrieb von einem
+   Besitzunternehmen überlassen werden und die hinter dem Betriebs- und dem Besitzunternehmen stehenden
+   Personen einen einheitlichen geschäftlichen Betätigungswillen haben; dieser ist anzunehmen, wenn die Person
+   oder Personengruppe, die das Besitzunternehmen beherrscht, auch in der Betriebsgesellschaft ihren Willen
+   durchsetzen kann (ständige Rechtsprechung, vgl. jüngst BFH-Urteile vom 29. Juli 2015 IV R 16/13, und vom
+   24. September 2015 IV R 9/13, BFHE 251, 227, BStBl II 2016, 154; s. jetzt auch § 50i Abs. 1 Satz 4 EStG).
+
+50 bb) Ob die Überlassung von Räumlichkeiten durch die KG an die C-GmbH die Voraussetzung der sachlichen
+   Verflechtung erfüllt, kann offenbleiben, da es im Streitzeitraum jedenfalls an der ebenfalls erforderlichen
+   personellen Verflechtung fehlt: A ist als Mehrheitsgesellschafter mit über 99 % zwar neben B mit einer Beteiligung
+   unterhalb von 1 % als Gesellschafter an der KG beteiligt, an der C-GmbH ist jedoch nur B beteiligt.
+
+                                                                                                            Seite 9 von 10
+51 c) Wie das FG zutreffend entschieden hat, gilt die Tätigkeit der KG nicht kraft gewerblicher Prägung als
+   Gewerbebetrieb.
+
+52 Als Gewerbebetrieb gilt in vollem Umfang die mit Einkünfteerzielungsabsicht unternommene Tätigkeit einer
+   Personengesellschaft, die keine gewerbliche Tätigkeit ausübt und bei der ausschließlich eine oder mehrere
+   Kapitalgesellschaften persönlich haftende Gesellschafter sind und nur diese oder Personen, die nicht Gesellschafter
+   sind, zur Geschäftsführung befugt sind (gewerblich geprägte Personengesellschaft, § 15 Abs. 3 Nr. 2 EStG).
+
+53 Dies hat das FG zu Recht verneint, denn neben der Komplementär-GmbH war im Streitzeitraum auch B als
+   Kommanditistin der KG zur Geschäftsführung befugt.
+
+54 d) Die Einkünfte der KG sind auch nicht im Wege der Abfärbung als (insgesamt) gewerblich zu qualifizieren.
+
+55 aa) Nach § 15 Abs. 3 Nr. 1 EStG gilt in vollem Umfang als Gewerbebetrieb die mit Einkünfteerzielungsabsicht
+   unternommene Tätigkeit einer OHG, KG oder einer anderen Personengesellschaft, wenn die Gesellschaft auch eine
+   Tätigkeit i.S. des § 15 Abs. 1 Satz 1 Nr. 1 EStG ausübt. Bei der Tätigkeit, die die Personengesellschaft "auch" ausübt,
+   muss es sich um eine eigenständige gewerbliche Tätigkeit handeln, die von mindestens einer weiteren Tätigkeit,
+   auf die sich die Abfärbung auswirken soll, getrennt werden kann. Die Personengesellschaft muss demnach
+   zumindest noch eine weitere Tätigkeit ausüben, die isoliert betrachtet zu einer anderen Einkunftsart führen würde
+   (vgl. BFH-Urteil vom 29. November 2012 IV R 37/10, Rz 28). Die Tätigkeiten dürfen aber nicht schon als einheitliche
+   Gesamtbetätigung anzusehen sein. Dies ist dann der Fall, wenn sie derart miteinander verflochten sind, dass sie sich
+   gegenseitig unlösbar bedingen. In diesem Fall liegt eine einheitliche Tätigkeit vor, die steuerrechtlich nach dem
+   vorherrschenden Element zu qualifizieren ist. Werden von einem Betrieb nur gemischte Leistungen erbracht, so ist
+   der Betrieb danach zu qualifizieren, welche Tätigkeit die Gesamttätigkeit charakterisiert (vgl. BFH-Urteile vom
+   24. April 1997 IV R 60/95, BFHE 183, 150, BStBl II 1997, 567, zur einheitlichen Tätigkeit und Abfärbetheorie bei
+   Gewerbebetrieb und freiberuflicher Tätigkeit, und vom 20. Dezember 2000 XI R 8/00, BFHE 194, 206, BStBl II 2002,
+   478).
+
+56 bb) Im Streitfall ist die Tätigkeit der werbe- und verkaufsfördernden Maßnahmen, sofern man sie der KG für Zwecke
+   der Einkünftequalifikation zurechnet, untrennbar mit der Vermietung des Einkaufszentrums verflochten. Wie unter
+   II.3.a cc (2) ausgeführt, ist die Leistung Bestandteil der einheitlichen Gesamtbetätigung, die durch die Vermietung
+   charakterisiert wird.
+
+57 4. Der Senat kann in der Sache selbst entscheiden, da die Sache spruchreif ist (§ 126 Abs. 3 Satz 1 Nr. 1 FGO).
+   Mangels Unterhaltens eines Gewerbebetriebs durch die KG im Streitzeitraum sind die angefochtenen
+   gewerbesteuerrechtlichen Verwaltungsakte ersatzlos aufzuheben.
+
+58 Wegen der vollständigen Stattgabe der Klage kommt es auf das Vorliegen der von der Klägerin gerügten
+   Verfahrensfehler nicht mehr an. Aus demselben Grund hat der Senat auch nicht mehr über die hilfsweise begehrte
+   erweiterte Kürzung nach § 9 Nr. 1 Satz 2 GewStG zu befinden.
+
+59 5. Die Kostenentscheidung beruht auf § 135 Abs. 1 FGO.
+
+
+Quelle: www.bundesfinanzhof.de
+
+
+
+
+                                                                                                              Seite 10 von 10
+

@@ -1,0 +1,1179 @@
+{
+  "role": "writer, not independent review",
+  "controls": [
+    {
+      "id": "R39.dates('2026-12-15', '2026-12-31', 1000000, False)",
+      "actual": "no1",
+      "expected": "no1",
+      "premise": "Labelled combined own-law interpretation, actual ordinary taxable domesticB2Bdutyfacts stipulated, no previouslyvalidadvance/standinginvoice or permanent exception. EDIflag means actual statutory qualifying transmission, not anyPDF.",
+      "pass": true
+    },
+    {
+      "id": "R39.dates('2026-12-15', '2027-01-01', 100000, False)",
+      "actual": "no-transition-relief-default-duty",
+      "expected": "no-transition-relief-default-duty",
+      "premise": "Labelled combined own-law interpretation, actual ordinary taxable domesticB2Bdutyfacts stipulated, no previouslyvalidadvance/standinginvoice or permanent exception. EDIflag means actual statutory qualifying transmission, not anyPDF.",
+      "pass": true
+    },
+    {
+      "id": "R39.dates('2026-12-15', '2027-01-01', 100000, True)",
+      "actual": "no-transition-relief-default-duty",
+      "expected": "no-transition-relief-default-duty",
+      "premise": "Labelled combined own-law interpretation, actual ordinary taxable domesticB2Bdutyfacts stipulated, no previouslyvalidadvance/standinginvoice or permanent exception. EDIflag means actual statutory qualifying transmission, not anyPDF.",
+      "pass": true
+    },
+    {
+      "id": "R39.dates('2027-01-01', '2027-01-10', 800000, False)",
+      "actual": "no2",
+      "expected": "no2",
+      "premise": "Labelled combined own-law interpretation, actual ordinary taxable domesticB2Bdutyfacts stipulated, no previouslyvalidadvance/standinginvoice or permanent exception. EDIflag means actual statutory qualifying transmission, not anyPDF.",
+      "pass": true
+    },
+    {
+      "id": "R39.dates('2027-01-01', '2027-01-10', '800000.01', False)",
+      "actual": "no-transition-relief-default-duty",
+      "expected": "no-transition-relief-default-duty",
+      "premise": "Labelled combined own-law interpretation, actual ordinary taxable domesticB2Bdutyfacts stipulated, no previouslyvalidadvance/standinginvoice or permanent exception. EDIflag means actual statutory qualifying transmission, not anyPDF.",
+      "pass": true
+    },
+    {
+      "id": "R39.dates('2027-01-01', '2027-01-10', '800000.01', True)",
+      "actual": "no3-qualifying-EDI",
+      "expected": "no3-qualifying-EDI",
+      "premise": "Labelled combined own-law interpretation, actual ordinary taxable domesticB2Bdutyfacts stipulated, no previouslyvalidadvance/standinginvoice or permanent exception. EDIflag means actual statutory qualifying transmission, not anyPDF.",
+      "pass": true
+    },
+    {
+      "id": "R40.consent(True, False, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Domesticrelief means actual BMF33/34/34ainvoice between domestic businesses. Last branch is voluntaryconsumer/exempt case. Foreignbusiness doesnot get no-consent merely from beingbusiness; actual consent needs separate evidence.",
+      "pass": true
+    },
+    {
+      "id": "R40.consent(False, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Domesticrelief means actual BMF33/34/34ainvoice between domestic businesses. Last branch is voluntaryconsumer/exempt case. Foreignbusiness doesnot get no-consent merely from beingbusiness; actual consent needs separate evidence.",
+      "pass": true
+    },
+    {
+      "id": "R40.consent(False, False, True)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Domesticrelief means actual BMF33/34/34ainvoice between domestic businesses. Last branch is voluntaryconsumer/exempt case. Foreignbusiness doesnot get no-consent merely from beingbusiness; actual consent needs separate evidence.",
+      "pass": true
+    },
+    {
+      "id": "R40.consent(False, False, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Domesticrelief means actual BMF33/34/34ainvoice between domestic businesses. Last branch is voluntaryconsumer/exempt case. Foreignbusiness doesnot get no-consent merely from beingbusiness; actual consent needs separate evidence.",
+      "pass": true
+    },
+    {
+      "id": "R41.evidencecomplete",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Evidence-support classification, not categoricalzero/automaticdenial of contestedclaim. Actualinvoice/copy and all strict objective/materialconditions required; authority not required to fill gaps.",
+      "pass": true
+    },
+    {
+      "id": "R41.evidencemissing-invoice",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Evidence-support classification, not categoricalzero/automaticdenial of contestedclaim. Actualinvoice/copy and all strict objective/materialconditions required; authority not required to fill gaps.",
+      "pass": true
+    },
+    {
+      "id": "R41.evidenceno-openVAT",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Evidence-support classification, not categoricalzero/automaticdenial of contestedclaim. Actualinvoice/copy and all strict objective/materialconditions required; authority not required to fill gaps.",
+      "pass": true
+    },
+    {
+      "id": "R41.evidenceunproved-supply",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Evidence-support classification, not categoricalzero/automaticdenial of contestedclaim. Actualinvoice/copy and all strict objective/materialconditions required; authority not required to fill gaps.",
+      "pass": true
+    },
+    {
+      "id": "R41.evidenceunproved-payment",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Evidence-support classification, not categoricalzero/automaticdenial of contestedclaim. Actualinvoice/copy and all strict objective/materialconditions required; authority not required to fill gaps.",
+      "pass": true
+    },
+    {
+      "id": "R41.evidenceunclear-records",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Evidence-support classification, not categoricalzero/automaticdenial of contestedclaim. Actualinvoice/copy and all strict objective/materialconditions required; authority not required to fill gaps.",
+      "pass": true
+    },
+    {
+      "id": "R41.evidencematerial-otherfailure",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Evidence-support classification, not categoricalzero/automaticdenial of contestedclaim. Actualinvoice/copy and all strict objective/materialconditions required; authority not required to fill gaps.",
+      "pass": true
+    },
+    {
+      "id": "R41.above-small-invoice",
+      "actual": "1190",
+      "expected": "1190",
+      "premise": "Stipulatedordinaryinvoiceabove250, actual19VATlegallydue, correctotherwisecontent/businesssupply/payment allstrictconditions independently established.",
+      "pass": true
+    },
+    {
+      "id": "R41.qualified-input",
+      "actual": "190.00",
+      "expected": "190",
+      "premise": "Actual taxable business supply, actualcompletePDFinvoice/openVAT1190payment/objective records and all15gates; wrongformat alone doesnot foreclose qualifiedfallback.",
+      "pass": true
+    },
+    {
+      "id": "R42.waiverall-stated-gates-plus-other",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual75/76administrativeconditions, otherflag independently confirms remainingrequirements; same-lookingcurrentreconstruction alone not enough. No vendor-systemtest or impliedfine.",
+      "pass": true
+    },
+    {
+      "id": "R42.waivercurrent-image-only",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual75/76administrativeconditions, otherflag independently confirms remainingrequirements; same-lookingcurrentreconstruction alone not enough. No vendor-systemtest or impliedfine.",
+      "pass": true
+    },
+    {
+      "id": "R42.waivernot-highest",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual75/76administrativeconditions, otherflag independently confirms remainingrequirements; same-lookingcurrentreconstruction alone not enough. No vendor-systemtest or impliedfine.",
+      "pass": true
+    },
+    {
+      "id": "R42.waivermutable-data",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual75/76administrativeconditions, otherflag independently confirms remainingrequirements; same-lookingcurrentreconstruction alone not enough. No vendor-systemtest or impliedfine.",
+      "pass": true
+    },
+    {
+      "id": "R42.waiverunverified-other-gates",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual75/76administrativeconditions, otherflag independently confirms remainingrequirements; same-lookingcurrentreconstruction alone not enough. No vendor-systemtest or impliedfine.",
+      "pass": true
+    },
+    {
+      "id": "R43.conversion(True, True, True, True, False)",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Only conditionedgeneral135converted-retention route; mandatoryoriginalstructuredXML may not be lost. Failingthischeckdoesnot imply a fine; dualretentiondefaultand otherrecorddutiesremain.",
+      "pass": true
+    },
+    {
+      "id": "R43.conversion(True, True, False, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Only conditionedgeneral135converted-retention route; mandatoryoriginalstructuredXML may not be lost. Failingthischeckdoesnot imply a fine; dualretentiondefaultand otherrecorddutiesremain.",
+      "pass": true
+    },
+    {
+      "id": "R43.conversion(True, True, True, False, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Only conditionedgeneral135converted-retention route; mandatoryoriginalstructuredXML may not be lost. Failingthischeckdoesnot imply a fine; dualretentiondefaultand otherrecorddutiesremain.",
+      "pass": true
+    },
+    {
+      "id": "R43.conversion(False, True, True, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Only conditionedgeneral135converted-retention route; mandatoryoriginalstructuredXML may not be lost. Failingthischeckdoesnot imply a fine; dualretentiondefaultand otherrecorddutiesremain.",
+      "pass": true
+    },
+    {
+      "id": "R43.conversion(True, False, True, True, False)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Only conditionedgeneral135converted-retention route; mandatoryoriginalstructuredXML may not be lost. Failingthischeckdoesnot imply a fine; dualretentiondefaultand otherrecorddutiesremain.",
+      "pass": true
+    },
+    {
+      "id": "R43.conversion(True, True, True, True, True)",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Only conditionedgeneral135converted-retention route; mandatoryoriginalstructuredXML may not be lost. Failingthischeckdoesnot imply a fine; dualretentiondefaultand otherrecorddutiesremain.",
+      "pass": true
+    },
+    {
+      "id": "R43.no-automatic-rejection",
+      "actual": "True",
+      "expected": "True",
+      "premise": "GoBD155explicitly says inadequate/missingdocumentation without impairedtraceability/verifiability is not substantiveformaldefect warranting rejection; no actualsystemcertification inferred.",
+      "pass": true
+    }
+  ],
+  "control_count": 31,
+  "own_selected_native_ranges": 14,
+  "exact_source_checks": [
+    {
+      "id": "R37.complete-offences",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R38.portal",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R39.default-and-consent",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R39.transition",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R39.effect",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R40.consent",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R41.amendment-input",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R41.amendment-fallback",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R41.full-fallback-conditions",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R41.full-fallback-completion",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R42.outgoing-waiver",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R43.conversion",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R43.documentation",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "R43.effective",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Full newly selected nativeLF",
+      "own_new_selected_read": true
+    },
+    {
+      "id": "EI.CASH",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.CASHTIME",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.CRIME",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.KU",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.DEFINITION",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.DUTY",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.INTEGRITY",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.FIELDS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.ADVANCE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.OTHERSTATE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.NEXT15",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.SMALL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.SMALL250",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.TICKET",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.KUFIELDS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.MONTH",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.FEDERAL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.PORTAL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.FEDFIELDS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.FEDENTRY",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.TRANSITION",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.RATE19",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.SOLAR",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.FINES",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.KEEP",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.AOBOOK",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.AOLOCATION",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.ESTIMATE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.PRESUMPTION",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.ACCRUAL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.VIEWER",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.VERSION",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BUNDLE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.PEPPOL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.SCHEME",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.UTF8",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BTCORE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BTDUE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BT20",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BUYER",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BUYCOUNTRY",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.SELLER",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.SELLCOUNTRY",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.PROCESS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.PAYMENT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.SEPA",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.RULEDE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.CODETYPE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BR53",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.ROUND",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.DUEOR",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.RATESPLIT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.ZERO",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.EXEMPT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.REVERSE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.EXPORT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.OUTSCOPE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.GOBD2024",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.GOBDOUT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.GOBDXML",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.GOBDFORMAT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.GOBDZ2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.FAQREPORT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.FAQSCOPE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.FAQREF",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.FAQBUILD",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.FAQCHANNEL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.FAQCASH",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.FAQRECEIVE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.FAQUPLOAD",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.FORMATERR",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.SPECIAL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BMFSMALL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.STRUCTURED",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.PRICE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BMKEEP",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.INTERNAL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BMFDEF",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BMF6MONTH",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BMFEST",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.RECEIVE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.CARE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.CONSENT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.MIXED",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.STANDARD",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.ZUGFERD",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.EDI",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BANK",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.CONTRACT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.RENT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.SELFBILL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.SEPARATE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.XML",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.VALIDATE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.TAXID",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.NUMBER",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.NOSMALLNUM",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.DETAIL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.DATE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.RENTCHANGE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.DISCOUNT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.GROSS250",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BMTICKET",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BMKU",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.CORRECT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.PRICELATER",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.ORIGINAL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.MACHINE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.SIGNATURE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.DUPLICATE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.HYBRID",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.INPUT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.EXCEPTIONINPUT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.COMMUNITY",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.VALIDATOR",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.CURE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.PRICE2",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.EFFECT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.UBLROOT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.CIIROOT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.JAVA",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.LAYERS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.VALIDATORCURRENT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.OPENMAP",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.IDS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.IDRECOMMEND",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.IDTABLE",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.PROFILEFULL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.COMFORT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.EXTENDED",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.BASIC",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.PROFILEEXCLUSIONS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.FEDCHANNELS",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.CONSOLIDATION",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.UPLOAD",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.EMAIL",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.AMOUNT",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.LINENET",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.R120",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.CODELIST",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    },
+    {
+      "id": "EI.ITALIANB",
+      "hashes_and_literal_quote": true,
+      "quote_scope": "Preserved literal selected excerpt within declared nativeLF",
+      "own_new_selected_read": false
+    }
+  ],
+  "prior_A_manifest": {
+    "sha256": "caa546e677e15366d0530b1eb757fe4cfba54d87b9993d717c4d261de5282b24",
+    "members_rehashed": 610,
+    "mismatches": 0
+  },
+  "full_inverse_and_all_native_rows": true,
+  "all_prior365_current_units_and527_old_topics_retained": true,
+  "original_examples": {
+    "blocks": 0,
+    "failures": [],
+    "original_executable_blocks": 0,
+    "original_sections7_11_and_all_unedited_illustrations_exact": true
+  },
+  "schema": {
+    "errors": [],
+    "warnings": [],
+    "stdout": "checked 1 guides (0 non-guide .md files skipped)\n"
+  },
+  "diff_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

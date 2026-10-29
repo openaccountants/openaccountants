@@ -1,0 +1,133 @@
+BZSt - Country-by-Country Reporting - Elektronische Datenübermittlung über die neue DIP-Schnittstelle
+Hinweis zur Verwendung von Cookies
+Wir möchten zur Verbesserung unserer Website das Nutzungsverhalten analysieren und Zugriffsstatistiken erstellen. Dafür werden mit der Webanalyse-Software Matomo statistische Informationen erfasst und ausgewertet. Ausschließlich mit Ihrer Einwilligung speichern wir dafür ein Statistik-Cookie auf Ihrem Endgerät und greifen auf für diesen Zweck erforderliche Geräteinformationen Ihres Endgerätes zu. Zu keiner Zeit werden diese Daten mit persönlichen Daten in Verbindung gebracht oder an Dritte weitergegeben. Weitere Informationen finden Sie in unserer Datenschutzerklärung. Dort ist auch jederzeit der Widerruf Ihrer Einwilligung möglich.
+Einverstanden
+Springe direkt zu:
+Inhalt
+Hauptmenü
+Suche
+BZSt Online.Portal
+Kontakt
+English
+Leichte Sprache
+Gebärdensprache
+Bundeszentralamt für Steuern (Link zur Startseite)
+Dieses Dokument bestimmt, ob ein Zusatzlogo ausgegeben wird.
+Ein im Feld Wert eingehängtes Logo wird als Zusatzlogo ausgegeben.
+Ist das Feld Wert leer, so wird kein Zusatzlogo ausgegeben.
+Ablageoptionen:
+Wird dieses Dokument unterhalb des globalen Verzeichnisses "_config" abgelegt, so wird das Zusatzlogo auf allen Seiten ausgegeben.
+Um das Logo nur für bestimmte Bereiche auszugeben, kann das Konfigurationsdokument zusätzlich pfadabhängig abgelegt werden.
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Karriere
+Website durchsuchen
+Suchtext
+Suchtext
+Startseite
+Unternehmen
+Internationaler Informationsaustausch
+Country-by-Country Reporting
+Elektronische Datenübermittlung über die neue DIP-Schnittstelle
+Vorlesen
+Elektronische Datenübermittlung über die neue DIP-Schnittstelle
+Meldungen deutscher Unternehmen, die einen Country-by-Country Report abgeben, sind nach amtlich vorgeschriebenem Datensatz und auf elektronischem Weg an das BZSt zu übermitteln.
+Massendatenübermittlung DIP und Dateiupload über das BZSt online.portal
+Der Datenaustausch erfolgt im XML-Format und wird in einem automatisierten Verfahren über die DIP-Schnittstelle (Digitaler Posteingang - Schnittstelle) für Massendaten durchgeführt. Parallel dazu besteht die Möglichkeit eines manuellen Dateiuploads über das BZSt online.portal.
+Die neue DIP-Schnittstelle sowie die Uploadfunktion können nach derzeitigem Stand frühestens ab dem 1. November 2025 genutzt werden.
+Das Kommunikationshandbuch zur DIP-Schnittstelle finden Sie auf der Seite zum DIP.
+Das Kommunikationshandbuch CbCR sowie Dateien zur Übermittlung von CbCR-Daten über die DIP-Schnittstelle (amtlicher Datensatz, das dazugehörige XSD-Schema und eine Beispielsdatei) sind unter dem Punkt "Handbücher".
+Registrierung beim BZSt
+Zur Übermittlung von Daten an das BZSt können Sie sich im neuen BZSt online.portal entweder mit einem Elster-Zertifikat oder mit dem BZSt-Zertifikat anmelden.
+Zur Übermittlung von Massendaten muss (auch bei bereits erfolgter CbCR-Übermittlung in den Vorjahren) zusätzlich in jedem Fall eine Freischaltung zur Nutzung der Massendatenschnittstelle (DIP) erfolgen. Der Antrag kann im neuen BZSt online.portal gestellt werden.
+Sollten Sie noch keine für das Verfahren CbCR erforderliche BZ-Nummer besitzen, verwenden Sie bitte das Kontaktformular "Anmeldung des Datensenders zur elektronischen Übermittlung von Daten". Mit dieser Anmeldung teilen Sie dem Fachbereich CbCR (DAC4) mit, dass Sie Daten übermitteln wollen. Daraufhin wird Ihnen eine BZ-Nummer mitgeteilt. Einer Anmeldung bedarf es lediglich für den Sender der Daten, d. h. für die meldende Stelle, die die Daten letztlich an das BZSt übermittelt (Fremddienstleister oder das Unternehmen selbst). In der Anmeldung sind ausschließlich Angaben zu dem Sender der Daten einzutragen.
+Beauftragte Dienstleistungsunternehmen können die Vollmacht via E-Mail oder Post an das BZSt senden. Anzugeben ist auch die Art der Vollmacht (Übermittlungsvollmacht und/oder Bekanntgabevollmacht). Dazu kann die bereitgestellte Vorlage genutzt werden:
+Vollmacht in Steuersachen gemäß §§ 80, 123 Abgabenordnung (AO)
+PDF, 34KB, Datei ist nicht barrierefrei
+Übermittlung von Testdaten
+Sie können Testdatenlieferungen im Rahmen Ihres Integrationstests an die DIP-Kundentestumgebung übermitteln. Die Datenübermittlung ist im Kommunikationshandbuch DIP-Standard beschrieben.
+Bei Übermittlungen an die Kundentestumgebung werden keine Rückmeldungen aus dem Fachverfahren erstellt. Es erfolgt lediglich eine Prüfung innerhalb der DIP-Schnittstelle. Soweit hier kein grundsätzlicher Fehler auftritt, erhalten Sie keine Rückmeldung.
+Das BZSt kann auch in der Testumgebung Ihre Datenlieferungen nicht verändern oder löschen. Bitte stellen Sie sicher, dass Sie keine Echtdaten auf dem Testsystem oder Testdaten auf dem Produktionssystem einstellen.
+Die Upload-Funktion hat derzeit keine eigene Testmöglichkeit. Bitte übermitteln Sie über die Upload-Funktion daher nur Echtdaten im Rahmen Ihrer Meldepflichten. Die Übermittlung von Testdaten über die Upload-Funktion ist daher nicht zulässig.
+Übersicht 12-stellige Steuernummer
+In der folgenden Tabelle ist ersichtlich, wie sich die 12-stellige Steuernummer zusammensetzt.
+BundesländerStandartschema der Länder12-stellige Steuernummer
+Baden-WürttembergFF/BBB/UUUUP28FF/BBB/UUUUP
+BayernFFF/BBB/UUUUP9FFF/BBB/UUUUP
+BerlinFF/BBB/UUUUP11FF/BBB/UUUUP
+BrandenburgFFF/BBB/UUUUP30FF/BBB/UUUUP
+BremenFF/BBB/UUUUP24FF/BBB/UUUUP
+HamburgFF/BBB/UUUUP22FF/BBB/UUUUP
+Hessen0FF/BBB/UUUUP26FF/BBB/UUUUP
+Mecklenburg-VorpommernFFF/BBB/UUUUP40FF/BBB/UUUUP
+NiedersachsenFF/BBB/UUUUP23FF/BBB/UUUUP
+Nordrhein-WestfalenFFF/BBBB/UUUP5FFF/BBBB/UUUP
+Rheinland-PfalzFF/BBB/UUUUP27FF/BBB/UUUUP
+SaarlandFFF/BBB/UUUUP10FF/BBB/UUUUP
+SachsenFFF/BBB/UUUUP32FF/BBB/UUUUP
+Sachsen-AnhaltFFF/BBB/UUUUP31FF/BBB/UUUUP
+Schleswig-HolsteinFF/BBB/UUUUP21FF/BBB/UUUUP
+ThüringenFFF/BBB/UUUUP41FF/BBB/UUUUP
+Legende:
+F = Finanzamtsnummerm
+B = Bezirksnummer
+U = persönliche Unterscheidungsnummer
+P = Prüfziffer
+Nützliche Links
+Informationen zu den Portalen und Anmeldemöglichkeiten finden Sie unter Portalinformationen.
+Informationen zur neuen Massendatenschnittstelle DIP finden Sie beim Digitalen POSteingang.
+Kontakt
+Bundeszentralamt für Steuern
+Referat St I A 2
+An der Küppe 1
+53225 Bonn
+Telefon:
++49 228/406-2340
+Mo, Di, Do:
+09.00 bis 12.00 Uhr
+12.30 bis 15.00 Uhr
+Fr:
+09.00 bis 12.00 Uhr
+Zuständigkeitsbereich:
+Country by Country Reporting
+Nachricht schreiben
+Verwandte Themen
+Common Reporting Standard
+Der Common Reporting Standard (CRS) ist ein internationales Verfahren zum Austausch von Finanzkonteninformationen mit dem Ziel, grenzüberschreitende Sachverhalte aufzudecken und Steuerhinterziehung zu …
+FATCA
+FATCA ist ein internationales Verfahren zum Austausch von Finanzkonteninformationen zwischen Deutschland und den USA.
+Austausch von Steuergestaltungen (DAC 6)
+Hier finden Sie Informationen zum automatischen Austausch von Steuergestaltungen (DAC 6).
+Meldepflichten digitaler Plattformbetreiber (DPI/DAC 7)
+Hier finden Sie allgemeine Informationen zu den Meldepflichten digitaler Plattformbetreiber nach dem Plattformen-Steuertransparenzgesetz (PStTG) und zum Verfahren, zu den zugrundeliegenden …
+Crypto-Asset Reporting Framework (CARF/DAC 8)
+Informationen zum internationalen Informationsaustausch über aggregierte Transaktionen von Kryptowerten.
+Globale Mindestbesteuerung (Pillar 2)
+Hier finden Sie Informationen zur Übermittlung von Gruppenträgermeldungen und Mindeststeuer-Berichten an das BZSt.
+Seite empfehlen
+Unternavigation aller Website-Bereiche
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Themen A-Z
+Karriere
+Presse
+Newsletter
+Haben Sie Fragen?
+Anrufen
+Nachricht schreiben
+Zentrale Behördennummer
+Für alle Fragen zu Behörden in Deutschland
+Montag bis Freitag 08:00-18:00 Uhr
+115
+Mehr erfahren
+© Bundeszentralamt für Steuern
+Inhaltsverzeichnis
+Erklärung zur Barrierefreiheit
+Impressum
+Datenschutz

@@ -1,0 +1,1 @@
+{"initial_failure":"Original root main-baseline rows omit optional destination_wording, while pre-refresh rows include it. Guide changes saved once; ledger adapter now derives prior actual text where absent, preserving all original objects. No source/Guide correction needed."}

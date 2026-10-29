@@ -1,0 +1,157 @@
+[
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-handover-manifest.json",
+    "sha256": "caa546e677e15366d0530b1eb757fe4cfba54d87b9993d717c4d261de5282b24",
+    "members": 610
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/artifact-manifest.json",
+    "sha256": "61130a4ac7b8618cfc6ecb29771c5fd925e49d8b925c770f6489a43f6ab11004",
+    "members": 515
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/artifact-manifest.json",
+    "sha256": "bc4006c0abe2a76c3e49d26214240936778b2cfba955fd16c46b5b7d166580ca",
+    "members": 81
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/artifact-manifest.json",
+    "sha256": "0cef897bb7b4582183d67ba7ead0928ee45d3fb01038cc664bf3d03605de763c",
+    "members": 163
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/artifact-manifest.json",
+    "sha256": "fc2c6d6446a1490ca5e8c9a26c3d160f3e6a8da7fcd898acaaa8903e60f156a5",
+    "members": 87
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R09-corporate-rounding-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "d6022c4bbac85cc1c7f2499f4f0ecd3ac045b06c2c95f999e6b7861dfb77f74a",
+    "members": 27
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R109-R111-rental-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "92341f9cee70a3d182cf0d366053c3091e0fa0d5e733467042ec856fdf7ca849",
+    "members": 19
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R11-R12-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "1e48b410bd35123483a50e29ce825a89960c89d44e858976ed98465863e6a83a",
+    "members": 54
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R112-crypto-ledger-header-precision-2026-10-29/artifact-manifest.json",
+    "sha256": "ce64c4aa93678e2d22256bfb135704b04a8f42aae76194a917e32005c6dfbd52",
+    "members": 6
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R112-crypto-source-scope-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "0310a18118bad76f4b4dfbed243091ad16c7fa5f889337406ce61b7a340dba44",
+    "members": 11
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R113-R114-planning-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "3298a633215dc8885b7fff8efe3b57e5cf08987a22969573115975f90006dc7f",
+    "members": 17
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R18-R22-non-resident-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "40acd912da70ad843ebea1d9b74dfcb473ddb24ab71a6d4982d0bf9e2730c65d",
+    "members": 20
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R23-R25-annual-VAT-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "a5975e6d4656bf525d4e836aaf26eb367124e5fd29077db2863f4df3a0744fdd",
+    "members": 20
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R24-steuerbar-wording-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "4613cd8a6b290c4c9f370d766a0d90ea687588f39358d9c8098f377e34dc0cd4",
+    "members": 11
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R26-R31-advance-VAT-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "9f01e52dd68e602ce3f9accb74b66b41bbe035296d71d084f41bef8830c324bc",
+    "members": 22
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R32-R36-capital-gains-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "f3fa9bcc8a5b061504fa61fe0c2c4e8b9c1d4174a3d9a0d0e9540baa10f0d7e5",
+    "members": 20
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R37-R41-einvoice-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "df4022c151117653caa364f8b163b2d24d36c74753a39eaf5155d8557966b22b",
+    "members": 21
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R44-R46-crypto-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "02c881aa96b1f1d2084e049be010c2a1f049416797de0a283505157aa90fb8ea",
+    "members": 19
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R47-R54-Swiss-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "5efe4ec91051f28133ab2cfbbb2360cc2d1385e58d477b4e50222673404dce0c",
+    "members": 20
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R55-R56-estimated-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "30513df156c2e464bda948a3b8d700fef19880c31bbb9e3a669874f124107a4e",
+    "members": 20
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R57-R60-treaty-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "c3e31c3a766748c8853898c7e70e4ac0b744fd2e0e32d90997cfce0869ce8684",
+    "members": 21
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R58-R59-treaty-gate-precision-2026-10-29/artifact-manifest.json",
+    "sha256": "b1daf7e84bf6546f5d3454261e2c2f93399507766197436ef82bc46cdf4a96c9",
+    "members": 13
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R61-TP-CbCR-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "8ce27cd294b069509c2dab33e664fb9e2c54834ffe4c02e7f456a26eeca50aa3",
+    "members": 18
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R62-R70-payroll-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "345cd51a8d92b7c1d828d42adac272d4e6897485843805f37c584ba40e377c7d",
+    "members": 25
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R71-employee-certificate-precision-2026-10-29/artifact-manifest.json",
+    "sha256": "03caba6d0ce67edf140bccf17a1f5039f5c91b0c72e18dc0215980d80d043eb6",
+    "members": 16
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R72-R77-social-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "2af2bf689c3fd45303499ef318b45201589f5b523a5f525dd018a163011567de",
+    "members": 18
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R78-R87-benefits-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "53128cbd16dbc67929563088b93fdc04a77dbd391705471825fd49bcf9ac3403",
+    "members": 19
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R88-R96-payroll-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "0be8ae139fa882f1b43660ec3b5e953617af021ba22de93c30f92c5320ccfdee",
+    "members": 25
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R97-R108-planning-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "94ced978fa350dd3360368aeed0b181335d339c8478df712ab0b9bddb65ae227",
+    "members": 23
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-README-ordinary-coverage-writer-successor-2026-10-29/artifact-manifest.json",
+    "sha256": "f7f322134eac42a3daa5dd90ae00ab9c0e6c694bf0895660184dea61896b865a",
+    "members": 8
+  },
+  {
+    "original_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/final-artifact-manifest.json",
+    "sha256": "5e523d0365da5463e30835e68e1667d9185078fa6cd0b233397581cdd8554f46",
+    "members": 296
+  }
+]

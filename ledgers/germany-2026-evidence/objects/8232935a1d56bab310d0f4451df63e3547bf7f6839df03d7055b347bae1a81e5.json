@@ -1,0 +1,65 @@
+{
+  "controls": [
+    {
+      "name": "ordinary local direct hire, no documented exception",
+      "decision": "German social-law route remains; separate \u00a738 employer/host/leasing gate, not automatically withholding from registration",
+      "supported": true
+    },
+    {
+      "name": "insurance applies, documented no38trigger",
+      "decision": "Employer contributions route persists; employee income-tax/advance route remains",
+      "supported": true
+    },
+    {
+      "name": "German host should bear assignment remuneration, no invoice",
+      "decision": "Missing recharge does not remove economic-host test",
+      "supported": true
+    },
+    {
+      "name": "old temporary certificate after indefinite-local arrangement",
+      "decision": "No assumed coverage; re-evaluate actual certificate/facts rather than cancelling or validating it by this Guide",
+      "supported": true
+    },
+    {
+      "name": "firstpayroll56daysafterstart",
+      "firstpayroll_days": 56,
+      "ordinary_latest_report_days": 42,
+      "decision": "Cannot wait for firstpayroll",
+      "supported": true
+    },
+    {
+      "name": "immediate-sector registration",
+      "decision": "Start-of-work Sofortmeldung and later ordinary registration are distinct; one does not replace other",
+      "supported": true
+    },
+    {
+      "name": "foreignemployer privatehealthemployee",
+      "decision": "Private health does not zero any remaining pension/unemployment collection route",
+      "supported": true
+    },
+    {
+      "name": "firstfullmonthwithholding100annualised",
+      "annualised": 1200,
+      "interval": "quarterly, not automatic monthly or small-headcount annual",
+      "supported": true
+    },
+    {
+      "name": "firstfullmonth90annualised",
+      "annualised": 1080,
+      "interval": "annual equalboundary",
+      "supported": true
+    },
+    {
+      "name": "newestablishmentmonth500annualised",
+      "annualised": 6000,
+      "interval": "monthly",
+      "supported": true
+    },
+    {
+      "name": "contribution expected before monthendpay",
+      "decision": "Third-last-bank-day due may precede salary; separate2workday prior contributionstatement",
+      "supported": true
+    }
+  ],
+  "scope": "All5 original qualitative cases checked against actual statutory gates; no oa/netpay examples in this scope. Three source-derived interval boundaries corroborate sibling handoff, not a new supplied pay-slip or portal computation."
+}

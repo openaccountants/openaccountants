@@ -1,0 +1,13 @@
+{
+  "slug": "germany-to-switzerland-cross-border-tax",
+  "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-to-switzerland-cross-border-tax.md",
+  "Guide_sha256": "796c662a90d1493b7b63a1bc83093175168016bfc5a5a7f312f8759471f838b5",
+  "bytes": 33849,
+  "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R47-R54-Swiss-writer-successor-2026-10-29/ledgers/germany-to-switzerland-cross-border-tax.md",
+  "ledger_sha256": "e5bcb494932847ff0e36d63f35d35078e6c1de0717c3207baac9e6252e6024be",
+  "current_rows": 162,
+  "prior_current_rows": 160,
+  "old_topics": 281,
+  "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/germany-to-switzerland-cross-border-tax.md",
+  "prior_ledger_sha256": "226a6bc71ffed829a3a0c72625742fa96e1e0d1505612c9e02091b8b7942c7f2"
+}

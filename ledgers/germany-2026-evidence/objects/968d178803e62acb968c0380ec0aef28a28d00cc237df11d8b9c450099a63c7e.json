@@ -1,0 +1,7 @@
+{
+  "result": "Assertion before all checks completed",
+  "reason": "Original B AO240.surcharge is the exact first sentence of nativeLF7, not all later sentences on that same line. Its rate/base quotation is a faithful literal prefix.",
+  "actual_inspection": "Full nativeLF7 and retained quotation inspected in bounded diagnosis; no later clause silently promoted to a fresh full operative method.",
+  "correction": "Preserve original quote verbatim; allow literal prefix only for specifically named original anchor and label scope in checks. All other quote checks require full native equality.",
+  "Guide_source_or_ledger_change": false
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-29",
+  "selected": "Writer Option A, plus the identical eligibility correction in both actual sibling tables.",
+  "alternative": "Writer Option B supplies the same two-business numbers in a short table, retaining the 19% source.",
+  "scope": "Combined primary text and official 2026 instructions; no claim to have read the failed 2010 ruling.",
+  "actual_root_reads": "DEB031 native84–85; DEB282 native5–10; DEB183 native1217–1232.",
+  "plans": [
+    {
+      "slug": "de-einkommensteuer-freelancer",
+      "expected_before_sha256": "c80a3678a2bd6edd3461fc56b35c09496980a857079c7386b259927f44764987",
+      "operations": [
+        {
+          "before": "| Low-value asset (GWG): expensed in full if cost net of deductible input VAT is not more than | EUR 800 | 2026 | https://www.gesetze-im-internet.de/estg/__6.html |",
+          "after": "| Low-value asset (GWG): expensed in full if cost reduced by contained input VAT for the eligibility test is not more than | EUR 800 | 2026 | https://www.gesetze-im-internet.de/estg/__6.html |"
+        },
+        {
+          "before": "- **The EUR 800 GWG test** uses cost less deductible input VAT only (§ 6(2) EStG: \"vermindert um einen darin enthaltenen Vorsteuerbetrag\"), so a Kleinunternehmer tests the gross price. Example: a chair at EUR 952 gross (EUR 800 plus 19% VAT, [§ 12(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html)) is above EUR 800 for a Kleinunternehmer and must be depreciated or pooled; a business in the normal scheme records EUR 800 and expenses it in full.",
+          "after": "- **The EUR 800 GWG test** uses cost reduced by the input VAT contained in the price (§ 6(2) EStG: \"vermindert um einen darin enthaltenen Vorsteuerbetrag\"), including where it is not recoverable. Keep eligibility separate from the deductible expense: [§ 9b(1) EStG](https://www.gesetze-im-internet.de/estg/__9b.html) excludes recoverable VAT from acquisition cost; irrecoverable VAT remains in cost. An otherwise eligible self-usable business chair at EUR 952 gross (EUR 800 plus 19% VAT, [§ 12(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html)) meets the EUR 800 test in both cases. A Kleinunternehmer can choose to expense the full EUR 952; a business entitled to full input-VAT credit expenses EUR 800 and claims the EUR 152 VAT separately."
+        },
+        {
+          "before": "version: 1.3\n",
+          "after": "version: 1.4\n"
+        }
+      ]
+    },
+    {
+      "slug": "de-income-tax",
+      "expected_before_sha256": "1c6d47d53101382347ac9b9c3bb34b8c23a7b67db0d00c9f6389b0042b966ce7",
+      "operations": [
+        {
+          "before": "| Low-value asset (GWG) | Expensed at once if cost net of deductible VAT is at most EUR 800; register if over EUR 250 | 2026 | Same, § 6(2) |",
+          "after": "| Low-value asset (GWG) | Expensed at once if cost reduced by contained input VAT for the eligibility test is at most EUR 800; the expense includes irrecoverable VAT; register if over EUR 250 | 2026 | Same, § 6(2) |"
+        },
+        {
+          "before": "version: 2.4\n",
+          "after": "version: 2.5\n"
+        }
+      ]
+    },
+    {
+      "slug": "de-self-employed-income-tax",
+      "expected_before_sha256": "5a71fe5bdc783deed9c2815c9bfe400c4a48ac2fe93786f614ae70fc85c24f26",
+      "operations": [
+        {
+          "before": "| Low-value asset (GWG) | Expensed at once if cost net of deductible VAT is at most EUR 800; register if over EUR 250 | 2026 | Same, § 6(2) |",
+          "after": "| Low-value asset (GWG) | Expensed at once if cost reduced by contained input VAT for the eligibility test is at most EUR 800; the expense includes irrecoverable VAT; register if over EUR 250 | 2026 | Same, § 6(2) |"
+        },
+        {
+          "before": "version: 2.3\n",
+          "after": "version: 2.4\n"
+        }
+      ]
+    }
+  ]
+}

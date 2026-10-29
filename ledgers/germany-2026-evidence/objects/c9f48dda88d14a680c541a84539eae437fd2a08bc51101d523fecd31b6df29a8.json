@@ -1,0 +1,27 @@
+[
+  {
+    "label": "eligible support markup",
+    "actual": 5000.0,
+    "expected": 5000
+  },
+  {
+    "label": "eligible support price",
+    "actual": 105000.0,
+    "expected": 105000
+  },
+  {
+    "label": "fictional related revenue",
+    "actual": 100000,
+    "expected": 100000
+  },
+  {
+    "label": "fictional independent CUP revenue",
+    "actual": 120000,
+    "expected": 120000
+  },
+  {
+    "label": "ordinary income correction",
+    "actual": 20000,
+    "expected": 20000
+  }
+]

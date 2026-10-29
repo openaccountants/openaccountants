@@ -1,0 +1,360 @@
+{
+  "writer_only": true,
+  "controls": [
+    {
+      "id": "R11.own-exact1",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Separate share classification under the labelled combined-primary interpretation; actual gift/acquisition and predecessor within-period facts stipulated. Other exit/person/valuation gates are not inferred.",
+      "pass": true
+    },
+    {
+      "id": "R11.own-under1",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Separate share classification under the labelled combined-primary interpretation; actual gift/acquisition and predecessor within-period facts stipulated. Other exit/person/valuation gates are not inferred.",
+      "pass": true
+    },
+    {
+      "id": "R11.recent-gift-donor",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Separate share classification under the labelled combined-primary interpretation; actual gift/acquisition and predecessor within-period facts stipulated. Other exit/person/valuation gates are not inferred.",
+      "pass": true
+    },
+    {
+      "id": "R11.not-recent",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Separate share classification under the labelled combined-primary interpretation; actual gift/acquisition and predecessor within-period facts stipulated. Other exit/person/valuation gates are not inferred.",
+      "pass": true
+    },
+    {
+      "id": "R11.small-donor",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Separate share classification under the labelled combined-primary interpretation; actual gift/acquisition and predecessor within-period facts stipulated. Other exit/person/valuation gates are not inferred.",
+      "pass": true
+    },
+    {
+      "id": "R11.earlier-chain",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Separate share classification under the labelled combined-primary interpretation; actual gift/acquisition and predecessor within-period facts stipulated. Other exit/person/valuation gates are not inferred.",
+      "pass": true
+    },
+    {
+      "id": "R11.donor-outside-period",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Separate share classification under the labelled combined-primary interpretation; actual gift/acquisition and predecessor within-period facts stipulated. Other exit/person/valuation gates are not inferred.",
+      "pass": true
+    },
+    {
+      "id": "R11.share-not-residence",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Qualifying share branch, but independently failed person/residence gate: no overall exit-tax population conclusion.",
+      "pass": true
+    },
+    {
+      "id": "preserved-Anna-gain",
+      "actual": "1975000",
+      "expected": "1975000",
+      "premise": "Original hypothetical framing arithmetic only; existing labelled source-chain limitations retained.",
+      "pass": true
+    },
+    {
+      "id": "preserved-Anna-taxable-gain",
+      "actual": "1185000.0",
+      "expected": "1185000",
+      "premise": "Same preserved conditional partial-income arithmetic; no new tariff/tax-chain clearance.",
+      "pass": true
+    },
+    {
+      "id": "preserved-Anna-gross-minus-cost",
+      "actual": "1185000.0",
+      "expected": "1185000",
+      "premise": "Equivalent preserved arithmetic, no new tax premise.",
+      "pass": true
+    },
+    {
+      "id": "R12.A-cap",
+      "actual": "50000",
+      "expected": "50000",
+      "premise": "Corporation, employeeA100k; no special adjustments.",
+      "pass": true
+    },
+    {
+      "id": "R12.B-cap",
+      "actual": "50000",
+      "expected": "50000",
+      "premise": "Distinct employeeB50k.",
+      "pass": true
+    },
+    {
+      "id": "R12.share-A",
+      "actual": "500",
+      "expected": "500",
+      "premise": "Same full1000 wage rounding units and ordinary two-establishment key.",
+      "pass": true
+    },
+    {
+      "id": "R12.share-B",
+      "actual": "500",
+      "expected": "500",
+      "premise": "Same facts; no municipal multiplier/rounding inferred.",
+      "pass": true
+    },
+    {
+      "id": "R12.trainee",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Actual vocational-training employee, excluded by31(2).",
+      "pass": true
+    },
+    {
+      "id": "R12.profit-bonus-exclusion",
+      "actual": "30000",
+      "expected": "30000",
+      "premise": "Regular eligible pay30000; separate20000 profit-based one-off bonus excluded, not included in functioninput.",
+      "pass": true
+    },
+    {
+      "id": "R12.taxfree-supplements",
+      "actual": "32000",
+      "expected": "32000",
+      "premise": "30000 regular eligible pay +2000 statutory overtime/night supplements; separate5000 ordinary tax-exempt amount excluded.",
+      "pass": true
+    },
+    {
+      "id": "R12.supplement-and-cap",
+      "actual": "50000",
+      "expected": "50000",
+      "premise": "Qualifying supplements still within the per-person total cap.",
+      "pass": true
+    },
+    {
+      "id": "R12.partly-exempt-worker",
+      "actual": "0",
+      "expected": "0",
+      "premise": "31(3) actual condition independently established; no exemption inferred.",
+      "pass": true
+    },
+    {
+      "id": "R13.transfer-2",
+      "actual": "0",
+      "expected": "0",
+      "premise": "501 overdue tax;50-euro-base rounding gives500/1%=5 for first started month; indicated days are actual statutory effective lateness, separately determined under224. No cheque receipt/effective timing conflation.",
+      "pass": true
+    },
+    {
+      "id": "R13.transfer-3",
+      "actual": "0",
+      "expected": "0",
+      "premise": "501 overdue tax;50-euro-base rounding gives500/1%=5 for first started month; indicated days are actual statutory effective lateness, separately determined under224. No cheque receipt/effective timing conflation.",
+      "pass": true
+    },
+    {
+      "id": "R13.transfer-4",
+      "actual": "5",
+      "expected": "5",
+      "premise": "501 overdue tax;50-euro-base rounding gives500/1%=5 for first started month; indicated days are actual statutory effective lateness, separately determined under224. No cheque receipt/effective timing conflation.",
+      "pass": true
+    },
+    {
+      "id": "R13.cash-handed-authority-2",
+      "actual": "5",
+      "expected": "5",
+      "premise": "501 overdue tax;50-euro-base rounding gives500/1%=5 for first started month; indicated days are actual statutory effective lateness, separately determined under224. No cheque receipt/effective timing conflation.",
+      "pass": true
+    },
+    {
+      "id": "R13.cheque-sent-authority-2",
+      "actual": "5",
+      "expected": "5",
+      "premise": "501 overdue tax;50-euro-base rounding gives500/1%=5 for first started month; indicated days are actual statutory effective lateness, separately determined under224. No cheque receipt/effective timing conflation.",
+      "pass": true
+    },
+    {
+      "id": "R13.bank-account-cash-deposit-2",
+      "actual": "0",
+      "expected": "0",
+      "premise": "501 overdue tax;50-euro-base rounding gives500/1%=5 for first started month; indicated days are actual statutory effective lateness, separately determined under224. No cheque receipt/effective timing conflation.",
+      "pass": true
+    },
+    {
+      "id": "R14.letting",
+      "actual": "True",
+      "expected": "True",
+      "premise": "All other7g facts independently meet current main-method gates, including required period. Letting flag means actually qualifying letting; no particular foreign lease entitlement inferred.",
+      "pass": true
+    },
+    {
+      "id": "R14.own-use",
+      "actual": "True",
+      "expected": "True",
+      "premise": "All other7g facts independently meet current main-method gates, including required period. Letting flag means actually qualifying letting; no particular foreign lease entitlement inferred.",
+      "pass": true
+    },
+    {
+      "id": "R14.neither",
+      "actual": "False",
+      "expected": "False",
+      "premise": "All other7g facts independently meet current main-method gates, including required period. Letting flag means actually qualifying letting; no particular foreign lease entitlement inferred.",
+      "pass": true
+    },
+    {
+      "id": "R15.body6000",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual otherwise covered other private-law body; taxable flag means qualifying non-agricultural commercial operation. Overrides independently established; no general exemption/tax amount inferred.",
+      "pass": true
+    },
+    {
+      "id": "R15.body5000",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual otherwise covered other private-law body; taxable flag means qualifying non-agricultural commercial operation. Overrides independently established; no general exemption/tax amount inferred.",
+      "pass": true
+    },
+    {
+      "id": "R15.body5000point01",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual otherwise covered other private-law body; taxable flag means qualifying non-agricultural commercial operation. Overrides independently established; no general exemption/tax amount inferred.",
+      "pass": true
+    },
+    {
+      "id": "R15.agriculture",
+      "actual": "False",
+      "expected": "False",
+      "premise": "Actual otherwise covered other private-law body; taxable flag means qualifying non-agricultural commercial operation. Overrides independently established; no general exemption/tax amount inferred.",
+      "pass": true
+    },
+    {
+      "id": "R15.loss-override",
+      "actual": "True",
+      "expected": "True",
+      "premise": "Actual otherwise covered other private-law body; taxable flag means qualifying non-agricultural commercial operation. Overrides independently established; no general exemption/tax amount inferred.",
+      "pass": true
+    },
+    {
+      "id": "R16.no-reduction",
+      "actual": "400",
+      "expected": "400",
+      "premise": "Eligible total≤410 under46(3);32d6income excluded. Actual statutory excess-age/farming inputs independently established; no wider hardship/24a algorithm or negative branch supplied.",
+      "pass": true
+    },
+    {
+      "id": "R16.age100",
+      "actual": "300",
+      "expected": "300",
+      "premise": "Eligible total≤410 under46(3);32d6income excluded. Actual statutory excess-age/farming inputs independently established; no wider hardship/24a algorithm or negative branch supplied.",
+      "pass": true
+    },
+    {
+      "id": "R16.age100-farm50",
+      "actual": "250",
+      "expected": "250",
+      "premise": "Eligible total≤410 under46(3);32d6income excluded. Actual statutory excess-age/farming inputs independently established; no wider hardship/24a algorithm or negative branch supplied.",
+      "pass": true
+    },
+    {
+      "id": "R16.only32d6-excluded",
+      "actual": "0",
+      "expected": "0",
+      "premise": "Eligible total≤410 under46(3);32d6income excluded. Actual statutory excess-age/farming inputs independently established; no wider hardship/24a algorithm or negative branch supplied.",
+      "pass": true
+    }
+  ],
+  "control_count": 38,
+  "own_selected_source_anchor_count": 9,
+  "own_exact_quote_checks": [
+    {
+      "id": "R11.shares",
+      "exact_identity_and_native_quote": true
+    },
+    {
+      "id": "R11.exit-incorporation",
+      "exact_identity_and_native_quote": true
+    },
+    {
+      "id": "R11.separate-residence-test",
+      "exact_identity_and_native_quote": true
+    },
+    {
+      "id": "R12.qualifying-wages",
+      "exact_identity_and_native_quote": true
+    },
+    {
+      "id": "R13.grace",
+      "exact_identity_and_native_quote": true
+    },
+    {
+      "id": "R13.method",
+      "exact_identity_and_native_quote": true
+    },
+    {
+      "id": "R14.use-or-letting",
+      "exact_identity_and_native_quote": true
+    },
+    {
+      "id": "R15.filing",
+      "exact_identity_and_native_quote": true
+    },
+    {
+      "id": "R16.employee-410",
+      "exact_identity_and_native_quote": true
+    }
+  ],
+  "prior_seals": [
+    {
+      "manifest": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/artifact-manifest.json",
+      "sha256": "fc2c6d6446a1490ca5e8c9a26c3d160f3e6a8da7fcd898acaaa8903e60f156a5",
+      "members": 87,
+      "mismatches": []
+    },
+    {
+      "manifest": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R09-corporate-rounding-writer-successor-2026-10-29/artifact-manifest.json",
+      "sha256": "d6022c4bbac85cc1c7f2499f4f0ecd3ac045b06c2c95f999e6b7861dfb77f74a",
+      "members": 27,
+      "mismatches": []
+    }
+  ],
+  "original_executable_examples": {
+    "leaving-germany-exit-tax": {
+      "blocks": 0,
+      "failures": []
+    },
+    "de-trade-tax": {
+      "blocks": 2,
+      "failures": []
+    },
+    "de-corporate-tax": {
+      "blocks": 2,
+      "failures": []
+    },
+    "de-einkommensteuer-freelancer": {
+      "blocks": 3,
+      "failures": []
+    }
+  },
+  "original_executable_case_count": 7,
+  "original_exit_manual_framing_recomputed": true,
+  "R17_grouped_units": 14,
+  "R17_component_count": 45,
+  "R17_all_expected_components_present": true,
+  "current_native_rows_and_full_inverses_exact": true,
+  "schema": {
+    "files": 4,
+    "errors": [],
+    "warnings": [],
+    "stdout": "checked 4 guides (0 non-guide .md files skipped)\n"
+  },
+  "scoped_diff_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

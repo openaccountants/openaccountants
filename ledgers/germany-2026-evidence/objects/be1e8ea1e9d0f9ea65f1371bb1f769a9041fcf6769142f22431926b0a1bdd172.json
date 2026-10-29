@@ -1,0 +1,122 @@
+[
+  {
+    "LF": 83,
+    "current_wording": "- **Same number, other rules.** The same amount appears in § 141 AO (bookkeeping duty) and § 20 UStG (VAT on receipts). They are separate tests.",
+    "scope": "Uncomputed sibling AO141/USt20 thresholds; own ledger covers distinct800000invoice threshold."
+  },
+  {
+    "LF": 126,
+    "current_wording": "- **The ERechV does not say** whether its amount is net or gross.",
+    "scope": "Guide explicitly reserves net/gross1000federal direct-award measurement."
+  },
+  {
+    "LF": 180,
+    "current_wording": "| September 2025 | The federal administration receives e-invoices through one platform, OZG-RE, after the older ZRE platform was merged into it. Source: the federal e-invoicing information site named in the ministry's questions and answers page. It is not an allowed host for this Guide and is not linked |",
+    "scope": "Historical federal portal consolidation date is corroborated by the actual current federal publisher statement at CONSOLIDATION, not a portal runtime observation."
+  },
+  {
+    "LF": 261,
+    "current_wording": "| BT-23 | Business process type (ProfileID) | Yes (mandatory since XRechnung 3.0.1, per the legacy Guide) |",
+    "scope": "Current3.0.2 mandatory clause is quoted. The historical since3.0.1 attribution remains legacy rather than a new historical release verification."
+  },
+  {
+    "LF": 266,
+    "current_wording": "| BT-34 | Seller electronic address + scheme ID | Yes (mandatory since XRechnung 3.0.1, per the legacy Guide) |",
+    "scope": "Current3.0.2 requirement quoted; legacy since3.0.1 effective version not independently established."
+  },
+  {
+    "LF": 270,
+    "current_wording": "| BT-49 | Buyer electronic address + scheme ID | Yes (mandatory since XRechnung 3.0.1, per the legacy Guide) |",
+    "scope": "Current3.0.2 requirement quoted; legacy since3.0.1 effective version not independently established."
+  },
+  {
+    "LF": 276,
+    "current_wording": "| BT-10 (Leitweg-ID) | Hierarchical routing identifier for B2G (format: coarse-fine-check digit). § 5(1) no. 1 ERechV demands a Leitweg-Identifikationsnummer on every invoice to a federal authority | Yes (B2G) |",
+    "scope": "Own ERechV5 proves assigned Leitweg-ID; exact full coarse/fine/check syntax is not established by the selected clauses."
+  },
+  {
+    "LF": 323,
+    "current_wording": "- Public authorities connected to OZG-RE are reachable via Peppol",
+    "scope": "Published channel and addressing scope, not an actual live recipient lookup or delivery test."
+  },
+  {
+    "LF": 355,
+    "current_wording": "| Invalid Leitweg-ID format | Use the exact identifier assigned by the recipient (§ 5 ERechV). Not yet confirmed here: the full validation pattern. The legacy numeric-only description is not a verified constraint |",
+    "scope": "Exact complete Leitweg-ID syntax/pattern is not established; copy the recipient-assigned identifier. Targeted official pattern PDF requests failed/404, not fabricated reading."
+  },
+  {
+    "LF": 363,
+    "current_wording": "- **Not yet confirmed:** whether the platform validates a Leitweg-ID against a registered directory.",
+    "scope": "Explicit Not-yet-confirmed directory check; statutory formal validation does not establish this extra implementation."
+  },
+  {
+    "LF": 364,
+    "current_wording": "- **Not yet confirmed:** whether the platform verifies that the recipient is currently connected and active.",
+    "scope": "Explicit Not-yet-confirmed current connected/active recipient check."
+  },
+  {
+    "LF": 365,
+    "current_wording": "- **Not yet confirmed:** the exact structured error-message format for rejected invoices.",
+    "scope": "Explicit Not-yet-confirmed structured error-message format."
+  },
+  {
+    "LF": 393,
+    "current_wording": "- **Validation tolerance:** the legacy Guide stated a one-cent tolerance per tax subtotal group. No allowed page prints it, so the amount was removed",
+    "scope": "Guide says previousonecenttolerance unsupported; no positive tolerance claim."
+  },
+  {
+    "LF": 394,
+    "current_wording": "- **Rounding mode:** KoSIT's specification says only \"gerundet auf zwei Dezimalstellen\" and names no rounding mode. The legacy Guide's line on banker's rounding is not in it and was removed",
+    "scope": "Guide says roundingmodeunsettled; no invented bankers-rounding mandate."
+  },
+  {
+    "LF": 438,
+    "current_wording": "| Verfahrensdokumentation | The legacy Guide says written procedural documentation of the e-invoice process (receipt, processing, archiving) is mandatory. That comes from the GoBD main letter of 28 November 2019, which is not among the pages read for this Guide. Carried over, not checked |",
+    "scope": "Guide expresslylabels proceduraldocumentation as unverifiedlegacy; mainGoBD2019notread."
+  },
+  {
+    "LF": 441,
+    "current_wording": "| Conversion | Converting an incoming electronic document to another format is allowed only under the conditions of GoBD paragraph 135 (GoBD paragraph 131). Paragraph 135 itself is in the main letter, which was not read. The legacy Guide's summary: the original must also be kept and the conversion documented |",
+    "scope": "Guide expresslylabels paragraph135conversiondetail as notread; only actual2025amendmentsquoted."
+  },
+  {
+    "LF": 455,
+    "current_wording": "| Other invoice where an e-invoice was due: input VAT deduction | The invoice is not a proper invoice under §§ 14 and 14a UStG, so in principle it gives no right to deduct input tax (decree section 15.2a(1)). The issuer can cure this by issuing an e-invoice afterwards that refers specifically and clearly to the first invoice (15.2a(7)). Without that, the decree's paragraph 15.2a(1a), on deducting input tax without a proper invoice, also applies to this case, and the ministry adds that a correct and complete other invoice will \"regelmäßig\" meet its conditions. The earlier sentences of 15.2a(1a), which set those conditions, are not in the letter and were not read |",
+    "scope": "15.2a(1a)earlierconditions absent from amendment letter; precise missing operative chain retained, no blanketdeduction."
+  },
+  {
+    "LF": 461,
+    "current_wording": "- **Not settled on the pages read:** whether sending a paper or PDF invoice where an e-invoice was due counts as \"not issuing\" an invoice for the fine in the first row. The statute's wording is in the table. Refer.",
+    "scope": "Fineclassification of wrongformat explicitlyunsettled; not equated automaticallywithnonissue."
+  },
+  {
+    "LF": 478,
+    "current_wording": "- E-invoices provide the data basis for the monthly or quarterly Umsatzsteuer-Voranmeldung (advance VAT return) via ELSTER. See the German VAT Guide, `germany-vat-return`",
+    "scope": "VATreturn sibling handoff, no stand-alonefiling method here."
+  },
+  {
+    "LF": 486,
+    "current_wording": "- For Einzelunternehmer (sole proprietors) and Freiberufler (freelancers), e-invoice revenue data feeds into the Einkommensteuer return (Anlage S or Anlage G)",
+    "scope": "PIT S/G sibling handoff; cash/accrual timing independentlyquoted."
+  },
+  {
+    "LF": 493,
+    "current_wording": "- Intra-EU supplies reported via Zusammenfassende Meldung (recapitulative statement) must reconcile with the invoices issued for them (tax category K in the structured data)",
+    "scope": "Operationalinvoice-to-ZM reconciliation, no newlegalallowance or categoryclassification."
+  },
+  {
+    "LF": 494,
+    "current_wording": "- Buyer VAT IDs on invoices (BT-48) should be checked against VIES",
+    "scope": "VIES check is an operational recommendation, not claim that allbuyerVATIDs determine tax."
+  },
+  {
+    "LF": 500,
+    "current_wording": "- Verfahrensdokumentation must describe the e-invoice workflow from receipt to archiving (legacy statement, from the GoBD main letter, not checked)",
+    "scope": "Unverifiedlegacy procedural-documentation statement; no fabricatedGoBDquote."
+  },
+  {
+    "LF": 573,
+    "current_wording": "- Not yet confirmed: the exact Leitweg-ID validation pattern and the three additional portal checks identified in Section 6; the earlier stated GoBD procedural-documentation and paragraph 135 details; the full conditions of UStAE 15.2a(1a) absent from the amendment letter; and whether wrong-format invoicing attracts the non-issue fine. These limits are not resolved by technical schema conformity.",
+    "scope": "Consolidated exact remaining source limits; newly read namespaces/profiles/identifiers/channels/layers are no longer classified as missing."
+  }
+]

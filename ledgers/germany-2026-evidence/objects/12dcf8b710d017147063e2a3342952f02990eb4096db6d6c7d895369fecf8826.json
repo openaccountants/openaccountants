@@ -1,0 +1,17 @@
+{
+  "current_sha256": "b68bdba9f41c82ac242a25c992196405425370d3fc0c577d93dd122504872823",
+  "current_bytes": 47212,
+  "main_sha256": "b68bdba9f41c82ac242a25c992196405425370d3fc0c577d93dd122504872823",
+  "pre_refresh_sha256": "125c10d8c3409938d9942fdc851f6b7af84f2292c43a645e99782106759065ec",
+  "pre_refresh_revision": "3e241566^",
+  "git_object_repository": "/Users/michaelcutajar/Downloads/oa-f1-wt/wt-rev-903",
+  "cited_URLs": 40,
+  "catalog_matches": 36,
+  "unmatched": [
+    "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Berechnung-Aufteilung-Grundstueckskaufpreis.html",
+    "https://www.openaccountants.com",
+    "https://www.openaccountants.com/connect",
+    "https://www.openaccountants.com/network"
+  ],
+  "status": "Writer in progress; no independent review, no Guide edits"
+}

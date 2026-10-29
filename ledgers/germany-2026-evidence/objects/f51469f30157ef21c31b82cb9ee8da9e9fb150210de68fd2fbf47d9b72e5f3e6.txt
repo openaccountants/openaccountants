@@ -1,0 +1,22 @@
+08ed44c5 2026-10-27 [DE] Restore rules lost in earlier rewrites (#903)
+2e232d25 2026-10-27 [DE] Review fixes: 2026 breakfast rate, entry-certificate rule, § 24 rates, Vorabpauschale citations
+3f131f62 2026-10-27 [DE] Restore rules lost in earlier rewrites
+1f1e23a2 2026-10-25 guides: 56 update(s) by Michael Cutajar (openaccountants.com)
+8641e886 2026-10-24 [DE] VAT: germany-vat-return rewritten for 2026 (deep-tax shape) (#805)
+5d936356 2026-10-24 [DE] VAT: rewrite germany-vat-return for 2026 in the deep-tax shape
+f9de1bc1 2026-10-24 guides: 247 update(s) by Ryan Duguid (openaccountants.com)
+7f5ea7a4 2026-10-23 [DE] VAT: annual return, small businesses, cash basis, partial exemption and OSS (#617)
+5f0e5e65 2026-10-18 sync: 542 files updated from openaccountants.com (2026-10-18)
+4d26c15a 2026-10-17 sync: 1577 files updated from openaccountants.com (2026-10-17)
+d3df95fa 2026-09-21 sync: 14 files updated from openaccountants.com (2026-09-21)
+11eb01a4 2026-08-27 sync: 3270 files updated from openaccountants.com (2026-08-27)
+037f3d41 2026-08-02 sync: 6129 files updated from openaccountants.com (2026-08-02)
+bca875f4 2026-08-01 sync: 7374 files updated from openaccountants.com (2026-08-01)
+3244ccd6 2026-07-04 Complete frontmatter metadata on all 1,007 Guides + strict CI
+1c626f5f 2026-06-12 Add reliance disclaimers across the repo
+5ec07f8c 2026-06-07 Fix broken links: non-www openaccountants.com 404s on every path
+8530598b 2026-05-26 Frontmatter cleanup: UK/Germany/Portugal
+c76f68a1 2026-04-12 Rewrite 5 flagship skills to Malta v2.0 structure
+caa19fbb 2026-04-11 Update all disclaimers: point to openaccountants.com for verified versions
+2fd1cb44 2026-04-11 349 tax skills across 134+ countries — initial commit
+794e8c52 2026-04-09 feat: add international skills — Malta, Germany, EU VAT

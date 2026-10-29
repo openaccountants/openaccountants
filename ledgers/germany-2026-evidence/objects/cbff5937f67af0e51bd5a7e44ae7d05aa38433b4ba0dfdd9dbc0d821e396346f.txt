@@ -1,0 +1,47 @@
+§ 147 AO - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Abgabenordnung (AO)
+§ 147 Ordnungsvorschriften für die Aufbewahrung von Unterlagen
+(1) Die folgenden Unterlagen sind geordnet aufzubewahren: 1.
+Bücher und Aufzeichnungen, Inventare, Jahresabschlüsse, Lageberichte, die Eröffnungsbilanz sowie die zu ihrem Verständnis erforderlichen Arbeitsanweisungen und sonstigen Organisationsunterlagen,
+2.
+die empfangenen Handels- oder Geschäftsbriefe,
+3.
+Wiedergaben der abgesandten Handels- oder Geschäftsbriefe,
+4.
+Buchungsbelege,
+4a.
+Unterlagen nach Artikel 15 Absatz 1 und Artikel 163 des Zollkodex der Union,
+5.
+sonstige Unterlagen, soweit sie für die Besteuerung von Bedeutung sind.
+(2) Mit Ausnahme der Jahresabschlüsse, der Eröffnungsbilanz und der Unterlagen nach Absatz 1 Nummer 4a, sofern es sich bei letztgenannten Unterlagen um amtliche Urkunden oder handschriftlich zu unterschreibende nicht förmliche Präferenznachweise handelt, können die in Absatz 1 aufgeführten Unterlagen auch als Wiedergabe auf einem Bildträger oder auf anderen Datenträgern aufbewahrt werden, wenn dies den Grundsätzen ordnungsmäßiger Buchführung entspricht und sichergestellt ist, dass die Wiedergabe oder die Daten 1.
+mit den empfangenen Handels- oder Geschäftsbriefen und den Buchungsbelegen bildlich und mit den anderen Unterlagen inhaltlich übereinstimmen, wenn sie lesbar gemacht werden,
+2.
+während der Dauer der Aufbewahrungsfrist jederzeit verfügbar sind, unverzüglich lesbar gemacht und maschinell ausgewertet werden können.
+(3) Die in Absatz 1 Nummer 1 und 4a aufgeführten Unterlagen sind zehn Jahre, die in Absatz 1 Nummer 4 aufgeführten Unterlagen acht Jahre und die sonstigen in Absatz 1 aufgeführten Unterlagen sechs Jahre aufzubewahren, sofern nicht in anderen Steuergesetzen kürzere Aufbewahrungsfristen zugelassen sind. Kürzere Aufbewahrungsfristen nach außersteuerlichen Gesetzen lassen die in Satz 1 bestimmte Frist unberührt. Bei empfangenen Lieferscheinen, die keine Buchungsbelege nach Absatz 1 Nummer 4 sind, endet die Aufbewahrungsfrist mit dem Erhalt der Rechnung. Für abgesandte Lieferscheine, die keine Buchungsbelege nach Absatz 1 Nummer 4 sind, endet die Aufbewahrungsfrist mit dem Versand der Rechnung. Die Aufbewahrungsfrist läuft jedoch nicht ab, soweit und solange die Unterlagen für Steuern von Bedeutung sind, für welche die Festsetzungsfrist noch nicht abgelaufen ist; § 169 Absatz 2 Satz 2 gilt nicht.
+(4) Die Aufbewahrungsfrist beginnt mit dem Schluss des Kalenderjahrs, in dem die letzte Eintragung in das Buch gemacht, das Inventar, die Eröffnungsbilanz, der Jahresabschluss oder der Lagebericht aufgestellt, der Handels- oder Geschäftsbrief empfangen oder abgesandt worden oder der Buchungsbeleg entstanden ist, ferner die Aufzeichnung vorgenommen worden ist oder die sonstigen Unterlagen entstanden sind.
+(5) Wer aufzubewahrende Unterlagen in der Form einer Wiedergabe auf einem Bildträger oder auf anderen Datenträgern vorlegt, ist verpflichtet, auf seine Kosten diejenigen Hilfsmittel zur Verfügung zu stellen, die erforderlich sind, um die Unterlagen lesbar zu machen; auf Verlangen der Finanzbehörde hat er auf seine Kosten die Unterlagen unverzüglich ganz oder teilweise auszudrucken oder ohne Hilfsmittel lesbare Reproduktionen beizubringen.
+(6) Sind die Unterlagen nach Absatz 1 mit Hilfe eines Datenverarbeitungssystems erstellt worden, kann die Finanzbehörde im Rahmen einer Außenprüfung 1.
+Einsicht in die gespeicherten Daten nehmen und das Datenverarbeitungssystem zur Prüfung dieser Unterlagen nutzen,
+2.
+verlangen, dass die Daten nach ihren Vorgaben maschinell ausgewertet zur Verfügung gestellt werden, oder
+3.
+verlangen, dass die Daten nach ihren Vorgaben in einem maschinell auswertbaren Format an sie übertragen werden.
+Teilt der Steuerpflichtige der Finanzbehörde mit, dass sich seine Daten nach Absatz 1 bei einem Dritten befinden, so hat der Dritte 1.
+der Finanzbehörde Einsicht in die für den Steuerpflichtigen gespeicherten Daten zu gewähren oder
+2.
+diese Daten nach den Vorgaben der Finanzbehörde maschinell auszuwerten oder
+3.
+ihr nach ihren Vorgaben die für den Steuerpflichtigen gespeicherten Daten in einem maschinell auswertbaren Format zu übertragen.
+Die Kosten trägt der Steuerpflichtige. In den Fällen des Satzes 2 hat der mit der Außenprüfung betraute Amtsträger den in § 3 Satz 1 und § 4c Absatz 2 des Steuerberatungsgesetzes bezeichneten Personen sein Erscheinen in angemessener Frist anzukündigen. Sofern noch nicht mit einer Außenprüfung begonnen wurde, ist es im Fall eines Wechsels des Datenverarbeitungssystems oder im Fall der Auslagerung von aufzeichnungs- und aufbewahrungspflichtigen Daten aus dem Produktivsystem in ein anderes Datenverarbeitungssystem ausreichend, wenn der Steuerpflichtige nach Ablauf des fünften Kalenderjahres, das auf die Umstellung oder Auslagerung folgt, diese Daten ausschließlich auf einem maschinell lesbaren und maschinell auswertbaren Datenträger vorhält.
+(7) Die Verarbeitung und Aufbewahrung der nach Absatz 6 zur Verfügung gestellten Daten ist auch auf mobilen Datenverarbeitungssystemen der Finanzbehörden unabhängig von deren Einsatzort zulässig. Die Finanzbehörde darf die nach Absatz 6 zur Verfügung gestellten und gespeicherten Daten bis zur Unanfechtbarkeit der die Daten betreffenden Verwaltungsakte auch auf den mobilen Datenverarbeitungssystemen unabhängig von deren Einsatzort aufbewahren.
+Fußnote
+(+++ § 147: Zur Anwendung vgl. Art. 97 §§ 19a, 19b u. 37 EGAO +++)
+(+++ § 147: Zur Geltung vgl. § 93c +++)
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-29",
+  "Guide_sha256": "440c63cff96c29ab6ba597bc1d96e7e0183665c6aeb547b0c2b184658cf22f5d",
+  "scope": "Root technical checks; not independent whole-country review",
+  "files": 1,
+  "original_oa_blocks": 2,
+  "oa_failures": 0,
+  "oa_missing": 0,
+  "schema_errors": 0,
+  "schema_warnings": 0,
+  "scoped_diff": "PASS"
+}

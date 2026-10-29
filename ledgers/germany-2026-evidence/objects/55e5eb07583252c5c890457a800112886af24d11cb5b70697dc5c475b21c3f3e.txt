@@ -1,0 +1,1557 @@
+     Bundesministerium der Finanzen, 11016 Berlin
+                                                                           Wilhelmstraße 97
+     Nur per E-Mail                                                        10117 Berlin
+                                                                           Tel. +49 30 18 682-0
+     Oberste Finanzbehörden
+                                                                           poststelle@bmf.bund.de
+     der Länder
+                                                                           www.bundesfinanzministerium.de
+                                                                           15. Oktober 2025
+
+                                                                           - E-Mail Verteiler U1 -
+                                                                           - E-Mail Verteiler U2 -
+
+
+     Betreff: Einführung der obligatorischen elektronischen Rechnung bei Umsätzen zwischen in-
+     ländischen Unternehmern ab dem 1. Januar 2025;
+     Anpassung des Umsatzsteuer-Anwendungserlasses
+     GZ: III C 2 - S 7287-a/00019/007/243
+     DOK: COO.7005.100.4.13163130
+     Seite 1 von 33
+     (bei Antwort bitte GZ und DOK angeben)
+
+
+
+
+     Nach Abstimmung mit den obersten Finanzbehörden der Länder gilt hinsichtlich der Einfüh-
+     rung der obligatorischen E-Rechnung bei Umsätzen zwischen inländischen Unternehmern Fol-
+     gendes:
+
+
+     I.         Allgemeines
+
+     Das BMF-Schreiben vom 15. Oktober 2024, BStBl I S. 1320, zur Einführung der obligatorischen
+     elektronischen Rechnung bei Umsätzen zwischen inländischen Unternehmern ab dem 1. Ja-
+     nuar 2025 wird in folgenden Randnummern (Rn.) und Zwischenüberschriften geändert bzw. er-
+     gänzt (Änderungen fett dargestellt):
+
+6a   Eine Datei, die auf Grund von Formatfehlern die Anforderungen an das strukturierte elektro-
+     nische Format einer E-Rechnung nach § 14 Absatz 1 Satz 6 UStG nicht erfüllt, stellt unter den
+     Vorgaben des § 14 Absatz 1 Satz 1 UStG eine sonstige Rechnung in einem anderen elektroni-
+     schen Format (vgl. Rn. 7) dar. Formatfehler liegen vor, wenn die Rechnungsdatei nicht den zu-
+     lässigen Syntaxen bzw. deren technischen Vorgaben entspricht oder in den Fällen des § 14 Ab-
+     satz 1 Satz 6 Nummer 2 UStG keine richtige und vollständige Extraktion zulässt. Dabei ist es
+     unerheblich, welcher Art die Formatfehler sind, da die Datei dann nicht der Voraussetzung des
+     § 14 Absatz 1 Satz 6 UStG entspricht. Ob ein Formatfehler vorliegt, kann mit einer geeigneten
+     Validierungsanwendung (siehe auch Rn. 35a) überprüft werden.
+     Seite 2 von 33
+
+6b   Von Formatfehlern ist eine Verletzung der Geschäftsregeln zu unterscheiden (Geschäftsregel-
+     fehler). Diese liegen vor, wenn die Rechnungsdatei gegen die für dieses E-Rechnungsformat
+     gültigen Geschäftsregeln verstößt. Geschäftsregeln sind technische Vorschriften zur Überprü-
+     fung der logischen Abhängigkeiten der in einer E-Rechnung enthaltenen Informationen. Ge-
+     schäftsregelfehler können sich dadurch ergeben, dass die in einer Rechnung enthaltenen In-
+     formationen unvollständig sind (z. B. keine Angabe im Pflichtfeld „BT-10 Buyer reference“ in
+     einer XRechnung) oder zueinander in Widerspruch stehen (z. B. Steuerbetrag stimmt rechne-
+     risch nicht mit dem angegebenen Steuersatz überein) und z. B. als kritischer Fehler – „critical
+     Error“ – im Rahmen einer Validierung festgestellt werden. Zu den Rechtsfolgen vgl. Rn. 35a.
+
+17   Die Regelungen zur verpflichtenden Verwendung von E-Rechnungen gelten genauso für die
+     Rechnungsausstellung in Form einer Gutschrift (§ 14 Absatz 2 Satz 5 UStG) sowie für Rechnun-
+     gen
+
+        •   über Umsätze, für die der Leistungsempfänger die Steuer schuldet (§ 13b UStG), wenn so-
+            wohl Leistender als auch Leistungsempfänger im Inland ansässig sind,
+
+        •   - gestrichen -
+
+        •   über Umsätze, die der Durchschnittssatzbesteuerung für land- und forstwirtschaftliche
+            Betriebe unterliegen (§ 24 UStG),
+
+        •   über Reiseleistungen (§ 25 UStG) und
+
+        •   für Umsätze, für welche die Differenzbesteuerung (§ 25a UStG) angewendet wird.
+
+     Sie gelten auch, wenn der Rechnungsempfänger ein Unternehmer ist, der Kleinunternehmer
+     bzw. Land- und Forstwirt ist oder ausschließlich steuerfreie Umsätze (z. B. Vermieter einer Woh-
+     nung) ausführt. Ebenso gelten die Regelungen, wenn nur Teile der abgerechneten Leistungen der
+     Pflicht zur Verwendung einer E-Rechnung unterliegen (z. B. bei teilweise steuerpflichtigen, teil-
+     weise nach § 4 Nummer 8 bis 29 UStG steuerfreien Umsätzen) sowie in Fällen, in denen die Leis-
+     tung aufgrund einer Option (§ 9 Absatz 1 UStG) steuerpflichtig ist.
+
+2.2.4 Kleinbetragsrechnungen, Rechnungen von Kleinunternehmern und Fahrausweise
+
+22   Rechnungen, deren Gesamtbetrag 250 Euro nicht übersteigt (Rechnungen über Kleinbeträge),
+     Rechnungen von Kleinunternehmern und Fahrausweise, die für die Beförderung von Personen
+     ausgegeben werden, können abweichend von der Verpflichtung in § 14 Absatz 2 Satz 2 Num-
+     mer 1, 2. Halbsatz UStG immer als sonstige Rechnung ausgestellt und übermittelt werden (§ 33
+     Satz 4, § 34 Absatz 1 Satz 2 und § 34a Satz 4 UStDV). Dabei bedarf die Verwendung einer
+         Seite 3 von 33
+
+         sonstigen Rechnung in einem anderen elektronischen Format der Zustimmung des Empfän-
+         gers (§ 14 Absatz 1 Satz 5 UStG), die keiner besonderen Form bedarf und auch konkludent er-
+         folgen kann. Die Zustimmung ist erforderlich, da der Rechnungsempfänger kein ihm gänzlich
+         unbekanntes elektronisches Format akzeptieren muss. Die Ausstellung und Übermittlung ei-
+         ner E-Rechnung ist unter den übrigen Voraussetzungen auch in diesen Fällen immer ohne Zu-
+         stimmung des Empfängers möglich.
+
+24       E-Rechnungen können sowohl in einem rein strukturierten als auch in einem hybriden Format
+         erstellt werden. Ein zulässiges elektronisches Rechnungsformat muss insbesondere gewährleis-
+         ten, dass die Rechnungsangaben nach §§ 14, 14a UStG elektronisch übermittelt und ausgelesen
+         werden können.
+
+     •    Die Verwendung von strukturierten Rechnungsformaten, die der Normenreihe EN 16931 (siehe
+          Rn. 28 bis 32) entsprechen, ist immer zulässig. Ob eine Rechnung die Anforderungen der Nor-
+          menreihe EN 16931 erfüllt, kann beispielsweise durch die Nutzung einer geeigneten Validie-
+          rungsanwendung überprüft werden (siehe auch Rn. 6a, 6b und 35a).
+
+     •    Daneben können unter bestimmten Voraussetzungen auch von der Normenreihe EN 16931 ab-
+          weichende strukturierte elektronische Rechnungsformate verwendet werden, z. B. EDI-Verfah-
+          ren nach Artikel 2 der Empfehlung 94/820/EG der Kommission vom 19. Oktober 1994 über die
+          rechtlichen Aspekte des elektronischen Datenaustausches, ABl. L 338 vom 28. Dezember 1994,
+          S. 98 (vgl. auch Rn. 33 und 34).
+
+35       Voraussetzung für eine E-Rechnung ist u. a., dass sie eine elektronische Verarbeitung ermöglicht
+         (§ 14 Absatz 1 Satz 3 UStG). Dies bedeutet, dass für eine ordnungsmäßige Rechnung alle umsatz-
+         steuerrechtlichen Pflichtangaben nach §§ 14, 14a UStG im strukturierten Teil der E-Rechnung
+         enthalten sein müssen. Ein bloßer Verweis in den strukturierten Daten auf eine Anlage, in der
+         die Rechnungspflichtangaben in unstrukturierter Form enthalten sind, genügt nicht, da dann
+         keine elektronische Verarbeitung möglich ist. Auch aus § 31 Absatz 1 UStDV folgt nichts ande-
+         res. Hinsichtlich der Leistungsbeschreibung gilt, dass die im strukturierten Teil der E-Rechnung
+         enthaltenen Angaben eine eindeutige und leicht nachprüfbare Feststellung der Leistung ermögli-
+         chen müssen (vgl. hierzu Abschnitt 14.5 Absatz 15 und Abschnitt 15.2a Absatz 4 und 5 UStAE), die
+         die Kontrollfunktion der Rechnung (vgl. Abschnitt 14.5 Absatz 1 UStAE) gewährleisten kön-
+         nen. Ergänzende Angaben können jedoch in einem in der E-Rechnung enthaltenen Anhang auf-
+         genommen werden (z. B. eine Aufschlüsselung von Stundennachweisen in einer PDF-Datei). Ein
+         enthaltener Link auf ein externes Ziel erfüllt weder die Voraussetzungen nach § 14 Absatz 1
+         Satz 3 UStG noch nach § 31 Absatz 1 UStDV.
+      Seite 4 von 33
+
+35a   Bei einem Verstoß gegen die umsatzsteuerlichen Pflichtangaben der §§ 14 Absatz 4 und 14a
+      UStG liegt eine nicht ordnungsmäßige Rechnung vor (vgl. auch Abschnitt 15.2a UStAE). Solche
+      Fehler (Inhaltsfehler) können bei einer E-Rechnung beispielsweise als Verletzung der entspre-
+      chenden Geschäftsregeln im Rahmen einer Validierung (vgl. Rn. 6b) festgestellt werden. Ge-
+      schäftsregelfehler zu anderen Inhalten (z. B. die fehlende Angabe des Feldes „BT-10 Buyer refe-
+      rence“) sind umsatzsteuerlich unbeachtlich. Inhaltsfehler können aber auch vorliegen, wenn
+      formal kein Verstoß gegen die Geschäftsregeln vorliegt und in der Folge zum Beispiel auch im
+      Rahmen der Validierung kein Fehler festgestellt wurde (z. B. Angabe eines fehlerhaften Steuer-
+      satzes). Eine Validierung der E-Rechnung ersetzt nicht die dem Empfänger obliegende Pflicht
+      zur Überprüfung der Rechnung auf Vollständigkeit und Richtigkeit (vgl. Abschnitt 15.2a Ab-
+      satz 6 und 15.11 Absatz 3 UStAE), sondern unterstützt ihn hierbei. Ein Unternehmer kann sich
+      bei Beachtung der Sorgfaltspflichten eines ordentlichen Kaufmanns auf das technische Ergeb-
+      nis einer Validierung (hinsichtlich des Formats und der Geschäftsregeln) durch eine geeignete
+      Validierungsanwendung verlassen. Zum Nachweis bietet es sich an, den Validierungsbericht
+      aufzubewahren.
+
+51a   Mindert sich nach Rechnungsausstellung die Bemessungsgrundlage nach § 17 UStG, ist eine
+      Rechnungsberichtigung nicht erforderlich. Beispiele hierfür sind Skonti, Nachlässe aufgrund
+      von Mängelrügen ohne Auswirkungen auf die abgerechnete Leistung oder eine Rückgängig-
+      machung einer Leistung im Sinne des § 17 Absatz 2 Nummer 3 UStG (vgl. Abschnitt 17.1 Ab-
+      satz 8 UStAE).
+
+51b   Änderungen im Leistungsumfang oder -gehalt (z. B. relevante Aufmaßänderungen) stellen
+      hingegen keine bloße Änderung der Bemessungsgrundlage dar und erfordern daher grund-
+      sätzlich eine Rechnungsberichtigung jedenfalls hinsichtlich der Leistungsbeschreibung. Diese
+      Rechnungsberichtigung kann – unter der Voraussetzung einer vorherigen Vereinbarung –
+      auch in Form einer Gutschrift durch den Leistungsempfänger erfolgen (§ 14 Absatz 2 Sätze 5
+      und 6 UStG). In diesem Fall ist in der Gutschrift in spezifischer und eindeutiger Weise auf die
+      ursprüngliche Rechnung hinzuweisen (§ 31 Absatz 5 UStDV).
+
+60    Umsatzsteuerlich gilt nach § 14b Absatz 1 UStG, dass ein Unternehmer ein Doppel jeder ein-
+      und ausgehenden Rechnung acht Jahre aufzubewahren hat. Dabei muss nach § 14 Absatz 3
+      UStG die Echtheit der Herkunft, die Unversehrtheit ihres Inhalts und ihre Lesbarkeit gewähr-
+      leistet sein. Bei einer E-Rechnung ist zumindest deren strukturierter Teil so aufzubewahren,
+      dass er unversehrt in seiner ursprünglichen Form vorliegt. Für Zwecke der Umsatzsteuer gilt,
+      dass alleine wegen einer Speicherung und Archivierung von E-Rechnungen außerhalb eines
+      GoBD-konformen Datenverarbeitungssystems kein Verstoß gegen § 14b Absatz 1 UStG und
+      die Unversehrtheit des Inhalts im Sinne von § 14 Absatz 3 UStG vorliegt.
+     Seite 5 von 33
+
+61   Hinsichtlich der Aufbewahrungspflicht für Rechnungen für andere als umsatzsteuerliche Zwe-
+     cke wird auf das BMF-Schreiben vom 28. November 2019, BStBl I S. 1269, Rn. 130 ff., zuletzt ge-
+     ändert durch BMF-Schreiben vom 14. Juli 2025, BStBl I S. 1502, (Grundsätze zur ordnungsmä-
+     ßigen Führung und Aufbewahrung von Büchern, Aufzeichnungen und Unterlagen in elektro-
+     nischer Form sowie zum Datenzugriff – GoBD) verwiesen.
+
+     II.        Änderungen des Umsatzsteuer-Anwendungserlasses
+
+66   Der Umsatzsteuer-Anwendungserlass (UStAE) vom 1. Oktober 2010, BStBl I S. 846, der zuletzt
+     durch das BMF-Schreiben vom BMF-Schreiben vom 30. September 2025 – III C 2 –
+     S 7410/00029/042/052 (COO.7005.100.3.13093944), BStBl I S. XXXX, geändert worden ist, wird wie
+     folgt geändert:
+
+     1.    Die Inhaltsübersicht wird wie folgt geändert:
+
+           a)    Die Angabe „14.2. Rechnungserteilungspflicht bei Leistungen im Zusammenhang mit
+                 einem Grundstück“ wird durch die Angabe „14.2. Rechnungsausstellungspflicht bei
+                 steuerpflichtigen Leistungen im Zusammenhang mit einem Grundstück“ ersetzt.
+
+           b)    Die Angabe „14.4. Echtheit und Unversehrtheit von Rechnungen“ wird durch die
+                 Angabe „14.4. Echtheit, Unversehrtheit und Lesbarkeit von Rechnungen“ ersetzt.
+
+     2.    Das Abkürzungsverzeichnis wird wie folgt geändert:
+
+           a)    Nach der Angabe „ECS = Export Control System“ wird die Angabe „EDI = Electronic
+                 Data Interchange (elektronischer Datenaustausch) nach Artikel 2 der
+                 Empfehlung 94/820/EG der Kommission vom 19. Oktober 1994 über die rechtlichen
+                 Aspekte des elektronischen Datenaustausches (ABl. L 338 vom 28.12.1994, S. 98)“
+                 eingefügt.
+
+           b)    Nach der Angabe „WG = Wechselgesetz“ wird die Angabe „W-IdNr. = Wirtschafts-
+                 Identifikationsnummer“ eingefügt.
+
+           c)    Nach der Angabe „WpHG = Wertpapierhandelsgesetz“ wird die Angabe „XML =
+                 Extensible Markup Language (Maschinensprache zur Darstellung hierarchisch
+                 strukturierter Daten)“ eingefügt.
+
+     3.    In Abschnitt 3d.1 Abs. 4 Satz 2 wird im Klammerzusatz die Angabe „Abschnitt 15.2a Abs. 7
+           Satz 12“ durch die Angabe „Abschnitt 15.2a Abs. 7“ ersetzt.
+Seite 6 von 33
+
+
+4.   In Abschnitt 4.3.4 Abs. 8 Satz 2 wird der Klammerzusatz wie folgt gefasst:
+
+     „(§ 14 Abs. 2 Satz 5 UStG)“.
+
+
+5.   Abschnitt 10.5 Abs. 3 Satz 9 wird wie folgt geändert:
+
+     a)   In Nummer 1 Satz 2 wird die Angabe „§ 14 Abs. 2 Sätze 3 und 4 UStG“ durch die Angabe
+          „§ 14 Abs. 2 Satz 5 UStG“ ersetzt.
+
+     b)   In Nummer 2 Satz 2 Buchstabe a wird nach Beispiel 2 folgender Satz 3 angefügt:
+
+          „3In einer E-Rechnung kann die Umsatzsteuer auf das Altteil z. B. dadurch angegeben
+          werden, dass eine Rechnungsposition mit der Bemessungsgrundlage für das Altteil
+          und dem anzuwendenden Steuersatz sowie eine Rechnungsposition mit identischer,
+          aber negativer Netto-Bemessungsgrundlage ohne Steuersatz aufgenommen wird.“
+
+
+6.   Abschnitt 12.16 Abs. 10 wird wie folgt gefasst:
+
+       „(10) 1Der Unternehmer ist in den Fällen von § 14 Abs. 2 Satz 2 Nr. 1 und Nr. 2 UStG
+     verpflichtet, innerhalb von sechs Monaten nach Ausführung der Leistung eine Rechnung mit
+     den in § 14 Abs. 4 UStG genannten Angaben auszustellen. 2Für Umsätze aus der Vermietung
+     von Wohn- und Schlafräumen zur kurzfristigen Beherbergung von Fremden sowie die
+     kurzfristige Vermietung von Campingflächen besteht eine Rechnungsausstellungspflicht
+     jedoch nicht, wenn die Leistung weder an einen anderen Unternehmer für dessen
+     Unternehmen noch an eine juristische Person erbracht wird (vgl. Abschnitt 14.1 Abs. 9
+     Satz 8).“
+
+7.   In Abschnitt 13b.14 Abs. 1 Satz 2 wird der Klammerzusatz wie folgt gefasst:
+
+     „(§ 14 Abs. 2 Satz 5 UStG)“.
+
+8.   Abschnitt 14.1 wird wie folgt geändert:
+
+     a)   Absatz 1 wird wie folgt geändert:
+
+          aa) Satz 1 wird wie folgt gefasst:
+
+              „1Nach § 14 Abs. 1 Satz 1 UStG ist eine Rechnung jedes Dokument, mit dem über eine
+              Lieferung oder sonstige Leistung abgerechnet wird.“
+
+          bb) Nach Satz 1 wird folgender Satz 2 eingefügt:
+Seite 7 von 33
+
+
+              „2Eine sonstige Rechnung (vgl. Absatz 2) kann auch aus einer Mehrzahl von
+              Dokumenten bestehen, die die nach § 14 Abs. 4 und § 14a UStG geforderten
+              Angaben insgesamt enthalten (§ 31 Abs. 1 UStDV).“
+
+         cc) Die bisherigen Sätze 2 bis 4 werden die neuen Sätze 3 bis 5.
+
+         dd) Die bisherigen Sätze 5 und 6 werden gestrichen.
+
+         ee) Nach Satz 5 werden folgende Sätze 6 bis 10 angefügt:
+
+              „6Nicht steuerbare Innenumsätze, z. B. zwischen Betriebsabteilungen desselben
+              Unternehmens oder innerhalb eines Organkreises, sind innerbetriebliche
+              Vorgänge. 7Werden für sie Belege mit gesondertem Steuerausweis ausgestellt,
+              handelt es sich umsatzsteuerlich nicht um Rechnungen, sondern um
+              unternehmensinterne Buchungsbelege. 8Die darin ausgewiesene Steuer wird
+              nicht nach § 14c Abs. 2 UStG geschuldet (vgl. BFH-Urteil vom 28.10.2010 – V R 7/10,
+              BStBl II 2011 S. 391, und Abschnitt 14c.2 Abs. 2a). 9Handelt es sich nach den
+              vorstehenden Regelungen bei einem öffentlich-rechtlichen Gebührenbescheid
+              um eine Rechnung im Sinne des UStG, gelten die allgemeinen umsatzsteuerlichen
+              Regelungen (z. B. zur Verwendung einer E-Rechnung, vgl. Absatz 4), auch wenn
+              das anzuwendende Verfahrensrecht ggf. abweichende Vorgaben macht. 10Wurde
+              der Gebührenbescheid umsatzsteuerlich in Form einer sonstigen Rechnung
+              gestellt, kann diese durch nachträgliche Ausstellung einer E-Rechnung berichtigt
+              werden (vgl. Abschnitt 15.2a Abs. 7).“
+
+    b)   Nach Absatz 1 wird folgende Zwischenüberschrift eingefügt:
+
+         „E - R e c h n u n g u n d s o n s t i g e R e c h n u n g ( B e g r i f f s b e s t i m m u n g e n ) “.
+
+    c)   Absatz 2 wird wie folgt gefasst:
+
+           „(2) 1Bei der Ausstellung von Rechnungen ist zwischen einer E-Rechnung im Sinne
+         des § 14 Abs. 1 Satz 3 UStG und einer sonstigen Rechnung im Sinne des § 14 Abs. 1 Satz 4
+         UStG zu unterscheiden. 2Eine E-Rechnung ist eine Rechnung, die in einem
+         strukturierten elektronischen Format ausgestellt, übermittelt und empfangen wird
+         und eine elektronische Verarbeitung ermöglicht. 3Das strukturierte elektronische
+         Format einer E-Rechnung
+         1. muss der europäischen Norm EN 16931 entsprechen (technische Umsetzung der
+             Richtlinie für die elektronische Rechnungsstellung und die Liste der
+             entsprechenden Syntaxen gemäß der Richtlinie 2014/55/EU des Europäischen
+             Parlaments und des Rates vom 16.04.2014 über die elektronische
+             Rechnungsstellung bei öffentlichen Aufträgen, ABl. L 133 vom 06.05.2014, S. 1, vgl.
+             Absatz 13) oder
+             1
+         2. kann zwischen Rechnungsaussteller und Rechnungsempfänger vereinbart
+             werden. 2Voraussetzung ist, dass das Format die richtige und vollständige
+             Extraktion der nach dem UStG erforderlichen Angaben aus der E-Rechnung in ein
+Seite 8 von 33
+
+             Format ermöglicht, das der Norm nach Nummer 1 entspricht oder mit dieser
+             interoperabel ist (vgl. Absatz 15).
+         4Als sonstige Rechnungen gelten alle Rechnungen
+
+         1. in Papierform oder
+         2. 1in anderen elektronischen Formaten, die nicht den in Satz 3 genannten Vorgaben
+             entsprechen. 2Dazu zählen auch alle nicht strukturierten elektronischen Dateien,
+             zum Beispiel PDF-Dateien ohne integrierte Datensätze, Bilddateien oder Angaben
+             in E-Mails. 3Auch eine Datei, die auf Grund von Formatfehlern (vgl. Absatz 11) die
+             Anforderungen an das strukturierte elektronische Format einer E-Rechnung nach
+             § 14 Abs. 1 Satz 6 UStG nicht erfüllt, stellt unter der Voraussetzung des § 14 Abs. 1
+             Satz 1 UStG eine sonstige Rechnung in einem anderen elektronischen Format dar.
+             4
+               Zu Inhaltsfehlern bei einer E-Rechnung siehe Abschnitt 14.5 Abs. 1.
+         5Der Rechnungsaussteller ist – vorbehaltlich einer Verpflichtung zur Verwendung
+
+         einer E-Rechnung (vgl. Absatz 4) – frei in seiner Entscheidung, in welcher Weise er eine
+         Rechnung übermittelt. 6Bei Verwendung einer E-Rechnung, zu deren Ausstellung
+         keine Verpflichtung nach Absatz 4 besteht, oder einer sonstigen Rechnung in einem
+         anderen elektronischen Format hat er die erforderliche Zustimmung des
+         Rechnungsempfängers zu beachten (vgl. Absatz 7). 7Zum zivilrechtlichen Anspruch auf
+         Erteilung einer ordnungsmäßigen Rechnung vgl. Absatz 10.“
+
+    d)   Nach Absatz 2 wird folgende Zwischenüberschrift eingefügt:
+
+         „Rechnungsausstellung“.
+
+    e)   Absätze 3 bis 5 werden wie folgt gefasst:
+
+           „(3) 1Führt der Unternehmer eine Lieferung oder eine sonstige Leistung aus, ist er
+         berechtigt, eine Rechnung auszustellen. 2Ein Unternehmer muss eine Rechnung
+         ausstellen, wenn die Leistung nicht nach § 4 Nr. 8 bis 29 UStG steuerfrei ist und eine der
+         folgenden Fallgruppen vorliegt:
+         1. Die Leistung wird an einen anderen Unternehmer für dessen Unternehmen
+             erbracht.
+         2. Die Leistung wird an eine juristische Person erbracht, auch soweit diese nicht
+             Unternehmer ist.
+         3. Im Zusammenhang mit einem Grundstück wird eine steuerpflichtige Leistung
+             (Werklieferung oder sonstige Leistung) an einen Empfänger erbracht, der nicht
+             bereits unter Nummer 1 oder Nummer 2 fällt.
+         3Die Rechnung muss regelmäßig innerhalb von sechs Monaten nach Ausführung der
+
+         Leistung ausgestellt werden (zu den Ausnahmen siehe Abschnitt 14a.1 Abs. 3). 4Wird
+         das Entgelt oder ein Teil des Entgelts bereits vor Ausführung der Leistung
+         vereinnahmt (Voraus- oder Anzahlungen), ist die Rechnung innerhalb von sechs
+         Monaten nach Vereinnahmung des Entgelts oder des Teilentgelts auszustellen. 5Bei
+         Umsätzen zwischen inländischen Unternehmern ist regelmäßig eine E-Rechnung zu
+         verwenden (siehe Absatz 4). 6Eine Rechnung kann
+         - durch den leistenden Unternehmer selbst,
+         - durch einen von ihm beauftragten Dritten, der im Namen und für Rechnung des
+             Unternehmers abrechnet (§ 14 Abs. 2 Satz 7 UStG),
+         - durch den Leistungsempfänger (Gutschrift, § 14 Abs. 2 Satz 5 UStG, vgl.
+             Abschnitt 14.3) oder
+Seite 9 von 33
+
+         -    in den Fällen des § 14 Abs. 2 Satz 2 Nr. 1 und 2 UStG durch einen vom
+              Leistungsempfänger beauftragten Dritten (Gutschrift, § 14 Abs. 2 Satz 5 UStG, vgl.
+              Abschnitt 14.3)
+         ausgestellt werden. 7Der Leistungsempfänger kann nicht Dritter sein. 8Bedient sich der
+         leistende Unternehmer zur Rechnungserstellung eines Dritten, hat der leistende
+         Unternehmer sicherzustellen, dass der Dritte die Einhaltung der sich aus den §§ 14, 14a
+         UStG ergebenden formalen Voraussetzungen gewährleistet. 9Die zusätzlichen
+         Pflichten bei der Ausstellung von Rechnungen in besonderen Fällen nach § 14a UStG
+         (vgl. Abschnitt 14a.1) sind zu beachten.
+            (4) 1Die Rechnung ist grundsätzlich als E-Rechnung auszustellen, wenn der
+         Leistungsempfänger die Leistung für sein Unternehmen bezieht und sowohl
+         Leistender als auch Leistungsempfänger im Inland oder in einem der in § 1 Abs. 3 UStG
+         bezeichneten Gebiete ansässig sind. 2Dies ist der Fall, wenn beide Unternehmer jeweils
+         in einem dieser Gebiete ihren Sitz, ihre Geschäftsleitung, eine umsatzsteuerliche
+         Betriebsstätte (vgl. Abschnitt 3a.1 Abs. 3), die an dem Umsatz beteiligt ist, oder in
+         Ermangelung eines Sitzes ihren Wohnsitz oder gewöhnlichen Aufenthalt haben (§ 14
+         Abs. 2 Satz 3 UStG). 3Zur Beteiligung ausländischer Unternehmensteile an einem im
+         Inland steuerbaren und steuerpflichtigen Umsatz vgl. Abschnitt 13b.11 Abs. 1 Satz 7.
+         4
+           Die Ausstellung einer E-Rechnung an einen anderen inländischen Unternehmer
+         bedarf nicht der Zustimmung des Leistungsempfängers. 5Dieser hat die technischen
+         Voraussetzungen für den Empfang einer E-Rechnung zu schaffen (siehe Absatz 5).
+         6
+           E-Rechnungen können z. B. per E-Mail, per Download über ein Internetportal oder
+         per EDI, per Bereitstellung der Daten mittels einer elektronischen Schnittstelle oder
+         durch gemeinsamen Zugriff auf einen zentralen Speicherort übermittelt werden. 7Auf
+         welches zulässige elektronische Rechnungsformat (vgl. Absatz 11) und welchen
+         zulässigen Übermittlungsweg sich die Vertragsparteien einigen, ist zivilrechtlich
+         zwischen ihnen zu klären. 8Die grundsätzliche Verpflichtung zur Ausstellung einer
+         E-Rechnung besteht auch dann, wenn die Umsätze den Sonderregelungen nach §§ 23a
+         bis 25c UStG unterliegen oder wenn der Unternehmer eine Leistung im Sinne des § 13b
+         Abs. 2 UStG ausführt, für die der Leistungsempfänger nach § 13b Abs. 5 UStG die Steuer
+         schuldet. 9Auch für Umsätze, die nach § 4 Nr. 1 bis 7 UStG steuerfrei sind, ist unter den
+         übrigen Voraussetzungen eine E-Rechnung auszustellen (z. B. innergemeinschaftliche
+         Lieferung aus Deutschland an die Betriebsstätte eines anderen inländischen
+         Unternehmers im Gemeinschaftsgebiet). 10Die Verpflichtung zur Ausstellung einer
+         E-Rechnung gilt ebenfalls, wenn nur Teile der abgerechneten Leistungen der Pflicht
+         zur Verwendung der E-Rechnung unterliegen (z. B. bei teilweise steuerpflichtigen,
+         teilweise nach § 4 Nr. 8 bis 29 UStG steuerfreien Umsätzen) sowie in Fällen, in denen
+         die Leistung aufgrund einer Option (§ 9 Abs. 1 UStG) steuerpflichtig ist.
+            (5) 1Inländische Unternehmer müssen die technischen Voraussetzungen zum
+         Empfang einer E-Rechnung schaffen. 2Dies gilt auch, wenn der Rechnungsempfänger
+         der Sonderregelung nach § 19 UStG unterliegt. 3Bei einem Empfang mittels E-Mail ist
+         kein gesondertes E-Mail-Postfach nur für den Empfang von E-Rechnungen
+         erforderlich. 4Ist ein Unternehmer technisch nicht in der Lage, eine E-Rechnung
+         empfangen zu können, bzw. verweigert er die Annahme, hat er kein Anrecht auf eine
+         alternative Ausstellung einer sonstigen Rechnung durch den Rechnungsaussteller. 5In
+         diesem Fall gelten die umsatzsteuerrechtlichen Pflichten des Rechnungsausstellers
+         auch als erfüllt, wenn er eine E-Rechnung ausgestellt und sich nachweislich (z. B.
+         anhand eines Sendeprotokolls) um eine ordnungsgemäße Übermittlung bemüht hat.“
+
+    f)   Nach Absatz 5 werden die folgenden Absätze 6 bis 19 eingefügt:
+
+          „(6) 1Ein Verstoß gegen die Verpflichtung zur Ausstellung einer E-Rechnung wird
+         beim Rechnungsaussteller nicht beanstandet, solange er keine Kenntnis davon hatte
+         und auch nicht mit der Sorgfalt eines ordentlichen Kaufmanns erkennen konnte, dass
+Seite 10 von 33
+
+         seine Leistung an einen anderen Unternehmer für dessen Unternehmen erbracht
+         wurde. 2Die Verwendung der USt-IdNr. oder der W-IdNr. kann ein Indiz dafür sein,
+         dass der Leistungsempfänger als Unternehmer handelt. 3Ist mindestens einer der am
+         Umsatz beteiligten Unternehmer nicht im Inland oder einem der in § 1 Abs. 3 UStG
+         bezeichneten Gebiete ansässig, besteht keine Pflicht zur Ausstellung einer
+         E-Rechnung; in diesen Fällen kann die gemäß § 14 Abs. 2 Satz 2 Nr. 1, erster Halbsatz
+         UStG auszustellende Rechnung als Rechnung in Papierform oder mit Zustimmung des
+         Rechnungsempfängers als E-Rechnung oder sonstige Rechnung in einem anderen
+         elektronischen Format ausgestellt werden (§ 14 Abs. 1 Satz 5 UStG).
+         4
+           Kleinbetragsrechnungen nach § 33 UStDV (vgl. Abschnitt 14.6), Fahrausweise nach
+         § 34 UStDV (vgl. Abschnitt 14.7) und Rechnungen eines Kleinunternehmers nach § 34a
+         UStDV (vgl. Abschnitt 14.7a) können immer als sonstige Rechnung ausgestellt und
+         übermittelt werden; verwendet der Rechnungsaussteller in diesen Fällen dennoch
+         eine E-Rechnung, ist dies bei Umsätzen zwischen inländischen Unternehmern ohne
+         Zustimmung des Rechnungsempfängers möglich. 5Für Umsätze, bei denen trotz
+         fehlender Verpflichtung zur Ausstellung (z. B. bei Umsätzen, die nach § 4 Nr. 8 bis 29
+         UStG steuerfrei sind, oder an private Endverbraucher) eine Rechnung ausgestellt wird,
+         kann eine E-Rechnung nur bei Zustimmung des Rechnungsempfängers verwendet
+         werden (§ 14 Abs. 1 Satz 5 UStG).
+            (7) 1Sofern keine Pflicht zur Verwendung einer E-Rechnung (nach § 14 Abs. 2 Satz 2
+         Nr. 1, zweiter Halbsatz UStG) besteht, ist die Verwendung einer sonstigen Rechnung in
+         Papierform immer zulässig. 2Auch in diesen Fällen kann eine E-Rechnung oder eine
+         sonstige Rechnung in einem anderen elektronischen Format verwendet werden, dies
+         bedarf aber der Zustimmung des Rechnungsempfängers (§ 14 Abs. 1 Satz 5 UStG). 3Zum
+         Zustimmungserfordernis bei Kleinbetragsrechnungen, Fahrausweisen und
+         Rechnungen eines Kleinunternehmers siehe Absatz 6. 4Die Zustimmung bedarf dabei
+         keiner besonderen Form und kann auch konkludent (z. B. durch eine
+         widerspruchslose Annahme) erfolgen. 5Es muss lediglich Einvernehmen zwischen
+         Rechnungsaussteller und Rechnungsempfänger darüber bestehen, dass die Rechnung
+         elektronisch übermittelt werden soll. 6Die Zustimmung kann z. B. in Form einer
+         Rahmenvereinbarung (z. B. in den Allgemeinen Geschäftsbedingungen) erklärt
+         werden. 7Sie kann auch nachträglich erklärt werden. 8Es genügt aber auch, dass die
+         Beteiligten diese Verfahrensweise tatsächlich praktizieren und damit stillschweigend
+         billigen.
+            (8) 1Nach § 14 Abs. 2 Satz 2 Nr. 2 UStG ist der Unternehmer bei Ausführung von
+         Lieferungen oder sonstigen Leistungen an eine juristische Person, soweit sie nicht
+         Unternehmer ist, verpflichtet, eine Rechnung auszustellen. 2Die Rechnung kann
+         – vorbehaltlich anderer Vorschriften, z. B. der ERechV – auf Papier oder mit
+         Zustimmung des Leistungsempfängers als E-Rechnung oder als sonstige Rechnung in
+         einem anderen elektronischen Format ausgestellt werden. 3Die Zustimmung bedarf
+         keiner besonderen Form und kann auch konkludent (z. B. durch eine
+         widerspruchslose Annahme) erfolgen. 4Wird ein Umsatz sowohl für den
+         unternehmerischen als auch für den nichtunternehmerischen Bereich der juristischen
+         Person ausgeführt, geht die Verpflichtung zur Ausstellung einer E-Rechnung nach § 14
+         Abs. 2 Satz 2 Nr. 1 UStG vor. 5Zu Rechnungen von Kleinunternehmern vgl.
+         Abschnitt 14.7a.
+            (9) 1Nach § 14 Abs. 2 Satz 2 Nr. 3 UStG ist der Unternehmer bei Ausführung von
+         steuerpflichtigen Leistungen (Werklieferungen im Sinne von § 3 Abs. 4 Satz 1 UStG
+         oder sonstige Leistungen) im Zusammenhang mit einem Grundstück an einen
+         anderen als unter § 14 Abs. 2 Satz 2 Nr. 1 und 2 UStG genannten Empfänger
+         (Nichtunternehmer oder Unternehmer für dessen nichtunternehmerischen Bereich)
+         verpflichtet, eine Rechnung auszustellen. 2Zu den Einzelheiten, welche Leistungen
+         hierunter fallen, siehe Abschnitt 14.2. 3Die Rechnung kann in Papierform oder – mit
+         Zustimmung des Leistungsempfängers – als E-Rechnung oder als sonstige Rechnung
+         in einem anderen elektronischen Format ausgestellt werden. 4Die Zustimmung bedarf
+         keiner besonderen Form und kann auch konkludent (z. B. durch eine
+Seite 11 von 33
+
+         widerspruchslose Annahme) erfolgen. 5Die Verpflichtung zur Erteilung einer
+         Rechnung ist nicht davon abhängig, ob der Empfänger der steuerpflichtigen
+         Werklieferung oder sonstigen Leistung der Eigentümer des Grundstücks ist. 6Die
+         Verpflichtung zur Erteilung einer Rechnung bei steuerpflichtigen Leistungen
+         (Werklieferungen oder sonstigen Leistungen) im Zusammenhang mit einem
+         Grundstück gilt auch für Land- und Forstwirte, die die Durchschnittssatzbesteuerung
+         nach § 24 UStG anwenden. 7Zu Rechnungen von Kleinunternehmern vgl.
+         Abschnitt 14.7a. 8Für steuerpflichtige sonstige Leistungen der in § 4 Nr. 12 Sätze 1 und 2
+         UStG bezeichneten Art, die weder an einen anderen Unternehmer für dessen
+         Unternehmen noch an eine juristische Person erbracht werden, besteht keine
+         Rechnungsausstellungspflicht.
+         Anspruch auf Ausstellung einer Rechnung
+            (10) 1Besteht eine umsatzsteuerliche Verpflichtung zur Ausstellung einer Rechnung
+         (vgl. Absatz 3), leitet sich hieraus ein zivilrechtlicher Anspruch des
+         Leistungsempfängers ab, der nach § 13 GVG vor den ordentlichen Gerichten geltend
+         zu machen ist (vgl. BGH-Urteil vom 11.12.1974 – VIII ZR 186/73). 2Satz 1 gilt
+         entsprechend, wenn ein übersandter Datensatz bei bestehender Pflicht zur
+         Ausstellung einer E-Rechnung nicht die Anforderungen an eine ordnungsmäßige
+         Rechnung erfüllt. 3Zur Notwendigkeit, eine E-Rechnung empfangen zu können, siehe
+         Absatz 5. 4Der Anspruch auf Erfüllung einer aus § 242 BGB abgeleiteten
+         zivilrechtlichen Nebenpflicht aus dem zu Grunde liegenden Schuldverhältnis setzt
+         voraus, dass der leistende Unternehmer zur Rechnungsausstellung mit gesondertem
+         Steuerausweis berechtigt ist und ihn zivilrechtlich die Abrechnungslast trifft (vgl.
+         BFH-Urteil vom 04.03.1982 – V R 107/79, BStBl II S. 309). 5Die Verjährung richtet sich
+         nach § 195 BGB; weiterhin gelten die allgemeinen Vorschriften des BGB über die
+         Verjährung. 6Ist es ernstlich zweifelhaft, ob eine Leistung der Umsatzsteuer unterliegt,
+         kann der Leistungsempfänger die Erteilung einer Rechnung mit gesondert
+         ausgewiesener Steuer nur verlangen, wenn der Vorgang bestandskräftig der
+         Umsatzsteuer unterworfen wurde (vgl. BGH-Urteile vom 24.02.1988 – VIII ZR 64/87
+         und vom 10.11.1988 – VII ZR 137/87 sowie BFH-Urteil vom 30.03.2011 – XI R 12/08,
+         BStBl II S. 819). 7Zu der Möglichkeit des Leistungsempfängers, die Steuerpflicht des
+         Vorgangs auch durch eine Feststellungsklage nach § 41 FGO klären zu lassen, vgl. BFH-
+         Urteil vom 10.07.1997 – V R 94/96, BStBl II S. 707. 8Nach Eröffnung des
+         Insolvenzverfahrens ist der Anspruch auf Ausstellung einer Rechnung nach § 14 Abs. 1
+         UStG vom Insolvenzverwalter auch dann zu erfüllen, wenn die Leistung vor Eröffnung
+         des Insolvenzverfahrens bewirkt wurde (vgl. BGH-Urteil vom 06.05.1981 –
+         VIII ZR 45/80, zum Konkursverfahren).
+         Zulässige Formate einer E-Rechnung
+            (11) 1Das Format einer E-Rechnung muss gewährleisten, dass die Rechnungsangaben
+         nach §§ 14, 14a UStG in einem strukturierten elektronischen Format übermittelt und
+         elektronisch weiterverarbeitet werden können. 2Anderenfalls handelt es sich nicht um
+                                                                     3
+         ein      umsatzsteuerrechtlich    zulässiges Format.          Die Verwendung          von
+         Rechnungsformaten, die der Normenreihe EN 16931 (siehe Absatz 13) entsprechen, ist
+         immer zulässig. 4Formatfehler liegen vor, wenn die Rechnungsdatei nicht den
+         zulässigen Syntaxen bzw. deren technischen Vorgaben entspricht oder in den Fällen
+         des § 14 Abs. 1 Satz 6 Nr. 2 UStG keine richtige und vollständige Extraktion zulässt.
+         5
+           Dabei ist es unerheblich, welcher Art die Formatfehler sind, da die Datei dann nicht
+         den Vorgaben des § 14 Abs. 1 Satz 6 UStG entspricht. 6Von Formatfehlern ist eine
+         Verletzung der Geschäftsregeln zu unterscheiden (Geschäftsregelfehler). 7Diese liegen
+         vor, wenn die Rechnungsdatei gegen die für dieses E-Rechnungsformat gültigen
+         Geschäftsregeln verstößt. 8Geschäftsregeln sind technische Vorschriften zur
+         Überprüfung der logischen Abhängigkeiten der in einer E-Rechnung enthaltenen
+         Informationen. 9Geschäftsregelfehler können sich dadurch ergeben, dass die in einer
+         Rechnung enthaltenen Informationen unvollständig sind (z. B. keine Angabe im
+         Pflichtfeld „BT-10 Buyer reference“ in einer XRechnung) oder zueinander in
+Seite 12 von 33
+
+         Widerspruch stehen (z. B. Steuerbetrag stimmt rechnerisch nicht mit dem
+         angegebenen Steuersatz überein). 10Zu den Rechtsfolgen vgl. Absatz 2 und
+         Abschnitt 14.5 Abs. 1. 11Ob eine Rechnung die Anforderungen der Normenreihe
+         EN 16931 – auch hinsichtlich des Formats und der gültigen Geschäftsregeln – erfüllt,
+         kann beispielsweise durch die Nutzung einer geeigneten Validierungsanwendung
+         überprüft werden. 12Daneben können unter bestimmten Voraussetzungen auch von
+         der     Normenreihe       EN 16931     abweichende     strukturierte     elektronische
+         Rechnungsformate verwendet werden, z. B. EDI-Verfahren (vgl. Absatz 15).
+           (12) 1Eine E-Rechnung kann sowohl in einem rein strukturierten als auch in einem
+         hybriden Format erstellt werden. 2Die nationalen Rechnungsformate nach dem
+         Standard XRechnung (vgl. Absatz 13) und – unter bestimmten Voraussetzungen – nach
+         dem ZUGFeRD-Format (vgl. Absatz 14) erfüllen die Voraussetzungen einer Rechnung
+         in einem strukturierten elektronischen Format, die der europäischen Norm EN 16931
+         entspricht. 3Die Verwendung elektronischer Rechnungsformate ist nicht auf nationale
+         Formate beschränkt, sofern diese der europäischen Norm EN 16931 entsprechen. 4Für
+         die Ausstellung einer E-Rechnung kommt insoweit auch eine Verwendung von
+         weiteren europäischen Rechnungsformaten nach dem vorbezeichneten Standard in
+         Betracht. 5Welches – zulässige – Format verwendet wird, ist eine zivilrechtliche Frage,
+         die nur zwischen den Vertragsparteien zu entscheiden ist.
+           (13) 1Die Vorgaben der Richtlinie 2014/55/EU sind von dem CEN (Comité Européen
+         de Normalisation, Europäisches Komitee für Normung) mit der europäischen
+         Normenreihe EN 16931 technisch umgesetzt worden. 2Eine solche E-Rechnung ist als
+         rein strukturiertes Datenformat konzipiert und ermöglicht, Rechnungsdaten direkt
+         und ohne Medienbruch in die verarbeitenden Systeme zu importieren. 3Sie gibt die
+         Verwendung des strukturierten Datenformates XML vor. 4Dieses Format dient in
+         erster Linie der maschinellen Verarbeitung und ist nicht für eine Sichtprüfung durch
+         das menschliche Auge geeignet. 5Durch eine Visualisierungsanwendung kann der
+         XML-Datensatz für den Menschen lesbar dargestellt werden. 6In Deutschland wurde
+         auf Grundlage der Normenreihe EN 16931 der Standard XRechnung als rein
+         strukturiertes Format (im Unterschied zu einem hybriden Format, vgl. Absatz 14) auf
+         Basis des semantischen Kern-Datenmodells unter Berücksichtigung nationaler
+         Besonderheiten entwickelt. 7Der Standard XRechnung entspricht der Normenreihe
+         EN 16931 und den Anforderungen des § 14 Abs. 1 Satz 6 Nr. 1 UStG. 8Neben dem mit der
+         Normenreihe EN 16931 übereinstimmenden („compliant“) Kern-Datenmodell stellt
+         der Standard XRechnung auch eine konforme („conformant“) Erweiterung
+         (sogenannte Extension XRechnung) zur Verfügung. 9Mit einer Extension können z. B.
+         branchenbezogene Anforderungen berücksichtigt werden, ohne das Kern-
+         Datenmodell für alle Anwender erweitern zu müssen. 10Die umsatzsteuerrechtlichen
+         Pflichtangaben sind im Kern-Datenmodell enthalten. 11Ob eine Rechnung die
+         Anforderungen der Normenreihe EN 16931 erfüllt, kann beispielsweise durch die
+         Nutzung einer geeigneten Validierungsanwendung überprüft werden.
+           (14) 1Neben rein strukturierten elektronischen Formaten können auch hybride
+         Rechnungsformate die Voraussetzungen an eine E-Rechnung erfüllen. 2Ein hybrides
+         Format besteht neben dem strukturierten Datenteil (z. B. XML-Datei) auch aus einem
+         menschenlesbaren Datenteil (z. B. PDF-Dokument). 3Beide Datenteile sind in einer
+         Datei zusammengefasst. 4Beispielsweise das hybride Format ZUGFeRD ab der
+         Version 2.0.1 – ausgenommen die Profile MINIMUM und BASIC-WL – beruht auf der
+         Normenreihe EN 16931 und fällt somit unter die zulässigen E-Rechnungs-Formate.
+           (15) 1Das strukturierte elektronische Format einer E-Rechnung kann auch zwischen
+         Rechnungsaussteller und Rechnungsempfänger vereinbart werden (§ 14 Abs. 1 Satz 6
+         Nr. 2 UStG) und damit von den Vorgaben der Normenreihe EN 16931 abweichen (z. B.
+         bei EDI-Verfahren). 2Voraussetzung hierfür ist, dass das Format die richtige und
+         vollständige Extraktion der nach dem UStG erforderlichen Angaben aus der
+         E-Rechnung in ein Format ermöglicht, das der Normenreihe EN 16931 entspricht oder
+         mit dieser interoperabel ist. 3Interoperabel bedeutet, dass die umsatzsteuerrechtlich
+Seite 13 von 33
+
+         geforderten Informationen aus dem ursprünglich verwendeten elektronischen
+         Rechnungsformat ohne Informationsverlust weiterverarbeitet werden können, wie es
+         auch eine entsprechende Extraktion der Informationen aus einer E-Rechnung gemäß
+         der Normenreihe EN 16931 erlauben würde. 4Ein Informationsverlust liegt vor, wenn
+         sich der Inhalt oder die Bedeutung einer Information ändert oder diese nicht mehr
+         erkennbar ist.
+         Besondere Fälle der Rechnungsausstellung
+           (16) 1Soweit ein Kreditinstitut mittels Kontoauszug über eine von ihm erbrachte
+         Leistung abrechnet, kommt diesem Kontoauszug Abrechnungscharakter zu mit der
+         Folge, dass dieser Kontoauszug eine Rechnung im Sinne des § 14 Abs. 1 Satz 1 UStG
+         darstellt. 2Ein Kontoauszug kann eine E-Rechnung darstellen, wenn er die
+         Anforderungen an deren Format (vgl. Absätze 11 bis 15) und Inhalt (vgl. insbesondere
+         Abschnitt 14.5) erfüllt. 3Ansonsten handelt es sich um eine sonstige Rechnung, die
+         erforderlichenfalls durch Ausstellung einer E-Rechnung berichtigt werden kann (vgl.
+         Abschnitt 15.2a Abs. 7).
+           (17) 1Als Rechnung im Sinne des § 14 Abs. 1 Satz 1 UStG ist auch ein Vertrag
+         anzusehen, der die in § 14 Abs. 4 UStG geforderten Angaben enthält. 2Er kann eine
+         E-Rechnung darstellen, wenn er die Anforderungen an deren Format (vgl. Absätze 11
+         bis 15) erfüllt. 3Ansonsten handelt es sich um eine sonstige Rechnung. 4Bei bestehender
+         Pflicht zur Ausstellung einer E-Rechnung nach Absatz 4 ist dann daher zusätzlich eine
+         E-Rechnung auszustellen, die die sonstige Rechnung berichtigt (vgl. Abschnitt 15.2a
+         Abs. 7). 5In dieser kann der zugrundeliegende Vertrag als ergänzende Angabe in einem
+         in der E-Rechnung enthaltenen Anhang aufgenommen werden.
+           (18) 1Ist in einem Vertrag – z. B. in einem Miet- oder Pachtvertrag, Wartungsvertrag
+         oder Pauschalvertrag mit einem Steuerberater – der Zeitraum, über den sich die
+         jeweilige Leistung oder Teilleistung erstreckt, nicht angegeben, reicht es aus, wenn
+         sich dieser aus den einzelnen Zahlungsbelegen, z. B. aus den Ausfertigungen der
+         Überweisungsaufträge, ergibt (vgl. BFH-Beschluss vom 07.07.1988 – V B 72/86, BStBl II
+         S. 913). 2Die in einem Vertrag enthaltene gesonderte Inrechnungstellung der Steuer
+         muss jedoch wie bei jeder anderen Abrechnungsform eindeutig, klar und unbedingt
+         sein. 3Das ist nicht der Fall, wenn z. B. die in einem Vertrag enthaltene Abrechnung
+         offen lässt, ob der leistende Unternehmer den Umsatz versteuern oder als steuerfrei
+         behandeln will, und demnach die Abrechnungsvereinbarung für jeden der beiden
+         Fälle eine wahlweise Ausgestaltung enthält (vgl. BFH-Urteil vom 04.03.1982 –
+         V R 55/80, BStBl II S. 317).
+           (19) 1Besteht eine Pflicht zur Ausstellung einer E-Rechnung nach Absatz 4, ist es bei
+         einem Dauerschuldverhältnis (z. B. Mietverhältnis) ausreichend, wenn einmalig für
+         den ersten Teilleistungszeitraum eine E-Rechnung ausgestellt wird, in welcher der
+         zugrundeliegende Vertrag als Anhang enthalten ist oder sich aus dem sonstigen Inhalt
+         der E-Rechnung klar ergibt, dass es sich um eine Dauerrechnung handelt. 2Zu den
+         Folgezeiträumen vgl. Abschnitt 14.5 Abs. 17. 3Ändern sich die umsatzsteuerrechtlichen
+         Rechnungspflichtangaben nach §§ 14, 14a UStG, muss die ursprüngliche E-Rechnung
+         berichtigt werden oder eine neue E-Rechnung im Sinne der Absätze 11 bis 15
+         ausgestellt werden. 4Solange sich die Rechnungsangaben nicht ändern, besteht für
+         zulässigerweise als sonstige Rechnung erteilte Dauerrechnungen keine Pflicht,
+         zusätzlich eine E-Rechnung auszustellen. 5Besteht keine Verpflichtung zur
+         Ausstellung einer E-Rechnung nach Absatz 4, können im Vertrag fehlende
+         Pflichtangaben (vgl. Abschnitt 14.5) in anderen Unterlagen enthalten sein, auf die im
+         Vertrag hinzuweisen ist (§ 31 Abs. 1 UStDV). 6Umsatzsteuerlich kann auch eine
+         Sammelrechnung als E-Rechnung ausgestellt werden.“
+
+    g)   Der bisherige Absatz 6 wird neuer Absatz 20 und wie folgt geändert:
+Seite 14 von 33
+
+          aa) Vor dem Absatz wird folgende Zwischenüberschrift eingefügt:
+
+              „M a ß g e b l i c h e V o r s c h r i f t e n f ü r d i e R e c h n u n g s a u s s t e l l u n g “.
+
+
+          bb) In Satz 2 wird das Wort „Rechnungserteilung“ durch das Wort
+              „Rechnungsausstellung“ ersetzt.
+
+9.   Abschnitt 14.2 wird wie folgt geändert:
+
+     a)   Die Überschrift wird wie folgt gefasst:
+
+                   „14.2. Rechnungsausstellungspflicht bei steuerpflichtigen Leistungen im
+                                    Zusammenhang mit einem Grundstück“.
+
+     b)   Absatz 1 wird wie folgt gefasst:
+
+            „(1) 1Der Begriff der steuerpflichtigen Leistungen (Werklieferungen oder sonstigen
+          Leistungen) im Zusammenhang mit einem Grundstück (vgl. Abschnitt 14.1 Abs. 9)
+          umfasst die Bauleistungen nach § 13b Abs. 2 Nr. 4 UStG und sonstige Leistungen im
+          Zusammenhang mit einem Grundstück im Sinne des § 3a Abs. 3 Nr. 1 UStG (vgl.
+          Abschnitt 3a.3). 2Sofern in den Absätzen 2 bis 4 für die Rechnungsausstellungspflicht
+          nach § 14 Abs. 2 Satz 2 Nr. 3 UStG darüber hinaus Leistungen als im Zusammenhang mit
+          einem Grundstück qualifiziert werden, sind hieraus keine Rückschlüsse für die
+          Anwendung von § 3a Abs. 3 Nr. 1 und § 13b Abs. 2 Nr. 4 UStG zu ziehen.“
+
+     c)   In Absatz 2 Satz 1 wird die Angabe „§ 14 Abs. 2 Satz 1 Nr. 1 UStG“ durch die Angabe „§ 14
+          Abs. 2 Satz 2 Nr. 3 UStG“ ersetzt.
+
+     d)   In Absatz 4 wird die Angabe „§ 14 Abs. 2 Satz 1 Nr. 1 UStG“ durch die Angabe „§ 14 Abs. 2
+          Satz 2 Nr. 3 UStG“ ersetzt.
+
+10. Abschnitt 14.3 wird wie folgt geändert:
+
+     a)   Absatz 1 wird wie folgt geändert:
+
+          aa) In Satz 1 wird der Klammerzusatz wie folgt gefasst:
+
+              „(§ 14 Abs. 2 Satz 5 UStG)“.
+
+          bb) Nach Satz 1 wird folgender Satz 2 eingefügt:
+Seite 15 von 33
+
+             „2Die Regelungen zur verpflichtenden Verwendung von E-Rechnungen (vgl.
+             Abschnitt 14.1 Abs. 4) gelten für die Rechnungsausstellung in Form einer
+             Gutschrift entsprechend.“
+
+         cc) Die bisherigen Sätze 2 und 3 werden die neuen Sätze 3 und 4 und wie folgt gefasst:
+
+             „3Eine Gutschrift kann auch durch eine juristische Person, die nicht Unternehmer
+             ist, ausgestellt werden, wenn sie Leistungsempfänger ist (§ 14 Abs. 2 Satz 2 Nr. 2 in
+             Verbindung mit Satz 5 UStG). 4Der Leistungsempfänger kann mit der Ausstellung
+             einer Gutschrift auch einen Dritten beauftragen, der im Namen und für Rechnung
+             des Leistungsempfängers abrechnet (§ 14 Abs. 2 Satz 7 UStG).“
+
+         dd) Die bisherigen Sätze 4 bis 7 werden die neuen Sätze 5 bis 8.
+
+    b)   Absatz 2 wird wie folgt geändert:
+
+         aa) In Satz 1 wird die Angabe „§ 14 Abs. 2 Satz 1 Nr. 2 UStG“ durch die Angabe „§ 14
+             Abs. 2 Satz 2 Nr. 1 oder 2 UStG“ ersetzt.
+
+         bb) Satz 4 wird wie folgt gefasst:
+
+             „4Die Gutschrift ist, vorbehaltlich der Regelungen des § 14a UStG, innerhalb von
+             sechs Monaten zu erteilen (vgl. Abschnitt 14.1 Abs. 3) und muss als solche
+             gekennzeichnet sein (vgl. § 14 Abs. 4 Satz 1 Nr. 10 UStG und Abschnitt 14.5 Abs. 24).“
+
+         cc) Satz 6 wird wie folgt gefasst:
+
+             „6Wird in einer sonstigen Rechnung sowohl über empfangene Leistungen
+             (Gutschrift) als auch über ausgeführte Leistungen (Rechnung) zusammen
+             abgerechnet, muss aus der Abrechnung hervorgehen, dass es sich um eine
+             Gutschrift handelt.“
+
+         dd) Nach Satz 6 wird folgender Satz 7 eingefügt:
+
+             „7Wenn solche Sachverhalte aus technischen Gründen nicht in einer E-Rechnung
+             zusammengefasst werden können, sind hierfür getrennte E-Rechnungen
+             auszustellen.“
+
+         ee) Die bisherigen Sätze 7 und 8 werden die neuen Sätze 8 und 9.
+
+    c)   In Absatz 3 Satz 1 wird der Klammerzusatz wie folgt gefasst:
+
+         „(§ 14 Abs. 2 Satz 6 UStG)“.
+Seite 16 von 33
+
+
+11. Abschnitt 14.4 wird wie folgt geändert:
+
+    a)   Die Überschrift wird wie folgt gefasst:
+
+         „14.4. Echtheit, Unversehrtheit und Lesbarkeit von Rechnungen“.
+
+    b)   Absätze 1 und 2 werden gestrichen.
+
+    c)   Absatz 3 wird wie folgt gefasst:
+
+           „(3) 1Für alle Rechnungsarten (E-Rechnungen und sonstige Rechnungen) gilt, dass
+         die Rechnungen ordnungsgemäß übermittelt werden, wenn die Echtheit der Herkunft,
+         die Unversehrtheit des Inhalts und die Lesbarkeit der Rechnung gewährleistet sind; sie
+         sind auch inhaltlich ordnungsgemäß, wenn alle erforderlichen Angaben nach § 14 Abs. 4
+         und § 14a UStG enthalten sind. 2Im Einzelnen gilt:
+         – Die Echtheit der Herkunft einer Rechnung ist gewährleistet, wenn die Identität des
+             Rechnungsausstellers sichergestellt ist.
+         – Die Unversehrtheit des Inhalts einer Rechnung ist gewährleistet, wenn die nach dem
+             UStG erforderlichen Angaben während oder nach der Übermittlung der Rechnung
+             nicht geändert worden sind.
+             1
+         – Die Lesbarkeit bedeutet bei einer E-Rechnung, dass der strukturierte Datensatz –
+             z. B. die XML-Datei bei einer Rechnung, die der Normenreihe EN 16931 entspricht
+             – maschinell auswertbar sein muss (maschinelle Lesbarkeit). 2Ob eine Rechnung
+             die Anforderungen der Normenreihe EN 16931 erfüllt, kann beispielsweise durch
+             die Nutzung einer geeigneten Validierungsanwendung überprüft werden. 3Die
+             zusätzliche Erstellung eines menschenlesbaren Dokuments ist nicht erforderlich.
+             4
+               Denn die maschinelle Auswertbarkeit einer standardisierten Datei ermöglicht es
+             auch, dass die Datei z. B. durch eine Visualisierungsanwendung menschenlesbar
+             angezeigt werden kann (vgl. Abschnitt 14.1 Abs. 13). 5Bei einem hybriden Format
+             bilden die im strukturierten Teil vorliegenden Rechnungsdaten den führenden
+             Teil. 6Im Fall von Abweichungen zwischen den strukturierten Rechnungsdaten
+             und den sonstigen Informationen im Bildteil gehen die Daten des strukturierten
+             Teils denen der Bilddatei vor.
+             1
+         – Eine sonstige Rechnung gilt als lesbar, wenn sie für das menschliche Auge lesbar ist.
+             2
+               Sonstige Rechnungen in einem anderen elektronischen Format sind in ihrem
+             Originalformat nicht menschenlesbar, sondern erst nach einer Konvertierung.
+         3Werden bei der Übermittlung einer Rechnung eine qualifizierte elektronische
+
+         Signatur oder ein EDI-Verfahren verwendet (vgl. Absätze 7 bis 10), gelten die Echtheit
+         der Herkunft und die Unversehrtheit des Inhalts als gewährleistet. 4Beides kann aber
+         auch durch ein innerbetriebliches Kontrollverfahren (vgl. Absätze 4 bis 6)
+         gewährleistet werden.“
+
+    d)   Absatz 4 Satz 1 wird wie folgt gefasst:
+
+         „1Die Echtheit der Herkunft und die Unversehrtheit des Inhalts der Rechnung müssen,
+         sofern keine qualifizierte elektronische Signatur verwendet oder die Rechnung per EDI
+         übermittelt wird (vgl. Absätze 7 bis 10), durch ein innerbetriebliches Kontrollverfahren,
+Seite 17 von 33
+
+         das einen verlässlichen Prüfpfad zwischen Rechnung und Leistung schaffen kann,
+         gewährleistet werden (§ 14 Abs. 3 UStG).“
+
+    e)   In Absatz 5 Satz 1 wird die Angabe „§ 14 Abs. 1 UStG“ durch die Angabe „§ 14 Abs. 3
+         UStG“ ersetzt.
+
+    f)   Absatz 6 wird wie folgt geändert:
+
+         aa) In Satz 1 wird die Angabe „§ 14 Abs. 1 UStG“ durch die Angabe „§ 14 Abs. 3 UStG“
+             ersetzt.
+
+         bb) Satz 2 wird wie folgt gefasst:
+
+             „2Dieser Prüfpfad kann z. B. durch (technischen oder manuellen) Abgleich der
+             Rechnung mit vorhandenen geschäftlichen Unterlagen (z. B. Bestellung, Auftrag,
+             Kaufvertrag, Lieferschein oder Überweisung bzw. Zahlungsbeleg) gewährleistet
+             werden.“
+
+    g)   Absatz 7 wie folgt gefasst:
+
+           „(7) Beispiele für Technologien, die die Echtheit der Herkunft und die Unversehrtheit
+         des Inhalts bei einer Rechnung gewährleisten, sind zum einen eine qualifizierte
+         elektronische Signatur oder ein qualifiziertes elektronisches Siegel im Sinne der eIDAS-
+         VO und zum anderen ein EDI-Verfahren, wenn in der Vereinbarung über diesen
+         Datenaustausch der Einsatz von Verfahren vorgesehen ist, die die Echtheit der Herkunft
+         und die Unversehrtheit der Daten gewährleisten (§ 14 Abs. 3 Satz 6 Nr. 1 und 2 UStG).“
+
+    h)   In Absatz 8 Satz 3 wird die Angabe „§ 14 Abs. 3 Nr. 1 UStG“ durch die Angabe „§ 14 Abs. 3
+         Satz 6 Nr. 1 UStG“ ersetzt.
+
+    i)   Absatz 9 wird gestrichen.
+
+    j)   Absatz 10 Satz 1 wird wie folgt gefasst:
+
+         „1Die Absätze 3 bis 8 gelten entsprechend für Gutschriften (§ 14 Abs. 2 Satz 5 UStG),
+         Rechnungen, die im Namen und für Rechnung des Unternehmers oder eines in § 14
+         Abs. 2 Satz 2 Nr. 2 UStG bezeichneten Leistungsempfängers von einem Dritten ausgestellt
+         werden (§ 14 Abs. 2 Satz 7 UStG) sowie für Anzahlungsrechnungen (§ 14 Abs. 5 UStG).“
+
+    k)   Absatz 11 wird gestrichen.
+Seite 18 von 33
+
+12. Abschnitt 14.5 wird wie folgt geändert:
+
+    a)   Absatz 1 wird wie folgt geändert:
+
+         aa) In Satz 3 wird die Angabe „§§ 33 und 34 UStDV“ durch die Angabe „§§ 33, 34
+             und 34a UStDV“ ersetzt.
+
+         bb) Nach Satz 3 werden die folgenden Sätze 4 bis 13 eingefügt:
+
+             „4Besteht die Verpflichtung zur Erteilung einer E-Rechnung (zur verpflichtenden
+             Ausstellung einer E-Rechnung vgl. Abschnitt 14.1 Abs. 4) erfordert die
+             Voraussetzung der elektronischen Verarbeitung (§ 14 Abs. 1 Satz 3 UStG), dass alle
+             umsatzsteuerrechtlichen Pflichtangaben nach §§ 14, 14a UStG im strukturierten
+             Teil der E-Rechnung enthalten sein müssen. 5Ein bloßer Verweis in den
+             strukturierten Daten auf eine Anlage, in der die Rechnungspflichtangaben in
+             unstrukturierter Form enthalten sind, genügt nicht, da dann keine elektronische
+             Verarbeitung möglich ist. 6Da die umsatzsteuerrechtlichen Pflichtangaben im
+             Kern-Datenmodell der E-Rechnung enthalten sind, ist die Verwendung einer
+             Extension (branchenbezogene Anforderungen, vgl. Abschnitt 14.1 Abs. 13) nicht
+             von den umsatzsteuerrechtlichen Vorgaben für die Ausstellung, Übermittlung
+             und Empfang einer E-Rechnung betroffen. 7Bei einem Verstoß gegen die
+             umsatzsteuerlichen Pflichtangaben der §§ 14 Abs. 4 und 14a UStG liegt eine nicht
+             ordnungsmäßige Rechnung vor (vgl. auch Abschnitt 15.2a). 8Solche Fehler
+             (Inhaltsfehler) können bei einer E-Rechnung beispielsweise als Verletzung der
+             entsprechenden Geschäftsregeln im Rahmen einer Validierung (vgl.
+             Abschnitt 14.1 Abs. 13) festgestellt werden. 9Geschäftsregelfehler (vgl.
+             Abschnitt 14.1 Abs. 11) zu anderen Inhalten (z. B. die fehlende Angabe des Feldes
+             „BT-10 Buyer reference“) sind umsatzsteuerlich unbeachtlich. 10Inhaltsfehler
+             können aber auch vorliegen, wenn formal kein Verstoß gegen die Geschäftsregeln
+             vorliegt und zum Beispiel auch im Rahmen der Validierung kein Fehler
+             festgestellt wurde (z. B. Angabe eines fehlerhaften Steuersatzes). 11Eine
+             Validierung der E-Rechnung ersetzt nicht die dem Empfänger obliegende Pflicht
+             zur Überprüfung der Rechnung auf Vollständigkeit und Richtigkeit (vgl.
+             Abschnitt 15.2a Abs. 6 und 15.11 Abs. 3), sondern unterstützt ihn hierbei. 12Ein
+             Unternehmer kann sich bei Beachtung der Sorgfaltspflichten eines ordentlichen
+             Kaufmanns auf das technische Ergebnis einer Validierung (hinsichtlich des
+             Formats und der Geschäftsregeln) durch eine geeignete Validierungsanwendung
+             verlassen. 13Zum Nachweis bietet es sich an, den Validierungsbericht
+             aufzubewahren.“
+
+         cc) Der bisherige Satz 4 wird neuer Satz 14.
+
+         dd) Der bisherige Satz 5 wird neuer Satz 15 und wie folgt gefasst:
+
+             „15Eine sonstige Rechnung (vgl. Abschnitt 14.1 Abs. 2) wird ggf. von der Gesamtheit
+             aller Dokumente gebildet, die die nach § 14 Abs. 4 und § 14a UStG geforderten
+             Angaben insgesamt enthalten (§ 31 Abs. 1 UStDV).“
+Seite 19 von 33
+
+         ee) Die bisherigen Sätze 6 bis 8 werden die neuen Sätze 16 bis 18.
+
+         ff) Der bisherige Satz 12 wird neuer Satz 19 und wie folgt gefasst:
+
+               „19Hinsichtlich der Leistungsbeschreibung ist es nur bei einer sonstigen Rechnung
+               zulässig, auf den vom leistenden Unternehmer erstellten Lieferschein Bezug zu
+               nehmen.“
+
+         gg) Die bisherigen Sätze 9 und 10 werden die neuen Sätze 20 und 21.
+
+         hh) Der bisherige Satz 11 wird neuer Satz 22 und wie folgt gefasst:
+
+               „22Ist ein Dritter mit der Rechnungserstellung beauftragt (§ 14 Abs. 2 Satz 7 UStG), ist
+               auch derjenige, der den Dritten mit der Rechnungserstellung beauftragt hat, zur
+               Erstellung der fehlenden Dokumente berechtigt.“
+
+         ii)   Der bisherige Satz 13 wird neuer Satz 23.
+
+    b)   In Absatz 9 werden folgende Sätze 5 und 6 angefügt:
+
+         „5Besteht die Verpflichtung zur Ausstellung einer E-Rechnung (vgl. Abschnitt 14.1
+         Abs. 4), kann der zugrundeliegende Vertrag als ergänzende Angabe in einem in der
+         E-Rechnung enthaltenen Anhang aufgenommen werden (vgl. Abschnitt 14.1 Abs. 17).
+         6
+           Die Angabe der Steuernummer oder USt-IdNr. des leistenden Unternehmers muss als
+         Pflichtangabe im strukturierten Teil der E-Rechnung enthalten sein.“
+
+    c)   Absatz 12 wird wie folgt gefasst:
+
+            „(12) 1Bei einer E-Rechnung über ein Dauerschuldverhältnis ist es erforderlich, dass
+         die Rechnungsnummer im strukturierten Teil der E-Rechnung enthalten ist, um die
+         Voraussetzung des § 14 Abs. 4 Satz 1 Nr. 4 UStG zu erfüllen. 2Dabei ist es ausreichend,
+         wenn eine in dem zugrundeliegenden Vertrag enthaltene einmalige Nummer (z. B.
+         Wohnungs- oder Objektnummer, Mieternummer) verwendet wird. 3Es ist nicht
+         erforderlich, dass Zahlungsbelege eine gesonderte fortlaufende Nummer erhalten.
+         4
+           Zur Ausstellung von E-Rechnungen bei Dauerschuldverhältnissen vgl. Abschnitt 14.1
+         Abs. 19.“
+
+    d)   In Absatz 13 Satz 2 wird die Angabe „§ 14 Abs. 2 Satz 4 UStG“ durch die Angabe „§ 14
+         Abs. 2 Satz 7 UStG“ ersetzt.
+
+    e)   Absatz 14 wird wie folgt gefasst:
+Seite 20 von 33
+
+          „(14) Kleinbetragsrechnungen nach § 33 UStDV, Fahrausweise nach § 34 UStDV und
+         Rechnungen von Kleinunternehmern nach § 34a UStDV müssen keine fortlaufende
+         Nummer enthalten.“
+
+    f)   Absatz 15 wird wie folgt geändert:
+
+         aa) Nach Satz 1 werden folgende Sätze 2 bis 4 eingefügt:
+
+             „2Besteht die Verpflichtung zur Ausstellung einer E-Rechnung (vgl. Abschnitt 14.1
+             Abs. 4), gilt hinsichtlich der Leistungsbeschreibung, dass die im strukturierten Teil
+             der E-Rechnung enthaltenen Angaben eine eindeutige und leicht nachprüfbare
+             Feststellung der Leistung ermöglichen müssen (vgl. Abschnitt 15.2a Abs. 4 und 5),
+             die die Kontrollfunktion der Rechnung (vgl. Abschnitt 14.5 Abs. 1) gewährleisten
+             können. 3Ergänzende Angaben können jedoch in einem in der E-Rechnung
+             enthaltenen Anhang aufgenommen werden (z. B. eine Aufschlüsselung von
+             Stundennachweisen in einer PDF-Datei). 4Ein enthaltener Link auf ein externes
+             Ziel erfüllt nicht die Voraussetzungen nach § 14 Abs. 1 Satz 3 UStG.“
+
+         bb) Die bisherigen Sätze 2 bis 11 werden die neuen Sätze 5 bis 14.
+
+    g)   Absatz 16 wird wie folgt geändert:
+
+         aa) In Satz 2 wird der Satzteil nach dem Semikolon gestrichen.
+
+         bb) Nach Satz 2 werden folgende Sätze 3 bis 8 eingefügt:
+
+             „3Nur bei sonstigen Rechnungen genügt in diesen Fällen eine Angabe wie z. B.
+             „Leistungsdatum entspricht Rechnungsdatum“ (vgl. BFH-Urteil vom 17.12.2008 –
+             XI R 62/07, BStBl II 2009 S. 432). 4In einer E-Rechnung hingegen muss die Angabe
+             im vorgegebenen strukturierten Datenformat (vgl. Abschnitt 14.1 Abs. 11 bis 15)
+             enthalten sein. 5Nach § 31 Abs. 1 UStDV kann eine sonstige Rechnung aus
+             mehreren Dokumenten bestehen, aus denen sich die nach § 14 Abs. 4 Satz 1 UStG
+             erforderlichen Angaben insgesamt ergeben. 6Daher kann nur bei sonstigen
+             Rechnungen die Angabe des Zeitpunkts der Lieferung in einem Lieferschein
+             erfolgen, wenn in dem Dokument, in dem Entgelt und Steuerbetrag angegeben
+             sind, der Lieferschein bezeichnet ist. 7Dies setzt voraus, dass der Lieferschein
+             neben dem Lieferscheindatum eine gesonderte Angabe des Leistungsdatums
+             enthält. 8Sofern das Leistungsdatum dem Lieferscheindatum entspricht, kann an
+             Stelle der gesonderten Angabe des Leistungsdatums ein Hinweis in die Rechnung
+             aufgenommen werden, dass das Lieferscheindatum dem Leistungsdatum
+             entspricht.“
+
+         cc) Die bisherigen Sätze 3 und 4 werden die neuen Sätze 9 und 10.
+
+         dd) Der bisherige Satz 5 wird neuer Satz 11 und wie folgt geändert:
+Seite 21 von 33
+
+             aaa) Der Eingangssatz wird wie folgt gefasst:
+
+                  „11Im Einzelnen gilt zum Zeitpunkt der Lieferung oder sonstigen Leistung
+                  hierbei Folgendes:“
+
+             bbb) Nummer 1 wird gestrichen
+
+             ccc) Nach Nummer 5 Satz 3 wird folgender Satz 4 angefügt:
+
+                  „4Bei einer E-Rechnung kann dies gegebenenfalls durch die Verwendung
+                  eines entsprechenden Rechnungstyps erfolgen.“
+
+    h)   Nach Absatz 17 Satz 3 werden folgende Sätze 4 und 5 angefügt:
+
+         „4Sofern eine Pflicht zur Ausstellung einer E-Rechnung bei einem
+         Dauerschuldverhältnis (z. B. Mietverhältnis) besteht, ist es ausreichend, wenn einmalig
+         für den ersten Teilleistungszeitraum eine E-Rechnung ausgestellt wird, in welcher der
+         zugrundeliegende Vertrag als Anhang enthalten ist, oder sich aus dem sonstigen Inhalt
+         klar ergibt, dass es sich um eine Dauerrechnung handelt. 5Ändern sich die
+         umsatzsteuerrechtlichen Rechnungspflichtangaben nach §§ 14, 14a UStG in den
+         Folgezeiträumen (z. B. bei einer Mieterhöhung), müssen die Änderungen in einer
+         neuen E-Rechnung abgebildet werden (vgl. Abschnitt 14.1 Abs. 19).“
+
+    i)   Absatz 19 wird wie folgt gefasst:
+
+           „(19) 1Zusätzlich ist jede im Voraus vereinbarte Minderung des Entgelts, sofern sie nicht
+         bereits im Entgelt berücksichtigt ist, anzugeben (§ 14 Abs. 4 Satz 1 Nr. 7 UStG). 2Dies
+         bezieht sich nur auf solche Vereinbarungen, die der Leistungsempfänger gegenüber dem
+         leistenden Unternehmer unmittelbar geltend machen kann. 3Vereinbarungen des
+         leistenden Unternehmers mit Dritten, die nicht Leistungsempfänger sind, müssen in der
+         Rechnung nicht bezeichnet werden. 4Insbesondere im Fall der Vereinbarung von Boni,
+         Skonti und Rabatten, bei denen im Zeitpunkt der Rechnungserstellung die Höhe der
+         Entgeltminderung nicht feststeht, ist in der Rechnung eindeutig auf die Vereinbarung
+         hinzuweisen. 5Für eine leichte und eindeutige Nachprüfbarkeit ist eine hinreichend
+         genaue Bezeichnung erforderlich (z. B. durch Benennung des entsprechenden
+         Vertrages). 6Diese Regelungen gelten sowohl im Fall des Steuerausweises in einer
+         Rechnung als auch im Fall des Hinweises auf eine Steuerbefreiung. 7Die spätere Zahlung
+         aufgrund einer solchen Vereinbarung stellt eine Änderung der Bemessungsgrundlage
+         dar (§ 17 UStG, vgl. auch Abschnitt 17.1), eine Rechnungsberichtigung im Sinne von
+         § 31 Abs. 5 UStDV ist dann nicht erforderlich. 8Eine Belegaustauschpflicht besteht nur
+         in den in § 17 Abs. 4 UStG bezeichneten Fällen. 9Ein solcher Beleg kann, muss aber nicht
+         als umsatzsteuerliche Rechnung ausgestellt werden. 10Die Vereinbarung ist als Teil der
+         Aufzeichnungspflichten (vgl. Abschnitt 22.2 Abs. 2) geordnet aufzubewahren (vgl.
+         Abschnitt 22.1 Abs. 1). 11Bei Skontovereinbarungen genügt eine Angabe wie z. B. „2 %
+         Skonto bei Zahlung bis“ den Anforderungen des § 14 Abs. 4 Satz 1 Nr. 7 UStG. 12Das
+         Skonto muss nicht betragsmäßig (weder mit dem Bruttobetrag noch mit dem
+         Nettobetrag zzgl. USt) ausgewiesen werden.“
+Seite 22 von 33
+
+    j)   Absatz 24 wird wie folgt geändert:
+
+         aa) Satz 1 wird wie folgt gefasst:
+
+              „1Vereinbaren die am Leistungsaustausch Beteiligten, dass der in § 14 Abs. 2 Satz 2
+              Nr. 1 oder Nr. 2 UStG bezeichnete Leistungsempfänger abrechnet (Gutschrift, § 14
+              Abs. 2 Satz 5 UStG), muss die Gutschrift als solche gekennzeichnet sein (vgl. § 14
+              Abs. 4 Satz 1 Nr. 10 UStG); bei E-Rechnungen beispielsweise durch die Auswahl des
+              entsprechenden Rechnungstyps.“
+
+         bb) In Satz 4 wird folgender Klammerzusatz angefügt:
+
+              „(vgl. im Übrigen Abschnitt 15.2a Abs. 1a)“.
+
+13. Nach Abschnitt 14.6 Abs. 3 wird folgender Absatz 4 angefügt:
+
+       „(4) 1Rechnungen im Sinne von § 33 UStDV können abweichend von der Pflicht zur
+    Ausstellung einer E-Rechnung immer entweder als Rechnung in Papierform oder mit
+    Zustimmung des Empfängers in einem anderen elektronischen Format ausgestellt und
+    übermittelt werden (vgl. Abschnitt 14.1 Abs. 2 und 7). 2Die Zustimmung bedarf dabei keiner
+    gesonderten Form. 3Es muss lediglich Einvernehmen über das zu verwendende Format
+    bestehen. 4Die Ausstellung und Übermittlung einer E-Rechnung ist unter den übrigen
+    Voraussetzungen immer ohne Zustimmung des Empfängers möglich. 5Sofern in einer
+    Rechnung über mehrere Leistungen abgerechnet wird, ist für die Verpflichtung zur
+    Ausstellung einer E-Rechnung allein der Gesamtbetrag der Rechnung maßgebend.
+    6
+      Übersteigt der Gesamtbetrag der Rechnung 250 €, ist eine E-Rechnung auszustellen, auch
+    wenn der Bruttobetrag des der Pflicht zur Erteilung einer E-Rechnung unterliegenden
+    Anteils der abgerechneten Leistungen weniger als 250 € beträgt (z. B. bei auch mit
+    abgerechneten bestimmten steuerfreien oder nicht steuerbaren Leistungen).“
+
+14. Abschnitt 14.7 wird wie folgt geändert:
+
+    a)   In Absatz 3 Satz 3 wird die Angabe „Abschnitt 14.4 Abs. 11“ durch die Angabe
+         „Abschnitt 15.5 Abs. 1“ ersetzt.
+
+    b)   Nach Absatz 3 wird folgender Absatz 4 angefügt:
+
+           „(4) 1Fahrausweise können abweichend von der Pflicht zur Ausstellung einer
+         E-Rechnung immer entweder als Rechnung in Papierform oder mit Zustimmung des
+         Empfängers in einem anderen elektronischen Format ausgestellt und übermittelt
+         werden (vgl. Abschnitt 14.1 Abs. 2 und 7). 2Die Zustimmung bedarf dabei keiner
+         gesonderten Form. 3Es muss lediglich Einvernehmen über das zu verwendende
+         Format bestehen. 4Die Ausstellung und Übermittlung einer E-Rechnung ist unter den
+         übrigen Voraussetzungen immer ohne Zustimmung des Empfängers möglich.“
+
+15. Abschnitt 14.7a Abs. 3 wird wie folgt gefasst:
+Seite 23 von 33
+
+
+     „(3) 1Rechnungen von Kleinunternehmern können immer entweder als Rechnung in
+    Papierform oder mit Zustimmung des Empfängers in einem anderen elektronischen
+    Format ausgestellt und übermittelt werden (vgl. Abschnitt 14.1 Abs. 2 und 7). 2Die
+    Zustimmung bedarf dabei keiner gesonderten Form. 3Es muss lediglich Einvernehmen
+    über das zu verwendende Format bestehen. 4Die Ausstellung und Übermittlung einer
+    E-Rechnung ist unter den übrigen Voraussetzungen immer ohne Zustimmung des
+    Empfängers möglich.“
+
+16. Abschnitt 14.8 wird wie folgt geändert:
+
+    a)   In Absatz 3 Satz 2 wird die Angabe „§ 14 Abs. 2 Sätze 2 und 3 UStG“ durch die Angabe
+         „§ 14 Abs. 2 Sätze 5 und 6 UStG“ ersetzt.
+
+    b)   Nach Absatz 7 Satz 4 wird folgender Satz 5 angefügt:
+
+         „5Zu Fällen, in denen die Pflicht zur Ausstellung einer E-Rechnung besteht, vgl. Rn. 47
+         und 48 des BMF-Schreibens vom 15.10.2024, BStBl I S. 1320.“
+
+17. Abschnitt 14.9 Abs. 1 wird wie folgt geändert:
+
+    a)   In Satz 2 wird nach den Wörtern „eine juristische Person“ die Angabe „, soweit sie nicht
+         Unternehmer ist,“ eingefügt.
+
+    b)   Das Beispiel wird wie folgt geändert:
+
+         aa) Nach Satz 2 wird folgender Satz 3 eingefügt:
+
+             „3In einer E-Rechnung kann die Differenz zwischen Rechnungsbetrag (hier:
+             59.500 €) und Kaufpreis (hier: 30.000 €) als Netto-Nachlass (hier: 29.500 €)
+             ausgewiesen werden.“
+
+         bb) Der bisherige Satz 3 wird neuer Satz 4.
+
+18. In Abschnitt 14.10 Abs. 3 Satz 1 wird das Wort „Reparaturleistung“ durch das Wort
+    „Leistung“ ersetzt.
+
+19. Abschnitt 14.11 wird wie folgt geändert:
+
+    a)   Absatz 1 wird wie folgt geändert:
+Seite 24 von 33
+
+         aa) In Satz 1 wird die Angabe „§ 14 Abs. 6 Nr. 5 UStG“ durch die Angabe „§ 14 Abs. 6
+             Satz 1 Nr. 5 UStG“ ersetzt.
+
+         bb) In Satz 6 wird folgender Klammerzusatz angefügt:
+
+             „(§ 31 Abs. 5 Satz 3 UStDV)“.
+
+         cc) Nach Satz 6 werden folgende Sätze 7 bis 9 eingefügt:
+
+             „7Daher muss die Berichtigung einer E-Rechnung ebenfalls in der für diese
+             vorgeschriebenen Form (unter Verwendung des entsprechenden Rechnungstyps)
+             erfolgen. 8Eine Übermittlung der fehlenden oder unzutreffenden Angaben in
+             einer anderen Form ist nicht ausreichend. 9Sofern dagegen für einen Umsatz nach
+             § 14 Abs. 2 Satz 2 in Verbindung mit § 27 Abs. 38 UStG keine Verpflichtung zur
+             Verwendung einer E-Rechnung besteht, kann eine Rechnungsberichtigung für
+             diesen Umsatz auch ohne Verwendung einer E-Rechnung erfolgen.“
+
+         dd) Der bisherige Satz 7 wird neuer Satz 10 und wie folgt gefasst:
+
+             „10Für die Berichtigung einer Rechnung gelten keine höheren Formanforderungen,
+             wenn in einem notariell beurkundeten Kaufvertrag mit Umsatzsteuerausweis
+             abgerechnet worden ist (vgl. BFH-Urteil vom 11.10.2007 – V R 27/05, BStBl II 2008
+             S. 438).“
+
+         ee) Der bisherige Satz 8 wird neuer Satz 11.
+
+    b)   Absatz 2 wird wie folgt geändert:
+
+         aa) Satz 2 wird wie folgt gefasst:
+
+             „2Lediglich in dem Fall, in dem ein Dritter mit der Ausstellung der Rechnung
+             beauftragt wurde (§ 14 Abs. 2 Satz 7 UStG), kann die Berichtigung durch den
+             leistenden Unternehmer selbst oder im Fall der Gutschrift (§ 14 Abs. 2 Satz 5 UStG)
+             durch den Gutschriftsaussteller vorgenommen werden.“
+
+         bb) In Satz 3 wird das Wort „Abrechnungsempfänger“ durch das Wort
+             „Rechnungsempfänger“ und das Wort „Abrechnung“ durch das Wort „Rechnung“
+             ersetzt.
+
+         cc) In Satz 4 wird das Wort „Abrechnenden“ durch das Wort „Rechnungsaussteller“
+             ersetzt.
+Seite 25 von 33
+
+         dd) Satz 6 wird wie folgt gefasst:
+
+             „6Eine Berichtigung oder Ergänzung einer sonstigen Rechnung im Sinne von § 14
+             Abs. 1 Satz 4 UStG durch den Rechnungsempfänger ist jedoch anzuerkennen, wenn
+             sich der Rechnungsaussteller die Änderung zu eigen macht und dies aus der
+             geänderten Rechnung oder anderen Unterlagen hervorgeht, auf die in der
+             Rechnung hingewiesen wird (vgl. BFH-Beschluss vom 17.04.1980 – V S 18/79,
+             BStBl II S. 540).“
+
+    c)   In Absatz 3 Satz 2 wird die Angabe „Abschnitt 14.1 Abs. 5“ durch die Angabe
+         „Abschnitt 14.1 Abs. 10“ ersetzt.
+
+    d)   Nach Absatz 3 wird folgender Absatz 4 angefügt:
+
+           „(4) 1Bei einer Änderung der Bemessungsgrundlage im Sinne von § 17 UStG (siehe
+         dazu Abschnitt 17.1) ist keine Rechnungsberichtigung erforderlich (vgl. auch
+         Abschnitt 17.1 Abs. 3a). 2Beispiele hierfür sind Skonti, Nachlässe aufgrund von
+         Mängelrügen ohne Auswirkungen auf die abgerechnete Leistung oder eine
+         Rückgängigmachung einer Leistung im Sinne des § 17 Abs. 2 Nr. 3 UStG (vgl.
+         Abschnitt 17.1 Abs. 8). 3Änderungen im Leistungsumfang oder -gehalt (z. B. relevante
+         Aufmaßänderungen in einer Rechnung über eine Bauleistung) stellen hingegen keine
+         bloße Änderung der Bemessungsgrundlage dar und erfordern daher grundsätzlich
+         eine Rechnungsberichtigung jedenfalls hinsichtlich der Leistungsbeschreibung.“
+
+20. Abschnitt 14a.1 wird wie folgt geändert:
+
+    a)   In Absatz 1 Satz 5 wird die Angabe „§ 14 Abs. 2 Satz 2 UStG“ durch die Angabe „§ 14
+         Abs. 2 Satz 5 UStG“ ersetzt.
+
+    b)   Absatz 2 wird wie folgt geändert:
+
+         aa) In Satz 2 wird die Angabe „§ 14 Abs. 2 Satz 2 UStG“ durch die Angabe „§ 14 Abs. 2
+             Satz 5 UStG“ ersetzt.
+
+         bb) In Satz 4 wird im Klammerzusatz die Angabe „§ 14 Abs. 2 Satz 2 UStG“ durch die
+             Angabe „§ 14 Abs. 2 Satz 5 UStG“ ersetzt.
+
+    c)   In Absatz 3 Satz 5 wird die Angabe „Abschnitt 14.1 Abs. 5“ durch die Angabe
+         „Abschnitt 14.1 Abs. 10“ ersetzt.
+
+    d)   In Absatz 5 Satz 1 wird der Klammerzusatz wie folgt gefasst:
+
+         „(vgl. auch Abschnitt 14.1 Abs. 1)“.
+Seite 26 von 33
+
+
+    e)   In Absatz 6 Satz 3 wird die Angabe „Abschnitt 14.1 Abs. 6“ durch die Angabe
+         „Abschnitt 14.1 Abs. 20“ ersetzt.
+
+    f)   In Absatz 8 wird die Angabe „Ein Abrechnungspapier“ durch die Angabe „Eine
+         Rechnung“ ersetzt.
+
+21. Abschnitt 14b.1 wird wie folgt geändert:
+
+    a)   Absatz 1 wird wie folgt geändert:
+
+         aa) Nach Satz 1 werden die folgenden Sätze 2 bis 6 eingefügt:
+
+             „2Die Aufbewahrung einer Rechnung muss grundsätzlich im empfangenen
+             Format erfolgen. 3Dabei muss die Echtheit der Herkunft, die Unversehrtheit ihres
+             Inhalts und ihre Lesbarkeit gewährleistet sein (siehe Abschnitt 14.4). 4Bei einer
+             E-Rechnung ist zumindest deren strukturierter Teil so aufzubewahren, dass er
+             unversehrt in seiner ursprünglichen Form vorliegt. 5Für Zwecke der Umsatzsteuer
+             gilt, dass alleine wegen einer Speicherung und Archivierung von E-Rechnungen
+             außerhalb eines GoBD-konformen Datenverarbeitungssystems regelmäßig kein
+             Verstoß gegen § 14b Abs. 1 UStG und die Unversehrtheit des Inhalts vorliegt. 6Zum
+             Vorsteuerabzug aus einer sonstigen Rechnung in einem anderen elektronischen
+             Format vgl. Abschnitt 15.2a Abs. 1.“
+
+         bb) Der bisherige Satz 2 wird neuer Satz 7 und wie folgt gefasst:
+
+             „7Soweit     der     Unternehmer       Rechnungen         mithilfe     elektronischer
+             Aufzeichnungssysteme (z. B. Kassensysteme) erteilt, ist es hinsichtlich einer erteilten
+             Rechnung im Sinne des § 33 UStDV ausreichend, wenn ein Doppel der
+             Ausgangsrechnung aus den unveränderbaren digitalen Aufzeichnungen
+             reproduziert werden kann, die auch die übrigen Anforderungen der GoBD (vgl.
+             BMF-Schreiben vom 28.11.2019, BStBl I S. 1269, zuletzt geändert durch BMF-
+             Schreiben vom 14.07.2025, BStBl I S. 1502) erfüllen, insbesondere die
+             Vollständigkeit, Richtigkeit und Zeitgerechtigkeit der Erfassung (siehe auch § 146
+             Abs. 1 und 4 AO).“
+
+
+         cc) Der bisherige Satz 3 wird neuer Satz 8.
+
+         dd) Der bisherige Satz 4 wird neuer Satz 9 und wie folgt gefasst:
+
+             „9Sind bei gemeinsamem Leistungsbezug durch mehrere Personen die einzelnen
+             Gemeinschafter als Leistungsempfänger anzusehen (vgl. Abschnitt 15.2b Abs. 1), hat
+             jeder unternehmerisch tätige Gemeinschafter eine Kopie der Rechnung
+             aufzubewahren; wurde eine Rechnung in Papierform ausgestellt, ist es
+             ausreichend, wenn das Original bei einem der Gemeinschafter aufbewahrt wird.“
+Seite 27 von 33
+
+
+    b)   In Absatz 4 Satz 1 wird die Angabe „§ 14 Abs. 2 Satz 1 Nr. 1 UStG“ durch die Angabe „§ 14
+         Abs. 2 Satz 2 Nr. 3 UStG“ ersetzt.
+
+    c)   Absatz 5 wird wie folgt geändert:
+
+         aa) Nach Satz 2 werden folgende Sätze 3 bis 4 eingefügt:
+
+             „3Der strukturierte Teil einer E-Rechnung ist so aufzubewahren, dass dieser in
+             seiner ursprünglichen Form vorliegt und die Anforderungen an die
+             Unversehrtheit erfüllt werden (vgl. Abschnitt 14.4 Abs. 3). 4Eine maschinelle
+             Auswertbarkeit seitens der Finanzverwaltung muss sichergestellt sein.“
+
+         bb) Die bisherigen Sätze 3 und 4 werden die neuen Sätze 5 und 6 und in ihnen wird
+             jeweils das Wort „Rechnung“ durch die Wörter „Rechnung in Papierform“ ersetzt.
+
+    d)   Absatz 6 wird wie folgt gefasst:
+
+           „(6) 1Für die Aufbewahrung von Rechnungen (vgl. Absatz 1) sind durch
+         innerbetriebliche Kontrollverfahren (vgl. Abschnitt 14.4 Abs. 4 bis 6) die Echtheit der
+         Herkunft und die Unversehrtheit des Inhalts sicherzustellen sowie die Lesbarkeit der
+         Rechnung zu gewährleisten. 2Wird eine Rechnung (E-Rechnung oder sonstige
+         Rechnung in einem anderen elektronischen Format) mit einer qualifizierten
+         elektronischen Signatur übermittelt, ist auch die Signatur an sich als Nachweis über die
+         Echtheit und die Unversehrtheit der Daten aufzubewahren, selbst wenn nach anderen
+         Vorschriften die         Gültigkeit dieser       Nachweise     bereits   abgelaufen ist.
+         3Aufbewahrungspflichten nach anderen Vorschriften, z. B. nach der AO (vgl. GoBD, BMF-
+
+         Schreiben vom 28.11.2019, BStBl I S. 1269, zuletzt geändert durch BMF-Schreiben vom
+         14.07.2025, BStBl I S. 1502), bleiben für andere als umsatzsteuerliche Zwecke unberührt.“
+
+    e)   In Absatz 8 Satz 1 wird die Angabe „Bei elektronisch aufbewahrten Rechnungen (dabei
+         muss es sich nicht um elektronisch übermittelte Rechnungen handeln)“ durch die
+         Angabe „Bei E-Rechnungen wie auch elektronisch aufzubewahrenden sonstigen
+         Rechnungen“ ersetzt.
+
+    f)   Absatz 9 Satz 4 wie folgt gefasst:
+
+         „4Ist ein nicht im Gemeinschaftsgebiet ansässiger Unternehmer nach den Bestimmungen
+         des Staates, in dem er ansässig ist, verpflichtet, die Rechnung in Papierform im Staat der
+         Ansässigkeit aufzubewahren, ist es ausreichend, wenn dieser Unternehmer im
+         Gemeinschaftsgebiet Kopien der aufzubewahrenden Rechnungen in Papierform
+         aufbewahrt.“
+
+    g)   In Absatz 10 Satz 3 wird der erste Klammerzusatz wie folgt gefasst:
+Seite 28 von 33
+
+
+         „(vgl. BMF-Schreiben vom 28.11.2019, BStBl I S. 1269, zuletzt geändert durch BMF-
+         Schreiben vom 14.07.2025, BStBl I S. 1502)“.
+
+22. Abschnitt 14c.1 wird wie folgt geändert:
+
+    a)   Absatz 3 wird wie folgt geändert:
+
+         aa) In Satz 1 wird im ersten Klammerzusatz die Angabe „§ 14 Abs. 2 Satz 2 UStG“ durch
+             die Angabe „§ 14 Abs. 2 Satz 5 UStG“ ersetzt.
+
+         bb) In Satz 4 wird die Angabe „§ 14 Abs. 2 Satz 2 UStG“ durch die Angabe „§ 14 Abs. 2
+             Satz 5 UStG“ ersetzt.
+
+    b)   Absatz 4 wird wie folgt geändert:
+
+         aa) Nach Satz 6 wird folgender Satz 7 eingefügt:
+
+             „7Es ist unschädlich, wenn die Datei zu einer E-Rechnung (vgl. Abschnitt 14.1
+             Abs. 11 bis 15) mehrfach übersandt wird, solange es sich um dieselbe Rechnung
+             handelt und die Übermittlung nur als inhaltlich identisches Mehrstück erfolgt.“
+
+         bb) Der bisherige Satz 7 wird neuer Satz 8 und wie folgt gefasst:
+
+             „8Besteht eine sonstige Rechnung aus mehreren Dokumenten, sind diese
+             Regelungen für die Dokumente in ihrer Gesamtheit anzuwenden.“
+
+    c)   Nach Absatz 4 wird folgender Absatz 4a eingefügt:
+
+           „(4a) 1Enthält der Bildteil eines hybriden Rechnungsformats (vgl. Abschnitt 14.1
+         Abs. 14) keine von dem strukturierten Teil abweichenden Rechnungsangaben nach
+         §§ 14, 14a UStG, handelt es sich bei dem Bildteil um ein inhaltlich identisches
+         Mehrstück (vgl. Absatz 4 Satz 6). 2Enthält der Bildteil dagegen abweichende
+         Rechnungsangaben (z. B. aufgrund manipulativer Eingriffe eine andere
+         Leistungsbeschreibung oder einen abweichenden Umsatzsteuerbetrag), stellt er ggf.
+         eine weitere (sonstige) Rechnung dar, für die die Voraussetzungen des § 14c UStG zu
+         prüfen sind. 3Dabei werden technisch begründete geringfügige Abweichungen,
+         konkretisierende oder ergänzende Informationen (z. B. aus Gründen der Darstellung
+         verkürzte Leistungsbeschreibung oder Rundungsdifferenzen) nicht beanstandet,
+         wenn der Charakter als inhaltlich identisches Mehrstück nicht verloren geht. 4Ein
+         Vorsteuerabzug ist auch in diesen Fällen nur aus dem strukturierten Rechnungsteil
+         möglich.“
+Seite 29 von 33
+
+    d)   Der bisherige Absatz 4a wird neuer Absatz 4b und in Satz 2 wird die Angabe
+         „Abschnitt 14.1 Abs. 1 Satz 4“ durch die Angabe „Abschnitt 14.1 Abs. 1 Satz 5“ ersetzt.
+
+23. Abschnitt 14c.2 wird wie folgt geändert:
+
+    a)   In Absatz 2a Satz 3 wird der Klammerzusatz wie folgt gefasst:
+
+         „(vgl. BFH-Urteil vom 28.10.2010 – V R 7/10, BStBl II 2011 S. 391, und Abschnitt 14.1
+         Abs. 1)“.
+
+
+    b)   In Absatz 2b Satz 2 wird die Angabe „Abschnitt 14.1 Abs. 1 Satz 4“ durch die Angabe
+         „Abschnitt 14.1 Abs. 1 Satz 5“ ersetzt.
+
+    c)   In Absatz 4 Satz 3 wird das Wort „Abrechnungspapier“ durch das Wort
+         „Abrechnungsdokument“ ersetzt.
+
+24. Abschnitt 15.2a wird wie folgt geändert:
+
+    a)   Absatz 1 wird wie folgt geändert:
+
+         aa) Nach Satz 2 werden folgende Sätze 3 und 4 eingefügt:
+
+             „3Sofern für einen Umsatz nach § 14 Abs. 2 Satz 2 in Verbindung mit § 27 Abs. 38
+             UStG eine Verpflichtung zur Ausstellung einer E-Rechnung besteht, erfüllt nur
+             eine solche dem Grunde nach die Anforderungen der §§ 14, 14a UStG. 4Wird in
+             einem solchen Fall stattdessen eine sonstige Rechnung ausgestellt, handelt es sich
+             nicht um eine ordnungsmäßige Rechnung im Sinne von §§ 14, 14a UStG, so dass
+             diese Rechnung dem Grunde nach nicht zum Vorsteuerabzug berechtigt (vgl. aber
+             Absatz 1a).“
+
+         bb) Die bisherige Satz 3 wird neuer Satz 5.
+
+         cc) Der bisherige Satz 4 wird neuer Satz 6 und wie folgt gefasst:
+
+             „6Ein gesonderter Steuerausweis liegt nicht vor, wenn die in einem Vertrag
+             enthaltene Abrechnung offen lässt, ob der leistende Unternehmer den Umsatz
+             steuerfrei oder steuerpflichtig (§ 9 UStG) behandeln will (vgl. Abschnitt 14.1 Abs. 18),
+             oder in dem Dokument nicht durch Angaben tatsächlicher Art zum Ausdruck
+             kommt, dass die gesondert ausgewiesene Steuer auf Lieferungen oder sonstigen
+             Leistungen des Rechnungsausstellers an den Leistungsempfänger beruht (BFH-
+             Urteil vom 12.06.1986 – V R 75/78, BStBl II S. 721).“
+Seite 30 von 33
+
+         dd) Die bisherigen Sätze 5 und 6 werden die neuen Sätze 7 und 8.
+
+    b)   Nach Absatz 1a Satz 11 werden folgende Sätze 12 bis 14 angefügt:
+
+         „12Die vorstehenden Grundsätze gelten auch dann, wenn für einen Umsatz nach § 14
+         Abs. 2 Satz 2 in Verbindung mit § 27 Abs. 38 UStG eine Verpflichtung zur Ausstellung
+         einer E-Rechnung bestand, aber stattdessen eine sonstige Rechnung ausgestellt wurde
+         und auch keine Rechnungsberichtigung durch nachträgliches Ausstellen einer
+         E-Rechnung erfolgt ist (vgl. Absatz 7). 13In solchen Fällen werden bei einer inhaltlich
+         richtigen und vollständigen sonstigen Rechnung die genannten Voraussetzungen
+         regelmäßig erfüllt sein. 14Zu Einzelheiten siehe BMF-Schreiben vom 15.10.2024, BStBl I
+         S. 1320.“
+
+    c)   Absatz 2 wird wie folgt geändert:
+
+         aa) In Satz 8 wird im Klammerzusatz das Wort „Abrechnungspapier“ durch das Wort
+             „Abrechnungsdokument“ ersetzt.
+
+         bb) In Satz 9 wird das Wort „Abrechnungspapier“ durch das Wort
+             „Abrechnungsdokument“ ersetzt.
+
+         cc) Satz 10 wird wie folgt geändert:
+
+             aaa) Nummer 1 Sätze 1 und 2 werden wie folgt gefasst:
+
+                  „1Bei Verwendung einer Scheinfirma oder eines Scheinnamens ergibt sich aus
+                  dem Abrechnungsdokument kein Hinweis auf den tatsächlich leistenden
+                  Unternehmer (vgl. BFH-Urteil vom 19.10.1978 – V R 39/75, BStBl II 1979 S. 345).
+                  2Hinweise auf den tatsächlich leistenden Unternehmer fehlen in der Regel in
+
+                  Rechnungen mit willkürlich ausgesuchten Firmenbezeichnungen und/oder
+                  unzutreffenden Anschriften sowie bei Rechnungen von zwar existierenden
+                  Firmen, die aber die Leistung nicht ausgeführt haben (z. B. bei Verwendung von
+                  Daten eines tatsächlich existierenden Unternehmers ohne dessen Wissen).“
+
+             bbb) In Nummer 2 Satz 1 wird das Wort „Abrechnungspapier“ durch das Wort
+                  „Abrechnungsdokument“ ersetzt.
+
+             ccc) In Nummer 3 wird das Wort „Abrechnungspapier“ durch das Wort
+                  „Abrechnungsdokument“ ersetzt.
+
+             ddd)In Nummer 4 wird jeweils das Wort „Abrechnungspapier“ durch das Wort
+                 „Abrechnungsdokument“ ersetzt.
+Seite 31 von 33
+
+    d)   Absatz 3 wird wie folgt geändert:
+
+         aa) Nach Satz 9 wird folgender Satz 10 eingefügt:
+
+             „10Eine Rechnung an eine solche Gemeinschaft, an der auch Unternehmer beteiligt
+             sind, muss als E-Rechnung ausgestellt werden, wenn keine Übergangsregelung
+             nach § 27 Abs. 38 UStG zur Anwendung kommt, da dann die Verpflichtung zur
+             Ausstellung einer E-Rechnung vorgeht.“
+
+         bb) Der bisherige Satz 10 wird neuer Satz 11.
+
+    e)   In Absatz 5 Satz 2 wird das Wort „Abrechnungspapier“ durch das Wort
+         „Abrechnungsdokument“ ersetzt.
+
+    f)   Absatz 6 wird wie folgt geändert:
+
+         aa) Nach Satz 2 wird folgender Satz 3 eingefügt:
+
+             „3Bei einer E-Rechnung bietet sich für die Überprüfung der Vollständigkeit der
+             Rechnungsangaben, aber auch der Zulässigkeit des Formats (siehe Abschnitt 14.1
+             Abs. 11 bis 15) die Nutzung einer geeigneten Validierungsanwendung an.“
+
+         bb) Die bisherigen Sätze 3 bis 13 werden die neuen Sätze 4 bis 14.
+
+    g)   Absatz 7 wird wie folgt geändert:
+
+         aa) Satz 1 wird wie folgt gefasst:
+
+             „1Ist eine Rechnung nicht ordnungsmäßig und kann auch kein Nachweis im Sinne
+             von Absatz 1a geführt werden, ist sie zu berichtigen, um das Recht auf einen
+             Vorsteuerabzug zu eröffnen (vgl. Abschnitt 14.11).“
+
+         bb) Nach Satz 1 werden die folgenden Sätze 2 und 3 eingefügt:
+
+             „2Das gilt auch dann, wenn für einen Umsatz nach § 14 Abs. 2 Satz 2 in Verbindung
+             mit § 27 Abs. 38 UStG eine Verpflichtung zur Ausstellung einer E-Rechnung
+             bestand, aber stattdessen eine sonstige Rechnung ausgestellt wurde (z. B. eine
+             durch ein Kassensystem oder ein Taxameter erzeugte Rechnung). 3Die
+             E-Rechnung muss dann durch eine spezifische und eindeutige Bezugnahme auf
+             die ursprüngliche Rechnung zum Ausdruck bringen, dass es sich um eine
+             berichtigte Rechnung handelt.“
+
+         cc) Die bisherigen Sätze 2 bis 15 werden die neuen Sätze 4 bis 17.
+Seite 32 von 33
+
+
+    h)   In Absatz 11 Satz 1 wird der Klammerzusatz wie folgt gefasst:
+
+         „(vgl. § 14 Abs. 2 Satz 6 UStG)“.
+
+
+    i)   In Absatz 12 Satz 1 wird der zweite Klammerzusatz wie folgt gefasst:
+
+         „(vgl. auch Abschnitt 14.1 Abs. 1)“.
+
+
+25. Abschnitt 15.5 wird wie folgt geändert:
+
+    a)   Absatz 1 wird wie folgt geändert:
+
+         aa) Nach Satz 1 wird folgender Satz 2 eingefügt:
+
+              „2Es wird nicht beanstandet, wenn der Fahrausweis im Online-Verfahren
+              abgerufen wird und durch das Verfahren sichergestellt ist, dass eine Belastung auf
+              einem Konto des Unternehmers erfolgt.“
+
+         bb) Die bisherigen Sätze 2 und 3 werden die neuen Sätze 3 und 4.
+
+    b)   In Absatz 2 Satz 4 wird die Angabe „§§ 2, 4, 5 und 7 UStDV“ durch die Angabe „§§ 2, 4
+         und 7 UStDV“ ersetzt.
+
+    c)   Absatz 9 wird gestrichen.
+
+26. Abschnitt 15.11 Abs. 1 Satz 3 wird wie folgt gefasst:
+
+    „3Geht die Originalrechnung verloren, kann der Unternehmer den Nachweis darüber, dass
+    ihm ein anderer Unternehmer Steuer für Lieferungen oder sonstige Leistungen gesondert in
+    Rechnung gestellt hat, mit allen verfahrensrechtlich zulässigen Mitteln führen (vgl. BFH-
+    Urteile vom 05.08.1988 – X R 55/81, BStBl II 1989 S. 120, vom 16.04.1997 – XI R 63/93, BStBl II
+    S. 582, und vom 23.10.2014 – V R 23/13, BStBl II 2015 S. 313).“
+
+27. Abschnitt 17.1 wird wie folgt geändert:
+
+    a)   Absatz 3 wird wie folgt geändert:
+
+         aa) Sätze 3 und 4 werden gestrichen.
+
+         bb) Der bisherige Satz 5 wird neuer Satz 3.
+Seite 33 von 33
+
+
+     b)   Nach Absatz 3 wird folgender Absatz 3a eingefügt:
+
+            „(3a) 1Die Berichtigungspflicht ist bei einer Änderung der Bemessungsgrundlage –
+          auch bei einer E-Rechnung (vgl. Abschnitt 14.1 Abs. 2) – nicht von einer Änderung des
+          Steuerbetrags in der ursprünglichen Rechnung abhängig. 2Die ursprüngliche
+          Rechnung muss in derartigen Fällen daher nicht berichtigt werden, z. B. bei einer
+          nachträglichen Zahlung wegen Rabatt- oder Bonusvereinbarungen auf Grundlage der
+          Jahresabnahmemengen. 3Zu den Rechnungsangaben in der ursprünglichen Rechnung
+          in derartigen Fällen vgl. Abschnitt 14.5 Abs. 19. 4Ein Belegaustausch ist nur für die in
+          § 17 Abs. 4 UStG bezeichneten Fälle vorgeschrieben. 5Ein Beleg im Sinne von § 17 Abs. 4
+          UStG kann, muss aber nicht als umsatzsteuerliche Rechnung ausgestellt werden.“
+
+28. In Abschnitt 24.9 Satz 4 wird die Angabe „§ 14 Abs. 2 Sätze 2 und 3 UStG“ durch die Angabe
+    „§ 14 Abs. 2 Satz 5 UStG“ ersetzt.
+
+
+
+Anwendungsregelung
+
+Die Grundsätze dieses Schreibens sind auf alle Umsätze anzuwenden, die nach dem 31. Dezember
+2024 ausgeführt werden, wobei die Übergangsregelungen bis zum 31. Dezember 2027 zu beach-
+ten sind (vgl. BMF-Schreiben vom 15. Oktober 2024, BStBl I S. 1320, Rn. 62 bis 65). Für zuvor aus-
+geführte Umsätze ist der Umsatzsteuer-Anwendungserlass in seiner am 31. Dezember 2024 gülti-
+gen Fassung anzuwenden.
+
+Schlussbestimmungen
+
+Dieses Schreiben wird im Bundessteuerblatt Teil I veröffentlicht.
+
+
+Im Auftrag
+
+
+
+Dieses Dokument wurde elektronisch erstellt und ist ohne Unterschrift gültig.
+

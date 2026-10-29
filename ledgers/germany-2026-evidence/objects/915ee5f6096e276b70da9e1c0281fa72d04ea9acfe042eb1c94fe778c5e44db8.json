@@ -1,0 +1,74 @@
+[
+  {
+    "row": 34,
+    "record": {
+      "comparator": "aec314e7^ before PR873",
+      "file": "pre-refresh-original.md",
+      "old_LF": 61,
+      "old_section": "Section 1: Quick reference",
+      "exact_old_topic": "| New freelancer, no prior assessment | Do not assume there are no prepayments. The tax office sets them from the expected profit stated in the registration questionnaire (Section 8), but only if they reach the two minimums in the Section 5.2 table. If no notice comes, nothing is payable in advance: set money aside |",
+      "destination": "Scope and notice authority; current LF21",
+      "status": "carried / regrouped"
+    }
+  },
+  {
+    "row": 112,
+    "record": {
+      "comparator": "aec314e7^ before PR873",
+      "file": "pre-refresh-original.md",
+      "old_LF": 182,
+      "old_section": "Example 4: Solidarity surcharge check",
+      "exact_old_topic": "**Computation:** no solidarity surcharge prepayment is due, because the surcharge is charged only if the base exceeds the limit (§ 3(3) SolzG). If the prepayments exceed the limit, the surcharge rate in Section 5.6 applies to the whole base, capped by the mitigation rule in the same section.",
+      "destination": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "status": "carried / regrouped"
+    }
+  },
+  {
+    "row": 132,
+    "record": {
+      "comparator": "aec314e7^ before PR873",
+      "file": "pre-refresh-original.md",
+      "old_LF": 211,
+      "old_section": "5.2 Minimum thresholds",
+      "exact_old_topic": "| Minimum increase in the case of § 37(4): a later increase (nachträgliche Erhöhung), where the last prepayment for the year is adjusted | EUR 5,000 | § 37(5) sentence 2 EStG: \"im Fall des Absatzes 4 auf mindestens 5 000 Euro beläuft\" |",
+      "destination": "Minimums and below-threshold case; current LF35",
+      "status": "carried / regrouped"
+    }
+  },
+  {
+    "row": 133,
+    "record": {
+      "comparator": "aec314e7^ before PR873",
+      "file": "pre-refresh-original.md",
+      "old_LF": 212,
+      "old_section": "5.2 Minimum thresholds",
+      "exact_old_topic": "| Small-deductions limit: the deductions listed in Section 5.1 are left out if together they do not exceed this | EUR 600 | § 37(3) sentence 4 EStG: \"insgesamt 600 Euro nicht übersteigen\" |",
+      "destination": "Minimums and below-threshold case; current LF35",
+      "status": "carried / regrouped"
+    }
+  },
+  {
+    "row": 253,
+    "record": {
+      "comparator": "aec314e7^ before PR873",
+      "file": "pre-refresh-original.md",
+      "old_LF": 399,
+      "old_section": "Test 8: US-style question",
+      "exact_old_topic": "**Input:** \"What is the safe harbour to avoid the underpayment penalty in Germany?\"",
+      "destination": "Five earlier qualitative scenarios restored, plus two existing executable cases; current LF147",
+      "status": "carried / regrouped"
+    }
+  },
+  {
+    "row": 289,
+    "record": {
+      "comparator": "aec314e7^ before PR873",
+      "file": "pre-refresh-original.md",
+      "old_LF": 443,
+      "old_section": "When to refuse or refer",
+      "exact_old_topic": "- A client who cannot pay a prepayment. Deferral (Stundung, § 222 AO, https://www.gesetze-im-internet.de/ao_1977/__222.html) is at the tax office's discretion, is as a rule granted only on application and against security, and carries its own interest. Refer to a Steuerberater.",
+      "destination": "Cross-border/referral scope; current LF92",
+      "status": "carried / regrouped"
+    }
+  }
+]

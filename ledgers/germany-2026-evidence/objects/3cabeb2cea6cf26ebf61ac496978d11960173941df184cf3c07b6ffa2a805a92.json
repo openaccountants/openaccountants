@@ -1,0 +1,1369 @@
+{
+  "current_Guide_sha256": "b219cbd217a510b7f605539e4a101ddf1ad75e6141a760b47c77876d5f54c769",
+  "pre_refresh_sha256": "2ab1ad16a97480b7e6126f4f01da01b401f327141d66667291f7e8aae36e2a3d",
+  "original_body_reference": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/current-and-pre-refresh-identities.json",
+  "current_main_rows": [
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        1,
+        16
+      ],
+      "old_unit_sha256": "7b5969bc6a3a4f1f19fa1a76ddde1d0663c09a091f60adb30f4124ae33392f7a",
+      "current_destination": "1–16",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        18,
+        18
+      ],
+      "old_unit_sha256": "a361d75f791dac0fcaa105d14f39491bb169ebf7dbfc8912f08c8c0519ccb8dc",
+      "current_destination": "18–18",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        20,
+        20
+      ],
+      "old_unit_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "current_destination": "20–20",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        22,
+        22
+      ],
+      "old_unit_sha256": "173661d5e7a5cf8297c6a9ffe886c78455a4e4950407f74bdfa69d2599fa8732",
+      "current_destination": "22–22",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        24,
+        24
+      ],
+      "old_unit_sha256": "8ee550e59066a4baaefd7e3176a9e932cda29e51b4c65dc1b9941e5ff33d905f",
+      "current_destination": "24–24",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        26,
+        30
+      ],
+      "old_unit_sha256": "0c24b78ce93e808847f2ba2b09558ffeb581b8ffeb7d169663bee8547fac1a65",
+      "current_destination": "26–30",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        32,
+        32
+      ],
+      "old_unit_sha256": "b484958fdec37eaea462e5ed311be4d111c285f85cbdb72e83051567f9d4b491",
+      "current_destination": "32–32",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        34,
+        34
+      ],
+      "old_unit_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "current_destination": "34–34",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        36,
+        56
+      ],
+      "old_unit_sha256": "d92f4ae4cd601ada9a0e4328eaed5e3137ef3168112e8c2714e730031c2b487a",
+      "current_destination": "36–56",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        58,
+        58
+      ],
+      "old_unit_sha256": "1922c5897a17fa48bb320a158b52f374f76325b7c4d357ef1fa639f050317119",
+      "current_destination": "58–58",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        60,
+        60
+      ],
+      "old_unit_sha256": "0a60bbebdcba30790eea325f773e330a1533cde9cf16d62d17ed8024275d5966",
+      "current_destination": "60–60",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        62,
+        67
+      ],
+      "old_unit_sha256": "8bf2a2f01dd27f20911b03d45af1104c0c2d05c3149e2dcb25f8f752cd21a6f8",
+      "current_destination": "62–67",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        69,
+        69
+      ],
+      "old_unit_sha256": "b4a93b5e9cd8a837fb6c59a8a7d5e4e41c81d0a802c38bcb22c620697254a451",
+      "current_destination": "69–69",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        71,
+        75
+      ],
+      "old_unit_sha256": "a27493ca0e35cdbfc466bc9d2024ef54d8c5fa27870af5ebde9676934f02ac96",
+      "current_destination": "71–75",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        77,
+        77
+      ],
+      "old_unit_sha256": "076e9af2dd03c242bb16822a62d7cb1a59530cb12fe23929588e5a4aab388573",
+      "current_destination": "77–77",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        79,
+        79
+      ],
+      "old_unit_sha256": "9501661c5b220541666755f98c0c256d4c8990a61e5f1fa5f6a27caa73063105",
+      "current_destination": "79–79",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        81,
+        87
+      ],
+      "old_unit_sha256": "ccb87dec28cd9ea3fe11560dfb208e6a9569158edacd4a044212657aa709ecc3",
+      "current_destination": "81–87",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        89,
+        89
+      ],
+      "old_unit_sha256": "6981dec236a4ce24f04d26c05bd15e8d15c9459e518a9fa263f88a95c0d55084",
+      "current_destination": "89–89",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        91,
+        91
+      ],
+      "old_unit_sha256": "395692de86bc02f3eda3ec4ade3b2a4959ce7b63c23bbe34003a25211deca9e1",
+      "current_destination": "91–91",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        93,
+        93
+      ],
+      "old_unit_sha256": "d1fd1a125e8a5c74230a9928c7713c69e0126b8e955219dca637fd062b805222",
+      "current_destination": "93–93",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        95,
+        100
+      ],
+      "old_unit_sha256": "698ac509ed7494e4a201d74a35eb3eb94fd840eee4052dc0bcf41366e2f10cd2",
+      "current_destination": "95–100",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        102,
+        102
+      ],
+      "old_unit_sha256": "997fbb377ef5c389bcb3cb44ef896da155feddfaf11e627ca9dc4e677266646b",
+      "current_destination": "102–102",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        104,
+        104
+      ],
+      "old_unit_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "current_destination": "104–104",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        106,
+        110
+      ],
+      "old_unit_sha256": "fe272275c3a345c33e1014ca361cb54e717e23fbb4a7d4e17143b2a11a5920ac",
+      "current_destination": "106–110",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        112,
+        117
+      ],
+      "old_unit_sha256": "a2ed3a1c10482c16a5e57bce69cea3bb71292bb91cf6e9e40acd4bb6c1ad2520",
+      "current_destination": "112–117",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        119,
+        119
+      ],
+      "old_unit_sha256": "c599394bb4d4c940e294317ba3a4efdedbf54d9b4dae97b82a2388014e30ac30",
+      "current_destination": "119–119",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        121,
+        121
+      ],
+      "old_unit_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "current_destination": "121–121",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        123,
+        127
+      ],
+      "old_unit_sha256": "8acec6b180ab5c84e18c5c6f1af6052a41ced303a1ef68c02661e9a2f73a5008",
+      "current_destination": "123–127",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        129,
+        129
+      ],
+      "old_unit_sha256": "00542c40bf2e41b1c3e49a6c5d1ee5743555cd5a1076a55218fa4e2a83b68776",
+      "current_destination": "129–129",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        131,
+        131
+      ],
+      "old_unit_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "current_destination": "131–131",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        133,
+        136
+      ],
+      "old_unit_sha256": "5a5bf972aa882f562433cf7912746377463aaf182b65f1896c88a4c78c0b7fe0",
+      "current_destination": "133–136",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        138,
+        138
+      ],
+      "old_unit_sha256": "24306288984cfa636de0ac24a9833561c7e6c3cb47df7023c1903f57c3720a9b",
+      "current_destination": "138–138",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        140,
+        140
+      ],
+      "old_unit_sha256": "f422b159a274c150a378a38dd87708ed8fe9cbd26c5cb55e9e312fc3ac169693",
+      "current_destination": "140–140",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        142,
+        142
+      ],
+      "old_unit_sha256": "6764bc060779038d1feb488b65d58a23f9611c1ddcd5275b5938e58ad1249bac",
+      "current_destination": "142–142",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        144,
+        160
+      ],
+      "old_unit_sha256": "34d3e66d54c96023ff6fce4b625a0e548e5e73f4360c2c4308bfe5a38d9442a3",
+      "current_destination": "144–160",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        162,
+        162
+      ],
+      "old_unit_sha256": "919eaa5ef8a4e2898028268d6c029a607289fe0e57e3a9d0ff592561f1994e90",
+      "current_destination": "162–162",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        164,
+        189
+      ],
+      "old_unit_sha256": "b5642f596e9aaa5c21c89e66d5866350f3bef6c4d66f21a9b7003c8487c504a6",
+      "current_destination": "164–189",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        191,
+        191
+      ],
+      "old_unit_sha256": "b833e1e762fb14b95132216378bf98d41476bd7fa4c056bfc19fb2142c6cbe92",
+      "current_destination": "191–191",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        193,
+        193
+      ],
+      "old_unit_sha256": "e2b5f919380d0cd243decefb7a879fc4c2822f355768a23f418d220b7261d0d5",
+      "current_destination": "193–193",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        195,
+        210
+      ],
+      "old_unit_sha256": "4788767d611f70f208314ba121577d502eeaed9cffe24fe30c4f87d5b9f4a344",
+      "current_destination": "195–210",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        212,
+        212
+      ],
+      "old_unit_sha256": "3f4ec775b24325861391f2b2026f19954e92467282edf8a7ea8f648d09347753",
+      "current_destination": "212–212",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        214,
+        214
+      ],
+      "old_unit_sha256": "32dd95786998fadb7b09333da1727ccad0a722ccf046447c05005f9f61d255ec",
+      "current_destination": "214–214",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        216,
+        234
+      ],
+      "old_unit_sha256": "c257424c5d899ddeba8d9fe62375c02a3afd3213ffd46d988d19a66a2568fe7f",
+      "current_destination": "216–234",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        236,
+        236
+      ],
+      "old_unit_sha256": "82aa68e23388fc5a8cb947a36f59a956ad0372cd069c88b28771031d13d6d34e",
+      "current_destination": "236–236",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        238,
+        238
+      ],
+      "old_unit_sha256": "12b3231e3520e1aabdb153baed0eb932f88f9d7f68747eba3eaa637514dab6ce",
+      "current_destination": "238–238",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        240,
+        240
+      ],
+      "old_unit_sha256": "d084e34f704f655482118c684fb2f2f9fc1ca42e2b36d5b4c53f9d2a078b2a39",
+      "current_destination": "240–240",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        242,
+        247
+      ],
+      "old_unit_sha256": "3f54beb4d63581fdc310322a1d3b846a29f553e9e777af1b4a9946ade420f2d1",
+      "current_destination": "242–247",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        249,
+        249
+      ],
+      "old_unit_sha256": "3cf8fc966f7a676f825fd6082c6badfa780a36d61cf50fc61b9c75806e0cd521",
+      "current_destination": "249–249",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        251,
+        251
+      ],
+      "old_unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "current_destination": "251–251",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        253,
+        258
+      ],
+      "old_unit_sha256": "bfa91584ab78d88b0ff2f90f87cbb2a80370372a80b1ad9bde0282577572088d",
+      "current_destination": "253–258",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        260,
+        260
+      ],
+      "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "current_destination": "260–260",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        262,
+        282
+      ],
+      "old_unit_sha256": "534c2b43abcf68bb4f3cf8e1c9671fc44e5a1194e230ba06efe07e83ad0ae748",
+      "current_destination": "262–282",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        284,
+        284
+      ],
+      "old_unit_sha256": "e012d4081bcff818705b7f4ec9d5a307b5aba942fb3a6b0ea24b00d8a6fbac9d",
+      "current_destination": "284–284",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        286,
+        286
+      ],
+      "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "current_destination": "286–286",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        288,
+        288
+      ],
+      "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "current_destination": "288–288",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        290,
+        290
+      ],
+      "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "current_destination": "290–290",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        292,
+        295
+      ],
+      "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "current_destination": "292–295",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        297,
+        298
+      ],
+      "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "current_destination": "297–298",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    },
+    {
+      "comparator": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+      "old_native_LF": [
+        300,
+        302
+      ],
+      "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+      "current_destination": "300–302",
+      "disposition": "Exact current-main unit, including all embedded subtopics, preserved byte-exact at baseline."
+    }
+  ],
+  "pre_refresh_rows": [
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        1,
+        16
+      ],
+      "old_unit_sha256": "b0b2b8863c2414b0b7386db91f345a231c5bf9cd95a305264078b3f7dd45dc9b",
+      "old_exact_opening": "--- name: de-capital-gains description: \"Use this skill for any German capital gains tax question. Trigger on: \\\"Abgeltungsteuer\\\", \\\"capital gains Germany\\\", \\\"CGT Germany\\\", \\\"Kapitalertragsteuer\\\", \\\"Sparer-Pauschbetr",
+      "current_destination": "1–19",
+      "disposition": "Metadata/description expanded; slug/trust/author retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        18,
+        18
+      ],
+      "old_unit_sha256": "3ca70b599fece34b52137fddbe0560533be80f7613e022623b395688e8f5fd45",
+      "old_exact_opening": "# Capital gains tax in Germany (Abgeltungsteuer and private sales)",
+      "current_destination": "19",
+      "disposition": "Title retained as Guide."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        20,
+        20
+      ],
+      "old_unit_sha256": "06f13eceae24bd0eb87002e30400999346da1ac5f0f9e44ba02101ab01d1f6a3",
+      "old_exact_opening": "## Scope",
+      "current_destination": "20",
+      "disposition": "Scope heading."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        22,
+        22
+      ],
+      "old_unit_sha256": "6e1fff87f5776fd59b44f20edc29243839cb813a58818c658d747fa800214940",
+      "old_exact_opening": "How Germany taxes an individual who is fully liable to German tax on gains from assets held privately, not in a business. It covers shares, bonds, funds and ETFs, derivatives, large shareholdings, crypto, property sold w",
+      "current_destination": "22",
+      "disposition": "Same private resident population/calendar regime."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        24,
+        24
+      ],
+      "old_unit_sha256": "db76ea098e61d01d19f7d943ef620bc4e2bcaf14649b4f4df2946086774d8593",
+      "old_exact_opening": "Not covered: assets held in a business or by a company, non-residents, treaty relief and foreign tax credits in detail, and crypto staking, lending or mining.",
+      "current_destination": "22/135/242–247",
+      "disposition": "Same business/nonresident/treaty/complexcrypto exclusions and named routes."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        26,
+        26
+      ],
+      "old_unit_sha256": "84da85ff4930db76f9a687a4c056d64ef230f3136000098c9d535b4e29b8c974",
+      "old_exact_opening": "There are three regimes. Sort every asset into one of them before doing anything else:",
+      "current_destination": "24",
+      "disposition": "Separate regimes remain separate."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        28,
+        32
+      ],
+      "old_unit_sha256": "422b7d3a0f51284c0eb2a88263f438c0b61d016a6548ac2d9c65a4b2238afcde",
+      "old_exact_opening": "| Regime | What falls in it | How it is taxed | Law | | --- | --- | --- | --- | | Flat tax (Abgeltungsteuer) | Interest, dividends, sale gains on shares, bonds, funds and ETFs, derivatives | 25% plus solidarity surcharge",
+      "current_destination": "28–30",
+      "disposition": "All three regime rows retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        34,
+        34
+      ],
+      "old_unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "old_exact_opening": "## Ask the client first",
+      "current_destination": "256",
+      "disposition": "Intake heading."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        36,
+        47
+      ],
+      "old_unit_sha256": "bd0c3346fc0cbccaecc61b840921ce2adf533169ba9a95e867e4a5dbe40c12d3",
+      "old_exact_opening": "- Are the assets held privately or in a business? - Which banks and brokers hold them? Is any account outside Germany, so that no German tax was withheld? - Is there a Freistellungsauftrag (allowance order) at each Germa",
+      "current_destination": "253–258",
+      "disposition": "All twelve original intake bullets: status/brokers/allowance/church/loss/stake/fund/prices/dates/home/exit/history, retained semantically."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        49,
+        49
+      ],
+      "old_unit_sha256": "e6898fcf2842cd2ef41957dac3ba9d4c6e9e4c64f7b58641d5a57190035c1291",
+      "old_exact_opening": "## The method, step by step",
+      "current_destination": "58",
+      "disposition": "Method heading."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        51,
+        60
+      ],
+      "old_unit_sha256": "484d1a6fb37f1b0dbf8c959f83098464cf44d035a631a54f93eb8bb4d86f7dda",
+      "old_exact_opening": "1. **Sort each asset into its regime** using the table above. The regimes do not mix: flat-tax losses cannot offset private-sales gains, and the other way round. 2. **Collect the bank tax certificates.** Each German bank",
+      "current_destination": "60–102/106–119",
+      "disposition": "All ten originalmethod steps distributed to regime/gain/allowance/bankloss/funds/private/17/favourable/church/filing."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        62,
+        62
+      ],
+      "old_unit_sha256": "50d5e31e58d4f841ad2fb81399bf8286cac32bb1c46dde5dcd52ba73289e5ff1",
+      "old_exact_opening": "## Figures and rules, 2026 (unchanged from 2025 unless stated)",
+      "current_destination": "34",
+      "disposition": "Figures heading."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        64,
+        64
+      ],
+      "old_unit_sha256": "44d04fe01d29cae4ddba9e43be750399fc2234377bf2bb54147aaac7741cbd6d",
+      "old_exact_opening": "### Flat tax: rate and surcharges",
+      "current_destination": "38–41",
+      "disposition": "Flat-tax subheading moved to table."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        66,
+        69
+      ],
+      "old_unit_sha256": "5182da6964ea81cf3e1e3a9357aed6cdb46cd408b0ee64a9c8a52368c43334fb",
+      "old_exact_opening": "| What | Value | Source and wording | | --- | --- | --- | | Income tax on private investment income | 25% | [§ 32d(1) EStG](https://www.gesetze-im-internet.de/estg/__32d.html): \"beträgt 25 Prozent\" | | Solidarity surchar",
+      "current_destination": "38–41",
+      "disposition": "Rate25/Soli5.5/churchformula all retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        71,
+        73
+      ],
+      "old_unit_sha256": "392a286fcce694344bf483c1c40ff9199677426a04fc083164917824ccda76c8",
+      "old_exact_opening": "- **The surcharge always applies to flat-tax income.** The exemption threshold that frees most salary earners from the surcharge does not help here: on tax withheld by a bank the surcharge is charged on the withholding t",
+      "current_destination": "64–65",
+      "disposition": "Both surcharge and churchcalculation qualifications retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        75,
+        75
+      ],
+      "old_unit_sha256": "e49e3e4e50214c5636df42e579058f0ff93356fc4ef5fa7af842b1caaa82f295",
+      "old_exact_opening": "### Allowance (Sparer-Pauschbetrag)",
+      "current_destination": "42–43/62",
+      "disposition": "Allowance heading/method."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        77,
+        80
+      ],
+      "old_unit_sha256": "7041394b76f06beb5869bd0aac3ab6df63f3fa5bf9c9310130ec1abc01156c08",
+      "old_exact_opening": "| Status | Allowance | Source and wording | | --- | --- | --- | | Single person | EUR 1,000 | [§ 20(9) EStG](https://www.gesetze-im-internet.de/estg/__20.html): \"ein Betrag von 1 000 Euro abzuziehen (Sparer-Pauschbetrag)",
+      "current_destination": "42–43",
+      "disposition": "1000/2000both retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        82,
+        85
+      ],
+      "old_unit_sha256": "8c5a6dae7b04684ff5e0bb8ca8855020a9d1e4a60637e005992e3acb3e0b7082",
+      "old_exact_opening": "- The allowance covers all investment income together (interest, dividends, gains). It replaces actual costs: custody fees, advice fees and interest on loans to buy investments cannot be deducted. Purchase costs and the ",
+      "current_destination": "62–63/91",
+      "disposition": "All four allowance/cost/order/noordinarycost/optiontopics retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        87,
+        87
+      ],
+      "old_unit_sha256": "9701cc13cfd0579ce34642ea05f6231694e747fd1cb6a035e3d61a18c58b7699",
+      "old_exact_opening": "### Working out a gain",
+      "current_destination": "60",
+      "disposition": "Gainheading foldedmethod."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        89,
+        91
+      ],
+      "old_unit_sha256": "baa10cb20426805570609b229b017734073a182fddfe0c22439c45e1f59e833a",
+      "old_exact_opening": "- Gain = sale proceeds, less costs directly tied to the sale, less the purchase cost. Foreign-currency amounts are converted into euro at the date of each transaction. For securities of the same kind in one custody accou",
+      "current_destination": "60/67",
+      "disposition": "SaleandFX/FIFO/giftscost/pre2009all retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        93,
+        93
+      ],
+      "old_unit_sha256": "0ad2c6c87aac56902c1a5e91dfd8a00bafac12e5380f5d82490525456169b8c8",
+      "old_exact_opening": "### Losses: the offset pots",
+      "current_destination": "71–75",
+      "disposition": "Losspotheading."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        95,
+        99
+      ],
+      "old_unit_sha256": "5502bb31843e347b88cdcf76201098f2271a2f11411344feaf95942a66f0ba12",
+      "old_exact_opening": "- Investment losses can only be set against investment income, never against salary, business or rental income. They cannot be carried back. Unused losses carry forward without time limit ([§ 20(6) EStG](https://www.gese",
+      "current_destination": "71–75",
+      "disposition": "All five lossbranches retained including2024repeal and15December."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        101,
+        101
+      ],
+      "old_unit_sha256": "1f8a401a2c8c158a214fa552fe2af903c51012b59fab13a7f38bfd7f8a02db00",
+      "old_exact_opening": "### Funds and ETFs (InvStG)",
+      "current_destination": "77",
+      "disposition": "Fundheading."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        103,
+        103
+      ],
+      "old_unit_sha256": "90b2eda1dfd019f2b160b3ebc820ef05a2f93336e44a23c26ab05b97f2e88b4c",
+      "old_exact_opening": "Fund income has three parts: distributions, the advance lump sum (Vorabpauschale) and the gain on sale ([§ 16 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__16.html)). The partial-income method never applies to",
+      "current_destination": "77",
+      "disposition": "Three fund-income types and no partialincome method."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        105,
+        111
+      ],
+      "old_unit_sha256": "0282a8027a5bd4c4abfa9eed4bc446994b7dba8048d84c9dced5be0bb3bd6a63",
+      "old_exact_opening": "| Fund type | Test in the fund's terms | Tax-free share for a private investor | Source | | --- | --- | --- | --- | | Equity fund (Aktienfonds) | More than 50% of its assets continuously in equities | 30% | [§ 2(6) InvSt",
+      "current_destination": "52–53/77",
+      "disposition": "Allrates and equity/mixedquotas retained. Originalproperty/foreignpropertyquota omitted: DE-B01 pending root fix; own2(9)quotation available, no false destination."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        113,
+        114
+      ],
+      "old_unit_sha256": "85a66e93d2298e48d9923479d3dd955af6da0d00033b3d816768a7c6dc338d47",
+      "old_exact_opening": "- The same share of related costs and of a loss is not deductible ([§ 21 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__21.html)). - If a fund in fact stayed above the equity quota all year without its terms sa",
+      "current_destination": "77",
+      "disposition": "Both costs/losses and actualequityquotaproofexception retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        116,
+        116
+      ],
+      "old_unit_sha256": "bd70ba346e781ab3bdc598bf6200a90217a41748dcceafc0b78ac1ae8386d7ac",
+      "old_exact_opening": "**Advance lump sum (Vorabpauschale).** Accumulating funds, and funds that distribute little, are taxed each year on a minimum return ([§ 18 InvStG](https://www.gesetze-im-internet.de/invstg_2018/__18.html)):",
+      "current_destination": "79–87",
+      "disposition": "Vorab heading/method."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        118,
+        123
+      ],
+      "old_unit_sha256": "aced28962cd116ba8716d718f03006613aea4b4a8c19c449db0fad1e4b9167fe",
+      "old_exact_opening": "1. Base return = the redemption price at the start of the year × 70% of the Basiszins. ([source](https://www.gesetze-im-internet.de/invstg_2018/__18.html)) 2. The base return is capped at the actual rise in price over th",
+      "current_destination": "81–87",
+      "disposition": "All six original steps retained including acquisitions/receipt/partialexemption."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        125,
+        128
+      ],
+      "old_unit_sha256": "30b15afdb6a1db8e04d960c4318faeb4f7962fa94de9bf04067520e2d3ed2dc9",
+      "old_exact_opening": "| Year | Basiszins | Source and wording | | --- | --- | --- | | 2026 | 3.20% | [BMF letter of 13 January 2026](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Investmentsteuer/2026-0",
+      "current_destination": "55/119",
+      "disposition": "Both2025/2026Basiszins and received-year distinction retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        130,
+        130
+      ],
+      "old_unit_sha256": "1d040de3e04d21519d3db884d16aec35957686df0617ae926023cc4bdc8c885d",
+      "old_exact_opening": "### Large shareholdings (§ 17 EStG)",
+      "current_destination": "89",
+      "disposition": "Largeholdingheading."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        132,
+        132
+      ],
+      "old_unit_sha256": "440f3f7148932b3f0e31eba953a24e532cd89f0f0c5aa99ed78a0ee14149aa90",
+      "old_exact_opening": "A sale of shares in a company, German or foreign, is taxed as business income, not under the flat tax, if the seller held at least 1% of its capital, directly or indirectly, at any time in the five years before the sale ",
+      "current_destination": "44/89",
+      "disposition": "1%lookback5years/directindirect/foreign retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        134,
+        139
+      ],
+      "old_unit_sha256": "8a7c257b6a65cc434c04a8b4cc06a63f5e63468a6c0c038b3d1887ba8a7ec610",
+      "old_exact_opening": "| What | Value | Source and wording | | --- | --- | --- | | Share of the sale price that is tax-free (partial-income method) | 40% | [§ 3 no. 40 letter c EStG](https://www.gesetze-im-internet.de/estg/__3.html): \"40 Proze",
+      "current_destination": "45–48/89",
+      "disposition": "40/60/9060/36100/fullstakefraction table allretained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        141,
+        143
+      ],
+      "old_unit_sha256": "20a067a474f7600ed72acd855a6110100aa04090c49761856f48fd2350861d1c",
+      "old_exact_opening": "- The taxable result is added to the client's other income and taxed at the normal progressive rate. A loss is 60% deductible and can offset other income, but is barred in part where the shares were received free within ",
+      "current_destination": "89/91",
+      "disposition": "Progressive/limitedloss/liquidation/income-election25or1influence/4years/revocation allretained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        145,
+        145
+      ],
+      "old_unit_sha256": "ad9684d955b7c107371a3d584d784568519d944a61af9f64f38aa80a806e2b7e",
+      "old_exact_opening": "### Private sales (§ 23 EStG): crypto, other assets and property",
+      "current_destination": "95–100",
+      "disposition": "Privateheading."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        147,
+        150
+      ],
+      "old_unit_sha256": "859b4cab0914c2b8d76bd57eb1336890d1067e124ee734e6109263b12ac3c249",
+      "old_exact_opening": "| Asset | Taxable if sold within | Source and wording | | --- | --- | --- | | Land and buildings, including flats | Ten years of purchase | [§ 23(1) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__23.html): \"nicht ",
+      "current_destination": "49–51/95",
+      "disposition": "Bothone/tenyearwindows retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        152,
+        158
+      ],
+      "old_unit_sha256": "d762fe9958169c146c327c23ae7476a5dde22189c2b097e7f75e58fbb00f0f3a",
+      "old_exact_opening": "- **Owner-occupation exception.** A property is outside § 23 if the owner lived in it exclusively between purchase and sale, or in the year of sale and the two years before. Renting it out in the period breaks the first ",
+      "current_destination": "96–100/212; de-crypto-tax87–88/180",
+      "disposition": "All owneruse/dailyitems/1000cliff/old600/AfA/private-loss/cryptoswap/nonextension/lotmethodretention topics retained. Methodpersistence actual de-crypto-tax87–88 and180 explicitly inspected."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        160,
+        160
+      ],
+      "old_unit_sha256": "01b166e9aff826e2e5d4af013f130b36cdcf4740c8347b2618a1bfa0abafa7b6",
+      "old_exact_opening": "### Exit tax (§ 6 AStG)",
+      "current_destination": "136; leaving-germany-exit-tax",
+      "disposition": "Exitheading remains summary+namedfullcompanion."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        162,
+        168
+      ],
+      "old_unit_sha256": "7a713062bf1f7c29a2402d856e84b3c981c3ae676986294a73bc33b247ec7cdf",
+      "old_exact_opening": "- **Who.** An individual who was fully liable to German tax for at least seven of the last twelve years and holds shares within § 17 (at least 1%), German or foreign ([§ 6 AStG](https://www.gesetze-im-internet.de/astg/__",
+      "current_destination": "136; leaving-germany-exit-tax26–28/79–109/178",
+      "disposition": "Own6 scope/triggers/value/instalments/security/Julyreports/acceleration/return7+5/deferredinterest retained in actual companion. Pre2022 old-law branch at companion178 is expressly referral-only; this Guide no longer supplies its detailed oldquarter-distribution limitation. Fundpositivegain/lookback/triggerdate missing expressly: DE-B02."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        170,
+        170
+      ],
+      "old_unit_sha256": "763dd92c54b7ff1d3e0e663d6efad4c642c7c9ba4f168156dc0ed294ce3398f6",
+      "old_exact_opening": "## Boundaries and exceptions",
+      "current_destination": "24/95–102/242–247",
+      "disposition": "Boundary heading distributed to actualmethods/referrals."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        172,
+        183
+      ],
+      "old_unit_sha256": "8bcaf1ddda4d05f7f324abba733bf2d0c35ac86c7189c3a626ad3071f55be3b1",
+      "old_exact_opening": "| Situation | Treatment | Source | | --- | --- | --- | | Held 0.9% of a company throughout the five years | Flat tax on the sale gain (below 1%) | [§ 17(1) EStG](https://www.gesetze-im-internet.de/estg/__17.html) | | Hel",
+      "current_destination": "24/44/62/65/71–75/77/89/95–102/136",
+      "disposition": "All10boundarytable cases retained in governingmethods or explicitcomplex-case route; numericalboundaryexamples recomputed separately."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        185,
+        185
+      ],
+      "old_unit_sha256": "13553a4d81793d4eb28bdef6a259906163c7624435353bd8bdf2bfbde894bef5",
+      "old_exact_opening": "## Worked cases",
+      "current_destination": "138",
+      "disposition": "Examplesheading."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        187,
+        187
+      ],
+      "old_unit_sha256": "4cfa5689fe8dc27ab7675a732c57197ca3b5cdc29cefec38a944eda38f497795",
+      "old_exact_opening": "Examples use round numbers chosen for illustration. They are not official examples.",
+      "current_destination": "140",
+      "disposition": "Stipulatedfacts statement."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        189,
+        189
+      ],
+      "old_unit_sha256": "5bf24364317db0ae4e32f4c8f6a7cc6c9bfa7f3770cc839e501001518f66d270",
+      "old_exact_opening": "**Case 1: single investor, German bank, 2026.** Dividends EUR 1,500 and a share gain of EUR 2,500 bought after 2008; no church tax; Freistellungsauftrag for the full EUR 1,000. Taxable: EUR 4,000 less EUR 1,000 = EUR 3,0",
+      "current_destination": "142–160",
+      "disposition": "Originalsingleinvestorcase preserved with executablecase."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        191,
+        191
+      ],
+      "old_unit_sha256": "dac91ed31cca4e775029cce4589a7e418750046f6c0bf1e3c7519d6670630273",
+      "old_exact_opening": "**Case 2: losses at two banks.** In 2026 the client lost EUR 3,000 selling shares at bank A and gained EUR 5,000 selling shares at bank B. Bank B withholds on EUR 5,000 (less any allowance). The client asks bank A for a ",
+      "current_destination": "191",
+      "disposition": "Two-bankoriginalcase restored."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        193,
+        193
+      ],
+      "old_unit_sha256": "4c69ae7196dc7617f39eda4dd56d0823a406bdb08d8a85b0ff7dd199ad6eacba",
+      "old_exact_opening": "**Case 3: advance lump sum on an equity ETF.** An accumulating equity ETF was worth EUR 50,000 on 1 January 2026 and rose by more than EUR 1,120 over 2026, with no distributions. Base return: EUR 50,000 × 70% × 3.20% = E",
+      "current_destination": "193–210",
+      "disposition": "Originalfundcase restored."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        195,
+        195
+      ],
+      "old_unit_sha256": "20859a39bc6d752c221f03e9938d9ba9a07095dbeb01bfda2fc37a08ad75159e",
+      "old_exact_opening": "**Case 4: crypto and the cliff.** Bitcoin bought 1 March 2025 for EUR 10,000, sold 15 February 2026 for EUR 10,900: gain EUR 900 within one year. No other private sales: under EUR 1,000, tax-free. If the client also sold",
+      "current_destination": "212",
+      "disposition": "Originalcrypto900/1100case restored."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        197,
+        197
+      ],
+      "old_unit_sha256": "ee105d064ca64b9fb46c285e6bab825a85098dbef2a27ce80aa109aa6ab8b9b3",
+      "old_exact_opening": "**Case 5: selling a 2% stake.** The client sells their whole 2% holding in a GmbH for EUR 100,000; purchase cost EUR 40,000, no selling costs. Taxable: 60% of EUR 100,000 = EUR 60,000, less 60% of EUR 40,000 = EUR 24,000",
+      "current_destination": "214–234",
+      "disposition": "Original2%case restored."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        199,
+        199
+      ],
+      "old_unit_sha256": "d431147896716051fa8f898d7fde293ee9bdf143acb354c1af7303effd73705a",
+      "old_exact_opening": "**Case 6: selling a flat.** A flat bought in 2018 was let until 2023 and lived in by the owner from January 2024 until its sale in June 2026. It was used as the owner's home in the year of sale and in the two years befor",
+      "current_destination": "236",
+      "disposition": "Originalflatcase restored."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        201,
+        201
+      ],
+      "old_unit_sha256": "a691d33414c522ae428949269a10e0c50fe62c2e198e1f22115cdda95012801c",
+      "old_exact_opening": "## When to refuse or refer",
+      "current_destination": "238",
+      "disposition": "Referralheading."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        203,
+        203
+      ],
+      "old_unit_sha256": "b39261b468d7f1714a3dab5c1e4363d49b6a463fafe39e441d7e908c709c21df",
+      "old_exact_opening": "Refer to a German Steuerberater (tax adviser) when:",
+      "current_destination": "240",
+      "disposition": "Referralintro."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        205,
+        212
+      ],
+      "old_unit_sha256": "8a92fb045971e4bcf4c354b331bd5683fab35118bd27259bbe7a2dc84e65d45b",
+      "old_exact_opening": "- The client is leaving Germany, or giving shares to someone abroad, with a holding of 1% or more or large fund holdings: the exit tax needs a valuation and the holding history. ([source](https://www.gesetze-im-internet.",
+      "current_destination": "242–247",
+      "disposition": "All8originalreferralbullets distributed across6currentbullets; propertymixeduse at247 andforeign/treaty/complexcrypto/17option explicitly retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        214,
+        214
+      ],
+      "old_unit_sha256": "aed360751b6ad81aa987435ea3375d376b4113eedc7bca386f771056c629923f",
+      "old_exact_opening": "Refuse to state a combined flat-tax rate with church tax without the client's state rate, and refuse to estimate a Vorabpauschale without the fund's actual prices.",
+      "current_destination": "249",
+      "disposition": "Bothnocombinedchurchrate/noinventedprices retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        216,
+        216
+      ],
+      "old_unit_sha256": "d4072aba64834048b4a4d45c60ba071f17a946e8fe090c509f8799b276b63949",
+      "old_exact_opening": "## Filing and payment",
+      "current_destination": "104",
+      "disposition": "Filingheading."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        218,
+        221
+      ],
+      "old_unit_sha256": "c541f0167a255d8be402dd739105f5c05b77597eb47e124bf87f642da886aa54",
+      "old_exact_opening": "- **No return needed** where all investment income was taxed by German banks at the right amount and nothing else requires a return. The bank's withholding settles the tax. - **Return required** for investment income wit",
+      "current_destination": "106–110",
+      "disposition": "All4bank/return/forms/withbank topics retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        223,
+        228
+      ],
+      "old_unit_sha256": "5430c814b9f7ecfce98b739ab573f5f6525b7ec327827d7290cdabb192e63fed",
+      "old_exact_opening": "| Return | Deadline | Source | | --- | --- | --- | | 2025 return, filed by the client | 31 July 2026, already passed. File now | [§ 149(2) AO](https://www.gesetze-im-internet.de/ao_1977/__149.html) | | 2025 return, prepa",
+      "current_destination": "114–117",
+      "disposition": "All4deadline rows retained including weekenddates."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        230,
+        230
+      ],
+      "old_unit_sha256": "724e458156c5f6affcf1cfaef0468daa12e2d8eee4b02fd55bd2a845093e76b6",
+      "old_exact_opening": "The tax office can ask for an adviser-prepared return earlier (§ 149(4) AO).",
+      "current_destination": "119",
+      "disposition": "Earlycallcondition retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        232,
+        232
+      ],
+      "old_unit_sha256": "7579dae1e9203878303da0c4c6834cfc08907b72005ce8b974c2d17ac59943a2",
+      "old_exact_opening": "## The 2025 return (being filed now)",
+      "current_destination": "119",
+      "disposition": "Prior-yearheading consolidated into explicitvintageparagraph."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        234,
+        234
+      ],
+      "old_unit_sha256": "e3d7fa0ae796682503da5e4a0c3da20d2b209ccc8062e22521b731c545effb70",
+      "old_exact_opening": "The rules and figures for 2025 are the same as for 2026 above, except:",
+      "current_destination": "119",
+      "disposition": "Same-year2025conditions+exceptions."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        236,
+        238
+      ],
+      "old_unit_sha256": "553452f0a5cc4270ed2ccea0692e16ff20221f1ea195aba72a1adf1467dd9163",
+      "old_exact_opening": "- **Advance lump sum:** the lump sum for 2025 used the 2025 Basiszins of 2.53% and counted as received on the first working day of 2026, so it belongs in the 2026 return, not the 2025 one. The lump sum shown in the 2025 ",
+      "current_destination": "74/119",
+      "disposition": "Both2025basisreceived2026 andlossrepeal2025return topics retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        240,
+        240
+      ],
+      "old_unit_sha256": "74e3c99fcc880eb3180c4951fcdc3cde00b52029fd2ae10ad32e53f84a4ed9a7",
+      "old_exact_opening": "## Completion checklist",
+      "current_destination": "251–258",
+      "disposition": "Completionheading nowintakeandmethod."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        242,
+        251
+      ],
+      "old_unit_sha256": "3cf65bbc94754f3d80677dd3cc8f8568a42e9119ff9c18a75e69801dab64390e",
+      "old_exact_opening": "- [ ] Every asset sorted into flat tax, § 17 or § 23. - [ ] Bank tax certificates collected; allowance use checked against EUR 1,000 or EUR 2,000. ([source](https://www.gesetze-im-internet.de/estg/__20.html)) - [ ] Forei",
+      "current_destination": "60–136/253–258",
+      "disposition": "All10completionchecks preserved acrossmethod+intake, actual no assetmix."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        253,
+        253
+      ],
+      "old_unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "old_exact_opening": "## Sources",
+      "current_destination": "260",
+      "disposition": "Sourcesheading."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        255,
+        259
+      ],
+      "old_unit_sha256": "5b62c818af63ef0e82ea5c6e906cb0e6442b9b0efef05e3c2922c0f6cebdfe72",
+      "old_exact_opening": "- EStG [§ 3](https://www.gesetze-im-internet.de/estg/__3.html), [§ 3c](https://www.gesetze-im-internet.de/estg/__3c.html), [§ 17](https://www.gesetze-im-internet.de/estg/__17.html), [§ 20](https://www.gesetze-im-internet",
+      "current_destination": "264–282",
+      "disposition": "Alllaw/adminsource families retained. Old21AStGsource no longer in this body; explicit old-case referral at leaving-germany-exit-tax178. BMFtitlepointer remains qualifiedunreadfullbody."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        261,
+        261
+      ],
+      "old_unit_sha256": "e50153f8a582a45e6d6003d994c3a0c25b63b0ac34e8bbf2fd5c51b020b308a7",
+      "old_exact_opening": "This skill is a working aid, not advice. Exit tax, business holdings and treaty cases need a German Steuerberater.",
+      "current_destination": "17/22/242–249",
+      "disposition": "Draftworkingaid/limits retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        263,
+        263
+      ],
+      "old_unit_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "old_exact_opening": "<!-- openaccountants-cta-block -->",
+      "current_destination": "286",
+      "disposition": "CTA marker retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        265,
+        265
+      ],
+      "old_unit_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "old_exact_opening": "---",
+      "current_destination": "288",
+      "disposition": "CTA separator retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        267,
+        267
+      ],
+      "old_unit_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "old_exact_opening": "## Talk to a verified accountant",
+      "current_destination": "290",
+      "disposition": "CTAheading retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        269,
+        272
+      ],
+      "old_unit_sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "old_exact_opening": "This guide is maintained by the OpenAccountants network — accountants who put their name behind the tax answers AI gives people. The live, always-current version (and the professional behind it) is at [openaccountants.co",
+      "current_destination": "292–295",
+      "disposition": "Originalmaintainer/live/connectprofile linkparagraph retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        274,
+        275
+      ],
+      "old_unit_sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "old_exact_opening": "- Use it in your AI: https://www.openaccountants.com/connect - Meet the accountants: https://www.openaccountants.com/network",
+      "current_destination": "297–298",
+      "disposition": "Bothconnect/network bullets retained."
+    },
+    {
+      "comparator": "03c473a8^",
+      "old_native_LF": [
+        277,
+        279
+      ],
+      "old_unit_sha256": "f3f1e603134e76acf6c8ad48be551bb1731ecf764291c2b3dbc8e2f140b713c7",
+      "old_exact_opening": "> **General reference only.** This document does not constitute tax, legal, or > financial advice. Verify figures against the cited primary sources or with a > licensed professional before relying on them.",
+      "current_destination": "300–302",
+      "disposition": "Originalgeneralreference disclaimer retained."
+    }
+  ]
+}

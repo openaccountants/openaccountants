@@ -1,0 +1,90 @@
+{
+  "status": "writer successor, independent review pending",
+  "artifacts": [
+    {
+      "path": "after/germany-tax-optimization.md",
+      "sha256": "4f360c9f88fcfa601cba004d4764aa2089e3d493582745fcb6b06c330be5f9ce",
+      "bytes": 52238
+    },
+    {
+      "path": "before/germany-tax-optimization.md",
+      "sha256": "45b98bb40ee1749c47a231894efa9d643177939b66fb9b051b61264c63abcde0",
+      "bytes": 49736
+    },
+    {
+      "path": "check-and-seal.py",
+      "sha256": "776e5339f4b1d926325b43cdad9ef3f2e4a084587ca648c4e0c3428a7bf8d958",
+      "bytes": 10702
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "4722ad79783fbf2bb77d62cbdfafb2b8d0d65194218036d640aafdc41189722a",
+      "bytes": 6702
+    },
+    {
+      "path": "historical-author.py",
+      "sha256": "9dc4a8659314815486b2c0a0a31f30e68889b40e9cbbb12a6255a9f331572071",
+      "bytes": 11530
+    },
+    {
+      "path": "ledgers/germany-tax-optimization.md",
+      "sha256": "a2f35f1b515aecdb84c5f268c4dc7bd0d85c470d5825f6c13f751157eef9c867",
+      "bytes": 198448
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "4cc487cd2901d2a145b7f6a2ae85fd83a97dd829d2ae3df7f191d8916b4dafc4",
+      "bytes": 1068
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "28a56ba458a1a0b056cbc379c000506f459f10c4cef831a1545b0400a5442ab3",
+      "bytes": 10768
+    },
+    {
+      "path": "pre-refresh-route-index.json",
+      "sha256": "bc76e9aefcb55f93a503ebaf79393da726631455fe1db056dc9d15482aebbaad",
+      "bytes": 384767
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "1d4cb713205970d4115b82082fb83d1077af4c98e2c3683b0d4cc0aff7f0fa10",
+      "bytes": 330646
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "fa327c6cdabe98f209e6ccae179353479cd3ec66196562361dee8b3ecb5dbc4e",
+      "bytes": 200096
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "5e3d16d39875cf452bdd2b245ebf68bd2f12267d9c0837df283ce6383e755e0d",
+      "bytes": 679
+    },
+    {
+      "path": "support/line-map.json",
+      "sha256": "534c76bbdb39d624106993497f74b721ae368424f3cfd834fb82758a2da9f672",
+      "bytes": 19083
+    },
+    {
+      "path": "support/old-topic-destinations.json",
+      "sha256": "a0ddec5a3f78f4c54f63879fe89b5bf339fb45e5521184293375a2cc49a966ce",
+      "bytes": 738351
+    },
+    {
+      "path": "support/rows.json",
+      "sha256": "f6ca86ecc160caa8313180772ab99cd880cdd08202a8a0efec0396a5c3714df3",
+      "bytes": 186551
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "c99f7cb1cdf4091460ef5c5777c4e15b76b66ce210aa51a66e2aaf34f1d70a25",
+      "bytes": 5499
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "a4e0ad4c017c23aca77a0b454043655df40477d1bb43770908258efc1bbbecd1",
+      "bytes": 1731
+    }
+  ]
+}

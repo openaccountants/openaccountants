@@ -1,0 +1,1651 @@
+{
+  "status": "PASS bounded final successor chains R57\u201396; original/intermediate R58/59 implementation failures retained, final exact c007 only accepted for treaty. No country verdict.",
+  "mechanical_results": [
+    {
+      "successor_folder": "germany-DE-R57-R60-treaty-writer-successor-2026-10-29",
+      "manifest_members_rehashed": 21,
+      "pairs": [
+        {
+          "pair": {
+            "slug": "de-treaty-withholding-rates",
+            "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-treaty-withholding-rates.md",
+            "Guide_sha256": "e0af931443833336734547a462ee47978d568c247571d2691fad966c5b0e5ecf",
+            "bytes": 32636,
+            "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R57-R60-treaty-writer-successor-2026-10-29/ledgers/de-treaty-withholding-rates.md",
+            "ledger_sha256": "913ed9fe8b178e2f406e99eaf454ce83fe0149f313c81cd65872a280fe949acc",
+            "current_rows": 166,
+            "prior_current_rows": 165,
+            "old_topics": 329,
+            "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/de-treaty-withholding-rates.md",
+            "prior_ledger_sha256": "27879d881a0944119d17f2688303da1548a27e448382e3f5adeb07ed01a178cb"
+          },
+          "before_sha256": "98b7a3ed15a0ff174004be9b2975f1c920b1a6ad752b7bb38ba05038c21eb7a1",
+          "operations": 12,
+          "full_inverse": true,
+          "all_native_current_rows": 166,
+          "original_oa_byteexact": 2,
+          "protected_metadata_CTA_oldURLorder": true,
+          "actual_old_origin_identities_retained": 329,
+          "worked_prose_scope": "Treaty eligible facts/remittance/interpretation changed; algebra and2oa exact"
+        }
+      ],
+      "sources": [
+        {
+          "id": "R57-60.WHTSOLI",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc748242e6e54c746.reader.txt",
+          "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+          "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+          "native_LF": [
+            21,
+            26
+          ],
+          "quote_sha256": "3e65950272500946425145bfe1e780d059dfafa2f452fbd78e37fbf07ca65c24",
+          "exact_prior_read_bridge": [
+            "DE-R57-R60-treaty-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R57-60.PARENT",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U6663ef2d9a58d6ba.reader.txt",
+          "raw_sha256": "7fc716c919b01466e54c4b19e389d5f1b7240340bb758206ba763be5612457d3",
+          "reader_sha256": "eccee8afd7f632b6b0ab0484d2be8c2151c29fa59d42182c8566f056ea8fb28b",
+          "native_LF": [
+            7,
+            14
+          ],
+          "quote_sha256": "46471219d720a92cbc0baee79175ab5e209480a5ea5c862fe10c4dacef3007b8",
+          "exact_prior_read_bridge": [
+            "DE-R57-R60-treaty-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R57-60.EUGATES",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.reader.txt",
+          "raw_sha256": "670b886e42956deab6140d8bc2f97e653abd54420558c83a487b6a7fd9b81bc1",
+          "reader_sha256": "edad2340bbacd4b47ef225febd7946757db154dd073538b4de76700a8aa6fd23",
+          "native_LF": [
+            15,
+            48
+          ],
+          "quote_sha256": "eaabf032777d69528ec721654ea15bae9111fe10dd43421f4742111c02f9e72b",
+          "exact_prior_read_bridge": [
+            "DE-R57-R60-treaty-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R57-60.SWISS",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U80d1a0ee54a59a74.reader.txt",
+          "raw_sha256": "670b886e42956deab6140d8bc2f97e653abd54420558c83a487b6a7fd9b81bc1",
+          "reader_sha256": "edad2340bbacd4b47ef225febd7946757db154dd073538b4de76700a8aa6fd23",
+          "native_LF": [
+            53,
+            63
+          ],
+          "quote_sha256": "dcf765599849523349fb99cc835aeba412f45801cc33b8683dd67e197e190901",
+          "exact_prior_read_bridge": [
+            "DE-R57-R60-treaty-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R57-60.PORTFOLIO",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud3e0b0d09cbc2951.reader.txt",
+          "raw_sha256": "34d87bee1a69ad9d31dfdb1b0fb849c8ccf32678081761f5ff6cb4b22784e9d7",
+          "reader_sha256": "3cd1c2940a8a21016ce28ab7045c4e324e5fbd0858baf8458835ff5bf616057f",
+          "native_LF": [
+            7,
+            20
+          ],
+          "quote_sha256": "c9c10ddac75234cbea9ba153e2ac77be04ac22c70a12217bf4a031348a5c378b",
+          "exact_prior_read_bridge": [
+            "DE-R57-R60-treaty-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R57-60.PROCESS",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5ac66e90f192566e.reader.txt",
+          "raw_sha256": "a6d4c64b0bebbd7ee2910b77a571c8be3c9a6dd012d3f7f1a9b7f4374b1ad7ce",
+          "reader_sha256": "60289112ce928bc87f76d9d8154d54445bf8ce663b02b190cab37c7b58328c8b",
+          "native_LF": [
+            39,
+            45
+          ],
+          "quote_sha256": "cc18d35f2888c3f40c0a4a00a9c0c3c6cc174bac3f8a1fe0dcb6c4ed3890cf1d",
+          "exact_prior_read_bridge": [
+            "DE-R57-R60-treaty-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R57-60.USTAX",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uac0cbbe84228f8ed.reader.txt",
+          "raw_sha256": "c712844fbd49d928461286efcca93ac57da6ead9def96d0efea940d3ad2333fd",
+          "reader_sha256": "20ce7d897b2183a1ef752f0eac338496af5f0e4bd9ab31f299c7c8683bdd8505",
+          "native_LF": [
+            189,
+            200
+          ],
+          "quote_sha256": "68fff3f7aea71d66fee2e4263c08f31760d1b9e134ff61b1bcea5990508d3810",
+          "exact_prior_read_bridge": [
+            "DE-R57-R60-treaty-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R57-60.CZTAX",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.reader.txt",
+          "raw_sha256": "d34112bdc430618db27400d87a7876b2848bbb4248d490a8b13e59715e434598",
+          "reader_sha256": "fa906f0414799e660b6475a700e0cc77a58699647a3920fdd54db460dfcdd1ed",
+          "native_LF": [
+            226,
+            233
+          ],
+          "quote_sha256": "2a3824d77be1aba8a6983de73a18431bf0506135fa48ee2687c53d5810237940",
+          "exact_prior_read_bridge": [
+            "DE-R57-R60-treaty-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R57-60.CZLATER",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.reader.txt",
+          "raw_sha256": "d34112bdc430618db27400d87a7876b2848bbb4248d490a8b13e59715e434598",
+          "reader_sha256": "fa906f0414799e660b6475a700e0cc77a58699647a3920fdd54db460dfcdd1ed",
+          "native_LF": [
+            249,
+            252
+          ],
+          "quote_sha256": "58111762f669878f9966f305ca8d75f10a2bafbdc287935b2f3b825458b1111e",
+          "exact_prior_read_bridge": [
+            "DE-R57-R60-treaty-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R57-60.IT9",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/support/de-treaty-withholding-rates/scan-derivatives/Ue32394b5ce5fc51e-visual-verified-excerpts.reader.txt",
+          "raw_sha256": "235d136361226810feaceba5bae85293377e392d93fa6cf08bb4f76f0c598d8f",
+          "reader_sha256": "6dcddc854462139295441ec7c25cf42d63fa1c86dcc7d48d9ac279b28a33e8d0",
+          "native_LF": [
+            30,
+            30
+          ],
+          "quote_sha256": "b8b2ecba5110f246d2ca90c825f3bcc5897de4daa27e8deea49f8f8802724eee",
+          "exact_prior_read_bridge": [
+            "DE-R57-R60-treaty-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R58.company-forms",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1e06bb5852a0c786.reader.txt",
+          "raw_sha256": "f63071eaeffc3c8760de4ae10f01427ae0fc68d32f12d89a920ac01fd3afb2b5",
+          "reader_sha256": "2046a83b78ab77aad5ee3a2647d2a29e8bda01484502a489de9b6e924127c509",
+          "native_LF": [
+            7,
+            10
+          ],
+          "quote_sha256": "745b108814fc286868b2547c12bf1850fa0c234894653b3f1296c1c17a951ae1",
+          "exact_prior_read_bridge": [],
+          "actual_read_resolution": "Exact selected text actually read: Annex2full7\u201310/67\u201371 in bounded treaty readings and current closure display; PAP1478\u20131585 actual prior independent extracted/visual scope and full current display; BMG390\u2013402 within actual375\u2013427 selected read; ownSGBX26 JSON web observation initially read directly; SGBVI16313\u201316/AAG915\u201318 actually acquired/read for R89/90, with exact retained identity. No fullsource or rawHTML claim."
+        },
+        {
+          "id": "R58.residence-tax",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1e06bb5852a0c786.reader.txt",
+          "raw_sha256": "f63071eaeffc3c8760de4ae10f01427ae0fc68d32f12d89a920ac01fd3afb2b5",
+          "reader_sha256": "2046a83b78ab77aad5ee3a2647d2a29e8bda01484502a489de9b6e924127c509",
+          "native_LF": [
+            67,
+            71
+          ],
+          "quote_sha256": "17d3087dbf6aa5c38b0f61aca047457e6d4d25e2525ef666fa0895b73bbc0bf5",
+          "exact_prior_read_bridge": [],
+          "actual_read_resolution": "Exact selected text actually read: Annex2full7\u201310/67\u201371 in bounded treaty readings and current closure display; PAP1478\u20131585 actual prior independent extracted/visual scope and full current display; BMG390\u2013402 within actual375\u2013427 selected read; ownSGBX26 JSON web observation initially read directly; SGBVI16313\u201316/AAG915\u201318 actually acquired/read for R89/90, with exact retained identity. No fullsource or rawHTML claim."
+        },
+        {
+          "id": "R60.remitted-statute",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.reader.txt",
+          "raw_sha256": "0bddf86f831b727c144a7ecb6791cc3e5529bfb8f707ee4715c4dc95c6d2458a",
+          "reader_sha256": "56b79f581bc6fe26a103d5085d7e127e13fb2960475bb814020668dd7f7749c1",
+          "native_LF": [
+            13,
+            13
+          ],
+          "quote_sha256": "8502e8212ae94e82c63e4c7a358835e35a444b572af11532d2dceae037901c78",
+          "exact_prior_read_bridge": [
+            "de-treaty-withholding-rates-quote-reuse-plan.json"
+          ]
+        }
+      ],
+      "status": "PASS exact bounded successor. All actual delta operations read and assessed against actual own selected clauses or explicit exact prior-reading bridges. No countrywide completeness/attestation."
+    },
+    {
+      "successor_folder": "germany-DE-R58-R59-treaty-gate-precision-2026-10-29",
+      "manifest_members_rehashed": 13,
+      "pairs": [
+        {
+          "pair": {
+            "slug": "de-treaty-withholding-rates",
+            "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-treaty-withholding-rates.md",
+            "Guide_sha256": "c00779b73dc6a31a1d8d5bfe153800399bf7a332c9be77159953aeb05f4813e8",
+            "bytes": 32880,
+            "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R58-R59-treaty-gate-precision-2026-10-29/ledgers/de-treaty-withholding-rates.md",
+            "ledger_sha256": "a598de312ae0f0d3fde454a7a73b3fc0fbb4a7b8afd914e4ae191a3a58dc6df1",
+            "rows": 166,
+            "old_topics": 329,
+            "prior_manifest": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R57-R60-treaty-writer-successor-2026-10-29/artifact-manifest.json",
+            "prior_manifest_sha256": "c3e31c3a766748c8853898c7e70e4ac0b744fd2e0e32d90997cfce0869ce8684"
+          },
+          "before_sha256": "e0af931443833336734547a462ee47978d568c247571d2691fad966c5b0e5ecf",
+          "operations": 3,
+          "full_inverse": true,
+          "all_native_current_rows": 166,
+          "original_oa_byteexact": 2,
+          "protected_metadata_CTA_oldURLorder": true,
+          "actual_old_origin_identities_retained": 329,
+          "worked_prose_scope": "Treaty eligible facts/remittance/interpretation changed; algebra and2oa exact"
+        }
+      ],
+      "sources": [
+        {
+          "id": "R58.company-forms",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1e06bb5852a0c786.reader.txt",
+          "raw_sha256": "f63071eaeffc3c8760de4ae10f01427ae0fc68d32f12d89a920ac01fd3afb2b5",
+          "reader_sha256": "2046a83b78ab77aad5ee3a2647d2a29e8bda01484502a489de9b6e924127c509",
+          "native_LF": [
+            7,
+            10
+          ],
+          "quote_sha256": "745b108814fc286868b2547c12bf1850fa0c234894653b3f1296c1c17a951ae1",
+          "exact_prior_read_bridge": [],
+          "actual_read_resolution": "Exact selected text actually read: Annex2full7\u201310/67\u201371 in bounded treaty readings and current closure display; PAP1478\u20131585 actual prior independent extracted/visual scope and full current display; BMG390\u2013402 within actual375\u2013427 selected read; ownSGBX26 JSON web observation initially read directly; SGBVI16313\u201316/AAG915\u201318 actually acquired/read for R89/90, with exact retained identity. No fullsource or rawHTML claim."
+        },
+        {
+          "id": "R58.residence-tax",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1e06bb5852a0c786.reader.txt",
+          "raw_sha256": "f63071eaeffc3c8760de4ae10f01427ae0fc68d32f12d89a920ac01fd3afb2b5",
+          "reader_sha256": "2046a83b78ab77aad5ee3a2647d2a29e8bda01484502a489de9b6e924127c509",
+          "native_LF": [
+            67,
+            71
+          ],
+          "quote_sha256": "17d3087dbf6aa5c38b0f61aca047457e6d4d25e2525ef666fa0895b73bbc0bf5",
+          "exact_prior_read_bridge": [],
+          "actual_read_resolution": "Exact selected text actually read: Annex2full7\u201310/67\u201371 in bounded treaty readings and current closure display; PAP1478\u20131585 actual prior independent extracted/visual scope and full current display; BMG390\u2013402 within actual375\u2013427 selected read; ownSGBX26 JSON web observation initially read directly; SGBVI16313\u201316/AAG915\u201318 actually acquired/read for R89/90, with exact retained identity. No fullsource or rawHTML claim."
+        },
+        {
+          "id": "R57-60.PORTFOLIO",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud3e0b0d09cbc2951.reader.txt",
+          "raw_sha256": "34d87bee1a69ad9d31dfdb1b0fb849c8ccf32678081761f5ff6cb4b22784e9d7",
+          "reader_sha256": "3cd1c2940a8a21016ce28ab7045c4e324e5fbd0858baf8458835ff5bf616057f",
+          "native_LF": [
+            7,
+            20
+          ],
+          "quote_sha256": "c9c10ddac75234cbea9ba153e2ac77be04ac22c70a12217bf4a031348a5c378b",
+          "exact_prior_read_bridge": [
+            "DE-R57-R60-treaty-selected-source-read-ledger.json"
+          ]
+        }
+      ],
+      "status": "PASS exact bounded successor. All actual delta operations read and assessed against actual own selected clauses or explicit exact prior-reading bridges. No countrywide completeness/attestation."
+    },
+    {
+      "successor_folder": "germany-DE-R61-TP-CbCR-writer-successor-2026-10-29",
+      "manifest_members_rehashed": 18,
+      "pairs": [
+        {
+          "pair": {
+            "slug": "germany-transfer-pricing",
+            "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-transfer-pricing.md",
+            "Guide_sha256": "e0fb36c2e05112e253ac55ce2bd1079fe537dfaac9638c662e7f7fca68fe5783",
+            "bytes": 67075,
+            "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R61-TP-CbCR-writer-successor-2026-10-29/ledgers/germany-transfer-pricing.md",
+            "ledger_sha256": "3236c3f7e39e66871cab14dac6c67fd45e75eb016c5967d0a566b52d6f36441d",
+            "current_rows": 316,
+            "prior_current_rows": 316,
+            "old_topics": 398,
+            "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/germany-transfer-pricing.md",
+            "prior_ledger_sha256": "c806f7fdc09984616d06150dfc7ce6db6ad3554d6cd2f7ada5949a1c444b4895"
+          },
+          "before_sha256": "6484533ed7d6864dee6ccdd2c67e04a9478abf59c7d362bfcdecd172aef120cb",
+          "operations": 7,
+          "full_inverse": true,
+          "all_native_current_rows": 316,
+          "original_oa_byteexact": 2,
+          "protected_metadata_CTA_oldURLorder": true,
+          "actual_old_origin_identities_retained": 398,
+          "worked_prose_scope": "All original executable blocks byteexact; original full narrative examples retained (independent current-source meaning checked)",
+          "original_whole_worked_section_byteexact": true
+        }
+      ],
+      "sources": [
+        {
+          "id": "R61.cb-4",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.reader.txt",
+          "raw_sha256": "ab3e9238a92b67156cc3d0c50b994057a5635b857641ff0fa76f085c3e5dfa7e",
+          "reader_sha256": "96bac0c232697de930aadaf031a5def0b170ff1f7d03806ab8730cf74a699305",
+          "native_LF": [
+            38,
+            38
+          ],
+          "quote_sha256": "bd8074f80968846efd24c047bf3c8c7deaeea3ff0cc523aa68b328fe16ba3c5f",
+          "exact_prior_read_bridge": [
+            "germany-transfer-pricing-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R61.cb-6",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0ab387a9c7139dab.reader.txt",
+          "raw_sha256": "ab3e9238a92b67156cc3d0c50b994057a5635b857641ff0fa76f085c3e5dfa7e",
+          "reader_sha256": "96bac0c232697de930aadaf031a5def0b170ff1f7d03806ab8730cf74a699305",
+          "native_LF": [
+            46,
+            46
+          ],
+          "quote_sha256": "b6911198ae6e1278df3e4c7bbabbbcf5bc52c1f4af5201416a334d826a64a8f5",
+          "exact_prior_read_bridge": [
+            "germany-transfer-pricing-quote-reuse-plan.json"
+          ]
+        }
+      ],
+      "status": "PASS exact bounded successor. All actual delta operations read and assessed against actual own selected clauses or explicit exact prior-reading bridges. No countrywide completeness/attestation."
+    },
+    {
+      "successor_folder": "germany-DE-R71-employee-certificate-precision-2026-10-29",
+      "manifest_members_rehashed": 16,
+      "pairs": [
+        {
+          "pair": {
+            "slug": "de-employee-income-tax",
+            "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-employee-income-tax.md",
+            "Guide_sha256": "32b10213e3bc5d405ac89a1479b3a9ab07133a62320100c5788195a667764f3c",
+            "bytes": 28805,
+            "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R71-employee-certificate-precision-2026-10-29/ledgers/de-employee-income-tax.md",
+            "ledger_sha256": "035e5e2442882e2f59530447502138bae2e89c6ea31af109166626fd1ee2b6ce",
+            "current_rows": 218,
+            "old_topics": 435,
+            "original_oa": 2
+          },
+          "before_sha256": "cd57ecbaf2ea8cd8153e7254e51c2a547d195e618f1cab178f8365909001b35b",
+          "operations": 2,
+          "full_inverse": true,
+          "all_native_current_rows": 218,
+          "original_oa_byteexact": 2,
+          "protected_metadata_CTA_oldURLorder": true,
+          "actual_old_origin_identities_retained": 435,
+          "worked_prose_scope": "One incorrect PAP explanatory parenthesis replaced by an explicit stipulated-certificate statement; all actual amounts, algebra and2originaloa byteexact. No whole-worked-prose exact claim."
+        }
+      ],
+      "sources": [
+        {
+          "id": "R71.WITHHOLD",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue94e0982f22d5e03.reader.txt",
+          "raw_sha256": "cbc9fd1bcceae68668abf399bd908e778b998713df9e904453801ba96b92bcf4",
+          "reader_sha256": "75d0fc036bd274123322e48581d6e5c352e88a11a27c6a503d6f03bd781ef1bf",
+          "native_LF": [
+            8,
+            26
+          ],
+          "quote_sha256": "185b2856b2ded93aa4a2eab3adb1d4f7f430498053fe7de21b77772e5d0c6ca6",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R71.PAPcontext",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U04c9d8868081bd75.reader.txt",
+          "raw_sha256": "5da38acd544868ddcb0bc7f43030bd7d6ee9aa455dff0f42ad59732634e33a48",
+          "reader_sha256": "104f46ddb0f117a903d18079766f1c6ffffeb872e5fa4a26319b33c48cee538e",
+          "native_LF": [
+            1478,
+            1585
+          ],
+          "quote_sha256": "94c6183f6dfff16445f844bdc5d585929ec7229cd5eda6b1634136db7aee9fbe",
+          "exact_prior_read_bridge": [],
+          "actual_read_resolution": "Exact selected text actually read: Annex2full7\u201310/67\u201371 in bounded treaty readings and current closure display; PAP1478\u20131585 actual prior independent extracted/visual scope and full current display; BMG390\u2013402 within actual375\u2013427 selected read; ownSGBX26 JSON web observation initially read directly; SGBVI16313\u201316/AAG915\u201318 actually acquired/read for R89/90, with exact retained identity. No fullsource or rawHTML claim."
+        },
+        {
+          "id": "R71.PAP1900room",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U04c9d8868081bd75.reader.txt",
+          "raw_sha256": "5da38acd544868ddcb0bc7f43030bd7d6ee9aa455dff0f42ad59732634e33a48",
+          "reader_sha256": "104f46ddb0f117a903d18079766f1c6ffffeb872e5fa4a26319b33c48cee538e",
+          "native_LF": [
+            1640,
+            1700
+          ],
+          "quote_sha256": "0799dc88323c493a1889010a13d5845266b32aca3f017dad3895ceba32f1c2fa",
+          "exact_prior_read_bridge": [
+            "de-payroll-quote-reuse-plan.json"
+          ]
+        }
+      ],
+      "status": "PASS exact bounded successor. All actual delta operations read and assessed against actual own selected clauses or explicit exact prior-reading bridges. No countrywide completeness/attestation."
+    },
+    {
+      "successor_folder": "germany-DE-R72-R77-social-writer-successor-2026-10-29",
+      "manifest_members_rehashed": 18,
+      "pairs": [
+        {
+          "pair": {
+            "slug": "de-social-contributions",
+            "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-social-contributions.md",
+            "Guide_sha256": "ebce79a0f32c40dfd3c2ee10589761c1332f2f94954a51ffd6c908bd9c8c8fad",
+            "bytes": 57839,
+            "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R72-R77-social-writer-successor-2026-10-29/ledgers/de-social-contributions.md",
+            "ledger_sha256": "ed4a3d521d8f2c494ffb1b608be4fd6bab72772fd32a831eccad80f0cad09611",
+            "rows": 189,
+            "prior_rows": 187,
+            "old_topics": 203,
+            "prior_ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/de-social-contributions.md",
+            "prior_ledger_sha256": "1c182cd096cf1c45b4f53be07448dac608c0a23c5e4ad1db410acbddb45eccfe"
+          },
+          "before_sha256": "440c63cff96c29ab6ba597bc1d96e7e0183665c6aeb547b0c2b184658cf22f5d",
+          "operations": 12,
+          "full_inverse": true,
+          "all_native_current_rows": 189,
+          "original_oa_byteexact": 2,
+          "protected_metadata_CTA_oldURLorder": true,
+          "actual_old_origin_identities_retained": 203,
+          "worked_prose_scope": "Yoga filing calendar prose changed to1June; amounts and2oa exact"
+        }
+      ],
+      "sources": [
+        {
+          "id": "R72-77.DEB060",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB060.txt",
+          "raw_sha256": "1e783da5b5ff4e22c36d583fe2bbd0e4ca4d2c3a69f2955191224dd50496de52",
+          "reader_sha256": "a43f3a48a29f5a35948756ea142c7792b2d7b4e886d928b4909b55819a7e1ff2",
+          "native_LF": [
+            7,
+            20
+          ],
+          "quote_sha256": "46e47a6408c3fae9b4cc47e6c2d602ea423518a6478c0435e54ef9d254964a0b",
+          "exact_prior_read_bridge": [
+            "DE-R72-R77-social-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R72-77.DEB279",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB279.txt",
+          "raw_sha256": "f68242b7d4a35609d54524dca677c20bf1ce08dc391382d5bad2e4f7de8f1d0c",
+          "reader_sha256": "9d25f72948728393dd7dc1ae415cc70704b7e9078bfc592fbd6957bb49dabae3",
+          "native_LF": [
+            9,
+            16
+          ],
+          "quote_sha256": "5102c66333f7d04d5aa5b54a5e0201ef909ce3926bc4c86151bade071dace24c",
+          "exact_prior_read_bridge": [
+            "DE-R72-R77-social-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R72-77.DEB265",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB265.txt",
+          "raw_sha256": "3787c91135f0d49fa18b30ab8f1b25fa9b1f03f2840a68a38c19e8578878b8ca",
+          "reader_sha256": "e9c7eb6a81593147d3782ef8e465a0114c1c23033c080b9251d54ccee0b785ce",
+          "native_LF": [
+            7,
+            7
+          ],
+          "quote_sha256": "f575ddfc06a752288edfee55547513c13cd499e5a3e6c0122579c282bb3b8c19",
+          "exact_prior_read_bridge": [
+            "DE-R72-R77-social-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R72-77.DEB252",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB252.txt",
+          "raw_sha256": "6fd9462a577707e07779a927e02667e1e634a68f1a59c0d2abd8226ea5af7f7a",
+          "reader_sha256": "5a4e56f17207f60ced872dad0f9fa00ddc721d7c637019571a6e59cb87b3b334",
+          "native_LF": [
+            7,
+            34
+          ],
+          "quote_sha256": "8506bb7bb00e9b63e86168c58944b206a14ae58fc70c0fa07672219297be88b7",
+          "exact_prior_read_bridge": [
+            "DE-R72-R77-social-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R72-77.DEB245",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB245.txt",
+          "raw_sha256": "4880b77f7337376b7c968e0b06bd228a2729b29235752d3bfa79dc8806372226",
+          "reader_sha256": "6a0a9c5139a7276ec78a6994f212f0b20416e14088ac4b114be20c20211c47f1",
+          "native_LF": [
+            7,
+            12
+          ],
+          "quote_sha256": "82349ccf699a8b6620ab63d0aac605ac16bf3b332ecc9039f88ceb169509a7b9",
+          "exact_prior_read_bridge": [
+            "DE-R72-R77-social-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R72-77.DEB110",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB110.txt",
+          "raw_sha256": "14c6142a57375cda4474e646526344b5bcdf653d406be0eb562a20cccb678705",
+          "reader_sha256": "7fa3e404cbf7c9b04e818f4a26d6c059ccd52b5e4750c4d063acaf2d08465557",
+          "native_LF": [
+            7,
+            9
+          ],
+          "quote_sha256": "f0b88a3e324c4e7b4efc33e57c7408b2bd6786548d4ce3dc7b87478179353342",
+          "exact_prior_read_bridge": [
+            "de-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R72-77.DEB135",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB135.txt",
+          "raw_sha256": "f56d6c7a9f8cb11377ca4df71b381c059d42b02d71207b2de8fd3d73416f93db",
+          "reader_sha256": "2ba059ef070e272b38e67f9be1fc8748c2444e9ac3cb314af2e3c723f3c49429",
+          "native_LF": [
+            7,
+            8
+          ],
+          "quote_sha256": "c064d8c31e849e2da9e9026669334b4f0f8013d7f941097a628f19491cac0c4b",
+          "exact_prior_read_bridge": [
+            "DE-R72-R77-social-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R72-77.DEB242",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB242.txt",
+          "raw_sha256": "179901338e193159b556356c3bd575a8b90bf2897c6e5e7c580e71c29c071fbc",
+          "reader_sha256": "57e117cf986e8c060ad5b7301a7ecaba607e4ef2dece5c6a83722ba4361c19b7",
+          "native_LF": [
+            7,
+            8
+          ],
+          "quote_sha256": "953fd45ae665368fa4ad9c7a1e3a573c71c805a8e9f30446d00106f72968dfd1",
+          "exact_prior_read_bridge": [
+            "DE-R72-R77-social-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R76.SGBX26",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/payroll-SGBX26-web-observation.json",
+          "raw_sha256": "bc5324cc1c52a3c969c6c2437ac28b0786f7d1e626d96149cd540d9e082254a0",
+          "reader_sha256": "bc5324cc1c52a3c969c6c2437ac28b0786f7d1e626d96149cd540d9e082254a0",
+          "native_LF": [
+            null,
+            null
+          ],
+          "quote_sha256": "608f0f9119034ec56fc8716d18d5d3d212bbbff33034e973012e1796bd52dfed",
+          "exact_prior_read_bridge": [],
+          "actual_read_resolution": "Exact selected text actually read: Annex2full7\u201310/67\u201371 in bounded treaty readings and current closure display; PAP1478\u20131585 actual prior independent extracted/visual scope and full current display; BMG390\u2013402 within actual375\u2013427 selected read; ownSGBX26 JSON web observation initially read directly; SGBVI16313\u201316/AAG915\u201318 actually acquired/read for R89/90, with exact retained identity. No fullsource or rawHTML claim."
+        }
+      ],
+      "status": "PASS exact bounded successor. All actual delta operations read and assessed against actual own selected clauses or explicit exact prior-reading bridges. No countrywide completeness/attestation."
+    },
+    {
+      "successor_folder": "germany-DE-R78-R87-benefits-writer-successor-2026-10-29",
+      "manifest_members_rehashed": 19,
+      "pairs": [
+        {
+          "pair": {
+            "slug": "de-payroll-benefits",
+            "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-payroll-benefits.md",
+            "Guide_sha256": "5cfe787fc72884808d51928252fb2a8a42c3442a50da315c846fffc3ea2f24eb",
+            "bytes": 45831,
+            "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R78-R87-benefits-writer-successor-2026-10-29/ledgers/de-payroll-benefits.md",
+            "ledger_sha256": "b8248d2ab2ca1824382ef665520998565775c5f1c77d7ecaa0e057787f59c0ec",
+            "rows": 91,
+            "prior_rows": 90,
+            "old_topics": 73,
+            "prior_ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/de-payroll-benefits.md",
+            "prior_ledger_sha256": "aa9f0b91d7357436b2a877fe83cd8897f1b38d6341cf53553994eceb1736f0f2"
+          },
+          "before_sha256": "6490866ed01c76228acd389426527eecc10b5c835a082799868ed9a5fe8aa62a",
+          "operations": 21,
+          "full_inverse": true,
+          "all_native_current_rows": 91,
+          "original_oa_byteexact": 2,
+          "protected_metadata_CTA_oldURLorder": true,
+          "actual_old_origin_identities_retained": 73,
+          "worked_prose_scope": "All original executable blocks byteexact; original full narrative examples retained (independent current-source meaning checked)",
+          "original_whole_worked_section_byteexact": true
+        }
+      ],
+      "sources": [
+        {
+          "id": "R78.car",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB049.txt",
+          "raw_sha256": "efa9a34bec16738055ca9682b54ddb48e892ee74652b9abf1d1ab087c8ca3ea7",
+          "reader_sha256": "9b32bf5a41cd31a2b6b9e286e0298eb0831fd41c923aef536c6775baf3e51e1f",
+          "native_LF": [
+            8,
+            8
+          ],
+          "quote_sha256": "cbd0e027c88bd63b0422b52c9f88ae80f253ac1d5ba7d0d441368f0dc691989f",
+          "exact_prior_read_bridge": [
+            "de-payroll-benefits-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R83.lowearner",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB056.txt",
+          "raw_sha256": "199f7b523dbe4493a230bf9db790e7b64d1a799436e19b5046d36a7f987e69cc",
+          "reader_sha256": "f66b47e6d773040f11e716f2168f5255f3bc58c418a810253df1f5a490c333eb",
+          "native_LF": [
+            7,
+            26
+          ],
+          "quote_sha256": "8d73b33e02cbf9d73817c2779b91c99a73123410fc11e8d1a2dd8bb089aeb66b",
+          "exact_prior_read_bridge": [
+            "de-payroll-benefits-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R87.employment",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB129.txt",
+          "raw_sha256": "df3eeea0848d8b1cc9835c869b8f1a1be339a45d04489ba534895af5d9f38f85",
+          "reader_sha256": "e8c219a744cf75699703ef0fbb57bb9c70c43767c72d1d06047aee6f0a27b987",
+          "native_LF": [
+            7,
+            7
+          ],
+          "quote_sha256": "689d54d2a2098f6304e823d31ac7ca5ac221044b5010a7b73970b6186febf7dc",
+          "exact_prior_read_bridge": [
+            "de-social-contributions-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R81.37b",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB051.txt",
+          "raw_sha256": "d81a1ff9cfda2ab060058c7a800e717730051ac1a9181797b5d0acbe7048d2de",
+          "reader_sha256": "6073588752660d561fe47baf313205c8edad2c7f2585db67f92d58e404df2bdd",
+          "native_LF": [
+            7,
+            18
+          ],
+          "quote_sha256": "936aa62edb631e55a399bf409f78ff61e39e21540690ca5011c158ba88b5c8a7",
+          "exact_prior_read_bridge": [
+            "de-payroll-benefits-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R79.staffdiscount",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB049.txt",
+          "raw_sha256": "efa9a34bec16738055ca9682b54ddb48e892ee74652b9abf1d1ab087c8ca3ea7",
+          "reader_sha256": "9b32bf5a41cd31a2b6b9e286e0298eb0831fd41c923aef536c6775baf3e51e1f",
+          "native_LF": [
+            9,
+            9
+          ],
+          "quote_sha256": "c2614fc749edbf3ff906e64910d488e3ba5b6f9d836e3728ec1c39b604ab6b56",
+          "exact_prior_read_bridge": [
+            "de-payroll-benefits-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R80.lodging",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB050.txt",
+          "raw_sha256": "fbce133e83a370b4281ca90ac2ecbde87ebbe492aac5753dd8cb63dece5d31cc",
+          "reader_sha256": "69c199425d0e0b46b5412ca15188fe05c0e09b6140619684ed54300bb1231f73",
+          "native_LF": [
+            22,
+            36
+          ],
+          "quote_sha256": "1827c0a701432abf51a8363173f31e1dfaaa3b4cb31d429378c270b6da650d4d",
+          "exact_prior_read_bridge": [
+            "de-payroll-benefits-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R82.40",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB052.txt",
+          "raw_sha256": "422498b4025f98afd93a4896a7fc67e39253d391bfb04c09390685af814e313a",
+          "reader_sha256": "d710d3233f19fe43275cc2c7c159298f2070b33cb0f674651c6fbd72d31d11c4",
+          "native_LF": [
+            12,
+            38
+          ],
+          "quote_sha256": "dc49a2571ea0139ae0d90bc7fbc1e4b7cb554aa141ba5ece4e1f99ea3ce73f28",
+          "exact_prior_read_bridge": [
+            "de-payroll-benefits-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R84.63",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB007.txt",
+          "raw_sha256": "85b9a2a8ff330e68a0df9f7e4e38d9dc515f1bce2635706bc14642de47c1c2b3",
+          "reader_sha256": "9be956cc7a2bab50aba6634347a5920b442fee7adcc3fe0e833928c6d5d849cc",
+          "native_LF": [
+            261,
+            262
+          ],
+          "quote_sha256": "974eb8c077d63f6d92928c4377231f1b32e21f3e48bc979461de3d4c69cb05f3",
+          "exact_prior_read_bridge": [
+            "de-payroll-benefits-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R84.56",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB007.txt",
+          "raw_sha256": "85b9a2a8ff330e68a0df9f7e4e38d9dc515f1bce2635706bc14642de47c1c2b3",
+          "reader_sha256": "9be956cc7a2bab50aba6634347a5920b442fee7adcc3fe0e833928c6d5d849cc",
+          "native_LF": [
+            241,
+            242
+          ],
+          "quote_sha256": "797c02cbbe76d35b46e38592939fc49ef2886ee9bb0358ead8eb9ece6153f660",
+          "exact_prior_read_bridge": [
+            "de-payroll-benefits-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R84.40b",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB055.txt",
+          "raw_sha256": "27a9dc7e5da14eee90ba2fce3e141a78654072f37ac74bc2bb2932a1948f36ae",
+          "reader_sha256": "fd332a683895a15b5965edb68665915df7b2fe5add5ffd8678f21e22342d33dd",
+          "native_LF": [
+            7,
+            11
+          ],
+          "quote_sha256": "2a3cb068745d356d16bcceb8726038ad422d531f866912eeeddb1adce377810f",
+          "exact_prior_read_bridge": [
+            "de-payroll-benefits-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R81.admin",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB191.txt",
+          "raw_sha256": "4485eeaf733093c4cecc20b980a843b2facf7671a57d31ef804b06ccaf589495",
+          "reader_sha256": "9ca3370d37bd13619d5e584ecfad5e96c8068e3485085fe17165f855d12abbbd",
+          "native_LF": [
+            591,
+            597
+          ],
+          "quote_sha256": "10c672d0414bdc5d1ead47ef77e89a88113078fb890e2bcf86294eb57da7ab01",
+          "exact_prior_read_bridge": [
+            "de-payroll-benefits-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R81.third",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB054.txt",
+          "raw_sha256": "dd09050791c50af13998ddb3ce6b186eb33f00e14a9a61b03bb1c3a6721171ad",
+          "reader_sha256": "a5316e3b7b259ce366fc814c3304c278923e12e3fa7e2dbc6b21485c48029e8c",
+          "native_LF": [
+            34,
+            35
+          ],
+          "quote_sha256": "25f287cd2f3fb997b2653fd4756866e66bb4ffdf478091b28e917c9c997a69fa",
+          "exact_prior_read_bridge": [
+            "de-payroll-benefits-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R85.shares",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB058.txt",
+          "raw_sha256": "fe870df925166722433d08ae266e6187a9e73cfc57da779fd71fc2a86e5d0bc2",
+          "reader_sha256": "0cb8846e871db0a67b7f8c4fbe461300fa28f4abb051cc5276cd55e82e6167ce",
+          "native_LF": [
+            7,
+            19
+          ],
+          "quote_sha256": "198320bc71d93104ecf71a8bef470156105fd83ada4a51734c0b148f1cc679b6",
+          "exact_prior_read_bridge": [
+            "de-payroll-benefits-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R86.A1",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1b7b835e5551dbae.reader.txt",
+          "raw_sha256": "55458457d6c11e37fd3eb737e049cb2b9e870886c60d25ccbd06d643ca3c5563",
+          "reader_sha256": "b9330b60c558e927b7400f590f1f7731ac9b5ed224d3b4ed84df87317a4ce9ce",
+          "native_LF": [
+            143,
+            178
+          ],
+          "quote_sha256": "89f83173706cfafb2ba737544a1575fa8c86ed032556191bfcf7876838823a36",
+          "exact_prior_read_bridge": [
+            "de-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R82.events",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB053.txt",
+          "raw_sha256": "ca956522d97eb6b3e0d26daad6b181d6a42c15a10b093761c7050f5319a6dd2a",
+          "reader_sha256": "b49ac16bd1bbf9cb58f9f21b560d0074a7307e3cb935ac8b205b9009c3e0f921",
+          "native_LF": [
+            7,
+            10
+          ],
+          "quote_sha256": "f62a3944ec50ff2cf52b343fc616ac919a7cd3b98bef5340ccfee61c700b9706",
+          "exact_prior_read_bridge": [
+            "de-payroll-benefits-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R87.pension",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB134.txt",
+          "raw_sha256": "40d9ae6cb3debb95386adb0a4f7a6d610e9b12476b26c12e3419187635664fa0",
+          "reader_sha256": "eb21dd25065358bd6b92280ee5e8c45efafd4c8bf4e3a26dd6d2602b03e345cd",
+          "native_LF": [
+            7,
+            33
+          ],
+          "quote_sha256": "d925a773dfc3e7feeed7639bf2e2d56f319cfd24173a8298074580ab069563b9",
+          "exact_prior_read_bridge": [
+            "de-social-contributions-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R87.status",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB060.txt",
+          "raw_sha256": "1e783da5b5ff4e22c36d583fe2bbd0e4ca4d2c3a69f2955191224dd50496de52",
+          "reader_sha256": "a43f3a48a29f5a35948756ea142c7792b2d7b4e886d928b4909b55819a7e1ff2",
+          "native_LF": [
+            7,
+            20
+          ],
+          "quote_sha256": "46e47a6408c3fae9b4cc47e6c2d602ea423518a6478c0435e54ef9d254964a0b",
+          "exact_prior_read_bridge": [
+            "DE-R72-R77-social-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R87.late",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB110.txt",
+          "raw_sha256": "14c6142a57375cda4474e646526344b5bcdf653d406be0eb562a20cccb678705",
+          "reader_sha256": "7fa3e404cbf7c9b04e818f4a26d6c059ccd52b5e4750c4d063acaf2d08465557",
+          "native_LF": [
+            7,
+            9
+          ],
+          "quote_sha256": "f0b88a3e324c4e7b4efc33e57c7408b2bd6786548d4ce3dc7b87478179353342",
+          "exact_prior_read_bridge": [
+            "de-payroll-quote-reuse-plan.json"
+          ]
+        }
+      ],
+      "status": "PASS exact bounded successor. All actual delta operations read and assessed against actual own selected clauses or explicit exact prior-reading bridges. No countrywide completeness/attestation."
+    },
+    {
+      "successor_folder": "germany-DE-R62-R70-payroll-writer-successor-2026-10-29",
+      "manifest_members_rehashed": 25,
+      "pairs": [
+        {
+          "pair": {
+            "slug": "germany-payroll",
+            "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-payroll.md",
+            "Guide_sha256": "9a8ed7d2d018e23e3644d6eb951d050765935dcff6bc8770bbde1832e5ee505e",
+            "bytes": 63097,
+            "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R62-R70-payroll-writer-successor-2026-10-29/ledgers/germany-payroll.md",
+            "ledger_sha256": "0fb4685ccd3295679b6ca70b6b58f9ca3b70c849251bcb6fb31afcb808374cac",
+            "rows": 346,
+            "prior_rows": 346,
+            "old_topics": 512,
+            "prior_ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/germany-payroll.md",
+            "prior_ledger_sha256": "903e61acde1a27b3106b7695838c1815fa528605ee6eb65d0fb4fca4b6f7a2a9"
+          },
+          "before_sha256": "5a2eec995028a0fa55991eda2600a92904c6f7d11b9e8220a6e55d4a85942564",
+          "operations": 19,
+          "full_inverse": true,
+          "all_native_current_rows": 346,
+          "original_oa_byteexact": 0,
+          "protected_metadata_CTA_oldURLorder": true,
+          "actual_old_origin_identities_retained": 512,
+          "worked_prose_scope": "All original executable blocks byteexact; original full narrative examples retained (independent current-source meaning checked)",
+          "original_whole_worked_section_byteexact": true
+        },
+        {
+          "pair": {
+            "slug": "de-payroll",
+            "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-payroll.md",
+            "Guide_sha256": "11679ea5289f51dbaac24b7547c80f4f00505622205d2b4da7d0acd71db05765",
+            "bytes": 55438,
+            "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R62-R70-payroll-writer-successor-2026-10-29/ledgers/de-payroll.md",
+            "ledger_sha256": "d5886b1a06a64e662efde14798cf5e8343cdf9700d8bead49a63be0705878070",
+            "rows": 138,
+            "prior_rows": 136,
+            "old_topics": 175,
+            "prior_ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/de-payroll.md",
+            "prior_ledger_sha256": "c45ff60d57c437829d766218667ff3f7f9ac6ed20aea5c2d72d330dc7ad2f604"
+          },
+          "before_sha256": "f7864d22ecb5e51e67d65e1c799dd335abe3dc120be7e556779c84ac2df80382",
+          "operations": 13,
+          "full_inverse": true,
+          "all_native_current_rows": 138,
+          "original_oa_byteexact": 2,
+          "protected_metadata_CTA_oldURLorder": true,
+          "actual_old_origin_identities_retained": 175,
+          "worked_prose_scope": "All original executable blocks byteexact; original full narrative examples retained (independent current-source meaning checked)",
+          "original_whole_worked_section_byteexact": true
+        }
+      ],
+      "sources": [
+        {
+          "id": "R62-70.RECOVER",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U44fba97f2acbffef.reader.txt",
+          "raw_sha256": "9e7a1c55ca4b5f93041a6eaeb9e6d480837d2abcfbbe1e921dcc21aca28ef3c6",
+          "reader_sha256": "33b6dc0d3b946e4556d31d40c55b4659580ef8ae1f86f133ed6d8e5a7939a49f",
+          "native_LF": [
+            7,
+            7
+          ],
+          "quote_sha256": "d18c3fb3ef1ea0bc90cd9bda6640fe7f59499b8ad280df4dc7c2b724142bf887",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R62-70.MINI",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U0807260aa5dcc968.reader.txt",
+          "raw_sha256": "51043975307e6eef847ebfa5bbd2679f22c21122a58fa81fd2fe95a9823e6043",
+          "reader_sha256": "73502fe514818adb7a95ae9b3195ee83742e3386a4850380f665d5c75fbfe483",
+          "native_LF": [
+            7,
+            13
+          ],
+          "quote_sha256": "66254f73ba2f015036ec0cff07419ebd2198c8d138698d3bb31358a43edbbfe3",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R62-70.UVREPORT",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U532d69a8f1b24ff3.reader.txt",
+          "raw_sha256": "a3bf381aee4e11a65cf6bff806f89e888f913e9f679beb459be843b817a21d2a",
+          "reader_sha256": "3e7ece679176f183df8e2550aa77f7deb9e72a7e952505fe668baf918b4f26df",
+          "native_LF": [
+            52,
+            58
+          ],
+          "quote_sha256": "3b9a3411aecb5bf3fed5754b7dbb61cc2d374301cb2923d40caa2549f17e209a",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R62-70.AVERAGE",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U03b377b39fa3ef3f.reader.txt",
+          "raw_sha256": "5418015841e63fc1b1a3dc1099c5ea2e40cf7f6d6a617d0bc8b89a47703ac87e",
+          "reader_sha256": "64adee01b43648a74f735ace5c3d4aa08dc051806f0c4fd9cbf75a97c9618ab4",
+          "native_LF": [
+            293,
+            293
+          ],
+          "quote_sha256": "63dbb1cd6a3ffdf2505c2fe75d8ef2bc29e73425f35e488df0b8c8d7fb169fc1",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R62-70.CEILING",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8a0841550441ebc7.reader.txt",
+          "raw_sha256": "de050ad62d30ef31b580ae227ace25e27c4ed865658fb35c0ca5ddd88683957d",
+          "reader_sha256": "509eb3d4b27d44f581a3ce35bc74ce334784ca007befc9b48f8785eb0eb0c69d",
+          "native_LF": [
+            37,
+            41
+          ],
+          "quote_sha256": "1d2552097b631585c211d3ba702202033276db1f40d8064ed590e7b5218ccc70",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R62-70.AAGBASE",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U63ee29b924bb4a80.reader.txt",
+          "raw_sha256": "07f8d41af7094275ff538c5ca581c13b4bd4f69fbb007f0d521d909d0d609e7a",
+          "reader_sha256": "c33b997291c755d3488965aa9f766dd3f16c4a5adcb16d6eb689693b61d42857",
+          "native_LF": [
+            8,
+            8
+          ],
+          "quote_sha256": "a112e88b08d0ae6055530b1d628c244f46627c11d320b865e1dd1938160cd423",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R62-70.MINEXCEPT",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U97ef8fb6daf4c91f.reader.txt",
+          "raw_sha256": "36337bd18a86b17478418ef61523e6d51cd07f3edad32a08aba09b0da0f6ccd8",
+          "reader_sha256": "2d4883588751209f0e1d53053b25f39f2f825159a40da236305529ffc53c4417",
+          "native_LF": [
+            7,
+            18
+          ],
+          "quote_sha256": "6262ce197366f26072e820ecaa3fd457eb65e1d9812f0d2ad7558b61bd7ccdf9",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R62-70.NIGHT",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U16158a9e768da6a1.reader.txt",
+          "raw_sha256": "8f754d91583ea0301fb42b9511c569a7d126c5f10e78a40eeec3c14ae6b070ae",
+          "reader_sha256": "12b5e202cddab01ccad626f641de3f22526b50634dfbdff797c1639d09d440ff",
+          "native_LF": [
+            7,
+            20
+          ],
+          "quote_sha256": "48e813130f61a3d303feb7dc2771fb1d42851e2e61912458d0b7269f297260de",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R62-70.NIGHTSV",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ufecb1f1e1eb6a0e8.reader.txt",
+          "raw_sha256": "dd09050791c50af13998ddb3ce6b186eb33f00e14a9a61b03bb1c3a6721171ad",
+          "reader_sha256": "a5316e3b7b259ce366fc814c3304c278923e12e3fa7e2dbc6b21485c48029e8c",
+          "native_LF": [
+            7,
+            7
+          ],
+          "quote_sha256": "c2da8e2fb64a5e8a41d80b7d5a01387dd635f9b0ec914231928e33ad987cc562",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R62-70.SICK",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud81635a0674aff75.reader.txt",
+          "raw_sha256": "2e15c7293642f9d1b827168a0c96e440694e13144b7b21ecb157765b3dc8a0aa",
+          "reader_sha256": "7e34c0843d7cf47d26dc1f1e2a58d956abd3b75429c87cbee56420db023e05b7",
+          "native_LF": [
+            7,
+            12
+          ],
+          "quote_sha256": "bdfe0819fc935b41071f40206b281cbe8c48cd9ac70ca1c4b20e9db9cd593856",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R62-70.SICKPAY",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98e65d062231d2ca.reader.txt",
+          "raw_sha256": "8e02e53b25fa39781b884c1fbe5b7c8c13644d23570c5a91d8e5494a9b48d084",
+          "reader_sha256": "52cad9a603308a0b447e89a5863a8e3ed45895e2b9c86eacb724320cedba85af",
+          "native_LF": [
+            7,
+            8
+          ],
+          "quote_sha256": "49b5830c78078adc986beba28ebb3ef169760323b713592c4a581c982736b766",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R62-70.PAPVALUES",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U04c9d8868081bd75.reader.txt",
+          "raw_sha256": "5da38acd544868ddcb0bc7f43030bd7d6ee9aa455dff0f42ad59732634e33a48",
+          "reader_sha256": "104f46ddb0f117a903d18079766f1c6ffffeb872e5fa4a26319b33c48cee538e",
+          "native_LF": [
+            64,
+            94
+          ],
+          "quote_sha256": "7dc884af31570b0d50fc0c6efec09d609bb25c6edb7a6b27d2bda896773f0b0f",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R69.ANNUAL",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7eeea869229436a9.reader.txt",
+          "raw_sha256": "e6a0de687394af3cc8d279e1b86bc48ddcca02d9d850adf9fb97847e7a21dc13",
+          "reader_sha256": "e0b8b4f1c80c07428fd890efaa580215a4b33187b3028c1c384c5b59526cb4a5",
+          "native_LF": [
+            7,
+            7
+          ],
+          "quote_sha256": "fdf9a41427163c7d6d380cd1edc08205c7dda6b47cbd35736100d319f82d2830",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R67.BMG-rate",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BMG-health-2026.reader.txt",
+          "raw_sha256": "ad135633759ad3aea1ad2fc36f4689e90bca5905e5d248a6f2cbb521caf92ed4",
+          "reader_sha256": "e0d3a84fc7114a8463fee70d840ebe610f7a5cd7e598b6e2a965870cf0cb1d39",
+          "native_LF": [
+            390,
+            402
+          ],
+          "quote_sha256": "2ff39e06f2fca4fd31bb16e65e04b3b26733e86ad74cd5ae028d5563c03912d0",
+          "exact_prior_read_bridge": [],
+          "actual_read_resolution": "Exact selected text actually read: Annex2full7\u201310/67\u201371 in bounded treaty readings and current closure display; PAP1478\u20131585 actual prior independent extracted/visual scope and full current display; BMG390\u2013402 within actual375\u2013427 selected read; ownSGBX26 JSON web observation initially read directly; SGBVI16313\u201316/AAG915\u201318 actually acquired/read for R89/90, with exact retained identity. No fullsource or rawHTML claim."
+        },
+        {
+          "id": "R67.BMG-ceiling",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BMG-health-2026.reader.txt",
+          "raw_sha256": "ad135633759ad3aea1ad2fc36f4689e90bca5905e5d248a6f2cbb521caf92ed4",
+          "reader_sha256": "e0d3a84fc7114a8463fee70d840ebe610f7a5cd7e598b6e2a965870cf0cb1d39",
+          "native_LF": [
+            379,
+            380
+          ],
+          "quote_sha256": "45a481e673c7321233e5511236ce435693a77eee4e206e8594673b037e8ced1c",
+          "exact_prior_read_bridge": [
+            "DE-R62-R70-payroll-selected-source-read-ledger.json"
+          ]
+        },
+        {
+          "id": "R69.SGBX26",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/payroll-SGBX26-web-observation.json",
+          "raw_sha256": "bc5324cc1c52a3c969c6c2437ac28b0786f7d1e626d96149cd540d9e082254a0",
+          "reader_sha256": "bc5324cc1c52a3c969c6c2437ac28b0786f7d1e626d96149cd540d9e082254a0",
+          "native_LF": [
+            null,
+            null
+          ],
+          "quote_sha256": "608f0f9119034ec56fc8716d18d5d3d212bbbff33034e973012e1796bd52dfed",
+          "exact_prior_read_bridge": [],
+          "actual_read_resolution": "Exact selected text actually read: Annex2full7\u201310/67\u201371 in bounded treaty readings and current closure display; PAP1478\u20131585 actual prior independent extracted/visual scope and full current display; BMG390\u2013402 within actual375\u2013427 selected read; ownSGBX26 JSON web observation initially read directly; SGBVI16313\u201316/AAG915\u201318 actually acquired/read for R89/90, with exact retained identity. No fullsource or rawHTML claim."
+        }
+      ],
+      "status": "PASS exact bounded successor. All actual delta operations read and assessed against actual own selected clauses or explicit exact prior-reading bridges. No countrywide completeness/attestation."
+    },
+    {
+      "successor_folder": "germany-DE-R88-R96-payroll-writer-successor-2026-10-29",
+      "manifest_members_rehashed": 25,
+      "pairs": [
+        {
+          "pair": {
+            "slug": "de-payroll",
+            "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-payroll.md",
+            "Guide_sha256": "7a318a63c5364e3d0e95c06f1a8ebd9aae02e0355d93562e97918102395e56d5",
+            "bytes": 59931,
+            "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R88-R96-payroll-writer-successor-2026-10-29/ledgers/de-payroll.md",
+            "ledger_sha256": "4e7983d13a1bd95585ffedfdb2aeec4f57134b2c29ca90c84195ea32a6cff1bf",
+            "rows": 140,
+            "immediate_prior_rows": 138,
+            "old_topics": 175,
+            "prior_ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R62-R70-payroll-writer-successor-2026-10-29/ledgers/de-payroll.md",
+            "prior_ledger_sha256": "d5886b1a06a64e662efde14798cf5e8343cdf9700d8bead49a63be0705878070"
+          },
+          "before_sha256": "11679ea5289f51dbaac24b7547c80f4f00505622205d2b4da7d0acd71db05765",
+          "operations": 14,
+          "full_inverse": true,
+          "all_native_current_rows": 140,
+          "original_oa_byteexact": 2,
+          "protected_metadata_CTA_oldURLorder": true,
+          "actual_old_origin_identities_retained": 175,
+          "worked_prose_scope": "All original executable blocks byteexact; original full narrative examples retained (independent current-source meaning checked)",
+          "original_whole_worked_section_byteexact": true
+        },
+        {
+          "pair": {
+            "slug": "germany-payroll",
+            "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-payroll.md",
+            "Guide_sha256": "16b1a73defe4c7e4971d7982ccea5713766875abb49b8ac7edb902545d2ff075",
+            "bytes": 66526,
+            "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R88-R96-payroll-writer-successor-2026-10-29/ledgers/germany-payroll.md",
+            "ledger_sha256": "cff96dcbe2b4bb4af5b13b8bc21afbccd5384c1d545a118b80bea622248418db",
+            "rows": 348,
+            "immediate_prior_rows": 346,
+            "old_topics": 512,
+            "prior_ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R62-R70-payroll-writer-successor-2026-10-29/ledgers/germany-payroll.md",
+            "prior_ledger_sha256": "0fb4685ccd3295679b6ca70b6b58f9ca3b70c849251bcb6fb31afcb808374cac"
+          },
+          "before_sha256": "9a8ed7d2d018e23e3644d6eb951d050765935dcff6bc8770bbde1832e5ee505e",
+          "operations": 14,
+          "full_inverse": true,
+          "all_native_current_rows": 348,
+          "original_oa_byteexact": 0,
+          "protected_metadata_CTA_oldURLorder": true,
+          "actual_old_origin_identities_retained": 512,
+          "worked_prose_scope": "All original executable blocks byteexact; original full narrative examples retained (independent current-source meaning checked)",
+          "original_whole_worked_section_byteexact": true
+        }
+      ],
+      "sources": [
+        {
+          "id": "R89.employershare",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB071.txt",
+          "raw_sha256": "0046c1be59b1cf96269f6427ebd46c9736d4520bb629af9b69ffa28f5c14cf98",
+          "reader_sha256": "0b72192bf40f9cde660ced74600ac9c6e2adbfad961fc52d596182d3fc604bb8",
+          "native_LF": [
+            7,
+            16
+          ],
+          "quote_sha256": "8adc9e89ef8aba9cfd7e62f216f909a3f224a9a866e5a3e0cc33323ede7a34a0",
+          "exact_prior_read_bridge": [
+            "de-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R92.flat",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB082.txt",
+          "raw_sha256": "5d0a4cf71c049dfe80f603d18e74968799302f153a365a35fcb41b4786f95bed",
+          "reader_sha256": "8779e09d795175473d89e3b4e86058705a4ab347eb1baed7a8ecbb9f0fa80d4d",
+          "native_LF": [
+            7,
+            20
+          ],
+          "quote_sha256": "cfacb6adccc00478e857b0f7de561d799a02c50074f59e0b61af9688f394a7bf",
+          "exact_prior_read_bridge": [
+            "de-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R93.classes",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB085.txt",
+          "raw_sha256": "c97b7db9a18c84845688cf49f6963ca2b7e1b9ec7983499c399f1b369d3ad61b",
+          "reader_sha256": "27b4ee4d91f81177a7ee7838ec39daa0f9d11f038b69f1fc97a8309c3b1b3385",
+          "native_LF": [
+            7,
+            38
+          ],
+          "quote_sha256": "1b4763141f4bb370d6af2702ebea10073a458f3dbcff11dcb2482a3f6826f93f",
+          "exact_prior_read_bridge": [
+            "de-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R93.missing",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB086.txt",
+          "raw_sha256": "adcf3b9dc694033214f020218e90e8b7901e07324db96cfba7813a4416ab6fe3",
+          "reader_sha256": "bac7710086842c4599abaf3a62f52ddb6b337131b164d778fcef8fb522befe53",
+          "native_LF": [
+            7,
+            9
+          ],
+          "quote_sha256": "fe09bb9a42db53919309893c38745dc8b07ab1a95d68b3f7cf5a3d39295d2e88",
+          "exact_prior_read_bridge": [
+            "de-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R89.calculation",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB299.txt",
+          "raw_sha256": "c5e8dc2c8bd2014aa8e0b72db8e504e7ca456054f106fe8787d84f479c284c86",
+          "reader_sha256": "4dec988c45f70e2bbf67fa06f84253d63ecb6223f0288c39b06e9cdb58654bfd",
+          "native_LF": [
+            7,
+            8
+          ],
+          "quote_sha256": "fad2d5e96651d8ec984a92868846750abe726ff4a6c66f4a86798fd3e4f9005b",
+          "exact_prior_read_bridge": [
+            "de-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R91.multijob",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB088.txt",
+          "raw_sha256": "6429ed296b16880c9b62e06312d883350666397b75a3b0dfbad164f6476dc78e",
+          "reader_sha256": "efa3c5b90203ec761326cad1f306d2c4ce0ed256ebdf38cb664a6236e341f934",
+          "native_LF": [
+            7,
+            8
+          ],
+          "quote_sha256": "731f2bc701090c82e80a3cb2fe695c06db7d6aaea67fc9f8cb687e16606eac03",
+          "exact_prior_read_bridge": [
+            "de-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R94.maternity",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB202.txt",
+          "raw_sha256": "f0089e3bbc148dc3635393c771f29b02a4866d0a0142456f70528f7eb9266762",
+          "reader_sha256": "e7cadc2700de8e7981aad46ec67b2c5fbaddef207b6e9dfeb8d6192febba4566",
+          "native_LF": [
+            7,
+            10
+          ],
+          "quote_sha256": "db6c415d96857e645cb7db14e408802043e9ced79974eb189774628e9039e26d",
+          "exact_prior_read_bridge": [
+            "de-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R96.copy",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB099.txt",
+          "raw_sha256": "a3bf381aee4e11a65cf6bff806f89e888f913e9f679beb459be843b817a21d2a",
+          "reader_sha256": "3e7ece679176f183df8e2550aa77f7deb9e72a7e952505fe668baf918b4f26df",
+          "native_LF": [
+            151,
+            158
+          ],
+          "quote_sha256": "1730b04b6d9018f9e726a0d12d86ee4731230f2fd9074b64dce72a9f1a166b12",
+          "exact_prior_read_bridge": [
+            "de-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R88.weekend",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB015.txt",
+          "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+          "reader_sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9",
+          "native_LF": [
+            9,
+            9
+          ],
+          "quote_sha256": "6d22b5c1a15f4b1a75caa5aa3b16dcb5e5ffcf4f80488918ed5261c136d40df4",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R88.certificate",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB105.txt",
+          "raw_sha256": "e738d7a3ccd36867daeed0ce721a7c7dbe096c6a8b59a0dbabaf4189ad3e3042",
+          "reader_sha256": "e4fb1d778abd99dc4f6ecb3b9f05bdd7ea25bbcb416765dfb825d66fa63dd688",
+          "native_LF": [
+            7,
+            15
+          ],
+          "quote_sha256": "47b082e2fc41e9a89df9af3c1547ab237bb9ae8a7538cb1a2b917cddee3a8323",
+          "exact_prior_read_bridge": [
+            "de-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R88.deadline",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB106.txt",
+          "raw_sha256": "a17b6c46401f533886d2f0a58c85fddf58b83038402bc512d3e5d95337ef1fe9",
+          "reader_sha256": "d1ea24c7e9676c087859b92a13c21f5de81948cf6eefe1026a6fbed581dedc16",
+          "native_LF": [
+            7,
+            8
+          ],
+          "quote_sha256": "fd374dedb0722e034fa71bb22d1b864d7515c81593daaa8f464fc681b6b8abe4",
+          "exact_prior_read_bridge": [
+            "germany-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R95.adjust",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB107.txt",
+          "raw_sha256": "c46046e376b0d8357f3ac08fae621317486d14587c8e76acd07ecfe003ebf0b8",
+          "reader_sha256": "486463a05fe12a2929512cfe1699fd0d61616d25f4b5def05b0638dc1335251d",
+          "native_LF": [
+            7,
+            30
+          ],
+          "quote_sha256": "2d01a2bd10f07ef914a85068174e981133a12dcfb14e1336b0271ef916562b3a",
+          "exact_prior_read_bridge": [
+            "de-payroll-quote-reuse-plan.json"
+          ]
+        },
+        {
+          "id": "R89.minimum",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/payroll-remaining-gates/SGBVI163.reader.txt",
+          "raw_sha256": "8a31343e9b7496b118054452ba6129e5b2e06a90600b34a97d782212c10149e9",
+          "reader_sha256": "0b38d63fe3b014e76ab4aa45f9a86677d5afdf1b3afd0eb58cabb582729e724f",
+          "native_LF": [
+            13,
+            16
+          ],
+          "quote_sha256": "f759511143df248db60208c6f6a6ca39272c6e6fd53e71fabad4b91dab08db8e",
+          "exact_prior_read_bridge": [],
+          "actual_read_resolution": "Exact selected text actually read: Annex2full7\u201310/67\u201371 in bounded treaty readings and current closure display; PAP1478\u20131585 actual prior independent extracted/visual scope and full current display; BMG390\u2013402 within actual375\u2013427 selected read; ownSGBX26 JSON web observation initially read directly; SGBVI16313\u201316/AAG915\u201318 actually acquired/read for R89/90, with exact retained identity. No fullsource or rawHTML claim."
+        },
+        {
+          "id": "R90.tariff",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/payroll-remaining-gates/AAG9.reader.txt",
+          "raw_sha256": "e4db9fcbf11ef99852326bdefaba72e72e9262f047db1b7c156282e2575da283",
+          "reader_sha256": "d8318391bda01fec22060c9b486060be534d66576fe7f8b2859bfc7b43defa9d",
+          "native_LF": [
+            15,
+            18
+          ],
+          "quote_sha256": "19b1d5f9476fcb2308e8b159ce44f8e744aa8fc672de0250fc9fab12a553bd2e",
+          "exact_prior_read_bridge": [],
+          "actual_read_resolution": "Exact selected text actually read: Annex2full7\u201310/67\u201371 in bounded treaty readings and current closure display; PAP1478\u20131585 actual prior independent extracted/visual scope and full current display; BMG390\u2013402 within actual375\u2013427 selected read; ownSGBX26 JSON web observation initially read directly; SGBVI16313\u201316/AAG915\u201318 actually acquired/read for R89/90, with exact retained identity. No fullsource or rawHTML claim."
+        },
+        {
+          "id": "R91.rounding",
+          "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB298.txt",
+          "raw_sha256": "bfc5c3da4e3105e6e9142877171bbd329ef7659ee64db0eeb5a3669a9f9c82e7",
+          "reader_sha256": "5d0aef0eb370f24238ff86d4519841a7a2037b489a5bacea4dc0867e8b2bc238",
+          "native_LF": [
+            7,
+            8
+          ],
+          "quote_sha256": "6b5ed90cd081770ab6dbd818bbb4f371a8be51fdba8adff76c73b8d2461ebfef",
+          "exact_prior_read_bridge": [
+            "de-payroll-quote-reuse-plan.json"
+          ]
+        }
+      ],
+      "status": "PASS exact bounded successor. All actual delta operations read and assessed against actual own selected clauses or explicit exact prior-reading bridges. No countrywide completeness/attestation."
+    }
+  ],
+  "independent_controls": [
+    {
+      "name": "combinedtax10k15",
+      "actual": "1500",
+      "expected": "1500"
+    },
+    {
+      "name": "combinedgrosswithheld2637.5refund",
+      "actual": "2275/2",
+      "expected": "2275/2"
+    },
+    {
+      "name": "domesticpartialcompany2fifths",
+      "actual": "1000",
+      "expected": "1000"
+    },
+    {
+      "name": "50j45exact",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "50j70exact",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "50j15exactnotbelow",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "50j10directexception",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "cbcrordinaryone12months",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "cbcrknowledge15Febnext15Mar",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "cbcr12monthresetnotmethod",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "VSPsmallclassV1900room",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "stipulatedcertsum",
+      "actual": "9414",
+      "expected": "9414"
+    },
+    {
+      "name": "stipulatedannualbalance",
+      "actual": "1910",
+      "expected": "1910"
+    },
+    {
+      "name": "newgroupopinion2yearcontractgate",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "privatepolicy5000inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "kskpartial12k6months",
+      "actual": "98",
+      "expected": "98"
+    },
+    {
+      "name": "kskwrong12months",
+      "actual": "49",
+      "expected": "49"
+    },
+    {
+      "name": "kskprepay40notexceeds",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "yogaMay31Sunday",
+      "actual": "6",
+      "expected": "6"
+    },
+    {
+      "name": "yogaJune1Monday",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "staffdiscount2k",
+      "actual": "340",
+      "expected": "340"
+    },
+    {
+      "name": "lodging2adults",
+      "actual": "171",
+      "expected": "171"
+    },
+    {
+      "name": "lodging3adults",
+      "actual": "285/2",
+      "expected": "285/2"
+    },
+    {
+      "name": "lodging4adults",
+      "actual": "114",
+      "expected": "114"
+    },
+    {
+      "name": "affiliated37bminimum",
+      "actual": "288",
+      "expected": "288"
+    },
+    {
+      "name": "lowearnerprior2016cap",
+      "actual": "100",
+      "expected": "100"
+    },
+    {
+      "name": "bAVtwoqualterminationyears",
+      "actual": "8112",
+      "expected": "8112"
+    },
+    {
+      "name": "sharesdeclineactual5minus1",
+      "actual": "4000",
+      "expected": "4000"
+    },
+    {
+      "name": "SVnightpart30x25",
+      "actual": "15/2",
+      "expected": "15/2"
+    },
+    {
+      "name": "SVnightfree25x25",
+      "actual": "25/4",
+      "expected": "25/4"
+    },
+    {
+      "name": "SVnightliable",
+      "actual": "5/4",
+      "expected": "5/4"
+    },
+    {
+      "name": "U1actual60",
+      "actual": "600",
+      "expected": "600"
+    },
+    {
+      "name": "U1statute80",
+      "actual": "800",
+      "expected": "800"
+    },
+    {
+      "name": "Frounded",
+      "actual": "6619/10000",
+      "expected": "6619/10000"
+    },
+    {
+      "name": "2025DEUEVFeb15Sunday",
+      "actual": "6",
+      "expected": "6"
+    },
+    {
+      "name": "2025DEUEVFeb16Monday",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "certificate2026Feb28Sunday",
+      "actual": "6",
+      "expected": "6"
+    },
+    {
+      "name": "certificate2026Mar1Monday",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "mini100total",
+      "actual": "651/20",
+      "expected": "651/20"
+    },
+    {
+      "name": "mini100employer",
+      "actual": "15",
+      "expected": "15"
+    },
+    {
+      "name": "mini100EE",
+      "actual": "351/20",
+      "expected": "351/20"
+    },
+    {
+      "name": "precapjob1",
+      "actual": "1428050/209",
+      "expected": "1428050/209"
+    },
+    {
+      "name": "precapjob2",
+      "actual": "338000/209",
+      "expected": "338000/209"
+    },
+    {
+      "name": "precapbothsum",
+      "actual": "8450",
+      "expected": "8450"
+    },
+    {
+      "name": "maternityone13",
+      "actual": "87",
+      "expected": "87"
+    },
+    {
+      "name": "maternityAG1",
+      "actual": "261/5",
+      "expected": "261/5"
+    },
+    {
+      "name": "maternityAG2",
+      "actual": "174/5",
+      "expected": "174/5"
+    },
+    {
+      "name": "maternitywrongtwice13",
+      "actual": "74",
+      "expected": "74"
+    }
+  ],
+  "sources_scope": "Every own quote rehashed and literal native checked or expressly identified official web observation. Actual source condition reading from completed25wholepair source ledgers/findings scopes and explicit current extended readings, not writer check counts.",
+  "actual_delta_reading": "All12initial+3precision treaty ops;7TPops;2employeeops;12socialops;21benefitops;32initialpayroll+28followuponly actual deltas read in bounded outputs.",
+  "genuine_remaining_limits": "Specific church rates/caps, individualfundtariffs, SaxonyMidijob, startuplowerpension/spousefundallocation, treaty-specific/SME-matrix and historicalaward interactions remain for final domain map; not converted to zero or specialist by convenience."
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/country-freeze.json",
+    "sha256": "c285780165db5543f52fd36a0e6eb77d5a5afb3addb48d9445f7e0acbfea44af",
+    "status": "Exact original freeze/manifest unchanged by this writer repair"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-handover-manifest.json",
+    "sha256": "caa546e677e15366d0530b1eb757fe4cfba54d87b9993d717c4d261de5282b24",
+    "status": "Exact original freeze/manifest unchanged by this writer repair"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/artifact-manifest.json",
+    "sha256": "61130a4ac7b8618cfc6ecb29771c5fd925e49d8b925c770f6489a43f6ab11004",
+    "status": "Exact original freeze/manifest unchanged by this writer repair"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/artifact-manifest.json",
+    "sha256": "bc4006c0abe2a76c3e49d26214240936778b2cfba955fd16c46b5b7d166580ca",
+    "status": "Exact original freeze/manifest unchanged by this writer repair"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/artifact-manifest.json",
+    "sha256": "0cef897bb7b4582183d67ba7ead0928ee45d3fb01038cc664bf3d03605de763c",
+    "status": "Exact original freeze/manifest unchanged by this writer repair"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/findings-first-PIT.md",
+    "sha256": "38ae63c04417028249a841a908df9b5fa3e524a28bef8e206f0fef05183837f5",
+    "status": "Independent finding actually read; repair is writer work, not self-independent closure"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/findings-employee-PIT.md",
+    "sha256": "1ed5c159f5e5e022825ae2d4bd55cf5f39e9ad5c2e85480f947a4fc0d60fc5d1",
+    "status": "Independent finding actually read; repair is writer work, not self-independent closure"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/finding-DE-R05-abfaerbung.md",
+    "sha256": "b6cba44da266382dfb8c69d9a8b58fac5ab9f3894d2cf05394bcb74e2aab3f5a",
+    "status": "Independent finding actually read; repair is writer work, not self-independent closure"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/finding-DE-R06-partner-summary-qualifications.md",
+    "sha256": "8883d5f04fc8cf3489ee8f7db2d40a763f9febcbdc917b99d9a1a80c13cba8fd",
+    "status": "Independent finding actually read; repair is writer work, not self-independent closure"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/finding-DE-R07-corporate-carry-conditions.md",
+    "sha256": "02a88fe420c1b641e5ce9dc234cf9a3cc0822d1315a76e2afa6ffd54fdc2b018",
+    "status": "Independent finding actually read; repair is writer work, not self-independent closure"
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/finding-DE-R08-corporate-withholding-gates.md",
+    "sha256": "faf70fa522b74c30e74f4e5cc8084467dc9e56ff28d4f21d6fdb0b7c48f45f70",
+    "status": "Independent finding actually read; repair is writer work, not self-independent closure"
+  }
+]

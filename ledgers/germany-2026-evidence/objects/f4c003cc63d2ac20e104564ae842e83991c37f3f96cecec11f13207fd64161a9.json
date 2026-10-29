@@ -1,0 +1,37 @@
+[
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/claude-status.md",
+    "sha256": "466519cf38c913a65fe0c26707789df031c71a9c96791fffd14d8811b22ecfb6",
+    "bytes": 17925
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/claude-restoration-merged-review-evidence.json",
+    "sha256": "c04cbdfe9a5e4dbf10b63be593cab8a7057cc343986bc1fb8fccbc0763a0a472",
+    "bytes": 34265
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/country-register.json",
+    "sha256": "16efefddc28b94409e092a9d3daa9683a239793bc7ae7cb8c816c577826399ca",
+    "bytes": 230308
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/HANDOVER-to-ChatGPT.md",
+    "sha256": "770b30c28d8f2e4b872956dcf084aef27d33aec53f8c68914b88b2e64d9836b1",
+    "bytes": 6069
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/HANDOVER-wave3.md",
+    "sha256": "0f8ad826cfb1322c9114019eb26ec66505019001cfd1085945ac5dc37b467668",
+    "bytes": 5651
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/writer-brief.md",
+    "sha256": "209e703d9293f004197aa696f4405d16a1d216228f15fbb1d0619ef5650fc50c",
+    "bytes": 6262
+  },
+  {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/reviewer-brief.md",
+    "sha256": "aab8fa3cc1f8964508e17c56980f1cfcb57a1e4526520788dad01b1be5424762",
+    "bytes": 5157
+  }
+]

@@ -1,0 +1,448 @@
+Urteil vom 21. Juli 2020, IX R 26/19
+Kaufpreisaufteilung auf Grund und Gebäude: FG darf die vertragliche Kaufpreisaufteilung nicht durch die mittels der
+Arbeitshilfe des BMF ermittelte Aufteilung ersetzen
+
+ECLI:DE:BFH:2020:U.210720.IXR26.19.0
+
+BFH IX. Senat
+
+EStG § 7 Abs 4, FGO § 81 Abs 1, FGO § 96 Abs 1 S 1, AO § 162, ImmoWertV , EStG § 9 Abs 1 S 3 Nr 7, EStG § 21, EStG VZ
+2017 , BBauG § 194
+
+vorgehend Finanzgericht Berlin-Brandenburg , 13. August 2019, Az: 3 K 3137/19
+
+Leitsätze
+1. Das FG darf eine vertragliche Kaufpreisaufteilung auf Grund und Gebäude, die die realen Wertverhältnisse in
+grundsätzlicher Weise verfehlt und wirtschaftlich nicht haltbar erscheint, nicht durch die unter Verwendung der
+Arbeitshilfe des BMF ermittelte Aufteilung ersetzen.
+
+2. Die Arbeitshilfe gewährleistet die von der Rechtsprechung geforderte Aufteilung nach den realen Verkehrswerten von
+Grund und Gebäude im Hinblick auf die Verengung der zur Verfügung stehenden Bewertungsverfahren auf das
+(vereinfachte) Sachwertverfahren und die Nichtberücksichtigung eines sog. Orts- oder Regionalisierungsfaktors bei der
+Ermittlung des Gebäudewerts nicht.
+
+3. Im Fall einer streitigen Grundstücksbewertung ist das FG in der Regel gehalten, gemäß § 81 Abs. 1 FGO das Gutachten
+eines öffentlich bestellten und vereidigten Sachverständigen für die Bewertung von Grundstücken einzuholen, wenn es
+nicht ausnahmsweise selbst über die nötige Sachkunde verfügt und diese in den Entscheidungsgründen darlegt.
+
+
+Tenor
+Auf die Revision der Klägerin wird das Urteil des Finanzgerichts Berlin-Brandenburg vom 14.08.2019 - 3 K 3137/19
+aufgehoben.
+
+Die Sache wird an das Finanzgericht Berlin-Brandenburg zur anderweitigen Verhandlung und Entscheidung
+zurückverwiesen.
+
+Diesem wird die Entscheidung über die Kosten des Verfahrens übertragen.
+
+
+Tatbestand
+I.
+
+1    Streitig ist die Aufteilung des Kaufpreises für eine vermietete Eigentumswohnung auf das Gebäude sowie den
+     Grund und Boden für Zwecke der Bemessung der Absetzung für Abnutzung (AfA).
+
+2    Die Klägerin und Revisionsklägerin (Klägerin), eine Grundstücksgemeinschaft, erwarb mit notariellem Vertrag vom
+     26.04.2017 eine 38,83 qm große Eigentumswohnung in der A-Straße in Z, verbunden mit einem Miteigentumsanteil
+     von 38,577/1 000 an dem Grundstück mit einer Größe von 1 185 qm und dem Sondernutzungsrecht an einem
+     Kellerraum sowie an einem Doppelgaragenplatz. Es handelt sich um eine vermietete Einzimmerwohnung im
+     zweiten Obergeschoss eines im Jahr 1973 fertiggestellten Mehrfamilienhauses. Nach dem Kaufvertrag betrug der
+     Kaufpreis 110.000 €, wovon per 30.04.2017 2.642,05 € auf den Anteil an der Instandhaltungsrücklage entfielen.
+     Zudem enthielt der Kaufvertrag folgende Regelung: "Im Kaufpreis enthalten ist das Entgelt für den anteiligen Wert
+
+
+                                                                                                                  Seite 1 von 8
+    des Grundstücks, den die Beteiligten nach bestem Wissen zum Zeitpunkt des Vertragsschlusses mit € 20.000,00
+    beziffern." Die Anschaffungskosten beliefen sich einschließlich Nebenkosten auf 118.002 €.
+
+3   In ihrer Feststellungserklärung für das Streitjahr 2017 berücksichtigte die Klägerin eine AfA-Bemessungsgrundlage
+    in Höhe von 96.547,47 €. Dabei legte sie die Kaufpreisaufteilung des notariellen Kaufvertrags zugrunde und
+    berechnete einen Gebäudeanteil von 81,81 % (20 000/110 000).
+
+4   Der Beklagte und Revisionsbeklagte (das Finanzamt ‑‑FA‑‑) ermittelte hingegen auf der Grundlage der vom
+    Bundesministerium der Finanzen (BMF) im Internet (www.bundesfinanzministerium.de) bereitgestellten
+    "Arbeitshilfe zur Aufteilung eines Gesamtkaufpreises für ein bebautes Grundstück (Kaufpreisaufteilung)" einen
+    Gebäudeanteil von 27,03 %. Dem lagen ein Bodenwert von 77.713 € (1 185 qm [Fläche] x 1.700 €/qm
+    [Bodenrichtwert] x 38 577/1 000 000 [Miteigentumsanteil]) sowie ein Gebäudewert von 28.782 € (39 qm
+    [Wohnfläche] x 738 €/qm [typisierte Herstellungskosten ‑‑THK‑‑]) zugrunde. Dementsprechend wurden die
+    Anschaffungskosten von 118.002 € aufgeteilt und im Bescheid für 2017 über die gesonderte und einheitliche
+    Feststellung von Besteuerungsgrundlagen vom 05.10.2018 in Höhe von 31.896 € der AfA unterworfen.
+
+5   Im Einspruchsverfahren trug die Klägerin zur Abweichung des im Kaufvertrag angegebenen Bodenwerts vom
+    Bodenrichtwert vor, sie habe sich vor dem Erwerb der Wohnung umfassend mit dem von einer "Stararchitektin"
+    erbauten Gebäude auseinandergesetzt. Dabei seien nicht nur der Zustand des Gebäudes, sondern auch der Zuschnitt
+    der Wohnung und die Raumaufteilung, die Gestaltung der Hausflure und die großen Balkone kaufentscheidend
+    gewesen. Hingegen sei die Lage des Grundstücks (zwischen S-Bahn und Autobahn, nahe einem Platz mit hoher
+    Verbrechensrate, Kopfsteinpflaster vor der Tür) nicht gut. Daher sei der Bodenrichtwert haltlos. Der im Kaufvertrag
+    ausgewiesene Anteil sei von den Kaufvertragsparteien ‑‑es handele sich um fremde Dritte‑‑ wohlbedacht und
+    angemessen zugeordnet worden. Allein die Aufwendungen für eine Renovierung von Bad und Küche wären höher
+    als der nach der Arbeitshilfe zugrunde zu legende Gebäudewertanteil.
+
+6   Dem folgte das FA im Rahmen der Einspruchsentscheidung vom 08.05.2019 nur insoweit, als es nunmehr einen
+    Gebäudewertanteil von 30,9 % und damit eine AfA-Bemessungsgrundlage von 36.463 € ansetzte, weil es bei der
+    Berechnung des Gebäudeanteils den Tiefgaragenstellplatz (5.965 €, Gebäudewert somit insgesamt 34.747 €) außer
+    Acht gelassen hatte.
+
+7   Dagegen erhob die Klägerin Klage und machte ergänzend geltend, der im Kaufvertrag ausgewiesene
+    Gebäudewertanteil liege noch weit unter den aktuellen Gebäudeherstellungskosten von mindestens 2.000 € pro
+    qm, so dass ein Betrag von 80.000 € als Mindestwert für den Gebäudeanteil anzusehen sei. Veröffentlichungen des
+    Zentralverbandes des Deutschen Baugewerbes sei zu entnehmen, dass Baukosten von 2.400 € pro qm und anteilige
+    Grundstückskosten von 600 € pro qm für innerstädtische Lagen anzusetzen seien, woraus sich ‑‑wie im Kaufvertrag
+    ausgewiesen‑‑ ein Bodenwertanteil von 20 % ergebe. Es treffe zwar zu, dass die Kaufpreisaufteilung im notariellen
+    Kaufvertrag von der Käuferseite veranlasst gewesen sei und die Verkäuferseite keine Veranlassung gehabt habe,
+    sich dieser zu widersetzen. Der Aufteilung liege jedoch zugrunde, dass eine kalkulierte Rendite von 6,71 % ‑‑allein
+    bezogen auf den Gebäudewert‑‑ habe erreicht werden sollen.
+
+8   Mit dem in Entscheidungen der Finanzgerichte (EFG) 2020, 182 veröffentlichten Urteil wies das Finanzgericht (FG)
+    die Klage als unbegründet ab. Zur Begründung führte es im Wesentlichen aus, die vertragliche Kaufpreisaufteilung
+    spiegele im Streitfall nicht die realen Wertverhältnisse wider. Es halte die Arbeitshilfe für die Wertermittlung,
+    insbesondere für die Ermittlung des Gebäudesachwerts, grundsätzlich für geeignet, messe ihren Ergebnissen eine
+    große indizielle Bedeutung zu, um bei erheblicher Abweichung die Marktangemessenheit der vertraglich
+    vereinbarten Kaufpreisaufteilung widerlegen zu können, und sehe in ihr ‑‑im Fall der Widerlegung‑‑ eine geeignete
+    Schätzungshilfe.
+
+9   Dagegen richtet sich die Revision der Klägerin. Sie macht ergänzend geltend, dass in der Arbeitshilfe die
+    tatsächlichen Wertverhältnisse durch typisierte Schätzungen im Bereich des Gebäudewerts nicht zutreffend
+    dargestellt würden. Selbst der Gesetzgeber halte ‑‑wie sich an § 7b des Einkommensteuergesetzes (EStG) zeige‑‑
+    Baukosten in Höhe von 2.000 € pro qm für einfache Wohnräume für nicht realisierbar; die Fördergrenze sei daher
+    auf 3.000 € pro qm ‑‑mit baldiger Anpassung auf 3.500 € pro qm‑‑ festgelegt worden. Die vorliegend
+    berücksichtigten Baukosten gemäß Sachwertrichtlinie (SW-RL) vom 05.09.2012, veröffentlicht im Bundesanzeiger,
+    Amtlicher Teil, 18.10.2012 B1, betrügen indes 1.405 € pro qm (ohne Alterswertminderung). Im Übrigen habe das FG
+    den "Wert des Wohnens" außer Acht gelassen. Die Ermittlung des Gebäudeanteils durch die Finanzverwaltung sei
+    einseitig nach dem Sachwert erfolgt. Den mit der Vermietung erzielten Einnahmen der Klägerin stünden keine dem
+    Wohnwert entsprechenden Werbungskosten gegenüber.
+                                                                                                              Seite 2 von 8
+10 Die Klägerin beantragt sinngemäß,
+   das Urteil des FG Berlin-Brandenburg vom 14.08.2019 aufzuheben und den Feststellungsbescheid vom 05.10.2018
+   in Gestalt der Einspruchsentscheidung vom 08.05.2019 dahingehend abzuändern, dass bei der Ermittlung der
+   Einkünfte aus der Vermietung des Objekts A-Straße eine AfA-Bemessungsgrundlage unter Berücksichtigung eines
+   Gebäudeanteils von 81,8 % zugrunde gelegt wird.
+
+11 Das FA beantragt,
+   die Revision zurückzuweisen.
+
+12 Es trägt im Wesentlichen vor, die Vorinstanz habe die Rechtsprechung zur Aufteilung des Gesamtkaufpreises auf die
+   erworbenen Wirtschaftsgüter zutreffend angewandt. Es bestünden erhebliche Zweifel an der vereinbarten
+   Kaufpreisaufteilung, die die Klägerin nicht durch andere qualifizierte Indizien habe entkräften können. Vor diesem
+   Hintergrund sei die Überprüfung der Kaufpreisaufteilung gerechtfertigt gewesen. Die vom BMF herausgegebene
+   Arbeitshilfe stelle dafür ein geeignetes Instrument dar. Sie gehe insbesondere über eine bloße Bestimmung der
+   Bodenrichtwerte und deren Vergleich mit dem kaufvertraglichen Bodenanteil hinaus. Ihr lägen die Vorschriften der
+   Verkehrswertermittlung auf der Grundlage des Baugesetzbuchs (BauGB), hier des Sachwertverfahrens nach der
+   Immobilienwertverordnung (ImmoWertV) vom 19.05.2010 (BGBl I 2010, 639) zugrunde. Der Gebäudewert werde
+   ‑‑entgegen den Ausführungen der Klägerin‑‑ auf der Grundlage der Normalherstellungskosten (NHK) 2010, die als
+   Ausgangswert herangezogen würden, ermittelt. Schließlich erfolge eine Indizierung des Preises entsprechend des
+   Baupreisindex (im Streitfall mit 116,8 % der NHK 2010). Dadurch erfolge eine Angleichung an heutige Werte. Damit
+   würden den aktuellen Bodenrichtwerten auch angepasste Baukosten gegenübergestellt.
+
+13 Zu Unrecht nehme die Klägerin an, dass die aus einer verstärkten Nachfrage und damit Verknappung resultierende
+   Preissteigerung von Wohnimmobilien einer bestimmten Lage aufgrund der Berechnungssystematik der Arbeitshilfe
+   praktisch nur zu einer Erhöhung des Bodenwerts und damit zu einer entsprechenden Verschiebung bei der
+   Kaufpreisaufteilung von Bestandsimmobilien führe. Lediglich auf eine Marktanpassung der (vorläufigen) Sachwerte
+   sei verzichtet worden, da sich diese im gleichen Verhältnis auf den Grund und Boden einerseits sowie auf das
+   Gebäude anderseits auswirke. Die Summe der ermittelten Einzelwerte (vorläufige Sachwerte) weise damit ohne
+   Marktanpassung zwar nicht den Verkehrswert aus. Das Aufteilungsverhältnis ändere sich jedoch nicht.
+
+14 Entgegen der Auffassung der Klägerin seien die in der Kaufpreisaufteilung berücksichtigten THK angemessen. Nach
+   der Indizierung der NHK aus 2010 von 1.405 € pro qm auf das Jahr 2017 ergäben sich Herstellungskosten von
+   1.642 € pro qm Wohnfläche für ein Gebäude mit dem Standard des Jahres 1973. Dies stelle keinen Widerspruch zur
+   Förderhöchstgrenze von 2.000 € pro qm und zur Baukostenobergrenze nach § 7b EStG von 3.000 € pro qm für einen
+   aktuellen Baustandard dar, sondern sei plausibel.
+
+15 Die Arbeitshilfe ermögliche damit, in einem typisierten Verfahren die Kaufpreisaufteilung entweder selbst
+   vorzunehmen oder die Plausibilität einer vertraglichen Kaufpreisaufteilung zu überprüfen. Es handele sich um eine
+   qualifizierte Schätzung, der immanent sei, dass nicht alle Einzelfallumstände bewertet werden könnten. Dabei
+   könne der Steuerpflichtige aber Besonderheiten, die eine abweichende Bewertung rechtfertigten, z.B. im Wege einer
+   sachverständigen Stellungnahme geltend machen. Dies sei ein Korrektiv, um preisliche Unterschiede und
+   Ungerechtigkeiten auszugleichen. Dadurch sei eine verhältnismäßige und für die Beteiligten planbare Handhabung
+   der Wertermittlung einerseits und eine Möglichkeit zur Berücksichtigung besonderer Einzelfallumstände
+   andererseits geschaffen worden.
+
+16 Das BMF ist dem Verfahren beigetreten und unterstützt das FA. Das BMF verweist im Wesentlichen darauf, dass die
+   Prüfung einer vertraglichen Kaufpreisaufteilung ebenso wie die Aufteilung selbst durch eine bausachverständige
+   Stellungnahme erfolgen könne. Im steuerlichen Massenverfahren ließen sich aber nicht alle Kaufpreisaufteilungen
+   durch Bausachverständige überprüfen, vielmehr bedürfe es im Hinblick auf die hohe Zahl von
+   Immobilientransaktionen einer gewichtenden Arbeitsweise (§ 88 Abs. 2 der Abgabenordnung ‑‑AO‑‑), so dass die
+   Bausachverständigen etwa bei Sonderbauten und in Zweifelsfällen herangezogen würden. In allen anderen Fällen
+   müssten die Veranlagungsstellen die Kaufpreisaufteilung ‑‑unter Heranziehung der Arbeitshilfe‑‑ durchführen bzw.
+   überprüfen. Die Arbeitshilfe gewährleiste ‑‑wie von den Landesrechnungshöfen gefordert (Jahresbericht des
+   Landesrechnungshofs Niedersachsen für 2017, S. 88)‑‑ einen bundesweiten effektiven und gleichmäßigen
+   Gesetzesvollzug. Sie sei im Jahr 2019 knapp über 200 000 mal von der Homepage des BMF heruntergeladen
+   worden. Dies zeige ‑‑gepaart mit der geringen Zahl an Bürgeranfragen (ca. 20 im Jahr 2019)‑‑ die große
+   Nachvollziehbarkeit und Akzeptanz des Tools auf Seiten der Steuerpflichtigen. Es handele sich um eine
+
+
+                                                                                                            Seite 3 von 8
+      ‑‑sachverständig widerlegbare‑‑ qualifizierte Schätzung, die die Vorgaben der ImmoWertV und der SW-RL umsetze.
+      Hingegen habe die Arbeitshilfe nicht den Anspruch, eine sachverständige Stellungnahme zu ersetzen.
+
+17 Der Bezug zu den aktuellen Baupreisen werde durch die jährliche Aktualisierung der Arbeitshilfe unter
+   Berücksichtigung der vom Statistischen Bundesamt veröffentlichten Preisindizes für die Bauwirtschaft
+   gewährleistet. Zudem könne, sofern es nicht um einen Neubau gehe, die Alterswertminderung als Marktanpassung
+   verstanden werden.
+
+18 Die gegen die Arbeitshilfe angeführte Kritik, dass sich in Regionen mit einem starken Nachfrageüberhang nur der
+   Bodenwert und damit der Bodenwertanteil erhöhe und regionale Baukostenunterschiede unberücksichtigt blieben,
+   gehe fehl. Höhere Kaufpreise führten wegen des Mechanismus der Arbeitshilfe (Verhältnisrechnung) nicht allein zu
+   einer Erhöhung des Bodenwertanteils. Zudem seien die örtlich unterschiedlichen Preissteigerungen bei Immobilien
+   insbesondere mit der Lage zu begründen. Die eher geringfügig vom allgemeinen Markt abweichenden
+   Baukostensteigerungen fielen im Vergleich zu den Bodenwertsteigerungen kaum ins Gewicht. Eine Erhöhung des
+   Bodenpreises werde vielmehr ‑‑wie vom FG dargelegt‑‑ regelmäßig von einer Erhöhung der Baupreise begleitet.
+   Diese schlage sich im Baupreisindex nieder. Die SW-RL sehe ebenfalls keine Korrektur der NHK 2010 mittels
+   Regionalfaktoren vor; (amtliche) bundesweite Baukosten-Regionalfaktoren gebe es nicht. Dass die Ergebnisse der
+   Arbeitshilfe bei älteren Objekten in hochpreisigen Großstädten auch bei einem Bodenwertanteil von 80 %
+   sachgerecht sein können, lasse sich anhand des Grundstücksmarktberichts für München für das Jahr 2018 (S. 58 f.)
+   nachvollziehen. Auch im Streitfall werde der regional unterschiedlichen Baupreisentwicklung im betreffenden
+   Bundesland durch die Indizierung hinreichend Rechnung getragen. Die Abweichungen zwischen den Indizes für
+   Bauleistungspreise des Statistischen Bundesamtes und des Statistikamtes X seien zu vernachlässigen.
+
+19 Das BMF hat keinen Antrag gestellt.
+
+
+Entscheidungsgründe
+II.
+
+20 Die Revision ist begründet. Sie führt nach § 126 Abs. 3 Satz 1 Nr. 2 der Finanzgerichtsordnung (FGO) zur Aufhebung
+   des angefochtenen Urteils und zur Zurückverweisung der Sache zur anderweitigen Verhandlung und Entscheidung
+   an das FG.
+
+21 Die vom FG zu ermittelnden Anschaffungskosten für das Gebäude bilden die Grundlage für die Bestimmung der AfA
+   (dazu unter 1.). Die Vorinstanz ist der kaufvertraglichen Aufteilung des Kaufpreises für die von der Klägerin
+   erworbene Eigentumswohnung auf Grund und Boden sowie Gebäude zwar zutreffend nicht gefolgt (dazu unter 2.).
+   Zu Unrecht hat das FG allerdings die auf der Grundlage der Arbeitshilfe des BMF ermittelte Kaufpreisaufteilung der
+   AfA-Bemessung zugrunde gelegt (dazu unter 3.). Die Sache ist nicht spruchreif (dazu unter 4.).
+
+22 1. Die Höhe der Gebäude-AfA richtet sich nach den Anschaffungskosten für das Gebäude (§ 7 Abs. 4 EStG). Deren
+   Höhe bildet die Grundlage für die Bemessung der AfA. Ihre Ermittlung obliegt dem FG als Tatsacheninstanz. Dies
+   gilt auch für die Aufteilung der Anschaffungskosten von Gebäude einerseits und dazugehörendem Grund und Boden
+   andererseits (Urteil des Bundesfinanzhofs ‑‑BFH‑‑ vom 16.09.2015 - IX R 12/14, BFHE 251, 214, BStBl II 2016, 397,
+   Rz 18).
+
+23 a) Wurde eine Kaufpreisaufteilung im Kaufvertrag vorgenommen, sind diese vereinbarten und bezahlten
+   Anschaffungskosten grundsätzlich auch der Besteuerung zugrunde zu legen (ständige Rechtsprechung, vgl. BFH-
+   Urteile in BFHE 251, 214, BStBl II 2016, 397; vom 01.04.2009 - IX R 35/08, BFHE 224, 533, BStBl II 2009, 663; vom
+   18.01.2006 - IX R 34/05, BFH/NV 2006, 1634). Wenngleich dem Käufer im Hinblick auf seine AfA-Berechtigung
+   typischerweise an einem höheren Anschaffungswert des Gebäudes gelegen ist und die entsprechende
+   Aufteilungsvereinbarung ‑‑zu Gunsten des Verkäufers‑‑ ggf. Einfluss auf eine für ihn positive sonstige
+   Vertragsgestaltung haben kann, rechtfertigt dies grundsätzlich noch keine abweichende Verteilung.
+
+24 Vereinbarungen der Vertragsparteien über Einzelpreise für Einzelwirtschaftsgüter binden allerdings nicht, wenn
+   Anhaltspunkte dafür bestehen, der Kaufpreis sei nur zum Schein bestimmt worden (vgl. BFH-Urteil vom
+   28.10.1998 - X R 96/96, BFHE 187, 450, BStBl II 1999, 217, unter B.IV.2.c, Rz 33) oder die Voraussetzungen eines
+   Gestaltungsmissbrauchs i.S. von § 42 AO seien gegeben (BFH-Urteile in BFHE 224, 533, BStBl II 2009, 663; in
+   BFH/NV 2006, 1634, m.w.N.; BFH-Beschluss vom 04.12.2008 - IX B 149/08, BFH/NV 2009, 365).
+
+                                                                                                             Seite 4 von 8
+25 Auch mit einer nach allgemeinen Grundsätzen der Besteuerung zugrunde zu legenden Vereinbarung können die
+   Parteien jedoch angesichts der gebotenen Tatbestandsmäßigkeit der Besteuerung nicht die Höhe der Steuer des
+   Käufers ‑‑konkret seiner AfA‑‑ gestalten. Deshalb hat das FG im Rahmen der Ermittlung der AfA-
+   Bemessungsgrundlage im Einzelfall (vgl. BFH-Beschluss in BFH/NV 2009, 365, m.w.N.) zu prüfen, ob nennenswerte
+   Zweifel an der vertraglichen Aufteilung bestehen (BFH-Urteil vom 10.10.2000 - IX R 86/97, BFHE 193, 326, BStBl II
+   2001, 183; BFH-Beschlüsse vom 24.01.2007 - IX B 84/06, BFH/NV 2007, 1104; vom 16.09.2002 - IX B 35/02,
+   BFH/NV 2003, 40). Es darf sich nicht darauf beschränken, die vertragliche Aufteilung steuerrechtlich
+   nachzuvollziehen, sondern hat das Ergebnis durch weitere Umstände, insbesondere die objektiv am Markt
+   erzielbaren Preise oder Verkehrswerte zu verifizieren (vgl. BFH-Beschluss in BFH/NV 2009, 365).
+
+26 Eine wesentliche Diskrepanz zu den Bodenrichtwerten rechtfertigt es nicht ohne Weiteres, diese an die Stelle der
+   vereinbarten Werte zu setzen oder die auf Grund und Gebäude entfallenden Anschaffungskosten zu schätzen. Es
+   handelt sich lediglich um ein Indiz dafür, dass die vertragliche Aufteilung möglicherweise die Werte nicht
+   angemessen wiedergibt. Ein solches Indiz kann durch andere Indizien entkräftet werden. Das FG hat die
+   Gesamtumstände des Kaufobjekts aufzuklären und dahingehend zu würdigen, ob besondere Aspekte die
+   Abweichung nachvollziehbar erscheinen lassen. Zu denken ist dabei etwa an besondere Ausstattungsmerkmale des
+   Gebäudes, dessen ursprüngliche Baukosten und etwaige Renovierungen, eine ggf. eingeschränkte Nutzbarkeit
+   wegen bestehender Mietverträge oder den Wohnwert des Gebäudes im Kontext der Nachbarschaft (z.B.
+   Straßenlärm, soziale Einrichtungen oder besondere Ruhe wegen einer benachbarten Grünanlage). Parallel dazu hat
+   das FG die besonderen Kriterien des Grundstücks zu berücksichtigen, etwa eine gepflegte Gartenanlage oder
+   störenden Baumbestand (BFH-Urteil in BFHE 251, 214, BStBl II 2016, 397, Rz 22).
+
+27 Eine Korrektur der von den Parteien getroffenen Aufteilung des Anschaffungspreises auf Grund und Gebäude ist
+   lediglich geboten, wenn sie die realen Wertverhältnisse in grundsätzlicher Weise verfehlt und wirtschaftlich nicht
+   haltbar erscheint (BFH-Urteil in BFHE 251, 214, BStBl II 2016, 397, Rz 23, m.w.N.).
+
+28 Das FG hat im Rahmen seiner Gesamtwürdigung einen gewissen Bewertungsspielraum. Es gelten insoweit die
+   allgemeinen Grundsätze der finanzgerichtlichen Sachverhaltsfeststellung und Sachverhaltswürdigung. Dabei kommt
+   eine Bindung an etwaige Schätzungen des FA nicht in Betracht (BFH-Urteil in BFHE 251, 214, BStBl II 2016, 397,
+   Rz 24).
+
+29 b) Kann nach diesen Grundsätzen eine vereinbarte Kaufpreisaufteilung nicht der Besteuerung zugrunde gelegt
+   werden, hat sie das FG entsprechend seiner Gesamtwürdigung der Verhältnisse durch eine Aufteilung nach den
+   realen Verkehrswerten von Grund und Gebäude zu ersetzen. Dabei hat das FG die Frage, nach welchem
+   Wertermittlungsverfahren die Kaufpreisaufteilung vorzunehmen ist, unter Berücksichtigung der Umstände des
+   Einzelfalls zu beantworten (vgl. BFH-Beschluss vom 22.10.2007 - IV B 111/06, BFH/NV 2008, 360, m.w.N.; BFH-
+   Urteil in BFHE 251, 214, BStBl II 2016, 397).
+
+30 c) Bei der Aufteilung eines Gesamtkaufpreises sind zunächst Boden- und Gebäudewert gesondert zu ermitteln und
+   sodann die Anschaffungskosten nach dem Verhältnis der beiden Wertanteile in Anschaffungskosten für den Grund-
+   und Bodenanteil und den Gebäudeanteil aufzuteilen. Für die Schätzung des Werts des Grund- und Boden- sowie des
+   Gebäudeanteils kann die ImmoWertV herangezogen werden, denn sie enthält anerkannte Grundsätze für die
+   Schätzung von Verkehrswerten von Grundstücken (Senatsbeschluss vom 15.11.2016 - IX B 98/16, BFH/NV 2017,
+   292, Rz 4; Senatsurteil vom 15.01.1985 - IX R 81/83, BFHE 143, 61, BStBl II 1985, 252, unter 1.b, Rz 17, m.w.N.
+   betreffend die Vorgängerregelung in Gestalt der Wertermittlungsverordnung vom 15.08.1972, BGBl I 1972, 1416,
+   zuletzt vom 06.12.1988, BGBl I 1988, 2209).
+
+31 Danach ist der Verkehrswert mit Hilfe des Vergleichswertverfahrens (einschließlich des Verfahrens zur
+   Bodenwertermittlung), des Ertragswertverfahrens, des Sachwertverfahrens oder mehrerer dieser Verfahren zu
+   ermitteln (§ 8 Abs. 1 Satz 1 ImmoWertV). Die Verfahren sind nach der Art des Wertermittlungsobjekts unter
+   Berücksichtigung der im gewöhnlichen Geschäftsverkehr bestehenden Gepflogenheiten und der sonstigen
+   Umstände des Einzelfalls, insbesondere der zur Verfügung stehenden Daten, zu wählen; die Wahl ist zu begründen
+   (§ 8 Abs. 1 Satz 2 ImmoWertV). Welches dieser Wertermittlungsverfahren anzuwenden ist, ist nach den tatsächlichen
+   Gegebenheiten des jeweiligen Einzelfalls zu entscheiden. Dabei stehen die Wertermittlungsverfahren einander
+   gleichwertig gegenüber (vgl. BFH-Beschlüsse vom 27.11.2017 - IX B 144/16, BFH/NV 2018, 218, Rz 5, und in
+   BFH/NV 2017, 292, Rz 4, m.w.N.).
+
+32 Die Ermittlung der Verkehrswerte ist Teil der Sachverhaltsfeststellung des FG, die für das Revisionsgericht
+   grundsätzlich bindend ist (§ 118 Abs. 2 FGO). Der BFH hat aber zu prüfen, ob das FG bei seiner Wertermittlung die
+                                                                                                              Seite 5 von 8
+    zutreffende Methode angewandt hat (BFH-Urteil in BFHE 193, 326, BStBl II 2001, 183, unter II.2., Rz 28; zuletzt
+    BFH-Urteile vom 29.10.2019 - IX R 38/17, BFHE 267, 18, Rz 42, und IX R 39/17, BFH/NV 2020, 681, Rz 40).
+
+33 2. Die Vorinstanz hat die zuvor dargestellten Rechtssätze zur Bindungswirkung einer vertraglichen
+   Kaufpreisaufteilung nur im Ansatz beachtet und auf den Streitfall angewandt. Es ist insoweit revisionsrechtlich
+   nicht zu beanstanden, dass das FG nennenswerte Zweifel an der kaufvertraglichen Kaufpreisaufteilung ‑‑unter
+   Würdigung der konkreten Wertverhältnisse des Kaufobjekts‑‑ bejaht hat. Da die vertragliche Kaufpreisaufteilung die
+   realen Wertverhältnisse in grundsätzlicher Weise verfehlt und wirtschaftlich nicht haltbar ist, durfte das FA eine
+   eigene Aufteilung vornehmen.
+
+34 a) Zutreffend sind das FA und die Vorinstanz davon ausgegangen, dass nennenswerte Zweifel an der vertraglichen
+   Aufteilung des Kaufpreises für die Eigentumswohnung bestehen. Diese ergeben sich bereits aus der erheblichen
+   Abweichung zwischen dem im Kaufvertrag ausgewiesenen Kaufpreis für den Grund und Boden (20.000 €) und dem
+   Bodenrichtwert (77.713 €). Der vereinbarte Kaufpreisanteil unterschreitet den Bodenrichtwert um rund 75 % und
+   damit ‑‑ungeachtet der von der Vorinstanz aufgeworfenen Frage, welcher Grad der Abweichung noch als
+   unerheblich angesehen werden kann (vgl. dazu Kohlhaas, Die Steuerberatung ‑‑Stbg‑‑ 2016, 460, 462, der ein
+   Unterschreiten bis zu 10 % als geringfügig ansieht; ebenso Thüringer FG, Urteil vom 20.02.2008 - III 740/05, EFG
+   2008, 1140, nachfolgend BFH-Beschluss vom 26.08.2008 - IX B 63/08, juris, rechtskräftig)‑‑ mehr als nur
+   geringfügig. Zwar handelt es sich bei einer Diskrepanz zum Bodenrichtwert nur um ein widerlegbares Indiz. Die
+   Würdigung der Vorinstanz, die Klägerin habe dieses Indiz nicht durch andere Indizien entkräftet, ist jedoch
+   revisionsrechtlich nicht zu beanstanden. Besondere Aspekte, die die vertragliche Kaufpreisaufteilung
+   nachvollziehbar erscheinen lassen, hat das FG nicht feststellen können. Dem allgemeingehaltenen Vorbringen der
+   Klägerin zu den (besonderen) Ausstattungsmerkmalen und zum Renovierungsstand der Wohnung sowie zur Lage
+   des Objekts ist es zu Recht nicht gefolgt.
+
+35 b) Da die vertragliche Kaufpreisaufteilung die realen Wertverhältnisse somit in grundsätzlicher Weise verfehlt und
+   wirtschaftlich nicht haltbar erscheint, waren das FA und das FG zu einer eigenen Aufteilung berechtigt.
+
+36 3. Allerdings durfte das FG die vertragliche Kaufpreisaufteilung jedenfalls im Streitfall nicht durch die mit Hilfe der
+   Arbeitshilfe des BMF ermittelte Aufteilung ersetzen. Die Arbeitshilfe gewährleistet die von der Rechtsprechung
+   geforderte Aufteilung nach den realen Verkehrswerten von Grund und Gebäude hier nicht. Dies folgt daraus, dass
+   sie die zur Verfügung stehenden Bewertungsverfahren auf das (vereinfachte) Sachwertverfahren verengt und der
+   Kaufpreisaufteilung unzulässige Parameter zugrunde legt. Die Schätzung des FG (§ 96 Abs. 1 Satz 1 FGO i.V.m. § 162
+   AO) kann daher keinen Bestand haben.
+
+37 a) Die Arbeitshilfe hat für die Beteiligten und das FG keine Bindungswirkung. Es handelt sich weder um eine
+   Rechtsnorm noch um eine die Finanzbehörden bindende Verwaltungsanweisung, sondern ‑‑prozessrechtlich‑‑
+   lediglich um Parteivortrag des FA. Sofern die Arbeitshilfe in der Praxis der Finanzverwaltung de facto als bindend
+   für den Steuerpflichtigen behandelt wird, besteht hierfür keine Rechtsgrundlage. Sie folgt zwar insoweit der
+   Senatsrechtsprechung zur Aufteilung von Gesamtkaufpreisen, als sie den Wert des Grund und Bodens sowie den
+   Wert des Gebäudes getrennt voneinander ermittelt (Grundsatz der Einzelbewertung); die sog. Restwertmethode (vgl.
+   nur BFH-Urteil in BFHE 193, 326, BStBl II 2001, 183, unter II.2., Rz 29) gelangt richtigerweise nicht zur Anwendung.
+
+38 b) Die Arbeitshilfe genügt jedoch nicht den Anforderungen der höchstrichterlichen Rechtsprechung an die
+   Methodenwahl und durfte daher nicht zugrunde gelegt werden. Sie setzt auf die SW-RL sowie die NHK 2010
+   (Anlage 1 zur SW-RL) auf und greift damit stets und allein auf das Sachwertverfahren zurück; es handelt sich mithin
+   um ein vereinfachtes Sachwertverfahren (gleicher Ansicht Schaper, Grundstücksmarkt und Grundstückswert ‑‑GuG‑‑
+   2017, 100, 101). Wenngleich der Senat bei vermieteten Eigentumswohnungen im Privatvermögen ‑‑jedenfalls in der
+   Vergangenheit‑‑ regelmäßig eine Kaufpreisaufteilung unter Anwendung des Sachwertverfahrens für angezeigt
+   gehalten hat (vgl. Senatsurteile in BFHE 267, 18, Rz 43, und in BFH/NV 2020, 681, Rz 41; vom 11.02.2003 -
+   IX R 13/00, BFH/NV 2003, 769, unter II.2.a, Rz 15; in BFHE 193, 326, BStBl II 2001, 183; Senatsbeschlüsse in
+   BFH/NV 2018, 218, Rz 6; in BFH/NV 2017, 292, Rz 5; vom 23.06.2005 - IX B 117/04, BFH/NV 2005, 1813, unter II.1.a,
+   Rz 3), widerspricht die Arbeitshilfe schon im Ausgangspunkt der zuvor dargelegten Gleichwertigkeit der zur
+   Verfügung stehenden Bewertungsverfahren, da nicht im Einzelfall beurteilt werden kann, welches
+   Wertermittlungsverfahren nach den tatsächlichen Gegebenheiten angezeigt erscheint. Der BFH hat stets betont,
+   dass nach den tatsächlichen Gegebenheiten des jeweiligen Einzelfalls zu entscheiden ist, welches
+   Wertermittlungsverfahren anzuwenden ist, so dass sich die Wahl der Ermittlungsmethode einer Verallgemeinerung
+   entzieht und jedenfalls nicht auf ein Wertermittlungsverfahren beschränkt werden kann (vgl. BFH-Urteile vom
+
+                                                                                                                Seite 6 von 8
+    27.06.1995 - IX R 130/90, BFHE 178, 151, BStBl II 1996, 215, unter 1.b, Rz 15, und vom 02.02.1990 - III R 173/86,
+    BFHE 159, 505, BStBl II 1990, 497, unter I.2.c, Rz 29; BFH-Beschlüsse in BFH/NV 2018, 218, Rz 6, und in BFH/NV
+    2005, 1813, unter 1.a, Rz 3). Eine Verplausibilisierung der Ergebnisse der Arbeitshilfe mittels weiterer
+    Wertermittlungsverfahren, etwa nach Maßgabe des in der Praxis der Immobilienbewertung weitverbreiteten
+    Ertragswertverfahrens, ist ebenfalls nicht vorgesehen. Darüber hinaus fehlt im Einzelfall auch die Begründung für
+    die Methodenwahl.
+
+39 c) Des Weiteren weist die Arbeitshilfe einen systemischen Fehler auf, indem bei der Ermittlung des Gebäudewerts
+   (NHK) kein sog. Orts- oder Regionalisierungsfaktor berücksichtigt wird.
+
+40 aa) Die Kostenkennwerte der NHK 2010 sind Bundesmittelwerte (Kleiber, Marktwertermittlung nach ImmoWertV,
+   8. Aufl., Syst. Darst. Sachwertverfahren Rz 137). Bei Anwendung der Arbeitshilfe ergeben sich bei gleichgroßen
+   Gebäuden desselben Typs und derselben Baujahreskategorie modellbedingt bundesweit stets dieselben, lediglich
+   alterswertgeminderten Gebäudekosten (Jacoby, Kaufpreisaufteilung für bebaute Grundstücke - Problematik und
+   Lösungsansatz, 2018, S. 120 und 132; Jacoby/Geiling, Deutsches Steuerrecht ‑‑DStR‑‑ 2020, 481, 483). In
+   Hochpreisgebieten können die tatsächlichen Baukosten aber zum Teil erheblich über den Kostenkennwerten liegen
+   (Schaper, GuG 2017, 100, 101). Die fehlende Berücksichtigung lokaler Gegebenheiten bei der Ermittlung des
+   Gebäudewerts führt gerade in Großstädten mit hohen Bodenrichtwerten ‑‑wie im Streitfall‑‑ zu einem
+   überproportionalen Anteil des Grund und Bodens und damit zu mitunter sehr niedrigen Gebäudebewertungen
+   (gleicher Ansicht Rade/Stobbe in Herrmann/Heuer/Raupach, § 6 EStG Rz 315; Jacoby, a.a.O., S. 3; s.a. Jardin/Roscher,
+   Die Immobilienwertermittlung aus steuerlichen Anlässen, 2019, Rz 175 zur "Dämpfung" des Bodenwerts, etwa im
+   Rahmen des sog. Münchner Modells). Dies betrifft hochwertige Objekte und (sanierte) Altbauten in besonderem
+   Maße (Kohlhaas, Stbg 2016, 460, 465; Jacoby, a.a.O., S. 3). Hierin liegt ein systemischer Fehler der Arbeitshilfe, der
+   zu einer tendenziell zu hohen Bewertung des Grund und Bodens führt (gleicher Ansicht Kaminski in Steuerberater
+   Handbuch 2019, 27. Aufl., Teil 4, Immobilieninvestitionen durch Privatpersonen, Rz 1273; Wagner, Der Betrieb
+   2016, 556, 559; BeckOK EStG/Graw, 7. Ed. (01.05.2020), EStG § 7 Rz 185).
+
+41 bb) Damit geht einher, dass der nach Maßgabe der Arbeitshilfe ermittelte Gebäudewert nur bedingt einen
+   Marktbezug aufweist: Obschon sich der Bodenwert nach den vom örtlich zuständigen Gutachterausschuss
+   festgesetzten Bodenrichtwerten bestimmt und damit die allgemeinen Wertverhältnisse auf dem Grundstücksmarkt
+   i.S. von § 8 Abs. 2 Nr. 1 ImmoWertV berücksichtigt (Marktanpassung), gelangt auf der anderen Seite ein nicht
+   marktgerechter Gebäudewert auf der Basis von THK zum Ansatz (Kohlhaas, Stbg 2016, 460, 463; Jardin/Roscher,
+   a.a.O., Rz 176). Bodenwerte und Herstellungskosten lassen sich aber nicht unmittelbar ins Verhältnis setzen (Jacoby,
+   a.a.O., S. 3, 90; Jacoby/Geiling, DStR 2020, 481, 482; Kleiber, a.a.O., Syst. Darst. Sachwertverfahren Rz 8). Die NHK
+   2010 sind reine Modellwerte; der Marktbezug wird erst durch den Sachwertfaktor hergestellt (Mann, GuG 2017, 17,
+   18; Schaper, GuG 2017, 100, 103; Seitz, GuG 2017, 142, 143; Jardin/Roscher, a.a.O., Rz 148, 1030), den die
+   Arbeitshilfe aber gerade außer Acht lässt. Zwar weist die Finanzverwaltung in der Anleitung zur Arbeitshilfe darauf
+   hin, dass auf eine Marktanpassung der (vorläufigen) Sachwerte verzichtet wurde, "da sich diese im gleichen
+   Verhältnis auf den Grund und Boden einerseits sowie das Gebäude andererseits auswirkt. Die Summe der
+   ermittelten Einzelwerte (vorläufigen Sachwerte) weist ohne Marktanpassung nicht den Verkehrswert aus".
+   Allerdings wird bei der Ermittlung des Bodenwerts der erforderliche Marktbezug ‑‑wie zuvor dargestellt‑‑ durchaus
+   gewährleistet. Vor diesem Hintergrund ergibt sich ein Mangel in der Bewertungssystematik der Arbeitshilfe, der
+   angesichts der äußerst dynamischen Entwicklung des Immobilienmarkts in den vergangenen Jahren noch verschärft
+   wird. Diesem Defizit kommt umso größere Bedeutung zu, als die der Gebäudewertermittlung unterlegte
+   Datenstruktur auf der Grundlage der NHK 2010 das "Herzstück" der Arbeitshilfe darstellt (Jardin/Roscher, NWB -
+   Steuer- und Wirtschaftsrecht 2014, 3155, 3160; dies., a.a.O., Rz 160). Damit wird den Vorgaben des § 194 BauGB, der
+   die Einbeziehung der Marktbegebenheiten in die Verkehrswertermittlung für das gesamte bebaute Grundstück
+   verlangt, nicht genügt (gleicher Ansicht Jacoby, a.a.O., S. 138).
+
+42 cc) Diesem systemischen Fehler kann ‑‑entgegen der Vorinstanz‑‑ nicht mit Erfolg entgegengehalten werden, dass
+   es sich bei der geschilderten "Unwucht" um Unwägbarkeiten handele, die letztlich jedem Schätzungsverfahren
+   immanent seien. Denn eine Schätzung für Zwecke der Kaufpreisaufteilung ist nur dann zu beachten, wenn sich ihre
+   Grundlagen als nachvollziehbar und überzeugend darstellen (z.B. BFH-Urteil in BFHE 193, 326, BStBl II 2001, 183).
+   Gerade dies ist jedoch im Hinblick auf die geschilderten systemischen Defizite der Kaufpreisaufteilung im
+   vereinfachten Verfahren der Finanzverwaltung nicht der Fall.
+
+43 dd) Die Vorinstanz hat die "Verzerrungen", die sich aus einem überproportionalen Anstieg der Baupreise in
+   Ballungsgebieten (wie im Streitfall) ‑‑ohne entsprechendem Niederschlag in der Arbeitshilfe‑‑ ergeben, ebenfalls
+
+                                                                                                                Seite 7 von 8
+    erkannt. Mangels genauer Zahlen zur Baupreisentwicklung im betreffenden Bundesland hat sie ein korrigierendes
+    Eingreifen in die Arbeitshilfe indes für nicht möglich gehalten. Mit dieser Erwägung lässt sich das
+    Schätzungsergebnis der Finanzverwaltung jedoch nicht aufrechterhalten. Vielmehr muss der Gebäudeanteil
+    regelmäßig durch das Gutachten eines unabhängigen vereidigten Sachverständigen ermittelt werden (s. 4.).
+
+44 Das BMF verweist in diesem Zusammenhang zu Unrecht darauf, dass der Index für Bauleistungspreise des
+   Statistikamtes X denjenigen des Statistischen Bundesamtes seit 2015 nur geringfügig übersteige. Zwar mag aus der
+   angesprochenen Statistik hervorgehen, dass sich die Entwicklung der Baupreise im betreffenden Bundesland nicht
+   wesentlich von der Entwicklung der Baupreise im gesamten Bundesgebiet unterscheidet. Dadurch werden die oben
+   beschriebenen Defizite in der Bewertungssystematik aber nicht ausgeräumt.
+
+45 4. Die Sache ist nicht spruchreif. Das FG hat im zweiten Rechtsgang die erforderlichen tatsächlichen Feststellungen
+   zum Wert des Grund- und Boden- sowie des Gebäudeanteils nachzuholen. Es ist im vorliegenden Fall einer
+   streitigen Grundstücksbewertung in der Regel gehalten, gemäß § 81 Abs. 1 FGO das Gutachten eines öffentlich
+   bestellten und vereidigten Sachverständigen für die Bewertung von Grundstücken einzuholen; hiervon kann es nur
+   dann absehen, wenn es ausnahmsweise selbst über die nötige Sachkunde verfügt und diese in den
+   Entscheidungsgründen darlegt (vgl. BFH-Beschlüsse vom 07.01.2015 - I B 42/13, BFH/NV 2015, 1093, Rz 9; vom
+   21.12.2011 - VIII B 88/11, BFH/NV 2012, 600, Rz 4; vom 03.05.2001 - III B 52/00, BFH/NV 2001, 1419, Rz 4; s.a.
+   Senatsurteil vom 06.02.2018 - IX R 14/17, BFHE 261, 20, BStBl II 2018, 522, Rz 19, zum Möblierungszuschlag). Ein
+   Gutachten des Bausachverständigen der Finanzverwaltung ist im finanzgerichtlichen Verfahren hingegen als
+   Privatgutachten zu behandeln. Ein solches kann vom FG seiner Entscheidung nur dann zugrunde gelegt werden,
+   wenn keiner der Beteiligten substantiierte Einwendungen gegen die Richtigkeit erhebt (z.B. BFH-Beschluss in
+   BFH/NV 2015, 1093, Rz 15, m.w.N.).
+
+46 5. Die Kostenentscheidung beruht auf § 143 Abs. 2 FGO.
+
+
+Quelle: www.bundesfinanzhof.de
+
+
+
+
+                                                                                                              Seite 8 von 8
+

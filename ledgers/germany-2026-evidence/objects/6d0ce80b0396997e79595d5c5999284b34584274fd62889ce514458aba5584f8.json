@@ -1,0 +1,107 @@
+[
+  {
+    "label": "daycap",
+    "actual": "1260",
+    "expected": "1260"
+  },
+  {
+    "label": "dayovercap",
+    "actual": "1260",
+    "expected": "1260"
+  },
+  {
+    "label": "childcarecap",
+    "actual": "4800",
+    "expected": "4800"
+  },
+  {
+    "label": "gift50inclusive",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "gift50.01cliff",
+    "actual": "False",
+    "expected": "False"
+  },
+  {
+    "label": "IAB40000",
+    "actual": "20000",
+    "expected": "20000"
+  },
+  {
+    "label": "IABreducedbasis",
+    "actual": "20000",
+    "expected": "20000"
+  },
+  {
+    "label": "special40ofreducedbasis",
+    "actual": "8000",
+    "expected": "8000"
+  },
+  {
+    "label": "pool5years",
+    "actual": "1",
+    "expected": "1"
+  },
+  {
+    "label": "profitexact200000",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "profit200001",
+    "actual": "False",
+    "expected": "False"
+  },
+  {
+    "label": "quartercar100000",
+    "actual": "250",
+    "expected": "250"
+  },
+  {
+    "label": "KUbothlimits",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "KUcurrentbreach",
+    "actual": "False",
+    "expected": "False"
+  },
+  {
+    "label": "carrybackjoint",
+    "actual": "2000000",
+    "expected": "2000000"
+  },
+  {
+    "label": "pensionjoint",
+    "actual": "61652",
+    "expected": "61652"
+  },
+  {
+    "label": "assessinterestannual",
+    "actual": "9/500",
+    "expected": "9/500"
+  },
+  {
+    "label": "nominal2026deadlineSaturday",
+    "actual": "5",
+    "expected": "5"
+  },
+  {
+    "label": "actualnextworkday",
+    "actual": "2027-08-02",
+    "expected": "2027-08-02"
+  },
+  {
+    "label": "withheldgiftVATnotautomaticban",
+    "actual": "True",
+    "expected": "True"
+  },
+  {
+    "label": "fiveyearwaiverminimum",
+    "actual": "True",
+    "expected": "True"
+  }
+]

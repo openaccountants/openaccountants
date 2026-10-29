@@ -1,0 +1,1064 @@
+                 Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik
+
+
+
+
+                                               Inhaltsverzeichnis
+
+
+Allgemeine haftungsausschließende Erklärung zu diesem Textdokument..................................... 1
+Haftungsausschließende Erklärung zum Wirksamwerden der Bestimmungen des BEPS-MLI ......... 3
+  Artikel 1 Persönlicher Geltungsbereich ............................................................................... 4
+  Artikel 2 Unter das Abkommen fallende Steuern .................................................................. 5
+  Artikel 3 Allgemeine Begriffsbestimmungen........................................................................ 5
+  Artikel 4 Steuerlicher Wohnsitz ......................................................................................... 6
+  Artikel 5 Betriebstätte....................................................................................................... 6
+  Artikel 6 Einkünfte aus unbeweglichem Vermögen ............................................................... 8
+  Artikel 7 Unternehmensgewinne ........................................................................................ 8
+  Artikel 8 Schiff- und Luftfahrt ........................................................................................... 9
+  Artikel 9 Verbundene Unternehmen.................................................................................... 9
+  Artikel 10 Dividenden .................................................................................................... 10
+  Artikel 11 Zinsen ........................................................................................................... 11
+  Artikel 12 Lizenzgebühren .............................................................................................. 11
+  Artikel 13 Gewinne aus der Veräußerung von Vermögen ..................................................... 12
+  Artikel 14 Selbständige Arbeit ......................................................................................... 12
+  Artikel 15 Unselbständige Arbeit ..................................................................................... 13
+  Artikel 16 Aufsichtsrats- und Verwaltungsratsvergütungen .................................................. 13
+  Artikel 17 Künstler und Sportler ...................................................................................... 13
+  Artikel 18 Ausübung öffentlicher Funktionen..................................................................... 14
+  Artikel 19 Ruhegehälter .................................................................................................. 14
+  Artikel 20 Lehrer, Studenten und andere in der Ausbildung stehende Personen........................ 14
+  Artikel 21 Nicht ausdrücklich erwähnte Einkünfte .............................................................. 15
+  Artikel 22 Vermögen...................................................................................................... 15
+  Artikel 23 Beseitigung der Doppelbesteuerung ................................................................... 15
+  Artikel 24 Gleichbehandlung ........................................................................................... 17
+  Artikel 25 Verständigungsverfahren ................................................................................. 17
+  Artikel 26 Austausch von Informationen ........................................................................... 18
+  Artikel 27 Mitglieder diplomatischer Missionen und konsularischer Vertretungen ................... 19
+  Artikel 28 Berlin(West)-Klausel....................................................................................... 19
+  Artikel 29 Inkrafttreten ................................................................................................... 19
+  Artikel 30 Außerkrafttreten ............................................................................................. 20
+  Bekanntmachung über die Fortgeltung der deutsch-tschechoslowakischen Verträge im
+  Verhältnis zwischen der Bundesrepublik Deutschland und der Tschechischen Republik ........... 21
+                         Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 1
+
+
+
+                                  SYNTHETISIERTER TEXT
+
+              DES ABKOMMENS VOM 19. DEZEMBER 1980
+          ZWISCHEN DER BUNDESREPUBLIK DEUTSCHLAND
+   UND DER TSCHECHOSLOWAKISCHEN SOZIALISTISCHEN REPUBLIK
+            ZUR VERMEIDUNG DER DOPPELBESTEUERUNG
+ AUF DEM GEBIET DER STEUERN VOM EINKOMMEN UND VOM VERMÖGEN
+
+                        IN DER FASSUNG DER
+                         BEKANNTMACHUNG
+    ÜBER DIE FORTGELTUNG DER DEUTSCH-TSCHECHOSLOWAKISCHEN
+                             VERTRÄGE
+     IM VERHÄLTNIS ZWISCHEN DER BUNDESREPUBLIK DEUTSCHLAND
+                 UND DER TSCHECHISCHEN REPUBLIK
+
+                                      UND DES BEPS-MLI
+
+
+Allgemeine haftungsausschließende Erklärung zu diesem Textdokument
+
+ Dieses Dokument stellt den synthetisierten Text für die Anwendung des Abkommens vom
+ 19. Dezember 1980 zwischen der Bundesrepublik Deutschland und der Tschechoslowakischen
+ Sozialistischen Republik zur Vermeidung der Doppelbesteuerung auf dem Gebiet der Steuern vom
+ Einkommen und vom Vermögen (BGBl. 1982 II S. 1022, 1023), in der Fassung der
+ Bekanntmachung über die Fortgeltung der deutsch-tschechoslowakischen Verträge im Verhältnis
+ zwischen der Bundesrepublik Deutschland und der Tschechischen Republik (BGBl. 1993 II S. 762)
+ in seiner anzuwendenden Form nach den übereinstimmenden Auswahlentscheidungen und
+ Vorbehalten der Bundesrepublik Deutschland und der Tschechischen Republik zum Mehrseitigen
+ Übereinkommen vom 24. November 2016 zur Umsetzung steuerabkommensbezogener
+ Maßnahmen zur Verhinderung der Gewinnverkürzung und Gewinnverlagerung (BEPS-MLI) dar.
+
+ Das Dokument wurde auf der Grundlage der von der Bundesrepublik Deutschland am 18. Dezember
+ 2020 und von der Tschechischen Republik am 13. Mai 2020 aus Anlass der Ratifikation dem
+ Verwahrer übermittelten Vorbehalte und Notifikationen („BEPS-MLI-Positionen“) erstellt. Diese
+ Auswahlentscheidungen und Vorbehalte sind den im BEPS-MLI vorgesehenen Modifizierungen
+ vorbehalten. Die Modifizierung der Auswahlentscheidungen und Vorbehalte kann die Wirkung des
+ BEPS-MLI auf das Abkommen verändern.
+
+ Die authentischen Vertragstexte des Abkommens und des BEPS-MLI sind vorrangig und als einzig
+ maßgebliche Rechtsquellen anzuwenden.
+
+ Die Bestimmungen des BEPS-MLI, welche in Bezug auf die Bestimmungen des Abkommens
+ anwendbar sind, werden in diesem Dokument durchgehend in Form von eingerahmten Feldern im
+ Zusammenhang mit den entsprechenden Bestimmungen des Abkommens dargestellt. Die
+ eingerahmten Felder, welche die Bestimmungen des BEPS-MLI enthalten, wurden im Allgemeinen
+ in Übereinstimmung mit der Reihenfolge der Bestimmungen des OECD-Musterabkommens auf
+ dem Gebiete der Steuern vom Einkommen und vom Vermögen in das Abkommen eingefügt.
+                         Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 2
+
+
+Der Text der Bestimmungen des BEPS-MLI wurde zur Vereinheitlichung der im BEPS-MLI
+verwendeten Begriffe mit jenen des Abkommens (z. B. „unter das Übereinkommen fallendes
+Steuerabkommen“ und „Abkommen“, „Vertragspartei dieses Übereinkommens“ und
+„Vertragsparteien“) im Interesse des einfacheren Verständnisses der Bestimmungen des BEPS-MLI
+verändert. Die Veränderungen der Begriffe dienen der leichteren Lesbarkeit des Dokuments und
+zielen nicht auf eine Änderung des Inhalts der Bestimmungen des BEPS-MLI ab. In ähnlicher Weise
+wurden Teile der Bestimmungen des BEPS-MLI verändert, die bestehende Bestimmungen des
+Abkommens umschreiben: umschreibende Wortfolgen wurden durch rechtliche Verweise auf die
+bestehenden Abkommensbestimmungen im Interesse der leichteren Lesbarkeit ersetzt.
+
+In allen Fällen sind Verweise auf die Bestimmungen des Abkommens oder auf das Abkommen in
+dem Sinne zu verstehen, dass sie sich auf das Abkommen in der durch das MLI geänderten Fassung
+beziehen, vorausgesetzt, die Bestimmungen des BEPS-MLI wurden wirksam.
+
+Hinweise
+
+Die authentischen Texte des BEPS-MLI und des Abkommens sind über die Webseite des
+Bundesministeriums der Finanzen abrufbar:
+
+BEPS-MLI-Vertragsgesetz
+https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/
+Abteilungen/Abteilung_IV/19_Legislaturperiode/Gesetze_Verordnungen/2020-11-27-
+Gewinnverkuerzung/4-Verkuendetes-Gesetz.pdf?__blob=publicationFile&v=2
+
+BEPS-MLI-Anwendungsgesetz
+https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/
+Abteilungen/Abteilung_IV/20_Legislaturperiode/2023-12-19-BEPSMLIAnwG/0-Gesetz.html
+
+Abkommen mit der Tschechischen Republik
+https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internatio
+nales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Tschechien/1982-12-04-
+Tschechien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=3
+
+Bekanntmachung über die Fortgeltung der deutsch-tschechoslowakischen Verträge im Verhältnis
+zwischen der Bundesrepublik Deutschland und der Tschechischen Republik
+https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internatio
+nales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Tschechien/1993-04-22-
+Tschechien-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=3
+
+Die Auswahlentscheidungen und Vorbehalte der Bundesrepublik Deutschland und der
+Tschechischen Republik zum BEPS-MLI sind beim Verwahrer hinterlegt und unter dem Link
+http://www.oecd.org/tax/treaties/beps-mli-signatories-and-parties.pdf abrufbar.
+                         Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 3
+
+
+
+Haftungsausschließende Erklärung zum Wirksamwerden der Bestimmungen des
+BEPS-MLI
+
+Wirksamwerden der Bestimmungen des BEPS-MLI
+
+Die Bestimmungen des BEPS-MLI, die auf das Abkommen anzuwenden sind, werden nicht im
+selben Zeitpunkt wie die ursprünglichen Bestimmungen des Abkommens wirksam. Jede
+Bestimmung des BEPS-MLI kann zu unterschiedlichen Zeitpunkten wirksam werden, abhängig von
+den betroffenen Steuerarten (im Abzugsweg erhobene Steuern oder andere Steuern) und von den
+Wahlmöglichkeiten, welche die Bundesrepublik Deutschland und die Tschechische Republik
+ausgeübt haben.
+
+Zeitpunkt der Hinterlegung der Ratifizierungs-, Annahme- oder Genehmigungsurkunde:
+18. Dezember 2020 für die Bundesrepublik Deutschland und 13. Mai 2020 für die Tschechische
+Republik.
+
+Zeitpunkt des Inkrafttretens des BEPS-MLI: 1. April 2021 für die Bundesrepublik Deutschland und
+1. September 2020 für die Tschechische Republik.
+
+Zeitpunkt des Empfangs der Notifikation der Bundesrepublik Deutschland über den Abschluss
+seiner innerstaatlichen Verfahren für das Wirksamwerden des BEPS-MLI durch den Verwahrer:
+1. Juni 2025.
+
+Dieses Dokument enthält durchgehend spezifische Informationen über den Zeitpunkt, an dem oder
+nach dem die Bestimmungen des BEPS-MLI in Bezug auf das Abkommen Wirksamkeit erlangen.
+                                     Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 4
+
+
+                                             Abkommen
+                               zwischen der Bundesrepublik Deutschland
+                         und der Tschechoslowakischen Sozialistischen Republik
+                                zur Vermeidung der Doppelbe steuerung
+                    auf dem Gebiet der Steuern vom Einkommen und vom Vermögen
+
+
+                                               Die Bundesrepublik Deutschland
+                                                                 und
+                                     die Tschechoslowakische Sozialistische Republik –
+
+
+        [ERSETZT durch Artikel 6 Absatz 1 des BEPS-MLI] [von dem Wunsch geleitet, ein
+        Abkommen zur Vermeidung der Doppelbesteuerung auf dem Gebiet der Steuern vom
+        Einkommen und vom Vermögen zu schließen]
+
+    Der folgende Artikel 6 Absatz 1 des BEPS-MLI ersetzt den Text betreffend die Absicht zur Vermeidung der
+    Doppelbesteuerung in der Präambel dieses Abkommens:1
+
+                   ARTIKEL 6 BEPS-MLI – ZWECK EINES UNTER DAS ÜBEREINKOMMEN
+                                  FALLENDEN STEUERABKOMMENS
+    in der Absicht, in Bezug auf die unter dieses Abkommen fallenden Steuern eine Doppelbesteuerung zu
+    beseitigen, ohne Möglichkeiten zur Nicht- oder Niedrigbesteuerung durch Steuerverkürzung oder
+    -umgehung (unter anderem durch missbräuchliche Gestaltungen mit dem Ziel des Erhalts von in diesem
+    Abkommen vorgesehenen Erleichterungen zum mittelbaren Nutzen von in Drittstaaten oder -gebieten
+    ansässigen Personen) zu schaffen,
+
+
+        – haben folgendes vereinbart:
+
+
+                                                   Artikel 1
+                                             Persönlicher Geltungsbereich
+Dieses Abkommen gilt für Personen, die in einem Vertragsstaat oder in beiden Vertragsstaaten ansässig
+sind.
+
+
+
+
+1
+    Wirksam ab dem 1. Januar 2026.
+                           Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 5
+
+
+                                       Artikel 2
+                          Unter das Abkommen fallende Steuern
+
+(1) Dieses Abkommen gilt, ohne Rücksicht auf die Art der Erhebung, für Steuern vom Einkommen und
+vom Vermögen, die in einem der beiden Vertragsstaaten erhoben werden.
+
+(2) Als Steuern vom Einkommen und vom Vermögen gelten alle Steuern, die vom Gesamteinkommen,
+vom Gesamtvermögen oder von Teilen des Einkommens oder des Vermögens erhoben werden,
+einschließlich der Steuern vom Gewinn aus der Veräußerung beweglichen oder unbeweglichen
+Vermögens, der Lohnsummensteuern sowie der Steuern vom Vermögenszuwachs.
+
+(3) Zu den zur Zeit bestehenden Steuern, für die dieses Abkommen gilt, gehören insbesondere
+
+    a) in der Bundesrepublik Deutschland:
+       die Einkommensteuer,
+       die Körperschaftsteuer einschließlich der Ergänzungsabgabe zur Körperschaftsteuer,
+       die Vermögensteuer,
+       die Grundsteuer und
+       die Gewerbesteuer;
+
+    b) in der Tschechoslowakischen Sozialistischen Republik:
+       die Abgabe und die Steuer vom Gewinn (odvod ze zisku a daň ze zisku),
+       die Lohnsteuer (daň ze mzdy),
+       die Steuer von Einkünften aus literarischer und künstlerischer Tätigkeit (daň z přijmů z literární a
+       umělecké činnosti),
+       die Landwirtschaftsteuer (daň zemědělská),
+       die Steuer von den Einkünften der Bevölkerung (daň z přijmů obyvatelstva),
+       die Haussteuer (daň domovní) und
+       die Abgabe vom Vermögen (odvod z jmění).
+
+(4) Die Bestimmungen dieses Abkommens über die Besteuerung des Einkommens oder des Vermögens
+gelten entsprechend für die nicht nach dem Einkommen oder dem Vermögen berechnete Gewerbesteuer,
+die in der Bundesrepublik Deutschland erhoben wird.
+
+(5) Dieses Abkommen gilt auch für alle Steuern gleicher oder ähnlicher Art, die künftig neben den zur Zeit
+bestehenden Steuern oder an deren Stelle erhoben werden. Die zuständigen Behörden der Vertragsstaaten
+teilen einander am Ende eines jeden Jahres die in ihren Steuergesetzen eingetretenen Änderungen, soweit
+erforderlich, mit.
+
+
+
+                                       Artikel 3
+                            Allgemeine Begriffsbestimmungen
+
+(1) Im Sinne dieses Abkommens, wenn der Zusammenhang nichts anderes erfordert:
+
+    a) bedeuten die Ausdrücke „ein Vertragsstaat“ und „der andere Vertragsstaat“ je nach dem
+       Zusammenhang die Bundesrepublik Deutschland oder die Tschechoslowakische Sozialistische
+       Republik;
+                            Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 6
+
+
+    b) umfaßt der Ausdruck „Person“ natürliche Personen und Gesellschaften;
+
+    c) bedeutet der Ausdruck „Gesellschaft“ juristische Personen oder Rechtsträger, die für die
+       Besteuerung wie juristische Personen behandelt werden;
+
+    d) bedeuten die Ausdrücke „Unternehmen eines Vertragsstaats“ und „Unternehmen des anderen
+       Vertragsstaats“, je nachdem, ein Unternehmen, das von einer in einem Vertragsstaat ansässigen
+       Person betrieben wird, oder ein Unternehmen, das von einer in dem anderen Vertragsstaat
+       ansässigen Person betrieben wird;
+
+    e) bedeutet der Ausdruck „zuständige Behörde“ auf seiten der Bundesrepublik Deutschland den
+       Bundesminister der Finanzen und auf seiten der Tschechoslowakischen Sozialistischen Republik
+       den Minister der Finanzen der Tschechoslowakischen Sozialistischen Republik oder seinen
+       bevollmächtigten Vertreter.
+
+(2) Bei Anwendung dieses Abkommens durch einen Vertragsstaat hat, wenn der Zusammenhang nichts
+anderes erfordert, jeder nicht anders bestimmte Ausdruck die Bedeutung, die ihm nach dem Recht dieses
+Staates über die Steuern zukommt, welche Gegenstand dieses Abkommens sind.
+
+
+
+                                           Artikel 4
+                                     Steuerlicher Wohnsitz
+
+(1) Im Sinne dieses Abkommens bedeutet der Ausdruck „eine in einem Vertragsstaat ansässige Person“
+eine Person, die nach dem Recht dieses Staates dort auf Grund ihres Wohnsitzes, ihres ständigen
+Aufenthalts, des Ortes ihrer Geschäftsleitung oder eines anderen ähnlichen Merkmals steuerpflichtig ist.
+
+(2) Ist nach Absatz 1 eine natürliche Person in beiden Vertragsstaaten ansässig, so gilt folgendes:
+
+    a) Die Person gilt als in dem Vertragsstaat ansässig, in dem sie über eine ständige Wohnstätte
+       verfügt. Verfügt sie in beiden Vertragsstaaten über eine ständige Wohnstätte, so gilt sie als in
+       dem Vertragsstaat ansässig, zu dem sie die engeren persönlichen und wirtschaftlichen
+       Beziehungen hat.
+
+    b) Kann nicht bestimmt werden, zu welchem Vertragsstaat die Person die engeren persönlichen und
+       wirtschaftlichen Beziehungen hat, oder verfügt sie in keinem der Vertragsstaaten über eine
+       ständige Wohnstätte, so gilt sie als in dem Vertragsstaat ansässig, in dem sie ihren gewöhnlichen
+       Aufenthalt hat.
+
+(3) Ist nach Absatz 1 eine andere als eine natürliche Person in beiden Vertragsstaaten ansässig, so gilt sie
+als in dem Vertragsstaat ansässig, in dem sich der Ort ihrer tatsächlichen Geschäftsleitung befindet.
+
+
+
+                                            Artikel 5
+                                           Betriebstätte
+(1) Im Sinne dieses Abkommens bedeutet der Ausdruck „Betriebstätte“ eine feste Geschäftseinrichtung,
+in der die Tätigkeit des Unternehmens ganz oder teilweise ausgeübt wird.
+                            Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 7
+
+
+(2) Der Ausdruck „Betriebstätte“ umfaßt insbesondere:
+
+    a) einen Ort der Leitung,
+
+    b) eine Zweigniederlassung,
+
+    c) eine Geschäftsstelle,
+
+    d) eine Fabrikationsstätte,
+
+    e) eine Werkstätte,
+
+    f) ein Bergwerk, einen Steinbruch oder eine andere Stätte der Ausbeutung von Bodenschätzen,
+
+    g) eine Bauausführung oder Montage, deren Dauer zwölf Monate überschreitet.
+
+(3) Als Betriebstätten gelten nicht:
+
+    a) Einrichtungen, die ausschließlich zur Lagerung, Ausstellung oder Auslieferung von Gütern oder
+       Waren des Unternehmens benutzt werden;
+
+    b) Bestände von Gütern oder Waren des Unternehmens, die ausschließlich zu Lagerung,
+       Ausstellung oder Auslieferung unterhalten werden;
+
+    c) Bestände von Gütern oder Waren des Unternehmens, die ausschließlich zu dem Zweck
+       unterhalten werden, durch ein anderes Unternehmen bearbeitet oder verarbeitet zu werden;
+
+    d) eine feste Geschäftseinrichtung, die ausschließlich zu dem Zweck unterhalten wird, für das
+       Unternehmen Güter oder Waren einzukaufen oder Informationen zu beschaffen;
+
+    e) eine feste Geschäftseinrichtung, die ausschließlich zu dem Zweck unterhalten wird, für das
+       Unternehmen zu werben, Informationen zu erteilen, wissenschaftliche Forschung zu betreiben
+       oder ähnliche Tätigkeiten auszuüben, die vorbereitender Art sind oder eine Hilfstätigkeit
+       darstellen.
+
+(4) Ist eine Person – mit Ausnahme eines unabhängigen Vertreters im Sinne des Absatzes 5 – in einem
+Vertragsstaat für ein Unternehmen des anderen Vertragsstaats tätig, so gilt eine in dem erstgenannten Staat
+gelegene Betriebstätte als gegeben, wenn die Person eine Vollmacht besitzt, im Namen des Unternehmens
+Verträge abzuschließen, und die Vollmacht in diesem Staat gewöhnlich ausübt, es sei denn, daß sich ihre
+Tätigkeit auf den Einkauf von Gütern oder Waren für das Unternehmen beschränkt.
+
+(5) Ein Unternehmen eines Vertragsstaats wird nicht schon deshalb so behandelt, als habe es eine
+Betriebstätte in dem anderen Vertragsstaat, weil es dort seine Tätigkeit durch einen Makler, Kommissionär
+oder einen anderen unabhängigen Vertreter ausübt, sofern diese Personen im Rahmen ihrer ordentlichen
+Geschäftstätigkeit handeln.
+
+(6) Allein dadurch, daß eine in einem Vertragsstaat ansässige Gesellschaft eine Gesellschaft beherrscht
+oder von einer Gesellschaft beherrscht wird, die in dem anderen Vertragsstaat ansässig ist oder dort
+(entweder durch eine Betriebstätte oder in anderer Weise) ihre Tätigkeit ausübt, wird eine der beiden
+Gesellschaften nicht zur Betriebstätte der anderen.
+                            Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 8
+
+
+                                        Artikel 6
+                         Einkünfte aus unbeweglichem Vermögen
+
+(1) Einkünfte aus unbeweglichem Vermögen können in dem Vertragsstaat besteuert werden, in dem dieses
+Vermögen liegt.
+
+(2) Der Ausdruck „unbewegliches Vermögen“ bestimmt sich nach dem Recht des Vertragsstaats, in dem
+das Vermögen liegt. Der Ausdruck umfaßt in jedem Fall das Zubehör zum unbeweglichen Vermögen, das
+lebende und tote Inventar land- und forstwirtschaftlicher Betriebe, die Rechte, auf die die Vorschriften des
+bürgerlichen Rechts über Grundstücke Anwendung finden, die Nutzungsrechte an unbeweglichem
+Vermögen sowie die Rechte auf veränderliche oder feste Vergütungen für die Ausbeutung oder das Recht
+auf Ausbeutung von Mineralvorkommen, Quellen und anderen Bodenschätzen. See- und Binnenschiffe
+sowie Luftfahrzeuge gelten nicht als unbewegliches Vermögen.
+
+(3) Absatz 1 gilt für die Einkünfte aus der unmittelbaren Nutzung, der Vermietung oder Verpachtung sowie
+jeder anderen Art der Nutzung unbeweglichen Vermögens.
+
+(4) Die Absätze 1 und 3 gelten auch für Einkünfte aus unbeweglichem Vermögen eines Unternehmens und
+für Einkünfte aus unbeweglichem Vermögen, das der Ausübung eines freien Berufs dient.
+
+
+
+                                          Artikel 7
+                                    Unternehmensgewinne
+
+(1) Gewinne eines Unternehmens eines Vertragsstaats können nur in diesem Staat besteuert werden, es sei
+denn, daß das Unternehmen seine Tätigkeit im anderen Vertragsstaat durch eine dort gelegene Betriebstätte
+ausübt. Übt das Unternehmen seine Tätigkeit in dieser Weise aus, so können die Gewinne des
+Unternehmens in dem anderen Staat besteuert werden, jedoch nur insoweit, als sie dieser Betriebstätte
+zugerechnet werden können.
+
+(2) Übt ein Unternehmen eines Vertragsstaats seine Tätigkeit in dem anderen Vertragsstaat durch eine dort
+gelegene Betriebstätte aus, so sind in jedem Vertragsstaat dieser Betriebstätte die Gewinne zuzurechnen,
+die sie hätte erzielen können, wenn sie eine gleiche oder ähnliche Tätigkeit unter gleichen oder ähnlichen
+Bedingungen als selbständiges Unternehmen ausgeübt hätte und im Verkehr mit dem Unternehmen, dessen
+Betriebstätte sie ist, völlig unabhängig gewesen wäre.
+
+(3) Bei der Ermittlung der Gewinne einer Betriebstätte werden die für die Zwecke dieser Betriebstätte
+entstandenen Aufwendungen, einschließlich der Geschäftsführungs- und allgemeinen Verwaltungskosten,
+zum Abzug zugelassen, gleichgültig, ob sie in dem Staat, in dem die Betriebstätte liegt, oder anderswo
+entstanden sind.
+
+(4) Soweit es in einem Vertragsstaat üblich ist, die einer Betriebstätte zuzurechnenden Gewinne durch
+Aufteilung der Gesamtgewinne des Unternehmens auf seine einzelnen Teile zu ermitteln, schließt Absatz 2
+nicht aus, daß dieser Vertragsstaat die zu besteuernden Gewinne nach der üblichen Aufteilung ermittelt.
+Die Art der angewendeten Gewinnaufteilung muß jedoch so sein, daß das Ergebnis mit den Grundsätzen
+dieses Artikels übereinstimmt.
+
+(5) Auf Grund des bloßen Einkaufs von Gütern oder Waren für das Unternehmen wird einer Betriebstätte
+kein Gewinn zugerechnet.
+                          Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 9
+
+
+(6) Bei Anwendung der vorstehenden Absätze sind die der Betriebstätte zuzurechnenden Gewinne jedes
+Jahr auf dieselbe Art zu ermitteln, es sei denn, daß ausreichende Gründe dafür bestehen, anders zu
+verfahren.
+
+(7) Gehören zu den Gewinnen Einkünfte, die in anderen Artikeln dieses Abkommens behandelt werden,
+so werden die Bestimmungen jener Artikel durch die Bestimmungen dieses Artikels nicht berührt.
+
+
+
+                                          Artikel 8
+                                    Schiff- und Luftfahrt
+
+(1) Gewinne aus dem Betrieb von Seeschiffen oder Luftfahrzeugen im internationalen Verkehr können nur
+in dem Vertragsstaat besteuert werden, in dem sich der Ort der tatsächlichen Geschäftsleitung des
+Unternehmens befindet.
+
+(2) Gewinne aus dem Betrieb von Schiffen, die der Binnenschiffahrt dienen, können nur in dem
+Vertragsstaat besteuert werden, in dem sich der Ort der tatsächlichen Geschäftsleitung des Unternehmens
+befindet.
+
+(3) Befindet sich der Ort der tatsächlichen Geschäftsleitung eines Unternehmens der See- oder
+Binnenschiffahrt an Bord eines Schiffes, so gilt er als in dem Vertragsstaat gelegen, in dem der
+Heimathafen des Schiffes liegt, oder, wenn kein Heimathafen vorhanden ist, in dem Vertragsstaat, in dem
+die Person, die das Schiff betreibt, ansässig ist.
+
+(4) Absätze 1 bis 3 gelten entsprechend für Beteiligungen eines Unternehmens der Schiff- oder Luftfahrt
+an einem Pool, einer Betriebsgemeinschaft oder einem anderen internationalen Betriebszusammenschluß.
+
+
+
+                                       Artikel 9
+                                Verbundene Unternehmen
+
+(1) Wenn
+
+    a) ein Unternehmen eines Vertragsstaats unmittelbar oder mittelbar an der Geschäftsleitung, der
+       Kontrolle oder am Kapital eines Unternehmens des anderen Vertragsstaats beteiligt ist oder
+
+    b) dieselben Personen unmittelbar oder mittelbar an der Geschäftsleitung, der Kontrolle oder am
+       Kapital eines Unternehmens eines Vertragsstaats und eines Unternehmens des anderen
+       Vertragsstaats beteiligt sind
+
+und in diesen Fällen zwischen den beiden Unternehmen hinsichtlich ihrer kaufmännischen oder
+finanziellen Beziehungen Bedingungen vereinbart oder auferlegt werden, die von denen abweichen, die
+unabhängige Unternehmen miteinander vereinbaren würden, so dürfen die Gewinne, die eines der
+Unternehmen ohne diese Bedingungen erzielt hätte, wegen dieser Bedingungen aber nicht erzielt hat, den
+Gewinnen dieses Unternehmens zugerechnet und entsprechend besteuert werden.
+
+(2) Wenn der Gewinn, mit dem ein Unternehmen eines Vertragsstaats in diesem Staat besteuert worden
+ist, nach Absatz 1 in den Gewinn eines Unternehmens des anderen Vertragsstaats einbezogen und
+entsprechend besteuert wird und wenn es sich bei dem so einbezogenen Gewinn um einen Gewinn handelt,
+                          Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 10
+
+
+der diesem Unternehmen des anderen Vertragsstaats zugeflossen wäre, falls die zwischen den beiden
+Unternehmen vereinbarten Bedingungen mit denen identisch gewesen wären, die zwischen unabhängigen
+Unternehmen vereinbart worden wären, nimmt der erstgenannte Staat eine entsprechende Berichtigung
+vor, um eine Doppelbelastung des so einbezogenen Gewinns zu vermeiden. Diese Berichtigung ist unter
+Berücksichtigung der übrigen Bestimmungen dieses Abkommens bezüglich der Art der Einkünfte
+festzusetzen; zu diesem Zweck konsultieren erforderlichenfalls die zuständigen Behörden der
+Vertragsstaaten einander.
+
+
+
+                                           Artikel 10
+                                           Dividenden
+
+(1) Dividenden, die eine in einem Vertragsstaat ansässige Gesellschaft an eine in dem anderen
+Vertragsstaat ansässige Person zahlt, können in dem anderen Staat besteuert werden.
+
+(2) Diese Dividenden können jedoch in dem Vertragsstaat, in dem die die Dividenden zahlende
+Gesellschaft ansässig ist, nach dem Recht dieses Staates besteuert werden. Die Steuer darf aber nicht
+übersteigen:
+
+    a) 5 vom Hundert des Bruttobetrags der Dividenden, wenn der Empfänger eine Gesellschaft ist, die
+       unmittelbar über mindestens 25 vom Hundert des Kapitals der die Dividenden zahlenden
+       Gesellschaft verfügt;
+
+    b) 15 vom Hundert des Bruttobetrags der Dividenden in allen anderen Fällen.
+
+(3) Solange in einem Vertragsstaat der Satz der Steuer vom Gewinn einer Gesellschaft für den
+ausgeschütteten Gewinn niedriger ist als der Satz der Steuer für den nichtausgeschütteten Gewinn und der
+Unterschied 20 vom Hundert oder mehr beträgt, darf abweichend von Absatz 2 die Steuer, die in diesem
+Staat von den Dividenden erhoben wird, 25 vom Hundert des Bruttobetrags der Dividenden zuzüglich der
+Ergänzungsabgabe betragen, wenn die Dividenden von einer in diesem Vertragsstaat ansässigen
+Gesellschaft stammen und von einer in dem anderen Vertragsstaat ansässigen Gesellschaft bezogen
+werden, der entweder selbst oder zusammen mit anderen Personen, von denen sie beherrscht wird oder die
+mit ihr gemeinsam beherrscht werden, unmittelbar oder mittelbar mindestens 25 vom Hundert der
+stimmberechtigten Anteile der in dem erstgenannten Staat ansässigen Gesellschaft gehören.
+
+(4) Der in diesem Artikel verwendete Ausdruck „Dividenden“ bedeutet Einnahmen aus Aktien,
+Genußrechten oder Genußscheinen, Kuxen, Gewinnanteilen oder anderen Rechten – ausgenommen
+Forderungen – mit Gewinnbeteiligung sowie aus sonstigen Gesellschaftsanteilen stammende Einnahmen,
+die nach dem Steuerrecht des Staates, in dem die ausschüttende Gesellschaft ansässig ist, den Einnahmen
+aus Aktien gleichgestellt sind, einschließlich der Einnahmen aus Beteiligungen an einem Handelsgewerbe
+als stiller Gesellschafter, aus Gewinnobligationen oder aus partiarischen Darlehen sowie der
+Ausschüttungen auf die Anteilscheine von Kapitalanlagegesellschaften (Investmentfonds).
+
+(5) Die Absätze 1 bis 3 sind nicht anzuwenden, wenn der in einem Vertragsstaat ansässige Empfänger der
+Dividenden in dem anderen Vertragsstaat, in dem die die Dividenden zahlende Gesellschaft ansässig ist,
+eine Betriebstätte hat und die Beteiligung, für welche die Dividenden gezahlt werden, tatsächlich zu dieser
+Betriebstätte gehört. In diesem Fall ist Artikel 7 anzuwenden.
+                          Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 11
+
+
+(6) Bezieht eine in einem Vertragsstaat ansässige Gesellschaft Gewinne oder Einkünfte aus dem anderen
+Vertragsstaat, so darf dieser andere Staat weder die Dividenden besteuern, die die Gesellschaft an nicht in
+diesem anderen Staat ansässige Personen zahlt, noch Gewinne der Gesellschaft einer Steuer für
+nichtausgeschüttete Gewinne unterwerfen, selbst wenn die gezahlten Dividenden oder die
+nichtausgeschütteten Gewinne ganz oder teilweise aus in dem anderen Staat erzielten Gewinnen oder
+Einkünften bestehen.
+
+
+
+                                            Artikel 11
+                                             Zinsen
+
+(1) Zinsen, die aus einem Vertragsstaat stammen und an eine in dem anderen Vertragsstaat ansässige
+Person gezahlt werden, können nur in dem anderen Staat besteuert werden.
+
+(2) Der in diesem Artikel verwendete Ausdruck „Zinsen“ bedeutet Einkünfte aus öffentlichen Anleihen,
+aus Schuldverschreibungen, auch wenn sie durch Pfandrecht an Grundstücken gesichert oder mit einer
+Gewinnbeteiligung ausgestattet sind, und aus Forderungen jeder Art sowie alle anderen Einkünfte, die nach
+dem Steuerrecht des Staates, aus dem sie stammen, den Einkünften aus Darlehen gleichgestellt sind.
+
+(3) Absatz 1 ist nicht anzuwenden, wenn der in einem Vertragsstaat ansässige Empfänger der Zinsen in
+dem anderen Vertragsstaat, aus dem die Zinsen stammen, eine Betriebstätte hat und die Forderungen, für
+welche die Zinsen gezahlt werden, tatsächlich zu dieser Betriebstätte gehören. In diesem Fall ist Artikel 7
+anzuwenden.
+
+(4) Bestehen zwischen Schuldner und Gläubiger oder zwischen jedem von ihnen und einem Dritten
+besondere Beziehungen und übersteigen deshalb die gezahlten Zinsen, gemessen an der zugrunde
+liegenden Forderung, den Betrag, den Schuldner und Gläubiger ohne diese Beziehungen vereinbart hätten,
+so wird dieser Artikel nur auf diesen letzten Betrag angewendet. In diesem Fall kann der übersteigende
+Betrag nach dem Recht jedes Vertragsstaats und unter Berücksichtigung der anderen Bestimmungen dieses
+Abkommens besteuert werden.
+
+
+
+                                           Artikel 12
+                                        Lizenzgebühren
+
+(1) Lizenzgebühren, die aus einem Vertragsstaat stammen und von einer in dem anderen Vertragsstaat
+ansässigen Person bezogen werden, können in dem anderen Staat besteuert werden.
+
+(2) Diese Lizenzgebühren können jedoch in dem Vertragsstaat, aus dem sie stammen, nach dem Recht
+dieses Staates besteuert werden; die Steuer darf aber 5 vom Hundert des Bruttobetrags der Lizenzgebühren
+nicht übersteigen.
+
+(3) Der in diesem Artikel verwendete Ausdruck „Lizenzgebühren“ bedeutet Vergütungen jeder Art, die für
+die Benutzung oder für das Recht auf Benutzung von Urheberrechten an literarischen, künstlerischen oder
+wissenschaftlichen Werken, einschließlich kinematographischer Filme, von Patenten, Warenzeichen,
+Mustern oder Modellen, Plänen, geheimen Formeln oder Verfahren oder für die Benutzung oder das Recht
+auf Benutzung gewerblicher, kaufmännischer oder wissenschaftlicher Ausrüstungen oder für die
+Mitteilung gewerblicher, kaufmännischer oder wissenschaftlicher Erfahrungen gezahlt werden.
+                          Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 12
+
+
+(4) Absätze 1 und 2 sind nicht anzuwenden, wenn der in einem Vertragsstaat ansäss ige Empfänger der
+Lizenzgebühren in dem anderen Vertragsstaat, aus dem die Lizenzgebühren stammen, eine Betriebstätte
+hat und die Rechte oder Vermögenswerte, für welche die Lizenzgebühren gezahlt werden, tatsächlich zu
+dieser Betriebstätte gehören. In diesem Fall ist Artikel 7 anzuwenden.
+
+(5) Bestehen zwischen Schuldner und Gläubiger oder zwischen jedem von ihnen und einem Dritten
+besondere Beziehungen und übersteigen deshalb die gezahlten Lizenzgebühren, gemessen an der zugrunde
+liegenden Leistung, den Betrag, den Schuldner und Gläubiger ohne diese Beziehungen vereinbart hätten,
+so wird dieser Artikel nur auf diesen letzten Betrag angewendet. In diesem Fall kann der übersteigende
+Betrag nach dem Recht jedes Vertragsstaats und unter Berücksichtigung der anderen Bestimmungen dieses
+Abkommens besteuert werden.
+
+
+
+                                     Artikel 13
+                     Gewinne aus der Veräußerung von Vermögen
+
+(1) Gewinne aus der Veräußerung unbeweglichen Vermögens im Sinne des Artikels 6 können in dem
+Vertragsstaat besteuert werden, in dem dieses Vermögen liegt.
+
+(2) Gewinne aus der Veräußerung beweglichen Vermögens, das Betriebsvermögen einer Betriebstätte
+darstellt, die ein Unternehmen eines Vertragsstaats in dem anderen Vertragsstaat hat, oder das zu einer
+festen Einrichtung gehört, über die eine in einem Vertragsstaat ansässige Person für die Ausübung einer
+selbständigen Arbeit in dem anderen Vertragsstaat verfügt, einschließlich derartiger Gewinne, die bei der
+Veräußerung einer solchen Betriebstätte (allein oder zusammen mit dem übrigen Unternehmen) oder einer
+solchen festen Einrichtung erzielt werden, können in dem anderen Staat besteuert werden. Jedoch können
+Gewinne aus der Veräußerung des in Artikel 22 Absatz 3 genannten beweglichen Vermögens nur in dem
+Vertragsstaat besteuert werden, in dem dieses bewegliche Vermögen nach dem angeführten Artikel
+besteuert werden kann.
+
+(3) Gewinne aus der Veräußerung von Anteilen an einer in einem Vertragsstaat ansässigen Gesellschaft
+können in diesem Staat besteuert werden.
+
+(4) Gewinne aus der Veräußerung des in den Absätzen 1, 2 und 3 nicht genannten Vermögens können nur
+in dem Vertragsstaat besteuert werden, in dem der Veräußerer ansässig ist.
+
+
+
+                                          Artikel 14
+                                      Selbständige Arbeit
+
+(1) Einkünfte, die eine in einem Vertragsstaat ansässige Person aus einem freien Beruf oder aus sonstiger
+selbständiger Tätigkeit ähnlicher Art bezieht, können nur in diesem Staat besteuert werden, es sei denn,
+daß die Person für die Ausübung ihrer Tätigkeit in dem anderen Vertragsstaat regelmäßig über eine feste
+Einrichtung verfügt. Verfügt sie über eine solche feste Einrichtung, so können die Einkünfte in dem
+anderen Staat besteuert werden, jedoch nur insoweit, als sie dieser festen Einrichtung zugerechnet werden
+können.
+                           Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 13
+
+
+(2) Der Ausdruck „freier Beruf“ umfaßt insbesondere die selbständig ausgeübte wissenschaftliche,
+literarische, künstlerische, erzieherische oder unterrichtende Tätigkeit sowie die selbständige Tätigkeit der
+Ärzte, Rechtsanwälte, Ingenieure, Architekten und Zahnärzte.
+
+
+
+                                          Artikel 15
+                                     Unselbständige Arbeit
+
+(1) Vorbehaltlich der Artikel 16 bis 20 können Gehälter, Löhne und ähnliche Vergütungen, die eine in
+einem Vertragsstaat ansässige natürliche Person aus unselbständiger Arbeit bezieht, nur in diesem Staat
+besteuert werden, es sei denn, daß die Arbeit in dem anderen Vertragsstaat ausgeübt wird. Wird die Arbeit
+dort ausgeübt, so können die dafür bezogenen Vergütungen in diesem anderen Staat besteuert werden.
+
+(2) Ungeachtet des Absatzes 1 können Vergütungen, die eine in einem Vertragsstaat ansässige natürliche
+Person für die in dem anderen Vertragsstaat ausgeübte unselbständige Arbeit bezieht, nur in dem
+erstgenannten Staat besteuert werden, wenn
+
+    a) der Empfänger sich in dem anderen Staat insgesamt nicht länger als 183 Tage während des
+       betreffenden Kalenderjahrs aufhält,
+
+    b) die Vergütungen von einer Person oder für eine Person gezahlt werden, die nicht in dem anderen
+       Staat ansässig ist, und
+
+    c) die Vergütungen nicht von einer Betriebstätte getragen werden, welche die Person, die die
+       Vergütungen zahlt, in dem anderen Staat hat.
+
+(3) Ungeachtet der vorstehenden Bestimmungen dieses Artikels können Vergütungen für unselbständige
+Arbeit, die an Bord eines Seeschiffs oder Luftfahrzeugs im internationalen Verkehr oder an Bord eines
+Schiffes, das der Binnenschiffahrt dient, ausgeübt wird, in dem Vertragsstaat besteuert werden, in dem
+sich der Ort der tatsächlichen Geschäftsleitung des Unternehmens befindet.
+
+
+
+                                        Artikel 16
+                     Aufsichtsrats- und Verwaltungsratsvergütungen
+Aufsichtsrats- oder Verwaltungsratsvergütungen und ähnliche Zahlungen, die eine in einem Vertragsstaat
+ansässige Person in ihrer Eigenschaft als Mitglied des Aufsichts- oder Verwaltungsrats einer Gesellschaft
+bezieht, die in dem anderen Vertragsstaat ansässig ist, können in dem anderen Staat besteuert werden.
+
+
+                                          Artikel 17
+                                     Künstler und Sportler
+(1) Ungeachtet der Artikel 14 und 15 können Einkünfte, die berufsmäßige Künstler, wie Bühnen-, Film-,
+Rundfunk- oder Fernsehkünstler und Musiker, sowie Sportler aus ihrer in dieser Eigenschaft persönlich
+ausgeübten Tätigkeit beziehen, in dem Vertragsstaat besteuert werden, in dem sie diese Tätigkeit ausüben.
+                          Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 14
+
+
+(2) Fließen Einkünfte aus der persönlichen Tätigkeit eines Künstlers oder Sportlers nicht dem Künstler
+oder Sportler selbst, sondern einer anderen Person zu, so können die Einkünfte ungeachtet der Artikel 7,
+14 und 15 in dem Staat besteuert werden, in dem die Tätigkeit des Künstlers oder Sportlers ausgeübt wird.
+
+(3) Abweichend von den Absätzen 1 und 2 können die dort genannten Einkünfte in dem Staat, in dem die
+Tätigkeit des Künstlers oder Sportlers ausgeübt wird, nicht besteuert werden, wenn der Künstler oder
+Sportler im Rahmen des von den Regierungen der Vertragsstaaten vereinbarten Kulturaustausches auftritt.
+
+
+                                      Artikel 18
+                            Ausübung öffentlicher Funktionen
+(1) Vergütungen, einschließlich der Ruhegehälter, die von einem Vertragsstaat oder einer seiner
+Gebietskörperschaften unmittelbar oder aus einem von diesem Staat oder der Gebietskörperschaft
+errichteten Sondervermögen an eine natürliche Person für die diesem Staat oder der Gebietskörperschaft
+in Ausübung öffentlicher Funktionen erbrachten Dienste gewährt werden, können in diesem Staat besteuert
+werden. Dies gilt jedoch nicht, wenn die Vergütungen an Personen gezahlt werden, die in dem anderen
+Staat ständig ansässig sind.
+
+(2) Auf Vergütungen oder Ruhegehälter für Dienstleistungen, die im Zusammenhang mit einer
+kaufmännischen oder gewerblichen Tätigkeit eines der Vertragsstaaten oder einer seiner
+Gebietskörperschaften erbracht werden, finden die Artikel 15, 16 und 19 Anwendung.
+
+
+
+                                            Artikel 19
+                                           Ruhegehälter
+Vorbehaltlich des Artikels 18 Absatz 1 können Ruhegehälter und ähnliche Vergütungen, die einer in einem
+Vertragsstaat ansässigen Person für frühere unselbständige Arbeit gezahlt werden, nur in diesem Staat
+besteuert werden.
+
+
+                                    Artikel 20
+         Lehrer, Studenten und andere in der Ausbildung stehende Personen
+
+(1) Hochschullehrer oder Lehrer, die in einem Vertragsstaat ansässig sind oder unmittelbar vorher dort
+ansässig waren und die sich für höchstens zwei Jahre zwecks fortgeschrittener Studien oder
+Forschungsarbeiten oder zwecks Ausübung einer Lehrtätigkeit an einer anerkannten Universität,
+Hochschule oder anderen ähnlichen, nicht auf Gewinnerzielung gerichteten Anstalt in den anderen
+Vertragsstaat begeben, werden in dem anderen Staat mit ihren Vergütungen für diese Arbeit nicht
+besteuert, vorausgesetzt, daß sie diese Vergütungen von außerhalb dieses anderen Staates beziehen.
+
+(2) Ist eine natürliche Person in einem Vertragsstaat ansässig, unmittelbar bevor sie sich in den anderen
+Vertragsstaat begibt, und hält sie sich in dem anderen Staat lediglich als Student einer Universität,
+Hochschule, Schule oder anderen ähnlichen Lehranstalt dieses anderen Staates oder als Lehrling (in der
+Bundesrepublik Deutschland einschließlich der Volontäre oder Praktikanten) vorübergehend auf, so ist sie
+vom Tag ihrer ersten Ankunft in dem anderen Staat im Zusammenhang mit diesem Aufenthalt von der
+Steuer dieses anderen Staates hinsichtlich aller für ihren Unterhalt, ihre Erziehung oder ihre Ausbildung
+bestimmten Zahlungen, die sie von außerhalb dieses anderen Staates erhält, befreit.
+                          Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 15
+
+
+(3) Ist eine natürliche Person in einem Vertragsstaat ansässig, unmittelbar bevor sie sich in den anderen
+Vertragsstaat begibt, und hält sie sich in dem anderen Staat lediglich zum Studium, zur Forschung oder
+zur Ausbildung als Empfänger eines Zuschusses, Unterhaltsbeitrags oder Stipendiums einer
+wissenschaftlichen, pädagogischen, religiösen oder mildtätigen Organisation vorübergehend auf, so ist sie
+während der Dauer von höchstens zwei Jahren vom Tag ihrer ersten Ankunft in dem anderen Staat im
+Zusammenhang mit diesem Aufenthalt von der Steuer dieses anderen Staates befreit hinsichtlich
+
+    a) dieses Zuschusses, Unterhaltsbeitrags oder Stipendiums und
+
+    b) aller für ihren Unterhalt, ihre Erziehung oder ihre Ausbildung bestimmten Zahlungen, die sie von
+       außerhalb dieses anderen Staates erhält.
+
+
+
+                                      Artikel 21
+                         Nicht ausdrücklich erwähnte Einkünfte
+
+Die in den vorstehenden Artikeln nicht ausdrücklich erwähnten Einkünfte einer in einem Vertragsstaat
+ansässigen Person können nur in diesem Staat besteuert werden.
+
+
+
+                                            Artikel 22
+                                            Vermögen
+
+(1) Unbewegliches Vermögen im Sinne des Artikels 6 Absatz 2 kann in dem Vertragsstaat besteuert
+werden, in dem dieses Vermögen liegt.
+
+(2) Bewegliches Vermögen, das Betriebsvermögen einer Betriebstätte eines Unternehmens darstellt oder
+das zu einer der Ausübung eines freien Berufs dienenden festen Einrichtung gehört, kann in dem
+Vertragsstaat besteuert werden, in dem sich die Betriebstätte oder die feste Einrichtung befindet.
+
+(3) Seeschiffe und Luftfahrzeuge im internationalen Verkehr und Schiffe, die der Binnenschiffahrt dienen,
+sowie bewegliches Vermögen, das dem Betrieb dieser Schiffe und Luftfahrzeuge dient, können nur in dem
+Vertragsstaat besteuert werden, in dem sich der Ort der tatsächlichen Geschäftsleitung des Unternehmens
+befindet.
+
+(4) Alle anderen Vermögensteile einer in einem Vertragsstaat ansässigen Person können nur in diesem
+Staat besteuert werden.
+
+
+
+                                       Artikel 23
+                           Beseitigung der Doppelbesteuerung
+
+(1) Bei einer in der Bundesrepublik Deutschland ansässigen Person wird die Steuer wie folgt festgesetzt:
+
+    a) Soweit nicht Buchstabe b anzuwenden ist, werden die Einkünfte aus Quellen innerhalb der
+       Tschechoslowakischen Sozialistischen Republik und die in der Tschechoslowakischen
+       Sozialistischen Republik gelegenen Vermögenswerte, die nach diesem Abkommen in der
+                          Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 16
+
+
+        Tschechoslowakischen Sozialistischen Republik besteuert werden können, von der
+        Bemessungsgrundlage für die Steuer der Bundesrepublik Deutschland ausgenommen. Die
+        Bundesrepublik Deutschland wird jedoch die so ausgenommenen Einkünfte und Vermögenswerte
+        bei der Festsetzung des Steuersatzes berücksichtigen. Auf Dividenden ist Satz 1 nur anzuwenden,
+        wenn die Dividenden einer in der Bundesrepublik Deutschland ansässigen Kapitalgesellschaft von
+        einer in der Tschechoslowakischen Sozialistischen Republik ansässigen Gesellschaft gezahlt
+        werden, deren stimmberechtigte Anteile zu mindestens 25 vom Hundert der erstgenannten
+        Gesellschaft gehören. Von der Bemessungsgrundlage für die Steuer der Bundesrepublik
+        Deutschland werden ebenfalls Beteiligungen ausgenommen, deren Dividenden nach dem
+        vorstehenden Satz von der Steuerbemessungsgrundlage ausgenommen sind oder bei Zahlung
+        auszunehmen wären.
+
+    b) Die Steuer, die nach dem Recht der Tschechoslowakischen Sozialistischen Republik und in
+       Übereinstimmung mit diesem Abkommen für die folgenden, aus Quellen innerhalb der
+       Tschechoslowakischen Sozialistischen Republik stammenden Einkünfte gezahlt wird, wird unter
+       Beachtung der Vorschriften des Steuerrechts der Bundesrepublik Deutschland über die
+       Anrechnung ausländischer Steuern auf die von diesen Einkünften in der Bundesrepublik
+       Deutschland erhobene Steuer angerechnet:
+
+        1. Dividenden, die nicht unter Buchstabe a fallen,
+
+        2. Lizenzgebühren im Sinne des Artikels 12,
+
+        3. Einkünfte im Sinne des Artikels 13 Absatz 3,
+
+        4. Einkünfte im Sinne des Artikels 16,
+
+        5. Einkünfte im Sinne des Artikels 17.
+
+    c) Buchstabe a gilt für Gewinne, die einer in der Tschechoslowakischen Sozialistischen Republik
+       gelegenen Betriebstätte zugerechnet werden können, und für das Vermögen, das
+       Betriebsvermögen einer solchen Betriebstätte darstellt, sowie für Dividenden, die von einer in der
+       Tschechoslowakischen Sozialistischen Republik ansässigen Gesellschaft gezahlt werden, und für
+       die Beteiligung an einer solchen Gesellschaft nur dann, wenn die Betriebstätte oder die
+       Gesellschaft, an der die Beteiligung besteht, ihre Einnahmen ausschließlich oder fast
+       ausschließlich aus folgenden innerhalb der Tschechoslowakischen Sozialistischen Republik
+       ausgeübten Tätigkeiten bezieht: Herstellung oder Verkauf von Gütern oder Waren, technische
+       Dienstleistung oder Bank- bzw. Versicherungsgeschäfte. Sind diese Voraussetzungen nicht erfüllt,
+       ist Buchstabe b anzuwenden. Auch bei der Besteuerung des Vermögens ist die in
+       Übereinstimmung mit dem Abkommen in der Tschechoslowakischen Sozialistischen Republik
+       erhobene Steuer von den in der Tschechoslowakischen Sozialistischen Republik gelegenen
+       Vermögenswerten nach Maßgabe der Vorschriften des Steuerrechts der Bundesrepublik
+       Deutschland über die Anrechnung ausländischer Steuern auf die in der Bundesrepublik
+       Deutschland erhobene Steuer anzurechnen.
+
+(2) Bei einer in der Tschechoslowakischen Sozialistischen Republik ansässigen Person wird die Steuer wie
+folgt festgesetzt:
+
+    a) Die aus der Bundesrepublik Deutschland stammenden Einkünfte – mit Ausnahme der unter
+       Buchstabe b fallenden Einkünfte – und die in der Bundesrepublik Deutschland gelegenen
+       Vermögenswerte, die nach diesem Abkommen in der Bundesrepublik Deutschland besteuert
+                          Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 17
+
+
+        werden dürfen, sind in der Tschechoslowakischen Sozialistischen Republik von der Besteuerung
+        ausgenommen. Die Tschechoslowakische Sozialistische Republik darf aber bei der Festsetzung
+        der Steuer für das übrige Einkommen oder das übrige Vermögen dieser Person den Steuersatz
+        anwenden, der anzuwenden wäre, wenn die betreffenden Einkünfte oder das betreffende
+        Vermögen nicht von der Besteuerung ausgenommen wären.
+
+    b) Bei der Festsetzung der tschechoslowakischen Steuern werden die aus der Bundesrepublik
+       Deutschland stammenden Einkünfte, die nach den Artikeln 10, 12, 13 Absatz 3, 16 und 17 in der
+       Bundesrepublik Deutschland besteuert werden dürfen, in die Bemessungsgrundlage einbezogen.
+       Die in der Bundesrepublik Deutschland nach den Artikeln 10, 12, 13 Absatz 3, 16 und 17 gezahlte
+       Steuer wird auf die von diesen Einkünften in der Tschechoslowakischen Sozialistischen Republik
+       erhobene Steuer angerechnet. Der anzurechnende Betrag darf aber den Teil der vor der
+       Anrechnung ermittelten Steuer nicht übersteigen, der anteilig auf diese in der Bundesrepublik
+       Deutschland steuerpflichtigen Einkünfte entfällt.
+
+
+
+                                           Artikel 24
+                                       Gleichbehandlung
+
+(1) Ein Vertragsstaat darf bei Personen, die in dem anderen Vertragsstaat ansässig sind, keine
+Besteuerung vornehmen, die er bei Personen, die in einem dritten Staat ansässig sind, mit dem er kein
+Abkommen zur Vermeidung der Doppelbesteuerung hat, nicht vornehmen würde.
+
+(2) Die Besteuerung einer Betriebstätte, die ein Unternehmen eines Vertragsstaats in dem anderen
+Vertragsstaat hat, darf in dem anderen Staat nicht ungünstiger sein als die Besteuerung von Unternehmen
+des anderen Staates, die die gleiche Tätigkeit ausüben.
+
+Diese Bestimmung ist nicht so auszulegen, als verpflichte sie einen Vertragsstaat, den in dem anderen
+Vertragsstaat ansässigen Personen Steuerfreibeträge, -vergünstigungen und -ermäßigungen auf Grund
+des Personenstands oder der Familienlasten oder sonstiger persönlicher Umstände zu gewähren, die er
+den in seinem Gebiet ansässigen Personen gewährt.
+
+(3) Die Unternehmen eines Vertragsstaats, deren Kapital ganz oder teilweise, unmittelbar oder mittelbar,
+einer in dem anderen Vertragsstaat ansässigen Person oder mehreren solchen Personen gehört oder ihrer
+Kontrolle unterliegt, dürfen in dem erstgenannten Vertragsstaat weder einer Besteuerung noch einer
+damit zusammenhängenden Verpflichtung unterworfen werden, die anders oder belastender sind als die
+Besteuerung und die damit zusammenhängenden Verpflichtungen, denen andere ähnliche Unternehmen
+des erstgenannten Staates unterworfen sind oder unterworfen werden können.
+
+(4) In diesem Artikel bedeutet der Ausdruck „Besteuerung“ Steuern jeder Art und Bezeichnung.
+
+
+
+                                         Artikel 25
+                                  Verständigungsverfahren
+
+(1) Ist eine in einem Vertragsstaat ansässige Person der Auffassung, daß die Maßnahmen eines
+Vertragsstaats oder beider Vertragsstaaten für sie zu einer Besteuerung geführt haben oder führen werden,
+die diesem Abkommen nicht entspricht, so kann sie unbeschadet der nach innerstaatlichem Recht dieser
+                                   Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 18
+
+
+Staaten vorgesehenen Rechtsbehelfe ihren Fall der zuständigen Behörde des Vertragsstaats unterbreiten,
+in dem sie ansässig ist.
+
+ Der folgende Artikel 16 Absatz 1 Satz 2 des BEPS-MLI ist anzuwenden und geht den Bestimmungen dieses
+ Abkommens vor: 2
+
+                           ARTIKEL 16 BEPS-MLI – VERSTÄNDIGUNGSVERFAHREN
+ Der Fall muss innerhalb von drei Jahren nach der ersten Mitteilung der Maßnahme vorgelegt werden, die
+ zu einer diesem Abkommen nicht entsprechenden Besteuerung führt.
+
+
+(2) Hält diese zuständige Behörde die Einwendung für begründet und ist sie selbst nicht in der Lage, eine
+befriedigende Lösung herbeizuführen, so wird sie sich bemühen, den Fall durch Verständigung mit der
+zuständigen Behörde des anderen Vertragsstaats so zu regeln, daß eine dem Abkommen nicht
+entsprechende Besteuerung vermieden wird.
+
+ Der folgende Artikel 16 Absatz 2 Satz 2 des BEPS-MLI ist anzuwenden und geht den Bestimmungen dieses
+ Abkommens vor: 3
+
+                           ARTIKEL 16 BEPS-MLI – VERSTÄNDIGUNGSVERFAHREN
+ Jede erzielte Verständigungsregelung ist ungeachtet jeglicher im innerstaatlichen Recht der
+ Vertragsstaaten vorgesehener Fristen umzusetzen.
+
+
+(3) Die zuständigen Behörden der Vertragsstaaten werden sich bemühen, Schwierigkeiten oder Zweifel,
+die bei der Auslegung oder Anwendung des Abkommens entstehen, in gegenseitigem Einvernehmen zu
+beseitigen. Sie können auch gemeinsam darüber beraten, wie eine Doppelbesteuerung in Fällen, die in dem
+Abkommen nicht behandelt sind, vermieden werden kann.
+
+(4) Die zuständigen Behörden der Vertragsstaaten können für die Zwecke der Anwendung dieses
+Abkommens unmittelbar miteinander verkehren.
+
+
+
+                                                Artikel 26
+                                        Austausch von Informationen
+
+(1) Die zuständigen Behörden der Vertragsstaaten werden gegenseitig die zur Durchführung dieses
+Abkommens erforderlichen Informationen austauschen. Alle so ausgetauschten Informationen sind
+geheimzuhalten und dürfen nur solchen Personen oder Behörden mitgeteilt werden, die mit der
+Veranlagung und Erhebung der unter dieses Abkommen fallenden Steuern befaßt sind.
+
+(2) Absatz 1 ist auf keinen Fall so auszulegen, als verpflichte er einen der Vertragsstaaten,
+
+
+
+2 Wirksam ab dem 1. Januar 2026.
+
+3 Wirksam ab dem 1. Januar 2026.
+                                     Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 19
+
+
+       a) Verwaltungsmaßnahmen durchzuführen, die von den Gesetzen oder der Verwaltungspraxis dieses
+          oder des anderen Vertragsstaats abweichen,
+
+       b) Angaben zu übermitteln, die nach den geltenden Gesetzen oder im üblichen Verwaltungsverfahren
+          dieses oder des anderen Vertragsstaats nicht beschaffbar sind,
+
+       c) Informationen zu erteilen, die ein Handels-, Geschäfts- oder Berufsgeheimnis oder ein
+          Geschäftsverfahren preisgeben würden oder deren Erteilung der öffentlichen Ordnung
+          widerspräche.
+
+
+
+                                        Artikel 27
+           Mitglieder diplomatischer Missionen und konsularischer Vertretungen
+
+Dieses Abkommen berührt nicht die steuerlichen Vorrechte, die den Mitgliedern diplomatischer Missionen
+und konsularischer Vertretungen nach den allgemeinen Regeln des Völkerrechts oder auf Grund
+besonderer Vereinbarungen zustehen.
+
+    Der folgende Artikel 7 Absatz 1 des BEPS-MLI ist anzuwenden und geht den Bestimmungen dieses
+    Abkommens vor:4
+
+            ARTIKEL 7 BEPS-MLI – VERHINDERUNG VON ABKOMMENSMISSBRAUCH
+    Ungeachtet dieses Abkommens wird eine Vergünstigung nach diesem Abkommen nicht für bestimmte
+    Einkünfte oder Vermögenswerte gewährt, wenn unter Berücksichtigung aller maßgeblichen Tatsachen und
+    Umstände die Feststellung gerechtfertigt ist, dass der Erhalt dieser Vergünstigung einer der Hauptzwecke
+    einer Gestaltung oder Transaktion war, die unmittelbar oder mittelbar zu dieser Vergünstigung geführt hat,
+    es sei denn, es wird nachgewiesen, dass die Gewährung dieser Vergünstigung unter diesen Umständen mit
+    dem Ziel und Zweck der einschlägigen Bestimmungen dieses Abkommens im Einklang steht.
+
+
+
+
+                                                     Artikel 28
+                                                Berlin(West)-Klausel
+
+Entsprechend dem Vier-Mächte-Abkommen vom 3. September 1971 wird dieses Abkommen in
+Übereinstimmung mit den festgelegten Verfahren auf Berlin (West) ausgedehnt.
+
+
+
+                                                      Artikel 29
+                                                     Inkrafttreten
+
+(1) Dieses Abkommen bedarf der Ratifikation; die Ratifikationsurkunden sollen so bald wie möglich in
+Bonn ausgetauscht werden.
+
+
+4
+    Wirksam ab dem 1. Januar 2026.
+                        Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 20
+
+
+(2) Dieses Abkommen tritt dreißig Tage nach dem Austausch der Ratifikationsurkunden in Kraft und ist
+in beiden Vertragsstaaten anzuwenden:
+
+   a) auf die Steuern, die für den Veranlagungszeitraum, der auf das Jahr folgt, in dem das Abkommen
+      in Kraft getreten ist, und für die folgenden Veranlagungszeiträume erhoben werden;
+
+   b) auf die im Abzugsweg erhobenen Steuern von Erträgen, die nach dem 31. Dezember des Jahres,
+      in dem das Abkommen in Kraft getreten ist, gezahlt werden.
+
+
+
+                                        Artikel 30
+                                     Außerkrafttreten
+
+Dieses Abkommen bleibt auf unbestimmte Zeit in Kraft, jedoch kann jeder der Vertragsstaaten bis zum
+30. Juni eines jeden Kalenderjahrs nach Ablauf von fünf Jahren seit dem Ende des Kalenderjahrs des
+Inkrafttretens das Abkommen gegenüber dem anderen Vertragsstaat auf diplomatischem Wege schriftlich
+kündigen. In diesem Fall ist das Abkommen in beiden Vertragsstaaten nicht mehr anzuwenden:
+
+   a) auf die Steuern, die für das Veranlagungsjahr, das auf das Veranlagungsjahr folgt, in dem die
+      Kündigung ausgesprochen wird, und für die folgenden Veranlagungsjahre erhoben werden;
+
+   b) auf die im Abzugsweg erhobenen Steuern von Erträgen, die nach dem 31. Dezember des
+      Kündigungsjahrs gezahlt werden.
+
+
+
+Geschehen zu Prag am 19. Dezember 1980 in zwei Urschriften, jede in deutscher und tschechischer
+Sprache, wobei jeder Wortlaut gleichermaßen verbindlich ist.
+
+                                Für die Bundesrepublik Deutschland
+                                 Za Spolkovou republiku Německa
+                                      Hans-Dietrich Genscher
+
+                        Für die Tschechoslowakische Sozialistische Republik:
+                            Za Československou socialistickou republiku
+                                            Chňoupek
+                          Synthetisierter T ext des BEPS-MLI und des Abkommens mit der T schechischen Republik │ 21
+
+
+                                Bekanntmachung
+         über die Fortgeltung der deutsch-tschechoslowakischen Verträge
+            im Verhältnis zwischen der Bundesrepublik Deutschland
+                         und der Tschechischen Republik
+
+
+                                          Vom 24. März 1993
+
+
+
+     Durch Notenwechsel vom 18. Dezember 1992/1. Januar 1993 haben sich die Regierung der
+ Bundesrepublik Deutschland und die Regierung der Tschechischen Republik darauf verständigt, die
+  zwischen der Bundesrepublik Deutschland und der ehemaligen Tschechischen und Slowakischen
+Föderativen Republik geschlossenen Verträge im Verhältnis zwischen der Bundesrepublik Deutschland
+ und der Tschechischen Republik solange weiter anzuwenden, bis beide Seiten etwas Abweichendes
+                                          vereinbaren.
+
+
+
+Bonn, den 24. März 1993
+
+
+
+                                             Auswärtiges Amt
+                                               Im Auftrag
+                                              Dr. Schürmann
+

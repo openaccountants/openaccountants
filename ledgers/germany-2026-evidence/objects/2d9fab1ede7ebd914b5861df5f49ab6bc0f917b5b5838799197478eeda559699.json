@@ -1,0 +1,13 @@
+{
+  "one_changed_current_row": 1,
+  "current_rows": 177,
+  "same_native_coordinates": true,
+  "full_inverse_exact": true,
+  "prior_manifest_members_unchanged": 20,
+  "original_oa_blocks_exact_and_pass": 2,
+  "whole_worked_section_exact": true,
+  "source_index_and_all_quote_bodies_unchanged": true,
+  "schema_errors": [],
+  "schema_warnings": [],
+  "diff_returncode": 0
+}

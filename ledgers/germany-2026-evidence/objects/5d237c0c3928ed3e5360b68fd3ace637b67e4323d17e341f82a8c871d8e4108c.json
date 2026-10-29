@@ -1,0 +1,474 @@
+{
+  "current_claim_units_read": [
+    [
+      1,
+      31
+    ]
+  ],
+  "all_source_records_direct_read": [
+    {
+      "row": 1,
+      "id": "S3",
+      "article": "SGB IV \u00a73",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_4/__3.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-3-20261026.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc727c41a601aff0a.reader.txt",
+      "raw_sha256": "40d56a662e85529b822876a730d882b633dd2e0af82cb5335a970a688e5982b3",
+      "reader_sha256": "4a7114d20296464dfc926b5d44d75f28c55ef0741f1456b94452d53f7c4e96f5",
+      "native_LF": [
+        7,
+        10
+      ],
+      "quote_sha256": "3ceccf307876891a5073ac0cf83a8660f6c73d9ca895621b6d1304a2d1852d74",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 2,
+      "id": "S6",
+      "article": "SGB IV \u00a76",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_4/__6.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-6-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8ea1b2667c52ea4a.reader.txt",
+      "raw_sha256": "8592e345e5cf05f8a1421204ad2b5c739d29d34a842e3f785dc2b1514a74e655",
+      "reader_sha256": "832dde815da3654f90268a50d8a0b43f6d413b9015c27e73667e6bd7b146f3ce",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "91bf1bb2ae2048c4bb7d4891beb531da161140f999ccc45c11a8e43fd7cdfce5",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 3,
+      "id": "S28f1",
+      "article": "SGB IV \u00a728f(1)",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_4/__28f.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-28f-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3c5cf45da9e94344.reader.txt",
+      "raw_sha256": "10231267d2a7b549ee971af39b684579ca57edd33c7aba30e5c86ab6178ee848",
+      "reader_sha256": "d8a2d76ff5cda57b0cddc4573d5d8b6ad40dd2eb0c46c36cd18c43bb19b369ef",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "c0dc809487d88926bd86506979ec44b37a4fa4cf5b83040d59199fdfc7255172",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 4,
+      "id": "S28f1b",
+      "article": "SGB IV \u00a728f(1b)",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_4/__28f.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-28f-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3c5cf45da9e94344.reader.txt",
+      "raw_sha256": "10231267d2a7b549ee971af39b684579ca57edd33c7aba30e5c86ab6178ee848",
+      "reader_sha256": "d8a2d76ff5cda57b0cddc4573d5d8b6ad40dd2eb0c46c36cd18c43bb19b369ef",
+      "native_LF": [
+        9,
+        9
+      ],
+      "quote_sha256": "7173ad544b7b1aaf7a88b5c40f7bbb886347efef8557e22563b8767f92244afc",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 5,
+      "id": "S28f3",
+      "article": "SGB IV \u00a728f(3)",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_4/__28f.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-28f-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3c5cf45da9e94344.reader.txt",
+      "raw_sha256": "10231267d2a7b549ee971af39b684579ca57edd33c7aba30e5c86ab6178ee848",
+      "reader_sha256": "d8a2d76ff5cda57b0cddc4573d5d8b6ad40dd2eb0c46c36cd18c43bb19b369ef",
+      "native_LF": [
+        11,
+        11
+      ],
+      "quote_sha256": "56fb542d2b2bab1677461854f4aea19de8cf31718d1c1378d669c21547c8dd2b",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 6,
+      "id": "S192",
+      "article": "SGB VII \u00a7192(1)",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_7/__192.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U76e36b803eade88a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U76e36b803eade88a.reader.txt",
+      "raw_sha256": "9f95650861e7738bfc4e8d317fe8804434b21dae5fb334b195dde15b7e0624c4",
+      "reader_sha256": "f170a7690c8fdbb9b8a5f46039fca442f50eeff15a9215458ed29787232e9c6a",
+      "native_LF": [
+        7,
+        15
+      ],
+      "quote_sha256": "e63c052b2e03bbb4e33d11e694c35865b6bbfd1a12e55dadca01a7ac3ca93a4a",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 7,
+      "id": "S130",
+      "article": "SGB VII \u00a7130(2)",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_7/__130.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U65ee9b26227e00f7.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U65ee9b26227e00f7.reader.txt",
+      "raw_sha256": "22ea73e793571c7f69bf365e904c9013d61a6e13a6d9d0baf55eb690605942c0",
+      "reader_sha256": "771fd764b77e5fb34fe4e32e2bb898c5b9888d35acbf4a0cbbdfe5997450a149",
+      "native_LF": [
+        8,
+        8
+      ],
+      "quote_sha256": "be029d396eb4de0d7ed51a1596f8829f83949abfd0e92e40f4a4fe5847bbb440",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 8,
+      "id": "S18i",
+      "article": "SGB IV \u00a718i(1)\u2013(4)",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_4/__18i.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue8c86448d5fdd35a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue8c86448d5fdd35a.reader.txt",
+      "raw_sha256": "27d69dd6849aaa802c2093636868c90ca99629c2081defb7a2fb2cdcbc9dea3b",
+      "reader_sha256": "3e731bcf6eaaf675199d8c58dd003dc187c3d760843797eb98ac42e0805edd82",
+      "native_LF": [
+        7,
+        10
+      ],
+      "quote_sha256": "dee68d93f5ac98d81231e934f824fbe6d0892ee743b865850fb9f89a9018337e",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 9,
+      "id": "S28i",
+      "article": "SGB IV \u00a728i",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_4/__28i.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-28i-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U79af09b0311744de.reader.txt",
+      "raw_sha256": "98ac447d1ee0ce1bac215eec9a80cd884982dd8c4987174ffb87b21d2bf7e0ba",
+      "reader_sha256": "151ecacd3d5d963a48220c83ba86fd0efd4ef1a247ff13c158eb71052a5d11b5",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "427d197ca439f787a43146060deca260894d4b8718125e9afbd6b269fdb3cb36",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 10,
+      "id": "S28h",
+      "article": "SGB IV \u00a728h(1)/(2)",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_4/__28h.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U872239d7677c883a.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U872239d7677c883a.reader.txt",
+      "raw_sha256": "794e9274a90b4c0b033b34f15359efdcd7658dbd0c75f8f751429e6f363e02c7",
+      "reader_sha256": "19ae2721eedeba0d55eaf7b1c61af4b9e810a73d85306cd643b9808058fa8972",
+      "native_LF": [
+        7,
+        8
+      ],
+      "quote_sha256": "4338455708b90c1e74f93759c6d41abc1c55860ba9e513eae77dedaa6973e889",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 11,
+      "id": "DV6",
+      "article": "DE\u00dcV \u00a76",
+      "official_url": "https://www.gesetze-im-internet.de/de_v/__6.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue69dd41daefabb30.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ue69dd41daefabb30.reader.txt",
+      "raw_sha256": "2e5c5b2a6551f75e0f37ff82cb4b675d8136f3f29b9dcbb7d2f67908523669c6",
+      "reader_sha256": "472b5770e1384a712a6484edc3169707bfdc3a56a506f3ccc9ee6ddf5b6495a8",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "76c2f1bfb61b44ec4f3faad7c1b2d7ebf1b116e3f409cb549a14cb403f55593f",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 12,
+      "id": "S28a4",
+      "article": "SGB IV \u00a728a(4): sectors and no replacement",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_4/__28a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-28a-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U532d69a8f1b24ff3.reader.txt",
+      "raw_sha256": "a3bf381aee4e11a65cf6bff806f89e888f913e9f679beb459be843b817a21d2a",
+      "reader_sha256": "3e7ece679176f183df8e2550aa77f7deb9e72a7e952505fe668baf918b4f26df",
+      "native_LF": [
+        121,
+        151
+      ],
+      "quote_sha256": "2071cfbdd94d470e803830be2603b22d599ba7967a8251ccfd633d442ff23d33",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 13,
+      "id": "E38",
+      "article": "EStG \u00a738(1)\u2013(3)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__38.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-38-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uacdcc1d7409901d5.reader.txt",
+      "raw_sha256": "06ed6d1067bf88ca40ff9070a8ba89b0c90daa5cb1c7b7306a5b409a1b4c1927",
+      "reader_sha256": "19c243886dce3311e27f8ed562391dcbaed1a7bd3f0b2c9ae476e6571d9f6a84",
+      "native_LF": [
+        7,
+        13
+      ],
+      "quote_sha256": "82de926bc9d64ee6998ab5171fe83ef987330e135543ec46153758c37ff5a4a9",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 14,
+      "id": "E42e",
+      "article": "EStG \u00a742e",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__42e.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U535aaff3faca1b6e.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U535aaff3faca1b6e.reader.txt",
+      "raw_sha256": "75efaba559307f39286bb4e30bab55a0e0f610ecff5293c74c2c9d0ee7c96594",
+      "reader_sha256": "a0773dcc23a543a58776f0feddbc3bf94ca720a39da2ac58192eecc7355a5b6b",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "5b59d358d358d48b7c6384bb71965a57e47a7d3a65718df60b0edb7691959cc1",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 15,
+      "id": "E39e",
+      "article": "EStG \u00a739e(4)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__39e.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-39e-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U144cbed708743491.reader.txt",
+      "raw_sha256": "99f5985e70ed955c8840a1f0f67e7a9f11a22b97a6dd78e4dafe2c5caf97b32f",
+      "reader_sha256": "57c7ee75392b5b640da4422daa38cc4df53b5c407ec65226b6c2f8dc60b843ae",
+      "native_LF": [
+        28,
+        34
+      ],
+      "quote_sha256": "2de78dc353dc49b6aeff3f646fc0f9d91fa9d2f5e60f2c6c098e24041b6b3b79",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 16,
+      "id": "E39e9",
+      "article": "EStG \u00a739e(9): transitional tax identifier",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__39e.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-39e-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U144cbed708743491.reader.txt",
+      "raw_sha256": "99f5985e70ed955c8840a1f0f67e7a9f11a22b97a6dd78e4dafe2c5caf97b32f",
+      "reader_sha256": "57c7ee75392b5b640da4422daa38cc4df53b5c407ec65226b6c2f8dc60b843ae",
+      "native_LF": [
+        54,
+        54
+      ],
+      "quote_sha256": "24db6546f8c4c380bd6de08c899bb640999bda29be0382d3985926338bb71ea3",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 17,
+      "id": "E41a",
+      "article": "EStG \u00a741a(1)/(2)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__41a.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-41a-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ub98e13d0d33ec925.reader.txt",
+      "raw_sha256": "e03704951d7870b83d4b7a8562ba8307619b4fe9f9e00de8adaf1b7fe7606c69",
+      "reader_sha256": "383c57cba19f3f16a0d04725207e30bec0fd14a620c74870e8a00dfaa06a77e9",
+      "native_LF": [
+        7,
+        12
+      ],
+      "quote_sha256": "d114f83c2bcd2e65d6c367baf2dbd2a9f21ae00c0b6c0cc6270fbcfe4dd2c7c4",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 18,
+      "id": "E1",
+      "article": "EStG \u00a71(1) opening",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__1.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6c12b21cadb51df.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua6c12b21cadb51df.reader.txt",
+      "raw_sha256": "aa3116bd65c47709867eaba213a4f5a482aabe7075b4e0ae7b31fb8f2830d6ca",
+      "reader_sha256": "c131d86c4bf7573c7ceb89484930ecd33f0df991d53b7f180bdd3640c66b9f18",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "c5b33d2bd044f11db3626c41c41cd922c34b5011f25f3fcd8fda7898adc9e304",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 19,
+      "id": "E37",
+      "article": "EStG \u00a737(1)/(3)",
+      "official_url": "https://www.gesetze-im-internet.de/estg/__37.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-37-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc643ed190a73675e.reader.txt",
+      "raw_sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "reader_sha256": "782a3f377dc8f603590990e0ea2aac93844231f128dbb4a901925e7a6b289efb",
+      "native_LF": [
+        7,
+        9
+      ],
+      "quote_sha256": "91e08f3b36aa57235bf36df4b2e4cf7aad858b854faa250263e28ec4473d0fd5",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 20,
+      "id": "S28e",
+      "article": "SGB IV \u00a728e(1)",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_4/__28e.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-28e-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud3d761bc5bbe4868.reader.txt",
+      "raw_sha256": "821d075650dba6b0556497eadd83abb82699445c11dacdd807a414bbd358f638",
+      "reader_sha256": "77c0297632fbeb0c251608585afd876d829a593b5073ecb320e3f1b347efb0c1",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "195c7624bfcd2f973e0146ce7e5b63c90a7a773c7ee663a08fedc74d1b835be9",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 21,
+      "id": "S28g",
+      "article": "SGB IV \u00a728g",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_4/__28g.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-28g-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U44fba97f2acbffef.reader.txt",
+      "raw_sha256": "9e7a1c55ca4b5f93041a6eaeb9e6d480837d2abcfbbe1e921dcc21aca28ef3c6",
+      "reader_sha256": "33b6dc0d3b946e4556d31d40c55b4659580ef8ae1f86f133ed6d8e5a7939a49f",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "d18c3fb3ef1ea0bc90cd9bda6640fe7f59499b8ad280df4dc7c2b724142bf887",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 22,
+      "id": "S23",
+      "article": "SGB IV \u00a723(1)",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_4/__23.html",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb4-23-20261024.html",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U67b73a2ad171ae19.reader.txt",
+      "raw_sha256": "83611c3344141257bc1fe57ef32189472a924090dcc4ad8508653dba67a5f8ec",
+      "reader_sha256": "5c0e56131e32a432f4d8e05b800cff34cb8dba8cbcae077c21adfd99cbe5bcc3",
+      "native_LF": [
+        7,
+        7
+      ],
+      "quote_sha256": "6f7b3b3328a16be0b593ed1af0791eb0766d9b875669525ec19836d833e6f4f0",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 23,
+      "id": "AO12",
+      "article": "AO \u00a712",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__12.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U973c64f282413d56.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U973c64f282413d56.reader.txt",
+      "raw_sha256": "7f1713069ec91b95b3cb11fe73139648e3182d398befb84beec90d616c3e860b",
+      "reader_sha256": "9d038f72010ebc6b3f347abe5e20c374f41306762694cebd7f2236b3738d4c47",
+      "native_LF": [
+        7,
+        28
+      ],
+      "quote_sha256": "c1dca15bc4a4b2f1076617e015d85fdda150837062a03ab0db89c035e0ea521f",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 24,
+      "id": "AO13",
+      "article": "AO \u00a713",
+      "official_url": "https://www.gesetze-im-internet.de/ao_1977/__13.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U11f3cb107b7d240f.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U11f3cb107b7d240f.reader.txt",
+      "raw_sha256": "7bf95bbfb6b1066ef248de2f6f0d41892418ef49e9440e8d61e3e5e89ce74440",
+      "reader_sha256": "7d952cf2449286f4d58cfda806d1c52996efc0564f48c8799ac0f77ae25ee8d1",
+      "native_LF": [
+        7,
+        10
+      ],
+      "quote_sha256": "57a642340273b7c667d542fe261b35990361568960d759679c9f9af60e068be2",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 25,
+      "id": "BA1",
+      "article": "BA: first employee / issuing service",
+      "official_url": "https://www.arbeitsagentur.de/unternehmen/betriebsnummern-service/alles-wichtige/beantragung",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8824d3005e2e3619.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8824d3005e2e3619.reader.txt",
+      "raw_sha256": "18a7278b6b516fb4b6a70f88e766a0573f84c16af4069c13de47fd96e869a996",
+      "reader_sha256": "f3167cd7f951f5378caf70626b421edf2ef8fd5ed5ea8b7d28168d705b712d0d",
+      "native_LF": [
+        17,
+        25
+      ],
+      "quote_sha256": "d2550fa475f38864d6978c5b5e959cc5928348bf8f1512cab4cfbd4fcffd4ae1",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 26,
+      "id": "BA2",
+      "article": "BA: employment-establishment number",
+      "official_url": "https://www.arbeitsagentur.de/unternehmen/betriebsnummern-service/alles-wichtige",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U926bd2626286cacf.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U926bd2626286cacf.reader.txt",
+      "raw_sha256": "786a66a3dd45472ec5ad3e1165443d6362398f6c6896c373aa34bc89d7e8bdda",
+      "reader_sha256": "23e9fb8aa9275ca4d35a6421e1a66e9ecbf9506148fc6050ab0adb6406ee072b",
+      "native_LF": [
+        22,
+        24
+      ],
+      "quote_sha256": "08a4d697877e6bf5a8e4a3e47932e48e32c2725ddf3aedfdd4b74d7fe900ad37",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 27,
+      "id": "BA3",
+      "article": "BA: electronic application / insurer number / changes",
+      "official_url": "https://www.arbeitsagentur.de/unternehmen/betriebsnummern-service/alles-wichtige",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U926bd2626286cacf.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U926bd2626286cacf.reader.txt",
+      "raw_sha256": "786a66a3dd45472ec5ad3e1165443d6362398f6c6896c373aa34bc89d7e8bdda",
+      "reader_sha256": "23e9fb8aa9275ca4d35a6421e1a66e9ecbf9506148fc6050ab0adb6406ee072b",
+      "native_LF": [
+        32,
+        39
+      ],
+      "quote_sha256": "d5b2dcfa467f8ba8c7688086152692b7b5c480b88da8d1a085e3b53627d1824f",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 28,
+      "id": "DVKA1",
+      "article": "DVKA: Germany-only employment / foreign employer",
+      "official_url": "https://www.dvka.de/de/arbeitgeber-erwerbstaetige/faq/",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1b7b835e5551dbae.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U1b7b835e5551dbae.reader.txt",
+      "raw_sha256": "55458457d6c11e37fd3eb737e049cb2b9e870886c60d25ccbd06d643ca3c5563",
+      "reader_sha256": "b9330b60c558e927b7400f590f1f7731ac9b5ed224d3b4ed84df87317a4ce9ce",
+      "native_LF": [
+        179,
+        191
+      ],
+      "quote_sha256": "04484aabedd8d1b913bb749bb56a113a0e5c8b95a8818c5d9dbe70416a6ad1c4",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    },
+    {
+      "row": 29,
+      "id": "DVKAcoord",
+      "article": "DVKA: coordination, not harmonisation",
+      "official_url": "https://www.dvka.de/de/arbeitgeber-erwerbstaetige/geltungsbereiche/koordination.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8e8cc9c5160fb456.body",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U8e8cc9c5160fb456.reader.txt",
+      "raw_sha256": "5e0cc12980b8fa848af5fc0fe8ee5ed8d30d62e23094d52f898a516a0458b324",
+      "reader_sha256": "0675a4a99eb8305e0c1d1a03fb921d588df5a7e951eb5eb7940eccca2e77d701",
+      "native_LF": [
+        88,
+        89
+      ],
+      "quote_sha256": "c7ea94ca947f7bfd5d04ceac5fb50ba84d133d4ae2eeab6e2ad0d152c595f427",
+      "actual_read": "Selected full quotation directly actually read in bounded batches1\u20139/10\u201320/21\u201329; no source-wide reading claimed."
+    }
+  ]
+}

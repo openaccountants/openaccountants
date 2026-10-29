@@ -1,0 +1,249 @@
+{
+  "status": "PASS bounded exact R37\u201343 successor; frozen365units/141quotes/527oldorigins/41controls previously independently checked. No country verdict.",
+  "pair": {
+    "slug": "germany-einvoice",
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/germany-einvoice.md",
+    "Guide_sha256": "d2017d1ab2cce52ae1d416036f9d18f331b35f1aa7e9221ab24307d126b3bddb",
+    "bytes": 76116,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R37-R41-einvoice-writer-successor-2026-10-29/ledgers/germany-einvoice.md",
+    "ledger_sha256": "bcb1f8a134389aad3c5e7ac93511450b4cb4486bb3bbd194f32e0b87ef136f99",
+    "current_rows": 365,
+    "prior_current_rows": 365,
+    "old_topics": 527,
+    "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/ledgers/germany-einvoice.md",
+    "prior_ledger_sha256": "b21d9c6cbdb1b6725af38ff2285922729fd07a00c62b67e7425fddbaccef6ed2"
+  },
+  "manifest_members_rehashed": 21,
+  "operations": 15,
+  "all_old_origin_identities_exact": 527,
+  "full_inverse": true,
+  "native_rows_verified": 365,
+  "original_oa_exact": 0,
+  "original_Sections7_and11_exact": true,
+  "protected_metadata_CTA_URLs": true,
+  "sources": [
+    {
+      "id": "R37.complete-offences",
+      "native_LF": [
+        7,
+        28
+      ],
+      "reader_sha256": "2851c3ba314c95f3ae87ec842c252bd9c6119cab4cdbad881b8662cb07854019",
+      "quote_sha256": "79ee87ccb85dbacb951b03a2750efc7146ff22c9dc5665784df829783591fdde",
+      "actual_read": "All fourteen complete writer-selected actual quotations independently read in two bounded batches, matched to original e-invoice reading and the finite fullUStAE/newBMFannex selected scopes. Acquisition/partial-reading boundaries preserved."
+    },
+    {
+      "id": "R38.portal",
+      "native_LF": [
+        7,
+        11
+      ],
+      "reader_sha256": "020c3e65557f86b5d42d4e7a66b200375eef60424aafff79158fedd9ce69a033",
+      "quote_sha256": "7a161a457784c65216ed4b8c82d83c6edcd0bc261de0dbbe21222ee0b9d20b3c",
+      "actual_read": "All fourteen complete writer-selected actual quotations independently read in two bounded batches, matched to original e-invoice reading and the finite fullUStAE/newBMFannex selected scopes. Acquisition/partial-reading boundaries preserved."
+    },
+    {
+      "id": "R39.default-and-consent",
+      "native_LF": [
+        7,
+        18
+      ],
+      "reader_sha256": "51f058c1b9e8785699a47d29e92bdc5fafc8b451c50c5cfd205018ae11a7e670",
+      "quote_sha256": "ebdb75e3cd0598fefb697a241e1cb05ea3904635d78e4650f6d255be1a4a62a7",
+      "actual_read": "All fourteen complete writer-selected actual quotations independently read in two bounded batches, matched to original e-invoice reading and the finite fullUStAE/newBMFannex selected scopes. Acquisition/partial-reading boundaries preserved."
+    },
+    {
+      "id": "R39.transition",
+      "native_LF": [
+        59,
+        65
+      ],
+      "reader_sha256": "07dbb451d4da7ca6d39ae7f8154504e6fdaeaa8541ab72cdb24c89d6fed75c3d",
+      "quote_sha256": "2e548fa2e6ac13fed24a55518f9719957afa40d07a3f3546ad4f1bd443537f11",
+      "actual_read": "All fourteen complete writer-selected actual quotations independently read in two bounded batches, matched to original e-invoice reading and the finite fullUStAE/newBMFannex selected scopes. Acquisition/partial-reading boundaries preserved."
+    },
+    {
+      "id": "R39.effect",
+      "native_LF": [
+        1541,
+        1545
+      ],
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "7db40ca51f42e95a6ac7750ea4ded55f7bf7bc097c909159dea097d15fbedb15",
+      "actual_read": "All fourteen complete writer-selected actual quotations independently read in two bounded batches, matched to original e-invoice reading and the finite fullUStAE/newBMFannex selected scopes. Acquisition/partial-reading boundaries preserved."
+    },
+    {
+      "id": "R40.consent",
+      "native_LF": [
+        415,
+        454
+      ],
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "7e08a0293f88a675bdd550f8fdb74f3369ed3f2889e6f0db44193274cb2bed30",
+      "actual_read": "All fourteen complete writer-selected actual quotations independently read in two bounded batches, matched to original e-invoice reading and the finite fullUStAE/newBMFannex selected scopes. Acquisition/partial-reading boundaries preserved."
+    },
+    {
+      "id": "R41.amendment-input",
+      "native_LF": [
+        1365,
+        1371
+      ],
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "3e35af683601c25cc17ed85e27ec5e6bebaf249cf63e73fec44aa476030a6cff",
+      "actual_read": "All fourteen complete writer-selected actual quotations independently read in two bounded batches, matched to original e-invoice reading and the finite fullUStAE/newBMFannex selected scopes. Acquisition/partial-reading boundaries preserved."
+    },
+    {
+      "id": "R41.amendment-fallback",
+      "native_LF": [
+        1390,
+        1397
+      ],
+      "reader_sha256": "55e5eb07583252c5c890457a800112886af24d11cb5b70697dc5c475b21c3f3e",
+      "quote_sha256": "f29c23db2edfdc122ab01595e50bbcd2cdf71a1a92719fd6e3e88ffa95f23a0f",
+      "actual_read": "All fourteen complete writer-selected actual quotations independently read in two bounded batches, matched to original e-invoice reading and the finite fullUStAE/newBMFannex selected scopes. Acquisition/partial-reading boundaries preserved."
+    },
+    {
+      "id": "R41.full-fallback-conditions",
+      "native_LF": [
+        31069,
+        31094
+      ],
+      "reader_sha256": "20c3385e52442415812a5211a9e944fca275ccadb7b4c7938f1515df1eabccd0",
+      "quote_sha256": "508021393b4181d0a67e6bd25a00423696b81bb19960b66457d454cf5b75ca36",
+      "actual_read": "All fourteen complete writer-selected actual quotations independently read in two bounded batches, matched to original e-invoice reading and the finite fullUStAE/newBMFannex selected scopes. Acquisition/partial-reading boundaries preserved."
+    },
+    {
+      "id": "R41.full-fallback-completion",
+      "native_LF": [
+        31120,
+        31124
+      ],
+      "reader_sha256": "20c3385e52442415812a5211a9e944fca275ccadb7b4c7938f1515df1eabccd0",
+      "quote_sha256": "06e698148b78a5e5f06499d1d4888816833f468faed58453aaaf02c42cb76ee3",
+      "actual_read": "All fourteen complete writer-selected actual quotations independently read in two bounded batches, matched to original e-invoice reading and the finite fullUStAE/newBMFannex selected scopes. Acquisition/partial-reading boundaries preserved."
+    },
+    {
+      "id": "R42.outgoing-waiver",
+      "native_LF": [
+        254,
+        265
+      ],
+      "reader_sha256": "a9d917866136d75b8b46deebbc1e9db790301dbb2d0e56451cc399dd07f2a076",
+      "quote_sha256": "4ee94029a461f5392de4c3a7bde327f7d8bd606246642c26bf13294eb6c9129a",
+      "actual_read": "All fourteen complete writer-selected actual quotations independently read in two bounded batches, matched to original e-invoice reading and the finite fullUStAE/newBMFannex selected scopes. Acquisition/partial-reading boundaries preserved."
+    },
+    {
+      "id": "R43.conversion",
+      "native_LF": [
+        492,
+        499
+      ],
+      "reader_sha256": "a9d917866136d75b8b46deebbc1e9db790301dbb2d0e56451cc399dd07f2a076",
+      "quote_sha256": "0cc9bf0541d8a3cb0fdd59f6827e1bc38d32b6f39f5f303500fd09a34df32dc1",
+      "actual_read": "All fourteen complete writer-selected actual quotations independently read in two bounded batches, matched to original e-invoice reading and the finite fullUStAE/newBMFannex selected scopes. Acquisition/partial-reading boundaries preserved."
+    },
+    {
+      "id": "R43.documentation",
+      "native_LF": [
+        545,
+        557
+      ],
+      "reader_sha256": "a9d917866136d75b8b46deebbc1e9db790301dbb2d0e56451cc399dd07f2a076",
+      "quote_sha256": "4508bb537a16824c3fdde57aa289ecb7158127e10b06d2163f355a6b7eab016a",
+      "actual_read": "All fourteen complete writer-selected actual quotations independently read in two bounded batches, matched to original e-invoice reading and the finite fullUStAE/newBMFannex selected scopes. Acquisition/partial-reading boundaries preserved."
+    },
+    {
+      "id": "R43.effective",
+      "native_LF": [
+        630,
+        639
+      ],
+      "reader_sha256": "a9d917866136d75b8b46deebbc1e9db790301dbb2d0e56451cc399dd07f2a076",
+      "quote_sha256": "98f73450f33bb1a7c09b8999afaf698ab05dbbe881357f117731f876bb0ff522",
+      "actual_read": "All fourteen complete writer-selected actual quotations independently read in two bounded batches, matched to original e-invoice reading and the finite fullUStAE/newBMFannex selected scopes. Acquisition/partial-reading boundaries preserved."
+    }
+  ],
+  "own_controls": [
+    {
+      "name": "fallbackcorrectedfixtureabove250",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "fallbackpaidinvoice1190",
+      "actual": "1190",
+      "expected": "1190"
+    },
+    {
+      "name": "fallbackeligibleinput190",
+      "actual": "190",
+      "expected": "190"
+    },
+    {
+      "name": "small119notseparatingwrongformatfixture",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "Dec2026Jan2027norelief1",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "Dec2026cannotbe2027supply",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "lowturnovernotrescuewrongyear",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "priorstandinginvoiceseparateactualrule",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "foreignvoluntaryrequiresconsent",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "domestic33eInvoicenoconsent",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "formalportalchecksparagraph3",
+      "actual": "3",
+      "expected": "3"
+    },
+    {
+      "name": "unmatcheduserparagraph4nonotice",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "copyreconstructionwithoverwrittenhistoriesnotsufficient",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "losslessconversionallfourgates",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "conversionnotpermissionloseXML",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "documentationmissingbutverifiabilityunimpairednotautomaticbookrejection",
+      "actual": "False",
+      "expected": "False"
+    }
+  ],
+  "unchanged_original_controls": "germany-einvoice-own-controls.json:41 own original separators; no originaloa. Initial reviewer optional119gross fallback fixture did not exceed250 and therefore did not separate a mandatory-format error. Correct actual successor fixture1000net190VAT1190paid is independently checked; historical finding/control preserved with explicit erratum. Existing portal and wrong-format-fine questions retained."
+}

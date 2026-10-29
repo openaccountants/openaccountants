@@ -1,0 +1,95 @@
+{
+  "status": "Writer successor, independent review pending",
+  "artifacts": [
+    {
+      "path": "after/germany-transfer-pricing.md",
+      "sha256": "e0fb36c2e05112e253ac55ce2bd1079fe537dfaac9638c662e7f7fca68fe5783",
+      "bytes": 67075
+    },
+    {
+      "path": "before/germany-transfer-pricing.md",
+      "sha256": "6484533ed7d6864dee6ccdd2c67e04a9478abf59c7d362bfcdecd172aef120cb",
+      "bytes": 66136
+    },
+    {
+      "path": "build-ledger.py",
+      "sha256": "e0ded36667eba472a0af6058d0895d753cd52e6703f11b78332ad7d4fc207a34",
+      "bytes": 6441
+    },
+    {
+      "path": "builder-check-history.md",
+      "sha256": "47f78969cdbe34f7b72c057b54c06b930d35750e5042dbbbecea92d8a52f71ee",
+      "bytes": 615
+    },
+    {
+      "path": "check-and-seal.py",
+      "sha256": "a4fdab47149c5ab27aa57c93ab78a7276d35df3fb433bcfb8d6eb2a97031cead",
+      "bytes": 7804
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "1089aa4af46ffc8a6527f1b921303a1417ed71f94f5e55725501dd5bc7a92d8f",
+      "bytes": 3083
+    },
+    {
+      "path": "ledgers/germany-transfer-pricing.md",
+      "sha256": "3236c3f7e39e66871cab14dac6c67fd45e75eb016c5967d0a566b52d6f36441d",
+      "bytes": 257575
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "4e17e0dfb7c39c03bd9b7d24fe901d1f615b438560705a51e342c7d5e7a2210a",
+      "bytes": 1096
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "bbceb6741b1b853fa9e878949308b7f43c865673142f1991b3cf8c479a6ee13b",
+      "bytes": 4795
+    },
+    {
+      "path": "preservation-proof.json",
+      "sha256": "680d2556c5d8f8fac8ba62fb33a00b37ed28152dc7836bf40683d9ded887dc42",
+      "bytes": 495
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "b3fd14f1715fffb2ce785398763d1a2f339575f56d0e3e25fc409e585cda949a",
+      "bytes": 286793
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "e4f7a852003eacf268069f8da3b9a4fe623aa6b80ada9a12137731bf0960ab1f",
+      "bytes": 168353
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "ee2b2c4a1841c9696e611c11d9af5303ad9bd5d5b7332ff53234b59136af913f",
+      "bytes": 901
+    },
+    {
+      "path": "support/germany-transfer-pricing/old-topic-destinations.json",
+      "sha256": "ef321670c559a1fb5a4a2c9b04ed082e44fff3dd5f858c8092e5c27c47646d9c",
+      "bytes": 232615
+    },
+    {
+      "path": "support/germany-transfer-pricing/rows.json",
+      "sha256": "2c8631a718c5a31cdc6fada7062d20f5995ff5e92e1d0b5e50853afd41fe5010",
+      "bytes": 178157
+    },
+    {
+      "path": "support/line-map.json",
+      "sha256": "ba1264f1be193a779ebd4d0a02250c11cd9c0339fdb11c4b586dc008dad69970",
+      "bytes": 24081
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "cd3d111597dbca030f5222e1d91413f080474f826548397dd7245f01d6872370",
+      "bytes": 28797
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "f23b720b6fa500c1f5d7cfc5e166b5f3319fc66f0b851c2a9fcdfd425103a4f7",
+      "bytes": 1538
+    }
+  ]
+}

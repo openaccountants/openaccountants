@@ -1,0 +1,162 @@
+Peppol Authority Deutschland | XStandards Einkauf
+Start
+Bereiche
+Überblick
+Peppol
+eForms-DE
+XBestellung
+XBezahldienste
+XRechnung
+Aktuelles
+Dokumente
+FAQ
+Veranstaltungen
+Kontakt
+Suchen
+Suchen
+Home
+Peppol
+Peppol
+Peppol zur Übermittlung von strukturierten Daten
+Peppol bezeichnet eine in Europa und zunehmend auch international etablierte Infrastruktur. Sie dient der sicheren Übermittlung von strukturierten Daten im Kontext der elektronischen Beschaffung.
+Die aktuelle zusammenfassende Übersicht zu den Nutzungszahlen von Peppol findet sich hier.
+Für die Peppol Community geht es hier zum internen Bereich, in dem wir die Präsentationen unserer Veranstaltungen bereitstellen:
+Interner Bereich
+Inhalte auf dieser Seite
+Inhalte
+Weitere Links
+Dokumente
+FAQ
+Interner Bereich
+Veranstaltungen
+German Electronic Business Address (GEBA)
+Nutzungszahlen
+Inhalte
+Weitere Links
+Dokumente
+FAQ
+Interner Bereich
+Veranstaltungen
+German Electronic Business Address (GEBA)
+Nutzungszahlen
+Termine
+Alle Termine rund um die Peppol Authority Deutschland
+Wenn Sie Interesse zur Mitwirkung oder Fragen zu den Terminen haben, melden Sie sich gerne beim Peppol-Team von XStandards Einkauf unter peppol@finanzen.bremen.de.
+Unsere Formate:
+Netzwerk-Meetings
+Um relevante Informationen auszutauschen und die Netzwerke zu erweitern trifft sich die deutsche Peppol Community regelmäßig, zwei Mal im Jahr, zum persönlichen Austausch. Die Veranstaltung erstreckt sich in der Regel über zwei Tage und findet sowohl in Bremen bei der Peppol Authority Deutschland, als auch bei unterschiedlichen Service Providern in ganz Deutschland statt.
+Newbie-Sessions
+Unsere Newbie-Sessions finden monatlich statt und richten sich an all jene, die neu im Peppol Netzwerk sind, ihr Wissen auffrischen oder vertiefen möchten. Die Sessions bieten Basis-Wissen zu Peppol im Allgemeinen und der unterschiedliche Peppol-Komponenten. Wenn Sie sich dafür interessieren, im Peppol-Netzwerk aktiv zu sein oder bereits sind, nehmen Sie gerne an unserer Newbie-Session teil. Die Sessions sollen nicht nur Wissen vermitteln, sondern sind auch interaktiv gestaltet, sodass jederzeit Fragen gestellt werden können.
+Schwerpunkt-Meeting
+Unsere Schwerpunkt-Meetings finden ein Mal pro Quartal virtuell statt. Bei diesen Meetings wird je ein Schwerpunktthema vorgestellt und mit den Teilnehmenden diskutiert.
+Melden Sie sich für eine Teilnahme gerne über eine Mail an: peppol@finanzen.bremen.de
+Nächste Termine
+Hier finden Sie alle aktuellen Termine:
+Nächste Termine
+Dokumentationen
+Geschützter Bereich
+Dokumentationen und Unterlagen vergangener Veranstaltungen sind für Mitglieder unseres Peppol-Netzwerks unter dem untenstehenden Link abrufbar.
+Wenn Sie noch keinen Zugang zum internen Bereich haben, dann melden Sie sich gerne unter peppol@finanzen.bremen.de bei uns.
+Peppol-interner Bereich
+Was ist Peppol?
+Eine europäische und zunehmend internationale Infrastruktur im öffentlichen Beschaffungsprozess
+Als organisatorisches und technisches Netzwerk ist Peppol durch das Peppol Interoperability Framework definiert. Dieses Rahmenwerk umfasst rechtliche Vereinbarungen, Compliance-Regelungen, sowie technische Spezifikationen. Diese Bestandteile werden auf Basis der gemeinsamen Netzwerkarbeit der Peppol Community und daraus resultierender Beschlüsse ständig weiterentwickelt.
+Peppol umfasst drei Säulen:
+Spezifikationen unterschiedlicher Geschäftsprozesse inkl. fachlicher Nachrichten (Business Interoperability Specifications).
+Transportnetzwerk (eDelivery Network) mit Transportprotokoll- und Zertifikatsstruktur.
+Rechtliches Rahmenwerk inkl. Betriebs- und Organisationsstruktur (Governance).
+Mehr erfahren
+Peppol Authority Deutschland
+Aufgaben der nationalen Peppol Authority
+Die KoSIT ist im Auftrag des IT-Planungsrats die nationale Peppol Authority für Deutschland. Sie erfüllt hierbei die nachfolgenden Aufgaben.
+Vertragspartner der Access Point Provider (AP) und Service Metadata Publisher (SMP)
+Künftige Service Provider erwerben zunächst die Peppol-Mitgliedschaft bei OpenPeppol. Anschließend unterzeichnen sie die Service Provider Agreements mit der Peppol Authority und werden so Peppol Service Provider. Weiterführende Informationen zu notwendigen Schritten zum Aufsetzen eines Access Points und dem Akkreditierungsprozess finden Sie hier.
+Nationale Besonderheiten (Specific requirements)
+Vereinbarungen, die der Service Provider mit der Peppol Authority unterzeichnet, können nationale Besonderheiten enthalten (Verweis auf die Seite „Nationale Anforderungen“). Für den nationalen Versand von elektronischen Rechnungen an die öffentliche Verwaltung in Deutschland ist der Standard XRechnung vorgegeben.
+Nationale Anforderungen ?
+Überwachung der Nutzung von Infrastruktur und Eskalationsstelle
+Die Peppol Authority überwacht die Erfüllung der Verträge. Sie steht den Vertragspartner*innen unterstützend zur Seite und agiert im Bedarfsfall als Eskalationsstelle.
+Vertretung der deutschen Interessen
+Die Peppol Authority vertritt auf deutscher und internationaler Ebene die deutschen Interessen i. d. R. gemeinsam und in Abstimmung mit den Mitgliedern, die von einer Anforderung jeweils besonders betroffen sind.
+OpenPeppol
+Die Organisation Open­Peppol AISBL
+OpenPeppol ist eine gemeinnützige, international handelnde Organisation, die für den Betrieb des Peppol-Netzwerkes verantwortlich ist.
+Sie ist eine von ihren Mitgliedern geführte Organisation. Peppol-Mitglieder sind fast ausschließlich die Service Provider und Peppol Authorities. End User, für die das Netzwerk betrieben wird, werden nur selten auch Peppol-Mitglieder.
+Peppol wird von OpenPeppol betrieben, organisiert und ausgebaut. Strategische Entscheidungen basieren auf demokratischen Prozessen, an denen alle Peppol-Mitglieder teilhaben.
+OpenPeppol standardisiert digitale Geschäftsprozesse, indem sie die Art und Weise vereinheitlicht, wie Informationen strukturiert ausgetauscht werden sollen.
+Mehr zu OpenPeppol erfahren
+Das 4-Corner-Modell
+Grundlegende IT-Architektur im Peppol-Netzwerk
+Nach einmaligem Anschluss an das Peppol-Netzwerk soll man die anderen Mitglieder möglichst unkompliziert erreichen können. Die finanzielle und technische Abhängigkeit von einem einzelnen, zentralen Anbieter soll vermieden werden.
+Dafür wurde dem Peppol-Netzwerk das 4-Corner Modell zugrunde gelegt. Die fachliche und die Transportebene ist hierbei sauber voneinander getrennt.
+Mehr zur Umsetzung
+Peppol-ID
+Adressierung im Peppol-Netzwerk
+Um einer Organisation über das Peppol-Netzwerk ein strukturiertes Dokument schicken zu können, muss diese eindeutig adressierbar sein. Diese technische Adressierung erfolgt über eine Peppol-ID. Eine Organisation benötigt eine Peppol-ID für den Empfang eines fachlichen Dokuments (z. B. eInvoice) sowie eines Dokumentes zur Unterstützung des Verarbeitungsprozesses (z. B. Message Level Response). Insbesondere bei großen und komplexen Organisationen ist es wahrscheinlich notwendig, mehrere Peppol-IDs einzurichten. Grundsätzlich gilt, dass ein End User über genau eine Peppol ID adressiert wird.
+Aus dem Service Provider Agreement: „End-User: An identified or identifiable entity that is responsible for the business content of the datasets that is exchanged (by sending and/or receiving) with another such entity using Peppol Services over the Peppol Network.“
+Zur Generierung einer Peppol-ID kann eine Vielzahl unterschiedlicher Schemata verwendet werden. Die öffentliche Verwaltung in Deutschland verwendet hierbei das Schema der Leitweg-ID für die Peppol-ID.
+Insbesondere im B2B Bereich können folgende Schemata verwendet werden:
+German Electronic Business Address (GEBA) ,
+Umsatzsteuernummer,
+Global Location Number (GLN),
+IBAN.
+Hinweis: Für die Adressierung einer öffentlichen Stelle in Deutschland wird neben der Peppol-ID eine Leitweg-ID benötigt. Für die Peppol-ID wird in diesem Fall ebenfalls das Schema der Leitweg-ID verwendet. Die Leitweg-ID wird als Identifizierungsmerkmal innerhalb der elektronischen Rechnung benötigt. Beide IDs können identisch sein, sind aber nicht immer gleich; vor allem aber dienen sie unterschiedlichen Einsatzzwecken.
+Eine Codeliste aller möglichen Schemata für die Peppol-ID ist hier hinterlegt.
+Sicherheit
+Sicherheit und Integrität durch eine Public Key Infrastructure (PKI)
+Die Sicherheit und Integrität in der Peppol-Transportinfrastruktur basiert auf einer Public Key Infrastructure (PKI), über die ein vertrauenswürdiges Netz geschaffen wird. Nach Unterzeichnung der Peppol Agreements und erfolgreichen Tests erhalten Access Point- oder SMP-Betreiber von OpenPeppol ein Zertifikat, um die Kommunikationen im Peppol-Netzwerk zu signieren und validieren.
+Mehr erfahren
+Anbindung
+Fast 80 % aller Kommunen in Deutschland sowie sämtliche Behörden des Bundes sind über das Peppol-Netzwerk erreichbar.
+Mit Bayern sind nun fast alle Länder an das Peppol-Netzwerk angebunden:
+Das Land Bayern wird ab dem Sommer 2025 produktiv an das OZG-RE angeschlossen und ist damit das 15. Land, das mit seinen Landesbehörden an das Peppol-Netzwerk angeschlossen ist.
+Der Bund mit seinen bundesunmittelbaren und –mittelbaren Behörden ist bereits seit 2019 über Peppol erreichbar. Er ist mit großem Abstand der Empfänger mit der höchsten Anzahl von Peppol-Rechnungen.
+Alle Bundesländer bis auf Hessen nutzen Landesplattformen für die elektronische Rechnung, die immer auch einen Peppol-Zugang enthalten. Die Plattformen werden jeweils den Kommunen dieser Länder zur Verfügung gestellt, so dass sie auch über das Peppol-Netzwerk erreichbar sind / sein können. Ausnahme bzgl. der Anbindung der Kommunen ist in diesem Jahr noch Bayern, was sich aber Anfang 2026 ändern wird.
+In Hessen sind bereits heute viele Kommunen an das Peppol-Netzwerk angeschlossen. Die Anbindung der hessischen Landesbehörden an das Peppol-Netzwerk soll zeitnah erfolgen.
+Damit sind insgesamt 15 Länder mit mehr als 8.000 Kommunen, also 80 % aller Kommunen in Deutschland theoretisch über das Peppol-Netzwerk erreichbar, sowie sämtliche Behörden des Bundes. Anfang 2026 werden es mit den bayrischen Kommunen ca. 95% aller Kommunen in Deutschland sein.
+(Stand April 2025)
+Anforderungen in Deutschland
+Landkarte von Deutschland mit Markierung aller an das Peppol-Netzwerk angeschlossenen Bundesländer. Alle deutschen Bundesländer, ausgenommen Hessen, sind grün eingefärbt, das steht für die erfolgreich bestehende Anbindung an das Netzwerk.
+Kosten
+Eigener Aufbau und Betrieb eines Access Points
+Beim Betrieb eines eigenen Access Points fallen Kosten und Aufwände für den Betrieb an. Hinzu kommt die verpflichtende Mitgliedschaft bei OpenPeppol. Eine aktuelle Preisliste für die Mitgliedschaften finden Sie hier. Die Beiträge richten sich u. a. nach der Größe Ihres Unternehmens und nach der Rolle, die Sie einnehmen möchten.
+Beauftragung eines externen Service Providers
+Abhängig vom Übertragungsvolumen, Ihrem Geschäftsfeld bzw. Ihren Möglichkeiten kann es sinnvoll sein, einen Service Provider zu beauftragen, ohne einen Access Point selbst aufzubauen. Die Preise für die Nutzung der Dienste von Service Providern müssen mit dem jeweiligen Service Provider abgestimmt werden. Eine Liste der registrierten Betreiber finden Sie hier. Prüfen Sie, welches Angebot zu Ihnen passt.
+Senden und Empfangen von Dokumenten
+Innerhalb von Peppol fallen keine Transaktions- bzw. Roaming-Gebühren für das Senden oder Empfangen von Dokumenten an. Für den Zugriff auf die Zugangspunkte in das Peppol-Netzwerk entstehen Kosten. Diese sind abhängig davon, ob die Dienste eines externen Service Providers in Anspruch genommen werden oder eine eigene Infrastruktur aufgebaut wird.
+Mitwirkung
+Es gibt verschieden Rollen, die es Ihnen ermöglichen, an der Entwicklung von Peppol mitzuwirken.
+Abhängig von der gewählten Rolle können Sie in den entsprechenden Gremien mitwirken und haben in der jährlichen Hauptversammlung (General Assembly) ein Stimmrecht. Wenn Sie unsicher sind, welche Rolle zu Ihnen passt, melden Sie sich gerne unter: peppol@finanzen.bremen.de.
+Mehr erfahren
+Weitere Informationen
+Dokumente zu Peppol
+FAQ zu Peppol
+Kontakt & Support
+Bleiben Sie mit unserem RSS-Newsfeed auf dem aktuellsten Stand!
+Mit unserem RSS-Newsfeed erhalten Sie alle Informationen zu neusten Entwicklungen, Veranstaltungen und Standardveröffentlichungen direkt und sofort.
+Verwenden Sie folgenden Link: https://xeinkauf.de/aktuelles/feed
+RSS-Link kopieren
+Kontakt
+Senator für Finanzen
+Koordinierungsstelle für IT Standards (KoSIT)
+Rudolf-Hilferding-Platz 1
+28195 Bremen
+xeinkauf@finanzen.bremen.de
+Schnellzugriff
+Newsfeed
+Aktuelles
+Dokumente
+FAQ
+Kontakt
+XStandards Einkauf
+Peppol
+eForms-DE
+XBestellung
+XBezahldienste
+Rechtliches
+Datenschutz
+Impressum
+Barrierefreiheit
+Cookie-Einstellung
+© 2026 Koordinierungsstelle für IT-Standards
+Seitenübersicht

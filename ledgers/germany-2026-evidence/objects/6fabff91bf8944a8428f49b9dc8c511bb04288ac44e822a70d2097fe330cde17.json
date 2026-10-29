@@ -1,0 +1,211 @@
+{
+  "Guide_sha256": "626bcf76590a68fcd9951f6b2b509aa39fa3a4ef38314b1ae0a4ab9ed2a3575a",
+  "original_oa_blocks": 2,
+  "oa_failures": [],
+  "fresh_numeric_date_controls": [
+    {
+      "name": "originalcase1financing",
+      "actual": "32000",
+      "expected": "32000"
+    },
+    {
+      "name": "originalcase1addback",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "originalcase1base",
+      "actual": "1942.500",
+      "expected": "1942.50"
+    },
+    {
+      "name": "originalcase1tax",
+      "actual": "9518.2500",
+      "expected": "9518.25"
+    },
+    {
+      "name": "originalcase1credit",
+      "actual": "7770.000",
+      "expected": "7770"
+    },
+    {
+      "name": "originalcase1residual",
+      "actual": "1748.2500",
+      "expected": "1748.25"
+    },
+    {
+      "name": "currentcase1advance",
+      "actual": "2379",
+      "expected": "2379"
+    },
+    {
+      "name": "originalcase2floorTax",
+      "actual": "3885.000",
+      "expected": "3885"
+    },
+    {
+      "name": "originalcase2floorCredit",
+      "actual": "3885.000",
+      "expected": "3885"
+    },
+    {
+      "name": "originalcase2floorAdvance",
+      "actual": "971",
+      "expected": "971"
+    },
+    {
+      "name": "originalcase3financing",
+      "actual": "240000",
+      "expected": "240000"
+    },
+    {
+      "name": "originalcase3addback",
+      "actual": "10000",
+      "expected": "10000"
+    },
+    {
+      "name": "originalcase4lossuse",
+      "actual": "1300000.0",
+      "expected": "1300000"
+    },
+    {
+      "name": "originalcase4lossCF",
+      "actual": "700000",
+      "expected": "700000"
+    },
+    {
+      "name": "originalcase4remainingTrade",
+      "actual": "200000",
+      "expected": "200000"
+    },
+    {
+      "name": "originalcase4base",
+      "actual": "6142.500",
+      "expected": "6142.50"
+    },
+    {
+      "name": "originalcase5rounded",
+      "actual": "24500",
+      "expected": "24500"
+    },
+    {
+      "name": "originalcase5taxbase",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "originalcase5returnDuty",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "originalcase5exactBoundaryNoOrdinaryDuty",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "currentcase2beforeLoss",
+      "actual": "1404000",
+      "expected": "1404000"
+    },
+    {
+      "name": "currentcase2lossused",
+      "actual": "1242400.0",
+      "expected": "1242400"
+    },
+    {
+      "name": "currentcase2lossCF",
+      "actual": "757600.0",
+      "expected": "757600"
+    },
+    {
+      "name": "currentcase2remaining",
+      "actual": "161600.0",
+      "expected": "161600"
+    },
+    {
+      "name": "currentcase2base",
+      "actual": "4798.5000",
+      "expected": "4798.50"
+    },
+    {
+      "name": "currentcase2tax",
+      "actual": "19673.85000",
+      "expected": "19673.85"
+    },
+    {
+      "name": "currentcase2partnerCreditLimit",
+      "actual": "9597.00000",
+      "expected": "9597"
+    },
+    {
+      "name": "financingExact200k",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "financing200100",
+      "actual": "25",
+      "expected": "25"
+    },
+    {
+      "name": "normalMovableShare",
+      "actual": "2000",
+      "expected": "2000"
+    },
+    {
+      "name": "electricMovableHalf",
+      "actual": "1000",
+      "expected": "1000"
+    },
+    {
+      "name": "homeworkerBaseRate",
+      "actual": "0.01960",
+      "expected": "0.01960"
+    },
+    {
+      "name": "minimumAdvance49.99",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "minimumAdvance50",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "latePay1234.56",
+      "actual": "12.00",
+      "expected": "12"
+    },
+    {
+      "name": "lateReturn4StartedMonths",
+      "actual": "100",
+      "expected": "100"
+    },
+    {
+      "name": "2025adviserSunday",
+      "actual": "6",
+      "expected": "6"
+    },
+    {
+      "name": "2026selfSaturday",
+      "actual": "5",
+      "expected": "5"
+    },
+    {
+      "name": "2026adviserLeapTuesday",
+      "actual": "1",
+      "expected": "1"
+    }
+  ],
+  "original_case6_non_numeric_assessment": "Individual architect is expressly in EStG18(1)1; contrasting corporate architect is covered by own GewStG2(2). No new categorical mixed-activity rule inferred.",
+  "literal_actual_quote_checks": 62,
+  "source_conflict_preserved": "BGBl197Art8 itself incorrectly calls its inserted36(5b) an Art7 amendment; first2027application text is clear in both actual bodies.",
+  "retained_uncertainties": [
+    "2026ELSTERformnames",
+    "Abfaerbung case-law deminimis",
+    "Munich2026-specificresolution"
+  ],
+  "writer_only_not_independent": true
+}

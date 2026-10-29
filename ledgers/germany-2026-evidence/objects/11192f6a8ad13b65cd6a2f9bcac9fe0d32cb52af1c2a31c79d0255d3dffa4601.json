@@ -1,0 +1,3872 @@
+[
+  {
+    "id": "001",
+    "prior_row_id": 1,
+    "prior_native_LF": [
+      18,
+      18
+    ],
+    "native_LF": [
+      18,
+      18
+    ],
+    "section": "Germany: withholding on dividends, interest and royalties paid abroad, and the treaty rates, tax year 2026",
+    "wording": "This skill works out how much German tax is withheld when a German payer pays dividends, interest or royalties to a non-resident, what the treaty with the recipient's country allows, and how the recipient gets the difference: an exemption certificate before payment, or a refund after it. It also covers the two EU directive exemptions and the anti-treaty-shopping rule.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "This skill works out how much German tax is withheld when a German payer pays dividends, interest or royalties to a non-resident, what the treaty with the recipient's country allows, and how the recipient gets the difference: an exemption certificate before payment, or a refund after it. It also covers the two EU directive exemptions and the anti-treaty-shopping rule.",
+    "immediate_predecessor_row_id": "001"
+  },
+  {
+    "id": "002",
+    "prior_row_id": 2,
+    "prior_native_LF": [
+      20,
+      20
+    ],
+    "native_LF": [
+      20,
+      20
+    ],
+    "section": "Germany: withholding on dividends, interest and royalties paid abroad, and the treaty rates, tax year 2026",
+    "wording": "See also, and do not repeat here:",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "See also, and do not repeat here:",
+    "immediate_predecessor_row_id": "002"
+  },
+  {
+    "id": "003",
+    "prior_row_id": 3,
+    "prior_native_LF": [
+      22,
+      22
+    ],
+    "native_LF": [
+      22,
+      22
+    ],
+    "section": "Germany: withholding on dividends, interest and royalties paid abroad, and the treaty rates, tax year 2026",
+    "wording": "- **de-non-resident-tax**: when a non-resident is taxed in Germany at all, the § 50a basics (artists, athletes, supervisory boards), and the § 34c and § 32d(5) credits for German residents with foreign income.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **de-non-resident-tax**: when a non-resident is taxed in Germany at all, the § 50a basics (artists, athletes, supervisory boards), and the § 34c and § 32d(5) credits for German residents with foreign income.",
+    "immediate_predecessor_row_id": "003"
+  },
+  {
+    "id": "004",
+    "prior_row_id": 4,
+    "prior_native_LF": [
+      23,
+      23
+    ],
+    "native_LF": [
+      23,
+      23
+    ],
+    "section": "Germany: withholding on dividends, interest and royalties paid abroad, and the treaty rates, tax year 2026",
+    "wording": "- **de-corporate-tax**: the 95% exemption for dividends between companies (§ 8b KStG), which matters for a German permanent establishment.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **de-corporate-tax**: the 95% exemption for dividends between companies (§ 8b KStG), which matters for a German permanent establishment.",
+    "immediate_predecessor_row_id": "004"
+  },
+  {
+    "id": "005",
+    "prior_row_id": 5,
+    "prior_native_LF": [
+      24,
+      24
+    ],
+    "native_LF": [
+      24,
+      24
+    ],
+    "section": "Germany: withholding on dividends, interest and royalties paid abroad, and the treaty rates, tax year 2026",
+    "wording": "- **germany-to-switzerland-cross-border-tax**: employment income across the Swiss border.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **germany-to-switzerland-cross-border-tax**: employment income across the Swiss border.",
+    "immediate_predecessor_row_id": "005"
+  },
+  {
+    "id": "006",
+    "prior_row_id": 6,
+    "prior_native_LF": [
+      25,
+      25
+    ],
+    "native_LF": [
+      25,
+      25
+    ],
+    "section": "Germany: withholding on dividends, interest and royalties paid abroad, and the treaty rates, tax year 2026",
+    "wording": "- **germany-transfer-pricing**: the arm's length price of royalties and interest between related companies.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **germany-transfer-pricing**: the arm's length price of royalties and interest between related companies.",
+    "immediate_predecessor_row_id": "006"
+  },
+  {
+    "id": "007",
+    "prior_row_id": 7,
+    "prior_native_LF": [
+      29,
+      29
+    ],
+    "native_LF": [
+      29,
+      29
+    ],
+    "section": "Who this applies to",
+    "wording": "- **The German payer.** A German company paying dividends, the German bank or custodian paying dividends on shares held in collective custody, or a German business paying royalties or certain interest to a non-resident. The payer withholds and pays the tax over. It is liable for tax it should have withheld (§ 44(5), § 50a(5) EStG).",
+    "source_quote_ids": [
+      "TW.LIABLE",
+      "TW.PAYWHT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **The German payer.** A German company paying dividends, the German bank or custodian paying dividends on shares held in collective custody, or a German business paying royalties or certain interest to a non-resident. The payer withholds and pays the tax over. It is liable for tax it should have withheld (§ 44(5), § 50a(5) EStG).",
+    "immediate_predecessor_row_id": "007"
+  },
+  {
+    "id": "008",
+    "prior_row_id": 8,
+    "prior_native_LF": [
+      30,
+      30
+    ],
+    "native_LF": [
+      30,
+      30
+    ],
+    "section": "Who this applies to",
+    "wording": "- **The foreign recipient.** A person or company with neither residence nor management in Germany. It carries the tax, and claims the treaty or directive relief from the Bundeszentralamt für Steuern (BZSt), not from the payer.",
+    "source_quote_ids": [
+      "TW.NR",
+      "TW.COMPANYNR",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **The foreign recipient.** A person or company with neither residence nor management in Germany. It carries the tax, and claims the treaty or directive relief from the Bundeszentralamt für Steuern (BZSt), not from the payer.",
+    "immediate_predecessor_row_id": "008"
+  },
+  {
+    "id": "009",
+    "prior_row_id": 9,
+    "prior_native_LF": [
+      31,
+      31
+    ],
+    "native_LF": [
+      31,
+      31
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Withholding comes first.** The payer withholds the full domestic rate even when a treaty or directive limits German tax, unless the recipient holds an exemption certificate from the BZSt (§ 50c(1), (2) EStG). The payer cannot rely on the recipient's treaty rights itself.",
+    "source_quote_ids": [
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **Withholding comes first.** The payer withholds the full domestic rate even when a treaty or directive limits German tax, unless the recipient holds an exemption certificate from the BZSt (§ 50c(1), (2) EStG). The payer cannot rely on the recipient's treaty rights itself.",
+    "immediate_predecessor_row_id": "009"
+  },
+  {
+    "id": "010",
+    "prior_row_id": 10,
+    "prior_native_LF": [
+      33,
+      33
+    ],
+    "native_LF": [
+      33,
+      33
+    ],
+    "section": "Who this applies to",
+    "wording": "Which income is caught:",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "Which income is caught:",
+    "immediate_predecessor_row_id": "010"
+  },
+  {
+    "id": "011",
+    "prior_row_id": 11,
+    "prior_native_LF": [
+      35,
+      35
+    ],
+    "native_LF": [
+      35,
+      35
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Dividends** from a company with its seat or management in Germany (§ 49(1) no. 5(a); § 43(1) no. 1 EStG).",
+    "source_quote_ids": [
+      "TW.GERMANDIV",
+      "TW.KAPCATEGORIES"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **Dividends** from a company with its seat or management in Germany (§ 49(1) no. 5(a); § 43(1) no. 1 EStG).",
+    "immediate_predecessor_row_id": "011"
+  },
+  {
+    "id": "012",
+    "prior_row_id": 12,
+    "prior_native_LF": [
+      36,
+      36
+    ],
+    "native_LF": [
+      36,
+      36
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Interest.** Ordinary interest on a loan, bank account or listed bond paid to a non-resident is not German-source income and has no German tax (see de-non-resident-tax). Interest on convertible bonds, profit-sharing bonds (Gewinnobligationen) and profit-participation rights carries Kapitalertragsteuer (§ 43(1) no. 2). Loans secured on German land are German-source income too (§ 49(1) no. 5(c)). So a treaty interest rate matters only for these cases.",
+    "source_quote_ids": [
+      "TW.GERMANINTEREST",
+      "TW.KAPCATEGORIES"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **Interest.** Ordinary interest on a loan, bank account or listed bond paid to a non-resident is not German-source income and has no German tax (see de-non-resident-tax). Interest on convertible bonds, profit-sharing bonds (Gewinnobligationen) and profit-participation rights carries Kapitalertragsteuer (§ 43(1) no. 2). Loans secured on German land are German-source income too (§ 49(1) no. 5(c)). So a treaty interest rate matters only for these cases.",
+    "immediate_predecessor_row_id": "012"
+  },
+  {
+    "id": "013",
+    "prior_row_id": 13,
+    "prior_native_LF": [
+      37,
+      37
+    ],
+    "native_LF": [
+      37,
+      37
+    ],
+    "section": "Who this applies to",
+    "wording": "- **Royalties** for the use of rights, know-how, plans or processes, used in Germany (§ 50a(1) no. 3; § 49(1) nos. 2, 3, 6, 9 EStG).",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.GERMANRENT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **Royalties** for the use of rights, know-how, plans or processes, used in Germany (§ 50a(1) no. 3; § 49(1) nos. 2, 3, 6, 9 EStG).",
+    "immediate_predecessor_row_id": "013"
+  },
+  {
+    "id": "014",
+    "prior_row_id": 14,
+    "prior_native_LF": [
+      43,
+      43
+    ],
+    "native_LF": [
+      43,
+      43
+    ],
+    "section": "German domestic withholding",
+    "wording": "| Item | Rate or amount | Year | Source |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Item | Rate or amount | Year | Source |",
+    "immediate_predecessor_row_id": "014"
+  },
+  {
+    "id": "015",
+    "prior_row_id": 15,
+    "prior_native_LF": [
+      45,
+      45
+    ],
+    "native_LF": [
+      45,
+      45
+    ],
+    "section": "German domestic withholding",
+    "wording": "| Kapitalertragsteuer on dividends and profit-dependent interest | 25% of gross | 2026 | https://www.gesetze-im-internet.de/estg/__43a.html |",
+    "source_quote_ids": [
+      "TW.KWHT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Kapitalertragsteuer on dividends and profit-dependent interest | 25% of gross | 2026 | https://www.gesetze-im-internet.de/estg/__43a.html |",
+    "immediate_predecessor_row_id": "015"
+  },
+  {
+    "id": "016",
+    "prior_row_id": 16,
+    "prior_native_LF": [
+      46,
+      46
+    ],
+    "native_LF": [
+      46,
+      46
+    ],
+    "section": "German domestic withholding",
+    "wording": "| Solidarity surcharge on Kapitalertragsteuer and § 50a tax | 5.5% of the tax withheld | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html |",
+    "source_quote_ids": [
+      "TW.WHTSOLI",
+      "TW.SoliRate"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Solidarity surcharge on Kapitalertragsteuer and § 50a tax | 5.5% of the tax withheld | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html |",
+    "immediate_predecessor_row_id": "016"
+  },
+  {
+    "id": "017",
+    "prior_row_id": 17,
+    "prior_native_LF": [
+      47,
+      47
+    ],
+    "native_LF": [
+      47,
+      47
+    ],
+    "section": "German domestic withholding",
+    "wording": "| Total withheld on a dividend | 26.375% of gross | 2026 | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Erstattungsverfahren_50c/erstattungsverfahren_50c_node.html |",
+    "source_quote_ids": [
+      "TW.PROCESS"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Total withheld on a dividend | 26.375% of gross | 2026 | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Erstattungsverfahren_50c/erstattungsverfahren_50c_node.html |",
+    "immediate_predecessor_row_id": "017"
+  },
+  {
+    "id": "018",
+    "prior_row_id": 18,
+    "prior_native_LF": [
+      48,
+      48
+    ],
+    "native_LF": [
+      48,
+      48
+    ],
+    "section": "German domestic withholding",
+    "wording": "| Foreign company without treaty or directive relief | Refund of two fifths of the Kapitalertragsteuer withheld and of the surcharge on it | 2026 | https://www.gesetze-im-internet.de/estg/__44a.html (§ 44a(9)); BZSt refund page (surcharge) |",
+    "source_quote_ids": [
+      "TW.REFUND40",
+      "TW.WHTSOLI"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Foreign company without treaty or directive relief | Refund of two fifths of the Kapitalertragsteuer withheld and of the surcharge on it | 2026 | https://www.gesetze-im-internet.de/estg/__44a.html (§ 44a(9)); BZSt refund page (surcharge) |",
+    "immediate_predecessor_row_id": "018"
+  },
+  {
+    "id": "019",
+    "prior_row_id": 19,
+    "prior_native_LF": [
+      49,
+      49
+    ],
+    "native_LF": [
+      49,
+      49
+    ],
+    "section": "German domestic withholding",
+    "wording": "| § 50a on royalties | 15% of gross receipts, plus 5.5% surcharge (15.825% in all) | 2026 | https://www.gesetze-im-internet.de/estg/__50a.html (§ 50a(2)) |",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| § 50a on royalties | 15% of gross receipts, plus 5.5% surcharge (15.825% in all) | 2026 | https://www.gesetze-im-internet.de/estg/__50a.html (§ 50a(2)) |",
+    "immediate_predecessor_row_id": "019"
+  },
+  {
+    "id": "020",
+    "prior_row_id": 20,
+    "prior_native_LF": [
+      50,
+      50
+    ],
+    "native_LF": [
+      50,
+      50
+    ],
+    "section": "German domestic withholding",
+    "wording": "| Small royalties under a treaty that bars German tax | No withholding if royalties from that payer in the year stay at or below EUR 10,000; the return is still filed | 2026 | https://www.gesetze-im-internet.de/estg/__50c.html (§ 50c(2) no. 2) |",
+    "source_quote_ids": [
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Small royalties under a treaty that bars German tax | No withholding if royalties from that payer in the year stay at or below EUR 10,000; the return is still filed | 2026 | https://www.gesetze-im-internet.de/estg/__50c.html (§ 50c(2) no. 2) |",
+    "immediate_predecessor_row_id": "020"
+  },
+  {
+    "id": "021",
+    "prior_row_id": 21,
+    "prior_native_LF": [
+      51,
+      51
+    ],
+    "native_LF": [
+      51,
+      51
+    ],
+    "section": "German domestic withholding",
+    "wording": "| Exemption certificate | Valid for at most five years, from the day the application reaches the BZSt; for treaty relief on dividends only for a company that is subject to tax at home without exemption and holds at least 10% of the nominal capital directly | 2026 | Same, § 50c(2) sentences 4, 5 |",
+    "source_quote_ids": [
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Exemption certificate | Valid for at most five years, from the day the application reaches the BZSt; for treaty relief on dividends only for a company that is subject to tax at home without exemption and holds at least 10% of the nominal capital directly | 2026 | Same, § 50c(2) sentences 4, 5 |",
+    "immediate_predecessor_row_id": "021"
+  },
+  {
+    "id": "022",
+    "prior_row_id": 22,
+    "prior_native_LF": [
+      52,
+      52
+    ],
+    "native_LF": [
+      52,
+      52
+    ],
+    "section": "German domestic withholding",
+    "wording": "| Refund deadline | Four years from the end of the year of receipt; not before one year after payment, nor before a longer treaty period | 2026 | Same, § 50c(3) sentence 2 |",
+    "source_quote_ids": [
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Refund deadline | Four years from the end of the year of receipt; not before one year after payment, nor before a longer treaty period | 2026 | Same, § 50c(3) sentence 2 |",
+    "immediate_predecessor_row_id": "022"
+  },
+  {
+    "id": "023",
+    "prior_row_id": 23,
+    "prior_native_LF": [
+      53,
+      53
+    ],
+    "native_LF": [
+      53,
+      53
+    ],
+    "section": "German domestic withholding",
+    "wording": "| § 43b EU parent | At least 10% direct holding; held without break for 12 months | 2026 | https://www.gesetze-im-internet.de/estg/__43b.html |",
+    "source_quote_ids": [
+      "TW.PARENT",
+      "R57-60.PARENT",
+      "R58.company-forms",
+      "R58.residence-tax"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| § 43b EU parent | At least 10% direct holding; held without break for 12 months | 2026 | https://www.gesetze-im-internet.de/estg/__43b.html |",
+    "immediate_predecessor_row_id": "023"
+  },
+  {
+    "id": "024",
+    "prior_row_id": 24,
+    "prior_native_LF": [
+      54,
+      54
+    ],
+    "native_LF": [
+      54,
+      54
+    ],
+    "section": "German domestic withholding",
+    "wording": "| § 50g associated companies | At least 25% direct holding, in either direction or by a common parent | 2026 | https://www.gesetze-im-internet.de/estg/__50g.html (§ 50g(3) no. 5(b)) |",
+    "source_quote_ids": [
+      "TW.EUGATES"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| § 50g associated companies | At least 25% direct holding, in either direction or by a common parent | 2026 | https://www.gesetze-im-internet.de/estg/__50g.html (§ 50g(3) no. 5(b)) |",
+    "immediate_predecessor_row_id": "024"
+  },
+  {
+    "id": "025",
+    "prior_row_id": 25,
+    "prior_native_LF": [
+      58,
+      58
+    ],
+    "native_LF": [
+      58,
+      58
+    ],
+    "section": "Treaty limits on German tax, by country of the recipient",
+    "wording": "Rates are the maximum German tax a treaty allows on the gross amount when the recipient is the beneficial owner and resident in the other state. The domestic rate applies until relief is granted. \"0%\" means the other state alone may tax. A blank means the rate was not read on an official page.",
+    "source_quote_ids": [
+      "TW.ATD",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "Rates are the maximum German tax a treaty allows on the gross amount when the recipient is the beneficial owner and resident in the other state. The domestic rate applies until relief is granted. \"0%\" means the other state alone may tax. A blank means the rate was not read on an official page.",
+    "immediate_predecessor_row_id": "025"
+  },
+  {
+    "id": "026",
+    "prior_row_id": 26,
+    "prior_native_LF": [
+      60,
+      60
+    ],
+    "native_LF": [
+      60,
+      60
+    ],
+    "section": "Treaty limits on German tax, by country of the recipient",
+    "wording": "| Recipient's country | Dividends, general | Dividends, qualifying holding | Interest | Royalties | Source (treaty text read) |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Recipient's country | Dividends, general | Dividends, qualifying holding | Interest | Royalties | Source (treaty text read) |",
+    "immediate_predecessor_row_id": "026"
+  },
+  {
+    "id": "027",
+    "prior_row_id": 27,
+    "prior_native_LF": [
+      62,
+      62
+    ],
+    "native_LF": [
+      62,
+      62
+    ],
+    "section": "Treaty limits on German tax, by country of the recipient",
+    "wording": "| Austria | 15% | 5%: company (not a partnership) holding at least 10% of capital directly | 0% (profit-participating income may be taxed in Germany, art. 11(2)) | 0% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Oesterreich/2024-11-28-Oesterreich-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2 (arts. 10 to 12) |",
+    "source_quote_ids": [
+      "TW.ATD",
+      "TW.ATI",
+      "TW.ATR"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Austria | 15% | 5%: company (not a partnership) holding at least 10% of capital directly | 0% (profit-participating income may be taxed in Germany, art. 11(2)) | 0% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Oesterreich/2024-11-28-Oesterreich-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2 (arts. 10 to 12) |",
+    "immediate_predecessor_row_id": "027"
+  },
+  {
+    "id": "028",
+    "prior_row_id": 28,
+    "prior_native_LF": [
+      63,
+      63
+    ],
+    "native_LF": [
+      63,
+      63
+    ],
+    "section": "Treaty limits on German tax, by country of the recipient",
+    "wording": "| Switzerland | 15% | 0%: company (not a partnership) holding at least 10% of capital directly for 365 days including the payment day; not for a REIT-AG or investment fund | 0% | 0% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2 (arts. 10 to 12) |",
+    "source_quote_ids": [
+      "TW.CHD",
+      "TW.CHI",
+      "TW.CHR"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Switzerland | 15% | 0%: company (not a partnership) holding at least 10% of capital directly for 365 days including the payment day; not for a REIT-AG or investment fund | 0% | 0% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2 (arts. 10 to 12) |",
+    "immediate_predecessor_row_id": "028"
+  },
+  {
+    "id": "029",
+    "prior_row_id": 29,
+    "prior_native_LF": [
+      64,
+      64
+    ],
+    "native_LF": [
+      64,
+      64
+    ],
+    "section": "Treaty limits on German tax, by country of the recipient",
+    "wording": "| Netherlands | 15% | 5%: company holding at least 10% of capital directly for 365 days; 10% to a Dutch pension fund | 0% | 0% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Niederlande/2026-05-18-Niederlande-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2 (arts. 10 to 12) |",
+    "source_quote_ids": [
+      "TW.NLD",
+      "TW.NLI",
+      "TW.NLR"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Netherlands | 15% | 5%: company holding at least 10% of capital directly for 365 days; 10% to a Dutch pension fund | 0% | 0% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Niederlande/2026-05-18-Niederlande-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2 (arts. 10 to 12) |",
+    "immediate_predecessor_row_id": "029"
+  },
+  {
+    "id": "030",
+    "prior_row_id": 30,
+    "prior_native_LF": [
+      65,
+      65
+    ],
+    "native_LF": [
+      65,
+      65
+    ],
+    "section": "Treaty limits on German tax, by country of the recipient",
+    "wording": "| France | 15% | 5%: French company holding at least 10% of capital; for 365 days from 2025 (MLI art. 8) | 0% (art. 10) | 0% (art. 15) | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3 (art. 9(2), (5), arts. 10, 15) |",
+    "source_quote_ids": [
+      "TW.FRD",
+      "TW.FRQUAL",
+      "TW.FR5",
+      "TW.FR365",
+      "TW.FREFFECT",
+      "TW.FRI",
+      "TW.FRR"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| France | 15% | 5%: French company holding at least 10% of capital; for 365 days from 2025 (MLI art. 8) | 0% (art. 10) | 0% (art. 15) | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Frankreich/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3 (art. 9(2), (5), arts. 10, 15) |",
+    "immediate_predecessor_row_id": "030"
+  },
+  {
+    "id": "031",
+    "prior_row_id": 31,
+    "prior_native_LF": [
+      66,
+      66
+    ],
+    "native_LF": [
+      66,
+      66
+    ],
+    "section": "Treaty limits on German tax, by country of the recipient",
+    "wording": "| Italy | 15% | 15% (the 10% rate in art. 10(3) covers only Italian dividends paid to German companies) | 10%; 0% on credit sales of goods or equipment, on government bonds and on interest paid to a government or central bank (art. 11(3)), and on loans of any kind from one bank to another (protocol no. 11) | 5%; 0% for copyright in literary, dramatic, musical or artistic works and films (art. 12(3)) | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Italien/1990-08-18-Italien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1 (arts. 10 to 12) |",
+    "source_quote_ids": [
+      "TW.IT1",
+      "TW.IT2",
+      "TW.IT3",
+      "TW.IT4",
+      "TW.IT5",
+      "TW.IT6",
+      "TW.IT7",
+      "TW.IT8"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Italy | 15% | 15% (the 10% rate in art. 10(3) covers only Italian dividends paid to German companies) | 10%; 0% on credit sales of goods or equipment, on government bonds and on interest paid to a government or central bank (art. 11(3)), and on loans of any kind from one bank to another (protocol no. 11) | 5%; 0% for copyright in literary, dramatic, musical or artistic works and films (art. 12(3)) | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Italien/1990-08-18-Italien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1 (arts. 10 to 12) |",
+    "immediate_predecessor_row_id": "031"
+  },
+  {
+    "id": "032",
+    "prior_row_id": 32,
+    "prior_native_LF": [
+      67,
+      67
+    ],
+    "native_LF": [
+      67,
+      67
+    ],
+    "section": "Treaty limits on German tax, by country of the recipient",
+    "wording": "| Spain | 15% | 5%: company (not a partnership or REIT) holding at least 10% of capital directly; for 365 days from 2025 (MLI art. 8) | 0% | 0% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Spanien/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3 (arts. 10 to 12) |",
+    "source_quote_ids": [
+      "TW.ESD",
+      "TW.ES365",
+      "TW.ESEFFECT",
+      "TW.ESI",
+      "TW.ESR"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Spain | 15% | 5%: company (not a partnership or REIT) holding at least 10% of capital directly; for 365 days from 2025 (MLI art. 8) | 0% | 0% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Spanien/2025-01-01-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3 (arts. 10 to 12) |",
+    "immediate_predecessor_row_id": "032"
+  },
+  {
+    "id": "033",
+    "prior_row_id": 33,
+    "prior_native_LF": [
+      68,
+      68
+    ],
+    "native_LF": [
+      68,
+      68
+    ],
+    "section": "Treaty limits on German tax, by country of the recipient",
+    "wording": "| United Kingdom | 15% | 5%: company (not a partnership) holding at least 10% of capital directly; 10% to a pension scheme | 0% | 0% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Grossbritannien/2010-11-23-Grossbritannien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1 (arts. 10 to 12; rates not changed by the 2021 protocol) |",
+    "source_quote_ids": [
+      "TW.UKD",
+      "TW.UKI",
+      "TW.UKR",
+      "TW.UKCURRENT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| United Kingdom | 15% | 5%: company (not a partnership) holding at least 10% of capital directly; 10% to a pension scheme | 0% | 0% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Grossbritannien/2010-11-23-Grossbritannien-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1 (arts. 10 to 12; rates not changed by the 2021 protocol) |",
+    "immediate_predecessor_row_id": "033"
+  },
+  {
+    "id": "034",
+    "prior_row_id": 34,
+    "prior_native_LF": [
+      69,
+      69
+    ],
+    "native_LF": [
+      69,
+      69
+    ],
+    "section": "Treaty limits on German tax, by country of the recipient",
+    "wording": "| Ireland | 15% | 5%: company (not a partnership or REIT) holding at least 10% of capital directly for 365 days | 0% | 0% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Irland/2025-04-10-Irland-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=3 (arts. 10 to 12, protocol no. 3) |",
+    "source_quote_ids": [
+      "TW.IED",
+      "TW.IEI",
+      "TW.IER"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Ireland | 15% | 5%: company (not a partnership or REIT) holding at least 10% of capital directly for 365 days | 0% | 0% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Irland/2025-04-10-Irland-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=3 (arts. 10 to 12, protocol no. 3) |",
+    "immediate_predecessor_row_id": "034"
+  },
+  {
+    "id": "035",
+    "prior_row_id": 35,
+    "prior_native_LF": [
+      70,
+      70
+    ],
+    "native_LF": [
+      70,
+      70
+    ],
+    "section": "Treaty limits on German tax, by country of the recipient",
+    "wording": "| Luxembourg | 15% | 5%: company holding at least 10% of capital directly (from 2024; only 15% for a REIT-AG or a collective investment body) | 0% | 5% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Luxemburg/2023-12-13-Luxemburg-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=3 (protocol of 6 July 2023, arts. 4, 5); art. 12 in https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Luxemburg/2012-12-10-Luxemburg-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1 |",
+    "source_quote_ids": [
+      "TW.LUD",
+      "TW.LUI",
+      "TW.LU1",
+      "TW.LUEFFECT",
+      "TW.LUDATE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Luxembourg | 15% | 5%: company holding at least 10% of capital directly (from 2024; only 15% for a REIT-AG or a collective investment body) | 0% | 5% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Luxemburg/2023-12-13-Luxemburg-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=3 (protocol of 6 July 2023, arts. 4, 5); art. 12 in https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Luxemburg/2012-12-10-Luxemburg-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1 |",
+    "immediate_predecessor_row_id": "035"
+  },
+  {
+    "id": "036",
+    "prior_row_id": 36,
+    "prior_native_LF": [
+      71,
+      71
+    ],
+    "native_LF": [
+      71,
+      71
+    ],
+    "section": "Treaty limits on German tax, by country of the recipient",
+    "wording": "| United States | 15% | 5%: company owning at least 10% of the voting stock directly; 0%: a company that has owned directly at least 80% of the votes for the 12 months ending on the day entitlement is fixed and that qualifies under art. 28 (listed company, ownership and base erosion with the active business test, derivative benefits, or a competent authority decision; art. 10(3)(a)), or a US pension fund whose dividends do not come from carrying on a business (art. 10(3)(b)). RICs and REITs: art. 10(4) | 0% | 0% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Verein_Staaten/2008-06-23-USA-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=1 (arts. 10 to 12) |",
+    "source_quote_ids": [
+      "TW.USD",
+      "TW.USZERO",
+      "TW.USFUNDS",
+      "TW.USI",
+      "TW.USR"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| United States | 15% | 5%: company owning at least 10% of the voting stock directly; 0%: a company that has owned directly at least 80% of the votes for the 12 months ending on the day entitlement is fixed and that qualifies under art. 28 (listed company, ownership and base erosion with the active business test, derivative benefits, or a competent authority decision; art. 10(3)(a)), or a US pension fund whose dividends do not come from carrying on a business (art. 10(3)(b)). RICs and REITs: art. 10(4) | 0% | 0% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Verein_Staaten/2008-06-23-USA-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=1 (arts. 10 to 12) |",
+    "immediate_predecessor_row_id": "036"
+  },
+  {
+    "id": "037",
+    "prior_row_id": 37,
+    "prior_native_LF": [
+      72,
+      72
+    ],
+    "native_LF": [
+      72,
+      72
+    ],
+    "section": "Treaty limits on German tax, by country of the recipient",
+    "wording": "| Poland | 15% | 5%: company (not a partnership) holding at least 10% of capital directly | 5%; 0% to the government, on export-credit loans, on credit sales of equipment or goods, and on bank loans (art. 11(3)) | 5% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Polen/2004-04-29-Polen-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1 (arts. 10 to 12) |",
+    "source_quote_ids": [
+      "TW.PL1",
+      "TW.PL2",
+      "TW.PL3",
+      "TW.PL4"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Poland | 15% | 5%: company (not a partnership) holding at least 10% of capital directly | 5%; 0% to the government, on export-credit loans, on credit sales of equipment or goods, and on bank loans (art. 11(3)) | 5% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Polen/2004-04-29-Polen-Abkommen-DBA-Gesetz.pdf?__blob=publicationFile&v=1 (arts. 10 to 12) |",
+    "immediate_predecessor_row_id": "037"
+  },
+  {
+    "id": "038",
+    "prior_row_id": 38,
+    "prior_native_LF": [
+      73,
+      73
+    ],
+    "native_LF": [
+      73,
+      73
+    ],
+    "section": "Treaty limits on German tax, by country of the recipient",
+    "wording": "| Czech Republic | 15% | 5%: company holding at least 25% of capital directly | 0% | 5% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Tschechien/2025-06-18-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3 (arts. 10 to 12) |",
+    "source_quote_ids": [
+      "TW.CZD",
+      "TW.CZI",
+      "TW.CZR"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Czech Republic | 15% | 5%: company holding at least 25% of capital directly | 0% | 5% | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Tschechien/2025-06-18-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3 (arts. 10 to 12) |",
+    "immediate_predecessor_row_id": "038"
+  },
+  {
+    "id": "039",
+    "prior_row_id": 39,
+    "prior_native_LF": [
+      75,
+      75
+    ],
+    "native_LF": [
+      75,
+      75
+    ],
+    "section": "Treaty limits on German tax, by country of the recipient",
+    "wording": "Profit-dependent income needs care. Several treaties let Germany tax income from a silent partnership, a profit-participating loan or profit-sharing bonds at its domestic rate where the payer can deduct it: for example Austria art. 11(2), France art. 9(9), Ireland protocol no. 3, Netherlands protocol no. IX, US art. 10(6). Switzerland caps it at 30% instead of 15% (art. 10(2)(b)). Read the treaty before applying a 0% interest rate to such income.",
+    "source_quote_ids": [
+      "TW.ATI",
+      "TW.FRPROFIT",
+      "TW.IEPROFIT",
+      "TW.NLPROFIT",
+      "TW.USPROFIT",
+      "TW.CHD"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "Profit-dependent income needs care. Several treaties let Germany tax income from a silent partnership, a profit-participating loan or profit-sharing bonds at its domestic rate where the payer can deduct it: for example Austria art. 11(2), France art. 9(9), Ireland protocol no. 3, Netherlands protocol no. IX, US art. 10(6). Switzerland caps it at 30% instead of 15% (art. 10(2)(b)). Read the treaty before applying a 0% interest rate to such income.",
+    "immediate_predecessor_row_id": "039"
+  },
+  {
+    "id": "040",
+    "prior_row_id": 40,
+    "prior_native_LF": [
+      81,
+      81
+    ],
+    "native_LF": [
+      81,
+      81
+    ],
+    "section": "Step 1: what is withheld",
+    "wording": "1. **Dividends.** 25% Kapitalertragsteuer on the gross dividend, plus 5.5% surcharge on that tax: 26.375% (§ 43a(1), (2) EStG). The full gross is the base; no costs are deducted. The tax arises on the day the dividend is paid as fixed in the distribution resolution (§ 44(2)). The company withholds; for shares in collective custody, the German custodian bank does (§ 44(1) sentence 3).",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.WHTSOLI",
+      "TW.SoliRate",
+      "TW.TAXDATE",
+      "TW.KAPCATEGORIES"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "1. **Dividends.** 25% Kapitalertragsteuer on the gross dividend, plus 5.5% surcharge on that tax: 26.375% (§ 43a(1), (2) EStG). The full gross is the base; no costs are deducted. The tax arises on the day the dividend is paid as fixed in the distribution resolution (§ 44(2)). The company withholds; for shares in collective custody, the German custodian bank does (§ 44(1) sentence 3).",
+    "immediate_predecessor_row_id": "040"
+  },
+  {
+    "id": "041",
+    "prior_row_id": 41,
+    "prior_native_LF": [
+      82,
+      82
+    ],
+    "native_LF": [
+      82,
+      82
+    ],
+    "section": "Step 1: what is withheld",
+    "wording": "2. **Profit-dependent interest.** The same 26.375% (§ 43(1) no. 2, § 43a(1) no. 1).",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.WHTSOLI",
+      "TW.SoliRate",
+      "TW.KAPCATEGORIES"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "2. **Profit-dependent interest.** The same 26.375% (§ 43(1) no. 2, § 43a(1) no. 1).",
+    "immediate_predecessor_row_id": "041"
+  },
+  {
+    "id": "042",
+    "prior_row_id": 42,
+    "prior_native_LF": [
+      83,
+      83
+    ],
+    "native_LF": [
+      83,
+      83
+    ],
+    "section": "Step 1: what is withheld",
+    "wording": "3. **Royalties.** 15% of gross receipts plus surcharge: 15.825% (§ 50a(2)). Costs can be deducted only for the receipts listed in § 50a(3), which does not include royalties.",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.NET",
+      "TW.SoliRate"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "3. **Royalties.** 15% of gross receipts plus surcharge: 15.825% (§ 50a(2)). Costs can be deducted only for the receipts listed in § 50a(3), which does not include royalties.",
+    "immediate_predecessor_row_id": "042"
+  },
+  {
+    "id": "043",
+    "prior_row_id": 43,
+    "prior_native_LF": [
+      87,
+      87
+    ],
+    "native_LF": [
+      87,
+      87
+    ],
+    "section": "Step 2: what the recipient can get back",
+    "wording": "Pick the best relief that applies; they do not add up.",
+    "source_quote_ids": [
+      "TW.REFUND40",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "Pick the best relief that applies; they do not add up.",
+    "immediate_predecessor_row_id": "043"
+  },
+  {
+    "id": "044",
+    "prior_row_id": 44,
+    "prior_native_LF": [
+      89,
+      89
+    ],
+    "native_LF": [
+      89,
+      89
+    ],
+    "section": "Step 2: what the recipient can get back",
+    "wording": "| Relief | Who | Result | How |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Relief | Who | Result | How |",
+    "immediate_predecessor_row_id": "044"
+  },
+  {
+    "id": "045",
+    "prior_row_id": 45,
+    "prior_native_LF": [
+      91,
+      91
+    ],
+    "native_LF": [
+      91,
+      91
+    ],
+    "section": "Step 2: what the recipient can get back",
+    "wording": "| Treaty | Resident of the treaty state who is the beneficial owner | German tax cut to the treaty rate | Exemption certificate before payment (§ 50c(2) no. 1), or refund after (§ 50c(3)) |",
+    "source_quote_ids": [
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Treaty | Resident of the treaty state who is the beneficial owner | German tax cut to the treaty rate | Exemption certificate before payment (§ 50c(2) no. 1), or refund after (§ 50c(3)) |",
+    "immediate_predecessor_row_id": "045"
+  },
+  {
+    "id": "046",
+    "prior_row_id": 46,
+    "prior_native_LF": [
+      92,
+      92
+    ],
+    "native_LF": [
+      92,
+      92
+    ],
+    "section": "Step 2: what the recipient can get back",
+    "wording": "| § 43b EU Parent-Subsidiary Directive | EU parent company in a form listed in Anlage 2 EStG, treated as resident in an EU member state for tax purposes and not as resident outside the EU under a treaty with a third state, subject without an option to a listed tax or its replacement and not exempt from it; holding at least 10% directly for 12 months without break | No Kapitalertragsteuer on profit distributions (not on liquidation or reorganisation payouts) | Exemption certificate; if the 12 months end after payment, refund only (§ 43b(2) sentence 5) |",
+    "source_quote_ids": [
+      "TW.PARENT",
+      "R57-60.PARENT",
+      "R58.company-forms",
+      "R58.residence-tax"
+    ],
+    "disposition": "R58/R59 exact independent review qualification successor; original numeric case unchanged",
+    "immediate_predecessor_wording": "| § 43b EU Parent-Subsidiary Directive | EU parent company (form in Anlage 2 EStG) holding at least 10% directly; 12 months without break | No Kapitalertragsteuer on profit distributions (not on liquidation or reorganisation payouts) | Exemption certificate; if the 12 months end after payment, refund only (§ 43b(2) sentence 5) |",
+    "immediate_predecessor_row_id": "046"
+  },
+  {
+    "id": "047",
+    "prior_row_id": 47,
+    "prior_native_LF": [
+      93,
+      93
+    ],
+    "native_LF": [
+      93,
+      93
+    ],
+    "section": "Step 2: what the recipient can get back",
+    "wording": "| § 50g EU Interest and Royalties Directive | Beneficially entitled EU company meeting the full § 50g(3) no. 5 definition: Anlage 3 form, EU residence/unlimited or comparable taxation, no treaty residence outside the EU, listed or qualifying identical/substantially similar tax without exemption. Actual direct 25% association may be either direction or through a qualifying common direct 25% parent. For Swiss entities apply the restricted § 50g(6) form, Swiss residence/no treaty residence outside the EU or Switzerland, and unlimited Swiss corporate taxation without exemption; incorporation alone is insufficient | No Kapitalertragsteuer on interest and no § 50a tax on royalties | Exemption certificate or refund; refunds carry interest (§ 50c(4)) |",
+    "source_quote_ids": [
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.SWISS",
+      "TW.REFINTEREST",
+      "R57-60.EUGATES",
+      "R57-60.SWISS",
+      "R57-60.PARENT",
+      "R58.residence-tax"
+    ],
+    "disposition": "R57–60 bounded source-backed condition successor",
+    "immediate_predecessor_wording": "| § 50g EU Interest and Royalties Directive | Beneficially entitled EU company meeting the full § 50g(3) no. 5 definition: Anlage 3 form, EU residence/unlimited or comparable taxation, no treaty residence outside the EU, listed or qualifying identical/substantially similar tax without exemption. Actual direct 25% association may be either direction or through a qualifying common direct 25% parent. For Swiss entities apply the restricted § 50g(6) form, Swiss residence/no treaty residence outside the EU or Switzerland, and unlimited Swiss corporate taxation without exemption; incorporation alone is insufficient | No Kapitalertragsteuer on interest and no § 50a tax on royalties | Exemption certificate or refund; refunds carry interest (§ 50c(4)) |",
+    "immediate_predecessor_row_id": "047"
+  },
+  {
+    "id": "048",
+    "prior_row_id": 48,
+    "prior_native_LF": [
+      94,
+      94
+    ],
+    "native_LF": [
+      94,
+      94
+    ],
+    "section": "Step 2: what the recipient can get back",
+    "wording": "| § 44a(9) | Any foreign company with limited corporate tax liability | Two fifths of the Kapitalertragsteuer and of the surcharge back (BZSt) | Refund; further treaty or directive claims stay open |",
+    "source_quote_ids": [
+      "TW.REFUND40",
+      "TW.WHTSOLI"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| § 44a(9) | Any foreign company with limited corporate tax liability | Two fifths of the Kapitalertragsteuer and of the surcharge back (BZSt) | Refund; further treaty or directive claims stay open |",
+    "immediate_predecessor_row_id": "048"
+  },
+  {
+    "id": "049",
+    "prior_row_id": 49,
+    "prior_native_LF": [
+      96,
+      96
+    ],
+    "native_LF": [
+      96,
+      96
+    ],
+    "section": "Step 2: what the recipient can get back",
+    "wording": "**Portfolio relief below 15% (§ 50j).** For the stated § 43(1) no. 1a/corresponding foreign-custody income where the treaty tax is below 15%, the § 50j(4) corporate exclusion requires a foreign capital company with limited German tax liability directly holding at least one tenth of nominal capital in the specified unlimited-taxable German capital company, subject at home to income/profit tax without exemption; not every company with 10% qualifies. Otherwise test continuous economic ownership for 45 days within 45 days before/after the due date, at least 70% net downside risk including offsetting claims and related-person hedges, and no obligation to compensate another person wholly or predominantly, directly or indirectly, for the capital income. A voluntary distribution is not by itself that obligation. The tests in § 50j(1)–(3) do not apply if, at receipt, the recipient has been the economic owner of the shares or participation certificates continuously for at least one year (§ 50j(4) sentence 2); the FIFO rule in § 50j(2) sentence 2 still applies. Actual below-15% treaty entitlement and all other refund gates remain separate.",
+    "source_quote_ids": [
+      "TW.PORTFOLIO",
+      "R57-60.PORTFOLIO"
+    ],
+    "disposition": "R58/R59 exact independent review qualification successor; original numeric case unchanged",
+    "immediate_predecessor_wording": "**Portfolio relief below 15% (§ 50j).** For the stated § 43(1) no. 1a/corresponding foreign-custody income where the treaty tax is below 15%, the § 50j(4) corporate exclusion requires a limited-liability foreign capital company directly holding at least one tenth of nominal capital in the specified unlimited-taxable German capital company, subject at home to income/profit tax without exemption; not every company with 10% qualifies. Otherwise test continuous economic ownership for 45 days within 45 days before/after the due date, at least 70% net downside risk including offsetting claims and related-person hedges, and no obligation to compensate another person wholly or predominantly, directly or indirectly, for the capital income. A voluntary distribution is not by itself that obligation. The tests in § 50j(1)–(3) do not apply if, at receipt, the recipient has been the economic owner of the shares or participation certificates continuously for at least one year (§ 50j(4) sentence 2); the FIFO rule in § 50j(2) sentence 2 still applies. Actual below-15% treaty entitlement and all other refund gates remain separate.",
+    "immediate_predecessor_row_id": "049"
+  },
+  {
+    "id": "050",
+    "prior_row_id": 50,
+    "prior_native_LF": [
+      98,
+      98
+    ],
+    "native_LF": [
+      98,
+      98
+    ],
+    "section": "Step 2: what the recipient can get back",
+    "wording": "§ 50g does not cover interest treated as a profit distribution, interest on profit-participating claims, or the part of interest or royalties above an arm's length amount (§ 50g(2)).",
+    "source_quote_ids": [
+      "TW.EXCLUSIONS"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "§ 50g does not cover interest treated as a profit distribution, interest on profit-participating claims, or the part of interest or royalties above an arm's length amount (§ 50g(2)).",
+    "immediate_predecessor_row_id": "050"
+  },
+  {
+    "id": "051",
+    "prior_row_id": 51,
+    "prior_native_LF": [
+      100,
+      100
+    ],
+    "native_LF": [
+      100,
+      100
+    ],
+    "section": "Step 2: what the recipient can get back",
+    "wording": "**Refund amount on a treaty dividend.** Once actual tax remittance and every entitlement/procedure gate are established, refund = tax withheld/remitted minus treaty limit × gross dividend. For a 15% treaty with combined tax/surcharge coverage: 26.375% − 15% = 11.375% of gross. Austria, Luxembourg, the Netherlands, Spain, the UK, Ireland and Poland expressly include supplements, and Switzerland/France cover surcharge forms as stated in their tax articles. **Selected combined-text interpretation for Italy, the US and Czech Republic:** their income/corporation-tax and later identical or substantially similar additional/replacement-tax clauses cover the current surcharge on that income/corporation tax, so apply the treaty cap to core tax plus Soli together. Italy art. 2(4) and US art. 2(2) give the later-tax clauses; Czech art. 2(3)(a) expressly includes the corporation-tax Ergänzungsabgabe and art. 2(5) covers later similar additional/replacement taxes. SolzG § 3(1) nos. 5/6 ties current Soli to the same capital/§ 50a tax. This is a labelled own-primary interpretation, not a separately retained BZSt country-practice confirmation; the Czech comparison below uses it.",
+    "source_quote_ids": [
+      "TW.ATTAX",
+      "TW.CHTAX",
+      "TW.NLTAX",
+      "TW.FRTAX",
+      "TW.ESTAX",
+      "TW.UKTAX",
+      "TW.IETAX",
+      "TW.USTAX",
+      "TW.CZTAX",
+      "TW.CZLATER",
+      "TW.IT9",
+      "TW.PL5",
+      "TW.LU2",
+      "R57-60.WHTSOLI",
+      "R57-60.CZTAX",
+      "R57-60.CZLATER",
+      "R57-60.USTAX",
+      "R57-60.IT9",
+      "R57-60.PROCESS",
+      "R60.remitted-statute"
+    ],
+    "disposition": "R57–60 bounded source-backed condition successor",
+    "immediate_predecessor_wording": "**Refund amount on a treaty dividend.** Once actual tax remittance and every entitlement/procedure gate are established, refund = tax withheld/remitted minus treaty limit × gross dividend. For a 15% treaty with combined tax/surcharge coverage: 26.375% − 15% = 11.375% of gross. Austria, Luxembourg, the Netherlands, Spain, the UK, Ireland and Poland expressly include supplements, and Switzerland/France cover surcharge forms as stated in their tax articles. **Selected combined-text interpretation for Italy, the US and Czech Republic:** their income/corporation-tax and later identical or substantially similar additional/replacement-tax clauses cover the current surcharge on that income/corporation tax, so apply the treaty cap to core tax plus Soli together. Italy art. 2(4) and US art. 2(2) give the later-tax clauses; Czech art. 2(3)(a) expressly includes the corporation-tax Ergänzungsabgabe and art. 2(5) covers later similar additional/replacement taxes. SolzG § 3(1) nos. 5/6 ties current Soli to the same capital/§ 50a tax. This is a labelled own-primary interpretation, not a separately retained BZSt country-practice confirmation; the Czech comparison below uses it.",
+    "immediate_predecessor_row_id": "051"
+  },
+  {
+    "id": "052",
+    "prior_row_id": 52,
+    "prior_native_LF": [
+      104,
+      104
+    ],
+    "native_LF": [
+      104,
+      104
+    ],
+    "section": "Step 3: the anti-treaty-shopping test (§ 50d(3) EStG)",
+    "wording": "A foreign company gets no treaty relief from Kapitalertragsteuer or § 50a tax to the extent that:",
+    "source_quote_ids": [
+      "TW.ANTISHOP"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "A foreign company gets no treaty relief from Kapitalertragsteuer or § 50a tax to the extent that:",
+    "immediate_predecessor_row_id": "052"
+  },
+  {
+    "id": "053",
+    "prior_row_id": 53,
+    "prior_native_LF": [
+      106,
+      106
+    ],
+    "native_LF": [
+      106,
+      106
+    ],
+    "section": "Step 3: the anti-treaty-shopping test (§ 50d(3) EStG)",
+    "wording": "1. its shareholders or beneficiaries would not have the relief if they earned the income directly, and",
+    "source_quote_ids": [
+      "TW.ANTISHOP"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "1. its shareholders or beneficiaries would not have the relief if they earned the income directly, and",
+    "immediate_predecessor_row_id": "053"
+  },
+  {
+    "id": "054",
+    "prior_row_id": 54,
+    "prior_native_LF": [
+      107,
+      107
+    ],
+    "native_LF": [
+      107,
+      107
+    ],
+    "section": "Step 3: the anti-treaty-shopping test (§ 50d(3) EStG)",
+    "wording": "2. the income has no substantial link to the company's own business. Earning the income and passing it on, and activity carried on with a business not set up adequately for its purpose, are not business.",
+    "source_quote_ids": [
+      "TW.ANTISHOP"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "2. the income has no substantial link to the company's own business. Earning the income and passing it on, and activity carried on with a business not set up adequately for its purpose, are not business.",
+    "immediate_predecessor_row_id": "054"
+  },
+  {
+    "id": "055",
+    "prior_row_id": 55,
+    "prior_native_LF": [
+      109,
+      109
+    ],
+    "native_LF": [
+      109,
+      109
+    ],
+    "section": "Step 3: the anti-treaty-shopping test (§ 50d(3) EStG)",
+    "wording": "The company escapes if it shows that none of the main purposes of its involvement is a tax advantage, or if its main class of shares is traded substantially and regularly on a recognised exchange. § 43b, § 50g and § 44a(9) apply § 50d(3) too. § 42 AO (abuse) still applies.",
+    "source_quote_ids": [
+      "TW.ANTISHOP",
+      "TW.PARENT",
+      "TW.EUINTEREST",
+      "TW.REFUND40"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "The company escapes if it shows that none of the main purposes of its involvement is a tax advantage, or if its main class of shares is traded substantially and regularly on a recognised exchange. § 43b, § 50g and § 44a(9) apply § 50d(3) too. § 42 AO (abuse) still applies.",
+    "immediate_predecessor_row_id": "055"
+  },
+  {
+    "id": "056",
+    "prior_row_id": 56,
+    "prior_native_LF": [
+      113,
+      113
+    ],
+    "native_LF": [
+      113,
+      113
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Step | Rule |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Step | Rule |",
+    "immediate_predecessor_row_id": "056"
+  },
+  {
+    "id": "057",
+    "prior_row_id": 57,
+    "prior_native_LF": [
+      115,
+      115
+    ],
+    "native_LF": [
+      115,
+      115
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Payer remits Kapitalertragsteuer | General rule: tax withheld in a month is remitted by the 10th of the following month. Exception: for § 43(1) sentence 1 no. 1 distributions, remit when the capital income is received under § 44(1) sentence 5; § 44(2) uses the payment day fixed by the distribution resolution, or its statutory default where no payment day was fixed. Custodial dividends under § 43(1) no. 1a remain under the general monthly rule |",
+    "source_quote_ids": [
+      "TW.REMIT",
+      "TW.TAXDATE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Payer remits Kapitalertragsteuer | General rule: tax withheld in a month is remitted by the 10th of the following month. Exception: for § 43(1) sentence 1 no. 1 distributions, remit when the capital income is received under § 44(1) sentence 5; § 44(2) uses the payment day fixed by the distribution resolution, or its statutory default where no payment day was fixed. Custodial dividends under § 43(1) no. 1a remain under the general monthly rule |",
+    "immediate_predecessor_row_id": "057"
+  },
+  {
+    "id": "058",
+    "prior_row_id": 58,
+    "prior_native_LF": [
+      116,
+      116
+    ],
+    "native_LF": [
+      116,
+      116
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Payer files § 50a return | Each calendar quarter, by the 10th of the month after it, to the BZSt; also when nothing is withheld because of a certificate or the small-royalty rule (§ 50a(5) sentences 3, 4; § 50c(2) sentence 2) |",
+    "source_quote_ids": [
+      "TW.PAYWHT",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Payer files § 50a return | Each calendar quarter, by the 10th of the month after it, to the BZSt; also when nothing is withheld because of a certificate or the small-royalty rule (§ 50a(5) sentences 3, 4; § 50c(2) sentence 2) |",
+    "immediate_predecessor_row_id": "058"
+  },
+  {
+    "id": "059",
+    "prior_row_id": 59,
+    "prior_native_LF": [
+      117,
+      117
+    ],
+    "native_LF": [
+      117,
+      117
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Payer's certificate to the recipient | Tax certificate for Kapitalertragsteuer (§ 45a); § 50a certificate on request (§ 50a(5) sentence 7). For a positive refund, evidence actual tax payment to the authority: withholding/declaration alone is insufficient. § 50c(3) covers tax withheld and remitted or paid under a liability/recovery assessment; the certificate does not replace that remittance gate |",
+    "source_quote_ids": [
+      "TW.CERT",
+      "TW.PAYWHT",
+      "TW.REFUND",
+      "R57-60.PROCESS",
+      "R60.remitted-statute"
+    ],
+    "disposition": "R57–60 bounded source-backed condition successor",
+    "immediate_predecessor_wording": "| Payer's certificate to the recipient | Tax certificate for Kapitalertragsteuer (§ 45a); § 50a certificate on request (§ 50a(5) sentence 7). For a positive refund, evidence actual tax payment to the authority: withholding/declaration alone is insufficient. § 50c(3) covers tax withheld and remitted or paid under a liability/recovery assessment; the certificate does not replace that remittance gate |",
+    "immediate_predecessor_row_id": "059"
+  },
+  {
+    "id": "060",
+    "prior_row_id": 60,
+    "prior_native_LF": [
+      118,
+      118
+    ],
+    "native_LF": [
+      118,
+      118
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Exemption certificate application | Before payment; to the BZSt, electronically; decided within three months of complete documents (§ 50c(2) sentence 6, (5)) |",
+    "source_quote_ids": [
+      "TW.EXEMPT",
+      "TW.ELECTREFUND",
+      "TW.BEFORE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Exemption certificate application | Before payment; to the BZSt, electronically; decided within three months of complete documents (§ 50c(2) sentence 6, (5)) |",
+    "immediate_predecessor_row_id": "060"
+  },
+  {
+    "id": "061",
+    "prior_row_id": 61,
+    "prior_native_LF": [
+      119,
+      119
+    ],
+    "native_LF": [
+      119,
+      119
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Refund application | Electronically at the BZSt online portal, form \"Erstattung der deutschen Abzugsteuer auf Kapitalerträge\"; with a residence confirmation from the recipient's tax authority (§ 50c(5)) |",
+    "source_quote_ids": [
+      "TW.ELECTREFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Refund application | Electronically at the BZSt online portal, form \"Erstattung der deutschen Abzugsteuer auf Kapitalerträge\"; with a residence confirmation from the recipient's tax authority (§ 50c(5)) |",
+    "immediate_predecessor_row_id": "061"
+  },
+  {
+    "id": "062",
+    "prior_row_id": 62,
+    "prior_native_LF": [
+      120,
+      120
+    ],
+    "native_LF": [
+      120,
+      120
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Refund deadline | Four years from the end of the year of receipt: for a 2026 dividend, by 31 December 2030 |",
+    "source_quote_ids": [
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Refund deadline | Four years from the end of the year of receipt: for a 2026 dividend, by 31 December 2030 |",
+    "immediate_predecessor_row_id": "062"
+  },
+  {
+    "id": "063",
+    "prior_row_id": 63,
+    "prior_native_LF": [
+      121,
+      121
+    ],
+    "native_LF": [
+      121,
+      121
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| Processing | The BZSt says refunds can take more than 20 months |",
+    "source_quote_ids": [
+      "TW.PROCESS"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Processing | The BZSt says refunds can take more than 20 months |",
+    "immediate_predecessor_row_id": "063"
+  },
+  {
+    "id": "064",
+    "prior_row_id": 64,
+    "prior_native_LF": [
+      122,
+      122
+    ],
+    "native_LF": [
+      122,
+      122
+    ],
+    "section": "Deadlines and filing",
+    "wording": "| New § 50a form | From 7 December 2026 only in the new BZSt online portal (BZSt notice) |",
+    "source_quote_ids": [
+      "TW.NEWPORTAL"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| New § 50a form | From 7 December 2026 only in the new BZSt online portal (BZSt notice) |",
+    "immediate_predecessor_row_id": "064"
+  },
+  {
+    "id": "065",
+    "prior_row_id": 65,
+    "prior_native_LF": [
+      126,
+      126
+    ],
+    "native_LF": [
+      126,
+      126
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Payer liability.** The payer is liable for Kapitalertragsteuer it should have withheld, unless it shows it did not breach its duties deliberately or with gross negligence (§ 44(5)). For § 50a tax the payer is liable without that defence; the recipient can also be pursued (§ 50a(5) sentences 5, 6).",
+    "source_quote_ids": [
+      "TW.LIABLE",
+      "TW.PAYWHT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **Payer liability.** The payer is liable for Kapitalertragsteuer it should have withheld, unless it shows it did not breach its duties deliberately or with gross negligence (§ 44(5)). For § 50a tax the payer is liable without that defence; the recipient can also be pursued (§ 50a(5) sentences 5, 6).",
+    "immediate_predecessor_row_id": "065"
+  },
+  {
+    "id": "066",
+    "prior_row_id": 66,
+    "prior_native_LF": [
+      127,
+      127
+    ],
+    "native_LF": [
+      127,
+      127
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Late payment (§ 240 AO).** 1% per started month on tax not paid over on time, rounded down to EUR 50.",
+    "source_quote_ids": [
+      "TW.AO240-1"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **Late payment (§ 240 AO).** 1% per started month on tax not paid over on time, rounded down to EUR 50.",
+    "immediate_predecessor_row_id": "066"
+  },
+  {
+    "id": "067",
+    "prior_row_id": 67,
+    "prior_native_LF": [
+      128,
+      128
+    ],
+    "native_LF": [
+      128,
+      128
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Late filing of a withholding return (§ 152(1) AO).** The tax office may set a late-filing surcharge. The amount for withholding returns is not set out here.",
+    "source_quote_ids": [
+      "TW.AO152-1"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **Late filing of a withholding return (§ 152(1) AO).** The tax office may set a late-filing surcharge. The amount for withholding returns is not set out here.",
+    "immediate_predecessor_row_id": "067"
+  },
+  {
+    "id": "068",
+    "prior_row_id": 68,
+    "prior_native_LF": [
+      129,
+      129
+    ],
+    "native_LF": [
+      129,
+      129
+    ],
+    "section": "Penalties and interest",
+    "wording": "- **Interest on § 50g refunds (§ 50c(4)).** 0.5% per full month (§ 238(1) AO; the 0.15% rate in § 238(1a) is only for § 233a interest), from 12 months after the month in which the complete application and evidence arrive, at the earliest from payment of the tax, until the refund decision takes effect. Treaty refunds carry no interest under § 50c(4).",
+    "source_quote_ids": [
+      "TW.REFINTEREST",
+      "TW.AO238-1",
+      "TW.AO238-1a"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **Interest on § 50g refunds (§ 50c(4)).** 0.5% per full month (§ 238(1) AO; the 0.15% rate in § 238(1a) is only for § 233a interest), from 12 months after the month in which the complete application and evidence arrive, at the earliest from payment of the tax, until the refund decision takes effect. Treaty refunds carry no interest under § 50c(4).",
+    "immediate_predecessor_row_id": "068"
+  },
+  {
+    "id": "069",
+    "prior_row_id": 69,
+    "prior_native_LF": [
+      133,
+      133
+    ],
+    "native_LF": [
+      133,
+      133
+    ],
+    "section": "Cross-border points",
+    "wording": "- **The recipient's home country.** The tax that stays in Germany at the treaty rate is credited or relieved under the recipient's own law and the treaty's article on eliminating double tax. Not covered here.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **The recipient's home country.** The tax that stays in Germany at the treaty rate is credited or relieved under the recipient's own law and the treaty's article on eliminating double tax. Not covered here.",
+    "immediate_predecessor_row_id": "069"
+  },
+  {
+    "id": "070",
+    "prior_row_id": 70,
+    "prior_native_LF": [
+      134,
+      134
+    ],
+    "native_LF": [
+      134,
+      134
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Non-cooperative jurisdictions.** Since 2022 the Tax Haven Defence Act (StAbwG § 10) brings further payments to residents of listed non-cooperative jurisdictions into withholding (BZSt notice). Not set out here.",
+    "source_quote_ids": [
+      "TW.STABW"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **Non-cooperative jurisdictions.** Since 2022 the Tax Haven Defence Act (StAbwG § 10) brings further payments to residents of listed non-cooperative jurisdictions into withholding (BZSt notice). Not set out here.",
+    "immediate_predecessor_row_id": "070"
+  },
+  {
+    "id": "071",
+    "prior_row_id": 71,
+    "prior_native_LF": [
+      135,
+      135
+    ],
+    "native_LF": [
+      135,
+      135
+    ],
+    "section": "Cross-border points",
+    "wording": "- **German permanent establishment.** If the shares, claim or right belong to a German permanent establishment of the recipient, the treaty article on business profits applies instead and the income is assessed (for example Austria art. 10(4)).",
+    "source_quote_ids": [
+      "TW.ATPE"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **German permanent establishment.** If the shares, claim or right belong to a German permanent establishment of the recipient, the treaty article on business profits applies instead and the income is assessed (for example Austria art. 10(4)).",
+    "immediate_predecessor_row_id": "071"
+  },
+  {
+    "id": "072",
+    "prior_row_id": 72,
+    "prior_native_LF": [
+      136,
+      136
+    ],
+    "native_LF": [
+      136,
+      136
+    ],
+    "section": "Cross-border points",
+    "wording": "- **Investment funds and REITs.** Several treaties limit the reduced dividend rate for REIT-AGs and investment funds (Switzerland, Netherlands, Ireland, Spain, Luxembourg, US). Check the treaty text.",
+    "source_quote_ids": [
+      "TW.CHD",
+      "TW.NLD",
+      "TW.IED",
+      "TW.ESD",
+      "TW.LUD",
+      "TW.USFUNDS"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **Investment funds and REITs.** Several treaties limit the reduced dividend rate for REIT-AGs and investment funds (Switzerland, Netherlands, Ireland, Spain, Luxembourg, US). Check the treaty text.",
+    "immediate_predecessor_row_id": "072"
+  },
+  {
+    "id": "073",
+    "prior_row_id": 73,
+    "prior_native_LF": [
+      137,
+      137
+    ],
+    "native_LF": [
+      137,
+      137
+    ],
+    "section": "Cross-border points",
+    "wording": "- **German residents receiving foreign income.** The other direction is in de-non-resident-tax and de-capital-gains.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- **German residents receiving foreign income.** The other direction is in de-non-resident-tax and de-capital-gains.",
+    "immediate_predecessor_row_id": "073"
+  },
+  {
+    "id": "074",
+    "prior_row_id": 74,
+    "prior_native_LF": [
+      143,
+      143
+    ],
+    "native_LF": [
+      143,
+      143
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "Petra lives in Graz. In 2026 a German AG pays her a dividend of EUR 10,000 gross. She holds the shares privately. The custodian withholds Kapitalertragsteuer and surcharge. The fictional custodian actually remits the withheld tax and surcharge to the authority and the refund evidence establishes it. (Invented case.)",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT",
+      "R57-60.PROCESS",
+      "R60.remitted-statute"
+    ],
+    "disposition": "R57–60 bounded source-backed condition successor",
+    "immediate_predecessor_wording": "Petra lives in Graz. In 2026 a German AG pays her a dividend of EUR 10,000 gross. She holds the shares privately. The custodian withholds Kapitalertragsteuer and surcharge. The fictional custodian actually remits the withheld tax and surcharge to the authority and the refund evidence establishes it. (Invented case.)",
+    "immediate_predecessor_row_id": "074"
+  },
+  {
+    "id": "075",
+    "prior_row_id": 75,
+    "prior_native_LF": [
+      145,
+      145
+    ],
+    "native_LF": [
+      145,
+      145
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "- Kapitalertragsteuer: 25% × 10,000 = EUR 2,500.",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- Kapitalertragsteuer: 25% × 10,000 = EUR 2,500.",
+    "immediate_predecessor_row_id": "075"
+  },
+  {
+    "id": "076",
+    "prior_row_id": 76,
+    "prior_native_LF": [
+      146,
+      146
+    ],
+    "native_LF": [
+      146,
+      146
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "- Surcharge: 5.5% × 2,500 = EUR 137.50. Total withheld EUR 2,637.50 (26.375%).",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- Surcharge: 5.5% × 2,500 = EUR 137.50. Total withheld EUR 2,637.50 (26.375%).",
+    "immediate_predecessor_row_id": "076"
+  },
+  {
+    "id": "077",
+    "prior_row_id": 77,
+    "prior_native_LF": [
+      147,
+      147
+    ],
+    "native_LF": [
+      147,
+      147
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "- Treaty limit (Austria art. 10(2)(b), general case): 15% × 10,000 = EUR 1,500. The covered German taxes include supplements (art. 2(3)(a)), so the 15% caps tax and surcharge together.",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- Treaty limit (Austria art. 10(2)(b), general case): 15% × 10,000 = EUR 1,500. The covered German taxes include supplements (art. 2(3)(a)), so the 15% caps tax and surcharge together.",
+    "immediate_predecessor_row_id": "077"
+  },
+  {
+    "id": "078",
+    "prior_row_id": 78,
+    "prior_native_LF": [
+      148,
+      148
+    ],
+    "native_LF": [
+      148,
+      148
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "- Refund: 2,637.50 − 1,500 = EUR 1,137.50, which is 11.375% of the gross.",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- Refund: 2,637.50 − 1,500 = EUR 1,137.50, which is 11.375% of the gross.",
+    "immediate_predecessor_row_id": "078"
+  },
+  {
+    "id": "079",
+    "prior_row_id": 79,
+    "prior_native_LF": [
+      149,
+      149
+    ],
+    "native_LF": [
+      149,
+      149
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "- Route: electronic refund application at the BZSt by 31 December 2030, with a residence confirmation from her Austrian tax office and the German tax certificate. She cannot get an exemption certificate in advance: for dividends those are given only to companies holding at least 10% (§ 50c(2) sentence 5).",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- Route: electronic refund application at the BZSt by 31 December 2030, with a residence confirmation from her Austrian tax office and the German tax certificate. She cannot get an exemption certificate in advance: for dividends those are given only to companies holding at least 10% (§ 50c(2) sentence 5).",
+    "immediate_predecessor_row_id": "079"
+  },
+  {
+    "id": "080",
+    "prior_row_id": 80,
+    "prior_native_LF": [
+      151,
+      151
+    ],
+    "native_LF": [
+      151,
+      151
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "```oa-check",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "```oa-check",
+    "immediate_predecessor_row_id": "080"
+  },
+  {
+    "id": "081",
+    "prior_row_id": 81,
+    "prior_native_LF": [
+      152,
+      152
+    ],
+    "native_LF": [
+      152,
+      152
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "name: DE dividend to Austrian individual 2026, refund down to 15% treaty rate",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "name: DE dividend to Austrian individual 2026, refund down to 15% treaty rate",
+    "immediate_predecessor_row_id": "081"
+  },
+  {
+    "id": "082",
+    "prior_row_id": 82,
+    "prior_native_LF": [
+      153,
+      153
+    ],
+    "native_LF": [
+      153,
+      153
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "inputs:",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "inputs:",
+    "immediate_predecessor_row_id": "082"
+  },
+  {
+    "id": "083",
+    "prior_row_id": 83,
+    "prior_native_LF": [
+      154,
+      154
+    ],
+    "native_LF": [
+      154,
+      154
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  dividend: 10000",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  dividend: 10000",
+    "immediate_predecessor_row_id": "083"
+  },
+  {
+    "id": "084",
+    "prior_row_id": 84,
+    "prior_native_LF": [
+      155,
+      155
+    ],
+    "native_LF": [
+      155,
+      155
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  kapest_rate: 0.25",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  kapest_rate: 0.25",
+    "immediate_predecessor_row_id": "084"
+  },
+  {
+    "id": "085",
+    "prior_row_id": 85,
+    "prior_native_LF": [
+      156,
+      156
+    ],
+    "native_LF": [
+      156,
+      156
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  soli_rate: 0.055",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  soli_rate: 0.055",
+    "immediate_predecessor_row_id": "085"
+  },
+  {
+    "id": "086",
+    "prior_row_id": 86,
+    "prior_native_LF": [
+      157,
+      157
+    ],
+    "native_LF": [
+      157,
+      157
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  treaty_rate: 0.15",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  treaty_rate: 0.15",
+    "immediate_predecessor_row_id": "086"
+  },
+  {
+    "id": "087",
+    "prior_row_id": 87,
+    "prior_native_LF": [
+      158,
+      158
+    ],
+    "native_LF": [
+      158,
+      158
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "steps:",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "steps:",
+    "immediate_predecessor_row_id": "087"
+  },
+  {
+    "id": "088",
+    "prior_row_id": 88,
+    "prior_native_LF": [
+      159,
+      159
+    ],
+    "native_LF": [
+      159,
+      159
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  - kapest: dividend * kapest_rate",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  - kapest: dividend * kapest_rate",
+    "immediate_predecessor_row_id": "088"
+  },
+  {
+    "id": "089",
+    "prior_row_id": 89,
+    "prior_native_LF": [
+      160,
+      160
+    ],
+    "native_LF": [
+      160,
+      160
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  - soli: kapest * soli_rate",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  - soli: kapest * soli_rate",
+    "immediate_predecessor_row_id": "089"
+  },
+  {
+    "id": "090",
+    "prior_row_id": 90,
+    "prior_native_LF": [
+      161,
+      161
+    ],
+    "native_LF": [
+      161,
+      161
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  - withheld: kapest + soli",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  - withheld: kapest + soli",
+    "immediate_predecessor_row_id": "090"
+  },
+  {
+    "id": "091",
+    "prior_row_id": 91,
+    "prior_native_LF": [
+      162,
+      162
+    ],
+    "native_LF": [
+      162,
+      162
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  - treaty_tax: dividend * treaty_rate",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  - treaty_tax: dividend * treaty_rate",
+    "immediate_predecessor_row_id": "091"
+  },
+  {
+    "id": "092",
+    "prior_row_id": 92,
+    "prior_native_LF": [
+      163,
+      163
+    ],
+    "native_LF": [
+      163,
+      163
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  - refund: withheld - treaty_tax",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  - refund: withheld - treaty_tax",
+    "immediate_predecessor_row_id": "092"
+  },
+  {
+    "id": "093",
+    "prior_row_id": 93,
+    "prior_native_LF": [
+      164,
+      164
+    ],
+    "native_LF": [
+      164,
+      164
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  - refund_pct: refund / dividend * 100",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  - refund_pct: refund / dividend * 100",
+    "immediate_predecessor_row_id": "093"
+  },
+  {
+    "id": "094",
+    "prior_row_id": 94,
+    "prior_native_LF": [
+      165,
+      165
+    ],
+    "native_LF": [
+      165,
+      165
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "expected:",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "expected:",
+    "immediate_predecessor_row_id": "094"
+  },
+  {
+    "id": "095",
+    "prior_row_id": 95,
+    "prior_native_LF": [
+      166,
+      166
+    ],
+    "native_LF": [
+      166,
+      166
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  kapest: 2500",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  kapest: 2500",
+    "immediate_predecessor_row_id": "095"
+  },
+  {
+    "id": "096",
+    "prior_row_id": 96,
+    "prior_native_LF": [
+      167,
+      167
+    ],
+    "native_LF": [
+      167,
+      167
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  soli: 137.50",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  soli: 137.50",
+    "immediate_predecessor_row_id": "096"
+  },
+  {
+    "id": "097",
+    "prior_row_id": 97,
+    "prior_native_LF": [
+      168,
+      168
+    ],
+    "native_LF": [
+      168,
+      168
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  withheld: 2637.50",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  withheld: 2637.50",
+    "immediate_predecessor_row_id": "097"
+  },
+  {
+    "id": "098",
+    "prior_row_id": 98,
+    "prior_native_LF": [
+      169,
+      169
+    ],
+    "native_LF": [
+      169,
+      169
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  treaty_tax: 1500",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  treaty_tax: 1500",
+    "immediate_predecessor_row_id": "098"
+  },
+  {
+    "id": "099",
+    "prior_row_id": 99,
+    "prior_native_LF": [
+      170,
+      170
+    ],
+    "native_LF": [
+      170,
+      170
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  refund: 1137.50",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  refund: 1137.50",
+    "immediate_predecessor_row_id": "099"
+  },
+  {
+    "id": "100",
+    "prior_row_id": 100,
+    "prior_native_LF": [
+      171,
+      171
+    ],
+    "native_LF": [
+      171,
+      171
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "  refund_pct: 11.375",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  refund_pct: 11.375",
+    "immediate_predecessor_row_id": "100"
+  },
+  {
+    "id": "101",
+    "prior_row_id": 101,
+    "prior_native_LF": [
+      172,
+      172
+    ],
+    "native_LF": [
+      172,
+      172
+    ],
+    "section": "Example 1: Austrian private investor, German dividend, 15% treaty rate",
+    "wording": "```",
+    "source_quote_ids": [
+      "TW.KWHT",
+      "TW.SoliRate",
+      "TW.ATD",
+      "TW.ATTAX",
+      "TW.REFUND",
+      "TW.ELECTREFUND",
+      "TW.EXEMPT"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "```",
+    "immediate_predecessor_row_id": "101"
+  },
+  {
+    "id": "102",
+    "prior_row_id": 102,
+    "prior_native_LF": [
+      176,
+      176
+    ],
+    "native_LF": [
+      176,
+      176
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "A German GmbH pays EUR 200,000 of royalties in 2026 for a patent licence to its Czech shareholder, a společnost s ručením omezeným (s.r.o.) that holds 30% of the GmbH directly. The s.r.o. is subject to Czech corporate income tax, is the beneficial owner, runs its own development business, and the royalty is at arm's length. For this fictional company-only worksheet, it is actually Czech-tax-resident, not treaty-resident outside the EU, meets the applicable listed-form/non-exempt listed-tax definitions, and all remaining association/anti-abuse gates are stipulated met. If the withholding/refund alternative is used, the GmbH actually remits the withheld tax/surcharge and evidence establishes it. PE cases require their own § 43b(2a)/§ 50g(3) gates and are not substituted by this company worksheet. (Invented case.)",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND",
+      "R57-60.EUGATES",
+      "R57-60.SWISS",
+      "R57-60.PARENT",
+      "R58.residence-tax",
+      "R57-60.PROCESS",
+      "R60.remitted-statute"
+    ],
+    "disposition": "R57–60 bounded source-backed condition successor",
+    "immediate_predecessor_wording": "A German GmbH pays EUR 200,000 of royalties in 2026 for a patent licence to its Czech shareholder, a společnost s ručením omezeným (s.r.o.) that holds 30% of the GmbH directly. The s.r.o. is subject to Czech corporate income tax, is the beneficial owner, runs its own development business, and the royalty is at arm's length. For this fictional company-only worksheet, it is actually Czech-tax-resident, not treaty-resident outside the EU, meets the applicable listed-form/non-exempt listed-tax definitions, and all remaining association/anti-abuse gates are stipulated met. If the withholding/refund alternative is used, the GmbH actually remits the withheld tax/surcharge and evidence establishes it. PE cases require their own § 43b(2a)/§ 50g(3) gates and are not substituted by this company worksheet. (Invented case.)",
+    "immediate_predecessor_row_id": "102"
+  },
+  {
+    "id": "103",
+    "prior_row_id": 103,
+    "prior_native_LF": [
+      178,
+      178
+    ],
+    "native_LF": [
+      178,
+      178
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "- Without relief: § 50a tax 15% × 200,000 = EUR 30,000, surcharge 5.5% × 30,000 = EUR 1,650, total EUR 31,650.",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- Without relief: § 50a tax 15% × 200,000 = EUR 30,000, surcharge 5.5% × 30,000 = EUR 1,650, total EUR 31,650.",
+    "immediate_predecessor_row_id": "103"
+  },
+  {
+    "id": "104",
+    "prior_row_id": 104,
+    "prior_native_LF": [
+      179,
+      179
+    ],
+    "native_LF": [
+      179,
+      179
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "- Treaty only (Czech Republic art. 12(2)): under the selected combined-text surcharge interpretation above, German core tax plus surcharge together are at most 5% of gross, EUR 10,000.",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND",
+      "R57-60.WHTSOLI",
+      "R57-60.CZTAX",
+      "R57-60.CZLATER",
+      "R57-60.USTAX",
+      "R57-60.IT9"
+    ],
+    "disposition": "R57–60 bounded source-backed condition successor",
+    "immediate_predecessor_wording": "- Treaty only (Czech Republic art. 12(2)): under the selected combined-text surcharge interpretation above, German core tax plus surcharge together are at most 5% of gross, EUR 10,000.",
+    "immediate_predecessor_row_id": "104"
+  },
+  {
+    "id": "105",
+    "prior_row_id": 105,
+    "prior_native_LF": [
+      180,
+      180
+    ],
+    "native_LF": [
+      180,
+      180
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "- § 50g: the s.r.o. is an EU company in a form listed in Anlage 3, subject to a listed tax (\"Daň z příjmů právnických osob\"), and associated by at least 25% directly. German tax: nil. § 50d(3) is passed because the royalty is linked to its own business.",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- § 50g: the s.r.o. is an EU company in a form listed in Anlage 3, subject to a listed tax (\"Daň z příjmů právnických osob\"), and associated by at least 25% directly. German tax: nil. § 50d(3) is passed because the royalty is linked to its own business.",
+    "immediate_predecessor_row_id": "105"
+  },
+  {
+    "id": "106",
+    "prior_row_id": 106,
+    "prior_native_LF": [
+      181,
+      181
+    ],
+    "native_LF": [
+      181,
+      181
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "- Route: the s.r.o. applies to the BZSt for an exemption certificate before the first payment. The GmbH then withholds nothing but still files the quarterly § 50a return (§ 50c(2) sentence 2). If the GmbH paid before the certificate arrived, it withholds EUR 31,650 and the s.r.o. claims a refund under § 50c(3), with interest from 12 months after its complete application (§ 50c(4)).",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "- Route: the s.r.o. applies to the BZSt for an exemption certificate before the first payment. The GmbH then withholds nothing but still files the quarterly § 50a return (§ 50c(2) sentence 2). If the GmbH paid before the certificate arrived, it withholds EUR 31,650 and the s.r.o. claims a refund under § 50c(3), with interest from 12 months after its complete application (§ 50c(4)).",
+    "immediate_predecessor_row_id": "106"
+  },
+  {
+    "id": "107",
+    "prior_row_id": 107,
+    "prior_native_LF": [
+      182,
+      182
+    ],
+    "native_LF": [
+      182,
+      182
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "- Saving against the treaty alone: EUR 10,000 under that labelled combined-tax interpretation.",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND",
+      "R57-60.WHTSOLI",
+      "R57-60.CZTAX",
+      "R57-60.CZLATER",
+      "R57-60.USTAX",
+      "R57-60.IT9"
+    ],
+    "disposition": "R57–60 bounded source-backed condition successor",
+    "immediate_predecessor_wording": "- Saving against the treaty alone: EUR 10,000 under that labelled combined-tax interpretation.",
+    "immediate_predecessor_row_id": "107"
+  },
+  {
+    "id": "108",
+    "prior_row_id": 108,
+    "prior_native_LF": [
+      184,
+      184
+    ],
+    "native_LF": [
+      184,
+      184
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "```oa-check",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "```oa-check",
+    "immediate_predecessor_row_id": "108"
+  },
+  {
+    "id": "109",
+    "prior_row_id": 109,
+    "prior_native_LF": [
+      185,
+      185
+    ],
+    "native_LF": [
+      185,
+      185
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "name: DE royalties to Czech 30% parent 2026, § 50a vs treaty vs § 50g",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "name: DE royalties to Czech 30% parent 2026, § 50a vs treaty vs § 50g",
+    "immediate_predecessor_row_id": "109"
+  },
+  {
+    "id": "110",
+    "prior_row_id": 110,
+    "prior_native_LF": [
+      186,
+      186
+    ],
+    "native_LF": [
+      186,
+      186
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "inputs:",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "inputs:",
+    "immediate_predecessor_row_id": "110"
+  },
+  {
+    "id": "111",
+    "prior_row_id": 111,
+    "prior_native_LF": [
+      187,
+      187
+    ],
+    "native_LF": [
+      187,
+      187
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  royalties: 200000",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  royalties: 200000",
+    "immediate_predecessor_row_id": "111"
+  },
+  {
+    "id": "112",
+    "prior_row_id": 112,
+    "prior_native_LF": [
+      188,
+      188
+    ],
+    "native_LF": [
+      188,
+      188
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  rate_50a: 0.15",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  rate_50a: 0.15",
+    "immediate_predecessor_row_id": "112"
+  },
+  {
+    "id": "113",
+    "prior_row_id": 113,
+    "prior_native_LF": [
+      189,
+      189
+    ],
+    "native_LF": [
+      189,
+      189
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  soli_rate: 0.055",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  soli_rate: 0.055",
+    "immediate_predecessor_row_id": "113"
+  },
+  {
+    "id": "114",
+    "prior_row_id": 114,
+    "prior_native_LF": [
+      190,
+      190
+    ],
+    "native_LF": [
+      190,
+      190
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  treaty_rate: 0.05",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  treaty_rate: 0.05",
+    "immediate_predecessor_row_id": "114"
+  },
+  {
+    "id": "115",
+    "prior_row_id": 115,
+    "prior_native_LF": [
+      191,
+      191
+    ],
+    "native_LF": [
+      191,
+      191
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  holding_pct: 30",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  holding_pct: 30",
+    "immediate_predecessor_row_id": "115"
+  },
+  {
+    "id": "116",
+    "prior_row_id": 116,
+    "prior_native_LF": [
+      192,
+      192
+    ],
+    "native_LF": [
+      192,
+      192
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "steps:",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "steps:",
+    "immediate_predecessor_row_id": "116"
+  },
+  {
+    "id": "117",
+    "prior_row_id": 117,
+    "prior_native_LF": [
+      193,
+      193
+    ],
+    "native_LF": [
+      193,
+      193
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  - tax_50a: royalties * rate_50a",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  - tax_50a: royalties * rate_50a",
+    "immediate_predecessor_row_id": "117"
+  },
+  {
+    "id": "118",
+    "prior_row_id": 118,
+    "prior_native_LF": [
+      194,
+      194
+    ],
+    "native_LF": [
+      194,
+      194
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  - soli: tax_50a * soli_rate",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  - soli: tax_50a * soli_rate",
+    "immediate_predecessor_row_id": "118"
+  },
+  {
+    "id": "119",
+    "prior_row_id": 119,
+    "prior_native_LF": [
+      195,
+      195
+    ],
+    "native_LF": [
+      195,
+      195
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  - withheld_no_relief: tax_50a + soli",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  - withheld_no_relief: tax_50a + soli",
+    "immediate_predecessor_row_id": "119"
+  },
+  {
+    "id": "120",
+    "prior_row_id": 120,
+    "prior_native_LF": [
+      196,
+      196
+    ],
+    "native_LF": [
+      196,
+      196
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  - treaty_max: royalties * treaty_rate",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  - treaty_max: royalties * treaty_rate",
+    "immediate_predecessor_row_id": "120"
+  },
+  {
+    "id": "121",
+    "prior_row_id": 121,
+    "prior_native_LF": [
+      197,
+      197
+    ],
+    "native_LF": [
+      197,
+      197
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  - holding_margin: holding_pct - 25",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  - holding_margin: holding_pct - 25",
+    "immediate_predecessor_row_id": "121"
+  },
+  {
+    "id": "122",
+    "prior_row_id": 122,
+    "prior_native_LF": [
+      198,
+      198
+    ],
+    "native_LF": [
+      198,
+      198
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  - tax_50g: 0",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  - tax_50g: 0",
+    "immediate_predecessor_row_id": "122"
+  },
+  {
+    "id": "123",
+    "prior_row_id": 123,
+    "prior_native_LF": [
+      199,
+      199
+    ],
+    "native_LF": [
+      199,
+      199
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  - refund_if_withheld: withheld_no_relief - tax_50g",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  - refund_if_withheld: withheld_no_relief - tax_50g",
+    "immediate_predecessor_row_id": "123"
+  },
+  {
+    "id": "124",
+    "prior_row_id": 124,
+    "prior_native_LF": [
+      200,
+      200
+    ],
+    "native_LF": [
+      200,
+      200
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  - saving_vs_treaty: treaty_max - tax_50g",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  - saving_vs_treaty: treaty_max - tax_50g",
+    "immediate_predecessor_row_id": "124"
+  },
+  {
+    "id": "125",
+    "prior_row_id": 125,
+    "prior_native_LF": [
+      201,
+      201
+    ],
+    "native_LF": [
+      201,
+      201
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "expected:",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "expected:",
+    "immediate_predecessor_row_id": "125"
+  },
+  {
+    "id": "126",
+    "prior_row_id": 126,
+    "prior_native_LF": [
+      202,
+      202
+    ],
+    "native_LF": [
+      202,
+      202
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  tax_50a: 30000",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  tax_50a: 30000",
+    "immediate_predecessor_row_id": "126"
+  },
+  {
+    "id": "127",
+    "prior_row_id": 127,
+    "prior_native_LF": [
+      203,
+      203
+    ],
+    "native_LF": [
+      203,
+      203
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  soli: 1650",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  soli: 1650",
+    "immediate_predecessor_row_id": "127"
+  },
+  {
+    "id": "128",
+    "prior_row_id": 128,
+    "prior_native_LF": [
+      204,
+      204
+    ],
+    "native_LF": [
+      204,
+      204
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  withheld_no_relief: 31650",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  withheld_no_relief: 31650",
+    "immediate_predecessor_row_id": "128"
+  },
+  {
+    "id": "129",
+    "prior_row_id": 129,
+    "prior_native_LF": [
+      205,
+      205
+    ],
+    "native_LF": [
+      205,
+      205
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  treaty_max: 10000",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  treaty_max: 10000",
+    "immediate_predecessor_row_id": "129"
+  },
+  {
+    "id": "130",
+    "prior_row_id": 130,
+    "prior_native_LF": [
+      206,
+      206
+    ],
+    "native_LF": [
+      206,
+      206
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  holding_margin: 5",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  holding_margin: 5",
+    "immediate_predecessor_row_id": "130"
+  },
+  {
+    "id": "131",
+    "prior_row_id": 131,
+    "prior_native_LF": [
+      207,
+      207
+    ],
+    "native_LF": [
+      207,
+      207
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  refund_if_withheld: 31650",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  refund_if_withheld: 31650",
+    "immediate_predecessor_row_id": "131"
+  },
+  {
+    "id": "132",
+    "prior_row_id": 132,
+    "prior_native_LF": [
+      208,
+      208
+    ],
+    "native_LF": [
+      208,
+      208
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "  saving_vs_treaty: 10000",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "  saving_vs_treaty: 10000",
+    "immediate_predecessor_row_id": "132"
+  },
+  {
+    "id": "133",
+    "prior_row_id": 133,
+    "prior_native_LF": [
+      209,
+      209
+    ],
+    "native_LF": [
+      209,
+      209
+    ],
+    "section": "Example 2: royalties to a Czech parent, § 50g exemption",
+    "wording": "```",
+    "source_quote_ids": [
+      "TW.GROSS",
+      "TW.SoliRate",
+      "TW.CZR",
+      "TW.EUINTEREST",
+      "TW.EUGATES",
+      "TW.FORMS",
+      "TW.TAXFORM",
+      "TW.ANTISHOP",
+      "TW.REFINTEREST",
+      "TW.EXEMPT",
+      "TW.REFUND"
+    ],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "```",
+    "immediate_predecessor_row_id": "133"
+  },
+  {
+    "id": "134",
+    "prior_row_id": 134,
+    "prior_native_LF": [
+      213,
+      213
+    ],
+    "native_LF": [
+      213,
+      213
+    ],
+    "section": "Ask the client first",
+    "wording": "1. Who receives the payment, where is it resident, and is it the beneficial owner or a nominee or conduit?",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "1. Who receives the payment, where is it resident, and is it the beneficial owner or a nominee or conduit?",
+    "immediate_predecessor_row_id": "134"
+  },
+  {
+    "id": "135",
+    "prior_row_id": 135,
+    "prior_native_LF": [
+      214,
+      214
+    ],
+    "native_LF": [
+      214,
+      214
+    ],
+    "section": "Ask the client first",
+    "wording": "2. Individual, company or partnership? For a company: its legal form, whether it pays corporate tax at home, and its own staff, premises and business.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "2. Individual, company or partnership? For a company: its legal form, whether it pays corporate tax at home, and its own staff, premises and business.",
+    "immediate_predecessor_row_id": "135"
+  },
+  {
+    "id": "136",
+    "prior_row_id": 136,
+    "prior_native_LF": [
+      215,
+      215
+    ],
+    "native_LF": [
+      215,
+      215
+    ],
+    "section": "Ask the client first",
+    "wording": "3. For dividends: the percentage held directly in the German company, since when, and whether the shares will be held for 365 days (or 12 months for § 43b).",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "3. For dividends: the percentage held directly in the German company, since when, and whether the shares will be held for 365 days (or 12 months for § 43b).",
+    "immediate_predecessor_row_id": "136"
+  },
+  {
+    "id": "137",
+    "prior_row_id": 137,
+    "prior_native_LF": [
+      216,
+      216
+    ],
+    "native_LF": [
+      216,
+      216
+    ],
+    "section": "Ask the client first",
+    "wording": "4. For interest: is it ordinary interest, or does it depend on profit (silent partnership, profit-participating loan, convertible or profit-sharing bond)?",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "4. For interest: is it ordinary interest, or does it depend on profit (silent partnership, profit-participating loan, convertible or profit-sharing bond)?",
+    "immediate_predecessor_row_id": "137"
+  },
+  {
+    "id": "138",
+    "prior_row_id": 138,
+    "prior_native_LF": [
+      217,
+      217
+    ],
+    "native_LF": [
+      217,
+      217
+    ],
+    "section": "Ask the client first",
+    "wording": "5. For royalties: what rights are licensed, the amounts per year, and whether the parties hold at least 25% of each other or share a 25% parent.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "5. For royalties: what rights are licensed, the amounts per year, and whether the parties hold at least 25% of each other or share a 25% parent.",
+    "immediate_predecessor_row_id": "138"
+  },
+  {
+    "id": "139",
+    "prior_row_id": 139,
+    "prior_native_LF": [
+      218,
+      218
+    ],
+    "native_LF": [
+      218,
+      218
+    ],
+    "section": "Ask the client first",
+    "wording": "6. Has the recipient applied for an exemption certificate, and when are the payments due?",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "6. Has the recipient applied for an exemption certificate, and when are the payments due?",
+    "immediate_predecessor_row_id": "139"
+  },
+  {
+    "id": "140",
+    "prior_row_id": 140,
+    "prior_native_LF": [
+      222,
+      222
+    ],
+    "native_LF": [
+      224,
+      224
+    ],
+    "section": "Sources",
+    "wording": "| Source | URL | Read on |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Source | URL | Read on |",
+    "immediate_predecessor_row_id": "140"
+  },
+  {
+    "id": "141",
+    "prior_row_id": 141,
+    "prior_native_LF": [
+      224,
+      224
+    ],
+    "native_LF": [
+      226,
+      226
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 43 (income subject to Kapitalertragsteuer) | https://www.gesetze-im-internet.de/estg/__43.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| EStG § 43 (income subject to Kapitalertragsteuer) | https://www.gesetze-im-internet.de/estg/__43.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "141"
+  },
+  {
+    "id": "142",
+    "prior_row_id": 142,
+    "prior_native_LF": [
+      225,
+      225
+    ],
+    "native_LF": [
+      227,
+      227
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 43a (25% rate) | https://www.gesetze-im-internet.de/estg/__43a.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| EStG § 43a (25% rate) | https://www.gesetze-im-internet.de/estg/__43a.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "142"
+  },
+  {
+    "id": "143",
+    "prior_row_id": 143,
+    "prior_native_LF": [
+      226,
+      226
+    ],
+    "native_LF": [
+      228,
+      228
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 43b (EU parent companies) | https://www.gesetze-im-internet.de/estg/__43b.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| EStG § 43b (EU parent companies) | https://www.gesetze-im-internet.de/estg/__43b.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "143"
+  },
+  {
+    "id": "144",
+    "prior_row_id": 144,
+    "prior_native_LF": [
+      227,
+      227
+    ],
+    "native_LF": [
+      229,
+      229
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 44 (when tax arises, remittance, liability) | https://www.gesetze-im-internet.de/estg/__44.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| EStG § 44 (when tax arises, remittance, liability) | https://www.gesetze-im-internet.de/estg/__44.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "144"
+  },
+  {
+    "id": "145",
+    "prior_row_id": 145,
+    "prior_native_LF": [
+      228,
+      228
+    ],
+    "native_LF": [
+      230,
+      230
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 44a(9) (two-fifths refund) | https://www.gesetze-im-internet.de/estg/__44a.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| EStG § 44a(9) (two-fifths refund) | https://www.gesetze-im-internet.de/estg/__44a.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "145"
+  },
+  {
+    "id": "146",
+    "prior_row_id": 146,
+    "prior_native_LF": [
+      229,
+      229
+    ],
+    "native_LF": [
+      231,
+      231
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 49 (German-source income) | https://www.gesetze-im-internet.de/estg/__49.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| EStG § 49 (German-source income) | https://www.gesetze-im-internet.de/estg/__49.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "146"
+  },
+  {
+    "id": "147",
+    "prior_row_id": 147,
+    "prior_native_LF": [
+      230,
+      230
+    ],
+    "native_LF": [
+      232,
+      232
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 50a (15% on royalties, quarterly return) | https://www.gesetze-im-internet.de/estg/__50a.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| EStG § 50a (15% on royalties, quarterly return) | https://www.gesetze-im-internet.de/estg/__50a.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "147"
+  },
+  {
+    "id": "148",
+    "prior_row_id": 148,
+    "prior_native_LF": [
+      231,
+      231
+    ],
+    "native_LF": [
+      233,
+      233
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 50c (exemption certificate, refund, interest) | https://www.gesetze-im-internet.de/estg/__50c.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| EStG § 50c (exemption certificate, refund, interest) | https://www.gesetze-im-internet.de/estg/__50c.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "148"
+  },
+  {
+    "id": "149",
+    "prior_row_id": 149,
+    "prior_native_LF": [
+      232,
+      232
+    ],
+    "native_LF": [
+      234,
+      234
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 50d (anti-treaty-shopping, § 50d(3)) | https://www.gesetze-im-internet.de/estg/__50d.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| EStG § 50d (anti-treaty-shopping, § 50d(3)) | https://www.gesetze-im-internet.de/estg/__50d.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "149"
+  },
+  {
+    "id": "150",
+    "prior_row_id": 150,
+    "prior_native_LF": [
+      233,
+      233
+    ],
+    "native_LF": [
+      235,
+      235
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 50g (interest and royalties between EU companies) | https://www.gesetze-im-internet.de/estg/__50g.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| EStG § 50g (interest and royalties between EU companies) | https://www.gesetze-im-internet.de/estg/__50g.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "150"
+  },
+  {
+    "id": "151",
+    "prior_row_id": 151,
+    "prior_native_LF": [
+      234,
+      234
+    ],
+    "native_LF": [
+      236,
+      236
+    ],
+    "section": "Sources",
+    "wording": "| EStG Anlage 3 (company forms and taxes for § 50g) | https://www.gesetze-im-internet.de/estg/anlage_3.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| EStG Anlage 3 (company forms and taxes for § 50g) | https://www.gesetze-im-internet.de/estg/anlage_3.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "151"
+  },
+  {
+    "id": "152",
+    "prior_row_id": 152,
+    "prior_native_LF": [
+      235,
+      235
+    ],
+    "native_LF": [
+      237,
+      237
+    ],
+    "section": "Sources",
+    "wording": "| SolzG § 3 (surcharge base) | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| SolzG § 3 (surcharge base) | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "152"
+  },
+  {
+    "id": "153",
+    "prior_row_id": 153,
+    "prior_native_LF": [
+      236,
+      236
+    ],
+    "native_LF": [
+      238,
+      238
+    ],
+    "section": "Sources",
+    "wording": "| AO §§ 152, 238, 240 | https://www.gesetze-im-internet.de/ao_1977/__240.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| AO §§ 152, 238, 240 | https://www.gesetze-im-internet.de/ao_1977/__240.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "153"
+  },
+  {
+    "id": "154",
+    "prior_row_id": 154,
+    "prior_native_LF": [
+      237,
+      237
+    ],
+    "native_LF": [
+      239,
+      239
+    ],
+    "section": "Sources",
+    "wording": "| BZSt, refund procedure § 50c(3) and § 44a(9) (26.375%, deadline, over 20 months) | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Erstattungsverfahren_50c/erstattungsverfahren_50c_node.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| BZSt, refund procedure § 50c(3) and § 44a(9) (26.375%, deadline, over 20 months) | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Erstattungsverfahren_50c/erstattungsverfahren_50c_node.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "154"
+  },
+  {
+    "id": "155",
+    "prior_row_id": 155,
+    "prior_native_LF": [
+      238,
+      238
+    ],
+    "native_LF": [
+      240,
+      240
+    ],
+    "section": "Sources",
+    "wording": "| BZSt, exemption procedure § 50c(2) | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Freistellungsverfahren_50c/freistellungsverfahren_50c_node.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| BZSt, exemption procedure § 50c(2) | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Freistellungsverfahren_50c/freistellungsverfahren_50c_node.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "155"
+  },
+  {
+    "id": "156",
+    "prior_row_id": 156,
+    "prior_native_LF": [
+      239,
+      239
+    ],
+    "native_LF": [
+      241,
+      241
+    ],
+    "section": "Sources",
+    "wording": "| BZSt online portal, refund application form | https://online.portal.bzst.de/SharedDocs/Leistungsbeschreibung/DE/erstattung_abzugsteuer_kapitalertraege_50c_estg.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| BZSt online portal, refund application form | https://online.portal.bzst.de/SharedDocs/Leistungsbeschreibung/DE/erstattung_abzugsteuer_kapitalertraege_50c_estg.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "156"
+  },
+  {
+    "id": "157",
+    "prior_row_id": 157,
+    "prior_native_LF": [
+      240,
+      240
+    ],
+    "native_LF": [
+      242,
+      242
+    ],
+    "section": "Sources",
+    "wording": "| BZSt, Abzugsteuern nach § 50a (StAbwG, new form from 7 December 2026) | https://www.bzst.de/DE/Unternehmen/Abzugsteuern/abzugsteuern_node.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| BZSt, Abzugsteuern nach § 50a (StAbwG, new form from 7 December 2026) | https://www.bzst.de/DE/Unternehmen/Abzugsteuern/abzugsteuern_node.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "157"
+  },
+  {
+    "id": "158",
+    "prior_row_id": 158,
+    "prior_native_LF": [
+      241,
+      241
+    ],
+    "native_LF": [
+      243,
+      243
+    ],
+    "section": "Sources",
+    "wording": "| BMF treaty texts, one per country | See the table under \"Treaty limits\" | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| BMF treaty texts, one per country | See the table under \"Treaty limits\" | 2026-10-23 |",
+    "immediate_predecessor_row_id": "158"
+  },
+  {
+    "id": "159",
+    "prior_row_id": 159,
+    "prior_native_LF": [
+      242,
+      242
+    ],
+    "native_LF": [
+      244,
+      244
+    ],
+    "section": "Sources",
+    "wording": "| EStG § 50j (45-day holding for treaty rates below 15%) | https://www.gesetze-im-internet.de/estg/__50j.html | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| EStG § 50j (45-day holding for treaty rates below 15%) | https://www.gesetze-im-internet.de/estg/__50j.html | 2026-10-23 |",
+    "immediate_predecessor_row_id": "159"
+  },
+  {
+    "id": "160",
+    "prior_row_id": 160,
+    "prior_native_LF": [
+      243,
+      243
+    ],
+    "native_LF": [
+      245,
+      245
+    ],
+    "section": "Sources",
+    "wording": "| BMF letter of 7 January 2026, treaties in force on 1 January 2026 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2026-01-07-stand-DBA-1-januar-2026.pdf?__blob=publicationFile&v=2 | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| BMF letter of 7 January 2026, treaties in force on 1 January 2026 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2026-01-07-stand-DBA-1-januar-2026.pdf?__blob=publicationFile&v=2 | 2026-10-23 |",
+    "immediate_predecessor_row_id": "160"
+  },
+  {
+    "id": "161",
+    "prior_row_id": 161,
+    "prior_native_LF": [
+      244,
+      244
+    ],
+    "native_LF": [
+      246,
+      246
+    ],
+    "section": "Sources",
+    "wording": "| GOV.UK, 2010 UK-Germany convention as amended by the 2021 protocol (cross-check of the UK row) | https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| GOV.UK, 2010 UK-Germany convention as amended by the 2021 protocol (cross-check of the UK row) | https://www.gov.uk/government/publications/germany-tax-treaties/2010-uk-germany-double-taxation-convention-as-amended-by-the-2021-protocol-in-force | 2026-10-23 |",
+    "immediate_predecessor_row_id": "161"
+  },
+  {
+    "id": "162",
+    "prior_row_id": 162,
+    "prior_native_LF": [
+      245,
+      245
+    ],
+    "native_LF": [
+      247,
+      247
+    ],
+    "section": "Sources",
+    "wording": "| Fedlex, Germany-Switzerland treaty (cross-check of the Swiss row) | https://www.fedlex.admin.ch/eli/cc/1972/3075_3128_2910/de | 2026-10-23 |",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "| Fedlex, Germany-Switzerland treaty (cross-check of the Swiss row) | https://www.fedlex.admin.ch/eli/cc/1972/3075_3128_2910/de | 2026-10-23 |",
+    "immediate_predecessor_row_id": "162"
+  },
+  {
+    "id": "163",
+    "prior_row_id": 163,
+    "prior_native_LF": [
+      247,
+      247
+    ],
+    "native_LF": [
+      249,
+      249
+    ],
+    "section": "Sources",
+    "wording": "The Italian, Polish and Luxembourg (art. 12) rows are read from scanned treaty texts on the BMF site by text recognition; the BMF list of treaties in force on 1 January 2026 (letter of 7 January 2026) shows no later protocol for Italy or Poland and the 2023 Luxembourg protocol applying from 1 January 2024.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "The Italian, Polish and Luxembourg (art. 12) rows are read from scanned treaty texts on the BMF site by text recognition; the BMF list of treaties in force on 1 January 2026 (letter of 7 January 2026) shows no later protocol for Italy or Poland and the 2023 Luxembourg protocol applying from 1 January 2024.",
+    "immediate_predecessor_row_id": "163"
+  },
+  {
+    "id": "164",
+    "prior_row_id": 164,
+    "prior_native_LF": [
+      249,
+      249
+    ],
+    "native_LF": [
+      251,
+      251
+    ],
+    "section": "Sources",
+    "wording": "Not yet separately retained: a BZSt country-practice confirmation for the labelled Italian, US and Czech combined-tax interpretation supplied above; that administrative observation is distinct from the source-derived ordinary legal method and its explicit interpretation label. Other limits remain: the late-filing surcharge on withholding returns; the StAbwG rates; any BZSt country table of residual rates (the table found covers foreign tax credited to German residents, not German tax on payments abroad, so it was not used for the rates above).",
+    "source_quote_ids": [
+      "R57-60.WHTSOLI",
+      "R57-60.CZTAX",
+      "R57-60.CZLATER",
+      "R57-60.USTAX",
+      "R57-60.IT9"
+    ],
+    "disposition": "R57–60 bounded source-backed condition successor",
+    "immediate_predecessor_wording": "Not yet separately retained: a BZSt country-practice confirmation for the labelled Italian, US and Czech combined-tax interpretation supplied above; that administrative observation is distinct from the source-derived ordinary legal method and its explicit interpretation label. Other limits remain: the late-filing surcharge on withholding returns; the StAbwG rates; any BZSt country table of residual rates (the table found covers foreign tax credited to German residents, not German tax on payments abroad, so it was not used for the rates above).",
+    "immediate_predecessor_row_id": "164"
+  },
+  {
+    "id": "165",
+    "prior_row_id": 165,
+    "prior_native_LF": [
+      251,
+      251
+    ],
+    "native_LF": [
+      253,
+      253
+    ],
+    "section": "Sources",
+    "wording": "> Contributed by Ryan Duguid.",
+    "source_quote_ids": [],
+    "disposition": "Exact prior current unit with rebound native coordinates",
+    "immediate_predecessor_wording": "> Contributed by Ryan Duguid.",
+    "immediate_predecessor_row_id": "165"
+  },
+  {
+    "id": "166",
+    "prior_row_id": null,
+    "native_LF": [
+      222,
+      222
+    ],
+    "section": "R57–60 new bounded operative condition / labelled computed separator / actual read source",
+    "wording": "Selected operative clauses actually read on 29 October 2026: treaty covered/later-tax clauses for the labelled Italy/US/Czech interpretation; full § 43b/Anlage 2 and § 50g(3)/(6) population gates; § 50j; § 50c(3) and actual BZSt remittance condition. Italian art. 2(4) was also visually compared with physical page 3 of the retained official scan. Exact quotes/identities/native scopes remain in the accompanying writer source ledger; no portal execution is claimed.",
+    "source_quote_ids": [
+      "R57-60.WHTSOLI",
+      "R57-60.PARENT",
+      "R57-60.EUGATES",
+      "R57-60.SWISS",
+      "R57-60.PORTFOLIO",
+      "R57-60.PROCESS",
+      "R57-60.USTAX",
+      "R57-60.CZTAX",
+      "R57-60.CZLATER",
+      "R57-60.IT9",
+      "R58.company-forms",
+      "R58.residence-tax",
+      "R60.remitted-statute"
+    ],
+    "disposition": "New sourced correction; fixture amounts stipulated and computed",
+    "immediate_predecessor_wording": "Selected operative clauses actually read on 29 October 2026: treaty covered/later-tax clauses for the labelled Italy/US/Czech interpretation; full § 43b/Anlage 2 and § 50g(3)/(6) population gates; § 50j; § 50c(3) and actual BZSt remittance condition. Italian art. 2(4) was also visually compared with physical page 3 of the retained official scan. Exact quotes/identities/native scopes remain in the accompanying writer source ledger; no portal execution is claimed.",
+    "immediate_predecessor_row_id": "166"
+  }
+]

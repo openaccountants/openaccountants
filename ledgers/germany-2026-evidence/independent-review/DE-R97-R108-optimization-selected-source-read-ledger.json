@@ -1,0 +1,515 @@
+{
+  "read_date": "2026-10-29",
+  "scope": "All322frozen current units actually read in1\u201370/71\u2013140/141\u2013210/211\u2013275/276\u2013322. All117quotations:17direct in1\u20138/9\u201317,100whole selected-quote bridges to completed actual primary reads with raw/URL/word identities. Selected incorporated clauses directly reread where printed in this turn. All455actual Git oldorigins verified; all134pre-refresh units/destinations actually inspected in two65/69batches plus20mixed main/pre spots; first filter count455was a short/fullref mismatch, corrected to actual134before conclusions.",
+  "selected": [
+    {
+      "row": 5,
+      "id": "E6-2",
+      "source": {
+        "id": "E6-2",
+        "source": "Ud09e7e216c8b5621",
+        "article": "E6(2)",
+        "url": "https://www.gesetze-im-internet.de/estg/__6.html",
+        "LF_start": 84,
+        "LF_end": 84,
+        "exact_quote": "(2) 1Die Anschaffungs- oder Herstellungskosten oder der nach Absatz 1 Nummer 5 bis 6 an deren Stelle tretende Wert von abnutzbaren beweglichen Wirtschaftsg\u00fctern des Anlageverm\u00f6gens, die einer selbst\u00e4ndigen Nutzung f\u00e4hig sind, k\u00f6nnen im Wirtschaftsjahr der Anschaffung, Herstellung oder Einlage des Wirtschaftsguts oder der Er\u00f6ffnung des Betriebs in voller H\u00f6he als Betriebsausgaben abgezogen werden, wenn die Anschaffungs- oder Herstellungskosten, vermindert um einen darin enthaltenen Vorsteuerbetrag (\u00a7 9b Absatz 1), oder der nach Absatz 1 Nummer 5 bis 6 an deren Stelle tretende Wert f\u00fcr das einzelne Wirtschaftsgut 800 Euro nicht \u00fcbersteigen. 2Ein Wirtschaftsgut ist einer selbst\u00e4ndigen Nutzung nicht f\u00e4hig, wenn es nach seiner betrieblichen Zweckbestimmung nur zusammen mit anderen Wirtschaftsg\u00fctern des Anlageverm\u00f6gens genutzt werden kann und die in den Nutzungszusammenhang eingef\u00fcgten Wirtschaftsg\u00fcter technisch aufeinander abgestimmt sind. 3Das gilt auch, wenn das Wirtschaftsgut aus dem betrieblichen Nutzungszusammenhang gel\u00f6st und in einen anderen betrieblichen Nutzungszusammenhang eingef\u00fcgt werden kann. 4Wirtschaftsg\u00fcter im Sinne des Satzes 1, deren Wert 250 Euro \u00fcbersteigt, sind unter Angabe des Tages der Anschaffung, Herstellung oder Einlage des Wirtschaftsguts oder der Er\u00f6ffnung des Betriebs und der Anschaffungs- oder Herstellungskosten oder des nach Absatz 1 Nummer 5 bis 6 an deren Stelle tretenden Werts in ein besonderes, laufend zu f\u00fchrendes Verzeichnis aufzunehmen. 5Das Verzeichnis braucht nicht gef\u00fchrt zu werden, wenn diese Angaben aus der Buchf\u00fchrung ersichtlich sind.",
+        "raw_sha256": "7888cea55ee179f051c84a3dd9cee5d48871e33b3789d28e0fa18a509e40e40f",
+        "reader_sha256": "f4d5425829ef0a78a20634206218b78092ff602e0379ff9a56fa173685e8cf2b",
+        "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud09e7e216c8b5621.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-6-20261024.html",
+      "native_LF": [
+        84,
+        84
+      ],
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 9,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 12,
+      "id": "AO149-2",
+      "source": {
+        "id": "AO149-2",
+        "source": "U503bfe74d589da30",
+        "article": "AO149(2)",
+        "url": "https://www.gesetze-im-internet.de/ao_1977/__149.html",
+        "LF_start": 8,
+        "LF_end": 8,
+        "exact_quote": "(2) Soweit die Steuergesetze nichts anderes bestimmen, sind Steuererkl\u00e4rungen, die sich auf ein Kalenderjahr oder auf einen gesetzlich bestimmten Zeitpunkt beziehen, sp\u00e4testens sieben Monate nach Ablauf des Kalenderjahres oder sieben Monate nach dem gesetzlich bestimmten Zeitpunkt abzugeben. Bei Steuerpflichtigen, die den Gewinn aus Land- und Forstwirtschaft nach einem vom Kalenderjahr abweichenden Wirtschaftsjahr ermitteln, endet die Frist nicht vor Ablauf des siebten Monats, der auf den Schluss des in dem Kalenderjahr begonnenen Wirtschaftsjahres folgt.",
+        "raw_sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+        "reader_sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+        "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U503bfe74d589da30.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "native_LF": [
+        8,
+        8
+      ],
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 12,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 26,
+      "id": "AO108",
+      "source": {
+        "id": "AO108",
+        "source": "U3859bf32d53897c9",
+        "article": "AO \u00a7108(3)",
+        "url": "https://www.gesetze-im-internet.de/ao_1977/__108.html",
+        "LF_start": 9,
+        "LF_end": 9,
+        "exact_quote": "(3) F\u00e4llt das Ende einer Frist auf einen Sonntag, einen gesetzlichen Feiertag oder einen Sonnabend, so endet die Frist mit dem Ablauf des n\u00e4chstfolgenden Werktags.",
+        "raw_sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+        "reader_sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9",
+        "read_on": "2026-10-29 (selected operative scope; not whole-source read)",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U3859bf32d53897c9.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-108-20261024.html",
+      "native_LF": [
+        9,
+        9
+      ],
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 15,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 36,
+      "id": "TARIFF",
+      "source": {
+        "id": "TARIFF",
+        "source": "U2aee0a9326f9185f",
+        "article": "EStG \u00a732a(1)2026 whole formula/rounding",
+        "url": "https://www.gesetze-im-internet.de/estg/__32a.html",
+        "LF_start": 7,
+        "LF_end": 22,
+        "exact_quote": "(1) 1Die tarifliche Einkommensteuer bemisst sich nach dem auf volle Euro abgerundeten zu versteuernden Einkommen. 2Sie betr\u00e4gt ab dem Veranlagungszeitraum 2026 vorbehaltlich der \u00a7\u00a7 32b, 32d, 34, 34a, 34b und 34c jeweils in Euro f\u00fcr zu versteuernde Einkommen 1.\nbis 12 348 Euro (Grundfreibetrag):\n0;\n2.\nvon 12 349 Euro bis 17 799 Euro:\n(914,51 \u2022 y + 1 400) \u2022 y;\n3.\nvon 17 800 Euro bis 69 878 Euro:\n(173,10 \u2022 z + 2 397) \u2022 z + 1 034,87;\n4.\nvon 69 879 Euro bis 277 825 Euro:\n0,42 \u2022 x \u2013 11 135,63;\n5.\nvon 277 826 Euro an:\n0,45 \u2022 x \u2013 19 470,38.\n3Die Gr\u00f6\u00dfe \u201ey\u201c ist ein Zehntausendstel des den Grundfreibetrag \u00fcbersteigenden Teils des auf einen vollen Euro-Betrag abgerundeten zu versteuernden Einkommens. 4Die Gr\u00f6\u00dfe \u201ez\u201c ist ein Zehntausendstel des 17 799 Euro \u00fcbersteigenden Teils des auf einen vollen Euro-Betrag abgerundeten zu versteuernden Einkommens. 5Die Gr\u00f6\u00dfe \u201ex\u201c ist das auf einen vollen Euro-Betrag abgerundete zu versteuernde Einkommen. 6Der sich ergebende Steuerbetrag ist auf den n\u00e4chsten vollen Euro-Betrag abzurunden.",
+        "raw_sha256": "053bfcfc2ba961a3013eb631921957ce8a50ec3e4347bb6f0c2befaf765e0f50",
+        "reader_sha256": "b037ef07e71ac2eebadccb3250d16667924ca95b689c2db86eee60207585e2d7",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2aee0a9326f9185f.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-32a-20261024.html",
+      "native_LF": [
+        7,
+        22
+      ],
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 42,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 42,
+      "id": "GIFTS",
+      "source": {
+        "id": "GIFTS",
+        "source": "U7059a8b10a1f492b",
+        "article": "EStG \u00a74(5) no1",
+        "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+        "LF_start": 16,
+        "LF_end": 17,
+        "exact_quote": "(5) 1Die folgenden Betriebsausgaben d\u00fcrfen den Gewinn nicht mindern: 1.\nAufwendungen f\u00fcr Geschenke an Personen, die nicht Arbeitnehmer des Steuerpflichtigen sind. 2Satz 1 gilt nicht, wenn die Anschaffungs- oder Herstellungskosten der dem Empf\u00e4nger im Wirtschaftsjahr zugewendeten Gegenst\u00e4nde insgesamt 50 Euro nicht \u00fcbersteigen;",
+        "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+        "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+      "native_LF": [
+        16,
+        17
+      ],
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 50,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 44,
+      "id": "DAY",
+      "source": {
+        "id": "DAY",
+        "source": "U7059a8b10a1f492b",
+        "article": "EStG \u00a74(5) no6c",
+        "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+        "LF_start": 32,
+        "LF_end": 33,
+        "exact_quote": "6c.\nf\u00fcr jeden Kalendertag, an dem die betriebliche oder berufliche T\u00e4tigkeit \u00fcberwiegend in der h\u00e4uslichen Wohnung ausge\u00fcbt und keine au\u00dferhalb der h\u00e4uslichen Wohnung belegene erste T\u00e4tigkeitsst\u00e4tte aufgesucht wird, kann f\u00fcr die gesamte betriebliche und berufliche Bet\u00e4tigung ein Betrag von 6 Euro (Tagespauschale), h\u00f6chstens 1 260 Euro im Wirtschafts- oder Kalenderjahr, abgezogen werden. 2Steht f\u00fcr die betriebliche oder berufliche T\u00e4tigkeit dauerhaft kein anderer Arbeitsplatz zur Verf\u00fcgung, ist ein Abzug der Tagespauschale zul\u00e4ssig, auch wenn die T\u00e4tigkeit am selben Kalendertag ausw\u00e4rts oder an der ersten T\u00e4tigkeitsst\u00e4tte ausge\u00fcbt wird. 3Der Abzug der Tagespauschale ist nicht zul\u00e4ssig, soweit f\u00fcr die Wohnung Unterkunftskosten im Rahmen der Nummer 6a oder des \u00a7 9 Absatz 1 Satz 3 Nummer 5 abgezogen werden k\u00f6nnen oder soweit ein Abzug nach Nummer 6b vorgenommen wird;",
+        "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+        "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+      "native_LF": [
+        32,
+        33
+      ],
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 52,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 45,
+      "id": "ROOM",
+      "source": {
+        "id": "ROOM",
+        "source": "U7059a8b10a1f492b",
+        "article": "EStG \u00a74(5) no6b",
+        "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+        "LF_start": 30,
+        "LF_end": 31,
+        "exact_quote": "6b.\nAufwendungen f\u00fcr ein h\u00e4usliches Arbeitszimmer sowie die Kosten der Ausstattung. 2Dies gilt nicht, wenn das Arbeitszimmer den Mittelpunkt der gesamten betrieblichen und beruflichen Bet\u00e4tigung bildet. 3Anstelle der Aufwendungen kann pauschal ein Betrag von 1 260 Euro (Jahrespauschale) f\u00fcr das Wirtschafts- oder Kalenderjahr abgezogen werden. 4F\u00fcr jeden vollen Kalendermonat, in dem die Voraussetzungen nach Satz 2 nicht vorliegen, erm\u00e4\u00dfigt sich der Betrag von 1 260 Euro um ein Zw\u00f6lftel;",
+        "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+        "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+      "native_LF": [
+        30,
+        31
+      ],
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 53,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 46,
+      "id": "COMMUTEBRIDGE",
+      "source": {
+        "id": "COMMUTEBRIDGE",
+        "source": "U7059a8b10a1f492b",
+        "article": "EStG \u00a74(5) no6",
+        "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+        "LF_start": 26,
+        "LF_end": 27,
+        "exact_quote": "6.\nAufwendungen f\u00fcr die Wege des Steuerpflichtigen zwischen Wohnung und Betriebsst\u00e4tte und f\u00fcr Familienheimfahrten, soweit in den folgenden S\u00e4tzen nichts anderes bestimmt ist. 2Zur Abgeltung dieser Aufwendungen ist \u00a7 9 Absatz 1 Satz 3 Nummer 4 Satz 2 bis 6 und Nummer 5 Satz 5 bis 7 und Absatz 2 entsprechend anzuwenden. 3 Bei der Nutzung eines Kraftfahrzeugs d\u00fcrfen die Aufwendungen in H\u00f6he des positiven Unterschiedsbetrags zwischen 0,03 Prozent des inl\u00e4ndischen Listenpreises im Sinne des \u00a7 6 Absatz 1 Nummer 4 Satz 2 des Kraftfahrzeugs im Zeitpunkt der Erstzulassung je Kalendermonat f\u00fcr jeden Entfernungskilometer und dem sich nach \u00a7 9 Absatz 1 Satz 3 Nummer 4 Satz 2 bis 6 oder Absatz 2 ergebenden Betrag sowie Aufwendungen f\u00fcr Familienheimfahrten in H\u00f6he des positiven Unterschiedsbetrags zwischen 0,002 Prozent des inl\u00e4ndischen Listenpreises im Sinne des \u00a7 6 Absatz 1 Nummer 4 Satz 2 f\u00fcr jeden Entfernungskilometer und dem sich nach \u00a7 9 Absatz 1 Satz 3 Nummer 5 Satz 5 bis 7 oder Absatz 2 ergebenden Betrag den Gewinn nicht mindern; ermittelt der Steuerpflichtige die private Nutzung des Kraftfahrzeugs nach \u00a7 6 Absatz 1 Nummer 4 Satz 1 oder Satz 3, treten an die Stelle des mit 0,03 oder 0,002 Prozent des inl\u00e4ndischen Listenpreises ermittelten Betrags f\u00fcr Fahrten zwischen Wohnung und Betriebsst\u00e4tte und f\u00fcr Familienheimfahrten die auf diese Fahrten entfallenden tats\u00e4chlichen Aufwendungen; \u00a7 6 Absatz 1 Nummer 4 Satz 3 zweiter Halbsatz gilt sinngem\u00e4\u00df;",
+        "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+        "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+      "native_LF": [
+        26,
+        27
+      ],
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 54,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 47,
+      "id": "COMMUTE",
+      "source": {
+        "id": "COMMUTE",
+        "source": "U5d05d24ddb446c3d",
+        "article": "EStG \u00a79(1) no4",
+        "url": "https://www.gesetze-im-internet.de/estg/__9.html",
+        "LF_start": 13,
+        "LF_end": 14,
+        "exact_quote": "4.\nAufwendungen des Arbeitnehmers f\u00fcr die Wege zwischen Wohnung und erster T\u00e4tigkeitsst\u00e4tte im Sinne des Absatzes 4. 2Zur Abgeltung dieser Aufwendungen ist f\u00fcr jeden Arbeitstag, an dem der Arbeitnehmer die erste T\u00e4tigkeitsst\u00e4tte aufsucht eine Entfernungspauschale f\u00fcr jeden vollen Kilometer der Entfernung zwischen Wohnung und erster T\u00e4tigkeitsst\u00e4tte von 0,38 Euro anzusetzen, h\u00f6chstens jedoch 4 500 Euro im Kalenderjahr; ein h\u00f6herer Betrag als 4 500 Euro ist anzusetzen, soweit der Arbeitnehmer einen eigenen oder ihm zur Nutzung \u00fcberlassenen Kraftwagen benutzt. 3Die Entfernungspauschale gilt nicht f\u00fcr Flugstrecken und Strecken mit steuerfreier Sammelbef\u00f6rderung nach \u00a7 3 Nummer 32. 4F\u00fcr die Bestimmung der Entfernung ist die k\u00fcrzeste Stra\u00dfenverbindung zwischen Wohnung und erster T\u00e4tigkeitsst\u00e4tte ma\u00dfgebend; eine andere als die k\u00fcrzeste Stra\u00dfenverbindung kann zugrunde gelegt werden, wenn diese offensichtlich verkehrsg\u00fcnstiger ist und vom Arbeitnehmer regelm\u00e4\u00dfig f\u00fcr die Wege zwischen Wohnung und erster T\u00e4tigkeitsst\u00e4tte benutzt wird. 5Nach \u00a7 8 Absatz 2 Satz 11 oder Absatz 3 steuerfreie Sachbez\u00fcge f\u00fcr Fahrten zwischen Wohnung und erster T\u00e4tigkeitsst\u00e4tte mindern den nach Satz 2 abziehbaren Betrag; ist der Arbeitgeber selbst der Verkehrstr\u00e4ger, ist der Preis anzusetzen, den ein dritter Arbeitgeber an den Verkehrstr\u00e4ger zu entrichten h\u00e4tte. 6Hat ein Arbeitnehmer mehrere Wohnungen, so sind die Wege von einer Wohnung, die nicht der ersten T\u00e4tigkeitsst\u00e4tte am n\u00e4chsten liegt, nur zu ber\u00fccksichtigen, wenn sie den Mittelpunkt der Lebensinteressen des Arbeitnehmers bildet und nicht nur gelegentlich aufgesucht wird. 7Nach \u00a7 3 Nummer 37 steuerfreie Sachbez\u00fcge mindern den nach Satz 2 abziehbaren Betrag nicht; \u00a7 3c Absatz 1 ist nicht anzuwenden.",
+        "raw_sha256": "82ce506e5bebc2a7b9964e715fa898bc06d4eba0602e62d24606b2e6b49e23bb",
+        "reader_sha256": "c5ad161d9234d437d840469dd3defee8b76019704a0b7de9562fb13d88b6b971",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5d05d24ddb446c3d.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-9-20261024.html",
+      "native_LF": [
+        13,
+        14
+      ],
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 55,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 49,
+      "id": "MEALS",
+      "source": {
+        "id": "MEALS",
+        "source": "U5d05d24ddb446c3d",
+        "article": "EStG \u00a79(4a), complete ordinary amount/conditions",
+        "url": "https://www.gesetze-im-internet.de/estg/__9.html",
+        "LF_start": 38,
+        "LF_end": 48,
+        "exact_quote": "(4a) 1Mehraufwendungen des Arbeitnehmers f\u00fcr die Verpflegung sind nur nach Ma\u00dfgabe der folgenden S\u00e4tze als Werbungskosten abziehbar. 2Wird der Arbeitnehmer au\u00dferhalb seiner Wohnung und ersten T\u00e4tigkeitsst\u00e4tte beruflich t\u00e4tig (ausw\u00e4rtige berufliche T\u00e4tigkeit), ist zur Abgeltung der ihm tats\u00e4chlich entstandenen, beruflich veranlassten Mehraufwendungen eine Verpflegungspauschale anzusetzen. 3Diese betr\u00e4gt 1.\n28 Euro f\u00fcr jeden Kalendertag, an dem der Arbeitnehmer 24 Stunden von seiner Wohnung und ersten T\u00e4tigkeitsst\u00e4tte abwesend ist,\n2.\njeweils 14 Euro f\u00fcr den An- und Abreisetag, wenn der Arbeitnehmer an diesem, einem anschlie\u00dfenden oder vorhergehenden Tag au\u00dferhalb seiner Wohnung \u00fcbernachtet,\n3.\n14 Euro f\u00fcr den Kalendertag, an dem der Arbeitnehmer ohne \u00dcbernachtung au\u00dferhalb seiner Wohnung mehr als 8 Stunden von seiner Wohnung und der ersten T\u00e4tigkeitsst\u00e4tte abwesend ist; beginnt die ausw\u00e4rtige berufliche T\u00e4tigkeit an einem Kalendertag und endet am nachfolgenden Kalendertag ohne \u00dcbernachtung, werden 14 Euro f\u00fcr den Kalendertag gew\u00e4hrt, an dem der Arbeitnehmer den \u00fcberwiegenden Teil der insgesamt mehr als 8 Stunden von seiner Wohnung und der ersten T\u00e4tigkeitsst\u00e4tte abwesend ist.\n4Hat der Arbeitnehmer keine erste T\u00e4tigkeitsst\u00e4tte, gelten die S\u00e4tze 2 und 3 entsprechend; Wohnung im Sinne der S\u00e4tze 2 und 3 ist der Hausstand, der den Mittelpunkt der Lebensinteressen des Arbeitnehmers bildet sowie eine Unterkunft am Ort der ersten T\u00e4tigkeitsst\u00e4tte im Rahmen der doppelten Haushaltsf\u00fchrung. 5Bei einer T\u00e4tigkeit im Ausland treten an die Stelle der Pauschbetr\u00e4ge nach Satz 3 l\u00e4nderweise unterschiedliche Pauschbetr\u00e4ge, die f\u00fcr die F\u00e4lle der Nummer 1 mit 120 sowie der Nummern 2 und 3 mit 80 Prozent der Auslandstagegelder nach dem Bundesreisekostengesetz vom Bundesministerium der Finanzen im Einvernehmen mit den obersten Finanzbeh\u00f6rden der L\u00e4nder aufgerundet auf volle Euro festgesetzt werden; dabei bestimmt sich der Pauschbetrag nach dem Ort, den der Arbeitnehmer vor 24 Uhr Ortszeit zuletzt erreicht, oder, wenn dieser Ort im Inland liegt, nach dem letzten T\u00e4tigkeitsort im Ausland. 6Der Abzug der Verpflegungspauschalen ist auf die ersten drei Monate einer l\u00e4ngerfristigen beruflichen T\u00e4tigkeit an derselben T\u00e4tigkeitsst\u00e4tte beschr\u00e4nkt. 7Eine Unterbrechung der beruflichen T\u00e4tigkeit an derselben T\u00e4tigkeitsst\u00e4tte f\u00fchrt zu einem Neubeginn, wenn sie mindestens vier Wochen dauert. 8Wird dem Arbeitnehmer anl\u00e4sslich oder w\u00e4hrend einer T\u00e4tigkeit au\u00dferhalb seiner ersten T\u00e4tigkeitsst\u00e4tte vom Arbeitgeber oder auf dessen Veranlassung von einem Dritten eine Mahlzeit zur Verf\u00fcgung gestellt, sind die nach den S\u00e4tzen 3 und 5 ermittelten Verpflegungspauschalen zu k\u00fcrzen: 1.\nf\u00fcr Fr\u00fchst\u00fcck um 20 Prozent,\n2.\nf\u00fcr Mittag- und Abendessen um jeweils 40 Prozent,\nder nach Satz 3 Nummer 1 gegebenenfalls in Verbindung mit Satz 5 ma\u00dfgebenden Verpflegungspauschale f\u00fcr einen vollen Kalendertag; die K\u00fcrzung darf die ermittelte Verpflegungspauschale nicht \u00fcbersteigen. 9Satz 8 gilt auch, wenn Reisekostenverg\u00fctungen wegen der zur Verf\u00fcgung gestellten Mahlzeiten einbehalten oder gek\u00fcrzt werden oder die Mahlzeiten nach \u00a7 40 Absatz 2 Satz 1 Nummer 1a pauschal besteuert werden. 10Hat der Arbeitnehmer f\u00fcr die Mahlzeit ein Entgelt gezahlt, mindert dieser Betrag den K\u00fcrzungsbetrag nach Satz 8. 11Erh\u00e4lt der Arbeitnehmer steuerfreie Erstattungen f\u00fcr Verpflegung, ist ein Werbungskostenabzug insoweit ausgeschlossen. 12Die Verpflegungspauschalen nach den S\u00e4tzen 3 und 5, die Dreimonatsfrist nach den S\u00e4tzen 6 und 7 sowie die K\u00fcrzungsregelungen nach den S\u00e4tzen 8 bis 10 gelten entsprechend auch f\u00fcr den Abzug von Mehraufwendungen f\u00fcr Verpflegung, die bei einer beruflich veranlassten doppelten Haushaltsf\u00fchrung entstehen, soweit der Arbeitnehmer vom eigenen Hausstand im Sinne des \u00a7 9 Absatz 1 Satz 3 Nummer 5 abwesend ist; dabei ist f\u00fcr jeden Kalendertag innerhalb der Dreimonatsfrist, an dem gleichzeitig eine T\u00e4tigkeit im Sinne des Satzes 2 oder des Satzes 4 ausge\u00fcbt wird, nur der jeweils h\u00f6chste in Betracht kommende Pauschbetrag abziehbar. 13Die Dauer einer T\u00e4tigkeit im Sinne des Satzes 2 an dem T\u00e4tigkeitsort, an dem die doppelte Haushaltsf\u00fchrung begr\u00fcndet wurde, ist auf die Dreimonatsfrist anzurechnen, wenn sie ihr unmittelbar vorausgegangen ist.",
+        "raw_sha256": "82ce506e5bebc2a7b9964e715fa898bc06d4eba0602e62d24606b2e6b49e23bb",
+        "reader_sha256": "c5ad161d9234d437d840469dd3defee8b76019704a0b7de9562fb13d88b6b971",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5d05d24ddb446c3d.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-9-20261024.html",
+      "native_LF": [
+        38,
+        48
+      ],
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 57,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 53,
+      "id": "POOL",
+      "source": {
+        "id": "POOL",
+        "source": "Ud09e7e216c8b5621",
+        "article": "EStG \u00a76(2a)",
+        "url": "https://www.gesetze-im-internet.de/estg/__6.html",
+        "LF_start": 85,
+        "LF_end": 85,
+        "exact_quote": "(2a) 1Abweichend von Absatz 2 Satz 1 kann f\u00fcr die abnutzbaren beweglichen Wirtschaftsg\u00fcter des Anlageverm\u00f6gens, die einer selbst\u00e4ndigen Nutzung f\u00e4hig sind, im Wirtschaftsjahr der Anschaffung, Herstellung oder Einlage des Wirtschaftsguts oder der Er\u00f6ffnung des Betriebs ein Sammelposten gebildet werden, wenn die Anschaffungs- oder Herstellungskosten, vermindert um einen darin enthaltenen Vorsteuerbetrag (\u00a7 9b Absatz 1), oder der nach Absatz 1 Nummer 5 bis 6 an deren Stelle tretende Wert f\u00fcr das einzelne Wirtschaftsgut 250 Euro, aber nicht 1 000 Euro \u00fcbersteigen. 2Der Sammelposten ist im Wirtschaftsjahr der Bildung und den folgenden vier Wirtschaftsjahren mit jeweils einem F\u00fcnftel gewinnmindernd aufzul\u00f6sen. 3Scheidet ein Wirtschaftsgut im Sinne des Satzes 1 aus dem Betriebsverm\u00f6gen aus, wird der Sammelposten nicht vermindert. 4Die Anschaffungs- oder Herstellungskosten oder der nach Absatz 1 Nummer 5 bis 6 an deren Stelle tretende Wert von abnutzbaren beweglichen Wirtschaftsg\u00fctern des Anlageverm\u00f6gens, die einer selbst\u00e4ndigen Nutzung f\u00e4hig sind, k\u00f6nnen im Wirtschaftsjahr der Anschaffung, Herstellung oder Einlage des Wirtschaftsguts oder der Er\u00f6ffnung des Betriebs in voller H\u00f6he als Betriebsausgaben abgezogen werden, wenn die Anschaffungs- oder Herstellungskosten, vermindert um einen darin enthaltenen Vorsteuerbetrag (\u00a7 9b Absatz 1), oder der nach Absatz 1 Nummer 5 bis 6 an deren Stelle tretende Wert f\u00fcr das einzelne Wirtschaftsgut 250 Euro nicht \u00fcbersteigen. 5Die S\u00e4tze 1 bis 3 sind f\u00fcr alle in einem Wirtschaftsjahr angeschafften, hergestellten oder eingelegten Wirtschaftsg\u00fcter einheitlich anzuwenden.",
+        "raw_sha256": "7888cea55ee179f051c84a3dd9cee5d48871e33b3789d28e0fa18a509e40e40f",
+        "reader_sha256": "f4d5425829ef0a78a20634206218b78092ff602e0379ff9a56fa173685e8cf2b",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ud09e7e216c8b5621.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-6-20261024.html",
+      "native_LF": [
+        85,
+        85
+      ],
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 62,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 57,
+      "id": "PENSIONELIG",
+      "source": {
+        "id": "PENSIONELIG",
+        "source": "U9f1b9a0058651caf",
+        "article": "EStG \u00a710(1) no2",
+        "url": "https://www.gesetze-im-internet.de/estg/__10.html",
+        "LF_start": 13,
+        "LF_end": 21,
+        "exact_quote": "2.\na)\nBeitr\u00e4ge zu den gesetzlichen Rentenversicherungen oder zur landwirtschaftlichen Alterskasse sowie zu berufsst\u00e4ndischen Versorgungseinrichtungen, die den gesetzlichen Rentenversicherungen vergleichbare Leistungen erbringen;\nb)\nBeitr\u00e4ge des Steuerpflichtigen aa)\nzum Aufbau einer eigenen kapitalgedeckten Altersversorgung, wenn der Vertrag nur die Zahlung einer monatlichen, auf das Leben des Steuerpflichtigen bezogenen lebenslangen Leibrente nicht vor Vollendung des 62. Lebensjahres oder zus\u00e4tzlich die erg\u00e4nzende Absicherung des Eintritts der Berufsunf\u00e4higkeit (Berufsunf\u00e4higkeitsrente), der verminderten Erwerbsf\u00e4higkeit (Erwerbsminderungsrente) oder von Hinterbliebenen (Hinterbliebenenrente) vorsieht. 2Hinterbliebene in diesem Sinne sind der Ehegatte des Steuerpflichtigen und die Kinder, f\u00fcr die er Anspruch auf Kindergeld oder auf einen Freibetrag nach \u00a7 32 Absatz 6 hat. 3Der Anspruch auf Waisenrente darf l\u00e4ngstens f\u00fcr den Zeitraum bestehen, in dem der Rentenberechtigte die Voraussetzungen f\u00fcr die Ber\u00fccksichtigung als Kind im Sinne des \u00a7 32 erf\u00fcllt;\nbb)\nf\u00fcr seine Absicherung gegen den Eintritt der Berufsunf\u00e4higkeit oder der verminderten Erwerbsf\u00e4higkeit (Versicherungsfall), wenn der Vertrag nur die Zahlung einer monatlichen, auf das Leben des Steuerpflichtigen bezogenen lebenslangen Leibrente f\u00fcr einen Versicherungsfall vorsieht, der bis zur Vollendung des 67. Lebensjahres eingetreten ist. 2Der Vertrag kann die Beendigung der Rentenzahlung wegen eines medizinisch begr\u00fcndeten Wegfalls der Berufsunf\u00e4higkeit oder der verminderten Erwerbsf\u00e4higkeit vorsehen. 3Die H\u00f6he der zugesagten Rente kann vom Alter des Steuerpflichtigen bei Eintritt des Versicherungsfalls abh\u00e4ngig gemacht werden, wenn der Steuerpflichtige das 55. Lebensjahr vollendet hat.\n2Die Anspr\u00fcche nach Buchstabe b d\u00fcrfen nicht vererblich, nicht \u00fcbertragbar, nicht beleihbar, nicht ver\u00e4u\u00dferbar und nicht kapitalisierbar sein. 3Anbieter und Steuerpflichtiger k\u00f6nnen vereinbaren, dass bis zu zw\u00f6lf Monatsleistungen in einer Auszahlung zusammengefasst werden oder eine Kleinbetragsrente im Sinne von \u00a7 93 Absatz 3 Satz 2 oder 4 abgefunden wird. 4Bei der Berechnung der Kleinbetragsrente sind alle bei einem Anbieter bestehenden Vertr\u00e4ge des Steuerpflichtigen jeweils nach Buchstabe b Doppelbuchstabe aa oder Doppelbuchstabe bb zusammenzurechnen. 5Neben den genannten Auszahlungsformen darf kein weiterer Anspruch auf Auszahlungen bestehen. 6Zu den Beitr\u00e4gen nach den Buchstaben a und b ist der nach \u00a7 3 Nummer 62 steuerfreie Arbeitgeberanteil zur gesetzlichen Rentenversicherung und ein diesem gleichgestellter steuerfreier Zuschuss des Arbeitgebers hinzuzurechnen. 7Beitr\u00e4ge nach \u00a7 168 Absatz 1 Nummer 1b oder 1c oder nach \u00a7 172 Absatz 3 oder 3a des Sechsten Buches Sozialgesetzbuch werden abweichend von Satz 6 nur auf Antrag des Steuerpflichtigen hinzugerechnet;",
+        "raw_sha256": "f970952c77597337017ee213013219bd490a91f1f0b7048bbd8cb697d1d9befd",
+        "reader_sha256": "77f1ca70d5a033d9ba5ce1e113f80de73523cc992760cda326d209379357818e",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f1b9a0058651caf.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-10-20261026.html",
+      "native_LF": [
+        13,
+        21
+      ],
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 66,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 58,
+      "id": "PENSIONCAP",
+      "source": {
+        "id": "PENSIONCAP",
+        "source": "U9f1b9a0058651caf",
+        "article": "EStG \u00a710(3)",
+        "url": "https://www.gesetze-im-internet.de/estg/__10.html",
+        "LF_start": 81,
+        "LF_end": 88,
+        "exact_quote": "(3) 1Vorsorgeaufwendungen nach Absatz 1 Nummer 2 sind bis zu dem H\u00f6chstbeitrag zur knappschaftlichen Rentenversicherung, aufgerundet auf einen vollen Betrag in Euro, zu ber\u00fccksichtigen. 2Bei zusammenveranlagten Ehegatten verdoppelt sich der H\u00f6chstbetrag. 3Der H\u00f6chstbetrag nach Satz 1 oder 2 ist bei Steuerpflichtigen, die 1.\nArbeitnehmer sind und die w\u00e4hrend des ganzen oder eines Teils des Kalenderjahres a)\nin der gesetzlichen Rentenversicherung versicherungsfrei oder auf Antrag des Arbeitgebers von der Versicherungspflicht befreit waren und denen f\u00fcr den Fall ihres Ausscheidens aus der Besch\u00e4ftigung auf Grund des Besch\u00e4ftigungsverh\u00e4ltnisses eine lebensl\u00e4ngliche Versorgung oder an deren Stelle eine Abfindung zusteht oder die in der gesetzlichen Rentenversicherung nachzuversichern sind oder\nb)\nnicht der gesetzlichen Rentenversicherungspflicht unterliegen, eine Berufst\u00e4tigkeit ausge\u00fcbt und im Zusammenhang damit auf Grund vertraglicher Vereinbarungen Anwartschaftsrechte auf eine Altersversorgung erworben haben, oder\n2.\nEink\u00fcnfte im Sinne des \u00a7 22 Nummer 4 erzielen und die ganz oder teilweise ohne eigene Beitragsleistung einen Anspruch auf Altersversorgung erwerben,\num den Betrag zu k\u00fcrzen, der, bezogen auf die Einnahmen aus der T\u00e4tigkeit, die die Zugeh\u00f6rigkeit zum genannten Personenkreis begr\u00fcnden, dem Gesamtbeitrag (Arbeitgeber- und Arbeitnehmeranteil) zur allgemeinen Rentenversicherung entspricht. 4Im Kalenderjahr 2013 sind 76 Prozent der nach den S\u00e4tzen 1 bis 3 ermittelten Vorsorgeaufwendungen anzusetzen. 5Der sich danach ergebende Betrag, vermindert um den nach \u00a7 3 Nummer 62 steuerfreien Arbeitgeberanteil zur gesetzlichen Rentenversicherung und einen diesem gleichgestellten steuerfreien Zuschuss des Arbeitgebers, ist als Sonderausgabe abziehbar. 6Der Prozentsatz in Satz 4 erh\u00f6ht sich in den folgenden Kalenderjahren bis zum Kalenderjahr 2022 um je 2 Prozentpunkte je Kalenderjahr; ab dem Kalenderjahr 2023 betr\u00e4gt er 100 Prozent. 7Beitr\u00e4ge nach \u00a7 168 Absatz 1 Nummer 1b oder 1c oder nach \u00a7 172 Absatz 3 oder 3a des Sechsten Buches Sozialgesetzbuch vermindern den abziehbaren Betrag nach Satz 5 nur, wenn der Steuerpflichtige die Hinzurechnung dieser Beitr\u00e4ge zu den Vorsorgeaufwendungen nach Absatz 1 Nummer 2 Satz 7 beantragt hat.",
+        "raw_sha256": "f970952c77597337017ee213013219bd490a91f1f0b7048bbd8cb697d1d9befd",
+        "reader_sha256": "77f1ca70d5a033d9ba5ce1e113f80de73523cc992760cda326d209379357818e",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f1b9a0058651caf.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-10-20261026.html",
+      "native_LF": [
+        81,
+        88
+      ],
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 67,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 65,
+      "id": "INPUTVAT",
+      "source": {
+        "id": "INPUTVAT",
+        "source": "U9587b12f47ebdc37",
+        "article": "UStG \u00a715(1a), entertainment exception",
+        "url": "https://www.gesetze-im-internet.de/ustg_1980/__15.html",
+        "LF_start": 16,
+        "LF_end": 16,
+        "exact_quote": "(1a) Nicht abziehbar sind Vorsteuerbetr\u00e4ge, die auf Aufwendungen, f\u00fcr die das Abzugsverbot des \u00a7 4 Abs. 5 Satz 1 Nr. 1 bis 4, 7 oder des \u00a7 12 Nr. 1 des Einkommensteuergesetzes gilt, entfallen. Dies gilt nicht f\u00fcr Bewirtungsaufwendungen, soweit \u00a7 4 Abs. 5 Satz 1 Nr. 2 des Einkommensteuergesetzes einen Abzug angemessener und nachgewiesener Aufwendungen ausschlie\u00dft.",
+        "raw_sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+        "reader_sha256": "e819ae2c4a6a65834fee9861adf1ec100b520126163e240fe08fe6a6d1e80d74",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9587b12f47ebdc37.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-15-20261027.html",
+      "native_LF": [
+        16,
+        16
+      ],
+      "actual_read_bridge": {
+        "guide": "de-income-tax",
+        "quote_row": 87,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 81,
+      "id": "INPUTRULE",
+      "source": {
+        "id": "INPUTRULE",
+        "source": "U9587b12f47ebdc37",
+        "article": "UStG15(1)no1 supply/invoice",
+        "url": "https://www.gesetze-im-internet.de/ustg_1980/__15.html",
+        "LF_start": 7,
+        "LF_end": 8,
+        "exact_quote": "(1) Der Unternehmer kann die folgenden Vorsteuerbetr\u00e4ge abziehen: 1.\ndie gesetzlich geschuldete Steuer f\u00fcr Lieferungen und sonstige Leistungen, die von einem anderen Unternehmer f\u00fcr sein Unternehmen ausgef\u00fchrt worden sind. Die Aus\u00fcbung des Vorsteuerabzugs setzt voraus, dass der Unternehmer eine nach den \u00a7\u00a7 14, 14a ausgestellte Rechnung besitzt. Soweit der gesondert ausgewiesene Steuerbetrag auf eine Zahlung vor Ausf\u00fchrung dieser Ums\u00e4tze entf\u00e4llt, ist er bereits abziehbar, wenn die Rechnung vorliegt und die Zahlung geleistet worden ist;",
+        "raw_sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+        "reader_sha256": "e819ae2c4a6a65834fee9861adf1ec100b520126163e240fe08fe6a6d1e80d74",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9587b12f47ebdc37.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-15-20261027.html",
+      "native_LF": [
+        7,
+        8
+      ],
+      "actual_read_bridge": {
+        "guide": "de-vat-annual-and-special-schemes",
+        "quote_row": 28,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 105,
+      "id": "MODELLOSS",
+      "source": {
+        "id": "MODELLOSS",
+        "source": "Uc0941f6152850d36",
+        "article": "EStG15b(1)\u2013(3)models/10percentgate",
+        "url": "https://www.gesetze-im-internet.de/estg/__15b.html",
+        "LF_start": 7,
+        "LF_end": 9,
+        "exact_quote": "(1) 1Verluste im Zusammenhang mit einem Steuerstundungsmodell d\u00fcrfen weder mit Eink\u00fcnften aus Gewerbebetrieb noch mit Eink\u00fcnften aus anderen Einkunftsarten ausgeglichen werden; sie d\u00fcrfen auch nicht nach \u00a7 10d abgezogen werden. 2Die Verluste mindern jedoch die Eink\u00fcnfte, die der Steuerpflichtige in den folgenden Wirtschaftsjahren aus derselben Einkunftsquelle erzielt. 3\u00a7 15a ist insoweit nicht anzuwenden.\n(2) 1Ein Steuerstundungsmodell im Sinne des Absatzes 1 liegt vor, wenn auf Grund einer modellhaften Gestaltung steuerliche Vorteile in Form negativer Eink\u00fcnfte erzielt werden sollen. 2Dies ist der Fall, wenn dem Steuerpflichtigen auf Grund eines vorgefertigten Konzepts die M\u00f6glichkeit geboten werden soll, zumindest in der Anfangsphase der Investition Verluste mit \u00fcbrigen Eink\u00fcnften zu verrechnen. 3Dabei ist es ohne Belang, auf welchen Vorschriften die negativen Eink\u00fcnfte beruhen.\n(3) Absatz 1 ist nur anzuwenden, wenn innerhalb der Anfangsphase das Verh\u00e4ltnis der Summe der prognostizierten Verluste zur H\u00f6he des gezeichneten und nach dem Konzept auch aufzubringenden Kapitals oder bei Einzelinvestoren des eingesetzten Eigenkapitals 10 Prozent \u00fcbersteigt.",
+        "raw_sha256": "e96b5fd42e3c47c38cf75ae34f34bbfffaf7ad0d237993079f2db9e131db3011",
+        "reader_sha256": "86e0c764ba6420834b543d6492f2f22c91520c90e4620609d399ab7d394a03da",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc0941f6152850d36.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc0941f6152850d36.body",
+      "native_LF": [
+        7,
+        9
+      ],
+      "pending_direct_read": true
+    },
+    {
+      "row": 108,
+      "id": "VATCASH",
+      "source": {
+        "id": "VATCASH",
+        "source": "Uaaaefc3c6d8e6109",
+        "article": "UStG20cashpermissionandthreealternatives",
+        "url": "https://www.gesetze-im-internet.de/ustg_1980/__20.html",
+        "LF_start": 7,
+        "LF_end": 15,
+        "exact_quote": "Das Finanzamt kann auf Antrag gestatten, dass ein Unternehmer, 1.\ndessen Gesamtumsatz (\u00a7 19 Absatz 2) im vorangegangenen Kalenderjahr nicht mehr als 800 000 Euro betragen hat, oder\n2.\nder von der Verpflichtung, B\u00fccher zu f\u00fchren und auf Grund j\u00e4hrlicher Bestandsaufnahmen regelm\u00e4\u00dfig Abschl\u00fcsse zu machen, nach \u00a7 148 der Abgabenordnung befreit ist, oder\n3.\nsoweit er Ums\u00e4tze aus einer T\u00e4tigkeit als Angeh\u00f6riger eines freien Berufs im Sinne des \u00a7 18 Abs. 1 Nr. 1 des Einkommensteuergesetzes ausf\u00fchrt, oder\n4.\nder eine juristische Person des \u00f6ffentlichen Rechts ist, soweit er nicht freiwillig B\u00fccher f\u00fchrt und auf Grund j\u00e4hrlicher Bestandsaufnahmen regelm\u00e4\u00dfig Abschl\u00fcsse macht oder hierzu gesetzlich verpflichtet ist,\ndie Steuer nicht nach den vereinbarten Entgelten (\u00a7 16 Abs. 1 Satz 1), sondern nach den vereinnahmten Entgelten berechnet. Erstreckt sich die Befreiung nach Satz 1 Nr. 2 nur auf einzelne Betriebe des Unternehmers und liegt die Voraussetzung nach Satz 1 Nr. 1 nicht vor, so ist die Erlaubnis zur Berechnung der Steuer nach den vereinnahmten Entgelten auf diese Betriebe zu beschr\u00e4nken. Wechselt der Unternehmer die Art der Steuerberechnung, so d\u00fcrfen Ums\u00e4tze nicht doppelt erfasst werden oder unversteuert bleiben.",
+        "raw_sha256": "b9bde56785a4fbd9d730441b9f0d155b0715a29e2e3191916db5b14cb58d7f2f",
+        "reader_sha256": "5fe7450c4aa74b69b8c61fbb322e9c03e367160b145e9edcf6c4e5df19e5d583",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaaaefc3c6d8e6109.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-20-20261024.html",
+      "native_LF": [
+        7,
+        15
+      ],
+      "actual_read_bridge": {
+        "guide": "de-vat-annual-and-special-schemes",
+        "quote_row": 27,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    },
+    {
+      "row": 110,
+      "id": "VATSUPPLY",
+      "source": {
+        "id": "VATSUPPLY",
+        "source": "U5410aa1779126db8",
+        "article": "UStG13(1)no1(a)normaltaxpointandadvances",
+        "url": "https://www.gesetze-im-internet.de/ustg_1980/__13.html",
+        "LF_start": 7,
+        "LF_end": 9,
+        "exact_quote": "(1) Die Steuer entsteht 1.\nf\u00fcr Lieferungen und sonstige Leistungena)\nbei der Berechnung der Steuer nach vereinbarten Entgelten (\u00a7 16 Abs. 1 Satz 1) mit Ablauf des Voranmeldungszeitraums, in dem die Leistungen ausgef\u00fchrt worden sind. Das gilt auch f\u00fcr Teilleistungen. Sie liegen vor, wenn f\u00fcr bestimmte Teile einer wirtschaftlich teilbaren Leistung das Entgelt gesondert vereinbart wird. Wird das Entgelt oder ein Teil des Entgelts vereinnahmt, bevor die Leistung oder die Teilleistung ausgef\u00fchrt worden ist, so entsteht insoweit die Steuer mit Ablauf des Voranmeldungszeitraums, in dem das Entgelt oder das Teilentgelt vereinnahmt worden ist,",
+        "raw_sha256": "651a989b51b160c85addf12be5cceabf2e668b8f945fcdd6aca64e5baa867967",
+        "reader_sha256": "f6e9f249c3c65e9b7ff053a32dde082358a2c8b87c92d51c85b082948746e6aa",
+        "read_on": "2026-10-29",
+        "line_convention": "literal LF split('\\n')"
+      },
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5410aa1779126db8.reader.txt",
+      "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-13-20261024.html",
+      "native_LF": [
+        7,
+        9
+      ],
+      "actual_read_bridge": {
+        "guide": "de-vat-annual-and-special-schemes",
+        "quote_row": 52,
+        "conditions": "Same original raw+official URL; entire selected quote is exact prior quotation words with whitespace/formfeed joining only. Current reader/native membership separately verified; not a full rawbody reading claim."
+      }
+    }
+  ],
+  "TRAININGsourceprecision": {
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+    "actual_native_LF_read": [
+      54,
+      58
+    ],
+    "operative_correct_business_rule_native_LF": 56,
+    "note": "Actual4(9) requires completedpriorfirsttraining forbusiness expenses, unlike9(6)separateemployment exception. No invented business-employment exception."
+  }
+}

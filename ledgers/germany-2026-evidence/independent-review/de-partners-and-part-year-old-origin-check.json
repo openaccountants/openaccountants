@@ -1,0 +1,20 @@
+{
+  "origins": 353,
+  "mismatch": 0,
+  "semantic_samples_1based": [
+    9,
+    11,
+    27,
+    40,
+    41,
+    48,
+    50,
+    70,
+    72,
+    77,
+    113,
+    117,
+    176
+  ],
+  "scope": "All actual old wording origins checked against Git; only named semantic destinations sampled, not all oldmap fresh semantic reading"
+}

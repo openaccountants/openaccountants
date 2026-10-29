@@ -1,0 +1,10 @@
+{
+  "url": "https://www.bundesgesundheitsministerium.de/themen/pflege/online-ratgeber-pflege/die-pflegeversicherung/finanzierung",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BMG-care-2026.html",
+  "raw_sha256": "a77a234a354599240cef1e04d676f1f40bb2337a0b078113a98e84771286e26a",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BMG-care-2026.reader.txt",
+  "reader_sha256": "9e555bf46242681b414297d5273fe42868f7ca54d56f6ebebea40073b59e2b35",
+  "read_date": "2026-10-29",
+  "kind": "official ministry administrative guidance; not legislative text",
+  "extraction": "HTMLParser, script/style omitted, whitespace joined within block; native LF"
+}

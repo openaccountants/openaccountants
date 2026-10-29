@@ -1,0 +1,29 @@
+--- before
++++ after
+@@ -1,7 +1,7 @@
+ ---
+ name: de-einkommensteuer-freelancer
+ description: "German income tax (Einkommensteuer) on the profit of one self-employed person resident in Germany, tax year 2026. Covers Freiberufler (§ 18 EStG) versus trade (§ 15 EStG), the cash-basis profit (EÜR, § 4(3)) with Anlage EÜR and Anlage S or G, business expenses including the home office flat rate and the EUR 6 day rate, low-value assets and depreciation (§§ 6, 7), the Investitionsabzugsbetrag (§ 7g), the 2026 tariff with the EUR 12,348 Grundfreibetrag (§ 32a), splitting, the solidarity surcharge, church tax, pension and health special expenses, losses (§ 10d), prepayments (§ 37), the § 35 trade tax credit, filing deadlines with and without a Steuerberater (§ 149 AO) and the late-filing surcharge (§ 152 AO). Trigger on: Freiberufler, Selbständige, EÜR, Anlage S, Homeoffice-Pauschale, Investitionsabzugsbetrag, Vorauszahlungen, German freelancer tax. Out of scope: trade tax (de-trade-tax), investments (de-capital-gains), social contributions (de-social-contributions), partners and part-year residents (de-partners-and-part-year), non-residents (de-non-resident-tax)."
+-version: 1.5
++version: 1.6
+ jurisdiction: DE
+ tax_year: 2026
+ last_updated: 2026-10-29
+@@ -188,7 +188,7 @@
+ - **Forms**, as named in ELSTER's instructions for the 2025 return, the latest published: main form ESt 1 A; Anlage S (self-employed work) or Anlage G (trade, including the § 35 data); Anlage EÜR with Anlage AVEÜR, one set per business; Anlage Vorsorgeaufwand; Anlage Sonderausgaben (church tax, donations, own training).
+ - **Who must file** ([§ 56 EStDV](https://www.gesetze-im-internet.de/estdv_1955/__56.html)): without wages, if total income exceeds the basic allowance (twice it for a joint assessment); also after a loss notice for the year before, and whenever the office asks (§ 149(1) AO).
+ - **Electronic filing is a duty** with business income ([§ 25(4) EStG](https://www.gesetze-im-internet.de/estg/__25.html)), except in the employee cases of § 46(2) nos. 2 to 8; the office can waive it for hardship.
+-- **Side income next to a job** ([§ 46 EStG](https://www.gesetze-im-internet.de/estg/__46.html)): an employee must be assessed if income without wage tax is more than EUR 410; if such income is not more than EUR 410 in total it is taken off again. Neither helps someone without wages.
++- **Side income next to a job** ([§ 46 EStG](https://www.gesetze-im-internet.de/estg/__46.html)): an employee must be assessed if income without wage tax is more than EUR 410; the separate § 46(3) deduction covers eligible taxable non-wage income not assessed under § 32d(6), where that eligible income totals no more than EUR 410. Reduce the deduction by the part of the age-relief amount exceeding the wage-based component under § 24a sentence 5, using wages excluding § 19(2) pension remuneration, and by the § 13(3) amount (§ 46(3) sentence 2). Neither helps someone without wages.
+ 
+ | Deadline | 2026 return | 2025 return | Source |
+ | --- | --- | --- | --- |
+@@ -220,7 +220,7 @@
+ 
+ - This skill assumes full German residence for the whole year. A move to or from Germany in the year: `de-partners-and-part-year`. Non-residents with German freelance income: `de-non-resident-tax`. Treaty withholding: `de-treaty-withholding-rates`. Leaving with large holdings: `leaving-germany-exit-tax`.
+ - Splitting needs both spouses fully liable to German tax (§ 26 EStG).
+-- § 7g needs the asset used in a domestic establishment (§ 7g(4)).
++- Under § 7g, the own-use alternative requires the qualifying business use in a domestic establishment; letting is a separate statutory alternative for the required period (§ 7g(1), (4), (6)). Apply the main method's other asset, profit, timing, use and reporting conditions to the actual arrangement; this does not establish eligibility for a particular foreign leasing arrangement.
+ - Meals abroad use the country amounts of the BMF letter of 5 December 2025, not the German flat rates.
+ - Foreign income exempt under a treaty can still raise the rate through § 32b (progression clause): refer.
+ - Selling to EU clients changes the VAT treatment, not the income tax: `germany-vat-return`.

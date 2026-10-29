@@ -1,0 +1,100 @@
+{
+  "status": "writer successor, independent review pending",
+  "artifacts": [
+    {
+      "path": "after/de-payroll-benefits.md",
+      "sha256": "5cfe787fc72884808d51928252fb2a8a42c3442a50da315c846fffc3ea2f24eb",
+      "bytes": 45831
+    },
+    {
+      "path": "before/de-payroll-benefits.md",
+      "sha256": "6490866ed01c76228acd389426527eecc10b5c835a082799868ed9a5fe8aa62a",
+      "bytes": 37167
+    },
+    {
+      "path": "build-ledgers.py",
+      "sha256": "c954a1ad1552a25f6f5aac74079d87e71d8955af0fe11ddb5bf3010f8d8102c4",
+      "bytes": 8816
+    },
+    {
+      "path": "builder-check-history.md",
+      "sha256": "738ef452d957b9e5a9d1a7820a4f49c9526042c6a71ba84c3cd09789eab6f15a",
+      "bytes": 375
+    },
+    {
+      "path": "check-and-seal.py",
+      "sha256": "4015dddea440f8167de7d5f55550682662cdba019af8be08b8271df7e59c53de",
+      "bytes": 13370
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "00f59c96cf505044e4d930c90a4182ad79eb1dc43f75d689a38af1e476e99958",
+      "bytes": 26013
+    },
+    {
+      "path": "historical-author.py",
+      "sha256": "3a8cf5cad622ee1d78e2640dac46406fe95b5b56295eb1250248651d9e3693ea",
+      "bytes": 18800
+    },
+    {
+      "path": "ledgers/de-payroll-benefits.md",
+      "sha256": "b8248d2ab2ca1824382ef665520998565775c5f1c77d7ecaa0e057787f59c0ec",
+      "bytes": 103590
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "97072db47cfa631f3bb4c04b6171da7e83ad01710015eefb453226a1a12b2ff4",
+      "bytes": 2513
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "aad4eb2ae8655074d4a0b7b1ee71076b44631f573a8020dddb48919f78db8d36",
+      "bytes": 68341
+    },
+    {
+      "path": "preservation-proof.json",
+      "sha256": "3337b53ea47f1f9958c711708cedb254766d4722dfceccb16670f1d11e221a11",
+      "bytes": 549
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "2af8fbea0582fae128abe4655a7bc7c06be2c7dff682cfb6176a9e6e6e0a2c76",
+      "bytes": 246576
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "dba846ae4ddcfe8579634d90252c6077bfbc266f17563a594da09c6cbc055784",
+      "bytes": 173682
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "56c6c71c28f159466c24aad273b38a0039bf01018b880667da19da9ec7056c72",
+      "bytes": 904
+    },
+    {
+      "path": "support/de-payroll-benefits/line-map.json",
+      "sha256": "5f4f84d9422f400dac68ecc78e1da5afda49f478be014830daa331319b20e6b2",
+      "bytes": 12325
+    },
+    {
+      "path": "support/de-payroll-benefits/old-topic-destinations.json",
+      "sha256": "1fe78cb3eb54621e150bd91e560677ac842484257d180b1a38d5049f0bee01b6",
+      "bytes": 49208
+    },
+    {
+      "path": "support/de-payroll-benefits/rows.json",
+      "sha256": "e5872d4541874bb725369618f106c8dd210f0debccc7ef857d3a2cea3184c9e7",
+      "bytes": 82074
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "91627c312d598ebdb2505ebfda9c9c87e308e2b5d73e971e985fc16825bebb23",
+      "bytes": 24422
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "fb502c19cc29a1154fde488d7b84a5b4331f401bc1bffc52c0dd4ed0978ac52f",
+      "bytes": 2156
+    }
+  ]
+}

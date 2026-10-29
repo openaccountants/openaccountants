@@ -1,0 +1,28 @@
+{
+  "actual_Git_origin_count": 329,
+  "origin_mismatches": 0,
+  "actual_refs": [
+    "7660443f171a3bd81491768deb64e99e7e724777",
+    "62b7639a5a68324a83a96bb0190fff8b7c76f8c5"
+  ],
+  "semantic_spots_actually_read": [
+    7,
+    16,
+    23,
+    28,
+    35,
+    40,
+    48,
+    50,
+    56,
+    61,
+    71,
+    77,
+    84,
+    100,
+    108,
+    112,
+    163
+  ],
+  "scope": "Selected full old wording and current destinations read; all329 origin identities checked independently. Exact source corrections not falsely called unchanged historical wording."
+}

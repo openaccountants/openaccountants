@@ -1,0 +1,11 @@
+{
+  "id": "U9f3dbf3d70f82eb2",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Tschechien/2025-06-18-Abkommen-Synthetisierter-Text.pdf?__blob=publicationFile&v=3",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.body",
+  "raw_sha256": "d34112bdc430618db27400d87a7876b2848bbb4248d490a8b13e59715e434598",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U9f3dbf3d70f82eb2.reader.txt",
+  "reader_sha256": "fa906f0414799e660b6475a700e0cc77a58699647a3920fdd54db460dfcdd1ed",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

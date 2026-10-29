@@ -1,0 +1,240 @@
+BZSt - One-Stop-Shop, EU-Regelung
+Hinweis zur Verwendung von Cookies
+Wir möchten zur Verbesserung unserer Website das Nutzungsverhalten analysieren und Zugriffsstatistiken erstellen. Dafür werden mit der Webanalyse-Software Matomo statistische Informationen erfasst und ausgewertet. Ausschließlich mit Ihrer Einwilligung speichern wir dafür ein Statistik-Cookie auf Ihrem Endgerät und greifen auf für diesen Zweck erforderliche Geräteinformationen Ihres Endgerätes zu. Zu keiner Zeit werden diese Daten mit persönlichen Daten in Verbindung gebracht oder an Dritte weitergegeben. Weitere Informationen finden Sie in unserer Datenschutzerklärung. Dort ist auch jederzeit der Widerruf Ihrer Einwilligung möglich.
+Einverstanden
+Springe direkt zu:
+Inhalt
+Hauptmenü
+Suche
+BZSt Online.Portal
+Kontakt
+English
+Leichte Sprache
+Gebärdensprache
+Bundeszentralamt für Steuern (Link zur Startseite)
+Dieses Dokument bestimmt, ob ein Zusatzlogo ausgegeben wird.
+Ein im Feld Wert eingehängtes Logo wird als Zusatzlogo ausgegeben.
+Ist das Feld Wert leer, so wird kein Zusatzlogo ausgegeben.
+Ablageoptionen:
+Wird dieses Dokument unterhalb des globalen Verzeichnisses "_config" abgelegt, so wird das Zusatzlogo auf allen Seiten ausgegeben.
+Um das Logo nur für bestimmte Bereiche auszugeben, kann das Konfigurationsdokument zusätzlich pfadabhängig abgelegt werden.
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Karriere
+Website durchsuchen
+Suchtext
+Suchtext
+Startseite
+Unternehmen
+Umsatzsteuer
+One-Stop-Shop, EU-Regelung
+Vorlesen
+One-Stop-Shop, EU-Regelung
+Das Verfahren One-Stop-Shop, EU Regelung ist eine Sonderregelung auf dem Gebiet der Umsatzsteuer und richtet sich an Unternehmer, die im Inland ansässig sind. Zudem können sich unter anderem auch Plattformbetreiber registrieren, sowie Unternehmer, die nicht in der EU-ansässig sind, jedoch über eine Einrichtung, wie z.B. ein Warenlager im Inland verfügen.
+Sie ermöglicht es registrierten Unternehmen unter die Sonderregelung fallende Umsätze in einer Steuererklärung zentral an das Bundeszentralamt für Steuern zu übermitteln.
+Inkrafttreten
+Die One-Stop-Shop, EU-Regelung ist seit dem 1. Juli 2021 in Kraft. Sie hat das Vorgängerverfahren Mini-One-Stop-Shop abgelöst.
+Adressatenkreis
+Das Verfahren richtet sich an Unternehmer, die im Inland ansässig sind und gegen Entgelt
+Dienstleistungen an Privatpersonen in Mitgliedstaaten der Europäischen Union erbringen, in denen sie nicht ansässig sind oder
+innergemeinschaftliche Fernverkäufe von Gegenständen tätigen oder
+eine elektronische Schnittstelle zur Verfügung stellen, durch deren Nutzung sie die Lieferung von Gegenständen innerhalb eines Mitgliedstaats durch einen nicht in der Gemeinschaft ansässigen Steuerpflichtigen unterstützen und deshalb behandelt werden als ob sie die Gegenstände selbst geliefert hätten.
+Darüber hinaus richtet sich das Verfahren an Unternehmer, die nicht in der Europäischen Union ansässig sind und im Inland über eine Einrichtung wie z. B. ein Warenlager verfügen, von der aus Waren an Privatpersonen in anderen EU-Mitgliedstaaten geliefert werden.
+Zu den Begriffen ‘innergemeinschaftliche Fernverkäufe‘ und ‘elektronische Schnittstelle‘ finden Sie detaillierte Erläuterungen im Abschnitt ‘Allgemeine Fragen‘.
+Vorteile der Sonderregelung
+Der One-Stop-Shop ermöglicht es Unternehmern, ihre unter die Sonderregelung fallenden Umsätze
+in einer besonderen Steuererklärung zu erklären,
+diese Steuererklärung zentral über das Bundeszentralamt für Steuern (BZSt) auf elektronischem Weg zu übermitteln und
+die sich ergebende Steuer insgesamt zu entrichten.
+Mit der Teilnahme an der One-Stop-Shop Sonderregelung entfällt für die Unternehmer die Verpflichtung, sich in jedem Mitgliedsstaat, in dem sie Umsätze erbringen, die unter die Sonderregelung fallen, umsatzsteuerlich registrieren zu lassen und den dortigen Pflichten zur Abgabe eine Steuererklärung und Zahlung der Umsatzsteuer nachzukommen. Vielmehr können diese Pflichten zentral im Mitgliedstaat der Registrierung erfüllt werden.
+Registrierung und Abmeldung
+Um an der Sonderregelung One-Stop-Shop, EU Regelung teilnehmen zu können, müssen Unternehmer ihre Teilnahme unter Angabe ihrer Umsatzsteuer-Identifikationsnummer auf elektronischem Weg beim BZSt beantragen. Bei umsatzsteuerlichen Organschaften muss die Teilnahme an der Sonderregelung durch den Organträger unter dessen Umsatzsteuer-Identifikationsnummer beantragt werden.
+Der Antrag zur Registrierung muss über das BZStOnline-Portal eingereicht werden.
+Die Teilnahme gilt einheitlich für alle Mitgliedstaaten der EU. Eine Registrierung ist daher nur in einem Mitgliedsstaat der EU möglich.
+Registrierungsbeginn ist grundsätzlich der erste Tag des Kalendervierteljahres, das auf die Antragstellung folgt.
+Im BZStOnline-Portal können für die Sonderregelung registrierte Unternehmer ihre Registrierungsdaten ändern, ihre Steuererklärungen übermitteln sowie sich vom Verfahren abmelden. Ein Widerruf der Teilnahme ist grundsätzlich unter Einhaltung einer Widerrufsfrist von 15 Tagen zum Beginn eines neuen Besteuerungszeitraums (Kalendervierteljahr) mit Wirkung ab diesem Zeitraum möglich.
+Die notwendigen Informationen zur Vergabe einer deutschen Umsatzsteuer-Identifikationsnummer sind auf den Seiten des BZSt veröffentlicht.
+Vergabe und Erteilung der USt-IdNr.
+Die USt-IdNr. ist eine eigenständige Nummer, die Unternehmen zusätzlich zur Steuernummer ihres Unternehmens vom BZSt erteilt wird.Das BZSt erteilt Unternehmen für ihre umsatzsteuerlichen Zwecke im EU-Binnenmarkt eine USt-IdNr., natürlichen Personen eine steuerliche Identifikationsnummer und wirtschaftlich Tätigen eine Wirtschafts-Identifikationsnummer (derzeit im Aufbau).
+Elektronische Datenübermittlung
+Alle Formulare im Verfahren One-Stop-Shop sind aufgrund gesetzlicher Vorgaben an das Bundeszentralamt für Steuern auf elektronischem Weg zu übermitteln.
+Elektronische Datenübermittlung
+Ab dem 01. April 2021 können Unternehmer die Teilnahme an der Sonderregelung auf elektronischem Weg beim BZSt beantragen. Die Teilnahme gilt einheitlich für alle Mitgliedstaaten der EU. Für die Antragstellung steht das BZStOnline-Portal zur Verfügung.
+Da es sich bei der Sonderregelung um ein elektronisches Verfahren handelt, findet jegliche Kommunikation seitens des Bundeszentralamts für Steuern (Erinnerungen, Rückmeldungen, etc.) über das BZSt-Online Portal statt.
+Es empfiehlt sich daher, die Benachrichtigungsfunktion im Portal zu aktivieren.
+Pflichten
+Mit der Teilnahme an der Sonderregelung sind verschiedene Pflichten verbunden. Einige grundlegende Pflichten sind nachstehend erläutert.
+Ein Verstoß gegen diese Pflichten führt zu einem Ausschluss aus der Sonderregelung.
+Fristgerechte Abgabe der Steuererklärung
+Die Steuererklärung ist bis zum Ende des Monats, der auf den Ablauf des Besteuerungszeitraums (Kalendervierteljahr) folgt, elektronisch dem Bundeszentralamt für Steuern zu übermitteln. Die Steuererklärung ist somit zu übermitteln für das:
+I. Kalendervierteljahr bis zum 30. April,
+II. Kalendervierteljahr bis zum 31. Juli,
+III. Kalendervierteljahr bis zum 31. Oktober,
+IV. Kalendervierteljahr bis zum 31. Januar des Folgejahres.
+Auch wenn keine Umsätze im betreffenden Kalendervierteljahr ausgeführt wurden, ist eine Steuererklärung (sogenannte Nullmeldung) zu den angegebenen Terminen abzugeben.
+Fristgerechte Zahlung der angemeldeten Steuern
+Die im Verfahren One-Stop-Shop erklärten Steuerbeträge müssen so rechtzeitig überwiesen werden, dass die Zahlung bis zum Ende des Monats, der auf den Ablauf des Besteuerungszeitraums (Kalendervierteljahr) folgt, bei der zuständigen Bundeskasse eingegangen ist.
+Ein Lastschrifteinzug ist nicht möglich.
+Zur korrekten Zuordnung der Zahlung ist zwingend das dem Unternehmer zugewiesene Kassenzeichen sowie der Besteuerungszeitraum im Verwendungszweck der Überweisung anzugeben.
+Änderung der Registrierungsdaten
+Der registrierte Unternehmer muss Änderungen seiner Registrierungsdaten spätestens am zehnten Tag des Monats, der auf die Änderung der Verhältnisse folgt, dem BZSt auf elektronischem Weg mitteilen. Hierzu zählen insbesondere E-Mailadresse, Bankverbindung, Angaben zum Ansprechpartner, Website sowie Feste Niederlassungen oder Einrichtungen. Änderungen des Firmennamens, der Steuernummer und der Anschrift sind jedoch ausschließlich dem zuständigen Finanzamt zu melden.
+Im Falle einer Änderung der Daten müssen sämtliche Registrierungsdaten nach dem aktuellen Stand angegeben werden.
+Registrierungsdaten müssen innerhalb von drei Jahren nach Wirksamwerden der Abmeldung von der Sonderregelung geändert werden.
+Für die Änderung der Registrierungsdaten steht unter der Rubrik "Formulare" ein Änderungsformular im BZStOnline-Portal zur Verfügung.
+Abmeldung von der Sonderregelung
+Der registrierte Unternehmer muss sich in den folgenden Fällen spätestens am zehnten Tag des auf den Eintritt der Änderung folgenden Monats von der Teilnahme an der Sonderregelung abmelden:
+Einstellung der Leistungserbringung
+Wegfall der Teilnahmevoraussetzungen in allen EU-Mitgliedstaaten
+Registrierung in einem anderen EU-Mitgliedstaat wegen Wegfalls der Teilnahmevoraussetzungen in Deutschland (z.B. nach Verlegung des Sitzes oder nach Schließen einer Betriebsstätte im Inland)
+Für die Abmeldung von der Sonderregelung steht unter der Rubrik "Formulare" ein Abmeldeformular im BZStOnline-Portal zur Verfügung.
+Aufzeichnungspflichten
+Über die im Rahmen der Sonderregelung getätigten Umsätze sind Aufzeichnungen zu führen, die es ermöglichen Steuererklärung und Zahlungen auf Richtigkeit zu prüfen. Die Aufzeichnungen müssen dem Bundeszentralamt für Steuern, dem zuständigen Finanzamt bzw. den zentral zuständigen Behörden der übrigen EU-Mitgliedstaaten auf Anforderung auf elektronischem Weg zur Verfügung gestellt werden. Die Aufbewahrungsfrist für die Aufzeichnungen beträgt zehn Jahre.
+Ausnahmeregelung für Unternehmer mit kleinen und mittleren Umsätzen
+Die dem Grunde nach in den Anwendungsbereich der Sonderregelung One-Stop-Shop, EU-Regelung fallenden Umsätzen gelten als im Inland erbrachte Umsätze, wenn folgende Voraussetzungen erfüllt sind:
+1. Der leistende Unternehmer ist in nur einem Mitgliedstaat der EU ansässig.
+2. Bei den erzielten Umsätzen handelt es sich um
+Telekommunikations-, Rundfunk- und Fernsehdienstleistungen oder auf elektronischem Weg erbrachte Dienstleistungen oder um
+innergemeinschaftliche Fernverkäufe.
+3. Der Gesamtbetrag – ohne Mehrwertsteuer - der unter 2. genannten Umsätze, die dem Grunde nach unter die Sonderregelung fallen und durch Verkäufe an private Leistungsempfänger in anderen EU-Mitgliedstaaten erzielt werden, überschreitet im laufenden Kalenderjahr nicht 10.000,- EUR und hat dies auch im vorangegangenen Kalenderjahr nicht getan.
+Gelten Umsätze als im Inland erbrachte Umsätze, sind sie - sofern sich aus den nachstehenden Absätzen nichts anderes ergibt - mit dem im Inland geltenden Steuersatz in Rechnung zu stellen und beim zuständigen Finanzamt zu erklären.
+Sobald in einem Kalenderjahr der Schwellenwert von 10.000,- EUR überschritten wird, richtet sich der Leistungsort bei den oben genannten Dienstleistungen nach dem Wohnsitz des (privaten) Leistungsempfängers bzw. bei innergemeinschaftlichen Fernverkäufen nach dem Ort, an dem sich der Gegenstand bei Beendigung der Beförderung oder Versendung an den Erwerber befindet (Bestimmungslandprinzip).
+Entrichtung der Steuerschuld
+Die im Verfahren One-Stop-Shop erklärten Steuerbeträge müssen bis zum Ende des Monats, der auf den Ablauf des Besteuerungszeitraums folgt, überwiesen werden und bei der Bundeskasse eingegangen sein. Ein Lastschrifteinzug ist nicht möglich.
+Im Anschluss an Ihre erste Abgabe einer Steuererklärung wird Ihnen seitens des BZSt ein Kassenzeichen zugeteilt und mit den dazugehörigen Bankverbindungsdaten bekannt gegeben. Bitte überwachen Sie hierfür Ihr Postfach im BZStOnline-Portal.
+Als Verwendungszweck ist zur korrekten Zuordnung des Zahlungsbetrages zwingend das dem Unternehmen zugewiesene Kassenzeichen sowie der betroffene Besteuerungszeitraum anzugeben.
+Bei Zahlungen, die außerhalb des SEPA-Raumes kommen, ist Folgendes zu berücksichtigen:
+Die Kosten des Zahlungsverkehrs gehen zu Lasten des Unternehmers (Gebührenregelung 'our').
+Vorsteuern
+Der Unternehmer kann Vorsteuern, die ihm für Vorleistungen in EU-Mitgliedstaaten in Rechnung gestellt werden, in denen er ausschließlich unter die Sonderregelung fallende Umsätze erbracht hat, nur im Vorsteuer-Vergütungsverfahren geltend machen.
+Voraussetzung ist, dass die Vorsteuerbeträge in Zusammenhang mit diesen Umsätzen stehen. Die Vorsteuervergütung ist in dem Mitgliedstaat geltend zu machen, in dem die Vorsteuerbeträge angefallen sind.
+Weitere Informationen zum Vorsteuer-Vergütungsverfahren erhalten Sie hier.
+Erbringt der Unternehmer noch andere Umsätze in diesem EU-Mitgliedstaat und muss er sich deshalb ohnehin dort für Umsatzsteuerzwecke erfassen lassen, hat er die Vorsteuerbeträge dagegen dort insgesamt im allgemeinen Besteuerungsverfahren geltend zu machen.
+Allgemeine Fragen
+Was sind innergemeinschaftliche Fernverkäufe?
+Innergemeinschaftliche Fernverkäufe von Gegenständen sind nach
+Artikel 14 Abs. (4) Mehrwertsteuer-Systemrichtlinie 2006/112/EG Lieferungen von Gegenständen, die durch den Lieferer oder für dessen Rechnung von einem anderen Mitgliedstaat als dem der Beendigung der Versendung oder Beförderung an den Erwerber aus versandt oder befördert werden, einschließlich jene, an deren Beförderung oder Versendung der Lieferer indirekt beteiligt ist, sofern folgende Bedingungen erfüllt sind:
+a) Die Lieferung der Gegenstände erfolgt an einen Steuerpflichtigen oder eine nichtsteuerpflichtige juristische Person, deren innergemeinschaftliche Erwerbe von Gegenständen gemäß
+Artikel 3 Abs. (1) Mehrwertsteuer-Systemrichtlinie 2006/112/EG nicht der Mehrwertsteuer unterliegen, oder an eine andere nichtsteuerpflichtige Person;
+b) Die gelieferten Gegenstände sind weder neue Fahrzeuge noch Gegenstände, die mit oder ohne probeweise Inbetriebnahme durch den Lieferer oder für dessen Rechnung montiert oder installiert geliefert werden.
+Die nationalen Regelungen zu innergemeinschaftlichen Fernverkäufen finden Sie in
+§ 3c Abs. 1 Satz 2 und 3 und Absatz 5 UStG in der ab 1. Juli 2021 geltenden Fassung.
+Was ist eine elektronische Schnittstelle?
+Nach Artikel 14a Abs. (2) Mehrwertsteuer-Systemrichtlinie 2006/112/EG werden Steuerpflichtige, die die Lieferung von Gegenständen innerhalb der Gemeinschaft durch einen nicht in der Gemeinschaft ansässigen Steuerpflichtigen an eine nicht steuerpflichtige Person durch die Nutzung einer elektronischen Schnittstelle unterstützen, so behandelt, als ob sie diese Gegenstände selbst erhalten und geliefert hätten. Als elektronische Schnittstelle ist ein elektronischer Marktplatz, eine Plattform, ein Portal oder Ähnliches anzusehen. Der Begriff „unterstützen“ bezeichnet nach Artikel 5b der Durchführungsverordnung (EU) Nr. 282/2011 die Nutzung einer elektronischen Schnittstelle, um es einem Erwerber und einem Lieferer, der über eine elektronische Schnittstelle Gegenstände zum Verkauf anbietet, zu ermöglichen, in Kontakt zu treten, woraus eine Lieferung von Gegenständen über die elektronische Schnittstelle an diesen Erwerber resultiert.
+Ein Steuerpflichtiger unterstützt die Lieferung von Gegenständen jedoch dann nicht, wenn alle folgenden Voraussetzungen erfüllt sind:
+a) Er legt weder unmittelbar noch mittelbar irgendeine der Bedingungen für die Lieferung der Gegenstände fest;
+b) er ist weder unmittelbar noch mittelbar an der Autorisierung der Abrechnung mit dem Erwerber bezüglich der getätigten Zahlung beteiligt;
+c) er ist weder unmittelbar noch mittelbar an der Bestellung oder Lieferung der Gegenstände beteiligt.
+Die nationalen Regelungen zur elektronischen Schnittstelle finden Sie in
+§ 3 Abs. 3a Satz 1 und 3 UStG in der ab 1. Juli 2021 geltenden Fassung.
+Wo finde ich weitergehende Informationen zur Anwendung der Sonderregelung?
+Weitergehende Informationen zur Anwendung der Sonderregelung finden Sie im Umsatzsteuer-Anwendungserlass. Besonders hinzuweisen ist auf die Abschnitte 3, 3a, 3c und 18j.
+Detaillierte Informationen zur Sonderregelung One-Stop-Shop, EU-Regelung und anderen Sonderregelungen hat die Europäische Union auf ihrer Internetseite veröffentlicht.
+Kann ein registrierter Unternehmer von diesem Verfahren ausgeschlossen werden?
+Unternehmer, die ihren Verpflichtungen aus der Teilnahme an diesem Verfahren wiederholt nicht oder nicht rechtzeitig nachkommen, werden vom Bundeszentralamt für Steuern von diesem Verfahren ausgeschlossen.
+Wie kann der an der Sonderregelung teilnehmende Unternehmer überprüfen, ob es sich beim Leistungsempfänger um einen in der EU ansässigen Unternehmer oder um einen Nichtunternehmer handelt?
+Ein in der EU ansässiger Unternehmer wird seine Unternehmereigenschaft gegenüber dem deutschen Leistungserbringer durch die Angabe seiner USt-IdNr nachweisen.
+Nach deutschem Umsatzsteuerrecht kann nur Unternehmern im Sinne von
+§ 2 Umsatzsteuergesetz (UStG), die bei einem deutschen Finanzamt umsatzsteuerlich registriert sind, auf Antrag eine Umsatzsteuer-Identifikationsnummer (USt-IdNr) erteilt werden (§ 27a UStG). Die Vergabe einer USt-IdNr an Nichtunternehmer (z. B. Privatpersonen) ist ausgeschlossen.
+Der am besonderen Besteuerungsverfahren One-Stop-Shop teilnehmende Unternehmer hat zur Feststellung des steuerlichen Status seines Leistungsempfängers die Möglichkeit, die durch die Finanzbehörden der EU-Mitgliedstaaten erteilten ausländischen USt-IdNrn auf ihre Gültigkeit zu überprüfen. Außerdem besteht die Möglichkeit, im Rahmen einer so genannten qualifizierten Bestätigungsanfrage die mit einer USt-IdNr verbundenen Informationen, wie Firmenname einschließlich Rechtsform, Firmenort, Postleitzahl und Straße, zu überprüfen.
+Zum Online-Formular für die Durchführung der Bestätigungsanfrage gelangen Sie hier.
+Welcher Steuersatz ist anzuwenden?
+Die im Rahmen der Sonderregelung erbrachten Leistungen unterliegen dem Umsatzsteuersatz, der in dem Mitgliedstaat gilt, in dem der Umsatz zu versteuern ist. Dies ist bei den am Ort des Verbrauchs ausgeführten Dienstleistungen in der Regel der Mitgliedstaat, in dem der Leistungsempfänger (= Nichtunternehmer) ansässig ist bzw. bei innergemeinschaftlichen Fernverkäufen der Mitgliedstaat, an dem sich der Gegenstand bei Beendigung der Beförderung oder Versendung an den Erwerber befindet.
+Eine Übersicht der aktuellen Umsatzsteuersätze finden Sie hier.
+Sind auch Umsätze an in Deutschland ansässige Leistungsempfänger in der Steuererklärung anzugeben?
+Leistungen an Privatpersonen mit Wohnsitz oder gewöhnlichen Aufenthaltsort in Deutschland sind nur dann in der Steuererklärung anzugeben, wenn die Leistungen im Rahmen der Sonderregelung erbracht wurden, z.B. Inlandsumsätze über elektronische Schnittstellen. Ansonsten sind die Inlandsumsätze – wie bisher – beim zuständigen Finanzamt im allgemeinen Besteuerungsverfahren zu erklären.
+Was beinhaltet die Steuererklärung?
+In der Steuererklärung sind folgende Angaben zu machen:
+Identifizierungsinformationen zur Steuererklärung (Angabe von USt-IdNr und Besteuerungszeitraum),
+Angaben zu den unter die Sonderregelung fallenden Umsätzen, und zwar
+Dienstleistungen, die vom registrierten Unternehmer erbracht wurden,
+Warenlieferungen, die vom Inland ausgeführt wurden,
+Dienstleistungen, die von Betriebsstätten des registrierten Unternehmers erbracht wurden,
+Warenlieferungen, die von Betriebsstätten oder Einrichtungen zur Lieferung von Waren vom Ausland ausgeführt wurden und
+Berichtigungen vorausgegangener Besteuerungszeiträume.
+Die Angaben zu den Umsätzen sind getrennt für jeden EU-Mitgliedstaat, in dem die unter die Sonderregelung fallenden Leistungen an Nichtunternehmer erbracht wurden, zu machen. Sie sind nach anwendbaren Steuersätzen aufzuschlüsseln.
+Die Beträge sind in Euro anzugeben. Bei der Umrechnung von Werten in fremder Währung ist einheitlich der von der Europäischen Zentralbank festgestellte Umrechnungskurs des letzten Tages des Besteuerungszeitraums anzuwenden. Falls für diesen Tag kein Umrechnungskurs festgelegt wurde, ist der des nächsten Tages anzuwenden.
+Für die Abgabe der Steuererklärung steht unter der Rubrik "Formulare" ein Steuererklärungsformular im BZStOnline-Portal zur Verfügung.
+Wo finde ich die allgemeinen Euro-Umrechnungskurse der Europäischen Zentralbank?
+Die Euro Umrechnungskurse der Europäischen Zentralbank (EZB) finden Sie hier.
+Was ist hinsichtlich der Steuererklärung im Falle einer Abmeldung von der Sonderregelung zu beachten?
+Auch nach der Abmeldung von der Sonderregelung muss für Besteuerungszeiträume, in denen eine Registrierung besteht, eine Steuererklärung übermittelt werden. Fällige oder anfallende Steuerbeträge müssen weiterhin gezahlt werden.
+Was ist hinsichtlich Korrekturen/Berichtigungen der Steuererklärung zu beachten?
+Falls eine bereits übermittelte Steuererklärung berichtigt werden muss, ist die Korrektur in einer nachfolgenden Steuererklärung vorzunehmen. Das Steuererklärungsformular enthält einen besonderen Abschnitt für Korrekturen, die dort nach Besteuerungszeiträumen und EU-Mitgliedstaaten aufzuschlüsseln sind.
+Hat der Unternehmer die Teilnahme an der Sonderregelung beendet und die Steuererklärung für den letzten Besteuerungszeitraum, für den er für die Sonderregelung registriert war, bereits abgegeben, müssen notwendige Korrekturen unmittelbar in den betroffenen EU-Mitgliedstaaten erklärt werden.
+Was ist hinsichtlich Guthaben aufgrund von Korrekturen zu beachten?
+Guthaben, die sich durch Korrekturen ergeben, werden innerhalb der Steuererklärung zunächst mit dem erklärten Steuerbetrag für den betreffenden Mitgliedstaat verrechnet. Nach Verrechnung verbleibende Guthaben müssen von den betreffenden Mitgliedstaaten an den Unternehmer erstattet werden.
+Beispiel:
+Der Unternehmer erklärt für den Besteuerungszeitraum 4. Quartal 2021 Steuern in Höhe von 100 Euro für den Mitgliedstaat X und in Höhe von 20 Euro für den Mitgliedstaat Y. In der gleichen Steuererklärung erklärt der Unternehmer für das 3. Quartal 2021 einen Korrekturbetrag von -30 Euro für den Mitgliedstaat X und von -80 Euro für den Mitgliedstaat Y.
+Infolge der Berichtigung entsteht in Bezug auf den Mitgliedstaat X ein Steuerbetrag von 100 Euro minus 30 Euro = 70 Euro.
+In Bezug auf den Mitgliedstaat Y entsteht ein Erstattungsanspruch von 20 Euro minus 80 Euro = -60 Euro.
+Der Unternehmer hat in diesem vereinfachten Beispielfall aufgrund der Steuererklärung eine Zahlungsverpflichtung in Höhe von 70 Euro und einen Erstattungsanspruch gegenüber dem Mitgliedstaat Y in Höhe von 60 Euro.
+Wie kann ich meine Registrierungsdaten ändern?
+Der registrierte Unternehmer muss Änderungen seiner Registrierungsdaten spätestens am zehnten Tag des Monats, der auf die Änderung der Verhältnisse folgt, dem BZSt auf elektronischem Weg mitteilen. Hierzu zählen insbesondere E-Mailadresse, Bankverbindung, Angaben zum Ansprechpartner, Website sowie Feste Niederlassungen oder Einrichtungen. Änderungen des Firmennamens und der Anschrift sind jedoch ausschließlich dem zuständigen Finanzamt zu melden.
+Für die Änderung der Registrierungsdaten steht unter der Rubrik "Formulare" ein Änderungsformular im BZStOnline-Portal zur Verfügung.
+Was muss ich bei der Ausnahmeregelung für Unternehmen mit kleinen und mittleren Umsätzen beachten?
+Wenn Ihre maßgebenden Umsätze den Schwellenwert von 10.000,- EUR im vergangenen Jahr nicht überschritten haben und auch in diesem Jahr voraussichtlich nicht überschreiten, ist eine Teilnahme an der Sonderregelung One-Stop-Shop, EU-Regelung nicht zwingend erforderlich, da Sie die Ausnahmeregelung für Unternehmer mit kleinen und mittleren Umsätzen in Anspruch nehmen können. Die Umsätze sind dann mit dem jeweiligen deutschen Steuersatz in der inländischen Steuererklärung anzugeben.
+Erst der Umsatz mit dem der Schwellenwert überschritten wird, führt dazu, dass ab diesem Umsatz ausländische Umsatzsteuer zu fakturieren ist. In diesem Fall haben Sie zu diesem Zeitpunkt die Möglichkeit, sich für die Sonderregelung anzumelden.
+Sollte innerhalb eines Quartals die 10.000,00 € Schwelle überschritten werden, haben Sie die Möglichkeit sich bis zum zehnten Tag des Folgemonats (in dem die Schwelle überschritten wurde) an der Sonderregelung One-Stop-Shop, EU-Regelung zu registrieren. Im Registrierungsformular müssen Sie dazu bei den Angaben zum Registrierungsbeginn die Option "erstmalige Leistungserbringung" wählen und als Datum der erstmaligen Leistungserbringung den Tag der Überschreitung der Schwelle eintragen. Eine rückwirkende Registrierung nach dem zehnten Tag des Folgemonats ist nicht möglich.
+Kann ich auf die Ausnahmeregelung für Unternehmen mit kleinen und mittleren Umsätzen verzichten?
+Sie können als Unternehmen mit kleinen und mittleren Umsätzen gegenüber ihrem Finanzamt erklären, dass sie auf die Anwendung der Ausnahmeregelung verzichten. Die Erklärung bindet den Unternehmer für mindestens zwei Kalenderjahre. Unternehmer, die auf die Anwendung der Ausnahmeregelung gegenüber dem Finanzamt verzichten und an der Sonderregelung One-Stop-Shop, EU-Regelung teilnehmen möchten, müssen eine Registrierungsanzeige auf elektronischem Weg an das Bundeszentralamt für Steuern übermitteln. Hierbei ist zu beachten, dass die Registrierung grundsätzlich erst zum Beginn des auf die Registrierungsanzeige folgenden Kalenderquartals wirksam wird. Die Übermittlung der Registrierungsanzeige wird als konkludenter Verzicht auf die Ausnahmeregelung gewertet.
+Folge des Verzichts auf die Anwendung der Ausnahmeregelung ist, dass sich der Ort der Leistung bei Telekommunikations-, Rundfunk- und Fernsehdienstleistungen oder auf elektronischem Weg erbrachten Dienstleistungen nach dem Wohnsitz des (privaten) Leistungsempfängers bzw. bei innergemeinschaftlichen Fernverkäufen nach dem Ort, an dem sich der Gegenstand bei Beendigung der Beförderung oder Versendung an den Erwerber befindet, richtet (Bestimmungslandprinzip).
+Wo finde ich Kontaktdaten der Mitgliedstaaten?
+Die EU hat auf ihrer Internetseite Kontaktdaten der Mitgliedstaaten und weitere Informationen zur Sonderregelung veröffentlicht.
+Kontakt
+Bundeszentralamt für Steuern
+One-Stop-Shop, EU-Regelung
+Ludwig-Karl-Balzer-Allee 2
+66740 Saarlouis
+Fax: +49 228 406-3801
+Zuständigkeitsbereich:
+Umsatzsteuer
+Nachricht schreiben
+Weitere Informationen
+Elektronische Datenübermittlung
+Ab 1. April 2021 können Unternehmer die Teilnahme an der Sonderregelung auf elektronischem Weg beim BZSt beantragen. Die Teilnahme gilt einheitlich für alle Mitgliedstaaten der EU. Für die …
+Verwandte Themen
+Fahrzeuglieferung
+Mit der Fahrzeuglieferungs-Meldepflichtverordnung werden Unternehmer und Fahrzeuglieferer, die nach dem 30. Juni 2010 innergemeinschaftliche Lieferungen neuer Fahrzeuge an Abnehmer ohne …
+Import-One-Stop-Shop
+Das Verfahren Import-One-Stop-Shop ist eine Sonderregelung auf dem Gebiet der Umsatzsteuer und richtet sich an Unternehmer, die von aus dem Drittlandsgebiet importierte Waren mit einem Sachwert von …
+Verfahren One-Stop-Shop, Nicht EU-Regelung
+Unternehmer, die nicht in der EU ansässig sind, und als Steuerschuldner Dienstleistungen (bis 30.06.2021 Telekommunikations-, Rundfunk- und Fernsehdienstleistungen oder elektronische Dienstleistungen) …
+Umsatzsteuer-Identifikationsnummer
+Unternehmen, die Lieferungen und Leistungen innerhalb des Europäischen Binnenmarktes erbringen oder erhalten, benötigen für die Abwicklung eine Umsatzsteuer-Identifikationsnummer (USt-IdNr).
+Vorsteuer-Vergütungsverfahren
+Umsatzsteuer muss in vielen Ländern beim Kauf von Waren und Leistungen gezahlt werden. Das Vorsteuer-Vergütungsverfahren bietet Unternehmen die Möglichkeit, sich im Ausland bzw. Inland gezahlte …
+Zentrales elektronisches Zahlungsinformationssystem (CESOP)
+Mithilfe der Zahlungsinformationen sollen die Mitgliedstaaten der Europäischen Union den Umsatzsteuerbetrug, insbesondere im Bereich des grenzüberschreitenden elektronischen Geschäftsverkehrs, besser …
+Europäische-Kleinunternehmerregelung (EU-KU-Regelung)
+Bisher können Unternehmer nur die in ihrem Mitgliedstaat der Ansässigkeit jeweils geltende Regelung für Kleinunternehmer in Anspruch nehmen. Die EU-KU-Regelung (neu) ist eine Sonderregelung auf dem …
+Zusammenfassende Meldung
+Warenlieferungen und/oder sonstige Leistungen im EU-Binnenmarkt werden im Ursprungsland unter Erfüllung bestimmter Voraussetzungen umsatzsteuerfrei erbracht. Im Empfängerstaat müssen diese …
+OSS/IOSS - Aufzeichnungen nach Art. 47i VO (EU) 904/2010
+Steuerpflichtige, die an den One-Stop-Shop-Sonderregelungen (EU-Regelung, Nicht-EU-Regelung und Import-OSS) teilnehmen, unterliegen den Aufzeichnungspflichten gem. Art. 369, 369k und 369x der …
+Seite empfehlen
+Unternavigation aller Website-Bereiche
+Privatpersonen
+Unternehmen
+Behörden
+Das BZSt
+Service
+Themen A-Z
+Karriere
+Presse
+Newsletter
+Haben Sie Fragen?
+Anrufen
+Nachricht schreiben
+Zentrale Behördennummer
+Für alle Fragen zu Behörden in Deutschland
+Montag bis Freitag 08:00-18:00 Uhr
+115
+Mehr erfahren
+© Bundeszentralamt für Steuern
+Inhaltsverzeichnis
+Erklärung zur Barrierefreiheit
+Impressum
+Datenschutz

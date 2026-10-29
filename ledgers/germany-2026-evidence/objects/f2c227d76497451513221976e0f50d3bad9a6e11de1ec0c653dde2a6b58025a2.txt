@@ -1,0 +1,614 @@
+POSTANSCHRIFT   Bundesministerium der Finanzen, 11016 Berlin
+
+                Nur per E-Mail                                         HAUSANSCHRIFT    Wilhelmstraße 97
+                                                                                        10117 Berlin
+                                                                                 TEL    +49 (0) 30 18 682-0
+                Oberste Finanzbehörden
+                der Länder                                                     E-MAIL   poststelle@bmf.bund.de
+                                                                              DATUM     26. Juni 2024
+                nachrichtlich:
+
+                Bundeszentralamt für Steuern
+
+                Bundesfinanzakademie im
+                Bundesministerium der Finanzen
+
+
+
+
+     BETREFF    Änderung des Anwendungserlasses zur Abgabenordnung zu §§ 89 und 89a sowie
+                Aufhebung des BMF-Schreibens vom 5. Oktober 2006 - IV B 4 - S 1341 - 38/06 -
+                (BStBl I S. 594)
+
+          GZ IV B 5 - S 1305/19/10003 :008
+         DOK 2024/0485785
+
+                 (bei Antwort bitte GZ und DOK angeben)
+
+
+
+
+                     I.        Änderung des Anwendungserlasses zur Abgabenordnung
+
+                Unter Bezugnahme auf das Ergebnis der Erörterungen mit den obersten Finanzbehörden der
+                Länder wird der Anwendungserlass zur Abgabenordnung (AEAO) vom 31. Januar 2014
+                (BStBl I S. 290), der zuletzt durch das BMF-Schreiben vom 22. März 2024 (BStBl I S. 694)
+                geändert worden ist, wie folgt geändert:
+
+                1.          Im AEAO wird folgende Regelung zu § 89a AO eingefügt:
+
+                „AEAO zu § 89a – Vorabverständigungsverfahren:
+
+                Inhaltsübersicht
+                1.     Eröffnung des Vorabverständigungsverfahrens
+                2.     Inhalt und Umfang des Antrags
+                3.     Abschluss oder anderweitige Beendigung des Vorabverständigungsverfahrens
+
+
+
+
+                                                                                                          www.bundesfinanzministerium.de
+Seite 2   4.     Bindungswirkung der Vorabverständigungsvereinbarung
+          5.     Widerruf
+          6.     Geltungszeitraum und Roll Back
+          7.     Gebühren
+
+          1. Eröffnung des Vorabverständigungsverfahrens
+
+          Zuständigkeiten
+          1.1.   Zuständig für die Durchführung eines Vorabverständigungsverfahrens ist das BZSt
+                 als zuständige Behörde gemäß § 5 Abs. 1 Satz 1 Nr. 5 FVG in Verbindung mit der
+                 Delegation durch das BMF-Schreiben vom 23. Mai 2022, BStBl I S. 838. Das BZSt
+                 handelt gemäß § 89a Abs. 1 Satz 1 AO im Einvernehmen mit der zuständigen
+                 obersten Landesfinanzbehörde oder der von dieser beauftragten Behörde (zuständige
+                 Landesfinanzbehörde). Dies gilt für die gesamte Dauer des Vorabverständigungs-
+                 verfahrens (vgl. AEAO zu § 89a, Nr. 1.3, 1.19, 2.3, 2.7, 3.5, 5.1 und 7.3). Ist in
+                 diesem Abschnitt von „den Finanzbehörden“ die Rede, sind das BZSt und die
+                 zuständige Landesfinanzbehörde gemeinsam gemeint.
+
+          Antragstellung
+          1.2.   Das Vorabverständigungsverfahren bezieht sich auf die steuerliche Beurteilung eines
+                 im Zeitpunkt der Antragstellung noch nicht verwirklichten Sachverhalts auf
+                 Grundlage anwendbarer DBA mit einem oder mehreren Staaten. Es wird nur unter
+                 den Voraussetzungen des § 89a AO geführt.
+
+          1.3.   In grenzüberschreitenden Fällen, in denen die Auslegung und Anwendung von DBA
+                 in Rede steht, soll das Vorabverständigungsverfahren nach § 89a AO grundsätzlich
+                 vorrangig gegenüber einer verbindlichen Auskunft (§ 89 AO), einer verbindlichen
+                 Zusage (§ 204 AO) oder einer Anrufungsauskunft (§ 42e EStG) beantragt werden.
+                 Wird ein Antrag nach § 89, § 204 AO oder § 42e EStG gestellt und kommt nach
+                 summarischer Prüfung auch ein Vorabverständigungsverfahren nach § 89a AO in
+                 Betracht, soll der Antragsteller in der Regel auf das antragsgebundene Vorab-
+                 verständigungsverfahren verwiesen werden.
+
+          1.4.   Die Entscheidung über einen Antrag nach § 89, § 204 AO oder § 42e EStG ist bis
+                 zum Abschluss einer Vorabverständigungsvereinbarung oder der Ablehnung eines
+                 Vorabverständigungsverfahrens durch den anderen Staat zurückzustellen, soweit er
+                 denselben Sachverhalt oder dieselbe Rechtsfrage betrifft. Kommt es mit dem anderen
+                 Staat zum Abschluss einer Vorabverständigungsvereinbarung, ist ein Antrag nach
+                 § 89, § 204 AO oder § 42e EStG, der denselben Sachverhalt oder dieselbe Rechts-
+Seite 3          frage betrifft, mangels berechtigten Interesses abzulehnen. Vor der Ablehnung ist der
+                 Antragsteller auf die Möglichkeit der Antragsrücknahme hinzuweisen.
+
+          1.5.   Wird die Eröffnung des Vorabverständigungsverfahrens durch den anderen Staat
+                 abgelehnt, kann – auf Antrag des Steuerpflichtigen – eine verbindliche Auskunft
+                 (§ 89 AO), eine verbindliche Zusage (§ 204 AO) oder eine Anrufungsauskunft
+                 (§ 42e EStG) in Betracht kommen. Zu Fragen der grenzüberschreitenden Gewinn-
+                 abgrenzung und Fragen der Betriebsstättengewinnaufteilung sollen unilateral keine
+                 verbindlichen Auskünfte erteilt werden.
+
+          1.6.   Gegenstand eines Vorabverständigungsverfahrens können sämtliche Fragen der
+                 Auslegung und Anwendung von DBA sein, die im Zeitpunkt der Antragstellung noch
+                 nicht verwirklichte Sachverhalte betreffen. Damit kommen neben Fragen der
+                 grenzüberschreitenden Gewinnabgrenzung zwischen einander nahestehenden
+                 Personen oder der Gewinnzuordnung zu Betriebsstätten weitere Sachverhalte als
+                 Verfahrensgegenstand in Betracht, sofern in diesen Fällen nach dem Recht anderer
+                 beteiligter Staaten Vorabverständigungsverfahren möglich sind.
+
+          1.7.   Nur Abkommensberechtigte nach dem zwischen den betroffenen Vertragsstaaten
+                 anzuwendenden DBA sind berechtigt, beim BZSt einen Antrag auf Durchführung
+                 eines Vorabverständigungsverfahrens zu stellen.
+
+          1.8.   Personengesellschaften sind nach Artikel 4 Abs. 1 OECD-MA keine in Deutschland
+                 ansässigen Personen, da sie nicht aufgrund ihres Wohnsitzes, ihres ständigen
+                 Aufenthalts oder eines anderen steuerlichen Merkmals steuerpflichtig sind, und
+                 können daher im Regelfall keine Anträge auf die Durchführung eines Vorab-
+                 verständigungsverfahrens stellen. Abkommens- und damit antragsberechtigt sind
+                 jedoch Personengesellschaften, die gemäß § 1a KStG zur Körperschaftsbesteuerung
+                 optiert haben. Haben Personengesellschaften nicht zur Körperschaftsbesteuerung
+                 optiert, ist im Regelfall jeder einzelne Gesellschafter einer Personengesellschaft
+                 abkommensberechtigt, wenn er in einem der Vertragsstaaten ansässig ist. Die
+                 Abkommensberechtigung richtet sich nach dem antragsgegenständlichen DBA
+                 (vgl. AEAO zu § 89a, Nr. 1.6). Für die Mitunternehmer von Personengesellschaften
+                 gilt, insbesondere mit Blick auf die gesonderte und einheitliche Feststellung nach
+                 § 180 AO, § 89a Abs. 1 Satz 4 AO.
+
+          1.9.   Bei einer ertragsteuerlichen Organschaft ist die Abkommensberechtigung im Sinne
+                 des Artikels 1 Abs. 1 OECD-MA in Bezug auf den Organträger und die
+                 Organgesellschaft jeweils gesondert nach dem antragsgegenständlichen DBA zu
+                 prüfen. Ein Organträger genießt in Bezug auf die von der Organgesellschaft erzielten
+Seite 4           Einkünfte sowie das ihm zugerechnete Einkommen der Organgesellschaft keinen
+                  Abkommensschutz; in den Fällen des § 15 Satz 2 KStG gilt § 89a Abs. 1 Satz 4 AO.
+                  Soweit der Antrag des Organträgers Geschäftsvorfälle der Organgesellschaft betrifft,
+                  kann sich dieser auf das Abkommen nur berufen, soweit die betreffenden
+                  Geschäftsvorfälle der Organgesellschaft ihn unmittelbar betreffen und bei ihm zu
+                  eigenen Einkünften führen. Zur Gebührenfolge von Anträgen, die mehrere
+                  Organgesellschaften betreffen, vgl. AEAO zu § 89a, Nr. 7.3.
+
+          1.10.   Auch der zum Steuerabzug verpflichtete Arbeitgeber ist berechtigt, einen Antrag auf
+                  Einleitung eines Vorabverständigungsverfahrens zu stellen (vgl. auch BMF-Schreiben
+                  vom 12. Dezember 2023, BStBl I S. 2179, Rn. 425). Das Antragsrecht eines
+                  abkommensberechtigten Arbeitnehmers bleibt hiervon unberührt. Betrifft der gleiche
+                  Sachverhalt eine Vielzahl von Arbeitnehmern, ist es ausreichend, wenn der
+                  Arbeitgeber einen zusammengefassten Antrag stellt. Die Bindungswirkung einer
+                  allein vom Arbeitgeber beantragten Vorabverständigungsvereinbarung erstreckt sich
+                  ausschließlich auf das Lohnsteuerabzugsverfahren und nicht auch auf das
+                  Einkommensteuerveranlagungsverfahren der Arbeitnehmer.
+
+          1.11.   Der Antrag bestimmt den Gegenstand des Verfahrens. Der Antrag hat den genau
+                  bestimmten, im Zeitpunkt der Antragstellung noch nicht verwirklichten Sachverhalt
+                  sowie den zeitlichen Anwendungsbereich, auf den sich das Vorabverständigungs-
+                  verfahren beziehen soll, darzustellen (vgl. auch § 89a Abs. 2 Satz 1 Nr. 5 AO und
+                  AEAO zu § 89a, Nr. 2 ff.). Die Ausführungen im AEAO zu § 89, Nr. 3.4.2 Satz 2 zu
+                  noch nicht verwirklichten Sachverhalten gelten entsprechend. Bei Dauersachverhalten
+                  ist ein Vorabverständigungsverfahren möglich, sofern im Zeitpunkt der Antrag-
+                  stellung noch Dispositionen möglich sind. Unter den Voraussetzungen des § 89a
+                  Abs. 6 Satz 2 und 3 AO kann die Vorabverständigungsvereinbarung auch auf den
+                  bereits verwirklichten Teil eines Dauersachverhalts angewendet werden
+                  (sog. Roll Back). Ferner kann der Geltungszeitraum der Vorabverständigungs-
+                  vereinbarung für Dauersachverhalte mit dem Beginn des antragsgegenständlichen
+                  Veranlagungszeitraums beginnen (zur Abgrenzung zum Roll Back-Zeitraum
+                  vgl. AEAO zu § 89a, Nr. 6 ff.).
+
+          1.12.   Für die Bestimmung einer angemessenen Geltungsdauer sind u. a. die folgenden
+                  Gesichtspunkte zu berücksichtigen:
+
+                  •   die Dauerhaftigkeit und Stabilität der erfassten Geschäftsbeziehungen,
+                  •   das Interesse des Antragstellers an und ggf. die Bedenken der Finanzbehörden
+                      gegenüber einer langfristigen Bindung,
+                  •   die Praxis des beteiligten anderen Staates.
+Seite 5
+
+                  Der Geltungszeitraum soll in der Regel fünf Jahre nicht überschreiten, § 89a Abs. 1
+                  Satz 1 AO.
+
+          1.13.   Die Vorabverständigungsvereinbarung kann nur auf den in der Vorabverständigungs-
+                  vereinbarung bezeichneten Abkommensberechtigten angewandt werden. Eine
+                  Anwendung etwa auf vergleichbare Geschäftsvorfälle eines anderen Abkommens-
+                  berechtigten im gleichen Staat oder bei Übergang der Geschäftsvorfälle auf einen
+                  anderen Abkommensberechtigten im gleichen Staat durch Umstrukturierung
+                  (vgl. jedoch AEAO zu § 89a, Nr. 3.4) ist nicht möglich. Vielmehr ist in solchen
+                  Fällen ein neuer Antrag nach § 89a AO zu stellen. Für Fälle der Gesamtrechts-
+                  nachfolge vgl. AEAO zu § 89a, Nr. 3.7.
+
+          1.14.   Ein Anspruch des Antragstellers auf Einleitung des Vorabverständigungsverfahrens
+                  sowie auf einen Abschluss des Vorabverständigungsverfahrens besteht nicht. Die
+                  Einleitung des Vorabverständigungsverfahrens steht im Ermessen des BZSt, das
+                  dieses im Einvernehmen mit der zuständigen Landesfinanzbehörde ausübt
+                  (siehe AEAO zu § 89a, Nr. 1.1). Vorabverständigungsverfahren sind Ausdruck einer
+                  kooperativen Zusammenarbeit zwischen Steuerpflichtigen und der Finanzverwaltung.
+                  Das BZSt soll die Einleitung eines Vorabverständigungsverfahrens insbesondere
+                  ablehnen, wenn bei dem dargestellten Sachverhalt die Erzielung eines ungerecht-
+                  fertigten Steuervorteils (etwa einer doppelten Nichtbesteuerung, einer doppelten
+                  Verlustnutzung oder der Inanspruchnahme von steuerlichen Präferenzregimen)
+                  verfolgt wird. Eine Einleitung kann auch versagt werden, wenn für das BZSt
+                  erkennbar ist, dass mit der zuständigen Behörde eines anderen Staates keine überein-
+                  stimmende Abkommensauslegung erzielt werden kann oder in Verrechnungspreis-
+                  fällen die beantragte Methode aus Sicht der deutschen Finanzverwaltung nicht
+                  geeignet ist. Zudem kann die Einleitung abgelehnt werden, wenn der inländische
+                  Antragsteller als Steuerpflichtiger im Besteuerungsverfahren, insbesondere im
+                  Rahmen von Außenprüfungen, seinen Mitwirkungspflichten nicht nachgekommen ist.
+                  Die Ablehnung der Einleitung eines Vorabverständigungsverfahrens erfolgt durch
+                  einen Verwaltungsakt (§ 118 AO).
+
+          1.15.   Da der Antragsteller kein Verfahrensbeteiligter des Vorabverständigungsverfahrens
+                  ist, entscheidet das BZSt bei Bedarf gemeinsam mit den anderen beteiligten Vertrags-
+                  staaten über die persönliche Anwesenheit des Antragstellers oder seines Vertreters bei
+                  Vorabverständigungsgesprächen für Zwecke der Sachverhaltsdarstellung
+                  bzw. -aufklärung sowie einer persönlichen Darstellung der durch den Antragsteller
+                  vertretenen Position.
+Seite 6   1.16.   Ein Antrag auf ein Vorabverständigungsverfahren hat keine unmittelbare Auswirkung
+                  auf gerichtliche und außergerichtliche Verfahren (z. B. Rechtsbehelfsverfahren oder
+                  Aussetzung der Vollziehung). Das Ruhenlassen eines Einspruchsverfahrens mit
+                  Zustimmung des Antragstellers nach § 363 Abs. 2 Satz 1 AO kann jedoch zweck-
+                  mäßig sein, wenn die Ergebnisse des Vorabverständigungsverfahrens (ggf. nach
+                  einem Roll Back nach § 89a Abs. 6 Satz 2 AO) auch Bedeutung für das Einspruchs-
+                  verfahren haben.
+
+          1.17.   Der Durchführung eines Vorabverständigungsverfahrens steht es nicht entgegen,
+                  wenn die steuerliche Beurteilung eines Sachverhalts, der Gegenstand des Antrags ist,
+                  zugleich Gegenstand einer Außenprüfung ist. Die Durchführung, Fortsetzung oder
+                  Beendigung einer Außenprüfung wird durch die Beantragung, Einleitung oder
+                  Durchführung eines Vorabverständigungsverfahrens nicht verhindert. Im Einzelfall
+                  kann aber eine Unterbrechung der Außenprüfung hinsichtlich des vom Vorab-
+                  verständigungsverfahren betroffenen Sachverhalts sinnvoll sein, wenn die Ergebnisse
+                  des Vorabverständigungsverfahrens (ggf. nach einem Roll Back nach § 89a Abs. 6
+                  Satz 2) auch Bedeutung für die Außenprüfung haben und der Steuerpflichtige die
+                  Unterbrechung beantragt.
+
+          Vorgespräch (Prefiling Meeting)
+          1.18. Abkommensberechtigte (Antragsteller) können vor einem Antrag auf ein Vorab-
+                 verständigungsverfahren die Durchführung eines unverbindlichen Vorgesprächs
+                 (sog. Prefiling Meeting) gegenüber dem BZSt formlos anregen, um das Verfahren,
+                 beispielsweise im Hinblick auf die Voraussetzungen und den Inhalt des Antrags, zu
+                 erörtern. Die vom BZSt erbetenen Unterlagen (z. B. Präsentation des Sachverhalts
+                 sowie steuerrechtliche Darstellung und Beurteilung) sind rechtzeitig vor dem
+                 Prefiling Meeting einzureichen. Im Prefiling Meeting kann erörtert werden, wie die
+                 Verwaltung die Aussichten auf eine erfolgreiche Antragstellung sowie eine Einigung
+                 mit den zuständigen Behörden anderer in Betracht kommender Vertragsstaaten im
+                 Vorabverständigungsverfahren einschätzt.
+
+          2. Inhalt und Umfang des Antrags
+
+          Allgemeines
+          2.1.   Die in § 89a Abs. 2 Satz 1 AO aufgezählten Antragsinhalte stellen eine Mindest-
+                 voraussetzung dar. Die Finanzbehörden können jederzeit zusätzliche Fragen stellen
+                 und weitere Informationen und Unterlagen zum Antrag anfordern. Ergeben sich nach
+                 Antragstellung Änderungen im zugrunde gelegten Sachverhalt oder in der
+                 betreffenden Planung des Antragstellers, hat dieser das BZSt unverzüglich zu
+                 informieren. Eine wesentliche Änderung führt dazu, dass der ursprünglich gestellte
+Seite 7           Antrag ganz oder teilweise hinfällig wird. Die Mitteilung über die Änderung kann
+                  nach Rücksprache mit dem Antragsteller als Rücknahme oder Beschränkung des
+                  Antrags und Neuantrag angesehen werden. Die Finanzbehörden können einen
+                  entsprechenden Neuantrag auch ablehnen, wenn Grund für die Annahme besteht, dass
+                  der Antragsteller das Verfahren nicht ernsthaft betreibt oder dass außerhalb des
+                  Verfahrens liegende Zwecke (vgl. z. B. AEAO zu § 89a, Nr. 1.14) verfolgt werden.
+
+          Vorzulegende Unterlagen und Aufzeichnungen
+          2.2.   Der Antragsteller muss seinen Antrag auch im Sinne des § 90 AO umfassend
+                 erläutern und alle erforderlichen Aufzeichnungen und Unterlagen beifügen. Welche
+                 Unterlagen bzw. Aufzeichnungen vorzulegen sind, hängt von den Umständen des
+                 jeweiligen Einzelfalles ab. Der Antragsteller hat z. B. auf Aufforderung des BZSt die
+                 Aufzeichnungen nach § 90 Abs. 3 AO für Zeiträume, die dem beantragten
+                 Geltungszeitraum der Vorabverständigung vorangehen, einzureichen, sofern dies für
+                 die Beurteilung des Sachverhaltes von Bedeutung ist. Werden keine über die Jahre
+                 hinweg inhaltlich konsistenten Aufzeichnungen vorgelegt oder bessert der
+                 Antragsteller diese auf Aufforderung durch das BZSt nicht nach, kann das BZSt die
+                 Einleitung des Verfahrens ablehnen oder das Verfahren beenden (vgl. auch AEAO
+                 zu § 89a, Nr. 2.7).
+
+          2.3.    Der Antrag ist grundsätzlich in deutscher Sprache zu stellen. Der Antragsteller kann
+                  den Antrag, insbesondere in Verrechnungspreisfällen, auch nur auf Englisch stellen,
+                  wenn die gemeinsame Arbeitssprache der zuständigen Behörden der beteiligten
+                  Staaten nicht Deutsch ist. Auf Anforderung der Finanzbehörden hat der Antragsteller
+                  in jeder Phase des Verfahrens von ihm eingereichte Unterlagen und Schreiben
+                  (oder ggf. Teile davon) auf seine Kosten zu übersetzen (§ 87 Abs. 2 AO). Reicht der
+                  Antragsteller einen Antrag in deutscher Sprache ein, sollte er zusätzlich eine
+                  Übersetzung in eine gemeinsame Arbeitssprache der zuständigen Behörden der
+                  beteiligten Staaten, zwischen denen das Vorabverständigungsverfahren geführt
+                  werden soll, zur Verfügung stellen. Die gemeinsame Arbeitssprache der zuständigen
+                  Behörden der beteiligten Staaten ist regelmäßig Englisch; das BZSt teilt dem
+                  Antragsteller auf Nachfrage vor Antragstellung die gemeinsame Arbeitssprache
+                  formlos mit, insbesondere im Rahmen eines Prefiling Meetings (vgl. AEAO zu § 89a,
+                  Nr. 1.18).
+
+          2.4.    Ein nur im Ausland gestellter Antrag auf Durchführung eines Vorabverständigungs-
+                  verfahrens stellt keinen wirksamen Antrag nach § 89a Abs. 1 AO dar. Vielmehr ist in
+                  einem solchen Fall im Inland ebenfalls ein eigener inhaltsgleicher Antrag zu stellen.
+                  Sofern im Ausland bereits unilateral über den Sachverhalt entschieden wurde, ist dies
+                  im Antrag anzugeben und zu erläutern.
+Seite 8
+
+          2.5.   Informationen, die im Vorabverständigungsverfahren erteilt werden, muss der
+                 Antragsteller den zuständigen Behörden der beteiligten Staaten zur Verfügung stellen.
+                 Hierbei ist nicht zu unterscheiden zwischen Informationen, die der Antragsteller auf
+                 eigene Veranlassung oder auf Nachfrage einer der zuständigen Behörden der
+                 beteiligten Staaten erteilt. Auf diese Weise werden eine umfassende Informations-
+                 transparenz sowie der gleiche Informationsstand der zuständigen Behörden der
+                 beteiligten Staaten sichergestellt.
+
+          2.6.   Im Rahmen eines Vorabverständigungsverfahrens gewonnene Erkenntnisse können
+                 auch im Rahmen anderer Besteuerungsverfahren verwendet werden (§ 88 AO).
+
+          2.7.   Informationen, die im Laufe koordinierter steuerlicher Außenprüfungen über
+                 bestimmte Sachverhalte gewonnen werden, sollen auch im Vorabverständigungs-
+                 verfahren beachtet werden. Dies insbesondere dann, wenn für den Prüfungszeitraum
+
+                 •   der Sachverhalt bereits hinreichend aufgeklärt ist,
+                 •   die Angemessenheit von Verrechnungspreisen hinreichend dokumentiert ist und
+                 •   für den von der beantragten Vorabverständigungsvereinbarung umfassten
+                     Zeitraum keine wesentliche Änderung zu erwarten ist.
+
+                 Verfügt der Abkommensberechtigte im Zeitpunkt der Antragstellung über das
+                 Protokoll über die Ergebnisse der gemeinsamen steuerlichen Außenprüfung
+                 (vgl. BMF-Schreiben vom 9. Januar 2017, BStBl I S. 89, Tz. 3.10), ist dieses zur
+                 Beschleunigung des Verfahrens dem Antrag beizufügen.
+
+          Verletzung Mitwirkungspflichten
+          2.8.   Kommt der Antragsteller seinen Mitwirkungspflichten nach § 90 AO nicht, nicht
+                 vollständig oder nicht rechtzeitig nach, kann das BZSt das Verfahren im
+                 Einvernehmen mit der zuständigen Landesfinanzbehörde beenden. Die Entscheidung
+                 über die Beendigung des Verfahrens stellt einen Verwaltungsakt (§ 118 AO) dar.
+
+          3. Abschluss oder anderweitige Beendigung des Vorabverständigungsverfahrens
+
+          Allgemeines
+          3.1.   Eine Vorabverständigungsvereinbarung wird im Einvernehmen mit der zuständigen
+                 Landesfinanzbehörde zwischen dem BZSt und der zuständigen Behörde des anderen
+                 Vertragsstaates oder aller anderen Vertragsstaaten unter den aufschiebenden
+                 Bedingungen der fristgerechten Zustimmung des Antragstellers und ggf. der
+                 Zustimmung von Antragstellern in anderen beteiligten Staaten sowie des form- und
+Seite 9           fristgerecht erklärten wirksamen Rechtsbehelfsverzichts nach § 89a Abs. 3 Satz 1
+                  Nr. 2 AO (siehe AEAO zu § 89a, Nr. 3.2) geschlossen; vgl. zu weiteren, auflösenden
+                  Gültigkeitsbedingungen AEAO zu § 89a, Nr. 4.4. Stimmt der Antragsteller nicht oder
+                  nicht fristgerecht zu oder erklärt er keinen wirksamen Rechtsbehelfsverzicht, wird die
+                  Vorabverständigungsvereinbarung ihm gegenüber nicht wirksam. Eine verbindliche
+                  Vorabzusage durch die örtlich zuständige Finanzbehörde, die den Inhalt einer
+                  Vorabverständigungsvereinbarung wiedergibt, ist nicht notwendig.
+
+          3.2.    Die Mitteilung über den Inhalt der Vorabverständigungsvereinbarung ist kein
+                  Verwaltungsakt gemäß § 118 AO. Es handelt sich um eine reine Wissensmitteilung
+                  ohne Regelungsgehalt. Die Mitteilung kann deshalb nicht mit einem Einspruch
+                  angefochten werden. Es bleibt dem Abkommensberechtigten jedoch unbenommen,
+                  der Vereinbarung nicht zuzustimmen.
+
+          Fristen
+          3.3.    Mit der Mitteilung über den Inhalt der Vorabverständigungsvereinbarung setzt das
+                  BZSt dem Antragsteller eine angemessene Frist für die Erfüllung der Bedingungen
+                  nach § 89a Abs. 3 Satz 1 AO. In der Regel ist eine Frist von zwei Monaten
+                  angemessen. Wird die Frist versäumt, gelten die Bedingungen als nicht erfüllt, und
+                  der andere Staat wird vom BZSt zeitnah über das Scheitern des Verfahrens
+                  unterrichtet. Diese Frist kann in begründeten Ausnahmefällen gemäß § 109 Abs. 1
+                  Satz 1 AO verlängert werden; eine rückwirkende Verlängerung gemäß § 109 Abs. 1
+                  Satz 2 AO ist nach der Unterrichtung des anderen Staats über das Scheitern des
+                  Verfahrens grundsätzlich ausgeschlossen. Der Rechtsbehelfsverzicht nach § 89a
+                  Abs. 3 Satz 1 Nr. 2 AO des Antragstellers hat mit gesondertem Schreiben schriftlich
+                  oder zur Niederschrift gegenüber dem BZSt zu erfolgen. Die Zustimmung ist dem
+                  BZSt zu erklären und bedarf keiner Form. Sie kann mit dem Rechtsbehelfsverzicht
+                  nach § 89a Abs. 3 Satz 1 Nr. 2 AO verbunden werden.
+
+          Rechtsbehelfsverzicht
+          3.4.   Der Verzicht nach § 89a Abs. 3 Satz 1 Nr. 2 AO gilt nur, soweit die Ergebnisse des
+                 Vorabverständigungsverfahrens für den bestimmten Geltungszeitraum mit dem
+                 Steuerbescheid zutreffend umgesetzt werden. Aufgrund des durch den Antragsteller
+                 erklärten Rechtsbehelfsverzichts ist ein Rechtsbehelf gegen den die Vereinbarung
+                 umsetzenden Bescheid hinsichtlich der Sachverhalte, die Gegenstand der
+                 Vorabverständigungsvereinbarung sind, nur insoweit möglich, als eine fehlerhafte
+                 Umsetzung der Vereinbarung gerügt wird.
+Seite 10   3.5.    Kann ein einer Vorabverständigungsvereinbarung zu Grunde gelegter Sachverhalt
+                   gegenüber mehreren Personen nur einheitlich steuerlich beurteilt werden, ist der
+                   Rechtsbehelfsverzicht durch alle zum Rechtsbehelf Befugten zu erklären. Im Falle
+                   einer Organschaft nach § 14 KStG ist der Rechtsbehelfsverzicht nach § 89a Abs. 3
+                   Satz 1 Nr. 2 AO daher sowohl vom Organträger als auch von der antragstellenden
+                   Organgesellschaft zu erklären, da die Feststellung gemäß § 14 Abs. 5 KStG
+                   gegenüber beiden erfolgt.
+
+           Scheitern des Vorabverständigungsverfahrens, Gründe des Scheiterns
+           3.6.    Der andere Staat ist nicht zur Durchführung eines Vorabverständigungsverfahrens
+                   verpflichtet. Wird die Einleitung des Verfahrens daher seitens dieses Staates versagt,
+                   ist das Verfahren von Seiten der deutschen zuständigen Behörde zu beenden. Das
+                   Verfahren kann auch beendet werden, wenn sich zu einem späteren Zeitpunkt
+                   herausstellt, dass ein Grund vorgelegen hätte, das Verfahren nicht einzuleiten
+                   (vgl. AEAO zu § 89a, Nr. 1.14). Die Herbeiführung eines einvernehmlichen
+                   Abschlusses des Vorabverständigungsverfahrens kann ebenfalls nicht erzwungen
+                   werden. Demzufolge kann ein Vorabverständigungsverfahren auch ohne den
+                   Abschluss einer Vorabverständigungsvereinbarung enden. Ferner kann ein Vorab-
+                   verständigungsverfahren auch scheitern, wenn in der Vorabverständigungs-
+                   vereinbarung aufschiebende Bedingungen hinsichtlich einer betroffenen Person
+                   gegenüber der zuständigen Behörde eines anderen beteiligten Vertragsstaates
+                   vereinbart wurden und die zuständige Behörde des anderen beteiligten Vertrags-
+                   staates das BZSt darüber unterrichtet, dass diese nicht oder nicht fristgerecht erfüllt
+                   wurden. Für die Mitteilung über das Scheitern des Verfahrens gilt Nr. 3.2
+                   entsprechend.
+
+           Fortgeltung der Vorabverständigungsvereinbarung
+           3.7.    In den Fällen der Gesamtrechtsnachfolge (§ 45 AO, vgl. auch AEAO zu § 45,
+                   Nr. 1 bis 3) oder einer Änderung der Rechtsform der in der Vorabverständigungs-
+                   vereinbarung bezeichneten Abkommensberechtigten gilt die Vorabverständigungs-
+                   vereinbarung regelmäßig unverändert fort. Maßgeblich dafür ist, dass das rechtliche
+                   und tatsächliche Verhältnis, für das die Vorabverständigungsvereinbarung
+                   abgeschlossen wurde (in Verrechnungspreisfällen die Transaktion) von den Rechts-
+                   nachfolgern bzw. nach der Rechtsformänderung fortgeführt wird und die Gültigkeits-
+                   bedingungen nach § 89a Abs. 4 Satz 1 Nr. 1 AO (dazu AEAO zu § 89a, Nr. 4.4)
+                   eingehalten werden.
+Seite 11   4. Bindungswirkung der Vorabverständigungsvereinbarung
+
+           Bindungswirkung
+           4.1.  Die örtlich zuständige Finanzbehörde ist an die unterzeichnete Vorabverständigungs-
+                 vereinbarung nicht gebunden, wenn das BZSt im Einvernehmen mit der zuständigen
+                 Landesfinanzbehörde aufgrund einer Überprüfung der Vorabverständigungs-
+                 vereinbarung zu dem Ergebnis kommt, dass eine der Voraussetzungen nach § 89a
+                 Abs. 4 Satz 1 AO erfüllt ist. Die Bindungswirkung der Vorabverständigungs-
+                 vereinbarung entfällt in dem Zeitpunkt, in dem mindestens eine der Voraussetzungen
+                 nach § 89a Abs. 4 Satz 1 AO vorliegt.
+
+           Compliance Report
+           4.2.  Bestandteil der Vorabverständigungsvereinbarung mit dem anderen Staat ist in der
+                 Regel die Verpflichtung der Steuerpflichtigen, einen jährlichen Bericht („Compliance
+                 Report“) zu erstellen und vorzulegen. In diesem ist darzulegen, dass der der
+                 Vereinbarung zu Grunde gelegte Sachverhalt im betreffenden Wirtschaftsjahr
+                 verwirklicht worden ist und dass insbesondere die Bedingungen nach § 89a Abs. 4
+                 Satz 1 AO eingehalten wurden. Dabei müssen die Steuerpflichtigen auf jede
+                 Abweichung ausdrücklich hinweisen und mitteilen, ob und welche Anpassungen sie
+                 vorgenommen haben. In diesem Zusammenhang gestellte, ergänzende Fragen der
+                 Finanzbehörden haben die Steuerpflichtigen fristgerecht zu beantworten. Der Bericht
+                 ist innerhalb der vertraglich vereinbarten Frist gleichzeitig beim BZSt und der örtlich
+                 zuständigen Finanzbehörde in deutscher Sprache oder in anderer Sprache mit
+                 deutscher Übersetzung abzugeben. Er ist jedenfalls mit der Vorlage im anderen Staat
+                 abzugeben.
+
+           4.3.    Der örtlich zuständigen Finanzbehörde bleibt es unbenommen, auch unabhängig vom
+                   Vorliegen eines Compliance Reports zu prüfen, ob die Gültigkeitsbedingungen nach
+                   § 89a Abs. 4 Satz 1 AO eingehalten wurden, insbesondere ob der Sachverhalt
+                   verwirklicht wurde. Stellt die örtlich zuständige Finanzbehörde einen Fall im Sinne
+                   des § 89a Abs. 4 Satz 1 AO fest, unterrichtet sie das BZSt über die zuständige
+                   Landesfinanzbehörde mit der Bitte um Prüfung gemäß § 89a Abs. 4 Satz 2 AO.
+
+           Gültigkeitsbedingungen
+           4.4.   Der Vorabverständigungsvereinbarung werden regelmäßig bestimmte Annahmen zu
+                  Grunde gelegt, die als Gültigkeitsbedingungen nach § 89a Abs. 4 Satz 1 Nr. 1 AO die
+                  Geschäftsbeziehungen maßgeblich beeinflussen. Solche Gültigkeitsbedingungen
+                  stellen zwischen den Vertragspartnern der Vorabverständigungsvereinbarung eine
+                  ausdrücklich vereinbarte Vertragsgrundlage dar.
+Seite 12          Beispiel: Im Falle von Vereinbarungen betreffend die Gewinnabgrenzung zwischen
+                  einander nahestehenden Personen oder die Gewinnzuordnung zu Betriebsstätten wird
+                  üblicherweise vereinbart, dass die geschäftlichen Aktivitäten, ausgeübten Funktionen,
+                  übernommenen Risiken sowie eingesetzten Vermögenswerte grundlegend dem
+                  Antrag und ggf. den im Laufe des Verfahrens vorgebrachten weiteren Informationen
+                  entsprechen. In solchen Fällen kann es sinnvoll sein, weitere (ergänzende)
+                  Gültigkeitsbedingungen zu vereinbaren, wie etwa:
+
+                  •   vergleichbare Verhältnisse bezüglich Marktbedingungen, Marktanteil, Geschäfts-
+                      volumen, Verkaufspreise, jeweils unter Vorgabe eines Rahmens;
+                  •   vergleichbare Verhältnisse, z. B. im Hinblick auf Aufsichtsrecht, Zölle, Import-
+                      und Exportbeschränkungen, internationalen Zahlungsverkehr;
+                  •   vergleichbare Verhältnisse bezüglich Währungskurse und Zinssätze;
+                  •   Durchführung der Besteuerung entsprechend der Vorabverständigungs-
+                      vereinbarung in anderen beteiligten Staaten;
+                  •   keine wesentlichen Änderungen der steuerlichen Rahmenbedingungen im anderen
+                      Staat (z. B. Einführung oder Ausweitung von steuerlichen Präferenzregelungen);
+                  •   Verrechnungspreiskorrekturen eines an der Vorabverständigungsvereinbarung
+                      nicht beteiligten Drittstaates, die Auswirkungen auf die Vorabverständigungs-
+                      vereinbarung haben.
+
+           4.5.   Die Rechtsvorschriften im Sinne des § 89a Abs. 4 Satz 1 Nr. 3 AO können sowohl
+                  das deutsche Recht, einschließlich des Abkommensrechts, als auch das Recht der
+                  anderen beteiligten Staaten sowie internationale Rechtsvorschriften, die die
+                  beteiligten Vertragsstaaten unmittelbar binden, umfassen. Rechtsvorschriften sind nur
+                  solche, die alle staatlichen Gewalten zugleich binden. Die Vorabverständigungs-
+                  vereinbarung beruht auf einer Rechtsvorschrift, wenn diese für den zu beurteilenden
+                  Sachverhalt sowie für die Auslegung des verfahrensgegenständlichen DBA
+                  maßgeblich war. Die Änderung einer Rechtsvorschrift liegt insbesondere vor, wenn
+                  hierdurch eine andere Rechtsfolge eintritt.
+
+           4.6.   Zeigt sich, dass der zugrundeliegende Sachverhalt anders verwirklicht werden wird
+                  als im Antrag dargelegt, bleibt es dem Abkommensberechtigten unbenommen, den
+                  eingereichten Antrag anzupassen bzw. einen neuen Antrag zu stellen. Der
+                  Antragsteller ist nicht dazu verpflichtet, den zugrunde gelegten Sachverhalt der
+                  Vorabverständigungsvereinbarung zu verwirklichen. Er kann sich im Fall der
+                  Verwirklichung eines anderen Sachverhalts allerdings nicht auf den Inhalt der
+                  Vorabverständigungsvereinbarung berufen.
+Seite 13   5. Widerruf
+
+           5.1.    Die Widerrufsmöglichkeit nach § 89a Abs. 5 Satz 1 AO ist eine durch
+                   Rechtsvorschrift zugelassene Widerrufsmöglichkeit im Sinne des § 131 Abs. 2 Satz 1
+                   Nr. 1 AO. Ein Widerruf nach § 89a Abs. 5 AO sollte vor der Unterzeichnung der
+                   Vorabverständigungsvereinbarung erfolgen und unter der aufschiebenden Bedingung
+                   stehen, dass die Vorabverständigungsvereinbarung gegenüber dem Antragsteller
+                   wirksam wird (vgl. dazu AEAO zu § 89a, Nr. 3.1); er ist jedoch auch noch nach dem
+                   Abschluss einer Vorabverständigungsvereinbarung möglich.
+
+           5.2.    Die Erklärung nach § 89a Abs. 5 Satz 2 AO stellt keinen Verwaltungsakt dar, sondern
+                   ist eine Wissensmitteilung, die keine eigenständige Regelung enthält.
+
+           6. Geltungszeitraum und Roll Back
+
+           Geltungszeitraum
+           6.1.   Der Geltungszeitraum einer Vorabverständigungsvereinbarung kann in Dauer-
+                  sachverhalten den gesamten Veranlagungszeitraum der Antragstellung umfassen
+                  (vgl. auch AEAO zu § 89a, Nr. 1.11).
+
+           6.2.    Eine Verlängerung der wirksamen Vorabverständigungsvereinbarung über den
+                   bestimmten Geltungszeitraum nach § 89a Abs. 6 Satz 1 AO ist mit Zustimmung des
+                   anderen Staates und im Einvernehmen mit der zuständigen Landesfinanzbehörde
+                   möglich. Voraussetzung hierfür ist, dass, sofern keine anderslautende vertragliche
+                   Vereinbarung getroffen wurde, vor Ablauf des bestimmten Geltungszeitraums ein
+                   entsprechender Antrag beim BZSt gestellt und glaubhaft gemacht wird, dass der
+                   zukünftig zu verwirklichende Sachverhalt dem Sachverhalt entspricht, der dem
+                   Vorabverständigungsverfahren zu Grunde gelegt wurde. In solchen Fällen kann in
+                   einem informellen Vorgespräch mit den zuständigen Behörden der beteiligten Staaten
+                   geklärt werden, ob die Verlängerung (ggf. mit gewissen Anpassungen) in einem
+                   einfachen und schnellen Verfahren durchgeführt werden kann.
+
+           Roll Back
+           6.3.   Beantragt der Abkommensberechtigte ein Roll Back nach § 89a Abs. 6 Satz 2 AO
+                  (vgl. auch AEAO zu § 89a, Nr. 1.11), kann diesem Antrag im Einvernehmen mit der
+                  zuständigen Landesfinanzbehörde und der zuständigen Behörde des anderen
+                  Vertragsstaates unter Beachtung der Fristen für Verständigungsverfahren der jeweils
+                  maßgebenden DBA gefolgt werden, wenn der Antragsteller nachweist, dass der
+                  verwirklichte Sachverhalt in den betreffenden Vorjahren (möglicher Roll Back-
+                  Zeitraum) dem Sachverhalt, der der Vorabverständigungsvereinbarung zugrunde
+Seite 14           liegt, im Wesentlichen entspricht (vgl. auch AEAO zu § 89a, Nr. 1.11). Zudem sind
+                   Aufzeichnungen und Unterlagen zur Beurteilung dieser Jahre vorzulegen. Das
+                   Roll Back erfolgt durch Verständigungsvereinbarungen, mit denen die Vorab-
+                   verständigungsvereinbarung auf den Roll Back-Zeitraum angewendet wird. Eine
+                   Erweiterung der Vorabverständigungsvereinbarung ist mangels Erfüllung der dafür
+                   erforderlichen gesetzlichen Voraussetzungen (die Sachverhalte sind im Zeitpunkt des
+                   Antrags für ein Roll Back bereits verwirklicht, vgl. § 89a Abs. 1 Satz 1 AO) nicht
+                   möglich. Trotzdem können das Roll Back und die Vorabverständigung gemeinsam
+                   vereinbart werden. In diesem Fall können die Zustimmung und der Rechtsbehelfs-
+                   verzicht der betroffenen Personen nach § 89a Abs. 3 Satz 1 AO sowie ein Rechts-
+                   behelfsverzicht nach § 354 Abs. 1b AO nur einheitlich erfolgen.
+
+           7. Gebühren
+
+           Allgemeines
+           7.1.   Soweit sich die rechtliche Beurteilung auf einen Sachverhalt bezieht, handelt es sich
+                  um einen Antrag nach § 89a Abs. 1 Satz 1 oder Abs. 6 Satz 1 AO. Dieser Sachverhalt
+                  kann sich auch auf mehrere Steuerarten auswirken und mehrere Jahre umfassen.
+
+           7.2.    Kann gemäß § 89a Abs. 1 Satz 4 AO ein Sachverhalt nur einheitlich steuerlich
+                   beurteilt werden und das Vorabverständigungsverfahren deshalb nur von allen
+                   Abkommensberechtigten gemeinsam beantragt und betrieben werden, liegt gemäß
+                   § 89a Abs. 7 Satz 9 AO nur ein Antrag vor, für den nur eine Gebühr festzusetzen und
+                   zu entrichten ist.
+
+           7.3.    Stellen hingegen mehrere Abkommensberechtigte einen Antrag gemeinsam und kann
+                   der zugrundeliegende Sachverhalt nicht nur einheitlich steuerlich beurteilt werden,
+                   liegen rechtlich mehrere Anträge vor, auch wenn die Abkommensberechtigten gleiche
+                   Geschäftsbeziehungen zu einer nahestehenden Person im anderen Staat unterhalten.
+                   Dies gilt auch, wenn die Abkommensberechtigten eine ertragsteuerliche Organschaft
+                   bilden (außer in den Fällen des § 15 Satz 2 KStG; hier gilt § 89a Abs. 1 Satz 4 AO,
+                   vgl. AEAO zu § 89a, Nr. 1.9 und 7.2).
+
+           Gebührenfestsetzung und Folgen bei Nichtzahlung
+           7.4.  Die Gebühr ist durch schriftlichen Bescheid gegenüber dem Antragsteller oder den
+                 Antragstellern festzusetzen; die Bekanntgabevollmachten sind zu beachten.
+
+           7.5.    Solange die Gebühr nicht unanfechtbar festgesetzt und entrichtet wurde, wird der
+                   Antrag nicht bearbeitet (§ 89a Abs. 7 Satz 4 AO). Die Nichtentrichtung der Gebühr
+                   innerhalb eines Monats nach der Bekanntgabe ihrer Festsetzung führt in der Regel zur
+Seite 15            Ablehnung des Antrags auf Durchführung eines Vorabverständigungsverfahrens im
+                    Rahmen der Ermessensentscheidung über die Einleitung gemäß § 89a Abs. 1
+                    Satz 1 AO. Für zu spät gezahlte Gebühren vgl. auch AEAO zu § 89a, Nr. 7.7.
+
+           7.6.     Eine spezifische Gebühr für Anträge, die die Änderung eines schon gestellten Antrags
+                    zum Gegenstand haben, ist in § 89a Abs. 7 AO nicht vorgesehen. Bei einer
+                    wesentlichen Änderung (vgl. AEAO zu § 89a, Nr. 2.1) ist von einem neuen Antrag
+                    auszugehen. Wenn eine Änderung nur unwesentlich ist und keine Qualität hat, die es
+                    rechtfertigt, sie als neuen Antrag gemäß § 89a Abs. 1 AO zu werten, ist keine weitere
+                    Gebühr festzusetzen.
+
+           Antragsrücknahme und Antragsablehnung
+           7.7.   Wird der Antrag auf Einleitung eines Vorabverständigungsverfahrens zurück-
+                  genommen oder abgelehnt oder scheitert das Vorabverständigungsverfahren,
+                  nachdem die Festsetzung einer Gebühr unanfechtbar geworden ist, ist die bis zu
+                  diesem Zeitpunkt nicht entrichtete Gebühr trotz der Ablehnung, der Rücknahme oder
+                  des Scheiterns zu zahlen; eine bereits entrichtete Gebühr wird nicht erstattet (§ 89a
+                  Abs. 8 Satz 2 AO). Dasselbe gilt für den Fall, dass das Vorabverständigungsverfahren
+                  vorzeitig beendet wird (vgl. Nr. 2.8).“
+
+
+
+           2.     In Nr. 3.5.4. des AEAO zu § 89 wird folgender Absatz angefügt:
+
+           „Verbindliche Auskünfte sollen ferner nicht erteilt werden, wenn für den maßgeblichen
+           Sachverhalt auch ein Vorabverständigungsverfahren nach § 89a AO in Betracht kommt,
+           insbesondere wenn Verrechnungspreise oder Betriebsstättengewinnabgrenzungen Gegenstand
+           der beantragten verbindlichen Auskunft sind.“
+
+
+
+            II.    Anwendungsregelung und Aufhebung des BMF-Schreibens vom 5. Oktober 2006
+                   - IV B 4 - S 1341 - 38/06 -
+
+           Der neue AEAO zu § 89a gilt für alle Vorabverständigungsverfahren, deren Anträge nach
+           dem 8. Juni 2021 bei der zuständigen Behörde eingegangen sind (vgl. Artikel 97 § 34
+           Satz 1 EGAO). Der neue Absatz 2 der Nr. 3.5.4. des AEAO zu § 89 gilt für alle verbindlichen
+           Auskünfte, die nach dem 8. Juni 2021 bei der zuständigen Behörde beantragt wurden.
+Seite 16   Das BMF-Schreiben vom 5. Oktober 2006 - IV B 4 - S 1341 - 38/06 -, BStBl I S. 594
+           („Merkblatt für bilaterale oder multilaterale Vorabverständigungsverfahren auf der Grundlage
+           der Doppelbesteuerungsabkommen zur Erteilung verbindlicher Vorabzusagen über
+           Verrechnungspreise zwischen international verbundenen Unternehmen (sog. „Advance
+           Pricing Agreements” - APAs)“), wird mit sofortiger Wirkung aufgehoben. Auf bereits
+           anhängige Vorabverständigungsverfahren, deren Anträge bis zum 8. Juni 2021 bei der
+           zuständigen Behörde eingegangen sind, ist es weiterhin anzuwenden.
+
+           Dieses Schreiben wird im Bundessteuerblatt Teil I veröffentlicht.
+
+           Im Auftrag
+
+
+
+           Dieses Dokument wurde elektronisch erstellt und ist ohne Unterschrift gültig.
+

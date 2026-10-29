@@ -1,0 +1,18 @@
+{
+  "guide_sha256": "07a1281e07643bd5beee21a7c190692b5205f287f0b01662cf4478f28cadc100",
+  "ledger_sha256": "1cf8d1b6a38a752e6cbb9457020c8bd8dc1b75fbc8cef4c3d64322fb9ff3ddac",
+  "claim_rows": 112,
+  "quote_anchors": 27,
+  "old_units": 112,
+  "unclassified": [],
+  "source_quote_substrings": true,
+  "guide_unchanged": true,
+  "old_map_full_exact": true,
+  "fictional_controls": {
+    "hypothetical_gain": "1975000",
+    "taxable_before_allowance": "1185000",
+    "quarter_value": "500000",
+    "return_extension_max_years": "12"
+  },
+  "new_legal_review": false
+}

@@ -1,0 +1,518 @@
+{
+  "R01.business-car": {
+    "id": "R01.business-car",
+    "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+    "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+    "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "EStG § 4(5) sentence 1 no. 6",
+    "native_LF": [
+      26,
+      27
+    ],
+    "exact_quote": "6.\nAufwendungen für die Wege des Steuerpflichtigen zwischen Wohnung und Betriebsstätte und für Familienheimfahrten, soweit in den folgenden Sätzen nichts anderes bestimmt ist. 2Zur Abgeltung dieser Aufwendungen ist § 9 Absatz 1 Satz 3 Nummer 4 Satz 2 bis 6 und Nummer 5 Satz 5 bis 7 und Absatz 2 entsprechend anzuwenden. 3 Bei der Nutzung eines Kraftfahrzeugs dürfen die Aufwendungen in Höhe des positiven Unterschiedsbetrags zwischen 0,03 Prozent des inländischen Listenpreises im Sinne des § 6 Absatz 1 Nummer 4 Satz 2 des Kraftfahrzeugs im Zeitpunkt der Erstzulassung je Kalendermonat für jeden Entfernungskilometer und dem sich nach § 9 Absatz 1 Satz 3 Nummer 4 Satz 2 bis 6 oder Absatz 2 ergebenden Betrag sowie Aufwendungen für Familienheimfahrten in Höhe des positiven Unterschiedsbetrags zwischen 0,002 Prozent des inländischen Listenpreises im Sinne des § 6 Absatz 1 Nummer 4 Satz 2 für jeden Entfernungskilometer und dem sich nach § 9 Absatz 1 Satz 3 Nummer 5 Satz 5 bis 7 oder Absatz 2 ergebenden Betrag den Gewinn nicht mindern; ermittelt der Steuerpflichtige die private Nutzung des Kraftfahrzeugs nach § 6 Absatz 1 Nummer 4 Satz 1 oder Satz 3, treten an die Stelle des mit 0,03 oder 0,002 Prozent des inländischen Listenpreises ermittelten Betrags für Fahrten zwischen Wohnung und Betriebsstätte und für Familienheimfahrten die auf diese Fahrten entfallenden tatsächlichen Aufwendungen; § 6 Absatz 1 Nummer 4 Satz 3 zweiter Halbsatz gilt sinngemäß;",
+    "read_on": "2026-10-29",
+    "qualification": "Legislative text, own selected reading on 2026-10-29"
+  },
+  "R01.allowance": {
+    "id": "R01.allowance",
+    "url": "https://www.gesetze-im-internet.de/estg/__9.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-9-20261024.html",
+    "raw_sha256": "82ce506e5bebc2a7b9964e715fa898bc06d4eba0602e62d24606b2e6b49e23bb",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5d05d24ddb446c3d.reader.txt",
+    "reader_sha256": "c5ad161d9234d437d840469dd3defee8b76019704a0b7de9562fb13d88b6b971",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "EStG § 9(1) sentence 3 no. 4",
+    "native_LF": [
+      13,
+      14
+    ],
+    "exact_quote": "4.\nAufwendungen des Arbeitnehmers für die Wege zwischen Wohnung und erster Tätigkeitsstätte im Sinne des Absatzes 4. 2Zur Abgeltung dieser Aufwendungen ist für jeden Arbeitstag, an dem der Arbeitnehmer die erste Tätigkeitsstätte aufsucht eine Entfernungspauschale für jeden vollen Kilometer der Entfernung zwischen Wohnung und erster Tätigkeitsstätte von 0,38 Euro anzusetzen, höchstens jedoch 4 500 Euro im Kalenderjahr; ein höherer Betrag als 4 500 Euro ist anzusetzen, soweit der Arbeitnehmer einen eigenen oder ihm zur Nutzung überlassenen Kraftwagen benutzt. 3Die Entfernungspauschale gilt nicht für Flugstrecken und Strecken mit steuerfreier Sammelbeförderung nach § 3 Nummer 32. 4Für die Bestimmung der Entfernung ist die kürzeste Straßenverbindung zwischen Wohnung und erster Tätigkeitsstätte maßgebend; eine andere als die kürzeste Straßenverbindung kann zugrunde gelegt werden, wenn diese offensichtlich verkehrsgünstiger ist und vom Arbeitnehmer regelmäßig für die Wege zwischen Wohnung und erster Tätigkeitsstätte benutzt wird. 5Nach § 8 Absatz 2 Satz 11 oder Absatz 3 steuerfreie Sachbezüge für Fahrten zwischen Wohnung und erster Tätigkeitsstätte mindern den nach Satz 2 abziehbaren Betrag; ist der Arbeitgeber selbst der Verkehrsträger, ist der Preis anzusetzen, den ein dritter Arbeitgeber an den Verkehrsträger zu entrichten hätte. 6Hat ein Arbeitnehmer mehrere Wohnungen, so sind die Wege von einer Wohnung, die nicht der ersten Tätigkeitsstätte am nächsten liegt, nur zu berücksichtigen, wenn sie den Mittelpunkt der Lebensinteressen des Arbeitnehmers bildet und nicht nur gelegentlich aufgesucht wird. 7Nach § 3 Nummer 37 steuerfreie Sachbezüge mindern den nach Satz 2 abziehbaren Betrag nicht; § 3c Absatz 1 ist nicht anzuwenden.",
+    "read_on": "2026-10-29",
+    "qualification": "Legislative text, own selected reading on 2026-10-29"
+  },
+  "R02.meal-incorporation": {
+    "id": "R02.meal-incorporation",
+    "url": "https://www.gesetze-im-internet.de/estg/__4.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+    "raw_sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7059a8b10a1f492b.reader.txt",
+    "reader_sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "EStG § 4(5) sentence 1 no. 5",
+    "native_LF": [
+      24,
+      25
+    ],
+    "exact_quote": "5.\nMehraufwendungen für die Verpflegung des Steuerpflichtigen. 2Wird der Steuerpflichtige vorübergehend von seiner Wohnung und dem Mittelpunkt seiner dauerhaft angelegten betrieblichen Tätigkeit entfernt betrieblich tätig, sind die Mehraufwendungen für Verpflegung nach Maßgabe des § 9 Absatz 4a abziehbar;",
+    "read_on": "2026-10-29",
+    "qualification": "Legislative text, own selected reading on 2026-10-29"
+  },
+  "R02.meals": {
+    "id": "R02.meals",
+    "url": "https://www.gesetze-im-internet.de/estg/__9.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-9-20261024.html",
+    "raw_sha256": "82ce506e5bebc2a7b9964e715fa898bc06d4eba0602e62d24606b2e6b49e23bb",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5d05d24ddb446c3d.reader.txt",
+    "reader_sha256": "c5ad161d9234d437d840469dd3defee8b76019704a0b7de9562fb13d88b6b971",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "EStG § 9(4a) sentences 1–11",
+    "native_LF": [
+      38,
+      48
+    ],
+    "exact_quote": "(4a) 1Mehraufwendungen des Arbeitnehmers für die Verpflegung sind nur nach Maßgabe der folgenden Sätze als Werbungskosten abziehbar. 2Wird der Arbeitnehmer außerhalb seiner Wohnung und ersten Tätigkeitsstätte beruflich tätig (auswärtige berufliche Tätigkeit), ist zur Abgeltung der ihm tatsächlich entstandenen, beruflich veranlassten Mehraufwendungen eine Verpflegungspauschale anzusetzen. 3Diese beträgt 1.\n28 Euro für jeden Kalendertag, an dem der Arbeitnehmer 24 Stunden von seiner Wohnung und ersten Tätigkeitsstätte abwesend ist,\n2.\njeweils 14 Euro für den An- und Abreisetag, wenn der Arbeitnehmer an diesem, einem anschließenden oder vorhergehenden Tag außerhalb seiner Wohnung übernachtet,\n3.\n14 Euro für den Kalendertag, an dem der Arbeitnehmer ohne Übernachtung außerhalb seiner Wohnung mehr als 8 Stunden von seiner Wohnung und der ersten Tätigkeitsstätte abwesend ist; beginnt die auswärtige berufliche Tätigkeit an einem Kalendertag und endet am nachfolgenden Kalendertag ohne Übernachtung, werden 14 Euro für den Kalendertag gewährt, an dem der Arbeitnehmer den überwiegenden Teil der insgesamt mehr als 8 Stunden von seiner Wohnung und der ersten Tätigkeitsstätte abwesend ist.\n4Hat der Arbeitnehmer keine erste Tätigkeitsstätte, gelten die Sätze 2 und 3 entsprechend; Wohnung im Sinne der Sätze 2 und 3 ist der Hausstand, der den Mittelpunkt der Lebensinteressen des Arbeitnehmers bildet sowie eine Unterkunft am Ort der ersten Tätigkeitsstätte im Rahmen der doppelten Haushaltsführung. 5Bei einer Tätigkeit im Ausland treten an die Stelle der Pauschbeträge nach Satz 3 länderweise unterschiedliche Pauschbeträge, die für die Fälle der Nummer 1 mit 120 sowie der Nummern 2 und 3 mit 80 Prozent der Auslandstagegelder nach dem Bundesreisekostengesetz vom Bundesministerium der Finanzen im Einvernehmen mit den obersten Finanzbehörden der Länder aufgerundet auf volle Euro festgesetzt werden; dabei bestimmt sich der Pauschbetrag nach dem Ort, den der Arbeitnehmer vor 24 Uhr Ortszeit zuletzt erreicht, oder, wenn dieser Ort im Inland liegt, nach dem letzten Tätigkeitsort im Ausland. 6Der Abzug der Verpflegungspauschalen ist auf die ersten drei Monate einer längerfristigen beruflichen Tätigkeit an derselben Tätigkeitsstätte beschränkt. 7Eine Unterbrechung der beruflichen Tätigkeit an derselben Tätigkeitsstätte führt zu einem Neubeginn, wenn sie mindestens vier Wochen dauert. 8Wird dem Arbeitnehmer anlässlich oder während einer Tätigkeit außerhalb seiner ersten Tätigkeitsstätte vom Arbeitgeber oder auf dessen Veranlassung von einem Dritten eine Mahlzeit zur Verfügung gestellt, sind die nach den Sätzen 3 und 5 ermittelten Verpflegungspauschalen zu kürzen: 1.\nfür Frühstück um 20 Prozent,\n2.\nfür Mittag- und Abendessen um jeweils 40 Prozent,\nder nach Satz 3 Nummer 1 gegebenenfalls in Verbindung mit Satz 5 maßgebenden Verpflegungspauschale für einen vollen Kalendertag; die Kürzung darf die ermittelte Verpflegungspauschale nicht übersteigen. 9Satz 8 gilt auch, wenn Reisekostenvergütungen wegen der zur Verfügung gestellten Mahlzeiten einbehalten oder gekürzt werden oder die Mahlzeiten nach § 40 Absatz 2 Satz 1 Nummer 1a pauschal besteuert werden. 10Hat der Arbeitnehmer für die Mahlzeit ein Entgelt gezahlt, mindert dieser Betrag den Kürzungsbetrag nach Satz 8. 11Erhält der Arbeitnehmer steuerfreie Erstattungen für Verpflegung, ist ein Werbungskostenabzug insoweit ausgeschlossen. 12Die Verpflegungspauschalen nach den Sätzen 3 und 5, die Dreimonatsfrist nach den Sätzen 6 und 7 sowie die Kürzungsregelungen nach den Sätzen 8 bis 10 gelten entsprechend auch für den Abzug von Mehraufwendungen für Verpflegung, die bei einer beruflich veranlassten doppelten Haushaltsführung entstehen, soweit der Arbeitnehmer vom eigenen Hausstand im Sinne des § 9 Absatz 1 Satz 3 Nummer 5 abwesend ist; dabei ist für jeden Kalendertag innerhalb der Dreimonatsfrist, an dem gleichzeitig eine Tätigkeit im Sinne des Satzes 2 oder des Satzes 4 ausgeübt wird, nur der jeweils höchste in Betracht kommende Pauschbetrag abziehbar. 13Die Dauer einer Tätigkeit im Sinne des Satzes 2 an dem Tätigkeitsort, an dem die doppelte Haushaltsführung begründet wurde, ist auf die Dreimonatsfrist anzurechnen, wenn sie ihr unmittelbar vorausgegangen ist.",
+    "read_on": "2026-10-29",
+    "qualification": "Legislative text, own selected reading on 2026-10-29"
+  },
+  "R03.soli-children": {
+    "id": "R03.soli-children",
+    "url": "https://www.gesetze-im-internet.de/solzg_1995/__3.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/solzg-3-20261024.html",
+    "raw_sha256": "259b2be21d91f243556ad6059a7d0d88011408d3d0c63204b06148b12929f1b6",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc748242e6e54c746.reader.txt",
+    "reader_sha256": "f55dfd9a343bfaf26781fef5b93f575cd450195014eaac27a8aa838df05af6e9",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "SolzG § 3(2)",
+    "native_LF": [
+      27,
+      27
+    ],
+    "exact_quote": "(2) Bei der Veranlagung zur Einkommensteuer ist Bemessungsgrundlage für den Solidaritätszuschlag die Einkommensteuer, die abweichend von § 2 Abs. 6 des Einkommensteuergesetzes unter Berücksichtigung von Freibeträgen nach § 32 Abs. 6 des Einkommensteuergesetzes in allen Fällen des § 32 des Einkommensteuergesetzes festzusetzen wäre.",
+    "read_on": "2026-10-29",
+    "qualification": "Legislative text, own selected reading on 2026-10-29"
+  },
+  "R03.employee-expense": {
+    "id": "R03.employee-expense",
+    "url": "https://www.gesetze-im-internet.de/estg/__9.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-9-20261024.html",
+    "raw_sha256": "82ce506e5bebc2a7b9964e715fa898bc06d4eba0602e62d24606b2e6b49e23bb",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U5d05d24ddb446c3d.reader.txt",
+    "reader_sha256": "c5ad161d9234d437d840469dd3defee8b76019704a0b7de9562fb13d88b6b971",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "EStG § 9(1) opening",
+    "native_LF": [
+      7,
+      7
+    ],
+    "exact_quote": "(1) 1Werbungskosten sind Aufwendungen zur Erwerbung, Sicherung und Erhaltung der Einnahmen. 2Sie sind bei der Einkunftsart abzuziehen, bei der sie erwachsen sind. 3Werbungskosten sind auch 1.",
+    "read_on": "2026-10-29",
+    "qualification": "Legislative text, own selected reading on 2026-10-29"
+  },
+  "R03.special-JAEG": {
+    "id": "R03.special-JAEG",
+    "url": "https://www.gesetze-im-internet.de/svbezgrv_2026/__2.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubbd69a1741987610.body",
+    "raw_sha256": "e92edebd8a2a9df10c1f49f4d303a8ad162bc0c12fad233b1dc58626e47fea37",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ubbd69a1741987610.reader.txt",
+    "reader_sha256": "de5bf098b2f8986038c3f02b0b664acf03f46d383afb5fc0d1817ff1276d30d2",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "SVBezGrV 2026 § 2(1)–(2)",
+    "native_LF": [
+      7,
+      8
+    ],
+    "exact_quote": "(1) Die Jahresarbeitsentgeltgrenze nach § 6 Absatz 6 des Fünften Buches Sozialgesetzbuch wird für das Jahr 2026 auf 77 400 Euro festgesetzt. Umgerechnet auf den Monat ergeben sich 6 450 Euro.\n(2) Die Jahresarbeitsentgeltgrenze nach § 6 Absatz 7 des Fünften Buches Sozialgesetzbuch wird für das Jahr 2026 auf 69 750 Euro festgesetzt. Umgerechnet auf den Monat ergeben sich 5 812,50 Euro.",
+    "read_on": "2026-10-29",
+    "qualification": "Own exact regulation amounts; special JAEG alone is NOT the contribution-ceiling incorporation. BMG actual 2026 application separately quoted."
+  },
+  "R03.current223-boundary": {
+    "id": "R03.current223-boundary",
+    "url": "https://www.gesetze-im-internet.de/sgb_5/__223.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/sgb5-223-20261024.html",
+    "raw_sha256": "a2f3f5a04b312fe4aa90a2434559e7a46471a60cea568b839b9ede19812d7d3a",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uc9fb465ba767d198.reader.txt",
+    "reader_sha256": "cb88c51fc715e961ae49acb053238afec1a236030251b238d2d1e9f2407c915d",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "SGB V § 223(1)–(4), current replacement",
+    "native_LF": [
+      7,
+      10
+    ],
+    "exact_quote": "(1) Die Beiträge sind für jeden Kalendertag der Mitgliedschaft zu zahlen, soweit dieses Buch nichts Abweichendes bestimmt.\n(2) Die Beiträge werden nach den beitragspflichtigen Einnahmen der Mitglieder bemessen. Für die Berechnung ist die Woche zu sieben, der Monat zu dreißig und das Jahr zu dreihundertsechzig Tagen anzusetzen.\n(3) Beitragspflichtige Einnahmen sind bis zu einem Betrag von einem Dreihundertsechzigstel der Beitragsbemessungsgrenze nach Absatz 4 für den Kalendertag zu berücksichtigen. Einnahmen, die diesen Betrag übersteigen, bleiben außer Ansatz, soweit dieses Buch nichts Abweichendes bestimmt.\n(4) Die Beitragsbemessungsgrenze im Jahr 2027 entspricht der um 3 600 Euro erhöhten Jahresarbeitsentgeltgrenze nach § 6 Absatz 7 im Jahr 2027. § 6 Absatz 6 Satz 2 und 4 gilt entsprechend. Die Bundesregierung setzt die Beitragsbemessungsgrenze in der Rechtsverordnung nach § 160 des Sechsten Buches gesondert fest.",
+    "read_on": "2026-10-29",
+    "qualification": "Own current text, whose paragraph 4 expressly addresses 2027. Not quoted as the old operative 2026 incorporation or silently assigned a deferred commencement."
+  },
+  "R04.crossborder-mandatory": {
+    "id": "R04.crossborder-mandatory",
+    "url": "https://www.gesetze-im-internet.de/estg/__46.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-46-20261024.html",
+    "raw_sha256": "c27dd4e778fb62fb6a389453e29b68329e447cff65925995d8941825c1fc3750",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ucb9a939517193e9c.reader.txt",
+    "reader_sha256": "4f1e49286a87ec81f6d872ddd07080cf0b65c71fa15b9ab5ada9da83dcd42d9c",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "EStG § 46(2) no. 7",
+    "native_LF": [
+      32,
+      36
+    ],
+    "exact_quote": "7.\nwenn a)\nfür einen unbeschränkt Steuerpflichtigen im Sinne des § 1 Absatz 1 bei der Bildung der Lohnsteuerabzugsmerkmale (§ 39) ein Ehegatte im Sinne des § 1a Absatz 1 Nummer 2 berücksichtigt worden ist oder\nb)\nfür einen Steuerpflichtigen, der zum Personenkreis des § 1 Absatz 3 oder des § 1a gehört, Lohnsteuerabzugsmerkmale nach § 39 Absatz 2 gebildet worden sind; das nach § 39 Absatz 2 Satz 2 bis 4 zuständige Betriebsstättenfinanzamt ist dann auch für die Veranlagung zuständig;",
+    "read_on": "2026-10-29",
+    "qualification": "Legislative text, own selected reading on 2026-10-29"
+  },
+  "R03.BMG-health-2026": {
+    "url": "https://www.bundesgesundheitsministerium.de/beitraege/seite",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BMG-health-2026.html",
+    "raw_sha256": "ad135633759ad3aea1ad2fc36f4689e90bca5905e5d248a6f2cbb521caf92ed4",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BMG-health-2026.reader.txt",
+    "reader_sha256": "e0d3a84fc7114a8463fee70d840ebe610f7a5cd7e598b6e2a965870cf0cb1d39",
+    "read_date": "2026-10-29",
+    "kind": "official ministry administrative guidance; not legislative text",
+    "extraction": "HTMLParser, script/style omitted, whitespace joined within block; native LF",
+    "id": "R03.BMG-health-2026",
+    "article": "BMG: published 2026 health/care contribution-ceiling guidance",
+    "native_LF": [
+      379,
+      380
+    ],
+    "exact_quote": "Beitragshöhe\nSowohl bei pflichtversicherten als auch bei freiwillig versicherten Mitgliedern werden die Einkünfte insgesamt höchstens bis zur Beitragsbemessungsgrenze von 5.812,50 Euro im Monat bzw. 69.750 Euro im Jahr (Stand: 2026) berücksichtigt.",
+    "read_on": "2026-10-29",
+    "qualification": "Explicit official administrative 2026 application, not a statutory quotation. Supports the existing €69,750 annual / €5,812.50 monthly contribution ceiling independently of a bare special-JAEG reference."
+  },
+  "R03.BMG-care-2026": {
+    "url": "https://www.bundesgesundheitsministerium.de/themen/pflege/online-ratgeber-pflege/die-pflegeversicherung/finanzierung",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BMG-care-2026.html",
+    "raw_sha256": "a77a234a354599240cef1e04d676f1f40bb2337a0b078113a98e84771286e26a",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BMG-care-2026.reader.txt",
+    "reader_sha256": "9e555bf46242681b414297d5273fe42868f7ca54d56f6ebebea40073b59e2b35",
+    "read_date": "2026-10-29",
+    "kind": "official ministry administrative guidance; not legislative text",
+    "extraction": "HTMLParser, script/style omitted, whitespace joined within block; native LF",
+    "id": "R03.BMG-care-2026",
+    "article": "BMG: published 2026 health/care contribution-ceiling guidance",
+    "native_LF": [
+      435,
+      436
+    ],
+    "exact_quote": "Beitragsbemessungsgrenze\nFür die soziale Pflegeversicherung gilt die gleiche Beitragsbemessungsgrenze wie für die gesetzliche Krankenversicherung. Im Jahr 2026 liegt diese Einkommensgrenze, bis zu der Einnahmen für die Kranken- und Pflegeversicherungsbeiträge herangezogen werden, bei 69.750,00 Euro im Jahr (5.812,50 Euro monatlich).",
+    "read_on": "2026-10-29",
+    "qualification": "Explicit official administrative 2026 application, not a statutory quotation. Supports the existing €69,750 annual / €5,812.50 monthly contribution ceiling independently of a bare special-JAEG reference."
+  },
+  "R03.amend223": {
+    "id": "R03.amend223",
+    "article": "BGBl. I 2026 no. 228, Article 1 no. 61",
+    "url": "https://www.recht.bund.de/bgbl/1/2026/228/regelungstext.pdf?__blob=publicationFile&v=2",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BStabG2026.pdf",
+    "raw_sha256": "190f7ef61f929f26d84e1d63847181516c04582c8769b94e76f66914599c7b76",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BStabG2026.txt",
+    "reader_sha256": "6793766566cc978987175f9e3d23961ac2fca15cf0c6cef6d05a3c5800ae2cfc",
+    "native_LF": [
+      1782,
+      1789
+    ],
+    "exact_quote": "61. § 223 Absatz 3 wird durch die folgenden Absätze 3 und 4 ersetzt:\n       „(3) Beitragspflichtige Einnahmen sind bis zu einem Betrag von einem Dreihundertsechzigstel der\n     Beitragsbemessungsgrenze nach Absatz 4 für den Kalendertag zu berücksichtigen. Einnahmen, die diesen\n     Betrag übersteigen, bleiben außer Ansatz, soweit dieses Buch nichts Abweichendes bestimmt.\n       (4) Die Beitragsbemessungsgrenze im Jahr 2027 entspricht der um 3 600 Euro erhöhten Jahresarbeits­\n     entgeltgrenze nach § 6 Absatz 7 im Jahr 2027. § 6 Absatz 6 Satz 2 und 4 gilt entsprechend. Die Bundes­\n     regierung setzt die Beitragsbemessungsgrenze in der Rechtsverordnung nach § 160 des Sechsten Buches\n     gesondert fest.“",
+    "read_on": "2026-10-29",
+    "qualification": "Actual enacted text. No. 61 is not among Article 8 deferred items: general commencement applies. New paragraph 4 expressly sets 2027; it is not promoted into an express 2026 incorporation."
+  },
+  "R03.commencement": {
+    "id": "R03.commencement",
+    "article": "Same, Article 8(1)–(4)",
+    "url": "https://www.recht.bund.de/bgbl/1/2026/228/regelungstext.pdf?__blob=publicationFile&v=2",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BStabG2026.pdf",
+    "raw_sha256": "190f7ef61f929f26d84e1d63847181516c04582c8769b94e76f66914599c7b76",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BStabG2026.txt",
+    "reader_sha256": "6793766566cc978987175f9e3d23961ac2fca15cf0c6cef6d05a3c5800ae2cfc",
+    "native_LF": [
+      2703,
+      2714
+    ],
+    "exact_quote": "                                                     Artikel 8\n\n                                                  Inkrafttreten\n  (1) Dieses Gesetz tritt vorbehaltlich der Absätze 2 bis 4 am Tag nach der Verkündung in Kraft.\n   (2) Artikel 1 Nummer 1, 5, 6, 8, 12 Buchstabe b, Nummer 13, 16 Buchstabe b und c, Nummer 18 Buchstabe b,\nNummer 20 bis 23, 31 Buchstabe a und c, Nummer 32 Buchstabe b und d, Nummer 33 Buchstabe b und c,\nNummer 34, 37, 38, 43 Buchstabe c, Nummer 47, 48 Buchstabe b, Nummer 62, 64 bis 66, 68 Buchstabe b und\nNummer 69, Artikel 2 Nummer 1, Artikel 3 Nummer 1, Artikel 5 Nummer 3, Artikel 6 und Artikel 7 Nummer 0a und 1\ntreten am 1. Januar 2027 in Kraft.\n   (3) Artikel 1 Nummer 2, 7, 16 Buchstabe a, Nummer 17, 18 Buchstabe a, Nummer 19, 63, 68 Buchstabe a und\nArtikel 7 Nummer 2 treten am 1. Januar 2028 in Kraft.\n  (4) Artikel 2 Nummer 3 tritt am 1. Juli 2028 in Kraft.",
+    "read_on": "2026-10-29",
+    "qualification": "Actual enacted text. No. 61 is not among Article 8 deferred items: general commencement applies. New paragraph 4 expressly sets 2027; it is not promoted into an express 2026 incorporation."
+  },
+  "R05.statute": {
+    "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-15-20261024.html",
+    "sha256": "9c66144e9197fbf44d69007269443432cc8e67aa92b3c7fb1d2c732e3315cbb4",
+    "bytes": 12154,
+    "official_url": "https://www.gesetze-im-internet.de/estg/__15.html",
+    "identity_status": "Existing citation/cache locator confirmed by exact retained bytes; actual selected reads separately recorded.",
+    "source_id": "DEB023",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB023.txt",
+    "reader_sha256": "b8837a2eacafe010efbc888b8bdbb2fdb28e293691da768e14d348c42b41b9c9",
+    "extraction": "HTMLParser block text (whitespace joined within blocks) or pdftotext-layout PDF; nativeLF split onLF, full source not asserted read.",
+    "html_title": [
+      "&#167; 15 EStG - Einzelnorm"
+    ],
+    "id": "R05.statute",
+    "article": "EStG § 15(2)–(3)",
+    "native_LF": [
+      15,
+      19
+    ],
+    "exact_quote": "(2) 1Eine selbständige nachhaltige Betätigung, die mit der Absicht, Gewinn zu erzielen, unternommen wird und sich als Beteiligung am allgemeinen wirtschaftlichen Verkehr darstellt, ist Gewerbebetrieb, wenn die Betätigung weder als Ausübung von Land- und Forstwirtschaft noch als Ausübung eines freien Berufs noch als eine andere selbständige Arbeit anzusehen ist. 2Eine durch die Betätigung verursachte Minderung der Steuern vom Einkommen ist kein Gewinn im Sinne des Satzes 1. 3Ein Gewerbebetrieb liegt, wenn seine Voraussetzungen im Übrigen gegeben sind, auch dann vor, wenn die Gewinnerzielungsabsicht nur ein Nebenzweck ist.\n(3) Als Gewerbebetrieb gilt in vollem Umfang die mit Einkünfteerzielungsabsicht unternommene Tätigkeit 1.\neiner offenen Handelsgesellschaft, einer Kommanditgesellschaft oder einer anderen Personengesellschaft, wenn die Gesellschaft auch eine Tätigkeit im Sinne des Absatzes 1 Satz 1 Nummer 1 ausübt oder gewerbliche Einkünfte im Sinne des Absatzes 1 Satz 1 Nummer 2 bezieht. 2Dies gilt unabhängig davon, ob aus der Tätigkeit im Sinne des Absatzes 1 Satz 1 Nummer 1 ein Gewinn oder Verlust erzielt wird oder ob die gewerblichen Einkünfte im Sinne des Absatzes 1 Satz 1 Nummer 2 positiv oder negativ sind;\n2.\neiner Personengesellschaft, die keine Tätigkeit im Sinne des Absatzes 1 Satz 1 Nummer 1 ausübt und bei der ausschließlich eine oder mehrere Kapitalgesellschaften persönlich haftende Gesellschafter sind und nur diese oder Personen, die nicht Gesellschafter sind, zur Geschäftsführung befugt sind (gewerblich geprägte Personengesellschaft). 2Ist eine gewerblich geprägte Personengesellschaft als persönlich haftender Gesellschafter an einer anderen Personengesellschaft beteiligt, so steht für die Beurteilung, ob die Tätigkeit dieser Personengesellschaft als Gewerbebetrieb gilt, die gewerblich geprägte Personengesellschaft einer Kapitalgesellschaft gleich.",
+    "read_on": "2026-10-29",
+    "qualification": "Own current statute read, interpreted with actual BMF/BFH threshold authorities, not as a rule excluding judicial interpretation."
+  },
+  "R05.BFH-separability": {
+    "id": "R05.BFH-separability",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/BFH-VIIIR6-12.pdf",
+    "raw_sha256": "18a310660b30ee1211acf5e05a3528c37e77fbb58af983ae25f3df0dac3ee518",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/BFH-VIIIR6-12.reader.txt",
+    "reader_sha256": "62332cc64b8f1d3eddc3d59f16a00eec7816f9153051a68ab8058416056bc9d8",
+    "native_LF": [
+      282,
+      314
+    ],
+    "exact_quote": "45\nb) Voraussetzung für die Anwendung von § 15 Abs. 3 Nr. 1 EStG ist zunächst, dass die Gesellschaft sowohl\ngewerbliche als auch von diesen zu trennende nicht gewerbliche Einkünfte erzielt, d.h. dass die unterschiedlichen\nTätigkeiten nicht derart miteinander verflochten sind, dass sie sich gegenseitig unlösbar bedingen. Ist die Tätigkeit\nder Gesellschaft hingegen wegen untrennbarer Verflechtung der Tätigkeiten einheitlich als originär gewerblich zu\nqualifizieren, ergibt sich die Gewerbesteuerpflicht unmittelbar aus § 2 Abs. 1 Satz 2 GewStG, § 15 Abs. 1 Nr. 1 EStG.\nLiegt hingegen eine einheitliche freiberufliche Tätigkeit vor, entfällt die Anwendung von § 15 Abs. 3 Nr. 1 EStG\n(Schmidt/Wacker, EStG, 33. Aufl., § 15 Rz 186, m.w.N.).\n46\nAusgehend von diesen Grundsätzen führt der Bereich, in dem die Gesellschafter der Klägerin nicht mehr leitend und\neigenverantwortlich tätig sind, zu gewerblichen Einkünften i.S. von § 15 Abs. 2 Satz 1 EStG, die getrennt von der\nselbständigen Tätigkeit der Klägerin zu betrachten sind.\n47\nEine Trennung der beiden Tätigkeiten ist im Streitfall möglich, da die Mitunternehmer der Klägerin nur im Hinblick\n48\nSeite 5 von 7\n\f\nauf die von Y ausgeübte Tätigkeit als Insolvenzverwalter und Treuhänder nicht leitend und eigenverantwortlich\ntätig gewesen sind und die darauf entfallenden Umsätze auch von den Umsätzen aus selbständiger Arbeit getrennt\nermittelt werden konnten (vgl. zur Trennbarkeit bei einem Einzelunternehmen BFH-Urteil vom 8. Oktober 2008\nVIII R 53/07, BFHE 223, 272, BStBl II 2009, 143).\nHinsichtlich der übrigen Tätigkeiten erfüllen alle Gesellschafter in ihrer gesamthänderischen Verbundenheit, sowohl\nihrer persönlichen Qualifikation nach als auch mit der von ihnen und den anderen Arbeitnehmern ausgeübten\nTätigkeit, die Voraussetzungen des § 18 Abs. 1 Nr. 1 und Nr. 3 EStG.\n49\nInsoweit unterscheidet sich der vorliegende Fall von der Beteiligung eines berufsfremden Mitunternehmers an einer\nfreiberuflich tätigen Mitunternehmerschaft oder der Beteiligung eines Mitunternehmers, der tatsächlich keinen\nfreien Beruf ausübt, da in diesen Fällen bereits die Gesellschafter in ihrer gesamthänderischen Verbundenheit nicht\ndie Voraussetzungen des § 18 Abs. 1 Nr. 1 EStG erfüllen (vgl. hierzu BFH-Urteile in BFHE 238, 444, BStBl II 2013, 79,\nund in BFHE 223, 206, BStBl II 2009, 642).\n50\nc) Die gewerblichen Umsätze der Klägerin sind so gering, dass der Grundsatz der Verhältnismäßigkeit die\nAbfärbewirkung des § 15 Abs. 3 Nr. 1 EStG im Streitfall ausschließt.",
+    "article": "BFH VIII R 6/12, paras 45–50",
+    "url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201510044?type=1646225765",
+    "read_on": "2026-10-29",
+    "qualification": "Own actual selected reading of exact retained official body, first acquired by independent reviewer; its verdict is not adopted as writer proof."
+  },
+  "R05.BFH-thresholds": {
+    "id": "R05.BFH-thresholds",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/BFH-VIIIR6-12.pdf",
+    "raw_sha256": "18a310660b30ee1211acf5e05a3528c37e77fbb58af983ae25f3df0dac3ee518",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/BFH-VIIIR6-12.reader.txt",
+    "reader_sha256": "62332cc64b8f1d3eddc3d59f16a00eec7816f9153051a68ab8058416056bc9d8",
+    "native_LF": [
+      315,
+      378
+    ],
+    "exact_quote": "51\naa) Aufgrund der dargestellten Rechtsprechung des BVerfG, das die Verhältnismäßigkeit der Abfärberegelung u.a.\nauf der Grundlage der restriktiven Auslegung des § 15 Abs. 3 Nr. 1 EStG durch den BFH bejaht hat, hält der Senat an\nder Rechtsprechung fest, dass einer originär gewerblichen Tätigkeit einer ansonsten Einkünfte aus selbständiger\nArbeit erzielenden Personengesellschaft dann keine die übrige Tätigkeit der Gesellschaft umqualifizierende\nWirkung zukommt, wenn es sich um eine gewerbliche Tätigkeit von äußerst geringem Ausmaß handelt (BFH-Urteile\nin BFHE 189, 419, BStBl II 2000, 229; in BFHE 196, 511, BStBl II 2002, 152; in BFHE 197, 400, BStBl II 2002, 221;\nBFH-Beschluss in BFH/NV 2004, 954).\n52\nbb) Eine Tätigkeit von äußerst geringem Ausmaß, die nicht dazu führt, dass die gesamte Tätigkeit der\nPersonengesellschaft einheitlich als gewerblich fingiert wird, liegt dann vor, wenn die originär gewerblichen\nNettoumsatzerlöse 3 v.H. der Gesamtnettoumsatzerlöse der Gesellschaft und den Betrag von 24.500 € im\nVeranlagungszeitraum nicht übersteigen\n.\n53\n(1) Ob es sich bei der gewerblichen Tätigkeit um eine äußerst geringfügige Tätigkeit handelt, die nicht zur\nUmqualifizierung der übrigen Einkünfte führt, kann nur anhand eines Vergleichs beider Tätigkeiten festgestellt\nwerden.\n54\nAls geeigneter Vergleichsmaßstab ist das ‑‑im Regelfall ohne Schwierigkeiten zu ermittelnde‑‑ Verhältnis der\nNettoumsätze der gewerblichen Tätigkeit zu den Gesamtnettoumsätzen der Gesellschaft aus selbständiger Arbeit\nund gewerblicher Tätigkeit heranzuziehen. Die erwirtschafteten Umsätze erlauben bei typisierender Betrachtung\nRückschlüsse auf den auf die verschiedenen Tätigkeiten entfallenden zeitlichen und finanziellen Aufwand der\nGesellschaft und damit darauf, ob der gewerblichen Tätigkeit eine völlig untergeordnete Bedeutung zukommt.\n55\n(2) Hinsichtlich der Höhe des Anteils der gewerblichen Umsätze folgt der Senat nicht der Auffassung des FA,\nwonach lediglich ein Anteil von 1,25 v.H. als äußerst geringfügig anzusehen ist. Zwar hat der BFH bereits\nentschieden, dass jedenfalls bei einem Anteil der gewerblichen Umsatzerlöse in Höhe von 1,25 v.H. der\nGesamtumsatzerlöse eine gewerbliche Tätigkeit von äußerst geringem Umfang vorliege (BFH-Urteil in BFHE 189,\n419, BStBl II 2000, 229; bestätigt im BFH-Urteil in BFHE 232, 162, BStBl II 2011, 506, bei dem die gewerblichen\nUmsätze jedoch noch unter 1 v.H. lagen). Eine Entscheidung, dass höhere gewerbliche Umsätze immer zum Eintritt\nder Abfärbewirkung führen, war damit jedoch nicht getroffen. So hat der BFH bereits im Urteil in BFHE 189, 419,\nBStBl II 2000, 229 darauf hingewiesen, dass erst bei gewerblichen Umsätzen in Höhe von 6 v.H. ein äußerst geringer\nUmfang nicht mehr vorliegen dürfte (unter Hinweis auf das BFH-Urteil in BFHE 175, 357, BStBl II 1995, 171). In\neinem späteren summarischen Verfahren wurde zumindest ein Umsatzanteil in Höhe von 2,81 v.H. des\nGesamtumsatzes noch als äußerst geringfügig angesehen (BFH-Beschluss in BFH/NV 2004, 954).\n56\n(3) Der erkennende Senat hält auf dieser Grundlage einen gewerblichen Umsatzanteil von 3 v.H. typisierend noch\nfür von so untergeordneter Bedeutung, dass eine Umqualifizierung der gesamten Einkünfte unverhältnismäßig\nwäre. Dabei sind die Nettoumsätze zugrunde zu legen, um das Verhältnis der Umsätze bei unterschiedlichen\nUmsatzsteuersätzen nicht zu verfälschen.\n57\ncc) Zur Vermeidung einer Privilegierung von Personengesellschaften, die besonders hohe freiberufliche Umsätze\n58\nSeite 6 von 7\n\f\nQuelle: \nwww.bundesfinanzhof.de\nerzielen und damit in größerem Umfang gewerblich tätig sein könnten und unter Berücksichtigung des\nNormzwecks, das Gewerbesteueraufkommen zu schützen, ist es außerdem erforderlich, den Betrag der\ngewerblichen Nettoumsatzerlöse, bei dem noch von einem äußerst geringfügigen Umfang ausgegangen werden\nkann, auf einen Höchstbetrag in Höhe von 24.500 € zu begrenzen. Dieser orientiert sich an dem\ngewerbesteuerlichen Freibetrag für Personengesellschaften nach § 11 Abs. 1 Satz 3 Nr. 1 GewStG. Denn im\nRegelfall droht dann kein Ausfall von Gewerbesteuer, wenn bereits die gewerblichen Umsätze unter dem\ngewinnbezogenen Freibetrag in Höhe von 24.500 € liegen.\n(1) Allerdings handelt es sich bei dem Freibetrag des § 11 Abs. 1 Satz 3 Nr. 1 GewStG um eine Gewinn- und nicht um\neine Umsatzgrenze. Auch liegt der Zweck dieser Regelung nicht in der Freistellung von Kleingewerbetreibenden\nvon der Gewerbesteuer, sondern in der Herstellung einer vergleichbaren gewerbesteuerlichen Belastung im\nVergleich zu Kapitalgesellschaften durch Berücksichtigung eines fiktiven Unternehmerlohnes (vgl. zur Kritik FG\nMünster, Urteil vom 19. Juni 2008  8 K 4272/06 G, Entscheidungen der Finanzgerichte 2008, 1975).\n59\n(2) Gleichwohl ist es sachgerecht, den für Personengesellschaften geltenden gewerbesteuerlichen Freibetrag als\nUmsatzgrenze für eine typisierende Einschränkung der Abfärbewirkung gemäß § 15 Abs. 3 Nr. 1 EStG\nheranzuziehen.",
+    "article": "BFH VIII R 6/12, paras 51–59",
+    "url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201510044?type=1646225765",
+    "read_on": "2026-10-29",
+    "qualification": "Own actual selected reading of exact retained official body, first acquired by independent reviewer; its verdict is not adopted as writer proof."
+  },
+  "R05.BMF-current": {
+    "id": "R05.BMF-current",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/EStH15-8.html",
+    "raw_sha256": "585fb3f29a5bf17488d4ab46c9c99ba2a3b611010b082f3dd40ef58b01bc7c9f",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-independent-review-2026-10-29/new-primary-checks/EStH15-8.reader.txt",
+    "reader_sha256": "dc76ddc69bdad63b5041d127e211e2db9dd21a79f1265631913ae82c11961118",
+    "native_LF": [
+      2178,
+      2190
+    ],
+    "exact_quote": "Auslegungsfragen zu § 15 Abs. 3 Nr. 1\n§ 15 Abs. 3 Nr. 1 kommt auch dann zur Anwendung, wenn die Geschäftstätigkeit einer Personengesellschaft ausschließlich in dem Halten der Anteile an einer weiteren Personengesellschaft besteht und die Personengesellschaft über kein weiteres Vermögen verfügt, mittels dessen Einkünfte erzielt werden (>BMF vom 10.12.2024 – BStBl I S. 1634).\nBagatellgrenze\nEine Umqualifizierung nach § 15 Abs. 3 Nr. 1 in Einkünfte aus Gewerbebetrieb tritt nicht ein, wenn die originär gewerblichen Nettoumsatzerlöse 3 % der Gesamtnettoumsatzerlöse der Gesellschaft und den Betrag von 24.500 € im VZ nicht übersteigen (>BFH vom 27.08.2014 – VIII R 16/11, BStBl II 2015 S. 996, VIII R 41/11, BStBl II 2015 S. 999 und VIII R 6/12, BStBl II 2015 S. 1002). Die Bagatellgrenze gilt auch, wenn im gewerblichen Tätigkeitsbereich Verluste erzielt werden (>BFH vom 30.06.2022 – IV R 42/19, BStBl II 2023 S. 118).\nJede Beteiligung, aus der eine Personengesellschaft gewerbliche Einkünfte bezieht, führt ohne Beachtung einer Bagatellgrenze zu einer Umqualifizierung aller weiteren Einkünfte in solche aus Gewerbebetrieb (>BFH vom 06.06.2019 – IV R 30/16, BStBl II 2020 S. 649 und vom 05.09.2023 – IV R 24/20, BStBl II 2025 S. 778). Auch der Umstand, dass es sich bei den Beteiligungseinkünften um verrechenbare Verluste nach § 15a handelt, steht dem nicht entgegen (>BFH vom 11.07.2024 – IV R 18/22, BStBl II S. 765).\nDie Bagatellgrenze gilt auch, wenn die Personengesellschaft teils gewerblich teils vermögensverwaltend tätig ist. Dabei ist weder eine höhere Bagatellgrenze anzusetzen noch ist der Prüfung der sog. Abfärbewirkung ein mehrjähriger Beobachtungszeitraum zugrunde zu legen (>BFH vom 30.06.2022 – IV R 42/19, BStBl II 2023 S. 118).\nBeteiligung an einer gewerblich tätigen Mitunternehmerschaft\nBei Beteiligung einer vermögensverwaltenden Personengesellschaft an einer gewerblich tätigen Mitunternehmerschaft mit abweichendem Wj. tritt die Abfärbewirkung nur ein, wenn der Obergesellschaft im betreffenden Kj. nach Maßgabe des § 4a Abs. 2 Nr. 2 ein Gewinnanteil zugewiesen ist (>BFH vom 26.06.2014 – IV R 5/11, BStBl II S. 972).\nBetriebsaufspaltung\n>H 15.7 (4) Umfassend gewerbliche Besitzpersonengesellschaft\nEinheitliche Gesamtbetätigung\nEine Umqualifizierung nach § 15 Abs. 3 Nr. 1 kommt nicht in Betracht, wenn eine gemischte Tätigkeit als einheitliche Gesamtbetätigung anzusehen ist. Eine solche Tätigkeit muss vielmehr unabhängig von der „Abfärbetheorie\" danach qualifiziert werden, welche Tätigkeit der Gesamtbetätigung das Gepräge gibt (>BFH vom 24.04.1997 – IV R 60/95, BStBl II S. 567).\n>H 15.6 (Gemischte Tätigkeit)",
+    "article": "BMF EStH 2025 H 15.8(5), Bagatellgrenze/separate participation limb",
+    "url": "https://grsth.bundesfinanzministerium.de/esth/2025/A-Einkommensteuergesetz/II-Einkommen-2-24b/8-Die-einzelnen-Einkunftsarten-13-24b/b-Gewerbebetrieb-15-17/Paragraf-15/paragraf-15.html",
+    "read_on": "2026-10-29",
+    "qualification": "Own actual selected reading of exact retained official body, first acquired by independent reviewer; its verdict is not adopted as writer proof."
+  },
+  "R05.BFH-2022": {
+    "id": "R05.BFH-2022",
+    "article": "BFH IV R 42/19, B.III.3, paras 27–33",
+    "url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/STRE202210200/",
+    "web_tool_response_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R01-R04-PIT-writer-repair-2026-10-29/sources/BFH-IVR42-19.web-response.json",
+    "web_tool_response_sha256": "fcd40047751749fd22e0fa0c3394ab99465b3d8ccb3f6a6b36ad078ee8f2e489",
+    "actual_web_lines": [
+      161,
+      178
+    ],
+    "exact_quote": "Dies bedeutet zugleich, dass die bisherige Geringfügigkeitsgrenze mit ihrer absoluten und relativen Umsatzgrenze sowohl bei Gewinnen als auch bei Verlusten zu beachten ist. Wird diese Bagatellgrenze überschritten, färben gewerbliche Gewinne und gewerbliche Verluste gleichermaßen ab.",
+    "read_on": "2026-10-29",
+    "qualification": "Own actual official web reading, retained web-tool response JSON, not original HTML. The full B.III.3 reasoning was read."
+  },
+  "R06.retained": {
+    "id": "R06.retained",
+    "url": "https://www.gesetze-im-internet.de/estg/__34a.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U04496684f283eed9.body",
+    "raw_sha256": "3f1f145af6f287a80db8abb0d5d0db24db300e90107d4c24391f93b475a950bf",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U04496684f283eed9.reader.txt",
+    "reader_sha256": "13a087705e5b93c1d702f3c184c0e8f66e75589b8e588440a318373f42548724",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "EStG § 34a(1)–(2)",
+    "native_LF": [
+      7,
+      16
+    ],
+    "exact_quote": "(1) 1Sind in dem zu versteuernden Einkommen nicht entnommene Gewinne aus Land- und Forstwirtschaft, Gewerbebetrieb oder selbständiger Arbeit (§ 2 Absatz 1 Satz 1 Nummer 1 bis 3) nach Absatz 2 enthalten, ist die Einkommensteuer für diese Gewinne auf Antrag des Steuerpflichtigen ganz oder teilweise mit einem Steuersatz von 1.\n28,25 Prozent für Veranlagungszeiträume bis 2027,\n2.\n27 Prozent für die Veranlagungszeiträume 2028 und 2029,\n3.\n26 Prozent für die Veranlagungszeiträume 2030 und 2031 und\n4.\n25 Prozent für Veranlagungszeiträume ab 2032\nzu berechnen; dies gilt nicht, soweit für die Gewinne der Freibetrag nach § 16 Absatz 4 oder die Steuerermäßigung nach § 34 Absatz 3 in Anspruch genommen wird oder es sich um Gewinne nach § 18 Absatz 1 Nummer 4 handelt. 2Der Antrag nach Satz 1 ist für jeden Betrieb oder Mitunternehmeranteil für jeden Veranlagungszeitraum gesondert bei dem für die Einkommensbesteuerung zuständigen Finanzamt zu stellen. 3§ 233a Absatz 2a der Abgabenordnung ist entsprechend anzuwenden. 4Bei Mitunternehmeranteilen kann der Steuerpflichtige den Antrag nur stellen, wenn sein Anteil am nach § 4 Absatz 1 Satz 1 oder § 5 ermittelten Gewinn mehr als 10 Prozent beträgt oder 10 000 Euro übersteigt. 5Der Antrag kann bis zur Unanfechtbarkeit des Einkommensteuerbescheids für den nächsten Veranlagungszeitraum vom Steuerpflichtigen ganz oder teilweise zurückgenommen werden; der Einkommensteuerbescheid ist entsprechend zu ändern. 6Die Festsetzungsfrist endet insoweit nicht, bevor die Festsetzungsfrist für den nächsten Veranlagungszeitraum abgelaufen ist.\n(2) 1Der nicht entnommene Gewinn des Betriebs oder Mitunternehmeranteils ist der nach § 4 Absatz 1 Satz 1 oder § 5 ermittelte Gewinn vermindert um den positiven Saldo der Entnahmen und Einlagen des Wirtschaftsjahres vermehrt um die Gewerbesteuer des Wirtschaftsjahres. 2Entnahmen für die Zahlung der Einkommensteuer nach Absatz 1 Satz 1 und des darauf entfallenden Solidaritätszuschlages bleiben außer Ansatz. 3Entnahmen gelten vorrangig bis zur Höhe der Einkommensteuer im Sinne des Absatzes 1 Satz 1 und des darauf entfallenden Solidaritätszuschlages als zur Zahlung dieser Beträge verwendet.",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected retained operative paragraphs read; existing detailed regime referral remains."
+  },
+  "R06.liability": {
+    "id": "R06.liability",
+    "url": "https://www.gesetze-im-internet.de/estg/__15a.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaa4bd03133099579.body",
+    "raw_sha256": "716040badeef5438c57a9ffa016a90fc2676685f927485b08703f4d41e9838c2",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Uaa4bd03133099579.reader.txt",
+    "reader_sha256": "3f70feb9fea99f4b04322e1e8374966edb5ebd8200f3a464c2f838b56ea7f69b",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "EStG § 15a(1)–(4)",
+    "native_LF": [
+      7,
+      11
+    ],
+    "exact_quote": "(1) 1Der einem Kommanditisten zuzurechnende Anteil am Verlust der Kommanditgesellschaft darf weder mit anderen Einkünften aus Gewerbebetrieb noch mit Einkünften aus anderen Einkunftsarten ausgeglichen werden, soweit ein negatives Kapitalkonto des Kommanditisten entsteht oder sich erhöht; er darf insoweit auch nicht nach § 10d abgezogen werden. 2Haftet der Kommanditist am Bilanzstichtag den Gläubigern der Gesellschaft auf Grund des § 171 Absatz 1 des Handelsgesetzbuchs, so können abweichend von Satz 1 Verluste des Kommanditisten bis zur Höhe des Betrags, um den die im Handelsregister eingetragene Einlage des Kommanditisten seine geleistete Einlage übersteigt, auch ausgeglichen oder abgezogen werden, soweit durch den Verlust ein negatives Kapitalkonto entsteht oder sich erhöht. 3Satz 2 ist nur anzuwenden, wenn derjenige, dem der Anteil zuzurechnen ist, im Handelsregister eingetragen ist, das Bestehen der Haftung nachgewiesen wird und eine Vermögensminderung auf Grund der Haftung nicht durch Vertrag ausgeschlossen oder nach Art und Weise des Geschäftsbetriebs unwahrscheinlich ist.\n(1a)1 Nachträgliche Einlagen führen weder zu einer nachträglichen Ausgleichs- oder Abzugsfähigkeit eines vorhandenen verrechenbaren Verlustes noch zu einer Ausgleichs- oder Abzugsfähigkeit des dem Kommanditisten zuzurechnenden Anteils am Verlust eines zukünftigen Wirtschaftsjahres, soweit durch den Verlust ein negatives Kapitalkonto des Kommanditisten entsteht oder sich erhöht. 2Nachträgliche Einlagen im Sinne des Satzes 1 sind Einlagen, die nach Ablauf eines Wirtschaftsjahres geleistet werden, in dem ein nicht ausgleichs- oder abzugsfähiger Verlust im Sinne des Absatzes 1 entstanden oder ein Gewinn im Sinne des Absatzes 3 Satz 1 zugerechnet worden ist.\n(2) 1Soweit der Verlust nach den Absätzen 1 und 1a nicht ausgeglichen oder abgezogen werden darf, mindert er die Gewinne, die dem Kommanditisten in späteren Wirtschaftsjahren aus seiner Beteiligung an der Kommanditgesellschaft zuzurechnen sind. 2Der verrechenbare Verlust, der nach Abzug von einem Veräußerungs- oder Aufgabegewinn verbleibt, ist im Zeitpunkt der Veräußerung oder Aufgabe des gesamten Mitunternehmeranteils oder der Betriebsveräußerung oder -aufgabe bis zur Höhe der nachträglichen Einlagen im Sinne des Absatzes 1a ausgleichs- oder abzugsfähig.\n(3) 1Soweit ein negatives Kapitalkonto des Kommanditisten durch Entnahmen entsteht oder sich erhöht (Einlageminderung) und soweit nicht auf Grund der Entnahmen eine nach Absatz 1 Satz 2 zu berücksichtigende Haftung besteht oder entsteht, ist dem Kommanditisten der Betrag der Einlageminderung als Gewinn zuzurechnen. 2Der nach Satz 1 zuzurechnende Betrag darf den Betrag der Anteile am Verlust der Kommanditgesellschaft nicht übersteigen, der im Wirtschaftsjahr der Einlageminderung und in den zehn vorangegangenen Wirtschaftsjahren ausgleichs- oder abzugsfähig gewesen ist. 3Wird der Haftungsbetrag im Sinne des Absatzes 1 Satz 2 gemindert (Haftungsminderung) und sind im Wirtschaftsjahr der Haftungsminderung und den zehn vorangegangenen Wirtschaftsjahren Verluste nach Absatz 1 Satz 2 ausgleichs- oder abzugsfähig gewesen, so ist dem Kommanditisten der Betrag der Haftungsminderung, vermindert um auf Grund der Haftung tatsächlich geleistete Beträge, als Gewinn zuzurechnen; Satz 2 gilt sinngemäß. 4Die nach den Sätzen 1 bis 3 zuzurechnenden Beträge mindern die Gewinne, die dem Kommanditisten im Wirtschaftsjahr der Zurechnung oder in späteren Wirtschaftsjahren aus seiner Beteiligung an der Kommanditgesellschaft zuzurechnen sind.\n(4) 1Der nach Absatz 1 nicht ausgleichs- oder abzugsfähige Verlust eines Kommanditisten, vermindert um die nach Absatz 2 abzuziehenden und vermehrt um die nach Absatz 3 hinzuzurechnenden Beträge (verrechenbarer Verlust), ist jährlich gesondert festzustellen. 2Dabei ist von dem verrechenbaren Verlust des vorangegangenen Wirtschaftsjahres auszugehen. 3Zuständig für den Erlass des Feststellungsbescheids ist das für die gesonderte Feststellung des Gewinns und Verlustes der Gesellschaft zuständige Finanzamt. 4Der Feststellungsbescheid kann nur insoweit angegriffen werden, als der verrechenbare Verlust gegenüber dem verrechenbaren Verlust des vorangegangenen Wirtschaftsjahres sich verändert hat. 5Die gesonderten Feststellungen nach Satz 1 können mit der gesonderten und einheitlichen Feststellung der einkommensteuerpflichtigen und körperschaftsteuerpflichtigen Einkünfte verbunden werden. 6In diesen Fällen sind die gesonderten Feststellungen des verrechenbaren Verlustes einheitlich durchzuführen.",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected retained operative paragraphs read; existing detailed regime referral remains."
+  },
+  "R07.interest": {
+    "id": "R07.interest",
+    "url": "https://www.gesetze-im-internet.de/estg/__4h.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U89fe99339c842942.body",
+    "raw_sha256": "7151f48f328bf94ee162029b95f1942c6569007f8e796cae9afdb60fc250aaf6",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U89fe99339c842942.reader.txt",
+    "reader_sha256": "f345f02cfa04e9c59e94b465c5c9c8b24daeec6ac99ddede4ed50d97a9a71483",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "EStG § 4h(1)–(2)",
+    "native_LF": [
+      7,
+      17
+    ],
+    "exact_quote": "(1) 1Zinsaufwendungen eines Betriebs sind abziehbar in Höhe des Zinsertrags, darüber hinaus nur bis zur Höhe des verrechenbaren EBITDA. 2Das verrechenbare EBITDA ist 30 Prozent des um die Zinsaufwendungen und um die nach § 6 Absatz 2 Satz 1 abzuziehenden, nach § 6 Absatz 2a Satz 2 gewinnmindernd aufzulösenden und nach § 7 abgesetzten Beträge erhöhten und um die Zinserträge verminderten maßgeblichen Gewinns. 3Soweit das verrechenbare EBITDA die um die Zinserträge geminderten Zinsaufwendungen des Betriebs (Nettozinsaufwendungen) übersteigt, ist es in die folgenden fünf Wirtschaftsjahre vorzutragen (EBITDA-Vortrag); ein EBITDA-Vortrag entsteht nicht in Wirtschaftsjahren, in denen die Zinsaufwendungen die Zinserträge nicht übersteigen oder Absatz 2 die Anwendung von Satz 1 ausschließt. 4Zinsaufwendungen, die nach Satz 1 nicht abgezogen werden können, sind bis zur Höhe der EBITDA-Vorträge aus vorangegangenen Wirtschaftsjahren abziehbar und mindern die EBITDA-Vorträge in ihrer zeitlichen Reihenfolge. 5Danach verbleibende nicht abziehbare Zinsaufwendungen sind in die folgenden Wirtschaftsjahre vorzutragen (Zinsvortrag). 6Sie erhöhen die Zinsaufwendungen dieser Wirtschaftsjahre, nicht aber den maßgeblichen Gewinn. 7Absatz 2 findet keine Anwendung, soweit Zinsaufwendungen aufgrund eines Zinsvortrags erhöht wurden.\n(2) 1Absatz 1 Satz 1 ist nicht anzuwenden, wenn a)\ndie Nettozinsaufwendungen des Betriebs weniger als drei Millionen Euro betragen,\nb)\nder Steuerpflichtige keiner Person im Sinne des § 1 Absatz 2 (gegebenenfalls in Verbindung mit § 1 Absatz 1 Satz 2) des Außensteuergesetzes nahesteht und über keine Betriebsstätte außerhalb des Staates verfügt, in dem sich sein Wohnsitz, gewöhnlicher Aufenthalt, Sitz oder seine Geschäftsleitung befindet, oder\nc)\nder Betrieb zu einem Konzern gehört und seine Eigenkapitalquote am Schluss des vorangegangenen Abschlussstichtages gleich hoch oder höher ist als die des Konzerns (Eigenkapitalvergleich). 2Ein Unterschreiten der Eigenkapitalquote des Konzerns um bis zu zwei Prozentpunkte ist unschädlich.\n3Eigenkapitalquote ist das Verhältnis des Eigenkapitals zur Bilanzsumme; sie bemisst sich nach dem Konzernabschluss, der den Betrieb umfasst, und ist für den Betrieb auf der Grundlage des Jahresabschlusses oder Einzelabschlusses zu ermitteln. 4Wahlrechte sind im Konzernabschluss und im Jahresabschluss oder Einzelabschluss einheitlich auszuüben; bei gesellschaftsrechtlichen Kündigungsrechten ist insoweit mindestens das Eigenkapital anzusetzen, das sich nach den Vorschriften des Handelsgesetzbuchs ergeben würde. 5Bei der Ermittlung der Eigenkapitalquote des Betriebs ist das Eigenkapital um einen im Konzernabschluss enthaltenen Firmenwert, soweit er auf den Betrieb entfällt, zu erhöhen sowie um das Eigenkapital, das keine Stimmrechte vermittelt – mit Ausnahme von Vorzugsaktien –, die Anteile an anderen Konzerngesellschaften und um Einlagen der letzten sechs Monate vor dem maßgeblichen Abschlussstichtag, soweit ihnen Entnahmen oder Ausschüttungen innerhalb der ersten sechs Monate nach dem maßgeblichen Abschlussstichtag gegenüberstehen, zu kürzen. 6Die Bilanzsumme ist um Kapitalforderungen zu kürzen, die nicht im Konzernabschluss ausgewiesen sind und denen Verbindlichkeiten im Sinne des Absatzes 3 in mindestens gleicher Höhe gegenüberstehen. 7Sonderbetriebsvermögen ist dem Betrieb der Mitunternehmerschaft zuzuordnen, soweit es im Konzernvermögen enthalten ist.\n8Die für den Eigenkapitalvergleich maßgeblichen Abschlüsse sind einheitlich nach den International Financial Reporting Standards (IFRS) zu erstellen. 9Hiervon abweichend können Abschlüsse nach dem Handelsrecht eines Mitgliedstaats der Europäischen Union verwendet werden, wenn kein Konzernabschluss nach den IFRS zu erstellen und offen zu legen ist und für keines der letzten fünf Wirtschaftsjahre ein Konzernabschluss nach den IFRS erstellt wurde; nach den Generally Accepted Accounting Principles der Vereinigten Staaten von Amerika (US-GAAP) aufzustellende und offen zu legende Abschlüsse sind zu verwenden, wenn kein Konzernabschluss nach den IFRS oder dem Handelsrecht eines Mitgliedstaats der Europäischen Union zu erstellen und offen zu legen ist. 10Der Konzernabschluss muss den Anforderungen an die handelsrechtliche Konzernrechnungslegung genügen oder die Voraussetzungen erfüllen, unter denen ein Abschluss nach den §§ 291 und 292 des Handelsgesetzbuchs befreiende Wirkung hätte. 11Wurde der Jahresabschluss oder Einzelabschluss nicht nach denselben Rechnungslegungsstandards wie der Konzernabschluss aufgestellt, ist die Eigenkapitalquote des Betriebs in einer Überleitungsrechnung nach den für den Konzernabschluss geltenden Rechnungslegungsstandards zu ermitteln. 12Die Überleitungsrechnung ist einer prüferischen Durchsicht zu unterziehen. 13Auf Verlangen der Finanzbehörde ist der Abschluss oder die Überleitungsrechnung des Betriebs durch einen Abschlussprüfer zu prüfen, der die Voraussetzungen des § 319 des Handelsgesetzbuchs erfüllt.\n14Ist ein dem Eigenkapitalvergleich zugrunde gelegter Abschluss unrichtig und führt der zutreffende Abschluss zu einer Erhöhung der nach Absatz 1 nicht abziehbaren Zinsaufwendungen, ist ein Zuschlag entsprechend § 162 Absatz 4 Satz 1 und 2 der Abgabenordnung festzusetzen. 15Bemessungsgrundlage für den Zuschlag sind die nach Absatz 1 nicht abziehbaren Zinsaufwendungen. 16§ 162 Absatz 4 Satz 5 bis 7 der Abgabenordnung gilt sinngemäß.\n2Ist eine Gesellschaft, bei der der Gesellschafter als Mitunternehmer anzusehen ist, unmittelbar oder mittelbar einer Körperschaft nachgeordnet, gilt für die Gesellschaft § 8a Absatz 3 des Körperschaftsteuergesetzes entsprechend. 3An die Stelle des Steuerpflichtigen tritt für Zwecke des Satzes 1 Buchstabe b bei Personengesellschaften oder Mitunternehmerschaften die Personengesellschaft oder Mitunternehmerschaft.",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected retained operative clauses read after the independent finding; no whole-source or treaty-matrix reading inferred."
+  },
+  "R07.corporate-income": {
+    "id": "R07.corporate-income",
+    "url": "https://www.gesetze-im-internet.de/kstg_1977/__8a.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ucbc7a426779ae7c3.body",
+    "raw_sha256": "5574949a5454dd181373f35bcad58386f35986ed39585825a68657dfca3b4254",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ucbc7a426779ae7c3.reader.txt",
+    "reader_sha256": "16adeff24728f44811243ffa41bc94a13e15c88f77c8e6fef29fde412acd8f74",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "KStG § 8a(1)",
+    "native_LF": [
+      7,
+      7
+    ],
+    "exact_quote": "(1) 1§ 4h Abs. 1 Satz 2 des Einkommensteuergesetzes ist mit der Maßgabe anzuwenden, dass anstelle des maßgeblichen Gewinns das maßgebliche Einkommen tritt. 2Maßgebliches Einkommen ist das nach den Vorschriften des Einkommensteuergesetzes und dieses Gesetzes ermittelte Einkommen mit Ausnahme der §§ 4h und 10d des Einkommensteuergesetzes und des § 9 Abs. 1 Nr. 2 dieses Gesetzes. 3Die §§ 8c und 8d gelten für den Zinsvortrag nach § 4h Absatz 1 Satz 5 des Einkommensteuergesetzes mit der Maßgabe entsprechend, dass stille Reserven im Sinne des § 8c Absatz 1 Satz 6 nur zu berücksichtigen sind, soweit sie die nach § 8c Absatz 1 Satz 5 und § 8d Absatz 2 Satz 1 abziehbaren nicht genutzten Verluste übersteigen. 4Bei Steuerpflichtigen im Sinne dieses Gesetzes gelten alle Einkünfte als in einem Betrieb im Sinne des § 4h Absatz 1 Satz 1 des Einkommensteuergesetzes erzielt.",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected retained operative clauses read after the independent finding; no whole-source or treaty-matrix reading inferred."
+  },
+  "R07.commercial": {
+    "id": "R07.commercial",
+    "url": "https://www.gesetze-im-internet.de/gewstg/__2.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/gewstg-2-20261024.html",
+    "raw_sha256": "f309400c1595df013343d2b7ce996c79b615ed5c027a494f7696806097a84074",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7eebf57156097cab.reader.txt",
+    "reader_sha256": "b6396962d89d880e08aa62b7fb54e17d445fbfa3177dd088db9feae0c40f61d7",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "GewStG § 2(1)–(2)",
+    "native_LF": [
+      7,
+      8
+    ],
+    "exact_quote": "(1) 1Der Gewerbesteuer unterliegt jeder stehende Gewerbebetrieb, soweit er im Inland betrieben wird. 2Unter Gewerbebetrieb ist ein gewerbliches Unternehmen im Sinne des Einkommensteuergesetzes zu verstehen. 3Im Inland betrieben wird ein Gewerbebetrieb, soweit für ihn im Inland oder auf einem in einem inländischen Schiffsregister eingetragenen Kauffahrteischiff eine Betriebsstätte unterhalten wird.\n(2) 1Als Gewerbebetrieb gilt stets und in vollem Umfang die Tätigkeit der Kapitalgesellschaften (insbesondere Europäische Gesellschaften, Aktiengesellschaften, Kommanditgesellschaften auf Aktien, Gesellschaften mit beschränkter Haftung), Genossenschaften einschließlich Europäischer Genossenschaften sowie der Versicherungs- und Pensionsfondsvereine auf Gegenseitigkeit. 2Ist eine Kapitalgesellschaft Organgesellschaft im Sinne der § 14 oder § 17 des Körperschaftsteuergesetzes, so gilt sie als Betriebsstätte des Organträgers.",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected retained operative clauses read after the independent finding; no whole-source or treaty-matrix reading inferred."
+  },
+  "R08.royalty-extent": {
+    "id": "R08.royalty-extent",
+    "url": "https://www.gesetze-im-internet.de/estg/__50c.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.body",
+    "raw_sha256": "0bddf86f831b727c144a7ecb6791cc3e5529bfb8f707ee4715c4dc95c6d2458a",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.reader.txt",
+    "reader_sha256": "56b79f581bc6fe26a103d5085d7e127e13fb2960475bb814020668dd7f7749c1",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "EStG § 50c(2)",
+    "native_LF": [
+      8,
+      12
+    ],
+    "exact_quote": "(2) 1Der Schuldner der Kapitalerträge oder Vergütungen ist zur Einbehaltung und Abführung der Steuer nicht verpflichtet, 1.\nsoweit dem Gläubiger der Kapitalerträge oder Vergütungen auf dessen Antrag (Freistellungsantrag) vom Bundeszentralamt für Steuern bescheinigt wird, dass § 43b, § 50g oder ein Abkommen zur Vermeidung der Doppelbesteuerung der Besteuerung der Einkünfte entgegensteht (Freistellungsbescheinigung), oder\n2.\nsoweit es sich um Einkünfte eines beschränkt Steuerpflichtigen im Sinne des § 50a Absatz 1 Nummer 3 handelt, der Besteuerung der Einkünfte ein Abkommen zur Vermeidung der Doppelbesteuerung entgegensteht und durch die Vergütung zuzüglich der dem beschränkt Steuerpflichtigen in demselben Kalenderjahr vom Schuldner bereits zugeflossenen Vergütungen 10 000 Euro nicht überschritten werden.\n2Der Schuldner ist zur Steueranmeldung auch dann verpflichtet, wenn er gemäß Satz 1 keine Steuer einzubehalten und abzuführen hat. 3Eine Steueranmeldung kann auf der Grundlage des Satzes 1 nicht geändert werden, es sei denn, die Freistellungsbescheinigung ist zum Zeitpunkt der Anmeldung der Steuer noch nicht erteilt worden. 4Eine Freistellungsbescheinigung ist auf einen Zeitraum von höchstens fünf Jahren frühestens ab dem Tag, an dem der Antrag beim Bundeszentralamt für Steuern eingeht, zu befristen und von der Einhaltung der Voraussetzungen ihrer Erteilung während ihrer Geltung abhängig zu machen; sie kann mit weiteren Nebenbestimmungen gemäß § 120 Absatz 2 der Abgabenordnung versehen werden. 5Eine Freistellungsbescheinigung für die Kapitalertragsteuer auf Grund eines Abkommens zur Vermeidung der Doppelbesteuerung ist nur zu erteilen, wenn der Gläubiger der Kapitalerträge eine Kapitalgesellschaft ist, die im Staat ihrer Ansässigkeit den Steuern vom Einkommen oder Gewinn unterliegt, ohne davon befreit zu sein, und soweit dem Gläubiger Kapitalerträge von einer unbeschränkt steuerpflichtigen Kapitalgesellschaft im Sinne des § 1 Absatz 1 Nummer 1 des Körperschaftsteuergesetzes zufließen, an deren Nennkapital der Gläubiger zu mindestens einem Zehntel unmittelbar beteiligt ist. 6Über einen Freistellungsantrag ist innerhalb von drei Monaten nach Vorlage aller erforderlichen Nachweise zu entscheiden.",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected retained operative clauses read after the independent finding; no whole-source or treaty-matrix reading inferred."
+  },
+  "R08.refund-population": {
+    "id": "R08.refund-population",
+    "url": "https://www.gesetze-im-internet.de/estg/__44a.html",
+    "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-44a-20261026.html",
+    "raw_sha256": "1589436abec915a0d49be85ff82d5319831789eb3873a391c983fef6726cf72d",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U26ee07b985228da2.reader.txt",
+    "reader_sha256": "6b231e67dcfa9e5f8b8f4c3a9441d242d9fa211fbd37e0191070b5620c1db7f8",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "prior cached body",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "EStG § 44a(9)",
+    "native_LF": [
+      51,
+      51
+    ],
+    "exact_quote": "(9) 1Ist der Gläubiger der Kapitalerträge im Sinne des § 43 Absatz 1 eine beschränkt steuerpflichtige Körperschaft im Sinne des § 2 Nummer 1 des Körperschaftsteuergesetzes, so werden zwei Fünftel der einbehaltenen und abgeführten Kapitalertragsteuer erstattet. 2§ 50c Absatz 3 und 5 sowie § 50d Absatz 3 sind entsprechend anzuwenden. 3Weitergehende Ansprüche aus § 43b oder § 50g oder einem Abkommen zur Vermeidung der Doppelbesteuerung bleiben unberührt. 4Verfahren nach den vorstehenden Sätzen und nach § 50c Absatz 3 soll das Bundeszentralamt für Steuern verbinden.",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected retained operative clauses read after the independent finding; no whole-source or treaty-matrix reading inferred."
+  },
+  "R08.foreign-corporation": {
+    "id": "R08.foreign-corporation",
+    "url": "https://www.gesetze-im-internet.de/kstg_1977/__2.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U47038fc5ff2efb09.body",
+    "raw_sha256": "0739fecdbc4229c1055cf629cdd5811cc56dc6d5d274ccd60b02e76bc2a5d4c9",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U47038fc5ff2efb09.reader.txt",
+    "reader_sha256": "314d18f171f8fa684f9e86c36be0071d704e66c70a73ddafe45dd691b22aaa52",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "KStG § 2 no. 1",
+    "native_LF": [
+      7,
+      8
+    ],
+    "exact_quote": "Beschränkt körperschaftsteuerpflichtig sind 1.\nKörperschaften, Personenvereinigungen und Vermögensmassen, die weder ihre Geschäftsleitung noch ihren Sitz im Inland haben, mit ihren inländischen Einkünften;",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected retained operative clauses read after the independent finding; no whole-source or treaty-matrix reading inferred."
+  },
+  "R08.anti-abuse": {
+    "id": "R08.anti-abuse",
+    "url": "https://www.gesetze-im-internet.de/estg/__50d.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U20a110d035f0b1ba.body",
+    "raw_sha256": "fd1ee264c4c5e8fc80f1663de4ea010fc7793242c574622dad8a2c05d7fb345a",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U20a110d035f0b1ba.reader.txt",
+    "reader_sha256": "05fc41a45e6dc460030534c73b751375029212123e882f7cf0f5a37fe5a35878",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "EStG § 50d(3)",
+    "native_LF": [
+      10,
+      14
+    ],
+    "exact_quote": "(3) 1Eine Körperschaft, Personenvereinigung oder Vermögensmasse hat auf der Grundlage eines Abkommens zur Vermeidung der Doppelbesteuerung keinen Anspruch auf Entlastung von der Kapitalertragsteuer und vom Steuerabzug nach § 50a, soweit 1.\nPersonen an ihr beteiligt oder durch die Satzung, das Stiftungsgeschäft oder die sonstige Verfassung begünstigt sind, denen dieser Anspruch nicht zustünde, wenn sie die Einkünfte unmittelbar erzielten, und\n2.\ndie Einkunftsquelle keinen wesentlichen Zusammenhang mit einer Wirtschaftstätigkeit dieser Körperschaft, Personenvereinigung oder Vermögensmasse aufweist; das Erzielen der Einkünfte, deren Weiterleitung an beteiligte oder begünstigte Personen sowie eine Tätigkeit, soweit sie mit einem für den Geschäftszweck nicht angemessen eingerichteten Geschäftsbetrieb ausgeübt wird, gelten nicht als Wirtschaftstätigkeit.\n2Satz 1 findet keine Anwendung, soweit die Körperschaft, Personenvereinigung oder Vermögensmasse nachweist, dass keiner der Hauptzwecke ihrer Einschaltung die Erlangung eines steuerlichen Vorteils ist, oder wenn mit der Hauptgattung der Anteile an ihr ein wesentlicher und regelmäßiger Handel an einer anerkannten Börse stattfindet. 3§ 42 der Abgabenordnung bleibt unberührt.",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected retained operative clauses read after the independent finding; no whole-source or treaty-matrix reading inferred."
+  },
+  "R08.procedure": {
+    "id": "R08.procedure",
+    "url": "https://www.gesetze-im-internet.de/estg/__50c.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.body",
+    "raw_sha256": "0bddf86f831b727c144a7ecb6791cc3e5529bfb8f707ee4715c4dc95c6d2458a",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U98239c4f95f4719d.reader.txt",
+    "reader_sha256": "56b79f581bc6fe26a103d5085d7e127e13fb2960475bb814020668dd7f7749c1",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "EStG § 50c(3)–(5)",
+    "native_LF": [
+      13,
+      15
+    ],
+    "exact_quote": "(3) 1Dem beschränkt steuerpflichtigen Gläubiger der Kapitalerträge oder Vergütungen wird auf seinen fristgemäßen Antrag beim Bundeszentralamt für Steuern (Erstattungsantrag) auf der Grundlage eines Freistellungsbescheides die gemäß Absatz 1 Satz 1 einbehaltene und abgeführte oder auf Grund eines Haftungsbescheids oder Nachforderungsbescheids entrichtete Steuer erstattet, wenn die Steuer nicht nach § 36 Absatz 2 Nummer 2 auf die Einkommensteuer oder die Körperschaftsteuer des Gläubigers angerechnet werden kann. 2Die Frist für einen Erstattungsantrag beträgt vier Jahre und beginnt mit Ablauf des Kalenderjahres, in dem die Kapitalerträge oder Vergütungen bezogen worden sind; sie endet nicht vor Ablauf eines Jahres seit dem Zeitpunkt der Entrichtung der Steuer und nicht vor Ablauf der im Abkommen zur Vermeidung der Doppelbesteuerung vorgesehenen Frist. 3Ein Freistellungsbescheid für Kapitalertragsteuer wird nur erteilt, wenn die in § 45a Absatz 2 oder Absatz 3 bezeichnete Bescheinigung vorgelegt wurde oder die Angaben gemäß § 45a Absatz 2a übermittelt wurden; einem Antrag auf Erstattung der nach § 50a entrichteten Steuer ist die Bescheinigung nach § 50a Absatz 5 Satz 7 beizufügen. 4Hat der Gläubiger nach § 50a Absatz 5 Steuern für Rechnung anderer beschränkt steuerpflichtiger Gläubiger einzubehalten, kann die Auszahlung des Erstattungsanspruchs davon abhängig gemacht werden, dass er die Zahlung der von ihm einzubehaltenden Steuer nachweist, hierfür Sicherheit leistet oder unwiderruflich die Zustimmung zur Verrechnung seines Erstattungsanspruchs mit dem Steueranspruch nach § 50a Absatz 5 Satz 3 erklärt.\n(4) 1Ein nach Absatz 3 in Verbindung mit § 50g zu erstattender Betrag ist nach Maßgabe der §§ 238 und 239 der Abgabenordnung zu verzinsen. 2Die Festsetzungsfrist beginnt mit Ablauf des Kalenderjahres, in dem der Freistellungsbescheid erlassen, aufgehoben oder nach § 129 der Abgabenordnung berichtigt worden ist. 3Der Zinslauf beginnt zwölf Monate nach Ablauf des Monats, in dem der Erstattungsantrag und alle für die Entscheidung erforderlichen Nachweise vorliegen, frühestens am Tag der Entrichtung der Steuer. 4Der Zinslauf endet mit Ablauf des Tages, an dem der Freistellungsbescheid wirksam wird. 5§ 233a Absatz 5 der Abgabenordnung gilt sinngemäß.\n(5) 1Der Freistellungsantrag und der Erstattungsantrag sind nach amtlich vorgeschriebenem Datensatz über die amtlich bestimmte Schnittstelle zu übermitteln. 2Der Antragsteller hat durch eine Bestätigung der für ihn zuständigen Steuerbehörde des anderen Staates nachzuweisen, dass er dort ansässig ist oder in den Fällen des § 43b Absatz 1 Satz 1 zweite Alternative oder des § 50g Absatz 1 Satz 1 letzte Alternative dort eine Betriebsstätte hat. 3Zur Vermeidung unbilliger Härten kann das Bundeszentralamt für Steuern auf Antrag auf eine Übermittlung gemäß Satz 1 verzichten; in diesem Fall ist der Freistellungsantrag oder der Erstattungsantrag nach amtlich vorgeschriebenem Vordruck zu stellen. 4Die Entscheidung über einen Freistellungsantrag und die Entscheidung über einen Erstattungsantrag werden zum Datenabruf über die amtlich bestimmte Schnittstelle bereitgestellt, es sei denn, der Antrag war nach amtlich vorgeschriebenem Vordruck zu stellen; § 122a Absatz 3 und 4 der Abgabenordnung ist entsprechend anzuwenden.",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected retained operative clauses read after the independent finding; no whole-source or treaty-matrix reading inferred."
+  }
+}

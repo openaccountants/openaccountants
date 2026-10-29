@@ -1,0 +1,11 @@
+{
+  "id": "U2371d7e0a7990e02",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Oesterreich/2024-11-28-Oesterreich-Abkommen-DBA-Bekanntmachung.pdf?__blob=publicationFile&v=2",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2371d7e0a7990e02.body",
+  "raw_sha256": "efd57b2b35832a3e4cd33430485e07e09ff1de15d64a37b114b61e6db77a042a",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U2371d7e0a7990e02.reader.txt",
+  "reader_sha256": "4d8e766dd4370f73085094e0337f69ecd9b51fc1c74e1d2fe69e7efd061c499e",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

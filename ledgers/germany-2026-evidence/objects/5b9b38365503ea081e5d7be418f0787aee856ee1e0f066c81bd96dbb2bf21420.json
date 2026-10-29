@@ -1,0 +1,30 @@
+[
+  {
+    "source_id": "RNT01",
+    "official_url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201610254?type=1646225765",
+    "final_url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE201610254?type=1646225765",
+    "status": 200,
+    "content_type": "application/pdf",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT01.pdf",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT01.txt",
+    "sha256": "631cac44a85fef75be333d539ce259f7fc085c3998677645e52c5a9c5b9e5222",
+    "reader_sha256": "a5b47becd74b523371e3cc202f6b847e10d8b64e84f73f40c2dd69826b36ace9",
+    "bytes": 90754,
+    "extraction": "pdftotext-layout; selected actual reading separately recorded",
+    "acquired_at": "2026-10-29T17:06:47.913691+00:00"
+  },
+  {
+    "source_id": "RNT02",
+    "official_url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE202010257?type=1646225765",
+    "final_url": "https://www.bundesfinanzhof.de/de/entscheidung/entscheidungen-online/detail/pdf/STRE202010257?type=1646225765",
+    "status": 200,
+    "content_type": "application/pdf",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT02.pdf",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT02.txt",
+    "sha256": "01f4fb3f226059d163ec556949d9f4e22e48f326590ec41ad24bc6b67dc8b122",
+    "reader_sha256": "eff34e263c4542f9abf04e6afc36f387f9c9eb8196e37e50bc0ccb84486bb2b8",
+    "bytes": 82380,
+    "extraction": "pdftotext-layout; selected actual reading separately recorded",
+    "acquired_at": "2026-10-29T17:06:48.458471+00:00"
+  }
+]

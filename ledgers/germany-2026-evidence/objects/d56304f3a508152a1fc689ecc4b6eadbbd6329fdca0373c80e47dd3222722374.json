@@ -1,0 +1,14 @@
+{
+  "id": "KOSIT_EN_UBL_RULES",
+  "url": "https://projekte.kosit.org/api/v4/projects/356/packages/maven/de/xeinkauf/xrechnung-3.0.2-bundle/2026-08-31/xrechnung-3.0.2-bundle-2026-08-31.zip",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_EN_UBL_RULES.member.body",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/KOSIT_EN_UBL_RULES.reader.txt",
+  "raw_sha256": "759f2d2e830c7fd1d5a6e8b4f61e5dbafc7a7805862c4ae1c749eeac6adde698",
+  "reader_sha256": "759f2d2e830c7fd1d5a6e8b4f61e5dbafc7a7805862c4ae1c749eeac6adde698",
+  "official_bundle_sha256": "5f5426741a03e0b9abc7de83acd97309c09498241d132fc035f9c830be7203de",
+  "inner_zip_path": "xrechnung-3.0.2-validator-configuration-2026-08-31.zip",
+  "inner_zip_sha256": "2530cd107c414511c5d0462ec10f886910395abfca820db82e83d70bf01221a8",
+  "member_path": "EN16931-UBL-validation.xsl",
+  "extraction": "Exact ZIP member body; derived UTF-8 LF reader",
+  "scope": "Selected rule reads only"
+}

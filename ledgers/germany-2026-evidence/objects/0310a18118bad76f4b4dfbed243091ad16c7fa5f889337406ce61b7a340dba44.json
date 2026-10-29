@@ -1,0 +1,60 @@
+{
+  "status": "writer successor, independent review pending",
+  "artifacts": [
+    {
+      "path": "after/de-crypto-tax.md",
+      "sha256": "63a6ef182271bbf75f149139f08aa8184aa266dab06a266638aec5cecb853699",
+      "bytes": 39539
+    },
+    {
+      "path": "before/de-crypto-tax.md",
+      "sha256": "e227cef8836a9ec2220197dd3505fca5ce9f1b5f610a5363a9e98c50afd8e3fa",
+      "bytes": 39516
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "c53b461dd922ea7974687d31d44d87f0f29fe1858c993a75053ce319b5df31a0",
+      "bytes": 198
+    },
+    {
+      "path": "ledgers/de-crypto-tax.md",
+      "sha256": "a57d239d578db72eea76ba39cb018ca226ca5db49f3f886bbd3f6928e5adc79b",
+      "bytes": 184256
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "ed8576596da81eb894e3e3ec9ac2132d7555f4f263e7d4497b9699dea16940a7",
+      "bytes": 632
+    },
+    {
+      "path": "source-index-reference.json",
+      "sha256": "03975b7a4bf03d1ac9a2d503ded99d977ed95ca535a24e27aea38fa6950c6213",
+      "bytes": 757
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "91a06d81c147fbc5afd5fd0781a0aaf227fca7bd6e8b170dc840449c7804e2dd",
+      "bytes": 637
+    },
+    {
+      "path": "support/old-topic-destinations.json",
+      "sha256": "1c9502b078547a249dc12ae6ef3ef932ab47e1606900064992a2b5b7d0ea0a4f",
+      "bytes": 212834
+    },
+    {
+      "path": "support/rows.json",
+      "sha256": "23050080d5243c176139909efe919b936f3437273f03eef899575a69d20373b6",
+      "bytes": 98013
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "4ab0e18c961fa8d3679199d8c0f0649c3f0209a83a313973b999575ef8832aca",
+      "bytes": 354
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "3cf2313cb3fba97bbb3c7189aeaf12ef1d001447c4039d9dcc42e36e9f7e67cf",
+      "bytes": 874
+    }
+  ]
+}

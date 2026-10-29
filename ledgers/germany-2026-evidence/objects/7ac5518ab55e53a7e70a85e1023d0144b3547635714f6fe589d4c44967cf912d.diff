@@ -1,0 +1,24 @@
+--- before
++++ after
+@@ -1,10 +1,10 @@
+ ---
+ name: de-rental-income
+ description: "German income from letting property held privately (Einkünfte aus Vermietung und Verpachtung, § 21 EStG), tax year 2026. Covers what counts as rent and Werbungskosten (§ 9 EStG), building depreciation at 2%, 2.5% or 3% (§ 7(4)), the 5% declining-balance AfA for new housing (§ 7(5a)) and § 7b special depreciation for new rental flats, maintenance versus acquisition-related production cost (the 15% three-year rule) and § 82b EStDV spreading, cheap lets to relatives (the 50% and 66% rules), holiday and short-term lets and the intention to make a surplus, losses, the ten-year rule on a sale (§ 23), Anlage V and deadlines. Trigger on: Mieteinnahmen, Vermietung, Anlage V, AfA Gebäude, Werbungskosten Vermietung, anschaffungsnahe Herstellungskosten, verbilligte Vermietung, Ferienwohnung, Spekulationsfrist, rental income Germany. Out of scope: property in a business or a trade in property (de-trade-tax), the tariff (de-einkommensteuer-freelancer), non-resident landlords (de-non-resident-tax), sales beyond the ten-year test (de-capital-gains), VAT returns (germany-vat-return)."
+-version: 1.1
++version: 1.2
+ jurisdiction: DE
+ tax_year: 2026
+-last_updated: 2026-10-26
++last_updated: 2026-10-29
+ authored_by: Michael Cutajar and the OpenAccountants team
+ review_status: pending_review
+ trust_label: Built by Michael Cutajar and the OpenAccountants team
+@@ -81,7 +81,7 @@
+ 
+ - **Completion date decides the straight-line rate**, not the purchase date: 3% after 2022, 2% for 1925 to 2022, 2.5% before 1925 (§ 7(4) sentence 1 no. 2). This covers every privately held building, housing or not, including flats and separate parts of a building (§ 7(5b)). The separate 3% rate in no. 1 is for business-asset buildings not used for housing: never use it for a private shop or office completed before 2023.
+ - **Shorter actual life.** If the actual life is under 33 years (after 2022), 50 years (1925 to 2022) or 40 years (before 1925), that life may be used (§ 7(4) sentence 2). The 2025 instructions call this an exceptional case that must be proved to the tax office. Refer.
+-- **Older staged rates.** A building built or bought in its completion year under an old application or contract may be on the staged rates of § 7(5). Ask what past returns used; refer any change.
++- **Older staged rates.** A building built or bought in its completion year under an application or contract before 1 January 2006 (housing; earlier dates for the other historic branches) may be on the staged rates of § 7(5). Ask what past returns used; refer any change.
+ - **Acquired free of charge** (gift or inheritance): continue the previous owner's rate (2025 instructions).
+ - **Declining-balance AfA, § 7(5a).** Instead of 3% straight-line, 5% of the remaining value ("Restwert") each year, so far as the building is used for **housing**, if all hold: it is in Germany, the EU or the EEA; the client built it, or bought it by the end of the completion year; and construction started (the date on the construction-start notice required by state law; where none is required, the client declares a voluntary notice) or the binding purchase contract was made after 30 September 2023 and before 1 October 2029. No extraordinary write-down while it runs. Switching to straight-line is allowed, then on the remaining value and remaining life.
+ - **Base.** Price plus side costs (transfer tax, notary, land register, the buyer's broker) under [§ 255 HGB](https://www.gesetze-im-internet.de/hgb/__255.html), less the land share. Land is never depreciated. A maintenance reserve bought with a flat is excluded (2025 instructions). Grants reduce the base (line 89). A former own home let for the first time needs a first computation.

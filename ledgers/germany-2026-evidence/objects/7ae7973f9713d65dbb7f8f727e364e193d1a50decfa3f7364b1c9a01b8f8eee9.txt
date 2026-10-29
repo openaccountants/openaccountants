@@ -1,0 +1,14 @@
+§ 9 KStTG - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Gesetz über die Meldepflicht von Anbietern und den automatischen Austausch von Informationen in Steuersachen bei Kryptowerte-Dienstleistungen (Kryptowerte-Steuertransparenz-Gesetz - KStTG)
+§ 9 Meldepflicht
+(1) Anbieter haben in Bezug auf zu meldende Nutzer und zu meldende beherrschende Personen jährlich spätestens zum 31. Juli für den jeweils vorangegangenen Meldezeitraum die in § 11 genannten Informationen gemäß den Vorgaben des § 12 Satz 1 an das Bundeszentralamt für Steuern zu melden. Die Meldepflicht nach Satz 1 besteht nicht für einen Kryptowerte-Betreiber in Bezug auf einen zu meldenden Nutzer oder eine zu meldende beherrschende Person, für den oder die der Kryptowerte-Betreiber die in § 11 genannten Informationen in einem Drittstaat meldet, der mit dem Ansässigkeitsstaat des zu meldenden Nutzers oder der zu meldenden beherrschenden Person eine qualifizierende Vereinbarung hat.
+(2) Stellt ein Anbieter fest, dass eine Meldung nach Absatz 1 Satz 1 unterblieben ist, so hat er die Meldung unverzüglich nach Erlangung der Kenntnis von der unterbliebenen Meldung vollständig nachzuholen. Dies gilt auch, wenn der Anbieter feststellt, dass er den Kryptowerte-Nutzer oder die beherrschende Person nicht als zu meldende Person identifiziert hatte.
+(3) Stellt ein Anbieter fest, dass eine Meldung nach Absatz 1 Satz 1 fehlerhaft war, so hat er die Meldung unverzüglich nach Erlangung der Kenntnis hierüber zu korrigieren.
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

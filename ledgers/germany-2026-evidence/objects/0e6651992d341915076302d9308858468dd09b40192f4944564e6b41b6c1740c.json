@@ -1,0 +1,72 @@
+[
+  {
+    "label": "example1 taxable",
+    "actual": "500000",
+    "expected": "500000"
+  },
+  {
+    "label": "example1 total",
+    "actual": "149125",
+    "expected": "149125"
+  },
+  {
+    "label": "example1 finalKSt",
+    "actual": "15000",
+    "expected": "15000"
+  },
+  {
+    "label": "example1 finalSoli",
+    "actual": "825",
+    "expected": "825"
+  },
+  {
+    "label": "example2 preloss",
+    "actual": "2810000",
+    "expected": "2810000"
+  },
+  {
+    "label": "example2 KSttaxable",
+    "actual": "543000",
+    "expected": "543000"
+  },
+  {
+    "label": "example2 KStlossleft",
+    "actual": "1733000",
+    "expected": "1733000"
+  },
+  {
+    "label": "example2 tradeincome",
+    "actual": "724000",
+    "expected": "724000"
+  },
+  {
+    "label": "example2 tradelossleft",
+    "actual": "1914000",
+    "expected": "1914000"
+  },
+  {
+    "label": "example2 total",
+    "actual": "749159/4",
+    "expected": "749159/4"
+  },
+  {
+    "label": "midyear20percent10kdividendtaxable",
+    "actual": "500",
+    "expected": "500"
+  },
+  {
+    "label": "midyear20percentCIT",
+    "actual": "75",
+    "expected": "75"
+  },
+  {
+    "label": "2026 regular deadline Saturday",
+    "actual": "5",
+    "expected": "5"
+  },
+  {
+    "label": "2026 nextworkday Monday",
+    "actual": "0",
+    "expected": "0"
+  }
+]

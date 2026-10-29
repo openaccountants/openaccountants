@@ -1,0 +1,342 @@
+Urteil vom 09. Juli 2021, IX R 11/20
+Schadenersatzzahlungen eines Bergbauunternehmens für bergbaubedingte reparable Schäden an einer zum
+Privatvermögen gehörenden, vermieteten Immobilie
+
+ECLI:DE:BFH:2021:U.090721.IXR11.20.0
+
+BFH IX. Senat
+
+EStG § 2 Abs 1 S 1 Nr 6, EStG § 11 Abs 1 S 1, EStG § 9 Abs 1 S 1, EStG § 9 Abs 1 S 2, EStG § 21 Abs 1 S 1 Nr 1, BGB §
+528, BGB § 530, BGB § 566 Abs 1, BBergG § 114, BBergG § 117, ErbStG § 29 Abs 1 Nr 1, EStG VZ 2010 , EStG VZ 2011 ,
+EStG VZ 2012
+
+vorgehend FG Münster, 09. Dezember 2019, Az: 2 K 2497/17 E
+
+Leitsätze
+NV: Eine Zahlung, welche von einem Bergbauunternehmen als Ersatz für an einer zum Privatvermögen gehörenden,
+vermieteten Immobilie festgestellte bergbaubedingte reparable Schäden geleistet wird, zählt ‑‑ebenso wie die
+Immobilie selbst‑‑ zur Vermögenssphäre. Die Ersatzleistung führt nicht zu Einnahmen aus Vermietung und Verpachtung,
+soweit sie nicht nachweislich dazu dient, bei diesen Einkünften geltend gemachte Werbungskosten zu ersetzen. Lässt
+sich nicht aufklären, für welchen Aufwand das Bergbauunternehmen Ersatz geleistet hat, geht dies zu Lasten des
+Finanzamts.
+
+
+Tenor
+Auf die Revision der Kläger wird das Urteil des Finanzgerichts Münster vom 10.12.2019 - 2 K 2497/17 E aufgehoben.
+
+Die Einkommensteuerbescheide für 2010, 2011 und 2012 vom 23.09.2016, zuletzt in Gestalt der
+Einkommensteueränderungsbescheide für 2010 vom 10.02.2020 und für 2011 und 2012, jeweils vom 30.01.2020,
+werden dahin geändert, dass den Klägern keine Einkünfte aus den ihren Kindern übertragenen Immobilien zugerechnet
+sowie die Leistungen der Firmen X, Y und Z im Zeitpunkt des Abflusses in vollem Umfang als Werbungskosten bei den
+Einkünften der Kläger aus Vermietung und Verpachtung berücksichtigt werden und die Schadenersatzzahlung der A AG
+nicht als Einnahme bei den Einkünften der Kläger aus Vermietung und Verpachtung angesetzt wird.
+
+Die Berechnung der Steuer wird dem Beklagten übertragen.
+
+Die Kosten des gesamten Verfahrens hat der Beklagte zu tragen.
+
+
+Tatbestand
+I.
+
+1    Die Kläger und Revisionskläger (Kläger) sind Eheleute; sie werden in den Streitjahren zusammen zur
+     Einkommensteuer veranlagt. Streitig ist, inwieweit und in welcher Höhe die Kläger in den Streitjahren (2010 bis
+     2012) Einkünfte aus Vermietung und Verpachtung erzielt haben.
+
+2    1. Mit notariell beurkundetem Übertragungsvertrag von Dezember 2009 übertrugen die Kläger verschiedene
+     Immobilien schenkweise im Rahmen der vorweggenommenen Erbfolge auf ihre Tochter (T). Besitz, Nutzen und
+     Lasten der übergebenen Objekte gingen am Tag der Beurkundung auf T über. Nach Buchst. B § 7 des
+     Übertragungsvertrages behielten sich die Kläger das Recht vor, bei Eintritt bestimmter Ereignisse (z.B. Tod oder
+     Anordnung einer Betreuung für den Übernehmer, Insolvenz des Übernehmers, Veräußerung oder Belastung des
+     übergebenen Vermögens ohne Zustimmung des Übergebers) die Rückübertragung der übereigneten Immobilien zu
+     verlangen.
+                                                                                                                Page 1 of 6
+3   Für die Vereinnahmung der von den Mietern geschuldeten Mietzinszahlungen hatte T ein eigenes, auf ihren Namen
+    lautendes Konto eingerichtet, auf das die Kläger keinen Zugriff hatten. Die Mieter wurden über den
+    Eigentümerwechsel schriftlich in Kenntnis gesetzt und gebeten, den Mietzins künftig auf das Konto der T zu
+    überweisen. Gleichwohl kam es in der Folgezeit vereinzelt zu ‑‑von den Mietern zu vertretenden‑‑
+    Fehlüberweisungen, sodass noch einzelne Mietzinsbeträge auf einem vormals als Mietkonto genutzten Konto der
+    Kläger eingingen.
+
+4   Mit notariell beurkundetem Übertragungsvertrag von Juli 2011 übertrug die Klägerin ‑‑unter Einbeziehung eines
+    Ergänzungspflegers‑‑ verschiedene Immobilienobjekte schenkweise im Rahmen der vorweggenommenen Erbfolge
+    auf ihren zu diesem Zeitpunkt noch minderjährigen Sohn S. Besitz, Nutzen und Lasten der übergebenen Objekte
+    gingen am 01.08.2011 auf S über. Nach § 8 des Übertragungsvertrages behielt sich die Klägerin das Recht vor, bei
+    Eintritt bestimmter Ereignisse (z.B. Tod oder Anordnung einer Betreuung für den Übernehmer, Insolvenz des
+    Übernehmers, Veräußerung oder Belastung des übergebenen Vermögens ohne Zustimmung des Übergebers) die
+    Rückübertragung der übereigneten Immobilien zu verlangen.
+
+5   Für die Vereinnahmung der von den Mietern geschuldeten Mietzinszahlungen war für S ein eigenes, auf seinen
+    Namen lautendes Mietkonto eingerichtet. Die Mieter wurden über den Eigentümerwechsel schriftlich in Kenntnis
+    gesetzt und gebeten, den Mietzins künftig auf das Mietkonto des S zu überweisen. Gleichwohl kam es in der
+    Folgezeit vereinzelt zu ‑‑von den Mietern zu vertretenden‑‑ Fehlüberweisungen, sodass auch insoweit noch
+    einzelne Mietzinsbeträge auf einem vormals als Mietkonto genutzten Konto der Kläger eingingen.
+
+6   Die Kläger verwalteten in den Folgejahren die übertragenen Mietobjekte auf der Grundlage einer mit den Kindern T
+    und S getroffenen mündlichen Vereinbarung. In diesem Zusammenhang ließen die Kläger nach den Feststellungen
+    des Finanzgerichts (FG) insbesondere von Mietern verursachte Schäden an Mietwohnungen beseitigen und
+    verrechneten hieraus resultierende Forderungen gegenüber Mietern mit Mietsicherheiten, die ihnen als vormalige
+    Eigentümer und Vermieter noch vor der Übergabe der jeweiligen Immobilienobjekte zugeflossen waren (und die
+    nicht entsprechend § 566a des Bürgerlichen Gesetzbuchs ‑‑BGB‑‑ an die gemäß § 566 Abs. 1 BGB in die
+    bestehenden Mietverhältnisse eingetretenen Erwerber T und S weitergeleitet worden waren). Außerdem nahmen
+    sie damit in Zusammenhang stehende Versicherungsleistungen entgegen. Mietzinsbeträge, die von Mietern trotz
+    entsprechenden Hinweises nach dem Eigentumsübergang auf T und S noch fehlerhaft auf das Konto der Kläger
+    eingezahlt worden waren, leiteten sie nach den Feststellungen des FG nicht stets und konsequent an T und S
+    weiter.
+
+7   2. In den Streitjahren 2010 und 2011 nahmen die Kläger an zwei in ihrem Miteigentum stehenden
+    Immobilienobjekten Erhaltungsaufwendungen vor, die von den beauftragten Handwerkern mit 13.894 € (Firma X:
+    Fassadendämmung und Malerarbeiten), 2.304,61 € (Firma Y: Dacharbeiten) und 3.500 € (Firma Z: Leitungsarbeiten)
+    in Rechnung gestellt und von den Klägern als Werbungskosten geltend gemacht wurden. Ende 2011 erhielten die
+    Kläger im Zuge eines Schlichtungsverfahrens von der A AG eine Entschädigungsleistung in Höhe von ... € für den
+    Ersatz bergbaubedingter (reparabler) Schäden an den genannten Immobilienobjekten. Dem Protokoll der
+    Schlichtungsstelle Bergschaden NRW von November 2011 ist lediglich zu entnehmen, dass ein Teil der von den
+    Klägern geltend gemachten und insgesamt mit ... € bezifferten Ansprüche als verjährt angesehen wurde, nicht
+    jedoch, für welche Aufwendungen der Ersatzbetrag in Höhe von ... € im Einzelnen geleistet worden ist bzw. ob
+    einzelne, von den Klägern geltend gemachte Aufwendungen nicht als bergbauschadenbedingt angesehen wurden.
+    Die Entschädigungsleistung der A AG behandelten die Kläger als nicht steuerbar.
+
+8   3. Der Beklagte und Revisionsbeklagte (das Finanzamt ‑‑FA‑‑) erließ unter dem 29.11.2012 (Streitjahr 2010), dem
+    26.03.2013 (Streitjahr 2011) und dem 28.02.2014 (Streitjahr 2012) gemäß § 164 Abs. 1 der Abgabenordnung (AO)
+    unter dem Vorbehalt der Nachprüfung stehende Einkommensteuerbescheide, denen die Angaben der Kläger in ihren
+    Einkommensteuererklärungen zugrunde lagen. Im Zeitraum von 2014 bis 2016 führte das FA für die Streitjahre eine
+    Außenprüfung durch, in deren Rahmen ‑‑neben den Einkünften der Klägerin aus selbständiger Arbeit‑‑ sowohl die
+    Höhe der Einkünfte der Kläger aus Vermietung und Verpachtung der in ihrem Eigentum stehenden
+    Immobilienobjekte als auch die Frage, ob die Einkünfte aus den übertragenen Objekten den Kindern T und S oder
+    den Klägern zuzurechnen seien, einer eingehenden Prüfung unterzogen wurden.
+
+9   Aufgrund der im Rahmen der Außenprüfung getroffenen Feststellungen erließ das FA unter dem 23.09.2016 nach
+    § 164 Abs. 2 AO geänderte Einkommensteuerbescheide für die Streitjahre. Neben verschiedenen Binnenkorrekturen
+    bei den Mieteinnahmen aus einzelnen Immobilien (z.B. Berücksichtigung einbehaltener Mietkautionen als
+    Einnahmen aus Vermietung und Verpachtung) rechnete das FA die Einkünfte aus den im Wege der
+
+                                                                                                              Page 2 of 6
+    vorweggenommenen Erbfolge auf T und S übergegangenen Objekten allein den Klägern zu, da die mit den Kindern
+    geschlossenen Übertragungsverträge wegen "diverser Rückforderungsvorbehalte" steuerrechtlich nicht anerkannt
+    werden könnten. Überdies führe der von der A AG im Streitjahr 2011 geleistete Ersatz bergbaubedingter Schäden an
+    den Immobilien der Kläger dazu, dass damit in Zusammenhang stehende, teilweise schon im Vorjahr (2010) geltend
+    gemachte Werbungskosten (Firma X, Fassadendämmung und Malerarbeiten: 13.894 €; Firma Y, Dacharbeiten:
+    2.304,61 €; Firma Z, Leitungsarbeiten: 3.500 €) nicht abziehbar seien. Die hiergegen gerichteten Einsprüche der
+    Kläger wies das FA als unbegründet zurück.
+
+10 Die Klage der Kläger hatte zum Teil ‑‑wegen im Revisionsverfahren nicht mehr streitiger Positionen‑‑ Erfolg. Soweit
+   die Kläger indes die geänderten Einkommensteuerbescheide für die Streitjahre vom 23.09.2016 mit Blick auf die
+   Zurechnung von Einkünften aus den im Wege der vorweggenommenen Erbfolge auf T und S übergegangenen
+   Objekten angegriffen hatten, wies das FG die Klage als unbegründet zurück. Ferner entschied das FG, dass die bei
+   den Einkünften aus Vermietung und Verpachtung geltend gemachten Werbungskosten für die Leistungen der
+   Firmen X, Y und Z zwar grundsätzlich anzuerkennen seien, gleichzeitig sei jedoch der von der A AG im Streitjahr
+   2011 zur Abgeltung bergbaubedingter Schäden geleistete Schadenersatzbetrag in Höhe von ... € als Einnahme
+   "gegenzurechnen".
+
+11 Hiergegen wenden sich die Kläger mit der Revision, mit der sie die Verletzung materiellen Rechts (§ 2 Abs. 1 Satz 1
+   des Einkommensteuergesetzes ‑‑EStG‑‑) sowie Verfahrensfehler rügen. Zu Unrecht habe das FG die Einkünfte aus
+   Vermietung und Verpachtung, welche ihre Kinder aus den ihnen übertragenen Immobilien erzielt haben, den
+   Klägern zugerechnet. Ihre Kinder T und S seien, nachdem den Mietern der Übergang des Eigentums angezeigt
+   worden sei, im Außenverhältnis als Vermieter aufgetreten; nur ihnen seien daher die maßgeblichen Einkünfte
+   zuzuordnen. Diese Zurechnung könne nicht durch die Grundsätze des Fremdvergleichs bei Rechtsgeschäften
+   zwischen nahestehenden Personen in Zweifel gezogen werden.
+
+12 Hinsichtlich der Schadenersatzleistung der A AG sei zu berücksichtigen, dass die geltend gemachten
+   Werbungskosten für die Leistungen der Firmen X, Y und Z unzweifelhaft durch die Einkünfteerzielung aus
+   Vermietung und Verpachtung veranlasst waren; soweit das FG im Gegenzug die von der A AG geleisteten Zahlungen
+   für den Ersatz bergbaubedingter Schäden als Einnahmen aus Vermietung und Verpachtung ansetzen und mithin auf
+   gerade diese Werbungskosten "anrechnen" wolle, habe es verkannt, dass das FA für den Ansatz von Einnahmen die
+   Feststellungslast trage. Entgegen der Auffassung des FG habe das FA aber nicht nachgewiesen, dass die
+   Schadenersatzleistungen gerade diese Werbungskosten "ersetzen" sollten. Überdies habe das FG ihr Recht auf
+   Gehör verletzt, den Sachverhalt nicht hinreichend aufgeklärt und gegen den Akteninhalt verstoßen.
+
+13 Während des Revisionsverfahrens hat das FA Einkommensteueränderungsbescheide für 2010 vom 10.02.2020 und
+   für 2011 und 2012 erlassen, jeweils vom 30.01.2020, mit denen es die erstinstanzliche Entscheidung des FG
+   umgesetzt hat.
+
+14 Die Kläger beantragen sinngemäß,
+   das angefochtene Urteil des FG vom 10.12.2019 - 2 K 2497/17 E aufzuheben und die Einkommensteuerbescheide
+   für die Streitjahre vom 23.09.2016, zuletzt in Gestalt der ‑‑die angefochtene erstinstanzliche Entscheidung
+   umsetzenden‑‑ Einkommensteueränderungsbescheide für 2010 vom 10.02.2020 und für 2011 und 2012, jeweils
+   vom 30.01.2020, mit der Maßgabe zu ändern, dass
+
+     - ihnen keine Einkünfte aus den ihren Kindern übertragenen Immobilienobjekten zugerechnet werden,
+
+     - die Leistungen der Firmen X, Y und Z in vollem Umfang als durch die Einkünfteerzielung aus Vermietung und
+       Verpachtung veranlasste Werbungskosten berücksichtigt werden und
+
+     - die Schadenersatzzahlung der A AG nicht als Einnahme bei den Einkünften der Kläger aus Vermietung und
+       Verpachtung angesetzt wird,
+
+
+
+     hilfsweise, das angefochtene Urteil des FG vom 10.12.2019 - 2 K 2497/17 E aufzuheben und die Sache zur
+     anderweitigen Verhandlung und Entscheidung an das FG zurückzuverweisen.
+
+
+15 Das FA beantragt,
+   die Revision als unbegründet zurückzuweisen.
+                                                                                                               Page 3 of 6
+16 Es schließt sich im Wesentlichen der Urteilsbegründung des FG an.
+
+
+Entscheidungsgründe
+II.
+
+17 Die Revision ist begründet. Sie führt zur Aufhebung der Vorentscheidung und Stattgabe der Klage (§ 126 Abs. 3
+   Satz 1 Nr. 1 der Finanzgerichtsordnung ‑‑FGO‑‑).
+
+18 1. Das angefochtene Urteil ist schon aus verfahrensrechtlichen Gründen aufzuheben, da sich während des
+   Revisionsverfahrens der Verfahrensgegenstand, über dessen Rechtmäßigkeit das FG entschieden hatte, geändert
+   hat.
+
+19 a) Das FG hat über die Einkommensteuerbescheide für 2010 bis 2012, jeweils vom 23.09.2016, in Gestalt der
+   Einspruchsentscheidung vom 11.07.2017 entschieden. An die Stelle dieser Bescheide sind während des
+   Revisionsverfahrens die Einkommensteueränderungsbescheide für 2010 vom 10.02.2020 und für 2011 und 2012,
+   jeweils vom 30.01.2020, getreten. Damit liegen dem FG-Urteil nicht mehr existierende Bescheide zugrunde, mit der
+   Folge, dass auch das FG-Urteil keinen Bestand haben kann (Urteil des Bundesfinanzhofs ‑‑BFH‑‑ vom 28.08.2003 -
+   IV R 20/02, BFHE 203, 143, BStBl II 2004, 10, m.w.N.). Die Einkommensteueränderungsbescheide für 2010, 2011
+   und 2012 sind nach §§ 68 Satz 1, 121 FGO Gegenstand des Revisionsverfahrens geworden.
+
+20 Einer Zurückverweisung der Sache gemäß § 127 FGO bedarf es gleichwohl nicht, da die Änderungsbescheide
+   lediglich die angefochtene Entscheidung des FG hinsichtlich im Revisionsverfahren nicht mehr streitiger Positionen
+   nachvollziehen, sich andererseits mit Blick auf im Revisionsverfahren noch streitige Punkte durch die
+   Bescheidänderung keine gegenüber der Entscheidung in der Vorinstanz neuen Tatsachen- und Rechtsfragen
+   ergeben und die Kläger auch keinen weiter gehenden Antrag gestellt haben (Bergkemper in
+   Hübschmann/Hepp/Spitaler, § 127 FGO Rz 15).
+
+21 b) Die von den Klägern geltend gemachten Verfahrensmängel greifen nicht durch; die Entscheidung über die
+   Revision bedarf insoweit keiner Begründung (§ 126 Abs. 6 Satz 1 FGO). Vor diesem Hintergrund sind die vom FG
+   getroffenen tatsächlichen Feststellungen durch die Aufhebung des Urteils nicht weggefallen; sie bilden die
+   Grundlage für die Entscheidung des Senats.
+
+22 2. Zu Unrecht ist das FG davon ausgegangen, dass die Kläger in den Streitjahren den Tatbestand des § 21 Abs. 1
+   Satz 1 Nr. 1 EStG verwirklicht haben, soweit es um die Immobilien geht, die sie zuvor unentgeltlich im Wege
+   vorweggenommener Erbfolge auf ihre Kinder übertragen hatten.
+
+23 a) Einkünfte sind demjenigen zuzurechnen, der sie "erzielt" (§ 2 Abs. 1 Satz 1 EStG a.E.). Einkünfte erzielt, wer einen
+   der in § 2 Abs. 1 Satz 1 EStG aufgezählten Einkunftstatbestände erfüllt. Den objektiven Tatbestand der Einkunftsart
+   Vermietung und Verpachtung verwirklicht, wer einem anderen eines der in § 21 Abs. 1 EStG genannten
+   Wirtschaftsgüter entgeltlich auf Zeit zum Gebrauch oder zur Nutzung überlässt und in diesem Zusammenhang
+   ‑‑nach außen hin sichtbar (vgl. BFH-Urteil vom 22.02.1994 - IX R 141/90, BFH/NV 1994, 866)‑‑ Träger der Rechte
+   und Pflichten aus einem Miet- oder Pachtvertrag ist. Hinsichtlich des objektiven Tatbestands der Einkunftsart
+   Vermietung und Verpachtung kommt es mithin darauf an, wer die maßgebenden wirtschaftlichen
+   Dispositionsbefugnisse über das Mietobjekt und damit eine Vermietertätigkeit selbst (oder durch einen gesetzlichen
+   Vertreter bzw. Verwalter) ausübt; nicht entscheidend ist demgegenüber, wer rechtlicher oder wirtschaftlicher
+   Eigentümer des Mietobjekts ist (ständige Rechtsprechung, z.B. BFH-Urteil vom 21.01.2014 - IX R 10/13, BFH/NV
+   2014, 836, m.w.N.).
+
+24 b) Nach diesen Grundsätzen der höchstrichterlichen Rechtsprechung haben die Kläger in den Streitjahren keine
+   Einkünfte aus den ihren Kindern T und S im Wege vorweggenommener Erbfolge übertragenen Immobilien erzielt.
+
+25 aa) Mit dem Vollzug der zwischen den Klägern und ihren Kindern jeweils geschlossenen Übertragungsverträge
+   traten T und S als neue Eigentümer der Immobilien anstelle der Übergeber kraft Gesetzes (§ 566 Abs. 1 BGB) in die
+   sich aus den laufenden Mietverhältnissen ergebenden Rechte und Pflichten ein. Nach den den Senat gemäß § 118
+   Abs. 2 FGO bindenden tatsächlichen Feststellungen des FG wurde der jeweilige Eigentumsübergang auf T und S
+   und damit das Einrücken in die Vermieterstellung den Mietern auch schriftlich mitgeteilt; damit sind die
+   Übernehmer T und S auch im Außenverhältnis als die aus den Rechtsverhältnissen mit den Mietern berechtigten
+
+                                                                                                                  Page 4 of 6
+    Vermieter aufgetreten. Vor diesem Hintergrund erzielten mit dem Übergang von Nutzen und Lasten an den
+    Immobilien nicht mehr die Kläger, sondern die Übernehmer T und S Einkünfte aus deren Vermietung. Für eine
+    Zurechnung der Vermietungseinkünfte aus den Immobilien an die Kläger fehlt die Rechtsgrundlage.
+
+26 bb) Die im Streitfall zu beurteilenden Übertragungsverträge der Kläger mit ihren Kindern T und S sind ‑‑wie das FG
+   zutreffend entschieden hat‑‑ zivilrechtlich wirksam geschlossen worden. Dies gilt insbesondere für den mit dem
+   Sohn S unter Einschaltung eines Ergänzungspflegers rechtswirksam zustande gekommenen Übertragungsvertrag,
+   der für den minderjährigen Übernehmer einen rechtlichen Nachteil in Form von vertraglichen
+   Rückforderungsrechten enthielt (vgl. Wartenburger in: Wachter, Praxis des Handels- und Gesellschaftsrechts, 5. Aufl.
+   2021, § 9 Rz 582, zur Kommanditübertragung an Minderjährige).
+
+27 cc) Entgegen der Auffassung des FG sind die im Streitfall zu beurteilenden Übertragungsverträge der Kläger mit
+   ihren Kindern T und S auch steuerrechtlich anzuerkennen.
+
+28 Bei den Verträgen handelt es sich um Vereinbarungen im Zuge einer vorweggenommenen Erbfolge, denen ein
+   Schenkungsversprechen zugrunde liegt. Jenseits des Umstandes, dass das BGB für Schenkungen auch gesetzliche
+   Rückforderungsrechte (§§ 528, 530 BGB) vorsieht, werden in solchen ‑‑zumeist unter nahestehenden Personen
+   geschlossenen‑‑ Verträgen, die die Übergabe eines wesentlichen (existenzsichernden) Vermögensgegenstandes
+   beinhalten, regelmäßig auch vertragliche Rückforderungsrechte vereinbart, da der Übergeber vermeiden will, dass
+   das übergebene Vermögen nach der Übertragung nicht entsprechend seinem Willen verwendet wird. Derartige
+   Rückforderungsrechte dienen auch dazu, dass der Übergeber einen für ihn entstandenen oder entstehenden
+   Schaden reduzieren oder abwenden kann (s. Linnartz, AnwaltZertifikatOnline Erbrecht 20/2020, Anm. 2). Dem hat
+   auch der Gesetzgeber mit der Regelung in § 29 Abs. 1 Nr. 1 des Erbschaftsteuer- und Schenkungsteuergesetzes
+   (ErbStG) Rechnung getragen (zur Anwendung der Regelung auf vertragliche Rückforderungsrechte siehe Jochum in
+   Wilms/Jochum, ErbStG/BewG/GrEStG, § 29 ErbStG Rz 30, Stand [01.01.2021]). Vor diesem Hintergrund stellen die im
+   Zuge einer der vorweggenommenen Erbfolge dienenden Vermögensübergabe vereinbarten Rückforderungsrechte
+   keinen ungewöhnlichen, sondern ‑‑ im Gegenteil‑‑ einen typischen Vertragsbestandteil derartiger Verträge dar.
+
+29 Entgegen der Auffassung des FG sind die zwischen den Klägern und ihren Kindern T und S geschlossenen
+   Übertragungsverträge nicht an den allgemeinen Maßstäben des Fremdvergleichs bei Verträgen zwischen
+   nahestehenden Personen (vgl. BFH-Urteil vom 28.06.2002 - IX R 68/99, BFHE 199, 380, BStBl II 2002, 699) zu
+   messen; denn der Fremdvergleich in den Fällen der schenkweisen Vermögensübertragung zum Zwecke der
+   Vorwegerbfolge unterscheidet sich von dem Fremdvergleich bei sonstigen Vertragsverhältnissen zwischen
+   nahestehenden Personen. Hier ist lediglich zu prüfen, ob die mit den Übertragungsverträgen übernommenen
+   Pflichten vertragsgemäß erfüllt worden sind (vgl. BFH-Urteil vom 15.09.2010 - X R 10/09, BFH/NV 2011, 581,
+   m.w.N.), was im Streitfall mit der Übergabe der zugewendeten Vermögensgegenstände geschehen ist. Mit ihrem
+   Vollzug sind die maßgeblichen Übertragungsverträge somit auch steuerrechtlich anzuerkennen. Auf die vom FG im
+   Rahmen seines Fremdvergleichs erwogenen Aspekte (Fortsetzung der Verwaltung der übertragenen Immobilien
+   durch die Kläger aufgrund mündlicher Absprache mit den Kindern; Ungenauigkeiten bei der Abrechnung von nach
+   dem Übertragungszeitpunkt durch die Kläger vereinnahmten Zahlungen bzw. von den Klägern getragenen
+   Aufwendungen) kommt es danach nicht an.
+
+30 3. Die von den Klägern in ihren Einkommensteuererklärungen 2010 und 2011 geltend gemachten Aufwendungen
+   für die Leistungen der Firmen X, Y und Z sind nach zutreffender Auffassung des FG in vollem Umfang als durch die
+   Einkünfteerzielung aus Vermietung und Verpachtung veranlasste Werbungskosten zu berücksichtigen; zu Unrecht
+   hat das FG indes im Gegenzug die den Klägern seitens der A AG zugeflossene Schadenersatzzahlung nach §§ 114,
+   117 des Bundesberggesetzes (BBergG) im Streitjahr 2011 (teilweise) als Einnahme bei den Einkünften aus
+   Vermietung und Verpachtung berücksichtigt.
+
+31 a) Werbungskosten sind nach § 9 Abs. 1 Satz 1 EStG Aufwendungen zur Erwerbung, Sicherung und Erhaltung der
+   Einnahmen. Hierzu zählen insbesondere auch (sog. Erhaltungs-)Aufwendungen für die Instandsetzung vorhandener
+   Gebäude, Gebäudeteile oder -anlagen, soweit diese mit den Einkünften aus Vermietung und Verpachtung i.S. des
+   § 21 Abs. 1 Satz 1 Nr. 1 EStG im wirtschaftlichen Zusammenhang stehen (§ 9 Abs. 1 Satz 2 EStG).
+
+32 Bei den von den Klägern in den Streitjahren 2010 und 2011 getragenen Aufwendungen für die Leistungen der
+   Firmen X, Y und Z (Fassadendämmung, Malerarbeiten, Dach- und Leitungsarbeiten) handelt es sich um
+   Erhaltungsaufwand. Die Aufwendungen sind im Zeitpunkt des Abflusses (§ 11 Abs. 2 Satz 1 EStG) als
+   Werbungskosten bei den Einkünften der Kläger aus Vermietung und Verpachtung zu berücksichtigen.
+
+                                                                                                               Page 5 of 6
+33 b) Die als Ersatz für bergbaubedingte reparable Schäden an den betroffenen Immobilien im Schlichtungswege
+   geleistete Zahlung der A AG rechnet ‑‑ebenso wie die im Privatvermögen befindlichen Objekte selbst‑‑ zur
+   Vermögenssphäre der Kläger. Die Ersatzleistung führt im Streitfall weder zu Einnahmen aus Vermietung und
+   Verpachtung noch zu einer Minderung der Werbungskosten.
+
+34 aa) Einkünfte gemäß § 2 Abs. 1 Satz 1 Nr. 6, § 21 Abs. 1 Satz 1 Nr. 1 EStG erzielt u.a., wer einem anderen zeitlich
+   begrenzt unbewegliches Vermögen gegen Entgelt zum Gebrauch oder zur Nutzung überlässt. Nach § 24 Nr. 1
+   Buchst. a EStG gehören zu den Einkünften i.S. von § 2 Abs. 1 EStG auch Entschädigungen, die als Ersatz für
+   entgangene oder entgehende Einnahmen gewährt worden sind. Auch Schadenersatzleistungen, die bei den
+   Einkünften aus Vermietung und Verpachtung geltend gemachte Werbungskosten ersetzen, sind im Jahr des
+   Zuflusses (§ 11 Abs. 1 Satz 1 EStG) steuerpflichtige Einnahmen bei dieser Einkunftsart (BFH-Urteile vom
+   10.11.2020 - IX R 32/19, BFHE 271, 218; vom 31.01.2017 - IX R 26/16, BFHE 257, 78, BStBl II 2018, 341, und vom
+   23.03.1993 - IX R 67/88, BFHE 171, 183, BStBl II 1993, 748).
+
+35 bb) Nach den nicht mit zulässigen und begründeten Revisionsrügen angegriffenen und daher den Senat nach § 118
+   Abs. 2 FGO bindenden Feststellungen des FG wurden die Zahlungen der A AG nicht für die zeitlich begrenzte
+   Überlassung zur Nutzung oder für entgangene oder entgehende Einnahmen, sondern als Ersatz für bergbaubedingte
+   reparable Schäden an Immobilienobjekten der Kläger geleistet. In diesem Zusammenhang haben die Kläger
+   Bescheinigungen der die maßgeblichen Reparaturarbeiten ausführenden Firmen X, Y und Z (Fassadendämmung,
+   Malerarbeiten, Dach- und Leitungsarbeiten) sowie ein Sachverständigengutachten beigebracht, wonach die
+   Reparaturarbeiten keinen Bezug zu den an den Immobilien festgestellten Bergbauschäden hatten.
+
+36 Unter Berücksichtigung dieser Umstände ist das FG in revisionsrechtlich nicht zu beanstandender Weise davon
+   ausgegangen, dass sich weder den (Schlichtungs-)Vereinbarungen der Kläger mit der A AG noch den weiteren, im
+   finanzgerichtlichen Verfahren vorgelegten Unterlagen entnehmen ließe, dass die genannten Aufwendungen
+   tatsächlich durch die Schadenersatzzahlung der A AG ersetzt worden sind; vielmehr lasse sich "nicht weiter
+   aufklären", welche Aufwendungen genau von der A AG ersetzt werden sollten, da die genaue Zusammensetzung des
+   Erstattungsbetrages nach Ausschöpfung bestehender Aufklärungsmöglichkeiten "unklar" bleibe.
+
+37 Diese Unklarheiten gehen indes zu Lasten des FA, das die Feststellungslast für steuererhöhende Tatsachen ‑‑hier
+   für das Vorliegen von Einnahmen aus Vermietung und Verpachtung‑‑ trägt.
+
+38 4. Die Sache ist spruchreif. Die Einkünfte der Kläger aus Vermietung und Verpachtung sind um die von T und S in
+   den Streitjahren erzielten Einnahmen, die zu Unrecht den Klägern zugerechnet wurden, und um die zu Unrecht als
+   Einnahme erfasste Zahlung der A AG zu reduzieren; die von den Klägern getragenen Aufwendungen für die
+   Leistungen der Firmen X, Y und Z sind im Zeitpunkt des Abflusses in voller Höhe als Werbungskosten bei den
+   Einkünften aus Vermietung und Verpachtung zu berücksichtigen.
+
+39 5. Die Kostenentscheidung folgt aus § 135 Abs. 1 FGO.
+
+
+Quelle: www.bundesfinanzhof.de
+
+
+
+
+                                                                                                                Page 6 of 6
+

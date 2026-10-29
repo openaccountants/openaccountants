@@ -1,0 +1,11 @@
+{
+  "id": "E3c",
+  "url": "https://www.gesetze-im-internet.de/estg/__3c.html",
+  "raw_path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-3c-20261024.html",
+  "raw_sha256": "bacf05969468e83a9a319cced4a36b186cc977a59deb5ecea8fab09605a31da2",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/E3c.paragraphs.txt",
+  "reader_sha256": "a29f8f846e65776da02fa8c2ee0db9e2c79014fe2446e526f96dd8831b43d6b9",
+  "paragraphs": 5,
+  "extraction": "HTML jurAbsatz content; decoded declared charset, HTML entities decoded and whitespace collapsed in derived reader only. Raw body untouched.",
+  "acquisition": "prior cached body"
+}

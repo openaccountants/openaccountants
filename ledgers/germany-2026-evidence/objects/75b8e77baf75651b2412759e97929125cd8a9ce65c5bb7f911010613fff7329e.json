@@ -1,0 +1,17 @@
+[
+  {
+    "offset": 1126,
+    "before": "version: 1.5\n",
+    "after": "version: 1.6\n"
+  },
+  {
+    "offset": 38616,
+    "before": "- **Under-declaration** (wrong deductions, unreported rent): the tax office corrects the assessment with interest; deliberate cases are tax offences. Refer.",
+    "after": "- **Under-declaration** (wrong deductions, unreported rent): refer for the appropriate return or assessment correction. Apply § 233a interest only where its conditions and statutory interest period are met. Deliberate false or incomplete tax facts that shorten tax can constitute tax offences under § 370 AO; refer."
+  },
+  {
+    "offset": 39436,
+    "before": "- **German residents with property abroad**: report it; treaties usually leave rent to the state where the property is. Treaty exemption, progression and Anlage AUS: refer.",
+    "after": "- **German residents with property abroad**: report the rental income and determine the treatment from the actual treaty for the property country. Treaty exemption, credit, progression and Anlage AUS: refer."
+  }
+]

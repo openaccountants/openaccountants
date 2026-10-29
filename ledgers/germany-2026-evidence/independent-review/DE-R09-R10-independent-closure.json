@@ -1,0 +1,53 @@
+{
+  "status": "PASS bounded exact R09/R10 deltas only. Corporate whole-pair reading is complete; trade whole-pair reading is still pending. No country verdict.",
+  "members_rehashed": 27,
+  "pairs": {
+    "de-corporate-tax": {
+      "Guide_sha256": "c784531df91701c4a7e70a217c06eb7e11587bbf0c7a8dfe9fe1c8429c94e195",
+      "Guide_bytes": 42297,
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R09-corporate-rounding-writer-successor-2026-10-29/ledgers/de-corporate-tax.md",
+      "ledger_sha256": "c7018e24f13c32de67faa572f922b9e6304a693154a1c7b1d31de597549569b5",
+      "current_rows": 232,
+      "exact_operations": 2,
+      "full_inverse": true,
+      "native_rows_checked": 232,
+      "original_oa_exact": 2,
+      "tax_source_numerical_delta": "Only corporate new assessed-rounding sentence and stipulated separator; trade no rule/number change"
+    },
+    "de-trade-tax": {
+      "Guide_sha256": "7ba930a0417d470d9fe2baaeb87ef835891383270ce931a4377535380bac6e56",
+      "Guide_bytes": 40351,
+      "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R09-corporate-rounding-writer-successor-2026-10-29/ledgers/de-trade-tax.md",
+      "ledger_sha256": "ff116f30defd925575a8561955441923343237649757c4ad4a35f8b602cc4834",
+      "current_rows": 102,
+      "exact_operations": 2,
+      "full_inverse": true,
+      "native_rows_checked": 102,
+      "original_oa_exact": 2,
+      "tax_source_numerical_delta": "Only corporate new assessed-rounding sentence and stipulated separator; trade no rule/number change"
+    }
+  },
+  "source_read_reuse": "KStG31(1) full nativeLF7 independently actually read as corporatequote24; exact raw/reader/quote identities matched",
+  "own_positive_rounding_controls": [
+    {
+      "input_taxable": 10001,
+      "unrounded_15pct": "1500.15",
+      "positive_assessed_KSt": 1500
+    },
+    {
+      "input_taxable": 10006,
+      "unrounded_15pct": "1500.9",
+      "positive_assessed_KSt": 1500
+    },
+    {
+      "input_taxable": 10007,
+      "unrounded_15pct": "1501.05",
+      "positive_assessed_KSt": 1501
+    },
+    {
+      "input_taxable": 10000,
+      "unrounded_15pct": "1500.0",
+      "positive_assessed_KSt": 1500
+    }
+  ]
+}

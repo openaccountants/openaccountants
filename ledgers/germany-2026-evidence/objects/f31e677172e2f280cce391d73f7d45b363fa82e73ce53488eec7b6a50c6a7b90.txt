@@ -1,0 +1,77 @@
+§ 1 KStTG - Einzelnorm
+zurück
+weiter
+Nichtamtliches Inhaltsverzeichnis
+Gesetz über die Meldepflicht von Anbietern und den automatischen Austausch von Informationen in Steuersachen bei Kryptowerte-Dienstleistungen (Kryptowerte-Steuertransparenz-Gesetz - KStTG)
+§ 1 Begriffsbestimmungen
+(1) Aktiver Rechtsträger im Sinne dieses Gesetzes ist 1.
+ein Rechtsträger, von dessen Bruttoeinkünften im vorangegangenen Wirtschaftsjahr weniger als 50 Prozent passive Einkünfte waren und bei dem weniger als 50 Prozent der ihm während des vorangegangenen Wirtschaftsjahres zugerechneten Vermögenswerte solche sind, mit denen passive Einkünfte erzielt werden oder erzielt werden sollen,
+2.
+ein Rechtsträger, dessen Tätigkeit im Wesentlichen im vollständigen oder teilweisen Halten der ausgegebenen Aktien einer oder mehrerer Tochtergesellschaften, die eine andere Geschäftstätigkeit als die eines Finanzinstituts ausüben, sowie in der Finanzierung und Erbringung von Dienstleistungen für diese Tochtergesellschaften besteht, sofern der Rechtsträger nicht als Anlagefonds tätig ist oder sich als solcher bezeichnet,
+3.
+ein Rechtsträger, der noch kein Geschäft betreibt und auch in der Vergangenheit kein Geschäft betrieben hat, jedoch Kapital in Vermögenswerten mit der Absicht anlegt, ein anderes Geschäft als das eines Finanzinstituts zu betreiben, sofern seit der Gründung des Rechtsträgers noch nicht 24 Monate und ein Tag vergangen sind,
+4.
+ein Rechtsträger, der in den vergangenen fünf Jahren kein Finanzinstitut war und derzeit seine Vermögenswerte veräußert oder eine Umstrukturierung durchführt mit der Absicht, eine andere Geschäftstätigkeit als die eines Finanzinstituts fortzusetzen oder wieder aufzunehmen,
+5.
+ein Rechtsträger, dessen Tätigkeit vorwiegend in der Finanzierung und Absicherung von Transaktionen mit verbundenen Rechtsträgern oder für verbundene Rechtsträger, die kein Finanzinstitut sind, besteht und der keine Finanzierungs- oder Absicherungsleistungen für Rechtsträger erbringt, die keine verbundenen Rechtsträger sind, mit der Maßgabe, dass der Konzern dieser verbundenen Rechtsträger vorwiegend eine andere Geschäftstätigkeit als die eines Finanzinstituts ausübt, oder
+6.
+ein Rechtsträger, a)
+der in dem Staat, in dem er steuerlich ansässig ist, ausschließlich für religiöse, gemeinnützige, wissenschaftliche, künstlerische, kulturelle, sportliche oder erzieherische Zwecke errichtet und betrieben wird oder der in diesem Staat errichtet und betrieben wird und ein Berufsverband, ein Wirtschaftsverband, eine Handelskammer, ein Arbeitnehmerverband, ein Landwirtschafts- oder Gartenbauverband, eine Bürgervereinigung oder eine Organisation, die ausschließlich zur Förderung der sozialen Wohlfahrt betrieben wird, ist,
+b)
+der in dem Staat, in dem er steuerlich ansässig ist, von der Einkommensteuer oder Körperschaftsteuer befreit ist,
+c)
+der keine Anteilseigner oder Mitglieder hat, die Eigentums- oder Nutzungsrechte an seinen Einkünften oder Vermögenswerten haben,
+d)
+dessen Einkünfte und Vermögenswerte nach dem geltenden Recht des Ansässigkeitsstaats oder den Gründungsunterlagen des Rechtsträgers nicht an eine Privatperson oder einen nicht gemeinnützigen Rechtsträger ausgeschüttet oder zu deren oder dessen Gunsten verwendet werden dürfen, außer in Übereinstimmung mit der Ausübung der gemeinnützigen Tätigkeit des Rechtsträgers, als Zahlung einer angemessenen Vergütung für erbrachte Leistungen oder als Zahlung in Höhe des Marktwerts eines vom Rechtsträger erworbenen Vermögensgegenstands, und
+e)
+dessen Vermögenswerte nach dem geltenden Recht des Sitzstaats oder den Gründungsunterlagen des Rechtsträgers bei seiner Liquidation oder Auflösung an einen staatlichen Rechtsträger oder eine andere gemeinnützige Organisation verteilt werden müssen oder der Regierung des Sitzstaats des Rechtsträgers oder einer seiner Gebietskörperschaften anheimfallen.
+(2) Anbieter im Sinne dieses Gesetzes sind Kryptowerte-Dienstleister und Kryptowerte-Betreiber, die eine oder mehrere Kryptowerte-Dienstleistungen anbieten, die Tauschgeschäfte für oder im Namen eines zu meldenden Nutzers bewirken.
+(3) Ausgenommene Personen im Sinne dieses Gesetzes sind 1.
+Rechtsträger, deren Aktien regelmäßig an einer oder mehreren anerkannten Wertpapierbörsen gehandelt werden, oder mit diesen Rechtsträgern verbundene Rechtsträger,
+2.
+staatliche Rechtsträger im Sinne des § 19 Nummer 16 des Finanzkonten-Informationsaustauschgesetzes,
+3.
+internationale Organisationen im Sinne des § 19 Nummer 17 des Finanzkonten-Informationsaustauschgesetzes,
+4.
+Zentralbanken im Sinne des § 19 Nummer 18 des Finanzkonten-Informationsaustauschgesetzes und
+5.
+Finanzinstitute im Sinne des § 19 Nummer 3 des Finanzkonten-Informationsaustauschgesetzes, außer Investmentunternehmen im Sinne des § 19 Nummer 6 Satz 1 Buchstabe b des Finanzkonten-Informationsaustauschgesetzes.
+(4) Beherrschende Personen im Sinne dieses Gesetzes sind Personen im Sinne des § 19 Nummer 45 des Finanzkonten-Informationsaustauschgesetzes.
+(5) Digitales Zentralbankgeld im Sinne dieses Gesetzes ist digitales Zentralbankgeld im Sinne des § 19 Nummer 11 des Finanzkonten-Informationsaustauschgesetzes.
+(6) E-Geld im Sinne dieses Gesetzes ist E-Geld im Sinne des § 19 Nummer 9 des Finanzkonten-Informationsaustauschgesetzes.
+(7) Fiat-Währung im Sinne dieses Gesetzes ist eine Währung im Sinne des § 19 Nummer 10 des Finanzkonten-Informationsaustauschgesetzes.
+(8) Kryptowert im Sinne dieses Gesetzes ist ein Kryptowert im Sinne des Artikels 3 Absatz 1 Nummer 5 der Verordnung (EU) 2023/1114.
+(9) Kryptowerte-Betreiber im Sinne dieses Gesetzes ist, wer Krypowerte-Dienstleistungen erbringt und nicht unter Artikel 3 Absatz 1 Nummer 15 der Verordnung (EU) 2023/1114 fällt.
+(10) Kryptowerte-Dienstleister im Sinne dieses Gesetzes ist ein Anbieter von Kryptowerte-Dienstleistungen im Sinne des Artikels 3 Absatz 1 Nummer 15 der Verordnung (EU) 2023/1114.
+(11) Kryptowerte-Dienstleistungen im Sinne dieses Gesetzes sind Kryptowerte-Dienstleistungen im Sinne des Artikels 3 Absatz 1 Nummer 16 der Verordnung (EU) 2023/1114 sowie Staking und Lending.
+(12) Kryptowerte-Nutzer im Sinne dieses Gesetzes ist, wer Kryptowerte-Dienstleistungen eines Anbieters in Anspruch nimmt. Handelt ein Vertreter, Verwahrer, Unterzeichner, Anlageberater oder Intermediär, der kein Finanzinstitut oder anderer Anbieter ist, zugunsten oder für Rechnung einer natürlichen Person oder eines Rechtsträgers, gilt nur diese natürliche Person oder dieser Rechtsträger als Kryptowerte-Nutzer. Führt ein Anbieter für einen Händler oder im Namen eines Händlers eine zu meldende Massenzahlungstransaktion durch, so gilt auch die Gegenpartei des Händlers für diese Massenzahlungstransaktion als Kryptowerte-Nutzer, sofern der Anbieter nach § 10 Absatz 1 Nummer 1 des Geldwäschegesetzes oder nach vergleichbaren Vorschriften zur Identifizierung des Vertragspartners und gegebenenfalls der für ihn auftretenden Personen in einem anderen Staat verpflichtet ist, die Identität dieser Gegenpartei zu überprüfen.
+(13) Qualifizierende Vereinbarung im Sinne dieses Gesetzes ist eine Vereinbarung zwischen den zuständigen Behörden eines Mitgliedstaates der Europäischen Union und eines Drittstaates, die den automatischen Austausch von Informationen regelt, wenn die Europäische Kommission festgestellt hat, dass die nach der Vereinbarung auszutauschenden Informationen den nach § 11 zu meldenden Informationen gleichwertig sind.
+(14) Qualifizierter Drittstaat im Sinne dieses Gesetzes ist ein Steuerhoheitsgebiet, das über eine qualifizierende Vereinbarung mit den zuständigen Behörden aller Mitgliedstaaten der Europäischen Union verfügt, wenn das Steuerhoheitsgebiet die Mitgliedstaaten der Europäischen Union in einer veröffentlichten Liste als meldepflichtige Staaten aufführt.
+(15) Rechtsträger im Sinne dieses Gesetzes sind juristische Personen, Personenvereinigungen und Vermögensmassen.
+(16) Tauschgeschäft im Sinne dieses Gesetzes ist jeder Tausch zwischen 1.
+zu meldenden Kryptowerten und Fiat-Währungen oder
+2.
+einer oder mehreren Arten zu meldender Kryptowerte untereinander.
+(17) Übertragung zu meldender Kryptowerte im Sinne dieses Gesetzes ist jede Transaktion, bei der 1.
+ein zu meldender Kryptowert von einer oder an eine Kryptowert-Adresse oder von einem oder auf ein Kryptowert-Konto bewegt wird, mit Ausnahme einer Transaktion, die vom Anbieter im Namen desselben Kryptowerte-Nutzers verwaltet wird, und
+2.
+der Anbieter auf der Grundlage der ihm zum Zeitpunkt der Transaktion zur Verfügung stehenden Informationen nicht feststellen kann, dass es sich bei der Transaktion um ein Tauschgeschäft handelt.
+(18) Verbundener Rechtsträger im Sinne dieses Gesetzes ist ein Rechtsträger, der mit einem anderen Rechtsträger derart verbunden ist, dass einer der beiden Rechtsträger den anderen beherrscht oder die beiden Rechtsträger derselben Beherrschung unterliegen. Eine Beherrschung liegt vor, wenn von der beherrschenden Person unmittelbar oder mittelbar mehr als 50 Prozent der Anteile am Nennkapital oder am Gesellschaftsvermögen oder 50 Prozent der Stimmrechte oder der Mitgliedschaftsrechte gehalten werden oder der beherrschenden Person unmittelbar oder mittelbar mehr als 50 Prozent des Gewinns oder des Liquidationserlöses zustehen.
+(19) Zu meldende beherrschende Person im Sinne dieses Gesetzes ist eine beherrschende Person, die 1.
+einen Rechtsträger beherrscht, der kein aktiver Rechtsträger ist, und
+2.
+eine zu meldende Person ist.
+(20) Zu meldende Massenzahlungstransaktion im Sinne dieses Gesetzes ist eine Übertragung zu meldender Kryptowerte gegen Waren oder Dienstleistungen, die zum Zeitpunkt der Übertragung einen Wert von mehr als 50 000 US-Dollar haben.
+(21) Zu meldende Person im Sinne dieses Gesetzes ist, wer in einem Mitgliedstaat der Europäischen Union oder in einem Drittstaat, mit dem eine qualifizierende Vereinbarung besteht, steuerlich ansässig und keine ausgenommene Person ist. Rechtsträger, bei denen keine steuerliche Ansässigkeit vorliegt, gelten als in dem Staat ansässig, in dem sich der Ort ihrer tatsächlichen Geschäftsleitung oder die Anschrift ihres Hauptsitzes befindet. Als zu meldende Person gilt auch der Nachlass eines Erblassers, der in einem Mitgliedstaat der Europäischen Union oder einem Drittstaat, mit dem eine qualifizierende Vereinbarung besteht, steuerlich ansässig war.
+(22) Zu meldende Transaktion im Sinne dieses Gesetzes ist 1.
+ein Tauschgeschäft oder
+2.
+eine Übertragung zu meldender Kryptowerte.
+(23) Zu meldender Kryptowert im Sinne dieses Gesetzes ist jeder Kryptowert, außer digitales Zentralbankgeld, E-Geld und solche Kryptowerte, die nicht für Zahlungs- oder Investitionszwecke verwendet werden können.
+(24) Zu meldender Nutzer im Sinne dieses Gesetzes ist ein Kryptowerte-Nutzer, der eine zu meldende Person ist.
+(25) Zweigniederlassung im Sinne dieses Gesetzes ist eine Einheit, ein Geschäft oder ein Büro eines Anbieters in einem Staat, die oder das nach den Regeln dieses Staates als Zweigniederlassung gilt oder anderweitig nach dem Recht dieses Staates als getrennt von anderen Einheiten, Geschäften oder Büros des Anbieters behandelt wird. Alle sich im selben Staat befindenden Einheiten, Geschäfte oder Büros eines Anbieters gelten als eine einzige Zweigniederlassung.
+zum Seitenanfang
+Impressum
+Datenschutz
+Barrierefreiheitserklärung
+Feedback-Formular

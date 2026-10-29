@@ -1,0 +1,18 @@
+{
+  "reference": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+  "worktree_all30_exact": true,
+  "all_country_files": 30,
+  "tax_compliance_guides": 25,
+  "excluded_non_tax_companions": 3,
+  "routing_source_companions": 2,
+  "tax_guides_with_located_independent_report": 9,
+  "tax_guides_without_located_independent_report": 16,
+  "full_file_review_pin_matches": 2,
+  "nine_method_bodies_match": true,
+  "cached_source_artifacts": 277,
+  "source_read_ledger": "No per-claim/per-source normalized actual-reading ledger found for Germany. Reports describe selected primary sources and stated limitations; acquisition inventory is not actual reading.",
+  "whole_pack_review": "NOT LOCATED; coverage-complete labels and scoped restoration do not establish it",
+  "new_legal_research": false,
+  "new_country_review": false,
+  "Guide_or_Git_mutations": false
+}

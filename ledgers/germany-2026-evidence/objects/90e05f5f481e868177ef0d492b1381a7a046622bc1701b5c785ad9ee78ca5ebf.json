@@ -1,0 +1,73 @@
+{
+  "finding": "DE-B09",
+  "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-payroll.md",
+  "Guide_sha256": "1f868882ad605e0f7342c5290329c32f491f614662ed685cf98c47a573f718ef",
+  "native_LF": 153,
+  "exact_before": "- Past the standard retirement age: drawing a full old-age pension, or reaching that age, frees the employee from pension and unemployment contributions, but the employer still pays its half ([§ 172(1) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__172.html), [§ 346(3) SGB III](https://www.gesetze-im-internet.de/sgb_3/__346.html)).",
+  "options": [
+    {
+      "label": "A — state the ordinary branch-specific tests (recommended)",
+      "exact_after": "- **Past the standard retirement age.** Pension and unemployment have different exemption tests. Under [§ 5(4) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__5.html), an ordinarily insured employee drawing a full old-age pension is pension-insurance-free after the end of the month of reaching standard retirement age, unless they waive that exemption; reaching the age alone does not generally end an existing pension-insurance duty. Under [§ 28(1) no. 1 SGB III](https://www.gesetze-im-internet.de/sgb_3/__28.html), unemployment insurance ends at the end of the month of reaching the applicable retirement age. The employer still pays the statutory half contribution for an employee exempt on these grounds ([§ 172(1) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__172.html), [§ 346(3) SGB III](https://www.gesetze-im-internet.de/sgb_3/__346.html))."
+    },
+    {
+      "label": "B — compact separated statutory route",
+      "exact_after": "- **Past the standard retirement age.** Check pension exemption separately under [§ 5(4) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__5.html): a full old-age pension after the qualifying month is one ground, subject to the employee’s waiver; age alone does not generally exempt an already insured employee. Unemployment has its own age exclusion under [§ 28(1) no. 1 SGB III](https://www.gesetze-im-internet.de/sgb_3/__28.html). Where the employee is exempt on those grounds, the employer continues the statutory half contribution ([§ 172(1) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__172.html), [§ 346(3) SGB III](https://www.gesetze-im-internet.de/sgb_3/__346.html))."
+    }
+  ],
+  "source_scopes": [
+    {
+      "source_id": "DEB268",
+      "act_article": "SGBVI5(4)",
+      "native_LF": [
+        28,
+        34
+      ],
+      "exact_original_quote": "(4) Versicherungsfrei sind Personen, die 1.\nnach Ablauf des Monats, in dem die Regelaltersgrenze erreicht wurde, eine Vollrente wegen Alters beziehen,\n2.\nnach beamtenrechtlichen Vorschriften oder Grundsätzen oder entsprechenden kirchenrechtlichen Regelungen oder nach den Regelungen einer berufsständischen Versorgungseinrichtung eine Versorgung nach Erreichen einer Altersgrenze beziehen oder die in der Gemeinschaft übliche Versorgung im Alter nach Absatz 1 Satz 1 Nr. 3 erhalten oder\n3.\nbis zum Erreichen der Regelaltersgrenze nicht versichert waren oder nach Erreichen der Regelaltersgrenze eine Beitragserstattung aus ihrer Versicherung erhalten haben.\nSatz 1 gilt nicht für Beschäftigte in einer Beschäftigung, in der sie durch schriftliche oder elektronische Erklärung gegenüber dem Arbeitgeber auf die Versicherungsfreiheit verzichten. Der Verzicht kann nur mit Wirkung für die Zukunft erklärt werden und ist für die Dauer der Beschäftigung bindend. Die Sätze 2 und 3 gelten entsprechend für selbständig Tätige, die den Verzicht gegenüber dem zuständigen Träger der Rentenversicherung erklären.",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_6/__5.html",
+      "raw_sha256": "899a16463fca13bf3f89f55d86dc8032351618f9e5230b208f331adba9e5c699",
+      "reader_sha256": "71ed1740c68f5f56c99d6b5c6b616c5a120f66e4c6c41d78f553c22d0b659114",
+      "read_on": "2026-10-29"
+    },
+    {
+      "source_id": "DEB294",
+      "act_article": "SGBIII28(1)no1",
+      "native_LF": [
+        7,
+        8
+      ],
+      "exact_original_quote": "(1) Versicherungsfrei sind Personen, 1.\ndie das Lebensjahr für den Anspruch auf Regelaltersrente im Sinne des Sechsten Buches vollenden, mit Ablauf des Monats, in dem sie das maßgebliche Lebensjahr vollenden,",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_3/__28.html",
+      "raw_sha256": "80a84b1e6e78281938df3152e5f1285f6c3642b0d7bee4d42db9064e2f0055b5",
+      "reader_sha256": "8d77a99001d061915b549a427b45673deea0cdf398398baa61d9b269d15bb8fa",
+      "read_on": "2026-10-29"
+    },
+    {
+      "source_id": "DEB081",
+      "act_article": "SGBVI172(1)",
+      "native_LF": [
+        7,
+        15
+      ],
+      "exact_original_quote": "(1) Für Beschäftigte, die versicherungsfrei sind wegen 1.\ndes Bezugs einer Vollrente wegen Alters nach Ablauf des Monats, in dem die Regelaltersgrenze erreicht wurde,\n2.\ndes Bezugs einer Versorgung,\n3.\ndes Erreichens der Regelaltersgrenze oder\n4.\neiner Beitragserstattung,\ntragen die Arbeitgeber die Hälfte des Beitrags, der zu zahlen wäre, wenn die Beschäftigten versicherungspflichtig wären; in der knappschaftlichen Rentenversicherung ist statt der Hälfte des Beitrags der auf die Arbeitgeber entfallende Beitragsanteil zu zahlen. Satz 1 findet keine Anwendung auf versicherungsfrei geringfügig Beschäftigte und Beschäftigte nach § 1 Satz 1 Nr. 2.",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_6/__172.html",
+      "raw_sha256": "d8114a051906902184f1471c41c64af48ad042433018f2ad11f0fb8832b6977a",
+      "reader_sha256": "6ea881f889a7749ac7ce9edd7636f8bf8fd6355da38a689499537d0169c7efb8",
+      "read_on": "2026-10-29"
+    },
+    {
+      "source_id": "DEB073",
+      "act_article": "SGBIII346(3)",
+      "native_LF": [
+        14,
+        14
+      ],
+      "exact_original_quote": "(3) Für Beschäftigte, die wegen Vollendung des für die Regelaltersrente im Sinne des Sechsten Buches erforderlichen Lebensjahres versicherungsfrei sind, tragen die Arbeitgeber die Hälfte des Beitrages, der zu zahlen wäre, wenn die Beschäftigten versicherungspflichtig wären. Für den Beitragsanteil gelten die Vorschriften des Dritten Abschnitts des Vierten Buches und die Bußgeldvorschriften des § 111 Abs. 1 Nr. 2 bis 4, 8 und Abs. 4 des Vierten Buches entsprechend. Die Sätze 1 und 2 sind bis zum 31. Dezember 2021 nicht anzuwenden.",
+      "official_url": "https://www.gesetze-im-internet.de/sgb_3/__346.html",
+      "raw_sha256": "63656d2f1f4d70c3887927ce9dfdda5b806545123b5371cdd14daaf6701f7826",
+      "reader_sha256": "ca657a1f4699ebb34aa4320a821bf96c2789e5f8c98b3ef88d394fc8d660f832",
+      "read_on": "2026-10-29"
+    }
+  ],
+  "separating_case": "Already insured employee, pension not drawn, age threshold passed: RV employee duty continues; AV exclusion applies after qualifying month. Existing combined OR would incorrectly suppress both. Full old-age pension before qualifying age likewise does not by itself satisfy current5(4)no1.",
+  "no_Guide_edit": true
+}

@@ -1,0 +1,100 @@
+{
+  "status": "writer successor, independent review pending",
+  "artifacts": [
+    {
+      "path": "after/de-rental-income.md",
+      "sha256": "6f97644830c828129f0e7343809d7d42022297e444ff4e840a2f35594f36715e",
+      "bytes": 51133
+    },
+    {
+      "path": "before/de-rental-income.md",
+      "sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e",
+      "bytes": 48829
+    },
+    {
+      "path": "check-and-seal.py",
+      "sha256": "9a0d6792beaf0970a1fb040693096cc42bdcbca4077f3d57d0df4225e2b3bed5",
+      "bytes": 9018
+    },
+    {
+      "path": "check-history.json",
+      "sha256": "7d02884d6d6631d9283f3dc024ba54609d3c8494fa90aefa6fea73fd9df5d270",
+      "bytes": 278
+    },
+    {
+      "path": "exact-operations.json",
+      "sha256": "18603770c029979b78f21958d65343bb46d02c2325db43ab0337eccef00b55a4",
+      "bytes": 5539
+    },
+    {
+      "path": "historical-author.py",
+      "sha256": "9f5b02e3239827e1f418f3b5cb5a8d63788d868028a5fb628760bb0c4ea8e2c3",
+      "bytes": 12091
+    },
+    {
+      "path": "ledgers/de-rental-income.md",
+      "sha256": "2302bb3ddb1e1197523d20d77c817624b8134644cc77ddce1eae4628f537a838",
+      "bytes": 371071
+    },
+    {
+      "path": "options-and-selection.md",
+      "sha256": "773d71cf54af1095c1e55047f11153376fa37a91d813c5b6f9f20e586a3a8b0e",
+      "bytes": 1023
+    },
+    {
+      "path": "own-actual-read-quotes.json",
+      "sha256": "1e2de4ce777ec56af04df516449a333fcb7fafe3b027d22146c0b22230d0e1d7",
+      "bytes": 23000
+    },
+    {
+      "path": "resume-ledger.py",
+      "sha256": "9c3d5fade604a432b5772274d9c0cbdd6ecf0e98182ab1451b5c04efb6d5e34f",
+      "bytes": 6211
+    },
+    {
+      "path": "source-index-reference.json",
+      "sha256": "fb6b9fc9a7b5db5f6912bef719b4583706cf99394d46d9957f898c6f8e5173cb",
+      "bytes": 496
+    },
+    {
+      "path": "source-quote-index.json",
+      "sha256": "7b16202baf3f8c7ccf33eba55478ee0b61bdc2e7c5eaa17fe7e9e30b53413787",
+      "bytes": 254455
+    },
+    {
+      "path": "source-quotes.md",
+      "sha256": "207223e95d7c058c7a7862d8b6fef7377e6e02bb9ffcb0857bb6f0849e449216",
+      "bytes": 156296
+    },
+    {
+      "path": "successor-inventory.json",
+      "sha256": "53a114f6c7fa5908ee294bd9b44f9821f8c766db486ff13a15d04d2659522045",
+      "bytes": 653
+    },
+    {
+      "path": "support/current-rule-rows.json",
+      "sha256": "6fee6a866340d604cc6eb1642060ece218c356f442cacbd8ef5cf5c7234a520e",
+      "bytes": 170436
+    },
+    {
+      "path": "support/line-map.json",
+      "sha256": "66d3aec7a3cab49979f865adad2ff436d0a4ffe13518eacb46b8746487be1ae1",
+      "bytes": 11530
+    },
+    {
+      "path": "support/old-topics.json",
+      "sha256": "10dfe0b7c75463405a963b78ff3c37341dcae7be64870a80f5935df3d4383c24",
+      "bytes": 796465
+    },
+    {
+      "path": "writer-checks.json",
+      "sha256": "e44ecd33136bc2c42d256e28eaf96923ed00f8c1b40fb89463252c0d1148865d",
+      "bytes": 5273
+    },
+    {
+      "path": "writer-report.md",
+      "sha256": "f2ee684bc1b869a322ea92f46ad709a7a7173bed20cb923bb0d42e2bf96c9e51",
+      "bytes": 1661
+    }
+  ]
+}

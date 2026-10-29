@@ -1,0 +1,261 @@
+{
+  "scope": "Both2original oa fixtures and complete narrative calculations independently recomputed with Fraction; own treaty/period/day/credit/threshold/proof separators. No source uncertainty silently selected, no portal or foreign-rate calculator parity.",
+  "controls": [
+    {
+      "name": "case1tariffraw",
+      "actual": "14233229838131/1000000000",
+      "expected": "14233229838131/1000000000"
+    },
+    {
+      "name": "case1tarifffloor",
+      "actual": "14233",
+      "expected": "14233"
+    },
+    {
+      "name": "case1Swiss4point5percent",
+      "actual": "3600",
+      "expected": "3600"
+    },
+    {
+      "name": "case1Germanbalance",
+      "actual": "10633",
+      "expected": "10633"
+    },
+    {
+      "name": "case1combinedtax",
+      "actual": "14233",
+      "expected": "14233"
+    },
+    {
+      "name": "case1Soliunder20350",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "case2contractdays",
+      "actual": "144",
+      "expected": "144"
+    },
+    {
+      "name": "case2reducednonreturn",
+      "actual": "36",
+      "expected": "36"
+    },
+    {
+      "name": "case2workingdays",
+      "actual": "132",
+      "expected": "132"
+    },
+    {
+      "name": "case2commutedays",
+      "actual": "72",
+      "expected": "72"
+    },
+    {
+      "name": "case2minimum20percentactualdayalternative",
+      "actual": "132/5",
+      "expected": "132/5"
+    },
+    {
+      "name": "case2minimum20percentcontractdays",
+      "actual": "144/5",
+      "expected": "144/5"
+    },
+    {
+      "name": "case2nonreturnmargin",
+      "actual": "6",
+      "expected": "6"
+    },
+    {
+      "name": "case2returnmargin",
+      "actual": "228/5",
+      "expected": "228/5"
+    },
+    {
+      "name": "case2althomeofficereutrn",
+      "actual": "22",
+      "expected": "22"
+    },
+    {
+      "name": "case2altmargin",
+      "actual": "-22/5",
+      "expected": "-22/5"
+    },
+    {
+      "name": "case2altfailsboth",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "exact60nonreturndaysstillpasses",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "61nonreturndaysfails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "exact20percentpasses",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "partyeartwomonthsremaining2weeks",
+      "actual": "12",
+      "expected": "12"
+    },
+    {
+      "name": "hoursparttimeallnormaldayslimit60",
+      "actual": "60",
+      "expected": "60"
+    },
+    {
+      "name": "distance100notautomaticunreasonable",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "distance100point01automatic",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "publictransit90minnotmore1point5hr",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "publictransit91minmore",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "thirdcountryone-daytripnonreturn",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "DEorCHone-daytripnotnonreturn",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "foreigncommuterSwissgrossbase80percent",
+      "actual": "800",
+      "expected": "800"
+    },
+    {
+      "name": "Swissloweractualtax30beats45cap",
+      "actual": "30",
+      "expected": "30"
+    },
+    {
+      "name": "salarySoli20400phasein",
+      "actual": "119/20",
+      "expected": "119/20"
+    },
+    {
+      "name": "tailadditionalcap",
+      "actual": "200",
+      "expected": "200"
+    },
+    {
+      "name": "taileligiblecredit",
+      "actual": "200",
+      "expected": "200"
+    },
+    {
+      "name": "tailGermanremainder",
+      "actual": "100",
+      "expected": "100"
+    },
+    {
+      "name": "shortassignment183inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "shortassignment184fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "Swissresidentemployerfails15two",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "SwissPEbearerfails15two",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "residenceGermanhomekeptstillunlimited",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "waiverproofnotpaymentonly",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "pensionno-doublerefundgate",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "pensiontaxablesharecreditstipulatedhalf",
+      "actual": "45/2",
+      "expected": "45/2"
+    },
+    {
+      "name": "direct10percenteligibleownership",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "9point99fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "indirect10notdirectgate",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "partnershipnotcompanyzero",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "sourceordinary15v35refund",
+      "actual": "200",
+      "expected": "200"
+    },
+    {
+      "name": "2026returnAug2Monday",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "2026adviserFeb29Tuesday",
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "deadline109extensionnotautomatic152two",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "twodenominator27commutesactuallydiffers",
+      "actual": "True",
+      "expected": "True"
+    }
+  ],
+  "number": 51
+}

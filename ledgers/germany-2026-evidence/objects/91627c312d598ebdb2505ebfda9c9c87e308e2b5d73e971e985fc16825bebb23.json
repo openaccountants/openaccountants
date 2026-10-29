@@ -1,0 +1,774 @@
+{
+  "role": "writer only, different independent review pending",
+  "controls": [
+    {
+      "id": "R78.nondeductibletrip",
+      "actual": "100.00000",
+      "expected": "100",
+      "scope": "Actualnonqualifyingfamilyhome-tripdeductionexceptionnotavailable;listprice/minimumelectricselectors independentlymet.",
+      "pass": true
+    },
+    {
+      "id": "R78.deductibletrip",
+      "actual": "0",
+      "expected": "0",
+      "scope": "Actualspecified9(1)no5s5/6deductionwouldbeavailable;8(2)s5excludesits0.002valuation,notallothercarbenefits.",
+      "pass": true
+    },
+    {
+      "id": "R79.preallowance",
+      "actual": "1420.00",
+      "expected": "1420",
+      "scope": "Actual8(3)qualifyinggoods/servicesnotpredominantlyforstaff/not40;applicablepublicendprice2000/employee500.",
+      "pass": true
+    },
+    {
+      "id": "R79.taxable",
+      "actual": "340",
+      "expected": "340",
+      "scope": "Fullannualallowanceremaining,notduplicatedperitemorwithmonthly50cliff.",
+      "pass": true
+    },
+    {
+      "id": "R79.exhaustedallowance",
+      "actual": "1420",
+      "expected": "1420",
+      "scope": "Annualallowancealreadyusedelsewhereinsameemployment.",
+      "pass": true
+    },
+    {
+      "id": "R79.employeehigher",
+      "actual": "0",
+      "expected": "0",
+      "scope": "No negativetaxablebenefitfromemployeepayment.",
+      "pass": true
+    },
+    {
+      "id": "R80.twoadultoccupants",
+      "actual": "171.0",
+      "expected": "171",
+      "scope": "Otherwiseordinaryadultsharedlodging,notdwelling/household/apprenticespecialcase;beforeemployeepayments.",
+      "pass": true
+    },
+    {
+      "id": "R80.selectedreduction.15",
+      "actual": "242.25",
+      "expected": "242.25",
+      "scope": "Singleactualstatutoryreductionfixture;noinventeduniversalcombinedfactor.",
+      "pass": true
+    },
+    {
+      "id": "R80.selectedreduction.5",
+      "actual": "142.5",
+      "expected": "142.5",
+      "scope": "Singleactualstatutoryreductionfixture;noinventeduniversalcombinedfactor.",
+      "pass": true
+    },
+    {
+      "id": "R80.selectedreduction.6",
+      "actual": "114.0",
+      "expected": "114",
+      "scope": "Singleactualstatutoryreductionfixture;noinventeduniversalcombinedfactor.",
+      "pass": true
+    },
+    {
+      "id": "R80.dailybase",
+      "actual": "9.50",
+      "expected": "9.50",
+      "scope": "Shortperioddaily1/30statutorycalculation.",
+      "pass": true
+    },
+    {
+      "id": "R80.twopersondaily",
+      "actual": "5.70",
+      "expected": "5.70",
+      "scope": "Actual40%reductionapplieddaily,two-decimalrules.",
+      "pass": true
+    },
+    {
+      "id": "R80.threedays",
+      "actual": "17.10",
+      "expected": "17.10",
+      "scope": "Stipulatedthreelodgingdays,notinvented365fraction.",
+      "pass": true
+    },
+    {
+      "id": "R81.affiliatedbase",
+      "actual": "960",
+      "expected": "960",
+      "scope": "IndependentlyestablishedcostinclVAT600andactual8(3)s1value960;affiliatedrecipientemployee.",
+      "pass": true
+    },
+    {
+      "id": "R81.affiliatedtax",
+      "actual": "288.00",
+      "expected": "288",
+      "scope": "37bselectedeligiblebenefit/capsandothergatesmet;notlowercostbase180.",
+      "pass": true
+    },
+    {
+      "id": "R82.computerTrue",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Otherwiseeligibleoutrightdataprocessingdevicetransfer25%route;salarysacrificefailsadditionality.",
+      "pass": true
+    },
+    {
+      "id": "R82.computerFalse",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Otherwiseeligibleoutrightdataprocessingdevicetransfer25%route;salarysacrificefailsadditionality.",
+      "pass": true
+    },
+    {
+      "id": "R82.publictransportalternative",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Otherwiseactual3no15benefit/annualuniform25%election,additionalitynotrequired;noautomaticnondeductibleforeignbenefit.",
+      "pass": true
+    },
+    {
+      "id": "R82.recreationfamilycap",
+      "actual": "364",
+      "expected": "364",
+      "scope": "Actualemployee/spouse/twochildrenaggregatecalendarcaps;recreationaluseensuredseparately.",
+      "pass": true
+    },
+    {
+      "id": "R82.recreationaggregate",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Earlier200+current200exceedsstipulatedfamilycap;rateeligibilitynotanassumedexcess-onlyallowance.",
+      "pass": true
+    },
+    {
+      "id": "R83.2016increment",
+      "actual": "100",
+      "expected": "100",
+      "scope": "Actualsameemployer2016additional600/current700;all100(3)vehicle/payout/pay-time/distributioncostgatesmet.",
+      "pass": true
+    },
+    {
+      "id": "R83.no2016",
+      "actual": "210.0",
+      "expected": "210",
+      "scope": "No2016additionalcontributioncase;otherevidencegatesindependentlyestablished.",
+      "pass": true
+    },
+    {
+      "id": "R83.minimum240",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Actualadditionalannualemployercontributionminimum,notautomaticentitlementfromamountalone.",
+      "pass": true
+    },
+    {
+      "id": "R83.minimum239",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Actualadditionalannualemployercontributionminimum,notautomaticentitlementfromamountalone.",
+      "pass": true
+    },
+    {
+      "id": "R83.proportionalrepayment",
+      "actual": "40.0",
+      "expected": "40",
+      "scope": "Independentlytraced40%ofsubsidisedcontributionreturnedafterfundedentitlementlapse;notuniversalarbitraryrefundallocation.",
+      "pass": true
+    },
+    {
+      "id": "R84.ordinary8",
+      "actual": "8112.00",
+      "expected": "8112",
+      "scope": "Qualifyingordinarycurrentyearfirstemployment/payout/electiongates;specialroutesnotstackedbyassumption.",
+      "pass": true
+    },
+    {
+      "id": "R84.ordinary4",
+      "actual": "4056.00",
+      "expected": "4056",
+      "scope": "ActualordinarySVthresholdretained;nopositivespecialterminationSVexemptioninvented.",
+      "pass": true
+    },
+    {
+      "id": "R84.termination2",
+      "actual": "8112.00",
+      "expected": "8112",
+      "scope": "Actual63sentence3twoqualifyingemploymentcalendaryears;notadditiontootherswithoutinteractionreview.",
+      "pass": true
+    },
+    {
+      "id": "R84.termination11",
+      "actual": "40560.00",
+      "expected": "40560",
+      "scope": "Actual63sentence3tenyearcap,nocopyto40bspecialformula.",
+      "pass": true
+    },
+    {
+      "id": "R84.suspended2",
+      "actual": "16224.00",
+      "expected": "16224",
+      "scope": "Actualqualifying2suspendedfirstemploymentyears/noGermantaxablepayfromemployer;separatetaxrouteonly.",
+      "pass": true
+    },
+    {
+      "id": "R84.pooled",
+      "actual": "1700",
+      "expected": "1700",
+      "scope": "Eachactualworker≤2148,pooledaverage≤1752;firstemploymentandother40bgatesstipulated.",
+      "pass": true
+    },
+    {
+      "id": "R84.poolexclusion",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Strict>2148workerexcludedfromstatutoryaveraging.",
+      "pass": true
+    },
+    {
+      "id": "R84.40btermination",
+      "actual": "3256",
+      "expected": "3256",
+      "scope": "Actual3calendar-yearterminationmultiplierlessindependentlyestablishedcurrent+6prior-yearrelevantflattaxed2000;notinventedtenyearcap.",
+      "pass": true
+    },
+    {
+      "id": "R85.qualifyingdecline",
+      "actual": "4000",
+      "expected": "4000",
+      "scope": "Actualbusiness-relateddecline/noexcludedcorporatemeasure;otherevent/eligibilityfactsestablished.",
+      "pass": true
+    },
+    {
+      "id": "R85.excludeddecline",
+      "actual": "8000",
+      "expected": "8000",
+      "scope": "Stipulatednon-business/corporatemeasuredeclinedoesnotuse19a4s4/5lower-valueexception;ordinarydeferredbenefitpremise8000.",
+      "pass": true
+    },
+    {
+      "id": "R85.gifttrigger",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Actualwholeorpartialunpaidtransferunder4s1no1isanevent,nosalepriceprerequisite.",
+      "pass": true
+    },
+    {
+      "id": "R85.consent",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Noemployeeconsentinpayrollmeansno19a2provisionalnon-taxation;notlaterreturncure.",
+      "pass": true
+    },
+    {
+      "id": "R85.groupold21",
+      "actual": "False",
+      "expected": "False",
+      "scope": "Actualgroupcompanyagegate;financial/headcountincorporateddefinitionnotguessedAND/ORvector.",
+      "pass": true
+    },
+    {
+      "id": "R86.applicablelawother-state",
+      "actual": "True",
+      "expected": "True",
+      "scope": "ValidbindingA1scopeindependentlyestablished;foreignlawmeansnoadditionalGermanSV,whileGermanoutboundrequiresactualGermanbenefitrulesnotautomaticpositivecharge.",
+      "pass": true
+    },
+    {
+      "id": "R86.applicablelawGerman",
+      "actual": "False",
+      "expected": "False",
+      "scope": "ValidbindingA1scopeindependentlyestablished;foreignlawmeansnoadditionalGermanSV,whileGermanoutboundrequiresactualGermanbenefitrulesnotautomaticpositivecharge.",
+      "pass": true
+    },
+    {
+      "id": "R87.separatestatus",
+      "actual": "True",
+      "expected": "True",
+      "scope": "Noemployment-basedcontributiondoesnotimplynoself-employedinsurance;actualseparateSGBVI2/healthselectorsmustbedetermined,notassumedforrealperson.",
+      "pass": true
+    }
+  ],
+  "control_count": 41,
+  "own_selected_quote_records": 18,
+  "source_checks": [
+    {
+      "id": "R78.car",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R83.lowearner",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R87.employment",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R81.37b",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R79.staffdiscount",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R80.lodging",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R82.40",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R84.63",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R84.56",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R84.40b",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R81.admin",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R81.third",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R85.shares",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R86.A1",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R82.events",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R87.pension",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R87.status",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "R87.late",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": true
+    },
+    {
+      "id": "B.PB.bike",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.additional",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.lowearner",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.status",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.exemptiondates-bike",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.subsidycommencement",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.salarysacrifice",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.employment",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.childcare-health",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.37b",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.40average",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.cardates",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.sv-period",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.sv-pension",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.wagetax",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.40b",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.staffdiscount",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.sv-third",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.devices-charge",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.liability",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.40election",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.svlate",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.37belections",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.director2018",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.lodging",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.sv-otherbenefits",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.meals",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.car70enacted",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.oldcar40",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.pensiontaxfree",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.carcommute",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.subsidy2027",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.usercharge",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.events",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.director2026",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.A1",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.caradmin",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.exemptiondates-charge",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.oldpension",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.37bcaps",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.pensionceiling",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.employeeshares",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.directpromise",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.svdue",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.Soli.rate",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.giveaways",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.wagefiling",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.oldcarcaps",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.jobticket",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.income",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.40benefits",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.sharesdeferral",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.cars",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.market-and-special",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.sv-taxfree",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.AO240.surcharge",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.lowearnerexempt",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    },
+    {
+      "id": "B.PB.unfunded",
+      "identity_and_quote_pass": true,
+      "kind": "Exact operative quotation within declared nativeLF range",
+      "own_new_selected": false
+    }
+  ],
+  "pairs": [
+    {
+      "slug": "de-payroll-benefits",
+      "ops": 21,
+      "all_native_rows_full_inverse_old_identities": true,
+      "original_worked_section_and_oa_exact": true,
+      "oa_blocks": 2,
+      "oa_failures": [],
+      "schema_errors": [],
+      "schema_warnings": [],
+      "diff_returncode": 0,
+      "schema_stdout": "checked 1 guides (0 non-guide .md files skipped)\n"
+    }
+  ],
+  "original_writer_manifests": [
+    {
+      "manifest": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/artifact-manifest.json",
+      "sha256": "61130a4ac7b8618cfc6ecb29771c5fd925e49d8b925c770f6489a43f6ab11004",
+      "members": 515,
+      "mismatches": 0
+    }
+  ]
+}

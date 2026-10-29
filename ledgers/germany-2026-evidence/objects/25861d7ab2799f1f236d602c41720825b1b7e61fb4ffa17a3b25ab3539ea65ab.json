@@ -1,0 +1,14 @@
+[
+  {
+    "before": "version: 0.3",
+    "after": "version: 0.4"
+  },
+  {
+    "before": "EU parent company (form in Anlage 2 EStG) holding at least 10% directly; 12 months without break",
+    "after": "EU parent company in a form listed in Anlage 2 EStG, treated as resident in an EU member state for tax purposes and not as resident outside the EU under a treaty with a third state, subject without an option to a listed tax or its replacement and not exempt from it; holding at least 10% directly for 12 months without break"
+  },
+  {
+    "before": "limited-liability foreign capital company",
+    "after": "foreign capital company with limited German tax liability"
+  }
+]

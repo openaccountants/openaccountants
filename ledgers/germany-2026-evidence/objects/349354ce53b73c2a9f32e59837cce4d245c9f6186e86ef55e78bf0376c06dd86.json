@@ -1,0 +1,204 @@
+{
+  "count": 33,
+  "controls": [
+    {
+      "name": "taxable1",
+      "actual": "500000",
+      "expected": "500000",
+      "pass": true
+    },
+    {
+      "name": "KSt1",
+      "actual": "75000",
+      "expected": "75000",
+      "pass": true
+    },
+    {
+      "name": "Soli1",
+      "actual": "4125",
+      "expected": "4125",
+      "pass": true
+    },
+    {
+      "name": "trade1",
+      "actual": "70000",
+      "expected": "70000",
+      "pass": true
+    },
+    {
+      "name": "total1",
+      "actual": "149125",
+      "expected": "149125",
+      "pass": true
+    },
+    {
+      "name": "effective pct1",
+      "actual": "1193/40",
+      "expected": "1193/40",
+      "pass": true
+    },
+    {
+      "name": "Kstdue1",
+      "actual": "15000",
+      "expected": "15000",
+      "pass": true
+    },
+    {
+      "name": "Solidue1",
+      "actual": "825",
+      "expected": "825",
+      "pass": true
+    },
+    {
+      "name": "income2",
+      "actual": "2810000",
+      "expected": "2810000",
+      "pass": true
+    },
+    {
+      "name": "KStoffset2",
+      "actual": "2267000",
+      "expected": "2267000",
+      "pass": true
+    },
+    {
+      "name": "KSttaxable2",
+      "actual": "543000",
+      "expected": "543000",
+      "pass": true
+    },
+    {
+      "name": "KStlossleft2",
+      "actual": "1733000",
+      "expected": "1733000",
+      "pass": true
+    },
+    {
+      "name": "KSt2",
+      "actual": "81450",
+      "expected": "81450",
+      "pass": true
+    },
+    {
+      "name": "Soli2",
+      "actual": "17919/4",
+      "expected": "17919/4",
+      "pass": true
+    },
+    {
+      "name": "tradeoffset2",
+      "actual": "2086000",
+      "expected": "2086000",
+      "pass": true
+    },
+    {
+      "name": "tradebase2",
+      "actual": "724000",
+      "expected": "724000",
+      "pass": true
+    },
+    {
+      "name": "trademess2",
+      "actual": "25340",
+      "expected": "25340",
+      "pass": true
+    },
+    {
+      "name": "tradetax2",
+      "actual": "101360",
+      "expected": "101360",
+      "pass": true
+    },
+    {
+      "name": "tradelossleft2",
+      "actual": "1914000",
+      "expected": "1914000",
+      "pass": true
+    },
+    {
+      "name": "total2",
+      "actual": "749159/4",
+      "expected": "749159/4",
+      "pass": true
+    },
+    {
+      "name": "KStminimum26_1000000",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "KStminimum26_1000001",
+      "actual": "3/10",
+      "expected": "3/10",
+      "pass": true
+    },
+    {
+      "name": "KStminimum26_2000000",
+      "actual": "300000",
+      "expected": "300000",
+      "pass": true
+    },
+    {
+      "name": "5pct expense of200k",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "10pct inclusive holding",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "9.99pct insufficient",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "interest threshold2999999 escape",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "interest threshold3000000 cliff",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "interest4m EBITDA10m no other escape carry",
+      "actual": "1000000",
+      "expected": "1000000",
+      "pass": true
+    },
+    {
+      "name": "DE-R072m escape EBITDAcarry",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "DE-R09 whole euro1500.15 tax",
+      "actual": "1500",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "same payer royalty10k inclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "same payer10000.01 excluded",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    }
+  ],
+  "scope": "Independent exact Fraction arithmetic of both original examples plus ordinary decision boundaries, source qualifications sent DE-R07/08/09; no operational portal parity claim"
+}

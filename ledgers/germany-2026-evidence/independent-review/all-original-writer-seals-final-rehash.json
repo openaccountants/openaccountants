@@ -1,0 +1,30 @@
+[
+  {
+    "folder": "germany-ledger-writer-2026-10-28",
+    "manifest": "output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/writer-A-handover-manifest.json",
+    "manifest_sha256": "caa546e677e15366d0530b1eb757fe4cfba54d87b9993d717c4d261de5282b24",
+    "members": 610,
+    "mismatch": []
+  },
+  {
+    "folder": "germany-ledger-writer-B-2026-10-29",
+    "manifest": "output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/artifact-manifest.json",
+    "manifest_sha256": "61130a4ac7b8618cfc6ecb29771c5fd925e49d8b925c770f6489a43f6ab11004",
+    "members": 515,
+    "mismatch": []
+  },
+  {
+    "folder": "germany-root-estimated-ledger-2026-10-29",
+    "manifest": "output/europe-closeout-2026-10-27/germany-root-estimated-ledger-2026-10-29/artifact-manifest.json",
+    "manifest_sha256": "bc4006c0abe2a76c3e49d26214240936778b2cfba955fd16c46b5b7d166580ca",
+    "members": 81,
+    "mismatch": []
+  },
+  {
+    "folder": "germany-root-rental-ledger-2026-10-29",
+    "manifest": "output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/artifact-manifest.json",
+    "manifest_sha256": "0cef897bb7b4582183d67ba7ead0928ee45d3fb01038cc664bf3d03605de763c",
+    "members": 163,
+    "mismatch": []
+  }
+]

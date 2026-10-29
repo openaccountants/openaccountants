@@ -1,0 +1,820 @@
+{
+  "scope": "Exact explicitly enumerated writer artifacts and selected source identities; hash does not assert actual reading beyond the scope/quote indexes.",
+  "artifacts": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB004.txt",
+      "sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "bytes": 4892
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB012.txt",
+      "sha256": "93f5e25556cf28a80e3d2347b80fce6403a3c51fea9a46caf2e3caf0aec4ecce",
+      "bytes": 90381
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB014.txt",
+      "sha256": "78a0b74f946637b2ff4c3ffd165b49a28545dbe5683f654bed8becb98d3d6c12",
+      "bytes": 6276
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB015.txt",
+      "sha256": "5e91663079d9c265898c187a162d9a5aa92fcc5893fd8b9883ece3f4913f7bf9",
+      "bytes": 1272
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB016.txt",
+      "sha256": "73f9a506739483feabb2758e78d2fe0b02b4993bdff7eb19439951995a0e75be",
+      "bytes": 7585
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB017.txt",
+      "sha256": "707aa5c6d8b589d1ab3ea4e5c30d68d5121ad2a42c56fb9368e7ca2f69d4bd7d",
+      "bytes": 6204
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB018.txt",
+      "sha256": "651db01a1f6c18060e1f1e63652986b0e4921fb1ce84da5d2a740ebea8ca0b48",
+      "bytes": 1709
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB029.txt",
+      "sha256": "d8149119c9ad2a413ac2d4c412b2ae96dc793500aae13304e7625f4c7f4773fd",
+      "bytes": 16319
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB030.txt",
+      "sha256": "c5ad161d9234d437d840469dd3defee8b76019704a0b7de9562fb13d88b6b971",
+      "bytes": 16638
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB031.txt",
+      "sha256": "f4d5425829ef0a78a20634206218b78092ff602e0379ff9a56fa173685e8cf2b",
+      "bytes": 24932
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB032.txt",
+      "sha256": "4142a47c78fa9e76d0eb0edc51a4b09397234d7c7200d73aa4ded9d62c976021",
+      "bytes": 11767
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB035.txt",
+      "sha256": "595e58f0c9c7b980d68a59d3190ff69d1f1608fd2204430103669dd934779c8d",
+      "bytes": 4497
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB036.txt",
+      "sha256": "782a3f377dc8f603590990e0ea2aac93844231f128dbb4a901925e7a6b289efb",
+      "bytes": 4311
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB038.txt",
+      "sha256": "4f1e49286a87ec81f6d872ddd07080cf0b65c71fa15b9ab5ada9da83dcd42d9c",
+      "bytes": 6383
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB040.txt",
+      "sha256": "b239c9ca998d62964ce7f7d79ee0532ce07bfdc78f2ca3c186bb6b463bf3266f",
+      "bytes": 1921
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB042.txt",
+      "sha256": "26e40ce4be801d4cd3f931e030220feef7ddc49efffaed7dc60219988b099019",
+      "bytes": 1888
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB043.txt",
+      "sha256": "e819ae2c4a6a65834fee9861adf1ec100b520126163e240fe08fe6a6d1e80d74",
+      "bytes": 7296
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB044.txt",
+      "sha256": "f0f9a4d727981094aa001b41d96a3fa3fda7e9692ab888c4d004384b3a8ba259",
+      "bytes": 7333
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB045.txt",
+      "sha256": "a776de83fcc1b5085502ca8844dc998fc060e70f2ff5ffc8eaff71edc4ae7403",
+      "bytes": 4917
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB115.txt",
+      "sha256": "9377e124062b78fae6076bcfda9594c9b2ec3e26a132e39b99ecd81da6ec283b",
+      "bytes": 1803
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB116.txt",
+      "sha256": "56cbe0597b599138f1fdbd55e4ceaa376e3b79a25e0067de8d313a8798ea3240",
+      "bytes": 15457
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB117.txt",
+      "sha256": "b3478f5ce3895f8cc756167f519853a73e9aa85164a562662e66a807b850928c",
+      "bytes": 5094
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB118.txt",
+      "sha256": "5e95d630f6aed4e0acadd42cd4f0525a3be3866b4c72caa89ec2340f22227388",
+      "bytes": 1611
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB121.txt",
+      "sha256": "85af0a67c256554751dd9b51d8d6dd46db153425bb9a374782ab428f159d922c",
+      "bytes": 5358
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB122.txt",
+      "sha256": "93c4af46c9c000e6716bf5759b4124f8e4b9c5b725605f23c740e6edb5394356",
+      "bytes": 4903
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB123.txt",
+      "sha256": "ee88ed0e89798f5ca33348bef8f31c28b02c1069c283a1315189c7981e2e4976",
+      "bytes": 37566
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB124.txt",
+      "sha256": "8cf2257ae5d6b00439064331e47e1280c9d7c70a595b34ff070b71cca4e5862c",
+      "bytes": 1505
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB125.txt",
+      "sha256": "07dbb451d4da7ca6d39ae7f8154504e6fdaeaa8541ab72cdb24c89d6fed75c3d",
+      "bytes": 18398
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB126.txt",
+      "sha256": "9a28197fea9297fe909b50f926823ab9c46298a2c2841c10affc0db3d6ae8939",
+      "bytes": 9901
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB127.txt",
+      "sha256": "34181f9545634ae26e814db06c4f0f23c3d58e85577c46cac58a89a800709223",
+      "bytes": 8842
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB180.txt",
+      "sha256": "24503e2acb42c491fb2b50a2974541769b06a077dee8bfb23993115e3e4acef3",
+      "bytes": 1486
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB182.txt",
+      "sha256": "45ffa494336b97fdb64a8261370a05f74e069dcab59dd97c0b9eb6d7a325ae24",
+      "bytes": 4338
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB185.txt",
+      "sha256": "ae7a5d26b871b22136a72f6e72ec3780842d0c22b0710c4a51145a1e583e8b39",
+      "bytes": 468994
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB211.txt",
+      "sha256": "38ab8edac703a190bbc86b6e9c3f2d577f77a75503d6be4ce36dfd7fe640329e",
+      "bytes": 161511
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB212.txt",
+      "sha256": "29a3d4613e39ceb1bd54754c59faacc60b46507cd900f9d359c549ce56261e72",
+      "bytes": 92801
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB213.txt",
+      "sha256": "397fc789780c68cc237bf9957ec10fe34987edfcff179c8766cf2352880aea98",
+      "bytes": 82288
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB237.txt",
+      "sha256": "12f95f706815ef44cb84ade9662643bc75809cab07b4ee72c4a393c3c2219092",
+      "bytes": 3348
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/readers/DEB280.txt",
+      "sha256": "c131d86c4bf7573c7ceb89484930ecd33f0df991d53b7f180bdd3640c66b9f18",
+      "bytes": 4165
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/targeted-sources/estg-1-20261029.html",
+      "sha256": "aa3116bd65c47709867eaba213a4f5a482aabe7075b4e0ae7b31fb8f2830d6ca",
+      "bytes": 9096
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/targeted-sources/hgb-255.html",
+      "sha256": "e976e365bba7c17ef8c6fd58778ace5785fa0a45de1f727dbfe6a69eb2401fe1",
+      "bytes": 6952
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L22-options/after.md",
+      "sha256": "729215ff1e55adef2428b7511c79892d94e70cb71a3514972e6027bbffce62fb",
+      "bytes": 47287
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L22-options/before.md",
+      "sha256": "b68bdba9f41c82ac242a25c992196405425370d3fc0c577d93dd122504872823",
+      "bytes": 47212
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L22-options/operations.json",
+      "sha256": "867669cf4289b6aff9d010bb51295eb79e15e922d320d68e9fa1ad6c5835428b",
+      "bytes": 681
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L22-options/options.md",
+      "sha256": "c779cbf556336bbb97f01ae26ce2b5e423d86eed999bf487801ccae3abba501a",
+      "bytes": 1600
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L22-options/preservation-checks.json",
+      "sha256": "6861f343c2dd7d0f999ccbecd4e51156833d7fd875df3455816a8c4c7e76811f",
+      "bytes": 360
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L22-options/schema-check.json",
+      "sha256": "3af95c1ec6600cfb35141fa63c2f42e9b8008f52b2e781e09c38a0d9cd230fb9",
+      "bytes": 51
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L22-options/scoped.diff",
+      "sha256": "7ac5518ab55e53a7e70a85e1023d0144b3547635714f6fe589d4c44967cf912d",
+      "bytes": 3804
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L24-options/after.md",
+      "sha256": "cc484a2a854c4194f205a887e75d06f441c45ded10edffc49356180f91d8c2a7",
+      "bytes": 47961
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L24-options/before.md",
+      "sha256": "729215ff1e55adef2428b7511c79892d94e70cb71a3514972e6027bbffce62fb",
+      "bytes": 47287
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L24-options/operations.json",
+      "sha256": "6a499b6480eb22b572ba0836de416c8a17f296348826bed11edf68d151f0c8c6",
+      "bytes": 1523
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L24-options/options.md",
+      "sha256": "2dc3601c2e8601d95f42203bc60550ba01c87f738ee0a6c9c3fc5c90ac1bb79b",
+      "bytes": 1745
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L24-options/pre-repair-current-core-bindings.json",
+      "sha256": "3abcf467bf98484d86ee5573ce081da088510a9cc7b3d472e0d9ce06e0364c5e",
+      "bytes": 48839
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L24-options/pre-repair-old-topics.json",
+      "sha256": "24cb1fb04a44b5a236d1589e0b7c3ebf0014894e94d6f344b305a168225d495d",
+      "bytes": 367925
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L24-options/preservation-checks.json",
+      "sha256": "8767728f061ab2293c9aa54b465301be554bab40cacc3836abe37820541e45f2",
+      "bytes": 403
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L24-options/schema-check.json",
+      "sha256": "3af95c1ec6600cfb35141fa63c2f42e9b8008f52b2e781e09c38a0d9cd230fb9",
+      "bytes": 51
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L24-options/scoped.diff",
+      "sha256": "7d3f51c152df4d2d76257867d5487e3ed564a710f7f3faf2201e2a963325591f",
+      "bytes": 13584
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L25-options/after.md",
+      "sha256": "5aa137d3c5c36e5cda3e2a3e5020e858c6d35f79a09d5c2e4289c45aac84cd54",
+      "bytes": 48261
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L25-options/before.md",
+      "sha256": "cc484a2a854c4194f205a887e75d06f441c45ded10edffc49356180f91d8c2a7",
+      "bytes": 47961
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L25-options/operations.json",
+      "sha256": "9f3b6a97300118d29d946153f32763f4048523c67e67cbde165b3c5be60e6df8",
+      "bytes": 1625
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L25-options/options.md",
+      "sha256": "65db47a242d0e1c4f2892239618806c9487e25aff4c4112eca00e8884410791b",
+      "bytes": 1435
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L25-options/preservation-checks.json",
+      "sha256": "6861f6ecf001b7862bbad65cf5d788e9713d5e5deb213fbd4b858b7b161063a5",
+      "bytes": 403
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L25-options/scoped.diff",
+      "sha256": "12f038d109e4731e40f509fbea9e73c9c9f79a92cb1b124c92453bcd2c2a3444",
+      "bytes": 6968
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L26-options/after.md",
+      "sha256": "12ed4b694be25ce93605b525143497df24466df62f3f4289dd0c71b9c38afe6a",
+      "bytes": 48633
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L26-options/before.md",
+      "sha256": "5aa137d3c5c36e5cda3e2a3e5020e858c6d35f79a09d5c2e4289c45aac84cd54",
+      "bytes": 48261
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L26-options/operations.json",
+      "sha256": "07f7fe6ea0291a06d4990365c476de737123df677375ee0a25cc11fd817e029b",
+      "bytes": 894
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L26-options/options.md",
+      "sha256": "c953e3d202ace3618e601015a8ec74ea75b4323d270fd473035791e7b667705d",
+      "bytes": 1387
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L26-options/preservation-checks.json",
+      "sha256": "aa46fe4ceb04ffb57d79ff41c6d57ea72031cf0fb1d62721e93d46aa08a14f67",
+      "bytes": 558
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L26-options/scoped.diff",
+      "sha256": "3791832c3cb33e2b1dae06ccda66c6430cfc264ca082acad0979f75e2cf11cec",
+      "bytes": 4293
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L27-options/after.md",
+      "sha256": "7723c03d74ed08eaba8e7c35d6688174037865526418844a84feb2e48415eb4e",
+      "bytes": 48829
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L27-options/before.md",
+      "sha256": "12ed4b694be25ce93605b525143497df24466df62f3f4289dd0c71b9c38afe6a",
+      "bytes": 48633
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L27-options/operations.json",
+      "sha256": "75b8e77baf75651b2412759e97929125cd8a9ce65c5bb7f911010613fff7329e",
+      "bytes": 1074
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L27-options/options.md",
+      "sha256": "fb5a5d18cfba4059eaa73ca0ddb566f447ab3cae1a2743bb4c07ee948925ce82",
+      "bytes": 1447
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L27-options/preservation-checks.json",
+      "sha256": "e863203f9b26f8d7ec7f6de21067a204320cd51db653960b7722563b75a9153d",
+      "bytes": 414
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-L27-options/scoped.diff",
+      "sha256": "6eeab966e0d2534ead835bbb290afbe1f8312053767cedcf9a7c9a4ad1dcefb8",
+      "bytes": 4539
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-rent-rev.md",
+      "sha256": "3cdc2396d2106bf0085818e517fa21f5e6f6be0f4f416092e1ff28e7eca9a73e",
+      "bytes": 3042
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/DE-rent.md",
+      "sha256": "be6596aaa00bde51831881ad0c0396c215fe3a19b4ccef8ec3c0d68e70ea9831",
+      "bytes": 2844
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/actual-read-scopes.json",
+      "sha256": "5bed62e931399d6de44f5e3a0c5731b2923b52c5a932f50465edf9faa44a9242",
+      "bytes": 4218
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/actual-source-quotes-core.json",
+      "sha256": "893a6296d75dab6150b079e4be5f992d803cc193654b3fe2d55129cb4333a0f3",
+      "bytes": 213197
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/build-core-evidence.py",
+      "sha256": "5f83820104b651ea005c838b3e18b757cb0cf3dd95ea4487b71c4aff4544946f",
+      "bytes": 29961
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/build-final-ledger.py",
+      "sha256": "75b06868a3a06a191529db53205870b34446d8ddac9852b63f7f31d1adac864f",
+      "bytes": 13290
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/build-old-topics.py",
+      "sha256": "6039f46b7189821830f982e5506708551a61646c8198f14d018ea830607edf42",
+      "bytes": 7877
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/candidate-identities-before-foundations.json",
+      "sha256": "19292cf23da1f656e62968e274e49cc330df180d93bc31e0fa4c0210721b6906",
+      "bytes": 36082
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/cited-source-identities-candidates.json",
+      "sha256": "04a69838b748c41b32e4d025d9143a5008d64529c24c2566898e24050e0b3c76",
+      "bytes": 49486
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/current-core-bindings.json",
+      "sha256": "a09605675aa9af4761b5ee6e8e79f87c24677e77777adf4159aea5b497fd897d",
+      "bytes": 61555
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/current-guide-start.md",
+      "sha256": "b68bdba9f41c82ac242a25c992196405425370d3fc0c577d93dd122504872823",
+      "bytes": 47212
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/current-rule-rows.json",
+      "sha256": "33afc946e6001ca7f793fa984b9e787dd4d1eb451392792e6fe860bb857f4233",
+      "bytes": 159006
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/current-unit-inventory-draft.json",
+      "sha256": "bf75071f2d76ea2b5d89202b874963aaf23a1c2a295ce63673f81af400bc91cf",
+      "bytes": 101695
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/de-rental-income.md",
+      "sha256": "800b72f58da4095cebb2c9b2a15d89b421fcbedb7ffa63eb433f260014914a83",
+      "bytes": 290727
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/final-scoped-checks.json",
+      "sha256": "9112914e00403584b8c18c711059f94809a62a7b619497dee2d10007769039d0",
+      "bytes": 266
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/final-writer-checks.json",
+      "sha256": "d03fa826f0fd2565ac1b0ba2f52afdac9e87fb107345096c68fc60a5f076684d",
+      "bytes": 370
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/fresh-deposit-primary-acquisition.json",
+      "sha256": "520619548067b1d4c39e59063e2402b00122fba7ddddae4331e9b616a6660948",
+      "bytes": 1879
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/fresh-furniture-statutory-acquisition.json",
+      "sha256": "6e9421fe2095a7009a5e67f1a5c6077e5d935df8bee69552f7bc1403707202fe",
+      "bytes": 1344
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/fresh-primary-acquisition.json",
+      "sha256": "5b9b38365503ea081e5d7be418f0787aee856ee1e0f066c81bd96dbb2bf21420",
+      "bytes": 1977
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/fresh-statutory-decoding-repair.json",
+      "sha256": "786706fd22cadef69be45181f8a408cb4de0d9e61e345e14a19a0a12e851f738",
+      "bytes": 1792
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/main-baseline.md",
+      "sha256": "b68bdba9f41c82ac242a25c992196405425370d3fc0c577d93dd122504872823",
+      "bytes": 47212
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/native-LF-coordinate-repair/before-actual-read-scopes.json",
+      "sha256": "cc893e77b7283f606f1d4369e66860cffb8193b9255d76b3e9fd673eaf7916e2",
+      "bytes": 3202
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/native-LF-coordinate-repair/before-actual-source-quotes-core.json",
+      "sha256": "c2f1d01c415310b7dcc12af58a268e16a127fb0543e6b74dcac20acc4f6e444a",
+      "bytes": 160120
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/native-LF-coordinate-repair/before-build-core-evidence.py",
+      "sha256": "089a0dcbe90aeedd810fedde921c515eb093fde33d3183c6729c0d8734a4dc28",
+      "bytes": 29376
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/native-LF-coordinate-repair/finding.json",
+      "sha256": "d266cf793a553172708738dd28d0904c402356306ed0c95ad9e35eccdc952e0f",
+      "bytes": 713
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/old-topics.json",
+      "sha256": "7ce0b36777f94de01731f987e2e79e951fec3d07f8439d92028c920b357b9d57",
+      "bytes": 377071
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/pre-refresh-original.md",
+      "sha256": "125c10d8c3409938d9942fdc851f6b7af84f2292c43a645e99782106759065ec",
+      "bytes": 37785
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/quote-binding-checks.json",
+      "sha256": "cd59ea82cebed717dcc86fa219f6479a3032e036641786d2fb0bb241485e8d72",
+      "bytes": 22001
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/reading-progress.json",
+      "sha256": "d46b06223a6859140bdd097a66391f3b806d7a8353698936533fbbaedb1a2661",
+      "bytes": 498
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/report.md",
+      "sha256": "8f9ce714fe0d3389dfbd88efe108c5042ebb62e54f9658eb467db6d6d4c9e304",
+      "bytes": 2518
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/source-identities.json",
+      "sha256": "891d1a65e441b9d83456d998a7a316fa2ab974e290c7a30f8d93082944447790",
+      "bytes": 41800
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/source-quotes.json",
+      "sha256": "893a6296d75dab6150b079e4be5f992d803cc193654b3fe2d55129cb4333a0f3",
+      "bytes": 213197
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT01.pdf",
+      "sha256": "631cac44a85fef75be333d539ce259f7fc085c3998677645e52c5a9c5b9e5222",
+      "bytes": 90754
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT01.txt",
+      "sha256": "a5b47becd74b523371e3cc202f6b847e10d8b64e84f73f40c2dd69826b36ace9",
+      "bytes": 44462
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT02.pdf",
+      "sha256": "01f4fb3f226059d163ec556949d9f4e22e48f326590ec41ad24bc6b67dc8b122",
+      "bytes": 82380
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT02.txt",
+      "sha256": "eff34e263c4542f9abf04e6afc36f387f9c9eb8196e37e50bc0ccb84486bb2b8",
+      "bytes": 38906
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT03.html",
+      "sha256": "8e14f195aee81799d0ea9b2ed530fff0246393c9025a69052843fa48f03c1b6c",
+      "bytes": 59787
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT03.txt",
+      "sha256": "670224e28314be9a6104348649bb801a789a107a7a1e7bb7f23df9e3788eea6a",
+      "bytes": 43001
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT04.pdf",
+      "sha256": "d3fed848583ba48aa7355aee842dcb9597eb9deb7988d500bb277fc56b47a1b4",
+      "bytes": 67197
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT04.txt",
+      "sha256": "aef18a47bbc14e1ecbf6b5bc2c22df71607d23fa6adc914c2253e8344fff3843",
+      "bytes": 27516
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT05.pdf",
+      "sha256": "67815042bc7805d3e53baf55a03f873bef339556ec4200c50b952f113a0d7833",
+      "bytes": 62216
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT05.txt",
+      "sha256": "0b44d6ef5a7c80fd0b579f51432e3a3d9973390d124c47d61cfe2cd4eb77983c",
+      "bytes": 22530
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT06.html",
+      "sha256": "b90cc7a8748538d0cf1330809166bc8d10758650546891dfe330680556c77826",
+      "bytes": 8329
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT06.txt",
+      "sha256": "60aecd47e48aef8708433f3c54f7733c4f499fc5d273986845c875cea77a85a0",
+      "bytes": 3951
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT07.html",
+      "sha256": "f86add62d1f4ba2697bd13619999a41ef0fe7a0756cedbff3d4119f7fa65ede1",
+      "bytes": 4679
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT07.txt",
+      "sha256": "33f25209c8cd687ff8f3fde2038718da67447676e376b1b56475a8736cd459cb",
+      "bytes": 1329
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/sources/RNT08-official-web-observation.txt",
+      "sha256": "f2a6fab396b2b2cc4ddcb474feb010bc6323332929afe3b7df6c87fdb8f831b7",
+      "bytes": 14696
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/start-identities.json",
+      "sha256": "12dcf8b710d017147063e2a3342952f02990eb4096db6d6c7d895369fecf8826",
+      "bytes": 811
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/targeted-final-scope-searches.json",
+      "sha256": "fc6fd4ec065c9dd70be43a8138c05497d1d915fe626e384b0978e14e08e75a79",
+      "bytes": 47511
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/targeted-official-search-response.json",
+      "sha256": "24d99d612f0de511c524c9584134d99c1285463662fac28d998141f8a25d32c5",
+      "bytes": 14909
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/targeted-open-route-results.json",
+      "sha256": "6a4a5a73494a3bec6647cd098baf55b4d83c66bd5fd10e0d5baa5d5c82bc15bd",
+      "bytes": 895
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/writer-A16-pin-readback.json",
+      "sha256": "18daa6d77ff28ff88ebeb54a9878337000692b0e88f77332a1dedd56b8ccdeb7",
+      "bytes": 5979
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-root-rental-ledger-2026-10-29/writer-arithmetic-core.json",
+      "sha256": "6b08b86ce6bba89e9091c2d6ed69ee96406cd36769d888982c42fa8b79918712",
+      "bytes": 6974
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-108-20261024.html",
+      "sha256": "ce4e9dea16e026b397d192d5eea6d5734856e54b6406da60c3149b589a5bb0fc",
+      "bytes": 4614
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-149-20261024.html",
+      "sha256": "78f8a0cabd93fe0bef479055bca5c1b3f92ed594f5cc0e66e6e67a7d6209f190",
+      "bytes": 11871
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-152-20261024.html",
+      "sha256": "4086dfbd8907d56836032062bc08e2f995dff41148e0086b822f0f8d77213c67",
+      "bytes": 13469
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-233a-20261024.html",
+      "sha256": "65b93e146042f58bfbbaa59b5e56760cb75094e046e339d5d5a80e25214a9e5b",
+      "bytes": 10154
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ao-238-20261024.html",
+      "sha256": "a01c57661b3b357fee9aafae008e3aad69382f5a23b6d48d8160978867326597",
+      "bytes": 5249
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bgbl-2024-I-108-20261024.pdf",
+      "sha256": "b95ebec40902824eb7f0e9daabbfdeb628dde44aeaae9d7757231249c680ff3b",
+      "bytes": 742758
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/bmf-7b-20250521.pdf",
+      "sha256": "783f9ff673b948361845c2446bcfc6ce6f93cc57c35a804f747b490155ac13cb",
+      "bytes": 503500
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/brkg-5-20261024.html",
+      "sha256": "9ffc3b6e205672e20208fbf7182ee79342820b2c610b746209af6217600b0a29",
+      "bytes": 5089
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/egao-97-36-20261024.html",
+      "sha256": "473093a055687b4f1080906450a53bfa4454856afe4a25599e1907757d5436bc",
+      "bytes": 12474
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/elster-anlv-help-2025-20261024.html",
+      "sha256": "90194eb4682812f32611e7dc603c60f65ede39f05251fc8188ebf08368454de7",
+      "bytes": 1047509
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estdv-82b-20261024.html",
+      "sha256": "690a2b2845fe79a46d413e5f49f70ff791ba8cc184381492682aba459fdf499f",
+      "bytes": 5119
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-10d-20261024.html",
+      "sha256": "4ecb27305f856990db5f9ecf9737a5f64b4ae16a73379a2827e961c8310d2b22",
+      "bytes": 8524
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-11-20261024.html",
+      "sha256": "fa07a7805b96905289274c0181192e53bff996059b6ac1e854afdcdb33653e02",
+      "bytes": 5699
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-12-20261027.html",
+      "sha256": "2f2a2749f2f5ec64b89f9ffe5f657575e60bd4a6ef74217332842658f9056282",
+      "bytes": 5874
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-2-20261024.html",
+      "sha256": "4ce8258e61a05e50348bfa2c149542d7b078c951ffa5b92b37a88b93d67f8848",
+      "bytes": 10109
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-21-20261024.html",
+      "sha256": "b028a7760b41dda06ae1b2ea4999c3fcb254c2c54dbb9bc161ff87645bfbd0b1",
+      "bytes": 5862
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-23-20261024.html",
+      "sha256": "92e2d48bc0ce1d315b1ea7edaf2d88c3f4801a2f85bff9479753f536997c857c",
+      "bytes": 9828
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-35c-20261024.html",
+      "sha256": "d4c6ba1d6ee13e6f9ffc2535343fbb493a4095a2cc948176358c41ffec38692d",
+      "bytes": 10457
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-37-20261024.html",
+      "sha256": "53d6b65d9820354cedcfad86d34bad77c8a57588384a93eaf893eda789575779",
+      "bytes": 8489
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-39a-20261024.html",
+      "sha256": "5cc523af4a3d8ece922a704b278df79b1928009e8d46ac302e31b4ea67eabb59",
+      "bytes": 17211
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-4-20261024.html",
+      "sha256": "ec16328e3f73abceb420513f9124e3688c728c5af435e863bfedfcf4f2d59434",
+      "bytes": 24217
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-46-20261024.html",
+      "sha256": "c27dd4e778fb62fb6a389453e29b68329e447cff65925995d8941825c1fc3750",
+      "bytes": 12228
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-49-20261024.html",
+      "sha256": "ab6d74634775a9a34966bdfd0058d8e93deb30043ab1c0ea3895586cbe6f423b",
+      "bytes": 25776
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-50-20261024.html",
+      "sha256": "63d1f168553262d258ff45cd2114914c946c6348fd7335ddaf60c645a7a10765",
+      "bytes": 15285
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-52-20261024.html",
+      "sha256": "bec6241b5340b28eb111acc63168aaa37356253f714334f69786379dd8edbfd5",
+      "bytes": 111324
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-6-20261024.html",
+      "sha256": "7888cea55ee179f051c84a3dd9cee5d48871e33b3789d28e0fa18a509e40e40f",
+      "bytes": 36268
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-7-20261024.html",
+      "sha256": "6a9a7530293debb0ba9a1cdff44c86ea1c50bd1115b6850a0ed29edf23a352f4",
+      "bytes": 21792
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-7a-20261024.html",
+      "sha256": "e6fbfc4dfb0657c489fb402cc40e70ac305b106ff21982a7dd01e946717e0868",
+      "bytes": 9072
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-7b-20261024.html",
+      "sha256": "97ead2bbbe842a7240132579766aa00911dbb6b4d244326f7b0226dab1bf36d4",
+      "bytes": 10346
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/estg-9-20261024.html",
+      "sha256": "82ce506e5bebc2a7b9964e715fa898bc06d4eba0602e62d24606b2e6b49e23bb",
+      "bytes": 25050
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/esth-2024-anh30-II-20261024.html",
+      "sha256": "ac454ce083febebac57dbf3c6ed2a861893dea26f3a6c8f09fdf56d335c7ec7a",
+      "bytes": 989776
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-12-20261024.html",
+      "sha256": "e8753b36595e445e776716ce43ec8d01633d9c548aec77d776105ae9484d09d0",
+      "bytes": 15219
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-15-20261024.html",
+      "sha256": "662010a476e1b327f53760a2e56f224f8054b7281c5ad4afd73439070c3cbcc3",
+      "bytes": 13770
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-27-20261024.html",
+      "sha256": "58f8018d2dc7512cea52ca14847700b68fe07c8bfa3bc4e4aebc29c5f7451ee0",
+      "bytes": 25529
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-4-20261024.html",
+      "sha256": "c60df9ce2bab1184ed7229d8f48c4024311b71d3f6d1d9d5f6a0834dbb6b2a87",
+      "bytes": 60884
+    },
+    {
+      "path": "/Users/michaelcutajar/Downloads/oa-f1-wt/sources/DE/ustg-9-20261024.html",
+      "sha256": "7a95d31e90cf2c4ad25b55cbde00237d82491920a39bf03a6920f827f044e24f",
+      "bytes": 4804
+    }
+  ]
+}

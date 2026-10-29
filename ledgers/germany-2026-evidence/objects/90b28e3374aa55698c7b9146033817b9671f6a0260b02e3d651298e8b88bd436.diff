@@ -1,0 +1,32 @@
+--- de-payroll.before.md
++++ de-payroll.after.md
+@@ -1,10 +1,10 @@
+ ---
+ name: de-payroll
+ description: "German payroll for employees for pay periods in 2026: wage tax (Lohnsteuer) by tax class I to VI through the finance ministry's 2026 program flow (PAP) with the EUR 12,348 basic allowance, the Vorsorgepauschale, solidarity surcharge and church tax; the four social insurance branches (pension 18.6%, unemployment 2.6%, health 14.6% plus the fund's additional rate, average 2.9%, care 3.6% with the childless surcharge) and the 2026 ceilings; Minijobs (EUR 603), the Midijob band to EUR 2,000, the Aktivrente; the wage tax return by the 10th, contributions by the third-last bank working day, DEÜV reports, payslips, minimum wage, tax-free surcharges, sick and maternity pay, and penalties. Trigger on: Lohnsteuer, Gehaltsabrechnung, Brutto Netto, Steuerklasse, Arbeitgeberanteil, Beitragsbemessungsgrenze, Minijob, Midijob, Lohnsteuer-Anmeldung, DEÜV. Out of scope: the employee's annual return (de-employee-income-tax), the self-employed (de-social-contributions, de-self-employed-income-tax), non-residents' wider German tax (de-non-resident-tax)."
+-version: 1.1
++version: 1.2
+ jurisdiction: DE
+ tax_year: 2026
+-last_updated: 2026-10-26
++last_updated: 2026-10-29
+ authored_by: Michael Cutajar and the OpenAccountants team
+ review_status: pending_review
+ trust_label: Built by Michael Cutajar and the OpenAccountants team
+@@ -150,7 +150,7 @@
+ - One-time payments carry contributions only up to the unused pro-rata yearly ceiling. One paid from 1 January to 31 March that passes that ceiling goes to the last period of the previous year, if the same employer employed the person then ([§ 23a SGB IV](https://www.gesetze-im-internet.de/sgb_4/__23a.html)).
+ - Care children: proof of parenthood and children under 25 must be given; proof through the automated procedure, or other proof within six months of the birth, counts from the month of birth; the reduction ends with the month the child turns 25. No surcharge for people born before 1940, those in military or civilian service, or recipients of basic income support ([§ 55(3), (3a) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html)). Saxony is tested by place of employment ([§ 58(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html)).
+ - Pay above the JAEG: compulsory health insurance ends at the end of the year in which the threshold is passed, and only if pay also exceeds the next year's threshold ([§ 6(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__6.html)). A voluntary member then pays the fund directly and the employer pays a subsidy of what it would bear under compulsory insurance ([§ 257(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__257.html)).
+-- Past the standard retirement age: drawing a full old-age pension, or reaching that age, frees the employee from pension and unemployment contributions, but the employer still pays its half ([§ 172(1) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__172.html), [§ 346(3) SGB III](https://www.gesetze-im-internet.de/sgb_3/__346.html)).
++- **Past the standard retirement age.** Pension and unemployment have different exemption tests. Under [§ 5(4) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__5.html), an ordinarily insured employee drawing a full old-age pension is pension-insurance-free after the end of the month of reaching standard retirement age, unless they waive that exemption; reaching the age alone does not generally end an existing pension-insurance duty. Under [§ 28(1) no. 1 SGB III](https://www.gesetze-im-internet.de/sgb_3/__28.html), unemployment insurance ends at the end of the month of reaching the applicable retirement age. The employer still pays the statutory half contribution for an employee exempt on these grounds ([§ 172(1) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__172.html), [§ 346(3) SGB III](https://www.gesetze-im-internet.de/sgb_3/__346.html)).
+ - A missed employee deduction can be made up only at the next three payments, later only if the employer was not at fault ([§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html)).
+ - U1 applies to employers with, as a rule, not more than 30 employees (apprentices not counted) and refunds 80% of continued sick pay; U2 applies to all employers. U1, U2 and the insolvency levy are charged on pension-contribution pay ([§ 1 AAG](https://www.gesetze-im-internet.de/aufag/__1.html), [§ 7(2) AAG](https://www.gesetze-im-internet.de/aufag/__7.html), [§ 358(2) SGB III](https://www.gesetze-im-internet.de/sgb_3/__358.html)). Accident insurance is billed by the Berufsgenossenschaft after the year.
+ - 2027 already enacted: the health ceiling will be the special JAEG plus EUR 3,600 ([§ 223(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__223.html)).
+@@ -346,6 +346,7 @@
+ | MiLoG §§ 2, 17, 22; GewO § 108; EBV §§ 1, 2; SvEV § 1; EntgFG §§ 3, 4; MuSchG § 20 | https://www.gesetze-im-internet.de/ | 2026-10-24 |
+ | Amended PAP 2025 (22 January 2025), for 2025 corrections | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-01-22-geaenderte-PAP-2025-anlage-1.pdf?__blob=publicationFile&v=2 | 2026-10-24 |
+ | Minimum wage regulation MiLoV4 § 1 (2025) | https://www.gesetze-im-internet.de/milov4/__1.html | 2026-10-24 |
++| Retirement-age pension and unemployment distinction: SGB VI § 5(4), § 172(1); SGB III § 28(1) no. 1, § 346(3) | https://www.gesetze-im-internet.de/sgb_6/__5.html ; https://www.gesetze-im-internet.de/sgb_3/__28.html ; https://www.gesetze-im-internet.de/sgb_6/__172.html ; https://www.gesetze-im-internet.de/sgb_3/__346.html | 2026-10-29 |
+ 
+ Not yet confirmed: the Federal Gazette text of the labour ministry's 2026 factor F notice itself (0.6619 is taken from an official state circular that cites it, and equals 28 / 42.3); which states levy 8% and which 9% church tax (secondary sources name Bavaria and Baden-Württemberg at 8%), and state church tax caps; U1 and U2 rates (set by each fund) and accident insurance; the 2027 health ceiling amount; whether the 2026 wage tax certificate deadline moves from Sunday 28 February 2027 to Monday 1 March 2027 under § 108(3) AO.
+ 

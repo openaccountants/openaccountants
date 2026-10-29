@@ -1,0 +1,183 @@
+{
+  "status": "PASS bounded exact R32\u201336 successor; frozen83groups/71quotes/129oldorigins and four original worked examples previously independently checked. No country verdict.",
+  "pair": {
+    "slug": "de-capital-gains",
+    "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-capital-gains.md",
+    "Guide_sha256": "5ec577aa8062f1fdc8a1af2fcc8fba597962776896c9ec0d5d50dea661280229",
+    "bytes": 36610,
+    "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R32-R36-capital-gains-writer-successor-2026-10-29/ledgers/de-capital-gains.md",
+    "ledger_sha256": "f08a37bc0bc0ecd6331a2e4ce591f21775bc51afc40eb5a6087e56c77f2b3226",
+    "current_rows": 88,
+    "prior_current_rows": 83,
+    "old_topics": 129,
+    "prior_ledger": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-B-2026-10-29/ledgers/de-capital-gains.md",
+    "prior_ledger_sha256": "81aea5fed2ec144a698bb7fc3e0dc5b9989b533b2d5eb71e00efc61b73be1b94"
+  },
+  "manifest_members_rehashed": 20,
+  "operations": 16,
+  "full_inverse": true,
+  "native_rows_verified": 88,
+  "original_oa_exact": 4,
+  "whole_example_section_exact": true,
+  "protected_metadata_CTA_URLs": true,
+  "sources": [
+    {
+      "id": "R32.extended-period",
+      "native_LF": [
+        7,
+        10
+      ],
+      "reader_sha256": "bbc3077514034d361cb1ce722043af95fcd325e4ff4067652f33d89f5ca3b259",
+      "quote_sha256": "9127db09c62faa8c4e3aac5c0bf7cfa57d4966b681631c1989954b7523e529cc",
+      "actual_read": "All seven complete writer-selected actual quotations independently read in this successor phase and matched to prior capital source reading/finite selected-source findings; no new acquisition."
+    },
+    {
+      "id": "R32.token-exception",
+      "native_LF": [
+        785,
+        788
+      ],
+      "reader_sha256": "e444aa0ed6ecd595df4630075995d3ea9ea1274535cfe8004ca7d98b94ead708",
+      "quote_sha256": "68044ee0a268895a1925ff900e0579be6e8fd8323d257576a401876dbc7e4c55",
+      "actual_read": "All seven complete writer-selected actual quotations independently read in this successor phase and matched to prior capital source reading/finite selected-source findings; no new acquisition."
+    },
+    {
+      "id": "R33.complete-certificate",
+      "native_LF": [
+        19,
+        19
+      ],
+      "reader_sha256": "8d7aa2e671377cab047bfd620fb39005ff69f940f972c372b57656e414e5d9b2",
+      "quote_sha256": "d8b72d1fdf99759df8435ce387f883b11c1affffe24aa8b6800958f96bd65e3e",
+      "actual_read": "All seven complete writer-selected actual quotations independently read in this successor phase and matched to prior capital source reading/finite selected-source findings; no new acquisition."
+    },
+    {
+      "id": "R34.mandatory-financing",
+      "native_LF": [
+        7,
+        28
+      ],
+      "reader_sha256": "8cc16e1ec4460eabab60ae8ddea900b95d35022860c4f88bd4ef3981fce3dfae",
+      "quote_sha256": "bb8411e679daba027435f2a67ffd78a3d1dd73fc7d06ef53de964bad71af3829",
+      "actual_read": "All seven complete writer-selected actual quotations independently read in this successor phase and matched to prior capital source reading/finite selected-source findings; no new acquisition."
+    },
+    {
+      "id": "R34.finality",
+      "native_LF": [
+        81,
+        81
+      ],
+      "reader_sha256": "d53d558fa43c9b55aa62394b068bcc7f64afaa5ec1721d019bc32e7c0fd651b5",
+      "quote_sha256": "e5d4dac905e1e445e369b6fd633abe603ed8ac0f799b684b3d117ceba1b1c9e4",
+      "actual_read": "All seven complete writer-selected actual quotations independently read in this successor phase and matched to prior capital source reading/finite selected-source findings; no new acquisition."
+    },
+    {
+      "id": "R35.recent-gift",
+      "native_LF": [
+        7,
+        7
+      ],
+      "reader_sha256": "7bb0daec1aa36da5cdd8598cd60d6ad89291c220d134e8bf6d136786d8c274c4",
+      "quote_sha256": "c513dacb1ac168fbb51ec62bc56440cd7afcfce44175e0f967a740b6491b0934",
+      "actual_read": "All seven complete writer-selected actual quotations independently read in this successor phase and matched to prior capital source reading/finite selected-source findings; no new acquisition."
+    },
+    {
+      "id": "R36.full-assessed-prepayments",
+      "native_LF": [
+        7,
+        7
+      ],
+      "reader_sha256": "42efc20b8ad863a9ebf7d5c174b81dfcd6b788e4e4a8efe2b275137a739b600b",
+      "quote_sha256": "11f505ad1f668ec94e63d7293753880440e2f00b4659f3e599adb5551d5bb1be",
+      "actual_read": "All seven complete writer-selected actual quotations independently read in this successor phase and matched to prior capital source reading/finite selected-source findings; no new acquisition."
+    }
+  ],
+  "own_controls": [
+    {
+      "name": "incomeproducingnon-tokenheld2y tenyearbranch",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "ordinarynonincomeproducing2y beyond1year",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "CurrencyPaymentToken specificexception no10y",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "other-token notassumedexception",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "certificate15Decemberreceived qualifies",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "certificate16Decemberlate",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "qualifyinginterestactualcostbase",
+      "actual": "8000",
+      "expected": "8000"
+    },
+    {
+      "name": "notassumedSPbase",
+      "actual": "9000",
+      "expected": "9000"
+    },
+    {
+      "name": "shareholder10inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "shareholder9point99notBgate",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "familyalonenotstatutorytest",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "marketstandard cconnectionexcluded",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "noadvantage cconnectionexcluded",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "giftoutside5yearsnotautomatic",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "fullVPbeforeTF",
+      "actual": "6216",
+      "expected": "6216"
+    },
+    {
+      "name": "wrongtaxableVPdeduction",
+      "actual": "32256/5",
+      "expected": "32256/5"
+    },
+    {
+      "name": "zeroactualcashnotzeroassessedVP",
+      "actual": "1120",
+      "expected": "1120"
+    }
+  ],
+  "unchanged_original_controls": "de-capital-gains-own-controls.json:41 own controls; all original4fixtures and narrative examples already recomputed. Existing source questions unchanged."
+}

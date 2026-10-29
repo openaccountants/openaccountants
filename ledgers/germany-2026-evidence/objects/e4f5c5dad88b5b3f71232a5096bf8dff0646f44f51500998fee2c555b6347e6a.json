@@ -1,0 +1,12 @@
+{
+  "url": "https://www.gesetze-im-internet.de/sgb_6/__163.html",
+  "raw_sha256": "8a31343e9b7496b118054452ba6129e5b2e06a90600b34a97d782212c10149e9",
+  "reader_sha256": "0b38d63fe3b014e76ab4aa45f9a86677d5afdf1b3afd0eb58cabb582729e724f",
+  "raw_bytes": 8607,
+  "encoding": "ISO8859-1, actual meta declaration; initial UTF8 parser failure preserved in tool output before reading",
+  "prior_failed_routes": [
+    "webtimeout",
+    "defaultDNS"
+  ],
+  "status": "acquired, selected actual reading follows"
+}

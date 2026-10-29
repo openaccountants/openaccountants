@@ -1,0 +1,21 @@
+{
+  "R09.assessment-rounding": {
+    "id": "R09.assessment-rounding",
+    "url": "https://www.gesetze-im-internet.de/kstg_1977/__31.html",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U816365676f95809c.body",
+    "raw_sha256": "1d6261f3a27fdf78e48767fce5234b13195922f07b70d4186dd01a016d9bf731",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U816365676f95809c.reader.txt",
+    "reader_sha256": "0f17cad845ae999d270ae4cfe0acc0b54b8828885ac3cd017f6f569b2bc874a0",
+    "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+    "acquisition": "new targeted acquisition",
+    "scope": "Acquisition only; selected actual reads must be recorded separately",
+    "article": "KStG § 31(1) sentence 2, selected whole paragraph for context",
+    "native_LF": [
+      7,
+      7
+    ],
+    "exact_quote": "(1) 1Auf die Durchführung der Besteuerung einschließlich der Anrechnung, Entrichtung und Vergütung der Körperschaftsteuer sowie die Festsetzung und Erhebung von Steuern, die nach der veranlagten Körperschaftsteuer bemessen werden (Zuschlagsteuern), sind die Vorschriften des Einkommensteuergesetzes entsprechend anzuwenden, soweit dieses Gesetz nichts anderes bestimmt. 2Die sich im Zuge der Festsetzung ergebenden einzelnen Körperschaftsteuerbeträge sind jeweils zu Gunsten des Steuerpflichtigen auf volle Euro-Beträge zu runden. 3§ 37b des Einkommensteuergesetzes findet entsprechende Anwendung.",
+    "read_on": "2026-10-29",
+    "qualification": "Own full selected statutory paragraph actually read. Whole-euro assessed corporate-tax rounding in taxpayer favour; no general base/surcharge/refund rounding method inferred."
+  }
+}

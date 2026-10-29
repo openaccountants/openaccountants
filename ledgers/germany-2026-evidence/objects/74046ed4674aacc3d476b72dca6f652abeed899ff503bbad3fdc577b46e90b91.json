@@ -1,0 +1,11 @@
+{
+  "id": "Ua56a40277de56de0",
+  "url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.body",
+  "raw_sha256": "c5c09554a9929650872139f63bf5c2cf6f5edde0a6af65424af4e7b1e3b00f4f",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/Ua56a40277de56de0.reader.txt",
+  "reader_sha256": "3212a8577890f12bc793d5fc5516e90793f5035935b5aec154d1de8e9a2a10b2",
+  "extraction": "PDF pdftotext-layout; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

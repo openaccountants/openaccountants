@@ -1,0 +1,11 @@
+{
+  "id": "U7ffe17cf27fa5eb7",
+  "url": "https://www.bzst.de/DE/Unternehmen/Umsatzsteuer/One-Stop-Shop_EU/one_stop_shop_eu_node.html",
+  "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7ffe17cf27fa5eb7.body",
+  "raw_sha256": "c35570bb92b93b5ca4c46368afe80e9e87816942fa885a88404cf192dfabcf51",
+  "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-ledger-writer-2026-10-28/sources/U7ffe17cf27fa5eb7.reader.txt",
+  "reader_sha256": "09335dee82d6f9c73550e06cf825223ab84129fb3c7e920d20eaba0fb620dbb8",
+  "extraction": "HTML decoded declared charset, tags/entities extracted; derived whitespace normalized; raw unchanged",
+  "acquisition": "new targeted acquisition",
+  "scope": "Acquisition only; selected actual reads must be recorded separately"
+}

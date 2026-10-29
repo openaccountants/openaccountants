@@ -1,0 +1,1604 @@
+[
+  {
+    "row": 1,
+    "LF_start": 3,
+    "LF_end": 3,
+    "section": "Scope/metadata",
+    "wording": "description: \"German income tax (Einkommensteuer) on the profit of one self-employed person resident in Germany, tax year 2026. Covers Freiberufler (§ 18 EStG) versus trade (§ 15 EStG), the cash-basis profit (EÜR, § 4(3)) with Anlage EÜR and Anlage S or G, business expenses including the home office flat rate and the EUR 6 day rate, low-value assets and depreciation (§§ 6, 7), the Investitionsabzugsbetrag (§ 7g), the 2026 tariff with the EUR 12,348 Grundfreibetrag (§ 32a), splitting, the solidarity surcharge, church tax, pension and health special expenses, losses (§ 10d), prepayments (§ 37), the § 35 trade tax credit, filing deadlines with and without a Steuerberater (§ 149 AO) and the late-filing surcharge (§ 152 AO). Trigger on: Freiberufler, Selbständige, EÜR, Anlage S, Homeoffice-Pauschale, Investitionsabzugsbetrag, Vorauszahlungen, German freelancer tax. Out of scope: trade tax (de-trade-tax), investments (de-capital-gains), social contributions (de-social-contributions), partners and part-year residents (de-partners-and-part-year), non-residents (de-non-resident-tax).\"",
+    "source_quote_ids": [
+      "GT.professions",
+      "GT.commercial",
+      "FR.cashprofit",
+      "FR.tariff",
+      "FR.IAB",
+      "FR.advance"
+    ],
+    "classification": "Summary of the detailed sourced methods below; metadata is not a separate tax computation."
+  },
+  {
+    "row": 2,
+    "LF_start": 18,
+    "LF_end": 18,
+    "section": "Scope/metadata",
+    "wording": "How Germany taxes the profit of one self-employed person in tax year 2026, the calendar year (§ 2(7) EStG). The tariff applies \"ab dem Veranlagungszeitraum 2026\" ([§ 32a EStG](https://www.gesetze-im-internet.de/estg/__32a.html)). A short table gives 2025 figures for returns being filed now. This skill is for information and computation only, not tax advice; a Steuerberater must review a real return before it is filed.",
+    "source_quote_ids": [
+      "FR.full-year-partners",
+      "FR.tariff"
+    ],
+    "classification": "Summary of the detailed sourced methods below; metadata is not a separate tax computation."
+  },
+  {
+    "row": 3,
+    "LF_start": 22,
+    "LF_end": 22,
+    "section": "Who this applies to",
+    "wording": "- **In scope.** One individual resident in Germany with income from self-employed work (§ 18 EStG) or a trade (§ 15 EStG), assessed alone or jointly with a spouse. Tax office: the local Finanzamt; returns go through ELSTER.",
+    "source_quote_ids": [
+      "CG.resident",
+      "FR.localoffice",
+      "FR.form-main"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 4,
+    "LF_start": 23,
+    "LF_end": 23,
+    "section": "Who this applies to",
+    "wording": "- **Freiberufler ([§ 18(1) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__18.html)).** Self-employed scientific, artistic, writing, teaching or educational work, and the named professions (among them doctors, dentists, vets, lawyers, notaries, engineers, architects, auditors, tax advisers, Heilpraktiker, physiotherapists, journalists, interpreters, translators) \"und ähnlicher Berufe\". Qualified staff are allowed if the owner leads the work and answers for it with their own expertise. § 18(1) no. 3 adds other self-employed work such as executor or supervisory board fees.",
+    "source_quote_ids": [
+      "GT.professions"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 5,
+    "LF_start": 24,
+    "LF_end": 24,
+    "section": "Who this applies to",
+    "wording": "- **Trade ([§ 15(2) EStG](https://www.gesetze-im-internet.de/estg/__15.html)).** An independent, lasting activity for profit in general economic life that is not farming, a liberal profession or other self-employed work: what is left over. Whether an unnamed job is \"similar\" is decided case by case: refer it to a Steuerberater, as is splitting one person's mixed freelance and trade work.",
+    "source_quote_ids": [
+      "GT.commercial",
+      "GT.professions"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 6,
+    "LF_start": 25,
+    "LF_end": 25,
+    "section": "Who this applies to",
+    "wording": "- **The split decides trade tax, registration and the bookkeeping duty, not the tariff.**",
+    "source_quote_ids": [
+      "GT.liability",
+      "FR.books",
+      "FR.tariff"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 7,
+    "LF_start": 29,
+    "LF_end": 29,
+    "section": "Who this applies to",
+    "wording": "| Trade tax | None ([§ 2(1) GewStG](https://www.gesetze-im-internet.de/gewstg/__2.html)) | Above the EUR 24,500 allowance; partly credited (§ 35 EStG). Worked out in `de-trade-tax` |",
+    "source_quote_ids": [
+      "GT.liability",
+      "GT.round-allow-rate",
+      "GT.credit"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 8,
+    "LF_start": 30,
+    "LF_end": 30,
+    "section": "Who this applies to",
+    "wording": "| Registration within one month (§ 138 AO) | Tax office, start-up details electronically | Municipality, which tells the tax office |",
+    "source_quote_ids": [
+      "GT.activity-notice",
+      "GT.notice-month"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 9,
+    "LF_start": 31,
+    "LF_end": 31,
+    "section": "Who this applies to",
+    "wording": "| Bookkeeping duty by size (§ 141 AO) | None | After a limit in the rates table is crossed and the office gives notice |",
+    "source_quote_ids": [
+      "FR.books"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 10,
+    "LF_start": 32,
+    "LF_end": 32,
+    "section": "Who this applies to",
+    "wording": "| Profit form | Anlage S | Anlage G |",
+    "source_quote_ids": [
+      "FR.form-S",
+      "CG.formG"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 11,
+    "LF_start": 34,
+    "LF_end": 34,
+    "section": "Who this applies to",
+    "wording": "- **Out of scope, with the skill to use.** Partnerships (GbR, OHG, KG, Partnerschaftsgesellschaft; a partnership that also trades is a trade as a whole, § 15(3) no. 1 EStG): `de-partners-and-part-year`. Companies (GmbH, UG): `de-corporate-tax`. Wages only: `de-employee-income-tax`. Letting: `de-rental-income`. Legal form: `germany-formation`. VAT returns: `germany-vat-return` and `de-vat-annual-and-special-schemes`. Records, the GWG pool and the car logbook: `germany-bookkeeping`. Contributions: `de-social-contributions`. Prepayment planning: `de-estimated-tax`. Investments: `de-capital-gains`. Crypto: `de-crypto-tax`. Staff: `de-payroll`. Non-residents: `de-non-resident-tax`.",
+    "source_quote_ids": [
+      "GT.commercial"
+    ],
+    "classification": "Bounded companion/referral route; not a complete specialist method."
+  },
+  {
+    "row": 12,
+    "LF_start": 35,
+    "LF_end": 35,
+    "section": "Who this applies to",
+    "wording": "- **Also refer.** Selling or closing the business, extraordinary income (§ 34), retained profits (§ 34a), the progression clause (§ 32b); electric and hybrid business cars and any dispute over private car use; the exact church tax rate and rounding for a client (state rules).",
+    "source_quote_ids": [
+      "FR.prog-treaty",
+      "FR.prog-exceptions",
+      "FR.prog-rate",
+      "GT.church-admin"
+    ],
+    "classification": "Bounded companion/referral route; not a complete specialist method."
+  },
+  {
+    "row": 13,
+    "LF_start": 43,
+    "LF_end": 43,
+    "section": "Rates, bands and thresholds",
+    "wording": "| 1, basic allowance (Grundfreibetrag) | 0 | EUR 12,348 | tax = 0 |",
+    "source_quote_ids": [
+      "FR.tariff"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 14,
+    "LF_start": 44,
+    "LF_end": 44,
+    "section": "Rates, bands and thresholds",
+    "wording": "| 2 | EUR 12,349 | EUR 17,799 | (914.51 * y + 1400) * y |",
+    "source_quote_ids": [
+      "FR.tariff"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 15,
+    "LF_start": 45,
+    "LF_end": 45,
+    "section": "Rates, bands and thresholds",
+    "wording": "| 3 | EUR 17,800 | EUR 69,878 | (173.10 * z + 2397) * z + 1034.87 |",
+    "source_quote_ids": [
+      "FR.tariff"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 16,
+    "LF_start": 46,
+    "LF_end": 46,
+    "section": "Rates, bands and thresholds",
+    "wording": "| 4 | EUR 69,879 | EUR 277,825 | 0.42 * x - 11135.63 |",
+    "source_quote_ids": [
+      "FR.tariff"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 17,
+    "LF_start": 47,
+    "LF_end": 47,
+    "section": "Rates, bands and thresholds",
+    "wording": "| 5 | EUR 277,826 | none | 0.45 * x - 19470.38 |",
+    "source_quote_ids": [
+      "FR.tariff"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 18,
+    "LF_start": 49,
+    "LF_end": 49,
+    "section": "Rates, bands and thresholds",
+    "wording": "- **x** is taxable income rounded down to a full euro; **y** is one ten-thousandth of x above the basic allowance; **z** is one ten-thousandth of x above EUR 17,799 (§ 32a(1) sentence 4). Round the tax down to a full euro. The statute prints a decimal comma and a space between thousands.",
+    "source_quote_ids": [
+      "FR.tariff"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 19,
+    "LF_start": 50,
+    "LF_end": 50,
+    "section": "Rates, bands and thresholds",
+    "wording": "- **Splitting.** Spouses assessed together pay twice the tax on half their joint taxable income (§ 32a(5)), if both are fully liable to German tax and do not live apart for good ([§ 26 EStG](https://www.gesetze-im-internet.de/estg/__26.html)); registered partners count as spouses (§ 2(8)). § 32a(6) extends it to a widowed person for the year after the death, and to some years in which a marriage ended.",
+    "source_quote_ids": [
+      "FR.splitting",
+      "FR.spouse",
+      "FR.full-year-partners"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 20,
+    "LF_start": 51,
+    "LF_end": 51,
+    "section": "Rates, bands and thresholds",
+    "wording": "- **Marginal rates** (on the next euro, not the whole income): entry 14%, top 42% from the start of zone 4, highest 45% in zone 5. The 2026 statute prints only the factors 0.42 and 0.45; the 14% entry rate wording comes from the ministry's 2025 tax booklet, whose 2025 zone limits must not be used for 2026.",
+    "source_quote_ids": [
+      "FR.tariff",
+      "FR.booklet2025tariff"
+    ],
+    "classification": "Express2025 historical figures; not substituted into2026 tariff. Entry14% is booklet terminology."
+  },
+  {
+    "row": 21,
+    "LF_start": 57,
+    "LF_end": 57,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Basic allowance (Grundfreibetrag), single | EUR 12,348 | 2026 | https://www.gesetze-im-internet.de/estg/__32a.html |",
+    "source_quote_ids": [
+      "FR.tariff"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 22,
+    "LF_start": 58,
+    "LF_end": 58,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Top rate zone starts | EUR 69,879 | 2026 | https://www.gesetze-im-internet.de/estg/__32a.html |",
+    "source_quote_ids": [
+      "FR.tariff"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 23,
+    "LF_start": 59,
+    "LF_end": 59,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Highest rate zone starts | EUR 277,826 | 2026 | https://www.gesetze-im-internet.de/estg/__32a.html |",
+    "source_quote_ids": [
+      "FR.tariff"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 24,
+    "LF_start": 60,
+    "LF_end": 60,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Solidarity surcharge: none unless income tax (single) is more than | EUR 20,350 | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html |",
+    "source_quote_ids": [
+      "FR.soli-limit",
+      "FR.soli-date"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 25,
+    "LF_start": 61,
+    "LF_end": 61,
+    "section": "Rates, bands and thresholds",
+    "wording": "| The same limit under splitting | EUR 40,700 | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__3.html |",
+    "source_quote_ids": [
+      "FR.soli-limit",
+      "FR.soli-date"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 26,
+    "LF_start": 62,
+    "LF_end": 62,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Solidarity surcharge rate, on the income tax | 5.5% | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__4.html |",
+    "source_quote_ids": [
+      "FR.soli-formula"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 27,
+    "LF_start": 63,
+    "LF_end": 63,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Surcharge cap: share of the excess of the tax over the limit | 11.9% | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__4.html |",
+    "source_quote_ids": [
+      "FR.soli-formula"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 28,
+    "LF_start": 64,
+    "LF_end": 64,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Church tax for members, on the income tax, by state | 8% or 9% | 2025 booklet | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 |",
+    "source_quote_ids": [
+      "GT.church-admin"
+    ],
+    "classification": "Retains explicit state church-law and2026form-name limitations; federal booklet gives8/9%, not a universal client state-rate ruling."
+  },
+  {
+    "row": 29,
+    "LF_start": 65,
+    "LF_end": 65,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Trade tax allowance per business (individuals, partnerships) | EUR 24,500 | 2026 | https://www.gesetze-im-internet.de/gewstg/__11.html |",
+    "source_quote_ids": [
+      "GT.round-allow-rate"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 30,
+    "LF_start": 66,
+    "LF_end": 66,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Bookkeeping duty can start: turnover in the calendar year more than | EUR 800,000 | 2026 | https://www.gesetze-im-internet.de/ao_1977/__141.html |",
+    "source_quote_ids": [
+      "FR.books"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 31,
+    "LF_start": 67,
+    "LF_end": 67,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Or trade profit in the financial year more than | EUR 80,000 | 2026 | https://www.gesetze-im-internet.de/ao_1977/__141.html |",
+    "source_quote_ids": [
+      "FR.books"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 32,
+    "LF_start": 68,
+    "LF_end": 68,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Kleinunternehmer: previous year's turnover not above | EUR 25,000 | 2026 | https://www.gesetze-im-internet.de/ustg_1980/__19.html |",
+    "source_quote_ids": [
+      "FR.KU"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 33,
+    "LF_start": 69,
+    "LF_end": 69,
+    "section": "Rates, bands and thresholds",
+    "wording": "| And current year's turnover not above | EUR 100,000 | 2026 | https://www.gesetze-im-internet.de/ustg_1980/__19.html |",
+    "source_quote_ids": [
+      "FR.KU"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 34,
+    "LF_start": 70,
+    "LF_end": 70,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Start-up year: that year's turnover not above (ministry reading) | EUR 25,000 | 2026 | EÜR instructions 2026, line 12 (Sources) |",
+    "source_quote_ids": [
+      "FR.EUR-KU"
+    ],
+    "classification": "Actual2026 administrative instruction; underlying6April2023letter not claimed read."
+  },
+  {
+    "row": 35,
+    "LF_start": 71,
+    "LF_end": 71,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Home office that is the centre of all work: yearly flat amount instead of actual costs | EUR 1,260 | 2026 | https://www.gesetze-im-internet.de/estg/__4.html |",
+    "source_quote_ids": [
+      "FR.home-room"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 36,
+    "LF_start": 72,
+    "LF_end": 72,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Home office day rate, per calendar day worked mainly at home | EUR 6 | 2026 | https://www.gesetze-im-internet.de/estg/__4.html |",
+    "source_quote_ids": [
+      "FR.home-day"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 37,
+    "LF_start": 73,
+    "LF_end": 73,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Yearly cap on day rates | EUR 1,260 | 2026 | https://www.gesetze-im-internet.de/estg/__4.html |",
+    "source_quote_ids": [
+      "FR.home-day"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 38,
+    "LF_start": 74,
+    "LF_end": 74,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Home to own premises: per full km one way, per day visited | EUR 0.38 | 2026 | https://www.gesetze-im-internet.de/estg/__9.html |",
+    "source_quote_ids": [
+      "FR.commute",
+      "FR.commutebridge"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 39,
+    "LF_start": 75,
+    "LF_end": 75,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Yearly cap on that, not for one's own or a provided car | EUR 4,500 | 2026 | https://www.gesetze-im-internet.de/estg/__9.html |",
+    "source_quote_ids": [
+      "FR.commute"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 40,
+    "LF_start": 76,
+    "LF_end": 76,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Meals in Germany: full 24-hour day away | EUR 28 | 2026 | https://www.gesetze-im-internet.de/estg/__9.html |",
+    "source_quote_ids": [
+      "FR.meals"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 41,
+    "LF_start": 77,
+    "LF_end": 77,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Meals: arrival and departure day with overnight stay, each; or a day over eight hours away without one | EUR 14 | 2026 | https://www.gesetze-im-internet.de/estg/__9.html |",
+    "source_quote_ids": [
+      "FR.meals"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 42,
+    "LF_start": 78,
+    "LF_end": 78,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Meals abroad, example Austria: full day / arrival, departure or over eight hours | EUR 50 / EUR 33 | 2026 | BMF letter of 5 December 2025 (Sources) |",
+    "source_quote_ids": [
+      "FR.foreignmeals-date",
+      "FR.foreignmeals-Austria"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 43,
+    "LF_start": 79,
+    "LF_end": 79,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Business trips in a private car, per full km (or actual cost share) | EUR 0.30 | 2026 | EÜR instructions 2026, line 72 (the highest BRKG rate, § 5(2): https://www.gesetze-im-internet.de/brkg_2005/__5.html) |",
+    "source_quote_ids": [
+      "FR.EUR-car",
+      "FR.car-rate"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 44,
+    "LF_start": 80,
+    "LF_end": 80,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Low-value asset (GWG): expensed in full if cost reduced by contained input VAT for the eligibility test is not more than | EUR 800 | 2026 | https://www.gesetze-im-internet.de/estg/__6.html |",
+    "source_quote_ids": [
+      "FR.GWG",
+      "FR.VAT-costrule"
+    ],
+    "classification": "DE-B04 corrected source reading: contained-VAT eligibility test versus recoverability-dependent cost. Own combined-primary interpretation, not an express2010BMF adjudication."
+  },
+  {
+    "row": 45,
+    "LF_start": 81,
+    "LF_end": 81,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Running register needed if a GWG is worth more than | EUR 250 | 2026 | https://www.gesetze-im-internet.de/estg/__6.html |",
+    "source_quote_ids": [
+      "FR.GWG"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 46,
+    "LF_start": 82,
+    "LF_end": 82,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Declining balance, movable assets bought 1 July 2025 to 31 December 2027: up to three times straight-line, not more than | 30% | 2026 | https://www.gesetze-im-internet.de/estg/__7.html |",
+    "source_quote_ids": [
+      "FR.depreciation"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 47,
+    "LF_start": 83,
+    "LF_end": 83,
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 7g investment deduction: share of a future asset's expected cost | 50% | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |",
+    "source_quote_ids": [
+      "FR.IAB"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 48,
+    "LF_start": 84,
+    "LF_end": 84,
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 7g profit limit: profit calculated without investment deductions or § 7g(2) add-backs not more than | EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |",
+    "source_quote_ids": [
+      "FR.IAB"
+    ],
+    "classification": "DE-B03 corrected tested-profit measure excludes both current deductions and section7g(2)add-backs; threshold and open-deduction cap are separate."
+  },
+  {
+    "row": 49,
+    "LF_start": 85,
+    "LF_end": 85,
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 7g cap on open deductions (this year and three before), per business | EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |",
+    "source_quote_ids": [
+      "FR.IAB"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 50,
+    "LF_start": 86,
+    "LF_end": 86,
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 7g special depreciation over the year bought and four after, in total | 40% | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |",
+    "source_quote_ids": [
+      "FR.IAB"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 51,
+    "LF_start": 87,
+    "LF_end": 87,
+    "section": "Rates, bands and thresholds",
+    "wording": "| \"Almost only\" business use for § 7g means at least | 90% | 2026 | EÜR instructions 2026, line 89 |",
+    "source_quote_ids": [
+      "FR.EUR-IAB"
+    ],
+    "classification": "Actual2026 administrative instruction; underlying6April2023letter not claimed read."
+  },
+  {
+    "row": 52,
+    "LF_start": 88,
+    "LF_end": 88,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Writing or journalism as main work: flat expense share of receipts, cap EUR 3,600 | 30% | 2026 | EÜR instructions 2026, line 24 |",
+    "source_quote_ids": [
+      "FR.EUR-flatcosts"
+    ],
+    "classification": "Actual2026 administrative instruction; underlying6April2023letter not claimed read."
+  },
+  {
+    "row": 53,
+    "LF_start": 89,
+    "LF_end": 89,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Scientific, artistic or writing side work, side-line teaching and examining: flat share, cap EUR 900 | 25% | 2026 | EÜR instructions 2026, line 24 |",
+    "source_quote_ids": [
+      "FR.EUR-flatcosts"
+    ],
+    "classification": "Actual2026 administrative instruction; underlying6April2023letter not claimed read."
+  },
+  {
+    "row": 54,
+    "LF_start": 90,
+    "LF_end": 90,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Pension contributions within the cap deductible | 100% | 2026 | https://www.gesetze-im-internet.de/estg/__10.html |",
+    "source_quote_ids": [
+      "FR.pension-cap"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 55,
+    "LF_start": 91,
+    "LF_end": 91,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Miners' pension insurance ceiling, per year | EUR 124,800 | 2026 | https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html |",
+    "source_quote_ids": [
+      "FR.miners-base"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 56,
+    "LF_start": 92,
+    "LF_end": 92,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Miners' pension insurance rate | 24.7% | 2026 | https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html |",
+    "source_quote_ids": [
+      "FR.miners-rate"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 57,
+    "LF_start": 93,
+    "LF_end": 93,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Pension contribution cap, single (124,800 x 24.7% = 30,825.60, rounded up) | EUR 30,826 | 2026 | https://www.gesetze-im-internet.de/estg/__10.html |",
+    "source_quote_ids": [
+      "FR.miners-base",
+      "FR.miners-rate",
+      "FR.pension-cap"
+    ],
+    "classification": "Derived amount/date from cited provisions; independently recomputed in supplementary controls."
+  },
+  {
+    "row": 58,
+    "LF_start": 94,
+    "LF_end": 94,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Same cap for spouses assessed together | EUR 61,652 | 2026 | https://www.gesetze-im-internet.de/estg/__10.html |",
+    "source_quote_ids": [
+      "FR.pension-cap"
+    ],
+    "classification": "Derived amount/date from cited provisions; independently recomputed in supplementary controls."
+  },
+  {
+    "row": 59,
+    "LF_start": 95,
+    "LF_end": 95,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Statutory health contribution with sick pay claim: cut by | 4% | 2026 | https://www.gesetze-im-internet.de/estg/__10.html |",
+    "source_quote_ids": [
+      "FR.health"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 60,
+    "LF_start": 96,
+    "LF_end": 96,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Cap for health, care and other insurance together | EUR 2,800 | 2026 | https://www.gesetze-im-internet.de/estg/__10.html |",
+    "source_quote_ids": [
+      "FR.pension-cap",
+      "FR.health"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 61,
+    "LF_start": 97,
+    "LF_end": 97,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Lower cap (KSK insured, employer health share, or cost refunds without own expense) | EUR 1,900 | 2026 | https://www.gesetze-im-internet.de/estg/__10.html |",
+    "source_quote_ids": [
+      "FR.pension-cap",
+      "FR.health"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 62,
+    "LF_start": 98,
+    "LF_end": 98,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Loss carry-back cap, single / joint | EUR 1,000,000 / EUR 2,000,000 | 2026 | https://www.gesetze-im-internet.de/estg/__10d.html |",
+    "source_quote_ids": [
+      "FR.loss"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 63,
+    "LF_start": 99,
+    "LF_end": 99,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Loss carry-forward above EUR 1 million (2 million joint) of total income: share of the excess | 70% for 2024 to 2027; 60% from 2028 | 2026 | https://www.gesetze-im-internet.de/estg/__10d.html ; https://www.recht.bund.de/bgbl/1/2024/108/VO.html |",
+    "source_quote_ids": [
+      "FR.loss",
+      "FR.loss2024",
+      "FR.loss2028",
+      "FR.loss2028-date"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 64,
+    "LF_start": 100,
+    "LF_end": 100,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Prepayments set only if at least, per year / per due date | EUR 400 / EUR 100 | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "source_quote_ids": [
+      "FR.advance"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 65,
+    "LF_start": 101,
+    "LF_end": 101,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Prepayments raised after the year end only if the increase is at least | EUR 5,000 | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |",
+    "source_quote_ids": [
+      "FR.advance"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 66,
+    "LF_start": 102,
+    "LF_end": 102,
+    "section": "Rates, bands and thresholds",
+    "wording": "| § 35 trade tax credit: multiple of the trade tax base amount | 4 times | 2026 | https://www.gesetze-im-internet.de/estg/__35.html |",
+    "source_quote_ids": [
+      "GT.credit"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 67,
+    "LF_start": 103,
+    "LF_end": 103,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Employee side income threshold for a compulsory assessment | EUR 410 | 2026 | https://www.gesetze-im-internet.de/estg/__46.html |",
+    "source_quote_ids": [
+      "FR.employee-side"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 68,
+    "LF_start": 107,
+    "LF_end": 107,
+    "section": "Rates, bands and thresholds",
+    "wording": "- **A limit with a sliding zone, not an allowance.** Up to the limit, no surcharge. Above it, the lower of 5.5% on the whole tax and 11.9% of the excess. Fractions of a cent are dropped (§ 4 SolzG). The base is the assessed income tax worked out with child allowances; tax under § 32d(3) and (4) EStG is left out of the limit test. § 6(27) SolzG starts these limits in 2026 ([§ 6 SolzG](https://www.gesetze-im-internet.de/solzg_1995/__6.html)). Prepayments carry the surcharge too (§ 3(1) no. 2). Investment income at the flat rate carries its own surcharge: `de-capital-gains`.",
+    "source_quote_ids": [
+      "FR.soli-formula",
+      "FR.soli-limit",
+      "FR.soli-date",
+      "GT.soli-assessment"
+    ],
+    "classification": "Own combined-text tariff/credit/Soli route; church credit exclusion separately explicit. No administrative software ruling inferred."
+  },
+  {
+    "row": 69,
+    "LF_start": 108,
+    "LF_end": 108,
+    "section": "Rates, bands and thresholds",
+    "wording": "- **Church tax.** The state and its church tax rules set the rate and rounding. Its base is the income tax worked out with child allowances in every case and without the § 35 credit ([§ 51a(2) EStG](https://www.gesetze-im-internet.de/estg/__51a.html): \"§ 35 ist ... nicht anzuwenden\"), so the credit does not lower a trader's church tax. Church tax paid is a special expense (§ 10(1) no. 4 EStG), except on flat-taxed investment income.",
+    "source_quote_ids": [
+      "GT.church-credit",
+      "GT.church-admin",
+      "FR.health"
+    ],
+    "classification": "Retains explicit state church-law and2026form-name limitations; federal booklet gives8/9%, not a universal client state-rate ruling."
+  },
+  {
+    "row": 70,
+    "LF_start": 114,
+    "LF_end": 114,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Basic allowance | EUR 12,096 | Ministry tax booklet 2025 (Sources) |",
+    "source_quote_ids": [
+      "FR.booklet2025tariff"
+    ],
+    "classification": "Express2025 historical figures; not substituted into2026 tariff. Entry14% is booklet terminology."
+  },
+  {
+    "row": 71,
+    "LF_start": 115,
+    "LF_end": 115,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Top rate zone starts | EUR 68,481 | Same |",
+    "source_quote_ids": [
+      "FR.booklet2025tariff"
+    ],
+    "classification": "Express2025 historical figures; not substituted into2026 tariff. Entry14% is booklet terminology."
+  },
+  {
+    "row": 72,
+    "LF_start": 116,
+    "LF_end": 116,
+    "section": "Rates, bands and thresholds",
+    "wording": "| Surcharge limit, single / splitting | EUR 19,950 / EUR 39,900 | Same |",
+    "source_quote_ids": [
+      "FR.booklet2025Soli"
+    ],
+    "classification": "Express2025 historical figures; not substituted into2026 tariff. Entry14% is booklet terminology."
+  },
+  {
+    "row": 73,
+    "LF_start": 118,
+    "LF_end": 118,
+    "section": "Rates, bands and thresholds",
+    "wording": "The 2025 formulas are those of § 32a in its 2025 wording, which the consolidated statute no longer prints; take them from the ELSTER program for 2025.",
+    "source_quote_ids": [
+      "FR.booklet2025tariff",
+      "FR.form-main"
+    ],
+    "classification": "Express2025 historical figures; not substituted into2026 tariff. Entry14% is booklet terminology."
+  },
+  {
+    "row": 74,
+    "LF_start": 124,
+    "LF_end": 124,
+    "section": "The taxable base",
+    "wording": "For a trade and for self-employed work the taxed income is the profit (§ 2(2) EStG).",
+    "source_quote_ids": [
+      "FR.tax-profit-definition"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 75,
+    "LF_start": 128,
+    "LF_end": 128,
+    "section": "The taxable base",
+    "wording": "| Who | Anyone not bound by law to keep books who also keeps none. Always open to a Freiberufler | Traders bound to keep books, and anyone who keeps books by choice |",
+    "source_quote_ids": [
+      "FR.cashprofit",
+      "FR.businessbalance",
+      "FR.books",
+      "FR.otherbooks"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 76,
+    "LF_start": 129,
+    "LF_end": 129,
+    "section": "The taxable base",
+    "wording": "| Profit is | Business receipts less business expenses | The change in business net assets, plus withdrawals, less contributions |",
+    "source_quote_ids": [
+      "FR.cashprofit",
+      "FR.businessbalance"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 77,
+    "LF_start": 130,
+    "LF_end": 130,
+    "section": "The taxable base",
+    "wording": "| Timing | Cash basis: receipts when they arrive, expenses when paid ([§ 11 EStG](https://www.gesetze-im-internet.de/estg/__11.html)) | Accruals |",
+    "source_quote_ids": [
+      "FR.cashdates",
+      "FR.businessbalance"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 78,
+    "LF_start": 131,
+    "LF_end": 131,
+    "section": "The taxable base",
+    "wording": "| Sent as | Anlage EÜR with the asset schedule Anlage AVEÜR, electronically ([§ 60(4) EStDV](https://www.gesetze-im-internet.de/estdv_1955/__60.html)) | Balance sheet and P&L, electronically (§ 5b EStG) |",
+    "source_quote_ids": [
+      "FR.EUR-electronic",
+      "FR.AVEUR",
+      "FR.balance-electronic"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 79,
+    "LF_start": 133,
+    "LF_end": 133,
+    "section": "The taxable base",
+    "wording": "- **Bookkeeping duty for a trade.** Either § 141 AO limit is enough; the duty starts only with the financial year after the office's notice (§ 141(2) AO). Whoever must keep books under another law, such as a merchant under the Commercial Code, must also do so for tax ([§ 140 AO](https://www.gesetze-im-internet.de/ao_1977/__140.html)).",
+    "source_quote_ids": [
+      "FR.books",
+      "FR.otherbooks"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 80,
+    "LF_start": 134,
+    "LF_end": 134,
+    "section": "The taxable base",
+    "wording": "- **Year end.** Regularly recurring receipts and payments made a short time before or after the year end count in the year they belong to (§ 11 EStG).",
+    "source_quote_ids": [
+      "FR.cashdates"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 81,
+    "LF_start": 135,
+    "LF_end": 135,
+    "section": "The taxable base",
+    "wording": "- **Not pure cash** ([§ 4(3) EStG](https://www.gesetze-im-internet.de/estg/__4.html)). Depreciation and the low-value asset rules apply. Fixed assets that do not wear out, shares, securities, and land and buildings held as current assets count only when sold or withdrawn, and go into a running register. Money collected and paid out in another's name and for their account is left out.",
+    "source_quote_ids": [
+      "FR.cashprofit"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 82,
+    "LF_start": 136,
+    "LF_end": 136,
+    "section": "The taxable base",
+    "wording": "- **Paper EÜR only in hardship cases** (EÜR instructions 2026).",
+    "source_quote_ids": [
+      "FR.EUR-start"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 83,
+    "LF_start": 137,
+    "LF_end": 137,
+    "section": "The taxable base",
+    "wording": "- **Never deductible.** Income tax and other personal taxes ([§ 12 no. 3 EStG](https://www.gesetze-im-internet.de/estg/__12.html)) and trade tax (§ 4(5b) EStG).",
+    "source_quote_ids": [
+      "FR.personal-tax",
+      "GT.not-expense"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 84,
+    "LF_start": 141,
+    "LF_end": 141,
+    "section": "The taxable base",
+    "wording": "- **Both limits must be met**; a turnover exactly at a limit is still inside. The receipt that crosses a limit in the current year is already taxed normally; earlier receipts stay exempt (EÜR instructions, line 12). Opting out binds for at least five calendar years (§ 19(3) UStG).",
+    "source_quote_ids": [
+      "FR.KU",
+      "FR.EUR-KU"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 85,
+    "LF_start": 142,
+    "LF_end": 142,
+    "section": "The taxable base",
+    "wording": "- **Kleinunternehmer.** Receipts go on line 12 at the gross amount received. Its sales are exempt, so input VAT is not deductible ([§ 15(2) no. 1 UStG](https://www.gesetze-im-internet.de/ustg_1980/__15.html)): every cost counts gross.",
+    "source_quote_ids": [
+      "FR.EUR-KU",
+      "FR.input-exempt"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 86,
+    "LF_start": 143,
+    "LF_end": 143,
+    "section": "The taxable base",
+    "wording": "- **Normal VAT scheme.** VAT collected and VAT refunded are receipts (form lines 17, 18); deductible input VAT and VAT paid to the office are expenses (lines 58, 59), with the ten-day rule of § 11(2) sentence 2 EStG at the year end.",
+    "source_quote_ids": [
+      "FR.EUR-VATreceipts",
+      "FR.VAT-refund",
+      "FR.VAT-in-costs",
+      "FR.VAT-paid",
+      "FR.cashdates"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 87,
+    "LF_start": 144,
+    "LF_end": 144,
+    "section": "The taxable base",
+    "wording": "- **The EUR 800 GWG test** uses cost reduced by the input VAT contained in the price (§ 6(2) EStG: \"vermindert um einen darin enthaltenen Vorsteuerbetrag\"), including where it is not recoverable. Keep eligibility separate from the deductible expense: [§ 9b(1) EStG](https://www.gesetze-im-internet.de/estg/__9b.html) excludes recoverable VAT from acquisition cost; irrecoverable VAT remains in cost. An otherwise eligible self-usable business chair at EUR 952 gross (EUR 800 plus 19% VAT, [§ 12(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html)) meets the EUR 800 test in both cases. A Kleinunternehmer can choose to expense the full EUR 952; a business entitled to full input-VAT credit expenses EUR 800 and claims the EUR 152 VAT separately.",
+    "source_quote_ids": [
+      "FR.GWG",
+      "FR.VAT-costrule",
+      "FR.EUR-GWG",
+      "FR.VAT-standard"
+    ],
+    "classification": "DE-B04 corrected source reading: contained-VAT eligibility test versus recoverability-dependent cost. Own combined-primary interpretation, not an express2010BMF adjudication."
+  },
+  {
+    "row": 88,
+    "LF_start": 148,
+    "LF_end": 148,
+    "section": "The taxable base",
+    "wording": "Business expenses are the costs caused by the business (§ 4(4) EStG); § 4(5) limits some. Home office room costs, gifts and entertainment must be recorded one by one and apart from other expenses, or the deduction is lost (§ 4(7) EStG).",
+    "source_quote_ids": [
+      "FR.businesscost",
+      "FR.cost-records"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 89,
+    "LF_start": 150,
+    "LF_end": 150,
+    "section": "The taxable base",
+    "wording": "- **Home office.** Room is the centre of all work: actual costs or the EUR 1,260 flat amount, less one twelfth per full month it is not. Otherwise no room costs, only the EUR 6 day rate (§ 4(5) no. 6c): for a day worked mainly at home without visiting a first place of work (also on a day away if no other workplace is available for good). One day rate per day, and none so far as room costs are deducted.",
+    "source_quote_ids": [
+      "FR.home-room",
+      "FR.home-day"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 90,
+    "LF_start": 151,
+    "LF_end": 151,
+    "section": "The taxable base",
+    "wording": "- **Commuting** to one's own premises uses the employee allowance rules of § 9 EStG through § 4(5) no. 6: EUR 0.38 from the first kilometre, one way, not for flights. For a business car, the costs above the allowance are added back; list-price method and logbook: `germany-bookkeeping`.",
+    "source_quote_ids": [
+      "FR.commutebridge",
+      "FR.commute"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 91,
+    "LF_start": 152,
+    "LF_end": 152,
+    "section": "The taxable base",
+    "wording": "- **Meals** on business trips (§ 4(5) no. 5 with § 9(4a)): flat amounts only; nothing for eight hours or less; they stop after three months at one place; abroad, the country amounts in the ministry's letter of 5 December 2025, in force from 1 January 2026.",
+    "source_quote_ids": [
+      "FR.mealbridge",
+      "FR.meals",
+      "FR.foreignmeals-date"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 92,
+    "LF_start": 153,
+    "LF_end": 153,
+    "section": "The taxable base",
+    "wording": "- **Business trips** are not commuting: every kilometre counts, at EUR 0.30 or the actual cost share.",
+    "source_quote_ids": [
+      "FR.EUR-car",
+      "FR.car-rate"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 93,
+    "LF_start": 154,
+    "LF_end": 154,
+    "section": "The taxable base",
+    "wording": "- **Flat expense shares** for writers, journalists, side-line teachers and examiners replace all actual expenses of that activity. They rest on a ministry letter of 6 April 2023 (BStBl I S. 671) that the 2026 EÜR instructions cite, not on the statute.",
+    "source_quote_ids": [
+      "FR.EUR-flatcosts"
+    ],
+    "classification": "Actual2026 administrative instruction; underlying6April2023letter not claimed read."
+  },
+  {
+    "row": 94,
+    "LF_start": 158,
+    "LF_end": 158,
+    "section": "The taxable base",
+    "wording": "- **GWG** is tested asset by asset and is a choice. § 6(2a) offers a yearly pool instead (`germany-bookkeeping`). Other assets are depreciated evenly over their useful life, by months in the year bought ([§ 7(1) EStG](https://www.gesetze-im-internet.de/estg/__7.html)), or by the 30% declining balance for movables bought 1 July 2025 to 31 December 2027 (§ 7(2)).",
+    "source_quote_ids": [
+      "FR.GWG",
+      "FR.depreciation"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 95,
+    "LF_start": 159,
+    "LF_end": 159,
+    "section": "The taxable base",
+    "wording": "- **§ 7g investment deduction ([§ 7g EStG](https://www.gesetze-im-internet.de/estg/__7g.html)).** Up to 50% of a planned movable asset's expected cost comes off profit in advance. Test the EUR 200,000 profit limit without both investment deductions and § 7g(2) add-backs; a tested profit of EUR 200,001 fails for that year; the EUR 200,000 cap on open deductions is a different rule with the same number. A deduction may create a loss. Not bought by the end of the third year after: it is undone in the year taken (§ 7g(3)). In the year bought, up to the same share of the real cost is added back (not more than the open deductions) and the cost may be cut by as much (§ 7g(2)). The asset must be let or used only or almost only (at least 90%) in a German establishment until the end of the year after purchase (§ 7g(4)). Special depreciation of up to 40% also needs the profit limit met in the year before purchase (§ 7g(5), (6)).",
+    "source_quote_ids": [
+      "FR.IAB",
+      "FR.EUR-IAB"
+    ],
+    "classification": "DE-B03 corrected tested-profit measure excludes both current deductions and section7g(2)add-backs; threshold and open-deduction cap are separate."
+  },
+  {
+    "row": 96,
+    "LF_start": 163,
+    "LF_end": 163,
+    "section": "The taxable base",
+    "wording": "The order is set by [§ 2 EStG](https://www.gesetze-im-internet.de/estg/__2.html): income of each type (profit for a business; receipts less Werbungskosten for a job, letting and the rest, [§ 9 EStG](https://www.gesetze-im-internet.de/estg/__9.html)) → total income (§ 2(3)) → less losses, special expenses and extraordinary burdens = income (§ 2(4)) → less child allowances = taxable income (§ 2(5)) → tariff, less reductions such as the § 35 credit = tax to be assessed (§ 2(6)) → less prepayments and tax withheld. The tariff works on taxable income, never on turnover or profit. Flat-taxed investment income stays outside (§ 2(5b); `de-capital-gains`).",
+    "source_quote_ids": [
+      "FR.tax-base-order",
+      "FR.balance-payment",
+      "FR.advance"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 97,
+    "LF_start": 167,
+    "LF_end": 167,
+    "section": "The taxable base",
+    "wording": "Private costs: they do not reduce profit. They come off total income and go on Anlage Vorsorgeaufwand ([§ 10 EStG](https://www.gesetze-im-internet.de/estg/__10.html)).",
+    "source_quote_ids": [
+      "FR.health",
+      "FR.pension-cap",
+      "FR.form-insurance"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 98,
+    "LF_start": 169,
+    "LF_end": 169,
+    "section": "The taxable base",
+    "wording": "- **Pension contributions (§ 10(1) no. 2):** statutory insurance, professional schemes with comparable benefits, and a private contract paying only a lifelong monthly annuity not before age 62, with rights not inheritable, transferable, lendable against, saleable or payable as a lump sum. With a job as well, the employer's tax-free share is added before the cap and taken off after.",
+    "source_quote_ids": [
+      "FR.pension-eligibility",
+      "FR.pension-cap"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 99,
+    "LF_start": 170,
+    "LF_end": 170,
+    "section": "The taxable base",
+    "wording": "- **Basic health and care cover is deductible in full**, even above the cap, leaving nothing for other insurance (§ 10(4) sentence 4); for private cover only the statutory-level part counts. Other insurance (no. 3a: unemployment, accident, liability, term life) counts only while the cap has room.",
+    "source_quote_ids": [
+      "FR.health",
+      "FR.pension-cap"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 100,
+    "LF_start": 171,
+    "LF_end": 171,
+    "section": "The taxable base",
+    "wording": "- **Which cap.** Insured through the Künstlersozialkasse (§ 3 no. 57), or with a job and an employer health contribution (no. 62): EUR 1,900. Paying all cover alone with no claim to cover or refunds without own expense: EUR 2,800. Spouses assessed together add their own caps. Contribution rates: `de-social-contributions`.",
+    "source_quote_ids": [
+      "FR.health",
+      "FR.pension-cap"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 101,
+    "LF_start": 175,
+    "LF_end": 175,
+    "section": "The taxable base",
+    "wording": "A loss first offsets other income of the same year; the rest goes back one year, then two, ahead of special expenses (on request carry-back is waived, only as a whole), and then forward without time limit, subject to the 70%/60% rule above EUR 1 million. The office fixes the remaining loss each year end (§ 10d(4)), which triggers a duty to file the next year. Trade tax losses follow § 10a GewStG (`de-trade-tax`).",
+    "source_quote_ids": [
+      "FR.loss",
+      "FR.loss2024",
+      "FR.loss2028",
+      "FR.loss2028-date",
+      "FR.filing-duty"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 102,
+    "LF_start": 179,
+    "LF_end": 179,
+    "section": "The taxable base",
+    "wording": "Income tax is reduced by four times the trade tax base amount (Messbetrag) set for the same year ([§ 35 EStG](https://www.gesetze-im-internet.de/estg/__35.html)). Two caps: only the part of the tariff tax that falls on trade income (positive trade income over all positive income, times the tax), and never more than the trade tax actually payable. No refund or carry-over of an unused credit. A trade income (rounded down to EUR 100) not above EUR 24,500 pays no trade tax, so gets no credit. The base amount is the trade income less the allowance, times the 3.5% Steuermesszahl ([§ 11(1) and (2) GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html)); Example 3 works it through. The data go on Anlage G.",
+    "source_quote_ids": [
+      "GT.credit",
+      "GT.round-allow-rate",
+      "CG.formG"
+    ],
+    "classification": "Own combined-text tariff/credit/Soli route; church credit exclusion separately explicit. No administrative software ruling inferred."
+  },
+  {
+    "row": 103,
+    "LF_start": 183,
+    "LF_end": 183,
+    "section": "Deadlines and filing",
+    "wording": "- **Registration** within one month of starting ([§ 138(4) AO](https://www.gesetze-im-internet.de/ao_1977/__138.html)).",
+    "source_quote_ids": [
+      "GT.notice-month",
+      "GT.activity-notice"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 104,
+    "LF_start": 184,
+    "LF_end": 184,
+    "section": "Deadlines and filing",
+    "wording": "- **Forms**, as named in ELSTER's instructions for the 2025 return, the latest published: main form ESt 1 A; Anlage S (self-employed work) or Anlage G (trade, including the § 35 data); Anlage EÜR with Anlage AVEÜR, one set per business; Anlage Vorsorgeaufwand; Anlage Sonderausgaben (church tax, donations, own training).",
+    "source_quote_ids": [
+      "FR.form-main",
+      "FR.form-S",
+      "CG.formG",
+      "FR.form-insurance",
+      "FR.form-special",
+      "FR.EUR-electronic",
+      "FR.AVEUR"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 105,
+    "LF_start": 185,
+    "LF_end": 185,
+    "section": "Deadlines and filing",
+    "wording": "- **Who must file** ([§ 56 EStDV](https://www.gesetze-im-internet.de/estdv_1955/__56.html)): without wages, if total income exceeds the basic allowance (twice it for a joint assessment); also after a loss notice for the year before, and whenever the office asks (§ 149(1) AO).",
+    "source_quote_ids": [
+      "FR.filing-duty",
+      "AO149.general"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 106,
+    "LF_start": 186,
+    "LF_end": 186,
+    "section": "Deadlines and filing",
+    "wording": "- **Electronic filing is a duty** with business income ([§ 25(4) EStG](https://www.gesetze-im-internet.de/estg/__25.html)), except in the employee cases of § 46(2) nos. 2 to 8; the office can waive it for hardship.",
+    "source_quote_ids": [
+      "FR.e-file"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 107,
+    "LF_start": 187,
+    "LF_end": 187,
+    "section": "Deadlines and filing",
+    "wording": "- **Side income next to a job** ([§ 46 EStG](https://www.gesetze-im-internet.de/estg/__46.html)): an employee must be assessed if income without wage tax is more than EUR 410; if such income is not more than EUR 410 in total it is taken off again. Neither helps someone without wages.",
+    "source_quote_ids": [
+      "FR.employee-side",
+      "FR.employee-410-relief"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 108,
+    "LF_start": 191,
+    "LF_end": 191,
+    "section": "Deadlines and filing",
+    "wording": "| Without an adviser: seven months after the year | 31 July 2027 is a Saturday, so Monday 2 August 2027 | Friday 31 July 2026: passed, file now | [§ 149(2) AO](https://www.gesetze-im-internet.de/ao_1977/__149.html), [§ 108(3) AO](https://www.gesetze-im-internet.de/ao_1977/__108.html) |",
+    "source_quote_ids": [
+      "AO149.general",
+      "AO108.weekend"
+    ],
+    "classification": "Derived amount/date from cited provisions; independently recomputed in supplementary controls."
+  },
+  {
+    "row": 109,
+    "LF_start": 192,
+    "LF_end": 192,
+    "section": "Deadlines and filing",
+    "wording": "| With a Steuerberater: last day of February of the second following year | Tuesday 29 February 2028 | 28 February 2027 is a Sunday, so Monday 1 March 2027 | § 149(3) AO |",
+    "source_quote_ids": [
+      "AO149.adviser",
+      "AO108.weekend"
+    ],
+    "classification": "Derived amount/date from cited provisions; independently recomputed in supplementary controls."
+  },
+  {
+    "row": 110,
+    "LF_start": 193,
+    "LF_end": 193,
+    "section": "Deadlines and filing",
+    "wording": "| Late-filing surcharge becomes compulsory: not filed within 14 months of the year end | After 29 February 2028 | After February 2027; an advised return filed by Monday 1 March 2027 is on time | [§ 152(2) no. 1 AO](https://www.gesetze-im-internet.de/ao_1977/__152.html) |",
+    "source_quote_ids": [
+      "GT.late-mandatory",
+      "AO108.weekend"
+    ],
+    "classification": "Derived amount/date from cited provisions; independently recomputed in supplementary controls."
+  },
+  {
+    "row": 111,
+    "LF_start": 195,
+    "LF_end": 195,
+    "section": "Deadlines and filing",
+    "wording": "- **Called in early.** The office may call in a return early with four months' notice (§ 149(4) AO), for example after a late return or a business start or close.",
+    "source_quote_ids": [
+      "AO149.callin"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 112,
+    "LF_start": 196,
+    "LF_end": 196,
+    "section": "Deadlines and filing",
+    "wording": "- **Extension** ([§ 109 AO](https://www.gesetze-im-internet.de/ao_1977/__109.html)): possible; for an advised return beyond February only if prevented through no fault of one's own.",
+    "source_quote_ids": [
+      "FR.extension"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 113,
+    "LF_start": 197,
+    "LF_end": 197,
+    "section": "Deadlines and filing",
+    "wording": "- **Pandemic extensions** ended with tax year 2024 ([Art. 97 § 36 EGAO](https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html)); they do not apply to 2025 or 2026.",
+    "source_quote_ids": [
+      "CG.corona-scope"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 114,
+    "LF_start": 198,
+    "LF_end": 198,
+    "section": "Deadlines and filing",
+    "wording": "- **Prepayments (§ 37 EStG).** Due 10 March, 10 June, 10 September and 10 December (§ 37(1)); both minimums must be met. Set by notice, as a rule from the last assessment's tax less tax withheld. The office can adjust them until the end of the 15th calendar month after the year (§ 37(3)); a rise after the year end is added to the last prepayment and due one month after the notice (§ 37(4)). In the first year the office uses the tax it expects, so the profit estimate given at registration matters (`de-estimated-tax`). Example: last assessment EUR 10,548, nothing withheld: EUR 2,637 on each date.",
+    "source_quote_ids": [
+      "FR.advance"
+    ],
+    "classification": "Derived amount/date from cited provisions; independently recomputed in supplementary controls."
+  },
+  {
+    "row": 115,
+    "LF_start": 199,
+    "LF_end": 199,
+    "section": "Deadlines and filing",
+    "wording": "- **Paying the balance.** Due within one month of the notice; the part matching overdue prepayments at once (§ 36(4) EStG).",
+    "source_quote_ids": [
+      "FR.balance-payment"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 116,
+    "LF_start": 205,
+    "LF_end": 205,
+    "section": "Penalties and interest",
+    "wording": "| Late-filing surcharge per started month, on assessed tax less prepayments and tax withheld | 0.25% | [§ 152(5) AO](https://www.gesetze-im-internet.de/ao_1977/__152.html) |",
+    "source_quote_ids": [
+      "AO152.surcharge"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 117,
+    "LF_start": 206,
+    "LF_end": 206,
+    "section": "Penalties and interest",
+    "wording": "| Minimum per started month for a yearly return | EUR 25 | § 152(5) sentence 2 |",
+    "source_quote_ids": [
+      "AO152.surcharge"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 118,
+    "LF_start": 207,
+    "LF_end": 207,
+    "section": "Penalties and interest",
+    "wording": "| Highest surcharge per return | EUR 25,000 | § 152(10) |",
+    "source_quote_ids": [
+      "GT.late-max"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 119,
+    "LF_start": 208,
+    "LF_end": 208,
+    "section": "Penalties and interest",
+    "wording": "| Interest on a balance or refund, per full month (1.8% a year) | 0.15% | [§ 238(1a) AO](https://www.gesetze-im-internet.de/ao_1977/__238.html) |",
+    "source_quote_ids": [
+      "AO238.rate"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 120,
+    "LF_start": 210,
+    "LF_end": 210,
+    "section": "Penalties and interest",
+    "wording": "- **May or must.** The surcharge may be set for any late return unless the delay is excusable (§ 152(1)). It is compulsory after 14 months (or when a return called in early misses its date, § 152(2) no. 3), unless the deadline was extended, the tax is nil or below, or the tax is not above prepayments plus tax withheld (§ 152(3)); it then stays possible at discretion.",
+    "source_quote_ids": [
+      "GT.latesurcharge",
+      "GT.late-mandatory"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 121,
+    "LF_start": 211,
+    "LF_end": 211,
+    "section": "Penalties and interest",
+    "wording": "- **Example.** A 2026 return without an adviser filed three months and five days after Monday 2 August 2027, balance EUR 2,000: 0.25% x 2,000 = EUR 5 a month, below the EUR 25 minimum, so 4 started months x EUR 25 = EUR 100, if the office sets one.",
+    "source_quote_ids": [
+      "AO152.surcharge"
+    ],
+    "classification": "Derived amount/date from cited provisions; independently recomputed in supplementary controls."
+  },
+  {
+    "row": 122,
+    "LF_start": 212,
+    "LF_end": 212,
+    "section": "Penalties and interest",
+    "wording": "- **Interest** starts 15 months after the end of the tax year and runs until the assessment takes effect ([§ 233a(2) AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html)); only full months count.",
+    "source_quote_ids": [
+      "AO233a.interest",
+      "AO238.rounding"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 123,
+    "LF_start": 213,
+    "LF_end": 213,
+    "section": "Penalties and interest",
+    "wording": "- **Late payment** of a balance or a prepayment carries the late payment surcharge for each started month ([§ 240 AO](https://www.gesetze-im-internet.de/ao_1977/__240.html)).",
+    "source_quote_ids": [
+      "AO240.surcharge"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 124,
+    "LF_start": 217,
+    "LF_end": 217,
+    "section": "Cross-border points",
+    "wording": "- This skill assumes full German residence for the whole year. A move to or from Germany in the year: `de-partners-and-part-year`. Non-residents with German freelance income: `de-non-resident-tax`. Treaty withholding: `de-treaty-withholding-rates`. Leaving with large holdings: `leaving-germany-exit-tax`.",
+    "source_quote_ids": [
+      "CG.resident",
+      "FR.full-year-partners"
+    ],
+    "classification": "Bounded companion/referral route; not a complete specialist method."
+  },
+  {
+    "row": 125,
+    "LF_start": 218,
+    "LF_end": 218,
+    "section": "Cross-border points",
+    "wording": "- Splitting needs both spouses fully liable to German tax (§ 26 EStG).",
+    "source_quote_ids": [
+      "FR.spouse"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 126,
+    "LF_start": 219,
+    "LF_end": 219,
+    "section": "Cross-border points",
+    "wording": "- § 7g needs the asset used in a domestic establishment (§ 7g(4)).",
+    "source_quote_ids": [
+      "FR.IAB"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 127,
+    "LF_start": 220,
+    "LF_end": 220,
+    "section": "Cross-border points",
+    "wording": "- Meals abroad use the country amounts of the BMF letter of 5 December 2025, not the German flat rates.",
+    "source_quote_ids": [
+      "FR.foreignmeals-date",
+      "FR.foreignmeals-Austria"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 128,
+    "LF_start": 221,
+    "LF_end": 221,
+    "section": "Cross-border points",
+    "wording": "- Foreign income exempt under a treaty can still raise the rate through § 32b (progression clause): refer.",
+    "source_quote_ids": [
+      "FR.prog-treaty",
+      "FR.prog-exceptions",
+      "FR.prog-rate"
+    ],
+    "classification": "Operative rule with exact original-language quotations; source read date and selected scope recorded."
+  },
+  {
+    "row": 129,
+    "LF_start": 222,
+    "LF_end": 222,
+    "section": "Cross-border points",
+    "wording": "- Selling to EU clients changes the VAT treatment, not the income tax: `germany-vat-return`.",
+    "source_quote_ids": [],
+    "classification": "Bounded companion/referral route; not a complete specialist method."
+  },
+  {
+    "row": 130,
+    "LF_start": 226,
+    "LF_end": 249,
+    "section": "Worked examples",
+    "wording": "**Example 1: translator (Freiberufler), zone 3, home office day rate.** A single translator, EÜR, Kleinunternehmer not used. Receipts EUR 72,000; other business expenses EUR 12,000; 150 days worked mainly at home, no centre-of-work room, so 150 x EUR 6 = EUR 900 day rates (under the EUR 1,260 cap). Profit EUR 59,100. Special expenses (pension and health) EUR 9,100, so taxable income EUR 50,000. Zone 3: z = (50,000 - 17,799) / 10,000 = 3.2201; tax = (173.10 x 3.2201 + 2,397) x 3.2201 + 1,034.87 = 10,548.33, rounded down to EUR 10,548. Below EUR 20,350: no surcharge. Church tax at 9%: EUR 949.32.\n\n```oa-check\nname: DE 2026 translator, zone 3, home office day rate\ninputs:\n  receipts: 72000\n  other_expenses: 12000\n  home_days: 150\n  special_expenses: 9100\nsteps:\n  - day_rates: min(home_days * 6, 1260)\n  - profit: receipts - other_expenses - day_rates\n  - taxable: floor(profit - special_expenses)\n  - z: (taxable - 17799) / 10000\n  - tax: floor((173.10 * z + 2397) * z + 1034.87)\n  - soli: 0\n  - church: tax * 0.09\nexpected:\n  day_rates: 900\n  profit: 59100\n  taxable: 50000\n  tax: 10548\n  church: 949.32\n```",
+    "source_quote_ids": [
+      "FR.tariff",
+      "FR.home-day",
+      "FR.soli-limit",
+      "GT.church-admin"
+    ],
+    "classification": "Original oa1, stipulated receipts/costs/days/special expenses and church9%; all amounts computed."
+  },
+  {
+    "row": 131,
+    "LF_start": 251,
+    "LF_end": 275,
+    "section": "Worked examples",
+    "wording": "**Example 2: consultant with an Investitionsabzugsbetrag, surcharge sliding zone.** A single IT consultant plans to buy equipment costing EUR 20,000 next year. Profit before the deduction EUR 100,000, within the EUR 200,000 limit, so 50% x 20,000 = EUR 10,000 comes off: profit EUR 90,000. Special expenses EUR 9,700: taxable income EUR 80,300, zone 4. Tax 0.42 x 80,300 - 11,135.63 = 22,590.37, so EUR 22,590. Surcharge: 5.5% x 22,590 = EUR 1,242.45; cap 11.9% x (22,590 - 20,350) = EUR 266.56; the lower, EUR 266.56, applies. If the equipment is not bought by the end of the third year, the EUR 10,000 is undone in 2026 and interest follows.\n\n```oa-check\nname: DE 2026 consultant, § 7g deduction and surcharge sliding zone\ninputs:\n  profit_before: 100000\n  planned_cost: 20000\n  special_expenses: 9700\nsteps:\n  - iab: planned_cost * 0.5\n  - profit: profit_before - iab\n  - taxable: floor(profit - special_expenses)\n  - tax: floor(0.42 * taxable - 11135.63)\n  - soli_full: tax * 0.055\n  - soli_cap: (tax - 20350) * 0.119\n  - soli: min(soli_full, soli_cap)\nexpected:\n  iab: 10000\n  profit: 90000\n  taxable: 80300\n  tax: 22590\n  soli_full: 1242.45\n  soli_cap: 266.56\n  soli: 266.56\n```",
+    "source_quote_ids": [
+      "FR.IAB",
+      "FR.EUR-IAB",
+      "FR.tariff",
+      "FR.soli-formula",
+      "FR.soli-limit"
+    ],
+    "classification": "Original oa2, stipulated eligible business/asset;10k deduction/90k profit/80300 taxable/22590 tax/266.56 Soli computed."
+  },
+  {
+    "row": 132,
+    "LF_start": 277,
+    "LF_end": 303,
+    "section": "Worked examples",
+    "wording": "**Example 3: sole trader with the § 35 credit, Hebesatz 400%.** A single online retailer (trade, § 15 EStG). Trade profit EUR 110,000, his only income; special expenses EUR 10,000, so taxable income EUR 100,000, zone 4. Tariff tax 0.42 x 100,000 - 11,135.63 = 30,864.37, so EUR 30,864. Trade tax: trade income EUR 110,000 (already a multiple of EUR 100) less the EUR 24,500 allowance = EUR 85,500; base amount 85,500 x 3.5% = EUR 2,992.50 ([§ 11 GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html)); at a 400% Hebesatz the municipality charges EUR 11,970. Credit: 4 x 2,992.50 = EUR 11,970. First cap: all his income is trade income, so the share of tariff tax on it is the full EUR 30,864. Second cap: trade tax payable EUR 11,970. The credit is EUR 11,970 ([§ 35(1) EStG](https://www.gesetze-im-internet.de/estg/__35.html)). Income tax EUR 18,894, below EUR 20,350, so no surcharge. Church tax at 9% is worked out on the tax before the § 35 credit ([§ 51a(2) EStG](https://www.gesetze-im-internet.de/estg/__51a.html)): 9% x 30,864 = EUR 2,777.76. Total income tax plus trade tax EUR 30,864: at a 400% Hebesatz 4 x the base amount equals the trade tax, so the credit absorbs it in full; above 400% the credit stops at 4 x the base amount and the rest of the trade tax is a real cost.\n\n```oa-check\nname: DE 2026 sole trader, § 35 trade tax credit at Hebesatz 400%\ninputs:\n  trade_profit: 110000\n  special_expenses: 10000\n  hebesatz_pct: 400\nsteps:\n  - taxable: floor(trade_profit - special_expenses)\n  - tariff_tax: floor(0.42 * taxable - 11135.63)\n  - trade_income: floor(trade_profit / 100) * 100\n  - messbetrag: max(0, trade_income - 24500) * 0.035\n  - trade_tax: messbetrag * hebesatz_pct / 100\n  - cap_share: tariff_tax * trade_profit / trade_profit\n  - credit: min(4 * messbetrag, cap_share, trade_tax)\n  - income_tax: tariff_tax - credit\n  - church: tariff_tax * 0.09\nexpected:\n  taxable: 100000\n  tariff_tax: 30864\n  messbetrag: 2992.5\n  trade_tax: 11970\n  credit: 11970\n  income_tax: 18894\n  church: 2777.76\n```",
+    "source_quote_ids": [
+      "FR.tariff",
+      "GT.round-allow-rate",
+      "GT.credit",
+      "GT.church-credit",
+      "GT.soli-assessment",
+      "FR.soli-limit"
+    ],
+    "classification": "Original oa3, stipulated profit/400% multiplier/sole positive income; trade tax, credit, netincome tax, church and Soli computed."
+  },
+  {
+    "row": 133,
+    "LF_start": 305,
+    "LF_end": 305,
+    "section": "Worked examples",
+    "wording": "A married couple with the same EUR 100,000 joint taxable income under splitting pays twice the tax on EUR 50,000: 2 x 10,548 = EUR 21,096, against EUR 30,864 for one single person; their EUR 40,700 surcharge limit is not exceeded.",
+    "source_quote_ids": [
+      "FR.tariff",
+      "FR.splitting",
+      "FR.soli-limit"
+    ],
+    "classification": "Derived amount/date from cited provisions; independently recomputed in supplementary controls."
+  },
+  {
+    "row": 134,
+    "LF_start": 309,
+    "LF_end": 314,
+    "section": "Ask the client first",
+    "wording": "- What exactly do you do, and on what qualification? Is a trade registered?\n- EÜR or books? Any notice from the tax office to keep books?\n- Turnover in 2025 and expected for 2026? Small-business VAT rule (§ 19 UStG) used, or opted out?\n- Other income this year: job, pension, rent, investments? Married or registered partner, wanting joint assessment? Children?\n- Church member, and which federal state? Health and pension cover: statutory, private, professional scheme, Künstlersozialkasse?\n- Prepayments set? A loss carried from earlier years? Is the 2025 return filed, and does a Steuerberater prepare your returns?",
+    "source_quote_ids": [
+      "GT.professions",
+      "FR.books",
+      "FR.KU",
+      "FR.spouse",
+      "FR.health",
+      "FR.advance",
+      "FR.loss"
+    ],
+    "classification": "Intake facts for these methods, not independent new figures."
+  },
+  {
+    "row": 135,
+    "LF_start": 336,
+    "LF_end": 336,
+    "section": "Sources",
+    "wording": "Not yet confirmed: the 2026 ELSTER form names (taken from the 2025 instructions); church tax rates and rounding per state (8% or 9% from the 2025 federal booklet, state laws not read); the ministry letter of 6 April 2023 itself (its 30%/EUR 3,600 and 25%/EUR 900 figures are taken from the 2026 EÜR instructions, line 24).",
+    "source_quote_ids": [
+      "FR.form-main",
+      "GT.church-admin",
+      "FR.EUR-flatcosts"
+    ],
+    "classification": "Retains explicit state church-law and2026form-name limitations; federal booklet gives8/9%, not a universal client state-rate ruling."
+  }
+]

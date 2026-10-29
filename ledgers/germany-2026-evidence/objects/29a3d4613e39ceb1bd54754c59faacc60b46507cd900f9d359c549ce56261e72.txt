@@ -1,0 +1,1341 @@
+Bundesministerium der Finanzen, 11016 Berlin
+                                                                       Wilhelmstraße 97
+Nur per E-Mail                                                         10117 Berlin
+                                                                       Tel. +49 30 18 682-0
+Oberste Finanzbehörden
+                                                                       poststelle@bmf.bund.de
+der Länder
+                                                                       www.bundesfinanzministerium.de
+                                                                       21. Mai 2025
+
+
+
+
+Anwendungsschreiben zur Sonderabschreibung für die Anschaffung oder Herstellung neuer
+Mietwohnungen nach § 7b Einkommensteuergesetz
+BMF-Schreiben vom 7. Juli 2020 (BStBl I S. 623), vom 21. September 2021 (BStBl I S. 1805) und
+vom 29. Mai 2024 (BStBl I S. 907)
+Anlagen: 2
+GZ: IV C 3 - S 2197/00009/011/024
+DOK: COO.7005.100.2.12031180
+Seite 1 von 35
+(bei Antwort bitte GZ und DOK angeben)
+
+
+
+
+Dieses BMF-Schreiben regelt die Anwendung der Sonderabschreibung für die Anschaffung oder
+Herstellung neuer Mietwohnungen nach § 7b des Einkommensteuergesetzes (EStG). Mit Artikel 1
+Nummer 2 des Gesetzes zur steuerlichen Förderung des Mietwohnungsneubaus vom
+4. August 2019 (BGBl. I S. 1122) wurde mit § 7b EStG eine neue Sonderabschreibung für die
+Anschaffung oder Herstellung neuer Mietwohnungen eingeführt. Mit Artikel 1 Nummer 27
+Buchstabe e des Gesetzes zur weiteren steuerlichen Förderung der Elektromobilität und zur
+Änderung weiterer steuerlicher Vorschriften vom 12. Dezember 2019 (BGBl. I S. 2451) wurden
+der Anwendungsbereich des § 7b EStG auf den Veranlagungszeitraum 2018 erweitert (§ 52
+Absatz 15a Satz 1 EStG) und der Abzug als Werbungskosten ermöglicht (§ 9 Absatz 1 Satz 3 Num-
+mer 7 EStG). Mit Artikel 4 Nummer 2 des Jahressteuergesetzes 2022 vom 20. Dezember 2022
+(BGBl. I S. 2294) wurde die Sonderabschreibung nach § 7b EStG in modifizierter Form wieder
+ermöglicht. Mit Artikel 1 Nummer 3 des Gesetzes zur Stärkung von Wachstumschancen, Investi-
+tionen und Innovationen sowie Steuervereinfachung und Steuerfairness vom 27. März 2024
+(BGBl. I Nr. 108) wurde der zeitliche Anwendungsbereich der Sonderabschreibung verlängert
+und die maßgeblichen Kostenbezugsgrößen (Baukostenobergrenze und maximale Bemessungs-
+grundlage) aufgrund der veränderten Realitäten im Bausektor angehoben.
+Seite 2 von 35
+
+
+
+Anwendungsregelung
+Das Schreiben ist ab dem Zeitpunkt seiner Bekanntgabe im Bundessteuerblatt in allen offenen
+Fällen anzuwenden.
+Es ersetzt
+    – das BMF-Schreiben vom 7. Juli 2020 (BStBl I S. 623),
+    – das BMF-Schreiben vom 21. September 2021 (BStBl I S. 1805) und
+    – das BMF-Schreiben vom 29. Mai 2024 (BStBl I S. 907).
+
+Abkürzungen
+In diesem Schreiben werden die folgenden Abkürzungen verwendet:
+
+ABl = Amtsblatt der Europäischen Union
+AfA = Absetzung für Abnutzung
+AO = Abgabenordnung
+BewG = Bewertungsgesetz
+BGBl. = Bundesgesetzblatt
+BMF = Bundesministerium der Finanzen
+BStBl = Bundessteuerblatt
+BFH = Bundesfinanzhof
+DAWI = Dienstleistungen von allgemeinem wirtschaftlichem Interesse
+DBA = Doppelbesteuerungsabkommen
+EStG = Einkommensteuergesetz
+EStH = Einkommensteuer-Hinweise
+EStR = Einkommensteuer-Richtlinien
+EUAHiG = EU-Amtshilfegesetz
+HGB = Handelsgesetzbuch
+KStG = Körperschaftsteuergesetz
+Rn. = Randnummer
+TIEA = Tax Information Exchange Agreement
+WoFIV = Wohnflächenverordnung
+Seite 3 von 35
+
+                                    Inhaltsverzeichnis
+
+ Inhalt                                                                            Randnummer
+ I.   Einkommensteuerrechtliche Voraussetzungen der Inanspruchnahme der
+      Sonderabschreibung nach § 7b EStG                                            1 - 82
+ 1.   Anspruchsvoraussetzungen                                                     1-5
+      1.1 Persönliche Voraussetzungen                                              1-2
+      1.2 Sachliche Voraussetzungen                                                3-5
+ 2.   Fördergebiet                                                                 6-7
+ 3.   Förderzeitraum                                                               8 - 17
+      3.1 Zeitpunkt des Bauantrags/der Bauanzeige                                  8 - 15
+      3.2 Begrenzung des Förderzeitraums                                           16 - 17
+ 4.   Förderobjekt                                                                 18 - 30
+      4.1 Nachhaltigkeitserfordernisse des Gebäudes                                19
+      4.2 Wohnung i. S. d. § 7b EStG                                               20 - 24
+      4.3 Neue Wohnung i. S. d. § 7b EStG                                          25 - 30
+ 5.   Nutzungsvoraussetzung                                                        31 - 37
+      5.1 Entgeltliche Überlassung zu fremden Wohnzwecken                          32 - 33
+      5.2 Wohnzwecke                                                               34 - 37
+ 6.   Abschreibungsfähige Anschaffungs- oder Herstellungskosten                    38 - 47
+ 7.   Baukostenobergrenze                                                          48 - 52
+ 8.   Bemessungsgrundlage                                                          53 - 60
+      8.1 Ermittlung der förderfähigen Anschaffungs- oder Herstellungskosten       53 - 57
+      8.2 Ermittlung der Bemessungsgrundlage                                       58 - 60
+ 9.   Begünstigungszeitraum, Höhe der Sonderabschreibung nach § 7b EStG und der
+                                                                                   61 - 67
+      AfA
+      9.1 Begünstigungszeitraum                                                    61
+     9.2 Höhe der Sonderabschreibung nach § 7b EStG                                62 - 64
+     9.3 Höhe der AfA                                                              65 - 66
+     9.4 Kumulierung mit anderen Sonderabschreibungen/erhöhten Absetzungen         67
+ 10. Einhaltung der Nutzungsvoraussetzung                                          68 - 71
+ 11. Rückgängigmachung der Sonderabschreibung nach § 7b EStG                       72 - 79
+     11.1 Veräußerung innerhalb des Nutzungszeitraums                              73 - 76
+     11.2 Überschreiten der Baukostenobergrenze bei nachträglichen Anschaffungs-
+                                                                                   77 - 79
+          oder Herstellungskosten
+ 12. Anwendung weiterer Vorschriften des EStG                                      80 - 82
+ II. Beihilferechtliche Voraussetzungen der Inanspruchnahme der
+     Sonderabschreibung nach § 7b EStG                                             83 - 116
+Seite 4 von 35
+
+ 1.   Anwendung der De-minimis-Verordnung                                    83
+ 2.   Beihilfehöchstbeträge                                                  84 - 86
+ 3.   Erklärung zu anderen De-minimis-Beihilfen                              87 - 93
+ 4.   Ermittlung des Beihilfewerts der Sonderabschreibung nach § 7b EStG     94 - 106
+      4.1 Grundsatz: Ermittlung des relevanten wirtschaftlichen Vorteils     96 - 100
+      4.2 Ermittlung des relevanten wirtschaftlichen Vorteils bei
+           Mitunternehmerschaften oder Gemeinschaften                        101 - 104
+      4.3   Ermittlung des relevanten wirtschaftlichen Vorteils bei
+            gesonderten Feststellungen                                       105 - 106
+ 5.   Prüfung der Beihilfehöchstbeträge                                      107 - 124
+      5.1 Grundsatz                                                          107 - 111
+      5.2 Prüfung bei Mitunternehmerschaften oder Gemeinschaften             112
+      5.3 Überschreiten der Beihilfehöchstbeträge                            113 - 115
+ 6. Bescheinigung des Beihilfewerts der Sonderabschreibung nach § 7b EStG    116
+ III. Prüfungserfordernisse für die Inanspruchnahme der Sonderabschreibung
+      nach § 7b EStG                                                         117 - 118
+      Schlussbestimmung
+    Seite 5 von 35
+
+    Nach Erörterung mit den obersten Finanzbehörden der Länder gilt Folgendes:
+
+
+    I.     Einkommensteuerrechtliche Voraussetzungen der Inanspruchnahme der Son-
+           derabschreibung nach § 7b EStG
+    1.     Anspruchsvoraussetzungen
+    1.1    Persönliche Voraussetzungen
+1   Zur Inanspruchnahme der Sonderabschreibung nach § 7b EStG sind alle beschränkt und unbe-
+    schränkt Steuerpflichtigen i. S. d. EStG und des KStG berechtigt, die auch die beihilferechtlichen
+    Voraussetzungen erfüllen (vgl. II. Beihilferechtliche Voraussetzungen der Inanspruchnahme der
+    Sonderabschreibung nach § 7b EStG).
+
+2   Bei Mitunternehmerschaften oder Gemeinschaften ist nach § 7a Absatz 7 Satz 1 EStG der ein-
+    zelne Beteiligte anspruchsberechtigt. Das Wahlrecht zur Inanspruchnahme der Sonderabschrei-
+    bung nach § 7b EStG darf sowohl dem Grunde als auch der Höhe nach nur einheitlich ausgeübt
+    werden (§ 7a Absatz 7 Satz 2 EStG).
+
+    1.2      Sachliche Voraussetzungen
+3   Die Sonderabschreibung nach § 7b EStG kann in Anspruch genommen werden für eine neue
+    Mietwohnung (vgl. 4. Förderobjekt), die im entsprechenden Förderzeitraum (vgl. 3. Förderzeit-
+    raum) angeschafft oder hergestellt wird - unter Erfüllung der Nutzungsvoraussetzung
+    (vgl. 5. Nutzungsvoraussetzung) und Einhaltung der Baukostenobergrenze (vgl. 7. Baukosten-
+    obergrenze).
+
+4   Beschränkt Steuerpflichtige, die im Inland eine neue Mietwohnung herstellen oder anschaffen
+    und mit den aus deren entgeltlichen Überlassung erzielten Einkünften im Inland steuerpflichtig
+    sind, können die Sonderabschreibung nach § 7b EStG bei Vorliegen der übrigen Voraussetzungen
+    in Anspruch nehmen.
+
+5   Wird eine neue Mietwohnung bis zum Ende des Jahres der Fertigstellung angeschafft, kann die
+    Sonderabschreibung nach § 7b EStG nur vom Erwerber in Anspruch genommen werden (§ 7b
+    Absatz 1 Satz 3 EStG). Veräußert der Erwerber die neue Mietwohnung noch bis zum Ende des
+    Jahres der Fertigstellung weiter, kann nur der Zweit- bzw. Letzterwerber die Sonderabschreibung
+    nach § 7b EStG in Anspruch nehmen.
+     Seite 6 von 35
+
+     2.     Fördergebiet
+6    Die Regelung gilt für jede neue Mietwohnung im Inland.
+
+7    Die Sonderabschreibung nach § 7b EStG findet auch Anwendung, wenn die neue Mietwohnung
+     in einem anderen Mitgliedstaat der Europäischen Union oder einem Staat belegen ist, der auf-
+     grund vertraglicher Verpflichtung Amtshilfe entsprechend dem EUAHiG in einem Umfang leis-
+     tet, der für die Überprüfung der Voraussetzungen dieser Vorschrift erforderlich ist. Soweit es sich
+     um einen Drittstaat handelt, ist anhand der jeweiligen vertraglichen Vereinbarungen mit diesem
+     Staat zu prüfen, ob die entsprechenden Voraussetzungen vorliegen. Anhaltspunkte hierfür erge-
+     ben sich aus der Anlage 1 (Anwendungsbereich des EUAHiG sowie der DBA und der TIEA) zum
+     „Merkblatt zur zwischenstaatlichen Amtshilfe durch Informationsaustausch in Steuersachen“
+     (BMF-Schreiben vom 29. Mai 2019 - BStBl I S. 480). Für die dort unter „A. Staaten mit großem
+     Informationsaustausch“ aufgeführten Staaten ist davon auszugehen, dass die Voraussetzungen
+     erfüllt sind.
+
+     3.     Förderzeitraum
+8    Förderzeitraum ist der Zeitraum, für den die Förderung nach § 7b EStG dem Grunde nach in
+     Betracht kommt.
+
+     3.1     Zeitpunkt des Bauantrags/der Bauanzeige
+9    Die Sonderabschreibung nach § 7b EStG kann nur in Anspruch genommen werden, wenn der
+     Bauantrag oder - sofern eine Baugenehmigung nicht erforderlich ist - die Bauanzeige nach dem
+     31. August 2018 und vor dem 1. Januar 2022 bzw. nach dem 31. Dezember 2022 und vor dem
+     1. Oktober 2029 gestellt bzw. getätigt worden ist. Für Mietwohnungen, die nach den baurechtli-
+     chen Vorschriften ohne Bauantrag bzw. Bauanzeige errichtet werden können, kann hinsichtlich
+     des in Satz 1 genannten Zeitraums auf den Zeitpunkt des Beginns der Bauausführung abgestellt
+     werden.
+
+10   Wurde der Bauantrag oder die Bauanzeige vor dem 1. September 2018 bzw. nach dem
+     31. Dezember 2021 und vor dem 1. Januar 2023 gestellt bzw. getätigt, mit der tatsächlichen Bautä-
+     tigkeit aber erst nach diesen Stichtagen begonnen, ist die Inanspruchnahme der Sonderabschrei-
+     bung nach § 7b EStG nicht zulässig, da die Regelung nicht auf den Beginn der Bautätigkeit, son-
+     dern auf den Zeitpunkt der Bauantragstellung bzw. der Tätigung der Bauanzeige abstellt.
+
+11   Ein Bauantrag bzw. eine Bauanzeige wird mittels des von der nach Landesrecht zuständigen
+     Behörde veröffentlichten Vordrucks gestellt bzw. getätigt, mit dem die landesrechtlich vorgese-
+     hene Baugenehmigung für die beabsichtigte Herstellung der Mietwohnung angestrebt wird.
+     Seite 7 von 35
+
+12   Für die Bestimmung des Zeitpunkts der Stellung des Bauantrags bzw. der Tätigung der Bauan-
+     zeige ist regelmäßig das Datum des Eingangsstempels der nach Landesrecht zuständigen Behörde
+     maßgebend. Dieses Datum gilt auch dann als entscheidender Zeitpunkt, wenn die Bauplanung
+     nach dem Eingang des Bauantrags bzw. der Bauanzeige geändert wird, ohne dass ein neuer Bau-
+     antrag bzw. eine neue Bauanzeige erforderlich ist.
+
+13   Ist ein Bauantrag abgelehnt bzw. eine angezeigte Bauausführung untersagt worden und die Bau-
+     genehmigung erst aufgrund eines unter neuen Bedingungen gestellten Bauantrags erteilt bzw.
+     der Bau erst aufgrund einer veränderten Bauanzeige begonnen worden, ist der maßgebliche Zeit-
+     punkt des Bauantrags bzw. der Bauanzeige der Eingang des unter neuen Bedingungen gestellten
+     Bauantrags bzw. der neuen Bauanzeige bei der zuständigen Behörde. Dies gilt auch, wenn sich die
+     Bauplanung des Steuerpflichtigen so grundlegend ändert, dass ein neuer Bauantrag gestellt bzw.
+     eine neue Bauanzeige getätigt werden muss. Wird ein Bauantrag bzw. eine Bauanzeige allerdings
+     annulliert und anschließend derselbe Bauantrag bzw. dieselbe Bauanzeige unverändert erneut
+     gestellt bzw. getätigt, bleibt der Zeitpunkt des ursprünglich gestellten Bauantrags bzw. der bishe-
+     rigen Bauanzeige maßgeblich.
+
+14   Im Fall der Anschaffung einer neuen Mietwohnung ist der Zeitpunkt der Stellung des Bauantrags
+     bzw. der Tätigung der Bauanzeige des Steuerpflichtigen, der die Wohnung hergestellt hat, maß-
+     gebend. Nicht entscheidend ist das Datum des Kaufvertrags.
+
+15   Für Mietwohnungen, die entgegen den baurechtlichen Vorschriften ohne Baugenehmigung
+     errichtet wurden, kann die Sonderabschreibung nach § 7b EStG nicht in Anspruch genommen
+     werden.
+
+     3.2    Begrenzung des Förderzeitraums
+16   Die Sonderabschreibung nach § 7b EStG kann nach § 52 Absatz 15a Satz 1 EStG für Baumaßnah-
+     men, deren Bauantrag/Bauanzeige nach dem 31. August 2018 und vor dem 1. Januar 2022 gestellt
+     bzw. getätigt wurde, letztmalig im Veranlagungszeitraum 2026 bzw. in den Fällen des § 4a EStG
+     letztmalig für Wirtschaftsjahre, die vor dem 1. Januar 2027 enden, in Anspruch genommen wer-
+     den. Ab dem Veranlagungszeitraum 2027 bzw. für nach dem 31. Dezember 2026 endende Wirt-
+     schaftsjahre kann die Sonderabschreibung nach § 7b EStG in diesen Fällen auch dann nicht mehr
+     in Anspruch genommen werden, wenn der vorgesehene Begünstigungszeitraum (Rn. 61) noch
+     nicht abgelaufen ist (§ 52 Absatz 15a Satz 2 EStG).
+
+17   Bei der Bestimmung und Einhaltung des Förderzeitraums kommt es - anders als beim Begünsti-
+     gungszeitraum (Rn. 61) - nicht auf den Anschaffungs- oder Herstellungszeitpunkt der begünstig-
+     ten Baumaßnahme an. Das Jahr der Fertigstellung der Baumaßnahme ist damit für die Einhal-
+     Seite 8 von 35
+
+     tung des Förderzeitraums der Sonderabschreibung nach § 7b EStG nicht entscheidend. Die Son-
+     derabschreibung nach § 7b EStG kann auch dann in Anspruch genommen werden, wenn die
+     neue Mietwohnung, für die der Bauantrag gestellt wurde oder die Bauanzeige erfolgt ist, erst
+     nach dem 31. Dezember 2021 bzw. nach dem 30. September 2029 fertiggestellt wird. Der Förder-
+     zeitraum endet jedoch für Baumaßnahmen, deren Bauantrag/Bauanzeige nach dem
+     31. August 2018 und vor dem 1. Januar 2022 gestellt bzw. getätigt wurde, spätestens im Veranla-
+     gungszeitraum 2026 bzw. in dem letzten vor dem 1. Januar 2027 endenden Wirtschaftsjahr. Der
+     Förderzeitraum für die Sonderabschreibung nach § 7b EStG in der Fassung für Bauanträge oder
+     Bauanzeigen nach dem 31. Dezember 2022 wird nicht in dieser Form begrenzt.
+
+     Beispiel 1:
+     Ein Mehrfamilienhaus wird im Jahr 2024 aufgrund eines im Jahr 2021 gestellten Bauantrags fertig-
+     gestellt. Zum 1. Dezember 2024 geht das Eigentum auf einen Erwerber über, der die Wohnungen ab
+     diesem Zeitpunkt vermietet.
+
+     Der Erwerber kann für die Jahre 2024, 2025 und 2026 jährlich bis zu 5 % der förderfähigen Anschaf-
+     fungskosten geltend machen. Das vierte Jahr des Begünstigungszeitraums für die Inanspruchnahme
+     der Sonderabschreibung nach § 7b EStG entfällt aufgrund der Begrenzung des Förderzeitraums auf
+     den Veranlagungszeitraum 2026 (§ 52 Absatz 15a Satz 1 EStG). Die lineare AfA wird im Jahr 2027
+     gegenüber den Vorjahren unverändert berücksichtigt. Erst ab dem 5. Jahr, also nach Ablauf des vier-
+     jährigen Förderzeitraums, dem Jahr 2028, erfolgt die AfA nach § 7a Absatz 9 EStG (vgl. Rn. 66 ff.).
+
+     4.     Förderobjekt
+18   Gegenstand der Sonderabschreibung nach § 7b EStG ist die einzelne neue Mietwohnung ein-
+     schließlich der zu ihr gehörenden Nebenräume (begünstigte Wohnung). Die Sonderabschreibung
+     nach § 7b EStG wird nicht - wie nach den üblichen ertragsteuerrechtlichen Grundsätzen - für die
+     Anschaffung oder Herstellung eines neuen Gebäudes oder selbständigen Gebäudeteils gewährt.
+     So ist bei der linearen AfA nach § 7 Absatz 4 EStG bzw. der degressiven AfA nach § 7 Absatz 5a
+     EStG Gegenstand der AfA das selbständige unbewegliche Wirtschaftsgut Gebäude. Die Vereinfa-
+     chungsregelung zur Herstellung eines anderen Wirtschaftsgutes in R 7.3 Absatz 5 EStR findet für
+     die Sonderabschreibung nach § 7b EStG keine Anwendung. Begünstigt sind neue Mietwohnun-
+     gen in neuen oder vorhandenen Gebäuden und anderen Gebäudeteilen, die selbständige unbe-
+     wegliche Wirtschaftsgüter sind (Gebäude) sowie Eigentumswohnungen und im Teileigentum
+     stehende Räume.
+
+     4.1   Nachhaltigkeitserfordernisse des Gebäudes
+19   Mietwohnungen, deren Bauantrag oder Bauanzeige nach dem 31. Dezember 2022 und vor dem
+     1. Oktober 2029 gestellt bzw. getätigt wurde, müssen sich gemäß § 7b Absatz 2 Satz 1 Nummer 2
+     Seite 9 von 35
+
+     EStG in einem Gebäude befinden, welches die Voraussetzungen eines "Effizienzhaus 40" mit
+     Nachhaltigkeits-Klasse (EH 40 NH) erfüllt. Die Nachhaltigkeits-Klasse muss durch das Qualitäts-
+     siegel Nachhaltiges Gebäude (QNG) nachgewiesen werden. Das QNG wird in zwei Qualitätsni-
+     veaus vergeben (QNG-PLUS und QNG-PREMIUM), die jeweils als Nachweis geeignet sind. Dieses
+     Siegel wird im Wege eines Zertifizierungsverfahrens durch unabhängige für das QNG akkredi-
+     tierte Zertifizierungsstellen entsprechend der Vorgaben des Siegelgebers Bundesministerium für
+     Wohnen, Stadtentwicklung und Bauwesen (BMWSB) vergeben. Voraussetzung für die Vergabe
+     des QNG ist der Nachweis der Erfüllung allgemeiner und besonderer Anforderungen an die öko-
+     logische, soziokulturelle und ökonomische Qualität von Gebäuden. Die Zertifizierung erfolgt
+     nach Baufertigstellung anhand der realisierten Gebäudequalitäten und auf Grundlage eines der
+     jeweiligen QNG-Siegelvariante entsprechenden Zertifizierungsprogramms, das ein bei der Deut-
+     schen Akkreditierungsstelle für das QNG registriertes Bewertungssystem beinhalten muss.
+
+     4.2     Wohnung i. S. d. § 7b EStG
+20   Nach § 7b Absatz 2 Satz 1 Nummer 1 EStG muss die begünstigte Wohnung die bewertungsrecht-
+     lichen Anforderungen des § 181 Absatz 9 BewG erfüllen. Danach ist eine Wohnung in der Regel
+     die Zusammenfassung mehrerer Räume, die in ihrer Gesamtheit so beschaffen sein müssen, dass
+     die Führung eines selbständigen Haushalts möglich ist. Die Zusammenfassung der Räume muss
+     eine von anderen Wohnungen oder Räumen, insbesondere Wohnräumen, baulich getrennte, in
+     sich abgeschlossene Wohneinheit bilden und einen selbständigen Zugang haben. Daneben ist es
+     erforderlich, dass die für die Führung eines selbständigen Haushalts notwendigen Nebenräume
+     (Küche, Bad oder Dusche, Toilette) vorhanden sind. Nach § 181 Absatz 9 Satz 4 BewG soll die
+     Wohnfläche mindestens 20 m² betragen. Außerhalb der Wohnung belegene Räume werden
+     dabei nicht berücksichtigt.
+
+21   Die Sonderabschreibung nach § 7b EStG kann unter dieser Voraussetzung auch dann in
+     Anspruch genommen werden, wenn es sich um eine Wohnung in einem Studentenwohnheim in
+     Gestalt eines Appartementhauses oder um ein abgeschlossenes Appartement in einem Senioren-
+     heim oder einer Unterkunft für betreutes Wohnen handelt. Die Wohnung muss in diesen Fällen
+     aus einem Wohn-Schlafraum mit einer vollständig eingerichteten Küchenkombination oder
+     zumindest einer Kochgelegenheit mit den für eine Kleinkücheneinrichtung üblichen Anschlüs-
+     sen und einem Bad/WC bestehen und soll eine Gesamtwohnfläche von mindestens 20 m² haben
+     (vgl. § 181 Absatz 9 BewG).
+
+22   Abweichend zu den vorgenannten Voraussetzungen kann die Sonderabschreibung nach § 7b
+     EStG auch in Anspruch genommen werden für in sich abgeschlossene Wohneinheiten mit sepa-
+     rat vermieteten Wohnräumen (Teile der Wohneinheit) und einer in die jeweilige Wohneinheit
+     integrierten Gemeinschaftsküche in einem Seniorenheim oder einer Unterkunft für betreutes
+     Seite 10 von 35
+
+     Wohnen. Schuldrechtliche Vereinbarungen über eine teilweise „Untervermietung“ innerhalb
+     einer Wohnung sind für den Wohnungsbegriff unbeachtlich. Die Einstufung als Wohnung i. S. d.
+     § 7b EStG kann in diesen Fällen jedoch nur erfolgen, wenn die einzelnen vermieteten Teile der
+     Wohneinheit aus einem Wohn-Schlafraum und einem Bad/WC bestehen und eine Gesamt-
+     wohnfläche von mindestens 20 m² haben. Zudem müssen die vermieteten Teile der Wohnein-
+     heit der Führung eines selbstständigen Haushalts und nicht primär Pflege- und Betreuungszwe-
+     cken dienen (vgl. § 181 Absatz 9 BewG).
+
+23   Gemäß § 7b Absatz 2 Satz 1 Nummer 1 EStG gehören zu einer Wohnung auch Neben- bzw. Zube-
+     hörräume. Hierbei handelt es sich um Räume, die sich nicht im abgeschlossenen Bereich der
+     Wohnung befinden, aber zu dieser gehören. Dies sind z. B. Keller- oder Abstellräume, gemein-
+     schaftlich genutzte Räume (z. B. Waschküchen, Trocken- und Heizungsräume) im selben
+     Gebäude, Stellplätze in Tiefgaragen sowie die zu einem Gebäude gehörenden Garagen.
+
+24   Garagen, die neben dem Gebäude errichtet werden, gehören dann zu einer Wohnung, wenn
+     Wohnung und Garagen als Bewertungseinheit i. S. d. BewG anzusehen sind.
+
+     4.3    Neue Wohnung i. S. d. § 7b EStG
+25   Die Sonderabschreibung nach § 7b EStG kommt nur in Betracht, wenn eine neue Wohnung
+     geschaffen wird, die bisher nicht vorhanden war.
+
+26   Eine neue Wohnung i. S. d. § 7b EStG kann entstehen durch
+     •   den Neubau von Ein-, Zwei- oder Mehrfamilienhäusern,
+     •   den Aus- oder Umbau von bestehenden Gebäudeflächen (insbesondere Dachgeschossaus-
+         bauten, aber auch Teilung bestehender Wohnflächen) oder
+     •   die Aufstockung oder den Anbau auf oder an einem bestehenden Gebäude (mit Flächener-
+         weiterung).
+     Voraussetzung ist, dass der neu geschaffene Wohnraum die Anforderungen des Wohnungsbe-
+     griffs i. S. d. § 7b EStG erfüllt.
+
+27   Keine neue Wohnung i. S. d. § 7b EStG entsteht hingegen, wenn vorhandener Wohnraum nur
+     modernisiert oder saniert wird, auch wenn dies mit hohen Kosten verbunden ist und sich die
+     Ausstattungsmerkmale der Wohnung dadurch deutlich verbessern. Das gilt auch dann, wenn
+     vorhandener Wohnraum innerhalb des Gebäudes verlegt oder die bestehende Wohnung um
+     Wohnfläche erweitert wird. Dies gilt nicht, wenn vor Durchführung der Sanierung keine den
+     Anforderungen des Wohnungsbegriffs genügende Wohnung vorhanden war. Sind diese Anfor-
+     derungen nach Durchführung der Sanierung erfüllt, ist eine neue Wohnung entstanden.
+     Seite 11 von 35
+
+28   Eine neue Wohnung i. S. d. § 7b EStG kann auch dann entstehen, wenn unter Nutzung bestehen-
+     der Gebäudeflächen neuer Wohnraum geschaffen wird, z. B. im Wege der Umgestaltung von
+     gewerblich genutzten Flächen oder durch den Ausbau eines bisher nicht genutzten Dachge-
+     schosses. Voraussetzung ist, dass der unter Verwendung der Altbausubstanz neu geschaffene
+     Wohnraum erstmals die Anforderungen des Wohnungsbegriffs i. S. d. § 7b EStG erfüllt (vgl. 5.2.
+     Wohnzwecke). Nicht entscheidend ist, dass mit der Wohnung auch ein neues selbständiges
+     „Wirtschaftsgut“ entsteht. Auch wenn die neu geschaffene Wohnung ertragsteuerrechtlich nicht
+     als selbständiges Wirtschaftsgut behandelt wird, sondern in einen bereits bestehenden Nut-
+     zungs- und Funktionszusammenhang (zu fremden Wohnzwecken vermietete Wohnungen) ein-
+     geht, kann abweichend von dieser ertragsteuerrechtlichen Zuordnung eine neue Wohnung i. S. d.
+     § 7b EStG entstehen.
+
+     Beispiel 2:
+     In einem im Jahr 2011 errichteten Gebäude gibt es vier Mietwohnungen in den oberen Etagen. Im
+     Erdgeschoss und in der ersten Etage befinden sich Ladengeschäfte und Büroräume.
+     Die Büroräume werden im Jahr 2024 (Tätigung der Bauanzeige am 1. Februar 2024) zu zwei 80 m²
+     großen Wohnungen umgebaut, die ab dem 1. Dezember 2024 vermietet werden.
+
+     Bei den zwei Wohnungen handelt es sich um neue Wohnungen, für die eine Sonderabschreibung
+     nach § 7b EStG in Anspruch genommen werden kann.
+
+29   Werden durch die Teilung einer Wohnung (unter Verwendung der vorhandenen Altbausub-
+     stanz) mehrere bisher nicht vorhandene, baulich getrennte und in sich abgeschlossene Wohnein-
+     heiten hergestellt, werden damit mehrere neue Wohnungen i. S. d. § 7b EStG geschaffen. Gehö-
+     ren allerdings die Räume, in denen sich vor der Teilung Bad und Küche der alten Wohnung
+     befunden haben, nach der Teilung nur zu einer der neu entstandenen Wohnungen, so sprechen
+     die objektiven Kriterien dafür, dass diese Wohnung nicht neu i. S. d. § 7b EStG, sondern an die
+     Stelle der alten Wohnung getreten ist.
+
+30   Im Fall der Anschaffung einer Wohnung gilt diese Wohnung für den Erwerber nur dann als neu
+     i. S. d. § 7b EStG, wenn sie bis zum Ende des Jahres der Fertigstellung angeschafft wird. Eine Woh-
+     nung ist fertiggestellt, wenn sie entsprechend ihrer Zweckbestimmung genutzt werden kann. Der
+     Zeitpunkt der Anschaffung einer Wohnung ist der Zeitpunkt der Erlangung der wirtschaftlichen
+     Verfügungsmacht. Das ist der Fall, wenn Eigenbesitz, Gefahr, Nutzen und Lasten auf den Erwer-
+     ber übergehen. Für die Inanspruchnahme der Sonderabschreibung nach § 7b EStG müssen also
+     Fertigstellung und Erlangung der wirtschaftlichen Verfügungsmacht in einem Kalenderjahr lie-
+     gen.
+     Seite 12 von 35
+
+     Beispiel 3:
+     Ein Investor lässt in einem neu errichteten Gebäude mehrere Wohnungen herstellen.
+     Das Gebäude und auch die Wohnungen werden am 30. November 2024 (Bauantrag vom
+     10. Mai 2023) fertiggestellt.
+     a) Der Investor begründet durch Teilungserklärung Eigentumswohnungen, welche einzeln
+        veräußert werden.
+     b) Das Gebäude wird als Ganzes veräußert.
+
+     In beiden Fällen können die Erwerber die Sonderabschreibung nach § 7b EStG in Anspruch nehmen,
+     wenn die neuen Wohnungen oder das Gebäude bis zum 31. Dezember 2024 rechtswirksam unter
+     Erlangung der wirtschaftlichen Verfügungsmacht erworben wurden.
+
+     5.      Nutzungsvoraussetzung
+31   Für die Inanspruchnahme der Sonderabschreibung nach § 7b EStG muss die begünstigte Woh-
+     nung der entgeltlichen Überlassung zu fremden Wohnzwecken dienen.
+
+     5.1     Entgeltliche Überlassung zu fremden Wohnzwecken
+32   Wird eine Wohnung selbstgenutzt oder unentgeltlich zu fremden Wohnzwecken überlassen,
+     liegt keine entgeltliche Überlassung zu fremden Wohnzwecken i. S. d. § 7b EStG vor. Ist die Nut-
+     zungsüberlassung gemäß § 21 Absatz 2 Satz 1 EStG in einen entgeltlichen und einen unentgeltli-
+     chen Teil aufzuteilen, so ist auch die Sonderabschreibung nach § 7b EStG im gleichen Verhältnis
+     aufzuteilen und nur in Höhe des auf die entgeltliche Nutzungsüberlassung entfallenden Anteils
+     abzugsfähig.
+
+33   Eine Wohnung dient der entgeltlichen Überlassung zu fremden Wohnzwecken auch dann, wenn
+     sie zwar vorübergehend leer steht, die entgeltliche Überlassung aber (weiterhin) vorgesehen ist
+     und die Wohnung dafür bereitgehalten wird. Im Übrigen vgl. Rn. 24 bis 26 des BMF-Schreibens
+     vom 8. Oktober 2004, BStBl I S. 933 („Einkünfteerzielung bei den Einkünften aus Vermietung und
+     Verpachtung“).
+
+     5.2.   Wohnzwecke
+34   Eine Wohnung dient Wohnzwecken, wenn sie dazu bestimmt und geeignet ist, Menschen auf
+     Dauer Aufenthalt und Unterkunft zu ermöglichen.
+
+35   Eine entgeltlich überlassene Wohnung dient Wohnzwecken i. S. d. § 7b EStG, wenn die entgeltli-
+     che Überlassung unbefristet oder mindestens für einen Zeitraum von einem Jahr mietvertraglich
+     festgelegt ist. Wird eine kürzere Mietdauer vereinbart, kann dies unschädlich sein, wenn ein ent-
+     sprechender Nachweis erbracht wird, dass die Wohnung nicht lediglich der vorübergehenden
+     Seite 13 von 35
+
+     Beherbergung von Personen, sondern der längerfristigen Nutzung zu Wohnzwecken dienen soll
+     (z. B. Vermietung an einen Praktikanten für die Dauer des Praktikums, Vermietung an einen Stu-
+     denten für die Dauer eines Semesters). Eine Untervermietung durch den Mieter ist unschädlich,
+     wenn sie zu Wohnzwecken im vorstehenden Sinne erfolgt.
+     Wird eine Wohnung möbliert vermietet, steht dies dem Begriff „zu Wohnzwecken dienen“ nicht
+     entgegen.
+
+36   Eine Wohnung dient nach § 7b Absatz 2 Satz 1 Nummer 3 2. Halbsatz EStG allerdings nicht
+     Wohnzwecken, soweit sie lediglich zur vorübergehenden Beherbergung von Personen bestimmt
+     ist, insbesondere bei regelmäßig wechselnden Personen wie z. B. in Ferienwohnungen, Hotels
+     und Boardinghouses sowie bei der Vermietung von Serviced Apartments (auch Aparthotels oder
+     Apartment Hotels). Anhaltspunkt für eine nicht Wohnzwecken dienende, vorübergehende
+     Beherbergung kann z. B. die Bereitstellung oder das Angebot von Serviceleistungen, wie z. B.
+     Wäscheservice oder Mahlzeiten, sein.
+
+37   Eine Wohnung dient auch Wohnzwecken, wenn sie aus besonderen betrieblichen Gründen an
+     Betriebsangehörige überlassen wird, z. B. Wohnung für den Hausmeister, für das Fachpersonal
+     oder für Angehörige der Betriebsfeuerwehr. Das häusliche Arbeitszimmer des Mieters ist zur Ver-
+     einfachung den Wohnzwecken dienenden Räumen zuzurechnen. Räume, die sowohl Wohnzwe-
+     cken als auch betrieblichen oder beruflichen Zwecken dienen, sind je nachdem, welchem Zweck
+     sie überwiegend dienen, entweder ganz den Wohnzwecken oder ganz den betrieblichen oder
+     beruflichen Zwecken dienenden Räumen zuzurechnen.
+
+     6.     Abschreibungsfähige Anschaffungs- oder Herstellungskosten
+38   Die abschreibungsfähigen Anschaffungs- oder Herstellungskosten, die im Rahmen der Anschaf-
+     fung oder der Herstellung einer begünstigten Wohnung entstehen und für die Prüfung der Bau-
+     kostenobergrenze (Rn. 48 ff.) und die Ermittlung der Bemessungsgrundlage (Rn. 53 ff.) heranzu-
+     ziehen sind, werden gemäß § 255 HGB und den für die Einkommensbesteuerung maßgebenden
+     Grundsätzen ermittelt.
+
+39   Danach sind Anschaffungskosten eines Gebäudes oder einer Wohnung alle Aufwendungen, die
+     geleistet werden, um ein Gebäude/eine Wohnung zu erwerben und es/sie in einen betriebsberei-
+     ten Zustand zu versetzen, soweit sie dem Gebäude/der Wohnung einzeln zugeordnet werden
+     können, ferner die Nebenkosten und die nachträglichen Anschaffungskosten (vgl. § 255 Absatz 1
+     Satz 1 und 2 HGB).
+
+40   Typische Anschaffungsnebenkosten sind Maklergebühren, Provisionen, Notarkosten, Grund-
+     buchgebühren, Grunderwerbsteuer, Gerichtskosten, Vermessungskosten, Gutachterkosten und
+     Seite 14 von 35
+
+     Erschließungskosten (sofern diese notwendigerweise im Zusammenhang mit der Anschaffung
+     des Grundstücks bzw. des Gebäudes anfallen und die Benutzbarkeit oder den Wert des ange-
+     schafften Grundstücks erhöhen).
+
+41   Nach § 255 Absatz 2 Satz 1 HGB sind Herstellungskosten die Aufwendungen, die durch den Ver-
+     brauch von Gütern und die Inanspruchnahme von Diensten für die Herstellung eines Vermö-
+     gensgegenstandes/Wirtschaftsgutes entstehen. Zu den Herstellungskosten gehören auch
+     anschaffungsnahe Herstellungskosten i. S. d. § 6 Absatz 1 Nummer 1a EStG.
+
+42   Kosten für die Grundstückserschließung, z. B. für Straßen, Versorgungsleitungen und Entsor-
+     gungsanlagen außerhalb des Grundstücks, sind dem Grund und Boden zuzuordnen. Anschlüsse
+     vom Gebäude bis zur Grundstücksgrenze an Versorgungsnetze (Strom, Gas, Wasser, Wärme) sind
+     hingegen dem Gebäude zuzurechnen und gehören zu den abschreibungsfähigen Anschaffungs-
+     oder Herstellungskosten, wenn sie zusammen mit dem Gebäude neu hergestellt werden.
+
+43   Aufwendungen für den Grund und Boden sowie die hierauf entfallenden Anschaffungsneben-
+     kosten sind keine abschreibungsfähigen Aufwendungen und können daher auch nicht für die
+     Sonderabschreibung nach § 7b EStG berücksichtigt werden.
+
+44   Aufwendungen für ein Gebäude, das für Zwecke von Aufstockungen, Aus-, Um-, An- oder Auf-
+     bauten angeschafft wird (vgl. Rn. 26), gehören insoweit zu den abschreibungsfähigen Aufwen-
+     dungen i. S. d. § 7b EStG, als die erworbene Altbausubstanz für die Errichtung der neuen Woh-
+     nung i. S. d. § 7b EStG verwendet wird. Dies gilt entsprechend für einen ggf. vorhandenen Rest-
+     buchwert eines Gebäudes, soweit Aufstockungen, Aus-, Um-, An- oder Aufbauten an einem
+     Gebäude vorgenommen werden, das sich bereits im Eigentum des Steuerpflichtigen befindet.
+
+45   Für die Aufwendungen für Außenanlagen gilt R 21.1 Absatz 3 Satz 1 EStR.
+
+46   Aufwendungen für die Möblierung einer neuen Mietwohnung stellen keine abschreibungsfähi-
+     gen Aufwendungen i. S. d. § 7b EStG dar.
+
+47   Im Fall der Anschaffung sind die Anschaffungskosten zuzüglich der Anschaffungsnebenkosten
+     sowie nachträglich anfallende Anschaffungskosten ggf. mittels einer Kaufpreisaufteilung in einen
+     Grund- und Bodenanteil sowie einen Gebäude- oder Wohnungsanteil aufzuteilen (siehe hierzu
+     auch die Arbeitshilfe und Anleitung des Bundesministeriums der Finanzen zur Aufteilung eines
+     Gesamtkaufpreises für ein bebautes Grundstück (Kaufpreisaufteilung) auf den Internetseiten des
+     Bundesministeriums der Finanzen [www.bundesfinanzministerium.de]).
+     Seite 15 von 35
+
+     7.     Baukostenobergrenze
+48   Nach § 7b Absatz 2 Satz 2 Nummer 1 und 2 EStG ist die Inanspruchnahme der Sonderabschrei-
+     bung nach § 7b EStG nur zulässig, wenn die abschreibungsfähigen Anschaffungs- oder Herstel-
+     lungskosten nicht mehr als 3.000 € je m² Wohnfläche für Wohnungen betragen, die aufgrund
+     eines nach dem 31. August 2018 und vor dem 1. Januar 2022 gestellten Bauantrags oder einer in
+     diesem Zeitraum getätigten Bauanzeige hergestellt werden. Für Wohnungen, die aufgrund eines
+     nach dem 31. Dezember 2022 und vor dem 1. Oktober 2029 gestellten Bauantrags oder einer in
+     diesem Zeitraum getätigten Bauanzeige hergestellt werden, beträgt die Baukostenobergrenze
+     5.200 € je m² Wohnfläche. Fallen höhere abschreibungsfähige Anschaffungs- oder Herstellungs-
+     kosten an, führt dies zum vollständigen Ausschluss der Sonderabschreibung nach § 7b EStG.
+
+49   Für die Prüfung der Baukostenobergrenze müssen die gesamten Anschaffungs- oder Herstel-
+     lungskosten auf die gesamte Fläche, für die diese Kosten aufgewendet wurden, verteilt werden.
+     Die dabei zugrunde zulegende Fläche ist bei der Anschaffung oder Herstellung eines neuen
+     Gebäudes die Nutzfläche des gesamten Gebäudes, bei Aufstockungen, Aus-, Um-, An- oder Auf-
+     bauten die durch die Baumaßnahme insgesamt neu geschaffene Nutzfläche und bei der Anschaf-
+     fung oder Herstellung einer Eigentumswohnung die den Eigentumsrechten entsprechende
+     Nutzfläche des erworbenen Anteils.
+
+50   Die Nutzfläche wird in sinngemäßer Anwendung der Verordnung zur Berechnung der Wohnflä-
+     che (WoFlV) vom 25. November 2003 (BGBl. I S. 2346) in der jeweils geltenden Fassung ermittelt
+     (vgl. R 4.2 Absatz 6 Satz 4 EStR). Bei der Ermittlung der Nutzfläche sind - in Abweichung zu § 2
+     Absatz 3 WoFlV - auch Neben- bzw. Zubehörräume, wie Bodenräume, Waschküchen, Keller-
+     räume, Trockenräume, Speicherräume, Bade- und Brauseräume, Fahrrad- und Kinderwagen-
+     räume usw., soweit sie zur Benutzung durch den einzelnen oder zur gemeinsamen Benutzung
+     durch alle Hausbewohner bestimmt sind, und die zur begünstigten Wohnung gehörenden Gara-
+     gen (vgl. Definition der Wohnung unter 4. Förderobjekt) einzubeziehen.
+
+51   Für Zwecke einer sachgerechten Ermittlung der Baukosten je m² (Wohn)Fläche kann alternativ
+     die Bruttogrundfläche (BGF) des aufgrund der Baumaßnahme entstandenen Gebäudes herange-
+     zogen werden. Die BGF ermittelt sich als Gesamtfläche aller Grundrissebenen eines Bauwerks,
+     die nach der DIN 277 ermittelt werden. Die entsprechenden Angaben müssen anhand der Bau-
+     unterlagen nachgewiesen werden können.
+
+52   Zur Ermittlung der Baukosten je m² (Wohn)Fläche sind die abschreibungsfähigen Anschaffungs-
+     oder Herstellungskosten durch die ermittelte gesamte Nutzfläche zu dividieren. Mehraufwen-
+     dungen für Sonderausstattungen, z. B. bei einer barrierefreien Wohnung, gehen in die allgemeine
+     Kostenaufteilung ein und werden nicht vorab individuell dieser Wohnung zugerechnet. Mehr-
+     Seite 16 von 35
+
+     aufwendungen für Sonderausstattungen können jedoch unberücksichtigt bleiben, wenn sie ein-
+     deutig und nachweisbar anderen Nutzflächen als der begünstigten Wohnung zuzurechnen sind.
+
+     Beispiel 4:
+     Ein Gebäude mit einer BGF von insgesamt 750 m² wird im Jahr 2021 neu errichtet.
+     Die Nutzung des Gebäudes stellt sich wie folgt dar:
+     300 m² Fläche entfallen auf Mietwohnungen,
+     350 m² Fläche entfallen auf vermietete gewerblich genutzte Flächen
+      50 m² Fläche entfallen auf gemeinschaftlich genutzte Nebenräume und
+      50 m² Fläche entfallen auf Funktions- und Haustechnikflächen, Aufzüge und
+                                Aufzugsschächte, Treppenläufe und -podeste.
+     Die Herstellungskosten betragen insgesamt 1.850.000 €, darin enthalten sind Mehraufwendungen
+     für Sonderausstattung der gewerblich genutzten Fläche i. H. v. 100.000 €.
+
+     Die Baukosten je m² (Wohn)Fläche ermitteln sich wie folgt:
+
+     a) Nach WoFlV und R 4.2 Absatz 6 Satz 4 EStR: 1.750.000 € / 700 m² = 2.500 € je m²
+
+     b) Nach DIN 277: 1.750.000 € / 750 m² = 2.333 € je m²
+
+     Die Baukostenobergrenze nach § 7b Absatz 2 Satz 2 Nummer 1EStG ist damit in beiden Fällen nicht
+     überschritten.
+
+     8.      Bemessungsgrundlage
+     8.1.    Ermittlung der förderfähigen Anschaffungs- oder Herstellungskosten
+53   Zu den förderfähigen Anschaffungs- oder Herstellungskosten i. S. d. § 7b EStG gehören entgegen
+     § 2 Absatz 3 Nummer 1 und 2 WoFlV neben den abschreibungsfähigen Anschaffungs- oder Her-
+     stellungskosten für die neue Mietwohnung selbst (Rn. 38 ff.) auch die Anschaffungs- oder Her-
+     stellungskosten für die zu dieser Wohnung gehörenden Neben- und Zubehörräume, wie Boden-
+     räume, Waschküchen, Kellerräume, Trockenräume, Speicherräume, Bade- und Brauseräume,
+     Fahrrad- und Kinderwagenräume usw., gleichgültig, ob sie zur Benutzung durch den einzelnen
+     oder zur gemeinsamen Benutzung durch alle Hausbewohner bestimmt sind, und die Anschaf-
+     fungs- oder Herstellungskosten der zur begünstigten Wohnung gehörenden Garagen (vgl. Defi-
+     nition der Wohnung unter Rn. 20 ff.).
+
+54   Bei Neben- bzw. Zubehörräumen, die vollständig einer neuen Mietwohnung zugerechnet wer-
+     den können, sind die darauf entfallenden Anschaffungs- oder Herstellungskosten in voller Höhe
+     in die Bemessungsgrundlage einzubeziehen. Für gemeinschaftlich genutzte Nebenräume werden
+     Seite 17 von 35
+
+     die Anschaffungs- oder Herstellungskosten entsprechend dem Anteil der Nutzfläche der neuen
+     Mietwohnung an der Nutzfläche des gesamten Gebäudes aufgeteilt.
+
+55   Werden neben einer begünstigten Wohnung auch andere Nutzflächen, wie z. B. Büro- oder
+     Gewerbeflächen oder eine eigengenutzte Wohnung angeschafft oder hergestellt, werden die
+     abschreibungsfähigen Anschaffungs- oder Herstellungskosten des gesamten Gebäudes nach den
+     allgemeinen ertragsteuerrechtlichen Regelungen auf die einzelnen Gebäudeteile aufgeteilt. Für
+     diese Aufteilung ist das Verhältnis der Nutzfläche eines Gebäudeteiles zur Nutzfläche des gesam-
+     ten Gebäudes maßgebend (vgl. R 4.2 Absatz 6 EStR). Die Aufteilung der Kosten hat damit so zu
+     erfolgen, dass die gesamten abschreibungsfähigen Anschaffungs- oder Herstellungskosten voll-
+     ständig verteilt werden.
+
+56   Entsteht eine begünstigte Wohnung durch Um- oder Ausbaumaßnahmen, ist ebenfalls eine ent-
+     sprechende Aufteilung der abschreibungsfähigen Anschaffungs- oder Herstellungskosten vorzu-
+     nehmen, wenn mit der Baumaßnahme weitere - nicht begünstigte - Flächen geschaffen werden.
+     Das kann z. B. dann der Fall sein, wenn neben einer begünstigten Wohnung auch eine Wohnung
+     für die Eigennutzung hergestellt wird. Bei der Kostenaufteilung sind alle von der Baumaßnahme
+     betroffenen Flächen zu berücksichtigen.
+
+57   Um die gesamten abschreibungsfähigen Anschaffungs- oder Herstellungskosten auf die begüns-
+     tigte Wohnung und die nicht zu ihr gehörende Fläche aufzuteilen, ist die Nutzfläche, die mit der
+     Baumaßnahme insgesamt geschaffen wurde, und die Nutzfläche der begünstigten Wohnung zu
+     ermitteln. So können die gesamten Aufwendungen gleichmäßig auf alle Nutzflächen verteilt
+     werden. Es erfolgt grundsätzlich keine individuelle Zuordnung der Kosten nach Ausstattungs-
+     merkmalen.
+
+     Beispiel 5:
+     Fortführung des Beispiels 4:
+     Die Nutzfläche des Gebäudes beträgt 700 m², die Nutzfläche der begünstigten Wohnungen beträgt
+     323 m² (die gemeinschaftlich genutzten Nebenräume werden zu 46,15 % [300 / 650] den begünstigten
+     Wohnungen zugerechnet). Die Funktionsflächen von 50 m² werden in die Berechnung der Nutzflä-
+     chen nicht einbezogen.
+
+     Die auf die begünstigten Wohnungen entfallenden förderfähigen Herstellungskosten ermitteln sich
+     nach dem Verhältnis der Nutzfläche der neuen Mietwohnungen zur Gesamtnutzfläche:
+
+     1.750.000 € x 323 m² / 700 m² = 807.500 €
+     Seite 18 von 35
+
+     8.2.    Ermittlung der Bemessungsgrundlage
+58   Die Bemessungsgrundlage für die Sonderabschreibung nach § 7b EStG ermittelt sich aus den för-
+     derfähigen Anschaffungs- oder Herstellungskosten der begünstigten Wohnung unter Berück-
+     sichtigung der Förderhöchstgrenze.
+
+59   Die Bemessungsgrundlage für die Sonderabschreibung nach § 7b EStG wird nach § 7b Absatz 3
+     Nummer 1 und 2 EStG auf maximal 2.000 € je m² Wohnfläche für Wohnungen, die aufgrund
+     eines nach dem 31. August 2018 und vor dem 1. Januar 2022 gestellten Bauantrags oder einer in
+     diesem Zeitraum getätigten Bauanzeige hergestellt werden, begrenzt (Förderhöchstgrenze). Für
+     Wohnungen, die aufgrund eines nach dem 31. Dezember 2022 und vor dem 1. Oktober 2029
+     gestellten Bauantrags oder einer in diesem Zeitraum getätigten Bauanzeige hergestellt werden,
+     beträgt die Förderhöchstgrenze nach § 7b Absatz 3 Nummer 1 und 2 EStG maximal 4.000 € je m²
+     Wohnfläche. Liegen die Anschaffungs- oder Herstellungskosten je m² Wohnfläche jeweils darun-
+     ter, sind diese in der tatsächlich angefallenen Höhe der Sonderabschreibung nach § 7b EStG
+     zugrunde zu legen.
+
+60   Betragen die grundsätzlich förderfähigen Anschaffungs- oder Herstellungskosten mehr als
+     2.000 € bzw. 4.000 € je m² Wohnfläche, ermittelt sich die Bemessungsgrundlage für die Sonder-
+     abschreibung nach § 7b EStG wie folgt:
+     2.000 € bzw. 4.000 € x Nutzfläche der begünstigten Wohnung = Bemessungsgrundlage.
+
+     Beispiel 6:
+     Fortführung der Beispiele 4 und 5:
+     Herstellungskosten je m² Wohnfläche: 1.750.000 € / 700 m² = 2.500 € je m²
+
+     Da die Herstellungskosten je m² Wohnfläche (wobei auf die Nutzfläche abgestellt werden darf) die
+     Förderhöchstgrenze i. H. v. 2.000 € für Wohnungen, die aufgrund eines nach dem 31. August 2018
+     und vor dem 1. Januar 2022 gestellten Bauantrags oder einer in diesem Zeitraum getätigten Bauan-
+     zeige hergestellt werden, überschreiten, ermittelt sich die Bemessungsgrundlage für die Sonderab-
+     schreibung nach § 7b EStG unter Berücksichtigung des Förderhöchstbetrages wie folgt:
+
+     2.000 € x 323 m² = 646.000 €
+
+     Die Förderhöchstgrenze i. H. v. 4.000 € je m² Wohnfläche für Wohnungen, die aufgrund eines nach
+     dem 31. Dezember 2022 und vor dem 1. Oktober 2029 gestellten Bauantrags oder einer in diesem
+     Zeitraum getätigten Bauanzeige hergestellt werden, wäre hingegen nicht überschritten.
+     Seite 19 von 35
+
+     9.     Begünstigungszeitraum, Höhe der Sonderabschreibung nach § 7b EStG und der AfA
+     9.1.   Begünstigungszeitraum
+61   Die Sonderabschreibung nach § 7b EStG kann im Jahr der Anschaffung oder Fertigstellung und
+     den folgenden drei Jahren (Begünstigungszeitraum) in Anspruch genommen werden (§ 7b
+     Absatz 1 Satz 1 EStG). Zur Inanspruchnahme der Sonderabschreibung nach § 7b EStG besteht
+     keine Verpflichtung, sondern ein Wahlrecht. So kann die Sonderabschreibung nach § 7b EStG
+     wahlweise nur in einem Jahr oder nur in zwei oder drei Jahren in Anspruch genommen werden
+     (vgl. Rn. 64). Beteiligte von Mitunternehmerschaften oder Gemeinschaften dürfen dieses Wahl-
+     recht nur einheitlich ausüben (§ 7a Absatz 7 Satz 2 EStG).
+
+     9.2.    Höhe der Sonderabschreibung nach § 7b EStG
+62   Die Sonderabschreibung nach § 7b EStG beträgt jährlich bis zu 5 % der Bemessungsgrundlage
+     einer begünstigten Wohnung im Jahr der Anschaffung oder Fertigstellung und in den darauffol-
+     genden drei Jahren (§ 7b Absatz 1 Satz 1 EStG).
+
+63   Die Sonderabschreibung nach § 7b EStG ist eine Jahresabschreibung. Sie wird daher ohne zeitan-
+     teilige Aufteilung für jedes Jahr des Begünstigungszeitraumes vorgenommen.
+
+64   Die Sonderabschreibung nach § 7b EStG kann mit „bis zu“ 5 % der Bemessungsgrundlage geltend
+     gemacht werden. Es besteht somit eine Wahlmöglichkeit für den Steuerpflichtigen, jährlich auch
+     weniger als 5 % Sonderabschreibung nach § 7b EStG in Anspruch zu nehmen. Ein nicht ausge-
+     schöpfter Anteil des Sonderabschreibungsvolumens erhöht den nach § 7a Absatz 9 EStG verblei-
+     benden Restwert, der über die Restnutzungsdauer ab dem vierten Jahr nach dem Jahr der Fertig-
+     stellung linear oder degressiv abgeschrieben wird. Ein darüber hinaus gehendes individuelles
+     Verteilen des Sonderabschreibungsvolumens in Höhe von insgesamt 20 % innerhalb des vierjäh-
+     rigen Begünstigungszeitraums ist nicht zulässig.
+
+     9.3.   Höhe der AfA
+65   Die AfA nach § 7 Absatz 4 EStG oder § 7 Absatz 5a EStG ist in jedem Fall in der gesetzlich vorgese-
+     henen Höhe vorzunehmen (§ 7a Absatz 4 bzw. § 7b Absatz 1 Satz 1 EStG). Die lineare AfA nach § 7
+     Absatz 4 EStG bzw. die degressive AfA nach § 7 Absatz 5a EStG wird entsprechend der für diese
+     Regelungen vorgesehenen Bemessungsgrundlage ermittelt, d. h. maßgebend sind - unabhängig
+     von der Bemessungsgrundlage der Sonderabschreibung nach § 7b EStG - die tatsächlichen An-
+     schaffungs- oder Herstellungskosten der begünstigten Wohnung. Eine Begrenzung auf den För-
+     derhöchstbetrag je m² Wohnfläche erfolgt für die lineare AfA nach § 7 Absatz 4 EStG bzw. die
+     degressive AfA nach § 7 Absatz 5a EStG nicht.
+     Seite 20 von 35
+
+66   Nach Ablauf des Begünstigungszeitraums der Sonderabschreibung nach § 7b EStG von vier Jah-
+     ren bemisst sich die weitere reguläre AfA nach § 7a Absatz 9 EStG. Danach ermittelt sich die wei-
+     tere Abschreibung bei Gebäuden nach dem Restwert nach Ablauf des Begünstigungszeitraums
+     und dem nach § 7 Absatz 4 EStG unter Berücksichtigung der rechnerischen Restnutzungsdauer
+     oder dem nach § 7 Absatz 5a EStG maßgebenden Prozentsatz. Die Begrenzung des Förderzeit-
+     raums (Rn. 16) führt nicht zu einer Verkürzung des Begünstigungszeitraums.
+
+     Beispiel 7:
+     a) Fortführung der Beispiele 4 bis 6:
+                                                      1. Jahr            2. Jahr            3. Jahr             4. Jahr            5. Jahr
+                                                      (in Euro)          (in Euro)          (in Euro)           (in Euro)          (in Euro)
+        Sonderabschreibung nach § 7b
+        EStG i. H. v. 5 % (Bemessungs-
+                                                         32.300              32.300             32.300             32.300                 0
+        grundlage                 von
+        646.000 €)
+        reguläre AfA
+        1. bis 4. Jahr: Lineare AfA nach
+        § 7 Absatz 4 Satz 1 Nummer 2
+        Buchstabe a          bzw. b EStG                16.150*             16.150              16.150             16.150              13.342
+        (Bemessungsgrundlage von
+        807.500 €)
+        ab 5. Jahr: Restwert-AfA
+        insgesamt                                        48.450              48.450             48.450             48.450              13.342
+     * Hinweis: bei Fertigstellung nach dem 31. Januar wäre eine zeitanteilige Kürzung der linearen AfA im Jahr der Fertigstellung erforderlich.
+
+
+     Bei vollständiger Inanspruchnahme der Sonderabschreibung nach § 7b EStG und bei regulärer linea-
+     rer AfA von 2 % bei Fertigstellung der neuen Wohnung vor dem 1. Januar 2023 nach § 7 Absatz 4
+     Satz 1 Nummer 2 Buchstabe b EStG beträgt der Restwert:
+     807.500 € - (4 x 48.450 €) = 613.700 €.
+     Die Restwert-AfA gemäß § 7a Absatz 9 EStG beträgt ab dem fünften Jahr bei einer Restnutzungs-
+     dauer von 46 Jahren 13.342 €.
+
+     b) Abwandlung: Fertigstellung im Jahr 2026 bei Bauantrag/Bauanzeige nach dem 31. August 2018
+     und vor dem 1. Januar 2022
+     Die Sonderabschreibung nach § 7b EStG kann nur für ein Jahr in Höhe von 32.300 € in Anspruch
+     genommen werden. Bis zum Ende des vierjährigen Begünstigungszeitraums, d. h. in den Jahren 2026
+     bis 2029 wird die lineare AfA mit 24.225 € (3 % nach § 7 Absatz 4 Satz 1 Nummer 2 Buchstabe a EStG
+     x 807.500 €) berücksichtigt.
+Seite 21 von 35
+
+Ab dem 5. Jahr, dem Jahr 2030, erfolgt die AfA dann verteilt über die Restnutzungsdauer.
+Der Restwert beträgt:
+807.500 € - 32.300 € - (4 x 24.225 €) = 678.300 €.
+Die AfA beträgt ab dem 5. Jahr bei einer Restnutzungsdauer von 29 Jahren 23.390 €.
+
+c) Kombination mit degressiver AfA nach § 7 Absatz 5a EStG
+Ein Wohngebäude, welches die Voraussetzungen der § 7 Absatz 5a, § 7b EStG erfüllt und aufgrund
+eines nach dem 31. Dezember 2022 und vor dem 1. Oktober 2029 gestellten Bauantrags hergestellt
+wurde, wird zum 1. Januar 2025 fertiggestellt oder mit Fertigstellung zum 1. Januar 2025 ange-
+schafft. Der Beginn der Herstellung bzw. der Kaufvertrag datieren jeweils nach dem
+30. September 2023. Die Nutzfläche der begünstigten Wohnungen beträgt 250 m². Die auf das
+begünstigte Gebäude entfallenden förderfähigen Anschaffungs- oder Herstellungskosten betragen
+1 Mio. €
+Da die Anschaffungs- oder Herstellungskosten je m² Wohnfläche die Förderhöchstgrenze des § 7b
+EStG in Höhe von 4.000 € nicht überschreiten, entspricht die Bemessungsgrundlage für die Sonder-
+abschreibung nach § 7b EStG den vollen Anschaffungs- oder Herstellungskosten i. H. v. 1 Mio. €.
+
+                                  1. Jahr         2. Jahr      3. Jahr       4. Jahr        5. Jahr
+                                  (in Euro)       (in Euro)    (in Euro)     (in Euro)      (in Euro)
+ Sonderabschreibung nach
+ § 7b EStG i. H. v. 5 % (Bemes-       50.000        50.000        50.000        50.000           0
+ sungsgrundlage 1 Mio. €)
+ reguläre AfA
+ 1. bis 4. Jahr: degressive AfA
+ nach § 7 Absatz 5a EStG
+ (Bemessungsrundlage von              50.000        47.500        45.125        42.869        30.725
+ 1 Mio. €)
+ ab 5. Jahr: degressive Rest-
+ wert-AfA (§ 7a Absatz 9 EStG)
+ insgesamt                           100.000        97.500        95.125        92.869        30.725
+
+Die degressive Restwert-AfA gemäß § 7a Absatz 9 EStG ermittelt sich ab dem 5. Jahr von dem um die
+Sonderabschreibung nach § 7b EStG geminderten Restbuchwert. Bei vollständiger Inanspruchnahme
+der Sonderabschreibung nach § 7b EStG und bei gleichzeitiger Inanspruchnahme der degressiven
+AfA nach § 7 Absatz 5a EStG beträgt der Restwert am Ende des vierten Jahres 614.506 € (1 Mio. €
+abzüglich 385.494 € (Summe aller Abschreibungen der ersten 4 Jahre)).
+
+Damit ergibt sich als Abschreibungswert für das 5. Jahr ein Betrag von 30.725 € (614.506 € x 5 %).
+     Seite 22 von 35
+
+     9.4.   Kumulierung mit anderen Sonderabschreibungen/erhöhten Absetzungen
+67   Liegen für einzelne Baumaßnahmen innerhalb des selbständigen unbeweglichen Wirtschaftsguts
+     Gebäude (vgl. Rn. 18) sowohl die Voraussetzungen für die Inanspruchnahme der Sonderabschrei-
+     bung nach § 7b EStG als auch für die Inanspruchnahme der erhöhten Absetzungen nach den
+     §§ 7h, 7i EStG vor, dürfen nach dem Kumulationsverbot gemäß § 7a Absatz 5 EStG die erhöhten
+     Absetzungen nach den §§ 7h, 7i EStG oder die Sonderabschreibung nach § 7b EStG nur aufgrund
+     einer dieser Vorschriften in Anspruch genommen werden. Daran ändert auch die Tatsache
+     nichts, dass die erhöhten Absetzungen nach den §§ 7h und 7i EStG an die Stelle der linearen AfA
+     nach § 7 Absatz 4 EStG bzw. der degressiven AfA nach § 7 Absatz 5a EStG treten und die lineare
+     AfA nach § 7 Absatz 4 EStG bzw. die degressive AfA nach § 7 Absatz 5a EStG neben der Sonderab-
+     schreibung nach § 7b EStG in Anspruch genommen werden muss.
+
+     10.    Einhaltung der Nutzungsvoraussetzung
+68   Die begünstigte Wohnung muss nach § 7b Absatz 2 Satz 1 Nummer 3 EStG im Jahr der Anschaf-
+     fung oder Fertigstellung und in den folgenden neun Jahren der entgeltlichen Überlassung zu
+     Wohnzwecken dienen (zehnjähriger Nutzungszeitraum).
+
+69   Der Nachweis über die Einhaltung der mindestens zehnjährigen Nutzung zur entgeltlichen
+     Überlassung zu fremden Wohnzwecken ist vom Steuerpflichtigen jährlich in geeigneter Art und
+     Weise zu erbringen (vgl. Rn. 117).
+
+70   Wird die Nutzung zur entgeltlichen Überlassung zu fremden Wohnzwecken vor Ablauf des
+     zehnjährigen Nutzungszeitraums beendet, hat der Steuerpflichtige dies mit der Steuererklärung
+     des Veranlagungszeitraums, in den die Beendigung fällt, in geeigneter Art und Weise anzuzeigen.
+
+71   Wird eine Wohnung, für die die Sonderabschreibung nach § 7b EStG in Anspruch genommen
+     wurde, vor Ablauf des Nutzungszeitraums veräußert, hat der Veräußerer nachzuweisen, dass die
+     begünstigte Wohnung innerhalb des Nutzungszeitraums auch beim Erwerber der weiteren ent-
+     geltlichen Überlassung zu fremden Wohnzwecken gedient hat. Daher ist es grundsätzlich auch
+     möglich, eine begünstigte Wohnung, für die die Sonderabschreibung nach § 7b EStG in Anspruch
+     genommen wurde, innerhalb des zehnjährigen Nutzungszeitraums zu veräußern, ohne dass die
+     in Anspruch genommene Sonderabschreibung nach § 7b Absatz 4 Satz 1 Nummer 1 EStG rück-
+     gängig zu machen ist (beachte Rn. 72 ff.). Die Vorschriften zu privaten Veräußerungsgeschäften
+     von Grundstücken i. S. d. § 23 Absatz 1 Satz 1 Nummer 1 und Absatz 3 EStG (insbesondere zur
+     Erhöhung der Anschaffungs- und Herstellungskosten gemäß § 23 Absatz 3 Satz 4 EStG um in
+     Anspruch genommene Sonderabschreibungen) bleiben unberührt. Der entsprechende Nachweis
+     ist vom Veräußerer im Rahmen der Steuererklärung des Veranlagungszeitraums, in den der
+     Ablauf des zehnjährigen Nutzungszeitraums fällt, in geeigneter Art und Weise zu erbringen. Aus-
+     Seite 23 von 35
+
+     reichend ist eine Bestätigung des Erwerbers über die Einhaltung der Nutzungsvoraussetzung. Die
+     Nutzungsvoraussetzung ist auch bei den in Rn. 76 geregelten Vorgängen einzuhalten.
+
+     11.     Rückgängigmachung der Sonderabschreibung nach § 7b EStG
+72   Wird eine begünstigte Wohnung, für die die Sonderabschreibung nach § 7b EStG in Anspruch
+     genommen wurde, innerhalb des zehnjährigen Nutzungszeitraums dem Mietwohnungsmarkt
+     entzogen oder veräußert, ohne dass der Veräußerungsgewinn der Einkommen- oder Körper-
+     schaftsteuer unterliegt, oder wird die Baukostenobergrenze nachträglich innerhalb der ersten
+     drei Kalenderjahre nach Ablauf des Jahres der Anschaffung oder Herstellung der begünstigten
+     Wohnung durch nachträgliche Anschaffungs- oder Herstellungskosten überschritten, ist die in
+     Anspruch genommene Sonderabschreibung nach § 7b Absatz 4 EStG in voller Höhe verzinslich
+     rückgängig zu machen und die bisher in Anspruch genommene lineare oder degressive AfA
+     (ohne Berücksichtigung von § 7a Absatz 9 EStG) entsprechend anzupassen (Berichtigungszeit-
+     raum). Für diese Fälle sieht § 7b Absatz 4 Satz 3 EStG eine Anlaufhemmung der Festsetzungsfrist
+     vor. Die Änderung erfolgt nach § 7b Absatz 4 Satz 2 EStG. Die Verzinsung erfolgt gemäß § 233a
+     Absatz 2 i. V. m. Absatz 5 AO. § 233a Absatz 2a AO ist insoweit nicht anzuwenden (§ 7b Absatz 4
+     Satz 4 EStG).
+
+     11.1. Veräußerung innerhalb des Nutzungszeitraums
+73   Eine Veräußerung innerhalb des zehnjährigen Nutzungszeitraums, bei der der Veräußerungsge-
+     winn nicht der Einkommen- oder Körperschaftsteuer unterliegt, führt in voller Höhe zu einer
+     Rückgängigmachung der in Anspruch genommenen Sonderabschreibung nach § 7b EStG (§ 7b
+     Absatz 4 Satz 1 Nummer 2 EStG). Dies gilt nicht nur im Fall der Erzielung eines Veräußerungsge-
+     winns, sondern auch im Fall des Vorliegens eines Veräußerungsverlustes. Entscheidend ist allein,
+     ob die Veräußerung grundsätzlich steuerbar ist.
+
+74   Bei der Veräußerung langfristig gehaltener Grundstücke des Privatvermögens, die der Steuer-
+     pflichtige erst neu bebaut hat, liegt regelmäßig keine steuerbare Veräußerung vor, denn bei der
+     Berechnung der in § 23 EStG vorgesehenen zehnjährigen Veräußerungsfrist wird ausschließlich
+     an den Zeitpunkt der Anschaffung des Grund und Bodens und nicht an den Zeitpunkt der Her-
+     stellung des Gebäudes angeknüpft.
+
+     Beispiel 8:
+     a) Grundfall:
+     A erwarb im Jahr 2010 einen Bauplatz. Am 1. Oktober 2018 stellte er einen Bauantrag zur Errichtung
+     eines Zweifamilienhauses. Das Gebäude wurde am 1. Juli 2020 fertiggestellt und A vermietet es seit-
+     dem entgeltlich zu Wohnzwecken. A beansprucht in den Jahren 2020, 2021 und 2022 Sonderab-
+     Seite 24 von 35
+
+     schreibungen nach § 7b EStG. Ende des Jahres 2022 verkauft A das vermietete Gebäude an B, der die-
+     ses weiterhin entgeltlich zu Wohnzwecken überlässt.
+
+     Der zehnjährige Nutzungszeitraum läuft vom 1. Juli 2020 bis 30. Juni 2030. A veräußert das Gebäude
+     innerhalb des zehnjährigen Nutzungszeitraums. Der Gewinn aus der Veräußerung des Gebäudes an
+     B im Jahr 2022 ist nicht nach § 22 Nummer 2 i. V. m. § 23 EStG steuerbar.
+     Die zehnjährige Veräußerungsfrist des § 23 EStG begann mit dem Erwerb des Bauplatzes im
+     Jahr 2010 und endet im Jahr 2020; sie ist deshalb im Jahr 2022 bereits abgelaufen.
+     Gemäß § 7b Absatz 4 Satz 1 Nummer 2 EStG ist die Sonderabschreibung nach § 7b EStG bei A - trotz
+     entgeltlicher Weitervermietung des Gebäudes durch B - in voller Höhe verzinslich rückgängig zu
+     machen.
+
+     b) Abwandlung:
+     A erwarb den Bauplatz erst im Jahr 2017.
+
+     Der Gewinn aus der Veräußerung des Gebäudes an B im Jahr 2022 ist nach § 22 Nummer 2 i. V. m.
+     § 23 EStG steuerbar. Die zehnjährige Veräußerungsfrist des § 23 EStG ist im Jahr 2022 noch nicht
+     abgelaufen. Im Umkehrschluss zu § 7b Absatz 4 Satz 1 Nummer 1 EStG ist die Sonderabschreibung
+     nach § 7b EStG bei A sodann nicht rückgängig zu machen, da der Erwerber B das Gebäude weiterhin
+     entgeltlich zu Wohnzwecken vermietet.
+
+75   Ist eine Veräußerung steuerbar, hat die Bundesrepublik Deutschland aber aufgrund einer Rege-
+     lung in einem Doppelbesteuerungsabkommen kein Recht zur Besteuerung des Veräußerungser-
+     löses, ist der Tatbestand des § 7b Absatz 4 Satz 1 Nummer 2 EStG nicht erfüllt.
+     In diesen Fällen liegt ein grundsätzlich steuerbarer Vorgang vor.
+
+76   Kein schädlicher Vorgang i. S. d. § 7b Absatz 4 Satz 1 Nummer 2 EStG liegt vor, wenn eine Über-
+     tragung nicht als Veräußerung anzusehen ist (z. B. unentgeltliche Übertragung im Wege der Erb-
+     folge). Der Tausch und die verdeckte Einlage in eine Körperschaft gelten jeweils als Veräuße-
+     rungsvorgang.
+
+     11.2.   Überschreiten der Baukostenobergrenze bei nachträglichen Anschaffungs- oder Herstel-
+             lungskosten
+77   Wird die Baukostenobergrenze in Höhe von 3.000 € bzw. 5.200 € je m² Wohnfläche innerhalb der
+     ersten drei Kalenderjahre nach Ablauf des Jahres der Anschaffung oder Fertigstellung der
+     begünstigten Wohnung durch nachträgliche Anschaffungs- oder Herstellungskosten überschrit-
+     ten, ist die bisher in Anspruch genommene Sonderabschreibung nach § 7b Absatz 4 Satz 1 Num-
+     mer 3 EStG in voller Höhe verzinslich rückgängig zu machen.
+     Seite 25 von 35
+
+
+78   Es handelt sich um eine kalenderjahrbezogene Betrachtung; eine taggenaue Fristberechnung
+     bezogen auf den Anschaffungs- oder Fertigstellungszeitpunkt ist dabei nicht vorgesehen.
+     Bei vom Kalenderjahr abweichenden Wirtschaftsjahren ist auch auf das Kalenderjahr abzustellen.
+
+79   Unschädlich sind nachträgliche Anschaffungs- oder Herstellungskosten, die nach einer Veräuße-
+     rung innerhalb des Begünstigungszeitraums beim Erwerber des Förderobjekts anfallen, wenn der
+     Erwerber keinen Anspruch auf die Sonderabschreibung nach § 7b EStG hat.
+
+     12.    Anwendung weiterer Vorschriften des EStG
+80   Im Übrigen gelten die gemeinsamen Vorschriften für erhöhte Absetzungen und Sonderabschrei-
+     bungen nach § 7a EStG vollumfänglich auch für die Sonderabschreibung nach § 7b EStG.
+
+81   Die Anwendung des § 7b EStG ist nicht auf Wirtschaftsgüter des Anlagevermögens beschränkt,
+     d. h. die Sonderabschreibung nach § 7b EStG kann auch bei den Einkünften aus Vermietung und
+     Verpachtung in Anspruch genommen werden (vgl. § 9 Absatz 1 Satz 3 Nummer 7 EStG).
+
+82   Die Regelung des § 6b Absatz 6 EStG findet im Zusammenhang mit der Sonderabschreibung nach
+     § 7b EStG keine Anwendung.
+
+
+     II.    Beihilferechtliche Voraussetzungen der Inanspruchnahme der Sonderabschrei-
+            bung nach § 7b EStG
+     1.      Anwendung der De-minimis-Verordnung
+83   Die Sonderabschreibung nach § 7b EStG kann aufgrund von § 7b Absatz 5 EStG nur in Anspruch
+     genommen werden, soweit die Voraussetzungen der Verordnung (EU) Nr. 1407/2013 der Kom-
+     mission vom 18. Dezember 2013 über die Anwendung der Artikel 107 und 108 des Vertrags über
+     die Arbeitsweise der Europäischen Union auf De-minimis-Beihilfen (ABl. L 352 vom
+     24. Dezember 2013, S. 1) (De-minimis-Verordnung) oder der Verordnung (EU) Nr. 360/ 2012 der
+     Kommission vom 25. April 2012 über die Anwendung der Artikel 107 und 108 des Vertrags über
+     die Arbeitsweise der Europäischen Union auf De-minimis-Beihilfen an Unternehmen, die
+     Dienstleistungen von allgemeinem wirtschaftlichem Interesse erbringen (ABl. L 114 vom
+     26. April 2012, S. 8) (sog. DAWI-de-minimis-Verordnung), in der jeweils geltenden Fassung, ein-
+     gehalten sind. Für Baumaßnahmen, deren Bauantrag/Bauanzeige nach dem 31. Dezember 2022
+     und vor dem 1. Oktober 2029 gestellt/getätigt wurde, gilt dies nur, wenn die Sonderabschreibung
+     nach § 7b EStG im Rahmen der Gewinnermittlung von Einkünften im Sinne der §§ 13, 15 oder 18
+     EStG beansprucht wird.
+     Seite 26 von 35
+
+     2.     Beihilfehöchstbeträge
+84   Werden Beihilfen auf der Grundlage der De-minimis- oder DAWI-de-minimis-Verordnung
+     gewährt, so darf der Gesamtbetrag der einem einzigen Unternehmen gewährten De-minimis-
+     oder DAWI-de-minimis-Beihilfen - unabhängig davon, aus welchen Förderprogrammen diese
+     gewährt worden sind - in einem Zeitraum von drei Kalenderjahren die folgenden Beihilfehöchst-
+     beträge nicht übersteigen:
+     Nach der De-minimis-Verordnung:                      200.000 € bzw. 300.000 €
+     Nach der DAWI-de-minimis-Verordnung:                 500.000 € bzw. 750.000 €
+
+85   Die Sonderabschreibung nach § 7b EStG kann nur in Anspruch genommen werden, wenn der
+     nach der De-minimis-Verordnung maximal zulässige Beihilfehöchstbetrag von 200.000 € bzw.
+     300.000 € (ab Kalenderjahr 2024) unter Einbeziehung des Beihilfewertes aus der Sonderabschrei-
+     bung nach § 7b EStG nicht überschritten wird. Soweit ein Steuerpflichtiger auch Beihilfen nach
+     der DAWI-de-minimis-Verordnung erhalten hat, sind insoweit Beihilfen bis zu einem Höchstbe-
+     trag von 500.000 € bzw. 1.050.000 € (ab Kalenderjahr 2024) - unter Einhaltung der 200.000 bzw.
+     300.000-Euro-Grenze der De-minimis-Verordnung - zulässig. Ab dem Kalenderjahr 2024 werden
+     die Höchstbeträge der De-minimis- und der DAWI-de-minimis-Verordnung nicht mehr auf den
+     nach der DAWI-de-minimis-Verordnung geltenden Höchstbetrag beschränkt, sodass insoweit
+     Beihilfen bis zu einem Betrag in Höhe von 1.050.000 € - unter Einhaltung der jeweilig geltenden
+     Höchstgrenzen - gewährt werden dürfen. Zur Prüfung der Beihilfehöchstbeträge vgl. Rn. 107 ff.
+
+86   Werden für die nach § 7b EStG förderfähigen Kosten auch noch andere staatliche Beihilfen
+     gewährt, ist dies nur insoweit zulässig, als dass die höchste einschlägige Beihilfeintensität oder
+     der höchste einschlägige Beihilfebetrag, die bzw. der im Einzelfall in einer Gruppenfreistellungs-
+     verordnung oder einem Beschluss der Europäischen Kommission festgelegt ist, nicht überschrit-
+     ten wird.
+
+     3.      Erklärung zu anderen De-minimis-Beihilfen
+87   Für die Inanspruchnahme der Sonderabschreibung nach § 7b EStG muss der Steuerpflichtige
+     nach § 7b Absatz 5 Satz 3 EStG für jedes Jahr des Begünstigungszeitraums Angaben zu den von
+     ihm im jeweiligen Kalenderjahr der Inanspruchnahme der Sonderabschreibung nach § 7b EStG
+     und in den jeweils zwei vorausgegangenen Kalenderjahren erhaltenen anderen Beihilfen auf der
+     Basis der De-minimis-Verordnung und der DAWI-de-minimis-Verordnung machen. Maßgeblich
+     ist hierbei der Zeitpunkt der Gewährung (Datum des Bewilligungsbescheides) und nicht der Zu-
+     flusszeitpunkt der Beihilfe. Für Baumaßnahmen, deren Bauantrag oder Bauanzeige nach dem
+     31. Dezember 2022 und vor dem 1. Oktober 2029 gestellt oder getätigt wurde, muss die Erklärung
+     nur erfolgen, wenn die Sonderabschreibung nach § 7b EStG im Rahmen der Gewinnermittlung
+     Seite 27 von 35
+
+     von Einkünften i. S. d. §§ 13, 15 oder 18 EStG beansprucht wird (§ 7b Absatz 5 Satz 1 i. V. m. § 52
+     Absatz 15a Satz 3 EStG).
+
+88   Nicht anzugeben sind in diesem Zusammenhang Beihilfen, die aufgrund einer genehmigten Bei-
+     hilferegelung oder aufgrund einer auf der Basis der Allgemeinen Gruppenfreistellungsverord-
+     nung (AGVO) gewährten Beihilferegelung (z. B. Zentrales Innovationsprogramm Mittelstand -
+     ZIM) bewilligt worden sind.
+
+89   Beihilfen, die einem Steuerpflichtigen auf der Basis der De-minimis-Verordnung oder der
+     DAWI-de-minimis-Verordnung gewährt wurden, sind für diesen regelmäßig ersichtlich, da von
+     jeder beihilfegewährenden Stelle eine Mitteilung über den erhaltenen Beihilfewert ausgestellt
+     werden muss.
+
+90   Hat der Steuerpflichtige im jeweiligen Kalenderjahr der Inanspruchnahme der Sonderabschrei-
+     bung nach § 7b EStG und in den jeweils zwei vorausgegangenen Kalenderjahren Beihilfen nach
+     der De-minimis-Verordnung oder der DAWI-de-minimis-Verordnung erhalten, so hat er den
+     Beihilfegeber, das Datum der Gewährung und die Höhe des bescheinigten Beihilfewertes dieser
+     Beihilfen gegenüber dem für ihn zuständigen Finanzamt zu erklären. Diese Erklärung ist Voraus-
+     setzung für die jeweilige Inanspruchnahme der Sonderabschreibung nach § 7b EStG. Wurden
+     keine anderen Beihilfen nach der De-minimis-Verordnung oder der DAWI-de-minimis-Verord-
+     nung in diesem Zeitraum bezogen, ist dies ebenfalls schriftlich zu erklären.
+
+91   Handelt es sich bei dem anspruchsberechtigten Steuerpflichtigen um einen Beteiligten einer Mit-
+     unternehmerschaft oder einer Gemeinschaft, für die die Einkünfte gesondert und einheitlich
+     festgestellt werden, sind die Angaben über die erhaltenen Beihilfen nach der De-minimis-Ver-
+     ordnung oder der DAWI-de-minimis-Verordnung für die Mitunternehmerschaft oder die
+     Gemeinschaft im Rahmen der Erklärung zur gesonderten und einheitlichen Feststellung für
+     jedes Jahr des Begünstigungszeitraums zu tätigen.
+
+92   Werden die Einkünfte des anspruchsberechtigten Steuerpflichtigen gesondert festgestellt, sind
+     die Angaben über die erhaltenen Beihilfen nach der De-minimis-Verordnung oder der DAWI-
+     de-minimis-Verordnung im Rahmen der Erklärung zur gesonderten Feststellung für jedes Jahr
+     des Begünstigungszeitraums zu tätigen.
+
+93   Beträgt der Beihilfewert aus weiteren Beihilfen nach der De-minimis-Verordnung insgesamt
+     bereits 200.000 € bzw. 300.000 € oder mehr bzw. aus weiteren Beihilfen nach der DAWI-De-mini-
+     mis-Verordnung insgesamt bereits 500.000 € bzw. 750.000 € oder mehr, kann die Sonderab-
+     schreibung nach § 7b EStG gemäß § 7b Absatz 5 EStG im betreffenden Jahr des Begünstigungs-
+     Seite 28 von 35
+
+     zeitraums nicht in Anspruch genommen werden. Ggf. kommt eine Inanspruchnahme im folgen-
+     den Jahr/in den folgenden Jahren des Begünstigungszeitraums in Betracht.
+
+     4.      Ermittlung des Beihilfewerts der Sonderabschreibung nach § 7b EStG
+94   Sind im Kalenderjahr der Inanspruchnahme der Sonderabschreibung nach § 7b EStG und in den
+     zwei vorausgegangenen Kalenderjahren die Beihilfehöchstbeträge durch weitere De-minimis-
+     Beihilfen nicht erreicht worden oder wurden in diesem Zeitraum bisher keine De-minimis-Bei-
+     hilfen bezogen, muss der Beihilfewert der Sonderabschreibung nach § 7b EStG ermittelt werden.
+
+95   Bei der Ermittlung des sich aus der Sonderabschreibung nach § 7b EStG ergebenden Beihilfe-
+     werts ist nicht auf die Höhe der Sonderabschreibung nach § 7b EStG selbst, sondern nur auf den
+     relevanten wirtschaftlichen Vorteil, der durch die vorgezogene höhere Abschreibungsmöglich-
+     keit entsteht, abzustellen.
+
+     4.1.   Grundsatz: Ermittlung des relevanten wirtschaftlichen Vorteils
+96   Der zugrunde zu legende relevante wirtschaftliche Vorteil der Maßnahme entsteht durch die
+     vorgezogene höhere Abschreibungsmöglichkeit innerhalb des Referenzzeitraums des Abschrei-
+     bungszeitraums des Förderobjekts. D. h. der relevante wirtschaftliche Vorteil aus der Inanspruch-
+     nahme der Sonderabschreibung nach § 7b EStG wird mittels einer Barwertberechnung über den
+     gesamten Abschreibungszeitraum von 33 1/3 bzw. 50 Jahren ermittelt. Denn den durch die Inan-
+     spruchnahme der Sonderabschreibung nach § 7b EStG entstehenden Steuervorteilen stehen im
+     Zeitraum der Gewährung der Restwert-AfA Steuernachteile durch eine niedrigere Restwert-AfA
+     gegenüber. Beides ist für die Ermittlung des relevanten wirtschaftlichen Vorteils in der Gesamt-
+     betrachtung zu berücksichtigen.
+
+97   Bei der Barwertberechnung werden jährlich die jeweiligen nominalen Vor- bzw. Nachteile auf
+     den Investitionszeitpunkt diskontiert. Die Summe der entsprechenden Barwerte über den
+     Abschreibungszeitraum eines Gebäudes (33 1/3 bzw. 50 Jahre) ergibt den Liquiditätsvorteil der
+     Investition insgesamt, welcher auf die Jahre aufgeteilt wird, in denen durch die Inanspruch-
+     nahme der Sonderabschreibung nach § 7b EStG Steuervorteile eintreten. Dabei wird in Einkom-
+     mensteuerfällen auf den prozentualen Durchschnittssteuersatz abgestellt. Dieser ermittelt sich
+     aus der tariflichen Einkommensteuer zuzüglich Solidaritätszuschlag (soweit erhoben), dividiert
+     durch das zu versteuernde Einkommen (nach Berücksichtigung der Sonderabschreibung nach
+     § 7b EStG). In Körperschaftsteuerfällen wird auf den Körperschaftsteuersatz (15 %) zuzüglich
+     Solidaritätszuschlag und dem individuellen Gewerbesteuersatz abgestellt. Maßgebend sind die
+     Werte des Jahres der erstmaligen Inanspruchnahme der Sonderabschreibung nach § 7b EStG. Zur
+     Diskontierung ist der Abzinsungszinssatz entsprechend der Mitteilung der Kommission über die
+     Änderung der Methode zur Festsetzung der Referenz- und Abzinsungssätze (ABl. C 14 vom
+      Seite 29 von 35
+
+      19. Januar 2008, S. 6), der zum Ende des Jahres, das der erstmaligen Inanspruchnahme der Son-
+      derabschreibung vorausgeht, gilt, zu verwenden.
+
+98    Der für die Berechnung des Referenz- und Abzinsungssatzes maßgebende Basissatz wird regel-
+      mäßig aktualisiert und im Internet unter der folgenden Adresse veröffentlicht:
+      http://ec.europa.eu/competition/state_aid/legislation/reference_rates.html.
+
+99    Zur Ermittlung des relevanten wirtschaftlichen Vorteils aus der Sonderabschreibung nach § 7b
+      EStG steht im Internet auf den Seiten des Bundesministeriums der Finanzen
+      (https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/arbeitshilfe-son-
+      derabschreibung-7b-estg.html) ein Berechnungsschema zur Verfügung. Der relevante wirt-
+      schaftliche Vorteil, der sich daraus ergibt, wird über den vierjährigen Begünstigungszeitraum
+      gleichmäßig verteilt.
+
+100   Der relevante wirtschaftliche Vorteil wird einmalig im ersten Jahr der Inanspruchnahme der
+      Sonderabschreibung nach § 7b EStG ermittelt. Nachträgliche Anschaffungs- oder Herstellungs-
+      kosten innerhalb der Baukostenobergrenze, eine Veräußerung oder eine Nutzungsänderung des
+      Förderobjekts innerhalb des Abschreibungszeitraumes führen daher nicht rückwirkend zu einer
+      Neuberechnung des relevanten wirtschaftlichen Vorteils.
+
+      4.2.  Ermittlung des relevanten wirtschaftlichen Vorteils bei Mitunternehmerschaften oder
+            Gemeinschaften
+101   Im Rahmen der gesonderten und einheitlichen Feststellung sind entsprechend dem für die Mit-
+      unternehmerschaft oder Gemeinschaft geltenden Einkünfteverteilungsschlüssel
+      1.   der verbrauchte Beihilfewert der Mitunternehmerschaft oder Gemeinschaft
+             (bereits erhaltene Beihilfen nach der De-minimis-Verordnung oder der DAWI-de-mini-
+             mis-Verordnung)
+      und
+      2.    die Bemessungsgrundlage der Sonderabschreibung nach § 7b EStG (vgl. Rn. 53 ff.)
+      auf die Feststellungsbeteiligten aufzuteilen.
+
+102   Im Feststellungsbescheid ist für jeden Feststellungsbeteiligten der auf ihn entfallende Anteil am
+      verbrauchten Beihilfewert und an der Bemessungsgrundlage nach § 7b EStG auszuweisen.
+      Der verbrauchte Beihilfewert ist für jedes Jahr des Begünstigungszeitraums auszuweisen.
+
+103   Bei mehrstöckigen Personengesellschaften ist entsprechend zu verfahren.
+      Seite 30 von 35
+
+104   Im Rahmen der Veranlagung zur Einkommen- oder Körperschaftsteuer des einzelnen Feststel-
+      lungsbeteiligten wird für die Ermittlung des wirtschaftlichen Vorteils der Sonderabschreibung
+      nach § 7b EStG der im Feststellungsbescheid festgestellte Anteil an der Bemessungsgrundlage
+      nach § 7b EStG der Barwertberechnung wie unter 4.1 dargestellt zugrunde gelegt.
+
+      Beispiel 9:
+      Die A-KG, bestehend aus der Komplementär-GmbH [K-GmbH] (Anteil 0 %) und den Kommanditisten
+      A und B (Anteil jeweils 50 %), hat mit Fertigstellung im Jahr 2020 ein Gebäude mit ausschließlich
+      Mietwohnungen errichten lassen.
+      Die nach § 7b EStG förderfähigen Herstellungskosten betragen 2.000.000 € (eine Begrenzung der
+      Bemessungsgrundlage i. S. d. § 7b Absatz 3 EStG erfolgt nicht).
+
+      Die A-KG erklärt im Rahmen der gesonderten und einheitlichen Feststellung für 2020 folgende
+      bereits erhaltene Beihilfen für das laufende und die beiden vorausgegangenen Kalenderjahre:
+      nach der De-minimis-Verordnung:                   80.000 € (erhalten im Jahr 2019)
+      nach der DAWI-de-minimis-Verordnung:             400.000 € (erhalten im Jahr 2019)
+      Die A-KG erzielte im Jahr 2020 unter Berücksichtigung der Sonderabschreibung nach § 7b EStG
+      gewerbliche Einkünfte nach § 15 EStG i. H. v. 50.000 €.
+
+      Der Feststellungsbescheid enthält für die Feststellungsbeteiligten folgende Werte:
+
+
+                                                    Bemessungs-     verbrauchter Bei-      verbrauchter Bei-
+                                Einkünfte             grundlage        hilfewert nach         hilfewert nach
+                                      aus                   nach    De-minimis-Ver-        DAWI-de-mini-
+          Feststellungs-    Gewerbebetrieb             § 7b EStG           ordnung         mis-Verordnung
+             beteiligter             in Euro              in Euro             in Euro               in Euro
+           K-GmbH                          0                    0                    0                    0
+               A                     25.000            1.000.000               40.000               200.000
+               B                     25.000            1.000.000               40.000               200.000
+
+
+      Weil die Sonderabschreibung nach § 7b EStG in voller Höhe (5 %) in Anspruch genommen wurde,
+      muss keine Aussage hierzu aufgenommen werden.
+
+      Im Rahmen der Veranlagung zur Einkommen- oder Körperschaftsteuer werden über die in den
+      ESt 4 B-Mitteilungen für die jeweiligen Feststellungsbeteiligten mitgeteilten Werte die für die Fest-
+      stellungsbeteiligten maßgeblichen Beihilfewerte aus der Inanspruchnahme der Sonderabschreibung
+      nach § 7b EStG mittels des Berechnungsschemas wie unter 4.1 dargestellt ermittelt.
+      Seite 31 von 35
+
+      4.3    Ermittlung des relevanten wirtschaftlichen Vorteils bei gesonderten Feststellungen
+105   Bei gesonderten Feststellungen nach § 180 Absatz 1 Satz 1 Nummer 2 Buchstabe b AO sind im
+      Feststellungsbescheid der verbrauchte Beihilfewert und die Bemessungsgrundlage der Sonderab-
+      schreibung nach § 7b EStG auszuweisen. Der verbrauchte Beihilfewert ist für jedes Jahr des
+      Begünstigungszeitraums auszuweisen.
+
+106   Im Rahmen der Veranlagung zur Einkommensteuer des Steuerpflichtigen wird über die im Fest-
+      stellungsbescheid mitgeteilten Werte der maßgebliche Beihilfewert aus der Inanspruchnahme
+      der Sonderabschreibung nach § 7b EStG mittels des Berechnungsschemas wie unter 4.1 darge-
+      stellt ermittelt.
+
+      5.     Prüfung der Beihilfehöchstbeträge
+      5.1.   Grundsatz
+107   Die Prüfung, ob die Beihilfehöchstbeträge eingehalten werden, ist für jedes Jahr des Begünsti-
+      gungszeitraums gesondert vorzunehmen. Für Baumaßnahmen, deren Bauantrag/Bauanzeige
+      nach dem 31. Dezember 2022 und vor dem 1. Oktober 2029 gestellt/getätigt wurde, gilt dies nur,
+      wenn die Sonderabschreibung nach § 7b EStG im Rahmen der Gewinnermittlung von Einkünf-
+      ten im Sinne der §§ 13, 15 oder 18 EStG beansprucht wird (vgl. Rn. 83).
+
+108   Im ersten Jahr des Begünstigungszeitraums werden 25 % des ermittelten Beihilfewerts der Son-
+      derabschreibung nach § 7b EStG in die Berechnung einbezogen. Ist die Summe der erklärten
+      anderen Beihilfen nach der De-minimis-Verordnung für das laufende und für die zwei vorausge-
+      gangenen Kalenderjahre sowie des für das erste Jahr des Begünstigungszeitraums anzusetzenden
+      Teilbetrags des ermittelten Beihilfewerts der Sonderabschreibung nach § 7b EStG kleiner als
+      200.000 € bzw. 300.000 €, kann die Sonderabschreibung nach § 7b EStG gewährt werden. Hat der
+      Steuerpflichtige zusätzlich auch Beihilfen nach der DAWI-de-minimis-Verordnung erhalten,
+      kann die Sonderabschreibung nach § 7b EStG gewährt werden, wenn der ermittelte Beihilfewert
+      aus den De-minimis-Beihilfen kleiner ist als 200.000 € bzw. 300.000 € und bei Hinzurechnung
+      der DAWI-de-minimis-Beihilfen den Betrag von 500.000 € bzw. ab dem Kalenderjahr 2024 den
+      Betrag von 1.050.000 € (unter Einhaltung des Höchstbetrags der DAWI-de-minimis-Verordnung)
+      nicht überschreitet.
+
+109   Im zweiten Jahr des Begünstigungszeitraums sind die erklärten anderen De-minimis-Beihilfen
+      für das laufende und für die zwei vorausgegangenen Kalenderjahre und die anteiligen Beihilfe-
+      werte der Sonderabschreibung nach § 7b EStG für das erste und das zweite Jahr des Begünsti-
+      gungszeitraums (jeweils 25 % des gesamten im ersten Jahr des Begünstigungszeitraums ermittel-
+      ten Beihilfewertes) einzubeziehen. Im dritten Jahr des Begünstigungszeitraums sind die anteili-
+      gen Beihilfewerte der Sonderabschreibung nach § 7b EStG des ersten bis dritten Jahres des
+      Seite 32 von 35
+
+      Begünstigungszeitraums zu den aktualisiert mitgeteilten weiteren De-minimis-Beihilfen zu
+      addieren. Im vierten Jahr des Begünstigungszeitraums sind die anteiligen Beihilfewerte der Son-
+      derabschreibung nach § 7b EStG des zweiten bis vierten Jahres des Begünstigungszeitraums zu
+      den aktualisiert mitgeteilten weiteren De-minimis-Beihilfen zu addieren.
+
+110   Macht der Steuerpflichtige in späteren Jahren Sonderabschreibungen nach § 7b EStG für weitere
+      begünstigte Förderobjekte geltend, ist für Zwecke der Prüfung der Beihilfehöchstbeträge ent-
+      sprechend zu verfahren: d. h. die Beihilfewerte aus diesen Sonderabschreibungen nach § 7b EStG
+      sind entsprechend zu ermitteln und in die in Rn. 109 erläuterte Prüfung einzubeziehen.
+
+111   Werden für den Steuerpflichtigen Einkünfte gesondert festgestellt, ist anhand der im Feststel-
+      lungsbescheid ausgewiesenen Werte sowie der im Rahmen der Einkommensteuererklärung ggf.
+      gemachten Angaben über weitere De-minimis-Beihilfen entsprechend zu verfahren.
+
+      5.2.    Prüfung bei Mitunternehmerschaften oder Gemeinschaften
+112   Der für einen Feststellungsbeteiligten ermittelte Beihilfewert der Sonderabschreibung nach § 7b
+      EStG ist der Prüfung der Einhaltung der Beihilfehöchstbeträge zugrunde zu legen.
+      Neben eigenen De-minimis-Beihilfen eines Feststellungsbeteiligten sind auch die festgestellten,
+      anteilig auf den Feststellungsbeteiligten entfallenden verbrauchten Beihilfewerte aus anderen
+      De-minimis-Beihilfen der Mitunternehmerschaft oder Gemeinschaft in die Berechnung des
+      bereits verbrauchten Beihilfewerts für den Feststellungsbeteiligten einzubeziehen.
+
+      Beispiel 10:
+      Fortführung des Beispiels 9:
+      Die Feststellungsbeteiligten der A-KG haben im Jahr 2020 und den beiden vorausgegangenen Kalen-
+      derjahren bereits De-minimis-Beihilfen mit den folgenden Beihilfewerten erhalten:
+
+      K-GmbH:                200.000 €
+      A:                      10.000 €
+      B:                       5.000 €
+
+      Für die Inanspruchnahme der Sonderabschreibung nach § 7b EStG werden für die Feststellungsbetei-
+      ligten die folgenden Beihilfewerte ermittelt:
+
+      K-GmbH:                                                                     0 €, d. h. 0 €/Jahr
+      A:                                                                10.384 €, d. h. 2.596 €/Jahr
+      B:                                                                 7.632 €, d. h. 1.908 €/Jahr
+      Seite 33 von 35
+
+                                                                         verbrauchter
+                                                       verbrauchter       Beihilfewert     Beihilfewerte
+                                                        Beihilfewert              nach   bereits erhalte-
+                               Beihilfewert der Son-            nach   DAWI-de-mini-                 ner
+                              derabschreibung nach     De-minimis-       mis-Verord-       De-minimis-
+            Feststellungs-                § 7b EStG     Verordnung               nung          Beihilfen
+                beteiligter                 in Euro         in Euro           in Euro            in Euro
+             K-GmbH                               0               0                 0           200.000
+                  A                           2.596          40.000           200.000            10.000
+                  B                           1.908          40.000           200.000              5.000
+
+
+      Da die Feststellungsbeteiligten A und B für das Jahr 2020 den Beihilfehöchstbetrag sowohl nach der
+      De-minimis-Verordnung (A: 52.596 €; B: 46.908 €) als auch nach der DAWI-de-minimis-Verordnung
+      (A: 252.596 €; B: 246.908 €) noch nicht überschritten haben, kann die Sonderabschreibung nach § 7b
+      EStG in voller Höhe in Anspruch genommen werden. Für die K-GmbH ergibt sich aus der Inan-
+      spruchnahme der Sonderabschreibung nach § 7b EStG durch die A-KG keine Auswirkung.
+
+      5.3       Überschreiten der Beihilfehöchstbeträge
+113   Ergibt die Prüfung der Einhaltung der Beihilfehöchstbeträge nach der De-minimis-Verordnung
+      und der DAWI-de-minimis-Verordnung, dass mit der Inanspruchnahme der Sonderabschrei-
+      bung nach § 7b EStG der Beihilfehöchstbetrag von 200.000 € bzw. 300.000 € nach der De-mini-
+      mis-Verordnung bzw. von 500.000 € bzw. 750.000 € nach der DAWI-de-minimis-Verordnung
+      überschritten wird, ist die Sonderabschreibung nach § 7b EStG nur in der Höhe zulässig, wie der
+      Beihilfewert aus allen De-minimis-Beihilfeprogrammen 200.000 € / 300.000 € bzw. 500.000 € /
+      750.000 € nicht überschreitet. In diesen Fällen ist die Sonderabschreibung nach § 7b EStG für das
+      betreffende Jahr anteilig zu kürzen.
+
+114   Das Überschreiten der Beihilfehöchstbeträge führt nur dann zur vollständigen Versagung der
+      Sonderabschreibung nach § 7b EStG, wenn die Beihilfehöchstbeträge bereits ohne Hinzurech-
+      nung des Beihilfewerts aus der Sonderabschreibung nach § 7b EStG erreicht sind.
+
+115   Bei Überschreiten der Beihilfehöchstbeträge hat eine entsprechende Mitteilung über die Höhe
+      der zu gewährenden Sonderabschreibung nach § 7b EStG (ggfs. mit 0 €) an das für die (gesonderte
+      bzw. gesondert und einheitliche) Feststellung zuständige Finanzamt bzw. an die zuständige
+      Dienststelle zu ergehen. In der Folge ist ein nach § 175 Absatz 1 Satz 1 Nummer 2 AO geänderter
+      Feststellungsbescheid zu erlassen.
+      Seite 34 von 35
+
+      Beispiel 11:
+      Abwandlung des Beispiels 10:
+      B hat weitere Beihilfen nach der De-minimis-Verordnung mit Beihilfewerten von insgesamt
+      160.000 € erhalten.
+
+      Die Prüfung des Beihilfehöchstbetrags für B ergibt, dass der Beihilfehöchstbetrag nach der De-mini-
+      mis-Verordnung i. H. v. 200.000 € bereits erreicht ist (40.000 € aus der Beteiligung an der A-KG und
+      160.000 € für weitere Beihilfen nach der De-minimis-Verordnung). B kann die Sonderabschreibung
+      nach § 7b EStG damit nicht mehr in Anspruch nehmen. Nach einer entsprechenden Mitteilung der
+      für die Veranlagung zur Einkommensteuer zuständigen Dienststelle an die für die gesonderte und
+      einheitliche Feststellung zuständige Dienststelle ergeben sich bei der gesonderten und einheitlichen
+      Feststellung folgende Änderungen (die bislang erklärten bereits verbrauchten Beihilfewerte bleiben
+      unverändert):
+
+
+                                          Einkünfte aus Gewerbebetrieb
+                                                                                                 Bemessungsgrundlage
+             Feststellungs-                          in Euro
+                                                                                                    nach § 7b EStG
+               beteiligter                           nach Quote           Ergänzungs-
+                                   Gesamt                                                              in Euro
+                                                       verteilt            vermögen
+               K-GmbH                          0                    0                                                      0
+                   A                   25.000                25.000                        0                        1.000.000
+                   B                   75.000                25.000               50.000*                           1.000.000
+      *Hinweis: Die Einkünfte des Ergänzungsvermögens i. H. v. 50.000 € ergeben sich aus der vollständigen Versagung der
+       Sonderabschreibung nach § 7b EStG (1.000.000 € x 5 %).
+
+
+      6.      Bescheinigung des Beihilfewerts der Sonderabschreibung nach § 7b EStG
+116   Der Beihilfewert der Sonderabschreibung nach § 7b EStG ist für jedes Jahr des Begünstigungs-
+      zeitraums im entsprechenden Bescheid über die Festsetzung der Einkommen- oder Körper-
+      schaftsteuer auszuweisen.
+
+
+      III.       Prüfungserfordernisse für die Inanspruchnahme der Sonderabschreibung nach
+                 § 7b EStG
+117   Für die Prüfung der Sonderabschreibung nach § 7b EStG sind die in den Anlagen zu diesem
+      Schreiben zusammengestellten Angaben („Angaben zur Inanspruchnahme einer Sonderabschrei-
+      bung nach § 7b EStG“) erforderlich.
+
+118   Die erforderlichen Angaben sind nach den diesem Schreiben beigefügten Anlagen an das örtlich
+      zuständige Finanzamt zu übersenden. Die Vollständigkeit und Richtigkeit der Angaben sind mit
+Seite 35 von 35
+
+der Unterschrift des Steuerpflichtigen bzw. des gesetzlichen Vertreters zu bestätigen.
+Die Angaben sind spätestens auf Anforderung des Finanzamts vorzulegen.
+
+Schlussbestimmung
+Dieses Schreiben wird im Bundessteuerblatt Teil I veröffentlicht.
+
+
+Im Auftrag
+
+
+
+
+Dieses Dokument wurde elektronisch erstellt und ist ohne Unterschrift gültig.
+

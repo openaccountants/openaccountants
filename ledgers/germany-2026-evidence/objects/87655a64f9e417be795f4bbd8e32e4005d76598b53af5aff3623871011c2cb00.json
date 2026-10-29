@@ -1,0 +1,11 @@
+{
+  "Guide_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-germany/skills/international/germany/de-estimated-tax.md",
+  "Guide_sha256": "27bd4da330db7fb8428c569af3f3e6a208d64623cda58343c02590a36b2ee454",
+  "Guide_bytes": 24560,
+  "ledger_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R55-R56-estimated-writer-successor-2026-10-29/de-estimated-tax.md",
+  "ledger_sha256": "88bc5239d4b429169e93bc23ec9975ef9156e5868e6dd702262d935024d31efb",
+  "current_rows": 133,
+  "old_topics": 459,
+  "source_index_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R55-R56-estimated-writer-successor-2026-10-29/source-quote-index.json",
+  "source_index_sha256": "3f523f0e8ce688e02e3bb247933733ddbcbdbdfa3dd74fadfff94b5aa061a745"
+}

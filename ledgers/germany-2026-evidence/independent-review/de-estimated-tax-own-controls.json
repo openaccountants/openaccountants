@@ -1,0 +1,200 @@
+{
+  "scope": "Both original executablefixtures independently recomputed with exact Fraction/date arithmetic, fivequalitativecases matched (notice authority/minimums/lateQ2/Soliexemption/notice-confirmedbankclassification).39own controls; futurestatechurchrate andmidyearSolilimit remain precise existing source limits. Noactualnotice or authenticatedsubmission. Original30dayformula is used only for its declared40dayfixture; real-file control uses calendar boundaries.",
+  "controls": [
+    {
+      "name": "case1base",
+      "actual": "8400",
+      "expected": "8400"
+    },
+    {
+      "name": "case1noticeequalinstalmentsstipulated",
+      "actual": "2100.0",
+      "expected": "2100"
+    },
+    {
+      "name": "case1Soli",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "case1church9percentinput",
+      "actual": "756",
+      "expected": "756"
+    },
+    {
+      "name": "case2fullSoli",
+      "actual": "1210",
+      "expected": "1210"
+    },
+    {
+      "name": "case2phaseincap",
+      "actual": "3927/20",
+      "expected": "3927/20"
+    },
+    {
+      "name": "case2Soli",
+      "actual": "3927/20",
+      "expected": "3927/20"
+    },
+    {
+      "name": "case2overduerounded",
+      "actual": "5500",
+      "expected": "5500"
+    },
+    {
+      "name": "case2payment40dayslate",
+      "actual": "2026-10-20",
+      "expected": "2026-10-20"
+    },
+    {
+      "name": "case2startedcalendarmonths",
+      "actual": "2",
+      "expected": "2"
+    },
+    {
+      "name": "case2latecharge",
+      "actual": "110",
+      "expected": "110"
+    },
+    {
+      "name": "qualitativeQ2days",
+      "actual": "35",
+      "expected": "35"
+    },
+    {
+      "name": "qualitativeQ2two_started_calendar_months",
+      "actual": "2",
+      "expected": "2"
+    },
+    {
+      "name": "minimum400and100inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "399annualfails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "99onepaymentfails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "small600ignoredinclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "small600point01notignored",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "ordinaryincrease100inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "laterincrease5000inclusive",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "laterincrease4999fails",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "crossing_single",
+      "actual": "1210825/32",
+      "expected": "1210825/32"
+    },
+    {
+      "name": "crossing_joint",
+      "actual": "1210825/16",
+      "expected": "1210825/16"
+    },
+    {
+      "name": "equalitysingle20350Soli0",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "equalityjoint40700Soli0",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "dueweekdays2026",
+      "actual": "[1, 2, 3, 3]",
+      "expected": "[1, 2, 3, 3]"
+    },
+    {
+      "name": "2026adjustment15months",
+      "actual": "2028-03-31",
+      "expected": "2028-03-31"
+    },
+    {
+      "name": "2024interest17monthsbegins",
+      "actual": "2026-06-01",
+      "expected": "2026-06-01"
+    },
+    {
+      "name": "2026interest15monthsbegins",
+      "actual": "2028-04-01",
+      "expected": "2028-04-01"
+    },
+    {
+      "name": "2024latefiling16notinterest17",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "10000fullmonthassessmentinterest",
+      "actual": "15",
+      "expected": "15"
+    },
+    {
+      "name": "10000fullmonthdeferralinterest",
+      "actual": "50",
+      "expected": "50"
+    },
+    {
+      "name": "samescope233a15creditedagainstdeferral50",
+      "actual": "35",
+      "expected": "35"
+    },
+    {
+      "name": "nochargeoninterestassupplement",
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "voluntarycredit2000notwhole5000",
+      "actual": "2000",
+      "expected": "2000"
+    },
+    {
+      "name": "bankdebitnotautomaticallycreditednotice",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "noticeauthorisesactualunequalpaymentsnotderivedequal",
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "no-noticeno37advancepayable",
+      "actual": "False",
+      "expected": "False"
+    },
+    {
+      "name": "noticeconfirmedbanklabelprivatewithdrawal",
+      "actual": "True",
+      "expected": "True"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "control": "both smaller-company inclusive limits",
+    "computed": "True",
+    "expected": "True",
+    "classification": "derived check from sourced law plus fictional inputs; not an official example"
+  },
+  {
+    "control": "one euro above goods boundary",
+    "computed": "False",
+    "expected": "False",
+    "classification": "derived check from sourced law plus fictional inputs; not an official example"
+  },
+  {
+    "control": "one euro above services boundary",
+    "computed": "False",
+    "expected": "False",
+    "classification": "derived check from sourced law plus fictional inputs; not an official example"
+  },
+  {
+    "control": "non-submission proportional amount below floor",
+    "computed": "5000",
+    "expected": "5000",
+    "classification": "derived check from sourced law plus fictional inputs; not an official example"
+  },
+  {
+    "control": "non-submission proportional amount above floor",
+    "computed": "10000",
+    "expected": "10000",
+    "classification": "derived check from sourced law plus fictional inputs; not an official example"
+  },
+  {
+    "control": "seven full days late statutory minimum",
+    "computed": "700",
+    "expected": "700",
+    "classification": "derived check from sourced law plus fictional inputs; not an official example"
+  },
+  {
+    "control": "standard APA fee after75percent reduction",
+    "computed": "7500",
+    "expected": "7500",
+    "classification": "derived check from sourced law plus fictional inputs; not an official example"
+  },
+  {
+    "control": "standard extension fee after75percent reduction",
+    "computed": "3750",
+    "expected": "3750",
+    "classification": "derived check from sourced law plus fictional inputs; not an official example"
+  },
+  {
+    "control": "non-TP standard initial quarter fee",
+    "computed": "7500",
+    "expected": "7500",
+    "classification": "derived check from sourced law plus fictional inputs; not an official example"
+  },
+  {
+    "control": "smaller-case extension standalone fee",
+    "computed": "7500",
+    "expected": "7500",
+    "classification": "derived check from sourced law plus fictional inputs; not an official example"
+  }
+]
