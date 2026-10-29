@@ -1,7 +1,7 @@
 ---
 name: germany-payroll
 description: Use this skill whenever asked about German payroll processing for employees. Trigger on phrases like "German payroll", "Lohnsteuer", "Gehaltsabrechnung", "Brutto Netto Rechner", "Steuerklasse", "Sozialversicherung", "Arbeitnehmeranteil", "Arbeitgeberanteil", "Beitragsbemessungsgrenze", "payslip Germany", "Lohnabrechnung", "Nettolohn", "Solidaritätszuschlag", "Kirchensteuer", "Rentenversicherung", "Krankenversicherung", "Pflegeversicherung", "Arbeitslosenversicherung", "Minijob", "Midijob", "minimum wage Germany", "Mindestlohn", "Entgeltabrechnung", or any question about computing employee pay, withholding tax, or social contributions in Germany. This skill extends de-payroll.md with full payroll lifecycle coverage including mandatory benefits, payslip requirements, filing obligations, and employer cost analysis. ALWAYS read this skill before processing any German employee payroll.
-version: 1.0
+version: 1.2
 jurisdiction: DE
 tax_year: 2026
 last_updated: 2026-10-16
@@ -25,7 +25,7 @@ The year: the 2026 PAP covers pay periods "die nach dem 31. Dezember 2025, aber 
 
 Not covered, see "When to refuse or refer": the self-employed (use `de-freelance-intake`), cross-border and treaty cases, managing directors whose insurance status is open, employer pensions (Versorgungsbezüge), benefits in kind and flat-rate taxes under § 37b and § 40 EStG, the miners' pension scheme, and the exact Midijob formulas. Also out of scope: annual leave entitlements, parental leave and Elterngeld, Krankengeld and Mutterschaftsgeld paid by the health fund, and the employee's own income tax return.
 
-The employee owes the wage tax; the employer must withhold it at every wage payment ([§ 38 EStG](https://www.gesetze-im-internet.de/estg/__38.html)) and is liable for it ([§ 42d(1) EStG](https://www.gesetze-im-internet.de/estg/__42d.html)). The employer pays the total social insurance contribution and recovers the employee's share only by deduction from pay ([§ 28e SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28e.html), [§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html)).
+The employee owes the wage tax; the employer must withhold it at every wage payment ([§ 38 EStG](https://www.gesetze-im-internet.de/estg/__38.html)) and is liable for it ([§ 42d(1) EStG](https://www.gesetze-im-internet.de/estg/__42d.html)). The employer pays the total social insurance contribution and ordinarily recovers the employee's share by deduction from pay, subject to the § 28g exceptions stated below ([§ 28e SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28e.html), [§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html)).
 
 ## Ask the client first
 
@@ -50,14 +50,14 @@ Defaults when an answer is missing, for an estimate only: unknown class, estimat
 1. **Employer number.** Before the first registration, apply electronically to the Federal Employment Agency (its Betriebsnummern-Service) for a Betriebsnummer for each place of employment; separate numbers for different activities or municipalities ([§ 18i SGB IV](https://www.gesetze-im-internet.de/sgb_4/__18i.html)).
 2. **Status.** Decide Minijob, short-term job, transition band, normal employment, or pay above the compulsory health insurance threshold. Add up several jobs as [§ 8(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html) and [§ 20(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__20.html) say.
 3. **Immediate report in listed sectors.** Construction, hospitality, passenger transport, haulage and logistics (including platform delivery), fairground work, building cleaning, trade-fair construction, meat industry (not the butchers' trade, "mit Ausnahme des Fleischerhandwerks"), prostitution, security, hairdressing and cosmetics: report the start day to the pension insurers' data office "spätestens bei dessen Aufnahme" ([§ 28a(4) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28a.html)). It does not replace the registration in step 6.
-4. **Wage tax data.** Take the tax ID, date of birth, and whether this is the first or a further job; retrieve the ELStAM, enter them in the payroll account, and call up changes "monatlich" ([§ 39e(5) EStG](https://www.gesetze-im-internet.de/estg/__39e.html)). Missing data by the employee's fault: class VI. A technical fault or a reason the employee is not responsible for: the expected class for at most three calendar months ([§ 39c(1) EStG](https://www.gesetze-im-internet.de/estg/__39c.html)).
+4. **Wage tax data.** Take the tax ID, date of birth, and whether this is the first or a further job; retrieve the ELStAM, enter them in the payroll account, and call up changes "monatlich" ([§ 39e(5) EStG](https://www.gesetze-im-internet.de/estg/__39e.html)). Missing data by the employee's fault: class VI. A technical fault or a reason the employee is not responsible for: the expected class for at most three calendar months ([§ 39c(1) EStG](https://www.gesetze-im-internet.de/estg/__39c.html)). If identification number/date of birth remains missing after the three calendar months, apply class VI retrospectively under § 39c(1) sentence 3. Once actual ELStAM arrive for the temporary-data cases, review/correct prior months as necessary and settle under- or over-withholding at the next payroll (§ 39c(1) sentences 4–5).
 5. **Payroll account.** One Lohnkonto per employee and year at the place of business, recording pay (tax-free pay included) and tax withheld at every payment; keep it to the end of the sixth calendar year after the last entry ([§ 41(1) EStG](https://www.gesetze-im-internet.de/estg/__41.html)). For social insurance, keep pay records per employee and year in Germany and in German until the end of the calendar year after the last audit; an employer without a seat in Germany appoints an authorised person there ([§ 28f(1), (1b) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28f.html)).
 6. **Registration** with the collecting office: the employee's health fund, or the Minijob-Zentrale for a Minijob ([§ 28i SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28i.html)). Deadlines for this and every later report are in "Filing and payment".
 
 **Every pay period**
 
 7. **Wage tax.** Take out tax-free pay first (such as the Aktivrente). Run the 2026 PAP on the rest, then the surcharge and, for church members, church tax on the base BK. One-time payments use the annual method.
-8. **Contributions.** Cap pay at each branch's monthly ceiling, apply the shares, deduct the employee's. A missed deduction can be made up only at the next three payments, later only if the employer was not at fault ([§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html)).
+8. **Contributions.** Cap pay at each branch's monthly ceiling, apply the shares, deduct the employee's. Under § 28g SGB IV the ordinary claim is recovered by deduction from pay. A missed deduction can ordinarily be recovered at the next three payments, and later if the employer was not at fault. The deduction-only and three-payment restrictions do not apply where the employee intentionally or grossly negligently breaches § 28o(1), bears the entire total social contribution, or receives only benefits in kind. ([§ 28g SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28g.html)).
 9. **Employer-only levies.** U1 and U2 at the fund's rates, the insolvency levy, accident insurance.
 10. **Minimum wage and absences.** Check pay per hour worked against the minimum wage, keep working-time records where § 17 MiLoG requires them, and pay sick pay, surcharges and the maternity top-up as set out in "Full cycle"; claim U1 or U2 refunds.
 11. **Payslip.** Give the employee a pay statement in text form with the § 1 EBV contents ("Full cycle").
@@ -69,7 +69,7 @@ Defaults when an answer is missing, for an estimate only: unknown class, estimat
 14. **Wage tax certificate**: close the payroll account, send it electronically, give the employee a copy.
 15. **Annual adjustment** where compulsory and not barred (boundary table).
 
-What breaks when the order is wrong: without wage tax data the tax runs in class VI and is corrected later; a missed employee share is lost after three payments; a late contribution statement lets the fund estimate the pay ([§ 28f(3) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28f.html)).
+What breaks when the order is wrong: without wage tax data the tax runs in class VI and is corrected later; a missed employee deduction cannot ordinarily be recovered after the next three payments unless the employer-nonfault or other § 28g exception above applies; a late contribution statement lets the fund estimate the pay ([§ 28f(3) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28f.html)).
 
 ## Figures for 2026: wage tax
 
@@ -109,13 +109,13 @@ Which states charge the lower church tax rate is state law and is not printed on
 | Class | Who ([§ 38b EStG](https://www.gesetze-im-internet.de/estg/__38b.html)) | What the PAP builds in |
 | --- | --- | --- |
 | I | Single; married, widowed or divorced people who do not meet III or IV; people with limited tax liability | Basic tariff, ANP, SAP, Vorsorgepauschale |
-| II | As I, when the single parent relief applies | As I plus EFA for one child |
-| III | Married, both resident, not permanently separated, and the spouse is in V on joint application; also the widowed in the year after the death | Splitting: tax on half the amount, doubled |
-| IV | Married, both resident, not permanently separated, the default for couples; on application with a factor ([§ 39f EStG](https://www.gesetze-im-internet.de/estg/__39f.html)) | Basic tariff; with the factor the tax is multiplied by it |
+| II | The unlimited-tax-liability category within I, when single parent relief applies | As I plus EFA for one child |
+| III | Married, both meeting the statutory unlimited-tax-liability category, not permanently separated, and spouse in V on joint application; widowed in the following year only if both met that category and were not permanently separated at death | Splitting: tax on half the amount, doubled |
+| IV | Married, both meeting the statutory unlimited-tax-liability category, not permanently separated, the default for couples; on application with a factor ([§ 39f EStG](https://www.gesetze-im-internet.de/estg/__39f.html)) | Basic tariff; with the factor the tax is multiplied by it |
 | V | The spouse of a class III employee | Special method for V and VI, with ANP, SAP |
 | VI | Second and further jobs; missing wage tax data by the employee's fault | Special method, no ANP, no SAP, no child allowance |
 
-Extra child amounts for single parents with more than one child, and other allowances, reach payroll only as an allowance in the ELStAM ([§ 39a EStG](https://www.gesetze-im-internet.de/estg/__39a.html)).
+Extra child amounts for single parents with more than one child, and other allowances, reach payroll only as an allowance in the ELStAM ([§ 39a EStG](https://www.gesetze-im-internet.de/estg/__39a.html)). For III/IV, § 38b(1) sentence 3 requires § 1(1), § 1(2) or § 1a eligibility; residence alone is not the test and § 1a entitlement is not assumed.
 
 ### The order of the calculation
 
@@ -209,14 +209,14 @@ If the employee has not handed in the certificates of earlier employers this yea
 | Unemployment, employee share (employer the same, [§ 346(1) SGB III](https://www.gesetze-im-internet.de/sgb_3/__346.html)) | 1.3% | PAP 2026 |
 | Health insurance, general rate, without the fund's additional rate | 14.6% | [§ 241 SGB V](https://www.gesetze-im-internet.de/sgb_5/__241.html) |
 | Health: the fund's own additional rate on top; employer and employee each bear half of general and additional rate | fund's own rate | [§ 249(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__249.html) |
-| Average additional rate for 2026 (planning value, and the rate that counts for the groups of § 242(3) SGB V) | 2.9% (check) | [Finance ministry monthly report](https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-3-sollbericht-2026.html) |
+| Average additional rate for 2026, where legally required for the § 242(3) SGB V groups; ordinary payroll uses the employee fund's actual rate | 2.9% | [BMG published 2026 contributions guidance](https://www.bundesgesundheitsministerium.de/beitraege/seite); earlier [Finance ministry monthly report](https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-3-sollbericht-2026.html) is an estimate source |
 | Care insurance, full rate | 3.6% | [§ 1 PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html) |
 | Care, employee share outside Saxony, with one child (and employer share outside Saxony) | 1.8% | PAP 2026; [§ 58(1) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html) |
 | Childless surcharge, employee only, from the month after turning 23 | 0.6 points | [§ 55(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html) |
 | Reduction per child from the second to the fifth, while under 25, employee share only | 0.25 points | Same |
 | Care, employee share in Saxony, with one child | 2.3% | PAP 2026; [§ 58(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html): employees bear "1 vom Hundert allein" |
 
-The official notice of the average additional rate is published in the Federal Gazette, which is not an allowed source for this skill; the figure above is the finance ministry's reading of the estimate. Confirm it before using it for the § 242(3) groups.
+The retained BMG administrative guidance expressly publishes 2.9% for 2026. Use it where the average rate is legally required; ordinary employees use their fund-specific additional rate. This is an actual current official administrative publication, not a separately retained Federal Gazette announcement. The earlier finance ministry estimate is preserved as history, not the sole current-rate evidence.
 
 **Employee care share by children (derived from the rows above)**
 
@@ -240,7 +240,7 @@ The official notice of the average additional rate is published in the Federal G
 | What | 2026 per year | 2026 per month | Source |
 | --- | --- | --- | --- |
 | Pension and unemployment ceiling (BBG RV/AV) | EUR 101,400 | EUR 8,450 | [SVBezGrV 2026 § 4](https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3); AV uses the pension ceiling, [§ 341(4) SGB III](https://www.gesetze-im-internet.de/sgb_3/__341.html) |
-| Health and care ceiling (BBG KV/PV), equal to the special threshold of § 6(7) SGB V | EUR 69,750 | EUR 5,812.50 | SVBezGrV 2026 § 2(2); [§ 55(2) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html) ties the care ceiling to it |
+| Health and care ceiling (BBG KV/PV), equal to the special threshold of § 6(7) SGB V | EUR 69,750 | EUR 5,812.50 | SVBezGrV 2026 § 2(2); [§ 55(2) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html) ties the care ceiling to it; [BMG actual 2026 contribution-ceiling guidance](https://www.bundesgesundheitsministerium.de/beitraege/seite) expressly states these amounts; the special-JAEG reference alone is not treated as the whole 2026 contribution-ceiling proof |
 | General compulsory health insurance threshold (JAEG) | EUR 77,400 | EUR 6,450 | SVBezGrV 2026 § 2(1) |
 | Special threshold, only for people privately insured on 31 December 2002 because of pay above the then threshold | EUR 69,750 | EUR 5,812.50 | SVBezGrV 2026 § 2(2) |
 
@@ -259,12 +259,12 @@ The official notice of the average additional rate is published in the Federal G
 
 | Levy | Rate | Base and rule |
 | --- | --- | --- |
-| U1 (continued sick pay) | Set by each health fund | Only employers with, as a rule, not more than 30 employees, apprentices not counted; the statute refunds 80% of continued pay ([§ 1(1) AAG](https://www.gesetze-im-internet.de/aufag/__1.html)) |
+| U1 (continued sick pay) | Set by each health fund | Only employers with, as a rule, not more than 30 employees, apprentices not counted; 80% is the statutory reimbursement default for eligible continued pay; use the actual fund statute/selected tariff, which may restrict that reimbursement and set different rates no lower than 40% under § 9(2) no. 1 AAG ([§ 1(1) AAG](https://www.gesetze-im-internet.de/aufag/__1.html)) |
 | U2 (maternity costs) | Set by each health fund | All employers, no size limit ([§ 1(2) AAG](https://www.gesetze-im-internet.de/aufag/__1.html)) |
 | Insolvency levy | 0.15% | [§ 360 SGB III](https://www.gesetze-im-internet.de/sgb_3/__360.html); not for private households or public bodies ([§ 358 SGB III](https://www.gesetze-im-internet.de/sgb_3/__358.html)) |
 | Accident insurance | Billed by the Berufsgenossenschaft after the year | Total pay, hazard class and the insurer's own factor |
 
-U1, U2 and the insolvency levy are charged on the pay on which pension contributions are worked out ([§ 7(2) AAG](https://www.gesetze-im-internet.de/aufag/__7.html), [§ 358(2) SGB III](https://www.gesetze-im-internet.de/sgb_3/__358.html)).
+U1, U2 and the insolvency levy are charged on the pay on which pension contributions are worked out ([§ 7(2) AAG](https://www.gesetze-im-internet.de/aufag/__7.html), [§ 358(2) SGB III](https://www.gesetze-im-internet.de/sgb_3/__358.html)). For U1, exclude one-time pay under § 23a SGB IV and pay for employment lasting no longer than four weeks where the nature of the job prevents sickness-pay entitlement under § 3(3) EntgFG. Do not transfer that U1 exclusion to U2 or the insolvency levy. During short-time allowance, AAG levies use actual earned pay up to the pension ceiling (§ 7(2) AAG). For U1 reimbursement, apply the documented eligible-pay and employer-contribution scope of the actual scheme; do not assume the same base for both. On stipulated eligible continued pay EUR 1,000, an applicable 80% wage-reimbursement tariff gives EUR 800 and an applicable 60% tariff gives EUR 600 ([§ 9(2) no. 1 AAG](https://www.gesetze-im-internet.de/aufag/__9.html)).
 
 ## Minijobs, short-term jobs and the transition band
 
@@ -275,7 +275,7 @@ U1, U2 and the insolvency levy are charged on the pay on which pension contribut
 | Minimum wage from 1 January 2027 | EUR 14.60 | MiLoV5 |
 | Employer's flat health contribution, commercial Minijob, if the Minijobber is in statutory health insurance | 13% | [§ 249b SGB V](https://www.gesetze-im-internet.de/sgb_5/__249b.html) |
 | Employer's flat pension contribution, commercial Minijob | 15% | [§ 172(3) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__172.html) |
-| Minijobber's own pension share (full rate less the employer's flat share) | 3.6% | Derived: 18.6% less 15% |
+| Minijobber's ordinary own pension share where the assessment base is not raised by the EUR 175 minimum; otherwise use the qualified remainder worksheet below (full rate less the employer's flat share) | 3.6% | Derived: 18.6% less 15% |
 | Private household Minijob: employer's flat health and pension contributions, each | 5% | § 249b SGB V and § 172(3a) SGB VI |
 | Uniform flat tax where flat or Minijob pension contributions are paid (covers wage tax, surcharge and church tax) | 2% | [§ 40a(2) EStG](https://www.gesetze-im-internet.de/estg/__40a.html) |
 | Flat tax on a Minijob without those contributions | 20% | § 40a(2a) EStG |
@@ -284,17 +284,19 @@ U1, U2 and the insolvency levy are charged on the pay on which pension contribut
 | No 25% (or farm 5%) flat tax if average pay per hour is above | EUR 19 | § 40a(4) no. 1 EStG; also barred where the same employer pays the person other wages taxed by the ELStAM (§ 40a(4) no. 2) |
 | Upper limit of the transition band, regular pay per month (all jobs together) | EUR 2,000 | [§ 20(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__20.html) |
 | Factor F is this value divided by the total contribution rate | 28% | § 20(2a) SGB IV |
-| Total contribution rate 2026: 18.6 + 3.6 + 2.6 + 14.6 + 2.9 | 42.3% (check) | Derived from the rates table; § 20(2a) defines the sum |
-| Factor F 2026: 28 / 42.3 | 0.6619 (check) | Derived; the labour ministry publishes it in the Federal Gazette |
+| Total contribution rate 2026: 18.6 + 3.6 + 2.6 + 14.6 + 2.9 | 42.3% | Derived from the rates table; § 20(2a) defines the sum |
+| Factor F 2026: 28 / 42.3 | 0.6619 | Derived from 28 / 42.3 = 0.6619385…, rounded to four decimals; § 20(2a) SGB IV requires four-decimal rounding. No separate Gazette acquisition is claimed |
 | Apprentices: employer bears the whole contribution if monthly pay is not above | EUR 325 | § 20(3) SGB IV |
 
 **Minijob rules**
 
 - **Regular pay.** The limit is on regular monthly pay. An unforeseeable overrun in not more than two calendar months within a twelve-month period, each time by up to the limit itself, does not end the Minijob ([§ 8(1b) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)).
-- **Several jobs.** Several Minijobs are added together. One Minijob beside a main insured job stays separate; every further Minijob is added to the main job ([§ 8(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)).
+- **Several jobs.** Several Minijobs are added together. One Minijob beside a main insured job stays separate; every further Minijob is added to the main job ([§ 8(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). If aggregation shows that the minor-employment conditions fail, insurance begins on the day the competent insurance decision is notified under § 8(2) SGB IV, unless the employer intentionally or grossly negligently failed to investigate the facts needed to assess insurance status. This is the specific aggregation rule, not a universal bar on retroactive insurance.
 - **Pension duty is the rule.** A Minijobber is compulsorily insured in pension insurance and pays the own share unless they apply, in writing or electronically, to be released ([§ 6(1b) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__6.html)). If released, the employer still pays its flat share.
+
+**Minimum pension base for a small insured Minijob.** For an isolated full-month pension-insured commercial Minijob, with no other insured employment, exemption or part-month/aggregation interaction, § 163(8) SGB VI uses at least EUR 175. Apply the full 18.6% to max(actual monthly pay, EUR 175), then subtract the employer's rounded 15% share of actual pay to obtain the employee remainder (§ 168(1) no. 1b SGB VI; § 2(1) BVV). At actual pay EUR 100, total pension is EUR 32.55, employer EUR 15.00 and employee EUR 17.55, rather than EUR 3.60. Other-job, exemption and part-month cases require their actual assessment facts; do not apply a universal separate EUR 175 floor to every job.
 - **Flat tax is an option.** The employer may instead tax the pay by the ELStAM. The 2% flat tax is collected by Deutsche Rentenversicherung Knappschaft-Bahn-See, the Minijob-Zentrale ([§ 40a(6) EStG](https://www.gesetze-im-internet.de/estg/__40a.html)); the 20% and 25% flat taxes are declared with the wage tax return.
-- **Short-term jobs.** A job limited in advance to three months or 70 working days in a calendar year is contribution-free unless done as a profession with pay above the Minijob limit ([§ 8(1) no. 2 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). The social insurance test and the 25% tax test are different tests.
+- **Short-term jobs.** A job limited in advance to three months or 70 working days in a calendar year, or 15 weeks or 90 working days for employment in an agricultural business is contribution-free unless done as a profession with pay above the Minijob limit ([§ 8(1) no. 2 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html)). The social insurance test and the 25% tax test are different tests.
 - **No Aktivrente on a Minijob.**
 
 **Transition band (Midijob)**
@@ -320,7 +322,7 @@ U1, U2 and the insolvency levy are charged on the pay on which pension contribut
 | Hours on a written working-time account, per month at most | 50% of contractual hours, balanced within twelve months | § 2(2) MiLoG |
 | Working-time records for Minijobs, short-term jobs and § 2a SchwarzArbG sectors | start, end and length by the seventh day after the work; keep at least two years | [§ 17(1) MiLoG](https://www.gesetze-im-internet.de/milog/__17.html) |
 
-Not covered by the minimum wage ([§ 22 MiLoG](https://www.gesetze-im-internet.de/milog/__22.html)): under-18s without completed vocational training; apprentices; volunteers; compulsory internships, and orientation or study-accompanying internships of up to three months; formerly long-term unemployed people in their first six months. Sector minimum wages can be higher.
+Not covered by the minimum wage ([§ 22 MiLoG](https://www.gesetze-im-internet.de/milog/__22.html)): under-18s without completed vocational training; apprentices; volunteers; compulsory internships, and orientation internships of up to three months and training- or study-accompanying internships of up to three months only if no such prior internship with the same trainer/employer existed; formerly long-term unemployed people in their first six months. Sector minimum wages can be higher.
 
 ### Tax-free night, Sunday and holiday surcharges
 
@@ -332,14 +334,14 @@ Not covered by the minimum wage ([§ 22 MiLoG](https://www.gesetze-im-internet.d
 | Public holidays, and 31 December from 14:00 | 125% | § 3b(1) EStG |
 | 24 December from 14:00, 25 and 26 December, 1 May | 150% | § 3b(1) EStG |
 | Hourly basic pay counted for the tax exemption, at most | EUR 50 | § 3b(2) EStG |
-| Contribution-free only where the hourly pay the surcharge is based on is not above | EUR 25 | [§ 1(1) no. 1 SvEV](https://www.gesetze-im-internet.de/svev/__1.html) |
+| Contribution exemption for an otherwise qualifying tax-free surcharge: applies to the part based on hourly basic pay up to this amount; the excess part remains contributory | EUR 25 | [§ 1(1) no. 1 SvEV](https://www.gesetze-im-internet.de/svev/__1.html) |
 
-The two caps differ: a surcharge can be tax-free and still carry contributions. Public holidays are those at the place of work.
+The two caps differ: a surcharge can be tax-free and still carry contributions. Public holidays are those at the place of work. Sunday and holiday work also includes 00:00–04:00 on the following day if the night work began before midnight (§ 3b(3) no. 2 EStG). With EUR 30 hourly basic pay and an otherwise qualifying 25% night premium, EUR 7.50 is tax-free within the EUR 50 tax ceiling; EUR 6.25 is contribution-free and EUR 1.25 remains contributory. Actual work, additional payment and applicable statutory percentage gates still apply.
 
 ### Sick pay and the maternity top-up
 
-- **Continued pay in sickness.** Up to six weeks per incapacity, at the pay for regular working time without overtime pay, once the job has lasted four weeks without a break. The same illness again gives a new six weeks only after six months without incapacity from it, or twelve months after the first incapacity from it began ([§ 3 EntgFG](https://www.gesetze-im-internet.de/entgfg/__3.html), [§ 4 EntgFG](https://www.gesetze-im-internet.de/entgfg/__4.html)). Small employers in U1 get part of it back (80% under the statute).
-- **Maternity top-up.** For the protection periods before and after the birth and the day of birth, the employer pays the difference between EUR 13 and the average net pay per calendar day of the last three settled months before the protection period ([§ 20(1) MuSchG](https://www.gesetze-im-internet.de/muschg_2018/__20.html)). With several employers, each pays its share. U2 refunds it in full ([§ 1(2) AAG](https://www.gesetze-im-internet.de/aufag/__1.html)).
+- **Continued pay in sickness.** For incapacity due to sickness without employee fault, up to six weeks per incapacity, at the pay for regular working time without overtime pay, once the job has lasted four weeks without a break. The same illness again gives a new six weeks only after six months without incapacity from it, or twelve months after the first incapacity from it began ([§ 3 EntgFG](https://www.gesetze-im-internet.de/entgfg/__3.html), [§ 4 EntgFG](https://www.gesetze-im-internet.de/entgfg/__4.html)). Small employers in U1 get part of it back (80% statutory default, subject to the actual fund statute/selected tariff under § 9(2) no. 1 AAG, with a 40% floor). Under § 4(1a) EntgFG, additional overtime pay is excluded, as are expense reimbursements contingent on actual expenses that do not arise during incapacity. For performance-related remuneration, use the average earnings achievable during the employee's applicable regular working time.
+- **Maternity top-up.** For the protection periods before and after the birth and the day of birth, the employer pays the difference between EUR 13 and the average net pay per calendar day of the last three settled calendar months before the protection period ([§ 20(1) MuSchG](https://www.gesetze-im-internet.de/muschg_2018/__20.html)).  U2 refunds it in full ([§ 1(2) AAG](https://www.gesetze-im-internet.de/aufag/__1.html)). For the ordinary multiple-employer case, add the relevant employers' average daily net wages, subtract EUR 13 once, then allocate that top-up in proportion to each employer's average daily net wage. At independently established daily net EUR 60 and EUR 40, combined EUR 100 less EUR 13 gives EUR 87; employer shares are EUR 52.20 and EUR 34.80, not two separate EUR 13 deductions. The ordinary worksheet assumes ongoing employment and established § 20 net inputs. New employment begun during protection is covered from its start under § 20(1); the specific authorised-dismissal/insolvency cases shift payment to the statutory paying agency under § 20(3). For treaty non-residents whose residence state has the taxing right, § 20(4) uses only social-insurance deductions unless that state does not tax the top-up, in which case all statutory deductions count. This is not a full § 21 proof of each real net-pay input.
 
 ## Boundaries and exceptions
 
@@ -468,9 +470,10 @@ Second job (assumed: main job elsewhere, EUR 20,000 a year here): the table row 
 | Interruption report, only when pay stops for at least a full calendar month and the employee draws a listed benefit (for example sick pay from the fund), takes parental leave or does military service | Two weeks after the end of the first calendar month | [§ 9 DEÜV](https://www.gesetze-im-internet.de/de_v/__9.html) |
 | Change of health fund, contribution group or person group key | De-registration and new registration within six weeks | [§ 12 DEÜV](https://www.gesetze-im-internet.de/de_v/__12.html) |
 | Annual report for 2026 | First payroll run of 2027, at the latest 15 February 2027 | [§ 10 DEÜV](https://www.gesetze-im-internet.de/de_v/__10.html) |
-| Special annual report to accident insurance for everyone employed and insured in 2026 | 16 February 2027 ("zum 16. Februar des Folgejahres") | [§ 28a(2a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28a.html) |
+| Employee copy of social-report content | At least annually by 30 April, in text form with the current or at latest next payslip, separately or attached. Solely accident-insurance-data-change reports are excepted. On termination issue the certificate immediately after the last report, rather than waiting for annual 30 April | [§ 28a(5) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28a.html) |
+| Special annual report to accident insurance for everyone employed and insured in 2026 | Ordinarily 16 February 2027 ("zum 16. Februar des Folgejahres"). On insolvency, definitive business closure or end of all employment: next payroll, at latest six weeks. The statutory agricultural-BG exception applies only where the work value is not used for contribution calculation | [§ 28a(2a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__28a.html) |
 | Minimum wage paid | At the latest the last bank working day of the month after the work | [§ 2 MiLoG](https://www.gesetze-im-internet.de/milog/__2.html) |
-| Wage tax certificate for 2026 | Last day of February 2027; 28 February 2027 is a Sunday, so Monday 1 March 2027 under § 108(3) AO (check with the tax office) | [§ 41b(1) EStG](https://www.gesetze-im-internet.de/estg/__41b.html) |
+| Wage tax certificate for 2026 | Nominal 28 February 2027 is a Sunday; ordinary deadline Monday 1 March 2027, derived from § 41b(1) EStG → § 93c(1) AO and § 108(3) AO | [§ 41b(1) EStG](https://www.gesetze-im-internet.de/estg/__41b.html) |
 
 **Surcharges and liability**
 
@@ -492,7 +495,7 @@ Pay for periods ending in 2025 is taxed with the amended 2025 PAP of 22 January 
 | Minimum wage 2025 | EUR 12.82 | [MiLoV4](https://www.gesetze-im-internet.de/milov4/__1.html) |
 | Minijob limit 2025: 12.82 x 130 / 3 = EUR 555.53, rounded up | EUR 556 | [§ 8(1a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html) |
 
-The 2025 annual report was due by 15 February 2026 and the 2025 wage tax certificates by the last day of February 2026 (2 March 2026, as 28 February 2026 was a Saturday). A late or corrected certificate is still sent electronically. Employees with wages from two employers at once in 2025 must file a 2025 return ([§ 46(2) no. 2 EStG](https://www.gesetze-im-internet.de/estg/__46.html)).
+The 2025 annual report was due by Monday 16 February 2026: nominal 15 February was a Sunday, so § 26(3) SGB X moves the ordinary deadline to the next working day. This does not override an authority notice expressly fixing the day under that provision or an authority-set appointment under § 26(5). The [actual social-procedure rule](https://www.gesetze-im-internet.de/sgb_10/__26.html) supplies this adjustment; AO § 108 is not its authority. The 2025 wage tax certificates were due by the last day of February 2026 (2 March 2026, as 28 February 2026 was a Saturday). A late or corrected certificate is still sent electronically. Employees with wages from two employers at once in 2025 must file a 2025 return ([§ 46(2) no. 2 EStG](https://www.gesetze-im-internet.de/estg/__46.html)).
 
 ## Completion checklist
 
@@ -511,7 +514,7 @@ The 2025 annual report was due by 15 February 2026 and the 2025 wage tax certifi
 - [ ] Contribution statement two working days before the due date; payment by the third-last bank working day.
 - [ ] Wage tax return and payment by the tenth after each period; filing period set from 2025 wage tax.
 - [ ] Year-end: annual report by 15 February, certificates by the end of February, annual adjustment where compulsory and not barred.
-- [ ] Figures marked "check" confirmed: average additional rate, factor F, the lower church tax states.
+- [ ] Apply the employee fund's actual additional rate, or the published 2.9% average where legally required; use the sourced four-decimal F and confirm the actual church-tax state selector.
 
 ## Sources
 

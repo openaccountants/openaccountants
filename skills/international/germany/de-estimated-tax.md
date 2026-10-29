@@ -1,10 +1,10 @@
 ---
 name: de-estimated-tax
 description: "German income tax prepayments (Einkommensteuer-Vorauszahlungen, § 37 EStG) for individuals, tax year 2026. Covers who pays them, the four due dates (10 March, 10 June, 10 September, 10 December), how the tax office sets the amount from the last assessment, the EUR 400 and EUR 100 minimums, the EUR 600 small-deductions rule, increases, reductions and the 15-month adjustment window, the solidarity surcharge (EUR 20,350 / 40,700 limits, 5.5%, 11.9% mitigation) and church tax riding on prepayments, the year-end balance, the 1% late payment surcharge and 1.8% interest after assessment, and new businesses. Trigger on: Vorauszahlungen, Vorauszahlungsbescheid, estimated tax Germany, quarterly tax Germany, Herabsetzung Vorauszahlungen, Säumniszuschlag, Nachzahlungszinsen. Out of scope: the tariff and the return (de-einkommensteuer-freelancer, de-self-employed-income-tax), trade tax prepayments (de-trade-tax), VAT advance payments (germany-vat-return), corporate tax (de-corporate-tax), non-residents (de-non-resident-tax)."
-version: 2.3
+version: 2.5
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-29
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -81,7 +81,7 @@ The 2026 solidarity surcharge limits first apply for assessment period 2026 ([§
 ## Penalties and interest
 
 - **Late payment surcharge** ([§ 240 AO](https://www.gesetze-im-internet.de/ao_1977/__240.html)). For each started month after the due date: 1% of the overdue tax rounded down to a multiple of EUR 50. None for a delay of up to three days, except for cash or cheques (§ 240(3)). None before the tax is set (§ 240(1) sentence 3), but solidarity surcharge and church tax prepayments are payable with the set income tax prepayments even without their own notice, and that protection does not apply to them (§ 51a(4) sentences 2 and 3 EStG). No surcharge on surcharges or interest (§ 240(2)).
-- **Interest after assessment** ([§ 233a AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html), [§ 238 AO](https://www.gesetze-im-internet.de/ao_1977/__238.html)). 0.15% for each full month, on the balance rounded down to EUR 50, both ways. For 2026 it starts on 1 April 2028. Older years had a longer interest-free period: 2019 from 1 October 2021; 21 months for 2020 and 2021, 20 for 2022, 18 for 2023 and 16 for 2024 ([Art. 97 § 36(2) and (3) EGAO](https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html)). Do not carry those periods into 2026. The base is the assessed tax less withholding and less prepayments set before interest starts (§ 233a(3)). Prepayment notices themselves bear no § 233a interest (§ 233a(1) sentence 2). Voluntary payments accepted before the assessment stop interest (§ 233a(8)).
+- **Interest after assessment** ([§ 233a AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html), [§ 238 AO](https://www.gesetze-im-internet.de/ao_1977/__238.html)). 0.15% for each full month, on the balance rounded down to EUR 50, both ways. For 2026 it starts on 1 April 2028. Older years had a longer interest-free period: 2019 from 1 October 2021; 21 months for 2020 and 2021, 20 for 2022, 18 for 2023 and 17 for 2024 (the 2024 interest period is Art. 97 § 36(3) number 7(d), distinct from the 16-month § 152 late-filing rule in number 5(d); [Art. 97 § 36(2) and (3) EGAO](https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html)). Do not carry those periods into 2026. The base is the assessed tax less withholding and less prepayments set before interest starts (§ 233a(3)). Prepayment notices themselves bear no § 233a interest (§ 233a(1) sentence 2). Under § 233a(8), interest is not set or is remitted only to the extent a payment or other performance for a later effective assessment was accepted by the office and actually credited against the assessed tax payable. Apply § 233a(3) sentence 4 correspondingly: actual individual performance dates/amounts and the statutory chronological order, starting with the most recent performance, determine the relevant periods. Obtain the accepted-and-credited amount/date and later assessment, not just a bank debit; a qualifying EUR 2,000 payment against a EUR 5,000 balance does not give whole-balance relief. Subsequent assessment reductions can also reduce the interest waiver under § 233a(8); no unsupported universal stop date is assumed.
 - **Started versus full months.** The surcharge counts each started month; § 233a interest counts full months only (§ 238(1) sentence 2).
 - **Too-low prepayments.** No penalty in § 37. The cost is a larger balance and, after the interest-free period, interest.
 - **False facts in a reduction application.** Giving the tax office incorrect or incomplete facts that lead to tax being cut is tax evasion, punishable by up to five years' imprisonment or a fine; the attempt is punishable too ([§ 370(1) and (2) AO](https://www.gesetze-im-internet.de/ao_1977/__370.html)). A prepayment notice is a tax assessment (§ 164(1) sentence 2 AO), so a reduction won on false facts falls under it. Do not prepare or file a reduction application on a profit projection you know to be wrong.
@@ -144,6 +144,16 @@ expected:
 
 The 30-day month in the steps is a simplification for this example; count calendar months from the due date on a real file.
 
+**Five further qualitative cases.** These retain the earlier scenarios without inventing a client amount.
+
+| Case | Declared input | Result |
+|---|---|---|
+| Notice-based instalments | A 2026 Vorauszahlungsbescheid lists an amount for each date: 10 March, 10 June, 10 September and 10 December | Report those four amounts and dates; do not invent an equal split (§ 37(1)/(3) EStG). |
+| Below the minimum | The annual income tax prepayments are below EUR 400, or a payment date is below EUR 100 | No income tax prepayments are set: both minimums must be met (§ 37(5)). |
+| Late Q2 transfer | Due 10 June 2026; the tax office is credited on 15 July 2026 | Two started months, beyond the three-day grace. The surcharge is 2 × 1% × the unpaid tax rounded down to EUR 50 (§ 240 AO). |
+| Solidarity exemption | Single filer; the annual prepayment base does not exceed EUR 20,350; no assessed § 32d(3)/(4) flat-rate tax | No solidarity surcharge on that base (§ 3(3) SolzG). |
+| Bank line checked to its notice | `10.06.2026 ; LASTSCHRIFT FINANZAMT MUENCHEN ; DEBIT ; ESt-VZ Q2/2026 ; amount ; EUR`, with the reference/amount confirmed against the income tax notice | Classify this stipulated payment as Q2 income tax prepayment and a private withdrawal, not a deductible business expense (§ 12 number 3 EStG). A payee or date alone is not proof. Church tax has its separate § 10(1) number 4 treatment. |
+
 ## Ask the client first
 
 1. Do you have a current Vorauszahlungsbescheid? Send it and the last assessment notice.
@@ -179,6 +189,7 @@ The 30-day month in the steps is a simplification for this example; count calend
 | AO § 240 (late payment surcharge) | https://www.gesetze-im-internet.de/ao_1977/__240.html | 2026-10-24 |
 | AO § 370 (tax evasion) | https://www.gesetze-im-internet.de/ao_1977/__370.html | 2026-10-27 |
 | EGAO Art. 97 § 36 (2019 to 2024 interest periods) | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-24 |
+| EGAO Art. 97 § 36(3), numbers 5(d) and 7(d): distinguish 2024 late-filing and interest periods; selected text reread | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-29 |
 | Finance ministry, "Steuern von A bis Z" (church tax 8% or 9%) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf | 2026-10-24 |
 | Mein ELSTER, "Antrag auf Anpassung von Vorauszahlungen" | https://www.elster.de/eportal/formulare-leistungen/alleformulare/eingvorauszlg | 2026-10-27 (named from the earlier version; page not re-read) |
 
