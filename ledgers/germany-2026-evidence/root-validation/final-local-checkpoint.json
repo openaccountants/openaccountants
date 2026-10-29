@@ -1,0 +1,33 @@
+{
+  "status": "Local publication checks PASS; remote CI and merge are not yet claimed. Six ordinary domain limits remain explicit.",
+  "as_of": "2026-10-29T22:06:03.555918+00:00",
+  "tested_content_commit": "1305d80cfa61feff0b5b63c61b952ed30eb463bd",
+  "integrated_main": "b73481249024bd5c3701cd73643f433e542b2ea5",
+  "reviewed_Guides": 25,
+  "all25_reviewed_Guide_hashes_still_match": true,
+  "README_sha256": "239811b9f927464f96e8adc06efd9d01c6602bff44bee848d8b13a5b4d4379cb",
+  "Guide_schemas": {
+    "population": 25,
+    "errors": 0,
+    "warnings": 0,
+    "evidence": "whole25-package-checks.json"
+  },
+  "original_oa_examples": 41,
+  "repository_unit_tests": 131,
+  "MCP_unit_tests": 40,
+  "strict_committed_source_audit": {
+    "changed_source_Guides": 24,
+    "errors": 0,
+    "warnings": 0,
+    "notices": 0
+  },
+  "generated_trees_touched": false,
+  "package_files_rehashed": 3301,
+  "package_mismatches": 0,
+  "links_and_fragments_checked": 20292,
+  "broken_links_or_fragments": 0,
+  "crypto_links_rebased": 341,
+  "history": "Initial Python3.9/missing-dependency, RUNNER_TEMP and macOS temporary-directory alias failures retained in local publication evidence. Corrected environment passed without repository code changes for those failures. Source/Guide and tests whitespace pass; exact retained source/archive whitespace was not rewritten.",
+  "scope": "25 tax/compliance Guide pairs; four accounting/formation/reference companions preserved with bounded routing checks, no fresh full legal review. Six ordinary domains partial; no professional attestation.",
+  "attribution": "Michael Cutajar <107185374+michaelcutajar1995@users.noreply.github.com>"
+}

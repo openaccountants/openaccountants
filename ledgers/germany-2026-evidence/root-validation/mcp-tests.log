@@ -1,0 +1,68 @@
+test_repeated_reads_reflect_the_current_file (test_body_freshness.BodyFreshnessTests.test_repeated_reads_reflect_the_current_file) ... ok
+test_same_length_rewrite_is_served_fresh (test_body_freshness.BodyFreshnessTests.test_same_length_rewrite_is_served_fresh)
+21% corrected to 22% has the same byte length; it must still show. ... ok
+test_byte_identical_aliases_collapse_to_sorted_path (test_duplicate_slugs.DuplicateSlugTests.test_byte_identical_aliases_collapse_to_sorted_path) ... ok
+test_cache_clear_refreshes_the_complete_catalogue (test_duplicate_slugs.DuplicateSlugTests.test_cache_clear_refreshes_the_complete_catalogue) ... ok
+test_catalogue_rejects_a_symlink_before_reading_outside_content (test_duplicate_slugs.DuplicateSlugTests.test_catalogue_rejects_a_symlink_before_reading_outside_content) ... ok
+test_divergent_generated_copies_are_omitted_and_fail_closed (test_duplicate_slugs.DuplicateSlugTests.test_divergent_generated_copies_are_omitted_and_fail_closed) ... skill 'collision' omitted from the catalogue: packaged copies carry different guidance (country-a/collision.md, country-b/collision.md). Resolve the duplicate source names; until then get_skill('collision') fails closed.
+ok
+test_dropped_slugs_are_logged_and_surfaced_by_start (test_duplicate_slugs.DuplicateSlugTests.test_dropped_slugs_are_logged_and_surfaced_by_start)
+A dropped slug must not be silent: nine jurisdictions' core skills ... ok
+test_duplicate_report_module_is_quiet_when_imported (test_duplicate_slugs.DuplicateSlugTests.test_duplicate_report_module_is_quiet_when_imported) ... ok
+test_hand_authored_us_federal_copy_has_documented_precedence (test_duplicate_slugs.DuplicateSlugTests.test_hand_authored_us_federal_copy_has_documented_precedence) ... ok
+test_metadata_only_difference_is_not_treated_as_divergence (test_duplicate_slugs.DuplicateSlugTests.test_metadata_only_difference_is_not_treated_as_divergence)
+Divergence is judged on the guidance, not on frontmatter stamps. ... ok
+test_safe_resolve_rejects_a_symlink_escape (test_duplicate_slugs.DuplicateSlugTests.test_safe_resolve_rejects_a_symlink_escape) ... ok
+test_http_transport_defaults_to_loopback (test_http_binding.HttpBindingTests.test_http_transport_defaults_to_loopback) ... ok
+test_operator_can_explicitly_configure_remote_binding (test_http_binding.HttpBindingTests.test_operator_can_explicitly_configure_remote_binding) ... ok
+test_a_corpus_root_without_read_permission_is_reported (test_packages_permissions.UnreadableCorpusTests.test_a_corpus_root_without_read_permission_is_reported) ... ok
+test_a_readable_corpus_still_indexes (test_packages_permissions.UnreadableCorpusTests.test_a_readable_corpus_still_indexes) ... ok
+test_all_files_denied_is_reported_not_an_empty_catalogue (test_packages_permissions.UnreadableCorpusTests.test_all_files_denied_is_reported_not_an_empty_catalogue) ... cannot read skill file /private/tmp/tmp43615w1x/packages/xx/probe.md: [Errno 13] Permission denied
+ok
+test_an_absent_corpus_is_named_as_absent (test_packages_permissions.UnreadableCorpusTests.test_an_absent_corpus_is_named_as_absent) ... ok
+test_an_unreadable_corpus_root_is_reported_not_emptied (test_packages_permissions.UnreadableCorpusTests.test_an_unreadable_corpus_root_is_reported_not_emptied) ... ok
+test_the_failure_is_not_cached (test_packages_permissions.UnreadableCorpusTests.test_the_failure_is_not_cached)
+lru_cache does not store exceptions, so a fixed mount recovers ... ok
+test_exactly_at_the_limit_is_not_truncated (test_search_skills.SearchBoundaryTests.test_exactly_at_the_limit_is_not_truncated)
+25 matches, then skills that do not match. The cap must be reached by ... ok
+test_one_past_the_limit_is_truncated (test_search_skills.SearchBoundaryTests.test_one_past_the_limit_is_truncated) ... ok
+test_non_matching_jurisdictions_do_not_trigger_truncation (test_search_skills.SearchSkillsTests.test_non_matching_jurisdictions_do_not_trigger_truncation) ... ok
+test_reports_exact_total_when_complete (test_search_skills.SearchSkillsTests.test_reports_exact_total_when_complete) ... ok
+test_stops_after_one_match_beyond_limit (test_search_skills.SearchSkillsTests.test_stops_after_one_match_beyond_limit) ... ok
+test_total_aliases_returned_when_truncated (test_search_skills.SearchSkillsTests.test_total_aliases_returned_when_truncated) ... ok
+test_an_unreadable_match_past_the_cap_does_not_claim_completeness (test_search_skills.UnreadableSkillTests.test_an_unreadable_match_past_the_cap_does_not_claim_completeness)
+When every match past the cap is unreadable the loop never reaches a ... search skipped unreadable skill 'skill-25': file moved after the index snapshot
+ok
+test_unreadable_matches_are_reported_not_swallowed (test_search_skills.UnreadableSkillTests.test_unreadable_matches_are_reported_not_swallowed)
+10 skills match, 3 move after the lru_cached _index() snapshot; the ... search skipped unreadable skill 'skill-2': file moved after the index snapshot
+search skipped unreadable skill 'skill-5': file moved after the index snapshot
+search skipped unreadable skill 'skill-8': file moved after the index snapshot
+ok
+test_tier_one_row_still_publishes_its_verifier (test_skill_quality.IndexVerifierExposureTests.test_tier_one_row_still_publishes_its_verifier) ... ok
+test_tier_two_row_does_not_expose_its_reviewer (test_skill_quality.IndexVerifierExposureTests.test_tier_two_row_does_not_expose_its_reviewer) ... ok
+test_invalid_tier_values_fail_closed (test_skill_quality.SkillQualityTests.test_invalid_tier_values_fail_closed) ... ok
+test_legacy_verified_by_field_still_supports_tier_one (test_skill_quality.SkillQualityTests.test_legacy_verified_by_field_still_supports_tier_one) ... ok
+test_reviewer_name_does_not_replace_missing_tier (test_skill_quality.SkillQualityTests.test_reviewer_name_does_not_replace_missing_tier) ... ok
+test_tier_one_with_named_reviewer_is_accountant_verified (test_skill_quality.SkillQualityTests.test_tier_one_with_named_reviewer_is_accountant_verified) ... ok
+test_tier_one_without_real_reviewer_fails_closed (test_skill_quality.SkillQualityTests.test_tier_one_without_real_reviewer_fails_closed) ... ok
+test_tier_two_remains_research_even_with_reviewer_name (test_skill_quality.SkillQualityTests.test_tier_two_remains_research_even_with_reviewer_name) ... ok
+test_client_sees_the_input_error_message (test_tool_errors.ToolInputErrorContractTests.test_client_sees_the_input_error_message) ... skill 'ar-income-tax' omitted from the catalogue: packaged copies carry different guidance (argentina/ar-income-tax.md, us-ar/ar-income-tax.md). Resolve the duplicate source names; until then get_skill('ar-income-tax') fails closed.
+skill 'co-income-tax' omitted from the catalogue: packaged copies carry different guidance (colombia/co-income-tax.md, us-co/co-income-tax.md). Resolve the duplicate source names; until then get_skill('co-income-tax') fails closed.
+skill 'de-income-tax' omitted from the catalogue: packaged copies carry different guidance (germany/de-income-tax.md, us-de/de-income-tax.md). Resolve the duplicate source names; until then get_skill('de-income-tax') fails closed.
+skill 'fl-sales-use-tax' omitted from the catalogue: packaged copies carry different guidance (us-fl/fl-sales-tax.md, us-fl/fl-sales-use-tax.md). Resolve the duplicate source names; until then get_skill('fl-sales-use-tax') fails closed.
+skill 'in-income-tax' omitted from the catalogue: packaged copies carry different guidance (india/in-income-tax.md, us-in/in-income-tax.md). Resolve the duplicate source names; until then get_skill('in-income-tax') fails closed.
+skill 'ma-income-tax' omitted from the catalogue: packaged copies carry different guidance (morocco/ma-income-tax.md, us-ma/ma-income-tax.md). Resolve the duplicate source names; until then get_skill('ma-income-tax') fails closed.
+skill 'new-york-sales-tax' omitted from the catalogue: packaged copies carry different guidance (us-ny/new-york-sales-tax.md, us-ny/ny-sales-tax.md). Resolve the duplicate source names; until then get_skill('new-york-sales-tax') fails closed.
+skill 'tx-sales-use-tax' omitted from the catalogue: packaged copies carry different guidance (us-tx/tx-sales-tax.md, us-tx/tx-sales-use-tax.md). Resolve the duplicate source names; until then get_skill('tx-sales-use-tax') fails closed.
+skill 'wa-business-occupation-tax' omitted from the catalogue: packaged copies carry different guidance (us-wa/wa-b-and-o-tax.md, us-wa/wa-business-occupation-tax.md). Resolve the duplicate source names; until then get_skill('wa-business-occupation-tax') fails closed.
+Tool 'get_skill' failed: "Error executing tool get_skill: Skill 'does-not-exist-xyz' not found"
+ok
+test_is_both_a_tool_error_and_a_value_error (test_tool_errors.ToolInputErrorContractTests.test_is_both_a_tool_error_and_a_value_error) ... ok
+test_sse_passes_host_and_port (test_tool_errors.TransportWiringTests.test_sse_passes_host_and_port) ... ok
+test_stdio_passes_no_http_settings (test_tool_errors.TransportWiringTests.test_stdio_passes_no_http_settings) ... ok
+test_streamable_http_passes_host_port_and_path (test_tool_errors.TransportWiringTests.test_streamable_http_passes_host_port_and_path) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 9.036s
+
+OK

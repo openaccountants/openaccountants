@@ -1,0 +1,168 @@
+{
+  "scope": "Packaging-only independent checks; completed law review not repeated; no Git mutation",
+  "schema": {
+    "Guides": 25,
+    "errors": [],
+    "warnings": [],
+    "output": "checked 25 guides (0 non-guide .md files skipped)\n"
+  },
+  "examples": {
+    "Guides": 25,
+    "actual_oa_blocks": 41,
+    "failures": 0,
+    "zero_block_Guides": [
+      "leaving-germany-exit-tax",
+      "de-uk-employer-first-hire",
+      "de-crypto-tax",
+      "germany-einvoice",
+      "germany-payroll",
+      "germany-tax-optimization"
+    ],
+    "results": [
+      {
+        "slug": "leaving-germany-exit-tax",
+        "blocks": 0,
+        "failures": []
+      },
+      {
+        "slug": "germany-transfer-pricing",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "de-corporate-tax",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "de-uk-employer-first-hire",
+        "blocks": 0,
+        "failures": []
+      },
+      {
+        "slug": "de-crypto-tax",
+        "blocks": 0,
+        "failures": []
+      },
+      {
+        "slug": "de-income-tax",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "de-employee-income-tax",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "de-partners-and-part-year",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "de-self-employed-income-tax",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "de-non-resident-tax",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "de-vat-annual-and-special-schemes",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "de-treaty-withholding-rates",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "germany-to-switzerland-cross-border-tax",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "germany-einvoice",
+        "blocks": 0,
+        "failures": []
+      },
+      {
+        "slug": "germany-payroll",
+        "blocks": 0,
+        "failures": []
+      },
+      {
+        "slug": "germany-tax-optimization",
+        "blocks": 0,
+        "failures": []
+      },
+      {
+        "slug": "de-capital-gains",
+        "blocks": 4,
+        "failures": []
+      },
+      {
+        "slug": "de-trade-tax",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "de-einkommensteuer-freelancer",
+        "blocks": 3,
+        "failures": []
+      },
+      {
+        "slug": "de-payroll-benefits",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "de-social-contributions",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "de-payroll",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "germany-vat-return",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "de-estimated-tax",
+        "blocks": 2,
+        "failures": []
+      },
+      {
+        "slug": "de-rental-income",
+        "blocks": 2,
+        "failures": []
+      }
+    ]
+  },
+  "all_package_files_rehashed": 3301,
+  "canonical_pairs": 25,
+  "sealed_review_members_unchanged_and_copied_exact": 296,
+  "README_unchanged": true,
+  "ingestion": {
+    "all_canonical_Guides_found": true,
+    "ledgers_are_outside_ingestion_trees": true,
+    "candidate_file_count": 2350
+  },
+  "scoped_Guide_whitespace": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "not_run": [
+    "Full repository generated-package schema/index regeneration",
+    "Main reconciliation and strict branch source-sync validation",
+    "CI/typecheck/repository test suite; root owns final country publication checks"
+  ]
+}
